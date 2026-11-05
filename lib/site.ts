@@ -79,6 +79,8 @@ export const VOLUMES: MegaMenu[] = [
       { label: "By land", href: "/stays?by=land" },
       { label: "By water", href: "/stays?by=water" },
       { label: "New to the Ledger", href: "/stays/new" },
+      { label: "Our partner: COMO", href: "/collections/como" },
+      { label: "Our partner: Belmond", href: "/collections/belmond" },
       { label: "On the Horizon: offers", href: "/offers#stays" },
     ],
     ledger: [],
@@ -91,6 +93,7 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "By country", href: "/destinations/africa" },
       { label: "Your first safari", href: "/safaris/first-safari" },
+      { label: "Belmond: Cape Town to the Delta", href: "/collections/belmond" },
       { label: "Ask Crux, the safari guide", href: "/safaris/wild-co-safaris" },
     ],
     ledger: [],
@@ -130,6 +133,8 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "Greece, by sail", href: "/destinations/europe/greece" },
       { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" },
+      { label: "Italy: the Dolomites", href: "/destinations/europe/italy" },
+      { label: "COMO in Italy", href: "/collections/como" },
       { label: "River cruises, before or after", href: "/voyages/rivers" },
     ],
     ledger: [],
@@ -160,7 +165,7 @@ export const REGIONS: Region[] = [
   { label: "Caribbean & Mexico", slug: "caribbean-mexico", href: "/destinations/caribbean-mexico", countries: [{ label: "Mexico", href: "/destinations/caribbean-mexico/mexico" }] },
   { label: "Oceania", slug: "oceania", href: "/destinations/oceania", countries: [{ label: "Australia", href: "/destinations/oceania/australia" }, { label: "Fiji", href: "/destinations/oceania/fiji" }, { label: "New Zealand", href: "/destinations/oceania/new-zealand" }, { label: "Tahiti", href: "/destinations/oceania/tahiti" }] },
   { label: "South America", slug: "south-america", href: "/destinations/south-america", countries: [{ label: "Argentina", href: "/destinations/south-america/argentina" }, { label: "Chile & Easter Island", href: "/destinations/south-america/chile" }, { label: "Ecuador & Galapagos", href: "/destinations/south-america/ecuador-galapagos" }, { label: "Peru", href: "/destinations/south-america/peru" }] },
-  { label: "Europe", slug: "europe", href: "/destinations/europe", countries: [{ label: "Greece", href: "/destinations/europe/greece" }, { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" }] },
+  { label: "Europe", slug: "europe", href: "/destinations/europe", countries: [{ label: "Greece", href: "/destinations/europe/greece" }, { label: "Italy", href: "/destinations/europe/italy" }, { label: "Spain: Mallorca", href: "/destinations/europe/spain-isla-mallorca" }] },
   { label: "Polar: Antarctica", slug: "polar-antarctica", href: "/destinations/polar-antarctica", countries: [] },
   { label: "Polar: Arctic", slug: "polar-arctic", href: "/destinations/polar-arctic", countries: [{ label: "Iceland", href: "/destinations/polar-arctic/iceland" }] },
 ];
@@ -179,6 +184,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
     links: [
       { label: "About the house", href: "/about" },
       { label: "The Ledger", href: "/the-ledger" },
+      { label: "The Exceptional Few", href: "/the-exceptional-few" },
       { label: "Meet James", href: "/about/founder" },
       { label: "The team", href: "/about/team" },
       { label: "Journal", href: "/journal" },
@@ -360,6 +366,8 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/journal/cayuga-collection-sustainable-luxury", priority: 0.7, changeFrequency: "monthly" },
   { path: "/journal/africa-inspired-wild-and-co-safaris", priority: 0.7, changeFrequency: "monthly" },
   { path: "/collections/cayuga-collection", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/collections/como", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/collections/belmond", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-7-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-10-days", priority: 0.7, changeFrequency: "monthly" },
   { path: "/overland/costa-rica/the-original-costa-route-coast-to-coast", priority: 0.7, changeFrequency: "monthly" },

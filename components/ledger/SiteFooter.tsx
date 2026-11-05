@@ -1,4 +1,5 @@
 import { VOLUME_STYLES, volumeForHref, volumeLeather } from "@/lib/volumes";
+import KnowsStrip from "./KnowsStrip";
 import Link from "next/link";
 import Image from "next/image";
 import { FLAGS } from "@/lib/booking-live/flags";
@@ -89,9 +90,10 @@ function Column({ title, children }: { title: string; children: React.ReactNode 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function SiteFooter({ tone }: { tone?: FooterTone }) {
   const year = new Date().getFullYear();
-  const link = "text-[14.5px] hover:underline underline-offset-4";
+  const link = "text-[14.5px] hover:underline underline-offset-4 inline-flex items-center min-h-[44px] lg:min-h-0";
   return (
     <>
+      <KnowsStrip />
       <footer className="site-footer mt-20 pb-16 lg:pb-0" style={{ background: `linear-gradient(180deg, ${F.ground} 70%, ${F.groundEnd})`, color: F.body }}>
         {/* top row: the seal and the house name; the weekly entry on the right */}
         <div className="max-w-[1400px] mx-auto px-5 md:px-10 pt-14 md:pt-20 pb-10 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 border-b" style={{ borderColor: F.rule }}>
@@ -117,7 +119,7 @@ export default function SiteFooter({ tone }: { tone?: FooterTone }) {
         {/* five columns */}
         <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-10">
           <Column title="The Volumes">
-            <ul className="space-y-2">
+            <ul className="space-y-0 lg:space-y-2">
               {VOLUME_LINKS.map((v) => (
                 <li key={v.href}><Link href={v.href} className={`${link} inline-flex items-center gap-2.5`}><span className="w-[3px] h-[14px] shrink-0" style={{ background: v.tab }} aria-hidden="true" /><span className="font-mono text-[10px] w-5" style={{ color: F.legal }}>{v.roman}</span>{v.label}</Link></li>
               ))}
@@ -126,13 +128,13 @@ export default function SiteFooter({ tone }: { tone?: FooterTone }) {
             <p className="mt-4 text-[12.5px]" style={{ color: F.soft }}>{HOUSE_LINE.join(" · ")}</p>
           </Column>
           {REGIONS.length > 0 && <Column title="Destinations">
-            <ul className="space-y-2">{REGIONS.map((r) => <li key={r.href}><Link href={r.href} className={link}>{r.label}</Link></li>)}</ul>
+            <ul className="space-y-0 lg:space-y-2">{REGIONS.map((r) => <li key={r.href}><Link href={r.href} className={link}>{r.label}</Link></li>)}</ul>
           </Column>}
           {HOUSE_LINKS.length > 0 && <Column title="The House">
-            <ul className="space-y-2">{HOUSE_LINKS.map((l) => <li key={l.href}><Link href={l.href} className={link}>{l.label}</Link></li>)}</ul>
+            <ul className="space-y-0 lg:space-y-2">{HOUSE_LINKS.map((l) => <li key={l.href}><Link href={l.href} className={link}>{l.label}</Link></li>)}</ul>
           </Column>}
           {BEFORE_LINKS.length > 0 && <Column title="Before You Go">
-            <ul className="space-y-2">{BEFORE_LINKS.map((l) => <li key={l.href}><Link href={l.href} className={link}>{l.label}</Link></li>)}</ul>
+            <ul className="space-y-0 lg:space-y-2">{BEFORE_LINKS.map((l) => <li key={l.href}><Link href={l.href} className={link}>{l.label}</Link></li>)}</ul>
           </Column>}
           <Column title="Talk to the House">
             <ul className="space-y-2 text-[14.5px]">
@@ -141,7 +143,7 @@ export default function SiteFooter({ tone }: { tone?: FooterTone }) {
               <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={link}>My Folio</Link></li>
             </ul>
             <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-1.5">
-              {SITE.social.map((s) => <li key={s.url}><a href={s.url} rel="me noopener" className="font-mono text-[10.5px] uppercase tracking-[0.18em] hover:underline underline-offset-4" style={{ color: F.soft }}>{s.label}</a></li>)}
+              {SITE.social.map((s) => <li key={s.url}><a href={s.url} rel="me noopener" className="font-mono text-[10.5px] uppercase tracking-[0.18em] hover:underline underline-offset-4 inline-flex items-center min-h-[44px] lg:min-h-0" style={{ color: F.soft }}>{s.label}</a></li>)}
             </ul>
           </Column>
         </div>
@@ -156,8 +158,8 @@ export default function SiteFooter({ tone }: { tone?: FooterTone }) {
           <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-4 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] uppercase tracking-[0.16em]" style={{ color: F.legal }}>
             <p>© {year} {SITE.name} · Ledgered, not crowded</p>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-              {LEGAL_NAV.map((l) => <Link key={l.href} href={l.href} className="hover:underline underline-offset-4">{l.label}</Link>)}
-              <a href="/llms.txt" className="hover:underline underline-offset-4">llms.txt</a>
+              {LEGAL_NAV.map((l) => <Link key={l.href} href={l.href} className="hover:underline underline-offset-4 inline-flex items-center min-h-[44px] lg:min-h-0">{l.label}</Link>)}
+              <a href="/llms.txt" className="hover:underline underline-offset-4 inline-flex items-center min-h-[44px] lg:min-h-0">llms.txt</a>
               <span className="ledger-hand text-xl normal-case tracking-normal" style={{ color: F.soft }}>J.W.</span>
             </div>
           </div>

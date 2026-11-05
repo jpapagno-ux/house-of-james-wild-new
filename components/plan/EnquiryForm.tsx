@@ -40,7 +40,7 @@ export default function EnquiryForm() {
   const sp = useSearchParams();
   const ctx = useMemo(() => {
     const g = (k: string) => sp.get(k) ?? undefined;
-    return { advisor: g("advisor"), from: g("from"), trip: g("trip"), option: g("cabin") ?? g("option"), travellers: g("travellers"), addons: g("addons"), estimate: g("estimate"), destination: g("destination"), route: g("route"), q: g("q"), folio: g("folio") && /^FOL-\d{4}-\d{6}$/.test(g("folio") as string) ? g("folio") : undefined, notes: g("notes")?.trim().slice(0, 600) || undefined };
+    return { advisor: g("advisor"), from: g("from"), trip: g("trip"), option: g("cabin") ?? g("option"), travellers: g("travellers"), addons: g("addons"), estimate: g("estimate"), destination: g("destination"), route: g("route"), q: g("q"), folio: g("folio") && /^(FOL|JRN)-\d{4}-\d{6}$/.test(g("folio") as string) ? g("folio") : undefined, notes: g("notes")?.trim().slice(0, 600) || undefined };
   }, [sp]);
   const advisor = ADVISORS.find((a) => a.slug === (ctx.advisor ?? DEFAULT_ADVISOR));
   const wantsCall = sp.get("next") === "call";

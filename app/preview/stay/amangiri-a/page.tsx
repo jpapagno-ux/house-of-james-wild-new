@@ -43,7 +43,7 @@ export default function AmangiriMockA() {
     <div className={efThemeClass(ef)}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        <ScrollHero frames={frames} designation={`The Exceptional Few™ — ${collectionNo(ef.collectionNumber)}`} title={NAME} place="Canyon Point, Utah" line={ef.heroLine} credit={rightsOwner(hero)}
+        <ScrollHero frames={frames} designation={`The Exceptional Few™ · ${collectionNo(ef.collectionNumber)}`} title={NAME} place="Canyon Point, Utah" line={ef.heroLine} credit={rightsOwner(hero)}
           actions={<><Link href={d.planHref} className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink">Plan this journey</Link><Link href={CANONICAL} className="text-[11px] tracking-[0.18em] uppercase text-white/80 hover:text-white">Save</Link></>} />
         <RecordNav items={nav} cta="Plan this journey" ctaHref={d.planHref} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">

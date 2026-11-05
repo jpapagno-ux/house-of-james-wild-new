@@ -49,19 +49,28 @@ export function parseFavorite(body: unknown): Result<{ slug: string }> {
   return SLUG.test(slug) ? { ok: true, value: { slug } } : fail("invalid_input", "property must be a stay slug");
 }
 
-export type FolioInput = { title: string; destination_summary: string | null; start_date: string | null; end_date: string | null };
+export type FolioInput = { title: string; destination_summary: string | null; start_date: string | null; end_date: string | null; ledger_id: string | null; advisor_adv: string | null; advisor_slug: string | null; source: string | null };
 
 /** POST /api/v1/me/folios — { title, destinationSummary?, startDate?, endDate? } */
 export function parseFolio(body: unknown): Result<FolioInput> {
   if (!isObj(body)) return fail("invalid_input", "Body must be a JSON object");
-  const bad = only(body, ["title", "destinationSummary", "startDate", "endDate"]); if (bad) return bad;
+  const bad = only(body, ["title", "destinationSummary", "startDate", "endDate", "ledgerId", "advisorAdv", "advisorSlug", "source"]); if (bad) return bad;
   const title = text(body.title, 120);
   if (!title) return fail("invalid_input", "A Folio needs a title");
   const start = body.startDate ?? null, end = body.endDate ?? null;
   if (start !== null && !isValidDate(start)) return fail("invalid_input", "startDate must be YYYY-MM-DD");
   if (end !== null && !isValidDate(end)) return fail("invalid_input", "endDate must be YYYY-MM-DD");
   if (start && end && (end as string) < (start as string)) return fail("invalid_input", "endDate is before startDate");
-  return { ok: true, value: { title, destination_summary: text(body.destinationSummary, 400) || null, start_date: start as string | null, end_date: end as string | null } };
+  // Stage 4: the FOL number and the advisor, when Iggi (or an advisor) opened it.
+  const ledgerId = typeof body.ledgerId === "string" ? body.ledgerId.toUpperCase() : null;
+  if (ledgerId !== null && !/^FOL-\d{4}-\d{6}$/.test(ledgerId)) return fail("invalid_input", "ledgerId must be a FOL number");
+  const advisorAdv = typeof body.advisorAdv === "string" ? body.advisorAdv.toUpperCase() : null;
+  if (advisorAdv !== null && !/^ADV-\d{4}-\d{6}$/.test(advisorAdv)) return fail("invalid_input", "advisorAdv must be an ADV number");
+  const advisorSlug = typeof body.advisorSlug === "string" ? body.advisorSlug.toLowerCase() : null;
+  if (advisorSlug !== null && !SLUG.test(advisorSlug)) return fail("invalid_input", "advisorSlug must be a slug");
+  const source = typeof body.source === "string" ? body.source : null;
+  if (source !== null && !["traveler", "iggi", "advisor"].includes(source)) return fail("invalid_input", "source must be traveler, iggi or advisor");
+  return { ok: true, value: { title, destination_summary: text(body.destinationSummary, 400) || null, start_date: start as string | null, end_date: end as string | null, ledger_id: ledgerId, advisor_adv: advisorAdv, advisor_slug: advisorSlug, source } };
 }
 
 export type ItemInput = { slug: string | null; external_item_type: string | null; notes: string | null; arrival_date: string | null; departure_date: string | null };

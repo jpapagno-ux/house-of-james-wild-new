@@ -10,6 +10,8 @@ export const metadata = { title: "Team" };
 export default async function Team() {
   const desk = await requireDesk("/partner/team");
   const manage = desk.canAdmin;
+  // The house invites a partner's first admin (James, 4 Nov 2026): the API and RLS already allow a house admin.
+  const canInvite = manage || desk.houseEditor;
   const [members, invites, entities, access] = await Promise.all([
     desk.sb.from("organization_memberships").select("id, user_id, role, status, created_at").eq("organization_id", desk.org.id).order("created_at"),
     desk.sb.from("org_invitations").select("id, email, role, entity_ids, expires_at, accepted_at, revoked_at, created_at").eq("organization_id", desk.org.id).order("created_at", { ascending: false }),
@@ -28,7 +30,7 @@ export default async function Team() {
     <div>
       <PageHead eyebrow="Team" title={`People at the desk for ${desk.org.name}`}
         lead="Partner admins manage the team, company details and contacts. Contributors answer requests and send updates for the properties they're given." />
-      {!manage && rows.length === 0 && <div className="mt-6"><Notice>Your partner admin manages the team. You&rsquo;re signed in as {desk.user.email}.</Notice></div>}
+      {!canInvite && rows.length === 0 && <div className="mt-6"><Notice>Your partner admin manages the team. You&rsquo;re signed in as {desk.user.email}.</Notice></div>}
 
       <Section title="Members" aside={<span className="ledger-muted">{rows.filter((m) => m.status === "active").length} active</span>}>
         {rows.length === 0 ? <p className="text-[15px] ledger-muted">Only partner admins see the full team.</p> : (
@@ -52,7 +54,7 @@ export default async function Team() {
         )}
       </Section>
 
-      {manage && (
+      {canInvite && (
         <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-[1.2fr_1fr]">
           <Section title="Invite someone">
             <InviteForm entities={entities.map((e) => ({ id: e.id, name: e.name }))} />

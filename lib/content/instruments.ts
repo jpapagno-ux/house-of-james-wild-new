@@ -32,6 +32,7 @@ export const HANDOFFS: { from: string; to: string; line: string }[] = [
   { from: "Compass", to: "Atlas", line: "the places a reading chooses can be flown to on the Atlas." },
   { from: "Atlas", to: "Iggi", line: "every route and ship can be asked about." },
   { from: "Iggi", to: "Compass", line: "Iggi can take your reading in conversation and show the same fits." },
+  { from: "Iggi", to: "Atlas", line: "the places Iggi names in a chat appear on the Atlas beneath it, flown to in order." },
   { from: "Everything", to: "a person", line: "prices, availability and bookings stay with James or the advisor who knows the place. No instrument books." },
 ];
 

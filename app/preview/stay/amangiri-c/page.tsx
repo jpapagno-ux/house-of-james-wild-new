@@ -47,7 +47,7 @@ export default async function AmangiriMockC({ searchParams }: { searchParams: Pr
       <main id="main" className="overflow-x-clip">
         {/* 01 Hero: one frame, slow zoom, the name arrives after the image settles */}
         <DriftFrame a={hero} ratio="21:9" priority motion="zoom">
-          <p className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; — {collectionNo(ef.collectionNumber)}</p>
+          <p className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; · {collectionNo(ef.collectionNumber)}</p>
           <h1 className="ledger-h1 mt-3 !text-[2.9rem] md:!text-[6.4rem]">{NAME}</h1>
           <p className="ledger-display italic text-xl md:text-3xl text-white/90 mt-2">Canyon Point, Utah</p>
           <div className="mt-8 flex flex-wrap items-center gap-5"><Link href={d.planHref} className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink">Plan this journey</Link><Link href={CANONICAL} className="text-[11px] tracking-[0.18em] uppercase text-white/80 hover:text-white">Save</Link></div>

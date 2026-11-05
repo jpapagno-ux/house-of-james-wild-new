@@ -75,3 +75,11 @@ The desk uses the anon key + the signed-in session only (RLS decides). It does n
 Content / room / rate / offer editing, uploads and the Media Library, Partner Dispatch,
 Founder Notes feed, Resources, Iggi context, Airtable mirror, MFA, domain split.
 Media references for the 58 Lion Sands Cloudinary assets wait for `media_assets` (Stage 3).
+
+## The Good Life Bahamas (PAR-000003), 4 Nov 2026
+
+Seed `supabase/seed/partner_good_life_foster_hill.sql`, applied to JWC Booking Live on 4 Nov 2026:
+Foster Hill STY-2026-800013 (collection) and its houses Foxy Lady 800014, Marina House 800015,
+Ballymena 800016, Casa Bella 800017, Peeps Cottage 800018 (draft, Gatherings first, Stays second,
+PUBLIC_SOURCE); six contacts to verify; twelve content requests. The first live partner on the desk
+(James, 4 Nov 2026). jpapagno@gmail.com is jw_admin on James Wild & Co so the house can send invitations.

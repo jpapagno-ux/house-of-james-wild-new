@@ -18,7 +18,17 @@ function roll(all: HealthCheck[][]): HealthCheck[] {
   return [...byKey.values()].map((cs) => {
     const worst = cs.reduce((a, b) => (rank[b.state] > rank[a.state] ? b : a));
     const need = cs.filter((c) => c.state !== "ok").length;
-    const detail = need === 0 ? (cs.length === 1 ? cs[0].detail : `In order across ${cs.length} entries`) : cs.length === 1 ? worst.detail : `${need} of ${cs.length} entries: ${worst.detail.charAt(0).toLowerCase()}${worst.detail.slice(1)}`;
+    const lower = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+    // Contacts belong to the organization, not to each entry: say it once.
+    if (worst.key === "contacts") return { ...worst };
+    // Open requests and media requests are counts: add them up across entries instead of quoting one entry.
+    const counted = (re: RegExp, one: string, many: string) => {
+      const total = cs.reduce((s, c) => s + (Number(c.detail.match(re)?.[1] ?? 0)), 0);
+      return total > 0 ? `${total} ${total === 1 ? one : many} across ${need} of ${cs.length} entries` : null;
+    };
+    const sum = worst.key === "requests" ? counted(/^(\d+) open request/, "open request", "open requests")
+      : worst.key === "images" ? counted(/^(\d+) media request/, "media request open", "media requests open") : null;
+    const detail = need === 0 ? (cs.length === 1 ? cs[0].detail : `In order across ${cs.length} entries`) : cs.length === 1 ? worst.detail : sum ?? `${need} of ${cs.length} entries: ${lower(worst.detail)}`;
     return { ...worst, detail };
   }).sort((a, b) => rank[b.state] - rank[a.state]);
 }
@@ -55,12 +65,15 @@ export default async function Overview() {
           {open.length === 0 ? <p className="mt-4 text-[15px]">Nothing outstanding. Thank you.</p> : (
             <ul className="mt-3 divide-y divide-ink/10">
               {open.slice(0, 6).map((r) => (
-                <li key={r.id} className="py-3 flex items-start justify-between gap-4">
-                  <div className="min-w-0">
-                    <Link href={`/partner/requests/${r.id}`} className="font-medium hover:underline underline-offset-2">{r.requested_item}</Link>
-                    <p className="text-[13px] ledger-muted truncate">{REQUEST_TYPE[r.request_type]} · {r.property_id ? name.get(r.property_id) ?? "—" : desk.org.name}{r.due_date ? ` · due ${niceDate(r.due_date)}` : ""}</p>
-                  </div>
-                  <StatusPill {...REQUEST_STATUS[r.status]} />
+                <li key={r.id}>
+                  {/* The whole row opens the request; the status beside it is a label, not a button. */}
+                  <Link href={`/partner/requests/${r.id}`} className="group py-3 -mx-3 px-3 flex items-start justify-between gap-4 hover:bg-paper-card">
+                    <div className="min-w-0">
+                      <p className="font-medium group-hover:underline underline-offset-2">{r.requested_item}</p>
+                      <p className="text-[13px] ledger-muted truncate">{REQUEST_TYPE[r.request_type]} · {r.property_id ? name.get(r.property_id) ?? "—" : desk.org.name}{r.due_date ? ` · due ${niceDate(r.due_date)}` : ""}</p>
+                    </div>
+                    <span className="flex items-center gap-3 shrink-0"><StatusPill {...REQUEST_STATUS[r.status]} /><span aria-hidden="true" className="ledger-muted group-hover:translate-x-0.5 transition-transform">→</span></span>
+                  </Link>
                 </li>
               ))}
             </ul>

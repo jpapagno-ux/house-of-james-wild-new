@@ -10,6 +10,7 @@ import { GUIDES } from "@/lib/content/guides";
 import { STAYS, pageReady, stayBySlug } from "@/lib/content/stays";
 import { HUBS, hubsForStay, transfersForStay, hubLabel, transferLine, KIND_LABEL } from "@/lib/content/arrivals";
 import { recordHref } from "@/lib/ledger/urls";
+import { EF_CARDS, EF_PATH } from "@/lib/content/exceptional-few-cards";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import { RESERVES } from "@/lib/content/reserves";
 import { ADVISORS, DEFAULT_ADVISOR, JAMES_HEADS_EVERY_PAGE, advisorsFor } from "@/lib/content/advisors";
@@ -34,6 +35,10 @@ export function GET() {
     "- Each record carries a permanent Ledger ID, issued once and never reused or renumbered.",
     "- Founder marks (\"Founder stayed · year\") appear only where James has been, with the year. The six marks: I Know a Place (stayed), I've Walked It (vetted), I Know the Host, I Keep Going Back (founder favourite), I Know Who Knows (partner verified), Pencilled (awaiting a visit).",
     "- The house is advisor-led and advisor-built: a named advisor with an ADV number carries every journey from first call to Folio. James is the house default.",
+    "",
+    "## The Exceptional Few",
+    `- A hand-numbered collection across every volume, at ${absoluteUrl(EF_PATH)}: the stays and ships James Wild & Co judges to have no real equivalent. Each place stays filed in its own volume and carries its number. Cite the number with the name.`,
+    ...EF_CARDS.map((c) => `- ${c.label} ${c.name}, ${c.place}: ${absoluteUrl(c.href)}`),
     "",
     "## Ledger ID scheme (cite the ID with the name; one ID per place)",
     "- STY-YYYY-###### — a stay: a lodge, camp, house, hotel or ship. One per property.",

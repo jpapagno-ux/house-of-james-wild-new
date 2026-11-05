@@ -15,7 +15,7 @@ type Box = { x: number; y: number; w: number; h: number };
 const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 const HOLD_MS = 1500, FLY_MS = 1700, CLOSE_W = 190; // chart units: about 65° of longitude at the equator, a country and its neighbours
 
-export default function CompassAtlas({ chart, fits, explain }: { chart: ChartData; fits: AtlasFit[]; explain?: string }) {
+export default function CompassAtlas({ chart, fits, explain, title = "Where the reading points.", id = "compass-atlas-h", caption = "The Compass chose these from the Ledger; the Atlas shows where they are. Click a number to fly there." }: { chart: ChartData; fits: AtlasFit[]; explain?: string; title?: string; id?: string; caption?: string }) {
   const W = chart.width, H = chart.height, aspect = W / H;
   const whole: Box = { x: 0, y: 0, w: W, h: H };
   const pts = fits.map((f) => { const { x, y } = projectOn(chart, f.lat, f.lng); return { ...f, x, y }; });
@@ -65,11 +65,11 @@ export default function CompassAtlas({ chart, fits, explain }: { chart: ChartDat
   const line = pts.map((p, i) => `${i ? "L" : "M"}${p.x},${p.y}`).join("");
   const scale = vb.w / W; // keeps pins and type the same size on screen as the camera closes in
   return (
-    <section className="mt-8" aria-labelledby="compass-atlas-h">
+    <section className="mt-8" aria-labelledby={id}>
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
           <p className="ledger-eyebrow text-house">The Atlas</p>
-          <h3 id="compass-atlas-h" className="ledger-display text-[1.4rem] md:text-[1.8rem] mt-1">Where the reading points.</h3>
+          <h3 id={id} className="ledger-display text-[1.4rem] md:text-[1.8rem] mt-1">{title}</h3>
           {explain && <p className="mt-1 text-[14px] ledger-muted">{explain}</p>}
         </div>
         <div className="flex gap-2">
@@ -106,7 +106,7 @@ export default function CompassAtlas({ chart, fits, explain }: { chart: ChartDat
           ))}
         </ol>
       </div>
-      <p className="mt-3 text-[12.5px] ledger-muted">The Compass chose these from the Ledger; the Atlas shows where they are. Click a number to fly there.</p>
+      <p className="mt-3 text-[12.5px] ledger-muted">{caption}</p>
     </section>
   );
 }

@@ -5,8 +5,10 @@ import IggiMark from "@/components/iggi/IggiMark";
 import { IGGI_CORE_ORIGIN } from "@/lib/iggi/flag";
 import Link from "next/link";
 import { DEFAULT_ADVISOR } from "@/lib/content/advisors";
+import { CRUX_HREF } from "@/lib/compass/pathway-adapter";
 import { folioFromCore, getFolio, isFolioId, saveFolio, type Folio } from "@/lib/folio/shelf";
 import { FLAGS } from "@/lib/booking-live/flags";
+import IggiAtlas, { type IggiPlace } from "@/components/iggi/IggiAtlas";
 
 // "Ask Iggi" panel — Stage 2 of the Iggi Intelligence Core (Contract C3).
 // Mints a same-origin embed token from /api/iggi/token, then loads the Iggi
@@ -38,6 +40,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
   const [state, setState] = useState<"idle" | "loading" | "ready" | "off">("idle");
   const [height, setHeight] = useState(620);
   const [folio, setFolio] = useState<Folio | null>(null); // Stage 4: the Folio Iggi handed back
+  const [atlas, setAtlas] = useState<{ stays: IggiPlace[]; title: string | null; focus: number } | null>(null); // §D3: the places Iggi named, on the Atlas
 
   // Lazy: mint the token and set the iframe src only when the panel is near the viewport.
   useEffect(() => {
@@ -85,6 +88,8 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
       const d = e.data as { type?: string; height?: number; path?: string; external?: boolean; entitySlug?: string; domain?: string; folio?: unknown; fol?: string };
       if (d.type === "ji:resize" && typeof d.height === "number") setHeight(Math.min(Math.max(d.height, 480), 920));
       if (d.type === "ji:open_app" && typeof d.path === "string") {
+        // crux: Iggi walks a pure safari reading over to Wild & Co Safaris — through the house's one door (James, 31 Oct 2026).
+        if ((d as { crux?: boolean }).crux) { location.assign(CRUX_HREF); return; }
         // external: a link back into this site (the advisor's Plan page with the FOL on it); anything else opens the Core.
         if (d.external) { try { const u = new URL(d.path, location.origin); if (u.origin === location.origin) location.assign(u.pathname + u.search); } catch { /* ignore */ } }
         else window.open(`${IGGI_CORE_ORIGIN}${d.path.startsWith("/") ? d.path : "/" + d.path}`, "_blank", "noopener");
@@ -100,6 +105,17 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
           const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
           if (Array.isArray(dl)) dl.push({ event: "iggi_folio", fol: f.fol, advisor: f.advisor?.adv ?? null, page: ctx.sourcePage });
         }
+      }
+      // §D3 (4 Nov 2026): Iggi hands the places it named to the Atlas beneath the chat. The Core
+      // posts quietly when a journey is shaped and again, with focus, when the traveller asks to
+      // see them. Up to 12 places; only slug, Ledger ID, name and reason are read.
+      if (d.type === "ji:atlas") {
+        const m = d as { stays?: unknown; title?: unknown; focus?: unknown };
+        const str = (v: unknown, n: number) => (typeof v === "string" && v.trim() ? v.trim().slice(0, n) : null);
+        const stays = (Array.isArray(m.stays) ? m.stays : []).slice(0, 12).map((s) => { const o = (s && typeof s === "object" ? s : {}) as Record<string, unknown>; return { slug: str(o.slug, 120), ledger_id: str(o.ledger_id, 40), name: str(o.name, 120), reason: str(o.reason, 200) }; }).filter((s) => s.slug || s.ledger_id || s.name);
+        if (stays.length) setAtlas((prev) => ({ stays, title: str(m.title, 120), focus: m.focus ? (prev?.focus ?? 0) + 1 : prev?.focus ?? 0 }));
+        const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
+        if (Array.isArray(dl)) dl.push({ event: "iggi_atlas", places: stays.length, focus: !!m.focus, page: ctx.sourcePage });
       }
       if (d.type === "ji:open_folio") location.assign(`/folio${typeof d.fol === "string" ? `?fol=${encodeURIComponent(d.fol)}` : ""}`);
       // Stage 5: Iggi hands the traveller to a person. The enquiry arrives on
@@ -153,6 +169,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
           <div className="p-6 text-[15px] ledger-muted" aria-live="polite">{state === "loading" ? "Iggi is opening the Ledger…" : "Scroll here and Iggi will open the Ledger for this page."}</div>
         )}
       </div>
+      {atlas && <IggiAtlas stays={atlas.stays} title={atlas.title} focus={atlas.focus} />}
       {folio && (
         <aside className="mt-4 border-l-2 border-crimson bg-paper-card px-5 py-4 flex flex-wrap items-center gap-x-6 gap-y-3" aria-live="polite" aria-label="Your Folio">
           <div className="min-w-0">
@@ -179,7 +196,7 @@ function toLocal(href: string): string {
 /** With traveller accounts on: the same Folio in the account (title, the stays as items, the itinerary as a note). Best effort, signed-in only. */
 async function saveToAccount(f: Folio): Promise<void> {
   try {
-    const r = await fetch("/api/v1/me/folios", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ title: `${f.fol} · ${f.title}`.slice(0, 120), destinationSummary: [f.advisor?.adv ? `Open with ${f.advisor.name} (${f.advisor.adv})` : null, f.summary].filter(Boolean).join(" — ").slice(0, 400) }) });
+    const r = await fetch("/api/v1/me/folios", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ title: f.title.slice(0, 120), destinationSummary: (f.summary ?? "").slice(0, 400) || undefined, ledgerId: f.fol, advisorAdv: f.advisor?.adv ?? undefined, advisorSlug: f.advisor?.slug ?? undefined, source: "iggi" }) });
     if (!r.ok) return; // not signed in, or accounts off: the device shelf still has it
     const { data } = (await r.json()) as { data?: { id?: string } };
     if (!data?.id) return;

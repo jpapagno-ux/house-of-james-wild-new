@@ -5,6 +5,8 @@ import { PathwayChips } from "@/components/pathways/Pathway";
 import { pathwayHref } from "@/lib/content/pathways/flag";
 import { VOYAGE_PATHWAYS_ON } from "@/lib/content/ships/flags";
 import type { ShipCardData } from "@/lib/content/ships/cards";
+import { EFStamp } from "@/components/exceptional-few/EFBadge";
+import { efForHref } from "@/lib/content/exceptional-few";
 
 // The one ship card (voyages audit, 1 Nov 2026: one card style on every Voyages page).
 // Kind and operator, name, tagline, nights, guests and the fare from; pathway chips when the
@@ -16,6 +18,7 @@ export default function ShipCard({ c, sister = false }: { c: ShipCardData; siste
     <article className="group h-full flex flex-col ledger-paper border ledger-border hover:border-crimson/60 relative" style={{ borderTopColor: ink, borderTopWidth: 3 }}>
       <div className="relative aspect-[4/3] bg-paper-card overflow-hidden">
         {c.image && <Image src={c.image.url} alt={c.image.alt} fill sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 90vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" />}
+        {(() => { const ef = efForHref(c.href); return ef ? <EFStamp no={ef.collectionNumber} size={104} rotate={-7} onPhoto className="absolute right-2 bottom-2 pointer-events-none" /> : null; })()}
         {!c.page && <span className="absolute top-3 left-3 bg-paper/95 font-mono text-[11px] px-2 py-0.5">Ship page to follow</span>}
       </div>
       <div className="p-4 flex flex-col flex-1">

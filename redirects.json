@@ -198,5 +198,20 @@
     "source": "/stays/windstar-cruise-sv-star-breeze",
     "destination": "/voyages/ships/star-breeze",
     "permanent": true
+  },
+  {
+    "source": "/stays/tswalu-reserve",
+    "destination": "/safaris/tswalu-reserve",
+    "permanent": true
+  },
+  {
+    "source": "/stays/madikwe",
+    "destination": "/safaris/madikwe",
+    "permanent": true
+  },
+  {
+    "source": "/stays/jao-reserve",
+    "destination": "/safaris/jao-reserve",
+    "permanent": true
   }
 ]

@@ -8,6 +8,7 @@ import { SectionHead } from "@/components/record/Sections";
 import LedgerChart, { projectOn, type ChartData } from "@/components/destination/LedgerChart";
 import REGION_LIB from "@/lib/charts/regions.json";
 import { indonesiaAtlas } from "@/lib/content/atlas/indonesia";
+import { staysAtlas } from "@/lib/content/atlas/stays";
 import { HOUSE } from "@/lib/palette";
 import { atlasOn } from "./flag";
 import { DIVE_FLAG, pinsOf, signed, type AtlasEntry, type AtlasPoint, type JamesNote } from "./atlas";
@@ -18,7 +19,13 @@ import { absoluteUrl } from "@/lib/seo";
 
 const AtlasShell = dynamic(() => import("./AtlasShell"));
 
-const ATLAS: Record<string, () => ReturnType<typeof indonesiaAtlas>> = { indonesia: indonesiaAtlas };
+const ATLAS: Record<string, () => ReturnType<typeof indonesiaAtlas>> = {
+  indonesia: indonesiaAtlas,
+  // Board 4 (James, 3 Nov 2026): the next countries, stays first; official layers are added per country when sourced.
+  botswana: () => staysAtlas("botswana", "Botswana", "africa"),
+  tahiti: () => staysAtlas("tahiti", "French Polynesia", "oceania"),
+  thailand: () => staysAtlas("thailand", "Thailand", "asia"),
+};
 const fmt = (n: number, pos: string, neg: string) => `${Math.abs(n).toFixed(3)}° ${n < 0 ? neg : pos}`;
 const coord = (p: { lat: number; lng: number }) => `${fmt(p.lat, "N", "S")}, ${fmt(p.lng, "E", "W")}`;
 
@@ -59,7 +66,8 @@ export default function CountryAtlas({ country, name, regionSlug }: { country: s
   const stays = data.entries.filter((e) => e.kind === "stay");
   const voyages = data.entries.filter((e) => e.kind === "voyage");
   const group = (list: AtlasPoint[]) => [...new Set(list.map((p) => p.group))].map((g) => [g, list.filter((p) => p.group === g)] as const);
-  const intro = `Every stay and voyage in the Ledger in ${name}, on the terrain, with the World Heritage Sites and the dive sites our partners name${data.volcanoes.length ? ", plus the volcano alert levels" : ""}. Tap a pin for its card, or fly the route from Bali to Komodo and Raja Ampat.`;
+  const layers = [data.parks.length ? "the World Heritage Sites" : "", data.dives.length ? "the dive sites our partners name" : "", data.volcanoes.length ? "the volcano alert levels" : ""].filter(Boolean);
+  const intro = `Every ${data.entries.some((e) => e.kind === "voyage") ? "stay and voyage" : "stay"} in the Ledger in ${name}, on the terrain${layers.length ? `, with ${layers.join(" and ")}` : ""}. Tap a pin for its card${data.flight.length ? ", or fly the route" : ""}.`;
   // The real advisors who know the country (stand-ins never: lib/content/advisors.ts ADVISORS), James first.
   const advisors = advisorsFor({ countrySlug: country, regionSlug }).advisors.filter((a) => !a.sample);
   const planHref = (slug: string) => `/plan?advisor=${slug}&destination=${encodeURIComponent(country)}`;

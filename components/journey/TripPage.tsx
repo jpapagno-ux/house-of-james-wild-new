@@ -16,7 +16,7 @@ import Signature from "@/components/record/Signature";
 import { KIND as HOST_KIND, type HostKind } from "@/components/record/HostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import { RecordNav, SectionHead, IncludedLists, RecordHero } from "@/components/record/Sections";
-import { Anchor, Car, ChevronDown, Fish, Mountain, Plane, Ship, Trees, Waves } from "lucide-react";
+import { Anchor, CalendarDays, Car, ChevronDown, Clock, Fish, MapPin, Mountain, Plane, Route, Ship, Sun, Tent, Trees, Users, Waves } from "lucide-react";
 import { usd } from "@/lib/pricing";
 import { offersFor } from "@/lib/content/offers/offers";
 import OfferPanel from "@/components/ledger/OfferPanel";
@@ -31,6 +31,9 @@ import type { Trip, TripImg } from "@/lib/content/trips";
 import { HOSTS, hostFor } from "@/lib/content/hosts";
 import LiveHostPanel from "@/components/record/LiveHostPanel";
 import { Stamp } from "@/components/notes/HeroMark";
+import RouteScrollSync from "./RouteScrollSync";
+import { SuitedMark, SuitedRow } from "@/components/ledger/SuitedIcon";
+import { suitedKey } from "@/lib/suited";
 import { VOLUME_STYLES } from "@/lib/volumes";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
@@ -73,14 +76,15 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const ledgerRef = T.map_coord.match(/(ITN-[A-Z]+-\d{4}-\d+|JW-[A-Z0-9-]+)/)?.[1] ?? "";
   const entry = ledgerRef.match(/(\d{4,})$/)?.[1].slice(-4) ?? (ledgerRef.replace(/^JW-/, "") || "—");
   const volStamp = <InkStamp volume={voyage ? "voyages" : "overland"} no={entry} size={128} rotate={voyage ? -7 : 6} seed={voyage ? 23 : 47} />;
-  // The waters crumb goes to the place guide when there is one (Raja Ampat, Komodo).
   const waters = T.seo.path.split("/")[2];
-  const GUIDE_PATH: Record<string, string> = { "raja-ampat": "/destinations/asia/indonesia/raja-ampat", komodo: "/destinations/asia/indonesia/komodo", antarctica: "/destinations/polar-antarctica" };
   // Where a voyage's waters sit for "compare the sailings": the place key journeysFor() files it under.
   const WATERS_PLACE: Record<string, { key: string; name: string; href: string }> = { "raja-ampat": { key: "indonesia", name: "Indonesia", href: "/destinations/asia/indonesia" }, komodo: { key: "indonesia", name: "Indonesia", href: "/destinations/asia/indonesia" }, antarctica: { key: "antarctica", name: "Antarctica", href: "/destinations/polar-antarctica" } };
   // The country crumb on an overland route goes to that country's destination page.
   const COUNTRY_PATH: Record<string, string> = { "costa-rica": "/destinations/central-america/costa-rica", "south-africa": "/destinations/africa/south-africa", mexico: "/destinations/caribbean-mexico/mexico", guatemala: "/destinations/central-america/guatemala", belize: "/destinations/central-america/belize" };
-  const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? GUIDE_PATH[waters] ?? "/voyages" : COUNTRY_PATH[waters] ?? "/overland", T.seo.path][i] }));
+  // The trail follows the volume (board 10, nav audit P2-8): a voyage's waters crumb opens its Voyages waters hub, an
+  // overland country crumb opens that country's routes on the Overland hub. The place guides stay linked in the page.
+  const VOYAGE_HUB: Record<string, string> = { "raja-ampat": "/voyages/indonesia", komodo: "/voyages/indonesia", antarctica: "/voyages/polar" };
+  const crumbs = T.crumbs.map((name, i) => ({ name, path: ["/", voyage ? "/voyages" : "/overland", voyage ? VOYAGE_HUB[waters] ?? "/voyages" : `/overland#${waters}-h`, T.seo.path][i] }));
   // Voyage and overland routes (trip:<id>) show a host only once the Partner Desk sets one.
   const h = host ? (host.key.startsWith("trip:") && !(host.key in HOSTS) ? { state: "off" as const } : hostFor(host.key)) : null;
   const hostOn = !!h && h.state !== "off";
@@ -95,7 +99,13 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   // "From" price: the lowest per-person option on file, with what it's based on.
   const low = [...T.calc.opts].sort((a, b) => a.pp - b.pp)[0];
   const def = T.calc.opts[(T.calc as { opt0?: number }).opt0 ?? 0];
-  const route = T.side.map(([, n]) => n).filter((n, i, a) => a.indexOf(n) === i).join(" → ");
+  // "Who it suits" icons (James, 4 Nov 2026): the trip's own audience lines, best suited first.
+  const suited = [...(T.suits ?? [])].map(([who]) => ({ label: who, k: suitedKey(who) })).filter((x): x is { label: string; k: NonNullable<ReturnType<typeof suitedKey>> } => !!x.k)
+    .sort((a, b) => Number(b.label === T.bestFor?.who) - Number(a.label === T.bestFor?.who));
+  const stops = T.side.map(([, n]) => n).filter((n, i, a) => a.indexOf(n) === i);
+  const route = stops.join(" → ");
+  // One quiet line icon per fact in the at-a-glance strip (graphite, House Standard).
+  const FACT_ICON: Record<string, typeof Clock> = { Duration: Clock, Vessel: Ship, Ships: Ship, From: MapPin, Route: Route, "2027 sailings": CalendarDays, Sailings: CalendarDays, When: CalendarDays, "Best months": Sun, Best: Sun, Group: Users, Party: Users, Travel: Plane, Vehicle: Car, Camp: Tent };
   // James's note for a day: the lodge's line on the first day there (overland),
   // or the experience filed for that day (voyage).
   const noteFor = (d: (typeof T.days)[number]) => {
@@ -118,7 +128,6 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         <>
           <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />
           {!mapHtml.includes('data-gen="1"') && <link rel="stylesheet" href={`/maps/fig/${T.id}.css`} precedence="default" />}
-          <div className="mt-6" dangerouslySetInnerHTML={{ __html: mapHtml }} />
         </>
       ) : (
         // No chart engraved for these waters yet: the stops still list in order below.
@@ -126,12 +135,14 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           <span className="bg-paper/85 px-3 py-2"><span className="block font-mono text-[11px] tracking-[0.14em] uppercase">The chart is being engraved</span><span className="block ledger-display text-[17px] mt-1">{route}</span></span>
         </div>
       )}
-      <ol className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3" aria-label="Stops in order">
+      <div className={mapHtml ? "mt-6 lg:grid lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)] lg:gap-8 lg:items-start" : ""}>
+      {mapHtml && <div className="lg:sticky lg:top-[230px]" dangerouslySetInnerHTML={{ __html: mapHtml }} />}
+      <ol id={`${mapId}-stops`} className={`mt-6 ${mapHtml ? "lg:mt-0 grid gap-2 sm:grid-cols-2 lg:grid-cols-1" : "grid gap-2 sm:grid-cols-2 lg:grid-cols-3"}`} aria-label="Stops in order">
         {T.side.map(([k, name, when, move]) => {
           const d = k === "S" ? 1 : k === "E" ? (voyage ? T.days.length : 12) : voyage ? parseInt(k, 10) : parseInt(when.replace(/\D+/g, " ").trim().split(" ")[0] || "1", 10);
           return (
             <li key={k + name}>
-              <button type="button" data-jw-day={mapHtml ? d : undefined} data-jw-for={mapHtml ? mapId : undefined} className="w-full text-left border ledger-border px-4 py-3 hover:border-crimson/60 flex gap-3">
+              <button type="button" data-jw-day={mapHtml ? d : undefined} data-jw-for={mapHtml ? mapId : undefined} className="w-full text-left border ledger-border px-4 py-3 hover:border-crimson/60 flex gap-3 transition-colors data-[on]:border-[#8B2525] data-[on]:bg-paper-card">
                 <span className="ledger-display ledger-crimson text-lg w-6 shrink-0">{k}</span>
                 <span><span className="ledger-display text-[17px]">{name}</span> <span className="ledger-muted text-[13px]">· {when}</span><span className="block text-[13px] ledger-muted">{move}</span></span>
               </button>
@@ -139,6 +150,8 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           );
         })}
       </ol>
+      </div>
+      {mapHtml && <RouteScrollSync list={`${mapId}-stops`} />}
     </Sec>
   );
 
@@ -203,7 +216,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <SectionHead eyebrow="Who it suits" title={voyage ? "Who Should Sail This" : "Who This Route Is For"} icon="tree-ring" />
       <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {[...T.suits].sort((a, b) => Number(b[0] === T.bestFor?.who) - Number(a[0] === T.bestFor?.who)).map(([who, wit, why]) => (
-          <li key={who} className={`border p-5 ${who === T.bestFor?.who ? "border-crimson bg-paper-card" : "ledger-border"}`}><p className="ledger-eyebrow ledger-crimson">{who}{who === T.bestFor?.who && <span className="ml-2 border border-crimson px-1.5 py-0.5 text-[9.5px]">Best suited</span>}</p><p className="ledger-display text-[19px] leading-snug mt-2">{wit}</p><p className="mt-2 text-[15px] ledger-muted"><Fx t={why} /></p></li>
+          <li key={who} className={`border p-5 ${who === T.bestFor?.who ? "border-crimson bg-paper-card" : "ledger-border"}`}>{suitedKey(who) && <span className="block mb-3"><SuitedMark k={suitedKey(who)!} size={20} best={who === T.bestFor?.who} /></span>}<p className="ledger-eyebrow ledger-crimson">{who}{who === T.bestFor?.who && <span className="ml-2 border border-crimson px-1.5 py-0.5 text-[9.5px]">Best suited</span>}</p><p className="ledger-display text-[19px] leading-snug mt-2">{wit}</p><p className="mt-2 text-[15px] ledger-muted"><Fx t={why} /></p></li>
         ))}
       </ul>
       {T.twice?.length > 0 && (
@@ -528,10 +541,25 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
       <div className="max-w-ledger mx-auto px-5 md:px-10 py-6 md:py-7 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
         <div className="min-w-0">
           <p className="ledger-display text-[18px] md:text-[21px] leading-snug">{T.slides[0].line}</p>
-          <p className="mt-1 text-[13.5px] ledger-muted">{route}</p>
-          <dl className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-3">
-            {T.herofacts.map(([k, v]) => <div key={k}><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[16px] mt-0.5">{v}</dd></div>)}
+          {/* The route as a line of stops (James, 4 Nov 2026: a clearer header for voyages and routes). */}
+          <ol className="mt-3 flex flex-wrap items-center gap-y-1.5 text-[13.5px]" aria-label="The route">
+            {stops.map((n, i) => (
+              <li key={n} className="inline-flex items-center">
+                <span className="inline-block w-[7px] h-[7px] mr-1.5 shrink-0" style={{ background: i === 0 || i === stops.length - 1 ? "#2E2B28" : "transparent", boxShadow: "inset 0 0 0 1.5px #2E2B28" }} aria-hidden="true" />
+                <span>{n}</span>
+                {i < stops.length - 1 && <span className="mx-2 w-4 h-px bg-[#CFC8BF]" aria-hidden="true" />}
+              </li>
+            ))}
+          </ol>
+          <dl className="mt-5 grid grid-cols-2 border-t border-l ledger-border">
+            {T.herofacts.map(([k, v]) => { const I = FACT_ICON[k] ?? null; return (
+              <div key={k} className="flex items-start gap-3 p-3 border-r border-b ledger-border bg-paper">
+                {I && <I className="w-[18px] h-[18px] mt-0.5 shrink-0 ledger-muted" strokeWidth={1.4} aria-hidden="true" />}
+                <div className="min-w-0"><dt className="ledger-eyebrow">{k}</dt><dd className="ledger-display text-[16px] mt-0.5 leading-snug">{v}</dd></div>
+              </div>
+            ); })}
           </dl>
+          {suited.length > 0 && <div className="mt-4"><p className="ledger-eyebrow mb-2">Who it suits</p><SuitedRow items={suited} best={T.bestFor?.who} /></div>}
           {T.bestFor && <p className="mt-3 text-[14px]"><span className="ledger-eyebrow ledger-crimson mr-2">Best for</span><span className="ledger-display italic text-[17px]">{T.bestFor.who}</span> <span className="ledger-muted">· {T.bestFor.why}</span></p>}
           {T.photoCredit && <p className="mt-2 text-[12px] ledger-muted">{T.photoCredit}</p>}
           <p className="mt-2 text-[13px] ledger-muted"><span className="ledger-crimson">✦</span> {T.vettedLine ?? "Vetted in person by James Wild"} · {FOUNDER_YEARS} years on the road · designing journeys since {SITE.designingSince}</p>

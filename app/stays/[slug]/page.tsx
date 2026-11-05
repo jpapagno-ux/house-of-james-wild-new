@@ -246,7 +246,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
   const nav: [string, string][] = navAll.filter(([, id]) => !ef || id !== "film");
   // Chile → Rapa Nui → Nayara Hangaroa: a stay selected for a place guide gets the place in its trail.
   const place = placeGuideForStay(s.slug);
-  const trail = boat ? [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: s.name, path }] : [{ name: "Home", path: "/" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : [{ name: "Stays", path: "/stays" }]), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), ...(place && isBuilt(place.path) ? [{ name: place.name, path: place.path }] : []), { name: s.name, path }];
+  const trail = boat ? [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: s.name, path }] : [{ name: "Home", path: "/" }, { name: "Stays", path: "/stays" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : []), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), ...(place && isBuilt(place.path) ? [{ name: place.name, path: place.path }] : []), { name: s.name, path }];
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
     <div className={[boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : ""].filter(Boolean).join(" ")}>

@@ -6,16 +6,24 @@ import type { Tone } from "@/lib/platform/labels";
 // Status tones come from one fixed set shared by every portal (option B, House Ledger): graphite for
 // in progress, Turquoise Green for done, House Crimson on pale blush for "needs you". Never a volume colour, never rust or forest (retired).
 
+// A status is a quiet label, never a box: a boxed tag reads as a button (James, 4 Nov 2026).
 const TONE: Record<Tone, string> = {
-  neutral: "border-ink/25 text-ink/75 bg-white",
-  progress: "border-[#3D3934]/30 text-[#3D3934] bg-[#ECEAE6]",
-  good: "border-[#11705A]/30 text-[#11705A] bg-[#E8F3EF]",
-  attention: "border-[#8B2525]/30 text-[#8B2525] bg-[#F6ECEC]",
-  closed: "border-ink/15 text-ink/55 bg-white",
+  neutral: "text-ink/75",
+  progress: "text-[#3D3934]",
+  good: "text-[#11705A]",
+  attention: "text-[#8B2525]",
+  closed: "text-ink/55",
+};
+const DOT: Record<Tone, string> = {
+  neutral: "bg-ink/45",
+  progress: "bg-[#3D3934]",
+  good: "bg-[#11705A]",
+  attention: "bg-[#8B2525]",
+  closed: "bg-ink/30",
 };
 
 export function StatusPill({ label, tone = "neutral" }: { label: string; tone?: Tone }) {
-  return <span className={`inline-flex items-center gap-1.5 border px-2 py-[3px] text-[10.5px] tracking-[0.14em] uppercase font-medium whitespace-nowrap ${TONE[tone]}`}>{label}</span>;
+  return <span className={`inline-flex items-center gap-1.5 py-[3px] text-[10.5px] tracking-[0.14em] uppercase font-medium whitespace-nowrap ${TONE[tone]}`}><span aria-hidden="true" className={`h-1.5 w-1.5 rounded-full ${DOT[tone]}`} />{label}</span>;
 }
 
 export function PageHead({ eyebrow, title, lead, actions }: { eyebrow: string; title: string; lead?: React.ReactNode; actions?: React.ReactNode }) {

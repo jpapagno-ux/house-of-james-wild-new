@@ -57,7 +57,7 @@ old path,new path,why,old title
 /book/chobe-under-canvas,/stays/chobe-under-canvas-by-and-beyond,booking page -> stay page,Book your stay at &amp;Beyond Chobe Under Canvas  | Wild Earth Stays
 /book/chumbe-island-zanzibar,/stays/chumbe-island-zanzibar,booking page -> stay page,Book your stay at Chumbe Island Zanzibar | Wild Earth Stays
 /book/coco-costa-rica,/stays/coco-costa-rica,booking page -> stay page,Book your stay at Coco Costa Rica | Wild Earth Stays
-/book/como-parrot-cay,/destinations/caribbean-mexico,booking page -> not on the new site yet; region page (turks-caicos country page not built yet),Book your stay at Como Parrot Cay | Wild Earth Stays
+/book/como-parrot-cay,/stays/como-parrot-cay,booking page -> stay page,Book your stay at Como Parrot Cay | Wild Earth Stays
 /book/como-shambhala-estate,/stays/como-shambhala-estate,booking page -> stay page,Book your stay at Como Shambhala Estate | Wild Earth Stays
 /book/como-uma-canggu,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at COMO Canggu | Wild Earth Stays
 /book/como-uma-ubud,/stays/como-uma-ubud,booking page -> stay page,Book your stay at COMO Uma Ubud | Wild Earth Stays
@@ -405,7 +405,7 @@ old path,new path,why,old title
 /country/tahiti,/destinations/oceania/tahiti,country page,
 /country/tanzania,/destinations/africa/tanzania,country page,
 /country/thailand,/destinations/asia/thailand,country page,
-/country/turks-caicos,/destinations/caribbean-mexico,region page (turks-caicos country page not built yet),
+/country/turks-caicos,/destinations/caribbean-mexico/turks-caicos,country page,
 /country/utah,/destinations/usa-canada/utah,country page,
 /country/vietnam,/destinations/asia/vietnam,country page,
 /country/virgin-islands,/destinations/caribbean-mexico,region page (virgin-islands country page not built yet),
@@ -506,7 +506,7 @@ old path,new path,why,old title
 /property/clayoquot-wilderness-resort,/stays/clayoquot-wilderness-resort,stay page,Clayoquot Wilderness Resort | Luxury Stays in Canada | Wild Earth Stays
 /property/coco-costa-rica,/stays/coco-costa-rica,stay page,Coco Costa Rica | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/como-canggu,/destinations/asia/indonesia,not on the new site yet; country page,COMO Canggu | Luxury Stays in Indonesia | Wild Earth Stays
-/property/como-parrot-cay,/destinations/caribbean-mexico,not on the new site yet; region page (turks-caicos country page not built yet),Como Parrot Cay | Luxury Stays in Turks Caicos | Wild Earth Stays
+/property/como-parrot-cay,/stays/como-parrot-cay,stay page,Como Parrot Cay | Luxury Stays in Turks Caicos | Wild Earth Stays
 /property/como-shambhala-estate,/stays/como-shambhala-estate,stay page,Como Shambhala Estate | Luxury Stays in Indonesia | Wild Earth Stays
 /property/como-uma-ubud,/stays/como-uma-ubud,stay page,COMO Uma Ubud | Luxury Stays in Indonesia | Wild Earth Stays
 /property/conrad-tulum-riviera-maya,/stays/conrad-tulum-riviera-maya,stay page,Conrad Tulum Riviera Maya | Luxury Stays in Mexico | Wild Earth Stays
@@ -1049,25 +1049,25 @@ old path,new path,why,old title
 /stay/como-canggu-two-bedroom-residence,/destinations/asia/indonesia,room of como-canggu -> not on the new site yet; country page,Two-bedroom Residence at COMO Canggu | Wild Earth Stays
 /stay/como-canggu-two-bedroom-seaview-residence,/destinations/asia/indonesia,room of como-canggu -> not on the new site yet; country page,Two-bedroom Seaview Residence at COMO Canggu | Wild Earth Stays
 /stay/como-canggu-uma-pool-residence,/destinations/asia/indonesia,room of como-canggu -> not on the new site yet; country page,Uma Pool Residence at COMO Canggu | Wild Earth Stays
-/stay/como-parrot-cay-beach-house,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Beach House at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-beachfront-suite,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Beachfront Suite at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-como-suite,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),COMO Suite at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-como-villa,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),COMO Villa at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-family-beach-house,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Family Beach House at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-island-villa,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Island Villa at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-lotus-flower,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Lotus Flower at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-love-pumpkin,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Love Pumpkin at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-lucky-house,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Lucky House at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-mechayah-beach-house,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Mechayah Beach House at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-rocky-point,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Rocky Point at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-serenity,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Serenity at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-tamarind-guest-villa,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Tamarind Guest Villa at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-terrace-room,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Terrace Room at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-the-sanctuary,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),The Sanctuary at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-three-bedroom-beach-house,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Three-bedroom Beach House at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-two-bedroom-beach-house,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Two-bedroom Beach House at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-upper-terrace-room,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Upper Terrace Room at Como Parrot Cay | Wild Earth Stays
-/stay/como-parrot-cay-villa-frangipani,/destinations/caribbean-mexico,room of como-parrot-cay -> not on the new site yet; region page (turks-caicos country page not built yet),Villa Frangipani at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-beach-house,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Beach House at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-beachfront-suite,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Beachfront Suite at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-como-suite,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,COMO Suite at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-como-villa,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,COMO Villa at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-family-beach-house,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Family Beach House at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-island-villa,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Island Villa at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-lotus-flower,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Lotus Flower at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-love-pumpkin,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Love Pumpkin at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-lucky-house,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Lucky House at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-mechayah-beach-house,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Mechayah Beach House at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-rocky-point,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Rocky Point at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-serenity,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Serenity at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-tamarind-guest-villa,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Tamarind Guest Villa at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-terrace-room,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Terrace Room at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-the-sanctuary,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,The Sanctuary at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-three-bedroom-beach-house,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Three-bedroom Beach House at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-two-bedroom-beach-house,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Two-bedroom Beach House at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-upper-terrace-room,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Upper Terrace Room at Como Parrot Cay | Wild Earth Stays
+/stay/como-parrot-cay-villa-frangipani,/stays/como-parrot-cay,room of como-parrot-cay -> stay page,Villa Frangipani at Como Parrot Cay | Wild Earth Stays
 /stay/como-shambhala-estate-bayugita,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,Bayugita at Como Shambhala Estate | Wild Earth Stays
 /stay/como-shambhala-estate-como-shambhala-suite,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,COMO Shambhala Suite at Como Shambhala Estate | Wild Earth Stays
 /stay/como-shambhala-estate-como-suite-in-umabona,/stays/como-shambhala-estate,room of como-shambhala-estate -> stay page,COMO Suite in Umabona at Como Shambhala Estate | Wild Earth Stays

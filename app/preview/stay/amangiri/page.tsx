@@ -104,7 +104,7 @@ export default function AmangiriPreview() {
         {hero && (
           <RecordHero
             image={{ url: mediaUrl(hero, { ratio: "21:9", width: 2560 }), alt: hero.alt }}
-            eyebrow={`The Exceptional Few™ — ${collectionNo(ef.collectionNumber)}`}
+            eyebrow={`The Exceptional Few™ · ${collectionNo(ef.collectionNumber)}`}
             title={NAME}
             tagline={ef.heroLine ?? undefined}
             credit={rightsOwner(hero)}

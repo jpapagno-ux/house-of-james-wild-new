@@ -1,338 +1,487 @@
 {
- "exportedOn": "2026-11-01",
- "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James; EF-012 Vahine Royal Villa and EF-013 The Brando added 2 Nov 2026 (French Polynesia build; Airtable rows created)",
- "records": [
-  {
-   "id": "EF-001",
-   "stayId": "STY-2026-000563",
-   "staySlug": "amangiri",
-   "stayName": "Amangiri",
-   "designationStatus": "designated",
-   "collectionNumber": 1,
-   "heroLine": "The building disappears. The landscape stays.",
-   "whyItMadeTheCut": [
-    "Place. Nine hundred acres of the Colorado Plateau with nothing built on the horizon but the horizon. Aman found the one fold in the rock where a resort could vanish, and put it there.",
-    "Design. Concrete poured the colour of the mesa, so the architecture reads as geology. You walk past it before you see it.",
-    "Privacy. Thirty-four suites, ten tents and two villas on land you could lose a town in. The quiet is the amenity."
-   ],
-   "jamesNote": {
-    "text": "I send people here when they tell me they want to be somewhere, not at something. If a group wants it entirely to themselves, Camp Sarika can be yours in full. The rest of Amangiri — ask me.",
-    "where": "Canyon Point",
-    "when": "The Ledger, 2026"
-   },
-   "signals": [
+  "exportedOn": "2026-11-01",
+  "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James; EF-012 Vahine Royal Villa and EF-013 The Brando added 2 Nov 2026 (French Polynesia build; Airtable rows created)",
+  "records": [
     {
-     "key": "place",
-     "line": "900 private acres of the Colorado Plateau, with the mesa as the only neighbour."
+      "id": "EF-001",
+      "stayId": "STY-2026-000563",
+      "staySlug": "amangiri",
+      "stayName": "Amangiri",
+      "designationStatus": "designated",
+      "collectionNumber": 1,
+      "heroLine": "The building disappears. The landscape stays.",
+      "whyItMadeTheCut": [
+        "Place. Nine hundred acres of the Colorado Plateau with nothing built on the horizon but the horizon. Aman found the one fold in the rock where a resort could vanish, and put it there.",
+        "Design. Concrete poured the colour of the mesa, so the architecture reads as geology. You walk past it before you see it.",
+        "Privacy. Thirty-four suites, ten tents and two villas on land you could lose a town in. The quiet is the amenity."
+      ],
+      "jamesNote": {
+        "text": "I send people here when they tell me they want to be somewhere, not at something. If a group wants it entirely to themselves, Camp Sarika can be yours in full. For the rest of Amangiri, ask me.",
+        "where": "Canyon Point",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "place",
+          "line": "900 private acres of the Colorado Plateau, with the mesa as the only neighbour."
+        },
+        {
+          "key": "privacy",
+          "line": "34 suites and ten pavilions, no through-traffic, no lobby crowd."
+        },
+        {
+          "key": "design",
+          "line": "Concrete, glass and silence, poured around the rock rather than on top of it."
+        },
+        {
+          "key": "access",
+          "line": "Page airstrip 25 minutes away; slot canyons and a via ferrata on the property."
+        },
+        {
+          "key": "rarity",
+          "line": "There is no second Amangiri, and Aman is not building one."
+        }
+      ],
+      "pathwaysOverride": [
+        "off-the-map",
+        "the-art-of-stillness",
+        "above-it-all"
+      ],
+      "worthAnotherNight": "Four nights. The third is when you stop moving, and the light on the mesa at six in the evening becomes the reason you came.",
+      "whoItSuits": [
+        "Landscape-first travellers",
+        "Privacy seekers",
+        "Design travellers",
+        "Milestone trips",
+        "Couples",
+        "Travellers who value quiet"
+      ],
+      "whoItMayNotSuit": [
+        "Nightlife-focused travellers",
+        "Travellers wanting a large social resort",
+        "Travellers who prefer urban activity"
+      ],
+      "continueRefs": [
+        "stay:ulum-moab",
+        "pathway:off-the-map",
+        "pathway:the-art-of-stillness",
+        "pathway:above-it-all",
+        "compass"
+      ],
+      "selectionDate": "2026-11-01",
+      "paletteKey": "amangiri",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-01",
+      "reviewStatus": "approved"
     },
     {
-     "key": "privacy",
-     "line": "34 suites and ten pavilions, no through-traffic, no lobby crowd."
+      "id": "EF-002",
+      "entityType": "vessel",
+      "stayId": null,
+      "staySlug": null,
+      "stayName": null,
+      "vesselSlug": "hermes-galapagos",
+      "vesselName": "Hermes",
+      "designationStatus": "designated",
+      "collectionNumber": 2,
+      "heroLine": "Twenty guests, twenty crew, and a private jacuzzi in every suite.",
+      "whyItMadeTheCut": [
+        "Twenty guests and twenty crew. By the published numbers that is one crew member for every guest, with two butlers, one for each passenger deck, and two naturalist guides.",
+        "Every one of the twelve suites has a private balcony and a private ocean-view jacuzzi. The Owner Suite, at 72 square metres, has two.",
+        "A spa with a hammam and a massage room. Via Natura says Hermes was the first small ship in the Galápagos with a full-service spa."
+      ],
+      "jamesNote": {
+        "text": "I send people to Hermes when they want the Galápagos without giving up a good night's sleep. Twenty guests, twenty crew, a butler on every deck. You'll be looked after before you know you needed it. Bringing the family or a group of friends? Take the whole ship.",
+        "where": "Galápagos",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "place",
+          "line": "The Galápagos Islands, on four routes Via Natura combines into cruises of 3 to 14 nights."
+        },
+        {
+          "key": "privacy",
+          "line": "Twelve suites for 20 guests, each with its own balcony and ocean-view jacuzzi."
+        },
+        {
+          "key": "humanity",
+          "line": "Twenty crew for 20 guests, including two butlers, a cruise director and two naturalist guides."
+        },
+        {
+          "key": "design",
+          "line": "A 50-metre motor catamaran built in 2025, with more than 730 square metres of social areas, per Via Natura."
+        },
+        {
+          "key": "access",
+          "line": "Sold by the suite or chartered whole for up to 20, with published charter rates for 2026 and 2027."
+        }
+      ],
+      "pathwaysOverride": [
+        "PATH-04",
+        "PATH-02",
+        "PATH-07"
+      ],
+      "worthAnotherNight": null,
+      "whoItSuits": [
+        "Couples",
+        "Private groups of up to 20",
+        "Solo travellers (two Single Suites at the standard fare)",
+        "Travellers short on time (3 and 4 night routes)"
+      ],
+      "whoItMayNotSuit": [
+        "Families who need a published minimum age or family departures (Via Natura publishes neither)",
+        "Travellers wanting a big-ship atmosphere",
+        "Travellers who want to book a fixed, dated departure online"
+      ],
+      "continueRefs": [
+        "pathway:where-the-wild-lives",
+        "pathway:between-tides",
+        "pathway:a-place-of-our-own"
+      ],
+      "selectionDate": "2026-11-02",
+      "paletteKey": "hermes",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-02",
+      "reviewStatus": "approved"
     },
     {
-     "key": "design",
-     "line": "Concrete, glass and silence, poured around the rock rather than on top of it."
+      "id": "EF-003",
+      "entityType": "vessel",
+      "stayId": null,
+      "staySlug": null,
+      "stayName": null,
+      "vesselSlug": "amandira",
+      "vesselName": "Amandira",
+      "designationStatus": "designated",
+      "collectionNumber": 3,
+      "heroLine": "Five cabins, ten guests, one party aboard a hand-built phinisi.",
+      "whyItMadeTheCut": [
+        "A 52-metre, two-masted phinisi, handcrafted from local hardwoods by Konjo artisans. Aman, naval architect Michael Kasten and designer Deirdre Renniers spent five years on her; she was completed in 2014.",
+        "Five cabins for up to ten guests, and the whole yacht goes to one party. Aman calls her fully staffed and yours to command.",
+        "A crew of 14 by Aman's count, with two chefs, a dive master and a spa therapist, and the gear to dive, snorkel, kayak and paddleboard from the boat."
+      ],
+      "jamesNote": {
+        "text": "Amandira is for the family that wants Indonesia to themselves. Ten guests, fourteen crew, two chefs and a dive master, and the whole boat bends around your day. Put an Aman on land at either end and ask me which route.",
+        "where": "Indonesia",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "design",
+          "line": "A 52-metre phinisi of local hardwoods, built by Konjo artisans and completed in 2014."
+        },
+        {
+          "key": "privacy",
+          "line": "Five cabins for up to 10 guests, sailed as a private yacht for one party."
+        },
+        {
+          "key": "humanity",
+          "line": "A crew of 14, including two chefs, a dive master and a spa therapist."
+        },
+        {
+          "key": "place",
+          "line": "Komodo, Raja Ampat, the Spice Islands and the Alor Islands, as Aman publishes them."
+        },
+        {
+          "key": "access",
+          "line": "Voyages begin at Labuan Bajo, Sorong, Ambon or Maumere, depending on the route."
+        }
+      ],
+      "pathwaysOverride": [
+        "PATH-02",
+        "PATH-07",
+        "PATH-06"
+      ],
+      "worthAnotherNight": null,
+      "whoItSuits": [
+        "One party of up to 10: a family or friends",
+        "Divers and snorkellers",
+        "Travellers pairing a voyage with Aman's Indonesian resorts"
+      ],
+      "whoItMayNotSuit": [
+        "Families with young children (Aman publishes no age policy)",
+        "Travellers wanting a big-ship atmosphere",
+        "Solo travellers hoping to book a single cabin on a shared departure"
+      ],
+      "continueRefs": [
+        "pathway:between-tides",
+        "pathway:a-place-of-our-own",
+        "pathway:off-the-map"
+      ],
+      "selectionDate": "2026-11-02",
+      "paletteKey": "amandira",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-02",
+      "reviewStatus": "approved"
     },
     {
-     "key": "access",
-     "line": "Page airstrip 25 minutes away; slot canyons and a via ferrata on the property."
+      "id": "EF-004",
+      "stayId": "STY-2026-000575",
+      "staySlug": "como-parrot-cay",
+      "stayName": "COMO Parrot Cay",
+      "designationStatus": "designated",
+      "collectionNumber": 4,
+      "heroLine": "Modern luxury, and the good sense to let the island lead.",
+      "whyItMadeTheCut": [
+        "Place. More than a thousand acres of private island, reached by boat. You arrive slower than you left, and the sea does most of the talking.",
+        "Detail. Nothing here is loud. The care is in the small things: a pool at every house, a path straight to the sand, nothing in the way of the water.",
+        "Philosophy. COMO builds around wellbeing, not spectacle, and its founder's vision runs through the whole island. It is close to how we think about travel: the place first, everything else after."
+      ],
+      "jamesNote": {
+        "text": "Parrot Cay is modern luxury that knows when to step back. The place leads, the detail follows, and the way COMO sees the world is the way we do. If you want a Residence or an estate home to yourselves, ask me.",
+        "where": "Parrot Cay",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "place",
+          "line": "More than 1,000 acres of private island in the Turks and Caicos."
+        },
+        {
+          "key": "privacy",
+          "line": "Every beach house, villa and Residence has its own pool; Residences and estate homes can be booked whole."
+        },
+        {
+          "key": "design",
+          "line": "Modern and quiet, close to the sand; the attention is in the detail."
+        },
+        {
+          "key": "access",
+          "line": "About 50 minutes from Providenciales airport: a short drive, then 35 minutes by boat."
+        },
+        {
+          "key": "humanity",
+          "line": "The COMO Shambhala Retreat, and a philosophy built on wellbeing."
+        }
+      ],
+      "pathwaysOverride": [
+        "between-tides",
+        "the-art-of-stillness",
+        "a-place-of-our-own"
+      ],
+      "worthAnotherNight": "Five nights. The first two you are still arriving. By the third, the island has set your pace.",
+      "whoItSuits": [
+        "Couples marking something",
+        "Families who want a house, not a room",
+        "Wellness-minded travellers",
+        "Privacy seekers",
+        "Beach-first travellers",
+        "Small groups taking a Residence or estate home"
+      ],
+      "whoItMayNotSuit": [
+        "Nightlife-focused travellers",
+        "Travellers who want a town to explore each evening",
+        "Travellers who prefer a large social resort"
+      ],
+      "continueRefs": [
+        "pathway:between-tides",
+        "pathway:the-art-of-stillness",
+        "pathway:a-place-of-our-own",
+        "compass"
+      ],
+      "selectionDate": "2026-11-02",
+      "paletteKey": "parrot-cay",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "reviewDate": "2026-11-02"
     },
     {
-     "key": "rarity",
-     "line": "There is no second Amangiri, and Aman is not building one."
+      "id": "EF-012",
+      "stayId": "STY-2026-000213",
+      "staySlug": "pearl-resort-vahine-private-island",
+      "stayName": "Ari'i Vahine Royal Villa, Vahine Private Island",
+      "designationStatus": "designated",
+      "collectionNumber": 12,
+      "heroLine": "A motu of its own in the Taha'a lagoon, for fourteen.",
+      "whyItMadeTheCut": [
+        "Place. Ari'i Vahine sits on its own small motu, joined to Vahine Private Island by a bridge, in the lagoon Taha'a shares with Raiatea.",
+        "Scale. 12,669 square feet, two master suites and four suites, for up to fourteen guests: a whole island house for one family or one group of friends.",
+        "Privacy. A kitchen, a gym, a hammam and sauna and an infinity pool of its own, with a chef on request. Next door, the rest of Vahine is nine bungalows."
+      ],
+      "jamesNote": {
+        "text": "Taha'a is my favourite island in French Polynesia, and I was on Vahine in 2025. This is the house I'd give a family that wants a lagoon to itself: fourteen people, one motu, one bridge back to the world.",
+        "where": "Taha'a",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "place",
+          "line": "Its own motu in the Taha'a lagoon, joined to Vahine Private Island by a bridge."
+        },
+        {
+          "key": "privacy",
+          "line": "Two master suites and four suites for up to 14 guests, with its own infinity pool."
+        },
+        {
+          "key": "design",
+          "line": "12,669 square feet with a kitchen, a gym, a hammam and a sauna."
+        },
+        {
+          "key": "access",
+          "line": "Fly Tahiti to Raiatea with Air Tahiti, then cross the lagoon by boat; Taha'a has no airport."
+        },
+        {
+          "key": "rarity",
+          "line": "One villa, on one motu, beside a resort of nine bungalows."
+        }
+      ],
+      "pathwaysOverride": [
+        "a-place-of-our-own",
+        "between-tides",
+        "off-the-map"
+      ],
+      "worthAnotherNight": "Five nights. Enough for one day in the lagoon, one on Taha'a's vanilla farms, and three when nobody needs to be anywhere.",
+      "whoItSuits": [
+        "Families travelling across generations",
+        "Groups of friends of up to 14",
+        "Milestone celebrations",
+        "Travellers who want an island to themselves"
+      ],
+      "whoItMayNotSuit": [
+        "Travellers who want a big resort with many restaurants",
+        "Travellers who want nightlife",
+        "Travellers who want to fly straight to the door (Taha'a has no airport)"
+      ],
+      "continueRefs": [
+        "stay:le-tahaa",
+        "place:tahiti",
+        "pathway:a-place-of-our-own",
+        "partner:pearl-resorts"
+      ],
+      "selectionDate": "2026-11-02",
+      "paletteKey": "vahine",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-02"
+    },
+    {
+      "id": "EF-013",
+      "stayId": "STY-2026-000296",
+      "staySlug": "the-brando-tetiaroa",
+      "stayName": "The Brando, Tetiaroa",
+      "designationStatus": "designated",
+      "collectionNumber": 13,
+      "heroLine": "Marlon Brando's atoll, and one residence on it.",
+      "whyItMadeTheCut": [
+        "Place. Tetiaroa is an atoll of twelve motu, twenty minutes by Air Tetiaroa from Tahiti. Marlon Brando first saw it while filming Mutiny on the Bounty in the early 1960s; the resort opened in 2014.",
+        "The residence. The Teremoana Residence has three en suite bedrooms and a staff or kids' room, 279 square metres inside and as much again outdoors, a 22 square metre infinity pool, a full kitchen and its own experience creator.",
+        "The atoll itself. The nonprofit Tetiaroa Society studies and protects Tetiaroa. Invasive rats were removed in 2020, and nine seabird species live on the atoll."
+      ],
+      "jamesNote": {
+        "text": "When someone asks me for the best week of their year, this is where I start. Marlon Brando's atoll, nine kinds of seabird, rays in the shallows, and a team that runs so quietly you only notice it when you leave. Bring the family? Take the Teremoana.",
+        "where": "Tetiaroa",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "place",
+          "line": "An atoll of 12 motu, with nine seabird species, turtles and rays."
+        },
+        {
+          "key": "privacy",
+          "line": "Thirty five villas and one residence, the Teremoana, on the whole atoll."
+        },
+        {
+          "key": "access",
+          "line": "Air Tetiaroa flies from Tahiti in 20 minutes."
+        },
+        {
+          "key": "humanity",
+          "line": "The Tetiaroa Society's research and conservation on the atoll."
+        },
+        {
+          "key": "rarity",
+          "line": "One residence on Marlon Brando's atoll."
+        }
+      ],
+      "pathwaysOverride": [
+        "a-place-of-our-own",
+        "between-tides",
+        "into-the-green"
+      ],
+      "worthAnotherNight": "Five nights, and The Brando's Stay 5 Pay 4 makes the fifth one free on the All Inclusive package, for stays through 30 March 2027.",
+      "whoItSuits": [
+        "Couples marking something",
+        "Families (Family One Bedroom Villas sleep two adults and two children under 18)",
+        "Travellers with staff (the Teremoana's staff room)",
+        "Conservation-minded travellers"
+      ],
+      "whoItMayNotSuit": [
+        "Travellers who want a town or nightlife",
+        "Travellers on a short budget",
+        "Travellers who want to come and go by ferry"
+      ],
+      "continueRefs": [
+        "place:tahiti",
+        "stay:intercontinental-tahiti-resort-spa",
+        "pathway:a-place-of-our-own"
+      ],
+      "selectionDate": "2026-11-02",
+      "paletteKey": "brando",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-02"
+    },
+    {
+      "id": "EF-014",
+      "stayId": "STY-2026-000625",
+      "staySlug": "como-castello-del-nero",
+      "stayName": "COMO Castello Del Nero",
+      "designationStatus": "designated",
+      "collectionNumber": 14,
+      "heroLine": "A Chianti castle that still farms its land.",
+      "whyItMadeTheCut": [
+        "Place. Seven hundred and forty acres of Chianti between Florence and Siena. The vineyards and olive groves are the estate's own, and so is the wine and oil on the table.",
+        "Detail. A twelfth-century castle with its Renaissance frescoes kept, and interiors by Paola Navone that leave the old walls to speak.",
+        "Philosophy. COMO builds around wellbeing and the place, not spectacle. Here that means a COMO Shambhala Retreat inside a working farm, and a kitchen that starts in the garden."
+      ],
+      "jamesNote": {
+        "text": "I send food and wine people here. A twelfth-century castle that still farms its 740 acres, oil from the trees outside on the table, and a Michelin star at La Torre. Four nights, and keep one of them free.",
+        "where": "Chianti",
+        "when": "The Ledger, 2026"
+      },
+      "signals": [
+        {
+          "key": "place",
+          "line": "A 740-acre estate in Chianti, between Florence and Siena."
+        },
+        {
+          "key": "design",
+          "line": "A twelfth-century castle with Renaissance frescoes; interiors by Paola Navone."
+        },
+        {
+          "key": "humanity",
+          "line": "Its own vineyards, olive groves and chef's garden; La Torre holds one Michelin star."
+        },
+        {
+          "key": "access",
+          "line": "35 to 45 minutes by car from Florence airport, with a shuttle to Florence and Siena."
+        }
+      ],
+      "pathwaysOverride": [
+        "rooted-in-place",
+        "the-art-of-stillness"
+      ],
+      "worthAnotherNight": "Four nights. One for the estate, one for Florence, one for Siena, and one with nowhere to be.",
+      "whoItSuits": [
+        "Food and wine travellers",
+        "Couples",
+        "Families taking Villa San Luigi",
+        "Travellers who want Florence and Siena as day trips"
+      ],
+      "whoItMayNotSuit": [
+        "Travellers who want to walk out of the door into a town",
+        "Travellers who want a city hotel"
+      ],
+      "continueRefs": [
+        "pathway:rooted-in-place",
+        "pathway:the-art-of-stillness",
+        "compass"
+      ],
+      "selectionDate": "2026-11-04",
+      "paletteKey": "castello-del-nero",
+      "publicationStatus": "published",
+      "reviewStatus": "approved",
+      "reviewDate": "2026-11-04"
     }
-   ],
-   "pathwaysOverride": [
-    "off-the-map",
-    "the-art-of-stillness",
-    "above-it-all"
-   ],
-   "worthAnotherNight": "Four nights. The third is when you stop moving, and the light on the mesa at six in the evening becomes the reason you came.",
-   "whoItSuits": [
-    "Landscape-first travellers",
-    "Privacy seekers",
-    "Design travellers",
-    "Milestone trips",
-    "Couples",
-    "Travellers who value quiet"
-   ],
-   "whoItMayNotSuit": [
-    "Nightlife-focused travellers",
-    "Travellers wanting a large social resort",
-    "Travellers who prefer urban activity"
-   ],
-   "continueRefs": [
-    "stay:ulum-moab",
-    "pathway:off-the-map",
-    "pathway:the-art-of-stillness",
-    "pathway:above-it-all",
-    "compass"
-   ],
-   "selectionDate": "2026-11-01",
-   "paletteKey": "amangiri",
-   "publicationStatus": "published",
-   "reviewDate": "2026-11-01",
-   "reviewStatus": "approved"
-  },
-  {
-   "id": "EF-002",
-   "entityType": "vessel",
-   "stayId": null,
-   "staySlug": null,
-   "stayName": null,
-   "vesselSlug": "hermes-galapagos",
-   "vesselName": "Hermes",
-   "designationStatus": "designated",
-   "collectionNumber": 2,
-   "heroLine": "Twenty guests, twenty crew, and a private jacuzzi in every suite.",
-   "whyItMadeTheCut": [
-    "Twenty guests and twenty crew. By the published numbers that is one crew member for every guest, with two butlers, one for each passenger deck, and two naturalist guides.",
-    "Every one of the twelve suites has a private balcony and a private ocean-view jacuzzi. The Owner Suite, at 72 square metres, has two.",
-    "A spa with a hammam and a massage room. Via Natura says Hermes was the first small ship in the Galápagos with a full-service spa."
-   ],
-   "jamesNote": null,
-   "signals": [
-    {
-     "key": "place",
-     "line": "The Galápagos Islands, on four routes Via Natura combines into cruises of 3 to 14 nights."
-    },
-    {
-     "key": "privacy",
-     "line": "Twelve suites for 20 guests, each with its own balcony and ocean-view jacuzzi."
-    },
-    {
-     "key": "humanity",
-     "line": "Twenty crew for 20 guests, including two butlers, a cruise director and two naturalist guides."
-    },
-    {
-     "key": "design",
-     "line": "A 50-metre motor catamaran built in 2025, with more than 730 square metres of social areas, per Via Natura."
-    },
-    {
-     "key": "access",
-     "line": "Sold by the suite or chartered whole for up to 20, with published charter rates for 2026 and 2027."
-    }
-   ],
-   "pathwaysOverride": [
-    "PATH-04",
-    "PATH-02",
-    "PATH-07"
-   ],
-   "worthAnotherNight": null,
-   "whoItSuits": [
-    "Couples",
-    "Private groups of up to 20",
-    "Solo travellers (two Single Suites at the standard fare)",
-    "Travellers short on time (3 and 4 night routes)"
-   ],
-   "whoItMayNotSuit": [
-    "Families who need a published minimum age or family departures (Via Natura publishes neither)",
-    "Travellers wanting a big-ship atmosphere",
-    "Travellers who want to book a fixed, dated departure online"
-   ],
-   "continueRefs": [
-    "pathway:where-the-wild-lives",
-    "pathway:between-tides",
-    "pathway:a-place-of-our-own"
-   ],
-   "selectionDate": "2026-11-02",
-   "paletteKey": "hermes",
-   "publicationStatus": "published",
-   "reviewDate": "2026-11-02",
-   "reviewStatus": "approved"
-  },
-  {
-   "id": "EF-003",
-   "entityType": "vessel",
-   "stayId": null,
-   "staySlug": null,
-   "stayName": null,
-   "vesselSlug": "amandira",
-   "vesselName": "Amandira",
-   "designationStatus": "designated",
-   "collectionNumber": 3,
-   "heroLine": "Five cabins, ten guests, one party aboard a hand-built phinisi.",
-   "whyItMadeTheCut": [
-    "A 52-metre, two-masted phinisi, handcrafted from local hardwoods by Konjo artisans. Aman, naval architect Michael Kasten and designer Deirdre Renniers spent five years on her; she was completed in 2014.",
-    "Five cabins for up to ten guests, and the whole yacht goes to one party. Aman calls her fully staffed and yours to command.",
-    "A crew of 14 by Aman's count, with two chefs, a dive master and a spa therapist, and the gear to dive, snorkel, kayak and paddleboard from the boat."
-   ],
-   "jamesNote": null,
-   "signals": [
-    {
-     "key": "design",
-     "line": "A 52-metre phinisi of local hardwoods, built by Konjo artisans and completed in 2014."
-    },
-    {
-     "key": "privacy",
-     "line": "Five cabins for up to 10 guests, sailed as a private yacht for one party."
-    },
-    {
-     "key": "humanity",
-     "line": "A crew of 14, including two chefs, a dive master and a spa therapist."
-    },
-    {
-     "key": "place",
-     "line": "Komodo, Raja Ampat, the Spice Islands and the Alor Islands, as Aman publishes them."
-    },
-    {
-     "key": "access",
-     "line": "Voyages begin at Labuan Bajo, Sorong, Ambon or Maumere, depending on the route."
-    }
-   ],
-   "pathwaysOverride": [
-    "PATH-02",
-    "PATH-07",
-    "PATH-06"
-   ],
-   "worthAnotherNight": null,
-   "whoItSuits": [
-    "One party of up to 10: a family or friends",
-    "Divers and snorkellers",
-    "Travellers pairing a voyage with Aman's Indonesian resorts"
-   ],
-   "whoItMayNotSuit": [
-    "Families with young children (Aman publishes no age policy)",
-    "Travellers wanting a big-ship atmosphere",
-    "Solo travellers hoping to book a single cabin on a shared departure"
-   ],
-   "continueRefs": [
-    "pathway:between-tides",
-    "pathway:a-place-of-our-own",
-    "pathway:off-the-map"
-   ],
-   "selectionDate": "2026-11-02",
-   "paletteKey": "amandira",
-   "publicationStatus": "published",
-   "reviewDate": "2026-11-02",
-   "reviewStatus": "approved"
-  },
-  {
-   "id": "EF-012",
-   "stayId": "STY-2026-000213",
-   "staySlug": "pearl-resort-vahine-private-island",
-   "stayName": "Ari'i Vahine Royal Villa, Vahine Private Island",
-   "designationStatus": "designated",
-   "collectionNumber": 12,
-   "heroLine": "A motu of its own in the Taha'a lagoon, for fourteen.",
-   "whyItMadeTheCut": [
-    "Place. Ari'i Vahine sits on its own small motu, joined to Vahine Private Island by a bridge, in the lagoon Taha'a shares with Raiatea.",
-    "Scale. 12,669 square feet, two master suites and four suites, for up to fourteen guests: a whole island house for one family or one group of friends.",
-    "Privacy. A kitchen, a gym, a hammam and sauna and an infinity pool of its own, with a chef on request. Next door, the rest of Vahine is nine bungalows."
-   ],
-   "jamesNote": null,
-   "signals": [
-    {
-     "key": "place",
-     "line": "Its own motu in the Taha'a lagoon, joined to Vahine Private Island by a bridge."
-    },
-    {
-     "key": "privacy",
-     "line": "Two master suites and four suites for up to 14 guests, with its own infinity pool."
-    },
-    {
-     "key": "design",
-     "line": "12,669 square feet with a kitchen, a gym, a hammam and a sauna."
-    },
-    {
-     "key": "access",
-     "line": "Fly Tahiti to Raiatea with Air Tahiti, then cross the lagoon by boat; Taha'a has no airport."
-    },
-    {
-     "key": "rarity",
-     "line": "One villa, on one motu, beside a resort of nine bungalows."
-    }
-   ],
-   "pathwaysOverride": [
-    "a-place-of-our-own",
-    "between-tides",
-    "off-the-map"
-   ],
-   "worthAnotherNight": "Five nights. Enough for one day in the lagoon, one on Taha'a's vanilla farms, and three when nobody needs to be anywhere.",
-   "whoItSuits": [
-    "Families travelling across generations",
-    "Groups of friends of up to 14",
-    "Milestone celebrations",
-    "Travellers who want an island to themselves"
-   ],
-   "whoItMayNotSuit": [
-    "Travellers who want a big resort with many restaurants",
-    "Travellers who want nightlife",
-    "Travellers who want to fly straight to the door (Taha'a has no airport)"
-   ],
-   "continueRefs": [
-    "stay:le-tahaa",
-    "place:tahiti",
-    "pathway:a-place-of-our-own",
-    "partner:pearl-resorts"
-   ],
-   "selectionDate": "2026-11-02",
-   "paletteKey": "vahine",
-   "publicationStatus": "published",
-   "reviewDate": "2026-11-02"
-  },
-  {
-   "id": "EF-013",
-   "stayId": "STY-2026-000296",
-   "staySlug": "the-brando-tetiaroa",
-   "stayName": "The Brando, Tetiaroa",
-   "designationStatus": "designated",
-   "collectionNumber": 13,
-   "heroLine": "Marlon Brando's atoll, and one residence on it.",
-   "whyItMadeTheCut": [
-    "Place. Tetiaroa is an atoll of twelve motu, twenty minutes by Air Tetiaroa from Tahiti. Marlon Brando first saw it while filming Mutiny on the Bounty in the early 1960s; the resort opened in 2014.",
-    "The residence. The Teremoana Residence has three en suite bedrooms and a staff or kids' room, 279 square metres inside and as much again outdoors, a 22 square metre infinity pool, a full kitchen and its own experience creator.",
-    "The atoll itself. The nonprofit Tetiaroa Society studies and protects Tetiaroa. Invasive rats were removed in 2020, and nine seabird species live on the atoll."
-   ],
-   "jamesNote": null,
-   "signals": [
-    {
-     "key": "place",
-     "line": "An atoll of 12 motu, with nine seabird species, turtles and rays."
-    },
-    {
-     "key": "privacy",
-     "line": "Thirty five villas and one residence, the Teremoana, on the whole atoll."
-    },
-    {
-     "key": "access",
-     "line": "Air Tetiaroa flies from Tahiti in 20 minutes."
-    },
-    {
-     "key": "humanity",
-     "line": "The Tetiaroa Society's research and conservation on the atoll."
-    },
-    {
-     "key": "rarity",
-     "line": "One residence on Marlon Brando's atoll."
-    }
-   ],
-   "pathwaysOverride": [
-    "a-place-of-our-own",
-    "between-tides",
-    "into-the-green"
-   ],
-   "worthAnotherNight": "Five nights, and The Brando's Stay 5 Pay 4 makes the fifth one free on the All Inclusive package, for stays through 30 March 2027.",
-   "whoItSuits": [
-    "Couples marking something",
-    "Families (Family One Bedroom Villas sleep two adults and two children under 18)",
-    "Travellers with staff (the Teremoana's staff room)",
-    "Conservation-minded travellers"
-   ],
-   "whoItMayNotSuit": [
-    "Travellers who want a town or nightlife",
-    "Travellers on a short budget",
-    "Travellers who want to come and go by ferry"
-   ],
-   "continueRefs": [
-    "place:tahiti",
-    "stay:intercontinental-tahiti-resort-spa",
-    "pathway:a-place-of-our-own"
-   ],
-   "selectionDate": "2026-11-02",
-   "paletteKey": "brando",
-   "publicationStatus": "published",
-   "reviewDate": "2026-11-02"
-  }
- ]
+  ]
 }

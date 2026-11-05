@@ -826,11 +826,11 @@
    "airports": [
     [
      "Maun (MUB)",
-     "Serves 25 stays in the Ledger here"
+     "Serves 26 stays in the Ledger here"
     ],
     [
      "Kasane International Airport (BBK)",
-     "Serves 4 stays in the Ledger here"
+     "Serves 5 stays in the Ledger here"
     ],
     [
      "Khwai Airstrip (KHW)",
@@ -2219,24 +2219,60 @@
    "region": "europe",
    "regionName": "Europe",
    "ledgerId": "DST-2026-000068",
-   "subtitle": "1 vetted stays",
-   "leading": "Rolling countryside, historic cities, dramatic coastlines, and alpine peaks create a landscape filled with richness and texture. Culture, cuisine, and natural beauty combine seamlessly, offering endless inspiration. Stays here celebrate timeless style and regional charm. Wander cobblestone streets, explore coastal trails, or savour meals crafted from local ingredients. Italy invites appreciation of life’s finer rhythms.",
+   "subtitle": "Italy · Other Europe",
+   "leading": "Rome for a few nights, then out: the Dolomites, the lakes and the countryside, where Italy slows down. The house is building Italy one place at a time, starting in the mountains.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec78a35eef779045d2ec9_ItalyHeroFlorince.jpg",
     "alt": "Italy, Europe"
    },
-   "story": [],
+   "story": [
+    {
+     "eyebrow": "Italy · Other Europe",
+     "title": "Not the Queues, the Valleys",
+     "blocks": [
+      {
+       "p": "Italy is easy to do badly: five cities in eight days, a train every morning, the same piazzas as everyone else. We plan it the other way, with fewer places and longer in each."
+      },
+      {
+       "h": "How we plan it",
+       "p": "A city at the start or the end, then three nights or more somewhere the landscape does the work: a mountain meadow, a lake, a hill farm. Every stay we send you to is filed in the Ledger, and the list grows as we vet it."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/dolomites/como-alpina/como-alpina-snow-buildings-mountains",
+      "alt": "Italy: Not the Queues, the Valleys"
+     }
+    },
+    {
+     "eyebrow": "Where we start",
+     "title": "The Dolomites, in Both Seasons",
+     "blocks": [
+      {
+       "p": "The Dolomites are UNESCO-listed mountains in Italy's far north. We start in South Tyrol, where the place names come in German and Italian and the food is a little of both."
+      },
+      {
+       "h": "Winter and summer",
+       "p": "From December to March the ski runs link valley to valley. From June to October the high meadows are for walking. Between the two, many mountain hotels close, so we plan around the seasons."
+      },
+      {
+       "h": "Getting there",
+       "p": "Bolzano has the nearest airport; Innsbruck, Venice and Munich are the larger gateways, a few hours by road."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/italy/tuscany/como-castello-del-nero/como-castello-del-nero-pool-castle-trees",
+      "alt": "Italy: The Dolomites, in Both Seasons"
+     }
+    }
+   ],
    "facts": [],
    "faqs": [],
-   "contentStatus": "none",
+   "contentStatus": "needs_review",
    "months": [
     {
      "area": "Across Italy",
      "note": "From the Ledger's best-months notes",
      "months": [
-      "good",
-      "good",
-      "good",
       "best",
       "best",
       "best",
@@ -2245,23 +2281,30 @@
       "best",
       "best",
       "best",
-      "good"
+      "best",
+      "best",
+      "good",
+      "best"
      ]
     }
    ],
    "airports": [
     [
-     "Leonardo da Vinci International Airport (FCO)",
+     "Florence Airport (FLR)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Bolzano Airport (BZO)",
      "Serves 1 stay in the Ledger here"
     ],
     [
-     "Ciampino Airport (CIA)",
+     "Naples Capodichino (NAP)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "FCO · CIA",
-   "bestShort": "Apr–Jun",
+   "flyInto": "FLR · BZO",
+   "bestShort": "Dec–Mar",
    "atlasName": "Italy"
   },
   {
@@ -4539,6 +4582,34 @@
    "flyInto": "HKT · USM",
    "bestShort": "Nov–Jun",
    "atlasName": "Thailand"
+  },
+  {
+   "slug": "turks-caicos",
+   "name": "Turks and Caicos",
+   "region": "caribbean-mexico",
+   "regionName": "Caribbean & Mexico",
+   "ledgerId": "DST-2026-000061",
+   "subtitle": "1 vetted stays",
+   "leading": "White sand beaches, impossibly clear water, and calm island breezes define this serene archipelago. Coral reefs fringe the shoreline, and shades of blue shift gently across shallow lagoons. Stays here celebrate barefoot luxury with oceanfront tranquillity. Snorkel vibrant reefs, kayak through quiet mangroves, or enjoy long, easy days on soft sands. Turks and Caicos invites pure relaxation shaped by sea and sun.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec746541e0940e7700a96_TurksHero.jpg",
+    "alt": "Turks and Caicos, Caribbean & Mexico"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [],
+   "airports": [
+    [
+     "Providenciales International Airport (PLS)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "PLS",
+   "bestShort": "Ask James",
+   "atlasName": "Turks and Caicos Is."
   },
   {
    "slug": "utah",

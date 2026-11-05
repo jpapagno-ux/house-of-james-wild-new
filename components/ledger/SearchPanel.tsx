@@ -55,15 +55,17 @@ const ADVISOR_ITEMS: Item[] = DESK_ADVISORS.map((a) => ({
 }));
 
 const GROUPS: { key: string; label: string; match: (d: Doc) => boolean }[] = [
-  { key: "advisors", label: "Advisors who know it", match: (d) => d.t === "advisor" },
+  { key: "ef", label: "The Exceptional Few", match: (d) => d.k === "Collection" },
   { key: "dest", label: "Destinations", match: (d) => d.t === "destination" },
   { key: "camps", label: "Safari camps & lodges", match: (d) => d.t === "stay" && d.r === "africa" },
-  { key: "ships", label: "Ships & voyages", match: (d) => d.t === "stay" && d.k === "Ship" },
-  { key: "stays", label: "Stays", match: (d) => d.t === "stay" && d.r !== "africa" && d.k !== "Ship" },
-  { key: "routes", label: "Overland routes", match: (d) => d.t === "route" },
+  { key: "ships", label: "Ships & voyages", match: (d) => (d.t === "stay" && d.k === "Ship") || d.k === "Voyage" },
+  { key: "stays", label: "Stays", match: (d) => d.t === "stay" && d.r !== "africa" && d.k !== "Ship" && d.k !== "Collection" },
+  { key: "routes", label: "Overland routes", match: (d) => d.t === "route" && d.k !== "Voyage" },
+  // Places first, then the advisors who know them (James, 4 Nov 2026: "Ivory Lodge" must show the lodge on top).
+  { key: "advisors", label: "Advisors who know it", match: (d) => d.t === "advisor" },
 ];
 
-const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/['’]/g, "");
 
 export default function SearchPanel({ open, onClose, initialQuery = "", initialType = null }: { open: boolean; onClose: () => void; initialQuery?: string; initialType?: string | null }) {
   const [docs, setDocs] = useState<Doc[] | null>(null);
@@ -190,7 +192,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
                         <Link href={isBuilt(d.u) || !GUARD_ON ? d.u : `/plan?q=${encodeURIComponent(d.n)}`} onClick={close} className="group flex items-baseline justify-between gap-4 py-2.5 border-b ledger-border hover:bg-paper-card/60 -mx-2 px-2">
                           <span>
                             <span className="ledger-display text-[17px] group-hover:ledger-crimson">{d.n}</span>
-                            {d.g && <span className="block text-[13px] ledger-muted leading-snug mt-0.5">{d.g}</span>}
+                            {d.g && <span className="block text-[13px] ledger-muted leading-snug mt-0.5 line-clamp-2">{d.g}</span>}
                           </span>
                           <span className="ledger-eyebrow min-w-0 max-w-[45%] text-right" style={d.t === "advisor" ? { color: GREEN_INK } : undefined}>{d.k}{d.p ? ` · ${d.p}` : ""}</span>
                         </Link>

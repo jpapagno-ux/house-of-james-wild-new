@@ -137,7 +137,7 @@ old path,new path,why,old title
 /book/lekkerwater-de-hoop,/stays/lekkerwater-dehoop,booking page -> stay page,Book your stay at Lekkerwater De Hoop | Wild Earth Stays
 /book/lengishu-residence,/stays/lengishu-kenya,booking page -> stay page,Book your stay at Lengishu Lewa Residence  | Wild Earth Stays
 /book/lewa-wilderness-lodge,/stays/lewa-wilderness-lodge,booking page -> stay page,Book your stay at Lewa Wilderness Lodge | Wild Earth Stays
-/book/likuliku-lagoon-resort,/destinations/oceania/fiji,booking page -> not on the new site yet; country page,Book your stay at Likuliku Lagoon Resort | Wild Earth Stays
+/book/likuliku-lagoon-resort,/stays/likuliku-lagoon-resort,booking page -> stay page,Book your stay at Likuliku Lagoon Resort | Wild Earth Stays
 /book/lindis-lodge,/destinations/oceania/new-zealand,booking page -> not on the new site yet; country page,Book your stay at Lindis Lodge | Wild Earth Stays
 /book/linyanti-wilderness-camp,/stays/linyanti-wilderness-camp,booking page -> stay page,Book your stay at Wilderness Linyanti Camp | Wild Earth Stays
 /book/lion-sands,/safaris/lion-sands,booking page -> safari reserve,Book your stay at Lion Sands Reserve | Wild Earth Stays
@@ -618,7 +618,7 @@ old path,new path,why,old title
 /property/lengishu-kenya,/stays/lengishu-kenya,stay page,Lengishu Lewa Residence  | Luxury Stays in Kenya | Wild Earth Stays
 /property/leopard-hills,/stays/leopard-hills,stay page,Leopard Hills | Luxury Stays in South Africa | Wild Earth Stays
 /property/lewa-wilderness-lodge,/stays/lewa-wilderness-lodge,stay page,Lewa Wilderness Lodge | Luxury Stays in Kenya | Wild Earth Stays
-/property/likuliku-lagoon-resort,/destinations/oceania/fiji,not on the new site yet; country page,Likuliku Lagoon Resort | Luxury Stays in Fiji | Wild Earth Stays
+/property/likuliku-lagoon-resort,/stays/likuliku-lagoon-resort,stay page,Likuliku Lagoon Resort | Luxury Stays in Fiji | Wild Earth Stays
 /property/lindis-lodge,/destinations/oceania/new-zealand,not on the new site yet; country page,Lindis Lodge | Luxury Stays in New Zealand | Wild Earth Stays
 /property/linyanti-wilderness-camp,/stays/linyanti-wilderness-camp,stay page,Wilderness Linyanti Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/lion-sands,/safaris/lion-sands,safari reserve,Lion Sands Reserve | Luxury Stays in South Africa | Wild Earth Stays
@@ -1321,9 +1321,9 @@ old path,new path,why,old title
 /stay/lewa-wilderness-lodge-one-bedroom-hillside-cottage,/stays/lewa-wilderness-lodge,room of lewa-wilderness-lodge -> stay page,One‑Bedroom Hillside Cottage at Lewa Wilderness Lodge | Wild Earth Stays
 /stay/lewa-wilderness-lodge-two-bedroom-garden-cottage,/stays/lewa-wilderness-lodge,room of lewa-wilderness-lodge -> stay page,Two‑Bedroom Garden Cottage at Lewa Wilderness Lodge | Wild Earth Stays
 /stay/lewa-wilderness-lodge-two-bedroom-hillside-cottage,/stays/lewa-wilderness-lodge,room of lewa-wilderness-lodge -> stay page,Two‑Bedroom Hillside Cottage at Lewa Wilderness Lodge | Wild Earth Stays
-/stay/likuliku-lagoon-resort-beachfront-bure,/destinations/oceania/fiji,room of likuliku-lagoon-resort -> not on the new site yet; country page,Beachfront Bure at Likuliku Lagoon Resort | Wild Earth Stays
-/stay/likuliku-lagoon-resort-deluxe-beachfront-bure,/destinations/oceania/fiji,room of likuliku-lagoon-resort -> not on the new site yet; country page,Deluxe Beachfront Bure at Likuliku Lagoon Resort | Wild Earth Stays
-/stay/likuliku-lagoon-resort-overwater-bure,/destinations/oceania/fiji,room of likuliku-lagoon-resort -> not on the new site yet; country page,Overwater Bure at Likuliku Lagoon Resort | Wild Earth Stays
+/stay/likuliku-lagoon-resort-beachfront-bure,/stays/likuliku-lagoon-resort,room of likuliku-lagoon-resort -> stay page,Beachfront Bure at Likuliku Lagoon Resort | Wild Earth Stays
+/stay/likuliku-lagoon-resort-deluxe-beachfront-bure,/stays/likuliku-lagoon-resort,room of likuliku-lagoon-resort -> stay page,Deluxe Beachfront Bure at Likuliku Lagoon Resort | Wild Earth Stays
+/stay/likuliku-lagoon-resort-overwater-bure,/stays/likuliku-lagoon-resort,room of likuliku-lagoon-resort -> stay page,Overwater Bure at Likuliku Lagoon Resort | Wild Earth Stays
 /stay/linyanti-wilderness-camp-family-tented-suite,/stays/linyanti-wilderness-camp,room of linyanti-wilderness-camp -> stay page,Family Tented Suite at Wilderness Linyanti Camp | Wild Earth Stays
 /stay/linyanti-wilderness-camp-tented-suite,/stays/linyanti-wilderness-camp,room of linyanti-wilderness-camp -> stay page,Tented Suite at Wilderness Linyanti Camp | Wild Earth Stays
 /stay/lion-sands-fish-eagle-residence,/safaris/lion-sands,room of lion-sands -> safari reserve,Fish Eagle Residence at Lion Sands Reserve | Wild Earth Stays

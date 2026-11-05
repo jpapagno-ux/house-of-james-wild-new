@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-04",
+ "checkedOn": "2026-11-05",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -2813,6 +2813,16 @@
    "released": true
   },
   {
+   "stay_id": "6aec5a083ba7062701e1ae16",
+   "slug": "laucala",
+   "name": "Laucala Island, Fiji",
+   "country": "Fiji",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff940",
    "slug": "le-quartier-francais",
    "name": "Le Quartier Francais South Africa",
@@ -2906,10 +2916,8 @@
    "slug": "likuliku-lagoon-resort",
    "name": "Likuliku Lagoon Resort",
    "country": "Fiji",
-   "missing": [
-    "hero_photo"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff949",
@@ -5083,14 +5091,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9e7",
    "slug": "turtle-island",
-   "name": "Turtle Island",
+   "name": "Turtle Island, Fiji",
    "country": "Fiji",
    "missing": [
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6ae8ed8ba6295b5316ea6cde",

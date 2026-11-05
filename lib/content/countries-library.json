@@ -1605,40 +1605,86 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "Year round. The dry season, May to October, is cooler (most days 19 to 28°C) and brings the clearest water for diving, often 20 to 40 m. The wet season, November to April, is warmer (up to 31°C) with short afternoon downpours. Cloudbreak's swell season runs through the southern winter, roughly April to October; humpback whales pass through the Bligh Water from July to October; Tourism Fiji suggests June to August at Rainbow Reef for mantas and whales."
+    ],
+    [
+     "Getting there",
+     "Most international flights land at Nadi International Airport (NAN) on Viti Levu; a few use Nausori near Suva. Fiji Airways flies nonstop from Los Angeles and San Francisco (about 10h30), Dallas (about 13h, 3 a week), Honolulu (about 6h50) and Vancouver (about 11h30), and from Australia, New Zealand and Asia. Air New Zealand, Qantas, Virgin Australia and Jetstar also fly to Nadi. Islands are reached by boat from Port Denarau, by helicopter or seaplane from Nadi, or by Fiji Link and Northern Air domestic flights."
+    ],
+    [
+     "Who it suits",
+     "Honeymooners on small adults only islands, families in the Mamanucas and on Malolo, divers bound for Beqa Lagoon, the Bligh Water and Taveuni's Rainbow Reef, and surfers heading for Cloudbreak."
+    ],
+    [
+     "Signature experiences",
+     "The Beqa Lagoon shark dive in the Shark Reef Marine Reserve; Rainbow Reef and the Great White Wall in the Somosomo Strait; the Bligh Water and Namena Marine Reserve; Cloudbreak and the Mamanuca reef passes; Levuka, Fiji's UNESCO World Heritage port town on Ovalau."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Fiji?",
+     "a": "Fiji works year round. May to October is the dry season, cooler and clearer for diving; November to April is warmer and wetter, with short afternoon showers."
+    },
+    {
+     "q": "Do US and Canadian travelers need a visa for Fiji?",
+     "a": "US and Canadian citizens are on Fiji's visa exempt list and receive a visitor permit on arrival. You need a passport valid for at least six months beyond your stay, a return or onward ticket, and a completed arrival card. Check the Fiji Immigration visa exempt list for other passports before you book."
+    },
+    {
+     "q": "How do I fly to Fiji?",
+     "a": "Most flights land at Nadi International Airport (NAN). Fiji Airways flies nonstop from Los Angeles and San Francisco in about 10 hours 30 minutes, and from Dallas, Honolulu and Vancouver."
+    },
+    {
+     "q": "How do you get between Fiji's islands?",
+     "a": "Boats and catamarans leave Port Denarau daily for the Mamanuca and Yasawa islands; helicopters and seaplanes fly from Nadi; Fiji Link and Northern Air fly to the outer islands, including Savusavu on Vanua Levu."
+    },
+    {
+     "q": "How many islands does Fiji have?",
+     "a": "333, most of them ancient volcanoes. The main groups are Viti Levu, Vanua Levu, Taveuni, the Mamanuca and Yasawa islands, Lomaiviti, Lau and Kadavu."
+    },
+    {
+     "q": "Where is the best diving in Fiji?",
+     "a": "Beqa Lagoon for the shark dive, the Somosomo Strait for Rainbow Reef and the Great White Wall, the Bligh Water and Namena Marine Reserve, and Kadavu's Great Astrolabe Reef."
+    },
+    {
+     "q": "Can you surf in Fiji?",
+     "a": "Yes. Cloudbreak, off Tavarua and Namotu in the southern Mamanucas, is a long left reef break for experienced surfers, reached only by boat; Namotu Lefts, Swimming Pools and Wilkes Passage are nearby, and Frigates Passage lies off the Coral Coast."
+    },
+    {
+     "q": "Does Fiji have a UNESCO World Heritage Site?",
+     "a": "Yes. Levuka Historical Port Town on Ovalau was inscribed in 2013 as a late colonial Pacific port town."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
      "area": "Across Fiji",
      "note": "From the Ledger's best-months notes",
      "months": [
-      "good",
-      "good",
-      "good",
-      "good",
       "best",
       "best",
       "best",
       "best",
       "best",
       "best",
-      "good",
-      "good"
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best"
      ]
     }
    ],
    "airports": [
     [
      "Nadi International Airport (NAN)",
-     "Serves 4 stays in the Ledger here"
+     "Serves 6 stays in the Ledger here"
     ],
     [
      "Savusavu Airport (SVU)",
-     "Serves 1 stay in the Ledger here"
-    ],
-    [
-     "Nausori International Airport (SUV)",
      "Serves 1 stay in the Ledger here"
     ]
    ],

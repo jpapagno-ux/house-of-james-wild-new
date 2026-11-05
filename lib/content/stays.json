@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-04",
+ "exportedOn": "2026-11-05",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -26958,6 +26958,139 @@
    "placeSlug": null
   },
   {
+   "slug": "laucala",
+   "name": "Laucala Island, Fiji",
+   "ledgerId": "STY-2026-000637",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "One private island in Fiji, twenty-four villas, each with its own pool and its own horizon.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g12",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/laucala/g13"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-05",
+   "coords": null,
+   "airport": null,
+   "airportDirections": "Arrive on Air Laucala or by private jet. James Wild & Co arranges the connection with the island team.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Twenty-four private villas",
+     "A private pool at every villa",
+     "Villas that open to the ocean or to the jungle",
+     "A personal host for every stay"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The reef",
+     "Wellness",
+     "Golf",
+     "Horses",
+     "Trails",
+     "Boats"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A private island in Cakaudrove, Vanua Levu",
+     "Twenty-four villas, each with its own pool",
+     "Dining, refreshments and most on-island experiences included",
+     "Farm to table dining, from the beach to candlelit evenings",
+     "Arrival by Air Laucala or private jet",
+     "A personal host who manages the details"
+    ]
+   },
+   "onlyHere": [
+    "Laucala is a whole island given over to twenty-four villas. Dining, refreshments and most of what there is to do on the island are included, and every guest has a personal host, so the days follow the reef, the rainforest and the weather rather than a timetable."
+   ],
+   "why": [
+    {
+     "title": "An island that is complete in itself",
+     "body": "Laucala calls itself vast, vivid and quietly complete, and that is the right way to think about it. You arrive by Air Laucala or your own jet, your host takes over the details, and the island does the rest: reef, rainforest, golf, horses, trails and boats, with dining that moves from barefoot lunches on the beach to unhurried candlelit dinners."
+    },
+    {
+     "title": "Why it suits a gathering",
+     "body": "Every villa has its own pool and its own privacy, and almost everything on the island is already included, so a family or a group of friends can spread out across Laucala without anyone keeping a tab. Tell James who is coming and he will work with the island team on the villas that fit."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji's drier season runs May to October; November to April is warmer and wetter (Tourism Fiji).",
+    "how_to_get_there": "Arrive on Air Laucala or by private jet. James Wild & Co arranges the connection with the island team.",
+    "signature_experiences": "Twenty-four villas with private pools, a personal host, inclusive dining from the beach to candlelit evenings, and reef, golf, horses, trails and boats.",
+    "who_its_for": "Couples who want a whole island's worth of privacy, and families and groups gathering across several villas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Laucala?",
+     "a": "Laucala is a private island in Cakaudrove, Vanua Levu, Fiji."
+    },
+    {
+     "q": "How many villas does Laucala have?",
+     "a": "Twenty-four private villas, each with its own pool, opening to the ocean or the jungle."
+    },
+    {
+     "q": "How do you get to Laucala?",
+     "a": "On Air Laucala or by private jet. James Wild & Co arranges the connection with the island team when you book."
+    },
+    {
+     "q": "What is included at Laucala?",
+     "a": "Dining, refreshments and most on-island experiences, with a personal host for every stay."
+    },
+    {
+     "q": "What is there to do on Laucala?",
+     "a": "The reef, wellness, golf, horses, trails and boats, at your own pace rather than to a schedule."
+    },
+    {
+     "q": "Is Laucala good for a family or group gathering?",
+     "a": "Yes. With twenty-four villas, each with its own pool, and most experiences included, a family or group can share the island comfortably. James plans the villa mix with the Laucala team."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-05"
+    ],
+    "setting": "Islands and oceans",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-05"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "le-quartier-francais",
    "name": "Le Quartier Francais \n South Africa",
    "ledgerId": "STY-2026-000145",
@@ -27964,6 +28097,136 @@
     "6ae6974ad0f23a42452f2a65",
     "6ae6974bb51a396b85970bde",
     "6ae6974aa6d0fa13bbe23ed1"
+   ],
+   "placeSlug": null
+  },
+  {
+   "slug": "likuliku-lagoon-resort",
+   "name": "Likuliku Lagoon Resort",
+   "ledgerId": "STY-2026-000153",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "An adults only lagoon resort on Malolo, with ten bures over the reef.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/likuliku-lagoon-resort/g11"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "May to October is Fiji's drier season with the clearest water; November to April is warmer and wetter (Tourism Fiji).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-05",
+   "coords": {
+    "lat": -17.7736,
+    "lng": 177.1854
+   },
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "The South Sea Cruises catamaran runs four times a day from Denarau; private speedboat and helicopter transfers can be arranged (no helicopter arrivals or departures before 8 am).",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Over-Water Bure (10, 91 sq m)",
+     "Deluxe Beachfront Bure (29, 100 sq m)",
+     "Beachfront Bure (6, 95 sq m)"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling the lagoon",
+     "Tatadra Spa, the House of Dreams",
+     "Dinner at Fijiana and Saluwaki",
+     "Drinks at Masima Island Bar and Dua Tale",
+     "The horizon edge pool"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Adults only; no guests under 17",
+     "45 bures, ten of them over the water",
+     "Fijiana and Saluwaki restaurants",
+     "Tatadra Spa",
+     "A horizon edge pool",
+     "Wholly owned by a local Fijian tourism family"
+    ]
+   },
+   "onlyHere": [
+    "Likuliku sits on Malolo Island in the Mamanuca group, 25 km from Nadi, with 45 bures on a lagoon: ten of them over the reef. It is adults only and owned by a local Fijian tourism family."
+   ],
+   "why": [
+    {
+     "title": "Over the reef, close to Nadi",
+     "body": "Likuliku is for couples and honeymooners who want an over-water bure without a long journey: the catamaran from Denarau runs four times a day, and a helicopter or private speedboat is quicker still. Days are the lagoon, the spa and the pool; evenings are Fijiana or Asian tapas at Saluwaki."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. May to October is Fiji's drier season with the clearest water; November to April is warmer and wetter (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN). Likuliku is on Malolo Island in the Mamanuca group, 25 km from the airport. The South Sea Cruises catamaran runs four times a day from Denarau; private speedboat and helicopter transfers can be arranged (no helicopter arrivals or departures before 8 am).",
+    "signature_experiences": "Over-water bures above the reef, Fijiana and Saluwaki restaurants, Masima Island Bar, Tatadra Spa and a horizon edge pool.",
+    "who_its_for": "Couples and honeymooners; adults only, no guests under 17."
+   },
+   "faqs": [
+    {
+     "q": "Is Likuliku Lagoon Resort adults only?",
+     "a": "Yes. Likuliku does not take reservations for guests under 17."
+    },
+    {
+     "q": "How many bures are there?",
+     "a": "45: 10 Over-Water Bures, 29 Deluxe Beachfront Bures and 6 Beachfront Bures."
+    },
+    {
+     "q": "Where is Likuliku?",
+     "a": "On Malolo Island in the Mamanuca group, 25 km from Nadi International Airport."
+    },
+    {
+     "q": "How do I get there?",
+     "a": "By the South Sea Cruises catamaran from Denarau, four times a day, or by private speedboat or helicopter (helicopters land from 8 am)."
+    },
+    {
+     "q": "What are the restaurants?",
+     "a": "Fijiana, the signature restaurant, and Saluwaki for Asian tapas at dinner; Masima Island Bar and Dua Tale for drinks."
+    },
+    {
+     "q": "Is there a spa?",
+     "a": "Yes, Tatadra Spa, the House of Dreams, with lagoon views."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-05"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [
+    "6ae69747a5f8e7688c6e7aec"
    ],
    "placeSlug": null
   },
@@ -31943,72 +32206,93 @@
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Where Fiji's rainforest meets timeless luxury above the Pacific Ocean.",
-   "quote": "Some destinations impress you. Namale transforms you.",
+   "tagline": "22 bures and villas on 525 acres of rainforest and coast near Savusavu.",
+   "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/namale-resort-and-spa/hero",
    "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "These months offer Fiji's dry season with warm sunny days, comfortable humidity and excellent conditions for diving, snorkelling, hiking and outdoor dining. Visibility on nearby reefs is generally at its best, while cooler evening temperatures create ideal conditions for romantic dinners, spa experiences and rainforest adventures.",
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Fiji is drier and cooler May to October and warmer and wetter November to April (Tourism Fiji).",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "partner_verified",
+   "statusDate": "2026-11-05",
    "coords": {
-    "lat": -16.7905,
-    "lng": 179.3415
+    "lat": -16.8021022,
+    "lng": 179.3744468
    },
-   "airport": "Savusavu Airport (SVU) Nadi International Airport (NAN)",
-   "airportDirections": "Primary Arrival Airport\nSavusavu Airport (SVU)\nApproximately 15 minutes by complimentary resort transfer.\nInternational travellers typically arrive via Nadi International Airport (NAN) before taking a domestic flight to Savusavu.",
+   "airport": "Savusavu Airport (SVU), via Nadi International Airport (NAN)",
+   "airportDirections": "Fly into Nadi International Airport (NAN), then take a domestic flight to Savusavu on Vanua Levu. The resort is at 1 Hibiscus Highway, Savusavu.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Ocean View Bures",
      "Garden Tropical Bures",
      "Ocean Tropical Bures",
-     "Honeymoon Bures",
-     "Grand Ocean Bures",
-     "Dream House Villa",
-     "The Residence",
-     "Villa Du Soleil"
+     "Ocean Plunge Pool Bures",
+     "Plunge Pool Villas (plunge pool and hot tub)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Spa Sanctuary",
-     "Waterfall Adventures",
-     "Snorkelling",
-     "Scuba Diving",
-     "Horseback Riding",
-     "Kayaking",
-     "Rainforest Walks",
-     "Private Dining",
-     "Golf",
-     "Cultural Experiences"
+     "The spa",
+     "Rainforest and coastline to explore across 525 acres",
+     "All inclusive dining",
+     "Plunge pool and infinity pool villas"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Adults-only luxury resort",
-     "All-inclusive gourmet dining",
-     "Private plunge pool villas",
-     "Award-winning spa sanctuary",
-     "525-acre rainforest estate",
-     "Clifftop ocean panoramas",
-     "Personalised Fijian hospitality",
-     "Private beaches and hidden coves",
-     "World-class diving access",
-     "Complimentary airport transfers"
+     "Adults only, 18 and over",
+     "All inclusive stays",
+     "22 private bures and villas",
+     "Plunge pool and infinity pool villas",
+     "525 acres of rainforest and coastline",
+     "Whole resort rental for up to 46 guests"
     ]
    },
    "onlyHere": [
-    "Only at Namale can you wake surrounded by rainforest, spend the afternoon exploring hidden waterfalls, unwind with oceanfront spa rituals, and finish the evening beneath endless Pacific stars. Every stay blends authentic Fijian warmth with effortless luxury, creating moments that feel deeply personal rather than simply indulgent."
+    "Namale spreads 22 bures and villas across 525 acres of rainforest and coastline near Savusavu on Vanua Levu, so the estate feels far larger than the number of guests on it. It is adults only and all inclusive, and the whole resort can be taken for up to 46 guests."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "A rainforest estate on Vanua Levu",
+     "body": "Namale is for couples who want Fiji away from the Mamanuca crowds: a domestic flight to Savusavu, then bures and villas set into rainforest above the sea, with everything included. For a celebration, the whole resort rental takes all 22 bures and villas for up to 46 guests."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji is drier and cooler May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN), then take a domestic flight to Savusavu on Vanua Levu (Fiji Link flies Nadi to Savusavu). The resort is at 1 Hibiscus Highway, Savusavu.",
+    "signature_experiences": "All inclusive dining, the spa, plunge pool and infinity pool villas, and 525 acres of rainforest and coastline to explore.",
+    "who_its_for": "Couples and honeymooners (adults only, 18 and over), and groups who want the whole estate: all 22 bures and villas, up to 46 guests."
+   },
+   "faqs": [
+    {
+     "q": "Is Namale adults only?",
+     "a": "Yes. Namale is for guests 18 and over."
+    },
+    {
+     "q": "How many bures and villas are there?",
+     "a": "22 private bures and villas, from Garden Tropical Bures to the Grand Infinity Pool Villas, including the two bedroom Dream House."
+    },
+    {
+     "q": "Where is Namale?",
+     "a": "At 1 Hibiscus Highway, Savusavu, on Vanua Levu, spread over 525 acres of rainforest and coastline."
+    },
+    {
+     "q": "How do I get to Namale?",
+     "a": "Fly into Nadi, then take a domestic flight to Savusavu on Vanua Levu."
+    },
+    {
+     "q": "Can we book the whole resort?",
+     "a": "Yes. A private resort rental takes all 22 bures and villas, for up to 46 guests."
+    },
+    {
+     "q": "Is Namale all inclusive?",
+     "a": "Yes, Namale sells all inclusive stays."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -38102,76 +38386,101 @@
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Your own private island in the heart of Fiji's spectacular Beqa Lagoon.",
-   "quote": "Some islands welcome you. Royal Davui becomes part of your story.",
+   "tagline": "Sixteen plunge pool villas on a private island in Beqa Lagoon, adults only.",
+   "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/royal-davui-island-resort/hero",
    "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "The dry season offers warm sunshine, calm seas and excellent underwater visibility throughout Beqa Lagoon. These months are ideal for shark diving, snorkelling, kayaking, paddleboarding and enjoying uninterrupted sunsets from your private plunge pool or secluded sand cay.",
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Royal Davui is open year round. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "partner_verified",
+   "statusDate": "2026-11-05",
    "coords": {
     "lat": -18.2099,
     "lng": 178.1396
    },
-   "airport": "Nadi International Airport (NAN) Nausori International Airport (SUV) (domestic connection)",
-   "airportDirections": "Primary Arrival Airport\nNadi International Airport (NAN)\nGuests generally transfer by domestic flight or road transfer to Pacific Harbour before continuing by resort boat to Royal Davui Island.\nApproximate journey:\nNadi to Pacific Harbour: 2.5–3 hours by road\nResort boat transfer: 30–40 minutes\nAlternative transfers may be available via helicopter or domestic flight arrangements.",
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "From Nadi: a 35 minute helicopter flight to the island's helipad; or a scheduled flight of about 30 minutes to Pacific Harbour, then a 35 minute launch; or a 3 hour drive to Pacific Harbour and the resort boat.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Island Plunge Pool Villas",
-     "Premium Plunge Pool Villas",
-     "Sunset Plunge Pool Villas",
-     "Lagoon View Villas",
-     "Deluxe Ocean View Villas",
-     "Royal Villa"
+     "Davui Plunge Pool Villa East (140 sq m)",
+     "Sunset Plunge Pool Villa (140 sq m)",
+     "Lagoon Plunge Pool Bungalow (116 to 128 sq m)",
+     "Island Plunge Pool Bungalow (116 to 128 sq m, up to 3 guests)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Private Sand Cay Picnics",
+     "Diving in small groups, six guests at most",
+     "The Beqa Lagoon shark dive with specialist operators",
+     "Sand cay picnics",
      "Snorkelling",
-     "Scuba Diving",
-     "Beqa Lagoon Shark Diving",
-     "Sunset Cruises",
-     "Kayaking",
-     "Stand-Up Paddleboarding",
-     "Spa Treatments",
-     "Private Dining",
-     "Island Walks"
+     "Spa treatments"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Adults-only private island",
-     "Sixteen luxury plunge pool villas",
-     "Private sand cay experiences",
-     "Beqa Lagoon marine adventures",
-     "Infinity-edge pool",
-     "Oceanfront restaurant",
-     "Personalised island service",
-     "Luxury spa treatments",
-     "Complimentary water sports",
-     "World-renowned diving"
+     "Adults only, 16 and over",
+     "Sixteen villas, each with a private plunge pool",
+     "Breakfast, lunch and dinner included",
+     "A helipad, 35 minutes from Nadi",
+     "Whole island rental for up to 32 guests"
     ]
    },
    "onlyHere": [
-    "Only at Royal Davui can you experience the intimacy of your own private island while surrounded by one of Fiji's most celebrated marine environments. Every villa enjoys uninterrupted ocean views, every day unfolds at your own pace, and every experience is crafted to celebrate romance, adventure and complete tranquillity."
+    "Royal Davui is a small private island in Beqa Lagoon with sixteen villas, each with its own plunge pool. It is adults only, meals are included, and the lagoon is home to the Beqa shark dive."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "A private island, sixteen villas",
+     "body": "Royal Davui suits couples and divers who want a real island rather than a resort on one: a 35 minute helicopter flight from Nadi, sixteen plunge pool villas and dive trips that never take more than six guests. A whole island rental takes all sixteen villas for up to 32 guests, and a no fly zone can be requested."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round, says Royal Davui. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "From Nadi: a 35 minute helicopter flight to the island's helipad; or a scheduled flight (9.30 am and 3.30 pm daily, about 30 minutes) to Pacific Harbour, then a 35 minute launch; or a 3 hour drive to Pacific Harbour and the resort boat.",
+    "signature_experiences": "Private plunge pool in every villa, all meals included, small dive trips (six guests maximum), the Beqa Lagoon shark dive with specialist operators, and sand cay picnics.",
+    "who_its_for": "Couples and honeymooners (adults only, 16 and over), divers, and groups who want the whole island: 16 villas, up to 32 guests."
+   },
+   "faqs": [
+    {
+     "q": "Is Royal Davui adults only?",
+     "a": "Yes. Royal Davui welcomes guests aged 16 and over."
+    },
+    {
+     "q": "How many villas are there?",
+     "a": "Sixteen, each with a private plunge pool, in four categories from the Island Plunge Pool Bungalow to the 140 sq m Davui Plunge Pool Villa East and Sunset Plunge Pool Villa."
+    },
+    {
+     "q": "How do I get to Royal Davui?",
+     "a": "By helicopter from Nadi in 35 minutes, or by plane or road to Pacific Harbour and a 35 minute launch across Beqa Lagoon."
+    },
+    {
+     "q": "Are meals included?",
+     "a": "Yes. Breakfast, lunch and dinner are included; drinks, diving and spa treatments are extra."
+    },
+    {
+     "q": "Can I do the Beqa shark dive?",
+     "a": "Yes. Certified divers can do the Fiji shark dive with specialist operators; resort dive trips take six guests at most."
+    },
+    {
+     "q": "Can we book the whole island?",
+     "a": "Yes. A private island rental takes all 16 villas, for up to 32 guests, and a no fly zone can be requested."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
-    "secondary": [],
+    "secondary": [
+     "PATH-07"
+    ],
     "setting": "fiji",
     "intentions": [],
     "suitability": [],
@@ -38180,7 +38489,8 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": [
-    "stays"
+    "stays",
+    "gatherings"
    ],
    "arrivalHubIds": [
     "6ae69747a5f8e7688c6e7aec",
@@ -44570,78 +44880,119 @@
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "A private South Pacific sanctuary where sustainability, wellness, and ocean adventure live in perfect balance.",
-   "quote": "Arrive for the island. Leave transformed by the rhythm of the sea.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dae665db4_4efca2fcd_68d59a98a3594cd40f12298f_360a4fd0.webp",
+   "tagline": "Pool villas and family residences on Malolo, the largest of the Mamanucas.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a92f08960_21a7cfdc5_6a392a30f139279efd05bae1_Tovolea_Pool.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0b9c094e4_fa7f4ab97_6a392a3fbd92adc14b3c6fa7_Reading_Desk_in_Villa_and_Suite.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/928ff2948_9b30ec84b_6a392a9b88893552183dda88_32569235.webp",
-    "/img/b44/455f0a718_b5fcf8ea7_6a392a9d5224b51b6f19d7c5_1aaa6c36.avif"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/g11",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/six-senses-fiji/g8"
    ],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "The dry season from May through October offers lower humidity, calm seas, excellent visibility for diving, ideal surf conditions, and comfortable temperatures for outdoor adventures throughout the Mamanuca Islands.",
+   "bestMonths": "Year round",
+   "bestMonthsNote": "May to October is Fiji's drier season with the best water clarity; November to April is warmer and wetter (Tourism Fiji).",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "partner_verified",
+   "statusDate": "2026-11-05",
    "coords": {
     "lat": -17.7735,
     "lng": 177.1887
    },
    "airport": "Nadi International Airport (NAN)",
-   "airportDirections": "Nadi International Airport (NAN) is approximately 25 kilometers from the resort's arrival point. Guests typically transfer via speedboat, helicopter, or private resort-arranged transportation.",
+   "airportDirections": "Shared speedboats leave Port Denarau four times a day (about 45 minutes); private speedboats run around the clock for up to 12 guests; helicopters fly from Nadi Airport in about 10 minutes, 7 am to 5 pm.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Hideaway Pool Villa",
-     "Beachfront Pool Villa",
-     "Ocean View Residence",
-     "Beach View Residence",
-     "Marina Residence",
-     "Multi-Bedroom Luxury Residences"
+     "Hideaway Pool Villa (111 sq m)",
+     "Beachfront Pool Villa (111 sq m)",
+     "Hideaway Pool Suite (149 sq m)",
+     "Two-Bedroom Hideaway Pool Suite (260 sq m)",
+     "Three-Bedroom Marina Pool Residence (443 sq m)",
+     "Three-Bedroom Beachfront Pool Residence (547 sq m)",
+     "Four-Bedroom Oceanview Pool Residence (407 sq m)",
+     "Four-Bedroom Beachfront Pool Residence (543 to 671 sq m)",
+     "Five-Bedroom Oceanview Pool Residence (533 sq m)",
+     "Five-Bedroom Marina Pool Residence (647 sq m)",
+     "Five-Bedroom Beachfront Pool Residence (718 sq m)",
+     "Five-Bedroom Beachfront Pool Retreat (942 sq m)",
+     "Six-Bedroom Beachfront Pool Retreat (760 sq m, up to 12 guests)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Surfing",
-     "Scuba Excursions",
-     "Island Wellness",
-     "Marine Adventures",
-     "Spa Rituals",
-     "Iguana Conservation"
+     "Surfing with Six Senses, with boat transfers to the breaks",
+     "Six Senses Spa",
+     "RaRa and Tovolea restaurants",
+     "Private pools at every villa and residence"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Private plunge pools",
-     "White sand beachfront",
+     "24 pool villas and 16 multi bedroom residences",
+     "A private pool at every villa",
+     "Residences of three to six bedrooms",
+     "A nanny eight hours a day in the six bedroom retreat",
      "Six Senses Spa",
-     "Earth Lab sustainability center",
-     "Marine adventures center",
-     "Guest Experience Maker service",
-     "Luxury residences",
-     "Surf access year-round",
-     "Iguana conservation program",
-     "Helicopter and speedboat transfers"
+     "Shared and private speedboats, and helicopters from Nadi"
     ]
    },
    "onlyHere": [
-    "Set on one of Fiji's most beautiful islands, Six Senses Fiji combines barefoot luxury with conservation, wellness, and immersive ocean experiences. Travelers come here to disconnect from noise and reconnect with nature through pristine beaches, crystal-clear waters, world-class wellness, and meaningful sustainability initiatives."
+    "Six Senses Fiji is on Malolo, the largest of the Mamanuca Islands, 25 km from Nadi. Beside its pool villas sit sixteen residences of three to six bedrooms, which makes it one of the easiest places in Fiji to bring a whole family."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "Room for a whole family",
+     "body": "Couples take the pool villas; families and groups take the residences, up to the Six-Bedroom Beachfront Pool Retreat for twelve, which comes with a nanny eight hours a day. Arrival is easy: about 45 minutes by shared speedboat from Port Denarau, or ten minutes by helicopter from Nadi."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. May to October is Fiji's drier season with the best water clarity (20 to 40 m, Tourism Fiji); November to April is warmer and wetter.",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN), 25 km away. Shared speedboats leave Port Denarau four times a day (about 45 minutes); private speedboats run around the clock for up to 12 guests; helicopters fly from Nadi Airport in about 10 minutes, 7 am to 5 pm.",
+    "signature_experiences": "Private pools in every villa, Six Senses Spa, RaRa and Tovolea restaurants, and surfing with Six Senses.",
+    "who_its_for": "Couples in the pool villas, and families and groups in the three to six bedroom residences, which come with a nanny for eight hours a day in the largest."
+   },
+   "faqs": [
+    {
+     "q": "Where is Six Senses Fiji?",
+     "a": "On Malolo Island, the largest of the Mamanuca Islands, 25 km from Nadi International Airport."
+    },
+    {
+     "q": "How do I get to Six Senses Fiji?",
+     "a": "By shared speedboat from Port Denarau (about 45 minutes, four a day), private speedboat at any hour, or helicopter from Nadi Airport (about 10 minutes, daylight only)."
+    },
+    {
+     "q": "How many villas and residences are there?",
+     "a": "24 pool villas and 16 multi bedroom residences."
+    },
+    {
+     "q": "What is the largest residence?",
+     "a": "The Six-Bedroom Beachfront Pool Retreat sleeps 12 in 760 sq m; the Five-Bedroom Beachfront Pool Retreat is the largest by floor area at 942 sq m."
+    },
+    {
+     "q": "Is Six Senses Fiji good for families?",
+     "a": "Yes. The residences have three to six bedrooms and private pools, and the six bedroom retreat includes a nanny eight hours a day."
+    },
+    {
+     "q": "Can I surf from Six Senses Fiji?",
+     "a": "Yes. Six Senses offers a surf experience on Haydenshapes boards with boat transfers to the breaks."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
     "secondary": [
-     "PATH-05"
+     "PATH-05",
+     "PATH-07"
     ],
     "setting": "fiji",
     "intentions": [],
@@ -44651,7 +45002,8 @@
     "classifiedAt": "2026-10-31"
    },
    "volumes": [
-    "stays"
+    "stays",
+    "gatherings"
    ],
    "arrivalHubIds": [
     "6ae69747a5f8e7688c6e7aec"
@@ -51316,68 +51668,91 @@
    "regionSlug": "oceania",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "Award-winning adults-only luxury in the heart of Fiji's Mamanuca Islands.",
-   "quote": "Wake with the ocean, embrace the island, and discover luxury that feels wonderfully uncomplicated.",
+   "tagline": "36 beachfront bures and villas at the top of the Mamanucas, adults only.",
+   "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/tokoriki-island-resort/hero",
    "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "Fiji's dry season offers warm sunshine, lower humidity and calm ocean conditions ideal for snorkelling, diving, paddleboarding and sunset cruises. These months provide exceptional visibility across the surrounding coral reefs while offering comfortable temperatures for outdoor dining and island exploration.",
+   "bestMonths": "Year round",
+   "bestMonthsNote": "May to October is Fiji's drier season with clearer water for diving; November to April is warmer and wetter (Tourism Fiji).",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "partner_verified",
+   "statusDate": "2026-11-05",
    "coords": {
     "lat": -17.6408,
     "lng": 177.0675
    },
    "airport": "Nadi International Airport (NAN)",
-   "airportDirections": "Primary Arrival Airport\nNadi International Airport (NAN)\nGuests typically transfer to Tokoriki Island by:\nHigh-speed catamaran (approximately 90–100 minutes)\nHelicopter (approximately 15 minutes)\nSeaplane (approximately 15 minutes)",
+   "airportDirections": "Helicopter from Nadi about 15 minutes; private speedboat about 1 hour, any time; scheduled catamaran from Port Denarau; seaplane on request.",
    "founderNote": null,
    "rooms": {
     "paras": [],
     "items": [
-     "Beachfront Bures",
-     "Beachfront Pool Bures",
-     "Beachfront Pool Villas",
-     "Luxury Oceanfront Villas"
+     "Beachfront Bures (8, 60 sq m)",
+     "Beachfront Pool Bures (18, 63 sq m, personal pool)",
+     "Pool Villas (3, 120 sq m villa, 70 sq m deck, infinity edge pool)"
     ]
    },
    "experiences": {
     "paras": [],
     "items": [
+     "Diving with a PADI 5 Star Gold Palm dive centre",
      "Snorkelling",
-     "Scuba Diving",
-     "Sunset Cruises",
-     "Private Island Picnics",
-     "Spa Wellness",
-     "Stand-Up Paddleboarding",
-     "Kayaking",
-     "Cultural Experiences",
-     "Coral Reef Exploration",
-     "Private Dining"
+     "Couples treatments in the spa's treatment bures",
+     "Sunsets from the beach"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Adults-only boutique resort",
-     "Luxury beachfront bures",
-     "Private infinity-edge pools",
-     "Award-winning dining",
-     "Oceanfront spa",
-     "Marine conservation experiences",
-     "Direct beach access",
-     "Complimentary water sports",
-     "Authentic Fijian hospitality",
-     "Spectacular sunset views"
+     "Adults only, 16 and over",
+     "36 bures and villas, 72 guests at most",
+     "Personal pools in 28 of the 36",
+     "A main restaurant, Oishi Teppanyaki and a bar",
+     "PADI 5 Star Gold Palm dive centre"
     ]
    },
    "onlyHere": [
-    "Tokoriki Island Resort delivers one of Fiji's most intimate luxury experiences, where beachfront bures blend seamlessly into tropical gardens and crystal-clear lagoons. Every guest enjoys genuine Fijian hospitality, personalised service and the freedom to experience island life at an unhurried pace surrounded by extraordinary natural beauty."
+    "Tokoriki sits at the top of the Mamanuca group with 36 bures and villas along the beach, 28 of them with their own pool, and never more than 72 guests on the island."
    ],
-   "why": [],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "why": [
+    {
+     "title": "A small, adults only island resort",
+     "body": "Tokoriki is for couples and honeymooners who want a beachfront pool bure, a dive centre on the island and a short hop from Nadi: about 15 minutes by helicopter or an hour by private speedboat."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. May to October is Fiji's drier season with clearer water for diving; November to April is warmer and wetter (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN). Helicopter about 15 minutes; private speedboat about 1 hour, any time; scheduled catamaran from Port Denarau; seaplane on request.",
+    "signature_experiences": "Personal pools in 28 of the 36 bures and villas, a PADI 5 Star Gold Palm dive centre, Oishi Teppanyaki, the spa's couples treatment bures and sunset views.",
+    "who_its_for": "Couples and honeymooners; the resort takes guests 16 and over, 72 at most."
+   },
+   "faqs": [
+    {
+     "q": "Is Tokoriki Island Resort adults only?",
+     "a": "Yes. The minimum age is 16."
+    },
+    {
+     "q": "How many bures and villas are there?",
+     "a": "36: 8 Beachfront Bures, 18 Beachfront Pool Bures, 7 Beachfront Pool Villas and 3 Pool Villas, for 72 guests at most."
+    },
+    {
+     "q": "How do I get to Tokoriki?",
+     "a": "Helicopter from Nadi in about 15 minutes, private speedboat in about an hour, the scheduled catamaran from Port Denarau, or seaplane on request."
+    },
+    {
+     "q": "Can I dive at Tokoriki?",
+     "a": "Yes. The resort has a PADI 5 Star Gold Palm dive centre."
+    },
+    {
+     "q": "Do the rooms have pools?",
+     "a": "28 of the 36 do: every Beachfront Pool Bure, Beachfront Pool Villa and Pool Villa has its own pool."
+    },
+    {
+     "q": "What are the dining options?",
+     "a": "A main restaurant, Oishi Teppanyaki and a bar, with four dining decks."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -51973,6 +52348,132 @@
     "6ae697409300c15bed28823f",
     "6ae6974015191bd7aba6d4e6"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "turtle-island",
+   "name": "Turtle Island, Fiji",
+   "ledgerId": "STY-2026-000312",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Fourteen villas on a 500 acre private island on the Blue Lagoon, Yasawa group.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g12",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/turtle-island/g10"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "May to October is Fiji's drier season; November to April is warmer and wetter (Tourism Fiji).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-05",
+   "coords": null,
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "Fly into Nadi, then 30 minutes by seaplane to the island; or about 2 hours by speedboat or 4 hours by catamaran.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Vonu Point Villa",
+     "Water's Edge Villa",
+     "Grand Villa"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Beach picnics",
+     "Pontoon dinners",
+     "Snorkelling and diving",
+     "Two half hour massages at the Vonu Spa",
+     "Kava, meke and lovo evenings"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A family owned private island in the Yasawa group",
+     "Fourteen villas in three styles",
+     "All meals, drinks and most activities included",
+     "Minimum stay of five nights",
+     "Family Time weeks, up to five children per villa",
+     "Whole island rental, sold by the week"
+    ]
+   },
+   "onlyHere": [
+    "Turtle Island is a family owned private island on the Blue Lagoon in the Yasawa group, with fourteen villas and almost everything included. A seaplane brings you in from Nadi in about 30 minutes, and you stay at least five nights."
+   ],
+   "why": [
+    {
+     "title": "Fourteen villas and the Blue Lagoon",
+     "body": "Turtle Island is for couples who want an all inclusive island where the evenings are pontoon dinners and kava rather than a resort programme. In set Family Time weeks each villa takes up to five children with a nanny, and the whole island can be rented by the week, with Nadi transfers included."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. May to October is Fiji's drier season; November to April is warmer and wetter (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN), then 30 minutes by seaplane to the island; or about 2 hours by speedboat or 4 hours by catamaran.",
+    "signature_experiences": "All inclusive stays (meals, drinks, activities, two half hour massages at Vonu Spa), beach picnics, pontoon dinners, snorkelling, diving and kava, meke and lovo evenings.",
+    "who_its_for": "Couples and honeymooners, with set Family Time weeks when each villa takes up to five children; or one group taking the whole island."
+   },
+   "faqs": [
+    {
+     "q": "Where is Turtle Island?",
+     "a": "A family owned private island in the Yasawa group, on the Blue Lagoon, north west of Viti Levu."
+    },
+    {
+     "q": "How do I get to Turtle Island?",
+     "a": "Fly into Nadi, then 30 minutes by seaplane; a speedboat takes about 2 hours and the catamaran about 4."
+    },
+    {
+     "q": "How many villas are there?",
+     "a": "14, in three styles: Vonu Point Villa, Water's Edge Villa and Grand Villa."
+    },
+    {
+     "q": "Is there a minimum stay?",
+     "a": "Yes, 5 nights."
+    },
+    {
+     "q": "Can children stay?",
+     "a": "During set Family Time periods, each villa takes up to five children, with a nanny and children's programme."
+    },
+    {
+     "q": "What is included?",
+     "a": "All meals and drinks, most water and land activities, two half hour massages at the Vonu Spa, nightly entertainment and Nadi transfers on island rentals."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-05"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

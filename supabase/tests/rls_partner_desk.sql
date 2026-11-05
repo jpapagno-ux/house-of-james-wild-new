@@ -187,7 +187,7 @@ begin
   insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (sub2, 'properties', k1, 'name', '"Another name"') returning id into rev2;
 
   -- ===== the house decides
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   select count(*) into n from public.properties where id in (k1, k2, k3, m1);
   r := r || jsonb_build_object('t', 'C09 James Wild & Co sees every entity, drafts included', 'pass', n = 4);
   t := public.decide_revision(rev, 'edit_approve', '"RLS Ubud Private Villas & Spa"', 'House style');
@@ -330,7 +330,7 @@ begin
   insert into public.entity_access (membership_id, property_id) values (pm_mem, k1);
 
   perform set_config('role', 'authenticated', true);
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   begin
     insert into public.partner_documents (organization_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
       values (o_k, 'contract', 'Agency agreement 2027', o_k::text || '/contract/agreement-2027.pdf', 'application/pdf', 1000, jw) returning id into dc;
@@ -378,7 +378,7 @@ begin
   exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'H12 a property manager cannot file for another property', 'pass', ok);
 
-  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   select count(*) into n from public.partner_documents where id = dc;
   r := r || jsonb_build_object('t', 'H13 a house editor cannot see the contract', 'pass', n = 0);
   select count(*) into n from public.partner_documents where id in (dm1, dm2, ds);
@@ -426,7 +426,7 @@ begin
   insert into public.brands (organization_id, name, slug) values (o_m, 'RLS More brand', 'rls-more-brand') returning id into b_m;
   update public.properties set brand_id = b_k where id in (k1, k2);
   perform set_config('role', 'authenticated', true);
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   insert into public.commission_terms (organization_id, rate_bp, effective_from, status) values (o_k, 1500, '2026-01-01', 'confirmed') returning id into ct;
   insert into public.commission_terms (organization_id, brand_id, rate_bp, effective_from, status) values (o_k, b_k, 1700, '2026-01-01', 'to_confirm');
   insert into public.commission_terms (organization_id, property_id, rate_bp, effective_from, status) values (o_k, k1, 1800, '2026-01-01', 'confirmed');
@@ -459,7 +459,7 @@ begin
   perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
   select count(*) into n from public.commission_terms;
   r := r || jsonb_build_object('t', 'I11 a property manager sees no commission terms', 'pass', n = 0);
-  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   select count(*) into n from public.commission_terms;
   r := r || jsonb_build_object('t', 'I12 a house editor sees no commission terms', 'pass', n = 0);
   perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
@@ -473,7 +473,7 @@ begin
 
   -- ===== (J) advisor tiers, currencies, banking, policies, reminders (D-26)
   perform set_config('role', 'authenticated', true);
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   select count(*) into n from public.advisor_tiers where (key, share_bp) in (('tier_1', 7500), ('tier_2', 7000), ('tier_3', 5500));
   r := r || jsonb_build_object('t', 'J01 the house sees Tier 1 75%, Tier 2 70%, Tier 3 55%', 'pass', n = 3);
   insert into public.advisor_tier_assignments (user_id, tier, effective_from) values (tr, 'tier_1', '2026-01-01');
@@ -505,13 +505,13 @@ begin
   perform set_config('request.jwt.claims', json_build_object('sub', kc, 'role', 'authenticated')::text, true);
   select count(*) into n from public.partner_bank_accounts;
   r := r || jsonb_build_object('t', 'J10 contributors see no banking details', 'pass', n = 0);
-  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   select count(*) into n from public.partner_bank_accounts;
   r := r || jsonb_build_object('t', 'J11 house editors see no banking details', 'pass', n = 0);
   perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
   select count(*) into n from public.partner_bank_accounts;
   r := r || jsonb_build_object('t', 'J12 another partner sees none', 'pass', n = 0);
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   update public.partner_bank_accounts set status = 'verified' where id = ba1;
   insert into public.partner_bank_accounts (organization_id, currency, account_holder, bank_name, bank_country, account_number, submitted_by)
   values (o_k, 'IDR', 'PT Kayu', 'Bank RLS 2', 'ID', '5555666677', jw) returning id into ba2;
@@ -539,7 +539,7 @@ begin
   r := r || jsonb_build_object('t', 'J18 partners cannot approve their own policy', 'pass', n = 0);
   perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated')::text, true);
   insert into public.partner_policies (organization_id, kind, body, submitted_by) values (o_k, 'refund', 'Refunds within 14 days', ka) returning id into pol2;
-  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   update public.partner_policies set status = 'approved' where id in (pol, pol2); get diagnostics n = row_count;
   r := r || jsonb_build_object('t', 'J19 a house editor approves policies', 'pass', n = 2
     and (select reviewed_by from public.partner_policies where id = pol) = je);
@@ -547,7 +547,7 @@ begin
   select count(*) into n from public.partner_policies;
   r := r || jsonb_build_object('t', 'J20 another partner sees none of them', 'pass', n = 0);
 
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   begin update public.commission_terms set contract_document_id = ds where id = ct; ok := false; exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'J21 a term links only to a contract', 'pass', ok or ds is null);
   update public.commission_terms set contract_document_id = dc where id = ct; get diagnostics n = row_count;
@@ -564,7 +564,7 @@ begin
   select count(*) into n from private.document_reminders_due(current_date) d where d.document_id = dc and d.stage = 'expired';
   r := r || jsonb_build_object('t', 'J25 on expiry a final reminder is due', 'pass', n = 1);
   perform set_config('role', 'authenticated', true);
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   begin perform public.document_reminders_due(current_date); ok := false; exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'J26 only the server job can list reminders', 'pass', ok);
   perform set_config('role', 'postgres', true);
@@ -600,7 +600,7 @@ begin
   perform set_config('request.jwt.claims', json_build_object('sub', pm, 'role', 'authenticated')::text, true);
   begin perform public.decide_revision(crev, 'approve'); ok := false; exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'K08 partners cannot approve their own content', 'pass', ok);
-  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   perform public.decide_revision(crev, 'approve');
   jt := public.decide_revision(crev2, 'edit_approve', '"April to October, the dry season"', null);
   select count(*) into n from public.entity_content where id = k1 and inclusions = '["All meals", "Spa treatment"]' and best_months = 'April to October, the dry season';
@@ -637,7 +637,7 @@ begin
     insert into public.revisions (submission_id, target_table, target_id, field, proposed_value) values (sub2, 'room_types', rm1, 'features', '["x"]'); ok := false;
   exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'L06 another partner cannot propose for this room', 'pass', ok);
-  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   perform public.decide_revision(rrev, 'approve');
   perform public.decide_revision(rrev2, 'approve');
   select count(*) into n from public.room_types where id = rm1 and included = array['Breakfast', 'Airport transfer'] and size_sqm = 300;
@@ -669,7 +669,7 @@ begin
   insert into public.rate_proposals (organization_id, property_id, kind, payload, submitted_by) values (o_k, k2, 'offer', '{"label":"Stay 4, pay 3"}', ka) returning id into rp2;
   update public.rate_proposals set status = 'withdrawn' where id = rp2; get diagnostics n = row_count;
   r := r || jsonb_build_object('t', 'M07 the sender can withdraw an open proposal', 'pass', n = 1);
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   update public.rate_proposals set status = 'loaded', airtable_card = '2027-V1' where id = rp1; get diagnostics n = row_count;
   r := r || jsonb_build_object('t', 'M08 the house marks rates loaded, with who and when', 'pass', n = 1
     and exists (select 1 from public.rate_proposals where id = rp1 and reviewed_by = jw and reviewed_at is not null));
@@ -703,7 +703,7 @@ begin
     n = (select count(*) from public.commission_terms)
     and exists (select 1 from public.commission_terms where organization_id = o_m and source = 'airtable' and status = 'confirmed' and effective_to is null));
   perform set_config('role', 'authenticated', true);
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   begin update public.commission_terms set rate_bp = 2500 where airtable_record_id = 'recNKAYUAAAAAAAAA' and effective_to is null; ok := false;
   exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'N05 the house cannot retype a synced commission on the desk', 'pass', ok);
@@ -731,7 +731,7 @@ begin
     and p.content->>'best_months' = 'April to October, the dry season' and crev = any (p.revision_ids);
   r := r || jsonb_build_object('t', 'O01 the run lists approved content with the approved values', 'pass', n = 1);
   perform set_config('role', 'authenticated', true);
-  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   begin perform public.publish_run_pending(); ok := false; exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'O02 only the server can read the run', 'pass', ok);
   begin perform public.publish_run_mark(array[crev], 'x'); ok := false; exception when others then ok := true; end;
@@ -761,7 +761,7 @@ begin
   r := r || jsonb_build_object('t', 'P04 nothing shows before the house approves', 'pass', ok);
   begin perform public.decide_host(hs1, 'approve'); ok := false; exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'P05 a partner cannot decide', 'pass', ok);
-  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   perform public.decide_host(hs1, 'approve', 'Checked against their site');
   perform set_config('role', 'anon', true);
   perform set_config('request.jwt.claims', '{"role":"anon"}', true);
@@ -784,11 +784,29 @@ begin
   perform set_config('request.jwt.claims', json_build_object('sub', ma, 'role', 'authenticated')::text, true);
   select count(*) into n from public.site_hosts;
   r := r || jsonb_build_object('t', 'P10 another partner sees none of it', 'pass', n = 0);
-  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated')::text, true);
+  perform set_config('request.jwt.claims', json_build_object('sub', je, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   perform public.decide_host(hs2, 'approve');
   r := r || jsonb_build_object('t', 'P11 a new host replaces the old one and keeps the partner''s toggle', 'pass',
     (select status from public.site_hosts where id = hs1) = 'retired'
     and exists (select 1 from public.site_hosts where id = hs2 and status = 'approved' and show_on_site = false));
+  perform set_config('role', 'postgres', true);
+
+  -- ===== (Q) house sign-in second step (D-11): a house account counts as house only after the code
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+  r := r || jsonb_build_object('t', 'Q01 a house admin with a password only is not the house', 'pass', not private.is_jw());
+  select count(*) into n from public.organizations where type = 'partner';
+  r := r || jsonb_build_object('t', 'Q02 and sees no partner organisations', 'pass', n = 0);
+  begin perform public.decide_host(hs2, 'decline', 'x'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'Q03 nor decides anything', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated')::text, true);
+  r := r || jsonb_build_object('t', 'Q04 a token without a level counts as a password-only sign-in', 'pass', not private.is_jw());
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  select count(*) into n from public.organizations where type = 'partner';
+  r := r || jsonb_build_object('t', 'Q05 after the code the house sees every partner', 'pass', private.is_jw() and n >= 2);
+  perform set_config('request.jwt.claims', json_build_object('sub', ka, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+  select count(*) into n from public.organizations where id = o_k;
+  r := r || jsonb_build_object('t', 'Q06 partners are not affected: password only still sees their own', 'pass', n = 1);
   perform set_config('role', 'postgres', true);
 
   raise exception 'PARTNER_DESK_RLS %', r;

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import portal from "@/components/platform/portal.module.css";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Rail, { type RailItem } from "@/components/platform/Rail";
 import OrgSwitcher from "@/components/platform/OrgSwitcher";
@@ -17,29 +18,34 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
   const items: RailItem[] = [
     { href: "/partner", label: "Overview" },
     { href: "/partner/portfolio", label: "My Portfolio" },
+    { href: "/partner/content", label: "Content" },
+    { href: "/partner/rooms", label: "Rooms & Accommodation" },
+    { href: "/partner/rates", label: "Rates & Offers" },
     { href: "/partner/requests", label: "Requests", count: count ?? 0 },
     { href: "/partner/submissions", label: "Updates & approvals" },
     { href: "/partner/contacts", label: "Contacts" },
+    { href: "/partner/hosts", label: "Hosts" },
+    { href: "/partner/documents", label: "Documents" },
+    { href: "/partner/commercial", label: "Commercial terms" },
+    { href: "/partner/payments", label: "Banking & policies" },
     { href: "/partner/team", label: "Team" },
     { href: "/partner/account", label: "Account" },
     { href: "/partner/support", label: "Support" },
   ];
   const later: RailItem[] = [
-    { href: "#", label: "Content", soon: "Stage 2" },
-    { href: "#", label: "Rooms & Accommodation", soon: "Stage 2" },
-    { href: "#", label: "Rates & Offers", soon: "Stage 2" },
-    { href: "#", label: "Media Library", soon: "Stage 3" },
-    { href: "#", label: "Partner Dispatch", soon: "Stage 3" },
-    { href: "#", label: "Founder Notes", soon: "Stage 3" },
-    { href: "#", label: "Resources", soon: "Stage 3" },
+    { href: "#", label: "Media Library", soon: "soon" },
+    { href: "#", label: "Partner Dispatch", soon: "soon" },
+    { href: "#", label: "Founder Notes", soon: "soon" },
+    { href: "#", label: "Resources", soon: "soon" },
   ];
   const who = desk.membership ? ROLE_LABEL[desk.membership.role] : "James Wild & Co · viewing";
   return (
     <>
       <SiteHeader />
-      <div className="border-b ledger-rule bg-paper-card">
+      <div className={portal.portal}>
+      <div className="border-b ledger-border border-t-2 border-t-[#8B2525] bg-white">
         <div className="max-w-ledger mx-auto px-5 md:px-10 py-3 flex flex-wrap items-center gap-x-5 gap-y-2">
-          <p className="ledger-eyebrow ledger-crimson">Partner Desk</p>
+          <p className="ledger-eyebrow text-[#8B2525]">Partner Desk</p>
           <p className="ledger-display text-[1.2rem] leading-none">{desk.org.name}</p>
           {desk.org.partner_code && <span className="font-mono text-[11.5px] tracking-[0.06em] ledger-crimson">{desk.org.partner_code}</span>}
           <div className="ml-auto flex flex-wrap items-center gap-4 text-[13px]">
@@ -56,6 +62,7 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
           <div className="pt-6 md:pt-0 min-w-0">{children}</div>
         </div>
       </main>
+      </div>
     </>
   );
 }

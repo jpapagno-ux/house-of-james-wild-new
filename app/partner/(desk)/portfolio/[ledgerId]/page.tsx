@@ -44,7 +44,10 @@ export default async function EntityPage({ params }: { params: Promise<{ ledgerI
       <p className="text-[13px] ledger-muted"><Link href="/partner/portfolio" className="hover:underline underline-offset-2">My Portfolio</Link> / {e.name}</p>
       <PageHead eyebrow={e.volumes.map((v) => `Vol. ${VOLUME_STYLES[v].roman} ${v === "europe" ? "The Other Europe" : VOLUME_STYLES[v].short}`).join(" · ") || "Entry"} title={e.name}
         lead={<span className="flex flex-wrap items-center gap-3"><LedgerId id={e.legacy_cms_id} /><StatusPill {...pub} /><span className="text-[14px]">Health {score}%</span></span>}
-        actions={e.publication_status === "published" && stayBySlug(e.slug) ? <Link href={`/stays/${e.slug}`} className="ledger-btn-ghost uppercase" target="_blank" rel="noopener">See it on the website ↗</Link> : undefined} />
+        actions={<>
+          <Link href={`/partner/portfolio/${e.legacy_cms_id}/content`} className="ledger-btn">Update content</Link>
+          {e.publication_status === "published" && stayBySlug(e.slug) ? <Link href={`/stays/${e.slug}`} className="ledger-btn-ghost uppercase" target="_blank" rel="noopener">See it on the website ↗</Link> : null}
+        </>} />
 
       {e.provenance === "PUBLIC_SOURCE" && (
         <div className="mt-6"><Notice tone="attention" title="Drafted from public sources">The house drafted this entry from your own website. It stays off the public site until you confirm the facts; see the open request below.</Notice></div>
@@ -79,7 +82,7 @@ export default async function EntityPage({ params }: { params: Promise<{ ledgerI
         ) : <p className="text-[15px] ledger-muted">Not yet classified. The house assigns Pathways; you&rsquo;ll be able to suggest them with content editing.</p>}
       </Section>
 
-      <Section title="Rooms & accommodation" aside={<span className="ledger-muted">Read-only until Stage 2</span>}>
+      <Section title="Rooms & accommodation" aside={<span className="ledger-muted">Read-only for now</span>}>
         {ownRooms.length === 0 && parentRooms.length === 0 ? <Empty title="No rooms on file">Send the house your room list in reply to a request, or as an update below.</Empty> : (
           <>
             {ownRooms.length === 0 && <p className="mb-3 text-[13.5px] ledger-muted">Rooms are held on {parent?.name ?? "the reserve"}&rsquo;s record for now; the house will move them to each lodge.</p>}
@@ -88,7 +91,7 @@ export default async function EntityPage({ params }: { params: Promise<{ ledgerI
                 <li key={r.id} className="border ledger-border p-4">
                   <p className="ledger-display text-[1.15rem] leading-tight">{r.name}</p>
                   <p className="text-[13px] ledger-muted mt-1">{[r.unit_type, r.bed_configuration, r.size_sqm ? `${r.size_sqm} m²` : null, r.max_occupancy ? `sleeps ${r.max_occupancy}` : null].filter(Boolean).join(" · ") || "Details to confirm"}</p>
-                  {r.occupancy_status === "unverified" && <p className="text-[12px] text-rust mt-1">Occupancy not yet verified</p>}
+                  {r.occupancy_status === "unverified" && <p className="text-[12px] text-[#8B2525] mt-1">Occupancy not yet verified</p>}
                 </li>
               ))}
             </ul>
@@ -112,7 +115,7 @@ export default async function EntityPage({ params }: { params: Promise<{ ledgerI
       {canSubmit && (
         <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-2">
           <Section title="Propose a change">
-            <p className="mb-4 text-[14px] ledger-muted">Changes go to the house for approval. Rooms, rates, offers and full content editing arrive in Stage 2.</p>
+            <p className="mb-4 text-[14px] ledger-muted">Changes go to the house for approval. Editing rooms, rates, offers and full content is coming soon.</p>
             <ProposeChange propertyId={e.id} fields={(["name", "category", "country", "region", "timezone"] as const).map((k) => ({ key: k, label: FIELD_LABEL[k], current: (e[k] as string | null) ?? null }))} />
           </Section>
           <Section title="Send the house an update">

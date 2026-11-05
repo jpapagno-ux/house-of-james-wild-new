@@ -17,7 +17,7 @@ import type { Host, HostConnect } from "@/components/record/HostPanel";
 export const GROUP_CONNECT_ON = true;
 
 // PLACEHOLDER until James's live Calendly group event is set.
-const GROUP_CALENDLY = "https://calendly.com/jameswildco/group-connect";
+export const GROUP_CALENDLY = "https://calendly.com/jameswildco/group-connect";
 
 // One card for Matt across the MORE pages (see "MORE" below): same person, the page's own topics.
 function moreHost(key: string, property: string, place: string, rooms: string, area: string): Record<string, { state: HostConnect; host: Host }> {

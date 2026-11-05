@@ -1,0 +1,58 @@
+# Publish run, step 2 (D-18 option A): runs when a publish-run PR is merged on main. Posts the batch
+# to the Library's contentApply function (GitHub OIDC; the Library accepts only airport_name,
+# airport_directions, best_months and partner_facts), tells the site to stamp the desk revisions
+# published, then runs the library sync so the pages follow.
+name: Content apply
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/data/content-apply.json]
+
+permissions:
+  contents: read
+  id-token: write
+  actions: write
+
+concurrency:
+  group: library-sync
+  cancel-in-progress: false
+
+env:
+  SITE: https://www.jameswildco.com
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Apply the batch to the Library
+        id: apply
+        run: |
+          set -euo pipefail
+          F=scripts/data/content-apply.json
+          N=$(jq '.records | length' $F); DONE=$(jq -r '.appliedOn // ""' $F); NAME=$(jq -r .batch $F)
+          echo "batch: $NAME  records: $N  appliedOn: ${DONE:-null}"
+          if [ -n "$DONE" ] || [ "$N" = "0" ]; then echo "nothing to apply"; echo "applied=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          TOKEN=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=base44-site-export" | jq -r .value)
+          jq '{by, batch, records: [.records[] | {ledger_id, set}]}' $F > lib.json
+          curl -sSf --retry 2 -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+            --data-binary @lib.json https://wild-intel-vault.base44.app/functions/contentApply -o result.json
+          cat result.json
+          jq -e '.ok == true' result.json > /dev/null
+          echo "applied=true" >> "$GITHUB_OUTPUT"; echo "name=$NAME" >> "$GITHUB_OUTPUT"
+      - name: Stamp the desk revisions published
+        if: steps.apply.outputs.applied == 'true'
+        run: |
+          set -euo pipefail
+          TOKEN=$(curl -sS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=jameswildco-publish-run" | jq -r .value)
+          jq '{batch, revisionIds: [.records[].revision_ids[]]}' scripts/data/content-apply.json > stamp.json
+          curl -sSf --retry 2 -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+            --data-binary @stamp.json "$SITE/api/v1/internal/publish-run"
+      - name: Run the library sync so the site follows
+        if: steps.apply.outputs.applied == 'true'
+        run: gh workflow run library-sync.yml -f reason="Publish run ${{ steps.apply.outputs.name }}"
+        env:
+          GH_TOKEN: ${{ github.token }}

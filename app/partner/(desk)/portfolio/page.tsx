@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { requireDesk } from "@/lib/platform/membership";
-import { health, portfolio, requests } from "@/lib/platform/queries";
+import { commissionTerms, health, portfolio, requests } from "@/lib/platform/queries";
+import { COMMISSION_KEEPER_ROLES, formatBp, resolveTerm } from "@/lib/platform/commission";
+import { today } from "@/lib/dates";
 import { ENTITY_TYPE, PUBLICATION, niceDate } from "@/lib/platform/labels";
 import { VOLUME_STYLES, volumeInk, type VolumeKey } from "@/lib/volumes";
 import { Empty, LedgerId, PageHead, StatusPill } from "@/components/platform/ui";
@@ -13,6 +15,11 @@ export default async function Portfolio() {
   const desk = await requireDesk("/partner/portfolio");
   const [entities, open] = await Promise.all([portfolio(desk), requests(desk, { open: true })]);
   const h = await health(desk, entities);
+  // Commission per entry (D-25): only for house finance and the partner's admins; the database
+  // returns no terms to anyone else, so the column simply isn't there for them.
+  const keeper = desk.memberships.some((m) => m.status === "active" && m.organization.type === "internal" && COMMISSION_KEEPER_ROLES.includes(m.role));
+  const terms = keeper || desk.canAdmin ? await commissionTerms(desk) : [];
+  const day = today();
   const parentName = new Map(entities.map((e) => [e.id, e.name]));
   const groups = ORDER.map((k) => ({ k, list: entities.filter((e) => (e.volume_key ?? "stays") === k) })).filter((g) => g.list.length);
   return (
@@ -31,9 +38,10 @@ export default async function Portfolio() {
             {list.map((e) => {
               const score = h.get(e.id)?.score ?? 0, reqs = open.filter((r) => r.property_id === e.id).length;
               const pub = PUBLICATION[e.publication_status] ?? PUBLICATION.draft;
+              const rate = terms.length ? resolveTerm(terms, e, day) : null;
               return (
                 <li key={e.id}>
-                  <Link href={`/partner/portfolio/${e.legacy_cms_id}`} className="group grid gap-2 py-4 sm:grid-cols-[1fr_auto] sm:items-center hover:bg-paper-card -mx-3 px-3">
+                  <Link href={`/partner/portfolio/${e.legacy_cms_id}`} className="group grid gap-2 py-4 sm:grid-cols-[1fr_auto] sm:items-center hover:bg-[#F7F5F2] -mx-3 px-3">
                     <div className="min-w-0">
                       <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                         <span className="ledger-display text-[1.3rem] leading-tight group-hover:underline underline-offset-4 decoration-1">{e.name}</span>
@@ -45,6 +53,11 @@ export default async function Portfolio() {
                       <p className="text-[12.5px] ledger-muted mt-1">Last verified {niceDate(e.last_verified_at)}{reqs ? ` · ${reqs} open request${reqs === 1 ? "" : "s"}` : ""}</p>
                     </div>
                     <div className="flex items-center gap-3 sm:justify-end">
+                      {rate && (
+                        <span className="text-[13px] tabular-nums border ledger-border px-2 py-[3px] whitespace-nowrap" title={`From the ${rate.source === "partner" ? "partner" : rate.source} terms`}>
+                          {rate.term.basis === "net" ? "Net rates" : `${formatBp(rate.term.rate_bp)} commission`}{rate.term.status === "to_confirm" ? " · to confirm" : ""}
+                        </span>
+                      )}
                       <StatusPill {...pub} />
                       <span className="text-[13px] tabular-nums border ledger-border px-2 py-[3px]" aria-label={`Health ${score}%`}>{score}%</span>
                     </div>

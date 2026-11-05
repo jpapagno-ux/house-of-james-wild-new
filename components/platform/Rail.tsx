@@ -3,7 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 // Desk navigation. Desktop and tablet: a quiet left rail. Phones: one scrolling tab
-// row under the masthead. Items for later stages are listed, labelled, not linked.
+// row under the masthead. Sections still being built are listed under "Coming soon", not linked,
+// and never show internal build stages to partners. The active item wears the portal accent (Deep Teal).
 
 export type RailItem = { href: string; label: string; count?: number; soon?: string };
 
@@ -18,7 +19,7 @@ export default function Rail({ items, later, house }: { items: RailItem[]; later
           {items.map((i) => (
             <li key={i.href}>
               <Link href={i.href} aria-current={isActive(i.href) ? "page" : undefined}
-                className={`ledger-eyebrow inline-flex items-center gap-1.5 py-3 border-b-2 ${isActive(i.href) ? "ledger-crimson ledger-crimson-border" : "border-transparent"}`}>
+                className={`ledger-eyebrow inline-flex items-center gap-1.5 py-3 border-b-2 ${isActive(i.href) ? "text-[#8B2525] border-[#8B2525]" : "border-transparent"}`}>
                 {i.label}{i.count ? <span className="tabular-nums">· {i.count}</span> : null}
               </Link>
             </li>
@@ -34,7 +35,7 @@ export default function Rail({ items, later, house }: { items: RailItem[]; later
             return (
               <li key={i.href} className="border-b ledger-border">
                 <Link href={i.href} aria-current={on ? "page" : undefined}
-                  className={`flex items-center justify-between gap-3 py-2.5 pl-3 pr-2 text-[14px] border-l-2 transition-colors ${on ? "ledger-crimson-border ledger-crimson font-medium bg-paper-card" : "border-transparent hover:bg-paper-card"}`}>
+                  className={`flex items-center justify-between gap-3 py-2.5 pl-3 pr-2 text-[14px] border-l-2 transition-colors ${on ? "border-[#8B2525] text-[#8B2525] font-medium bg-[#F3ECEA]" : "border-transparent hover:bg-[#F7F5F2]"}`}>
                   <span>{i.label}</span>
                   {i.count ? <span className="text-[11px] tabular-nums border ledger-border px-1.5 leading-5" aria-label={`${i.count} open`}>{i.count}</span> : null}
                 </Link>
@@ -43,14 +44,12 @@ export default function Rail({ items, later, house }: { items: RailItem[]; later
           })}
         </ul>
         {house && (
-          <Link href="/desk/review" className="mt-5 block border ledger-crimson-border ledger-crimson px-3 py-2.5 text-[13px] hover:bg-paper-card">House review queue →</Link>
+          <Link href="/desk/review" className="mt-5 block border ledger-crimson-border ledger-crimson px-3 py-2.5 text-[13px] hover:bg-[#F6ECEC]">House review queue →</Link>
         )}
-        <p className="ledger-eyebrow mt-8">Arriving next</p>
+        <p className="ledger-eyebrow mt-8">Coming soon</p>
         <ul className="mt-2">
           {later.map((i) => (
-            <li key={i.label} className="flex items-center justify-between gap-3 py-1.5 pl-3 text-[13.5px] ledger-muted">
-              <span>{i.label}</span><span className="shrink-0 whitespace-nowrap text-[10px] tracking-[0.14em] uppercase">{i.soon}</span>
-            </li>
+            <li key={i.label} className="py-1.5 pl-3 text-[13.5px] ledger-muted">{i.label}</li>
           ))}
         </ul>
       </nav>

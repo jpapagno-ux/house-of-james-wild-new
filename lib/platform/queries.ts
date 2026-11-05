@@ -12,13 +12,13 @@ type Ctx = Pick<DeskContext, "sb" | "membership" | "house"> & { org: OrgSummary 
 
 export type Entity = {
   id: string; legacy_cms_id: string; name: string; slug: string; publication_status: string; entity_type: string | null; entity_kind: string | null;
-  volume_key: VolumeKey | null; parent_property_id: string | null; provenance: string | null; last_verified_at: string | null; updated_at: string;
+  volume_key: VolumeKey | null; parent_property_id: string | null; brand_id: string | null; provenance: string | null; last_verified_at: string | null; updated_at: string;
   country: string | null; category: string | null; region: string | null; timezone: string | null;
   destination: { name: string; slug: string; parent: { name: string } | null } | null;
   volumes: VolumeKey[];
 };
 
-const ENTITY_COLS = "id, legacy_cms_id, name, slug, publication_status, entity_type, entity_kind, volume_key, parent_property_id, provenance, last_verified_at, updated_at, country, category, region, timezone, destination:destinations!destination_id(name, slug, parent:destinations!parent_id(name)), entity_volumes(volume_key, is_primary)";
+const ENTITY_COLS = "id, legacy_cms_id, name, slug, brand_id, publication_status, entity_type, entity_kind, volume_key, parent_property_id, provenance, last_verified_at, updated_at, country, category, region, timezone, destination:destinations!destination_id(name, slug, parent:destinations!parent_id(name)), entity_volumes(volume_key, is_primary)";
 
 type Raw = Omit<Entity, "volumes"> & { entity_volumes: { volume_key: VolumeKey; is_primary: boolean }[] | null };
 const shape = (r: Raw): Entity => {
@@ -143,4 +143,62 @@ export async function roomsFor(ctx: Ctx, propertyId: string) {
 export async function verificationsFor(ctx: Ctx, propertyId: string) {
   const { data } = await ctx.sb.from("verifications").select("aspect, status, note, verified_at, valid_until").eq("property_id", propertyId).order("aspect");
   return data ?? [];
+}
+
+export type DocumentRow = {
+  id: string; kind: "contract" | "commercial" | "supporting"; title: string; property_id: string | null; mime_type: string; size_bytes: number;
+  effective_from: string | null; expires_on: string | null; note: string | null; status: string; uploaded_by: string | null; created_at: string;
+};
+/** Documents this person may see for the organization in view (RLS decides: contracts only for admins). */
+export async function documents(ctx: Ctx, opts: { archived?: boolean } = {}): Promise<DocumentRow[]> {
+  let q = ctx.sb.from("partner_documents")
+    .select("id, kind, title, property_id, mime_type, size_bytes, effective_from, expires_on, note, status, uploaded_by, created_at")
+    .eq("organization_id", ctx.org.id);
+  q = opts.archived ? q.eq("status", "archived") : q.eq("status", "active");
+  const { data } = await q.order("kind").order("created_at", { ascending: false });
+  return (data ?? []) as unknown as DocumentRow[];
+}
+
+// ===== commission terms (D-25): RLS returns rows only to house finance and the org's partner admins
+export type CommissionTermRow = {
+  id: string; brand_id: string | null; property_id: string | null; basis: "commission" | "net"; rate_bp: number | null;
+  effective_from: string; effective_to: string | null; status: "to_confirm" | "confirmed" | "retired"; note: string | null;
+  contract_document_id: string | null; updated_at: string; source: "desk" | "airtable"; synced_at: string | null;
+};
+export async function commissionTerms(ctx: Ctx): Promise<CommissionTermRow[]> {
+  const { data } = await ctx.sb.from("commission_terms")
+    .select("id, brand_id, property_id, basis, rate_bp, effective_from, effective_to, status, note, contract_document_id, updated_at, source, synced_at")
+    .eq("organization_id", ctx.org.id).order("status").order("effective_from", { ascending: false });
+  return (data ?? []) as unknown as CommissionTermRow[];
+}
+export async function orgBrands(ctx: Ctx): Promise<{ id: string; name: string }[]> {
+  const { data } = await ctx.sb.from("brands").select("id, name").eq("organization_id", ctx.org.id).order("name");
+  return (data ?? []) as { id: string; name: string }[];
+}
+
+// ===== banking details and policies (D-26): RLS decides who gets rows
+export type BankAccountRow = {
+  id: string; currency: string; account_holder: string; bank_name: string; bank_country: string; bank_address: string | null;
+  account_number: string | null; iban: string | null; swift_bic: string | null; routing_code: string | null; intermediary_bank: string | null;
+  note: string | null; status: "pending" | "verified" | "rejected" | "superseded"; verified_at: string | null; review_note: string | null; created_at: string;
+};
+export async function bankAccounts(ctx: Ctx): Promise<BankAccountRow[]> {
+  const { data } = await ctx.sb.from("partner_bank_accounts")
+    .select("id, currency, account_holder, bank_name, bank_country, bank_address, account_number, iban, swift_bic, routing_code, intermediary_bank, note, status, verified_at, review_note, created_at")
+    .eq("organization_id", ctx.org.id).order("created_at", { ascending: false });
+  return (data ?? []) as unknown as BankAccountRow[];
+}
+export type PolicyRow = {
+  id: string; property_id: string | null; kind: "cancellation" | "refund"; body: string | null; document_id: string | null; effective_from: string | null;
+  status: string; review_note: string | null; created_at: string;
+};
+export async function policies(ctx: Ctx): Promise<PolicyRow[]> {
+  const { data } = await ctx.sb.from("partner_policies")
+    .select("id, property_id, kind, body, document_id, effective_from, status, review_note, created_at")
+    .eq("organization_id", ctx.org.id).order("created_at", { ascending: false });
+  return (data ?? []) as unknown as PolicyRow[];
+}
+export async function orgCurrencies(ctx: Ctx): Promise<{ primary: string; others: string[] }> {
+  const { data } = await ctx.sb.from("organizations").select("primary_currency, other_currencies").eq("id", ctx.org.id).maybeSingle();
+  return { primary: (data?.primary_currency as string) ?? "USD", others: (data?.other_currencies as string[]) ?? [] };
 }

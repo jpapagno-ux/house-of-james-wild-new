@@ -8,6 +8,8 @@ export const metadata = { title: "Sign in" };
 export default async function SignInPage({ searchParams }: { searchParams: Promise<{ next?: string; error?: string }> }) {
   const sp = await searchParams;
   const next = safeNext(sp.next);
+  // The Partner Desk and the house desk sign in with a password on their own page, never by email link.
+  if (/^\/(desk|partner)(\/|$)/.test(next)) redirect(`/partner/login?next=${encodeURIComponent(next === "/desk" ? "/desk/review" : next)}`);
   const { user } = await currentUser();
   if (user) redirect(next);
   return (

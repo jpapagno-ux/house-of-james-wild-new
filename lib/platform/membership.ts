@@ -19,7 +19,10 @@ export type DeskContext = {
   sb: Sb;
   user: User;
   memberships: Membership[];
-  house: boolean;        // James Wild & Co staff (any house role)
+  house: boolean;        // James Wild & Co staff (any house role), signed in with the authenticator code
+  /** House accounts only (D-11): "ok" once the session has passed the authenticator code; "verify" when a
+   * code is set up but not yet entered this session; "enroll" when none is set up yet. "none" for partners. */
+  mfa: "ok" | "verify" | "enroll" | "none";
   houseEditor: boolean;  // may approve / request
   org: OrgSummary | null;          // the partner organization in view
   membership: Membership | null;   // the viewer's own membership in it (null when the house is viewing)
@@ -35,7 +38,16 @@ export const loadDesk = cache(async (): Promise<DeskContext | null> => {
     .select("id, role, status, organization:organizations(id, name, slug, type, partner_code)")
     .eq("user_id", user.id).eq("status", "active");
   const memberships = ((data ?? []) as unknown as Membership[]).filter((m) => m.organization);
-  const house = isHouse(memberships), houseEditor = isHouseEditor(memberships);
+  // D-11: a house account counts as house only after the authenticator code (the database agrees: is_jw
+  // requires aal2). Until then it is shown the code screen, and nothing house-only.
+  let mfa: DeskContext["mfa"] = "none";
+  if (isHouse(memberships)) {
+    // Pass the token so the factor list comes fresh from Auth (getUser), not from the cookie copy.
+    const { data: { session } } = await sb.auth.getSession();
+    const { data: aal } = await sb.auth.mfa.getAuthenticatorAssuranceLevel(session?.access_token);
+    mfa = aal?.currentLevel === "aal2" ? "ok" : aal?.nextLevel === "aal2" ? "verify" : "enroll";
+  }
+  const house = mfa === "ok" && isHouse(memberships), houseEditor = mfa === "ok" && isHouseEditor(memberships);
   const mine = partnerMemberships(memberships);
   let orgs: OrgSummary[] = mine.map((m) => ({ id: m.organization.id, name: m.organization.name, slug: m.organization.slug, partner_code: m.organization.partner_code }));
   if (house) {
@@ -45,7 +57,7 @@ export const loadDesk = cache(async (): Promise<DeskContext | null> => {
   const wanted = (await cookies()).get(ORG_COOKIE)?.value;
   const org = orgs.find((o) => o.slug === wanted) ?? orgs[0] ?? null;
   const membership = org ? mine.find((m) => m.organization.id === org.id) ?? null : null;
-  return { sb, user, memberships, house, houseEditor, org, membership, canAdmin: isPartnerAdmin(membership), orgs };
+  return { sb, user, memberships, house, houseEditor, mfa, org, membership, canAdmin: isPartnerAdmin(membership), orgs };
 });
 
 /** Partner Desk pages: 404 while the flag is off; sign-in when needed; a quiet
@@ -54,6 +66,7 @@ export async function requireDesk(returnTo: string): Promise<DeskContext & { org
   if (!PARTNER_DESK) notFound();
   const desk = await loadDesk();
   if (!desk) redirect(`/partner/login?next=${encodeURIComponent(returnTo)}`);
+  if (desk.mfa === "verify" || desk.mfa === "enroll") redirect(`/partner/security?next=${encodeURIComponent(returnTo)}`);
   if (!desk.org) redirect("/partner/no-access");
   return desk as DeskContext & { org: OrgSummary };
 }
@@ -63,6 +76,7 @@ export async function requireHouse(returnTo: string): Promise<DeskContext> {
   if (!PARTNER_DESK) notFound();
   const desk = await loadDesk();
   if (!desk) redirect(`/partner/login?next=${encodeURIComponent(returnTo)}`);
+  if (desk.mfa === "verify" || desk.mfa === "enroll") redirect(`/partner/security?next=${encodeURIComponent(returnTo)}`);
   if (!desk.houseEditor) notFound();
   return desk;
 }
@@ -83,6 +97,7 @@ export function withMember(handler: Handler, opts: { house?: boolean } = {}) {
     try {
       const desk = await loadDesk();
       if (!desk) return error("sign_in_required", "Sign in to continue", requestId);
+      if (desk.mfa === "verify" || desk.mfa === "enroll") return error("forbidden", "Enter the code from your authenticator app first (Partner Desk, Security)", requestId);
       if (opts.house && !desk.houseEditor) return error("forbidden", "James Wild & Co editors only", requestId);
       const params = (await route?.params) ?? {};
       return await handler({ req, desk, requestId, params });

@@ -1,6 +1,7 @@
 import "server-only";
 import { supabaseAdmin } from "../supabase/admin";
 import { buildPlan, type AirtableRecord, type Base, type Plan } from "./airtable-map";
+import { PARTNER_BRANDS_TABLE, describeCommissionSync, mapPartnerBrands, type CommissionSyncAnswer } from "../../platform/commission-sync";
 
 // Airtable commercial base → Supabase (spec §6: scheduled read, validation,
 // approval gate, upsert, conflict detection, error log). Runs from
@@ -108,6 +109,21 @@ export async function runSync(): Promise<SyncResult> {
     if (present.length) retire = retire.not("airtable_record_id", "in", `(${present.map((k) => `"${k}"`).join(",")})`);
     const { error: re } = await retire;
     if (re) plan.warnings.push(`retiring deleted cards: ${re.message}`);
+
+    // Commission (D-31): Partner Brands is the one place it is typed; the desk keeps a synced copy.
+    // A problem here never stops the rates; it is logged on its own line.
+    try {
+      const brands = await fetchTable(baseId, token, PARTNER_BRANDS_TABLE);
+      const { data, error } = await sb.rpc("sync_commission_terms", { p_rows: mapPartnerBrands(brands) });
+      if (error) throw error;
+      const answer = (data ?? {}) as CommissionSyncAnswer;
+      if (answer.unmatched?.length) plan.warnings.push(`commission not synced: ${answer.unmatched.join("; ")}`);
+      await logToAirtable(baseId, token, "Commission sync", answer.unmatched?.length || answer.orphaned?.length ? "Partial" : "OK", describeCommissionSync(answer));
+    } catch (e) {
+      const message = e instanceof Error ? e.message : String(e);
+      plan.warnings.push(`commission sync failed: ${message}`);
+      await logToAirtable(baseId, token, "Commission sync failed", "Refused", message);
+    }
 
     const status = plan.refused.length ? "partial" : "ok";
     await sb.rpc("log_rate_sync", { p_status: status, p_cards: applied, p_rows: rows, p_errors: plan.refused });

@@ -1,0 +1,15 @@
+/* The portal look, B "House Ledger" (James, 2 Nov 2026): every dashboard (Partner Desk now; Advisor
+   Desk, Traveler Journey and the house workspace later) sits on the house's warm neutrals under the
+   site header: stone ground, white cards, warm hairlines, graphite type and buttons, House Crimson for
+   the house's marks and the one accent. Values mirror lib/palette.ts HOUSE_LEDGER. SCOPED: the site
+   header stays outside this wrapper, so "Plan with James" keeps the Deep Sea action. */
+.portal {
+  --jw-action: #2E2B28;        /* HOUSE_LEDGER graphite: the desk's buttons */
+  --jw-action-deep: #1A1816;   /* graphite-deep: hover */
+  --jw-rule-fine: #DCD7D0;     /* hairline */
+  --jw-rule: #CFC8BF;          /* keyline */
+  --jw-band-rgb: 244 242 239;  /* stone, so any band or paper-card panel matches the ground */
+  --jw-band-alt-rgb: 244 242 239;
+  background: #F4F2EF;         /* stone ground */
+  color: #2E2B28;
+}

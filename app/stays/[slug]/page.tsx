@@ -32,7 +32,8 @@ import VerdictCard, { verdictSchema } from "@/components/record/VerdictCard";
 import { HERO_MARK, SCRIPT, stayVerdict } from "@/lib/content/verdicts";
 import { markOn, yearOf } from "@/lib/content/hero-marks";
 import { houseNote } from "@/lib/ledger/house-notes";
-import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import LiveHostPanel from "@/components/record/LiveHostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
@@ -329,11 +330,11 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
             {s.engine && !stayPage && <LiveRatesBand property={s.engine} name={s.name} />}
             {!s.engine && !stayPage && <RateCardSection pageKey={`stay:${s.slug}`} name={s.name} photo={s.hero as string} hostHref={hostEarly ? "#host" : undefined} />}
           </>}
-          {hostEarly && priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
+          {hostEarly && priced && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} />}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
           {PHOTO_CREDIT[s.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {PHOTO_CREDIT[s.slug]}.</p>}
           {!priced && !stayPage && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow={L.rooms} title={L.roomsTitle} icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
-          {hostEarly && !priced && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
+          {hostEarly && !priced && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} />}
           {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
           {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
           {/* 3D terrain (allow-listed page, components/maps/terrain/flag.ts): the stay's own pin over the canyon country, below its map. */}
@@ -421,7 +422,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </>}
           {ef && <ContinueTheJourney pathways={(pw ?? efPw) ? [(pw ?? efPw)!.primary, ...(pw ?? efPw)!.secondary] : []} hrefFor={(p) => pathwayHref(p.key)} journeys={[...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, line: `${s.country ?? region.name} and its neighbours, in the Ledger.`, href: `/destinations/${region.slug}`, eyebrow: "Destinations" }] : [])]} compassHref="/compass" hostHref={host.state !== "off" ? "#host" : null} />}
           <TalkToUs name={s.name} planHref={planHref} />
-          {host.state !== "off" && !hostEarly && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} /></div>}
+          {host.state !== "off" && !hostEarly && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} />}
           <PlanBand place={s.name} compassHref="/compass" where={{ ledgerId: s.ledgerId }} />
         </div>
         {hostEarly && <CallingCard who={HOST_KIND[s.category === "lodge" ? "lodge" : "stay"].who} seats={host.host?.seats} />}

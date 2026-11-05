@@ -21,7 +21,8 @@ import { HERO_MARK, SCRIPT, verdictFor } from "@/lib/content/verdicts";
 import { markOn, yearOf } from "@/lib/content/hero-marks";
 import { houseNote } from "@/lib/ledger/house-notes";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
-import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import LiveHostPanel from "@/components/record/LiveHostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
@@ -115,7 +116,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           )}
           <RateCardSection pageKey={`camp:${r.slug}/${c.slug}`} name={c.name} photo={c.hero as string} hostHref={host.state === "available" ? "#host" : undefined} />
           <OfferPanel offers={offersFor(r.slug)} volume="safaris" title={`Offers at ${r.name}`} />
-          {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
+          {host.state === "available" && host.host && <LiveHostPanel pageKey={`camp:${r.slug}/${c.slug}`} initial={host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} />}
           {images.length > 2 && <GalleryMosaic images={images} title={c.name} />}
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={c.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.name}, ${r.area}`} rows={[["Reserve", `${r.name} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} mark={<Roundel volume="safaris" text={roundelText(c.name, r.stay.coords, VOLUME_STYLES.safaris.roman)} entry={entryNo(r.stay.ledgerId) ? `ENTRY ${entryNo(r.stay.ledgerId)}` : undefined} size={120} />} />}
@@ -124,7 +125,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           <FaqBlock faqs={faqs} title={`${c.name}, Answered Straight`} schema={false} /> {/* generated from Ledger facts, not AEO-approved Q&A (D15) */}
           {verdict && <VerdictCard k={`camp:${r.slug}/${c.slug}`} name={c.name} v={verdict} stamp={entryNo(r.stay.ledgerId) ? <InkStamp volume="safaris" no={entryNo(r.stay.ledgerId)!} size={170} /> : undefined} />}
           <TalkToUs name={c.name} planHref={planHref} />
-          {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} /></div>}
+          {host.state !== "off" && !(host.state === "available" && host.host) && <LiveHostPanel pageKey={`camp:${r.slug}/${c.slug}`} initial={host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} />}
           <div id="plan" className=""><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} where={{ ledgerId: c.ledgerId, countrySlug: r.stay.countrySlug, volume: "safaris" }} /></div>
         </div>
         {host.state === "available" && host.host && <CallingCard who={HOST_KIND[c.kind === "residence" ? "residence" : "camp"].who} seats={host.host.seats} />}

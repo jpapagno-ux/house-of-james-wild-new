@@ -204,7 +204,7 @@ where not exists (select 1 from public.content_requests cr where cr.property_id 
 
 -- ===== placeholder contacts (to verify; no real people)
 insert into public.contacts (organization_id, first_name, title, roles, status, notes)
-select o.id, 'Reservations desk', 'Reservations', array['reservations'], 'to_verify', 'Placeholder from the Stage 1 seed. Replace with the real reservations contact.'
+select o.id, 'Reservations desk', 'Reservations', array['reservations'], 'to_verify', 'Placeholder. Please replace with your real reservations contact.'
 from public.organizations o
 where o.slug in ('kayumanis', 'more-family-collection')
   and not exists (select 1 from public.contacts c where c.organization_id = o.id and c.first_name = 'Reservations desk');

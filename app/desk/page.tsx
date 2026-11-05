@@ -7,7 +7,10 @@ import { FLAGS } from "@/lib/booking-live/flags";
 export default function DeskIndex() {
   const doors = [
     ...(FLAGS.quotes ? [{ href: "/desk/bookings", title: "Bookings", line: "Requests to reserve, holds, bookings and payments." }] : []),
-    ...(PARTNER_DESK ? [{ href: "/desk/review", title: "Partner review", line: "Submissions and proposed changes from partners." }] : []),
+    ...(PARTNER_DESK ? [
+      { href: "/desk/review", title: "Partner review", line: "Submissions and proposed changes from partners." },
+      { href: "/desk/commission", title: "Price and commission check", line: "Price a stay and see the commission, the advisor's share and the house's." },
+    ] : []),
   ];
   if (!doors.length) notFound();
   return (

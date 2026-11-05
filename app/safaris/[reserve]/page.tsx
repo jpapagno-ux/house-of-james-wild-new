@@ -20,7 +20,8 @@ import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Fra
 import { Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
 import WhyFilm from "@/components/record/WhyFilm";
-import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import LiveHostPanel from "@/components/record/LiveHostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import { heroSlides } from "@/lib/content/hero-sets";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
@@ -149,7 +150,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           {r.slug === "tswalu-reserve" && <TswaluSections />}
           <RateCardSection pageKey={`reserve:${r.slug}`} name={r.name} photo={r.stay.hero as string} />
           <OfferPanel offers={offersFor(r.slug)} volume="safaris" title={`Offers at ${r.name}`} />
-          {host.state === "available" && host.host && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
+          {host.state === "available" && host.host && <LiveHostPanel pageKey={`reserve:${r.slug}`} initial={host} stayName={r.name} kind="reserve" />}
           {images.length > 2 && <GalleryMosaic images={images} title={r.name} />}
           {RESERVE_PHOTO_CREDIT[r.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {RESERVE_PHOTO_CREDIT[r.slug]}.</p>}
           {r.stay.coords && <LocationBlock chart={CHART_SOUTH_AFRICA} name={r.name} pin={r.stay.coords} others={RESERVES.filter((x) => x.slug !== r.slug && x.stay.coords).map((x) => x.stay.coords!)} heading={`${r.area}, ${r.stay.country ?? "South Africa"}`} rows={[["Reserve", `${r.area} · ${r.province}`], ...(r.stay.airport ? [["Airport", r.stay.airport] as [string, string]] : []), ...(r.stay.bestMonths ? [["Best months", r.stay.bestMonths] as [string, string]] : [])]} note={r.stay.airportDirections ?? undefined} />}
@@ -157,7 +158,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
           {IGGI_ON && <IggiPanel ctx={{ entityType: "reserve", entitySlug: r.slug, countrySlug: r.stay.countrySlug, regionSlug: r.stay.regionSlug, ledgerId: r.rsv, sourcePage: path, volume: "safaris" }} heading={`Ask Iggi about ${r.name}`} />}
           <FaqBlock faqs={faqs} title={`${r.name}, Answered Straight`} schema={false} /> {/* generated from Ledger facts, not AEO-approved Q&A (D15) */}
           <TalkToUs name={r.name} planHref={planHref} />
-          {host.state !== "off" && !(host.state === "available" && host.host) && <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={r.name} kind="reserve" /></div>}
+          {host.state !== "off" && !(host.state === "available" && host.host) && <LiveHostPanel pageKey={`reserve:${r.slug}`} initial={host} stayName={r.name} kind="reserve" />}
           <div id="plan" className=""><PlanBand place={r.name} compassHref={countryPath ?? "/safaris"} where={{ countrySlug: r.stay.countrySlug, volume: "safaris" }} /></div>
         </div>
         {host.state === "available" && host.host && <CallingCard who={HOST_KIND["reserve"].who} seats={host.host.seats} />}

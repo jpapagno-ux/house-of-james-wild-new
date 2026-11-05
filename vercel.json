@@ -6,8 +6,16 @@
   "outputDirectory": ".next",
   "crons": [
     {
+      "path": "/api/cron/document-reminders",
+      "schedule": "17 12 * * *"
+    },
+    {
       "path": "/api/v1/internal/reminders/balance-due",
       "schedule": "0 13 * * *"
+    },
+    {
+      "path": "/api/cron/partner-mirror",
+      "schedule": "41 10 * * *"
     }
   ]
 }

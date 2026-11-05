@@ -2,7 +2,7 @@
   "name": "house-of-james-wild",
   "version": "0.1.0",
   "private": true,
-  "description": "House of James Wild & Co \u2014 jameswildco.com. Home of Wild Earth Stays.",
+  "description": "House of James Wild & Co — jameswildco.com. Home of Wild Earth Stays.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -28,6 +28,7 @@
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.118.0",
     "framer-motion": "^11.18.2",
+    "jose": "5.9.6",
     "lucide-react": "^0.468.0",
     "maplibre-gl": "6.16.0",
     "minisearch": "^7.1.1",

@@ -27,7 +27,7 @@ function useSubmit() {
   return { busy, err, done, run, setErr };
 }
 const Msg = ({ err, done }: { err: { message: string } | null; done: string | null }) =>
-  err ? <p role="alert" className="text-[14px] ledger-crimson">{err.message}</p> : done ? <p role="status" className="text-[14px] text-forest">{done}</p> : null;
+  err ? <p role="alert" className="text-[14px] ledger-crimson">{err.message}</p> : done ? <p role="status" className="text-[14px] text-[#11705A]">{done}</p> : null;
 
 // ===== Contacts
 export type ContactDraft = {
@@ -121,7 +121,7 @@ export function ContactCardActions({ contact, entities, canRemove = true }: { co
 export function AddContact({ entities }: { entities: { id: string; name: string }[] }) {
   const [open, setOpen] = useState(false);
   return open
-    ? <div className="bg-paper-card border ledger-border p-5"><p className="ledger-display text-[1.3rem] mb-4">New contact</p><ContactEditor initial={blankContact} entities={entities} onClose={() => setOpen(false)} /></div>
+    ? <div className="bg-white border ledger-border p-5"><p className="ledger-display text-[1.3rem] mb-4">New contact</p><ContactEditor initial={blankContact} entities={entities} onClose={() => setOpen(false)} /></div>
     : <button type="button" onClick={() => setOpen(true)} className="ledger-btn">Add a contact</button>;
 }
 
@@ -318,7 +318,9 @@ export function DecideRevision({ id, proposed }: { id: string; proposed: string 
       </div>
       {mode && (
         <div className="grid gap-3 border-l-2 ledger-crimson-border pl-4">
-          {mode === "edit_approve" && <label className={lab}>Value to publish<input value={value} onChange={(e) => setValue(e.target.value)} className={input} /></label>}
+          {mode === "edit_approve" && <label className={lab}>Value to publish{proposed.length > 80 || proposed.includes("\n")
+            ? <textarea rows={Math.min(14, Math.max(4, value.split("\n").length + 1))} value={value} onChange={(e) => setValue(e.target.value)} className={input} />
+            : <input value={value} onChange={(e) => setValue(e.target.value)} className={input} />}</label>}
           <label className={lab}>{mode === "edit_approve" ? "Note to the partner (optional)" : "Note to the partner"}<textarea rows={2} value={note} onChange={(e) => setNote(e.target.value)} className={input} /></label>
           <div className="flex gap-3"><button type="button" disabled={busy} onClick={() => go(mode)} className="ledger-btn ledger-btn--solid disabled:opacity-50">Confirm</button><button type="button" onClick={() => setMode("")} className="ledger-btn-ghost uppercase">Cancel</button></div>
         </div>

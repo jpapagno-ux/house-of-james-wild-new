@@ -3,7 +3,8 @@ import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
-import HostPanel, { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import { KIND as HOST_KIND } from "@/components/record/HostPanel";
+import LiveHostPanel from "@/components/record/LiveHostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import { Overview, RecordHero, type Img } from "@/components/record/Sections";
 import { RecordActionBar } from "@/components/record/Frame";
@@ -81,7 +82,7 @@ export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }
           <ShipItinerary ship={ship.name} {...ship.itinerary} />
           {itineraryAfter}
           {body}
-          <div className="mt-16 md:mt-24 border-t ledger-rule pt-10"><HostPanel state={host.state} host={host.host} stayName={ship.host.name} kind="vessel" /></div>
+          <LiveHostPanel pageKey={ship.host.key} initial={host} stayName={ship.host.name} kind="vessel" />
           {after}
           <FaqBlock faqs={ship.faqs.map(([q, a]) => ({ q, a }))} title={ship.faqTitle} />
           {ef?.suits}

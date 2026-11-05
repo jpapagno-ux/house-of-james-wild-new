@@ -1,7 +1,7 @@
 import { withTraveler, ok, error, jsonBody, dbError } from "@/lib/booking-live/api";
 import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
-import { isAdvisor } from "@/lib/booking-live/ops";
+import { isHouseOps } from "@/lib/booking-live/ops";
 import { parseBooking } from "@/lib/booking-live/bookings";
 import { onBookingRecorded } from "@/lib/booking-live/notify";
 import { originOf } from "@/lib/booking-live/notify/send";
@@ -19,7 +19,7 @@ import { paymentsEnabled } from "@/lib/booking-live/payments/gateway";
 export const dynamic = "force-dynamic";
 
 export const POST = withTraveler("quotes", async ({ req, sb, user, requestId }) => {
-  if (!(await isAdvisor(sb, user.id))) return error("forbidden", "Advisors only", requestId);
+  if (!(await isHouseOps(sb, user.id))) return error("forbidden", "House operations only, signed in with the authenticator code", requestId);
   const admin = supabaseAdmin();
   if (!admin) return error("server_error", "Not configured (server key missing)", requestId);
   const { data: me } = await admin.from("profiles").select("first_name, last_name").eq("id", user.id).maybeSingle();
@@ -41,6 +41,7 @@ export const POST = withTraveler("quotes", async ({ req, sb, user, requestId }) 
       arrival_date: q.arrival_date, departure_date: q.departure_date, adults: q.adults, children: q.children,
       currency: q.currency, grand_total_minor: q.grand_total_minor, deposit_due_minor: q.deposit_due_minor, balance_due_date: q.balance_due_date,
       status: "confirmed", traveler_note: parsed.value.travelerNote ?? null, advisor_user_id: user.id, advisor_name: advisorName,
+      selling_advisor_id: q.selling_advisor_id ?? null, // the advisor who sold the quote carries over to the booking (Advisor Desk step 1)
     }).select("id, public_reference").single();
     if (e) return dbError(e, requestId);
     await admin.from("quotes").update({ status: "converted" }).eq("id", q.id);

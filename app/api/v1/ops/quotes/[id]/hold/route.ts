@@ -1,7 +1,7 @@
 import { withTraveler, ok, error, jsonBody } from "@/lib/booking-live/api";
 import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
-import { isAdvisor } from "@/lib/booking-live/ops";
+import { isHouseOps } from "@/lib/booking-live/ops";
 import { onHold } from "@/lib/booking-live/notify";
 import { originOf } from "@/lib/booking-live/notify/send";
 
@@ -15,7 +15,7 @@ const MAX_HOLD_DAYS = 30;
 
 export const POST = withTraveler("quotes", async ({ req, sb, user, params, requestId }) => {
   if (!isUuid(params.id)) return error("not_found", "Not found", requestId);
-  if (!(await isAdvisor(sb, user.id))) return error("forbidden", "Advisors only", requestId);
+  if (!(await isHouseOps(sb, user.id))) return error("forbidden", "House operations only, signed in with the authenticator code", requestId);
   const body = (await jsonBody(req)) as { heldUntil?: unknown; note?: unknown } | undefined;
   const until = typeof body?.heldUntil === "string" ? new Date(body.heldUntil) : null;
   if (!until || Number.isNaN(until.getTime())) return error("invalid_input", "heldUntil must be a date-time", requestId);

@@ -1,7 +1,7 @@
 import { withTraveler, ok, error, jsonBody } from "@/lib/booking-live/api";
 import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
-import { isAdvisor } from "@/lib/booking-live/ops";
+import { isHouseOps } from "@/lib/booking-live/ops";
 import { gateway } from "@/lib/booking-live/payments/gateway";
 
 // POST /api/v1/ops/payments/:id/refund { amountMinor?, note? }
@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 
 export const POST = withTraveler("quotes", async ({ req, sb, user, params, requestId }) => {
   if (!isUuid(params.id)) return error("not_found", "Not found", requestId);
-  if (!(await isAdvisor(sb, user.id))) return error("forbidden", "Advisors only", requestId);
+  if (!(await isHouseOps(sb, user.id))) return error("forbidden", "House operations only, signed in with the authenticator code", requestId);
   const admin = supabaseAdmin();
   if (!admin) return error("server_error", "Not configured (server key missing)", requestId);
   const body = (await jsonBody(req)) as { amountMinor?: unknown; note?: unknown } | undefined;

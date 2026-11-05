@@ -25,7 +25,7 @@ export default async function DeskPage() {
   const bs = ((bookings ?? []) as unknown as B[]).map((b) => ({ ...b, traveler: person.get(b.traveler_user_id) ?? null, payments: (pays ?? []).filter((p) => p.booking_id === b.id) }));
   return (
     <section>
-      <p className="ledger-eyebrow ledger-crimson">Advisor Desk</p>
+      <p className="ledger-eyebrow ledger-crimson">House bookings</p>
       <h1 className="ledger-display text-[2rem] md:text-[2.6rem] leading-[1.1]">Requests &amp; Bookings</h1>
       <p className="mt-3 text-[16px] ledger-muted max-w-2xl">Every price here is the traveler&rsquo;s stored quote; nothing is re-priced. Confirm only once the property has confirmed the room.</p>
       <DeskQueue quotes={qs.filter((q) => ["waiting", "held", "confirmed"].includes(q.state))} bookings={bs} />

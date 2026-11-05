@@ -1,6 +1,7 @@
 import { withTraveler, ok, error, jsonBody } from "@/lib/booking-live/api";
 import { isUuid } from "@/lib/booking-live/validate";
 import { supabaseAdmin } from "@/lib/booking-live/supabase/admin";
+import { isHouseOps } from "@/lib/booking-live/ops";
 import { onDecision } from "@/lib/booking-live/notify";
 import { originOf } from "@/lib/booking-live/notify/send";
 
@@ -9,14 +10,13 @@ import { originOf } from "@/lib/booking-live/notify/send";
 // held quote may be approved or declined. Approving
 // records that the house confirmed price AND availability with the property
 // (availability → confirmed_by_property). Prices stay immutable.
-// Called from the Base44 Advisor Desk through the server, never from a browser
+// Called from House bookings (/desk/bookings) through the server, never from a browser
 // holding broad credentials (spec §8).
 export const dynamic = "force-dynamic";
 
 export const POST = withTraveler("quotes", async ({ req, sb, user, params, requestId }) => {
   if (!isUuid(params.id)) return error("not_found", "Not found", requestId);
-  const { data: roles } = await sb.from("organization_memberships").select("role, status").eq("user_id", user.id).eq("status", "active");
-  if (!roles?.some((r) => r.role === "advisor" || r.role === "admin")) return error("forbidden", "Advisors only", requestId);
+  if (!(await isHouseOps(sb, user.id))) return error("forbidden", "House operations only, signed in with the authenticator code", requestId);
 
   const body = (await jsonBody(req)) as { decision?: unknown; note?: unknown; availability?: unknown } | undefined;
   const decision = body?.decision === "approved" || body?.decision === "declined" ? body.decision : null;

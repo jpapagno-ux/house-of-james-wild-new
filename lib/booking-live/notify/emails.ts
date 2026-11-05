@@ -29,7 +29,7 @@ export function requestReceived(o: { first: string | null; reference: string; st
 export function requestForHouse(o: { reference: string; travelerName: string; travelerEmail: string | null; stay: Stay; total: Money; deposit: Money; deskUrl: string }): Mail {
   const subject = `Request ${o.reference}: ${o.travelerName} · ${where(o.stay)}`;
   const body = [`${o.travelerName}${o.travelerEmail ? ` (${o.travelerEmail})` : ""} asks to reserve ${lines(o.stay).join(" · ")}.`, `Stored quote ${money(o.total)} · deposit ${money(o.deposit)}. Confirm the room with the property, then Hold / Confirm / Decline on the desk.`];
-  return { subject, text: [...body, "", o.deskUrl].join("\n"), html: wrap("New request", subject, body.map(esc), { label: "Open the desk", url: o.deskUrl }, "Booking Live · Advisor Desk") };
+  return { subject, text: [...body, "", o.deskUrl].join("\n"), html: wrap("New request", subject, body.map(esc), { label: "Open the desk", url: o.deskUrl }, "Booking Live · House bookings") };
 }
 
 /** To the traveler: room on hold until a date. */
@@ -72,5 +72,5 @@ export function paymentReceived(o: { first: string | null; reference: string; re
 export function paymentForHouse(o: { reference: string; receipt: string; travelerName: string; stay: Stay; kind: string; amount: Money; provider: string; outstanding: Money; deskUrl: string }): Mail {
   const subject = `${o.kind} received ${money(o.amount)} · ${o.reference} · ${o.travelerName} · ${o.stay.propertyName}`;
   const body = [`${o.travelerName} paid ${money(o.amount)} (${o.provider}, receipt ${o.receipt}) on ${where(o.stay)}, ${nice(o.stay.arrival)} → ${nice(o.stay.departure)}.`, Number(o.outstanding.minor) <= 0 ? "The booking is paid in full." : `${money(o.outstanding)} remains.`];
-  return { subject, text: [...body, "", o.deskUrl].join("\n"), html: wrap("Payment", subject, body.map(esc), { label: "Open the desk", url: o.deskUrl }, "Booking Live · Advisor Desk") };
+  return { subject, text: [...body, "", o.deskUrl].join("\n"), html: wrap("Payment", subject, body.map(esc), { label: "Open the desk", url: o.deskUrl }, "Booking Live · House bookings") };
 }

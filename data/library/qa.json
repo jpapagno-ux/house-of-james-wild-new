@@ -2815,7 +2815,7 @@
   {
    "stay_id": "6aec5a083ba7062701e1ae16",
    "slug": "laucala",
-   "name": "Laucala Island, Fiji",
+   "name": "Laucala",
    "country": "Fiji",
    "missing": [
     "coordinates"
@@ -5091,7 +5091,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9e7",
    "slug": "turtle-island",
-   "name": "Turtle Island, Fiji",
+   "name": "Turtle Island",
    "country": "Fiji",
    "missing": [
     "coordinates"

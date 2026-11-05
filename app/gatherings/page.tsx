@@ -11,12 +11,17 @@ import { VOLUMES } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 import { volumeEyebrow } from "@/lib/volumes";
+import { STAY_PAGES } from "@/lib/content/stays";
 
 // /gatherings: Volume III hub shell. Family residences for the generations
 // who travel together.
 const PATH = "/gatherings";
 const V = VOLUMES.find((v) => v.href === PATH)!;
 export const metadata = buildMetadata({ title: "Family Residences for Multigenerational Travel", description: "Private houses, estates and resort residences for families and celebrations that travel together, vetted by James Wild & Co and filed in the Ledger.", path: PATH, noindex: false /* approved by James, 28 Oct 2026 */ });
+
+// Residences filed in Gatherings in the Library (house_volumes includes "gatherings"), with a hero to show.
+// Whole islands and big houses: Laucala, Turtle Island, Royal Davui, Namale, Six Senses Fiji's residences (Fiji, 5 Nov 2026).
+const RESIDENCES = STAY_PAGES.filter((s) => s.volumes?.includes("gatherings") && s.hero && s.slug !== "leeu-house");
 
 export default function GatheringsHub() {
   const leeu = HOME.shelf.entries.find((s) => s.slug === "leeu-house")!;
@@ -35,6 +40,13 @@ export default function GatheringsHub() {
             </div>
           </div>
         </HubSection>
+        {RESIDENCES.length > 0 && (
+          <HubSection eyebrow="Filed in Gatherings" title="Islands and Houses for the Whole Family" id="residences-h">
+            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {RESIDENCES.map((s) => <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? "Being filed"} line={s.tagline ?? (s.country ?? "")} image={{ url: s.hero!, alt: `${s.name}, ${s.country ?? ""}` }} href={recordHref("stay", s.slug)} eyebrow={s.country ?? undefined} volume="gatherings" /></li>)}
+            </ul>
+          </HubSection>
+        )}
         <AdvisorScroll volume="gatherings" title="Who books the whole house" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Gatherings" })} />

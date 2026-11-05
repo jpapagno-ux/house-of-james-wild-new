@@ -29,7 +29,7 @@ export function entityHealth(f: EntityFacts): { score: number; checks: HealthChe
   checks.push(f.contacts.active > 0
     ? { key: "contacts", label: "Contacts current", state: "ok", detail: `${f.contacts.active} active contact${f.contacts.active === 1 ? "" : "s"}` }
     : f.contacts.toVerify > 0
-      ? { key: "contacts", label: "Contacts current", state: "attention", detail: "Placeholder contact still to replace" }
+      ? { key: "contacts", label: "Contacts current", state: "attention", detail: `${f.contacts.toVerify} contact${f.contacts.toVerify === 1 ? "" : "s"} on file, waiting for your confirmation` }
       : { key: "contacts", label: "Contacts current", state: "missing", detail: "No contacts on file" });
 
   // Property information

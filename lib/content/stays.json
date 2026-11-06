@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-05",
+ "exportedOn": "2026-11-06",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -24008,6 +24008,132 @@
    "arrivalHubIds": [
     "6ae69759f4294bbc9dc9b259"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "kokomo-private-island",
+   "name": "Kokomo Private Island",
+   "ledgerId": "STY-2026-000638",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A private island on the Great Astrolabe Reef, with five hilltop residences and twenty-one beachfront villas.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/kokomo-private-island/g18"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-05",
+   "coords": null,
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "About 45 to 60 minutes from Nadi on Kokomo's own Twin Otter seaplane or AS350 helicopter, shared or private. For a same day transfer, land in Nadi before 3 pm; leave Nadi after midday on the way home.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Sunset Residence (six bedrooms, 1,523 sq m, sleeps 12). Astrolabe Residence (five bedrooms, 1,265 sq m, sleeps 10). Dravuni Residence (five bedrooms, 1,038 sq m, sleeps 10). Ocean Residence (four bedrooms, 1,014 sq m, sleeps 8). Namara Residence (three bedrooms, 437 sq m, sleeps 6). One Bedroom Sunrise Villa and One Bedroom Sunset Villa (280 sq m, sleeps 2). Two Bedroom Sunrise Villa (371 sq m, sleeps 4). Three Bedroom Sunset Villa (439 sq m) and Three Bedroom Sunrise Villa (472 sq m), sleeps 6. Three Bedroom Family Sunrise Villa (411 sq m) and Three Bedroom Family Sunset Villa (437 sq m), sleeps 6."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Diving the Great Astrolabe Reef, 20 minutes from shore",
+     "The manta cleaning station",
+     "Snorkelling, watersports and fishing",
+     "A private picnic on Namara Beach",
+     "Yaukuve Spa Sanctuary",
+     "Kava with the island's Fijian team",
+     "Kaji Club and Teens Club, 9 am to 9 pm"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Five hilltop residences, each with a butler, a nanny and a buggy. Twenty-one beachfront villas, each with an infinity pool and beach access. Breakfast, lunch and dinner included, in three restaurants or in your villa. A 5.5 acre island farm and a Dock to Dish seafood programme. Kokomo's own seaplane and helicopter from Nadi. More than 30 dive and snorkel sites on the Great Astrolabe and Solo reefs."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Kokomo sits on Yaukuve Island in Kadavu, beside the Great Astrolabe Reef, which runs for about 100 km. Five residences crown its hills and twenty-one villas line its two beaches, and Kokomo flies its own seaplane and helicopter from Nadi."
+   ],
+   "why": [
+    {
+     "title": "A family island on a great reef",
+     "body": "Kokomo is built for families who want space and a reef on the doorstep. The residences come with a butler, a nanny and a buggy; the villas open straight onto the sand; and the Kaji Club runs from nine in the morning to nine at night, so the adults can dive the Great Astrolabe Reef or simply do nothing."
+    },
+    {
+     "title": "The Sunset Residence",
+     "body": "On the island's western ridge, the six bedroom Sunset Residence is Kokomo's largest: two levels, 1,523 square metres, an infinity pool and the island's sunset view, for up to twelve guests."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN), then 45 to 60 minutes on Kokomo's own seaplane or helicopter, shared or private. Land in Nadi before 3 pm for a same day transfer.",
+    "signature_experiences": "Diving and snorkelling the Great Astrolabe Reef, the manta cleaning station, a private picnic on Namara Beach, Yaukuve Spa Sanctuary and three restaurants fed by the island farm.",
+    "who_its_for": "Families and multi-generational groups in the residences, and couples and young families in the beachfront villas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kokomo Private Island?",
+     "a": "On Yaukuve Island in the Kadavu group, south of Viti Levu, beside the Great Astrolabe Reef."
+    },
+    {
+     "q": "How do you get to Kokomo?",
+     "a": "From Nadi, Kokomo's own seaplane or helicopter takes about 45 to 60 minutes, on a shared or private transfer. Land in Nadi before 3 pm for a same day transfer."
+    },
+    {
+     "q": "How many villas and residences does Kokomo have?",
+     "a": "Twenty-one beachfront villas in seven types, from one to three bedrooms, and five hilltop residences of three to six bedrooms."
+    },
+    {
+     "q": "What is the largest residence?",
+     "a": "The Sunset Residence: six bedrooms over two levels, 1,523 square metres, with an infinity pool, for up to 12 guests."
+    },
+    {
+     "q": "Is Kokomo good for families?",
+     "a": "Yes. The Kaji Club and Teens Club run from 9 am to 9 pm, villas include nanny time for children under four, and every residence has its own nanny and butler."
+    },
+    {
+     "q": "What is included at Kokomo?",
+     "a": "Breakfast, lunch and dinner from the menus, in-villa dining, a non-alcoholic minibar, laundry, land activities and non-motorised watersports. Residences add return shared transfers, a butler, a nanny, a buggy and a private chef barbecue."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-05"
+    ],
+    "setting": "Islands and oceans",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-05"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

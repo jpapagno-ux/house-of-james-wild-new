@@ -406,6 +406,7 @@ export const STAY_SLUGS: string[] = [
   "kicheche-mara-north",
   "kinsterna-hotel",
   "kokoko-camp-by-asilia",
+  "kokomo-private-island",
   "kualoa-ranch",
   "kudadoo-private-island",
   "kura-boutique-resort",

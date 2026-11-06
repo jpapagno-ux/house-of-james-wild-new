@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-05",
+ "checkedOn": "2026-11-06",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -2559,6 +2559,16 @@
    "name": "Kokoko Camp by Asilia",
    "country": "Tanzania",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6aed42248ae5e5b6122054d3",
+   "slug": "kokomo-private-island",
+   "name": "Kokomo Private Island",
+   "country": "Fiji",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

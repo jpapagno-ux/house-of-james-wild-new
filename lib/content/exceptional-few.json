@@ -546,6 +546,68 @@
       "reviewStatus": "approved"
     },
     {
+      "id": "EF-016",
+      "stayId": "STY-2026-000638",
+      "staySlug": "kokomo-private-island",
+      "stayName": "Sunset Residence, Kokomo Private Island",
+      "collectionNumber": 16,
+      "heroLine": "Six bedrooms on Kokomo's western ridge, above the Great Astrolabe Reef.",
+      "whyItMadeTheCut": [
+        "Place. On the westerly ridge of Yaukuve Island in Kadavu, looking over the Great Astrolabe Reef, which runs for about 100 km.",
+        "Scale. Two levels and 1,523 square metres, six bedrooms each with its own bathroom, a vast deck and an infinity pool, for up to twelve guests.",
+        "Care. A dedicated butler and nanny, a residence buggy, a private chef barbecue, and the Kaji Club and Teens Club from nine in the morning to nine at night."
+      ],
+      "signals": [
+        {
+          "key": "place",
+          "line": "On Kokomo's westerly ridge, above the Great Astrolabe Reef."
+        },
+        {
+          "key": "privacy",
+          "line": "Six bedrooms over two levels, an infinity pool and deck, for up to twelve."
+        },
+        {
+          "key": "access",
+          "line": "About 45 to 60 minutes from Nadi on Kokomo's own seaplane or helicopter."
+        },
+        {
+          "key": "humanity",
+          "line": "A dedicated butler and nanny for the whole stay."
+        },
+        {
+          "key": "rarity",
+          "line": "Kokomo's largest residence, with the island's sunset view."
+        }
+      ],
+      "pathwaysOverride": [
+        "a-place-of-our-own",
+        "between-tides",
+        "the-art-of-stillness"
+      ],
+      "worthAnotherNight": "Seven nights. Enough for the children to own the Kaji Club, the divers to see the mantas, and everyone to watch the sun go down from the deck.",
+      "whoItSuits": [
+        "Families travelling across generations",
+        "Groups of up to twelve",
+        "Divers and snorkellers",
+        "Milestone celebrations"
+      ],
+      "whoItMayNotSuit": [
+        "Couples travelling alone (a beachfront villa suits better)",
+        "Travellers who want nightlife"
+      ],
+      "continueRefs": [
+        "stay:laucala",
+        "stay:six-senses-fiji",
+        "pathway:a-place-of-our-own"
+      ],
+      "paletteKey": "kokomo",
+      "designationStatus": "designated",
+      "selectionDate": "2026-11-05",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-05",
+      "reviewStatus": "approved"
+    },
+    {
       "id": "EF-017",
       "stayId": "STY-2026-000265",
       "staySlug": "six-senses-fiji",

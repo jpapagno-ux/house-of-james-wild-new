@@ -55,6 +55,18 @@ export async function requireAdvisor(returnTo: string): Promise<AdvisorContext> 
   if (!a) redirect("/advisor/no-access");
   if (a.advisor.status === "paused" || a.advisor.status === "left") redirect("/advisor/no-access");
   if (a.mfa !== "ok") redirect(`/partner/security?next=${encodeURIComponent(returnTo)}`);
-  if (a.advisor.status === "invited") redirect("/advisor/welcome");
+  if (a.advisor.status === "invited") redirect("/advisor/file");
+  return a;
+}
+
+/** The advisor's file (step 3): invited or active advisors, signed in with the code. */
+export async function requireAdvisorFile(returnTo: string): Promise<AdvisorContext> {
+  if (!ADVISOR_DESK) notFound();
+  const sb = await supabaseServer();
+  const { data: { user } } = await sb.auth.getUser();
+  if (!user) redirect(`/advisor/login?next=${encodeURIComponent(returnTo)}`);
+  const a = await loadAdvisor();
+  if (!a || (a.advisor.status !== "invited" && a.advisor.status !== "active")) redirect("/advisor/no-access");
+  if (a.mfa !== "ok") redirect(`/partner/security?next=${encodeURIComponent(returnTo)}`);
   return a;
 }

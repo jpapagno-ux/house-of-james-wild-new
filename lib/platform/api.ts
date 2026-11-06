@@ -19,6 +19,8 @@ export function rpcError(e: { code?: string; message?: string } | null, requestI
   if (e.code === "42501") return error("forbidden", msg || "You don't have access to that", requestId);
   if (e.code === "P0002") return error("not_found", msg || "Not found", requestId);
   if (e.code === "23514") return error("invalid_input", msg || "That isn't allowed", requestId);
-  if (e.code === "40001") return error("conflict", msg, requestId);
+  if (e.code === "40001" || e.code === "23505") return error("conflict", msg, requestId);
+  // Messages from our own functions (22023) are written for people: show them.
+  if (e.code === "22023") return NextResponse.json({ error: { code: "invalid_input", message: msg }, requestId }, { status: 400, headers: { ...HEADERS, "X-Request-Id": requestId } });
   return dbError(e, requestId);
 }

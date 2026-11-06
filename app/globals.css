@@ -454,6 +454,7 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-brando { --ef-sand: #8EB7CF; --ef-earth: #1A4A80; --ef-landscape: #EFF4F7; --ef-shadow: #2B3F55; --ef-accent: #D2E2EC; }
 
 .theme-ef-laucala { --ef-sand: #9CC7B4; --ef-earth: #2F6B57; --ef-landscape: #EEF4F0; --ef-shadow: #2E4A42; --ef-accent: #D3E6DC; }
+.theme-ef-kokomo { --ef-sand: #9FC9D6; --ef-earth: #1F5E73; --ef-landscape: #EEF5F7; --ef-shadow: #24414B; --ef-accent: #D2E7EE; }
 .ef-module { --jw-card: var(--ef-landscape); }
 .ef-eyebrow { color: var(--ef-earth); }
 .ef-rule { border-color: var(--ef-sand); }
@@ -483,6 +484,8 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark.theme-ef-brando .ef-day { --ef-surface: #EFF4F7; --ef-ink: #1E2833; --ef-muted: rgba(30,40,51,0.68); --ef-line: rgba(30,40,51,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2B3F55; --ef-earth: #1A4A80; --jw-card: #FFFFFF; --jw-accent: 26 74 128; --jw-accent-deep: 12 93 97; --jw-accent-hex: #1A4A80; --jw-accent-deep-hex: #0C5D61; }
 .theme-ef-dark.theme-ef-laucala { --ef-surface: #0F2620; --ef-ink: #EAF3EE; --ef-muted: rgba(234,243,238,0.74); --ef-line: rgba(234,243,238,0.2); --ef-sand: #9CC7B4; --ef-earth: #7FB59D; --ef-landscape: #15332B; --ef-shadow: rgba(234,243,238,0.6); --ef-accent: #9CC7B4; --jw-accent: 156 199 180; --jw-accent-deep: 127 181 157; --jw-accent-light: 211 230 220; --jw-accent-hex: #9CC7B4; --jw-accent-deep-hex: #7FB59D; --jw-card: #15332B; }
 .theme-ef-dark.theme-ef-laucala .ef-day { --ef-surface: #EEF4F0; --ef-ink: #1E2B27; --ef-muted: rgba(30,43,39,0.68); --ef-line: rgba(30,43,39,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2E4A42; --ef-earth: #2F6B57; --jw-card: #FFFFFF; --jw-accent: 47 107 87; --jw-accent-deep: 37 86 70; --jw-accent-hex: #2F6B57; --jw-accent-deep-hex: #255646; }
+.theme-ef-dark.theme-ef-kokomo { --ef-surface: #0E222A; --ef-ink: #EAF3F6; --ef-muted: rgba(234,243,246,0.74); --ef-line: rgba(234,243,246,0.2); --ef-sand: #9FC9D6; --ef-earth: #7DB6C8; --ef-landscape: #142F38; --ef-shadow: rgba(234,243,246,0.6); --ef-accent: #9FC9D6; --jw-accent: 159 201 214; --jw-accent-deep: 125 182 200; --jw-accent-light: 210 231 238; --jw-accent-hex: #9FC9D6; --jw-accent-deep-hex: #7DB6C8; --jw-card: #142F38; }
+.theme-ef-dark.theme-ef-kokomo .ef-day { --ef-surface: #EEF5F7; --ef-ink: #1C2A2F; --ef-muted: rgba(28,42,47,0.68); --ef-line: rgba(28,42,47,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #24414B; --ef-earth: #1F5E73; --jw-card: #FFFFFF; --jw-accent: 31 94 115; --jw-accent-deep: 24 75 92; --jw-accent-hex: #1F5E73; --jw-accent-deep-hex: #184B5C; }
 /* The ship section nav sits on the night surface of a designated vessel, so its links stay legible. */
 .theme-ef-dark [data-ship-nav] { background: color-mix(in srgb, var(--ef-surface) 94%, transparent); border-color: var(--ef-line); }
 .theme-ef-dark [data-ship-nav] .ledger-eyebrow { color: var(--ef-muted); }

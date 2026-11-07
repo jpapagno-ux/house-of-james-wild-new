@@ -96,7 +96,7 @@ import WhoItSuits from "@/components/exceptional-few/WhoItSuits";
 import WorthAnotherNight from "@/components/exceptional-few/WorthAnotherNight";
 import ContinueTheJourney from "@/components/exceptional-few/ContinueTheJourney";
 import AmbientFilm from "@/components/stay/AmbientFilm";
-import { STAY_FILMS } from "@/lib/content/stay-films";
+import { STAY_FILMS, type AmbientFilm as AmbientFilmT } from "@/lib/content/stay-films";
 import Signature from "@/components/record/Signature";
 import ComingBanner from "@/components/coming/ComingBanner";
 import { assembleStayPage } from "@/lib/stay-page/assemble";
@@ -255,7 +255,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
         {ef && efHero ? (
-          <DriftFrame a={efHero} ratio="21:9" priority motion="zoom">
+          <DriftFrame a={efHero} ratio="21:9" priority motion="zoom" film={STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : undefined}>
             <p className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; &middot; {collectionNo(ef.collectionNumber)}</p>
             <h1 className="ledger-display text-[2.9rem] md:text-[6.4rem] leading-[0.95] mt-3">{s.name}</h1>
             <p className="ledger-display italic text-xl md:text-3xl text-white/90 mt-3">{[place?.name, s.country].filter(Boolean).join(", ")}</p>
@@ -264,7 +264,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
         ) : stayPage ? <StayHero editorial={stayPage.editorial} slides={slides.map((x) => ({ url: x.url, alt: x.alt, source: "library" as const }))} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: { label: "Choose your stay", href: "#rates" } }} />} />
-        : <RecordHero image={images[0]} slides={slides} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={boat ? `${boat.name} · Voyage` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={tagline ?? undefined}
+        : <RecordHero image={images[0]} slides={slides} wideFilm={STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : undefined} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={boat ? `${boat.name} · Voyage` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: `Plan this ${noun}`, href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />}
         <RecordNav items={nav} cta={priced || stayPage ? (stayPage && !stayPage.commerce.liveEngineProperty ? "Choose your stay" : "Check live rates") : `Plan this ${noun}`} ctaHref={priced || stayPage ? "#rates" : planHref} />
@@ -286,7 +286,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               {status && <p className="mt-6 ledger-eyebrow">{status}</p>}
             </section>
           )}
-          {STAY_FILMS[s.slug] && <AmbientFilm film={STAY_FILMS[s.slug]} eyebrow={ef ? `The Exceptional Few\u2122 \u00b7 ${collectionNo(ef.collectionNumber)}` : s.name} line={tagline ?? undefined} />}
+          {STAY_FILMS[s.slug] && STAY_FILMS[s.slug].kind === "mp4" && !STAY_FILMS[s.slug].hero && <AmbientFilm film={STAY_FILMS[s.slug] as AmbientFilmT} eyebrow={ef ? `The Exceptional Few\u2122 \u00b7 ${collectionNo(ef.collectionNumber)}` : s.name} line={tagline ?? undefined} />}
           {ef && ef.whyItMadeTheCut.map((t, i) => { const a = efCuts[i]; return a ? (
             <DriftFrame key={i} a={a} ratio={i === 1 ? "16:10" : "3:2"} id={i === 0 ? "why" : undefined} motion={i === 1 ? "pan" : i === 2 ? "slow" : "zoom"} height="min-h-[78svh] md:min-h-[92svh]" className={i === 0 ? "" : "mt-1"}>
               {i === 0 ? <h2 className="ledger-eyebrow !text-white/80">Why it made the cut</h2> : <p className="ledger-eyebrow !text-white/80">{ `${String(i + 1).padStart(2, "0")} / ${String(ef.whyItMadeTheCut.length).padStart(2, "0")}`}</p>}

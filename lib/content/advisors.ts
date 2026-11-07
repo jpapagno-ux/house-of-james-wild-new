@@ -16,6 +16,8 @@
 import { SAMPLE_DESKS, samplePortrait } from "./advisor-samples";
 import { deskCounts, type AdvisorMark, type DeskProfile, type Volume } from "./advisor-desk";
 import libraryDna from "./advisors-library.json";
+import deskDna from "./advisors-desk-dna.json";
+import { overlayDna, type DeskDna } from "@/lib/platform/advisor-dna";
 import staysData from "./stays.json";
 import { rankAdvisors } from "@/lib/advisors/rank";
 
@@ -32,7 +34,13 @@ export type AdvisorDna = {
   confirmed: string | null; updated: string | null;
   marks: { ledgerId: string; mark: AdvisorMark; when: string | null; note: string | null }[];
 };
-const DNA_BY_SLUG = new Map((libraryDna as { advisors: (AdvisorDna & { slug: string; ledgerId: string })[] }).advisors.map((d) => [d.slug, d]));
+// 7 Nov 2026 (James: the desk is the one place DNA is kept): the Advisor DNA the house approved on the desk
+// (advisors-desk-dna.json, written at build by scripts/advisor-dna.mjs) is laid over the Library's copy,
+// advisor by advisor; an advisor the desk has not reached keeps the Library's copy, a paused one is closed.
+const DNA_BY_SLUG = new Map(
+  overlayDna((libraryDna as { advisors: (AdvisorDna & { slug: string; ledgerId: string })[] }).advisors, (deskDna as { advisors: DeskDna[] }).advisors)
+    .map(({ source: _source, ...d }) => [d.slug, d as AdvisorDna & { slug: string; ledgerId: string }]),
+);
 
 export type Advisor = {
   slug: string;

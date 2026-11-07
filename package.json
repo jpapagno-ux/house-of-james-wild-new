@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --no-warnings --test tests/*.test.ts",
-    "prebuild": "node scripts/check-palette.mjs",
+    "prebuild": "node scripts/check-palette.mjs && node scripts/advisor-dna.mjs",
     "check:palette": "node scripts/check-palette.mjs"
   },
   "engines": {

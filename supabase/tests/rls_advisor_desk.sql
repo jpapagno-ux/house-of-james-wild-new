@@ -8,7 +8,7 @@ do $$
 declare
   jw uuid := gen_random_uuid(); aa uuid := gen_random_uuid(); ab uuid := gen_random_uuid();
   t1 uuid := gen_random_uuid(); t2 uuid := gen_random_uuid(); lg uuid := gen_random_uuid();
-  o_jw uuid; o_ag uuid; p uuid; rt uuid; rp uuid;
+  o_jw uuid; o_ag uuid; p uuid; rt uuid; rp uuid; pd1 uuid; pd2 uuid; dna jsonb;
   adv_a uuid; adv_b uuid; q1 uuid; q2 uuid; b1 uuid; b2 uuid; f1 uuid; f2 uuid;
   n int; ok boolean;
   ai uuid := gen_random_uuid(); adv_i uuid; ag uuid; d1 uuid; d2 uuid; js jsonb;
@@ -187,6 +187,25 @@ begin
   r := r || jsonb_build_object('t', 'T19 their file shows what is done and what waits for the house', 'pass',
     (js ->> 'details')::boolean and (js ->> 'plan')::boolean and (js ->> 'agreement')::boolean and (js ->> 'tax_form')::boolean and not (js ->> 'tax_form_accepted')::boolean);
 
+  -- (D) part five: Advisor DNA, sent by the advisor
+  dna := '{"pathways":["PATH-04","PATH-02"],"volumes":["safaris"],"party_types":["family"],"countries":["botswana","kenya"],"languages":["English"],"specialties":["First safaris"],"availability":"open","match_note":"I plan first safaris for families.","marks":[{"ledgerId":"STY-2026-000101","mark":"Stayed","when":"2025"}]}';
+  begin perform public.submit_advisor_dna(jsonb_set(dna, '{pathways}', '["PATH-99"]')); ok := false; exception when others then ok := sqlerrm like '%Pathways%' or sqlerrm like '%pathways%'; end;
+  r := r || jsonb_build_object('t', 'D01 a Pathway not on the list is refused', 'pass', ok);
+  begin perform public.submit_advisor_dna(jsonb_set(dna, '{countries}', '[]')); ok := false; exception when others then ok := sqlerrm like '%country%'; end;
+  r := r || jsonb_build_object('t', 'D02 at least one country is needed', 'pass', ok);
+  begin perform public.submit_advisor_dna(jsonb_set(dna, '{marks}', '[{"ledgerId":"STY-2026-000101","mark":"Sent Guests"}]')); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'D03 an advisor cannot claim Sent Guests (bookings prove that)', 'pass', ok);
+  pd1 := public.submit_advisor_dna(dna);
+  js := public.my_advisor_file_state();
+  r := r || jsonb_build_object('t', 'D04 sent: part five done, waiting for the house', 'pass', (js ->> 'dna')::boolean and not (js ->> 'dna_approved')::boolean);
+  pd2 := public.submit_advisor_dna(jsonb_set(dna, '{countries}', '["botswana","kenya","tanzania"]'));
+  r := r || jsonb_build_object('t', 'D05 sending again replaces the one waiting', 'pass',
+    (select status from public.advisor_dna_proposals where id = pd1) = 'withdrawn' and (select count(*) from public.advisor_dna_proposals where advisor_id = adv_i and status = 'submitted') = 1);
+  begin perform public.decide_advisor_dna(pd2, 'approved'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'D06 an advisor cannot approve their own DNA', 'pass', ok);
+  begin insert into public.advisor_dna (advisor_id, confirmed_at) values (adv_i, now()); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'D07 nor write the published DNA directly', 'pass', ok);
+
   -- another advisor sees none of it
   perform set_config('request.jwt.claims', json_build_object('sub', aa, 'role', 'authenticated', 'aal', 'aal2')::text, true);
   select (select count(*) from public.advisor_details where advisor_id = adv_i) + (select count(*) from public.advisor_documents where advisor_id = adv_i)
@@ -200,6 +219,17 @@ begin
   begin perform public.decide_advisor_document(d2, 'returned', ''); ok := false; exception when others then ok := true; end;
   r := r || jsonb_build_object('t', 'T22 a returned document needs a reason', 'pass', ok);
   perform public.decide_advisor_document(d1, 'accepted'); perform public.decide_advisor_document(d2, 'accepted');
+  begin perform public.activate_advisor(adv_i); ok := false; exception when others then ok := sqlerrm like '%not complete%'; end;
+  r := r || jsonb_build_object('t', 'D08 activation also waits for approved DNA', 'pass', ok);
+  begin perform public.decide_advisor_dna(pd2, 'returned', ' '); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'D09 returned DNA needs a reason', 'pass', ok);
+  perform public.decide_advisor_dna(pd2, 'approved');
+  r := r || jsonb_build_object('t', 'D10 approved: the DNA is published from the proposal', 'pass',
+    (select countries from public.advisor_dna where advisor_id = adv_i) = array['botswana','kenya','tanzania'] and (select jsonb_array_length(marks) from public.advisor_dna where advisor_id = adv_i) = 1);
+  perform set_config('role', 'anon', true);
+  js := public.public_advisor_dna();
+  perform set_config('role', 'authenticated', true);
+  r := r || jsonb_build_object('t', 'D11 the website does not show an advisor before activation', 'pass', not exists (select 1 from jsonb_array_elements(js) e where e ->> 'slug' = 'adv-test-new'));
   begin perform public.activate_advisor(adv_i); ok := false; exception when others then ok := sqlerrm like '%draft%'; end;
   r := r || jsonb_build_object('t', 'T23 on the draft agreement, only house advisors can be activated', 'pass', ok);
   perform set_config('role', 'postgres', true);
@@ -207,6 +237,20 @@ begin
   perform set_config('role', 'authenticated', true);
   perform public.activate_advisor(adv_i);
   r := r || jsonb_build_object('t', 'T24 complete file: the house activates', 'pass', (select status from public.advisors where id = adv_i) = 'active');
+  perform set_config('role', 'anon', true);
+  js := public.public_advisor_dna();
+  perform set_config('role', 'authenticated', true);
+  r := r || jsonb_build_object('t', 'D12 once active, the website reads the approved DNA, public fields only', 'pass',
+    exists (select 1 from jsonb_array_elements(js) e where e ->> 'slug' = 'adv-test-new' and not (e ->> 'hidden')::boolean and e -> 'countries' ? 'tanzania' and e ->> 'matchNote' like 'I plan%' and not e ? 'legal_name'));
+  perform set_config('role', 'postgres', true);
+  update public.advisors set status = 'paused' where id = adv_i;
+  perform set_config('role', 'anon', true);
+  js := public.public_advisor_dna();
+  perform set_config('role', 'postgres', true);
+  update public.advisors set status = 'active' where id = adv_i;
+  perform set_config('role', 'authenticated', true);
+  r := r || jsonb_build_object('t', 'D13 a paused advisor is published as hidden, nothing else', 'pass',
+    exists (select 1 from jsonb_array_elements(js) e where e ->> 'slug' = 'adv-test-new' and (e ->> 'hidden')::boolean and not e ? 'countries'));
   perform public.set_advisor_plan(adv_i, 'tier_1', current_date, 24900, 'year', 'Monthly statement; paid within 15 days by ACH');
   perform set_config('role', 'postgres', true);
   select private.advisor_plan(adv_i) into js;

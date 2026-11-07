@@ -94,3 +94,34 @@ export function Activate({ id, ready }: { id: string; ready: boolean }) {
     </div>
   );
 }
+
+export function DecideDna({ id }: { id: string }) {
+  const router = useRouter();
+  const [returning, setReturning] = useState(false);
+  const [note, setNote] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<Msg>(null);
+  async function decide(status: "approved" | "returned") {
+    setBusy(true); setMsg(null);
+    const r = await api<{ rebuild: string }>("POST", `/api/v1/desk/advisor-dna/${id}`, { status, note });
+    setBusy(false);
+    if (!r.ok) { setMsg({ ok: false, text: r.message }); return; }
+    if (status === "approved") setMsg({ ok: true, text: r.data?.rebuild === "requested" ? "Approved. The site is rebuilding; the pages update in a few minutes." : "Approved. The pages update at the next rebuild." });
+    router.refresh();
+  }
+  return (
+    <div className="grid gap-2">
+      <div className="flex flex-wrap gap-3">
+        <button type="button" disabled={busy} onClick={() => decide("approved")} className="ledger-btn ledger-btn--solid">Approve the DNA</button>
+        <button type="button" disabled={busy} onClick={() => setReturning((v) => !v)} className="ledger-btn">Return</button>
+      </div>
+      {returning && (
+        <div className="grid gap-2 max-w-xl">
+          <label className={lab}>What to change (the advisor sees this)<textarea value={note} onChange={(e) => setNote(e.target.value)} rows={2} maxLength={1000} className={input} /></label>
+          <button type="button" disabled={busy || !note.trim()} onClick={() => decide("returned")} className="ledger-btn justify-self-start disabled:opacity-50">Return with this note</button>
+        </div>
+      )}
+      <Note m={msg} />
+    </div>
+  );
+}

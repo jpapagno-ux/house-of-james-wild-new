@@ -37,9 +37,13 @@ export type AdvisorDna = {
 // 7 Nov 2026 (James: the desk is the one place DNA is kept): the Advisor DNA the house approved on the desk
 // (advisors-desk-dna.json, written at build by scripts/advisor-dna.mjs) is laid over the Library's copy,
 // advisor by advisor; an advisor the desk has not reached keeps the Library's copy, a paused one is closed.
+// The Library spells a few countries differently from the site's pages (audit, 7 Nov 2026): read them as the
+// site's slug, so the advisor is ranked on the real page and the card links to it.
+const COUNTRY_ALIAS: Record<string, string> = { "turks-and-caicos": "turks-caicos" };
+const canonicalCountries = <T extends { countries: string[] }>(d: T): T => ({ ...d, countries: Array.from(new Set(d.countries.map((c) => COUNTRY_ALIAS[c] ?? c))) });
 const DNA_BY_SLUG = new Map(
   overlayDna((libraryDna as { advisors: (AdvisorDna & { slug: string; ledgerId: string })[] }).advisors, (deskDna as { advisors: DeskDna[] }).advisors)
-    .map(({ source: _source, ...d }) => [d.slug, d as AdvisorDna & { slug: string; ledgerId: string }]),
+    .map(({ source: _source, ...d }) => [d.slug, canonicalCountries(d as AdvisorDna & { slug: string; ledgerId: string })]),
 );
 
 export type Advisor = {

@@ -5,7 +5,7 @@ import { isUuid } from "@/lib/platform/validate";
 import { documents, dnaProposals, publishedDna, signatures } from "@/lib/platform/advisor-file-data";
 import { DNA_PARTIES, DNA_VOLUMES, dnaChanges, fromLibrary, type DnaInput } from "@/lib/platform/advisor-dna";
 import { ADVISORS } from "@/lib/content/advisors";
-import { COUNTRIES } from "@/lib/content/countries";
+import { DESTINATION_COUNTRIES } from "@/lib/content/destination-countries";
 import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import staysData from "@/lib/content/stays.json";
 import { ADV_DOC_LABEL, ENTITY_TYPES, TIER_NAME, feeText, fileSteps, readyToActivate, type AdvDocKind, type FileState, type Plan } from "@/lib/platform/advisor-file";
@@ -143,7 +143,7 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
 }
 
 // Names for the review: countries and Ledger stays by their site name.
-const COUNTRY_NAME = new Map(COUNTRIES.map((c) => [c.slug, c.name]));
+const COUNTRY_NAME = new Map(DESTINATION_COUNTRIES.map((c) => [c.slug, c.name]));
 const STAY_NAME = new Map((staysData as { stays: { ledgerId: string | null; name: string }[] }).stays.filter((x) => x.ledgerId).map((x) => [x.ledgerId as string, x.name]));
 function label(x: string): string {
   const [id, ...rest] = x.split(" ");

@@ -4,7 +4,7 @@ import { ledgerRows } from "@/lib/platform/advisor-ledger-data";
 import { PER_PAGE, RATE_LABEL, filterRows, parseQuery, queryHref, rateLine, sortRows } from "@/lib/platform/advisor-ledger";
 import { DNA_VOLUMES } from "@/lib/platform/advisor-dna";
 import { PATHWAY_LIST } from "@/lib/pathways";
-import { COUNTRIES } from "@/lib/content/countries";
+import { DESTINATION_COUNTRIES } from "@/lib/content/destination-countries";
 import PathwayChip from "@/components/advisor/PathwayChip";
 import { Empty, PageHead, StatusPill } from "@/components/platform/ui";
 
@@ -21,8 +21,8 @@ export default async function AdvisorLedger({ searchParams }: { searchParams: Pr
   const pages = Math.max(1, Math.ceil(found.length / PER_PAGE));
   const page = Math.min(f.page, pages);
   const shown = found.slice((page - 1) * PER_PAGE, page * PER_PAGE);
-  const regions = [...new Map(COUNTRIES.map((c) => [c.region, c.regionName])).entries()].sort((x, y) => x[1].localeCompare(y[1]));
-  const countries = COUNTRIES.filter((c) => (!f.region || c.region === f.region) && all.some((r) => r.countrySlug === c.slug)).sort((x, y) => x.name.localeCompare(y.name));
+  const regions = [...new Map(DESTINATION_COUNTRIES.map((c) => [c.region, c.regionName])).entries()].sort((x, y) => x[1].localeCompare(y[1]));
+  const countries = DESTINATION_COUNTRIES.filter((c) => (!f.region || c.region === f.region) && all.some((r) => r.countrySlug === c.slug)).sort((x, y) => x.name.localeCompare(y.name));
   const mine = all.filter((r) => r.mine).length, withOffers = all.filter((r) => r.offers.length).length;
   return (
     <>

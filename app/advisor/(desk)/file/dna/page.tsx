@@ -3,7 +3,7 @@ import { dnaProposals, publishedDna } from "@/lib/platform/advisor-file-data";
 import { fromLibrary, type DnaInput } from "@/lib/platform/advisor-dna";
 import { niceDate } from "@/lib/platform/labels";
 import { ADVISORS } from "@/lib/content/advisors";
-import { COUNTRIES } from "@/lib/content/countries";
+import { DESTINATION_COUNTRIES } from "@/lib/content/destination-countries";
 import { PATHWAY_LIST } from "@/lib/pathways";
 import staysData from "@/lib/content/stays.json";
 import { DnaForm, type DnaOptions } from "@/components/advisor/DnaForm";
@@ -23,7 +23,7 @@ export default async function AdvisorDna() {
   const initial: DnaInput = latest && latest.status !== "approved" ? latest.payload : pub ? { ...pub } : fromLibrary(library);
   const options: DnaOptions = {
     pathways: PATHWAY_LIST.map((p) => ({ id: p.id, name: p.name, setting: p.setting })),
-    countries: [...COUNTRIES].sort((x, y) => x.regionName.localeCompare(y.regionName) || x.name.localeCompare(y.name)).map((c) => ({ slug: c.slug, name: c.name, region: c.region, regionName: c.regionName })),
+    countries: [...DESTINATION_COUNTRIES].sort((x, y) => x.regionName.localeCompare(y.regionName) || x.name.localeCompare(y.name)).map((c) => ({ slug: c.slug, name: c.name, region: c.region, regionName: c.regionName })),
     stays: (staysData as { stays: { ledgerId: string | null; name: string; countrySlug: string | null }[] }).stays
       .filter((s): s is { ledgerId: string; name: string; countrySlug: string } => !!s.ledgerId && !!s.countrySlug)
       .map((s) => ({ ledgerId: s.ledgerId, name: s.name, countrySlug: s.countrySlug }))

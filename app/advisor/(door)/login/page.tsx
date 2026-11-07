@@ -26,7 +26,7 @@ export default async function AdvisorLogin({ searchParams }: { searchParams: Pro
         <p className="mt-4 text-[15px] ledger-muted">{sp.signed_out ? "You are signed out." : "Advisor access is by invitation. You will need your authenticator app after your password."}</p>
       </div>
       <div className="md:pt-4">
-        <PartnerSignIn next={next} notice={sp.error ? NOTICE[sp.error] ?? NOTICE.link : null} />
+        <PartnerSignIn door="advisor" next={next} notice={sp.error ? NOTICE[sp.error] ?? NOTICE.link : null} />
       </div>
     </section>
   );

@@ -722,6 +722,68 @@
       "publicationStatus": "published",
       "reviewDate": "2026-11-05",
       "reviewStatus": "approved"
+    },
+    {
+      "id": "EF-019",
+      "stayId": "STY-2026-000641",
+      "staySlug": "dolphin-island",
+      "stayName": "Dolphin Island",
+      "collectionNumber": 19,
+      "heroLine": "Fourteen acres off Viti Levu, never shared, for no more than eight.",
+      "whyItMadeTheCut": [
+        "Place. A 14 acre island off the northern tip of Viti Levu, ten minutes by boat from Rakiraki, in the soft coral waters of Bligh Water.",
+        "Privacy. Exclusive use only: four guest bures, a thatched hilltop sleep-out and a pool above the sea, for one party of up to eight.",
+        "People. Dawn Simpson and her Fijian team run the island, with a manager on duty day and night, cooking classes, and babysitting for the youngest guests."
+      ],
+      "signals": [
+        {
+          "key": "place",
+          "line": "In Bligh Water, among four reef systems and 25 dive sites."
+        },
+        {
+          "key": "privacy",
+          "line": "Exclusive use: the whole island for one party of up to eight."
+        },
+        {
+          "key": "access",
+          "line": "A private car from Nadi is included; float plane or helicopter if you prefer, then ten minutes by boat."
+        },
+        {
+          "key": "humanity",
+          "line": "Dawn Simpson and her team, and a manager on duty around the clock."
+        },
+        {
+          "key": "rarity",
+          "line": "A thatched open-air Hilltop Bure for a night under the stars."
+        }
+      ],
+      "pathwaysOverride": [
+        "a-place-of-our-own",
+        "between-tides",
+        "the-art-of-stillness"
+      ],
+      "worthAnotherNight": "Five nights. Enough to dive the Vatu-i-Ra Passage, kayak to the next island, cook with Dawn, and spend one night in the Hilltop Bure.",
+      "whoItSuits": [
+        "A family with children of any age",
+        "Friends travelling together, up to eight",
+        "Divers and snorkellers",
+        "Honeymooners who want an island to themselves"
+      ],
+      "whoItMayNotSuit": [
+        "Travellers who want restaurants and other guests",
+        "Anyone who wants a full resort spa"
+      ],
+      "continueRefs": [
+        "stay:kokomo-private-island",
+        "stay:laucala",
+        "pathway:a-place-of-our-own"
+      ],
+      "paletteKey": "dolphin-island",
+      "designationStatus": "designated",
+      "selectionDate": "2026-11-05",
+      "publicationStatus": "published",
+      "reviewDate": "2026-11-07",
+      "reviewStatus": "approved"
     }
   ]
 }

@@ -12,7 +12,7 @@ export default function DeskIndex() {
       { href: "/desk/review", title: "Partner review", line: "Submissions and proposed changes from partners." },
       { href: "/desk/commission", title: "Price and commission check", line: "Price a stay and see the commission, the advisor's share and the house's." },
     ] : []),
-    ...(PARTNER_DESK && ADVISOR_DESK ? [{ href: "/desk/advisors", title: "Advisors", line: "Advisor files: documents to review, plans, agreements and activation." }, { href: "/desk/advisor-requests", title: "Advisor quote requests", line: "Price, hold and confirm the stays advisors ask for, for their clients." }] : []),
+    ...(PARTNER_DESK && ADVISOR_DESK ? [{ href: "/desk/advisors", title: "Advisors", line: "Advisor files: documents to review, plans, agreements and activation." }, { href: "/desk/advisor-requests", title: "Advisor quote requests", line: "Price, hold and confirm the stays advisors ask for, for their clients." }, { href: "/desk/commissions", title: "Commission ledger", line: "Every booking's commission, owed to the house and to advisors, and the reports by partner, property, advisor and month." }] : []),
   ];
   if (!doors.length) notFound();
   return (

@@ -5,7 +5,7 @@ import { supabaseBrowser } from "@/lib/booking-live/supabase/browser";
 
 // Partner sign-in: password first (partners work at a desk all day), an emailed
 // one-time link as the fallback. Supabase Auth checks the password; the desk never sees it.
-export default function PartnerSignIn({ next, notice }: { next: string; notice: string | null }) {
+export default function PartnerSignIn({ next, notice, door = "partner" }: { next: string; notice: string | null; door?: "partner" | "advisor" }) {
   const [mode, setMode] = useState<"password" | "link">("password");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -67,7 +67,9 @@ export default function PartnerSignIn({ next, notice }: { next: string; notice: 
       <button type="submit" disabled={state === "busy" || !validEmail || (mode === "password" && password.length < 8)} className="ledger-btn ledger-btn--solid justify-center disabled:opacity-50">
         {state === "busy" ? "One moment…" : mode === "password" ? "Sign in to the desk" : "Email me a sign-in link"}
       </button>
-      <p className="text-[13px] ledger-muted">Desk access is by invitation. New to James Wild &amp; Co? <Link href="/partner/apply" className="underline underline-offset-2">Apply to become a partner</Link>.</p>
+      <p className="text-[13px] ledger-muted">Desk access is by invitation. New to James Wild &amp; Co? {door === "advisor"
+        ? <Link href="/for-advisors/apply" className="underline underline-offset-2">Apply to become an advisor</Link>
+        : <Link href="/partner/apply" className="underline underline-offset-2">Apply to become a partner</Link>}.</p>
     </form>
   );
 }

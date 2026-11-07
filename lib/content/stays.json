@@ -58281,6 +58281,134 @@
    "placeSlug": null
   },
   {
+   "slug": "yasawa-island-resort",
+   "name": "Yasawa Island Resort & Spa",
+   "ledgerId": "STY-2026-000640",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Eighteen thatched beachfront bures, the only resort on a 22 kilometre island at the top of the Yasawas.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g15",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/yasawa-island-resort/g9"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji). Activities run year round, except on Sundays.",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-07",
+   "coords": null,
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "A 30 minute charter flight from Nadi to the resort's own airstrip; the standard daily flight leaves Nadi at 2 pm. Luggage is limited to 23 kg per person in total. Boat and helicopter transfers are also possible.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Bure Suites (six, set in pairs among the palms; one king bed). Deluxe Beachfront Bures (ten, free-standing; one king bed, double indoor shower). The 2-Bedroom Bure (on a rise above the resort; sleeps six, two en-suite bathrooms). The Lomalagi Bure (the honeymoon bure, alone at the end of the beach, with its own pool). Every bure has ocean views, air-conditioning, an outdoor shower, a deck with a hammock, a living area and its own beach cabana. No TVs or Wi-Fi in the bures."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The Blue Lagoon Caves, twice a week by boat",
+     "Snorkelling trips by boat, twice a week",
+     "Private picnics on any of 11 beaches, delivered by boat",
+     "Village visits, with the Chief's invitation",
+     "The lovo feast, a meke and a kava ceremony",
+     "Fijian cooking demonstrations and guided nature walks",
+     "Scuba diving, fishing and sunset cruises (at extra cost)"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "18 bures on a 22 kilometre island, the only resort on it",
+     "A kilometre long house beach and 11 private beaches",
+     "Baravi Spa, Fiji's first beachfront spa",
+     "An oceanfront infinity pool, tennis and pickleball, and a library",
+     "Adults only for most of the year, with a few family weeks"
+    ]
+   },
+   "onlyHere": [
+    "Yasawa Island Resort & Spa is the only resort on Yasawa Island, a 22 kilometre volcanic island at the northern end of Fiji's Yasawa group, 30 minutes from Nadi by charter flight to the resort's own airstrip. It has 18 thatched bures, and more than 80% of its team come from the island's villages."
+   ],
+   "why": [
+    {
+     "title": "An island that is still Fijian",
+     "body": "Yasawa is for couples who want Fiji as it is lived: most of the team are from the island's villages, the Chief's Sunday rule is kept, and the week runs to the lovo, the meke and a village visit. Independently owned, by Erin and James, since 2010."
+    },
+    {
+     "title": "Slow by design",
+     "body": "There are no TVs or Wi-Fi in the bures and no phone reception. The days are picnics on beaches of your own, the Blue Lagoon Caves, the reef, and a massage on the open deck at Baravi Spa."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN), then a 30 minute charter flight to the resort's own airstrip. 23 kg luggage per person.",
+    "signature_experiences": "Private picnics on 11 beaches, the Blue Lagoon Caves, village visits, the lovo feast and meke, and Baravi Spa, Fiji's first beachfront spa.",
+    "who_its_for": "Couples and honeymooners who want to unplug; adults only for most of the year."
+   },
+   "faqs": [
+    {
+     "q": "Where is Yasawa Island Resort?",
+     "a": "On Yasawa Island, a 22 kilometre volcanic island in Fiji's Yasawa group. It is the only resort on the island."
+    },
+    {
+     "q": "How do you get to Yasawa Island Resort?",
+     "a": "By a 30 minute charter flight from Nadi to the resort's own airstrip. Luggage is limited to 23 kg per person, checked and carry-on combined."
+    },
+    {
+     "q": "Is Yasawa Island Resort adults only?",
+     "a": "For most of the year, yes. A few family weeks are held each year, when bures can sleep two adults and two children."
+    },
+    {
+     "q": "What is included at Yasawa Island Resort?",
+     "a": "All meals, snacks, soft drinks, teas, coffees and bottled juices, private beach picnics, the lovo feast and the scheduled activities. Scuba diving, fishing, spa treatments and alcohol are extra."
+    },
+    {
+     "q": "Is there Wi-Fi at Yasawa Island Resort?",
+     "a": "In the common areas only. The bures have no TVs or Wi-Fi, and there is no phone reception."
+    },
+    {
+     "q": "How many bures does Yasawa Island Resort have?",
+     "a": "Eighteen: six Bure Suites, ten Deluxe Beachfront Bures, a two-bedroom bure and the Lomalagi honeymoon bure with its own pool."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "Islands and oceans",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-07"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "zannier-sonop",
    "name": "Zannier Sonop",
    "ledgerId": "STY-2026-000358",

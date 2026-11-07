@@ -690,6 +690,7 @@ export const STAY_SLUGS: string[] = [
   "xanadu-island-resort",
   "xela-tulum",
   "xigera-safari-lodge",
+  "yasawa-island-resort",
   "zannier-sonop",
   "zlata-ladjica",
 ];

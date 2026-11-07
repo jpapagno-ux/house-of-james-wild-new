@@ -11,6 +11,7 @@ declare
   o_jw uuid; o_ag uuid; p uuid; rt uuid; rp uuid;
   adv_a uuid; adv_b uuid; q1 uuid; q2 uuid; b1 uuid; b2 uuid; f1 uuid; f2 uuid;
   n int; ok boolean;
+  ai uuid := gen_random_uuid(); adv_i uuid; ag uuid; d1 uuid; d2 uuid; js jsonb;
   r jsonb := '[]';
 begin
   -- ===== setup as the database owner
@@ -125,6 +126,98 @@ begin
   perform set_config('role', 'anon', true);
   begin select count(*) into n from public.advisors; ok := n = 0; exception when insufficient_privilege then ok := true; end;
   r := r || jsonb_build_object('t', 'S25 the public sees no advisor records', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+
+  -- ===== (T) step 3: the advisor's file
+  perform set_config('role', 'postgres', true);
+  insert into auth.users (id, email, email_confirmed_at, aud, role) values (ai, 'advisor.new@adv.test', now(), 'authenticated', 'authenticated');
+  insert into public.advisors (adv_number, slug, display_name, user_id, status) values ('ADV-2026-990003', 'adv-test-new', 'Nora New', ai, 'invited') returning id into adv_i;
+  update public.advisors set status = 'active' where id = adv_a;
+  update public.advisor_agreements set status = 'retired' where status = 'current';
+  insert into public.advisor_agreements (version, title, body, status, is_placeholder)
+    values ('t-placeholder', 'Independent Marketing Agreement', repeat('Draft agreement text. ', 20), 'current', true) returning id into ag;
+  perform set_config('role', 'authenticated', true);
+
+  perform set_config('request.jwt.claims', json_build_object('sub', ai, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+  select count(*) into n from public.advisor_agreements;
+  r := r || jsonb_build_object('t', 'T01 an invited advisor without the code sees no agreement', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', ai, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  select count(*) into n from public.advisor_agreements where id = ag;
+  r := r || jsonb_build_object('t', 'T02 with the code, the current agreement', 'pass', n = 1);
+  begin perform public.sign_advisor_agreement(ag, 'Nora New'); ok := false; exception when others then ok := sqlerrm like '%details%'; end;
+  r := r || jsonb_build_object('t', 'T03 cannot sign before the details are on file', 'pass', ok);
+  begin insert into public.advisor_details (advisor_id, legal_name, mailing_address, notice_email, residence_country) values (adv_a, 'Not Me', '1 Street, Town', 'x@adv.test', 'US'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T04 cannot write another advisor''s details', 'pass', ok);
+  insert into public.advisor_details (advisor_id, legal_name, mailing_address, notice_email, residence_country) values (adv_i, 'Nora  Q. New', '1 Ocean Drive, Miami FL 33139', 'nora@adv.test', 'US');
+  r := r || jsonb_build_object('t', 'T05 an invited advisor fills in their own details', 'pass', exists (select 1 from public.advisor_details where advisor_id = adv_i));
+  begin perform public.sign_advisor_agreement(ag, 'Nora New'); ok := false; exception when others then ok := sqlerrm like '%legal name%'; end;
+  r := r || jsonb_build_object('t', 'T06 the typed name must match the legal name', 'pass', ok);
+  perform public.sign_advisor_agreement(ag, ' nora q.  new ', 'test-agent');
+  select count(*) into n from public.advisor_signatures where advisor_id = adv_i and version = 't-placeholder' and aal = 'aal2'
+    and body_sha256 = encode(extensions.digest(repeat('Draft agreement text. ', 20), 'sha256'), 'hex');
+  r := r || jsonb_build_object('t', 'T07 signed: version, exact text fingerprint and the code are recorded', 'pass', n = 1);
+  begin perform public.sign_advisor_agreement(ag, 'Nora Q. New'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T08 one signature per version', 'pass', ok);
+  begin delete from public.advisor_signatures where advisor_id = adv_i; get diagnostics n = row_count; ok := n = 0; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T09 a signature cannot be deleted', 'pass', ok);
+  js := public.my_advisor_plan();
+  r := r || jsonb_build_object('t', 'T10 their plan: Tier 2 at 70% until the house sets a tier', 'pass', js ->> 'tier' = 'tier_2' and (js ->> 'share_bp')::int = 7000 and not (js ->> 'tier_assigned')::boolean);
+  perform public.acknowledge_advisor_plan();
+  r := r || jsonb_build_object('t', 'T11 acknowledging the plan keeps a snapshot', 'pass', exists (select 1 from public.advisor_plan_acks where advisor_id = adv_i and share_bp = 7000));
+  insert into public.advisor_documents (advisor_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
+    values (adv_i, 'tax_form', 'W-9', adv_i::text || '/tax_form/aaaaaaaa-w9.pdf', 'application/pdf', 1200, ai) returning id into d1;
+  insert into public.advisor_documents (advisor_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by)
+    values (adv_i, 'eo_insurance', 'E&O certificate', adv_i::text || '/eo_insurance/bbbbbbbb-eo.pdf', 'application/pdf', 1200, ai) returning id into d2;
+  r := r || jsonb_build_object('t', 'T12 an advisor files their own documents', 'pass', (select count(*) from public.advisor_documents where advisor_id = adv_i) = 2);
+  begin insert into public.advisor_documents (advisor_id, kind, title, storage_path, mime_type, size_bytes, uploaded_by, status)
+    values (adv_i, 'other', 'Sneaky', adv_i::text || '/other/cccccccc-x.pdf', 'application/pdf', 10, ai, 'accepted'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T13 but cannot file one as already accepted', 'pass', ok);
+  begin update public.advisor_documents set status = 'accepted' where id = d1; ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T14 nor accept their own document', 'pass', ok);
+  begin perform public.decide_advisor_document(d1, 'accepted'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T15 nor use the house''s decision', 'pass', ok);
+  insert into storage.objects (bucket_id, name) values ('advisor-files', adv_i::text || '/tax_form/aaaaaaaa-w9.pdf');
+  begin insert into storage.objects (bucket_id, name) values ('advisor-files', adv_a::text || '/tax_form/dddddddd-w9.pdf'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T16 files go only into their own folder', 'pass', ok);
+  select count(*) into n from storage.objects where bucket_id = 'advisor-files';
+  r := r || jsonb_build_object('t', 'T17 and they can read their own filed file', 'pass', n = 1);
+  begin perform public.activate_advisor(adv_i); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T18 an advisor cannot activate themselves', 'pass', ok);
+  js := public.my_advisor_file_state();
+  r := r || jsonb_build_object('t', 'T19 their file shows what is done and what waits for the house', 'pass',
+    (js ->> 'details')::boolean and (js ->> 'plan')::boolean and (js ->> 'agreement')::boolean and (js ->> 'tax_form')::boolean and not (js ->> 'tax_form_accepted')::boolean);
+
+  -- another advisor sees none of it
+  perform set_config('request.jwt.claims', json_build_object('sub', aa, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  select (select count(*) from public.advisor_details where advisor_id = adv_i) + (select count(*) from public.advisor_documents where advisor_id = adv_i)
+       + (select count(*) from public.advisor_signatures where advisor_id = adv_i) + (select count(*) from storage.objects where bucket_id = 'advisor-files') into n;
+  r := r || jsonb_build_object('t', 'T20 another advisor sees none of the file', 'pass', n = 0);
+
+  -- the house
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  begin perform public.activate_advisor(adv_i); ok := false; exception when others then ok := sqlerrm like '%not complete%'; end;
+  r := r || jsonb_build_object('t', 'T21 the house cannot activate before the documents are accepted', 'pass', ok);
+  begin perform public.decide_advisor_document(d2, 'returned', ''); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'T22 a returned document needs a reason', 'pass', ok);
+  perform public.decide_advisor_document(d1, 'accepted'); perform public.decide_advisor_document(d2, 'accepted');
+  begin perform public.activate_advisor(adv_i); ok := false; exception when others then ok := sqlerrm like '%draft%'; end;
+  r := r || jsonb_build_object('t', 'T23 on the draft agreement, only house advisors can be activated', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+  update public.advisors set house_advisor = true where id = adv_i;
+  perform set_config('role', 'authenticated', true);
+  perform public.activate_advisor(adv_i);
+  r := r || jsonb_build_object('t', 'T24 complete file: the house activates', 'pass', (select status from public.advisors where id = adv_i) = 'active');
+  perform public.set_advisor_plan(adv_i, 'tier_1', current_date, 24900, 'year', 'Monthly statement; paid within 15 days by ACH');
+  perform set_config('role', 'postgres', true);
+  select private.advisor_plan(adv_i) into js;
+  perform set_config('role', 'authenticated', true);
+  r := r || jsonb_build_object('t', 'T25 the house sets tier and fee; the plan follows', 'pass', (js ->> 'share_bp')::int = 7500 and (js ->> 'program_fee_minor')::int = 24900);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+  select count(*) into n from public.advisor_details;
+  r := r || jsonb_build_object('t', 'T26 the house without the code sees no advisor files', 'pass', n = 0);
+  perform set_config('role', 'anon', true);
+  begin select count(*) into n from public.advisor_agreements; ok := n = 0; exception when insufficient_privilege then ok := true; end;
+  r := r || jsonb_build_object('t', 'T27 the public sees no agreement or file', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
   raise exception 'ADVISOR_DESK_RLS %', r;

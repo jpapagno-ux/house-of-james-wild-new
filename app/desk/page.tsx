@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PARTNER_DESK } from "@/lib/platform/flags";
 import { FLAGS } from "@/lib/booking-live/flags";
+import { ADVISOR_DESK } from "@/lib/platform/flags";
 
 // /desk: the two doors of the house desk. Each door checks its own role.
 export default function DeskIndex() {
@@ -11,6 +12,7 @@ export default function DeskIndex() {
       { href: "/desk/review", title: "Partner review", line: "Submissions and proposed changes from partners." },
       { href: "/desk/commission", title: "Price and commission check", line: "Price a stay and see the commission, the advisor's share and the house's." },
     ] : []),
+    ...(PARTNER_DESK && ADVISOR_DESK ? [{ href: "/desk/advisors", title: "Advisors", line: "Advisor files: documents to review, plans, agreements and activation." }] : []),
   ];
   if (!doors.length) notFound();
   return (

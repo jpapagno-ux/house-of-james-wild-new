@@ -46,12 +46,14 @@ export default function Rail({ items, later, house, root = "/partner", label = "
         {house && (
           <Link href="/desk/review" className="mt-5 block border ledger-crimson-border ledger-crimson px-3 py-2.5 text-[13px] hover:bg-[#F6ECEC]">House review queue →</Link>
         )}
-        <p className="ledger-eyebrow mt-8">Coming soon</p>
-        <ul className="mt-2">
-          {later.map((i) => (
-            <li key={i.label} className="py-1.5 pl-3 text-[13.5px] ledger-muted">{i.label}</li>
-          ))}
-        </ul>
+        {later.length > 0 && <>
+          <p className="ledger-eyebrow mt-8">Coming soon</p>
+          <ul className="mt-2">
+            {later.map((i) => (
+              <li key={i.label} className="py-1.5 pl-3 text-[13.5px] ledger-muted">{i.label}</li>
+            ))}
+          </ul>
+        </>}
       </nav>
     </>
   );

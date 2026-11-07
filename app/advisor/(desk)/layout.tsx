@@ -7,13 +7,13 @@ import { loadAdvisor } from "@/lib/platform/advisor";
 // and the page. Every page re-checks access on the server (requireAdvisor); this layout only draws.
 export default async function AdvisorDeskLayout({ children }: { children: React.ReactNode }) {
   const a = await loadAdvisor();
-  if (!a || a.mfa !== "ok" || a.advisor.status !== "active") return <>{children}</>;
-  const items: RailItem[] = [
-    { href: "/advisor", label: "Overview" },
-    { href: "/advisor/clients", label: "My clients" },
-  ];
-  const later: RailItem[] = [
-    { href: "#", label: "My file", soon: "soon" },
+  if (!a || a.mfa !== "ok" || (a.advisor.status !== "active" && a.advisor.status !== "invited")) return <>{children}</>;
+  const active = a.advisor.status === "active";
+  // Until the house activates them, an advisor sees only their file.
+  const items: RailItem[] = active
+    ? [{ href: "/advisor", label: "Overview" }, { href: "/advisor/clients", label: "My clients" }, { href: "/advisor/file", label: "My file" }]
+    : [{ href: "/advisor/file", label: "My file" }];
+  const later: RailItem[] = !active ? [] : [
     { href: "#", label: "The Ledger", soon: "soon" },
     { href: "#", label: "Quote and hold", soon: "soon" },
     { href: "#", label: "Earnings", soon: "soon" },
@@ -29,7 +29,7 @@ export default async function AdvisorDeskLayout({ children }: { children: React.
             <p className="ledger-display text-[1.2rem] leading-none">{a.advisor.display_name}</p>
             <span className="font-mono text-[11.5px] tracking-[0.06em] ledger-crimson">{a.advisor.adv_number}</span>
             <div className="ml-auto flex flex-wrap items-center gap-4 text-[13px]">
-              <span className="ledger-muted">{a.tier.label}</span>
+              <span className="ledger-muted">{active ? a.tier.label : "File in progress"}</span>
               <span className="ledger-muted max-w-[16rem] truncate">{a.user.email}</span>
               <form action="/auth/sign-out?to=advisor" method="post"><button type="submit" className="ledger-eyebrow hover:opacity-60">Sign out</button></form>
             </div>

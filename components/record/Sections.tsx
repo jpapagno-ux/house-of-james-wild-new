@@ -1,4 +1,6 @@
 import Image from "next/image";
+import WideFilmLayer from "@/components/media/WideFilm";
+import type { WideFilm } from "@/lib/content/stay-films";
 import { heroBox } from "@/lib/hero-box";
 import ChapterRail from "./ChapterRail";
 import { FilmOrStill, ShortFilmBackdrop } from "@/components/media/ShortFilm";
@@ -39,7 +41,7 @@ export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; 
 }
 
 /* Hero ----------------------------------------------------------------- */
-export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, film, credit, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; film?: ShortFilm; credit?: string; height?: string }) {
+export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glance, tag, film, wideFilm, credit, height = "h-[82svh] min-h-[620px]" }: { image: Img; slides?: Img[]; eyebrow: string; title: string; tagline?: string; stamp?: ReactNode; glance?: ReactNode; tag?: ReactNode; film?: ShortFilm; /** A wide brand film over the hero photograph, in place of the photo slider. */ wideFilm?: WideFilm; credit?: string; height?: string }) {
   // The hero grows rather than letting its words run up under the header: the copy always starts below the header
   // and its volume row (76px phones, 167px from 1024) and the photo counter beneath it, and the header turns solid once the copy
   // ([data-hero-copy]) reaches it (hero arrows fix, 3 Nov 2026).
@@ -87,14 +89,15 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
     );
     return photos ? <FilmOrStill film={filmHero} still={photos} /> : filmHero;
   }
-  if (photos) return photos;
+  if (photos && !wideFilm) return photos;
   return (
     <section className={`relative flex flex-col ${box.className} overflow-hidden bg-ink text-white`} style={box.style} aria-label={title}>
       <Image src={sharpen(image.url)} alt={image.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
+      {wideFilm && <WideFilmLayer film={wideFilm} />}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/10 to-black/75" />
       <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />
       {body}
-      {credit && <p className="absolute bottom-2 right-6 md:bottom-1.5 md:right-8 text-[10.5px] tracking-[0.08em] text-white/70">Photo: {credit}</p>}
+      {(wideFilm || credit) && <p className="absolute bottom-2 right-6 md:bottom-1.5 md:right-8 text-[10.5px] tracking-[0.08em] text-white/70">{wideFilm ? wideFilm.credit : `Photo: ${credit}`}</p>}
       <div id="hero-end" className="absolute bottom-0" />
     </section>
   );

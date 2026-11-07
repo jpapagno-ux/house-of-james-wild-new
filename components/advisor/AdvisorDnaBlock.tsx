@@ -2,7 +2,7 @@ import Link from "next/link";
 import { type Advisor } from "@/lib/content/advisors";
 import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import { pathwayHref } from "@/lib/content/pathways/flag";
-import { COUNTRIES } from "@/lib/content/countries";
+import { destinationCountry } from "@/lib/content/destination-countries";
 import { STAYS, VESSEL_RECORDS } from "@/lib/content/stays";
 import { recordHref } from "@/lib/ledger/urls";
 import { GREEN_INK } from "@/lib/content/advisor-desk";
@@ -14,7 +14,7 @@ import { GREEN_INK } from "@/lib/content/advisor-desk";
 
 const PARTY: Record<string, string> = { family: "Families", couple: "Couples", friends: "Friends travelling together", solo: "Solo travellers", group: "Larger groups" };
 const AVAIL: Record<string, string> = { open: "Taking new journeys", waitlist: "Waitlist", closed: "Not taking new journeys at the moment" };
-const countryLabel = (slug: string) => COUNTRIES.find((c) => c.slug === slug);
+const countryLabel = (slug: string) => destinationCountry(slug);
 const titleCase = (s: string) => s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
 export default function AdvisorDnaBlock({ a, idBase = "dna" }: { a: Advisor; idBase?: string }) {

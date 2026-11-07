@@ -91,7 +91,7 @@ export function DnaForm({ initial, options, waiting }: { initial: DnaInput; opti
       <fieldset className="bg-white border ledger-border p-5 md:p-6 grid gap-4">
         <legend className="ledger-display text-[1.3rem] px-1">Countries you know first-hand</legend>
         <p className="text-[14px] ledger-muted">Only places you have been. Each one puts your card on that country&rsquo;s page; a place you have stayed ranks above a place you only know.</p>
-        {d.countries.length > 0 && <p className="text-[14px]"><span className="font-medium">{d.countries.length} chosen:</span> {d.countries.map((c) => countryName.get(c) ?? c).join(", ")}</p>}
+        {d.countries.length > 0 && <p className="text-[14px]"><span className="font-medium">{d.countries.length} chosen:</span> {d.countries.map((c) => countryName.get(c) ?? c.replace(/-/g, " ").replace(/\b\w/g, (x) => x.toUpperCase())).join(", ")}</p>}
         <div className="grid gap-4">
           {regions.map(({ region, name, list }) => (
             <details key={region} open={list.some((c) => d.countries.includes(c.slug))} className="border-t ledger-border pt-3">

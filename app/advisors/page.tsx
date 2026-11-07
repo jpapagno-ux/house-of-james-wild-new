@@ -7,7 +7,7 @@ import AdvisorCard from "@/components/advisor/AdvisorCard";
 import { PlanClose } from "@/components/about/Parts";
 import { ADVISORS, DEFAULT_ADVISOR } from "@/lib/content/advisors";
 import { PATHWAYS, type PathwayId } from "@/lib/pathways";
-import { COUNTRIES } from "@/lib/content/countries";
+import { DESTINATION_COUNTRIES, destinationCountry } from "@/lib/content/destination-countries";
 import { GREEN_INK } from "@/lib/content/advisor-desk";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
@@ -26,7 +26,7 @@ export const metadata = buildMetadata({
 });
 
 const titleCase = (s: string) => s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
-const countryName = (c: string) => COUNTRIES.find((x) => x.slug === c)?.name ?? titleCase(c);
+const countryName = (c: string) => destinationCountry(c)?.name ?? titleCase(c);
 
 export default function AdvisorsIndex() {
   const real = ADVISORS.filter((a) => !a.sample && a.ledgerId);
@@ -36,7 +36,7 @@ export default function AdvisorsIndex() {
   const path = "/advisors";
   const answer = `James Wild & Co is advisor-led and advisor-built: a named advisor with an Advisor ID (ADV) carries every journey from first call to Folio. The house has ${ordered.length} advisors. ${ordered.map((a) => `${a.name} (${a.ledgerId})${a.dna?.countries.length ? ` knows ${a.dna.countries.slice(0, 4).map(countryName).join(", ")}` : ""}`).join("; ")}. James Papagno, the founder, heads every page while the house is in testing, and the advisor who should plan a journey is named on each stay and country page.`;
   // By country: who knows it, from the Library (real advisors only).
-  const byCountry = COUNTRIES.map((c) => ({ c, who: ordered.filter((a) => a.dna?.countries.includes(c.slug)) })).filter((x) => x.who.length);
+  const byCountry = DESTINATION_COUNTRIES.map((c) => ({ c, who: ordered.filter((a) => a.dna?.countries.includes(c.slug)) })).filter((x) => x.who.length);
   return (
     <>
       <SiteHeader />
@@ -46,7 +46,7 @@ export default function AdvisorsIndex() {
           <header className="max-w-3xl">
             <p className="ledger-eyebrow ledger-crimson">Advisor-led · Advisor-built</p>
             <h1 className="ledger-display text-[2.3rem] md:text-[3.3rem] leading-[1.08] mt-2">The Advisors of the House</h1>
-            <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">A named person with an Advisor ID carries every journey. James vouches for the place; the advisor vouches for you. Each advisor&rsquo;s DNA below is theirs: the journeys they plan, the places they know, their own line, stated and confirmed by them in the house Ledger.</p>
+            <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">A named person with an Advisor ID carries every journey. James vouches for the place; the advisor vouches for you. Each advisor&rsquo;s DNA below is theirs: the journeys they plan and the places they know, as they stated them to the house. Each advisor confirms it on the Advisor Desk, and the house approves it before it shows here.</p>
           </header>
 
           <div className="mt-10"><AnswerBlock>{answer}</AnswerBlock></div>

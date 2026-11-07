@@ -2,11 +2,12 @@ import { notFound } from "next/navigation";
 import { requireHouse } from "@/lib/platform/membership";
 import { ADVISOR_DESK } from "@/lib/platform/flags";
 import { isUuid } from "@/lib/platform/validate";
-import { advisorRequest } from "@/lib/platform/advisor-file-data";
+import { advisorRequest, commissionLines } from "@/lib/platform/advisor-file-data";
+import { pct } from "@/lib/platform/commission-ledger";
 import { OPEN, REQUEST_STATUS, money, nightsBetween, party } from "@/lib/platform/advisor-requests";
 import { niceDate } from "@/lib/platform/labels";
 import EstimateBlock from "@/components/advisor/EstimateBlock";
-import { DecideRequest } from "@/components/advisor/RequestForms";
+import { DecideRequest, RecordCommission } from "@/components/advisor/RequestForms";
 import { DataList, Section, StatusPill, TextLink } from "@/components/platform/ui";
 
 export const metadata = { title: "Advisor quote request" };
@@ -20,6 +21,9 @@ export default async function HouseAdvisorRequest({ params }: { params: Promise<
   if (!r) notFound();
   const { data: adv } = await desk.sb.from("advisors").select("display_name, adv_number, id").eq("id", r.advisor_id).maybeSingle();
   const s = REQUEST_STATUS[r.status];
+  const [line] = r.status === "confirmed" ? await commissionLines(desk.sb, { requestId: r.id }) : [];
+  const { data: rate } = r.status === "confirmed" && !line ? await desk.sb.rpc("commission_rate_for_stay", { p_slug: r.stay_slug }) : { data: null };
+  const termRate = typeof rate === "number" ? rate : null;
   return (
     <div>
       <p className="ledger-eyebrow ledger-crimson"><TextLink href="/desk/advisor-requests">Advisor quote requests</TextLink> · {r.ref}</p>
@@ -42,6 +46,11 @@ export default async function HouseAdvisorRequest({ params }: { params: Promise<
       {OPEN.includes(r.status) ? (
         <Section title="Move it on"><div className="max-w-3xl"><DecideRequest id={r.id} status={r.status} price={r.price_minor ? String(r.price_minor / 100) : ""} currency={r.currency ?? "USD"} /></div></Section>
       ) : <p className="mt-8 text-[15px] ledger-muted">This request is closed.</p>}
+      {r.status === "confirmed" && (line ? (
+        <Section title="Commission"><p className="text-[15px]">Recorded as <TextLink href={`/desk/commissions/${line.id}`}>{line.ref}</TextLink>: {pct(line.rate_bp)} of {money(line.base_minor, line.currency)}.</p></Section>
+      ) : (
+        <Section title="Record the commission"><div className="max-w-3xl"><RecordCommission id={r.id} price={r.price_minor ? String(r.price_minor / 100) : ""} currency={r.currency ?? "USD"} termRate={termRate !== null ? pct(termRate) : null} /></div></Section>
+      ))}
     </div>
   );
 }

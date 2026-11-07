@@ -2,16 +2,18 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { advisorDocPath, agreementBlocks, example, feeText, fileComplete, fileSteps, parseDetails, parseDocument, readyToActivate, sameName } from "../lib/platform/advisor-file.ts";
 
-const base = { details: true, plan: true, agreement: true, agreement_placeholder: false, tax_form: true, eo_insurance: true, tax_form_accepted: false, eo_insurance_accepted: false };
+const base = { details: true, plan: true, agreement: true, agreement_placeholder: false, tax_form: true, eo_insurance: true, tax_form_accepted: false, eo_insurance_accepted: false, dna: true, dna_approved: false };
 
 test("the four steps, and when the house can activate", () => {
   const steps = fileSteps(base);
-  assert.deepEqual(steps.map((s) => s.key), ["details", "plan", "agreement", "documents"]);
+  assert.deepEqual(steps.map((s) => s.key), ["details", "plan", "agreement", "documents", "dna"]);
   assert.ok(steps.every((s) => s.done));
   assert.equal(steps[3].waiting, true, "filed but not yet accepted reads as waiting for the house");
   assert.ok(fileComplete(base));
   assert.ok(!readyToActivate(base));
-  assert.ok(readyToActivate({ ...base, tax_form_accepted: true, eo_insurance_accepted: true }));
+  assert.ok(!readyToActivate({ ...base, tax_form_accepted: true, eo_insurance_accepted: true }), "DNA must be approved too");
+  assert.ok(readyToActivate({ ...base, tax_form_accepted: true, eo_insurance_accepted: true, dna_approved: true }));
+  assert.equal(steps[4].waiting, true, "DNA sent, not yet approved");
   assert.ok(!fileComplete({ ...base, eo_insurance: false }));
 });
 

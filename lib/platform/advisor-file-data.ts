@@ -4,7 +4,7 @@ import type { FileState, Plan } from "./advisor-file";
 
 // Reads for the advisor's file, as the advisor (or the house): the database returns only what the
 // caller may see.
-export const EMPTY_STATE: FileState = { details: false, plan: false, agreement: false, agreement_placeholder: true, tax_form: false, eo_insurance: false, tax_form_accepted: false, eo_insurance_accepted: false };
+export const EMPTY_STATE: FileState = { details: false, plan: false, agreement: false, agreement_placeholder: true, tax_form: false, eo_insurance: false, tax_form_accepted: false, eo_insurance_accepted: false, dna: false, dna_approved: false };
 
 export async function myFileState(sb: SupabaseClient): Promise<FileState> {
   const { data } = await sb.rpc("my_advisor_file_state");
@@ -28,4 +28,16 @@ export type AdvDoc = { id: string; kind: string; title: string; mime_type: strin
 export async function documents(sb: SupabaseClient, advisorId: string): Promise<AdvDoc[]> {
   const { data } = await sb.from("advisor_documents").select("id, kind, title, mime_type, size_bytes, expires_on, status, note, house_note, created_at, decided_at").eq("advisor_id", advisorId).neq("status", "archived").order("created_at", { ascending: false });
   return (data ?? []) as AdvDoc[];
+}
+
+// ===== Advisor DNA (part five)
+export type DnaRow = { pathways: string[]; volumes: string[]; party_types: string[]; countries: string[]; languages: string[]; specialties: string[]; availability: "open" | "waitlist" | "closed"; match_note: string | null; marks: import("./advisor-dna").DnaMark[]; approved_at: string; confirmed_at: string };
+export type DnaProposal = { id: string; payload: import("./advisor-dna").DnaInput; status: string; house_note: string | null; created_at: string; decided_at: string | null };
+export async function publishedDna(sb: SupabaseClient, advisorId: string): Promise<DnaRow | null> {
+  const { data } = await sb.from("advisor_dna").select("pathways, volumes, party_types, countries, languages, specialties, availability, match_note, marks, approved_at, confirmed_at").eq("advisor_id", advisorId).maybeSingle();
+  return (data as DnaRow) ?? null;
+}
+export async function dnaProposals(sb: SupabaseClient, advisorId: string): Promise<DnaProposal[]> {
+  const { data } = await sb.from("advisor_dna_proposals").select("id, payload, status, house_note, created_at, decided_at").eq("advisor_id", advisorId).neq("status", "withdrawn").order("created_at", { ascending: false }).limit(5);
+  return (data ?? []) as DnaProposal[];
 }

@@ -2,10 +2,15 @@ import { notFound } from "next/navigation";
 import { requireHouse } from "@/lib/platform/membership";
 import { ADVISOR_DESK } from "@/lib/platform/flags";
 import { isUuid } from "@/lib/platform/validate";
-import { documents, signatures } from "@/lib/platform/advisor-file-data";
+import { documents, dnaProposals, publishedDna, signatures } from "@/lib/platform/advisor-file-data";
+import { DNA_PARTIES, DNA_VOLUMES, dnaChanges, fromLibrary, type DnaInput } from "@/lib/platform/advisor-dna";
+import { ADVISORS } from "@/lib/content/advisors";
+import { COUNTRIES } from "@/lib/content/countries";
+import { PATHWAYS, type PathwayId } from "@/lib/pathways";
+import staysData from "@/lib/content/stays.json";
 import { ADV_DOC_LABEL, ENTITY_TYPES, TIER_NAME, feeText, fileSteps, readyToActivate, type AdvDocKind, type FileState, type Plan } from "@/lib/platform/advisor-file";
 import { niceDate } from "@/lib/platform/labels";
-import { Activate, DecideDocument, SetPlan } from "@/components/advisor/HouseForms";
+import { Activate, DecideDna, DecideDocument, SetPlan } from "@/components/advisor/HouseForms";
 import { DataList, Section, StatusPill, TextLink } from "@/components/platform/ui";
 
 export const metadata = { title: "Advisor file" };
@@ -19,19 +24,25 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
   const { id } = await params;
   if (!isUuid(id)) notFound();
   const desk = await requireHouse(`/desk/advisors/${id}`);
-  const { data: a } = await desk.sb.from("advisors").select("id, adv_number, display_name, status, user_id, house_advisor, program_fee_minor, fee_currency, fee_period, payment_terms, activated_at").eq("id", id).maybeSingle();
+  const { data: a } = await desk.sb.from("advisors").select("id, adv_number, slug, display_name, status, user_id, house_advisor, program_fee_minor, fee_currency, fee_period, payment_terms, activated_at").eq("id", id).maybeSingle();
   if (!a) notFound();
-  const [{ data: st, error: stErr }, { data: plan }, { data: det }, docs, sigs] = await Promise.all([
+  const [{ data: st, error: stErr }, { data: plan }, { data: det }, docs, sigs, pubDna, dnaProps] = await Promise.all([
     desk.sb.rpc("advisor_file_state", { p_advisor: id }),
     desk.sb.rpc("advisor_plan_for", { p_advisor: id }),
     desk.sb.from("advisor_details").select("*").eq("advisor_id", id).maybeSingle(),
     documents(desk.sb, id),
     signatures(desk.sb, id),
+    publishedDna(desk.sb, id),
+    dnaProposals(desk.sb, id),
   ]);
   if (stErr) notFound();
   const s = st as FileState, p = plan as Plan | null;
   const ready = readyToActivate(s);
   const sig = sigs[0];
+  const waitingDna = dnaProps.find((x) => x.status === "submitted") ?? null;
+  const libraryDna = ADVISORS.find((x) => x.slug === a.slug && !x.sample)?.dna;
+  const shownDna: DnaInput | null = waitingDna?.payload ?? (pubDna ? { ...pubDna } : null);
+  const baseline: DnaInput | null = pubDna ? { ...pubDna } : libraryDna ? fromLibrary(libraryDna) : null;
   const entity = ENTITY_TYPES.find(([k]) => k === det?.entity_type)?.[1];
   return (
     <div>
@@ -82,6 +93,34 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
         ) : <p className="text-[15px] ledger-muted">Nothing filed yet.</p>}
       </Section>
 
+      <Section title="Advisor DNA">
+        {shownDna ? (
+          <>
+            {waitingDna ? <p className="text-[15px] mb-3"><StatusPill label="To review" tone="progress" /> <span className="ml-2">Sent {niceDate(waitingDna.created_at)}.{baseline ? (pubDna ? " Changes from what is published:" : " Changes from the Library's copy the site shows today:") : ""}</span></p>
+              : <p className="text-[15px] mb-3"><StatusPill label="Approved" tone="good" /> <span className="ml-2">{niceDate(pubDna?.approved_at)}{a.status === "active" ? ", on the website" : ", shows once the advisor is active"}.</span></p>}
+            {waitingDna && baseline && (() => {
+              const ch = dnaChanges(baseline, waitingDna.payload);
+              return ch.length ? (
+                <ul className="mb-4 grid gap-1 text-[14px]">
+                  {ch.map((c) => <li key={c.field}><span className="font-medium">{c.field}:</span>{c.added.length ? ` added ${c.added.map((x) => label(x)).join(", ")}` : ""}{c.removed.length ? `${c.added.length ? ";" : ""} removed ${c.removed.map((x) => label(x)).join(", ")}` : ""}{c.now !== undefined ? ` now ${c.now}` : ""}</li>)}
+                </ul>
+              ) : <p className="mb-4 text-[14px] ledger-muted">No changes: the advisor confirms it as it stands.</p>;
+            })()}
+            <DataList rows={[
+              ["Pathways", shownDna.pathways.map((p) => PATHWAYS[p as PathwayId]?.name ?? p).join(", ")],
+              ["Volumes", shownDna.volumes.map((v) => DNA_VOLUMES.find(([k]) => k === v)?.[1] ?? v).join(", ")],
+              ["Plans for", shownDna.party_types.map((v) => DNA_PARTIES.find(([k]) => k === v)?.[1] ?? v).join(", ") || "Not given"],
+              ["Countries", shownDna.countries.map(label).join(", ")],
+              ["Marks", shownDna.marks.map((m) => `${label(m.ledgerId)}: ${m.mark}${m.when ? `, ${m.when}` : ""}`).join("; ") || "None"],
+              ["Languages", shownDna.languages.join(", ") || "Not given"], ["Specialties", shownDna.specialties.join(", ") || "Not given"],
+              ["Their line", shownDna.match_note ?? "None"], ["Taking clients", shownDna.availability],
+            ]} />
+            {waitingDna && <div className="mt-4"><DecideDna id={waitingDna.id} /></div>}
+          </>
+        ) : <p className="text-[15px] ledger-muted">Not sent yet.</p>}
+        {dnaProps.find((x) => x.status === "returned" && !waitingDna) && <p className="mt-2 text-[14px] ledger-muted">Last returned: {dnaProps.find((x) => x.status === "returned")?.house_note}</p>}
+      </Section>
+
       <Section title="Agreement">
         {sig ? <p className="text-[15px]">Signed by <span className="font-medium">{sig.typed_name}</span>, version {sig.version}, {niceDate(sig.signed_at)}. <span className="font-mono text-[11.5px] ledger-muted break-all">SHA-256 {sig.body_sha256}</span></p>
           : <p className="text-[15px] ledger-muted">Not signed yet.</p>}
@@ -95,10 +134,19 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
 
       {a.status === "invited" && (
         <Section title="Activate">
-          <p className="text-[15px] mb-4">{ready ? "Every part is on file and both required documents are accepted." : "Activation opens once the details, plan and agreement are done and the tax form and insurance are accepted."}</p>
+          <p className="text-[15px] mb-4">{ready ? "Every part is on file, both required documents are accepted and the Advisor DNA is approved." : "Activation opens once the details, plan and agreement are done, the tax form and insurance are accepted and the Advisor DNA is approved."}</p>
           <Activate id={a.id} ready={ready} />
         </Section>
       )}
     </div>
   );
+}
+
+// Names for the review: countries and Ledger stays by their site name.
+const COUNTRY_NAME = new Map(COUNTRIES.map((c) => [c.slug, c.name]));
+const STAY_NAME = new Map((staysData as { stays: { ledgerId: string | null; name: string }[] }).stays.filter((x) => x.ledgerId).map((x) => [x.ledgerId as string, x.name]));
+function label(x: string): string {
+  const [id, ...rest] = x.split(" ");
+  if (STAY_NAME.has(id)) return [STAY_NAME.get(id), ...rest].join(" ");
+  return COUNTRY_NAME.get(x) ?? PATHWAYS[x as PathwayId]?.name ?? x;
 }

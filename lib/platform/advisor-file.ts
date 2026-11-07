@@ -5,12 +5,13 @@
 export type FileState = {
   details: boolean; plan: boolean; agreement: boolean; agreement_placeholder: boolean;
   tax_form: boolean; eo_insurance: boolean; tax_form_accepted: boolean; eo_insurance_accepted: boolean;
+  dna: boolean; dna_approved: boolean;
 };
 
-export type StepKey = "details" | "plan" | "agreement" | "documents";
+export type StepKey = "details" | "plan" | "agreement" | "documents" | "dna";
 export type Step = { key: StepKey; title: string; line: string; href: string; done: boolean; waiting: boolean };
 
-/** The four parts of the file, in the order an advisor does them. */
+/** The five parts of the file, in the order an advisor does them. */
 export function fileSteps(s: FileState): Step[] {
   const docsFiled = s.tax_form && s.eo_insurance;
   const docsAccepted = s.tax_form_accepted && s.eo_insurance_accepted;
@@ -19,11 +20,12 @@ export function fileSteps(s: FileState): Step[] {
     { key: "plan", title: "Your compensation plan", line: "Your tier, your share, the program fee and how you are paid.", href: "/advisor/file/plan", done: s.plan, waiting: false },
     { key: "agreement", title: "The Independent Marketing Agreement", line: "Read it in full and sign with your legal name.", href: "/advisor/file/agreement", done: s.agreement, waiting: false },
     { key: "documents", title: "Your documents", line: "Your tax form and errors and omissions insurance; registrations and certificates as they apply.", href: "/advisor/file/documents", done: docsFiled, waiting: docsFiled && !docsAccepted },
+    { key: "dna", title: "Your Advisor DNA", line: "Your Pathways, the countries you know first-hand and the stays you have slept at: what the website shows travellers.", href: "/advisor/file/dna", done: s.dna, waiting: s.dna && !s.dna_approved },
   ];
 }
 
-export const fileComplete = (s: FileState) => s.details && s.plan && s.agreement && s.tax_form && s.eo_insurance;
-export const readyToActivate = (s: FileState) => s.details && s.plan && s.agreement && s.tax_form_accepted && s.eo_insurance_accepted;
+export const fileComplete = (s: FileState) => s.details && s.plan && s.agreement && s.tax_form && s.eo_insurance && s.dna;
+export const readyToActivate = (s: FileState) => s.details && s.plan && s.agreement && s.tax_form_accepted && s.eo_insurance_accepted && s.dna_approved;
 
 // ===== details (Schedule B)
 export type Details = {

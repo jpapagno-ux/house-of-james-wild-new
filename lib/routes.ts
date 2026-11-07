@@ -306,6 +306,7 @@ export const STAY_SLUGS: string[] = [
   "da-licenca",
   "daunara-safari-camp",
   "discovery-coron",
+  "dolphin-island",
   "domes-white-coast-milos",
   "dukes-camp-okavango",
   "dulini-anabezi-lodge",

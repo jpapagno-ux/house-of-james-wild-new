@@ -1301,6 +1301,16 @@
    "released": true
   },
   {
+   "stay_id": "6aef278ec70f9dfefad9f38b",
+   "slug": "dolphin-island",
+   "name": "Dolphin Island",
+   "country": "Fiji",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae86a86abf66f88c2c86514",
    "slug": "domes-white-coast-milos",
    "name": "Domes White Coast Milos",

@@ -12437,6 +12437,126 @@
    "placeSlug": null
   },
   {
+   "slug": "dolphin-island",
+   "name": "Dolphin Island",
+   "ledgerId": "STY-2026-000641",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A 14 acre private island off Viti Levu, taken whole by one party of up to eight.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/dolphin-island/g12"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-07",
+   "coords": null,
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "About 2.5 hours from Nadi by private car (included in the rate), or by float plane or helicopter, then ten minutes on the island's own boat from Ellington Wharf.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "The Guest Lodge (the main bure, above the infinity pool, with day beds, a verandah and bi-fold doors to the sea). Four en-suite Guest Bure Suites (timber floors, high ceilings, air-conditioning, a free-standing bath and an outdoor shower in a garden courtyard). The Hilltop Bure (a thatched open-air sleep-out facing the sunrise, lit by lanterns and candles). A maximum of eight guests, and the island is never shared."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Diving in Bligh Water: four reef systems and 25 sites, 20 minutes to Hailstone Reef and just under an hour to the Vatu-i-Ra Passage. Sea kayaks, a Hobie catamaran and snorkelling from the island. Hand-line fishing (2 hours) and trawling the outer reefs (3 to 4 hours). Cooking classes with Dawn, with a visit to the local market. The Suncoast Tour and the Narara waterslide village visit. Massages and facials on the island."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A 14 acre private island, exclusive use",
+     "Up to eight guests",
+     "All inclusive, with a private car transfer from Nadi",
+     "An infinity pool below the Guest Lodge",
+     "A manager on duty around the clock; babysitting for families",
+     "No cars and no wildlife dangers: children roam free"
+    ]
+   },
+   "onlyHere": [
+    "Dolphin Island is a 14 acre private island off the northern tip of Viti Levu, ten minutes by boat from Ellington Wharf in Rakiraki. It is let to one party at a time, a maximum of eight guests, with Dawn Simpson and her Fijian team looking after the island and everyone on it."
+   ],
+   "why": [
+    {
+     "title": "An island of your own",
+     "body": "Dolphin Island is for a family or a group of friends who want a whole island and no strangers: four guest bures, a hilltop sleep-out under thatch, a pool above the sea, and days that run to your own timetable."
+    },
+    {
+     "title": "The soft coral capital",
+     "body": "It sits in Bligh Water, among four reef systems and 25 dive sites, with the Vatu-i-Ra Passage less than an hour away. Kayaks, a catamaran and snorkelling start from the beach."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN). A 2.5 hour private car transfer is included, or float plane or helicopter, then ten minutes by the island's boat.",
+    "signature_experiences": "Diving the soft corals of Bligh Water, kayaking and sailing between islands, cooking with Dawn, a night in the Hilltop Bure.",
+    "who_its_for": "One family or group of up to eight who want an entire island to themselves."
+   },
+   "faqs": [
+    {
+     "q": "Where is Dolphin Island?",
+     "a": "Off the northern tip of Viti Levu, Fiji's main island, ten minutes by boat from Ellington Wharf in Rakiraki."
+    },
+    {
+     "q": "How many guests can stay on Dolphin Island?",
+     "a": "A maximum of eight, and the island is exclusive use: you never share it with anyone you do not know."
+    },
+    {
+     "q": "How do you get to Dolphin Island?",
+     "a": "A 2.5 hour private car transfer from Nadi International Airport is included in the rate; float plane and helicopter are also possible. The island's boat makes the last ten minutes."
+    },
+    {
+     "q": "Is Dolphin Island good for families?",
+     "a": "Yes. Children of all ages are welcome, there are no cars and no wildlife dangers, the team can babysit, and children's menus are made to order."
+    },
+    {
+     "q": "Can you dive from Dolphin Island?",
+     "a": "Yes. Four reef systems with 25 dive sites are within reach, from 20 minutes to Hailstone Reef to just under an hour to the Vatu-i-Ra Passage."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "Islands and oceans",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-07"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "domes-white-coast-milos",
    "name": "Domes White Coast Milos",
    "ledgerId": "STY-2026-000564",

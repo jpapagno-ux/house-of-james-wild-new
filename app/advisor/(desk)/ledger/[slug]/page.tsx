@@ -16,8 +16,8 @@ import { DataList, PageHead, Section, StatusPill, TextLink } from "@/components/
 export const metadata = { title: "The Ledger" };
 
 // One Ledger record as an advisor needs it: how it is priced, the offers running, what the stay
-// includes, the host, the founder's testimony and who else in the house knows it. Read-only: quotes
-// and holds come with the next step.
+// includes, the host, the founder's testimony and who else in the house knows it. Request a quote
+// sends it to the house (step 5).
 export default async function AdvisorLedgerRecord({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   if (!/^[a-z0-9-]{1,120}$/.test(slug)) notFound();
@@ -41,6 +41,7 @@ export default async function AdvisorLedgerRecord({ params }: { params: Promise<
     <>
       <PageHead eyebrow={`The Ledger · ${r.ledgerId ?? "no Ledger ID"}`} title={r.name} lead={r.tagline ?? undefined}
         actions={<span className="flex flex-wrap gap-4"><TextLink href="/advisor/ledger">The Ledger</TextLink>{r.href && <TextLink href={r.href}>The public page</TextLink>}</span>} />
+      <p className="mt-5"><a href={`/advisor/requests/new?stay=${r.slug}`} className="ledger-btn ledger-btn--solid">Request a quote</a></p>
       <div className="mt-4 flex flex-wrap items-center gap-2">
         {r.pathways.map((p) => <PathwayChip key={p.id} {...p} />)}
         <StatusPill label={RATE_LABEL[r.rate.kind]} tone={r.rate.kind === "request" ? "neutral" : "good"} />

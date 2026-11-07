@@ -54193,6 +54193,139 @@
    "placeSlug": null
   },
   {
+   "slug": "vomo-island",
+   "name": "VOMO Island",
+   "ledgerId": "STY-2026-000639",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A 255 acre private island between the Mamanucas and the Yasawas, all inclusive, with seven beachfront residences.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g11",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/vomo-island/g12"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-07",
+   "coords": null,
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "About 15 minutes by helicopter from Nadi International Airport or Denarau, in daylight; or a 20 minute drive to Vuda Point Marina and about 35 minutes by VOMO's speedboat, any time from 5 am to 9 pm. Check-in 2 pm, check-out 11 am.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "The Residence (four bedrooms over three pavilions, up to 8 guests)",
+     "The Palms (four bedrooms, on Yasawa Beach)",
+     "Taleitaki (four bedrooms, 410 sq m, up to 8 guests)",
+     "The Royal (three bedrooms over two pavilions, with a show kitchen)",
+     "The BeacHouse (three bedrooms, 14 metre infinity pool)",
+     "Totoka (three bedrooms under one roof, near the northwestern tip)",
+     "Beachfront Family Retreats (interconnecting for larger families)",
+     "Two Bedroom Rocks Villas (private plunge pool)",
+     "Hillside Villas (garden and ocean views)"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "A daily escorted snorkel safari",
+     "Scuba diving, including kids' diving",
+     "The climb up Mt Vomo",
+     "Picnics on Vomo Lailai",
+     "Golf on a 9 hole par 3 course, and tennis",
+     "The adults only Rocks Pool",
+     "A weekly meke night with kava"
+    ]
+   },
+   "features": {
+    "paras": [
+     "A 255 acre private island. 34 villas and seven multi-bedroom residences, each residence with a butler. All inclusive: meals, non-alcoholic drinks, laundry, Wi-Fi and non-motorised watersports. The Kids' Village, with clubs for three age groups. Kui Spa and the Vuda Restaurant. The whole island can be hired."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "VOMO is a 255 acre private island between the Mamanuca and Yasawa groups, 15 minutes from Nadi by helicopter. It is all inclusive, built around families, and holds seven multi-bedroom residences on its beaches, each with its own butler."
+   ],
+   "why": [
+    {
+     "title": "A family island, close to Nadi",
+     "body": "VOMO is for families who want an island that is easy to reach and easy to be on: meals and most activities are included, the Kids' Village runs clubs for three age groups, and there is an adults only pool at The Rocks for the grown-ups. In 2026 it became the first resort in the Pacific accredited by the Luxury Childcare Association."
+    },
+    {
+     "title": "Room for everyone",
+     "body": "Seven residences of three to five bedrooms line the beaches, from The Royal and The BeacHouse to The Reef House, the island's largest, and the whole island can be taken for a wedding or a family celebration."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN). Helicopter about 15 minutes from Nadi or Denarau in daylight; or 20 minutes by road to Vuda Point Marina and about 35 minutes by VOMO's speedboat, 5 am to 9 pm.",
+    "signature_experiences": "A daily snorkel safari, diving, the climb up Mt Vomo, picnics on Vomo Lailai, the adults only Rocks Pool, Kui Spa and a weekly meke night.",
+    "who_its_for": "Families of every age, multi-generational groups in the residences, and couples who want an easy, all inclusive island."
+   },
+   "faqs": [
+    {
+     "q": "Where is VOMO Island?",
+     "a": "Between the Mamanuca and Yasawa groups of islands, off Fiji's west coast: 255 acres of private island."
+    },
+    {
+     "q": "How do you get to VOMO?",
+     "a": "About 15 minutes by helicopter from Nadi or Denarau, or a 20 minute drive to Vuda Point Marina and about 35 minutes by VOMO's own speedboat."
+    },
+    {
+     "q": "Is VOMO all inclusive?",
+     "a": "Yes. The rate covers meals at the designated restaurants, non-alcoholic drinks, daily laundry, Wi-Fi, non-motorised watersports and activities including a daily snorkel safari, golf, tennis and the Kids' Village."
+    },
+    {
+     "q": "Is VOMO good for families?",
+     "a": "Yes. The Kids' Village runs clubs for three age groups, and in 2026 VOMO became the first resort in the Pacific accredited by the Luxury Childcare Association."
+    },
+    {
+     "q": "What residences does VOMO have?",
+     "a": "Seven, of three to five bedrooms: The Reef House, The Residence, The Palms, Taleitaki, The Royal, The BeacHouse and Totoka, each with a butler."
+    },
+    {
+     "q": "Can we hire the whole island?",
+     "a": "Yes. VOMO can be booked exclusively for weddings, birthdays, family celebrations and corporate events."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "Islands and oceans",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-07"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "velaa-private-island",
    "name": "Velaa\nPrivate\nIsland",
    "ledgerId": "STY-2026-000327",

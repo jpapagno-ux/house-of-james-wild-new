@@ -660,6 +660,7 @@ export const STAY_SLUGS: string[] = [
   "vermejo-ted-turner-reserve",
   "viceroy-bali",
   "villa-bokeh",
+  "vomo-island",
   "wilderness-bisate-lodge",
   "wilderness-bisate-reserve",
   "wilderness-busanga",

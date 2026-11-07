@@ -5294,6 +5294,16 @@
    "released": true
   },
   {
+   "stay_id": "6aef21ca56d0bf7f5bb759a9",
+   "slug": "vomo-island",
+   "name": "VOMO Island",
+   "country": "Fiji",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9f9",
    "slug": "wilderness-abu-camp",
    "name": "Wilderness Abu Camp",

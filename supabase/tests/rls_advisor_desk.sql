@@ -8,7 +8,7 @@ do $$
 declare
   jw uuid := gen_random_uuid(); aa uuid := gen_random_uuid(); ab uuid := gen_random_uuid();
   t1 uuid := gen_random_uuid(); t2 uuid := gen_random_uuid(); lg uuid := gen_random_uuid();
-  o_jw uuid; o_ag uuid; p uuid; rt uuid; rp uuid; pd1 uuid; pd2 uuid; dna jsonb;
+  o_jw uuid; o_ag uuid; p uuid; rt uuid; rp uuid; pd1 uuid; pd2 uuid; dna jsonb; rq uuid;
   adv_a uuid; adv_b uuid; q1 uuid; q2 uuid; b1 uuid; b2 uuid; f1 uuid; f2 uuid;
   n int; ok boolean;
   ai uuid := gen_random_uuid(); adv_i uuid; ag uuid; d1 uuid; d2 uuid; js jsonb;
@@ -262,6 +262,45 @@ begin
   perform set_config('role', 'anon', true);
   begin select count(*) into n from public.advisor_agreements; ok := n = 0; exception when insufficient_privilege then ok := true; end;
   r := r || jsonb_build_object('t', 'T27 the public sees no agreement or file', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+
+  -- (R) step 5: quote requests
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', aa, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  js := public.create_advisor_request(jsonb_build_object('client_name', 'Ana Reyes', 'client_email', 'Ana@Example.test', 'stay_slug', 'lion-sands', 'ledger_id', 'STY-2026-290658', 'stay_name', 'Lion Sands Reserve',
+    'arrival', (current_date + 120)::text, 'departure', (current_date + 123)::text, 'adults', 2, 'child_ages', '[12]'::jsonb, 'notes', 'Anniversary', 'estimate', '{"source":"MORE rate card","options":[]}'::jsonb));
+  rq := (js ->> 'id')::uuid;
+  r := r || jsonb_build_object('t', 'R01 an active advisor sends a request with a house reference', 'pass', js ->> 'ref' ~ '^AR-\d{4}-\d{6}$' and (select client_email from public.advisor_requests where id = rq) = 'ana@example.test');
+  begin perform public.create_advisor_request(jsonb_build_object('client_name', 'Ana', 'stay_slug', 'lion-sands', 'stay_name', 'x', 'arrival', (current_date - 1)::text, 'departure', (current_date + 2)::text, 'adults', 2)); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'R02 not for a past arrival', 'pass', ok);
+  begin insert into public.advisor_requests (advisor_id, client_name, stay_slug, stay_name, arrival, departure, adults, created_by) values (adv_a, 'X Y', 'x', 'x', current_date + 5, current_date + 6, 1, aa); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'R03 no writing the table directly', 'pass', ok);
+  begin perform public.decide_advisor_request(rq, 'held', 100000, 'USD', current_date + 3, null, null); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'R04 an advisor cannot price or hold their own request', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', ab, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  select count(*) into n from public.advisor_requests where id = rq;
+  r := r || jsonb_build_object('t', 'R05 another advisor cannot see it', 'pass', n = 0);
+  begin perform public.withdraw_advisor_request(rq); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'R06 nor withdraw it', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+  select count(*) into n from public.advisor_requests where id = rq;
+  r := r || jsonb_build_object('t', 'R07 the house without the code sees nothing', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  begin perform public.decide_advisor_request(rq, 'held', null, null, current_date + 3, null, null); ok := false; exception when others then ok := sqlerrm like '%price%'; end;
+  r := r || jsonb_build_object('t', 'R08 a hold needs a price', 'pass', ok);
+  perform public.decide_advisor_request(rq, 'pricing', null, null, null, null, null);
+  perform public.decide_advisor_request(rq, 'held', 1840000, 'USD', current_date + 3, current_date + 10, 'Ivory Lodge suite held');
+  r := r || jsonb_build_object('t', 'R09 the house prices and holds it', 'pass', (select status = 'held' and price_minor = 1840000 and hold_until = current_date + 3 from public.advisor_requests where id = rq));
+  perform set_config('request.jwt.claims', json_build_object('sub', aa, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  select count(*) into n from public.advisor_requests where id = rq and status = 'held' and house_note like 'Ivory%';
+  r := r || jsonb_build_object('t', 'R10 the advisor sees the hold, price and note', 'pass', n = 1);
+  perform public.withdraw_advisor_request(rq);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  begin perform public.decide_advisor_request(rq, 'confirmed', 1840000, 'USD', null, null, null); ok := false; exception when others then ok := sqlerrm like '%closed%'; end;
+  r := r || jsonb_build_object('t', 'R11 a withdrawn request is closed', 'pass', ok);
+  perform set_config('role', 'anon', true);
+  begin select count(*) into n from public.advisor_requests; ok := n = 0; exception when insufficient_privilege then ok := true; end;
+  r := r || jsonb_build_object('t', 'R12 the public sees no request', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
   raise exception 'ADVISOR_DESK_RLS %', r;

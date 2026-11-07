@@ -11,10 +11,9 @@ export default async function AdvisorDeskLayout({ children }: { children: React.
   const active = a.advisor.status === "active";
   // Until the house activates them, an advisor sees only their file.
   const items: RailItem[] = active
-    ? [{ href: "/advisor", label: "Overview" }, { href: "/advisor/ledger", label: "The Ledger" }, { href: "/advisor/clients", label: "My clients" }, { href: "/advisor/file", label: "My file" }]
+    ? [{ href: "/advisor", label: "Overview" }, { href: "/advisor/ledger", label: "The Ledger" }, { href: "/advisor/requests", label: "Quote requests" }, { href: "/advisor/clients", label: "My clients" }, { href: "/advisor/file", label: "My file" }]
     : [{ href: "/advisor/file", label: "My file" }];
   const later: RailItem[] = !active ? [] : [
-    { href: "#", label: "Quote and hold", soon: "soon" },
     { href: "#", label: "Earnings", soon: "soon" },
     { href: "#", label: "My profile", soon: "soon" },
   ];

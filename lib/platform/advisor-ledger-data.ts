@@ -9,6 +9,7 @@ import { isPast } from "@/lib/dates";
 import { founderProof, type HouseStatus } from "@/lib/ledger/status";
 import { ADVISORS } from "@/lib/content/advisors";
 import type { LedgerRow } from "./advisor-ledger";
+import { tswaluFrom } from "./advisor-estimate";
 
 // The Ledger as advisors see it: every stay on file with its Pathways, how it is priced, its live offers,
 // the founder's testimony and the advisor's own mark. Built from the same data the website shows; never
@@ -16,6 +17,8 @@ import type { LedgerRow } from "./advisor-ledger";
 
 /** The house's MORE rate card for a stay page, from its current year: the lowest "from" rate. */
 function cardRate(slug: string): LedgerRow["rate"] | null {
+  // Tswalu's published 2026 and 2027 rates (lib/content/rates/tswalu-rates.ts): the example card (James, 7 Nov 2026).
+  if (slug === "tswalu-reserve") return { kind: "card", fromUsd: tswaluFrom(), basis: "per person per night sharing", estimated: false };
   const page = MORE.pages[`stay:${slug}`];
   if (!page) return null;
   const years = Object.values(MORE.properties[page.property]?.years ?? {}).filter((y) => !isPast(y.validTo));

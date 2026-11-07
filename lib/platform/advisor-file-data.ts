@@ -41,3 +41,23 @@ export async function dnaProposals(sb: SupabaseClient, advisorId: string): Promi
   const { data } = await sb.from("advisor_dna_proposals").select("id, payload, status, house_note, created_at, decided_at").eq("advisor_id", advisorId).neq("status", "withdrawn").order("created_at", { ascending: false }).limit(5);
   return (data ?? []) as DnaProposal[];
 }
+
+// ===== Quote requests (step 5)
+export type AdvisorRequest = {
+  id: string; ref: string; advisor_id: string; client_name: string; client_email: string | null; stay_slug: string; ledger_id: string | null; stay_name: string;
+  arrival: string; departure: string; adults: number; child_ages: number[]; room_pref: string | null; notes: string | null;
+  estimate: import("./advisor-estimate").Estimate; status: import("./advisor-requests").RequestStatus; price_minor: number | null; currency: string | null;
+  hold_until: string | null; valid_until: string | null; house_note: string | null; created_at: string; updated_at: string;
+};
+const REQ_COLS = "id, ref, advisor_id, client_name, client_email, stay_slug, ledger_id, stay_name, arrival, departure, adults, child_ages, room_pref, notes, estimate, status, price_minor, currency, hold_until, valid_until, house_note, created_at, updated_at";
+export async function advisorRequests(sb: SupabaseClient, opts: { advisorId?: string; open?: boolean } = {}): Promise<AdvisorRequest[]> {
+  let q = sb.from("advisor_requests").select(REQ_COLS).order("created_at", { ascending: false }).limit(200);
+  if (opts.advisorId) q = q.eq("advisor_id", opts.advisorId);
+  if (opts.open) q = q.in("status", ["sent", "pricing", "held"]);
+  const { data } = await q;
+  return (data ?? []) as AdvisorRequest[];
+}
+export async function advisorRequest(sb: SupabaseClient, id: string): Promise<AdvisorRequest | null> {
+  const { data } = await sb.from("advisor_requests").select(REQ_COLS).eq("id", id).maybeSingle();
+  return (data as AdvisorRequest) ?? null;
+}

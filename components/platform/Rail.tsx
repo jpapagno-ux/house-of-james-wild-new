@@ -8,13 +8,13 @@ import { usePathname } from "next/navigation";
 
 export type RailItem = { href: string; label: string; count?: number; soon?: string };
 
-export default function Rail({ items, later, house }: { items: RailItem[]; later: RailItem[]; house: boolean }) {
+export default function Rail({ items, later, house, root = "/partner", label = "Partner Desk" }: { items: RailItem[]; later: RailItem[]; house: boolean; root?: string; label?: string }) {
   const path = usePathname() ?? "";
-  const isActive = (href: string) => (href === "/partner" ? path === "/partner" : path === href || path.startsWith(`${href}/`));
+  const isActive = (href: string) => (href === root ? path === root : path === href || path.startsWith(`${href}/`));
   return (
     <>
       {/* phones */}
-      <nav aria-label="Partner Desk" className="md:hidden -mx-5 px-5 border-b ledger-rule overflow-x-auto">
+      <nav aria-label={label} className="md:hidden -mx-5 px-5 border-b ledger-rule overflow-x-auto">
         <ul className="flex gap-5 min-w-max">
           {items.map((i) => (
             <li key={i.href}>
@@ -28,7 +28,7 @@ export default function Rail({ items, later, house }: { items: RailItem[]; later
         </ul>
       </nav>
       {/* tablet and desktop */}
-      <nav aria-label="Partner Desk" className="hidden md:block">
+      <nav aria-label={label} className="hidden md:block">
         <ul className="border-t ledger-rule">
           {items.map((i) => {
             const on = isActive(i.href);
@@ -46,12 +46,14 @@ export default function Rail({ items, later, house }: { items: RailItem[]; later
         {house && (
           <Link href="/desk/review" className="mt-5 block border ledger-crimson-border ledger-crimson px-3 py-2.5 text-[13px] hover:bg-[#F6ECEC]">House review queue →</Link>
         )}
-        <p className="ledger-eyebrow mt-8">Coming soon</p>
-        <ul className="mt-2">
-          {later.map((i) => (
-            <li key={i.label} className="py-1.5 pl-3 text-[13.5px] ledger-muted">{i.label}</li>
-          ))}
-        </ul>
+        {later.length > 0 && <>
+          <p className="ledger-eyebrow mt-8">Coming soon</p>
+          <ul className="mt-2">
+            {later.map((i) => (
+              <li key={i.label} className="py-1.5 pl-3 text-[13.5px] ledger-muted">{i.label}</li>
+            ))}
+          </ul>
+        </>}
       </nav>
     </>
   );

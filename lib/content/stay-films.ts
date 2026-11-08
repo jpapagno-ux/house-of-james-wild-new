@@ -19,6 +19,7 @@ export const STAY_FILMS: Record<string, WideFilm> = {
     hero: true,
   },
   // 4K brand film "To Wander" (80 s), played from Kokomo's own Vimeo in background mode (adaptive, so phones get a light stream).
+  "matangi-island": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/fiji/matangi-island/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/fiji/matangi-island/film.mp4`, poster: `${CLD}/so_0,q_auto,f_jpg,w_1920/jwco/stays/fiji/matangi-island/film.jpg`, title: "Matangi Island from the air", credit: "Film courtesy of Matangi Private Island Resort", hero: true },
   "kokomo-private-island": {
     kind: "vimeo",
     id: "1128730742",

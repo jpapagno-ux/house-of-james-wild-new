@@ -29,10 +29,22 @@ SEA_MODES = {"sea", "ship", "vessel", "boat", "zodiac", "kayak"}
 _LAND = {}
 
 
+COAST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "coast")
+COAST_ALIAS = {"antarctica": "polar"}   # the Peninsula chart sits inside the polar coastline
+
+
+def coast_file(maps_dir, dest):
+    """The coastline a destination's legs are routed round: the OSM land polygons clipped for it (scripts/data/coast,
+    built by scripts/coast-clip.py; James, 8 Nov 2026: the MapTiler 3D map draws OSM's coast, so the lanes must too),
+    else the chart's own land (public/maps/data/<dest>/base.geojson)."""
+    c = os.path.join(COAST_DIR, f"{COAST_ALIAS.get(dest, dest)}.geojson")
+    return c if dest and os.path.exists(c) else os.path.join(maps_dir, "data", dest, "base.geojson")
+
+
 def land_of(maps_dir, dest):
-    """The chart's land polygons for a destination: a list of (bbox, [ring, ...]) with rings as (n, 2) [lng, lat]."""
+    """The land polygons for a destination: a list of (bbox, [ring, ...]) with rings as (n, 2) [lng, lat]."""
     if dest in _LAND: return _LAND[dest]
-    f = os.path.join(maps_dir, "data", dest, "base.geojson")
+    f = coast_file(maps_dir, dest)
     out = []
     if dest and os.path.exists(f):
         for ft in json.load(open(f))["features"]:

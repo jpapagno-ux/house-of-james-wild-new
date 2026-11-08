@@ -9,8 +9,16 @@ export const TERRAIN_PAGES = [
   // Fiji place guides (James, 7 Nov 2026: "try maps on these next two"): Beqa Lagoon and the Yasawas.
   "destinations/oceania/fiji/beqa-lagoon-and-pacific-harbour",
   "destinations/oceania/fiji/yasawa-islands",
+  // Site-wide voyage sweep (James, 8 Nov 2026: Galapagos and Antarctica in MapTiler 3D, every line round the islands):
+  // every ship page whose waters are in TERRAIN_WATERS, and every polar voyage page.
+  "voyages/ships",
+  "voyages/polar",
 ] as const;
 export type TerrainPage = (typeof TERRAIN_PAGES)[number];
+
+/** Waters whose ship pages carry "See It in 3D" (their route files are routed round the OSM coastline). */
+export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji"] as const;
+export const terrainWaters = (w: string | undefined) => !!w && (TERRAIN_WATERS as readonly string[]).includes(w);
 
 export const terrainOn = (page: string): page is TerrainPage =>
   process.env.NEXT_PUBLIC_TERRAIN_PILOT !== "false" && (TERRAIN_PAGES as readonly string[]).includes(page);

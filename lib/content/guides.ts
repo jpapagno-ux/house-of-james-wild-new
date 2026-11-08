@@ -34,7 +34,7 @@ export type Guide = {
   /** The 3D terrain flyover (MapTiler, components/maps/terrain): a points view of the place's stays, or a voyage route.
    *  Shown only where the page key is in TERRAIN_PAGES (components/maps/terrain/flag.ts). Pins only from brands and
    *  operators; positions approximate. */
-  see3d?: { page: string; title: string; intro: string; playLabel?: string; points?: { name: string; lat: number; lng: number }[]; routes?: { name: string; stops: { name: string; lat: number; lng: number; day?: number }[] }[] };
+  see3d?: { page: string; title: string; intro: string; playLabel?: string; points?: { name: string; lat: number; lng: number }[]; routes?: { name: string; /** a route file (public/maps/routes) whose sea lanes the map draws; stops are the fallback */ file?: string; stops: { name: string; lat: number; lng: number; day?: number }[] }[] };
   /** A country guide (Indonesia): list every released stay filed under the country, founder favourites first. */
   countryStays?: boolean;
   /** Stays the house has selected for this place (slugs from the library export). The place exists with or without them. */

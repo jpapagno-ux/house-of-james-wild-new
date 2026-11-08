@@ -11,6 +11,7 @@ import { exceptionalFewForVessel } from "@/lib/content/exceptional-few";
 import FounderOcean from "@/components/advisor/FounderOcean";
 import { founderOceanForVoyage } from "@/lib/content/founder-ocean";
 import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
+import { terrainWaters } from "@/components/maps/terrain/flag";
 import { volumeMark } from "@/lib/volumes";
 import type { ShipRecord } from "@/lib/content/ships/types";
 import { readRoute, shipRouteId } from "@/lib/content/ships/routes";
@@ -45,12 +46,20 @@ export default async function ShipPage({ params }: P) {
   const fleet = JOURNEY_FLEETS.find((f) => f.ships.includes(e.slug));
   const journeys = sailsJourneys(e.slug) ? <CharterJourneys ship={e.data.name} ships={[e.slug]} partner={fleet?.partner} /> : null;
   const ocean = founderOceanForVoyage(shipPath(e.slug), e.waters);
-  // 3D terrain (allow-listed page, components/maps/terrain/flag.ts): the volcanoes of the western islands under the 8-day weeks.
-  const terrain = e.slug === "natural-paradise-yacht" ? (() => {
-    const weeks = (e.data as ShipRecord).itineraries.filter((i) => i.days.length && i.nights === 7).reverse(); // Week B first: the western volcanoes
-    return weeks.length ? <SeeIn3D page="voyages/ships/natural-paradise-yacht" kind="voyage" ink={volumeMark("voyages")} title={`${e.data.name} in the Galapagos`} exaggeration={1.8}
-      routes={weeks.map((w) => terrainRoute(w.name.split(":")[0], readRoute(shipRouteId(e.data as ShipRecord, w)), w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode }))))}
-      intro="Both 8-day weeks over the islands themselves: Isabela's and Fernandina's shield volcanoes, Santa Cruz's highlands and the low eastern islands, with the yacht's line drawn day by day." /> : null;
-  })() : null;
+  // 3D terrain (components/maps/terrain/flag.ts): Natural Paradise's volcano weeks (the 3 Nov pilot), then every ship in
+  // the 3D waters (James, 8 Nov 2026: Galapagos, Antarctica, Fiji), each week on its own routed line round the islands.
+  const terrain = (() => {
+    const rec = e.data as ShipRecord;
+    const pilot = e.slug === "natural-paradise-yacht";
+    if (!pilot && !terrainWaters(e.waters)) return null;
+    const weeks = pilot ? rec.itineraries.filter((i) => i.days.length && i.nights === 7).reverse() : (rec.itineraries ?? []).filter((i) => i.days.length && readRoute(shipRouteId(rec, i)));
+    if (!weeks.length) return null;
+    const routes = weeks.map((w) => terrainRoute(w.name.split(":")[0], readRoute(shipRouteId(rec, w)), w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode }))));
+    const where = e.waters === "galapagos" ? "in the Galapagos" : e.waters === "fiji" ? "in Fiji" : "in Antarctica";
+    const intro = pilot
+      ? "Both 8-day weeks over the islands themselves: Isabela's and Fernandina's shield volcanoes, Santa Cruz's highlands and the low eastern islands, with the yacht's line drawn day by day."
+      : `Every itinerary over the real terrain, the line drawn day by day round the islands as the ship sails it.${routes.length > 1 ? " Pick an itinerary to fly it." : ""}`;
+    return <SeeIn3D page={pilot ? "voyages/ships/natural-paradise-yacht" : "voyages/ships"} kind="voyage" ink={volumeMark("voyages")} title={`${e.data.name} ${where}`} exaggeration={1.8} routes={routes} intro={intro} />;
+  })();
   return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, itineraryAfter: terrain, after: <>{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;
 }

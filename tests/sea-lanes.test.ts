@@ -18,7 +18,9 @@ const lands = new Map<string, Poly[]>();
 
 function landOf(dest: string): Poly[] {
   if (lands.has(dest)) return lands.get(dest)!;
-  const f = `${MAPS}/data/${dest}/base.geojson`;
+  // The OSM coastline the MapTiler 3D map draws (scripts/data/coast, James, 8 Nov 2026), else the chart's own land.
+  const coast = `scripts/data/coast/${dest === "antarctica" ? "polar" : dest}.geojson`;
+  const f = dest && existsSync(coast) ? coast : `${MAPS}/data/${dest}/base.geojson`;
   const out: Poly[] = [];
   if (dest && existsSync(f) && !existsSync(`${MAPS}/data/${dest}/overlay.geojson`)) {
     for (const ft of JSON.parse(readFileSync(f, "utf8")).features as { properties?: { layer?: string }; geometry: { type: string; coordinates: unknown } }[]) {
@@ -116,4 +118,23 @@ test("Komodo: the first leg sails round the north of Komodo Island, not over its
   assert.ok(Math.max(...leg.path!.map((p) => p[1])) > -8.45);
   const straight: LngLat[] = [[r.stops[0].lng, r.stops[0].lat], [leg.lng, leg.lat]];
   assert.notEqual(crossing(straight, landOf("komodo")), null, "the straight line would cross Komodo (the bug this guards)");
+});
+
+test("every sailed line the 3D map draws (the routed lane, rounded) keeps off the OSM coast, site wide", () => {
+  // James, 8 Nov 2026: "you don't want them going through the islands": all waters, not just the pilots.
+  const bad: string[] = [];
+  for (const r of ROUTES.filter(sailed)) {
+    const land = landOf(r.destination!);
+    legsOf(r.stops).forEach((leg, i) => {
+      const s = r.stops[i + 1];
+      if (!SEA.has(String(s.mode ?? "sea").toLowerCase())) return;
+      const hit = crossing(smoothLine(leg), land);
+      if (hit) bad.push(`${r.id}: ${r.stops[i].name} > ${s.name} (rounded) at ${hit[1].toFixed(3)}, ${hit[0].toFixed(3)}`);
+    });
+  }
+  assert.deepEqual(bad, []);
+});
+
+test("the waters James named have OSM coastlines to route round: Galapagos, Antarctica and the polar seas, Fiji", () => {
+  for (const d of ["galapagos", "antarctica", "polar", "fiji"]) assert.ok(landOf(d).length > 20, `${d}: no coastline`);
 });

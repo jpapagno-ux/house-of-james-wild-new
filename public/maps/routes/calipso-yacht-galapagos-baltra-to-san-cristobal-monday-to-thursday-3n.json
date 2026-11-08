@@ -30,8 +30,8 @@
      -0.5833
     ],
     [
-     -90.1942,
-     -0.6972
+     -90.1716,
+     -0.6746
     ],
     [
      -90.43,
@@ -69,11 +69,20 @@
      -0.82
     ],
     [
+     -89.9727,
+     -0.8175
+    ],
+    [
+     -89.6172,
+     -0.8979
+    ],
+    [
      -89.6103,
      -0.9017
     ]
    ],
-   "kind": "port"
+   "kind": "port",
+   "lane": "sea"
   }
  ],
  "map_note": "River course and positions approximate, not a navigational chart",

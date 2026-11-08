@@ -26,6 +26,8 @@ import { guideSlides } from "@/lib/content/guide-slides";
 import { RecordCard } from "@/components/hub/Hub";
 import IslandZoom from "@/components/destination/IslandZoom";
 import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
+import { terrainRoute } from "@/components/maps/terrain/routed";
+import { readRoute } from "@/lib/content/ships/routes";
 import type { TerrainPage } from "@/components/maps/terrain/flag";
 import { volumeMark } from "@/lib/volumes";
 import ChartFlyover from "@/components/destination/ChartFlyover";
@@ -454,7 +456,7 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
 
           {map}
           {g.zoom && <IslandZoom zoom={g.zoom} />}
-          {g.see3d && <SeeIn3D page={g.see3d.page as TerrainPage} id={`see-${g.slug}-in-3d`} kind={g.see3d.routes ? "voyage" : "points"} ink={volumeMark(g.see3d.routes ? "voyages" : "stays")} title={g.see3d.title} exaggeration={1.8} playLabel={g.see3d.playLabel ?? (g.see3d.routes ? "Play the voyage" : "Fly the lagoon")} points={g.see3d.points} routes={g.see3d.routes} intro={g.see3d.intro} />}
+          {g.see3d && <SeeIn3D page={g.see3d.page as TerrainPage} id={`see-${g.slug}-in-3d`} kind={g.see3d.routes ? "voyage" : "points"} ink={volumeMark(g.see3d.routes ? "voyages" : "stays")} title={g.see3d.title} exaggeration={1.8} playLabel={g.see3d.playLabel ?? (g.see3d.routes ? "Play the voyage" : "Fly the lagoon")} points={g.see3d.points} routes={g.see3d.routes?.map((r) => (r.file ? terrainRoute(r.name, readRoute(r.file), r.stops) : r))} intro={g.see3d.intro} />}
           {g.flyover && (() => { const f = flyover(g.flyover); return f ? <ChartFlyover {...f} /> : null; })()}
 
           {whenSec}

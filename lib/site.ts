@@ -273,6 +273,10 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/destinations/oceania/tahiti/bora-bora", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/oceania/tahiti/tuamotu", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/oceania/tahiti/marquesas", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/oceania/fiji/yasawa-islands", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/oceania/fiji/mamanuca-islands", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/oceania/fiji/vanua-levu-and-taveuni", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/oceania/fiji/kadavu", priority: 0.8, changeFrequency: "monthly" },
   // Voyages, the Aliikai profile and the Costa Rica route: approved on the Ledger Proofs sheet, 27 Oct 2026.
   { path: "/voyages/ships/aliikai", priority: 0.8, changeFrequency: "monthly" },
   // The Nile hub and the A&K Sanctuary ships: approved by James, 1 Nov 2026.

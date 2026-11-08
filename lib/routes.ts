@@ -112,6 +112,8 @@ export const BUILT: string[] = [
   // Windstar in French Polynesia (2 Nov 2026)
   "/voyages/ships/star-breeze",
   "/voyages/ships/wind-star",
+  // Blue Lagoon Cruises in Fiji (7 Nov 2026)
+  "/voyages/ships/yasawa-princess-ii",
   "/safaris",
   "/safaris/wild-co-safaris",
   // Reserves and their camps (scripts/export-reserves.py)

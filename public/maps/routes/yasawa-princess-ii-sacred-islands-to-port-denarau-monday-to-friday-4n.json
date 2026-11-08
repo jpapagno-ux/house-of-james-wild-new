@@ -1,0 +1,91 @@
+{
+ "id": "yasawa-princess-ii-sacred-islands-to-port-denarau-monday-to-friday-4n",
+ "type": "voyage",
+ "destination": "fiji",
+ "title": "Wanderer, 4 nights aboard Yasawa Princess II",
+ "subtitle": "4 nights · Sacred Islands to Port Denarau, Monday to Friday · Yasawa Princess II",
+ "days": {
+  "1": "By catamaran to the Sacred Islands",
+  "2": "The Blue Lagoon and Nanuya Lailai",
+  "3": "Lo's Tea House and the Sawa-i-Lau caves",
+  "4": "Drawaqa and the manta rays",
+  "5": "Return to Port Denarau"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Yalobi Bay and the Sacred Islands, Waya",
+   "lat": -17.3,
+   "lng": 177.125,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Blue Lagoon, Nanuya Lailai",
+   "lat": -16.94,
+   "lng": 177.365,
+   "mode": "sea",
+   "path": [
+    [
+     177.125,
+     -17.3
+    ],
+    [
+     177.365,
+     -16.94
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Sawa-i-Lau",
+   "lat": -16.85,
+   "lng": 177.47,
+   "mode": "sea",
+   "path": [
+    [
+     177.365,
+     -16.94
+    ],
+    [
+     177.47,
+     -16.85
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Drawaqa Island",
+   "lat": -17.17,
+   "lng": 177.205,
+   "mode": "sea",
+   "path": [
+    [
+     177.47,
+     -16.85
+    ],
+    [
+     177.205,
+     -17.17
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Port Denarau",
+   "lat": -17.773,
+   "lng": 177.383,
+   "mode": "sea",
+   "path": [
+    [
+     177.205,
+     -17.17
+    ],
+    [
+     177.383,
+     -17.773
+    ]
+   ]
+  }
+ ]
+}

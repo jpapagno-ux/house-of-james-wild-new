@@ -20,7 +20,7 @@ import type { PathwayId } from "@/lib/pathways";
 
 export type VoyageType = "river" | "sailing" | "expedition" | "charter";
 /** antarctica and patagonia: the polar waters, both listed in Polar Crossings (/voyages/polar). */
-export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti";
+export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
 export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran" | "bangka";
 /** The operator's own class label (Galápagos, James, 2 Nov 2026): the hub groups ships by partner and tier.
@@ -281,6 +281,13 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     pathway: { primary: "PATH-02", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2027-03", page: true,
     traits: { activities: ["sailing", "snorkelling", "culture", "slow"] } },
 
+  // Fiji (James, 5 to 7 Nov 2026): Blue Lagoon Cruises' MV Yasawa Princess II, filed from bluelagooncruises.com.
+  // Between Tides first (the water is the activity: snorkelling, manta rays, the Blue Lagoon); Rooted in Place for
+  // the Yasawa villages, kava and lovo. Adults only (16 and over) from mid-January 2027.
+  { slug: "yasawa-princess-ii", name: "Yasawa Princess II", operator: "Blue Lagoon Cruises", kind: "motor-yacht", types: ["expedition"], waters: ["fiji"], country: ["Fiji"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-08"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { minChildAge: 16, childNote: "Adults only, 16 and over, on every departure from mid-January 2027", activities: ["snorkelling", "kayaking", "culture", "wildlife"] } },
+
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },
 ];
@@ -305,6 +312,8 @@ export const WATERS_HUBS: Record<Waters, { name: string; path: string; countries
   philippines: { name: "The Philippines", path: "/destinations/asia/philippines", countries: ["Philippines"], question: "How do you travel from El Nido to Coron?" },
   // No /voyages hub of its own yet: the tile and search land on the country page's "Sail it" section.
   tahiti: { name: "French Polynesia (Tahiti)", path: "/destinations/oceania/tahiti#sail", countries: ["French Polynesia"], question: "Which Windstar ship sails Tahiti?" },
+  // No /voyages hub yet: Fiji's one ship lives on her page and the Fiji country page.
+  fiji: { name: "Fiji", path: "/voyages/ships/yasawa-princess-ii", countries: ["Fiji"], question: "Which small ship sails Fiji's Yasawa Islands?" },
 };
 
 export const registryShip = (slug: string) => SHIP_REGISTRY.find((s) => s.slug === slug);

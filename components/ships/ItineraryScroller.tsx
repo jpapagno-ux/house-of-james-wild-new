@@ -135,8 +135,8 @@ export default function ItineraryScroller({ ship, itineraries, map, terrain }: {
         {it.days.length > 1 && <p className="mt-1 text-[14px] ledger-muted">{it.days[0].place} to {it.days[it.days.length - 1].place}{it.direction && it.direction !== it.name ? ` · ${it.direction}` : ""}</p>}
       </div>
       {/* From 1280px: the chart sticky on the left at 60% (min 640px), the log on the right. Below, the chart above the log. */}
-      <div className={`mt-5 grid gap-6 xl:gap-10 items-start ${map ? "xl:grid-cols-[minmax(640px,3fr)_minmax(0,2fr)]" : ""}`}>
-        {map && <div ref={mapRef} className="contents">{terrain ? <RouteViews chart={map} terrain={terrain} routeIndex={tab} className="xl:sticky xl:top-[228px] z-10 bg-paper" /> : map}</div>}
+      <div className={`mt-5 grid gap-6 xl:gap-10 items-start ${map || terrain ? "xl:grid-cols-[minmax(640px,3fr)_minmax(0,2fr)]" : ""}`}>
+        {(map || terrain) && <div ref={mapRef} className="contents">{terrain ? <RouteViews chart={map} terrain={terrain} routeIndex={tab} className="xl:sticky xl:top-[228px] z-10 bg-paper" /> : map}</div>}
         <div>
           <p className="ledger-eyebrow mb-2" aria-live="polite">{it.name}{active != null ? ` · ${it.days[active]?.label?.startsWith("Stop") ? "Stop" : "Day"} ${it.days[active]?.day} of ${it.days.length}` : ""}</p>
           <ol ref={listRef} className="border-t ledger-rule" key={tab}>

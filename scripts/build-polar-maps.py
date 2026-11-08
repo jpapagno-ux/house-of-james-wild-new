@@ -2,11 +2,13 @@
 (public/maps/routes/<ship>-<route>-<nights>n.json), from lib/content/polar/voyages/*.json, for the
 house route chart on the polar voyage pages, the Magellan ship pages and the polar atlas. Flight days
 (Punta Arenas to King George Island and back) are drawn as air legs; the rest join the day positions
-by sea. Positions are standard geographic points for the places named, approximate, and where the
+by sea, routed round the coast and anchored offshore by scripts/sealanes.py. Positions are standard geographic points for the places named, approximate, and where the
 research split a published block of days the order is indicative. Run from the repo root:
     python3 scripts/build-polar-maps.py .
 """
-import json, os, re, sys
+import copy, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sealanes import route_stops   # anchorages and sea lanes round the OSM coast (James, 8 Nov 2026)
 ROOT = sys.argv[1]
 SRC = os.path.join(ROOT, "lib/content/polar/voyages")
 OUT = os.path.join(ROOT, "public/maps/routes")
@@ -40,9 +42,10 @@ for f in sorted(os.listdir(SRC)):
       "title": f"{v['name']} aboard {SHIPS[ship]}",
       "subtitle": f"{v['nights']} nights · {v['route']} · {SHIPS[ship]}",
       "days": {str(d["day"]): (f"{d['label']}: " if d.get("label") else "") + d["title"] for d in v["itinerary"]},
-      "stops": stops,
+      "stops": copy.deepcopy(stops),
       "map_note": "Positions approximate; ice and weather set the ship's course. Not a navigational chart",
       "fallback": {"labels": LABELS},
     }
+    route_stops(route, os.path.join(ROOT, "public/maps"))
     json.dump(route, open(os.path.join(OUT, f"{rid}.json"), "w"), indent=1, ensure_ascii=False)
     print(rid)

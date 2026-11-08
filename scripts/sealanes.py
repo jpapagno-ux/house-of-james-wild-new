@@ -317,9 +317,42 @@ def clearance(line, land):
     return round(min(_coast_km(np.asarray(p), land) for p in inner), 2) if inner else None
 
 
+ANCHOR_KM = 0.25   # an anchorage keeps this far off the coast
+
+
+def anchorage(p, land):
+    """The nearest point of open sea (the largest water body round the stop, not a lake or a sealed lagoon) at least
+    ANCHOR_KM off the coast, for a stop the data pins on land: [lng, lat], or None if the stop is already at sea."""
+    if not land or not _on_land(np.asarray([p]), land)[0]: return None
+    g = Grid(p, p, land, 0.0, 600)                       # 25 km of coast and sea round the pin, ~0.08 km cells
+    lab, n = ndimage.label(~g.land, structure=np.ones((3, 3)))
+    if not n: return None
+    sizes = np.bincount(lab.ravel()); sizes[0] = 0
+    sea = (lab == sizes.argmax()) & (g.dist > ANCHOR_KM)
+    if not sea.any(): sea = lab == sizes.argmax()
+    i, j = g.ij(p)
+    idx = ndimage.distance_transform_edt(~sea, return_indices=True)[1]
+    c = (idx[0][i, j], idx[1][i, j])
+    q = g.ll(c)
+    return [round(float(q[0]), 4), round(float(q[1]), 4)]
+
+
+def anchor_stops(r, land):
+    """Move every sailed stop the data pins on land (an island's middle, a town inland) to its anchorage, so the line
+    and the vessel end at sea beside it (James, 8 Nov 2026). The data's own position is kept as "charted"."""
+    st = r["stops"]
+    for k, s in enumerate(st):
+        arrive = k > 0 and str(s.get("mode", "sea")).lower() in SEA_MODES
+        leave = k + 1 < len(st) and str(st[k + 1].get("mode", "sea")).lower() in SEA_MODES
+        if not (arrive or leave) or "charted" in s: continue
+        a = anchorage([s["lng"], s["lat"]], land)
+        if a: s["charted"] = [s["lng"], s["lat"]]; s["lng"], s["lat"] = a
+
+
 def route_stops(r, maps_dir):
     """Route every sailed leg of a jw-route v1 route (dict) in place. Returns the rerouted legs, "from > to"."""
     land = land_of(maps_dir, r.get("destination") or "")
+    if land and r.get("type") != "overland": anchor_stops(r, land)
     done, prev = [], None
     for s in r["stops"]:
         if prev is not None and land and str(s.get("mode", "sea")).lower() in SEA_MODES:

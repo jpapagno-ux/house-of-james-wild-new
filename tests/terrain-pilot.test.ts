@@ -154,8 +154,8 @@ test("in Satellite the imagery covers sea and land, with an earth and an ocean t
   assert.equal(viewOps(base, false, "flat").find((o) => o.id === "jw-hillshade")?.value, "none");
 });
 
-test("3D waters for ship pages: Galapagos, Antarctica and Fiji only (James, 8 Nov 2026)", async () => {
+test("3D waters for ship pages: Galapagos, Antarctica, Fiji and Indonesia (James, 8 Nov 2026), never the rivers", async () => {
   const { terrainWaters } = await import("../components/maps/terrain/flag.ts");
-  for (const w of ["galapagos", "antarctica", "fiji"]) assert.equal(terrainWaters(w), true, w);
-  for (const w of ["nile", "amazon", "indonesia", undefined]) assert.equal(terrainWaters(w), false, String(w));
+  for (const w of ["galapagos", "antarctica", "fiji", "indonesia"]) assert.equal(terrainWaters(w), true, w);
+  for (const w of ["nile", "amazon", "tahiti", undefined]) assert.equal(terrainWaters(w), false, String(w));
 });

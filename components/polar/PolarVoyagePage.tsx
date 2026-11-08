@@ -40,7 +40,7 @@ import { absoluteUrl } from "@/lib/seo";
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 const INDICATIVE = "Day order is indicative; the expedition team sets each day by weather and ice.";
 
-export default function PolarVoyagePage({ v }: { v: PolarVoyage }) {
+export default function PolarVoyagePage({ v, opening }: { v: PolarVoyage; /** a full opening (VoyageOpening previews) in place of the standard hero */ opening?: React.ReactNode }) {
   const path = voyagePath(v.slug);
   const t = (x: string) => undash(x);
   const from = voyageFrom(v);
@@ -88,8 +88,8 @@ export default function PolarVoyagePage({ v }: { v: PolarVoyage }) {
     <div className="theme-sea theme-sea-page">
       <SiteHeader overlay tuck />
       <main id="main">
-        <RecordHero image={v.hero} eyebrow={`Polar Crossings · ${STYLES[v.style].name} · ${v.operator}`} title={v.name} tagline={t(v.tagline)} credit={v.photoCredit}
-          glance={<ShipGlance label={priceLabel} price={price} basis={basis} facts={[["Length", `${nightsWords(v)}, ${daysWords(v)}`], ["Route", t(v.route)], ["Ships", v.ships.map(shipName).join(" or ")], ["When", monthsWords(v)]]} cta={{ label: "Plan with James", href: plan }} />} />
+        {opening ?? <RecordHero image={v.hero} eyebrow={`Voyages · ${STYLES[v.style].name} · ${v.operator}`} title={v.name} tagline={t(v.tagline)} credit={v.photoCredit}
+          glance={<ShipGlance label={priceLabel} price={price} basis={basis} facts={[["Length", `${nightsWords(v)}, ${daysWords(v)}`], ["Route", t(v.route)], ["Ships", v.ships.map(shipName).join(" or ")], ["When", monthsWords(v)]]} cta={{ label: "Plan with James", href: plan }} />} />}
         <ShipNav items={nav} cta="Plan with James" ctaHref={plan} house />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-4"><Breadcrumbs trail={crumbs} touch /></div>

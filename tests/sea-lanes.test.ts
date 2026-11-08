@@ -138,3 +138,18 @@ test("every sailed line the 3D map draws (the routed lane, rounded) keeps off th
 test("the waters James named have OSM coastlines to route round: Galapagos, Antarctica and the polar seas, Fiji", () => {
   for (const d of ["galapagos", "antarctica", "polar", "fiji"]) assert.ok(landOf(d).length > 20, `${d}: no coastline`);
 });
+
+test("no sailed stop is pinned inland: island-middle pins sit at their anchorage (charted position kept)", () => {
+  // James, 8 Nov 2026: the line must end at sea beside the island, not run across it to a pin in the middle.
+  const bad: string[] = [];
+  for (const r of ROUTES.filter(sailed)) {
+    const land = landOf(r.destination!);
+    r.stops.forEach((s, k) => {
+      const arrive = k > 0 && SEA.has(String(s.mode ?? "sea").toLowerCase());
+      const leave = k + 1 < r.stops.length && SEA.has(String(r.stops[k + 1].mode ?? "sea").toLowerCase());
+      const p: LngLat = [s.lng, s.lat];
+      if ((arrive || leave) && onLand(p, land) && toCoast(p, land) > 0.3) bad.push(`${r.id}: ${s.name} is ${toCoast(p, land).toFixed(1)} km inland`);
+    });
+  }
+  assert.deepEqual(bad, []);
+});

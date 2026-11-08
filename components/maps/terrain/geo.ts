@@ -73,7 +73,7 @@ export function smoothLine(line: LngLat[], cutKm = 0.6, n = 8): LngLat[] {
 
 /** How far the 3D map may cut a corner of the lane arriving at this stop: 0.6 km in open water, half the lane's own
  *  clearance from the coast where it threads a narrow channel (the Beagle Channel, Stanley's Narrows, the fjords). */
-export const cutFor = (s: Pick<TerrainStop, "clear">) => (typeof s.clear === "number" ? Math.max(0.02, Math.min(0.6, s.clear * 0.5)) : 0.6);
+export const cutFor = (s: Pick<TerrainStop, "clear">) => (typeof s.clear !== "number" ? 0.6 : s.clear < 0.25 ? 0 : Math.min(0.6, s.clear * 0.5)); // under 250 m off: sharp corners
 
 /** Polyline length in km. */
 export const lengthKm = (line: LngLat[]) => line.slice(1).reduce((t, p, i) => t + dist(line[i], p) * 111.32, 0);

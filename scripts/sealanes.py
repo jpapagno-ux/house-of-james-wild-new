@@ -103,7 +103,7 @@ class Grid:
             if self.land[ci]:   # charted inside the land: reach the nearest water, however far the chart puts it
                 w = (self.wet[0][ci], self.wet[1][ci])
                 r = max(r, math.hypot(w[0] - ci[0], w[1] - ci[1]) * self.cell + margin + self.cell * 2 + inland_km)
-            else: r = min(r, LANDING_KM)
+            else: r = min(max(r, inland_km), LANDING_KM)
             free |= ((I - ci[0]) ** 2 + (J - ci[1]) ** 2) * self.cell ** 2 <= r * r
         return free
 
@@ -232,7 +232,7 @@ def crosses(line, land):
     return bool(far.any() and _on_land(pts[far], land).any())
 
 
-def sea_path(a, b, land):
+def sea_path(a, b, land, exits=True):
     """A sailed leg from a to b ([lng, lat]) that goes round the charted land: ([[lng, lat], ...], rerouted)."""
     a, b = [float(a[0]), float(a[1])], [float(b[0]), float(b[1])]
     if not land or a == b: return [a, b], False
@@ -258,8 +258,54 @@ def sea_path(a, b, land):
     for ck, wk in ((0.4, 15.0), (0.15, 15.0), (0.25, 40.0)):   # Stanley's Narrows and the fjord passes are narrower than 400 m
         line = corridor_path(a, b, land, cell_km=ck, width_km=wk)
         if line: return line, True
+    line = exit_path(a, b, land) if exits else None
+    if line: return line, True
     print(f"  sealanes: no way round from {a} to {b}; left straight", file=sys.stderr)
     return [a, b], False
+
+
+def local_exit(p, land, open_km=1.0):
+    """From a stop up a narrow arm (a fjord head, a cove), the way out to open water (open_km off the coast, in the
+    largest water body within 25 km), on a fine 50 m grid: [[lng, lat], ...] from p to the exit, or None."""
+    g = Grid(p, p, land, 0.0, 1000)
+    lab, n = ndimage.label(~g.land, structure=np.ones((3, 3)))
+    if not n: return None
+    sizes = np.bincount(lab.ravel()); sizes[0] = 0
+    main = lab == sizes.argmax()
+    target = main & (g.dist > open_km)
+    if not target.any(): return None
+    for margin in (0.1, 0.05, 0.0):
+        free = (g.dist > margin) & main
+        ci = g.ij(p); I, J = np.ogrid[:g.ny, :g.nx]
+        free |= ((I - ci[0]) ** 2 + (J - ci[1]) ** 2) * g.cell ** 2 <= (ANCHOR_KM + 2 * g.cell) ** 2
+        # nearest reachable target: distance from p over free cells
+        dist = ndimage.distance_transform_edt(~target)
+        reach, _ = ndimage.label(free, structure=np.ones((3, 3)))
+        comp = reach == reach[ci]
+        cand = np.argwhere(comp & target)
+        if not len(cand): continue
+        t = tuple(cand[np.argmin(((cand - np.array(ci)) ** 2).sum(1))])
+        cells = shortest(free, ci, t)
+        if not cells: continue
+        pts = [p] + [g.ll(c) for c in cells[1:]]
+        out, i = [pts[0]], 0
+        while i < len(pts) - 1:
+            j = len(pts) - 1
+            while j > i + 1 and not clear(g, free, pts[i], pts[j]): j -= 1
+            out.append(pts[j]); i = j
+        return [[round(float(q[0]), 4), round(float(q[1]), 4)] for q in out]
+    return None
+
+
+def exit_path(a, b, land):
+    """Last resort for a leg that starts or ends up a narrow arm: leave the arm on a fine local grid, sail the open
+    stretch with the usual router, come back up the other arm. Returns the joined line or None."""
+    ea, eb = local_exit(a, land), local_exit(b, land)
+    if not ea or not eb: return None
+    a2, b2 = ea[-1], eb[-1]
+    mid, _ = sea_path(a2, b2, land, exits=False)
+    line = ea[:-1] + mid + eb[::-1][1:]
+    return line if not crosses(line, land) else None
 
 
 def corridor_path(a, b, land, cell_km=0.4, width_km=15.0):
@@ -317,9 +363,42 @@ def clearance(line, land):
     return round(min(_coast_km(np.asarray(p), land) for p in inner), 2) if inner else None
 
 
+ANCHOR_KM = 0.4    # an anchorage keeps this far off the coast (clear of pockets the router cannot reach)
+
+
+def anchorage(p, land):
+    """The nearest point of open sea (the largest water body round the stop, not a lake or a sealed lagoon) at least
+    ANCHOR_KM off the coast, for a stop the data pins on land: [lng, lat], or None if the stop is already at sea."""
+    if not land or not _on_land(np.asarray([p]), land)[0]: return None
+    g = Grid(p, p, land, 0.0, 600)                       # 25 km of coast and sea round the pin, ~0.08 km cells
+    lab, n = ndimage.label(~g.land, structure=np.ones((3, 3)))
+    if not n: return None
+    sizes = np.bincount(lab.ravel()); sizes[0] = 0
+    sea = (lab == sizes.argmax()) & (g.dist > ANCHOR_KM)
+    if not sea.any(): sea = lab == sizes.argmax()
+    i, j = g.ij(p)
+    idx = ndimage.distance_transform_edt(~sea, return_indices=True)[1]
+    c = (idx[0][i, j], idx[1][i, j])
+    q = g.ll(c)
+    return [round(float(q[0]), 4), round(float(q[1]), 4)]
+
+
+def anchor_stops(r, land):
+    """Move every sailed stop the data pins on land (an island's middle, a town inland) to its anchorage, so the line
+    and the vessel end at sea beside it (James, 8 Nov 2026). The data's own position is kept as "charted"."""
+    st = r["stops"]
+    for k, s in enumerate(st):
+        arrive = k > 0 and str(s.get("mode", "sea")).lower() in SEA_MODES
+        leave = k + 1 < len(st) and str(st[k + 1].get("mode", "sea")).lower() in SEA_MODES
+        if not (arrive or leave) or "charted" in s: continue
+        a = anchorage([s["lng"], s["lat"]], land)
+        if a: s["charted"] = [s["lng"], s["lat"]]; s["lng"], s["lat"] = a
+
+
 def route_stops(r, maps_dir):
     """Route every sailed leg of a jw-route v1 route (dict) in place. Returns the rerouted legs, "from > to"."""
     land = land_of(maps_dir, r.get("destination") or "")
+    if land and r.get("type") != "overland": anchor_stops(r, land)
     done, prev = [], None
     for s in r["stops"]:
         if prev is not None and land and str(s.get("mode", "sea")).lower() in SEA_MODES:

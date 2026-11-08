@@ -84,7 +84,8 @@
      -53.2
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 0.4
   },
   {
    "day": 3,
@@ -135,7 +136,8 @@
      -51.03
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 0.31
   },
   {
    "day": 5,
@@ -197,7 +199,8 @@
      -51.52
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 0.06
   },
   {
    "day": 6,
@@ -255,7 +258,8 @@
      -52.43
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 0.02
   },
   {
    "day": 7,
@@ -341,7 +345,8 @@
      -51.31
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 0.99
   },
   {
    "day": 8,
@@ -391,7 +396,8 @@
      -51.35
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 0.62
   },
   {
    "day": 9,
@@ -433,7 +439,8 @@
      -53.2
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 0.62
   },
   {
    "day": 10,
@@ -508,7 +515,8 @@
     ]
    ],
    "kind": "port",
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 0.15
   }
  ],
  "map_note": "Positions approximate; ice and weather set the ship's course. Not a navigational chart",

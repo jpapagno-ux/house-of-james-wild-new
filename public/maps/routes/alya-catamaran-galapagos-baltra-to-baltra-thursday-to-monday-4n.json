@@ -39,7 +39,8 @@
      0.3167
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 2.4
   },
   {
    "day": 3,
@@ -61,7 +62,8 @@
      -0.2833
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 1.36
   },
   {
    "day": 4,
@@ -95,7 +97,8 @@
      -0.37
     ]
    ],
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 1.03
   },
   {
    "day": 5,
@@ -150,7 +153,8 @@
     ]
    ],
    "kind": "port",
-   "lane": "sea"
+   "lane": "sea",
+   "clear": 1.13
   }
  ],
  "map_note": "River course and positions approximate, not a navigational chart",

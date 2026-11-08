@@ -4,7 +4,7 @@ export type LngLat = [number, number];
 /** One stop of a route, or one point of a points view. Coordinates come only from repo data. */
 /** `mode` describes the leg arriving at this stop: "air" (a flight or air transfer marked in the repo's own data) draws a
  *  dashed great-circle arc flown by a plane; anything else is sailed by the vessel. */
-export type TerrainStop = { lat: number; lng: number; name: string; day?: number | string; note?: string; path?: LngLat[]; mode?: string };
+export type TerrainStop = { lat: number; lng: number; name: string; day?: number | string; note?: string; path?: LngLat[]; mode?: string; /** km from the coast at the lane's turns (scripts/sealanes.py) */ clear?: number };
 export type TerrainRoute = { name: string; stops: TerrainStop[] };
 export type TerrainKind = "voyage" | "overland" | "points";
 
@@ -70,6 +70,10 @@ export function smoothLine(line: LngLat[], cutKm = 0.6, n = 8): LngLat[] {
   out.push(line[line.length - 1]);
   return out;
 }
+
+/** How far the 3D map may cut a corner of the lane arriving at this stop: 0.6 km in open water, half the lane's own
+ *  clearance from the coast where it threads a narrow channel (the Beagle Channel, Stanley's Narrows, the fjords). */
+export const cutFor = (s: Pick<TerrainStop, "clear">) => (typeof s.clear === "number" ? Math.max(0.02, Math.min(0.6, s.clear * 0.5)) : 0.6);
 
 /** Polyline length in km. */
 export const lengthKm = (line: LngLat[]) => line.slice(1).reduce((t, p, i) => t + dist(line[i], p) * 111.32, 0);

@@ -310,6 +310,13 @@ def _corridor(a, b, land, cell_km, width_km, erode):
     return None
 
 
+def clearance(line, land):
+    """km from the coast at the lane's turning points (its inner vertices): the 3D map rounds each corner by at most half
+    of it, so a lane threaded through a narrow channel keeps tight corners and stays at sea (components/maps/terrain/geo.ts)."""
+    inner = line[1:-1]
+    return round(min(_coast_km(np.asarray(p), land) for p in inner), 2) if inner else None
+
+
 def route_stops(r, maps_dir):
     """Route every sailed leg of a jw-route v1 route (dict) in place. Returns the rerouted legs, "from > to"."""
     land = land_of(maps_dir, r.get("destination") or "")
@@ -318,8 +325,10 @@ def route_stops(r, maps_dir):
         if prev is not None and land and str(s.get("mode", "sea")).lower() in SEA_MODES:
             p, moved = sea_path([prev["lng"], prev["lat"]], [s["lng"], s["lat"]], land)
             s["path"] = p
-            if moved: s["lane"] = "sea"; done.append(f"{prev['name']} > {s['name']}")
-            else: s.pop("lane", None)
+            if moved:
+                s["lane"] = "sea"; done.append(f"{prev['name']} > {s['name']}")
+                s["clear"] = clearance(p, land)
+            else: s.pop("lane", None); s.pop("clear", None)
         prev = s
     return done
 

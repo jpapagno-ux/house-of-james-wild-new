@@ -17,7 +17,7 @@ import { JOURNEYS, JOURNEY_FLEETS, journeyPath, journeyRouteId } from "@/lib/con
 import { readRoute, shipRouteId } from "@/lib/content/ships/routes";
 import { routeIdFor } from "@/lib/content/route-files";
 import { terrainRoute } from "@/components/maps/terrain/routed";
-import { isAir, legsOf, smoothLine } from "@/components/maps/terrain/geo";
+import { cutFor, isAir, legsOf, smoothLine } from "@/components/maps/terrain/geo";
 import { vesselHref } from "@/lib/content/vessels";
 import { SHIP_REGISTRY } from "@/lib/content/ships/registry";
 import { volumeMark } from "@/lib/volumes";
@@ -119,7 +119,7 @@ export function indonesiaAtlas(): AtlasData & { missing: string[] } {
     if (!file) continue;
     const r = terrainRoute(String(file.title ?? id), file, []);
     if (r.stops.length < 2) continue;
-    const legs = legsOf(r.stops).map((l, i) => (isAir(r.stops[i + 1]) ? l : smoothLine(l)));
+    const legs = legsOf(r.stops).map((l, i) => (isAir(r.stops[i + 1]) ? l : smoothLine(l, cutFor(r.stops[i + 1]))));
     const sig = JSON.stringify(legs.map((l) => [l[0], l[l.length - 1], l.length]));
     if (drawn.has(sig)) continue; // Rascal and Rebel sail the same lines: drawn once
     drawn.add(sig);

@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
-import { legsOf, smoothLine, type LngLat, type TerrainStop } from "../components/maps/terrain/geo.ts";
+import { cutFor, legsOf, smoothLine, type LngLat, type TerrainStop } from "../components/maps/terrain/geo.ts";
 
 // Sea lanes (James, 3 Nov 2026: the line must go round the islands, never across them). Every sailed leg of every route
 // file (public/maps/routes, the one source the engraved chart, its SVG figure and the 3D terrain map all draw) must stay
@@ -102,7 +102,7 @@ test("the 3D map draws the routed lanes, rounded, and they still keep off the la
     legs.forEach((leg, i) => {
       const s = r.stops[i + 1];
       if (s.path && s.path.length > 2) assert.ok(leg.length >= s.path.length, `${id} leg ${i + 1}: the 3D leg is not the routed path`);
-      const round = smoothLine(leg);
+      const round = smoothLine(leg, cutFor(s));
       assert.deepEqual(round[0], leg[0]); assert.deepEqual(round[round.length - 1], leg[leg.length - 1]);
       if (SEA.has(String(s.mode ?? "sea"))) assert.equal(crossing(round, land), null, `${id}: ${r.stops[i].name} > ${s.name} (rounded) crosses land`);
     });
@@ -128,7 +128,7 @@ test("every sailed line the 3D map draws (the routed lane, rounded) keeps off th
     legsOf(r.stops).forEach((leg, i) => {
       const s = r.stops[i + 1];
       if (!SEA.has(String(s.mode ?? "sea").toLowerCase())) return;
-      const hit = crossing(smoothLine(leg), land);
+      const hit = crossing(smoothLine(leg, cutFor(s)), land);
       if (hit) bad.push(`${r.id}: ${r.stops[i].name} > ${s.name} (rounded) at ${hit[1].toFixed(3)}, ${hit[0].toFixed(3)}`);
     });
   }

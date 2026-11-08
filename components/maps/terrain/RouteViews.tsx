@@ -26,7 +26,7 @@ function hasWebGL() {
   }
 }
 
-export default function RouteViews({ chart, terrain, routeIndex = 0, className = "" }: { chart: ReactNode; terrain: Omit<TerrainFlyoverProps, "head" | "note">; routeIndex?: number; className?: string }) {
+export default function RouteViews({ chart, terrain, routeIndex = 0, className = "" }: { chart: ReactNode | null; terrain: Omit<TerrainFlyoverProps, "head" | "note">; routeIndex?: number; className?: string }) {
   const [can3d, setCan3d] = useState<boolean | null>(null);
   const [view, setView] = useState<View>("3d");
   const chartRef = useRef<HTMLDivElement>(null);
@@ -43,20 +43,20 @@ export default function RouteViews({ chart, terrain, routeIndex = 0, className =
     if (v === "chart") requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
   };
 
-  const three = can3d !== false && view === "3d";
+  const three = can3d !== false && (view === "3d" || !chart);
   return (
     <div className={`jw-views ${className}`} data-view={three ? "3d" : "chart"}>
-      {can3d !== false && (
+      {can3d !== false && chart && (
         <div className="jw-views__switch" role="tablist" aria-label="Map view">
           <button type="button" role="tab" className="house-chip jw-views__tab" aria-selected={three} onClick={() => show("3d")}>3D Flyover</button>
           <button type="button" role="tab" className="house-chip jw-views__tab" aria-selected={!three} onClick={() => show("chart")}>Itinerary Chart</button>
         </div>
       )}
       <div className="jw-views__panes">
-        <div ref={chartRef} className="jw-views__chart" aria-hidden={three || undefined}>{chart}</div>
+        {chart && <div ref={chartRef} className="jw-views__chart" aria-hidden={three || undefined}>{chart}</div>}
         {three && (
           <div className="jw-views__3d">
-            <TerrainFlyover {...terrain} bare routeIndex={routeIndex} hideRoutePicker onFail={() => { setCan3d(false); show("chart"); }} />
+            <TerrainFlyover {...terrain} bare routeIndex={routeIndex} hideRoutePicker onFail={() => { setCan3d(false); if (chart) show("chart"); }} />
           </div>
         )}
       </div>

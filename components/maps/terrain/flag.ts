@@ -6,6 +6,9 @@ export const TERRAIN_PAGES = [
   "voyages/ships/natural-paradise-yacht",
   "stays/ulum-moab",
   "destinations/oceania/tahiti#tahaa",
+  // Fiji place guides (James, 7 Nov 2026: "try maps on these next two"): Beqa Lagoon and the Yasawas.
+  "destinations/oceania/fiji/beqa-lagoon-and-pacific-harbour",
+  "destinations/oceania/fiji/yasawa-islands",
 ] as const;
 export type TerrainPage = (typeof TERRAIN_PAGES)[number];
 
@@ -15,6 +18,6 @@ export const terrainOn = (page: string): page is TerrainPage =>
 // The country atlas (Indonesia first). James said "go" to a preview on 3 Nov 2026 and then approved it going live
 // ("approved all move forward"), so it shows wherever this code is deployed, production included once the PR merges.
 // The terrain kill switch (NEXT_PUBLIC_TERRAIN_PILOT=false) turns it off everywhere.
-export const ATLAS_COUNTRIES = ["indonesia", "botswana", "tahiti", "thailand"] as const;
+export const ATLAS_COUNTRIES = ["indonesia", "botswana", "tahiti", "thailand", "fiji"] as const;
 export const atlasOn = (country: string) =>
   process.env.NEXT_PUBLIC_TERRAIN_PILOT !== "false" && (ATLAS_COUNTRIES as readonly string[]).includes(country);

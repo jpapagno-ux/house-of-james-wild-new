@@ -184,7 +184,35 @@
    "direction": "Fly South or Fly North"
   }
  ],
- "sailings": [],
+ "sailings": [
+  {
+   "date": "2027-03-07",
+   "dateTo": "2027-03-24",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 17995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-03-09",
+   "dateTo": "2029-03-26",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 17995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-03-12",
+   "dateTo": "2029-03-29",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 19995
+   },
+   "status": null
+  }
+ ],
  "inclusions": [
   "Pre and post voyage information",
   "Airport and hotel group transfers",
@@ -258,5 +286,5 @@
  "sources": [
   "https://www.antarctica21.com/our-expeditions/antarctica-south-georgia-air-cruise"
  ],
- "checked": "2026-11-02"
+ "checked": "2026-11-08"
 }

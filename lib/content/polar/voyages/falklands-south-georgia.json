@@ -204,7 +204,17 @@
    "status": null
   }
  ],
- "sailings": [],
+ "sailings": [
+  {
+   "date": "2027-10-07",
+   "dateTo": "2027-10-23",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  }
+ ],
  "inclusions": [
   "Pre and post voyage information",
   "Access to Explorers House in Punta Arenas",
@@ -247,5 +257,5 @@
  "sources": [
   "https://www.antarctica21.com/our-expeditions/falklands-south-georgia"
  ],
- "checked": "2026-11-02"
+ "checked": "2026-11-08"
 }

@@ -166,7 +166,17 @@
    "status": null
   }
  ],
- "sailings": [],
+ "sailings": [
+  {
+   "date": "2028-04-04",
+   "dateTo": "2028-04-13",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 6495
+   },
+   "status": null
+  }
+ ],
  "inclusions": [
   "Pre and post voyage information",
   "Ship cruise as described",
@@ -203,5 +213,5 @@
   "https://www.antarctica21.com/our-expeditions/falkland-islands",
   "https://www.antarctica21.com/our-promotions"
  ],
- "checked": "2026-11-02"
+ "checked": "2026-11-08"
 }

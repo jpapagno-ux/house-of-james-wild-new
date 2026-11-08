@@ -153,7 +153,35 @@
    "status": null
   }
  ],
- "sailings": [],
+ "sailings": [
+  {
+   "date": "2027-03-04",
+   "dateTo": "2027-03-10",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 6795
+   },
+   "status": null
+  },
+  {
+   "date": "2027-11-17",
+   "dateTo": "2027-11-22",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 5995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-11-17",
+   "dateTo": "2028-11-22",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 6995
+   },
+   "status": null
+  }
+ ],
  "inclusions": [
   "Pre and post voyage information",
   "Group transfers in Punta Arenas between hotel and airport",
@@ -218,5 +246,5 @@
   "https://www.antarctica21.com/our-expeditions/antarctica-express-air-cruise",
   "https://www.antarctica21.com/antarctic-flights-guide"
  ],
- "checked": "2026-11-02"
+ "checked": "2026-11-08"
 }

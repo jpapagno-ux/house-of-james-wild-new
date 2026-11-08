@@ -183,7 +183,44 @@
    "nights": 10
   }
  ],
- "sailings": [],
+ "sailings": [
+  {
+   "date": "2027-04-03",
+   "dateTo": "2027-04-11",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 5995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-09-13",
+   "dateTo": "2027-09-23",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 5995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-09-24",
+   "dateTo": "2027-10-04",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 8795
+   },
+   "status": null
+  },
+  {
+   "date": "2028-04-04",
+   "dateTo": "2028-04-14",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 8795
+   },
+   "status": null
+  }
+ ],
  "inclusions": [
   "Pre and post voyage information",
   "Ship cruise per the itinerary",
@@ -228,5 +265,5 @@
   "https://www.antarctica21.com/our-expeditions/patagonia-chilean-fjords",
   "https://www.antarctica21.com/our-promotions"
  ],
- "checked": "2026-11-02"
+ "checked": "2026-11-08"
 }

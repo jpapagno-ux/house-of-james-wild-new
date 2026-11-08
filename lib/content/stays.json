@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-07",
+ "exportedOn": "2026-11-08",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -22074,6 +22074,121 @@
    "placeSlug": null
   },
   {
+   "slug": "jean-michel-cousteau-resort",
+   "name": "Jean-Michel Cousteau Resort",
+   "ledgerId": "STY-2026-000642",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Fiji's first luxury eco-resort, on a peninsula in Savusavu Bay, with resident marine biologists and a kids' club that runs all day.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g17",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/jean-michel-cousteau-resort/g4"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-07",
+   "coords": null,
+   "airport": "Savusavu Airport (SVU), via Nadi International Airport (NAN)",
+   "airportDirections": "From Nadi, about an hour on a domestic flight to Savusavu (Fiji Link, or charter), then 15 to 20 minutes by road. A resort representative meets guests at Nadi and Savusavu. Labasa is an alternative, with a 90 minute transfer at extra cost.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Gardenview Bure (42 sq m, 24 sq m deck; sleeps up to 4). Oceanfront One-Bedroom Bure (42 sq m, 24 sq m deck; sleeps up to 4). Oceanfront Two-Bedroom Bure (66 sq m, 45 sq m deck; sleeps up to 6). Deluxe Oceanfront Two-Bedroom Bure (75 sq m, two en-suite bedrooms; sleeps up to 6). Oceanfront Point Reef Bure, and Point Reef Spa Tub Bure (56 sq m; sleeps up to 5). Signature Oceanfront Two-Bedroom Bure (82 sq m, refreshed, extended deck; sleeps 7). Premium Oceanfront Two-Bedroom Villa (104 sq m, 75 sq m deck, infinity-edge pool and spa tub; sleeps up to 5)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Diving with L'Aventure Jean-Michel Cousteau, including the Namena Marine Reserve. Daily boat snorkelling trips and evening talks with the resident marine biologists. Reef flat walks, a mangrove tour and glass-bottom boat trips. Rainforest and waterfall hikes; the Savusavu farmers market. Nukubalavu village, kava, a lovo feast and a traditional medicine walk. Private time on Naviavia island, from two hours to a full day."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "All meals for two adults and three children under 15 per bure. Kids Bula Club, 8.30 am to 9 pm: two nannies per bure for under fives, Fijian buddies for ages 6 to 12. A teen programme for ages 13 to 17. Two pools with water slides, a beachfront spa bure and a fitness centre. An organic farm that supplies the kitchen. Daily yoga, laundry and evening entertainment."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "The Jean-Michel Cousteau Resort sits on a peninsula in Savusavu Bay on Vanua Levu, Fiji's northern island, and calls itself Fiji's first luxury eco-resort. Two resident marine biologists lead the snorkelling, the reef and mangrove restoration and the evening talks, and the Kids Bula Club runs from breakfast to bedtime."
+   ],
+   "why": [
+    {
+     "title": "The ocean, explained",
+     "body": "This is the Fiji resort for families who want the reef to mean something: daily snorkelling with the resident marine biologists, glass-bottom boats, mangrove walks, and diving as far as the Namena Marine Reserve."
+    },
+    {
+     "title": "Parents get their time too",
+     "body": "Every under five has two nannies at set times, older children have Fijian buddies, teens have their own programme, and all meals are included. The bures run from garden bures to a villa with its own infinity pool."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi (NAN), then about an hour to Savusavu (SVU) and a 15 to 20 minute drive. The resort meets you at both airports.",
+    "signature_experiences": "Snorkelling with the resident marine biologists, diving the Namena Marine Reserve, Nukubalavu village, and private time on Naviavia island.",
+    "who_its_for": "Families with children of every age, and couples who want the reef as well as the beach."
+   },
+   "faqs": [
+    {
+     "q": "Where is the Jean-Michel Cousteau Resort?",
+     "a": "On a peninsula in Savusavu Bay on Vanua Levu, Fiji's northern island, about 20 minutes from Savusavu Airport."
+    },
+    {
+     "q": "How do you get to the Jean-Michel Cousteau Resort?",
+     "a": "Fly into Nadi, then take a domestic flight of about an hour to Savusavu. The resort meets you at both airports and drives you the last 15 to 20 minutes."
+    },
+    {
+     "q": "Is the Jean-Michel Cousteau Resort good for families?",
+     "a": "Yes. The Kids Bula Club runs from 8.30 am to 9 pm, with two nannies per bure at set times for under fives, Fijian buddies for ages 6 to 12, and a teen programme for 13 to 17."
+    },
+    {
+     "q": "What is included at the Jean-Michel Cousteau Resort?",
+     "a": "Breakfast, lunch and dinner for two adults and three children under 15 per bure, soft drinks and coffee, airport welcome and transfers, laundry, daily boat snorkelling, yoga and most activities, including up to four scheduled excursions a week. Alcohol is extra."
+    },
+    {
+     "q": "Can you dive at the Jean-Michel Cousteau Resort?",
+     "a": "Yes, with L'Aventure Jean-Michel Cousteau, at sites in Savusavu Bay, on the outer barrier reef and in the Namena Marine Reserve."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "Islands and oceans",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-07"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "ka-ana-resort",
    "name": "Ka'ana Resort",
    "ledgerId": "STY-2026-225712",
@@ -30248,6 +30363,130 @@
    "placeSlug": null
   },
   {
+   "slug": "matangi-island",
+   "name": "Matangi Private Island Resort",
+   "ledgerId": "STY-2026-000643",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "An adults-only private island of 240 acres in Fiji's north, with eight bures and three treehouses, in one family since 1878.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/matangi-island/g10"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-07",
+   "coords": null,
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "The island is reached only by boat or seaplane; the resort's concierge arranges flights and every transfer. Check-in 12 pm, check-out 10 am.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Oceanview Bures (four; 650 sq ft, four-poster king bed, outdoor lava rock shower, verandah with a hanging sofa). Beachfront Bures (four; 750 sq ft, steps from the beach). Luxury Treehouse Bures (850 sq ft, high in the trees, with an outdoor jacuzzi and day bed). Beachfront Treehouse Villa (on the beach, with a plunge pool, wrap-around balcony, Wi-Fi, smart TV and private dining). Two Bedroom Bure (on its own rocky point above the reef lagoon; two en-suite bedrooms with four-poster king beds; minimum age 16)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Daily complimentary snorkelling trips on the fringing reefs",
+     "Kayaks, stand-up paddle boards and sailing",
+     "Ridge-top and coastal hiking trails",
+     "A private picnic bure in Horseshoe Bay",
+     "Taveuni: Tavoro Falls, the Lavena Coastal Walk and a pearl farm",
+     "A weekly visit to Togo Village on Qamea"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A 240 acre horseshoe-shaped private island, adults only",
+     "Eight bures and three treehouses",
+     "All meals and snacks included; drinks extra",
+     "The Water's Edge Ocean Spa, with an over-water deck",
+     "A weekly lovo feast and private dining bures",
+     "In the same family since 1878"
+    ]
+   },
+   "onlyHere": [
+    "Matangi is a 240 acre, horseshoe-shaped private island in Fiji's northern group, near Taveuni, owned by the same family since 1878. It is adults only, with eight bures and three treehouses among rainforest, volcanic rock and white beaches, and is reached only by boat or seaplane."
+   ],
+   "why": [
+    {
+     "title": "Treehouses for two",
+     "body": "Matangi is for couples: no children, a handful of bures, and the treehouses it is known for, set high in the canopy above the beach, one of them with its own plunge pool."
+    },
+    {
+     "title": "Fiji's north, close at hand",
+     "body": "The island sits near the Somosomo Strait, so the Rainbow Reef and the Great White Wall are a day's diving away, and Horseshoe Bay is yours for a picnic, reached only by boat."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi International Airport (NAN); the island is reached only by boat or seaplane, arranged by the resort.",
+    "signature_experiences": "A night in a treehouse, a picnic in Horseshoe Bay, diving the Rainbow Reef, and the over-water Ocean Spa.",
+    "who_its_for": "Couples and honeymooners; adults only."
+   },
+   "faqs": [
+    {
+     "q": "Is Matangi Island adults only?",
+     "a": "Yes. Matangi is an adults-only private island; the Two Bedroom Bure has a minimum age of 16."
+    },
+    {
+     "q": "How big is Matangi Island?",
+     "a": "240 acres, horseshoe-shaped, with rainforest, white beaches, volcanic rock and fringing reefs."
+    },
+    {
+     "q": "How many rooms does Matangi have?",
+     "a": "Eight bures and three treehouses, including the Beachfront Treehouse Villa with its own plunge pool."
+    },
+    {
+     "q": "What is included at Matangi?",
+     "a": "All meals and snacks, daily snorkelling trips and other complimentary activities, Wi-Fi and daily laundry. Drinks, scuba diving and some excursions are extra."
+    },
+    {
+     "q": "How do you get to Matangi Island?",
+     "a": "By boat or seaplane only. The resort's concierge arranges flights and transfers."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "Islands and oceans",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-07"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "matetsi-victoria-falls",
    "name": "Matetsi Victoria Falls",
    "ledgerId": "STY-2026-000164",
@@ -32701,6 +32940,125 @@
    "arrivalHubIds": [
     "6ae697592a20c4a043a07150"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "nanuku-resort",
+   "name": "Nanuku Resort",
+   "ledgerId": "STY-2026-000644",
+   "country": "Fiji",
+   "countrySlug": "fiji",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A 500 acre coastal estate on Beqa Lagoon, with beachfront villas, residences of up to six bedrooms and its own private island.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g17",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fiji/nanuku-resort/g9"
+   ],
+   "bestMonths": "Year round",
+   "bestMonthsNote": "Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-07",
+   "coords": null,
+   "airport": "Nadi International Airport (NAN)",
+   "airportDirections": "A 30 minute charter flight from Nadi to Nanuku's own airstrip, then a few minutes by car; or just over two hours by private car from Nadi (90 minutes from Suva). Check-in 2 pm, check-out 11 am.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Nanuku Villas (13 new one and two-bedroom villas, 84 to 172 sq m, each with a private pool, bure and outdoor shower; some connect to make three or four bedrooms). Residences (remodelled, one to six bedrooms, 200 to 500 sq m, beachfront or hilltop, with the largest private pools at Nanuku). Suites (remodelled, about 60 sq m; the Beachfront Spa Suite has its own beachfront hot tub). 37 keys in all: 15 suites and 22 villas and residences."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Snorkelling in Beqa Lagoon and diving the soft corals of Beqa Passage. Coral planting and the coral nursery. A private island picnic, or a night camped on the island. Bilibili rafting and tubing on the Navua River; a longboat to a private waterfall. The Beqa firewalkers, a meke, a kava ceremony and a lovo dinner. Kulukulu's sand dunes, mangrove crabbing, deep sea fishing and heli-golf."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A private 500 acre coastal estate with two miles of white beach",
+     "Its own airstrip and helipad, 30 minutes by air from Nadi",
+     "A spa with a treatment platform high in the dilo tree",
+     "Private chefs for in-residence dining",
+     "No resort fee"
+    ]
+   },
+   "onlyHere": [
+    "Nanuku is a private 500 acre coastal estate at Pacific Harbour on Viti Levu, facing Beqa Lagoon, with two miles of white beach, its own airstrip and a private island offshore. It has 37 suites, villas and residences, up to six bedrooms, which suits a whole family as well as a couple."
+   ],
+   "why": [
+    {
+     "title": "Room for the whole family",
+     "body": "Nanuku's residences run to six bedrooms and 500 square metres, with their own pools and private chefs on request, and the new beachfront villas connect for three or four bedrooms."
+    },
+    {
+     "title": "Fiji beyond the beach",
+     "body": "The lagoon is for snorkelling and coral planting, the Navua River for rafting and waterfalls, Beqa for its firewalkers, and the private island for a picnic or a night under the stars."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Fiji is drier May to October and warmer and wetter November to April (Tourism Fiji).",
+    "how_to_get_there": "Fly into Nadi (NAN), then 30 minutes by charter to Nanuku's own airstrip, or just over two hours by car.",
+    "signature_experiences": "Beqa Lagoon and its soft corals, a night on the private island, Navua River rafting, the Beqa firewalkers, and dinner in a dilo tree.",
+    "who_its_for": "Families and groups in the residences, couples in the beachfront villas."
+   },
+   "faqs": [
+    {
+     "q": "Where is Nanuku Resort?",
+     "a": "At Pacific Harbour on the south coast of Viti Levu, Fiji's main island, on a private 500 acre estate facing Beqa Lagoon."
+    },
+    {
+     "q": "How do you get to Nanuku Resort?",
+     "a": "By a 30 minute charter flight from Nadi to the resort's own airstrip, or just over two hours by private car from Nadi International Airport."
+    },
+    {
+     "q": "How many rooms does Nanuku have?",
+     "a": "37: 15 suites and 22 villas and residences, from one bedroom up to six."
+    },
+    {
+     "q": "Is Nanuku good for families?",
+     "a": "Yes. Residences run to six bedrooms with private pools, villas connect for larger groups, and family activities run from coral planting to river tubing."
+    },
+    {
+     "q": "Does Nanuku have a private island?",
+     "a": "Yes. Guests can picnic on Nanuku's private island in Beqa Lagoon, or camp there for a night under the stars."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "Islands and oceans",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno",
+    "classifiedAt": "2026-11-07"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

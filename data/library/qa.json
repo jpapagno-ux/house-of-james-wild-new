@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-07",
+ "checkedOn": "2026-11-08",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -2336,6 +2336,16 @@
    "released": true
   },
   {
+   "stay_id": "6aef36017fa856f8ee989f72",
+   "slug": "jean-michel-cousteau-resort",
+   "name": "Jean-Michel Cousteau Resort",
+   "country": "Fiji",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae881c8893ed417b706ce0e",
    "slug": "jicaro-island-lodge",
    "name": "Jícaro Island Lodge",
@@ -3107,6 +3117,16 @@
    "released": true
   },
   {
+   "stay_id": "6aefe15b6281a0ebd0681594",
+   "slug": "matangi-island",
+   "name": "Matangi Private Island Resort",
+   "country": "Fiji",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff953",
    "slug": "matetsi-victoria-falls",
    "name": "Matetsi Victoria Falls",
@@ -3261,6 +3281,16 @@
    "name": "Namiri Plains Camp by Asilia",
    "country": "Tanzania",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6aefe1fe6ffcbbec1e8b1c01",
+   "slug": "nanuku-resort",
+   "name": "Nanuku Resort",
+   "country": "Fiji",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

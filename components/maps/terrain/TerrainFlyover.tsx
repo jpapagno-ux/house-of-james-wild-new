@@ -24,6 +24,11 @@ export type TerrainFlyoverProps = {
   head?: ReactNode;
   note?: ReactNode;
   id?: string;
+  /** Inside another frame (RouteViews): no section, heading or rule, just the map. */
+  bare?: boolean;
+  routeIndex?: number;
+  hideRoutePicker?: boolean;
+  onFail?: () => void;
 };
 
 function hasWebGL() {
@@ -35,7 +40,7 @@ function hasWebGL() {
   }
 }
 
-export default function TerrainFlyover({ routes, route, points, kind, ink, title, exaggeration = 1.4, playLabel = "Play the voyage", head, note, id = "see-in-3d" }: TerrainFlyoverProps) {
+export default function TerrainFlyover({ routes, route, points, kind, ink, title, exaggeration = 1.4, playLabel = "Play the voyage", head, note, id = "see-in-3d", bare = false, routeIndex, hideRoutePicker, onFail }: TerrainFlyoverProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [ok, setOk] = useState<boolean | null>(null);
   const [near, setNear] = useState(false);
@@ -60,13 +65,16 @@ export default function TerrainFlyover({ routes, route, points, kind, ink, title
   }, [ok, near]);
 
   if (ok === false || !list.length || !list[0].stops.length) return null;
+  const fail = () => { setOk(false); onFail?.(); };
+  const map = near && ok
+    ? <TerrainMap routes={list} kind={k} ink={ink} exaggeration={exaggeration} reduced={reduced} playLabel={playLabel} title={title} onReady={() => undefined} onFail={fail} routeIndex={routeIndex} hideRoutePicker={hideRoutePicker} />
+    : <div className="jw-relief__frame"><p className="jw-relief__wait">Raising the terrain</p></div>;
+  if (bare) return <div ref={ref} id={id} className="jw-relief" data-map="terrain" data-terrain-pilot="1">{map}</div>;
   return (
     <section id={id} className="jw-relief mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby={`${id}-h`} data-terrain-pilot="1">
       {head}
       <div ref={ref} className="mt-6" data-map="terrain">
-        {near && ok
-          ? <TerrainMap routes={list} kind={k} ink={ink} exaggeration={exaggeration} reduced={reduced} playLabel={playLabel} title={title} onReady={() => undefined} onFail={() => setOk(false)} />
-          : <div className="jw-relief__frame"><p className="jw-relief__wait">Raising the terrain</p></div>}
+        {map}
       </div>
       {note && <p className="jw-relief__note">{note}</p>}
     </section>

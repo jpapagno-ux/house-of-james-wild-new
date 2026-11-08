@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ChevronDown } from "lucide-react";
+import RouteViews from "@/components/maps/terrain/RouteViews";
+import type { TerrainFlyoverProps } from "@/components/maps/terrain/TerrainFlyover";
 
 // The day log beside the house route chart. As each day reaches the middle of the screen
 // (IntersectionObserver) the chart sails to it (window.chartDay, jw-chart's own API), and the
@@ -21,7 +23,7 @@ export type ScrollerItinerary = { name: string; direction: string; nights: numbe
 // Day titles as the log shows them: the first letter capitalised (some operators publish "arrive San Cristobal").
 const cap = (x: string) => (x ? x.charAt(0).toUpperCase() + x.slice(1) : x);
 
-export default function ItineraryScroller({ ship, itineraries, map }: { ship: string; itineraries: ScrollerItinerary[]; map: ReactNode }) {
+export default function ItineraryScroller({ ship, itineraries, map, terrain }: { ship: string; itineraries: ScrollerItinerary[]; map: ReactNode; terrain?: Omit<TerrainFlyoverProps, "head" | "note"> }) {
   const [tab, setTab] = useState(0);
   const [active, setActive] = useState<number | null>(null);
   const [closed, setClosed] = useState<Set<number>>(new Set());
@@ -134,7 +136,7 @@ export default function ItineraryScroller({ ship, itineraries, map }: { ship: st
       </div>
       {/* From 1280px: the chart sticky on the left at 60% (min 640px), the log on the right. Below, the chart above the log. */}
       <div className={`mt-5 grid gap-6 xl:gap-10 items-start ${map ? "xl:grid-cols-[minmax(640px,3fr)_minmax(0,2fr)]" : ""}`}>
-        {map && <div ref={mapRef} className="contents">{map}</div>}
+        {map && <div ref={mapRef} className="contents">{terrain ? <RouteViews chart={map} terrain={terrain} routeIndex={tab} className="xl:sticky xl:top-[228px] z-10 bg-paper" /> : map}</div>}
         <div>
           <p className="ledger-eyebrow mb-2" aria-live="polite">{it.name}{active != null ? ` · ${it.days[active]?.label?.startsWith("Stop") ? "Stop" : "Day"} ${it.days[active]?.day} of ${it.days.length}` : ""}</p>
           <ol ref={listRef} className="border-t ledger-rule" key={tab}>

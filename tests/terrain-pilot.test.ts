@@ -78,7 +78,7 @@ test("a MapTiler key never prints", () => {
 
 test("3D terrain shows only on the allow-listed pages", async () => {
   const { TERRAIN_PAGES, terrainOn } = await import("../components/maps/terrain/flag.ts");
-  assert.deepEqual([...TERRAIN_PAGES].sort(), ["destinations/oceania/fiji/beqa-lagoon-and-pacific-harbour", "destinations/oceania/fiji/yasawa-islands", "destinations/oceania/tahiti#tahaa", "stays/ulum-moab", "voyages/indonesia/komodo-and-flores-charter", "voyages/ships/natural-paradise-yacht"]);
+  assert.deepEqual([...TERRAIN_PAGES].sort(), ["destinations/oceania/fiji/beqa-lagoon-and-pacific-harbour", "destinations/oceania/fiji/yasawa-islands", "destinations/oceania/tahiti#tahaa", "stays/ulum-moab", "voyages/indonesia/komodo-and-flores-charter", "voyages/polar", "voyages/ships", "voyages/ships/natural-paradise-yacht"]);
   for (const p of TERRAIN_PAGES) assert.equal(terrainOn(p), true);
   assert.equal(terrainOn("voyages/indonesia/raja-ampat-and-misool-charter"), false);
   assert.equal(terrainOn("stays/some-other-stay"), false);
@@ -152,4 +152,10 @@ test("in Satellite the imagery covers sea and land, with an earth and an ocean t
   assert.equal(off["water.fill-color"], TERRAIN.water);
   assert.equal(off["jw-hillshade.visibility"], "visible");
   assert.equal(viewOps(base, false, "flat").find((o) => o.id === "jw-hillshade")?.value, "none");
+});
+
+test("3D waters for ship pages: Galapagos, Antarctica and Fiji only (James, 8 Nov 2026)", async () => {
+  const { terrainWaters } = await import("../components/maps/terrain/flag.ts");
+  for (const w of ["galapagos", "antarctica", "fiji"]) assert.equal(terrainWaters(w), true, w);
+  for (const w of ["nile", "amazon", "indonesia", undefined]) assert.equal(terrainWaters(w), false, String(w));
 });

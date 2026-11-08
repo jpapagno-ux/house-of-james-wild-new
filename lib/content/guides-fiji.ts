@@ -36,7 +36,7 @@ export const FIJI_GUIDES: Record<string, Guide> = {
       title: "Escape to Paradise, 7 nights aboard Yasawa Princess II",
       intro: "Follow Blue Lagoon Cruises' week from Port Denarau through the Mamanucas and up the Yasawa chain to the Blue Lagoon and Sawa-i-Lau, then south to the mantas at Drawaqa. Positions approximate.",
       playLabel: "Play the week",
-      routes: [{ name: "Escape to Paradise, 7 nights", stops: [
+      routes: [{ name: "Escape to Paradise, 7 nights", file: "yasawa-princess-ii-port-denarau-round-trip-friday-to-friday-7n", stops: [
           { day: 1, name: "South Sea Cay", lat: -17.705, lng: 177.262 },
           { day: 2, name: "Soso Bay, Naviti", lat: -17.115, lng: 177.235 },
           { day: 3, name: "Naukacuvu Island", lat: -17.165, lng: 177.255 },

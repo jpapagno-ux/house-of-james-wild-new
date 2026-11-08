@@ -8,7 +8,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AttributionControl, Map as MLMap, Marker, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type LngLatLike, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_SATELLITE, TILE_CACHE, fontOf, groundStyle, houseStyle, pixelRatioFor, redact, satelliteIndex, satelliteLayer, viewOps } from "./style";
-import { boundsOf, clampSeabed, dayLabel, headingAt, isAir, legsOf, lengthKm, lngLat, partOf, smoothLine, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
+import { boundsOf, clampSeabed, dayLabel, headingAt, isAir, legsOf, lengthKm, lngLat, partOf, smoothLine, cutFor, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
 import { CRIMSON, HOUSE } from "@/lib/palette";
 
 const KEY = process.env.NEXT_PUBLIC_MAPTILER_KEY || "";
@@ -77,7 +77,7 @@ const legsFc = (legs: LngLat[][], air: boolean[]) => fc(legs.map((l, i) => ({ ty
 const airOf = (stops: TerrainStop[]) => stops.slice(1).map(isAir);
 /** The legs the 3D map draws: each sea lane from the route file (the same path the engraved chart sails), its turns
  *  rounded so line and vessel sweep round the headlands; flown legs stay great-circle arcs. */
-const routeLegs = (stops: TerrainStop[]) => legsOf(stops).map((l, i) => (isAir(stops[i + 1]) ? l : smoothLine(l)));
+const routeLegs = (stops: TerrainStop[]) => legsOf(stops).map((l, i) => (isAir(stops[i + 1]) ? l : smoothLine(l, cutFor(stops[i + 1]))));
 
 // The vehicle on the route, drawn pointing north and rotated to the heading: the house vessel (graphite hull, crimson
 // pennant) under way, a small plane on a flown leg. About 22px, like the SVG charts' moving boat.

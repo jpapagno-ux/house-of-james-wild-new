@@ -23,8 +23,12 @@ import { undash, type ShipRecord } from "@/lib/content/ships/types";
 import { pathway as pathwayOf, type Pathway } from "@/lib/pathways";
 import { pathwayHref } from "@/lib/content/pathways/flag";
 import { VOYAGE_PATHWAYS_ON } from "@/lib/content/ships/flags";
-import { POLAR_FACTS, POLAR_PATH, STYLES, daysWords, monthsWords, nightsWords, sailingAsDeparture, shipName, usd, voyageFrom, voyagePath, type PolarVoyage } from "@/lib/content/polar";
+import { POLAR_FACTS, POLAR_PATH, STYLES, polarRouteId, daysWords, monthsWords, nightsWords, sailingAsDeparture, shipName, usd, voyageFrom, voyagePath, type PolarVoyage } from "@/lib/content/polar";
 import { voyageMap } from "@/lib/content/polar/maps";
+import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
+import { volumeMark } from "@/lib/volumes";
+import { terrainRoute } from "@/components/maps/terrain/routed";
+import { readRoute } from "@/lib/content/ships/routes";
 import { absoluteUrl } from "@/lib/seo";
 
 // One landing page per Antarctica21 itinerary (/voyages/polar/<slug>), on the ship template's
@@ -102,6 +106,10 @@ export default function PolarVoyagePage({ v }: { v: PolarVoyage }) {
           <ShipItinerary ship={v.name} map={map} eyebrow="The voyage, day by day" title={`What Happens on the ${v.name}, Day by Day?`}
             intro={[indicative ? INDICATIVE : null, v.itineraryNote ? t(v.itineraryNote) : null, "Scroll the log and the chart sails the route as you read."].filter(Boolean).join(" ")}
             itineraries={[{ name: v.name, nights: v.nights, direction: t(v.route), days: v.itinerary.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) }]} />
+
+          <SeeIn3D page="voyages/polar" id={`see-${v.slug}-in-3d`} kind="voyage" ink={volumeMark("voyages")} title={v.name} exaggeration={1.6}
+            routes={[terrainRoute(v.name, readRoute(polarRouteId(v)), v.itinerary.map((d) => ({ day: d.day, name: t(d.place), lat: d.lat, lng: d.lng })))]}
+            intro="The voyage over the real ice and mountains: the flight across the Drake where it is flown, then the ship's line day by day, kept round the islands and through the channels it sails." />
 
           <section id="ships" className={SEC}>
             <SectionHead eyebrow="The ships" title={v.ships.length > 1 ? "Which Ship Should You Choose?" : `Which Ship Sails the ${v.name}?`} icon="wave"

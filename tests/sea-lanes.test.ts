@@ -1,13 +1,13 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
-import { legsOf, smoothLine, type LngLat, type TerrainStop } from "../components/maps/terrain/geo.ts";
+import { cutFor, legsOf, smoothLine, type LngLat, type TerrainStop } from "../components/maps/terrain/geo.ts";
 
 // Sea lanes (James, 3 Nov 2026: the line must go round the islands, never across them). Every sailed leg of every route
 // file (public/maps/routes, the one source the engraved chart, its SVG figure and the 3D terrain map all draw) must stay
 // off the land the chart itself draws (public/maps/data/<dest>/base.geojson, the coastline scripts/sealanes.py routes
 // round). The only land a leg may touch is its own landing: within 3 km of an anchorage, or, where the chart puts the
-// stop inland, as far as the nearest charted water plus 4 km. River charts (a river overlay: the Nile) are not seas.
+// stop inland, as far as the nearest charted water plus 1.5 km. River charts (a river overlay: the Nile) are not seas.
 
 type Ring = LngLat[];
 type Poly = { box: [number, number, number, number]; rings: Ring[] };
@@ -18,7 +18,9 @@ const lands = new Map<string, Poly[]>();
 
 function landOf(dest: string): Poly[] {
   if (lands.has(dest)) return lands.get(dest)!;
-  const f = `${MAPS}/data/${dest}/base.geojson`;
+  // The OSM coastline the MapTiler 3D map draws (scripts/data/coast, James, 8 Nov 2026), else the chart's own land.
+  const coast = `scripts/data/coast/${dest === "antarctica" ? "polar" : dest}.geojson`;
+  const f = dest && existsSync(coast) ? coast : `${MAPS}/data/${dest}/base.geojson`;
   const out: Poly[] = [];
   if (dest && existsSync(f) && !existsSync(`${MAPS}/data/${dest}/overlay.geojson`)) {
     for (const ft of JSON.parse(readFileSync(f, "utf8")).features as { properties?: { layer?: string }; geometry: { type: string; coordinates: unknown } }[]) {
@@ -54,7 +56,7 @@ function toCoast(p: LngLat, land: Poly[]) {
   }
   return best;
 }
-const reach = (p: LngLat, land: Poly[]) => (onLand(p, land) ? toCoast(p, land) + 4 : 3);
+const reach = (p: LngLat, land: Poly[]) => (onLand(p, land) ? toCoast(p, land) + 1.5 : 3); // an inland pin: 1.5 km past the shore (James, 8 Nov 2026), as scripts/sealanes.py INLAND_KM
 
 /** The first point of a leg's polyline that crosses charted land outside the two landings, or null. */
 function crossing(line: LngLat[], land: Poly[]): LngLat | null {
@@ -100,7 +102,7 @@ test("the 3D map draws the routed lanes, rounded, and they still keep off the la
     legs.forEach((leg, i) => {
       const s = r.stops[i + 1];
       if (s.path && s.path.length > 2) assert.ok(leg.length >= s.path.length, `${id} leg ${i + 1}: the 3D leg is not the routed path`);
-      const round = smoothLine(leg);
+      const round = smoothLine(leg, cutFor(s));
       assert.deepEqual(round[0], leg[0]); assert.deepEqual(round[round.length - 1], leg[leg.length - 1]);
       if (SEA.has(String(s.mode ?? "sea"))) assert.equal(crossing(round, land), null, `${id}: ${r.stops[i].name} > ${s.name} (rounded) crosses land`);
     });
@@ -116,4 +118,23 @@ test("Komodo: the first leg sails round the north of Komodo Island, not over its
   assert.ok(Math.max(...leg.path!.map((p) => p[1])) > -8.45);
   const straight: LngLat[] = [[r.stops[0].lng, r.stops[0].lat], [leg.lng, leg.lat]];
   assert.notEqual(crossing(straight, landOf("komodo")), null, "the straight line would cross Komodo (the bug this guards)");
+});
+
+test("every sailed line the 3D map draws (the routed lane, rounded) keeps off the OSM coast, site wide", () => {
+  // James, 8 Nov 2026: "you don't want them going through the islands": all waters, not just the pilots.
+  const bad: string[] = [];
+  for (const r of ROUTES.filter(sailed)) {
+    const land = landOf(r.destination!);
+    legsOf(r.stops).forEach((leg, i) => {
+      const s = r.stops[i + 1];
+      if (!SEA.has(String(s.mode ?? "sea").toLowerCase())) return;
+      const hit = crossing(smoothLine(leg, cutFor(s)), land);
+      if (hit) bad.push(`${r.id}: ${r.stops[i].name} > ${s.name} (rounded) at ${hit[1].toFixed(3)}, ${hit[0].toFixed(3)}`);
+    });
+  }
+  assert.deepEqual(bad, []);
+});
+
+test("the waters James named have OSM coastlines to route round: Galapagos, Antarctica and the polar seas, Fiji", () => {
+  for (const d of ["galapagos", "antarctica", "polar", "fiji"]) assert.ok(landOf(d).length > 20, `${d}: no coastline`);
 });

@@ -16,12 +16,14 @@ import json, math, os, sys
 
 import numpy as np
 from matplotlib.path import Path
+from PIL import Image, ImageDraw
 from scipy import ndimage
 from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import dijkstra
 
 KM = 111.32           # km per degree of latitude
 LANDING_KM = 3.0      # reach from an anchorage at the charted shore to open water
+INLAND_KM = 1.5       # a stop charted inland: the line may cross the shore to it, this far past the coast (James, 8 Nov 2026)
 CLEAR_KM = 0.3        # a straight leg that keeps this far off the coast is left straight
 MARGINS = (1.0, 0.6, 0.3, 0.1)
 CELL_KM = 0.25
@@ -29,10 +31,22 @@ SEA_MODES = {"sea", "ship", "vessel", "boat", "zodiac", "kayak"}
 _LAND = {}
 
 
+COAST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "coast")
+COAST_ALIAS = {"antarctica": "polar"}   # the Peninsula chart sits inside the polar coastline
+
+
+def coast_file(maps_dir, dest):
+    """The coastline a destination's legs are routed round: the OSM land polygons clipped for it (scripts/data/coast,
+    built by scripts/coast-clip.py; James, 8 Nov 2026: the MapTiler 3D map draws OSM's coast, so the lanes must too),
+    else the chart's own land (public/maps/data/<dest>/base.geojson)."""
+    c = os.path.join(COAST_DIR, f"{COAST_ALIAS.get(dest, dest)}.geojson")
+    return c if dest and os.path.exists(c) else os.path.join(maps_dir, "data", dest, "base.geojson")
+
+
 def land_of(maps_dir, dest):
-    """The chart's land polygons for a destination: a list of (bbox, [ring, ...]) with rings as (n, 2) [lng, lat]."""
+    """The land polygons for a destination: a list of (bbox, [ring, ...]) with rings as (n, 2) [lng, lat]."""
     if dest in _LAND: return _LAND[dest]
-    f = os.path.join(maps_dir, "data", dest, "base.geojson")
+    f = coast_file(maps_dir, dest)
     out = []
     if dest and os.path.exists(f):
         for ft in json.load(open(f))["features"]:
@@ -58,16 +72,18 @@ class Grid:
         self.y0 = min(a[1], b[1]) - pad / KM
         self.nx = int((max(a[0], b[0]) + pad / (KM * self.k) - self.x0) / self.dlng) + 1
         self.ny = int((max(a[1], b[1]) + pad / KM - self.y0) / self.dlat) + 1
-        X, Y = np.meshgrid(self.x0 + (np.arange(self.nx) + 0.5) * self.dlng, self.y0 + (np.arange(self.ny) + 0.5) * self.dlat)
-        pts = np.column_stack([X.ravel(), Y.ravel()])
-        m = np.zeros(len(pts), bool)
+        # Land raster: each polygon is filled straight onto the grid (PIL), holes cut back out. The OSM coast round the
+        # Chilean fjords is thousands of polygons, so a per-cell point-in-polygon test was far too slow.
         x1, y1 = self.x0 + self.nx * self.dlng, self.y0 + self.ny * self.dlat
+        img = Image.new("1", (self.nx, self.ny), 0)
+        dr = ImageDraw.Draw(img)
+        px = lambda r: [((x - self.x0) / self.dlng - 0.5, (y - self.y0) / self.dlat - 0.5) for x, y in r]
         for (bx0, by0, bx1, by1), rings in land:
             if bx1 < self.x0 or bx0 > x1 or by1 < self.y0 or by0 > y1: continue
-            inside = Path(rings[0]).contains_points(pts)
-            for hole in rings[1:]: inside &= ~Path(hole).contains_points(pts)
-            m |= inside
-        self.land = m.reshape(self.ny, self.nx)
+            if len(rings[0]) >= 3: dr.polygon(px(rings[0]), fill=1, outline=1)
+            for hole in rings[1:]:
+                if len(hole) >= 3: dr.polygon(px(hole), fill=0, outline=0)
+        self.land = np.asarray(img, dtype=bool)
         self.dist = ndimage.distance_transform_edt(~self.land) * self.cell
         self.wet = ndimage.distance_transform_edt(self.land, return_indices=True)[1] if self.land.any() else None
 
@@ -77,7 +93,7 @@ class Grid:
     def ll(self, c):
         return [self.x0 + (c[1] + 0.5) * self.dlng, self.y0 + (c[0] + 0.5) * self.dlat]
 
-    def free(self, a, b, margin):
+    def free(self, a, b, margin, inland_km=0.0):
         """Sailable cells: further than `margin` km from land, plus the landing round each end."""
         free = self.dist > margin
         I, J = np.ogrid[:self.ny, :self.nx]
@@ -86,7 +102,7 @@ class Grid:
             r = max(margin - self.dist[ci] + self.cell * 2 if self.dist[ci] < margin else 0, self.cell * 1.5)
             if self.land[ci]:   # charted inside the land: reach the nearest water, however far the chart puts it
                 w = (self.wet[0][ci], self.wet[1][ci])
-                r = max(r, math.hypot(w[0] - ci[0], w[1] - ci[1]) * self.cell + margin + self.cell * 2)
+                r = max(r, math.hypot(w[0] - ci[0], w[1] - ci[1]) * self.cell + margin + self.cell * 2 + inland_km)
             else: r = min(r, LANDING_KM)
             free |= ((I - ci[0]) ** 2 + (J - ci[1]) ** 2) * self.cell ** 2 <= r * r
         return free
@@ -158,11 +174,51 @@ def _on_land(pts, land):
     return m
 
 
+def land_hits(line, land):
+    """The sampled points of a leg on land outside its two landings (what crosses() tests), as [[lng, lat], ...]."""
+    a, b = line[0], line[-1]
+    reach = [(_coast_km(np.asarray(p), land) + INLAND_KM if _on_land(np.asarray([p]), land)[0] else 3.0) for p in (a, b)]
+    k = math.cos(math.radians((a[1] + b[1]) / 2))
+    pts = []
+    for p, q in zip(line, line[1:]):
+        n = max(2, int(math.ceil(km(p, q, k) / 0.1)) + 1)
+        t = np.linspace(0, 1, n)[:, None]
+        pts.append(np.asarray(p) + (np.asarray(q) - np.asarray(p)) * t)
+    pts = np.vstack(pts)
+    da = np.hypot((pts[:, 0] - a[0]) * k * KM, (pts[:, 1] - a[1]) * KM)
+    db = np.hypot((pts[:, 0] - b[0]) * k * KM, (pts[:, 1] - b[1]) * KM)
+    far = pts[(da > reach[0]) & (db > reach[1])]
+    return far[_on_land(far, land)] if len(far) else far
+
+
+def taut_free_path(g, free, a, b, land, tries=8):
+    """Shortest path over free cells, pulled taut; islets thinner than a cell that the line still touches are blocked
+    (their cells and the ring round them) and the path found again, up to `tries` times."""
+    free = free.copy()
+    for _ in range(tries):
+        free[g.ij(a)] = free[g.ij(b)] = True
+        cells = shortest(free, g.ij(a), g.ij(b))
+        if not cells: return None
+        pts = [a] + [g.ll(c) for c in cells[1:-1]] + [b]
+        out, i = [pts[0]], 0
+        while i < len(pts) - 1:
+            j = len(pts) - 1
+            while j > i + 1 and not clear(g, free, pts[i], pts[j]): j -= 1
+            out.append(pts[j]); i = j
+        line = [[round(float(p[0]), 4), round(float(p[1]), 4)] for p in out[:-1]] + [b]
+        hits = land_hits(line, land)
+        if not len(hits): return line
+        for h in hits:
+            ci = g.ij(h)
+            free[max(0, ci[0] - 1):ci[0] + 2, max(0, ci[1] - 1):ci[1] + 2] = False
+    return None
+
+
 def crosses(line, land):
     """Whether a leg crosses the charted land outside its two landings (the rule tests/sea-lanes.test.ts checks):
     3 km round an anchorage at sea, or, for a stop the chart puts inland, its distance to the coast plus 4 km."""
     a, b = line[0], line[-1]
-    reach = [(_coast_km(np.asarray(p), land) + 4 if _on_land(np.asarray([p]), land)[0] else 3.0) for p in (a, b)]
+    reach = [(_coast_km(np.asarray(p), land) + INLAND_KM if _on_land(np.asarray([p]), land)[0] else 3.0) for p in (a, b)]
     k = math.cos(math.radians((a[1] + b[1]) / 2))
     pts = []
     for p, q in zip(line, line[1:]):
@@ -199,8 +255,66 @@ def sea_path(a, b, land):
             line = [[round(float(p[0]), 4), round(float(p[1]), 4)] for p in out[:-1]] + [b]
             if not crosses(line, land): return line, True
             break   # a coarse grid slipped past thin land: try finer cells
+    for ck, wk in ((0.4, 15.0), (0.15, 15.0), (0.25, 40.0)):   # Stanley's Narrows and the fjord passes are narrower than 400 m
+        line = corridor_path(a, b, land, cell_km=ck, width_km=wk)
+        if line: return line, True
     print(f"  sealanes: no way round from {a} to {b}; left straight", file=sys.stderr)
     return [a, b], False
+
+
+def corridor_path(a, b, land, cell_km=0.4, width_km=15.0):
+    k = math.cos(math.radians((a[1] + b[1]) / 2))
+    span = max(abs(a[0] - b[0]) * k * KM, abs(a[1] - b[1]) * KM) + 2 * width_km
+    if span / cell_km <= 3000:   # small enough to search the whole sea round the leg at the fine cell, no corridor
+        f = Grid(a, b, land, 0.0, int(span / cell_km))
+        f2 = Grid(a, b, land, width_km / max(1.0, span - 2 * width_km), int(span / cell_km)) if width_km > 25 else f
+        for g in (f, f2):
+            for margin in MARGINS:
+                line = taut_free_path(g, g.free(a, b, margin, inland_km=1.2 if width_km > 15 else 0.0), a, b, land)
+                if line: return line
+    for erode in (2, 1, 0):   # widen the coarse water less if its way cuts across land the fine pass cannot follow
+        line = _corridor(a, b, land, cell_km, width_km, erode)
+        if line: return line
+    return None
+
+
+def _corridor(a, b, land, cell_km, width_km, erode):
+    """Long legs through narrow water (the Strait of Magellan, the Beagle Channel, Stanley's narrows, the Chilean fjords):
+    a coarse pass on a grid whose water is widened two cells (so channels narrower than a cell stay open) finds the way,
+    then a fine pass (cell_km) inside a corridor width_km either side of it finds the real line round the land."""
+    g = Grid(a, b, land, 0.6, 420)
+    if not g.land.any(): return None
+    water = ~ndimage.binary_erosion(g.land, iterations=erode) if erode else ~g.land
+    for p in (a, b):
+        ci = g.ij(p); I, J = np.ogrid[:g.ny, :g.nx]
+        r = 2   # tight: a wide landing here lets the coarse line cut across a peninsula (Grytviken, Thatcher Peninsula)
+        if g.land[ci]: w = (g.wet[0][ci], g.wet[1][ci]); r = max(r, int(math.hypot(w[0] - ci[0], w[1] - ci[1])) + 2)
+        water |= (I - ci[0]) ** 2 + (J - ci[1]) ** 2 <= r * r
+    cells = shortest(water, g.ij(a), g.ij(b))
+    if not cells: return None
+    coarse = [a] + [g.ll(c) for c in cells[1:-1]] + [b]
+    xs, ys = [p[0] for p in coarse], [p[1] for p in coarse]
+    lo, hi = [min(xs), min(ys)], [max(xs), max(ys)]
+    k = math.cos(math.radians((lo[1] + hi[1]) / 2))
+    span = max((hi[0] - lo[0]) * k * KM, (hi[1] - lo[1]) * KM) + 50
+    pad = (width_km + 15) / KM   # the corridor must fit inside the fine grid
+    lo, hi = [lo[0] - pad / k, lo[1] - pad], [hi[0] + pad / k, hi[1] + pad]
+    span += 2 * (width_km + 15)
+    f = Grid(lo, hi, land, 0.0, int(min(6000, span / cell_km)))
+    img = Image.new("1", (f.nx, f.ny), 0)
+    ImageDraw.Draw(img).line([((x - f.x0) / f.dlng - 0.5, (y - f.y0) / f.dlat - 0.5) for x, y in coarse], fill=1, width=1)
+    near = ndimage.distance_transform_edt(~np.asarray(img, dtype=bool)) * f.cell <= width_km
+    for margin in MARGINS:
+        line = taut_free_path(f, f.free(a, b, margin, inland_km=1.2 if width_km > 15 else 0.0) & near, a, b, land)
+        if line: return line
+    return None
+
+
+def clearance(line, land):
+    """km from the coast at the lane's turning points (its inner vertices): the 3D map rounds each corner by at most half
+    of it, so a lane threaded through a narrow channel keeps tight corners and stays at sea (components/maps/terrain/geo.ts)."""
+    inner = line[1:-1]
+    return round(min(_coast_km(np.asarray(p), land) for p in inner), 2) if inner else None
 
 
 def route_stops(r, maps_dir):
@@ -211,8 +325,10 @@ def route_stops(r, maps_dir):
         if prev is not None and land and str(s.get("mode", "sea")).lower() in SEA_MODES:
             p, moved = sea_path([prev["lng"], prev["lat"]], [s["lng"], s["lat"]], land)
             s["path"] = p
-            if moved: s["lane"] = "sea"; done.append(f"{prev['name']} > {s['name']}")
-            else: s.pop("lane", None)
+            if moved:
+                s["lane"] = "sea"; done.append(f"{prev['name']} > {s['name']}")
+                s["clear"] = clearance(p, land)
+            else: s.pop("lane", None); s.pop("clear", None)
         prev = s
     return done
 

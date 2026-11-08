@@ -97,9 +97,12 @@ export type TerrainMapProps = {
   title: string;
   onReady: () => void;
   onFail: () => void;
+  /** Set from outside (the day log's itinerary tabs, RouteViews): the route shown, with the picker hidden. */
+  routeIndex?: number;
+  hideRoutePicker?: boolean;
 };
 
-export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, playLabel, title, onReady, onFail }: TerrainMapProps) {
+export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, playLabel, title, onReady, onFail, routeIndex, hideRoutePicker }: TerrainMapProps) {
   const box = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MLMap | null>(null);
   const run = useRef(0); // play token: a new value cancels a flight in progress
@@ -112,7 +115,8 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const camFree = useRef(false); // a hand on the map: the auto camera stands down until Replay
   const baseLayers = useRef<{ id: string; type: string; "source-layer"?: string; layout?: Record<string, unknown> }[]>([]);
   const [ready, setReady] = useState(false);
-  const [routeIx, setRouteIx] = useState(0);
+  const [routeIx, setRouteIx] = useState(routeIndex ?? 0);
+  useEffect(() => { if (typeof routeIndex === "number" && routeIndex >= 0 && routeIndex < routes.length) setRouteIx(routeIndex); }, [routeIndex, routes.length]);
   const [active, setActive] = useState(-1);
   const [playing, setPlaying] = useState(false);
   const [done, setDone] = useState(false);
@@ -410,7 +414,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const label = s ? dayLabel(s) : null;
   return (
     <>
-      {routes.length > 1 && (
+      {routes.length > 1 && !hideRoutePicker && (
         <div className="jw-relief__tabs" role="group" aria-label="Choose the route">
           {routes.map((r, i) => <button key={r.name} type="button" className="jw-relief__btn" aria-pressed={i === routeIx} onClick={() => setRouteIx(i)}>{r.name}</button>)}
         </div>
@@ -433,7 +437,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         <button type="button" className="jw-relief__btn" onClick={() => { pause(); setStops(-1); void overview(!reduced); }} disabled={!ready}>Overview</button>
         {hasSat && (
           <div className="jw-relief__bar-end" role="group" aria-label="Map style">
-            <button type="button" className="jw-relief__btn" aria-pressed={!sat} onClick={() => toggleSat(false)}>Chart</button>
+            <button type="button" className="jw-relief__btn" aria-pressed={!sat} onClick={() => toggleSat(false)}>Terrain</button>
             <button type="button" className="jw-relief__btn" aria-pressed={sat} onClick={() => toggleSat(true)}>Satellite</button>
           </div>
         )}

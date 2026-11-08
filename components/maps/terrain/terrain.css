@@ -104,3 +104,17 @@
 @media (min-width: 640px) {
   .jw-atlas__shell .jw-atlas__poster { min-height: calc(clamp(320px, 56.25cqw, calc(100svh - var(--jw-header-h, 80px) - 48px)) + 112px); display: flex; flex-direction: column; justify-content: center; }
 }
+
+/* RouteViews: one frame, "3D Flyover" | "Itinerary Chart" (James, 8 Nov 2026). The chart stays in the page under the
+   3D view (search, answer engines, print, no-WebGL), hidden but measured, so it returns at once. */
+.jw-views__switch { display: flex; gap: 0; margin-bottom: 10px; }
+.jw-views__switch .jw-views__tab { min-height: 40px; padding: 0 14px; cursor: pointer; }
+.jw-views__switch .jw-views__tab + .jw-views__tab { border-left: 0; }
+.jw-views__panes { position: relative; }
+.jw-views[data-view="3d"] .jw-views__chart { position: absolute; inset: 0; visibility: hidden; pointer-events: none; overflow: hidden; }
+.jw-views__3d .jw-relief__frame { aspect-ratio: 4 / 3; }
+@media (max-width: 639px) { .jw-views__3d .jw-relief__frame { aspect-ratio: 4 / 5; } }
+@media print {
+  .jw-views__switch, .jw-views__3d { display: none !important; }
+  .jw-views .jw-views__chart { position: static !important; visibility: visible !important; }
+}

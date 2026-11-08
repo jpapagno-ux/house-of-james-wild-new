@@ -11,6 +11,7 @@ import { filmSchema, type ShortFilm } from "@/lib/content/films";
 import { cabinFrom, cruiseOnly, factOf, nightsLabel, packages, priceLine, pricedCabins, publicNote, rateBasisOf, routeOf, undash, type ShipRecord } from "@/lib/content/ships/types";
 import { shipPath, waterFor, type ShipEntry } from "@/lib/content/ships";
 import { shipMap } from "@/lib/content/ships/maps";
+import type { TerrainFlyoverProps } from "@/components/maps/terrain/TerrainFlyover";
 import ShipTemplate from "./ShipTemplate";
 import CabinsDeck from "./CabinsDeck";
 import DatesRates from "./DatesRates";
@@ -45,6 +46,8 @@ export type ShipExtra = {
   body?: ReactNode;
   /** Directly below the itinerary and its chart (the 3D terrain pilot). */
   itineraryAfter?: ReactNode;
+  /** The 3D view of the itinerary routes, in the same order: shown in the chart's frame behind a "3D Flyover | Itinerary Chart" switch. */
+  itineraryTerrain?: Omit<TerrainFlyoverProps, "head" | "note">;
   after?: ReactNode;
   jsonld?: object[];
 };
@@ -162,7 +165,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         cta: { label: "Plan with James", href: plan, house: true },
         // Each fact once: route, nights, guests and ages live in the glance bar, cabins in Cabins.
         overview: { quote: s.quote ? t(s.quote) : undefined, answer: t(s.answer), facts: s.facts.filter(([k]) => !/route|guest|child|age|cabin|suite/i.test(k)).map(([k, v]) => [k, t(v)] as [string, string]), paragraphs: s.overview.map(t) },
-        itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, name: t(i.name), direction: t(i.direction), days: i.days.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: `${s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick a direction, then scroll the log: the chart sails the route day by day as you read." : "Scroll the log and the chart sails the route day by day as you read."}${stopsOnly ? ` ${s.operator} lists the stops of these routes in order but publishes no day numbers or length, so they are numbered as stops, a guide only.` : ""}`, routesNote: s.routesNote ? t(s.routesNote) : undefined, combinations: s.combinations },
+        itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, name: t(i.name), direction: t(i.direction), days: i.days.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: `${extra.itineraryTerrain ? `${s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick an itinerary and fly it in 3D over the islands, or" : "Fly it in 3D over the islands, or"} switch to the itinerary chart, which sails the route day by day as you scroll the log.` : s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick a direction, then scroll the log: the chart sails the route day by day as you read." : "Scroll the log and the chart sails the route day by day as you read."}${stopsOnly ? ` ${s.operator} lists the stops of these routes in order but publishes no day numbers or length, so they are numbered as stops, a guide only.` : ""}`, routesNote: s.routesNote ? t(s.routesNote) : undefined, combinations: s.combinations, terrain: extra.itineraryTerrain },
         film: extra.heroFilm || entrance ? null : { film: s.film, poster: s.gallery[1] ?? s.hero, credit },
         faqs: s.faqs.map(([q, a]) => [t(q), t(a)] as [string, string]),
         faqTitle: `What Else Should You Know About ${s.name}?`,

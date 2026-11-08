@@ -20,6 +20,11 @@ export type TerrainPage = (typeof TERRAIN_PAGES)[number];
 export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji"] as const;
 export const terrainWaters = (w: string | undefined) => !!w && (TERRAIN_WATERS as readonly string[]).includes(w);
 
+/** Ship pages where the 3D map shares the itinerary chart's frame ("3D Flyover | Itinerary Chart"), James, 8 Nov 2026:
+ *  one example first, Galaxy Sirius; the rest follow once he has seen it. */
+export const ROUTE_VIEWS = ["sirius-yacht-galapagos"] as const;
+export const routeViewsOn = (slug: string) => (ROUTE_VIEWS as readonly string[]).includes(slug);
+
 export const terrainOn = (page: string): page is TerrainPage =>
   process.env.NEXT_PUBLIC_TERRAIN_PILOT !== "false" && (TERRAIN_PAGES as readonly string[]).includes(page);
 

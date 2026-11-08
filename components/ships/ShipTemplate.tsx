@@ -16,6 +16,7 @@ import { pathway as pathwayOf, type Pathway } from "@/lib/pathways";
 import { pathwayHref } from "@/lib/content/pathways/flag";
 import { VOYAGE_PATHWAYS_ON } from "@/lib/content/ships/flags";
 import ShipFilm from "./ShipFilm";
+import type { TerrainFlyoverProps } from "@/components/maps/terrain/TerrainFlyover";
 import ShipItinerary from "./ShipItinerary";
 import ShipNav from "./ShipNav";
 import type { ShipEF } from "./ShipEntrance";
@@ -41,7 +42,7 @@ export type ShipFrame = {
   nav: [string, string][];
   cta: { label: string; href: string; house?: boolean };
   overview: { quote?: string; answer: string; facts: [string, string][]; paragraphs: string[] };
-  itinerary: { itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string; routesNote?: string; combinations?: { name: string; nights: number }[] };
+  itinerary: { itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string; routesNote?: string; combinations?: { name: string; nights: number }[]; terrain?: Omit<TerrainFlyoverProps, "head" | "note"> };
   /** The film slot; null when the vessel's own film already plays as the hero (never "Film coming soon" then). */
   film: { film: FilmData | undefined; poster: Img; credit?: string } | null;
   faqs: [string, string][];

@@ -2,6 +2,7 @@ import type { ShipItinerary as Itin } from "@/lib/content/ships/types";
 import { SectionHead } from "@/components/record/Sections";
 import MapBoot from "@/components/journey/MapBoot";
 import ItineraryScroller from "./ItineraryScroller";
+import type { TerrainFlyoverProps } from "@/components/maps/terrain/TerrainFlyover";
 
 // The day-by-day section of a ship page: the house route chart (jw-chart, the engine behind
 // every route page: globe fly-in, the boat gliding along the route, day by day) beside the day
@@ -9,7 +10,7 @@ import ItineraryScroller from "./ItineraryScroller";
 // its routes are in the same order as the itineraries with days, so R0, R1… match the tabs.
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 
-export default function ShipItinerary({ ship, itineraries: given, map, title, intro, eyebrow = "The voyage, day by day", routesNote, combinations }: { ship: string; itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string; routesNote?: string; combinations?: { name: string; nights: number }[] }) {
+export default function ShipItinerary({ ship, itineraries: given, map, title, intro, eyebrow = "The voyage, day by day", routesNote, combinations, terrain }: { ship: string; itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string; routesNote?: string; combinations?: { name: string; nights: number }[]; /** the 3D view of the same routes, in the same order: one frame, two views (RouteViews) */ terrain?: Omit<TerrainFlyoverProps, "head" | "note"> }) {
   // An itinerary without days: a private charter (route set with the guest), or a route the
   // operator publishes no day by day for ("ask us"), never an invented one.
   const charters = given.filter((i) => !i.days.length && /charter/i.test(`${i.name} ${i.direction}`));
@@ -46,7 +47,7 @@ export default function ShipItinerary({ ship, itineraries: given, map, title, in
       {charters.map((c) => <p key={c.name} className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">{c.name}</span>The route of a private charter ({c.direction}) is set with you; the chart follows the published {itineraries.length > 1 ? "routes" : "route"} she sails.</p>)}
       {map && <link rel="stylesheet" href="/maps/jw-maps.css" precedence="default" />}
       {map?.figCss && <link rel="stylesheet" href={map.figCss} precedence="default" />}
-      <ItineraryScroller ship={ship} itineraries={list} map={map ? <div className="ship-route xl:sticky xl:top-[228px] z-10 bg-paper" dangerouslySetInnerHTML={{ __html: map.html }} /> : null} />
+      <ItineraryScroller ship={ship} itineraries={list} terrain={map && terrain ? terrain : undefined} map={map ? <div className={`ship-route${terrain ? "" : " xl:sticky xl:top-[228px] z-10"} bg-paper`} dangerouslySetInnerHTML={{ __html: map.html }} /> : null} />
       {map && <MapBoot />}
     </section>
   );

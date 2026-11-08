@@ -107,6 +107,7 @@
 
 /* RouteViews: one frame, "3D Flyover" | "Itinerary Chart" (James, 8 Nov 2026). The chart stays in the page under the
    3D view (search, answer engines, print, no-WebGL), hidden but measured, so it returns at once. */
+.jw-views { scroll-margin-top: 240px; }
 .jw-views__switch { display: flex; gap: 0; margin-bottom: 10px; }
 .jw-views__switch .jw-views__tab { min-height: 40px; padding: 0 14px; cursor: pointer; }
 .jw-views__switch .jw-views__tab + .jw-views__tab { border-left: 0; }

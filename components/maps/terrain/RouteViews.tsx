@@ -10,7 +10,10 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import type { TerrainFlyoverProps } from "./TerrainFlyover";
 
-const TerrainFlyover = dynamic(() => import("./TerrainFlyover"));
+// the frame is held while the 3D code loads, so the page never jumps when the map arrives
+const TerrainFlyover = dynamic(() => import("./TerrainFlyover"), {
+  loading: () => <div className="jw-relief"><div className="jw-relief__frame"><p className="jw-relief__wait">Raising the terrain</p></div></div>,
+});
 
 type View = "3d" | "chart";
 

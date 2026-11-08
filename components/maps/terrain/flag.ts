@@ -17,13 +17,13 @@ export const TERRAIN_PAGES = [
 export type TerrainPage = (typeof TERRAIN_PAGES)[number];
 
 /** Waters whose ship pages carry "See It in 3D" (their route files are routed round the OSM coastline). */
-export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji"] as const;
+export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji", "indonesia"] as const;
 export const terrainWaters = (w: string | undefined) => !!w && (TERRAIN_WATERS as readonly string[]).includes(w);
 
-/** Ship pages where the 3D map shares the itinerary chart's frame ("3D Flyover | Itinerary Chart"), James, 8 Nov 2026:
- *  one example first, Galaxy Sirius; the rest follow once he has seen it. */
-export const ROUTE_VIEWS = ["sirius-yacht-galapagos"] as const;
-export const routeViewsOn = (slug: string) => (ROUTE_VIEWS as readonly string[]).includes(slug);
+/** One frame, two views ("3D Flyover | Itinerary Chart") on every cruise page with both maps: ship pages, polar voyages,
+ *  Indonesia journeys. James approved the Galaxy Sirius example and the rollout on 8 Nov 2026 ("it's a go"). The terrain
+ *  kill switch (NEXT_PUBLIC_TERRAIN_PILOT=false) still turns the 3D half off everywhere, leaving the chart. */
+export const routeViewsOn = (_page?: string) => process.env.NEXT_PUBLIC_TERRAIN_PILOT !== "false";
 
 export const terrainOn = (page: string): page is TerrainPage =>
   process.env.NEXT_PUBLIC_TERRAIN_PILOT !== "false" && (TERRAIN_PAGES as readonly string[]).includes(page);

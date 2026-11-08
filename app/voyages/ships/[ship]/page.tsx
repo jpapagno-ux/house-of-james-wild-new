@@ -56,11 +56,16 @@ export default async function ShipPage({ params }: P) {
     const weeks = pilot ? dayed.filter((i) => i.nights === 7).reverse() : dayed.filter((i) => readRoute(shipRouteId(rec, i)));
     if (!weeks.length) return null;
     const routes = weeks.map((w) => terrainRoute(w.name.split(":")[0], readRoute(shipRouteId(rec, w)), w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode }))));
-    const where = e.waters === "galapagos" ? "in the Galapagos" : e.waters === "fiji" ? "in Fiji" : "in Antarctica";
+    const where = e.waters === "galapagos" ? "in the Galapagos" : e.waters === "fiji" ? "in Fiji" : e.waters === "indonesia" ? "in Indonesia" : "in Antarctica";
     // One frame, two views (James, 8 Nov 2026): where every itinerary of the day log has its 3D route, in the same order,
     // the 3D map opens in the chart's frame behind a "3D Flyover | Itinerary Chart" switch (routeViewsOn, flag.ts).
-    const sameOrder = !pilot && weeks.length === dayed.length;
-    return { pilot, routes, where, inFrame: sameOrder && routeViewsOn(e.slug) };
+    // every itinerary of the log with its route, in log order (Natural Paradise's two weeks included)
+    const all = dayed.filter((i) => readRoute(shipRouteId(rec, i)));
+    if (all.length === dayed.length && routeViewsOn()) {
+      const inOrder = all.map((w) => terrainRoute(w.name.split(":")[0], readRoute(shipRouteId(rec, w)), w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode }))));
+      return { pilot, routes: inOrder, where, inFrame: true };
+    }
+    return { pilot, routes, where, inFrame: false };
   })();
   const terrainProps = t3d ? { kind: "voyage" as const, ink: volumeMark("voyages"), title: `${e.data.name} ${t3d.where}`, exaggeration: 1.8, routes: t3d.routes, id: "see-in-3d" } : null;
   const terrain = t3d && terrainProps && !t3d.inFrame

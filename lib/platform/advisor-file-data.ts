@@ -61,3 +61,16 @@ export async function advisorRequest(sb: SupabaseClient, id: string): Promise<Ad
   const { data } = await sb.from("advisor_requests").select(REQ_COLS).eq("id", id).maybeSingle();
   return (data as AdvisorRequest) ?? null;
 }
+
+// ===== Commission ledger (step 6)
+export async function commissionLines(sb: SupabaseClient, opts: { requestId?: string; id?: string } = {}): Promise<import("./commission-ledger").Line[]> {
+  let q = sb.from("commission_lines").select("*").order("booked_on", { ascending: false }).limit(1000);
+  if (opts.requestId) q = q.eq("advisor_request_id", opts.requestId);
+  if (opts.id) q = q.eq("id", opts.id);
+  const { data } = await q;
+  return (data ?? []) as import("./commission-ledger").Line[];
+}
+export async function myEarnings(sb: SupabaseClient): Promise<import("./commission-ledger").Earning[]> {
+  const { data } = await sb.rpc("my_earnings");
+  return (data ?? []) as import("./commission-ledger").Earning[];
+}

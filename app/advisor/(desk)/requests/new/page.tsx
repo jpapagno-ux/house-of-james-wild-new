@@ -9,8 +9,9 @@ import { PageHead, TextLink } from "@/components/platform/ui";
 export const metadata = { title: "Request a quote" };
 
 export default async function NewAdvisorRequest({ searchParams }: { searchParams: Promise<{ stay?: string }> }) {
-  const a = await requireAdvisor("/advisor/requests/new");
   const slug = (await searchParams).stay ?? "";
+  // Keep the stay through sign-in and the code, so the advisor lands back on this form.
+  const a = await requireAdvisor(`/advisor/requests/new${/^[a-z0-9-]{1,120}$/.test(slug) ? `?stay=${slug}` : ""}`);
   const stay = /^[a-z0-9-]{1,120}$/.test(slug) ? STAYS.find((s) => s.slug === slug) : undefined;
   if (!stay) notFound();
   const today = new Date().toISOString().slice(0, 10);

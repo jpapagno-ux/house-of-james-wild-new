@@ -122,3 +122,70 @@ export function DecideRequest({ id, status, price, currency }: { id: string; sta
     </form>
   );
 }
+
+export function RecordCommission({ id, price, currency, termRate }: { id: string; price: string; currency: string; termRate: string | null }) {
+  const router = useRouter();
+  const [override, setOverride] = useState(!termRate);
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<Msg>(null);
+  async function send(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setBusy(true); setMsg(null);
+    const body = Object.fromEntries(new FormData(e.currentTarget).entries());
+    const r = await api<{ ref: string }>("POST", `/api/v1/desk/advisor-requests/${id}/commission`, override ? body : { base: body.base });
+    setBusy(false);
+    if (!r.ok) { setMsg({ ok: false, text: r.message }); return; }
+    setMsg({ ok: true, text: `Recorded as ${r.data.ref}.` }); router.refresh();
+  }
+  return (
+    <form onSubmit={send} className="bg-white border ledger-border p-5 grid gap-4" noValidate>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <label className={lab}>Commissionable amount ({currency}): room, land or vessel after offers; never taxes or fees
+          <input name="base" inputMode="decimal" defaultValue={price} className={input} />
+        </label>
+        <div className={lab}>Partner&rsquo;s rate
+          <p className="mt-2 text-[15px] text-[#2E2B28]">{termRate ? `${termRate}, from the terms on file` : "No term on file for this stay"}</p>
+          {termRate && <button type="button" onClick={() => setOverride((v) => !v)} className="mt-1 text-[12.5px] underline">{override ? "Use the terms on file" : "Use a different rate"}</button>}
+        </div>
+      </div>
+      {override && (
+        <div className="grid gap-4 sm:grid-cols-[10rem_1fr]">
+          <label className={lab}>Rate (%)<input name="rate" inputMode="decimal" placeholder="20" className={input} /></label>
+          <label className={lab}>Why, and where the rate comes from (kept on the line)<input name="note" maxLength={1000} className={input} /></label>
+        </div>
+      )}
+      <p className="text-[13px] ledger-muted">The advisor&rsquo;s tier and share are taken today and fixed on the line; later changes to rates or tiers never rewrite it.</p>
+      <Note m={msg} />
+      <div><button type="submit" disabled={busy} className="ledger-btn ledger-btn--solid">{busy ? "Recording…" : "Record the commission"}</button></div>
+    </form>
+  );
+}
+
+export function LineStep({ id, to, action, refLabel }: { id: string; to: string; action: string; refLabel: string }) {
+  const router = useRouter();
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<Msg>(null);
+  const [cancel, setCancel] = useState(false);
+  async function send(status: string, form?: HTMLFormElement) {
+    setBusy(true); setMsg(null);
+    const body = form ? Object.fromEntries(new FormData(form).entries()) : {};
+    const r = await api("POST", `/api/v1/desk/commissions/${id}`, { ...body, status });
+    setBusy(false);
+    if (!r.ok) { setMsg({ ok: false, text: r.message }); return; }
+    router.refresh();
+  }
+  return (
+    <div className="grid gap-3">
+      {to && (
+        <form onSubmit={(e) => { e.preventDefault(); send(to, e.currentTarget); }} className="grid gap-3 sm:grid-cols-[10rem_1fr_auto] items-end">
+          <label className={lab}>Date<input type="date" name="on" defaultValue={new Date().toISOString().slice(0, 10)} className={input} /></label>
+          <label className={lab}>{refLabel} (optional)<input name="reference" maxLength={120} className={input} /></label>
+          <button type="submit" disabled={busy} className="ledger-btn ledger-btn--solid">{action}</button>
+        </form>
+      )}
+      {!cancel ? <button type="button" onClick={() => setCancel(true)} className="text-[12.5px] underline ledger-muted justify-self-start">Cancel this line</button>
+        : <div className="flex flex-wrap items-center gap-3 text-[14px]">Cancel it? It drops out of every total.<button type="button" disabled={busy} onClick={() => send("cancelled")} className="ledger-btn">Yes, cancel</button><button type="button" onClick={() => setCancel(false)} className="text-[13px] underline ledger-muted">Keep it</button></div>}
+      <Note m={msg} />
+    </div>
+  );
+}

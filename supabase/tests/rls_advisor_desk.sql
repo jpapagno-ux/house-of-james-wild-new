@@ -8,7 +8,7 @@ do $$
 declare
   jw uuid := gen_random_uuid(); aa uuid := gen_random_uuid(); ab uuid := gen_random_uuid();
   t1 uuid := gen_random_uuid(); t2 uuid := gen_random_uuid(); lg uuid := gen_random_uuid();
-  o_jw uuid; o_ag uuid; p uuid; rt uuid; rp uuid; pd1 uuid; pd2 uuid; dna jsonb; rq uuid;
+  o_jw uuid; o_ag uuid; p uuid; rt uuid; rp uuid; pd1 uuid; pd2 uuid; dna jsonb; rq uuid; rq2 uuid; o_pt uuid; cl uuid;
   adv_a uuid; adv_b uuid; q1 uuid; q2 uuid; b1 uuid; b2 uuid; f1 uuid; f2 uuid;
   n int; ok boolean;
   ai uuid := gen_random_uuid(); adv_i uuid; ag uuid; d1 uuid; d2 uuid; js jsonb;
@@ -301,6 +301,58 @@ begin
   perform set_config('role', 'anon', true);
   begin select count(*) into n from public.advisor_requests; ok := n = 0; exception when insufficient_privilege then ok := true; end;
   r := r || jsonb_build_object('t', 'R12 the public sees no request', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+
+  -- (C) step 6: the commission ledger
+  perform set_config('role', 'postgres', true);
+  insert into public.organizations (name, type, slug) values ('ADV Partner', 'partner', 'adv-partner') returning id into o_pt;
+  insert into public.entity_partners (property_id, organization_id, role, is_primary) values (p, o_pt, 'owner', true);
+  insert into public.commission_terms (organization_id, rate_bp, effective_from, status) values (o_pt, 2000, current_date - 30, 'confirmed');
+  perform set_config('role', 'authenticated', true);
+  perform set_config('request.jwt.claims', json_build_object('sub', aa, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  rq2 := (public.create_advisor_request(jsonb_build_object('client_name', 'Ana Reyes', 'stay_slug', 'adv-lodge', 'stay_name', 'ADV Lodge',
+    'arrival', (current_date + 60)::text, 'departure', (current_date + 64)::text, 'adults', 2)) ->> 'id')::uuid;
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  begin perform public.record_commission_from_request(rq2, 1000000); ok := false; exception when others then ok := sqlerrm like '%Confirm%'; end;
+  r := r || jsonb_build_object('t', 'C01 commission waits for a confirmed request', 'pass', ok);
+  perform public.decide_advisor_request(rq2, 'confirmed', 1200000, 'USD', null, null, null);
+  begin perform public.record_commission_from_request(rq2, 1300000); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'C02 the commissionable amount is no more than the price', 'pass', ok);
+  js := public.record_commission_from_request(rq2, 1000000);
+  cl := (js ->> 'id')::uuid;
+  r := r || jsonb_build_object('t', 'C03 recorded from the terms on file: 20% of $10,000', 'pass', js ->> 'ref' ~ '^CL-\d{4}-\d{6}$' and
+    (select rate_bp = 2000 and rate_source = 'term' and gross_minor = 200000 and advisor_minor + house_minor = gross_minor and advisor_minor = round(200000 * advisor_share_bp / 10000.0) and organization_id = o_pt from public.commission_lines where id = cl));
+  begin perform public.record_commission_from_request(rq2, 1000000); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'C04 only once per request', 'pass', ok);
+  perform set_config('role', 'postgres', true);
+  update public.commission_terms set rate_bp = 2500 where organization_id = o_pt;
+  perform set_config('role', 'authenticated', true);
+  r := r || jsonb_build_object('t', 'C05 a later rate change never rewrites the line', 'pass', (select gross_minor = 200000 from public.commission_lines where id = cl));
+  begin perform public.set_commission_status(cl, 'received'); ok := false; exception when others then ok := sqlerrm like '%invoiced%'; end;
+  r := r || jsonb_build_object('t', 'C06 the steps go in order', 'pass', ok);
+  perform public.set_commission_status(cl, 'invoiced', current_date, 'INV-001');
+  perform public.set_commission_status(cl, 'received', current_date, 'Wire 22');
+  -- the advisor
+  perform set_config('request.jwt.claims', json_build_object('sub', aa, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  js := public.my_earnings();
+  r := r || jsonb_build_object('t', 'C07 the advisor sees their own line and share, never the rate, gross or house share', 'pass',
+    jsonb_array_length(js) = 1 and (js -> 0 ->> 'advisor_minor')::bigint > 0 and not (js -> 0) ? 'rate_bp' and not (js -> 0) ? 'gross_minor' and not (js -> 0) ? 'house_minor' and js -> 0 ->> 'status' = 'received');
+  select count(*) into n from public.commission_lines;
+  r := r || jsonb_build_object('t', 'C08 and cannot read the ledger itself', 'pass', n = 0);
+  begin perform public.set_commission_status(cl, 'advisor_paid'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'C09 nor mark themselves paid', 'pass', ok);
+  perform set_config('request.jwt.claims', json_build_object('sub', ab, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  r := r || jsonb_build_object('t', 'C10 another advisor sees none of it', 'pass', jsonb_array_length(public.my_earnings()) = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+  select count(*) into n from public.commission_lines;
+  r := r || jsonb_build_object('t', 'C11 the house without the code sees no ledger', 'pass', n = 0);
+  perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+  perform public.set_commission_status(cl, 'advisor_paid', current_date, 'ACH 3');
+  begin perform public.set_commission_status(cl, 'cancelled'); ok := false; exception when others then ok := true; end;
+  r := r || jsonb_build_object('t', 'C12 a paid line cannot be cancelled', 'pass', ok and (select status = 'advisor_paid' and paid_reference = 'ACH 3' from public.commission_lines where id = cl));
+  perform set_config('role', 'anon', true);
+  begin select count(*) into n from public.commission_lines; ok := n = 0; exception when insufficient_privilege then ok := true; end;
+  r := r || jsonb_build_object('t', 'C13 the public sees no ledger', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
   raise exception 'ADVISOR_DESK_RLS %', r;

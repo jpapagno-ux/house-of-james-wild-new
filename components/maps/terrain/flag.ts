@@ -22,7 +22,7 @@ export const terrainWaters = (w: string | undefined) => !!w && (TERRAIN_WATERS a
 
 /** Ship pages where the 3D map shares the itinerary chart's frame ("3D Flyover | Itinerary Chart"), James, 8 Nov 2026:
  *  one example first, Galaxy Sirius; the rest follow once he has seen it. */
-export const ROUTE_VIEWS = ["sirius-yacht-galapagos"] as const;
+export const ROUTE_VIEWS: readonly string[] = []; // off on the live site until James approves (preview branch preview/route-switch has Galaxy Sirius on)
 export const routeViewsOn = (slug: string) => (ROUTE_VIEWS as readonly string[]).includes(slug);
 
 export const terrainOn = (page: string): page is TerrainPage =>

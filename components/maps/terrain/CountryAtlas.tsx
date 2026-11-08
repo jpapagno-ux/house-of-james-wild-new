@@ -25,6 +25,9 @@ const ATLAS: Record<string, () => ReturnType<typeof indonesiaAtlas>> = {
   botswana: () => staysAtlas("botswana", "Botswana", "africa"),
   tahiti: () => staysAtlas("tahiti", "French Polynesia", "oceania"),
   thailand: () => staysAtlas("thailand", "Thailand", "asia"),
+  // Fiji (James, 7 Nov 2026): every Fiji stay with a brand pin. Fiji straddles the 180th meridian, so pins east of it
+  // (Matangi, Laucala) are carried past 180 to keep the map on one side of the line.
+  fiji: () => staysAtlas("fiji", "Fiji", "oceania"),
 };
 const fmt = (n: number, pos: string, neg: string) => `${Math.abs(n).toFixed(3)}° ${n < 0 ? neg : pos}`;
 const coord = (p: { lat: number; lng: number }) => `${fmt(p.lat, "N", "S")}, ${fmt(p.lng, "E", "W")}`;

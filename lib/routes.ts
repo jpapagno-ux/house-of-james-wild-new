@@ -166,6 +166,7 @@ export const BUILT: string[] = [
   "/destinations/oceania/fiji/mamanuca-islands",
   "/destinations/oceania/fiji/vanua-levu-and-taveuni",
   "/destinations/oceania/fiji/kadavu",
+  "/destinations/oceania/fiji/beqa-lagoon-and-pacific-harbour",
   "/destinations/south-america/chile/patagonia",
   "/destinations/europe/slovenia/ljubljana",
   "/destinations/europe/slovenia/logar-valley",

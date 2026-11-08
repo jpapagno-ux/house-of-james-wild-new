@@ -78,7 +78,7 @@ test("a MapTiler key never prints", () => {
 
 test("3D terrain shows only on the allow-listed pages", async () => {
   const { TERRAIN_PAGES, terrainOn } = await import("../components/maps/terrain/flag.ts");
-  assert.deepEqual([...TERRAIN_PAGES].sort(), ["destinations/oceania/tahiti#tahaa", "stays/ulum-moab", "voyages/indonesia/komodo-and-flores-charter", "voyages/ships/natural-paradise-yacht"]);
+  assert.deepEqual([...TERRAIN_PAGES].sort(), ["destinations/oceania/fiji/beqa-lagoon-and-pacific-harbour", "destinations/oceania/fiji/yasawa-islands", "destinations/oceania/tahiti#tahaa", "stays/ulum-moab", "voyages/indonesia/komodo-and-flores-charter", "voyages/ships/natural-paradise-yacht"]);
   for (const p of TERRAIN_PAGES) assert.equal(terrainOn(p), true);
   assert.equal(terrainOn("voyages/indonesia/raja-ampat-and-misool-charter"), false);
   assert.equal(terrainOn("stays/some-other-stay"), false);

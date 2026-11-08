@@ -9,6 +9,8 @@ import type { AtlasData, AtlasEntry } from "@/components/maps/terrain/atlas";
 // that has a filed pin, with its founder mark, James's own note where his Desk holds one, and the real advisors who
 // carry it. Parks, dive sites and volcanoes are added per country only from official sources, so they start empty;
 // stays without a pin are listed in `missing`, never guessed.
+/** Countries that straddle the 180th meridian: western-hemisphere pins are carried past 180 (Fiji's Matangi, Laucala). */
+const DATELINE = ["fiji"];
 export function staysAtlas(country: string, name: string, regionSlug: string): AtlasData & { missing: string[] } {
   const missing: string[] = [];
   const entries: AtlasEntry[] = [];
@@ -16,7 +18,7 @@ export function staysAtlas(country: string, name: string, regionSlug: string): A
   for (const s of staysIn(country)) {
     if (!s.coords) { missing.push(`Stay: ${s.name} (${s.slug}, ${s.ledgerId ?? "no Ledger ID"}): no pin filed`); continue; }
     entries.push({
-      id: `stay-${s.slug}`, kind: "stay", name: s.name, ledgerId: s.ledgerId ?? null, lat: s.coords.lat, lng: s.coords.lng, color: ink,
+      id: `stay-${s.slug}`, kind: "stay", name: s.name, ledgerId: s.ledgerId ?? null, lat: s.coords.lat, lng: DATELINE.includes(country) && s.coords.lng < 0 ? s.coords.lng + 360 : s.coords.lng, color: ink,
       href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`,
       image: s.hero ? { url: s.hero, alt: `${s.name}, ${name}` } : null,
       mark: statusLine(s.status as HouseStatus | null, s.statusDate, s.slug), sub: s.category ? s.category.charAt(0).toUpperCase() + s.category.slice(1) : "Stay",

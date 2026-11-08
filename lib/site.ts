@@ -323,6 +323,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/ships/hermes-galapagos", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/star-breeze", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/wind-star", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/yasawa-princess-ii", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/amandira", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/tao-philippines", priority: 0.7, changeFrequency: "monthly" },
   // The Indonesian fleets, partners and charter weeks (James approved, 2 Nov 2026).

@@ -63,7 +63,7 @@ test("the filters the hubs run", () => {
   assert.ok(shipsInWaters("nile").length >= 5);
   assert.ok(shipsOfType("charter").some((s) => s.slug === "aliikai"));
   // Rooted in Place: the Nile ships, Silolona Sojourns (Banda, Asmat and Toraja; voyages plan, Part 2) and TAO Philippines (2 Nov 2026).
-  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile") || s.operator === "Silolona Sojourns" || s.slug === "tao-philippines"));
+  assert.ok(shipsOnPathway("PATH-08").every((s) => s.waters.includes("nile") || s.operator === "Silolona Sojourns" || s.slug === "tao-philippines" || s.slug === "yasawa-princess-ii"));
 });
 
 test("vessels.ts is built from the registry", () => {

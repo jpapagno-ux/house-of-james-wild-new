@@ -7,7 +7,7 @@ import { legsOf, smoothLine, type LngLat, type TerrainStop } from "../components
 // file (public/maps/routes, the one source the engraved chart, its SVG figure and the 3D terrain map all draw) must stay
 // off the land the chart itself draws (public/maps/data/<dest>/base.geojson, the coastline scripts/sealanes.py routes
 // round). The only land a leg may touch is its own landing: within 3 km of an anchorage, or, where the chart puts the
-// stop inland, as far as the nearest charted water plus 4 km. River charts (a river overlay: the Nile) are not seas.
+// stop inland, as far as the nearest charted water plus 1.5 km. River charts (a river overlay: the Nile) are not seas.
 
 type Ring = LngLat[];
 type Poly = { box: [number, number, number, number]; rings: Ring[] };
@@ -56,7 +56,7 @@ function toCoast(p: LngLat, land: Poly[]) {
   }
   return best;
 }
-const reach = (p: LngLat, land: Poly[]) => (onLand(p, land) ? toCoast(p, land) + 4 : 3);
+const reach = (p: LngLat, land: Poly[]) => (onLand(p, land) ? toCoast(p, land) + 1.5 : 3); // an inland pin: 1.5 km past the shore (James, 8 Nov 2026), as scripts/sealanes.py INLAND_KM
 
 /** The first point of a leg's polyline that crosses charted land outside the two landings, or null. */
 function crossing(line: LngLat[], land: Poly[]): LngLat | null {

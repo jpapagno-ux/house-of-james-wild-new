@@ -167,7 +167,836 @@
    "status": null
   }
  ],
- "sailings": [],
+ "sailings": [
+  {
+   "date": "2027-01-06",
+   "dateTo": "2027-01-13",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": "Sold out"
+  },
+  {
+   "date": "2027-01-11",
+   "dateTo": "2027-01-18",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-01-14",
+   "dateTo": "2027-01-21",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-01-16",
+   "dateTo": "2027-01-23",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-01-19",
+   "dateTo": "2027-01-26",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-01-21",
+   "dateTo": "2027-01-28",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-01-24",
+   "dateTo": "2027-01-31",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-01-26",
+   "dateTo": "2027-02-02",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-01-29",
+   "dateTo": "2027-02-05",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-01-31",
+   "dateTo": "2027-02-07",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-03",
+   "dateTo": "2027-02-10",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-08",
+   "dateTo": "2027-02-15",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-12",
+   "dateTo": "2027-02-19",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-17",
+   "dateTo": "2027-02-24",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-20",
+   "dateTo": "2027-02-27",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-22",
+   "dateTo": "2027-03-01",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-25",
+   "dateTo": "2027-03-04",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-27",
+   "dateTo": "2027-03-06",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 19495
+   },
+   "status": null
+  },
+  {
+   "date": "2027-03-02",
+   "dateTo": "2027-03-09",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": "Sold out"
+  },
+  {
+   "date": "2027-11-20",
+   "dateTo": "2027-11-27",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-11-25",
+   "dateTo": "2027-12-02",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-11-27",
+   "dateTo": "2027-12-04",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-11-30",
+   "dateTo": "2027-12-07",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-05",
+   "dateTo": "2027-12-12",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-07",
+   "dateTo": "2027-12-14",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-10",
+   "dateTo": "2027-12-17",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-12",
+   "dateTo": "2027-12-19",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-15",
+   "dateTo": "2027-12-22",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-20",
+   "dateTo": "2027-12-27",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 19995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-22",
+   "dateTo": "2027-12-29",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 24795
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-25",
+   "dateTo": "2028-01-01",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 19995
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-27",
+   "dateTo": "2028-01-03",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 24795
+   },
+   "status": null
+  },
+  {
+   "date": "2027-12-30",
+   "dateTo": "2028-01-06",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 19995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-01",
+   "dateTo": "2028-01-08",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-04",
+   "dateTo": "2028-01-11",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-11",
+   "dateTo": "2028-01-18",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-16",
+   "dateTo": "2028-01-23",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-18",
+   "dateTo": "2028-01-25",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-21",
+   "dateTo": "2028-01-28",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-23",
+   "dateTo": "2028-01-30",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-26",
+   "dateTo": "2028-02-02",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-31",
+   "dateTo": "2028-02-07",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-02",
+   "dateTo": "2028-02-09",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-05",
+   "dateTo": "2028-02-12",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-10",
+   "dateTo": "2028-02-17",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-14",
+   "dateTo": "2028-02-21",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-19",
+   "dateTo": "2028-02-26",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-22",
+   "dateTo": "2028-02-29",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-24",
+   "dateTo": "2028-03-02",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-27",
+   "dateTo": "2028-03-05",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-29",
+   "dateTo": "2028-03-07",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-03-03",
+   "dateTo": "2028-03-10",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-03-05",
+   "dateTo": "2028-03-12",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 19495
+   },
+   "status": null
+  },
+  {
+   "date": "2028-11-18",
+   "dateTo": "2028-11-25",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 19995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-11-20",
+   "dateTo": "2028-11-27",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-11-25",
+   "dateTo": "2028-12-02",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-11-28",
+   "dateTo": "2028-12-05",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-11-30",
+   "dateTo": "2028-12-07",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-03",
+   "dateTo": "2028-12-10",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-05",
+   "dateTo": "2028-12-12",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-08",
+   "dateTo": "2028-12-15",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-10",
+   "dateTo": "2028-12-17",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-13",
+   "dateTo": "2028-12-20",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-15",
+   "dateTo": "2028-12-22",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-18",
+   "dateTo": "2028-12-25",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-20",
+   "dateTo": "2028-12-27",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 19995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-23",
+   "dateTo": "2028-12-30",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 24795
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-25",
+   "dateTo": "2029-01-01",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 19995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-28",
+   "dateTo": "2029-01-04",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 24795
+   },
+   "status": null
+  },
+  {
+   "date": "2028-12-30",
+   "dateTo": "2029-01-06",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 19995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-02",
+   "dateTo": "2029-01-09",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-04",
+   "dateTo": "2029-01-11",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-09",
+   "dateTo": "2029-01-16",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-11",
+   "dateTo": "2029-01-18",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-14",
+   "dateTo": "2029-01-21",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-16",
+   "dateTo": "2029-01-23",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-19",
+   "dateTo": "2029-01-26",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-24",
+   "dateTo": "2029-01-31",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-28",
+   "dateTo": "2029-02-04",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-29",
+   "dateTo": "2029-02-05",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-02",
+   "dateTo": "2029-02-09",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-07",
+   "dateTo": "2029-02-14",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-10",
+   "dateTo": "2029-02-17",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-12",
+   "dateTo": "2029-02-19",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-17",
+   "dateTo": "2029-02-24",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 18995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-20",
+   "dateTo": "2029-02-27",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-22",
+   "dateTo": "2029-03-01",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-25",
+   "dateTo": "2029-03-04",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 22995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-27",
+   "dateTo": "2029-03-06",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-03-02",
+   "dateTo": "2029-03-09",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 19495
+   },
+   "status": null
+  },
+  {
+   "date": "2029-03-04",
+   "dateTo": "2029-03-11",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 15995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-03-07",
+   "dateTo": "2029-03-14",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 19495
+   },
+   "status": null
+  }
+ ],
  "inclusions": [
   "Pre and post voyage information",
   "Group airport and hotel transfers in Punta Arenas on Day 1 and the last day",
@@ -246,5 +1075,5 @@
   "https://www.antarctica21.com/our-promotions",
   "https://www.antarctica21.com/journal/announcing-our-2026-27-antarctic-air-cruise-season"
  ],
- "checked": "2026-11-02"
+ "checked": "2026-11-08"
 }

@@ -195,7 +195,53 @@
    "status": null
   }
  ],
- "sailings": [],
+ "sailings": [
+  {
+   "date": "2027-02-05",
+   "dateTo": "2027-02-14",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 29795
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-13",
+   "dateTo": "2027-02-22",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 24995
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-07",
+   "dateTo": "2028-02-16",
+   "ship": "magellan-discoverer",
+   "prices": {
+    "From": 29795
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-15",
+   "dateTo": "2028-02-24",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 24995
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-21",
+   "dateTo": "2029-01-30",
+   "ship": "magellan-explorer",
+   "prices": {
+    "From": 24995
+   },
+   "status": null
+  }
+ ],
  "inclusions": [
   "Pre and post voyage information",
   "Group airport and hotel transfers in Punta Arenas on Day 1 and the last day",
@@ -281,5 +327,5 @@
   "https://www.antarctica21.com/antarctic-flights-guide",
   "https://www.antarctica21.com/travel-tips-antarctica"
  ],
- "checked": "2026-11-02"
+ "checked": "2026-11-08"
 }

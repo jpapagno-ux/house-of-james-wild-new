@@ -12465,7 +12465,10 @@
    "bestFor": [],
    "status": "partner_verified",
    "statusDate": "2026-11-07",
-   "coords": null,
+   "coords": {
+    "lat": -17.304982,
+    "lng": 178.227419
+   },
    "airport": "Nadi International Airport (NAN)",
    "airportDirections": "About 2.5 hours from Nadi by private car (included in the rate), or by float plane or helicopter, then ten minutes on the island's own boat from Ellington Wharf.",
    "founderNote": null,
@@ -22102,7 +22105,10 @@
    "bestFor": [],
    "status": "partner_verified",
    "statusDate": "2026-11-07",
-   "coords": null,
+   "coords": {
+    "lat": -16.78,
+    "lng": 179.33
+   },
    "airport": "Savusavu Airport (SVU), via Nadi International Airport (NAN)",
    "airportDirections": "From Nadi, about an hour on a domestic flight to Savusavu (Fiji Link, or charter), then 15 to 20 minutes by road. A resort representative meets guests at Nadi and Savusavu. Labasa is an alternative, with a 90 minute transfer at extra cost.",
    "founderNote": null,
@@ -30391,7 +30397,10 @@
    "bestFor": [],
    "status": "partner_verified",
    "statusDate": "2026-11-07",
-   "coords": null,
+   "coords": {
+    "lat": -16.7343431,
+    "lng": -179.750733
+   },
    "airport": "Nadi International Airport (NAN)",
    "airportDirections": "The island is reached only by boat or seaplane; the resort's concierge arranges flights and every transfer. Check-in 12 pm, check-out 10 am.",
    "founderNote": null,
@@ -32971,7 +32980,10 @@
    "bestFor": [],
    "status": "partner_verified",
    "statusDate": "2026-11-07",
-   "coords": null,
+   "coords": {
+    "lat": -18.2619056,
+    "lng": 178.0458831
+   },
    "airport": "Nadi International Airport (NAN)",
    "airportDirections": "A 30 minute charter flight from Nadi to Nanuku's own airstrip, then a few minutes by car; or just over two hours by private car from Nadi (90 minutes from Suva). Check-in 2 pm, check-out 11 am.",
    "founderNote": null,
@@ -58787,7 +58799,10 @@
    "bestFor": [],
    "status": "partner_verified",
    "statusDate": "2026-11-07",
-   "coords": null,
+   "coords": {
+    "lat": -16.764168,
+    "lng": 177.529828
+   },
    "airport": "Nadi International Airport (NAN)",
    "airportDirections": "A 30 minute charter flight from Nadi to the resort's own airstrip; the standard daily flight leaves Nadi at 2 pm. Luggage is limited to 23 kg per person in total. Boat and helicopter transfers are also possible.",
    "founderNote": null,

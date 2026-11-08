@@ -1305,9 +1305,7 @@
    "slug": "dolphin-island",
    "name": "Dolphin Island",
    "country": "Fiji",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -2340,9 +2338,7 @@
    "slug": "jean-michel-cousteau-resort",
    "name": "Jean-Michel Cousteau Resort",
    "country": "Fiji",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3121,9 +3117,7 @@
    "slug": "matangi-island",
    "name": "Matangi Private Island Resort",
    "country": "Fiji",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3288,9 +3282,7 @@
    "slug": "nanuku-resort",
    "name": "Nanuku Resort",
    "country": "Fiji",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -5608,9 +5600,7 @@
    "slug": "yasawa-island-resort",
    "name": "Yasawa Island Resort & Spa",
    "country": "Fiji",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {

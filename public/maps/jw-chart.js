@@ -464,7 +464,7 @@ function updatePanel(info){var m=J[S.mode];var rr=String(Math.round(info.R));if(
  setText('cx',coord(headAt(m,u)));el('cx').style.color=COL[S.phase==='leg'?md:(kk?w.m:'s')];
  var status,day,way;
  if(S.focus){status='';day=CFG.focusWord||'THE WATERS';way=S.focusName||''}else if(S.phase==='intro'){status=GLOBE?'THE GLOBE':'THE ROUTE';day='DAY '+pad(m.wp[0].d,2);way=GLOBE?'Finding '+(CFG.placeName||m.wp[0].n.split(' — ')[0])+' on the globe':m.title}else if(S.phase==='fly'){status='SETTING COURSE';day='DAY '+pad(m.wp[0].d,2);way='Bound for '+m.wp[0].n}
- else if(S.phase==='hold'){day='DAY '+pad(w.d,2)+(w.t?' · '+w.t:'');status=S.playing?(CFG.holdWord||'AT ANCHOR'):'PAUSED';way=w.n}
+ else if(S.phase==='hold'){day='DAY '+pad(w.d,2)+(w.t?' · '+w.t:'');status=S.playing?(S.k>0&&(w.m==='a'||w.m==='h')?'LANDED':(CFG.holdWord||'AT ANCHOR')):'PAUSED';way=w.n} /* after a flight the status reads LANDED (James, 9 Nov 2026), not at anchor */
  else{var nw=m.wp[S.k+1];day='DAY '+pad(m.wp[S.k].d,2)+(nw.d!==m.wp[S.k].d?' → '+pad(nw.d,2):'');status=S.playing?MODEWORD[md]:'PAUSED';var fi=S.k,ti=S.k+1;while(fi>0&&m.wp[fi].v)fi--;while(ti<m.n&&m.wp[ti].v)ti++;way=m.wp[fi].n.split(' — ').pop()+'  →  '+m.wp[ti].n.split(' — ').pop()}
  if(S.manual)status='BY HAND';setText('day',day);setText('status',status);setText('way',way);
  var on=S.phase==='fly'||S.phase==='intro'?-1:kk;if(cache.on!==on+'|'+S.phase){cache.on=on+'|'+S.phase;var cd=on>=0?m.wp[on].d:-1;

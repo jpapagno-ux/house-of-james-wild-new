@@ -105,7 +105,9 @@ export type HouseOpeningProps = {
   line: string;
   frames: OpeningImage[];
   glance: [string, string][];
-  why: { title: string; line: string; photo: OpeningImage }[];
+  why: { title: string; line: string; photo?: OpeningImage }[];
+  /** the night panel's label over the glance ("Why this voyage", "Who she suits", "Days aboard") */
+  whyLabel?: string;
   close: { photo: OpeningImage; line: string };
   next: NextSailing;
   planHref: string;
@@ -113,7 +115,7 @@ export type HouseOpeningProps = {
   grain?: boolean;
 };
 
-export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, close, next, planHref, note, grain = false }: HouseOpeningProps) {
+export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false }: HouseOpeningProps) {
   const pw = PATHWAYS[pathway];
   const night: CSSProperties = { background: `linear-gradient(180deg, ${palette.night} 0%, ${palette.deep} 100%)` };
   return (
@@ -125,7 +127,7 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
         <div className="relative z-[2] max-w-ledger mx-auto px-5 md:px-10 py-16 md:py-24">
           <div className="flex flex-wrap items-center gap-3">
             <span className="house-chip !bg-transparent !text-white !border-white/40"><span aria-hidden="true" className="inline-block w-[6px] h-[6px] rounded-full" style={{ background: palette.hi }} />{pw.name}</span>
-            <span className="ledger-eyebrow" style={{ color: palette.hi }}>Why this voyage</span>
+            <span className="ledger-eyebrow" style={{ color: palette.hi }}>{whyLabel}</span>
           </div>
           <p className="mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl">{line}</p>
           <dl className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 border-t border-white/20 pt-6">
@@ -136,13 +138,13 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
           <ol className="mt-14 grid gap-7 md:grid-cols-3">
             {why.map((w, i) => (
               <li key={w.title}>
-                <figure>
+                {w.photo && <figure>
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <Pic src={w.photo.src} alt={w.photo.alt} sizes="(min-width: 768px) 32vw, 92vw" ratio="4:5" className="object-cover transition-transform duration-[1800ms] [@media(hover:hover)]:hover:scale-[1.04]" />
                     <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, transparent 60%, ${palette.night}66 100%)` }} />
                   </div>
                   <figcaption className="mt-1.5 text-[11px] tracking-[0.04em] text-white/55">{w.photo.credit}</figcaption>
-                </figure>
+                </figure>}
                 <p className="mt-4 text-[10.5px] tracking-[0.22em] uppercase" style={{ color: palette.hi }}>{String(i + 1).padStart(2, "0")}</p>
                 <h3 className="mt-1 ledger-display text-[25px] leading-tight">{w.title}</h3>
                 <p className="mt-2 text-[15.5px] leading-relaxed text-white/82">{w.line}</p>

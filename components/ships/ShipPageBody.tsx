@@ -17,11 +17,14 @@ import { volumeMark } from "@/lib/volumes";
 import type { ShipRecord } from "@/lib/content/ships/types";
 import { readRoute, shipRouteId } from "@/lib/content/ships/routes";
 import { terrainRoute } from "@/components/maps/terrain/routed";
+import HouseOpening from "@/components/opening/HouseOpening";
+import { shipOpening } from "@/lib/content/opening/build";
 
 // The ship page body, shared by /voyages/ships/<ship> and the opening previews (app/preview/voyages/*).
-export default async function ShipPageBody({ slug, opening, surface, tones }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones }) {
+export default async function ShipPageBody({ slug, opening: given, surface: givenSurface, tones: givenTones }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones }) {
   const e = shipBySlug(slug);
   if (!e) notFound();
+  let opening = given, surface = givenSurface, tones = givenTones;
   // The Exceptional Few™: a published vessel designation brings the entrance (Hermes No. 002, Amandira No. 003).
   // Indonesia cross-sell (B7): "Stay before you sail" after the ship, for the Indonesian yachts.
   // James's card with his surf and dive line on Aliikai and the Galápagos ships (James, 2 Nov 2026).
@@ -59,5 +62,9 @@ export default async function ShipPageBody({ slug, opening, surface, tones }: { 
       : `Every itinerary over the real terrain, the line drawn day by day round the islands as the ship sails it.${t3d.routes.length > 1 ? " Pick an itinerary to fly it." : ""}`} />
     : null;
   const itineraryTerrain = t3d?.inFrame && terrainProps ? terrainProps : undefined;
+  // The house opening and tones on every ship page (James, 9 Nov 2026: "deploying all cruises with the new approved blend
+  // design"), built from the record (lib/content/opening/build.ts). The Exceptional Few keep their own entrance.
+  const auto = !opening && !exceptionalFewForVessel(e.slug) ? shipOpening(e) : null;
+  if (auto) { const { next, ...o } = auto; opening = <HouseOpening {...o} next={next} />; surface = o.palette.day; tones = tones ?? { palette: o.palette }; }
   return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, after: <>{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;
 }

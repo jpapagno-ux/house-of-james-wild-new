@@ -132,6 +132,21 @@ export function DnaForm({ initial, options, waiting }: { initial: DnaInput; opti
       </fieldset>
 
       <fieldset className="bg-white border ledger-border p-5 md:p-6 grid gap-4">
+        <legend className="ledger-display text-[1.3rem] px-1">Your card on the website</legend>
+        <p className="text-[14px] ledger-muted">Your name, this title, the introduction and your portrait make your card; the biography is your profile page. Write as you speak, in the third person or the first. Your portrait goes in with your documents (My file, Documents, Portrait).</p>
+        <label className={lab}>Title (under 80 characters)
+          <input maxLength={80} value={d.title ?? ""} onChange={(e) => set("title", e.target.value || null)} className={input} placeholder="Travel Advisor · Safari Specialist" />
+        </label>
+        <label className={lab}>Introduction for the card (under 240 characters)
+          <textarea rows={2} maxLength={240} value={d.intro ?? ""} onChange={(e) => set("intro", e.target.value || null)} className={input} placeholder="One or two sentences: who you are and what you plan" />
+        </label>
+        <label className={lab}>Biography (under 1,500 characters; leave a blank line between paragraphs)
+          <textarea rows={8} maxLength={1500} value={d.bio ?? ""} onChange={(e) => set("bio", e.target.value || null)} className={input} />
+          <span className="block text-[12px] ledger-muted mt-1">{(d.bio ?? "").length} of 1,500</span>
+        </label>
+      </fieldset>
+
+      <fieldset className="bg-white border ledger-border p-5 md:p-6 grid gap-4">
         <legend className="ledger-display text-[1.3rem] px-1">In your words</legend>
         <div className="grid gap-4 sm:grid-cols-2">
           <label className={lab}>Languages (separate with commas)<input value={d.languages.join(", ")} onChange={(e) => set("languages", e.target.value.split(",").map((x) => x.trimStart()))} className={input} /></label>

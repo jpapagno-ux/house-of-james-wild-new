@@ -5,6 +5,7 @@ import { ADVISOR_DESK } from "@/lib/platform/flags";
 import { EMPTY_STATE } from "@/lib/platform/advisor-file-data";
 import { fileSteps, readyToActivate, type FileState } from "@/lib/platform/advisor-file";
 import { StatusPill } from "@/components/platform/ui";
+import { AddAdvisor } from "@/components/advisor/HouseForms";
 
 export const metadata = { title: "Advisors" };
 
@@ -25,11 +26,14 @@ export default async function HouseAdvisors() {
   // An active advisor's later DNA changes wait here too.
   const { data: open } = await desk.sb.from("advisor_dna_proposals").select("advisor_id").eq("status", "submitted");
   const dnaOpen = new Set((open ?? []).map((x) => x.advisor_id as string));
+  const { data: invs } = await desk.sb.from("advisor_invitations").select("advisor_id, expires_at").is("accepted_at", null).is("revoked_at", null).gt("expires_at", new Date().toISOString());
+  const invited = new Set((invs ?? []).map((x) => x.advisor_id as string));
   return (
     <div>
       <p className="ledger-eyebrow ledger-crimson">House desk</p>
       <h1 className="ledger-display text-[2rem] md:text-[2.6rem] leading-[1.1]">Advisors</h1>
       <p className="mt-3 max-w-2xl text-[15.5px] ledger-muted">Each advisor&rsquo;s file: details, plan, agreement, documents and Advisor DNA. Review the documents and the DNA, set the plan, then activate.</p>
+      <div className="mt-5"><AddAdvisor /></div>
       <ul className="mt-8 border-y ledger-border">
         {(advisors ?? []).map((a, i) => {
           const s = states[i] ?? EMPTY_STATE;
@@ -45,7 +49,7 @@ export default async function HouseAdvisors() {
                 <StatusPill label={label} tone={tone} />
                 {a.house_advisor && <span className="text-[12.5px] ledger-muted">House advisor</span>}
                 <span className="ml-auto text-[13.5px] ledger-muted">
-                  {a.status === "invited" ? (!a.user_id ? "Not signed in yet" : readyToActivate(s) ? "Ready to activate" : waiting ? "Documents to review" : dnaWaiting ? "DNA to review" : `${done} of 5 parts`) : dnaWaiting ? "DNA to review" : ""}
+                  {a.status === "invited" ? (!a.user_id ? (invited.has(a.id) ? "Invitation open" : "Not invited yet") : readyToActivate(s) ? "Ready to activate" : waiting ? "Documents to review" : dnaWaiting ? "DNA to review" : `${done} of 5 parts`) : dnaWaiting ? "DNA to review" : ""}
                 </span>
               </Link>
             </li>

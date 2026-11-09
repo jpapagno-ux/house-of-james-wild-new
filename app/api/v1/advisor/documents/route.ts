@@ -1,6 +1,7 @@
 import { withAdvisor } from "@/lib/platform/advisor-api";
 import { dbError, error, invalid, ok } from "@/lib/platform/api";
-import { advisorDocPath, parseDocument } from "@/lib/platform/advisor-file";
+import { ADV_DOC_LABEL, advisorDocPath, parseDocument } from "@/lib/platform/advisor-file";
+import { houseAlert } from "@/lib/platform/advisor-alerts";
 
 // POST /api/v1/advisor/documents (multipart: file + kind, title, expiresOn, note). Files the register row,
 // then the file into the private bucket, both as the advisor, so the database decides. If the upload
@@ -26,5 +27,6 @@ export const POST = withAdvisor(async ({ req, a, requestId }) => {
     await a.sb.from("advisor_documents").update({ status: "archived" }).eq("id", row.id);
     return error("server_error", "The file did not upload. Try again.", requestId);
   }
+  await houseAlert({ kind: "document_sent", advisor: a.advisor.display_name, document: ADV_DOC_LABEL[p.value.kind] }, req, `/desk/advisors/${a.advisor.id}`);
   return ok({ id: row.id }, requestId, 201);
 });

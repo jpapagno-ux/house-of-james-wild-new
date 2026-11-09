@@ -355,5 +355,76 @@ begin
   r := r || jsonb_build_object('t', 'C13 the public sees no ledger', 'pass', ok);
   perform set_config('role', 'postgres', true);
 
+  -- ===== (I) Step 7: invitations, profiles, portraits
+  declare ni uuid := gen_random_uuid(); nx uuid := gen_random_uuid(); na uuid; iv uuid; tok text := 'TestInvitationToken_0123456789abcdef'; adv_row record;
+  begin
+    insert into auth.users (id, email, email_confirmed_at, aud, role) values
+      (ni, 'new.advisor@adv.test', now(), 'authenticated', 'authenticated'), (nx, 'someone.else@adv.test', now(), 'authenticated', 'authenticated');
+    perform set_config('role', 'authenticated', true);
+    perform set_config('request.jwt.claims', json_build_object('sub', aa, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+    begin perform public.create_advisor('Sneaky Person'); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I01 an advisor cannot add advisors', 'pass', ok);
+    begin perform public.invite_advisor(adv_a, 'x@adv.test', repeat('a', 64)); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I02 nor send invitations', 'pass', ok);
+    perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+    begin perform public.create_advisor('No Code'); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I03 the house needs the code to add an advisor', 'pass', ok);
+    perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+    na := public.create_advisor('Zoë  Ndlovu');
+    select * into adv_row from public.advisors where id = na;
+    r := r || jsonb_build_object('t', 'I04 a new advisor gets a number, a clean slug and starts invited', 'pass',
+      adv_row.slug = 'zoe-ndlovu' and adv_row.adv_number ~ '^ADV-\d{4}-\d{6}$' and adv_row.status = 'invited' and adv_row.display_name = 'Zoë Ndlovu' and adv_row.user_id is null);
+    iv := public.create_advisor('Zoe Ndlovu');
+    r := r || jsonb_build_object('t', 'I05 a second advisor of the same name gets a different slug', 'pass',
+      (select slug from public.advisors where id = iv) = 'zoe-ndlovu-2');
+    perform public.invite_advisor(na, 'first@adv.test', repeat('b', 64));
+    iv := public.invite_advisor(na, 'New.Advisor@adv.test', encode(extensions.digest(tok, 'sha256'), 'hex'));
+    r := r || jsonb_build_object('t', 'I06 a newer invitation replaces the open one', 'pass',
+      (select count(*) from public.advisor_invitations where advisor_id = na and revoked_at is null) = 1 and (select email from public.advisor_invitations where id = iv) = 'new.advisor@adv.test');
+    begin perform public.invite_advisor(adv_a, 'again@adv.test', repeat('c', 64)); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I07 an advisor who already has access cannot be invited again', 'pass', ok);
+    -- someone else holding the link
+    perform set_config('request.jwt.claims', json_build_object('sub', nx, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+    select count(*) into n from public.advisor_invitations;
+    begin perform public.accept_advisor_invitation(tok); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I08 the link does not work for another address, and invitations are not readable', 'pass', ok and n = 0 and (select user_id from public.advisors where id = na) is null);
+    -- the invitee
+    perform set_config('request.jwt.claims', json_build_object('sub', ni, 'role', 'authenticated', 'aal', 'aal1')::text, true);
+    begin perform public.accept_advisor_invitation('WrongToken_0123456789abcdefghij'); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I09 a wrong token does nothing', 'pass', ok);
+    perform public.accept_advisor_invitation(tok);
+    perform set_config('role', 'postgres', true);
+    r := r || jsonb_build_object('t', 'I10 accepting links the account to the advisor, once', 'pass',
+      (select user_id from public.advisors where id = na) = ni and (select accepted_at is not null from public.advisor_invitations where id = iv));
+    perform set_config('role', 'authenticated', true);
+    begin perform public.accept_advisor_invitation(tok); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I11 the link works only once', 'pass', ok);
+    -- profile words with the DNA (the invitee, now with the code)
+    perform set_config('request.jwt.claims', json_build_object('sub', ni, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+    begin perform public.submit_advisor_dna(jsonb_build_object('pathways', jsonb_build_array('PATH-01'), 'volumes', jsonb_build_array('safaris'), 'countries', jsonb_build_array('kenya'), 'bio', repeat('x', 1501))); ok := false;
+    exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I12 a biography over 1,500 characters is refused', 'pass', ok);
+    iv := public.submit_advisor_dna(jsonb_build_object('pathways', jsonb_build_array('PATH-01'), 'volumes', jsonb_build_array('safaris'), 'countries', jsonb_build_array('kenya'),
+      'title', 'Travel advisor', 'intro', 'Kenya on foot — and by canoe.', 'bio', 'Line one.' || E'\n\n\n\n' || 'Line two.'));
+    perform set_config('request.jwt.claims', json_build_object('sub', jw, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+    perform public.decide_advisor_dna(iv, 'approved');
+    r := r || jsonb_build_object('t', 'I13 approved profile words are kept tidy, without long dashes', 'pass',
+      (select intro = 'Kenya on foot, and by canoe.' and title = 'Travel advisor' and bio = 'Line one.' || E'\n\n' || 'Line two.' from public.advisor_dna where advisor_id = na));
+    -- portraits
+    begin perform public.set_advisor_portrait(na, 'jwco/advisors/someone-else/portrait'); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I14 a portrait must sit at the advisor''s own path', 'pass', ok);
+    perform public.set_advisor_portrait(na, 'jwco/advisors/zoe-ndlovu/portrait');
+    perform set_config('request.jwt.claims', json_build_object('sub', ni, 'role', 'authenticated', 'aal', 'aal2')::text, true);
+    begin perform public.set_advisor_portrait(na, null); ok := false; exception when others then ok := true; end;
+    r := r || jsonb_build_object('t', 'I15 an advisor cannot set their own portrait', 'pass', ok);
+    perform set_config('role', 'postgres', true);
+    update public.advisors set status = 'active' where id = na;
+    perform set_config('role', 'anon', true);
+    js := public.public_advisor_dna();
+    r := r || jsonb_build_object('t', 'I16 the website reads the name, words and portrait of an active advisor', 'pass',
+      exists (select 1 from jsonb_array_elements(js) x where x ->> 'slug' = 'zoe-ndlovu' and x ->> 'name' = 'Zoë Ndlovu' and x ->> 'portrait' = 'jwco/advisors/zoe-ndlovu/portrait' and x ->> 'intro' = 'Kenya on foot, and by canoe.'));
+    perform set_config('role', 'postgres', true);
+  end;
+
   raise exception 'ADVISOR_DESK_RLS %', r;
 end $$;

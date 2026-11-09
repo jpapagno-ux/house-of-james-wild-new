@@ -72,13 +72,14 @@ export function parseDetails(f: Record<string, unknown>): Result<Details> {
 }
 
 // ===== documents
-export type AdvDocKind = "tax_form" | "seller_of_travel" | "eo_insurance" | "business_registration" | "certificate" | "other";
+export type AdvDocKind = "tax_form" | "seller_of_travel" | "eo_insurance" | "business_registration" | "certificate" | "other" | "portrait";
 export const ADV_DOC_KINDS: { key: AdvDocKind; label: string; line: string; required: boolean }[] = [
   { key: "tax_form", label: "Tax form", line: "Form W-9 in the United States, or Form W-8BEN outside it.", required: true },
   { key: "eo_insurance", label: "Errors and omissions insurance", line: "The current certificate, showing the insurer, the amount and the expiry.", required: true },
   { key: "seller_of_travel", label: "Seller of travel registration", line: "Florida independent agent registration, or what your state requires.", required: false },
   { key: "business_registration", label: "Business registration", line: "If you trade through an LLC or company.", required: false },
   { key: "certificate", label: "Certificate", line: "Destination training or professional certificates.", required: false },
+  { key: "portrait", label: "Portrait", line: "A recent photograph of you for your card: JPG or PNG, at least 1200 pixels tall, natural light, no logo. You confirm you may let the house use it.", required: false },
   { key: "other", label: "Other", line: "Anything else the house asks you for.", required: false },
 ];
 export const ADV_DOC_LABEL = Object.fromEntries(ADV_DOC_KINDS.map((k) => [k.key, k.label])) as Record<AdvDocKind, string>;
@@ -106,6 +107,7 @@ export function parseDocument(f: Record<string, unknown>, file: { name: string; 
   if (!file || !file.size) return { ok: false, message: "Choose a file to upload", field: "file" };
   if (file.size > ADV_MAX_BYTES) return { ok: false, message: "Files can be up to 20 MB", field: "file" };
   if (!ADV_MIME[file.type]) return { ok: false, message: "Upload a PDF, JPG or PNG", field: "file" };
+  if (kind === "portrait" && file.type === "application/pdf") return { ok: false, message: "Upload your portrait as a JPG or PNG", field: "file" };
   return { ok: true, value: { kind, title, expiresOn, note: s("note").slice(0, 1000) || null, mime: file.type } };
 }
 

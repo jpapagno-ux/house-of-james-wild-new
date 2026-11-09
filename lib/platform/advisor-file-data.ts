@@ -31,10 +31,10 @@ export async function documents(sb: SupabaseClient, advisorId: string): Promise<
 }
 
 // ===== Advisor DNA (part five)
-export type DnaRow = { pathways: string[]; volumes: string[]; party_types: string[]; countries: string[]; languages: string[]; specialties: string[]; availability: "open" | "waitlist" | "closed"; match_note: string | null; marks: import("./advisor-dna").DnaMark[]; approved_at: string; confirmed_at: string };
+export type DnaRow = { pathways: string[]; volumes: string[]; party_types: string[]; countries: string[]; languages: string[]; specialties: string[]; availability: "open" | "waitlist" | "closed"; match_note: string | null; marks: import("./advisor-dna").DnaMark[]; title: string | null; intro: string | null; bio: string | null; approved_at: string; confirmed_at: string };
 export type DnaProposal = { id: string; payload: import("./advisor-dna").DnaInput; status: string; house_note: string | null; created_at: string; decided_at: string | null };
 export async function publishedDna(sb: SupabaseClient, advisorId: string): Promise<DnaRow | null> {
-  const { data } = await sb.from("advisor_dna").select("pathways, volumes, party_types, countries, languages, specialties, availability, match_note, marks, approved_at, confirmed_at").eq("advisor_id", advisorId).maybeSingle();
+  const { data } = await sb.from("advisor_dna").select("pathways, volumes, party_types, countries, languages, specialties, availability, match_note, marks, title, intro, bio, approved_at, confirmed_at").eq("advisor_id", advisorId).maybeSingle();
   return (data as DnaRow) ?? null;
 }
 export async function dnaProposals(sb: SupabaseClient, advisorId: string): Promise<DnaProposal[]> {

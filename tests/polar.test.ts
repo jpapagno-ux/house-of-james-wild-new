@@ -12,8 +12,9 @@ type V = { slug: string; style: string; route: string; nights: number; ships: st
 const files = readdirSync(dir).filter((f) => f.endsWith(".json"));
 const voyages = files.map((f) => ({ raw: readFileSync(new URL(f, dir), "utf8"), v: JSON.parse(readFileSync(new URL(f, dir), "utf8")) as V }));
 
-test("nine Antarctica21 voyages, each with a style, region, length, month and ship", () => {
-  assert.equal(voyages.length, 9);
+test("nine Antarctica21 voyages and HX's Antarctic Circle Expedition (9 Nov 2026), each with a style, region, length, month and ship", () => {
+  assert.equal(voyages.length, 10);
+  assert.equal(voyages.filter(({ v }) => (v as V & { operator: string }).operator === "Antarctica21").length, 9);
   for (const { v } of voyages) {
     assert.ok(["fly-both", "fly-one", "sail-both"].includes(v.style), v.slug);
     assert.ok(v.regions.length && v.length && v.monthChips.length && v.ships.length, v.slug);

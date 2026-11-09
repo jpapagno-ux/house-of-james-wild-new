@@ -21,10 +21,12 @@ import { graph } from "@/lib/schema";
 // way, sail both ways), then region, length, month and ship (Antarctica21 categories proposal).
 // The long-form polar guide lives at polarcrossings.com; this page stays short and links out.
 // The one ship James has sailed in Antarctica is MS Roald Amundsen (HX), in February to March 2020:
-// a card with his own photographs and no booking page.
+// a card with his own photographs, linking to her ship page and HX's Antarctic Circle Expedition (9 Nov 2026).
 
 const NAME = "Polar Voyages";
-const V = POLAR_VOYAGES;
+// The Antarctica21 collection; HX's Antarctic Circle Expedition (James, 9 Nov 2026) has its own card below, with the
+// ship James sailed.
+const V = POLAR_VOYAGES.filter((v) => v.operator === "Antarctica21");
 const words = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 const byStyle = (s: PolarStyle) => V.filter((v) => v.style === s);
 const dayRange = (s: PolarStyle) => { const d = byStyle(s).flatMap((v) => [v.days, ...(v.daysText ? v.daysText.match(/\d+/g)!.map(Number) : [])]); return Math.min(...d) === Math.max(...d) ? `${Math.min(...d)} days` : `${Math.min(...d)} to ${Math.max(...d)} days`; };
@@ -46,7 +48,7 @@ const FAQS = [
   { q: "When do the voyages run?", a: "Antarctica21's air-cruises run from late November through March. The sea voyages sail in September and October, and the Patagonia and Falklands voyages also in April." },
   { q: "Does any voyage cross the Antarctic Circle?", a: "None is promised. Antarctica21's Polar Circle Air-Cruise aims to sail far south toward the Polar Circle, and ice and weather decide how far the ship gets." },
   { q: "Why are there no exact departure dates yet?", a: "Antarctica21 shows exact dates and fares by cabin only in its live booking tool. Each voyage page lists the months, the number of sailings and the fares from that Antarctica21 publishes, and James confirms dates and cabins when you ask." },
-  { q: "Has James sailed with Antarctica21?", a: "Not yet. James sailed the Antarctic Peninsula aboard HX's MS Roald Amundsen in February to March 2020. The Antarctica21 pages are filed from Antarctica21's own material." },
+  { q: "Has James sailed with Antarctica21?", a: "Not yet. James sailed HX's Antarctic Circle voyage aboard MS Roald Amundsen in February and March 2020, and the house now books that voyage too. The Antarctica21 pages are filed from Antarctica21's own material." },
   { q: "Where is the full polar guide?", a: "At Polar Voyages, polarcrossings.com, James's full polar platform. This page keeps to the Antarctica21 voyages the house sells." },
 ];
 
@@ -65,10 +67,10 @@ export default function PolarPage() {
     { key: "region", label: "Region", options: Object.entries(REGIONS).map(([key, label]) => ({ key, label })) },
     { key: "length", label: "Length", options: Object.entries(LENGTHS).map(([key, label]) => ({ key, label })) },
     { key: "month", label: "Month", options: Object.entries(MONTH_CHIPS).map(([key, label]) => ({ key, label })) },
-    { key: "ship", label: "Ship", options: Object.entries(POLAR_SHIP_NAMES).map(([key, label]) => ({ key, label })) },
+    { key: "ship", label: "Ship", options: Object.entries(POLAR_SHIP_NAMES).filter(([key]) => V.some((v) => v.ships.includes(key))).map(([key, label]) => ({ key, label })) },
   ];
   const items = V.map((v) => ({ slug: v.slug, keys: { style: [v.style], region: v.regions, length: [v.length], month: v.monthChips, ship: v.ships }, node: <ShipCard c={voyageCard(v)} /> }));
-  const fleet = Object.keys(POLAR_SHIP_NAMES).map((slug) => shipCard(registryShip(slug)!)).filter((c): c is NonNullable<typeof c> => !!c);
+  const fleet = Object.keys(POLAR_SHIP_NAMES).map((slug) => registryShip(slug)).filter((r) => r?.operator === "Antarctica21").map((r) => shipCard(r!)).filter((c): c is NonNullable<typeof c> => !!c);
   const atlas: AtlasRoute[] = V.map((v) => ({
     id: polarRouteId(v), label: `${v.short} · ${v.nights} nights`, href: voyagePath(v.slug), where: v.route, group: STYLES[v.style].name, groupHref: `${POLAR_PATH}#finder-h`,
     members: byStyle(v.style).map((x) => ({ name: x.name, href: voyagePath(x.slug) })),
@@ -108,8 +110,11 @@ export default function PolarPage() {
               <p className="ledger-eyebrow" style={{ color: ink }}>Expedition ship · HX</p>
               <h3 className="ledger-display text-[26px] leading-tight mt-1">MS Roald Amundsen</h3>
               <p className="mt-3 text-[16px] leading-relaxed">James sailed the Antarctic Peninsula aboard her in February to March 2020. The photographs here are his.</p>
-              <p className="mt-2 text-[14.5px] ledger-muted leading-relaxed">She is not booked through this page. Ask James about sailing with HX, or about how she compares with the Antarctica21 ships above.</p>
-              <Link href={`/plan?trip=${encodeURIComponent("Antarctica, MS Roald Amundsen (HX)")}`} className="mt-5 self-start ledger-btn ledger-btn--solid ledger-btn--house inline-flex items-center min-h-[44px]">Plan with James</Link>
+              <p className="mt-2 text-[14.5px] ledger-muted leading-relaxed">The house now books her with HX: the 16-day Antarctic Circle Expedition from Buenos Aires, the voyage James sailed, with an attempt south of 66 degrees to Marguerite Bay.</p>
+              <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2">
+                <Link href={voyagePath("hx-antarctic-circle-expedition")} className="ledger-btn ledger-btn--solid ledger-btn--house inline-flex items-center min-h-[44px]">The Antarctic Circle Expedition</Link>
+                <Link href="/voyages/ships/ms-roald-amundsen" className="inline-flex items-center min-h-[44px] ledger-btn-ghost">MS Roald Amundsen</Link>
+              </div>
             </div>
           </article>
         </HubSection>

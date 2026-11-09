@@ -12,7 +12,7 @@ from sealanes import route_stops   # anchorages and sea lanes round the OSM coas
 ROOT = sys.argv[1]
 SRC = os.path.join(ROOT, "lib/content/polar/voyages")
 OUT = os.path.join(ROOT, "public/maps/routes")
-SHIPS = {"magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer"}
+SHIPS = {"magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer", "ms-roald-amundsen": "MS Roald Amundsen", "ms-fridtjof-nansen": "MS Fridtjof Nansen"}
 LABELS = [
   {"text": "Drake Passage", "lat": -58.5, "lng": -64.5, "kind": "sea"},
   {"text": "Scotia Sea", "lat": -57.0, "lng": -45.0, "kind": "sea"},

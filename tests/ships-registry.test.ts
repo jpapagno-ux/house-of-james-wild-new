@@ -47,16 +47,15 @@ test("Part 3 pathway rules: one primary, at most two secondaries; no Between Tid
   assert.deepEqual(SHIP_REGISTRY.find((s) => s.slug === "zein-nile-chateau")!.pathway, { primary: "PATH-08", secondary: ["PATH-07"] });
 });
 
-test("polar ships are Antarctica21's, listed in Polar Crossings (James, 2 Nov 2026)", () => {
+test("polar ships: Antarctica21's two and HX's MS Roald Amundsen (James, 2 and 9 Nov 2026), listed in Polar Voyages", () => {
   const polar = SHIP_REGISTRY.filter((s) => s.waters.includes("antarctica"));
-  assert.deepEqual(polar.map((s) => s.slug).sort(), ["magellan-discoverer", "magellan-explorer"]);
+  assert.deepEqual(polar.map((s) => s.slug).sort(), ["magellan-discoverer", "magellan-explorer", "ms-roald-amundsen"]);
   for (const s of polar) {
-    assert.equal(s.operator, "Antarctica21");
+    assert.ok(["Antarctica21", "HX Expeditions"].includes(s.operator ?? ""), s.slug);
     assert.deepEqual(s.types, ["expedition"]);
     assert.ok(s.page);
     assert.ok(![s.pathway!.primary, ...s.pathway!.secondary].includes("PATH-03"), `${s.slug}: Above It All is not used for voyages yet`);
   }
-  assert.ok(!SHIP_REGISTRY.some((s) => /roald|amundsen/i.test(s.name)), "MS Roald Amundsen is a founder card, not a ship page");
 });
 
 test("the filters the hubs run", () => {

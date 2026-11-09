@@ -11,6 +11,7 @@ import FSGA from "./voyages/falklands-south-georgia-antarctica.json";
 import FSG from "./voyages/falklands-south-georgia.json";
 import Falklands from "./voyages/falkland-islands.json";
 import Patagonia from "./voyages/patagonia-chilean-fjords.json";
+import HxCircle from "./voyages/hx-antarctic-circle-expedition.json";
 
 // Polar Crossings on James Wild & Co (James, 2 Nov 2026): the house's polar arm under To the Edges,
 // at /voyages/polar, with every Antarctica21 itinerary on a page of its own. Each voyage file is
@@ -50,7 +51,7 @@ export const POLAR_CROSSINGS_URL = "https://polarcrossings.com";
 export const voyagePath = (slug: string) => `${POLAR_PATH}/${slug}`;
 
 /** The two Antarctica21 ships, by slug. Their pages are /voyages/ships/<slug>. */
-export const POLAR_SHIP_NAMES: Record<string, string> = { "magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer" };
+export const POLAR_SHIP_NAMES: Record<string, string> = { "magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer", "ms-roald-amundsen": "MS Roald Amundsen", "ms-fridtjof-nansen": "MS Fridtjof Nansen" };
 export const shipName = (slug: string) => POLAR_SHIP_NAMES[slug] ?? slug;
 
 /** The filters, in the order the categories proposal sets (trip style first). */
@@ -80,7 +81,7 @@ function settle(raw: unknown, on: string): PolarVoyage {
 
 const ON = today();
 /** In the order the house lists them: fly both ways, fly one way, then the sea voyages; shortest first within each. */
-export const POLAR_VOYAGES: PolarVoyage[] = [PolarCircle, Classic, Express, SouthGeorgiaAir, Inaugural, FSGA, FSG, Falklands, Patagonia]
+export const POLAR_VOYAGES: PolarVoyage[] = [PolarCircle, Classic, Express, SouthGeorgiaAir, Inaugural, FSGA, FSG, Falklands, Patagonia, HxCircle]
   .map((x) => settle(x, ON))
   .sort((a, b) => Object.keys(STYLES).indexOf(a.style) - Object.keys(STYLES).indexOf(b.style) || a.nights - b.nights);
 

@@ -150,17 +150,18 @@ export function shipOpening(e: ShipEntry): Built | null {
 
 /* ---------- polar voyages ---------- */
 const POLAR_HAND: Record<string, OpeningBase> = { "classic-antarctica-air-cruise": CLASSIC_C, "polar-circle-air-cruise": POLAR_CIRCLE_C };
-const SHIP_NAME: Record<string, string> = { "magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer" };
+const SHIP_NAME: Record<string, string> = { "magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer", "ms-roald-amundsen": "MS Roald Amundsen", "ms-fridtjof-nansen": "MS Fridtjof Nansen" };
 
 export function polarOpening(v: PolarVoyage): Built | null {
   const plan = `/plan?trip=${encodeURIComponent(v.name)}`;
   const next = polarNext(v, plan);
   if (POLAR_HAND[v.slug]) return { ...POLAR_HAND[v.slug], next };
   if (!v.hero?.url) return null;
-  OPERATOR = "Antarctica21";
-  const pathway: PathwayId = v.style === "sail-both" ? "PATH-06" : "PATH-04";
+  OPERATOR = v.operator;
+  const a21op = v.operator === "Antarctica21";
+  const pathway: PathwayId = !a21op ? v.pathway.primary : v.style === "sail-both" ? "PATH-06" : "PATH-04";
   const a21 = (id: string, alt: string): ShipImage => ({ url: `https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/${id}`, alt, credit: "Antarctica21" });
-  const air = v.style === "sail-both" ? [] : [a21("aircraft-in-flight", "Antarctica21's four engine charter aircraft in flight"), a21("aircraft-landing-king-george-island", "Antarctica21 charter flight landing on King George Island")];
+  const air = v.style === "sail-both" || !a21op ? [] : [a21("aircraft-in-flight", "Antarctica21's four engine charter aircraft in flight"), a21("aircraft-landing-king-george-island", "Antarctica21 charter flight landing on King George Island")];
   // a voyage that never reaches Antarctica (the Falklands, South Georgia, the fjords) takes none of the ship's ice photographs
   const antarctic = /antarctic|peninsula|shetland/i.test([v.name, v.route, ...(v.regions ?? [])].join(" "));
   const icy = (g: ShipImage) => !antarctic && /\b(antarctic\w*|ice|icy|iceberg|glacier|pack)\b/i.test(g.alt);
@@ -174,7 +175,7 @@ export function polarOpening(v: PolarVoyage): Built | null {
   return {
     palette: paletteFor(pathway, "antarctica"), pathway,
     marker: south ? `${dm(south.lat, "N", "S")} · ${placeName(south.place)}` : "Antarctica",
-    designation: `Voyages · ${v.style === "sail-both" ? "Expedition voyage" : "Air-Cruise"} · Antarctica21`,
+    designation: `Voyages · ${v.style === "sail-both" ? "Expedition voyage" : "Air-Cruise"} · ${v.operator}`,
     title: v.name, place: v.route, line: short(firstSentence(v.answer), 240) ? firstSentence(v.answer) : v.tagline,
     frames: ph.frames.map((f) => toOpening(f)),
     glance: ([["Length", `${v.days} days, ${v.nights} nights`], ["Starts", v.start.place], ["Guests", v.guests], ["Ships", ships]] as [string, string][]).filter(([, x]) => x && short(x, 34)),

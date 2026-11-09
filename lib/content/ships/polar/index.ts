@@ -4,6 +4,7 @@ import { statusOf } from "../status";
 import { voyagePath, voyagesFor } from "@/lib/content/polar";
 import Explorer from "./magellan-explorer.json";
 import Discoverer from "./magellan-discoverer.json";
+import RoaldAmundsen from "./ms-roald-amundsen.json";
 
 // Antarctica21's two ships (filed 2 Nov 2026 from antarctica21.com; photographs and renderings
 // Antarctica21). Polar Crossings sits under To the Edges (James, 2 Nov 2026), so they join the
@@ -33,4 +34,7 @@ function withVoyages(raw: unknown): ShipRecord {
 export const POLAR_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: string }[] = [
   { data: withVoyages({ ...Explorer }), offerRefs: [], credit: "Antarctica21" },
   { data: withVoyages({ ...Discoverer, launch: "2026-12" }), offerRefs: [], credit: "Antarctica21" },
+  // HX Expeditions (James, 9 Nov 2026): MS Roald Amundsen, the ship James sailed to the Antarctic Circle in February and
+  // March 2020. Filed from travelhx.com; photographs James's own from that voyage until HX's media kit is in.
+  { data: withVoyages({ ...RoaldAmundsen }), offerRefs: [], credit: "James Papagno, February to March 2020" },
 ];

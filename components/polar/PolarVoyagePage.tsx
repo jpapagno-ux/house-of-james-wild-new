@@ -8,6 +8,8 @@ import { Overview, RecordHero, SectionHead } from "@/components/record/Sections"
 import { GalleryMosaic, RecordActionBar } from "@/components/record/Frame";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import ShipGlance from "@/components/ships/ShipGlance";
+import { EitherSideBand } from "@/components/ships/EitherSide";
+import { eitherSideFor } from "@/lib/content/ships/either-side";
 import ShipCard from "@/components/ships/ShipCard";
 import OfferPanel from "@/components/ledger/OfferPanel";
 import { offersFor } from "@/lib/content/offers/offers";
@@ -46,7 +48,9 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
   const path = voyagePath(v.slug);
   const t = (x: string) => undash(x);
   const from = voyageFrom(v);
-  const plan = `/plan?trip=${encodeURIComponent(`${v.name}, Antarctica21`)}`;
+  const op = v.operator;
+  const a21 = op === "Antarctica21";
+  const plan = `/plan?trip=${encodeURIComponent(`${v.name}, ${op}`)}`;
   const flies = v.style !== "sail-both";
   const indicative = v.itinerary.some((d) => d.indicative);
   const map = voyageMap(v);
@@ -56,7 +60,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
   const secondary = primary ? v.pathway.secondary.map((p) => pathwayOf(p)).filter((p): p is Pathway => !!p) : [];
   const priceLabel = v.status === "sold-out" ? "Status" : from ? "From" : "Rates";
   const price = v.status === "sold-out" ? "Sold out" : from ? usd(from) : "Ask us";
-  const basis = v.status === "sold-out" ? "as Antarctica21 shows it; ask James about the waitlist" : from ? "per person, double cabin, as Antarctica21 shows it" : "ask James for fares";
+  const basis = v.status === "sold-out" ? `as ${op} shows it; ask James about the waitlist` : from ? `per person, ${a21 ? "double cabin" : "two sharing"}, as ${op} shows it` : "ask James for fares";
 
   // Exact sailings, once filed, run through the shared dates grid (chips coloured by ship).
   const grid = v.sailings.length ? datesData({
@@ -97,9 +101,9 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
   );
   const operatorBlock = (
           <section className="mt-12 border ledger-border p-5 md:p-6 grid md:grid-cols-[1fr_auto] gap-4 items-center">
-            <p className="text-[15.5px] leading-relaxed"><span className="ledger-eyebrow block mb-1">Operated by Antarctica21</span>Every polar voyage James Wild & Co plans sails with Antarctica21, the Chilean company that says it pioneered the Antarctic air-cruise in 2003.</p>
+            <p className="text-[15.5px] leading-relaxed"><span className="ledger-eyebrow block mb-1">Operated by {op}</span>{a21 ? "Antarctica21 is the Chilean company that says it pioneered the Antarctic air-cruise in 2003." : `${op} sails MS Roald Amundsen and MS Fridtjof Nansen, its two hybrid powered expedition ships, in Antarctica. James sailed MS Roald Amundsen to the Antarctic Circle in 2020.`}</p>
             <div className="flex flex-wrap gap-x-5">
-              <Link href="/partners/antarctica21" className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline">About Antarctica21<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>
+              {a21 ? <Link href="/partners/antarctica21" className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline">About Antarctica21<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link> : <Link href="/voyages/ships/ms-roald-amundsen" className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline">MS Roald Amundsen<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>}
               <Link href={POLAR_PATH} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline">Every polar voyage<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>
             </div>
           </section>
@@ -164,22 +168,23 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
               intro={v.ships.length > 1 ? `The voyage is the same on either ship; the cabins and the fare are what change. ${t(v.guests)}.` : `${t(v.guests)}.`} />
             <ul className={`mt-6 grid gap-5 sm:grid-cols-2 ${v.ships.length > 1 ? "" : "lg:grid-cols-3"}`}>
               {v.ships.map((slug) => {
-                const c = shipCard(registryShip(slug)!);
+                const r = registryShip(slug);
+                const c = r ? shipCard(r) : null;
                 if (!c) return null;
                 const own = v.fromByShip[slug] && v.status !== "sold-out" ? { label: "This voyage", amount: usd(v.fromByShip[slug]) } : v.status === "sold-out" ? { label: "Status", amount: "Sold out" } : { label: "Rates", amount: "Ask us" };
                 return <li key={slug}><ShipCard c={{ ...c, price: own, facts: c.facts.filter(([k]) => k === "Guests") }} /></li>;
               })}
             </ul>
-            <p className="mt-3 text-[12px] ledger-muted">Photographs: Antarctica21. &ldquo;This voyage&rdquo; is the lowest fare per person, double cabin, Antarctica21 shows for this itinerary on that ship.</p>
+            <p className="mt-3 text-[12px] ledger-muted">Photographs: {v.photoCredit}. &ldquo;This voyage&rdquo; is the lowest fare per person, {a21 ? "double cabin" : "two sharing"}, {op} shows for this itinerary on that ship.</p>
           </section>
 
           <Band t={tones} tone="paper">
           <section id="dates" className={SEC}>
             <SectionHead eyebrow="Dates & rates" title={`When Does the ${v.name} Sail, and What Does It Cost?`} icon="sun"
-              intro={v.status === "not-open" ? "Antarctica21 shows this voyage as not yet open for booking; the months and fares below are as it publishes them." : "Antarctica21 publishes the months, the number of sailings and the fares from; exact dates and fares by cabin come from its live booking tool, and James confirms them when you ask."} />
-            {grid && <DatesGrid ship={v.name} data={grid} note="Fares per person, two sharing, by cabin as Antarctica21 confirms them." />}
+              intro={v.status === "not-open" ? `${op} shows this voyage as not yet open for booking; the months and fares below are as it publishes them.` : a21 ? "Antarctica21 publishes the months, the number of sailings and the fares from; exact dates and fares by cabin come from its live booking tool, and James confirms them when you ask." : `${op} publishes each sailing with its fare from, including its current offers, per person, two sharing; fares by cabin come from its booking tool, and James confirms them when you ask.`} />
+            {grid && <DatesGrid ship={v.name} data={grid} note={`Fares per person, two sharing, as ${op} shows them.`} />}
             {v.departures.length > 0
-              ? <MonthDepartures groups={v.departures} priceName={shipName} planHref={(g) => `${plan}&date=${encodeURIComponent(g.months[0] ?? g.season ?? "")}${g.status === "sold-out" ? "&waitlist=1" : ""}`} note="Fares are per person, double cabin, in US dollars, as Antarctica21 shows them." />
+              ? <MonthDepartures groups={v.departures} priceName={shipName} planHref={(g) => `${plan}&date=${encodeURIComponent(g.months[0] ?? g.season ?? "")}${g.status === "sold-out" ? "&waitlist=1" : ""}`} note={`Fares are per person, double cabin, in US dollars, as ${op} shows them.`} />
               : !grid && <NoDates name={`The ${v.name}`} planHref={plan} />}
             <div className="mt-10 grid md:grid-cols-2 gap-8">
               <div><p className="ledger-eyebrow ledger-crimson">Included</p>{included(v.inclusions, "in")}</div>
@@ -197,7 +202,8 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
           </Band>
           {tones && <Band t={tones} tone="night">{nightBlock}</Band>}
 
-          <OfferPanel offers={offersFor(v.slug)} volume="voyages" title="Antarctica21 offers on this voyage" />
+          {(() => { const es = eitherSideFor(v.slug, null); return es ? <EitherSideBand data={es} ship={v.ships.map(shipName).join(" or ")} voyage={`the ${v.name}`} /> : null; })()}
+          <OfferPanel offers={offersFor(v.slug)} volume="voyages" title={`${op} offers on this voyage`} />
 
           {!tones && operatorBlock}
 

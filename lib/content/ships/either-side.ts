@@ -38,7 +38,7 @@ const TAHITI: EitherSide = {
     stays: ["pearl-resort-vahine-private-island", "le-tahaa", "the-brando-tetiaroa", "pearl-resort-le-bora-bora"],
   },
   addNights: [
-    { label: "A night in Bora Bora", where: "Bora Bora", line: "Before you board or after you leave the ship: an overwater night on the lagoon. James and his wife spent a night in Bora Bora at the Thalasso; the house's Bora Bora stays include the Conrad, Le Bora Bora and the St. Regis.", stay: "conrad-bora-bora-nui", founder: "James stayed a night in Bora Bora" },
+    { label: "A night in Bora Bora", where: "Bora Bora", line: "Before you board or after you leave the ship: an overwater night on the lagoon. James and his wife spent a night in Bora Bora at the InterContinental Thalasso, now closed and rebuilding as the Regent; the house's Bora Bora stays today are the Conrad, Le Bora Bora and the St. Regis.", stay: "conrad-bora-bora-nui", founder: "James stayed a night in Bora Bora" },
     { label: "A night on Taha'a", where: "Vahine Private Island", line: "Nine bungalows on a private motu in the Taha'a lagoon, the island James calls his favourite in French Polynesia. He vetted it in 2025.", stay: "pearl-resort-vahine-private-island", founder: "Founder vetted, 2025" },
     { label: "A day room in Papeete", where: "Tahiti", line: "Flights home leave in the evening; a room on the lagoon fills the day between disembarking at 8 am and the airport.", stay: "intercontinental-tahiti-resort-spa" },
   ],
@@ -57,7 +57,45 @@ const TAHITI: EitherSide = {
   planTrip: "Tahiti by Windstar, with stays either side",
 };
 
-/** By waters: every ship in these waters gets the band. */
+// Antarctica by HX (James, 9 Nov 2026: "in Antarctica and Arctic we really can't build that", then approved the gateway
+// version): the ship cannot be extended, the gateways can. HX's voyages start with a night in Buenos Aires and fly to
+// Ushuaia; Patagonia and Iguazú are the natural extensions, and HX sells its own programmes for both.
+const ANTARCTICA_HX: EitherSide = {
+  key: "antarctica-hx",
+  gateway: "Buenos Aires",
+  arrive: {
+    title: "Arrive in Argentina",
+    nights: "2 to 4 nights",
+    line: "HX includes one night in Buenos Aires before the flight to Ushuaia and suggests arriving a few days early. The house adds Patagonia first: the glaciers at El Calafate or the peaks at El Chaltén.",
+    stays: ["explora-el-calafate", "explora-el-chalten"],
+  },
+  stayOn: {
+    title: "Stay on in Argentina",
+    nights: "3 to 4 nights",
+    line: "The voyage ends with the flight from Ushuaia back to Buenos Aires. From there Iguazú Falls is a short flight north, or Mendoza's wine country west under the Andes.",
+    stays: ["iguazu", "awasi-mendoza"],
+  },
+  addNights: [
+    { label: "A night by the falls", where: "Iguazú", line: "After two weeks of ice, the rainforest and the falls: the house's private lodge beside Iguazú.", stay: "iguazu" },
+    { label: "An extra night in Buenos Aires", where: "Buenos Aires", line: "HX's own post programme adds a dinner and tango show in Buenos Aires, US$265 per person; the house can add a night either side of the voyage." },
+  ],
+  operator: {
+    name: "The Iguazú Experience",
+    by: "HX",
+    nights: 0,
+    from: 2796,
+    basis: "per person, as HX publishes its post programme",
+    line: "HX's own programme after the voyage, sold beside its Antarctic Circle Expedition; HX's Breathtaking Patagonia programme before the voyage is from US$1,675 per person.",
+    hotels: [],
+    ship: "MS Roald Amundsen",
+    source: "https://www.travelhx.com/en-us/cruises/antarctic-circle-expedition/",
+  },
+  houseWay: "HX's programmes fix the hotel and the days. The house builds Patagonia before and Iguazú or Mendoza after from lodges in its own collection, and books the flights between them with the voyage.",
+  planTrip: "Antarctica with HX, with Argentina either side",
+};
+
+/** By ship, then by waters: every ship in these waters gets the band. */
+const BY_SLUG: Record<string, EitherSide> = { "ms-roald-amundsen": ANTARCTICA_HX, "hx-antarctic-circle-expedition": ANTARCTICA_HX };
 const BY_WATERS: Record<string, EitherSide> = { tahiti: TAHITI };
 
-export const eitherSideFor = (_slug: string, waters: string | null | undefined): EitherSide | null => (waters ? BY_WATERS[waters] ?? null : null);
+export const eitherSideFor = (slug: string, waters: string | null | undefined): EitherSide | null => BY_SLUG[slug] ?? (waters ? BY_WATERS[waters] ?? null : null);

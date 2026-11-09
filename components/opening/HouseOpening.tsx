@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Pic from "./Pic";
 import Link from "next/link";
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
@@ -66,16 +66,15 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
       <section ref={stageRef} className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
         {frames.map((f, i) => (
           <div key={f.src} className="absolute inset-0" style={{ opacity: fade(i), zIndex: i }} aria-hidden={i !== stage}>
-            <Image src={f.src} alt={f.alt} fill priority={i === 0} loading={i === 0 ? undefined : "lazy"} sizes="100vw" quality={85} className="object-cover" style={{ transform: reduced || touch ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
+            <Pic src={f.src} alt={f.alt} priority={i === 0} sizes="100vw" portrait="9:16" className="object-cover" style={{ transform: reduced || touch ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
           </div>
         ))}
         <div aria-hidden="true" className="absolute inset-0 z-10 mix-blend-soft-light" style={{ opacity: 0.55 * between, background: `radial-gradient(120% 90% at ${15 + 70 * p}% 30%, ${accent} 0%, transparent 60%)` }} />
         <div aria-hidden="true" className="absolute inset-0 z-10" style={{ background: `linear-gradient(180deg, rgba(26,24,22,.38) 0%, transparent 32%, transparent 52%, ${palette.night} 100%)` }} />
         <Grain on={grain} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-3 md:inset-5 z-10 border border-white/25" />
-        <p className="hidden md:block absolute z-20 top-28 right-10 text-[10.5px] tracking-[0.28em] uppercase text-white/75">{marker}</p>
+        <p className="absolute z-20 top-[92px] left-5 md:left-auto md:right-10 md:top-[104px] lg:top-[192px] text-[10px] md:text-[10.5px] tracking-[0.28em] uppercase text-white/75">{marker}</p>
         <div className="relative z-20 h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-20 md:pb-16">
-          <p className="md:hidden mb-3 text-[10px] tracking-[0.26em] uppercase text-white/70">{marker}</p>
           <p className="ledger-eyebrow !text-white/85" style={{ opacity: reduced || p > 0.04 ? 1 : 0.0001, transition: "opacity 500ms" }}>{designation}</p>
           <h1 className="ledger-h1 mt-3" style={{ opacity: named ? 1 : 0, transform: named ? "none" : "translateY(14px)", transition: "all 700ms" }}>{title}</h1>
           <p className="ledger-display italic text-lg md:text-2xl mt-3" style={{ color: palette.hi, opacity: named ? 1 : 0, transition: "opacity 700ms" }}>{place}</p>
@@ -139,7 +138,7 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
               <li key={w.title}>
                 <figure>
                   <div className="relative aspect-[4/5] overflow-hidden">
-                    <Image src={w.photo.src} alt={w.photo.alt} fill sizes="(min-width: 768px) 32vw, 92vw" quality={85} className="object-cover transition-transform duration-[1800ms] [@media(hover:hover)]:hover:scale-[1.04]" />
+                    <Pic src={w.photo.src} alt={w.photo.alt} sizes="(min-width: 768px) 32vw, 92vw" ratio="4:5" className="object-cover transition-transform duration-[1800ms] [@media(hover:hover)]:hover:scale-[1.04]" />
                     <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, transparent 60%, ${palette.night}66 100%)` }} />
                   </div>
                   <figcaption className="mt-1.5 text-[11px] tracking-[0.04em] text-white/55">{w.photo.credit}</figcaption>
@@ -155,7 +154,7 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
       </section>
 
       <section className="relative h-[70svh] overflow-hidden text-white" style={{ background: palette.deep }} aria-label={close.photo.alt}>
-        <div className="absolute inset-0 ef-drift-pan"><Image src={close.photo.src} alt={close.photo.alt} fill sizes="100vw" quality={85} className="object-cover" /></div>
+        <div className="absolute inset-0 ef-drift-pan"><Pic src={close.photo.src} alt={close.photo.alt} sizes="100vw" portrait="3:4" className="object-cover" /></div>
         <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, ${palette.deep} 0%, transparent 30%, transparent 55%, ${palette.deep}E6 100%)` }} />
         <Grain on={grain} />
         <div className="relative z-[2] h-full max-w-ledger mx-auto px-5 md:px-10 flex items-end pb-12 md:pb-16">

@@ -19,7 +19,7 @@
 import type { PathwayId } from "@/lib/pathways";
 
 export type VoyageType = "river" | "sailing" | "expedition" | "charter";
-/** antarctica and patagonia: the polar waters, both listed in Polar Crossings (/voyages/polar). */
+/** antarctica and patagonia: the polar waters, both listed in Polar Voyages (/voyages/polar). */
 export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
 export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran" | "bangka";
@@ -209,7 +209,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     // Suite in 2026, none in the two Single Suites; snorkel gear, kayaks and paddleboards; island walks; a spa with a hammam.
     traits: { childNote: "No minimum age published; 15% off a child under 12 sharing with two adults", single: { kind: "percent", pct: 75, note: "75% on a King/Twin Suite in 2026 (2027 not published); the two Single Suites sell at the standard fare" }, activities: ["wildlife", "snorkelling", "kayaking", "hiking", "slow"] } },
 
-  // Polar Crossings (James, 2 Nov 2026): Antarctica21's ships, filed from antarctica21.com. Where the Wild Lives
+  // Polar Voyages (James, 2 Nov 2026): Antarctica21's ships, filed from antarctica21.com. Where the Wild Lives
   // first; Off the Map for the Polar Circle and South Georgia routes. The research also suggested Above It All
   // for the flown Drake, which is not used for voyages yet (Part 3), so it is left off.
   { slug: "magellan-explorer", name: "Magellan Explorer", operator: "Antarctica21", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica", "patagonia"], country: ["Antarctica", "Chile", "Argentina"],
@@ -296,7 +296,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
 export const VOYAGE_TYPES: Record<VoyageType, { name: string; path: string; question: string; line: string }> = {
   river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and river ships in the Amazon of Peru, Ecuador and Brazil." },
   sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and yachts in Indonesia, from Raja Ampat to Komodo and the Banda Sea, and Windstar's four-masted Wind Star in Tahiti from March 2027." },
-  expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos, Polar Crossings: Antarctica21's polar air-cruises and voyages, and TAO's island expeditions in Palawan." },
+  expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos, Polar Voyages: Antarctica21's polar air-cruises and voyages, and TAO's island expeditions in Palawan." },
   charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a yacht, a dahabiya or a riverboat taken private for your party." },
 };
 
@@ -306,7 +306,7 @@ export const WATERS_HUBS: Record<Waters, { name: string; path: string; countries
   amazon: { name: "The Amazon", path: "/voyages/amazon", countries: ["Peru", "Ecuador", "Brazil"], question: "What is the best small-ship Amazon cruise?" },
   galapagos: { name: "The Galápagos", path: "/voyages/galapagos", countries: ["Ecuador"], question: "Yacht or catamaran in the Galápagos?" },
   indonesia: { name: "Indonesia", path: "/voyages/indonesia", countries: ["Indonesia"], question: "What does a Raja Ampat phinisi cost?" },
-  antarctica: { name: "Polar Crossings", path: "/voyages/polar", countries: ["Antarctica"], question: "Fly or sail the Drake?" },
+  antarctica: { name: "Polar Voyages", path: "/voyages/polar", countries: ["Antarctica"], question: "Fly or sail the Drake?" },
   patagonia: { name: "Patagonia", path: "/voyages/polar", countries: ["Chile", "Argentina"], question: "Which voyage sails the Chilean fjords?" },
   // No hub page yet: TAO lives on its ship page and the Philippines country page.
   philippines: { name: "The Philippines", path: "/destinations/asia/philippines", countries: ["Philippines"], question: "How do you travel from El Nido to Coron?" },

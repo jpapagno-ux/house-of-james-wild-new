@@ -16,14 +16,14 @@ import { volumeEyebrow, volumeInk } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 
-// /voyages/polar: Polar Crossings, the house's polar arm under To the Edges (James, 2 Nov 2026).
+// /voyages/polar: Polar Voyages, the house's polar collection under To the Edges (James, 2 Nov 2026).
 // Every Antarctica21 itinerary as a card, filtered by trip style first (fly both ways, fly one
 // way, sail both ways), then region, length, month and ship (Antarctica21 categories proposal).
 // The long-form polar guide lives at polarcrossings.com; this page stays short and links out.
 // The one ship James has sailed in Antarctica is MS Roald Amundsen (HX), in February to March 2020:
 // a card with his own photographs and no booking page.
 
-const NAME = "Polar Crossings";
+const NAME = "Polar Voyages";
 const V = POLAR_VOYAGES;
 const words = ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 const byStyle = (s: PolarStyle) => V.filter((v) => v.style === s);
@@ -32,13 +32,13 @@ const lows = V.map(voyageFrom).filter((n): n is number => typeof n === "number")
 const from = lows.length ? usd(Math.min(...lows)) : null;
 
 export const metadata = buildMetadata({
-  title: "Polar Crossings: Antarctica21 Air-Cruises and Voyages",
+  title: "Polar Voyages: Antarctica21 Air-Cruises and Voyages",
   description: `Every Antarctica21 itinerary in one place: ${V.length} voyages on two small Magellan ships, flying the Drake both ways, one way, or sailing both ways to the Falklands, South Georgia and Patagonia.`,
   path: POLAR_PATH,
   image: { url: V[0].hero.url, alt: V[0].hero.alt },
 });
 
-const ANSWER = `Polar Crossings is the house's polar arm. Here it files all ${words[V.length] ?? V.length} Antarctica21 itineraries, sailed by two small ships that carry at most 88 guests on an air-cruise. ${words[byStyle("fly-both").length].replace(/^\w/, (c) => c.toUpperCase())} fly over the Drake Passage both ways from Punta Arenas (${dayRange("fly-both")}), ${words[byStyle("fly-one").length]} fly one way and sail the other (${dayRange("fly-one")}), and ${words[byStyle("sail-both").length]} sail both ways to the Falklands, South Georgia and the Chilean fjords (${dayRange("sail-both")}).${from ? ` Fares start from ${from} per person.` : ""} James's full polar platform, with the long-form guides, is polarcrossings.com.`;
+const ANSWER = `Polar Voyages is the house's polar arm. Here it files all ${words[V.length] ?? V.length} Antarctica21 itineraries, sailed by two small ships that carry at most 88 guests on an air-cruise. ${words[byStyle("fly-both").length].replace(/^\w/, (c) => c.toUpperCase())} fly over the Drake Passage both ways from Punta Arenas (${dayRange("fly-both")}), ${words[byStyle("fly-one").length]} fly one way and sail the other (${dayRange("fly-one")}), and ${words[byStyle("sail-both").length]} sail both ways to the Falklands, South Georgia and the Chilean fjords (${dayRange("sail-both")}).${from ? ` Fares start from ${from} per person.` : ""} James's full polar platform, with the long-form guides, is polarcrossings.com.`;
 
 const FAQS = [
   { q: "Should I fly or sail across the Drake Passage?", a: "Flying takes about two hours each way between Punta Arenas and King George Island and keeps your days for the ice: the Classic Antarctica and Polar Circle air-cruises fly both ways. Sailing takes about two days each way and brings Cape Horn and the seabirds of the crossing: the Antarctica Express, the Antarctica and South Georgia air-cruise and the Magellan Discoverer inaugural sail one leg, and the sea voyages sail both." },
@@ -47,7 +47,7 @@ const FAQS = [
   { q: "Does any voyage cross the Antarctic Circle?", a: "None is promised. Antarctica21's Polar Circle Air-Cruise aims to sail far south toward the Polar Circle, and ice and weather decide how far the ship gets." },
   { q: "Why are there no exact departure dates yet?", a: "Antarctica21 shows exact dates and fares by cabin only in its live booking tool. Each voyage page lists the months, the number of sailings and the fares from that Antarctica21 publishes, and James confirms dates and cabins when you ask." },
   { q: "Has James sailed with Antarctica21?", a: "Not yet. James sailed the Antarctic Peninsula aboard HX's MS Roald Amundsen in February to March 2020. The Antarctica21 pages are filed from Antarctica21's own material." },
-  { q: "Where is the full polar guide?", a: "At Polar Crossings, polarcrossings.com, James's full polar platform. This page keeps to the Antarctica21 voyages the house sells." },
+  { q: "Where is the full polar guide?", a: "At Polar Voyages, polarcrossings.com, James's full polar platform. This page keeps to the Antarctica21 voyages the house sells." },
 ];
 
 const JAMES = [
@@ -77,8 +77,8 @@ export default function PolarPage() {
     <div className="theme-sea theme-sea-page">
       <SiteHeader />
       <HubShell name={NAME} path={POLAR_PATH} trail={trail} eyebrow={volumeEyebrow("voyages", "Voyages", VOYAGE_TYPES.expedition.name, NAME)}
-        title="Polar Crossings: Antarctica by Small Ship"
-        intro="The house's polar arm. Antarctica21's air-cruises and sea voyages, from the Peninsula to South Georgia, the Falklands and the Chilean fjords."
+        title="Polar Voyages: Antarctica by Small Ship"
+        intro="The house's polar collection. Antarctica21's air-cruises and sea voyages, from the Peninsula to South Georgia, the Falklands and the Chilean fjords."
         answer={ANSWER}
         filling="Exact departure dates and fares by cabin are added as Antarctica21 confirms them; until then each voyage shows its months, sailings and fares from.">
         <HubSection eyebrow={`${V.length} itineraries · Antarctica21`} title="Which Polar Voyage Fits Your Trip?" id="finder-h">
@@ -119,7 +119,7 @@ export default function PolarPage() {
             <div>
               <p className="ledger-eyebrow" style={{ color: ink }}>Another house site</p>
               <h2 id="pc-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Want the Full Polar Guide?</h2>
-              <p className="mt-3 text-[16px] leading-relaxed">Polar Crossings has its own home at polarcrossings.com: James&rsquo;s full polar platform, with the long-form guides to the ice, the wildlife and the season.</p>
+              <p className="mt-3 text-[16px] leading-relaxed">Polar Voyages has its own home at polarcrossings.com: James&rsquo;s full polar platform, with the long-form guides to the ice, the wildlife and the season.</p>
             </div>
             <a href={POLAR_CROSSINGS_URL} target="_blank" rel="noopener" className="md:justify-self-end ledger-btn ledger-btn--solid inline-flex items-center gap-2 min-h-[48px]">Visit polarcrossings.com<ArrowUpRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></a>
           </div>
@@ -129,7 +129,7 @@ export default function PolarPage() {
         <FaqBlock faqs={FAQS} title="What Should You Know Before You Go South?" />
       </HubShell>
       <JsonLd data={graph({
-        "@type": "CollectionPage", "@id": absoluteUrl(`${POLAR_PATH}#page`), url: absoluteUrl(POLAR_PATH), name: "Polar Crossings: Antarctica by Small Ship", description: ANSWER,
+        "@type": "CollectionPage", "@id": absoluteUrl(`${POLAR_PATH}#page`), url: absoluteUrl(POLAR_PATH), name: "Polar Voyages: Antarctica by Small Ship", description: ANSWER,
         mainEntity: { "@type": "ItemList", name: "Antarctica21 itineraries", numberOfItems: V.length, itemListElement: V.map((v, i) => ({ "@type": "ListItem", position: i + 1, name: v.name, url: absoluteUrl(voyagePath(v.slug)) })) },
       })} />
     </div>

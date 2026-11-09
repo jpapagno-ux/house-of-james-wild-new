@@ -55,7 +55,7 @@ export default function ShipNav({ items, cta, ctaHref, house = false }: { items:
             </a>
           ))}
         </div>
-        <Link href={ctaHref} className={`hidden max-sm:!hidden sm:inline-flex items-center min-h-[44px] ledger-btn shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
+        <Link href={ctaHref} className={`hidden max-sm:!hidden sm:inline-flex [html:not([data-chrome=tucked])_&]:!hidden items-center min-h-[44px] ledger-btn shrink-0${house ? " ledger-btn--house" : ""}`}>{cta}</Link>
       </div>
     </nav>
   );

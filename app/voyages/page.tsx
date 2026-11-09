@@ -31,7 +31,7 @@ import { volumeEyebrow } from "@/lib/volumes";
 // order people choose: how to sail, which waters, every route on one chart, the ship James has
 // sailed, the whole ship, then questions. "Find your voyage" (where, when, who, what, length, budget and a
 // typeahead, James 2 Nov 2026) opens the page, ahead of the tiles. Every list reads the ships registry.
-// The polar card opens Polar Crossings on this site (/voyages/polar, James, 2 Nov 2026).
+// The polar card opens Polar Voyages on this site (/voyages/polar, James, 2 Nov 2026).
 const PATH = "/voyages";
 const V = VOLUMES.find((v) => v.href === PATH)!;
 const TYPES: VoyageType[] = ["river", "sailing", "expedition", "charter"];
@@ -52,7 +52,7 @@ export const metadata = buildMetadata({
 const FAQS = [
   { q: "What kind of ships does James Wild & Co sell?", a: `Small ships and sailing yachts, never the big ones. Voyages files ${cards.length} today: A&K Sanctuary riverboats and a dahabiya on the Nile, Amazon river ships in Peru, Ecuador and Brazil, Ecoventura and Galaxy Cruises yachts in the Galápagos, and phinisis in Indonesia, Aliikai among them.` },
   { q: "Can we charter a whole ship for our group?", a: `Yes. ${list(charterNames)} can be taken private for one party. Aliikai is ${usd(aliikai.charter!.from!)} a night plus 11% tax for up to 15 guests; the others are priced on enquiry, and James confirms every rate live.` },
-  { q: "Do you plan voyages to Antarctica?", a: `Yes. Polar Crossings, the house's polar arm under To the Edges, files all ${POLAR_VOYAGES.length} Antarctica21 itineraries, from air-cruises over the Drake Passage to sea voyages to South Georgia, each with its own page.` },
+  { q: "Do you plan voyages to Antarctica?", a: `Yes. Polar Voyages, the house's polar collection under To the Edges, files all ${POLAR_VOYAGES.length} Antarctica21 itineraries, from air-cruises over the Drake Passage to sea voyages to South Georgia, each with its own page.` },
   { q: "Has James sailed these ships himself?", a: "He sailed Raja Ampat aboard Aliikai in November 2024, and her page says so. The other ships are filed from their operators' own material, and their pages make no claim that he has sailed them." },
   { q: "How are voyage fares shown?", a: "Per person, two sharing, as each operator publishes them: by the cruise for most ships, by the night for Aliikai's cabins. Past departures drop off on their own, and every fare is confirmed live when you ask." },
 ];
@@ -73,7 +73,7 @@ export default function VoyagesHub() {
       <SiteHeader overlay />
       <HubShell name="Voyages" path={PATH} eyebrow={volumeEyebrow("voyages")} title="Small-Ship Voyages and Sailing Yachts" intro={V.intro}
         entrance={<VolumeEntrance e={ENTRANCES.voyages} />}
-        answer={`James Wild & Co's Voyages volume files ${cards.length} small ships and sailing yachts. Choose by how you want to sail (by river, under sail, to the edges, or the whole ship to yourselves) or by the waters: the Nile, the Amazon, the Galápagos, Indonesia and, in Polar Crossings, Antarctica. Each ship page lists her cabins, her day by day and every published fare; James, sailing since 1989, sailed Raja Ampat aboard Aliikai in November 2024.`}
+        answer={`James Wild & Co's Voyages volume files ${cards.length} small ships and sailing yachts. Choose by how you want to sail (by river, under sail, to the edges, or the whole ship to yourselves) or by the waters: the Nile, the Amazon, the Galápagos, Indonesia and, in Polar Voyages, Antarctica. Each ship page lists her cabins, her day by day and every published fare; James, sailing since 1989, sailed Raja Ampat aboard Aliikai in November 2024.`}
         filling="Ship pages, cabin by cabin, fill from the Ledger as each operator's material is filed; vessels marked “ship page to follow” open their Ledger record until then.">
         <HubSection eyebrow="Search every filed ship" title="Find Your Voyage" id="finder-h">
           <VoyageSearch items={search} months={searchMonths(search)} pages={SEARCH_PAGES} />

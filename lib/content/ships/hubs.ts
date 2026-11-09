@@ -20,10 +20,10 @@ const SMALL = new Set(["a", "an", "the", "for", "or", "in", "of", "to", "and", "
 const titleCase = (q: string) => q.split(" ").map((w, i) => (i > 0 && SMALL.has(w) ? w : w.split("-").map((x) => x.charAt(0).toUpperCase() + x.slice(1)).join("-"))).join(" ");
 const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 const list = (xs: string[]) => (xs.length > 1 ? `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}` : xs[0] ?? "");
-// The polar card opens Polar Crossings on this site (/voyages/polar, James, 2 Nov 2026); only that
+// The polar card opens Polar Voyages on this site (/voyages/polar, James, 2 Nov 2026); only that
 // page links out to polarcrossings.com.
 const polarLows = POLAR_VOYAGES.map(voyageFrom).filter((n): n is number => typeof n === "number");
-export const polarTile: Tile = { key: "polar", name: "Polar Crossings", href: POLAR_PATH, line: "Antarctica, South Georgia, the Falklands and Patagonia with Antarctica21.", note: `${POLAR_VOYAGES.length} itineraries`, from: polarLows.length ? usd(Math.min(...polarLows)) : null };
+export const polarTile: Tile = { key: "polar", name: "Polar Voyages", href: POLAR_PATH, line: "Antarctica, South Georgia, the Falklands and Patagonia with Antarctica21.", note: `${POLAR_VOYAGES.length} itineraries`, from: polarLows.length ? usd(Math.min(...polarLows)) : null };
 
 /** "Origin (yacht, Ecoventura; 7 nights; 20 guests; from US$10,950)" from the ship's own record. */
 function brief(c: ShipCardData): string {
@@ -46,7 +46,7 @@ function watersTiles(except?: Waters): Tile[] {
 }
 const routesFor = (cards: ShipCardData[]) => atlasRoutes(SHIPS.filter((e) => cards.some((c) => c.slug === e.slug)));
 const FARES = { q: "How are the fares shown?", a: "Per person, two sharing, as each operator publishes them, with past departures removed automatically. Every fare and every cabin is confirmed live when you ask." };
-const POLAR_FAQ = { q: "Where are the polar voyages?", a: `In Polar Crossings, the house's polar arm under To the Edges: all ${POLAR_VOYAGES.length} Antarctica21 itineraries, each with its own page.` };
+const POLAR_FAQ = { q: "Where are the polar voyages?", a: `In Polar Voyages, the house's polar collection under To the Edges: all ${POLAR_VOYAGES.length} Antarctica21 itineraries, each with its own page.` };
 
 export function typeHub(t: VoyageType): HubProps {
   const T = VOYAGE_TYPES[t];
@@ -80,12 +80,12 @@ export function typeHub(t: VoyageType): HubProps {
     const where = [gal.length ? `${list(gal.map((c) => c.name))} in the Galápagos` : "", pol.length ? `${list(pol.map((c) => c.name))} in Antarctica, South Georgia, the Falklands and Patagonia` : ""].filter(Boolean);
     return { ...base,
     title: "Small Expedition Ships", intro: T.line,
-    answer: `Voyages files ${cards.length} expedition ships: ${briefs(cards)}. Every Antarctica21 itinerary, with its own page, sits in Polar Crossings, the house's polar arm.`,
+    answer: `Voyages files ${cards.length} expedition ships: ${briefs(cards)}. Every Antarctica21 itinerary, with its own page, sits in Polar Voyages, the house's polar collection.`,
     faqs: [
       { q: "Which expedition ships does James Wild & Co sell?", a: `${list(where)}.` },
       POLAR_FAQ, FARES,
     ],
-    atlas: { routes: routesFor(gal), legend: "sea", dest: "galapagos", kicker: "THE VOYAGES · TO THE EDGES", title: "Where Do the Galápagos Expedition Ships Sail?", line: "Every Galápagos route on one chart: pick one and the globe sails it day by day. The polar routes have their own chart in Polar Crossings." } };
+    atlas: { routes: routesFor(gal), legend: "sea", dest: "galapagos", kicker: "THE VOYAGES · TO THE EDGES", title: "Where Do the Galápagos Expedition Ships Sail?", line: "Every Galápagos route on one chart: pick one and the globe sails it day by day. The polar routes have their own chart in Polar Voyages." } };
   }
   // charter
   const a = registryShip("aliikai")!;

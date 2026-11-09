@@ -60,7 +60,7 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
       <section className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
         {frames.map((f, i) => (
           <div key={f.src} className="absolute inset-0" style={{ opacity: fade(i), zIndex: i, transition: "opacity 300ms linear" }} aria-hidden={i !== stage}>
-            <Image src={f.src} alt={f.alt} fill priority={i === 0} loading={i === 0 ? undefined : "lazy"} sizes="100vw" quality={88} className="object-cover" style={{ transform: reduced ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
+            <Image src={f.src} alt={f.alt} fill priority={i === 0} loading={i === 0 ? undefined : "lazy"} sizes="100vw" quality={85} className="object-cover" style={{ transform: reduced ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
           </div>
         ))}
         <div aria-hidden="true" className="absolute inset-0 z-10 mix-blend-soft-light" style={{ opacity: 0.55 * between, background: `radial-gradient(120% 90% at ${15 + 70 * p}% 30%, ${accent} 0%, transparent 60%)` }} />
@@ -132,7 +132,7 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
               <li key={w.title}>
                 <figure>
                   <div className="relative aspect-[4/5] overflow-hidden">
-                    <Image src={w.photo.src} alt={w.photo.alt} fill sizes="(min-width: 768px) 32vw, 92vw" quality={86} className="object-cover transition-transform duration-[1800ms] hover:scale-[1.04]" />
+                    <Image src={w.photo.src} alt={w.photo.alt} fill sizes="(min-width: 768px) 32vw, 92vw" quality={85} className="object-cover transition-transform duration-[1800ms] hover:scale-[1.04]" />
                     <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, transparent 60%, ${palette.night}66 100%)` }} />
                   </div>
                   <figcaption className="mt-1.5 text-[11px] tracking-[0.04em] text-white/55">{w.photo.credit}</figcaption>
@@ -148,7 +148,7 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
       </section>
 
       <section className="relative h-[70svh] overflow-hidden text-white" style={{ background: palette.deep }} aria-label={close.photo.alt}>
-        <div className="absolute inset-0 ef-drift-pan"><Image src={close.photo.src} alt={close.photo.alt} fill sizes="100vw" quality={86} className="object-cover" /></div>
+        <div className="absolute inset-0 ef-drift-pan"><Image src={close.photo.src} alt={close.photo.alt} fill sizes="100vw" quality={85} className="object-cover" /></div>
         <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, ${palette.deep} 0%, transparent 30%, transparent 55%, ${palette.deep}E6 100%)` }} />
         <Grain on={grain} />
         <div className="relative z-[2] h-full max-w-ledger mx-auto px-5 md:px-10 flex items-end pb-12 md:pb-16">

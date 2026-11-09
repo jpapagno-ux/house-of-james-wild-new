@@ -66,18 +66,19 @@ const cand = (img: ShipImage, name: string): Cand => {
   const named = name && a.toLowerCase().includes(name.toLowerCase().split(" ")[0]);
   return { img, interior: INTERIOR.test(a) && !/\b(looking out|from the deck)\b/i.test(a), vessel: VESSEL.test(a) || !!named, onboard: ONBOARD.test(a), big: !smallWidth(img.url) };
 };
-const toOpening = (i: ShipImage, caption?: string): OpeningImage => ({ src: i.url, alt: i.alt, credit: i.credit ? (/^photo|courtesy|image/i.test(i.credit) ? i.credit : `Photograph courtesy of ${i.credit}`) : "Photograph courtesy of the operator", caption });
+let OPERATOR = "the operator";
+const toOpening = (i: ShipImage, caption?: string): OpeningImage => ({ src: i.url, alt: i.alt, credit: i.credit ? (/^photo|courtesy|image/i.test(i.credit) ? i.credit : `Photograph courtesy of ${i.credit}`) : `Photograph courtesy of ${OPERATOR}`, caption });
 
 /** frames (place, the way in, the vessel), three "why" photographs and the close, all distinct where the gallery allows. */
-export function pickPhotos(hero: ShipImage, gallery: ShipImage[], name: string) {
+export function pickPhotos(hero: ShipImage, gallery: ShipImage[], name: string, also: string[] = []) {
   const seen = new Set<string>(); const all: Cand[] = [];
-  for (const g of [hero, ...gallery]) { if (!g?.url || seen.has(g.url)) continue; seen.add(g.url); all.push(cand(g, name)); }
+  for (const g of [hero, ...gallery]) { if (!g?.url || seen.has(g.url)) continue; seen.add(g.url); const c = cand(g, name); if (also.some((n) => g.alt.includes(n))) c.vessel = true; all.push(c); }
   const used = new Set<string>();
   const take = (pred: (c: Cand) => boolean) => { const pool = all.filter((c) => !used.has(c.img.url) && pred(c)); const c = pool.find((x) => x.big) ?? pool[0]; if (c) used.add(c.img.url); return c; };
   const outdoor = (c: Cand) => !c.interior;
   const vessel = (all[0] && outdoor(all[0]) ? (used.add(all[0].img.url), all[0]) : undefined) ?? take((c) => outdoor(c) && c.vessel) ?? take(outdoor) ?? all[0];
   const place = take((c) => outdoor(c) && !c.vessel && !c.onboard) ?? take((c) => outdoor(c) && !c.vessel) ?? take(outdoor);
-  const wayIn = take((c) => outdoor(c) && (c.onboard || c.vessel)) ?? take(outdoor) ?? take(() => true);
+  const wayIn = take((c) => outdoor(c) && (c.onboard || c.vessel)) ?? take(outdoor);   // never an interior full screen: two frames instead
   const close = take((c) => outdoor(c) && !c.vessel) ?? take(outdoor);
   // the "why" frames take what is left; when the gallery runs out they stand as words alone, never a repeated photograph
   const why = [take(() => true), take(() => true), take(() => true)];
@@ -122,6 +123,7 @@ export function shipOpening(e: ShipEntry): Built | null {
   const next = shipNext(d, plan);
   if (HAND[e.slug]) return { ...HAND[e.slug], next };
   if (!d.hero?.url) return null;
+  OPERATOR = d.operator;
   const pathway = (d.pathway?.primary ?? "PATH-04") as PathwayId;
   const ph = pickPhotos(d.hero, d.gallery ?? [], d.name);
   const days = (d.itineraries ?? []).flatMap((i) => i.days.length ? [i] : []);
@@ -137,7 +139,7 @@ export function shipOpening(e: ShipEntry): Built | null {
     marker: first ? `${dm(first.lat, "N", "S")} · ${placeName(first.place)}` : cap(e.waters),
     designation: `Voyages · ${cap(d.type)} · ${d.operator}`,
     title: d.name, place: route || d.tagline, line,
-    frames: ph.frames.map((f, i) => toOpening(f, i === 0 && first ? placeName(first.place) : undefined)),
+    frames: ph.frames.map((f) => toOpening(f)),
     glance: glance.length >= 2 ? glance : [["Operator", d.operator], ["Waters", cap(e.waters)]],
     why: w.why, whyLabel: w.label,
     close: { photo: toOpening(ph.close), line: route ? d.tagline : `Plan ${d.name} with James.` },
@@ -154,11 +156,15 @@ export function polarOpening(v: PolarVoyage): Built | null {
   const next = polarNext(v, plan);
   if (POLAR_HAND[v.slug]) return { ...POLAR_HAND[v.slug], next };
   if (!v.hero?.url) return null;
+  OPERATOR = "Antarctica21";
   const pathway: PathwayId = v.style === "sail-both" ? "PATH-06" : "PATH-04";
   const a21 = (id: string, alt: string): ShipImage => ({ url: `https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21/${id}`, alt, credit: "Antarctica21" });
   const air = v.style === "sail-both" ? [] : [a21("aircraft-in-flight", "Antarctica21's four engine charter aircraft in flight"), a21("aircraft-landing-king-george-island", "Antarctica21 charter flight landing on King George Island")];
-  const shipPhotos = v.ships.flatMap((s) => { const e = SHIPS.find((x) => x.slug === s); const d = e?.data as ShipRecord | undefined; return d ? [d.hero, ...(d.gallery ?? [])] : []; });
-  const ph = pickPhotos(v.hero, [...(v.gallery ?? []), ...air, ...shipPhotos.filter((g) => !INTERIOR.test(g.alt)), ...shipPhotos.filter((g) => INTERIOR.test(g.alt))], v.name);
+  // a voyage that never reaches Antarctica (the Falklands, South Georgia, the fjords) takes none of the ship's ice photographs
+  const antarctic = /antarctic|peninsula|shetland/i.test([v.name, v.route, ...(v.regions ?? [])].join(" "));
+  const icy = (g: ShipImage) => !antarctic && /\b(antarctic\w*|ice|icy|iceberg|glacier|pack)\b/i.test(g.alt);
+  const shipPhotos = v.ships.flatMap((s) => { const e = SHIPS.find((x) => x.slug === s); const d = e?.data as ShipRecord | undefined; return d ? [d.hero, ...(d.gallery ?? [])].filter((g) => !icy(g)) : []; });
+  const ph = pickPhotos(v.hero, [...(v.gallery ?? []), ...air, ...shipPhotos.filter((g) => !INTERIOR.test(g.alt)), ...shipPhotos.filter((g) => INTERIOR.test(g.alt))], v.name, v.ships.map((s) => SHIP_NAME[s] ?? s));
   const days = v.itinerary.map((x) => ({ title: x.title, summary: x.summary }));
   const w = whyFrom([], days, ph.why);
   if (!w) return null;

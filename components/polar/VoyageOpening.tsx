@@ -99,7 +99,7 @@ export function OpeningDusk({ hero, designation, title, place, line, pathway, gl
     <>
       <section className="relative min-h-[100svh] overflow-hidden bg-ink text-white" aria-label={hero.caption ?? hero.alt}>
         <div className="absolute inset-0 ef-drift ef-drift-slow">
-          <Image src={hero.src} alt={hero.alt} fill priority sizes="100vw" quality={88} className="object-cover" />
+          <Image src={hero.src} alt={hero.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
         </div>
         <div className="absolute inset-0" style={{ background: `linear-gradient(180deg, rgba(26,24,22,.35) 0%, transparent 35%, color-mix(in srgb, ${accent} 70%, transparent) 100%)` }} aria-hidden="true" />
         <div className="relative min-h-[100svh] max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-12 md:pb-16 pt-32">

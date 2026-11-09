@@ -131,12 +131,12 @@
      -51.3688
     ]
    ],
-   "lane": "sea",
-   "clear": 0.52,
    "charted": [
     -60.08,
     -51.37
-   ]
+   ],
+   "lane": "sea",
+   "clear": 0.52
   },
   {
    "day": 4,
@@ -222,12 +222,12 @@
      -51.6885
     ]
    ],
-   "lane": "sea",
-   "clear": 0.03,
    "charted": [
     -57.8589,
     -51.6921
-   ]
+   ],
+   "lane": "sea",
+   "clear": 0.03
   },
   {
    "day": 5,
@@ -284,12 +284,12 @@
      -54.014
     ]
    ],
-   "lane": "sea",
-   "clear": 1.08,
    "charted": [
     -37.98,
     -54.02
-   ]
+   ],
+   "lane": "sea",
+   "clear": 1.08
   },
   {
    "day": 8,
@@ -343,12 +343,12 @@
      -54.2895
     ]
    ],
-   "lane": "sea",
-   "clear": 0.62,
    "charted": [
     -36.5092,
     -54.2811
-   ]
+   ],
+   "lane": "sea",
+   "clear": 0.62
   },
   {
    "day": 9,
@@ -356,6 +356,10 @@
    "lat": -54.6224,
    "lng": -35.9238,
    "mode": "sea",
+   "charted": [
+    -35.93,
+    -54.62
+   ],
    "path": [
     [
      -36.4887,
@@ -411,11 +415,7 @@
     ]
    ],
    "lane": "sea",
-   "clear": 0.97,
-   "charted": [
-    -35.93,
-    -54.62
-   ]
+   "clear": 0.97
   },
   {
    "day": 10,
@@ -667,12 +667,12 @@
     ]
    ],
    "kind": "port",
-   "lane": "sea",
-   "clear": 0.98,
    "charted": [
     -70.9171,
     -53.1638
-   ]
+   ],
+   "lane": "sea",
+   "clear": 0.98
   }
  ],
  "map_note": "Positions approximate; ice and weather set the ship's course. Not a navigational chart",

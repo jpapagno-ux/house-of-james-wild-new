@@ -165,7 +165,7 @@
         start: [Math.max(-70, Math.min(70, cLat + 8)), cLon + 22],
         pad: 0.12, maxR: 130000, zoomMax: 200000, vehScale: 11000,
         chase: { s: 45000, w: 45000, l: 40000, a: 14000, h: 25000, d: 40000 },
-        dayMaxR: 26000, dayPad: 0.05, hold: 1.5, introT: 2.2,
+        dayMaxR: 26000, dayPad: 0.05, hold: 2.2, introT: 2.2,
         cartouche: opts.cartouche || THEME.cartouche,
         holdWord: ctx.kind === "overland" ? "AT REST" : "AT ANCHOR",
         modeWord: ctx.kind === "overland" ? { l: "ON THE ROAD", a: "IN THE AIR", w: "ON THE WATER" } : { s: "UNDER WAY", l: "ASHORE", a: "IN THE AIR" },
@@ -229,8 +229,14 @@ KEYS.forEach(function(k){var m=J[k];m.n=m.wp.length-1;m.legs=[];m.pts=[];m.legR=
  var all=m.wp.filter(function(w){return !w.v}).map(function(w){return w.c}),fc=centroid(all),fm=0;all.forEach(function(p){fm=Math.max(fm,gcd(fc,p))});
  m.spanKm=spanKm(all);
  m.fitC=fc;m.fitR=clamp(215/((fm+fitPad(fm,m.spanKm))*D),320,CFG.maxR||14000);m.capR=m.fitR*(CFG.zoomCap||spanCap(m.spanKm));
+ /* James, 9 Nov 2026 ("zoom in more onto the area and pan on as the user views"): on an air-cruise the 1,200 km flight
+    set the zoom cap, so the sea days never came closer than the whole route. The cap now also follows the waters the
+    vessel sails: every stop with a leg under way or by boat, measured and fitted on its own. Routes with no flight
+    keep exactly the frame they had. */
+ var flown=function(md){return md==='a'||md==='h'},sails=function(i){return i>0&&i<=m.n&&!flown(m.wp[i].m)&&gcd(m.wp[i-1].c,m.wp[i].c)>.02},local=m.wp.filter(function(w,i){return !w.v&&(sails(i)||sails(i+1))}).map(function(w){return w.c});
+ m.localKm=m.spanKm;if(local.length>1&&local.length<all.length){var lc=centroid(local),lm=0;local.forEach(function(p){lm=Math.max(lm,gcd(lc,p))});m.localKm=spanKm(local);var lR=clamp(215/((lm+fitPad(lm,m.localKm))*D),320,CFG.maxR||14000);m.capR=Math.max(m.capR,lR*(CFG.zoomCap||spanCap(m.localKm)))}
  m.legR=m.legR.map(function(r){return Math.min(r,m.capR)});
- m.dayC={};m.dayR={};m.days.forEach(function(d){var l=m.dayWp[d],c=centroid(l),md=0;l.forEach(function(p){md=Math.max(md,gcd(c,p))});m.dayC[d]=c;m.dayR[d]=Math.min(m.capR,clamp(215/((md+Math.min(CFG.dayPad||0.05,Math.max(0.004,m.spanKm/111/12)))*D),320,CFG.maxR||14000))})});
+ m.dayC={};m.dayR={};m.days.forEach(function(d){var l=m.dayWp[d],c=centroid(l),md=0;l.forEach(function(p){md=Math.max(md,gcd(c,p))});m.dayC[d]=c;m.dayR[d]=Math.min(m.capR,clamp(215/((md+Math.min(CFG.dayPad||0.05,Math.max(0.004,m.localKm/111/12)))*D),320,CFG.maxR||14000))})});
 var HOLD=CFG.hold||1.2,HOLD_END=2.4,LNG=Math.log(270),START=CFG.start||[0,0];
 var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 var COARSE=window.matchMedia&&matchMedia('(hover: none) and (pointer: coarse)').matches; /* touch screens: the day card steps aside for Tap to explore */
@@ -262,6 +268,8 @@ function step(rdt){
   S.phi=c[0];S.lam=c[1];S.lnR=uu<.5?f.a+(f.mid-f.a)*ease(uu*2):f.mid+(f.b-f.mid)*ease(uu*2-1);
   if(uu>=1){if(S.focus){S.t=f.dur;return}S.phase='hold';S.k=0;S.u=0;S.t=0}return}
  if(S.phase==='hold'){if(S.playing)S.t+=dt;S.u=S.k/m.n;var d=dayOf(m,S.k),hw=m.wp[S.k];if(hw.nf){var lk=S.k<m.n?S.k:S.k-1;tc=centroid(m.legs[lk]);tl=Math.log(m.legR[lk])}else{tc=m.dayC[d];tl=Math.log(m.dayR[d])}
+  /* the camera never stands still at anchor: a slow push-in toward the stop (reduced motion: none) */
+  if(!reduce&&S.playing&&!hw.nf){var hq0=hw.c;tc=slerp(tc,hq0,Math.min(.35,S.t*.18));tl+=Math.min(.32,S.t*.14)}
   var gate=S.follow!=null&&S.k<m.n&&dayOf(m,S.k+1)>S.follow&&dayOf(m,S.k)>=S.follow;if(gate&&S.playing&&Date.now()-userTs>(CFG.resume||4000)&&S.t>HOLD*2){S.follow=null;gate=false}
   if(!gate&&S.t>=(S.k>=m.n?HOLD_END:(S.k>0&&m.wp[S.k].nf?0.05:HOLD))){if(S.k<m.n){S.phase='leg';S.t=0}else{S.follow=null;intro();return}}}
  else if(S.phase==='leg'){var lmode=m.wp[S.k+1].m,dur=clamp(1.5+m.legA[S.k]*0.5,(lmode==='a'||lmode==='h')?2.6:1.8,5)*((m.wp[S.k].v||m.wp[S.k+1].v)?.55:1);if(S.playing)S.t+=dt;if(reduce)S.t=dur;
@@ -356,7 +364,10 @@ function vDhow(col,now,moving){
  ctx.beginPath();ctx.moveTo(10,1);ctx.quadraticCurveTo(0,-14,-12,-9);ctx.lineTo(-6,1.5);ctx.closePath();ctx.fillStyle=col;ctx.globalAlpha=.32;ctx.fill();ctx.globalAlpha=1;ctx.lineWidth=1;ctx.stroke();
  ctx.save();ctx.clip();ctx.strokeStyle=INK;hatchRect(-13,-14,24,16,2.4);ctx.restore();ctx.beginPath();ctx.arc(1,0,1.1,0,7);ctx.fillStyle=INK;ctx.fill()}
 function vehicle(mode,x,y,ang,alt,now,moving){if(!moving||reduce)now=0;var SZ=Object.assign({s:1,w:.8,a:.9,h:.9,l:.55,f:.7},CFG.vehSize||{}),R=Math.exp(S.lnR)*FIT,sc=clamp(R/(CFG.vehScale||9000),1,CFG.vehMax||1.7)*(SZ[mode]||1);
- if(R<(CFG.vehScale||9000)*1.15&&!(mode==='a'||mode==='h')){icon(mode,x,y,ang);return}
+ /* James, 9 Nov 2026 ("use the old boat we had"): the engraved yacht, dhow or 4x4 shows at every chart zoom, drawn a
+    little smaller when the view is wide; the round badge is kept only for the globe */
+ if(R<(CFG.vehMinR||1400)&&!(mode==='a'||mode==='h')){icon(mode,x,y,ang);return}
+ if(!(mode==='a'||mode==='h'))sc=clamp(R/(CFG.vehScale||9000),CFG.vehMin||1.25,Math.max(CFG.vehMax||1.7,1.25))*(SZ[mode]||1);
  var col=COL[mode]||INK;ctx.save();ctx.translate(x,y);ctx.scale(sc,sc);
  if(mode==='f'){vWalk(col,now,moving,ang);ctx.restore();return}
  ctx.rotate(ang);

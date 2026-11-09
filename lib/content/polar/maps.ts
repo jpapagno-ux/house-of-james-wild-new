@@ -12,7 +12,7 @@ const inBox = (r: Route) => r.stops.every((s) => { const p = s as unknown as { l
 export function chartFor(routes: Route[], id: string, title: string): { html: string } | null {
   if (!routes.length) return null;
   const destination = routes.every(inBox) ? "antarctica" : "polar";
-  return { html: shipMapHtml({ id, routes, destination, title, kicker: "POLAR CROSSINGS · BY AIR AND SEA" }) };
+  return { html: shipMapHtml({ id, routes, destination, title, kicker: "POLAR VOYAGES · BY AIR AND SEA" }) };
 }
 
 export function voyageMap(v: PolarVoyage): { html: string } | null {

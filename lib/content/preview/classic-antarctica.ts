@@ -17,7 +17,7 @@ export const CLASSIC = {
   pathway: "PATH-04" as const,
   glance: [["Length", "8 days, 7 nights"], ["Flight", "About 2 hours each way"], ["Guests", "Up to 88"], ["From", "US$15,995 pp"]] as OpeningGlance,
   frames: [
-    { ...photo("GettyImages-520530202", "A small boat and kayaks beneath a tidewater glacier face", GETTY), caption: "The Peninsula" },
+    { ...photo("wildco/voyages/polar/antarctica/antarctic-peninsula-iceberg-alley", "Towering white icebergs in deep blue water off the Antarctic Peninsula, a small expedition boat at their base", "Partner image"), caption: "Iceberg alley, the Antarctic Peninsula" },
     { ...photo("jwco/partners/antarctica21/aircraft-landing-king-george-island", "Antarctica21 charter flight landing on King George Island", A21), caption: "The way in: King George Island" },
     { ...photo("jwco/partners/antarctica21/aircraft-over-ship", "Aircraft flying low over snowy mountains and the sea with an expedition ship below", A21), caption: "Air and ship" },
   ] as HeroFrame[],

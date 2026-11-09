@@ -1,0 +1,162 @@
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
+import { PATHWAYS, type PathwayId } from "@/lib/pathways";
+
+// Preview C, "the house opening" (James, 8 Nov 2026: go with the blend). The Exceptional Few manner one step down,
+// for any volume record:
+//   1. The Arrival: three full-bleed frames that take over on scroll (place, the way in, the vessel or lodge), two
+//      screens long, a hairline frame, the record's latitude as a quiet marker, a skip link, and the next open sailing.
+//      Between frames a faint wash of the pathway colour passes through, like light through ice.
+//   2. The night panel: the record's own night colour (pathway accent mixed with the hero photograph's darkest tone and
+//      Ink; AA checked), one big line, the glance, three "why" frames.
+//   3. The night close: a dusk photograph fading into the night colour, one line.
+//   4. Then the page's details on the record's day colour (a faint cast of the same palette instead of flat white).
+// Optional paper grain on the night surfaces. House crimson stays the one action colour; the pathway never fills a button.
+
+export type OpeningImage = { src: string; alt: string; caption?: string; credit: string };
+export type OpeningPalette = { night: string; deep: string; day: string; hi: string };
+export type NextSailing = { date: string; ship?: string; from?: string; href: string } | null;
+
+const GRAIN = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")";
+
+function Grain({ on }: { on: boolean }) {
+  if (!on) return null;
+  return <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-[1] mix-blend-overlay opacity-[0.09]" style={{ backgroundImage: GRAIN }} />;
+}
+
+function Arrival({ frames, palette, accent, marker, designation, title, place, next, planHref, grain }: {
+  frames: OpeningImage[]; palette: OpeningPalette; accent: string; marker: string; designation: string; title: string; place: string; next: NextSailing; planHref: string; grain: boolean;
+}) {
+  const reduced = useReducedMotionSafe();
+  const ref = useRef<HTMLDivElement>(null);
+  const [p, setP] = useState(0);
+  useEffect(() => {
+    if (reduced) return;
+    const el = ref.current; if (!el) return;
+    let raf = 0;
+    const tick = () => { const r = el.getBoundingClientRect(); setP(Math.min(1, Math.max(0, -r.top / Math.max(1, el.offsetHeight - window.innerHeight)))); raf = 0; };
+    const on = () => { if (!raf) raf = requestAnimationFrame(tick); };
+    tick(); window.addEventListener("scroll", on, { passive: true }); window.addEventListener("resize", on);
+    return () => { window.removeEventListener("scroll", on); window.removeEventListener("resize", on); if (raf) cancelAnimationFrame(raf); };
+  }, [reduced]);
+  const n = frames.length;
+  const stage = reduced ? n - 1 : Math.min(n - 1, Math.floor(p * n));
+  const fade = (i: number) => {
+    if (reduced) return i === n - 1 ? 1 : 0;
+    const seg = 1 / n, start = i * seg;
+    if (i === 0) return p < seg ? 1 : Math.max(0, 1 - (p - seg) / (seg * 0.4));
+    return Math.min(1, Math.max(0, (p - start + seg * 0.15) / (seg * 0.45)));
+  };
+  // the pathway light: strongest between frames, sweeping across as the reader scrolls
+  const between = reduced ? 0 : Math.sin(Math.PI * ((p * n) % 1));
+  const named = reduced || p > (n - 1) / n;
+  const current = frames[stage];
+  return (
+    <div ref={ref} className={reduced ? "" : "h-[200svh]"}>
+      <section className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
+        {frames.map((f, i) => (
+          <div key={f.src} className="absolute inset-0" style={{ opacity: fade(i), zIndex: i, transition: "opacity 300ms linear" }} aria-hidden={i !== stage}>
+            <Image src={f.src} alt={f.alt} fill priority={i === 0} loading={i === 0 ? undefined : "lazy"} sizes="100vw" quality={88} className="object-cover" style={{ transform: reduced ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
+          </div>
+        ))}
+        <div aria-hidden="true" className="absolute inset-0 z-10 mix-blend-soft-light" style={{ opacity: 0.55 * between, background: `radial-gradient(120% 90% at ${15 + 70 * p}% 30%, ${accent} 0%, transparent 60%)` }} />
+        <div aria-hidden="true" className="absolute inset-0 z-10" style={{ background: `linear-gradient(180deg, rgba(26,24,22,.38) 0%, transparent 32%, transparent 52%, ${palette.night} 100%)` }} />
+        <Grain on={grain} />
+        <div aria-hidden="true" className="pointer-events-none absolute inset-3 md:inset-5 z-10 border border-white/25" />
+        <p className="absolute z-20 top-24 md:top-28 right-6 md:right-10 text-[10.5px] tracking-[0.28em] uppercase text-white/75">{marker}</p>
+        <div className="relative z-20 h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-12 md:pb-16">
+          <p className="ledger-eyebrow !text-white/85" style={{ opacity: reduced || p > 0.04 ? 1 : 0.0001, transition: "opacity 500ms" }}>{designation}</p>
+          <h1 className="ledger-h1 mt-3" style={{ opacity: named ? 1 : 0, transform: named ? "none" : "translateY(14px)", transition: "all 700ms" }}>{title}</h1>
+          <p className="ledger-display italic text-lg md:text-2xl mt-3" style={{ color: palette.hi, opacity: named ? 1 : 0, transition: "opacity 700ms" }}>{place}</p>
+          <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-4" style={{ opacity: named ? 1 : 0, transition: "opacity 700ms 150ms" }}>
+            <Link href={planHref} className="ledger-btn ledger-btn--house !bg-white !text-ink">Plan with James</Link>
+            {next && (
+              <Link href={next.href} className="group text-[13px] leading-snug text-white/90">
+                <span className="block text-[10.5px] tracking-[0.22em] uppercase text-white/60">Next open sailing</span>
+                <span className="ledger-display text-[18px] group-hover:underline underline-offset-4">{next.date}{next.ship ? ` · ${next.ship}` : ""}{next.from ? ` · from ${next.from}` : ""}</span>
+              </Link>
+            )}
+          </div>
+        </div>
+        <a href="#voyage" className="absolute z-20 bottom-3 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.24em] uppercase text-white/70 hover:text-white">Skip to the details ↓</a>
+        <p className="absolute z-20 bottom-2 right-6 md:right-8 text-[10.5px] tracking-[0.08em] text-white/70">{current?.caption ? `${current.caption} · ` : ""}{current?.credit}</p>
+      </section>
+    </div>
+  );
+}
+
+export type HouseOpeningProps = {
+  palette: OpeningPalette;
+  pathway: PathwayId;
+  marker: string;
+  designation: string;
+  title: string;
+  place: string;
+  line: string;
+  frames: OpeningImage[];
+  glance: [string, string][];
+  why: { title: string; line: string; photo: OpeningImage }[];
+  close: { photo: OpeningImage; line: string };
+  next: NextSailing;
+  planHref: string;
+  note?: ReactNode;
+  grain?: boolean;
+};
+
+export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, close, next, planHref, note, grain = false }: HouseOpeningProps) {
+  const pw = PATHWAYS[pathway];
+  const night: CSSProperties = { background: `linear-gradient(180deg, ${palette.night} 0%, ${palette.deep} 100%)` };
+  return (
+    <div className="mx-[calc(50%-50vw)] overflow-x-clip">
+      <Arrival frames={frames} palette={palette} accent={pw.accent} marker={marker} designation={designation} title={title} place={place} next={next} planHref={planHref} grain={grain} />
+
+      <section className="relative text-white" style={night}>
+        <Grain on={grain} />
+        <div className="relative z-[2] max-w-ledger mx-auto px-5 md:px-10 py-16 md:py-24">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="house-chip !bg-transparent !text-white !border-white/40"><span aria-hidden="true" className="inline-block w-[6px] h-[6px] rounded-full" style={{ background: palette.hi }} />{pw.name}</span>
+            <span className="ledger-eyebrow" style={{ color: palette.hi }}>Why this voyage</span>
+          </div>
+          <p className="mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl">{line}</p>
+          <dl className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 border-t border-white/20 pt-6">
+            {glance.map(([k, v]) => (
+              <div key={k}><dt className="text-[10.5px] tracking-[0.22em] uppercase" style={{ color: palette.hi }}>{k}</dt><dd className="mt-1.5 ledger-display text-[21px] md:text-[23px] leading-snug">{v}</dd></div>
+            ))}
+          </dl>
+          <ol className="mt-14 grid gap-7 md:grid-cols-3">
+            {why.map((w, i) => (
+              <li key={w.title}>
+                <figure>
+                  <div className="relative aspect-[4/5] overflow-hidden">
+                    <Image src={w.photo.src} alt={w.photo.alt} fill sizes="(min-width: 768px) 32vw, 92vw" quality={86} className="object-cover transition-transform duration-[1800ms] hover:scale-[1.04]" />
+                    <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, transparent 60%, ${palette.night}66 100%)` }} />
+                  </div>
+                  <figcaption className="mt-1.5 text-[11px] tracking-[0.04em] text-white/55">{w.photo.credit}</figcaption>
+                </figure>
+                <p className="mt-4 text-[10.5px] tracking-[0.22em] uppercase" style={{ color: palette.hi }}>{String(i + 1).padStart(2, "0")}</p>
+                <h3 className="mt-1 ledger-display text-[25px] leading-tight">{w.title}</h3>
+                <p className="mt-2 text-[15.5px] leading-relaxed text-white/82">{w.line}</p>
+              </li>
+            ))}
+          </ol>
+          {note && <div className="mt-12 max-w-3xl text-white/85">{note}</div>}
+        </div>
+      </section>
+
+      <section className="relative h-[70svh] overflow-hidden text-white" style={{ background: palette.deep }} aria-label={close.photo.alt}>
+        <div className="absolute inset-0 ef-drift-pan"><Image src={close.photo.src} alt={close.photo.alt} fill sizes="100vw" quality={86} className="object-cover" /></div>
+        <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, ${palette.deep} 0%, transparent 30%, transparent 55%, ${palette.deep}E6 100%)` }} />
+        <Grain on={grain} />
+        <div className="relative z-[2] h-full max-w-ledger mx-auto px-5 md:px-10 flex items-end pb-12 md:pb-16">
+          <p className="ledger-display italic text-[24px] md:text-[34px] leading-snug max-w-3xl">{close.line}</p>
+        </div>
+        <p className="absolute z-[2] bottom-2 right-5 md:right-8 text-[10.5px] tracking-[0.08em] text-white/65">{close.photo.caption ? `${close.photo.caption} · ` : ""}{close.photo.credit}</p>
+      </section>
+      <div id="voyage" aria-hidden="true" />
+    </div>
+  );
+}

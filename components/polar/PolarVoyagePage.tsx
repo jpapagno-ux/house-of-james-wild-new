@@ -40,7 +40,7 @@ import { absoluteUrl } from "@/lib/seo";
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 const INDICATIVE = "Day order is indicative; the expedition team sets each day by weather and ice.";
 
-export default function PolarVoyagePage({ v, opening }: { v: PolarVoyage; /** a full opening (VoyageOpening previews) in place of the standard hero */ opening?: React.ReactNode }) {
+export default function PolarVoyagePage({ v, opening, surface }: { v: PolarVoyage; /** a full opening (VoyageOpening previews) in place of the standard hero */ opening?: React.ReactNode; /** the page surface under a preview opening */ surface?: string }) {
   const path = voyagePath(v.slug);
   const t = (x: string) => undash(x);
   const from = voyageFrom(v);
@@ -85,7 +85,7 @@ export default function PolarVoyagePage({ v, opening }: { v: PolarVoyage; /** a 
   }];
 
   return (
-    <div className="theme-sea theme-sea-page">
+    <div className="theme-sea theme-sea-page" style={surface ? { background: surface } : undefined}>
       <SiteHeader overlay tuck />
       <main id="main">
         {opening ?? <RecordHero image={v.hero} eyebrow={`Voyages · ${STYLES[v.style].name} · ${v.operator}`} title={v.name} tagline={t(v.tagline)} credit={v.photoCredit}

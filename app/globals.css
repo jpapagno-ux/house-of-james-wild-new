@@ -658,7 +658,7 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 .house-tones .jw-band > .relative > div:first-child > :first-child { margin-top: 0 !important; border-top: 0 !important; padding-top: 0 !important; }
 /* Details D, final pass (James, 8 Nov 2026: "clean and concise... font placements and spacings correct"): one heading
    scale for every numbered section, measured lines, even rhythm between sections, icons in the record ink. */
-.house-tones [data-sechead] h2 { font-size: clamp(1.75rem, 1.15rem + 1.7vw, 2.6rem); line-height: 1.1; letter-spacing: -0.005em; max-width: 26ch; margin-top: .6rem; }
+.house-tones [data-sechead] h2 { font-size: clamp(1.75rem, 1.15rem + 1.7vw, 2.6rem); line-height: 1.1; letter-spacing: -0.005em; max-width: 34ch; margin-top: .6rem; text-wrap: balance; }
 .house-tones [data-sechead] + p, .house-tones [data-sechead] p.ledger-muted { max-width: 62ch; }
 .house-tones [data-sechead] .flex { gap: .85rem; }
 .house-tones [data-sechead] .ledger-eyebrow { letter-spacing: .24em; }

@@ -124,7 +124,8 @@ export function shipOpening(e: ShipEntry): Built | null {
   if (HAND[e.slug]) return { ...HAND[e.slug], next };
   if (!d.hero?.url) return null;
   OPERATOR = d.operator;
-  const pathway = (d.pathway?.primary ?? "PATH-04") as PathwayId;
+  const pws = d.pathway ?? (e.reg as { pathway?: { primary: string; secondary: string[] } | null }).pathway ?? null;
+  const pathway = (pws?.primary ?? "PATH-04") as PathwayId;
   const ph = pickPhotos(d.hero, d.gallery ?? [], d.name);
   const days = (d.itineraries ?? []).flatMap((i) => i.days.length ? [i] : []);
   const first = days[0]?.days[0];
@@ -135,7 +136,7 @@ export function shipOpening(e: ShipEntry): Built | null {
   const line = d.quote ?? (short(firstSentence(d.answer), 240) ? firstSentence(d.answer) : d.tagline);
   const glance = (d.facts ?? []).filter(([k, v]) => short(v, 26) && short(k, 18) && !/not published|not accessible|no details|unknown/i.test(v)).slice(0, 4);
   return {
-    palette: paletteFor(pathway, e.waters), pathway,
+    palette: paletteFor(pathway, e.waters), pathway, also: (pws?.secondary ?? []) as PathwayId[],
     marker: first ? `${dm(first.lat, "N", "S")} · ${placeName(first.place)}` : cap(e.waters),
     designation: `Voyages · ${cap(d.type)} · ${d.operator}`,
     title: d.name, place: route || d.tagline, line,

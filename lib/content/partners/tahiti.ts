@@ -101,7 +101,7 @@ export const WINDSTAR: Partner = {
       ["Who", "A small-ship cruise line with yachts and sailing yachts, as Windstar describes its fleet"],
       ["In Tahiti", "Star Breeze year round; Wind Star from March 2027, year round"],
       ["Port", "Papeete, Tahiti"],
-      ["James and Windstar", "James has sailed Windstar in French Polynesia with his wife, calling at Taha'a, Fakarava and Rangiroa"],
+      ["James and Windstar", "James has sailed Star Breeze with his wife: 11 days, calling at Fakarava and Rarotonga. With Windstar he has also called at Taha'a and Rangiroa"],
     ],
   },
   how: {
@@ -134,7 +134,7 @@ export const WINDSTAR: Partner = {
     ["Is Star Breeze a sailing ship?", "No. Windstar describes her as an all-suite yacht. Wind Star is its sailing yacht in Tahiti."],
     ["What is Dreams of Tahiti?", "Wind Star's 7-night voyage from Papeete, Mondays, from March 2027; every voyage visits Raiatea."],
     ["How long are Star Breeze's longer voyages?", "Windstar combines them into Star Collector Voyages of up to 21 days, to the Tuamotu, the Marquesas, Fiji and the Cook Islands."],
-    ["Has James sailed with Windstar?", "Yes. He has sailed Windstar in French Polynesia with his wife, calling at Taha'a, Fakarava and Rangiroa."],
+    ["Has James sailed with Windstar?", "Yes. He sailed Star Breeze with his wife for 11 days, calling at Fakarava and Rarotonga, and has also called at Taha'a and Rangiroa with Windstar."],
     ["Where should I stay before a Windstar sailing?", "On Tahiti: InterContinental Tahiti, a founder favourite, or Le Tahiti by Pearl Resorts."],
     ["Can I add Taha'a after Wind Star?", "Yes. Raiatea and Taha'a share a lagoon, about 30 minutes across by boat, so Le Taha'a or Vahine Private Island follow a sailing naturally."],
   ],

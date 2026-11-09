@@ -14,6 +14,7 @@ LABELS = {
   "amazon": [{"text": "Amazon", "lat": -4.35, "lng": -73.3, "kind": "sea"}, {"text": "Pacaya-Samiria", "lat": -4.9, "lng": -74.2, "kind": "region"}],
   "galapagos": [{"text": "Pacific Ocean", "lat": -1.3, "lng": -91.6, "kind": "sea"}],
   "indonesia": [{"text": "Indonesia", "lat": -4.0, "lng": 125.0, "kind": "sea"}],
+  "tahiti": [{"text": "Pacific Ocean", "lat": -17.6, "lng": -148.6, "kind": "sea"}, {"text": "Society Islands", "lat": -16.2, "lng": -151.0, "kind": "region"}, {"text": "Tuamotu", "lat": -15.4, "lng": -146.4, "kind": "region"}],
 }
 # Where an Indonesian route's chart sits (the engine's regional data: public/maps/data/<dest>).
 DEST = {"From Sorong": "raja-ampat", "Sorong round trip": "raja-ampat", "Ambon to Sorong": "indonesia"}
@@ -45,7 +46,7 @@ for waters in LABELS:
         route = {"id": rid, "type": "voyage", "destination": dest, "title": f"{it['name'][0].upper() + it['name'][1:]} aboard {s['name']}",
                  "subtitle": f"{str(it['nights']) + ' nights' if it['nights'] is not None else 'Stops in order'} · {it['direction'].split(' (')[0]} · {s['name']}",
                  "days": {str(d["day"]): d["title"] for d in it["days"]}, "stops": stops,
-                 "map_note": ("Course" if waters == "indonesia" else "River course") + " and positions approximate, not a navigational chart",
+                 "map_note": ("Course" if waters in ("indonesia", "tahiti") else "River course") + " and positions approximate, not a navigational chart",
                  "fallback": {"labels": LABELS[waters]}}
         lanes = route_stops(route, MAPS)
         json.dump(route, open(os.path.join(OUT, f"{rid}.json"), "w"), indent=1, ensure_ascii=False)

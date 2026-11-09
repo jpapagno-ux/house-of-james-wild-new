@@ -701,3 +701,8 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 .house-tones [data-quiet-actions] .ledger-eyebrow { color: var(--tone-muted) !important; }
 .house-tones [data-quiet-actions] a:not(.ledger-btn) { color: var(--tone-ivory) !important; }
 .house-tones [data-quiet-actions] .ledger-btn { --jw-action: #8B2525; background: transparent !important; border-color: var(--tone-ivory) !important; color: var(--tone-ivory) !important; }
+
+/* The voyage glyphs (components/ships/VoyageGlyphs.tsx, 9 Nov 2026): the record's ink on a toned page, Graphite elsewhere. */
+.jw-glyph { color: #2E2B28; }
+.house-tones .jw-glyph { color: var(--tone-night, #2E2B28); }
+.jw-legend summary::-webkit-details-marker { display: none; }

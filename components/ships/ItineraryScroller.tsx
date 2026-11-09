@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ChevronDown } from "lucide-react";
 import RouteViews from "@/components/maps/terrain/RouteViews";
+import { Glyph, GLYPH_MEANING, dayMarks } from "./VoyageGlyphs";
 import type { TerrainFlyoverProps } from "@/components/maps/terrain/TerrainFlyover";
 
 // The day log beside the house route chart. As each day reaches the middle of the screen
@@ -149,7 +150,9 @@ export default function ItineraryScroller({ ship, itineraries, map, terrain }: {
                     <span className={`w-10 h-10 shrink-0 rounded-full flex items-center justify-center font-mono text-[13px] border transition-colors ${on || (active != null && i < active) ? "bg-crimson text-paper border-crimson" : "ledger-border"}`}>{String(d.day).padStart(2, "0")}</span>
                     <span className="flex-1 min-w-0">
                       <span className="block ledger-display text-[19px] md:text-[21px] leading-snug">{cap(d.title)}</span>
-                      <span className="block ledger-eyebrow mt-0.5">{d.label ? `${d.label} · ` : ""}{d.place}{d.indicative ? " · Indicative" : ""}</span>
+                      <span className="flex flex-wrap items-center gap-x-2 gap-y-1 ledger-eyebrow mt-0.5">{d.label ? `${d.label} · ` : ""}{d.place}{d.indicative ? " · Indicative" : ""}
+                        {dayMarks(d).map((k) => <span key={k} className="inline-flex items-center jw-glyph" title={GLYPH_MEANING[k][0]}><Glyph k={k} size={16} title={GLYPH_MEANING[k][0]} /></span>)}
+                      </span>
                     </span>
                     <ChevronDown className={`w-5 h-5 shrink-0 ledger-crimson transition-transform ${open ? "rotate-180" : ""}`} strokeWidth={1.5} aria-hidden="true" />
                   </button>

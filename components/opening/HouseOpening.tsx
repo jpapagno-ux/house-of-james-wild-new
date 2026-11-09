@@ -33,15 +33,21 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
 }) {
   const reduced = useReducedMotionSafe();
   const ref = useRef<HTMLDivElement>(null);
+  const stageRef = useRef<HTMLElement>(null);
   const [p, setP] = useState(0);
+  // on touch screens the photos hold still (no scroll-linked zoom) so nothing shifts under a finger
+  const [touch, setTouch] = useState(false);
+  useEffect(() => { setTouch(window.matchMedia("(hover: none), (pointer: coarse)").matches); }, []);
   useEffect(() => {
     if (reduced) return;
-    const el = ref.current; if (!el) return;
+    const el = ref.current, stage = stageRef.current; if (!el || !stage) return;
     let raf = 0;
-    const tick = () => { const r = el.getBoundingClientRect(); setP(Math.min(1, Math.max(0, -r.top / Math.max(1, el.offsetHeight - window.innerHeight)))); raf = 0; };
+    // measured against the sticky stage (100svh, fixed) rather than window.innerHeight, which grows and shrinks as a
+    // phone's address bar slides away: that was making the frames jump mid-scroll
+    const tick = () => { const r = el.getBoundingClientRect(); setP(Math.min(1, Math.max(0, -r.top / Math.max(1, el.offsetHeight - stage.offsetHeight)))); raf = 0; };
     const on = () => { if (!raf) raf = requestAnimationFrame(tick); };
-    tick(); window.addEventListener("scroll", on, { passive: true }); window.addEventListener("resize", on);
-    return () => { window.removeEventListener("scroll", on); window.removeEventListener("resize", on); if (raf) cancelAnimationFrame(raf); };
+    tick(); window.addEventListener("scroll", on, { passive: true });
+    return () => { window.removeEventListener("scroll", on); if (raf) cancelAnimationFrame(raf); };
   }, [reduced]);
   const n = frames.length;
   const stage = reduced ? n - 1 : Math.min(n - 1, Math.floor(p * n));
@@ -57,10 +63,10 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
   const current = frames[stage];
   return (
     <div ref={ref} className={reduced ? "" : "h-[200svh]"}>
-      <section className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
+      <section ref={stageRef} className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
         {frames.map((f, i) => (
-          <div key={f.src} className="absolute inset-0" style={{ opacity: fade(i), zIndex: i, transition: "opacity 300ms linear" }} aria-hidden={i !== stage}>
-            <Image src={f.src} alt={f.alt} fill priority={i === 0} loading={i === 0 ? undefined : "lazy"} sizes="100vw" quality={85} className="object-cover" style={{ transform: reduced ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
+          <div key={f.src} className="absolute inset-0" style={{ opacity: fade(i), zIndex: i }} aria-hidden={i !== stage}>
+            <Image src={f.src} alt={f.alt} fill priority={i === 0} loading={i === 0 ? undefined : "lazy"} sizes="100vw" quality={85} className="object-cover" style={{ transform: reduced || touch ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
           </div>
         ))}
         <div aria-hidden="true" className="absolute inset-0 z-10 mix-blend-soft-light" style={{ opacity: 0.55 * between, background: `radial-gradient(120% 90% at ${15 + 70 * p}% 30%, ${accent} 0%, transparent 60%)` }} />
@@ -133,7 +139,7 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
               <li key={w.title}>
                 <figure>
                   <div className="relative aspect-[4/5] overflow-hidden">
-                    <Image src={w.photo.src} alt={w.photo.alt} fill sizes="(min-width: 768px) 32vw, 92vw" quality={85} className="object-cover transition-transform duration-[1800ms] hover:scale-[1.04]" />
+                    <Image src={w.photo.src} alt={w.photo.alt} fill sizes="(min-width: 768px) 32vw, 92vw" quality={85} className="object-cover transition-transform duration-[1800ms] [@media(hover:hover)]:hover:scale-[1.04]" />
                     <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, transparent 60%, ${palette.night}66 100%)` }} />
                   </div>
                   <figcaption className="mt-1.5 text-[11px] tracking-[0.04em] text-white/55">{w.photo.credit}</figcaption>

@@ -182,3 +182,78 @@ export function polarOpening(v: PolarVoyage): Built | null {
     planHref: plan, next,
   };
 }
+
+/* ---------- stays (James, 9 Nov 2026: "make the stays similar to the exceptional few entrance and pathway colors,
+   volume colors and tints") ---------- */
+/** Photograph tones by region, with countries whose ground differs from their region's (the red centre, the canyon
+ *  country, Patagonia's steppe): the darkest and lightest tones of the stays' own photographs. */
+const GROUND: Record<string, { dark: string; light: string }> = {
+  africa: { dark: "#2E2519", light: "#EADFCB" },
+  europe: { dark: "#2B2724", light: "#ECE6DC" },
+  "central-america": { dark: "#1C2B22", light: "#DCE6D6" },
+  "south-america": { dark: "#22292D", light: "#E6E1D8" },
+  "usa-canada": { dark: "#2A2622", light: "#E9E1D4" },
+  asia: { dark: "#16302E", light: "#DCE8E2" },
+  "caribbean-mexico": { dark: "#123A44", light: "#DDEDEA" },
+  oceania: { dark: "#133744", light: "#D7E9E6" },
+  "polar-arctic": { dark: "#1E2B38", light: "#E6ECF1" },
+  // countries whose ground is not their region's
+  Australia: { dark: "#3A2219", light: "#EFD9C6" },
+  Utah: { dark: "#3A2420", light: "#EFDCC9" },
+  "New Mexico": { dark: "#3A2722", light: "#EEDDCB" },
+  "Chile & Easter Island": { dark: "#2A2A2E", light: "#E8E2DA" },
+  "Ecuador & Galapagos": { dark: "#1F2F35", light: "#E4D9C4" },
+};
+
+export type StayInput = {
+  slug: string; name: string; country: string | null; regionSlug?: string | null; kind: string; place?: string | null;
+  pathway?: string | null;   // pathway key ("where-the-wild-lives")
+  images: { url: string; alt: string }[];
+  quote?: string | null; tagline?: string | null; bestMonths?: string | null; airport?: string | null; ledgerId?: string | null;
+  suited: string[]; coords?: { lat: number; lng: number } | null;
+  why: { title?: string | null; body: string }[];
+  moments: { title: string; note?: string; image?: { url: string; alt: string } | null }[];
+  planHref: string;
+};
+
+export function stayOpening(s: StayInput): Built | null {
+  if (!s.images.length) return null;
+  OPERATOR = s.name;
+  const pid = (Object.values(PATHWAYS).find((p) => p.key === s.pathway)?.id ?? "PATH-04") as PathwayId;
+  const ground = GROUND[s.country ?? ""] ?? GROUND[s.regionSlug ?? ""] ?? GROUND.africa;
+  const accent = PATHWAYS[pid]?.accent ?? "#2E2B28";
+  let night = mix([accent, 45], [ground.dark, 25], [INK, 30]);
+  for (let i = 0; i < 6 && contrast("#FFFFFF", night) < 7; i++) night = mix([night, 80], [INK, 20]);
+  let hi = mix([ground.light, 85], ["#FFFFFF", 15]);
+  if (contrast(hi, night) < 4.5) hi = mix([hi, 70], ["#FFFFFF", 30]);
+  const palette = { night, deep: mix([night, 60], [INK, 40]), day: mix(["#FFFFFF", 93], [ground.light, 4], [accent, 3]), hi };
+  const img = (i: { url: string; alt: string }): ShipImage => ({ url: i.url, alt: i.alt });
+  // frames: a place, then the way in, then the stay itself (its own hero), as The Exceptional Few arrive
+  const ph = pickPhotos(img(s.images[0]), s.images.slice(1).map(img), s.name);
+  const inFrames = new Set([...ph.frames.map((f) => f.url), ph.close.url]);
+  // a moment's own photograph, unless the arrival or the close already shows it
+  s = { ...s, moments: s.moments.map((m) => (m.image && inFrames.has(m.image.url) ? { ...m, image: null } : m)) };
+  const titled = s.why.filter((w) => w.title && w.body);
+  const withPhotos = (xs: { title: string; line: string }[], label: string) => ({ label, why: xs.slice(0, 3).map((x, i) => ({ ...x, photo: ph.why[i] ? toOpening(ph.why[i]!) : undefined })) });
+  const w = titled.length >= 3 ? withPhotos(titled.map((x) => ({ title: x.title!, line: firstSentence(x.body) })), "Why it's here")
+    : s.moments.filter((m) => m.note).length >= 3 ? { label: "What sets it apart", why: s.moments.filter((m) => m.note).slice(0, 3).map((m, i) => ({ title: m.title, line: firstSentence(m.note!), photo: m.image ? toOpening(img(m.image)) : ph.why[i] ? toOpening(ph.why[i]!) : undefined })) }
+    : s.moments.length >= 3 ? { label: "What sets it apart", why: s.moments.slice(0, 3).map((m, i) => ({ title: m.title, line: "", photo: m.image ? toOpening(img(m.image)) : ph.why[i] ? toOpening(ph.why[i]!) : undefined })) }
+    : null;
+  if (!w) return null;
+  const line = s.quote ?? s.tagline ?? (s.why[0] ? firstSentence(s.why[0].body) : "");
+  if (!line) return null;
+  const where = [s.place, s.country].filter(Boolean).join(", ");
+  const glance = ([["Best months", s.bestMonths], ["Best suited to", s.suited[0]], ["Airport", s.airport], ["Ledger ID", s.ledgerId]] as [string, string | null | undefined][])
+    .filter((x): x is [string, string] => !!x[1] && short(x[1], 34));
+  return {
+    palette, pathway: pid,
+    marker: s.coords ? `${dm(s.coords.lat, "N", "S")} · ${s.place ?? s.country ?? ""}` : (s.country ?? "The Ledger"),
+    designation: `Stays · ${cap(s.kind)}${s.country ? ` · ${s.country}` : ""}`,
+    title: s.name, place: where || (s.tagline ?? ""), line,
+    frames: ph.frames.map((f) => toOpening(f)),
+    glance: glance.length >= 2 ? glance : [["Country", s.country ?? "The Ledger"], ["Ledger ID", s.ledgerId ?? "Being filed"]],
+    why: w.why, whyLabel: w.label,
+    close: { photo: toOpening(ph.close), line: s.quote && s.tagline ? s.tagline : s.bestMonths ? `Best months: ${s.bestMonths}.` : `Plan ${s.name} with James.` },
+    planHref: s.planHref, next: null,
+  };
+}

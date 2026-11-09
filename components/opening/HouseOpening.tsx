@@ -29,8 +29,8 @@ function Grain({ on }: { on: boolean }) {
   return <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-[1] mix-blend-overlay opacity-[0.09]" style={{ backgroundImage: GRAIN }} />;
 }
 
-function Arrival({ frames, palette, accent, marker, designation, title, place, next, planHref, grain }: {
-  frames: OpeningImage[]; palette: OpeningPalette; accent: string; marker: string; designation: string; title: string; place: string; next: NextSailing; planHref: string; grain: boolean;
+function Arrival({ frames, palette, accent, marker, designation, title, place, next, planHref, grain, tab }: {
+  frames: OpeningImage[]; palette: OpeningPalette; accent: string; marker: string; designation: string; title: string; place: string; next: NextSailing; planHref: string; grain: boolean; tab?: string;
 }) {
   const reduced = useReducedMotionSafe();
   const ref = useRef<HTMLDivElement>(null);
@@ -74,6 +74,8 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
         <div aria-hidden="true" className="absolute inset-0 z-10" style={{ background: `linear-gradient(180deg, rgba(26,24,22,.38) 0%, transparent 32%, transparent 52%, ${palette.night} 100%)` }} />
         <Grain on={grain} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-3 md:inset-5 z-10 border border-white/25" />
+        {/* the volume tab (House Standard: a 5px tab in the volume colour), on the frame's top edge */}
+        {tab && <div aria-hidden="true" className="pointer-events-none absolute z-10 top-3 md:top-5 left-3 md:left-5 h-[5px] w-16 md:w-24" style={{ background: tab }} />}
         <p className="absolute z-20 top-[92px] left-5 md:left-auto md:right-10 md:top-[104px] lg:top-[192px] text-[10px] md:text-[10.5px] tracking-[0.28em] uppercase text-white/75">{marker}</p>
         <div className="relative z-20 h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-[118px] lg:pb-16">
           <p className="ledger-eyebrow !text-white/85" style={{ opacity: reduced || p > 0.04 ? 1 : 0.0001, transition: "opacity 500ms" }}>{designation}</p>
@@ -117,14 +119,16 @@ export type HouseOpeningProps = {
   planHref: string;
   note?: ReactNode;
   grain?: boolean;
+  /** the volume colour for the frame's tab (Stays, Europe), from lib/volumes.ts */
+  tab?: string;
 };
 
-export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false }: HouseOpeningProps) {
+export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab }: HouseOpeningProps) {
   const pw = PATHWAYS[pathway];
   const night: CSSProperties = { background: `linear-gradient(180deg, ${palette.night} 0%, ${palette.deep} 100%)` };
   return (
     <div className="jw-opening mx-[calc(50%-50vw)] overflow-x-clip" style={toneVars(palette)}>
-      <Arrival frames={frames} palette={palette} accent={pw.accent} marker={marker} designation={designation} title={title} place={place} next={next} planHref={planHref} grain={grain} />
+      <Arrival frames={frames} palette={palette} accent={pw.accent} marker={marker} designation={designation} title={title} place={place} next={next} planHref={planHref} grain={grain} tab={tab} />
 
       <section className="relative text-white" style={night}>
         <Grain on={grain} />

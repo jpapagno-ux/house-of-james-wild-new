@@ -17,7 +17,7 @@ import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 //   4. Then the page's details on the record's day colour (a faint cast of the same palette instead of flat white).
 // Optional paper grain on the night surfaces. House crimson stays the one action colour; the pathway never fills a button.
 
-export type OpeningImage = { src: string; alt: string; caption?: string; credit: string };
+export type OpeningImage = { src: string; alt: string; caption?: string; credit: string; /** where the subject sits, for the phone cut (Cloudinary gravity: east, south...); default: found automatically */ gravity?: string };
 export type OpeningPalette = { night: string; deep: string; day: string; hi: string };
 export type NextSailing = { date: string; ship?: string; from?: string; href: string } | null;
 
@@ -66,7 +66,7 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
       <section ref={stageRef} className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
         {frames.map((f, i) => (
           <div key={f.src} className="absolute inset-0" style={{ opacity: fade(i), zIndex: i }} aria-hidden={i !== stage}>
-            <Pic src={f.src} alt={f.alt} priority={i === 0} sizes="100vw" portrait="9:16" className="object-cover" style={{ transform: reduced || touch ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
+            <Pic src={f.src} alt={f.alt} priority={i === 0} sizes="100vw" portrait="9:16" gravity={f.gravity} className="object-cover" style={{ transform: reduced || touch ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
           </div>
         ))}
         <div aria-hidden="true" className="absolute inset-0 z-10 mix-blend-soft-light" style={{ opacity: 0.55 * between, background: `radial-gradient(120% 90% at ${15 + 70 * p}% 30%, ${accent} 0%, transparent 60%)` }} />
@@ -154,7 +154,7 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
       </section>
 
       <section className="relative h-[70svh] overflow-hidden text-white" style={{ background: palette.deep }} aria-label={close.photo.alt}>
-        <div className="absolute inset-0 ef-drift-pan"><Pic src={close.photo.src} alt={close.photo.alt} sizes="100vw" portrait="3:4" className="object-cover" /></div>
+        <div className="absolute inset-0 ef-drift-pan"><Pic src={close.photo.src} alt={close.photo.alt} sizes="100vw" portrait="3:4" gravity={close.photo.gravity} className="object-cover" /></div>
         <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, ${palette.deep} 0%, transparent 30%, transparent 55%, ${palette.deep}E6 100%)` }} />
         <Grain on={grain} />
         <div className="relative z-[2] h-full max-w-ledger mx-auto px-5 md:px-10 flex items-end pb-12 md:pb-16">

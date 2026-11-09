@@ -13,12 +13,14 @@ import type { CSSProperties } from "react";
 const TX = /\/image\/upload\/([^/]+)\//;
 const isCloudinary = (s: string) => s.includes("res.cloudinary.com") && TX.test(s);
 const withTx = (src: string, t: string) => src.replace(TX, `/image/upload/${t}/`);
-const loader = (t: string) => ({ src, width }: ImageLoaderProps) => withTx(src, `${t},w_${width}`);
+// a cap keeps the tallest phone cuts under Cloudinary's 25-megapixel limit (no phone asks for more)
+const loader = (t: string, max = 4000) => ({ src, width }: ImageLoaderProps) => withTx(src, `${t},w_${Math.min(width, max)}`);
 
-export default function Pic({ src, alt, sizes, priority = false, className = "", style, portrait, ratio }: {
+export default function Pic({ src, alt, sizes, priority = false, className = "", style, portrait, ratio, gravity }: {
   src: string; alt: string; sizes: string; priority?: boolean; className?: string; style?: CSSProperties;
   /** phones (under 768px): a portrait cut at this ratio, e.g. "9:16" */ portrait?: string;
   /** every width: a fixed cut at this ratio, e.g. "4:5" */ ratio?: string;
+  /** the phone cut's gravity where automatic detection picks the wrong subject (east, south...) */ gravity?: string;
 }) {
   if (!isCloudinary(src)) return <Image src={src} alt={alt} fill sizes={sizes} priority={priority} quality={85} className={className} style={style} />;
   const base = ratio ? `f_auto,q_auto:best,c_fill,g_auto,ar_${ratio}` : "f_auto,q_auto:best,c_limit";
@@ -27,7 +29,7 @@ export default function Pic({ src, alt, sizes, priority = false, className = "",
   // eslint-disable-next-line @next/next/no-img-element -- art-directed <picture> from getImageProps
   const img = <img {...wide} alt={alt} className={className} style={{ ...wide.style, ...style }} />;
   if (!portrait) return img;
-  const { props: tall } = getImageProps({ ...common, loader: loader(`f_auto,q_auto:best,c_fill,g_auto,ar_${portrait}`) });
+  const { props: tall } = getImageProps({ ...common, loader: loader(`f_auto,q_auto:best,c_fill,g_${gravity ?? "auto"},ar_${portrait}`, 1600) });
   return (
     <picture>
       <source media="(max-width: 767px)" srcSet={tall.srcSet} sizes={tall.sizes} />

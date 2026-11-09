@@ -81,8 +81,8 @@ export const ORIGIN_C: Base = {
   place: "Two 7-night Galápagos loops from San Cristóbal",
   line: "Twenty guests, ten staterooms and two naturalist guides on a 43-metre expedition yacht, sailing every Sunday: Beaches and Bays one week, Volcanic Wonders the next, fourteen nights without repeating a site.",
   frames: [
-    img("wildco/guides/galapagos/destination/landscape/leon-dormido-06", "León Dormido, Kicker Rock, off San Cristóbal", ECO("Brooke Pyke"), "León Dormido, San Cristóbal"),
-    img("wildco/voyages/vessels/ecoventura-fleet/00-origin-theory", "Ecoventura's sister yachts Origin and Theory in the Galápagos", ECO(), "Origin and her sister Theory"),
+    { ...img("wildco/guides/galapagos/destination/landscape/leon-dormido-06", "León Dormido, Kicker Rock, off San Cristóbal", ECO("Brooke Pyke"), "León Dormido, San Cristóbal"), gravity: "east" },
+    { ...img("wildco/voyages/vessels/ecoventura-fleet/00-origin-theory", "Ecoventura's sister yachts Origin and Theory in the Galápagos", ECO(), "Origin and her sister Theory"), gravity: "east" },
     img("wildco/voyages/vessels/ecoventura-fleet/decks/4-12-jacuzzi", "The jacuzzi on deck with Kicker Rock beyond", ECO("Dana Bjarner"), "The sundeck, Kicker Rock beyond"),
   ],
   glance: [["Length", "7 nights, or 14"], ["Guests", "20"], ["Guides", "2 naturalists"], ["Departs", "San Cristóbal, Sundays"]],
@@ -91,6 +91,6 @@ export const ORIGIN_C: Base = {
     { title: "Fourteen nights, no repeats", line: "Beaches and Bays to Española, Floreana and Bartolomé; Volcanic Wonders north to Genovesa and west to Fernandina.", photo: img("wildco/guides/galapagos/destination/activities/land-excursions-08", "Guided hike on Bartolomé Island", ECO("Jaime Trejo"), undefined, 1600) },
     { title: "Built for the islands", line: "A hull designed to cut time between islands, which leaves more of each day ashore.", photo: img("wildco/guides/galapagos/destination/wildlife/galapagos-penguin", "Galápagos penguin", ECO("Brooke Pyke"), undefined, 1600) },
   ],
-  close: { photo: img("wildco/guides/galapagos/destination/landscape/sombrero-chino-13", "Sombrero Chino, the Chinese Hat islet off Santiago", ECO("Maysa Santoro"), "Sombrero Chino"), line: "Every Sunday from San Cristóbal." },
+  close: { photo: { ...img("wildco/guides/galapagos/destination/landscape/sombrero-chino-13", "Sombrero Chino, the Chinese Hat islet off Santiago", ECO("Maysa Santoro"), "Sombrero Chino"), gravity: "south" }, line: "Every Sunday from San Cristóbal." },
   planHref: "/plan?trip=Origin%20(Ecoventura)",
 };

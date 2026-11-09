@@ -168,7 +168,8 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
       const end = document.getElementById("hero-end");
       const under = copy ? copy.getBoundingClientRect().top <= bar + 12 : false;
       const past = end ? end.getBoundingClientRect().top <= bar : false;
-      setSolid(under || past || (!copy && window.scrollY > 24));
+      // a page that marks its hero's end (#hero-end, the house opening) stays transparent until that end passes
+      setSolid(under || past || (!copy && !end && window.scrollY > 24));
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });

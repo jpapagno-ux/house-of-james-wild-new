@@ -30,7 +30,15 @@ export default function Pic({ src, alt, sizes, priority = false, className = "",
   const common = { alt, fill: true, sizes, priority, src };
   const { props: wide } = getImageProps({ ...common, loader: loader(base) });
   // eslint-disable-next-line @next/next/no-img-element -- art-directed <picture> from getImageProps
-  const img = <img {...wide} alt={alt} className={className} style={{ ...wide.style, ...style }} />;
+  // an upscaled size Cloudinary has not made yet answers with an error on its first request: fall back to the original
+  // (and the phone cut's original) for that view, so nobody ever sees a broken frame
+  const fallback = up ? (ev: React.SyntheticEvent<HTMLImageElement>) => {
+    const t = ev.currentTarget; if (t.dataset.fb) return; t.dataset.fb = "1";
+    const src = t.parentElement?.tagName === "PICTURE" ? t.parentElement.querySelector("source") : null;
+    if (src) src.srcset = src.srcset.replaceAll("e_upscale/", "");
+    t.srcset = t.srcset.replaceAll("e_upscale/", ""); t.src = t.src.replace("e_upscale/", "");
+  } : undefined;
+  const img = <img {...wide} alt={alt} className={className} style={{ ...wide.style, ...style }} onError={fallback} />;
   if (!portrait) return img;
   const { props: tall } = getImageProps({ ...common, loader: loader(`${up}f_auto,q_auto:best,c_fill,g_${gravity ?? "auto"},ar_${portrait}`, 1600) });
   return (

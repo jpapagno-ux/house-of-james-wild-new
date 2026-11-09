@@ -656,3 +656,15 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 .house-tones .jw-band--night .ledger-paper { background: rgba(255,255,255,.04) !important; color: #FFFFFF; }
 .house-tones .jw-band--night a:not(.ledger-btn) { color: #FFFFFF; }
 .house-tones .jw-band > .relative > div:first-child > :first-child { margin-top: 0 !important; border-top: 0 !important; padding-top: 0 !important; }
+/* Details D, final pass (James, 8 Nov 2026: "clean and concise... font placements and spacings correct"): one heading
+   scale for every numbered section, measured lines, even rhythm between sections, icons in the record ink. */
+.house-tones [data-sechead] h2 { font-size: clamp(1.75rem, 1.15rem + 1.7vw, 2.6rem); line-height: 1.1; letter-spacing: -0.005em; max-width: 26ch; margin-top: .6rem; }
+.house-tones [data-sechead] + p, .house-tones [data-sechead] p.ledger-muted { max-width: 62ch; }
+.house-tones [data-sechead] .flex { gap: .85rem; }
+.house-tones [data-sechead] .ledger-eyebrow { letter-spacing: .24em; }
+.house-tones section[id].mt-16, .house-tones section[aria-labelledby].mt-16 { margin-top: 4.5rem; padding-top: 2.25rem; }
+@media (min-width: 768px) { .house-tones section[id].mt-16, .house-tones section[aria-labelledby].mt-16 { margin-top: 6rem; padding-top: 2.75rem; } }
+.house-tones #overview { padding-top: 3.5rem; }
+.house-tones #overview .ledger-display.italic { max-width: 30ch; }
+.house-tones details summary .ledger-display { font-size: 1.15rem; line-height: 1.35; }
+.house-tones .jw-band--night [data-sechead] h2 { color: #FFFFFF; }

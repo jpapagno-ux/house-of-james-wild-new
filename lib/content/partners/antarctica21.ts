@@ -17,7 +17,7 @@ export const ANTARCTICA21: Partner = {
     description: "Antarctica21 pioneered Antarctic air-cruises from Punta Arenas in 2003: a two hour flight to King George Island, then 88-guest Magellan ships. Ships, voyages and FAQs.",
     keywords: ["Antarctica21", "Antarctica air-cruise", "fly to Antarctica from Punta Arenas", "Magellan Discoverer", "Magellan Explorer", "skip the Drake Passage"],
   },
-  line: "The Chilean company behind the Antarctic air-cruise, and every voyage in Polar Crossings.",
+  line: "The Chilean company behind the Antarctic air-cruise, and every polar voyage James Wild & Co plans.",
   answer: "Antarctica21 is a Chilean expedition company founded in Punta Arenas in 2003 that says it pioneered the Antarctic air-cruise. Guests fly about two hours over the Drake Passage to King George Island and board one of its two small ships, Magellan Explorer or Magellan Discoverer, each carrying up to 88 guests on air-cruises.",
   who: {
     facts: [
@@ -109,7 +109,7 @@ export const ANTARCTICA21: Partner = {
     { url: `${IMG}/air-cruise-model-map`, alt: "Map of the Antarctica21 air cruise model from Punta Arenas to King George Island", credit: "Antarctica21" },
   ],
   credit: "Antarctica21",
-  related: [{ label: "Polar Crossings: every Antarctica21 voyage", href: POLAR_PATH }],
+  related: [{ label: "Polar Voyages: every Antarctica21 voyage", href: POLAR_PATH }],
   organization: { foundingDate: "2003", locality: "Punta Arenas", country: "CL", memberOf: ["IAATO", "Adventure Travel Trade Association", "Pure Life Experiences"] },
   sources: [
     "https://www.antarctica21.com/our-company",

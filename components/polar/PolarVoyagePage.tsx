@@ -30,6 +30,7 @@ import { terrainRoute } from "@/components/maps/terrain/routed";
 import { readRoute } from "@/lib/content/ships/routes";
 import { absoluteUrl } from "@/lib/seo";
 import { Band, tonesStyle, type Tones } from "@/components/opening/Tones";
+import { FieldIcon } from "@/components/ledger/FieldIcon";
 
 // One landing page per Antarctica21 itinerary (/voyages/polar/<slug>), on the ship template's
 // pieces: hero and glance, the five-stop section nav, the answer first, the day by day with the
@@ -50,7 +51,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
   const indicative = v.itinerary.some((d) => d.indicative);
   const map = voyageMap(v);
   const nav: [string, string][] = [["The Voyage", "overview"], ["Day by Day", "itinerary"], ["Ships", "ships"], ["Dates & Rates", "dates"], ["FAQ", "faq-heading"]];
-  const crumbs = [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Polar Crossings", path: POLAR_PATH }, { name: v.name, path }];
+  const crumbs = [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "Polar Voyages", path: POLAR_PATH }, { name: v.name, path }];
   const primary = VOYAGE_PATHWAYS_ON ? pathwayOf(v.pathway.primary) : undefined;
   const secondary = primary ? v.pathway.secondary.map((p) => pathwayOf(p)).filter((p): p is Pathway => !!p) : [];
   const priceLabel = v.status === "sold-out" ? "Status" : from ? "From" : "Rates";
@@ -96,7 +97,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
   );
   const operatorBlock = (
           <section className="mt-12 border ledger-border p-5 md:p-6 grid md:grid-cols-[1fr_auto] gap-4 items-center">
-            <p className="text-[15.5px] leading-relaxed"><span className="ledger-eyebrow block mb-1">Operated by Antarctica21</span>Every voyage in Polar Crossings sails with Antarctica21, the Chilean company that says it pioneered the Antarctic air-cruise in 2003.</p>
+            <p className="text-[15.5px] leading-relaxed"><span className="ledger-eyebrow block mb-1">Operated by Antarctica21</span>Every polar voyage James Wild & Co plans sails with Antarctica21, the Chilean company that says it pioneered the Antarctic air-cruise in 2003.</p>
             <div className="flex flex-wrap gap-x-5">
               <Link href="/partners/antarctica21" className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline">About Antarctica21<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>
               <Link href={POLAR_PATH} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline">Every polar voyage<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>
@@ -106,7 +107,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
   // Details D (tones): before you book and the operator move out of dates onto the night band, as their own section
   const nightBlock = (
     <section id="before" aria-labelledby="before-heading">
-      <div data-sechead><p className="ledger-eyebrow">Before you book</p><h2 id="before-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">What Should You Know Before You Book?</h2></div>
+      <div data-sechead><div className="flex items-center gap-3"><FieldIcon name="tree-ring" height={26} className="ledger-crimson" /><p className="ledger-eyebrow">Before you book</p></div><h2 id="before-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight">What Should You Know Before You Book?</h2></div>
       <dl className="mt-6 grid gap-x-10 md:grid-cols-2">
         {know.map(([k, x]) => <div key={k} className="border-t ledger-rule py-4"><dt className="ledger-eyebrow">{k}</dt><dd className="mt-1.5 text-[15.5px] leading-relaxed">{x}</dd></div>)}
         {flies && <div className="border-t ledger-rule py-4"><dt className="ledger-eyebrow">Punta Arenas</dt><dd className="mt-1.5 text-[15.5px] leading-relaxed">{POLAR_FACTS.hotel}</dd></div>}
@@ -159,7 +160,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
           </Band>
 
           <section id="ships" className={SEC}>
-            <SectionHead eyebrow="The ships" title={v.ships.length > 1 ? "Which Ship Should You Choose?" : `Which Ship Sails the ${v.name}?`} icon="wave"
+            <SectionHead eyebrow="The ships" title={v.ships.length > 1 ? "Which Ship Should You Choose?" : `Which Ship Sails the ${v.name}?`} icon={tones ? "mountain-sun" : "wave"}
               intro={v.ships.length > 1 ? `The voyage is the same on either ship; the cabins and the fare are what change. ${t(v.guests)}.` : `${t(v.guests)}.`} />
             <ul className={`mt-6 grid gap-5 sm:grid-cols-2 ${v.ships.length > 1 ? "" : "lg:grid-cols-3"}`}>
               {v.ships.map((slug) => {
@@ -200,7 +201,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
 
           {!tones && operatorBlock}
 
-          <FaqBlock faqs={v.faqs.map(([q, a]) => ({ q: t(q), a: t(a) }))} title={`What Else Should You Know About the ${v.name}?`} />
+          <FaqBlock faqs={v.faqs.map(([q, a]) => ({ q: t(q), a: t(a) }))} title={`What Else Should You Know About the ${v.name}?`} icon={tones ? "frond" : undefined} />
         </div>
       </main>
       <RecordActionBar price={from && v.status !== "sold-out" ? usd(from) : undefined} basis="pp, double" cta="Plan with James" href={plan} house />

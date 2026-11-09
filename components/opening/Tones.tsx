@@ -12,12 +12,21 @@ import type { OpeningPalette } from "./HouseOpening";
 export type Tones = { palette: OpeningPalette; grain?: boolean };
 export type Tone = "mist" | "paper" | "night";
 
+const hex = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+/** The night ink, as The Exceptional Few tints it (#E9F0EE on Hermes): white carrying a little of the palette's light
+ *  tone, so the words on the night surface belong to the photograph rather than sit on it in pure white. */
+export const ivoryOf = (hi: string) => { const a = hex("#FFFFFF"), b = hex(hi); return "#" + a.map((v, i) => Math.round(v * 0.82 + b[i] * 0.18).toString(16).padStart(2, "0")).join(""); };
+export const toneVars = (palette: OpeningPalette): CSSProperties => {
+  const iv = ivoryOf(palette.hi);
+  return {
+    ["--tone-night" as string]: palette.night, ["--tone-deep" as string]: palette.deep, ["--tone-day" as string]: palette.day, ["--tone-hi" as string]: palette.hi,
+    ["--tone-ivory" as string]: iv, ["--tone-muted" as string]: `color-mix(in srgb, ${iv} 74%, transparent)`, ["--tone-line" as string]: `color-mix(in srgb, ${iv} 20%, transparent)`,
+  };
+};
+
 export const tonesStyle = (t: Tones): CSSProperties => ({
+  ...toneVars(t.palette),
   background: t.palette.day,
-  ["--tone-night" as string]: t.palette.night,
-  ["--tone-deep" as string]: t.palette.deep,
-  ["--tone-day" as string]: t.palette.day,
-  ["--tone-hi" as string]: t.palette.hi,
 });
 
 const GRAIN = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")";

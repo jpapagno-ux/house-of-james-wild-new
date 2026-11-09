@@ -201,14 +201,19 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
   }, [tuck]);
 
   const light = overlay && !solid && !open;
-  const mainItem = `ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block whitespace-nowrap hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`;
+  // On a cruise page with the house opening the solid header sits on the record's night colour (globals.css, the house
+  // tint, 9 Nov 2026), so its words, seal and icons stay light there too; the background still follows `light`.
+  const [onNight, setOnNight] = useState(false);
+  useEffect(() => { setOnNight(!!headerRef.current?.closest(".house-tones")); }, []);
+  const lt = light || (onNight && !open);
+  const mainItem = `ledger-eyebrow !text-[11px] !tracking-[0.2em] py-3 inline-block whitespace-nowrap hover:opacity-60 ${lt ? "!text-white" : "!text-ink"}`;
 
   return (
     <>
     <header
       ref={headerRef}
       className={`${overlay ? "fixed" : "sticky"} top-0 inset-x-0 z-40 border-b transition-[background-color,border-color,transform] duration-300 motion-reduce:transition-none ${tucked && !open ? "-translate-y-full" : ""} ${
-        light ? "bg-transparent border-transparent text-white" : "bg-paper border-[#DCD7D0] text-ink"
+        light ? "bg-transparent border-transparent text-white" : `bg-paper border-[#DCD7D0] ${lt ? "text-white" : "text-ink"}`
       }`}
     >
       {/* The House Standard: the top edge is the volume tab (the volume's base on a volume page, a hairline elsewhere).
@@ -219,14 +224,14 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
       <div className="max-w-[1400px] mx-auto px-4 min-[380px]:px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-3 lg:gap-6">
         <div className="flex items-center gap-3">
-          <button type="button" onClick={() => setOpen(true)} className={`inline-flex items-center gap-3 h-10 ledger-eyebrow !text-[11px] !tracking-[0.24em] hover:opacity-60 ${light ? "!text-white" : "!text-ink"}`} aria-label="Open menu" aria-expanded={open}>
+          <button type="button" onClick={() => setOpen(true)} className={`inline-flex items-center gap-3 h-10 ledger-eyebrow !text-[11px] !tracking-[0.24em] hover:opacity-60 ${lt ? "!text-white" : "!text-ink"}`} aria-label="Open menu" aria-expanded={open}>
             <span className="flex flex-col gap-[5px]" aria-hidden="true"><span className="block w-6 h-px bg-current" /><span className="block w-6 h-px bg-current" /></span>
             <span className="hidden sm:inline">Menu</span>
           </button>
           <button
             type="button"
             onClick={() => setSearching(true)}
-            className={`hidden lg:inline-flex items-center justify-center gap-2.5 h-10 w-10 xl:w-auto xl:pl-3 xl:pr-3.5 border rounded-[2px] transition-colors ${light ? "border-white/50 text-white hover:bg-white/10" : "border-keyline hover:border-graphite"}`}
+            className={`hidden lg:inline-flex items-center justify-center gap-2.5 h-10 w-10 xl:w-auto xl:pl-3 xl:pr-3.5 border rounded-[2px] transition-colors ${lt ? "border-white/50 text-white hover:bg-white/10" : "border-keyline hover:border-graphite"}`}
             aria-label="Ask the house: search the Ledger"
           >
             <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
@@ -240,15 +245,15 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             is centred between Menu and Plan, the seal at 40, the wordmark at
             1.35rem and only "Exploring since 1982" beneath (mobile pass, 31 Oct 2026). */}
         <Link href="/" className="flex items-center gap-2 min-[380px]:gap-2.5 md:gap-4 xl:gap-5 leading-none shrink-0 justify-self-center min-w-0" aria-label={`${SITE.name}, home`}>
-          <span className={`hidden min-[380px]:block lg:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={light ? "light" : "ink"} /></span>
-          <span className={`block min-[380px]:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={34} tone={light ? "light" : "ink"} /></span>
-          <span className={`hidden lg:block xl:hidden shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={60} tone={light ? "light" : "ink"} /></span>
-          <span className={`hidden xl:block shrink-0 ${light ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={light ? "light" : "ink"} /></span>
+          <span className={`hidden min-[380px]:block lg:hidden shrink-0 ${lt ? "opacity-95" : ""}`}><JwcoSeal size={40} tone={lt ? "light" : "ink"} /></span>
+          <span className={`block min-[380px]:hidden shrink-0 ${lt ? "opacity-95" : ""}`}><JwcoSeal size={34} tone={lt ? "light" : "ink"} /></span>
+          <span className={`hidden lg:block xl:hidden shrink-0 ${lt ? "opacity-95" : ""}`}><JwcoSeal size={60} tone={lt ? "light" : "ink"} /></span>
+          <span className={`hidden xl:block shrink-0 ${lt ? "opacity-95" : ""}`}><JwcoSeal size={78} tone={lt ? "light" : "ink"} /></span>
           {/* phone lockup */}
-          <span className="lg:hidden"><Wordmark style="editorial" light={light} size={0.52} fullLine={false} /></span>
+          <span className="lg:hidden"><Wordmark style="editorial" light={lt} size={0.52} fullLine={false} /></span>
           {/* desktop lockup: a smaller seal and wordmark from 1024 to 1279 so the centred lockup clears the side tools */}
-          <span className="hidden lg:block xl:hidden"><Wordmark style="editorial" light={light} size={0.88} /></span>
-          <span className="hidden xl:block"><Wordmark style="editorial" light={light} size={1} /></span>
+          <span className="hidden lg:block xl:hidden"><Wordmark style="editorial" light={lt} size={0.88} /></span>
+          <span className="hidden xl:block"><Wordmark style="editorial" light={lt} size={1} /></span>
         </Link>
 
         <div className="flex items-center justify-end gap-3">
@@ -259,18 +264,18 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
               <li key={l.href} className="hidden min-[1440px]:block"><Link href={l.href} className={mainItem}>{l.label}</Link></li>
             ))}
             {/* The founder's Compass rose, turning (James, 30 Oct 2026: approved site-wide) */}
-            <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={light} />Compass</Link></li>
+            <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={lt} />Compass</Link></li>
             <li className="hidden min-[1440px]:block"><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
             {/* Sign in — three doors: Traveler, Advisor, Partner (James, 3 Nov 2026) */}
-            <li><SignInDoors light={light} className={mainItem} /></li>
+            <li><SignInDoors light={lt} className={mainItem} /></li>
           </ul>
           {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026).
               Under 640px the column would crowd the centred lockup, so phones get the crimson arrow cell alone (40px square,
               aria-label "Plan with James"); the full column returns from 640px (header fix, 2 Nov 2026). */}
-          <Link href={PLAN_CTA.href} aria-label={PLAN_CTA.label} className={`jw-plan-cell sm:hidden ${light ? "jw-plan-cell--light" : ""}`} />
+          <Link href={PLAN_CTA.href} aria-label={PLAN_CTA.label} className={`jw-plan-cell sm:hidden ${lt ? "jw-plan-cell--light" : ""}`} />
           <Link
             href={PLAN_CTA.href}
-            className={`ledger-btn ledger-btn--house ledger-btn--compact !hidden sm:!inline-flex ${light ? "ledger-btn--light" : ""}`}
+            className={`ledger-btn ledger-btn--house ledger-btn--compact !hidden sm:!inline-flex ${lt ? "ledger-btn--light" : ""}`}
           >
             {PLAN_CTA.label}
           </Link>
@@ -278,10 +283,10 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
       </div>
 
       {/* The six volumes, one centred line */}
-      <nav aria-label="Main" className={`hidden lg:block border-t ${light ? "border-white/20" : "ledger-border"}`}>
+      <nav aria-label="Main" className={`hidden lg:block border-t ${lt ? "border-white/20" : "ledger-border"}`}>
         <ul className="max-w-[1400px] mx-auto px-10 h-12 flex items-center justify-center gap-8 xl:gap-11">
-          {SHOW_DESTINATIONS && <DestinationsMenu light={light} />}
-          {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={light} />)}
+          {SHOW_DESTINATIONS && <DestinationsMenu light={lt} />}
+          {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={lt} />)}
         </ul>
       </nav>
     </header>

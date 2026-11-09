@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 import { PATHWAYS, type PathwayId } from "@/lib/pathways";
+import { toneVars } from "./Tones";
 
 // Preview C, "the house opening" (James, 8 Nov 2026: go with the blend). The Exceptional Few manner one step down,
 // for any volume record:
@@ -79,7 +80,7 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
           <h1 className="ledger-h1 mt-3" style={{ opacity: named ? 1 : 0, transform: named ? "none" : "translateY(14px)", transition: "all 700ms" }}>{title}</h1>
           <p className="ledger-display italic text-lg md:text-2xl mt-3" style={{ color: palette.hi, opacity: named ? 1 : 0, transition: "opacity 700ms" }}>{place}</p>
           <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-4" style={{ opacity: named ? 1 : 0, transition: "opacity 700ms 150ms" }}>
-            <Link href={planHref} className="ledger-btn ledger-btn--house !bg-white !text-ink">Plan with James</Link>
+            <Link href={planHref} className="ledger-btn ledger-btn--house ledger-btn--light">Plan with James</Link>
             {next && (
               <Link href={next.href} className="group text-[13px] leading-snug text-white/90">
                 <span className="block text-[10.5px] tracking-[0.22em] uppercase text-white/60">Next open sailing</span>
@@ -119,14 +120,14 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
   const pw = PATHWAYS[pathway];
   const night: CSSProperties = { background: `linear-gradient(180deg, ${palette.night} 0%, ${palette.deep} 100%)` };
   return (
-    <div className="mx-[calc(50%-50vw)] overflow-x-clip">
+    <div className="jw-opening mx-[calc(50%-50vw)] overflow-x-clip" style={toneVars(palette)}>
       <Arrival frames={frames} palette={palette} accent={pw.accent} marker={marker} designation={designation} title={title} place={place} next={next} planHref={planHref} grain={grain} />
 
       <section className="relative text-white" style={night}>
         <Grain on={grain} />
         <div className="relative z-[2] max-w-ledger mx-auto px-5 md:px-10 py-16 md:py-24">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="house-chip !bg-transparent !text-white !border-white/40"><span aria-hidden="true" className="inline-block w-[6px] h-[6px] rounded-full" style={{ background: palette.hi }} />{pw.name}</span>
+            <span className="house-chip !border-transparent" style={{ background: "var(--tone-ivory)", color: palette.night }}><span aria-hidden="true" className="inline-block w-[6px] h-[6px] rounded-full" style={{ background: pw.accent }} />{pw.name}</span>
             <span className="ledger-eyebrow" style={{ color: palette.hi }}>{whyLabel}</span>
           </div>
           <p className="mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl">{line}</p>

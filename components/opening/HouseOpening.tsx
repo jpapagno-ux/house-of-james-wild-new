@@ -67,8 +67,9 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
         <div aria-hidden="true" className="absolute inset-0 z-10" style={{ background: `linear-gradient(180deg, rgba(26,24,22,.38) 0%, transparent 32%, transparent 52%, ${palette.night} 100%)` }} />
         <Grain on={grain} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-3 md:inset-5 z-10 border border-white/25" />
-        <p className="absolute z-20 top-24 md:top-28 right-6 md:right-10 text-[10.5px] tracking-[0.28em] uppercase text-white/75">{marker}</p>
-        <div className="relative z-20 h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-12 md:pb-16">
+        <p className="hidden md:block absolute z-20 top-28 right-10 text-[10.5px] tracking-[0.28em] uppercase text-white/75">{marker}</p>
+        <div className="relative z-20 h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-20 md:pb-16">
+          <p className="md:hidden mb-3 text-[10px] tracking-[0.26em] uppercase text-white/70">{marker}</p>
           <p className="ledger-eyebrow !text-white/85" style={{ opacity: reduced || p > 0.04 ? 1 : 0.0001, transition: "opacity 500ms" }}>{designation}</p>
           <h1 className="ledger-h1 mt-3" style={{ opacity: named ? 1 : 0, transform: named ? "none" : "translateY(14px)", transition: "all 700ms" }}>{title}</h1>
           <p className="ledger-display italic text-lg md:text-2xl mt-3" style={{ color: palette.hi, opacity: named ? 1 : 0, transition: "opacity 700ms" }}>{place}</p>
@@ -83,7 +84,7 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
           </div>
         </div>
         <a href="#voyage" className="absolute z-20 bottom-3 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.24em] uppercase text-white/70 hover:text-white">Skip to the details ↓</a>
-        <p className="absolute z-20 bottom-2 right-6 md:right-8 text-[10.5px] tracking-[0.08em] text-white/70">{current?.caption ? `${current.caption} · ` : ""}{current?.credit}</p>
+        <p className="absolute z-20 bottom-9 md:bottom-2 left-5 right-5 md:left-auto md:right-8 text-right text-[10px] md:text-[10.5px] tracking-[0.08em] text-white/70">{current?.caption ? `${current.caption} · ` : ""}{current?.credit}</p>
       </section>
     </div>
   );

@@ -25,10 +25,21 @@ for f in sorted(os.listdir(SRC)):
   if not f.endswith(".json"): continue
   v = json.load(open(os.path.join(SRC, f)))
   stops, prev = [], None
+  # the airstrip the flights use (the outbound flight's landing), for the sail back before a return flight
+  kgi = next((d for d in v["itinerary"] if re.search(r"King George Island", d["place"]) and not re.search(r" to ", d["place"])), None)
+  near = lambda a, b: abs(a["lat"] - b["lat"]) < 0.35 and abs(a["lng"] - b["lng"]) < 0.8
   for d in v["itinerary"]:
     st = {"day": d["day"], "name": d["place"], "lat": d["lat"], "lng": d["lng"]}
     flight = re.search(r"flight", d["title"], re.I)
+    # James, 9 Nov 2026 (the chart flew the ship straight off Penola Strait): a return flight leaves from King George
+    # Island, so when the ship is elsewhere it first sails back there, then the flight leaves from the airstrip
+    if prev is not None and flight and kgi and re.search(r"King George Island to ", d["place"]) and not near(prev, kgi):
+      back = {"day": d["day"], "name": "King George Island", "lat": kgi["lat"], "lng": kgi["lng"], "mode": "sea", "kind": "airstrip",
+              "path": [[prev["lng"], prev["lat"]], [kgi["lng"], kgi["lat"]]]}
+      stops.append(back); prev = {"lat": kgi["lat"], "lng": kgi["lng"]}
     if prev is None: st["kind"] = "port"
+    elif near(prev, d) and not flight:
+      st["mode"] = stops[-1].get("mode", "air")   # the day ends where the last leg did (disembarking): no zero-length sail
     else:
       st["mode"] = "air" if flight else "sea"
       if not flight: st["path"] = [[prev["lng"], prev["lat"]], [d["lng"], d["lat"]]]

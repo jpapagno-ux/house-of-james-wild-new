@@ -86,7 +86,7 @@ export default function PolarPage() {
           <p className="mt-3 text-[12px] ledger-muted">Photographs: Antarctica21. &ldquo;From&rdquo; is the lowest fare per person, double cabin, that Antarctica21 shows for the voyage.</p>
         </HubSection>
 
-        <RouteAtlas id="polar-atlas" kind="voyage" dest="polar" legend="sea" kicker="POLAR CROSSINGS · BY AIR AND SEA" eyebrow="The routes" title="Where Do the Voyages Go?"
+        <RouteAtlas id="polar-atlas" kind="voyage" dest="polar" legend="sea" kicker="POLAR VOYAGES · BY AIR AND SEA" eyebrow="The routes" title="Where Do the Voyages Go?"
           line="Every Antarctica21 route on one chart, grouped by trip style. Pick one and the chart flies to it, then sails it day by day." routes={atlas} />
 
         <HubSection eyebrow="The fleet · Antarctica21" title="Which Ships Sail Them?" id="fleet-h">

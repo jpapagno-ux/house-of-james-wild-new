@@ -154,35 +154,17 @@
   {
    "day": 5,
    "name": "King George Island to Punta Arenas",
-   "lat": -53.171,
-   "lng": -70.9051,
-   "mode": "air",
-   "charted": [
-    -70.9171,
-    -53.1638
-   ]
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "mode": "air"
   },
   {
    "day": 6,
    "name": "Punta Arenas",
-   "lat": -53.171,
-   "lng": -70.9051,
-   "mode": "sea",
-   "path": [
-    [
-     -70.9051,
-     -53.171
-    ],
-    [
-     -70.9051,
-     -53.171
-    ]
-   ],
-   "kind": "port",
-   "charted": [
-    -70.9171,
-    -53.1638
-   ]
+   "lat": -53.1638,
+   "lng": -70.9171,
+   "mode": "air",
+   "kind": "port"
   }
  ],
  "map_note": "Positions approximate; ice and weather set the ship's course. Not a navigational chart",

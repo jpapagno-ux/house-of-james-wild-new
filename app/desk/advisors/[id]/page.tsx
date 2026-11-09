@@ -10,7 +10,8 @@ import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import staysData from "@/lib/content/stays.json";
 import { ADV_DOC_LABEL, ENTITY_TYPES, TIER_NAME, feeText, fileSteps, readyToActivate, type AdvDocKind, type FileState, type Plan } from "@/lib/platform/advisor-file";
 import { niceDate } from "@/lib/platform/labels";
-import { Activate, DecideDna, DecideDocument, SetPlan } from "@/components/advisor/HouseForms";
+import { Activate, DecideDna, DecideDocument, InviteAdvisor, SetPlan, SetPortrait, type InvitationRow } from "@/components/advisor/HouseForms";
+import { mailLive } from "@/lib/platform/advisor-alerts";
 import { DataList, Section, StatusPill, TextLink } from "@/components/platform/ui";
 
 export const metadata = { title: "Advisor file" };
@@ -24,9 +25,9 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
   const { id } = await params;
   if (!isUuid(id)) notFound();
   const desk = await requireHouse(`/desk/advisors/${id}`);
-  const { data: a } = await desk.sb.from("advisors").select("id, adv_number, slug, display_name, status, user_id, house_advisor, program_fee_minor, fee_currency, fee_period, payment_terms, activated_at").eq("id", id).maybeSingle();
+  const { data: a } = await desk.sb.from("advisors").select("id, adv_number, slug, display_name, status, user_id, house_advisor, program_fee_minor, fee_currency, fee_period, payment_terms, activated_at, portrait_public_id").eq("id", id).maybeSingle();
   if (!a) notFound();
-  const [{ data: st, error: stErr }, { data: plan }, { data: det }, docs, sigs, pubDna, dnaProps] = await Promise.all([
+  const [{ data: st, error: stErr }, { data: plan }, { data: det }, docs, sigs, pubDna, dnaProps, { data: invs }] = await Promise.all([
     desk.sb.rpc("advisor_file_state", { p_advisor: id }),
     desk.sb.rpc("advisor_plan_for", { p_advisor: id }),
     desk.sb.from("advisor_details").select("*").eq("advisor_id", id).maybeSingle(),
@@ -34,7 +35,10 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
     signatures(desk.sb, id),
     publishedDna(desk.sb, id),
     dnaProposals(desk.sb, id),
+    desk.sb.from("advisor_invitations").select("id, email, emailed, expires_at, accepted_at, revoked_at, created_at").eq("advisor_id", id).order("created_at", { ascending: false }).limit(5),
   ]);
+  const openInv = ((invs ?? []) as InvitationRow[]).find((x) => !x.accepted_at && !x.revoked_at && x.expires_at > new Date().toISOString()) ?? null;
+  const portraitDoc = docs.find((d) => d.kind === "portrait" && d.status !== "returned") ?? null;
   if (stErr) notFound();
   const s = st as FileState, p = plan as Plan | null;
   const ready = readyToActivate(s);
@@ -52,6 +56,13 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
         {a.status === "active" ? `Active since ${niceDate(a.activated_at)}` : a.status === "invited" ? (a.user_id ? "Onboarding" : "Invited, not signed in yet") : a.status}
         {a.house_advisor ? " · House advisor" : ""}
       </p>
+
+      {!a.user_id && (a.status === "invited" || a.status === "active") && (
+        <Section title="Invitation">
+          <p className="text-[15px] mb-4">{a.display_name} has no desk access yet. Invite them with the address they will sign in with. Nothing is sent until you press a button.</p>
+          <InviteAdvisor id={a.id} open={openInv} mailLive={mailLive()} />
+        </Section>
+      )}
 
       <ol className="mt-6 flex flex-wrap gap-2">
         {fileSteps(s).map((x) => <li key={x.key}><StatusPill label={`${x.title.replace("The Independent Marketing Agreement", "Agreement")}: ${x.waiting ? "to review" : x.done ? "done" : "to do"}`} tone={x.waiting ? "progress" : x.done ? "good" : "attention"} /></li>)}
@@ -114,11 +125,19 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
               ["Marks", shownDna.marks.map((m) => `${label(m.ledgerId)}: ${m.mark}${m.when ? `, ${m.when}` : ""}`).join("; ") || "None"],
               ["Languages", shownDna.languages.join(", ") || "Not given"], ["Specialties", shownDna.specialties.join(", ") || "Not given"],
               ["Their line", shownDna.match_note ?? "None"], ["Taking clients", shownDna.availability],
+              ["Title on the card", shownDna.title ?? "Not given"], ["Introduction", shownDna.intro ?? "Not given"],
+              ["Biography", shownDna.bio ? <span key="bio" className="whitespace-pre-line">{shownDna.bio}</span> : "Not given"],
             ]} />
             {waitingDna && <div className="mt-4"><DecideDna id={waitingDna.id} /></div>}
           </>
         ) : <p className="text-[15px] ledger-muted">Not sent yet.</p>}
         {dnaProps.find((x) => x.status === "returned" && !waitingDna) && <p className="mt-2 text-[14px] ledger-muted">Last returned: {dnaProps.find((x) => x.status === "returned")?.house_note}</p>}
+      </Section>
+
+      <Section title="Portrait">
+        <p className="text-[15px] mb-3">{portraitDoc ? `The advisor uploaded a portrait (${portraitDoc.status === "accepted" ? "accepted" : "to review above"}).` : "No portrait uploaded yet."} {a.portrait_public_id ? `On the card: ${a.portrait_public_id}.` : "The card shows their initials until a portrait is recorded here."}</p>
+        <p className="text-[13.5px] ledger-muted mb-3">Accept the portrait in Documents, place it in the house Cloudinary library at jwco/advisors/{a.slug}/portrait (rights in its metadata), then record it here. Claude can place it for you on request.</p>
+        <SetPortrait id={a.id} slug={a.slug} current={a.portrait_public_id} />
       </Section>
 
       <Section title="Agreement">

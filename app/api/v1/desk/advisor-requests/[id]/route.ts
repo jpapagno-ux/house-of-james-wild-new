@@ -2,6 +2,7 @@ import { withHouse } from "@/lib/platform/membership";
 import { error, invalid, jsonBody, ok, rpcError } from "@/lib/platform/api";
 import { isUuid } from "@/lib/platform/validate";
 import { priceMinor } from "@/lib/platform/advisor-requests";
+import { advisorAlert, noticeEmail } from "@/lib/platform/advisor-alerts";
 
 // POST /api/v1/desk/advisor-requests/:id { status, price, currency, holdUntil, validUntil, note }: the house
 // moves an advisor's quote request on. The database checks the role (house operations, with the code) and
@@ -23,5 +24,7 @@ export const POST = withHouse(async ({ req, desk, requestId, params }) => {
     p_id: params.id, p_status: status, p_price_minor: price, p_currency: currency, p_hold_until: date("holdUntil"), p_valid_until: date("validUntil"), p_note: note || null,
   });
   if (e) return rpcError(e, requestId);
+  const { data: r } = await desk.sb.from("advisor_requests").select("advisor_id, ref, stay_name").eq("id", params.id).maybeSingle();
+  if (r) await advisorAlert(await noticeEmail(desk.sb, r.advisor_id), { kind: "request_moved", ref: r.ref, stay: r.stay_name, status: status as "pricing" | "held" | "confirmed" | "declined" }, req, `/advisor/requests/${params.id}`);
   return ok({ status }, requestId);
 });

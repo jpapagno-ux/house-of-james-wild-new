@@ -4,6 +4,7 @@ import { error } from "@/lib/booking-live/api";
 import { parseRequest } from "@/lib/platform/advisor-requests";
 import { estimateFor } from "@/lib/platform/advisor-estimate";
 import { STAYS } from "@/lib/content/stays";
+import { houseAlert } from "@/lib/platform/advisor-alerts";
 
 // POST /api/v1/advisor/requests: an active advisor asks the house to price and hold a stay for a client.
 // The stay, its Ledger ID and the estimate come from the site's own records, never from the browser.
@@ -21,5 +22,7 @@ export const POST = withAdvisor(async ({ req, a, requestId }) => {
     p: { ...p.value, stay_slug: stay.slug, ledger_id: stay.ledgerId, stay_name: stay.name, estimate: est ?? null },
   });
   if (e) return rpcError(e, requestId);
+  const made = (data ?? {}) as { id?: string; ref?: string };
+  if (made.id) await houseAlert({ kind: "request_sent", advisor: a.advisor.display_name, ref: made.ref ?? "New request", stay: stay.name, dates: `${p.value.arrival} to ${p.value.departure}` }, req, `/desk/advisor-requests/${made.id}`);
   return ok(data, requestId, 201);
 });

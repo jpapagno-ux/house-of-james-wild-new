@@ -19,8 +19,16 @@ export default async function AdvisorDna() {
   const latest = props[0];
   const waiting = latest?.status === "submitted";
   const returned = latest?.status === "returned" ? latest : null;
-  const library = ADVISORS.find((x) => x.slug === a.advisor.slug && !x.sample)?.dna;
-  const initial: DnaInput = latest && latest.status !== "approved" ? latest.payload : pub ? { ...pub } : fromLibrary(library);
+  const card = ADVISORS.find((x) => x.slug === a.advisor.slug && !x.sample);
+  const library = card?.dna;
+  const base: DnaInput = latest && latest.status !== "approved" ? latest.payload : pub ? { ...pub } : fromLibrary(library);
+  // The card's words start from what the website shows today, so nobody writes their biography from nothing.
+  const initial: DnaInput = {
+    ...base,
+    title: base.title ?? (card?.roleApproved ? card.role : null),
+    intro: base.intro ?? card?.intro ?? null,
+    bio: base.bio ?? (card?.bio.length ? card.bio.join("\n\n") : null),
+  };
   const options: DnaOptions = {
     pathways: PATHWAY_LIST.map((p) => ({ id: p.id, name: p.name, setting: p.setting })),
     countries: [...DESTINATION_COUNTRIES].sort((x, y) => x.regionName.localeCompare(y.regionName) || x.name.localeCompare(y.name)).map((c) => ({ slug: c.slug, name: c.name, region: c.region, regionName: c.regionName })),

@@ -17,8 +17,22 @@ export type DnaMark = { ledgerId: string; mark: (typeof DNA_MARKS)[number]; when
 export type DnaInput = {
   pathways: string[]; volumes: string[]; party_types: string[]; countries: string[]; languages: string[]; specialties: string[];
   availability: "open" | "waitlist" | "closed"; match_note: string | null; marks: DnaMark[];
+  // Step 7: the public card's words, reviewed with the DNA.
+  title?: string | null; intro?: string | null; bio?: string | null;
 };
-export const EMPTY_DNA: DnaInput = { pathways: [], volumes: [], party_types: [], countries: [], languages: [], specialties: [], availability: "open", match_note: null, marks: [] };
+export const EMPTY_DNA: DnaInput = { pathways: [], volumes: [], party_types: [], countries: [], languages: [], specialties: [], availability: "open", match_note: null, marks: [], title: null, intro: null, bio: null };
+
+/** The card's words made tidy: long dashes become commas (the house writes without them), spaces collapse. */
+export const undash = (s: string) => s.replace(/\s*[\u2013\u2014]\s*/g, ", ");
+export function parseProfile(f: Record<string, unknown>): Result<{ title: string | null; intro: string | null; bio: string | null }> {
+  const line = (v: unknown) => (typeof v === "string" && v.trim() ? undash(v).replace(/\s+/g, " ").trim() : null);
+  const title = line(f.title), intro = line(f.intro);
+  const bio = typeof f.bio === "string" && f.bio.trim() ? undash(f.bio).replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim() : null;
+  if (title && title.length > 80) return { ok: false, message: "Keep your title under 80 characters", field: "title" };
+  if (intro && intro.length > 240) return { ok: false, message: "Keep your introduction under 240 characters", field: "intro" };
+  if (bio && bio.length > 1500) return { ok: false, message: "Keep your biography under 1,500 characters", field: "bio" };
+  return { ok: true, value: { title, intro, bio } };
+}
 
 /** The Library's copy (lib/content/advisors-library.json) as a starting point for the form. */
 export type LibraryDna = { pathways: string[]; volumes: string[]; partyTypes: string[]; countries: string[]; languages: string[]; specialties: string[]; availability: string; matchNote: string | null; marks: { ledgerId: string; mark: string; when: string | null; note: string | null }[] };
@@ -63,7 +77,9 @@ export function parseDna(f: Record<string, unknown>): Result<DnaInput> {
     if (!marks.some((y) => y.ledgerId === ledgerId)) marks.push({ ledgerId, mark: mark as DnaMark["mark"], when: when || null, note: note || null });
   }
   if (marks.length > 80) return { ok: false, message: "Up to 80 marks", field: "marks" };
-  return { ok: true, value: { pathways, volumes, party_types, countries, languages, specialties, availability, match_note, marks } };
+  const prof = parseProfile(f);
+  if (!prof.ok) return prof;
+  return { ok: true, value: { pathways, volumes, party_types, countries, languages, specialties, availability, match_note, marks, ...prof.value } };
 }
 
 /** What changed between the published DNA and a proposal, for the house's review. */
@@ -79,6 +95,9 @@ export function dnaChanges(before: DnaInput | null, after: DnaInput): { field: s
   list("Marks", b.marks.map((m) => `${m.ledgerId} ${m.mark}`), after.marks.map((m) => `${m.ledgerId} ${m.mark}`));
   if (b.availability !== after.availability) out.push({ field: "Taking clients", added: [], removed: [], now: after.availability });
   if ((b.match_note ?? "") !== (after.match_note ?? "")) out.push({ field: "Their line", added: [], removed: [], now: after.match_note ?? "(none)" });
+  if ((b.title ?? "") !== (after.title ?? "")) out.push({ field: "Title on the card", added: [], removed: [], now: after.title ?? "(none)" });
+  if ((b.intro ?? "") !== (after.intro ?? "")) out.push({ field: "Introduction", added: [], removed: [], now: after.intro ?? "(none)" });
+  if ((b.bio ?? "") !== (after.bio ?? "")) out.push({ field: "Biography", added: [], removed: [], now: after.bio ?? "(none)" });
   return out;
 }
 

@@ -293,8 +293,28 @@ function withDna(a: Advisor): Advisor {
   const { slug: _s, ledgerId: _l, ...dna } = d;
   return { ...a, dna, line: a.line ?? dna.matchNote ?? null };
 }
+// Step 7 (James, 8 Nov 2026): the advisor's own title, introduction, biography and portrait, approved on the
+// desk with their DNA, replace the hand-written card's; an advisor who exists only on the desk gets a card here.
+type DeskCard = DeskDna & { name?: string | null; title?: string | null; intro?: string | null; bio?: string | null; portrait?: string | null };
+const DESK_CARDS = (deskDna as { advisors: DeskCard[] }).advisors.filter((d) => !d.hidden);
+const portraitUrl = (publicId: string) => `https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_fill,g_face,w_480,h_600/${publicId}`;
+function withDeskProfile(a: Advisor): Advisor {
+  const d = DESK_CARDS.find((x) => x.slug === a.slug);
+  if (!d || a.sample) return a;
+  return {
+    ...a,
+    role: d.title ?? a.role, roleApproved: d.title ? true : a.roleApproved,
+    intro: d.intro ?? a.intro,
+    bio: d.bio ? d.bio.split(/\n\s*\n/).map((x) => x.trim()).filter(Boolean) : a.bio,
+    portrait: d.portrait ? { url: portraitUrl(d.portrait), alt: `Portrait of ${a.name}, ${d.title ?? "travel advisor"} at James Wild & Co` } : a.portrait,
+  };
+}
+const deskOnly: Advisor[] = DESK_CARDS.filter((d) => d.name && !CARDS.some((c) => c.slug === d.slug)).map((d) => ({
+  slug: d.slug, ledgerId: d.ledgerId, name: d.name!, firstName: d.name!.split(" ")[0], role: "Travel Advisor", roleApproved: false,
+  portrait: null, intro: null, bio: [], specialties: d.specialties ?? [], traveled: [], profileHref: `/advisors/${d.slug}`,
+}));
 /** Every advisor card on file, stand-ins included (`sample: true`: the invented advisors in advisor-samples.ts). */
-export const ALL_ADVISORS: Advisor[] = CARDS.map(withDna);
+export const ALL_ADVISORS: Advisor[] = [...CARDS, ...deskOnly].map(withDna).map(withDeskProfile);
 /** Stand-ins never render on the public site (James, 3 Nov 2026: no invented people or facts). They stay in the data
  *  and show only on a deployment that sets NEXT_PUBLIC_SHOW_STAND_INS=true (a preview, to test a layout). */
 export const SHOW_STAND_INS = process.env.NEXT_PUBLIC_SHOW_STAND_INS === "true";

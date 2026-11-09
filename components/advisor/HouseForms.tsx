@@ -125,3 +125,100 @@ export function DecideDna({ id }: { id: string }) {
     </div>
   );
 }
+
+// ===== Step 7: add an advisor, invite them, record their portrait
+export function AddAdvisor() {
+  const router = useRouter();
+  const [open, setOpen] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<Msg>(null);
+  async function send(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget, f = new FormData(form);
+    setBusy(true); setMsg(null);
+    const r = await api<{ id: string }>("POST", "/api/v1/desk/advisors", { name: f.get("name"), house: f.get("house") === "on" });
+    setBusy(false);
+    if (!r.ok) { setMsg({ ok: false, text: r.message }); return; }
+    router.push(`/desk/advisors/${r.data.id}`);
+  }
+  if (!open) return <button type="button" onClick={() => setOpen(true)} className="ledger-btn">Add an advisor</button>;
+  return (
+    <form onSubmit={send} className="bg-white border ledger-border p-5 grid gap-3 max-w-xl">
+      <label className={lab}>Full name, as it should appear on the card<input name="name" required minLength={3} maxLength={120} className={input} /></label>
+      <label className="flex items-center gap-2 text-[14px]"><input type="checkbox" name="house" className="accent-[#2E2B28]" /> A house advisor (family or staff of James Wild &amp; Co)</label>
+      <p className="text-[13px] ledger-muted">The desk gives them an ADV number. Nothing is sent until you invite them on the next screen.</p>
+      <div className="flex gap-3"><button type="submit" disabled={busy} className="ledger-btn ledger-btn--solid">{busy ? "Adding…" : "Add the advisor"}</button>
+        <button type="button" onClick={() => setOpen(false)} className="ledger-btn-ghost">Cancel</button></div>
+      <Note m={msg} />
+    </form>
+  );
+}
+
+export type InvitationRow = { id: string; email: string; emailed: boolean; expires_at: string; accepted_at: string | null; revoked_at: string | null; created_at: string };
+export function InviteAdvisor({ id, open, mailLive }: { id: string; open: InvitationRow | null; mailLive: boolean }) {
+  const router = useRouter();
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<Msg>(null);
+  const [link, setLink] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
+  async function send(e: React.FormEvent<HTMLFormElement>, email: boolean) {
+    e.preventDefault();
+    const form = e.currentTarget, f = new FormData(form);
+    setBusy(true); setMsg(null); setLink(null);
+    const r = await api<{ link: string; emailed: boolean }>("POST", `/api/v1/desk/advisors/${id}/invite`, { email: f.get("email"), send: email });
+    setBusy(false);
+    if (!r.ok) { setMsg({ ok: false, text: r.message }); return; }
+    setLink(r.data.link);
+    setMsg({ ok: true, text: r.data.emailed ? "Emailed. The link below is the same one, in case they ask." : email ? "Email is not switched on yet, so nothing was sent. Copy the link below and send it yourself." : "Ready. Copy the link below and send it yourself." });
+    router.refresh();
+  }
+  async function withdraw() {
+    if (!open) return;
+    setBusy(true); setMsg(null);
+    const r = await api("DELETE", `/api/v1/desk/advisor-invitations/${open.id}`);
+    setBusy(false);
+    if (!r.ok) { setMsg({ ok: false, text: r.message }); return; }
+    router.refresh();
+  }
+  return (
+    <div className="grid gap-4 max-w-xl">
+      {open && <div className="text-[15px]">Invited <span className="font-medium">{open.email}</span> on {open.created_at.slice(0, 10)}{open.emailed ? " by email" : " (link passed on by hand)"}; the link expires {open.expires_at.slice(0, 10)}.
+        <button type="button" disabled={busy} onClick={withdraw} className="ml-3 text-[13px] underline underline-offset-2 ledger-muted">Withdraw it</button></div>}
+      <form onSubmit={(e) => send(e, (e.nativeEvent as SubmitEvent).submitter?.getAttribute("value") === "email")} className="grid gap-3">
+        <label className={lab}>{open ? "Send a new invitation (replaces the one above)" : "Their email address (they sign in with it)"}<input name="email" type="email" required defaultValue={open?.email ?? ""} className={input} /></label>
+        <div className="flex flex-wrap gap-3">
+          <button type="submit" value="email" disabled={busy} className="ledger-btn ledger-btn--solid">{busy ? "Working…" : "Email the invitation"}</button>
+          <button type="submit" value="link" disabled={busy} className="ledger-btn">Make a link only</button>
+        </div>
+        {!mailLive && <p className="text-[13px] ledger-muted">Email from the desk is not switched on yet: you will get a link to send yourself.</p>}
+      </form>
+      <Note m={msg} />
+      {link && <div className="grid gap-2"><code className="block bg-[#F4F2EF] border ledger-border px-3 py-2 text-[12.5px] break-all">{link}</code>
+        <button type="button" onClick={async () => { await navigator.clipboard.writeText(link); setCopied(true); }} className="ledger-btn justify-self-start">{copied ? "Copied" : "Copy the link"}</button>
+        <p className="text-[13px] ledger-muted">Shown once. It works once, only for that address, for 14 days.</p></div>}
+    </div>
+  );
+}
+
+export function SetPortrait({ id, slug, current }: { id: string; slug: string; current: string | null }) {
+  const router = useRouter();
+  const [busy, setBusy] = useState(false);
+  const [msg, setMsg] = useState<Msg>(null);
+  async function send(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget, f = new FormData(form);
+    setBusy(true); setMsg(null);
+    const r = await api("POST", `/api/v1/desk/advisors/${id}/portrait`, { publicId: f.get("publicId") });
+    setBusy(false);
+    if (!r.ok) { setMsg({ ok: false, text: r.message }); return; }
+    setMsg({ ok: true, text: "Saved. The card shows it after the next rebuild." });
+    router.refresh();
+  }
+  return (
+    <form onSubmit={send} className="grid gap-3 max-w-xl">
+      <label className={lab}>Cloudinary public ID in the house library<input name="publicId" defaultValue={current ?? ""} placeholder={`jwco/advisors/${slug}/portrait`} className={input} /></label>
+      <button type="submit" disabled={busy} className="ledger-btn justify-self-start">{busy ? "Saving…" : "Save the portrait"}</button>
+      <Note m={msg} />
+    </form>
+  );
+}

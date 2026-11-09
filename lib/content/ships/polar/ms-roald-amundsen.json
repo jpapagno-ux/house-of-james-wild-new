@@ -1,0 +1,248 @@
+{
+ "slug": "ms-roald-amundsen",
+ "name": "MS Roald Amundsen",
+ "brandLine": "HX Expeditions",
+ "operator": "HX Expeditions",
+ "type": "expedition ship",
+ "waters": "Antarctic waters",
+ "country": "Argentina and Antarctica",
+ "status": "sailing",
+ "seo": {
+  "title": "MS Roald Amundsen: HX's Hybrid Expedition Ship in Antarctica",
+  "description": "MS Roald Amundsen, HX's hybrid powered expedition ship built in 2019 for polar waters: 490 guests, every cabin outside, the Science Center and suites with hot tubs. James sailed her in Antarctica in 2020.",
+  "keywords": [
+   "MS Roald Amundsen",
+   "HX Expeditions ship",
+   "Roald Amundsen Antarctica",
+   "hybrid expedition ship",
+   "Hurtigruten Roald Amundsen"
+  ]
+ },
+ "tagline": "The hybrid expedition ship James sailed to Antarctica in 2020.",
+ "answer": "MS Roald Amundsen is HX Expeditions' hybrid powered expedition ship, built in 2019 at Kleven Yards in Norway for polar waters. She carries up to 490 guests; every cabin is an outside cabin, half have private balconies, and the aft suites have outdoor hot tubs. HX says electric propulsion cuts her fuel use and CO2 emissions by 20 percent.",
+ "facts": [
+  [
+   "Guests",
+   "490"
+  ],
+  [
+   "Built",
+   "2019, Kleven Yards, Norway"
+  ],
+  [
+   "Gross tonnage",
+   "20,889"
+  ],
+  [
+   "Length",
+   "459.3 ft"
+  ],
+  [
+   "Beam",
+   "77.4 ft"
+  ],
+  [
+   "Speed",
+   "15 knots"
+  ],
+  [
+   "Power",
+   "Hybrid, with electric propulsion"
+  ]
+ ],
+ "overview": [
+  "HX built MS Roald Amundsen for polar waters and named her after the Norwegian who first reached the South Pole. She is the first of HX's two hybrid ships; her sister MS Fridtjof Nansen followed in 2020.",
+  "Inside, Scandinavian granite, oak, birch and wool. The Science Center is the heart of the ship, with lectures, a small library and workshops in photography and biology, and the Expedition Team. Three restaurants: Aune, where all meals are included, the informal Fredheim, and Lindstrøm, à la carte and included for suite guests.",
+  "A two-level indoor and outdoor Observation Deck, an infinity pool and hot tubs, a sauna, spa and fitness room."
+ ],
+ "why": [
+  "James sailed her himself: the Antarctic Circle voyage in February and March 2020, calling at Ukraine's Vernadsky research station. The photographs on this page are his, from that voyage.",
+  "She sails the Drake Passage by sea, so her voyages reach further south than a flight allows: the Antarctic Circle Expedition attempts Marguerite Bay, south of 66 degrees.",
+  "HX's fare includes drinks with meals, gratuities, Wi-Fi and an expedition jacket, and flights between Buenos Aires and Ushuaia on her Antarctic voyages."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/kayak-under-expedition-ship-bow",
+  "alt": "Looking up from a sea kayak at the bow of the expedition ship, anchored among icebergs, Antarctic Peninsula, March 2020",
+  "credit": "James Papagno, February to March 2020"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/kayaks-beneath-sea-cliff",
+   "alt": "Red sea kayaks beneath a towering sea cliff, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/zodiac-between-giant-icebergs",
+   "alt": "A Zodiac between two massive icebergs, Antarctica",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/penguin-landing-misty-massif",
+   "alt": "A penguin above a landing party in red parkas, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/kayakers-snow-island",
+   "alt": "Paddlers resting in front of a snow-streaked island, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/iceberg-arch",
+   "alt": "An iceberg arch, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/sunset-beside-ice-cliff",
+   "alt": "Late sun beside an ice cliff, Antarctica",
+   "credit": "James Papagno, February to March 2020"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "MA XL Suite with balcony",
+   "count": null,
+   "size": "495 to 517 sq ft",
+   "beds": "Double or twin",
+   "deck": "Upper deck, corner",
+   "features": [
+    "Private balcony",
+    "Separate seating with sofa bed",
+    "Bath and shower",
+    "Walk-in wardrobe"
+   ]
+  },
+  {
+   "type": "MB XL Suite",
+   "count": null,
+   "size": "474 sq ft",
+   "beds": "Double or twin, plus a pull-down double",
+   "deck": "Corner",
+   "features": [
+    "Large windows",
+    "Walk-in wardrobe",
+    "Bath and shower"
+   ]
+  },
+  {
+   "type": "MD Large Suite with balcony",
+   "count": null,
+   "size": "377 sq ft",
+   "beds": "Double or twin, two fold-down doubles",
+   "deck": "Upper deck, corner",
+   "features": [
+    "Private balcony",
+    "Bath and shower"
+   ]
+  },
+  {
+   "type": "MC Corner Suite with balcony",
+   "count": null,
+   "size": "215 to 323 sq ft",
+   "beds": "Double or twin",
+   "deck": "Upper deck, corner",
+   "features": [
+    "Private balcony with hot tub"
+   ]
+  },
+  {
+   "type": "ME Suite with balcony",
+   "count": null,
+   "size": "237 to 301 sq ft",
+   "beds": "Double or twin",
+   "deck": "Upper deck",
+   "features": [
+    "Private balcony",
+    "Sofa bed",
+    "Most with walk-in wardrobes"
+   ]
+  },
+  {
+   "type": "MF Corner Suite",
+   "count": null,
+   "size": "237 sq ft",
+   "beds": "Double or twin",
+   "deck": "Upper deck, corner",
+   "features": [
+    "Large windows",
+    "Chaise longue"
+   ]
+  },
+  {
+   "type": "Arctic Superior and Polar Outside cabins",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Every cabin is an outside cabin",
+    "Sizes and plans by request"
+   ]
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [],
+ "departures": [],
+ "pricesNote": "From fares per person, two sharing, in US dollars, as HX shows them, including its current offers. Fares by cabin load in HX's booking tool; James confirms yours.",
+ "fareBasis": "per person, two sharing, in USD, as HX shows them",
+ "inclusions": [
+  "All meals in Aune and Fredheim, with drinks",
+  "Gratuities",
+  "Wi-Fi (no streaming)",
+  "An expedition jacket to keep",
+  "Landings, lectures and the Science Center",
+  "Suites: all meals in Lindstrøm, daily laundry, a Champagne welcome, and an afternoon at Arakur Resort & Spa before boarding in Ushuaia"
+ ],
+ "exclusions": [
+  "International flights",
+  "Optional kayaking and camping",
+  "Lindstrøm for cabin guests (a cover charge per meal)",
+  "Spa treatments"
+ ],
+ "children": "HX publishes no minimum age on her ship page; James confirms the rules for your family.",
+ "faqs": [
+  [
+   "Has James sailed MS Roald Amundsen?",
+   "Yes. He sailed her on the Antarctic Circle voyage in February and March 2020, calling at Ukraine's Vernadsky research station. The photographs on this page are his."
+  ],
+  [
+   "How many guests does she carry?",
+   "Up to 490, as HX publishes. Every cabin is an outside cabin and half have private balconies."
+  ],
+  [
+   "What makes her hybrid?",
+   "Electric propulsion with batteries; HX says it cuts fuel use and CO2 emissions by 20 percent."
+  ],
+  [
+   "Which voyages does she sail in Antarctica?",
+   "Among others, HX's Highlights of Antarctica, Iconic Antarctica and the Antarctic Circle Expedition, from Buenos Aires via Ushuaia. The Antarctic Circle Expedition is filed here with its dates and fares."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "First-time expedition travellers",
+   "line": "A big ship's comforts, with the Science Center and an Expedition Team aboard."
+  },
+  {
+   "who": "Paddlers",
+   "line": "Sea kayaking among the ice, as James did, bookable on board."
+  },
+  {
+   "who": "Suite travellers",
+   "line": "Balconies, hot tubs and Lindstrøm included."
+  }
+ ],
+ "sources": [
+  "https://www.travelhx.com/en-us/ships/roald-amundsen/",
+  "https://www.travelhx.com/en-us/cruises/antarctic-circle-expedition/"
+ ],
+ "film": null,
+ "proofLine": "Founder sailed · 2020 · James sailed MS Roald Amundsen to the Antarctic Circle in February and March 2020",
+ "glance": {
+  "route": "From Buenos Aires via Ushuaia",
+  "guests": "Up to 490",
+  "ages": "Ask us"
+ },
+ "rateBasis": "per-cruise",
+ "photoCredit": "James Papagno, February to March 2020",
+ "checked": "2026-11-09"
+}

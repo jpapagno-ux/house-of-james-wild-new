@@ -56,7 +56,7 @@ export function EitherSideBand({ data, ship, voyage }: { data: Data; ship: strin
   return (
     <section id="either-side" aria-labelledby="either-side-h" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10">
       <SectionHead eyebrow="Either side of the voyage" title={`What Should You Add Before and After ${ship}?`} icon="sun"
-        intro={`The ship is the middle of the journey. Arrive in ${data.gateway} a night early, sail ${voyage}, then stay on in the islands: the house's stays for each step, every one from places James has stayed in, vetted or verified.`} />
+        intro={`The ship is the middle of the journey. Arrive in ${data.gateway} early, sail ${voyage}, then stay on: the house's own stays for each step, from its collection.`} />
 
       <ol className="relative mt-10 grid gap-8 md:grid-cols-3 md:gap-10">
         <span aria-hidden="true" className="hidden md:block absolute left-[22px] right-[calc(33%-22px)] top-[22px] border-t border-dashed ledger-rule" />
@@ -100,7 +100,7 @@ export function EitherSideBand({ data, ship, voyage }: { data: Data; ship: strin
           <div className="border ledger-border p-6 md:p-7 flex flex-col">
             <p className="flex items-center gap-2 ledger-eyebrow"><Glyph k="package" size={18} className="jw-glyph" />{op.by}&rsquo;s package</p>
             <h3 className="mt-2 ledger-display text-[24px] leading-snug">{op.name}</h3>
-            <p className="mt-1 text-[14px]"><span className="ledger-display text-[22px]">From {usd(op.from)}</span> <span className="ledger-muted">{op.basis}, {op.nights} nights aboard {op.ship} and ashore</span></p>
+            <p className="mt-1 text-[14px]"><span className="ledger-display text-[22px]">From {usd(op.from)}</span> <span className="ledger-muted">{op.basis}{op.nights ? `, ${op.nights} nights aboard ${op.ship} and ashore` : ""}</span></p>
             <p className="mt-2 text-[15px] leading-relaxed ledger-muted flex-1">{op.line}{opHotels.length ? <> Its hotels: {opHotels.map((h, i) => <span key={h.slug}>{i ? " and " : ""}{isBuilt(`/stays/${h.slug}`) ? <Link href={`/stays/${h.slug}`} className="underline underline-offset-4 hover:text-crimson">{h.name}</Link> : h.name}</span>)}, or similar.</> : null}</p>
             <Link href={`/plan?trip=${encodeURIComponent(`${op.by} ${op.name}`)}`} className="mt-5 self-start inline-flex items-center min-h-[44px] ledger-btn-ghost">Ask James to book it</Link>
           </div>

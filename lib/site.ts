@@ -343,6 +343,9 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/partners/rascal-voyages", priority: 0.6, changeFrequency: "monthly" },
   { path: "/partners/silolona-sojourns", priority: 0.6, changeFrequency: "monthly" },
   { path: "/voyages/ships/magellan-explorer", priority: 0.7, changeFrequency: "monthly" },
+  // HX (James, 9 Nov 2026): the ship James sailed, and her Antarctic Circle Expedition.
+  { path: "/voyages/ships/ms-roald-amundsen", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/polar/hx-antarctic-circle-expedition", priority: 0.7, changeFrequency: "weekly" },
   { path: "/voyages/ships/magellan-discoverer", priority: 0.7, changeFrequency: "monthly" },
   // Polar Crossings and the Antarctica21 voyages, and the Antarctica21 partner page (James, 2 Nov 2026).
   { path: "/voyages/polar", priority: 0.8, changeFrequency: "weekly" },

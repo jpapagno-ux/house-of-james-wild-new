@@ -212,6 +212,12 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   // Polar Voyages (James, 2 Nov 2026): Antarctica21's ships, filed from antarctica21.com. Where the Wild Lives
   // first; Off the Map for the Polar Circle and South Georgia routes. The research also suggested Above It All
   // for the flown Drake, which is not used for voyages yet (Part 3), so it is left off.
+  // HX Expeditions (James, 9 Nov 2026): MS Roald Amundsen, the ship James sailed to the Antarctic Circle in February to
+  // March 2020 (his photographs, Ukraine's Vernadsky station). Filed from travelhx.com: 490 guests, hybrid powered, built
+  // 2019; kayaking and camping bookable on board. Where the Wild Lives first, Off the Map for the Antarctic Circle attempt.
+  { slug: "ms-roald-amundsen", name: "MS Roald Amundsen", operator: "HX Expeditions", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica"], country: ["Antarctica", "Argentina"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { childNote: "No minimum age on HX's ship page; ask us", activities: ["wildlife", "kayaking", "hiking"] } },
   { slug: "magellan-explorer", name: "Magellan Explorer", operator: "Antarctica21", kind: "expedition-ship", types: ["expedition"], waters: ["antarctica", "patagonia"], country: ["Antarctica", "Chile", "Argentina"],
     pathway: { primary: "PATH-04", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
     // antarctica21.com: 8 and over on air-cruises, 12 on sea voyages; Single Veranda Cabins with no supplement (85% or 100% in

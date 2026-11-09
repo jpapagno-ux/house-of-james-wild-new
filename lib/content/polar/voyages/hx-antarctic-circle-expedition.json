@@ -1,0 +1,336 @@
+{
+ "slug": "hx-antarctic-circle-expedition",
+ "name": "Antarctic Circle Expedition",
+ "operatorName": "Antarctic Circle Expedition Cruise",
+ "operator": "HX Expeditions",
+ "style": "sail-both",
+ "flight": "Flights between Buenos Aires and Ushuaia; the Drake Passage by sea both ways",
+ "route": "Buenos Aires and Ushuaia round trip",
+ "short": "Antarctic Circle",
+ "nights": 15,
+ "nightsText": "15 nights: one in Buenos Aires, then the voyage",
+ "days": 16,
+ "daysText": null,
+ "start": {
+  "place": "Buenos Aires, Argentina",
+  "airportOrPort": "Hotel night in Buenos Aires, then a flight to Ushuaia"
+ },
+ "end": {
+  "place": "Ushuaia, Argentina",
+  "airportOrPort": "Ushuaia, then the flight back to Buenos Aires"
+ },
+ "ships": [
+  "ms-roald-amundsen",
+  "ms-fridtjof-nansen"
+ ],
+ "guests": "Up to 490 guests on MS Roald Amundsen or MS Fridtjof Nansen, HX's two hybrid powered expedition ships",
+ "regions": [
+  "peninsula",
+  "polar-circle"
+ ],
+ "length": "long",
+ "monthChips": [
+  "dec",
+  "feb"
+ ],
+ "months": [
+  "December",
+  "January",
+  "February"
+ ],
+ "seo": {
+  "title": "HX Antarctic Circle Expedition: 16 Days on MS Roald Amundsen",
+  "description": "HX's 16-day Antarctic Circle Expedition from Buenos Aires: the Drake Passage by sea, then nine days on the Peninsula with an attempt south of the Antarctic Circle to Marguerite Bay. The voyage James sailed in 2020.",
+  "keywords": [
+   "HX Antarctic Circle Expedition",
+   "MS Roald Amundsen Antarctica",
+   "Antarctic Circle cruise",
+   "Marguerite Bay cruise",
+   "Hurtigruten Antarctica",
+   "HX Expeditions"
+  ]
+ },
+ "tagline": "South of 66 degrees, by sea: the voyage James sailed in 2020.",
+ "answer": "The Antarctic Circle Expedition is HX's 16-day voyage from Buenos Aires. After a night in the city and a flight to Ushuaia, MS Roald Amundsen or MS Fridtjof Nansen crosses the Drake Passage and spends Days 5 to 13 on the Antarctic Peninsula, attempting a route through the sea ice and below the Antarctic Circle to Marguerite Bay. Fares from US$12,814 per person, as HX publishes them, with flights between Buenos Aires and Ushuaia, drinks and gratuities included.",
+ "overview": [
+  "HX calls it an attempt, and means it: in the milder summer the sea ice can open a way south of the Antarctic Circle to Marguerite Bay, with islands and remote historical stations along the way. If ice or weather close the route, the captain adapts the voyage.",
+  "Days on the Peninsula bring landings by small expedition boat, ice cruising among the bergs and lectures in the onboard Science Center. Kayaking and a night camping on the snow can be added, priced separately and bookable on board.",
+  "James sailed this voyage aboard MS Roald Amundsen in February and March 2020, calling at Ukraine's Vernadsky research station as the world shut down behind the ship. Every photograph on this page is his."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/zodiac-between-giant-icebergs",
+  "alt": "A Zodiac full of guests in red parkas passes between two massive icebergs, Antarctica, March 2020",
+  "credit": "James Papagno, February to March 2020"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/zodiac-between-giant-icebergs",
+   "alt": "A Zodiac full of guests in red parkas passes between two massive icebergs, Antarctica, March 2020",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/kayaks-beneath-sea-cliff",
+   "alt": "Red sea kayaks beneath a towering sea cliff toward a glacier and a blue iceberg, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/penguin-landing-misty-massif",
+   "alt": "A penguin on smooth rock above a landing party in red parkas, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/landing-snow-algae-peaks",
+   "alt": "Guests walking across pink snow algae beneath glaciated peaks, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/iceberg-arch",
+   "alt": "An iceberg with a sculpted arch among brash ice, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/golden-light-glaciated-peak",
+   "alt": "Evening light turning a glaciated peak gold above calm water, Antarctic Peninsula",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/vernadsky-postcard-front",
+   "alt": "The postcard from Ukraine's Vernadsky research station, Argentine Islands, March 2020",
+   "credit": "James Papagno, February to March 2020"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/tabular-iceberg-violet-sunset",
+   "alt": "A tabular iceberg along the horizon under a violet and orange sunset, Antarctica",
+   "credit": "James Papagno, February to March 2020"
+  }
+ ],
+ "itinerary": [
+  {
+   "day": 1,
+   "title": "The beat of Buenos Aires",
+   "place": "Buenos Aires",
+   "lat": -34.6037,
+   "lng": -58.3816,
+   "summary": "A night in Buenos Aires before the expedition, with breakfast, in a hotel HX arranges. Arrive a few days early to see more of the city."
+  },
+  {
+   "day": 2,
+   "title": "Flight to Ushuaia, then board",
+   "place": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "An early flight south to Ushuaia, Tierra del Fuego, to board the ship. Suite guests spend the afternoon before boarding at Arakur Resort & Spa."
+  },
+  {
+   "day": 3,
+   "title": "Across the Drake Passage",
+   "place": "Drake Passage",
+   "lat": -58.6,
+   "lng": -65.2,
+   "label": "Days 3 to 4",
+   "summary": "Two days at sea with the Expedition Team: lectures in the Science Center on Antarctica's history, science and safety, and the Citizen Science projects you can join."
+  },
+  {
+   "day": 5,
+   "title": "The Antarctic Peninsula",
+   "place": "Antarctic Peninsula",
+   "lat": -64.85,
+   "lng": -63.55,
+   "label": "Days 5 to 13",
+   "indicative": true,
+   "summary": "Landings by small expedition boat, ice cruising among glaciers and bergs, penguins, seals and whales. The captain chooses the landing sites day by day."
+  },
+  {
+   "day": 9,
+   "title": "South of the Antarctic Circle",
+   "place": "Marguerite Bay",
+   "lat": -68.3,
+   "lng": -68.2,
+   "label": "Days 5 to 13",
+   "indicative": true,
+   "summary": "An attempt through the sea ice, south of the Antarctic Circle to Marguerite Bay, looking for Adélie penguins and visiting remote historical stations along the way, as ice allows."
+  },
+  {
+   "day": 14,
+   "title": "Back across the Drake",
+   "place": "Drake Passage",
+   "lat": -58.6,
+   "lng": -66.4,
+   "label": "Days 14 to 15",
+   "summary": "Two days at sea north to Ushuaia: more time in the Science Center, the spa and the on-deck hot tubs."
+  },
+  {
+   "day": 16,
+   "title": "Ushuaia, then Buenos Aires",
+   "place": "Ushuaia",
+   "lat": -54.8019,
+   "lng": -68.303,
+   "summary": "Leave the ship in Ushuaia and fly back to Buenos Aires, or stay on with HX's post programmes."
+  }
+ ],
+ "itineraryNote": "HX publishes Days 5 to 13 as one block on the Peninsula and calls the route south of the Antarctic Circle an attempt, depending on ice. The order of the two stops in that block is indicative.",
+ "fromByShip": {
+  "ms-roald-amundsen": 12814,
+  "ms-fridtjof-nansen": 15926
+ },
+ "departures": [],
+ "sailings": [
+  {
+   "date": "2026-12-26",
+   "dateTo": "2027-01-10",
+   "ship": "ms-roald-amundsen",
+   "prices": {
+    "From": 16011
+   },
+   "status": null
+  },
+  {
+   "date": "2027-02-18",
+   "dateTo": "2027-03-05",
+   "ship": "ms-roald-amundsen",
+   "prices": {
+    "From": 20741
+   },
+   "status": null
+  },
+  {
+   "date": "2028-01-29",
+   "dateTo": "2028-02-13",
+   "ship": "ms-roald-amundsen",
+   "prices": {
+    "From": 16519
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-11",
+   "dateTo": "2028-02-26",
+   "ship": "ms-fridtjof-nansen",
+   "prices": {
+    "From": 15926
+   },
+   "status": null
+  },
+  {
+   "date": "2028-02-12",
+   "dateTo": "2028-02-27",
+   "ship": "ms-roald-amundsen",
+   "prices": {
+    "From": 12814
+   },
+   "status": null
+  },
+  {
+   "date": "2029-01-09",
+   "dateTo": "2029-01-24",
+   "ship": "ms-roald-amundsen",
+   "prices": {
+    "From": 17138
+   },
+   "status": null
+  },
+  {
+   "date": "2029-02-12",
+   "dateTo": "2029-02-27",
+   "ship": "ms-roald-amundsen",
+   "prices": {
+    "From": 17138
+   },
+   "status": null
+  }
+ ],
+ "inclusions": [
+  "A night in Buenos Aires before the voyage, with breakfast, and the transfer to the airport",
+  "Economy flights between Buenos Aires and Ushuaia",
+  "All meals aboard, with coffee, tea, soft drinks, wine, beer and spirits",
+  "Gratuities",
+  "A wind and waterproof expedition jacket to keep",
+  "Landings by small expedition boat with the Expedition Team, lectures and the Science Center",
+  "Sauna, hot tubs, pool and fitness room",
+  "Wi-Fi (no streaming)",
+  "Professional photographs from the onboard photographer",
+  "Suites: an afternoon at Arakur Resort & Spa before boarding, all meals in Lindstrøm, daily laundry and a Champagne welcome"
+ ],
+ "exclusions": [
+  "International flights to Buenos Aires",
+  "Optional kayaking and camping, bookable on board",
+  "Pre and post programmes"
+ ],
+ "optional": [
+  {
+   "name": "Discovery Kayak",
+   "note": "US$148, bookable on board only."
+  },
+  {
+   "name": "Guided Sea Kayaking Adventure",
+   "note": "US$229, bookable on board only."
+  },
+  {
+   "name": "Camping on the snow",
+   "note": "US$402 in a bivvy bag or US$505 in a tent, bookable on board only."
+  },
+  {
+   "name": "Breathtaking Patagonia (before)",
+   "note": "HX's pre programme, from US$1,675 per person."
+  },
+  {
+   "name": "The Iguazú Experience (after)",
+   "note": "HX's post programme, from US$2,796 per person."
+  },
+  {
+   "name": "Buenos Aires dinner and tango",
+   "note": "US$265 per person, after the voyage."
+  }
+ ],
+ "children": "HX publishes no minimum age on this voyage page; James confirms the rules for your family when you ask.",
+ "faqs": [
+  [
+   "Is the Antarctic Circle guaranteed?",
+   "HX calls the route south of the Antarctic Circle to Marguerite Bay an attempt: it depends on the sea ice. If ice, weather or sea do not allow it, the crew offers an adapted itinerary."
+  ],
+  [
+   "Has James sailed this voyage?",
+   "Yes. James sailed HX's Antarctic Circle voyage aboard MS Roald Amundsen in February and March 2020, calling at Ukraine's Vernadsky research station, and was at sea when the world shut down for Covid. The photographs on this page are his."
+  ],
+  [
+   "Are flights included?",
+   "The economy flights between Buenos Aires and Ushuaia are included, with a night in Buenos Aires before the voyage. International flights to Buenos Aires are not."
+  ],
+  [
+   "What does the fare include?",
+   "Meals with drinks including wine, beer and spirits, gratuities, Wi-Fi, an expedition jacket, landings and lectures. Kayaking and camping are extra and bookable on board."
+  ],
+  [
+   "How does it differ from Antarctica21's air-cruises?",
+   "HX sails the Drake Passage both ways on a 490-guest ship over 16 days; Antarctica21 flies over the Drake to an 88-guest ship on shorter air-cruises."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Travellers who want to cross 66 degrees",
+   "line": "An attempt south of the Antarctic Circle to Marguerite Bay."
+  },
+  {
+   "who": "Drake Passage purists",
+   "line": "The crossing by sea both ways, with two days of lectures each way."
+  },
+  {
+   "who": "Paddlers and campers",
+   "line": "Kayaking among the ice and a night on the snow, bookable on board."
+  }
+ ],
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-06"
+  ]
+ },
+ "status": null,
+ "photoCredit": "James Papagno, February to March 2020",
+ "sources": [
+  "https://www.travelhx.com/en-us/cruises/antarctic-circle-expedition/",
+  "https://www.travelhx.com/en-us/ships/roald-amundsen/",
+  "https://www.travelhx.com/en-us/cruises/?destinations=antarctica-cruises"
+ ],
+ "checked": "2026-11-09"
+}

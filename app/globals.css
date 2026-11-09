@@ -668,3 +668,26 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 .house-tones #overview .ledger-display.italic { max-width: 30ch; }
 .house-tones details summary .ledger-display { font-size: 1.15rem; line-height: 1.35; }
 .house-tones .jw-band--night [data-sechead] h2 { color: #FFFFFF; }
+
+/* ---------- The house tint (James, 9 Nov 2026: "the color tint, sort of like the exceptional few had on the entrance...
+   that tint that kind of flows into the font and into the buttons"). As .theme-ef-dark does for a designated vessel, a
+   cruise page with the house opening takes its night colour into the chrome: the site header, the ship's section nav and
+   the phone's Plan bar sit on the record's night; words on the night are the palette's ivory, not pure white; "Plan with
+   James" stays the house action, an ivory outline with the House Crimson cell. Scoped to .house-tones / .jw-opening. */
+.jw-opening .text-white, .house-tones .jw-band--night { color: var(--tone-ivory) !important; }
+.jw-opening :is([class*="text-white/8"], [class*="text-white/9"]) { color: color-mix(in srgb, var(--tone-ivory) 88%, transparent) !important; }
+.jw-opening :is([class*="text-white/5"], [class*="text-white/6"], [class*="text-white/7"]) { color: var(--tone-muted) !important; }
+.jw-opening [class*="border-white/"] { border-color: var(--tone-line) !important; }
+.house-tones header:not(.bg-transparent) { background: var(--tone-night) !important; border-color: var(--tone-line) !important; color: var(--tone-ivory) !important; }
+.house-tones header .\!text-ink, .house-tones header nav .\!text-ink { color: var(--tone-ivory) !important; }
+.house-tones header :is(button, a)[class*="border"] { border-color: var(--tone-line); }
+.house-tones [data-ship-nav] { background: color-mix(in srgb, var(--tone-night) 96%, transparent) !important; border-color: var(--tone-line) !important; }
+.house-tones [data-ship-nav] .ledger-eyebrow { color: var(--tone-muted) !important; }
+.house-tones [data-ship-nav] :is(.ledger-eyebrow.ledger-crimson, [aria-current="true"], [aria-current="location"]) { color: var(--tone-ivory) !important; }
+.house-tones #record-bar { background: color-mix(in srgb, var(--tone-night) 97%, transparent) !important; border-color: var(--tone-line) !important; color: var(--tone-ivory); }
+.house-tones #record-bar :is(.ledger-muted, .ledger-eyebrow, .text-ink-muted) { color: var(--tone-muted) !important; }
+.house-tones #record-bar :is(.ledger-display, .text-ink) { color: var(--tone-ivory) !important; }
+.house-tones #record-bar a:not(.ledger-btn) { border-color: var(--tone-line) !important; color: var(--tone-ivory) !important; }
+.house-tones :is(header, [data-ship-nav], #record-bar) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary),
+.jw-opening .ledger-btn.ledger-btn--house.ledger-btn--light { --jw-action: #8B2525; background: transparent !important; border-color: var(--tone-ivory) !important; color: var(--tone-ivory) !important; }
+.house-tones :is(header, [data-ship-nav], #record-bar) .jw-plan-cell { --jw-action: #8B2525; border-color: var(--tone-ivory); }

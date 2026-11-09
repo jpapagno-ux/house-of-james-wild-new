@@ -632,3 +632,27 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 
 /* Board 14: the "James knows a place" strip sits flush on the footer. */
 .jw-knows + .site-footer { margin-top: 0; }
+
+/* Details D, "the house tones" (preview, components/opening/Tones.tsx). Scoped to .house-tones: nothing else changes. */
+.house-tones { --tone-ink: color-mix(in srgb, var(--tone-night) 84%, #1A1816); counter-reset: hsec; }
+.house-tones .jw-band { position: relative; margin-inline: calc(50% - 50vw); padding-inline: calc(50vw - 50%); padding-block: 3.5rem; margin-top: 4rem; }
+@media (min-width: 768px) { .house-tones .jw-band { padding-block: 5.5rem; margin-top: 6rem; } }
+.house-tones .jw-band + .jw-band { margin-top: 0; }
+.house-tones .jw-band > .relative > :first-child { margin-top: 0 !important; border-top: 0 !important; padding-top: 0 !important; }
+.house-tones .jw-band--mist { background: color-mix(in srgb, var(--tone-hi) 34%, var(--tone-day)); }
+.house-tones .jw-band--paper { background: #FFFFFF; box-shadow: inset 0 1px 0 color-mix(in srgb, var(--tone-hi) 80%, #CFC8BF), inset 0 -1px 0 color-mix(in srgb, var(--tone-hi) 80%, #CFC8BF); }
+.house-tones .jw-band--night { background: linear-gradient(180deg, var(--tone-night) 0%, var(--tone-deep) 100%); color: #FFFFFF; }
+/* the record's ink on the light grounds: eyebrows, field icons, the answer rule, the facts card */
+.house-tones .ledger-eyebrow { color: var(--tone-ink); }
+.house-tones .ledger-crimson:not(a):not(button) { color: var(--tone-ink); }
+.house-tones section[aria-label] .border-crimson, .house-tones .border-l-2.border-crimson { border-color: var(--tone-ink); }
+.house-tones #overview dl.ledger-paper { background: color-mix(in srgb, var(--tone-hi) 34%, #FFFFFF); border-top-color: var(--tone-ink); }
+/* numbered sections, as the opening numbers its frames */
+.house-tones [data-sechead] .ledger-eyebrow::before { counter-increment: hsec; content: counter(hsec, decimal-leading-zero) "\2003"; opacity: .7; }
+/* on the night band: white words, the palette's light tone for labels, quiet rules */
+.house-tones .jw-band--night .ledger-muted { color: rgba(255,255,255,.78) !important; }
+.house-tones .jw-band--night .ledger-eyebrow, .house-tones .jw-band--night .ledger-crimson:not(a):not(button) { color: var(--tone-hi) !important; }
+.house-tones .jw-band--night .ledger-rule, .house-tones .jw-band--night .ledger-border { border-color: rgba(255,255,255,.2) !important; }
+.house-tones .jw-band--night .ledger-paper { background: rgba(255,255,255,.04) !important; color: #FFFFFF; }
+.house-tones .jw-band--night a:not(.ledger-btn) { color: #FFFFFF; }
+.house-tones .jw-band > .relative > div:first-child > :first-child { margin-top: 0 !important; border-top: 0 !important; padding-top: 0 !important; }

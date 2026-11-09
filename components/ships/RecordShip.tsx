@@ -40,6 +40,8 @@ export type ShipExtra = {
   /** A preview opening in place of the hero, and the page surface (HouseOpening, previews only). */
   opening?: ReactNode;
   surface?: string;
+  /** Details D: the record palette as bands through the details (preview). */
+  tones?: import("@/components/opening/Tones").Tones;
   /** A vessel's own short film playing as the hero; the film slot below then steps aside. */
   heroFilm?: ShortFilm;
   stamp?: ReactNode;
@@ -177,7 +179,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         crumbs,
         jsonld,
         ef: entrance,
-        opening: extra.opening, surface: extra.surface,
+        opening: extra.opening, surface: extra.surface, tones: extra.tones,
       }}
       lead={<>
         {s.founder && <FounderProof proof={t(s.founder.proof)} eyebrow={t(s.founder.eyebrow)} className="mt-10 max-w-3xl" />}

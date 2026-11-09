@@ -51,7 +51,7 @@ function WhyFrames({ why, onDark = false }: { why: OpeningWhy[]; onDark?: boolea
         <li key={w.title}>
           <figure>
             <div className="relative aspect-[4/5] overflow-hidden bg-ink">
-              <Image src={w.photo.src} alt={w.photo.alt} fill sizes="(min-width: 768px) 32vw, 92vw" quality={85} className="object-cover transition-transform duration-[1600ms] hover:scale-[1.04]" />
+              <Image src={w.photo.src} alt={w.photo.alt} fill sizes="(min-width: 768px) 32vw, 92vw" quality={85} className="object-cover transition-transform duration-[1600ms] [@media(hover:hover)]:hover:scale-[1.04]" />
             </div>
             <figcaption className={`mt-1.5 text-[11px] tracking-[0.04em] ${onDark ? "text-white/60" : "ledger-muted"}`}>{w.photo.credit}</figcaption>
           </figure>

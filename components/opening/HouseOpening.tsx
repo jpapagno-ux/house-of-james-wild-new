@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 import { PATHWAYS, type PathwayId } from "@/lib/pathways";
+import PathwayStamp from "@/components/pathways/PathwayStamp";
 import { toneVars } from "./Tones";
 
 // Preview C, "the house opening" (James, 8 Nov 2026: go with the blend). The Exceptional Few manner one step down,
@@ -121,9 +122,11 @@ export type HouseOpeningProps = {
   grain?: boolean;
   /** the volume colour for the frame's tab (Stays, Europe), from lib/volumes.ts */
   tab?: string;
+  /** secondary pathways, stamped smaller beside the primary (James, 9 Nov 2026: pathway stamps on the entrance) */
+  also?: PathwayId[];
 };
 
-export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab }: HouseOpeningProps) {
+export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab, also = [] }: HouseOpeningProps) {
   const pw = PATHWAYS[pathway];
   const night: CSSProperties = { background: `linear-gradient(180deg, ${palette.night} 0%, ${palette.deep} 100%)` };
   return (
@@ -137,7 +140,13 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
             <span className="house-chip !border-transparent" style={{ background: "var(--tone-ivory)", color: palette.night }}><span aria-hidden="true" className="inline-block w-[6px] h-[6px] rounded-full" style={{ background: pw.accent }} />{pw.name}</span>
             <span className="ledger-eyebrow" style={{ color: palette.hi }}>{whyLabel}</span>
           </div>
-          <p className="mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl">{line}</p>
+          {/* the pathway stamp, pressed in the record's ivory as The Exceptional Few presses its number; any secondary pathways
+              follow smaller on wide screens */}
+          <div className="mt-6 md:mt-0 md:absolute md:right-10 md:top-10 lg:top-14 flex items-center gap-2 pointer-events-none">
+            {also.slice(0, 2).map((a, i) => <PathwayStamp key={a} id={a} ink="var(--tone-ivory)" size={112} rotate={i ? 5 : 3} seed={a.charCodeAt(6) * 11} className="inline-flex md:hidden xl:inline-flex opacity-70 max-md:[&>svg]:w-[104px] max-md:[&>svg]:h-auto" />)}
+            <PathwayStamp id={pathway} ink="var(--tone-ivory)" size={176} rotate={-5} seed={pathway.charCodeAt(6) * 7} className="opacity-90 max-md:[&>svg]:w-[150px] max-md:[&>svg]:h-auto" />
+          </div>
+          <p className="mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl md:pr-[210px] xl:pr-0">{line}</p>
           <dl className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 border-t border-white/20 pt-6">
             {glance.map(([k, v]) => (
               <div key={k}><dt className="text-[10.5px] tracking-[0.22em] uppercase" style={{ color: palette.hi }}>{k}</dt><dd className="mt-1.5 ledger-display text-[21px] md:text-[23px] leading-snug">{v}</dd></div>

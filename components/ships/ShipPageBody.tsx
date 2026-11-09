@@ -19,6 +19,8 @@ import { readRoute, shipRouteId } from "@/lib/content/ships/routes";
 import { terrainRoute } from "@/components/maps/terrain/routed";
 import HouseOpening from "@/components/opening/HouseOpening";
 import { shipOpening } from "@/lib/content/opening/build";
+import VoyageSignals from "@/components/ships/VoyageSignals";
+import EitherSide from "@/components/ships/EitherSide";
 
 // The ship page body, shared by /voyages/ships/<ship> and the opening previews (app/preview/voyages/*).
 export default async function ShipPageBody({ slug, opening: given, surface: givenSurface, tones: givenTones }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones }) {
@@ -44,7 +46,7 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
     const weeks = pilot ? dayed.filter((i) => i.nights === 7).reverse() : dayed.filter((i) => readRoute(shipRouteId(rec, i)));
     if (!weeks.length) return null;
     const routes = weeks.map((w) => terrainRoute(w.name.split(":")[0], readRoute(shipRouteId(rec, w)), w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode }))));
-    const where = e.waters === "galapagos" ? "in the Galapagos" : e.waters === "fiji" ? "in Fiji" : e.waters === "indonesia" ? "in Indonesia" : "in Antarctica";
+    const where = e.waters === "galapagos" ? "in the Galapagos" : e.waters === "fiji" ? "in Fiji" : e.waters === "tahiti" ? "in French Polynesia" : e.waters === "indonesia" ? "in Indonesia" : "in Antarctica";
     // One frame, two views (James, 8 Nov 2026): where every itinerary of the day log has its 3D route, in the same order,
     // the 3D map opens in the chart's frame behind a "3D Flyover | Itinerary Chart" switch (routeViewsOn, flag.ts).
     // every itinerary of the log with its route, in log order (Natural Paradise's two weeks included)
@@ -66,5 +68,13 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
   // design"), built from the record (lib/content/opening/build.ts). The Exceptional Few keep their own entrance.
   const auto = !opening && !exceptionalFewForVessel(e.slug) ? shipOpening(e) : null;
   if (auto) { const { next, ...o } = auto; opening = <HouseOpening {...o} next={next} />; surface = o.palette.day; tones = tones ?? { palette: o.palette }; }
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, after: <>{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;
+  // At a glance with the icon legend, and "Either side of the voyage" (James, 9 Nov 2026: "a comprehensive icon legend",
+  // pre and post cruise stays, "yes to the house stays vs the cruise ship one"). The Exceptional Few keep their own signals.
+  const ef = exceptionalFewForVessel(e.slug);
+  const rec = e.data as ShipRecord;
+  const traits = (e.reg as { traits?: { activities?: import("@/lib/content/ships/registry").Activity[] } }).traits;
+  const glance = !ef ? <VoyageSignals ship={rec} activities={traits?.activities ?? []} charter={!!e.reg.charter?.whole} waters={e.waters} /> : null;
+  const firstVoyage = rec.itineraries.find((i) => i.days.length)?.name.replace(/,\s*\d+ nights$/, "") ?? rec.name;
+  const either = <EitherSide slug={e.slug} waters={e.waters} ship={rec.name} voyage={firstVoyage} />;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}{glance}</>, after: <>{either}{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={ef} />;
 }

@@ -273,7 +273,8 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   // Windstar in French Polynesia (James, 2 Nov 2026), filed from windstarcruises.com. Star Breeze is an all-suite
   // motor yacht (never "sailing"); Wind Star is the four-masted sailing yacht, in Tahiti from March 2027. Between
   // Tides first. Star Breeze's old Stay record (windstar-cruise-sv-star-breeze) is retired; its URL redirects here.
-  // James has sailed Windstar in Tahiti but which ship is a follow-up, so neither carries a "sailed" mark.
+  // James sailed Star Breeze (James, 9 Nov 2026: 11 days, Fakarava and Rarotonga, with his wife): her record carries
+  // the "Founder sailed" proof line. Dated sailings and from fares filed from windstarcruises.com on 9 Nov 2026.
   { slug: "star-breeze", name: "Star Breeze", operator: "Windstar", kind: "motor-yacht", types: ["expedition"], waters: ["tahiti"], country: ["French Polynesia"],
     pathway: { primary: "PATH-02", secondary: ["PATH-06"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
     traits: { activities: ["snorkelling", "culture", "slow"] } },

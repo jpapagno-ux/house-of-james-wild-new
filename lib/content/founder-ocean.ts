@@ -30,7 +30,8 @@ export const OCEAN_PAGES: Record<string, string> = {
   "/voyages/indonesia": "Surfer and diver: has surfed and dived in Indonesia.",
   // The one ship he has sailed, as stated.
   "/voyages/ships/aliikai": "Surfer and diver: has surfed and dived in Indonesia, and sailed Aliikai in Raja Ampat in November 2024.",
-  "/voyages/ships/star-breeze": "Gold Certified Tahiti Specialist: has surfed and dived in French Polynesia since 1995.",
+  // James, 9 Nov 2026: he sailed Star Breeze with his wife, 11 days calling at Fakarava and Rarotonga.
+  "/voyages/ships/star-breeze": "Gold Certified Tahiti Specialist: has surfed and dived in French Polynesia since 1995, and sailed Star Breeze to Fakarava and Rarotonga.",
   "/voyages/ships/wind-star": "Gold Certified Tahiti Specialist: has surfed and dived in French Polynesia since 1995.",
 };
 /** Galápagos ship pages: the place only; he has not sailed these ships. */

@@ -17,7 +17,8 @@ export const TERRAIN_PAGES = [
 export type TerrainPage = (typeof TERRAIN_PAGES)[number];
 
 /** Waters whose ship pages carry "See It in 3D" (their route files are routed round the OSM coastline). */
-export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji", "indonesia"] as const;
+// Tahiti (James, 9 Nov 2026: the Windstar voyages), routed round the OSM coast like Fiji.
+export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji", "indonesia", "tahiti"] as const;
 export const terrainWaters = (w: string | undefined) => !!w && (TERRAIN_WATERS as readonly string[]).includes(w);
 
 /** One frame, two views ("3D Flyover | Itinerary Chart") on every cruise page with both maps: ship pages, polar voyages,

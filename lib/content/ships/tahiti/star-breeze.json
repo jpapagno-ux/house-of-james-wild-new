@@ -179,31 +179,670 @@
  "deckPlans": [],
  "itineraries": [
   {
-   "name": "Society Islands voyages",
-   "nights": null,
+   "name": "Dreams of Tahiti, 7 nights",
+   "nights": 7,
    "direction": "Papeete round trip",
-   "days": []
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Papeete",
+     "place": "Papeete",
+     "lat": -17.535,
+     "lng": -149.5696,
+     "summary": "Board from 1 pm; Star Breeze sails at 5.30 pm."
+    },
+    {
+     "day": 2,
+     "title": "Moorea",
+     "place": "Moorea",
+     "lat": -17.495,
+     "lng": -149.854,
+     "summary": "In from 8 am to 5 pm, with the Marina open: kayaks, paddleboards and swimming from the stern."
+    },
+    {
+     "day": 3,
+     "title": "Raiatea, overnight",
+     "place": "Raiatea",
+     "lat": -16.733,
+     "lng": -151.442,
+     "summary": "In at 8 am and overnight. Taputapuatea, the UNESCO-listed marae, is on Raiatea."
+    },
+    {
+     "day": 4,
+     "title": "Motu Mahaea, Taha'a",
+     "place": "Motu Mahaea, Taha'a",
+     "lat": -16.685,
+     "lng": -151.465,
+     "summary": "Sail from Raiatea at 6 am for Motu Mahaea off Taha'a, 8 am to 5 pm: Windstar's Signature Beach Party on the motu."
+    },
+    {
+     "day": 5,
+     "title": "Bora Bora, overnight",
+     "place": "Bora Bora",
+     "lat": -16.504,
+     "lng": -151.748,
+     "summary": "In at 9 am and overnight, with the Marina open."
+    },
+    {
+     "day": 6,
+     "title": "Bora Bora: Feast & Fire",
+     "place": "Bora Bora",
+     "lat": -16.504,
+     "lng": -151.748,
+     "summary": "Ashore until 9 pm. Windstar's Destination Discovery Event, Polynesian Feast & Fire: an evening on a private motu off Bora Bora with a flower lei, a beach feast, live music and fire dancing, for Windstar guests only."
+    },
+    {
+     "day": 7,
+     "title": "Huahine",
+     "place": "Huahine",
+     "lat": -16.708,
+     "lng": -151.036,
+     "summary": "In from 7 am to 5 pm: villages, archaeological sites and the Marina."
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Papeete",
+     "place": "Papeete",
+     "lat": -17.535,
+     "lng": -149.5696,
+     "summary": "Back in Papeete; disembark in the morning."
+    }
+   ],
+   "short": "Moorea, Raiatea, Taha'a, Bora Bora and Huahine"
+  },
+  {
+   "name": "Tahiti & the Tuamotu Islands, 10 nights",
+   "nights": 10,
+   "direction": "Papeete round trip, with the Tuamotu",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Papeete",
+     "place": "Papeete",
+     "lat": -17.535,
+     "lng": -149.5696,
+     "summary": "Board from 1 pm; Star Breeze sails at 6 pm."
+    },
+    {
+     "day": 2,
+     "title": "At sea",
+     "place": "At sea",
+     "lat": -16.85,
+     "lng": -147.55,
+     "summary": "A day at sea, north east for the Tuamotu."
+    },
+    {
+     "day": 3,
+     "title": "Fakarava",
+     "place": "Fakarava",
+     "lat": -16.056,
+     "lng": -145.62,
+     "summary": "In from 7 am to 5 pm, with the Marina open."
+    },
+    {
+     "day": 4,
+     "title": "Rangiroa",
+     "place": "Rangiroa",
+     "lat": -14.966,
+     "lng": -147.705,
+     "summary": "In from 9 am to 5 pm, with the Marina open."
+    },
+    {
+     "day": 5,
+     "title": "At sea",
+     "place": "At sea",
+     "lat": -15.75,
+     "lng": -149.55,
+     "summary": "A day at sea, back west to the Society Islands."
+    },
+    {
+     "day": 6,
+     "title": "Motu Mahaea, Taha'a",
+     "place": "Motu Mahaea, Taha'a",
+     "lat": -16.685,
+     "lng": -151.465,
+     "summary": "In from 8 am to 5 pm at Windstar's motu off Taha'a."
+    },
+    {
+     "day": 7,
+     "title": "Bora Bora, overnight",
+     "place": "Bora Bora",
+     "lat": -16.504,
+     "lng": -151.748,
+     "summary": "In at 8 am and overnight, with the Marina open."
+    },
+    {
+     "day": 8,
+     "title": "Bora Bora: Feast & Fire",
+     "place": "Bora Bora",
+     "lat": -16.504,
+     "lng": -151.748,
+     "summary": "Ashore until 9 pm. Windstar's Destination Discovery Event, Polynesian Feast & Fire: an evening on a private motu off Bora Bora with a flower lei, a beach feast, live music and fire dancing, for Windstar guests only."
+    },
+    {
+     "day": 9,
+     "title": "Huahine",
+     "place": "Huahine",
+     "lat": -16.708,
+     "lng": -151.036,
+     "summary": "In from 8 am to 5 pm, with the Marina open."
+    },
+    {
+     "day": 10,
+     "title": "Moorea",
+     "place": "Moorea",
+     "lat": -17.495,
+     "lng": -149.854,
+     "summary": "In from 8 am to 6 pm, then back to Papeete for the night."
+    },
+    {
+     "day": 11,
+     "title": "Disembark in Papeete",
+     "place": "Papeete",
+     "lat": -17.535,
+     "lng": -149.5696,
+     "summary": "Disembark by 8 am."
+    }
+   ],
+   "short": "Fakarava, Rangiroa and the Society Islands"
   },
   {
    "name": "Star Collector Voyages (Tuamotu, Marquesas, Fiji, Cook Islands)",
    "nights": null,
-   "direction": "From Papeete, up to 21 days",
+   "direction": "From Papeete, up to 22 days",
    "days": []
   }
  ],
- "departures": [],
- "datesPublished": false,
- "routesNote": "Windstar publishes Star Breeze's Tahiti voyages in its live booking tool, not as a day by day the house can file; ask James for the dates and route for your month.",
- "pricesNote": "Windstar quotes fares by suite in its booking tool; James confirms yours. No fares are filed here.",
+ "departures": [
+  {
+   "date": "2026-11-23",
+   "dateTo": "2026-12-03",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 3816
+   }
+  },
+  {
+   "date": "2026-12-03",
+   "dateTo": "2026-12-10",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2676
+   }
+  },
+  {
+   "date": "2026-12-10",
+   "dateTo": "2026-12-17",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2676
+   }
+  },
+  {
+   "date": "2026-12-28",
+   "dateTo": "2027-01-07",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 3816
+   }
+  },
+  {
+   "date": "2027-01-07",
+   "dateTo": "2027-01-14",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2676
+   }
+  },
+  {
+   "date": "2027-01-21",
+   "dateTo": "2027-01-28",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2711
+   }
+  },
+  {
+   "date": "2027-02-11",
+   "dateTo": "2027-02-18",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2676
+   }
+  },
+  {
+   "date": "2027-02-18",
+   "dateTo": "2027-03-01",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 4198
+   }
+  },
+  {
+   "date": "2027-03-01",
+   "dateTo": "2027-03-11",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 5116
+   }
+  },
+  {
+   "date": "2027-03-11",
+   "dateTo": "2027-03-18",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 4111
+   }
+  },
+  {
+   "date": "2027-03-18",
+   "dateTo": "2027-03-28",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 5566
+   }
+  },
+  {
+   "date": "2027-04-08",
+   "dateTo": "2027-04-15",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 3131
+   }
+  },
+  {
+   "date": "2027-04-22",
+   "dateTo": "2027-04-29",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 5091
+   }
+  },
+  {
+   "date": "2027-05-13",
+   "dateTo": "2027-05-20",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 5126
+   }
+  },
+  {
+   "date": "2027-05-20",
+   "dateTo": "2027-05-30",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 4816
+   }
+  },
+  {
+   "date": "2027-06-10",
+   "dateTo": "2027-06-17",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 6421
+   }
+  },
+  {
+   "date": "2027-06-17",
+   "dateTo": "2027-06-27",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 5816
+   }
+  },
+  {
+   "date": "2027-06-27",
+   "dateTo": "2027-07-08",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 4253
+   }
+  },
+  {
+   "date": "2027-07-08",
+   "dateTo": "2027-07-15",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 5546
+   }
+  },
+  {
+   "date": "2027-08-12",
+   "dateTo": "2027-08-19",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 4566
+   }
+  },
+  {
+   "date": "2027-08-19",
+   "dateTo": "2027-08-26",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 4041
+   }
+  },
+  {
+   "date": "2027-09-16",
+   "dateTo": "2027-09-23",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 7436
+   }
+  },
+  {
+   "date": "2027-09-23",
+   "dateTo": "2027-10-03",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 7816
+   }
+  },
+  {
+   "date": "2027-10-14",
+   "dateTo": "2027-10-21",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 5616
+   }
+  },
+  {
+   "date": "2027-10-21",
+   "dateTo": "2027-10-28",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 3586
+   }
+  },
+  {
+   "date": "2027-11-04",
+   "dateTo": "2027-11-11",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 3481
+   }
+  },
+  {
+   "date": "2027-11-11",
+   "dateTo": "2027-11-18",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2606
+   }
+  },
+  {
+   "date": "2028-03-16",
+   "dateTo": "2028-03-23",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 3341
+   }
+  },
+  {
+   "date": "2028-03-23",
+   "dateTo": "2028-04-02",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 3816
+   }
+  },
+  {
+   "date": "2028-04-13",
+   "dateTo": "2028-04-20",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 3131
+   }
+  },
+  {
+   "date": "2028-04-27",
+   "dateTo": "2028-05-04",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 3376
+   }
+  },
+  {
+   "date": "2028-05-04",
+   "dateTo": "2028-05-14",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 3816
+   }
+  },
+  {
+   "date": "2028-05-14",
+   "dateTo": "2028-05-25",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 4198
+   }
+  },
+  {
+   "date": "2028-05-25",
+   "dateTo": "2028-06-01",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2921
+   }
+  },
+  {
+   "date": "2028-06-01",
+   "dateTo": "2028-06-11",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 3816
+   }
+  },
+  {
+   "date": "2028-06-22",
+   "dateTo": "2028-06-29",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2781
+   }
+  },
+  {
+   "date": "2028-06-29",
+   "dateTo": "2028-07-09",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 4316
+   }
+  },
+  {
+   "date": "2028-07-09",
+   "dateTo": "2028-07-20",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 4198
+   }
+  },
+  {
+   "date": "2028-07-20",
+   "dateTo": "2028-07-27",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2886
+   }
+  },
+  {
+   "date": "2028-08-24",
+   "dateTo": "2028-08-31",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2956
+   }
+  },
+  {
+   "date": "2028-08-31",
+   "dateTo": "2028-09-07",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 3061
+   }
+  },
+  {
+   "date": "2028-10-05",
+   "dateTo": "2028-10-15",
+   "itinerary": "Tahiti & the Tuamotu Islands, 10 nights",
+   "direction": "Papeete round trip, with the Tuamotu",
+   "status": null,
+   "prices": {
+    "From": 5016
+   }
+  },
+  {
+   "date": "2028-10-26",
+   "dateTo": "2028-11-02",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 3341
+   }
+  },
+  {
+   "date": "2028-11-09",
+   "dateTo": "2028-11-16",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2676
+   }
+  },
+  {
+   "date": "2028-11-30",
+   "dateTo": "2028-12-07",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2676
+   }
+  },
+  {
+   "date": "2028-12-21",
+   "dateTo": "2028-12-28",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2676
+   }
+  },
+  {
+   "date": "2028-12-28",
+   "dateTo": "2029-01-04",
+   "itinerary": "Dreams of Tahiti, 7 nights",
+   "direction": "Papeete round trip",
+   "status": null,
+   "prices": {
+    "From": 2676
+   }
+  }
+ ],
+ "datesPublished": true,
+ "pricesNote": "From fares per person, double occupancy, cruise only, in USD, as Windstar publishes them for the lowest suite open on each sailing. Taxes, fees and port expenses are additional and quoted with your suite; suggested onboard gratuities are extra unless an offer includes them. James confirms the fare for your suite.",
  "inclusions": [
   "All dining, including specialty dining",
-  "24-hour room service",
-  "Gym and sauna",
-  "The water-access marina"
+  "24-hour in-suite dining",
+  "A snorkel set and fins for the voyage, fitted by the Marina team",
+  "The water-access Marina at anchor: kayaks, paddleboards and swimming",
+  "Windstar's Destination Discovery Event on select voyages: Polynesian Feast & Fire on a private motu off Bora Bora",
+  "Gym and sauna"
  ],
  "exclusions": [
   "Wi-Fi outside the Owner's, Broadmoor / Sea Island and Deluxe suites (sold on board)",
-  "Flights to Tahiti"
+  "Taxes, fees and port expenses",
+  "Suggested onboard gratuities",
+  "Alcoholic drinks, unless an offer includes them",
+  "Shore excursions",
+  "Laundry",
+  "Flights to Tahiti, and hotels and transfers before and after the cruise"
  ],
  "children": "Windstar's Star Breeze page publishes no minimum age; ask James for the policy on your sailing.",
  "faqs": [
@@ -255,8 +894,19 @@
   }
  ],
  "sources": [
+  "https://www.windstarcruises.com/destinations/tahiti/",
+  "https://www.windstarcruises.com/press-media/press-releases/Windstar-Cruises-Returns-Iconic-Sailing",
   "https://www.windstarcruises.com/ships/star-breeze/",
-  "https://www.windstarcruises.com/press-media/press-releases/Windstar-Cruises-Returns-Iconic-Sailing"
+  "https://www.windstarcruises.com/terms-conditions/",
+  "https://www.windstarcruises.com/tour-details/TAHITI_DREAMS_C/tahiti/papeete-to-papeete/7-day-dreams-of-tahiti/?pkgid=1013601",
+  "https://www.windstarcruises.com/tour-details/TAHITI_TUAMOTU_C/tahiti/papeete-to-papeete/10-day-tahiti-and-the-tuamotu-islands/?pkgid=1013618"
  ],
- "film": null
+ "film": null,
+ "fareBasis": "per person, double occupancy, cruise only, in USD, as published by Windstar",
+ "terms": [
+  "Single occupancy starts at 175% of the per person fare, and 200% on select sailings and in the larger suites, as Windstar publishes.",
+  "Windstar's Peace of Mind Promise for sailings through 31 March 2027: a full refund when you cancel at least 121 days before sailing; Windstar's terms apply.",
+  "If Windstar lowers the published fare for your sailing and suite, it makes up the difference as a credit, upgrade or fare reduction when asked at least 90 days before sailing."
+ ],
+ "proofLine": "Founder sailed · James sailed Star Breeze with his wife: 11 days, calling at Fakarava and Rarotonga"
 }

@@ -696,3 +696,8 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 .house-tones [data-subnav] :is(a, .ledger-eyebrow):not(.ledger-btn) { color: var(--tone-muted) !important; }
 .house-tones [data-subnav] :is([aria-current], .ledger-crimson):not(.ledger-btn) { color: var(--tone-ivory) !important; }
 .house-tones [data-subnav] .ledger-btn { display: none !important; }
+/* the desktop contact pill on a house-tones page sits on the night too */
+.house-tones [data-quiet-actions] { background: color-mix(in srgb, var(--tone-night) 96%, transparent) !important; border-color: var(--tone-line) !important; color: var(--tone-ivory); box-shadow: 0 8px 30px rgba(0,0,0,.28) !important; }
+.house-tones [data-quiet-actions] .ledger-eyebrow { color: var(--tone-muted) !important; }
+.house-tones [data-quiet-actions] a:not(.ledger-btn) { color: var(--tone-ivory) !important; }
+.house-tones [data-quiet-actions] .ledger-btn { --jw-action: #8B2525; background: transparent !important; border-color: var(--tone-ivory) !important; color: var(--tone-ivory) !important; }

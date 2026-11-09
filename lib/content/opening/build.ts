@@ -216,8 +216,22 @@ export type StayInput = {
   planHref: string;
 };
 
+/** Hand-set photograph order where a stay's gallery leads with a detail (James's review, 9 Nov 2026): the names, in the
+ *  order the opening should use them (hero first, then the place, the way in, the close, the "why" photographs). Any
+ *  photograph not named follows in its own order. */
+/** Hand-set photographs where a stay's gallery leads with a detail or its file names mislead (James's review, 9 Nov
+ *  2026): the arrival frames in order (the last is the stay itself), then "|", then the close and the three "why"
+ *  photographs. Names are the end of the Cloudinary id. */
+const STAY_ORDER: Record<string, string[]> = {
+  "como-shambhala-estate": ["/g4", "/g5", "/hero", "|", "/g6", "/g2", "/g10", "/g7"],
+  // two outdoor photographs only: the house with its pool, then the house at dusk among the olives
+  "da-licenca": ["/suite-my-pool", "/hero", "|", "/suite-moon-cube", "/suite-sunset", "/suite-sky-pool", "/suite-the-loft"],
+};
+
 export function stayOpening(s: StayInput): Built | null {
   if (!s.images.length) return null;
+  const order = STAY_ORDER[s.slug];
+  const byName = (n: string) => s.images.find((i) => i.url.split("?")[0].replace(/\.(jpe?g|png|webp)$/i, "").endsWith(n));
   OPERATOR = s.name;
   const pid = (Object.values(PATHWAYS).find((p) => p.key === s.pathway)?.id ?? "PATH-04") as PathwayId;
   const ground = GROUND[s.country ?? ""] ?? GROUND[s.regionSlug ?? ""] ?? GROUND.africa;
@@ -229,21 +243,29 @@ export function stayOpening(s: StayInput): Built | null {
   const palette = { night, deep: mix([night, 60], [INK, 40]), day: mix(["#FFFFFF", 93], [ground.light, 4], [accent, 3]), hi };
   const img = (i: { url: string; alt: string }): ShipImage => ({ url: i.url, alt: i.alt });
   // frames: a place, then the way in, then the stay itself (its own hero), as The Exceptional Few arrive
-  const ph = pickPhotos(img(s.images[0]), s.images.slice(1).map(img), s.name);
+  const hand = order ? (() => { const cut = order.indexOf("|"); const get = (xs: string[]) => xs.map(byName).filter((x): x is { url: string; alt: string } => !!x).map(img);
+    const frames = get(order.slice(0, cut)), rest = get(order.slice(cut + 1)); return frames.length >= 2 && rest.length ? { frames, close: rest[0], why: [rest[1], rest[2], rest[3]] as (ShipImage | undefined)[] } : null; })() : null;
+  const ph = hand ?? pickPhotos(img(s.images[0]), s.images.slice(1).map(img), s.name);
   const inFrames = new Set([...ph.frames.map((f) => f.url), ph.close.url]);
   // a moment's own photograph, unless the arrival or the close already shows it
-  s = { ...s, moments: s.moments.map((m) => (m.image && inFrames.has(m.image.url) ? { ...m, image: null } : m)) };
+  // a moment keeps its photograph only when it was chosen for it (a curated moment carries a note) and the arrival or
+  // the close does not already show it; the rest take unused gallery photographs, never a repeat
+  s = { ...s, moments: s.moments.map((m) => (m.image && m.note && !inFrames.has(m.image.url) ? m : { ...m, image: null })) };
   const titled = s.why.filter((w) => w.title && w.body);
   const withPhotos = (xs: { title: string; line: string }[], label: string) => ({ label, why: xs.slice(0, 3).map((x, i) => ({ ...x, photo: ph.why[i] ? toOpening(ph.why[i]!) : undefined })) });
   const w = titled.length >= 3 ? withPhotos(titled.map((x) => ({ title: x.title!, line: firstSentence(x.body) })), "Why it's here")
-    : s.moments.filter((m) => m.note).length >= 3 ? { label: "What sets it apart", why: s.moments.filter((m) => m.note).slice(0, 3).map((m, i) => ({ title: m.title, line: firstSentence(m.note!), photo: m.image ? toOpening(img(m.image)) : ph.why[i] ? toOpening(ph.why[i]!) : undefined })) }
-    : s.moments.length >= 3 ? { label: "What sets it apart", why: s.moments.slice(0, 3).map((m, i) => ({ title: m.title, line: "", photo: m.image ? toOpening(img(m.image)) : ph.why[i] ? toOpening(ph.why[i]!) : undefined })) }
+    : s.moments.length >= 3 ? (() => {
+        const ms = (s.moments.filter((m) => m.note).length >= 3 ? s.moments.filter((m) => m.note) : s.moments).slice(0, 3);
+        const spare = ph.why.filter(Boolean) as ShipImage[]; let k = 0;
+        return { label: "What sets it apart", why: ms.map((m) => ({ title: m.title, line: m.note ? firstSentence(m.note) : "", photo: m.image ? toOpening(img(m.image)) : spare[k] ? toOpening(spare[k++]) : undefined })) };
+      })()
     : null;
   if (!w) return null;
   const line = s.quote ?? s.tagline ?? (s.why[0] ? firstSentence(s.why[0].body) : "");
   if (!line) return null;
   const where = [s.place, s.country].filter(Boolean).join(", ");
-  const glance = ([["Best months", s.bestMonths], ["Best suited to", s.suited[0]], ["Airport", s.airport], ["Ledger ID", s.ledgerId]] as [string, string | null | undefined][])
+  // "Best suited to" is left out: the site's suitedTo() reads it from the copy and can misfire (DumaTau read "Beach & ocean")
+  const glance = ([["Best months", s.bestMonths], ["Country", s.country], ["Airport", s.airport], ["Ledger ID", s.ledgerId]] as [string, string | null | undefined][])
     .filter((x): x is [string, string] => !!x[1] && short(x[1], 34));
   return {
     palette, pathway: pid,

@@ -63,7 +63,7 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
   const named = reduced || p > (n - 1) / n;
   const current = frames[stage];
   return (
-    <div ref={ref} className={reduced ? "" : "h-[200svh]"}>
+    <div ref={ref} className={`relative ${reduced ? "" : "h-[200svh]"}`}>
       <section ref={stageRef} className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
         {frames.map((f, i) => (
           <div key={f.src} className="absolute inset-0" style={{ opacity: fade(i), zIndex: i }} aria-hidden={i !== stage}>
@@ -75,12 +75,12 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
         <Grain on={grain} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-3 md:inset-5 z-10 border border-white/25" />
         <p className="absolute z-20 top-[92px] left-5 md:left-auto md:right-10 md:top-[104px] lg:top-[192px] text-[10px] md:text-[10.5px] tracking-[0.28em] uppercase text-white/75">{marker}</p>
-        <div className="relative z-20 h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-20 md:pb-16">
+        <div className="relative z-20 h-full max-w-ledger mx-auto px-5 md:px-10 flex flex-col justify-end pb-[118px] lg:pb-16">
           <p className="ledger-eyebrow !text-white/85" style={{ opacity: reduced || p > 0.04 ? 1 : 0.0001, transition: "opacity 500ms" }}>{designation}</p>
           <h1 className="ledger-h1 mt-3" style={{ opacity: named ? 1 : 0, transform: named ? "none" : "translateY(14px)", transition: "all 700ms" }}>{title}</h1>
           <p className="ledger-display italic text-lg md:text-2xl mt-3" style={{ color: palette.hi, opacity: named ? 1 : 0, transition: "opacity 700ms" }}>{place}</p>
           <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-4" style={{ opacity: named ? 1 : 0, transition: "opacity 700ms 150ms" }}>
-            <Link href={planHref} className="ledger-btn ledger-btn--house ledger-btn--light">Plan with James</Link>
+            <Link href={planHref} className="ledger-btn ledger-btn--house ledger-btn--light max-lg:!hidden">Plan with James</Link>
             {next && (
               <Link href={next.href} className="group text-[13px] leading-snug text-white/90">
                 <span className="block text-[10.5px] tracking-[0.22em] uppercase text-white/60">Next open sailing</span>
@@ -89,9 +89,12 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
             )}
           </div>
         </div>
-        <a href="#voyage" className="absolute z-20 bottom-3 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.24em] uppercase text-white/70 hover:text-white">Skip to the details ↓</a>
-        <p className="absolute z-20 bottom-9 md:bottom-2 left-5 right-5 md:left-auto md:right-8 text-right text-[10px] md:text-[10.5px] tracking-[0.08em] text-white/70">{current?.caption ? `${current.caption} · ` : ""}{current?.credit}</p>
+        <a href="#voyage" className="absolute z-20 bottom-[78px] lg:bottom-3 left-1/2 -translate-x-1/2 text-[10px] tracking-[0.24em] uppercase text-white/70 hover:text-white">Skip to the details ↓</a>
+        <p className="absolute z-20 bottom-[96px] lg:bottom-2 left-5 right-5 md:left-auto md:right-8 text-right text-[10px] md:text-[10.5px] tracking-[0.08em] text-white/70">{current?.caption ? `${current.caption} · ` : ""}{current?.credit}</p>
       </section>
+      {/* the site header stays transparent over the photographs for the whole arrival, as on The Exceptional Few, and
+          takes the night colour only once the arrival has passed (SiteHeader reads #hero-end) */}
+      <div id="hero-end" className="absolute bottom-0 h-px w-full" aria-hidden="true" />
     </div>
   );
 }

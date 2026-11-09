@@ -29,7 +29,7 @@ const H2 = "ledger-display text-[1.75rem] md:text-4xl mt-2 leading-tight";
 
 export function SectionHead({ eyebrow, title, icon, intro }: { eyebrow: string; title: string; icon?: FieldIconName; intro?: string }) {
   return (
-    <div>
+    <div data-sechead>
       <div className="flex items-center gap-3">
         {icon && <FieldIcon name={icon} height={26} className="ledger-crimson" />}
         <p className="ledger-eyebrow">{eyebrow}</p>

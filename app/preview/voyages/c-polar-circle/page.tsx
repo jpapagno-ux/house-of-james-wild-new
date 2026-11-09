@@ -8,10 +8,13 @@ import { buildMetadata } from "@/lib/seo";
 // Preview C, the house opening, on the Polar Circle Air-Cruise (James, 8 Nov 2026). ?grain=1 adds the paper grain. Noindex.
 export const metadata = buildMetadata({ title: "Polar Circle · Opening C (preview)", description: "The house opening: arrival, night panel, night close, day surface.", path: "/preview/voyages/c-polar-circle", noindex: true });
 
-export default async function Page({ searchParams }: { searchParams: Promise<{ grain?: string }> }) {
+export default async function Page({ searchParams }: { searchParams: Promise<{ grain?: string; tones?: string }> }) {
   const v = polarVoyage("polar-circle-air-cruise");
   if (!v) notFound();
-  const grain = (await searchParams).grain === "1";
   const c = POLAR_CIRCLE_C;
-  return <PolarVoyagePage v={v} surface={c.palette.day} opening={<HouseOpening {...c} grain={grain} next={polarNext(v, c.planHref)} />} />;
+  const sp = await searchParams;
+  const grain = sp.grain === "1";
+  // Details D, the house tones through the rest of the page (James, 8 Nov 2026); ?tones=0 shows the page without them
+  const tones = sp.tones === "0" ? undefined : { palette: c.palette, grain };
+  return <PolarVoyagePage v={v} surface={c.palette.day} tones={tones} opening={<HouseOpening {...c} grain={grain} next={polarNext(v, c.planHref)} />} />;
 }

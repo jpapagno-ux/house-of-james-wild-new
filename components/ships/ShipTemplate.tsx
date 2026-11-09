@@ -20,6 +20,7 @@ import type { TerrainFlyoverProps } from "@/components/maps/terrain/TerrainFlyov
 import ShipItinerary from "./ShipItinerary";
 import ShipNav from "./ShipNav";
 import type { ShipEF } from "./ShipEntrance";
+import { Band, tonesStyle, type Tones } from "@/components/opening/Tones";
 
 // The shared ship page (Voyages, approved by James 1 Nov 2026). One frame for
 // every vessel, in this order:
@@ -58,6 +59,8 @@ export type ShipFrame = {
   /** A preview opening (components/opening/HouseOpening) in place of the hero, and the page surface under it. */
   opening?: ReactNode;
   surface?: string;
+  /** Details D: the record palette carried through the details as bands (preview). */
+  tones?: Tones;
 };
 
 export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }: { ship: ShipFrame; lead?: ReactNode; body?: ReactNode; after?: ReactNode; itineraryAfter?: ReactNode }) {
@@ -69,7 +72,7 @@ export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }
   // as Amangiri. Without one this renders exactly as before.
   const Day = ef ? ({ children }: { children: ReactNode }) => <div className="ef-day mx-[calc(50%-50vw)] px-[calc(50vw-50%)] pt-2 pb-16 md:pb-24">{children}</div> : ({ children }: { children: ReactNode }) => <>{children}</>;
   return (
-    <div className={ef ? `theme-sea theme-sea-page ${ef.theme}` : "theme-sea theme-sea-page"} style={ship.surface ? { background: ship.surface } : undefined}>
+    <div className={`${ef ? `theme-sea theme-sea-page ${ef.theme}` : "theme-sea theme-sea-page"}${ship.tones ? " house-tones" : ""}`} style={ship.tones ? tonesStyle(ship.tones) : ship.surface ? { background: ship.surface } : undefined}>
       <SiteHeader overlay tuck />
       <main id="main" className={ef ? "overflow-x-clip" : undefined}>
         {ship.opening ?? (ef ? ef.hero : <RecordHero film={ship.heroFilm} image={ship.hero} eyebrow={ship.eyebrow} title={ship.name} tagline={ship.tagline} stamp={ship.stamp} glance={ship.glance} credit={ship.heroFilm ? undefined : ship.heroCredit} />)}
@@ -82,11 +85,10 @@ export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }
           {ef && <div className="pt-12 md:pt-16">{ship.glance}</div>}
           <Overview quote={ship.overview.quote} answer={ship.overview.answer} facts={ship.overview.facts} paragraphs={ship.overview.paragraphs} />
           {lead}
-          {ship.film && <ShipFilm film={ship.film.film} name={ship.name} poster={ship.film.poster} credit={ship.film.credit} />}
-          <ShipItinerary ship={ship.name} {...ship.itinerary} />
-          {itineraryAfter}
-          {body}
-          <LiveHostPanel pageKey={ship.host.key} initial={host} stayName={ship.host.name} kind="vessel" />
+          {ship.film && !(ship.tones && !ship.film.film) && <ShipFilm film={ship.film.film} name={ship.name} poster={ship.film.poster} credit={ship.film.credit} />}
+          <Band t={ship.tones} tone="mist"><ShipItinerary ship={ship.name} {...ship.itinerary} />{itineraryAfter}</Band>
+          <Band t={ship.tones} tone="paper">{ship.tones ? <div>{body}</div> : body}</Band>
+          <Band t={ship.tones} tone="night"><LiveHostPanel pageKey={ship.host.key} initial={host} stayName={ship.host.name} kind="vessel" /></Band>
           {after}
           <FaqBlock faqs={ship.faqs.map(([q, a]) => ({ q, a }))} title={ship.faqTitle} />
           {ef?.suits}

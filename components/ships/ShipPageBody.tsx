@@ -19,7 +19,7 @@ import { readRoute, shipRouteId } from "@/lib/content/ships/routes";
 import { terrainRoute } from "@/components/maps/terrain/routed";
 
 // The ship page body, shared by /voyages/ships/<ship> and the opening previews (app/preview/voyages/*).
-export default async function ShipPageBody({ slug, opening, surface }: { slug: string; opening?: ReactNode; surface?: string }) {
+export default async function ShipPageBody({ slug, opening, surface, tones }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones }) {
   const e = shipBySlug(slug);
   if (!e) notFound();
   // The Exceptional Few™: a published vessel designation brings the entrance (Hermes No. 002, Amandira No. 003).
@@ -59,5 +59,5 @@ export default async function ShipPageBody({ slug, opening, surface }: { slug: s
       : `Every itinerary over the real terrain, the line drawn day by day round the islands as the ship sails it.${t3d.routes.length > 1 ? " Pick an itinerary to fly it." : ""}`} />
     : null;
   const itineraryTerrain = t3d?.inFrame && terrainProps ? terrainProps : undefined;
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, itineraryAfter: terrain, itineraryTerrain, after: <>{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, after: <>{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={exceptionalFewForVessel(e.slug)} />;
 }

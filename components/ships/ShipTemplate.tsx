@@ -55,6 +55,9 @@ export type ShipFrame = {
   pathway?: ShipPathway;
   /** The Exceptional Few™ entrance (ShipEntrance), when the vessel carries a published designation. */
   ef?: ShipEF | null;
+  /** A preview opening (components/opening/HouseOpening) in place of the hero, and the page surface under it. */
+  opening?: ReactNode;
+  surface?: string;
 };
 
 export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }: { ship: ShipFrame; lead?: ReactNode; body?: ReactNode; after?: ReactNode; itineraryAfter?: ReactNode }) {
@@ -66,10 +69,10 @@ export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }
   // as Amangiri. Without one this renders exactly as before.
   const Day = ef ? ({ children }: { children: ReactNode }) => <div className="ef-day mx-[calc(50%-50vw)] px-[calc(50vw-50%)] pt-2 pb-16 md:pb-24">{children}</div> : ({ children }: { children: ReactNode }) => <>{children}</>;
   return (
-    <div className={ef ? `theme-sea theme-sea-page ${ef.theme}` : "theme-sea theme-sea-page"}>
+    <div className={ef ? `theme-sea theme-sea-page ${ef.theme}` : "theme-sea theme-sea-page"} style={ship.surface ? { background: ship.surface } : undefined}>
       <SiteHeader overlay tuck />
       <main id="main" className={ef ? "overflow-x-clip" : undefined}>
-        {ef ? ef.hero : <RecordHero film={ship.heroFilm} image={ship.hero} eyebrow={ship.eyebrow} title={ship.name} tagline={ship.tagline} stamp={ship.stamp} glance={ship.glance} credit={ship.heroFilm ? undefined : ship.heroCredit} />}
+        {ship.opening ?? (ef ? ef.hero : <RecordHero film={ship.heroFilm} image={ship.hero} eyebrow={ship.eyebrow} title={ship.name} tagline={ship.tagline} stamp={ship.stamp} glance={ship.glance} credit={ship.heroFilm ? undefined : ship.heroCredit} />)}
         <ShipNav items={ship.nav} cta={ship.cta.label} ctaHref={ship.cta.href} house={ship.cta.house} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-4"><Breadcrumbs trail={ship.crumbs} touch /></div>

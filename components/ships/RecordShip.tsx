@@ -37,6 +37,9 @@ const kindLabel = (k: string) => k.charAt(0).toUpperCase() + k.slice(1);
 const SEC = "mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10";
 
 export type ShipExtra = {
+  /** A preview opening in place of the hero, and the page surface (HouseOpening, previews only). */
+  opening?: ReactNode;
+  surface?: string;
   /** A vessel's own short film playing as the hero; the film slot below then steps aside. */
   heroFilm?: ShortFilm;
   stamp?: ReactNode;
@@ -174,6 +177,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         crumbs,
         jsonld,
         ef: entrance,
+        opening: extra.opening, surface: extra.surface,
       }}
       lead={<>
         {s.founder && <FounderProof proof={t(s.founder.proof)} eyebrow={t(s.founder.eyebrow)} className="mt-10 max-w-3xl" />}

@@ -691,3 +691,8 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 .house-tones :is(header, [data-ship-nav], #record-bar) :is(.ledger-btn.ledger-btn--house, .ledger-btn.ledger-btn--solid, a.ledger-btn[href^="/plan"], .ledger-btn.ledger-btn--primary),
 .jw-opening .ledger-btn.ledger-btn--house.ledger-btn--light { --jw-action: #8B2525; background: transparent !important; border-color: var(--tone-ivory) !important; color: var(--tone-ivory) !important; }
 .house-tones :is(header, [data-ship-nav], #record-bar) .jw-plan-cell { --jw-action: #8B2525; border-color: var(--tone-ivory); }
+/* the house tint on the stay page's section nav (RecordNav, [data-subnav]); its own Plan button steps aside, the header carries it */
+.house-tones [data-subnav] { background: color-mix(in srgb, var(--tone-night) 96%, transparent) !important; border-color: var(--tone-line) !important; }
+.house-tones [data-subnav] :is(a, .ledger-eyebrow):not(.ledger-btn) { color: var(--tone-muted) !important; }
+.house-tones [data-subnav] :is([aria-current], .ledger-crimson):not(.ledger-btn) { color: var(--tone-ivory) !important; }
+.house-tones [data-subnav] .ledger-btn { display: none !important; }

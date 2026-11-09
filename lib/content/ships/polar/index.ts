@@ -35,6 +35,6 @@ export const POLAR_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: strin
   { data: withVoyages({ ...Explorer }), offerRefs: [], credit: "Antarctica21" },
   { data: withVoyages({ ...Discoverer, launch: "2026-12" }), offerRefs: [], credit: "Antarctica21" },
   // HX Expeditions (James, 9 Nov 2026): MS Roald Amundsen, the ship James sailed to the Antarctic Circle in February and
-  // March 2020. Filed from travelhx.com; photographs James's own from that voyage until HX's media kit is in.
-  { data: withVoyages({ ...RoaldAmundsen }), offerRefs: [], credit: "James Papagno, February to March 2020" },
+  // March 2020. Filed from travelhx.com; photographs HX's own, with HX's approval and credit (James, 9 Nov 2026).
+  { data: withVoyages({ ...RoaldAmundsen }), offerRefs: [], credit: "HX Expeditions" },
 ];

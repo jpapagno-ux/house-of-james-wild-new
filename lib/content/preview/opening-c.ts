@@ -10,11 +10,10 @@ const img = (id: string, alt: string, credit: string, caption?: string, w = 2560
   ({ src: `https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto:best,c_limit,w_${w}/${id}`, alt, credit, caption });
 const A21 = "Photograph courtesy of Antarctica21";
 const PARTNER = "Partner image";
-const JAMES = "James Papagno, March 2020";
 const ECO = (who?: string) => (who ? `Photo: ${who} for Ecoventura` : "Photograph courtesy of Ecoventura");
 const fmt = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
-const SHIP: Record<string, string> = { "magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer" };
+const SHIP: Record<string, string> = { "magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer", "ms-roald-amundsen": "MS Roald Amundsen", "ms-fridtjof-nansen": "MS Fridtjof Nansen" };
 
 /** The next open sailing of a polar voyage (sold-out sailings skipped). */
 export function polarNext(v: PolarVoyage, plan: string): NextSailing {
@@ -45,7 +44,7 @@ export const CLASSIC_C: Base = {
     { title: "Ashore every day", line: "Daily Zodiac landings led by guides among the South Shetlands and the western Peninsula, with talks on board.", photo: img("jwco/partners/antarctica21/zodiac-among-ice", "Guests in an inflatable boat surrounded by ice", A21, undefined, 1600) },
     { title: "Eighty-eight guests, at most", line: "A small ship, so more time ashore for everyone on board.", photo: img("jwco/partners/antarctica21/adelie-penguins", "A group of Adelie penguins on ice in Antarctica", A21, undefined, 1600) },
   ],
-  close: { photo: img("wildco/voyages/journal/captains-log-antarctica-2020/zodiac-between-giant-icebergs", "A Zodiac full of guests passes between two massive icebergs", JAMES, "A Zodiac between the bergs"), line: "James sailed the Peninsula in February and March 2020. This is the light he still talks about." },
+  close: { photo: img("jwco/partners/antarctica21/voyages/classic-antarctica-air-cruise/3", "Travellers walking across the snow in Antarctica", A21, "Ashore on the Peninsula"), line: "Fly in, sail the Peninsula, fly home: the classic way to Antarctica without the Drake." },
   planHref: "/plan?trip=Classic%20Antarctica%20Air-Cruise",
 };
 
@@ -68,7 +67,7 @@ export const POLAR_CIRCLE_C: Base = {
     { title: "Six days on the Peninsula", line: "Daily Zodiac landings, small group hikes and exploratory Zodiac outings between the South Shetlands and the western Peninsula.", photo: img("jwco/partners/antarctica21/zodiac-among-ice", "Guests in an inflatable boat surrounded by ice", A21, undefined, 1600) },
     { title: "The Drake, by air", line: "About two hours from Punta Arenas to King George Island each way.", photo: img("jwco/partners/antarctica21/aircraft-gravel-runway", "A white four engine aircraft on a gravel runway edged with snow", A21, undefined, 1600) },
   ],
-  close: { photo: img("wildco/voyages/journal/captains-log-antarctica-2020/tabular-iceberg-violet-sunset", "A flat-topped tabular iceberg along the horizon under a violet and orange sunset", JAMES, "A tabular berg at sunset"), line: "It runs in February, the voyage that aims furthest south." },
+  close: { photo: img("jwco/partners/antarctica21/voyages/classic-antarctica-air-cruise/1", "Zodiac excursion in Antarctica", A21, "Among the ice, far south"), line: "It runs in February, the voyage that aims furthest south." },
   planHref: "/plan?trip=Polar%20Circle%20Air-Cruise",
 };
 
@@ -93,4 +92,58 @@ export const ORIGIN_C: Base = {
   ],
   close: { photo: { ...img("wildco/guides/galapagos/destination/landscape/sombrero-chino-13", "Sombrero Chino, the Chinese Hat islet off Santiago", ECO("Maysa Santoro"), "Sombrero Chino"), gravity: "south" }, line: "Every Sunday from San Cristóbal." },
   planHref: "/plan?trip=Origin%20(Ecoventura)",
+};
+
+// HX Expeditions (James, 9 Nov 2026: "we now have approval from the brand, full use, give them credit ... do not use my
+// images ... rebuild like The Exceptional Few entrance, top shelf"). HX's own photographs from travelhx.com, each with
+// its photographer's credit as HX files it. Frames: the place, the way in, the ship. Palette: the pathway accent with
+// the photographs' ice blues and dusk; white on night 13:1.
+const HXP = (who?: string) => (who ? `Photo: ${who} / HX Expeditions` : "Photograph courtesy of HX Expeditions");
+const HXI = (name: string) => `jwco/partners/hx/antarctica/${name}`;
+const HX_PALETTE = { night: "#1E2C3D", deep: "#1A222E", day: "#F6F7F9", hi: "#DCE4EE" };
+
+export const HX_CIRCLE_C: Base = {
+  palette: HX_PALETTE,
+  pathway: "PATH-04",
+  marker: "68° 18′ S · Marguerite Bay",
+  designation: "Voyages · Expedition voyage · HX Expeditions",
+  title: "Antarctic Circle Expedition",
+  place: "Buenos Aires, the Drake Passage both ways, and the Antarctic Peninsula south toward Marguerite Bay",
+  line: "Sixteen days with HX: a night in Buenos Aires, the Drake by sea, then nine days on the Peninsula and an attempt through the sea ice, south of the Antarctic Circle to Marguerite Bay.",
+  frames: [
+    img(HXI("neko-harbour"), "Neko Harbour, Antarctic Peninsula", HXP("Kay Fochtmann"), "Neko Harbour"),
+    img(HXI("lemaire-channel-ms-fridtjof-nansen"), "MS Fridtjof Nansen in the Lemaire Channel, Antarctica", HXP("Espen Mills"), "The way south, the Lemaire Channel"),
+    img(HXI("ms-roald-amundsen-antarctica"), "MS Roald Amundsen at anchor among the ice of the Antarctic Peninsula", HXP("Dan and Zora Avila"), "MS Roald Amundsen"),
+  ],
+  glance: [["Length", "16 days, 15 nights"], ["Ships", "MS Roald Amundsen or MS Fridtjof Nansen"], ["Guests", "Up to 490"], ["Sailings", "7, Dec 2026 to Feb 2029"]],
+  why: [
+    { title: "As far south as the ice allows", line: "HX calls it an attempt: when the summer sea ice opens, the ship crosses 66 degrees for Marguerite Bay.", photo: img(HXI("hidden-bay"), "Hidden Bay on the Antarctic Peninsula", HXP(), undefined, 1600) },
+    { title: "The Drake, by sea both ways", line: "Two days each way with the Expedition Team, lectures in the Science Center, and the seabirds that follow the ship.", photo: img(HXI("drake-passage-birds"), "Seabirds over the Drake Passage", HXP("Andrea Klaussner"), undefined, 1600) },
+    { title: "Nine days on the Peninsula", line: "Landings by small expedition boat, ice cruising, whales and seals; kayaking and a night on the snow can be added on board.", photo: img(HXI("fournier-bay-crabeater-seal"), "A crabeater seal on an ice floe in Fournier Bay, Antarctica", HXP(), undefined, 1600) },
+  ],
+  close: { photo: img(HXI("brown-bluff"), "Brown Bluff on the Antarctic Peninsula", HXP("Yuri Choufour"), "Brown Bluff"), line: "Drinks, gratuities, Wi-Fi and the flights between Buenos Aires and Ushuaia are in the fare." },
+  planHref: "/plan?trip=Antarctic%20Circle%20Expedition%2C%20HX",
+};
+
+export const RA_C: Base = {
+  palette: HX_PALETTE,
+  pathway: "PATH-04",
+  marker: "64° 50′ S · the Antarctic Peninsula",
+  designation: "Voyages · Expedition ship · HX Expeditions",
+  title: "MS Roald Amundsen",
+  place: "HX's hybrid powered expedition ship, sailing to Antarctica from Ushuaia",
+  line: "Built in 2019 for polar waters and named for the first man to reach the South Pole: 490 guests, every cabin outside, the Science Center at her heart. The ship James sailed south in 2020.",
+  frames: [
+    img(HXI("brown-bluff"), "Brown Bluff on the Antarctic Peninsula", HXP("Yuri Choufour"), "Brown Bluff, the Peninsula"),
+    img(HXI("weddell-sea-ms-roald-amundsen"), "MS Roald Amundsen in the Weddell Sea, Antarctica", HXP("Kay Fochtmann"), "The Weddell Sea"),
+    img(HXI("ms-roald-amundsen-antarctica"), "MS Roald Amundsen at anchor among the ice of the Antarctic Peninsula", HXP("Dan and Zora Avila"), "MS Roald Amundsen"),
+  ],
+  glance: [["Guests", "Up to 490"], ["Built", "2019, Norway"], ["Power", "Hybrid"], ["Founder", "Sailed, 2020"]],
+  why: [
+    { title: "The Science Center", line: "Lectures, a small library and workshops with HX's Expedition Team, the heart of the ship.", photo: img(HXI("science-center-ms-roald-amundsen"), "The Science Center aboard MS Roald Amundsen", HXP("Espen Mills"), undefined, 1600) },
+    { title: "Suites with hot tubs", line: "Aft and corner suites with private balconies, some with their own hot tub, and Lindstrøm included.", photo: img(HXI("expedition-suite-mc-balcony"), "The private balcony of an MC Corner Suite aboard MS Roald Amundsen", HXP("Tuan Lam"), undefined, 1600) },
+    { title: "Ashore by small boat", line: "Landings and ice cruising with the Expedition Team; kayaking and camping bookable on board.", photo: img(HXI("neko-harbour"), "Neko Harbour, Antarctic Peninsula", HXP("Kay Fochtmann"), undefined, 1600) },
+  ],
+  close: { photo: img(HXI("hidden-bay"), "Hidden Bay on the Antarctic Peninsula", HXP()), line: "James sailed her to the Antarctic Peninsula in February and March 2020." },
+  planHref: "/plan?trip=MS%20Roald%20Amundsen%2C%20HX",
 };

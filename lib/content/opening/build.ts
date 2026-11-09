@@ -16,7 +16,7 @@ import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import { SHIPS, type ShipEntry } from "@/lib/content/ships";
 import { cruiseOnly, type ShipImage, type ShipRecord } from "@/lib/content/ships/types";
 import type { PolarVoyage } from "@/lib/content/polar";
-import { CLASSIC_C, POLAR_CIRCLE_C, ORIGIN_C, polarNext } from "@/lib/content/preview/opening-c";
+import { CLASSIC_C, POLAR_CIRCLE_C, ORIGIN_C, HX_CIRCLE_C, RA_C, polarNext } from "@/lib/content/preview/opening-c";
 import { today } from "@/lib/dates";
 import { smallWidth } from "./small-images";
 
@@ -115,7 +115,7 @@ function whyFrom(suits: { who: string; line: string }[], days: { title: string; 
 }
 
 /* ---------- ships ---------- */
-const HAND: Record<string, OpeningBase> = { "ecoventura-origin-yacht": ORIGIN_C };
+const HAND: Record<string, OpeningBase> = { "ecoventura-origin-yacht": ORIGIN_C, "ms-roald-amundsen": RA_C };
 
 export function shipOpening(e: ShipEntry): Built | null {
   const d = e.data as ShipRecord;
@@ -149,7 +149,7 @@ export function shipOpening(e: ShipEntry): Built | null {
 }
 
 /* ---------- polar voyages ---------- */
-const POLAR_HAND: Record<string, OpeningBase> = { "classic-antarctica-air-cruise": CLASSIC_C, "polar-circle-air-cruise": POLAR_CIRCLE_C };
+const POLAR_HAND: Record<string, OpeningBase> = { "classic-antarctica-air-cruise": CLASSIC_C, "polar-circle-air-cruise": POLAR_CIRCLE_C, "hx-antarctic-circle-expedition": HX_CIRCLE_C };
 const SHIP_NAME: Record<string, string> = { "magellan-explorer": "Magellan Explorer", "magellan-discoverer": "Magellan Discoverer", "ms-roald-amundsen": "MS Roald Amundsen", "ms-fridtjof-nansen": "MS Fridtjof Nansen" };
 
 export function polarOpening(v: PolarVoyage): Built | null {

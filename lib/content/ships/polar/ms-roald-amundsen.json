@@ -56,45 +56,60 @@
   "A two-level indoor and outdoor Observation Deck, an infinity pool and hot tubs, a sauna, spa and fitness room."
  ],
  "why": [
-  "James sailed her himself: the Antarctic Circle voyage in February and March 2020, calling at Ukraine's Vernadsky research station. The photographs on this page are his, from that voyage.",
+  "James sailed her himself: the Antarctic Circle voyage in February and March 2020, calling at Ukraine's Vernadsky research station.",
   "She sails the Drake Passage by sea, so her voyages reach further south than a flight allows: the Antarctic Circle Expedition attempts Marguerite Bay, south of 66 degrees.",
   "HX's fare includes drinks with meals, gratuities, Wi-Fi and an expedition jacket, and flights between Buenos Aires and Ushuaia on her Antarctic voyages."
  ],
  "hero": {
-  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/kayak-under-expedition-ship-bow",
-  "alt": "Looking up from a sea kayak at the bow of the expedition ship, anchored among icebergs, Antarctic Peninsula, March 2020",
-  "credit": "James Papagno, February to March 2020"
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/ms-roald-amundsen-antarctica.jpg",
+  "alt": "MS Roald Amundsen at anchor among the ice of the Antarctic Peninsula",
+  "credit": "Photo: Dan and Zora Avila / HX Expeditions"
  },
  "gallery": [
   {
-   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/kayaks-beneath-sea-cliff",
-   "alt": "Red sea kayaks beneath a towering sea cliff, Antarctic Peninsula",
-   "credit": "James Papagno, February to March 2020"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/brown-bluff.jpg",
+   "alt": "Brown Bluff on the Antarctic Peninsula",
+   "credit": "Photo: Yuri Choufour / HX Expeditions"
   },
   {
-   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/zodiac-between-giant-icebergs",
-   "alt": "A Zodiac between two massive icebergs, Antarctica",
-   "credit": "James Papagno, February to March 2020"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/weddell-sea-ms-roald-amundsen.jpg",
+   "alt": "MS Roald Amundsen in the Weddell Sea, Antarctica",
+   "credit": "Photo: Kay Fochtmann / HX Expeditions"
   },
   {
-   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/penguin-landing-misty-massif",
-   "alt": "A penguin above a landing party in red parkas, Antarctic Peninsula",
-   "credit": "James Papagno, February to March 2020"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/neko-harbour.jpg",
+   "alt": "Neko Harbour, Antarctic Peninsula",
+   "credit": "Photo: Kay Fochtmann / HX Expeditions"
   },
   {
-   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/kayakers-snow-island",
-   "alt": "Paddlers resting in front of a snow-streaked island, Antarctic Peninsula",
-   "credit": "James Papagno, February to March 2020"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/science-center-ms-roald-amundsen.jpg",
+   "alt": "The Science Center aboard MS Roald Amundsen",
+   "credit": "Photo: Espen Mills / HX Expeditions"
   },
   {
-   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/iceberg-arch",
-   "alt": "An iceberg arch, Antarctic Peninsula",
-   "credit": "James Papagno, February to March 2020"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/expedition-suite-mc-balcony.jpg",
+   "alt": "The private balcony of an MC Corner Suite aboard MS Roald Amundsen",
+   "credit": "Photo: Tuan Lam / HX Expeditions"
   },
   {
-   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/wildco/voyages/journal/captains-log-antarctica-2020/sunset-beside-ice-cliff",
-   "alt": "Late sun beside an ice cliff, Antarctica",
-   "credit": "James Papagno, February to March 2020"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/expedition-suite-ma.jpg",
+   "alt": "The living area of an MA XL Suite with balcony",
+   "credit": "Photo: HX Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/humpback-whale.jpg",
+   "alt": "A humpback whale in Antarctic waters",
+   "credit": "Photo: HX Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/fournier-bay-crabeater-seal.jpg",
+   "alt": "A crabeater seal on an ice floe in Fournier Bay, Antarctica",
+   "credit": "Photo: HX Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/hidden-bay.jpg",
+   "alt": "Hidden Bay on the Antarctic Peninsula",
+   "credit": "Photo: HX Expeditions"
   }
  ],
  "cabins": [
@@ -109,7 +124,12 @@
     "Separate seating with sofa bed",
     "Bath and shower",
     "Walk-in wardrobe"
-   ]
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/expedition-suite-ma.jpg",
+    "alt": "The living area of an MA XL Suite with balcony",
+    "credit": "Photo: HX Expeditions"
+   }
   },
   {
    "type": "MB XL Suite",
@@ -142,7 +162,12 @@
    "deck": "Upper deck, corner",
    "features": [
     "Private balcony with hot tub"
-   ]
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/hx/antarctica/expedition-suite-mc-balcony.jpg",
+    "alt": "The private balcony of an MC Corner Suite aboard MS Roald Amundsen",
+    "credit": "Photo: Tuan Lam / HX Expeditions"
+   }
   },
   {
    "type": "ME Suite with balcony",
@@ -202,7 +227,7 @@
  "faqs": [
   [
    "Has James sailed MS Roald Amundsen?",
-   "Yes. He sailed her on the Antarctic Circle voyage in February and March 2020, calling at Ukraine's Vernadsky research station. The photographs on this page are his."
+   "Yes. He sailed her on the Antarctic Circle voyage in February and March 2020, calling at Ukraine's Vernadsky research station."
   ],
   [
    "How many guests does she carry?",
@@ -232,8 +257,9 @@
   }
  ],
  "sources": [
-  "https://www.travelhx.com/en-us/ships/roald-amundsen/",
-  "https://www.travelhx.com/en-us/cruises/antarctic-circle-expedition/"
+  "https://www.travelhx.com/en-us/cruises/antarctic-circle-expedition-2026-2027/",
+  "https://www.travelhx.com/en-us/cruises/antarctic-circle-expedition/",
+  "https://www.travelhx.com/en-us/ships/roald-amundsen/"
  ],
  "film": null,
  "proofLine": "Founder sailed · 2020 · James sailed MS Roald Amundsen to the Antarctic Circle in February and March 2020",
@@ -243,6 +269,6 @@
   "ages": "Ask us"
  },
  "rateBasis": "per-cruise",
- "photoCredit": "James Papagno, February to March 2020",
+ "photoCredit": "HX Expeditions",
  "checked": "2026-11-09"
 }

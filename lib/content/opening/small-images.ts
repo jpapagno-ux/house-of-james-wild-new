@@ -7,6 +7,7 @@ arcterra/vessels/silolona/instagram=silolona-si-datu-bua-under-sail:640
 A~antarctica-south-georgia-air-cruise=1:1366,2:1366
 A~falklands-south-georgia-antarctica=2:1366
 A~polar-circle-air-cruise=1:1084
+jwco/partners/hx/antarctica=damoy-point-ms-fridtjof-nansen:1200,drake-passage-birds:900,expedition-suite-ma:689,fournier-bay-crabeater-seal:1200,hidden-bay:1200,humpback-whale:1200,orne-islands-ms-fridtjof-nansen:1200,petermann-island:900,weddell-sea-ms-roald-amundsen:1080
 jwco/voyages/fiji/yasawa-princess-ii=g10:1441,g13:1440,g15:1440,g9:1440
 ~amandira=deck-sundown:760,deluxe-cabin:364,dinghy:760,exterior:760
 ~amazon-clipper-premium=cabin-outside:1356,g2:1356,g5:1356,g7:1356,hero:1356

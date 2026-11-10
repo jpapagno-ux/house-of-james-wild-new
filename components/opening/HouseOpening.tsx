@@ -20,7 +20,10 @@ import { toneVars } from "./Tones";
 // Optional paper grain on the night surfaces. House crimson stays the one action colour; the pathway never fills a button.
 
 export type OpeningImage = { src: string; alt: string; caption?: string; credit: string; /** where the subject sits, for the phone cut (Cloudinary gravity: east, south...); default: found automatically */ gravity?: string };
-export type OpeningPalette = { night: string; deep: string; day: string; hi: string };
+/** night, deep, day and hi tone the page. Stays add (James, 10 Nov 2026: "the pathways have unique colors"): `path`, the
+ *  pathway's own accent unmixed, for the rules, numbers and stamp on light bands; `sand`, the property's own mid tone from
+ *  its photographs, the way The Exceptional Few carries --ef-sand onto its dark surface (eyebrows, stamp ink, the arrow). */
+export type OpeningPalette = { night: string; deep: string; day: string; hi: string; path?: string; sand?: string };
 export type NextSailing = { date: string; ship?: string; from?: string; href: string } | null;
 
 const GRAIN = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")";
@@ -124,9 +127,12 @@ export type HouseOpeningProps = {
   tab?: string;
   /** secondary pathways, stamped smaller beside the primary (James, 9 Nov 2026: pathway stamps on the entrance) */
   also?: PathwayId[];
+  /** the house's own Ledger stamp for the record (Founder favorite, Founder stayed...), pressed on a paper tag in the
+   *  night panel, as The Exceptional Few presses its numbered stamp (James, 10 Nov 2026: "stamps, badges, etc.") */
+  badge?: ReactNode;
 };
 
-export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab, also = [] }: HouseOpeningProps) {
+export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab, also = [], badge }: HouseOpeningProps) {
   const pw = PATHWAYS[pathway];
   const night: CSSProperties = { background: `linear-gradient(180deg, ${palette.night} 0%, ${palette.deep} 100%)` };
   return (
@@ -138,15 +144,17 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
         <div className="relative z-[2] max-w-ledger mx-auto px-5 md:px-10 py-16 md:py-24">
           <div className="flex flex-wrap items-center gap-3">
             <span className="house-chip !border-transparent" style={{ background: "var(--tone-ivory)", color: palette.night }}><span aria-hidden="true" className="inline-block w-[6px] h-[6px] rounded-full" style={{ background: pw.accent }} />{pw.name}</span>
-            <span className="ledger-eyebrow" style={{ color: palette.hi }}>{whyLabel}</span>
+            <span className="ledger-eyebrow" style={{ color: palette.sand ?? palette.hi }}>{whyLabel}</span>
           </div>
           {/* the pathway stamp, pressed in the record's ivory as The Exceptional Few presses its number; any secondary pathways
               follow smaller on wide screens */}
           <div className="mt-6 md:mt-0 md:absolute md:right-10 md:top-10 lg:top-14 flex items-center gap-2 pointer-events-none">
-            {also.slice(0, 2).map((a, i) => <PathwayStamp key={a} id={a} ink="var(--tone-ivory)" size={112} rotate={i ? 5 : 3} seed={a.charCodeAt(6) * 11} className="inline-flex md:hidden xl:inline-flex opacity-70 max-md:[&>svg]:w-[104px] max-md:[&>svg]:h-auto" />)}
-            <PathwayStamp id={pathway} ink="var(--tone-ivory)" size={176} rotate={-5} seed={pathway.charCodeAt(6) * 7} className="opacity-90 max-md:[&>svg]:w-[150px] max-md:[&>svg]:h-auto" />
+            {also.slice(0, 2).map((a, i) => <PathwayStamp key={a} id={a} ink={palette.sand ?? "var(--tone-ivory)"} size={112} rotate={i ? 5 : 3} seed={a.charCodeAt(6) * 11} className="inline-flex md:hidden xl:inline-flex opacity-70 max-md:[&>svg]:w-[104px] max-md:[&>svg]:h-auto" />)}
+            {badge && <span className="hidden md:inline-flex -rotate-3 mr-3 p-2.5 shadow-[0_6px_18px_rgba(0,0,0,.35)]" style={{ background: "#F6EFDF" }}>{badge}</span>}
+            <PathwayStamp id={pathway} ink={palette.sand ?? "var(--tone-ivory)"} size={176} rotate={-5} seed={pathway.charCodeAt(6) * 7} className="opacity-90 max-md:[&>svg]:w-[150px] max-md:[&>svg]:h-auto" />
           </div>
-          <p className="mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl md:pr-[210px] xl:pr-0">{line}</p>
+          <p className={`mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl ${badge ? "md:pr-[360px]" : "md:pr-[210px] xl:pr-0"}`}>{line}</p>
+          {badge && <div className="md:hidden mt-8 inline-flex -rotate-2 p-2" style={{ background: "#F6EFDF" }}>{badge}</div>}
           <dl className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 border-t border-white/20 pt-6">
             {glance.map(([k, v]) => (
               <div key={k}><dt className="text-[10.5px] tracking-[0.22em] uppercase" style={{ color: palette.hi }}>{k}</dt><dd className="mt-1.5 ledger-display text-[21px] md:text-[23px] leading-snug">{v}</dd></div>

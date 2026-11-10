@@ -131,7 +131,7 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = f
 /* Overview + facts ---------------------------------------------------------- */
 export function Overview({ quote, answer, facts, paragraphs }: { quote?: string; answer: string; facts: [string, string][]; paragraphs?: string[] }) {
   return (
-    <section id="overview" className="pt-12 md:pt-16 grid lg:grid-cols-[1.35fr_1fr] gap-10 items-start">
+    <section id="overview" className={`pt-12 md:pt-16 grid ${facts.length ? "lg:grid-cols-[1.35fr_1fr]" : "max-w-3xl"} gap-10 items-start`}>
       <div>
         {quote && <p className="ledger-display italic text-2xl md:text-3xl leading-snug">&ldquo;{quote}&rdquo;</p>}
         <AnswerBlock>{answer}</AnswerBlock>
@@ -142,14 +142,14 @@ export function Overview({ quote, answer, facts, paragraphs }: { quote?: string;
           </details>
         )}
       </div>
-      <dl className="border-t ledger-rule text-[15px] ledger-paper px-5">
+      {facts.length > 0 && <dl className="border-t ledger-rule text-[15px] ledger-paper px-5">
         {facts.map(([k, v]) => (
           <div key={k} className="flex justify-between gap-5 py-3 border-b ledger-rule last:border-0">
             <dt className="ledger-eyebrow pt-1 shrink-0">{k}</dt>
             <dd className="text-right">{v}</dd>
           </div>
         ))}
-      </dl>
+      </dl>}
     </section>
   );
 }

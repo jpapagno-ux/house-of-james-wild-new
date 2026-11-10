@@ -1,0 +1,37 @@
+# Stay photo import (scripts/cloudinary/import-stay-photos.mjs; James, 10 Nov 2026: "Yes, move them in").
+# Uploads every stay photograph still served from outside Cloudinary into the house library and commits the
+# address map (lib/content/stay-cloud.json); Vercel then deploys the site with the Cloudinary copies.
+# Needs the repository secret CLOUDINARY_URL (added by James for housekeeping). Safe to re-run.
+name: Stay photo import
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/cloudinary/import-stay-photos.mjs, .github/workflows/stay-photo-import.yml, scripts/cloudinary/import-queue.txt]
+permissions:
+  contents: write
+concurrency:
+  group: stay-photo-import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      - name: Import
+        env:
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+        run: node scripts/cloudinary/import-stay-photos.mjs
+      - name: Commit the map
+        if: always()
+        run: |
+          git config user.name "stay-photo-import"
+          git config user.email "actions@users.noreply.github.com"
+          git add lib/content/stay-cloud.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Stay photos: imported into Cloudinary (stay-cloud.json)"
+          git pull --rebase origin main && git push origin HEAD:main

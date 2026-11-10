@@ -1,3 +1,4 @@
+import { cloudWidthById } from "@/lib/content/stay-cloud";
 // Cloudinary originals narrower than 1,600px among the cruise records' photographs (read 9 Nov 2026 with fl_getinfo,
 // the original's own width). The house opening (components/opening/Pic.tsx) runs these through Cloudinary's AI upscale
 // (e_upscale) before sizing, so a frame filled from a brand's 750px photograph stays sharp; every other photograph is
@@ -56,4 +57,4 @@ export function cloudinaryId(url: string): string | null {
 }
 
 /** The original's width when it is under 1,600px (the frames upscale it), else undefined. */
-export const smallWidth = (url: string) => { const id = cloudinaryId(url); return id ? SMALL.get(id) : undefined; };
+export const smallWidth = (url: string) => { const id = cloudinaryId(url); if (!id) return undefined; const w = SMALL.get(id) ?? cloudWidthById.get(id); return w && w < 1600 ? w : undefined; };

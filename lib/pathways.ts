@@ -17,12 +17,12 @@
 // • Nothing here touches the regenerated library JSON. Record → pathway
 //   assignments live in lib/content/pathways/pathway-map.json.
 //
-// Deep Sea palette (James, 2 Nov 2026: "deeper blues and deeper colours … not so much browns and
-// olives"). Every accent is a fill from lib/palette.ts (DEEP_SEA) and carries white text at AA:
-// Into the Green turquoise green, Between Tides deep teal, Above It All deep cerulean, Where the Wild
-// Lives ocean blue, The Art of Stillness sea glass, Off the Map ink slate, A Place of Our Own deep navy,
-// Rooted in Place deep aqua. The earlier earth tones (and the addendum's proposals) are retired;
-// scripts/check-palette.mjs fails the build on a brown, gold, tan or olive here.
+// The pathway set (James, 10 Nov 2026: "They all seem to be going back to the cruises and the cruise color ...
+// make sure that their pathway color tones are used"; approved the proposed set the same morning). One distinct hue
+// per pathway, so a stay never reads as a cruise page; every accent is a fill from lib/palette.ts (DEEP_SEA, the
+// name kept for the code) and carries white text at AA: Into the Green forest, Between Tides sea teal (the one sea
+// pathway, kept), Above It All alpine slate, Where the Wild Lives safari taupe, The Art of Stillness sage, Off the Map
+// dusk violet, A Place of Our Own mulberry, Rooted in Place heritage ochre. Replaces the 2 Nov all-blue Deep Sea set.
 //
 // The House Standard (James approved, 2 Nov 2026): pathway chips are squared graphite-outline chips
 // with the pathway name; the accent survives only as a small 6px dot. `text` is Graphite and `tint`
@@ -54,7 +54,7 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
   "PATH-01": {
     id: "PATH-01", key: "into-the-green", name: "Into the Green", setting: "Rainforest and jungle",
     line: "Canopy, cloud forest and the river roads between them.",
-    accent: "#11705A", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "overland"],
+    accent: "#2F6B45", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "overland"],
   },
   "PATH-02": {
     id: "PATH-02", key: "between-tides", name: "Between Tides", setting: "Islands and oceans",
@@ -64,32 +64,32 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
   "PATH-03": {
     id: "PATH-03", key: "above-it-all", name: "Above It All", setting: "Mountains and highlands",
     line: "Thin air, long views and the quiet above the tree line.",
-    accent: "#1C6BAE", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "overland", "europe"],
+    accent: "#46607A", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "overland", "europe"],
   },
   "PATH-04": {
     id: "PATH-04", key: "where-the-wild-lives", name: "Where the Wild Lives", setting: "Wildlife and wilderness",
     line: "Game drives, guides and the conservancies that keep the wild wild.",
-    accent: "#1A4A80", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["safaris", "stays"],
+    accent: "#6B5D4C", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["safaris", "stays"],
   },
   "PATH-05": {
     id: "PATH-05", key: "the-art-of-stillness", name: "The Art of Stillness", setting: "Wellness and restoration",
     line: "Hot springs, slow mornings and places built for doing less.",
-    accent: "#4A736D", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "europe"],
+    accent: "#5F6E58", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["stays", "europe"],
   },
   "PATH-06": {
     id: "PATH-06", key: "off-the-map", name: "Off the Map", setting: "Hidden and undiscovered",
     line: "Places with no signpost, filed before anyone else found them.",
-    accent: "#3D4C66", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["overland", "stays", "europe"],
+    accent: "#4E4660", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["overland", "stays", "europe"],
   },
   "PATH-07": {
     id: "PATH-07", key: "a-place-of-our-own", name: "A Place of Our Own", setting: "Private residences",
     line: "Whole houses, whole islands, whole camps: one party, one roof.",
-    accent: "#162D54", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["gatherings", "stays"],
+    accent: "#6B3A4E", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["gatherings", "stays"],
   },
   "PATH-08": {
     id: "PATH-08", key: "rooted-in-place", name: "Rooted in Place", setting: "Heritage and culture",
     line: "Working farms, old houses and hosts whose families never left.",
-    accent: "#08697F", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["europe", "stays", "gatherings"],
+    accent: "#8A5E2A", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["europe", "stays", "gatherings"],
   },
 };
 

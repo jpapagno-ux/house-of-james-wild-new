@@ -217,7 +217,7 @@ export const STAY_HAND_C: Record<string, StayHand> = {
     why: [
       { title: "A living art collection", line: "A significant collection of South African art, hung through the house and shown on art tours.", photo: img(EH("lounge"), "A lounge at Ellerman House hung with South African art", ELL, undefined, 1600) },
       { title: "More than 9,000 labels", line: "A wine archive of more than 9,000 labels, explored in the cellar.", photo: img(EH("wine-cellar"), "The wine cellar at Ellerman House", ELL, undefined, 1600) },
-      { title: "Rooms over the Atlantic", line: "House rooms, suites and two private villas, many facing the sea.", photo: img(EH("ellerman-suite"), "The Ellerman House Suite, its living space and ocean views", ELL, undefined, 1600) },
+      { title: "Rooms over the Atlantic", line: "House rooms, suites and two private villas, many facing the sea.", photo: img(EH("landscape-1"), "Ellerman House above Bantry Bay", ELL, undefined, 1707) },
     ],
     close: { photo: img(EH("legacy-above-the-atlantic"), "Ellerman House above the Atlantic", ELL, "Above the Atlantic"), line: "Where South African soul meets clifftop luxury, above the Atlantic." },
   },

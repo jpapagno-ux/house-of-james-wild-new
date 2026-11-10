@@ -10,7 +10,7 @@
 // • House Crimson stays for the JW seal, the logo, Ledger IDs, key dates and
 //   "Plan with James". It is never a volume colour.
 // • The Heritage set (natural pigments, warm to cool; James confirmed 2 Nov 2026):
-//   Gatherings Terracotta, Safaris Burnt Ochre, Overland Saffron, Europe Olive,
+//   Gatherings Terracotta, Safaris Safari Taupe (was Burnt Ochre), Overland Saffron, Europe Olive,
 //   Voyages Verdigris, Stays Limestone. Each has a base (the 5px tab, map pins and
 //   stamps: `leather` = `pad`), a deep (volume words, AA on Paper: `deep`), a light
 //   (marks on dark grounds) and a mist (an occasional quiet panel: `tint`).
@@ -51,7 +51,11 @@ export const VOLUME_STYLES: Record<VolumeKey, VolumeStyle> = {
   },
   safaris: {
     key: "safaris", roman: "II", label: "Safaris & Reserves", short: "Safaris",
-    leather: "#C2621E", leatherName: "Burnt Ochre", pad: "#C2621E", rgb: "194 98 30", deep: "#6B3510", light: "237 185 138", tint: "#FBF0E6",
+    // Safari Taupe (James, 10 Nov 2026: "change the color tone to this particular color ... for Safaris ... the dark,
+    // this more tone, tan, brown is a better fit ... yes, it's a go"; the Wilderness DumaTau ground #B3A491). Replaces
+    // Burnt Ochre. Leather is the taupe itself; the pad is a step deeper so pins and stamps read on paper (3.9:1);
+    // words use the deep (AA 7.6:1 on Paper, 6.7:1 on the mist).
+    leather: "#B3A491", leatherName: "Safari Taupe", pad: "#8F7F69", rgb: "143 127 105", deep: "#5E5244", light: "179 164 145", tint: "#F3F0EC",
     icon: "acacia", stamp: "postage", words: ["First", "Light"], ring: ["AFRICA · RESERVE POST", "VOL II"], timeMark: "hourglass",
   },
   gatherings: {

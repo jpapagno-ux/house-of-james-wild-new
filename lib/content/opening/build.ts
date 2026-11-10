@@ -19,7 +19,6 @@ import type { PolarVoyage } from "@/lib/content/polar";
 import { CLASSIC_C, POLAR_CIRCLE_C, ORIGIN_C, HX_CIRCLE_C, RA_C, STAY_HAND_C, polarNext } from "@/lib/content/preview/opening-c";
 import { today } from "@/lib/dates";
 import { smallWidth } from "./small-images";
-import { VOLUME_STYLES } from "@/lib/volumes";
 
 export type OpeningBase = Omit<HouseOpeningProps, "next" | "grain">;
 export type Built = OpeningBase & { next: NextSailing };
@@ -208,6 +207,10 @@ const GROUND: Record<string, { dark: string; light: string }> = {
   "Ecuador & Galapagos": { dark: "#1F2F35", light: "#E4D9C4" },
 };
 
+/** The safari taupe (James, 10 Nov 2026, from the Wilderness DumaTau page he sent): the taupe itself, its deep for the
+ *  night (white 12:1, the taupe on it 5:1) and a mid for words and rules on paper (AA, 6:1). */
+const SAFARI = { light: "#B3A491", deep: "#3A3128", text: "#6B5D4C" };
+
 /** A stay's own tones, read from its photographs with Cloudinary's colour analysis (10 Nov 2026): the darkest strong
  *  tone, the light ground, and a mid "sand" like The Exceptional Few's. Add a stay here when its entrance is hand-set. */
 const STAY_TONES: Record<string, { dark: string; light: string; sand: string }> = {
@@ -258,19 +261,20 @@ export function stayOpening(s: StayInput): Built | null {
   const tone = STAY_TONES[s.slug];
   const ground = tone ?? GROUND[s.country ?? ""] ?? GROUND[s.regionSlug ?? ""] ?? GROUND.africa;
   const accent = PATHWAYS[pid]?.accent ?? "#2E2B28";
-  // Safari earth (James, 10 Nov 2026: "I'm seeing these at the same blue that we use for cruises. Doesn't Safaris or
-  // Africa have a different color?"): a stay filed under Safaris & Reserves takes its night from the volume's Burnt
-  // Ochre deep and the property's own dark earth, with only a trace of the pathway; its rules and section numbers
-  // print in the volume's deep. The pathway keeps its own colour where it names itself: the chip dot and the stamp.
+  // Safari taupe (James, 10 Nov 2026: "I'd like to change the color tone to this particular color ... for Safaris ...
+  // the dark, this more tone, tan, brown is a better fit"; the Wilderness DumaTau ground he sent, #B3A491). A stay filed
+  // under Safaris & Reserves takes one khaki family: the night is that taupe taken deep (a touch of the property's own
+  // dark), the stamps and night eyebrows print in the taupe itself, rules, numbers and prices in a darker taupe that
+  // reads on paper, and the paper takes a faint taupe wash. The pathway keeps its own colour only on its chip dot.
+  // Superseded the same morning's Burnt Ochre earth.
   const safari = !!s.volumes?.includes("safaris");
-  const earth = VOLUME_STYLES.safaris.deep;
-  let night = safari ? mix([earth, 45], [ground.dark, 40], [accent, 5], [INK, 10]) : mix([accent, 55], [ground.dark, 30], [INK, 15]);
+  let night = safari ? mix([SAFARI.deep, 85], [ground.dark, 15]) : mix([accent, 55], [ground.dark, 30], [INK, 15]);
   for (let i = 0; i < 8 && contrast("#FFFFFF", night) < 7; i++) night = mix([night, 85], [INK, 15]);
-  let hi = mix([ground.light, 85], ["#FFFFFF", 15]);
+  let hi = safari ? mix([SAFARI.light, 45], ["#FFFFFF", 55]) : mix([ground.light, 85], ["#FFFFFF", 15]);
   if (contrast(hi, night) < 4.5) hi = mix([hi, 70], ["#FFFFFF", 30]);
-  let sand = tone?.sand ?? mix([ground.light, 70], [accent, 30]);
+  let sand = safari ? SAFARI.light : tone?.sand ?? mix([ground.light, 70], [accent, 30]);
   for (let i = 0; i < 6 && contrast(sand, night) < 4.5; i++) sand = mix([sand, 75], ["#FFFFFF", 25]);
-  const palette = { night, deep: mix([night, 60], [INK, 40]), day: mix(["#FFFFFF", 92], [ground.light, 5], safari ? [earth, 3] : [accent, 3]), hi, path: safari ? earth : accent, sand };
+  const palette = { night, deep: mix([night, 60], [INK, 40]), day: safari ? mix(["#FFFFFF", 90], [SAFARI.light, 10]) : mix(["#FFFFFF", 92], [ground.light, 5], [accent, 3]), hi, path: safari ? SAFARI.text : accent, sand };
   // hand-set stays (James, 10 Nov 2026): brand photographs chosen and ordered by hand; the palette stays the record's
   const handSet = STAY_HAND_C[s.slug];
   if (handSet) return { ...handSet, palette, pathway: pid, planHref: s.planHref, next: null };

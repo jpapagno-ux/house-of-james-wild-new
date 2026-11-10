@@ -11,11 +11,21 @@ import crypto from "node:crypto";
 
 const args = process.argv.slice(2);
 const LIMIT = Number(args[args.indexOf("--limit") + 1] || 100000) || 100000;
-const url = process.env.CLOUDINARY_URL ? new URL(process.env.CLOUDINARY_URL) : null;
-if (!url) { console.error("Set CLOUDINARY_URL."); process.exit(1); }
+const MAPFILE = "lib/content/stay-cloud.json";
+// The key is read leniently (the Cloudinary console shows it as CLOUDINARY_URL=cloudinary://..., often pasted whole, or
+// with quotes or spaces). Problems are written into the map file's lastRun, never the key itself, so the run can be
+// checked from the repository without reading the workflow log.
+const report = (status, reason) => { const st = JSON.parse(fs.readFileSync(MAPFILE, "utf8")); st.lastRun = { at: new Date().toISOString(), status, reason }; fs.writeFileSync(MAPFILE, JSON.stringify(st, null, 1) + "\n"); };
+const raw = (process.env.CLOUDINARY_URL ?? "").trim().replace(/^export\s+/i, "").replace(/^CLOUDINARY_URL\s*=\s*/i, "").replace(/^["']|["']$/g, "").trim();
+let url = null;
+try { url = raw ? new URL(raw) : null; } catch { url = null; }
+if (!url || url.protocol !== "cloudinary:" || !url.username || !url.password || !url.hostname) {
+  report("not started", !raw ? "CLOUDINARY_URL is empty in this workflow (the secret is missing, or saved under another name or as an environment secret)" : `CLOUDINARY_URL is not in the form cloudinary://<api_key>:<api_secret>@<cloud_name> (${raw.startsWith("cloudinary://") ? "it starts cloudinary:// but the key, secret or cloud name is missing" : "it does not start with cloudinary://"}; ${raw.length} characters)`);
+  console.error("CLOUDINARY_URL missing or malformed; see lastRun in lib/content/stay-cloud.json");
+  process.exit(0);
+}
 const KEY = decodeURIComponent(url.username), SECRET = decodeURIComponent(url.password), CLOUD = url.hostname;
 const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474/";
-const MAPFILE = "lib/content/stay-cloud.json";
 const store = JSON.parse(fs.readFileSync(MAPFILE, "utf8"));
 store.map ??= {}; store.failed ??= {};
 
@@ -62,5 +72,7 @@ async function worker() {
   }
 }
 await Promise.all(Array.from({ length: 6 }, worker));
+save();
+store.lastRun = { at: new Date().toISOString(), status: "finished", reason: `${done} imported, ${failed} failed, ${Object.keys(store.map).length} in the map` };
 save();
 console.log(`Done: ${done} imported, ${failed} failed, ${Object.keys(store.map).length} in the map.`);

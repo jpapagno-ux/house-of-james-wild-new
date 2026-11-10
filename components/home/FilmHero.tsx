@@ -71,7 +71,9 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
           <source src={loop.mp4} type="video/mp4" />
         </video>
       )}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/15 to-black/80" />
+      {/* a lighter fade (James, 10 Nov 2026: "slightly less color fade under the home landing page photo"): enough at
+          the top for the header and at the foot for the headline, the photograph clear between */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/5 to-black/60" />
 
       {/* Ledger frame: a hairline inset from the edges */}
       <div className="pointer-events-none absolute inset-3 md:inset-5 border border-white/25" aria-hidden="true" />

@@ -22,7 +22,7 @@
 // per pathway, so a stay never reads as a cruise page; every accent is a fill from lib/palette.ts (DEEP_SEA, the
 // name kept for the code) and carries white text at AA: Into the Green forest, Between Tides sea teal (the one sea
 // pathway, kept), Above It All alpine slate, Where the Wild Lives safari taupe, The Art of Stillness sage, Off the Map
-// dusk violet, A Place of Our Own mulberry, Rooted in Place heritage ochre. Replaces the 2 Nov all-blue Deep Sea set.
+// dusk violet, A Place of Our Own mulberry, Rooted in Place terracotta rose (James, 10 Nov 2026: "go with terracotta rose"). Replaces the 2 Nov all-blue Deep Sea set.
 //
 // The House Standard (James approved, 2 Nov 2026): pathway chips are squared graphite-outline chips
 // with the pathway name; the accent survives only as a small 6px dot. `text` is Graphite and `tint`
@@ -89,7 +89,7 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
   "PATH-08": {
     id: "PATH-08", key: "rooted-in-place", name: "Rooted in Place", setting: "Heritage and culture",
     line: "Working farms, old houses and hosts whose families never left.",
-    accent: "#8A5E2A", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["europe", "stays", "gatherings"],
+    accent: "#9C4F45", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["europe", "stays", "gatherings"],
   },
 };
 

@@ -76,7 +76,7 @@ export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
   cerulean: { name: "Alpine Slate (Above It All)", fill: "#46607A", tint: "#FFFFFF" },
   slate: { name: "Dusk Violet (Off the Map)", fill: "#4E4660", tint: "#FFFFFF" },
   teal: { name: "Sea Teal (Between Tides)", fill: "#0C5D61", tint: "#FFFFFF" },
-  aqua: { name: "Heritage Ochre (Rooted in Place)", fill: "#8A5E2A", tint: "#FFFFFF" },
+  aqua: { name: "Terracotta Rose (Rooted in Place)", fill: "#9C4F45", tint: "#FFFFFF" },
   turquoise: { name: "Forest (Into the Green)", fill: "#2F6B45", tint: "#FFFFFF" },
   seaGlass: { name: "Sage (The Art of Stillness)", fill: "#5F6E58", tint: "#FFFFFF" },
 };

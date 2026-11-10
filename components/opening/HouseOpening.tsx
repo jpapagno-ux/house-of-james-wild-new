@@ -84,7 +84,7 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
           </div>
         ))}
         <div aria-hidden="true" className="absolute inset-0 z-10 mix-blend-soft-light" style={{ opacity: 0.55 * between, background: `radial-gradient(120% 90% at ${15 + 70 * p}% 30%, ${accent} 0%, transparent 60%)` }} />
-        <div aria-hidden="true" className="absolute inset-0 z-10" style={{ background: `linear-gradient(180deg, rgba(26,24,22,.38) 0%, transparent 32%, transparent 52%, ${palette.night} 100%)` }} />
+        <div aria-hidden="true" className="absolute inset-0 z-10" style={{ background: `linear-gradient(180deg, rgba(26,24,22,.28) 0%, transparent 28%, transparent 60%, ${palette.night}D9 100%)` }} />
         <Grain on={grain} />
         <div aria-hidden="true" className="pointer-events-none absolute inset-3 md:inset-5 z-10 border border-white/25" />
         {/* the volume tab (House Standard: a 5px tab in the volume colour), on the frame's top edge */}
@@ -190,7 +190,7 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
 
       <section className="relative h-[70svh] overflow-hidden text-white" style={{ background: palette.deep }} aria-label={close.photo.alt}>
         <div className="absolute inset-0 ef-drift-pan"><Pic src={close.photo.src} alt={close.photo.alt} sizes="100vw" portrait="3:4" gravity={close.photo.gravity} className="object-cover" /></div>
-        <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, ${palette.deep} 0%, transparent 30%, transparent 55%, ${palette.deep}E6 100%)` }} />
+        <div aria-hidden="true" className="absolute inset-0" style={{ background: `linear-gradient(180deg, ${palette.deep}B3 0%, transparent 26%, transparent 60%, ${palette.deep}C2 100%)` }} />
         <Grain on={grain} />
         <div className="relative z-[2] h-full max-w-ledger mx-auto px-5 md:px-10 flex items-end pb-12 md:pb-16">
           <p className="ledger-display italic text-[24px] md:text-[34px] leading-snug max-w-3xl">{close.line}</p>

@@ -49,6 +49,8 @@ import OnTheseRoutes, { type RouteCard } from "@/components/stay/OnTheseRoutes";
 import { roomsFor } from "@/lib/content/stay-rooms";
 import { voyagesThrough } from "@/lib/content/ships/either-side";
 import { RecordCard } from "@/components/hub/Hub";
+import ToneCard from "@/components/hub/ToneCard";
+import { stayTone } from "@/lib/content/stay-tone";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import type { ChartData } from "@/components/destination/LedgerChart";
@@ -431,10 +433,10 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           )}
           {!boat && sistersFor(s.slug) && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="sisters-heading">
-              <p className="ledger-eyebrow ledger-crimson">Sister lodges · {sistersFor(s.slug)!.group.name}</p>
+              <p className="ledger-eyebrow" style={{ color: "var(--tone-path, #2E2B28)" }}>Sister lodges · {sistersFor(s.slug)!.group.name}</p>
               <h2 id="sisters-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} Has Family</h2>
               <p className="mt-2 text-[15.5px] ledger-muted max-w-2xl">{sistersFor(s.slug)!.group.line}</p>
-              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{sistersFor(s.slug)!.stays.map((x) => <li key={x.slug}><RecordCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={recordHref("stay", x.slug)} /></li>)}</ul>
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{sistersFor(s.slug)!.stays.map((x) => <li key={x.slug}><ToneCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={recordHref("stay", x.slug)} eyebrow={x.country ?? undefined} {...stayTone(x.slug)} /></li>)}</ul>
             </section>
           )}
           <FromTheJournal posts={postsForStay(s.slug)} />
@@ -455,9 +457,9 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           {boat ? <StayBeforeYouSail vessel={s.slug} name={s.name} /> : <ContinueBySea stay={s.slug} />}
           {more.length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="more-heading">
-              <p className="ledger-eyebrow ledger-crimson">{boat ? `Also sailing ${boat.name}` : `Also in ${s.country}`}</p>
+              <p className="ledger-eyebrow" style={boat ? undefined : { color: "var(--tone-path, #2E2B28)" }}>{boat ? `Also sailing ${boat.name}` : `Also in ${s.country}`}</p>
               <h2 id="more-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{boat ? "More Ships on These Waters" : <>More Stays We&rsquo;d Send You To</>}</h2>
-              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}><RecordCard name={boat ? vesselOf(x.slug)?.name ?? x.name : x.name} id={x.ledgerId ?? ""} line={boat ? `${(vesselOf(x.slug)?.kind ?? "small ship").replace(/^\w/, (c) => c.toUpperCase())} sailing ${boat.name}` : x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={boat ? vesselHref(x.slug) : recordHref("stay", x.slug)} {...(boat ? { eyebrow: `Voyage · ${boat.name}`, volume: "voyages" as const } : {})} /></li>)}</ul>
+              <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{more.map((x) => <li key={x.slug}>{boat ? <RecordCard name={vesselOf(x.slug)?.name ?? x.name} id={x.ledgerId ?? ""} line={`${(vesselOf(x.slug)?.kind ?? "small ship").replace(/^\w/, (c) => c.toUpperCase())} sailing ${boat.name}`} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={vesselHref(x.slug)} eyebrow={`Voyage · ${boat.name}`} volume="voyages" /> : <ToneCard name={x.name} id={x.ledgerId ?? ""} line={x.tagline ?? ""} image={{ url: x.hero as string, alt: `${x.name}, ${x.country}` }} href={recordHref("stay", x.slug)} eyebrow={x.country ?? undefined} {...stayTone(x.slug)} />}</li>)}</ul>
             </section>
           )}
           {IGGI_ON && (

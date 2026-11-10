@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { RecordCard } from "@/components/hub/Hub";
+import ToneCard from "@/components/hub/ToneCard";
 import { PathwayChips } from "@/components/pathways/Pathway";
 import type { Pathway } from "@/lib/pathways";
 import type { PathwayStay } from "@/lib/content/pathways";
@@ -15,7 +15,7 @@ export default function FollowThePathway({ primary, secondary, related, pathwayH
     <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby={`${id}-heading`}>
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
         <div>
-          <p className="ledger-eyebrow ledger-crimson">Follow the pathway</p>
+          <p className="ledger-eyebrow" style={{ color: primary.accent }}>Follow the pathway</p>
           <h2 id={`${id}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">More Along {primary.name}</h2>
           <p className="mt-2 text-[15.5px] ledger-muted max-w-xl">{primary.line}</p>
         </div>
@@ -27,7 +27,7 @@ export default function FollowThePathway({ primary, secondary, related, pathwayH
       {related.length > 0 ? (
         <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {related.map((r) => (
-            <li key={r.slug}><RecordCard name={r.stay.name} id={r.ledgerId ?? r.slug} line={r.stay.tagline ?? r.primary.setting} image={{ url: r.stay.hero ?? "", alt: altFor(r.stay.hero ?? "", r.stay.name, r.stay.country) }} href={r.href} eyebrow={r.stay.country ?? undefined} /></li>
+            <li key={r.slug}><ToneCard name={r.stay.name} id={r.ledgerId ?? r.slug} line={r.stay.tagline ?? r.primary.setting} image={{ url: r.stay.hero ?? "", alt: altFor(r.stay.hero ?? "", r.stay.name, r.stay.country) }} href={r.href} eyebrow={r.stay.country ?? undefined} accent={r.primary.accent} pathway={r.primary.name} /></li>
           ))}
         </ul>
       ) : (

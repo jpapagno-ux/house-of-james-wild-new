@@ -6,7 +6,8 @@ import { buildMetadata } from "@/lib/seo";
 // Stays with the house opening, tones and tint (James, 9 Nov 2026: "make the stays similar to the exceptional few
 // entrance and pathway colors, volume colors and tints, and show me a few examples from different countries").
 // Preview only: unlisted and noindex; the live stay pages are unchanged until James approves.
-const PREVIEW_STAYS = ["wilderness-dumatau", "ulum-moab", "beckon-longitude-131", "aguas-claras", "como-shambhala-estate", "da-licenca"];
+// 10 Nov 2026: Singita Faru Faru and Ellerman House join, with DumaTau, as hand-set entrances on brand photographs.
+const PREVIEW_STAYS = ["wilderness-dumatau", "singita-faru-faru-lodge", "ellerman-house", "ulum-moab", "beckon-longitude-131", "aguas-claras", "como-shambhala-estate", "da-licenca"];
 export const dynamicParams = false;
 export function generateStaticParams() { return PREVIEW_STAYS.map((slug) => ({ slug })); }
 type P = { params: Promise<{ slug: string }> };

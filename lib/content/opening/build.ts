@@ -16,7 +16,7 @@ import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import { SHIPS, type ShipEntry } from "@/lib/content/ships";
 import { cruiseOnly, type ShipImage, type ShipRecord } from "@/lib/content/ships/types";
 import type { PolarVoyage } from "@/lib/content/polar";
-import { CLASSIC_C, POLAR_CIRCLE_C, ORIGIN_C, HX_CIRCLE_C, RA_C, polarNext } from "@/lib/content/preview/opening-c";
+import { CLASSIC_C, POLAR_CIRCLE_C, ORIGIN_C, HX_CIRCLE_C, RA_C, STAY_HAND_C, polarNext } from "@/lib/content/preview/opening-c";
 import { today } from "@/lib/dates";
 import { smallWidth } from "./small-images";
 
@@ -243,6 +243,9 @@ export function stayOpening(s: StayInput): Built | null {
   let hi = mix([ground.light, 85], ["#FFFFFF", 15]);
   if (contrast(hi, night) < 4.5) hi = mix([hi, 70], ["#FFFFFF", 30]);
   const palette = { night, deep: mix([night, 60], [INK, 40]), day: mix(["#FFFFFF", 93], [ground.light, 4], [accent, 3]), hi };
+  // hand-set stays (James, 10 Nov 2026): brand photographs chosen and ordered by hand; the palette stays the record's
+  const handSet = STAY_HAND_C[s.slug];
+  if (handSet) return { ...handSet, palette, pathway: pid, planHref: s.planHref, next: null };
   const img = (i: { url: string; alt: string }): ShipImage => ({ url: i.url, alt: i.alt });
   // frames: a place, then the way in, then the stay itself (its own hero), as The Exceptional Few arrive
   const hand = order ? (() => { const cut = order.indexOf("|"); const get = (xs: string[]) => xs.map(byName).filter((x): x is { url: string; alt: string } => !!x).map(img);

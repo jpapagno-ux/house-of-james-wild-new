@@ -1,3 +1,4 @@
+import small from "./cloud-small.json";
 import { cloudWidthById } from "@/lib/content/stay-cloud";
 // Cloudinary originals narrower than 1,600px among the cruise records' photographs (read 9 Nov 2026 with fl_getinfo,
 // the original's own width). The house opening (components/opening/Pic.tsx) runs these through Cloudinary's AI upscale
@@ -57,4 +58,7 @@ export function cloudinaryId(url: string): string | null {
 }
 
 /** The original's width when it is under 1,600px (the frames upscale it), else undefined. */
-export const smallWidth = (url: string) => { const id = cloudinaryId(url); if (!id) return undefined; const w = SMALL.get(id) ?? cloudWidthById.get(id); return w && w < 1600 ? w : undefined; };
+// every stay photograph under 1,600px already in Cloudinary, read from the library (James, 10 Nov 2026: "use Cloudinary's
+// AI to really improve these and make them sharper"): cloud-small.json, refreshed from a Cloudinary search
+const LIB_SMALL = small as Record<string, number>;
+export const smallWidth = (url: string) => { const id = cloudinaryId(url); if (!id) return undefined; const w = SMALL.get(id) ?? LIB_SMALL[id] ?? cloudWidthById.get(id); return w && w < 1600 ? w : undefined; };

@@ -732,3 +732,7 @@ li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in s
    only the mist band, never every section. */
 .house-tones--safari .jw-band--mist { background: #D9D1C8; }
 .house-tones--safari .jw-band--mist .ledger-muted { color: #5A5249; }
+
+/* Tone cards (components/hub/ToneCard.tsx): the arrow cell fills with the card's own accent on hover. */
+.jw-tone-card:hover [style*="--a"] > svg { color: #FFFFFF; }
+.jw-tone-card:hover span[aria-hidden="true"][style*="--a"] { background: var(--a); }

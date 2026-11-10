@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { RecordCard } from "@/components/hub/Hub";
+import ToneCard from "@/components/hub/ToneCard";
+import { vesselChipsFor } from "@/lib/content/pathways";
+import { PATHWAYS } from "@/lib/pathways";
 import { stayBySlug, vesselBySlug } from "@/lib/content/stays";
 import { vessel } from "@/lib/content/vessels";
 import { shipBySlug, shipPath } from "@/lib/content/ships";
@@ -9,7 +11,10 @@ import { pairingFor, vesselsFor, SEASONS, SISTER, type Pairing } from "@/lib/con
 // on the Bali, Sumba and Rote stays. Only released stays and vessels with a page render; a block
 // with nothing to show renders nothing. Stays ink green, voyages navy (lib/volumes.ts via RecordCard).
 
-type Card = { key: string; name: string; id: string; line: string; image: { url: string; alt: string }; href: string; eyebrow?: string; volume: "stays" | "voyages" };
+type Card = { key: string; name: string; id: string; line: string; image: { url: string; alt: string }; href: string; eyebrow?: string; volume: "stays" | "voyages"; accent?: string; pathway?: string };
+
+/** a vessel's own primary pathway: its accent and name for the card */
+const toneOf = (slug: string) => { const c = vesselChipsFor(slug); return c ? { accent: c.primary.accent ?? (PATHWAYS as Record<string, { accent: string }>)[c.primary.id]?.accent, pathway: c.primary.name } : {}; };
 
 function stayCard(slug: string): Card | null {
   const s = stayBySlug(slug);
@@ -20,21 +25,21 @@ function stayCard(slug: string): Card | null {
 function vesselCard(p: Pairing): Card | null {
   const seasons = p.seasons.map((k) => `${SEASONS[k].label} ${SEASONS[k].short}`).join(" · ");
   const ship = shipBySlug(p.vessel);
-  if (ship) return { key: ship.slug, name: ship.data.name, id: (ship.reg as { ledgerId?: string }).ledgerId ?? "", line: p.region, image: { url: ship.data.hero.url, alt: ship.data.hero.alt }, href: shipPath(ship.slug), eyebrow: seasons || "Voyage", volume: "voyages" };
+  if (ship) return { key: ship.slug, name: ship.data.name, id: (ship.reg as { ledgerId?: string }).ledgerId ?? "", line: p.region, image: { url: ship.data.hero.url, alt: ship.data.hero.alt }, href: shipPath(ship.slug), eyebrow: seasons || "Voyage", volume: "voyages", ...toneOf(p.vessel) };
   const v = vesselBySlug(p.vessel);
   if (!v?.hero) return null;
-  return { key: v.slug, name: vessel(v.slug)?.name ?? v.name, id: v.ledgerId ?? "", line: p.region, image: { url: v.hero, alt: v.name }, href: `/stays/${v.slug}`, eyebrow: seasons || "Voyage", volume: "voyages" };
+  return { key: v.slug, name: vessel(v.slug)?.name ?? v.name, id: v.ledgerId ?? "", line: p.region, image: { url: v.hero, alt: v.name }, href: `/stays/${v.slug}`, eyebrow: seasons || "Voyage", volume: "voyages", ...toneOf(p.vessel) };
 }
 
 function Block({ id, eyebrow, title, intro, cards }: { id: string; eyebrow: string; title: string; intro: string; cards: Card[] }) {
   if (!cards.length) return null;
   return (
     <section id={id} className="mt-16 md:mt-24" aria-labelledby={`${id}-h`}>
-      <p className="ledger-eyebrow ledger-crimson">{eyebrow}</p>
+      <p className="ledger-eyebrow" style={{ color: "var(--tone-path, #2E2B28)" }}>{eyebrow}</p>
       <h2 id={`${id}-h`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">{title}</h2>
       <p className="mt-3 text-[16px] leading-relaxed ledger-muted max-w-3xl">{intro}</p>
       <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {cards.map(({ key, ...c }) => <li key={key}><RecordCard {...c} /></li>)}
+        {cards.map(({ key, volume: _v, ...c }) => <li key={key}><ToneCard {...c} /></li>)}
       </ul>
       <Link href="/plan?place=Indonesia" className="ledger-btn ledger-btn--house mt-8">Plan with James</Link>
     </section>

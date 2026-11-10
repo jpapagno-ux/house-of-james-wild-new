@@ -717,3 +717,18 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 .house-tones--stay .jw-band--night .ledger-eyebrow, .house-tones--stay .jw-band--night .ledger-crimson:not(a):not(button) { color: var(--tone-sand, var(--tone-hi)) !important; }
 .house-tones--stay .jw-band--night [data-sechead]::before { background: var(--tone-sand, var(--tone-hi)); }
 .house-tones--stay #overview dl.ledger-paper { border-top-color: var(--tone-path); }
+
+/* "Where to start" buttons (James, 10 Nov 2026: "color coded with some slight tint and gradient so they stand out"):
+   a soft wash of the page's tone (--tone-path; Graphite where a page has none) fading to white, a firmer edge and a
+   lift on hover. Three steps of the same tone, so the three read as one family. */
+.jw-start { --t: var(--tone-path, #2E2B28); border-color: color-mix(in srgb, var(--t) 28%, #DCD7D0);
+  background: linear-gradient(100deg, color-mix(in srgb, var(--t) 13%, #FFFFFF) 0%, color-mix(in srgb, var(--t) 4%, #FFFFFF) 55%, #FFFFFF 100%); }
+li:nth-child(2) > .jw-start { background: linear-gradient(100deg, color-mix(in srgb, var(--t) 18%, #FFFFFF) 0%, color-mix(in srgb, var(--t) 6%, #FFFFFF) 55%, #FFFFFF 100%); }
+li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in srgb, var(--t) 23%, #FFFFFF) 0%, color-mix(in srgb, var(--t) 8%, #FFFFFF) 55%, #FFFFFF 100%); }
+.jw-start:hover { border-color: var(--t); box-shadow: 0 6px 18px -10px color-mix(in srgb, var(--t) 60%, transparent); }
+
+/* Safari stays (James, 10 Nov 2026, the Wilderness DumaTau taupe #B3A491): one band on the page takes the taupe itself,
+   softened by half with white, as the brand's own pages do; quiet text there is darkened to stay AA. Tans sparingly:
+   only the mist band, never every section. */
+.house-tones--safari .jw-band--mist { background: #D9D1C8; }
+.house-tones--safari .jw-band--mist .ledger-muted { color: #5A5249; }

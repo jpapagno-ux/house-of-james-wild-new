@@ -7,7 +7,8 @@ import { INSTRUMENTS, HOW_PATH } from "@/lib/content/instruments";
 // with easy to see, easy to understand buttons ... into the color pathway tone ... organized for both desktop and
 // mobile"): number, name and when to use it, full width on a phone, three across on a wide screen. The rule takes the
 // page's pathway colour (--tone-path) where it has one, Graphite elsewhere. `atlasHref` points at this page's own map
-// when it has one; `iggiHref` at the page's Iggi panel.
+// when it has one; `iggiHref` at the page's Iggi panel. Each button carries a soft wash of that colour fading to white
+// (James, 10 Nov 2026: "color coded with some slight tint and gradient so they stand out"); styles in globals.css (.jw-start).
 const WHEN: Record<string, string> = { compass: "Not sure where to go", atlas: "See where it sits", iggi: "Ask a question" };
 
 export default function InstrumentsStrip({ atlasHref, iggiHref = "#iggi", className = "" }: { atlasHref?: string; iggiHref?: string; className?: string }) {
@@ -21,7 +22,7 @@ export default function InstrumentsStrip({ atlasHref, iggiHref = "#iggi", classN
       <ul className="mt-4 grid gap-3 sm:grid-cols-3">
         {INSTRUMENTS.map((i) => (
           <li key={i.key}>
-            <Link href={hrefFor(i.key, i.href)} className="group flex items-stretch h-full min-h-[64px] border ledger-border bg-white hover:border-[var(--tone-path,#2E2B28)] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+            <Link href={hrefFor(i.key, i.href)} className="jw-start group flex items-stretch h-full min-h-[68px] border transition-[background,border-color,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
               <span aria-hidden="true" className="w-[4px] shrink-0" style={{ background: "var(--tone-path, #2E2B28)" }} />
               <span className="flex-1 px-4 py-3">
                 <span className="block font-mono text-[10.5px] tracking-[0.16em] ledger-muted">{i.no} · {WHEN[i.key]}</span>

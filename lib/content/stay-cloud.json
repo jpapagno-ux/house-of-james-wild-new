@@ -1,0 +1,5 @@
+{
+  "_note": "Stay photographs re-hosted on Cloudinary by scripts/cloudinary/import-stay-photos.mjs (James, 10 Nov 2026: \"Yes, move them in\"). Key: the photograph's original address; value: its Cloudinary public id and size. Written by the Stay photo import workflow; do not edit by hand.",
+  "map": {},
+  "failed": {}
+}

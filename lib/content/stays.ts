@@ -1,3 +1,4 @@
+import { toCloud } from "./stay-cloud";
 // Stays, from the Ledger export (scripts/export-stays.py → stays.json).
 // A stay gets its own page only when it has a hero photo and some content.
 import data from "./stays.json";
@@ -49,7 +50,8 @@ export const ENGINE_OVERRIDE: Record<string, string> = {
   "kayumanis-jimbaran-private-estates": "kayumanis-jimbaran-private-estates-",
 };
 
-const RECORDS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, name: cleanName(s), ...(HERO_OVERRIDE[s.slug] ? { hero: HERO_OVERRIDE[s.slug] } : {}), ...(!s.engine && ENGINE_OVERRIDE[s.slug] ? { engine: ENGINE_OVERRIDE[s.slug] } : {}) }));
+// photographs moved into Cloudinary are served from there (lib/content/stay-cloud.ts)
+const RECORDS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, hero: toCloud(s.hero), gallery: (s.gallery ?? []).map((g) => toCloud(g)), name: cleanName(s), ...(HERO_OVERRIDE[s.slug] ? { hero: HERO_OVERRIDE[s.slug] } : {}), ...(!s.engine && ENGINE_OVERRIDE[s.slug] ? { engine: ENGINE_OVERRIDE[s.slug] } : {}) }));
 // Vessels filed as stays belong in Voyages (James, 1 Nov 2026; lib/content/vessels.ts): every
 // Stays list, count, pin and feed reads STAYS, so they never show as hotels.
 export const STAYS: StayData[] = RECORDS.filter((s) => !isVessel(s));

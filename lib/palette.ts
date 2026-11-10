@@ -71,14 +71,14 @@ export const HOUSE_SET = [HOUSE.paper, HOUSE.mist, HOUSE.stone, HOUSE.stoneText,
 export type DeepSeaKey = "navy" | "ocean" | "cerulean" | "slate" | "teal" | "aqua" | "turquoise" | "seaGlass";
 export type Swatch = { name: string; fill: string; tint: string };
 export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
-  navy: { name: "Deep Navy", fill: "#162D54", tint: "#FFFFFF" },
-  ocean: { name: "Ocean Blue", fill: "#1A4A80", tint: "#FFFFFF" },
-  cerulean: { name: "Deep Cerulean", fill: "#1C6BAE", tint: "#FFFFFF" },
-  slate: { name: "Ink Slate", fill: "#3D4C66", tint: "#FFFFFF" },
-  teal: { name: "Deep Teal", fill: "#0C5D61", tint: "#FFFFFF" },
-  aqua: { name: "Deep Aqua", fill: "#08697F", tint: "#FFFFFF" },
-  turquoise: { name: "Turquoise Green", fill: "#11705A", tint: "#FFFFFF" },
-  seaGlass: { name: "Sea Glass", fill: "#4A736D", tint: "#FFFFFF" },
+  navy: { name: "Mulberry (A Place of Our Own)", fill: "#6B3A4E", tint: "#FFFFFF" },
+  ocean: { name: "Safari Taupe (Where the Wild Lives)", fill: "#6B5D4C", tint: "#FFFFFF" },
+  cerulean: { name: "Alpine Slate (Above It All)", fill: "#46607A", tint: "#FFFFFF" },
+  slate: { name: "Dusk Violet (Off the Map)", fill: "#4E4660", tint: "#FFFFFF" },
+  teal: { name: "Sea Teal (Between Tides)", fill: "#0C5D61", tint: "#FFFFFF" },
+  aqua: { name: "Heritage Ochre (Rooted in Place)", fill: "#8A5E2A", tint: "#FFFFFF" },
+  turquoise: { name: "Forest (Into the Green)", fill: "#2F6B45", tint: "#FFFFFF" },
+  seaGlass: { name: "Sage (The Art of Stillness)", fill: "#5F6E58", tint: "#FFFFFF" },
 };
 
 /** Marks only (never a text fill): the aqua sun of the On the Horizon stamp, on light and on dark grounds. */

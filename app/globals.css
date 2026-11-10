@@ -371,14 +371,14 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
    accent (fills, markers), an AA text variant (words on white or card) and a tint (quiet wash).
    The name is always printed beside the colour. */
 :root {
-  --jw-path-01: #11705A; --jw-path-01-text: #2E2B28; --jw-path-01-tint: #FFFFFF;
+  --jw-path-01: #2F6B45; --jw-path-01-text: #2E2B28; --jw-path-01-tint: #FFFFFF;
   --jw-path-02: #0C5D61; --jw-path-02-text: #2E2B28; --jw-path-02-tint: #FFFFFF;
-  --jw-path-03: #1C6BAE; --jw-path-03-text: #2E2B28; --jw-path-03-tint: #FFFFFF;
-  --jw-path-04: #1A4A80; --jw-path-04-text: #2E2B28; --jw-path-04-tint: #FFFFFF;
-  --jw-path-05: #4A736D; --jw-path-05-text: #2E2B28; --jw-path-05-tint: #FFFFFF;
-  --jw-path-06: #3D4C66; --jw-path-06-text: #2E2B28; --jw-path-06-tint: #FFFFFF;
-  --jw-path-07: #162D54; --jw-path-07-text: #2E2B28; --jw-path-07-tint: #FFFFFF;
-  --jw-path-08: #08697F; --jw-path-08-text: #2E2B28; --jw-path-08-tint: #FFFFFF;
+  --jw-path-03: #46607A; --jw-path-03-text: #2E2B28; --jw-path-03-tint: #FFFFFF;
+  --jw-path-04: #6B5D4C; --jw-path-04-text: #2E2B28; --jw-path-04-tint: #FFFFFF;
+  --jw-path-05: #5F6E58; --jw-path-05-text: #2E2B28; --jw-path-05-tint: #FFFFFF;
+  --jw-path-06: #4E4660; --jw-path-06-text: #2E2B28; --jw-path-06-tint: #FFFFFF;
+  --jw-path-07: #6B3A4E; --jw-path-07-text: #2E2B28; --jw-path-07-tint: #FFFFFF;
+  --jw-path-08: #8A5E2A; --jw-path-08-text: #2E2B28; --jw-path-08-tint: #FFFFFF;
   /* Where Your Stay Gives Back (the Wild & Co. Impact Note): Stone Mist panel, Graphite copy, Warm Stone text mark (House Standard) */
   --jw-impact-panel: #F4F2EF; --jw-impact-copy: #2E2B28; --jw-impact-highlight: #6B635A;
   /* Character treatments: James annotates in espresso ink with the seal's oxblood; Iggi in a quiet green */

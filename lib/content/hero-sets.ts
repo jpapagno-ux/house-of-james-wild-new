@@ -1,3 +1,4 @@
+import { outdoorFirst } from "./opening/interior-photos";
 // Five hero photographs per record (scripts/hero-sets.py → hero-sets.json).
 import sets from "./hero-sets.json";
 import photos from "./stay-photos.json";
@@ -52,6 +53,10 @@ const PICKS: Record<string, { url: string; alt: string }[]> = {
 };
 
 export function heroSlides(key: string, name: string, where?: string | null) {
+  // a filed room photograph never opens the slides (lib/content/opening/interior-photos.ts)
+  return outdoorFirst(slidesFor(key, name, where), (x) => x.url);
+}
+function slidesFor(key: string, name: string, where?: string | null) {
   if (PICKS[key]) return PICKS[key];
   const picked = (photos.stays as Record<string, { hero: { url: string; alt: string }[] }>)[key.replace(/^stay:/, "")];
   if (key.startsWith("stay:") && picked?.hero.length) return picked.hero.map((x) => ({ ...x, url: toCloud(x.url) }));

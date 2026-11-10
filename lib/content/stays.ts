@@ -1,4 +1,5 @@
 import { toCloud } from "./stay-cloud";
+import { isInteriorPhoto } from "./opening/interior-photos";
 // Stays, from the Ledger export (scripts/export-stays.py → stays.json).
 // A stay gets its own page only when it has a hero photo and some content.
 import data from "./stays.json";
@@ -54,6 +55,16 @@ export const ENGINE_OVERRIDE: Record<string, string> = {
 const RECORDS: StayData[] = (data.stays as StayData[]).map((s) => ({ ...s, hero: toCloud(s.hero), gallery: (s.gallery ?? []).map((g) => toCloud(g)), name: cleanName(s), ...(HERO_OVERRIDE[s.slug] ? { hero: HERO_OVERRIDE[s.slug] } : {}), ...(!s.engine && ENGINE_OVERRIDE[s.slug] ? { engine: ENGINE_OVERRIDE[s.slug] } : {}) }));
 // Vessels filed as stays belong in Voyages (James, 1 Nov 2026; lib/content/vessels.ts): every
 // Stays list, count, pin and feed reads STAYS, so they never show as hotels.
+// A room is never a stay's lead photograph (lib/content/opening/interior-photos.ts): when the hero is a filed interior,
+// the first outdoor photograph in the gallery leads instead and the room moves into the gallery.
+for (const s of RECORDS) {
+  if (!s.hero || !isInteriorPhoto(s.hero) || HERO_OVERRIDE[s.slug]) continue;
+  const k = s.gallery.findIndex((g) => !isInteriorPhoto(g));
+  if (k < 0) continue;
+  const lead = s.gallery[k];
+  s.gallery = [s.hero, ...s.gallery.filter((_, i) => i !== k)];
+  s.hero = lead;
+}
 export const STAYS: StayData[] = RECORDS.filter((s) => !isVessel(s));
 export const STAY_PAGES = STAYS.filter(pageReady);
 export const stayBySlug = (slug: string) => STAY_PAGES.find((s) => s.slug === slug);

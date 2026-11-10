@@ -1,3 +1,4 @@
+import { isInteriorPhoto } from "./interior-photos";
 // The house opening for every cruise record (James, 9 Nov 2026: "begin correcting and deploying all cruises with the new
 // approved blend design"). Preview C (components/opening/HouseOpening.tsx) and the house tones (components/opening/
 // Tones.tsx), filled from each record's own data, so nothing here is written fresh:
@@ -61,11 +62,21 @@ export function paletteFor(pathway: PathwayId, waters: string): OpeningPalette {
 const INTERIOR = /\b(cabins?|suites?|staterooms?|bathrooms?|bedrooms?|beds?|lounges?|restaurant|dining|dinner|bar|spa|massage|library|interior|salon|saloon|gym|plans?|menu|food|dish|meals?|breakfast|lunch|chef|living|rooms?|corridor|reception|lobby|shower|wardrobe|desk|kitchen|galley|cocktails?|wine|common areas?|social spaces?|boutique|sauna|reading|cinema|observation|indoors?)\b/i;
 const VESSEL = /\b(ship|yacht|boat|vessel|dahabiya|dahabeya|catamaran|trimaran|schooner|phinisi|pinisi|riverboat|cruiser|hull|bow|stern|at anchor|under sail|sails?|sailing|exterior|aerial)\b/i;
 const ONBOARD = /\b(deck|sundeck|pool|jacuzzi|hot tub|terrace|bridge|skiff|tender|zodiac|panga|dinghy|kayak)\b/i;
-type Cand = { img: ShipImage; interior: boolean; vessel: boolean; onboard: boolean; big: boolean };
+// No room shots in the entrance (James, 10 Nov 2026: "we don't want views of inside the rooms on the hero page ... a rule
+// for stays and gatherings ... more experience, scenery, overhead, more dramatic"). A photograph is read by its alt text
+// AND its file name (library files are often named "suite-3" or "bedroom"), so a room shot is caught either way. The
+// arrival frames and the close take scenery first (aerials, landscapes, water, wildlife, the way in), then photographs
+// that say nothing either way, and never an interior; the "why" frames take interiors only when nothing else is left.
+const INTERIOR_FILE = /(^|[-_ ])(suites?|rooms?|bedrooms?|bathrooms?|baths?|beds?|interiors?|lounges?|dining|restaurant|spa|living|library|lobby|reception|bar|kitchen|tent-interior|villa-interior)([-_ .]|\d|$)/i;
+const SCENIC = /\b(aerial|drone|overhead|view|views|vista|landscape|panorama|horizon|beach|shore|coast|lagoon|lake|river|ocean|sea|bay|reef|island|islands|mountains?|peaks?|valley|volcano|glacier|forest|jungle|rainforest|canopy|desert|dunes?|savann?ah|plains?|bush|delta|waterfall|sunset|sunrise|dusk|dawn|stars?|wildlife|elephants?|lions?|leopards?|cheetahs?|gorillas?|whales?|birds?|game drive|safari|hike|hiking|trail|walk|kayak|canoe|boat|sail|dive|snorkel|surf|horse|ride|vineyard|garden|exterior|from the air|above)\b/i;
+type Cand = { img: ShipImage; interior: boolean; scenic: boolean; vessel: boolean; onboard: boolean; big: boolean };
 const cand = (img: ShipImage, name: string): Cand => {
   const a = img.alt || "";
+  const file = decodeURIComponent((img.url.split("?")[0].split("/").pop() ?? "").replace(/\.[a-z0-9]+$/i, "")).replace(/_20/g, " ");
   const named = name && a.toLowerCase().includes(name.toLowerCase().split(" ")[0]);
-  return { img, interior: INTERIOR.test(a) && !/\b(looking out|from the deck)\b/i.test(a), vessel: VESSEL.test(a) || !!named, onboard: ONBOARD.test(a), big: !smallWidth(img.url) };
+  const onboard = ONBOARD.test(a) || /(^|[-_ ])(deck|pool|terrace|veranda|balcony)([-_ .]|\d|$)/i.test(file);
+  const interior = isInteriorPhoto(img.url) || ((INTERIOR.test(a) && !/\b(looking out|from the deck)\b/i.test(a)) || (INTERIOR_FILE.test(file) && !onboard && !SCENIC.test(a)));
+  return { img, interior, scenic: !interior && (SCENIC.test(a) || SCENIC.test(file.replace(/[-_]/g, " "))), vessel: VESSEL.test(a) || !!named, onboard, big: !smallWidth(img.url) };
 };
 let OPERATOR = "the operator";
 const toOpening = (i: ShipImage, caption?: string): OpeningImage => ({ src: i.url, alt: i.alt, credit: i.credit ? (/^photo|courtesy|image/i.test(i.credit) ? i.credit : `Photograph courtesy of ${i.credit}`) : `Photograph courtesy of ${OPERATOR}`, caption });
@@ -75,14 +86,16 @@ export function pickPhotos(hero: ShipImage, gallery: ShipImage[], name: string, 
   const seen = new Set<string>(); const all: Cand[] = [];
   for (const g of [hero, ...gallery]) { if (!g?.url || seen.has(g.url)) continue; seen.add(g.url); const c = cand(g, name); if (also.some((n) => g.alt.includes(n))) c.vessel = true; all.push(c); }
   const used = new Set<string>();
-  const take = (pred: (c: Cand) => boolean) => { const pool = all.filter((c) => !used.has(c.img.url) && pred(c)); const c = pool.find((x) => x.big) ?? pool[0]; if (c) used.add(c.img.url); return c; };
+  // scenery first, large before small; then the rest of the pool, large before small
+  const take = (pred: (c: Cand) => boolean) => { const pool = all.filter((c) => !used.has(c.img.url) && pred(c)); const c = pool.find((x) => x.scenic && x.big) ?? pool.find((x) => x.scenic) ?? pool.find((x) => x.big) ?? pool[0]; if (c) used.add(c.img.url); return c; };
   const outdoor = (c: Cand) => !c.interior;
-  const vessel = (all[0] && outdoor(all[0]) ? (used.add(all[0].img.url), all[0]) : undefined) ?? take((c) => outdoor(c) && c.vessel) ?? take(outdoor) ?? all[0];
+  const vessel = (all[0] && outdoor(all[0]) && (all[0].scenic || !all.some((c) => c.scenic && c.vessel)) ? (used.add(all[0].img.url), all[0]) : undefined) ?? take((c) => outdoor(c) && c.vessel) ?? take(outdoor) ?? all.find(outdoor) ?? all[0];
   const place = take((c) => outdoor(c) && !c.vessel && !c.onboard) ?? take((c) => outdoor(c) && !c.vessel) ?? take(outdoor);
   const wayIn = take((c) => outdoor(c) && (c.onboard || c.vessel)) ?? take(outdoor);   // never an interior full screen: two frames instead
   const close = take((c) => outdoor(c) && !c.vessel) ?? take(outdoor);
   // the "why" frames take what is left; when the gallery runs out they stand as words alone, never a repeated photograph
-  const why = [take(() => true), take(() => true), take(() => true)];
+  const whyOne = () => take(outdoor) ?? take(() => true);
+  const why = [whyOne(), whyOne(), whyOne()];
   const fill = (c?: Cand) => c ?? vessel;
   const frames = [place, wayIn, vessel].filter((c, i, l): c is Cand => !!c && l.findIndex((x) => x?.img.url === c.img.url) === i);
   return { frames: frames.map((c) => c.img), why: why.map((c) => c?.img), close: fill(close).img };
@@ -245,6 +258,8 @@ export type StayInput = {
  *  2026): the arrival frames in order (the last is the stay itself), then "|", then the close and the three "why"
  *  photographs. Names are the end of the Cloudinary id. */
 const STAY_ORDER: Record<string, string[]> = {
+  // the hotel itself first (James, 10 Nov 2026: "the picture of the lodge ... Put that on the homepage as the landing")
+  "aguas-claras": ["1_hac_hero", "Beach_0060", "Beach_0030", "|", "Beach_0025", "4_hac_carousel-3", "aguas-claras/hero", "aguas-claras/g1"],
   "como-shambhala-estate": ["/g4", "/g5", "/hero", "|", "/g6", "/g2", "/g10", "/g7"],
   // two outdoor photographs only: the house with its pool, then the house at dusk among the olives
   "da-licenca": ["/suite-my-pool", "/hero", "|", "/suite-moon-cube", "/suite-sunset", "/suite-sky-pool", "/suite-the-loft"],

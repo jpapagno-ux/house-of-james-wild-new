@@ -208,8 +208,8 @@ const GROUND: Record<string, { dark: string; light: string }> = {
 };
 
 /** The safari taupe (James, 10 Nov 2026, from the Wilderness DumaTau page he sent): the taupe itself, its deep for the
- *  night (white 12:1, the taupe on it 5:1) and a mid for words and rules on paper (AA, 6:1). */
-const SAFARI = { light: "#B3A491", deep: "#3A3128", text: "#6B5D4C" };
+ *  night, warmed toward brown (white 11.5:1, the taupe on it 4.7:1) and a mid for words and rules on paper (AA, 6:1). */
+const SAFARI = { light: "#B3A491", deep: "#43372B", text: "#6B5D4C" };
 
 /** A stay's own tones, read from its photographs with Cloudinary's colour analysis (10 Nov 2026): the darkest strong
  *  tone, the light ground, and a mid "sand" like The Exceptional Few's. Add a stay here when its entrance is hand-set. */

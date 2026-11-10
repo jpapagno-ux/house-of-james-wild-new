@@ -267,7 +267,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   const europe = s.regionSlug === "europe";
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
-    <div className={[boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : "", tones ? "house-tones house-tones--stay" : ""].filter(Boolean).join(" ")} style={tones ? tonesStyle(tones) : undefined}>
+    <div className={[boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : "", tones ? `house-tones house-tones--stay${safariVol ? " house-tones--safari" : ""}` : ""].filter(Boolean).join(" ")} style={tones ? tonesStyle(tones) : undefined}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
         {op ? (() => { const { next, ...o } = op; return <HouseOpening {...o} next={next} tab={volumeMark(europe ? "europe" : safariVol ? "safaris" : "stays")} badge={stamp ? <FounderStamp kind={stamp} volume={safariVol ? "safaris" : "stays"} ink={o.palette.sand} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={104} /> : undefined} />; })() : ef && efHero ? (

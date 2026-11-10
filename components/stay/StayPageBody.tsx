@@ -235,13 +235,20 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
     images: [...slides, ...images].filter((x, k, l) => l.findIndex((y) => y.url === x.url) === k), quote: s.quote, tagline: s.tagline, bestMonths: s.bestMonths, airport: s.airport, ledgerId: s.ledgerId,
     suited, coords: s.coords ?? null, why: s.why, moments: [...apart, ...days].map((m) => ({ title: m.title, note: m.note, image: m.image ? { url: m.image, alt: m.alt ?? `${s.name}: ${m.title}` } : null })), planHref }) : null;
   const tones = op ? { palette: op.palette } : undefined;
+  // One telling of each thing (James, 10 Nov 2026: "a lot of duplication of my signature ... any duplicate information").
+  // With the house entrance, the entrance carries the glance (best months, Ledger ID, the founder stamp, the pathway);
+  // the page below does not repeat them. James's own words live once, in The Verdict; one "who plans this" card; one
+  // way to talk to the house. Live stay pages without the entrance are unchanged.
+  const tight = !!op;
+  const inOpening = new Set(["Ledger ID", "Country", "Best months", "Best suited to", "The Ledger", "Airport"]);
+  const navShown = tight ? nav.filter(([, id]) => id !== "why" && (id !== "film" || !!video)) : nav;
   const europe = s.regionSlug === "europe";
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
-    <div className={[boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : "", tones ? "house-tones" : ""].filter(Boolean).join(" ")} style={tones ? tonesStyle(tones) : undefined}>
+    <div className={[boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : "", tones ? "house-tones house-tones--stay" : ""].filter(Boolean).join(" ")} style={tones ? tonesStyle(tones) : undefined}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        {op ? (() => { const { next, ...o } = op; return <HouseOpening {...o} next={next} tab={volumeMark(europe ? "europe" : "stays")} />; })() : ef && efHero ? (
+        {op ? (() => { const { next, ...o } = op; return <HouseOpening {...o} next={next} tab={volumeMark(europe ? "europe" : "stays")} badge={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={104} /> : undefined} />; })() : ef && efHero ? (
           <DriftFrame a={efHero} ratio="21:9" priority motion="zoom" film={STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : undefined}>
             <p className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; &middot; {collectionNo(ef.collectionNumber)}</p>
             <h1 className="ledger-display text-[2.9rem] md:text-[6.4rem] leading-[0.95] mt-3">{s.name}</h1>
@@ -254,7 +261,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
         : <RecordHero image={images[0]} slides={slides} wideFilm={STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : undefined} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined} eyebrow={boat ? `${boat.name} · Voyage` : `${s.country ?? "The Ledger"} · Stay`} title={s.name} tagline={tagline ?? undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}
           glance={<GlanceBar glance={{ facts: [["Best months", s.bestMonths ?? "Ask James"], ["Best suited to", suited[0] ?? bestFor[0] ?? "Ask James"], ["Ledger ID", s.ledgerId ?? "Being filed"]], cta: priced ? { label: "Check live rates", href: "#rates" } : { label: `Plan this ${noun}`, href: `/plan?trip=${encodeURIComponent(s.name)}` } }} />} />}
-        <RecordNav items={nav} cta={priced || stayPage ? (stayPage && !stayPage.commerce.liveEngineProperty ? "Choose your stay" : "Check live rates") : `Plan this ${noun}`} ctaHref={priced || stayPage ? "#rates" : planHref} />
+        <RecordNav items={navShown} cta={priced || stayPage ? (stayPage && !stayPage.commerce.liveEngineProperty ? "Choose your stay" : "Check live rates") : `Plan this ${noun}`} ctaHref={priced || stayPage ? "#rates" : planHref} />
         <ComingBanner slug={s.slug} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
@@ -280,7 +287,9 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
               <p className="mt-4 ledger-display text-[1.45rem] md:text-[2.4rem] leading-[1.18] max-w-3xl">{t}</p>
             </DriftFrame>
           ) : <p key={i} id={i === 0 ? "why" : undefined} className="mt-8 ledger-display text-[1.3rem] md:text-[1.7rem] leading-[1.3] max-w-3xl">{t}</p>; })}
-          {!ef && <WhyFilm eyebrow={boat ? L.why : undefined} title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={<>{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{chips && <div className="mt-3"><PathwayChips primary={chips.primary} secondary={chips.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />}
+          {/* with the house entrance, its "Why it's here" is the why: the record's own why section would say it twice */}
+          {!ef && tight && video && <WhyFilm title={whyTitle} blocks={[]} suited={[]} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} hideEmptyFilm />}
+          {!ef && !tight && <WhyFilm eyebrow={boat ? L.why : undefined} title={whyTitle} blocks={whyBlocks} paragraphs={whyParas} suited={suited} status={<>{status ? <p className="ledger-eyebrow ledger-crimson">{status}</p> : null}{chips && <div className="mt-3"><PathwayChips primary={chips.primary} secondary={chips.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}</>} name={s.name} video={video} poster={slides[1]?.url ?? slides[0]?.url} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />}
           {ef && (
             /* The Exceptional Few editorial row: James' Note · At a glance (pathways sit under the line above) */
             <section aria-label="James' note and at a glance" className="py-16 md:py-24 grid md:grid-cols-[1.4fr_1fr] gap-10 md:gap-16 items-start">
@@ -293,9 +302,9 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           )}
           {ef && efAerial && s.coords && <div id="place" className=""><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
           <DayBand>
-          <Overview quote={s.quote ?? undefined} answer={answer} facts={facts} paragraphs={overviewParas} />
+          <Overview quote={tight ? undefined : s.quote ?? undefined} answer={answer} facts={tight ? facts.filter(([k]) => !inOpening.has(k)) : facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
-          {founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}{...(VETTED_UNVISITED.has(s.slug) ? { eyebrow: "Founder vetted · not yet visited" } : {})} className="mt-10 max-w-3xl" />}
+          {!(tight && verdict) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}{...(VETTED_UNVISITED.has(s.slug) ? { eyebrow: "Founder vetted · not yet visited" } : {})} className="mt-10 max-w-3xl" />}
           <OfferPanel offers={offersFor(s.slug)} volume={boat ? "voyages" : "stays"} title={`Offers at ${s.name}`} />
           <Band t={tones} tone="mist"><div>
           {apart.length > 0 && <ImageAccordion id="features" eyebrow={L.apart} title={L.apartTitle} intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? (boat ? undefined : "The short list of reasons it made the Ledger, and a few you only notice on the second day.")} icon="frond" items={apart} />}
@@ -330,19 +339,19 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           {!priced && !stayPage && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow={L.rooms} title={L.roomsTitle} icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} />}
           {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
-          {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
+          {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths && !tight ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
           {/* 3D terrain (allow-listed page, components/maps/terrain/flag.ts): the stay's own pin over the canyon country, below its map. */}
           {s.slug === "ulum-moab" && s.coords && <SeeIn3D page="stays/ulum-moab" kind="points" ink={volumeMark("stays")} title={`${s.name.replace(/\s+/g, " ")}, Utah`} exaggeration={1.4} playLabel="Turn the canyon country"
             points={[{ name: s.name.replace(/\s+/g, " "), lat: s.coords.lat, lng: s.coords.lng }]}
             intro="The stay's own pin with the red rock country round it raised in relief: mesas, buttes and the canyons cut between them. Press Turn the canyon country, or tilt the map yourself." />}
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
-          <AdvisorChip where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} compact className="mt-10" />
+          {!tight && <AdvisorChip where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} compact className="mt-10" />}
           <InstrumentsStrip atlasHref={s.coords && chart ? "#location" : undefined} className="mt-8" />
           {Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>
               <h2 id="facts-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} at a Glance</h2>
-              <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
+              <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).filter(([k]) => !(tight && (k === "best_months" || k === "how_to_get_there"))).map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
             </section>
           )}
           {(() => {
@@ -382,7 +391,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           )}
           <FromTheJournal posts={postsForStay(s.slug)} />
           <SessionsFor sessions={sessionsFor(`/stays/${s.slug}`)} name={s.name} />
-          <AdvisorStrip place={s.name} ledgerId={s.ledgerId} className="mt-16 md:mt-24" />
+          {!tight && <AdvisorStrip place={s.name} ledgerId={s.ledgerId} className="mt-16 md:mt-24" />}
           {ef && <WhoItSuits name={s.name} bestFor={ef.whoItSuits} lessIdealFor={ef.whoItMayNotSuit} />}
           </DayBand>
           {ef?.worthAnotherNight && (efNight ? (
@@ -416,8 +425,8 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           </>}
           {ef && <ContinueTheJourney pathways={(pw ?? efPw) ? [(pw ?? efPw)!.primary, ...(pw ?? efPw)!.secondary] : []} hrefFor={(p) => pathwayHref(p.key)} journeys={[...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, line: `${s.country ?? region.name} and its neighbours, in the Ledger.`, href: `/destinations/${region.slug}`, eyebrow: "Destinations" }] : [])]} compassHref="/compass" hostHref={host.state !== "off" ? "#host" : null} />}
           <Band t={tones} tone="night"><TalkToUs name={s.name} planHref={planHref} /></Band>
-          {host.state !== "off" && !hostEarly && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} />}
-          <PlanBand place={s.name} compassHref="/compass" where={{ ledgerId: s.ledgerId }} />
+          {host.state !== "off" && !hostEarly && !(tight && !host.host) && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} />}
+          {!tight && <PlanBand place={s.name} compassHref="/compass" where={{ ledgerId: s.ledgerId }} />}
         </div>
         {hostEarly && <CallingCard who={HOST_KIND[s.category === "lodge" ? "lodge" : "stay"].who} seats={host.host?.seats} />}
       </main>

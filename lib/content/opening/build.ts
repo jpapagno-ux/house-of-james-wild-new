@@ -207,6 +207,17 @@ const GROUND: Record<string, { dark: string; light: string }> = {
   "Ecuador & Galapagos": { dark: "#1F2F35", light: "#E4D9C4" },
 };
 
+/** A stay's own tones, read from its photographs with Cloudinary's colour analysis (10 Nov 2026): the darkest strong
+ *  tone, the light ground, and a mid "sand" like The Exceptional Few's. Add a stay here when its entrance is hand-set. */
+const STAY_TONES: Record<string, { dark: string; light: string; sand: string }> = {
+  // the Linyanti from the river: dark earth and channel water, pale lagoon sky, the gold of the reeds
+  "wilderness-dumatau": { dark: "#332A15", light: "#DCE5E6", sand: "#D6A35A" },
+  // the Grumeti from the lodge: olive bush, pale stone, dry-season grass
+  "singita-faru-faru-lodge": { dark: "#2C321A", light: "#E2DCD1", sand: "#C2BC86" },
+  // Bantry Bay from the air: warm rock and roofs, limestone white, sandstone
+  "ellerman-house": { dark: "#3A2820", light: "#EDE3DA", sand: "#D9A98C" },
+};
+
 export type StayInput = {
   slug: string; name: string; country: string | null; regionSlug?: string | null; kind: string; place?: string | null;
   pathway?: string | null;   // pathway key ("where-the-wild-lives")
@@ -235,14 +246,22 @@ export function stayOpening(s: StayInput): Built | null {
   const order = STAY_ORDER[s.slug];
   const byName = (n: string) => s.images.find((i) => i.url.split("?")[0].replace(/\.(jpe?g|png|webp)$/i, "").endsWith(n));
   OPERATOR = s.name;
-  const pid = (Object.values(PATHWAYS).find((p) => p.key === s.pathway)?.id ?? "PATH-04") as PathwayId;
-  const ground = GROUND[s.country ?? ""] ?? GROUND[s.regionSlug ?? ""] ?? GROUND.africa;
+  // the pathway may arrive as its key ("rooted-in-place") or its id ("PATH-08"); never fall back silently on a known one
+  const pid = ((s.pathway && (PATHWAYS as Record<string, { id: string }>)[s.pathway]?.id) ?? Object.values(PATHWAYS).find((p) => p.key === s.pathway)?.id ?? "PATH-04") as PathwayId;
+  // Stay colour (James, 10 Nov 2026: "the pathways have unique colors" and each stay its own, as The Exceptional Few):
+  // the pathway's accent leads the night (55%), the property's own dark tone from its photographs follows (30%), Ink
+  // only 15%, darkened just enough for white at 7:1. The light tone and the "sand" come from the property's photographs
+  // (STAY_TONES, read with Cloudinary's colour analysis) or, until a stay is read, its country's or region's ground.
+  const tone = STAY_TONES[s.slug];
+  const ground = tone ?? GROUND[s.country ?? ""] ?? GROUND[s.regionSlug ?? ""] ?? GROUND.africa;
   const accent = PATHWAYS[pid]?.accent ?? "#2E2B28";
-  let night = mix([accent, 45], [ground.dark, 25], [INK, 30]);
-  for (let i = 0; i < 6 && contrast("#FFFFFF", night) < 7; i++) night = mix([night, 80], [INK, 20]);
+  let night = mix([accent, 55], [ground.dark, 30], [INK, 15]);
+  for (let i = 0; i < 8 && contrast("#FFFFFF", night) < 7; i++) night = mix([night, 85], [INK, 15]);
   let hi = mix([ground.light, 85], ["#FFFFFF", 15]);
   if (contrast(hi, night) < 4.5) hi = mix([hi, 70], ["#FFFFFF", 30]);
-  const palette = { night, deep: mix([night, 60], [INK, 40]), day: mix(["#FFFFFF", 93], [ground.light, 4], [accent, 3]), hi };
+  let sand = tone?.sand ?? mix([ground.light, 70], [accent, 30]);
+  for (let i = 0; i < 6 && contrast(sand, night) < 4.5; i++) sand = mix([sand, 75], ["#FFFFFF", 25]);
+  const palette = { night, deep: mix([night, 60], [INK, 40]), day: mix(["#FFFFFF", 92], [ground.light, 5], [accent, 3]), hi, path: accent, sand };
   // hand-set stays (James, 10 Nov 2026): brand photographs chosen and ordered by hand; the palette stays the record's
   const handSet = STAY_HAND_C[s.slug];
   if (handSet) return { ...handSet, palette, pathway: pid, planHref: s.planHref, next: null };

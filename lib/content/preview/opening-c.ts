@@ -179,7 +179,7 @@ export const STAY_HAND_C: Record<string, StayHand> = {
       { title: "The Osprey Retreat", line: "A spa and retreat on the lagoon, with a gym and a lagoon-side pool.", photo: img(DT("camp/wilderness-dumatau-osprey-spa-and-retreat"), "The Osprey Spa and Retreat at Wilderness DumaTau", WILD, undefined, 1600) },
       { title: "By water after dark", line: "Boating the channels, barge sundowners and dining, and the floating fire pit at night.", photo: img(DT("camp/wilderness-dumatau-floating-fire-pit"), "The floating fire pit at Wilderness DumaTau", WILD, undefined, 1600) },
     ],
-    close: { photo: img(DT("camp/wilderness-dumatau-iconic"), "Wilderness DumaTau, Linyanti, Botswana", WILD, "Wilderness DumaTau"), line: "James stayed in May 2026, and would go back." },
+    close: { photo: img(DT("camp/wilderness-dumatau-iconic"), "Wilderness DumaTau, Linyanti, Botswana", WILD, "Wilderness DumaTau"), line: "Where elephants move freely, rivers shape the landscape, and luxury gives you room to truly go wild." },
   },
   "singita-faru-faru-lodge": {
     marker: "2° 07′ S · the Grumeti River",
@@ -199,7 +199,7 @@ export const STAY_HAND_C: Record<string, StayHand> = {
       { title: "Nine suites on the river", line: "Seven suites, a family suite and a two-bedroom suite with its own pool, all with floor-to-ceiling windows and decks.", photo: img(FF("lodge-9"), "Singita Faru Faru Lodge", SING(), undefined, 1600) },
       { title: "A botanist's camp, reimagined", line: "Contemporary, organic design with a botanist's practicality: two pools, a café-style bar and a firepit.", photo: img(FF("fire-place"), "The fireplace at Singita Faru Faru Lodge", SING(), undefined, 1600) },
     ],
-    close: { photo: img(FF("exterior-and-main-area"), "Singita Faru Faru Lodge, the lodge and main area above the Grumeti", SING(), "Singita Faru Faru"), line: "James stayed at Faru Faru in 2012 and went back in 2018." },
+    close: { photo: img(FF("exterior-and-main-area"), "Singita Faru Faru Lodge, the lodge and main area above the Grumeti", SING(), "Singita Faru Faru"), line: "Riverside contemporary safari, where the wild meets wonder." },
   },
   "ellerman-house": {
     marker: "33° 56′ S · Bantry Bay",
@@ -219,6 +219,6 @@ export const STAY_HAND_C: Record<string, StayHand> = {
       { title: "More than 9,000 labels", line: "A wine archive of more than 9,000 labels, explored in the cellar.", photo: img(EH("wine-cellar"), "The wine cellar at Ellerman House", ELL, undefined, 1600) },
       { title: "Rooms over the Atlantic", line: "House rooms, suites and two private villas, many facing the sea.", photo: img(EH("ellerman-suite"), "The Ellerman House Suite, its living space and ocean views", ELL, undefined, 1600) },
     ],
-    close: { photo: img(EH("legacy-above-the-atlantic"), "Ellerman House above the Atlantic", ELL, "Above the Atlantic"), line: "A view that makes the rest of Cape Town look like the warm-up act. Make it your base. JW" },
+    close: { photo: img(EH("legacy-above-the-atlantic"), "Ellerman House above the Atlantic", ELL, "Above the Atlantic"), line: "Where South African soul meets clifftop luxury, above the Atlantic." },
   },
 };

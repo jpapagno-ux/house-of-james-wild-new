@@ -706,3 +706,14 @@ html[data-map-clear] :is(#record-bar, [data-quiet-actions], nav[aria-label="Quic
 .jw-glyph { color: #2E2B28; }
 .house-tones .jw-glyph { color: var(--tone-night, #2E2B28); }
 .jw-legend summary::-webkit-details-marker { display: none; }
+
+/* Stays in the house tones (James, 10 Nov 2026: "the pathways have unique colors ... work that into the logic of the
+   stays"): the pathway's own accent marks every section (a short rule and the section number), the mist band carries a
+   breath of it, and the property's sand lights the eyebrows on the night bands, as The Exceptional Few's --ef-sand does.
+   Scoped to .house-tones--stay; the cruise pages are unchanged. */
+.house-tones--stay [data-sechead] .ledger-eyebrow::before { color: var(--tone-path); opacity: 1; font-weight: 600; }
+.house-tones--stay [data-sechead]::before { content: ""; display: block; width: 36px; height: 2px; background: var(--tone-path); margin-bottom: 14px; }
+.house-tones--stay .jw-band--mist { background: color-mix(in srgb, var(--tone-path) 5%, color-mix(in srgb, var(--tone-hi) 34%, var(--tone-day))); }
+.house-tones--stay .jw-band--night .ledger-eyebrow, .house-tones--stay .jw-band--night .ledger-crimson:not(a):not(button) { color: var(--tone-sand, var(--tone-hi)) !important; }
+.house-tones--stay .jw-band--night [data-sechead]::before { background: var(--tone-sand, var(--tone-hi)); }
+.house-tones--stay #overview dl.ledger-paper { border-top-color: var(--tone-path); }

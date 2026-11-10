@@ -247,7 +247,8 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   const openingImages = [...slides, ...images].filter((x, k, l) => l.findIndex((y) => y.url === x.url) === k);
   // James, 10 Nov 2026 (07:09): "Ellerman House looks good as a go ... proceed with all these changes for the stay as
   // you've designed and built": every stay with five or more of its own photographs, in every region.
-  const houseOn = house || openingImages.length >= 5;
+  // a stay with no pathway filed yet keeps the earlier page, so no entrance ever prints a pathway it was not given
+  const houseOn = house || (openingImages.length >= 5 && !!(pw || primaryPath));
   const op = houseOn && !ef && !boat ? stayOpening({ slug: s.slug, name: s.name, country: s.country ?? null, regionSlug: s.regionSlug ?? null, kind, place: place?.name ?? null, volumes: Array.isArray(s.volumes) ? s.volumes : null, safari: safariVol, pathway: pw?.primary.key ?? (typeof s.pathway === "object" && s.pathway ? s.pathway.primary : null),
     images: openingImages, quote: s.quote, tagline: s.tagline, bestMonths: s.bestMonths, airport: s.airport, ledgerId: s.ledgerId,
     suited, coords: s.coords ?? null, why: s.why, moments: [...apart, ...days].map((m) => ({ title: m.title, note: m.note, image: m.image ? { url: m.image, alt: m.alt ?? `${s.name}: ${m.title}` } : null })), planHref }) : null;

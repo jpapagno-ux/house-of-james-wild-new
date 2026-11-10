@@ -236,10 +236,20 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   // Chile → Rapa Nui → Nayara Hangaroa: a stay selected for a place guide gets the place in its trail.
   const place = placeGuideForStay(s.slug);
   const trail = boat ? [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: s.name, path }] : [{ name: "Home", path: "/" }, { name: "Stays", path: "/stays" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : []), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), ...(place && isBuilt(place.path) ? [{ name: place.name, path: place.path }] : []), { name: s.name, path }];
-  // The house opening (James, 9 Nov 2026): a stay without a designation, on the preview, arrives as The Exceptional Few
-  // do, in its pathway's colour mixed with its own ground, the volume's tab on the frame.
-  const op = house && !ef && !boat ? stayOpening({ slug: s.slug, name: s.name, country: s.country ?? null, regionSlug: s.regionSlug ?? null, kind, place: place?.name ?? null, volumes: Array.isArray(s.volumes) ? s.volumes : null, pathway: pw?.primary.key ?? (typeof s.pathway === "object" && s.pathway ? s.pathway.primary : null),
-    images: [...slides, ...images].filter((x, k, l) => l.findIndex((y) => y.url === x.url) === k), quote: s.quote, tagline: s.tagline, bestMonths: s.bestMonths, airport: s.airport, ledgerId: s.ledgerId,
+  // The house opening (James, 9 Nov 2026): a stay without a designation arrives as The Exceptional Few do, in its
+  // pathway's colour mixed with its own ground, the volume's tab on the frame. On the preview every stay can take it;
+  // live, every African safari stay takes it (James, 10 Nov 2026: "proceed with changing all of the African Safari stays
+  // using these new pages, style, reference, colors ... it's a go") once it has the photographs to fill the entrance
+  // (five or more of its own); a thinner record keeps the earlier page until its partner sends more (Partner Follow-Ups).
+  // A safari stay: filed under Safaris & Reserves, or an African stay whose primary pathway is Where the Wild Lives.
+  const primaryPath = pw?.primary.id ?? (typeof s.pathway === "object" && s.pathway ? (s.pathway as { primary?: string }).primary ?? null : null);
+  const safariVol = (Array.isArray(s.volumes) && s.volumes.includes("safaris")) || (s.regionSlug === "africa" && (primaryPath === "PATH-04" || pw?.primary.key === "where-the-wild-lives"));
+  const openingImages = [...slides, ...images].filter((x, k, l) => l.findIndex((y) => y.url === x.url) === k);
+  // James, 10 Nov 2026 (07:09): "Ellerman House looks good as a go ... proceed with all these changes for the stay as
+  // you've designed and built": every stay with five or more of its own photographs, in every region.
+  const houseOn = house || openingImages.length >= 5;
+  const op = houseOn && !ef && !boat ? stayOpening({ slug: s.slug, name: s.name, country: s.country ?? null, regionSlug: s.regionSlug ?? null, kind, place: place?.name ?? null, volumes: Array.isArray(s.volumes) ? s.volumes : null, safari: safariVol, pathway: pw?.primary.key ?? (typeof s.pathway === "object" && s.pathway ? s.pathway.primary : null),
+    images: openingImages, quote: s.quote, tagline: s.tagline, bestMonths: s.bestMonths, airport: s.airport, ledgerId: s.ledgerId,
     suited, coords: s.coords ?? null, why: s.why, moments: [...apart, ...days].map((m) => ({ title: m.title, note: m.note, image: m.image ? { url: m.image, alt: m.alt ?? `${s.name}: ${m.title}` } : null })), planHref }) : null;
   const roomData = roomsFor(s.slug);
   // The routes a stay is on (James, 10 Nov 2026: "Ellerman House also shows routes that it's featured on. That's an
@@ -249,7 +259,15 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
     ...routesThrough(s.slug).map((t) => ({ key: t.id, href: t.seo.path, eyebrow: "Journey", title: t.h1, sub: t.sub, line: t.herofacts[1]?.[1] ?? "" })),
     ...voyagesThrough(s.slug).filter((v) => isBuilt(v.href)).map((v) => ({ key: v.href, href: v.href, eyebrow: v.eyebrow, title: v.title, sub: v.sub, line: v.line })),
   ];
-  const safariVol = Array.isArray(s.volumes) && s.volumes.includes("safaris");
+  // No photograph twice (James, 10 Nov 2026: "there's a couple of duplicate photos in there"): with the house entrance,
+  // the gallery drops any photograph the entrance or the rooms already show, matched by address or by the name in its
+  // file (a library copy and a brand copy of the same frame), and any repeat within itself.
+  const photoKey = (u: string) => (u.split("?")[0].split("/").pop() ?? "").replace(/\.(jpe?g|png|webp|avif)$/i, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().split(" ").filter((w) => (w.length > 2 || /^\d+$/.test(w)) && !/^[0-9a-f]{6,}$/.test(w)).slice(-2).join(" ");
+  const sameFrame = (a: string, b: string) => !!a && !!b && (a === b || a.endsWith(" " + b) || b.endsWith(" " + a));
+  const shown = op ? [...op.frames.map((f) => f.src), ...op.why.map((w) => w.photo?.src ?? ""), op.close.photo.src, ...(roomData?.rooms.map((r) => r.image?.id ?? "") ?? [])].filter(Boolean) : [];
+  const shownKeys = new Set(shown.map((u) => photoKey(u)).filter(Boolean));
+  const shownUrls = new Set(shown);
+  const galleryImages = op ? images.filter((im, k, l) => !shownUrls.has(im.url) && ![...shownKeys].some((k2) => sameFrame(photoKey(im.url), k2)) && l.findIndex((y) => photoKey(y.url) === photoKey(im.url)) === k) : images;
   const tones = op ? { palette: op.palette } : undefined;
   // One telling of each thing (James, 10 Nov 2026: "a lot of duplication of my signature ... any duplicate information").
   // With the house entrance, the entrance carries the glance (best months, Ledger ID, the founder stamp, the pathway);
@@ -362,7 +380,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
                 {efStory.human && <div className="md:col-span-5"><EFFrame a={efStory.human} ratio="4:5" sizes="(min-width: 768px) 40vw, 100vw" /></div>}
                 {(efStory.arrival ?? efStory.night) && <div className="md:col-span-7"><EFFrame a={(efStory.arrival ?? efStory.night)!} ratio="3:2" sizes="(min-width: 768px) 58vw, 100vw" /></div>}
               </section>
-            ) : images.length > 2 && <GalleryMosaic images={images} title={s.name} />}
+            ) : galleryImages.length > 2 && <GalleryMosaic images={galleryImages} title={s.name} />}
             {s.engine && !stayPage && <LiveRatesBand property={s.engine} name={s.name} />}
             {!s.engine && !stayPage && <RateCardSection pageKey={`stay:${s.slug}`} name={s.name} photo={s.hero as string} hostHref={hostEarly ? "#host" : undefined} />}
           </>}

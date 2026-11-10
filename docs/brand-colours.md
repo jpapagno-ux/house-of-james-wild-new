@@ -53,7 +53,7 @@ occasional **volume-mist panel**. Never coloured sections, buttons or chips. **V
 | Volume | Name | Base (tab, pins) | Deep (words) | Light (on dark) | Mist (quiet panel) |
 |---|---|---|---|---|---|
 | III Gatherings | Terracotta | `#A2482E` | `#5A2418` | `#DDA48E` | `#F7EDE8` |
-| II Safaris & Reserves | Burnt Ochre | `#C2621E` | `#6B3510` | `#EDB98A` | `#FBF0E6` |
+| II Safaris & Reserves | Safari Taupe (James, 10 Nov 2026; was Burnt Ochre) | `#B3A491` (pad `#8F7F69`) | `#5E5244` | `#B3A491` | `#F3F0EC` |
 | VI Overland & Expeditions | Saffron | `#C4952A` | `#6B5212` | `#E9CF8E` | `#FAF4E4` |
 | V Europe | Olive | `#6E7537` | `#353A1E` | `#C2C79A` | `#F2F3E8` |
 | IV Voyages | Verdigris | `#3F7A70` | `#1E3F3A` | `#A9CCC4` | `#EDF4F2` |

@@ -727,7 +727,7 @@ li:nth-child(2) > .jw-start { background: linear-gradient(100deg, color-mix(in s
 li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in srgb, var(--t) 23%, #FFFFFF) 0%, color-mix(in srgb, var(--t) 8%, #FFFFFF) 55%, #FFFFFF 100%); }
 .jw-start:hover { border-color: var(--t); box-shadow: 0 6px 18px -10px color-mix(in srgb, var(--t) 60%, transparent); }
 
-/* Safari stays (James, 10 Nov 2026, the Wilderness DumaTau taupe #B3A491): one band on the page takes the taupe itself,
+/* Safari stays (James, 10 Nov 2026, the Wilderness DumaTau taupe, the Safaris volume leather): one band on the page takes the taupe itself,
    softened by half with white, as the brand's own pages do; quiet text there is darkened to stay AA. Tans sparingly:
    only the mist band, never every section. */
 .house-tones--safari .jw-band--mist { background: #D9D1C8; }

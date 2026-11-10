@@ -25,8 +25,13 @@ export default function Pic({ src, alt, sizes, priority = false, className = "",
   /** the phone cut's gravity where automatic detection picks the wrong subject (east, south...) */ gravity?: string;
 }) {
   if (!cloudinaryId(src)) return <Image src={src} alt={alt} fill sizes={sizes} priority={priority} quality={85} className={className} style={style} />;
+  // AI finish (James, 10 Nov 2026: "use Cloudinary's AI to really improve these and make them more sharper ... focal
+  // points ... tight, clean"): an original under 1,600px is upscaled by Cloudinary's AI, then given an automatic
+  // colour and contrast lift and a firmer sharpen; every other frame gets a light sharpen. Crops use g_auto (subject
+  // aware) so the focal point holds on every cut.
   const up = smallWidth(src) ? "e_upscale/" : "";
-  const base = up + (ratio ? `f_auto,q_auto:best,c_fill,g_auto,ar_${ratio}` : "f_auto,q_auto:best,c_limit");
+  const finish = up ? "e_improve:outdoor:50/e_sharpen:80/" : "e_sharpen:40/";
+  const base = up + finish + (ratio ? `f_auto,q_auto:best,c_fill,g_auto,ar_${ratio}` : "f_auto,q_auto:best,c_limit");
   const common = { alt, fill: true, sizes, priority, src };
   const { props: wide } = getImageProps({ ...common, loader: loader(base) });
   // eslint-disable-next-line @next/next/no-img-element -- art-directed <picture> from getImageProps
@@ -40,7 +45,7 @@ export default function Pic({ src, alt, sizes, priority = false, className = "",
   } : undefined;
   const img = <img {...wide} alt={alt} className={className} style={{ ...wide.style, ...style }} onError={fallback} />;
   if (!portrait) return img;
-  const { props: tall } = getImageProps({ ...common, loader: loader(`${up}f_auto,q_auto:best,c_fill,g_${gravity ?? "auto"},ar_${portrait}`, 1600) });
+  const { props: tall } = getImageProps({ ...common, loader: loader(`${up}${finish}f_auto,q_auto:best,c_fill,g_${gravity ?? "auto"},ar_${portrait}`, 1600) });
   return (
     <picture>
       <source media="(max-width: 767px)" srcSet={tall.srcSet} sizes={tall.sizes} />

@@ -45,6 +45,8 @@ import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import AdvisorChip from "@/components/advisor/AdvisorChip";
 import InstrumentsStrip from "@/components/ledger/InstrumentsStrip";
 import RoomTypes from "@/components/stay/RoomTypes";
+import WhyWhoVerdict from "@/components/stay/WhyWhoVerdict";
+import { thinkTwice } from "@/lib/content/think-twice";
 import OnTheseRoutes, { type RouteCard } from "@/components/stay/OnTheseRoutes";
 import { roomsFor } from "@/lib/content/stay-rooms";
 import { voyagesThrough } from "@/lib/content/ships/either-side";
@@ -182,6 +184,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   const video = VIDEOS[`stay:${s.slug}`] ?? priced?.video ?? null;
   const host = hostFor(`stay:${s.slug}`);
   const verdict = stayVerdict(s.slug, s.status);
+  const twice = thinkTwice(s.slug, { name: s.name, facts: s.facts, faqs: s.faqs, airportDirections: s.airportDirections });
   const note = houseNote({ key: `stay:${s.slug}`, name: s.name, bestMonths: s.bestMonths, airport: s.airport, suited, rooms: s.rooms.items });
   // Stage 5 (Last Mile): approved Ledger hubs and transfer legs for this stay. Empty until the library approves them.
   const hubs = hubsForStay(s);
@@ -219,6 +222,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   const quick = [
     ...(ef ? [{ q: `Why is ${s.name} in The Exceptional Few?`, a: ef.whyItMadeTheCut[1] ?? ef.whyItMadeTheCut[0] ?? "" }, ...(ef.whoItMayNotSuit.length ? [{ q: `Who is ${s.name} less ideal for?`, a: `${ef.whoItMayNotSuit.join(", ")}. If that's you, the Human Compass will point you somewhere that is.` }] : [])] : []),
     ...(s.bestMonths ? [{ q: boat ? `When does ${s.name} sail?` : `When is the best time to visit ${s.name}?`, a: `${boat ? undash(s.bestMonths) : s.bestMonths}.${s.bestMonthsNote ? ` ${s.bestMonthsNote}` : ""}` }] : []),
+    ...(twice.length ? [{ q: `Who should think twice about ${s.name}?`, a: `Think twice if ${twice.map((t) => t[0].toLowerCase() + t.slice(1).replace(/\.$/, "")).join("; or if ")}.` }] : []),
     ...(suited.length ? [{ q: `Who is ${s.name} best suited to?`, a: `${suited.join(", ")}. If that's you, it's worth a conversation; if it isn't, the house will point you somewhere that is.` }] : []),
     ...(hubs.length
       ? [{ q: `How do you get to ${s.name}?`, a: `${hubs[0].kind === "airport" || hubs[0].kind === "airstrip" ? "Fly into" : "Arrive at"} ${hubLabel(hubs[0])}${hubs.length > 1 ? ` (or ${hubs.slice(1).map(hubLabel).join(", ")})` : ""}.${timedLegs.length ? ` ${timedLegs.map((t) => `From ${hubLabel(t.hub)} it is ${transferLine(t)}, as stated by the property.`).join(" ")}` : " The transfer time is not yet on record with the house."} James arranges arrival and the car with your booking.` }]
@@ -345,6 +349,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           )}
           {ef && efAerial && s.coords && <div id="place" className=""><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
           <DayBand>
+          {tight && <WhyWhoVerdict name={s.name} why={s.why} vetted={status ?? `Vetted by the house${s.ledgerId ? ` · ${s.ledgerId}` : ""}`} whoFor={s.facts.who_its_for ?? null} suited={suited.length ? suited : bestFor} thinkTwice={twice} verdict={verdict ? { line: verdict.text[0], by: `James Wild · ${verdict.where}, ${verdict.when}` } : null} planHref={planHref} />}
           <Overview quote={tight ? undefined : s.quote ?? undefined} answer={answer} facts={tight ? facts.filter(([k]) => !inOpening.has(k)) : facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
           {!(tight && verdict) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}{...(VETTED_UNVISITED.has(s.slug) ? { eyebrow: "Founder vetted · not yet visited" } : {})} className="mt-10 max-w-3xl" />}
@@ -353,17 +358,10 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
               at a glance) straight after the overview; where and how (the map, the way in, the routes it is on) together
               after the rooms. */}
           {tight && verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
-          {tight && Object.keys(s.facts).length > 0 && (
-            <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
-              <p className="ledger-eyebrow ledger-crimson">Before you go</p>
-              <h2 id="facts-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} at a Glance</h2>
-              <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).filter(([k]) => k !== "best_months" && k !== "how_to_get_there").map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
-            </section>
-          )}
           <OfferPanel offers={offersFor(s.slug)} volume={boat ? "voyages" : "stays"} title={`Offers at ${s.name}`} />
           <Band t={tones} tone="mist"><div>
           {apart.length > 0 && <ImageAccordion id="features" eyebrow={L.apart} title={L.apartTitle} intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? (boat ? undefined : "The short list of reasons it made the Ledger, and a few you only notice on the second day.")} icon="frond" items={apart} />}
-          {days.length > 0 && <ImageAccordion id="experiences" eyebrow={L.days} title={L.daysTitle} intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? (boat ? undefined : "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone.")} icon="mountain-sun" items={days} start={null} />}
+          {days.length > 0 && <ImageAccordion id="experiences" eyebrow={L.days} title={L.daysTitle} intro={(s.experiences.items.length ? s.experiences.paras[0] : undefined) ?? (boat ? undefined : "Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone.")} icon="mountain-sun" items={days} />}
           {!apart.length && s.features.paras.length > 0 && <Features id="features" eyebrow={L.apart} title={L.apartTitle} icon="frond" body={s.features.paras[0]} />}
           {!days.length && s.experiences.paras.length > 0 && <Features id="experiences" eyebrow={L.days} title={L.daysTitle} icon="mountain-sun" body={s.experiences.paras[0]} />}
           </div></Band>

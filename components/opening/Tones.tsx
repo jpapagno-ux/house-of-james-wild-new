@@ -20,6 +20,7 @@ export const toneVars = (palette: OpeningPalette): CSSProperties => {
   const iv = ivoryOf(palette.hi);
   return {
     ["--tone-night" as string]: palette.night, ["--tone-deep" as string]: palette.deep, ["--tone-day" as string]: palette.day, ["--tone-hi" as string]: palette.hi,
+    ...(palette.path ? { ["--tone-path" as string]: palette.path } : {}), ...(palette.sand ? { ["--tone-sand" as string]: palette.sand } : {}),
     ["--tone-ivory" as string]: iv, ["--tone-muted" as string]: `color-mix(in srgb, ${iv} 74%, transparent)`, ["--tone-line" as string]: `color-mix(in srgb, ${iv} 20%, transparent)`,
   };
 };

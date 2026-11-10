@@ -1,3 +1,4 @@
 # Push a change to this file to re-run the Stay photo import (e.g. after new stays are filed).
 # Run 2, 10 Nov 2026: CLOUDINARY_URL saved by James; restart the import.
 # Run 3, 10 Nov 2026: CLOUDINARY_URL corrected by James.
+# Run 4, 10 Nov 2026: James re-entered CLOUDINARY_URL (cloudinary://API_KEY:API_SECRET@jhlnq5h5).

@@ -140,7 +140,9 @@ export function EmbossSeal({ label, size = 112, className }: { label: string; si
 }
 
 /** Dated proof from the Ledger: "FOUNDER STAYED · MAY 2026 · FRANSCHHOEK · ZA". */
-export function PassportStamp({ volume, top, date, place, ledgerId, size = 190, rotate = -4, seed = 54 }: { volume: VolumeKey; top: string; date: string; place?: string; ledgerId?: string; size?: number; rotate?: number; seed?: number }) {
+/** `ink`: print in this colour with no paper behind it, as a text overlay on a night panel or a photograph (James,
+ *  10 Nov 2026: "make sure these stamps are transparent backgrounds so they can look like a text overlay"). */
+export function PassportStamp({ volume, top, date, place, ledgerId, size = 190, rotate = -4, seed = 54, ink }: { volume: VolumeKey; top: string; date: string; place?: string; ledgerId?: string; size?: number; rotate?: number; seed?: number; ink?: string }) {
   const v = VOLUME_STYLES[volume];
   const id = `pp${volume}${slug(top + date)}`;
   const body = `<rect x="10" y="40" width="180" height="120" rx="14" fill="none" stroke="currentColor" stroke-width="4"/><rect x="18" y="48" width="164" height="104" rx="9" fill="none" stroke="currentColor" stroke-width="1"/>
@@ -148,8 +150,8 @@ export function PassportStamp({ volume, top, date, place, ledgerId, size = 190, 
 <text x="100" y="110" text-anchor="middle" font-family="${SERIF}" font-weight="600" font-size="30" fill="currentColor">${esc(date)}</text>
 ${place ? `<text x="100" y="129" text-anchor="middle" font-family="${MONO}" font-size="10" letter-spacing="2" fill="currentColor">${esc(place.toUpperCase())}</text>` : ""}
 ${ledgerId ? `<text x="100" y="145" text-anchor="middle" font-family="${MONO}" font-size="8.5" letter-spacing="1.6" fill="currentColor">JW · ${esc(ledgerId)}</text>` : ""}`;
-  const svg = `<svg viewBox="0 0 200 200" width="${size}" height="${size}" role="img" aria-label="${esc(`${top}, ${date}${place ? `, ${place}` : ""}`)}" style="color:${v.pad};overflow:visible"><defs>${padFilter(id + "f", seed)}</defs><g filter="url(#${id}f)">${body}</g></svg>`;
-  return <span className="jw-press" data-jw-stamp={volume} style={{ display: "inline-flex", flex: "none", transform: `rotate(${rotate}deg)`, mixBlendMode: "multiply", margin: `-${size * 0.16}px 0`, ["--jw-rot" as string]: `${rotate}deg`, ["--jw-light" as string]: `rgb(${v.light})` }} dangerouslySetInnerHTML={{ __html: svg }} />;
+  const svg = `<svg viewBox="0 0 200 200" width="${size}" height="${size}" role="img" aria-label="${esc(`${top}, ${date}${place ? `, ${place}` : ""}`)}" style="color:${ink ?? v.pad};overflow:visible"><defs>${ink ? padFilter(id + "f", seed).replace("-3.4 0 0 0 2.55", "-1.9 0 0 0 2.05") : padFilter(id + "f", seed)}</defs><g filter="url(#${id}f)">${body}</g></svg>`;
+  return <span className="jw-press" data-jw-stamp={volume} style={{ display: "inline-flex", flex: "none", transform: `rotate(${rotate}deg)`, mixBlendMode: ink ? "normal" : "multiply", margin: `-${size * 0.16}px 0`, ["--jw-rot" as string]: `${rotate}deg`, ["--jw-light" as string]: `rgb(${v.light})` }} dangerouslySetInnerHTML={{ __html: svg }} />;
 }
 
 /** Clean coordinate mark: map pins, favicons, social avatars. No texture. */

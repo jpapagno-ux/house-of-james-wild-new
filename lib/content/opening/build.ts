@@ -19,6 +19,7 @@ import type { PolarVoyage } from "@/lib/content/polar";
 import { CLASSIC_C, POLAR_CIRCLE_C, ORIGIN_C, HX_CIRCLE_C, RA_C, STAY_HAND_C, polarNext } from "@/lib/content/preview/opening-c";
 import { today } from "@/lib/dates";
 import { smallWidth } from "./small-images";
+import { VOLUME_STYLES } from "@/lib/volumes";
 
 export type OpeningBase = Omit<HouseOpeningProps, "next" | "grain">;
 export type Built = OpeningBase & { next: NextSailing };
@@ -221,6 +222,8 @@ const STAY_TONES: Record<string, { dark: string; light: string; sand: string }> 
 export type StayInput = {
   slug: string; name: string; country: string | null; regionSlug?: string | null; kind: string; place?: string | null;
   pathway?: string | null;   // pathway key ("where-the-wild-lives")
+  /** the volumes the stay is filed in; a stay filed under Safaris & Reserves takes the safari earth */
+  volumes?: string[] | null;
   images: { url: string; alt: string }[];
   quote?: string | null; tagline?: string | null; bestMonths?: string | null; airport?: string | null; ledgerId?: string | null;
   suited: string[]; coords?: { lat: number; lng: number } | null;
@@ -255,13 +258,19 @@ export function stayOpening(s: StayInput): Built | null {
   const tone = STAY_TONES[s.slug];
   const ground = tone ?? GROUND[s.country ?? ""] ?? GROUND[s.regionSlug ?? ""] ?? GROUND.africa;
   const accent = PATHWAYS[pid]?.accent ?? "#2E2B28";
-  let night = mix([accent, 55], [ground.dark, 30], [INK, 15]);
+  // Safari earth (James, 10 Nov 2026: "I'm seeing these at the same blue that we use for cruises. Doesn't Safaris or
+  // Africa have a different color?"): a stay filed under Safaris & Reserves takes its night from the volume's Burnt
+  // Ochre deep and the property's own dark earth, with only a trace of the pathway; its rules and section numbers
+  // print in the volume's deep. The pathway keeps its own colour where it names itself: the chip dot and the stamp.
+  const safari = !!s.volumes?.includes("safaris");
+  const earth = VOLUME_STYLES.safaris.deep;
+  let night = safari ? mix([earth, 45], [ground.dark, 40], [accent, 5], [INK, 10]) : mix([accent, 55], [ground.dark, 30], [INK, 15]);
   for (let i = 0; i < 8 && contrast("#FFFFFF", night) < 7; i++) night = mix([night, 85], [INK, 15]);
   let hi = mix([ground.light, 85], ["#FFFFFF", 15]);
   if (contrast(hi, night) < 4.5) hi = mix([hi, 70], ["#FFFFFF", 30]);
   let sand = tone?.sand ?? mix([ground.light, 70], [accent, 30]);
   for (let i = 0; i < 6 && contrast(sand, night) < 4.5; i++) sand = mix([sand, 75], ["#FFFFFF", 25]);
-  const palette = { night, deep: mix([night, 60], [INK, 40]), day: mix(["#FFFFFF", 92], [ground.light, 5], [accent, 3]), hi, path: accent, sand };
+  const palette = { night, deep: mix([night, 60], [INK, 40]), day: mix(["#FFFFFF", 92], [ground.light, 5], safari ? [earth, 3] : [accent, 3]), hi, path: safari ? earth : accent, sand };
   // hand-set stays (James, 10 Nov 2026): brand photographs chosen and ordered by hand; the palette stays the record's
   const handSet = STAY_HAND_C[s.slug];
   if (handSet) return { ...handSet, palette, pathway: pid, planHref: s.planHref, next: null };

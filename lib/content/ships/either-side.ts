@@ -20,6 +20,8 @@ export type EitherSide = {
   /** a line on how the two ways differ, in the house voice */
   houseWay: string;
   planTrip: string;
+  /** the voyage pages this band appears on, so a stay can show the voyages it is suggested with */
+  voyages: { href: string; title: string; sub: string }[];
 };
 
 const TAHITI: EitherSide = {
@@ -55,6 +57,10 @@ const TAHITI: EitherSide = {
   },
   houseWay: "Windstar's package names its hotels \"or similar\" and fixes the order. The house chooses the stay for you from places James has stayed or vetted, sets the nights either side, and books it all as one journey.",
   planTrip: "Tahiti by Windstar, with stays either side",
+  voyages: [
+    { href: "/voyages/ships/wind-star", title: "Wind Star in French Polynesia", sub: "Windstar, from Papeete" },
+    { href: "/voyages/ships/star-breeze", title: "Star Breeze in French Polynesia", sub: "Windstar, from Papeete" },
+  ],
 };
 
 // Antarctica by HX (James, 9 Nov 2026: "in Antarctica and Arctic we really can't build that", then approved the gateway
@@ -92,6 +98,7 @@ const ANTARCTICA_HX: EitherSide = {
   },
   houseWay: "HX's programmes fix the hotel and the days. The house builds Patagonia before and Iguazú or Mendoza after from lodges in its own collection, and books the flights between them with the voyage.",
   planTrip: "Antarctica with HX, with Argentina either side",
+  voyages: [{ href: "/voyages/polar/hx-antarctic-circle-expedition", title: "Antarctic Circle Expedition", sub: "HX, aboard MS Roald Amundsen" }],
 };
 
 /** By ship, then by waters: every ship in these waters gets the band. */
@@ -99,3 +106,17 @@ const BY_SLUG: Record<string, EitherSide> = { "ms-roald-amundsen": ANTARCTICA_HX
 const BY_WATERS: Record<string, EitherSide> = { tahiti: TAHITI };
 
 export const eitherSideFor = (slug: string, waters: string | null | undefined): EitherSide | null => BY_SLUG[slug] ?? (waters ? BY_WATERS[waters] ?? null : null);
+
+/** The voyages a stay is suggested with, before or after the ship (James, 10 Nov 2026: the routes a stay is on, built
+ *  into the logic): read from the bands above, so a stay added to a band appears on its own page without a second list. */
+export function voyagesThrough(stay: string): { href: string; eyebrow: string; title: string; sub: string; line: string }[] {
+  const out: { href: string; eyebrow: string; title: string; sub: string; line: string }[] = [];
+  for (const d of [TAHITI, ANTARCTICA_HX]) {
+    const before = d.arrive.stays.includes(stay);
+    const after = d.stayOn.stays.includes(stay) || d.addNights.some((a) => a.stay === stay) || !!d.operator?.hotels.includes(stay);
+    if (!before && !after) continue;
+    const when = before && after ? "before or after the voyage" : before ? "before the voyage" : "after the voyage";
+    for (const v of d.voyages) if (!out.some((o) => o.href === v.href)) out.push({ href: v.href, eyebrow: "Voyage", title: v.title, sub: v.sub, line: `The house suggests this stay ${when}.` });
+  }
+  return out;
+}

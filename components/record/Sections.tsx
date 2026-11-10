@@ -106,10 +106,10 @@ export function RecordHero({ image, slides, eyebrow, title, tagline, stamp, glan
 // Founder marks print as a dated passport stamp in the volume's ink (volume kit,
 // Oct 2026); the other Ledger marks keep the round stamp.
 const PASSPORT: Partial<Record<LedgerStampKind, string>> = { "Founder favorite": "Founder favorite", "Field verified": "Founder stayed", "Founder inspected": "Founder inspected" };
-export function FounderStamp({ kind, year, date, place, ledgerId, volume = "stays", size = 132 }: { kind: LedgerStampKind; year?: number; date?: string | null; place?: string; ledgerId?: string; volume?: Volume; size?: number }) {
+export function FounderStamp({ kind, year, date, place, ledgerId, volume = "stays", size = 132, ink }: { kind: LedgerStampKind; year?: number; date?: string | null; place?: string; ledgerId?: string; volume?: Volume; size?: number; ink?: string }) {
   const top = PASSPORT[kind];
   const when = stampDate(date ?? year);
-  if (top && when) return <PassportStamp volume={volume} top={top} date={when} place={place} ledgerId={ledgerId} size={Math.round(size * 1.25)} rotate={-4} />;
+  if (top && when) return <PassportStamp volume={volume} top={top} date={when} place={place} ledgerId={ledgerId} size={Math.round(size * 1.25)} rotate={-4} ink={ink} />;
   return <Stamp kind={kind} year={year} volume={volume} size={size} />;
 }
 

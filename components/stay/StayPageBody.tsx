@@ -44,10 +44,15 @@ import { AdvisorStrip } from "@/components/advisor/Desk";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import AdvisorChip from "@/components/advisor/AdvisorChip";
 import InstrumentsStrip from "@/components/ledger/InstrumentsStrip";
+import RoomTypes from "@/components/stay/RoomTypes";
+import OnTheseRoutes, { type RouteCard } from "@/components/stay/OnTheseRoutes";
+import { roomsFor } from "@/lib/content/stay-rooms";
+import { voyagesThrough } from "@/lib/content/ships/either-side";
 import { RecordCard } from "@/components/hub/Hub";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import type { ChartData } from "@/components/destination/LedgerChart";
+import LIB_CHARTS from "@/lib/charts/countries.json";
 import { BEST_FOR, STAYS, STAY_PAGES, VESSEL_PAGES, VESSEL_RECORDS, staysIn, stayBySlug, vesselBySlug, pageReady, altFor } from "@/lib/content/stays";
 import { VESSEL_WATERS, vessel as vesselOf, vesselHref, watersOf } from "@/lib/content/vessels";
 import { regionBySlug } from "@/lib/content/regions";
@@ -154,7 +159,9 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   const images = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => ({ url: u as string, alt: altFor(u as string, s.name, s.country, i) }));
   const more = boat ? VESSEL_RECORDS.filter((x) => x.slug !== s.slug && pageReady(x) && watersOf(x.slug) === watersOf(s.slug)).slice(0, 4)
     : s.countrySlug ? staysIn(s.countrySlug).filter((x) => x.slug !== s.slug && pageReady(x)).slice(0, 4) : [];
-  const chart = s.countrySlug ? CHARTS[s.countrySlug] : undefined;
+  // every stay with a country chart gets its location map (James, 10 Nov 2026: "the Ellerman house has a map. We need
+  // to use those maps on the other properties as well"): the hand-drawn charts first, then the library's country charts
+  const chart = s.countrySlug ? CHARTS[s.countrySlug] ?? (LIB_CHARTS as unknown as Record<string, ChartData>)[s.countrySlug] : undefined;
   const priced = s.engine ? PRICED[s.slug] : undefined;
   // Steps 1–2: the normalized Stay-page contract (editorial + Booking Live
   // canonical units + media + pricing provenance). Assembled for every stay
@@ -231,9 +238,18 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   const trail = boat ? [{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: s.name, path }] : [{ name: "Home", path: "/" }, { name: "Stays", path: "/stays" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : []), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), ...(place && isBuilt(place.path) ? [{ name: place.name, path: place.path }] : []), { name: s.name, path }];
   // The house opening (James, 9 Nov 2026): a stay without a designation, on the preview, arrives as The Exceptional Few
   // do, in its pathway's colour mixed with its own ground, the volume's tab on the frame.
-  const op = house && !ef && !boat ? stayOpening({ slug: s.slug, name: s.name, country: s.country ?? null, regionSlug: s.regionSlug ?? null, kind, place: place?.name ?? null, pathway: pw?.primary.key ?? (typeof s.pathway === "object" && s.pathway ? s.pathway.primary : null),
+  const op = house && !ef && !boat ? stayOpening({ slug: s.slug, name: s.name, country: s.country ?? null, regionSlug: s.regionSlug ?? null, kind, place: place?.name ?? null, volumes: Array.isArray(s.volumes) ? s.volumes : null, pathway: pw?.primary.key ?? (typeof s.pathway === "object" && s.pathway ? s.pathway.primary : null),
     images: [...slides, ...images].filter((x, k, l) => l.findIndex((y) => y.url === x.url) === k), quote: s.quote, tagline: s.tagline, bestMonths: s.bestMonths, airport: s.airport, ledgerId: s.ledgerId,
     suited, coords: s.coords ?? null, why: s.why, moments: [...apart, ...days].map((m) => ({ title: m.title, note: m.note, image: m.image ? { url: m.image, alt: m.alt ?? `${s.name}: ${m.title}` } : null })), planHref }) : null;
+  const roomData = roomsFor(s.slug);
+  // The routes a stay is on (James, 10 Nov 2026: "Ellerman House also shows routes that it's featured on. That's an
+  // important feature that we need to build into the logic"): every journey that names it, and every voyage that
+  // suggests it either side of the ship, found from the data, never listed by hand.
+  const routeCards: RouteCard[] = [
+    ...routesThrough(s.slug).map((t) => ({ key: t.id, href: t.seo.path, eyebrow: "Journey", title: t.h1, sub: t.sub, line: t.herofacts[1]?.[1] ?? "" })),
+    ...voyagesThrough(s.slug).filter((v) => isBuilt(v.href)).map((v) => ({ key: v.href, href: v.href, eyebrow: v.eyebrow, title: v.title, sub: v.sub, line: v.line })),
+  ];
+  const safariVol = Array.isArray(s.volumes) && s.volumes.includes("safaris");
   const tones = op ? { palette: op.palette } : undefined;
   // One telling of each thing (James, 10 Nov 2026: "a lot of duplication of my signature ... any duplicate information").
   // With the house entrance, the entrance carries the glance (best months, Ledger ID, the founder stamp, the pathway);
@@ -241,14 +257,20 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   // way to talk to the house. Live stay pages without the entrance are unchanged.
   const tight = !!op;
   const inOpening = new Set(["Ledger ID", "Country", "Best months", "Best suited to", "The Ledger", "Airport"]);
-  const navShown = tight ? nav.filter(([, id]) => id !== "why" && (id !== "film" || !!video)) : nav;
+  // with the house entrance the chapter rail follows the new order: the verdict after the overview, the map after the rooms
+  const ORDER = ["overview", "verdict", "features", "experiences", "rooms", "gallery", "location"];
+  const navShown = tight ? (() => {
+    const kept = nav.filter(([, id]) => id !== "why" && (id !== "film" || !!video));
+    const lead = ORDER.map((id) => kept.find(([, x]) => x === id)).filter((x): x is [string, string] => !!x);
+    return [...lead, ...kept.filter(([, id]) => !ORDER.includes(id))];
+  })() : nav;
   const europe = s.regionSlug === "europe";
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
     <div className={[boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : "", tones ? "house-tones house-tones--stay" : ""].filter(Boolean).join(" ")} style={tones ? tonesStyle(tones) : undefined}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
-        {op ? (() => { const { next, ...o } = op; return <HouseOpening {...o} next={next} tab={volumeMark(europe ? "europe" : "stays")} badge={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={104} /> : undefined} />; })() : ef && efHero ? (
+        {op ? (() => { const { next, ...o } = op; return <HouseOpening {...o} next={next} tab={volumeMark(europe ? "europe" : safariVol ? "safaris" : "stays")} badge={stamp ? <FounderStamp kind={stamp} volume={safariVol ? "safaris" : "stays"} ink={o.palette.sand} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={104} /> : undefined} />; })() : ef && efHero ? (
           <DriftFrame a={efHero} ratio="21:9" priority motion="zoom" film={STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : undefined}>
             <p className="ledger-eyebrow !text-white/85">The Exceptional Few&trade; &middot; {collectionNo(ef.collectionNumber)}</p>
             <h1 className="ledger-display text-[2.9rem] md:text-[6.4rem] leading-[0.95] mt-3">{s.name}</h1>
@@ -305,6 +327,18 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           <Overview quote={tight ? undefined : s.quote ?? undefined} answer={answer} facts={tight ? facts.filter(([k]) => !inOpening.has(k)) : facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
           {!(tight && verdict) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}{...(VETTED_UNVISITED.has(s.slug) ? { eyebrow: "Founder vetted · not yet visited" } : {})} className="mt-10 max-w-3xl" />}
+          {/* The house entrance order (James, 10 Nov 2026: "the verdict seems to be way at the bottom ... tighten this up to
+              get the user more information about why, where, and how to get there"): why (the verdict, then the facts
+              at a glance) straight after the overview; where and how (the map, the way in, the routes it is on) together
+              after the rooms. */}
+          {tight && verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
+          {tight && Object.keys(s.facts).length > 0 && (
+            <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
+              <p className="ledger-eyebrow ledger-crimson">Before you go</p>
+              <h2 id="facts-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} at a Glance</h2>
+              <dl className="mt-6 grid md:grid-cols-2 gap-x-10 gap-y-5">{Object.entries(s.facts).filter(([k]) => k !== "best_months" && k !== "how_to_get_there").map(([k, v]) => <div key={k} className="border-t ledger-border pt-3"><dt className="ledger-eyebrow">{k.replace(/_/g, " ")}</dt><dd className="mt-1.5 text-[16px] leading-relaxed">{v}</dd></div>)}</dl>
+            </section>
+          )}
           <OfferPanel offers={offersFor(s.slug)} volume={boat ? "voyages" : "stays"} title={`Offers at ${s.name}`} />
           <Band t={tones} tone="mist"><div>
           {apart.length > 0 && <ImageAccordion id="features" eyebrow={L.apart} title={L.apartTitle} intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? (boat ? undefined : "The short list of reasons it made the Ledger, and a few you only notice on the second day.")} icon="frond" items={apart} />}
@@ -336,18 +370,20 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           {hostEarly && priced && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} />}
           {FULL_FRAME[s.slug] && <FullFrame frames={FULL_FRAME[s.slug]} name={s.name} />}
           {PHOTO_CREDIT[s.slug] && <p className="mt-4 text-[13px] ledger-muted">Photographs courtesy of {PHOTO_CREDIT[s.slug]}.</p>}
-          {!priced && !stayPage && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow={L.rooms} title={L.roomsTitle} icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
+          {!priced && !stayPage && roomData && <RoomTypes name={s.name} data={roomData} quote={SCRIPT[`stay:${s.slug}`] ?? null} />}
+          {!priced && !stayPage && !roomData && (s.rooms.items.length > 0 || s.rooms.paras.length > 0) && <Features id="rooms" eyebrow={L.rooms} title={L.roomsTitle} icon="tree-ring" items={s.rooms.items.length ? s.rooms.items : undefined} body={s.rooms.paras[0]} />}
           {hostEarly && !priced && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} />}
           {ef && !efAerial && efPlace && <div id="place" className="mt-16 md:mt-24"><EFFrame a={efPlace} ratio="21:9" sizes="100vw" /></div>}
-          {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths && !tight ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume="stays" text={roundelText(s.name, s.coords, VOLUME_STYLES.stays.roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
+          {s.coords && chart && <LocationBlock chart={chart} name={s.name} pin={s.coords} others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })} heading={s.country ?? ""} rows={[...(s.airport ? [["Airport", s.airport] as [string, string]] : []), ...(s.bestMonths && !tight ? [["Best months", boat ? undash(s.bestMonths) : s.bestMonths] as [string, string]] : [])]} note={s.airportDirections ?? undefined} mark={<Roundel volume={safariVol ? "safaris" : "stays"} text={roundelText(s.name, s.coords, VOLUME_STYLES[safariVol ? "safaris" : "stays"].roman)} entry={entryNo(s.ledgerId) ? `ENTRY ${entryNo(s.ledgerId)}` : undefined} size={120} />} />}
           {/* 3D terrain (allow-listed page, components/maps/terrain/flag.ts): the stay's own pin over the canyon country, below its map. */}
           {s.slug === "ulum-moab" && s.coords && <SeeIn3D page="stays/ulum-moab" kind="points" ink={volumeMark("stays")} title={`${s.name.replace(/\s+/g, " ")}, Utah`} exaggeration={1.4} playLabel="Turn the canyon country"
             points={[{ name: s.name.replace(/\s+/g, " "), lat: s.coords.lat, lng: s.coords.lng }]}
             intro="The stay's own pin with the red rock country round it raised in relief: mesas, buttes and the canyons cut between them. Press Turn the canyon country, or tilt the map yourself." />}
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
+          {tight && <OnTheseRoutes routes={routeCards} />}
           {!tight && <AdvisorChip where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} compact className="mt-10" />}
           <InstrumentsStrip atlasHref={s.coords && chart ? "#location" : undefined} className="mt-8" />
-          {Object.keys(s.facts).length > 0 && (
+          {!tight && Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>
               <h2 id="facts-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{s.name} at a Glance</h2>
@@ -367,14 +403,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
             );
           })()}
           <GatewayNight country={s.countrySlug} exclude={s.slug} />
-          {routesThrough(s.slug).length > 0 && (
-            <section aria-label="On these routes" className="mt-16">
-              <p className="ledger-eyebrow ledger-crimson">On these routes</p>
-              <ul className="mt-3 grid md:grid-cols-2 gap-4">
-                {routesThrough(s.slug).map((t) => <li key={t.id}><Link href={t.seo.path} className="block border ledger-border hover:border-crimson/60 p-5"><span className="ledger-display text-[1.35rem]">{t.h1}</span><span className="block text-[14px] ledger-muted mt-1">{t.sub}</span><span className="block text-[15px] mt-2">{t.herofacts[1]?.[1]}</span></Link></li>)}
-              </ul>
-            </section>
-          )}
+          {!tight && <OnTheseRoutes routes={routeCards} />}
           {collectionForStay(s.slug) && (
             <section aria-label="Part of a collection" className="mt-16 border ledger-border p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div><p className="ledger-eyebrow ledger-crimson">Part of a collection</p><p className="ledger-display text-[1.5rem] mt-1">{s.name} is one of seven Cayuga Collection hotels</p><p className="mt-1 text-[15px] ledger-muted">Sustainably run boutique hotels across Costa Rica, Panama, Nicaragua and Guatemala, and how to pair them.</p>{offerForStay(s.slug) && <p className="mt-3 text-[15.5px]"><span className="ledger-eyebrow ledger-crimson mr-2">{offerForStay(s.slug)!.program}</span>{offerForStay(s.slug)!.headline}, travel {offerForStay(s.slug)!.travel}.</p>}{s.countrySlug === "costa-rica" && <ExtensionChip className="mt-4" {...EXTENSIONS[CAYUGA_COSTA_RICA_EXTENSION]} />}</div>
@@ -416,7 +445,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
             /* Iggi Intelligence Core, Stage 2 (flag NEXT_PUBLIC_IGGI=on): Iggi answers from the Ledger with this stay as page context. */
             <IggiPanel ctx={{ entityType: "stay", entitySlug: s.slug, countrySlug: s.countrySlug ?? null, ledgerId: s.ledgerId ?? null, sourcePage: path, volume: boat ? "voyages" : s.volumes?.[0] ?? "stays" }} heading={`Ask Iggi about ${s.name}`} />
           )}
-          {verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
+          {verdict && !tight && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
           {pw && <>
             {/* Wild Pathways (Phase 2C, flag on + approved record): Where Your Stay Gives Back and Follow the Pathway. */}
             {pw.impact.length > 0 && <ImpactNote name={s.name} statements={pw.impact} />}

@@ -55,22 +55,31 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
     return () => { window.removeEventListener("scroll", on); if (raf) cancelAnimationFrame(raf); };
   }, [reduced]);
   const n = frames.length;
-  const stage = reduced ? n - 1 : Math.min(n - 1, Math.floor(p * n));
+  // On a phone the arrival no longer pins and scrubs with the scroll (James, 10 Nov 2026: "the pictures get stuck ...
+  // it doesn't seem to scroll on the mobile"): the page scrolls normally and the frames cross-fade on their own.
+  const [auto, setAuto] = useState(0);
+  useEffect(() => {
+    if (!touch || reduced || n < 2) return;
+    const t = window.setInterval(() => setAuto((a) => (a + 1) % n), 4200);
+    return () => window.clearInterval(t);
+  }, [touch, reduced, n]);
+  const stage = reduced ? n - 1 : touch ? auto : Math.min(n - 1, Math.floor(p * n));
   const fade = (i: number) => {
     if (reduced) return i === n - 1 ? 1 : 0;
+    if (touch) return i === auto ? 1 : 0;
     const seg = 1 / n, start = i * seg;
     if (i === 0) return p < seg ? 1 : Math.max(0, 1 - (p - seg) / (seg * 0.4));
     return Math.min(1, Math.max(0, (p - start + seg * 0.15) / (seg * 0.45)));
   };
   // the pathway light: strongest between frames, sweeping across as the reader scrolls
-  const between = reduced ? 0 : Math.sin(Math.PI * ((p * n) % 1));
-  const named = reduced || p > (n - 1) / n;
+  const between = reduced || touch ? 0 : Math.sin(Math.PI * ((p * n) % 1));
+  const named = reduced || touch || p > (n - 1) / n;
   const current = frames[stage];
   return (
-    <div ref={ref} className={`relative ${reduced ? "" : "h-[200svh]"}`}>
-      <section ref={stageRef} className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
+    <div ref={ref} className={`relative ${reduced || touch ? "" : "h-[200svh] [@media(hover:none)_and_(pointer:coarse)]:h-auto"}`}>
+      <section ref={stageRef} className={`${reduced || touch ? "relative" : "sticky top-0 [@media(hover:none)_and_(pointer:coarse)]:relative"} h-[100svh] overflow-hidden text-white`} style={{ background: palette.night }} aria-label={`${title}: the arrival`}>
         {frames.map((f, i) => (
-          <div key={f.src} className="absolute inset-0" style={{ opacity: fade(i), zIndex: i }} aria-hidden={i !== stage}>
+          <div key={f.src} className={`absolute inset-0 ${touch ? "transition-opacity duration-[1400ms] ease-in-out" : ""}`} style={{ opacity: fade(i), zIndex: touch ? (i === auto ? 2 : 1) : i }} aria-hidden={i !== stage}>
             <Pic src={f.src} alt={f.alt} priority={i === 0} sizes="100vw" portrait="9:16" gravity={f.gravity} className="object-cover" style={{ transform: reduced || touch ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
           </div>
         ))}
@@ -148,13 +157,12 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
           </div>
           {/* the pathway stamp, pressed in the record's ivory as The Exceptional Few presses its number; any secondary pathways
               follow smaller on wide screens */}
-          <div className="mt-6 md:mt-0 md:absolute md:right-10 md:top-10 lg:top-14 flex items-center gap-2 pointer-events-none">
+          <div className="mt-6 md:mt-0 md:absolute md:right-10 md:top-10 lg:top-14 flex flex-wrap items-center gap-2 pointer-events-none">
             {also.slice(0, 2).map((a, i) => <PathwayStamp key={a} id={a} ink={palette.sand ?? "var(--tone-ivory)"} size={112} rotate={i ? 5 : 3} seed={a.charCodeAt(6) * 11} className="inline-flex md:hidden xl:inline-flex opacity-70 max-md:[&>svg]:w-[104px] max-md:[&>svg]:h-auto" />)}
-            {badge && <span className="hidden md:inline-flex -rotate-3 mr-3 p-2.5 shadow-[0_6px_18px_rgba(0,0,0,.35)]" style={{ background: "#F6EFDF" }}>{badge}</span>}
+            {badge && <span className="inline-flex mr-1 md:mr-2 max-md:[&_svg]:w-[118px] max-md:[&_svg]:h-auto">{badge}</span>}
             <PathwayStamp id={pathway} ink={palette.sand ?? "var(--tone-ivory)"} size={176} rotate={-5} seed={pathway.charCodeAt(6) * 7} className="opacity-90 max-md:[&>svg]:w-[150px] max-md:[&>svg]:h-auto" />
           </div>
           <p className={`mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl ${badge ? "md:pr-[360px]" : "md:pr-[210px] xl:pr-0"}`}>{line}</p>
-          {badge && <div className="md:hidden mt-8 inline-flex -rotate-2 p-2" style={{ background: "#F6EFDF" }}>{badge}</div>}
           <dl className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 border-t border-white/20 pt-6">
             {glance.map(([k, v]) => (
               <div key={k}><dt className="text-[10.5px] tracking-[0.22em] uppercase" style={{ color: palette.hi }}>{k}</dt><dd className="mt-1.5 ledger-display text-[21px] md:text-[23px] leading-snug">{v}</dd></div>

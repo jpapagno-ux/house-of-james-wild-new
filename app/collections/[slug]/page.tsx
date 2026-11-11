@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Pic from "@/components/opening/Pic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
@@ -74,7 +74,7 @@ export default async function CollectionPage({ params }: P) {
       <SiteHeader overlay />
       <main id="main" className="pb-16">
         <header className="relative w-full h-[80svh] min-h-[520px] max-h-[1000px] overflow-hidden bg-ink text-white">
-          <Image src={c.hero.url} alt={c.hero.alt} fill priority sizes="100vw" quality={85} className="object-cover" />
+          <Pic src={c.hero.url} alt={c.hero.alt} priority sizes="100vw" className="object-cover" width={c.hero.w} />
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.20)] to-[rgba(26,24,22,0.35)]" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-10 md:pb-16">
             <p className="ledger-eyebrow !text-white/80">{c.eyebrow}</p>
@@ -112,7 +112,7 @@ export default async function CollectionPage({ params }: P) {
                   <>
                     <div className="relative aspect-[16/10] overflow-hidden bg-ink/5">
                       {h.image
-                        ? <Image src={h.image.url} alt={h.image.alt} fill sizes="(min-width: 768px) 50vw, 100vw" quality={85} className="object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+                        ? <Pic src={h.image.url} alt={h.image.alt} sizes="(min-width: 768px) 50vw, 100vw" className="object-cover group-hover:scale-[1.02] transition-transform duration-700" width={h.image.w} />
                         : <div className="absolute inset-0 flex items-center justify-center text-center p-6"><p className="ledger-eyebrow">Photographs coming as it joins the Ledger</p></div>}
                     </div>
                     <div className="p-5 md:p-6">
@@ -140,7 +140,7 @@ export default async function CollectionPage({ params }: P) {
             {c.hotels.map((h, i) => (
               <li key={h.slug} id={h.slug}>
                 <figure className="relative w-full aspect-[4/5] sm:aspect-[16/10] lg:aspect-[21/9] max-h-[88svh] overflow-hidden bg-ink">
-                  {h.image && <Image src={h.image.url} alt={h.image.alt} fill sizes="100vw" quality={88} className="object-cover" />}
+                  {h.image && <Pic src={h.image.url} alt={h.image.alt} sizes="100vw" className="object-cover" width={h.image.w} />}
                   <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,24,22,0.78)] via-[rgba(26,24,22,0.10)] to-transparent" aria-hidden="true" />
                   <figcaption className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-7 md:pb-12 text-white">
                     <p className="ledger-eyebrow !text-white/80">{String(i + 1).padStart(2, "0")} · {h.country} · {h.setting}</p>
@@ -178,7 +178,7 @@ export default async function CollectionPage({ params }: P) {
                 const span = ["md:col-span-12 aspect-[16/9] md:aspect-[21/9]", "md:col-span-5 aspect-square", "md:col-span-7 aspect-[4/3] md:aspect-auto", "md:col-span-7 aspect-[4/3]", "md:col-span-5 aspect-[4/3] md:aspect-auto", "md:col-span-12 aspect-[16/9] md:aspect-[21/9]", "md:col-span-6 aspect-square", "md:col-span-6 aspect-square"][i % 8];
                 return (
                   <li key={g.url} className={`relative overflow-hidden bg-ink/5 ${span}`}>
-                    <Image src={g.url} alt={g.alt} fill sizes={span.includes("col-span-12") ? "100vw" : "(min-width: 768px) 60vw, 100vw"} quality={88} className="object-cover" />
+                    <Pic src={g.url} alt={g.alt} sizes={span.includes("col-span-12") ? "100vw" : "(min-width: 768px) 60vw, 100vw"} className="object-cover" width={g.w} />
                     <span className="absolute left-3 bottom-3 bg-black/55 text-white text-[11px] tracking-[0.12em] uppercase px-2 py-0.5">{g.hotel}</span>
                   </li>
                 );
@@ -252,7 +252,7 @@ export default async function CollectionPage({ params }: P) {
                         const h = slugOf(x.hotel);
                         return (
                           <li key={x.hotel} id={`offer-${h?.slug ?? x.hotel}`} className="border ledger-border flex flex-col">
-                            <div className="relative aspect-[4/3] overflow-hidden bg-ink/5"><Image src={x.image.url} alt={x.image.alt} fill sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" quality={85} className="object-cover" /></div>
+                            <div className="relative aspect-[4/3] overflow-hidden bg-ink/5"><Pic src={x.image.url} alt={x.image.alt} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" className="object-cover" width={x.image.w} /></div>
                             <div className="p-5 flex flex-col flex-1">
                               <p className="ledger-eyebrow ledger-crimson">{h ? `${h.country} · ${h.where}` : ""}</p>
                               <h4 className="ledger-display text-[1.35rem] leading-tight mt-1">{h?.built ? <Link href={`/stays/${h.slug}`} className="hover:ledger-crimson">{x.hotel}</Link> : x.hotel}</h4>
@@ -286,7 +286,7 @@ export default async function CollectionPage({ params }: P) {
                 <ul className="grid grid-cols-2 md:grid-cols-4 gap-1.5 md:gap-2 px-1.5 md:px-2">
                   {grp.images.map((g, i) => (
                     <li key={g.url} className={`relative overflow-hidden bg-ink/5 ${i % 7 === 0 ? "col-span-2 row-span-2 aspect-square md:aspect-auto" : "aspect-square"}`}>
-                      <Image src={g.url} alt={g.alt} fill sizes={i % 7 === 0 ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 25vw, 50vw"} quality={85} className="object-cover" />
+                      <Pic src={g.url} alt={g.alt} sizes={i % 7 === 0 ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 25vw, 50vw"} className="object-cover" width={g.w} />
                       {g.hotel && <span className="absolute left-2 bottom-2 bg-black/55 text-white text-[11px] tracking-[0.12em] uppercase px-2 py-0.5">{g.hotel}</span>}
                     </li>
                   ))}

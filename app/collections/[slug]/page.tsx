@@ -74,7 +74,7 @@ export default async function CollectionPage({ params }: P) {
       <SiteHeader overlay />
       <main id="main" className="pb-16">
         <header className="relative w-full h-[80svh] min-h-[520px] max-h-[1000px] overflow-hidden bg-ink text-white">
-          <Pic src={c.hero.url} alt={c.hero.alt} priority sizes="100vw" className="object-cover" width={c.hero.w} />
+          <Pic src={c.hero.url} alt={c.hero.alt} priority sizes="100vw" className="object-cover" width={c.hero.w} upscaleUnder={2400} />
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(38,20,22,0.88)] via-[rgba(38,20,22,0.20)] to-[rgba(26,24,22,0.35)]" aria-hidden="true" />
           <div className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-10 md:pb-16">
             <p className="ledger-eyebrow !text-white/80">{c.eyebrow}</p>
@@ -140,7 +140,7 @@ export default async function CollectionPage({ params }: P) {
             {c.hotels.map((h, i) => (
               <li key={h.slug} id={h.slug}>
                 <figure className="relative w-full aspect-[4/5] sm:aspect-[16/10] lg:aspect-[21/9] max-h-[88svh] overflow-hidden bg-ink">
-                  {h.image && <Pic src={h.image.url} alt={h.image.alt} sizes="100vw" className="object-cover" width={h.image.w} />}
+                  {h.image && <Pic src={h.image.url} alt={h.image.alt} sizes="100vw" className="object-cover" width={h.image.w} upscaleUnder={2400} />}
                   <div className="absolute inset-0 bg-gradient-to-t from-[rgba(26,24,22,0.78)] via-[rgba(26,24,22,0.10)] to-transparent" aria-hidden="true" />
                   <figcaption className="absolute inset-x-0 bottom-0"><div className="max-w-ledger mx-auto px-5 md:px-10 pb-7 md:pb-12 text-white">
                     <p className="ledger-eyebrow !text-white/80">{String(i + 1).padStart(2, "0")} · {h.country} · {h.setting}</p>

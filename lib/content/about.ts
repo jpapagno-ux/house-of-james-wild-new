@@ -1,3 +1,4 @@
+import { CHOSEN } from "@/lib/content/voice/chosen";
 // The house pages: /about (why the house is still going, with James's rules
 // of the road) and /about/founder (James). The separate Philosophy page was
 // retired 25 Oct 2026; /about/philosophy redirects to /about#rules.
@@ -35,7 +36,7 @@ export const MEMOIR_URL = "https://www.wildearthstays.com/memoir/wild-earth-stay
 export const RULES_INTRO = "Plan the bones of a journey: the flights, the transfers, the stays worth booking early. Then leave room for what's around the corner.";
 export const CLOSER = "Plan the bones. Wing the rest.";
 export type Rule = { n: string; title: string; james: string; house: string };
-export const RULES: Rule[] = [
+const RULES_DRAFT: Rule[] = [
   { n: "01", title: "Go someplace new.", james: "The places you already love will keep. Go and meet one you don't know yet.", house: "Every journey can carry one place you've never heard of. The Compass even holds one back until you talk to us." },
   { n: "02", title: "It's what's around the corner.", james: "The best thing I've seen on any trip was never on the itinerary. It was just past it.", house: "Routes are drawn with room to turn left: a free afternoon near the good road, a guide who knows the side track." },
   { n: "03", title: "Search on a whim.", james: "Half my best trips started with “what's that?” and a finger on a map.", house: "Send us the whim. We'll tell you straight whether it's worth the flight, and when." },
@@ -45,13 +46,21 @@ export const RULES: Rule[] = [
   { n: "07", title: "Make mistakes. Just not the expensive ones.", james: "Forty-four years on the road buys you a long list of wrong turns. I took them so you can take better ones.", house: "Every Overland route and every Compass reading lists what we'd avoid." },
 ];
 
+// James's own line for each rule, as he marked it in the Voice Bank (11 Nov 2026); the approved draft where he kept it.
+export const RULES: Rule[] = RULES_DRAFT.map((r) => ({ ...r, james: CHOSEN[`rule-${r.n}`] ?? r.james }));
+
 // Mistakes worth skipping: general field lessons, dry on purpose.
-export const MISTAKES: { avoid: string; quip: string }[] = [
+const MISTAKES_DRAFT: { avoid: string; quip: string }[] = [
   { avoid: "Seeing a whole country in a week.", quip: "You'll see the airports beautifully." },
   { avoid: "Changing hotels every night.", quip: "That isn't a trip. It's a check-in tour." },
   { avoid: "Packing for the big plane when the small one takes you in.", quip: "Bush planes weigh your bag, and they mean it." },
   { avoid: "Filling every hour.", quip: "The sighting you remember happens in the hour you didn't book." },
   { avoid: "Trusting the brochure photo.", quip: "Which is why everything in the Ledger has been slept in first." },
+];
+// The five, with the punchlines James picked, then the ten more he marked "Use it" (Voice Bank, 11 Nov 2026).
+export const MISTAKES: { avoid: string; quip: string }[] = [
+  ...MISTAKES_DRAFT.map((m, i) => ({ ...m, quip: CHOSEN[`mis-0${i + 1}`] ?? m.quip })),
+  ...Array.from({ length: 10 }, (_, i) => CHOSEN[`mm-${String(i + 1).padStart(2, "0")}`]).filter(Boolean).map((x) => { const [avoid, quip] = x.split(" | "); return { avoid, quip: quip ?? "" }; }),
 ];
 
 export const BELIEFS = ["Luxury is space and silence.", "Adventure begins where Wi-Fi ends.", "Travel is a way back to yourself."];

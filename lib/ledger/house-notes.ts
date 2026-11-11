@@ -24,13 +24,22 @@ const SCRIPT_BY_TYPE: Record<string, string[]> = {
   "Photographers": ["Golden hour waits for no one.", "Pack the long lens."],
   "Conservation-minded": ["Leave it wilder.", "Ask the rangers. Listen."],
 };
-const SCRIPT_ANY = ["Three nights, not two.", "Pack less. Linger more.", "Leave the watch at home.", "Say yes to the detour.", "Unpack. Stay a while.", "The best seat is outside.", "Arrive curious. Leave late.", "Ask the staff, not the app."];
+// James's own postmark lines, marked in the Voice Bank (11 Nov 2026), placed where they're true: the bush lines on
+// safari pages, the tide on the water, the rest anywhere. They lead each pool so his lines carry most pages.
+const JAMES_ANY = ["One more night.", "Lose the watch.", "Ask for the corner.", "Pack light, stay late."];
+const JAMES_BY_TYPE: Record<string, string[]> = {
+  "Big Five safari": ["Trust the guide.", "Sit still. It comes to you.", "Sundowners are mandatory.", "Worth the bumpy road."],
+  "Beach & ocean": ["Tide first."],
+  "Photographers": ["Long lens, short schedule."],
+  "Conservation-minded": ["Trust the guide."],
+};
+const SCRIPT_ANY = [...JAMES_ANY, "Three nights, not two.", "Pack less. Linger more.", "Leave the watch at home.", "Say yes to the detour.", "Unpack. Stay a while.", "The best seat is outside.", "Arrive curious. Leave late.", "Ask the staff, not the app."];
 const lc = (t: string) => (t.startsWith("Big Five") ? t : t.charAt(0).toLowerCase() + t.slice(1));
 
 export function houseNote(n: NoteInput): HouseNote {
   const h = hash(n.key);
   const month = firstMonth(n.bestMonths);
-  const typed = n.suited.slice(0, 2).flatMap((t) => SCRIPT_BY_TYPE[t] ?? []);
+  const typed = n.suited.slice(0, 2).flatMap((t) => [...(JAMES_BY_TYPE[t] ?? []), ...(SCRIPT_BY_TYPE[t] ?? [])]);
   const pool = [...typed, ...(month ? [`Go in ${month}. Trust me.`] : []), ...SCRIPT_ANY];
   const script = `${pool[h % pool.length]} JW`;
 

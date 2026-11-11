@@ -106,6 +106,18 @@ export default function LedgerPage() {
             </article>
           </section>
 
+          <section className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 grid gap-10 md:grid-cols-2" aria-label="Why a place makes the Ledger, and why it does not">
+            <div>
+              <SectionHead eyebrow="In the margin" title="Why It Made the Ledger" id="made-heading" />
+              <ul className="mt-6 grid gap-3">{l.madeIt.map((x) => <li key={x} className="ledger-hand text-[1.45rem] leading-snug text-coast-deep">{x}</li>)}</ul>
+            </div>
+            <div>
+              <SectionHead eyebrow="Also in the margin" title="Why It Didn't" id="didnt-heading" />
+              <ul className="mt-6 grid gap-3">{l.didnt.map((x) => <li key={x} className="ledger-hand text-[1.45rem] leading-snug text-coast-deep line-through decoration-crimson/40 decoration-1">{x}</li>)}</ul>
+              <p className="mt-4 text-[13px] ledger-muted">The reasons we pass on a place. We never name the hotel.</p>
+            </div>
+          </section>
+
           <section className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="struck-heading">
             <SectionHead eyebrow="House style" title="Words You Won't Find in the Ledger" id="struck-heading" />
             <ul className="mt-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-5">

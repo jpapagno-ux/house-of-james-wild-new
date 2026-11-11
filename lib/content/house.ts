@@ -1,3 +1,4 @@
+import { CHOSEN } from "@/lib/content/voice/chosen";
 // The trust pages: /the-ledger (how James vets every stay), /for-advisors
 // (join the house) and /partners (partner with a purpose).
 //
@@ -59,13 +60,12 @@ export const LEDGER = {
     ] as [string, string][],
     note: "James sailed her with his son in November 2024.",
   },
-  struck: [
-    { word: "Hidden gem", why: "If it's on a website, it's not hidden. If it were a gem, it'd be in a vault." },
-    { word: "Bucket list", why: "We'd rather you went while you're very much alive and kicking." },
-    { word: "Bespoke", why: "Suits are bespoke. Trips are planned, carefully, by someone who's been." },
-    { word: "Once in a lifetime", why: "The places James would send his own family. That's what the Founder favorite stamp is for." },
-    { word: "Curated", why: "Museums curate. We vet. There's a difference, and it involves mosquito nets." },
-  ],
+  // Why a place makes the Ledger, and why it doesn't: James's margin lines, as he marked them (Voice Bank, 11 Nov 2026).
+  // General reasons, never pinned to a named hotel.
+  madeIt: Array.from({ length: 10 }, (_, i) => CHOSEN[`in-${String(i + 1).padStart(2, "0")}`]).filter(Boolean) as string[],
+  didnt: Array.from({ length: 10 }, (_, i) => CHOSEN[`out-${String(i + 1).padStart(2, "0")}`]).filter(Boolean) as string[],
+  // James's struck words and his reasons, as he marked them in the Voice Bank (11 Nov 2026)
+  struck: Array.from({ length: 12 }, (_, i) => CHOSEN[`bz-${String(i + 1).padStart(2, "0")}`]).filter(Boolean).map((x) => { const [word, why] = x.split(" | "); return { word, why }; }),
   folio: "Under the Ledger sits the Traveller Folio: each journey gets its own Folio ID, so the house travels with you along the way. Bookings, confirmations and live updates on the road come from myfolio@jameswildco.com under that ID, and you come home to a digital folio of the trip, kept on your own shelf for years.",
   jamesNote: "If I haven't slept in it, sailed it or walked it, or sent someone I'd trust with my own family, it isn't in the Ledger. That's not a policy. It's just how I've always done it.",
   faqs: [

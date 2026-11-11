@@ -46,6 +46,7 @@ import AdvisorChip from "@/components/advisor/AdvisorChip";
 import InstrumentsStrip from "@/components/ledger/InstrumentsStrip";
 import RoomTypes from "@/components/stay/RoomTypes";
 import { founderLine } from "@/lib/content/voice/founder-lines";
+import { CHOSEN } from "@/lib/content/voice/chosen";
 import WhyWhoVerdict from "@/components/stay/WhyWhoVerdict";
 import { thinkTwice } from "@/lib/content/think-twice";
 import OnTheseRoutes, { type RouteCard } from "@/components/stay/OnTheseRoutes";
@@ -350,7 +351,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           )}
           {ef && efAerial && s.coords && <div id="place" className=""><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
           <DayBand>
-          {tight && <WhyWhoVerdict name={s.name} why={s.why} vetted={status ?? `Vetted by the house${s.ledgerId ? ` · ${s.ledgerId}` : ""}`} whoFor={s.facts.who_its_for ?? null} suited={suited.length ? suited : bestFor} thinkTwice={twice} verdict={verdict ? { line: verdict.text[0], by: `James Wild · ${verdict.where}, ${verdict.when}` } : founderLine(`stay:${s.slug}`) ? { line: founderLine(`stay:${s.slug}`)!.line, by: `James Wild · ${founderLine(`stay:${s.slug}`)!.where}, ${founderLine(`stay:${s.slug}`)!.when}`, short: true } : null} planHref={planHref} />}
+          {tight && <WhyWhoVerdict name={s.name} why={s.why} vetted={`${status ?? `Vetted by the house${s.ledgerId ? ` · ${s.ledgerId}` : ""}`}${(stamp === "Field verified" || stamp === "Founder favorite") && CHOSEN["in-01"] ? ` · “${CHOSEN["in-01"]}” JW` : ""}`} whoFor={s.facts.who_its_for ?? null} suited={suited.length ? suited : bestFor} thinkTwice={twice} verdict={verdict ? { line: verdict.text[0], by: `James Wild · ${verdict.where}, ${verdict.when}` } : founderLine(`stay:${s.slug}`) ? { line: founderLine(`stay:${s.slug}`)!.line, by: `James Wild · ${founderLine(`stay:${s.slug}`)!.where}, ${founderLine(`stay:${s.slug}`)!.when}`, short: true } : null} planHref={planHref} />}
           <Overview quote={tight ? undefined : s.quote ?? undefined} answer={answer} facts={tight ? facts.filter(([k]) => !inOpening.has(k)) : facts} paragraphs={overviewParas} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
           {!(tight && verdict) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}{...(VETTED_UNVISITED.has(s.slug) ? { eyebrow: "Founder vetted · not yet visited" } : {})} className="mt-10 max-w-3xl" />}

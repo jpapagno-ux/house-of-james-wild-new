@@ -16,6 +16,9 @@ import ShipTemplate from "./ShipTemplate";
 import CabinsDeck from "./CabinsDeck";
 import DatesRates from "./DatesRates";
 import DatesGrid from "./DatesGrid";
+import SailingTable from "./SailingTable";
+import WhyWhoVerdict from "@/components/stay/WhyWhoVerdict";
+import { shipThinkTwice } from "@/lib/content/ships/think-twice";
 import { datesData } from "@/lib/content/ships/fares";
 import NoDates from "./NoDates";
 import MonthDepartures from "./MonthDepartures";
@@ -184,8 +187,20 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
       lead={<>
         {s.founder && <FounderProof proof={t(s.founder.proof)} eyebrow={t(s.founder.eyebrow)} className="mt-10 max-w-3xl" />}
         {extra.top}
+        {extra.opening ? (
+          // Why she's here, who she suits (and think twice if), the verdict: the stays' band, in cruise words (James, 11 Nov 2026)
+          <WhyWhoVerdict name={s.name} whyTitle="Why We Chose Her" planHref={plan}
+            why={s.why.map((b) => ({ body: t(b) }))}
+            vetted={s.proofLine ? t(s.proofLine) : `${s.status === "sailing" ? "Sailing" : t(s.status)} · ${s.operator}`}
+            whoFor={null}
+            suited={s.suits.map((x) => t(x.who))}
+            thinkTwice={shipThinkTwice(s, offers)}
+            verdict={null}
+            noVerdict={/^founder sailed/i.test(s.proofLine ?? "") ? `James has sailed ${s.name}; his written verdict is on its way. Ask him for his first-hand take on the suites, the sailings and the ports before you book.` : undefined} />
+        ) : (
         <WhyChose eyebrow="Why we chose her" title="Why Choose Her, and Who Is She For?" blocks={s.why.map((b) => ({ body: t(b) }))}
           status={<p className="text-[14px] ledger-muted">{s.proofLine ? <><span className="ledger-eyebrow ledger-crimson">{t(s.proofLine).split(" · ")[0]}</span> · {t(s.proofLine).split(" · ").slice(1).join(" · ")}{partner && <> · <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">Who are {partner.name}?</Link></>}</> : <><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {partner ? <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">{s.operator}</Link> : s.operator}{s.brandLine && s.brandLine !== s.operator && s.brandLine !== s.name ? `, ${s.brandLine}` : ""}{partner && <> · <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">Who are {partner.name}?</Link></>}</>}</p>} />
+        )}
         {/* the house opening already says who she suits; the list is kept for pages without it */}
         {s.suits.length > 0 && !extra.opening && (
           <ul id="suits" className={`mt-6 grid gap-4 md:grid-cols-2 ${s.suits.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`} aria-label={`Who ${s.name} suits`}>
@@ -266,7 +281,23 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
             {s.fleetSchedule && <p className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">The {s.operator} fleet schedule</span>{t(s.fleetSchedule)}</p>}
             {cruise.length > 0 && <>
               {(journeys.length > 0 || s.fleetSchedule) && <h3 className="mt-8 ledger-display text-[22px] md:text-[24px]">{journeys.length ? "Cruise fares by season" : `${s.operator} departures, fleet wide`}</h3>}
-              <DatesGrid ship={s.name} data={datesData(s, planFor)} note={published ? undefined : publicNote(s.pricesNote)} basis={s.fareBasis} />
+              {(() => {
+                // dated sailings read as a sailing table (James, 11 Nov 2026); season bands and fares by cabin keep the grid
+                const dd = datesData(s, planFor);
+                const note = published ? undefined : publicNote(s.pricesNote);
+                if (dd.bands || !dd.sailings.length) return <DatesGrid ship={s.name} data={dd} note={note} basis={s.fareBasis} />;
+                const flags = offers.flatMap((o) => (o.sailingsUntil || o.departure) ? [{ id: o.id, short: o.flag ?? (o.program === "Final Call" ? "Final Call" : "Offer"), sailingsUntil: o.sailingsUntil, departure: o.departure }] : []);
+                const byCabin = dd.cabins.length > 1;
+                return <>
+                  <SailingTable ship={s.name} data={dd} flags={flags} note={note} />
+                  {byCabin && (
+                    <details className="mt-8 border-t ledger-rule pt-4">
+                      <summary className="cursor-pointer list-none [&::-webkit-details-marker]:hidden inline-flex items-center min-h-[44px] text-[12px] tracking-[0.16em] uppercase underline underline-offset-4">Fares by cabin and season</summary>
+                      <DatesGrid ship={s.name} data={dd} basis={s.fareBasis} />
+                    </details>
+                  )}
+                </>;
+              })()}
             </>}
             {published && <PublishedFares s={s} title="Every published fare, by year and length" planFor={(what) => planFor(`${what}, ${s.name}`, "", false)} />}
             <DatesRates ship={s.name} types={types} cabins={s.cabins.map((c) => c.type)} departures={journeys} basis={basis} title={`Aboard ${s.name} inside ${s.operator} journeys`} note={cruise.length ? undefined : publicNote(s.pricesNote)} />

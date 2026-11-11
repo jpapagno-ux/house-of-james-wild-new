@@ -9,9 +9,11 @@ import { Check, Minus } from "lucide-react";
 
 export type WhyItem = { title?: string | null; body: string };
 
-export default function WhyWhoVerdict({ name, why, vetted, whoFor, suited, thinkTwice, verdict, planHref }: {
+export default function WhyWhoVerdict({ name, why, vetted, whoFor, suited, thinkTwice, verdict, planHref, whyTitle = "Why We Vetted It", noVerdict }: {
   name: string; why: WhyItem[]; vetted: string; whoFor?: string | null; suited: string[]; thinkTwice: string[];
   verdict: { line: string; by: string } | null; planHref: string;
+  /** ships: "Why We Chose Her" */ whyTitle?: string;
+  /** the line when there is no written verdict (a ship James has sailed says so) */ noVerdict?: string;
 }) {
   const path = "var(--tone-path, #2E2B28)";
   const Head = ({ n, label, title }: { n: string; label: string; title: string }) => (
@@ -24,7 +26,7 @@ export default function WhyWhoVerdict({ name, why, vetted, whoFor, suited, think
   return (
     <section id="why" aria-label={`Why ${name} is in the Ledger, who it suits, and the verdict`} className="mt-12 md:mt-16 grid gap-10 md:gap-8 lg:gap-12 md:grid-cols-3">
       <div>
-        <Head n="01" label="Why it's here" title="Why We Vetted It" />
+        <Head n="01" label="Why it's here" title={whyTitle} />
         <ul className="mt-4 grid gap-4">
           {why.slice(0, 3).map((w) => (
             <li key={w.body.slice(0, 40)}>
@@ -64,7 +66,7 @@ export default function WhyWhoVerdict({ name, why, vetted, whoFor, suited, think
           </>
         ) : (
           <>
-            <p className="mt-4 text-[15.5px] leading-relaxed">James hasn&rsquo;t written a verdict on {name} yet. Ask James or an advisor for a first-hand take before you book; they will tell you plainly whether it fits.</p>
+            <p className="mt-4 text-[15.5px] leading-relaxed">{noVerdict ?? <>James hasn&rsquo;t written a verdict on {name} yet. Ask James or an advisor for a first-hand take before you book; they will tell you plainly whether it fits.</>}</p>
             <Link href={planHref} className="mt-4 inline-flex items-center min-h-[44px] ledger-btn-ghost">Ask James for his take</Link>
           </>
         )}

@@ -70,10 +70,14 @@
   "Every cabin is a suite, and Windstar includes all dining, 24-hour room service and the water-access marina in the fare."
  ],
  "hero": {
-  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/star-breeze/star-breeze-bora-bora-aerial",
-  "alt": "Star Breeze's water-access Marina open at anchor off Bora Bora: kayaks, paddleboards and swimming from the stern"
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/star-breeze/star-breeze-moorea-aerial",
+  "alt": "Star Breeze at anchor off Moorea, from the air, with the island's peaks behind"
  },
  "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/star-breeze/star-breeze-bora-bora-aerial",
+   "alt": "Star Breeze's water-access Marina open at anchor off Bora Bora: kayaks, paddleboards and swimming from the stern"
+  },
   {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/star-breeze/star-breeze-moorea-deck",
    "alt": "Two guests in pareos on deck aboard Star Breeze off Moorea"
@@ -102,7 +106,11 @@
     "Private veranda",
     "Up to 3 guests",
     "Ultimate Internet Package included"
-   ]
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/star-breeze/cabins/owners-suite-living",
+    "alt": "The living room of an Owner's Suite aboard Star Breeze, with its private veranda"
+   }
   },
   {
    "type": "Broadmoor / Sea Island Suite",

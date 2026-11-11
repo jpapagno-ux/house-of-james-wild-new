@@ -18,9 +18,10 @@ const BASE = "https://res.cloudinary.com/jhlnq5h5/image/upload/";
 // a cap keeps the tallest phone cuts under Cloudinary's 25-megapixel limit (no phone asks for more)
 const loader = (t: string, max = 4000) => ({ src, width }: ImageLoaderProps) => `${BASE}${t},w_${Math.min(width, max)}/${cloudinaryId(src)}`;
 
-export default function Pic({ src, alt, sizes, priority = false, className = "", style, portrait, ratio, gravity, width }: {
+export default function Pic({ src, alt, sizes, priority = false, className = "", style, portrait, ratio, gravity, width, upscaleUnder = 1600 }: {
   src: string; alt: string; sizes: string; priority?: boolean; className?: string; style?: CSSProperties;
-  /** the original's width when the record knows it (collections): under 1,600px takes the AI upscale */ width?: number;
+  /** the original's width when the record knows it (collections): under `upscaleUnder` (1,600px) takes the AI upscale */ width?: number;
+  /** full-bleed bands raise it (2,400px), so a 1,920px original is still sharp across a wide screen */ upscaleUnder?: number;
   /** phones (under 768px): a portrait cut at this ratio, e.g. "9:16" */ portrait?: string;
   /** every width: a fixed cut at this ratio, e.g. "4:5" */ ratio?: string;
   /** the phone cut's gravity where automatic detection picks the wrong subject (east, south...) */ gravity?: string;
@@ -30,7 +31,7 @@ export default function Pic({ src, alt, sizes, priority = false, className = "",
   // points ... tight, clean"): an original under 1,600px is upscaled by Cloudinary's AI, then given an automatic
   // colour and contrast lift and a firmer sharpen; every other frame gets a light sharpen. Crops use g_auto (subject
   // aware) so the focal point holds on every cut.
-  const up = (width ? width < 1600 : smallWidth(src)) ? "e_upscale/" : "";
+  const up = (width ? width < upscaleUnder : smallWidth(src)) ? "e_upscale/" : "";
   const finish = up ? "e_improve:outdoor:50/e_sharpen:80/" : "e_sharpen:40/";
   const base = up + finish + (ratio ? `f_auto,q_auto:best,c_fill,g_auto,ar_${ratio}` : "f_auto,q_auto:best,c_limit");
   const common = { alt, fill: true, sizes, priority, src };

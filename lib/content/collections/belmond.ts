@@ -44,7 +44,6 @@ export const BELMOND = {
       { ...img(`${EI}-fish-eagle-bar-sunset`, "Sunset at the Fish Eagle Bar, Eagle Island Lodge, A Belmond Safari, Okavango Delta", 7253, 4841), hotel: "Eagle Island Lodge" },
       { ...img(`${SE}-view-over-the-plains`, "The view from Savute Elephant Lodge, A Belmond Safari, over the Savute plains in Chobe National Park", 4915, 6156), hotel: "Savute Elephant Lodge" },
       { ...img(`${EI}-veranda-sunset`, "A shaded veranda of a tented room at Eagle Island Lodge, A Belmond Safari, looking across grasslands at sunset", 7209, 4811), hotel: "Eagle Island Lodge" },
-      { ...img(`${MN}-afternoon-tea`, "An outdoor table set for afternoon tea with macarons at Mount Nelson, A Belmond Hotel, Cape Town", 3523, 4404), hotel: "Mount Nelson" },
       { ...img(`${EI}-leopard`, "A leopard seen on a game drive from Eagle Island Lodge, A Belmond Safari, Okavango Delta", 3873, 5809), hotel: "Eagle Island Lodge" },
     ],
   },

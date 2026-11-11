@@ -34,7 +34,7 @@ function lowestOnly(d: ShipRecord): ShipRecord {
 const live = (x: unknown) => settled(withActiveDepartures(x as ShipRecord));
 export const AMAZON_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: string }[] = [
   { data: live(AmazonExplorer), offerRefs: [], credit: "andBeyond" },
-  { data: live(AriaAmazon), offerRefs: [], credit: "Aqua Expeditions" },
+  { data: live(AriaAmazon), offerRefs: ["aria-amazon"], credit: "Aqua Expeditions" },
   { data: lowestOnly(live(DelfinIii)), offerRefs: [], credit: "Delfín Amazon Cruises" },
   { data: live(Anakonda), offerRefs: [], credit: "Anakonda Amazon Cruises" },
   { data: live(MvPremium), offerRefs: [], credit: "Amazon Clipper" },

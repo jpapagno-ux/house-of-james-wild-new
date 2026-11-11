@@ -3,6 +3,8 @@ import { ArrowRight, Check, X } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import LiveHostPanel from "@/components/record/LiveHostPanel";
+import { hostFor } from "@/lib/content/hosts";
 import JsonLd from "@/components/ledger/JsonLd";
 import { Overview, RecordHero, SectionHead } from "@/components/record/Sections";
 import { GalleryMosaic, RecordActionBar } from "@/components/record/Frame";
@@ -219,6 +221,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
 
           {!tones && operatorBlock}
 
+          <Band t={tones} tone="night"><LiveHostPanel pageKey={`voyage:${v.slug}`} initial={hostFor(`voyage:${v.slug}`)} stayName={v.name} kind="vessel" /></Band>
           <FaqBlock faqs={v.faqs.map(([q, a]) => ({ q: t(q), a: t(a) }))} title={`What Else Should You Know About the ${v.name}?`} icon={tones ? "frond" : undefined} />
         </div>
       </main>

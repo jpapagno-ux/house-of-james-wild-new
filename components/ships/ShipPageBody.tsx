@@ -88,7 +88,7 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
         {live.length > 0 && <a href="#offers" aria-label={`${live.length} live ${live.length === 1 ? "offer" : "offers"} on ${rec0.name}`}><PassportStamp volume="voyages" top="On the Horizon" date="Savings" place={endWords ? `${book ? "Book by" : "Until"} ${endWords}` : rec0.operator} size={120} rotate={3} ink={ink} /></a>}
       </span>
     ) : undefined;
-    opening = <HouseOpening {...o} next={next} badge={badge} />; surface = o.palette.day; tones = tones ?? { palette: o.palette };
+    opening = <HouseOpening {...o} next={next} badge={badge} voyage />; surface = o.palette.day; tones = tones ?? { palette: o.palette };
   }
   // At a glance with the icon legend, and "Either side of the voyage" (James, 9 Nov 2026: "a comprehensive icon legend",
   // pre and post cruise stays, "yes to the house stays vs the cruise ship one"). The Exceptional Few keep their own signals.

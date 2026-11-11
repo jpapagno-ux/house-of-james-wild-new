@@ -24,5 +24,5 @@ export default async function Page({ params }: P) {
   const o = polarOpening(v);
   if (!o) return <PolarVoyagePage v={v} />;
   const { next, ...base } = o;
-  return <PolarVoyagePage v={v} opening={<HouseOpening {...base} next={next} />} surface={base.palette.day} tones={{ palette: base.palette }} />;
+  return <PolarVoyagePage v={v} opening={<HouseOpening {...base} next={next} voyage />} surface={base.palette.day} tones={{ palette: base.palette }} />;
 }

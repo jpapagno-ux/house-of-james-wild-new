@@ -1,3 +1,4 @@
+import { CHOSEN } from "./voice/chosen.ts";
 // The Verdict: advisory and witty, in James Wild's voice, the seasoned
 // traveller's call on a place (rewritten 26 Oct 2026 from James's field
 // notes so it advises rather than reminisces). Only places James has
@@ -11,7 +12,7 @@ export const SKETCHES = { cheetah: { src: "/brand/sketches/cheetah-pencil.png", 
 
 // Sign-off lines, rotated so no two notes close the same way. The first is
 // James's own; the rest are house drafts in his voice (26 Oct 2026).
-export const SIGNOFFS = [
+const SIGNOFFS_FIRST = [
   "Never look back. Time is on your side.",
   "Leave a day unplanned. It's usually the one you'll talk about.",
   "Pack less. Stay longer.",
@@ -20,6 +21,8 @@ export const SIGNOFFS = [
   "The best seat in the house is usually outside.",
   "Book the trip. Lose the schedule.",
 ];
+// The ten James marked in the Voice Bank (11 Nov 2026) join the rotation after the seven.
+export const SIGNOFFS = [...SIGNOFFS_FIRST, ...Array.from({ length: 10 }, (_, i) => CHOSEN[`so-${String(i + 1).padStart(2, "0")}`]).filter(Boolean)];
 /** A different sign-off for each note, stable for each place. */
 export function signoffFor(key: string) {
   const i = Object.keys(VERDICTS).indexOf(key);

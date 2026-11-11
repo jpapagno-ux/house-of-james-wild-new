@@ -35,6 +35,50 @@ function moreHost(key: string, property: string, place: string, rooms: string, a
   } } };
 }
 
+// Partner expedition hosts (James, 11 Nov 2026: "For the Ecoventura boats, I have a host ... a host section for Via
+// Natura and for the Hermes ... Antarctica21 ... these contacts work for the companies and are available to talk to us
+// and guests for deeper information and to get the facts ... a James Wild & Co featured highlight"). One host per
+// company, on every ship (and, for Antarctica21, every voyage) it sails. Ready now as role cards (sample: true): add the
+// host's name, title and photograph here, or in the Partner Desk (Hosts), and the card shows them.
+const PARTNER_HOST: Record<string, { host: Host; keys: string[] }> = {
+  ecoventura: {
+    keys: ["ecoventura-origin-yacht", "ecoventura-theory-yacht", "ecoventura-evolve-yacht"],
+    host: { name: "Ecoventura Expedition Host", role: "Your expedition host · Ecoventura · a James Wild & Co connection", sample: true, seats: 6, photo: null, imageStatus: "follow_up",
+      tz: "America/Guayaquil", place: "Ecuador", zoneLabel: "Ecuador time (UTC−5)", calendlyUrl: `${GROUP_CALENDLY}?property=ecoventura`,
+      topics: [
+        "Origin, Theory or Evolve: which yacht, which week and which islands",
+        "What the fare includes, and what's extra: flights to the islands, the park fee, gratuities",
+        "Your dates against the Galápagos seasons, and which departures carry Ecoventura's current savings",
+        "Snorkelling, kayaking and walking levels, and travelling with children",
+        "Getting there: the flights to the islands and the night before you board",
+      ] } },
+  vianatura: {
+    keys: ["monserrat-yacht-galapagos", "hermes-galapagos"],
+    host: { name: "Via Natura Expedition Host", role: "Your expedition host · Via Natura · a James Wild & Co connection", sample: true, seats: 6, photo: null, imageStatus: "follow_up",
+      tz: "America/Guayaquil", place: "Ecuador", zoneLabel: "Ecuador time (UTC−5)", calendlyUrl: `${GROUP_CALENDLY}?property=vianatura`,
+      topics: [
+        "Hermes or Monserrat: which yacht and which itinerary suits your party",
+        "The cabins side by side, and chartering the whole yacht",
+        "What the fare includes, and what's extra: flights to the islands, the park fee, gratuities",
+        "Your dates against the Galápagos seasons: what you see in each",
+        "Getting there, children aboard, and anything the crew should know before you sail",
+      ] } },
+  antarctica21: {
+    keys: ["magellan-explorer", "magellan-discoverer", "classic-antarctica-air-cruise", "polar-circle-air-cruise", "antarctica-express-air-cruise", "antarctica-south-georgia-air-cruise", "magellan-discoverer-inaugural-air-cruise", "falklands-south-georgia-antarctica", "falklands-south-georgia", "falkland-islands", "patagonia-chilean-fjords"],
+    host: { name: "Antarctica21 Expedition Host", role: "Your expedition host · Antarctica21 · a James Wild & Co connection", sample: true, seats: 6, photo: null, imageStatus: "follow_up",
+      tz: "America/Punta_Arenas", place: "Punta Arenas", zoneLabel: "Punta Arenas time (UTC−3)", calendlyUrl: `${GROUP_CALENDLY}?property=antarctica21`,
+      topics: [
+        "Air-cruise or sea voyage: flying over the Drake Passage or sailing it",
+        "Magellan Explorer or Magellan Discoverer, and which cabin",
+        "The flight from Punta Arenas, weather days and what happens if the plane waits",
+        "What the fare includes, the kayaking and camping extras, and Antarctica21's current savings",
+        "What to pack, fitness and age limits, and anything that keeps you up at night",
+      ] } },
+};
+const PARTNER_HOSTS: Record<string, { state: HostConnect; host?: Host }> = Object.fromEntries(
+  Object.values(PARTNER_HOST).flatMap(({ host, keys }) => keys.map((k) => [`voyage:${k}`, { state: "available" as HostConnect, host }])),
+);
+
 // SAMPLE host cards (sample: true): roles only, no names, until each property
 // confirms who takes the call. Topics come from the Ledger record.
 export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
@@ -228,7 +272,7 @@ export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
 };
 
 export const hostFor = (key: string) => {
-  const h = HOSTS[key] ?? { state: "not_linking" as HostConnect };
+  const h = HOSTS[key] ?? PARTNER_HOSTS[key] ?? { state: "not_linking" as HostConnect };
   return !GROUP_CONNECT_ON && h.state === "available" ? { state: "not_linking" as HostConnect } : h;
 };
 

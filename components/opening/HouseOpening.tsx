@@ -139,9 +139,11 @@ export type HouseOpeningProps = {
   /** the house's own Ledger stamp for the record (Founder favorite, Founder stayed...), pressed on a paper tag in the
    *  night panel, as The Exceptional Few presses its numbered stamp (James, 10 Nov 2026: "stamps, badges, etc.") */
   badge?: ReactNode;
+  /** a ship or a voyage: the pathway stamps print "at sea", with the voyage line and the anchor */
+  voyage?: boolean;
 };
 
-export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab, also = [], badge }: HouseOpeningProps) {
+export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab, also = [], badge, voyage = false }: HouseOpeningProps) {
   const pw = PATHWAYS[pathway];
   const night: CSSProperties = { background: `linear-gradient(180deg, ${palette.night} 0%, ${palette.deep} 100%)` };
   return (
@@ -158,9 +160,9 @@ export default function HouseOpening({ palette, pathway, marker, designation, ti
           {/* the pathway stamp, pressed in the record's ivory as The Exceptional Few presses its number; any secondary pathways
               follow smaller on wide screens */}
           <div className="mt-6 md:mt-0 md:absolute md:right-10 md:top-10 lg:top-14 flex flex-wrap items-center gap-2 pointer-events-none">
-            {also.slice(0, 2).map((a, i) => <PathwayStamp key={a} id={a} ink={palette.sand ?? "var(--tone-ivory)"} size={112} rotate={i ? 5 : 3} seed={a.charCodeAt(6) * 11} className="inline-flex md:hidden xl:inline-flex opacity-70 max-md:[&>svg]:w-[104px] max-md:[&>svg]:h-auto" />)}
+            {also.slice(0, 2).map((a, i) => <PathwayStamp key={a} id={a} voyage={voyage} ink={palette.sand ?? "var(--tone-ivory)"} size={112} rotate={i ? 5 : 3} seed={a.charCodeAt(6) * 11} className="inline-flex md:hidden xl:inline-flex opacity-70 max-md:[&>svg]:w-[104px] max-md:[&>svg]:h-auto" />)}
             {badge && <span className="inline-flex mr-1 md:mr-2 max-md:[&_svg]:w-[118px] max-md:[&_svg]:h-auto">{badge}</span>}
-            <PathwayStamp id={pathway} ink={palette.sand ?? "var(--tone-ivory)"} size={176} rotate={-5} seed={pathway.charCodeAt(6) * 7} className="opacity-90 max-md:[&>svg]:w-[150px] max-md:[&>svg]:h-auto" />
+            <PathwayStamp id={pathway} voyage={voyage} ink={palette.sand ?? "var(--tone-ivory)"} size={176} rotate={-5} seed={pathway.charCodeAt(6) * 7} className="opacity-90 max-md:[&>svg]:w-[150px] max-md:[&>svg]:h-auto" />
           </div>
           <p className={`mt-8 ledger-display text-[27px] md:text-[40px] leading-[1.16] max-w-4xl ${badge ? "md:pr-[360px]" : "md:pr-[210px] xl:pr-0"}`}>{line}</p>
           <dl className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-6 border-t border-white/20 pt-6">

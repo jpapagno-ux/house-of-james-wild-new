@@ -45,10 +45,19 @@ export default function CabinsDeck({ cabins, decks, credit, basis, cabinTitle, d
               <li key={c.type} className="snap-start shrink-0 w-[84%] sm:w-[48%] lg:w-auto">
                 <button type="button" onClick={() => pick(c.type)} aria-pressed={on}
                   className={`group text-left w-full h-full border flex flex-col bg-paper transition-colors ${on ? "border-crimson ring-1 ring-crimson" : "ledger-border hover:border-crimson/60"}`}>
-                  <div className="relative aspect-[3/2] w-full bg-paper-card border-b ledger-rule">
-                    {c.image && <Image src={c.image.url} alt={c.image.alt} fill sizes="(min-width: 1024px) 33vw, 84vw" className="object-cover" />}
-                    {c.count != null && <span className="absolute top-3 left-3 bg-paper/95 font-mono text-[11px] px-2 py-0.5">{c.count} {c.count === 1 ? "cabin" : "cabins"}</span>}
-                  </div>
+                  {/* no empty photo box (James, 11 Nov 2026: "cabin photos don't show"): a cabin without the operator's
+                      photograph gets a slim band with its count instead, until the media kit fills it */}
+                  {c.image ? (
+                    <div className="relative aspect-[3/2] w-full bg-paper-card border-b ledger-rule">
+                      <Image src={c.image.url} alt={c.image.alt} fill sizes="(min-width: 1024px) 33vw, 84vw" className="object-cover" />
+                      {c.count != null && <span className="absolute top-3 left-3 bg-paper/95 font-mono text-[11px] px-2 py-0.5">{c.count} {c.count === 1 ? "cabin" : "cabins"}</span>}
+                    </div>
+                  ) : (
+                    <div className="w-full border-b ledger-rule px-4 py-2.5 flex items-center justify-between gap-3" style={{ background: `color-mix(in srgb, ${colour(c.type)} 12%, transparent)` }}>
+                      <span className="font-mono text-[11px] tracking-[0.08em]">{c.count != null ? `${c.count} ${c.count === 1 ? "cabin" : "cabins"}` : "Cabin"}</span>
+                      <span className="text-[11px] ledger-muted">Photograph to come</span>
+                    </div>
+                  )}
                   <div className="p-4 flex-1 flex flex-col w-full">
                     {c.deck && <p className="flex items-center gap-2 ledger-eyebrow"><span className="w-3 h-3 rounded-full shrink-0" style={{ background: colour(c.type) }} aria-hidden="true" />{c.deck}</p>}
                     <h3 className={`ledger-display text-[21px] leading-snug flex items-center gap-2 ${c.deck ? "mt-1" : ""}`}>{!c.deck && <span className="w-3 h-3 rounded-full shrink-0" style={{ background: colour(c.type) }} aria-hidden="true" />}{c.type}</h3>

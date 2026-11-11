@@ -50,6 +50,11 @@ export type Offer = {
   /** Voyages only: the offer's type under On the Horizon (James, 2 Nov 2026). Synced from the library's
    *  `offer_type` when set; otherwise `voyageOfferType` maps the offer from its program and terms. */
   offerType?: VoyageOfferType;
+  /** Voyages: the last sailing date the offer covers when its window is a booking deadline (Windstar's all-inclusive:
+   *  book by 17 Nov 2026 for sailings through 2027), so the sailing table can flag the sailings it applies to. */
+  sailingsUntil?: string;
+  /** A short label for the sailing table's flag ("All-inclusive"), 14 characters or fewer. */
+  flag?: string;
 };
 
 /** The voyage offer types under On the Horizon (James, 2 Nov 2026, voyages plan Part 5). "On the Horizon"
@@ -131,7 +136,7 @@ const HAND_KEPT: Offer[] = [
   { id: "OFR-2026-000172", year: 2026, status: "Live", scope: "vessel", ref: "star-breeze", refs: ["wind-star"], partner: "windstar", name: "Windstar Complimentary All-Inclusive Package", country: "French Polynesia", program: "On the Horizon",
     headline: "All-inclusive at no charge: drinks, Wi-Fi and gratuities", travel: { from: "2026-11-11", to: "2026-11-17", text: "Book by 17 November 2026, for voyages sailing through 2027" }, bookingWindow: true,
     conditions: "Unlimited Wi-Fi, gratuities, and select beer, cocktails and wine by the glass, included on voyages departing through 2027 when booked by 17 November 2026; Windstar puts the value at more than US$1,300 for two guests on a 7-night cruise. A reduced deposit of US$300 per stateroom, based on double occupancy. Windstar's terms apply; James confirms it on your sailing.",
-    source: "Windstar specials page (Say Yes)", checked: "2026-11-11", volume: "voyages", offerType: "Book Early" },
+    source: "Windstar specials page (Say Yes)", checked: "2026-11-11", volume: "voyages", offerType: "Book Early", sailingsUntil: "2027-12-31", flag: "All-inclusive" },
   { id: "OFR-2026-000173", year: 2026, status: "Live", scope: "vessel", ref: "star-breeze", partner: "windstar", name: "Windstar Star Collector Voyages", country: "French Polynesia", program: "On the Horizon",
     headline: "Star Collector: about 20% off two sailings back to back", travel: { from: "2026-11-11", to: "2027-12-31", text: "Ongoing, on Windstar's Star Collector Voyages" },
     conditions: "Star Collector Voyages join two or more back-to-back sailings into one journey; Windstar puts the saving at about 20% against booking each voyage separately, with few if any repeated ports. Windstar's terms apply.",

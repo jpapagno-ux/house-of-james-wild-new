@@ -105,7 +105,11 @@
    "deck": null,
    "features": [
     "Up to 2 guests"
-   ]
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-star/cabins/owners-suite",
+    "alt": "The Owner's Suite aboard Wind Star"
+   }
   },
   {
    "type": "Category AX Deluxe",
@@ -116,7 +120,11 @@
    "features": [
     "Ocean view",
     "Up to 3 guests"
-   ]
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-star/cabins/stateroom",
+    "alt": "A Wind Star stateroom, as Windstar shows it for the Category AX Deluxe layout"
+   }
   },
   {
    "type": "Category A",
@@ -127,7 +135,11 @@
    "features": [
     "Ocean view",
     "Up to 2 guests"
-   ]
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-star/cabins/stateroom",
+    "alt": "A Wind Star stateroom, as Windstar shows it for the Category A layout"
+   }
   },
   {
    "type": "Category BX Deluxe",
@@ -138,7 +150,11 @@
    "features": [
     "Ocean view",
     "Up to 3 guests"
-   ]
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-star/cabins/stateroom",
+    "alt": "A Wind Star stateroom, as Windstar shows it for the Category BX Deluxe layout"
+   }
   },
   {
    "type": "Category B",
@@ -149,7 +165,11 @@
    "features": [
     "Ocean view",
     "Up to 3 guests"
-   ]
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-star/cabins/stateroom",
+    "alt": "A Wind Star stateroom, as Windstar shows it for the Category B layout"
+   }
   }
  ],
  "deckPlans": [],

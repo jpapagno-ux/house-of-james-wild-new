@@ -11,7 +11,7 @@ export type WhyItem = { title?: string | null; body: string };
 
 export default function WhyWhoVerdict({ name, why, vetted, whoFor, suited, thinkTwice, verdict, planHref, whyTitle = "Why We Vetted It", noVerdict }: {
   name: string; why: WhyItem[]; vetted: string; whoFor?: string | null; suited: string[]; thinkTwice: string[];
-  verdict: { line: string; by: string } | null; planHref: string;
+  verdict: { line: string; by: string; /** a founder line with no full Ledger verdict below */ short?: boolean } | null; planHref: string;
   /** ships: "Why We Chose Her" */ whyTitle?: string;
   /** the line when there is no written verdict (a ship James has sailed says so) */ noVerdict?: string;
 }) {
@@ -62,7 +62,7 @@ export default function WhyWhoVerdict({ name, why, vetted, whoFor, suited, think
           <>
             <blockquote className="mt-4 ledger-display italic text-[1.3rem] md:text-[1.4rem] leading-snug">&ldquo;{verdict.line}&rdquo;</blockquote>
             <p className="mt-2 text-[12px] tracking-[0.16em] uppercase ledger-muted">{verdict.by}</p>
-            <Link href="#verdict" className="mt-4 inline-flex items-center min-h-[44px] ledger-btn-ghost">Read the full verdict</Link>
+            {verdict.short ? <Link href={planHref} className="mt-4 inline-flex items-center min-h-[44px] ledger-btn-ghost">Ask James about it</Link> : <Link href="#verdict" className="mt-4 inline-flex items-center min-h-[44px] ledger-btn-ghost">Read the full verdict</Link>}
           </>
         ) : (
           <>

@@ -18,6 +18,7 @@ import DatesRates from "./DatesRates";
 import DatesGrid from "./DatesGrid";
 import SailingTable from "./SailingTable";
 import WhyWhoVerdict from "@/components/stay/WhyWhoVerdict";
+import { founderLine } from "@/lib/content/voice/founder-lines";
 import { shipThinkTwice } from "@/lib/content/ships/think-twice";
 import { datesData } from "@/lib/content/ships/fares";
 import NoDates from "./NoDates";
@@ -195,7 +196,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
             whoFor={null}
             suited={s.suits.map((x) => t(x.who))}
             thinkTwice={shipThinkTwice(s, offers)}
-            verdict={null}
+            verdict={founderLine(`ship:${s.slug}`) ? { line: founderLine(`ship:${s.slug}`)!.line, by: `James Wild · ${founderLine(`ship:${s.slug}`)!.where}, ${founderLine(`ship:${s.slug}`)!.when}`, short: true } : null}
             noVerdict={/^founder sailed/i.test(s.proofLine ?? "") ? `James has sailed ${s.name}; his written verdict is on its way. Ask him for his first-hand take on the suites, the sailings and the ports before you book.` : undefined} />
         ) : (
         <WhyChose eyebrow="Why we chose her" title="Why Choose Her, and Who Is She For?" blocks={s.why.map((b) => ({ body: t(b) }))}

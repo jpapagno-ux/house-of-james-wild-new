@@ -36,9 +36,9 @@ import Hermes from "./hermes-galapagos.json";
 // in the Offer Ledger (lib/content/offers/offers.ts).
 const rec = (x: unknown) => withActiveDepartures(x as ShipRecord);
 export const GALAPAGOS_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: string }[] = [
-  { data: rec(Origin), offerRefs: [], credit: "Ecoventura" },
-  { data: rec(Theory), offerRefs: [], credit: "Ecoventura" },
-  { data: rec(Evolve), offerRefs: [], credit: "Ecoventura" },
+  { data: rec(Origin), offerRefs: ["ecoventura-origin-yacht"], credit: "Ecoventura" },
+  { data: rec(Theory), offerRefs: ["ecoventura-theory-yacht"], credit: "Ecoventura" },
+  { data: rec(Evolve), offerRefs: ["ecoventura-evolve-yacht"], credit: "Ecoventura" },
   { data: rec(Alya), offerRefs: [], credit: "Galaxy Cruises" },
   { data: rec(Sirius), offerRefs: [], credit: "Galaxy Cruises" },
   { data: rec(Horizon), offerRefs: ["galapagos-horizon-trimaran"], credit: "Royal Galapagos" },

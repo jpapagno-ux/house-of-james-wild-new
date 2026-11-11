@@ -118,11 +118,11 @@ const HAND_KEPT: Offer[] = [
   { id: "OFR-2026-000160", year: 2026, status: "Live", scope: "itinerary", ref: "classic-antarctica-air-cruise", partner: "antarctica21", name: "Classic Antarctica Air-Cruise", country: "Antarctica", program: "On the Horizon",
     headline: "Save up to US$4,000 per person", travel: { from: "2026-11-02", to: "2026-12-31", text: "Book by 31 December 2026" }, bookingWindow: true,
     conditions: "On select Classic Antarctica Air-Cruise departures, new bookings only. Antarctica21 sets which departures qualify; James confirms yours.",
-    source: "Antarctica21 promotions page", checked: "2026-11-02", volume: "voyages" },
+    source: "Antarctica21 promotions page", checked: "2026-11-11", volume: "voyages" },
   { id: "OFR-2026-000161", year: 2026, status: "Live", scope: "itinerary", ref: "patagonia-chilean-fjords", refs: ["falkland-islands"], partner: "antarctica21", name: "Patagonia and Falklands sea voyages", country: "Chile", program: "On the Horizon",
     headline: "Save up to US$1,000 per person", travel: { from: "2026-11-02", to: "2026-12-31", text: "Book by 31 December 2026" }, bookingWindow: true,
     conditions: "On Antarctica21's Patagonia and Chilean Fjords and Falklands sea voyages, new bookings only. Antarctica21 terms apply.",
-    source: "Antarctica21 promotions page", checked: "2026-11-02", volume: "voyages" },
+    source: "Antarctica21 promotions page", checked: "2026-11-11", volume: "voyages" },
 
   // ── 2026 · Royal Galapagos, Galapagos Horizon (James approved, 2 Nov 2026) ──
   // The only dated deals Royal Galapagos' booking engine showed on 2 Nov 2026, each on one departure, so each is
@@ -141,6 +141,39 @@ const HAND_KEPT: Offer[] = [
     headline: "Star Collector: about 20% off two sailings back to back", travel: { from: "2026-11-11", to: "2027-12-31", text: "Ongoing, on Windstar's Star Collector Voyages" },
     conditions: "Star Collector Voyages join two or more back-to-back sailings into one journey; Windstar puts the saving at about 20% against booking each voyage separately, with few if any repeated ports. Windstar's terms apply.",
     source: "Windstar specials page (Star Collector Perks)", checked: "2026-11-11", volume: "voyages", offerType: "On the Horizon" },
+
+  // Ecoventura (ecoventura.com/special-offers, read 11 Nov 2026): 35th Anniversary Savings, all book by 30 Nov 2026, new
+  // individual bookings of 1 to 4 guests on selected departures, not combinable. Origin, Theory and Evolve.
+  { id: "OFR-2026-000174", year: 2026, status: "Live", scope: "vessel", ref: "ecoventura-origin-yacht", refs: ["ecoventura-theory-yacht", "ecoventura-evolve-yacht"], partner: "ecoventura", name: "Ecoventura Cool Season Savings", country: "Ecuador", program: "On the Horizon",
+    headline: "Save 10% on selected fall 2027 departures", travel: { from: "2026-11-11", to: "2026-11-30", text: "Book by 30 November 2026, for selected departures in the fall of 2027" }, bookingWindow: true,
+    conditions: "Individual bookings of up to 4 guests save 10% on selected fall 2027 departures; solo travellers 25%; a group of 10 brings one guest free and a dedicated naturalist; a private charter brings two guests free. New bookings only, not combinable with other offers, subject to availability. Ecoventura's terms apply.",
+    source: "Ecoventura special offers (Travel in the Cool Season and Save)", checked: "2026-11-11", volume: "voyages", offerType: "Book Early" },
+  { id: "OFR-2026-000175", year: 2026, status: "Live", scope: "vessel", ref: "ecoventura-origin-yacht", refs: ["ecoventura-theory-yacht", "ecoventura-evolve-yacht"], partner: "ecoventura", name: "Ecoventura Solo Travelers", country: "Ecuador", program: "On the Horizon",
+    headline: "Solo: 25% off the single rate on selected 2027 departures", travel: { from: "2026-11-11", to: "2026-11-30", text: "Book by 30 November 2026" }, bookingWindow: true,
+    conditions: "Single cabins on selected departure dates at 25% off the published single rate (US$19,950 in 2026, US$21,000 in 2027, as Ecoventura publishes). New bookings only, not combinable. Ecoventura's terms apply.",
+    source: "Ecoventura special offers (Solo Travelers)", checked: "2026-11-11", volume: "voyages", offerType: "Solo" },
+  { id: "OFR-2026-000176", year: 2026, status: "Live", scope: "vessel", ref: "ecoventura-origin-yacht", refs: ["ecoventura-theory-yacht", "ecoventura-evolve-yacht"], partner: "ecoventura", name: "Ecoventura Summer Family Adventures", country: "Ecuador", program: "On the Horizon",
+    headline: "Family: children 17 and under save 15% on select 2027 departures", travel: { from: "2026-11-11", to: "2026-11-30", text: "Book by 30 November 2026" }, bookingWindow: true,
+    conditions: "Children aged 6 to 17 receive 15% off the published cruise rate on select 2027 departures; triple cabins and connecting cabins sell out first. New bookings only, not combinable. Ecoventura's terms apply.",
+    source: "Ecoventura special offers (Summer Family Adventures)", checked: "2026-11-11", volume: "voyages", offerType: "Family" },
+  { id: "OFR-2026-000177", year: 2026, status: "Live", scope: "vessel", ref: "ecoventura-origin-yacht", refs: ["ecoventura-theory-yacht", "ecoventura-evolve-yacht"], partner: "ecoventura", name: "Ecoventura 2028 Departures", country: "Ecuador", program: "On the Horizon",
+    headline: "Book early: 10% off selected 2028 departures", travel: { from: "2026-11-11", to: "2026-11-30", text: "Book by 30 November 2026, for selected 2028 departures" }, bookingWindow: true,
+    conditions: "10% savings on selected 2028 departures for new individual bookings of 1 to 4 guests. Not combinable, subject to availability. Ecoventura's terms apply.",
+    source: "Ecoventura special offers (2028 Departures)", checked: "2026-11-11", volume: "voyages", offerType: "Book Early" },
+  // Aqua Expeditions (aquaexpeditions.com/offers/early-bird-bonus, read 11 Nov 2026)
+  { id: "OFR-2026-000178", year: 2026, status: "Live", scope: "vessel", ref: "aria-amazon", partner: "aqua-expeditions", name: "Aqua Expeditions Early Bird Bonus", country: "Peru", program: "On the Horizon",
+    headline: "20% off Design Suites 201 and 202", travel: { from: "2026-11-11", to: "2026-12-31", text: "Book by 31 December 2026, for Aria Amazon departures to December 2026" }, bookingWindow: true,
+    conditions: "20% savings on Aria Amazon's Design Suites 201 and 202 for July to December 2026 departures. Not valid on Christmas and New Year sailings or for solo travellers; not combinable with other offers. Aqua Expeditions' terms apply.",
+    source: "Aqua Expeditions Early Bird Bonus page", checked: "2026-11-11", volume: "voyages", offerType: "Book Early" },
+  // A&K (abercrombiekent.com/offers, read 11 Nov 2026): the 2027 Worldwide Sale names A&K's Egypt and Nile journeys.
+  { id: "OFR-2026-000179", year: 2026, status: "Live", scope: "vessel", ref: "nile-adventurer", refs: ["sun-boat-iii", "sun-boat-iv", "nile-seray"], partner: "abercrombie-kent", name: "A&K 2027 Worldwide Sale (Egypt and the Nile)", country: "Egypt", program: "On the Horizon",
+    headline: "Save up to US$3,000 per person on select 2027 Egypt journeys", travel: { from: "2026-11-11", to: "2027-12-31", text: "Select 2027 departures; A&K may withdraw it at any time" },
+    conditions: "On select 2027 departures of A&K's Small Group, Small Jet and Private Ready-to-Book journeys, including Egypt and the Nile, Ultimate Egypt with a Nile cruise, Petra, the Pyramids and a Nile Yacht Cruise, and Egypt in a Week. New bookings only; not combinable with Prepay and Save; subject to availability. A&K's terms apply.",
+    source: "A&K offers page, 2027 A&K Worldwide Sale: Group and Private Journeys", checked: "2026-11-11", volume: "voyages", offerType: "On the Horizon" },
+  { id: "OFR-2026-000180", year: 2026, status: "Live", scope: "vessel", ref: "nile-adventurer", refs: ["sun-boat-iii", "sun-boat-iv", "nile-seray", "zein-nile-chateau"], partner: "abercrombie-kent", name: "A&K 2027 Worldwide Sale: Air Offer", country: "Egypt", program: "On the Horizon",
+    headline: "US$1,000 air credit per person on 2027 journeys", travel: { from: "2026-11-11", to: "2027-01-31", text: "Reserve your flights with A&K by 31 January 2027" }, bookingWindow: true,
+    conditions: "Book a 2027 A&K journey and receive a US$1,000 air credit per person when A&K reserves your flights by 31 January. A&K's terms apply; James confirms it for your journey.",
+    source: "A&K offers page, 2027 Worldwide Sale: Air Offer", checked: "2026-11-11", volume: "voyages", offerType: "On the Horizon" },
 
   ...([
     ["OFR-2026-000162", "2027-06-22", "22 June 2027", "Galapagos Horizon, 22 June 2027 Northern islands", "US$1,000 off per person", "On the 22 June 2027 departure of the 5-day Northern islands cruise (4 nights), Baltra round trip: US$5,345 per person instead of US$6,345. New bookings only; subject to availability. Royal Galapagos terms apply."],

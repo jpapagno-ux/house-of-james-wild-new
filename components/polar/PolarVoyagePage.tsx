@@ -12,6 +12,8 @@ import { EitherSideBand } from "@/components/ships/EitherSide";
 import { eitherSideFor } from "@/lib/content/ships/either-side";
 import ShipCard from "@/components/ships/ShipCard";
 import OfferPanel from "@/components/ledger/OfferPanel";
+import WhyWhoVerdict from "@/components/stay/WhyWhoVerdict";
+import { shipThinkTwice } from "@/lib/content/ships/think-twice";
 import { offersFor } from "@/lib/content/offers/offers";
 import { shipCard } from "@/lib/content/ships/cards";
 import { registryShip } from "@/lib/content/ships/registry";
@@ -148,11 +150,21 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
           <div className="pt-4"><Breadcrumbs trail={crumbs} touch /></div>
           {primary && <div className="mt-4"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}
           <Overview answer={t(v.answer)} facts={facts} paragraphs={v.overview.map(t)} />
-          {v.suits.length > 0 && (
+          {opening ? (
+            // the stays' band on the polar voyages too (James, 11 Nov 2026: "make sure that what we've just done for Windstar
+            // is effective in all the cruises, Antarctica21 included"): the record's own overview, who it suits, think twice
+            <WhyWhoVerdict name={v.name} whyTitle="Why We Chose It" planHref={plan}
+              why={v.overview.slice(0, 3).map((x) => ({ body: t((x.match(/^.+?[.!?](?=\s|$)/)?.[0] ?? x)) }))}
+              vetted={v.slug === "hx-antarctic-circle-expedition" ? "Founder sailed · James sailed HX's Antarctic Circle voyage aboard MS Roald Amundsen, February to March 2020" : `Operated by ${op}, a house partner, and planned with James`}
+              whoFor={null} suited={v.suits.map((x) => t(x.who))}
+              thinkTwice={shipThinkTwice({ exclusions: v.exclusions, faqs: v.faqs, children: v.children } as unknown as ShipRecord, offersFor(v.slug))}
+              verdict={null}
+              noVerdict={v.slug === "hx-antarctic-circle-expedition" ? `James sailed this voyage in 2020; his written verdict is on its way. Ask him for his first-hand take before you book.` : undefined} />
+          ) : v.suits.length > 0 ? (
             <ul className="mt-8 grid gap-4 md:grid-cols-2" aria-label={`Who the ${v.name} suits`}>
               {v.suits.map((x) => <li key={x.who} className="border ledger-border p-4"><h3 className="ledger-display text-[18px] leading-snug">{t(x.who)}</h3><p className="mt-1.5 text-[14.5px] leading-relaxed ledger-muted">{t(x.line)}</p></li>)}
             </ul>
-          )}
+          ) : null}
           {v.gallery.length > 0 && <><GalleryMosaic images={v.gallery} title={v.name} /><p className="mt-2 text-[12px] ledger-muted">Photographs: {v.photoCredit}</p></>}
 
           <Band t={tones} tone="mist">

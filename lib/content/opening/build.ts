@@ -121,7 +121,8 @@ function shipNext(d: ShipRecord, plan: string): NextSailing {
   const low = lowFare(dep.prices);
   // a cruise shopper reads the date, the length and the fare per person (James, 11 Nov 2026: "so cruise shoppers see the facts")
   const n = dep.dateTo ? nightsBetween(dep.date, dep.dateTo) : null;
-  return { date: `${fmt(dep.date)}${n && n > 0 && n < 60 ? ` · ${n} nights` : ""}`, from: low ? `${usd(low)} pp` : undefined, href: `${plan}&date=${encodeURIComponent(dep.date)}` };
+  // a season band (one fare for any sailing starting in a window over two weeks long) has no length of its own
+  return { date: `${fmt(dep.date)}${n && n > 0 && n <= 15 ? ` · ${n} nights` : ""}`, from: low ? `${usd(low)} pp` : undefined, href: `${plan}&date=${encodeURIComponent(dep.date)}` };
 }
 
 /** The cruise facts for the night panel, in the order a cruise shopper asks them: how long, from where, what it costs,
@@ -130,7 +131,7 @@ function cruiseGlance(d: ShipRecord): [string, string][] {
   const out: [string, string][] = [];
   const its = (d.itineraries ?? []).filter((i) => typeof i.nights === "number" && i.nights! > 0);
   const deps = openDeps(d);
-  const lens = [...its.map((i) => i.nights as number), ...deps.flatMap((x) => (x.dateTo ? [nightsBetween(x.date, x.dateTo)] : []))].filter((n) => n > 0 && n < 60);
+  const lens = [...its.map((i) => i.nights as number), ...deps.flatMap((x) => (x.dateTo ? [nightsBetween(x.date, x.dateTo)] : []))].filter((n) => n > 0 && n <= 15 || its.some((i) => i.nights === n));
   if (lens.length) { const lo = Math.min(...lens), hi = Math.max(...lens); out.push(["Cruise length", lo === hi ? `${lo} nights` : `${lo} to ${hi} nights`]); }
   const first = (d.itineraries ?? []).find((i) => i.days.length)?.days[0];
   if (first) out.push(["Sails from", placeName(first.place)]);

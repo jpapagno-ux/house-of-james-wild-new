@@ -45,7 +45,11 @@ export function datesData(s: ShipRecord, plan: (what: string, date: string, full
   const deps = cruiseOnly(s).filter((d) => !isPackage(d));
   const perNight = rateBasisOf(s) === "per-night";
   const routeNames = [...new Set(deps.map((d) => d.itinerary))];
-  const routes = routeNames.map((n) => ({ name: n, label: perNight ? undash(n) : routeShort(s, n), colour: cabinColour(routeNames, n) }));
+  // Two routes that shorten to the same words ("Papeete round trip" for both Tahiti weeks) keep their own names, so a
+  // cruise shopper sees which voyage and how many nights (James, 11 Nov 2026: "so cruise shoppers see the facts").
+  const shortOf = (n: string) => (perNight ? undash(n) : routeShort(s, n));
+  const clash = (n: string) => routeNames.some((m) => m !== n && shortOf(m) === shortOf(n));
+  const routes = routeNames.map((n) => ({ name: n, label: clash(n) ? undash(n) : shortOf(n), colour: cabinColour(routeNames, n) }));
   const cabinTypes = [...new Set(deps.flatMap((d) => priced(d).map(([k]) => k)))];
   const cabins = cabinTypes.map((t) => ({ type: t, colour: cabinColour(s.cabins.map((c) => c.type), t) }));
   const bands = deps.length > 0 && !deps.some(isSailing);

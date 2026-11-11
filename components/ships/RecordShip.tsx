@@ -186,7 +186,8 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         {extra.top}
         <WhyChose eyebrow="Why we chose her" title="Why Choose Her, and Who Is She For?" blocks={s.why.map((b) => ({ body: t(b) }))}
           status={<p className="text-[14px] ledger-muted">{s.proofLine ? <><span className="ledger-eyebrow ledger-crimson">{t(s.proofLine).split(" · ")[0]}</span> · {t(s.proofLine).split(" · ").slice(1).join(" · ")}{partner && <> · <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">Who are {partner.name}?</Link></>}</> : <><span className="ledger-eyebrow ledger-crimson">{s.status === "sailing" ? "Sailing" : t(s.status)}</span> · {partner ? <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">{s.operator}</Link> : s.operator}{s.brandLine && s.brandLine !== s.operator && s.brandLine !== s.name ? `, ${s.brandLine}` : ""}{partner && <> · <Link href={partnerPath(partner.slug)} className="underline underline-offset-4 hover:text-crimson">Who are {partner.name}?</Link></>}</>}</p>} />
-        {s.suits.length > 0 && (
+        {/* the house opening already says who she suits; the list is kept for pages without it */}
+        {s.suits.length > 0 && !extra.opening && (
           <ul id="suits" className={`mt-6 grid gap-4 md:grid-cols-2 ${s.suits.length % 3 === 0 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`} aria-label={`Who ${s.name} suits`}>
             {s.suits.map((x) => (
               <li key={x.who} className="border ledger-border p-4 flex flex-col">

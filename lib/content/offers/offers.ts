@@ -126,6 +126,17 @@ const HAND_KEPT: Offer[] = [
   // sailing, US$500 off and US$8,000 off the charter) were archived on 2 Nov 2026 (James): Royal Galapagos shows
   // that sailing as full. Their IDs are never reused. Its undated promotions (free hotel
   // nights, 2X1, standing group and child discounts) are not shown (house rule).
+  // Windstar (read on windstarcruises.com/specials, 11 Nov 2026): the Complimentary All-Inclusive Package, on every
+  // Tahiti sailing of Star Breeze and Wind Star through 2027 when booked by 17 November 2026.
+  { id: "OFR-2026-000172", year: 2026, status: "Live", scope: "vessel", ref: "star-breeze", refs: ["wind-star"], partner: "windstar", name: "Windstar Complimentary All-Inclusive Package", country: "French Polynesia", program: "On the Horizon",
+    headline: "All-inclusive at no charge: drinks, Wi-Fi and gratuities", travel: { from: "2026-11-11", to: "2026-11-17", text: "Book by 17 November 2026, for voyages sailing through 2027" }, bookingWindow: true,
+    conditions: "Unlimited Wi-Fi, gratuities, and select beer, cocktails and wine by the glass, included on voyages departing through 2027 when booked by 17 November 2026; Windstar puts the value at more than US$1,300 for two guests on a 7-night cruise. A reduced deposit of US$300 per stateroom, based on double occupancy. Windstar's terms apply; James confirms it on your sailing.",
+    source: "Windstar specials page (Say Yes)", checked: "2026-11-11", volume: "voyages", offerType: "Book Early" },
+  { id: "OFR-2026-000173", year: 2026, status: "Live", scope: "vessel", ref: "star-breeze", partner: "windstar", name: "Windstar Star Collector Voyages", country: "French Polynesia", program: "On the Horizon",
+    headline: "Star Collector: about 20% off two sailings back to back", travel: { from: "2026-11-11", to: "2027-12-31", text: "Ongoing, on Windstar's Star Collector Voyages" },
+    conditions: "Star Collector Voyages join two or more back-to-back sailings into one journey; Windstar puts the saving at about 20% against booking each voyage separately, with few if any repeated ports. Windstar's terms apply.",
+    source: "Windstar specials page (Star Collector Perks)", checked: "2026-11-11", volume: "voyages", offerType: "On the Horizon" },
+
   ...([
     ["OFR-2026-000162", "2027-06-22", "22 June 2027", "Galapagos Horizon, 22 June 2027 Northern islands", "US$1,000 off per person", "On the 22 June 2027 departure of the 5-day Northern islands cruise (4 nights), Baltra round trip: US$5,345 per person instead of US$6,345. New bookings only; subject to availability. Royal Galapagos terms apply."],
           ] as const).map(([id, dep, words, name, headline, conditions]): Offer => ({

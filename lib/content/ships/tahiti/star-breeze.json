@@ -70,17 +70,25 @@
   "Every cabin is a suite, and Windstar includes all dining, 24-hour room service and the water-access marina in the fare."
  ],
  "hero": {
-  "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
-  "alt": "A lagoon in French Polynesia, the waters Windstar sails from Papeete"
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/star-breeze/star-breeze-bora-bora-aerial",
+  "alt": "Star Breeze's water-access Marina open at anchor off Bora Bora: kayaks, paddleboards and swimming from the stern"
  },
  "gallery": [
   {
-   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c656320ee5d7a35e8f9_Tahiti%20-%20Section%201%20Image.jpg",
-   "alt": "Lagoon and volcanic peaks in the Society Islands, French Polynesia"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/star-breeze/star-breeze-moorea-deck",
+   "alt": "Two guests in pareos on deck aboard Star Breeze off Moorea"
   },
   {
-   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c8a88d6ded49a0c37e6_Tahiti%20-%20Section%202%20Image.jpg",
-   "alt": "Island life on the water in French Polynesia"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/tahiti/raiatea-faaroa-river",
+   "alt": "A conch-shell welcome in the shallows off Raiatea, a Dreams of Tahiti call"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
+   "alt": "A lagoon in French Polynesia, the waters Windstar sails from Papeete"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c656320ee5d7a35e8f9_Tahiti%20-%20Section%201%20Image.jpg",
+   "alt": "Lagoon and volcanic peaks in the Society Islands, French Polynesia"
   }
  ],
  "cabins": [

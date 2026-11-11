@@ -9,6 +9,6 @@ import WindStar from "./wind-star.json";
 // cruise only; taxes, fees and port expenses extra). James sailed Star Breeze with his wife (James, 9 Nov 2026). Photographs: Windstar's media kit is a follow-up; until then the hero is the house's licensed
 // Tahiti lagoon image, captioned as the waters, never as the ship.
 export const TAHITI_SHIPS: { data: ShipRecord; offerRefs: string[]; credit?: string }[] = [
-  { data: StarBreeze as unknown as ShipRecord, offerRefs: [] },
-  { data: WindStar as unknown as ShipRecord, offerRefs: [] },
+  { data: StarBreeze as unknown as ShipRecord, offerRefs: ["star-breeze"] },
+  { data: WindStar as unknown as ShipRecord, offerRefs: ["wind-star"] },
 ];

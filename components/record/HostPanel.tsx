@@ -70,10 +70,12 @@ export default function HostPanel({ state, host, stayName, kind = "stay" }: { st
   if (state === "not_linking" || !host) {
     return (
       <section id="host" className=" ledger-paper border ledger-border p-6 md:p-8" aria-labelledby="host-heading">
-        <p className="ledger-eyebrow ledger-crimson">Meet your host</p>
-        <h2 id="host-heading" className="ledger-display text-2xl md:text-3xl mt-2">Speak with the house instead.</h2>
+        <p className="ledger-eyebrow ledger-crimson">{kind === "vessel" ? "Talk to someone who has sailed her" : "Meet your host"}</p>
+        <h2 id="host-heading" className="ledger-display text-2xl md:text-3xl mt-2">{kind === "vessel" ? `Questions About ${stayName}? The House Answers.` : "Speak with the house instead."}</h2>
         <p className="mt-4 text-[16px] leading-relaxed max-w-2xl">
-          The team at {stayName} isn&rsquo;t taking calls through us yet, so the house takes the call instead: rooms, the shape of the days, the dates that work and the ones that don&rsquo;t. Bring your questions; we&rsquo;ll bring straight answers.
+          {kind === "vessel"
+            ? <>Which suite and deck, which sailing and how many nights, what the fare includes and what it doesn&rsquo;t, and the nights either side of the ship. The crew of {stayName} isn&rsquo;t taking calls through us yet, so the house takes the call. Bring your questions; we&rsquo;ll bring straight answers.</>
+            : <>The team at {stayName} isn&rsquo;t taking calls through us yet, so the house takes the call instead: rooms, the shape of the days, the dates that work and the ones that don&rsquo;t. Bring your questions; we&rsquo;ll bring straight answers.</>}
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <a href={HOUSE_CALENDLY} className="ledger-btn inline-flex items-center gap-2" data-event="host_call_click" data-host-state="not_linking">

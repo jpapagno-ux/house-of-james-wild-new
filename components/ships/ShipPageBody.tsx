@@ -21,6 +21,8 @@ import HouseOpening from "@/components/opening/HouseOpening";
 import { shipOpening } from "@/lib/content/opening/build";
 import VoyageSignals from "@/components/ships/VoyageSignals";
 import EitherSide from "@/components/ships/EitherSide";
+import { PassportStamp } from "@/components/ledger/VolumeKit";
+import { offersFor, offerEnd } from "@/lib/content/offers/offers";
 
 // The ship page body, shared by /voyages/ships/<ship> and the opening previews (app/preview/voyages/*).
 export default async function ShipPageBody({ slug, opening: given, surface: givenSurface, tones: givenTones }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones }) {
@@ -67,7 +69,27 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
   // The house opening and tones on every ship page (James, 9 Nov 2026: "deploying all cruises with the new approved blend
   // design"), built from the record (lib/content/opening/build.ts). The Exceptional Few keep their own entrance.
   const auto = !opening && !exceptionalFewForVessel(e.slug) ? shipOpening(e) : null;
-  if (auto) { const { next, ...o } = auto; opening = <HouseOpening {...o} next={next} />; surface = o.palette.day; tones = tones ?? { palette: o.palette }; }
+  if (auto) {
+    const { next, ...o } = auto;
+    // The cruise stamps (James, 11 Nov 2026: "the updated badges ... stamps and savings"), pressed straight onto the night
+    // panel in the page's sand ink as the stays' Ledger stamp is: "Founder sailed" where James has been aboard, and an
+    // On the Horizon savings stamp while a partner offer is live, with the date it ends.
+    const rec0 = e.data as ShipRecord;
+    const ink = o.palette.sand ?? o.palette.hi;
+    const sailed = /^founder sailed/i.test(rec0.proofLine ?? "");
+    const year = (rec0.proofLine ?? "").match(/\b(19|20)\d{2}\b/)?.[0] ?? rec0.founder?.proof?.match(/\b(19|20)\d{2}\b/)?.[0];
+    const live = e.offerRefs.flatMap((r) => offersFor(r));
+    const ends = live.map((x) => offerEnd(x)).sort()[0];
+    const endWords = ends ? new Date(`${ends}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) : "";
+    const book = live.some((x) => x.bookingWindow);
+    const badge = sailed || live.length ? (
+      <span className="inline-flex flex-wrap items-center gap-4">
+        {sailed && <PassportStamp volume="voyages" top="Founder sailed" date={year ?? (rec0.proofLine ?? "").match(/\b(\d{1,2}) (days|nights)\b/)?.[0] ?? "Aboard"} place={rec0.name} size={120} rotate={-4} ink={ink} />}
+        {live.length > 0 && <a href="#offers" aria-label={`${live.length} live ${live.length === 1 ? "offer" : "offers"} on ${rec0.name}`}><PassportStamp volume="voyages" top="On the Horizon" date="Savings" place={endWords ? `${book ? "Book by" : "Until"} ${endWords}` : rec0.operator} size={120} rotate={3} ink={ink} /></a>}
+      </span>
+    ) : undefined;
+    opening = <HouseOpening {...o} next={next} badge={badge} />; surface = o.palette.day; tones = tones ?? { palette: o.palette };
+  }
   // At a glance with the icon legend, and "Either side of the voyage" (James, 9 Nov 2026: "a comprehensive icon legend",
   // pre and post cruise stays, "yes to the house stays vs the cruise ship one"). The Exceptional Few keep their own signals.
   const ef = exceptionalFewForVessel(e.slug);

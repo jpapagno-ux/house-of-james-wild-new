@@ -111,12 +111,38 @@ const fmt = (iso: string) => new Date(`${iso.slice(0, 10)}T12:00:00Z`).toLocaleD
 const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 const nightsLine = (ns: number[]) => { const u = [...new Set(ns)].sort((a, b) => a - b); if (!u.length) return ""; return u.length === 1 ? `${u[0]}-night` : `${u.slice(0, -1).join(", ")} and ${u[u.length - 1]}-night`; };
 
+const nightsBetween = (a: string, b: string) => Math.round((Date.parse(`${b.slice(0, 10)}T12:00:00Z`) - Date.parse(`${a.slice(0, 10)}T12:00:00Z`)) / 86400000);
+const openDeps = (d: ShipRecord) => { const t = today(); return cruiseOnly(d).filter((x) => x.date >= t && !/sold|full|closed/i.test(x.status ?? "")).sort((a, b) => a.date.localeCompare(b.date)); };
+const lowFare = (p: Record<string, unknown>) => { const f = Object.values(p).filter((n): n is number => typeof n === "number" && n > 0); return f.length ? Math.min(...f) : null; };
+
 function shipNext(d: ShipRecord, plan: string): NextSailing {
-  const t = today();
-  const dep = cruiseOnly(d).filter((x) => x.date >= t && !/sold|full|closed/i.test(x.status ?? "")).sort((a, b) => a.date.localeCompare(b.date))[0];
+  const dep = openDeps(d)[0];
   if (!dep) return null;
-  const fares = Object.values(dep.prices).filter((n): n is number => typeof n === "number" && n > 0);
-  return { date: fmt(dep.date), from: fares.length ? usd(Math.min(...fares)) : undefined, href: `${plan}&date=${encodeURIComponent(dep.date)}` };
+  const low = lowFare(dep.prices);
+  // a cruise shopper reads the date, the length and the fare per person (James, 11 Nov 2026: "so cruise shoppers see the facts")
+  const n = dep.dateTo ? nightsBetween(dep.date, dep.dateTo) : null;
+  return { date: `${fmt(dep.date)}${n && n > 0 && n < 60 ? ` · ${n} nights` : ""}`, from: low ? `${usd(low)} pp` : undefined, href: `${plan}&date=${encodeURIComponent(dep.date)}` };
+}
+
+/** The cruise facts for the night panel, in the order a cruise shopper asks them: how long, from where, what it costs,
+ *  how many aboard, then the ports and what the fare includes. Only what the record publishes; never filled in. */
+function cruiseGlance(d: ShipRecord): [string, string][] {
+  const out: [string, string][] = [];
+  const its = (d.itineraries ?? []).filter((i) => typeof i.nights === "number" && i.nights! > 0);
+  const deps = openDeps(d);
+  const lens = [...its.map((i) => i.nights as number), ...deps.flatMap((x) => (x.dateTo ? [nightsBetween(x.date, x.dateTo)] : []))].filter((n) => n > 0 && n < 60);
+  if (lens.length) { const lo = Math.min(...lens), hi = Math.max(...lens); out.push(["Cruise length", lo === hi ? `${lo} nights` : `${lo} to ${hi} nights`]); }
+  const first = (d.itineraries ?? []).find((i) => i.days.length)?.days[0];
+  if (first) out.push(["Sails from", placeName(first.place)]);
+  const fares = deps.map((x) => lowFare(x.prices)).filter((n): n is number => n !== null);
+  if (fares.length) out.push(["Fares from", `${usd(Math.min(...fares))} pp`]);
+  const guests = (d.facts ?? []).find(([k]) => /^guests?$/i.test(k))?.[1];
+  if (guests && short(guests, 14)) out.push(["Guests", guests]);
+  const days = (d.itineraries ?? []).find((i) => i.days.length)?.days ?? [];
+  const ports = new Set(days.slice(1, -1).map((x) => placeName(x.place)).filter((x) => x && !/at sea|cruising|crossing/i.test(x)));
+  if (ports.size >= 2 && out.length < 4) out.push(["Ports of call", `${ports.size} on ${days.length - 1} nights`]);
+  if (out.length < 4 && (d.inclusions ?? []).some((x) => /all dining|all meals|full board/i.test(x))) out.push(["Included", "All dining"]);
+  return out.slice(0, 4);
 }
 
 /** Why frames: the record's "who she suits" lines, or three of its own days (the fuller ones, away from embarkation). */
@@ -146,15 +172,22 @@ export function shipOpening(e: ShipEntry): Built | null {
   const w = whyFrom(d.suits ?? [], days[0]?.days ?? [], ph.why);
   if (!w) return null;
   const nights = (d.itineraries ?? []).map((i) => i.nights).filter((n): n is number => typeof n === "number" && n > 0);
-  const route = nights.length && first ? `${nightsLine(nights)} voyages from ${placeName(first.place)}` : "";
+  // Cruise words, not hotel words (James, 11 Nov 2026: "the headlines read like a hotel or stay and they need to read so
+  // cruise shoppers see the facts"): the operator, the kind of ship and how many she carries; the cruise lengths and
+  // the port; the next sailing with its nights and fare per person; and the cruise facts in the night panel.
+  const route = nights.length && first ? `${nightsLine(nights)} cruises from ${placeName(first.place)}` : "";
   const line = d.quote ?? (short(firstSentence(d.answer), 240) ? firstSentence(d.answer) : d.tagline);
-  const glance = (d.facts ?? []).filter(([k, v]) => short(v, 26) && short(k, 18) && !/not published|not accessible|no details|unknown/i.test(v)).slice(0, 4);
+  const facts = cruiseGlance(d);
+  const glance = facts.length >= 3 ? facts : (d.facts ?? []).filter(([k, v]) => short(v, 26) && short(k, 18) && !/not published|not accessible|no details|unknown/i.test(v)).slice(0, 4);
+  const guests = (d.facts ?? []).find(([k]) => /^guests?$/i.test(k))?.[1];
+  // the ship opens the arrival (the vessel frame first), then the place and the way in
+  const frames = ph.frames.length > 1 ? [ph.frames[ph.frames.length - 1], ...ph.frames.slice(0, -1)] : ph.frames;
   return {
     palette: paletteFor(pathway, e.waters), pathway, also: (pws?.secondary ?? []) as PathwayId[],
     marker: first ? `${dm(first.lat, "N", "S")} · ${placeName(first.place)}` : cap(e.waters),
-    designation: `Voyages · ${cap(d.type)} · ${d.operator}`,
+    designation: `${d.operator} · ${cap(d.type)}${guests && /^\d[\d,]*$/.test(guests.trim()) ? ` · ${guests.trim()} guests` : ""}`,
     title: d.name, place: route || d.tagline, line,
-    frames: ph.frames.map((f) => toOpening(f)),
+    frames: frames.map((f) => toOpening(f)),
     glance: glance.length >= 2 ? glance : [["Operator", d.operator], ["Waters", cap(e.waters)]],
     why: w.why, whyLabel: w.label,
     close: { photo: toOpening(ph.close), line: route ? d.tagline : `Plan ${d.name} with James.` },

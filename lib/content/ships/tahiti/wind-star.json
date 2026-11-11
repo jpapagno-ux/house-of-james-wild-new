@@ -75,17 +75,25 @@
   "Seven nights from Papeete on a Monday, so a week of sailing fits neatly between nights on land."
  ],
  "hero": {
-  "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
-  "alt": "A lagoon in French Polynesia, the waters Windstar sails from Papeete"
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-star/wind-star-under-sail",
+  "alt": "Wind Star under sail, all four masts set, off a mountainous coast"
  },
  "gallery": [
   {
-   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c656320ee5d7a35e8f9_Tahiti%20-%20Section%201%20Image.jpg",
-   "alt": "Lagoon and volcanic peaks in the Society Islands, French Polynesia"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-star/wind-star-deck",
+   "alt": "The deck of Wind Star under her sails at sunset"
   },
   {
-   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c8a88d6ded49a0c37e6_Tahiti%20-%20Section%202%20Image.jpg",
-   "alt": "Island life on the water in French Polynesia"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/tahiti/raiatea-faaroa-river",
+   "alt": "A conch-shell welcome in the shallows off Raiatea, a Dreams of Tahiti call"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835a9e1638964759ac48945_gettyimages-488262775-170667a.jpg",
+   "alt": "A lagoon in French Polynesia, the waters Windstar sails from Papeete"
+  },
+  {
+   "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e80c656320ee5d7a35e8f9_Tahiti%20-%20Section%201%20Image.jpg",
+   "alt": "Lagoon and volcanic peaks in the Society Islands, French Polynesia"
   }
  ],
  "cabins": [

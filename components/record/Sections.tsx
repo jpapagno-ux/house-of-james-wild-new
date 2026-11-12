@@ -12,6 +12,7 @@ import type { ReactNode } from "react";
 import { ArrowRight, BedDouble, Check, Leaf, Maximize2, Users, Waves, X } from "lucide-react";
 import { Reveal } from "@/components/ledger/Motion";
 import FieldCard from "./FieldCard";
+import type { VolumeKey } from "@/lib/volumes";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import { FieldIcon, type FieldIconName } from "@/components/ledger/FieldIcon";
 import { Stamp, type Volume } from "@/components/ledger/Marks";
@@ -130,10 +131,10 @@ export function RecordNav({ items, cta = "Enquire", ctaHref = "/plan", house = f
 }
 
 /* Overview + facts ---------------------------------------------------------- */
-export function Overview({ quote, answer, facts, paragraphs, lead, name, ledgerId, card = false }: { quote?: string; answer: string; facts: [string, string][]; paragraphs?: string[];
+export function Overview({ quote, answer, facts, paragraphs, lead, name, ledgerId, card = true, volume = "stays" }: { quote?: string; answer: string; facts: [string, string][]; paragraphs?: string[];
   /** one short line shown in place of the long answer (James, 12 Nov 2026: "merge the two summaries"); the full
    *  answer then opens with the entry, still in the page for search and answer engines */
-  lead?: string | null; name?: string; ledgerId?: string | null; /** the field card design (stays under review first) */ card?: boolean }) {
+  lead?: string | null; name?: string; ledgerId?: string | null; /** the field card design (James approved, 12 Nov 2026: every record) */ card?: boolean; volume?: VolumeKey }) {
   const short = !!(card && lead);
   return (
     <section id="overview" className={`pt-12 md:pt-16 grid ${facts.length ? "lg:grid-cols-[1.25fr_1fr]" : "max-w-3xl"} gap-10 items-start`}>
@@ -152,7 +153,7 @@ export function Overview({ quote, answer, facts, paragraphs, lead, name, ledgerI
           </details>
         )}
       </div>
-      {facts.length > 0 && (card ? <FieldCard facts={facts} name={name ?? ""} ledgerId={ledgerId} /> : <dl className="border-t ledger-rule text-[15px] ledger-paper px-5">
+      {facts.length > 0 && (card ? <FieldCard facts={facts} name={name ?? ""} ledgerId={ledgerId} volume={volume} /> : <dl className="border-t ledger-rule text-[15px] ledger-paper px-5">
         {facts.map(([k, v]) => (
           <div key={k} className="flex justify-between gap-5 py-3 border-b ledger-rule last:border-0">
             <dt className="ledger-eyebrow pt-1 shrink-0">{k}</dt>

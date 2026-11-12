@@ -42,7 +42,7 @@ export type ShipFrame = {
   glance: ReactNode;
   nav: [string, string][];
   cta: { label: string; href: string; house?: boolean };
-  overview: { quote?: string; answer: string; facts: [string, string][]; paragraphs: string[] };
+  overview: { quote?: string; answer: string; facts: [string, string][]; paragraphs: string[]; lead?: string | null; ledgerId?: string | null };
   itinerary: { itineraries: Itin[]; map: { html: string; figCss?: string } | null; title: string; intro?: string; eyebrow?: string; routesNote?: string; combinations?: { name: string; nights: number }[]; terrain?: Omit<TerrainFlyoverProps, "head" | "note"> };
   /** The film slot; null when the vessel's own film already plays as the hero (never "Film coming soon" then). */
   film: { film: FilmData | undefined; poster: Img; credit?: string } | null;
@@ -74,7 +74,7 @@ export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }
   return (
     <div className={`${ef ? `theme-sea theme-sea-page ${ef.theme}` : "theme-sea theme-sea-page"}${ship.tones ? " house-tones" : ""}`} style={ship.tones ? tonesStyle(ship.tones) : ship.surface ? { background: ship.surface } : undefined}>
       <SiteHeader overlay tuck />
-      <main id="main" className={ef ? "overflow-x-clip" : undefined}>
+      <main id="main" className={ef ? "overflow-x-clip design-review" : "design-review"}>
         {ship.opening ?? (ef ? ef.hero : <RecordHero film={ship.heroFilm} image={ship.hero} eyebrow={ship.eyebrow} title={ship.name} tagline={ship.tagline} stamp={ship.stamp} glance={ship.glance} credit={ship.heroFilm ? undefined : ship.heroCredit} />)}
         <ShipNav items={ship.nav} cta={ship.cta.label} ctaHref={ship.cta.href} house={ship.cta.house} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
@@ -83,7 +83,7 @@ export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }
           {ef?.opening}
           <Day>
           {ef && <div className="pt-12 md:pt-16">{ship.glance}</div>}
-          <Overview quote={ship.overview.quote} answer={ship.overview.answer} facts={ship.overview.facts} paragraphs={ship.overview.paragraphs} />
+          <Overview quote={ship.overview.quote} answer={ship.overview.answer} facts={ship.overview.facts} paragraphs={ship.overview.paragraphs} lead={ship.overview.lead} name={ship.name} ledgerId={ship.overview.ledgerId} volume="voyages" />
           {lead}
           {ship.film && !(ship.tones && !ship.film.film) && <ShipFilm film={ship.film.film} name={ship.name} poster={ship.film.poster} credit={ship.film.credit} />}
           <Band t={ship.tones} tone="mist"><ShipItinerary ship={ship.name} {...ship.itinerary} />{itineraryAfter}</Band>

@@ -144,14 +144,14 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
   return (
     <div className={`theme-sea theme-sea-page${tones ? " house-tones" : ""}`} style={tones ? tonesStyle(tones) : surface ? { background: surface } : undefined}>
       <SiteHeader overlay tuck />
-      <main id="main">
+      <main id="main" className="design-review">
         {opening ?? <RecordHero image={v.hero} eyebrow={`Voyages · ${STYLES[v.style].name} · ${v.operator}`} title={v.name} tagline={t(v.tagline)} credit={v.photoCredit}
           glance={<ShipGlance label={priceLabel} price={price} basis={basis} facts={[["Length", `${nightsWords(v)}, ${daysWords(v)}`], ["Route", t(v.route)], ["Ships", v.ships.map(shipName).join(" or ")], ["When", monthsWords(v)]]} cta={{ label: "Plan with James", href: plan }} />} />}
         <ShipNav items={nav} cta="Plan with James" ctaHref={plan} house />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-4"><Breadcrumbs trail={crumbs} touch /></div>
           {primary && <div className="mt-4"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}
-          <Overview answer={t(v.answer)} facts={facts} paragraphs={v.overview.map(t)} />
+          <Overview answer={t(v.answer)} facts={facts} paragraphs={v.overview.map(t)} volume="voyages" />
           {opening ? (
             // the stays' band on the polar voyages too (James, 11 Nov 2026: "make sure that what we've just done for Windstar
             // is effective in all the cruises, Antarctica21 included"): the record's own overview, who it suits, think twice

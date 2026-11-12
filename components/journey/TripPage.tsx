@@ -1,7 +1,8 @@
 import Image from "next/image";
 import MapBoot from "./MapBoot";
 import { FOUNDER_YEARS, SITE } from "@/lib/site";
-import FounderProof from "@/components/record/FounderProof";
+import FounderProof, { FOUNDER_EYEBROW } from "@/components/record/FounderProof";
+import FieldCard from "@/components/record/FieldCard";
 import { filmSchema, type ShortFilm } from "@/lib/content/films";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -194,12 +195,13 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         <div>
           <p className="text-[18px] md:text-[19px] leading-relaxed" data-aeo="answer">{T.answer}{T.bestFor && ` Best suited to ${T.bestFor.who.charAt(0).toLowerCase()}${T.bestFor.who.slice(1)}.`}</p>
           <blockquote className="mt-6 border-l-2 border-crimson pl-5 ledger-display italic text-xl md:text-2xl leading-snug">&ldquo;{quote.replace(/^"|"$/g, "")}&rdquo;<span className="block not-italic text-[14px] ledger-muted mt-2 font-serif">James Wild</span></blockquote>
-          {T.proof && <FounderProof proof={T.proof} className="mt-8" />}
+          {T.proof && <FounderProof proof={T.proof} signed eyebrow={voyage ? FOUNDER_EYEBROW.voyages : FOUNDER_EYEBROW.overland} className="!mt-8" />}
         </div>
-        <dl className="ledger-paper border ledger-border p-5 grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-[14.5px]">
-          <dt className="ledger-eyebrow col-span-2 mb-1">{strip(T.ledgerline)}</dt>
-          {T.meta.map(([k, v]) => <div key={k} className="contents"><dt className="ledger-muted">{k}</dt><dd><Fx t={v} /></dd></div>)}
-        </dl>
+        {/* the field card, in the volume's colour (James approved, 12 Nov 2026) */}
+        <div>
+          <p className="text-[10.5px] tracking-[0.14em] uppercase font-medium ledger-muted mb-2">{strip(T.ledgerline)}</p>
+          <FieldCard facts={T.meta} name={T.h1} volume={voyage ? "voyages" : "overland"} render={(v) => <Fx t={v} />} />
+        </div>
       </div>
       <div className="mt-10">
         <p className="ledger-eyebrow">{T.striptitle}</p>
@@ -587,7 +589,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   return (
     <div className={voyage ? "theme-sea theme-sea-page" : undefined}>
       <SiteHeader overlay />
-      <main id="main">
+      <main id="main" className="design-review">
         {slides.length ? (
           <RecordHero image={slides[0]} slides={slides} film={film} eyebrow={T.slides[0].kicker} title={T.h1} tagline={T.sub} stamp={volStamp} tag={heroMark} />
         ) : (

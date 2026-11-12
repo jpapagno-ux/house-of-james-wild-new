@@ -2368,8 +2368,8 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2024-11",
    "coords": {
     "lat": -8.2630038,
     "lng": 117.4986933
@@ -19667,6 +19667,122 @@
     "6ae6974d2f7e87b5a5f59865",
     "6ae6974d696b4469b6c2b952"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "hotel-indigo-bali-seminyak-beach",
+   "name": "Hotel Indigo Bali Seminyak Beach",
+   "ledgerId": "STY-2026-000646",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A beachfront base on Seminyak, with pool villas and a bar on the sand",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/hotel-indigo-bali-seminyak-beach/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Couples",
+    "Families",
+    "Beach"
+   ],
+   "status": "founder_visited",
+   "statusDate": "2024-11",
+   "coords": null,
+   "airport": "Bali Ngurah Rai International Airport (DPS)",
+   "airportDirections": "About a 30 minute drive from Ngurah Rai International Airport, per IHG.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "289 rooms, suites and pool villas, each with Hotel Indigo's spa-inspired bathroom and a balcony or patio with daybeds.",
+     "Room types: Standard Rooms, Premium Rooms, Suites, One Bedroom Villas and Two Bedroom Villas."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Beachfront on Seminyak",
+     "Six café and bar experiences, including SugarSand on the beach",
+     "Sava Spa and a 24 hour Health Club",
+     "Pools, and pool villas of one and two bedrooms"
+    ]
+   },
+   "onlyHere": [
+    "SugarSand, the hotel's beachside lounge and bar, on the sand at Seminyak."
+   ],
+   "why": [
+    {
+     "title": "On Seminyak's Beachfront",
+     "body": "Hotel Indigo sits on Bali's liveliest stretch of beach, with rooms and pool villas drawn from local craft and colour, six cafés and bars including SugarSand on the sand, and Sava Spa. It is about 30 minutes from the airport, and an easy first or last night in Bali."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by IHG on the pages read.",
+    "how_to_get_there": "About 30 minutes by car from Bali's Ngurah Rai International Airport (DPS).",
+    "signature_experiences": "Seminyak beachfront, SugarSand beach bar, Sava Spa, and the boutiques and restaurants of Seminyak.",
+    "who_its_for": "Couples and families who want a lively beach base, and travellers on their first or last night in Bali."
+   },
+   "faqs": [
+    {
+     "q": "Where is Hotel Indigo Bali Seminyak Beach?",
+     "a": "On the beachfront at Seminyak, on Bali's south west coast."
+    },
+    {
+     "q": "How far is it from the airport?",
+     "a": "About a 30 minute drive from Ngurah Rai International Airport, according to IHG."
+    },
+    {
+     "q": "How many rooms are there?",
+     "a": "289 rooms, suites and pool villas, according to IHG."
+    },
+    {
+     "q": "Are there villas?",
+     "a": "Yes: One Bedroom and Two Bedroom Villas, alongside the rooms and suites."
+    },
+    {
+     "q": "What is SugarSand?",
+     "a": "The hotel's beachside lounge and bar, one of six café and bar experiences on site."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (12 Nov 2026: stayed November 2024, general ledger)",
+    "classifiedAt": "2026-11-12"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

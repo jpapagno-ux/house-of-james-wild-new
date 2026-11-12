@@ -2048,6 +2048,16 @@
    "released": false
   },
   {
+   "stay_id": "6af55eee5b3414666e58eaa0",
+   "slug": "hotel-indigo-bali-seminyak-beach",
+   "name": "Hotel Indigo Bali Seminyak Beach",
+   "country": "Indonesia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae8ed8ba6295b5316ea6ce7",
    "slug": "hotel-okura-manila",
    "name": "Hotel Okura Manila",

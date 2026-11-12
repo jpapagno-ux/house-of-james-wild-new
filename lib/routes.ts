@@ -375,6 +375,7 @@ export const STAY_SLUGS: string[] = [
   "hoanib-valley-camp",
   "holistika",
   "hotel-bardo",
+  "hotel-indigo-bali-seminyak-beach",
   "hotel-okura-manila",
   "hotel-panamera",
   "hotel-plesnik",

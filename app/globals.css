@@ -494,6 +494,9 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark [data-ship-nav] { background: color-mix(in srgb, var(--ef-surface) 94%, transparent); border-color: var(--ef-line); }
 .theme-ef-dark [data-ship-nav] .ledger-eyebrow { color: var(--ef-muted); }
 .theme-ef-dark [data-ship-nav] .ledger-eyebrow.ledger-crimson { color: var(--ef-ink); }
+/* The quiet contact card (bottom right) takes the night surface on a designated page, so its words read (12 Nov 2026). */
+.theme-ef-dark [data-quiet-actions] { background: color-mix(in srgb, var(--ef-surface) 94%, transparent); border-color: var(--ef-line); color: var(--ef-ink); }
+.theme-ef-dark [data-quiet-actions] .ledger-eyebrow { color: var(--ef-muted); }
 /* The Exceptional Few keeps its per-property palette on buttons too: the action follows that page's own accent. */
 .theme-ef-dark, .theme-ef-dark .ef-day { --jw-action: var(--jw-accent-hex); --jw-action-deep: var(--jw-accent-deep-hex); }
 /* The Exceptional Few: COMO Parrot Cay palette (2 Nov 2026). Night is the lagoon after dark, day is the

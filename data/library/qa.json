@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-11",
+ "checkedOn": "2026-11-12",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -159,10 +159,8 @@
    "slug": "amanwana",
    "name": "Amanwana",
    "country": "Indonesia",
-   "missing": [
-    "stay_copy"
-   ],
-   "released": false
+   "missing": [],
+   "released": true
   },
   {
    "stay_id": "6a899f0e0689ce25383bec41",
@@ -584,6 +582,16 @@
    "name": "Bateleur Camp By & Beyond",
    "country": "Kenya",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6af556675f16547ce10dac7b",
+   "slug": "bawah-reserve",
+   "name": "Bawah Reserve",
+   "country": "Indonesia",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -1767,7 +1775,6 @@
    "name": "Four Seasons Tented Camp Golden Triangle",
    "country": "Thailand",
    "missing": [
-    "hero_photo",
     "coordinates"
    ],
    "released": true

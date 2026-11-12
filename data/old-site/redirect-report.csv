@@ -11,7 +11,7 @@ old path,new path,why,old title
 /book/amandira-voyage,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Amandira | Wild Earth Stays
 /book/amanjiwo,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Amanjiwo | Wild Earth Stays
 /book/amankila,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Amankila | Wild Earth Stays
-/book/amanwana,/destinations/asia/indonesia,booking page -> not on the new site yet; country page,Book your stay at Amanwana | Wild Earth Stays
+/book/amanwana,/stays/amanwana,booking page -> stay page,Book your stay at Amanwana | Wild Earth Stays
 /book/amazon-field-station-by-inkaterra,/stays/amazon-field-station-byinkaterra,booking page -> stay page,Book your stay at Amazon Field Station by Inkaterra | Wild Earth Stays
 /book/ambiente-tm-sedona,/stays/ambiente-tm-sedona,booking page -> stay page,Book your stay at Ambiente™ Sedona | Wild Earth Stays
 /book/anantara-bophut-koh-samui-resort,/stays/anantara-bophut-koh-samui-resort,booking page -> stay page,Book your stay at Anantara Bophut Koh Samui Resort | Wild Earth Stays
@@ -442,7 +442,7 @@ old path,new path,why,old title
 /property/amandira,/destinations/asia/indonesia,not on the new site yet; country page,Amandira | Luxury Stays in Indonesia | Wild Earth Stays
 /property/amanjiwo,/destinations/asia/indonesia,not on the new site yet; country page,Amanjiwo | Luxury Stays in Indonesia | Wild Earth Stays
 /property/amankila,/destinations/asia/indonesia,not on the new site yet; country page,Amankila | Luxury Stays in Indonesia | Wild Earth Stays
-/property/amanwana,/destinations/asia/indonesia,not on the new site yet; country page,Amanwana | Luxury Stays in Indonesia | Wild Earth Stays
+/property/amanwana,/stays/amanwana,stay page,Amanwana | Luxury Stays in Indonesia | Wild Earth Stays
 /property/amazon-field-station-byinkaterra,/stays/amazon-field-station-byinkaterra,stay page,Amazon Field Station by Inkaterra | Luxury Stays in Peru | Wild Earth Stays
 /property/ambiente-tm-sedona,/stays/ambiente-tm-sedona,stay page,Ambiente™ Sedona | Luxury Stays in Arizona | Wild Earth Stays
 /property/amor-arenal,/stays/amor-arenal,stay page,Amor Arenal | Luxury Stays in Costa Rica | Wild Earth Stays
@@ -896,9 +896,9 @@ old path,new path,why,old title
 /stay/amankila-kilasari-pool-villa,/destinations/asia/indonesia,room of amankila -> not on the new site yet; country page,Kilasari Pool Villa at Amankila | Wild Earth Stays
 /stay/amankila-ocean-pavilion,/destinations/asia/indonesia,room of amankila -> not on the new site yet; country page,Ocean Pavilion at Amankila | Wild Earth Stays
 /stay/amankila-ocean-pool-pavilion,/destinations/asia/indonesia,room of amankila -> not on the new site yet; country page,Ocean Pool Pavilion at Amankila | Wild Earth Stays
-/stay/amanwana-jungle-tent,/destinations/asia/indonesia,room of amanwana -> not on the new site yet; country page,Jungle Tent at Amanwana | Wild Earth Stays
-/stay/amanwana-ocean-front-tent,/destinations/asia/indonesia,room of amanwana -> not on the new site yet; country page,Ocean Front Tent at Amanwana | Wild Earth Stays
-/stay/amanwana-ocean-view-tent,/destinations/asia/indonesia,room of amanwana -> not on the new site yet; country page,Ocean View Tent at Amanwana | Wild Earth Stays
+/stay/amanwana-jungle-tent,/stays/amanwana,room of amanwana -> stay page,Jungle Tent at Amanwana | Wild Earth Stays
+/stay/amanwana-ocean-front-tent,/stays/amanwana,room of amanwana -> stay page,Ocean Front Tent at Amanwana | Wild Earth Stays
+/stay/amanwana-ocean-view-tent,/stays/amanwana,room of amanwana -> stay page,Ocean View Tent at Amanwana | Wild Earth Stays
 /stay/amazon-field-station-by-inkaterra-cabanas,/stays/amazon-field-station-byinkaterra,room of amazon-field-station-byinkaterra -> stay page,Cabañas at Amazon Field Station by Inkaterra | Wild Earth Stays
 /stay/amazon-field-station-by-inkaterra-pavillion,/stays/amazon-field-station-byinkaterra,room of amazon-field-station-byinkaterra -> stay page,Pavillion at Amazon Field Station by Inkaterra | Wild Earth Stays
 /stay/ambiente-tm-sedona-creekside-atrium,/stays/ambiente-tm-sedona,room of ambiente-tm-sedona -> stay page,Creekside Atrium at Ambiente™ Sedona | Wild Earth Stays

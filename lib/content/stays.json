@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-11",
+ "exportedOn": "2026-11-12",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -2338,6 +2338,129 @@
    "volumes": [
     "stays"
    ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "amanwana",
+   "name": "Amanwana",
+   "ledgerId": "STY-2026-000010",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Seventeen tents on Moyo Island, inside a national park on the Flores Sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/amanwana/g10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": null,
+   "statusDate": null,
+   "coords": {
+    "lat": -8.2630038,
+    "lng": 117.4986933
+   },
+   "airport": "Sumbawa Besar (SWQ), then a 45 minute speedboat",
+   "airportDirections": "Fly from Bali (DPS) to Sumbawa Besar (SWQ) in about 60 minutes, or via Lombok (LOP). An Aman representative meets you at SWQ for a road transfer to Amanwana's private jetty and a 45 minute speedboat across the Flores Sea.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "17 luxury guest tents, full board, backed by the jungle of Moyo Satonda National Park on the shores of the Flores Sea.",
+     "Book ten tents or more and Amanwana becomes your own private camp."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Scuba dive and snorkel the reefs of the Flores Sea",
+     "Jungle treks to hidden waterfalls",
+     "The seven night Komodo Expedition, by Aman"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "17 tents on a bay within Moyo Satonda National Park",
+     "Full board, with much of the food grown or reared on the island",
+     "The Spa at Amanwana, over the Flores Sea",
+     "Diving and snorkelling on the island's reefs",
+     "Whale shark swims in Saleh Bay with a local conservation guide"
+    ]
+   },
+   "onlyHere": [
+    "Book ten tents or more and the whole camp on Moyo Island is yours, a wilderness Aman for one family or one group."
+   ],
+   "why": [
+    {
+     "title": "A Camp Inside a National Park",
+     "body": "Amanwana's 17 tents sit on a beach-fringed bay on Moyo Island, within Moyo Satonda National Park, with whale sharks in Saleh Bay, untouched reefs to dive and snorkel, and waterfalls in the jungle behind. Stays are full board."
+    }
+   ],
+   "facts": {
+    "best_months": "Not published by Aman on the pages read.",
+    "how_to_get_there": "Fly Bali (DPS) to Sumbawa Besar (SWQ), about 60 minutes, or via Lombok (LOP). An Aman host meets you for the road transfer to the private jetty and a 45 minute speedboat across the Flores Sea.",
+    "signature_experiences": "Whale shark swims in Saleh Bay; diving and snorkelling the Flores Sea reefs; jungle treks to waterfalls; full board in a national park.",
+    "who_its_for": "Divers, couples and families, and groups who book ten tents or more to take the whole camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Amanwana?",
+     "a": "On Moyo Island, West Sumbawa Regency, Indonesia, on a beach-fringed bay inside Moyo Satonda National Park on the Flores Sea."
+    },
+    {
+     "q": "How many tents does Amanwana have?",
+     "a": "17 luxury guest tents, according to Aman."
+    },
+    {
+     "q": "How do you get to Amanwana?",
+     "a": "Fly from Bali to Sumbawa Besar (SWQ) in about 60 minutes, or connect through Lombok. Aman meets you there for a drive to its private jetty and a 45 minute speedboat crossing."
+    },
+    {
+     "q": "Is Amanwana all inclusive?",
+     "a": "Amanwana is full board, with much of the food grown or reared on the island."
+    },
+    {
+     "q": "Can you book the whole of Amanwana?",
+     "a": "Yes. Aman invites guests to book ten tents or more to make Amanwana their own private camp."
+    },
+    {
+     "q": "Can you swim with whale sharks from Amanwana?",
+     "a": "Yes. Aman offers whale shark encounters in Saleh Bay, led by an expert guide from a local conservation group."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-02",
+     "PATH-04"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (2 Nov 2026, Indonesia outer islands approval)",
+    "classifiedAt": "2026-11-12"
+   },
+   "volumes": null,
    "arrivalHubIds": [],
    "placeSlug": null
   },
@@ -6283,6 +6406,136 @@
    "arrivalHubIds": [
     "6ae6974c7d4c694c47df3348"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "bawah-reserve",
+   "name": "Bawah Reserve",
+   "ledgerId": "STY-2026-000645",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Six islands, three lagoons and Elang, an island of its own, in Indonesia's Anambas",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/elang-aerial-islands",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/bawah-kayak-lagoon",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/elang-aerial-six-islands",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/bawah-beach-breakfast",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/elang-aerial-jetty-club-house",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/elang-pool-deck-lagoon",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/elang-beach-house",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/bawah-boardwalk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/elang-kayu-spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/elang-club-house-dusk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bawah-reserve/elang-lodge-bedroom-lagoon"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Couples",
+    "Families",
+    "Private island buyouts"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Batam Hang Nadim (BTH), then Bawah's seaplane",
+   "airportDirections": "From Singapore, a car to Tanah Merah Ferry Terminal, a 30 minute ferry to Batam, then an 80 minute amphibious seaplane flight that lands in the resort's main lagoon. Up to four flights a day, seven days a week. Bawah's transport package from Singapore is US$1,050 per person, plus any fuel surcharge.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Bawah's suites and villas are sold all inclusive, on a 3 night minimum (longer over Christmas, Chinese New Year, Easter and August).",
+     "Tented Garden, Oceanfront and Beach Suites, and Overwater Bungalows over the lagoon.",
+     "Two bedroom Treehouse Lodge, Garden Pool Villa, Infinity Pool Villa and Deluxe Pool Villa; a three bedroom Pool Villa and a four bedroom Infinity Pool Villa.",
+     "Elang Private Island: six standalone cliffside lodges (five one bedroom lodges of 136 m2 and one two bedroom lodge of 254 m2), with its own Club House, Owner's Lounge, saltwater infinity pool, Beach House restaurant, Kayu Spa and private beaches, bought out for up to 10 or 14 guests."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkel trails and dive sites around the six islands",
+     "Kayaking and paddleboarding across the lagoons",
+     "Hiking trails through primary forest",
+     "Daily yoga, Pilates and meditation",
+     "Reef conservation with the resort's coral nurseries"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Six islands, three marine reserve lagoons, 13 beaches and 100 hectares of primary forest.",
+     "Aura Sanctuary spa and wellbeing, with one treatment per person per night included.",
+     "Two restaurants and two bars, an infinity pool, the Wallace Library and a tennis court.",
+     "Hiking trails, snorkel trails, kayaking and paddleboarding; scuba diving at extra cost.",
+     "Reef conservation with coral nurseries and artificial reefs; donations go to the Anambas Foundation."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Elang is an island within the island group: six cliffside lodges, a club house and two beaches reserved for Elang guests alone, minutes by boat from the rest of Bawah."
+   ],
+   "why": [
+    {
+     "title": "Six Islands, Thirteen Beaches",
+     "body": "Bawah Reserve sits in Indonesia's remote Anambas archipelago: six islands, three marine reserve lagoons, 13 beaches and 100 hectares of primary forest, reached by seaplane from Batam. Meals, non alcoholic drinks, one spa treatment per person per night, yoga and land and water activities are all included."
+    }
+   ],
+   "facts": {
+    "best_months": "Bawah publishes no best season; its rates run off peak, shoulder and peak dates, with August and late December as peak.",
+    "how_to_get_there": "Fly or sail to Batam from Singapore (a 30 minute ferry from Tanah Merah), then an 80 minute amphibious seaplane flight into the resort's lagoon. Up to four flights a day; luggage is limited to 15 kg per person.",
+    "signature_experiences": "Six islands and three marine reserve lagoons; Elang Private Island; daily spa treatments and movement classes; snorkel trails, kayaking and hiking.",
+    "who_its_for": "Couples in the suites and bungalows; families with children five and older in the two to four bedroom villas; one party of up to 14 on Elang."
+   },
+   "faqs": [
+    {
+     "q": "Where is Bawah Reserve?",
+     "a": "In Indonesia's Anambas archipelago in the South China Sea, reached by seaplane from Batam, near Singapore."
+    },
+    {
+     "q": "How do you get to Bawah Reserve?",
+     "a": "From Singapore, a car to Tanah Merah Ferry Terminal, a 30 minute ferry to Batam, then an 80 minute seaplane flight that lands in the resort's main lagoon. Bawah recommends a night in Singapore or Batam first."
+    },
+    {
+     "q": "Is Bawah Reserve all inclusive?",
+     "a": "Yes. Meals, non alcoholic drinks, one spa treatment per person per night, movement classes, land and water activities, laundry, Wi-Fi and Indonesian tax and service are included. Alcohol, scuba diving, transport and bespoke experiences are extra."
+    },
+    {
+     "q": "What is Elang?",
+     "a": "Elang is Bawah's private island residence: six cliffside lodges, a club house, an infinity pool, a beach house restaurant, the Kayu Spa and two private beaches, booked whole for up to 10 or 14 guests."
+    },
+    {
+     "q": "Can children stay at Bawah Reserve?",
+     "a": "Bawah welcomes children five and older."
+    },
+    {
+     "q": "Is there a minimum stay?",
+     "a": "Three nights, rising to four or five nights over Christmas and New Year, Chinese New Year, Easter and August."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (2 Nov 2026, Indonesia outer islands approval)",
+    "classifiedAt": "2026-11-12"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -16866,11 +17119,26 @@
    "category": "camp",
    "tagline": "Fifteen tents and a two bedroom lodge where the Ruak meets the Mekong",
    "quote": null,
-   "hero": null,
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/four-seasons-tented-camp-golden-triangle/g9"
+   ],
    "bestMonths": null,
    "bestMonthsNote": null,
-   "bestFor": [],
+   "bestFor": [
+    "Couples",
+    "Families",
+    "Elephants"
+   ],
    "status": "founder_vetted",
    "statusDate": "2026-11-02",
    "coords": null,

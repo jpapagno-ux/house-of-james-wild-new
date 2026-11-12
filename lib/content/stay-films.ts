@@ -39,6 +39,8 @@ export const STAY_FILMS: Record<string, WideFilm> = {
     title: "The Ungasan, on the Uluwatu cliffs",
     credit: "Film courtesy of The Ungasan Clifftop Resort",
   },
+  // Soori's own resort film (172 s, 720p) from sooribali.com: in the page's film band, not full screen.
+  "soori-bali": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto/jwco/stays/soori-bali/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/soori-bali/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg/jwco/stays/soori-bali/film.jpg`, title: "Soori Bali, between the ocean and the rice fields", credit: "Film courtesy of Soori Bali" },
   "kokomo-private-island": {
     kind: "vimeo",
     id: "1128730742",

@@ -471,6 +471,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-amanwana { --ef-sand: #9DB98A; --ef-earth: #3E6233; --ef-landscape: #F0F4EC; --ef-shadow: #2B3A26; --ef-accent: #D9E6CF; }
 /* The Exceptional Few: Elang Private Island, Bawah Reserve palette (2026-11-12). The Anambas: granite and warm teak at dusk over the lagoons. */
 .theme-ef-elang { --ef-sand: #E2B48E; --ef-earth: #9A5232; --ef-landscape: #F7EFE8; --ef-shadow: #3D2A20; --ef-accent: #F1DCCB; }
+/* The Exceptional Few: The Hadiprana Estate, Tanah Gajah palette (2026-11-12). Ubud: rice paddy green and old teak. */
+.theme-ef-hadiprana { --ef-sand: #B9C78F; --ef-earth: #5B6B2E; --ef-landscape: #F3F4EA; --ef-shadow: #2F3520; --ef-accent: #E1E8C8; }
+/* The Exceptional Few: The Soori Estate, Soori Bali palette (2026-11-12). Tabanan: black volcanic sand, stone and sea mist. */
+.theme-ef-soori { --ef-sand: #C9C1B6; --ef-earth: #4A4540; --ef-landscape: #F4F2EE; --ef-shadow: #262321; --ef-accent: #E6E1D9; }
 .ef-module { --jw-card: var(--ef-landscape); }
 .ef-eyebrow { color: var(--ef-earth); }
 .ef-rule { border-color: var(--ef-sand); }
@@ -518,6 +522,10 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-dark.theme-ef-amanwana .ef-day { --ef-surface: #F0F4EC; --ef-ink: #202C1C; --ef-muted: rgba(43,58,38,0.7); --ef-line: rgba(43,58,38,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2B3A26; --ef-earth: #3E6233; --ef-sand: #3E6233; --jw-card: #FFFFFF; --jw-accent: 62 98 51; --jw-accent-deep: 51 80 42; --jw-accent-hex: #3E6233; --jw-accent-deep-hex: #33502A; }
 .theme-ef-dark.theme-ef-elang { --ef-surface: #1E1712; --ef-ink: #F3EFE9; --ef-muted: rgba(243,239,233,0.74); --ef-line: rgba(243,239,233,0.2); --ef-sand: #E2B48E; --ef-earth: #E2B48E; --ef-landscape: #2E241C; --ef-shadow: rgba(243,239,233,0.6); --ef-accent: #E2B48E; --jw-accent: 226 180 142; --jw-accent-deep: 199 158 125; --jw-accent-light: 241 220 203; --jw-accent-hex: #E2B48E; --jw-accent-deep-hex: #C79E7D; --jw-card: #2E241C; }
 .theme-ef-dark.theme-ef-elang .ef-day { --ef-surface: #F7EFE8; --ef-ink: #2E2018; --ef-muted: rgba(61,42,32,0.7); --ef-line: rgba(61,42,32,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #3D2A20; --ef-earth: #9A5232; --ef-sand: #9A5232; --jw-card: #FFFFFF; --jw-accent: 154 82 50; --jw-accent-deep: 126 67 41; --jw-accent-hex: #9A5232; --jw-accent-deep-hex: #7E4329; }
+.theme-ef-dark.theme-ef-hadiprana { --ef-surface: #161A0E; --ef-ink: #F3EFE9; --ef-muted: rgba(243,239,233,0.74); --ef-line: rgba(243,239,233,0.2); --ef-sand: #B9C78F; --ef-earth: #B9C78F; --ef-landscape: #232818; --ef-shadow: rgba(243,239,233,0.6); --ef-accent: #B9C78F; --jw-accent: 185 199 143; --jw-accent-deep: 163 175 126; --jw-accent-light: 225 232 200; --jw-accent-hex: #B9C78F; --jw-accent-deep-hex: #A3AF7E; --jw-card: #232818; }
+.theme-ef-dark.theme-ef-hadiprana .ef-day { --ef-surface: #F3F4EA; --ef-ink: #232818; --ef-muted: rgba(47,53,32,0.7); --ef-line: rgba(47,53,32,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #2F3520; --ef-earth: #5B6B2E; --ef-sand: #5B6B2E; --jw-card: #FFFFFF; --jw-accent: 91 107 46; --jw-accent-deep: 75 88 38; --jw-accent-hex: #5B6B2E; --jw-accent-deep-hex: #4B5826; }
+.theme-ef-dark.theme-ef-soori { --ef-surface: #141312; --ef-ink: #F3EFE9; --ef-muted: rgba(243,239,233,0.74); --ef-line: rgba(243,239,233,0.2); --ef-sand: #C9C1B6; --ef-earth: #C9C1B6; --ef-landscape: #22211F; --ef-shadow: rgba(243,239,233,0.6); --ef-accent: #C9C1B6; --jw-accent: 201 193 182; --jw-accent-deep: 177 170 160; --jw-accent-light: 230 225 217; --jw-accent-hex: #C9C1B6; --jw-accent-deep-hex: #B1AAA0; --jw-card: #22211F; }
+.theme-ef-dark.theme-ef-soori .ef-day { --ef-surface: #F4F2EE; --ef-ink: #1C1A19; --ef-muted: rgba(38,35,33,0.7); --ef-line: rgba(38,35,33,0.2); --ef-landscape: #FFFFFF; --ef-shadow: #262321; --ef-earth: #4A4540; --ef-sand: #4A4540; --jw-card: #FFFFFF; --jw-accent: 74 69 64; --jw-accent-deep: 61 57 52; --jw-accent-hex: #4A4540; --jw-accent-deep-hex: #3D3934; }
 /* The ship section nav sits on the night surface of a designated vessel, so its links stay legible. */
 .theme-ef-dark [data-ship-nav] { background: color-mix(in srgb, var(--ef-surface) 94%, transparent); border-color: var(--ef-line); }
 .theme-ef-dark [data-ship-nav] .ledger-eyebrow { color: var(--ef-muted); }

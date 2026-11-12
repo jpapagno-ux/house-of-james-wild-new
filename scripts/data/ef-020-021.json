@@ -1,0 +1,160 @@
+[
+ {
+  "n": 20,
+  "stayId": "STY-2026-000291",
+  "staySlug": "tanah-gajah",
+  "stayName": "The Hadiprana Estate, Tanah Gajah",
+  "palette": "hadiprana",
+  "heroLine": "An art collector's estate among Ubud's rice paddies, and its largest house.",
+  "why": [
+   "Place. Six hectares of gardens and working rice paddies outside Ubud, on the former estate of the Indonesian art collector Hendra Hadiprana.",
+   "Scale. The Hadiprana Estate is 570 m² for four guests, up to six, with a 10 x 6 m private pool and an outdoor jacuzzi.",
+   "Care. Butler service and club benefits, private airport transfers, daily yoga, sunset cocktails and a car into Ubud whenever you want it."
+  ],
+  "signals": [
+   [
+    "place",
+    "Six hectares of rice paddies and gardens outside Ubud."
+   ],
+   [
+    "privacy",
+    "570 m², a 10 x 6 m pool and an outdoor jacuzzi."
+   ],
+   [
+    "humanity",
+    "A butler, and the founder's art collection on every wall."
+   ],
+   [
+    "access",
+    "Private airport transfers and a car to Ubud centre, 08:00 to 18:00."
+   ],
+   [
+    "rarity",
+    "The largest of only twenty-four suites and villas on the estate."
+   ]
+  ],
+  "pathways": [
+   "rooted-in-place",
+   "a-place-of-our-own",
+   "the-art-of-stillness"
+  ],
+  "worth": "Four nights. One for the paddies at dawn, one for Ubud, one at the spa, and one with the pool to yourselves.",
+  "suits": [
+   "Families of four to six",
+   "Friends travelling together",
+   "Couples who want space and art",
+   "Wellness-minded travellers"
+  ],
+  "notSuit": [
+   "Travellers who want the beach on the doorstep",
+   "Large groups (the whole estate can be bought out instead)"
+  ],
+  "continue": [
+   "stay:viceroy-bali",
+   "stay:soori-bali",
+   "pathway:rooted-in-place"
+  ],
+  "media": [
+   [
+    "hero",
+    "tanah-gajah/hadiprana-estate-pool",
+    "The Hadiprana Estate's 10 x 6 m pool among the gardens at Tanah Gajah"
+   ],
+   [
+    "editorial_landscape",
+    "tanah-gajah/aerial",
+    "Tanah Gajah's estate and rice paddies outside Ubud from the air"
+   ],
+   [
+    "editorial_portrait",
+    "tanah-gajah/hadiprana-estate-exterior",
+    "The Hadiprana Estate from its garden"
+   ],
+   [
+    "detail",
+    "tanah-gajah/hadiprana-estate-living",
+    "The Hadiprana Estate's living room, with the founder's art"
+   ]
+  ],
+  "credit": "Photograph courtesy of Tanah Gajah, a Resort by Hadiprana"
+ },
+ {
+  "n": 21,
+  "stayId": "STY-2026-000283",
+  "staySlug": "soori-bali",
+  "stayName": "The Soori Estate, Soori Bali",
+  "palette": "soori",
+  "heroLine": "Ten bedrooms on 5,250 m² of beachfront on Bali's southwest coast.",
+  "why": [
+   "Place. 5,250 m² of beachfront on Bali's southwest coast at Tabanan, between the Indian Ocean and the rice fields, with every bedroom looking at the sea.",
+   "Scale. Ten bedrooms for up to twenty adults and four children: two master bedrooms and adjoining suites upstairs, six bedrooms below, four private infinity pools and a 20 metre pool with a jacuzzi.",
+   "Design. Soo K. Chan and Ling Fu built Soori from local materials; the Estate adds its own gym, spa room, library and a gourmet kitchen, with a butler."
+  ],
+  "signals": [
+   [
+    "place",
+    "Beachfront on Bali's southwest coast, between the ocean and the rice fields."
+   ],
+   [
+    "privacy",
+    "Ten bedrooms, four infinity pools and a private driveway."
+   ],
+   [
+    "design",
+    "Architecture by Soo K. Chan and Ling Fu, in local materials."
+   ],
+   [
+    "humanity",
+    "Butler service, a private spa room and gym."
+   ],
+   [
+    "rarity",
+    "Soori's largest residence, for up to twenty adults and four children."
+   ]
+  ],
+  "pathways": [
+   "a-place-of-our-own",
+   "between-tides",
+   "rooted-in-place"
+  ],
+  "worth": "Five nights. Enough for the beach at sunset, Tanah Lot, the rice terraces, and a long lunch that turns into dinner.",
+  "suits": [
+   "Families travelling across generations",
+   "Groups of friends of up to twenty",
+   "Milestone celebrations and weddings",
+   "Retreats that want privacy and space"
+  ],
+  "notSuit": [
+   "Couples travelling alone (a pool villa suits better)",
+   "Travellers who want a town on the doorstep"
+  ],
+  "continue": [
+   "stay:tanah-gajah",
+   "stay:viceroy-bali",
+   "pathway:a-place-of-our-own"
+  ],
+  "media": [
+   [
+    "hero",
+    "soori-bali/estate-1",
+    "The Soori Estate above the Indian Ocean at Tabanan"
+   ],
+   [
+    "editorial_landscape",
+    "soori-bali/estate-4",
+    "The Soori Estate's pools and lawn"
+   ],
+   [
+    "editorial_landscape",
+    "soori-bali/estate-3",
+    "A beachfront villa at Soori Bali"
+   ],
+   [
+    "architecture",
+    "soori-bali/estate-2",
+    "A beachfront residence at Soori Bali"
+   ]
+  ],
+  "credit": "Photograph courtesy of Soori Bali"
+ }
+]

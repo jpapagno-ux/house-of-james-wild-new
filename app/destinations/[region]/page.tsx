@@ -1,3 +1,4 @@
+import WhiteDesertCallout from "@/components/polar/WhiteDesertCallout";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -141,6 +142,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
             </div>
             {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
           </div>
+          {r.slug === "polar-antarctica" && <WhiteDesertCallout />}
 
           {chart && (mapItems.length > 0 || r.slug.startsWith("polar")) && (
             <section id="the-map" className="mt-12 md:mt-16" aria-labelledby="region-map-heading">

@@ -38,7 +38,7 @@ export default function RoomTypes({ name, data, quote, eyebrow = "Rooms & rates"
 
       <p className="mt-8 flex flex-wrap items-baseline justify-between gap-2 text-[12px] tracking-[0.14em] uppercase ledger-muted">
         <span>{rooms.length} {rooms.length === 1 ? "room type" : "room types"}</span>
-        <span>Published rates, {data.basis}</span>
+        <span>{rooms.some((r) => r.rates.length) ? `Published rates, ${data.basis}` : "Rates on enquiry: James quotes your dates"}</span>
       </p>
       <ul className="mt-3 border-t ledger-rule">
         {rooms.map((r, i) => {
@@ -57,6 +57,9 @@ export default function RoomTypes({ name, data, quote, eyebrow = "Rooms & rates"
                     <span className="block ledger-display text-[1.2rem] md:text-[1.4rem] leading-snug">{r.name}{r.count && r.count > 1 ? <span className="ml-2 align-middle text-[11px] tracking-[0.12em] ledger-muted font-sans">× {r.count}</span> : null}</span>
                     <span className="block mt-0.5 text-[13.5px] leading-snug ledger-muted line-clamp-2">{r.facts.join(" · ")}</span>
                   </span>
+                  {from === null && (
+                    <span className="text-right shrink-0 text-[10px] tracking-[0.18em] uppercase ledger-muted">Rate on<br />enquiry</span>
+                  )}
                   {from !== null && (
                     <span className="text-right shrink-0">
                       <span className="block text-[10px] tracking-[0.18em] uppercase ledger-muted">From</span>

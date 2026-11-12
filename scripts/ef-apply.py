@@ -15,6 +15,8 @@ PAL = {  # sand, earth, landscape, shadow, accent, night surface
   "banwa":           ("#8FD0C8", "#156B66", "#ECF6F4", "#1E3F3C", "#CDEBE6", "#0C2422"),
   "amanwana":        ("#9DB98A", "#3E6233", "#F0F4EC", "#2B3A26", "#D9E6CF", "#121C10"),
   "elang":           ("#E2B48E", "#9A5232", "#F7EFE8", "#3D2A20", "#F1DCCB", "#1E1712"),
+  "hadiprana":       ("#B9C78F", "#5B6B2E", "#F3F4EA", "#2F3520", "#E1E8C8", "#161A0E"),
+  "soori":           ("#C9C1B6", "#4A4540", "#F4F2EE", "#262321", "#E6E1D9", "#141312"),
 }
 NOTE = {
   "amanpuri": "Phuket's west coast: night is the Andaman after dark, accents the teak and sand of Aman's first resort; day is pale sand.",
@@ -24,6 +26,8 @@ NOTE = {
   "banwa": "Palawan's marine sanctuary: reef water and white sand.",
   "amanwana": "Moyo Island: national park forest and the Flores Sea.",
   "elang": "The Anambas: granite and warm teak at dusk over the lagoons.",
+  "hadiprana": "Ubud: rice paddy green and old teak.",
+  "soori": "Tabanan: black volcanic sand, stone and sea mist.",
 }
 def rgb(h): h = h.lstrip("#"); return " ".join(str(int(h[i:i+2], 16)) for i in (0, 2, 4))
 def mix(a, b, t):

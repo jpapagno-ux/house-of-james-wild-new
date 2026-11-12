@@ -1221,6 +1221,132 @@
    "publicationStatus": "published",
    "reviewDate": "2026-11-07",
    "reviewStatus": "approved"
+  },
+  {
+   "id": "EF-020",
+   "stayId": "STY-2026-000291",
+   "staySlug": "tanah-gajah",
+   "stayName": "The Hadiprana Estate, Tanah Gajah",
+   "collectionNumber": 20,
+   "heroLine": "An art collector's estate among Ubud's rice paddies, and its largest house.",
+   "whyItMadeTheCut": [
+    "Place. Six hectares of gardens and working rice paddies outside Ubud, on the former estate of the Indonesian art collector Hendra Hadiprana.",
+    "Scale. The Hadiprana Estate is 570 m² for four guests, up to six, with a 10 x 6 m private pool and an outdoor jacuzzi.",
+    "Care. Butler service and club benefits, private airport transfers, daily yoga, sunset cocktails and a car into Ubud whenever you want it."
+   ],
+   "signals": [
+    {
+     "key": "place",
+     "line": "Six hectares of rice paddies and gardens outside Ubud."
+    },
+    {
+     "key": "privacy",
+     "line": "570 m², a 10 x 6 m pool and an outdoor jacuzzi."
+    },
+    {
+     "key": "humanity",
+     "line": "A butler, and the founder's art collection on every wall."
+    },
+    {
+     "key": "access",
+     "line": "Private airport transfers and a car to Ubud centre, 08:00 to 18:00."
+    },
+    {
+     "key": "rarity",
+     "line": "The largest of only twenty-four suites and villas on the estate."
+    }
+   ],
+   "pathwaysOverride": [
+    "rooted-in-place",
+    "a-place-of-our-own",
+    "the-art-of-stillness"
+   ],
+   "worthAnotherNight": "Four nights. One for the paddies at dawn, one for Ubud, one at the spa, and one with the pool to yourselves.",
+   "whoItSuits": [
+    "Families of four to six",
+    "Friends travelling together",
+    "Couples who want space and art",
+    "Wellness-minded travellers"
+   ],
+   "whoItMayNotSuit": [
+    "Travellers who want the beach on the doorstep",
+    "Large groups (the whole estate can be bought out instead)"
+   ],
+   "continueRefs": [
+    "stay:viceroy-bali",
+    "stay:soori-bali",
+    "pathway:rooted-in-place"
+   ],
+   "paletteKey": "hadiprana",
+   "designationStatus": "designated",
+   "selectionDate": "2026-11-12",
+   "publicationStatus": "published",
+   "reviewDate": "2026-11-12",
+   "reviewStatus": "approved",
+   "jamesNote": null
+  },
+  {
+   "id": "EF-021",
+   "stayId": "STY-2026-000283",
+   "staySlug": "soori-bali",
+   "stayName": "The Soori Estate, Soori Bali",
+   "collectionNumber": 21,
+   "heroLine": "Ten bedrooms on 5,250 m² of beachfront on Bali's southwest coast.",
+   "whyItMadeTheCut": [
+    "Place. 5,250 m² of beachfront on Bali's southwest coast at Tabanan, between the Indian Ocean and the rice fields, with every bedroom looking at the sea.",
+    "Scale. Ten bedrooms for up to twenty adults and four children: two master bedrooms and adjoining suites upstairs, six bedrooms below, four private infinity pools and a 20 metre pool with a jacuzzi.",
+    "Design. Soo K. Chan and Ling Fu built Soori from local materials; the Estate adds its own gym, spa room, library and a gourmet kitchen, with a butler."
+   ],
+   "signals": [
+    {
+     "key": "place",
+     "line": "Beachfront on Bali's southwest coast, between the ocean and the rice fields."
+    },
+    {
+     "key": "privacy",
+     "line": "Ten bedrooms, four infinity pools and a private driveway."
+    },
+    {
+     "key": "design",
+     "line": "Architecture by Soo K. Chan and Ling Fu, in local materials."
+    },
+    {
+     "key": "humanity",
+     "line": "Butler service, a private spa room and gym."
+    },
+    {
+     "key": "rarity",
+     "line": "Soori's largest residence, for up to twenty adults and four children."
+    }
+   ],
+   "pathwaysOverride": [
+    "a-place-of-our-own",
+    "between-tides",
+    "rooted-in-place"
+   ],
+   "worthAnotherNight": "Five nights. Enough for the beach at sunset, Tanah Lot, the rice terraces, and a long lunch that turns into dinner.",
+   "whoItSuits": [
+    "Families travelling across generations",
+    "Groups of friends of up to twenty",
+    "Milestone celebrations and weddings",
+    "Retreats that want privacy and space"
+   ],
+   "whoItMayNotSuit": [
+    "Couples travelling alone (a pool villa suits better)",
+    "Travellers who want a town on the doorstep"
+   ],
+   "continueRefs": [
+    "stay:tanah-gajah",
+    "stay:viceroy-bali",
+    "pathway:a-place-of-our-own"
+   ],
+   "paletteKey": "soori",
+   "designationStatus": "designated",
+   "selectionDate": "2026-11-12",
+   "publicationStatus": "published",
+   "reviewDate": "2026-11-12",
+   "reviewStatus": "approved",
+   "jamesNote": null
   }
  ]
 }

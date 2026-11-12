@@ -134,7 +134,7 @@ export function Overview({ quote, answer, facts, paragraphs, lead, name, ledgerI
   /** one short line shown in place of the long answer (James, 12 Nov 2026: "merge the two summaries"); the full
    *  answer then opens with the entry, still in the page for search and answer engines */
   lead?: string | null; name?: string; ledgerId?: string | null; /** the field card design (stays under review first) */ card?: boolean }) {
-  const short = card && lead && facts.length > 0;
+  const short = !!(card && lead);
   return (
     <section id="overview" className={`pt-12 md:pt-16 grid ${facts.length ? "lg:grid-cols-[1.25fr_1fr]" : "max-w-3xl"} gap-10 items-start`}>
       <div>

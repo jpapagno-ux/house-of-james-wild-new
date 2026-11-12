@@ -119,6 +119,7 @@ import { PreviewNote } from "@/components/record/Sections";
 import HouseOpening from "@/components/opening/HouseOpening";
 import { Band, tonesStyle } from "@/components/opening/Tones";
 import { stayOpening } from "@/lib/content/opening/build";
+const DESIGN_REVIEW = new Set(["amanwana", "tanah-gajah", "viceroy-bali", "aguas-claras"]);
 
 // /stays/[slug]: a stay page from the Ledger export. Hero + glance › page bar ›
 // breadcrumbs › overview (quote, in short, facts, the full entry) › gallery ›
@@ -284,6 +285,9 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   // the page below does not repeat them. James's own words live once, in The Verdict; one "who plans this" card; one
   // way to talk to the house. Live stay pages without the entrance are unchanged.
   const tight = !!op;
+  // the field card, the signed founder note and the tinted bands: shown on these stays for James's review first
+  // (12 Nov 2026), then rolled out to every stay, voyage, gathering, safari and Overland record
+  const card = DESIGN_REVIEW.has(s.slug);
   const inOpening = new Set(["Ledger ID", "Country", "Best months", "Best suited to", "The Ledger", "Airport"]);
   // with the house entrance the chapter rail follows the new order: the verdict after the overview, the map after the rooms
   const ORDER = ["overview", "verdict", "features", "experiences", "rooms", "gallery", "location"];
@@ -295,7 +299,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
   const europe = s.regionSlug === "europe";
   // Volume V (Europe) stays wear the Europe palette (aubergine) instead of the Stays green; colours only.
   return (
-    <div className={[boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : "", tones ? `house-tones house-tones--stay${safariVol ? " house-tones--safari" : ""}` : ""].filter(Boolean).join(" ")} style={tones ? tonesStyle(tones) : undefined}>
+    <div className={[boat ? "theme-sea theme-sea-page" : s.regionSlug === "europe" ? "theme-vol-europe theme-vol-europe-page" : "", ef ? `${efThemeClass(ef)} theme-ef-dark` : "", tones ? `house-tones house-tones--stay${safariVol ? " house-tones--safari" : ""}` : "", card ? "design-review" : ""].filter(Boolean).join(" ")} style={tones ? tonesStyle(tones) : undefined}>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip">
         {op ? (() => { const { next, ...o } = op; return <HouseOpening {...o} next={next} film={STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : undefined} tab={volumeMark(europe ? "europe" : safariVol ? "safaris" : "stays")} badge={stamp ? <FounderStamp kind={stamp} volume={safariVol ? "safaris" : "stays"} ink={o.palette.sand} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={104} /> : undefined} />; })() : ef && efHero ? (
@@ -361,9 +365,9 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           {ef && efAerial && s.coords && <div id="place" className=""><PanFrame src={mediaUrl(efAerial, { width: 2560 })} alt={efAerial.alt} name={s.name} coords={s.coords} line={s.airportDirections ?? undefined} credit={efAerial.credit} /></div>}
           <DayBand>
           {tight && <WhyWhoVerdict name={s.name} why={s.why} vetted={`${status ?? `Vetted by the house${s.ledgerId ? ` · ${s.ledgerId}` : ""}`}${(stamp === "Field verified" || stamp === "Founder favorite") && CHOSEN["in-01"] ? ` · “${CHOSEN["in-01"]}” JW` : ""}`} whoFor={s.facts.who_its_for ?? null} suited={suited.length ? suited : bestFor} thinkTwice={twice} verdict={verdict ? { line: verdict.text[0], by: `James Wild · ${verdict.where}, ${verdict.when}` } : founderLine(`stay:${s.slug}`) ? { line: founderLine(`stay:${s.slug}`)!.line, by: `James Wild · ${founderLine(`stay:${s.slug}`)!.where}, ${founderLine(`stay:${s.slug}`)!.when}`, short: true } : null} planHref={planHref} />}
-          <Overview quote={tight ? undefined : s.quote ?? undefined} answer={answer} facts={tight ? facts.filter(([k]) => !inOpening.has(k)) : facts} paragraphs={overviewParas} />
+          <Overview quote={tight ? undefined : s.quote ?? undefined} answer={answer} facts={tight ? facts.filter(([k]) => !inOpening.has(k)) : facts} paragraphs={overviewParas} card={card} lead={s.tagline} name={s.name} ledgerId={s.ledgerId} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
-          {!(tight && verdict) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}{...(VETTED_UNVISITED.has(s.slug) ? { eyebrow: "Founder vetted · not yet visited" } : {})} className="mt-10 max-w-3xl" />}
+          {!(tight && verdict) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}{...(VETTED_UNVISITED.has(s.slug) ? { eyebrow: "Founder vetted · not yet visited" } : {})} className="mt-10 max-w-3xl"  signed={card} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : null} />}
           {/* The house entrance order (James, 10 Nov 2026: "the verdict seems to be way at the bottom ... tighten this up to
               get the user more information about why, where, and how to get there"): why (the verdict, then the facts
               at a glance) straight after the overview; where and how (the map, the way in, the routes it is on) together

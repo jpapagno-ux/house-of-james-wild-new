@@ -7,6 +7,8 @@ import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import PathwayStamp from "@/components/pathways/PathwayStamp";
 import { toneVars } from "./Tones";
+import WideFilmLayer from "@/components/media/WideFilm";
+import type { WideFilm } from "@/lib/content/stay-films";
 
 // Preview C, "the house opening" (James, 8 Nov 2026: go with the blend). The Exceptional Few manner one step down,
 // for any volume record:
@@ -33,8 +35,8 @@ function Grain({ on }: { on: boolean }) {
   return <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-[1] mix-blend-overlay opacity-[0.09]" style={{ backgroundImage: GRAIN }} />;
 }
 
-function Arrival({ frames, palette, accent, marker, designation, title, place, next, planHref, grain, tab }: {
-  frames: OpeningImage[]; palette: OpeningPalette; accent: string; marker: string; designation: string; title: string; place: string; next: NextSailing; planHref: string; grain: boolean; tab?: string;
+function Arrival({ frames, palette, accent, marker, designation, title, place, next, planHref, grain, tab, film }: {
+  frames: OpeningImage[]; palette: OpeningPalette; accent: string; marker: string; designation: string; title: string; place: string; next: NextSailing; planHref: string; grain: boolean; tab?: string; film?: WideFilm;
 }) {
   const reduced = useReducedMotionSafe();
   const ref = useRef<HTMLDivElement>(null);
@@ -83,6 +85,10 @@ function Arrival({ frames, palette, accent, marker, designation, title, place, n
             <Pic src={f.src} alt={f.alt} priority={i === 0} sizes="100vw" portrait="9:16" gravity={f.gravity} className="object-cover" style={{ transform: reduced || touch ? undefined : `scale(${1.02 + 0.05 * (1 - fade(i))})` }} />
           </div>
         ))}
+        {/* the brand's own film plays over the first photograph (James, 12 Nov 2026: "full screen, desktop and mobile"); it
+            fades with the first frame as the reader scrolls on, and the photograph stays where motion is off */}
+        {film && <div className="absolute inset-0" style={{ zIndex: n, opacity: fade(0) }}><WideFilmLayer film={film} /></div>}
+        {film && <p className="absolute z-20 bottom-2 right-6 md:right-8 text-[10.5px] tracking-[0.08em] text-white/70" style={{ opacity: fade(0) }}>{film.credit}</p>}
         <div aria-hidden="true" className="absolute inset-0 z-10 mix-blend-soft-light" style={{ opacity: 0.55 * between, background: `radial-gradient(120% 90% at ${15 + 70 * p}% 30%, ${accent} 0%, transparent 60%)` }} />
         <div aria-hidden="true" className="absolute inset-0 z-10" style={{ background: `linear-gradient(180deg, rgba(26,24,22,.28) 0%, transparent 28%, transparent 60%, ${palette.night}D9 100%)` }} />
         <Grain on={grain} />
@@ -141,14 +147,16 @@ export type HouseOpeningProps = {
   badge?: ReactNode;
   /** a ship or a voyage: the pathway stamps print "at sea", with the voyage line and the anchor */
   voyage?: boolean;
+  /** a wide brand film over the first frame of the arrival (lib/content/stay-films.ts) */
+  film?: WideFilm;
 };
 
-export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab, also = [], badge, voyage = false }: HouseOpeningProps) {
+export default function HouseOpening({ palette, pathway, marker, designation, title, place, line, frames, glance, why, whyLabel = "Why this voyage", close, next, planHref, note, grain = false, tab, also = [], badge, voyage = false, film }: HouseOpeningProps) {
   const pw = PATHWAYS[pathway];
   const night: CSSProperties = { background: `linear-gradient(180deg, ${palette.night} 0%, ${palette.deep} 100%)` };
   return (
     <div className="jw-opening mx-[calc(50%-50vw)] overflow-x-clip" style={toneVars(palette)}>
-      <Arrival frames={frames} palette={palette} accent={pw.accent} marker={marker} designation={designation} title={title} place={place} next={next} planHref={planHref} grain={grain} tab={tab} />
+      <Arrival frames={frames} palette={palette} accent={pw.accent} marker={marker} designation={designation} title={title} place={place} next={next} planHref={planHref} grain={grain} tab={tab} film={film} />
 
       <section className="relative text-white" style={night}>
         <Grain on={grain} />

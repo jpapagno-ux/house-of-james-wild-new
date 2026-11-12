@@ -30,7 +30,7 @@ export const STAY_FILMS: Record<string, WideFilm> = {
     credit: "Film courtesy of Viceroy Bali",
     hero: true,
   },
-  // The Ungasan's homepage film (14 s) is published at 720p only, too soft for full screen: it plays in the page's film band.
+  // The Ungasan's homepage film (14 s, published at 720p), full screen at James's request (12 Nov 2026).
   "ungasan-clifftops": {
     kind: "mp4",
     src: `${CLD}/q_auto:good,vc_auto/jwco/stays/ungasan-clifftops/film.mp4`,
@@ -38,9 +38,10 @@ export const STAY_FILMS: Record<string, WideFilm> = {
     poster: `${CLD}/so_0,q_auto,f_jpg/jwco/stays/ungasan-clifftops/film.jpg`,
     title: "The Ungasan, on the Uluwatu cliffs",
     credit: "Film courtesy of The Ungasan Clifftop Resort",
+    hero: true,
   },
-  // Soori's own resort film (172 s, 720p) from sooribali.com: in the page's film band, not full screen.
-  "soori-bali": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto/jwco/stays/soori-bali/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/soori-bali/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg/jwco/stays/soori-bali/film.jpg`, title: "Soori Bali, between the ocean and the rice fields", credit: "Film courtesy of Soori Bali" },
+  // Soori's own resort film (172 s, 720p) from sooribali.com, full screen at James's request (12 Nov 2026).
+  "soori-bali": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto/jwco/stays/soori-bali/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/soori-bali/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg/jwco/stays/soori-bali/film.jpg`, title: "Soori Bali, between the ocean and the rice fields", credit: "Film courtesy of Soori Bali", hero: true },
   "kokomo-private-island": {
     kind: "vimeo",
     id: "1128730742",

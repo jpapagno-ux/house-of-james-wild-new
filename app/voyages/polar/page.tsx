@@ -1,3 +1,4 @@
+import WhiteDesertCallout from "@/components/polar/WhiteDesertCallout";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
@@ -118,6 +119,8 @@ export default function PolarPage() {
             </div>
           </article>
         </HubSection>
+
+        <WhiteDesertCallout />
 
         <section className="mt-12 md:mt-16" aria-labelledby="pc-h">
           <div className="grid md:grid-cols-[1.4fr_1fr] gap-6 md:gap-10 items-center ledger-paper border ledger-border p-6 md:p-8">

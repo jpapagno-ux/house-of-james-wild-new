@@ -10,8 +10,13 @@ export type AccordionItem = { title: string; image?: string; alt?: string; note?
 // A list that opens one row at a time to show a photograph and a line.
 // Closed panels stay in the page (hidden, not removed) so search engines and
 // answer engines still read every item.
+// A row only opens when there is something to show: its own photograph (one that shows what the row says; see
+// lib/content/photo-subjects.ts) or a note. A row without either is a plain line, never an empty panel or a
+// borrowed photograph of something else.
 export default function ImageAccordion({ id, eyebrow, title, intro, icon, items, start = 0 }: { id: string; eyebrow: string; title: string; intro?: string; icon?: FieldIconName; items: AccordionItem[]; start?: number | null }) {
-  const [open, setOpen] = useState<number | null>(start);
+  const has = (x: AccordionItem) => !!(x.image || x.note);
+  const first = start === null ? null : items.findIndex((x, k) => k >= start && has(x));
+  const [open, setOpen] = useState<number | null>(first === null || first < 0 ? null : first);
   const uid = useId();
   return (
     <section id={id} className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby={`${uid}-h`}>
@@ -24,6 +29,14 @@ export default function ImageAccordion({ id, eyebrow, title, intro, icon, items,
       <ul className="mt-6 border-t ledger-rule">
         {items.map((x, k) => {
           const on = open === k;
+          if (!has(x)) return (
+            <li key={x.title} className="border-b ledger-rule">
+              <h3 className="flex items-center gap-4 py-4 md:py-5">
+                <span className="font-mono text-[11px] tracking-[0.14em] ledger-muted tabular-nums w-6">{String(k + 1).padStart(2, "0")}</span>
+                <span className="flex-1 ledger-display text-[1.15rem] md:text-[1.35rem] leading-snug">{x.title}</span>
+              </h3>
+            </li>
+          );
           return (
             <li key={x.title} className="border-b ledger-rule">
               <h3>

@@ -403,7 +403,8 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           <GettingThere name={s.name} hubs={hubs} transfers={legs} gateway={gatewayHub && gatewayStay ? { hub: gatewayHub, stay: gatewayStay } : null} />
           {tight && <OnTheseRoutes routes={routeCards} />}
           {!tight && <AdvisorChip where={{ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }} place={s.name} compact className="mt-10" />}
-          <InstrumentsStrip atlasHref={s.coords && chart ? "#location" : undefined} className="mt-8" />
+          {/* the Atlas on a stay opens this stay's own map, or its country's map; never the voyages globe (James, 12 Nov 2026) */}
+          <InstrumentsStrip atlasHref={s.coords && chart ? "#location" : boat ? undefined : s.regionSlug && s.countrySlug ? `/destinations/${s.regionSlug}/${s.countrySlug}#the-map` : "/destinations"} className="mt-8" />
           {!tight && Object.keys(s.facts).length > 0 && (
             <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="facts-heading">
               <p className="ledger-eyebrow ledger-crimson">Before you go</p>

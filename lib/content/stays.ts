@@ -3,6 +3,7 @@ import { isInteriorPhoto } from "./opening/interior-photos";
 // Stays, from the Ledger export (scripts/export-stays.py → stays.json).
 // A stay gets its own page only when it has a hero photo and some content.
 import data from "./stays.json";
+import photoAlts from "./photo-alts.json";
 import { HERO_OVERRIDE } from "./stay-media";
 import { isVessel, vessel } from "./vessels";
 
@@ -81,9 +82,13 @@ export const BEST_FOR: Record<string, string> = { honeymoon: "Honeymoons", famil
 // lounge at & Beyond Sossusvlei Desert Lodge, Namibia"). Words that repeat the
 // stay or country, upload ids and size notes are dropped; with too little left
 // it falls back to the stay and country.
+const PHOTO_ALTS = (photoAlts as { alts: Record<string, string> }).alts;
 const ALT_DROP = /^(jpe?g|png|avif|webp|low|high|resolution|width|height|px|copy|final|edit|img|image|dsc|gettyimages|carousel|hero|general|guest|area|\d+|[a-f0-9]{6,})$/i;
 export function altFor(url: string, name: string, country: string | null, i = 0): string {
   const where = `${name}${country ? `, ${country}` : ""}`;
+  // a photograph someone has looked at and described (lib/content/photo-alts.json) says what it shows
+  const seen = PHOTO_ALTS[url.split("?")[0].match(/(jwco\/.+?)(?:\.[a-z0-9]{3,4})?$/i)?.[1] ?? ""];
+  if (seen) return `${seen} at ${where}`;
   let file = url.split("?")[0].split("/").pop() ?? "";
   try { file = decodeURIComponent(file); } catch { /* keep raw */ }
   file = file.replace(/\.[a-z0-9]{3,4}$/i, "").replace(/^([a-z0-9]{9}_){1,2}[a-f0-9]{24}_/i, "").replace(/_20/g, " ");

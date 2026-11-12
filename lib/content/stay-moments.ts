@@ -12,6 +12,9 @@ const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 const B44 = "https://media.base44.com/images/public/6a7932161e9318dca1f24474";
 const LEEU = "wildco/south-africa/leeu-estates-franschhoek";
 
+import { fit, rowSubjects } from "./photo-subjects.ts";
+import { SUBJECT_PHOTOS } from "./stay-subject-photos.ts";
+
 type Moment = { match: RegExp; image: string; alt: string; note?: string };
 
 // Notes drafted in James Wild's voice; approved by James, 27 Oct 2026.
@@ -117,17 +120,34 @@ export function topRows(slug: string, items: string[], section: "apart" | "days"
   return items.map((t, i) => ({ t, s: score(t, i) })).sort((a, b) => a.s - b.s).slice(0, MAX_ROWS).map((x) => x.t);
 }
 
-export function momentsFor(slug: string, rows: string[], fallback: { url: string; alt: string }[], offset = 0, taken: { note?: string }[] = []) {
+export function momentsFor(slug: string, rows: string[], fallback: { url: string; alt: string }[], offset = 0, taken: { note?: string; image?: string }[] = []) {
   const list = MOMENTS[slug] ?? [];
   const items = topRows(slug, rows, taken.length ? "days" : "apart");
   // entries already shown in the other section are skipped, so the two sections never repeat a note
   const used = new Set<number>(list.map((m, j) => (taken.some((t) => t.note && t.note === m.note) ? j : -1)).filter((j) => j >= 0));
-  return items.map((title, k) => {
+  // the photographs (the stay's own, then any the house sourced from the brand for a subject) a row may borrow,
+  // each used once across both sections
+  const pool = [...fallback, ...(SUBJECT_PHOTOS[slug] ?? []).map((x) => ({ url: x.url, alt: x.alt }))];
+  const seen = new Set<string>(taken.map((t) => t.image).filter(Boolean) as string[]);
+  void offset;
+  const out: { title: string; image?: string; alt?: string; note?: string }[] = items.map((title) => {
     const i = list.findIndex((m, j) => !used.has(j) && m.match.test(title));
-    if (i >= 0) { used.add(i); const m = list[i]; return { title, image: m.image, alt: m.alt, note: m.note }; }
-    const f = fallback.length ? fallback[(k + offset) % fallback.length] : undefined;
-    return { title, image: f?.url, alt: f ? f.alt : undefined };
+    if (i < 0) return { title };
+    used.add(i); const m = list[i];
+    // a hand-picked photograph still has to show what the row says (James, 12 Nov 2026)
+    if (!rowSubjects(title).length || fit(title, m.alt) > 0) { seen.add(m.image); return { title, image: m.image, alt: m.alt, note: m.note }; }
+    return { title, note: m.note };
   });
+  // every row still without a photograph: best pairs first, so the pontoon photograph goes to "Pontoon dinners"
+  // rather than to whichever dining row came first
+  const pairs: [number, number, number][] = [];
+  out.forEach((o, r) => { if (o.image) return; pool.forEach((p, k) => { if (seen.has(p.url)) return; const f = fit(o.title, p.alt); if (f > 0) pairs.push([f, r, k]); }); });
+  pairs.sort((x, y) => y[0] - x[0] || x[1] - y[1]);
+  for (const [, r, k] of pairs) {
+    if (out[r].image || seen.has(pool[k].url)) continue;
+    seen.add(pool[k].url); out[r] = { ...out[r], image: pool[k].url, alt: pool[k].alt };
+  }
+  return out;
 }
 
 /** Rows for a section: the record's items, or a short comma list in its paragraph split into rows. */

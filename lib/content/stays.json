@@ -49025,7 +49025,7 @@
    "misfiled": null,
    "category": "hotel",
    "tagline": "Twenty-four art-filled suites and villas on a six-hectare rice paddy estate near Ubud",
-   "quote": "Escape to Tanah Gajah in Ubud, Bali. This secluded 20-villa resort offers a tranquil retreat surrounded by rice paddies and rich Balinese culture.",
+   "quote": null,
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9d72e1054_83d289dc8_68366ffe50f07a74d3f85f03_1_20-_20aerial_20hero_20shot_201_20-_20tanah_20gajah_20.",
    "gallery": [
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0627fce4b_1cd5d4aeb_683a3ab5931924e5e7474706_The_20Hadiprana_20Estate_20-_20master_20bedroom.jpg",
@@ -49048,7 +49048,7 @@
     "wellness"
    ],
    "status": "founder_returned",
-   "statusDate": "2024-11-01",
+   "statusDate": "2024-11",
    "coords": {
     "lat": -8.523367,
     "lng": 115.275902
@@ -49057,14 +49057,16 @@
    "airportDirections": "DPS is about a 2 hour drive from Ubud and travel time depends on time of day.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "One Bedroom Club Suite",
-     "One Bedroom Club Pool Villa",
-     "Premier One Bedroom Club Pool Villa",
-     "Two Bedroom Club Family Pool Villa",
-     "The Hadiprana Estate"
-    ]
+    "paras": [
+     "Twenty-four art-filled club suites and villas on a six-hectare estate of gardens and working rice paddies, all with club benefits.",
+     "One Bedroom Club Suite: 80 m², two adults (three with an extra charge), a king bed and a semi-outdoor bathroom.",
+     "One Bedroom Club Pool Villa: 220 m², two adults, an 8 x 2.5 m private pool and outdoor bathtub.",
+     "Premier One Bedroom Club Pool Villa: 250 m², two adults, an 8 x 2.5 m private pool and outdoor bathtub.",
+     "Two Bedroom Club Family Pool Villa: 250 m², two adults and two children or four adults, a 7 x 2.5 m pool and outdoor bathtub.",
+     "The Hadiprana Estate: 570 m², four adults (up to six with an extra charge), a 10 x 6 m private pool and outdoor jacuzzi.",
+     "The Art of Reuniting: the whole estate can be bought out for a family or a celebration."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -49082,10 +49084,10 @@
    "features": {
     "paras": [
      "Just 24 suites and villas on six hectares of gardens and working rice paddies.",
-     "Club benefits including butler service, afternoon tea and sunset cocktails.",
-     "Floating breakfast in the main pool or your villa's private pool.",
+     "Private airport transfers, daily yoga and sunset cocktails included.",
+     "A complimentary private car to Ubud centre, 08:00 to 18:00 daily, driven by village drivers.",
+     "Butler service and club benefits in every suite and villa.",
      "The Hadiprana Estate with a 10 x 6 m private pool and outdoor jacuzzi.",
-     "The Spa at the edge of the paddy fields.",
      "The founder's art collection throughout the estate."
     ],
     "items": []
@@ -54840,19 +54842,19 @@
    "misfiled": null,
    "category": "hotel",
    "tagline": "Perched above the Indian Ocean on the cliffs of Uluwatu",
-   "quote": "Where cliffs fall away and horizons stretch forever. Find yourself here, in the quiet majesty of a resort built for the soul.",
-   "hero": "/img/b44/ccab19a2f_7005a7e41_68d32c1d1c8db0ae37d74000_135e7196.avif",
+   "quote": "Spectacular service. One of my favorites, tucked away with amazing views of Uluwatu and a beach bar that just keeps you coming back.",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/hero",
    "gallery": [
-    "/img/b44/f850cb6a2_fd3254ee6_68d32c4fe480317a0d350c70_44d31d84.avif",
-    "/img/b44/aaa08b529_8ede2918c_68d32c4f783ce92768484f8f_36812aad.avif",
-    "/img/b44/ffc901164_3e448ac6c_68d426ecc517fdb89625f0c8_3d10fc44.avif",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f760ef7e_3c4dfaba3_68d42703ee09a1f7ddcb17ec_64ebed21.webp",
-    "/img/b44/84edb73cd_1f660fd71_68d32c26458180c3760f0cc2_6be7fd62.avif",
-    "/img/b44/4637748e1_7eb853d98_68d32c1d1c8db0ae37d74000_135e7196.avif",
-    "/img/b44/2f2911920_e47b5fccc_68d4246ef7562e1a68b6b257_7e1aa0e0.avif",
-    "/img/b44/5b8c5d975_8ad7d6300_68d427121c5e52171e69bf45_a6ee2285.avif",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eee7602b3_36f29acf0_68d426ec57d8aa7021f84ea9_2f04ef7a.webp",
-    "/img/b44/158ce7dfa_c5e2b17fd_68d426ece1896751d32c2ad8_3c3d3ffa.avif"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/ungasan-clifftops/g10"
    ],
    "bestMonths": "April to October",
    "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. The Ungasan does not name a best season on its own site.",
@@ -54864,7 +54866,7 @@
     "wellness"
    ],
    "status": "founder_returned",
-   "statusDate": "2024-11-01",
+   "statusDate": "2024-11",
    "coords": {
     "lat": -8.846188,
     "lng": 115.149528
@@ -54873,12 +54875,18 @@
    "airportDirections": "About 25 to 30 minutes by car from Ngurah Rai International Airport (DPS) in normal traffic, south along the Bukit Peninsula to the cliffs. Return airport transfers are included in all rates.",
    "founderNote": "Spectacular service. One of my favorites, tucked away with amazing views of Uluwatu and a beach bar that just keeps you coming back.",
    "rooms": {
-    "paras": [],
-    "items": [
-     "One-Bedroom Ocean View Suite",
-     "One-Bedroom Plunge Pool Suite",
-     "One-Bedroom Garden View Suite"
-    ]
+    "paras": [
+     "Seven villa compounds, each with a private infinity or lap pool, a butler team, in-villa dining and a designer kitchen, in three, four or five bedroom configurations.",
+     "Villa Ambar: open-plan Balinese, ocean views from every bedroom, interconnecting rooms for young families and a large lawn.",
+     "Villa Pawana: a five bedroom clifftop compound with a curved infinity pool, a clifftop balé and a master suite with its own plunge pool.",
+     "Villa Tamarama: Hamptons colonial, two pools including one on the cliff edge, an oversized bar; made for groups and celebrations.",
+     "Villa Jamadara: angular and contemporary, an infinity pool over the limestone cliffs, a sunken lounge and a media room.",
+     "Villa Santai Sorga: hacienda style, a master bedroom taking the whole first floor, a clifftop balé and infinity pool.",
+     "Villa Nora: a 25 metre lap pool on the cliff edge and five pavilion bedrooms, each with its own garden terrace.",
+     "Villa Chintamani: contemporary Balinese, five pavilion bedrooms each with a private plunge pool.",
+     "One Bedroom Suites (Ocean View, Plunge Pool and Garden View), within the Nora and Chintamani residences."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -55406,19 +55414,19 @@
    "misfiled": null,
    "category": "hotel",
    "tagline": "A family-run retreat of 40 pool villas above an Ubud valley",
-   "quote": "Imagine waking up to the gentle sounds of the jungle, the scent of frangipani in the air, and the promise of a day filled with discovery and serenity",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4e5594453_796c05e0f_6843490b50fe8a604d7ca7cd_Viceroy-Bali-Main-Pool-2.jpg",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/hero",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c593fdbfc_580417a6a_684349b0dfc489a4894f1b17_R.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/6d9817d43_91932f240_6844af6bd33a94867659d2f6_Wellness-Retreat-Bali-7.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/47dd75282_d4a782fb4_684349b066390f222830addf_Viceroy-Bali-Main-Pool-85-1-e1707190963418.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f1893bff4_0acfd9c60_6844af62f42c40a34198b5f9_facilities-private-yoga.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8ee2a1b12_53479befb_6844af6e34eee4f54e3a890e_Wellness-Retreat-Bali-6-scaled.jpg",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g7",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2b840fccb_f175749ae_6844af691cb96c5fd36d442f_Wellness-Retreat-Bali-9.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9a43e2aac_b44fbe80d_68443b181cb96c5fd344624f_wellness-balinese-blessing.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/934aefd37_3a1a7bdad_684a45884da4ac2f60eb067e_vice_regal_2_swimming_pool.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/1abbc4fb8_42fd06d48_684a43cc61cac81b516cb8f5_Vice-Regal-outside-of-whole-villa_20_1_.webp"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g9",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g8",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/viceroy-bali/g7"
    ],
    "bestMonths": "April to October",
    "bestMonthsNote": "Bali's dry season, per Indonesia's official tourism board. Viceroy Bali does not name a best season on its own site.",
@@ -55430,7 +55438,7 @@
     "food"
    ],
    "status": "founder_returned",
-   "statusDate": "2024-11-01",
+   "statusDate": "2024-11",
    "coords": {
     "lat": -8.493478,
     "lng": 115.276498
@@ -55439,17 +55447,18 @@
    "airportDirections": "Approximately 45 km (1.5-hour drive). Recommended for international travelers.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Pool Suite",
-     "Terrace Villa",
-     "Deluxe Terrace Villa",
-     "Premium Club Pool Villa",
-     "Elephant Villa",
-     "Two Bedroom Family Deluxe Villa",
-     "Vice Regal Villa (two bedrooms)",
-     "The Viceroy Villa (two bedrooms, 15-metre heated pool)"
-    ]
+    "paras": [
+     "40 villas, every one with a heated private pool and a view over the Petanu valley.",
+     "Pool Suite: heated plunge pool of 3 x 3 m and a semi-outdoor bathroom.",
+     "Terrace Villa: a traditional balé over a heated pool of 3.5 x 3.5 m.",
+     "Deluxe Terrace Villa: a heated infinity-edge pool of 3.5 x 4.5 m and a balé.",
+     "Premium Club Pool Villa: valley panoramas and club benefits throughout the stay.",
+     "Elephant Villa: a private pool of 4 x 10 m.",
+     "Family Deluxe Villa: two interconnecting bedrooms, two heated infinity pools and a shared deck.",
+     "Vice Regal Villa: two bedrooms on the edge of the valley, a large heated pool; only five in the collection.",
+     "The Viceroy Villa: two master bedrooms with marble ensuites, a 15 metre heated pool (4 x 12 m), outdoor jacuzzi and room for a private chef dinner."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],

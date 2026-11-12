@@ -1,0 +1,611 @@
+[
+ {
+  "n": 5,
+  "stayId": "STY-2026-000584",
+  "staySlug": "amanpuri",
+  "stayName": "Amanpuri",
+  "palette": "amanpuri",
+  "heroLine": "Where Aman began, on its own peninsula above the Andaman Sea.",
+  "why": [
+   "Place. Its own peninsula at Pansea Beach on Phuket's west coast, thirty minutes by car from Phuket International Airport.",
+   "Origin. Amanpuri opened in 1988 as the first property in the Aman portfolio, and it still presides over the same stretch of coast.",
+   "Privacy. Forty pool pavilions on the hillside and forty villas of three to nine bedrooms, each villa with its own pool, a Villa Host and a personal Thai chef."
+  ],
+  "signals": [
+   [
+    "place",
+    "Its own peninsula at Pansea Beach, on Phuket's west coast."
+   ],
+   [
+    "privacy",
+    "Villas of three to nine bedrooms, each with its own pool."
+   ],
+   [
+    "humanity",
+    "A Villa Host and a personal Thai chef with every villa."
+   ],
+   [
+    "access",
+    "Thirty minutes by car from Phuket International Airport."
+   ],
+   [
+    "rarity",
+    "Aman's first resort, opened in 1988."
+   ]
+  ],
+  "pathways": [
+   "between-tides",
+   "a-place-of-our-own",
+   "the-art-of-stillness"
+  ],
+  "worth": "Five nights. Two by the pool, one at sea in Phang Nga Bay or the Similans, and two with nowhere to be.",
+  "suits": [
+   "Families and groups taking a villa",
+   "Couples in the pool pavilions",
+   "Children five and older, with the Eco-Beach Discovery Centre",
+   "Travellers pairing Phuket with Phang Nga Bay"
+  ],
+  "notSuit": [
+   "Travellers who want nightlife on the doorstep",
+   "Travellers looking for a remote outer island"
+  ],
+  "continue": [
+   "stay:rosewood-phuket",
+   "stay:four-seasons-tented-camp-golden-triangle",
+   "pathway:a-place-of-our-own"
+  ],
+  "media": [
+   [
+    "hero",
+    "amanpuri/hero",
+    "Amanpuri's pool lined with palms above the Andaman Sea, Phuket"
+   ],
+   [
+    "editorial_landscape",
+    "amanpuri/g3",
+    "An Amanpuri pool pavilion looking out to sea"
+   ],
+   [
+    "editorial_landscape",
+    "amanpuri/g1",
+    "A villa pool on the hillside at Amanpuri"
+   ],
+   [
+    "detail",
+    "amanpuri/g2",
+    "Palms and sun loungers over the Andaman Sea at Amanpuri"
+   ],
+   [
+    "night",
+    "amanpuri/g10",
+    "Amanpuri's terraces in the evening light"
+   ]
+  ],
+  "credit": "Photograph courtesy of Aman"
+ },
+ {
+  "n": 6,
+  "stayId": "STY-2026-000585",
+  "staySlug": "rosewood-phuket",
+  "stayName": "The Palm House, Rosewood Phuket",
+  "palette": "rosewood-phuket",
+  "heroLine": "Four bedrooms, two pools and a 600 metre beach on Emerald Bay.",
+  "why": [
+   "Place. Rosewood Phuket runs down a green hillside to its own 600 metre stretch of Emerald Bay, on Phuket's west coast.",
+   "Scale. The Palm House has four master bedrooms and two pools for up to twelve guests: a beach house for one family, with Rosewood behind it.",
+   "Care. A dedicated butler looks after the villas and houses, with Asaya, Rosewood's integrative wellness destination, a short walk away."
+  ],
+  "signals": [
+   [
+    "place",
+    "A 600 metre beachfront on Emerald Bay."
+   ],
+   [
+    "privacy",
+    "Four master bedrooms and two pools, for up to twelve."
+   ],
+   [
+    "humanity",
+    "A dedicated butler in the villas and houses."
+   ],
+   [
+    "access",
+    "About 40 km from Phuket International Airport; Rosewood allows 60 to 90 minutes by road."
+   ]
+  ],
+  "pathways": [
+   "a-place-of-our-own",
+   "between-tides",
+   "the-art-of-stillness"
+  ],
+  "worth": "Six nights. Long enough for the beach, Asaya and Ta Khai, and a day with nothing planned at all.",
+  "suits": [
+   "Families travelling across generations",
+   "Groups of friends of up to twelve",
+   "Milestone celebrations",
+   "Beach-first travellers"
+  ],
+  "notSuit": [
+   "Couples travelling alone (a pool villa suits better)",
+   "Travellers who want a short airport transfer"
+  ],
+  "continue": [
+   "stay:amanpuri",
+   "stay:four-seasons-tented-camp-golden-triangle",
+   "pathway:a-place-of-our-own"
+  ],
+  "media": [
+   [
+    "hero",
+    "rosewood-phuket/hero",
+    "Pool and gardens running down to the sea at Rosewood Phuket"
+   ],
+   [
+    "editorial_landscape",
+    "rosewood-phuket/g6",
+    "Rosewood Phuket's hillside and beach on Emerald Bay from the air"
+   ],
+   [
+    "editorial_landscape",
+    "rosewood-phuket/g2",
+    "A private pool above the treetops at Rosewood Phuket"
+   ],
+   [
+    "architecture",
+    "rosewood-phuket/g3",
+    "Pool pavilions set into the green hillside at Rosewood Phuket"
+   ],
+   [
+    "night",
+    "rosewood-phuket/g4",
+    "A pool pavilion lit at dusk, Rosewood Phuket"
+   ]
+  ],
+  "credit": "Photograph courtesy of Rosewood Hotels & Resorts"
+ },
+ {
+  "n": 7,
+  "stayId": "STY-2026-000586",
+  "staySlug": "four-seasons-tented-camp-golden-triangle",
+  "stayName": "Four Seasons Tented Camp Golden Triangle",
+  "palette": "golden-triangle",
+  "heroLine": "Fifteen tents where Thailand, Myanmar and Laos meet.",
+  "why": [
+   "Place. Bamboo jungle in Chiang Saen at the confluence of the Ruak and Mekong rivers, where Myanmar and Laos converge.",
+   "Elephants. My Elephant & I: walk with a herd and the camp's own mahouts through the grassland to the river.",
+   "Ease. Fifteen tents on decks over the Ruak and one two bedroom Explorer's Lodge, sold as all inclusive packages of two to four nights."
+  ],
+  "signals": [
+   [
+    "place",
+    "At the confluence of the Ruak and Mekong, where three countries meet."
+   ],
+   [
+    "privacy",
+    "Sixteen places to stay in all: fifteen tents and one lodge."
+   ],
+   [
+    "humanity",
+    "The camp's own mahouts lead the walk with the elephants."
+   ],
+   [
+    "access",
+    "Chiang Rai International Airport (CEI) is the nearest airport."
+   ],
+   [
+    "rarity",
+    "A tented camp at the meeting of Thailand, Myanmar and Laos."
+   ]
+  ],
+  "pathways": [
+   "where-the-wild-lives",
+   "into-the-green",
+   "rooted-in-place"
+  ],
+  "worth": "Four nights. The four night package covers meals, drinks, spa and exploration, and the elephants deserve more than one morning.",
+  "suits": [
+   "Couples (each tent takes up to three)",
+   "Families or small groups in the Explorer's Lodge, up to six",
+   "Wildlife-minded travellers",
+   "Travellers pairing the north with a beach in the south"
+  ],
+  "notSuit": [
+   "Travellers with only one night (packages start at two)",
+   "Travellers who want a pool with every room (only the Explorer's Lodge has one)"
+  ],
+  "continue": [
+   "stay:anantara-golden-triangle-chiang-rai",
+   "stay:amanpuri",
+   "pathway:where-the-wild-lives"
+  ],
+  "media": [
+   [
+    "hero",
+    "four-seasons-tented-camp-golden-triangle/hero",
+    "A tented lodge in dense jungle at sunset, Four Seasons Tented Camp Golden Triangle"
+   ],
+   [
+    "editorial_landscape",
+    "four-seasons-tented-camp-golden-triangle/g2",
+    "Cocktails over the fields and mountains of the Golden Triangle"
+   ],
+   [
+    "editorial_landscape",
+    "four-seasons-tented-camp-golden-triangle/g4",
+    "The Explorer's Lodge and its long pool in the jungle"
+   ],
+   [
+    "detail",
+    "four-seasons-tented-camp-golden-triangle/g3",
+    "A round wooden hot tub on a deck over green fields"
+   ],
+   [
+    "editorial_portrait",
+    "four-seasons-tented-camp-golden-triangle/g1",
+    "A treetop terrace surrounded by tropical forest"
+   ],
+   [
+    "night",
+    "four-seasons-tented-camp-golden-triangle/g8",
+    "The open-air bar under its thatched roof in the evening"
+   ]
+  ],
+  "credit": "Photograph courtesy of Four Seasons"
+ },
+ {
+  "n": 8,
+  "stayId": "STY-2026-000604",
+  "staySlug": "amanpulo",
+  "stayName": "Amanpulo",
+  "palette": "amanpulo",
+  "heroLine": "One island, one resort, and its own airstrip.",
+  "why": [
+   "Place. Pamalican, a small island in the Cuyo Archipelago ringed by white sand, with reefs that begin 300 metres offshore.",
+   "Access. Amanpulo's own twin turboprop flies from its lounge at Clark to the island's private airstrip in about 90 minutes.",
+   "Privacy. Forty three casitas and seventeen villas of one to four bedrooms, each villa with its own beach frontage, pool, private chef and butler."
+  ],
+  "signals": [
+   [
+    "place",
+    "Pamalican, in the Cuyo Archipelago, with reefs from 300 metres offshore."
+   ],
+   [
+    "privacy",
+    "Seventeen villas, each with its own beach frontage and pool."
+   ],
+   [
+    "access",
+    "Amanpulo's own flights from Clark land on the island's airstrip in about 90 minutes."
+   ],
+   [
+    "humanity",
+    "A private chef and butler with every villa."
+   ],
+   [
+    "rarity",
+    "The only resort on Pamalican, where green and hawksbill turtles nest."
+   ]
+  ],
+  "pathways": [
+   "between-tides",
+   "a-place-of-our-own",
+   "the-art-of-stillness"
+  ],
+  "worth": "Five nights. One for the reef, one for the kites or the turtles in season, and three for the island.",
+  "suits": [
+   "Couples",
+   "Families taking a villa",
+   "Divers and snorkellers",
+   "Kitesurfers, December to March"
+  ],
+  "notSuit": [
+   "Travellers who want to island hop by day",
+   "Travellers who want nightlife"
+  ],
+  "continue": [
+   "stay:banwa-private-island",
+   "stay:nay-palad-hideaway",
+   "pathway:between-tides"
+  ],
+  "media": [
+   [
+    "hero",
+    "amanpulo/hero",
+    "Pamalican's white sandbar and turquoise shallows from the air, Amanpulo"
+   ],
+   [
+    "editorial_landscape",
+    "amanpulo/g3",
+    "Pamalican's forest and reef from the air"
+   ],
+   [
+    "editorial_landscape",
+    "amanpulo/g10",
+    "The long white beach at Amanpulo"
+   ],
+   [
+    "editorial_portrait",
+    "amanpulo/g2",
+    "Casitas along the beach at Amanpulo"
+   ],
+   [
+    "architecture",
+    "amanpulo/g9",
+    "A villa pool from above, Amanpulo"
+   ],
+   [
+    "night",
+    "amanpulo/g5",
+    "A villa pool at dusk on Pamalican"
+   ]
+  ],
+  "credit": "Photograph courtesy of Aman"
+ },
+ {
+  "n": 9,
+  "stayId": "STY-2026-000605",
+  "staySlug": "banwa-private-island",
+  "stayName": "Banwa Private Island",
+  "palette": "banwa",
+  "heroLine": "A whole island off Palawan, for up to forty.",
+  "why": [
+   "Place. A private island in a protected marine sanctuary off Palawan, inside the UNESCO Palawan Biosphere Reserve.",
+   "Privacy. Six beachfront villas, each with a pool of spring water from the island's own artesian well, and the island taken whole.",
+   "Humanity. Banwa works with its Aquos Foundation on turtle conservation and has recorded its 10,000th hawksbill nesting."
+  ],
+  "signals": [
+   [
+    "place",
+    "A protected marine sanctuary in the UNESCO Palawan Biosphere Reserve."
+   ],
+   [
+    "privacy",
+    "Six beachfront villas and the whole island, for up to 40."
+   ],
+   [
+    "access",
+    "A direct helicopter transfer to the island."
+   ],
+   [
+    "humanity",
+    "The Aquos Foundation's hawksbill turtle work."
+   ],
+   [
+    "rarity",
+    "Tens of thousands of flying foxes leave Pagbu Island five minutes after sunset."
+   ]
+  ],
+  "pathways": [
+   "a-place-of-our-own",
+   "between-tides",
+   "off-the-map"
+  ],
+  "worth": "Seven nights. Enough for the house reef, the flying foxes at Pagbu at sunset, and days that belong to nobody else.",
+  "suits": [
+   "Families of any size",
+   "Groups of up to 40",
+   "Divers and snorkellers",
+   "Milestone celebrations"
+  ],
+  "notSuit": [
+   "Travellers on a short stay",
+   "Travellers who want other guests and restaurants"
+  ],
+  "continue": [
+   "stay:amanpulo",
+   "stay:nay-palad-hideaway",
+   "pathway:a-place-of-our-own"
+  ],
+  "media": [
+   [
+    "hero",
+    "banwa-private-island/g1",
+    "Banwa Private Island from the air, ringed by reef off Palawan"
+   ],
+   [
+    "editorial_landscape",
+    "banwa-private-island/hero",
+    "A beachfront villa on Banwa's white sand"
+   ],
+   [
+    "editorial_landscape",
+    "banwa-private-island/g2",
+    "Villas along the beach at Banwa Private Island"
+   ],
+   [
+    "architecture",
+    "banwa-private-island/g3",
+    "A spring water pool at a Banwa villa"
+   ],
+   [
+    "detail",
+    "banwa-private-island/g9",
+    "A hawksbill turtle hatchling on the sand at Banwa"
+   ],
+   [
+    "night",
+    "banwa-private-island/g5",
+    "Latitude restaurant lit in the evening"
+   ]
+  ],
+  "credit": "Photograph courtesy of Banwa Private Island"
+ },
+ {
+  "n": 10,
+  "stayId": "STY-2026-000010",
+  "staySlug": "amanwana",
+  "stayName": "Amanwana",
+  "palette": "amanwana",
+  "heroLine": "Seventeen tents in a national park on the Flores Sea.",
+  "why": [
+   "Place. A beach-fringed bay on Moyo Island, inside Moyo Satonda National Park, looking over the Flores Sea to Medang Island and the mountains of Sumbawa.",
+   "Wild. Whale sharks in Saleh Bay with a guide from a local conservation group, untouched reefs to dive, and waterfalls in the jungle behind the camp.",
+   "Privacy. Seventeen tents and full board; book ten or more and the camp is yours."
+  ],
+  "signals": [
+   [
+    "place",
+    "A bay inside Moyo Satonda National Park, on the Flores Sea."
+   ],
+   [
+    "privacy",
+    "Seventeen tents; ten or more make the camp your own."
+   ],
+   [
+    "access",
+    "Fly to Sumbawa Besar, then a 45 minute speedboat from Amanwana's own jetty."
+   ],
+   [
+    "humanity",
+    "Whale shark swims led by a local conservation guide."
+   ],
+   [
+    "rarity",
+    "A tented Aman inside a national park."
+   ]
+  ],
+  "pathways": [
+   "off-the-map",
+   "between-tides",
+   "where-the-wild-lives"
+  ],
+  "worth": "Five nights. One for the whale sharks, two for the reefs, one for the waterfalls, and one to do nothing at all.",
+  "suits": [
+   "Divers and snorkellers",
+   "Families or groups taking ten tents or more",
+   "Couples who want wilderness with Aman behind it",
+   "Travellers pairing Bali with the Flores Sea"
+  ],
+  "notSuit": [
+   "Travellers who want a private pool",
+   "Travellers who want a short transfer"
+  ],
+  "continue": [
+   "stay:bawah-reserve",
+   "stay:nikoi-island",
+   "pathway:off-the-map"
+  ],
+  "media": [
+   [
+    "hero",
+    "amanwana/hero",
+    "Moyo Island's forested coast and reef from the air, Amanwana"
+   ],
+   [
+    "editorial_landscape",
+    "amanwana/g2",
+    "A beach pavilion under the trees at Amanwana, on the Flores Sea"
+   ],
+   [
+    "editorial_landscape",
+    "amanwana/g3",
+    "Amanwana's jetty and boat over clear water"
+   ],
+   [
+    "detail",
+    "amanwana/g4",
+    "A whale shark in Saleh Bay"
+   ],
+   [
+    "editorial_portrait",
+    "amanwana/g1",
+    "Reef and shallows off Moyo Island"
+   ],
+   [
+    "night",
+    "amanwana/g10",
+    "Sunset through the trees on Moyo Island"
+   ]
+  ],
+  "credit": "Photograph courtesy of Aman"
+ },
+ {
+  "n": 11,
+  "stayId": "STY-2026-000645",
+  "staySlug": "bawah-reserve",
+  "stayName": "Elang Private Island, Bawah Reserve",
+  "palette": "elang",
+  "heroLine": "An island of its own, six lodges, in the Anambas.",
+  "why": [
+   "Place. Elang is one of Bawah's six islands in Indonesia's remote Anambas archipelago, with two beaches kept for Elang guests alone.",
+   "Privacy. Six standalone cliffside lodges, five of one bedroom and one of two, with a club house, an owner's lounge, a saltwater infinity pool and the Beach House restaurant, bought out whole.",
+   "Care. A personal butler in every lodge, the Kayu Spa, and Bawah's all inclusive days: meals, a spa treatment each night, yoga and the lagoons."
+  ],
+  "signals": [
+   [
+    "place",
+    "One of six islands in the Anambas, with two private beaches."
+   ],
+   [
+    "privacy",
+    "Six lodges for one party of up to 14."
+   ],
+   [
+    "access",
+    "An 80 minute seaplane from Batam that lands in the lagoon."
+   ],
+   [
+    "humanity",
+    "A personal butler in every lodge."
+   ],
+   [
+    "rarity",
+    "A private island inside a private island reserve."
+   ]
+  ],
+  "pathways": [
+   "a-place-of-our-own",
+   "between-tides",
+   "the-art-of-stillness"
+  ],
+  "worth": "Five nights. Bawah's minimum is three; the lagoons, the reefs and Elang's own beaches need five.",
+  "suits": [
+   "Families with children five and older",
+   "Groups of friends of up to 14",
+   "Milestone celebrations",
+   "Wellness-minded travellers"
+  ],
+  "notSuit": [
+   "Families with children under five (Bawah welcomes five and older)",
+   "Travellers who pack heavy (the seaplane allows 15 kg each)"
+  ],
+  "continue": [
+   "stay:amanwana",
+   "stay:nikoi-island",
+   "pathway:a-place-of-our-own"
+  ],
+  "media": [
+   [
+    "hero",
+    "bawah-reserve/elang-aerial-islands",
+    "Elang in the foreground with Bawah's islands and lagoons beyond, from the air"
+   ],
+   [
+    "editorial_landscape",
+    "bawah-reserve/elang-aerial-six-islands",
+    "Elang among the six islands of Bawah Reserve"
+   ],
+   [
+    "editorial_landscape",
+    "bawah-reserve/elang-pool-deck-lagoon",
+    "Elang's pool deck over the lagoon"
+   ],
+   [
+    "architecture",
+    "bawah-reserve/elang-aerial-jetty-club-house",
+    "Elang's jetty and Club House from the air"
+   ],
+   [
+    "detail",
+    "bawah-reserve/elang-beach-house",
+    "Sun loungers at Elang's Beach House"
+   ],
+   [
+    "night",
+    "bawah-reserve/elang-club-house-dusk",
+    "Elang's Club House and pool lit at dusk"
+   ]
+  ],
+  "credit": "Photograph courtesy of Bawah Reserve"
+ }
+]

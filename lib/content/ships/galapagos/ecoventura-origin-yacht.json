@@ -78,8 +78,8 @@
   "She is the first of the three, launched in 2016. On Itinerary B she is the yacht that visits Punta Vicente Roca, Rabida and Black Turtle Cove, and on A she spends Friday afternoon at Sombrero Chino."
  ],
  "hero": {
-  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecoventura-origin-yacht/hero",
-  "alt": "Ecoventura's Origin, an expedition yacht for 20 guests in the Galapagos"
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecoventura-origin-yacht/g2",
+  "alt": "One of Ecoventura's three identical expedition yachts"
  },
  "gallery": [
   {
@@ -88,9 +88,8 @@
    "credit": "Ecoventura"
   },
   {
-   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecoventura-origin-yacht/g2",
-   "alt": "One of Ecoventura's three identical expedition yachts",
-   "credit": "Ecoventura"
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecoventura-origin-yacht/hero",
+   "alt": "Ecoventura's Origin, an expedition yacht for 20 guests in the Galapagos"
   },
   {
    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/ecoventura-origin-yacht/g3",

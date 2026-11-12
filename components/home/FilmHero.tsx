@@ -82,8 +82,8 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-6 md:gap-10 lg:gap-16 items-end">
           <motion.div data-hero-copy initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.1, ease: EASE }}>
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{eyebrow}</p>
-            <h1 className="ledger-h1 lg:!text-[6rem] mt-3 md:mt-4 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)]">{h1}</h1>
-            <p className="text-[16px] md:text-xl text-white/85 mt-4 md:mt-5 max-w-xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]">{sub}</p>
+            <h1 className="ledger-h1 max-md:!text-[2.1rem] max-md:!leading-[1.02] lg:!text-[6rem] mt-3 md:mt-4 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)]">{h1}</h1>
+            <p className="text-[14.5px] leading-relaxed md:text-xl text-white/85 mt-3 md:mt-5 max-w-xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]">{sub}</p>
             <div className="mt-8 flex flex-wrap items-center gap-5">
               <a href="#volumes" className="inline-flex items-center h-11 px-7 bg-paper ledger-eyebrow !text-[11px] !text-ink hover:bg-white transition-colors shadow-[0_4px_18px_rgba(0,0,0,0.35)]">
                 Enter the Ledger

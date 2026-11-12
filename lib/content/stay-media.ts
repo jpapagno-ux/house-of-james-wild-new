@@ -18,6 +18,12 @@ export type FullFrame = { src: string; alt: string; caption: string; pos?: strin
 // slide; this is the lodge's canopy-suite aerial, upscaled.
 export const HERO_OVERRIDE: Record<string, string> = {
   "pacuare-lodge": big("jwco/site/stays/pacuare-lodge-canopy-aerial", true),
+  // the hero quality pass (James, 12 Nov 2026: "make sure they're quality, high res"): the stay's own sharper, wider
+  // photograph in place of a hero under 1,600 px wide
+  "awasi-patagonia": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82a351044_2daeaeaf4_6a220312f0f19d3777f7fd60_Cenit-Villas-Hero.webp",
+  "galapagos-safari-camp": big("jwco/stays/galapagos-safari-camp/g9", true),
+  "pearl-resort-vahine-private-island": big("gatherings/vahine-private-island-tahaa/vh-05", true),
+  "alila-ventana-big-sur": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ef40f3a77_4e70b316a_68e015831d1f143b6f7f1196_Alila_Ventana_Big_Sur_Dining2.avif",
 };
 
 const HAND: Record<string, FullFrame[]> = {

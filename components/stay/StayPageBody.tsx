@@ -66,6 +66,7 @@ import { ContinueBySea, StayBeforeYouSail } from "@/components/stays/IndonesiaPa
 import { founderProof, stampForStatus, statusLine, VETTED_UNVISITED, type HouseStatus } from "@/lib/ledger/status";
 import FounderProof from "@/components/record/FounderProof";
 import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
+import { EFStamp } from "@/components/exceptional-few/EFBadge";
 import { entryNo, roundelText, sealFor, volumeInk, volumeMark, VOLUME_STYLES } from "@/lib/volumes";
 import FromTheJournal from "@/components/journal/FromTheJournal";
 import { SessionsFor } from "@/components/workshops/SessionCard";
@@ -303,6 +304,14 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
             <h1 className="ledger-display text-[2.9rem] md:text-[6.4rem] leading-[0.95] mt-3">{s.name}</h1>
             <p className="ledger-display italic text-xl md:text-3xl text-white/90 mt-3">{[place?.name, s.country].filter(Boolean).join(", ")}</p>
             <div className="mt-8 flex flex-wrap items-center gap-5"><Link href={planHref} className="ledger-btn !border-white !text-white hover:!bg-white hover:!text-ink">Plan this journey</Link><span className="text-[11.5px] tracking-[0.18em] uppercase text-white/75">Ledger ID {s.ledgerId ?? "being filed"}</span></div>
+            {/* Every Exceptional Few entrance carries its numbered approval stamp and, beside it, the house's own Ledger
+                stamp (Founder favorite, Founder stayed, Founder inspected) whenever the record has one. Standard for
+                every designation, never set per page (James, 12 Nov 2026: "Shouldn't there be a stamp and a number? ...
+                make sure that's standard and frozen into the logic"). */}
+            <div className="mt-6 flex items-end gap-4 md:gap-6" aria-hidden="true">
+              <EFStamp no={ef.collectionNumber} size={112} rotate={-6} seed={ef.collectionNumber * 7 + 3} onPhoto />
+              {stamp && <FounderStamp kind={stamp} volume="stays" ink="#F3EFE9" year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={104} />}
+            </div>
           </DriftFrame>
         ) : stayPage ? <StayHero editorial={stayPage.editorial} slides={slides.map((x) => ({ url: x.url, alt: x.alt, source: "library" as const }))} tag={markOn(`stay:${s.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`stay:${s.slug}`] ?? "stamp"} image={slides[1]?.url ?? slides[0]?.url} script={SCRIPT[`stay:${s.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? slides[0]?.url} script={note.script} line={note.line} where={(s.country ?? "The Ledger")} when={yearOf(s.ledgerId)} label="From the house" href="#why" />) : undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} /> : undefined}

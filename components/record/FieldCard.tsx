@@ -33,7 +33,7 @@ export default function FieldCard({ facts, name, ledgerId }: { facts: [string, s
             <dt className="text-[10.5px] tracking-[0.14em] uppercase font-medium" style={{ color: `color-mix(in srgb, ${ink} 80%, #6B635A)` }}>{k}</dt>
             <dd className="ledger-display text-[1.12rem] md:text-[1.2rem] leading-snug">
               {k === "Ledger ID" ? (
-                <span className="flex items-center justify-between gap-3"><span className="text-house tabular-nums tracking-[0.02em]">{v}</span>{no && <span aria-hidden="true" className="-my-3 shrink-0"><InkStamp volume="stays" no={no} size={58} rotate={-8} /></span>}</span>
+                <span className="flex items-center justify-between gap-3"><span className="text-house tabular-nums whitespace-nowrap text-[1rem] md:text-[1.2rem]">{v}</span>{no && <span aria-hidden="true" className="-my-3 shrink-0"><InkStamp volume="stays" no={no} size={52} rotate={-8} /></span>}</span>
               ) : k === "Best suited to" ? (
                 <span className="flex flex-wrap gap-1.5 font-sans">{v.split(/,\s*/).map((x) => <span key={x} className="text-[12px] leading-none px-2.5 py-1.5 border" style={{ borderColor: `color-mix(in srgb, ${ink} 35%, transparent)` }}>{x}</span>)}</span>
               ) : route ? (

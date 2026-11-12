@@ -28,7 +28,7 @@ import PublishedFares from "./PublishedFares";
 import { partnerForShip, partnerPath } from "@/lib/content/partners";
 import LengthFares from "./LengthFares";
 import CharterRates from "./CharterRates";
-import FounderProof from "@/components/record/FounderProof";
+import FounderProof, { FOUNDER_EYEBROW } from "@/components/record/FounderProof";
 import { shipEntrance } from "./ShipEntrance";
 import type { ExceptionalFew } from "@/lib/content/exceptional-few";
 
@@ -173,7 +173,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         nav,
         cta: { label: "Plan with James", href: plan, house: true },
         // Each fact once: route, nights, guests and ages live in the glance bar, cabins in Cabins.
-        overview: { quote: s.quote ? t(s.quote) : undefined, answer: t(s.answer), facts: s.facts.filter(([k]) => !/route|guest|child|age|cabin|suite/i.test(k)).map(([k, v]) => [k, t(v)] as [string, string]), paragraphs: s.overview.map(t) },
+        overview: { lead: s.tagline ? t(s.tagline) : null, quote: s.quote ? t(s.quote) : undefined, answer: t(s.answer), facts: s.facts.filter(([k]) => !/route|guest|child|age|cabin|suite/i.test(k)).map(([k, v]) => [k, t(v)] as [string, string]), paragraphs: s.overview.map(t) },
         itinerary: { map, itineraries: s.itineraries.map((i) => ({ ...i, name: t(i.name), direction: t(i.direction), days: i.days.map((d) => ({ ...d, title: t(d.title), place: t(d.place), summary: t(d.summary) })) })), eyebrow: "The voyage, day by day", title: `Where Does ${s.name} Sail, Day by Day?`, intro: `${extra.itineraryTerrain && !map ? `${s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick an itinerary and fly" : "Fly"} it in 3D over the islands, with the line drawn day by day as the ship sails it.` : extra.itineraryTerrain ? `${s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick an itinerary and fly it in 3D over the islands, or" : "Fly it in 3D over the islands, or"} switch to the itinerary chart, which sails the route day by day as you scroll the log.` : s.itineraries.filter((i) => i.days.length).length > 1 ? "Pick a direction, then scroll the log: the chart sails the route day by day as you read." : "Scroll the log and the chart sails the route day by day as you read."}${stopsOnly ? ` ${s.operator} lists the stops of these routes in order but publishes no day numbers or length, so they are numbered as stops, a guide only.` : ""}`, routesNote: s.routesNote ? t(s.routesNote) : undefined, combinations: s.combinations, terrain: extra.itineraryTerrain },
         film: extra.heroFilm || entrance ? null : { film: s.film, poster: s.gallery[1] ?? s.hero, credit },
         faqs: s.faqs.map(([q, a]) => [t(q), t(a)] as [string, string]),
@@ -186,7 +186,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         opening: extra.opening, surface: extra.surface, tones: extra.tones,
       }}
       lead={<>
-        {s.founder && <FounderProof proof={t(s.founder.proof)} eyebrow={t(s.founder.eyebrow)} className="mt-10 max-w-3xl" />}
+        {s.founder && <FounderProof proof={t(s.founder.proof)} eyebrow={t(s.founder.eyebrow) || FOUNDER_EYEBROW.voyages} signed className="max-w-3xl" />}
         {extra.top}
         {extra.opening ? (
           // Why she's here, who she suits (and think twice if), the verdict: the stays' band, in cruise words (James, 11 Nov 2026)

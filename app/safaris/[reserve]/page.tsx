@@ -2,7 +2,7 @@ import OfferPanel from "@/components/ledger/OfferPanel";
 import { offersFor } from "@/lib/content/offers/offers";
 import RateCardSection from "@/components/booking/RateCardSection";
 import Link from "next/link";
-import FounderProof from "@/components/record/FounderProof";
+import FounderProof, { FOUNDER_EYEBROW } from "@/components/record/FounderProof";
 import { founderProof } from "@/lib/ledger/status";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -102,7 +102,7 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
   return (
     <>
       <SiteHeader overlay />
-      <main id="main" className="overflow-x-clip">
+      <main id="main" className="overflow-x-clip design-review">
         <RecordHero slides={slides} tag={markOn(`reserve:${r.slug}`) ? <HeroMark style="stamp" image={slides[1]?.url ?? r.stay.hero} script={note.script} line={note.line} where={r.area} when={yearOf(r.rsv)} label="From the house" href="#why" /> : undefined} image={{ url: r.stay.hero, alt: `${r.name}, ${r.area}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`Wild & Co Safaris · Reserve · ${r.area} · ${r.rsv}`} title={r.name} tagline={r.stay.tagline?.replace(/^"|"$/g, "") ?? undefined}
           glance={<GlanceBar glance={{ ...(from ? { price: { amount: usd(from), basis: "from, per person per night" } } : {}), facts: [["On the reserve", `${r.camps.length} camps & residences`], ["Best months", r.stay.bestMonths ?? "Ask James"], ["Fly into", r.stay.airport ?? "Ask James"]], cta: { label: "See the camps", href: "#camps" } }} />} />
@@ -110,8 +110,8 @@ export default async function ReservePage({ params }: { params: Promise<{ reserv
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <WhyFilm title={why[0]?.title ?? `Why ${r.name} Earned Its Page`} blocks={why.map((w, i) => ({ title: i === 0 && why[0]?.title ? null : w.title, body: w.body }))} paragraphs={why.length ? [] : r.stay.onlyHere.slice(0, 2)} suited={suited} status={statusLine(r.stay.status as never, r.stay.statusDate) ? <p className="ledger-eyebrow ledger-crimson">{statusLine(r.stay.status as never, r.stay.statusDate)}</p> : null} name={r.name} video={VIDEOS[`reserve:${r.slug}`] ?? null} poster={slides[1]?.url ?? r.stay.hero} planHref={planHref} />
-          <Overview quote={r.stay.quote ?? undefined} answer={answer} facts={facts} paragraphs={r.stay.onlyHere} />
-          {founderProof(r.name, r.stay.status as never, r.stay.statusDate) && <FounderProof proof={founderProof(r.name, r.stay.status as never, r.stay.statusDate)!} note={r.stay.founderNote} className="mt-10 max-w-3xl" />}
+          <Overview quote={r.stay.quote ?? undefined} answer={answer} facts={facts} paragraphs={r.stay.onlyHere} lead={r.stay.tagline} name={r.name} ledgerId={r.stay.ledgerId} volume="safaris" />
+          {founderProof(r.name, r.stay.status as never, r.stay.statusDate) && <FounderProof proof={founderProof(r.name, r.stay.status as never, r.stay.statusDate)!} note={r.stay.founderNote} signed eyebrow={FOUNDER_EYEBROW.safaris} year={r.stay.statusDate ? Number(r.stay.statusDate.slice(0, 4)) : null} className="max-w-3xl" />}
 
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro="The short list of reasons it made the Ledger, and a few you only notice on the second day." icon="frond" items={apart} />}
           {days.length > 0 && r.slug !== "tswalu-reserve" && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}

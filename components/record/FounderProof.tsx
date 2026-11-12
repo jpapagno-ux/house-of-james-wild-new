@@ -7,6 +7,17 @@ import { FOUNDER_YEARS, SITE } from "@/lib/site";
 // The founder's testimony, in one place for every record page: the specific
 // proof for this page (he went, when, with whom) and the standing credential.
 // A visible, plain-text fact for readers and for AI answers alike.
+/** The founder's note, in each volume's own words (James, 12 Nov 2026: "cruise specific in the language ... travel by
+ *  land specific ... family generational residences, and safaris, different language"). */
+export const FOUNDER_EYEBROW = {
+  stays: "Vetted in person · the founder\u2019s testimony",
+  safaris: "On the ground · the founder\u2019s field note",
+  gatherings: "Under one roof · the founder\u2019s note on the house",
+  voyages: "Aboard · the founder\u2019s log",
+  europe: "Vetted in person · the founder\u2019s testimony",
+  overland: "On the road · the founder\u2019s route note",
+} as const;
+
 export default function FounderProof({ proof, className = "", seal, note, eyebrow = "Vetted in person · the founder\u2019s testimony", signed = false, year, mark }: { proof: string; className?: string; seal?: string | null; note?: string | null; /** Override only where he has not been (a destination filed from research), so the line never claims a visit. */ eyebrow?: string;
   /** the signed note (James, 12 Nov 2026: "Founder testimony as a signed note ... on the same tint, with fewer words") */
   signed?: boolean; year?: number | null; /** the record's Ledger stamp, pressed on the note when there is no founder seal */ mark?: React.ReactNode }) {

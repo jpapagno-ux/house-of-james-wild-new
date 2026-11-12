@@ -451,7 +451,7 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           {g.slidesFromStay && slides[0]?.credit && <p className="mt-2 font-mono text-[10.5px] tracking-[0.12em] uppercase ledger-muted">Hero photographs · {slides[0].credit}</p>}
-          <Overview answer={g.answer} facts={g.facts} />
+          <Overview answer={g.answer} facts={g.facts} card={false} />
           <FounderProof proof={g.proof} eyebrow={g.proofEyebrow} className="mt-10 max-w-3xl" />
 
           {map}

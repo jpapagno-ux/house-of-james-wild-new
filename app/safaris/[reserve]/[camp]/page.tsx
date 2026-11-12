@@ -31,7 +31,7 @@ import { GalleryMosaic, GlanceBar, LocationBlock } from "@/components/record/Fra
 import { CardRail, FounderStamp, Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import { KIND_LABEL, RESERVES, campBySlug, campReady, campStatus, reserveBySlug, usd } from "@/lib/content/reserves";
 import { stampForStatus } from "@/lib/ledger/status";
-import FounderProof from "@/components/record/FounderProof";
+import FounderProof, { FOUNDER_EYEBROW } from "@/components/record/FounderProof";
 import { InkStamp, Roundel } from "@/components/ledger/VolumeKit";
 import { entryNo, roundelText, sealFor, VOLUME_STYLES } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
@@ -93,7 +93,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
   return (
     <>
       <SiteHeader overlay />
-      <main id="main" className="overflow-x-clip">
+      <main id="main" className="overflow-x-clip design-review">
         <RecordHero slides={slides} tag={markOn(`camp:${r.slug}/${c.slug}`) ? (verdict ? <HeroMark style={HERO_MARK[`camp:${r.slug}/${c.slug}`] ?? "stamp"} image={slides[1]?.url ?? c.hero ?? undefined} script={SCRIPT[`camp:${r.slug}/${c.slug}`]} line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : <HeroMark style="stamp" image={slides[1]?.url ?? c.hero ?? undefined} script={note.script} line={note.line} where={r.name.replace(/ Reserve$/, "")} when={yearOf(r.rsv)} label="From the house" href="#why" />) : undefined} image={{ url: c.hero as string, alt: `${c.name}, ${r.name}, ${r.stay.country ?? "South Africa"}` }}
           eyebrow={`${r.name} · ${KIND_LABEL[c.kind]} · ${r.area}`} title={c.name} tagline={c.intro.split(/(?<=\.)\s/)[0] || undefined}
           stamp={stamp ? <FounderStamp kind={stamp} year={Number(st!.date.slice(0, 4))} date={st!.date} volume="safaris" /> : undefined}
@@ -103,8 +103,8 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <p className="mt-6 inline-flex flex-wrap items-center gap-2 border ledger-border px-3 py-2 text-[14px]"><span className="ledger-eyebrow ledger-crimson">Part of {r.name}</span><Link href={rpath} className="underline underline-offset-4 decoration-crimson/50 hover:ledger-crimson">See all {r.camps.length} camps on the reserve</Link></p>
           <WhyFilm title={`Why ${c.name} Earns Its Place on ${r.name}`} paragraphs={paragraphs.length ? paragraphs : [answer]} suited={suited} status={st ? <p className="ledger-eyebrow ledger-crimson">{st.line}</p> : null} name={c.name} video={VIDEOS[`camp:${r.slug}/${c.slug}`] ?? null} poster={slides[1]?.url ?? c.hero} planHref={planHref} note={verdict ? <MarginNote line={verdict.text[0]} where={verdict.where} when={verdict.when} /> : undefined} />
-          <Overview answer={answer} facts={facts} />
-          {st && <FounderProof proof={`${st.line}.`} seal={sealFor(stamp)} className="mt-10 max-w-3xl" />}
+          <Overview answer={answer} facts={facts} lead={c.intro.split(/(?<=\.)\s/)[0] || null} name={c.name} volume="safaris" />
+          {st && <FounderProof proof={`${st.line}.`} seal={sealFor(stamp)} signed eyebrow={FOUNDER_EYEBROW.safaris} year={r.stay.statusDate ? Number(r.stay.statusDate.slice(0, 4)) : null} className="max-w-3xl" />}
           {apart.length > 0 && <ImageAccordion id="features" eyebrow="What sets it apart" title="Why It's Not Just Another Pretty Place" intro="The short list of reasons it made the Ledger, and a few you only notice on the second day." icon="frond" items={apart} />}
           {days.length > 0 && <ImageAccordion id="experiences" eyebrow="What you'll do" title="How to Fill the Days (or Not)" intro="Do all of it, some of it, or none of it. Experienced travellers usually pick two and leave the afternoons alone." icon="mountain-sun" items={days} start={null} />}
           {c.rooms.length > 0 && (

@@ -24,7 +24,7 @@ export default function FieldCard({ facts, name, ledgerId }: { facts: [string, s
   const no = entryNo(ledgerId ?? null);
   return (
     <dl className="relative overflow-hidden px-5 md:px-7 py-2 text-[15px]" aria-label={`${name} at a glance`}
-      style={{ background: `color-mix(in srgb, ${ink} 7%, #FFFFFF)`, boxShadow: `inset 0 0 0 1px color-mix(in srgb, ${ink} 18%, transparent)` }}>
+      style={{ background: `color-mix(in srgb, ${ink} 10%, #FFFFFF)`, boxShadow: `inset 0 0 0 1px color-mix(in srgb, ${ink} 22%, transparent)` }}>
       <span aria-hidden="true" className="absolute left-0 top-0 bottom-0 w-[3px]" style={{ background: ink, opacity: 0.55 }} />
       {facts.map(([k, v]) => {
         const route = k === "Airport" ? routeOf(v) : null;

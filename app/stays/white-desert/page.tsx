@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
+import FounderProof from "@/components/record/FounderProof";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import JsonLd from "@/components/ledger/JsonLd";
 import Pic from "@/components/opening/Pic";
@@ -43,7 +44,8 @@ export default function WhiteDesertPage() {
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
 
-          <Overview answer={WD.answer} lead={WD.tagline} facts={WD.facts} name={WD.name} volume="stays" />
+          <Overview answer={WD.answer} lead={WD.tagline} facts={WD.facts} name={WD.name} ledgerId="STY-2026-000647" volume="stays" />
+          <FounderProof proof={WD.founder.proof} note={WD.founder.note} signed year={2026} eyebrow="Founder vetted · not yet visited" className="max-w-3xl" />
 
           <section id="flight" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10">
             <SectionHead eyebrow="The way in" title="Cape Town to the Ice" icon="mountain-sun" intro="No ship and no Drake Passage: White Desert flies its guests due south to its own runway of blue ice." />

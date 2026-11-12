@@ -15,6 +15,12 @@ export const WD = {
   tagline: "Three camps of six suites on the ice of Queen Maud Land, five and a half hours' flight south of Cape Town",
   answer:
     "White Desert is the only way James Wild & Co sends guests into Antarctica's interior rather than to its coast. Between November and February it flies guests from Cape Town to its own blue ice runway at Wolf's Fang, about five and a half hours and 4,220 km south, and keeps three camps of six heated pods each: Whichaway, Echo and Explorer. Trips run from a single day on the ice at US $16,500 to the South Pole from US $95,000 per person sharing, as published for the 2026 to 2027 season. Ages 10 to 85; solo travellers, families and groups taking a camp whole are welcome. Plan it with James.",
+  // James, 12 Nov 2026: "it's founder vetted. I haven't been yet ... mark it as quite a remarkable experience. I'm
+  // looking forward to going myself and helping anybody that wants to consider this experience of a lifetime."
+  founder: {
+    proof: "James has vetted White Desert and filed it in the Ledger. He has not been yet, and says so.",
+    note: "Quite a remarkable experience, and one I'm looking forward to making myself. Until then, I'm here to help anyone considering it. This is the experience of a lifetime.",
+  },
   hero: { url: wd("wd03"), alt: "Wolf's Fang and the nunataks of Queen Maud Land rising from the ice, from the air" },
   flight: [
     ["From", "Cape Town, South Africa"],
@@ -25,12 +31,13 @@ export const WD = {
     ["On the ice", "About -5°C / 23°F on average in summer, with 24 hours of daylight"],
   ] as [string, string][],
   facts: [
-    ["Ledger ID", "Being filed"],
+    ["Ledger ID", "STY-2026-000647"],
     ["Season", "November to February, the polar summer"],
     ["Camps", "Whichaway, Echo and Explorer, six suites each"],
     ["Guests", "Up to 12 a camp; ages 10 to 85"],
     ["Best suited to", "Explorers, Couples & honeymooners, Families & generations, Solo travellers"],
     ["From · To", "Cape Town (CPT) · Wolf's Fang runway"],
+    ["The Ledger", "Founder vetted · not yet visited · 2026"],
   ] as [string, string][],
   camps: [
     {

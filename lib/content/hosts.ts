@@ -82,6 +82,33 @@ const PARTNER_HOSTS: Record<string, { state: HostConnect; host?: Host }> = Objec
 // SAMPLE host cards (sample: true): roles only, no names, until each property
 // confirms who takes the call. Topics come from the Ledger record.
 export const HOSTS: Record<string, { state: HostConnect; host?: Host }> = {
+  // Sample host cards for James's review (James, 12 Nov 2026: "Place section example for hotel host so we can add a few
+  // real ones ... viceroy Bali ... and Tanah gajah"). The role and topics are the house's; the person, title and
+  // photograph are added once the hotel names its host.
+  "stay:viceroy-bali": { state: "available", host: {
+    name: "Viceroy Bali Guest Relations", role: "Your host · Ubud", sample: true, seats: 6, photo: null,
+    tz: "Asia/Makassar", place: "Ubud, Bali", zoneLabel: "Central Indonesia Time (UTC+8)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=viceroy-bali`,
+    topics: [
+      "The pool villas side by side, and which has the valley view you want",
+      "What the rate includes and what's extra: the spa, yoga, helicopter transfers and tours",
+      "Your dates against the dry season, and Ubud's festival days",
+      "Getting there: by car from Ngurah Rai, or by helicopter to the private helipad",
+      "Children, celebrations, dietary needs, and anything that keeps you up at night",
+    ],
+  } },
+  "stay:tanah-gajah": { state: "available", host: {
+    name: "Tanah Gajah Guest Relations", role: "Your host · Ubud", sample: true, seats: 6, photo: null,
+    tz: "Asia/Makassar", place: "Ubud, Bali", zoneLabel: "Central Indonesia Time (UTC+8)",
+    calendlyUrl: `${GROUP_CALENDLY}?property=tanah-gajah`,
+    topics: [
+      "The suites and villas side by side, up to the Hadiprana Estate, and which suits your party",
+      "What the rate includes and what's extra: transfers, yoga, the balloon, the Kecak evening",
+      "Your dates against the dry season",
+      "Getting there: the included private transfer from Ngurah Rai, and the free car into Ubud",
+      "Children, celebrations, dietary needs, and anything that keeps you up at night",
+    ],
+  } },
   "stay:leeu-estates": { state: "available", host: {
     name: "Leeu Estates Guest Relations", role: "Your host · Franschhoek", sample: true, seats: 6,
     tz: "Africa/Johannesburg", place: "Franschhoek", zoneLabel: "South Africa Standard Time (UTC+2)",

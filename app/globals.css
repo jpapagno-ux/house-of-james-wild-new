@@ -775,3 +775,14 @@ li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in s
 /* Tone cards (components/hub/ToneCard.tsx): the arrow cell fills with the card's own accent on hover. */
 .jw-tone-card:hover [style*="--a"] > svg { color: #FFFFFF; }
 .jw-tone-card:hover span[aria-hidden="true"][style*="--a"] { background: var(--a); }
+
+/* The design review (James, 12 Nov 2026: "taking some of the tints and the colors and blending in through the whole
+   page"): on the stays under review, the overview, the days and the map sit on a faint wash of the page's own colour
+   (The Exceptional Few's light earth, or the stay's pathway ink), full bleed, alternating with the plain surface. */
+.design-review #overview, .design-review #experiences, .design-review #location {
+  --dr-wash: color-mix(in srgb, var(--ef-earth, var(--tone-path, #2E2B28)) 6%, transparent);
+  background: var(--dr-wash); box-shadow: 0 0 0 100vmax var(--dr-wash); clip-path: inset(0 -100vmax);
+  padding-bottom: 3.5rem;
+}
+.design-review #experiences, .design-review #location { border-top-color: transparent !important; }
+@media (min-width: 768px) { .design-review #overview, .design-review #experiences, .design-review #location { padding-bottom: 5rem; } }

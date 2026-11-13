@@ -77,7 +77,9 @@ const tv = (await table("Timeless Voyages")).filter((f) => f.publication_status 
   id: f.timeless_voyages_id, vesselSlug: f.vessel_slug ?? null, vesselName: f.vessel_name ?? null, operator: f.operator ?? null,
   collectionNumber: f.collection_number ?? 0, ledgerId: f.ledger_id ?? null, sailingStatus: f.sailing_status ?? "sailing", launchDate: f.launch_date ?? null,
   signatureEdition: !!f.signature_edition, heroLine: f.hero_line ?? null, whyItBelongs: paras(f.why_it_belongs),
-  before: refs(f.before_refs), beyond: refs(f.beyond_refs),
+  before: refs(f.before_refs), beyond: refs(f.beyond_refs), stamp: f.stamp ?? null,
+  // A saving, in the operator's own words and code; hidden once its book-by date passes (lib/dates.ts).
+  savings: f.savings_language ? { code: f.savings_code ?? null, text: f.savings_language.trim(), bookBy: f.savings_book_by ?? null, sailBy: f.savings_sail_by ?? null } : null,
 })).sort((a, b) => a.collectionNumber - b.collectionNumber);
 const badTv = tv.filter((t) => !isShip(t.vesselSlug));
 if (badTv.length) { console.error(`Timeless Voyages rows whose vessel_slug is not a registry ship: ${badTv.map((t) => t.id).join(", ")}`); process.exit(1); }

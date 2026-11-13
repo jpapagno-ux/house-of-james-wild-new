@@ -1,4 +1,5 @@
 import { Check, Minus, ChevronDown } from "lucide-react";
+import Cite from "@/components/ledger/Cite";
 import Pic from "@/components/opening/Pic";
 import { SectionHead } from "@/components/record/Sections";
 import { isPast } from "@/lib/dates";
@@ -127,7 +128,7 @@ export default function RoomTypes({ name, data, quote, eyebrow = "Rooms & rates"
 
       <ol className="mt-6 grid gap-1.5 text-[12.5px] leading-relaxed ledger-muted list-none">
         {data.notes.map((n, i) => <li key={n} className="flex gap-2"><span className="tabular-nums shrink-0" style={{ color: path }}>{i + 1}.</span><span>{n}</span></li>)}
-        <li className="flex gap-2"><span className="shrink-0" aria-hidden="true">·</span><span>Source: <a href={data.source.url} rel="nofollow noopener" target="_blank" className="underline underline-offset-2">{data.source.label}</a>. {data.credit}.</span></li>
+        <li className="flex gap-2"><span className="shrink-0" aria-hidden="true">·</span><span>Source: <Cite href={data.source.url}>{data.source.label}</Cite>. {data.credit}.</span></li>
       </ol>
     </section>
   );

@@ -1,4 +1,5 @@
 import type React from "react";
+import Cite from "@/components/ledger/Cite";
 import Image from "next/image";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
@@ -239,7 +240,7 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
     <>
           <section className="mt-10 text-[13px] ledger-muted" aria-label="Sources">
             <p className="ledger-eyebrow">Sources</p>
-            <ul className="mt-2 space-y-1">{g.sources.map((s) => <li key={s.url}><a href={s.url} {...(s.url.startsWith("/") ? {} : { target: "_blank", rel: "noopener" })} className="underline underline-offset-4 hover:ledger-crimson">{s.title}</a></li>)}</ul>
+            <ul className="mt-2 space-y-1">{g.sources.map((s) => <li key={s.url}><Cite href={s.url}>{s.title}</Cite></li>)}</ul>
           </section>
     </>
   );
@@ -316,7 +317,7 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
                     <div key={k}>
                       <dt className="ledger-eyebrow">{k}</dt>
                       <dd className="mt-1 text-[14.5px] leading-snug">{v}</dd>
-                      <dd className="mt-1 text-[11.5px] ledger-muted">Source: {extras!.factSources[k].map((src, i) => <span key={src.url}>{i > 0 ? "; " : ""}<a href={src.url} {...(src.url.startsWith("/") ? {} : { target: "_blank", rel: "noopener" })} className="underline underline-offset-4 hover:ledger-crimson">{src.title}</a></span>)}</dd>
+                      <dd className="mt-1 text-[11.5px] ledger-muted">Source: {extras!.factSources[k].map((src, i) => <span key={src.url}>{i > 0 ? "; " : ""}<Cite href={src.url}>{src.title}</Cite></span>)}</dd>
                     </div>
                   ))}
                 </dl>

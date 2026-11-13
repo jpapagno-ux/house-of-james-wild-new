@@ -102,7 +102,7 @@ export default function WhiteDesertPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-[13px] ledger-muted">Rates per person sharing, from <a href="https://white-desert.com/prices" rel="nofollow noopener" target="_blank" className="underline underline-offset-2">white-desert.com</a>, read 12 November 2026. Where a trip runs from Explorer Camp as well, the lower figure is Explorer&rsquo;s. James confirms the rate and the dates before you book.</p>
+            <p className="mt-4 text-[13px] ledger-muted">Rates per person sharing, from white-desert.com, read 12 November 2026. Where a trip runs from Explorer Camp as well, the lower figure is Explorer&rsquo;s. James confirms the rate and the dates before you book.</p>
           </section>
 
           <section id="how" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10">

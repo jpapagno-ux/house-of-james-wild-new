@@ -1,4 +1,5 @@
 import Pic from "@/components/opening/Pic";
+import Cite from "@/components/ledger/Cite";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight } from "lucide-react";
@@ -92,7 +93,7 @@ export default async function CollectionPage({ params }: P) {
             </dl>
           </div>
           {c.partner && (
-            <p className="mt-2 text-[14px] ledger-muted"><span className="ledger-eyebrow !text-[11px] mr-2">{c.partner.eyebrow}</span>{c.partner.line} <a href={c.partner.creditUrl} className="underline underline-offset-2 hover:text-ink" rel="noopener">{c.partner.credit}</a>.</p>
+            <p className="mt-2 text-[14px] ledger-muted"><span className="ledger-eyebrow !text-[11px] mr-2">{c.partner.eyebrow}</span>{c.partner.line} <Cite href={c.partner.creditUrl}>{c.partner.credit}</Cite>.</p>
           )}
 
           {c.partner ? (

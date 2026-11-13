@@ -10,6 +10,16 @@ export type WideFilm =
 
 export const STAY_FILMS: Record<string, WideFilm> = {
   // Casali di Casole's own estate film (47 s, 1080p) from casalidicasole.com, full screen for James's presentation (12 Nov 2026).
+  // Wymara's own resort film (97 s, 1080p) from wymara.com (13 Nov 2026).
+  wymara: {
+    kind: "mp4",
+    src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/wymara/film.mp4`,
+    srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/wymara/film.mp4`,
+    poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/wymara/film.jpg`,
+    title: "Wymara Resort + Villas, Turks and Caicos",
+    credit: "Film courtesy of Wymara Resort + Villas",
+    hero: true,
+  },
   "casali-di-casole": {
     kind: "mp4",
     src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/casali-di-casole/film-estate.mp4`,

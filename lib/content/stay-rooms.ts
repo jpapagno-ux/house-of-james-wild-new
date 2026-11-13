@@ -7,7 +7,7 @@
 // never shown. Anything the brand does not publish is left out, never filled in. No dashes in public copy.
 // Photographs: the brand's own, in Cloudinary with credit. A room with no brand photograph shows none.
 
-export type Money = { currency: "USD" | "ZAR"; amount: number };
+export type Money = { currency: "USD" | "ZAR" | "AUD" | "EUR"; amount: number };
 export type Season = { key: string; label: string; dates: string; /** last night of the season, ISO; past seasons drop out */ to: string };
 export type RoomRate = { season: string; rate: number; extra?: string };
 export type RoomType = {
@@ -386,9 +386,40 @@ const ROOMS: Record<string, StayRooms> = {
     notes: ["Rates are Bawah's published 2026 to 2027 rates in US dollars, from bawahreserve.com/rates and the Trade Factsheet August 2026, read 11 Nov 2026; prices from, based on two adults per room.", "Minimum three nights; five nights 27 Dec 2026 to 5 Jan 2027, 1 to 31 Aug 2027 and 28 Dec 2027 to 5 Jan 2028; four nights 4 to 12 Feb and 20 Mar to 3 Apr 2027.", "Children five and older; extra bed US$600 an adult, US$450 a child aged 5 to 12, a night.", "Stay 7 Pay 6 runs on set dates in 2026 and 2027; James confirms it for your dates.", "The house confirms the rate, what it includes and the deposit and cancellation terms with your quote."],
     source: { label: "bawahreserve.com", url: "https://www.bawahreserve.com/rates/" }, credit: "Photographs courtesy of Bawah Reserve",
   },
+  "orpheus-island-lodge": {
+    intro: "Fourteen rooms, suites and villas, all facing the Coral Sea, for no more than 28 guests. All inclusive, on a two night minimum.",
+    currency: "AUD", basis: "per room a night, all inclusive", seasons: [],
+    rooms: [
+      { name: "North Beachfront Room", facts: ["King bed", "Outdoor bath and shower"], features: ["Coral Sea views through the palms", "Renovated, reopened July 2026"], rates: [] },
+      { name: "North Beachfront Suite", facts: ["King bed", "Lounge", "Outdoor bath and shower"], features: ["Adjoining lounge facing the Coral Sea"], rates: [] },
+      { name: "North Beachfront Villa", facts: ["Two king bedrooms", "Two bathrooms", "Lounge"], features: ["Outdoor bath and shower", "For family or friends travelling together"], rates: [], image: { id: "jwco/stays/orpheus-island-lodge/o03", alt: "A villa living room opening to the garden" } },
+      { name: "South Beachfront Room", facts: ["King bed", "Bath"], features: ["In tropical gardens, a stone's throw from the water"], rates: [] },
+      { name: "South Beachfront Suite", facts: ["King bed", "Lounge", "Bath"], features: ["Enclosed garden terrace over the Coral Sea", "Courtyard with a freestanding bathtub"], rates: [] },
+    ],
+    included: ["Three meals a day", "Australian wines, beers, spirits and soft drinks", "All-inclusive minibar and snacks", "Motorised dinghies, paddleboards, kayaks and catamarans", "Fishing and snorkelling gear", "A daily curated Orpheus experience", "Sunsuits in stinger season"],
+    excluded: ["Helicopter or boat transfers", "Reef charters and bespoke experiences", "Gwandalan Day Spa treatments", "Premium wines beyond the selection"],
+    notes: ["Orpheus publishes no nightly rates; James quotes your dates.", "Two night minimum; three to four recommended. Guests of all ages welcome.", "The whole lodge can be booked for exclusive use."],
+    source: { label: "orpheus.com.au", url: "https://www.orpheus.com.au/stay/" }, credit: "Photographs courtesy of Orpheus Island Lodge",
+  },
+  "pelorus-private-island": {
+    intro: "One residence of five suites for up to 11 guests, and the island always yours, however many suites you take. Fully hosted and all inclusive.",
+    currency: "AUD", basis: "per night, exclusive use of the island",
+    seasons: [{ key: "all", label: "2026 to 2027", dates: "From, excluding festive surcharges", to: "2027-12-31" }],
+    rooms: [
+      { name: "One suite, up to two guests", facts: ["The whole island for two"], features: ["Private chef, host and guides"], rates: [{ season: "all", rate: 18500 }], image: { id: "jwco/stays/pelorus-private-island/p10", alt: "A suite opening to palms and the Coral Sea" } },
+      { name: "Two suites, up to four guests", facts: ["Two suites in the residence"], features: ["The whole island"], rates: [{ season: "all", rate: 20500 }] },
+      { name: "Three suites, up to six guests", facts: ["Three suites in the residence"], features: ["The whole island"], rates: [{ season: "all", rate: 22500 }] },
+      { name: "Four suites, up to eight guests", facts: ["Four suites in the residence"], features: ["The whole island"], rates: [{ season: "all", rate: 24500 }] },
+      { name: "Full house, up to 11 guests", facts: ["All five suites: four king suites and one triple-share suite, each with ensuite and shower"], features: ["913 m² residence", "Beachfront solar-heated infinity pool"], rates: [{ season: "all", rate: 26500 }], image: { id: "jwco/stays/pelorus-private-island/p06", alt: "The infinity pool and loungers above the sea" } },
+    ],
+    included: ["All meals by your private chef", "Premium wines, beers, spirits, Champagne and soft drinks", "Fringing reef snorkelling", "Guided jet ski island tours", "Reef fishing", "A Hinchinbrook Island adventure", "An outer reef excursion", "Kayaks, seabobs, paddleboards and water bikes"],
+    excluded: ["Helicopter transfers (priced by helicopter and departure point)", "Festive surcharges", "Morris Nautical yacht and private jet connections"],
+    notes: ["Rates are Pelorus's published rates in Australian dollars, from pelorusprivateisland.au/rates, read 12 Nov 2026; from, subject to availability.", "Most guests stay three to five nights.", "The house confirms the rate and terms with your quote."],
+    source: { label: "pelorusprivateisland.au", url: "https://pelorusprivateisland.au/rates/" }, credit: "Photographs courtesy of Pelorus Private Island",
+  },
 };
 
 export const roomsFor = (slug: string): StayRooms | null => ROOMS[slug] ?? null;
 
 export const money = (currency: Money["currency"], n: number) =>
-  currency === "ZAR" ? `R${n.toLocaleString("en-US")}` : `US$${n.toLocaleString("en-US", { maximumFractionDigits: 2 })}`;
+  currency === "ZAR" ? `R${n.toLocaleString("en-US")}` : currency === "AUD" ? `AU$${n.toLocaleString("en-US")}` : currency === "EUR" ? `€${n.toLocaleString("en-US")}` : `US$${n.toLocaleString("en-US", { maximumFractionDigits: 2 })}`;

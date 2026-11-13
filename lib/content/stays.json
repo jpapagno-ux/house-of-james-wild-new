@@ -1262,7 +1262,7 @@
   {
    "slug": "aliikai-voyage",
    "name": "Aliikai Voyage",
-   "ledgerId": "STY-2026-882896",
+   "ledgerId": "VSL-2026-882896",
    "country": "Indonesia",
    "countrySlug": "indonesia",
    "regionSlug": "asia",
@@ -10092,7 +10092,7 @@
   {
    "slug": "celestia-yacht",
    "name": "Celestia Yacht\nWhere Sea Meets Soul",
-   "ledgerId": "STY-2026-584882",
+   "ledgerId": "VSL-2026-584882",
    "country": "Indonesia",
    "countrySlug": "indonesia",
    "regionSlug": "asia",
@@ -14220,7 +14220,7 @@
   {
    "slug": "ecoventura-evolve-yacht",
    "name": "Eco Evolve\nGalápagos Yachting",
-   "ledgerId": "STY-2026-077085",
+   "ledgerId": "VSL-2026-077085",
    "country": "Ecuador & Galapagos",
    "countrySlug": "ecuador-galapagos",
    "regionSlug": "south-america",
@@ -14313,7 +14313,7 @@
   {
    "slug": "ecoventura-origin-yacht",
    "name": "Eco\nOrigin",
-   "ledgerId": "STY-2026-228596",
+   "ledgerId": "VSL-2026-228596",
    "country": "Ecuador & Galapagos",
    "countrySlug": "ecuador-galapagos",
    "regionSlug": "south-america",
@@ -14405,7 +14405,7 @@
   {
    "slug": "ecoventura-theory-yacht",
    "name": "Eco\nTheory\nYacht",
-   "ledgerId": "STY-2026-546714",
+   "ledgerId": "VSL-2026-546714",
    "country": "Ecuador & Galapagos",
    "countrySlug": "ecuador-galapagos",
    "regionSlug": "south-america",
@@ -45871,7 +45871,7 @@
   {
    "slug": "sirius-yacht-galapagos",
    "name": "Sirius \n Galápagos Yacht",
-   "ledgerId": "STY-2026-149516",
+   "ledgerId": "VSL-2026-149516",
    "country": "Ecuador & Galapagos",
    "countrySlug": "ecuador-galapagos",
    "regionSlug": "south-america",

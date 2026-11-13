@@ -7,7 +7,7 @@ import type { ShipCabin, ShipDeparture, ShipItinerary, ShipPathway, ShipRecord }
 // The Aliikai vessel profile. Yacht, spaces, cabins and the 2027 schedule come
 // from aliikai-voyage.com (filed on the voyage records, checked 26 Oct 2026, and
 // mirrored to Airtable: Voyages & Expeditions Guide Library). The ship's story
-// is the owner's own copy from the library record STY-2026-882896.
+// is the owner's own copy from the library record VSL-2026-882896.
 const T = ra as unknown as Trip;
 const V = T.vessel!;
 
@@ -38,7 +38,7 @@ const usd = (n: number) => `US$${n.toLocaleString("en-US")}`;
 export const ALIIKAI_SHIP = {
   slug: "aliikai",
   name: "Aliikai",
-  ledgerId: "STY-2026-882896",
+  ledgerId: "VSL-2026-882896",
   // Wild Pathways (James, 1 Nov 2026): Between Tides first (the water is the activity), Off the Map for
   // the Wayag and Misool routes and the Banda Sea crossings, A Place of Our Own for the whole-yacht charter.
   pathway: { primary: "PATH-02", secondary: ["PATH-06", "PATH-07"] } as ShipPathway,

@@ -107,7 +107,7 @@ const CARDS: Advisor[] = [
         { ledgerId: "STY-2026-000248", name: "Singita Faru Faru", place: "Grumeti · Tanzania", href: null, countrySlug: "tanzania", regionSlug: "africa", volume: "safaris", james: { mark: "I Keep Going Back", year: 2018, favourite: true }, theirs: { mark: "Stayed", when: "2012 & 2018" }, guests: 0, folios: [], last: "2018" },
         { ledgerId: "STY-2026-000066", name: "Cottar's 1920s Camp & Bush Villa", place: "Maasai Mara · Kenya", href: null, countrySlug: "kenya", regionSlug: "africa", volume: "gatherings", james: { mark: "I've Walked It" }, theirs: { mark: "Walked It" }, guests: 0, folios: [], last: "—" },
         { ledgerId: "STY-2026-000152", name: "Lewa House", place: "Laikipia · Kenya", href: null, countrySlug: "kenya", regionSlug: "africa", volume: "safaris", james: { mark: "I've Walked It" }, theirs: { mark: "Walked It" }, guests: 0, folios: [], last: "—" },
-        { ledgerId: "STY-2026-882896", name: "Aliikai", place: "Raja Ampat · Indonesia", href: null, countrySlug: "indonesia", regionSlug: "asia", volume: "voyages", james: { mark: "I Keep Going Back", year: 2024, favourite: true }, theirs: { mark: "Sailed It", when: "Nov 2024" }, guests: 0, folios: [], last: "Nov 24", note: "Phinisi, eight guests, the best reef on earth under the hull. Sailed it with Anthony." },
+        { ledgerId: "VSL-2026-882896", name: "Aliikai", place: "Raja Ampat · Indonesia", href: null, countrySlug: "indonesia", regionSlug: "asia", volume: "voyages", james: { mark: "I Keep Going Back", year: 2024, favourite: true }, theirs: { mark: "Sailed It", when: "Nov 2024" }, guests: 0, folios: [], last: "Nov 24", note: "Phinisi, eight guests, the best reef on earth under the hull. Sailed it with Anthony." },
         { ledgerId: "STY-2026-000213", name: "Vahine Private Island", place: "Taha'a · Tahiti", href: null, countrySlug: "tahiti", regionSlug: "oceania", volume: "stays", james: { mark: "I've Walked It", year: 2025 }, theirs: { mark: "Walked It", when: "2025" }, guests: 0, folios: [], last: "2025", note: "Taha'a is my favourite in Tahiti, and Tahiti is my favourite." },
       ],
       folios: [],
@@ -158,7 +158,7 @@ const CARDS: Advisor[] = [
       specialties: ["Nature & wildlife", "Hikes & trails", "Islands & reefs", "Rainforest & cloud forest", "Small ships & sailing yachts"],
       line: "The best of a place is usually just past where the itinerary stops.",
       // Entries carry only what Anthony has stated first-hand; the Galápagos and Costa Rica are on his record as places, not yet as marked stays.
-      entries: [{ ledgerId: "STY-2026-882896", name: "Aliikai", place: "Raja Ampat · Indonesia", href: null, countrySlug: "indonesia", regionSlug: "asia", volume: "voyages", james: { mark: "I Know a Place", year: 2024, favourite: true }, theirs: { mark: "Sailed It", when: "Nov 2024" }, guests: 0, folios: [], last: "—" }],
+      entries: [{ ledgerId: "VSL-2026-882896", name: "Aliikai", place: "Raja Ampat · Indonesia", href: null, countrySlug: "indonesia", regionSlug: "asia", volume: "voyages", james: { mark: "I Know a Place", year: 2024, favourite: true }, theirs: { mark: "Sailed It", when: "Nov 2024" }, guests: 0, folios: [], last: "—" }],
       folios: [],
     },
   },

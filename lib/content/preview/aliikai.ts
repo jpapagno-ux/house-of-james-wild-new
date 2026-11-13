@@ -1,6 +1,6 @@
 // Sample ALIIKAI VOYAGE content for the Ledger Edit reskin — the CRUISE /
 // VESSEL template. Verbatim snapshot of the live studio records: Stay
-// STY-2026-882896 (property_slug aliikai-voyage, Lane C, cruise category)
+// VSL-2026-882896 (property_slug aliikai-voyage, Lane C, cruise category)
 // plus its 8 room records (7 cabins + the whole-yacht charter line).
 // Features and Experiences collections hold NO linked records for Aliikai —
 // the filed features-content / adventures-experiences richtext lists are
@@ -12,12 +12,12 @@ const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 
 export const SAMPLE_ALIIKAI = {
   name: "Aliikai Voyage",
-  ledgerId: "STY-2026-882896",
+  ledgerId: "VSL-2026-882896",
   subtitle: "Sail Beyond the Ordinary – Discover Indonesia's Wild Beauty Aboard Aliikai",
   introQuote:
     "An unparalleled experience that fully immerses guests in exquisite nature, culture, and unique one of kind adventures.",
   meta: [
-    ["Vessel ledger", "STY-2026-882896"],
+    ["Vessel ledger", "VSL-2026-882896"],
     ["Continent", "Asia"],
     ["Country", "Indonesia"],
     ["The yacht", "40m wooden yacht · 7 cabins · 3 decks"],

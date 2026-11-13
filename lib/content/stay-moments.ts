@@ -156,5 +156,10 @@ export function rowsFrom(items: string[], paras: string[]) {
   const p = (paras[0] ?? "").trim();
   // only a plain list: one sentence, no brackets
   if (!p || p.length > 260 || (p.match(/,/g) ?? []).length < 3 || /\.\s+\S/.test(p) || /[()]/.test(p)) return [];
-  return p.replace(/\.$/, "").split(/,\s*(?:and\s+)?|\s+and\s+(?=[^,]*$)/).map((x) => x.trim()).filter((x) => x && x.length < 48).map((x) => x[0].toUpperCase() + x.slice(1));
+  // a sentence with figures in it ("from 1,883 to 12,916 square feet") is not a list (Casali di Casole, 13 Nov 2026)
+  if (/\d,\d{3}/.test(p)) return [];
+  const rows = p.replace(/\.$/, "").split(/,\s*(?:and\s+)?|\s+and\s+(?=[^,]*$)/).map((x) => x.trim()).filter((x) => x && x.length < 48);
+  // pieces that start with a linking word are fragments of one sentence, not items ("sleeping four to sixteen")
+  if (rows.some((x) => /^(from|to|sleeping|sleeps|with|for|in|on|at|each|most|all|some|which|where|who)\b/i.test(x))) return [];
+  return rows.map((x) => x[0].toUpperCase() + x.slice(1));
 }

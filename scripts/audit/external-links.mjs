@@ -21,3 +21,4 @@ await Promise.all(Array.from({ length: 8 }, async () => { while (q.length) { awa
 fs.writeFileSync("scripts/audit/external-links.json", JSON.stringify(out, null, 1));
 console.log(pages.length, "pages;", Object.keys(out).length, "hosts");
 for (const [h, l] of Object.entries(out).sort((a, b) => b[1].length - a[1].length)) console.log(l.length, h);
+// rerun 23:05:56

@@ -1,0 +1,163 @@
+{
+ "id": "aria-amazon-nauta-round-trip-low-water-7n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "7-night Expedition Cruise, Nauta round trip, low water aboard Aria Amazon",
+ "subtitle": "7 nights · Nauta round trip · Aria Amazon",
+ "days": {
+  "1": "Nauta",
+  "2": "Yarapa River",
+  "3": "San Pedro Forest",
+  "4": "Nauta Town",
+  "5": "Yanayacu Pucate River",
+  "6": "Pacaya Samiria National Reserve",
+  "7": "Puerto Prado Forest",
+  "8": "Manatee Rescue Centre"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Iquitos, Nauta, Marañon River",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Clavero Lake, Ucayali River, Yarapa River",
+   "lat": -4.42,
+   "lng": -73.48,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.48,
+     -4.42
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Amazon River, Tahuayo River, San Pedro Forest",
+   "lat": -4.35,
+   "lng": -73.25,
+   "mode": "sea",
+   "path": [
+    [
+     -73.48,
+     -4.42
+    ],
+    [
+     -73.25,
+     -4.35
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Nauta Town, Village Visit, Birthplace of the Amazon",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "mode": "sea",
+   "path": [
+    [
+     -73.25,
+     -4.35
+    ],
+    [
+     -73.5781,
+     -4.5076
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Marañon River, Yanayacu Pucate River",
+   "lat": -4.65,
+   "lng": -73.95,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.95,
+     -4.65
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Samiria River, Pacaya Samiria National Reserve",
+   "lat": 56.33,
+   "lng": -6.39,
+   "mode": "sea",
+   "path": [
+    [
+     -73.95,
+     -4.65
+    ],
+    [
+     -6.39,
+     56.33
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Puerto Prado Forest, Amazon River",
+   "lat": -4.4,
+   "lng": -73.68,
+   "mode": "sea",
+   "path": [
+    [
+     -6.39,
+     56.33
+    ],
+    [
+     -73.68,
+     -4.4
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Nauta Town, Manatee Rescue Centre, Transfer to the Airport",
+   "lat": -3.8,
+   "lng": -73.3,
+   "mode": "sea",
+   "path": [
+    [
+     -73.68,
+     -4.4
+    ],
+    [
+     -73.3,
+     -3.8
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

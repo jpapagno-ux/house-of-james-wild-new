@@ -20,7 +20,7 @@ import type { PathwayId } from "@/lib/pathways";
 
 export type VoyageType = "river" | "sailing" | "expedition" | "charter";
 /** antarctica and patagonia: the polar waters, both listed in Polar Voyages (/voyages/polar). */
-export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji";
+export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji" | "mekong" | "seychelles" | "arctic";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
 export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran" | "bangka";
 /** The operator's own class label (Galápagos, James, 2 Nov 2026): the hub groups ships by partner and tier.
@@ -297,6 +297,24 @@ export const SHIP_REGISTRY: RegistryShip[] = [
 
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },
+
+  // Aqua Expeditions (James, 13 Nov 2026): the whole fleet, from aquaexpeditions.com and Aqua's own booking data
+  // (scripts/partners/aqua-build.mjs). Aria Amazon is filed above. Connecting suites as Aqua publishes them.
+  { slug: "aqua-nera", name: "Aqua Nera", operator: "Aqua Expeditions", kind: "riverboat", types: ["river"], waters: ["amazon"], country: ["Peru"],
+    pathway: { primary: "PATH-01", secondary: ["PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { connecting: true, activities: ["wildlife", "kayaking", "hiking", "culture"] } },
+  { slug: "aqua-mekong", name: "Aqua Mekong", operator: "Aqua Expeditions", kind: "riverboat", types: ["river"], waters: ["mekong"], country: ["Cambodia", "Vietnam"],
+    pathway: { primary: "PATH-08", secondary: ["PATH-05"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { connecting: true, activities: ["culture", "kayaking", "slow"] } },
+  { slug: "aqua-mare", name: "Aqua Mare", operator: "Aqua Expeditions", kind: "yacht", types: ["expedition", "charter"], waters: ["galapagos"], country: ["Ecuador"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02", "PATH-07"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { activities: ["wildlife", "snorkelling", "kayaking", "hiking"] } },
+  { slug: "aqua-blu", name: "Aqua Blu", operator: "Aqua Expeditions", kind: "motor-yacht", types: ["expedition"], waters: ["indonesia"], country: ["Indonesia"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-06", "PATH-04"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { connecting: true, dives: true, activities: ["diving", "snorkelling", "kayaking", "wildlife", "hiking", "culture"] } },
+  { slug: "aqua-lares", name: "Aqua Lares", operator: "Aqua Expeditions", kind: "yacht", types: ["expedition", "charter"], waters: ["seychelles", "arctic"], country: ["Seychelles", "Tanzania", "Norway"],
+    pathway: { primary: "PATH-06", secondary: ["PATH-04", "PATH-07"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { dives: true, activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "culture"] } },
 ];
 
 /** The four voyage types, in the house's words (James, 1 Nov 2026). */
@@ -321,6 +339,10 @@ export const WATERS_HUBS: Record<Waters, { name: string; path: string; countries
   tahiti: { name: "French Polynesia (Tahiti)", path: "/destinations/oceania/tahiti#sail", countries: ["French Polynesia"], question: "Which Windstar ship sails Tahiti?" },
   // No /voyages hub yet: Fiji's one ship lives on her page and the Fiji country page.
   fiji: { name: "Fiji", path: "/voyages/ships/yasawa-princess-ii", countries: ["Fiji"], question: "Which small ship sails Fiji's Yasawa Islands?" },
+  // Aqua Expeditions' waters (13 Nov 2026). No /voyages hubs yet: each lands on the one ship that sails it.
+  mekong: { name: "The Mekong", path: "/voyages/ships/aqua-mekong", countries: ["Cambodia", "Vietnam"], question: "What is the best luxury Mekong river cruise?" },
+  seychelles: { name: "The Seychelles and Zanzibar", path: "/voyages/ships/aqua-lares", countries: ["Seychelles", "Tanzania"], question: "Can you cruise to Aldabra in the Seychelles?" },
+  arctic: { name: "Svalbard and the Arctic", path: "/voyages/ships/aqua-lares", countries: ["Norway"], question: "Which small ship sails Svalbard?" },
 };
 
 export const registryShip = (slug: string) => SHIP_REGISTRY.find((s) => s.slug === slug);

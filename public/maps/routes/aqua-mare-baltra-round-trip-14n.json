@@ -1,0 +1,565 @@
+{
+ "id": "aqua-mare-baltra-round-trip-14n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "14-night West and East Galápagos Expedition, Baltra round trip aboard Aqua Mare",
+ "subtitle": "14 nights · Baltra round trip · Aqua Mare",
+ "days": {
+  "1": "Manzanillo Ranch",
+  "2": "Punta Cormorant",
+  "3": "Bahía Urbina",
+  "4": "Caleta Tagus",
+  "5": "Puerto Egas",
+  "6": "Caleta Tortuga Negra",
+  "7": "Mosquera Island",
+  "8": "Baltra Island",
+  "9": "Genovesa Island",
+  "10": "Sombrero Chino Island",
+  "11": "Cerro Dragón",
+  "12": "Fausto Llerena Breeding Center",
+  "13": "Bahía Gardner",
+  "14": "Plaza Sur Island",
+  "15": "Los Gemelos"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "at Puerto Ayora, and Manzanillo Ranch, Santa Cruz Island",
+   "lat": -0.7279,
+   "lng": -90.4695,
+   "kind": "port",
+   "charted": [
+    -90.4,
+    -0.65
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Punta Cormorant, Bahía Post Office, and Mirador de la Baronesa, Floreana Island",
+   "lat": -1.22,
+   "lng": -90.42,
+   "mode": "sea",
+   "path": [
+    [
+     -90.4695,
+     -0.7279
+    ],
+    [
+     -90.42,
+     -1.22
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Punta Moreno and Bahía Urbina, Isabela Island",
+   "lat": -0.3996,
+   "lng": -91.2312,
+   "mode": "sea",
+   "path": [
+    [
+     -90.42,
+     -1.22
+    ],
+    [
+     -90.4402,
+     -1.2131
+    ],
+    [
+     -91.4161,
+     -1.0326
+    ],
+    [
+     -91.4499,
+     -1.0157
+    ],
+    [
+     -91.5176,
+     -0.9311
+    ],
+    [
+     -91.5232,
+     -0.9141
+    ],
+    [
+     -91.5232,
+     -0.8803
+    ],
+    [
+     -91.2312,
+     -0.3996
+    ]
+   ],
+   "charted": [
+    -91.23,
+    -0.39
+   ],
+   "lane": "sea",
+   "clear": 1.43
+  },
+  {
+   "day": 4,
+   "name": "Punta Espinoza, Fernandina Island, and Caleta Tagus, Isabela Island",
+   "lat": -0.2748,
+   "lng": -91.3736,
+   "mode": "sea",
+   "path": [
+    [
+     -91.2312,
+     -0.3996
+    ],
+    [
+     -91.2377,
+     -0.403
+    ],
+    [
+     -91.24,
+     -0.4052
+    ],
+    [
+     -91.2669,
+     -0.394
+    ],
+    [
+     -91.3343,
+     -0.3491
+    ],
+    [
+     -91.359,
+     -0.3244
+    ],
+    [
+     -91.3747,
+     -0.2929
+    ],
+    [
+     -91.377,
+     -0.2839
+    ],
+    [
+     -91.3736,
+     -0.2748
+    ]
+   ],
+   "charted": [
+    -91.37,
+    -0.27
+   ],
+   "lane": "sea",
+   "clear": 0.78
+  },
+  {
+   "day": 5,
+   "name": "Puerto Egas, Playa Espumilla, and Caleta Bucanero, Santiago Island",
+   "lat": -0.24,
+   "lng": -90.86,
+   "mode": "sea",
+   "path": [
+    [
+     -91.3736,
+     -0.2748
+    ],
+    [
+     -91.39,
+     -0.2748
+    ],
+    [
+     -91.4517,
+     -0.2091
+    ],
+    [
+     -91.5914,
+     -0.0447
+    ],
+    [
+     -91.6078,
+     -0.0118
+    ],
+    [
+     -91.6037,
+     0.0046
+    ],
+    [
+     -91.4969,
+     0.1073
+    ],
+    [
+     -91.3654,
+     0.1731
+    ],
+    [
+     -91.3366,
+     0.1731
+    ],
+    [
+     -90.86,
+     -0.24
+    ]
+   ],
+   "lane": "sea",
+   "clear": 1.22
+  },
+  {
+   "day": 6,
+   "name": "Rábida Island and Caleta Tortuga Negra, Santa Cruz Island",
+   "lat": -0.4856,
+   "lng": -90.27,
+   "mode": "sea",
+   "path": [
+    [
+     -90.86,
+     -0.24
+    ],
+    [
+     -90.8753,
+     -0.2373
+    ],
+    [
+     -90.8834,
+     -0.2454
+    ],
+    [
+     -90.8834,
+     -0.2738
+    ],
+    [
+     -90.8469,
+     -0.3346
+    ],
+    [
+     -90.8388,
+     -0.3427
+    ],
+    [
+     -90.8347,
+     -0.3468
+    ],
+    [
+     -90.7374,
+     -0.3752
+    ],
+    [
+     -90.5914,
+     -0.3914
+    ],
+    [
+     -90.279,
+     -0.3792
+    ],
+    [
+     -90.2669,
+     -0.3914
+    ],
+    [
+     -90.2385,
+     -0.4685
+    ],
+    [
+     -90.2506,
+     -0.4806
+    ],
+    [
+     -90.27,
+     -0.4856
+    ]
+   ],
+   "charted": [
+    -90.27,
+    -0.5
+   ],
+   "lane": "sea",
+   "clear": 0.19
+  },
+  {
+   "day": 7,
+   "name": "Seymour Norte Island and Mosquera Island",
+   "lat": -0.41,
+   "lng": -90.27,
+   "mode": "sea",
+   "path": [
+    [
+     -90.27,
+     -0.4856
+    ],
+    [
+     -90.2509,
+     -0.4732
+    ],
+    [
+     -90.2464,
+     -0.4688
+    ],
+    [
+     -90.2442,
+     -0.4665
+    ],
+    [
+     -90.27,
+     -0.41
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.44
+  },
+  {
+   "day": 8,
+   "name": "Baltra Island, and Bahia Borrero, Santa Cruz Island",
+   "lat": -0.434,
+   "lng": -90.2604,
+   "mode": "sea",
+   "path": [
+    [
+     -90.27,
+     -0.41
+    ],
+    [
+     -90.2604,
+     -0.434
+    ]
+   ],
+   "charted": [
+    -90.27,
+    -0.44
+   ]
+  },
+  {
+   "day": 9,
+   "name": "El Barranco and Bahía Darwin, Genovesa Island",
+   "lat": -0.31,
+   "lng": -89.96,
+   "mode": "sea",
+   "path": [
+    [
+     -90.2604,
+     -0.434
+    ],
+    [
+     -89.96,
+     -0.31
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Bahía Sullivan, Santiago Island and Sombrero Chino Island",
+   "lat": -0.37,
+   "lng": -90.58,
+   "mode": "sea",
+   "path": [
+    [
+     -89.96,
+     -0.31
+    ],
+    [
+     -90.58,
+     -0.37
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "Bartolomé Island and Cerro Dragón, Santa Cruz Island",
+   "lat": -0.5268,
+   "lng": -90.492,
+   "mode": "sea",
+   "path": [
+    [
+     -90.58,
+     -0.37
+    ],
+    [
+     -90.492,
+     -0.5268
+    ]
+   ],
+   "charted": [
+    -90.48,
+    -0.54
+   ]
+  },
+  {
+   "day": 12,
+   "name": "Manzanillo Giant Tortoise Reserve and Fausto Llerena Breeding Center, Santa Cruz Island",
+   "lat": -0.7433,
+   "lng": -90.3033,
+   "mode": "sea",
+   "path": [
+    [
+     -90.492,
+     -0.5268
+    ],
+    [
+     -90.5044,
+     -0.5221
+    ],
+    [
+     -90.5133,
+     -0.5221
+    ],
+    [
+     -90.5178,
+     -0.5243
+    ],
+    [
+     -90.5313,
+     -0.5378
+    ],
+    [
+     -90.547,
+     -0.567
+    ],
+    [
+     -90.5627,
+     -0.6321
+    ],
+    [
+     -90.5538,
+     -0.6838
+    ],
+    [
+     -90.5448,
+     -0.7018
+    ],
+    [
+     -90.5178,
+     -0.7287
+    ],
+    [
+     -90.4123,
+     -0.7804
+    ],
+    [
+     -90.3943,
+     -0.7871
+    ],
+    [
+     -90.3269,
+     -0.7871
+    ],
+    [
+     -90.309,
+     -0.7781
+    ],
+    [
+     -90.2977,
+     -0.7669
+    ],
+    [
+     -90.2955,
+     -0.7601
+    ],
+    [
+     -90.3033,
+     -0.7433
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.99
+  },
+  {
+   "day": 13,
+   "name": "Punta Suárez, Bahía Gardner, and Islote Osborn, Española Island",
+   "lat": -1.35,
+   "lng": -89.65,
+   "mode": "sea",
+   "path": [
+    [
+     -90.3033,
+     -0.7433
+    ],
+    [
+     -89.65,
+     -1.35
+    ]
+   ]
+  },
+  {
+   "day": 14,
+   "name": "Sante Fé Island and Plaza Sur Island",
+   "lat": -0.58,
+   "lng": -90.16,
+   "mode": "sea",
+   "path": [
+    [
+     -89.65,
+     -1.35
+    ],
+    [
+     -90.16,
+     -0.58
+    ]
+   ]
+  },
+  {
+   "day": 15,
+   "name": "Los Gemelos, Santa Cruz Island and Disembarkation",
+   "lat": -0.5122,
+   "lng": -90.3656,
+   "mode": "sea",
+   "path": [
+    [
+     -90.16,
+     -0.58
+    ],
+    [
+     -90.1668,
+     -0.5632
+    ],
+    [
+     -90.2702,
+     -0.3902
+    ],
+    [
+     -90.2746,
+     -0.3857
+    ],
+    [
+     -90.2904,
+     -0.3835
+    ],
+    [
+     -90.2949,
+     -0.3857
+    ],
+    [
+     -90.3398,
+     -0.4351
+    ],
+    [
+     -90.3712,
+     -0.498
+    ],
+    [
+     -90.3712,
+     -0.5048
+    ],
+    [
+     -90.369,
+     -0.507
+    ],
+    [
+     -90.3656,
+     -0.5122
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -90.38,
+    -0.62
+   ],
+   "lane": "sea",
+   "clear": 0.47
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

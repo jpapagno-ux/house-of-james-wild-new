@@ -1,0 +1,5795 @@
+{
+ "slug": "aqua-nera",
+ "name": "Aqua Nera",
+ "ledgerId": "VSL-2026-000030",
+ "brandLine": "Aqua Expeditions",
+ "operator": "Aqua Expeditions",
+ "status": "sailing",
+ "deckPlans": [],
+ "why": [],
+ "rateBasis": "per-cruise",
+ "type": "riverboat",
+ "waters": "Amazon, Marañón and Ucayali rivers, Pacaya-Samiria",
+ "country": "Peru",
+ "seo": {
+  "title": "Aqua Nera Amazon River Cruise, Peru | James Wild & Co",
+  "description": "Aqua Nera by Aqua Expeditions: 20 suites, 40 guests, 40 crew, a plunge pool and spa. Three, four and seven nights from Iquitos and Nauta into Pacaya-Samiria, with every fare.",
+  "keywords": [
+   "Aqua Nera",
+   "luxury Amazon river cruise Peru",
+   "Pacaya-Samiria cruise",
+   "Iquitos Amazon cruise",
+   "Aqua Expeditions Amazon"
+  ]
+ },
+ "tagline": "Twenty suites, a plunge pool and the black water lagoons of the Peruvian Amazon.",
+ "answer": "Aqua Nera is Aqua Expeditions' 20-suite river ship in the Peruvian Amazon, launched in 2021. She carries 40 guests with 40 crew and sails three, four and seven nights from Iquitos and Nauta into the Pacaya-Samiria National Reserve, with chef Pedro Miguel Schiaffino's menu on board. She suits couples and families who want the Amazon with a spa, a pool and twice-daily skiff excursions.",
+ "facts": [
+  [
+   "Suites",
+   "20 design suites of 320 sq ft; 640 sq ft interconnecting"
+  ],
+  [
+   "Guests",
+   "40"
+  ],
+  [
+   "Crew",
+   "40"
+  ],
+  [
+   "Decks",
+   "3"
+  ],
+  [
+   "Launched",
+   "2021"
+  ],
+  [
+   "Design",
+   "Noor Design"
+  ],
+  [
+   "Chef",
+   "Pedro Miguel Schiaffino"
+  ],
+  [
+   "Route",
+   "Iquitos and Nauta, 3, 4 or 7 nights"
+  ]
+ ],
+ "overview": [
+  "Aqua Nera takes her name from the black water lagoons of the Peruvian Amazon. Noor Design drew her 20 suites and her social spaces, with accents from the rubber boom era. She carries 40 guests with 40 crew and sails with her sister Aria Amazon.",
+  "Every suite has floor-to-ceiling windows, a sofa, a king or twin beds and a walk-in rain shower; 105 and 107, 106 and 108, 205 and 207, and 206 and 208 connect. The top deck holds a plunge pool, indoor and outdoor lounges, a games room and a screening room; there is also a gym and a spa. Naturalist guides lead small groups out by skiff twice a day."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/hero",
+  "alt": "Aqua Nera river ship on the Amazon in Peru",
+  "credit": "Aqua Expeditions"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/exterior",
+   "alt": "Aqua Nera on a black water river in the Peruvian Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/exterior-2",
+   "alt": "Aqua Nera's three decks and floor-to-ceiling windows",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/saloon",
+   "alt": "The saloon on Aqua Nera",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/lounge",
+   "alt": "Indoor lounge on Aqua Nera",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/pool-deck",
+   "alt": "Plunge pool deck on Aqua Nera",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/screening-room",
+   "alt": "Screening room on Aqua Nera",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/dining",
+   "alt": "Dining room on Aqua Nera",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/spa",
+   "alt": "Spa room on Aqua Nera",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/mirrored-forest",
+   "alt": "Flooded forest reflected in black water in the Peruvian Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/skiff",
+   "alt": "Guests on a skiff excursion in the Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/kayaking",
+   "alt": "Kayaking on an Amazon tributary with Aqua Expeditions",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/monkeys",
+   "alt": "Squirrel monkeys on a tree in the Pacaya-Samiria reserve",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/jungle-walk",
+   "alt": "Guided jungle walk in the Peruvian Amazon",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/riberenos",
+   "alt": "A riverside community on the Amazon in Peru",
+   "credit": "Aqua Expeditions"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "First Deck Suite",
+   "count": 10,
+   "size": "320 sq ft",
+   "beds": "California king or twin",
+   "deck": "First deck",
+   "features": [
+    "Floor-to-ceiling panoramic windows",
+    "In-room sofa",
+    "Walk-in rain shower",
+    "Air conditioning",
+    "Safe",
+    "Connecting: 105 and 107, 106 and 108"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/suite",
+    "alt": "Design Suite with a daybed and floor-to-ceiling window on Aqua Nera",
+    "credit": "Aqua Expeditions"
+   }
+  },
+  {
+   "type": "Second Deck Suite",
+   "count": 10,
+   "size": "320 sq ft",
+   "beds": "California king or twin",
+   "deck": "Second deck",
+   "features": [
+    "Floor-to-ceiling panoramic windows",
+    "In-room sofa",
+    "Walk-in rain shower",
+    "Air conditioning",
+    "Safe",
+    "Connecting: 205 and 207, 206 and 208"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-nera/suite-sofa",
+    "alt": "Design Suite with an in-room sofa on Aqua Nera",
+    "credit": "Aqua Expeditions"
+   }
+  }
+ ],
+ "itineraries": [
+  {
+   "name": "3-night Discovery Cruise, Iquitos to Nauta",
+   "nights": 3,
+   "direction": "Iquitos to Nauta",
+   "season": "High water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Iquitos",
+     "place": "Iquitos, Amazon River",
+     "lat": -3.7437,
+     "lng": -73.2516,
+     "summary": "After arriving on a noon flight, receive a warm welcome at Iquitos International Airport by our crew and enjoy lunch at a local restaurant before boarding Aqua Nera."
+    },
+    {
+     "day": 2,
+     "title": "Yarapa River",
+     "place": "Yanayacu Yacapana, Yarapa River, Ucayali River",
+     "lat": -4.42,
+     "lng": -73.48,
+     "summary": "Aboard our comfortable skiffs, we set sail from the Amazon River to the Yanayacu Yacapana River."
+    },
+    {
+     "day": 3,
+     "title": "Clavero Lake",
+     "place": "Clavero Lake, Marañon River",
+     "lat": -4.58,
+     "lng": -73.55,
+     "summary": "We get an early start to the day to explore Clavero Lake aboard our comfortable skiffs."
+    },
+    {
+     "day": 4,
+     "title": "Manatee Rescue Center",
+     "place": "Nauta Town, Manatee Rescue Center, Transfer to the Airport",
+     "lat": -3.8,
+     "lng": -73.3,
+     "summary": "In the morning, take a guided visit to the local market. Marvel at the regional produce of the Peruvian Amazon and sample exotic snacks if you wish."
+    }
+   ]
+  },
+  {
+   "name": "3-night Discovery Cruise, Nauta round trip",
+   "nights": 3,
+   "direction": "Nauta round trip",
+   "season": "Low water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Nauta",
+     "place": "Iquitos, Nauta, Marañon River",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "After arriving on a noon flight, receive a warm welcome at Iquitos International Airport by our crew."
+    },
+    {
+     "day": 2,
+     "title": "Tahuayo River",
+     "place": "Amazonas River, Tahuayo River",
+     "lat": -4.3,
+     "lng": -73.2,
+     "summary": "Head out at sunrise for a birdwatching session along the Amazonas River."
+    },
+    {
+     "day": 3,
+     "title": "Clavero Lake",
+     "place": "Clavero Lake, Ucayali River",
+     "lat": -4.58,
+     "lng": -73.55,
+     "summary": "Discover the magnificent black waters of Clavero Lake and pay a visit to the communities which live on its banks."
+    },
+    {
+     "day": 4,
+     "title": "Manatee Rescue Center",
+     "place": "Nauta Town, Manatee Rescue Center, Transfer to the Airport",
+     "lat": -3.8,
+     "lng": -73.3,
+     "summary": "In the morning, take a guided visit to the local market. Marvel at the regional produce of the Peruvian Amazon and sample exotic snacks if you wish."
+    }
+   ]
+  },
+  {
+   "name": "4-night Explorer Cruise, Nauta round trip",
+   "nights": 4,
+   "direction": "Nauta round trip",
+   "season": "Low water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Nauta",
+     "place": "Iquitos, Nauta, ",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "After arriving on a noon flight, receive a warm welcome at Iquitos International Airport by our crew."
+    },
+    {
+     "day": 2,
+     "title": "Yanayacu Pucate River",
+     "place": "Marañon River, Yanayacu Pucate River",
+     "lat": -4.65,
+     "lng": -73.95,
+     "summary": "Rise with the sun for an early morning birdwatching session along the Marañon River."
+    },
+    {
+     "day": 3,
+     "title": "Pacaya Samiria National Reserve",
+     "place": "Samiria River, Pacaya Samiria National Reserve",
+     "lat": 56.33,
+     "lng": -6.39,
+     "summary": "The rewards for our early start today are plentiful: a full day excursion including a picnic lunch orchestrated to the tune of the jungle symphony, fishing along the."
+    },
+    {
+     "day": 4,
+     "title": "Puerto Prado",
+     "place": "Puerto Prado, Amazon River",
+     "lat": -4.4,
+     "lng": -73.68,
+     "summary": "As the day begins, embark on a morning wildlife excursion on the Pahuachiro River."
+    },
+    {
+     "day": 5,
+     "title": "Manatee Rescue Centre",
+     "place": "Nauta Town, Manatee Rescue Centre, Transfer to the Airport",
+     "lat": -3.8,
+     "lng": -73.3,
+     "summary": "In the morning, take a guided visit to the local market. Marvel at the regional produce of the Peruvian Amazon and sample exotic snacks if you wish."
+    }
+   ]
+  },
+  {
+   "name": "4-night Explorer Cruise, Nauta to Iquitos",
+   "nights": 4,
+   "direction": "Nauta to Iquitos",
+   "season": "High water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Nauta",
+     "place": "Iquitos, Nauta, ",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "After arriving on a noon flight, receive a warm welcome at Iquitos International Airport by our crew."
+    },
+    {
+     "day": 2,
+     "title": "Yanayacu Pucate River",
+     "place": "Marañon River, Yanayacu Pucate River",
+     "lat": -4.65,
+     "lng": -73.95,
+     "summary": "Rise with the sun for an early morning birdwatching session along the Marañon River and enjoy breakfast in the middle of the jungle."
+    },
+    {
+     "day": 3,
+     "title": "Samiria River",
+     "place": "Samiria River",
+     "lat": -4.8,
+     "lng": -74.2,
+     "summary": "The rewards for our early start today are plentiful: a full day excursion including a picnic lunch orchestrated to the tune of the jungle symphony, fishing along the."
+    },
+    {
+     "day": 4,
+     "title": "Nauta Caño River",
+     "place": "Nauta Caño River, Jungle Walk",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "As the day begins, embark on a morning wildlife excursion on the extraordinary black water Nauta Caño River."
+    },
+    {
+     "day": 5,
+     "title": "Manatee Rescue Center",
+     "place": "Arrival in Iquitos, Manatee Rescue Center, Transfer to the Airport",
+     "lat": -3.8,
+     "lng": -73.3,
+     "summary": "In the morning, take a guided visit to the local market and marvel at the regional produce of the Peruvian Amazon, and sample exotic snacks if you wish."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Iquitos round trip",
+   "nights": 7,
+   "direction": "Iquitos round trip",
+   "season": "High water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Iquitos",
+     "place": "Iquitos, Amazon River",
+     "lat": -3.7437,
+     "lng": -73.2516,
+     "summary": "After arriving on a noon flight, receive a warm welcome at Iquitos International Airport by our crew and enjoy lunch at a local restaurant before boarding Aqua Nera."
+    },
+    {
+     "day": 2,
+     "title": "Yarapa River",
+     "place": "Yanayacu Yacapana, Yarapa River, Ucayali River",
+     "lat": -4.42,
+     "lng": -73.48,
+     "summary": "Aboard our comfortable skiffs, we set sail from the Amazon River to the Yanayacu Yacapana River."
+    },
+    {
+     "day": 3,
+     "title": "Clavero Lake",
+     "place": "Clavero Lake, Marañon River",
+     "lat": -4.58,
+     "lng": -73.55,
+     "summary": "We get an early start to the day to explore Clavero Lake aboard our comfortable skiffs."
+    },
+    {
+     "day": 4,
+     "title": "Nauta Town",
+     "place": "Nauta Town, Village Visit, Birthplace of the Amazon",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "In the morning, take a guided visit to the local market and marvel at the regional produce of the Peruvian Amazon, and sample exotic snacks if you wish."
+    },
+    {
+     "day": 5,
+     "title": "Yanayacu Pucate River",
+     "place": "Marañon River, Yanayacu Pucate River",
+     "lat": -4.65,
+     "lng": -73.95,
+     "summary": "Rise with the sun for an early morning birdwatching session along the Marañon River and enjoy breakfast in the middle of the jungle."
+    },
+    {
+     "day": 6,
+     "title": "Samiria River",
+     "place": "Samiria River",
+     "lat": -4.8,
+     "lng": -74.2,
+     "summary": "The rewards for our early start today are plentiful: a full day excursion including a picnic lunch orchestrated to the tune of the jungle symphony, fishing along the."
+    },
+    {
+     "day": 7,
+     "title": "Nauta Caño River",
+     "place": "Nauta Caño River, Jungle Walk",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "As the day begins, embark on a morning wildlife excursion on the extraordinary black water Nauta Caño River."
+    },
+    {
+     "day": 8,
+     "title": "Manatee Rescue Center",
+     "place": "Arrival in Iquitos, Manatee Rescue Center, Transfer to the Airport",
+     "lat": -3.8,
+     "lng": -73.3,
+     "summary": "In the morning, take a guided visit to the local market and marvel at the regional produce of the Peruvian Amazon, and sample exotic snacks if you wish."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Iquitos to Nauta",
+   "nights": 7,
+   "direction": "Iquitos to Nauta",
+   "season": "Low water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Nauta",
+     "place": "Iquitos, Nauta, Marañon River",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "After arriving on a noon flight, receive a warm welcome at Iquitos International Airport by our crew."
+    },
+    {
+     "day": 2,
+     "title": "Tahuayo River",
+     "place": "Amazonas River, Tahuayo River",
+     "lat": -4.3,
+     "lng": -73.2,
+     "summary": "Head out at sunrise for a birdwatching session along the Amazonas River."
+    },
+    {
+     "day": 3,
+     "title": "Clavero Lake",
+     "place": "Clavero Lake, Ucayali River",
+     "lat": -4.58,
+     "lng": -73.55,
+     "summary": "Discover the magnificent black waters of Clavero Lake and pay a visit to the communities which live on its banks."
+    },
+    {
+     "day": 4,
+     "title": "Nauta Town",
+     "place": "Nauta Town, Village Visit, Birthplace of the Amazon",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "In the morning, take a guided visit to the local market. Marvel at the regional produce of the Peruvian Amazon and sample exotic snacks if you wish."
+    },
+    {
+     "day": 5,
+     "title": "Yanayacu Pucate River",
+     "place": "Marañon River, Yanayacu Pucate River",
+     "lat": -4.65,
+     "lng": -73.95,
+     "summary": "Rise with the sun for an early morning birdwatching session along the Marañon River."
+    },
+    {
+     "day": 6,
+     "title": "Pacaya Samiria National Reserve",
+     "place": "Samiria River, Pacaya Samiria National Reserve",
+     "lat": 56.33,
+     "lng": -6.39,
+     "summary": "The rewards for our early start today are plentiful: a full day excursion including a picnic lunch orchestrated to the tune of the jungle symphony, fishing along the."
+    },
+    {
+     "day": 7,
+     "title": "Puerto Prado",
+     "place": "Puerto Prado, Amazon River",
+     "lat": -4.4,
+     "lng": -73.68,
+     "summary": "As the day begins, embark on a morning wildlife excursion on the Pahuachiro River."
+    },
+    {
+     "day": 8,
+     "title": "Manatee Rescue Centre",
+     "place": "Nauta Town, Manatee Rescue Centre, Transfer to the Airport",
+     "lat": -3.8,
+     "lng": -73.3,
+     "summary": "In the morning, take a guided visit to the local market. Marvel at the regional produce of the Peruvian Amazon and sample exotic snacks if you wish."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Nauta round trip",
+   "nights": 7,
+   "direction": "Nauta round trip",
+   "season": "Low water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Nauta",
+     "place": "Iquitos, Nauta, Marañon River",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "After arriving on a noon flight, receive a warm welcome at Iquitos International Airport by our crew."
+    },
+    {
+     "day": 2,
+     "title": "Tahuayo River",
+     "place": "Amazonas River, Tahuayo River",
+     "lat": -4.3,
+     "lng": -73.2,
+     "summary": "Head out at sunrise for a birdwatching session along the Amazonas River."
+    },
+    {
+     "day": 3,
+     "title": "Clavero Lake",
+     "place": "Clavero Lake, Ucayali River",
+     "lat": -4.58,
+     "lng": -73.55,
+     "summary": "Discover the magnificent black waters of Clavero Lake and pay a visit to the communities which live on its banks."
+    },
+    {
+     "day": 4,
+     "title": "Nauta Town",
+     "place": "Nauta Town, Village Visit, Birthplace of the Amazon",
+     "lat": -4.5076,
+     "lng": -73.5781,
+     "summary": "In the morning, take a guided visit to the local market. Marvel at the regional produce of the Peruvian Amazon and sample exotic snacks if you wish."
+    },
+    {
+     "day": 5,
+     "title": "Yanayacu Pucate River",
+     "place": "Marañon River, Yanayacu Pucate River",
+     "lat": -4.65,
+     "lng": -73.95,
+     "summary": "Rise with the sun for an early morning birdwatching session along the Marañon River."
+    },
+    {
+     "day": 6,
+     "title": "Pacaya Samiria National Reserve",
+     "place": "Samiria River, Pacaya Samiria National Reserve",
+     "lat": 56.33,
+     "lng": -6.39,
+     "summary": "The rewards for our early start today are plentiful: a full day excursion including a picnic lunch orchestrated to the tune of the jungle symphony, fishing along the."
+    },
+    {
+     "day": 7,
+     "title": "Puerto Prado",
+     "place": "Puerto Prado, Amazon River",
+     "lat": -4.4,
+     "lng": -73.68,
+     "summary": "As the day begins, embark on a morning wildlife excursion on the Pahuachiro River."
+    },
+    {
+     "day": 8,
+     "title": "Manatee Rescue Centre",
+     "place": "Nauta Town, Manatee Rescue Centre, Transfer to the Airport",
+     "lat": -3.8,
+     "lng": -73.3,
+     "summary": "In the morning, take a guided visit to the local market. Marvel at the regional produce of the Peruvian Amazon and sample exotic snacks if you wish."
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2026-11-14",
+   "dateTo": "2026-11-17",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5280,
+    "Second Deck Suite": 5620
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "dateTo": "2026-11-21",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 11680,
+    "Second Deck Suite": 12470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "dateTo": "2026-11-21",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 7050,
+    "Second Deck Suite": 7500
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "dateTo": "2026-11-24",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5280,
+    "Second Deck Suite": 5620
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "dateTo": "2026-11-28",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 11680,
+    "Second Deck Suite": 12470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "dateTo": "2026-11-28",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 7050,
+    "Second Deck Suite": 7500
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "dateTo": "2026-12-01",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5280,
+    "Second Deck Suite": 5620
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "dateTo": "2026-12-05",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 11680,
+    "Second Deck Suite": 12470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2026-12-01",
+   "dateTo": "2026-12-05",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7050,
+    "Second Deck Suite": 7500
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2026-12-12",
+   "dateTo": "2026-12-15",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5280,
+    "Second Deck Suite": 5620
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2026-12-15",
+   "dateTo": "2026-12-19",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7050,
+    "Second Deck Suite": 7500
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2026-12-19",
+   "dateTo": "2026-12-22",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5780,
+    "Second Deck Suite": 6180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-19",
+   "dateTo": "2026-12-26",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12830,
+    "Second Deck Suite": 13700
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-22",
+   "dateTo": "2026-12-26",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 8080,
+    "Second Deck Suite": 8240
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-26",
+   "dateTo": "2026-12-29",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5780,
+    "Second Deck Suite": 6180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-26",
+   "dateTo": "2027-01-02",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12830,
+    "Second Deck Suite": 13700
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-29",
+   "dateTo": "2027-01-02",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 8080,
+    "Second Deck Suite": 8240
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-02",
+   "dateTo": "2027-01-05",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5940,
+    "Second Deck Suite": 6300
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-02",
+   "dateTo": "2027-01-09",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 13480,
+    "Second Deck Suite": 14430
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-05",
+   "dateTo": "2027-01-09",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 8160,
+    "Second Deck Suite": 8650
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-01-09",
+   "dateTo": "2027-01-12",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-01-09",
+   "dateTo": "2027-01-16",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-01-12",
+   "dateTo": "2027-01-16",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-01-16",
+   "dateTo": "2027-01-19",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-01-16",
+   "dateTo": "2027-01-23",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-01-19",
+   "dateTo": "2027-01-23",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-01-30",
+   "dateTo": "2027-02-02",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-30",
+   "dateTo": "2027-02-06",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-02-02",
+   "dateTo": "2027-02-06",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-02-06",
+   "dateTo": "2027-02-09",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-02-06",
+   "dateTo": "2027-02-13",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-02-09",
+   "dateTo": "2027-02-13",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-02-13",
+   "dateTo": "2027-02-16",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-02-13",
+   "dateTo": "2027-02-20",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-02-16",
+   "dateTo": "2027-02-20",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-02-20",
+   "dateTo": "2027-02-23",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-02-20",
+   "dateTo": "2027-02-27",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-02-23",
+   "dateTo": "2027-02-27",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-02-27",
+   "dateTo": "2027-03-02",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-02-27",
+   "dateTo": "2027-03-06",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-03-02",
+   "dateTo": "2027-03-06",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-03-06",
+   "dateTo": "2027-03-09",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-03-06",
+   "dateTo": "2027-03-13",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-03-09",
+   "dateTo": "2027-03-13",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-03-13",
+   "dateTo": "2027-03-16",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-03-13",
+   "dateTo": "2027-03-20",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-03-16",
+   "dateTo": "2027-03-20",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-03-20",
+   "dateTo": "2027-03-23",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-03-20",
+   "dateTo": "2027-03-27",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-03-23",
+   "dateTo": "2027-03-27",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-03-27",
+   "dateTo": "2027-03-30",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-03-27",
+   "dateTo": "2027-04-03",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-03-30",
+   "dateTo": "2027-04-03",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-04-03",
+   "dateTo": "2027-04-06",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-04-03",
+   "dateTo": "2027-04-10",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-04-06",
+   "dateTo": "2027-04-10",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-04-24",
+   "dateTo": "2027-04-27",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-04-24",
+   "dateTo": "2027-05-01",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-04-27",
+   "dateTo": "2027-05-01",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-05-01",
+   "dateTo": "2027-05-04",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-05-01",
+   "dateTo": "2027-05-08",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-05-04",
+   "dateTo": "2027-05-08",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-05-08",
+   "dateTo": "2027-05-11",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-05-08",
+   "dateTo": "2027-05-15",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-05-11",
+   "dateTo": "2027-05-15",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-05-15",
+   "dateTo": "2027-05-18",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-05-15",
+   "dateTo": "2027-05-22",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-05-18",
+   "dateTo": "2027-05-22",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-05-22",
+   "dateTo": "2027-05-25",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-05-22",
+   "dateTo": "2027-05-29",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-05-25",
+   "dateTo": "2027-05-29",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-05-29",
+   "dateTo": "2027-06-01",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-05-29",
+   "dateTo": "2027-06-05",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-06-01",
+   "dateTo": "2027-06-05",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-06-05",
+   "dateTo": "2027-06-08",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-06-05",
+   "dateTo": "2027-06-12",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-06-08",
+   "dateTo": "2027-06-12",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-06-12",
+   "dateTo": "2027-06-15",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-06-12",
+   "dateTo": "2027-06-19",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-06-15",
+   "dateTo": "2027-06-19",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-06-19",
+   "dateTo": "2027-06-22",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-06-19",
+   "dateTo": "2027-06-26",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-06-22",
+   "dateTo": "2027-06-26",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-06-26",
+   "dateTo": "2027-06-29",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-06-26",
+   "dateTo": "2027-07-03",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-06-29",
+   "dateTo": "2027-07-03",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-07-03",
+   "dateTo": "2027-07-06",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-07-03",
+   "dateTo": "2027-07-10",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-07-06",
+   "dateTo": "2027-07-10",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-07-10",
+   "dateTo": "2027-07-13",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-07-10",
+   "dateTo": "2027-07-17",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-07-13",
+   "dateTo": "2027-07-17",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-07-17",
+   "dateTo": "2027-07-20",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-07-17",
+   "dateTo": "2027-07-24",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-07-20",
+   "dateTo": "2027-07-24",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-07-24",
+   "dateTo": "2027-07-27",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-07-24",
+   "dateTo": "2027-07-31",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-07-27",
+   "dateTo": "2027-07-31",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-07-31",
+   "dateTo": "2027-08-03",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-07-31",
+   "dateTo": "2027-08-07",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-08-03",
+   "dateTo": "2027-08-07",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-07",
+   "dateTo": "2027-08-10",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-08-07",
+   "dateTo": "2027-08-14",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-08-10",
+   "dateTo": "2027-08-14",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-08-14",
+   "dateTo": "2027-08-17",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-14",
+   "dateTo": "2027-08-21",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-08-17",
+   "dateTo": "2027-08-21",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-08-21",
+   "dateTo": "2027-08-24",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-08-21",
+   "dateTo": "2027-08-28",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-08-24",
+   "dateTo": "2027-08-28",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-28",
+   "dateTo": "2027-08-31",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-28",
+   "dateTo": "2027-09-04",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-31",
+   "dateTo": "2027-09-04",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-09-04",
+   "dateTo": "2027-09-07",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-09-04",
+   "dateTo": "2027-09-11",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-09-07",
+   "dateTo": "2027-09-11",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-09-11",
+   "dateTo": "2027-09-14",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-09-11",
+   "dateTo": "2027-09-18",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-09-14",
+   "dateTo": "2027-09-18",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-09-18",
+   "dateTo": "2027-09-21",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-09-18",
+   "dateTo": "2027-09-25",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-09-21",
+   "dateTo": "2027-09-25",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-09-25",
+   "dateTo": "2027-09-28",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-09-25",
+   "dateTo": "2027-10-02",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-09-28",
+   "dateTo": "2027-10-02",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-10-02",
+   "dateTo": "2027-10-09",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-10-05",
+   "dateTo": "2027-10-09",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-10-09",
+   "dateTo": "2027-10-12",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-10-09",
+   "dateTo": "2027-10-16",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-10-12",
+   "dateTo": "2027-10-16",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-10-16",
+   "dateTo": "2027-10-19",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-10-23",
+   "dateTo": "2027-10-26",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-10-23",
+   "dateTo": "2027-10-30",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-10-26",
+   "dateTo": "2027-10-30",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-10-30",
+   "dateTo": "2027-11-02",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-10-30",
+   "dateTo": "2027-11-06",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-02",
+   "dateTo": "2027-11-06",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-06",
+   "dateTo": "2027-11-09",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-09",
+   "dateTo": "2027-11-13",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-11-13",
+   "dateTo": "2027-11-16",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-13",
+   "dateTo": "2027-11-20",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-11-16",
+   "dateTo": "2027-11-20",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-11-20",
+   "dateTo": "2027-11-23",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-20",
+   "dateTo": "2027-11-27",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-23",
+   "dateTo": "2027-11-27",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-27",
+   "dateTo": "2027-11-30",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-27",
+   "dateTo": "2027-12-04",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-11-30",
+   "dateTo": "2027-12-04",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-04",
+   "dateTo": "2027-12-07",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-12-04",
+   "dateTo": "2027-12-11",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-12-07",
+   "dateTo": "2027-12-11",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-12-11",
+   "dateTo": "2027-12-14",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5560,
+    "Second Deck Suite": 5900
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-11",
+   "dateTo": "2027-12-18",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12260,
+    "Second Deck Suite": 13120
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-14",
+   "dateTo": "2027-12-18",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7420,
+    "Second Deck Suite": 7870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-18",
+   "dateTo": "2027-12-21",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6120,
+    "Second Deck Suite": 6490
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-18",
+   "dateTo": "2027-12-25",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 13480,
+    "Second Deck Suite": 14430
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-21",
+   "dateTo": "2027-12-25",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 8160,
+    "Second Deck Suite": 8650
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-25",
+   "dateTo": "2027-12-28",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6120,
+    "Second Deck Suite": 6490
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-25",
+   "dateTo": "2028-01-01",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 13480,
+    "Second Deck Suite": 14430
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-28",
+   "dateTo": "2028-01-01",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 8160,
+    "Second Deck Suite": 8650
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-01",
+   "dateTo": "2028-01-04",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6430,
+    "Second Deck Suite": 6820
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-01",
+   "dateTo": "2028-01-08",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 14160,
+    "Second Deck Suite": 15160
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-04",
+   "dateTo": "2028-01-08",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 8570,
+    "Second Deck Suite": 9080
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-08",
+   "dateTo": "2028-01-11",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-08",
+   "dateTo": "2028-01-15",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-11",
+   "dateTo": "2028-01-15",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-15",
+   "dateTo": "2028-01-18",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-15",
+   "dateTo": "2028-01-22",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-18",
+   "dateTo": "2028-01-22",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-22",
+   "dateTo": "2028-01-25",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-22",
+   "dateTo": "2028-01-29",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-01-25",
+   "dateTo": "2028-01-29",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-01-29",
+   "dateTo": "2028-02-01",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-01-29",
+   "dateTo": "2028-02-05",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-02-01",
+   "dateTo": "2028-02-05",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-02-05",
+   "dateTo": "2028-02-08",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-05",
+   "dateTo": "2028-02-12",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-08",
+   "dateTo": "2028-02-12",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-12",
+   "dateTo": "2028-02-15",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-12",
+   "dateTo": "2028-02-19",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-15",
+   "dateTo": "2028-02-19",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-19",
+   "dateTo": "2028-02-22",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-19",
+   "dateTo": "2028-02-26",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-22",
+   "dateTo": "2028-02-26",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-26",
+   "dateTo": "2028-02-29",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-26",
+   "dateTo": "2028-03-04",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-29",
+   "dateTo": "2028-03-04",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-04",
+   "dateTo": "2028-03-07",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-04",
+   "dateTo": "2028-03-11",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-07",
+   "dateTo": "2028-03-11",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-11",
+   "dateTo": "2028-03-14",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-11",
+   "dateTo": "2028-03-18",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-14",
+   "dateTo": "2028-03-18",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-18",
+   "dateTo": "2028-03-21",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-18",
+   "dateTo": "2028-03-25",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-21",
+   "dateTo": "2028-03-25",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-25",
+   "dateTo": "2028-03-28",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-25",
+   "dateTo": "2028-04-01",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-28",
+   "dateTo": "2028-04-01",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-01",
+   "dateTo": "2028-04-04",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-01",
+   "dateTo": "2028-04-08",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-04",
+   "dateTo": "2028-04-08",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-08",
+   "dateTo": "2028-04-11",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-08",
+   "dateTo": "2028-04-15",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-11",
+   "dateTo": "2028-04-15",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-15",
+   "dateTo": "2028-04-18",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-05-16",
+   "dateTo": "2028-05-20",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-05-20",
+   "dateTo": "2028-05-23",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-05-20",
+   "dateTo": "2028-05-27",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-05-23",
+   "dateTo": "2028-05-27",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-05-27",
+   "dateTo": "2028-05-30",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-05-27",
+   "dateTo": "2028-06-03",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-05-30",
+   "dateTo": "2028-06-03",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-03",
+   "dateTo": "2028-06-06",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-03",
+   "dateTo": "2028-06-10",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-06",
+   "dateTo": "2028-06-10",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-10",
+   "dateTo": "2028-06-13",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-10",
+   "dateTo": "2028-06-17",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-13",
+   "dateTo": "2028-06-17",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-17",
+   "dateTo": "2028-06-20",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-17",
+   "dateTo": "2028-06-24",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-20",
+   "dateTo": "2028-06-24",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-24",
+   "dateTo": "2028-06-27",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-24",
+   "dateTo": "2028-07-01",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-06-27",
+   "dateTo": "2028-07-01",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-01",
+   "dateTo": "2028-07-04",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-01",
+   "dateTo": "2028-07-08",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-04",
+   "dateTo": "2028-07-08",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-08",
+   "dateTo": "2028-07-11",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-08",
+   "dateTo": "2028-07-15",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-11",
+   "dateTo": "2028-07-15",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-15",
+   "dateTo": "2028-07-18",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-15",
+   "dateTo": "2028-07-22",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-18",
+   "dateTo": "2028-07-22",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-22",
+   "dateTo": "2028-07-25",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-22",
+   "dateTo": "2028-07-29",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-25",
+   "dateTo": "2028-07-29",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-29",
+   "dateTo": "2028-08-01",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-07-29",
+   "dateTo": "2028-08-05",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-01",
+   "dateTo": "2028-08-05",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-05",
+   "dateTo": "2028-08-08",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-08-05",
+   "dateTo": "2028-08-12",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-08-08",
+   "dateTo": "2028-08-12",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-08-12",
+   "dateTo": "2028-08-15",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-12",
+   "dateTo": "2028-08-19",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-15",
+   "dateTo": "2028-08-19",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-19",
+   "dateTo": "2028-08-22",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-19",
+   "dateTo": "2028-08-26",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-22",
+   "dateTo": "2028-08-26",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-26",
+   "dateTo": "2028-08-29",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2028-08-26",
+   "dateTo": "2028-09-02",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2028-08-29",
+   "dateTo": "2028-09-02",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2028-09-02",
+   "dateTo": "2028-09-05",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-02",
+   "dateTo": "2028-09-09",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-05",
+   "dateTo": "2028-09-09",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-09",
+   "dateTo": "2028-09-12",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-09",
+   "dateTo": "2028-09-16",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-12",
+   "dateTo": "2028-09-16",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-19",
+   "dateTo": "2028-09-23",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-23",
+   "dateTo": "2028-09-26",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-23",
+   "dateTo": "2028-09-30",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-26",
+   "dateTo": "2028-09-30",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-30",
+   "dateTo": "2028-10-03",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-30",
+   "dateTo": "2028-10-07",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-03",
+   "dateTo": "2028-10-07",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-07",
+   "dateTo": "2028-10-10",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-07",
+   "dateTo": "2028-10-14",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-10",
+   "dateTo": "2028-10-14",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-14",
+   "dateTo": "2028-10-17",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-10-14",
+   "dateTo": "2028-10-21",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-10-17",
+   "dateTo": "2028-10-21",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-10-21",
+   "dateTo": "2028-10-24",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-21",
+   "dateTo": "2028-10-28",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-24",
+   "dateTo": "2028-10-28",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-28",
+   "dateTo": "2028-10-31",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-28",
+   "dateTo": "2028-11-04",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-31",
+   "dateTo": "2028-11-04",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-04",
+   "dateTo": "2028-11-07",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-04",
+   "dateTo": "2028-11-11",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Nauta round trip",
+   "direction": "Nauta round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-07",
+   "dateTo": "2028-11-11",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-11",
+   "dateTo": "2028-11-14",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-11",
+   "dateTo": "2028-11-18",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-14",
+   "dateTo": "2028-11-18",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-18",
+   "dateTo": "2028-11-21",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-18",
+   "dateTo": "2028-11-25",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-21",
+   "dateTo": "2028-11-25",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-25",
+   "dateTo": "2028-11-28",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-25",
+   "dateTo": "2028-12-02",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-28",
+   "dateTo": "2028-12-02",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-02",
+   "dateTo": "2028-12-05",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-02",
+   "dateTo": "2028-12-09",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-05",
+   "dateTo": "2028-12-09",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-09",
+   "dateTo": "2028-12-12",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-09",
+   "dateTo": "2028-12-16",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-12",
+   "dateTo": "2028-12-16",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-16",
+   "dateTo": "2028-12-19",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5840,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-16",
+   "dateTo": "2028-12-23",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12880,
+    "Second Deck Suite": 13780
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-19",
+   "dateTo": "2028-12-23",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7790,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-23",
+   "dateTo": "2028-12-26",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6240,
+    "Second Deck Suite": 6620
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-23",
+   "dateTo": "2028-12-30",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 13750,
+    "Second Deck Suite": 14720
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-26",
+   "dateTo": "2028-12-30",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Nauta to Iquitos",
+   "direction": "Nauta to Iquitos",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 8570,
+    "Second Deck Suite": 9080
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-30",
+   "dateTo": "2029-01-02",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Iquitos to Nauta",
+   "direction": "Iquitos to Nauta",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6430,
+    "Second Deck Suite": 6820
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-12-30",
+   "dateTo": "2029-01-06",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Iquitos round trip",
+   "direction": "Iquitos round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 14160,
+    "Second Deck Suite": 15160
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  }
+ ],
+ "pricesNote": "Per person, cruise only, in US dollars, as Aqua Expeditions lists each departure in its booking system (read 13 Nov 2026), before any offer. Where a category shows no fare it is sold out or not sold on that date. Aqua's Early Bird, returning-guest and loyalty savings are applied when booking, so the fare you pay can be lower; we confirm it with Aqua before you commit. Aqua Nera's Early Bird saving is 20% on 2026 to 2028 departures, on Aqua's terms.",
+ "inclusions": [
+  "All meals on board",
+  "Selected premium wines and beer, and non-alcoholic drinks",
+  "Twice-daily excursions with naturalist guides",
+  "Group transfers on Aqua's recommended flights",
+  "Pacaya-Samiria entrance fee",
+  "Laundry",
+  "Starlink internet"
+ ],
+ "children": "",
+ "faqs": [
+  [
+   "How much does Aqua Nera cost?",
+   "Aqua lists three nights from about US$5,300 per person and seven nights from about US$12,800, by deck and date. Every departure is in the table on this page."
+  ],
+  [
+   "Where does Aqua Nera start?",
+   "In Iquitos, Peru, where Aqua's crew meets the noon flight. Depending on the season and route the ship boards at Iquitos or at Nauta, about two hours away."
+  ],
+  [
+   "What is the difference between Aqua Nera and Aria Amazon?",
+   "Both are Aqua's, both sail the same reserve. Aqua Nera (2021) has 20 suites, a plunge pool, spa, gym and screening room; Aria Amazon has 16 suites and is a little smaller."
+  ],
+  [
+   "What wildlife will I see?",
+   "Aqua names pink river dolphins, sloths, monkeys, caiman, macaws and other birds; nothing is promised in the wild."
+  ],
+  [
+   "High water or low water?",
+   "Roughly December to May the rivers are high and skiffs reach into the flooded forest; June to November the water drops and jungle trails open. Aqua sails both seasons with different routes."
+  ],
+  [
+   "What is included?",
+   "All meals, selected wines and beer, two guided excursions a day, group transfers, the Pacaya-Samiria fee, laundry and Starlink internet."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples",
+   "line": "A suite with a wall of glass on the river, and a spa."
+  },
+  {
+   "who": "Nature lovers",
+   "line": "Skiffs at dawn and dusk into Pacaya-Samiria."
+  },
+  {
+   "who": "Families",
+   "line": "Connecting suites and a pool on the top deck."
+  }
+ ],
+ "sources": [
+  "https://www.aquaexpeditions.com/cruise-ships/aqua-nera",
+  "https://www.aquaexpeditions.com/destinations/amazon-river-cruise",
+  "https://www.aquaexpeditions.com/about-us",
+  "https://book.aquaexpeditions.com (departures and fares)"
+ ],
+ "film": {
+  "id": "WlHWXzRL4WI",
+  "title": "Sail the Peruvian Amazon with Aqua Nera"
+ },
+ "glance": {
+  "route": "Iquitos and Nauta"
+ }
+}

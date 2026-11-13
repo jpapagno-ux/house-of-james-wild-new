@@ -1,0 +1,4431 @@
+{
+ "slug": "aqua-mekong",
+ "name": "Aqua Mekong",
+ "ledgerId": "VSL-2026-000032",
+ "brandLine": "Aqua Expeditions",
+ "operator": "Aqua Expeditions",
+ "status": "sailing",
+ "deckPlans": [],
+ "why": [],
+ "rateBasis": "per-cruise",
+ "type": "riverboat",
+ "waters": "Mekong River and Tonle Sap, Cambodia and Vietnam",
+ "country": "Cambodia, Vietnam",
+ "seo": {
+  "title": "Aqua Mekong: Luxury Mekong River Cruise | James Wild & Co",
+  "description": "Aqua Mekong by Aqua Expeditions: 20 suites, 40 guests, 40 crew. Three, four and seven nights between Ho Chi Minh City, Phnom Penh and Siem Reap, with every departure and fare.",
+  "keywords": [
+   "Aqua Mekong",
+   "luxury Mekong river cruise",
+   "Mekong cruise Cambodia Vietnam",
+   "Phnom Penh to Siem Reap cruise",
+   "Aqua Expeditions Mekong"
+  ]
+ },
+ "tagline": "Twenty suites, a 1:1 crew, and the Mekong from Ho Chi Minh City to the Tonle Sap.",
+ "answer": "Aqua Mekong is Aqua Expeditions' 20-suite river ship on the Mekong. She carries 40 guests with 40 crew and sails three, four and seven nights between Ho Chi Minh City, Phnom Penh and Siem Reap, through Cambodia's villages and temples and Vietnam's delta, all year. She suits travellers who want culture by day and a five-star ship at night.",
+ "facts": [
+  [
+   "Suites",
+   "20 design suites of 30 sq m (322 sq ft); 644 sq ft interconnecting"
+  ],
+  [
+   "Guests",
+   "40"
+  ],
+  [
+   "Crew",
+   "40 (a 1:1 crew-to-guest ratio)"
+  ],
+  [
+   "Decks",
+   "3"
+  ],
+  [
+   "Launched",
+   "2014"
+  ],
+  [
+   "Route",
+   "Ho Chi Minh City, Phnom Penh and Siem Reap; 3, 4 or 7 nights"
+  ],
+  [
+   "Season",
+   "All year: high water mid-August to November, low water December to mid-August"
+  ],
+  [
+   "Children",
+   "Ask us"
+  ]
+ ],
+ "overview": [
+  "Aqua Mekong carries 40 guests in 20 design suites across three decks, with 40 crew: one for every guest, per Aqua Expeditions. Every suite is 30 sq m (322 sq ft) with a California king or twin beds; some have a balcony with a daybed, the others panoramic windows that open and a sofa that becomes a single bed, and pairs connect to make 644 sq ft.",
+  "On board are a plunge pool on the top deck, a spa, a gym, a private cinema, an indoor lounge and the dining room, and speedboats take guests ashore twice a day. The river decides the route: from mid-August to November the high water carries her up the Tonle Sap toward Siem Reap; from December to mid-August, in the low water, Siem Reap departures switch to Phnom Penh with a flight, which Aqua includes."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/hero",
+  "alt": "Aqua Mekong river ship on the Mekong",
+  "credit": "Aqua Expeditions"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/exterior-front",
+   "alt": "Aqua Mekong seen from the front on the river",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/vessel-20",
+   "alt": "Aqua Mekong sailing the Mekong in Cambodia",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/sporleder-2",
+   "alt": "Aqua Mekong on the Mekong at golden hour",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/plunge-pool",
+   "alt": "Plunge pool on Aqua Mekong's top deck",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/lounge",
+   "alt": "Indoor lounge on Aqua Mekong",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/dining",
+   "alt": "Dining room on Aqua Mekong",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/cinema",
+   "alt": "Private cinema on Aqua Mekong",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/spa",
+   "alt": "Spa treatment room on Aqua Mekong",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/food",
+   "alt": "Dinner served on Aqua Mekong",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/biking",
+   "alt": "Guests cycling through the Cambodian countryside on an Aqua Mekong excursion",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/kayaking",
+   "alt": "Kayaking on the Mekong with Aqua Expeditions",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/kayaking-2",
+   "alt": "Kayaks among flooded trees on the Tonle Sap",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/apsara",
+   "alt": "Khmer Apsara dance performed for Aqua Mekong guests",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/royal-palace",
+   "alt": "The Royal Palace in Phnom Penh",
+   "credit": "Aqua Expeditions"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "First Deck Suite",
+   "count": null,
+   "size": "30 sq m (322 sq ft)",
+   "beds": "California king or twin",
+   "deck": "First deck",
+   "features": [
+    "Panoramic windows",
+    "Walk-in rain shower",
+    "Air conditioning",
+    "Safe",
+    "Interconnecting pairs (644 sq ft)"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/suite",
+    "alt": "Design Suite with panoramic windows on Aqua Mekong",
+    "credit": "Aqua Expeditions"
+   }
+  },
+  {
+   "type": "Second Deck Suite",
+   "count": null,
+   "size": "30 sq m (322 sq ft)",
+   "beds": "California king or twin",
+   "deck": "Second deck",
+   "features": [
+    "Balcony with daybed on suites so designed",
+    "Walk-in rain shower",
+    "Air conditioning",
+    "Safe",
+    "Interconnecting pairs (644 sq ft)"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mekong/suite-balcony",
+    "alt": "Design Suite with a balcony on Aqua Mekong",
+    "credit": "Aqua Expeditions"
+   }
+  }
+ ],
+ "itineraries": [
+  {
+   "name": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Receive a warm welcome aboard Aqua Mekong over custom sundowners like the Salted Watermelon Crush with Thai basil."
+    },
+    {
+     "day": 2,
+     "title": "My An Hung",
+     "place": "Mekong River, Ka’Om Samnor-Vinh Xuong Border Crossing, Chau Doc, My An Hung",
+     "lat": 10.4,
+     "lng": 105.6,
+     "summary": "Say ‘Good Morning, Vietnam’ while we cross the border and sail towards Tan Chau."
+    },
+    {
+     "day": 3,
+     "title": "Cai Be",
+     "place": "Mekong River, Binh Thanh, Sa Dec, Cai Be",
+     "lat": 10.33,
+     "lng": 106.03,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 4,
+     "title": "My Tho",
+     "place": "Mekong River, My Tho, Ho Chi Minh",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "After a hearty breakfast, we bid farewell to Aqua Mekong."
+    }
+   ]
+  },
+  {
+   "name": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "nights": 3,
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "season": "High water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Receive a warm welcome aboard Aqua Mekong over custom sundowners like the Salted Watermelon Crush with Thai basil."
+    },
+    {
+     "day": 2,
+     "title": "Kampong Chhnang",
+     "place": "Tonle Sap River, Koh Chen, Kampong Chhnang",
+     "lat": 12.25,
+     "lng": 104.67,
+     "summary": "This morning, we visit Koh Chen, a silversmith village known for its fine craftsmanship."
+    },
+    {
+     "day": 3,
+     "title": "Moat Khla",
+     "place": "Mouth of the Tonle Sap Lake, Chhnok Tru, Moat Khla",
+     "lat": 12.82,
+     "lng": 104.22,
+     "summary": "Continue exploring the remote communities around the Tonle Sap Lake, designated as a UNESCO Biosphere Reserve in 1997."
+    },
+    {
+     "day": 4,
+     "title": "Siem Reap",
+     "place": "Tonle Sap Lake, Prek Toal, Siem Reap",
+     "lat": 13.25,
+     "lng": 103.83,
+     "summary": "Set off by skiff into the 22,000-hectare Prek Toal Core Bird Reserve, one of the largest freshwater bodies in Asia and the last refuge in Southeast Asia for large."
+    }
+   ]
+  },
+  {
+   "name": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "nights": 3,
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "season": "Low water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Receive a warm welcome aboard Aqua Mekong over custom sundowners like the Salted Watermelon Crush with Thai basil."
+    },
+    {
+     "day": 2,
+     "title": "Kampong Prasat",
+     "place": "Tonle Sap River, Koh Chen, Kampong Prasat",
+     "lat": 11.86,
+     "lng": 104.8,
+     "summary": "In the renowned silversmith village of Koh Chen, we watch artisans produce the magnificent silverware favored by Khmer royalty."
+    },
+    {
+     "day": 3,
+     "title": "Kampong Tralach",
+     "place": "Tonle Sap River, Kampong Chhnang, Kampong Tralach",
+     "lat": 11.9,
+     "lng": 104.77,
+     "summary": "In the cooler hours of the morning, we head out on skiffs to visit traditional potters and palm sugar producers in the village of Andong Russei."
+    },
+    {
+     "day": 4,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    }
+   ]
+  },
+  {
+   "name": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "nights": 3,
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "season": "Low water, December to February",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Receive a warm welcome aboard Aqua Mekong over custom sundowners like the Salted Watermelon Crush with Thai basil."
+    },
+    {
+     "day": 2,
+     "title": "Kampong Chhnang",
+     "place": "Tonle Sap River, Koh Chen, Kampong Chhnang",
+     "lat": 12.25,
+     "lng": 104.67,
+     "summary": "In the renowned silversmith village of Koh Chen, we watch artisans produce the magnificent silverware favored by Khmer royalty."
+    },
+    {
+     "day": 3,
+     "title": "Phnom Neang Kangrey",
+     "place": "Tonle Sap River, Phat Sandai, Phnom Neang Kangrey",
+     "lat": 12.4,
+     "lng": 104.6,
+     "summary": "In the morning, we visit Phat Sandai, a remote village where schools, churches, and even the police station float along the riverbank."
+    },
+    {
+     "day": 4,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuk-tuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    }
+   ]
+  },
+  {
+   "name": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "nights": 4,
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Marina My Tho Port",
+     "place": "Mekong River, Marina My Tho Port, Ho Chi Minh",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "We will meet you at the designated meeting point in Ho Chi Minh City and escort you by air-conditioned coach to the Marina My Tho dock, where your voyage aboard Aqua."
+    },
+    {
+     "day": 2,
+     "title": "My An Hung",
+     "place": "Mekong River, Binh Thanh, Sa Dec, My An Hung",
+     "lat": 10.4,
+     "lng": 105.6,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 3,
+     "title": "Vinh Xuong",
+     "place": "Mekong River, Chau Doc, Vinh Xuong, Ka’Om Samnor Border Crossing",
+     "lat": 10.89,
+     "lng": 105.17,
+     "summary": "Travel by skiff along Bassac Canal to the vibrant border town of Chau Doc where we will take a rickshaw called xe loi for a ride around the local town and market."
+    },
+    {
+     "day": 4,
+     "title": "Preah Prosop",
+     "place": "Mekong River, Koh Okhna Tey, Preah Prosop",
+     "lat": 11.66,
+     "lng": 105,
+     "summary": "On this river of time, we admire dexterous Khmer artisans dyeing and weaving kroma, the ubiquitous fabric no Khmer lives without."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuk-tuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    }
+   ]
+  },
+  {
+   "name": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "nights": 4,
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "season": "Low water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Welcome aboard Aqua Mekong, and step into your floating sanctuary where floor-to-ceiling windows reveal panoramic riverscapes."
+    },
+    {
+     "day": 2,
+     "title": "Kampong Prasat",
+     "place": "Tonle Sap River, Koh Chen, Kampong Prasat",
+     "lat": 11.86,
+     "lng": 104.8,
+     "summary": "In the renowned silversmith village of Koh Chen, we watch artisans produce the magnificent silverware favored by Khmer royalty."
+    },
+    {
+     "day": 3,
+     "title": "Kampong Tralach",
+     "place": "Tonle Sap River, Kampong Chhnang, Kampong Tralach",
+     "lat": 11.9,
+     "lng": 104.77,
+     "summary": "In the cooler hours of the morning, we head out on skiffs to visit traditional potters and palm sugar producers in the village of Andong Russei."
+    },
+    {
+     "day": 4,
+     "title": "Preah Prosop",
+     "place": "Mekong River, Koh Oknha Tey, Preah Prosop",
+     "lat": 11.66,
+     "lng": 105,
+     "summary": "On this river of time, we admire dexterous Khmer artisans dyeing and weaving kroma, the ubiquitous fabric no Khmer lives without."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    }
+   ]
+  },
+  {
+   "name": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "nights": 4,
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "season": "Low water, December to February",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Welcome aboard Aqua Mekong, and step into your floating sanctuary where floor-to-ceiling windows reveal panoramic riverscapes."
+    },
+    {
+     "day": 2,
+     "title": "Kampong Chhnang",
+     "place": "Tonle Sap River, Koh Chen, Kampong Chhnang",
+     "lat": 12.25,
+     "lng": 104.67,
+     "summary": "In the renowned silversmith village of Koh Chen, we watch artisans produce the magnificent silverware favored by Khmer royalty."
+    },
+    {
+     "day": 3,
+     "title": "Phnom Neang Kangrey",
+     "place": "Tonle Sap River, Phat Sandai, Phnom Neang Kangrey",
+     "lat": 12.4,
+     "lng": 104.6,
+     "summary": "In the morning, we visit Phat Sandai, a remote village where schools, churches, and even the police station float along the riverbank."
+    },
+    {
+     "day": 4,
+     "title": "Preah Prosop",
+     "place": "Mekong River, Koh Oknha Tey, Preah Prosop",
+     "lat": 11.66,
+     "lng": 105,
+     "summary": "On this river of time, we admire dexterous Khmer artisans dyeing and weaving kroma, the ubiquitous fabric no Khmer lives without."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuk-tuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    }
+   ]
+  },
+  {
+   "name": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "nights": 4,
+   "direction": "Siem Reap to Phnom Penh",
+   "season": "High water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Siem Reap",
+     "place": "Tonle Sap Lake, Siem Reap",
+     "lat": 13.25,
+     "lng": 103.83,
+     "summary": "Gather at our designated meeting point in Siem Reap before boarding an air-conditioned van for a scenic 45-minute drive through the countryside to the Tonle Sap Lake."
+    },
+    {
+     "day": 2,
+     "title": "Moat Khla",
+     "place": "Tonle Sap Lake, Prek Toal, Moat Khla",
+     "lat": 12.82,
+     "lng": 104.22,
+     "summary": "Set off by skiff into the 22,000-hectare Prek Toal Core Bird Reserve, one of the largest freshwater bodies in Asia and the last refuge in Southeast Asia for large."
+    },
+    {
+     "day": 3,
+     "title": "Kampong Chhnang",
+     "place": "Tonle Sap Lake, Chhnok Tru, Kampong Chhnang",
+     "lat": 12.25,
+     "lng": 104.67,
+     "summary": "Explore remote villages around the Tonle Sap Lake, designated as a UNESCO Biosphere Reserve in 1997."
+    },
+    {
+     "day": 4,
+     "title": "Koh Oknha Tey",
+     "place": "Tonle Sap and Mekong River, Koh Chen, Koh Oknha Tey",
+     "lat": 11.53,
+     "lng": 104.98,
+     "summary": "This morning, we visit Koh Chen, a silversmith village known for its fine craftsmanship."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    }
+   ]
+  },
+  {
+   "name": "4-night Kratie Exploration Cruise",
+   "nights": 4,
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Welcome aboard Aqua Mekong, and step into your floating sanctuary where floor-to-ceiling windows reveal panoramic river scenes."
+    },
+    {
+     "day": 2,
+     "title": "Phnom Han Chey",
+     "place": "Mekong River, Angkor Ban, Prek Dam Bok, Phnom Han Chey",
+     "lat": 12.15,
+     "lng": 105.42,
+     "summary": "The day begins at Angkor Ban, a Khmer village renowned for its beautifully preserved wooden houses."
+    },
+    {
+     "day": 3,
+     "title": "Kratie",
+     "place": "Mekong River, Kampi River, Kratie, Koh Trong Island",
+     "lat": 12.49,
+     "lng": 106.02,
+     "summary": "Travel by skiff along the mighty Mekong to the Kampi River, a lush and biodiverse haven that serves as Southeast Asia’s exclusive habitat of the Irrawaddy dolphin."
+    },
+    {
+     "day": 4,
+     "title": "Peam Chikang",
+     "place": "Mekong River, Kampong Cham, Peam Chikang, Koh Andet",
+     "lat": 11.95,
+     "lng": 105.55,
+     "summary": "In the cool hours of the morning, we set off by skiff to a charming riverside town known for its unique blend of Khmer and French architecture."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "nights": 7,
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "season": "High water",
+   "days": [
+    {
+     "day": 1,
+     "title": "My Tho",
+     "place": "Mekong River, My Tho, Ho Chi Minh",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "We will meet you at the designated meeting point in Ho Chi Minh City and escort you by air-conditioned coach to the Marina My Tho dock, where your voyage aboard Aqua."
+    },
+    {
+     "day": 2,
+     "title": "Sa Dec",
+     "place": "Mekong River, Binh Thanh, Sa Dec, My An Hung",
+     "lat": 10.29,
+     "lng": 105.76,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 3,
+     "title": "Vinh Xuong",
+     "place": "Mekong River, Chau Doc, Vinh Xuong, Ka’Om Samnor Border",
+     "lat": 10.89,
+     "lng": 105.17,
+     "summary": "Travel by skiff along Bassac Canal to the vibrant border town of Chau Doc where we will take a rickshaw called xe loi for a ride around the local town and market."
+    },
+    {
+     "day": 4,
+     "title": "Preah Prosop",
+     "place": "Mekong River, Koh Okhna Tey, Preah Prosop",
+     "lat": 11.66,
+     "lng": 105,
+     "summary": "On this river of time, we admire dexterous Khmer artisans dyeing and weaving kroma, the ubiquitous fabric no Khmer lives without."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    },
+    {
+     "day": 6,
+     "title": "Kampong Chhnang",
+     "place": "Tonle Sap River, Koh Chen, Kampong Chhnang",
+     "lat": 12.25,
+     "lng": 104.67,
+     "summary": "This morning, we visit Koh Chen, a silversmith village known for its fine craftsmanship."
+    },
+    {
+     "day": 7,
+     "title": "Moat Khla",
+     "place": "Mouth of the Tonle Sap Lake, Chhnok Tru, Moat Khla",
+     "lat": 12.82,
+     "lng": 104.22,
+     "summary": "Continue exploring the remote communities around the Tonle Sap Lake, designated as a UNESCO Biosphere Reserve in 1997."
+    },
+    {
+     "day": 8,
+     "title": "Siem Reap",
+     "place": "Tonle Sap Lake, Prek Toal, Siem Reap",
+     "lat": 13.25,
+     "lng": 103.83,
+     "summary": "Set off by skiff into the 22,000-hectare Prek Toal Core Bird Reserve, one of the largest freshwater bodies in Asia and the last refuge in Southeast Asia for large."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water",
+   "nights": 7,
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water)",
+   "season": "Low water",
+   "days": [
+    {
+     "day": 1,
+     "title": "My Tho",
+     "place": "My Tho, Ho Chi Minh",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "We will meet you at the designated meeting point in Ho Chi Minh City and escort you by air-conditioned coach to the Marina My Tho dock, where your voyage aboard Aqua."
+    },
+    {
+     "day": 2,
+     "title": "My An Hung",
+     "place": "Mekong River, Binh Thanh, Sa Dec, My An Hung",
+     "lat": 10.4,
+     "lng": 105.6,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 3,
+     "title": "Vinh Xuong",
+     "place": "Mekong River, Chau Doc, Vinh Xuong, Ka’Om Samnor Border Crossing",
+     "lat": 10.89,
+     "lng": 105.17,
+     "summary": "Travel by skiff along Bassac Canal to the vibrant border town of Chau Doc where we will take a rickshaw called xe loi for a ride around the local town and market."
+    },
+    {
+     "day": 4,
+     "title": "Preah Prosop",
+     "place": "Mekong River, Koh Okhna Tey, Preah Prosop",
+     "lat": 11.66,
+     "lng": 105,
+     "summary": "On this river of time, we admire dexterous Khmer artisans dyeing and weaving kroma, the ubiquitous fabric no Khmer lives without."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    },
+    {
+     "day": 6,
+     "title": "Kampong Prasat",
+     "place": "Tonle Sap River, Koh Chen, Kampong Prasat",
+     "lat": 11.86,
+     "lng": 104.8,
+     "summary": "In the renowned silversmith village of Koh Chen, we watch artisans produce the magnificent silverware favored by Khmer royalty."
+    },
+    {
+     "day": 7,
+     "title": "Kampong Tralach",
+     "place": "Tonle Sap River, Kampong Chhnang, Kampong Tralach",
+     "lat": 11.9,
+     "lng": 104.77,
+     "summary": "In the cooler hours of the morning, we head out on skiffs to visit traditional potters and palm sugar producers in the village of Andong Russei."
+    },
+    {
+     "day": 8,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Customized exploration of Phnom Penh and disembarkation."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water, December to February",
+   "nights": 7,
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "season": "Low water, December to February",
+   "days": [
+    {
+     "day": 1,
+     "title": "My Tho",
+     "place": "Mekong River, My Tho",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "We will meet you at the designated meeting point in Ho Chi Minh City and escort you by air-conditioned coach to the Marina My Tho dock, where your voyage aboard Aqua."
+    },
+    {
+     "day": 2,
+     "title": "My An Hung",
+     "place": "Mekong River, Binh Thanh, Sa Dec, My An Hung",
+     "lat": 10.4,
+     "lng": 105.6,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 3,
+     "title": "Vinh Xuong",
+     "place": "Mekong River, Chau Doc, Vinh Xuong, Ka’Om Samnor Border Crossing",
+     "lat": 10.89,
+     "lng": 105.17,
+     "summary": "Travel by skiff along Bassac Canal to the vibrant border town of Chau Doc where we will take a rickshaw called xe loi for a ride around the local town and market."
+    },
+    {
+     "day": 4,
+     "title": "Preah Prosop",
+     "place": "Mekong River, Koh Oknha Tey, Preah Prosop",
+     "lat": 11.66,
+     "lng": 105,
+     "summary": "On this river of time, we admire dexterous Khmer artisans dyeing and weaving kroma, the ubiquitous fabric no Khmer lives without."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuk-tuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    },
+    {
+     "day": 6,
+     "title": "Kampong Chhnang",
+     "place": "Tonle Sap River, Koh Chen, Kampong Chhnang",
+     "lat": 12.25,
+     "lng": 104.67,
+     "summary": "In the renowned silversmith village of Koh Chen, we watch artisans produce the magnificent silverware favored by Khmer royalty."
+    },
+    {
+     "day": 7,
+     "title": "Phnom Neang Kangrey",
+     "place": "Tonle Sap River, Phat Sandai, Phnom Neang Kangrey",
+     "lat": 12.4,
+     "lng": 104.6,
+     "summary": "In the morning, we visit Phat Sandai, a remote village where schools, churches, and even the police station float along the riverbank."
+    },
+    {
+     "day": 8,
+     "title": "Phnom Penh",
+     "place": "Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Customized exploration of Phnom Penh and disembarkation."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water",
+   "nights": 7,
+   "direction": "Phnom Penh to Ho Chi Minh City (low water)",
+   "season": "Low water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Welcome aboard Aqua Mekong, and step into your floating sanctuary where floor-to-ceiling windows reveal panoramic riverscapes."
+    },
+    {
+     "day": 2,
+     "title": "Kampong Prasat",
+     "place": "Tonle Sap River, Koh Chen, Kampong Prasat",
+     "lat": 11.86,
+     "lng": 104.8,
+     "summary": "In the renowned silversmith village of Koh Chen, we watch artisans produce the magnificent silverware favored by Khmer royalty."
+    },
+    {
+     "day": 3,
+     "title": "Kampong Tralach",
+     "place": "Tonle Sap River, Kampong Chhnang, Kampong Tralach",
+     "lat": 11.9,
+     "lng": 104.77,
+     "summary": "In the cooler hours of the morning, we head out on skiffs to visit traditional potters and palm sugar producers in the village of Andong Russei."
+    },
+    {
+     "day": 4,
+     "title": "Preah Prosop",
+     "place": "Mekong River, Koh Okhna Tey, Preah Prosop",
+     "lat": 11.66,
+     "lng": 105,
+     "summary": "On this river of time, we admire dexterous Khmer artisans dyeing and weaving kroma, the ubiquitous fabric no Khmer lives without."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    },
+    {
+     "day": 6,
+     "title": "My An Hung",
+     "place": "Mekong River, Ka’Om Samnor-Vinh Xuong Border Crossing, Chau Doc, My An Hung",
+     "lat": 10.4,
+     "lng": 105.6,
+     "summary": "Say ‘Good Morning, Vietnam’ while we cross the border and sail towards Tan Chau."
+    },
+    {
+     "day": 7,
+     "title": "Cai Be",
+     "place": "Mekong River, Binh Thanh, Sa Dec, Cai Be",
+     "lat": 10.33,
+     "lng": 106.03,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 8,
+     "title": "My Tho",
+     "place": "Mekong River, My Tho, Ho Chi Minh",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "After a hearty breakfast, we bid farewell to Aqua Mekong."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "nights": 7,
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "season": "Low water, December to February",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Welcome aboard Aqua Mekong, and step into your floating sanctuary where floor-to-ceiling windows reveal panoramic riverscapes."
+    },
+    {
+     "day": 2,
+     "title": "Kampong Chhnang",
+     "place": "Tonle Sap River, Koh Chen, Kampong Chhnang",
+     "lat": 12.25,
+     "lng": 104.67,
+     "summary": "In the renowned silversmith village of Koh Chen, we watch artisans produce the magnificent silverware favored by Khmer royalty."
+    },
+    {
+     "day": 3,
+     "title": "Phnom Neang Kangrey",
+     "place": "Tonle Sap River, Phat Sandai, Phnom Neang Kangrey",
+     "lat": 12.4,
+     "lng": 104.6,
+     "summary": "In the morning, we visit Phat Sandai, a remote village where schools, churches, and even the police station float along the riverbank."
+    },
+    {
+     "day": 4,
+     "title": "Preah Prosop",
+     "place": "Mekong River, Koh Oknha Tey, Preah Prosop",
+     "lat": 11.66,
+     "lng": 105,
+     "summary": "On this river of time, we admire dexterous Khmer artisans dyeing and weaving kroma, the ubiquitous fabric no Khmer lives without."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuk-tuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    },
+    {
+     "day": 6,
+     "title": "My An Hung",
+     "place": "Mekong River, Ka’Om Samnor, Vinh Xuong Border Crossing, Chau Doc, My An Hung",
+     "lat": 10.4,
+     "lng": 105.6,
+     "summary": "Say ‘Good Morning, Vietnam’ while we cross the border and sail towards Tan Chau."
+    },
+    {
+     "day": 7,
+     "title": "Cai Be",
+     "place": "Mekong River, Binh Thanh, Sa Dec, Cai Be",
+     "lat": 10.33,
+     "lng": 106.03,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 8,
+     "title": "My Tho",
+     "place": "Mekong River, My Tho, Ho Chi Minh",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "After a hearty breakfast, we bid farewell to Aqua Mekong."
+    }
+   ]
+  },
+  {
+   "name": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "season": "High water",
+   "days": [
+    {
+     "day": 1,
+     "title": "Siem Reap",
+     "place": "Tonle Sap Lake, Siem Reap",
+     "lat": 13.25,
+     "lng": 103.83,
+     "summary": "Gather at our designated meeting point in Siem Reap before boarding an air-conditioned van for a scenic 45-minute drive through the countryside to the Tonle Sap Lake."
+    },
+    {
+     "day": 2,
+     "title": "Moat Khla",
+     "place": "Tonle Sap Lake, Prek Toal, Moat Khla",
+     "lat": 12.82,
+     "lng": 104.22,
+     "summary": "Set off by skiff into the 22,000-hectare Prek Toal Core Bird Reserve, one of the largest freshwater bodies in Asia and the last refuge in Southeast Asia for large."
+    },
+    {
+     "day": 3,
+     "title": "Kampong Chhnang",
+     "place": "Tonle Sap Lake, Chhnok Tru, Kampong Chhnang",
+     "lat": 12.25,
+     "lng": 104.67,
+     "summary": "Explore remote villages around the Tonle Sap Lake, designated as a UNESCO Biosphere Reserve in 1997."
+    },
+    {
+     "day": 4,
+     "title": "Koh Okhna Tey",
+     "place": "Tonle Sap and Mekong River, Koh Chen, Koh Okhna Tey",
+     "lat": 11.53,
+     "lng": 104.98,
+     "summary": "This morning, we visit Koh Chen, a silversmith village known for its fine craftsmanship favored by Khmer royalty."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    },
+    {
+     "day": 6,
+     "title": "My An Hung",
+     "place": "Mekong River, Ka’Om Samnor-Vinh Xuong Border Crossing, Chau Doc, My An Hung",
+     "lat": 10.4,
+     "lng": 105.6,
+     "summary": "Say ‘Good Morning, Vietnam’ while we cross the border and sail towards Tan Chau."
+    },
+    {
+     "day": 7,
+     "title": "Cai Be",
+     "place": "Binh Thanh, Sa Dec, Cai Be, Mekong River",
+     "lat": 10.33,
+     "lng": 106.03,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 8,
+     "title": "My Tho",
+     "place": "Mekong River, My Tho, Ho Chi Minh",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "After a hearty breakfast, we bid farewell to Aqua Mekong."
+    }
+   ]
+  },
+  {
+   "name": "7-night Kratie Expedition Cruise",
+   "nights": 7,
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "days": [
+    {
+     "day": 1,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "Welcome aboard Aqua Mekong, and step into your floating sanctuary where floor-to-ceiling windows reveal panoramic riverscapes."
+    },
+    {
+     "day": 2,
+     "title": "Phnom Hanchey",
+     "place": "Mekong River, Angkor Ban, Prek Dam Bok, Phnom Hanchey",
+     "lat": 12.15,
+     "lng": 105.42,
+     "summary": "The day begins at Angkor Ban, a Khmer village renowned for its beautifully preserved wooden houses."
+    },
+    {
+     "day": 3,
+     "title": "Kratie",
+     "place": "Mekong River, Kampi River, Kratie, Koh Trong Island",
+     "lat": 12.49,
+     "lng": 106.02,
+     "summary": "Travel by skiff along the mighty Mekong to the Kampi River, a lush and biodiverse haven that serves as Southeast Asia’s exclusive habitat of the Irrawaddy dolphin."
+    },
+    {
+     "day": 4,
+     "title": "Peam Chikang",
+     "place": "Mekong River, Kampong Cham, Peam Chikang, Koh Andet",
+     "lat": 11.95,
+     "lng": 105.55,
+     "summary": "In the cool hours of the morning, we set off by skiff to a charming riverside town known for its unique blend of Khmer and French architecture."
+    },
+    {
+     "day": 5,
+     "title": "Phnom Penh",
+     "place": "Mekong River, Phnom Penh",
+     "lat": 11.5564,
+     "lng": 104.9282,
+     "summary": "We introduce guests to the vibrant Cambodian capital by motorized tuktuk, with stops at the Royal Palace, Silver Pagoda and the National Museum of Cambodia, home to the."
+    },
+    {
+     "day": 6,
+     "title": "My An Hung",
+     "place": "Mekong River, Ka’Om Samnor, Vinh Xoung Border Crossing, Chau Doc, My An Hung",
+     "lat": 10.4,
+     "lng": 105.6,
+     "summary": "Say ‘Good Morning, Vietnam’ while we cross the border and sail towards Tan Chau."
+    },
+    {
+     "day": 7,
+     "title": "Cai Be",
+     "place": "Mekong River, Binh Thanh, Sa Dec, Cai Be",
+     "lat": 10.33,
+     "lng": 106.03,
+     "summary": "Begin the day at Binh Thanh mat weaving village to bike through local markets, fruit plantations, and fish farms."
+    },
+    {
+     "day": 8,
+     "title": "My Tho",
+     "place": "Mekong River, My Tho, Ho Chi Minh",
+     "lat": 10.36,
+     "lng": 106.36,
+     "summary": "After a hearty breakfast, we bid farewell to Aqua Mekong."
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2026-11-17",
+   "dateTo": "2026-11-20",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 4940,
+    "Second Deck Suite": 5310
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "dateTo": "2026-11-24",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 6590,
+    "Second Deck Suite": 7090
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "dateTo": "2026-11-27",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 10890,
+    "Second Deck Suite": 11820
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "dateTo": "2026-11-27",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 4940,
+    "Second Deck Suite": 5310
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "dateTo": "2026-12-01",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 6590,
+    "Second Deck Suite": 7090
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2026-12-01",
+   "dateTo": "2026-12-04",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 4940,
+    "Second Deck Suite": 5310
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2026-12-04",
+   "dateTo": "2026-12-08",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6590,
+    "Second Deck Suite": 7090
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2026-12-08",
+   "dateTo": "2026-12-11",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 4940,
+    "Second Deck Suite": 5310
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2026-12-11",
+   "dateTo": "2026-12-15",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 6590,
+    "Second Deck Suite": 7090
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-11",
+   "dateTo": "2026-12-18",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water, December to February",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 10890,
+    "Second Deck Suite": 11820
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-15",
+   "dateTo": "2026-12-18",
+   "season": "Low water, December to February",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 4940,
+    "Second Deck Suite": 5310
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2026-12-18",
+   "dateTo": "2026-12-22",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 7250,
+    "Second Deck Suite": 7830
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-18",
+   "dateTo": "2026-12-25",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12040,
+    "Second Deck Suite": 12980
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-22",
+   "dateTo": "2026-12-25",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5440,
+    "Second Deck Suite": 5870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-25",
+   "dateTo": "2026-12-29",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 7250,
+    "Second Deck Suite": 7830
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-25",
+   "dateTo": "2027-01-01",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water, December to February",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12040,
+    "Second Deck Suite": 12980
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2026-12-29",
+   "dateTo": "2027-01-01",
+   "season": "Low water, December to February",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5440,
+    "Second Deck Suite": 5870
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-01",
+   "dateTo": "2027-01-05",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 7480,
+    "Second Deck Suite": 8020
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-01",
+   "dateTo": "2027-01-08",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 12370,
+    "Second Deck Suite": 13400
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-05",
+   "dateTo": "2027-01-08",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5610,
+    "Second Deck Suite": 6020
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-08",
+   "dateTo": "2027-01-12",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-12",
+   "dateTo": "2027-01-15",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-15",
+   "dateTo": "2027-01-19",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2027-01-19",
+   "dateTo": "2027-01-22",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-01-29",
+   "dateTo": "2027-02-02",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-01-29",
+   "dateTo": "2027-02-05",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-02-02",
+   "dateTo": "2027-02-05",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-02-05",
+   "dateTo": "2027-02-09",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2027-02-09",
+   "dateTo": "2027-02-12",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-02-12",
+   "dateTo": "2027-02-16",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-02-16",
+   "dateTo": "2027-02-19",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-02-19",
+   "dateTo": "2027-02-23",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-02-19",
+   "dateTo": "2027-02-26",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water, December to February",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-02-23",
+   "dateTo": "2027-02-26",
+   "season": "Low water, December to February",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-02-26",
+   "dateTo": "2027-03-02",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-02-26",
+   "dateTo": "2027-03-05",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-03-02",
+   "dateTo": "2027-03-05",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-03-05",
+   "dateTo": "2027-03-09",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-03-09",
+   "dateTo": "2027-03-12",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-03-12",
+   "dateTo": "2027-03-16",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-03-16",
+   "dateTo": "2027-03-19",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-03-26",
+   "dateTo": "2027-03-30",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-03-26",
+   "dateTo": "2027-04-02",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-03-30",
+   "dateTo": "2027-04-02",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "full",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 0
+   }
+  },
+  {
+   "date": "2027-04-02",
+   "dateTo": "2027-04-06",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-04-06",
+   "dateTo": "2027-04-09",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-04-09",
+   "dateTo": "2027-04-13",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-04-13",
+   "dateTo": "2027-04-16",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 1
+   }
+  },
+  {
+   "date": "2027-04-16",
+   "dateTo": "2027-04-20",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-04-16",
+   "dateTo": "2027-04-23",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-04-20",
+   "dateTo": "2027-04-23",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2027-04-23",
+   "dateTo": "2027-04-27",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 1,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-04-23",
+   "dateTo": "2027-04-30",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-04-27",
+   "dateTo": "2027-04-30",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-07-30",
+   "dateTo": "2027-08-03",
+   "season": null,
+   "itinerary": "4-night Kratie Exploration Cruise",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-07-30",
+   "dateTo": "2027-08-06",
+   "season": null,
+   "itinerary": "7-night Kratie Expedition Cruise",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-08-03",
+   "dateTo": "2027-08-06",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-08-06",
+   "dateTo": "2027-08-10",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-13",
+   "dateTo": "2027-08-17",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 7
+   }
+  },
+  {
+   "date": "2027-08-17",
+   "dateTo": "2027-08-20",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-20",
+   "dateTo": "2027-08-24",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-20",
+   "dateTo": "2027-08-27",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-24",
+   "dateTo": "2027-08-27",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-08-27",
+   "dateTo": "2027-08-31",
+   "season": null,
+   "itinerary": "4-night Kratie Exploration Cruise",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-08-27",
+   "dateTo": "2027-09-03",
+   "season": null,
+   "itinerary": "7-night Kratie Expedition Cruise",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-08-31",
+   "dateTo": "2027-09-03",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-09-03",
+   "dateTo": "2027-09-07",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-09-03",
+   "dateTo": "2027-09-10",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-09-07",
+   "dateTo": "2027-09-10",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-09-24",
+   "dateTo": "2027-09-28",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-09-24",
+   "dateTo": "2027-10-01",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-09-28",
+   "dateTo": "2027-10-01",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-10-01",
+   "dateTo": "2027-10-05",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-10-01",
+   "dateTo": "2027-10-08",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-10-05",
+   "dateTo": "2027-10-08",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 5,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-10-08",
+   "dateTo": "2027-10-12",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-10-08",
+   "dateTo": "2027-10-15",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-10-12",
+   "dateTo": "2027-10-15",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-10-15",
+   "dateTo": "2027-10-19",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-10-15",
+   "dateTo": "2027-10-22",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2027-10-19",
+   "dateTo": "2027-10-22",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-10-22",
+   "dateTo": "2027-10-26",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2027-10-22",
+   "dateTo": "2027-10-29",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-10-26",
+   "dateTo": "2027-10-29",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-11-05",
+   "dateTo": "2027-11-09",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 7,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-11-05",
+   "dateTo": "2027-11-12",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-11-09",
+   "dateTo": "2027-11-12",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 3
+   }
+  },
+  {
+   "date": "2027-11-12",
+   "dateTo": "2027-11-16",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-11-12",
+   "dateTo": "2027-11-19",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-11-16",
+   "dateTo": "2027-11-19",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-11-19",
+   "dateTo": "2027-11-23",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-11-19",
+   "dateTo": "2027-11-26",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 11250,
+    "Second Deck Suite": 12180
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-11-23",
+   "dateTo": "2027-11-26",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-11-26",
+   "dateTo": "2027-11-30",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2027-11-30",
+   "dateTo": "2027-12-03",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2027-12-03",
+   "dateTo": "2027-12-07",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 6800,
+    "Second Deck Suite": 7290
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-07",
+   "dateTo": "2027-12-10",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5100,
+    "Second Deck Suite": 5470
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2027-12-24",
+   "dateTo": "2027-12-28",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7480,
+    "Second Deck Suite": 8020
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-24",
+   "dateTo": "2027-12-31",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water, December to February",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12370,
+    "Second Deck Suite": 13400
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-28",
+   "dateTo": "2027-12-31",
+   "season": "Low water, December to February",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5610,
+    "Second Deck Suite": 6020
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-31",
+   "dateTo": "2028-01-04",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7480,
+    "Second Deck Suite": 8020
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2027-12-31",
+   "dateTo": "2028-01-07",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12370,
+    "Second Deck Suite": 13400
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2028-01-04",
+   "dateTo": "2028-01-07",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5780,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 2,
+    "Second Deck Suite": 6
+   }
+  },
+  {
+   "date": "2028-01-07",
+   "dateTo": "2028-01-11",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-11",
+   "dateTo": "2028-01-14",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-14",
+   "dateTo": "2028-01-18",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-01-18",
+   "dateTo": "2028-01-21",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-01-28",
+   "dateTo": "2028-02-01",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 8
+   }
+  },
+  {
+   "date": "2028-01-28",
+   "dateTo": "2028-02-04",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2028-02-01",
+   "dateTo": "2028-02-04",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "few left",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 2
+   }
+  },
+  {
+   "date": "2028-02-04",
+   "dateTo": "2028-02-08",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-08",
+   "dateTo": "2028-02-11",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-11",
+   "dateTo": "2028-02-15",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-15",
+   "dateTo": "2028-02-18",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-02-25",
+   "dateTo": "2028-02-29",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 6,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-02-25",
+   "dateTo": "2028-03-03",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-02-29",
+   "dateTo": "2028-03-03",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-03-03",
+   "dateTo": "2028-03-07",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-07",
+   "dateTo": "2028-03-10",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-10",
+   "dateTo": "2028-03-14",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-03-14",
+   "dateTo": "2028-03-17",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-03-24",
+   "dateTo": "2028-03-31",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-03-28",
+   "dateTo": "2028-03-31",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-03-31",
+   "dateTo": "2028-04-04",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-04",
+   "dateTo": "2028-04-07",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-07",
+   "dateTo": "2028-04-11",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-11",
+   "dateTo": "2028-04-14",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-04-14",
+   "dateTo": "2028-04-18",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-14",
+   "dateTo": "2028-04-21",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-18",
+   "dateTo": "2028-04-21",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-21",
+   "dateTo": "2028-04-25",
+   "season": "Low water",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-21",
+   "dateTo": "2028-04-28",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-04-25",
+   "dateTo": "2028-04-28",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-11",
+   "dateTo": "2028-08-15",
+   "season": null,
+   "itinerary": "4-night Kratie Exploration Cruise",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-11",
+   "dateTo": "2028-08-18",
+   "season": null,
+   "itinerary": "7-night Kratie Expedition Cruise",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-15",
+   "dateTo": "2028-08-18",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-18",
+   "dateTo": "2028-08-22",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-18",
+   "dateTo": "2028-08-25",
+   "season": "Low water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-22",
+   "dateTo": "2028-08-25",
+   "season": "Low water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-25",
+   "dateTo": "2028-08-29",
+   "season": null,
+   "itinerary": "4-night Kratie Exploration Cruise",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-25",
+   "dateTo": "2028-09-01",
+   "season": null,
+   "itinerary": "7-night Kratie Expedition Cruise",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-08-29",
+   "dateTo": "2028-09-01",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-01",
+   "dateTo": "2028-09-05",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-01",
+   "dateTo": "2028-09-08",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-05",
+   "dateTo": "2028-09-08",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-08",
+   "dateTo": "2028-09-12",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-08",
+   "dateTo": "2028-09-15",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-12",
+   "dateTo": "2028-09-15",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-15",
+   "dateTo": "2028-09-19",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-15",
+   "dateTo": "2028-09-22",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-19",
+   "dateTo": "2028-09-22",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-22",
+   "dateTo": "2028-09-26",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-22",
+   "dateTo": "2028-09-29",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-09-26",
+   "dateTo": "2028-09-29",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-09-29",
+   "dateTo": "2028-10-03",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-09-29",
+   "dateTo": "2028-10-06",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-03",
+   "dateTo": "2028-10-06",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-06",
+   "dateTo": "2028-10-10",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-06",
+   "dateTo": "2028-10-13",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-10-10",
+   "dateTo": "2028-10-13",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-10-13",
+   "dateTo": "2028-10-17",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-13",
+   "dateTo": "2028-10-20",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-17",
+   "dateTo": "2028-10-20",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-10-20",
+   "dateTo": "2028-10-24",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-10-20",
+   "dateTo": "2028-10-27",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-10-24",
+   "dateTo": "2028-10-27",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-10-27",
+   "dateTo": "2028-10-31",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-10-27",
+   "dateTo": "2028-11-03",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 0,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-10-31",
+   "dateTo": "2028-11-03",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-03",
+   "dateTo": "2028-11-07",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-11-03",
+   "dateTo": "2028-11-10",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2028-11-07",
+   "dateTo": "2028-11-10",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 4
+   }
+  },
+  {
+   "date": "2028-11-10",
+   "dateTo": "2028-11-14",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-10",
+   "dateTo": "2028-11-17",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap",
+   "direction": "Ho Chi Minh City to Siem Reap (high water)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-14",
+   "dateTo": "2028-11-17",
+   "season": "High water",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap",
+   "direction": "Phnom Penh to Siem Reap (high water)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 8,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-17",
+   "dateTo": "2028-11-21",
+   "season": "High water",
+   "itinerary": "4-night Explorer Cruise, Siem Reap to Phnom Penh",
+   "direction": "Siem Reap to Phnom Penh",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 9,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-17",
+   "dateTo": "2028-11-24",
+   "season": "High water",
+   "itinerary": "7-night Expedition Cruise, Siem Reap to Ho Chi Minh City",
+   "direction": "Siem Reap to Ho Chi Minh City",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-11-21",
+   "dateTo": "2028-11-24",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 3,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-11-24",
+   "dateTo": "2028-11-28",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-11-28",
+   "dateTo": "2028-12-01",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-01",
+   "dateTo": "2028-12-05",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-05",
+   "dateTo": "2028-12-08",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 4,
+    "Second Deck Suite": 5
+   }
+  },
+  {
+   "date": "2028-12-08",
+   "dateTo": "2028-12-12",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-08",
+   "dateTo": "2028-12-15",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water, December to February",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-12",
+   "dateTo": "2028-12-15",
+   "season": "Low water, December to February",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-15",
+   "dateTo": "2028-12-19",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7000,
+    "Second Deck Suite": 7510
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-12-15",
+   "dateTo": "2028-12-22",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 11590,
+    "Second Deck Suite": 12550
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-12-19",
+   "dateTo": "2028-12-22",
+   "season": null,
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City",
+   "direction": "Phnom Penh to Ho Chi Minh City",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5250,
+    "Second Deck Suite": 5630
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 9
+   }
+  },
+  {
+   "date": "2028-12-22",
+   "dateTo": "2028-12-26",
+   "season": null,
+   "itinerary": "4-night Explorer Cruise, Ho Chi Minh City to Siem Reap by river and air",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7700,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-22",
+   "dateTo": "2028-12-29",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water, December to February",
+   "direction": "Ho Chi Minh City to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12750,
+    "Second Deck Suite": 13800
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-26",
+   "dateTo": "2028-12-29",
+   "season": "Low water, December to February",
+   "itinerary": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 3,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 5780,
+    "Second Deck Suite": 6200
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-29",
+   "dateTo": "2029-01-02",
+   "season": "Low water, December to February",
+   "itinerary": "4-night Explorer Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February",
+   "direction": "Phnom Penh to Siem Reap (flight from Phnom Penh) (low water, December to February)",
+   "nights": 4,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 7700,
+    "Second Deck Suite": 8260
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  },
+  {
+   "date": "2028-12-29",
+   "dateTo": "2029-01-05",
+   "season": "Low water, December to February",
+   "itinerary": "7-night Expedition Cruise, Phnom Penh to Ho Chi Minh City, low water, December to February",
+   "direction": "Phnom Penh to Ho Chi Minh City (low water, December to February)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "First Deck Suite": 12750,
+    "Second Deck Suite": 13800
+   },
+   "cabinsLeft": {
+    "First Deck Suite": 10,
+    "Second Deck Suite": 10
+   }
+  }
+ ],
+ "pricesNote": "Per person, cruise only, in US dollars, as Aqua Expeditions lists each departure in its booking system (read 13 Nov 2026), before any offer. Where a category shows no fare it is sold out or not sold on that date. Aqua's Early Bird, returning-guest and loyalty savings are applied when booking, so the fare you pay can be lower; we confirm it with Aqua before you commit. Aqua Mekong's Early Bird saving is 30% on 2026 to 2028 departures, on Aqua's terms.",
+ "inclusions": [
+  "All meals on board",
+  "Selected premium wines and beer, and non-alcoholic drinks",
+  "Twice-daily excursions with expert local guides",
+  "Group transfers to and from the ship on Aqua's recommended flights",
+  "Laundry",
+  "Bicycles and kayaks",
+  "Starlink internet"
+ ],
+ "children": "",
+ "faqs": [
+  [
+   "How much does an Aqua Mekong cruise cost?",
+   "Aqua lists three nights from about US$4,940 per person and seven nights from about US$11,800, depending on the deck and the date. Every departure's fare is in the table on this page."
+  ],
+  [
+   "Where does Aqua Mekong sail?",
+   "Between Ho Chi Minh City (boarding at My Tho), Phnom Penh and Siem Reap, through the Mekong Delta in Vietnam and along the Mekong and Tonle Sap in Cambodia."
+  ],
+  [
+   "When is the best time for a Mekong cruise?",
+   "Any time: Aqua sails all year. High water, mid-August to November, lets the ship reach the Tonle Sap near Siem Reap; low water, December to mid-August, brings quieter rivers and cycling through the countryside."
+  ],
+  [
+   "How many guests does Aqua Mekong carry?",
+   "Forty, in 20 suites, with 40 crew."
+  ],
+  [
+   "Can I combine Aqua Mekong with Angkor Wat?",
+   "Yes. Routes that start or end in Siem Reap sit beside the Angkor temples; ask us to add nights there."
+  ],
+  [
+   "What is included?",
+   "All meals, selected wines and beer, two guided excursions a day, group transfers on Aqua's recommended flights, laundry, bicycles, kayaks and Starlink internet."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Culture lovers",
+   "line": "Temples, silversmiths and floating villages, with a guide every day."
+  },
+  {
+   "who": "First timers to Indochina",
+   "line": "Phnom Penh, the delta and Siem Reap in one trip."
+  },
+  {
+   "who": "Families",
+   "line": "Connecting suites and a plunge pool; ask us about ages."
+  }
+ ],
+ "sources": [
+  "https://www.aquaexpeditions.com/cruise-ships/aqua-mekong",
+  "https://www.aquaexpeditions.com/destinations/mekong-river-cruise",
+  "https://www.aquaexpeditions.com/about-us",
+  "https://book.aquaexpeditions.com (departures and fares)"
+ ],
+ "film": {
+  "id": "LY3D0IdlMmM",
+  "title": "Cultural expeditions in Cambodia and Vietnam aboard Aqua Mekong"
+ },
+ "glance": {
+  "route": "Ho Chi Minh City, Phnom Penh, Siem Reap"
+ }
+}

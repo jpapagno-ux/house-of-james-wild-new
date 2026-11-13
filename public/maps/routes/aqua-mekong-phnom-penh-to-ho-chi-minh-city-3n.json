@@ -1,0 +1,91 @@
+{
+ "id": "aqua-mekong-phnom-penh-to-ho-chi-minh-city-3n",
+ "type": "voyage",
+ "destination": "mekong",
+ "title": "3-night Discovery Cruise, Phnom Penh to Ho Chi Minh City aboard Aqua Mekong",
+ "subtitle": "3 nights · Phnom Penh to Ho Chi Minh City · Aqua Mekong",
+ "days": {
+  "1": "Phnom Penh",
+  "2": "My An Hung",
+  "3": "Cai Be",
+  "4": "My Tho"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Mekong River, Ka’Om Samnor-Vinh Xuong Border Crossing, Chau Doc, My An Hung",
+   "lat": 10.4,
+   "lng": 105.6,
+   "mode": "sea",
+   "path": [
+    [
+     104.9282,
+     11.5564
+    ],
+    [
+     105.6,
+     10.4
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Mekong River, Binh Thanh, Sa Dec, Cai Be",
+   "lat": 10.33,
+   "lng": 106.03,
+   "mode": "sea",
+   "path": [
+    [
+     105.6,
+     10.4
+    ],
+    [
+     106.03,
+     10.33
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Mekong River, My Tho, Ho Chi Minh",
+   "lat": 10.36,
+   "lng": 106.36,
+   "mode": "sea",
+   "path": [
+    [
+     106.03,
+     10.33
+    ],
+    [
+     106.36,
+     10.36
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mekong",
+    "lat": 11.0,
+    "lng": 105.2,
+    "kind": "sea"
+   },
+   {
+    "text": "Tonle Sap",
+    "lat": 12.8,
+    "lng": 104.1,
+    "kind": "region"
+   }
+  ]
+ }
+}

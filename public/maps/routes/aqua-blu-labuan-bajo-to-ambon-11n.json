@@ -1,0 +1,313 @@
+{
+ "id": "aqua-blu-labuan-bajo-to-ambon-11n",
+ "type": "voyage",
+ "destination": "indonesia",
+ "title": "11-night Forgotten Islands and Spice Islands Expedition aboard Aqua Blu",
+ "subtitle": "11 nights · Labuan Bajo to Ambon · Aqua Blu",
+ "days": {
+  "1": "Labuan Bajo",
+  "2": "Maumere",
+  "3": "Alor",
+  "4": "Wetar",
+  "5": "Romang",
+  "6": "Nil Desperandum",
+  "7": "Serua Island",
+  "8": "Pulau Manuk",
+  "9": "Banda Islands",
+  "10": "Pulau Ai",
+  "11": "Nusa Laut",
+  "12": "Ambon"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Labuan Bajo",
+   "lat": -8.4964,
+   "lng": 119.8877,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Maumere",
+   "lat": -8.62,
+   "lng": 122.21,
+   "mode": "sea",
+   "path": [
+    [
+     119.8877,
+     -8.4964
+    ],
+    [
+     122.21,
+     -8.62
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Alor",
+   "lat": -8.25,
+   "lng": 124.55,
+   "mode": "sea",
+   "path": [
+    [
+     122.21,
+     -8.62
+    ],
+    [
+     124.55,
+     -8.25
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Wetar",
+   "lat": -7.8,
+   "lng": 126.3,
+   "mode": "sea",
+   "path": [
+    [
+     124.55,
+     -8.25
+    ],
+    [
+     126.3,
+     -7.8
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Romang, Nyata, Telang (The Forgotten Islands)",
+   "lat": -7.6,
+   "lng": 127.4,
+   "mode": "sea",
+   "path": [
+    [
+     126.3,
+     -7.8
+    ],
+    [
+     127.4,
+     -7.6
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Nil Desperandum",
+   "lat": -6.15,
+   "lng": 129.8,
+   "mode": "sea",
+   "path": [
+    [
+     127.4,
+     -7.6
+    ],
+    [
+     129.8,
+     -6.15
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Serua Island",
+   "lat": -6.3,
+   "lng": 130.02,
+   "mode": "sea",
+   "path": [
+    [
+     129.8,
+     -6.15
+    ],
+    [
+     130.02,
+     -6.3
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Pulau Manuk",
+   "lat": -5.55,
+   "lng": 130.3,
+   "mode": "sea",
+   "path": [
+    [
+     130.02,
+     -6.3
+    ],
+    [
+     130.3,
+     -5.55
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Banda Islands & Banda Neira",
+   "lat": -4.5188,
+   "lng": 129.9132,
+   "mode": "sea",
+   "path": [
+    [
+     130.3,
+     -5.55
+    ],
+    [
+     129.9575,
+     -4.5133
+    ],
+    [
+     129.9433,
+     -4.4991
+    ],
+    [
+     129.9362,
+     -4.4991
+    ],
+    [
+     129.9132,
+     -4.5188
+    ]
+   ],
+   "charted": [
+    129.9,
+    -4.52
+   ],
+   "lane": "sea",
+   "clear": 1.05
+  },
+  {
+   "day": 10,
+   "name": "Pulau Ai & Pulau Run",
+   "lat": -4.52,
+   "lng": 129.68,
+   "mode": "sea",
+   "path": [
+    [
+     129.9132,
+     -4.5188
+    ],
+    [
+     129.9177,
+     -4.5076
+    ],
+    [
+     129.9154,
+     -4.5032
+    ],
+    [
+     129.9109,
+     -4.4987
+    ],
+    [
+     129.8906,
+     -4.4919
+    ],
+    [
+     129.6834,
+     -4.5166
+    ],
+    [
+     129.68,
+     -4.52
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.96
+  },
+  {
+   "day": 11,
+   "name": "Nusa Laut",
+   "lat": -3.6432,
+   "lng": 128.7836,
+   "mode": "sea",
+   "path": [
+    [
+     129.68,
+     -4.52
+    ],
+    [
+     128.8097,
+     -3.6396
+    ],
+    [
+     128.7836,
+     -3.6432
+    ]
+   ],
+   "charted": [
+    128.78,
+    -3.66
+   ],
+   "lane": "sea",
+   "clear": 0.8
+  },
+  {
+   "day": 12,
+   "name": "Ambon",
+   "lat": -3.6894,
+   "lng": 128.1754,
+   "mode": "sea",
+   "path": [
+    [
+     128.7836,
+     -3.6432
+    ],
+    [
+     128.7701,
+     -3.63
+    ],
+    [
+     128.0927,
+     -3.8095
+    ],
+    [
+     128.076,
+     -3.7928
+    ],
+    [
+     128.076,
+     -3.7886
+    ],
+    [
+     128.1345,
+     -3.7135
+    ],
+    [
+     128.1513,
+     -3.6968
+    ],
+    [
+     128.1638,
+     -3.6926
+    ],
+    [
+     128.1754,
+     -3.6894
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    128.1814,
+    -3.6954
+   ],
+   "lane": "sea",
+   "clear": 0.96
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

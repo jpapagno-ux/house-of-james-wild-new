@@ -89,8 +89,14 @@ for (const ship of SHIPS) {
     const pdf = (r.it.itineraryLink?.url ?? "").match(/name=([^&]+)/)?.[1];
     itineraries.push({ name: r.name, nights: r.nights, direction: r.direction, ...(r.sea ? { season: r.sea } : {}), days: daysFrom(r.it), ...(pdf ? { note: `Aqua's day by day: ${decodeURIComponent(pdf)}` } : {}) });
   }
+  // two routes on the same course and length (high and low water) keep their own chart: the season joins the direction
+  for (const it of itineraries) {
+    const twins = itineraries.filter((x) => x.direction.split(" (")[0] === it.direction.split(" (")[0] && x.nights === it.nights);
+    if (twins.length > 1 && it.season) it.direction = `${it.direction} (${it.season[0].toLowerCase() + it.season.slice(1)})`;
+  }
+  for (const r of routes.values()) r.direction = itineraries.find((x) => x.name === r.name).direction;
   itineraries.sort((a, b) => a.nights - b.nights || a.name.localeCompare(b.name));
-  const departures = deps.sort((a, b) => a.date.localeCompare(b.date) || a.nights - b.nights).map(({ key, ...d }) => ({ date: d.date, dateTo: d.dateTo, season: d.season, itinerary: routes.get(key).name, direction: d.direction, nights: d.nights, status: d.status, prices: d.prices, cabinsLeft: d.cabinsLeft, ...(d.note ? { note: d.note } : {}) }));
+  const departures = deps.sort((a, b) => a.date.localeCompare(b.date) || a.nights - b.nights).map(({ key, ...d }) => ({ date: d.date, dateTo: d.dateTo, season: d.season, itinerary: routes.get(key).name, direction: routes.get(key).direction, nights: d.nights, status: d.status, prices: d.prices, cabinsLeft: d.cabinsLeft, ...(d.note ? { note: d.note } : {}) }));
   for (const it of itineraries) delete it.note;
 
   const path = `lib/content/ships/${ship.folder}/${ship.slug}.json`;

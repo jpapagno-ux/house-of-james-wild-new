@@ -1,0 +1,109 @@
+{
+ "id": "aqua-mekong-phnom-penh-to-siem-reap-flight-from-phnom-penh-4n",
+ "type": "voyage",
+ "destination": "mekong",
+ "title": "4-night Kratie Exploration Cruise aboard Aqua Mekong",
+ "subtitle": "4 nights · Phnom Penh to Siem Reap · Aqua Mekong",
+ "days": {
+  "1": "Phnom Penh",
+  "2": "Phnom Han Chey",
+  "3": "Kratie",
+  "4": "Peam Chikang",
+  "5": "Phnom Penh"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Mekong River, Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Mekong River, Angkor Ban, Prek Dam Bok, Phnom Han Chey",
+   "lat": 12.15,
+   "lng": 105.42,
+   "mode": "sea",
+   "path": [
+    [
+     104.9282,
+     11.5564
+    ],
+    [
+     105.42,
+     12.15
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Mekong River, Kampi River, Kratie, Koh Trong Island",
+   "lat": 12.49,
+   "lng": 106.02,
+   "mode": "sea",
+   "path": [
+    [
+     105.42,
+     12.15
+    ],
+    [
+     106.02,
+     12.49
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Mekong River, Kampong Cham, Peam Chikang, Koh Andet",
+   "lat": 11.95,
+   "lng": 105.55,
+   "mode": "sea",
+   "path": [
+    [
+     106.02,
+     12.49
+    ],
+    [
+     105.55,
+     11.95
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "mode": "sea",
+   "path": [
+    [
+     105.55,
+     11.95
+    ],
+    [
+     104.9282,
+     11.5564
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mekong",
+    "lat": 11.0,
+    "lng": 105.2,
+    "kind": "sea"
+   },
+   {
+    "text": "Tonle Sap",
+    "lat": 12.8,
+    "lng": 104.1,
+    "kind": "region"
+   }
+  ]
+ }
+}

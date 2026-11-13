@@ -1,0 +1,321 @@
+{
+ "id": "aqua-blu-ambon-round-trip-12n",
+ "type": "voyage",
+ "destination": "indonesia",
+ "title": "12-night Spice Islands and Asmat Tribe Expedition aboard Aqua Blu",
+ "subtitle": "12 nights · Ambon round trip · Aqua Blu",
+ "days": {
+  "1": "Ambon",
+  "2": "Banda Islands",
+  "3": "Pulau Koon",
+  "4": "Momon",
+  "5": "Triton Bay",
+  "6": "Sailing the Arafura Sea",
+  "7": "Yuan Yufri",
+  "8": "Biwar Laut",
+  "9": "Aru Islands",
+  "10": "Kei Islands",
+  "11": "Pulau Manuk",
+  "12": "Pulau Ai",
+  "13": "Ambon"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Ambon",
+   "lat": -3.6894,
+   "lng": 128.1754,
+   "kind": "port",
+   "charted": [
+    128.1814,
+    -3.6954
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Banda Islands & Banda Neira",
+   "lat": -4.5188,
+   "lng": 129.9132,
+   "mode": "sea",
+   "path": [
+    [
+     128.1754,
+     -3.6894
+    ],
+    [
+     128.1303,
+     -3.7177
+    ],
+    [
+     128.0706,
+     -3.7892
+    ],
+    [
+     128.0706,
+     -3.8011
+    ],
+    [
+     128.0825,
+     -3.813
+    ],
+    [
+     129.8866,
+     -4.4923
+    ],
+    [
+     129.9132,
+     -4.5188
+    ]
+   ],
+   "charted": [
+    129.9,
+    -4.52
+   ],
+   "lane": "sea",
+   "clear": 1.41
+  },
+  {
+   "day": 3,
+   "name": "Pulau Koon",
+   "lat": -3.9572,
+   "lng": 131.3868,
+   "mode": "sea",
+   "path": [
+    [
+     129.9132,
+     -4.5188
+    ],
+    [
+     131.2021,
+     -3.9709
+    ],
+    [
+     131.3868,
+     -3.9572
+    ]
+   ],
+   "charted": [
+    131.4,
+    -3.98
+   ],
+   "lane": "sea",
+   "clear": 1.1
+  },
+  {
+   "day": 4,
+   "name": "Momon",
+   "lat": -3.7,
+   "lng": 133.9,
+   "mode": "sea",
+   "path": [
+    [
+     131.3868,
+     -3.9572
+    ],
+    [
+     131.3932,
+     -3.9447
+    ],
+    [
+     131.3994,
+     -3.9385
+    ],
+    [
+     133.9,
+     -3.7
+    ]
+   ],
+   "lane": "sea",
+   "clear": 1.22
+  },
+  {
+   "day": 5,
+   "name": "Triton Bay",
+   "lat": -3.85,
+   "lng": 134.05,
+   "mode": "sea",
+   "path": [
+    [
+     133.9,
+     -3.7
+    ],
+    [
+     134.05,
+     -3.85
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Sailing the Arafura Sea",
+   "lat": -4.725,
+   "lng": 136.125,
+   "mode": "sea",
+   "path": [
+    [
+     134.05,
+     -3.85
+    ],
+    [
+     136.125,
+     -4.725
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Yuan Yufri",
+   "lat": -5.162,
+   "lng": 137.162,
+   "mode": "sea",
+   "path": [
+    [
+     136.125,
+     -4.725
+    ],
+    [
+     137.162,
+     -5.162
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Biwar Laut & Ouws",
+   "lat": -5.6,
+   "lng": 138.2,
+   "mode": "sea",
+   "path": [
+    [
+     137.162,
+     -5.162
+    ],
+    [
+     138.2,
+     -5.6
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Aru Islands",
+   "lat": -6.2,
+   "lng": 134.5,
+   "mode": "sea",
+   "path": [
+    [
+     138.2,
+     -5.6
+    ],
+    [
+     134.5,
+     -6.2
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Kei Islands",
+   "lat": -5.65,
+   "lng": 132.75,
+   "mode": "sea",
+   "path": [
+    [
+     134.5,
+     -6.2
+    ],
+    [
+     132.75,
+     -5.65
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "Pulau Manuk",
+   "lat": -5.55,
+   "lng": 130.3,
+   "mode": "sea",
+   "path": [
+    [
+     132.75,
+     -5.65
+    ],
+    [
+     130.3,
+     -5.55
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "Pulau Ai & Run",
+   "lat": -4.52,
+   "lng": 129.68,
+   "mode": "sea",
+   "path": [
+    [
+     130.3,
+     -5.55
+    ],
+    [
+     129.7029,
+     -4.5429
+    ],
+    [
+     129.68,
+     -4.52
+    ]
+   ],
+   "lane": "sea",
+   "clear": 1.04
+  },
+  {
+   "day": 13,
+   "name": "Ambon",
+   "lat": -3.6894,
+   "lng": 128.1754,
+   "mode": "sea",
+   "path": [
+    [
+     129.68,
+     -4.52
+    ],
+    [
+     128.0847,
+     -3.8057
+    ],
+    [
+     128.0743,
+     -3.7954
+    ],
+    [
+     128.1364,
+     -3.7232
+    ],
+    [
+     128.1754,
+     -3.6894
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    128.1814,
+    -3.6954
+   ],
+   "lane": "sea",
+   "clear": 0.73
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

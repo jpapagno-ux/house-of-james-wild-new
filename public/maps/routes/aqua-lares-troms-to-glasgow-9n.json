@@ -1,0 +1,205 @@
+{
+ "id": "aqua-lares-troms-to-glasgow-9n",
+ "type": "voyage",
+ "destination": "arctic",
+ "title": "9-night Norwegian Arctic and Scottish Isles aboard Aqua Lares",
+ "subtitle": "9 nights · Tromsø to Glasgow · Aqua Lares",
+ "days": {
+  "1": "Tromsø",
+  "2": "Nusfjord",
+  "3": "Brønnøysund",
+  "4": "Smøla",
+  "5": "Ålesund",
+  "6": "Mousa Broch",
+  "7": "Callanish",
+  "8": "St Kilda",
+  "9": "Iona",
+  "10": "Glasgow"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Tromsø",
+   "lat": 69.6492,
+   "lng": 18.9553,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Trollfjorden & Nusfjord",
+   "lat": 68.03,
+   "lng": 13.35,
+   "mode": "sea",
+   "path": [
+    [
+     18.9553,
+     69.6492
+    ],
+    [
+     13.35,
+     68.03
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Brønnøysund",
+   "lat": 65.47,
+   "lng": 12.21,
+   "mode": "sea",
+   "path": [
+    [
+     13.35,
+     68.03
+    ],
+    [
+     12.21,
+     65.47
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Smøla",
+   "lat": 63.4,
+   "lng": 8,
+   "mode": "sea",
+   "path": [
+    [
+     12.21,
+     65.47
+    ],
+    [
+     8,
+     63.4
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Ålesund",
+   "lat": 62.4722,
+   "lng": 6.1495,
+   "mode": "sea",
+   "path": [
+    [
+     8,
+     63.4
+    ],
+    [
+     6.1495,
+     62.4722
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Mousa Broch",
+   "lat": 60,
+   "lng": -1.18,
+   "mode": "sea",
+   "path": [
+    [
+     6.1495,
+     62.4722
+    ],
+    [
+     -1.18,
+     60
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Callanish, Isle of Lewis",
+   "lat": 58.2,
+   "lng": -6.75,
+   "mode": "sea",
+   "path": [
+    [
+     -1.18,
+     60
+    ],
+    [
+     -6.75,
+     58.2
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Luskentyre Beach & St Kilda",
+   "lat": 57.81,
+   "lng": -8.58,
+   "mode": "sea",
+   "path": [
+    [
+     -6.75,
+     58.2
+    ],
+    [
+     -8.58,
+     57.81
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Staffa & Iona",
+   "lat": 56.33,
+   "lng": -6.39,
+   "mode": "sea",
+   "path": [
+    [
+     -8.58,
+     57.81
+    ],
+    [
+     -6.39,
+     56.33
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Glasgow",
+   "lat": 55.8642,
+   "lng": -4.2518,
+   "mode": "sea",
+   "path": [
+    [
+     -6.39,
+     56.33
+    ],
+    [
+     -4.2518,
+     55.8642
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Arctic Ocean",
+    "lat": 79.5,
+    "lng": 8.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Svalbard",
+    "lat": 78.6,
+    "lng": 17.0,
+    "kind": "region"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 68.0,
+    "lng": 6.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

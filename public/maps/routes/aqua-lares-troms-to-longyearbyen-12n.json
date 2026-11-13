@@ -1,0 +1,259 @@
+{
+ "id": "aqua-lares-troms-to-longyearbyen-12n",
+ "type": "voyage",
+ "destination": "arctic",
+ "title": "12-night Tromsø, Arctic Circle and Svalbard aboard Aqua Lares",
+ "subtitle": "12 nights · Tromsø to Longyearbyen · Aqua Lares",
+ "days": {
+  "1": "Tromsø",
+  "2": "Bleik",
+  "3": "Bear Island",
+  "4": "Hornsund",
+  "5": "Calypsobyen",
+  "6": "Alkehornet",
+  "7": "Gravneset",
+  "8": "Pack Ice",
+  "9": "Alkefjellet",
+  "10": "Torellneset",
+  "11": "Sorgfjorden",
+  "12": "Kongsfjorden",
+  "13": "Longyearbyen"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Tromsø",
+   "lat": 69.6492,
+   "lng": 18.9553,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Bleik",
+   "lat": 69.27,
+   "lng": 15.96,
+   "mode": "sea",
+   "path": [
+    [
+     18.9553,
+     69.6492
+    ],
+    [
+     15.96,
+     69.27
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Bear Island",
+   "lat": 74.45,
+   "lng": 19.05,
+   "mode": "sea",
+   "path": [
+    [
+     15.96,
+     69.27
+    ],
+    [
+     19.05,
+     74.45
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Sørkapp & Gnalodden, Hornsund",
+   "lat": 77,
+   "lng": 15.6,
+   "mode": "sea",
+   "path": [
+    [
+     19.05,
+     74.45
+    ],
+    [
+     15.6,
+     77
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Calypsobyen, Bellsund",
+   "lat": 77.57,
+   "lng": 14.5,
+   "mode": "sea",
+   "path": [
+    [
+     15.6,
+     77
+    ],
+    [
+     14.5,
+     77.57
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Longyearbyen & Alkehornet",
+   "lat": 78.21,
+   "lng": 13.83,
+   "mode": "sea",
+   "path": [
+    [
+     14.5,
+     77.57
+    ],
+    [
+     13.83,
+     78.21
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Gravneset & Smeerenburg",
+   "lat": 79.73,
+   "lng": 11.08,
+   "mode": "sea",
+   "path": [
+    [
+     13.83,
+     78.21
+    ],
+    [
+     11.08,
+     79.73
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Pack Ice",
+   "lat": 80.6,
+   "lng": 17,
+   "mode": "sea",
+   "path": [
+    [
+     11.08,
+     79.73
+    ],
+    [
+     17,
+     80.6
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Alkefjellet & Bråsvellbreen",
+   "lat": 79.58,
+   "lng": 18.53,
+   "mode": "sea",
+   "path": [
+    [
+     17,
+     80.6
+    ],
+    [
+     18.53,
+     79.58
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Hinlopenstretet & Torellneset",
+   "lat": 79.38,
+   "lng": 20.75,
+   "mode": "sea",
+   "path": [
+    [
+     18.53,
+     79.58
+    ],
+    [
+     20.75,
+     79.38
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "Sorgfjorden",
+   "lat": 79.95,
+   "lng": 16.7,
+   "mode": "sea",
+   "path": [
+    [
+     20.75,
+     79.38
+    ],
+    [
+     16.7,
+     79.95
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "Krossfjorden & Kongsfjorden",
+   "lat": 78.95,
+   "lng": 12,
+   "mode": "sea",
+   "path": [
+    [
+     16.7,
+     79.95
+    ],
+    [
+     12,
+     78.95
+    ]
+   ]
+  },
+  {
+   "day": 13,
+   "name": "Longyearbyen",
+   "lat": 78.2232,
+   "lng": 15.6267,
+   "mode": "sea",
+   "path": [
+    [
+     12,
+     78.95
+    ],
+    [
+     15.6267,
+     78.2232
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Arctic Ocean",
+    "lat": 79.5,
+    "lng": 8.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Svalbard",
+    "lat": 78.6,
+    "lng": 17.0,
+    "kind": "region"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 68.0,
+    "lng": 6.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

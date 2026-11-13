@@ -7,6 +7,7 @@ import ElAleph from "./el-aleph.json";
 import Silolona from "./silolona.json";
 import SiDatuBua from "./si-datu-bua.json";
 import Celestia from "./celestia.json";
+import AquaBlu from "./aqua-blu.json";
 
 // Indonesia's ships on the shared template (Aliikai keeps her own module, lib/content/ships/aliikai.ts).
 // Amandira, filed 2 Nov 2026 from aman.com only (photographs: Aman). Aman publishes no rates, dates,
@@ -24,4 +25,6 @@ export const INDONESIA_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: s
   ...[Rascal, Rebel, ElAleph].map((x) => ({ data: rec(x), offerRefs: [], credit: "Rascal Voyages" })),
   ...[Silolona, SiDatuBua].map((x) => ({ data: rec(x), offerRefs: [], credit: "Silolona Sojourns" })),
   { data: rec(Celestia), offerRefs: [], credit: "Celestia Yacht" },
+  // Aqua Expeditions' Aqua Blu (scripts/partners/aqua-build.mjs, 13 Nov 2026): every route, departure and fare.
+  { data: rec(AquaBlu), offerRefs: [], credit: "Aqua Expeditions" },
 ];

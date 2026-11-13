@@ -14,10 +14,17 @@ LABELS = {
   "amazon": [{"text": "Amazon", "lat": -4.35, "lng": -73.3, "kind": "sea"}, {"text": "Pacaya-Samiria", "lat": -4.9, "lng": -74.2, "kind": "region"}],
   "galapagos": [{"text": "Pacific Ocean", "lat": -1.3, "lng": -91.6, "kind": "sea"}],
   "indonesia": [{"text": "Indonesia", "lat": -4.0, "lng": 125.0, "kind": "sea"}],
+  "mekong": [{"text": "Mekong", "lat": 11.0, "lng": 105.2, "kind": "sea"}, {"text": "Tonle Sap", "lat": 12.8, "lng": 104.1, "kind": "region"}],
+  "seychelles": [{"text": "Indian Ocean", "lat": -6.5, "lng": 50.0, "kind": "sea"}, {"text": "Seychelles", "lat": -4.6, "lng": 55.6, "kind": "region"}],
   "tahiti": [{"text": "Pacific Ocean", "lat": -17.6, "lng": -148.6, "kind": "sea"}, {"text": "Society Islands", "lat": -16.2, "lng": -151.0, "kind": "region"}, {"text": "Tuamotu", "lat": -15.4, "lng": -146.4, "kind": "region"}],
 }
 # Where an Indonesian route's chart sits (the engine's regional data: public/maps/data/<dest>).
-DEST = {"From Sorong": "raja-ampat", "Sorong round trip": "raja-ampat", "Ambon to Sorong": "indonesia"}
+DEST = {"From Sorong": "raja-ampat", "Sorong round trip": "raja-ampat", "Ambon to Sorong": "indonesia",
+        # Aqua Blu's longer routes cross the Banda Sea (Aqua Expeditions, 13 Nov 2026)
+        "Sorong to Ambon": "indonesia", "Ambon round trip": "indonesia", "Ambon to Labuan Bajo": "indonesia",
+        "Labuan Bajo to Ambon": "indonesia", "Sorong to Labuan Bajo": "indonesia"}
+# Aqua Lares sails the Arctic from the same file in summer: her northern routes take these labels.
+ARCTIC = [{"text": "Arctic Ocean", "lat": 79.5, "lng": 8.0, "kind": "sea"}, {"text": "Svalbard", "lat": 78.6, "lng": 17.0, "kind": "region"}, {"text": "Norwegian Sea", "lat": 68.0, "lng": 6.0, "kind": "sea"}]
 OUT = os.path.join(ROOT, "public/maps/routes")
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -31,7 +38,7 @@ for waters in LABELS:
         if not it["days"]: continue
         # A route whose length is not published (stops in the operator's order) ends in "-stops".
         rid = f"{s['slug']}-{slug(it['direction'])}-{str(it['nights']) + 'n' if it['nights'] is not None else 'stops'}"
-        dest = DEST.get(it["direction"], "komodo") if waters == "indonesia" else waters
+        dest = DEST.get(it["direction"], "komodo") if waters == "indonesia" else ("arctic" if waters == "seychelles" and it["days"][0]["lat"] > 50 else waters)
         stops, prev = [], None
         for d in it["days"]:
             st = {"day": d["day"], "name": d["place"], "lat": d["lat"], "lng": d["lng"]}
@@ -46,8 +53,8 @@ for waters in LABELS:
         route = {"id": rid, "type": "voyage", "destination": dest, "title": f"{it['name'][0].upper() + it['name'][1:]} aboard {s['name']}",
                  "subtitle": f"{str(it['nights']) + ' nights' if it['nights'] is not None else 'Stops in order'} · {it['direction'].split(' (')[0]} · {s['name']}",
                  "days": {str(d["day"]): d["title"] for d in it["days"]}, "stops": stops,
-                 "map_note": ("Course" if waters in ("indonesia", "tahiti") else "River course") + " and positions approximate, not a navigational chart",
-                 "fallback": {"labels": LABELS[waters]}}
+                 "map_note": ("River course" if waters in ("amazon", "mekong") else "Course") + " and positions approximate, not a navigational chart",
+                 "fallback": {"labels": ARCTIC if it["days"][0]["lat"] > 50 else LABELS[waters]}}
         lanes = route_stops(route, MAPS)
         json.dump(route, open(os.path.join(OUT, f"{rid}.json"), "w"), indent=1, ensure_ascii=False)
         print(rid, *(f"\n  round the land: {l}" for l in lanes))

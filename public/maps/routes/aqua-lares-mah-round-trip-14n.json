@@ -1,0 +1,289 @@
+{
+ "id": "aqua-lares-mah-round-trip-14n",
+ "type": "voyage",
+ "destination": "seychelles",
+ "title": "14-night The Coralline Seychelles and Inner Islands aboard Aqua Lares",
+ "subtitle": "14 nights · Mahé round trip · Aqua Lares",
+ "days": {
+  "1": "L'Escale Marina (Mahe)",
+  "2": "D'Arros Island",
+  "3": "At sea",
+  "4": "Astove Island",
+  "5": "Aldabra Atoll",
+  "6": "Cosmoledo Atoll",
+  "7": "Providence Atoll",
+  "8": "Alphonse",
+  "9": "Desroches Island",
+  "10": "Beau Vallon Bay",
+  "11": "North Islands",
+  "12": "Grande Soeur",
+  "13": "Curieuse",
+  "14": "Cousin",
+  "15": "L'Escale Marina (Mahe)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "L'Escale Marina (Mahe)",
+   "lat": -4.63,
+   "lng": 55.45,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "D'Arros Island, Amirante",
+   "lat": -5.41,
+   "lng": 53.3,
+   "mode": "sea",
+   "path": [
+    [
+     55.45,
+     -4.63
+    ],
+    [
+     53.3,
+     -5.41
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "At Sea",
+   "lat": -7.74,
+   "lng": 50.525,
+   "mode": "sea",
+   "path": [
+    [
+     53.3,
+     -5.41
+    ],
+    [
+     50.525,
+     -7.74
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Astove Island, Aldabra",
+   "lat": -10.07,
+   "lng": 47.75,
+   "mode": "sea",
+   "path": [
+    [
+     50.525,
+     -7.74
+    ],
+    [
+     47.75,
+     -10.07
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Aldabra Atoll, Aldabra",
+   "lat": -9.42,
+   "lng": 46.35,
+   "mode": "sea",
+   "path": [
+    [
+     47.75,
+     -10.07
+    ],
+    [
+     46.35,
+     -9.42
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Cosmoledo Atoll, Aldabra",
+   "lat": -9.72,
+   "lng": 47.58,
+   "mode": "sea",
+   "path": [
+    [
+     46.35,
+     -9.42
+    ],
+    [
+     47.58,
+     -9.72
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Providence Atoll, Farquhar",
+   "lat": -9.23,
+   "lng": 51.03,
+   "mode": "sea",
+   "path": [
+    [
+     47.58,
+     -9.72
+    ],
+    [
+     51.03,
+     -9.23
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Saint-Francois Atoll, Alphonse",
+   "lat": -7.02,
+   "lng": 52.73,
+   "mode": "sea",
+   "path": [
+    [
+     51.03,
+     -9.23
+    ],
+    [
+     52.73,
+     -7.02
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Desroches Island, Amirante",
+   "lat": -5.69,
+   "lng": 53.66,
+   "mode": "sea",
+   "path": [
+    [
+     52.73,
+     -7.02
+    ],
+    [
+     53.66,
+     -5.69
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "L'Escale Marina (Mahe) & Beau Vallon Bay",
+   "lat": -4.61,
+   "lng": 55.43,
+   "mode": "sea",
+   "path": [
+    [
+     53.66,
+     -5.69
+    ],
+    [
+     55.43,
+     -4.61
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "Silhouette & North Islands",
+   "lat": -4.39,
+   "lng": 55.24,
+   "mode": "sea",
+   "path": [
+    [
+     55.43,
+     -4.61
+    ],
+    [
+     55.24,
+     -4.39
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "Grande Soeur & Marianne Island",
+   "lat": -4.28,
+   "lng": 55.87,
+   "mode": "sea",
+   "path": [
+    [
+     55.24,
+     -4.39
+    ],
+    [
+     55.87,
+     -4.28
+    ]
+   ]
+  },
+  {
+   "day": 13,
+   "name": "La Digue & Curieuse",
+   "lat": -4.28,
+   "lng": 55.73,
+   "mode": "sea",
+   "path": [
+    [
+     55.87,
+     -4.28
+    ],
+    [
+     55.73,
+     -4.28
+    ]
+   ]
+  },
+  {
+   "day": 14,
+   "name": "Praslin & Cousin",
+   "lat": -4.33,
+   "lng": 55.66,
+   "mode": "sea",
+   "path": [
+    [
+     55.73,
+     -4.28
+    ],
+    [
+     55.66,
+     -4.33
+    ]
+   ]
+  },
+  {
+   "day": 15,
+   "name": "L'Escale Marina (Mahe)",
+   "lat": -4.63,
+   "lng": 55.45,
+   "mode": "sea",
+   "path": [
+    [
+     55.66,
+     -4.33
+    ],
+    [
+     55.45,
+     -4.63
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indian Ocean",
+    "lat": -6.5,
+    "lng": 50.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Seychelles",
+    "lat": -4.6,
+    "lng": 55.6,
+    "kind": "region"
+   }
+  ]
+ }
+}

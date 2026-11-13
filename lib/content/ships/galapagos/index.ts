@@ -18,6 +18,7 @@ import EcoGalaxy from "./ecogalaxy-catamaran.json";
 import Bonita from "./galaxy-bonita-yacht.json";
 import Orion from "./galaxy-orion-yacht.json";
 import Hermes from "./hermes-galapagos.json";
+import AquaMare from "./aqua-mare.json";
 
 // The Galápagos yachts, filed 1 Nov 2026 from ecoventura.com and Galaxy Cruises' own site and
 // booking feed (photographs: each operator). Ecoventura publishes one weekly schedule for its
@@ -36,6 +37,8 @@ import Hermes from "./hermes-galapagos.json";
 // in the Offer Ledger (lib/content/offers/offers.ts).
 const rec = (x: unknown) => withActiveDepartures(x as ShipRecord);
 export const GALAPAGOS_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: string }[] = [
+  // Aqua Expeditions' Aqua Mare (scripts/partners/aqua-build.mjs, 13 Nov 2026).
+  { data: rec(AquaMare), offerRefs: [], credit: "Aqua Expeditions" },
   { data: rec(Origin), offerRefs: ["ecoventura-origin-yacht"], credit: "Ecoventura" },
   { data: rec(Theory), offerRefs: ["ecoventura-theory-yacht"], credit: "Ecoventura" },
   { data: rec(Evolve), offerRefs: ["ecoventura-evolve-yacht"], credit: "Ecoventura" },

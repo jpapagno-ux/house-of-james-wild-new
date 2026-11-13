@@ -17,7 +17,7 @@ import { buildMetadata } from "@/lib/seo";
 
 // Preview of the VOYAGE template (ship + voyage on one page) on Aliikai's
 // 10 Day Raja Ampat North (VesselVoyage ITN-VSL-2026-000012, ship
-// VSL-2026-882896). Cabins and rates are the library's Room records; the day
+// VSL-2026-000004). Cabins and rates are the library's Room records; the day
 // log is the ItineraryItem records. Map positions are approximate because no
 // day has coordinates on file yet.
 

@@ -227,7 +227,7 @@
     {
      "day": 4,
      "title": "Seraya Besar",
-     "place": "Batu Moncho & Seraya Besar",
+     "place": "Batu Moncho and Seraya Besar",
      "lat": -8.48,
      "lng": 119.8,
      "summary": "Start the day at Komodo National Park's beautiful Batu Moncho bay, diving or snorkeling in its pristine waters."
@@ -235,7 +235,7 @@
     {
      "day": 5,
      "title": "Nusa Kode",
-     "place": "Rinca & Nusa Kode",
+     "place": "Rinca and Nusa Kode",
      "lat": -8.8,
      "lng": 119.6,
      "summary": "Our exploration begins at Rinca Island, where morning treks through rugged landscapes reveal the island's famed Komodo dragons in their natural habitat."
@@ -290,7 +290,7 @@
     {
      "day": 3,
      "title": "Satonda",
-     "place": "Saleh Bay & Satonda",
+     "place": "Saleh Bay and Satonda",
      "lat": -8.12,
      "lng": 117.75,
      "summary": "Arrive at Saleh Bay where you’ll have the chance to encounter friendly whale sharks up close."
@@ -298,7 +298,7 @@
     {
      "day": 4,
      "title": "Batu Moncho",
-     "place": "Gili Banta & Batu Moncho",
+     "place": "Gili Banta and Batu Moncho",
      "lat": -8.43,
      "lng": 119.62,
      "summary": "Start the day kayaking through Gili Banta's bay, surrounded by dramatic high cliffs rising from the water."
@@ -306,7 +306,7 @@
     {
      "day": 5,
      "title": "Nusa Kode",
-     "place": "Rinca & Nusa Kode",
+     "place": "Rinca and Nusa Kode",
      "lat": -8.8,
      "lng": 119.6,
      "summary": "Our exploration begins at Rinca Island, where morning treks through rugged landscapes reveal the island's famed Komodo dragons in their natural habitat."
@@ -314,7 +314,7 @@
     {
      "day": 6,
      "title": "Seraya Besar",
-     "place": "Tatawa Besar & Seraya Besar",
+     "place": "Tatawa Besar and Seraya Besar",
      "lat": -8.48,
      "lng": 119.8,
      "summary": "Start the day with a drift snorkel or dive along Tatawa Besar's rainbow reef, where soft and hard corals attract scores of marine life dancing in the current."
@@ -353,7 +353,7 @@
     {
      "day": 2,
      "title": "Gili Lawa",
-     "place": "Batu Moncho & Gili Lawa",
+     "place": "Batu Moncho and Gili Lawa",
      "lat": -8.3,
      "lng": 119.63,
      "summary": "Arrive at Komodo National Park's beautiful Batu Moncho bay for a morning of relaxation, with opportunities to dive and snorkel in its pristine waters."
@@ -361,7 +361,7 @@
     {
      "day": 3,
      "title": "Nusa Kode",
-     "place": "Rinca & Nusa Kode",
+     "place": "Rinca and Nusa Kode",
      "lat": -8.8,
      "lng": 119.6,
      "summary": "Our exploration begins at Rinca Island, where morning treks through rugged landscapes reveal the island's famed Komodo dragons in their natural habitat."
@@ -369,7 +369,7 @@
     {
      "day": 4,
      "title": "Seraya Besar",
-     "place": "Tatawa Besar & Seraya Besar",
+     "place": "Tatawa Besar and Seraya Besar",
      "lat": -8.48,
      "lng": 119.8,
      "summary": "Start the day with a drift snorkel or dive along Tatawa Besar's rainbow reef, where soft and hard corals attract scores of marine life dancing in the current."
@@ -385,7 +385,7 @@
     {
      "day": 6,
      "title": "Satonda",
-     "place": "Saleh Bay & Satonda",
+     "place": "Saleh Bay and Satonda",
      "lat": -8.12,
      "lng": 117.75,
      "summary": "Arrive at Saleh Bay where you might have the chance to encounter friendly whale sharks at the bay, depending on the time of the month."
@@ -432,7 +432,7 @@
     {
      "day": 3,
      "title": "Yangeffo Island",
-     "place": "Kabui Bay, Cape Kri & Yangeffo Island",
+     "place": "Kabui Bay, Cape Kri and Yangeffo Island",
      "lat": -0.5,
      "lng": 130.64,
      "summary": "Rise in the morning to birdsong for an early tender tour of Kabui Bay’s magnificent karsts."
@@ -440,7 +440,7 @@
     {
      "day": 4,
      "title": "Wofoh Island",
-     "place": "Aljui Bay & Wofoh Island",
+     "place": "Aljui Bay and Wofoh Island",
      "lat": -0.12,
      "lng": 130.18,
      "summary": "We’ll have an early departure to Aljui Bay, followed by an eye-opening visit to a pearl farm."
@@ -456,7 +456,7 @@
     {
      "day": 6,
      "title": "Arborek Island",
-     "place": "Penemu Island & Arborek Island",
+     "place": "Penemu Island and Arborek Island",
      "lat": -0.57,
      "lng": 130.52,
      "summary": "Wake up to the breathtaking beauty of Penemu Island, home to the renowned Melissa’s Garden."
@@ -495,7 +495,7 @@
     {
      "day": 2,
      "title": "One Thousand Temples",
-     "place": "One Thousand Temples & Yillet",
+     "place": "One Thousand Temples and Yillet",
      "lat": -1.95,
      "lng": 130.2,
      "summary": "Wake up to the magnificent Thousand Temples karst island and lagoon complex."
@@ -519,7 +519,7 @@
     {
      "day": 5,
      "title": "Fiabacet Island",
-     "place": "Neptune’S Passage & Fiabacet Island",
+     "place": "Neptune’S Passage and Fiabacet Island",
      "lat": -1.9,
      "lng": 130.2,
      "summary": "Bask in the views of Neptune’s Sea Fan; a limestone passage on the south of Misool, where an early morning kayak excursion awaits."
@@ -527,7 +527,7 @@
     {
      "day": 6,
      "title": "Kapatcol",
-     "place": "Kapatcol & Blue Water Mangroves",
+     "place": "Kapatcol and Blue Water Mangroves",
      "lat": -1.87,
      "lng": 130.13,
      "summary": "Head out early in the morning to the lush forests of Kapatcol, home to the Lesser and King birds of paradise."
@@ -535,7 +535,7 @@
     {
      "day": 7,
      "title": "Kofiu Islands",
-     "place": "Boo & Kofiu Islands",
+     "place": "Boo and Kofiu Islands",
      "lat": -1.18,
      "lng": 129.85,
      "summary": "The penultimate day begins with a kayak exploration of Boo Island’s shimmering lagoons and waterways."
@@ -566,7 +566,7 @@
     {
      "day": 2,
      "title": "Banda Islands",
-     "place": "Banda Islands & Banda Neira",
+     "place": "Banda Islands and Banda Neira",
      "lat": -4.52,
      "lng": 129.9,
      "summary": "Approach the Banda Islands at sunrise, greeted by Kora-Kora war canoes at the harbor."
@@ -582,7 +582,7 @@
     {
      "day": 4,
      "title": "Wayil",
-     "place": "Wayil & Misool",
+     "place": "Wayil and Misool",
      "lat": -2.05,
      "lng": 130.3,
      "summary": "The Wayil region of Raja Ampat features a number of uncharted islands, each harboring pristine beaches and secret lagoons."
@@ -590,7 +590,7 @@
     {
      "day": 5,
      "title": "Arborek Island",
-     "place": "Penemu Island & Arborek Island",
+     "place": "Penemu Island and Arborek Island",
      "lat": -0.57,
      "lng": 130.52,
      "summary": "Wake up to the breathtaking beauty of Penemu Island, home to the renowned Melissa’s Garden."
@@ -598,7 +598,7 @@
     {
      "day": 6,
      "title": "Yangeffo Bay",
-     "place": "Yeben & Yangeffo Bay",
+     "place": "Yeben and Yangeffo Bay",
      "lat": -0.5,
      "lng": 130.64,
      "summary": "Yeben Island is a hidden treasure of Raja Ampat known for its clear water and beautiful beaches."
@@ -637,7 +637,7 @@
     {
      "day": 2,
      "title": "Banda Islands",
-     "place": "Banda Islands & Banda Neira",
+     "place": "Banda Islands and Banda Neira",
      "lat": -4.52,
      "lng": 129.9,
      "summary": "Approach the Banda Islands at sunrise, greeted by Kora-Kora war canoes at the harbor."
@@ -653,7 +653,7 @@
     {
      "day": 4,
      "title": "Wayil",
-     "place": "Wayil & Yillet",
+     "place": "Wayil and Yillet",
      "lat": -2.05,
      "lng": 130.3,
      "summary": "The Wayil region of Raja Ampat features a number of uncharted islands, each harboring pristine beaches and secret lagoons."
@@ -661,7 +661,7 @@
     {
      "day": 5,
      "title": "Fibiacet Island",
-     "place": "One Thousand Temples & Fibiacet Island",
+     "place": "One Thousand Temples and Fibiacet Island",
      "lat": -1.9,
      "lng": 130.2,
      "summary": "Wake up to the magnificent Thousand Temples karst island and lagoon complex."
@@ -669,7 +669,7 @@
     {
      "day": 6,
      "title": "Kapatcol",
-     "place": "Kapatcol & Blue Water Mangroves",
+     "place": "Kapatcol and Blue Water Mangroves",
      "lat": -1.87,
      "lng": 130.13,
      "summary": "Head out early in the morning to the lush forests of Kapatcol, home to the Lesser and King birds of paradise."
@@ -708,7 +708,7 @@
     {
      "day": 2,
      "title": "Mayalibit Bay",
-     "place": "Mioskon Island & Mayalibit Bay",
+     "place": "Mioskon Island and Mayalibit Bay",
      "lat": -0.3,
      "lng": 130.95,
      "summary": "Awake to the beauty of Mioskon Island, and head out for a relaxing snorkel and dive excursion."
@@ -716,7 +716,7 @@
     {
      "day": 3,
      "title": "Yeben",
-     "place": "Yangeffo Bay & Yeben",
+     "place": "Yangeffo Bay and Yeben",
      "lat": -0.45,
      "lng": 130.6,
      "summary": "While at Yangeffo Bay, experience an exhilarating dive excursion at the renowned Mayhem reef, or snorkel the mangroves at Citrus Ridge."
@@ -724,7 +724,7 @@
     {
      "day": 4,
      "title": "Wofoh Island",
-     "place": "Aljui Bay & Wofoh Island",
+     "place": "Aljui Bay and Wofoh Island",
      "lat": -0.12,
      "lng": 130.18,
      "summary": "We’ll have an early departure to Aljui Bay, followed by a visit to a local pearl farm."
@@ -740,7 +740,7 @@
     {
      "day": 6,
      "title": "Arborek Island",
-     "place": "Penemu Island & Arborek Island",
+     "place": "Penemu Island and Arborek Island",
      "lat": -0.57,
      "lng": 130.52,
      "summary": "Wake up to the breathtaking beauty of Penemu Island, home to the renowned Melissa’s Garden."
@@ -748,7 +748,7 @@
     {
      "day": 7,
      "title": "One Thousand Temples",
-     "place": "One Thousand Temples & Yillet",
+     "place": "One Thousand Temples and Yillet",
      "lat": -1.95,
      "lng": 130.2,
      "summary": "Wake up to the magnificent Thousand Temples karst island and lagoon complex."
@@ -764,7 +764,7 @@
     {
      "day": 9,
      "title": "Banda Islands",
-     "place": "Banda Islands & Banda Neira",
+     "place": "Banda Islands and Banda Neira",
      "lat": -4.52,
      "lng": 129.9,
      "summary": "Approach the Banda Islands at sunrise, greeted by Kora-Kora war canoes at the harbor."
@@ -827,7 +827,7 @@
     {
      "day": 5,
      "title": "Romang",
-     "place": "Romang, Nyata, Telang (The Forgotten Islands)",
+     "place": "Romang, Nyata, Telang, the Forgotten Islands",
      "lat": -7.6,
      "lng": 127.4,
      "summary": "Dive around Nyata island in search of hammerhead sharks and rays."
@@ -859,7 +859,7 @@
     {
      "day": 9,
      "title": "Banda Islands",
-     "place": "Banda Islands & Banda Neira",
+     "place": "Banda Islands and Banda Neira",
      "lat": -4.52,
      "lng": 129.9,
      "summary": "Approach the Banda Islands at sunrise, greeted by Kora-Kora war canoes at the harbor."
@@ -867,7 +867,7 @@
     {
      "day": 10,
      "title": "Pulau Ai",
-     "place": "Pulau Ai & Pulau Run",
+     "place": "Pulau Ai and Pulau Run",
      "lat": -4.52,
      "lng": 129.68,
      "summary": "At Pulau Ai, the westernmost of the Banda Islands, swim, snorkel, and dive in the crystal-clear waters, where you’ll discover stunning coral gardens and reef fish."
@@ -914,7 +914,7 @@
     {
      "day": 3,
      "title": "Yangeffo Island",
-     "place": "Kabui Bay, Cape Kri & Yangeffo Island",
+     "place": "Kabui Bay, Cape Kri and Yangeffo Island",
      "lat": -0.5,
      "lng": 130.64,
      "summary": "Rise in the morning to birdsong for an early tender tour of Kabui Bay’s magnificent karsts."
@@ -922,7 +922,7 @@
     {
      "day": 4,
      "title": "Wofoh Island",
-     "place": "Aljui Bay & Wofoh Island",
+     "place": "Aljui Bay and Wofoh Island",
      "lat": -0.12,
      "lng": 130.18,
      "summary": "We’ll have an early departure to Aljui Bay, followed by a visit to a local pearl farm."
@@ -938,7 +938,7 @@
     {
      "day": 6,
      "title": "Arborek Island",
-     "place": "Penemu Island & Arborek Island",
+     "place": "Penemu Island and Arborek Island",
      "lat": -0.57,
      "lng": 130.52,
      "summary": "Wake up to the breathtaking beauty of Penemu Island, home to the renowned Melissa’s Garden."
@@ -946,7 +946,7 @@
     {
      "day": 7,
      "title": "One Thousand Temples",
-     "place": "One Thousand Temples & Yillet",
+     "place": "One Thousand Temples and Yillet",
      "lat": -1.95,
      "lng": 130.2,
      "summary": "Wake up to the magnificent Thousand Temples karst island and lagoon complex."
@@ -962,7 +962,7 @@
     {
      "day": 9,
      "title": "Fiabacet",
-     "place": "Neptune’S Passage & Fiabacet",
+     "place": "Neptune’S Passage and Fiabacet",
      "lat": -1.9,
      "lng": 130.2,
      "summary": "Bask in the views of Neptune’s Sea Fan: a limestone passage on the south of Misool, where an early morning kayak excursion awaits."
@@ -970,7 +970,7 @@
     {
      "day": 10,
      "title": "Kapatcol",
-     "place": "Kapatcol & Blue Water Mangroves",
+     "place": "Kapatcol and Blue Water Mangroves",
      "lat": -1.87,
      "lng": 130.13,
      "summary": "Head out early in the morning to the lush forests of Kapatcol, home to the Lessor and King birds of paradise."
@@ -1009,7 +1009,7 @@
     {
      "day": 2,
      "title": "Banda Islands",
-     "place": "Banda Islands & Banda Neira",
+     "place": "Banda Islands and Banda Neira",
      "lat": -4.52,
      "lng": 129.9,
      "summary": "Approach the Banda Islands at sunrise, greeted by Kora-Kora war canoes at the harbor."
@@ -1057,7 +1057,7 @@
     {
      "day": 8,
      "title": "Biwar Laut",
-     "place": "Biwar Laut & Ouws",
+     "place": "Biwar Laut and Ouws",
      "lat": -5.6,
      "lng": 138.2,
      "summary": "Today, we continue our exploration of the Asmat region and gain a deeper insight into the traditions of the locals."
@@ -1089,7 +1089,7 @@
     {
      "day": 12,
      "title": "Pulau Ai",
-     "place": "Pulau Ai & Run",
+     "place": "Pulau Ai and Run",
      "lat": -4.52,
      "lng": 129.68,
      "summary": "At Pulau Ai, the westernmost of the Banda Islands, swim, snorkel, and dive in the crystal-clear waters, where you’ll discover stunning coral gardens and reef fish."
@@ -1128,7 +1128,7 @@
     {
      "day": 3,
      "title": "Yangeffo Island",
-     "place": "Kabui Bay, Cape Kri & Yangeffo Island",
+     "place": "Kabui Bay, Cape Kri and Yangeffo Island",
      "lat": -0.5,
      "lng": 130.64,
      "summary": "Rise in the morning to birdsong for an early tender tour of Kabui Bay’s magnificent karsts."
@@ -1136,7 +1136,7 @@
     {
      "day": 4,
      "title": "Wofoh Island",
-     "place": "Aljui Bay & Wofoh Island",
+     "place": "Aljui Bay and Wofoh Island",
      "lat": -0.12,
      "lng": 130.18,
      "summary": "We’ll have an early departure to Aljui Bay, followed by an eye-opening visit to a pearl farm."
@@ -1152,7 +1152,7 @@
     {
      "day": 6,
      "title": "Arborek Island",
-     "place": "Penemu Island & Arborek Island",
+     "place": "Penemu Island and Arborek Island",
      "lat": -0.57,
      "lng": 130.52,
      "summary": "Wake up to the breathtaking beauty of Penemu Island, home to the renowned Melissa’s Garden."
@@ -1176,7 +1176,7 @@
     {
      "day": 9,
      "title": "One Thousand Temples",
-     "place": "One Thousand Temples & Yillet",
+     "place": "One Thousand Temples and Yillet",
      "lat": -1.95,
      "lng": 130.2,
      "summary": "Wake up to the magnificent Thousand Temples Island and lagoon complex."
@@ -1200,7 +1200,7 @@
     {
      "day": 12,
      "title": "Fiabacet Island",
-     "place": "Neptune’S Passage & Fiabacet Island",
+     "place": "Neptune’S Passage and Fiabacet Island",
      "lat": -1.9,
      "lng": 130.2,
      "summary": "Bask in the views of Neptune’s Sea Fan; a limestone passage on the south of Misool, where an early morning kayak excursion awaits."
@@ -1208,7 +1208,7 @@
     {
      "day": 13,
      "title": "Kapatcol",
-     "place": "Kapatcol & Blue Water Mangroves",
+     "place": "Kapatcol and Blue Water Mangroves",
      "lat": -1.87,
      "lng": 130.13,
      "summary": "Head out early in the morning to the lush forests of Kapatcol, home to the Lessor and King birds of paradise."
@@ -1216,7 +1216,7 @@
     {
      "day": 14,
      "title": "Kofiu Islands",
-     "place": "Boo & Kofiu Islands",
+     "place": "Boo and Kofiu Islands",
      "lat": -1.18,
      "lng": 129.85,
      "summary": "The penultimate day begins with a kayak exploration of Boo Island’s shimmering lagoons and waterways."
@@ -1247,7 +1247,7 @@
     {
      "day": 2,
      "title": "One Thousand Temples",
-     "place": "One Thousand Temples & Yillet",
+     "place": "One Thousand Temples and Yillet",
      "lat": -1.95,
      "lng": 130.2,
      "summary": "Wake up to the magnificent Thousand Temples Island and lagoon complex."
@@ -1271,7 +1271,7 @@
     {
      "day": 5,
      "title": "Fiabacet Island",
-     "place": "Neptune’S Passage & Fiabacet Island",
+     "place": "Neptune’S Passage and Fiabacet Island",
      "lat": -1.9,
      "lng": 130.2,
      "summary": "Bask in the views of Neptune’s Sea Fan; a limestone passage on the south of Misool, where an early morning kayak excursion awaits."
@@ -1279,7 +1279,7 @@
     {
      "day": 6,
      "title": "Kapatcol",
-     "place": "Kapatcol & Blue Water Mangroves",
+     "place": "Kapatcol and Blue Water Mangroves",
      "lat": -1.87,
      "lng": 130.13,
      "summary": "Head out early in the morning to the lush forests of Kapatcol, home to the Lessor and King birds of paradise."
@@ -1287,7 +1287,7 @@
     {
      "day": 7,
      "title": "Kofiu Islands",
-     "place": "Boo & Kofiu Islands",
+     "place": "Boo and Kofiu Islands",
      "lat": -1.18,
      "lng": 129.85,
      "summary": "The day begins with a kayak exploration of Boo Island’s shimmering lagoons and waterways."
@@ -1311,7 +1311,7 @@
     {
      "day": 10,
      "title": "Yangeffo Island",
-     "place": "Kabui Bay, Cape Kri & Yangeffo Island",
+     "place": "Kabui Bay, Cape Kri and Yangeffo Island",
      "lat": -0.5,
      "lng": 130.64,
      "summary": "Rise in the morning to birdsong for an early tender tour of Kabui Bay’s magnificent karsts."
@@ -1319,7 +1319,7 @@
     {
      "day": 11,
      "title": "Wofoh Island",
-     "place": "Aljui Bay & Wofoh Island",
+     "place": "Aljui Bay and Wofoh Island",
      "lat": -0.12,
      "lng": 130.18,
      "summary": "We’ll have an early departure to Aljui Bay, followed by an eye-opening visit to a pearl farm."
@@ -1335,7 +1335,7 @@
     {
      "day": 13,
      "title": "Arborek Island",
-     "place": "Penemu Island & Arborek Island",
+     "place": "Penemu Island and Arborek Island",
      "lat": -0.57,
      "lng": 130.52,
      "summary": "Wake up to the breathtaking beauty of Penemu Island, home to the renowned Melissa’s Garden."
@@ -1374,7 +1374,7 @@
     {
      "day": 2,
      "title": "Mayalibit Bay",
-     "place": "Mioskon Island & Mayalibit Bay",
+     "place": "Mioskon Island and Mayalibit Bay",
      "lat": -0.3,
      "lng": 130.95,
      "summary": "Awake to the beauty of Mioskon Island, and head out for a relaxing snorkel and dive excursion."
@@ -1382,7 +1382,7 @@
     {
      "day": 3,
      "title": "Yeben",
-     "place": "Yangeffo Bay & Yeben",
+     "place": "Yangeffo Bay and Yeben",
      "lat": -0.45,
      "lng": 130.6,
      "summary": "While at Yangeffo Bay, experience an exhilarating dive excursion at the renowned Mayhem reef, or snorkel the mangroves at Citrus Ridge."
@@ -1390,7 +1390,7 @@
     {
      "day": 4,
      "title": "Wofoh Island",
-     "place": "Aljui Bay & Wofoh Island",
+     "place": "Aljui Bay and Wofoh Island",
      "lat": -0.12,
      "lng": 130.18,
      "summary": "We’ll have an early departure to Aljui Bay, followed by a visit to a local pearl farm."
@@ -1406,7 +1406,7 @@
     {
      "day": 6,
      "title": "Arborek Island",
-     "place": "Penemu Island & Arborek Island",
+     "place": "Penemu Island and Arborek Island",
      "lat": -0.57,
      "lng": 130.52,
      "summary": "Wake up to the breathtaking beauty of Penemu Island, home to the renowned Melissa’s Garden."
@@ -1414,7 +1414,7 @@
     {
      "day": 7,
      "title": "One Thousand Temples",
-     "place": "One Thousand Temples & Yillet",
+     "place": "One Thousand Temples and Yillet",
      "lat": -1.95,
      "lng": 130.2,
      "summary": "Wake up to the magnificent Thousand Temples karst island and lagoon complex."
@@ -1438,7 +1438,7 @@
     {
      "day": 10,
      "title": "Banda Islands",
-     "place": "Banda Islands & Banda Neira",
+     "place": "Banda Islands and Banda Neira",
      "lat": -4.52,
      "lng": 129.9,
      "summary": "Approach the Banda Islands at sunrise, greeted by Kora-Kora war canoes at the harbor."
@@ -1462,7 +1462,7 @@
     {
      "day": 13,
      "title": "Banda Islands",
-     "place": "Banda Islands & Banda Neira",
+     "place": "Banda Islands and Banda Neira",
      "lat": -4.52,
      "lng": 129.9,
      "summary": "Back to the Banda Islands, spend the day free roaming around Banda Neira and discovering its rich history."
@@ -1470,7 +1470,7 @@
     {
      "day": 14,
      "title": "Pulau Ai",
-     "place": "Pulau Ai & Pulau Run",
+     "place": "Pulau Ai and Pulau Run",
      "lat": -4.52,
      "lng": 129.68,
      "summary": "At sunrise, arrive at Pulau Ai& Pulau Run, the westernmost of the Banda Islands."
@@ -1486,7 +1486,7 @@
     {
      "day": 16,
      "title": "Nil Desperandum",
-     "place": "Serua Island & Nil Desperandum",
+     "place": "Serua Island and Nil Desperandum",
      "lat": -6.15,
      "lng": 129.8,
      "summary": "A playground for snorkelers and divers alike, Serua Island showcases an impressive array of reefs, walls, and incredible soft coral spots."
@@ -1494,7 +1494,7 @@
     {
      "day": 17,
      "title": "Romang",
-     "place": "Romang, Nyata, & Telang (The Forgotten Islands)",
+     "place": "Romang, Nyata, and Telang, the Forgotten Islands",
      "lat": -7.6,
      "lng": 127.4,
      "summary": "Dive around Nyata island in search of hammerhead sharks and rays."

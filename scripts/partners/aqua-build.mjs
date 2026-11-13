@@ -14,7 +14,9 @@ const raw = JSON.parse(readFileSync("scripts/data/aqua/raw.json", "utf8"));
 const PORTS = { PHNOM: "Phnom Penh", SIEMREAP: "Siem Reap", MYTHO: "Ho Chi Minh City", NAUTA: "Nauta", IQT: "Iquitos", AYO: "Santa Cruz (Puerto Ayora)", BALTRA: "Baltra", "RAJ-SOR": "Sorong", "KOM-LAB": "Labuan Bajo", "BALI-DEN": "Bali", "SPI-AMB": "Ambon", MAHE: "Mahé", ZANZI: "Zanzibar", LONG: "Longyearbyen", TROM: "Tromsø", GLAS: "Glasgow" };
 const clean = (s) => String(s ?? "").replace(/[​*]/g, "").replace(/\s*[–—]\s*/g, ", ").replace(/\s+-\s+/g, ", ").replace(/\s+/g, " ").replace(/\s+,/g, ",").trim();
 const SMALL = new Set(["and", "of", "the", "to", "at", "in", "on", "de", "la", "del", "&"]);
-const title = (s) => clean(s).toLowerCase().split(" ").map((w, i) => (i && SMALL.has(w) ? w : w.replace(/(^|[(/'’-])(\p{L})/gu, (m, a, b) => a + b.toUpperCase()))).join(" ").replace(/\s*\/\s*/g, ", ").replace(/ ,/g, ",");
+// "L'Escale Marina (Mahe) & Beau Vallon Bay" reads "L'Escale Marina, Mahé, and Beau Vallon Bay"
+const place = (s) => clean(s).replace(/\s*\((mahe)\)/gi, ", Mahé,").replace(/\s*\(([^)]+)\)/g, ", $1").replace(/\s+&\s+/g, " and ").replace(/,\s*,/g, ",");
+const title = (s) => place(s).toLowerCase().split(" ").map((w, i) => (i && SMALL.has(w) ? w : w.replace(/(^|[(/'’-])(\p{L})/gu, (m, a, b) => a + b.toUpperCase()))).join(" ").replace(/\s*\/\s*/g, ", ").replace(/ ,/g, ",");
 const sentence = (s, n = 170) => {
   const t = clean(s).replace(/\s*\(\s*\)/g, "");
   const parts = t.split(/(?<=[.!?])\s+/);

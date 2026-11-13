@@ -18,7 +18,7 @@
 
 import type { PathwayId } from "@/lib/pathways";
 
-export type VoyageType = "river" | "sailing" | "expedition" | "charter";
+export type VoyageType = "river" | "sailing" | "expedition" | "yacht" | "charter";
 /** antarctica and patagonia: the polar waters, both listed in Polar Voyages (/voyages/polar). */
 export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji" | "mekong" | "seychelles" | "arctic" | "caribbean" | "mediterranean" | "bahamas";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
@@ -300,7 +300,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
   // "expedition" as Star Breeze is, since the four voyage types carry no ocean-yacht type yet. Fares are per suite.
   // Between Tides first (the transverse marina and its watersports); Slow sailing and wellness second (spa, exercise classes).
   // Activities are left to what the brand's pages name outright: shore experiences and the spa. Marina watersports are not itemised.
-  { slug: "four-seasons-i", name: "Four Seasons I", operator: "Four Seasons Yachts", kind: "motor-yacht", types: ["expedition"], waters: ["caribbean", "mediterranean", "bahamas"],
+  { slug: "four-seasons-i", name: "Four Seasons I", operator: "Four Seasons Yachts", kind: "motor-yacht", types: ["yacht"], waters: ["caribbean", "mediterranean", "bahamas"],
     country: ["Sint Maarten", "Antigua and Barbuda", "Saint Lucia", "Bahamas", "Greece", "Italy", "France", "Monaco", "Croatia", "Spain", "Malta", "Turkey"],
     pathway: { primary: "PATH-02", secondary: ["PATH-05"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
     // fourseasonsyachts.com: over 100 connecting suite combinations; children under 5 have meals included (no minimum age readable).
@@ -328,11 +328,12 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     traits: { dives: true, activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "culture"] } },
 ];
 
-/** The four voyage types, in the house's words (James, 1 Nov 2026). */
+/** The voyage types, in the house's words (James, 1 Nov 2026; "By Yacht" added 13 Nov 2026 for the ocean yachts of Timeless Voyages). */
 export const VOYAGE_TYPES: Record<VoyageType, { name: string; path: string; question: string; line: string }> = {
   river: { name: "By River", path: "/voyages/rivers", question: "Which small-ship river cruise is right for you?", line: "Riverboats and a dahabiya on the Nile, and river ships in the Amazon of Peru, Ecuador and Brazil." },
   sailing: { name: "Under Sail", path: "/voyages/sailing", question: "Which small sailing ship should you choose?", line: "Hand-built phinisis and yachts in Indonesia, from Raja Ampat to Komodo and the Banda Sea, and Windstar's four-masted Wind Star in Tahiti from March 2027." },
   expedition: { name: "To the Edges", path: "/voyages/expedition", question: "Which small expedition ship should you choose?", line: "Expedition yachts and catamarans in the Galápagos, Polar Voyages: Antarctica21's polar air-cruises and voyages, and TAO's island expeditions in Palawan." },
+  yacht: { name: "By Yacht", path: "/voyages/yachts", question: "What is a luxury yacht voyage like?", line: "Ocean yachts with suites, a marina at the stern and a hotel's service: Four Seasons I in the Caribbean, the Bahamas and the Mediterranean." },
   charter: { name: "The Whole Ship", path: "/voyages/charter", question: "What does a whole-yacht charter include?", line: "A phinisi, a yacht, a dahabiya or a riverboat taken private for your party." },
 };
 

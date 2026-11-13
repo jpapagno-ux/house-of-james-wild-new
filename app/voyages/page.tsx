@@ -34,7 +34,7 @@ import { volumeEyebrow } from "@/lib/volumes";
 // The polar card opens Polar Voyages on this site (/voyages/polar, James, 2 Nov 2026).
 const PATH = "/voyages";
 const V = VOLUMES.find((v) => v.href === PATH)!;
-const TYPES: VoyageType[] = ["river", "sailing", "expedition", "charter"];
+const TYPES: VoyageType[] = ["river", "sailing", "expedition", "yacht", "charter"];
 const WATERS: Waters[] = ["nile", "amazon", "galapagos", "indonesia"];
 
 const cards = allCards();

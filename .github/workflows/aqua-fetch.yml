@@ -1,13 +1,14 @@
-# Aqua Expeditions partner data: fetches the public trips, ships, departures and day-by-day
-# itineraries Aqua's own site loads, and keeps them as a run artifact (scripts/data/aqua/raw.json)
-# for scripts/partners/aqua-build.mjs, and commits it to the branch it ran on. Run by hand, or on a
-# push that changes the fetch script.
+# Aqua Expeditions partner data. "fetch" (by hand, or a push changing the fetch script) pulls the public
+# trips, ships, departures, day-by-day itineraries, page photographs and films Aqua's own site loads and
+# commits them as scripts/data/aqua/raw.json for scripts/partners/aqua-build.mjs. "photos" (a push changing
+# scripts/data/aqua/photos.json) uploads the listed photographs into Cloudinary with the CLOUDINARY_URL
+# secret and commits scripts/data/aqua/photos-done.json. Both commit to the branch they ran on.
 name: Aqua Expeditions fetch
 
 on:
   workflow_dispatch:
   push:
-    paths: [scripts/partners/aqua-fetch.mjs, .github/workflows/aqua-fetch.yml]
+    paths: [scripts/partners/aqua-fetch.mjs, scripts/partners/aqua-photos.mjs, scripts/data/aqua/photos.json, .github/workflows/aqua-fetch.yml]
 
 permissions:
   contents: write
@@ -15,17 +16,24 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/partners/aqua-fetch.mjs
-      - name: Commit the raw data
+      - name: Fetch
+        if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[photos]')
+        run: node scripts/partners/aqua-fetch.mjs
+      - name: Photographs
+        if: contains(github.event.head_commit.message, '[photos]')
+        env:
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+        run: node scripts/partners/aqua-photos.mjs
+      - name: Commit
         run: |
           git config user.name "jwco-bot"
           git config user.email "jwco-bot@users.noreply.github.com"
-          git add scripts/data/aqua/raw.json
-          git diff --cached --quiet || git commit -m "Aqua Expeditions raw data, $(date -u +%F)"
+          git add scripts/data/aqua/
+          git diff --cached --quiet || git commit -m "Aqua Expeditions data, $(date -u +%F)"
           git push

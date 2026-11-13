@@ -44,6 +44,10 @@ const WATERS: Record<string, { dark: string; light: string }> = {
   philippines: { dark: "#15333A", light: "#D6E8E5" },
   tahiti: { dark: "#123844", light: "#D5EAE8" },
   fiji: { dark: "#133744", light: "#D7E9E6" },
+  // Aqua Expeditions' waters (13 Nov 2026): the Mekong's silt-green river, the Seychelles' turquoise, the Arctic's ice.
+  mekong: { dark: "#1F2E2A", light: "#DCE3D6" },
+  seychelles: { dark: "#123A44", light: "#D6ECE9" },
+  arctic: { dark: "#1E2B38", light: "#E6ECF1" },
 };
 
 export function paletteFor(pathway: PathwayId, waters: string): OpeningPalette {

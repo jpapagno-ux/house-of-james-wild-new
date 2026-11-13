@@ -100,4 +100,5 @@ export const WATERS_PALETTE: Record<WatersKey, WatersSet> = {
 };
 
 /** The waters context a ship or hub takes, by its registry waters key. Sea waters follow the House Standard. */
-export const watersTheme = (waters?: string | null): string => (waters === "amazon" || waters === "nile" || waters === "river" ? `theme-waters-${waters}` : "");
+// The Mekong (Aqua Mekong, 13 Nov 2026) is a river and takes the By River set until it has a set of its own.
+export const watersTheme = (waters?: string | null): string => (waters === "amazon" || waters === "nile" || waters === "river" ? `theme-waters-${waters}` : waters === "mekong" ? "theme-waters-river" : "");

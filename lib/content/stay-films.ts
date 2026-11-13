@@ -20,6 +20,16 @@ export const STAY_FILMS: Record<string, WideFilm> = {
     credit: "Film courtesy of Wymara Resort + Villas",
     hero: true,
   },
+  // Salterra's own resort film (20 s, 4K) from salterra.com (13 Nov 2026).
+  salterra: {
+    kind: "mp4",
+    src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/salterra/film-resort.mp4`,
+    srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/salterra/film-resort.mp4`,
+    poster: `${CLD}/so_1,q_auto,f_jpg,w_1920/jwco/stays/salterra/film-resort.jpg`,
+    title: "Salterra Resort & Spa, South Caicos",
+    credit: "Film courtesy of Salterra Resort & Spa",
+    hero: true,
+  },
   "casali-di-casole": {
     kind: "mp4",
     src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/casali-di-casole/film-estate.mp4`,

@@ -6,6 +6,7 @@ import data from "./stays.json";
 import photoAlts from "./photo-alts.json";
 import { HERO_OVERRIDE } from "./stay-media";
 import { isVessel, vessel } from "./vessels";
+import { combineFaqs } from "./island-hops";
 
 type Block = { paras: string[]; items: string[] };
 export type StayData = {
@@ -68,6 +69,9 @@ for (const s of RECORDS) {
 }
 export const STAYS: StayData[] = RECORDS.filter((s) => !isVessel(s));
 export const STAY_PAGES = STAYS.filter(pageReady);
+// Island hops (lib/content/island-hops.ts): one generated "can you combine" question on stay pages in the island
+// countries switched on there, built only from each record's own airport and directions. Library questions win.
+for (const s of STAY_PAGES) { const extra = combineFaqs(s, STAY_PAGES); if (extra.length) s.faqs = [...(s.faqs ?? []), ...extra]; }
 export const stayBySlug = (slug: string) => STAY_PAGES.find((s) => s.slug === slug);
 /** Vessel records from the Stay export (Voyages side). */
 export const VESSEL_RECORDS: StayData[] = RECORDS.filter(isVessel);

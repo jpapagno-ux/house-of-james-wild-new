@@ -1,6 +1,6 @@
 {
  "exportedOn": "2026-11-01",
- "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James; EF-012 Vahine Royal Villa and EF-013 The Brando added 2 Nov 2026 (French Polynesia build; Airtable rows created); EF-015 Laucala, EF-017 Six Senses Fiji six bedroom retreat, EF-018 Turtle Island added 5 Nov 2026 (Fiji build; Airtable rows created; EF-016 Kokomo and EF-019 Dolphin Island wait in Airtable as drafts for their stays). James notes drafted in Airtable for his approval, not published.",
+ "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James; EF-012 Vahine Royal Villa and EF-013 The Brando added 2 Nov 2026 (French Polynesia build; Airtable rows created); EF-015 Laucala, EF-017 Six Senses Fiji six bedroom retreat, EF-018 Turtle Island added 5 Nov 2026 (Fiji build; Airtable rows created; EF-016 Kokomo and EF-019 Dolphin Island wait in Airtable as drafts for their stays). James notes drafted in Airtable for his approval, not published. EF-022 Casali di Casole added 13 Nov 2026 (James: \"Yes, I think it qualifies under The Exceptional Few\"); Airtable row to be created when the connection returns.",
  "records": [
   {
    "id": "EF-001",
@@ -1345,6 +1345,68 @@
    "selectionDate": "2026-11-12",
    "publicationStatus": "published",
    "reviewDate": "2026-11-12",
+   "reviewStatus": "approved",
+   "jamesNote": null
+  },
+  {
+   "id": "EF-022",
+   "stayId": "STY-2026-000650",
+   "staySlug": "casali-di-casole",
+   "stayName": "Casali di Casole",
+   "collectionNumber": 22,
+   "heroLine": "Eighteen stone farmhouses on a 4,200 acre Tuscan estate, each let whole.",
+   "whyItMadeTheCut": [
+    "Place. A private estate of 4,200 acres in the hills of Casole d'Elsa, between Siena and Volterra; the land was once 31 farms of the Bargagli family, and Querceto Manor dates to the year 998.",
+    "Privacy. Every farmhouse, villa and penthouse is let whole to one party, most with a pool and land of its own, from four guests at Villa Scuola to sixteen at Cetena Rossa.",
+    "Access. The Belmond Castello di Casole stands on the same estate, and its restaurants and spa are open to residence guests, subject to availability."
+   ],
+   "signals": [
+    {
+     "key": "place",
+     "line": "4,200 acres of Tuscan hills between Siena and Volterra."
+    },
+    {
+     "key": "privacy",
+     "line": "Each house let whole, most with a pool of its own."
+    },
+    {
+     "key": "design",
+     "line": "Centuries-old stone farmhouses, restored as private residences."
+    },
+    {
+     "key": "humanity",
+     "line": "A bilingual concierge, private chefs and sommeliers on request."
+    },
+    {
+     "key": "rarity",
+     "line": "A manor dating to 998, and a castle hotel's restaurants and spa on the estate."
+    }
+   ],
+   "pathwaysOverride": [
+    "a-place-of-our-own",
+    "rooted-in-place"
+   ],
+   "worthAnotherNight": "A week. Enough for Siena and San Gimignano, a morning truffle hunting, an afternoon in Montalcino and long lunches at home.",
+   "whoItSuits": [
+    "Families travelling across generations",
+    "Groups of friends taking a whole house",
+    "Food and wine lovers",
+    "Milestone celebrations"
+   ],
+   "whoItMayNotSuit": [
+    "Travellers who want to walk to a town's restaurants each night",
+    "Those who prefer a hotel's daily rhythm to a house of their own"
+   ],
+   "continueRefs": [
+    "stay:borgo-santo-pietro",
+    "stay:como-castello-del-nero",
+    "pathway:a-place-of-our-own"
+   ],
+   "paletteKey": "casali",
+   "designationStatus": "designated",
+   "selectionDate": "2026-11-13",
+   "publicationStatus": "published",
+   "reviewDate": "2026-11-13",
    "reviewStatus": "approved",
    "jamesNote": null
   }

@@ -6,6 +6,8 @@ import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import { sharpen, tooSmall } from "@/lib/content/sharpen";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import LedgerCounter from "@/components/destination/LedgerCounter";
+import PlaceSearch from "@/components/destination/PlaceSearch";
+import { countryScope } from "@/lib/search-bus";
 import PlaceNote from "@/components/destination/PlaceNote";
 import { COUNTRY_NOTES } from "@/lib/content/place-notes";
 import { countryCounts, isResidence } from "@/lib/content/ledger-counts";
@@ -318,6 +320,8 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               {/* Theme chips: the region's Wild Pathways (never a volume colour) */}
               {(REGION_PATHWAYS[c.region] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[c.region] ?? []).map((k) => pathway(k)).filter((x) => !!x).map((x) => <li key={x!.id}><PathwayChip pathway={x!} href={!GUARD_ON || isBuilt(`/pathways/${x!.key}`) ? `/pathways/${x!.key}` : undefined} /></li>)}</ul>}
               {!coming && <LedgerCounter place={c.name} counts={countryCounts(c.slug)} />}
+              {/* Search inside this country (James, 13 Nov 2026) */}
+              {!coming && <PlaceSearch scope={countryScope(c.name, c.slug)} className="mt-6" />}
               {/* The three instruments, one line (James, 3 Nov 2026): Read the Compass · Open the Atlas · Ask Iggi */}
               <InstrumentsStrip atlasHref="#the-map" className="mt-6" />
             </div>

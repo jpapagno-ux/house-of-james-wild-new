@@ -1,5 +1,25 @@
 [
  {
+  "id": "OFR-2026-000001",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "pearl-resort-le-bora-bora",
+  "name": "Stay 4, Save 30% (Le Bora Bora)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "Stay 4 nights, save 30%",
+  "travel": {
+   "from": "2026-11-01",
+   "to": "2027-03-31",
+   "text": "Stays 1 November 2026 to 31 March 2027"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-13",
+  "conditions": "Four consecutive nights in the same room category. Book by 31 March 2027. Not available 21 December 2026 to 3 January 2027. Royal Villas excluded. New bookings only; cannot be combined with other offers. Honeymoon amenities still apply. Le Bora Bora's terms apply; the house confirms eligibility when you book.",
+  "volume": "stays"
+ },
+ {
   "id": "OFR-2026-000008",
   "year": 2026,
   "status": "Live",

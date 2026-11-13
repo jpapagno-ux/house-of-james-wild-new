@@ -37812,7 +37812,13 @@
    "tagline": "A five star resort on Motu Tevairoa, with pool villas and overwater bungalows facing Mount Otemanu.",
    "quote": "Some destinations exceed expectations. Bora Bora redefines them.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4741bc1f8_ef7b1e129_6a4fcdef0ad16239178b6946_panoramic-view-of-mount.jpg",
-   "gallery": [],
+   "gallery": [
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/546515085_le-bora-bora-otemanu-overwater-bungalow.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e30e6216_le-bora-bora-beach-villa-with-pool.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4af2fc746_le-bora-bora-end-of-pontoon-overwater-suite.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/85cb1eec3_le-bora-bora-garden-villa-with-pool.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/de00864ab_le-bora-bora-pool-overwater-villa.jpg"
+   ],
    "bestMonths": "May to October",
    "bestMonthsNote": "Tahiti Tourisme puts the Society Islands' dry season at May to October, the best months for lagoon outings.",
    "bestFor": [],
@@ -37838,12 +37844,12 @@
    "experiences": {
     "paras": [],
     "items": [
-     "Lagoon Snorkeling",
-     "Mount Otemanu Views",
-     "Polynesian Cultural Experiences",
-     "Romantic Escapes",
-     "Ocean Wellness Rituals",
-     "Private Lagoon Adventures"
+     "Canoe Breakfast on your overwater terrace",
+     "Beach Dinner facing Mount Otemanu",
+     "Milky Way Dinner on your own terrace",
+     "Lagoon outings on a solar powered catamaran",
+     "Treatments at Tāvai Spa",
+     "Polynesian music and dance"
     ]
    },
    "features": {
@@ -37895,6 +37901,10 @@
     {
      "q": "What is the Islands Dream Offer?",
      "a": "Yes. Pearl's Islands Dream Offer takes 25% off accommodation when you book at least one night at Le Bora Bora and one at Le Taha'a, Le Tikehau, Le Tahiti or Le Nuku Hiva (10% on Le Nuku Hiva's package). It is listed as available all year, is booked through Pearl's reservations team, and does not combine with other offers."
+    },
+    {
+     "q": "Is there an offer for staying longer at Le Bora Bora?",
+     "a": "Yes. Stay 4, Save 30% takes 30% off accommodation for four consecutive nights in the same room category, for stays from 1 November 2026 to 31 March 2027, booked by 31 March 2027. It does not apply from 21 December 2026 to 3 January 2027, excludes the Royal Villas and cannot be combined with other offers. Honeymoon amenities still apply."
     }
    ],
    "reviewed": true,

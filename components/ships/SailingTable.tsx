@@ -86,7 +86,7 @@ export default function SailingTable({ ship, data, flags = [], note, openMonths 
   };
   return (
     <div className="mt-8" aria-label={`Every published ${ship} sailing, by year and month`}>
-      <p className="text-[13.5px] ledger-muted">{rows.length} sailings{voyages.length > 1 ? `: ${voyages.join(" and ")}` : ""}. Open a year, then a month.</p>
+      <p className="text-[13.5px] ledger-muted">{rows.length} sailings{voyages.length > 3 ? ` on ${voyages.length} itineraries` : voyages.length > 1 ? `: ${voyages.join(" and ")}` : ""}. Open a year, then a month.</p>
       <div className="hidden md:grid grid-cols-[150px_1fr_90px_130px_150px] gap-x-4 mt-5 pb-2 md:pl-3 text-[10.5px] tracking-[0.18em] uppercase ledger-muted" aria-hidden="true">
         <span>Dates</span><span>Voyage</span><span>Nights</span><span className="text-right">From</span><span className="text-right">Offers</span>
       </div>

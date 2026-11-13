@@ -101,7 +101,7 @@ export default function CountryAtlas({ country, name, regionSlug }: { country: s
     <li key={p.id} className="jw-atlas__acc-row">
       {icon}
       <span className="min-w-0">
-        {external ? <a href={p.url} target="_blank" rel="noopener" className="underline underline-offset-4 hover:ledger-crimson">{p.name}</a> : <Link href={p.url} className="hover:ledger-crimson">{p.name}</Link>}
+        {external ? <span>{p.name}</span> : <Link href={p.url} className="hover:ledger-crimson">{p.name}</Link>}
         <span className="block text-[12.5px] ledger-muted">{p.line} · {coord(p)}</span>
         <Note n={p.jamesNote} />
       </span>
@@ -157,7 +157,7 @@ export default function CountryAtlas({ country, name, regionSlug }: { country: s
         {data.volcanoes.length > 0 && data.volcanoAsOf && (
           <Group id="volcanoes" title="Volcanoes" count={data.volcanoes.length}>
             <ul>{data.volcanoes.map((p) => <li key={p.id} className="jw-atlas__acc-row"><span className="jw-atlas__key jw-atlas__key--volcanoes" aria-hidden="true" /><span>{p.name}<span className="block text-[12.5px] ledger-muted">{p.line} · as of {data.volcanoAsOf}</span></span></li>)}</ul>
-            <p className="mt-2 text-[12px] ledger-muted">Check the official status before you go: <a href={data.volcanoSource} target="_blank" rel="noopener" className="underline underline-offset-4">MAGMA Indonesia</a>, the government volcano agency.</p>
+            <p className="mt-2 text-[12px] ledger-muted">Check the official status before you go: MAGMA Indonesia, the government volcano agency.</p>
           </Group>
         )}
       </div>

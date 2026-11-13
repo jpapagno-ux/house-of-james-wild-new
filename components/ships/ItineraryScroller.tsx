@@ -118,7 +118,22 @@ export default function ItineraryScroller({ ship, itineraries, map, terrain }: {
 
   return (
     <div className="mt-8">
-      {itineraries.length > 1 && (
+      {/* Many routes (Aqua Expeditions, up to 16 a ship; James, 13 Nov 2026: "a drop down"): one menu, grouped by length,
+          in place of a long row of chips. Up to six routes keep the chips. */}
+      {itineraries.length > 6 && (
+        <label className="block max-w-xl">
+          <span className="ledger-eyebrow block mb-2">Choose an itinerary ({itineraries.length})</span>
+          <select value={tab} onChange={(e) => pickTab(Number(e.target.value))} aria-label={`${ship} itineraries`}
+            className="w-full min-h-[48px] border ledger-border bg-paper px-3 text-[16px] text-ink">
+            {[...new Set(itineraries.map((x) => x.nights))].map((n) => (
+              <optgroup key={String(n)} label={n != null ? `${n} nights` : "Stops in order"}>
+                {itineraries.map((x, i) => (x.nights === n ? <option key={x.name} value={i}>{cap(x.name)}</option> : null))}
+              </optgroup>
+            ))}
+          </select>
+        </label>
+      )}
+      {itineraries.length > 1 && itineraries.length <= 6 && (
         <div role="tablist" aria-label={`${ship} itineraries`} className="flex gap-2 overflow-x-auto [scrollbar-width:none] -mx-5 px-5 md:mx-0 md:px-0 pb-1">
           {itineraries.map((x, i) => (
             <button key={x.name} role="tab" type="button" aria-selected={i === tab} onClick={() => pickTab(i)}

@@ -184,7 +184,7 @@
     {
      "day": 1,
      "title": "Beau Vallon Bay",
-     "place": "L'Escale Marina (Mahe) & Beau Vallon Bay",
+     "place": "L'Escale Marina, Mahé, and Beau Vallon Bay",
      "lat": -4.61,
      "lng": 55.43,
      "summary": "Embark on the voyage of a lifetime from Mahé, the largest island in the Seychelles archipelago."
@@ -192,7 +192,7 @@
     {
      "day": 2,
      "title": "North Islands",
-     "place": "Silhouette & North Islands",
+     "place": "Silhouette and North Islands",
      "lat": -4.39,
      "lng": 55.24,
      "summary": "In the morning, we arrive at Silhouette Island, a marine park defined by dramatic granite formations and vibrant coral reefs."
@@ -200,7 +200,7 @@
     {
      "day": 3,
      "title": "Grande Soeur",
-     "place": "Grande Soeur & Marianne Island",
+     "place": "Grande Soeur and Marianne Island",
      "lat": -4.28,
      "lng": 55.87,
      "summary": "In the morning, we explore Grande Soeur Island, one of the best deep-sea diving sites to observe sharks and other marine life."
@@ -208,7 +208,7 @@
     {
      "day": 4,
      "title": "Curieuse",
-     "place": "La Digue & Curieuse",
+     "place": "La Digue and Curieuse",
      "lat": -4.28,
      "lng": 55.73,
      "summary": "We begin the morning with a diving or paddleboarding excursion, before arriving at La Digue -- an island unspoiled by time and steeped in tradition and history."
@@ -216,15 +216,15 @@
     {
      "day": 5,
      "title": "Praslin",
-     "place": "Aride & Praslin",
+     "place": "Aride and Praslin",
      "lat": -4.32,
      "lng": 55.73,
      "summary": "The day begins with an exciting beach landing on Aride, the northernmost island of the archipelago."
     },
     {
      "day": 6,
-     "title": "L'Escale Marina (Mahe)",
-     "place": "L'Escale Marina (Mahe)",
+     "title": "L'Escale Marina",
+     "place": "L'Escale Marina, Mahé,",
      "lat": -4.63,
      "lng": 55.45,
      "summary": "Enjoy a hearty breakfast on board before bidding farewell to Aqua Lares and the crew."
@@ -255,7 +255,7 @@
     {
      "day": 3,
      "title": "Hornsund",
-     "place": "Gnålodden, Hornsund & Sørkapp",
+     "place": "Gnålodden, Hornsund and Sørkapp",
      "lat": 77,
      "lng": 15.6,
      "summary": "In the morning, we explore Gnålodden, home to one of Svalbard's best-known trapper's cabins, set beneath towering cliffs alive with seabirds."
@@ -318,7 +318,7 @@
     {
      "day": 4,
      "title": "Hornsund",
-     "place": "Sørkapp & Gnalodden, Hornsund",
+     "place": "Sørkapp and Gnalodden, Hornsund",
      "lat": 77,
      "lng": 15.6,
      "summary": "In the morning, we arrive at Sørkapp, the southernmost point of Spitsbergen."
@@ -357,7 +357,7 @@
     {
      "day": 2,
      "title": "Gravneset",
-     "place": "Gravneset & Smeerenburg",
+     "place": "Gravneset and Smeerenburg",
      "lat": 79.73,
      "lng": 11.08,
      "summary": "We begin the day at Gravneset, a headland surrounded by glaciers and mountains, where a historic whaling cemetery tells tales of early Arctic explorers."
@@ -373,7 +373,7 @@
     {
      "day": 4,
      "title": "Alkefjellet",
-     "place": "Alkefjellet & Bråsvellbreen",
+     "place": "Alkefjellet and Bråsvellbreen",
      "lat": 79.58,
      "lng": 18.53,
      "summary": "Start the day exploring one of Svalbard’s most famous bird cliffs."
@@ -381,7 +381,7 @@
     {
      "day": 5,
      "title": "Torellneset",
-     "place": "Hinlopenstretet & Torellneset",
+     "place": "Hinlopenstretet and Torellneset",
      "lat": 79.38,
      "lng": 20.75,
      "summary": "In the morning, we navigate Hinlopenstretet, the strait separating Spitsbergen from Nordaustlandet."
@@ -397,7 +397,7 @@
     {
      "day": 7,
      "title": "Kongsfjorden",
-     "place": "Krossfjorden & Kongsfjorden",
+     "place": "Krossfjorden and Kongsfjorden",
      "lat": 78.95,
      "lng": 12,
      "summary": "In the morning, we explore Krossfjorden, where the immense Lilliehöökbreen Glacier stretches for more than 12 kilometers."
@@ -419,8 +419,8 @@
    "days": [
     {
      "day": 1,
-     "title": "L'Escale Marina (Mahe)",
-     "place": "L'Escale Marina (Mahe)",
+     "title": "L'Escale Marina",
+     "place": "L'Escale Marina, Mahé,",
      "lat": -4.63,
      "lng": 55.45,
      "summary": "Embark on the voyage of a lifetime from Mahé, the largest island in the Seychelles archipelago."
@@ -491,8 +491,8 @@
     },
     {
      "day": 10,
-     "title": "L'Escale Marina (Mahe)",
-     "place": "L'Escale Marina (Mahe)",
+     "title": "L'Escale Marina",
+     "place": "L'Escale Marina, Mahé,",
      "lat": -4.63,
      "lng": 55.45,
      "summary": "Enjoy a hearty breakfast on board before bidding farewell to Aqua Lares and the crew."
@@ -515,7 +515,7 @@
     {
      "day": 2,
      "title": "Nusfjord",
-     "place": "Trollfjorden & Nusfjord",
+     "place": "Trollfjorden and Nusfjord",
      "lat": 68.03,
      "lng": 13.35,
      "summary": "Wake up to views of Trollfjorden, a narrow, majestic fjord flanked by sheer cliffs rising up to a staggering 1,000 meters."
@@ -563,7 +563,7 @@
     {
      "day": 8,
      "title": "St Kilda",
-     "place": "Luskentyre Beach & St Kilda",
+     "place": "Luskentyre Beach and St Kilda",
      "lat": 57.81,
      "lng": -8.58,
      "summary": "We arrive at Luskentyre Beach on Harris, where white sands stretch along turquoise waters beneath the dramatic peaks of the Outer Hebrides."
@@ -571,7 +571,7 @@
     {
      "day": 9,
      "title": "Iona",
-     "place": "Staffa & Iona",
+     "place": "Staffa and Iona",
      "lat": 56.33,
      "lng": -6.39,
      "summary": "Today, we discover Staffa, famous for its hexagonal basalt columns and dramatic sea caves, including the legendary Fingal’s Cave."
@@ -602,7 +602,7 @@
     {
      "day": 2,
      "title": "Staffa",
-     "place": "Iona & Staffa",
+     "place": "Iona and Staffa",
      "lat": 56.43,
      "lng": -6.34,
      "summary": "Today, we discover Iona, a small island with a profound spiritual legacy as the birthplace of Christianity in Scotland, home to a historic abbey set amid tranquil."
@@ -610,7 +610,7 @@
     {
      "day": 3,
      "title": "Luskentyre Beach",
-     "place": "St Kilda & Luskentyre Beach",
+     "place": "St Kilda and Luskentyre Beach",
      "lat": 57.88,
      "lng": -6.95,
      "summary": "We land on the remote archipelago of St Kilda, a UNESCO World Heritage Site."
@@ -658,7 +658,7 @@
     {
      "day": 9,
      "title": "Nusfjord",
-     "place": "Nusfjord & Trollfjorden",
+     "place": "Nusfjord and Trollfjorden",
      "lat": 68.03,
      "lng": 13.35,
      "summary": "Wake up to views of Nusfjord, one of Norway's oldest and best-preserved fishing villages nestled within the Lofoten Islands."
@@ -680,8 +680,8 @@
    "days": [
     {
      "day": 1,
-     "title": "Azam Marine (Zanzibar)",
-     "place": "Azam Marine (Zanzibar)",
+     "title": "Zanzibar",
+     "place": "Azam Marine, Zanzibar",
      "lat": -6.16,
      "lng": 39.19,
      "summary": "Embark on the voyage of a lifetime from Zanzibar. Settle into your luxurious design suite on board Aqua Lares and meet your Cruise Director and Naturalist Guides."
@@ -689,7 +689,7 @@
     {
      "day": 2,
      "title": "Kilindoni Bay",
-     "place": "Kilindoni Bay & Mange, Mafia Island",
+     "place": "Kilindoni Bay and Mange, Mafia Island",
      "lat": -7.92,
      "lng": 39.66,
      "summary": "The day begins at Mafia Island -- renowned for its calm, turquoise waters and as the only island in Tanzania regularly frequented by whale sharks."
@@ -760,8 +760,8 @@
     },
     {
      "day": 11,
-     "title": "L'Escale Marina (Mahe)",
-     "place": "L'Escale Marina (Mahe)",
+     "title": "L'Escale Marina",
+     "place": "L'Escale Marina, Mahé,",
      "lat": -4.63,
      "lng": 55.45,
      "summary": "Enjoy a hearty breakfast on board before bidding farewell to Aqua Lares and the crew."
@@ -775,8 +775,8 @@
    "days": [
     {
      "day": 1,
-     "title": "L'Escale Marina (Mahe)",
-     "place": "L'Escale Marina (Mahe)",
+     "title": "L'Escale Marina",
+     "place": "L'Escale Marina, Mahé,",
      "lat": -4.63,
      "lng": 55.45,
      "summary": "Embark on the voyage of a lifetime from Mahé, the largest island in the Seychelles archipelago."
@@ -840,7 +840,7 @@
     {
      "day": 9,
      "title": "Kilindoni Bay",
-     "place": "Kilindoni Bay & Mange, Mafia Island",
+     "place": "Kilindoni Bay and Mange, Mafia Island",
      "lat": -7.92,
      "lng": 39.66,
      "summary": "The day begins at Mafia Island -- renowned for its calm, turquoise waters and as the only island in Tanzania regularly frequented by whale sharks."
@@ -848,15 +848,15 @@
     {
      "day": 10,
      "title": "Chole Bay",
-     "place": "Mange & Chole Bay, Mafia Island",
+     "place": "Mange and Chole Bay, Mafia Island",
      "lat": -7.9,
      "lng": 39.78,
      "summary": "Start the day at Mange, where a morning of relaxation at Aqua Lares' Beach Club awaits, surrounded by vibrant coral reefs teeming with tropical fish."
     },
     {
      "day": 11,
-     "title": "Azam Marine (Zanzibar)",
-     "place": "Azam Marine (Zanzibar)",
+     "title": "Zanzibar",
+     "place": "Azam Marine, Zanzibar",
      "lat": -6.16,
      "lng": 39.19,
      "summary": "Enjoy breakfast and savor the views aboard Aqua Lares one more time before saying goodbye to the crew."
@@ -870,8 +870,8 @@
    "days": [
     {
      "day": 1,
-     "title": "L'Escale Marina (Mahe)",
-     "place": "L'Escale Marina (Mahe)",
+     "title": "L'Escale Marina",
+     "place": "L'Escale Marina, Mahé,",
      "lat": -4.63,
      "lng": 55.45,
      "summary": "Embark on the voyage of a lifetime from Mahé, the largest island in the Seychelles archipelago."
@@ -943,7 +943,7 @@
     {
      "day": 10,
      "title": "Kilindoni Bay",
-     "place": "Kilindoni Bay & Mange, Mafia Island",
+     "place": "Kilindoni Bay and Mange, Mafia Island",
      "lat": -7.92,
      "lng": 39.66,
      "summary": "The day begins at Mafia Island -- renowned for its calm, turquoise waters and as the only island in Tanzania regularly frequented by whale sharks."
@@ -951,15 +951,15 @@
     {
      "day": 11,
      "title": "Chole Bay",
-     "place": "Mange & Chole Bay, Mafia Island",
+     "place": "Mange and Chole Bay, Mafia Island",
      "lat": -7.9,
      "lng": 39.78,
      "summary": "Start the day at Mange, where a morning of relaxation at Aqua Lares' Beach Club awaits, surrounded by vibrant coral reefs teeming with tropical fish."
     },
     {
      "day": 12,
-     "title": "Azam Marine (Zanzibar)",
-     "place": "Azam Marine (Zanzibar)",
+     "title": "Zanzibar",
+     "place": "Azam Marine, Zanzibar",
      "lat": -6.16,
      "lng": 39.19,
      "summary": "Enjoy breakfast and savor the views aboard Aqua Lares one more time before saying goodbye to the crew."
@@ -982,7 +982,7 @@
     {
      "day": 2,
      "title": "Gravneset",
-     "place": "Gravneset & Smeerenburg",
+     "place": "Gravneset and Smeerenburg",
      "lat": 79.73,
      "lng": 11.08,
      "summary": "We begin the day at Gravneset, a headland surrounded by glaciers and mountains, where a historic whaling cemetery tells tales of early Arctic explorers."
@@ -998,7 +998,7 @@
     {
      "day": 4,
      "title": "Alkefjellet",
-     "place": "Alkefjellet & Bråsvellbreen",
+     "place": "Alkefjellet and Bråsvellbreen",
      "lat": 79.58,
      "lng": 18.53,
      "summary": "Start the day exploring one of Svalbard’s most famous bird cliffs."
@@ -1006,7 +1006,7 @@
     {
      "day": 5,
      "title": "Torellneset",
-     "place": "Hinlopenstretet & Torellneset",
+     "place": "Hinlopenstretet and Torellneset",
      "lat": 79.38,
      "lng": 20.75,
      "summary": "In the morning, we navigate Hinlopenstretet, the strait separating Spitsbergen from Nordaustlandet."
@@ -1022,7 +1022,7 @@
     {
      "day": 7,
      "title": "Kongsfjorden",
-     "place": "Krossfjorden & Kongsfjorden",
+     "place": "Krossfjorden and Kongsfjorden",
      "lat": 78.95,
      "lng": 12,
      "summary": "In the morning, we explore Krossfjorden, where the immense Lilliehöökbreen Glacier stretches for more than 12 kilometers."
@@ -1046,7 +1046,7 @@
     {
      "day": 10,
      "title": "Hornsund",
-     "place": "Gnålodden, Hornsund & Sørkapp",
+     "place": "Gnålodden, Hornsund and Sørkapp",
      "lat": 77,
      "lng": 15.6,
      "summary": "In the morning, we explore Gnålodden, home to one of Svalbard's best-known trapper's cabins, set beneath towering cliffs alive with seabirds."
@@ -1109,7 +1109,7 @@
     {
      "day": 4,
      "title": "Hornsund",
-     "place": "Sørkapp & Gnalodden, Hornsund",
+     "place": "Sørkapp and Gnalodden, Hornsund",
      "lat": 77,
      "lng": 15.6,
      "summary": "In the morning, we arrive at Sørkapp, the southernmost point of Spitsbergen."
@@ -1125,7 +1125,7 @@
     {
      "day": 6,
      "title": "Alkehornet",
-     "place": "Longyearbyen & Alkehornet",
+     "place": "Longyearbyen and Alkehornet",
      "lat": 78.21,
      "lng": 13.83,
      "summary": "We return to Longyearbyen as the ship replenishes itself for the next leg of the journey."
@@ -1133,7 +1133,7 @@
     {
      "day": 7,
      "title": "Gravneset",
-     "place": "Gravneset & Smeerenburg",
+     "place": "Gravneset and Smeerenburg",
      "lat": 79.73,
      "lng": 11.08,
      "summary": "We begin the day at Gravneset, a headland surrounded by glaciers and mountains, where a historic whaling cemetery tells tales of early Arctic explorers."
@@ -1149,7 +1149,7 @@
     {
      "day": 9,
      "title": "Alkefjellet",
-     "place": "Alkefjellet & Bråsvellbreen",
+     "place": "Alkefjellet and Bråsvellbreen",
      "lat": 79.58,
      "lng": 18.53,
      "summary": "Start the day exploring one of Svalbard’s most famous bird cliffs."
@@ -1157,7 +1157,7 @@
     {
      "day": 10,
      "title": "Torellneset",
-     "place": "Hinlopenstretet & Torellneset",
+     "place": "Hinlopenstretet and Torellneset",
      "lat": 79.38,
      "lng": 20.75,
      "summary": "In the morning, we navigate Hinlopenstretet, the strait separating Spitsbergen from Nordaustlandet."
@@ -1173,7 +1173,7 @@
     {
      "day": 12,
      "title": "Kongsfjorden",
-     "place": "Krossfjorden & Kongsfjorden",
+     "place": "Krossfjorden and Kongsfjorden",
      "lat": 78.95,
      "lng": 12,
      "summary": "In the morning, we explore Krossfjorden, where the immense Lilliehöökbreen Glacier stretches for more than 12 kilometers."
@@ -1204,7 +1204,7 @@
     {
      "day": 2,
      "title": "Staffa",
-     "place": "Iona & Staffa",
+     "place": "Iona and Staffa",
      "lat": 56.43,
      "lng": -6.34,
      "summary": "Today, we discover Iona, a small island with a profound spiritual legacy as the birthplace of Christianity in Scotland, home to a historic abbey set amid tranquil."
@@ -1212,7 +1212,7 @@
     {
      "day": 3,
      "title": "Luskentyre Beach",
-     "place": "St Kilda & Luskentyre Beach",
+     "place": "St Kilda and Luskentyre Beach",
      "lat": 57.88,
      "lng": -6.95,
      "summary": "We land on the remote archipelago of St Kilda, a UNESCO World Heritage Site."
@@ -1260,7 +1260,7 @@
     {
      "day": 9,
      "title": "Nusfjord",
-     "place": "Nusfjord & Trollfjorden",
+     "place": "Nusfjord and Trollfjorden",
      "lat": 68.03,
      "lng": 13.35,
      "summary": "Wake up to views of Nusfjord, one of Norway's oldest and best-preserved fishing villages nestled within the Lofoten Islands."
@@ -1292,7 +1292,7 @@
     {
      "day": 13,
      "title": "Hornsund",
-     "place": "Sørkapp & Gnalodden, Hornsund",
+     "place": "Sørkapp and Gnalodden, Hornsund",
      "lat": 77,
      "lng": 15.6,
      "summary": "In the morning, we arrive at Sørkapp, the southernmost point of Spitsbergen."
@@ -1339,7 +1339,7 @@
     {
      "day": 3,
      "title": "Hornsund",
-     "place": "Gnålodden, Hornsund & Sørkapp",
+     "place": "Gnålodden, Hornsund and Sørkapp",
      "lat": 77,
      "lng": 15.6,
      "summary": "In the morning, we explore Gnålodden, home to one of Svalbard's best-known trapper's cabins, set beneath towering cliffs alive with seabirds."
@@ -1371,7 +1371,7 @@
     {
      "day": 7,
      "title": "Nusfjord",
-     "place": "Trollfjorden & Nusfjord",
+     "place": "Trollfjorden and Nusfjord",
      "lat": 68.03,
      "lng": 13.35,
      "summary": "Wake up to views of Trollfjorden, a narrow, majestic fjord flanked by sheer cliffs rising up to a staggering 1,000 meters."
@@ -1419,7 +1419,7 @@
     {
      "day": 13,
      "title": "St Kilda",
-     "place": "Luskentyre Beach & St Kilda",
+     "place": "Luskentyre Beach and St Kilda",
      "lat": 57.81,
      "lng": -8.58,
      "summary": "We arrive at Luskentyre Beach on Harris, where white sands stretch along turquoise waters beneath the dramatic peaks of the Outer Hebrides."
@@ -1427,7 +1427,7 @@
     {
      "day": 14,
      "title": "Iona",
-     "place": "Staffa & Iona",
+     "place": "Staffa and Iona",
      "lat": 56.33,
      "lng": -6.39,
      "summary": "Today, we discover Staffa, famous for its hexagonal basalt columns and dramatic sea caves, including the legendary Fingal’s Cave."
@@ -1449,8 +1449,8 @@
    "days": [
     {
      "day": 1,
-     "title": "L'Escale Marina (Mahe)",
-     "place": "L'Escale Marina (Mahe)",
+     "title": "L'Escale Marina",
+     "place": "L'Escale Marina, Mahé,",
      "lat": -4.63,
      "lng": 55.45,
      "summary": "Embark on the voyage of a lifetime from Mahé, the largest island in the Seychelles archipelago."
@@ -1522,7 +1522,7 @@
     {
      "day": 10,
      "title": "Beau Vallon Bay",
-     "place": "L'Escale Marina (Mahe) & Beau Vallon Bay",
+     "place": "L'Escale Marina, Mahé, and Beau Vallon Bay",
      "lat": -4.61,
      "lng": 55.43,
      "summary": "We dock in Mahe as the ship replenishes itself for the next leg of the journey."
@@ -1530,7 +1530,7 @@
     {
      "day": 11,
      "title": "North Islands",
-     "place": "Silhouette & North Islands",
+     "place": "Silhouette and North Islands",
      "lat": -4.39,
      "lng": 55.24,
      "summary": "In the morning, we arrive at Silhouette Island, a marine park defined by dramatic granite formations and vibrant coral reefs."
@@ -1538,7 +1538,7 @@
     {
      "day": 12,
      "title": "Grande Soeur",
-     "place": "Grande Soeur & Marianne Island",
+     "place": "Grande Soeur and Marianne Island",
      "lat": -4.28,
      "lng": 55.87,
      "summary": "In the morning, we explore Grande Soeur Island, one of the best deep-sea diving sites to observe sharks and other marine life."
@@ -1546,7 +1546,7 @@
     {
      "day": 13,
      "title": "Curieuse",
-     "place": "La Digue & Curieuse",
+     "place": "La Digue and Curieuse",
      "lat": -4.28,
      "lng": 55.73,
      "summary": "We begin the morning with a diving or paddleboarding excursion, before arriving at La Digue, an island unspoiled by time and steeped in tradition and history."
@@ -1554,15 +1554,15 @@
     {
      "day": 14,
      "title": "Cousin",
-     "place": "Praslin & Cousin",
+     "place": "Praslin and Cousin",
      "lat": -4.33,
      "lng": 55.66,
      "summary": "In the morning, wake up to views of Praslin Island, the second-largest granitic island in the Seychelles archipelago."
     },
     {
      "day": 15,
-     "title": "L'Escale Marina (Mahe)",
-     "place": "L'Escale Marina (Mahe)",
+     "title": "L'Escale Marina",
+     "place": "L'Escale Marina, Mahé,",
      "lat": -4.63,
      "lng": 55.45,
      "summary": "Enjoy a hearty breakfast on board before bidding farewell to Aqua Lares and the crew."

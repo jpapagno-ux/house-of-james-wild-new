@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Cite from "@/components/ledger/Cite";
 import Link from "next/link";
 import { sharpen } from "@/lib/content/sharpen";
 import { useEffect, useRef, useState } from "react";
@@ -225,7 +226,7 @@ export default function ChartFlyover({ from, to, fromName, title, line, pins, un
                 {unesco.map((u) => (
                   <li key={u.id} className="flex items-start gap-2">
                     <svg viewBox="-10 -10 20 20" className="w-4 h-4 mt-0.5 shrink-0" aria-hidden="true"><UnescoMark /></svg>
-                    <span><a href={u.url} className="underline underline-offset-4" rel="noopener" target="_blank">{u.name}</a> <span className="ledger-muted text-[13px]">· inscribed {u.year}</span></span>
+                    <span><Cite href={u.url}>{u.name}</Cite> <span className="ledger-muted text-[13px]">· inscribed {u.year}</span></span>
                   </li>
                 ))}
               </ul>

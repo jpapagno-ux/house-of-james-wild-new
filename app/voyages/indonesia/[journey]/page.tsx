@@ -128,8 +128,8 @@ export default async function JourneyPage({ params }: P) {
             <SectionHead eyebrow="When to go" title={`When Is the Best Time for ${j.short}?`} icon="sun" />
             <div className="mt-6 grid lg:grid-cols-[1.1fr_1fr] gap-8 items-start">
               <div className="space-y-4 text-[16.5px] leading-relaxed max-w-2xl">
-                <p><a href={j.season.url} className="underline underline-offset-4" rel="noopener" target="_blank">{j.season.by}</a> names <strong className="font-medium">{j.season.best}</strong> as the best months.</p>
-                <p><a href={j.parkUrl} className="underline underline-offset-4" rel="noopener" target="_blank">{t(j.park)}</a></p>
+                <p>{j.season.by} names <strong className="font-medium">{j.season.best}</strong> as the best months.</p>
+                <p>{t(j.park)}</p>
                 {j.longer.map((x) => <p key={x.slice(0, 30)}>{t(x)}</p>)}
               </div>
               <dl className="ledger-paper border ledger-border p-5">

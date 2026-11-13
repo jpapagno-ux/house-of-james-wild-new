@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Cite from "@/components/ledger/Cite";
 import { Plane } from "lucide-react";
 import { type ArrivalHub, type Transfer, KIND_LABEL, hubLabel, transferLine } from "@/lib/content/arrivals";
 import type { StayData } from "@/lib/content/stays";
@@ -40,7 +41,7 @@ export default function GettingThere({ name, hubs, transfers, gateway, idBase = 
                     ? <>The house has this route on record but no stated time yet; James arranges the car with your booking.</>
                     : <>The transfer time from here is not yet on record; the house never estimates it. James arranges arrival and the car with your booking.</>}
                 {h.houseNotes && <span className="block mt-1 text-[14px]">{h.houseNotes}</span>}
-                {h.sourceUrl && <span className="block mt-1 text-[12.5px] ledger-muted">Source: <a href={h.sourceUrl} rel="nofollow noopener" target="_blank" className="underline underline-offset-2 hover:text-crimson">{new URL(h.sourceUrl).hostname.replace(/^www\./, "")}</a>{h.factChecked ? `, checked ${h.factChecked}` : ""}</span>}
+                {h.sourceUrl && <span className="block mt-1 text-[12.5px] ledger-muted">Source: <Cite href={h.sourceUrl}>{new URL(h.sourceUrl).hostname.replace(/^www\./, "")}</Cite>{h.factChecked ? `, checked ${h.factChecked}` : ""}</span>}
               </dd>
             </div>
           );

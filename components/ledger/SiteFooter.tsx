@@ -109,7 +109,7 @@ export default function SiteFooter({ tone }: { tone?: FooterTone }) {
             <p className="text-[14px] mt-2" style={{ color: F.soft }}>One secret, one new place, one saving. Every week.</p>
             <div className="flex mt-3">
               <label htmlFor="footer-email" className="sr-only">Email address</label>
-              <input id="footer-email" name="email" type="email" required placeholder="Your email" className="flex-1 min-w-0 h-11 bg-transparent border px-3.5 text-[14px] outline-none rounded-[2px] placeholder:text-[#8C8277] focus:border-[#B8AFA5]" style={{ borderColor: F.field, color: F.body }} />
+              <input id="footer-email" name="email" type="email" required placeholder="Your email" className="flex-1 min-w-0 h-11 bg-transparent border px-3.5 text-[16px] outline-none rounded-[2px] placeholder:text-[#8C8277] focus:border-[#B8AFA5]" style={{ borderColor: F.field, color: F.body }} />
               <button type="submit" className="h-11 px-5 -ml-px border rounded-[2px] font-display font-semibold uppercase tracking-[0.18em] text-[14px] text-white hover:bg-white/5" style={{ borderColor: F.field }}>Subscribe</button>
             </div>
             <p className="font-mono text-[9.5px] uppercase tracking-[0.18em] mt-2" style={{ color: F.legal }}>Traveller, trade or press: pick one on the next step</p>

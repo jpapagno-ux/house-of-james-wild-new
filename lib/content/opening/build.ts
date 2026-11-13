@@ -21,6 +21,7 @@ import { CLASSIC_C, POLAR_CIRCLE_C, ORIGIN_C, HX_CIRCLE_C, RA_C, STAY_HAND_C, po
 import { today } from "@/lib/dates";
 import { smallWidth } from "./small-images";
 import { VOLUME_STYLES } from "@/lib/volumes";
+import { WATERS_PALETTE } from "@/lib/palette";
 
 export type OpeningBase = Omit<HouseOpeningProps, "next" | "grain">;
 export type Built = OpeningBase & { next: NextSailing };
@@ -44,10 +45,19 @@ const WATERS: Record<string, { dark: string; light: string }> = {
   philippines: { dark: "#15333A", light: "#D6E8E5" },
   tahiti: { dark: "#123844", light: "#D5EAE8" },
   fiji: { dark: "#133744", light: "#D7E9E6" },
+  // Aqua Expeditions' waters (13 Nov 2026): the Mekong's silt-green river, the Seychelles' turquoise, the Arctic's ice.
+  mekong: { dark: "#1F2E2A", light: "#DCE3D6" },
+  seychelles: { dark: "#123A44", light: "#D6ECE9" },
+  arctic: { dark: "#1E2B38", light: "#E6ECF1" },
 };
 
-export function paletteFor(pathway: PathwayId, waters: string): OpeningPalette {
-  const accent = PATHWAYS[pathway]?.accent ?? "#2E2B28";
+// Every ship and voyage reads as Voyages (James, 13 Nov 2026: "Voyages sea tones"): the night is the Voyages volume's
+// Verdigris, or for the protected river waters their own set (Amazon green, Nile lapis, By River teal for the Mekong),
+// mixed with the waters' own dark tone. The pathway is no longer a colour here: it prints as its named chip and dot.
+const VOYAGE_ACCENT = VOLUME_STYLES.voyages.leather;
+const RIVER_ACCENT: Record<string, string> = { amazon: WATERS_PALETTE.amazon.accent, nile: WATERS_PALETTE.nile.accent, mekong: WATERS_PALETTE.river.accent, river: WATERS_PALETTE.river.accent };
+export function paletteFor(_pathway: PathwayId, waters: string): OpeningPalette {
+  const accent = RIVER_ACCENT[waters] ?? VOYAGE_ACCENT;
   const w = WATERS[waters] ?? WATERS.indonesia;
   let night = mix([accent, 45], [w.dark, 25], [INK, 30]);
   for (let i = 0; i < 6 && contrast("#FFFFFF", night) < 7; i++) night = mix([night, 80], [INK, 20]);

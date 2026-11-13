@@ -299,7 +299,7 @@ export default function AtlasMap({ data, title, reduced, onFail, initial }: Atla
                 <p className="jw-atlas__sub">{card.point.line}</p>
                 {card.point.jamesNote && <blockquote className="jw-atlas__note"><p>&ldquo;{card.point.jamesNote.text}&rdquo;</p><footer>{signed(card.point.jamesNote)}</footer></blockquote>}
                 {card.layer === "volcanoes" && <p className="jw-atlas__sub">As of {data.volcanoAsOf}. Check the official status before you go.</p>}
-                <a className="jw-atlas__link" href={card.point.url} {...(card.point.url.startsWith("/") ? {} : { target: "_blank", rel: "noopener" })}>{card.point.url.startsWith("/") ? "Open the voyage" : "Official source"}</a>
+                {card.point.url.startsWith("/") ? <a className="jw-atlas__link" href={card.point.url}>Open the voyage</a> : null}
               </div>
             )}
           </div>
@@ -309,7 +309,7 @@ export default function AtlasMap({ data, title, reduced, onFail, initial }: Atla
             {data.volcanoes.length && data.volcanoAsOf
               ? <>Volcano alert levels from MAGMA Indonesia, as of {data.volcanoAsOf}. Check the official status before you go: </>
               : <>No volcano levels filed yet. Check the official status on MAGMA Indonesia before you go: </>}
-            <a href={data.volcanoSource} target="_blank" rel="noopener">magma.esdm.go.id</a>
+            <span>magma.esdm.go.id</span>
           </p>
         )}
       </div>

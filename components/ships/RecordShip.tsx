@@ -290,7 +290,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
                 const flags = offers.flatMap((o) => (o.sailingsUntil || o.departure) ? [{ id: o.id, short: o.flag ?? (o.program === "Final Call" ? "Final Call" : "Offer"), sailingsUntil: o.sailingsUntil, departure: o.departure }] : []);
                 const byCabin = dd.cabins.length > 1;
                 return <>
-                  <SailingTable ship={s.name} data={dd} flags={flags} note={note} />
+                  <SailingTable ship={s.name} data={dd} flags={flags} note={note} openMonths={dd.sailings.length > 40 ? 1 : 2} />
                   {byCabin && (
                     <details className="mt-8 border-t ledger-rule pt-4">
                       <summary className="cursor-pointer list-none [&::-webkit-details-marker]:hidden inline-flex items-center min-h-[44px] text-[12px] tracking-[0.16em] uppercase underline underline-offset-4">Fares by cabin and season</summary>

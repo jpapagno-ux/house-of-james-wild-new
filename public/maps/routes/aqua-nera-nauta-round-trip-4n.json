@@ -1,0 +1,109 @@
+{
+ "id": "aqua-nera-nauta-round-trip-4n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "4-night Explorer Cruise, Nauta round trip aboard Aqua Nera",
+ "subtitle": "4 nights · Nauta round trip · Aqua Nera",
+ "days": {
+  "1": "Nauta",
+  "2": "Yanayacu Pucate River",
+  "3": "Pacaya Samiria National Reserve",
+  "4": "Puerto Prado",
+  "5": "Manatee Rescue Centre"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Iquitos, Nauta, ",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Marañon River, Yanayacu Pucate River",
+   "lat": -4.65,
+   "lng": -73.95,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.95,
+     -4.65
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Samiria River, Pacaya Samiria National Reserve",
+   "lat": 56.33,
+   "lng": -6.39,
+   "mode": "sea",
+   "path": [
+    [
+     -73.95,
+     -4.65
+    ],
+    [
+     -6.39,
+     56.33
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Puerto Prado, Amazon River",
+   "lat": -4.4,
+   "lng": -73.68,
+   "mode": "sea",
+   "path": [
+    [
+     -6.39,
+     56.33
+    ],
+    [
+     -73.68,
+     -4.4
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Nauta Town, Manatee Rescue Centre, Transfer to the Airport",
+   "lat": -3.8,
+   "lng": -73.3,
+   "mode": "sea",
+   "path": [
+    [
+     -73.68,
+     -4.4
+    ],
+    [
+     -73.3,
+     -3.8
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

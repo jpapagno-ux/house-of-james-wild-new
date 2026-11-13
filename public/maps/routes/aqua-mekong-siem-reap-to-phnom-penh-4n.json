@@ -1,0 +1,109 @@
+{
+ "id": "aqua-mekong-siem-reap-to-phnom-penh-4n",
+ "type": "voyage",
+ "destination": "mekong",
+ "title": "4-night Explorer Cruise, Siem Reap to Phnom Penh aboard Aqua Mekong",
+ "subtitle": "4 nights · Siem Reap to Phnom Penh · Aqua Mekong",
+ "days": {
+  "1": "Siem Reap",
+  "2": "Moat Khla",
+  "3": "Kampong Chhnang",
+  "4": "Koh Oknha Tey",
+  "5": "Phnom Penh"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Tonle Sap Lake, Siem Reap",
+   "lat": 13.25,
+   "lng": 103.83,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Tonle Sap Lake, Prek Toal, Moat Khla",
+   "lat": 12.82,
+   "lng": 104.22,
+   "mode": "sea",
+   "path": [
+    [
+     103.83,
+     13.25
+    ],
+    [
+     104.22,
+     12.82
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Tonle Sap Lake, Chhnok Tru, Kampong Chhnang",
+   "lat": 12.25,
+   "lng": 104.67,
+   "mode": "sea",
+   "path": [
+    [
+     104.22,
+     12.82
+    ],
+    [
+     104.67,
+     12.25
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Tonle Sap and Mekong River, Koh Chen, Koh Oknha Tey",
+   "lat": 11.53,
+   "lng": 104.98,
+   "mode": "sea",
+   "path": [
+    [
+     104.67,
+     12.25
+    ],
+    [
+     104.98,
+     11.53
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Mekong River, Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "mode": "sea",
+   "path": [
+    [
+     104.98,
+     11.53
+    ],
+    [
+     104.9282,
+     11.5564
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mekong",
+    "lat": 11.0,
+    "lng": 105.2,
+    "kind": "sea"
+   },
+   {
+    "text": "Tonle Sap",
+    "lat": 12.8,
+    "lng": 104.1,
+    "kind": "region"
+   }
+  ]
+ }
+}

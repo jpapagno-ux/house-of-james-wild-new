@@ -1,0 +1,287 @@
+{
+ "id": "aqua-blu-bali-to-labuan-bajo-7n",
+ "type": "voyage",
+ "destination": "komodo",
+ "title": "7-night Bali and Komodo National Park Expedition, Bali to Labuan Bajo aboard Aqua Blu",
+ "subtitle": "7 nights · Bali to Labuan Bajo · Aqua Blu",
+ "days": {
+  "1": "Benoa",
+  "2": "Moyo Island",
+  "3": "Satonda",
+  "4": "Batu Moncho",
+  "5": "Nusa Kode",
+  "6": "Seraya Besar",
+  "7": "Gili Lawa",
+  "8": "Labuan Bajo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Benoa, Bali",
+   "lat": -8.75,
+   "lng": 115.22,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Moyo Island",
+   "lat": -8.2716,
+   "lng": 117.5028,
+   "mode": "sea",
+   "path": [
+    [
+     115.22,
+     -8.75
+    ],
+    [
+     117.5028,
+     -8.2716
+    ]
+   ],
+   "charted": [
+    117.55,
+    -8.25
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Saleh Bay & Satonda",
+   "lat": -8.12,
+   "lng": 117.75,
+   "mode": "sea",
+   "path": [
+    [
+     117.5028,
+     -8.2716
+    ],
+    [
+     117.4767,
+     -8.2705
+    ],
+    [
+     117.4722,
+     -8.2682
+    ],
+    [
+     117.4676,
+     -8.2637
+    ],
+    [
+     117.4654,
+     -8.257
+    ],
+    [
+     117.4676,
+     -8.1919
+    ],
+    [
+     117.4722,
+     -8.1829
+    ],
+    [
+     117.4926,
+     -8.1627
+    ],
+    [
+     117.5561,
+     -8.1335
+    ],
+    [
+     117.7399,
+     -8.1245
+    ],
+    [
+     117.75,
+     -8.12
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.95
+  },
+  {
+   "day": 4,
+   "name": "Gili Banta & Batu Moncho",
+   "lat": -8.43,
+   "lng": 119.62,
+   "mode": "sea",
+   "path": [
+    [
+     117.75,
+     -8.12
+    ],
+    [
+     117.9193,
+     -8.0724
+    ],
+    [
+     118.9341,
+     -8.2217
+    ],
+    [
+     119.0347,
+     -8.2715
+    ],
+    [
+     119.62,
+     -8.43
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.98
+  },
+  {
+   "day": 5,
+   "name": "Rinca & Nusa Kode",
+   "lat": -8.8,
+   "lng": 119.6,
+   "mode": "sea",
+   "path": [
+    [
+     119.62,
+     -8.43
+    ],
+    [
+     119.5839,
+     -8.5984
+    ],
+    [
+     119.5243,
+     -8.6675
+    ],
+    [
+     119.5217,
+     -8.6931
+    ],
+    [
+     119.5243,
+     -8.6982
+    ],
+    [
+     119.6,
+     -8.8
+    ]
+   ],
+   "lane": "sea",
+   "clear": 1.09
+  },
+  {
+   "day": 6,
+   "name": "Tatawa Besar & Seraya Besar",
+   "lat": -8.48,
+   "lng": 119.8,
+   "mode": "sea",
+   "path": [
+    [
+     119.6,
+     -8.8
+    ],
+    [
+     119.5248,
+     -8.6989
+    ],
+    [
+     119.5224,
+     -8.6917
+    ],
+    [
+     119.5248,
+     -8.67
+    ],
+    [
+     119.5297,
+     -8.6604
+    ],
+    [
+     119.5807,
+     -8.6148
+    ],
+    [
+     119.6464,
+     -8.5835
+    ],
+    [
+     119.6707,
+     -8.5739
+    ],
+    [
+     119.6828,
+     -8.5691
+    ],
+    [
+     119.6877,
+     -8.5691
+    ],
+    [
+     119.8,
+     -8.48
+    ]
+   ],
+   "lane": "sea",
+   "clear": 1.02
+  },
+  {
+   "day": 7,
+   "name": "Gili Lawa",
+   "lat": -8.3,
+   "lng": 119.63,
+   "mode": "sea",
+   "path": [
+    [
+     119.8,
+     -8.48
+    ],
+    [
+     119.63,
+     -8.3
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Labuan Bajo",
+   "lat": -8.4988,
+   "lng": 119.8756,
+   "mode": "sea",
+   "path": [
+    [
+     119.63,
+     -8.3
+    ],
+    [
+     119.8468,
+     -8.4999
+    ],
+    [
+     119.8536,
+     -8.5022
+    ],
+    [
+     119.8718,
+     -8.5022
+    ],
+    [
+     119.8756,
+     -8.4988
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    119.8877,
+    -8.4964
+   ],
+   "lane": "sea",
+   "clear": 0.75
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indonesia",
+    "lat": -4.0,
+    "lng": 125.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

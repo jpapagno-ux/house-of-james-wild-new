@@ -1,0 +1,163 @@
+{
+ "id": "aqua-mekong-ho-chi-minh-city-to-siem-reap-flight-from-phnom-penh-low-water-december-to-february-7n",
+ "type": "voyage",
+ "destination": "mekong",
+ "title": "7-night Expedition Cruise, Ho Chi Minh City to Siem Reap by river and air, low water, December to February aboard Aqua Mekong",
+ "subtitle": "7 nights · Ho Chi Minh City to Siem Reap · Aqua Mekong",
+ "days": {
+  "1": "My Tho",
+  "2": "My An Hung",
+  "3": "Vinh Xuong",
+  "4": "Preah Prosop",
+  "5": "Phnom Penh",
+  "6": "Kampong Chhnang",
+  "7": "Phnom Neang Kangrey",
+  "8": "Phnom Penh"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Mekong River, My Tho",
+   "lat": 10.36,
+   "lng": 106.36,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Mekong River, Binh Thanh, Sa Dec, My An Hung",
+   "lat": 10.4,
+   "lng": 105.6,
+   "mode": "sea",
+   "path": [
+    [
+     106.36,
+     10.36
+    ],
+    [
+     105.6,
+     10.4
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Mekong River, Chau Doc, Vinh Xuong, Ka’Om Samnor Border Crossing",
+   "lat": 10.89,
+   "lng": 105.17,
+   "mode": "sea",
+   "path": [
+    [
+     105.6,
+     10.4
+    ],
+    [
+     105.17,
+     10.89
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Mekong River, Koh Oknha Tey, Preah Prosop",
+   "lat": 11.66,
+   "lng": 105,
+   "mode": "sea",
+   "path": [
+    [
+     105.17,
+     10.89
+    ],
+    [
+     105,
+     11.66
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "mode": "sea",
+   "path": [
+    [
+     105,
+     11.66
+    ],
+    [
+     104.9282,
+     11.5564
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Tonle Sap River, Koh Chen, Kampong Chhnang",
+   "lat": 12.25,
+   "lng": 104.67,
+   "mode": "sea",
+   "path": [
+    [
+     104.9282,
+     11.5564
+    ],
+    [
+     104.67,
+     12.25
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Tonle Sap River, Phat Sandai, Phnom Neang Kangrey",
+   "lat": 12.4,
+   "lng": 104.6,
+   "mode": "sea",
+   "path": [
+    [
+     104.67,
+     12.25
+    ],
+    [
+     104.6,
+     12.4
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "mode": "sea",
+   "path": [
+    [
+     104.6,
+     12.4
+    ],
+    [
+     104.9282,
+     11.5564
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mekong",
+    "lat": 11.0,
+    "lng": 105.2,
+    "kind": "sea"
+   },
+   {
+    "text": "Tonle Sap",
+    "lat": 12.8,
+    "lng": 104.1,
+    "kind": "region"
+   }
+  ]
+ }
+}

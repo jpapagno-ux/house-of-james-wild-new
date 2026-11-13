@@ -1,0 +1,91 @@
+{
+ "id": "aqua-mekong-phnom-penh-to-siem-reap-flight-from-phnom-penh-low-water-december-to-february-3n",
+ "type": "voyage",
+ "destination": "mekong",
+ "title": "3-night Discovery Cruise, Phnom Penh to Siem Reap by river and air, low water, December to February aboard Aqua Mekong",
+ "subtitle": "3 nights · Phnom Penh to Siem Reap · Aqua Mekong",
+ "days": {
+  "1": "Phnom Penh",
+  "2": "Kampong Chhnang",
+  "3": "Phnom Neang Kangrey",
+  "4": "Phnom Penh"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Mekong River, Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Tonle Sap River, Koh Chen, Kampong Chhnang",
+   "lat": 12.25,
+   "lng": 104.67,
+   "mode": "sea",
+   "path": [
+    [
+     104.9282,
+     11.5564
+    ],
+    [
+     104.67,
+     12.25
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Tonle Sap River, Phat Sandai, Phnom Neang Kangrey",
+   "lat": 12.4,
+   "lng": 104.6,
+   "mode": "sea",
+   "path": [
+    [
+     104.67,
+     12.25
+    ],
+    [
+     104.6,
+     12.4
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "mode": "sea",
+   "path": [
+    [
+     104.6,
+     12.4
+    ],
+    [
+     104.9282,
+     11.5564
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mekong",
+    "lat": 11.0,
+    "lng": 105.2,
+    "kind": "sea"
+   },
+   {
+    "text": "Tonle Sap",
+    "lat": 12.8,
+    "lng": 104.1,
+    "kind": "region"
+   }
+  ]
+ }
+}

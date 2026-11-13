@@ -1,0 +1,163 @@
+{
+ "id": "aqua-mekong-phnom-penh-to-ho-chi-minh-city-7n",
+ "type": "voyage",
+ "destination": "mekong",
+ "title": "7-night Kratie Expedition Cruise aboard Aqua Mekong",
+ "subtitle": "7 nights · Phnom Penh to Ho Chi Minh City · Aqua Mekong",
+ "days": {
+  "1": "Phnom Penh",
+  "2": "Phnom Hanchey",
+  "3": "Kratie",
+  "4": "Peam Chikang",
+  "5": "Phnom Penh",
+  "6": "My An Hung",
+  "7": "Cai Be",
+  "8": "My Tho"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Mekong River, Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Mekong River, Angkor Ban, Prek Dam Bok, Phnom Hanchey",
+   "lat": 12.15,
+   "lng": 105.42,
+   "mode": "sea",
+   "path": [
+    [
+     104.9282,
+     11.5564
+    ],
+    [
+     105.42,
+     12.15
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Mekong River, Kampi River, Kratie, Koh Trong Island",
+   "lat": 12.49,
+   "lng": 106.02,
+   "mode": "sea",
+   "path": [
+    [
+     105.42,
+     12.15
+    ],
+    [
+     106.02,
+     12.49
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Mekong River, Kampong Cham, Peam Chikang, Koh Andet",
+   "lat": 11.95,
+   "lng": 105.55,
+   "mode": "sea",
+   "path": [
+    [
+     106.02,
+     12.49
+    ],
+    [
+     105.55,
+     11.95
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Mekong River, Phnom Penh",
+   "lat": 11.5564,
+   "lng": 104.9282,
+   "mode": "sea",
+   "path": [
+    [
+     105.55,
+     11.95
+    ],
+    [
+     104.9282,
+     11.5564
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Mekong River, Ka’Om Samnor, Vinh Xoung Border Crossing, Chau Doc, My An Hung",
+   "lat": 10.4,
+   "lng": 105.6,
+   "mode": "sea",
+   "path": [
+    [
+     104.9282,
+     11.5564
+    ],
+    [
+     105.6,
+     10.4
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Mekong River, Binh Thanh, Sa Dec, Cai Be",
+   "lat": 10.33,
+   "lng": 106.03,
+   "mode": "sea",
+   "path": [
+    [
+     105.6,
+     10.4
+    ],
+    [
+     106.03,
+     10.33
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Mekong River, My Tho, Ho Chi Minh",
+   "lat": 10.36,
+   "lng": 106.36,
+   "mode": "sea",
+   "path": [
+    [
+     106.03,
+     10.33
+    ],
+    [
+     106.36,
+     10.36
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mekong",
+    "lat": 11.0,
+    "lng": 105.2,
+    "kind": "sea"
+   },
+   {
+    "text": "Tonle Sap",
+    "lat": 12.8,
+    "lng": 104.1,
+    "kind": "region"
+   }
+  ]
+ }
+}

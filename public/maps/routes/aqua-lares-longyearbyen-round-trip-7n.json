@@ -1,0 +1,169 @@
+{
+ "id": "aqua-lares-longyearbyen-round-trip-7n",
+ "type": "voyage",
+ "destination": "arctic",
+ "title": "7-night Svalbard and the Arctic Circle aboard Aqua Lares",
+ "subtitle": "7 nights · Longyearbyen round trip · Aqua Lares",
+ "days": {
+  "1": "Longyearbyen",
+  "2": "Gravneset",
+  "3": "Pack Ice",
+  "4": "Alkefjellet",
+  "5": "Torellneset",
+  "6": "Sorgfjorden",
+  "7": "Kongsfjorden",
+  "8": "Longyearbyen"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Longyearbyen",
+   "lat": 78.2232,
+   "lng": 15.6267,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Gravneset & Smeerenburg",
+   "lat": 79.73,
+   "lng": 11.08,
+   "mode": "sea",
+   "path": [
+    [
+     15.6267,
+     78.2232
+    ],
+    [
+     11.08,
+     79.73
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Pack Ice",
+   "lat": 80.6,
+   "lng": 17,
+   "mode": "sea",
+   "path": [
+    [
+     11.08,
+     79.73
+    ],
+    [
+     17,
+     80.6
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Alkefjellet & Bråsvellbreen",
+   "lat": 79.58,
+   "lng": 18.53,
+   "mode": "sea",
+   "path": [
+    [
+     17,
+     80.6
+    ],
+    [
+     18.53,
+     79.58
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Hinlopenstretet & Torellneset",
+   "lat": 79.38,
+   "lng": 20.75,
+   "mode": "sea",
+   "path": [
+    [
+     18.53,
+     79.58
+    ],
+    [
+     20.75,
+     79.38
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Sorgfjorden",
+   "lat": 79.95,
+   "lng": 16.7,
+   "mode": "sea",
+   "path": [
+    [
+     20.75,
+     79.38
+    ],
+    [
+     16.7,
+     79.95
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Krossfjorden & Kongsfjorden",
+   "lat": 78.95,
+   "lng": 12,
+   "mode": "sea",
+   "path": [
+    [
+     16.7,
+     79.95
+    ],
+    [
+     12,
+     78.95
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Longyearbyen",
+   "lat": 78.2232,
+   "lng": 15.6267,
+   "mode": "sea",
+   "path": [
+    [
+     12,
+     78.95
+    ],
+    [
+     15.6267,
+     78.2232
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Arctic Ocean",
+    "lat": 79.5,
+    "lng": 8.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Svalbard",
+    "lat": 78.6,
+    "lng": 17.0,
+    "kind": "region"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 68.0,
+    "lng": 6.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

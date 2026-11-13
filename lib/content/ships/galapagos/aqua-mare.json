@@ -1,0 +1,4357 @@
+{
+ "slug": "aqua-mare",
+ "name": "Aqua Mare",
+ "ledgerId": "VSL-2026-000009",
+ "brandLine": "Aqua Expeditions",
+ "operator": "Aqua Expeditions",
+ "status": "sailing",
+ "deckPlans": [],
+ "why": [],
+ "rateBasis": "per-cruise",
+ "type": "motor-yacht",
+ "waters": "Galápagos Islands, east and west",
+ "country": "Ecuador",
+ "seo": {
+  "title": "Aqua Mare Galápagos Superyacht Cruise | James Wild & Co",
+  "description": "Aqua Mare by Aqua Expeditions: a 50 m superyacht for 16 guests, 7 cabins with an 80 sq m Owner's Suite, two naturalists. East and west Galápagos, 7 or 14 nights, every fare.",
+  "keywords": [
+   "Aqua Mare",
+   "Galapagos superyacht",
+   "luxury Galapagos yacht cruise",
+   "Aqua Expeditions Galapagos",
+   "16 guest Galapagos yacht"
+  ]
+ },
+ "tagline": "A 50-metre Italian superyacht for 16, and two naturalists for the islands.",
+ "answer": "Aqua Mare is Aqua Expeditions' 50-metre superyacht in the Galápagos, built by CRN in Italy and refitted in 2021. She carries 16 guests in seven cabins, including an 80 sq m Owner's Suite, with 16 crew and two naturalist guides (eight guests to a guide). She sails seven-night east and west itineraries that join into 14 nights, and suits couples and families who want the islands on a private-feeling yacht.",
+ "facts": [
+  [
+   "Length",
+   "50 m"
+  ],
+  [
+   "Built",
+   "1998 by CRN, Italy; refitted 2021"
+  ],
+  [
+   "Cabins",
+   "7, including an 80 sq m (861 sq ft) Owner's Suite for up to 4"
+  ],
+  [
+   "Guests",
+   "16"
+  ],
+  [
+   "Crew",
+   "16, with 2 naturalist guides"
+  ],
+  [
+   "Guide ratio",
+   "1 guide to 8 guests"
+  ],
+  [
+   "Decks",
+   "4"
+  ],
+  [
+   "Routes",
+   "East or west, 7 nights; both, 14 nights"
+  ]
+ ],
+ "overview": [
+  "Aqua Mare was built in 1998 by the Italian yard CRN, with interiors by François Zuretti. Aqua Expeditions' Birgit Galli Zugaro led her 2021 refit, which kept the walnut-panelled interiors and added two cabins. Aqua says she has some 30% more indoor volume than most yachts her size.",
+  "Her seven cabins run from 16 sq m to the 80 sq m Owner's Suite on the main deck, the largest of its kind in the islands, per Aqua. The upper deck has a panoramic lounge in Carrara marble and an all-weather outdoor dining deck; the sun deck a barbecue, a six-person jacuzzi and sunbeds; the lower deck the Beach Club, a lounge at the waterline from which the twice-daily excursions leave. She carries eight double kayaks and two paddleboards."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/hero",
+  "alt": "Aqua Mare superyacht in the Galápagos Islands",
+  "credit": "Aqua Expeditions"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/exterior-32",
+   "alt": "Aqua Mare under way in the Galápagos",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/horizon",
+   "alt": "Sunset from the deck of Aqua Mare",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/exterior-17",
+   "alt": "Aqua Mare at anchor in the Galápagos",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/sun-deck",
+   "alt": "Sunbeds on Aqua Mare's top deck",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/beach-club",
+   "alt": "The Beach Club at Aqua Mare's stern",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/service",
+   "alt": "Guests with drinks in Aqua Mare's lounge",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/food",
+   "alt": "A dish from chef Pedro Miguel Schiaffino's menu on Aqua Mare",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/sea-lion",
+   "alt": "Sea lion on a Galápagos beach on an Aqua Mare excursion",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/snorkelling",
+   "alt": "Snorkelling in the Galápagos with Aqua Mare",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/trekking",
+   "alt": "Guests hiking a lava trail with an Aqua Mare naturalist",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/paddleboard",
+   "alt": "Stand-up paddleboarding from Aqua Mare",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/tender",
+   "alt": "Aqua Mare's tender heading for a landing",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/bartolome",
+   "alt": "Pinnacle Rock on Bartolomé Island at sunset",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/boobies",
+   "alt": "Blue-footed boobies in the Galápagos",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/lounge",
+   "alt": "Panoramic lounge on Aqua Mare",
+   "credit": "Aqua Expeditions"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/jacuzzi",
+   "alt": "Jacuzzi on Aqua Mare's sun deck",
+   "credit": "Aqua Expeditions"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Owner's Suite",
+   "count": 1,
+   "size": "80 sq m (861 sq ft)",
+   "beds": "King; up to 4 guests",
+   "deck": "Main deck",
+   "features": [
+    "The largest suite in the Galápagos, per Aqua",
+    "Marble bathroom with walk-in rain shower",
+    "Premium spirits and beers included",
+    "Walnut panelling"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/aqua-mare/owners-suite",
+    "alt": "The Owner's Suite on Aqua Mare",
+    "credit": "Aqua Expeditions"
+   }
+  },
+  {
+   "type": "Category II",
+   "count": 1,
+   "size": "Ask us",
+   "beds": "King or twin",
+   "deck": "Main deck",
+   "features": [
+    "Marble bathroom with walk-in rain shower",
+    "Large windows",
+    "Safe"
+   ],
+   "image": null
+  },
+  {
+   "type": "Category III",
+   "count": null,
+   "size": "Ask us",
+   "beds": "King or twin",
+   "deck": "Lower deck",
+   "features": [
+    "Marble bathroom with walk-in rain shower",
+    "Safe"
+   ],
+   "image": null
+  },
+  {
+   "type": "Category IV",
+   "count": null,
+   "size": "Ask us",
+   "beds": "King or twin",
+   "deck": "Lower deck",
+   "features": [
+    "Marble bathroom with walk-in rain shower",
+    "Safe"
+   ],
+   "image": null
+  },
+  {
+   "type": "Category V",
+   "count": 1,
+   "size": "From 16 sq m (172 sq ft)",
+   "beds": "King or twin",
+   "deck": "Upper deck",
+   "features": [
+    "Marble bathroom with walk-in rain shower",
+    "Safe"
+   ],
+   "image": null
+  }
+ ],
+ "itineraries": [
+  {
+   "name": "7-night East Galápagos Expedition",
+   "nights": 7,
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "days": [
+    {
+     "day": 1,
+     "title": "at Baltra Island",
+     "place": "at Baltra Island and Bahia Borrero",
+     "lat": -0.44,
+     "lng": -90.27,
+     "summary": "Once you arrive at Baltra airport after traveling on one of our recommended flights, you will be met by our team and escorted on a short cross island transfer to the."
+    },
+    {
+     "day": 2,
+     "title": "Genovesa Island",
+     "place": "El Barranco and Bahía Darwin, Genovesa Island",
+     "lat": -0.31,
+     "lng": -89.96,
+     "summary": "This morning, you’ll wake up on the other side of the equator and head over to Bahía Darwin’s coralline beach for hiking and snorkeling."
+    },
+    {
+     "day": 3,
+     "title": "Sombrero Chino Island",
+     "place": "Bahía Sullivan, Santiago Island and Sombrero Chino Island",
+     "lat": -0.37,
+     "lng": -90.58,
+     "summary": "Start the morning early with a workout or a guided meditation on our sun deck followed by a refreshing breakfast."
+    },
+    {
+     "day": 4,
+     "title": "Cerro Dragón",
+     "place": "Bartolomé Island and Cerro Dragón, Santa Cruz Island",
+     "lat": -0.54,
+     "lng": -90.48,
+     "summary": "With an early morning anchor at Bartolomé Island, you will embark upon a mild climb up to the summit of a spatter cone for a spectacular view of the island’s iconic."
+    },
+    {
+     "day": 5,
+     "title": "Fausto Llerena Breeding Center",
+     "place": "Manzanillo Giant Tortoise Reserve and Fausto Llerena Breeding Center, Santa Cruz Island",
+     "lat": -0.7433,
+     "lng": -90.3033,
+     "summary": "This morning, visit a nature reserve to see the Galapagos Islands' famous giant tortoises in their natural habitat."
+    },
+    {
+     "day": 6,
+     "title": "Bahía Gardner",
+     "place": "Punta Suárez, Bahía Gardner, and Islote Osborn, Española Island",
+     "lat": -1.35,
+     "lng": -89.65,
+     "summary": "Rise and shine to a guided meditation on our upper deck before disembarking in Punta Suárez for this morning’s excursion."
+    },
+    {
+     "day": 7,
+     "title": "Plaza Sur Island",
+     "place": "Sante Fé Island and Plaza Sur Island",
+     "lat": -0.58,
+     "lng": -90.16,
+     "summary": "After a night of sailing, visit Santa Fe Island, one of the oldest in the Galapagos archipelago."
+    },
+    {
+     "day": 8,
+     "title": "Los Gemelos",
+     "place": "Los Gemelos, Santa Cruz Island and Disembarkation",
+     "lat": -0.62,
+     "lng": -90.38,
+     "summary": "You begin your last day with a luxurious breakfast before bidding farewell to the Aqua Mare crew."
+    }
+   ]
+  },
+  {
+   "name": "7-night West Galápagos Expedition",
+   "nights": 7,
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "days": [
+    {
+     "day": 1,
+     "title": "Manzanillo Ranch",
+     "place": "at Puerto Ayora, and Manzanillo Ranch, Santa Cruz Island",
+     "lat": -0.65,
+     "lng": -90.4,
+     "summary": "Once you arrive at the airport after traveling on one of our recommended flights, you will be met by our team and escorted on a cross-island van and ferry transfer of."
+    },
+    {
+     "day": 2,
+     "title": "Punta Cormorant",
+     "place": "Punta Cormorant, Bahía Post Office, and Mirador de la Baronesa, Floreana Island",
+     "lat": -1.22,
+     "lng": -90.42,
+     "summary": "For your second morning in the Galapagos Islands, we will be anchored in the southern part of the Archipelago at Floreana Island."
+    },
+    {
+     "day": 3,
+     "title": "Bahía Urbina",
+     "place": "Punta Moreno and Bahía Urbina, Isabela Island",
+     "lat": -0.39,
+     "lng": -91.23,
+     "summary": "After a night of sailing, the morning sees our beautiful superyacht anchored on the western side of Isabela Island."
+    },
+    {
+     "day": 4,
+     "title": "Caleta Tagus",
+     "place": "Punta Espinoza, Fernandina Island, and Caleta Tagus, Isabela Island",
+     "lat": -0.27,
+     "lng": -91.37,
+     "summary": "Start the morning early with a workout on our sun deck at our next anchorage point of Punta Espinoza, part of a huge lava flow formed from one of the many eruptions of."
+    },
+    {
+     "day": 5,
+     "title": "Puerta Egas",
+     "place": "Puerta Egas, Playa Espumilla, and Caleta Bucanero, Santiago Island",
+     "lat": -0.24,
+     "lng": -90.86,
+     "summary": "This morning, we’ll take a tender ride to Caleta Bucanero, a 17th century pirate rest stop where pirates used to stock up on fresh tortoise meat and fresh water."
+    },
+    {
+     "day": 6,
+     "title": "Caleta Tortuga Negra",
+     "place": "Rábida Island and Caleta Tortuga Negra, Santa Cruz Island",
+     "lat": -0.5,
+     "lng": -90.27,
+     "summary": "Awake to the sounds of nature and a fresh breakfast before departing by tender to Rábida Island, also known as the red island."
+    },
+    {
+     "day": 7,
+     "title": "Mosquera Island",
+     "place": "Seymour Norte Island and Mosquera Island",
+     "lat": -0.41,
+     "lng": -90.27,
+     "summary": "Your penultimate day in the Archipelago begins with refreshing breakfast before heading out to Seymour Norte Island, formed by uprisings of underwater volcanic lavas."
+    },
+    {
+     "day": 8,
+     "title": "Disembarkation at Baltra Island",
+     "place": "Disembarkation at Baltra Island",
+     "lat": -0.44,
+     "lng": -90.27,
+     "summary": "The last day begins with a luxurious breakfast set against the morning sunrise."
+    }
+   ]
+  },
+  {
+   "name": "14-night East and West Galápagos Expedition",
+   "nights": 14,
+   "direction": "Baltra round trip",
+   "days": [
+    {
+     "day": 1,
+     "title": "at Baltra Island",
+     "place": "at Baltra Island and Bahia Borrero",
+     "lat": -0.44,
+     "lng": -90.27,
+     "summary": "Once you arrive at Baltra airport after traveling on one of our recommended flights, you will be met by our team and escorted on a short cross island transfer to the."
+    },
+    {
+     "day": 2,
+     "title": "Genovesa Island",
+     "place": "El Barranco and Bahía Darwin, Genovesa Island",
+     "lat": -0.31,
+     "lng": -89.96,
+     "summary": "This morning, you’ll wake up on the other side of the equator and head over to Bahía Darwin’s coralline beach for hiking and snorkeling."
+    },
+    {
+     "day": 3,
+     "title": "Sombrero Chino Island",
+     "place": "Bahía Sullivan, Santiago Island and Sombrero Chino Island",
+     "lat": -0.37,
+     "lng": -90.58,
+     "summary": "Start the morning early with a workout or a guided meditation on our sun deck followed by a refreshing breakfast."
+    },
+    {
+     "day": 4,
+     "title": "Cerro Dragón",
+     "place": "Bartolomé Island and Cerro Dragón, Santa Cruz Island",
+     "lat": -0.54,
+     "lng": -90.48,
+     "summary": "With an early morning anchor at Bartolomé Island, you will embark upon a mild climb up to the summit of a spatter cone for a spectacular view of the island’s iconic."
+    },
+    {
+     "day": 5,
+     "title": "Fausto Llerena Breeding Center",
+     "place": "El Chato Giant Tortoise Reserve and Fausto Llerena Breeding Center, Santa Cruz Island",
+     "lat": -0.7433,
+     "lng": -90.3033,
+     "summary": "This morning, visit a nature reserve to see the Galapagos Islands' famous giant tortoises in their natural habitat."
+    },
+    {
+     "day": 6,
+     "title": "Gardner Bay",
+     "place": "Punta Suárez, Gardner Bay, and Islote Osborn, Española Island",
+     "lat": -1.35,
+     "lng": -89.65,
+     "summary": "Rise and shine to a guided meditation on our upper deck before disembarking in Punta Suárez for this morning’s excursion."
+    },
+    {
+     "day": 7,
+     "title": "Plaza Sur Island",
+     "place": "Sante Fé Island and Plaza Sur Island",
+     "lat": -0.58,
+     "lng": -90.16,
+     "summary": "After a night of sailing, visit Santa Fe Island, one of the oldest in the Galapagos archipelago."
+    },
+    {
+     "day": 8,
+     "title": "Puerto Ayora",
+     "place": "Puerto Ayora, Santa Cruz Island",
+     "lat": -0.7433,
+     "lng": -90.3133,
+     "summary": "Build your own adventure today from a selection of activities, whether you’re interested in snorkeling, hiking, cycling, or even scuba diving."
+    },
+    {
+     "day": 9,
+     "title": "Punta Cormorant",
+     "place": "Punta Cormorant, Bahía Post Office, and Mirador de la Baronesa, Floreana Island",
+     "lat": -1.22,
+     "lng": -90.42,
+     "summary": "Today, we will be anchored in the southern part of the Archipelago at Floreana Island."
+    },
+    {
+     "day": 10,
+     "title": "Bahía Urbina",
+     "place": "Punta Moreno and Bahía Urbina, Isabela Island",
+     "lat": -0.39,
+     "lng": -91.23,
+     "summary": "After a night of sailing, the morning sees our beautiful superyacht anchored on the western side of Isabela Island."
+    },
+    {
+     "day": 11,
+     "title": "Caleta Tagus",
+     "place": "Punta Espinoza, Fernandina Island, and Caleta Tagus, Isabela Island",
+     "lat": -0.27,
+     "lng": -91.37,
+     "summary": "Start the morning early with a workout on our sun deck at our next anchorage point of Punta Espinoza, part of a huge lava flow formed from one of the many eruptions of."
+    },
+    {
+     "day": 12,
+     "title": "Puerto Egas",
+     "place": "Puerto Egas, Playa Espumilla, and Caleta Bucanero, Santiago Island",
+     "lat": -0.24,
+     "lng": -90.86,
+     "summary": "This morning, we’ll take a tender ride to Caleta Bucanero, a 17th century pirate rest stop where pirates used to stock up on fresh tortoise meat and fresh water."
+    },
+    {
+     "day": 13,
+     "title": "Caleta Tortuga Negra",
+     "place": "Rábida Island and Caleta Tortuga Negra, Santa Cruz Island",
+     "lat": -0.5,
+     "lng": -90.27,
+     "summary": "Awake to the sounds of nature and a fresh breakfast before departing by tender to Rábida Island, also known as the red island."
+    },
+    {
+     "day": 14,
+     "title": "Mosquera Island",
+     "place": "Seymour Norte Island and Mosquera Island",
+     "lat": -0.41,
+     "lng": -90.27,
+     "summary": "Your penultimate day in the Archipelago begins with refreshing breakfast before heading out to Seymour Norte Island, formed by uprisings of underwater volcanic lavas."
+    },
+    {
+     "day": 15,
+     "title": "Disembarkation at Baltra Island",
+     "place": "Disembarkation at Baltra Island",
+     "lat": -0.44,
+     "lng": -90.27,
+     "summary": "The last day begins with a luxurious breakfast set against the morning sunrise."
+    }
+   ]
+  },
+  {
+   "name": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "nights": 14,
+   "direction": "Baltra round trip",
+   "days": [
+    {
+     "day": 1,
+     "title": "Manzanillo Ranch",
+     "place": "at Puerto Ayora, and Manzanillo Ranch, Santa Cruz Island",
+     "lat": -0.65,
+     "lng": -90.4,
+     "summary": "Once you arrive at the airport after traveling on one of our recommended flights, you will be met by our team and escorted on a cross-island van and ferry transfer of."
+    },
+    {
+     "day": 2,
+     "title": "Punta Cormorant",
+     "place": "Punta Cormorant, Bahía Post Office, and Mirador de la Baronesa, Floreana Island",
+     "lat": -1.22,
+     "lng": -90.42,
+     "summary": "For your second morning in the Galapagos Islands, we will be anchored in the southern part of the Archipelago at Floreana Island."
+    },
+    {
+     "day": 3,
+     "title": "Bahía Urbina",
+     "place": "Punta Moreno and Bahía Urbina, Isabela Island",
+     "lat": -0.39,
+     "lng": -91.23,
+     "summary": "After a night of sailing, the morning sees our beautiful superyacht anchored on the western side of Isabela Island."
+    },
+    {
+     "day": 4,
+     "title": "Caleta Tagus",
+     "place": "Punta Espinoza, Fernandina Island, and Caleta Tagus, Isabela Island",
+     "lat": -0.27,
+     "lng": -91.37,
+     "summary": "Start the morning early with a workout on our sun deck at our next anchorage point of Punta Espinoza, part of a huge lava flow formed from one of the many eruptions of."
+    },
+    {
+     "day": 5,
+     "title": "Puerto Egas",
+     "place": "Puerto Egas, Playa Espumilla, and Caleta Bucanero, Santiago Island",
+     "lat": -0.24,
+     "lng": -90.86,
+     "summary": "This morning, we’ll take a tender ride to Caleta Bucanero, a 17th century pirate rest stop where pirates used to stock up on fresh tortoise meat and fresh water."
+    },
+    {
+     "day": 6,
+     "title": "Caleta Tortuga Negra",
+     "place": "Rábida Island and Caleta Tortuga Negra, Santa Cruz Island",
+     "lat": -0.5,
+     "lng": -90.27,
+     "summary": "Awake to the sounds of nature and a fresh breakfast before departing by tender to Rábida Island, also known as the red island."
+    },
+    {
+     "day": 7,
+     "title": "Mosquera Island",
+     "place": "Seymour Norte Island and Mosquera Island",
+     "lat": -0.41,
+     "lng": -90.27,
+     "summary": "Your day in the Archipelago begins with a refreshing breakfast before heading out to Seymour Norte Island, formed by uprisings of underwater volcanic lavas some 3.1."
+    },
+    {
+     "day": 8,
+     "title": "Baltra Island",
+     "place": "Baltra Island, and Bahia Borrero, Santa Cruz Island",
+     "lat": -0.44,
+     "lng": -90.27,
+     "summary": "Today begins with a luxurious breakfast set against the morning sunrise."
+    },
+    {
+     "day": 9,
+     "title": "Genovesa Island",
+     "place": "El Barranco and Bahía Darwin, Genovesa Island",
+     "lat": -0.31,
+     "lng": -89.96,
+     "summary": "This morning, you’ll wake up on the other side of the equator and head over to Bahia Darwin’s coralline beach for hiking and snorkeling."
+    },
+    {
+     "day": 10,
+     "title": "Sombrero Chino Island",
+     "place": "Bahía Sullivan, Santiago Island and Sombrero Chino Island",
+     "lat": -0.37,
+     "lng": -90.58,
+     "summary": "Start the morning early with a workout or a guided meditation on our sun deck followed by a refreshing breakfast."
+    },
+    {
+     "day": 11,
+     "title": "Cerro Dragón",
+     "place": "Bartolomé Island and Cerro Dragón, Santa Cruz Island",
+     "lat": -0.54,
+     "lng": -90.48,
+     "summary": "With an early morning anchor at Bartolomé Island, you will embark upon a mild climb up to the summit of a spatter cone for a spectacular view of the island’s iconic."
+    },
+    {
+     "day": 12,
+     "title": "Fausto Llerena Breeding Center",
+     "place": "Manzanillo Giant Tortoise Reserve and Fausto Llerena Breeding Center, Santa Cruz Island",
+     "lat": -0.7433,
+     "lng": -90.3033,
+     "summary": "This morning, explore a nature reserve to see the Galapagos Islands' famous giant tortoises in their natural habitat."
+    },
+    {
+     "day": 13,
+     "title": "Bahía Gardner",
+     "place": "Punta Suárez, Bahía Gardner, and Islote Osborn, Española Island",
+     "lat": -1.35,
+     "lng": -89.65,
+     "summary": "Rise and shine to a guided meditation on our upper deck before disembarking in Punta Suárez for this morning’s excursion."
+    },
+    {
+     "day": 14,
+     "title": "Plaza Sur Island",
+     "place": "Sante Fé Island and Plaza Sur Island",
+     "lat": -0.58,
+     "lng": -90.16,
+     "summary": "After a night of sailing, you will visit Santa Fé Island for your penultimate day."
+    },
+    {
+     "day": 15,
+     "title": "Los Gemelos",
+     "place": "Los Gemelos, Santa Cruz Island and Disembarkation",
+     "lat": -0.62,
+     "lng": -90.38,
+     "summary": "You begin your last day with a luxurious breakfast before bidding farewell to the Aqua Mare crew."
+    }
+   ]
+  },
+  {
+   "name": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "days": [
+    {
+     "day": 1,
+     "title": "Manzanillo Ranch",
+     "place": "at Puerto Ayora, and Manzanillo Ranch, Santa Cruz Island",
+     "lat": -0.65,
+     "lng": -90.4,
+     "summary": "Once you arrive at the airport after traveling on one of our recommended flights, you will be met by our team and escorted on a cross-island van and ferry transfer of."
+    },
+    {
+     "day": 2,
+     "title": "Punta Cormorant",
+     "place": "Punta Cormorant, Bahía Post Office, and Mirador de la Baronesa, Floreana Island",
+     "lat": -1.22,
+     "lng": -90.42,
+     "summary": "For your second morning in the Galapagos Islands, we will be anchored in the southern part of the Archipelago at Floreana Island."
+    },
+    {
+     "day": 3,
+     "title": "Bahía Urbina",
+     "place": "Punta Moreno and Bahía Urbina, Isabela Island",
+     "lat": -0.39,
+     "lng": -91.23,
+     "summary": "After a night of sailing, the morning sees our beautiful superyacht anchored on the western side of Isabela Island."
+    },
+    {
+     "day": 4,
+     "title": "Caleta Tagus",
+     "place": "Punta Espinoza, Fernandina Island, and Caleta Tagus, Isabela Island",
+     "lat": -0.27,
+     "lng": -91.37,
+     "summary": "Start the morning early with a workout on our sun deck at our next anchorage point of Punta Espinoza, part of a huge lava flow formed from one of the many eruptions of."
+    },
+    {
+     "day": 5,
+     "title": "Puerto Egas",
+     "place": "Puerto Egas, Playa Espumilla, and Caleta Bucanero, Santiago Island",
+     "lat": -0.24,
+     "lng": -90.86,
+     "summary": "This morning, we’ll take a tender ride to Caleta Bucanero, a 17th century pirate rest stop where pirates used to stock up on fresh tortoise meat and fresh water."
+    },
+    {
+     "day": 6,
+     "title": "Caleta Tortuga Negra",
+     "place": "Rábida Island and Caleta Tortuga Negra, Santa Cruz Island",
+     "lat": -0.5,
+     "lng": -90.27,
+     "summary": "Awake to the sounds of nature and a fresh breakfast before departing by tender to Rábida Island, also known as the red island."
+    },
+    {
+     "day": 7,
+     "title": "Mosquera Island",
+     "place": "Seymour Norte Island and Mosquera Island",
+     "lat": -0.41,
+     "lng": -90.27,
+     "summary": "Your day in the Archipelago begins with a refreshing breakfast before heading out to Seymour Norte Island, formed by uprisings of underwater volcanic lavas some 3.1."
+    },
+    {
+     "day": 8,
+     "title": "Baltra Island",
+     "place": "Baltra Island, and Bahia Borrero, Santa Cruz Island",
+     "lat": -0.44,
+     "lng": -90.27,
+     "summary": "Today begins with a luxurious breakfast set against the morning sunrise."
+    },
+    {
+     "day": 9,
+     "title": "Genovesa Island",
+     "place": "El Barranco and Bahía Darwin, Genovesa Island",
+     "lat": -0.31,
+     "lng": -89.96,
+     "summary": "This morning, you’ll wake up on the other side of the equator and head over to Bahia Darwin’s coralline beach for hiking and snorkeling."
+    },
+    {
+     "day": 10,
+     "title": "Sombrero Chino Island",
+     "place": "Bahía Sullivan, Santiago Island and Sombrero Chino Island",
+     "lat": -0.37,
+     "lng": -90.58,
+     "summary": "Start the morning early with a workout or a guided meditation on our sun deck followed by a refreshing breakfast."
+    },
+    {
+     "day": 11,
+     "title": "Cerro Dragón",
+     "place": "Bartolomé Island and Cerro Dragón, Santa Cruz Island",
+     "lat": -0.54,
+     "lng": -90.48,
+     "summary": "With an early morning anchor at Bartolomé Island, you will embark upon a mild climb up to the summit of a spatter cone for a spectacular view of the island’s iconic."
+    },
+    {
+     "day": 12,
+     "title": "Fausto Llerena Breeding Center",
+     "place": "Manzanillo Giant Tortoise Reserve and Fausto Llerena Breeding Center, Santa Cruz Island",
+     "lat": -0.7433,
+     "lng": -90.3033,
+     "summary": "This morning, explore a nature reserve to see the Galapagos Islands' famous giant tortoises in their natural habitat."
+    },
+    {
+     "day": 13,
+     "title": "Bahía Gardner",
+     "place": "Punta Suárez, Bahía Gardner, and Islote Osborn, Española Island",
+     "lat": -1.35,
+     "lng": -89.65,
+     "summary": "Rise and shine to a guided meditation on our upper deck before disembarking in Punta Suárez for this morning’s excursion."
+    },
+    {
+     "day": 14,
+     "title": "Plaza Sur Island",
+     "place": "Sante Fé Island and Plaza Sur Island",
+     "lat": -0.58,
+     "lng": -90.16,
+     "summary": "After a night of sailing, you will visit Santa Fé Island for your penultimate day."
+    },
+    {
+     "day": 15,
+     "title": "Los Gemelos",
+     "place": "Los Gemelos, Santa Cruz Island and Disembarkation",
+     "lat": -0.62,
+     "lng": -90.38,
+     "summary": "You begin your last day with a luxurious breakfast before bidding farewell to the Aqua Mare crew."
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2026-11-20",
+   "dateTo": "2026-11-27",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 32300,
+    "Category II": 16370,
+    "Category III": 14780,
+    "Category IV": 12830,
+    "Category V": 11900
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "dateTo": "2026-12-04",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 61430,
+    "Category II": 31000,
+    "Category III": 27970,
+    "Category IV": 24370,
+    "Category V": 22640
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "dateTo": "2026-12-04",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 32300,
+    "Category II": 16370,
+    "Category III": 14780,
+    "Category IV": 12830,
+    "Category V": 11900
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "dateTo": "2026-12-11",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 61430,
+    "Category II": 31000,
+    "Category III": 27970,
+    "Category IV": 24370,
+    "Category V": 22640
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2026-12-04",
+   "dateTo": "2026-12-11",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 32300,
+    "Category II": 16370,
+    "Category III": 14780,
+    "Category IV": 12830,
+    "Category V": 11900
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2026-12-04",
+   "dateTo": "2026-12-18",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 61430,
+    "Category II": 31000,
+    "Category III": 27970,
+    "Category IV": 24370,
+    "Category V": 22640
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2026-12-11",
+   "dateTo": "2026-12-18",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 32300,
+    "Category II": 16370,
+    "Category III": 14780,
+    "Category IV": 12830,
+    "Category V": 11900
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-01-01",
+   "dateTo": "2027-01-08",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 37280,
+    "Category II": 18880,
+    "Category III": 17060,
+    "Category IV": 14830,
+    "Category V": 13720
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-01-01",
+   "dateTo": "2027-01-15",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 70910,
+    "Category II": 35840,
+    "Category III": 32360,
+    "Category IV": 28080,
+    "Category V": 26170
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-01-08",
+   "dateTo": "2027-01-15",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-01-22",
+   "dateTo": "2027-01-29",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-01-22",
+   "dateTo": "2027-02-05",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-01-29",
+   "dateTo": "2027-02-05",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-01-29",
+   "dateTo": "2027-02-12",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-02-05",
+   "dateTo": "2027-02-12",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-02-05",
+   "dateTo": "2027-02-19",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-02-12",
+   "dateTo": "2027-02-19",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-02-12",
+   "dateTo": "2027-02-26",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-02-19",
+   "dateTo": "2027-02-26",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-02-19",
+   "dateTo": "2027-03-05",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-02-26",
+   "dateTo": "2027-03-05",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-02-26",
+   "dateTo": "2027-03-12",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-03-05",
+   "dateTo": "2027-03-12",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-03-19",
+   "dateTo": "2027-03-26",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-02",
+   "dateTo": "2027-04-09",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-02",
+   "dateTo": "2027-04-16",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-09",
+   "dateTo": "2027-04-16",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-09",
+   "dateTo": "2027-04-23",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-16",
+   "dateTo": "2027-04-23",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-16",
+   "dateTo": "2027-04-30",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-23",
+   "dateTo": "2027-04-30",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-23",
+   "dateTo": "2027-05-07",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-30",
+   "dateTo": "2027-05-07",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 35590,
+    "Category II": 18010,
+    "Category III": 16270,
+    "Category IV": 14150,
+    "Category V": 13100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-04-30",
+   "dateTo": "2027-05-14",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 67680,
+    "Category II": 34220,
+    "Category III": 30890,
+    "Category IV": 26800,
+    "Category V": 24990
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-05-07",
+   "dateTo": "2027-05-14",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-05-07",
+   "dateTo": "2027-05-21",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-05-14",
+   "dateTo": "2027-05-21",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-05-14",
+   "dateTo": "2027-05-28",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-05-21",
+   "dateTo": "2027-05-28",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-05-21",
+   "dateTo": "2027-06-04",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-05-28",
+   "dateTo": "2027-06-04",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-05-28",
+   "dateTo": "2027-06-11",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-06-04",
+   "dateTo": "2027-06-11",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 2,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-06-04",
+   "dateTo": "2027-06-18",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-06-11",
+   "dateTo": "2027-06-18",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 1,
+    "Category IV": 1,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-07-02",
+   "dateTo": "2027-07-09",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-07-02",
+   "dateTo": "2027-07-16",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-07-09",
+   "dateTo": "2027-07-16",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-07-09",
+   "dateTo": "2027-07-23",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-07-16",
+   "dateTo": "2027-07-23",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-07-30",
+   "dateTo": "2027-08-06",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 32900,
+    "Category II": 16660,
+    "Category III": 15050,
+    "Category IV": 13090,
+    "Category V": 12110
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-07-30",
+   "dateTo": "2027-08-13",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 62580,
+    "Category II": 31640,
+    "Category III": 28560,
+    "Category IV": 24780,
+    "Category V": 23100
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-08-06",
+   "dateTo": "2027-08-13",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 2,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-08-06",
+   "dateTo": "2027-08-20",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-08-13",
+   "dateTo": "2027-08-20",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-08-13",
+   "dateTo": "2027-08-27",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-08-20",
+   "dateTo": "2027-08-27",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 2,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-08-20",
+   "dateTo": "2027-09-03",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 2,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-08-27",
+   "dateTo": "2027-09-03",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 2,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-10-08",
+   "dateTo": "2027-10-15",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-10-08",
+   "dateTo": "2027-10-22",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-10-15",
+   "dateTo": "2027-10-22",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-10-15",
+   "dateTo": "2027-10-29",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-10-22",
+   "dateTo": "2027-10-29",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-10-22",
+   "dateTo": "2027-11-05",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-10-29",
+   "dateTo": "2027-11-05",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-10-29",
+   "dateTo": "2027-11-12",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-11-05",
+   "dateTo": "2027-11-12",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-11-05",
+   "dateTo": "2027-11-19",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-11-12",
+   "dateTo": "2027-11-19",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-11-12",
+   "dateTo": "2027-11-26",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-11-19",
+   "dateTo": "2027-11-26",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-11-19",
+   "dateTo": "2027-12-03",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-11-26",
+   "dateTo": "2027-12-03",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 1,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-12-10",
+   "dateTo": "2027-12-17",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-12-10",
+   "dateTo": "2027-12-24",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-12-17",
+   "dateTo": "2027-12-24",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 33890,
+    "Category II": 17160,
+    "Category III": 15500,
+    "Category IV": 13480,
+    "Category V": 12470
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2027-12-17",
+   "dateTo": "2027-12-31",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 64460,
+    "Category II": 32590,
+    "Category III": 29420,
+    "Category IV": 25520,
+    "Category V": 23790
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2027-12-24",
+   "dateTo": "2027-12-31",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 37280,
+    "Category II": 18880,
+    "Category III": 17060,
+    "Category IV": 14830,
+    "Category V": 13720
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-01-07",
+   "dateTo": "2028-01-14",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-01-07",
+   "dateTo": "2028-01-21",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-01-14",
+   "dateTo": "2028-01-21",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-01-14",
+   "dateTo": "2028-01-28",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-01-21",
+   "dateTo": "2028-01-28",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-01-21",
+   "dateTo": "2028-02-04",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-01-28",
+   "dateTo": "2028-02-04",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-02-11",
+   "dateTo": "2028-02-18",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-02-11",
+   "dateTo": "2028-02-25",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-02-18",
+   "dateTo": "2028-02-25",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-02-18",
+   "dateTo": "2028-03-03",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-02-25",
+   "dateTo": "2028-03-03",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-02-25",
+   "dateTo": "2028-03-10",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-03-03",
+   "dateTo": "2028-03-10",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-03-03",
+   "dateTo": "2028-03-17",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-03-10",
+   "dateTo": "2028-03-17",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-03-10",
+   "dateTo": "2028-03-24",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-03-17",
+   "dateTo": "2028-03-24",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-03-17",
+   "dateTo": "2028-03-31",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "full",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 0,
+    "Category III": 0,
+    "Category IV": 0,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-04-21",
+   "dateTo": "2028-04-28",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-04-21",
+   "dateTo": "2028-05-05",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "few left",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 0,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-04-28",
+   "dateTo": "2028-05-05",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 38460,
+    "Category II": 19480,
+    "Category III": 17600,
+    "Category IV": 15310,
+    "Category V": 14160
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-04-28",
+   "dateTo": "2028-05-12",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 73080,
+    "Category II": 37020,
+    "Category III": 33440,
+    "Category IV": 29090,
+    "Category V": 26920
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-05-05",
+   "dateTo": "2028-05-12",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-05-05",
+   "dateTo": "2028-05-19",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 1,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-05-12",
+   "dateTo": "2028-05-19",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 1,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-05-12",
+   "dateTo": "2028-05-26",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 1,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-05-19",
+   "dateTo": "2028-05-26",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-05-19",
+   "dateTo": "2028-06-02",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-05-26",
+   "dateTo": "2028-06-02",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-05-26",
+   "dateTo": "2028-06-09",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-06-02",
+   "dateTo": "2028-06-09",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-06-16",
+   "dateTo": "2028-06-23",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-06-16",
+   "dateTo": "2028-06-30",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-06-23",
+   "dateTo": "2028-06-30",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-06-23",
+   "dateTo": "2028-07-07",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-06-30",
+   "dateTo": "2028-07-07",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-06-30",
+   "dateTo": "2028-07-14",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-07-07",
+   "dateTo": "2028-07-14",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-07-07",
+   "dateTo": "2028-07-21",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-07-14",
+   "dateTo": "2028-07-21",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-07-14",
+   "dateTo": "2028-07-28",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-07-21",
+   "dateTo": "2028-07-28",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-07-21",
+   "dateTo": "2028-08-04",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-07-28",
+   "dateTo": "2028-08-04",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-08-11",
+   "dateTo": "2028-08-18",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-08-11",
+   "dateTo": "2028-08-25",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-08-18",
+   "dateTo": "2028-08-25",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-08-18",
+   "dateTo": "2028-09-01",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-08-25",
+   "dateTo": "2028-09-01",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-08-25",
+   "dateTo": "2028-09-08",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 0,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-09-01",
+   "dateTo": "2028-09-08",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-10-06",
+   "dateTo": "2028-10-13",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-10-06",
+   "dateTo": "2028-10-20",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-10-13",
+   "dateTo": "2028-10-20",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-10-13",
+   "dateTo": "2028-10-27",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-10-20",
+   "dateTo": "2028-10-27",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-10-20",
+   "dateTo": "2028-11-03",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-10-27",
+   "dateTo": "2028-11-03",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-10-27",
+   "dateTo": "2028-11-10",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-11-03",
+   "dateTo": "2028-11-10",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-11-03",
+   "dateTo": "2028-11-17",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-11-10",
+   "dateTo": "2028-11-17",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 0
+   }
+  },
+  {
+   "date": "2028-11-24",
+   "dateTo": "2028-12-01",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-11-24",
+   "dateTo": "2028-12-08",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-01",
+   "dateTo": "2028-12-08",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-01",
+   "dateTo": "2028-12-15",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-08",
+   "dateTo": "2028-12-15",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-08",
+   "dateTo": "2028-12-22",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-15",
+   "dateTo": "2028-12-22",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 36640,
+    "Category II": 18550,
+    "Category III": 16760,
+    "Category IV": 14590,
+    "Category V": 13490
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-15",
+   "dateTo": "2028-12-29",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Baltra round trip",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 69600,
+    "Category II": 35250,
+    "Category III": 31840,
+    "Category IV": 27700,
+    "Category V": 25630
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-22",
+   "dateTo": "2028-12-29",
+   "season": null,
+   "itinerary": "7-night East Galápagos Expedition",
+   "direction": "Baltra to Santa Cruz (Puerto Ayora)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 40300,
+    "Category II": 20410,
+    "Category III": 18440,
+    "Category IV": 16040,
+    "Category V": 14830
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-22",
+   "dateTo": "2029-01-05",
+   "season": null,
+   "itinerary": "14-night East and West Galápagos Expedition",
+   "direction": "Baltra round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 76570,
+    "Category II": 38780,
+    "Category III": 35030,
+    "Category IV": 30480,
+    "Category V": 28200
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-29",
+   "dateTo": "2029-01-05",
+   "season": null,
+   "itinerary": "7-night West Galápagos Expedition",
+   "direction": "Santa Cruz (Puerto Ayora) to Baltra",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 40300,
+    "Category II": 20410,
+    "Category III": 18440,
+    "Category IV": 16040,
+    "Category V": 14830
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  },
+  {
+   "date": "2028-12-29",
+   "dateTo": "2029-01-12",
+   "season": null,
+   "itinerary": "14-night West and East Galápagos Expedition, Santa Cruz (Puerto Ayora) round trip",
+   "direction": "Santa Cruz (Puerto Ayora) round trip",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Owner's Suite": 76570,
+    "Category II": 38780,
+    "Category III": 35030,
+    "Category IV": 30480,
+    "Category V": 28200
+   },
+   "cabinsLeft": {
+    "Owner's Suite": 1,
+    "Category III": 2,
+    "Category IV": 2,
+    "Category V": 1,
+    "Category II": 1
+   }
+  }
+ ],
+ "pricesNote": "Per person, cruise only, in US dollars, as Aqua Expeditions lists each departure in its booking system (read 13 Nov 2026), before any offer. Where a category shows no fare it is sold out or not sold on that date. Aqua's Early Bird, returning-guest and loyalty savings are applied when booking, so the fare you pay can be lower; we confirm it with Aqua before you commit. Galápagos National Park entrance and transit card fees and flights to the islands are not in Aqua's fares.",
+ "inclusions": [
+  "All meals on board",
+  "Selected house wines and beer, and non-alcoholic drinks (premium beers and spirits in the Owner's Suite)",
+  "Twice-daily excursions with naturalist guides",
+  "Group transfers on Aqua's recommended flights",
+  "Kayaks, paddleboards, snorkel gear and wetsuits",
+  "Laundry",
+  "Starlink internet"
+ ],
+ "exclusions": [
+  "Flights to the Galápagos",
+  "Galápagos National Park entrance fee and transit card"
+ ],
+ "children": "",
+ "faqs": [
+  [
+   "How much does Aqua Mare cost?",
+   "Aqua lists seven nights from about US$11,900 per person in a Category V cabin to about US$32,000 and up in the Owner's Suite, by date. Every departure is in the table on this page."
+  ],
+  [
+   "Which Galápagos islands does Aqua Mare visit?",
+   "The east route takes in Genovesa, Santiago, Bartolomé, Santa Cruz, Española, Santa Fé and South Plaza; the west route Floreana, Isabela, Fernandina, Santiago, Rábida and North Seymour. Fourteen nights does both."
+  ],
+  [
+   "How many guests are on Aqua Mare?",
+   "Sixteen, in seven cabins, with two naturalist guides: eight guests to a guide."
+  ],
+  [
+   "Can we charter Aqua Mare?",
+   "Yes. Aqua offers her as a private charter on her 7 and 14 night routes or one made for you; ask us."
+  ],
+  [
+   "Is it a good Galápagos yacht for families?",
+   "Yes for families who want a whole small ship: the Owner's Suite takes four. Ask us about children's ages."
+  ],
+  [
+   "What is not included?",
+   "Flights to the islands and the national park fees."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples",
+   "line": "Sixteen guests, a jacuzzi, and naturalists who know every trail."
+  },
+  {
+   "who": "Families and friends",
+   "line": "Take the whole yacht for 16."
+  },
+  {
+   "who": "Divers and snorkellers",
+   "line": "Twice-daily landings and snorkels from the Beach Club."
+  }
+ ],
+ "sources": [
+  "https://www.aquaexpeditions.com/cruise-ships/aqua-mare",
+  "https://www.aquaexpeditions.com/destinations/galapagos-cruise",
+  "https://www.aquaexpeditions.com/about-us",
+  "https://book.aquaexpeditions.com (departures and fares)"
+ ],
+ "film": {
+  "id": "m3XcuaK8GjY",
+  "title": "Sail the Galápagos Islands on Aqua Mare"
+ },
+ "glance": {
+  "route": "Baltra and Santa Cruz",
+  "guests": "16"
+ }
+}

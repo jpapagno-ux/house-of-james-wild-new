@@ -19,7 +19,7 @@ old path,new path,why,old title
 /book/anantara-golden-triangle-elephant-camp-resort,/stays/anantara-golden-triangle-chiang-rai,booking page -> stay page,Book your stay at Anantara Golden Triangle Elephant Camp &amp; Resort | Wild Earth Stays
 /book/anantara-mui-ne,/stays/anantara-mui-ne,booking page -> stay page,Book your stay at Anantara Mui Ne | Wild Earth Stays
 /book/angama-mara,/stays/angama-mara,booking page -> stay page,Book your stay at Angama Mara | Wild Earth Stays
-/book/aqua-expeditons,/destinations/south-america/peru,booking page -> not on the new site yet; country page,Book your stay at Aqua Expeditons | Wild Earth Stays
+/book/aqua-expeditons,/partners/aqua-expeditions,booking page -> operator record retired into its partner page,Book your stay at Aqua Expeditons | Wild Earth Stays
 /book/arenal-amor,/stays/amor-arenal,booking page -> stay page,Book your stay at Amor Arenal | Wild Earth Stays
 /book/arenal-springs-camp-by-nayara,/stays/arenal-springs-camp-by-nayara,booking page -> stay page,Book your stay at Arenal Springs Camp by Nayara | Wild Earth Stays
 /book/arenas-del-mar-resort,/stays/arenas-del-mar-resort,booking page -> stay page,Book your stay at Arenas Del Mar Resort | Wild Earth Stays
@@ -453,8 +453,8 @@ old path,new path,why,old title
 /property/anantara-maia-seychelles-villas,/destinations/africa/seychelles,not on the new site yet; country page,Maia seychelles villas by Anantara | Luxury Stays in Seychelles | Wild Earth Stays
 /property/anantara-mui-ne,/stays/anantara-mui-ne,stay page,Anantara Mui Ne | Luxury Stays in Vietnam | Wild Earth Stays
 /property/angama-mara,/stays/angama-mara,stay page,Angama Mara | Luxury Stays in Kenya | Wild Earth Stays
-/property/antarctica-21-cruise-2,/destinations/polar-antarctica,not on the new site yet; region page (antarctica-cruises country page not built yet),Antarctica 21 Cruise | Luxury Stays in Antarctica Cruises | Wild Earth Stays
-/property/aqua-expeditons,/destinations/south-america/peru,not on the new site yet; country page,Aqua Expeditons | Luxury Stays in Peru | Wild Earth Stays
+/property/antarctica-21-cruise-2,/partners/antarctica21,operator record retired into its partner page,Antarctica 21 Cruise | Luxury Stays in Antarctica Cruises | Wild Earth Stays
+/property/aqua-expeditons,/partners/aqua-expeditions,operator record retired into its partner page,Aqua Expeditons | Luxury Stays in Peru | Wild Earth Stays
 /property/arenal-springs-camp-by-nayara,/stays/arenal-springs-camp-by-nayara,stay page,Arenal Springs Camp by Nayara | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/arenas-del-mar-resort,/stays/arenas-del-mar-resort,stay page,Arenas Del Mar Resort | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/ariel-house,/stays/ariel-house,stay page,Ariel House | Luxury Stays in Ireland | Wild Earth Stays

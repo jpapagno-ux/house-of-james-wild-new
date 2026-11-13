@@ -3,6 +3,7 @@ import type { ShipDeparture, ShipRecord } from "../types";
 import { launchSafe, statusOf } from "../status";
 import AmazonExplorer from "./beyond-amazon-explorer.json";
 import AriaAmazon from "./aria-amazon.json";
+import AquaNera from "./aqua-nera.json";
 import DelfinIii from "./delfin-iii.json";
 import Anakonda from "./anakonda-amazon-cruise.json";
 import MvPremium from "./amazon-clipper-premium.json";
@@ -35,6 +36,8 @@ const live = (x: unknown) => settled(withActiveDepartures(x as ShipRecord));
 export const AMAZON_SHIPS: { data: ShipRecord; offerRefs: string[]; credit: string }[] = [
   { data: live(AmazonExplorer), offerRefs: [], credit: "andBeyond" },
   { data: live(AriaAmazon), offerRefs: ["aria-amazon"], credit: "Aqua Expeditions" },
+  // Aqua Nera and Aria Amazon's routes and fares: scripts/partners/aqua-build.mjs (Aqua's booking data, 13 Nov 2026).
+  { data: live(AquaNera), offerRefs: [], credit: "Aqua Expeditions" },
   { data: lowestOnly(live(DelfinIii)), offerRefs: [], credit: "Delfín Amazon Cruises" },
   { data: live(Anakonda), offerRefs: [], credit: "Anakonda Amazon Cruises" },
   { data: live(MvPremium), offerRefs: [], credit: "Amazon Clipper" },

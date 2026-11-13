@@ -1,0 +1,133 @@
+{
+ "id": "aqua-lares-troms-to-longyearbyen-5n",
+ "type": "voyage",
+ "destination": "arctic",
+ "title": "5-night Tromsø, Bear Island and Svalbard aboard Aqua Lares",
+ "subtitle": "5 nights · Tromsø to Longyearbyen · Aqua Lares",
+ "days": {
+  "1": "Tromsø",
+  "2": "Bleik",
+  "3": "Bear Island",
+  "4": "Hornsund",
+  "5": "Calypsobyen",
+  "6": "Longyearbyen"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Tromsø",
+   "lat": 69.6492,
+   "lng": 18.9553,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Bleik",
+   "lat": 69.27,
+   "lng": 15.96,
+   "mode": "sea",
+   "path": [
+    [
+     18.9553,
+     69.6492
+    ],
+    [
+     15.96,
+     69.27
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Bear Island",
+   "lat": 74.45,
+   "lng": 19.05,
+   "mode": "sea",
+   "path": [
+    [
+     15.96,
+     69.27
+    ],
+    [
+     19.05,
+     74.45
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Sørkapp & Gnalodden, Hornsund",
+   "lat": 77,
+   "lng": 15.6,
+   "mode": "sea",
+   "path": [
+    [
+     19.05,
+     74.45
+    ],
+    [
+     15.6,
+     77
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Calypsobyen, Bellsund",
+   "lat": 77.57,
+   "lng": 14.5,
+   "mode": "sea",
+   "path": [
+    [
+     15.6,
+     77
+    ],
+    [
+     14.5,
+     77.57
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Longyearbyen",
+   "lat": 78.2232,
+   "lng": 15.6267,
+   "mode": "sea",
+   "path": [
+    [
+     14.5,
+     77.57
+    ],
+    [
+     15.6267,
+     78.2232
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Arctic Ocean",
+    "lat": 79.5,
+    "lng": 8.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Svalbard",
+    "lat": 78.6,
+    "lng": 17.0,
+    "kind": "region"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 68.0,
+    "lng": 6.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,0 +1,109 @@
+{
+ "id": "aria-amazon-nauta-round-trip-high-water-4n",
+ "type": "voyage",
+ "destination": "amazon",
+ "title": "4-night Explorer Cruise, Nauta round trip, high water aboard Aria Amazon",
+ "subtitle": "4 nights · Nauta round trip · Aria Amazon",
+ "days": {
+  "1": "Nauta",
+  "2": "Dorado Lake",
+  "3": "Zapote River",
+  "4": "Yarapa River",
+  "5": "Manatee Rescue Centre"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Iquitos, Nauta, Marañon River",
+   "lat": -4.5076,
+   "lng": -73.5781,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Ucayali River, Yanallpa Creek, Dorado Lake",
+   "lat": -4.85,
+   "lng": -73.85,
+   "mode": "sea",
+   "path": [
+    [
+     -73.5781,
+     -4.5076
+    ],
+    [
+     -73.85,
+     -4.85
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Ucayali River, Puinahua River, Zapote River",
+   "lat": -5,
+   "lng": -74,
+   "mode": "sea",
+   "path": [
+    [
+     -73.85,
+     -4.85
+    ],
+    [
+     -74,
+     -5
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Clavero Lake, Ucayali River, Yarapa River",
+   "lat": -4.42,
+   "lng": -73.48,
+   "mode": "sea",
+   "path": [
+    [
+     -74,
+     -5
+    ],
+    [
+     -73.48,
+     -4.42
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Nauta Town, Manatee Rescue Centre, Transfer to the Airport",
+   "lat": -3.8,
+   "lng": -73.3,
+   "mode": "sea",
+   "path": [
+    [
+     -73.48,
+     -4.42
+    ],
+    [
+     -73.3,
+     -3.8
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "River course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Amazon",
+    "lat": -4.35,
+    "lng": -73.3,
+    "kind": "sea"
+   },
+   {
+    "text": "Pacaya-Samiria",
+    "lat": -4.9,
+    "lng": -74.2,
+    "kind": "region"
+   }
+  ]
+ }
+}

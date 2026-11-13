@@ -1,0 +1,269 @@
+{
+ "id": "aqua-mare-baltra-to-santa-cruz-puerto-ayora-7n",
+ "type": "voyage",
+ "destination": "galapagos",
+ "title": "7-night East Galápagos Expedition aboard Aqua Mare",
+ "subtitle": "7 nights · Baltra to Santa Cruz · Aqua Mare",
+ "days": {
+  "1": "at Baltra Island",
+  "2": "Genovesa Island",
+  "3": "Sombrero Chino Island",
+  "4": "Cerro Dragón",
+  "5": "Fausto Llerena Breeding Center",
+  "6": "Bahía Gardner",
+  "7": "Plaza Sur Island",
+  "8": "Los Gemelos"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "at Baltra Island and Bahia Borrero",
+   "lat": -0.434,
+   "lng": -90.2604,
+   "kind": "port",
+   "charted": [
+    -90.27,
+    -0.44
+   ]
+  },
+  {
+   "day": 2,
+   "name": "El Barranco and Bahía Darwin, Genovesa Island",
+   "lat": -0.31,
+   "lng": -89.96,
+   "mode": "sea",
+   "path": [
+    [
+     -90.2604,
+     -0.434
+    ],
+    [
+     -89.96,
+     -0.31
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Bahía Sullivan, Santiago Island and Sombrero Chino Island",
+   "lat": -0.37,
+   "lng": -90.58,
+   "mode": "sea",
+   "path": [
+    [
+     -89.96,
+     -0.31
+    ],
+    [
+     -90.58,
+     -0.37
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Bartolomé Island and Cerro Dragón, Santa Cruz Island",
+   "lat": -0.5268,
+   "lng": -90.492,
+   "mode": "sea",
+   "path": [
+    [
+     -90.58,
+     -0.37
+    ],
+    [
+     -90.492,
+     -0.5268
+    ]
+   ],
+   "charted": [
+    -90.48,
+    -0.54
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Manzanillo Giant Tortoise Reserve and Fausto Llerena Breeding Center, Santa Cruz Island",
+   "lat": -0.7433,
+   "lng": -90.3033,
+   "mode": "sea",
+   "path": [
+    [
+     -90.492,
+     -0.5268
+    ],
+    [
+     -90.5044,
+     -0.5221
+    ],
+    [
+     -90.5133,
+     -0.5221
+    ],
+    [
+     -90.5178,
+     -0.5243
+    ],
+    [
+     -90.5313,
+     -0.5378
+    ],
+    [
+     -90.547,
+     -0.567
+    ],
+    [
+     -90.5627,
+     -0.6321
+    ],
+    [
+     -90.5538,
+     -0.6838
+    ],
+    [
+     -90.5448,
+     -0.7018
+    ],
+    [
+     -90.5178,
+     -0.7287
+    ],
+    [
+     -90.4123,
+     -0.7804
+    ],
+    [
+     -90.3943,
+     -0.7871
+    ],
+    [
+     -90.3269,
+     -0.7871
+    ],
+    [
+     -90.309,
+     -0.7781
+    ],
+    [
+     -90.2977,
+     -0.7669
+    ],
+    [
+     -90.2955,
+     -0.7601
+    ],
+    [
+     -90.3033,
+     -0.7433
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.99
+  },
+  {
+   "day": 6,
+   "name": "Punta Suárez, Bahía Gardner, and Islote Osborn, Española Island",
+   "lat": -1.35,
+   "lng": -89.65,
+   "mode": "sea",
+   "path": [
+    [
+     -90.3033,
+     -0.7433
+    ],
+    [
+     -89.65,
+     -1.35
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Sante Fé Island and Plaza Sur Island",
+   "lat": -0.58,
+   "lng": -90.16,
+   "mode": "sea",
+   "path": [
+    [
+     -89.65,
+     -1.35
+    ],
+    [
+     -90.16,
+     -0.58
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Los Gemelos, Santa Cruz Island and Disembarkation",
+   "lat": -0.5122,
+   "lng": -90.3656,
+   "mode": "sea",
+   "path": [
+    [
+     -90.16,
+     -0.58
+    ],
+    [
+     -90.1668,
+     -0.5632
+    ],
+    [
+     -90.2702,
+     -0.3902
+    ],
+    [
+     -90.2746,
+     -0.3857
+    ],
+    [
+     -90.2904,
+     -0.3835
+    ],
+    [
+     -90.2949,
+     -0.3857
+    ],
+    [
+     -90.3398,
+     -0.4351
+    ],
+    [
+     -90.3712,
+     -0.498
+    ],
+    [
+     -90.3712,
+     -0.5048
+    ],
+    [
+     -90.369,
+     -0.507
+    ],
+    [
+     -90.3656,
+     -0.5122
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -90.38,
+    -0.62
+   ],
+   "lane": "sea",
+   "clear": 0.47
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Pacific Ocean",
+    "lat": -1.3,
+    "lng": -91.6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

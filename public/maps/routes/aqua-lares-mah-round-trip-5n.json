@@ -1,0 +1,127 @@
+{
+ "id": "aqua-lares-mah-round-trip-5n",
+ "type": "voyage",
+ "destination": "seychelles",
+ "title": "5-night La Digue and Seychelles' Inner Islands aboard Aqua Lares",
+ "subtitle": "5 nights · Mahé round trip · Aqua Lares",
+ "days": {
+  "1": "Beau Vallon Bay",
+  "2": "North Islands",
+  "3": "Grande Soeur",
+  "4": "Curieuse",
+  "5": "Praslin",
+  "6": "L'Escale Marina (Mahe)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "L'Escale Marina (Mahe) & Beau Vallon Bay",
+   "lat": -4.61,
+   "lng": 55.43,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Silhouette & North Islands",
+   "lat": -4.39,
+   "lng": 55.24,
+   "mode": "sea",
+   "path": [
+    [
+     55.43,
+     -4.61
+    ],
+    [
+     55.24,
+     -4.39
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Grande Soeur & Marianne Island",
+   "lat": -4.28,
+   "lng": 55.87,
+   "mode": "sea",
+   "path": [
+    [
+     55.24,
+     -4.39
+    ],
+    [
+     55.87,
+     -4.28
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "La Digue & Curieuse",
+   "lat": -4.28,
+   "lng": 55.73,
+   "mode": "sea",
+   "path": [
+    [
+     55.87,
+     -4.28
+    ],
+    [
+     55.73,
+     -4.28
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Aride & Praslin",
+   "lat": -4.32,
+   "lng": 55.73,
+   "mode": "sea",
+   "path": [
+    [
+     55.73,
+     -4.28
+    ],
+    [
+     55.73,
+     -4.32
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "L'Escale Marina (Mahe)",
+   "lat": -4.63,
+   "lng": 55.45,
+   "mode": "sea",
+   "path": [
+    [
+     55.73,
+     -4.32
+    ],
+    [
+     55.45,
+     -4.63
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Indian Ocean",
+    "lat": -6.5,
+    "lng": 50.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Seychelles",
+    "lat": -4.6,
+    "lng": 55.6,
+    "kind": "region"
+   }
+  ]
+ }
+}

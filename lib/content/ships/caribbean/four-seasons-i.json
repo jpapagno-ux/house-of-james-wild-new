@@ -1,0 +1,1606 @@
+{
+  "slug": "four-seasons-i",
+  "name": "Four Seasons I",
+  "ledgerId": "VSL-2026-000051",
+  "brandLine": "Four Seasons Yachts' first yacht: 95 suites in the Mediterranean, the Caribbean and the Bahamas",
+  "operator": "Four Seasons Yachts",
+  "type": "yacht",
+  "waters": "The Caribbean and the Bahamas in winter, the Mediterranean in summer",
+  "country": "The Caribbean, the Bahamas and the Mediterranean",
+  "status": "sailing",
+  "launch": "2026-03-20",
+  "seo": {
+    "title": "Four Seasons I: Suites, Sailings and Fares on Four Seasons Yachts' First Yacht | James Wild & Co",
+    "description": "Four Seasons I carries up to 222 guests in 95 suites, a 207-metre yacht sailing the Mediterranean in summer and the Caribbean and Bahamas in winter. All 14 suite types, 101 published sailings to August 2028 and fares from US$12,200 per suite.",
+    "keywords": [
+      "Four Seasons I",
+      "Four Seasons Yachts",
+      "Four Seasons yacht suites",
+      "Four Seasons I sailings",
+      "Four Seasons yacht fares",
+      "luxury yacht cruises",
+      "Four Seasons I Mediterranean",
+      "Four Seasons I Caribbean",
+      "Funnel Suite",
+      "Loft Suite"
+    ]
+  },
+  "tagline": "Ninety-five suites, each with its own terrace, and a marina that opens onto the sea.",
+  "answer": "Four Seasons I is the first yacht from Four Seasons Yachts, in service since 20 March 2026. She is 207 metres (679 feet) long, with 95 suites on 15 decks for up to 222 guests and a guest-to-staff ratio of one to one. She sails the Mediterranean in summer and the Caribbean and the Bahamas in winter, on voyages of 3 to 18 nights. Fares are published per suite for the whole voyage, in US dollars, from US$12,200.",
+  "facts": [
+    [
+      "Guests",
+      "Up to 222"
+    ],
+    [
+      "Suites",
+      "95, in 14 types, each with a terrace"
+    ],
+    [
+      "Guest to staff",
+      "1 to 1"
+    ],
+    [
+      "Length",
+      "207 m (679 ft)"
+    ],
+    [
+      "Gross tonnage",
+      "34,000"
+    ],
+    [
+      "Decks",
+      "15"
+    ],
+    [
+      "In service",
+      "20 March 2026"
+    ],
+    [
+      "Waters",
+      "Mediterranean in summer; Caribbean and Bahamas in winter"
+    ],
+    [
+      "Voyages",
+      "3 to 18 nights"
+    ],
+    [
+      "Fares",
+      "Per suite, for the voyage, in USD"
+    ]
+  ],
+  "glance": {
+    "guests": "Up to 222",
+    "nights": "3 to 18 nights",
+    "route": "Mediterranean, Caribbean and Bahamas"
+  },
+  "overview": [
+    "Four Seasons I entered service on 20 March 2026, the first of the yachts Four Seasons is building. She is 207 metres long and 34,000 gross tons, and carries no more than 222 guests in 95 suites, with one member of staff for every guest.",
+    "Every suite has a terrace. They run from the 44 square metre Seaview Suite to the Funnel Suite, 501 square metres on four levels, with its own splash pool, gym and kitchen. More than 100 combinations of suites connect, so a family or a party of friends can take a run of rooms together; the Loft Suite joins with up to seven others for as many as 20 guests.",
+    "On deck there is an outdoor pool, and at the waterline a transverse marina that opens on both sides of the yacht for swimming and watersports. She spends the summer in the Mediterranean, from the Greek islands and the Adriatic to the Rivieras, crosses the Atlantic in spring and autumn, and winters in the Lesser Antilles and the Bahamas.",
+    "Four Seasons Yachts prices each voyage by the suite, not by the person. The fare covers the suite, breakfast, Wi-Fi, the marina's watersports and taxes and port fees; lunch, dinner and alcoholic drinks are charged as taken."
+  ],
+  "why": [
+    "A terrace on every suite, and 14 suite types from 44 to 501 square metres.",
+    "One member of staff for every guest, and never more than 222 guests.",
+    "A marina at the waterline that opens on both sides of the yacht.",
+    "More than 100 ways to connect suites for a family or a group.",
+    "Short voyages: many sailings are 4, 5 or 7 nights, and they join end to end."
+  ],
+  "hero": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/hero",
+    "alt": "Rendering of Four Seasons I, a white multi-deck yacht, anchored in turquoise water off a palm-fringed shore",
+    "credit": "Rendering courtesy of Four Seasons Yachts"
+  },
+  "gallery": [
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/pool",
+      "alt": "Rendering of the pool deck on Four Seasons I, loungers and parasols either side of a long pool",
+      "credit": "Rendering courtesy of Four Seasons Yachts"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/marina",
+      "alt": "Rendering of the marina on Four Seasons I, cushioned loungers on a teak platform below a staircase",
+      "credit": "Rendering courtesy of Four Seasons Yachts"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/night",
+      "alt": "Rendering of Four Seasons I lit at night on a calm sea under a full moon",
+      "credit": "Rendering courtesy of Four Seasons Yachts"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-loft-terrace",
+      "alt": "Rendering of the Loft Suite's upper terrace, a curved daybed outside the glass-walled bedroom",
+      "credit": "Rendering courtesy of Four Seasons Yachts"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-funnel-bedroom",
+      "alt": "Rendering of the Funnel Suite bedroom, a king bed and two chaises under curved glass",
+      "credit": "Rendering courtesy of Four Seasons Yachts"
+    }
+  ],
+  "cabins": [
+    {
+      "type": "Seaview Suite",
+      "size": "44 sq m (473 sq ft), terrace 6 to 13 sq m (64 to 140 sq ft)",
+      "beds": "One king bed; two adults and an infant",
+      "features": [
+        "One bedroom, one bathroom",
+        "Marble bathroom with double vanity and walk-in shower",
+        "Private terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-seaview",
+        "alt": "Rendering of a Seaview Suite bedroom, a king bed, a curved sofa and pale wood walls",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Seaview Suite with Studio",
+      "size": "44 sq m (473 sq ft) plus a 12 sq m (129 sq ft) studio, terrace 6 to 13 sq m",
+      "beds": "One king bed, and a twin pullman bunk in the studio; four adults, or two adults, two children and an infant",
+      "features": [
+        "One bedroom and a studio, two bathrooms",
+        "The studio sleeps children or a second pair of guests",
+        "Private terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-studio",
+        "alt": "Rendering of the studio beside a suite, a single bed set in a pale wood alcove with a desk",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Seaview Mid Suite",
+      "size": "44 sq m (473 sq ft), terrace 6 to 13 sq m (64 to 140 sq ft)",
+      "beds": "One king bed; two adults and an infant",
+      "features": [
+        "One bedroom, one bathroom",
+        "Midships, at the centre of the yacht",
+        "Private terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-seaview-terrace",
+        "alt": "Rendering of a Seaview Suite seen from its terrace at dusk, the bedroom lit behind sliding glass doors",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Superior Seaview Suite",
+      "size": "66 sq m (710 sq ft), terrace 9 to 17 sq m (97 to 183 sq ft)",
+      "beds": "One king bed that divides into two singles; two adults and an infant or a child of 12 or under",
+      "features": [
+        "One bedroom, one bathroom with a soaking tub",
+        "Dining table for two",
+        "Private terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-superior-seaview",
+        "alt": "Rendering of a Superior Seaview Suite with two single beds, a desk and bookshelves in pale wood",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Ocean Suite",
+      "count": 15,
+      "size": "71 sq m (764 sq ft), terrace 12 to 23 sq m (129 to 247 sq ft)",
+      "beds": "One king bed and a sofa bed; three adults, or two adults, two children and an infant",
+      "deck": "Decks 6 to 10",
+      "features": [
+        "One bedroom, one bathroom with a soaking tub",
+        "Separate living room with a dining table for two",
+        "Private terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-ocean",
+        "alt": "Rendering of an Ocean Suite living room, a curved white sofa, armchairs and a dining table",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Ocean Suite with Studio",
+      "size": "71 sq m (764 sq ft) plus a 12 sq m (129 sq ft) studio, terrace 12 to 23 sq m",
+      "beds": "One king bed, a sofa bed and a twin pullman bunk in the studio; five adults, or four adults and two children",
+      "features": [
+        "One bedroom and a studio, two bathrooms",
+        "Separate living room",
+        "Private terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-ocean-terrace",
+        "alt": "Rendering of an Ocean Suite terrace with cushioned loungers and a sofa above the sea",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Grand Ocean Mid Suite",
+      "size": "76 sq m (818 sq ft), terrace 18 to 30 sq m (194 to 322 sq ft)",
+      "beds": "One king bed and a sofa bed; three adults, or two adults, two children and an infant",
+      "features": [
+        "One bedroom, two bathrooms",
+        "L-shaped living and dining room",
+        "Private terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-grand-ocean",
+        "alt": "Rendering of a Grand Ocean Suite living room with a sofa, two armchairs and a dining table for four",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Saint Barths Suite",
+      "size": "147 sq m (1,582 sq ft), terrace 130 sq m (1,399 sq ft)",
+      "beds": "Two king beds; four adults and an infant or child",
+      "deck": "Deck 8",
+      "features": [
+        "Two bedrooms, two bathrooms and a powder room",
+        "Private splash pool on a forward-facing terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-signature-bedroom",
+        "alt": "Rendering of a forward suite bedroom, a king bed facing curved floor-to-ceiling windows and the terrace",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Milos Suite",
+      "size": "152 sq m (1,636 sq ft), terrace 141 sq m (1,517 sq ft)",
+      "beds": "Two king beds; four adults and an infant or child",
+      "deck": "Deck 10",
+      "features": [
+        "Two bedrooms, two bathrooms and a powder room",
+        "Private splash pool on a forward-facing terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-signature-living",
+        "alt": "Rendering of a forward suite living room, white sofas and a dining table by glass doors to the terrace",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Saint-Tropez Suite",
+      "size": "162 sq m (1,743 sq ft), terrace 229 sq m (2,464 sq ft)",
+      "beds": "Two king beds; four adults and an infant or child",
+      "deck": "Deck 7",
+      "features": [
+        "Two bedrooms, two bathrooms and a powder room",
+        "Private splash pool on the terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-aft-bedroom",
+        "alt": "Rendering of an aft suite bedroom, a king bed beside sliding glass doors to the terrace",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Málaga Suite",
+      "size": "191 sq m (2,055 sq ft), terrace 157 sq m (1,689 sq ft)",
+      "beds": "Two king beds and two singles; six adults and an infant or child",
+      "deck": "Deck 7",
+      "features": [
+        "Three bedrooms, three bathrooms and a powder room",
+        "Private splash pool and outdoor dining for six, forward-facing",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-signature-terrace",
+        "alt": "Rendering of a forward suite terrace with a dining table and steps up to a raised splash pool",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Portofino Suite",
+      "size": "199 sq m (2,142 sq ft), terrace 193 sq m (2,077 sq ft)",
+      "beds": "Two king beds and one single; six adults and an infant or child",
+      "deck": "Deck 8",
+      "features": [
+        "Three bedrooms, three bathrooms and a powder room",
+        "Private splash pool on an aft-facing terrace",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-aft-terrace",
+        "alt": "Rendering of an aft suite terrace, a splash pool in front of outdoor sofas and a dining table",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Loft Suite",
+      "count": 1,
+      "size": "331 sq m (3,562 sq ft), terrace 408 sq m (4,390 sq ft)",
+      "beds": "Three king beds; six adults and an infant or child",
+      "deck": "Decks 9 and 10",
+      "features": [
+        "Three bedrooms, three bathrooms and a powder room, on two levels",
+        "Private splash pool, sauna and steam room",
+        "Joins with up to seven suites for as many as 20 guests",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-loft",
+        "alt": "Rendering of the Loft Suite living room, double-height windows over sofas and armchairs",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    },
+    {
+      "type": "Funnel Suite",
+      "count": 1,
+      "size": "501 sq m (5,393 sq ft), terrace 421 sq m (4,532 sq ft)",
+      "beds": "Two king beds and one single; five adults and an infant or child",
+      "deck": "Decks 11, 12, 14 and 15",
+      "features": [
+        "Three bedrooms, four bathrooms and three powder rooms, on four levels",
+        "Private splash pool, indoor and outdoor gym, steam room",
+        "Personal kitchen",
+        "Twice-daily housekeeping",
+        "24-hour concierge and in-suite dining",
+        "Walk-in closet"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/four-seasons-i/suite-funnel",
+        "alt": "Rendering of the Funnel Suite terrace at night, a splash pool and loungers below the glass funnel",
+        "credit": "Rendering courtesy of Four Seasons Yachts"
+      }
+    }
+  ],
+  "deckPlans": [],
+  "itineraries": [],
+  "routesNote": "Four Seasons Yachts publishes a day by day for each of her voyages. They are not charted here yet: ask us for the ports and days of any sailing below.",
+  "departures": [
+    {
+      "date": "2026-11-16",
+      "dateTo": "2026-11-19",
+      "itinerary": "Lesser Antilles featuring St Barths & Antigua",
+      "direction": "Philipsburg to Saint John's",
+      "nights": 3,
+      "status": null,
+      "prices": {
+        "From, per suite": 12200
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "dateTo": "2026-11-29",
+      "itinerary": "Lesser Antilles featuring Tobago & Grenada (Festive)",
+      "direction": "Saint John's round trip",
+      "nights": 10,
+      "status": null,
+      "prices": {
+        "From, per suite": 32000
+      }
+    },
+    {
+      "date": "2026-12-06",
+      "dateTo": "2026-12-13",
+      "itinerary": "Lesser Antilles featuring St Barths & Martinique",
+      "direction": "Castries to Philipsburg",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 23025
+      }
+    },
+    {
+      "date": "2026-12-06",
+      "dateTo": "2026-12-20",
+      "itinerary": "Grand Caribbean featuring St Lucia & Anguilla (back-to-back)",
+      "direction": "Castries to Miami",
+      "nights": 14,
+      "status": null,
+      "prices": {
+        "From, per suite": 35900
+      }
+    },
+    {
+      "date": "2026-12-13",
+      "dateTo": "2026-12-20",
+      "itinerary": "Grand Caribbean featuring Anguilla & Antigua",
+      "direction": "Philipsburg to Miami",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 21800
+      }
+    },
+    {
+      "date": "2026-12-20",
+      "dateTo": "2026-12-27",
+      "itinerary": "Grand Caribbean featuring St Barths & Marie-Galante (Festive)",
+      "direction": "Miami to Philipsburg",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 57500
+      }
+    },
+    {
+      "date": "2026-12-27",
+      "dateTo": "2027-01-03",
+      "itinerary": "Grand Caribbean featuring Nevis & Exuma Sound (Festive)",
+      "direction": "Philipsburg to Miami",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 55000
+      }
+    },
+    {
+      "date": "2027-01-03",
+      "dateTo": "2027-01-08",
+      "itinerary": "Bahamas featuring Exuma Sound",
+      "direction": "Miami round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21100
+      }
+    },
+    {
+      "date": "2027-01-08",
+      "dateTo": "2027-01-13",
+      "itinerary": "Bahamas featuring Exuma Sound",
+      "direction": "Miami round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 18121
+      }
+    },
+    {
+      "date": "2027-01-13",
+      "dateTo": "2027-01-18",
+      "itinerary": "Bahamas featuring Exuma Sound",
+      "direction": "Miami round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 18700
+      }
+    },
+    {
+      "date": "2027-01-13",
+      "itinerary": "Grand Caribbean featuring Nevis & Dominica",
+      "direction": "Miami to Castries",
+      "nights": 18,
+      "status": null,
+      "prices": {
+        "From, per suite": 37400
+      }
+    },
+    {
+      "date": "2027-01-18",
+      "dateTo": "2027-01-31",
+      "itinerary": "Grand Caribbean featuring Tobago & Dominica (Chef-in-Residence)",
+      "direction": "Miami to Castries",
+      "nights": 13,
+      "status": null,
+      "prices": {
+        "From, per suite": 33700
+      }
+    },
+    {
+      "date": "2027-01-31",
+      "dateTo": "2027-02-07",
+      "itinerary": "Lesser Antilles featuring Guadeloupe & Nevis (Chef-in-Residence)",
+      "direction": "Castries to Philipsburg",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 22300
+      }
+    },
+    {
+      "date": "2027-01-31",
+      "dateTo": "2027-02-14",
+      "itinerary": "Lesser Antilles featuring Barbuda & the Grenadines (back-to-back)",
+      "direction": "Castries to Philipsburg",
+      "nights": 14,
+      "status": null,
+      "prices": {
+        "From, per suite": 35200
+      }
+    },
+    {
+      "date": "2027-02-07",
+      "dateTo": "2027-02-14",
+      "itinerary": "Lesser Antilles featuring St Lucia & Martinique",
+      "direction": "Philipsburg round trip",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 22600
+      }
+    },
+    {
+      "date": "2027-02-14",
+      "dateTo": "2027-02-21",
+      "itinerary": "Lesser Antilles featuring the Grenadines & Dominica",
+      "direction": "Philipsburg round trip",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 23500
+      }
+    },
+    {
+      "date": "2027-02-14",
+      "dateTo": "2027-02-28",
+      "itinerary": "Lesser Antilles featuring Dominica & Martinique (back-to-back)",
+      "direction": "Philipsburg round trip",
+      "nights": 14,
+      "status": null,
+      "prices": {
+        "From, per suite": 37100
+      }
+    },
+    {
+      "date": "2027-02-21",
+      "dateTo": "2027-02-28",
+      "itinerary": "Lesser Antilles featuring Guadeloupe & Anguilla (Chef-in-Residence)",
+      "direction": "Philipsburg round trip",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 20800
+      }
+    },
+    {
+      "date": "2027-02-28",
+      "dateTo": "2027-03-07",
+      "itinerary": "Lesser Antilles featuring St Lucia & Martinique",
+      "direction": "Philipsburg round trip",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 20700
+      }
+    },
+    {
+      "date": "2027-03-07",
+      "dateTo": "2027-03-14",
+      "itinerary": "Lesser Antilles featuring the Grenadines & Dominica",
+      "direction": "Philipsburg round trip",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 20900
+      }
+    },
+    {
+      "date": "2027-03-14",
+      "dateTo": "2027-03-22",
+      "itinerary": "The Lanserhof Reset: A Transatlantic Longevity Voyage",
+      "direction": "Philipsburg to Las Palmas",
+      "nights": 8,
+      "status": null,
+      "prices": {
+        "From, per suite": 17900
+      }
+    },
+    {
+      "date": "2027-03-22",
+      "dateTo": "2027-03-31",
+      "itinerary": "Grand Mediterranean featuring Casablanca & Sevilla",
+      "direction": "Las Palmas to Lisbon",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 30600
+      }
+    },
+    {
+      "date": "2027-03-31",
+      "dateTo": "2027-04-11",
+      "itinerary": "The Rivieras featuring Valencia & Malta",
+      "direction": "Lisbon to Valletta",
+      "nights": 11,
+      "status": null,
+      "prices": {
+        "From, per suite": 36300
+      }
+    },
+    {
+      "date": "2027-04-11",
+      "dateTo": "2027-04-18",
+      "itinerary": "Greek Isles featuring Santorini & Çeşme",
+      "direction": "Valletta to Athens",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 25600
+      }
+    },
+    {
+      "date": "2027-04-18",
+      "dateTo": "2027-04-25",
+      "itinerary": "Grand Mediterranean featuring Alexandria & Bodrum",
+      "direction": "Athens to Alexandria",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 31800
+      }
+    },
+    {
+      "date": "2027-04-18",
+      "dateTo": "2027-05-02",
+      "itinerary": "Grand Mediterranean featuring Egypt (back-to-back)",
+      "direction": "Athens round trip",
+      "nights": 14,
+      "status": null,
+      "prices": {
+        "From, per suite": 60600
+      }
+    },
+    {
+      "date": "2027-04-25",
+      "dateTo": "2027-05-02",
+      "itinerary": "Grand Mediterranean featuring Alexandria & Milos",
+      "direction": "Alexandria to Athens",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 31800
+      }
+    },
+    {
+      "date": "2027-05-02",
+      "dateTo": "2027-05-07",
+      "itinerary": "Greek Isles featuring Santorini & Hydra",
+      "direction": "Athens round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21100
+      }
+    },
+    {
+      "date": "2027-05-07",
+      "dateTo": "2027-05-16",
+      "itinerary": "Greek Isles featuring Bodrum & Istanbul",
+      "direction": "Athens to Istanbul",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 37500
+      }
+    },
+    {
+      "date": "2027-05-16",
+      "dateTo": "2027-05-23",
+      "itinerary": "Greek Isles featuring Rhodes & Kos",
+      "direction": "Istanbul to Athens",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 26100
+      }
+    },
+    {
+      "date": "2027-05-23",
+      "dateTo": "2027-06-01",
+      "itinerary": "Ionian Coast featuring Astypálaia & Siğacik",
+      "direction": "Athens to Dubrovnik",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 36700
+      }
+    },
+    {
+      "date": "2027-06-01",
+      "dateTo": "2027-06-06",
+      "itinerary": "The Adriatic featuring Croatia",
+      "direction": "Dubrovnik round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 30000
+      }
+    },
+    {
+      "date": "2027-06-13",
+      "dateTo": "2027-06-22",
+      "itinerary": "Grand Mediterranean featuring Sicily & Corfu",
+      "direction": "Fusina (Venice) to Valletta",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 34200
+      }
+    },
+    {
+      "date": "2027-06-22",
+      "dateTo": "2027-06-27",
+      "itinerary": "Grand Mediterranean featuring Valletta & Taormina",
+      "direction": "Valletta round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 20800
+      }
+    },
+    {
+      "date": "2027-06-27",
+      "dateTo": "2027-07-06",
+      "itinerary": "The Rivieras featuring St. Julian's & Positano",
+      "direction": "Valletta to Monte Carlo",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 32900
+      }
+    },
+    {
+      "date": "2027-07-06",
+      "dateTo": "2027-07-11",
+      "itinerary": "The Rivieras featuring Sardinia & Monte Carlo",
+      "direction": "Monte Carlo round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 22700
+      }
+    },
+    {
+      "date": "2027-07-11",
+      "dateTo": "2027-07-18",
+      "itinerary": "The Rivieras featuring Saint-Tropez & Cinque Terre",
+      "direction": "Monte Carlo to Palma de Mallorca",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 40100
+      }
+    },
+    {
+      "date": "2027-07-18",
+      "dateTo": "2027-07-25",
+      "itinerary": "The Rivieras featuring Cassis & Sardinia",
+      "direction": "Palma de Mallorca to Salerno",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 31000
+      }
+    },
+    {
+      "date": "2027-07-25",
+      "dateTo": "2027-08-03",
+      "itinerary": "Grand Mediterranean featuring Taormina & Corfu",
+      "direction": "Salerno to Dubrovnik",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 32900
+      }
+    },
+    {
+      "date": "2027-08-03",
+      "dateTo": "2027-08-08",
+      "itinerary": "The Adriatic featuring Korčula & Montenegro",
+      "direction": "Dubrovnik round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21000
+      }
+    },
+    {
+      "date": "2027-08-08",
+      "dateTo": "2027-08-11",
+      "itinerary": "The Adriatic featuring Croatia & Montenegro",
+      "direction": "Dubrovnik to Split (Trogir)",
+      "nights": 3,
+      "status": null,
+      "prices": {
+        "From, per suite": 13500
+      }
+    },
+    {
+      "date": "2027-08-15",
+      "dateTo": "2027-08-22",
+      "itinerary": "The Adriatic featuring Croatia & Greece",
+      "direction": "Dubrovnik to Kerkyra",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 32000
+      }
+    },
+    {
+      "date": "2027-08-22",
+      "dateTo": "2027-08-31",
+      "itinerary": "Greek Isles featuring Corfu & Parga",
+      "direction": "Kerkyra to Athens",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 29900
+      }
+    },
+    {
+      "date": "2027-08-31",
+      "dateTo": "2027-09-05",
+      "itinerary": "Greek Isles featuring Antiparos & Mykonos",
+      "direction": "Athens round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 20900
+      }
+    },
+    {
+      "date": "2027-09-05",
+      "dateTo": "2027-09-12",
+      "itinerary": "Greek Isles featuring Santorini & Karystos",
+      "direction": "Athens to Istanbul",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 31500
+      }
+    },
+    {
+      "date": "2027-09-12",
+      "dateTo": "2027-09-19",
+      "itinerary": "Greek Isles featuring Mykonos & Göcek (Chef-in-Residence)",
+      "direction": "Istanbul to Athens",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 29300
+      }
+    },
+    {
+      "date": "2027-09-19",
+      "dateTo": "2027-09-28",
+      "itinerary": "Grand Mediterranean featuring Crete & Ischia",
+      "direction": "Athens to Monte Carlo",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 32400
+      }
+    },
+    {
+      "date": "2027-09-28",
+      "dateTo": "2027-10-03",
+      "itinerary": "The Rivieras featuring Saint-Tropez & Portofino",
+      "direction": "Monte Carlo to Nice",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21800
+      }
+    },
+    {
+      "date": "2027-10-03",
+      "dateTo": "2027-10-10",
+      "itinerary": "The Rivieras featuring Corsica & Cannes (Chef-in-Residence)",
+      "direction": "Nice to Salerno",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 25800
+      }
+    },
+    {
+      "date": "2027-10-10",
+      "dateTo": "2027-10-17",
+      "itinerary": "Grand Mediterranean featuring Ponza & Saint-Raphaël",
+      "direction": "Salerno to Palma de Mallorca",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 25700
+      }
+    },
+    {
+      "date": "2027-10-17",
+      "dateTo": "2027-10-26",
+      "itinerary": "The Rivieras featuring Amalfi & Sicily",
+      "direction": "Palma de Mallorca to Valletta",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 30700
+      }
+    },
+    {
+      "date": "2027-10-26",
+      "dateTo": "2027-11-06",
+      "itinerary": "The Rivieras featuring Tropea & Valencia",
+      "direction": "Valletta to Casablanca (Marrakesh)",
+      "nights": 11,
+      "status": null,
+      "prices": {
+        "From, per suite": 35500
+      }
+    },
+    {
+      "date": "2027-11-06",
+      "dateTo": "2027-11-13",
+      "itinerary": "Canary Islands featuring Casablanca & Tenerife (Chef-in-Residence)",
+      "direction": "Casablanca (Marrakesh) to Las Palmas",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 25900
+      }
+    },
+    {
+      "date": "2027-11-13",
+      "dateTo": "2027-11-21",
+      "itinerary": "Grand Atlantic featuring Las Palmas & Sint Maarten",
+      "direction": "Las Palmas to Philipsburg",
+      "nights": 8,
+      "status": null,
+      "prices": {
+        "From, per suite": 18100
+      }
+    },
+    {
+      "date": "2027-11-21",
+      "dateTo": "2027-11-28",
+      "itinerary": "Lesser Antilles featuring St Lucia & Nevis (Festive)",
+      "direction": "Philipsburg to Saint John's",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 22000
+      }
+    },
+    {
+      "date": "2027-11-28",
+      "dateTo": "2027-12-03",
+      "itinerary": "Lesser Antilles featuring Marigot & St Barths",
+      "direction": "Saint John's round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 17900
+      }
+    },
+    {
+      "date": "2027-12-03",
+      "dateTo": "2027-12-12",
+      "itinerary": "Lesser Antilles featuring the British Virgin Islands & Barbados",
+      "direction": "Saint John's to Philipsburg",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 26200
+      }
+    },
+    {
+      "date": "2027-12-12",
+      "dateTo": "2027-12-19",
+      "itinerary": "Lesser Antilles featuring Îles des Saintes & St Barths",
+      "direction": "Philipsburg round trip",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 24000
+      }
+    },
+    {
+      "date": "2027-12-19",
+      "dateTo": "2027-12-27",
+      "itinerary": "Lesser Antilles featuring Virgin Gorda & St Lucia (Festive)",
+      "direction": "Philipsburg to Saint John's",
+      "nights": 8,
+      "status": null,
+      "prices": {
+        "From, per suite": 25300
+      }
+    },
+    {
+      "date": "2027-12-27",
+      "dateTo": "2028-01-04",
+      "itinerary": "Grand Caribbean featuring Martinique & Guadeloupe (Festive)",
+      "direction": "Saint John's to Philipsburg",
+      "nights": 8,
+      "status": null,
+      "prices": {
+        "From, per suite": 25400
+      }
+    },
+    {
+      "date": "2028-01-04",
+      "dateTo": "2028-01-09",
+      "itinerary": "Sint Maarten Roundtrip: Through the Leeward Isles",
+      "direction": "Philipsburg round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 18400
+      }
+    },
+    {
+      "date": "2028-01-09",
+      "dateTo": "2028-01-16",
+      "itinerary": "Sint Maarten Roundtrip: A Journey Through the Caribbean Isles",
+      "direction": "Philipsburg round trip",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 20900
+      }
+    },
+    {
+      "date": "2028-01-16",
+      "dateTo": "2028-01-23",
+      "itinerary": "Sint Maarten to Antigua: Timeless Shores",
+      "direction": "Philipsburg to Saint John's",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 20900
+      }
+    },
+    {
+      "date": "2028-01-23",
+      "dateTo": "2028-01-28",
+      "itinerary": "Antigua Roundtrip: The Caribbean's Northern Isles",
+      "direction": "Saint John's round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 18400
+      }
+    },
+    {
+      "date": "2028-01-28",
+      "dateTo": "2028-02-06",
+      "itinerary": "Antigua to Sint Maarten: A Caribbean Passage",
+      "direction": "Saint John's to Philipsburg",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 27000
+      }
+    },
+    {
+      "date": "2028-02-06",
+      "dateTo": "2028-02-13",
+      "itinerary": "Sint Maarten Roundtrip: Caribbean Horizons & Volcanic Shores",
+      "direction": "Philipsburg round trip",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 20900
+      }
+    },
+    {
+      "date": "2028-02-13",
+      "dateTo": "2028-02-20",
+      "itinerary": "Sint Maarten to Antigua: Signature Isles of the Caribbean",
+      "direction": "Philipsburg to Saint John's",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 20900
+      }
+    },
+    {
+      "date": "2028-02-20",
+      "dateTo": "2028-02-28",
+      "itinerary": "Antigua to Sint Maarten: From the Grenadines to the Virgin Isles",
+      "direction": "Saint John's to Philipsburg",
+      "nights": 8,
+      "status": null,
+      "prices": {
+        "From, per suite": 25400
+      }
+    },
+    {
+      "date": "2028-02-28",
+      "dateTo": "2028-03-04",
+      "itinerary": "Sint Maarten Roundtrip: A Voyage Through the Lesser Antilles",
+      "direction": "Philipsburg round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 18400
+      }
+    },
+    {
+      "date": "2028-03-04",
+      "dateTo": "2028-03-13",
+      "itinerary": "Sint Maarten to Miami: Leeward Isles & Island Harbours",
+      "direction": "Philipsburg to Miami",
+      "nights": 9,
+      "status": null,
+      "prices": {
+        "From, per suite": 27000
+      }
+    },
+    {
+      "date": "2028-03-13",
+      "dateTo": "2028-03-17",
+      "itinerary": "Miami Roundtrip: A Journey Through the Bahamas",
+      "direction": "Miami round trip",
+      "nights": 4,
+      "status": null,
+      "prices": {
+        "From, per suite": 15500
+      }
+    },
+    {
+      "date": "2028-03-17",
+      "dateTo": "2028-03-22",
+      "itinerary": "Bahamas featuring Exuma Sound",
+      "direction": "Miami round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 18300
+      }
+    },
+    {
+      "date": "2028-03-22",
+      "dateTo": "2028-03-28",
+      "itinerary": "Bahamas featuring The Exumas",
+      "direction": "Miami round trip",
+      "nights": 6,
+      "status": null,
+      "prices": {
+        "From, per suite": 21800
+      }
+    },
+    {
+      "date": "2028-03-28",
+      "dateTo": "2028-04-04",
+      "itinerary": "Grand Caribbean featuring Jost Van Dyke & St Barths",
+      "direction": "Miami to Philipsburg",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 22200
+      }
+    },
+    {
+      "date": "2028-04-04",
+      "dateTo": "2028-04-09",
+      "itinerary": "Sint Maarten to Saint Lucia: Antigua & the French Caribbean",
+      "direction": "Philipsburg to Castries",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 17800
+      }
+    },
+    {
+      "date": "2028-04-09",
+      "dateTo": "2028-04-14",
+      "itinerary": "Lesser Antilles featuring Martinique & Tobago",
+      "direction": "Castries to Philipsburg",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 20100
+      }
+    },
+    {
+      "date": "2028-04-14",
+      "dateTo": "2028-04-22",
+      "itinerary": "Sint Maarten to Spain: Across the Atlantic",
+      "direction": "Philipsburg to Las Palmas",
+      "nights": 8,
+      "status": null,
+      "prices": {
+        "From, per suite": 17800
+      }
+    },
+    {
+      "date": "2028-04-22",
+      "dateTo": "2028-05-04",
+      "itinerary": "Spain to Italy: From the Canaries to the Adriatic",
+      "direction": "Las Palmas to Fusina (Venice)",
+      "nights": 12,
+      "status": null,
+      "prices": {
+        "From, per suite": 30340
+      }
+    },
+    {
+      "date": "2028-05-04",
+      "dateTo": "2028-05-10",
+      "itinerary": "Venice to Nice: Inside Venice's Vernissage",
+      "direction": "Fusina (Venice) to Nice",
+      "nights": 6,
+      "status": null,
+      "prices": {
+        "From, per suite": 26200
+      }
+    },
+    {
+      "date": "2028-05-10",
+      "dateTo": "2028-05-21",
+      "itinerary": "Nice to Monte Carlo: The Cannes Season",
+      "direction": "Nice to Monte Carlo",
+      "nights": 11,
+      "status": null,
+      "prices": {
+        "From, per suite": 35700
+      }
+    },
+    {
+      "date": "2028-05-21",
+      "dateTo": "2028-05-26",
+      "itinerary": "Monaco to Spain: Rivieras to the Balearics",
+      "direction": "Monte Carlo to Palma de Mallorca",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 20000
+      }
+    },
+    {
+      "date": "2028-05-26",
+      "dateTo": "2028-05-31",
+      "itinerary": "Mallorca to France: The Rivieras & Sardinia",
+      "direction": "Palma de Mallorca to Nice",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 20000
+      }
+    },
+    {
+      "date": "2028-05-31",
+      "dateTo": "2028-06-05",
+      "itinerary": "Nice Roundtrip: Sea to Circuit",
+      "direction": "Nice round trip",
+      "nights": 5,
+      "status": "Full, waitlist only",
+      "prices": {
+        "From, per suite": null
+      }
+    },
+    {
+      "date": "2028-06-05",
+      "dateTo": "2028-06-10",
+      "itinerary": "Nice to Monte Carlo: The Côte d'Azur & Ligurian Coast",
+      "direction": "Nice to Monte Carlo",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 22580
+      }
+    },
+    {
+      "date": "2028-06-10",
+      "dateTo": "2028-06-14",
+      "itinerary": "Monte Carlo to Nice: The Italian & French Riviera",
+      "direction": "Monte Carlo to Nice",
+      "nights": 4,
+      "status": "Full, waitlist only",
+      "prices": {
+        "From, per suite": null
+      }
+    },
+    {
+      "date": "2028-06-14",
+      "dateTo": "2028-06-19",
+      "itinerary": "Nice to Salerno: The Mediterranean Rivieras",
+      "direction": "Nice to Salerno",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21700
+      }
+    },
+    {
+      "date": "2028-06-19",
+      "dateTo": "2028-06-24",
+      "itinerary": "Salerno to Monte Carlo: The Tyrrhenian Isles",
+      "direction": "Salerno to Monte Carlo",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21300
+      }
+    },
+    {
+      "date": "2028-06-24",
+      "dateTo": "2028-06-28",
+      "itinerary": "Monte Carlo to Nice: Sardinia & the Côte d'Azur",
+      "direction": "Monte Carlo to Nice",
+      "nights": 4,
+      "status": "Full, waitlist only",
+      "prices": {
+        "From, per suite": null
+      }
+    },
+    {
+      "date": "2028-06-28",
+      "dateTo": "2028-07-03",
+      "itinerary": "Nice to Monte Carlo: Along the Rivieras",
+      "direction": "Nice to Monte Carlo",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21700
+      }
+    },
+    {
+      "date": "2028-07-03",
+      "dateTo": "2028-07-08",
+      "itinerary": "Monte Carlo to Rome: Rivieras & Mediterranean Isles",
+      "direction": "Monte Carlo to Civitavecchia (Rome)",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21700
+      }
+    },
+    {
+      "date": "2028-07-08",
+      "dateTo": "2028-07-15",
+      "itinerary": "Rome to Athens: The Southern Mediterranean",
+      "direction": "Civitavecchia (Rome) to Athens",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 28200
+      }
+    },
+    {
+      "date": "2028-07-15",
+      "dateTo": "2028-07-19",
+      "itinerary": "Athens Roundtrip: The Eastern Aegean",
+      "direction": "Athens round trip",
+      "nights": 4,
+      "status": "Full, waitlist only",
+      "prices": {
+        "From, per suite": null
+      }
+    },
+    {
+      "date": "2028-07-19",
+      "dateTo": "2028-07-24",
+      "itinerary": "Athens Roundtrip: Isles & Shores of the Aegean",
+      "direction": "Athens round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 21800
+      }
+    },
+    {
+      "date": "2028-07-24",
+      "dateTo": "2028-07-29",
+      "itinerary": "Athens Roundtrip: The Greek & Turkish Rivieras",
+      "direction": "Athens round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 22400
+      }
+    },
+    {
+      "date": "2028-07-29",
+      "dateTo": "2028-08-05",
+      "itinerary": "Athens to Palermo: The Ionian & Southern Italy",
+      "direction": "Athens to Palermo",
+      "nights": 7,
+      "status": null,
+      "prices": {
+        "From, per suite": 32100
+      }
+    },
+    {
+      "date": "2028-08-05",
+      "dateTo": "2028-08-10",
+      "itinerary": "Palermo to Monte Carlo: Sicily & the French Riviera",
+      "direction": "Palermo to Monte Carlo",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 22000
+      }
+    },
+    {
+      "date": "2028-08-10",
+      "dateTo": "2028-08-14",
+      "itinerary": "Monte Carlo Roundtrip: The Costa Smeralda",
+      "direction": "Monte Carlo round trip",
+      "nights": 4,
+      "status": null,
+      "prices": {
+        "From, per suite": 19400
+      }
+    },
+    {
+      "date": "2028-08-14",
+      "dateTo": "2028-08-19",
+      "itinerary": "Monte Carlo Roundtrip: The Ligurian & Provençal Coasts",
+      "direction": "Monte Carlo round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 23600
+      }
+    },
+    {
+      "date": "2028-08-19",
+      "dateTo": "2028-08-24",
+      "itinerary": "Monte Carlo Roundtrip: Provence & the Italian Riviera",
+      "direction": "Monte Carlo round trip",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 23400
+      }
+    },
+    {
+      "date": "2028-08-24",
+      "dateTo": "2028-08-28",
+      "itinerary": "Monte Carlo Roundtrip: Sardinian Shores",
+      "direction": "Monte Carlo round trip",
+      "nights": 4,
+      "status": null,
+      "prices": {
+        "From, per suite": 19100
+      }
+    },
+    {
+      "date": "2028-08-28",
+      "dateTo": "2028-09-02",
+      "itinerary": "Monte Carlo to Rome: Italian Riviera & Tyrrhenian Harbours",
+      "direction": "Monte Carlo to Civitavecchia (Rome)",
+      "nights": 5,
+      "status": null,
+      "prices": {
+        "From, per suite": 20600
+      }
+    }
+  ],
+  "datesPublished": true,
+  "fareUnit": "suite",
+  "fareBasis": "per suite for the voyage, in USD, as published",
+  "pricesNote": "Four Seasons Yachts prices each voyage per suite, for the whole voyage, in US dollars. The fare shown is the lowest published for that sailing, read on 13 November 2026; James confirms the fare for your suite and dates.",
+  "inclusions": [
+    "Breakfast in designated restaurants",
+    "In-suite non-alcoholic drinks and snacks",
+    "High-speed Wi-Fi",
+    "Watersports from the marina",
+    "Exercise classes, subject to availability",
+    "Breakfast, lunch and dinner for children under five",
+    "Taxes and port fees"
+  ],
+  "exclusions": [
+    "Lunch and dinner",
+    "In-suite dining",
+    "Alcoholic drinks",
+    "Laundry",
+    "Salon and spa treatments",
+    "Shore experiences",
+    "Private fitness sessions",
+    "Medical services",
+    "Transfers",
+    "Hotels before and after the voyage"
+  ],
+  "children": "Children are welcome: several suites take an infant or a child as an extra guest, the Studio suites add a bunk room, and breakfast, lunch and dinner are included for children under five. Ask us for the youngest age on a given sailing.",
+  "faqs": [
+    [
+      "How many guests does Four Seasons I carry?",
+      "Up to 222, in 95 suites, with a guest-to-staff ratio of one to one."
+    ],
+    [
+      "Where does Four Seasons I sail?",
+      "The Mediterranean in summer, from the Greek islands, Turkey and the Adriatic to the Italian and French Rivieras, and the Caribbean and the Bahamas in winter, mostly from Philipsburg in Sint Maarten, Saint John's in Antigua and Miami. She crosses the Atlantic between the two in spring and autumn."
+    ],
+    [
+      "How much does a voyage on Four Seasons I cost?",
+      "Published fares start at US$12,200 per suite for a 3-night Caribbean voyage, and most 7-night sailings start between US$20,000 and US$32,000 per suite. The fare is for the whole suite, not per person."
+    ],
+    [
+      "Are fares on Four Seasons I per person or per suite?",
+      "Per suite. Four Seasons Yachts publishes one fare for the suite for the whole voyage, in US dollars, whatever the number of guests the suite sleeps."
+    ],
+    [
+      "What is included in the fare?",
+      "The suite, breakfast in designated restaurants, in-suite non-alcoholic drinks and snacks, high-speed Wi-Fi, watersports from the marina, exercise classes subject to availability, meals for children under five, and taxes and port fees."
+    ],
+    [
+      "What is not included?",
+      "Lunch and dinner, in-suite dining, alcoholic drinks, spa and salon treatments, shore experiences, laundry, transfers and hotels before and after the voyage."
+    ],
+    [
+      "How many suite types are there on Four Seasons I?",
+      "Fourteen, from the Seaview Suite at 44 square metres to the Funnel Suite at 501 square metres on four levels. Every suite has a private terrace."
+    ],
+    [
+      "What is the largest suite on Four Seasons I?",
+      "The Funnel Suite: 501 square metres inside on four levels, a 421 square metre terrace, three bedrooms, a private splash pool, an indoor and outdoor gym, a steam room and a personal kitchen."
+    ],
+    [
+      "Can suites connect for families or groups?",
+      "Yes. Four Seasons Yachts lists more than 100 connecting combinations, and the Loft Suite joins with up to seven suites for as many as 20 guests."
+    ],
+    [
+      "How long are the voyages?",
+      "From 3 to 18 nights. Most are 5 or 7 nights, and consecutive sailings can be joined into a longer voyage."
+    ],
+    [
+      "When did Four Seasons I enter service?",
+      "Her first sailing was on 20 March 2026."
+    ],
+    [
+      "Are the pictures photographs?",
+      "No. The images here are Four Seasons Yachts' own renderings of the yacht and her suites, and are labelled as renderings."
+    ],
+    [
+      "What are the deposit and cancellation terms?",
+      "Ask us. James confirms the deposit, payment dates and cancellation terms for your sailing when he holds a suite."
+    ]
+  ],
+  "suits": [
+    {
+      "who": "Couples",
+      "line": "A terrace suite, a short voyage, and a hotel's service at sea."
+    },
+    {
+      "who": "Families",
+      "line": "Studio suites with a bunk room, and more than 100 ways to connect suites."
+    },
+    {
+      "who": "Groups of friends",
+      "line": "The Loft Suite joins with seven others for up to 20 guests."
+    },
+    {
+      "who": "Four Seasons regulars",
+      "line": "The hotel group you know, on its first yacht."
+    },
+    {
+      "who": "First time at sea",
+      "line": "Sailings of 3 to 5 nights, port to port."
+    }
+  ],
+  "sources": [
+    "https://www.fourseasonsyachts.com/vessels/four-seasons-1",
+    "https://www.fourseasonsyachts.com/vessels/four-seasons-1/suites",
+    "https://www.fourseasonsyachts.com/voyages?yachts=FS-I",
+    "https://press.fourseasons.com/yachts/"
+  ],
+  "film": null
+}

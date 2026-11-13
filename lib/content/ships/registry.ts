@@ -20,7 +20,7 @@ import type { PathwayId } from "@/lib/pathways";
 
 export type VoyageType = "river" | "sailing" | "expedition" | "charter";
 /** antarctica and patagonia: the polar waters, both listed in Polar Voyages (/voyages/polar). */
-export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji" | "mekong" | "seychelles" | "arctic";
+export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji" | "mekong" | "seychelles" | "arctic" | "caribbean" | "mediterranean" | "bahamas";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
 export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran" | "bangka";
 /** The operator's own class label (Galápagos, James, 2 Nov 2026): the hub groups ships by partner and tier.
@@ -295,6 +295,17 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     pathway: { primary: "PATH-02", secondary: ["PATH-08"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
     traits: { minChildAge: 16, childNote: "Adults only, 16 and over, on every departure from mid-January 2027", activities: ["snorkelling", "kayaking", "culture", "wildlife"] } },
 
+  // Timeless Voyages (James, 13 Nov 2026): Four Seasons Yachts' Four Seasons I, filed from fourseasonsyachts.com and
+  // press.fourseasons.com. In service since 20 March 2026, so "sailing", not a Maiden Voyage. A motor yacht: filed under
+  // "expedition" as Star Breeze is, since the four voyage types carry no ocean-yacht type yet. Fares are per suite.
+  // Between Tides first (the transverse marina and its watersports); Slow sailing and wellness second (spa, exercise classes).
+  // Activities are left to what the brand's pages name outright: shore experiences and the spa. Marina watersports are not itemised.
+  { slug: "four-seasons-i", name: "Four Seasons I", operator: "Four Seasons Yachts", kind: "motor-yacht", types: ["expedition"], waters: ["caribbean", "mediterranean", "bahamas"],
+    country: ["Sint Maarten", "Antigua and Barbuda", "Saint Lucia", "Bahamas", "Greece", "Italy", "France", "Monaco", "Croatia", "Spain", "Malta", "Turkey"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-05"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    // fourseasonsyachts.com: over 100 connecting suite combinations; children under 5 have meals included (no minimum age readable).
+    traits: { connecting: true, activities: ["culture", "slow"] } },
+
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },
 
@@ -343,6 +354,10 @@ export const WATERS_HUBS: Record<Waters, { name: string; path: string; countries
   mekong: { name: "The Mekong", path: "/voyages/ships/aqua-mekong", countries: ["Cambodia", "Vietnam"], question: "What is the best luxury Mekong river cruise?" },
   seychelles: { name: "The Seychelles and Zanzibar", path: "/voyages/ships/aqua-lares", countries: ["Seychelles", "Tanzania"], question: "Can you cruise to Aldabra in the Seychelles?" },
   arctic: { name: "Svalbard and the Arctic", path: "/voyages/ships/aqua-lares", countries: ["Norway"], question: "Which small ship sails Svalbard?" },
+  // Timeless Voyages waters (13 Nov 2026). No hub pages yet: each points at Four Seasons I until the collection page is approved.
+  caribbean: { name: "The Caribbean", path: "/voyages/ships/four-seasons-i", countries: ["Sint Maarten", "Antigua and Barbuda", "Saint Lucia"], question: "Which yacht sails the Lesser Antilles in winter?" },
+  mediterranean: { name: "The Mediterranean", path: "/voyages/ships/four-seasons-i", countries: ["Greece", "Italy", "France", "Monaco", "Croatia", "Spain", "Malta", "Turkey"], question: "Which yacht sails the Mediterranean in summer?" },
+  bahamas: { name: "The Bahamas", path: "/voyages/ships/four-seasons-i", countries: ["Bahamas"], question: "Which yacht sails the Exumas from Miami?" },
 };
 
 export const registryShip = (slug: string) => SHIP_REGISTRY.find((s) => s.slug === slug);

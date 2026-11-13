@@ -109,6 +109,9 @@ export type ShipRecord = {
   publishedNote?: string;
   /** The occupancy basis as the operator gives it ("per person, as published" where it is not stated). */
   fareBasis?: string;
+  /** The unit the operator prices in: "suite" where a fare buys the whole suite for the voyage (Four Seasons Yachts;
+   *  James, 13 Nov 2026: shown as published, never converted to per person). Absent means per person. */
+  fareUnit?: "suite";
   /** Route combinations the operator sells (Monserrat's A+B and so on). */
   combinations?: { name: string; nights: number }[];
   /** Shown in place of the day by day when the operator publishes none we can read. */
@@ -134,6 +137,9 @@ export function charterFrom(s: { charterRates?: { label: string; rate: number }[
   const live = (s.charterRates ?? []).filter((r) => !/^\d{4}$/.test(r.label) || !isPast(r.label, on));
   return live.length ? Math.min(...live.map((r) => r.rate)) : null;
 }
+
+/** The fare unit in words: "per suite" for a ship priced by the suite, otherwise "per person" (short: "pp"). */
+export const fareUnitOf = (s: Pick<ShipRecord, "fareUnit">) => (s.fareUnit === "suite" ? { long: "per suite", short: "per suite" } : { long: "per person", short: "pp" });
 
 /** The rate basis in words, for Dates & rates and the cabin cards. */
 export const rateBasisOf = (s: Pick<ShipRecord, "rateBasis">): RateBasis => s.rateBasis ?? "per-cruise";

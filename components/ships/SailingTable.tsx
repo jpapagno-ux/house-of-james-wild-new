@@ -32,7 +32,7 @@ function Flag({ f }: { f: SailingFlag }) {
   return <a href="#offers" className="inline-flex items-center border px-1.5 py-0.5 text-[10.5px] tracking-[0.12em] uppercase whitespace-nowrap" style={{ borderColor: "var(--tone-path, currentColor)", color: "var(--tone-path, inherit)" }}>{f.short}</a>;
 }
 
-function Row({ x, flags }: { x: Sailing; flags: SailingFlag[] }) {
+function Row({ x, flags, unit }: { x: Sailing; flags: SailingFlag[]; unit: string }) {
   const low = lowOf(x);
   const n = nightsOf(x);
   const on = flagsOn(x, flags);
@@ -44,7 +44,7 @@ function Row({ x, flags }: { x: Sailing; flags: SailingFlag[] }) {
       </p>
       <p className="row-span-2 md:row-span-1 text-right md:order-4 md:text-right">
         {low ? <span className="block ledger-display text-[1.1rem] tabular-nums" style={{ color: "var(--tone-path, inherit)" }}>{usd(low)}</span> : <span className="ledger-muted text-[14px]">Ask us</span>}
-        <span className="block text-[10.5px] tracking-[0.12em] uppercase ledger-muted">per person</span>
+        <span className="block text-[10.5px] tracking-[0.12em] uppercase ledger-muted">{unit}</span>
       </p>
       <p className="text-[14.5px] leading-snug md:order-2">{voyageName(x.route)}</p>
       <p className="hidden md:block md:order-3 text-[14px] tabular-nums">{n ? `${n} nights` : "To confirm"}</p>
@@ -57,7 +57,7 @@ function Row({ x, flags }: { x: Sailing; flags: SailingFlag[] }) {
   );
 }
 
-export default function SailingTable({ ship, data, flags = [], note, openMonths = 2 }: { ship: string; data: DatesData; flags?: SailingFlag[]; note?: string; openMonths?: number }) {
+export default function SailingTable({ ship, data, flags = [], note, openMonths = 2, unit = "per person" }: { ship: string; data: DatesData; flags?: SailingFlag[]; note?: string; openMonths?: number; unit?: string }) {
   const rows = data.sailings;
   if (!rows.length) return null;
   const months = new Map<string, Sailing[]>();
@@ -80,13 +80,13 @@ export default function SailingTable({ ship, data, flags = [], note, openMonths 
           {offered && <span aria-label="An offer applies" className="w-2 h-2 rounded-full shrink-0" style={{ background: "var(--tone-path, #8B2525)" }} />}
           <span aria-hidden="true" className="text-[18px] leading-none transition-transform group-open/m:rotate-45">+</span>
         </summary>
-        <ul className="pb-3 md:pl-3">{xs.map((x) => <Row key={x.id} x={x} flags={flags} />)}</ul>
+        <ul className="pb-3 md:pl-3">{xs.map((x) => <Row key={x.id} x={x} flags={flags} unit={unit} />)}</ul>
       </details>
     );
   };
   return (
     <div className="mt-8" aria-label={`Every published ${ship} sailing, by year and month`}>
-      <p className="text-[13.5px] ledger-muted">{rows.length} sailings{voyages.length > 3 ? ` on ${voyages.length} itineraries` : voyages.length > 1 ? `: ${voyages.join(" and ")}` : ""}. Open a year, then a month.</p>
+     <p className="text-[13.5px] ledger-muted">{rows.length} sailings{voyages.length > 3 ? ` on ${voyages.length} itineraries` : voyages.length > 1 ? `: ${voyages.join(" and ")}` : ""}. Open a year, then a month.</p>
       <div className="hidden md:grid grid-cols-[150px_1fr_90px_130px_150px] gap-x-4 mt-5 pb-2 md:pl-3 text-[10.5px] tracking-[0.18em] uppercase ledger-muted" aria-hidden="true">
         <span>Dates</span><span>Voyage</span><span>Nights</span><span className="text-right">From</span><span className="text-right">Offers</span>
       </div>

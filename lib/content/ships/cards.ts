@@ -30,7 +30,7 @@ export function shipCard(r: RegistryShip): ShipCardData | null {
     return {
       slug: r.slug, name: s.name, href: registryHref(r), eyebrow, line: undash(s.tagline), image: { url: s.hero.url, alt: s.hero.alt }, credit: e.credit,
       facts: [["Nights", nightsLabel(s).replace(" nights", "")], ["Guests", guests ? guests.replace(/\s*\(.*?\)/, "") : "Ask us"]],
-      price: p.kind === "cruise" ? { label: "From", amount: p.amount } : p.kind === "charter" ? { label: "Yacht / night", amount: p.amount } : p.kind === "journey" ? { label: "Journeys", amount: p.amount } : p.kind === "tba" ? { label: "Rates", amount: "Ask us" } : { label: "Rates", amount: "On request" },
+      price: p.kind === "cruise" ? { label: s.fareUnit === "suite" ? "Suite from" : "From", amount: p.amount } : p.kind === "charter" ? { label: "Yacht / night", amount: p.amount } : p.kind === "journey" ? { label: "Journeys", amount: p.amount } : p.kind === "tba" ? { label: "Rates", amount: "Ask us" } : { label: "Rates", amount: "On request" },
       low: fromPrice(s), pathway: pw, types: r.types, waters: r.waters, page: true, status: s.status,
     };
   }

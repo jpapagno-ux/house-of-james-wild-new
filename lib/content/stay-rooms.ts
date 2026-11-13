@@ -408,6 +408,23 @@ const ROOMS: Record<string, StayRooms> = {
     notes: ["Facts from wymara.com, read 13 Nov 2026. Wymara does not publish nightly rates on its website.", "Maximum occupancies are as Wymara publishes them for each room.", "The house confirms the rate, what it includes and the deposit and cancellation terms with your quote."],
     source: { label: "wymara.com", url: "https://www.wymara.com/" }, credit: "Photographs courtesy of Wymara Resort + Villas",
   },
+  salterra: {
+    intro: "One hundred oceanfront rooms and suites on South Caicos, every one facing the sea. Salterra does not publish nightly rates on its website; rates are quoted before a 27% charge (12% government tax, 10% service and a 5% facility fee), and James confirms them for your dates.",
+    currency: "USD", basis: "per room a night, before 27% tax, service and facility fee", seasons: [],
+    rooms: [
+      { name: "Deluxe Guest Room", facts: ["455 sq ft", "1 king or 2 queens"], features: ["Oceanfront, light-filled and overlooking the Caribbean"], rates: [], note: "Rate on enquiry", image: { id: "jwco/stays/salterra/s08", alt: "A guest room with a king bed facing the sea" } },
+      { name: "Grand Deluxe Guest Room", facts: ["455 sq ft", "1 king or 2 queens"], features: ["Higher floor king rooms for wider views", "Ground floor queen rooms with a private lanai"], rates: [], note: "Rate on enquiry", image: { id: "jwco/stays/salterra/s28", alt: "A king room with windows onto the sea" } },
+      { name: "One Bedroom Suite", facts: ["1,135 sq ft", "1 king and a sofa bed"], features: ["Private balcony and floor-to-ceiling windows"], rates: [], note: "Rate on enquiry", image: { id: "jwco/stays/salterra/s20", alt: "A suite living room under a vaulted wood ceiling" } },
+      { name: "Superior One Bedroom Suite", facts: ["1,135 sq ft", "1 king and a sofa bed"], features: ["Higher floors", "Private balcony and a dining table for six"], rates: [], note: "Rate on enquiry", image: { id: "jwco/stays/salterra/s26", alt: "A suite sitting area with sea views" } },
+      { name: "Two Bedroom Suite", facts: ["1,240 sq ft", "1 king, 2 doubles and a sofa bed"], features: ["Private balcony over the beach"], rates: [], note: "Rate on enquiry", image: { id: "jwco/stays/salterra/s22", alt: "A bedroom with two beds and a balcony over the sea" } },
+      { name: "Superior Two Bedroom Suite", facts: ["1,165 sq ft", "1 king, 2 doubles and a sofa bed"], features: ["Floor-to-ceiling windows and a private balcony", "Ideal for families"], rates: [], note: "Rate on enquiry", image: { id: "jwco/stays/salterra/s30", alt: "A suite bedroom open to the sea" } },
+      { name: "Premier's Penthouse", facts: ["2,800 sq ft", "2 kings, 1 queen and a double bunk"], features: ["High above the beach, the largest suite at Salterra"], rates: [], note: "Rate on enquiry", image: { id: "jwco/stays/salterra/s00", alt: "The penthouse living room under a vaulted ceiling, the sea beyond" } },
+    ],
+    included: ["High-speed Wi-Fi, Frette linens, evening turndown and a dedicated outdoor space in every room", "Salterra Kids Club for ages 4 to 12, every day from 9:30 to 5:00", "Children 11 and under stay free in their parents' room", "Yoga, pickleball and guided nature walks"],
+    excluded: ["Meals, unless you add the Salterra Epicurean Experience: US$350 an adult and US$120 a young adult (12 to 17) a night, inclusive of taxes and gratuities, children 11 and under free", "Spa treatments, and the spa's pool, hot tub, steam and sauna (day pass US$50)", "Airport shuttle, US$20 a person each way", "Bonefishing, reef and cay excursions with Adventures by Salterra", "Extra guests 12 and older, US$75 a night from the third guest"],
+    notes: ["Facts from salterra.com, read 13 Nov 2026. Salterra does not publish nightly rates on its website.", "A deposit of the first and last nights and taxes is taken at booking; the balance is charged 30 days before arrival, and stays can be cancelled without penalty until then, outside the festive period.", "The festive period carries a five night minimum. The resort closes from 9 September to 20 October 2026.", "The house confirms the rate, what it includes and the terms with your quote."],
+    source: { label: "salterra.com", url: "https://www.salterra.com/" }, credit: "Photographs courtesy of Salterra Resort & Spa",
+  },
   "casali-di-casole": {
     intro: "Eighteen restored farmhouses, villas and a penthouse on a 4,200 acre estate, each let whole, sleeping four to sixteen. Casali di Casole publishes a nightly rate for each residence, including VAT.",
     currency: "EUR", basis: "per residence a night, including 10% VAT",

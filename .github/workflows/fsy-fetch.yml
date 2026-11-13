@@ -6,7 +6,7 @@ name: Four Seasons Yachts fetch
 on:
   workflow_dispatch:
   push:
-    paths: [scripts/partners/fsy-fetch.mjs, .github/workflows/fsy-fetch.yml]
+    paths: [scripts/partners/fsy-fetch.mjs, scripts/data/fsy/seed.txt, .github/workflows/fsy-fetch.yml]
 
 permissions:
   contents: write

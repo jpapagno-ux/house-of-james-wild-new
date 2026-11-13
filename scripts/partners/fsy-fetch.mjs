@@ -5,7 +5,7 @@
 // each voyage page lists every dated sailing (id FS-I-yymmdd-nnn); each sailing page is read once.
 // Writes scripts/data/fsy/raw.json. Facts and fares are Four Seasons Yachts' own (partner agreement, James).
 // Run on a GitHub runner (the workflow fsy-fetch.yml): node scripts/partners/fsy-fetch.mjs
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const SITE = "https://www.fourseasonsyachts.com";
 const UA = { "user-agent": "Mozilla/5.0 (James Wild & Co partner sync)", "accept-language": "en" };
@@ -41,7 +41,10 @@ const sitemap = await get(`${SITE}/sitemap.xml`);
 const slugs = [...new Set([...sitemap.matchAll(/<loc>https:\/\/www\.fourseasonsyachts\.com\/voyages\/([^<?/]+)<\/loc>/g)].map((m) => m[1]))];
 console.log("voyage pages", slugs.length);
 
-const ids = new Map(); // id -> slug
+// the brand's own "Find a Voyage" list (scripts/data/fsy/seed.txt), one card per voyage; the sitemap misses some voyages
+const seed = readFileSync("scripts/data/fsy/seed.txt", "utf8").split("\n").filter((l) => /^FS-I-/.test(l)).map((l) => l.trim().split(/\s+/));
+const ids = new Map(seed); // id -> slug
+for (const [, s] of seed) if (!slugs.includes(s)) slugs.push(s);
 for (const slug of slugs) {
   let t;
   try { t = payload(await get(`${SITE}/voyages/${slug}`)); } catch { console.log("skip page", slug); continue; }

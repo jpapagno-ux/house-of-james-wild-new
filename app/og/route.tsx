@@ -8,7 +8,12 @@ import { ImageResponse } from "next/og";
 //
 // /og?img=<photo url>&t=<title>&k=<kicker>   (built by lib/seo.ts; never called by hand)
 
-export const runtime = "edge";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+
+// Node runtime: the fonts and seal are read from this folder (traced into the function by next.config.ts).
+export const runtime = "nodejs";
+const DIR = path.join(process.cwd(), "app/og");
 
 const W = 1200, H = 630;
 // Photographs come only from the house's own library (or the site itself); anything else gets the house poster.
@@ -22,7 +27,7 @@ function photo(src: string | null): string {
   return src.replace(/\/(image|video)\/upload\//, (_m, kind) => `/${kind}/upload/c_fill,w_${W},h_${H},g_auto/f_jpg,q_80/`).replace(/\bf_auto\b/g, "f_jpg");
 }
 
-const font = (file: string) => fetch(new URL(file, import.meta.url)).then((r) => r.arrayBuffer());
+const font = (file: string) => readFile(path.join(DIR, file));
 
 export async function GET(req: Request) {
   try { return await card(req); } catch (e) { return new Response(`share card failed: ${(e as Error).message}`, { status: 500 }); }
@@ -34,19 +39,15 @@ async function card(req: Request) {
   const kicker = (u.searchParams.get("k") || "").slice(0, 80);
   const [serif, italic, sans, seal] = await Promise.all([
     font("./cormorant-600.woff"), font("./cormorant-500i.woff"), font("./manrope-600.woff"),
-    fetch(new URL("./seal-cream.png", import.meta.url)).then((r) => r.arrayBuffer()),
+    readFile(path.join(DIR, "seal-cream.png")),
   ]);
-  const bytes = new Uint8Array(seal); let bin = "";
-  for (let i = 0; i < bytes.length; i += 8192) bin += String.fromCharCode(...bytes.subarray(i, i + 8192));
-  const sealSrc = `data:image/png;base64,${btoa(bin)}`;
+  const sealSrc = `data:image/png;base64,${seal.toString("base64")}`;
   // the photograph, fetched here so a slow or missing image never breaks the card (it falls back to the house ground)
   let bg: string | null = null;
   try {
     const r = await fetch(photo(u.searchParams.get("img")));
     if (r.ok) {
-      const b = new Uint8Array(await r.arrayBuffer()); let s2 = "";
-      for (let i = 0; i < b.length; i += 8192) s2 += String.fromCharCode(...b.subarray(i, i + 8192));
-      bg = `data:${r.headers.get("content-type") || "image/jpeg"};base64,${btoa(s2)}`;
+      bg = `data:${r.headers.get("content-type") || "image/jpeg"};base64,${Buffer.from(await r.arrayBuffer()).toString("base64")}`;
     }
   } catch { bg = null; }
   const size = title.length > 46 ? 50 : title.length > 30 ? 60 : 68;

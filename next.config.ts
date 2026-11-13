@@ -16,6 +16,8 @@ const isProd = process.env.VERCEL_ENV === "production" && process.env.NEXT_PUBLI
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // the share card (app/og) reads its fonts and seal from disk
+  outputFileTracingIncludes: { "/og": ["./app/og/*.woff", "./app/og/*.png"] },
   images: {
     formats: ["image/avif", "image/webp"],
     qualities: [75, 85],

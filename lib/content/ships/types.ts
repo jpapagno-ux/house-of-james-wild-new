@@ -56,6 +56,8 @@ export type ShipFilm = string | { id: string; title?: string } | null;
 export type ShipRecord = {
   slug: string;
   name: string;
+  /** The vessel's Ledger ID from the Base44 library (VOY-…, the voyages prefix; James, 13 Nov 2026), shown in the overview. */
+  ledgerId?: string;
   brandLine: string;
   operator: string;
   type: "riverboat" | "dahabiya" | string;

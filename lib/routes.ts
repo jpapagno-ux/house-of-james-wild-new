@@ -707,6 +707,7 @@ export const STAY_SLUGS: string[] = [
   "wilderness-vumbura-plains",
   "wolwedans-dune-camp",
   "wren-urban-nest",
+  "wymara",
   "xanadu-island-resort",
   "xela-tulum",
   "xigera-safari-lodge",

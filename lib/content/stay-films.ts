@@ -9,6 +9,16 @@ export type WideFilm =
   | { kind: "vimeo"; id: string; title: string; credit: string; hero?: boolean };
 
 export const STAY_FILMS: Record<string, WideFilm> = {
+  // Casali di Casole's own estate film (47 s, 1080p) from casalidicasole.com, full screen for James's presentation (12 Nov 2026).
+  "casali-di-casole": {
+    kind: "mp4",
+    src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/casali-di-casole/film-estate.mp4`,
+    srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/casali-di-casole/film-estate.mp4`,
+    poster: `${CLD}/so_0,q_auto,f_jpg,w_1920/jwco/stays/casali-di-casole/film-estate.jpg`,
+    title: "Casali di Casole, a Tuscan estate",
+    credit: "Film courtesy of Casali di Casole",
+    hero: true,
+  },
   laucala: {
     kind: "mp4",
     src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/fiji/laucala/film.mp4`,

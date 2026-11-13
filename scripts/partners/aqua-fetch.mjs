@@ -41,6 +41,28 @@ for (const e of Object.values(events).flat()) {
   itineraries[key] = await get(`${BOOK}/itinerary?${q}`).catch(() => null);
 }
 
+// Aqua's YouTube channel (@AquaExpeditionsCruises): the video list its own page carries, for the ship films.
+const youtube = [];
+for (const tab of ["videos", "playlists"]) {
+  const html = await fetch(`https://www.youtube.com/@AquaExpeditionsCruises/${tab}`, { headers: { "accept-language": "en", "user-agent": "Mozilla/5.0" } }).then((r) => r.text()).catch(() => "");
+  const m = html.match(/ytInitialData = (\{.*?\});<\/script>/s);
+  if (!m) continue;
+  const walk = (o) => {
+    if (!o || typeof o !== "object") return;
+    if (o.videoId && o.title) {
+      const title = o.title.runs ? o.title.runs.map((r) => r.text).join("") : o.title.simpleText;
+      youtube.push({ id: o.videoId, title, length: o.lengthText?.simpleText ?? null, published: o.publishedTimeText?.simpleText ?? null });
+    }
+    if (o.lockupViewModel) {
+      const t = o.lockupViewModel.metadata?.lockupMetadataViewModel?.title?.content;
+      if (o.lockupViewModel.contentId && t) youtube.push({ id: o.lockupViewModel.contentId, title: t, kind: o.lockupViewModel.contentType });
+    }
+    for (const k in o) walk(o[k]);
+  };
+  walk(JSON.parse(m[1]));
+}
+console.log("youtube", youtube.length);
+
 mkdirSync("scripts/data/aqua", { recursive: true });
-writeFileSync("scripts/data/aqua/raw.json", JSON.stringify({ fetched: today, trips: trips.TripList, ships: ships.ShipList, events, itineraries, promos }, null, 1));
+writeFileSync("scripts/data/aqua/raw.json", JSON.stringify({ fetched: today, trips: trips.TripList, ships: ships.ShipList, events, itineraries, promos, youtube }, null, 1));
 console.log("events", Object.values(events).flat().length, "itineraries", Object.keys(itineraries).length);

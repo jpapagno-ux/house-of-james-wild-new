@@ -10,6 +10,8 @@ import COUNTRY_LIBRARY from "./content/countries-library.json" with { type: "jso
 
 export const BUILT: string[] = [
   "/",
+  "/search",
+  "/stays/white-desert",
   "/compass",
   "/plan",
   "/folio",
@@ -719,7 +721,7 @@ export const GUARD_ON = process.env.NEXT_PUBLIC_LINK_GUARD === "on" || process.e
 // Pages that actually read their query string. A filter link such as
 // /stays?by=land only appears once its hub can filter; until then it would
 // just reload the same page.
-export const QUERY_AWARE: string[] = ["/plan", "/compass"];
+export const QUERY_AWARE: string[] = ["/plan", "/compass", "/search"];
 
 /** True when the link's page exists (external links always pass). */
 // Country pages generated from the library (scripts/export-countries.py).
@@ -729,7 +731,7 @@ export function isBuilt(href: string): boolean {
   if (/^(https?:|mailto:|tel:)/.test(href)) return true;
   const path = href.split(/[?#]/)[0].replace(/\/$/, "") || "/";
   if (href.split("#")[0].includes("?") && !QUERY_AWARE.includes(path)) return false;
-  if (path.startsWith("/stays/")) return STAY_SLUGS.includes(path.slice(7));
+  if (path.startsWith("/stays/")) return STAY_SLUGS.includes(path.slice(7)) || BUILT.includes(path);
   if (COUNTRY_PATHS.has(path)) return true;
   return BUILT.some((b) => (b.endsWith("/*") ? path.startsWith(b.slice(0, -1)) : b === path));
 }

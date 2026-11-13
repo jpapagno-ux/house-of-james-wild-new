@@ -62,6 +62,8 @@ export function website(): Thing {
     name: SITE.name,
     publisher: { "@id": ids.house },
     inLanguage: "en-US",
+    // The house search at /search?q= (13 Nov 2026), so answer and search engines can search the site directly.
+    potentialAction: { "@type": "SearchAction", target: { "@type": "EntryPoint", urlTemplate: `${SITE.url}/search?q={search_term_string}` }, "query-input": "required name=search_term_string" },
   };
 }
 

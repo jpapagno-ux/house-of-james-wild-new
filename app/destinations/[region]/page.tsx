@@ -19,6 +19,8 @@ import { isResidence } from "@/lib/content/ledger-counts";
 const REGION_CHARTS: Record<string, ChartData> = { ...(REGION_LIB as unknown as Record<string, ChartData>), "central-america": CHART_CENTRAL_AMERICA as unknown as ChartData };
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import LedgerCounter from "@/components/destination/LedgerCounter";
+import PlaceSearch from "@/components/destination/PlaceSearch";
+import { regionScope } from "@/lib/search-bus";
 import PlaceNote from "@/components/destination/PlaceNote";
 import { REGION_NOTES } from "@/lib/content/place-notes";
 import { regionCounts } from "@/lib/content/ledger-counts";
@@ -139,6 +141,8 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
               {/* Theme chips: the Wild Pathways this region leads with (never a volume colour) */}
               {(REGION_PATHWAYS[r.slug] ?? []).length > 0 && <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Pathways">{(REGION_PATHWAYS[r.slug] ?? []).map((k) => pathway(k)).filter((p) => !!p).map((p) => <li key={p!.id}><PathwayChip pathway={p!} href={!GUARD_ON || isBuilt(`/pathways/${p!.key}`) ? `/pathways/${p!.key}` : undefined} /></li>)}</ul>}
               <LedgerCounter place={r.name} counts={regionCounts(r.slug, r.countries.map((c) => c.slug).filter(Boolean) as string[], r.stayCount, (WATERS[r.slug] ?? []).flatMap((k) => journeysFor(k)).filter((j) => j.kind === "voyage").length)} />
+              {/* Search inside this region (James, 13 Nov 2026) */}
+              <PlaceSearch scope={regionScope(r.name, r.slug, r.countries.map((c) => c.name))} className="mt-6" />
             </div>
             {REGION_NOTES[r.slug] && <div className="lg:pt-10"><PlaceNote place={r.name} note={REGION_NOTES[r.slug]} /></div>}
           </div>

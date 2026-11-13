@@ -37,11 +37,37 @@ export function fitDescription(d: string): string {
 // Share image for pages that don't name one (hubs, forms): the house film poster.
 export const DEFAULT_SHARE = { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_1200,h_630/q_auto:good/f_jpg/jwco/site/home/home-film-poster.jpg", alt: "James Wild & Co, exploring since 1982" };
 
+// The share card (app/og): drawn on whichever domain is serving production, so a link texted before the house domain
+// is connected still brings its card.
+const OG_ORIGIN = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : SITE.url;
+
+/** "Cap Karoso, Indonesia: Vetted Stay" → the name, and a kicker line of where and what. */
+export function shareWords(title: string): { name: string; kicker: string; head: string } {
+  const [head, ...rest] = title.split(/:\s+/);
+  const tail = rest.join(": ");
+  const i = head.indexOf(", ");
+  const name = i > 0 ? head.slice(0, i) : head;
+  const where = i > 0 ? head.slice(i + 2) : "";
+  const kicker = [where, tail && tail.length <= 28 ? tail : ""].filter(Boolean).join(" · ");
+  return { name, kicker, head };
+}
+
+/** The branded share card for a page: its own photograph under the house band. */
+export function shareCard(title: string, photo?: string | null): string {
+  const { name, kicker } = shareWords(title);
+  const q = new URLSearchParams({ t: name, ...(kicker ? { k: kicker } : {}), ...(photo ? { img: photo } : {}) });
+  return `${OG_ORIGIN}/og?${q.toString()}`;
+}
+
 export function buildMetadata({ title, description: raw, path, image: given, type = "website", noindex }: PageMeta): Metadata {
   const image = given ?? DEFAULT_SHARE;
   const url = absoluteUrl(path);
   const description = fitDescription(raw);
   const index = isIndexable && !noindex;
+  // Shared by text, mail or social, every page arrives as the same house card, with the brand in its title too
+  // (James, 13 Nov 2026).
+  const card = image ? { url: shareCard(title, image.url), width: 1200, height: 630, alt: image.alt } : null;
+  const shareTitle = `${shareWords(title).head} | ${SITE.name}`;
   return {
     // Long titles drop the brand suffix so the keywords, not the brand, survive Google's cut.
     title: title.length + SUFFIX > MAX_TITLE ? { absolute: title } : title,
@@ -52,16 +78,16 @@ export function buildMetadata({ title, description: raw, path, image: given, typ
       type,
       url,
       siteName: SITE.name,
-      title,
+      title: shareTitle,
       description,
       locale: SITE.locale,
-      ...(image ? { images: [{ url: image.url, alt: image.alt }] } : {}),
+      ...(card ? { images: [card] } : {}),
     },
     twitter: {
-      card: image ? "summary_large_image" : "summary",
-      title,
+      card: card ? "summary_large_image" : "summary",
+      title: shareTitle,
       description,
-      ...(image ? { images: [image.url] } : {}),
+      ...(card ? { images: [card.url] } : {}),
     },
   };
 }

@@ -8,6 +8,8 @@ import Wordmark from "@/components/ledger/Wordmark";
 import { JwcoSeal } from "./Marks";
 import { REGION_DATA } from "@/lib/content/regions";
 import SearchPanel from "./SearchPanel";
+import BackToSearch from "./BackToSearch";
+import { onOpenSearch, type SearchOpen } from "@/lib/search-bus";
 import HouseMenu from "./HouseMenu";
 import CompassSpin from "./CompassSpin";
 import SignInDoors from "./SignInDoors";
@@ -135,7 +137,12 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
   const headerRef = useRef<HTMLElement>(null);
   const [tucked, setTucked] = useState(false);
   const [open, setOpen] = useState(false);
-  const [searching, setSearching] = useState(false);
+  // The house search: null when closed; otherwise what it opens with (typed words, a destination scope).
+  const [search, setSearch] = useState<(SearchOpen & { at: number }) | null>(null);
+  const searching = !!search;
+  const setSearching = (on: boolean, with_: SearchOpen = {}) => setSearch(on ? { ...with_, at: Date.now() } : null);
+  // Any page can open it (a destination's own search, "Back to your search", /search?q=).
+  useEffect(() => onOpenSearch((d) => setSearch({ ...d, at: Date.now() })), []);
 
   // The menu and search cover the page: raise the overlay signal so the homepage film
   // and the volume entrances hold still underneath (lib/overlay.ts).
@@ -229,15 +236,25 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
             <span className="flex flex-col gap-[5px]" aria-hidden="true"><span className="block w-6 h-px bg-current" /><span className="block w-6 h-px bg-current" /></span>
             <span className="hidden sm:inline">Menu</span>
           </button>
+          {/* Phones: the search glass beside Menu (James, 13 Nov 2026: search in the top navigation, site-wide). */}
+          <button type="button" onClick={() => setSearching(true)} className={`lg:hidden inline-flex items-center justify-center h-10 w-10 -ml-1 ${lt ? "text-white" : "text-ink"}`} aria-label="Search lodges, stays, ships and places">
+            <Search className="w-[18px] h-[18px]" strokeWidth={1.5} aria-hidden="true" />
+          </button>
+          {/* Desktop: a search field that reads as one (James, 13 Nov 2026: "inside it says find your favorite lodge,
+              stay, or vessel"). It opens the house search; the words widen as the band does. */}
           <button
             type="button"
             onClick={() => setSearching(true)}
-            className={`hidden lg:inline-flex items-center justify-center gap-2.5 h-10 w-10 xl:w-auto xl:pl-3 xl:pr-3.5 border rounded-[2px] transition-colors ${lt ? "border-white/50 text-white hover:bg-white/10" : "border-keyline hover:border-graphite"}`}
-            aria-label="Ask the house: search the Ledger"
+            className={`hidden lg:inline-flex items-center gap-2.5 h-10 pl-3 pr-3 border rounded-[2px] min-w-0 text-left transition-colors lg:w-[150px] xl:w-[230px] min-[1440px]:w-[290px] ${lt ? "border-white/55 bg-white/10 text-white hover:bg-white/15" : "border-keyline bg-paper hover:border-graphite"}`}
+            aria-label="Search: find a lodge, stay, ship or place"
           >
-            <Search className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" />
-            <span className="hidden xl:inline ledger-eyebrow !text-[10.5px] !text-current whitespace-nowrap">Ask the house</span>
-            <kbd className="hidden min-[1440px]:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4">⌘K</kbd>
+            <Search className="w-4 h-4 shrink-0" strokeWidth={1.5} aria-hidden="true" />
+            <span className={`flex-1 min-w-0 truncate text-[13.5px] ${lt ? "text-white/85" : "text-ink/55"}`}>
+              <span className="xl:hidden">Search</span>
+              <span className="hidden xl:inline min-[1440px]:hidden">Find a lodge, stay or ship</span>
+              <span className="hidden min-[1440px]:inline">Find a lodge, stay, ship or place</span>
+            </span>
+            <kbd className="hidden min-[1440px]:inline text-[10px] opacity-60 border border-current/40 px-1 leading-4 shrink-0">⌘K</kbd>
           </button>
         </div>
 
@@ -291,7 +308,8 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
         </ul>
       </nav>
     </header>
-      <SearchPanel open={searching} onClose={() => setSearching(false)} />
+      {search && <SearchPanel key={search.at} open onClose={() => setSearching(false)} initialQuery={search.q ?? ""} scope={search.scope ?? null} />}
+      <BackToSearch />
       <HouseMenu open={open} onClose={() => setOpen(false)} onSearch={() => setSearching(true)} />
     </>
   );

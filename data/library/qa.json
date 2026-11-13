@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-12",
+ "checkedOn": "2026-11-13",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -1012,6 +1012,14 @@
    "missing": [
     "coordinates"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6af6709c1aa0937e3ad5b3b7",
+   "slug": "casali-di-casole",
+   "name": "Casali di Casole",
+   "country": "Italy",
+   "missing": [],
    "released": true
   },
   {
@@ -3608,6 +3616,16 @@
    "released": true
   },
   {
+   "stay_id": "6af66601b5c442055ccff6ef",
+   "slug": "orpheus-island-lodge",
+   "name": "Orpheus Island Lodge",
+   "country": "Australia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff97b",
    "slug": "our-habitas-namibia",
    "name": "Our Habitas Namibia",
@@ -3702,6 +3720,14 @@
    "slug": "pelo-camp",
    "name": "Pelo Camp",
    "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6af66b52a9bea78c990b4384",
+   "slug": "pelorus-private-island",
+   "name": "Pelorus Private Island",
+   "country": "Australia",
    "missing": [],
    "released": true
   },

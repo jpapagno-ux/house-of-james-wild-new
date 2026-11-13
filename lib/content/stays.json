@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-12",
+ "exportedOn": "2026-11-13",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -9709,6 +9709,131 @@
    },
    "volumes": [
     "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "casali-di-casole",
+   "name": "Casali di Casole",
+   "ledgerId": "STY-2026-000650",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "villa",
+   "tagline": "Eighteen restored farmhouses and villas on a 4,200 acre Tuscan estate, between Siena and Volterra",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c01",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c18",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c22",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c21",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c19",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/casali-di-casole/c16"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Families",
+    "Multi-generational groups",
+    "Friends travelling together",
+    "Celebrations",
+    "Food and wine lovers"
+   ],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": 43.2905,
+    "lng": 11.088
+   },
+   "airport": "Florence (FLR), then by car",
+   "airportDirections": "Florence is about 1 hour 15 minutes by car and Siena about 45 minutes; the concierge arranges cars and drivers.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eighteen residences, each let whole: Villa Scuola (sleeps 4), Villa Sant'Antonio (6), La Fonte di Barbena (6), the Bargagli Penthouse in the castello (three suites), Casale La Casa, Santa Lucia, San Giuseppe, San Damiano, Pulcinello, Vemignano, Escaiole, Poggio alla Corona and Pietti (8 each), Campo al Doccio (10), Le Macie, San Giovanni and San Regolo (12 each) and Cetena Rossa (16).",
+     "Published nightly rates for 2027 run from about EUR 2,645 for Villa Scuola to EUR 6,625 for Cetena Rossa, including VAT, with 20% off stays of five nights or more in the Season of Savings."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Truffle hunting in the estate woods. Cooking classes in your own kitchen, with art, language and ceramic classes. Hiking, horseback riding and mountain biking on the estate. Vineyard tours and wine tastings in Chianti and Montalcino. Hot air ballooning over the hills. Ferrari and classic car rental for the Tuscan roads. Golf at Tenuta La Bagnaia (45 minutes), Ugolino (1 hour) and Castelfalfi (1 hour 30). Day trips to Siena, Volterra, San Gimignano, Monteriggioni and Florence."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Eighteen farmhouses, villas and a penthouse, sleeping four to sixteen, from 1,883 to 12,916 square feet.",
+     "Private pools at most residences, an infinity pool shared by the six villas of Sant'Antonio, a private vineyard at Santa Lucia and a tennis court at Le Macie.",
+     "A bilingual concierge, daily light cleaning, a welcome amenity and basic groceries included.",
+     "Private chefs, sommelier tastings and spa treatments in the residence, on request.",
+     "Access to the restaurants and spa of the Belmond Castello di Casole on the estate, subject to availability."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A whole Tuscan farmhouse with its own pool and land, a concierge on call and a castle hotel's restaurants and spa a short walk or drive away: the privacy of a villa and the service of a resort, on one estate."
+   ],
+   "why": [
+    {
+     "title": "A Tuscan Estate, House by House",
+     "body": "Casali di Casole is a private estate of 4,200 acres in the hills of Casole d'Elsa, between Siena and Volterra, where centuries-old stone farmhouses have been restored as private residences of two to eight bedrooms, most with their own pool. The land was once 31 farms of the Bargagli family, and Querceto Manor dates to the year 998. The Belmond Castello di Casole sits on the estate, and its restaurants and spa are open to residence guests, subject to availability. It is a Timbers Resorts private residence club; when owners are away, the houses are let by the night."
+    }
+   ],
+   "facts": {
+    "best_months": "May, June, September and October for walking, wine and long lunches outdoors; July and August for the pools.",
+    "how_to_get_there": "By car from Florence (about 1 hour 15) or Siena (about 45 minutes); the concierge arranges drivers.",
+    "signature_experiences": "Truffle hunting, cooking in your own kitchen, vineyard tours, hot air ballooning, Siena and San Gimignano.",
+    "who_its_for": "Families and multi-generational groups, friends travelling together, celebrations and food and wine lovers."
+   },
+   "faqs": [
+    {
+     "q": "How much does Casali di Casole cost?",
+     "a": "Casali di Casole publishes nightly rates per residence including 10% VAT. For June and September 2027, its best available rates run from EUR 2,645 a night for Villa Scuola (sleeps 4) and EUR 2,855 for Villa Sant'Antonio (sleeps 6) to EUR 4,979 for Santa Lucia, Campo al Doccio and San Regolo, EUR 5,999 for Le Macie and EUR 6,625 for Cetena Rossa (sleeps 16). The Season of Savings takes 20% off stays of five nights or more. The house confirms the rate for your dates."
+    },
+    {
+     "q": "What is included at Casali di Casole?",
+     "a": "A welcome amenity and basic groceries, a bilingual concierge, daily light cleaning and internet. Private chefs, sommelier tastings, spa treatments, cars and drivers, grocery shopping and activities are arranged at extra cost."
+    },
+    {
+     "q": "Where is Casali di Casole?",
+     "a": "In the hills of Casole d'Elsa, in the province of Siena: about 45 minutes from Siena and Volterra, 30 minutes from Monteriggioni, 1 hour from the coast and 1 hour 15 from Florence."
+    },
+    {
+     "q": "Can guests use the Belmond Castello di Casole?",
+     "a": "Yes. The Belmond Castello di Casole sits on the estate, and residence guests have access to its restaurants and spa, subject to availability."
+    },
+    {
+     "q": "How many people can stay at Casali di Casole?",
+     "a": "Each residence is let whole and sleeps from four (Villa Scuola) to sixteen (Cetena Rossa, eight bedrooms). Several residences can be taken together for a larger family or group."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (presentation, 12 Nov 2026)",
+    "classifiedAt": "2026-11-12"
+   },
+   "volumes": [
+    "europe",
+    "gatherings"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -37308,6 +37433,137 @@
    "placeSlug": null
   },
   {
+   "slug": "orpheus-island-lodge",
+   "name": "Orpheus Island Lodge",
+   "ledgerId": "STY-2026-000648",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Fourteen rooms on a national park island in the Great Barrier Reef, all inclusive, for 28 guests at most",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o04",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o12",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o01",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o09",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/orpheus-island-lodge/o13"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Couples",
+    "Honeymooners",
+    "Families",
+    "Divers and snorkellers",
+    "Exclusive use"
+   ],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Townsville (TSV) or Cairns (CNS), then a helicopter",
+   "airportDirections": "By helicopter: 30 minutes from Townsville or 90 minutes from Cairns, by scheduled service or private charter. Boat transfers from Lucinda (1 to 2 hours, depending on the sea) can be arranged on request.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Fourteen rooms, suites and villas, all facing the Coral Sea, all inclusive, on a two night minimum (three to four recommended).",
+     "North Beachfront Rooms and Suites, renovated and reopened in July 2026, with outdoor baths and showers; the North Beachfront Villa with two king bedrooms; South Beachfront Rooms and Suites in tropical gardens.",
+     "The whole lodge can be taken for exclusive use. Pelorus Private Island, a five suite residence next door, is booked separately."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling and diving the fringing and outer reefs",
+     "Kayaking, paddleboarding and sailing the bay",
+     "Reef charters on the lodge's three boats, with a skipper or guide",
+     "Spa treatments at Gwandalan Day Spa",
+     "A helicopter drop-off on a secluded island with a picnic hamper"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Fringing reef you can snorkel straight off the beach, inside the Great Barrier Reef World Heritage Area.",
+     "All inclusive: three meals a day, Australian wines, beers, spirits and soft drinks, and an all-inclusive minibar.",
+     "Unlimited use of motorised dinghies, paddleboards, kayaks, catamarans, fishing and snorkelling gear.",
+     "A 25 m by 13 m infinity pool, the main pavilion bar, a restaurant, a reading room and Gwandalan Day Spa.",
+     "A veggie patch and free-range hens supply the kitchen; seafood comes from local fishermen."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "The reef is the front garden: step off the beach outside your room and you are snorkelling a fringing reef inside a national park, with stinger suits supplied from November to May."
+   ],
+   "why": [
+    {
+     "title": "An Island That Is Mostly National Park",
+     "body": "Orpheus Island Lodge takes no more than 28 guests in 14 rooms, suites and villas, all facing the Coral Sea, on an island of more than 1,000 hectares of national park with 11 km of coastline. The fringing reef starts at the beach in front of your room. Meals, drinks, the minibar, the boats and the snorkel gear are all included."
+    }
+   ],
+   "facts": {
+    "best_months": "Stinger season runs November to May; the lodge supplies sunsuits.",
+    "how_to_get_there": "Helicopter from Townsville (30 minutes) or Cairns (90 minutes); boat from Lucinda on request.",
+    "signature_experiences": "Snorkelling from the beach, reef charters, the daily Orpheus experience, Gwandalan Day Spa, island picnics.",
+    "who_its_for": "Couples and honeymooners, families (all ages welcome), divers and snorkellers, and groups taking the whole lodge."
+   },
+   "faqs": [
+    {
+     "q": "How do you get to Orpheus Island Lodge?",
+     "a": "By helicopter, 30 minutes from Townsville or 90 minutes from Cairns, by scheduled service or private charter. Boat transfers from Lucinda take 1 to 2 hours and can be arranged on request."
+    },
+    {
+     "q": "Is Orpheus Island Lodge all inclusive?",
+     "a": "Yes. Stays include three meals a day, an all-inclusive minibar, Australian beer, wine, spirits and soft drinks, unlimited use of motorised dinghies, paddleboards, kayaks, catamarans, fishing and snorkelling gear, and a daily curated Orpheus experience."
+    },
+    {
+     "q": "How many guests does Orpheus Island Lodge take?",
+     "a": "No more than 28, in 14 rooms, suites and villas."
+    },
+    {
+     "q": "Are children welcome at Orpheus Island Lodge?",
+     "a": "Yes. Guests of all ages are welcome."
+    },
+    {
+     "q": "Is there a minimum stay?",
+     "a": "Two nights; the lodge recommends three to four."
+    },
+    {
+     "q": "When is stinger season?",
+     "a": "Usually November to May. The lodge provides sunsuits for swimming and snorkelling."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (Antipodal portfolio, 12 Nov 2026)",
+    "classifiedAt": "2026-11-12"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "pacuare-lodge",
    "name": "Pacuare Lodge",
    "ledgerId": "STY-2026-000206",
@@ -38245,6 +38501,132 @@
     "6ae6974122b9348d6fa6b239",
     "6ae697427ca51cd40af01fc0"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "pelorus-private-island",
+   "name": "Pelorus Private Island",
+   "ledgerId": "STY-2026-000649",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "villa",
+   "tagline": "A 400 hectare Great Barrier Reef island with one five suite residence, always booked whole",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p09",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p01",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/pelorus-private-island/p12"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Families",
+    "Friends travelling together",
+    "Couples",
+    "Celebrations",
+    "Exclusive use"
+   ],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": -18.551774,
+    "lng": 146.497191
+   },
+   "airport": "Townsville (TSV) or Cairns (CNS), then a private helicopter",
+   "airportDirections": "A private helicopter charter: 30 minutes from Townsville or 90 minutes from Cairns, priced by helicopter and departure point. Or arrive by Morris Nautical yacht from Cairns or Townsville, or connect from Brisbane or Sydney by the Challenger 604 private jet.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "One residence of five suites, sold by the number of suites you need, with the island always yours: four king suites with ensuite and shower, and one triple-share suite with ensuite and shower, for up to 11 guests.",
+     "Fully hosted and all inclusive. Most guests stay three to five nights."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling the fringing reef from the beach",
+     "Guided jet ski tours of the Palm Islands",
+     "Reef fishing and an outer reef excursion",
+     "A Hinchinbrook Island adventure",
+     "A tour of the Orpheus Island Research Station",
+     "Kayaks, seabobs, paddleboards and Schiller water bikes",
+     "Picnics on secluded beaches"
+    ]
+   },
+   "features": {
+    "paras": [
+     "The whole island for your party: one residence of 913 m2 with five suites, open-plan living and entertaining areas.",
+     "A private chef with daily menus tailored to your group, and premium wines, beers, spirits and Champagne included.",
+     "A beachfront solar-heated infinity pool, a teppanyaki grill, a Big Green Egg and an Ooni pizza oven.",
+     "Fringing reef to snorkel straight off the private beach.",
+     "Guided jet ski island tours, reef fishing, a Hinchinbrook Island adventure and an outer reef excursion included."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Even a couple in one suite has the whole island: the beaches, the reef, the pool and the chef are never shared with another booking."
+   ],
+   "why": [
+    {
+     "title": "One Residence, One Island",
+     "body": "Pelorus is 400 hectares of wilderness and fringing reef at the northern end of the Palm archipelago, off Townsville, with a single residence of five suites for up to 11 guests. Whether you take one suite or all five, the island is yours alone, with a private chef, a host team and guides. Opened in 2024; a member of Luxury Lodges of Australia."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Private helicopter from Townsville (30 minutes) or Cairns (90 minutes), or by Morris Nautical yacht.",
+    "signature_experiences": "Fringing reef snorkelling, jet ski island tours, reef fishing, Hinchinbrook Island, the outer reef.",
+    "who_its_for": "Couples, families and groups of friends up to 11, celebrations and retreats."
+   },
+   "faqs": [
+    {
+     "q": "How much does Pelorus Private Island cost?",
+     "a": "Pelorus publishes rates in Australian dollars per night for exclusive use of the island: from AU$18,500 for one suite (up to two guests), AU$20,500 for two suites, AU$22,500 for three, AU$24,500 for four and AU$26,500 for the full house of five suites (up to 11 guests). Festive surcharges and helicopter transfers are extra."
+    },
+    {
+     "q": "What is included at Pelorus Private Island?",
+     "a": "All meals by your private chef, premium wines, beers, spirits, Champagne and soft drinks, guided experiences such as fringing reef snorkelling, jet ski island tours, reef fishing, a Hinchinbrook Island adventure and an outer reef excursion, and use of kayaks, seabobs, paddleboards and water bikes."
+    },
+    {
+     "q": "How do you get to Pelorus Private Island?",
+     "a": "By private helicopter, 30 minutes from Townsville or 90 minutes from Cairns, or by Morris Nautical yacht from either city."
+    },
+    {
+     "q": "How many guests does Pelorus take?",
+     "a": "Up to 11, in five suites in a single residence. The island is only ever booked by one party."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (Antipodal portfolio, 12 Nov 2026)",
+    "classifiedAt": "2026-11-12"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

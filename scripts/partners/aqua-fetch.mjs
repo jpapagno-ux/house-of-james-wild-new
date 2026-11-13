@@ -70,10 +70,10 @@ const photos = {};
 for (const p of PAGES) {
   const html = (await fetch(`https://www.aquaexpeditions.com/${p}`, { headers: { "user-agent": "Mozilla/5.0" } }).then((r) => r.text()).catch(() => "")).replace(/\\u0026/g, "&").replace(/&amp;/g, "&");
   const out = [];
-  const re = /https:\/\/d20knvk822eu5a\.cloudfront\.net\/s3fs-public-optimized\/(?:styles\/manual_crop\/public\/)?([^"'\s)?\\]+?)\.webp/g;
+  const re = /https:\/\/d20knvk822eu5a\.cloudfront\.net\/s3fs-public-optimized(?:-tablet|-mobile)?\/(?:styles\/manual_crop\/public\/)?([^"'\s)?\\]+?)\.webp/g;
   let m;
   while ((m = re.exec(html))) {
-    const orig = `https://d20knvk822eu5a.cloudfront.net/s3fs-public/${m[1]}`;
+    const orig = `https://d20knvk822eu5a.cloudfront.net/s3fs-public/${m[1]}${/\.(jpe?g|png|webp)$/i.test(m[1]) ? "" : ".webp"}`;
     if (out.some((x) => x.src === orig) || /menu-|newsletter|logo|icon|placeholder/i.test(orig)) continue;
     const near = html.slice(Math.max(0, m.index - 600), m.index + 600);
     const alt = (near.match(/alt="([^"]{3,200})"/) || near.match(/\\"alt\\":\\"([^"\\]{3,200})/) || [])[1] ?? null;

@@ -1,6 +1,7 @@
 # Aqua Expeditions partner data: fetches the public trips, ships, departures and day-by-day
 # itineraries Aqua's own site loads, and keeps them as a run artifact (scripts/data/aqua/raw.json)
-# for scripts/partners/aqua-build.mjs. Run by hand, or on a push that changes the fetch script.
+# for scripts/partners/aqua-build.mjs, and commits it to the branch it ran on. Run by hand, or on a
+# push that changes the fetch script.
 name: Aqua Expeditions fetch
 
 on:
@@ -9,7 +10,7 @@ on:
     paths: [scripts/partners/aqua-fetch.mjs, .github/workflows/aqua-fetch.yml]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   fetch:
@@ -21,8 +22,10 @@ jobs:
         with:
           node-version: 22
       - run: node scripts/partners/aqua-fetch.mjs
-      - uses: actions/upload-artifact@v4
-        with:
-          name: aqua-raw
-          path: scripts/data/aqua/raw.json
-          retention-days: 30
+      - name: Commit the raw data
+        run: |
+          git config user.name "jwco-bot"
+          git config user.email "jwco-bot@users.noreply.github.com"
+          git add scripts/data/aqua/raw.json
+          git diff --cached --quiet || git commit -m "Aqua Expeditions raw data, $(date -u +%F)"
+          git push

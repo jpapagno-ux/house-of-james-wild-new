@@ -6,7 +6,7 @@ import { rankAdvisors, type Rankable } from "../lib/advisors/rank.ts";
 import dna from "../lib/content/advisors-library.json" with { type: "json" };
 
 const JAMES = "james-papagno";
-const countryOfRecord = (id: string) => ({ "STY-2026-882896": "indonesia", "STY-2026-000525": "ireland" } as Record<string, string>)[id] ?? null;
+const countryOfRecord = (id: string) => ({ "VSL-2026-882896": "indonesia", "STY-2026-000525": "ireland" } as Record<string, string>)[id] ?? null;
 const fromLibrary = (slug: string, extra: Partial<Rankable<string>> = {}): Rankable<string> => {
   const d = dna.advisors.find((x) => x.slug === slug)!;
   return { a: slug, slug, entries: [], dna: d, deskCountries: [], deskVolumes: [], ...extra };
@@ -30,7 +30,7 @@ test("a stated country ranks a DNA-only advisor (no Desk) for that country", () 
 });
 
 test("a marked entry on the record outranks knowing the country; the advisor's own Library mark counts as slept", () => {
-  const r = rank({ ledgerId: "STY-2026-882896", countrySlug: "indonesia" });
+  const r = rank({ ledgerId: "VSL-2026-882896", countrySlug: "indonesia" });
   assert.equal(r.advisors[0], "anthony-papagno", "Anthony's Sailed It on Aliikai leads");
   assert.equal(r.slept, 1);
   assert.equal(r.carried, 1);

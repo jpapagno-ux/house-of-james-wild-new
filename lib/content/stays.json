@@ -59190,6 +59190,135 @@
    "placeSlug": null
   },
   {
+   "slug": "wymara",
+   "name": "Wymara Resort + Villas",
+   "ledgerId": "STY-2026-000651",
+   "country": "Turks and Caicos",
+   "countrySlug": "turks-caicos",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Grace Bay's beachfront studios and suites, and the first Forbes Five-Star villas in Turks and Caicos",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w01",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w30",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w25",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w12",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w26",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w22",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w13",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/wymara/w11"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Families",
+    "Couples and honeymoons",
+    "Multi-generational groups",
+    "Celebrations",
+    "Food lovers"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-13",
+   "coords": {
+    "lat": 21.7822,
+    "lng": -72.2098
+   },
+   "airport": "Providenciales International Airport (PLS)",
+   "airportDirections": "Wymara states the Resort is about 10 to 14 minutes and the Villas 15 to 20 minutes from PLS. A private SUV for up to six is a flat US$132 one way to the Resort and US$165 to the Villas, taxes and gratuity included; the Four, Five and Six Bedroom Villas include private roundtrip airport transfers.",
+   "founderNote": "Founder vetted (James, 13 Nov 2026), with a relationship to the house.",
+   "rooms": {
+    "paras": [
+     "The Resort on Grace Bay Beach: Garden, Pool View, Ocean View, Oceanfront, Oceanfront Grand and Grand Deluxe Oceanfront Studios of 620 to 790 square feet; One, Two and Three Bedroom Oceanfront Suites; and the Penthouse Studio (950 square feet, a hot tub on the balcony), the One Bedroom Penthouse Suite (about 2,000 square feet) and the Three Bedroom Penthouse Suite (3,700 square feet, for up to seven).",
+     "The Villas at Sunset Cove on Turtle Tail: four One Bedroom Pool Villas of 955 square feet above Sunset Cove Beach, the Four Bedroom Acua and Amuse Villas, the Five Bedroom Cinco and Amuse Villas, and the Six Bedroom Villas of about 10,000 square feet, completed in March 2026. The Amuse Villas have their own water slide into the sea."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Complimentary Hobie Cat sailing, clear-bottom kayaks, paddleboards and snorkel gear on Grace Bay Beach, with the best snorkelling a seven minute walk away.",
+     "Diving on the third largest coral reef system in the world, including a 6,000 foot wall, with turtles, rays and, in season, whales.",
+     "Bonefishing, bottom and deep sea fishing, sailing to uninhabited cays, snuba for ages eight and up, horseback riding on the beach and island eco tours.",
+     "Yoga on Grace Bay Beach, aqua yoga, Pool-Lates, sound baths and breathwork, all complimentary.",
+     "Weekly beach barbecues with a fire pit, private candlelit dinners on the beach and private chefs in the villas."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "A 7,000 square foot infinity-edge pool on Grace Bay Beach, with four island pods and beach and pool cabanas.",
+     "Indigo, Blue Water Bistro and Pink Bar at the Resort, and Land + Sea at Sunset Cove, all led by Executive Chef Andrew Mirosch.",
+     "The Spa at Wymara, with 111SKIN and Wildflower Skincare Lab treatments, couples' suites and a 24-hour fitness center.",
+     "Sunset Cove Beach Club for villa guests: a 25-metre lap pool, tennis, pickleball, basketball, bocce, sauna and steam, a game room, and the Caribbean's first in-ocean pool.",
+     "Daily full American breakfast at the Resort; a villa experience manager, butler and chef-designed breakfast at the Villas."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Turks and Caicos' first Forbes Five-Star villas, with overwater sundecks, water slides into the sea and the Caribbean's first in-ocean pool, paired with a lively beachfront resort on Grace Bay, so a family can have a private villa and a resort's restaurants, spa and beach in one stay."
+   ],
+   "why": [
+    {
+     "title": "Two Ways to Stay, One House",
+     "body": "Wymara is two places under one name. The Resort sits on the western end of Grace Bay Beach, sociable and stylish around a 7,000 square foot infinity pool, with studios and suites a few steps from the sand. Six to eight minutes away on Turtle Tail, Wymara Villas Sunset Cove is a 15 acre peninsula of private villas with their own pools, overwater sundecks and a beach club, and in 2026 it became the first Forbes Five-Star property in Turks and Caicos. Villa guests use everything at the Resort; Resort guests have the beach that Trip Advisor travellers have called the best in the world."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round. Trade winds keep it warm and breezy; peak season runs mid December to April, with the holiday weeks (20 December to 4 January) priced highest.",
+    "how_to_get_there": "Fly to Providenciales (PLS) on American, Delta, United, JetBlue or Southwest, Air Canada or WestJet from Canada, or British Airways and Virgin Atlantic twice weekly from London Heathrow. The Resort is 10 to 14 minutes from the airport, the Villas 15 to 20.",
+    "signature_experiences": "Grace Bay Beach, the infinity pool, dinner at Indigo, the in-ocean pool and sunsets at Sunset Cove, diving the reef wall, sailing to uninhabited cays.",
+    "who_its_for": "Couples on Grace Bay, families and multi-generational groups in the villas, celebrations and weddings, and food lovers."
+   },
+   "faqs": [
+    {
+     "q": "How much does Wymara cost?",
+     "a": "Wymara does not publish nightly room rates on its website; rates vary by season and room. James confirms the rate, what is included and the deposit terms for your dates. Published extras include beach and pool cabanas at US$175 a day (US$200 from 20 December to 4 January) and private airport SUVs at US$132 one way to the Resort and US$165 to the Villas."
+    },
+    {
+     "q": "What is the difference between Wymara Resort and Wymara Villas?",
+     "a": "The Resort is on Grace Bay Beach, with studios, suites and penthouses around a 7,000 square foot infinity pool and three restaurants and bars. Wymara Villas Sunset Cove is a private peninsula on Turtle Tail, six to eight minutes away, with one to six bedroom villas, private pools, a beach club and Land + Sea restaurant. Villa guests can use all of the Resort's amenities, with transfers between the two."
+    },
+    {
+     "q": "What is included at Wymara?",
+     "a": "Resort guests have a daily full American breakfast at Indigo, Wi-Fi, parking, the 24-hour fitness center, twice-daily housekeeping, and Hobie Cats, kayaks, paddleboards and snorkel gear. Villa guests have a chef-designed daily breakfast, a villa experience manager, butler service, a complimentary minibar, the Sunset Cove Beach Club and transfers to the Resort; the Four, Five and Six Bedroom Villas add private roundtrip airport transfers."
+    },
+    {
+     "q": "Is Wymara good for families?",
+     "a": "Yes. The Grand Studios sleep up to four, the suites and penthouses up to seven, and the villas up to six bedrooms, two of them with a water slide into the sea. The Sunset Cove Beach Club has tennis, pickleball, basketball, a game room and a shallow beach with the Caribbean's first in-ocean pool."
+    },
+    {
+     "q": "How do you get to Wymara?",
+     "a": "Fly to Providenciales International Airport (PLS). The Resort is 10 to 14 minutes away and the Villas 15 to 20, by shared taxi or a private SUV that Wymara arranges with 24 hours' notice."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-13"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "xanadu-island-resort",
    "name": "Xanadu Island Resort",
    "ledgerId": "STY-2026-196509",

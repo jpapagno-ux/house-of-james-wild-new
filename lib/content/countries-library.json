@@ -4635,7 +4635,7 @@
    "region": "caribbean-mexico",
    "regionName": "Caribbean & Mexico",
    "ledgerId": "DST-2026-000061",
-   "subtitle": "1 vetted stays",
+   "subtitle": "2 vetted stays",
    "leading": "White sand beaches, impossibly clear water, and calm island breezes define this serene archipelago. Coral reefs fringe the shoreline, and shades of blue shift gently across shallow lagoons. Stays here celebrate barefoot luxury with oceanfront tranquillity. Snorkel vibrant reefs, kayak through quiet mangroves, or enjoy long, easy days on soft sands. Turks and Caicos invites pure relaxation shaped by sea and sun.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec746541e0940e7700a96_TurksHero.jpg",
@@ -4649,7 +4649,7 @@
    "airports": [
     [
      "Providenciales International Airport (PLS)",
-     "Serves 1 stay in the Ledger here"
+     "Serves 2 stays in the Ledger here"
     ]
    ],
    "transfers": [],

@@ -1,0 +1,30 @@
+# Four Seasons Yachts partner data: every Four Seasons I sailing the brand publishes, with its day by day
+# and each suite's published fare, read from fourseasonsyachts.com's own server-rendered voyage pages.
+# Commits scripts/data/fsy/raw.json to the branch it ran on, for scripts/partners/fsy-build.mjs.
+name: Four Seasons Yachts fetch
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/partners/fsy-fetch.mjs, .github/workflows/fsy-fetch.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/partners/fsy-fetch.mjs
+      - name: Commit
+        run: |
+          git config user.name "jwco-bot"
+          git config user.email "jwco-bot@users.noreply.github.com"
+          git add scripts/data/fsy/
+          git diff --cached --quiet || git commit -m "Four Seasons Yachts data, $(date -u +%F)"
+          git push

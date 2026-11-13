@@ -129135,7 +129135,189 @@
    },
    "legacyTrack": false
   },
-  "11N-AQL-Mahe to Zanzibar|MAHE|ZANZI|11|0": null,
+  "11N-AQL-Mahe to Zanzibar|MAHE|ZANZI|11|0": {
+   "id": "27570",
+   "name": "11N Aqua Lares Cruise Mahe to Zanzibar (MAHE -> ZANZI)",
+   "displayName": "The Coralline Seychelles & Tanzania",
+   "schedules": [
+    {
+     "day": "Day 1",
+     "country": "East Africa",
+     "locations": "L'Escale Marina (Mahe)",
+     "details": "Embark on the voyage of a lifetime from Mahé, the largest island in the Seychelles archipelago. Settle into your luxurious design suite on board Aqua Lares and meet your Cruise Director and Naturalist Guides. Enroute to our first destination, enjoy panoramic views from the sundeck as we sail past neighboring islands.​"
+    },
+    {
+     "day": "Day 2",
+     "country": "East Africa",
+     "locations": "D’Arros Island, Amirante​",
+     "details": "We head to D'Arros Island, a secluded, privately owned coral cay in the Amirantes Group, renowned for its pristine ecosystem and rich marine environment. Managed by the Save Our Seas Foundation for conservation, the island is surrounded by waters teeming with sharks, rays, and sea turtles. Begin the morning with diving or snorkeling at St Joseph Channel, then explore Turtle Town in the afternoon for more underwater encounters. We cap off the day with a delicious dinner on board as we sail onward.​"
+    },
+    {
+     "day": "Day 3",
+     "country": "East Africa",
+     "locations": " Saint-Francois Atoll, Alphonse​",
+     "details": "In the morning, we head out on tenders for a scenic ride to the Alphonse group of islands. While there, explore a lush coconut forest and enjoy a dive or snorkel along the shore to discover stunning hard coral formations teeming with marine life. In the afternoon, we explore Saint-Francois Atoll for the opportunity to spot juvenile sharks, crabs, and crab plovers in the mangroves. This atoll also presents snorkeling, diving, kayaking, and paddleboarding opportunities to see huge coral formations in the lagoons and surrounding barrier reef.​"
+    },
+    {
+     "day": "Day 4",
+     "country": "East Africa",
+     "locations": " Providence Atoll, Farquhar​",
+     "details": "Explore Providence Atoll with its vibrant azure waters, rich marine life, and abundance of seabirds including red-footed boobies. Snorkelers and divers get a chance to be among the few to explore undiscovered coral reefs around these islands.​"
+    },
+    {
+     "day": "Day 5",
+     "country": "East Africa",
+     "locations": "Astove Island, Aldabra​",
+     "details": "Astove is known to be one of the best snorkeling and diving spots in the Indian Ocean courtesy of the Astove Wall. Often described as the underwater Grand Canyon, this four-mile-long wall is covered in soft corals and frequented by marine life including rays, sharks, and reef fish. It features plunging depths and incredible visibility that can extend up to 40 meters. Astove is a bucket-list item for every avid underwater explorer. ​"
+    },
+    {
+     "day": "Day 6",
+     "country": "East Africa",
+     "locations": "Cosmoledo Atoll, Aldabra ​",
+     "details": "Start the day with a guided tender excursion along Cosmoledo Atoll's lagoon, in search of seabirds such as masked gannets and brown boobies, both of which aren't found anywhere else in the Seychelles. Dive or snorkel beneath the surface to explore the vibrant marine life that thrives within the atoll's protected waters.​"
+    },
+    {
+     "day": "Day 7",
+     "country": "East Africa",
+     "locations": "Aldabra Atoll, Aldabra​",
+     "details": "Wake up to views of Aldabra, a coral atoll known to harbor one of the world's most isolated ecosystems. Aldabra is home to the largest population of giant tortoises on the planet, with more than 100,000 of these incredible creatures roaming the atoll's four islands. In the morning, we visit the Aldabra Research Station and old settlement before heading to the island's east side for a tender ride and nature walk. In the afternoon, embark on a diving or snorkeling excursion to discover the surrounding waters, home to a thriving population of tropical fish, sharks, sea turtles, and occasional manta ray sightings.​"
+    },
+    {
+     "day": "Day 8",
+     "country": "East Africa",
+     "locations": " Assumption Island, Aldabra​",
+     "details": "We continue our exploration with a morning of ocean swims, paddleboarding, or kayaking in the clear waters off Assumption Island. Venture beneath the surface on snorkeling or diving excursions to its vibrant coral reefs, where turtles, rays, and schools of tropical fish thrive in these remote waters.​"
+    },
+    {
+     "day": "Day 9",
+     "country": "East Africa",
+     "locations": "At Sea​",
+     "details": "As we spend the day sailing towards Tanzania, treat yourself to some R&R at the onboard spa or jacuzzi. For the avid birdwatchers, being out at sea presents the opportunity to spot red-footed boobies soaring overhead in their hunt for flying fish. If you wish, sit in for presentations by our expert naturalist guides to learn more about the regional geology, flora, and fauna. Savor world-class dining throughout the day and end the evening with stargazing from the sundeck. ​"
+    },
+    {
+     "day": "Day 10",
+     "country": "East Africa",
+     "locations": "Kilindoni Bay & Mange, Mafia Island​",
+     "details": "The day begins at Mafia Island -- renowned for its calm, turquoise waters and as the only island in Tanzania regularly frequented by whale sharks. At Kilindoni Bay, guests can snorkel alongside these gentle giants before returning on board for lunch. After lunch, enjoy a snorkel or dive off vessel before we sail off to Mange, a pristine sandbank off the coast of Mafia Island. As evening approaches, enjoy sundowners at the Outdoor Lounge while taking in the coastal views.​"
+    },
+    {
+     "day": "Day 11",
+     "country": "East Africa",
+     "locations": "Mange & Chole Bay, Mafia Island​",
+     "details": "Start the day at Mange, where a morning of relaxation at Aqua Lares' Beach Club awaits, surrounded by vibrant coral reefs teeming with tropical fish. After lunch, we arrive at Chole Bay, where crystal-clear lagoon waters invite exploration. Depending on the tide, snorkeling and diving excursions reveal colorful coral gardens and schools of tropical fish gliding through the shallows, while kayaking through the lagoon offers a serene perspective.​"
+    },
+    {
+     "day": "Day 12",
+     "country": "East Africa",
+     "locations": "Azam Marine (Zanzibar)​",
+     "details": "Enjoy breakfast and savor the views aboard Aqua Lares one more time before saying goodbye to the crew. After disembarking, guests may opt for a guided excursion — until around 10:30AM — through Stone Town's historic alleyways before continuing their onward journey.​"
+    }
+   ],
+   "mapImageUrl": "https://d20knvk822eu5a.cloudfront.net/booking-optimized/sites/default/files/image/2026-04/AQUA%20LARES%20-%2011N%20The%20Coralline%20Seychelles%20%26%20Tanzania_0.png.webp",
+   "mapData": {
+    "itineraryName": "11N Aqua Lares Cruise Mahe to Zanzibar (MAHE -> ZANZI)",
+    "coordinates": [
+     [
+      {
+       "x": 1792.307693,
+       "y": 384.669471
+      }
+     ],
+     [
+      {
+       "x": 1736.923077,
+       "y": 426.977164
+      }
+     ],
+     [
+      {
+       "x": 1698.461539,
+       "y": 521.592548
+      }
+     ],
+     [
+      {
+       "x": 1646.153846,
+       "y": 597.746394
+      }
+     ],
+     [
+      {
+       "x": 1556.923077,
+       "y": 587.746394
+      }
+     ],
+     [
+      {
+       "x": 1526.923077,
+       "y": 566.977164
+      }
+     ],
+     [
+      {
+       "x": 1482.307693,
+       "y": 561.592548
+      }
+     ],
+     [
+      {
+       "x": 1488.461539,
+       "y": 575.438702
+      }
+     ],
+     [
+      {
+       "x": 1383.846154,
+       "y": 528.515625
+      }
+     ],
+     [
+      {
+       "x": 1260.769231,
+       "y": 499.387019
+      },
+      {
+       "x": 1259.23077,
+       "y": 520.925481
+      }
+     ],
+     [
+      {
+       "x": 1270.769231,
+       "y": 512.463942
+      }
+     ],
+     [
+      {
+       "x": 1246.923077,
+       "y": 454.002404
+      }
+     ]
+    ]
+   },
+   "departTiming": "Afternoon",
+   "arrivalTiming": "Morning",
+   "relatedEvents": [
+    "11N-AQL-Mahe to Zanzibar"
+   ],
+   "itineraryLink": {
+    "url": "https://aquaexpeditions.canto.global/direct/document/ikl2i3jb295p36qep0c7n6r475/iSWLS3aMf7zrYPvpDghBJ6rRiHM/original?content-type=application%2Fpdf&name=aqua-lares_itinerary_east-africa_11n-the-coralline-seychelles-and-tanzania.pdf",
+    "title": null
+   },
+   "faqLink": {
+    "url": "https://aquaexpeditions.canto.global/direct/document/fmdbpgpns91glfuatdnlvvb400/PhBtSiIu3acLYuV7jkxw0HBgn8o/original?content-type=application%2Fpdf&name=aqua-lares_east-africa_faq.pdf",
+    "title": null
+   },
+   "packingLink": {
+    "url": "https://aquaexpeditions.canto.global/direct/document/kmpkeq44597t51i927p1g59h3h/ZSZ6zozM_XElLjkXA6pDOXo5ZB4/original?content-type=application%2Fpdf&name=aqua-lares_east-africa_what-to-pack.pdf",
+    "title": null
+   },
+   "embarkDisembarkLink": {
+    "url": "https://aquaexpeditions.canto.global/direct/document/5d201v8kc16p7eotjp6bva9o3q/0_-maBv9_Aa-sf-bkuIlNy3cfbc/original?content-type=application%2Fpdf&name=aqua-lares_east-africa_embarkation-and-disembarkation_11n-the-coralline-seychelles-and-tanzania.pdf",
+    "title": null
+   },
+   "legacyTrack": false
+  },
   "10N-AQL-Zanzibar to Mahe|ZANZI|MAHE|10|0": {
    "id": "27568",
    "name": "10N Aqua Lares Cruise Zanzibar to Mahe (ZANZI -> MAHE)",
@@ -129307,162 +129489,7 @@
    },
    "legacyTrack": false
   },
-  "9N-AQL-Mahe to Mahe TEC|MAHE|MAHE|9|0": {
-   "id": "27567",
-   "name": "9N Aqua Lares Cruise Mahe to Mahe (MAHE -> MAHE)",
-   "displayName": "Aldabra & The Coralline Seychelles",
-   "schedules": [
-    {
-     "day": "Day 1",
-     "country": "East Africa",
-     "locations": "L'Escale Marina (Mahe)",
-     "details": "Embark on the voyage of a lifetime from Mahé, the largest island in the Seychelles archipelago. Settle into your luxurious design suite on board Aqua Lares and meet your Cruise Director and Naturalist Guides. Enroute to our first destination, enjoy panoramic views from the sundeck as we sail past neighboring islands of the Sainte Anne National Marine Park. ​"
-    },
-    {
-     "day": "Day 2",
-     "country": "East Africa",
-     "locations": "D'Arros Island, Amirante​",
-     "details": "We head to D'Arros Island, a secluded, privately owned coral cay in the Amirantes Group, renowned for its pristine ecosystem and rich marine environment. Managed by the Save Our Seas Foundation for conservation, the island is surrounded by waters teeming with sharks, rays, and sea turtles. Begin the morning with diving or snorkeling at St Joseph Channel, then explore Turtle Town in the afternoon for more underwater encounters. We cap off the day with a delicious dinner on board as we sail onward.​"
-    },
-    {
-     "day": "Day 3",
-     "country": "East Africa",
-     "locations": "At Sea",
-     "details": "As we spend the day sailing south towards Aldabra, treat yourself to some R&R at the onboard spa or jacuzzi. For the avid birdwatchers, being out at sea presents the opportunity to spot red-footed boobies soaring overhead in their hunt for flying fish. If you wish, sit in for presentations by our expert naturalist guides to learn more about the Seychelles' unique geology, flora, and fauna. Savor world-class dining throughout the day and end the evening with stargazing from the sundeck. ​"
-    },
-    {
-     "day": "Day 4",
-     "country": "East Africa",
-     "locations": "Astove Island, Aldabra​",
-     "details": "Astove is known to be one of the best snorkeling and diving spots in the Indian Ocean courtesy of the Astove Wall. Often described as the underwater Grand Canyon, this four-mile-long wall is covered in soft corals and frequented by marine life including rays, sharks, and reef fish. It features plunging depths and incredible visibility that can extend up to 40 meters. Astove is a bucket-list item for every avid underwater explorer. ​"
-    },
-    {
-     "day": "Day 5",
-     "country": "East Africa",
-     "locations": "Aldabra Atoll, Aldabra​",
-     "details": "Arrive at Aldabra, a coral atoll known to harbor one of the world's most isolated ecosystems. Aldabra is home to the largest population of giant tortoises on the planet, with more that 100,000 of these incredible creatures roaming the atoll's four islands. In the afternoon we visit the Aldabra Research Station and old settlement before heading to the island's west side for a snorkel or dive to discover the surrounding waters that are home to a thriving population of tropical fish, sharks, and sea turtles, coupled with occasional manta ray sightings as well. ​"
-    },
-    {
-     "day": "Day 6",
-     "country": "East Africa",
-     "locations": "Cosmoledo Atoll, Aldabra​",
-     "details": "Start the day with a guided tender excursion along Cosmoledo Atoll's lagoon, in search of seabirds such as masked gannets and brown boobies, both of which aren't found anywhere else in the Seychelles. Dive or snorkel beneath the surface to explore the vibrant marine life that thrives within the atoll's protected waters.​"
-    },
-    {
-     "day": "Day 7",
-     "country": "East Africa",
-     "locations": "Providence Atoll, Farquhar​",
-     "details": "Explore Providence Atoll with its vibrant azure waters, rich marine life, and abundance of seabirds including red-footed boobies. Snorkelers and divers get a chance to be among the few to explore undiscovered coral reefs around these islands.​"
-    },
-    {
-     "day": "Day 8",
-     "country": "East Africa",
-     "locations": "Saint-Francois Atoll, Alphonse​",
-     "details": "In the morning, we head out on tenders for a scenic ride to the Alphonse group of islands. While there, explore a lush coconut forest and enjoy a dive or snorkel along the shore to discover stunning hard coral formations teeming with marine life. In the afternoon, we explore Saint-Francois Atoll for the opportunity to spot juvenile sharks, crabs, and crab plovers in the mangroves. This atoll also presents snorkeling, diving, kayaking, and paddleboarding opportunities to see huge coral formations in the lagoons and surrounding barrier reef.​"
-    },
-    {
-     "day": "Day 9",
-     "country": "East Africa",
-     "locations": "Desroches Island, Amirante​",
-     "details": "Spend the morning exploring Desroches Island, where incredible underwater seascapes including tunnels, sinkholes, and the renowned \"Desroches Drop.\" await. Diving and snorkeling excursions reveal hawksbill and green turtles, sharks, and vibrant tropical fish gliding through crystal-clear waters. The island is fringed by stunning white sandy beaches and home to the five-star Four Seasons Desroches. Opportunities to kayak and paddleboard offer a serene perspective of the island's vibrant reef system.​"
-    },
-    {
-     "day": "Day 10",
-     "country": "East Africa",
-     "locations": "L'Escale Marina (Mahe)",
-     "details": "Enjoy a hearty breakfast on board before bidding farewell to Aqua Lares and the crew. ​"
-    }
-   ],
-   "mapImageUrl": "https://d20knvk822eu5a.cloudfront.net/booking-optimized/sites/default/files/image/2026-04/AQUA%20LARES%20-%209N%20Aldabra%20%26%20The%20Coralline%20Seychelles.png.webp",
-   "mapData": {
-    "itineraryName": "9N Aqua Lares Cruise Mahe to Mahe (MAHE -> MAHE)",
-    "coordinates": [
-     [
-      {
-       "x": 1772,
-       "y": 259.203125
-      }
-     ],
-     [
-      {
-       "x": 1683,
-       "y": 376.203125
-      }
-     ],
-     [
-      {
-       "x": 1543,
-       "y": 522.203125
-      }
-     ],
-     [
-      {
-       "x": 1293,
-       "y": 648.203125
-      }
-     ],
-     [
-      {
-       "x": 1191,
-       "y": 572.203125
-      }
-     ],
-     [
-      {
-       "x": 1285,
-       "y": 620.203125
-      }
-     ],
-     [
-      {
-       "x": 1494,
-       "y": 644.203125
-      }
-     ],
-     [
-      {
-       "x": 1646,
-       "y": 567.203125
-      }
-     ],
-     [
-      {
-       "x": 1722,
-       "y": 409.203125
-      }
-     ],
-     [
-      {
-       "x": 1783,
-       "y": 271.203125
-      }
-     ]
-    ]
-   },
-   "departTiming": "Afternoon",
-   "arrivalTiming": "Morning",
-   "relatedEvents": [
-    "9N-AQL-Mahe to Mahe",
-    "9N-AQL-Mahe to Mahe TEC"
-   ],
-   "itineraryLink": {
-    "url": "https://aquaexpeditions.canto.global/direct/document/o726ktlvkt60v7ufptbs04rc1e/1SAnP8-iVQL5pt26o5_uglgBnRI/original?content-type=application%2Fpdf&name=aqua-lares_itinerary_east-africa_9n-aldabra-and-the-coralline-seychelles.pdf",
-    "title": null
-   },
-   "faqLink": {
-    "url": "https://aquaexpeditions.canto.global/direct/document/fmdbpgpns91glfuatdnlvvb400/PhBtSiIu3acLYuV7jkxw0HBgn8o/original?content-type=application%2Fpdf&name=aqua-lares_east-africa_faq.pdf",
-    "title": null
-   },
-   "packingLink": {
-    "url": "https://aquaexpeditions.canto.global/direct/document/kmpkeq44597t51i927p1g59h3h/ZSZ6zozM_XElLjkXA6pDOXo5ZB4/original?content-type=application%2Fpdf&name=aqua-lares_east-africa_what-to-pack.pdf",
-    "title": null
-   },
-   "embarkDisembarkLink": {
-    "url": "https://aquaexpeditions.canto.global/direct/document/9jd55tnem174dfdvsuojrpiv46/H39vWj29KJRUCPhdt2l4-i-eSbM/original?content-type=application%2Fpdf&name=aqua-lares_east-africa_embarkation-and-disembarkation_9n-aldabra-and-the-coralline-seychelles.pdf",
-    "title": null
-   },
-   "legacyTrack": false
-  },
+  "9N-AQL-Mahe to Mahe TEC|MAHE|MAHE|9|0": null,
   "10N-AQL-Mahe to Zanzibar|MAHE|ZANZI|10|0": {
    "id": "30211",
    "name": "10N Aqua Lares Cruise Mahe to Zanzibar (MAHE -> ZANZI)",
@@ -138267,5 +138294,217 @@
     "MEDIT": []
    }
   }
- }
+ },
+ "youtube": [
+  {
+   "id": "6t3QxjhABHI",
+   "title": "Explore Svalbard & the Arctic Circle Aboard Aqua Lares",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "idgZWXfY57U",
+   "title": "Sail into the Amazon's Wild Heart Aboard Aria Amazon",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "b_ERoS_CI9A",
+   "title": "Luxury Small-Ship Expeditions in Seychelles & Tanzania Aboard Aqua Lares",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "my6RJMPAaoQ",
+   "title": "Discover Seychelles & Tanzania Aboard Aqua Lares",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "THyQrz5bUL0",
+   "title": "Aqua Lares: Where Luxury Meets the Wild in Seychelles & Tanzania",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "7SaF6AvkVvw",
+   "title": "Exploring the Uncharted Jungles of West Papua on Aqua Blu",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "vWZQ0S7XXpo",
+   "title": "Happy Holidays from the Aqua Family",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "8TGRU0_upac",
+   "title": "Sail Svalbard & The Arctic Circle on Aqua Lares: Launching June 2026",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "L8ejqvCplkc",
+   "title": "The Arctic Circle's Only Icebreaker Superyacht: Expeditions Launching June 2026",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "2gLIyPO_vII",
+   "title": "Aqua Lares Launches Feb 2026: East Africa's First Superyacht Expedition Ship",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "y1yrBLy3z1U",
+   "title": "Luxurious Raja Ampat diving expeditions on board Aqua Blu",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "3xi9YyC1DOA",
+   "title": "Seychelles & Tanzania Expeditions Launching 2026",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "m3XcuaK8GjY",
+   "title": "Enchantment Awaits: Sail the Galapagos Islands on the luxurious Aqua Mare",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "WlHWXzRL4WI",
+   "title": "World’s Best River Cruise 2024: Sail the Peruvian Amazon with Aqua Nera",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "LY3D0IdlMmM",
+   "title": "Epic cultural expeditions in Cambodia & Vietnam on board the luxurious Aqua Mekong",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "lKJjAK3yi44",
+   "title": "Sail Indonesia's Banda Sea & Spice Islands: Luxury Expeditions on Aqua Blu",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "QOdLdxm7zew",
+   "title": "Discover the Secrets of the Spice Islands on board Aqua Blu",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "8-4spTBiK9c",
+   "title": "Aqua Blu sails Bali & Komodo: the Most Luxurious Expeditions in East Indonesia",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "5a5jb10TMys",
+   "title": "Interior tour of Aqua Blu: The most luxurious explorer yacht in East Indonesia",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "Ni0qNXPbqFc",
+   "title": "Aqua Blu's Exclusive Asmat Tribe & West Papua Expedition | Sail in luxury in November 2025",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "RhoEwIDKxD4",
+   "title": "Aqua Blu embarks on an exclusive voyage to uncharted lands",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "lD6LvMhl7TM",
+   "title": "Aqua Expeditions partners with IWP to clean up East Indonesia's beaches",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "DCpF-SuvxkI",
+   "title": "Season of Spice: Sail the Banda Sea with Aqua Blu",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "CcEbsrwW3Bg",
+   "title": "Discover the heritage of Indochina aboard the luxurious Aqua Mekong",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "RjttPbuQWuc",
+   "title": "Discover the heritage of Indochina aboard the luxurious Aqua Mekong - Mobile",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "qWyHzb2mWGo",
+   "title": "Discover Life Aboard Aqua Blu | The Adventure Of A Lifetime In East Indonesia",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "C7DwnJd6KQM",
+   "title": "Take an interior tour of Aqua Mare, the Galapagos’ first true superyacht by Aqua Expeditions",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "P3UlvR30IyQ",
+   "title": "Set sail across the Enchanted Islands with Aqua Mare",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "Mba-VSKzw2s",
+   "title": "Discover the Galapagos Islands aboard luxury superyacht Aqua Mare",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "WfL1L-KPYx0",
+   "title": "Aqua Mare Testimonials: 2022 Inaugural Voyage",
+   "kind": "LOCKUP_CONTENT_TYPE_VIDEO"
+  },
+  {
+   "id": "PLoEAJ637gmoSMajvXSA3ezAA6Ruwr_8qw",
+   "title": "Svalbard & The Arctic Circle",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoQGyARCghO6uRGkHIYBTTNx",
+   "title": "Seychelles and Tanzania",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoSGRsFwHjGT92i_CJya5yoB",
+   "title": "Galapagos Cruise",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoSMjtKyk4lMJWAFEQVpvZwv",
+   "title": "Aqua Blu Destinations and Activities",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoQgFy5ggm5TXNfz8lrHi7o9",
+   "title": "Mekong Excursions and Activities Short",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoSXFNkJQuOO_dA1nm98bxIZ",
+   "title": "Amazon Excursions and Activities",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoR0CCLUCsVEA6deiB6wKPas",
+   "title": "Aqua Expeditions Chef Masterclass Series",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoQWKmbOzClmKm5_YtKrpVNb",
+   "title": "Dream Now, Travel Later with Aqua Expeditions",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoRb5dFz9M09jfXMfBK8IaZs",
+   "title": "Aqua Blu Coastal Cruise",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoQg04J8Uw-QeqRY1JRktZe4",
+   "title": "Amazon River Cruises",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoShjN6fClLl5lzHmLzvgYqo",
+   "title": "Mekong River Cruise",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  },
+  {
+   "id": "PLoEAJ637gmoTw3XW2RfyJSGuSMsEPtphj",
+   "title": "Aqua Expeditions Gives Back",
+   "kind": "LOCKUP_CONTENT_TYPE_PLAYLIST"
+  }
+ ]
 }

@@ -9,6 +9,8 @@ import { COUNTRIES } from "@/lib/content/countries";
 import { WATERS_HUBS } from "@/lib/content/ships/registry";
 import { REGIONS, VOLUMES } from "@/lib/site";
 import { WD } from "@/lib/content/white-desert";
+import { JOURNEYS, journeyPath } from "@/lib/content/ships/journeys";
+import PLACES from "@/lib/content/places-library.json";
 
 // The house search index (/search/index.json), rebuilt from the Ledger on every publish (James, 4 Nov 2026: "if you
 // type in Ivory Lodge, it should pull up"). It used to be a file written once on 24 Oct, so lodges and residences
@@ -60,9 +62,23 @@ export function GET() {
   const regionOf = (country: string) => COUNTRIES.find((c) => c.name === country || c.name.startsWith(country))?.region ?? null;
   for (const e of SHIPS) {
     const waters = e.reg.waters.map((w) => WATERS_HUBS[w]?.name).filter(Boolean).join(", ");
-    const g = [e.reg.operator, waters].filter(Boolean).join(" · ") || null;
-    add({ t: "stay", n: e.data.name, u: `/voyages/ships/${e.slug}`, k: "Ship", p: e.reg.country[0] ?? null, r: regionOf(e.reg.country[0] ?? "") ?? (e.reg.waters.includes("antarctica") ? "polar-antarctica" : null), f: [], g, c: e.reg.country });
+    // Audit, 13 Nov 2026 (James: "not able to find yachts or vessels by name ... cruises in the Galapagos"): the
+    // words people type for a ship ("yacht", "cruise", "boat") and her own itinerary names go with her.
+    const itins = (e.data.itineraries ?? []).map((i) => i.name).filter(Boolean);
+    const g = [e.reg.operator, waters, "Yacht, cruise, small ship", itins.join(", ")].filter(Boolean).join(" · ") || null;
+    const r = regionOf(e.reg.country[0] ?? "") ?? (e.reg.waters.includes("antarctica") ? "polar-antarctica" : null);
+    add({ t: "stay", n: e.data.name, u: `/voyages/ships/${e.slug}`, k: "Ship", p: e.reg.country[0] ?? null, r, f: [], g, c: e.reg.country });
+    // Each published itinerary as a voyage of its own, so "Northern Islands" or "8 day Galapagos" lands on it.
+    (e.data.itineraries ?? []).forEach((it) => {
+      if (!it.name) return;
+      const nights = it.nights ? `${it.nights} nights` : "";
+      items.push({ t: "route", n: `${it.name}, ${e.data.name}`, u: it.href ?? `/voyages/ships/${e.slug}#itinerary`, k: "Voyage", p: e.reg.country[0] ?? null, r, f: [], g: [nights, e.reg.operator, waters, "cruise itinerary"].filter(Boolean).join(" · "), c: e.reg.country });
+    });
   }
+  // The cruising waters, so "Galapagos cruises", "Nile cruise" or "Raja Ampat yacht" finds the hub of each.
+  for (const w of Object.values(WATERS_HUBS)) add({ t: "destination", n: `${w.name} cruises and yachts`, u: w.path, k: "Cruising waters", p: w.countries[0] ?? null, r: regionOf(w.countries[0] ?? ""), f: [], g: `${w.question} Ships, yachts and voyages in ${w.name}`, c: w.countries });
+  // The private charter journeys (Komodo and Flores, Raja Ampat and Misool).
+  for (const j of JOURNEYS) add({ t: "route", n: j.name, u: journeyPath(j.slug), k: "Voyage", p: "Indonesia", r: regionOf("Indonesia"), f: [], g: [j.line, j.park, "yacht charter cruise"].filter(Boolean).join(" · "), c: ["Indonesia"] });
   for (const t of Object.values(TRIPS)) {
     const p = t.crumbs[2] ?? null;
     add({ t: "route", n: t.h1, u: t.seo.path, k: t.kind === "voyage" ? "Voyage" : "Overland route", p, r: p ? regionOf(p) : null, f: [], g: t.sub || null });
@@ -72,6 +88,11 @@ export function GET() {
   // Every region and country page, not only the 36 in the October list.
   for (const r of REGIONS) add({ t: "destination", n: r.label, u: r.href, k: "Region", p: null, r: r.slug, f: [], g: r.countries.map((c) => c.label).join(", ") || null });
   for (const c of COUNTRIES) add({ t: "destination", n: c.name, u: `/destinations/${c.region}/${c.slug}`, k: "Destination", p: c.regionName, r: c.region, f: [], g: c.subtitle || null, c: [c.name] });
+  // Places within a country (the Alentejo, Raja Ampat and so on) that have their own page.
+  for (const pl of (PLACES as { places: { slug: string; name: string; parentSlug: string; regionSlug: string; subtitle?: string }[] }).places) {
+    const c = COUNTRIES.find((x) => x.slug === pl.parentSlug);
+    if (c) add({ t: "destination", n: pl.name, u: `/destinations/${pl.regionSlug}/${pl.parentSlug}/${pl.slug}`, k: "Place", p: c.name, r: pl.regionSlug, f: [], g: pl.subtitle ?? null, c: [c.name] });
+  }
   for (const v of VOLUMES) add({ t: "page", n: v.label, u: v.href, k: "Section", p: null, r: null, f: [], g: v.intro ?? null });
   for (const [n, u, g] of PAGES) add({ t: "page", n, u, k: "Section", p: null, r: null, f: [], g });
   // The Exceptional Few: the collection itself, and its number on each place it holds.

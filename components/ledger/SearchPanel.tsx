@@ -74,6 +74,8 @@ const loadIndex = () => (INDEX ??= fetch("/search/index.json")
   .then((j: { items: Item[] }) => [...j.items.map(asVoyage), ...ADVISOR_ITEMS].map((x, id) => ({ ...x, id })))
   .catch(() => { INDEX = null; return ADVISOR_ITEMS.map((x, id) => ({ ...x, id })); }));
 
+// Words that carry no place or name ("cruises in the Galapagos").
+const STOP = new Set(["in", "the", "a", "an", "of", "to", "and", "for", "on", "at", "near", "with", "by"]);
 const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/['’]/g, "");
 
 
@@ -124,9 +126,10 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
     if (!docs) return null;
     const ms = new MiniSearch<Doc>({
       fields: ["n", "p", "k", "g"],
-      storeFields: ["id"],
+      storeFields: ["id", "k"],
+      // A place or a ship before the itineraries that sail it ("Antarctica", "Windstar").
       processTerm: (t) => norm(t),
-      searchOptions: { boost: { n: 4, p: 2 }, prefix: true, fuzzy: 0.2, combineWith: "AND" },
+      searchOptions: { boost: { n: 4, p: 2 }, prefix: true, fuzzy: 0.2, combineWith: "AND", boostDocument: (_id, _term, f) => ((f as { k?: string } | undefined)?.k === "Voyage" ? 0.45 : 1) },
     });
     ms.addAll(docs);
     return ms;
@@ -135,7 +138,13 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
   const results = useMemo(() => {
     if (!docs || !engine) return [];
     let list: Doc[];
-    if (q.trim()) list = engine.search(q).map((r) => docs[r.id as number]);
+    if (q.trim()) {
+      // Every word must match first; when nothing does ("Galapagos cruises in March"), the best partial matches show.
+      const words = q.trim().split(/\s+/).filter((w) => !STOP.has(norm(w))).join(" ") || q.trim();
+      let hits = engine.search(words);
+      if (!hits.length) hits = engine.search(words, { combineWith: "OR" });
+      list = hits.map((r) => docs[r.id as number]);
+    }
     else if (type || where) list = docs.filter((d) => d.t !== "advisor" && d.t !== "page");
     else return [];
     if (where) list = list.filter((d) => inScope(d, where));

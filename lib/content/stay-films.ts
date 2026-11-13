@@ -63,3 +63,12 @@ export const STAY_FILMS: Record<string, WideFilm> = {
 
 /** Back-compat for the in-page film band (components/stay/AmbientFilm). */
 export type AmbientFilm = Extract<WideFilm, { kind: "mp4" }>;
+
+// A second film further down the page, where the brand has one of what you do there (James, 13 Nov 2026: "if you
+// have a video, you can go ahead and embed it"). Muted, looping, below the overview; the hero film stays the estate.
+export const STAY_CLIPS: Record<string, { film: Extract<WideFilm, { kind: "mp4" }>; line: string }> = {
+  "casali-di-casole": {
+    film: { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/casali-di-casole/clip-truffle-biking.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/casali-di-casole/clip-truffle-biking.mp4`, poster: `${CLD}/so_3,q_auto,f_jpg,w_1920/jwco/stays/casali-di-casole/clip-truffle-biking.jpg`, title: "Truffle hunting and biking on the Casali di Casole estate", credit: "Film courtesy of Casali di Casole" },
+    line: "Truffle hunting and biking on the estate",
+  },
+};

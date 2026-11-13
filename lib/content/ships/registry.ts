@@ -83,7 +83,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     pathway: { primary: "PATH-02", secondary: ["PATH-06", "PATH-07"] }, charter: { whole: true, from: 10900, basis: "night" }, rateBasis: "per-night", status: "sailing", page: true, staySlug: "aliikai-voyage",
     // aliikai-voyage.com via her voyage files: single supplement 50% of the nightly rate; a full dive centre with Nitrox;
     // kayaks and paddleboards; the bird of paradise hike, Komodo dragon walks and village visits; yoga and massages
-    // (owner's record VSL-2026-882896); a phinisi under sail. No child age or connecting cabins published.
+    // (owner's record VSL-2026-000004); a phinisi under sail. No child age or connecting cabins published.
     traits: { single: { kind: "percent", pct: 50, note: "50% of the nightly rate" }, activities: ["wildlife", "diving", "snorkelling", "kayaking", "hiking", "culture", "slow", "sailing"], dives: true } },
   { slug: "nile-adventurer", name: "Nile Adventurer", operator: "A&K Sanctuary", kind: "riverboat", types: ["river"], waters: ["nile"], country: ["Egypt"],
     pathway: { primary: "PATH-08", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,

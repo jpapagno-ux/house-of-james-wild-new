@@ -1,0 +1,28 @@
+# Mobile and desktop audit (scripts/audit/mobile.mjs): screenshots and a layout report of chosen pages,
+# committed to the branch it ran on for review.
+name: Mobile audit
+on:
+  workflow_dispatch:
+  push:
+    branches: [mobile-audit]
+    paths: [scripts/audit/mobile.mjs, scripts/audit/mobile-pages.txt]
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm i --no-save playwright@1.56.1 && npx playwright install --with-deps chromium
+      - run: PAGES="$(cat scripts/audit/mobile-pages.txt 2>/dev/null)" node scripts/audit/mobile.mjs
+        env:
+          SITE: https://house-of-james-wild-new.vercel.app
+      - run: |
+          git config user.name "jwco-bot"
+          git config user.email "jwco-bot@users.noreply.github.com"
+          git add scripts/audit/mobile
+          git commit -m "Mobile audit" && git pull --rebase && git push

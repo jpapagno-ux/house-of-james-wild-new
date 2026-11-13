@@ -8,7 +8,7 @@ name: Aqua Expeditions fetch
 on:
   workflow_dispatch:
   push:
-    paths: [scripts/partners/aqua-fetch.mjs, scripts/partners/aqua-photos.mjs, scripts/data/aqua/photos.json, .github/workflows/aqua-fetch.yml]
+    paths: [scripts/partners/aqua-contact.mjs, scripts/partners/aqua-fetch.mjs, scripts/partners/aqua-photos.mjs, scripts/data/aqua/photos.json, .github/workflows/aqua-fetch.yml]
 
 permissions:
   contents: write
@@ -23,13 +23,16 @@ jobs:
         with:
           node-version: 22
       - name: Fetch
-        if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[photos]')
+        if: github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[photos]') && !contains(github.event.head_commit.message, '[contact]')
         run: node scripts/partners/aqua-fetch.mjs
       - name: Photographs
         if: contains(github.event.head_commit.message, '[photos]')
         env:
           CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
         run: node scripts/partners/aqua-photos.mjs
+      - name: Contact sheets
+        if: contains(github.event.head_commit.message, '[contact]')
+        run: node scripts/partners/aqua-contact.mjs
       - name: Commit
         run: |
           git config user.name "jwco-bot"

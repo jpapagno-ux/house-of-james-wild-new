@@ -1,6 +1,7 @@
 // Exports the Airtable editorial layer to the two JSON files the site reads:
 //   Exceptional Few  → lib/content/exceptional-few.json
 //   Media Assets     → lib/content/media-assets.json
+//   Timeless Voyages → lib/content/timeless-voyages.json (published rows only; added 13 Nov 2026)
 // The Stay record itself stays in the Base44 Ledger (scripts/export-stays.py); these
 // rows only point at it by Ledger ID. Run: AIRTABLE_TOKEN=pat... node scripts/export-editorial-layer.mjs
 // Needs a read-only personal access token scoped to base appI1mRPBsoA1ZOla.
@@ -69,4 +70,19 @@ const media = (await table("Media Assets")).map((f) => ({
 
 fs.writeFileSync("lib/content/exceptional-few.json", JSON.stringify({ exportedOn: today, source: `Airtable ${BASE} · Exceptional Few · scripts/export-editorial-layer.mjs`, records: ef }, null, 2) + "\n");
 fs.writeFileSync("lib/content/media-assets.json", JSON.stringify({ exportedOn: today, source: `Airtable ${BASE} · Media Assets · scripts/export-editorial-layer.mjs · pixels in Cloudinary jhlnq5h5`, assets: media }, null, 2) + "\n");
-console.log(`Exceptional Few: ${ef.length} rows · Media Assets: ${media.length} rows`);
+// Timeless Voyages (13 Nov 2026): the premium ships collection, keyed on vessel_slug like a vessel EF row. Only
+// published rows with approved image rights reach the site; a published row must point at a registry ship.
+const refs = (s) => list(s);
+const tv = (await table("Timeless Voyages")).filter((f) => f.publication_status === "published" && f.image_rights === "approved").map((f) => ({
+  id: f.timeless_voyages_id, vesselSlug: f.vessel_slug ?? null, vesselName: f.vessel_name ?? null, operator: f.operator ?? null,
+  collectionNumber: f.collection_number ?? 0, ledgerId: f.ledger_id ?? null, sailingStatus: f.sailing_status ?? "sailing", launchDate: f.launch_date ?? null,
+  signatureEdition: !!f.signature_edition, heroLine: f.hero_line ?? null, whyItBelongs: paras(f.why_it_belongs),
+  before: refs(f.before_refs), beyond: refs(f.beyond_refs), stamp: f.stamp ?? null,
+  // A saving, in the operator's own words and code; hidden once its book-by date passes (lib/dates.ts).
+  savings: f.savings_language ? { code: f.savings_code ?? null, text: f.savings_language.trim(), bookBy: f.savings_book_by ?? null, sailBy: f.savings_sail_by ?? null } : null,
+})).sort((a, b) => a.collectionNumber - b.collectionNumber);
+const badTv = tv.filter((t) => !isShip(t.vesselSlug));
+if (badTv.length) { console.error(`Timeless Voyages rows whose vessel_slug is not a registry ship: ${badTv.map((t) => t.id).join(", ")}`); process.exit(1); }
+fs.writeFileSync("lib/content/timeless-voyages.json", JSON.stringify({ exportedOn: today, source: `Airtable ${BASE} · Timeless Voyages · scripts/export-editorial-layer.mjs`, records: tv }, null, 2) + "\n");
+
+console.log(`Exceptional Few: ${ef.length} rows · Media Assets: ${media.length} rows · Timeless Voyages: ${tv.length} published`);

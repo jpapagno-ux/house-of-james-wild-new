@@ -25,6 +25,10 @@ function photo(src: string | null): string {
 const font = (file: string) => fetch(new URL(file, import.meta.url)).then((r) => r.arrayBuffer());
 
 export async function GET(req: Request) {
+  try { return await card(req); } catch (e) { return new Response(`share card failed: ${(e as Error).message}`, { status: 500 }); }
+}
+
+async function card(req: Request) {
   const u = new URL(req.url);
   const title = (u.searchParams.get("t") || "James Wild & Co").slice(0, 90);
   const kicker = (u.searchParams.get("k") || "").slice(0, 80);
@@ -35,18 +39,28 @@ export async function GET(req: Request) {
   const bytes = new Uint8Array(seal); let bin = "";
   for (let i = 0; i < bytes.length; i += 8192) bin += String.fromCharCode(...bytes.subarray(i, i + 8192));
   const sealSrc = `data:image/png;base64,${btoa(bin)}`;
+  // the photograph, fetched here so a slow or missing image never breaks the card (it falls back to the house ground)
+  let bg: string | null = null;
+  try {
+    const r = await fetch(photo(u.searchParams.get("img")));
+    if (r.ok) {
+      const b = new Uint8Array(await r.arrayBuffer()); let s2 = "";
+      for (let i = 0; i < b.length; i += 8192) s2 += String.fromCharCode(...b.subarray(i, i + 8192));
+      bg = `data:${r.headers.get("content-type") || "image/jpeg"};base64,${btoa(s2)}`;
+    }
+  } catch { bg = null; }
   const size = title.length > 46 ? 50 : title.length > 30 ? 60 : 68;
 
   return new ImageResponse(
     (
       <div style={{ width: W, height: H, display: "flex", position: "relative", background: "#1A1816" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={photo(u.searchParams.get("img"))} width={W} height={H} style={{ position: "absolute", inset: 0, width: W, height: H, objectFit: "cover" }} alt="" />
+        {bg ? <img src={bg} width={W} height={H} style={{ position: "absolute", top: 0, left: 0, width: W, height: H, objectFit: "cover" }} alt="" /> : null}
         {/* the house gradient, Ink to Garnet, rising from the foot so the words always read */}
         <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 330, display: "flex", backgroundImage: "linear-gradient(180deg, rgba(26,24,22,0) 0%, rgba(26,24,22,0.62) 42%, rgba(42,24,26,0.94) 100%)" }} />
         {/* the crimson keyline across the top, the house's single accent */}
         <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 8, background: "#8B2525", display: "flex" }} />
-        <div style={{ position: "absolute", left: 56, right: 56, bottom: 44, display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 36 }}>
+        <div style={{ position: "absolute", left: 56, right: 56, bottom: 44, display: "flex", alignItems: "flex-end", justifyContent: "space-between" }}>
           <div style={{ display: "flex", flexDirection: "column", maxWidth: 860 }}>
             {kicker ? <div style={{ fontFamily: "Manrope", fontSize: 20, letterSpacing: 4, textTransform: "uppercase", color: "rgba(244,242,239,0.82)", marginBottom: 10 }}>{kicker}</div> : null}
             <div style={{ fontFamily: "Cormorant", fontSize: size, lineHeight: 1.04, color: "#FFFFFF" }}>{title}</div>

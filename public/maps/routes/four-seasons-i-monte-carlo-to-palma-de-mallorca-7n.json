@@ -1,0 +1,175 @@
+{
+ "id": "four-seasons-i-monte-carlo-to-palma-de-mallorca-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Rivieras featuring Saint-Tropez & Cinque Terre aboard Four Seasons I",
+ "subtitle": "7 nights · Monte Carlo to Palma de Mallorca · Four Seasons I",
+ "days": {
+  "1": "Monte Carlo",
+  "2": "Viareggio",
+  "3": "Portovenere (Cinque Terre)",
+  "4": "Marina day, French Riviera",
+  "None": "Saint-Tropez",
+  "6": "At sea",
+  "7": "La R�pita",
+  "8": "Palma de Mallorca"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Viareggio, Italy",
+   "lat": 43.8625,
+   "lng": 10.2403,
+   "mode": "sea",
+   "path": [
+    [
+     7.4294,
+     43.7358
+    ],
+    [
+     10.2403,
+     43.8625
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Portovenere (Cinque Terre), Italy",
+   "lat": 44.0519,
+   "lng": 9.838,
+   "mode": "sea",
+   "path": [
+    [
+     10.2403,
+     43.8625
+    ],
+    [
+     9.838,
+     44.0519
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, French Riviera",
+   "lat": 42.6983,
+   "lng": 9.295,
+   "mode": "sea",
+   "path": [
+    [
+     9.838,
+     44.0519
+    ],
+    [
+     9.295,
+     42.6983
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Saint-Tropez, France",
+   "lat": 43.2716,
+   "lng": 6.6356,
+   "mode": "sea",
+   "path": [
+    [
+     9.295,
+     42.6983
+    ],
+    [
+     6.6356,
+     43.2716
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Mediterranean Sea",
+   "lat": 41.946,
+   "lng": 3.614,
+   "mode": "sea",
+   "path": [
+    [
+     6.6356,
+     43.2716
+    ],
+    [
+     3.614,
+     41.946
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "La Ràpita, Spain",
+   "lat": 40.6201,
+   "lng": 0.5928,
+   "mode": "sea",
+   "path": [
+    [
+     3.614,
+     41.946
+    ],
+    [
+     0.5928,
+     40.6201
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Palma de Mallorca, Spain",
+   "lat": 39.5531,
+   "lng": 2.6266,
+   "mode": "sea",
+   "path": [
+    [
+     0.5928,
+     40.6201
+    ],
+    [
+     2.6266,
+     39.5531
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

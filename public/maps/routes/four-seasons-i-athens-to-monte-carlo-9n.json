@@ -1,0 +1,193 @@
+{
+ "id": "four-seasons-i-athens-to-monte-carlo-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Grand Mediterranean featuring Crete & Ischia aboard Four Seasons I",
+ "subtitle": "9 nights · Athens to Monte Carlo · Four Seasons I",
+ "days": {
+  "1": "Athens",
+  "2": "Chania, Crete",
+  "3": "Pýlos",
+  "4": "At sea",
+  "None": "Porto Ischia, Isola D'Ischia",
+  "7": "Porto Ercole, Argentario",
+  "8": "Marina day, French Riviera",
+  "9": "Port de la Rague",
+  "10": "Monte Carlo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Chania, Crete",
+   "lat": 35.5149,
+   "lng": 24.0192,
+   "mode": "sea",
+   "path": [
+    [
+     23.6359,
+     37.9382
+    ],
+    [
+     24.0192,
+     35.5149
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Pýlos, Greece",
+   "lat": 36.9152,
+   "lng": 21.6954,
+   "mode": "sea",
+   "path": [
+    [
+     24.0192,
+     35.5149
+    ],
+    [
+     21.6954,
+     36.9152
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Ionian Sea",
+   "lat": 38.833,
+   "lng": 17.803,
+   "mode": "sea",
+   "path": [
+    [
+     21.6954,
+     36.9152
+    ],
+    [
+     17.803,
+     38.833
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Ischia, Italy",
+   "lat": 40.7513,
+   "lng": 13.9099,
+   "mode": "sea",
+   "path": [
+    [
+     17.803,
+     38.833
+    ],
+    [
+     13.9099,
+     40.7513
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Porto Ercole, Argentario, Italy",
+   "lat": 42.3935,
+   "lng": 11.2105,
+   "mode": "sea",
+   "path": [
+    [
+     13.9099,
+     40.7513
+    ],
+    [
+     11.2105,
+     42.3935
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Marina Day, French Riviera",
+   "lat": 42.6983,
+   "lng": 9.295,
+   "mode": "sea",
+   "path": [
+    [
+     11.2105,
+     42.3935
+    ],
+    [
+     9.295,
+     42.6983
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Port de la Rague, France",
+   "lat": 43.5144,
+   "lng": 6.9383,
+   "mode": "sea",
+   "path": [
+    [
+     9.295,
+     42.6983
+    ],
+    [
+     6.9383,
+     43.5144
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "mode": "sea",
+   "path": [
+    [
+     6.9383,
+     43.5144
+    ],
+    [
+     7.4294,
+     43.7358
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -16,6 +16,9 @@ LABELS = {
   "indonesia": [{"text": "Indonesia", "lat": -4.0, "lng": 125.0, "kind": "sea"}],
   "mekong": [{"text": "Mekong", "lat": 11.0, "lng": 105.2, "kind": "sea"}, {"text": "Tonle Sap", "lat": 12.8, "lng": 104.1, "kind": "region"}],
   "seychelles": [{"text": "Indian Ocean", "lat": -6.5, "lng": 50.0, "kind": "sea"}, {"text": "Seychelles", "lat": -4.6, "lng": 55.6, "kind": "region"}],
+  # Four Seasons I (lib/content/ships/caribbean): the Caribbean and the Bahamas in winter; her Mediterranean
+  # and Atlantic routes, filed in the same file, take MED or ATLANTIC by where they sail.
+  "caribbean": [{"text": "Caribbean Sea", "lat": 15.5, "lng": -64.5, "kind": "sea"}, {"text": "Atlantic Ocean", "lat": 21.5, "lng": -60.5, "kind": "sea"}, {"text": "Lesser Antilles", "lat": 15.3, "lng": -61.0, "kind": "region"}],
   "tahiti": [{"text": "Pacific Ocean", "lat": -17.6, "lng": -148.6, "kind": "sea"}, {"text": "Society Islands", "lat": -16.2, "lng": -151.0, "kind": "region"}, {"text": "Tuamotu", "lat": -15.4, "lng": -146.4, "kind": "region"}],
 }
 # Where an Indonesian route's chart sits (the engine's regional data: public/maps/data/<dest>).
@@ -25,6 +28,13 @@ DEST = {"From Sorong": "raja-ampat", "Sorong round trip": "raja-ampat", "Ambon t
         "Labuan Bajo to Ambon": "indonesia", "Sorong to Labuan Bajo": "indonesia"}
 # Aqua Lares sails the Arctic from the same file in summer: her northern routes take these labels.
 ARCTIC = [{"text": "Arctic Ocean", "lat": 79.5, "lng": 8.0, "kind": "sea"}, {"text": "Svalbard", "lat": 78.6, "lng": 17.0, "kind": "region"}, {"text": "Norwegian Sea", "lat": 68.0, "lng": 6.0, "kind": "sea"}]
+MED = [{"text": "Mediterranean Sea", "lat": 36.5, "lng": 17.5, "kind": "sea"}, {"text": "Aegean Sea", "lat": 38.5, "lng": 25.0, "kind": "sea"}, {"text": "Adriatic Sea", "lat": 43.0, "lng": 15.5, "kind": "sea"}, {"text": "Tyrrhenian Sea", "lat": 40.0, "lng": 12.0, "kind": "sea"}]
+ATLANTIC = [{"text": "Atlantic Ocean", "lat": 25.0, "lng": -40.0, "kind": "sea"}, {"text": "Canary Islands", "lat": 28.3, "lng": -15.8, "kind": "region"}, {"text": "Caribbean Sea", "lat": 15.5, "lng": -64.5, "kind": "sea"}]
+def labels_for(waters, days):
+    if days[0]["lat"] > 50: return ARCTIC
+    if waters != "caribbean": return LABELS[waters]
+    east = [d["lng"] > -30 for d in days]
+    return MED if all(east) else ATLANTIC if any(east) else LABELS[waters]
 OUT = os.path.join(ROOT, "public/maps/routes")
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
@@ -38,7 +48,7 @@ for waters in LABELS:
         if not it["days"]: continue
         # A route whose length is not published (stops in the operator's order) ends in "-stops".
         rid = f"{s['slug']}-{slug(it['direction'])}-{str(it['nights']) + 'n' if it['nights'] is not None else 'stops'}"
-        dest = DEST.get(it["direction"], "komodo") if waters == "indonesia" else ("arctic" if waters == "seychelles" and it["days"][0]["lat"] > 50 else waters)
+        dest = DEST.get(it["direction"], "komodo") if waters == "indonesia" else ("arctic" if waters == "seychelles" and it["days"][0]["lat"] > 50 else "mediterranean" if waters == "caribbean" and it["days"][0]["lng"] > -30 else waters)
         stops, prev = [], None
         for d in it["days"]:
             st = {"day": d["day"], "name": d["place"], "lat": d["lat"], "lng": d["lng"]}
@@ -54,7 +64,7 @@ for waters in LABELS:
                  "subtitle": f"{str(it['nights']) + ' nights' if it['nights'] is not None else 'Stops in order'} · {it['direction'].split(' (')[0]} · {s['name']}",
                  "days": {str(d["day"]): d["title"] for d in it["days"]}, "stops": stops,
                  "map_note": ("River course" if waters in ("amazon", "mekong") else "Course") + " and positions approximate, not a navigational chart",
-                 "fallback": {"labels": ARCTIC if it["days"][0]["lat"] > 50 else LABELS[waters]}}
+                 "fallback": {"labels": labels_for(waters, it["days"])}}
         lanes = route_stops(route, MAPS)
         json.dump(route, open(os.path.join(OUT, f"{rid}.json"), "w"), indent=1, ensure_ascii=False)
         print(rid, *(f"\n  round the land: {l}" for l in lanes))

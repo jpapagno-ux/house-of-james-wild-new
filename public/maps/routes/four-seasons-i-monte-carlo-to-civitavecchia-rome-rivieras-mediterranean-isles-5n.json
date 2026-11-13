@@ -1,0 +1,121 @@
+{
+ "id": "four-seasons-i-monte-carlo-to-civitavecchia-rome-rivieras-mediterranean-isles-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Monte Carlo to Rome: Rivieras & Mediterranean Isles aboard Four Seasons I",
+ "subtitle": "5 nights · Monte Carlo to Civitavecchia · Four Seasons I",
+ "days": {
+  "1": "Monte Carlo",
+  "2": "Portovenere (Cinque Terre)",
+  "3": "Marina day, Italian Riviera",
+  "None": "Bonifacio, Corsica",
+  "6": "Civitavecchia (Rome)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Portovenere (Cinque Terre), Italy",
+   "lat": 44.0519,
+   "lng": 9.838,
+   "mode": "sea",
+   "path": [
+    [
+     7.4294,
+     43.7358
+    ],
+    [
+     9.838,
+     44.0519
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     9.838,
+     44.0519
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Bonifacio, Corsica, France",
+   "lat": 41.3886,
+   "lng": 9.1568,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     9.1568,
+     41.3886
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Civitavecchia (Rome)",
+   "lat": 42.0923,
+   "lng": 11.7955,
+   "mode": "sea",
+   "path": [
+    [
+     9.1568,
+     41.3886
+    ],
+    [
+     11.7955,
+     42.0923
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

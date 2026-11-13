@@ -1,0 +1,193 @@
+{
+ "id": "four-seasons-i-kerkyra-to-athens-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Greek Isles featuring Corfu & Parga aboard Four Seasons I",
+ "subtitle": "9 nights · Kerkyra to Athens · Four Seasons I",
+ "days": {
+  "1": "Kerkyra, Corfu",
+  "2": "Párga",
+  "3": "Marina day, Greek Isles",
+  "4": "Pýlos",
+  "5": "At sea",
+  "6": "Kos",
+  "None": "Marmaris",
+  "9": "Livadi, Nisos Serifos",
+  "10": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Kerkyra, Greece",
+   "lat": 39.6239,
+   "lng": 19.82,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Párga, Greece",
+   "lat": 39.2838,
+   "lng": 20.4016,
+   "mode": "sea",
+   "path": [
+    [
+     19.82,
+     39.6239
+    ],
+    [
+     20.4016,
+     39.2838
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Greek Isles",
+   "lat": 38.3767,
+   "lng": 20.685,
+   "mode": "sea",
+   "path": [
+    [
+     20.4016,
+     39.2838
+    ],
+    [
+     20.685,
+     38.3767
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Pýlos, Greece",
+   "lat": 36.9152,
+   "lng": 21.6954,
+   "mode": "sea",
+   "path": [
+    [
+     20.685,
+     38.3767
+    ],
+    [
+     21.6954,
+     36.9152
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Ionian Sea",
+   "lat": 36.904,
+   "lng": 24.492,
+   "mode": "sea",
+   "path": [
+    [
+     21.6954,
+     36.9152
+    ],
+    [
+     24.492,
+     36.904
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Kos, Greece",
+   "lat": 36.893,
+   "lng": 27.288,
+   "mode": "sea",
+   "path": [
+    [
+     24.492,
+     36.904
+    ],
+    [
+     27.288,
+     36.893
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Marmaris, Türkiye",
+   "lat": 36.8523,
+   "lng": 28.274,
+   "mode": "sea",
+   "path": [
+    [
+     27.288,
+     36.893
+    ],
+    [
+     28.274,
+     36.8523
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Livadi, Greece",
+   "lat": 37.1563,
+   "lng": 24.5055,
+   "mode": "sea",
+   "path": [
+    [
+     28.274,
+     36.8523
+    ],
+    [
+     24.5055,
+     37.1563
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "mode": "sea",
+   "path": [
+    [
+     24.5055,
+     37.1563
+    ],
+    [
+     23.6359,
+     37.9382
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

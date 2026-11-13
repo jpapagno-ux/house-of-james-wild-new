@@ -1,0 +1,193 @@
+{
+ "id": "four-seasons-i-salerno-to-dubrovnik-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Grand Mediterranean featuring Taormina & Corfu aboard Four Seasons I",
+ "subtitle": "9 nights · Salerno to Dubrovnik · Four Seasons I",
+ "days": {
+  "1": "Salerno",
+  "2": "Tropea",
+  "3": "Giardini Naxos (Taormina)",
+  "4": "Marina day, Italian Riviera",
+  "5": "Syvota",
+  "None": "Corfu",
+  "8": "At sea",
+  "9": "Korcula",
+  "10": "Dubrovnik"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Salerno, Italy",
+   "lat": 40.6753,
+   "lng": 14.7511,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Tropea, Italy",
+   "lat": 38.6777,
+   "lng": 15.8963,
+   "mode": "sea",
+   "path": [
+    [
+     14.7511,
+     40.6753
+    ],
+    [
+     15.8963,
+     38.6777
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Giardini Naxos (Taormina), Sicily, Italy",
+   "lat": 37.8248,
+   "lng": 15.2746,
+   "mode": "sea",
+   "path": [
+    [
+     15.8963,
+     38.6777
+    ],
+    [
+     15.2746,
+     37.8248
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     15.2746,
+     37.8248
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Syvota, Greece",
+   "lat": 39.4076,
+   "lng": 20.2398,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     20.2398,
+     39.4076
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Gouviá, Corfu, Greece",
+   "lat": 39.6476,
+   "lng": 19.8541,
+   "mode": "sea",
+   "path": [
+    [
+     20.2398,
+     39.4076
+    ],
+    [
+     19.8541,
+     39.6476
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Adriatic Sea",
+   "lat": 41.305,
+   "lng": 18.495,
+   "mode": "sea",
+   "path": [
+    [
+     19.8541,
+     39.6476
+    ],
+    [
+     18.495,
+     41.305
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Korčula, Croatia",
+   "lat": 42.9632,
+   "lng": 17.1355,
+   "mode": "sea",
+   "path": [
+    [
+     18.495,
+     41.305
+    ],
+    [
+     17.1355,
+     42.9632
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.6638,
+   "lng": 18.0818,
+   "mode": "sea",
+   "path": [
+    [
+     17.1355,
+     42.9632
+    ],
+    [
+     18.0818,
+     42.6638
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

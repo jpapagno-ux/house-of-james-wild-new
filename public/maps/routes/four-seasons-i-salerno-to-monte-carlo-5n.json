@@ -1,0 +1,121 @@
+{
+ "id": "four-seasons-i-salerno-to-monte-carlo-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Salerno to Monte Carlo: The Tyrrhenian Isles aboard Four Seasons I",
+ "subtitle": "5 nights · Salerno to Monte Carlo · Four Seasons I",
+ "days": {
+  "1": "Salerno",
+  "None": "Porto Ischia, Isola D'Ischia",
+  "4": "Isola di Ponza",
+  "5": "Marina day, Italian Riviera",
+  "6": "Monte Carlo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Salerno, Italy",
+   "lat": 40.6753,
+   "lng": 14.7511,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Ischia, Italy",
+   "lat": 40.7513,
+   "lng": 13.9099,
+   "mode": "sea",
+   "path": [
+    [
+     14.7511,
+     40.6753
+    ],
+    [
+     13.9099,
+     40.7513
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Ponza, Italy",
+   "lat": 40.8943,
+   "lng": 12.9633,
+   "mode": "sea",
+   "path": [
+    [
+     13.9099,
+     40.7513
+    ],
+    [
+     12.9633,
+     40.8943
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     12.9633,
+     40.8943
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     7.4294,
+     43.7358
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

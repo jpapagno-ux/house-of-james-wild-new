@@ -8,11 +8,11 @@ import type { Activity, ShipTraits, SingleSupplement } from "./registry.ts";
 //
 // No runtime imports beyond lib/dates.ts, so the tests load it with plain Node.
 
-export type SearchWhere = "nile" | "amazon" | "galapagos" | "indonesia" | "polar" | "tahiti";
+export type SearchWhere = "nile" | "amazon" | "mekong" | "galapagos" | "indonesia" | "seychelles" | "polar" | "tahiti" | "caribbean" | "bahamas" | "mediterranean";
 export type Who = "couple" | "family" | "solo" | "group";
 export type LengthKey = "short" | "week" | "long";
 
-export const WHERE: Record<SearchWhere, string> = { nile: "Nile", amazon: "Amazon", galapagos: "Galápagos", indonesia: "Indonesia", polar: "Polar", tahiti: "Tahiti" };
+export const WHERE: Record<SearchWhere, string> = { nile: "Nile", amazon: "Amazon", mekong: "Mekong", galapagos: "Galápagos", indonesia: "Indonesia", seychelles: "Seychelles", polar: "Polar", tahiti: "Tahiti", caribbean: "Caribbean", bahamas: "Bahamas", mediterranean: "Mediterranean" };
 export const WHO: Record<Who, string> = { couple: "Couple", family: "Family", solo: "Solo", group: "Group" };
 export const LENGTHS: Record<LengthKey, { label: string; min: number; max: number }> = {
   short: { label: "Up to 4 nights", min: 1, max: 4 },

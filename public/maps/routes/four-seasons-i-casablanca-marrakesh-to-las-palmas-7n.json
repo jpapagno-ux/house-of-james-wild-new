@@ -1,0 +1,138 @@
+{
+ "id": "four-seasons-i-casablanca-marrakesh-to-las-palmas-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Canary Islands featuring Casablanca & Tenerife aboard Four Seasons I",
+ "subtitle": "7 nights · Casablanca · Four Seasons I",
+ "days": {
+  "None": "Santa Cruz de Tenerife, Canarias",
+  "3": "At sea",
+  "4": "Playa Blanca, Lanzarote, Canarias",
+  "7": "Puerto de la Estaca, El Hierro",
+  "8": "Las Palmas, Gran Canaria, Canarias"
+ },
+ "stops": [
+  {
+   "day": null,
+   "name": "Casablanca, Morocco",
+   "lat": 33.6075,
+   "lng": -7.6122,
+   "kind": "port"
+  },
+  {
+   "day": 3,
+   "name": "Atlantic Ocean",
+   "lat": 31.233,
+   "lng": -10.723,
+   "mode": "sea",
+   "path": [
+    [
+     -7.6122,
+     33.6075
+    ],
+    [
+     -10.723,
+     31.233
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Playa Blanca, Lanzarote, Canarias, Spain",
+   "lat": 28.8593,
+   "lng": -13.8337,
+   "mode": "sea",
+   "path": [
+    [
+     -10.723,
+     31.233
+    ],
+    [
+     -13.8337,
+     28.8593
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Santa Cruz de Tenerife, Spain",
+   "lat": 28.4636,
+   "lng": -16.2518,
+   "mode": "sea",
+   "path": [
+    [
+     -13.8337,
+     28.8593
+    ],
+    [
+     -16.2518,
+     28.4636
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Puerto de la Estaca, El Hierro, Spain",
+   "lat": 27.786,
+   "lng": -17.9007,
+   "mode": "sea",
+   "path": [
+    [
+     -16.2518,
+     28.4636
+    ],
+    [
+     -17.9007,
+     27.786
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Las Palmas, Gran Canaria, Canarias, Spain",
+   "lat": 28.1401,
+   "lng": -15.423,
+   "mode": "sea",
+   "path": [
+    [
+     -17.9007,
+     27.786
+    ],
+    [
+     -15.423,
+     28.1401
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

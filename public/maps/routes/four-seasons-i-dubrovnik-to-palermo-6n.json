@@ -1,0 +1,120 @@
+{
+ "id": "four-seasons-i-dubrovnik-to-palermo-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Dubrovnik to Palermo: Greek Isles & Sicily aboard Four Seasons I",
+ "subtitle": "6 nights · Dubrovnik to Palermo · Four Seasons I",
+ "days": {
+  "1": "Dubrovnik",
+  "None": "Giardini Naxos (Taormina)",
+  "4": "Marina day, Italian Riviera",
+  "7": "Palermo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.6638,
+   "lng": 18.0818,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Kerkyra, Greece",
+   "lat": 39.6239,
+   "lng": 19.82,
+   "mode": "sea",
+   "path": [
+    [
+     18.0818,
+     42.6638
+    ],
+    [
+     19.82,
+     39.6239
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     19.82,
+     39.6239
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Giardini Naxos (Taormina), Sicily, Italy",
+   "lat": 37.8248,
+   "lng": 15.2746,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     15.2746,
+     37.8248
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Palermo, Italy",
+   "lat": 38.1157,
+   "lng": 13.3615,
+   "mode": "sea",
+   "path": [
+    [
+     15.2746,
+     37.8248
+    ],
+    [
+     13.3615,
+     38.1157
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

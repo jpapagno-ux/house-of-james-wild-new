@@ -1,0 +1,191 @@
+{
+ "id": "four-seasons-i-palma-de-mallorca-to-valletta-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Rivieras featuring Amalfi & Sicily aboard Four Seasons I",
+ "subtitle": "9 nights · Palma de Mallorca to Valletta · Four Seasons I",
+ "days": {
+  "1": "Palma de Mallorca",
+  "2": "Palam�s",
+  "3": "Sanary-sur-Mer",
+  "4": "At sea",
+  "None": "Valletta",
+  "7": "Marina day, Italian Riviera",
+  "9": "Gozo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Palma de Mallorca, Spain",
+   "lat": 39.5531,
+   "lng": 2.6266,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Palamós, Spain",
+   "lat": 41.8462,
+   "lng": 3.1293,
+   "mode": "sea",
+   "path": [
+    [
+     2.6266,
+     39.5531
+    ],
+    [
+     3.1293,
+     41.8462
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Sanary-sur-Mer, France",
+   "lat": 43.1177,
+   "lng": 5.8027,
+   "mode": "sea",
+   "path": [
+    [
+     3.1293,
+     41.8462
+    ],
+    [
+     5.8027,
+     43.1177
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Mediterranean Sea",
+   "lat": 41.875,
+   "lng": 10.202,
+   "mode": "sea",
+   "path": [
+    [
+     5.8027,
+     43.1177
+    ],
+    [
+     10.202,
+     41.875
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Amalfi, Italy",
+   "lat": 40.6329,
+   "lng": 14.6015,
+   "mode": "sea",
+   "path": [
+    [
+     10.202,
+     41.875
+    ],
+    [
+     14.6015,
+     40.6329
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     14.6015,
+     40.6329
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Trapani, Sicily, Italy",
+   "lat": 38.015,
+   "lng": 12.5096,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     12.5096,
+     38.015
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Gozo, Malta",
+   "lat": 36.0304,
+   "lng": 14.2166,
+   "mode": "sea",
+   "path": [
+    [
+     12.5096,
+     38.015
+    ],
+    [
+     14.2166,
+     36.0304
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Valletta, Malta",
+   "lat": 35.8902,
+   "lng": 14.5087,
+   "mode": "sea",
+   "path": [
+    [
+     14.2166,
+     36.0304
+    ],
+    [
+     14.5087,
+     35.8902
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

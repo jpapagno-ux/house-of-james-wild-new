@@ -1,0 +1,186 @@
+{
+ "id": "four-seasons-i-philipsburg-to-saint-john-s-st-lucia-nevis-7n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Lesser Antilles featuring St Lucia & Nevis aboard Four Seasons I",
+ "subtitle": "7 nights · Philipsburg to Saint John's · Four Seasons I",
+ "days": {
+  "1": "Philipsburg",
+  "2": "At sea",
+  "3": "Rodney Bay",
+  "4": "Marina day, Grenadines",
+  "5": "Le Marin",
+  "6": "Charlestown, Nevis",
+  "7": "Beach Day, Prickly Pear",
+  "8": "Saint John's"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Philipsburg, Sint Maarten",
+   "lat": 18.0148,
+   "lng": -63.0429,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Caribbean Sea",
+   "lat": 15.99,
+   "lng": -62.034,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0429,
+     18.0148
+    ],
+    [
+     -62.034,
+     15.99
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marigot Bay, Saint Lucia",
+   "lat": 13.9656,
+   "lng": -61.0247,
+   "mode": "sea",
+   "path": [
+    [
+     -62.034,
+     15.99
+    ],
+    [
+     -61.0247,
+     13.9656
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Rodney Bay, Saint Lucia",
+   "lat": 14.0757,
+   "lng": -60.9486,
+   "mode": "sea",
+   "path": [
+    [
+     -61.0247,
+     13.9656
+    ],
+    [
+     -60.9486,
+     14.0757
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, The Grenadines",
+   "lat": 12.6247,
+   "lng": -61.375,
+   "mode": "sea",
+   "path": [
+    [
+     -60.9486,
+     14.0757
+    ],
+    [
+     -61.375,
+     12.6247
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Le Marin, Martinique",
+   "lat": 14.4694,
+   "lng": -60.87,
+   "mode": "sea",
+   "path": [
+    [
+     -61.375,
+     12.6247
+    ],
+    [
+     -60.87,
+     14.4694
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Charlestown, Nevis",
+   "lat": 17.1388,
+   "lng": -62.6304,
+   "mode": "sea",
+   "path": [
+    [
+     -60.87,
+     14.4694
+    ],
+    [
+     -62.6304,
+     17.1388
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Beach Day, Prickly Pear",
+   "lat": 18.2617,
+   "lng": -63.1767,
+   "mode": "sea",
+   "path": [
+    [
+     -62.6304,
+     17.1388
+    ],
+    [
+     -63.1767,
+     18.2617
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "St John’s, Antigua",
+   "lat": 17.1212,
+   "lng": -61.8477,
+   "mode": "sea",
+   "path": [
+    [
+     -63.1767,
+     18.2617
+    ],
+    [
+     -61.8477,
+     17.1212
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Lesser Antilles",
+    "lat": 15.3,
+    "lng": -61.0,
+    "kind": "region"
+   }
+  ]
+ }
+}

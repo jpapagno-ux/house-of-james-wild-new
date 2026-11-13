@@ -1,0 +1,174 @@
+{
+ "id": "four-seasons-i-las-palmas-to-lisbon-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Grand Mediterranean featuring Casablanca & Sevilla aboard Four Seasons I",
+ "subtitle": "9 nights · Las Palmas to Lisbon · Four Seasons I",
+ "days": {
+  "1": "Las Palmas, Gran Canaria, Canarias",
+  "2": "Arrecife, Lanzarote, Canarias",
+  "3": "At sea",
+  "None": "Cadiz (Seville)",
+  "8": "Gibraltar",
+  "9": "At sea",
+  "10": "lisbon"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Las Palmas, Gran Canaria, Canarias, Spain",
+   "lat": 28.1401,
+   "lng": -15.423,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Arrecife, Lanzarote, Canarias, Spain",
+   "lat": 28.9647,
+   "lng": -13.5376,
+   "mode": "sea",
+   "path": [
+    [
+     -15.423,
+     28.1401
+    ],
+    [
+     -13.5376,
+     28.9647
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Atlantic Ocean",
+   "lat": 31.286,
+   "lng": -10.575,
+   "mode": "sea",
+   "path": [
+    [
+     -13.5376,
+     28.9647
+    ],
+    [
+     -10.575,
+     31.286
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Casablanca, Morocco",
+   "lat": 33.6075,
+   "lng": -7.6122,
+   "mode": "sea",
+   "path": [
+    [
+     -10.575,
+     31.286
+    ],
+    [
+     -7.6122,
+     33.6075
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Cádiz (Sevilla), Spain",
+   "lat": 36.5297,
+   "lng": -6.2926,
+   "mode": "sea",
+   "path": [
+    [
+     -7.6122,
+     33.6075
+    ],
+    [
+     -6.2926,
+     36.5297
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Gibraltar, Gibraltar",
+   "lat": 36.1452,
+   "lng": -5.3655,
+   "mode": "sea",
+   "path": [
+    [
+     -6.2926,
+     36.5297
+    ],
+    [
+     -5.3655,
+     36.1452
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Atlantic Ocean",
+   "lat": 37.428,
+   "lng": -7.246,
+   "mode": "sea",
+   "path": [
+    [
+     -5.3655,
+     36.1452
+    ],
+    [
+     -7.246,
+     37.428
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Lisbon, Portugal",
+   "lat": 38.7106,
+   "lng": -9.1263,
+   "mode": "sea",
+   "path": [
+    [
+     -7.246,
+     37.428
+    ],
+    [
+     -9.1263,
+     38.7106
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

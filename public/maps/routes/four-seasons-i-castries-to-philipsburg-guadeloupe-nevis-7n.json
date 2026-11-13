@@ -1,0 +1,169 @@
+{
+ "id": "four-seasons-i-castries-to-philipsburg-guadeloupe-nevis-7n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Lesser Antilles featuring Guadeloupe & Nevis aboard Four Seasons I",
+ "subtitle": "7 nights · Castries to Philipsburg · Four Seasons I",
+ "days": {
+  "1": "Castries",
+  "2": "At sea",
+  "3": "Manchioneel Bay (Leverick/Bitter End)",
+  "4": "Marina day, Barbuda",
+  "5": "Isles Des Saintes",
+  "6": "Charlestown, Nevis",
+  "7": "Beach Day, Prickly Pear",
+  "8": "Philipsburg"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Castries, Saint Lucia",
+   "lat": 14.0145,
+   "lng": -60.9952,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Caribbean Sea",
+   "lat": 16.256,
+   "lng": -62.69,
+   "mode": "sea",
+   "path": [
+    [
+     -60.9952,
+     14.0145
+    ],
+    [
+     -62.69,
+     16.256
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Manchioneel Bay, Virgin Gorda, British Virgin Islands",
+   "lat": 18.4974,
+   "lng": -64.3855,
+   "mode": "sea",
+   "path": [
+    [
+     -62.69,
+     16.256
+    ],
+    [
+     -64.3855,
+     18.4974
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, Barbuda",
+   "lat": 17.5533,
+   "lng": -61.8557,
+   "mode": "sea",
+   "path": [
+    [
+     -64.3855,
+     18.4974
+    ],
+    [
+     -61.8557,
+     17.5533
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Îles des Saintes, Guadeloupe",
+   "lat": 15.8686,
+   "lng": -61.5836,
+   "mode": "sea",
+   "path": [
+    [
+     -61.8557,
+     17.5533
+    ],
+    [
+     -61.5836,
+     15.8686
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Charlestown, Nevis",
+   "lat": 17.1388,
+   "lng": -62.6304,
+   "mode": "sea",
+   "path": [
+    [
+     -61.5836,
+     15.8686
+    ],
+    [
+     -62.6304,
+     17.1388
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Beach Day, Prickly Pear",
+   "lat": 18.2617,
+   "lng": -63.1767,
+   "mode": "sea",
+   "path": [
+    [
+     -62.6304,
+     17.1388
+    ],
+    [
+     -63.1767,
+     18.2617
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Philipsburg, Sint Maarten",
+   "lat": 18.0148,
+   "lng": -63.0429,
+   "mode": "sea",
+   "path": [
+    [
+     -63.1767,
+     18.2617
+    ],
+    [
+     -63.0429,
+     18.0148
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Lesser Antilles",
+    "lat": 15.3,
+    "lng": -61.0,
+    "kind": "region"
+   }
+  ]
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "id": "four-seasons-i-nice-to-salerno-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Rivieras featuring Corsica & Cannes aboard Four Seasons I",
+ "subtitle": "7 nights · Nice to Salerno · Four Seasons I",
+ "days": {
+  "1": "Nice",
+  "2": "La Ciotat",
+  "3": "Cannes",
+  "4": "At sea",
+  "5": "Bonifacio, Corsica",
+  "None": "Marina day, Italian Riviera",
+  "8": "Salerno"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice, France",
+   "lat": 43.6939,
+   "lng": 7.2862,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "La Ciotat, France",
+   "lat": 43.175,
+   "lng": 5.6083,
+   "mode": "sea",
+   "path": [
+    [
+     7.2862,
+     43.6939
+    ],
+    [
+     5.6083,
+     43.175
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Cannes, France",
+   "lat": 43.5469,
+   "lng": 7.0146,
+   "mode": "sea",
+   "path": [
+    [
+     5.6083,
+     43.175
+    ],
+    [
+     7.0146,
+     43.5469
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Mediterranean Sea",
+   "lat": 42.468,
+   "lng": 8.086,
+   "mode": "sea",
+   "path": [
+    [
+     7.0146,
+     43.5469
+    ],
+    [
+     8.086,
+     42.468
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Bonifacio, Corsica, France",
+   "lat": 41.3886,
+   "lng": 9.1568,
+   "mode": "sea",
+   "path": [
+    [
+     8.086,
+     42.468
+    ],
+    [
+     9.1568,
+     41.3886
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     9.1568,
+     41.3886
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Salerno, Italy",
+   "lat": 40.6753,
+   "lng": 14.7511,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     14.7511,
+     40.6753
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

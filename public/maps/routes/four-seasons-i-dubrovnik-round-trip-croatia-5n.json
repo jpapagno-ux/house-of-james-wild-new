@@ -1,0 +1,139 @@
+{
+ "id": "four-seasons-i-dubrovnik-round-trip-croatia-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Adriatic featuring Croatia aboard Four Seasons I",
+ "subtitle": "5 nights · Dubrovnik round trip · Four Seasons I",
+ "days": {
+  "1": "Dubrovnik",
+  "2": "Portonovi Marina",
+  "3": "Vela Luka",
+  "4": "Stari Grad",
+  "5": "Marina day, Dalmatian Coast",
+  "6": "Dubrovnik"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.6638,
+   "lng": 18.0818,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Portonovi Marina, Montenegro",
+   "lat": 42.4335,
+   "lng": 18.6034,
+   "mode": "sea",
+   "path": [
+    [
+     18.0818,
+     42.6638
+    ],
+    [
+     18.6034,
+     42.4335
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Vela Luka, Croatia",
+   "lat": 42.963,
+   "lng": 16.72,
+   "mode": "sea",
+   "path": [
+    [
+     18.6034,
+     42.4335
+    ],
+    [
+     16.72,
+     42.963
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Stari Grad, Croatia",
+   "lat": 43.1833,
+   "lng": 16.5982,
+   "mode": "sea",
+   "path": [
+    [
+     16.72,
+     42.963
+    ],
+    [
+     16.5982,
+     43.1833
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Marina Day, Dalmatian Coast",
+   "lat": 43.7667,
+   "lng": 15.7,
+   "mode": "sea",
+   "path": [
+    [
+     16.5982,
+     43.1833
+    ],
+    [
+     15.7,
+     43.7667
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.6638,
+   "lng": 18.0818,
+   "mode": "sea",
+   "path": [
+    [
+     15.7,
+     43.7667
+    ],
+    [
+     18.0818,
+     42.6638
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

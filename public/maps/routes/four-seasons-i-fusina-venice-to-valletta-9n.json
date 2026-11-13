@@ -1,0 +1,193 @@
+{
+ "id": "four-seasons-i-fusina-venice-to-valletta-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Grand Mediterranean featuring Sicily & Corfu aboard Four Seasons I",
+ "subtitle": "9 nights · Fusina · Four Seasons I",
+ "days": {
+  "1": "Fusina (Venice)",
+  "2": "Opatija",
+  "3": "Mali Lošinj, Lošinj",
+  "None": "Trogir (Split)",
+  "6": "At sea",
+  "7": "Corfu",
+  "8": "Marina day, Italian Riviera",
+  "9": "Syracusa, Sicily",
+  "10": "Valletta"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Fusina (Venice), Italy",
+   "lat": 45.424,
+   "lng": 12.2556,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Opatija, Croatia",
+   "lat": 45.3365,
+   "lng": 14.311,
+   "mode": "sea",
+   "path": [
+    [
+     12.2556,
+     45.424
+    ],
+    [
+     14.311,
+     45.3365
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Mali Lošinj, Croatia",
+   "lat": 44.5326,
+   "lng": 14.4685,
+   "mode": "sea",
+   "path": [
+    [
+     14.311,
+     45.3365
+    ],
+    [
+     14.4685,
+     44.5326
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Trogir, Croatia",
+   "lat": 43.5156,
+   "lng": 16.2498,
+   "mode": "sea",
+   "path": [
+    [
+     14.4685,
+     44.5326
+    ],
+    [
+     16.2498,
+     43.5156
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Adriatic Sea",
+   "lat": 41.582,
+   "lng": 18.052,
+   "mode": "sea",
+   "path": [
+    [
+     16.2498,
+     43.5156
+    ],
+    [
+     18.052,
+     41.582
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Gouviá, Corfu, Greece",
+   "lat": 39.6476,
+   "lng": 19.8541,
+   "mode": "sea",
+   "path": [
+    [
+     18.052,
+     41.582
+    ],
+    [
+     19.8541,
+     39.6476
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     19.8541,
+     39.6476
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Syracusa, Sicily, Italy",
+   "lat": 37.061,
+   "lng": 15.2932,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     15.2932,
+     37.061
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Valletta, Malta",
+   "lat": 35.8902,
+   "lng": 14.5087,
+   "mode": "sea",
+   "path": [
+    [
+     15.2932,
+     37.061
+    ],
+    [
+     14.5087,
+     35.8902
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

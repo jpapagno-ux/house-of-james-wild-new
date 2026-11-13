@@ -1,0 +1,121 @@
+{
+ "id": "four-seasons-i-athens-round-trip-4n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Athens Roundtrip: The Eastern Aegean aboard Four Seasons I",
+ "subtitle": "4 nights · Athens round trip · Four Seasons I",
+ "days": {
+  "1": "Athens",
+  "2": "Siğacik",
+  "3": "Mykonos",
+  "4": "Marina Day Folegrandos",
+  "5": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Siğacik, Türkiye",
+   "lat": 38.1934,
+   "lng": 26.7865,
+   "mode": "sea",
+   "path": [
+    [
+     23.6359,
+     37.9382
+    ],
+    [
+     26.7865,
+     38.1934
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Mykonos, Greece",
+   "lat": 37.4661,
+   "lng": 25.3229,
+   "mode": "sea",
+   "path": [
+    [
+     26.7865,
+     38.1934
+    ],
+    [
+     25.3229,
+     37.4661
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, Folegandros",
+   "lat": 36.6283,
+   "lng": 24.9198,
+   "mode": "sea",
+   "path": [
+    [
+     25.3229,
+     37.4661
+    ],
+    [
+     24.9198,
+     36.6283
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "mode": "sea",
+   "path": [
+    [
+     24.9198,
+     36.6283
+    ],
+    [
+     23.6359,
+     37.9382
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

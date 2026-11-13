@@ -1,0 +1,121 @@
+{
+ "id": "four-seasons-i-fusina-venice-to-dubrovnik-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Venice to Dubrovnik: The Croatian Coast aboard Four Seasons I",
+ "subtitle": "5 nights · Fusina · Four Seasons I",
+ "days": {
+  "1": "Fusina (Venice)",
+  "2": "Rovinj",
+  "3": "Marina day, Dalmatian Coast",
+  "None": "Hvar",
+  "6": "Dubrovnik"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Fusina (Venice), Italy",
+   "lat": 45.424,
+   "lng": 12.2556,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Rovinj, Croatia",
+   "lat": 45.0817,
+   "lng": 13.6344,
+   "mode": "sea",
+   "path": [
+    [
+     12.2556,
+     45.424
+    ],
+    [
+     13.6344,
+     45.0817
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Dalmatian Coast",
+   "lat": 43.7667,
+   "lng": 15.7,
+   "mode": "sea",
+   "path": [
+    [
+     13.6344,
+     45.0817
+    ],
+    [
+     15.7,
+     43.7667
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Hvar, Croatia",
+   "lat": 43.183,
+   "lng": 16.436,
+   "mode": "sea",
+   "path": [
+    [
+     15.7,
+     43.7667
+    ],
+    [
+     16.436,
+     43.183
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.6638,
+   "lng": 18.0818,
+   "mode": "sea",
+   "path": [
+    [
+     16.436,
+     43.183
+    ],
+    [
+     18.0818,
+     42.6638
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

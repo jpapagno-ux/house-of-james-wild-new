@@ -1,0 +1,193 @@
+{
+ "id": "four-seasons-i-palma-de-mallorca-to-las-palmas-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Palma to Las Palmas: From the Mediterranean to the Canaries aboard Four Seasons I",
+ "subtitle": "9 nights · Palma de Mallorca to Las Palmas · Four Seasons I",
+ "days": {
+  "1": "Palma de Mallorca",
+  "2": "At sea",
+  "3": "Málaga",
+  "4": "Cadiz (Seville)",
+  "None": "Casablanca (Marrakesh)",
+  "7": "At sea",
+  "8": "Santa Cruz de La Palma, Canarias",
+  "9": "Santa Cruz de Tenerife, Canarias",
+  "10": "Las Palmas, Gran Canaria, Canarias"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Palma de Mallorca, Spain",
+   "lat": 39.5531,
+   "lng": 2.6266,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Mediterranean Sea",
+   "lat": 38.135,
+   "lng": -0.895,
+   "mode": "sea",
+   "path": [
+    [
+     2.6266,
+     39.5531
+    ],
+    [
+     -0.895,
+     38.135
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Málaga, Spain",
+   "lat": 36.7177,
+   "lng": -4.4174,
+   "mode": "sea",
+   "path": [
+    [
+     -0.895,
+     38.135
+    ],
+    [
+     -4.4174,
+     36.7177
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Cádiz (Sevilla), Spain",
+   "lat": 36.5297,
+   "lng": -6.2926,
+   "mode": "sea",
+   "path": [
+    [
+     -4.4174,
+     36.7177
+    ],
+    [
+     -6.2926,
+     36.5297
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Casablanca, Morocco",
+   "lat": 33.6075,
+   "lng": -7.6122,
+   "mode": "sea",
+   "path": [
+    [
+     -6.2926,
+     36.5297
+    ],
+    [
+     -7.6122,
+     33.6075
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Atlantic Ocean",
+   "lat": 31.145,
+   "lng": -12.688,
+   "mode": "sea",
+   "path": [
+    [
+     -7.6122,
+     33.6075
+    ],
+    [
+     -12.688,
+     31.145
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Santa Cruz de la Palma, Canarias, Spain",
+   "lat": 28.6834,
+   "lng": -17.7646,
+   "mode": "sea",
+   "path": [
+    [
+     -12.688,
+     31.145
+    ],
+    [
+     -17.7646,
+     28.6834
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Santa Cruz de Tenerife, Spain",
+   "lat": 28.4636,
+   "lng": -16.2518,
+   "mode": "sea",
+   "path": [
+    [
+     -17.7646,
+     28.6834
+    ],
+    [
+     -16.2518,
+     28.4636
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Las Palmas, Gran Canaria, Canarias, Spain",
+   "lat": 28.1401,
+   "lng": -15.423,
+   "mode": "sea",
+   "path": [
+    [
+     -16.2518,
+     28.4636
+    ],
+    [
+     -15.423,
+     28.1401
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

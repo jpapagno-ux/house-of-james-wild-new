@@ -1,0 +1,193 @@
+{
+ "id": "four-seasons-i-athens-to-dubrovnik-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Ionian Coast featuring Astypálaia & Siğacik aboard Four Seasons I",
+ "subtitle": "9 nights · Athens to Dubrovnik · Four Seasons I",
+ "days": {
+  "1": "Athens",
+  "2": "Astypalaia, Nisos Astypalaia",
+  "3": "Siğacik",
+  "4": "At sea",
+  "5": "Zakynthos, Nisos Zakynthos",
+  "6": "Marina day, Greek Isles",
+  "None": "Gaios, Nisos Paxos",
+  "9": "San Foca (Lecce)",
+  "10": "Dubrovnik"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Astypálaia",
+   "lat": 36.57,
+   "lng": 26.3608,
+   "mode": "sea",
+   "path": [
+    [
+     23.6359,
+     37.9382
+    ],
+    [
+     26.3608,
+     36.57
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Siğacik, Türkiye",
+   "lat": 38.1934,
+   "lng": 26.7865,
+   "mode": "sea",
+   "path": [
+    [
+     26.3608,
+     36.57
+    ],
+    [
+     26.7865,
+     38.1934
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Aegean Sea",
+   "lat": 37.997,
+   "lng": 23.768,
+   "mode": "sea",
+   "path": [
+    [
+     26.7865,
+     38.1934
+    ],
+    [
+     23.768,
+     37.997
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Zakynthos, Greece",
+   "lat": 37.8,
+   "lng": 20.75,
+   "mode": "sea",
+   "path": [
+    [
+     23.768,
+     37.997
+    ],
+    [
+     20.75,
+     37.8
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Marina Day, Greek Isles",
+   "lat": 38.3767,
+   "lng": 20.685,
+   "mode": "sea",
+   "path": [
+    [
+     20.75,
+     37.8
+    ],
+    [
+     20.685,
+     38.3767
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Gaios, Greece",
+   "lat": 39.2,
+   "lng": 20.1667,
+   "mode": "sea",
+   "path": [
+    [
+     20.685,
+     38.3767
+    ],
+    [
+     20.1667,
+     39.2
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "San Foca, Italy",
+   "lat": 40.3022,
+   "lng": 18.4045,
+   "mode": "sea",
+   "path": [
+    [
+     20.1667,
+     39.2
+    ],
+    [
+     18.4045,
+     40.3022
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.6638,
+   "lng": 18.0818,
+   "mode": "sea",
+   "path": [
+    [
+     18.4045,
+     40.3022
+    ],
+    [
+     18.0818,
+     42.6638
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

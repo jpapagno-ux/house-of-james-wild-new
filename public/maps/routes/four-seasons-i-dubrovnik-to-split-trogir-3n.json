@@ -1,0 +1,103 @@
+{
+ "id": "four-seasons-i-dubrovnik-to-split-trogir-3n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Adriatic featuring Croatia & Montenegro aboard Four Seasons I",
+ "subtitle": "3 nights · Dubrovnik to Split · Four Seasons I",
+ "days": {
+  "1": "Dubrovnik",
+  "2": "Portonovi Marina",
+  "3": "Hvar",
+  "4": "Split (Trogir)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.6638,
+   "lng": 18.0818,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Portonovi Marina, Montenegro",
+   "lat": 42.4335,
+   "lng": 18.6034,
+   "mode": "sea",
+   "path": [
+    [
+     18.0818,
+     42.6638
+    ],
+    [
+     18.6034,
+     42.4335
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Hvar, Croatia",
+   "lat": 43.183,
+   "lng": 16.436,
+   "mode": "sea",
+   "path": [
+    [
+     18.6034,
+     42.4335
+    ],
+    [
+     16.436,
+     43.183
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Split, Croatia",
+   "lat": 43.5057,
+   "lng": 16.4406,
+   "mode": "sea",
+   "path": [
+    [
+     16.436,
+     43.183
+    ],
+    [
+     16.4406,
+     43.5057
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

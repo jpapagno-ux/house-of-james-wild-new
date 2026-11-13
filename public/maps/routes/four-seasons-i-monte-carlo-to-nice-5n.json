@@ -1,0 +1,139 @@
+{
+ "id": "four-seasons-i-monte-carlo-to-nice-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Rivieras featuring Saint-Tropez & Portofino aboard Four Seasons I",
+ "subtitle": "5 nights · Monte Carlo to Nice · Four Seasons I",
+ "days": {
+  "1": "Monte Carlo",
+  "2": "Portofino",
+  "3": "Saint-Tropez",
+  "4": "Golfe-Juan",
+  "5": "Marina day, Italian Riviera",
+  "6": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Portofino, Italy",
+   "lat": 44.3023,
+   "lng": 9.2119,
+   "mode": "sea",
+   "path": [
+    [
+     7.4294,
+     43.7358
+    ],
+    [
+     9.2119,
+     44.3023
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Saint-Tropez, France",
+   "lat": 43.2716,
+   "lng": 6.6356,
+   "mode": "sea",
+   "path": [
+    [
+     9.2119,
+     44.3023
+    ],
+    [
+     6.6356,
+     43.2716
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Golfe-Juan, France",
+   "lat": 43.5418,
+   "lng": 7.0392,
+   "mode": "sea",
+   "path": [
+    [
+     6.6356,
+     43.2716
+    ],
+    [
+     7.0392,
+     43.5418
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     7.0392,
+     43.5418
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Nice, France",
+   "lat": 43.6939,
+   "lng": 7.2862,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     7.2862,
+     43.6939
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

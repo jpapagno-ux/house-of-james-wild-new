@@ -1,0 +1,102 @@
+{
+ "id": "four-seasons-i-nice-round-trip-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Nice Roundtrip: Sea to Circuit aboard Four Seasons I",
+ "subtitle": "5 nights · Nice round trip · Four Seasons I",
+ "days": {
+  "1": "Nice",
+  "None": "Villefranche-sur-Mer",
+  "6": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice, France",
+   "lat": 43.6939,
+   "lng": 7.2862,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "mode": "sea",
+   "path": [
+    [
+     7.2862,
+     43.6939
+    ],
+    [
+     7.4294,
+     43.7358
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Villefranche-sur-Mer",
+   "lat": 43.7039,
+   "lng": 7.3124,
+   "mode": "sea",
+   "path": [
+    [
+     7.4294,
+     43.7358
+    ],
+    [
+     7.3124,
+     43.7039
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Nice, France",
+   "lat": 43.6939,
+   "lng": 7.2862,
+   "mode": "sea",
+   "path": [
+    [
+     7.3124,
+     43.7039
+    ],
+    [
+     7.2862,
+     43.6939
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

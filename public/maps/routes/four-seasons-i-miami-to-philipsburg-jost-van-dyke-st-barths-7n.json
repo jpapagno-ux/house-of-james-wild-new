@@ -1,0 +1,151 @@
+{
+ "id": "four-seasons-i-miami-to-philipsburg-jost-van-dyke-st-barths-7n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Grand Caribbean featuring Jost Van Dyke & St Barths aboard Four Seasons I",
+ "subtitle": "7 nights · Miami to Philipsburg · Four Seasons I",
+ "days": {
+  "1": "Miami, Florida",
+  "2": "Marina day, Bahamas",
+  "None": "At sea",
+  "5": "Great Harbour, Jost van Dyke",
+  "6": "Gustavia",
+  "7": "Beach Day, Prickly Pear",
+  "8": "Philipsburg"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Miami, Florida",
+   "lat": 25.7746,
+   "lng": -80.1775,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Marina Day, The Bahamas",
+   "lat": 25.3999,
+   "lng": -77.8931,
+   "mode": "sea",
+   "path": [
+    [
+     -80.1775,
+     25.7746
+    ],
+    [
+     -77.8931,
+     25.3999
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Atlantic Ocean",
+   "lat": 21.923,
+   "lng": -71.318,
+   "mode": "sea",
+   "path": [
+    [
+     -77.8931,
+     25.3999
+    ],
+    [
+     -71.318,
+     21.923
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Great Harbour, Jost van Dyke, British Virgin Islands",
+   "lat": 18.4463,
+   "lng": -64.7429,
+   "mode": "sea",
+   "path": [
+    [
+     -71.318,
+     21.923
+    ],
+    [
+     -64.7429,
+     18.4463
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Gustavia, St Barths",
+   "lat": 17.8994,
+   "lng": -62.8509,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7429,
+     18.4463
+    ],
+    [
+     -62.8509,
+     17.8994
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Beach Day, Prickly Pear",
+   "lat": 18.2617,
+   "lng": -63.1767,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8509,
+     17.8994
+    ],
+    [
+     -63.1767,
+     18.2617
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Philipsburg, Sint Maarten",
+   "lat": 18.0148,
+   "lng": -63.0429,
+   "mode": "sea",
+   "path": [
+    [
+     -63.1767,
+     18.2617
+    ],
+    [
+     -63.0429,
+     18.0148
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Lesser Antilles",
+    "lat": 15.3,
+    "lng": -61.0,
+    "kind": "region"
+   }
+  ]
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "four-seasons-i-las-palmas-to-philipsburg-the-atlantic-crossing-8n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Las Palmas to Philipsburg: The Atlantic Crossing aboard Four Seasons I",
+ "subtitle": "8 nights · Las Palmas to Philipsburg · Four Seasons I",
+ "days": {
+  "1": "Las Palmas, Gran Canaria, Canarias",
+  "None": "At sea",
+  "9": "Philipsburg"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Las Palmas, Gran Canaria, Canarias, Spain",
+   "lat": 28.1401,
+   "lng": -15.423,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Atlantic Ocean",
+   "lat": 23.077,
+   "lng": -39.233,
+   "mode": "sea",
+   "path": [
+    [
+     -15.423,
+     28.1401
+    ],
+    [
+     -39.233,
+     23.077
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Philipsburg, Sint Maarten",
+   "lat": 18.0148,
+   "lng": -63.0429,
+   "mode": "sea",
+   "path": [
+    [
+     -39.233,
+     23.077
+    ],
+    [
+     -63.0429,
+     18.0148
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Atlantic Ocean",
+    "lat": 25.0,
+    "lng": -40.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Canary Islands",
+    "lat": 28.3,
+    "lng": -15.8,
+    "kind": "region"
+   },
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

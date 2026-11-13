@@ -28,6 +28,13 @@
   review sites or third-party guides. If the brand site can't supply it, flag the record for
   follow-up in Stay Studio instead of filling the gap.
 
+## No outbound links, no competitor data (James, 13 Nov 2026: "a hard freeze")
+- Never link out to an operator's, hotel's, cruise line's, tour company's, booking site's or OTA's pages, on any
+  page: stays, voyages, ships, partners, gatherings, guides. Facts from a partner's own site are fine, filed with
+  their source kept in the data (`sources`), never printed as a link. Every enquiry goes to the house (`/plan`).
+- Never collect data from competing tour operators, travel companies, booking sites or OTAs.
+- Check with `scripts/audit/external-links.mjs` (the External links audit workflow) after any content build.
+
 ## What's coming (James, 31 Oct 2026)
 - Lodges that are announced, opening or rebuilding are tagged "WHAT'S COMING SECTION" in their
   Stay Studio review notes (Singita Elela, Dec 2026; andBeyond Xaranna Okavango Delta Lodge,

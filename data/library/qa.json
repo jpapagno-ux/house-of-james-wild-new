@@ -3936,6 +3936,16 @@
    "released": true
   },
   {
+   "stay_id": "6af7509caf609e8f8b6c1e9e",
+   "slug": "salterra",
+   "name": "Salterra Resort & Spa",
+   "country": "Turks and Caicos",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff991",
    "slug": "samara-karoo-reserve",
    "name": "Samara Karoo Reserve",

@@ -548,6 +548,7 @@ export const STAY_SLUGS: string[] = [
   "rubondo-island-camp-asilia",
   "sable-alley-khwai",
   "salas-camp",
+  "salterra",
   "samara-karoo-reserve",
   "sangat-island-dive-resort",
   "sans-camp",

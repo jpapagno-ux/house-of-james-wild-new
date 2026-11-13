@@ -40442,6 +40442,132 @@
    "placeSlug": null
   },
   {
+   "slug": "salterra",
+   "name": "Salterra Resort & Spa",
+   "ledgerId": "STY-2026-000652",
+   "country": "Turks and Caicos",
+   "countrySlug": "turks-caicos",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "One hundred oceanfront rooms and suites on South Caicos, the island of white gold",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s05",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s43",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s01",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s13",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s00",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s32",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s27",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/salterra/s10"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Families",
+    "Couples",
+    "Anglers and divers",
+    "Nature lovers",
+    "Celebrations"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-13",
+   "coords": null,
+   "airport": "South Caicos International Airport (XSC)",
+   "airportDirections": "Salterra is a ten minute drive from the South Caicos runway. American Airlines flies nonstop from Miami twice weekly (Wednesdays and Saturdays); BermudAir flies nonstop from Newark twice weekly (Thursdays and Sundays) from 20 December 2026 to 25 April 2027, about three and a half hours. Or fly into Providenciales (PLS) and take a 25 minute island hopper, a private boat or, in festive periods, a seasonal ferry from Walkin Marina. The resort shuttle is US$20 a person each way.",
+   "founderNote": "Founder vetted (James, 13 Nov 2026), with a relationship to the house.",
+   "rooms": {
+    "paras": [
+     "One hundred oceanfront rooms and suites: Deluxe and Grand Deluxe Guest Rooms of 455 square feet (king or two queens, some ground floor queens with a private lanai), One Bedroom and Superior One Bedroom Suites of 1,135 square feet, Two Bedroom Suites of 1,240 square feet and Superior Two Bedroom Suites of 1,165 square feet, and the Premier's Penthouse, 2,800 square feet with two kings, a queen and a bunk.",
+     "Salterra publishes no nightly rates on its website; rates are quoted before a 27% charge (12% government tax, 10% service and a 5% facility fee). Children 11 and under stay free in their parents' room."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Guided bonefishing on the flats of the Caicos Bank, with locally trained guides.",
+     "Reef snorkelling a short boat ride from Salterra Beach, and the Caicos Bank adventure to shallow reefs and uninhabited cays.",
+     "Northern cays paddling by kayak, with a van or airboat to Jerry Camp and Plandon Cay Cut.",
+     "The South Caicos Salt Experience, a storytelling walk through the old salinas with Salterra's Zemis guides.",
+     "Coral restoration with the reef team, yoga, pickleball and guided nature walks."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "Eighty five acres and 3,000 feet of secluded white sand beach, beside the Admiral Cockburn Land and Sea National Park.",
+     "Four pools, including a lagoon-style pool and a children's pool.",
+     "Six places to eat and drink: Brine, Cobo Bar and Grill, Regatta, Sisal, Flamingo Café and Jack and Jenny's, with the optional Salterra Epicurean Experience.",
+     "The Spa at Salterra, with eight treatment rooms, couples' pavilions and a salt sauna and steam room.",
+     "Salterra Kids Club for ages 4 to 12, complimentary every day from 9:30 to 5:00."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A full-service beach resort on an island most travellers have never reached, with nonstop flights from Miami and Newark straight to its own small airport, bonefishing flats, the salinas and a national park beside the beach."
+   ],
+   "why": [
+    {
+     "title": "The Caribbean's Last Untouched Shore",
+     "body": "South Caicos is the quiet one: far from the busier islands of the archipelago, with wild water, empty beaches and salt ponds that once made it the island of white gold. Salterra opened here after the Tibbetts family, Caribbean builders since 1978, bought 85 acres in 2021, negotiated the first commercial international flight to South Caicos in more than 30 years and brought a baggage scanner in by barge. The result is a 100 room resort on 3,000 feet of beach, with bonefishing, reefs and flamingos at the door, and a family that co-founded the South Caicos Coral Reef Consortium to restore the reefs around it."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round, with the sun out about 350 days a year. The resort closes from 9 September to 20 October 2026, and holiday weeks (20 December to 3 January) carry a five night minimum.",
+    "how_to_get_there": "Nonstop to South Caicos (XSC) from Miami on American Airlines (Wednesdays and Saturdays) or from Newark on BermudAir (Thursdays and Sundays, 20 December 2026 to 25 April 2027); or via Providenciales and a 25 minute island hopper. Salterra is ten minutes from the runway.",
+    "signature_experiences": "Bonefishing the Caicos Bank, reef snorkelling, paddling the northern cays, the Salt Experience in the salinas, coral restoration, dinner at Brine.",
+    "who_its_for": "Families (kids stay free, complimentary Kids Club), couples, anglers and divers, and travellers who want a quiet island with a full resort."
+   },
+   "faqs": [
+    {
+     "q": "How do you get to Salterra on South Caicos?",
+     "a": "Fly nonstop to South Caicos International Airport (XSC) from Miami on American Airlines (Wednesdays and Saturdays) or, from 20 December 2026 to 25 April 2027, from Newark on BermudAir (Thursdays and Sundays, about three and a half hours). You can also fly to Providenciales (PLS) and take a 25 minute island hopper, a private boat charter or, at holiday times, a seasonal ferry from Walkin Marina. Salterra is a ten minute drive from the runway; its shuttle is US$20 a person each way."
+    },
+    {
+     "q": "How much does Salterra cost?",
+     "a": "Salterra does not publish nightly rates on its website. Rates are per room per night in US dollars, before 12% government tax, a 10% service charge and a 5% facility fee. Children 11 and under stay free with their parents, and extra guests 12 and older are US$75 a night from the third guest. The optional Salterra Epicurean Experience, with all meals and house drinks, is US$350 an adult and US$120 a young adult (12 to 17) a night, inclusive of taxes and gratuities, and children 11 and under eat free. James confirms rates for your dates."
+    },
+    {
+     "q": "Is Salterra good for families?",
+     "a": "Yes. Children 11 and under stay free, Salterra Kids Club is complimentary for ages 4 to 12 every day from 9:30 to 5:00, there is a children's pool and a lagoon-style pool, and the Two Bedroom Suites and Premier's Penthouse sleep a family. Babysitting can be arranged through the Kids Club."
+    },
+    {
+     "q": "What is there to do on South Caicos?",
+     "a": "Bonefishing on the flats of the Caicos Bank, reef snorkelling, kayaking the northern cays, the Salt Experience through the old salinas, coral restoration with the reef team and the Admiral Cockburn Land and Sea National Park, along with the spa, yoga and pickleball at the resort."
+    },
+    {
+     "q": "What is Salterra's cancellation policy?",
+     "a": "Outside the holiday period, reservations can be cancelled without penalty up to 30 days before arrival; within 30 days the full stay is charged. A deposit of the first and last nights and taxes is taken at booking and the balance 30 days before arrival. The festive period has a five night minimum."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-13"
+   },
+   "volumes": [
+    "stays",
+    "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "samara-karoo-reserve",
    "name": "Samara Karoo Reserve",
    "ledgerId": "STY-2026-000226",

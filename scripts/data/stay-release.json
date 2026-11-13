@@ -2106,8 +2106,17 @@
    "slug": "hotel-indigo-bali-seminyak-beach",
    "batch": "2026-11-12 Indonesia founder stays"
   },
-  "orpheus-island-lodge",
-  "pelorus-private-island",
-  "casali-di-casole"
+  {
+   "slug": "orpheus-island-lodge",
+   "batch": "2026-11-12 Antipodal"
+  },
+  {
+   "slug": "pelorus-private-island",
+   "batch": "2026-11-12 Antipodal"
+  },
+  {
+   "slug": "casali-di-casole",
+   "batch": "2026-11-12 Casali di Casole presentation"
+  }
  ]
 }

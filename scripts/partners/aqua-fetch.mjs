@@ -63,6 +63,26 @@ for (const tab of ["videos", "playlists"]) {
 }
 console.log("youtube", youtube.length);
 
+// Photographs on Aqua's own ship and destination pages, as full-size originals (the site serves an
+// "-optimized" webp copy beside each one), with the alt text the page gives them.
+const PAGES = ["cruise-ships/aqua-blu", "cruise-ships/aqua-mekong", "cruise-ships/aqua-mare", "cruise-ships/aqua-nera", "cruise-ships/aqua-lares", "cruise-ships/aria-amazon", "destinations/mekong-river-cruise", "destinations/amazon-river-cruise", "destinations/galapagos-cruise", "destinations/seychelles-tanzania-cruise", "destinations/svalbard-arctic-cruise", "destinations/indonesia-cruise", "about-us"];
+const photos = {};
+for (const p of PAGES) {
+  const html = (await fetch(`https://www.aquaexpeditions.com/${p}`, { headers: { "user-agent": "Mozilla/5.0" } }).then((r) => r.text()).catch(() => "")).replace(/\\u0026/g, "&").replace(/&amp;/g, "&");
+  const out = [];
+  const re = /https:\/\/d20knvk822eu5a\.cloudfront\.net\/s3fs-public-optimized\/(?:styles\/manual_crop\/public\/)?([^"'\s)?\\]+?)\.webp/g;
+  let m;
+  while ((m = re.exec(html))) {
+    const orig = `https://d20knvk822eu5a.cloudfront.net/s3fs-public/${m[1]}`;
+    if (out.some((x) => x.src === orig) || /menu-|newsletter|logo|icon|placeholder/i.test(orig)) continue;
+    const near = html.slice(Math.max(0, m.index - 600), m.index + 600);
+    const alt = (near.match(/alt="([^"]{3,200})"/) || near.match(/\\"alt\\":\\"([^"\\]{3,200})/) || [])[1] ?? null;
+    out.push({ src: orig, alt });
+  }
+  photos[p] = out;
+  console.log(p, out.length);
+}
+
 mkdirSync("scripts/data/aqua", { recursive: true });
-writeFileSync("scripts/data/aqua/raw.json", JSON.stringify({ fetched: today, trips: trips.TripList, ships: ships.ShipList, events, itineraries, promos, youtube }, null, 1));
+writeFileSync("scripts/data/aqua/raw.json", JSON.stringify({ fetched: today, trips: trips.TripList, ships: ships.ShipList, events, itineraries, promos, youtube, photos }, null, 1));
 console.log("events", Object.values(events).flat().length, "itineraries", Object.keys(itineraries).length);

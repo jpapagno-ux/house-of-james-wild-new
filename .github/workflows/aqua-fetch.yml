@@ -1,0 +1,28 @@
+# Aqua Expeditions partner data: fetches the public trips, ships, departures and day-by-day
+# itineraries Aqua's own site loads, and keeps them as a run artifact (scripts/data/aqua/raw.json)
+# for scripts/partners/aqua-build.mjs. Run by hand, or on a push that changes the fetch script.
+name: Aqua Expeditions fetch
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/partners/aqua-fetch.mjs, .github/workflows/aqua-fetch.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/partners/aqua-fetch.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aqua-raw
+          path: scripts/data/aqua/raw.json
+          retention-days: 30

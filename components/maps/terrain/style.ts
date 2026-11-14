@@ -38,6 +38,29 @@ export const SKY_SATELLITE: SkySpecification = {
   "sky-color": SATELLITE.sky, "horizon-color": SATELLITE.horizon, "fog-color": SATELLITE.fog,
   "sky-horizon-blend": 0.6, "horizon-fog-blend": 0.7, "fog-ground-blend": 0.35, "atmosphere-blend": 0,
 };
+/** The three map views (James, 14 Nov 2026): the house chart, satellite imagery (MapTiler key only), and night. */
+export type MapView = "chart" | "satellite" | "night";
+/** Night: the chart in ink, a deep sea, lamplight labels; the route, stops and vessel keep their own colours. */
+export const NIGHT = { ground: "#1A1816", land: "#24211E", sea: "#13222A", seaLine: "#2C3E46", line: "#3A3631", label: "#E8E3DC", labelSoft: "#B5ADA3", halo: "#1A1816", sky: "#0E1316", horizon: "#2A333A", fog: "#191E22" };
+export const SKY_NIGHT: SkySpecification = {
+  "sky-color": NIGHT.sky, "horizon-color": NIGHT.horizon, "fog-color": NIGHT.fog,
+  "sky-horizon-blend": 0.6, "horizon-fog-blend": 0.7, "fog-ground-blend": 0.35, "atmosphere-blend": 0,
+};
+/** Depth tints: the sea shaded by depth from the raw elevation tiles (the seabed is not flattened for this layer),
+ *  pale over the reefs and shelves, deepening offshore; land is left clear so the chart and hillshade show through. */
+export const depthLayer = (): LayerSpecification => ({
+  id: "jw-depth", type: "color-relief", source: "jw-depth",
+  paint: {
+    "color-relief-color": ["interpolate", ["linear"], ["elevation"], -5000, "#2B4954", -2000, "#3B606B", -600, "#557D86", -150, "#7FA3A6", -30, "#AFC8C6", -2, "#D3E1DD", 0, "rgba(0,0,0,0)"],
+    "color-relief-opacity": 0.7,
+  },
+} as unknown as LayerSpecification);
+/** Where the depth tints sit: just above the base style's water fills, under every line, label and our own route. */
+export const depthIndex = (layers: { type: string; "source-layer"?: string }[]) => {
+  let at = -1;
+  layers.forEach((l, i) => { if (l.type === "fill" && l["source-layer"] === "water") at = i; });
+  return at < 0 ? satelliteIndex(layers) : at + 1;
+};
 /** The background colour for each view: Stone Mist under the chart, the earth tone under satellite. */
 export const groundOf = (satellite: boolean) => (satellite ? SATELLITE.ground : TERRAIN.ground);
 /** The satellite raster layer: no fade-in from the background, so tiles appear at once over the earth tone, and the
@@ -62,6 +85,7 @@ export function viewOps(base: Lyr[], on: boolean, relief: "terrain" | "flat" | u
   const vis = (l: Lyr) => (l.layout?.visibility === "none" ? "none" : "visible");
   for (const l of base) {
     if (l.id === "jw-satellite") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on ? "visible" : "none" });
+    else if (l.id === "jw-depth") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on ? "none" : "visible" });
     else if (l.id === "jw-hillshade") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on || relief === "flat" ? "none" : vis(l) });
     else if (l.id.startsWith("jw-")) continue; // our own route, stops and pins stay as they are
     else if (l.type === "background") ops.push({ id: l.id, kind: "paint", prop: "background-color", value: groundOf(on) });
@@ -69,6 +93,25 @@ export function viewOps(base: Lyr[], on: boolean, relief: "terrain" | "flat" | u
       ops.push({ id: l.id, kind: "paint", prop: "fill-color", value: on ? SATELLITE.sea : TERRAIN.water });
       ops.push({ id: l.id, kind: "paint", prop: "fill-outline-color", value: on ? SATELLITE.sea : TERRAIN.water });
     } else if (l.type === "fill" || l.type === "line" || l.type === "fill-extrusion") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on ? "none" : vis(l) });
+  }
+  return ops;
+}
+
+type PaintLyr = Lyr & { paint?: Record<string, unknown> };
+/** The changes that turn the chart into Night, and back: every paint it sets returns to the built style's value. */
+export function nightOps(base: PaintLyr[], on: boolean): ViewOp[] {
+  const ops: ViewOp[] = [];
+  const set = (l: PaintLyr, prop: string, night: unknown) => ops.push({ id: l.id, kind: "paint", prop, value: on ? night : l.paint?.[prop] });
+  for (const l of base) {
+    const sl = l["source-layer"] ?? "";
+    if (l.id === "jw-hillshade") { set(l, "hillshade-shadow-color", "#000000"); set(l, "hillshade-highlight-color", "#5A534C"); set(l, "hillshade-accent-color", "#2E2B28"); }
+    else if (l.id === "jw-depth") set(l, "color-relief-opacity", 0.45);
+    else if (l.id.startsWith("jw-")) continue;
+    else if (l.type === "background") ops.push({ id: l.id, kind: "paint", prop: "background-color", value: on ? NIGHT.ground : TERRAIN.ground });
+    else if (l.type === "fill" && sl === "water") { set(l, "fill-color", NIGHT.sea); set(l, "fill-outline-color", NIGHT.sea); }
+    else if (l.type === "fill") set(l, "fill-color", NIGHT.land);
+    else if (l.type === "line") set(l, "line-color", sl === "water" || sl === "waterway" ? NIGHT.seaLine : NIGHT.line);
+    else if (l.type === "symbol") { set(l, "text-color", sl === "place" ? NIGHT.label : NIGHT.labelSoft); set(l, "text-halo-color", NIGHT.halo); }
   }
   return ops;
 }
@@ -83,7 +126,7 @@ export const hillshadeLayer = (source: string): LayerSpecification => ({
   id: "jw-hillshade", type: "hillshade", source,
   paint: {
     "hillshade-shadow-color": TERRAIN.shadow, "hillshade-highlight-color": TERRAIN.highlight, "hillshade-accent-color": TERRAIN.accent,
-    "hillshade-exaggeration": 0.55, "hillshade-illumination-direction": 315,
+    "hillshade-exaggeration": 0.65, "hillshade-illumination-direction": 315,
   },
 });
 
@@ -113,6 +156,8 @@ export function houseLayer(layer: LayerSpecification): AnyLayer {
     if (sl === "waterway") return paint(l, { "line-color": TERRAIN.waterLine });
     if (sl === "water") return paint(l, { "line-color": TERRAIN.waterLine });
     if (sl === "boundary") return paint(l, { "line-color": TERRAIN.boundary, "line-opacity": 0.7 });
+    // Contours (MapTiler's contour tiles, 14 Nov 2026): fine warm lines, the index contours a touch stronger.
+    if (sl === "contour") return { ...l, minzoom: 9, layout: { ...(l.layout ?? {}), visibility: "visible" }, paint: { "line-color": TERRAIN.accent, "line-opacity": ["case", [">", ["coalesce", ["get", "nth_line"], 0], 1], 0.55, 0.3], "line-width": ["interpolate", ["linear"], ["zoom"], 9, 0.4, 13, 0.9] } } as AnyLayer;
     if (sl === "transportation") return MAJOR_ROAD.test(id) && !/casing|tunnel|bridge|rail/.test(id) ? paint(l, { "line-color": TERRAIN.road, "line-opacity": 0.6 }) : hide(l);
     return hide(l);
   }

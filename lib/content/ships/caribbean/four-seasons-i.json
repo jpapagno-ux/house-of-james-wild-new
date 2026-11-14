@@ -12622,7 +12622,7 @@
     "Transfers",
     "Hotels before and after the voyage"
   ],
-  "children": "Children are welcome: several suites take an infant or a child as an extra guest, the Studio suites add a bunk room, and breakfast, lunch and dinner are included for children under five. Ask us for the youngest age on a given sailing.",
+  "children": "Four Seasons Yachts welcomes children from six months old at the start of the voyage, and from one year old on voyages with three or more consecutive days at sea. Anyone under 18 sails with a guardian. Studio suites add a bunk room, several suites take an infant or a child as an extra guest, and breakfast, lunch and dinner are included for children under five.",
   "faqs": [
     [
       "How many guests does Four Seasons I carry?",
@@ -12673,8 +12673,16 @@
       "No. The images here are Four Seasons Yachts' own renderings of the yacht and her suites, and are labelled as renderings."
     ],
     [
-      "What are the deposit and cancellation terms?",
-      "Ask us. James confirms the deposit, payment dates and cancellation terms for your sailing when he holds a suite."
+      "What is the minimum age on Four Seasons I?",
+      "Six months at the start of the voyage, or one year on voyages with three or more consecutive days at sea. Guests under 18 sail with a guardian."
+    ],
+    [
+      "What deposit does Four Seasons Yachts ask for?",
+      "25% of the voyage fare within three calendar days of booking. The balance is due 150 days before departure for standard suites and 180 days for Signature Suites."
+    ],
+    [
+      "What is the cancellation policy on Four Seasons I?",
+      "For standard suites the fee is 3% of the fare more than 150 days before departure, rising in steps to 100% at 30 days or less. For Signature Suites it is 3% more than 180 days out, rising to 100% at 60 days or less. The 3% is credited towards a future voyage within 12 months."
     ]
   ],
   "suits": [
@@ -12703,7 +12711,17 @@
     "https://www.fourseasonsyachts.com/vessels/four-seasons-1",
     "https://www.fourseasonsyachts.com/vessels/four-seasons-1/suites",
     "https://www.fourseasonsyachts.com/voyages?yachts=FS-I",
-    "https://press.fourseasons.com/yachts/"
+    "https://press.fourseasons.com/yachts/",
+    "https://www.fourseasonsyachts.com/faq",
+    "https://www.fourseasonsyachts.com/terms-and-conditions"
   ],
-  "film": null
+  "film": null,
+  "terms": [
+    "Minimum age: six months at the start of the voyage, or one year on voyages with three or more consecutive days at sea. Guests under 18 sail with a guardian.",
+    "Deposit: 25% of the voyage fare, due within three calendar days of booking.",
+    "Final payment: 150 days before departure for standard suites, 180 days for Signature Suites. Inside 153 days (standard) or 183 days (Signature) the full fare is due at booking.",
+    "Cancelling a standard suite: 3% of the fare more than 150 days out (credited towards a future voyage within 12 months), 15% from 150 to 121 days, 25% from 120 to 91, 50% from 90 to 61, 75% from 60 to 31, and 100% at 30 days or less.",
+    "Cancelling a Signature Suite: 3% more than 180 days out (credited towards a future voyage within 12 months), 15% from 180 to 151 days, 25% from 150 to 121, 50% from 120 to 91, 75% from 90 to 61, and 100% at 60 days or less.",
+    "Terms as Four Seasons Yachts publishes them, read 13 November 2026; James confirms them for your sailing."
+  ]
 }

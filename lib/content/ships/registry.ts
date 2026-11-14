@@ -304,7 +304,7 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     country: ["Sint Maarten", "Antigua and Barbuda", "Saint Lucia", "Bahamas", "Greece", "Italy", "France", "Monaco", "Croatia", "Spain", "Malta", "Turkey"],
     pathway: { primary: "PATH-02", secondary: ["PATH-05"] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
     // fourseasonsyachts.com: over 100 connecting suite combinations; children under 5 have meals included (no minimum age readable).
-    traits: { connecting: true, activities: ["culture", "slow"] } },
+    traits: { minChildAge: 0, childNote: "Six months and over; one year and over on voyages with three or more consecutive days at sea", connecting: true, activities: ["culture", "slow"] } },
 
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },

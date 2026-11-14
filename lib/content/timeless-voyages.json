@@ -1,5 +1,57 @@
 {
-  "exportedOn": "2026-11-13",
+  "exportedOn": "2026-11-14",
   "source": "Airtable appI1mRPBsoA1ZOla · Timeless Voyages · scripts/export-editorial-layer.mjs",
-  "records": []
+  "records": [
+    {
+      "id": "TV-001",
+      "vesselSlug": "four-seasons-i",
+      "vesselName": "Four Seasons I",
+      "operator": "Four Seasons Yachts",
+      "collectionNumber": 1,
+      "ledgerId": "VSL-2026-000051",
+      "sailingStatus": "sailing",
+      "launchDate": "2026-03-20",
+      "signatureEdition": true,
+      "heroLine": null,
+      "whyItBelongs": [],
+      "before": [],
+      "beyond": [],
+      "stamp": "Signature Edition",
+      "savings": null
+    },
+    {
+      "id": "TV-002",
+      "vesselSlug": "hermes-galapagos",
+      "vesselName": "Hermes",
+      "operator": "Vianatura",
+      "collectionNumber": 2,
+      "ledgerId": "VSL-2026-000017",
+      "sailingStatus": "sailing",
+      "launchDate": null,
+      "signatureEdition": false,
+      "heroLine": null,
+      "whyItBelongs": [],
+      "before": [],
+      "beyond": [],
+      "stamp": "Timeless Voyages",
+      "savings": null
+    },
+    {
+      "id": "TV-003",
+      "vesselSlug": "amandira",
+      "vesselName": "Amandira",
+      "operator": "Aman",
+      "collectionNumber": 3,
+      "ledgerId": "VSL-2026-000006",
+      "sailingStatus": "sailing",
+      "launchDate": null,
+      "signatureEdition": false,
+      "heroLine": null,
+      "whyItBelongs": [],
+      "before": [],
+      "beyond": [],
+      "stamp": "Timeless Voyages",
+      "savings": null
+    }
+  ]
 }

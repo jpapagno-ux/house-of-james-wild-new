@@ -41,7 +41,7 @@ export default function SignatureEdition({ ship, tv, night, ink }: { ship: ShipR
           <div className="absolute inset-0" style={{ background: `linear-gradient(180deg, ${night} 0%, transparent 38%, ${deep} 100%)` }} />
         </div>
         <div className="relative max-w-ledger mx-auto px-5 md:px-10 py-16 md:py-24 grid md:grid-cols-[auto_1fr] gap-8 md:gap-14 items-center">
-          <div className="jw-sig-rise justify-self-start rounded-2xl p-3" style={{ background: "rgba(0,0,0,.34)", backdropFilter: "blur(3px)" }}>
+          <div className="jw-sig-rise justify-self-start" style={{ filter: "drop-shadow(0 1px 2px rgba(0,0,0,.55)) drop-shadow(0 0 10px rgba(0,0,0,.35))" }}>
             <PassportStamp volume="voyages" top="Timeless Voyages" date="Signature" place="Edition" size={150} rotate={-4} ink={ink} />
           </div>
           <div className="jw-sig-rise">

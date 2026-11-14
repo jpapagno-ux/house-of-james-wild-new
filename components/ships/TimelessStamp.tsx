@@ -3,7 +3,7 @@ import type { TimelessVoyage } from "@/lib/content/timeless-voyages";
 
 // The Timeless Voyages stamps (James, 13 Nov 2026), in the house passport-stamp family: the row's `stamp` pressed on
 // the hero and on collection cards. "Maiden Voyage" is new here: the same frame, the launch year in the middle and
-// "First season" beneath. `backing` lays a soft dark ground under the stamp so it reads on any photograph.
+// "First season" beneath. `backing` gives the ink a soft shadow so it reads on any photograph; the stamp itself stays transparent.
 const fmt = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 
 export function stampWords(tv: TimelessVoyage, shipName: string): { top: string; date: string; place: string } | null {
@@ -17,8 +17,10 @@ export function stampWords(tv: TimelessVoyage, shipName: string): { top: string;
   }
 }
 
+// No box behind the stamp (James, 14 Nov 2026: transparent background). A soft shadow that follows the ink keeps it
+// legible on bright skies instead.
 const Backing = ({ on, children, className = "" }: { on: boolean; children: React.ReactNode; className?: string }) =>
-  on ? <span className={`inline-flex rounded-2xl p-2 ${className}`} style={{ background: "rgba(0,0,0,.36)", backdropFilter: "blur(3px)", WebkitBackdropFilter: "blur(3px)" }}>{children}</span> : <span className={`inline-flex ${className}`}>{children}</span>;
+  <span className={`inline-flex ${className}`} style={on ? { filter: "drop-shadow(0 1px 2px rgba(0,0,0,.55)) drop-shadow(0 0 10px rgba(0,0,0,.35))" } : undefined}>{children}</span>;
 
 export default function TimelessStamp({ tv, shipName, size = 120, rotate = -4, ink, backing = false, className }: { tv: TimelessVoyage; shipName: string; size?: number; rotate?: number; ink?: string; backing?: boolean; className?: string }) {
   const w = stampWords(tv, shipName);

@@ -25,11 +25,10 @@ import { graph } from "@/lib/schema";
 const fmt = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 const list = (xs: string[]) => xs.length <= 1 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`;
 
-// The founder's line under the entrance. DRAFTED for James in his voice (he asked for a try, 14 Nov 2026); it leans only
-// on a fact he has stated (sailing since 1989). It shows on the preview marked as a draft and stays off the real page
-// until he approves it: set FOUNDER_NOTE_APPROVED to true only on his word.
+// The founder's line under the entrance: drafted for James at his request and approved by him word for word on
+// 14 Nov 2026 ("use this one"). Change it only on his word.
 export const FOUNDER_NOTE = "I've been sailing since 1989. Pick the ship for her harbours, then the suite for the mornings.";
-export const FOUNDER_NOTE_APPROVED = false;
+export const FOUNDER_NOTE_APPROVED = true; // approved by James, 14 Nov 2026
 const BRASS = "#E0B978", NIGHT = "#0c1a24", CREAM = "#F1E9DA";
 // Cloudinary delivers the entrance frames no wider than a phone or laptop needs, so the first paint is not a 8,000px original.
 const lean = (url: string) => url.includes("/image/upload/") && !url.includes("c_limit") ? url.replace("/image/upload/", "/image/upload/c_limit,w_2000/") : url;
@@ -148,10 +147,10 @@ export default function TimelessCollection({ rows, path = TV_PATH, on = new Date
     </article>
   );
   const Grid = ({ xs }: { xs: typeof all }) => (
-    <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {xs.map((x) => <li key={x.t.vesselSlug}>
+    <ul className="grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+      {xs.map((x) => <li key={x.t.vesselSlug} className="flex flex-col min-w-0">
         {x.t.collectionNumber > 0 && x.t.collectionNumber < 900 && <p className="ledger-display text-[1.6rem] leading-none mb-3" style={{ color: BRASS }}><span className="text-[0.6em] tracking-[0.2em] uppercase align-middle mr-2 opacity-80">No.</span>{String(x.t.collectionNumber).padStart(3, "0")}</p>}
-        {x.card ? <ShipCard c={x.card} timeless={exceptionalFewForVessel(x.t.vesselSlug) ? undefined : x.t} /> : <Plain t={x.t} />}</li>)}
+        <div className="flex-1 flex flex-col [&>*]:flex-1">{x.card ? <ShipCard c={x.card} timeless={exceptionalFewForVessel(x.t.vesselSlug) ? undefined : x.t} /> : <Plain t={x.t} />}</div></li>)}
     </ul>
   );
   return (
@@ -165,6 +164,11 @@ export default function TimelessCollection({ rows, path = TV_PATH, on = new Date
         .jw-tv-night main :is(.ledger-crimson, .text-crimson, .text-house) { color: ${BRASS}; }
         .jw-tv-night main :is(.border-crimson, [class*="border-crimson/"]) { border-color: ${BRASS}; }
         .jw-tv-night main .ledger-paper { background: #13293a; border-color: rgba(241,233,218,.16); box-shadow: none; color: ${CREAM}; }
+        .jw-tv-night main article .ledger-eyebrow { color: rgba(241,233,218,.66) !important; }
+        .jw-tv-night main .house-chip { background: transparent; color: ${CREAM}; border-color: rgba(241,233,218,.38); }
+        .jw-tv-night main .house-chip--primary { border-color: rgba(241,233,218,.7); }
+        .jw-tv-night main .house-chip:hover { border-color: ${BRASS}; }
+        .jw-tv-night main :is(input, select, textarea) { color: #1A1816; }
         .jw-tv-night main .ledger-btn--solid { background: ${BRASS}; border-color: ${BRASS}; color: ${NIGHT}; }
         .jw-tv-night main :is(.ledger-btn-ghost, .ledger-btn:not(.ledger-btn--solid)) { color: ${CREAM}; border-color: rgba(241,233,218,.5); }
       `}</style>

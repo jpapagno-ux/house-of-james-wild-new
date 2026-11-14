@@ -23,9 +23,11 @@ import VoyageSignals from "@/components/ships/VoyageSignals";
 import EitherSide from "@/components/ships/EitherSide";
 import { PassportStamp } from "@/components/ledger/VolumeKit";
 import { offersFor, offerEnd } from "@/lib/content/offers/offers";
+import SignatureEdition from "@/components/ships/SignatureEdition";
+import { timelessVoyageFor, type TimelessVoyage } from "@/lib/content/timeless-voyages";
 
 // The ship page body, shared by /voyages/ships/<ship> and the opening previews (app/preview/voyages/*).
-export default async function ShipPageBody({ slug, opening: given, surface: givenSurface, tones: givenTones }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones }) {
+export default async function ShipPageBody({ slug, opening: given, surface: givenSurface, tones: givenTones, timeless }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones; /** A draft Timeless Voyages row, for the noindex previews only. */ timeless?: TimelessVoyage }) {
   const e = shipBySlug(slug);
   if (!e) notFound();
   let opening = given, surface = givenSurface, tones = givenTones;
@@ -98,5 +100,10 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
   const glance = !ef ? <VoyageSignals ship={rec} activities={traits?.activities ?? []} charter={!!e.reg.charter?.whole} waters={e.waters} /> : null;
   const firstVoyage = rec.itineraries.find((i) => i.days.length)?.name.replace(/,\s*\d+ nights$/, "") ?? rec.name;
   const either = <EitherSide slug={e.slug} waters={e.waters} ship={rec.name} voyage={firstVoyage} />;
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}{glance}</>, after: <>{either}{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={ef} />;
+  // Timeless Voyages · Signature Edition (James, 13 Nov 2026): switched on by her published Timeless Voyages row. Never on
+  // an Exceptional Few ship, whose own entrance always wins.
+  const tv = timeless ?? timelessVoyageFor(e.slug);
+  const sigPalette = tv?.signatureEdition && !ef ? (shipOpening(e)?.palette ?? null) : null;
+  const signature = tv && sigPalette ? <SignatureEdition ship={rec} tv={tv} night={sigPalette.night} ink={sigPalette.sand ?? sigPalette.hi} /> : null;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}{signature}{glance}</>, after: <>{either}{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={ef} />;
 }

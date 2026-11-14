@@ -15,7 +15,7 @@ const DRAFTS: TimelessVoyage[] = [
   row("hermes-galapagos", "Hermes", "Vianatura", 2, "VSL-2026-000017", "Timeless Voyages"),
   row("amandira", "Amandira", "Aman", 3, "VSL-2026-000006", "Timeless Voyages"),
 ];
-const SAMPLE_MAIDEN: TimelessVoyage = { ...row("sample-maiden-voyage", "Sample ship (design sample)", "Operator", 99, "", "Maiden Voyage"), sailingStatus: "launching", launchDate: "2027-06-01" };
+const SAMPLE_MAIDEN: TimelessVoyage = { ...row("sample-maiden-voyage", "Sample ship (design sample)", "Operator", 99, "", "Maiden Voyage"), sailingStatus: "launching", launchDate: "2027-06-01" , id: "sample-maiden" };
 
 export default async function Page({ searchParams }: { searchParams: Promise<{ maiden?: string }> }) {
   const sp = await searchParams;

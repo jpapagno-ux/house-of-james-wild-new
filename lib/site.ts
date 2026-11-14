@@ -120,6 +120,7 @@ export const VOLUMES: MegaMenu[] = [
       { label: "Under Sail", href: "/voyages/sailing" },
       { label: "To the Edges", href: "/voyages/expedition" },
       { label: "By Yacht", href: "/voyages/yachts" },
+      { label: "Timeless Voyages", href: "/voyages/timeless-voyages" },
       { label: "The Whole Ship", href: "/voyages/charter" },
       { label: "The Nile", href: "/voyages/nile" },
       { label: "The Galápagos", href: "/voyages/galapagos" },

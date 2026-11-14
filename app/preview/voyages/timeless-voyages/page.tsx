@@ -20,5 +20,5 @@ const SAMPLE_MAIDEN: TimelessVoyage = { ...row("sample-maiden-voyage", "Sample s
 export default async function Page({ searchParams }: { searchParams: Promise<{ maiden?: string }> }) {
   const sp = await searchParams;
   const rows = DRAFTS.map((d) => TIMELESS_VOYAGES.find((t) => t.vesselSlug === d.vesselSlug) ?? d);
-  return <TimelessCollection rows={sp.maiden === "1" ? [...rows, SAMPLE_MAIDEN] : rows} path="/preview/voyages/timeless-voyages" />;
+  return <TimelessCollection rows={sp.maiden === "1" ? [...rows, SAMPLE_MAIDEN] : rows} path="/preview/voyages/timeless-voyages" draftNote />;
 }

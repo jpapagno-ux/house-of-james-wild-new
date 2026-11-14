@@ -11,8 +11,10 @@ import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 // motion, or before hydration, the last frame prints as a plain hero.
 export type HeroFrame = { src: string; alt: string; caption?: string; credit?: string };
 
-export default function ScrollHero({ frames, designation, title, place, line, actions, credit }: {
+export default function ScrollHero({ frames, designation, title, place, line, actions, credit, eager = false }: {
   frames: HeroFrame[]; designation: string; title: string; place: string; line?: string | null; actions?: React.ReactNode; credit?: string;
+  /** Fetch every frame straight away instead of as it scrolls in (the Timeless Voyages entrance, where the later frames were arriving late on phones). */
+  eager?: boolean;
 }) {
   const reduced = useReducedMotionSafe();
   const ref = useRef<HTMLDivElement>(null);
@@ -48,7 +50,7 @@ export default function ScrollHero({ frames, designation, title, place, line, ac
       <section className={`${reduced ? "relative" : "sticky top-0"} h-[100svh] overflow-hidden bg-ink text-white`} aria-label={`${title}: the arrival`}>
         {frames.map((f, i) => (
           <div key={f.src} className="absolute inset-0 transition-opacity duration-300 ease-linear" style={{ opacity: fade(i), zIndex: i }} aria-hidden={i !== stage}>
-            <Image src={f.src} alt={f.alt} fill priority={i === 0} sizes="100vw" quality={85} className="object-cover" style={{ transform: reduced ? undefined : `scale(${1 + 0.06 * (1 - fade(i))})` }} />
+            <Image src={f.src} alt={f.alt} fill priority={i === 0} loading={i > 0 && eager ? "eager" : undefined} sizes="100vw" quality={85} className="object-cover" style={{ transform: reduced ? undefined : `scale(${1 + 0.06 * (1 - fade(i))})` }} />
           </div>
         ))}
         <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/35 via-transparent to-black/70" />

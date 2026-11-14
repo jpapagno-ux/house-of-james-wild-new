@@ -8,6 +8,7 @@ import ScrollHero from "@/components/exceptional-few/ScrollHero";
 import { shipBySlug } from "@/lib/content/ships";
 import ShipCard from "./ShipCard";
 import TimelessStamp from "./TimelessStamp";
+import { PassportStamp } from "@/components/ledger/VolumeKit";
 import { shipCard } from "@/lib/content/ships/cards";
 import { registryShip } from "@/lib/content/ships/registry";
 import { exceptionalFewForVessel } from "@/lib/content/exceptional-few";
@@ -24,7 +25,16 @@ import { graph } from "@/lib/schema";
 const fmt = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 const list = (xs: string[]) => xs.length <= 1 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`;
 
-export default function TimelessCollection({ rows, path = TV_PATH, on = new Date().toISOString().slice(0, 10) }: { rows: TimelessVoyage[]; path?: string; on?: string }) {
+// The founder's line under the entrance. DRAFTED for James in his voice (he asked for a try, 14 Nov 2026); it leans only
+// on a fact he has stated (sailing since 1989). It shows on the preview marked as a draft and stays off the real page
+// until he approves it: set FOUNDER_NOTE_APPROVED to true only on his word.
+export const FOUNDER_NOTE = "I've been sailing since 1989. Pick the ship for her harbours, then the suite for the mornings.";
+export const FOUNDER_NOTE_APPROVED = false;
+const BRASS = "#E0B978", NIGHT = "#0c1a24", CREAM = "#F1E9DA";
+// Cloudinary delivers the entrance frames no wider than a phone or laptop needs, so the first paint is not a 8,000px original.
+const lean = (url: string) => url.includes("/image/upload/") && !url.includes("c_limit") ? url.replace("/image/upload/", "/image/upload/c_limit,w_2000/") : url;
+
+export default function TimelessCollection({ rows, path = TV_PATH, on = new Date().toISOString().slice(0, 10), draftNote = false }: { rows: TimelessVoyage[]; path?: string; on?: string; /** Preview only: show the founder's line while it is still a draft. */ draftNote?: boolean }) {
   // A design-sample row (the preview's ?maiden=1) shows as a card only: never in the answer, the FAQs or the schema.
   const real = <T extends { t: TimelessVoyage }>(xs: T[]) => xs.filter((x) => !x.t.id.startsWith("sample"));
   const sorted = [...rows].sort((a, b) => (a.collectionNumber || 999) - (b.collectionNumber || 999));
@@ -77,11 +87,11 @@ export default function TimelessCollection({ rows, path = TV_PATH, on = new Date
   // arrival, reused), with the collection's name arriving over the last. Then the reel: a slow sideways scroll of the
   // ships' own pictures. Every picture, alt text and credit is the ship's filed one.
   const records = sailing.map((x) => ({ x, rec: shipBySlug(x.t.vesselSlug)?.data })).filter((y): y is { x: (typeof sailing)[number]; rec: NonNullable<ReturnType<typeof shipBySlug>>["data"] } => !!y.rec);
-  const frames = records.slice(0, 4).map(({ rec }) => ({ src: rec.hero.url, alt: rec.hero.alt, caption: rec.name, credit: rec.hero.credit }));
+  const frames = records.slice(0, 3).map(({ rec }) => ({ src: lean(rec.hero.url), alt: rec.hero.alt, caption: rec.name, credit: rec.hero.credit }));
   const reel = records.flatMap(({ x, rec }) => [...rec.gallery.slice(0, 3), ...rec.cabins.map((c) => c.image).filter((i): i is NonNullable<typeof i> => !!i).slice(-2)].map((im) => ({ im, name: rec.name, href: x.card?.href ?? `/voyages/ships/${rec.slug}` })));
   const entrance = frames.length > 0 ? (
     <>
-      <ScrollHero frames={frames} designation="Volume IV · Voyages · A collection" title="Timeless Voyages" place={`${all.length} ${all.length === 1 ? "ship" : "ships"}, chosen one at a time`} line="Each filed from her operator's own material: her suites, her sailings, her published fares."
+      <ScrollHero eager frames={frames} designation="Volume IV · Voyages · A collection" title="Timeless Voyages" place={`${all.length} ${all.length === 1 ? "ship" : "ships"}, chosen one at a time`} line="Each filed from her operator's own material: her suites, her sailings, her published fares."
         actions={<><a href="#timeless-ships-h" className="ledger-btn-ghost !text-white !border-white/70">See the ships</a><a href="#maiden-voyages-h" className="ledger-btn-ghost !text-white !border-white/70">Maiden Voyages</a></>} />
       {reel.length > 2 && (
         <section aria-label="The ships of Timeless Voyages, in pictures" className="jw-tv-reel relative py-8 md:py-12" style={{ background: "linear-gradient(180deg, #0c1a24, #132836)" }}>
@@ -109,6 +119,23 @@ export default function TimelessCollection({ rows, path = TV_PATH, on = new Date
           </ul>
         </section>
       )}
+      <section aria-label="The Timeless Voyages seal" className="py-12 md:py-16" style={{ background: "#132836", color: CREAM }}>
+        <div className="max-w-ledger mx-auto px-5 md:px-10 grid gap-8 md:grid-cols-[auto_1fr] md:gap-14 items-center">
+          <div className="justify-self-center md:justify-self-start" role="img" aria-label="The Timeless Voyages seal">
+            <PassportStamp volume="voyages" top="Timeless Voyages" date="MMXXVI" place="James Wild & Co" size={236} rotate={-6} ink={BRASS} />
+          </div>
+          <div>
+            <p className="text-[11px] tracking-[0.28em] uppercase" style={{ color: BRASS }}>A numbered collection · Inside Voyages</p>
+            <p className="ledger-display mt-3 text-[1.7rem] leading-[1.15] md:text-[2.5rem] max-w-2xl">Ships with a hotel's manners and a yacht's harbours, chosen one at a time.</p>
+            {(FOUNDER_NOTE_APPROVED || draftNote) && (
+              <figure className="mt-7 max-w-xl border-l pl-5" style={{ borderColor: BRASS }}>
+                <blockquote className="ledger-display italic text-[1.25rem] md:text-[1.45rem] leading-snug">{FOUNDER_NOTE}</blockquote>
+                <figcaption className="mt-2 text-[12px] tracking-[0.18em] uppercase opacity-75">JW{!FOUNDER_NOTE_APPROVED && " · draft line for James to approve; not on the live page"}</figcaption>
+              </figure>
+            )}
+          </div>
+        </div>
+      </section>
     </>
   ) : undefined;
   const Plain = ({ t }: { t: TimelessVoyage }) => (
@@ -122,11 +149,25 @@ export default function TimelessCollection({ rows, path = TV_PATH, on = new Date
   );
   const Grid = ({ xs }: { xs: typeof all }) => (
     <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {xs.map((x) => <li key={x.t.vesselSlug}>{x.card ? <ShipCard c={x.card} timeless={exceptionalFewForVessel(x.t.vesselSlug) ? undefined : x.t} /> : <Plain t={x.t} />}</li>)}
+      {xs.map((x) => <li key={x.t.vesselSlug}>
+        {x.t.collectionNumber > 0 && x.t.collectionNumber < 900 && <p className="ledger-display text-[1.6rem] leading-none mb-3" style={{ color: BRASS }}><span className="text-[0.6em] tracking-[0.2em] uppercase align-middle mr-2 opacity-80">No.</span>{String(x.t.collectionNumber).padStart(3, "0")}</p>}
+        {x.card ? <ShipCard c={x.card} timeless={exceptionalFewForVessel(x.t.vesselSlug) ? undefined : x.t} /> : <Plain t={x.t} />}</li>)}
     </ul>
   );
   return (
-    <div className="theme-sea theme-sea-page">
+    <div className="theme-sea theme-sea-page jw-tv-night">
+      {/* The evening room (James, 14 Nov 2026): navy ground and cream type for everything under the house header. */}
+      <style>{`
+        .jw-tv-night main { background: ${NIGHT}; color: ${CREAM}; --jw-card: #13293a; --jw-ground: ${NIGHT}; --jw-paper: ${NIGHT}; --jw-ink: ${CREAM}; --jw-hairline: rgba(241,233,218,.16); --jw-rule: rgba(241,233,218,.26); --jw-rule-fine: rgba(241,233,218,.16); --jw-keyline: rgba(241,233,218,.26); --jw-band-rgb: 19 41 58; --jw-band-alt-rgb: 12 26 36; }
+        .jw-tv-night main :is(h1, h2, h3, .ledger-display, .text-ink, .text-graphite, summary, dt, dd, li, p, a) { color: inherit; }
+        .jw-tv-night main .ledger-muted { color: rgba(241,233,218,.74); }
+        .jw-tv-night main .ledger-eyebrow { color: rgba(241,233,218,.66); }
+        .jw-tv-night main :is(.ledger-crimson, .text-crimson, .text-house) { color: ${BRASS}; }
+        .jw-tv-night main :is(.border-crimson, [class*="border-crimson/"]) { border-color: ${BRASS}; }
+        .jw-tv-night main .ledger-paper { background: #13293a; border-color: rgba(241,233,218,.16); box-shadow: none; color: ${CREAM}; }
+        .jw-tv-night main .ledger-btn--solid { background: ${BRASS}; border-color: ${BRASS}; color: ${NIGHT}; }
+        .jw-tv-night main :is(.ledger-btn-ghost, .ledger-btn:not(.ledger-btn--solid)) { color: ${CREAM}; border-color: rgba(241,233,218,.5); }
+      `}</style>
       <SiteHeader />
       <HubShell name="Timeless Voyages" path={path} trail={trail} eyebrow={volumeEyebrow("voyages", "Voyages", "Timeless Voyages")} title="Timeless Voyages" intro={intro} answer={answer} entrance={entrance}
         filling="Ships join the collection one at a time, as each operator's own material is filed; nothing is listed before it is.">

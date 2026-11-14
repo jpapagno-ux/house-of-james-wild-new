@@ -7,7 +7,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AttributionControl, Map as MLMap, Marker, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type LngLatLike, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_SATELLITE, TILE_CACHE, fontOf, groundStyle, houseStyle, pixelRatioFor, redact, satelliteIndex, satelliteLayer, viewOps } from "./style";
+import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_NIGHT, SKY_SATELLITE, TILE_CACHE, depthIndex, depthLayer, fontOf, groundStyle, houseStyle, nightOps, pixelRatioFor, redact, satelliteIndex, satelliteLayer, viewOps, type MapView } from "./style";
 import { boundsOf, frameBounds, clampSeabed, dayLabel, headingAt, isAir, legsOf, lengthKm, lngLat, partOf, smoothLine, cutFor, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
 import { CRIMSON, HOUSE } from "@/lib/palette";
 
@@ -113,14 +113,14 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const vehicleAir = useRef<boolean | null>(null);
   const activeRef = useRef(-1);
   const camFree = useRef(false); // a hand on the map: the auto camera stands down until Replay
-  const baseLayers = useRef<{ id: string; type: string; "source-layer"?: string; layout?: Record<string, unknown> }[]>([]);
+  const baseLayers = useRef<{ id: string; type: string; "source-layer"?: string; layout?: Record<string, unknown>; paint?: Record<string, unknown> }[]>([]);
   const [ready, setReady] = useState(false);
   const [routeIx, setRouteIx] = useState(routeIndex ?? 0);
   useEffect(() => { if (typeof routeIndex === "number" && routeIndex >= 0 && routeIndex < routes.length) setRouteIx(routeIndex); }, [routeIndex, routes.length]);
   const [active, setActive] = useState(-1);
   const [playing, setPlaying] = useState(false);
   const [done, setDone] = useState(false);
-  const [sat, setSat] = useState(false);
+  const [view, setView] = useState<MapView>("chart");
   const [hasSat, setHasSat] = useState(false);
   const route = routes[routeIx] ?? routes[0];
   const stops = route.stops;
@@ -138,12 +138,15 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         if (dead || !box.current) return;
         style.sources["jw-dem"] = dem;
         style.sources["jw-dem-shade"] = { ...dem };
+        // Depth tints: the same elevation tiles read raw (the seabed not flattened), shaded by depth under the coast.
+        style.sources["jw-depth"] = { ...dem, tiles: (dem.tiles ?? []).map((t) => t.replace(/^jwdem:\/\/[a-z]+\//, "")) };
         const layers = style.layers as LayerSpecification[];
+        layers.splice(depthIndex(layers), 0, depthLayer());
         if (maptiler && KEY) {
           style.sources["jw-satellite"] = { type: "raster", url: MAPTILER.satellite(KEY), attribution: ATTRIBUTION.maptiler };
           layers.splice(satelliteIndex(layers), 0, satelliteLayer());
         }
-        baseLayers.current = layers.map((l) => ({ ...l, layout: { ...((l as { layout?: object }).layout ?? {}) } })) as typeof baseLayers.current;
+        baseLayers.current = layers.map((l) => ({ ...l, layout: { ...((l as { layout?: object }).layout ?? {}) }, paint: { ...((l as { paint?: object }).paint ?? {}) } })) as typeof baseLayers.current;
         const font = fontOf(style);
         const first = routes[0].stops;
         // The route lines are plain line layers: MapLibre drapes them on the terrain surface (sea level is flat, the
@@ -395,19 +398,21 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
     return () => io.disconnect();
   }, [ready, reduced, play]);
 
-  const toggleSat = (on: boolean) => {
+  /** Chart, Satellite or Night (James, 14 Nov 2026). Satellite lays the imagery over everything but the labels and our
+   *  own route; Night repaints the chart in ink, deep sea and lamplight labels. Every paint and layout the switch
+   *  touches comes back from the built style (style.ts viewOps, nightOps), so the views never drift apart. */
+  const switchView = (v: MapView) => {
     const m = mapRef.current;
-    if (!m?.getLayer("jw-satellite")) return;
-    // Ground, sky and fog switch with the view, so nothing still loading shows Paper under or behind the imagery.
-    // The imagery covers the whole map, sea included; while a tile loads, land shows the earth tone and sea the deep
-    // ocean tone (style.ts viewOps), and only labels, the route, the stops and the vessel draw above it.
-    for (const op of viewOps(baseLayers.current, on, box.current?.dataset.relief as "terrain" | "flat" | undefined)) {
+    if (!m) return;
+    const sat = v === "satellite" && !!m.getLayer("jw-satellite");
+    const relief = box.current?.dataset.relief as "terrain" | "flat" | undefined;
+    for (const op of [...viewOps(baseLayers.current, sat, relief), ...nightOps(baseLayers.current, v === "night")]) {
       if (!m.getLayer(op.id)) continue;
       if (op.kind === "layout") m.setLayoutProperty(op.id, op.prop as never, op.value as never); else m.setPaintProperty(op.id, op.prop as never, op.value as never);
     }
-    m.setSky(on ? SKY_SATELLITE : SKY);
-    if (box.current) box.current.dataset.view = on ? "satellite" : "chart";
-    setSat(on);
+    m.setSky(sat ? SKY_SATELLITE : v === "night" ? SKY_NIGHT : SKY);
+    if (box.current) box.current.dataset.view = sat ? "satellite" : v;
+    setView(sat ? "satellite" : v === "satellite" ? "chart" : v);
   };
 
   const s = active >= 0 ? stops[active] : null;
@@ -435,12 +440,11 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
           : <button type="button" className="jw-relief__btn jw-relief__btn--main" onClick={() => void play()} disabled={!ready}>{next.current > 1 && !done ? "Resume" : playLabel}</button>}
         <button type="button" className="jw-relief__btn" onClick={replay} disabled={!ready}>Replay</button>
         <button type="button" className="jw-relief__btn" onClick={() => { pause(); setStops(-1); void overview(!reduced); }} disabled={!ready}>Overview</button>
-        {hasSat && (
-          <div className="jw-relief__bar-end" role="group" aria-label="Map style">
-            <button type="button" className="jw-relief__btn" aria-pressed={!sat} onClick={() => toggleSat(false)}>Terrain</button>
-            <button type="button" className="jw-relief__btn" aria-pressed={sat} onClick={() => toggleSat(true)}>Satellite</button>
-          </div>
-        )}
+        <div className="jw-relief__bar-end" role="group" aria-label="Map style">
+          <button type="button" className="jw-relief__btn" aria-pressed={view === "chart"} onClick={() => switchView("chart")} disabled={!ready}>Chart</button>
+          {hasSat && <button type="button" className="jw-relief__btn" aria-pressed={view === "satellite"} onClick={() => switchView("satellite")} disabled={!ready}>Satellite</button>}
+          <button type="button" className="jw-relief__btn" aria-pressed={view === "night"} onClick={() => switchView("night")} disabled={!ready}>Night</button>
+        </div>
       </div>
     </>
   );

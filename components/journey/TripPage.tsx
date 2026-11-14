@@ -344,7 +344,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
   const nights = T.days.length - 1;
   const Vessel = voyage && V ? (
     <Sec id="vessel">
-      <SectionHead eyebrow="The vessel" title={V.title} icon="wave" intro={V.blurb} />
+      <SectionHead eyebrow="The vessel" title={V.title} icon="hull" intro={V.blurb} />
       {/* The vessel's own film plays in the hero (Aliikai voyages, James 3 Nov 2026), so the gallery is photographs only. */}
       {V.gallery && V.gallery.length > 0 && (
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-2 md:h-[460px]">

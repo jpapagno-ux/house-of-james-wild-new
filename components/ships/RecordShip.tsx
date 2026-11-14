@@ -228,14 +228,14 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
           cabinTitle="Cabins"
           deckTitle="Deck plan"
           heads={{
-            cabins: <SectionHead eyebrow="Cabins & suites" title={`Which Cabin Should You Choose on ${s.name}?`} icon="tree-ring" intro={cabinIntro} />,
-            decks: <SectionHead eyebrow="Deck plan" title="Where Is Each Cabin on the Ship?" icon="wave" />,
+            cabins: <SectionHead eyebrow="Cabins & suites" title={`Which Cabin Should You Choose on ${s.name}?`} icon="porthole" intro={cabinIntro} />,
+            decks: <SectionHead eyebrow="Deck plan" title="Where Is Each Cabin on the Ship?" icon="hull" />,
           }}
         />
         {extra.body}
         {s.departures.length === 0 && (s.monthly?.length ?? 0) > 0 && (
           <section id="dates" className={SEC}>
-            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="sun" intro={`${s.operator} publishes the months, the number of sailings and the fares from for each voyage; exact dates and fares by cabin come from its live booking tool, and James confirms them when you ask.`} />
+            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="bell" intro={`${s.operator} publishes the months, the number of sailings and the fares from for each voyage; exact dates and fares by cabin come from its live booking tool, and James confirms them when you ask.`} />
             <MonthDepartures groups={s.monthly!} showItinerary priceName={() => s.name} planHref={(g) => `${planFor(`${g.itinerary ?? s.name}, ${s.name}`, g.months[0] ?? g.season ?? "", g.status === "sold-out")}`} note={publicNote(s.pricesNote)} />
             {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
               <div className="mt-10 grid md:grid-cols-2 gap-8">
@@ -247,7 +247,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         )}
         {s.departures.length === 0 && !(s.monthly?.length) && published && (
           <section id="dates" className={SEC}>
-            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost, and When Does She Sail?`} icon="sun" intro={`${s.operator} publishes ${s.name}'s fares by year and length; her dated departures sit in its live booking tool, so ask us for dates and James will confirm what is open.`} />
+            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost, and When Does She Sail?`} icon="bell" intro={`${s.operator} publishes ${s.name}'s fares by year and length; her dated departures sit in its live booking tool, so ask us for dates and James will confirm what is open.`} />
             <PublishedFares s={s} planFor={(what) => planFor(`${what}, ${s.name}`, "", false)} />
             {(s.inclusions.length > 0 || (s.exclusions?.length ?? 0) > 0) && (
               <div className="mt-10 grid md:grid-cols-2 gap-8">
@@ -259,28 +259,28 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         )}
         {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length > 0 && (
           <section id="dates" className={SEC}>
-            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost, by Length of Cruise?`} icon="sun" intro={`${s.operator} publishes a fare for each cruise length and year, and no dated departures; James confirms the dates when you ask.`} />
+            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost, by Length of Cruise?`} icon="bell" intro={`${s.operator} publishes a fare for each cruise length and year, and no dated departures; James confirms the dates when you ask.`} />
             <LengthFares ship={s.name} fares={lengths} planHref={plan} note={publicNote(s.pricesNote)} maxGuests={Number(factOf(s, /^guests$/i)) || undefined} />
             {inclTerms}
           </section>
         )}
         {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length === 0 && ((s.charterRates?.length ?? 0) > 0 || s.cabinFrom) && (
           <section id="dates" className={SEC}>
-            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost to Charter?`} icon="sun" intro={`${s.operator} publishes ${s.name}'s whole-yacht rate${s.cabinFrom ? " and a from rate for single cabins" : ""}, not dated departures, so James confirms the dates you want.`} />
+            <SectionHead eyebrow="Dates & rates" title={`What Does ${s.name} Cost to Charter?`} icon="bell" intro={`${s.operator} publishes ${s.name}'s whole-yacht rate${s.cabinFrom ? " and a from rate for single cabins" : ""}, not dated departures, so James confirms the dates you want.`} />
             <CharterRates ship={s.name} rates={s.charterRates ?? []} basis={s.charterBasis} cabinFrom={s.cabinFrom} planHref={plan} note={publicNote(s.pricesNote)} />
             {inclTerms}
           </section>
         )}
         {s.departures.length === 0 && !(s.monthly?.length) && !published && lengths.length === 0 && !(s.charterRates?.length) && !s.cabinFrom && (
           <section id="dates" className={SEC}>
-            <SectionHead eyebrow="Dates & rates" title={s.datesPublished === false ? `When Does ${s.name} Sail, and What Does It Cost?` : `When Does ${s.name} Sail Next?`} icon="sun" />
+            <SectionHead eyebrow="Dates & rates" title={s.datesPublished === false ? `When Does ${s.name} Sail, and What Does It Cost?` : `When Does ${s.name} Sail Next?`} icon="bell" />
             <NoDates name={s.name} planHref={plan} unpublished={s.datesPublished === false} operator={s.operator} />
             {s.terms?.length ? inclTerms : null}
           </section>
         )}
         {s.departures.length > 0 && (
           <section id="dates" className={SEC}>
-            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="sun" intro={datesIntro} />
+            <SectionHead eyebrow="Dates & rates" title={`When Does ${s.name} Sail, and What Does It Cost?`} icon="bell" intro={datesIntro} />
             {s.fleetSchedule && <p className="mt-5 border-l-2 border-crimson pl-4 text-[15px] max-w-3xl"><span className="ledger-eyebrow block mb-1">The {s.operator} fleet schedule</span>{t(s.fleetSchedule)}</p>}
             {cruise.length > 0 && <>
               {(journeys.length > 0 || s.fleetSchedule) && <h3 className="mt-8 ledger-display text-[22px] md:text-[24px]">{journeys.length ? "Cruise fares by season" : `${s.operator} departures, fleet wide`}</h3>}
@@ -315,7 +315,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         <OfferPanel offers={offers} volume="voyages" title="Offers aboard" />
         {sisters.length > 0 && (
           <section id="sisters" className={SEC}>
-            <SectionHead eyebrow={t(`${fleetName} fleet · ${s.waters}`)} title={`Which Other Ships Sail the ${s.waters} with ${s.operator}?`} />
+            <SectionHead eyebrow={t(`${fleetName} fleet · ${s.waters}`)} title={`Which Other Ships Sail the ${s.waters} with ${s.operator}?`} icon="signal-flag" />
             <ul className="mt-7 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 -mx-5 px-5 md:mx-0 md:px-0">
               {sisters.map((e) => {
                 const x = e.data as ShipRecord;

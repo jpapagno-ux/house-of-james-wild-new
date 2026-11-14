@@ -52,7 +52,7 @@ export function aliikaiExtra(): ShipExtra {
     lead: (
       // Why her Raja Ampat route works for a first visit
       <section id="first-time" className={SEC}>
-        <SectionHead eyebrow={s.firstTime.eyebrow} title="Is Aliikai Right for a First Raja Ampat?" icon="wave" intro={t(s.firstTime.intro)} />
+        <SectionHead eyebrow={s.firstTime.eyebrow} title="Is Aliikai Right for a First Raja Ampat?" icon="lifebuoy" intro={t(s.firstTime.intro)} />
         <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {s.firstTime.points.map(([h, b], i) => (
             <li key={h} className="border ledger-border p-5 h-full">
@@ -68,7 +68,7 @@ export function aliikaiExtra(): ShipExtra {
     body: <>
       {/* Life aboard: the ship's story and her spaces */}
       <section id="aboard" className={SEC}>
-        <SectionHead eyebrow={s.story.eyebrow} title="What Is Life Like Aboard Aliikai?" icon="wave" intro={t(s.story.intro)} />
+        <SectionHead eyebrow={s.story.eyebrow} title="What Is Life Like Aboard Aliikai?" icon="hull" intro={t(s.story.intro)} />
         <div className="mt-8 grid lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
           <p className="text-[16px] leading-relaxed ledger-muted">{t(s.story.body)}</p>
           <div className="space-y-2">
@@ -90,7 +90,7 @@ export function aliikaiExtra(): ShipExtra {
 
       {/* Every voyage she sails */}
       <section id="voyages" className={SEC}>
-        <SectionHead eyebrow="The voyages" title="Where Does Aliikai Sail Through the Year?" icon="wave" intro="Komodo in the dry season, the Spice Islands in October and Raja Ampat when its seas are calmest. Open a voyage for its day by day." />
+        <SectionHead eyebrow="The voyages" title="Where Does Aliikai Sail Through the Year?" icon="signal-flag" intro="Komodo in the dry season, the Spice Islands in October and Raja Ampat when its seas are calmest. Open a voyage for its day by day." />
         <p className="mt-3 text-[15px]">Choosing between them? Read the <Link href="/destinations/asia/indonesia/raja-ampat" className="underline underline-offset-4 hover:ledger-crimson">Raja Ampat guide</Link>, the <Link href="/destinations/asia/indonesia/komodo" className="underline underline-offset-4 hover:ledger-crimson">Komodo guide</Link> or <Link href="/destinations/asia/indonesia" className="underline underline-offset-4 hover:ledger-crimson">Indonesia by sea</Link>.</p>
         <ul className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {s.groups.map((g) => {

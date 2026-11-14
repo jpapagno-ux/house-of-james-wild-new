@@ -20,7 +20,7 @@ export default function ShipItinerary({ ship, itineraries: given, map, title, in
   // operator sells, so the section still answers "where and how long", never an invented day.
   if (!itineraries.length && undated.length) return (
     <section id="itinerary" className={SEC}>
-      <SectionHead eyebrow="The routes" title={`Which Routes Does ${ship} Sail?`} icon="wave" intro={routesNote} />
+      <SectionHead eyebrow="The routes" title={`Which Routes Does ${ship} Sail?`} icon="signal-flag" intro={routesNote} />
       <ul className="mt-6 grid gap-3 grid-cols-2 md:grid-cols-4">
         {undated.map((c) => <li key={c.name} className="border ledger-border p-4"><p className="ledger-display text-[19px] leading-snug">{c.name.replace(/,\s*\d+ nights$/, "")}</p>{c.nights ? <p className="mt-1 text-[14px] ledger-muted">{c.nights} nights</p> : null}</li>)}
       </ul>

@@ -1,0 +1,157 @@
+{
+ "id": "amangati-marseille-to-nice-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Marseille to Nice, 6 nights aboard Amangati",
+ "subtitle": "6 nights · Marseille to Nice · Amangati",
+ "days": {
+  "1": "Marseille",
+  "2": "Sanary-sur-Mer",
+  "3": "Saint Tropez",
+  "4": "Saint Tropez",
+  "5": "Cannes",
+  "6": "Villefranche",
+  "7": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Marseille, France",
+   "lat": 43.3446562702501,
+   "lng": 5.33256571210601,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Sanary-sur-Mer, France",
+   "lat": 43.11408,
+   "lng": 5.802397,
+   "mode": "sea",
+   "path": [
+    [
+     5.33256571210601,
+     43.3446562702501
+    ],
+    [
+     5.802397,
+     43.11408
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Saint-Tropez, France",
+   "lat": 43.269878,
+   "lng": 6.628618,
+   "mode": "sea",
+   "path": [
+    [
+     5.802397,
+     43.11408
+    ],
+    [
+     6.628618,
+     43.269878
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Saint-Tropez, France",
+   "lat": 43.269878,
+   "lng": 6.628618,
+   "mode": "sea",
+   "path": [
+    [
+     6.628618,
+     43.269878
+    ],
+    [
+     6.628618,
+     43.269878
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Cannes, France",
+   "lat": 43.541767,
+   "lng": 7.030907,
+   "mode": "sea",
+   "path": [
+    [
+     6.628618,
+     43.269878
+    ],
+    [
+     7.030907,
+     43.541767
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Villefranche",
+   "lat": 43.704,
+   "lng": 7.311,
+   "mode": "sea",
+   "path": [
+    [
+     7.030907,
+     43.541767
+    ],
+    [
+     7.311,
+     43.704
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "mode": "sea",
+   "path": [
+    [
+     7.311,
+     43.704
+    ],
+    [
+     7.288441262587998,
+     43.693410853287936
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

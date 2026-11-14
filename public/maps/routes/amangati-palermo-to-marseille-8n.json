@@ -1,0 +1,193 @@
+{
+ "id": "amangati-palermo-to-marseille-8n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Palermo to Marseille, 8 nights aboard Amangati",
+ "subtitle": "8 nights · Palermo to Marseille · Amangati",
+ "days": {
+  "1": "Palermo",
+  "2": "Messina",
+  "3": "Naples",
+  "4": "Rome",
+  "5": "Viareggio",
+  "6": "Genoa",
+  "7": "Monte Carlo",
+  "8": "Nice",
+  "9": "Marseille"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Palermo, Sicily, Italy",
+   "lat": 38.1206,
+   "lng": 13.3865,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Messina, Sicily, Italy",
+   "lat": 38.192778,
+   "lng": 15.558056,
+   "mode": "sea",
+   "path": [
+    [
+     13.3865,
+     38.1206
+    ],
+    [
+     15.558056,
+     38.192778
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Naples, Italy",
+   "lat": 40.8371746019429,
+   "lng": 14.2605759890679,
+   "mode": "sea",
+   "path": [
+    [
+     15.558056,
+     38.192778
+    ],
+    [
+     14.2605759890679,
+     40.8371746019429
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Rome (Civitavecchia), Italy",
+   "lat": 42.10729766081104,
+   "lng": 11.761639009815493,
+   "mode": "sea",
+   "path": [
+    [
+     14.2605759890679,
+     40.8371746019429
+    ],
+    [
+     11.761639009815493,
+     42.10729766081104
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Viareggio, Italy",
+   "lat": 43.86131,
+   "lng": 10.23811,
+   "mode": "sea",
+   "path": [
+    [
+     11.761639009815493,
+     42.10729766081104
+    ],
+    [
+     10.23811,
+     43.86131
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Genoa, Italy",
+   "lat": 44.41139853119931,
+   "lng": 8.918566918688722,
+   "mode": "sea",
+   "path": [
+    [
+     10.23811,
+     43.86131
+    ],
+    [
+     8.918566918688722,
+     44.41139853119931
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.73569731281005,
+   "lng": 7.430948424841447,
+   "mode": "sea",
+   "path": [
+    [
+     8.918566918688722,
+     44.41139853119931
+    ],
+    [
+     7.430948424841447,
+     43.73569731281005
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "mode": "sea",
+   "path": [
+    [
+     7.430948424841447,
+     43.73569731281005
+    ],
+    [
+     7.288441262587998,
+     43.693410853287936
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Marseille, France",
+   "lat": 43.3446562702501,
+   "lng": 5.33256571210601,
+   "mode": "sea",
+   "path": [
+    [
+     7.288441262587998,
+     43.693410853287936
+    ],
+    [
+     5.33256571210601,
+     43.3446562702501
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "id": "amangati-bodrum-to-istanbul-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Bodrum to Istanbul, 7 nights aboard Amangati",
+ "subtitle": "7 nights · Bodrum to Istanbul · Amangati",
+ "days": {
+  "1": "Bodrum",
+  "2": "Patmos",
+  "3": "Skiros",
+  "4": "Skiathos",
+  "5": "Thessaloniki",
+  "6": "Thessaloniki",
+  "7": "Istanbul",
+  "8": "Istanbul"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Bodrum, Turkey",
+   "lat": 37.0249503642893,
+   "lng": 27.43838300415715,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Patmos, Greece",
+   "lat": 37.323008,
+   "lng": 26.545973,
+   "mode": "sea",
+   "path": [
+    [
+     27.43838300415715,
+     37.0249503642893
+    ],
+    [
+     26.545973,
+     37.323008
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Skyros, Greece",
+   "lat": 38.8426869254011,
+   "lng": 24.5368772918351,
+   "mode": "sea",
+   "path": [
+    [
+     26.545973,
+     37.323008
+    ],
+    [
+     24.5368772918351,
+     38.8426869254011
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Skiathos",
+   "lat": 39.162,
+   "lng": 23.49,
+   "mode": "sea",
+   "path": [
+    [
+     24.5368772918351,
+     38.8426869254011
+    ],
+    [
+     23.49,
+     39.162
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Thessaloniki, Greece",
+   "lat": 40.635297,
+   "lng": 22.931817,
+   "mode": "sea",
+   "path": [
+    [
+     23.49,
+     39.162
+    ],
+    [
+     22.931817,
+     40.635297
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Thessaloniki, Greece",
+   "lat": 40.635297,
+   "lng": 22.931817,
+   "mode": "sea",
+   "path": [
+    [
+     22.931817,
+     40.635297
+    ],
+    [
+     22.931817,
+     40.635297
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Istanbul, Turkey",
+   "lat": 41.029037383212014,
+   "lng": 28.987969773017518,
+   "mode": "sea",
+   "path": [
+    [
+     22.931817,
+     40.635297
+    ],
+    [
+     28.987969773017518,
+     41.029037383212014
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Istanbul, Turkey",
+   "lat": 41.029037383212014,
+   "lng": 28.987969773017518,
+   "mode": "sea",
+   "path": [
+    [
+     28.987969773017518,
+     41.029037383212014
+    ],
+    [
+     28.987969773017518,
+     41.029037383212014
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

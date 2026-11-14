@@ -1,3 +1,5 @@
+import TimelessStamp from "@/components/ships/TimelessStamp";
+import { timelessVoyageFor } from "@/lib/content/timeless-voyages";
 import Image from "next/image";
 import Link from "next/link";
 import { volumeInk } from "@/lib/volumes";
@@ -19,6 +21,7 @@ export default function ShipCard({ c, sister = false }: { c: ShipCardData; siste
       <div className="relative aspect-[4/3] bg-paper-card overflow-hidden">
         {c.image && <Image src={c.image.url} alt={c.image.alt} fill sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 90vw" className="object-cover group-hover:scale-[1.03] transition-transform duration-700" />}
         {(() => { const ef = efForHref(c.href); return ef ? <EFStamp no={ef.collectionNumber} size={104} rotate={-7} onPhoto className="absolute right-2 bottom-2 pointer-events-none" /> : null; })()}
+        {(() => { const tv = !efForHref(c.href) ? timelessVoyageFor(c.slug) : null; return tv?.stamp ? <TimelessStamp tv={tv} shipName={c.name} size={92} rotate={-6} ink="#F4EFE6" backing className="absolute right-2 bottom-2 pointer-events-none" /> : null; })()}
         {!c.page && <span className="absolute top-3 left-3 bg-paper/95 font-mono text-[11px] px-2 py-0.5">Ship page to follow</span>}
       </div>
       <div className="p-4 flex flex-col flex-1">

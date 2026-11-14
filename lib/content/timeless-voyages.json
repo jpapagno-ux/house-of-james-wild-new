@@ -12,8 +12,11 @@
       "sailingStatus": "sailing",
       "launchDate": "2026-03-20",
       "signatureEdition": true,
-      "heroLine": null,
-      "whyItBelongs": [],
+      "heroLine": "A hotel that sails, with a marina that opens at the stern.",
+      "whyItBelongs": [
+        "Four Seasons runs her the way it runs its best hotels: 95 suites, each with its own terrace, and about one crew member for every guest. The marina at the stern folds down for paddleboards and a swim before lunch.",
+        "She winters in the Caribbean and the Bahamas and summers in the Mediterranean, with sailings published to October 2028. Fares are per suite, for the whole voyage. Book the suite; the islands come with it."
+      ],
       "before": [],
       "beyond": [],
       "stamp": "Signature Edition",
@@ -29,8 +32,11 @@
       "sailingStatus": "sailing",
       "launchDate": null,
       "signatureEdition": false,
-      "heroLine": null,
-      "whyItBelongs": [],
+      "heroLine": "Twelve suites, two naturalists, and the Galápagos with the volume turned down.",
+      "whyItBelongs": [
+        "Via Natura built her in 2025 and sails her themselves. Each of the twelve suites has its own balcony and a jacuzzi facing the sea.",
+        "Twenty guests, twenty crew and one naturalist guide for every ten guests. Hermes is also No. 002 of The Exceptional Few."
+      ],
       "before": [],
       "beyond": [],
       "stamp": "Timeless Voyages",
@@ -46,8 +52,11 @@
       "sailingStatus": "sailing",
       "launchDate": null,
       "signatureEdition": false,
-      "heroLine": null,
-      "whyItBelongs": [],
+      "heroLine": "Aman's hand-built phinisi, for one party at a time.",
+      "whyItBelongs": [
+        "Konjo shipwrights built her from local hardwoods over five years with Aman, and she travels under sail and by motor. Five cabins, ten guests, fourteen crew, two of them chefs and one a dive master.",
+        "She goes where Indonesia is quietest: Komodo, Raja Ampat, the Spice Islands and Alor. Aman sails her only as a private charter, so the yacht and the route are yours. Amandira is also No. 003 of The Exceptional Few."
+      ],
       "before": [],
       "beyond": [],
       "stamp": "Timeless Voyages",

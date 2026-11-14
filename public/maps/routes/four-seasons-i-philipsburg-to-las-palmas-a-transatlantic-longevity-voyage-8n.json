@@ -1,0 +1,79 @@
+{
+ "id": "four-seasons-i-philipsburg-to-las-palmas-a-transatlantic-longevity-voyage-8n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "The Lanserhof Reset: A Transatlantic Longevity Voyage aboard Four Seasons I",
+ "subtitle": "8 nights · Philipsburg to Las Palmas · Four Seasons I",
+ "days": {
+  "1": "Philipsburg",
+  "None": "At sea",
+  "9": "Las Palmas, Gran Canaria, Canarias"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Philipsburg, Sint Maarten",
+   "lat": 18.0148,
+   "lng": -63.0429,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Atlantic Ocean",
+   "lat": 23.077,
+   "lng": -39.233,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0429,
+     18.0148
+    ],
+    [
+     -39.233,
+     23.077
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Las Palmas, Gran Canaria, Canarias, Spain",
+   "lat": 28.1401,
+   "lng": -15.423,
+   "mode": "sea",
+   "path": [
+    [
+     -39.233,
+     23.077
+    ],
+    [
+     -15.423,
+     28.1401
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Atlantic Ocean",
+    "lat": 25.0,
+    "lng": -40.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Canary Islands",
+    "lat": 28.3,
+    "lng": -15.8,
+    "kind": "region"
+   },
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -176,7 +176,7 @@ function Filters({ s, set, months }: { s: SearchState; set: <K extends keyof Sea
       <Group label="Budget">
         {BUDGETS.map((b) => <button key={b} type="button" aria-pressed={s.budget === b} onClick={() => set("budget", s.budget === b ? null : b)} className={chip(s.budget === b)}>Up to {usd(b)}</button>)}
       </Group>
-      <p className="mt-3 text-[12.5px] ledger-muted md:pl-[8.5rem]">Budget reads the lowest published fare per person, two sharing.</p>
+      <p className="mt-3 text-[12.5px] ledger-muted md:pl-[8.5rem]">Budget reads the lowest published fare per person, two sharing; a fare published per suite counts as half the suite.</p>
     </div>
   );
 }

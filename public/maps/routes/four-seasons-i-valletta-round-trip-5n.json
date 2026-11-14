@@ -1,0 +1,139 @@
+{
+ "id": "four-seasons-i-valletta-round-trip-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Grand Mediterranean featuring Valletta & Taormina aboard Four Seasons I",
+ "subtitle": "5 nights · Valletta round trip · Four Seasons I",
+ "days": {
+  "1": "Valletta",
+  "2": "Giardini Naxos (Taormina)",
+  "3": "Lipari, Sicily",
+  "4": "Favignana, Isola di Favignana",
+  "5": "Marina day, Malta",
+  "None": "Valletta"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Valletta, Malta",
+   "lat": 35.8902,
+   "lng": 14.5087,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Giardini Naxos (Taormina), Sicily, Italy",
+   "lat": 37.8248,
+   "lng": 15.2746,
+   "mode": "sea",
+   "path": [
+    [
+     14.5087,
+     35.8902
+    ],
+    [
+     15.2746,
+     37.8248
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Lipari, Sicily",
+   "lat": 38.4648,
+   "lng": 14.9574,
+   "mode": "sea",
+   "path": [
+    [
+     15.2746,
+     37.8248
+    ],
+    [
+     14.9574,
+     38.4648
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Favignana, Italy",
+   "lat": 37.9323,
+   "lng": 12.3279,
+   "mode": "sea",
+   "path": [
+    [
+     14.9574,
+     38.4648
+    ],
+    [
+     12.3279,
+     37.9323
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Marina Day, Malta",
+   "lat": 36.015,
+   "lng": 14.3183,
+   "mode": "sea",
+   "path": [
+    [
+     12.3279,
+     37.9323
+    ],
+    [
+     14.3183,
+     36.015
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Valletta, Malta",
+   "lat": 35.8902,
+   "lng": 14.5087,
+   "mode": "sea",
+   "path": [
+    [
+     14.3183,
+     36.015
+    ],
+    [
+     14.5087,
+     35.8902
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

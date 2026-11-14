@@ -23,8 +23,13 @@ export function searchItems(): SearchItem[] {
     const months = s ? [...new Set([...departureMonths(s.departures), ...groupMonths(monthly)])].sort() : [];
     const nights = s ? [...new Set([...s.itineraries.map((i) => i.nights), ...s.departures.map((d) => d.nights), ...monthly.map((g) => g.nights)].filter((n): n is number => typeof n === "number" && n > 0))].sort((a, b) => a - b) : [];
     const port = s?.facts.find(([k]) => /^port$/i.test(k))?.[1];
+    // Fares published per suite (Four Seasons I) join the budget filter per guest, two sharing, like every other
+    // ship's per-person fare; the result still shows the suite fare as published (James, 13 Nov 2026).
+    const perSuite = s?.fareUnit === "suite" && c.low !== null;
+    const low = perSuite ? Math.round(c.low! / 2) : c.low;
+    const price = perSuite && c.price ? { ...c.price, amount: `${c.price.amount} (about US$${low!.toLocaleString("en-US")} a guest, two sharing)` } : c.price;
     return {
-      slug: c.slug, name: c.name, href: c.href, eyebrow: c.eyebrow, operator: reg.operator, image: c.image, price: c.price, low: c.low,
+      slug: c.slug, name: c.name, href: c.href, eyebrow: c.eyebrow, operator: reg.operator, image: c.image, price, low,
       where: [...new Set(reg.waters.map(whereOf))],
       months, nights,
       traits: reg.traits ?? {},

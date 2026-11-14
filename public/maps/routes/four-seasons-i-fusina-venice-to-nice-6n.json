@@ -1,0 +1,84 @@
+{
+ "id": "four-seasons-i-fusina-venice-to-nice-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Venice to Nice: Inside Venice’s Vernissage aboard Four Seasons I",
+ "subtitle": "6 nights · Fusina · Four Seasons I",
+ "days": {
+  "None": "At sea",
+  "7": "Nice"
+ },
+ "stops": [
+  {
+   "day": null,
+   "name": "Fusina (Venice), Italy",
+   "lat": 45.424,
+   "lng": 12.2556,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Adriatic Sea",
+   "lat": 44.559,
+   "lng": 9.771,
+   "mode": "sea",
+   "path": [
+    [
+     12.2556,
+     45.424
+    ],
+    [
+     9.771,
+     44.559
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Nice, France",
+   "lat": 43.6939,
+   "lng": 7.2862,
+   "mode": "sea",
+   "path": [
+    [
+     9.771,
+     44.559
+    ],
+    [
+     7.2862,
+     43.6939
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

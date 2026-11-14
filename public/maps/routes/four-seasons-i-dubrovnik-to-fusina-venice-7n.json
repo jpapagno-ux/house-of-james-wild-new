@@ -1,0 +1,175 @@
+{
+ "id": "four-seasons-i-dubrovnik-to-fusina-venice-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Adriatic featuring Croatia & Italy aboard Four Seasons I",
+ "subtitle": "7 nights · Dubrovnik to Fusina · Four Seasons I",
+ "days": {
+  "1": "Dubrovnik",
+  "2": "Milna",
+  "3": "Marina day, Dalmatian Coast",
+  "None": "Opatija",
+  "5": "At sea",
+  "6": "Rab",
+  "7": "Rimini (San Marino)",
+  "8": "Fusina (Venice)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.65,
+   "lng": 18.09,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Milna, Croatia",
+   "lat": 43.327,
+   "lng": 16.451,
+   "mode": "sea",
+   "path": [
+    [
+     18.09,
+     42.65
+    ],
+    [
+     16.451,
+     43.327
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Dalmatian Coast",
+   "lat": 43.25,
+   "lng": 16.6,
+   "mode": "sea",
+   "path": [
+    [
+     16.451,
+     43.327
+    ],
+    [
+     16.6,
+     43.25
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Opatija, Croatia",
+   "lat": 45.337,
+   "lng": 14.305,
+   "mode": "sea",
+   "path": [
+    [
+     16.6,
+     43.25
+    ],
+    [
+     14.305,
+     45.337
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Adriatic Sea",
+   "lat": 45.047,
+   "lng": 14.532,
+   "mode": "sea",
+   "path": [
+    [
+     14.305,
+     45.337
+    ],
+    [
+     14.532,
+     45.047
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Rab, Croatia",
+   "lat": 44.756,
+   "lng": 14.76,
+   "mode": "sea",
+   "path": [
+    [
+     14.532,
+     45.047
+    ],
+    [
+     14.76,
+     44.756
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Rimini, Italy",
+   "lat": 44.064,
+   "lng": 12.574,
+   "mode": "sea",
+   "path": [
+    [
+     14.76,
+     44.756
+    ],
+    [
+     12.574,
+     44.064
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Fusina, Italy",
+   "lat": 45.419,
+   "lng": 12.256,
+   "mode": "sea",
+   "path": [
+    [
+     12.574,
+     44.064
+    ],
+    [
+     12.256,
+     45.419
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

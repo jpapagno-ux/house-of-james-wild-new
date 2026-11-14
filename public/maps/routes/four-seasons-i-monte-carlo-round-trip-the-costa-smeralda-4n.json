@@ -1,0 +1,103 @@
+{
+ "id": "four-seasons-i-monte-carlo-round-trip-the-costa-smeralda-4n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Monte Carlo Roundtrip: The Costa Smeralda aboard Four Seasons I",
+ "subtitle": "4 nights · Monte Carlo round trip · Four Seasons I",
+ "days": {
+  "1": "Monte Carlo",
+  "None": "Porto Cervo, Sardinia",
+  "4": "Marina day, French Riviera",
+  "5": "Monte Carlo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Porto Cervo, Sardinia, Italy",
+   "lat": 41.1346,
+   "lng": 9.5368,
+   "mode": "sea",
+   "path": [
+    [
+     7.4294,
+     43.7358
+    ],
+    [
+     9.5368,
+     41.1346
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, French Riviera",
+   "lat": 42.6983,
+   "lng": 9.295,
+   "mode": "sea",
+   "path": [
+    [
+     9.5368,
+     41.1346
+    ],
+    [
+     9.295,
+     42.6983
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "mode": "sea",
+   "path": [
+    [
+     9.295,
+     42.6983
+    ],
+    [
+     7.4294,
+     43.7358
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

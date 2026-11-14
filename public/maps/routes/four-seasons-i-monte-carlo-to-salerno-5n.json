@@ -1,0 +1,121 @@
+{
+ "id": "four-seasons-i-monte-carlo-to-salerno-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Monte Carlo to Salerno: Italian Isles & Harbours aboard Four Seasons I",
+ "subtitle": "5 nights · Monte Carlo to Salerno · Four Seasons I",
+ "days": {
+  "1": "Monte Carlo",
+  "2": "Marina day, French Riviera",
+  "None": "Porto Cervo, Sardinia",
+  "5": "Marina Grande, Isola di Capri",
+  "6": "Salerno"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Marina Day, French Riviera",
+   "lat": 42.6983,
+   "lng": 9.295,
+   "mode": "sea",
+   "path": [
+    [
+     7.4294,
+     43.7358
+    ],
+    [
+     9.295,
+     42.6983
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Porto Cervo, Sardinia, Italy",
+   "lat": 41.1346,
+   "lng": 9.5368,
+   "mode": "sea",
+   "path": [
+    [
+     9.295,
+     42.6983
+    ],
+    [
+     9.5368,
+     41.1346
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Capri, Italy",
+   "lat": 40.5564,
+   "lng": 14.2403,
+   "mode": "sea",
+   "path": [
+    [
+     9.5368,
+     41.1346
+    ],
+    [
+     14.2403,
+     40.5564
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Salerno, Italy",
+   "lat": 40.6753,
+   "lng": 14.7511,
+   "mode": "sea",
+   "path": [
+    [
+     14.2403,
+     40.5564
+    ],
+    [
+     14.7511,
+     40.6753
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

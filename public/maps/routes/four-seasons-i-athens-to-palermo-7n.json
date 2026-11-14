@@ -1,0 +1,157 @@
+{
+ "id": "four-seasons-i-athens-to-palermo-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Athens to Palermo: The Ionian & Southern Italy aboard Four Seasons I",
+ "subtitle": "7 nights · Athens to Palermo · Four Seasons I",
+ "days": {
+  "1": "Athens",
+  "2": "Spétsai",
+  "3": "At sea",
+  "None": "Zakynthos, Nisos Zakynthos",
+  "6": "Marina day, Italian Riviera",
+  "7": "Tropea",
+  "8": "Palermo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Spétsai, Greece",
+   "lat": 37.268,
+   "lng": 23.1566,
+   "mode": "sea",
+   "path": [
+    [
+     23.6359,
+     37.9382
+    ],
+    [
+     23.1566,
+     37.268
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Mediterranean Sea",
+   "lat": 37.534,
+   "lng": 21.953,
+   "mode": "sea",
+   "path": [
+    [
+     23.1566,
+     37.268
+    ],
+    [
+     21.953,
+     37.534
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Zakynthos, Greece",
+   "lat": 37.8,
+   "lng": 20.75,
+   "mode": "sea",
+   "path": [
+    [
+     21.953,
+     37.534
+    ],
+    [
+     20.75,
+     37.8
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     20.75,
+     37.8
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Tropea, Italy",
+   "lat": 38.6777,
+   "lng": 15.8963,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     15.8963,
+     38.6777
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Palermo, Italy",
+   "lat": 38.1157,
+   "lng": 13.3615,
+   "mode": "sea",
+   "path": [
+    [
+     15.8963,
+     38.6777
+    ],
+    [
+     13.3615,
+     38.1157
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

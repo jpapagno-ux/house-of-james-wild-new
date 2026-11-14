@@ -1,0 +1,115 @@
+{
+ "id": "four-seasons-i-philipsburg-to-castries-5n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Sint Maarten to Saint Lucia: Antigua & the French Caribbean aboard Four Seasons I",
+ "subtitle": "5 nights · Philipsburg to Castries · Four Seasons I",
+ "days": {
+  "1": "Philipsburg",
+  "None": "Falmouth",
+  "4": "Beach Day, Prickly Pear",
+  "5": "Isles Des Saintes",
+  "6": "Castries"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Philipsburg, Sint Maarten",
+   "lat": 18.0148,
+   "lng": -63.0429,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Falmouth, Antigua",
+   "lat": 17.0136,
+   "lng": -61.7694,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0429,
+     18.0148
+    ],
+    [
+     -61.7694,
+     17.0136
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Beach Day, Prickly Pear",
+   "lat": 18.2617,
+   "lng": -63.1767,
+   "mode": "sea",
+   "path": [
+    [
+     -61.7694,
+     17.0136
+    ],
+    [
+     -63.1767,
+     18.2617
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Îles des Saintes, Guadeloupe",
+   "lat": 15.8686,
+   "lng": -61.5836,
+   "mode": "sea",
+   "path": [
+    [
+     -63.1767,
+     18.2617
+    ],
+    [
+     -61.5836,
+     15.8686
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Castries, Saint Lucia",
+   "lat": 14.0145,
+   "lng": -60.9952,
+   "mode": "sea",
+   "path": [
+    [
+     -61.5836,
+     15.8686
+    ],
+    [
+     -60.9952,
+     14.0145
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Lesser Antilles",
+    "lat": 15.3,
+    "lng": -61.0,
+    "kind": "region"
+   }
+  ]
+ }
+}

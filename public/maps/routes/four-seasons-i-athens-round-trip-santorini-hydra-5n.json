@@ -1,0 +1,156 @@
+{
+ "id": "four-seasons-i-athens-round-trip-santorini-hydra-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Greek Isles featuring Santorini & Hydra aboard Four Seasons I",
+ "subtitle": "5 nights · Athens round trip · Four Seasons I",
+ "days": {
+  "1": "Athens",
+  "2": "Siğacik",
+  "3": "Santorini",
+  "4": "Naxos",
+  "5": "Hydra",
+  "6": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Siğacik, Türkiye",
+   "lat": 38.1934,
+   "lng": 26.7865,
+   "mode": "sea",
+   "path": [
+    [
+     23.6359,
+     37.9382
+    ],
+    [
+     26.7865,
+     38.1934
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Folegandros",
+   "lat": 36.6283,
+   "lng": 24.9198,
+   "mode": "sea",
+   "path": [
+    [
+     26.7865,
+     38.1934
+    ],
+    [
+     24.9198,
+     36.6283
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Santorini, Greece",
+   "lat": 36.4179,
+   "lng": 25.4281,
+   "mode": "sea",
+   "path": [
+    [
+     24.9198,
+     36.6283
+    ],
+    [
+     25.4281,
+     36.4179
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Naxos, Greece",
+   "lat": 37.0833,
+   "lng": 25.4667,
+   "mode": "sea",
+   "path": [
+    [
+     25.4281,
+     36.4179
+    ],
+    [
+     25.4667,
+     37.0833
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Hydra, Greece",
+   "lat": 37.3503,
+   "lng": 23.4653,
+   "mode": "sea",
+   "path": [
+    [
+     25.4667,
+     37.0833
+    ],
+    [
+     23.4653,
+     37.3503
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "mode": "sea",
+   "path": [
+    [
+     23.4653,
+     37.3503
+    ],
+    [
+     23.6359,
+     37.9382
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

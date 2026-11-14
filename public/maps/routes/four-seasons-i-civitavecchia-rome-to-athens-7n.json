@@ -1,0 +1,157 @@
+{
+ "id": "four-seasons-i-civitavecchia-rome-to-athens-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Rome to Athens: The Southern Mediterranean aboard Four Seasons I",
+ "subtitle": "7 nights · Civitavecchia · Four Seasons I",
+ "days": {
+  "1": "Civitavecchia (Rome)",
+  "None": "Amalfi",
+  "4": "Tropea",
+  "5": "At sea",
+  "6": "Chania, Crete",
+  "7": "Marina Day Folegrandos",
+  "8": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Civitavecchia (Rome)",
+   "lat": 42.0923,
+   "lng": 11.7955,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Amalfi, Italy",
+   "lat": 40.6329,
+   "lng": 14.6015,
+   "mode": "sea",
+   "path": [
+    [
+     11.7955,
+     42.0923
+    ],
+    [
+     14.6015,
+     40.6329
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Tropea, Italy",
+   "lat": 38.6777,
+   "lng": 15.8963,
+   "mode": "sea",
+   "path": [
+    [
+     14.6015,
+     40.6329
+    ],
+    [
+     15.8963,
+     38.6777
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Ionian Sea",
+   "lat": 37.096,
+   "lng": 19.958,
+   "mode": "sea",
+   "path": [
+    [
+     15.8963,
+     38.6777
+    ],
+    [
+     19.958,
+     37.096
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Chania, Crete",
+   "lat": 35.5149,
+   "lng": 24.0192,
+   "mode": "sea",
+   "path": [
+    [
+     19.958,
+     37.096
+    ],
+    [
+     24.0192,
+     35.5149
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Marina Day, Folegandros",
+   "lat": 36.6283,
+   "lng": 24.9198,
+   "mode": "sea",
+   "path": [
+    [
+     24.0192,
+     35.5149
+    ],
+    [
+     24.9198,
+     36.6283
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "mode": "sea",
+   "path": [
+    [
+     24.9198,
+     36.6283
+    ],
+    [
+     23.6359,
+     37.9382
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

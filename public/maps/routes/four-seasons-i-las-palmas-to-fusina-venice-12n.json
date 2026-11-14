@@ -1,0 +1,191 @@
+{
+ "id": "four-seasons-i-las-palmas-to-fusina-venice-12n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Spain to Italy: From the Canaries to the Adriatic aboard Four Seasons I",
+ "subtitle": "12 nights · Las Palmas to Fusina · Four Seasons I",
+ "days": {
+  "1": "Las Palmas, Gran Canaria, Canarias",
+  "2": "At sea",
+  "None": "Hvar",
+  "5": "Málaga",
+  "9": "Kerkyra, Corfu",
+  "12": "Rovinj",
+  "13": "Fusina (Venice)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Las Palmas, Gran Canaria, Canarias, Spain",
+   "lat": 28.1401,
+   "lng": -15.423,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Atlantic Ocean",
+   "lat": 30.874,
+   "lng": -11.518,
+   "mode": "sea",
+   "path": [
+    [
+     -15.423,
+     28.1401
+    ],
+    [
+     -11.518,
+     30.874
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Casablanca, Morocco",
+   "lat": 33.6075,
+   "lng": -7.6122,
+   "mode": "sea",
+   "path": [
+    [
+     -11.518,
+     30.874
+    ],
+    [
+     -7.6122,
+     33.6075
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Málaga, Spain",
+   "lat": 36.7177,
+   "lng": -4.4174,
+   "mode": "sea",
+   "path": [
+    [
+     -7.6122,
+     33.6075
+    ],
+    [
+     -4.4174,
+     36.7177
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Mediterranean Sea",
+   "lat": 38.171,
+   "lng": 7.701,
+   "mode": "sea",
+   "path": [
+    [
+     -4.4174,
+     36.7177
+    ],
+    [
+     7.701,
+     38.171
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Kerkyra, Greece",
+   "lat": 39.6239,
+   "lng": 19.82,
+   "mode": "sea",
+   "path": [
+    [
+     7.701,
+     38.171
+    ],
+    [
+     19.82,
+     39.6239
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Hvar, Croatia",
+   "lat": 43.183,
+   "lng": 16.436,
+   "mode": "sea",
+   "path": [
+    [
+     19.82,
+     39.6239
+    ],
+    [
+     16.436,
+     43.183
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "Rovinj, Croatia",
+   "lat": 45.0817,
+   "lng": 13.6344,
+   "mode": "sea",
+   "path": [
+    [
+     16.436,
+     43.183
+    ],
+    [
+     13.6344,
+     45.0817
+    ]
+   ]
+  },
+  {
+   "day": 13,
+   "name": "Fusina (Venice), Italy",
+   "lat": 45.424,
+   "lng": 12.2556,
+   "mode": "sea",
+   "path": [
+    [
+     13.6344,
+     45.0817
+    ],
+    [
+     12.2556,
+     45.424
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

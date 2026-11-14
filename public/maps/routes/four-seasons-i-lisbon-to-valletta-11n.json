@@ -1,0 +1,228 @@
+{
+ "id": "four-seasons-i-lisbon-to-valletta-11n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Rivieras featuring Valencia & Malta aboard Four Seasons I",
+ "subtitle": "11 nights · Lisbon to Valletta · Four Seasons I",
+ "days": {
+  "1": "lisbon",
+  "2": "At sea",
+  "3": "Puerto Banús (Marbella)",
+  "None": "Valencia",
+  "5": "At sea",
+  "8": "Ibiza",
+  "9": "At sea",
+  "10": "Trapani, Sicily",
+  "11": "Mgarr (Victoria), Gozo",
+  "12": "Valletta"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Lisbon, Portugal",
+   "lat": 38.7106,
+   "lng": -9.1263,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Atlantic Ocean",
+   "lat": 37.6,
+   "lng": -7.038,
+   "mode": "sea",
+   "path": [
+    [
+     -9.1263,
+     38.7106
+    ],
+    [
+     -7.038,
+     37.6
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Puerto Banús, Spain",
+   "lat": 36.4898,
+   "lng": -4.949,
+   "mode": "sea",
+   "path": [
+    [
+     -7.038,
+     37.6
+    ],
+    [
+     -4.949,
+     36.4898
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Málaga, Spain",
+   "lat": 36.7177,
+   "lng": -4.4174,
+   "mode": "sea",
+   "path": [
+    [
+     -4.949,
+     36.4898
+    ],
+    [
+     -4.4174,
+     36.7177
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Mediterranean Sea",
+   "lat": 38.087,
+   "lng": -2.372,
+   "mode": "sea",
+   "path": [
+    [
+     -4.4174,
+     36.7177
+    ],
+    [
+     -2.372,
+     38.087
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Valencia, Spain",
+   "lat": 39.4557,
+   "lng": -0.3271,
+   "mode": "sea",
+   "path": [
+    [
+     -2.372,
+     38.087
+    ],
+    [
+     -0.3271,
+     39.4557
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Ibiza, Spain",
+   "lat": 38.909,
+   "lng": 1.4336,
+   "mode": "sea",
+   "path": [
+    [
+     -0.3271,
+     39.4557
+    ],
+    [
+     1.4336,
+     38.909
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Atlantic Ocean",
+   "lat": 38.462,
+   "lng": 6.972,
+   "mode": "sea",
+   "path": [
+    [
+     1.4336,
+     38.909
+    ],
+    [
+     6.972,
+     38.462
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Trapani, Sicily, Italy",
+   "lat": 38.015,
+   "lng": 12.5096,
+   "mode": "sea",
+   "path": [
+    [
+     6.972,
+     38.462
+    ],
+    [
+     12.5096,
+     38.015
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "Mgarr, Malta",
+   "lat": 35.9194,
+   "lng": 14.3665,
+   "mode": "sea",
+   "path": [
+    [
+     12.5096,
+     38.015
+    ],
+    [
+     14.3665,
+     35.9194
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "Valletta, Malta",
+   "lat": 35.8902,
+   "lng": 14.5087,
+   "mode": "sea",
+   "path": [
+    [
+     14.3665,
+     35.9194
+    ],
+    [
+     14.5087,
+     35.8902
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

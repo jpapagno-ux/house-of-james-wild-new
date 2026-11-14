@@ -101,7 +101,7 @@ export default function FleetBrowser({ items, sections, pathwayNames, credits }:
         );
       })}
       {!shown.length && <p className="mt-8 border-l-2 border-crimson pl-4 text-[15px]">No ship matches every filter. Clear one, or ask James: he knows which yachts have space.</p>}
-      <p className="mt-6 text-[12px] ledger-muted">Photographs: {credits}. &ldquo;From&rdquo; is the lowest fare per person each operator publishes for the cruise, on its own occupancy basis.</p>
+      <p className="mt-6 text-[12px] ledger-muted">Photographs: {credits}. &ldquo;From&rdquo; is the lowest fare per person each operator publishes for the cruise, on its own occupancy basis; &ldquo;Suite from&rdquo; is a fare for the whole suite.</p>
     </div>
   );
 }

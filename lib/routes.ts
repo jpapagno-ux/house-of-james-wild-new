@@ -54,6 +54,7 @@ export const BUILT: string[] = [
   "/voyages/rivers",
   "/voyages/sailing",
   "/voyages/expedition",
+  "/voyages/yachts",
   "/voyages/charter",
   "/voyages/amazon",
   "/voyages/galapagos",

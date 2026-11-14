@@ -1,0 +1,151 @@
+{
+ "id": "four-seasons-i-philipsburg-to-miami-anguilla-antigua-7n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Grand Caribbean featuring Anguilla & Antigua aboard Four Seasons I",
+ "subtitle": "7 nights · Philipsburg to Miami · Four Seasons I",
+ "days": {
+  "1": "Philipsburg",
+  "2": "Falmouth",
+  "3": "Road Bay",
+  "None": "At sea",
+  "6": "Yacht Club Day, Norman’s Cay",
+  "7": "Marina day, Bahamas",
+  "8": "Miami, Florida"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Philipsburg, Sint Maarten",
+   "lat": 18.0148,
+   "lng": -63.0429,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Falmouth, Antigua",
+   "lat": 17.0136,
+   "lng": -61.7694,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0429,
+     18.0148
+    ],
+    [
+     -61.7694,
+     17.0136
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Road Bay, Anguilla",
+   "lat": 18.2205,
+   "lng": -63.0686,
+   "mode": "sea",
+   "path": [
+    [
+     -61.7694,
+     17.0136
+    ],
+    [
+     -63.0686,
+     18.2205
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Atlantic Ocean",
+   "lat": 21.408,
+   "lng": -69.884,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0686,
+     18.2205
+    ],
+    [
+     -69.884,
+     21.408
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Yacht Club Day, Norman's Cay",
+   "lat": 24.595,
+   "lng": -76.7,
+   "mode": "sea",
+   "path": [
+    [
+     -69.884,
+     21.408
+    ],
+    [
+     -76.7,
+     24.595
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Marina Day, The Bahamas",
+   "lat": 25.3999,
+   "lng": -77.8931,
+   "mode": "sea",
+   "path": [
+    [
+     -76.7,
+     24.595
+    ],
+    [
+     -77.8931,
+     25.3999
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Miami, Florida",
+   "lat": 25.7746,
+   "lng": -80.1775,
+   "mode": "sea",
+   "path": [
+    [
+     -77.8931,
+     25.3999
+    ],
+    [
+     -80.1775,
+     25.7746
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Lesser Antilles",
+    "lat": 15.3,
+    "lng": -61.0,
+    "kind": "region"
+   }
+  ]
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "id": "four-seasons-i-civitavecchia-rome-to-nice-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Rome to Nice: The Heart of the French Riviera aboard Four Seasons I",
+ "subtitle": "5 nights · Civitavecchia · Four Seasons I",
+ "days": {
+  "1": "Civitavecchia (Rome)",
+  "2": "Marina day, French Riviera",
+  "None": "Saint-Tropez",
+  "5": "Beaulieu-sur-Mer",
+  "6": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Civitavecchia (Rome)",
+   "lat": 42.0923,
+   "lng": 11.7955,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Marina Day, French Riviera",
+   "lat": 42.6983,
+   "lng": 9.295,
+   "mode": "sea",
+   "path": [
+    [
+     11.7955,
+     42.0923
+    ],
+    [
+     9.295,
+     42.6983
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Saint-Tropez, France",
+   "lat": 43.2716,
+   "lng": 6.6356,
+   "mode": "sea",
+   "path": [
+    [
+     9.295,
+     42.6983
+    ],
+    [
+     6.6356,
+     43.2716
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Beaulieu-sur-Mer, France",
+   "lat": 43.7087,
+   "lng": 7.3368,
+   "mode": "sea",
+   "path": [
+    [
+     6.6356,
+     43.2716
+    ],
+    [
+     7.3368,
+     43.7087
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Nice, France",
+   "lat": 43.6939,
+   "lng": 7.2862,
+   "mode": "sea",
+   "path": [
+    [
+     7.3368,
+     43.7087
+    ],
+    [
+     7.2862,
+     43.6939
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

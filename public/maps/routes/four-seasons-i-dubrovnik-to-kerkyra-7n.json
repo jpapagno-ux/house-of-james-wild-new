@@ -1,0 +1,175 @@
+{
+ "id": "four-seasons-i-dubrovnik-to-kerkyra-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Adriatic featuring Croatia & Greece aboard Four Seasons I",
+ "subtitle": "7 nights · Dubrovnik to Kerkyra · Four Seasons I",
+ "days": {
+  "1": "Dubrovnik",
+  "2": "Marina day, Dalmatian Coast",
+  "3": "Hvar",
+  "4": "Vela Luka",
+  "5": "At sea",
+  "6": "Cephalonia",
+  "7": "Syvota",
+  "8": "Kerkyra, Corfu"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Dubrovnik, Croatia",
+   "lat": 42.6638,
+   "lng": 18.0818,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Marina Day, Dalmatian Coast",
+   "lat": 43.7667,
+   "lng": 15.7,
+   "mode": "sea",
+   "path": [
+    [
+     18.0818,
+     42.6638
+    ],
+    [
+     15.7,
+     43.7667
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Hvar, Croatia",
+   "lat": 43.183,
+   "lng": 16.436,
+   "mode": "sea",
+   "path": [
+    [
+     15.7,
+     43.7667
+    ],
+    [
+     16.436,
+     43.183
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Vela Luka, Croatia",
+   "lat": 42.963,
+   "lng": 16.72,
+   "mode": "sea",
+   "path": [
+    [
+     16.436,
+     43.183
+    ],
+    [
+     16.72,
+     42.963
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Adriatic Sea",
+   "lat": 40.713,
+   "lng": 18.648,
+   "mode": "sea",
+   "path": [
+    [
+     16.72,
+     42.963
+    ],
+    [
+     18.648,
+     40.713
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Cephalonia, Greece",
+   "lat": 38.4622,
+   "lng": 20.5762,
+   "mode": "sea",
+   "path": [
+    [
+     18.648,
+     40.713
+    ],
+    [
+     20.5762,
+     38.4622
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Syvota, Greece",
+   "lat": 39.4076,
+   "lng": 20.2398,
+   "mode": "sea",
+   "path": [
+    [
+     20.5762,
+     38.4622
+    ],
+    [
+     20.2398,
+     39.4076
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Kerkyra, Greece",
+   "lat": 39.6239,
+   "lng": 19.82,
+   "mode": "sea",
+   "path": [
+    [
+     20.2398,
+     39.4076
+    ],
+    [
+     19.82,
+     39.6239
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

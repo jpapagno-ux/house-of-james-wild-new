@@ -1,0 +1,175 @@
+{
+ "id": "four-seasons-i-valletta-to-athens-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Greek Isles featuring Santorini & Çeşme aboard Four Seasons I",
+ "subtitle": "7 nights · Valletta to Athens · Four Seasons I",
+ "days": {
+  "1": "Valletta",
+  "2": "At sea",
+  "3": "Agios Nikólaos, Crete",
+  "4": "Santorini",
+  "5": "Naxos",
+  "6": "Çeşme",
+  "7": "Spétsai",
+  "8": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Valletta, Malta",
+   "lat": 35.8902,
+   "lng": 14.5087,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Ionian Sea",
+   "lat": 35.54,
+   "lng": 20.112,
+   "mode": "sea",
+   "path": [
+    [
+     14.5087,
+     35.8902
+    ],
+    [
+     20.112,
+     35.54
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Agios Nikólaos, Crete, Greece",
+   "lat": 35.1903,
+   "lng": 25.716,
+   "mode": "sea",
+   "path": [
+    [
+     20.112,
+     35.54
+    ],
+    [
+     25.716,
+     35.1903
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Santorini, Greece",
+   "lat": 36.4179,
+   "lng": 25.4281,
+   "mode": "sea",
+   "path": [
+    [
+     25.716,
+     35.1903
+    ],
+    [
+     25.4281,
+     36.4179
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Naxos, Greece",
+   "lat": 37.0833,
+   "lng": 25.4667,
+   "mode": "sea",
+   "path": [
+    [
+     25.4281,
+     36.4179
+    ],
+    [
+     25.4667,
+     37.0833
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Çeşme, Türkiye",
+   "lat": 38.3221,
+   "lng": 26.2994,
+   "mode": "sea",
+   "path": [
+    [
+     25.4667,
+     37.0833
+    ],
+    [
+     26.2994,
+     38.3221
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Spétsai, Greece",
+   "lat": 37.268,
+   "lng": 23.1566,
+   "mode": "sea",
+   "path": [
+    [
+     26.2994,
+     38.3221
+    ],
+    [
+     23.1566,
+     37.268
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "mode": "sea",
+   "path": [
+    [
+     23.1566,
+     37.268
+    ],
+    [
+     23.6359,
+     37.9382
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

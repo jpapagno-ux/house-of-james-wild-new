@@ -1,0 +1,210 @@
+{
+ "id": "four-seasons-i-valletta-to-casablanca-marrakesh-11n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Rivieras featuring Tropea & Valencia aboard Four Seasons I",
+ "subtitle": "11 nights · Valletta to Casablanca · Four Seasons I",
+ "days": {
+  "1": "Valletta",
+  "2": "Tropea",
+  "3": "Marina day, Italian Riviera",
+  "4": "At sea",
+  "5": "Mahón, Menorca",
+  "6": "La R�pita",
+  "None": "Casablanca (Marrakesh)",
+  "9": "At sea",
+  "10": "Gibraltar"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Valletta, Malta",
+   "lat": 35.8902,
+   "lng": 14.5087,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Tropea, Italy",
+   "lat": 38.6777,
+   "lng": 15.8963,
+   "mode": "sea",
+   "path": [
+    [
+     14.5087,
+     35.8902
+    ],
+    [
+     15.8963,
+     38.6777
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     15.8963,
+     38.6777
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Tyrrhenian Sea",
+   "lat": 39.397,
+   "lng": 10.589,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     10.589,
+     39.397
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Mahón, Menorca, Spain",
+   "lat": 39.8906,
+   "lng": 4.2658,
+   "mode": "sea",
+   "path": [
+    [
+     10.589,
+     39.397
+    ],
+    [
+     4.2658,
+     39.8906
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "La Ràpita, Spain",
+   "lat": 40.6201,
+   "lng": 0.5928,
+   "mode": "sea",
+   "path": [
+    [
+     4.2658,
+     39.8906
+    ],
+    [
+     0.5928,
+     40.6201
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Valencia, Spain",
+   "lat": 39.4557,
+   "lng": -0.3271,
+   "mode": "sea",
+   "path": [
+    [
+     0.5928,
+     40.6201
+    ],
+    [
+     -0.3271,
+     39.4557
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Mediterranean Sea",
+   "lat": 37.8,
+   "lng": -2.846,
+   "mode": "sea",
+   "path": [
+    [
+     -0.3271,
+     39.4557
+    ],
+    [
+     -2.846,
+     37.8
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Gibraltar, Gibraltar",
+   "lat": 36.1452,
+   "lng": -5.3655,
+   "mode": "sea",
+   "path": [
+    [
+     -2.846,
+     37.8
+    ],
+    [
+     -5.3655,
+     36.1452
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Casablanca, Morocco",
+   "lat": 33.6075,
+   "lng": -7.6122,
+   "mode": "sea",
+   "path": [
+    [
+     -5.3655,
+     36.1452
+    ],
+    [
+     -7.6122,
+     33.6075
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

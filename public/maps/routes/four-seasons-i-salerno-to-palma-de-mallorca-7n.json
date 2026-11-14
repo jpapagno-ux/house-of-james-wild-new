@@ -1,0 +1,175 @@
+{
+ "id": "four-seasons-i-salerno-to-palma-de-mallorca-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Grand Mediterranean featuring Ponza & Saint-Raphaël aboard Four Seasons I",
+ "subtitle": "7 nights · Salerno to Palma de Mallorca · Four Seasons I",
+ "days": {
+  "1": "Salerno",
+  "2": "Isola di Ponza",
+  "3": "Marina day, Italian Riviera",
+  "4": "Saint-Raphaël",
+  "5": "At sea",
+  "6": "Port-Vendres",
+  "7": "Mahón, Menorca",
+  "8": "Palma de Mallorca"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Salerno, Italy",
+   "lat": 40.6753,
+   "lng": 14.7511,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Ponza, Italy",
+   "lat": 40.8943,
+   "lng": 12.9633,
+   "mode": "sea",
+   "path": [
+    [
+     14.7511,
+     40.6753
+    ],
+    [
+     12.9633,
+     40.8943
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     12.9633,
+     40.8943
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Saint-Raphaël, France",
+   "lat": 43.4225,
+   "lng": 6.7648,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     6.7648,
+     43.4225
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Mediterranean Sea",
+   "lat": 42.969,
+   "lng": 4.936,
+   "mode": "sea",
+   "path": [
+    [
+     6.7648,
+     43.4225
+    ],
+    [
+     4.936,
+     42.969
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Port-Vendres, France",
+   "lat": 42.5161,
+   "lng": 3.1073,
+   "mode": "sea",
+   "path": [
+    [
+     4.936,
+     42.969
+    ],
+    [
+     3.1073,
+     42.5161
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Mahón, Menorca, Spain",
+   "lat": 39.8906,
+   "lng": 4.2658,
+   "mode": "sea",
+   "path": [
+    [
+     3.1073,
+     42.5161
+    ],
+    [
+     4.2658,
+     39.8906
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Palma de Mallorca, Spain",
+   "lat": 39.5531,
+   "lng": 2.6266,
+   "mode": "sea",
+   "path": [
+    [
+     4.2658,
+     39.8906
+    ],
+    [
+     2.6266,
+     39.5531
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

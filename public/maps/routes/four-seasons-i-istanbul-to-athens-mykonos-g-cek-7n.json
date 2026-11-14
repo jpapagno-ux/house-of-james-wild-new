@@ -1,0 +1,175 @@
+{
+ "id": "four-seasons-i-istanbul-to-athens-mykonos-g-cek-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Greek Isles featuring Mykonos & Göcek aboard Four Seasons I",
+ "subtitle": "7 nights · Istanbul to Athens · Four Seasons I",
+ "days": {
+  "1": "Istanbul",
+  "2": "At sea",
+  "3": "Göcek",
+  "4": "Didim",
+  "5": "Marina day, Greek Isles",
+  "None": "Mykonos",
+  "7": "Hydra",
+  "8": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Istanbul, Türkiye",
+   "lat": 41.0175,
+   "lng": 28.9846,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Aegean Sea",
+   "lat": 38.885,
+   "lng": 28.963,
+   "mode": "sea",
+   "path": [
+    [
+     28.9846,
+     41.0175
+    ],
+    [
+     28.963,
+     38.885
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Göcek, Türkiye",
+   "lat": 36.7533,
+   "lng": 28.942,
+   "mode": "sea",
+   "path": [
+    [
+     28.963,
+     38.885
+    ],
+    [
+     28.942,
+     36.7533
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Didim, Türkiye",
+   "lat": 37.3373,
+   "lng": 27.264,
+   "mode": "sea",
+   "path": [
+    [
+     28.942,
+     36.7533
+    ],
+    [
+     27.264,
+     37.3373
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Marina Day, Greek Isles",
+   "lat": 38.3767,
+   "lng": 20.685,
+   "mode": "sea",
+   "path": [
+    [
+     27.264,
+     37.3373
+    ],
+    [
+     20.685,
+     38.3767
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Mykonos, Greece",
+   "lat": 37.4661,
+   "lng": 25.3229,
+   "mode": "sea",
+   "path": [
+    [
+     20.685,
+     38.3767
+    ],
+    [
+     25.3229,
+     37.4661
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Hydra, Greece",
+   "lat": 37.3503,
+   "lng": 23.4653,
+   "mode": "sea",
+   "path": [
+    [
+     25.3229,
+     37.4661
+    ],
+    [
+     23.4653,
+     37.3503
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "mode": "sea",
+   "path": [
+    [
+     23.4653,
+     37.3503
+    ],
+    [
+     23.6359,
+     37.9382
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

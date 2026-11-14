@@ -1,0 +1,139 @@
+{
+ "id": "four-seasons-i-athens-round-trip-antiparos-mykonos-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Greek Isles featuring Antiparos & Mykonos aboard Four Seasons I",
+ "subtitle": "5 nights · Athens round trip · Four Seasons I",
+ "days": {
+  "1": "Athens",
+  "2": "Antiparos, Nisos Antiparos",
+  "3": "Marina day, Greek Isles",
+  "None": "Mykonos",
+  "5": "Turgutreis",
+  "6": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Antiparos, Greece",
+   "lat": 37,
+   "lng": 25.05,
+   "mode": "sea",
+   "path": [
+    [
+     23.6359,
+     37.9382
+    ],
+    [
+     25.05,
+     37
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Greek Isles",
+   "lat": 38.3767,
+   "lng": 20.685,
+   "mode": "sea",
+   "path": [
+    [
+     25.05,
+     37
+    ],
+    [
+     20.685,
+     38.3767
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Mykonos, Greece",
+   "lat": 37.4661,
+   "lng": 25.3229,
+   "mode": "sea",
+   "path": [
+    [
+     20.685,
+     38.3767
+    ],
+    [
+     25.3229,
+     37.4661
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Turgutreis, Türkiye",
+   "lat": 37.0067,
+   "lng": 27.2572,
+   "mode": "sea",
+   "path": [
+    [
+     25.3229,
+     37.4661
+    ],
+    [
+     27.2572,
+     37.0067
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "mode": "sea",
+   "path": [
+    [
+     27.2572,
+     37.0067
+    ],
+    [
+     23.6359,
+     37.9382
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

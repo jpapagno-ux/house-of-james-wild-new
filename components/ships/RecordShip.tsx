@@ -8,7 +8,7 @@ import { GalleryMosaic } from "@/components/record/Frame";
 import { offersFor } from "@/lib/content/offers/offers";
 import { absoluteUrl } from "@/lib/seo";
 import { filmSchema, type ShortFilm } from "@/lib/content/films";
-import { cabinFrom, cruiseOnly, factOf, nightsLabel, packages, priceLine, pricedCabins, publicNote, rateBasisOf, routeOf, undash, type ShipRecord } from "@/lib/content/ships/types";
+import { cabinFrom, cruiseOnly, factOf, nightsLabel, packages, priceLine, pricedCabins, publicNote, rateBasisOf, routeOf, undash, type ShipRecord, fareUnitOf } from "@/lib/content/ships/types";
 import { shipPath, waterFor, type ShipEntry } from "@/lib/content/ships";
 import { shipMap } from "@/lib/content/ships/maps";
 import type { TerrainFlyoverProps } from "@/components/maps/terrain/TerrainFlyover";
@@ -83,6 +83,8 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
   // The fleet is the operator's when the brand line only restyles her own name ("Galaxy Alya", "Galapagos Horizon").
   const fleetName = s.name.split(/\s+/).some((w) => w.length > 3 && s.brandLine.includes(w)) ? s.operator : s.brandLine.replace(/^an?\s+/i, "");
   const published = (s.published?.length ?? 0) > 0;
+  const unit = fareUnitOf(s);
+  const bySuite = s.fareUnit === "suite";
   const glanceBasis = basis === "per-night" && price.kind === "cruise" ? "per person for the voyage, two sharing, plus tax" : price.basis;
 
   // Five stops (James, 2 Nov 2026): the overview and why-we-chose-her read as The Ship; cabins and
@@ -120,11 +122,11 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
   const oneFare = cruise.length > 0 && cruise.every((d) => Object.keys(d.prices).every((k) => !s.cabins.some((c) => k === c.type || k.startsWith(`${c.type} (`))));
   const cabinIntro = basis === "per-night"
     ? `${cabinCount} cabins${guests ? ` for ${guests} guests` : ""}. Rates are published per person per night, double occupancy, plus tax.`
-    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")}${/adults?$/.test(guests) ? "" : " guests"}` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? `${s.operator} publishes no fare by cabin; ask us for yours.` : published ? `${s.operator} publishes one fare per route, not by cabin: see Dates & rates, and James confirms the fare for your cabin.` : s.monthly?.length ? `Fares from, voyage by voyage, are under Dates & rates; ${s.operator} quotes fares by cabin in its booking tool, and James confirms yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : (s.charterRates?.length || s.cabinFrom) ? `${s.operator} publishes a rate for the whole yacht${s.cabinFrom ? " and a from rate per cabin" : ""}, not by cabin type: see Dates & rates.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
+    : `${cabinCount} ${cabinWord}${guests ? ` for ${guests.replace(/\s*\(.*?\)/, "").replace(/^Up to/, "up to")}${/adults?$/.test(guests) ? "" : " guests"}` : ""}. ${anyCabinFrom ? "Fares are the lowest published cruise fare per person for each cabin across the seasons below." : cruise.length ? (bySuite ? `${s.operator} prices each suite inside each sailing; ask us for the fare on your dates.` : `${s.operator} publishes no fare by cabin; ask us for yours.`) : published ? `${s.operator} publishes one fare per route, not by cabin: see Dates & rates, and James confirms the fare for your cabin.` : s.monthly?.length ? `Fares from, voyage by voyage, are under Dates & rates; ${s.operator} quotes fares by cabin in its booking tool, and James confirms yours.` : journeys.length ? `Rates: ask us. ${s.operator} publishes no cruise-only fare for her.` : (s.charterRates?.length || s.cabinFrom) ? `${s.operator} publishes a rate for the whole yacht${s.cabinFrom ? " and a from rate per cabin" : ""}, not by cabin type: see Dates & rates.` : `Rates: ask us. ${s.operator} publishes no fares for her.`}`;
   const datesIntro = basis === "per-night"
     ? "Every published sailing by month, with its length and the fare per person for the voyage."
     : published && cruise.length ? `The departures ${s.operator}'s booking engine showed, with the fare ${s.fareBasis ?? "per person"}; below them, every fare it publishes by year and length.`
-    : oneFare ? "Only the lowest published fare is shown below, per person, two sharing; James confirms the fare for your cabin and dates."
+    : oneFare ? (bySuite ? "The lowest published fare for each sailing is shown below, per suite for the whole voyage; James confirms the fare for your suite and dates." : "Only the lowest published fare is shown below, per person, two sharing; James confirms the fare for your cabin and dates.")
     : cruise.length ? (cruise.some((d) => d.dateTo) ? `Cruise fares by season as ${s.operator} publishes them, per person for each cabin type.` : "Every published departure by month, with the fare per person for each cabin type.")
       : `${s.operator} publishes no cruise-only fare for ${s.name}: a private charter is priced on enquiry, and her cabins are also sold inside ${s.operator} land and cruise journeys, listed below with their full-journey fares.`;
 
@@ -152,7 +154,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
   const entrance = ef ? shipEntrance({
     ef, name: s.name, path, planHref: plan, pathway: s.pathway, proof: s.proofLine ? t(s.proofLine).split(" · ")[0] : null,
     line: t(`${kindLabel(s.type)} · ${s.waters}, ${s.country}`),
-    priceLine: price.kind === "cruise" ? `From ${price.amount} per person` : null,
+    priceLine: price.kind === "cruise" ? `From ${price.amount} ${unit.long}` : null,
     closeFacts: [guests ? `${guests.replace(/^Up to/, "Up to")} guests` : null, nightsLabel(s), t(route)].filter(Boolean) as string[],
     absolute: absoluteUrl,
   }) : null;
@@ -179,7 +181,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
         faqs: s.faqs.map(([q, a]) => [t(q), t(a)] as [string, string]),
         faqTitle: `What Else Should You Know About ${s.name}?`,
         host: { key: `voyage:${s.slug}`, name: s.name },
-        action: { price: price.kind === "cruise" ? price.amount : undefined, basis: basis === "per-night" ? "pp, voyage" : "pp, cruise", cta: "Plan with James", href: plan, house: true },
+        action: { price: price.kind === "cruise" ? price.amount : undefined, basis: bySuite ? "per suite, voyage" : basis === "per-night" ? "pp, voyage" : "pp, cruise", cta: "Plan with James", href: plan, house: true },
         crumbs,
         jsonld,
         ef: entrance,
@@ -222,7 +224,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
           cabins={s.cabins.map((c) => ({ ...c, type: c.type, features: c.features.map(t), from: cabinFrom(s, c.type) }))}
           decks={s.deckPlans}
           credit={credit}
-          basis={basis === "per-night" ? "per person, per night" : "per person, double"}
+          basis={bySuite ? "per suite, per voyage" : basis === "per-night" ? "per person, per night" : "per person, double"}
           cabinTitle="Cabins"
           deckTitle="Deck plan"
           heads={{
@@ -290,7 +292,7 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
                 const flags = offers.flatMap((o) => (o.sailingsUntil || o.departure) ? [{ id: o.id, short: o.flag ?? (o.program === "Final Call" ? "Final Call" : "Offer"), sailingsUntil: o.sailingsUntil, departure: o.departure }] : []);
                 const byCabin = dd.cabins.length > 1;
                 return <>
-                  <SailingTable ship={s.name} data={dd} flags={flags} note={note} openMonths={dd.sailings.length > 40 ? 1 : 2} />
+                  <SailingTable ship={s.name} data={dd} flags={flags} note={note} unit={unit.long} openMonths={dd.sailings.length > 40 ? 1 : 2} />
                   {byCabin && (
                     <details className="mt-8 border-t ledger-rule pt-4">
                       <summary className="cursor-pointer list-none [&::-webkit-details-marker]:hidden inline-flex items-center min-h-[44px] text-[12px] tracking-[0.16em] uppercase underline underline-offset-4">Fares by cabin and season</summary>

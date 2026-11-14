@@ -1,0 +1,103 @@
+{
+ "id": "four-seasons-i-nice-to-monte-carlo-4n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Nice to Monte Carlo: Ligurian & French Harbours aboard Four Seasons I",
+ "subtitle": "4 nights · Nice to Monte Carlo · Four Seasons I",
+ "days": {
+  "1": "Nice",
+  "None": "Saint-Raphaël",
+  "4": "Marina day, Italian Riviera",
+  "5": "Monte Carlo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice, France",
+   "lat": 43.6939,
+   "lng": 7.2862,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Saint-Raphaël, France",
+   "lat": 43.4225,
+   "lng": 6.7648,
+   "mode": "sea",
+   "path": [
+    [
+     7.2862,
+     43.6939
+    ],
+    [
+     6.7648,
+     43.4225
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     6.7648,
+     43.4225
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     7.4294,
+     43.7358
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

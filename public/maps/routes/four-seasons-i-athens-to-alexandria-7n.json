@@ -1,0 +1,156 @@
+{
+ "id": "four-seasons-i-athens-to-alexandria-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Grand Mediterranean featuring Alexandria & Bodrum aboard Four Seasons I",
+ "subtitle": "7 nights · Athens to Alexandria · Four Seasons I",
+ "days": {
+  "1": "Athens",
+  "2": "Pátmos",
+  "3": "Marina day, Turkish Riviera",
+  "None": "Alexandria",
+  "5": "At sea",
+  "6": "Marassi Marina (El Alamein)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens, Greece",
+   "lat": 37.9382,
+   "lng": 23.6359,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Patmos, Greece",
+   "lat": 37.3236,
+   "lng": 26.5447,
+   "mode": "sea",
+   "path": [
+    [
+     23.6359,
+     37.9382
+    ],
+    [
+     26.5447,
+     37.3236
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Marina Day, Turkish Riviera",
+   "lat": 36.9883,
+   "lng": 27.58,
+   "mode": "sea",
+   "path": [
+    [
+     26.5447,
+     37.3236
+    ],
+    [
+     27.58,
+     36.9883
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Bodrum, Türkiye",
+   "lat": 37.0322,
+   "lng": 27.425,
+   "mode": "sea",
+   "path": [
+    [
+     27.58,
+     36.9883
+    ],
+    [
+     27.425,
+     37.0322
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Mediterranean Sea",
+   "lat": 33.923,
+   "lng": 28.241,
+   "mode": "sea",
+   "path": [
+    [
+     27.425,
+     37.0322
+    ],
+    [
+     28.241,
+     33.923
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Marassi Marina, Egypt",
+   "lat": 30.8133,
+   "lng": 29.057,
+   "mode": "sea",
+   "path": [
+    [
+     28.241,
+     33.923
+    ],
+    [
+     29.057,
+     30.8133
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Alexandria, Egypt",
+   "lat": 31.1934,
+   "lng": 29.879,
+   "mode": "sea",
+   "path": [
+    [
+     29.057,
+     30.8133
+    ],
+    [
+     29.879,
+     31.1934
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "id": "four-seasons-i-monte-carlo-to-palma-de-mallorca-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Monaco to Spain: Rivieras to the Balearics aboard Four Seasons I",
+ "subtitle": "5 nights · Monte Carlo to Palma de Mallorca · Four Seasons I",
+ "days": {
+  "1": "Monte Carlo",
+  "None": "Saint-Tropez",
+  "4": "Marina day, French Riviera",
+  "5": "Palam�s",
+  "6": "Palma de Mallorca"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "kind": "port"
+  },
+  {
+   "day": null,
+   "name": "Saint-Tropez, France",
+   "lat": 43.2716,
+   "lng": 6.6356,
+   "mode": "sea",
+   "path": [
+    [
+     7.4294,
+     43.7358
+    ],
+    [
+     6.6356,
+     43.2716
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marina Day, French Riviera",
+   "lat": 42.6983,
+   "lng": 9.295,
+   "mode": "sea",
+   "path": [
+    [
+     6.6356,
+     43.2716
+    ],
+    [
+     9.295,
+     42.6983
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Palamós, Spain",
+   "lat": 41.8462,
+   "lng": 3.1293,
+   "mode": "sea",
+   "path": [
+    [
+     9.295,
+     42.6983
+    ],
+    [
+     3.1293,
+     41.8462
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Palma de Mallorca, Spain",
+   "lat": 39.5531,
+   "lng": 2.6266,
+   "mode": "sea",
+   "path": [
+    [
+     3.1293,
+     41.8462
+    ],
+    [
+     2.6266,
+     39.5531
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

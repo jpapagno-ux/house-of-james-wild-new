@@ -132,7 +132,7 @@ function shipNext(d: ShipRecord, plan: string): NextSailing {
   // a cruise shopper reads the date, the length and the fare per person (James, 11 Nov 2026: "so cruise shoppers see the facts")
   const n = dep.dateTo ? nightsBetween(dep.date, dep.dateTo) : null;
   // a season band (one fare for any sailing starting in a window over two weeks long) has no length of its own
-  return { date: `${fmt(dep.date)}${n && n > 0 && n <= 15 ? ` · ${n} nights` : ""}`, from: low ? `${usd(low)} pp` : undefined, href: `${plan}&date=${encodeURIComponent(dep.date)}` };
+  return { date: `${fmt(dep.date)}${n && n > 0 && n <= 15 ? ` · ${n} nights` : ""}`, from: low ? `${usd(low)} ${d.fareUnit === "suite" ? "per suite" : "pp"}` : undefined, href: `${plan}&date=${encodeURIComponent(dep.date)}` };
 }
 
 /** The cruise facts for the night panel, in the order a cruise shopper asks them: how long, from where, what it costs,
@@ -146,7 +146,7 @@ function cruiseGlance(d: ShipRecord): [string, string][] {
   const first = (d.itineraries ?? []).find((i) => i.days.length)?.days[0];
   if (first) out.push(["Sails from", placeName(first.place)]);
   const fares = deps.map((x) => lowFare(x.prices)).filter((n): n is number => n !== null);
-  if (fares.length) out.push(["Fares from", `${usd(Math.min(...fares))} pp`]);
+  if (fares.length) out.push(["Fares from", `${usd(Math.min(...fares))} ${d.fareUnit === "suite" ? "per suite" : "pp"}`]);
   const guests = (d.facts ?? []).find(([k]) => /^guests?$/i.test(k))?.[1];
   if (guests && short(guests, 14)) out.push(["Guests", guests]);
   const days = (d.itineraries ?? []).find((i) => i.days.length)?.days ?? [];

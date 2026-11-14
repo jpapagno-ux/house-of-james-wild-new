@@ -1,0 +1,193 @@
+{
+ "id": "four-seasons-i-valletta-to-monte-carlo-9n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "The Rivieras featuring St. Julian’s & Positano aboard Four Seasons I",
+ "subtitle": "9 nights · Valletta to Monte Carlo · Four Seasons I",
+ "days": {
+  "1": "Valletta",
+  "2": "St Julian's",
+  "3": "At sea",
+  "4": "Positano",
+  "5": "Ostia (Rome), Italy",
+  "6": "Marina day, Italian Riviera",
+  "None": "Cannes",
+  "9": "L'Ile-Rousse, Corsica",
+  "10": "Monte Carlo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Valletta, Malta",
+   "lat": 35.8902,
+   "lng": 14.5087,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "St Julian's, Malta",
+   "lat": 35.9199,
+   "lng": 14.4877,
+   "mode": "sea",
+   "path": [
+    [
+     14.5087,
+     35.8902
+    ],
+    [
+     14.4877,
+     35.9199
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Tyrrhenian Sea",
+   "lat": 38.274,
+   "lng": 14.487,
+   "mode": "sea",
+   "path": [
+    [
+     14.4877,
+     35.9199
+    ],
+    [
+     14.487,
+     38.274
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Positano, Italy",
+   "lat": 40.6273,
+   "lng": 14.4862,
+   "mode": "sea",
+   "path": [
+    [
+     14.487,
+     38.274
+    ],
+    [
+     14.4862,
+     40.6273
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Ostia (Rome), Italy",
+   "lat": 41.733,
+   "lng": 12.283,
+   "mode": "sea",
+   "path": [
+    [
+     14.4862,
+     40.6273
+    ],
+    [
+     12.283,
+     41.733
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Marina Day, Italian Riviera",
+   "lat": 38.9033,
+   "lng": 16.9117,
+   "mode": "sea",
+   "path": [
+    [
+     12.283,
+     41.733
+    ],
+    [
+     16.9117,
+     38.9033
+    ]
+   ]
+  },
+  {
+   "day": null,
+   "name": "Cannes, France",
+   "lat": 43.5469,
+   "lng": 7.0146,
+   "mode": "sea",
+   "path": [
+    [
+     16.9117,
+     38.9033
+    ],
+    [
+     7.0146,
+     43.5469
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "L'Île-Rousse, Corsica, France",
+   "lat": 42.6397,
+   "lng": 8.9358,
+   "mode": "sea",
+   "path": [
+    [
+     7.0146,
+     43.5469
+    ],
+    [
+     8.9358,
+     42.6397
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.7358,
+   "lng": 7.4294,
+   "mode": "sea",
+   "path": [
+    [
+     8.9358,
+     42.6397
+    ],
+    [
+     7.4294,
+     43.7358
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

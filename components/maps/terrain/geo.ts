@@ -21,6 +21,32 @@ const AIR = new Set(["air", "flight", "plane", "fly"]);
 /** Whether the leg arriving at this stop is flown (same vocabulary as the SVG chart engine's MODE table). */
 export const isAir = (s: Pick<TerrainStop, "mode">) => !!s.mode && AIR.has(s.mode.toLowerCase());
 
+/** The stops the journey actually moves among, for framing the camera (James, 14 Nov 2026: "zoom in to the locations";
+ *  a voyage that begins with a flight from a far city was framing the whole ocean and leaving the islands a dot).
+ *  A stop is left out of the frame only when the traveller flies both to and from it (or it is the first or last stop
+ *  and joined by a flight) and it lies far outside the cluster of the rest: more than three times the median distance
+ *  from the median point, and at least 150 km. Evenly spread routes (a crossing) keep every stop. The route
+ *  itself is untouched: only the camera's frame is. */
+export function framedStops<T extends TerrainStop>(stops: T[]): T[] {
+  if (stops.length < 4) return stops;
+  const med = (xs: number[]) => { const a = [...xs].sort((x, y) => x - y); const m = a.length >> 1; return a.length % 2 ? a[m] : (a[m - 1] + a[m]) / 2; };
+  const cx = med(stops.map((s) => s.lng)), cy = med(stops.map((s) => s.lat));
+  const km = (s: TerrainStop) => { const dy = (s.lat - cy) * 111.2, dx = (s.lng - cx) * 111.2 * Math.cos((cy * Math.PI) / 180); return Math.hypot(dx, dy); };
+  const d = stops.map(km), limit = Math.max(3 * med(d), 150);
+  // Only a place the traveller flies to or from is ever left out: a port of call always stays in frame, however far.
+  const flownOnly = (i: number) => (i === 0 || isAir(stops[i])) && (i === stops.length - 1 || isAir(stops[i + 1])) && (stops.length > 1);
+  const kept = stops.filter((_, i) => !(d[i] > limit && flownOnly(i)));
+  return kept.length >= 3 ? kept : stops;
+}
+/** Bounds for the camera: the framed stops and their paths, leaving out the long leg that arrives from a far outlier. */
+export function frameBounds(stops: TerrainStop[]): [LngLat, LngLat] {
+  const kept = framedStops(stops);
+  if (kept.length === stops.length) return boundsOf(stops);
+  const far = new Set(stops.filter((s) => !kept.includes(s)));
+  // A kept stop reached straight from a far one keeps its pin but not the inbound path.
+  return boundsOf(kept.map((s) => { const i = stops.indexOf(s); return i > 0 && far.has(stops[i - 1]) ? { ...s, path: undefined } : s; }));
+}
+
 /** A gentle great-circle arc from a to b, n segments (slerp on the sphere). */
 export function arcOf(a: LngLat, b: LngLat, n = 48): LngLat[] {
   const r = Math.PI / 180, v = ([x, y]: LngLat) => [Math.cos(y * r) * Math.cos(x * r), Math.cos(y * r) * Math.sin(x * r), Math.sin(y * r)];

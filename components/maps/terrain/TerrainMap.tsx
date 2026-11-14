@@ -8,7 +8,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AttributionControl, Map as MLMap, Marker, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type LngLatLike, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_SATELLITE, TILE_CACHE, fontOf, groundStyle, houseStyle, pixelRatioFor, redact, satelliteIndex, satelliteLayer, viewOps } from "./style";
-import { boundsOf, clampSeabed, dayLabel, headingAt, isAir, legsOf, lengthKm, lngLat, partOf, smoothLine, cutFor, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
+import { boundsOf, frameBounds, clampSeabed, dayLabel, headingAt, isAir, legsOf, lengthKm, lngLat, partOf, smoothLine, cutFor, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
 import { CRIMSON, HOUSE } from "@/lib/palette";
 
 const KEY = process.env.NEXT_PUBLIC_MAPTILER_KEY || "";
@@ -164,7 +164,7 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         if (style.glyphs) layers.push({ id: "jw-stops-label", type: "symbol", source: "jw-stops", layout: { "text-field": ["get", "name"], "text-font": font, "text-size": 12, "text-offset": [0, 1.1], "text-anchor": "top", "text-optional": true }, paint: { "text-color": HOUSE.graphite, "text-halo-color": HOUSE.paper, "text-halo-width": 1.6 } });
         style.terrain = { source: "jw-dem", exaggeration };
 
-        const b = boundsOf(first);
+        const b = frameBounds(first);
         const single = b[0][0] === b[1][0] && b[0][1] === b[1][1];
         map = new MLMap({
           container: box.current, style,
@@ -242,13 +242,13 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
   const legZoom = useCallback(() => {
     const m = mapRef.current;
     if (!m) return 11;
-    const z = m.cameraForBounds(boundsOf(stops), { padding: 40 })?.zoom ?? 10;
-    return Math.min(kind === "points" ? 13 : z + 1.5, 12.5);
+    const z = m.cameraForBounds(frameBounds(stops), { padding: 40 })?.zoom ?? 10;
+    return Math.min(kind === "points" ? 13 : z + 1.8, 13); // closer at each stop, so the island's own shape fills the frame
   }, [stops, kind]);
   /** The whole route in frame: fitted to the routed lanes (boundsOf takes in every path), not just the stops. */
   const overviewCam = useCallback((pitch = HOME.pitch, bearing = HOME.bearing) => {
     const m = mapRef.current!;
-    const b = boundsOf(stops);
+    const b = frameBounds(stops);
     if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) return { center: lngLat(stops[0]), zoom: 12, pitch, bearing };
     const w = box.current?.clientWidth ?? 800;
     const c = m.cameraForBounds(b, { padding: w < 600 ? 28 : 64, bearing });

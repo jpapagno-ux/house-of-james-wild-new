@@ -19,7 +19,9 @@ export default function SignatureEdition({ ship, tv, night, ink }: { ship: ShipR
   // Her signature suites: the largest with a picture, biggest first (at most four).
   const suites = ship.cabins.filter((c) => c.image && sqm(c.size) >= 140).sort((a, b) => sqm(b.size) - sqm(a.size)).slice(0, 4);
   const why = tv.whyItBelongs.length ? tv.whyItBelongs : ship.why.slice(0, 4);
-  const stays = (slugs: string[]) => slugs.map((s) => stayBySlug(s)).filter((s): s is NonNullable<typeof s> => !!s);
+  // The row lists house stays as stay:<slug> (Airtable before_refs / beyond_refs); a bare slug is read too. A stay shows
+  // only once its own page is live.
+  const stays = (refs: string[]) => refs.map((r) => stayBySlug(r.trim().replace(/^stay:/, ""))).filter((s): s is NonNullable<typeof s> => !!s);
   const before = stays(tv.before), beyond = stays(tv.beyond);
   const mark = ship.gallery.find((g) => /night/i.test(g.alt)) ?? ship.gallery[0] ?? ship.hero;
   const deep = `color-mix(in srgb, ${night} 82%, #000)`;

@@ -24,7 +24,8 @@ import EitherSide from "@/components/ships/EitherSide";
 import { PassportStamp } from "@/components/ledger/VolumeKit";
 import { offersFor, offerEnd } from "@/lib/content/offers/offers";
 import SignatureEdition from "@/components/ships/SignatureEdition";
-import { timelessVoyageFor, type TimelessVoyage } from "@/lib/content/timeless-voyages";
+import { savingFor, timelessVoyageFor, type TimelessVoyage } from "@/lib/content/timeless-voyages";
+import TimelessStamp, { SavingNote, SavingStamp } from "@/components/ships/TimelessStamp";
 
 // The ship page body, shared by /voyages/ships/<ship> and the opening previews (app/preview/voyages/*).
 export default async function ShipPageBody({ slug, opening: given, surface: givenSurface, tones: givenTones, timeless }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones; /** A draft Timeless Voyages row, for the noindex previews only. */ timeless?: TimelessVoyage }) {
@@ -70,6 +71,11 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
   const itineraryTerrain = t3d?.inFrame && terrainProps ? terrainProps : undefined;
   // The house opening and tones on every ship page (James, 9 Nov 2026: "deploying all cruises with the new approved blend
   // design"), built from the record (lib/content/opening/build.ts). The Exceptional Few keep their own entrance.
+  // Timeless Voyages (James, 13 Nov 2026): her row brings a stamp for the hero and, while its book-by date has not
+  // passed, the operator's saving in the operator's own words. A draft row is only ever passed by the noindex previews.
+  const tv = timeless ?? timelessVoyageFor(e.slug);
+  const today = new Date().toISOString().slice(0, 10);
+  const saving = timeless ? (timeless.savings && (!timeless.savings.bookBy || timeless.savings.bookBy >= today) ? timeless.savings : null) : savingFor(e.slug);
   const auto = !opening && !exceptionalFewForVessel(e.slug) ? shipOpening(e) : null;
   if (auto) {
     const { next, ...o } = auto;
@@ -84,9 +90,12 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
     const ends = live.map((x) => offerEnd(x)).sort()[0];
     const endWords = ends ? new Date(`${ends}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" }) : "";
     const book = live.some((x) => x.bookingWindow);
-    const badge = sailed || live.length ? (
+    const tvStamp = tv?.stamp && !(sailed && tv.stamp === "Founder sailed") ? tv : null;
+    const badge = sailed || live.length || tvStamp || saving ? (
       <span className="inline-flex flex-wrap items-center gap-4">
         {sailed && <PassportStamp volume="voyages" top="Founder sailed" date={year ?? (rec0.proofLine ?? "").match(/\b(\d{1,2}) (days|nights)\b/)?.[0] ?? "Aboard"} place={rec0.name} size={120} rotate={-4} ink={ink} />}
+        {tvStamp && <TimelessStamp tv={tvStamp} shipName={rec0.name} size={120} rotate={-3} ink={ink} backing />}
+        {saving && <SavingStamp saving={saving} size={120} ink={ink} backing />}
         {live.length > 0 && <a href="#offers" aria-label={`${live.length} live ${live.length === 1 ? "offer" : "offers"} on ${rec0.name}`}><PassportStamp volume="voyages" top="On the Horizon" date="Savings" place={endWords ? `${book ? "Book by" : "Until"} ${endWords}` : rec0.operator} size={120} rotate={3} ink={ink} /></a>}
       </span>
     ) : undefined;
@@ -102,8 +111,7 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
   const either = <EitherSide slug={e.slug} waters={e.waters} ship={rec.name} voyage={firstVoyage} />;
   // Timeless Voyages · Signature Edition (James, 13 Nov 2026): switched on by her published Timeless Voyages row. Never on
   // an Exceptional Few ship, whose own entrance always wins.
-  const tv = timeless ?? timelessVoyageFor(e.slug);
   const sigPalette = tv?.signatureEdition && !ef ? (shipOpening(e)?.palette ?? null) : null;
   const signature = tv && sigPalette ? <SignatureEdition ship={rec} tv={tv} night={sigPalette.night} ink={sigPalette.sand ?? sigPalette.hi} /> : null;
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}{signature}{glance}</>, after: <>{either}{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={ef} />;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}{saving && !ef && <SavingNote saving={saving} operator={rec.operator} />}{signature}{glance}</>, after: <>{either}{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={ef} />;
 }

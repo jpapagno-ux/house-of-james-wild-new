@@ -18,13 +18,13 @@
         "She winters in the Caribbean and the Bahamas and summers in the Mediterranean, with sailings published to October 2028. Fares are per suite, for the whole voyage. Book the suite; the islands come with it."
       ],
       "before": [
-        "six-senses-rome",
-        "one-only-kea-island"
+        "stay:six-senses-rome",
+        "stay:one-only-kea-island"
       ],
       "beyond": [
-        "jk-place-capri",
-        "katikies-santorini",
-        "baymanhi-exuma"
+        "stay:jk-place-capri",
+        "stay:katikies-santorini",
+        "stay:baymanhi-exuma"
       ],
       "stamp": "Signature Edition",
       "savings": null

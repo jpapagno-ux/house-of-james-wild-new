@@ -1,0 +1,151 @@
+{
+ "id": "amangati-oranjestad-to-bridgetown-6n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Oranjestad to Bridgetown, 6 nights aboard Amangati",
+ "subtitle": "6 nights · Oranjestad to Bridgetown · Amangati",
+ "days": {
+  "1": "Oranjestad",
+  "2": "Willemstad",
+  "3": "Kralendijk",
+  "4": "At Sea",
+  "5": "Saint George's",
+  "6": "Tobago Cays",
+  "7": "Bridgetown"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Oranjestad, Aruba",
+   "lat": 12.5177,
+   "lng": -70.0447,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Willemstad, Curaçao",
+   "lat": 12.104,
+   "lng": -68.9371,
+   "mode": "sea",
+   "path": [
+    [
+     -70.0447,
+     12.5177
+    ],
+    [
+     -68.9371,
+     12.104
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Kralendijk, Bonaire",
+   "lat": 12.15,
+   "lng": -68.28,
+   "mode": "sea",
+   "path": [
+    [
+     -68.9371,
+     12.104
+    ],
+    [
+     -68.28,
+     12.15
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "At Sea",
+   "lat": 12.097,
+   "lng": -65.018,
+   "mode": "sea",
+   "path": [
+    [
+     -68.28,
+     12.15
+    ],
+    [
+     -65.018,
+     12.097
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Saint George's, Grenada",
+   "lat": 12.0448,
+   "lng": -61.7567,
+   "mode": "sea",
+   "path": [
+    [
+     -65.018,
+     12.097
+    ],
+    [
+     -61.7567,
+     12.0448
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Tobago Cays, Saint Vincent and the Grenadines",
+   "lat": 12.632992,
+   "lng": -61.349362,
+   "mode": "sea",
+   "path": [
+    [
+     -61.7567,
+     12.0448
+    ],
+    [
+     -61.349362,
+     12.632992
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Bridgetown, Barbados",
+   "lat": 13.1095,
+   "lng": -59.6346,
+   "mode": "sea",
+   "path": [
+    [
+     -61.349362,
+     12.632992
+    ],
+    [
+     -59.6346,
+     13.1095
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Lesser Antilles",
+    "lat": 15.3,
+    "lng": -61.0,
+    "kind": "region"
+   }
+  ]
+ }
+}

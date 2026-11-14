@@ -1,0 +1,193 @@
+{
+ "id": "amangati-athens-to-bari-8n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Athens (Piraeus) to Bari, 8 nights aboard Amangati",
+ "subtitle": "8 nights · Athens to Bari · Amangati",
+ "days": {
+  "1": "Athens",
+  "2": "Hydra",
+  "3": "Monemvasia",
+  "4": "Kalamata",
+  "5": "Ithaca",
+  "6": "Corfu",
+  "7": "Dubrovnik",
+  "8": "Kotor",
+  "9": "Bari"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens (Piraeus), Greece",
+   "lat": 37.94497703533731,
+   "lng": 23.642479859381044,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Hydra, Greece",
+   "lat": 37.350815,
+   "lng": 23.466582,
+   "mode": "sea",
+   "path": [
+    [
+     23.642479859381044,
+     37.94497703533731
+    ],
+    [
+     23.466582,
+     37.350815
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Monemvasia, Greece",
+   "lat": 36.6925587197965,
+   "lng": 23.0435942996587,
+   "mode": "sea",
+   "path": [
+    [
+     23.466582,
+     37.350815
+    ],
+    [
+     23.0435942996587,
+     36.6925587197965
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Kalamata, Greece",
+   "lat": 37.0198352219234,
+   "lng": 22.1168793018243,
+   "mode": "sea",
+   "path": [
+    [
+     23.0435942996587,
+     36.6925587197965
+    ],
+    [
+     22.1168793018243,
+     37.0198352219234
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Ithaca, Greece",
+   "lat": 38.3694,
+   "lng": 20.7137,
+   "mode": "sea",
+   "path": [
+    [
+     22.1168793018243,
+     37.0198352219234
+    ],
+    [
+     20.7137,
+     38.3694
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Corfu, Greece",
+   "lat": 39.633056,
+   "lng": 19.902778,
+   "mode": "sea",
+   "path": [
+    [
+     20.7137,
+     38.3694
+    ],
+    [
+     19.902778,
+     39.633056
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Dubrovnik",
+   "lat": 42.66,
+   "lng": 18.085,
+   "mode": "sea",
+   "path": [
+    [
+     19.902778,
+     39.633056
+    ],
+    [
+     18.085,
+     42.66
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Kotor, Montenegro",
+   "lat": 42.42541608,
+   "lng": 18.76715201,
+   "mode": "sea",
+   "path": [
+    [
+     18.085,
+     42.66
+    ],
+    [
+     18.76715201,
+     42.42541608
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Bari, Italy",
+   "lat": 41.1476,
+   "lng": 16.8384,
+   "mode": "sea",
+   "path": [
+    [
+     18.76715201,
+     42.42541608
+    ],
+    [
+     16.8384,
+     41.1476
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

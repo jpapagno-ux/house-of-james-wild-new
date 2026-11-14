@@ -1,0 +1,157 @@
+{
+ "id": "amangati-nice-to-florence-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Nice to Florence (Livorno), 6 nights aboard Amangati",
+ "subtitle": "6 nights · Nice to Florence · Amangati",
+ "days": {
+  "1": "Nice",
+  "2": "San Remo",
+  "3": "Genoa",
+  "4": "Portofino",
+  "5": "Cinque Terre",
+  "6": "Viareggio",
+  "7": "Florence"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "San Remo, Italy",
+   "lat": 43.818991,
+   "lng": 7.784683,
+   "mode": "sea",
+   "path": [
+    [
+     7.288441262587998,
+     43.693410853287936
+    ],
+    [
+     7.784683,
+     43.818991
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Genoa, Italy",
+   "lat": 44.41139853119931,
+   "lng": 8.918566918688722,
+   "mode": "sea",
+   "path": [
+    [
+     7.784683,
+     43.818991
+    ],
+    [
+     8.918566918688722,
+     44.41139853119931
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Portofino, Italy",
+   "lat": 44.304687,
+   "lng": 9.215341,
+   "mode": "sea",
+   "path": [
+    [
+     8.918566918688722,
+     44.41139853119931
+    ],
+    [
+     9.215341,
+     44.304687
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Porto Venere, Italy",
+   "lat": 44.051111,
+   "lng": 9.835965,
+   "mode": "sea",
+   "path": [
+    [
+     9.215341,
+     44.304687
+    ],
+    [
+     9.835965,
+     44.051111
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Viareggio, Italy",
+   "lat": 43.86131,
+   "lng": 10.23811,
+   "mode": "sea",
+   "path": [
+    [
+     9.835965,
+     44.051111
+    ],
+    [
+     10.23811,
+     43.86131
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Florence (Livorno), Italy",
+   "lat": 43.55820999799999,
+   "lng": 10.299809758564743,
+   "mode": "sea",
+   "path": [
+    [
+     10.23811,
+     43.86131
+    ],
+    [
+     10.299809758564743,
+     43.55820999799999
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

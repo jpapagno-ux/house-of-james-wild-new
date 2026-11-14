@@ -1,0 +1,175 @@
+{
+ "id": "amangati-corfu-to-athens-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Corfu to Athens (Piraeus), 7 nights aboard Amangati",
+ "subtitle": "7 nights · Corfu to Athens · Amangati",
+ "days": {
+  "1": "Corfu",
+  "2": "Zakynthos",
+  "3": "Katakolon",
+  "4": "Kalamata",
+  "5": "Monemvasia",
+  "6": "Milos",
+  "7": "Hydra",
+  "8": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Corfu, Greece",
+   "lat": 39.633056,
+   "lng": 19.902778,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Zakynthos, Greece",
+   "lat": 37.781502,
+   "lng": 20.901232,
+   "mode": "sea",
+   "path": [
+    [
+     19.902778,
+     39.633056
+    ],
+    [
+     20.901232,
+     37.781502
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Katakolon, Greece",
+   "lat": 37.646111,
+   "lng": 21.325,
+   "mode": "sea",
+   "path": [
+    [
+     20.901232,
+     37.781502
+    ],
+    [
+     21.325,
+     37.646111
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Kalamata, Greece",
+   "lat": 37.0198352219234,
+   "lng": 22.1168793018243,
+   "mode": "sea",
+   "path": [
+    [
+     21.325,
+     37.646111
+    ],
+    [
+     22.1168793018243,
+     37.0198352219234
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Monemvasia, Greece",
+   "lat": 36.6925587197965,
+   "lng": 23.0435942996587,
+   "mode": "sea",
+   "path": [
+    [
+     22.1168793018243,
+     37.0198352219234
+    ],
+    [
+     23.0435942996587,
+     36.6925587197965
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Milos, Greece",
+   "lat": 36.7219263305503,
+   "lng": 24.44570676,
+   "mode": "sea",
+   "path": [
+    [
+     23.0435942996587,
+     36.6925587197965
+    ],
+    [
+     24.44570676,
+     36.7219263305503
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Hydra, Greece",
+   "lat": 37.350815,
+   "lng": 23.466582,
+   "mode": "sea",
+   "path": [
+    [
+     24.44570676,
+     36.7219263305503
+    ],
+    [
+     23.466582,
+     37.350815
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Athens (Piraeus), Greece",
+   "lat": 37.94497703533731,
+   "lng": 23.642479859381044,
+   "mode": "sea",
+   "path": [
+    [
+     23.466582,
+     37.350815
+    ],
+    [
+     23.642479859381044,
+     37.94497703533731
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

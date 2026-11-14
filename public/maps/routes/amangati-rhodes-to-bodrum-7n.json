@@ -1,0 +1,175 @@
+{
+ "id": "amangati-rhodes-to-bodrum-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Rhodes to Bodrum, 7 nights aboard Amangati",
+ "subtitle": "7 nights · Rhodes to Bodrum · Amangati",
+ "days": {
+  "1": "Rhodes",
+  "2": "Nisyros",
+  "3": "Agios Nikolaos",
+  "4": "Santorini",
+  "5": "Chios",
+  "6": "Kusadasi",
+  "7": "Patmos",
+  "8": "Bodrum"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Rhodes",
+   "lat": 36.451,
+   "lng": 28.227,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Nisyros",
+   "lat": 36.613,
+   "lng": 27.17,
+   "mode": "sea",
+   "path": [
+    [
+     28.227,
+     36.451
+    ],
+    [
+     27.17,
+     36.613
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Agios Nikolaos, Crete",
+   "lat": 35.19,
+   "lng": 25.717,
+   "mode": "sea",
+   "path": [
+    [
+     27.17,
+     36.613
+    ],
+    [
+     25.717,
+     35.19
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Santorini, Greece",
+   "lat": 36.410833,
+   "lng": 25.420833,
+   "mode": "sea",
+   "path": [
+    [
+     25.717,
+     35.19
+    ],
+    [
+     25.420833,
+     36.410833
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Chios, Greece",
+   "lat": 38.3696012758634,
+   "lng": 26.1406705021655,
+   "mode": "sea",
+   "path": [
+    [
+     25.420833,
+     36.410833
+    ],
+    [
+     26.1406705021655,
+     38.3696012758634
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Kuşadası, Turkey",
+   "lat": 37.863148134110205,
+   "lng": 27.255610630407098,
+   "mode": "sea",
+   "path": [
+    [
+     26.1406705021655,
+     38.3696012758634
+    ],
+    [
+     27.255610630407098,
+     37.863148134110205
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Patmos, Greece",
+   "lat": 37.323008,
+   "lng": 26.545973,
+   "mode": "sea",
+   "path": [
+    [
+     27.255610630407098,
+     37.863148134110205
+    ],
+    [
+     26.545973,
+     37.323008
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Bodrum, Turkey",
+   "lat": 37.0249503642893,
+   "lng": 27.43838300415715,
+   "mode": "sea",
+   "path": [
+    [
+     26.545973,
+     37.323008
+    ],
+    [
+     27.43838300415715,
+     37.0249503642893
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "id": "amangati-istanbul-to-athens-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Istanbul to Athens (Piraeus), 7 nights aboard Amangati",
+ "subtitle": "7 nights · Istanbul to Athens · Amangati",
+ "days": {
+  "1": "Istanbul",
+  "2": "Canakkale",
+  "3": "Limnos",
+  "4": "Chios",
+  "5": "Samos",
+  "6": "Kusadasi",
+  "7": "Mykonos",
+  "8": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Istanbul, Turkey",
+   "lat": 41.029037383212014,
+   "lng": 28.987969773017518,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Çanakkale, Turkey",
+   "lat": 40.150748466371134,
+   "lng": 26.40243852522035,
+   "mode": "sea",
+   "path": [
+    [
+     28.987969773017518,
+     41.029037383212014
+    ],
+    [
+     26.40243852522035,
+     40.150748466371134
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Limnos, Greece",
+   "lat": 39.8712,
+   "lng": 25.0534,
+   "mode": "sea",
+   "path": [
+    [
+     26.40243852522035,
+     40.150748466371134
+    ],
+    [
+     25.0534,
+     39.8712
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Chios, Greece",
+   "lat": 38.3696012758634,
+   "lng": 26.1406705021655,
+   "mode": "sea",
+   "path": [
+    [
+     25.0534,
+     39.8712
+    ],
+    [
+     26.1406705021655,
+     38.3696012758634
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Samos, Greece",
+   "lat": 37.755448,
+   "lng": 26.970062,
+   "mode": "sea",
+   "path": [
+    [
+     26.1406705021655,
+     38.3696012758634
+    ],
+    [
+     26.970062,
+     37.755448
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Kuşadası, Turkey",
+   "lat": 37.863148134110205,
+   "lng": 27.255610630407098,
+   "mode": "sea",
+   "path": [
+    [
+     26.970062,
+     37.755448
+    ],
+    [
+     27.255610630407098,
+     37.863148134110205
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Mykonos, Greece",
+   "lat": 37.465764,
+   "lng": 25.319753,
+   "mode": "sea",
+   "path": [
+    [
+     27.255610630407098,
+     37.863148134110205
+    ],
+    [
+     25.319753,
+     37.465764
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Athens (Piraeus), Greece",
+   "lat": 37.94497703533731,
+   "lng": 23.642479859381044,
+   "mode": "sea",
+   "path": [
+    [
+     25.319753,
+     37.465764
+    ],
+    [
+     23.642479859381044,
+     37.94497703533731
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

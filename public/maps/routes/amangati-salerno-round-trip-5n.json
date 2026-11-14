@@ -1,0 +1,139 @@
+{
+ "id": "amangati-salerno-round-trip-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Salerno round trip, 5 nights aboard Amangati",
+ "subtitle": "5 nights · Salerno round trip · Amangati",
+ "days": {
+  "1": "Salerno",
+  "2": "Amalfi",
+  "3": "Capri",
+  "4": "Ischia",
+  "5": "Sorrento",
+  "6": "Salerno"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Salerno",
+   "lat": 40.676,
+   "lng": 14.75,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Amalfi",
+   "lat": 40.634,
+   "lng": 14.602,
+   "mode": "sea",
+   "path": [
+    [
+     14.75,
+     40.676
+    ],
+    [
+     14.602,
+     40.634
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Capri, Italy",
+   "lat": 40.5571,
+   "lng": 14.2423,
+   "mode": "sea",
+   "path": [
+    [
+     14.602,
+     40.634
+    ],
+    [
+     14.2423,
+     40.5571
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Ischia, Italy",
+   "lat": 40.7528578664335,
+   "lng": 13.9098325678411,
+   "mode": "sea",
+   "path": [
+    [
+     14.2423,
+     40.5571
+    ],
+    [
+     13.9098325678411,
+     40.7528578664335
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Sorrento, Italy",
+   "lat": 40.631452,
+   "lng": 14.375299,
+   "mode": "sea",
+   "path": [
+    [
+     13.9098325678411,
+     40.7528578664335
+    ],
+    [
+     14.375299,
+     40.631452
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Salerno",
+   "lat": 40.676,
+   "lng": 14.75,
+   "mode": "sea",
+   "path": [
+    [
+     14.375299,
+     40.631452
+    ],
+    [
+     14.75,
+     40.676
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

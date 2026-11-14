@@ -1,0 +1,139 @@
+{
+ "id": "amangati-nice-round-trip-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Nice round trip, 5 nights aboard Amangati",
+ "subtitle": "5 nights · Nice round trip · Amangati",
+ "days": {
+  "1": "Nice",
+  "2": "Cannes",
+  "3": "Saint Tropez",
+  "4": "Beaulieu",
+  "5": "Beaulieu",
+  "6": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Cannes, France",
+   "lat": 43.541767,
+   "lng": 7.030907,
+   "mode": "sea",
+   "path": [
+    [
+     7.288441262587998,
+     43.693410853287936
+    ],
+    [
+     7.030907,
+     43.541767
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Saint-Tropez, France",
+   "lat": 43.269878,
+   "lng": 6.628618,
+   "mode": "sea",
+   "path": [
+    [
+     7.030907,
+     43.541767
+    ],
+    [
+     6.628618,
+     43.269878
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Beaulieu-sur-Mer, France",
+   "lat": 43.7065,
+   "lng": 7.3389,
+   "mode": "sea",
+   "path": [
+    [
+     6.628618,
+     43.269878
+    ],
+    [
+     7.3389,
+     43.7065
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Beaulieu-sur-Mer, France",
+   "lat": 43.7065,
+   "lng": 7.3389,
+   "mode": "sea",
+   "path": [
+    [
+     7.3389,
+     43.7065
+    ],
+    [
+     7.3389,
+     43.7065
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "mode": "sea",
+   "path": [
+    [
+     7.3389,
+     43.7065
+    ],
+    [
+     7.288441262587998,
+     43.693410853287936
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

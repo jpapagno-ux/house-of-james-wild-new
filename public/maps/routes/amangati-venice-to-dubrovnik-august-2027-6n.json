@@ -1,0 +1,157 @@
+{
+ "id": "amangati-venice-to-dubrovnik-august-2027-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Venice to Dubrovnik, 6 nights, August 2027 aboard Amangati",
+ "subtitle": "6 nights · Venice to Dubrovnik · Amangati",
+ "days": {
+  "1": "Venice",
+  "2": "Chioggia",
+  "3": "Rovinj",
+  "4": "Sibenik",
+  "5": "Korcula",
+  "6": "Split",
+  "7": "Dubrovnik"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Venice, Italy",
+   "lat": 45.4365755828423,
+   "lng": 12.3090697473262,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Chioggia, Italy",
+   "lat": 45.21133675370794,
+   "lng": 12.261271946049137,
+   "mode": "sea",
+   "path": [
+    [
+     12.3090697473262,
+     45.4365755828423
+    ],
+    [
+     12.261271946049137,
+     45.21133675370794
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Rovinj, Croatia",
+   "lat": 45.084915,
+   "lng": 13.634419,
+   "mode": "sea",
+   "path": [
+    [
+     12.261271946049137,
+     45.21133675370794
+    ],
+    [
+     13.634419,
+     45.084915
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Šibenik, Croatia",
+   "lat": 43.730202,
+   "lng": 15.894868,
+   "mode": "sea",
+   "path": [
+    [
+     13.634419,
+     45.084915
+    ],
+    [
+     15.894868,
+     43.730202
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Korčula, Croatia",
+   "lat": 42.9626835362586,
+   "lng": 17.1332952815956,
+   "mode": "sea",
+   "path": [
+    [
+     15.894868,
+     43.730202
+    ],
+    [
+     17.1332952815956,
+     42.9626835362586
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Split, Croatia",
+   "lat": 43.50289633491305,
+   "lng": 16.441754724653073,
+   "mode": "sea",
+   "path": [
+    [
+     17.1332952815956,
+     42.9626835362586
+    ],
+    [
+     16.441754724653073,
+     43.50289633491305
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Dubrovnik",
+   "lat": 42.66,
+   "lng": 18.085,
+   "mode": "sea",
+   "path": [
+    [
+     16.441754724653073,
+     43.50289633491305
+    ],
+    [
+     18.085,
+     42.66
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

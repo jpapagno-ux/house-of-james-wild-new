@@ -1,0 +1,139 @@
+{
+ "id": "amangati-valletta-to-catania-5n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Valletta to Catania, 5 nights aboard Amangati",
+ "subtitle": "5 nights · Valletta to Catania · Amangati",
+ "days": {
+  "1": "Valletta",
+  "2": "Gozo",
+  "3": "Syracuse",
+  "4": "Taormina",
+  "5": "Taormina",
+  "6": "Catania"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Valletta, Malta",
+   "lat": 35.88901052872676,
+   "lng": 14.508053538948033,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Gozo, Malta",
+   "lat": 36.0252799036185,
+   "lng": 14.3001539404202,
+   "mode": "sea",
+   "path": [
+    [
+     14.508053538948033,
+     35.88901052872676
+    ],
+    [
+     14.3001539404202,
+     36.0252799036185
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Syracuse, Sicily, Italy",
+   "lat": 37.062703,
+   "lng": 15.286778,
+   "mode": "sea",
+   "path": [
+    [
+     14.3001539404202,
+     36.0252799036185
+    ],
+    [
+     15.286778,
+     37.062703
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Taormina, Sicily",
+   "lat": 37.835,
+   "lng": 15.276,
+   "mode": "sea",
+   "path": [
+    [
+     15.286778,
+     37.062703
+    ],
+    [
+     15.276,
+     37.835
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Taormina, Sicily",
+   "lat": 37.835,
+   "lng": 15.276,
+   "mode": "sea",
+   "path": [
+    [
+     15.276,
+     37.835
+    ],
+    [
+     15.276,
+     37.835
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Catania, Sicily, Italy",
+   "lat": 37.495999,
+   "lng": 15.095972,
+   "mode": "sea",
+   "path": [
+    [
+     15.276,
+     37.835
+    ],
+    [
+     15.095972,
+     37.495999
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

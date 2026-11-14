@@ -1,0 +1,70 @@
+[
+ {
+  "id": "jwco/voyages/ships/amangati/hero",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/1tQibnGlBdFkPjetwCw3yl/453a08ac1238595ab22bc693f6a48221/Amangati_Exterior_02_2880x1780px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/aerial",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/5godSTySFYXHjlqaYI7bmJ/35448fb90c61ddf48c75fa93ff52d35a/Amangati_Bird_View_02-1890x1167px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/marina",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/oDR31P9hYQ2XBLULBo45e/b3bb2ce221eb2f1afc52dfb5cfb703af/Amangati_Marina_01-2880x1780px__1_.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/spa",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/46w8ieLD2IRwohrGwmRVux/eb6fd6134af625c3e2b3182f12051f59/Amangati_Spa_03_2880x1780px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/pool",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/3iGgrtEKbD1IyRtbXSOjzg/5b44b5a51adeb049ce4d2bc6a454b27e/Amangati_Pool_06-1394x1394px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/alira",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/i2DK1GAKzqrNl3gEiWOJL/4974abef3fef57964707e51c02564470/Amangati_Alira_03_1890x1167px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/aman-grill",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/4htFR7PsstHbPpn91FUOXz/32565c187e9ac9466fc8ab255b01e57d/Amangati_Aman_Grill_03_1890x1167px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/hiori",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/6fuJwDb5AoXU4BBEntIsdO/9c568520a4b034ad989e10c8e928e7d6/Amangati_Asian_Restaurant_-_Enju_and_Hiori_02-1394x1394px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/selora",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/5IRTld3ONLzoBcuUyPpLgX/66e6a501ab5be250e3de5240af4c1ee6/Amangati_Selora_Lounge_and_Marina_02-1394x1394px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/cigar-lounge",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/3CGUNI7j5HKbxnF96AKGll/5300684fc1b46e4bbe47767704502f62/Amangati_Cigar_Lounge_03-1394x1394px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/fitness",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/5GgtoiIUWw6cu4tto3BYMQ/038cb898f7a6df74f955f510eaf7d8e7/Amangati_Fitness_Studio_Exterior_01_1890x1167px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/suite-deluxe",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/iyT6OndjezNKn2RVpq76A/21108053d776105060ce8a0290226a25/Amangati_Deluxe_Suite_03-1400x1245px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/suite-premier",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/2tXagf8BoTq5idPElyYZn0/c44b4b3e176c35bc4e142c79d3f352fc/Amangati_Premier_Suite_01-1400x1245px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/suite-premier-fore",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/4Ot7bLd0QFRCVAJUijdSDf/de90340bfb94bafd32760a63be121124/Voyage-Details-Page-PremierFore-1400x1245px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/suite-signature",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/4y3b7vnd2aSddezZcmN0qo/9f26883dbc891eff58f05a4849561b5b/Amangati_Signature_Suite_03-1400x1245px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/suite-grand",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/75FerS1bfhArQMsGPdNpli/60d6518f45f1e663c57bd487e1d10faf/Amangati_Grand_Suite_07-1400x1245px.jpg"
+ },
+ {
+  "id": "jwco/voyages/ships/amangati/suite-aman",
+  "src": "https://images.ctfassets.net/b72tkjkb31yq/6J2TpSG44eMGgrvzbKF6vk/40eda9b745000a7f84de3dbb72c6ebbd/Amangati_Aman_Suite_Stateroom_02-1400x1245px.jpg"
+ }
+]

@@ -1,0 +1,151 @@
+{
+ "id": "amangati-bridgetown-to-saint-john-s-6n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Bridgetown to Saint John's, 6 nights aboard Amangati",
+ "subtitle": "6 nights · Bridgetown to Saint John's · Amangati",
+ "days": {
+  "1": "Bridgetown",
+  "2": "Soufriere",
+  "3": "Anses d'Arlet",
+  "4": "Marie-Galante",
+  "5": "Portsmouth",
+  "6": "Little Bay",
+  "7": "Saint John's"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Bridgetown, Barbados",
+   "lat": 13.1095,
+   "lng": -59.6346,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Soufrière, Saint Lucia",
+   "lat": 13.855098900234482,
+   "lng": -61.06182580244294,
+   "mode": "sea",
+   "path": [
+    [
+     -59.6346,
+     13.1095
+    ],
+    [
+     -61.06182580244294,
+     13.855098900234482
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Anses d’Arlet, Martinique",
+   "lat": 14.49003971177075,
+   "lng": -61.08121336561399,
+   "mode": "sea",
+   "path": [
+    [
+     -61.06182580244294,
+     13.855098900234482
+    ],
+    [
+     -61.08121336561399,
+     14.49003971177075
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Marie-Galante",
+   "lat": 15.883,
+   "lng": -61.315,
+   "mode": "sea",
+   "path": [
+    [
+     -61.08121336561399,
+     14.49003971177075
+    ],
+    [
+     -61.315,
+     15.883
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Portsmouth, Dominica",
+   "lat": 15.563779,
+   "lng": -61.460275,
+   "mode": "sea",
+   "path": [
+    [
+     -61.315,
+     15.883
+    ],
+    [
+     -61.460275,
+     15.563779
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Little Bay, Montserrat",
+   "lat": 16.8027,
+   "lng": -62.2064,
+   "mode": "sea",
+   "path": [
+    [
+     -61.460275,
+     15.563779
+    ],
+    [
+     -62.2064,
+     16.8027
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Saint John's, Antigua and Barbuda",
+   "lat": 17.1262,
+   "lng": -61.8622,
+   "mode": "sea",
+   "path": [
+    [
+     -62.2064,
+     16.8027
+    ],
+    [
+     -61.8622,
+     17.1262
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Lesser Antilles",
+    "lat": 15.3,
+    "lng": -61.0,
+    "kind": "region"
+   }
+  ]
+ }
+}

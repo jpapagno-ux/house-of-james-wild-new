@@ -1,0 +1,157 @@
+{
+ "id": "amangati-bari-to-palermo-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Bari to Palermo, 6 nights aboard Amangati",
+ "subtitle": "6 nights · Bari to Palermo · Amangati",
+ "days": {
+  "1": "Bari",
+  "2": "Otranto",
+  "3": "Corfu",
+  "4": "Crotone",
+  "5": "Catania",
+  "6": "Messina",
+  "7": "Palermo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Bari, Italy",
+   "lat": 41.1476,
+   "lng": 16.8384,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Otranto, Italy",
+   "lat": 40.1512468616742,
+   "lng": 18.4961841116994,
+   "mode": "sea",
+   "path": [
+    [
+     16.8384,
+     41.1476
+    ],
+    [
+     18.4961841116994,
+     40.1512468616742
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Corfu, Greece",
+   "lat": 39.633056,
+   "lng": 19.902778,
+   "mode": "sea",
+   "path": [
+    [
+     18.4961841116994,
+     40.1512468616742
+    ],
+    [
+     19.902778,
+     39.633056
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Crotone",
+   "lat": 39.083,
+   "lng": 17.13,
+   "mode": "sea",
+   "path": [
+    [
+     19.902778,
+     39.633056
+    ],
+    [
+     17.13,
+     39.083
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Catania, Sicily, Italy",
+   "lat": 37.495999,
+   "lng": 15.095972,
+   "mode": "sea",
+   "path": [
+    [
+     17.13,
+     39.083
+    ],
+    [
+     15.095972,
+     37.495999
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Messina, Sicily, Italy",
+   "lat": 38.192778,
+   "lng": 15.558056,
+   "mode": "sea",
+   "path": [
+    [
+     15.095972,
+     37.495999
+    ],
+    [
+     15.558056,
+     38.192778
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Palermo, Sicily, Italy",
+   "lat": 38.1206,
+   "lng": 13.3865,
+   "mode": "sea",
+   "path": [
+    [
+     15.558056,
+     38.192778
+    ],
+    [
+     13.3865,
+     38.1206
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

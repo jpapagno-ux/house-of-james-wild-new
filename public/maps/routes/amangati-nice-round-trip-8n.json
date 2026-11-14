@@ -1,0 +1,193 @@
+{
+ "id": "amangati-nice-round-trip-8n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Nice round trip, 8 nights aboard Amangati",
+ "subtitle": "8 nights · Nice round trip · Amangati",
+ "days": {
+  "1": "Nice",
+  "2": "Elba",
+  "3": "Porto Cervo",
+  "4": "Bonifacio",
+  "5": "Ajaccio",
+  "6": "Calvi",
+  "7": "Saint Tropez",
+  "8": "Cannes",
+  "9": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Elba, Tuscan Archipelago",
+   "lat": 42.815,
+   "lng": 10.33,
+   "mode": "sea",
+   "path": [
+    [
+     7.288441262587998,
+     43.693410853287936
+    ],
+    [
+     10.33,
+     42.815
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Porto Cervo, Sardinia",
+   "lat": 41.137,
+   "lng": 9.536,
+   "mode": "sea",
+   "path": [
+    [
+     10.33,
+     42.815
+    ],
+    [
+     9.536,
+     41.137
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Bonifacio",
+   "lat": 41.387,
+   "lng": 9.159,
+   "mode": "sea",
+   "path": [
+    [
+     9.536,
+     41.137
+    ],
+    [
+     9.159,
+     41.387
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Ajaccio",
+   "lat": 41.919,
+   "lng": 8.738,
+   "mode": "sea",
+   "path": [
+    [
+     9.159,
+     41.387
+    ],
+    [
+     8.738,
+     41.919
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Calvi, Corsica, France",
+   "lat": 42.5646270047157,
+   "lng": 8.76238512241252,
+   "mode": "sea",
+   "path": [
+    [
+     8.738,
+     41.919
+    ],
+    [
+     8.76238512241252,
+     42.5646270047157
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Saint-Tropez, France",
+   "lat": 43.269878,
+   "lng": 6.628618,
+   "mode": "sea",
+   "path": [
+    [
+     8.76238512241252,
+     42.5646270047157
+    ],
+    [
+     6.628618,
+     43.269878
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Cannes, France",
+   "lat": 43.541767,
+   "lng": 7.030907,
+   "mode": "sea",
+   "path": [
+    [
+     6.628618,
+     43.269878
+    ],
+    [
+     7.030907,
+     43.541767
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "mode": "sea",
+   "path": [
+    [
+     7.030907,
+     43.541767
+    ],
+    [
+     7.288441262587998,
+     43.693410853287936
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

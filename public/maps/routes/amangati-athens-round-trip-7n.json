@@ -1,0 +1,175 @@
+{
+ "id": "amangati-athens-round-trip-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Athens round trip, 7 nights aboard Amangati",
+ "subtitle": "7 nights · Athens round trip · Amangati",
+ "days": {
+  "1": "Athens",
+  "2": "Lavrio",
+  "3": "Ikaria",
+  "4": "Mykonos",
+  "5": "Kusadasi",
+  "6": "Patmos",
+  "7": "Paros",
+  "8": "Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens (Piraeus), Greece",
+   "lat": 37.94497703533731,
+   "lng": 23.642479859381044,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Lavrio",
+   "lat": 37.713,
+   "lng": 24.056,
+   "mode": "sea",
+   "path": [
+    [
+     23.642479859381044,
+     37.94497703533731
+    ],
+    [
+     24.056,
+     37.713
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Ikaria, Greece",
+   "lat": 37.6148,
+   "lng": 26.297,
+   "mode": "sea",
+   "path": [
+    [
+     24.056,
+     37.713
+    ],
+    [
+     26.297,
+     37.6148
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Mykonos, Greece",
+   "lat": 37.465764,
+   "lng": 25.319753,
+   "mode": "sea",
+   "path": [
+    [
+     26.297,
+     37.6148
+    ],
+    [
+     25.319753,
+     37.465764
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Kuşadası, Turkey",
+   "lat": 37.863148134110205,
+   "lng": 27.255610630407098,
+   "mode": "sea",
+   "path": [
+    [
+     25.319753,
+     37.465764
+    ],
+    [
+     27.255610630407098,
+     37.863148134110205
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Patmos, Greece",
+   "lat": 37.323008,
+   "lng": 26.545973,
+   "mode": "sea",
+   "path": [
+    [
+     27.255610630407098,
+     37.863148134110205
+    ],
+    [
+     26.545973,
+     37.323008
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Paros, Greece",
+   "lat": 37.086695,
+   "lng": 25.148542,
+   "mode": "sea",
+   "path": [
+    [
+     26.545973,
+     37.323008
+    ],
+    [
+     25.148542,
+     37.086695
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Athens (Piraeus), Greece",
+   "lat": 37.94497703533731,
+   "lng": 23.642479859381044,
+   "mode": "sea",
+   "path": [
+    [
+     25.148542,
+     37.086695
+    ],
+    [
+     23.642479859381044,
+     37.94497703533731
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

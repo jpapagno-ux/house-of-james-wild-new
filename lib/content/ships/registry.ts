@@ -306,6 +306,14 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     // fourseasonsyachts.com: over 100 connecting suite combinations; children under 5 have meals included (no minimum age readable).
     traits: { minChildAge: 0, childNote: "Six months and over; one year and over on voyages with three or more consecutive days at sea", connecting: true, activities: ["culture", "slow"] } },
 
+  // Aman at Sea's Amangati (Timeless Voyages, James, 14 Nov 2026): under construction at T. Mariotti, Genoa; maiden voyage
+  // 7 May 2027. Every voyage and suite fare from amanatsea.com (scripts/partners/ams-build.mjs). Youth Lounge for 6 to 15;
+  // connecting suites as Aman at Sea publishes them. No minimum age published.
+  { slug: "amangati", name: "Amangati", operator: "Aman at Sea", kind: "motor-yacht", types: ["yacht"], waters: ["mediterranean", "caribbean"],
+    country: ["Spain", "France", "Italy", "Malta", "Croatia", "Montenegro", "Albania", "Greece", "Turkey", "Antigua and Barbuda", "Sint Maarten", "Barbados", "Aruba", "Dominican Republic"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-05"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "launching", launch: "2027-05", page: true,
+    traits: { connecting: true, activities: ["culture", "slow"] } },
+
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },
 

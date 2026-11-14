@@ -1,4 +1,5 @@
 import COUNTRY_LIBRARY from "./content/countries-library.json" with { type: "json" };
+import { TIMELESS_VOYAGES_ON, TV_PATH } from "./content/timeless-voyages-flag.ts";
 // The link guard. BUILT lists every page that exists in the current build
 // step; in production any link to a page that isn't built is hidden from the
 // header, menus and footer, so nothing broken goes live. Previews show every
@@ -56,6 +57,7 @@ export const BUILT: string[] = [
   "/voyages/expedition",
   "/voyages/yachts",
   "/voyages/charter",
+  ...(TIMELESS_VOYAGES_ON ? [TV_PATH] : []),
   "/voyages/amazon",
   "/voyages/galapagos",
   "/voyages/indonesia",

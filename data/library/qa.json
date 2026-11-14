@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-13",
+ "checkedOn": "2026-11-14",
  "rows": [
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -553,6 +553,14 @@
    "slug": "bambu-indah",
    "name": "Bambu Indah",
    "country": "Indonesia",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6af79e79e3c3d0ea8039cea2",
+   "slug": "bamurru-plains",
+   "name": "Bamurru Plains",
+   "country": "Australia",
    "missing": [],
    "released": true
   },
@@ -3026,6 +3034,14 @@
    "released": true
   },
   {
+   "stay_id": "6af79ed730f3ab794bb90bcf",
+   "slug": "lizard-island",
+   "name": "Lizard Island Resort",
+   "country": "Australia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff94c",
    "slug": "lodge-lorien",
    "name": "Lodge Lorien",
@@ -3620,9 +3636,7 @@
    "slug": "orpheus-island-lodge",
    "name": "Orpheus Island Lodge",
    "country": "Australia",
-   "missing": [
-    "coordinates"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -3816,6 +3830,14 @@
    "released": true
   },
   {
+   "stay_id": "6af79d594e627b9ccc489326",
+   "slug": "qualia",
+   "name": "qualia",
+   "country": "Australia",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a899f0548bb89e19d49c53d",
    "slug": "quinlan-cooke-cahersiveen",
    "name": "Quinlan & Cooke, Cahersiveen",
@@ -3924,6 +3946,14 @@
    "slug": "sable-alley-khwai",
    "name": "Sable Alley Khwai",
    "country": "Botswana",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6af79dbdea2cf40375d35109",
+   "slug": "sal-salis",
+   "name": "Sal Salis Ningaloo Reef",
+   "country": "Australia",
    "missing": [],
    "released": true
   },

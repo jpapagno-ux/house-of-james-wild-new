@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-13",
+ "exportedOn": "2026-11-14",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -6055,6 +6055,141 @@
    "engine": null,
    "pathway": null,
    "volumes": null,
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "bamurru-plains",
+   "name": "Bamurru Plains",
+   "ledgerId": "STY-2026-000655",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "camp",
+   "tagline": "Twelve safari bungalows on 300 km² of Mary River floodplain at the edge of Kakadu, for 26 guests at most, all inclusive",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b01",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b09",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bamurru-plains/b11"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Wildlife and birding",
+    "Couples",
+    "Families (10 and over)",
+    "Small groups",
+    "Exclusive use"
+   ],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": -12.24,
+    "lng": 131.87
+   },
+   "airport": "Darwin (DRW)",
+   "airportDirections": "About three hours by road from Darwin; the camp meets self-drivers at Bark Hut Inn, halfway. Charter flights from Darwin are booked through the camp's reservations team.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twelve lodgings, all raised on poles above the floodplain.",
+     "Seven Eco Bungalows (31 m²), fan-cooled with floor to ceiling mesh walls, king or twin, ensuite with rainfall shower. Three Safari Bungalows (31 m²) with solid walls and air conditioning.",
+     "The Kingfisher Suite (81 m²), three times the size, with a lounge, a private dining table, a large twin-basin bathroom and swag beds for children. Jabiru Retreat: two Eco Bungalows joined by a walkway to a private plunge pool and deck, for four adults and two children.",
+     "Children 10 and over welcome; any age when the camp is booked for exclusive use."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Airboat safaris across the floodplain",
+     "Crocodile-spotting cruises on Sampan Creek, with sunset canapés",
+     "Open-top game drives for buffalo, wallabies, brumbies and dingoes",
+     "Guided wilderness walks and birding from The Hide",
+     "Sundowners on the plains"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Fully hosted and fully guided: twice-daily safaris shared with other guests, chosen each day for the season and the wildlife.",
+     "All meals by the Head Chef at the long table in the Lodge, with Australian wines, beers and spirits from an open bar.",
+     "A saltwater wet-edge pool at the Lodge overlooking the floodplain, and The Hide for birdwatching.",
+     "Binoculars and a species guide in every bungalow.",
+     "Mostly solar powered; no mobile signal, and Wi-Fi only on request in the common areas.",
+     "A founding member of Luxury Lodges of Australia (2010); part of Stay Intrepid."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "The airboat: the only way across the flooded plains, skimming through melaleuca forest among magpie geese, whistling ducks, egrets and crocodiles. The bungalows have mesh walls, so the floodplain is with you through the night."
+   ],
+   "why": [
+    {
+     "title": "Australia's Answer to the Okavango",
+     "body": "Bamurru Plains is a bush camp on a working water buffalo station on the coastal floodplains of the Mary River, at the edge of Kakadu National Park. Twelve bungalows and retreats share 300 km² of floodplain, paperbark swamp and savanna for no more than 26 guests. The Mary River catchment has the highest concentration of saltwater crocodiles in the world and 236 bird species; Bamurru is the Gagadju word for the magpie goose that gathers here in its tens of thousands."
+    }
+   ],
+   "facts": {
+    "best_months": "Open February to October, closed in the monsoon. Early in the year the plains are flooded and safaris are on water; by late September the plains dry and wildlife gathers at the waterholes. Kakadu opens to visitors from May.",
+    "how_to_get_there": "About three hours' drive from Darwin (the camp meets self-drivers at Bark Hut Inn), or a charter flight from Darwin arranged by the camp.",
+    "signature_experiences": "Airboat safaris, Sampan Creek crocodile cruises, magpie geese in their thousands, The Hide, a day in Kakadu.",
+    "who_its_for": "Wildlife and bird lovers, couples, families with children 10 and over, groups taking Jabiru Retreat or the whole camp."
+   },
+   "faqs": [
+    {
+     "q": "Where is Bamurru Plains?",
+     "a": "On the coastal floodplains of the Mary River in the Northern Territory's Top End, at the edge of Kakadu National Park, about three hours by road from Darwin."
+    },
+    {
+     "q": "When is Bamurru Plains open?",
+     "a": "February to October each year. It closes for the peak of the monsoon."
+    },
+    {
+     "q": "What is included?",
+     "a": "Your bungalow, all meals, beer, wine and spirits, and the twice-daily guided safari program, which may include airboat safaris, crocodile cruises and open-top game drives."
+    },
+    {
+     "q": "Can children stay?",
+     "a": "Children 10 and over are welcome; younger children only when the camp is booked for exclusive use with supervision arranged."
+    },
+    {
+     "q": "Is there air conditioning?",
+     "a": "Only in the three Safari Bungalows. The other bungalows are fan-cooled with mesh walls to catch the breeze."
+    },
+    {
+     "q": "How do you get to Bamurru Plains?",
+     "a": "Drive from Darwin (about three hours; the camp collects you halfway at Bark Hut Inn) or take a charter flight from Darwin booked through the camp."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (Australia stays, 13 Nov 2026)",
+    "classifiedAt": "2026-11-13"
+   },
+   "volumes": [
+    "stays"
+   ],
    "arrivalHubIds": [],
    "placeSlug": null
   },
@@ -29495,6 +29630,146 @@
    "placeSlug": null
   },
   {
+   "slug": "lizard-island",
+   "name": "Lizard Island Resort",
+   "ledgerId": "STY-2026-000656",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Forty rooms, suites and villas on a national park island literally on the Great Barrier Reef, with 24 private beaches, all inclusive",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l01",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l09",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/lizard-island/l11"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Couples",
+    "Honeymooners",
+    "Divers and snorkellers",
+    "Fishing",
+    "Private beaches"
+   ],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": -14.668,
+    "lng": 145.459
+   },
+   "airport": "Cairns (CNS), then Lizard Island airstrip",
+   "airportDirections": "A scheduled charter flight from Cairns, about one hour over the Great Barrier Reef, lands on the island's own airstrip. The resort books the transfer.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Forty rooms, suites and villas, from 44 m² Gardenview Rooms to The House.",
+     "Gardenview Rooms (44 m²) and Gardenview Suites (62 m²) in tropical gardens a short walk from Anchor Bay. Oceanview Villas and Oceanview Plunge Pool Villas (59 m²) high on a ridge over the Coral Sea. Beachfront Suites (87 m²) on the arc of Anchor Bay.",
+     "The Pavilion (139 m²) on a ridge with a wraparound deck and plunge pool, for two. The Villa (154 m²), clifftop, two bedrooms and an 8 metre plunge pool, for up to five.",
+     "The House: three storeys and three bedrooms on a private peninsula, 260 m² with a rooftop and pool, a private host and a Cottage beside it; four night minimum, five over the festive period.",
+     "Children 10 and over."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling straight off the beaches",
+     "Diving the outer reef and the Cod Hole",
+     "Private charters for snorkelling, diving and fishing",
+     "Black marlin fishing, September to December",
+     "The hike to Cook's Look",
+     "Guided nature walks and a visit to the Lizard Island Research Station",
+     "Paddleboards and clear-view kayaks",
+     "Essentia Day Spa and beach yoga",
+     "Degustation dinners in the beach gazebos"
+    ]
+   },
+   "features": {
+    "paras": [
+     "All inclusive: gourmet meals daily, a fine selection of wine, beer, spirits, Champagne and cocktails, unlimited non-alcoholic drinks and a minibar restocked daily.",
+     "Motorised dinghies, paddleboards, clear-view kayaks and snorkelling gear for the whole stay, and refreshment packs for private beach outings.",
+     "Salt Water Restaurant, Driftwood Bar and Wine Cellar, and beachside degustation in two private gazebos on Anchor Bay.",
+     "Essentia Day Spa, with couples treatment rooms.",
+     "Private charters for diving, snorkelling and fishing, including black marlin season from September to December.",
+     "Three MICHELIN Keys; Relais and Châteaux; Luxury Lodges of Australia."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "A dinghy and a picnic of your own: take a motorised dinghy, included, to one of 24 beaches and have it to yourselves for the day."
+   ],
+   "why": [
+    {
+     "title": "The Only Resort on the Reef Itself",
+     "body": "Lizard Island Resort is the only resort on a 1,013 hectare national park island and sits directly on the Great Barrier Reef, an hour's scenic flight north of Cairns. Forty rooms, suites and villas share 24 white-sand beaches. The inner reef is 15 minutes by boat, the outer reef 35 minutes more, and the Cod Hole, one of the reef's famous dive sites, is 45 minutes from shore. A Relais and Châteaux member with three MICHELIN Keys."
+    }
+   ],
+   "facts": {
+    "best_months": "Year round on the reef; black marlin season runs September to December.",
+    "how_to_get_there": "Fly to Cairns, then a one-hour scheduled charter flight over 200 km of the Great Barrier Reef to the island's own airstrip, booked by the resort.",
+    "signature_experiences": "Your own beach by dinghy, the Cod Hole, Cook's Look, black marlin fishing, beachside degustation.",
+    "who_its_for": "Couples and honeymooners, divers and snorkellers, anglers, families with children 10 and over, groups taking The House."
+   },
+   "faqs": [
+    {
+     "q": "Where is Lizard Island Resort?",
+     "a": "On Lizard Island, a national park island on the Great Barrier Reef in far north Queensland, about an hour's flight north of Cairns."
+    },
+    {
+     "q": "How do you get to Lizard Island?",
+     "a": "By scheduled charter flight from Cairns, about one hour over the Great Barrier Reef. The resort books your transfers."
+    },
+    {
+     "q": "What is included at Lizard Island Resort?",
+     "a": "Your room, gourmet meals daily, wine, beer, spirits, Champagne and cocktails, non-alcoholic drinks, a daily restocked minibar, motorised dinghies, paddleboards, kayaks, snorkelling gear and picnic packs for beach outings."
+    },
+    {
+     "q": "Can children stay at Lizard Island?",
+     "a": "The resort caters to children 10 years old and over."
+    },
+    {
+     "q": "How far is the reef?",
+     "a": "The resort is on the reef. The inner reef is 15 minutes by boat, the outer reef about 50 minutes, and the Cod Hole about 45 minutes from shore."
+    },
+    {
+     "q": "Is there Wi-Fi?",
+     "a": "Yes, complimentary Wi-Fi in every room and in dedicated areas of the resort."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (Australia stays, 13 Nov 2026)",
+    "classifiedAt": "2026-11-13"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "loldia-house",
    "name": "Loldia House",
    "ledgerId": "STY-2026-000550",
@@ -37467,7 +37742,10 @@
    ],
    "status": "partner_verified",
    "statusDate": null,
-   "coords": null,
+   "coords": {
+    "lat": -18.611,
+    "lng": 146.491
+   },
    "airport": "Townsville (TSV) or Cairns (CNS), then a helicopter",
    "airportDirections": "By helicopter: 30 minutes from Townsville or 90 minutes from Cairns, by scheduled service or private charter. Boat transfers from Lucinda (1 to 2 hours, depending on the sea) can be arranged on request.",
    "founderNote": null,
@@ -40361,6 +40639,147 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "sal-salis",
+   "name": "Sal Salis Ningaloo Reef",
+   "ledgerId": "STY-2026-000654",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "camp",
+   "tagline": "Sixteen safari tents in the dunes of Cape Range National Park, a few steps from Ningaloo Reef, reopening refurbished in late March 2027",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s01",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s09",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sal-salis/s11"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Couples",
+    "Honeymooners",
+    "Ocean and reef",
+    "Whale sharks and humpbacks",
+    "Digital detox"
+   ],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": -22.08,
+    "lng": 113.9
+   },
+   "airport": "Learmonth (LEA), Exmouth",
+   "airportDirections": "Qantas flies daily from Perth to Learmonth Airport. Sal Salis collects you; the road transfer, about 90 minutes, is included.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Fifteen eco-luxury wilderness tents and one honeymoon tent, among the dunes, each with a private deck and hammock and an ensuite bathroom.",
+     "For 2027 every tent is new: Eco Structures tents with louvred windows, private ensuites and new furniture throughout.",
+     "The Honeymoon Tent stands apart from the others, with uninterrupted views, private beach access, a four-poster bed and a double hammock deck.",
+     "Two night minimum. Children 10 and over are welcome."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Drift snorkelling the reef straight off the beach",
+     "Sea kayaking and paddleboarding the lagoon",
+     "Guided walks in Mandu Mandu Gorge",
+     "Turtle encounters (nesting from October, hatching to March)",
+     "Stargazing under the Cape Range's dark sky",
+     "Whale shark swims, mid-March to October (extra cost, book early)",
+     "Humpback whale swims, from August to October (extra cost, book early)"
+    ]
+   },
+   "features": {
+    "paras": [
+     "All inclusive: meals by the camp's chefs, a help-yourself bar of Western Australian wines, beers and spirits, and sundowners at the Lodge.",
+     "Two guided experiences a day, one on the reef and one in the ranges, with no pre-booking needed.",
+     "Snorkelling gear, wetsuits, kayaks and paddleboards from camp.",
+     "Return road transfers from Learmonth Airport and national park fees.",
+     "Almost entirely solar powered, composting toilets, and five per cent of turnover reinvested in Cape Range National Park.",
+     "Refurbished for 2027 by Woods Bagot with Eco Structures tents, a new sundeck and lounge and a new dining area."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Ningaloo is one of the few places on earth to swim beside whale sharks (mid-March to October) and humpback whales (from August), and Sal Salis puts you on the reef itself between swims."
+   ],
+   "why": [
+    {
+     "title": "Where the Outback Meets the Reef",
+     "body": "Sal Salis sits in the coastal dunes of Cape Range National Park on the North West Cape, 1,200 km north of Perth, 50 metres back from the beach. Ningaloo, the world's largest fringing coral reef, starts a few steps from your tent; the gorges of the Cape Range rise two kilometres behind. Fifteen wilderness tents and one honeymoon tent, all inclusive, with no mobile signal, no internet and no air conditioning, by design."
+    }
+   ],
+   "facts": {
+    "best_months": "Open late March to the end of October. Whale sharks mid-March to October; humpbacks June to October, with swims from August. Closed November to late March.",
+    "how_to_get_there": "Fly Qantas from Perth to Learmonth Airport (Exmouth); the camp's road transfer, included, takes about 90 minutes.",
+    "signature_experiences": "Swimming with whale sharks and humpbacks, snorkelling Ningaloo from the beach, Mandu Mandu Gorge, the Milky Way from your deck.",
+    "who_its_for": "Couples and honeymooners, ocean lovers and snorkellers, families with children 10 and over, travellers who want to switch off."
+   },
+   "faqs": [
+    {
+     "q": "When does Sal Salis reopen?",
+     "a": "Late March 2027, after a full refurbishment. Bookings are open for the 2027 season."
+    },
+    {
+     "q": "Where is Sal Salis?",
+     "a": "In Cape Range National Park on the North West Cape of Western Australia, an hour's drive (70 km) south of Exmouth and 1,200 km north of Perth."
+    },
+    {
+     "q": "How do you get to Sal Salis?",
+     "a": "Qantas flies daily from Perth to Learmonth Airport at Exmouth. Return road transfers from the airport, about 90 minutes, are included."
+    },
+    {
+     "q": "When can you swim with whale sharks at Ningaloo?",
+     "a": "From mid-March to October. Whale shark swims are an optional extra and sell out months ahead, so book them with your stay."
+    },
+    {
+     "q": "What is included at Sal Salis?",
+     "a": "Your tent, all meals, a help-yourself bar, sundowners, guided gorge walks and snorkelling, snorkelling gear, kayaks and paddleboards, airport road transfers and national park fees."
+    },
+    {
+     "q": "Can children stay at Sal Salis?",
+     "a": "Yes, from 10 years old."
+    },
+    {
+     "q": "Is there WiFi or phone signal?",
+     "a": "No. There is no mobile coverage or internet at camp, and no power points in the tents; cameras can be charged at the Lodge."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (Australia stays, 13 Nov 2026)",
+    "classifiedAt": "2026-11-13"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -60314,6 +60733,143 @@
    ],
    "arrivalHubIds": [],
    "placeSlug": "ljubljana"
+  },
+  {
+   "slug": "qualia",
+   "name": "qualia",
+   "ledgerId": "STY-2026-000653",
+   "country": "Australia",
+   "countrySlug": "australia",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Sixty pavilions on the northern tip of Hamilton Island, above the Whitsundays, for guests 16 and over",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q01",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q03",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q04",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q05",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q06",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q07",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q09",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q10",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/qualia/q11"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "Couples",
+    "Honeymooners",
+    "Adults only (16 and over)",
+    "Food and wine",
+    "Sailing and reef"
+   ],
+   "status": "partner_verified",
+   "statusDate": null,
+   "coords": {
+    "lat": -20.33,
+    "lng": 148.9555
+   },
+   "airport": "Hamilton Island (HTI)",
+   "airportDirections": "Direct flights to Hamilton Island Airport from Sydney, Melbourne and Brisbane. qualia's VIP transfer meets you at the airport or marina, minutes from the resort.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Sixty pavilions, from 90 m² to 400 m², each with a different outlook.",
+     "Windward Pavilions (19, 120 m²) face north-east over the Whitsundays with a private plunge pool. Seaward Pavilions (6, 120 m²) face the Coral Sea with a plunge pool and outdoor shower. Leeward Pavilions (33, 90 m²) face south-west across the islands. Accessible Windward and Leeward Pavilions are available.",
+     "The Sunset Pavilion (120 m²) sits by the shore beside the helipad. The Beach House (240 m²) has a 12 metre infinity-edge pool and a guest house for four. The Residence (400 m²) has two bedrooms, a studio and a 25 metre infinity-edge pool."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Sailing to Whitehaven Beach and Hill Inlet",
+     "Great Barrier Reef and Heart Reef scenic flights and reef trips",
+     "Snorkelling and diving the reef",
+     "qualia's Sunset Cruise, for up to 12 guests, three evenings a week",
+     "Paddleboards, kayaks and catamarans at Pebble Beach",
+     "Guided bushwalks on the island trails",
+     "Golf at Hamilton Island Golf Club",
+     "Spa qualia and yoga"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Sixty pavilions among native eucalypts, most with a private infinity-edge plunge pool.",
+     "Two restaurants: Long Pavilion and Pebble Beach, both hatted in the Australian Good Food Guide, with in-pavilion dining all day.",
+     "Spa qualia, with tranquillity pools and a yoga pavilion, a gym, a library and a private helipad.",
+     "Talk and Taste, the resort's food and wine pairing, and private Conversations with the Sommelier.",
+     "Non-motorised watercraft at Pebble Beach: paddleboards, kayaks and catamarans.",
+     "One MICHELIN Key (2025 and 2026) and a member of Luxury Lodges of Australia."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Hamilton Island has the only commercial island airport in the Whitsundays, so you can fly in and be at your pavilion within minutes, by VIP transfer, then drive yourself around the island in your own electric buggy."
+   ],
+   "why": [
+    {
+     "title": "The Whitsundays From Your Own Pavilion",
+     "body": "qualia sits alone on the northernmost tip of Hamilton Island, in the heart of the Great Barrier Reef. Sixty private pavilions, designed by Chris Beckingham with the Oatley family and opened in 2007, are set among native eucalypts and face either the Coral Sea or the Whitsunday Islands. It is for adults: guests are 16 and over. Whitehaven Beach is a 30 minute sail away."
+    }
+   ],
+   "facts": {
+    "best_months": "The Whitsundays are warm year round; humpback whales pass from June to September. Stinger suits are advised November to May.",
+    "how_to_get_there": "Fly direct to Hamilton Island Airport (HTI) from Sydney, Melbourne or Brisbane; a VIP transfer takes you to qualia in minutes.",
+    "signature_experiences": "Sailing to Whitehaven Beach, Heart Reef flights, Talk and Taste, Spa qualia, your own plunge pool over the Coral Sea.",
+    "who_its_for": "Couples and honeymooners, adults travelling together (guests 16 and over), food and wine lovers."
+   },
+   "faqs": [
+    {
+     "q": "Where is qualia?",
+     "a": "On the northernmost tip of Hamilton Island in the Whitsundays, Queensland, in the heart of the Great Barrier Reef."
+    },
+    {
+     "q": "How do you get to qualia?",
+     "a": "Fly to Hamilton Island Airport, the only commercial island airport in the Whitsundays, with flights from Sydney, Melbourne and Brisbane. qualia's VIP transfer meets you at the airport or marina."
+    },
+    {
+     "q": "Can children stay at qualia?",
+     "a": "No. qualia is for guests aged 16 and over."
+    },
+    {
+     "q": "What is included in a stay?",
+     "a": "The qualia Classic package includes à la carte breakfast at Long Pavilion, non-alcoholic drinks, an electric golf buggy, 24 hour chauffeur service on the island, VIP airport or marina transfers, airport lounge access, non-motorised watercraft, and use of the gym, spa and sauna."
+    },
+    {
+     "q": "How far is Whitehaven Beach?",
+     "a": "About 7 km, or a 30 minute sail from Hamilton Island."
+    },
+    {
+     "q": "Which pavilions have a private pool?",
+     "a": "The Windward and Seaward Pavilions have a private infinity-edge plunge pool; the Beach House has a 12 metre pool and The Residence a 25 metre pool."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (Australia stays, 13 Nov 2026)",
+    "classifiedAt": "2026-11-13"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "six-senses-krabey-island",

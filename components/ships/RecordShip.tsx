@@ -310,6 +310,12 @@ export default function RecordShip({ entry, sisters, extra = {}, ef = null }: { 
                 {(s.exclusions?.length ?? 0) > 0 && <div><p className="ledger-eyebrow">Not included</p><ul className="mt-3 space-y-2">{s.exclusions!.map((x) => <li key={x} className="flex gap-2 text-[15px] ledger-muted"><X className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.75} aria-hidden="true" />{t(x)}</li>)}</ul></div>}
               </div>
             )}
+            {(s.terms?.length ?? 0) > 0 && (
+              <div className="mt-10 max-w-3xl">
+                <p className="ledger-eyebrow">Payment and cancellation, as {s.operator} publishes them</p>
+                <ul className="mt-3 space-y-2 text-[15px] leading-relaxed ledger-muted list-disc pl-5">{s.terms!.map((x) => <li key={x}>{t(x)}</li>)}</ul>
+              </div>
+            )}
           </section>
         )}
         <OfferPanel offers={offers} volume="voyages" title="Offers aboard" />

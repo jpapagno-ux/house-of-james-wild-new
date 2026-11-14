@@ -17,8 +17,15 @@
         "Four Seasons runs her the way it runs its best hotels: 95 suites, each with its own terrace, and about one crew member for every guest. The marina at the stern folds down for paddleboards and a swim before lunch.",
         "She winters in the Caribbean and the Bahamas and summers in the Mediterranean, with sailings published to October 2028. Fares are per suite, for the whole voyage. Book the suite; the islands come with it."
       ],
-      "before": [],
-      "beyond": [],
+      "before": [
+        "six-senses-rome",
+        "one-only-kea-island"
+      ],
+      "beyond": [
+        "jk-place-capri",
+        "katikies-santorini",
+        "baymanhi-exuma"
+      ],
       "stamp": "Signature Edition",
       "savings": null
     },

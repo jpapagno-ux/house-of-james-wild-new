@@ -16212,6 +16212,694 @@
    ]
   }
  ],
+ "gazetteer": {
+  "ESPMI": {
+   "title": "Palma de Mallorca, Balearic Islands, Spain",
+   "blurb": "Soaring spires and Moorish facades add historical context in this Balearic Isle, linking to pretty Soller, yacht clubs and resplendent beaches.",
+   "lat": 39.5525,
+   "lng": 2.630278,
+   "name": "Palma de Mallorca, Balearic Islands"
+  },
+  "ESIBZ": {
+   "title": "Ibiza, Spain",
+   "blurb": "A soulful island; whitewashed walls, pine forests, sunlit sands and UNESCO-listed Phoenician ruins await beyond the isle’s frenetic heart.",
+   "lat": 38.910136,
+   "lng": 1.449588,
+   "name": "Ibiza"
+  },
+  "ESBCN": {
+   "title": "Barcelona, Spain",
+   "blurb": "Architectural odes rise skywards in the Catalonian capital, where locals stroll in centuries-old markets and find respite in Gothic Quarter bodegas.",
+   "lat": 41.359444,
+   "lng": 2.178889,
+   "name": "Barcelona"
+  },
+  "ESPAL": {
+   "title": "Palamós, Spain",
+   "blurb": "The doorway to Spain’s less-travelled Costa Brava, Palamós leads to traditional Catalonian villages, quiet coves and the epicurean wonders of Girona.",
+   "lat": 41.842202,
+   "lng": 3.12315,
+   "name": "Palamos"
+  },
+  "FRMRS": {
+   "title": "Marseille, France",
+   "blurb": "Caught between limestone cliffs and the open sea, historic Marseille leans into the tide, retaining an unmistakably Mediterranean spirit.",
+   "lat": 43.3446562702501,
+   "lng": 5.33256571210601,
+   "name": "Marseille"
+  },
+  "FRSTP": {
+   "title": "Saint-Tropez, France",
+   "blurb": "The grande dame of the Riviera, Saint-Tropez's superyacht-filled marina is complemented by noteworthy shopping and sun-drenched games of pétanque in the Place des Lices.",
+   "lat": 43.269878,
+   "lng": 6.628618,
+   "name": "Saint Tropez"
+  },
+  "FRNCE": {
+   "title": "Nice, France",
+   "blurb": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "name": "Nice"
+  },
+  "FRCLY": {
+   "title": "Calvi, Corsica, France",
+   "blurb": "Beyond Calvi and its medieval citadel lie the ochre seastacks of Scandola, elegant L'Île-Rousse and the traditional hilltop villages of Balagne.",
+   "lat": 42.5646270047157,
+   "lng": 8.76238512241252,
+   "name": "Calvi, Corse"
+  },
+  "FRCEQ": {
+   "title": "Cannes, France",
+   "blurb": "Beyond its famed boulevards, Cannes is graced with gentle hills, sloping vineyards and sheltered beaches.",
+   "lat": 43.541767,
+   "lng": 7.030907,
+   "name": "Cannes, Cote d Azur"
+  },
+  "ITPTF": {
+   "title": "Portofino, Italy",
+   "blurb": "Portofino’s real charm lies in the grand villas, forested hills and tangible calm that presides over the Ligurian Sea.",
+   "lat": 44.304687,
+   "lng": 9.215341,
+   "name": "Portofino"
+  },
+  "FRYNR": {
+   "title": "Sanary-sur-Mer, France",
+   "blurb": "Once a haven for exiled thinkers, Sanary offers a window into coastal Provence, edged by the sculpted coves of the UNESCO-listed Calanques.",
+   "lat": 43.11408,
+   "lng": 5.802397,
+   "name": "Sanary-sur-Mer"
+  },
+  "FRBZM": {
+   "title": "Beaulieu-sur-Mer, France",
+   "blurb": "Tucked between Nice and Monaco, these twin Riviera towns blend lemon groves and picturesque villas with Belle Époque nostalgia.",
+   "lat": 43.7065,
+   "lng": 7.3389,
+   "name": "Beaulieu"
+  },
+  "ITSRE": {
+   "title": "San Remo, Italy",
+   "blurb": "From La Pigna’s medieval lanes to regal hillside villas and gardens that thrive in the Italian Riviera sun, San Remo’s offerings are multifaceted.",
+   "lat": 43.818991,
+   "lng": 7.784683,
+   "name": "San Remo"
+  },
+  "ITGOA": {
+   "title": "Genoa, Italy",
+   "blurb": "Genoa shaped Columbus, from its stone arcades to its grand palazzi. Salt-laced maritime winds still speak of journeys begun and horizons imagined.",
+   "lat": 44.41139853119931,
+   "lng": 8.918566918688722,
+   "name": "Genoa"
+  },
+  "ITPRW": {
+   "title": "Porto Venere, Italy",
+   "blurb": "From timeless Porto Venere, the Gulf of Poets unfurls towards the sunlit cliffs of Cinque Terre, where pastel-painted villages tumble towards the sea.  ",
+   "lat": 44.051111,
+   "lng": 9.835965,
+   "name": "Cinque Terre (Porto Venere) "
+  },
+  "ITVIA": {
+   "title": "Viareggio, Italy",
+   "blurb": "Sunlit promenades lead from Forte dei Marmi’s shores to Pietrasanta’s art-lined streets. Just beyond, the UNESCO monuments of Piazza del Duomo offer 900-year-old architectural grace.",
+   "lat": 43.86131,
+   "lng": 10.23811,
+   "name": "Viareggio"
+  },
+  "ITLIV": {
+   "title": "Florence (Livorno), Italy",
+   "blurb": "Tuscan vineyards and leaning towers entice in Livorno, a portal to Florence, known for its architecture and neighbouring Lucca and Siena.",
+   "lat": 43.55820999799999,
+   "lng": 10.299809758564743,
+   "name": "Florence (Livorno)"
+  },
+  "ITNAP": {
+   "title": "Naples, Italy",
+   "blurb": "A city of appetite where history and hedonism meet, Naples’ grand buildings and bustling markets are framed by the mighty Vesuvius.",
+   "lat": 40.8371746019429,
+   "lng": 14.2605759890679,
+   "name": "Naples"
+  },
+  "ITISH": {
+   "title": "Ischia, Italy",
+   "blurb": "Nourished by thermal baths and hilltop gardens, life unfolds slowly in Ischia, where locals dine in seafront trattorias and fishing nets line the port.",
+   "lat": 40.7528578664335,
+   "lng": 13.9098325678411,
+   "name": "Ischia "
+  },
+  "ITRRO": {
+   "title": "Sorrento, Italy",
+   "blurb": "Byron, Goethe and Grand Tour travellers found their inspiration here amidst white cliffs, citrus groves and Sorrento’s rising streets.",
+   "lat": 40.631452,
+   "lng": 14.375299,
+   "name": "Sorrento"
+  },
+  "ITPRJ": {
+   "title": "Capri, Italy",
+   "blurb": "Once a retreat for emperors and poets, today, Capri gleams with centuries of cultural memory and a timeless elegance.",
+   "lat": 40.5571,
+   "lng": 14.2423,
+   "name": "Capri "
+  },
+  "MTMLA": {
+   "title": "Valletta, Malta",
+   "blurb": "Little boats drift below the ochre walls of Valletta, a UNESCO-listed masterpiece of spires and staircases where Renaissance art meets Baroque beauty.",
+   "lat": 35.88901052872676,
+   "lng": 14.508053538948033,
+   "name": "Valletta"
+  },
+  "MTMGZ": {
+   "title": "Gozo, Malta",
+   "blurb": "Time slows in little Gozo, where ageless villages dot the land and hilltop citadels overlook quiet coves awash in shades of blue.",
+   "lat": 36.0252799036185,
+   "lng": 14.3001539404202,
+   "name": "Gozo"
+  },
+  "ITSIR": {
+   "title": "Syracuse, Sicily, Italy",
+   "blurb": "Baroque piazzas and time-stopped courtyards dot Ortygia in Siracuse’s ancient heart; a UNESCO-listed isle infused with Sicilian spirit.",
+   "lat": 37.062703,
+   "lng": 15.286778,
+   "name": "Syracuse, Sicily"
+  },
+  "ITCTA": {
+   "title": "Catania, Sicily, Italy",
+   "blurb": "Framed by the Ionian Sea and Mount Etna’s imposing peak, Catania’s lava stone buildings tell the story of a city risen from the ashes.",
+   "lat": 37.495999,
+   "lng": 15.095972,
+   "name": "Catania, Sicily"
+  },
+  "ITGAL": {
+   "title": "Gallipoli, Italy",
+   "blurb": "Speared on Puglia’s heel, Gallipoli blends small-town allure with Ionian beaches, Baroque  Lecce and the vineyards of Salento Peninsula.",
+   "lat": 40.059499,
+   "lng": 17.979083,
+   "name": "Gallipoli"
+  },
+  "ITOTO": {
+   "title": "Otranto, Italy",
+   "blurb": "Mosaics gleam underfoot in Otranto’s 1,000-year-old cathedral, while castle walls frame the sea and nearby UNESCO sites trace Apulia’s layered past.",
+   "lat": 40.1512468616742,
+   "lng": 18.4961841116994,
+   "name": "Otranto"
+  },
+  "MEKOT": {
+   "title": "Kotor, Montenegro",
+   "blurb": "Anchored by fairy-tale spires and coral rooftops, UNESCO-listed Kotor crowns the canyons of its namesake bay and the surrounding medieval villages.",
+   "lat": 42.42541608,
+   "lng": 18.76715201,
+   "name": "Kotor"
+  },
+  "HRHVA": {
+   "title": "Hvar, Croatia",
+   "blurb": "From Hvar’s hilltop fort, sailboats drift between a ribbon of Adriatic isles, coloured by ancient vineyards, holm-oak forests and fields of lavender.",
+   "lat": 43.169998,
+   "lng": 16.44,
+   "name": "Hvar"
+  },
+  "HRROV": {
+   "title": "Rovinj, Croatia",
+   "blurb": "Venetian bell towers rise above Rovinj’s cobbled lanes and harbour, a Dalmatian jewel ringed by islands where the Adriatic meets the Istrian coast.",
+   "lat": 45.084915,
+   "lng": 13.634419,
+   "name": "Rovinj"
+  },
+  "ITTRS": {
+   "title": "Trieste, Italy",
+   "blurb": "Influenced by empire and sea, Trieste reveals Roman traces, Austro-Hungarian facades and a coastline shaped for cafe terraces and quiet walks.",
+   "lat": 45.65,
+   "lng": 13.764444,
+   "name": "Trieste"
+  },
+  "ITVCE": {
+   "title": "Venice, Italy",
+   "blurb": "Concealed in waterfront palazzi, walled gardens and private collections owned for generations, beauty is found behind closed doors in La Serenissima.",
+   "lat": 45.4365755828423,
+   "lng": 12.3090697473262,
+   "name": "Venice"
+  },
+  "SIKOP": {
+   "title": "Koper, Slovenia",
+   "blurb": "Koper’s medieval Old Town is a prelude to the Venetian architecture of Piran, fairytale-esque Lake Bled and the rossa terroir of Istria.",
+   "lat": 45.550632,
+   "lng": 13.734412,
+   "name": "Koper"
+  },
+  "HRPUY": {
+   "title": "Pula, Croatia",
+   "blurb": "Roman arches frame Pula's streets, home to 2,000-year-old relics. Along the waterfront, fresh seafood brings a taste of the Adriatic to the table.",
+   "lat": 44.8688939667132,
+   "lng": 13.8330905461038,
+   "name": "Pula"
+  },
+  "HRSPU": {
+   "title": "Split, Croatia",
+   "blurb": "Sun-dappled courtyards and cobbled lanes weave through the UNESCO heart of Split, where Venetian facades spill onto elegant waterfront promenades.",
+   "lat": 43.50289633491305,
+   "lng": 16.441754724653073,
+   "name": "Split"
+  },
+  "ITCHI": {
+   "title": "Chioggia, Italy",
+   "blurb": "Chioggia’s charm lies in historic churches and unhurried markets, etched with quiet canals and narrow alleyways.",
+   "lat": 45.21133675370794,
+   "lng": 12.261271946049137,
+   "name": "Chioggia"
+  },
+  "HRSIB": {
+   "title": "Šibenik, Croatia",
+   "blurb": "Sheltered by a ring of forts and the grand dome of Saint James’ Cathedral, Sibenik’s quiet harbour is the oldest on Croatia’s Adriatic Coast.",
+   "lat": 43.730202,
+   "lng": 15.894868,
+   "name": "Sibenik"
+  },
+  "HRKOR": {
+   "title": "Korčula, Croatia",
+   "blurb": "Waterfront villas stand sentinel over the Adriatic in pretty Korcula, where gentle breezes drift from crystal-clear shores to cypress-scented hillsides.",
+   "lat": 42.9626835362586,
+   "lng": 17.1332952815956,
+   "name": "Korcula"
+  },
+  "ALVOA": {
+   "title": "Vlorë, Albania",
+   "blurb": "A gateway to Albania’s Riviera, where Apollonia and Byllis gaze across Adriatic and Ionian waters while harbouring the weight of 2,500 years of history.",
+   "lat": 40.449926,
+   "lng": 19.484636,
+   "name": "Vlore"
+  },
+  "GRCFU": {
+   "title": "Corfu, Greece",
+   "blurb": "A UNESCO World Heritage Site, the Venetian facades and labyrinthine streets of the Old Town of Corfu conceal hushed courtyards and neoclassical homes.",
+   "lat": 39.633056,
+   "lng": 19.902778,
+   "name": "Corfu"
+  },
+  "GRZTH": {
+   "title": "Zakynthos, Greece",
+   "blurb": "A jewel in the Ionian Sea, Zakynthos embraces quiet beaches where turtles nest and limestone headlands are carved to shipwrecked shores.",
+   "lat": 37.781502,
+   "lng": 20.901232,
+   "name": "Zakynthos"
+  },
+  "GRKAK": {
+   "title": "Katakolon, Greece",
+   "blurb": "Echoes of ancient Olympia drift across pine-scented hillsides around quiet Katakolon, where olive groves and vineyards blanket the land.",
+   "lat": 37.646111,
+   "lng": 21.325,
+   "name": "Katakolon"
+  },
+  "GRKLX": {
+   "title": "Kalamata, Greece",
+   "blurb": "In sleepy Kalamata, olive groves and waterfalls tumble down to Bronze Age ruins and trails wind along castle-dotted hillsides.",
+   "lat": 37.0198352219234,
+   "lng": 22.1168793018243,
+   "name": "Kalamata"
+  },
+  "GRMON": {
+   "title": "Monemvasia, Greece",
+   "blurb": "A walled city pinched between sheer cliffs and the indigo sea, medieval Monemvasia is a centuries-old hideaway in the heart of the Peloponnese.",
+   "lat": 36.6925587197965,
+   "lng": 23.0435942996587,
+   "name": "Monemvasia"
+  },
+  "GRMLO": {
+   "title": "Milos, Greece",
+   "blurb": "Bright white fishermen’s homes and wind-sculpted rocks contrast cerulean shores on tranquil Milos, a volcanic isle steeped in art and history.",
+   "lat": 36.7219263305503,
+   "lng": 24.44570676,
+   "name": "Milos"
+  },
+  "GRHYD": {
+   "title": "Hydra, Greece",
+   "blurb": "Time slows in tiny Hydra, where grand historical buildings line the hillsides and fishing boats bob in crystal-clear waters. Quaint, quiet and quintessentially Greek.",
+   "lat": 37.350815,
+   "lng": 23.466582,
+   "name": "Hydra"
+  },
+  "GRPIR": {
+   "title": "Athens (Piraeus), Greece",
+   "blurb": "Athens main port, Piraeus' seafaring history brims with neoclassical character.",
+   "lat": 37.94497703533731,
+   "lng": 23.642479859381044,
+   "name": "Athens (Piraeus)"
+  },
+  "GRAKI": {
+   "title": "Ikaria, Greece",
+   "blurb": "From sun-dappled beaches to Therma’s healing springs, Ikaria is peppered with relics of the past, echoes of an era shaped by pilgrimage and ritual.",
+   "lat": 37.6148,
+   "lng": 26.297,
+   "name": "Ikaria"
+  },
+  "GRJMK": {
+   "title": "Mykonos, Greece",
+   "blurb": "Cobalt shutters, stone chapels and still shores frame Mykonos, the departure point to Delos—sanctuary of Apollo and heart of ancient Cycladic life.",
+   "lat": 37.465764,
+   "lng": 25.319753,
+   "name": "Mykonos"
+  },
+  "TRKUS": {
+   "title": "Kuşadası, Turkey",
+   "blurb": "Myth and legend echo among the stacked stones of Ephesus, hemmed by the Byzantine castle of Kusadası and beautiful Aegean beaches beyond.",
+   "lat": 37.863148134110205,
+   "lng": 27.255610630407098,
+   "name": "Kusadasi"
+  },
+  "GRPMS": {
+   "title": "Patmos, Greece",
+   "blurb": "A crossroad of history and myth, Patmos is defined by its hillside settlements and the open Aegean Sea that frames it.",
+   "lat": 37.323008,
+   "lng": 26.545973,
+   "name": "Patmos"
+  },
+  "GRPAS": {
+   "title": "Paros, Greece",
+   "blurb": "Home to golden beaches, blue-domed churches and the 9th century BC sanctuary of Apollo and Artemis, Paros rests at the heart of the Cyclades.",
+   "lat": 37.086695,
+   "lng": 25.148542,
+   "name": "Paros"
+  },
+  "GRATN": {
+   "title": "Santorini, Greece",
+   "blurb": "In Santorini, blue cupolas crown whitewashed houses, crystalline seas lap black-sand shores and fiery sunsets set the sky alight.",
+   "lat": 36.410833,
+   "lng": 25.420833,
+   "name": "Santorini"
+  },
+  "GRKMI": {
+   "title": "Kalymnos, Greece",
+   "blurb": "Craggy peaks are framed by whitewashed towns and powder-soft shores in Kalymnos; a quintessentially Greek isle etched in streaks of vivid blue.",
+   "lat": 36.99051,
+   "lng": 26.92665,
+   "name": "Kalymnos"
+  },
+  "TRBXN": {
+   "title": "Bodrum, Turkey",
+   "blurb": "History and modernity align in Bodrum, where oceanfront lounges shoulder UNESCO wonders on the edge of the Aegean.",
+   "lat": 37.0249503642893,
+   "lng": 27.43838300415715,
+   "name": "Bodrum"
+  },
+  "GRJKH": {
+   "title": "Chios, Greece",
+   "blurb": "Medieval hamlets and hilltop monasteries spill down to the Aegean at Chios town, flanked by sleepy fishing villages and quiet castaway beaches.",
+   "lat": 38.3696012758634,
+   "lng": 26.1406705021655,
+   "name": "Chios"
+  },
+  "GRSKU": {
+   "title": "Skyros, Greece",
+   "blurb": "Steeped in the stories of Achilles and Theseus, Skyros bears the imprint of centuries of conquest. Cobbled lanes climb to a castle above the Aegean.",
+   "lat": 38.8426869254011,
+   "lng": 24.5368772918351,
+   "name": "Skiros"
+  },
+  "GRSKG": {
+   "title": "Thessaloniki, Greece",
+   "blurb": "Ringed by vineyards and the sacred slopes of Mount Olympus, Thessaloniki offers a glimpse into ancient Macedonia’s culinary and cultural heritage.",
+   "lat": 40.635297,
+   "lng": 22.931817,
+   "name": "Thessaloniki"
+  },
+  "TRIST": {
+   "title": "Istanbul, Turkey",
+   "blurb": "Minarets rise and muezzins call over the Bosphorus, where East meets West in a city forged by saffron scents, fading empires and the tide of history.",
+   "lat": 41.029037383212014,
+   "lng": 28.987969773017518,
+   "name": "Istanbul"
+  },
+  "TRCKZ": {
+   "title": "Çanakkale, Turkey",
+   "blurb": "Mythology echoes along Çanakkale’s cobbled streets, a bridge between continents on the Dardanelles Strait and gateway to the ruins of ancient Troy.",
+   "lat": 40.150748466371134,
+   "lng": 26.40243852522035,
+   "name": "Canakkale"
+  },
+  "GRMYR": {
+   "title": "Limnos, Greece",
+   "blurb": "Adrift in the northern Aegean, unhurried Limnos is a patchwork of golden dunes and wetland habitats, peppered with ancient ruins.",
+   "lat": 39.8712,
+   "lng": 25.0534,
+   "name": "Limnos"
+  },
+  "GRSMI": {
+   "title": "Samos, Greece",
+   "blurb": "Ancient temples, a sixth-century subterranean aqueduct and honeyed Muscat wines distil the layered soul of Samos, lush and mythic above the Aegean.",
+   "lat": 37.755448,
+   "lng": 26.970062,
+   "name": "Samos"
+  },
+  "GRITH": {
+   "title": "Ithaca, Greece",
+   "blurb": "Where Odysseus longed to return, Ithaca casts its spell in silvered hills, hidden coves and the quiet echoes of myths and legends.",
+   "lat": 38.3694,
+   "lng": 20.7137,
+   "name": "Ithaca"
+  },
+  "ITBRI": {
+   "title": "Bari, Italy",
+   "blurb": "The Basilica di San Nicola anchors Bari's ancient heart, where meandering lanes and Adriatic light reveal the essence of Puglia.",
+   "lat": 41.1476,
+   "lng": 16.8384,
+   "name": "Bari"
+  },
+  "ITMSN": {
+   "title": "Messina, Sicily, Italy",
+   "blurb": "Noontime bells chime daily in Messina, a time-honoured toll that echoes along the coast towards Taormina and the tumbling slopes of Mount Etna.",
+   "lat": 38.192778,
+   "lng": 15.558056,
+   "name": "Messina, Sicily"
+  },
+  "ITPMO": {
+   "title": "Palermo, Sicily, Italy",
+   "blurb": "Where Arabic spires, Norman arches and Byzantine gold converge, Palermo casts its spell with labyrinthine markets and Baroque piazzas.",
+   "lat": 38.1206,
+   "lng": 13.3865,
+   "name": "Palermo"
+  },
+  "ITCVV": {
+   "title": "Rome (Civitavecchia), Italy",
+   "blurb": "Two thousand years of empire and devotion sculpted Rome, where ancient forums, artistic endeavours and sun-warmed piazzas command and delight.",
+   "lat": 42.10729766081104,
+   "lng": 11.761639009815493,
+   "name": "Rome (Civitavecchia)"
+  },
+  "MCMCM": {
+   "title": "Monte Carlo, Monaco",
+   "blurb": "Yachts drop anchor and engines hum in Monte Carlo, yet the tiny principality on Monaco’s glittering edge effortlessly balances spectacle and sophistication.",
+   "lat": 43.73569731281005,
+   "lng": 7.430948424841447,
+   "name": "Monte Carlo"
+  },
+  "ESVLC": {
+   "title": "Valencia, Spain",
+   "blurb": "Tolling bells and flaming festivals shape Valencian identity, where colourful ceramics and architectural artistry frame modern museums and galleries.",
+   "lat": 39.454669,
+   "lng": -0.324719,
+   "name": "Valencia"
+  },
+  "ESALC": {
+   "title": "Alicante, Spain",
+   "blurb": "Palm-fringed Alicante unfurls slowly from the heights of Santa Bárbara Castle and the cobbled Old Town towards the Costa Brava’s sun-drenched beaches.",
+   "lat": 38.33181,
+   "lng": -0.485802,
+   "name": "Alicante"
+  },
+  "ESCAR": {
+   "title": "Cartagena, Spain",
+   "blurb": "The relics of conquest meet seafaring heritage in Cartagena, where the past is revealed in Roman ruins and rugged bluffs line the storied coast.",
+   "lat": 37.595396,
+   "lng": -0.98156,
+   "name": "Cartagena"
+  },
+  "ESMOT": {
+   "title": "Motril, Spain",
+   "blurb": "Mangos ripen in the Sierra Nevada foothills on Spain’s Costa Granadina, where the road from Motril leads to Granada and its fabled Alhambra palace.",
+   "lat": 36.720689,
+   "lng": -3.524272,
+   "name": "Motril"
+  },
+  "ESAGP": {
+   "title": "Málaga, Spain",
+   "blurb": "Empire and conquest shaped Málaga; stories told in her Moorish fort and Renaissance cathedral are anchored in the present by Andalusian culture.",
+   "lat": 36.701667,
+   "lng": -4.414444,
+   "name": "Malaga "
+  },
+  "ESCAD": {
+   "title": "Cádiz, Spain",
+   "blurb": "Three millennia of seafaring shaped Cádiz, with its gilded cathedral dome and salt-bleached ramparts perched upon a wind-scoured Atlantic peninsula.",
+   "lat": 36.541267,
+   "lng": -6.27841,
+   "name": "Sevilla (Cadiz)"
+  },
+  "PTPDL": {
+   "title": "Ponta Delgada, Azores, Portugal",
+   "blurb": "Adrift in the mid-Atlantic, Ponta Delgada opens to twin-hued crater lakes, hydrangea-draped roads and the whale-rich, geothermal wonder of the Azores.",
+   "lat": 37.7375,
+   "lng": -25.6535,
+   "name": "Ponta Delgada"
+  },
+  "AGSJO": {
+   "title": "Saint John's, Antigua and Barbuda",
+   "blurb": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+   "lat": 17.1262,
+   "lng": -61.8622,
+   "name": "Saint John's"
+  },
+  "AGBBQ": {
+   "title": "Barbuda, Antigua and Barbuda",
+   "blurb": "Folded between pristine reefs and a tapestry of mangroves cast in soft Caribbean light, perspective shifts on the delicate pink sands of Barbuda.",
+   "lat": 17.5559,
+   "lng": -61.8281,
+   "name": "Barbuda"
+  },
+  "BLSBH": {
+   "title": "Gustavia, Saint Barthélemy",
+   "blurb": "Light settles on still harbours, red roofs and pale facades. Swedish echoes linger in the town's ordered streets and the waterfront's calm composure.",
+   "lat": 17.9006,
+   "lng": -62.8552,
+   "name": "Gustavia"
+  },
+  "VGJVD": {
+   "title": "Jost Van Dyke, British Virgin Islands",
+   "blurb": "Lush hillsides, powdery bays and a barefoot ease define little Jost Van Dyke, one of the Caribbean's most unspoiled and quietly enchanting retreats.",
+   "lat": 18.447760716430107,
+   "lng": -64.72028621589438,
+   "name": "Jost Van Dyke"
+  },
+  "VGVIJ": {
+   "title": "Virgin Gorda, British Virgin Islands",
+   "blurb": "Nature finds balance on Virgin Gorda, where elemental landscapes and primordial boulders are lulled by the gentle rhythm of the Caribbean.",
+   "lat": 18.452,
+   "lng": -64.4392,
+   "name": "Virgin Gorda"
+  },
+  "SXPHI": {
+   "title": "Philipsburg, Sint Maarten",
+   "blurb": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+   "lat": 18.0096,
+   "lng": -63.0511,
+   "name": "Philipsburg"
+  },
+  "KNBAS": {
+   "title": "Basseterre, Saint Kitts and Nevis",
+   "blurb": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+   "lat": 17.2927,
+   "lng": -62.7157,
+   "name": "Basseterre"
+  },
+  "MSLTB": {
+   "title": "Little Bay, Montserrat",
+   "blurb": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+   "lat": 16.8027,
+   "lng": -62.2064,
+   "name": "Little Bay"
+  },
+  "BQSAB": {
+   "title": "Saba",
+   "blurb": "Rising steeply from the sea, diminutive Saba is enveloped by lush forest and narrow paths, informing a slow pace and a rich landscape for exploration.",
+   "lat": 17.6163,
+   "lng": -63.2518,
+   "name": "Saba"
+  },
+  "VGEIS": {
+   "title": "The Aerial, British Virgin Islands",
+   "blurb": "On Buck Island, reef shallows edge dry scrub and sea grapes, a quietly contained world in the open sea; no harbour, no roads, no permanent settlement.",
+   "lat": 18.4239428,
+   "lng": -64.55817615,
+   "name": "The Aerial"
+  },
+  "AIAXA": {
+   "title": "Prickly Pear Cays, Anguilla",
+   "blurb": "Lapped by crystal-clear waves, time slows on the uninhabited sands of the Prickly Pear Cays – a pair of islets off the coast of Anguilla.",
+   "lat": 18.26490883818951,
+   "lng": -63.18298949006624,
+   "name": "Pricky Pear Cays"
+  },
+  "GPLSS": {
+   "title": "Îles des Saintes, Guadeloupe",
+   "blurb": "Within Terre-de-Haut’s sheltered harbour, boats cluster close to shore. Homes rising behind, life is shaped by fishing routes and maritime tradition.",
+   "lat": 15.8666632,
+   "lng": -61.5999976,
+   "name": "Iles des Saintes"
+  },
+  "DMPOR": {
+   "title": "Portsmouth, Dominica",
+   "blurb": "Fort Shirley's ruins, jungle trails and the slow, dark waters of the Indian River weave Portsmouth into the very fabric of Dominica's untamed north.",
+   "lat": 15.563779,
+   "lng": -61.460275,
+   "name": "Portsmouth"
+  },
+  "MQADA": {
+   "title": "Anses d’Arlet, Martinique",
+   "blurb": "A whitewashed church at the sea's edge defines Anses d’Arlet, a Martinican village of towering gommiers and turquoise-hued coves.",
+   "lat": 14.49003971177075,
+   "lng": -61.08121336561399,
+   "name": "Anses d'Arlet"
+  },
+  "LCSOU": {
+   "title": "Soufrière, Saint Lucia",
+   "blurb": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+   "lat": 13.855098900234482,
+   "lng": -61.06182580244294,
+   "name": "Soufriere"
+  },
+  "BBBGI": {
+   "title": "Bridgetown, Barbados",
+   "blurb": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+   "lat": 13.1095,
+   "lng": -59.6346,
+   "name": "Bridgetown"
+  },
+  "VCCAN": {
+   "title": "Canouan, Saint Vincent and the Grenadines",
+   "blurb": "Above the reef-sheltered bay, a forest path climbs Mount Royal, crowning Canouan’s lush surrounds of natural beauty.",
+   "lat": 12.7063,
+   "lng": -61.3297,
+   "name": "Canouan"
+  },
+  "BQKRA": {
+   "title": "Kralendijk, Bonaire",
+   "blurb": "Framed by myriad shades of blue, colourful Kralendijk yields to a world of quietude among castaway beaches and lush mangroves.",
+   "lat": 12.15,
+   "lng": -68.28,
+   "name": "Kralendijk"
+  },
+  "CWWIL": {
+   "title": "Willemstad, Curaçao",
+   "blurb": "Stillness settles over Curaçao’s blue lagoons and peaceful mangroves, finding quiet harmony with the colourful gabled facades of Willemstad.",
+   "lat": 12.104,
+   "lng": -68.9371,
+   "name": "Willemstad"
+  },
+  "AWORJ": {
+   "title": "Oranjestad, Aruba",
+   "blurb": "Cradled by white sands, Oranjestad, and its Dutch colonial stylings, is complemented by the understated charm of the Lesser Antilles. ",
+   "lat": 12.5177,
+   "lng": -70.0447,
+   "name": "Oranjestad"
+  },
+  "GDSTG": {
+   "title": "Saint George's, Grenada",
+   "blurb": "Nutmeg and mace perfume the hills above Saint George’s, where a crescent harbour shimmers below centuries-old forts and a storied coastline.",
+   "lat": 12.0448,
+   "lng": -61.7567,
+   "name": "Saint George's"
+  },
+  "VCTBC": {
+   "title": "Tobago Cays, Saint Vincent and the Grenadines",
+   "blurb": "Across these cays, five untouched islets sit inside Horseshoe Reef, its coral arc enclosing turtle grass, shallow shoals and sand, dissolving to sky.",
+   "lat": 12.632992,
+   "lng": -61.349362,
+   "name": "Tobago Cays"
+  },
+  "PTFNC": {
+   "title": "Funchal, Madeira, Portugal",
+   "blurb": "Cascading from volcanic heights to a crescent-shaped harbour, Funchal unfolds with laurel forests, levada trails and the heady perfume of Madeira wine.",
+   "lat": 32.640913,
+   "lng": -16.909768,
+   "name": "Funchal"
+  }
+ },
  "pages": {
   "/amangati": {
    "texts": [

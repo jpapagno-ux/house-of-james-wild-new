@@ -42,8 +42,15 @@ const paths = [...new Set(locs.map((u) => u.replace(/^https?:\/\/[^/]+/, "")).fi
 console.log("voyage pages", paths.length);
 
 const voyages = [];
+const gazetteer = {}; // port code -> { name, title, lat, lng, blurb }, from the port cards on the voyage pages
+const portsOf = (t) => {
+  for (const m of t.matchAll(/"title":"((?:[^"\\]|\\.)*)","description":"((?:[^"\\]|\\.)*)","code":"([A-Z0-9]{5})","latitude":(-?[\d.]+),"longitude":(-?[\d.]+)(?:,"id":"[^"]*")?(?:,"name":"((?:[^"\\]|\\.)*)")?/g)) {
+    gazetteer[m[3]] ??= { title: JSON.parse(`"${m[1]}"`), blurb: JSON.parse(`"${m[2]}"`), lat: +m[4], lng: +m[5], name: m[6] ? JSON.parse(`"${m[6]}"`) : null };
+  }
+};
 for (const p of paths) {
   const t = payload(await get(SITE + p));
+  portsOf(t);
   const code = p.slice(-8);
   const at = t.indexOf(`"voyage_code":"${code}"`);
   const v = at >= 0 ? jsonAt(t, "{", t.lastIndexOf('"code":', at) - 1) : null;
@@ -72,5 +79,5 @@ for (const p of ["/amangati", "/amangati/accommodation", "/amangati/dining", "/a
   try { const t = payload(await get(SITE + p)); pages[p] = { texts: texts(t), images: [...new Set([...t.matchAll(/https:\/\/images\.ctfassets\.net\/[^"\\]+?\.(?:jpe?g|png|webp)/g)].map((m) => m[0]))] }; } catch { pages[p] = null; }
 }
 mkdirSync("scripts/data/ams", { recursive: true });
-writeFileSync("scripts/data/ams/raw.json", JSON.stringify({ fetched: new Date().toISOString().slice(0, 10), voyages, pages }, null, 1));
+writeFileSync("scripts/data/ams/raw.json", JSON.stringify({ fetched: new Date().toISOString().slice(0, 10), voyages, gazetteer, pages }, null, 1));
 console.log("voyages", voyages.length);

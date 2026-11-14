@@ -9,8 +9,14 @@
 //   mountain-sun  → Adventures, on land          wave  → Adventures, on water
 //   frond         → Features, on land            coral → Features, on water
 //   sun           → Only here
+// The cruise set (James, 14 Nov 2026), drawn in the same hand as the wave, for the voyage pages:
+//   wave          → The voyage, day by day       signal-flag → The routes · the fleet
+//   porthole      → Cabins & suites              hull        → Deck plan · life aboard
+//   bell          → Dates & rates                lifebuoy    → Questions · first time
+//   anchor        → Either side of the voyage    tender      → Charter weeks · going ashore
+//   dive-mask     → Diving and the water
 
-export type FieldIconName = "tree-ring" | "mountain-sun" | "wave" | "frond" | "coral" | "sun";
+export type FieldIconName = "tree-ring" | "mountain-sun" | "wave" | "frond" | "coral" | "sun" | "hull" | "porthole" | "bell" | "lifebuoy" | "anchor" | "tender" | "dive-mask" | "signal-flag";
 
 const RATIO: Record<FieldIconName, number> = {
   "tree-ring": 34 / 36,
@@ -19,6 +25,14 @@ const RATIO: Record<FieldIconName, number> = {
   frond: 38 / 32,
   coral: 36 / 42,
   sun: 45 / 41,
+  hull: 52 / 30,
+  porthole: 1,
+  bell: 34 / 38,
+  lifebuoy: 1,
+  anchor: 32 / 38,
+  tender: 50 / 30,
+  "dive-mask": 46 / 32,
+  "signal-flag": 34 / 38,
 };
 
 export function FieldIcon({ name, height = 32, className = "" }: { name: FieldIconName; height?: number; className?: string }) {

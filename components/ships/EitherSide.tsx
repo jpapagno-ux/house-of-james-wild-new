@@ -55,7 +55,7 @@ export function EitherSideBand({ data, ship, voyage }: { data: Data; ship: strin
   const opHotels = op ? op.hotels.map((h) => stayBySlug(h)).filter((s): s is NonNullable<typeof s> => !!s) : [];
   return (
     <section id="either-side" aria-labelledby="either-side-h" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10">
-      <SectionHead eyebrow="Either side of the voyage" title={`What Should You Add Before and After ${ship}?`} icon="sun"
+      <SectionHead eyebrow="Either side of the voyage" title={`What Should You Add Before and After ${ship}?`} icon="anchor"
         intro={`The ship is the middle of the journey. Arrive in ${data.gateway} early, sail ${voyage}, then stay on: the house's own stays for each step, from its collection.`} />
 
       <ol className="relative mt-10 grid gap-8 md:grid-cols-3 md:gap-10">

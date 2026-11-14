@@ -53,7 +53,7 @@ export default function CharterJourneys({ ships, ship, partner, id = "charter-jo
   const fleetNames = JOURNEY_FLEETS.map((f) => f.operator).join(" and ");
   return (
     <section id={id} className={SEC} aria-labelledby={`${id}-h`}>
-      <SectionHead eyebrow={eyebrow} title={title ?? (ship ? `Where Could You Take ${ship} for a Week?` : "Which Week Should You Charter in Indonesia?")} icon="wave"
+      <SectionHead eyebrow={eyebrow} title={title ?? (ship ? `Where Could You Take ${ship} for a Week?` : "Which Week Should You Charter in Indonesia?")} icon="tender"
         intro={intro ?? `Two signature charter journeys that ${fleetNames} both sail: a typical week in each, built from the operators' own itineraries, with the best season from Indonesia's tourism board. Every yacht sets the final order with you.`} />
       <ul className="mt-7 grid gap-5 md:grid-cols-2">
         {JOURNEYS.map((j) => <li key={j.slug}><JourneyCard j={j} ships={pool} partner={partner} /></li>)}

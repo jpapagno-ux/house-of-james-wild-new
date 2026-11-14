@@ -90,7 +90,7 @@ export default function ShipTemplate({ ship, lead, body, after, itineraryAfter }
           <Band t={ship.tones} tone="paper">{ship.tones ? <div>{body}</div> : body}</Band>
           <Band t={ship.tones} tone="night"><LiveHostPanel pageKey={ship.host.key} initial={host} stayName={ship.host.name} kind="vessel" /></Band>
           {after}
-          <FaqBlock faqs={ship.faqs.map(([q, a]) => ({ q, a }))} title={ship.faqTitle} icon={ship.tones ? "frond" : undefined} />
+          <FaqBlock faqs={ship.faqs.map(([q, a]) => ({ q, a }))} title={ship.faqTitle} icon={ship.tones ? "frond" : "lifebuoy"} />
           {ef?.suits}
           </Day>
           {ef?.close}

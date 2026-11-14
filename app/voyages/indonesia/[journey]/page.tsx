@@ -90,7 +90,7 @@ export default async function JourneyPage({ params }: P) {
               route: terrainRoute(j.short, route, j.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode }))) } : undefined} />
 
           <section id="dive-flags" className={SEC} aria-labelledby="dive-flags-h">
-            <SectionHead eyebrow="For divers" title="Where Are the Dive Flags on This Route?" icon="wave" intro="A light touch: the sites the operators name on this week, with a PADI instructor or dive team aboard every yacht. The dive guide picks the sites on the day, by tide and conditions." />
+            <SectionHead eyebrow="For divers" title="Where Are the Dive Flags on This Route?" icon="dive-mask" intro="A light touch: the sites the operators name on this week, with a PADI instructor or dive team aboard every yacht. The dive guide picks the sites on the day, by tide and conditions." />
             <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {j.dive.map((f) => (
                 <li key={f.name} className="flex gap-3 border ledger-border p-4">

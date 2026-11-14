@@ -126,7 +126,7 @@ export default function TimelessCollection({ rows, path = TV_PATH, on = new Date
           </div>
           <div>
             <p className="text-[11px] tracking-[0.28em] uppercase" style={{ color: BRASS }}>A numbered collection · Inside Voyages</p>
-            <p className="ledger-display mt-3 text-[1.7rem] leading-[1.15] md:text-[2.5rem] max-w-2xl">Ships with a hotel's manners and a yacht's harbours, chosen one at a time.</p>
+            <p className="ledger-display mt-3 text-[1.7rem] leading-[1.15] md:text-[2.5rem] max-w-2xl">{"Ships with a hotel's manners and a yacht's harbours, chosen one at a time."}</p>
             {(FOUNDER_NOTE_APPROVED || draftNote) && (
               <figure className="mt-7 max-w-xl border-l pl-5" style={{ borderColor: BRASS }}>
                 <blockquote className="ledger-display italic text-[1.25rem] md:text-[1.45rem] leading-snug">{FOUNDER_NOTE}</blockquote>

@@ -1,3 +1,4 @@
+import { TIMELESS_VOYAGES_ON, TV_PATH } from "./content/timeless-voyages-flag";
 import { volumeLeather } from "@/lib/volumes";
 import { INBOXES } from "./inbox";
 
@@ -295,6 +296,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/expedition", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/charter", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/yachts", priority: 0.8, changeFrequency: "monthly" },
+  ...(TIMELESS_VOYAGES_ON ? [{ path: TV_PATH, priority: 0.8, changeFrequency: "monthly" as const }] : []),
   { path: "/voyages/amazon", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/galapagos", priority: 0.8, changeFrequency: "monthly" },
   { path: "/voyages/indonesia", priority: 0.8, changeFrequency: "monthly" },

@@ -1,3 +1,5 @@
+import { TIMELESS_VOYAGES } from "@/lib/content/timeless-voyages";
+import { TIMELESS_VOYAGES_ON, TV_PATH } from "@/lib/content/timeless-voyages-flag";
 import { SITE, VOLUMES, REGIONS, LIVE_ROUTES } from "@/lib/site";
 import { POSTS } from "@/lib/content/journal/posts";
 import { TRIPS } from "@/lib/content/trips";
@@ -36,6 +38,7 @@ export function GET() {
     "- Founder marks (\"Founder stayed · year\") appear only where James has been, with the year. The six marks: I Know a Place (stayed), I've Walked It (vetted), I Know the Host, I Keep Going Back (founder favourite), I Know Who Knows (partner verified), Pencilled (awaiting a visit).",
     "- The house is advisor-led and advisor-built: a named advisor with an ADV number carries every journey from first call to Folio. James is the house default.",
     "",
+    ...(TIMELESS_VOYAGES_ON ? ["## Timeless Voyages", `- A collection of ships inside Voyages, chosen one at a time, at ${absoluteUrl(TV_PATH)}: ${TIMELESS_VOYAGES.map((t) => `${t.vesselName ?? t.vesselSlug}${t.operator ? ` (${t.operator})` : ""}`).join(", ")}. Fares are shown as each operator publishes them, per person or per suite as stated on the ship page.`, ""] : []),
     "## The Exceptional Few",
     `- A hand-numbered collection across every volume, at ${absoluteUrl(EF_PATH)}: the stays and ships James Wild & Co judges to have no real equivalent. Each place stays filed in its own volume and carries its number. Cite the number with the name.`,
     ...EF_CARDS.map((c) => `- ${c.label} ${c.name}, ${c.place}: ${absoluteUrl(c.href)}`),

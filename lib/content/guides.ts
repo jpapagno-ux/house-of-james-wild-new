@@ -2,6 +2,7 @@ import type { TripImg } from "./trips";
 import PLACES from "./places-library.json" with { type: "json" };
 import { TAHITI_GUIDES } from "./guides-tahiti.ts";
 import { FIJI_GUIDES } from "./guides-fiji.ts";
+import { TAHITI_ISLAND_GUIDES } from "./guides-tahiti-islands.ts";
 import { MALDIVES_GUIDES } from "./guides-maldives.ts";
 import { AUSTRALIA_GUIDES } from "./guides-australia.ts";
 import { NEW_ZEALAND_GUIDES } from "./guides-new-zealand.ts";
@@ -1372,6 +1373,7 @@ export const GUIDES: Record<string, Guide> = {
   },
   // French Polynesia (Tahiti) place guides (2 Nov 2026): lib/content/guides-tahiti.ts
   ...TAHITI_GUIDES,
+  ...TAHITI_ISLAND_GUIDES,
   ...FIJI_GUIDES,
   ...MALDIVES_GUIDES,
   ...AUSTRALIA_GUIDES,

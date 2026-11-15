@@ -13,6 +13,8 @@ export const TERRAIN_PAGES = [
   "destinations/asia/maldives/honeymoon",
   "destinations/asia/maldives/reef-and-manta",
   "destinations/asia/maldives/surf-and-ocean-sports",
+  // The reef map (James, 15 Nov 2026).
+  "destinations/oceania/australia/queensland-and-the-great-barrier-reef",
   // Site-wide voyage sweep (James, 8 Nov 2026: Galapagos and Antarctica in MapTiler 3D, every line round the islands):
   // every ship page whose waters are in TERRAIN_WATERS, and every polar voyage page.
   "voyages/ships",

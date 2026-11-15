@@ -140,7 +140,7 @@ export function Manifest({ rates, note, today }: { rates: TyRate[]; note: string
             </div>
           </div>
         ))}
-        {!rows.length && <p className="px-6 py-6 bg-white text-graphite">The published departures for this season have passed. Ask us for the next season's dates.</p>}
+        {!rows.length && <p className="px-6 py-6 bg-white text-graphite">The published departures for this season have passed. Ask us for the next season&rsquo;s dates.</p>}
       </div>
       <p className="px-4 md:px-6 py-3 text-[13px] text-graphite" style={{ background: "var(--ty-mist)" }}>{note}</p>
     </div>

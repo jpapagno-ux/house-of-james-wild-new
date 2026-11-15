@@ -1,0 +1,30 @@
+# Aman at Sea partner data: every Amangati voyage the brand publishes, with its day by day
+# and each suite's published fare, read from amanatsea.com's own server-rendered voyage pages.
+# Commits scripts/data/ams/raw.json to the branch it ran on, for scripts/partners/ams-build.mjs.
+name: Aman at Sea fetch
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/partners/ams-fetch.mjs, .github/workflows/ams-fetch.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/partners/ams-fetch.mjs
+      - name: Commit
+        run: |
+          git config user.name "jwco-bot"
+          git config user.email "jwco-bot@users.noreply.github.com"
+          git add scripts/data/ams/
+          git diff --cached --quiet || git commit -m "Aman at Sea data, $(date -u +%F)"
+          git push

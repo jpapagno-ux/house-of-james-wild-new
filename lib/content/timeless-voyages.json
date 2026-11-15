@@ -68,6 +68,31 @@
       "beyond": [],
       "stamp": "Timeless Voyages",
       "savings": null
+    },
+    {
+      "id": "TV-004",
+      "vesselSlug": "amangati",
+      "vesselName": "Amangati",
+      "operator": "Aman at Sea",
+      "collectionNumber": 4,
+      "ledgerId": "VSL-2026-000052",
+      "sailingStatus": "launching",
+      "launchDate": "2027-05-07",
+      "signatureEdition": false,
+      "heroLine": "Forty-seven suites on nine decks, and Aman's way of doing things, taken to sea.",
+      "whyItBelongs": [
+        "Amangati is Aman's first yacht and the start of Aman at Sea, built by T. Mariotti in Genoa to a design by Sinot. Forty-seven suites on nine decks, each with its own terrace, an Aman Spa with eight treatment suites on the sea, and a marina that opens on two floating platforms.",
+        "Her maiden voyage leaves Palma de Mallorca on 7 May 2027 for Nice. She summers in the Mediterranean, crosses the Atlantic in November and winters in the Caribbean. Fares are per suite, for the whole voyage."
+      ],
+      "before": [
+        "stay:six-senses-ibiza"
+      ],
+      "beyond": [
+        "stay:terre-bianche-dolceacqua",
+        "stay:jk-place-capri"
+      ],
+      "stamp": "Maiden Voyage",
+      "savings": null
     }
   ]
 }

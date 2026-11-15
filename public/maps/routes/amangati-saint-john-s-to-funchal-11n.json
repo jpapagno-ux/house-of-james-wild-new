@@ -1,0 +1,241 @@
+{
+ "id": "amangati-saint-john-s-to-funchal-11n",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Saint John's to Funchal, 11 nights aboard Amangati",
+ "subtitle": "11 nights · Saint John's to Funchal · Amangati",
+ "days": {
+  "1": "Saint John's",
+  "2": "Philipsburg",
+  "3": "Gustavia",
+  "4": "At Sea",
+  "5": "At Sea",
+  "6": "At Sea",
+  "7": "At Sea",
+  "8": "At Sea",
+  "9": "At Sea",
+  "10": "At Sea",
+  "11": "At Sea",
+  "12": "Funchal"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Saint John's, Antigua and Barbuda",
+   "lat": 17.1262,
+   "lng": -61.8622,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Philipsburg, Sint Maarten",
+   "lat": 18.0096,
+   "lng": -63.0511,
+   "mode": "sea",
+   "path": [
+    [
+     -61.8622,
+     17.1262
+    ],
+    [
+     -63.0511,
+     18.0096
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Gustavia, Saint Barthélemy",
+   "lat": 17.9006,
+   "lng": -62.8552,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0511,
+     18.0096
+    ],
+    [
+     -62.8552,
+     17.9006
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "At Sea",
+   "lat": 25.271,
+   "lng": -39.882,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8552,
+     17.9006
+    ],
+    [
+     -39.882,
+     25.271
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "At Sea",
+   "lat": 28.956,
+   "lng": -28.396,
+   "mode": "sea",
+   "path": [
+    [
+     -39.882,
+     25.271
+    ],
+    [
+     -28.396,
+     28.956
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "At Sea",
+   "lat": 30.798,
+   "lng": -22.653,
+   "mode": "sea",
+   "path": [
+    [
+     -28.396,
+     28.956
+    ],
+    [
+     -22.653,
+     30.798
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "At Sea",
+   "lat": 31.719,
+   "lng": -19.781,
+   "mode": "sea",
+   "path": [
+    [
+     -22.653,
+     30.798
+    ],
+    [
+     -19.781,
+     31.719
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "At Sea",
+   "lat": 32.18,
+   "lng": -18.345,
+   "mode": "sea",
+   "path": [
+    [
+     -19.781,
+     31.719
+    ],
+    [
+     -18.345,
+     32.18
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "At Sea",
+   "lat": 32.41,
+   "lng": -17.627,
+   "mode": "sea",
+   "path": [
+    [
+     -18.345,
+     32.18
+    ],
+    [
+     -17.627,
+     32.41
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "At Sea",
+   "lat": 32.525,
+   "lng": -17.268,
+   "mode": "sea",
+   "path": [
+    [
+     -17.627,
+     32.41
+    ],
+    [
+     -17.268,
+     32.525
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "At Sea",
+   "lat": 32.583,
+   "lng": -17.089,
+   "mode": "sea",
+   "path": [
+    [
+     -17.268,
+     32.525
+    ],
+    [
+     -17.089,
+     32.583
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "Funchal, Madeira, Portugal",
+   "lat": 32.640913,
+   "lng": -16.909768,
+   "mode": "sea",
+   "path": [
+    [
+     -17.089,
+     32.583
+    ],
+    [
+     -16.909768,
+     32.640913
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Atlantic Ocean",
+    "lat": 25.0,
+    "lng": -40.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Canary Islands",
+    "lat": 28.3,
+    "lng": -15.8,
+    "kind": "region"
+   },
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,0 +1,277 @@
+{
+ "id": "amangati-malaga-to-saint-john-s-13n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Málaga to Saint John's, 13 nights aboard Amangati",
+ "subtitle": "13 nights · Malaga to Saint John's · Amangati",
+ "days": {
+  "1": "Malaga",
+  "2": "Sevilla",
+  "3": "At Sea",
+  "4": "At Sea",
+  "5": "At Sea",
+  "6": "Ponta Delgada",
+  "7": "At Sea",
+  "8": "At Sea",
+  "9": "At Sea",
+  "10": "At Sea",
+  "11": "At Sea",
+  "12": "At Sea",
+  "13": "At Sea",
+  "14": "Saint John's"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Málaga, Spain",
+   "lat": 36.701667,
+   "lng": -4.414444,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Cádiz, Spain",
+   "lat": 36.541267,
+   "lng": -6.27841,
+   "mode": "sea",
+   "path": [
+    [
+     -4.414444,
+     36.701667
+    ],
+    [
+     -6.27841,
+     36.541267
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "At Sea",
+   "lat": 37.139,
+   "lng": -15.966,
+   "mode": "sea",
+   "path": [
+    [
+     -6.27841,
+     36.541267
+    ],
+    [
+     -15.966,
+     37.139
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "At Sea",
+   "lat": 37.438,
+   "lng": -20.81,
+   "mode": "sea",
+   "path": [
+    [
+     -15.966,
+     37.139
+    ],
+    [
+     -20.81,
+     37.438
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "At Sea",
+   "lat": 37.588,
+   "lng": -23.232,
+   "mode": "sea",
+   "path": [
+    [
+     -20.81,
+     37.438
+    ],
+    [
+     -23.232,
+     37.588
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Ponta Delgada, Azores, Portugal",
+   "lat": 37.7375,
+   "lng": -25.6535,
+   "mode": "sea",
+   "path": [
+    [
+     -23.232,
+     37.588
+    ],
+    [
+     -25.6535,
+     37.7375
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "At Sea",
+   "lat": 27.432,
+   "lng": -43.758,
+   "mode": "sea",
+   "path": [
+    [
+     -25.6535,
+     37.7375
+    ],
+    [
+     -43.758,
+     27.432
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "At Sea",
+   "lat": 22.279,
+   "lng": -52.81,
+   "mode": "sea",
+   "path": [
+    [
+     -43.758,
+     27.432
+    ],
+    [
+     -52.81,
+     22.279
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "At Sea",
+   "lat": 19.703,
+   "lng": -57.336,
+   "mode": "sea",
+   "path": [
+    [
+     -52.81,
+     22.279
+    ],
+    [
+     -57.336,
+     19.703
+    ]
+   ]
+  },
+  {
+   "day": 10,
+   "name": "At Sea",
+   "lat": 18.415,
+   "lng": -59.599,
+   "mode": "sea",
+   "path": [
+    [
+     -57.336,
+     19.703
+    ],
+    [
+     -59.599,
+     18.415
+    ]
+   ]
+  },
+  {
+   "day": 11,
+   "name": "At Sea",
+   "lat": 17.771,
+   "lng": -60.731,
+   "mode": "sea",
+   "path": [
+    [
+     -59.599,
+     18.415
+    ],
+    [
+     -60.731,
+     17.771
+    ]
+   ]
+  },
+  {
+   "day": 12,
+   "name": "At Sea",
+   "lat": 17.449,
+   "lng": -61.297,
+   "mode": "sea",
+   "path": [
+    [
+     -60.731,
+     17.771
+    ],
+    [
+     -61.297,
+     17.449
+    ]
+   ]
+  },
+  {
+   "day": 13,
+   "name": "At Sea",
+   "lat": 17.288,
+   "lng": -61.58,
+   "mode": "sea",
+   "path": [
+    [
+     -61.297,
+     17.449
+    ],
+    [
+     -61.58,
+     17.288
+    ]
+   ]
+  },
+  {
+   "day": 14,
+   "name": "Saint John's, Antigua and Barbuda",
+   "lat": 17.1262,
+   "lng": -61.8622,
+   "mode": "sea",
+   "path": [
+    [
+     -61.58,
+     17.288
+    ],
+    [
+     -61.8622,
+     17.1262
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Atlantic Ocean",
+    "lat": 25.0,
+    "lng": -40.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Canary Islands",
+    "lat": 28.3,
+    "lng": -15.8,
+    "kind": "region"
+   },
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

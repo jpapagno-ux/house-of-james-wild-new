@@ -1,0 +1,157 @@
+{
+ "id": "amangati-venice-to-dubrovnik-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Venice to Dubrovnik, 6 nights aboard Amangati",
+ "subtitle": "6 nights · Venice to Dubrovnik · Amangati",
+ "days": {
+  "1": "Venice",
+  "2": "Koper",
+  "3": "Zadar",
+  "4": "Pula",
+  "5": "Split",
+  "6": "Hvar",
+  "7": "Dubrovnik"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Venice, Italy",
+   "lat": 45.4365755828423,
+   "lng": 12.3090697473262,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Koper, Slovenia",
+   "lat": 45.550632,
+   "lng": 13.734412,
+   "mode": "sea",
+   "path": [
+    [
+     12.3090697473262,
+     45.4365755828423
+    ],
+    [
+     13.734412,
+     45.550632
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Zadar",
+   "lat": 44.116,
+   "lng": 15.225,
+   "mode": "sea",
+   "path": [
+    [
+     13.734412,
+     45.550632
+    ],
+    [
+     15.225,
+     44.116
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Pula, Croatia",
+   "lat": 44.8688939667132,
+   "lng": 13.8330905461038,
+   "mode": "sea",
+   "path": [
+    [
+     15.225,
+     44.116
+    ],
+    [
+     13.8330905461038,
+     44.8688939667132
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Split, Croatia",
+   "lat": 43.50289633491305,
+   "lng": 16.441754724653073,
+   "mode": "sea",
+   "path": [
+    [
+     13.8330905461038,
+     44.8688939667132
+    ],
+    [
+     16.441754724653073,
+     43.50289633491305
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Hvar, Croatia",
+   "lat": 43.169998,
+   "lng": 16.44,
+   "mode": "sea",
+   "path": [
+    [
+     16.441754724653073,
+     43.50289633491305
+    ],
+    [
+     16.44,
+     43.169998
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Dubrovnik",
+   "lat": 42.66,
+   "lng": 18.085,
+   "mode": "sea",
+   "path": [
+    [
+     16.44,
+     43.169998
+    ],
+    [
+     18.085,
+     42.66
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

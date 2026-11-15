@@ -1,6 +1,7 @@
 import { withActiveDepartures } from "@/lib/dates";
 import type { ShipRecord } from "../types";
 import FourSeasonsI from "./four-seasons-i.json";
+import Amangati from "./amangati.json";
 
 // Timeless Voyages (James, 13 Nov 2026): Four Seasons Yachts' Four Seasons I, in service since 20 March 2026. She winters
 // in the Caribbean and the Bahamas and summers in the Mediterranean; filed here under her winter waters. Facts, fares and
@@ -10,4 +11,6 @@ import FourSeasonsI from "./four-seasons-i.json";
 const live = (x: unknown) => withActiveDepartures(x as ShipRecord);
 export const CARIBBEAN_SHIPS: { data: ShipRecord; offerRefs: string[]; credit?: string }[] = [
   { data: live(FourSeasonsI), offerRefs: [], credit: "Four Seasons Yachts (renderings)" },
+  // Aman at Sea (14 Nov 2026): Amangati, maiden voyage 7 May 2027. All images are the brand's renderings.
+  { data: live(Amangati), offerRefs: [], credit: "Aman at Sea (renderings)" },
 ];

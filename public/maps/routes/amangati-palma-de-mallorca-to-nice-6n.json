@@ -1,0 +1,157 @@
+{
+ "id": "amangati-palma-de-mallorca-to-nice-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Palma de Mallorca to Nice, 6 nights aboard Amangati",
+ "subtitle": "6 nights · Palma de Mallorca to Nice · Amangati",
+ "days": {
+  "1": "Palma de Mallorca",
+  "2": "Ibiza",
+  "3": "Barcelona",
+  "4": "Palamos",
+  "5": "Marseille",
+  "6": "Saint Tropez",
+  "7": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Palma de Mallorca, Balearic Islands, Spain",
+   "lat": 39.5525,
+   "lng": 2.630278,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Ibiza, Spain",
+   "lat": 38.910136,
+   "lng": 1.449588,
+   "mode": "sea",
+   "path": [
+    [
+     2.630278,
+     39.5525
+    ],
+    [
+     1.449588,
+     38.910136
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Barcelona, Spain",
+   "lat": 41.359444,
+   "lng": 2.178889,
+   "mode": "sea",
+   "path": [
+    [
+     1.449588,
+     38.910136
+    ],
+    [
+     2.178889,
+     41.359444
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Palamós, Spain",
+   "lat": 41.842202,
+   "lng": 3.12315,
+   "mode": "sea",
+   "path": [
+    [
+     2.178889,
+     41.359444
+    ],
+    [
+     3.12315,
+     41.842202
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Marseille, France",
+   "lat": 43.3446562702501,
+   "lng": 5.33256571210601,
+   "mode": "sea",
+   "path": [
+    [
+     3.12315,
+     41.842202
+    ],
+    [
+     5.33256571210601,
+     43.3446562702501
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Saint-Tropez, France",
+   "lat": 43.269878,
+   "lng": 6.628618,
+   "mode": "sea",
+   "path": [
+    [
+     5.33256571210601,
+     43.3446562702501
+    ],
+    [
+     6.628618,
+     43.269878
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "mode": "sea",
+   "path": [
+    [
+     6.628618,
+     43.269878
+    ],
+    [
+     7.288441262587998,
+     43.693410853287936
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "id": "amangati-nice-to-marseille-6n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Nice to Marseille, 6 nights aboard Amangati",
+ "subtitle": "6 nights · Nice to Marseille · Amangati",
+ "days": {
+  "1": "Nice",
+  "2": "Cannes",
+  "3": "Portofino",
+  "4": "Calvi",
+  "5": "Saint Tropez",
+  "6": "Saint Tropez",
+  "7": "Marseille"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice, France",
+   "lat": 43.693410853287936,
+   "lng": 7.288441262587998,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Cannes, France",
+   "lat": 43.541767,
+   "lng": 7.030907,
+   "mode": "sea",
+   "path": [
+    [
+     7.288441262587998,
+     43.693410853287936
+    ],
+    [
+     7.030907,
+     43.541767
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Portofino, Italy",
+   "lat": 44.304687,
+   "lng": 9.215341,
+   "mode": "sea",
+   "path": [
+    [
+     7.030907,
+     43.541767
+    ],
+    [
+     9.215341,
+     44.304687
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Calvi, Corsica, France",
+   "lat": 42.5646270047157,
+   "lng": 8.76238512241252,
+   "mode": "sea",
+   "path": [
+    [
+     9.215341,
+     44.304687
+    ],
+    [
+     8.76238512241252,
+     42.5646270047157
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Saint-Tropez, France",
+   "lat": 43.269878,
+   "lng": 6.628618,
+   "mode": "sea",
+   "path": [
+    [
+     8.76238512241252,
+     42.5646270047157
+    ],
+    [
+     6.628618,
+     43.269878
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Saint-Tropez, France",
+   "lat": 43.269878,
+   "lng": 6.628618,
+   "mode": "sea",
+   "path": [
+    [
+     6.628618,
+     43.269878
+    ],
+    [
+     6.628618,
+     43.269878
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Marseille, France",
+   "lat": 43.3446562702501,
+   "lng": 5.33256571210601,
+   "mode": "sea",
+   "path": [
+    [
+     6.628618,
+     43.269878
+    ],
+    [
+     5.33256571210601,
+     43.3446562702501
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

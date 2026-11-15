@@ -1,0 +1,175 @@
+{
+ "id": "amangati-marseille-to-malaga-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Marseille to Málaga, 7 nights aboard Amangati",
+ "subtitle": "7 nights · Marseille to Malaga · Amangati",
+ "days": {
+  "1": "Marseille",
+  "2": "Barcelona",
+  "3": "Barcelona",
+  "4": "Valencia",
+  "5": "Alicante",
+  "6": "Cartagena",
+  "7": "Motril",
+  "8": "Malaga"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Marseille, France",
+   "lat": 43.3446562702501,
+   "lng": 5.33256571210601,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Barcelona, Spain",
+   "lat": 41.359444,
+   "lng": 2.178889,
+   "mode": "sea",
+   "path": [
+    [
+     5.33256571210601,
+     43.3446562702501
+    ],
+    [
+     2.178889,
+     41.359444
+    ]
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Barcelona, Spain",
+   "lat": 41.359444,
+   "lng": 2.178889,
+   "mode": "sea",
+   "path": [
+    [
+     2.178889,
+     41.359444
+    ],
+    [
+     2.178889,
+     41.359444
+    ]
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Valencia, Spain",
+   "lat": 39.454669,
+   "lng": -0.324719,
+   "mode": "sea",
+   "path": [
+    [
+     2.178889,
+     41.359444
+    ],
+    [
+     -0.324719,
+     39.454669
+    ]
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Alicante, Spain",
+   "lat": 38.33181,
+   "lng": -0.485802,
+   "mode": "sea",
+   "path": [
+    [
+     -0.324719,
+     39.454669
+    ],
+    [
+     -0.485802,
+     38.33181
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Cartagena, Spain",
+   "lat": 37.595396,
+   "lng": -0.98156,
+   "mode": "sea",
+   "path": [
+    [
+     -0.485802,
+     38.33181
+    ],
+    [
+     -0.98156,
+     37.595396
+    ]
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Motril, Spain",
+   "lat": 36.720689,
+   "lng": -3.524272,
+   "mode": "sea",
+   "path": [
+    [
+     -0.98156,
+     37.595396
+    ],
+    [
+     -3.524272,
+     36.720689
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Málaga, Spain",
+   "lat": 36.701667,
+   "lng": -4.414444,
+   "mode": "sea",
+   "path": [
+    [
+     -3.524272,
+     36.720689
+    ],
+    [
+     -4.414444,
+     36.701667
+    ]
+   ],
+   "kind": "port"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43.0,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   }
+  ]
+ }
+}

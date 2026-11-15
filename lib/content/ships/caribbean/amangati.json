@@ -1,0 +1,4815 @@
+{
+  "slug": "amangati",
+  "name": "Amangati",
+  "ledgerId": "VSL-2026-000052",
+  "brandLine": "Aman at Sea's first yacht: 47 suites, sailing from May 2027",
+  "operator": "Aman at Sea",
+  "type": "yacht",
+  "waters": "The Mediterranean from May 2027, then the Atlantic and the Caribbean",
+  "country": "The Mediterranean and the Caribbean",
+  "status": "launching",
+  "launch": "2027-05-07",
+  "seo": {
+    "title": "Amangati: Aman at Sea's First Yacht, Suites, Voyages and Fares | James Wild & Co",
+    "description": "Amangati, Aman's first yacht, sails from Palma on 7 May 2027 with 47 suites on nine decks. Every published voyage to March 2028, day by day, and every suite's fare from US$31,500 per suite.",
+    "keywords": [
+      "Amangati",
+      "Aman at Sea",
+      "Aman yacht",
+      "Amangati suites",
+      "Amangati voyages",
+      "Amangati price",
+      "luxury yacht cruise Mediterranean",
+      "luxury yacht cruise Caribbean"
+    ]
+  },
+  "tagline": "Forty-seven suites, an Aman Spa at sea, and a marina at the waterline.",
+  "answer": "Amangati is the first yacht from Aman at Sea, the new sea-going arm of Aman. She is being built by T. Mariotti in Genoa to a design by Sinot Yacht Architecture & Design, with 47 suites across nine decks, each with a private terrace. Her maiden voyage leaves Palma de Mallorca on 7 May 2027 for Nice; she spends the summer of 2027 in the Mediterranean, crosses the Atlantic in November and winters in the Caribbean. Aman at Sea publishes 48 voyages of 5 to 13 nights, with fares per suite for the whole voyage from US$31,500.",
+  "facts": [
+    [
+      "Suites",
+      "47, in six types, each with a private terrace"
+    ],
+    [
+      "Decks",
+      "9"
+    ],
+    [
+      "Design",
+      "Sinot Yacht Architecture & Design"
+    ],
+    [
+      "Builder",
+      "T. Mariotti, Genoa (under construction)"
+    ],
+    [
+      "Maiden voyage",
+      "7 May 2027, Palma de Mallorca to Nice"
+    ],
+    [
+      "Dining",
+      "Four restaurants among eight dining and bar venues"
+    ],
+    [
+      "Spa",
+      "Aman Spa: eight ocean-facing treatment suites, hammam and banya"
+    ],
+    [
+      "Pool",
+      "Heated 16-metre infinity pool"
+    ],
+    [
+      "Voyages",
+      "48 published, 5 to 13 nights, May 2027 to March 2028"
+    ]
+  ],
+  "glance": {
+    "guests": "47 suites",
+    "nights": "5 to 13 nights",
+    "route": "Mediterranean, Atlantic, Caribbean"
+  },
+  "overview": [
+    "Amangati is Aman's first yacht and the start of Aman at Sea. She is under construction at T. Mariotti in Genoa, designed by Sinot Yacht Architecture & Design, and carries the calm of an Aman resort to sea: 47 suites across nine decks, every one with a private terrace and ceilings up to 2.5 metres.",
+    "The suites draw on the Japanese ryokan: timber tones, full-height windows and a Suite Host on call. They run from the 60 square metre Deluxe Suites to the 354 square metre Aman Suite at the stern, reached by its own lift, with a massage room, a sauna and a terrace whirlpool. Many suites connect to make two and three bedrooms.",
+    "Aboard are four restaurants, among them Akari for washoku and an omakase, Hiori for teppanyaki, the Aman Grill and Alira for all-day Mediterranean cooking, plus The Jazz Club after Aman New York's, a cigar lounge and a cinema. The Aman Spa takes most of a deck, with eight treatment suites on the sea, a hammam, a banya and a two-storey Japanese garden. A heated 16-metre infinity pool sits high above the water, and at the stern the marina opens on two floating platforms.",
+    "She sails the Mediterranean from May 2027, from Spain and the French and Italian Rivieras to the Adriatic, the Greek islands and Turkey, crosses the Atlantic from Málaga in November, and winters in the Leeward, Windward and ABC islands and the Dominican Republic. Fares are per suite, for the whole voyage, in US dollars."
+  ],
+  "why": [
+    "Aman's first yacht, from the people behind Amanpuri, Amangiri and Aman New York.",
+    "47 suites, every one with a terrace, and many that connect into two and three bedrooms.",
+    "The largest spa Aman at Sea describes in luxury yachting: eight treatment suites on the sea, hammam and banya.",
+    "Four restaurants, from washoku at Akari to fire cooking at the Aman Grill.",
+    "A marina on two floating platforms, with a sport tender for waterskiing.",
+    "All onboard gratuities, non-alcoholic drinks and beer included."
+  ],
+  "hero": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/hero",
+    "alt": "Rendering of Amangati, a white motor yacht with stepped decks, under way on open sea",
+    "credit": "Rendering courtesy of Aman at Sea"
+  },
+  "gallery": [
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/aerial",
+      "alt": "Rendering of Amangati from above, her pool and sun decks stepped down to the stern",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/marina",
+      "alt": "Rendering of the marina at Amangati's stern, two floating platforms on the water",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/spa",
+      "alt": "Rendering of a treatment suite in the Aman Spa, open to a private terrace and the sea",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/pool",
+      "alt": "Rendering of the heated 16-metre infinity pool high on Amangati",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/alira",
+      "alt": "Rendering of Alira, Amangati's open-air Mediterranean restaurant",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/aman-grill",
+      "alt": "Rendering of the Aman Grill, an arc of tables around the open fire",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/hiori",
+      "alt": "Rendering of Hiori, the teppanyaki counter aboard Amangati",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/selora",
+      "alt": "Rendering of the Selora lounge beside the marina",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/cigar-lounge",
+      "alt": "Rendering of the cigar lounge in warm timber and leather",
+      "credit": "Rendering courtesy of Aman at Sea"
+    },
+    {
+      "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/fitness",
+      "alt": "Rendering of the fitness studio terrace above the sea",
+      "credit": "Rendering courtesy of Aman at Sea"
+    }
+  ],
+  "cabins": [
+    {
+      "type": "Deluxe Suite",
+      "count": null,
+      "size": "60.7 to 65.3 sq m (653 to 703 sq ft)",
+      "beds": "King bed",
+      "deck": "Decks 5, 6 and 7",
+      "features": [
+        "Open-plan living",
+        "Private teak terrace",
+        "Bathroom with soaking tub and double vanity",
+        "Connects to adjacent suites for two or three bedrooms"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/suite-deluxe",
+        "alt": "Rendering of a Deluxe Suite bedroom, timber tones and a full-height window to the sea",
+        "credit": "Rendering courtesy of Aman at Sea"
+      }
+    },
+    {
+      "type": "Premier Suite",
+      "count": null,
+      "size": "60.1 to 73.9 sq m (647 to 795 sq ft)",
+      "beds": "King bed",
+      "deck": "Decks 5, 6 and 7",
+      "features": [
+        "Private teak terrace",
+        "Window-side daybed and soaking tub",
+        "Connects to adjacent suites for two or three bedrooms"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/suite-premier",
+        "alt": "Rendering of a Premier Suite bedroom with a daybed by the window",
+        "credit": "Rendering courtesy of Aman at Sea"
+      }
+    },
+    {
+      "type": "Premier Fore Suite",
+      "count": 2,
+      "size": "66.3 sq m (713 sq ft)",
+      "beds": "King bed",
+      "deck": "Deck 5, forward",
+      "features": [
+        "Facing forward, port and starboard",
+        "Private terrace and window-side daybed",
+        "Soaking tub",
+        "Part of two- or three-bedroom combinations"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/suite-premier-fore",
+        "alt": "Rendering of a Premier Fore Suite facing forward over the bow",
+        "credit": "Rendering courtesy of Aman at Sea"
+      }
+    },
+    {
+      "type": "Signature Suite",
+      "count": null,
+      "size": "80.6 to 85.2 sq m (868 to 917 sq ft)",
+      "beds": "King bed and window-side daybed",
+      "deck": "Decks 5, 6 and 7, midship",
+      "features": [
+        "Floor-to-ceiling sliding glass doors to the terrace",
+        "Workstation and beverage bar"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/suite-signature",
+        "alt": "Rendering of a Signature Suite, sliding glass doors open to the terrace",
+        "credit": "Rendering courtesy of Aman at Sea"
+      }
+    },
+    {
+      "type": "Grand Suite",
+      "count": null,
+      "size": "102 sq m (1,098 sq ft)",
+      "beds": "King bed",
+      "deck": "Deck 6, forward",
+      "features": [
+        "Foyer, living room and separate bedroom",
+        "Bow-facing terrace",
+        "Marble from outside Rome"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/suite-grand",
+        "alt": "Rendering of a Grand Suite bedroom looking forward to the sea",
+        "credit": "Rendering courtesy of Aman at Sea"
+      }
+    },
+    {
+      "type": "Aman Suite",
+      "count": 1,
+      "size": "354 sq m (3,810 sq ft)",
+      "beds": "King bed; combines with a Premier Suite for two bedrooms",
+      "deck": "Deck 5, aft",
+      "features": [
+        "Private lift",
+        "Living and dining for eight, personal bar",
+        "Teak terrace with whirlpool bath and alfresco dining for six",
+        "Sauna and in-suite massage room"
+      ],
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/voyages/ships/amangati/suite-aman",
+        "alt": "Rendering of the Aman Suite terrace with its sunken whirlpool and the open sea",
+        "credit": "Rendering courtesy of Aman at Sea"
+      }
+    }
+  ],
+  "deckPlans": [],
+  "itineraries": [
+    {
+      "name": "Palma de Mallorca to Nice, 6 nights",
+      "nights": 6,
+      "direction": "Palma de Mallorca to Nice",
+      "days": [
+        {
+          "day": 1,
+          "title": "Palma de Mallorca",
+          "place": "Palma de Mallorca, Balearic Islands, Spain",
+          "lat": 39.5525,
+          "lng": 2.630278,
+          "summary": "Soaring spires and Moorish facades add historical context in this Balearic Isle, linking to pretty Soller, yacht clubs and resplendent beaches.",
+          "label": "Sails 22:00"
+        },
+        {
+          "day": 2,
+          "title": "Ibiza",
+          "place": "Ibiza, Spain",
+          "lat": 38.910136,
+          "lng": 1.449588,
+          "summary": "A soulful island; whitewashed walls, pine forests, sunlit sands and UNESCO-listed Phoenician ruins await beyond the isle’s frenetic heart.",
+          "label": "11:30 to 19:00"
+        },
+        {
+          "day": 3,
+          "title": "Barcelona",
+          "place": "Barcelona, Spain",
+          "lat": 41.359444,
+          "lng": 2.178889,
+          "summary": "Architectural odes rise skywards in the Catalonian capital, where locals stroll in centuries-old markets and find respite in Gothic Quarter bodegas.",
+          "label": "09:00 to 23:00"
+        },
+        {
+          "day": 4,
+          "title": "Palamos",
+          "place": "Palamós, Spain",
+          "lat": 41.842202,
+          "lng": 3.12315,
+          "summary": "The doorway to Spain’s less-travelled Costa Brava, Palamós leads to traditional Catalonian villages, quiet coves and the epicurean wonders of Girona.",
+          "label": "06:00 to 20:00"
+        },
+        {
+          "day": 5,
+          "title": "Marseille",
+          "place": "Marseille, France",
+          "lat": 43.3446562702501,
+          "lng": 5.33256571210601,
+          "summary": "Caught between limestone cliffs and the open sea, historic Marseille leans into the tide, retaining an unmistakably Mediterranean spirit.",
+          "label": "08:00 to 22:00"
+        },
+        {
+          "day": 6,
+          "title": "Saint Tropez",
+          "place": "Saint-Tropez, France",
+          "lat": 43.269878,
+          "lng": 6.628618,
+          "summary": "The grande dame of the Riviera, Saint-Tropez's superyacht-filled marina is complemented by noteworthy shopping and sun-drenched games of pétanque in the Place des Lices.",
+          "label": "08:00 to 23:30, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Nice round trip, 8 nights",
+      "nights": 8,
+      "direction": "Nice round trip",
+      "days": [
+        {
+          "day": 1,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "Sails 18:30"
+        },
+        {
+          "day": 2,
+          "title": "Elba",
+          "place": "Elba, Tuscan Archipelago",
+          "lat": 42.815,
+          "lng": 10.33,
+          "summary": "",
+          "label": "08:00 to 21:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Porto Cervo",
+          "place": "Porto Cervo, Sardinia",
+          "lat": 41.137,
+          "lng": 9.536,
+          "summary": "",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Bonifacio",
+          "place": "Bonifacio",
+          "lat": 41.387,
+          "lng": 9.159,
+          "summary": "",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Ajaccio",
+          "place": "Ajaccio",
+          "lat": 41.919,
+          "lng": 8.738,
+          "summary": "",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Calvi",
+          "place": "Calvi, Corsica, France",
+          "lat": 42.5646270047157,
+          "lng": 8.76238512241252,
+          "summary": "Beyond Calvi and its medieval citadel lie the ochre seastacks of Scandola, elegant L'Île-Rousse and the traditional hilltop villages of Balagne.",
+          "label": "07:00 to 22:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Saint Tropez",
+          "place": "Saint-Tropez, France",
+          "lat": 43.269878,
+          "lng": 6.628618,
+          "summary": "The grande dame of the Riviera, Saint-Tropez's superyacht-filled marina is complemented by noteworthy shopping and sun-drenched games of pétanque in the Place des Lices.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Cannes",
+          "place": "Cannes, France",
+          "lat": 43.541767,
+          "lng": 7.030907,
+          "summary": "Beyond its famed boulevards, Cannes is graced with gentle hills, sloping vineyards and sheltered beaches.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 9,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Nice to Marseille, 6 nights",
+      "nights": 6,
+      "direction": "Nice to Marseille",
+      "days": [
+        {
+          "day": 1,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 2,
+          "title": "Cannes",
+          "place": "Cannes, France",
+          "lat": 43.541767,
+          "lng": 7.030907,
+          "summary": "Beyond its famed boulevards, Cannes is graced with gentle hills, sloping vineyards and sheltered beaches.",
+          "label": "06:00 to 21:30, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Portofino",
+          "place": "Portofino, Italy",
+          "lat": 44.304687,
+          "lng": 9.215341,
+          "summary": "Portofino’s real charm lies in the grand villas, forested hills and tangible calm that presides over the Ligurian Sea.",
+          "label": "08:00 to 22:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Calvi",
+          "place": "Calvi, Corsica, France",
+          "lat": 42.5646270047157,
+          "lng": 8.76238512241252,
+          "summary": "Beyond Calvi and its medieval citadel lie the ochre seastacks of Scandola, elegant L'Île-Rousse and the traditional hilltop villages of Balagne.",
+          "label": "08:00 to 22:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Saint Tropez",
+          "place": "Saint-Tropez, France",
+          "lat": 43.269878,
+          "lng": 6.628618,
+          "summary": "The grande dame of the Riviera, Saint-Tropez's superyacht-filled marina is complemented by noteworthy shopping and sun-drenched games of pétanque in the Place des Lices.",
+          "label": "Arrives 08:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Saint Tropez",
+          "place": "Saint-Tropez, France",
+          "lat": 43.269878,
+          "lng": 6.628618,
+          "summary": "The grande dame of the Riviera, Saint-Tropez's superyacht-filled marina is complemented by noteworthy shopping and sun-drenched games of pétanque in the Place des Lices.",
+          "label": "Sails 20:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Marseille",
+          "place": "Marseille, France",
+          "lat": 43.3446562702501,
+          "lng": 5.33256571210601,
+          "summary": "Caught between limestone cliffs and the open sea, historic Marseille leans into the tide, retaining an unmistakably Mediterranean spirit.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Marseille to Nice, 6 nights",
+      "nights": 6,
+      "direction": "Marseille to Nice",
+      "days": [
+        {
+          "day": 1,
+          "title": "Marseille",
+          "place": "Marseille, France",
+          "lat": 43.3446562702501,
+          "lng": 5.33256571210601,
+          "summary": "Caught between limestone cliffs and the open sea, historic Marseille leans into the tide, retaining an unmistakably Mediterranean spirit.",
+          "label": "Sails 18:00"
+        },
+        {
+          "day": 2,
+          "title": "Sanary-sur-Mer",
+          "place": "Sanary-sur-Mer, France",
+          "lat": 43.11408,
+          "lng": 5.802397,
+          "summary": "Once a haven for exiled thinkers, Sanary offers a window into coastal Provence, edged by the sculpted coves of the UNESCO-listed Calanques.",
+          "label": "08:00 to 21:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Saint Tropez",
+          "place": "Saint-Tropez, France",
+          "lat": 43.269878,
+          "lng": 6.628618,
+          "summary": "The grande dame of the Riviera, Saint-Tropez's superyacht-filled marina is complemented by noteworthy shopping and sun-drenched games of pétanque in the Place des Lices.",
+          "label": "Arrives 07:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Saint Tropez",
+          "place": "Saint-Tropez, France",
+          "lat": 43.269878,
+          "lng": 6.628618,
+          "summary": "The grande dame of the Riviera, Saint-Tropez's superyacht-filled marina is complemented by noteworthy shopping and sun-drenched games of pétanque in the Place des Lices.",
+          "label": "Sails 21:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Cannes",
+          "place": "Cannes, France",
+          "lat": 43.541767,
+          "lng": 7.030907,
+          "summary": "Beyond its famed boulevards, Cannes is graced with gentle hills, sloping vineyards and sheltered beaches.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Villefranche",
+          "place": "Villefranche",
+          "lat": 43.704,
+          "lng": 7.311,
+          "summary": "",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Nice round trip, 5 nights",
+      "nights": 5,
+      "direction": "Nice round trip",
+      "days": [
+        {
+          "day": 1,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 2,
+          "title": "Cannes",
+          "place": "Cannes, France",
+          "lat": 43.541767,
+          "lng": 7.030907,
+          "summary": "Beyond its famed boulevards, Cannes is graced with gentle hills, sloping vineyards and sheltered beaches.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Saint Tropez",
+          "place": "Saint-Tropez, France",
+          "lat": 43.269878,
+          "lng": 6.628618,
+          "summary": "The grande dame of the Riviera, Saint-Tropez's superyacht-filled marina is complemented by noteworthy shopping and sun-drenched games of pétanque in the Place des Lices.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Beaulieu",
+          "place": "Beaulieu-sur-Mer, France",
+          "lat": 43.7065,
+          "lng": 7.3389,
+          "summary": "Tucked between Nice and Monaco, these twin Riviera towns blend lemon groves and picturesque villas with Belle Époque nostalgia.",
+          "label": "Arrives 06:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Beaulieu",
+          "place": "Beaulieu-sur-Mer, France",
+          "lat": 43.7065,
+          "lng": 7.3389,
+          "summary": "Tucked between Nice and Monaco, these twin Riviera towns blend lemon groves and picturesque villas with Belle Époque nostalgia.",
+          "label": "Sails 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "Arrives 05:00"
+        }
+      ]
+    },
+    {
+      "name": "Nice to Florence (Livorno), 6 nights",
+      "nights": 6,
+      "direction": "Nice to Florence",
+      "days": [
+        {
+          "day": 1,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 2,
+          "title": "San Remo",
+          "place": "San Remo, Italy",
+          "lat": 43.818991,
+          "lng": 7.784683,
+          "summary": "From La Pigna’s medieval lanes to regal hillside villas and gardens that thrive in the Italian Riviera sun, San Remo’s offerings are multifaceted.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Genoa",
+          "place": "Genoa, Italy",
+          "lat": 44.41139853119931,
+          "lng": 8.918566918688722,
+          "summary": "Genoa shaped Columbus, from its stone arcades to its grand palazzi. Salt-laced maritime winds still speak of journeys begun and horizons imagined.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 4,
+          "title": "Portofino",
+          "place": "Portofino, Italy",
+          "lat": 44.304687,
+          "lng": 9.215341,
+          "summary": "Portofino’s real charm lies in the grand villas, forested hills and tangible calm that presides over the Ligurian Sea.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Cinque Terre",
+          "place": "Porto Venere, Italy",
+          "lat": 44.051111,
+          "lng": 9.835965,
+          "summary": "From timeless Porto Venere, the Gulf of Poets unfurls towards the sunlit cliffs of Cinque Terre, where pastel-painted villages tumble towards the sea.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Viareggio",
+          "place": "Viareggio, Italy",
+          "lat": 43.86131,
+          "lng": 10.23811,
+          "summary": "Sunlit promenades lead from Forte dei Marmi’s shores to Pietrasanta’s art-lined streets. Just beyond, the UNESCO monuments of Piazza del Duomo offer 900-year-old architectural grace.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Florence",
+          "place": "Florence (Livorno), Italy",
+          "lat": 43.55820999799999,
+          "lng": 10.299809758564743,
+          "summary": "Tuscan vineyards and leaning towers entice in Livorno, a portal to Florence, known for its architecture and neighbouring Lucca and Siena.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Naples to Salerno, 5 nights",
+      "nights": 5,
+      "direction": "Naples to Salerno",
+      "days": [
+        {
+          "day": 1,
+          "title": "Naples",
+          "place": "Naples, Italy",
+          "lat": 40.8371746019429,
+          "lng": 14.2605759890679,
+          "summary": "A city of appetite where history and hedonism meet, Naples’ grand buildings and bustling markets are framed by the mighty Vesuvius.",
+          "label": "Sails 21:00"
+        },
+        {
+          "day": 2,
+          "title": "Ischia",
+          "place": "Ischia, Italy",
+          "lat": 40.7528578664335,
+          "lng": 13.9098325678411,
+          "summary": "Nourished by thermal baths and hilltop gardens, life unfolds slowly in Ischia, where locals dine in seafront trattorias and fishing nets line the port.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Sorrento",
+          "place": "Sorrento, Italy",
+          "lat": 40.631452,
+          "lng": 14.375299,
+          "summary": "Byron, Goethe and Grand Tour travellers found their inspiration here amidst white cliffs, citrus groves and Sorrento’s rising streets.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Capri",
+          "place": "Capri, Italy",
+          "lat": 40.5571,
+          "lng": 14.2423,
+          "summary": "Once a retreat for emperors and poets, today, Capri gleams with centuries of cultural memory and a timeless elegance.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Amalfi",
+          "place": "Amalfi",
+          "lat": 40.634,
+          "lng": 14.602,
+          "summary": "",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Salerno",
+          "place": "Salerno",
+          "lat": 40.676,
+          "lng": 14.75,
+          "summary": "",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Salerno to Naples, 5 nights",
+      "nights": 5,
+      "direction": "Salerno to Naples",
+      "days": [
+        {
+          "day": 1,
+          "title": "Salerno",
+          "place": "Salerno",
+          "lat": 40.676,
+          "lng": 14.75,
+          "summary": "",
+          "label": "Sails 19:00"
+        },
+        {
+          "day": 2,
+          "title": "Amalfi",
+          "place": "Amalfi",
+          "lat": 40.634,
+          "lng": 14.602,
+          "summary": "",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Capri",
+          "place": "Capri, Italy",
+          "lat": 40.5571,
+          "lng": 14.2423,
+          "summary": "Once a retreat for emperors and poets, today, Capri gleams with centuries of cultural memory and a timeless elegance.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Sorrento",
+          "place": "Sorrento, Italy",
+          "lat": 40.631452,
+          "lng": 14.375299,
+          "summary": "Byron, Goethe and Grand Tour travellers found their inspiration here amidst white cliffs, citrus groves and Sorrento’s rising streets.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Ischia",
+          "place": "Ischia, Italy",
+          "lat": 40.7528578664335,
+          "lng": 13.9098325678411,
+          "summary": "Nourished by thermal baths and hilltop gardens, life unfolds slowly in Ischia, where locals dine in seafront trattorias and fishing nets line the port.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Naples",
+          "place": "Naples, Italy",
+          "lat": 40.8371746019429,
+          "lng": 14.2605759890679,
+          "summary": "A city of appetite where history and hedonism meet, Naples’ grand buildings and bustling markets are framed by the mighty Vesuvius.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Naples to Salerno, 5 nights, June 2027",
+      "nights": 5,
+      "direction": "Naples to Salerno (June 2027)",
+      "days": [
+        {
+          "day": 1,
+          "title": "Naples",
+          "place": "Naples, Italy",
+          "lat": 40.8371746019429,
+          "lng": 14.2605759890679,
+          "summary": "A city of appetite where history and hedonism meet, Naples’ grand buildings and bustling markets are framed by the mighty Vesuvius.",
+          "label": "Sails 19:00"
+        },
+        {
+          "day": 2,
+          "title": "Ischia",
+          "place": "Ischia, Italy",
+          "lat": 40.7528578664335,
+          "lng": 13.9098325678411,
+          "summary": "Nourished by thermal baths and hilltop gardens, life unfolds slowly in Ischia, where locals dine in seafront trattorias and fishing nets line the port.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Sorrento",
+          "place": "Sorrento, Italy",
+          "lat": 40.631452,
+          "lng": 14.375299,
+          "summary": "Byron, Goethe and Grand Tour travellers found their inspiration here amidst white cliffs, citrus groves and Sorrento’s rising streets.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Capri",
+          "place": "Capri, Italy",
+          "lat": 40.5571,
+          "lng": 14.2423,
+          "summary": "Once a retreat for emperors and poets, today, Capri gleams with centuries of cultural memory and a timeless elegance.",
+          "label": "Arrives 06:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Capri",
+          "place": "Capri, Italy",
+          "lat": 40.5571,
+          "lng": 14.2423,
+          "summary": "Once a retreat for emperors and poets, today, Capri gleams with centuries of cultural memory and a timeless elegance.",
+          "label": "Sails 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Salerno",
+          "place": "Salerno",
+          "lat": 40.676,
+          "lng": 14.75,
+          "summary": "",
+          "label": "Arrives 05:00"
+        }
+      ]
+    },
+    {
+      "name": "Salerno round trip, 5 nights",
+      "nights": 5,
+      "direction": "Salerno round trip",
+      "days": [
+        {
+          "day": 1,
+          "title": "Salerno",
+          "place": "Salerno",
+          "lat": 40.676,
+          "lng": 14.75,
+          "summary": "",
+          "label": "Sails 19:00"
+        },
+        {
+          "day": 2,
+          "title": "Amalfi",
+          "place": "Amalfi",
+          "lat": 40.634,
+          "lng": 14.602,
+          "summary": "",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Capri",
+          "place": "Capri, Italy",
+          "lat": 40.5571,
+          "lng": 14.2423,
+          "summary": "Once a retreat for emperors and poets, today, Capri gleams with centuries of cultural memory and a timeless elegance.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Ischia",
+          "place": "Ischia, Italy",
+          "lat": 40.7528578664335,
+          "lng": 13.9098325678411,
+          "summary": "Nourished by thermal baths and hilltop gardens, life unfolds slowly in Ischia, where locals dine in seafront trattorias and fishing nets line the port.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Sorrento",
+          "place": "Sorrento, Italy",
+          "lat": 40.631452,
+          "lng": 14.375299,
+          "summary": "Byron, Goethe and Grand Tour travellers found their inspiration here amidst white cliffs, citrus groves and Sorrento’s rising streets.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Salerno",
+          "place": "Salerno",
+          "lat": 40.676,
+          "lng": 14.75,
+          "summary": "",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Valletta to Catania, 5 nights",
+      "nights": 5,
+      "direction": "Valletta to Catania",
+      "days": [
+        {
+          "day": 1,
+          "title": "Valletta",
+          "place": "Valletta, Malta",
+          "lat": 35.88901052872676,
+          "lng": 14.508053538948033,
+          "summary": "Little boats drift below the ochre walls of Valletta, a UNESCO-listed masterpiece of spires and staircases where Renaissance art meets Baroque beauty.",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 2,
+          "title": "Gozo",
+          "place": "Gozo, Malta",
+          "lat": 36.0252799036185,
+          "lng": 14.3001539404202,
+          "summary": "Time slows in little Gozo, where ageless villages dot the land and hilltop citadels overlook quiet coves awash in shades of blue.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Syracuse",
+          "place": "Syracuse, Sicily, Italy",
+          "lat": 37.062703,
+          "lng": 15.286778,
+          "summary": "Baroque piazzas and time-stopped courtyards dot Ortygia in Siracuse’s ancient heart; a UNESCO-listed isle infused with Sicilian spirit.",
+          "label": "06:30 to 23:00"
+        },
+        {
+          "day": 4,
+          "title": "Taormina",
+          "place": "Taormina, Sicily",
+          "lat": 37.835,
+          "lng": 15.276,
+          "summary": "",
+          "label": "Arrives 06:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Taormina",
+          "place": "Taormina, Sicily",
+          "lat": 37.835,
+          "lng": 15.276,
+          "summary": "",
+          "label": "Sails 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Catania",
+          "place": "Catania, Sicily, Italy",
+          "lat": 37.495999,
+          "lng": 15.095972,
+          "summary": "Framed by the Ionian Sea and Mount Etna’s imposing peak, Catania’s lava stone buildings tell the story of a city risen from the ashes.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Catania to Dubrovnik, 7 nights",
+      "nights": 7,
+      "direction": "Catania to Dubrovnik",
+      "days": [
+        {
+          "day": 1,
+          "title": "Catania",
+          "place": "Catania, Sicily, Italy",
+          "lat": 37.495999,
+          "lng": 15.095972,
+          "summary": "Framed by the Ionian Sea and Mount Etna’s imposing peak, Catania’s lava stone buildings tell the story of a city risen from the ashes.",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 2,
+          "title": "Taormina",
+          "place": "Taormina, Sicily",
+          "lat": 37.835,
+          "lng": 15.276,
+          "summary": "",
+          "label": "Arrives 06:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Taormina",
+          "place": "Taormina, Sicily",
+          "lat": 37.835,
+          "lng": 15.276,
+          "summary": "",
+          "label": "Sails 18:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Crotone",
+          "place": "Crotone",
+          "lat": 39.083,
+          "lng": 17.13,
+          "summary": "",
+          "label": "07:00 to 22:00"
+        },
+        {
+          "day": 5,
+          "title": "Gallipoli",
+          "place": "Gallipoli, Italy",
+          "lat": 40.059499,
+          "lng": 17.979083,
+          "summary": "Speared on Puglia’s heel, Gallipoli blends small-town allure with Ionian beaches, Baroque Lecce and the vineyards of Salento Peninsula.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Otranto",
+          "place": "Otranto, Italy",
+          "lat": 40.1512468616742,
+          "lng": 18.4961841116994,
+          "summary": "Mosaics gleam underfoot in Otranto’s 1,000-year-old cathedral, while castle walls frame the sea and nearby UNESCO sites trace Apulia’s layered past.",
+          "label": "06:00 to 18:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Kotor",
+          "place": "Kotor, Montenegro",
+          "lat": 42.42541608,
+          "lng": 18.76715201,
+          "summary": "Anchored by fairy-tale spires and coral rooftops, UNESCO-listed Kotor crowns the canyons of its namesake bay and the surrounding medieval villages.",
+          "label": "09:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Dubrovnik",
+          "place": "Dubrovnik",
+          "lat": 42.66,
+          "lng": 18.085,
+          "summary": "",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Dubrovnik to Venice, 6 nights",
+      "nights": 6,
+      "direction": "Dubrovnik to Venice",
+      "days": [
+        {
+          "day": 1,
+          "title": "Dubrovnik",
+          "place": "Dubrovnik",
+          "lat": 42.66,
+          "lng": 18.085,
+          "summary": "",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Hvar",
+          "place": "Hvar, Croatia",
+          "lat": 43.169998,
+          "lng": 16.44,
+          "summary": "From Hvar’s hilltop fort, sailboats drift between a ribbon of Adriatic isles, coloured by ancient vineyards, holm-oak forests and fields of lavender.",
+          "label": "06:00 to 19:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Zadar",
+          "place": "Zadar",
+          "lat": 44.116,
+          "lng": 15.225,
+          "summary": "",
+          "label": "08:00 to 22:00"
+        },
+        {
+          "day": 4,
+          "title": "Rovinj",
+          "place": "Rovinj, Croatia",
+          "lat": 45.084915,
+          "lng": 13.634419,
+          "summary": "Venetian bell towers rise above Rovinj’s cobbled lanes and harbour, a Dalmatian jewel ringed by islands where the Adriatic meets the Istrian coast.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Trieste",
+          "place": "Trieste, Italy",
+          "lat": 45.65,
+          "lng": 13.764444,
+          "summary": "Influenced by empire and sea, Trieste reveals Roman traces, Austro-Hungarian facades and a coastline shaped for cafe terraces and quiet walks.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Venice",
+          "place": "Venice, Italy",
+          "lat": 45.4365755828423,
+          "lng": 12.3090697473262,
+          "summary": "Concealed in waterfront palazzi, walled gardens and private collections owned for generations, beauty is found behind closed doors in La Serenissima.",
+          "label": "Arrives 07:00"
+        },
+        {
+          "day": 7,
+          "title": "Venice",
+          "place": "Venice, Italy",
+          "lat": 45.4365755828423,
+          "lng": 12.3090697473262,
+          "summary": "Concealed in waterfront palazzi, walled gardens and private collections owned for generations, beauty is found behind closed doors in La Serenissima."
+        }
+      ]
+    },
+    {
+      "name": "Venice to Dubrovnik, 6 nights",
+      "nights": 6,
+      "direction": "Venice to Dubrovnik",
+      "days": [
+        {
+          "day": 1,
+          "title": "Venice",
+          "place": "Venice, Italy",
+          "lat": 45.4365755828423,
+          "lng": 12.3090697473262,
+          "summary": "Concealed in waterfront palazzi, walled gardens and private collections owned for generations, beauty is found behind closed doors in La Serenissima.",
+          "label": "Sails 19:00"
+        },
+        {
+          "day": 2,
+          "title": "Koper",
+          "place": "Koper, Slovenia",
+          "lat": 45.550632,
+          "lng": 13.734412,
+          "summary": "Koper’s medieval Old Town is a prelude to the Venetian architecture of Piran, fairytale-esque Lake Bled and the rossa terroir of Istria.",
+          "label": "06:00 to 18:00"
+        },
+        {
+          "day": 3,
+          "title": "Zadar",
+          "place": "Zadar",
+          "lat": 44.116,
+          "lng": 15.225,
+          "summary": "",
+          "label": "09:00 to 22:00"
+        },
+        {
+          "day": 4,
+          "title": "Pula",
+          "place": "Pula, Croatia",
+          "lat": 44.8688939667132,
+          "lng": 13.8330905461038,
+          "summary": "Roman arches frame Pula's streets, home to 2,000-year-old relics. Along the waterfront, fresh seafood brings a taste of the Adriatic to the table.",
+          "label": "07:00 to 19:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Split",
+          "place": "Split, Croatia",
+          "lat": 43.50289633491305,
+          "lng": 16.441754724653073,
+          "summary": "Sun-dappled courtyards and cobbled lanes weave through the UNESCO heart of Split, where Venetian facades spill onto elegant waterfront promenades.",
+          "label": "09:00 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Hvar",
+          "place": "Hvar, Croatia",
+          "lat": 43.169998,
+          "lng": 16.44,
+          "summary": "From Hvar’s hilltop fort, sailboats drift between a ribbon of Adriatic isles, coloured by ancient vineyards, holm-oak forests and fields of lavender.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Dubrovnik",
+          "place": "Dubrovnik",
+          "lat": 42.66,
+          "lng": 18.085,
+          "summary": "",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Dubrovnik to Venice, 6 nights, August 2027",
+      "nights": 6,
+      "direction": "Dubrovnik to Venice (August 2027)",
+      "days": [
+        {
+          "day": 1,
+          "title": "Dubrovnik",
+          "place": "Dubrovnik",
+          "lat": 42.66,
+          "lng": 18.085,
+          "summary": "",
+          "label": "Sails 22:00"
+        },
+        {
+          "day": 2,
+          "title": "Split",
+          "place": "Split, Croatia",
+          "lat": 43.50289633491305,
+          "lng": 16.441754724653073,
+          "summary": "Sun-dappled courtyards and cobbled lanes weave through the UNESCO heart of Split, where Venetian facades spill onto elegant waterfront promenades.",
+          "label": "08:00 to 23:00"
+        },
+        {
+          "day": 3,
+          "title": "Hvar",
+          "place": "Hvar, Croatia",
+          "lat": 43.169998,
+          "lng": 16.44,
+          "summary": "From Hvar’s hilltop fort, sailboats drift between a ribbon of Adriatic isles, coloured by ancient vineyards, holm-oak forests and fields of lavender.",
+          "label": "06:00 to 19:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Zadar",
+          "place": "Zadar",
+          "lat": 44.116,
+          "lng": 15.225,
+          "summary": "",
+          "label": "08:00 to 19:00"
+        },
+        {
+          "day": 5,
+          "title": "Trieste",
+          "place": "Trieste, Italy",
+          "lat": 45.65,
+          "lng": 13.764444,
+          "summary": "Influenced by empire and sea, Trieste reveals Roman traces, Austro-Hungarian facades and a coastline shaped for cafe terraces and quiet walks.",
+          "label": "08:30 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Venice",
+          "place": "Venice, Italy",
+          "lat": 45.4365755828423,
+          "lng": 12.3090697473262,
+          "summary": "Concealed in waterfront palazzi, walled gardens and private collections owned for generations, beauty is found behind closed doors in La Serenissima.",
+          "label": "Arrives 06:00"
+        },
+        {
+          "day": 7,
+          "title": "Venice",
+          "place": "Venice, Italy",
+          "lat": 45.4365755828423,
+          "lng": 12.3090697473262,
+          "summary": "Concealed in waterfront palazzi, walled gardens and private collections owned for generations, beauty is found behind closed doors in La Serenissima."
+        }
+      ]
+    },
+    {
+      "name": "Venice to Dubrovnik, 6 nights, August 2027",
+      "nights": 6,
+      "direction": "Venice to Dubrovnik (August 2027)",
+      "days": [
+        {
+          "day": 1,
+          "title": "Venice",
+          "place": "Venice, Italy",
+          "lat": 45.4365755828423,
+          "lng": 12.3090697473262,
+          "summary": "Concealed in waterfront palazzi, walled gardens and private collections owned for generations, beauty is found behind closed doors in La Serenissima.",
+          "label": "Sails 19:00"
+        },
+        {
+          "day": 2,
+          "title": "Chioggia",
+          "place": "Chioggia, Italy",
+          "lat": 45.21133675370794,
+          "lng": 12.261271946049137,
+          "summary": "Chioggia’s charm lies in historic churches and unhurried markets, etched with quiet canals and narrow alleyways.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 3,
+          "title": "Rovinj",
+          "place": "Rovinj, Croatia",
+          "lat": 45.084915,
+          "lng": 13.634419,
+          "summary": "Venetian bell towers rise above Rovinj’s cobbled lanes and harbour, a Dalmatian jewel ringed by islands where the Adriatic meets the Istrian coast.",
+          "label": "06:00 to 19:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Sibenik",
+          "place": "Šibenik, Croatia",
+          "lat": 43.730202,
+          "lng": 15.894868,
+          "summary": "Sheltered by a ring of forts and the grand dome of Saint James’ Cathedral, Sibenik’s quiet harbour is the oldest on Croatia’s Adriatic Coast.",
+          "label": "08:00 to 22:00"
+        },
+        {
+          "day": 5,
+          "title": "Korcula",
+          "place": "Korčula, Croatia",
+          "lat": 42.9626835362586,
+          "lng": 17.1332952815956,
+          "summary": "Waterfront villas stand sentinel over the Adriatic in pretty Korcula, where gentle breezes drift from crystal-clear shores to cypress-scented hillsides.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Split",
+          "place": "Split, Croatia",
+          "lat": 43.50289633491305,
+          "lng": 16.441754724653073,
+          "summary": "Sun-dappled courtyards and cobbled lanes weave through the UNESCO heart of Split, where Venetian facades spill onto elegant waterfront promenades.",
+          "label": "06:00 to 19:00"
+        },
+        {
+          "day": 7,
+          "title": "Dubrovnik",
+          "place": "Dubrovnik",
+          "lat": 42.66,
+          "lng": 18.085,
+          "summary": "",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Dubrovnik to Corfu, 7 nights",
+      "nights": 7,
+      "direction": "Dubrovnik to Corfu",
+      "days": [
+        {
+          "day": 1,
+          "title": "Dubrovnik",
+          "place": "Dubrovnik",
+          "lat": 42.66,
+          "lng": 18.085,
+          "summary": "",
+          "label": "Sails 20:30"
+        },
+        {
+          "day": 2,
+          "title": "Hvar",
+          "place": "Hvar, Croatia",
+          "lat": 43.169998,
+          "lng": 16.44,
+          "summary": "From Hvar’s hilltop fort, sailboats drift between a ribbon of Adriatic isles, coloured by ancient vineyards, holm-oak forests and fields of lavender.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Korcula",
+          "place": "Korčula, Croatia",
+          "lat": 42.9626835362586,
+          "lng": 17.1332952815956,
+          "summary": "Waterfront villas stand sentinel over the Adriatic in pretty Korcula, where gentle breezes drift from crystal-clear shores to cypress-scented hillsides.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Kotor",
+          "place": "Kotor, Montenegro",
+          "lat": 42.42541608,
+          "lng": 18.76715201,
+          "summary": "Anchored by fairy-tale spires and coral rooftops, UNESCO-listed Kotor crowns the canyons of its namesake bay and the surrounding medieval villages.",
+          "label": "Arrives 16:30"
+        },
+        {
+          "day": 5,
+          "title": "Kotor",
+          "place": "Kotor, Montenegro",
+          "lat": 42.42541608,
+          "lng": 18.76715201,
+          "summary": "Anchored by fairy-tale spires and coral rooftops, UNESCO-listed Kotor crowns the canyons of its namesake bay and the surrounding medieval villages.",
+          "label": "Sails 18:00"
+        },
+        {
+          "day": 6,
+          "title": "Vlore",
+          "place": "Vlorë, Albania",
+          "lat": 40.449926,
+          "lng": 19.484636,
+          "summary": "A gateway to Albania’s Riviera, where Apollonia and Byllis gaze across Adriatic and Ionian waters while harbouring the weight of 2,500 years of history.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Sarandë",
+          "place": "Sarandë",
+          "lat": 39.875,
+          "lng": 20.005,
+          "summary": "",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 8,
+          "title": "Corfu",
+          "place": "Corfu, Greece",
+          "lat": 39.633056,
+          "lng": 19.902778,
+          "summary": "A UNESCO World Heritage Site, the Venetian facades and labyrinthine streets of the Old Town of Corfu conceal hushed courtyards and neoclassical homes.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Corfu to Athens (Piraeus), 7 nights",
+      "nights": 7,
+      "direction": "Corfu to Athens",
+      "days": [
+        {
+          "day": 1,
+          "title": "Corfu",
+          "place": "Corfu, Greece",
+          "lat": 39.633056,
+          "lng": 19.902778,
+          "summary": "A UNESCO World Heritage Site, the Venetian facades and labyrinthine streets of the Old Town of Corfu conceal hushed courtyards and neoclassical homes.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Zakynthos",
+          "place": "Zakynthos, Greece",
+          "lat": 37.781502,
+          "lng": 20.901232,
+          "summary": "A jewel in the Ionian Sea, Zakynthos embraces quiet beaches where turtles nest and limestone headlands are carved to shipwrecked shores.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Katakolon",
+          "place": "Katakolon, Greece",
+          "lat": 37.646111,
+          "lng": 21.325,
+          "summary": "Echoes of ancient Olympia drift across pine-scented hillsides around quiet Katakolon, where olive groves and vineyards blanket the land.",
+          "label": "06:00 to 22:00"
+        },
+        {
+          "day": 4,
+          "title": "Kalamata",
+          "place": "Kalamata, Greece",
+          "lat": 37.0198352219234,
+          "lng": 22.1168793018243,
+          "summary": "In sleepy Kalamata, olive groves and waterfalls tumble down to Bronze Age ruins and trails wind along castle-dotted hillsides.",
+          "label": "08:00 to 21:00"
+        },
+        {
+          "day": 5,
+          "title": "Monemvasia",
+          "place": "Monemvasia, Greece",
+          "lat": 36.6925587197965,
+          "lng": 23.0435942996587,
+          "summary": "A walled city pinched between sheer cliffs and the indigo sea, medieval Monemvasia is a centuries-old hideaway in the heart of the Peloponnese.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Milos",
+          "place": "Milos, Greece",
+          "lat": 36.7219263305503,
+          "lng": 24.44570676,
+          "summary": "Bright white fishermen’s homes and wind-sculpted rocks contrast cerulean shores on tranquil Milos, a volcanic isle steeped in art and history.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Hydra",
+          "place": "Hydra, Greece",
+          "lat": 37.350815,
+          "lng": 23.466582,
+          "summary": "Time slows in tiny Hydra, where grand historical buildings line the hillsides and fishing boats bob in crystal-clear waters. Quaint, quiet and quintessentially Greek.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Athens",
+          "place": "Athens (Piraeus), Greece",
+          "lat": 37.94497703533731,
+          "lng": 23.642479859381044,
+          "summary": "Athens main port, Piraeus' seafaring history brims with neoclassical character.",
+          "label": "Arrives 04:30"
+        }
+      ]
+    },
+    {
+      "name": "Athens round trip, 7 nights",
+      "nights": 7,
+      "direction": "Athens round trip",
+      "days": [
+        {
+          "day": 1,
+          "title": "Athens",
+          "place": "Athens (Piraeus), Greece",
+          "lat": 37.94497703533731,
+          "lng": 23.642479859381044,
+          "summary": "Athens main port, Piraeus' seafaring history brims with neoclassical character.",
+          "label": "Sails 21:30"
+        },
+        {
+          "day": 2,
+          "title": "Lavrio",
+          "place": "Lavrio",
+          "lat": 37.713,
+          "lng": 24.056,
+          "summary": "",
+          "label": "06:00 to 21:00"
+        },
+        {
+          "day": 3,
+          "title": "Ikaria",
+          "place": "Ikaria, Greece",
+          "lat": 37.6148,
+          "lng": 26.297,
+          "summary": "From sun-dappled beaches to Therma’s healing springs, Ikaria is peppered with relics of the past, echoes of an era shaped by pilgrimage and ritual.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Mykonos",
+          "place": "Mykonos, Greece",
+          "lat": 37.465764,
+          "lng": 25.319753,
+          "summary": "Cobalt shutters, stone chapels and still shores frame Mykonos, the departure point to Delos, sanctuary of Apollo and heart of ancient Cycladic life.",
+          "label": "06:00 to 21:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Kusadasi",
+          "place": "Kuşadası, Turkey",
+          "lat": 37.863148134110205,
+          "lng": 27.255610630407098,
+          "summary": "Myth and legend echo among the stacked stones of Ephesus, hemmed by the Byzantine castle of Kusadası and beautiful Aegean beaches beyond.",
+          "label": "07:00 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Patmos",
+          "place": "Patmos, Greece",
+          "lat": 37.323008,
+          "lng": 26.545973,
+          "summary": "A crossroad of history and myth, Patmos is defined by its hillside settlements and the open Aegean Sea that frames it.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Paros",
+          "place": "Paros, Greece",
+          "lat": 37.086695,
+          "lng": 25.148542,
+          "summary": "Home to golden beaches, blue-domed churches and the 9th century BC sanctuary of Apollo and Artemis, Paros rests at the heart of the Cyclades.",
+          "label": "07:00 to 19:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Athens",
+          "place": "Athens (Piraeus), Greece",
+          "lat": 37.94497703533731,
+          "lng": 23.642479859381044,
+          "summary": "Athens main port, Piraeus' seafaring history brims with neoclassical character.",
+          "label": "Arrives 04:30"
+        }
+      ]
+    },
+    {
+      "name": "Athens (Piraeus) to Rhodes, 7 nights",
+      "nights": 7,
+      "direction": "Athens to Rhodes",
+      "days": [
+        {
+          "day": 1,
+          "title": "Athens",
+          "place": "Athens (Piraeus), Greece",
+          "lat": 37.94497703533731,
+          "lng": 23.642479859381044,
+          "summary": "Athens main port, Piraeus' seafaring history brims with neoclassical character.",
+          "label": "Sails 19:00"
+        },
+        {
+          "day": 2,
+          "title": "Hydra",
+          "place": "Hydra, Greece",
+          "lat": 37.350815,
+          "lng": 23.466582,
+          "summary": "Time slows in tiny Hydra, where grand historical buildings line the hillsides and fishing boats bob in crystal-clear waters. Quaint, quiet and quintessentially Greek.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Milos",
+          "place": "Milos, Greece",
+          "lat": 36.7219263305503,
+          "lng": 24.44570676,
+          "summary": "Bright white fishermen’s homes and wind-sculpted rocks contrast cerulean shores on tranquil Milos, a volcanic isle steeped in art and history.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Santorini",
+          "place": "Santorini, Greece",
+          "lat": 36.410833,
+          "lng": 25.420833,
+          "summary": "In Santorini, blue cupolas crown whitewashed houses, crystalline seas lap black-sand shores and fiery sunsets set the sky alight.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Kalymnos",
+          "place": "Kalymnos, Greece",
+          "lat": 36.99051,
+          "lng": 26.92665,
+          "summary": "Craggy peaks are framed by whitewashed towns and powder-soft shores in Kalymnos; a quintessentially Greek isle etched in streaks of vivid blue.",
+          "label": "08:00 to 19:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Bodrum",
+          "place": "Bodrum, Turkey",
+          "lat": 37.0249503642893,
+          "lng": 27.43838300415715,
+          "summary": "History and modernity align in Bodrum, where oceanfront lounges shoulder UNESCO wonders on the edge of the Aegean.",
+          "label": "Arrives 06:00"
+        },
+        {
+          "day": 7,
+          "title": "Bodrum",
+          "place": "Bodrum, Turkey",
+          "lat": 37.0249503642893,
+          "lng": 27.43838300415715,
+          "summary": "History and modernity align in Bodrum, where oceanfront lounges shoulder UNESCO wonders on the edge of the Aegean.",
+          "label": "Sails 18:00"
+        },
+        {
+          "day": 8,
+          "title": "Rhodes",
+          "place": "Rhodes",
+          "lat": 36.451,
+          "lng": 28.227,
+          "summary": "",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Rhodes to Bodrum, 7 nights",
+      "nights": 7,
+      "direction": "Rhodes to Bodrum",
+      "days": [
+        {
+          "day": 1,
+          "title": "Rhodes",
+          "place": "Rhodes",
+          "lat": 36.451,
+          "lng": 28.227,
+          "summary": "",
+          "label": "Sails 19:00"
+        },
+        {
+          "day": 2,
+          "title": "Nisyros",
+          "place": "Nisyros",
+          "lat": 36.613,
+          "lng": 27.17,
+          "summary": "",
+          "label": "06:00 to 21:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Agios Nikolaos",
+          "place": "Agios Nikolaos, Crete",
+          "lat": 35.19,
+          "lng": 25.717,
+          "summary": "",
+          "label": "08:00 to 22:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Santorini",
+          "place": "Santorini, Greece",
+          "lat": 36.410833,
+          "lng": 25.420833,
+          "summary": "In Santorini, blue cupolas crown whitewashed houses, crystalline seas lap black-sand shores and fiery sunsets set the sky alight.",
+          "label": "06:00 to 21:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Chios",
+          "place": "Chios, Greece",
+          "lat": 38.3696012758634,
+          "lng": 26.1406705021655,
+          "summary": "Medieval hamlets and hilltop monasteries spill down to the Aegean at Chios town, flanked by sleepy fishing villages and quiet castaway beaches.",
+          "label": "09:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Kusadasi",
+          "place": "Kuşadası, Turkey",
+          "lat": 37.863148134110205,
+          "lng": 27.255610630407098,
+          "summary": "Myth and legend echo among the stacked stones of Ephesus, hemmed by the Byzantine castle of Kusadası and beautiful Aegean beaches beyond.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 7,
+          "title": "Patmos",
+          "place": "Patmos, Greece",
+          "lat": 37.323008,
+          "lng": 26.545973,
+          "summary": "A crossroad of history and myth, Patmos is defined by its hillside settlements and the open Aegean Sea that frames it.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Bodrum",
+          "place": "Bodrum, Turkey",
+          "lat": 37.0249503642893,
+          "lng": 27.43838300415715,
+          "summary": "History and modernity align in Bodrum, where oceanfront lounges shoulder UNESCO wonders on the edge of the Aegean.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Bodrum to Istanbul, 7 nights",
+      "nights": 7,
+      "direction": "Bodrum to Istanbul",
+      "days": [
+        {
+          "day": 1,
+          "title": "Bodrum",
+          "place": "Bodrum, Turkey",
+          "lat": 37.0249503642893,
+          "lng": 27.43838300415715,
+          "summary": "History and modernity align in Bodrum, where oceanfront lounges shoulder UNESCO wonders on the edge of the Aegean.",
+          "label": "Sails 21:00"
+        },
+        {
+          "day": 2,
+          "title": "Patmos",
+          "place": "Patmos, Greece",
+          "lat": 37.323008,
+          "lng": 26.545973,
+          "summary": "A crossroad of history and myth, Patmos is defined by its hillside settlements and the open Aegean Sea that frames it.",
+          "label": "06:00 to 19:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Skiros",
+          "place": "Skyros, Greece",
+          "lat": 38.8426869254011,
+          "lng": 24.5368772918351,
+          "summary": "Steeped in the stories of Achilles and Theseus, Skyros bears the imprint of centuries of conquest. Cobbled lanes climb to a castle above the Aegean.",
+          "label": "08:30 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Skiathos",
+          "place": "Skiathos",
+          "lat": 39.162,
+          "lng": 23.49,
+          "summary": "",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Thessaloniki",
+          "place": "Thessaloniki, Greece",
+          "lat": 40.635297,
+          "lng": 22.931817,
+          "summary": "Ringed by vineyards and the sacred slopes of Mount Olympus, Thessaloniki offers a glimpse into ancient Macedonia’s culinary and cultural heritage.",
+          "label": "Arrives 08:00"
+        },
+        {
+          "day": 6,
+          "title": "Thessaloniki",
+          "place": "Thessaloniki, Greece",
+          "lat": 40.635297,
+          "lng": 22.931817,
+          "summary": "Ringed by vineyards and the sacred slopes of Mount Olympus, Thessaloniki offers a glimpse into ancient Macedonia’s culinary and cultural heritage.",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 7,
+          "title": "Istanbul",
+          "place": "Istanbul, Turkey",
+          "lat": 41.029037383212014,
+          "lng": 28.987969773017518,
+          "summary": "Minarets rise and muezzins call over the Bosphorus, where East meets West in a city forged by saffron scents, fading empires and the tide of history.",
+          "label": "Arrives 06:00"
+        },
+        {
+          "day": 8,
+          "title": "Istanbul",
+          "place": "Istanbul, Turkey",
+          "lat": 41.029037383212014,
+          "lng": 28.987969773017518,
+          "summary": "Minarets rise and muezzins call over the Bosphorus, where East meets West in a city forged by saffron scents, fading empires and the tide of history."
+        }
+      ]
+    },
+    {
+      "name": "Istanbul to Athens (Piraeus), 7 nights",
+      "nights": 7,
+      "direction": "Istanbul to Athens",
+      "days": [
+        {
+          "day": 1,
+          "title": "Istanbul",
+          "place": "Istanbul, Turkey",
+          "lat": 41.029037383212014,
+          "lng": 28.987969773017518,
+          "summary": "Minarets rise and muezzins call over the Bosphorus, where East meets West in a city forged by saffron scents, fading empires and the tide of history.",
+          "label": "Sails 17:00"
+        },
+        {
+          "day": 2,
+          "title": "Canakkale",
+          "place": "Çanakkale, Turkey",
+          "lat": 40.150748466371134,
+          "lng": 26.40243852522035,
+          "summary": "Mythology echoes along Çanakkale’s cobbled streets, a bridge between continents on the Dardanelles Strait and gateway to the ruins of ancient Troy.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Limnos",
+          "place": "Limnos, Greece",
+          "lat": 39.8712,
+          "lng": 25.0534,
+          "summary": "Adrift in the northern Aegean, unhurried Limnos is a patchwork of golden dunes and wetland habitats, peppered with ancient ruins.",
+          "label": "06:00 to 20:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Chios",
+          "place": "Chios, Greece",
+          "lat": 38.3696012758634,
+          "lng": 26.1406705021655,
+          "summary": "Medieval hamlets and hilltop monasteries spill down to the Aegean at Chios town, flanked by sleepy fishing villages and quiet castaway beaches.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Samos",
+          "place": "Samos, Greece",
+          "lat": 37.755448,
+          "lng": 26.970062,
+          "summary": "Ancient temples, a sixth-century subterranean aqueduct and honeyed Muscat wines distil the layered soul of Samos, lush and mythic above the Aegean.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Kusadasi",
+          "place": "Kuşadası, Turkey",
+          "lat": 37.863148134110205,
+          "lng": 27.255610630407098,
+          "summary": "Myth and legend echo among the stacked stones of Ephesus, hemmed by the Byzantine castle of Kusadası and beautiful Aegean beaches beyond.",
+          "label": "06:00 to 21:00"
+        },
+        {
+          "day": 7,
+          "title": "Mykonos",
+          "place": "Mykonos, Greece",
+          "lat": 37.465764,
+          "lng": 25.319753,
+          "summary": "Cobalt shutters, stone chapels and still shores frame Mykonos, the departure point to Delos, sanctuary of Apollo and heart of ancient Cycladic life.",
+          "label": "07:00 to 20:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Athens",
+          "place": "Athens (Piraeus), Greece",
+          "lat": 37.94497703533731,
+          "lng": 23.642479859381044,
+          "summary": "Athens main port, Piraeus' seafaring history brims with neoclassical character.",
+          "label": "Arrives 04:30"
+        }
+      ]
+    },
+    {
+      "name": "Athens (Piraeus) to Bari, 8 nights",
+      "nights": 8,
+      "direction": "Athens to Bari",
+      "days": [
+        {
+          "day": 1,
+          "title": "Athens",
+          "place": "Athens (Piraeus), Greece",
+          "lat": 37.94497703533731,
+          "lng": 23.642479859381044,
+          "summary": "Athens main port, Piraeus' seafaring history brims with neoclassical character.",
+          "label": "Sails 22:00"
+        },
+        {
+          "day": 2,
+          "title": "Hydra",
+          "place": "Hydra, Greece",
+          "lat": 37.350815,
+          "lng": 23.466582,
+          "summary": "Time slows in tiny Hydra, where grand historical buildings line the hillsides and fishing boats bob in crystal-clear waters. Quaint, quiet and quintessentially Greek.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Monemvasia",
+          "place": "Monemvasia, Greece",
+          "lat": 36.6925587197965,
+          "lng": 23.0435942996587,
+          "summary": "A walled city pinched between sheer cliffs and the indigo sea, medieval Monemvasia is a centuries-old hideaway in the heart of the Peloponnese.",
+          "label": "06:00 to 21:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Kalamata",
+          "place": "Kalamata, Greece",
+          "lat": 37.0198352219234,
+          "lng": 22.1168793018243,
+          "summary": "In sleepy Kalamata, olive groves and waterfalls tumble down to Bronze Age ruins and trails wind along castle-dotted hillsides.",
+          "label": "07:00 to 19:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Ithaca",
+          "place": "Ithaca, Greece",
+          "lat": 38.3694,
+          "lng": 20.7137,
+          "summary": "Where Odysseus longed to return, Ithaca casts its spell in silvered hills, hidden coves and the quiet echoes of myths and legends.",
+          "label": "08:30 to 22:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Corfu",
+          "place": "Corfu, Greece",
+          "lat": 39.633056,
+          "lng": 19.902778,
+          "summary": "A UNESCO World Heritage Site, the Venetian facades and labyrinthine streets of the Old Town of Corfu conceal hushed courtyards and neoclassical homes.",
+          "label": "07:00 to 18:00"
+        },
+        {
+          "day": 7,
+          "title": "Dubrovnik",
+          "place": "Dubrovnik",
+          "lat": 42.66,
+          "lng": 18.085,
+          "summary": "",
+          "label": "10:30 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Kotor",
+          "place": "Kotor, Montenegro",
+          "lat": 42.42541608,
+          "lng": 18.76715201,
+          "summary": "Anchored by fairy-tale spires and coral rooftops, UNESCO-listed Kotor crowns the canyons of its namesake bay and the surrounding medieval villages.",
+          "label": "06:00 to 19:00, by tender"
+        },
+        {
+          "day": 9,
+          "title": "Bari",
+          "place": "Bari, Italy",
+          "lat": 41.1476,
+          "lng": 16.8384,
+          "summary": "The Basilica di San Nicola anchors Bari's ancient heart, where meandering lanes and Adriatic light reveal the essence of Puglia.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Bari to Palermo, 6 nights",
+      "nights": 6,
+      "direction": "Bari to Palermo",
+      "days": [
+        {
+          "day": 1,
+          "title": "Bari",
+          "place": "Bari, Italy",
+          "lat": 41.1476,
+          "lng": 16.8384,
+          "summary": "The Basilica di San Nicola anchors Bari's ancient heart, where meandering lanes and Adriatic light reveal the essence of Puglia.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Otranto",
+          "place": "Otranto, Italy",
+          "lat": 40.1512468616742,
+          "lng": 18.4961841116994,
+          "summary": "Mosaics gleam underfoot in Otranto’s 1,000-year-old cathedral, while castle walls frame the sea and nearby UNESCO sites trace Apulia’s layered past.",
+          "label": "07:00 to 20:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Corfu",
+          "place": "Corfu, Greece",
+          "lat": 39.633056,
+          "lng": 19.902778,
+          "summary": "A UNESCO World Heritage Site, the Venetian facades and labyrinthine streets of the Old Town of Corfu conceal hushed courtyards and neoclassical homes.",
+          "label": "06:00 to 19:00"
+        },
+        {
+          "day": 4,
+          "title": "Crotone",
+          "place": "Crotone",
+          "lat": 39.083,
+          "lng": 17.13,
+          "summary": "",
+          "label": "09:00 to 18:00"
+        },
+        {
+          "day": 5,
+          "title": "Catania",
+          "place": "Catania, Sicily, Italy",
+          "lat": 37.495999,
+          "lng": 15.095972,
+          "summary": "Framed by the Ionian Sea and Mount Etna’s imposing peak, Catania’s lava stone buildings tell the story of a city risen from the ashes.",
+          "label": "08:00 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Messina",
+          "place": "Messina, Sicily, Italy",
+          "lat": 38.192778,
+          "lng": 15.558056,
+          "summary": "Noontime bells chime daily in Messina, a time-honoured toll that echoes along the coast towards Taormina and the tumbling slopes of Mount Etna.",
+          "label": "06:00 to 20:00"
+        },
+        {
+          "day": 7,
+          "title": "Palermo",
+          "place": "Palermo, Sicily, Italy",
+          "lat": 38.1206,
+          "lng": 13.3865,
+          "summary": "Where Arabic spires, Norman arches and Byzantine gold converge, Palermo casts its spell with labyrinthine markets and Baroque piazzas.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Palermo to Marseille, 8 nights",
+      "nights": 8,
+      "direction": "Palermo to Marseille",
+      "days": [
+        {
+          "day": 1,
+          "title": "Palermo",
+          "place": "Palermo, Sicily, Italy",
+          "lat": 38.1206,
+          "lng": 13.3865,
+          "summary": "Where Arabic spires, Norman arches and Byzantine gold converge, Palermo casts its spell with labyrinthine markets and Baroque piazzas.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Messina",
+          "place": "Messina, Sicily, Italy",
+          "lat": 38.192778,
+          "lng": 15.558056,
+          "summary": "Noontime bells chime daily in Messina, a time-honoured toll that echoes along the coast towards Taormina and the tumbling slopes of Mount Etna.",
+          "label": "07:00 to 17:00"
+        },
+        {
+          "day": 3,
+          "title": "Naples",
+          "place": "Naples, Italy",
+          "lat": 40.8371746019429,
+          "lng": 14.2605759890679,
+          "summary": "A city of appetite where history and hedonism meet, Naples’ grand buildings and bustling markets are framed by the mighty Vesuvius.",
+          "label": "08:00 to 18:00"
+        },
+        {
+          "day": 4,
+          "title": "Rome",
+          "place": "Rome (Civitavecchia), Italy",
+          "lat": 42.10729766081104,
+          "lng": 11.761639009815493,
+          "summary": "Two thousand years of empire and devotion sculpted Rome, where ancient forums, artistic endeavours and sun-warmed piazzas command and delight.",
+          "label": "08:00 to 20:00"
+        },
+        {
+          "day": 5,
+          "title": "Viareggio",
+          "place": "Viareggio, Italy",
+          "lat": 43.86131,
+          "lng": 10.23811,
+          "summary": "Sunlit promenades lead from Forte dei Marmi’s shores to Pietrasanta’s art-lined streets. Just beyond, the UNESCO monuments of Piazza del Duomo offer 900-year-old architectural grace.",
+          "label": "09:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Genoa",
+          "place": "Genoa, Italy",
+          "lat": 44.41139853119931,
+          "lng": 8.918566918688722,
+          "summary": "Genoa shaped Columbus, from its stone arcades to its grand palazzi. Salt-laced maritime winds still speak of journeys begun and horizons imagined.",
+          "label": "06:00 to 22:00"
+        },
+        {
+          "day": 7,
+          "title": "Monte Carlo",
+          "place": "Monte Carlo, Monaco",
+          "lat": 43.73569731281005,
+          "lng": 7.430948424841447,
+          "summary": "Yachts drop anchor and engines hum in Monte Carlo, yet the tiny principality on Monaco’s glittering edge effortlessly balances spectacle and sophistication.",
+          "label": "07:00 to 23:00"
+        },
+        {
+          "day": 8,
+          "title": "Nice",
+          "place": "Nice, France",
+          "lat": 43.693410853287936,
+          "lng": 7.288441262587998,
+          "summary": "The sweeping Promenade des Anglais roots Nice to its pastel facades and daily markets, with charming villages resting quietly in the neighbouring hills.",
+          "label": "06:00 to 19:30"
+        },
+        {
+          "day": 9,
+          "title": "Marseille",
+          "place": "Marseille, France",
+          "lat": 43.3446562702501,
+          "lng": 5.33256571210601,
+          "summary": "Caught between limestone cliffs and the open sea, historic Marseille leans into the tide, retaining an unmistakably Mediterranean spirit.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Marseille to Málaga, 7 nights",
+      "nights": 7,
+      "direction": "Marseille to Malaga",
+      "days": [
+        {
+          "day": 1,
+          "title": "Marseille",
+          "place": "Marseille, France",
+          "lat": 43.3446562702501,
+          "lng": 5.33256571210601,
+          "summary": "Caught between limestone cliffs and the open sea, historic Marseille leans into the tide, retaining an unmistakably Mediterranean spirit.",
+          "label": "Sails 18:00"
+        },
+        {
+          "day": 2,
+          "title": "Barcelona",
+          "place": "Barcelona, Spain",
+          "lat": 41.359444,
+          "lng": 2.178889,
+          "summary": "Architectural odes rise skywards in the Catalonian capital, where locals stroll in centuries-old markets and find respite in Gothic Quarter bodegas.",
+          "label": "Arrives 10:00"
+        },
+        {
+          "day": 3,
+          "title": "Barcelona",
+          "place": "Barcelona, Spain",
+          "lat": 41.359444,
+          "lng": 2.178889,
+          "summary": "Architectural odes rise skywards in the Catalonian capital, where locals stroll in centuries-old markets and find respite in Gothic Quarter bodegas.",
+          "label": "Sails 18:00"
+        },
+        {
+          "day": 4,
+          "title": "Valencia",
+          "place": "Valencia, Spain",
+          "lat": 39.454669,
+          "lng": -0.324719,
+          "summary": "Tolling bells and flaming festivals shape Valencian identity, where colourful ceramics and architectural artistry frame modern museums and galleries.",
+          "label": "08:00 to 22:00"
+        },
+        {
+          "day": 5,
+          "title": "Alicante",
+          "place": "Alicante, Spain",
+          "lat": 38.33181,
+          "lng": -0.485802,
+          "summary": "Palm-fringed Alicante unfurls slowly from the heights of Santa Bárbara Castle and the cobbled Old Town towards the Costa Brava’s sun-drenched beaches.",
+          "label": "08:00 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Cartagena",
+          "place": "Cartagena, Spain",
+          "lat": 37.595396,
+          "lng": -0.98156,
+          "summary": "The relics of conquest meet seafaring heritage in Cartagena, where the past is revealed in Roman ruins and rugged bluffs line the storied coast.",
+          "label": "07:00 to 18:30"
+        },
+        {
+          "day": 7,
+          "title": "Motril",
+          "place": "Motril, Spain",
+          "lat": 36.720689,
+          "lng": -3.524272,
+          "summary": "Mangos ripen in the Sierra Nevada foothills on Spain’s Costa Granadina, where the road from Motril leads to Granada and its fabled Alhambra palace.",
+          "label": "08:00 to 23:00"
+        },
+        {
+          "day": 8,
+          "title": "Malaga",
+          "place": "Málaga, Spain",
+          "lat": 36.701667,
+          "lng": -4.414444,
+          "summary": "Empire and conquest shaped Málaga; stories told in her Moorish fort and Renaissance cathedral are anchored in the present by Andalusian culture.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Málaga to Saint John's, 13 nights",
+      "nights": 13,
+      "direction": "Malaga to Saint John's",
+      "days": [
+        {
+          "day": 1,
+          "title": "Malaga",
+          "place": "Málaga, Spain",
+          "lat": 36.701667,
+          "lng": -4.414444,
+          "summary": "Empire and conquest shaped Málaga; stories told in her Moorish fort and Renaissance cathedral are anchored in the present by Andalusian culture.",
+          "label": "Sails 17:00"
+        },
+        {
+          "day": 2,
+          "title": "Sevilla",
+          "place": "Cádiz, Spain",
+          "lat": 36.541267,
+          "lng": -6.27841,
+          "summary": "Three millennia of seafaring shaped Cádiz, with its gilded cathedral dome and salt-bleached ramparts perched upon a wind-scoured Atlantic peninsula.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 3,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 37.139,
+          "lng": -15.966,
+          "summary": "",
+          "label": "Arrives 06:00"
+        },
+        {
+          "day": 4,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 37.438,
+          "lng": -20.81,
+          "summary": ""
+        },
+        {
+          "day": 5,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 37.588,
+          "lng": -23.232,
+          "summary": "",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Ponta Delgada",
+          "place": "Ponta Delgada, Azores, Portugal",
+          "lat": 37.7375,
+          "lng": -25.6535,
+          "summary": "Adrift in the mid-Atlantic, Ponta Delgada opens to twin-hued crater lakes, hydrangea-draped roads and the whale-rich, geothermal wonder of the Azores.",
+          "label": "06:00 to 18:00"
+        },
+        {
+          "day": 7,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 27.432,
+          "lng": -43.758,
+          "summary": "",
+          "label": "Arrives 06:00"
+        },
+        {
+          "day": 8,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 22.279,
+          "lng": -52.81,
+          "summary": ""
+        },
+        {
+          "day": 9,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 19.703,
+          "lng": -57.336,
+          "summary": ""
+        },
+        {
+          "day": 10,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 18.415,
+          "lng": -59.599,
+          "summary": ""
+        },
+        {
+          "day": 11,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 17.771,
+          "lng": -60.731,
+          "summary": ""
+        },
+        {
+          "day": 12,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 17.449,
+          "lng": -61.297,
+          "summary": ""
+        },
+        {
+          "day": 13,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 17.288,
+          "lng": -61.58,
+          "summary": "",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 14,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's round trip, 7 nights",
+      "nights": 7,
+      "direction": "Saint John's round trip",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Barbuda",
+          "place": "Barbuda, Antigua and Barbuda",
+          "lat": 17.5559,
+          "lng": -61.8281,
+          "summary": "Folded between pristine reefs and a tapestry of mangroves cast in soft Caribbean light, perspective shifts on the delicate pink sands of Barbuda.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Gustavia",
+          "place": "Gustavia, Saint Barthélemy",
+          "lat": 17.9006,
+          "lng": -62.8552,
+          "summary": "Light settles on still harbours, red roofs and pale facades. Swedish echoes linger in the town's ordered streets and the waterfront's calm composure.",
+          "label": "06:00 to 20:30, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Jost Van Dyke",
+          "place": "Jost Van Dyke, British Virgin Islands",
+          "lat": 18.447760716430107,
+          "lng": -64.72028621589438,
+          "summary": "Lush hillsides, powdery bays and a barefoot ease define little Jost Van Dyke, one of the Caribbean's most unspoiled and quietly enchanting retreats.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Virgin Gorda",
+          "place": "Virgin Gorda, British Virgin Islands",
+          "lat": 18.452,
+          "lng": -64.4392,
+          "summary": "Nature finds balance on Virgin Gorda, where elemental landscapes and primordial boulders are lulled by the gentle rhythm of the Caribbean.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's to Philipsburg, 7 nights",
+      "nights": 7,
+      "direction": "Saint John's to Philipsburg",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Saba",
+          "place": "Saba",
+          "lat": 17.6163,
+          "lng": -63.2518,
+          "summary": "Rising steeply from the sea, diminutive Saba is enveloped by lush forest and narrow paths, informing a slow pace and a rich landscape for exploration.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "The Aerial",
+          "place": "The Aerial, British Virgin Islands",
+          "lat": 18.4239428,
+          "lng": -64.55817615,
+          "summary": "On Buck Island, reef shallows edge dry scrub and sea grapes, a quietly contained world in the open sea; no harbour, no roads, no permanent settlement.",
+          "label": "07:00 to 22:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Gustavia",
+          "place": "Gustavia, Saint Barthélemy",
+          "lat": 17.9006,
+          "lng": -62.8552,
+          "summary": "Light settles on still harbours, red roofs and pale facades. Swedish echoes linger in the town's ordered streets and the waterfront's calm composure.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Pricky Pear Cays",
+          "place": "Prickly Pear Cays, Anguilla",
+          "lat": 18.26490883818951,
+          "lng": -63.18298949006624,
+          "summary": "Lapped by crystal-clear waves, time slows on the uninhabited sands of the Prickly Pear Cays, a pair of islets off the coast of Anguilla.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Philipsburg to Saint John's, 5 nights",
+      "nights": 5,
+      "direction": "Philipsburg to Saint John's",
+      "days": [
+        {
+          "day": 1,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Gustavia",
+          "place": "Gustavia, Saint Barthélemy",
+          "lat": 17.9006,
+          "lng": -62.8552,
+          "summary": "Light settles on still harbours, red roofs and pale facades. Swedish echoes linger in the town's ordered streets and the waterfront's calm composure.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Barbuda",
+          "place": "Barbuda, Antigua and Barbuda",
+          "lat": 17.5559,
+          "lng": -61.8281,
+          "summary": "Folded between pristine reefs and a tapestry of mangroves cast in soft Caribbean light, perspective shifts on the delicate pink sands of Barbuda.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's to Bridgetown, 5 nights",
+      "nights": 5,
+      "direction": "Saint John's to Bridgetown",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 19:00"
+        },
+        {
+          "day": 2,
+          "title": "Iles des Saintes",
+          "place": "Îles des Saintes, Guadeloupe",
+          "lat": 15.8666632,
+          "lng": -61.5999976,
+          "summary": "Within Terre-de-Haut’s sheltered harbour, boats cluster close to shore. Homes rising behind, life is shaped by fishing routes and maritime tradition.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Portsmouth",
+          "place": "Portsmouth, Dominica",
+          "lat": 15.563779,
+          "lng": -61.460275,
+          "summary": "Fort Shirley's ruins, jungle trails and the slow, dark waters of the Indian River weave Portsmouth into the very fabric of Dominica's untamed north.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 4,
+          "title": "Anses d'Arlet",
+          "place": "Anses d’Arlet, Martinique",
+          "lat": 14.49003971177075,
+          "lng": -61.08121336561399,
+          "summary": "A whitewashed church at the sea's edge defines Anses d’Arlet, a Martinican village of towering gommiers and turquoise-hued coves.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Soufriere",
+          "place": "Soufrière, Saint Lucia",
+          "lat": 13.855098900234482,
+          "lng": -61.06182580244294,
+          "summary": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+          "label": "06:00 to 20:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Bridgetown to Oranjestad, 5 nights",
+      "nights": 5,
+      "direction": "Bridgetown to Oranjestad",
+      "days": [
+        {
+          "day": 1,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Canouan",
+          "place": "Canouan, Saint Vincent and the Grenadines",
+          "lat": 12.7063,
+          "lng": -61.3297,
+          "summary": "Above the reef-sheltered bay, a forest path climbs Mount Royal, crowning Canouan’s lush surrounds of natural beauty.",
+          "label": "08:00 to 20:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 12.428,
+          "lng": -64.805,
+          "summary": "",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 4,
+          "title": "Kralendijk",
+          "place": "Kralendijk, Bonaire",
+          "lat": 12.15,
+          "lng": -68.28,
+          "summary": "Framed by myriad shades of blue, colourful Kralendijk yields to a world of quietude among castaway beaches and lush mangroves.",
+          "label": "07:00 to 23:00"
+        },
+        {
+          "day": 5,
+          "title": "Willemstad",
+          "place": "Willemstad, Curaçao",
+          "lat": 12.104,
+          "lng": -68.9371,
+          "summary": "Stillness settles over Curaçao’s blue lagoons and peaceful mangroves, finding quiet harmony with the colourful gabled facades of Willemstad.",
+          "label": "07:00 to 22:00"
+        },
+        {
+          "day": 6,
+          "title": "Oranjestad",
+          "place": "Oranjestad, Aruba",
+          "lat": 12.5177,
+          "lng": -70.0447,
+          "summary": "Cradled by white sands, Oranjestad, and its Dutch colonial stylings, is complemented by the understated charm of the Lesser Antilles.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Oranjestad to Bridgetown, 6 nights",
+      "nights": 6,
+      "direction": "Oranjestad to Bridgetown",
+      "days": [
+        {
+          "day": 1,
+          "title": "Oranjestad",
+          "place": "Oranjestad, Aruba",
+          "lat": 12.5177,
+          "lng": -70.0447,
+          "summary": "Cradled by white sands, Oranjestad, and its Dutch colonial stylings, is complemented by the understated charm of the Lesser Antilles.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Willemstad",
+          "place": "Willemstad, Curaçao",
+          "lat": 12.104,
+          "lng": -68.9371,
+          "summary": "Stillness settles over Curaçao’s blue lagoons and peaceful mangroves, finding quiet harmony with the colourful gabled facades of Willemstad.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 3,
+          "title": "Kralendijk",
+          "place": "Kralendijk, Bonaire",
+          "lat": 12.15,
+          "lng": -68.28,
+          "summary": "Framed by myriad shades of blue, colourful Kralendijk yields to a world of quietude among castaway beaches and lush mangroves.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 4,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 12.097,
+          "lng": -65.018,
+          "summary": "",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 5,
+          "title": "Saint George's",
+          "place": "Saint George's, Grenada",
+          "lat": 12.0448,
+          "lng": -61.7567,
+          "summary": "Nutmeg and mace perfume the hills above Saint George’s, where a crescent harbour shimmers below centuries-old forts and a storied coastline.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Tobago Cays",
+          "place": "Tobago Cays, Saint Vincent and the Grenadines",
+          "lat": 12.632992,
+          "lng": -61.349362,
+          "summary": "Across these cays, five untouched islets sit inside Horseshoe Reef, its coral arc enclosing turtle grass, shallow shoals and sand, dissolving to sky.",
+          "label": "08:00 to 20:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Bridgetown to Saint John's, 7 nights",
+      "nights": 7,
+      "direction": "Bridgetown to Saint John's",
+      "days": [
+        {
+          "day": 1,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Soufriere",
+          "place": "Soufrière, Saint Lucia",
+          "lat": 13.855098900234482,
+          "lng": -61.06182580244294,
+          "summary": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+          "label": "07:00 to 21:30, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Portsmouth",
+          "place": "Portsmouth, Dominica",
+          "lat": 15.563779,
+          "lng": -61.460275,
+          "summary": "Fort Shirley's ruins, jungle trails and the slow, dark waters of the Indian River weave Portsmouth into the very fabric of Dominica's untamed north.",
+          "label": "08:00 to 23:00"
+        },
+        {
+          "day": 4,
+          "title": "Iles des Saintes",
+          "place": "Îles des Saintes, Guadeloupe",
+          "lat": 15.8666632,
+          "lng": -61.5999976,
+          "summary": "Within Terre-de-Haut’s sheltered harbour, boats cluster close to shore. Homes rising behind, life is shaped by fishing routes and maritime tradition.",
+          "label": "06:00 to 21:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "08:00 to 21:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "Arrives 06:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "Sails 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's to Philipsburg, 5 nights",
+      "nights": 5,
+      "direction": "Saint John's to Philipsburg",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Pricky Pear Cays",
+          "place": "Prickly Pear Cays, Anguilla",
+          "lat": 18.26490883818951,
+          "lng": -63.18298949006624,
+          "summary": "Lapped by crystal-clear waves, time slows on the uninhabited sands of the Prickly Pear Cays, a pair of islets off the coast of Anguilla.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Philipsburg to La Romana, 7 nights",
+      "nights": 7,
+      "direction": "Philipsburg to La Romana",
+      "days": [
+        {
+          "day": 1,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Pricky Pear Cays",
+          "place": "Prickly Pear Cays, Anguilla",
+          "lat": 18.26490883818951,
+          "lng": -63.18298949006624,
+          "summary": "Lapped by crystal-clear waves, time slows on the uninhabited sands of the Prickly Pear Cays, a pair of islets off the coast of Anguilla.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Virgin Gorda",
+          "place": "Virgin Gorda, British Virgin Islands",
+          "lat": 18.452,
+          "lng": -64.4392,
+          "summary": "Nature finds balance on Virgin Gorda, where elemental landscapes and primordial boulders are lulled by the gentle rhythm of the Caribbean.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Jost Van Dyke",
+          "place": "Jost Van Dyke, British Virgin Islands",
+          "lat": 18.447760716430107,
+          "lng": -64.72028621589438,
+          "summary": "Lush hillsides, powdery bays and a barefoot ease define little Jost Van Dyke, one of the Caribbean's most unspoiled and quietly enchanting retreats.",
+          "label": "06:00 to 20:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 18.826,
+          "lng": -67.028,
+          "summary": "",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Samaná",
+          "place": "Samaná",
+          "lat": 19.205,
+          "lng": -69.336,
+          "summary": "",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Cap Cana",
+          "place": "Cap Cana",
+          "lat": 18.452,
+          "lng": -68.37,
+          "summary": "",
+          "label": "06:00 to 21:30, by tender"
+        },
+        {
+          "day": 8,
+          "title": "La Romana",
+          "place": "La Romana",
+          "lat": 18.42,
+          "lng": -68.96,
+          "summary": "",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "La Romana to Saint John's, 8 nights",
+      "nights": 8,
+      "direction": "La Romana to Saint John's",
+      "days": [
+        {
+          "day": 1,
+          "title": "La Romana",
+          "place": "La Romana",
+          "lat": 18.42,
+          "lng": -68.96,
+          "summary": "",
+          "label": "Sails 21:00"
+        },
+        {
+          "day": 2,
+          "title": "Cap Cana",
+          "place": "Cap Cana",
+          "lat": 18.452,
+          "lng": -68.37,
+          "summary": "",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 18.45,
+          "lng": -66.545,
+          "summary": "",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 4,
+          "title": "Jost Van Dyke",
+          "place": "Jost Van Dyke, British Virgin Islands",
+          "lat": 18.447760716430107,
+          "lng": -64.72028621589438,
+          "summary": "Lush hillsides, powdery bays and a barefoot ease define little Jost Van Dyke, one of the Caribbean's most unspoiled and quietly enchanting retreats.",
+          "label": "06:00 to 20:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Virgin Gorda",
+          "place": "Virgin Gorda, British Virgin Islands",
+          "lat": 18.452,
+          "lng": -64.4392,
+          "summary": "Nature finds balance on Virgin Gorda, where elemental landscapes and primordial boulders are lulled by the gentle rhythm of the Caribbean.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Pricky Pear Cays",
+          "place": "Prickly Pear Cays, Anguilla",
+          "lat": 18.26490883818951,
+          "lng": -63.18298949006624,
+          "summary": "Lapped by crystal-clear waves, time slows on the uninhabited sands of the Prickly Pear Cays, a pair of islets off the coast of Anguilla.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "06:00 to 21:00, by tender"
+        },
+        {
+          "day": 9,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's to Bridgetown, 6 nights",
+      "nights": 6,
+      "direction": "Saint John's to Bridgetown",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Portsmouth",
+          "place": "Portsmouth, Dominica",
+          "lat": 15.563779,
+          "lng": -61.460275,
+          "summary": "Fort Shirley's ruins, jungle trails and the slow, dark waters of the Indian River weave Portsmouth into the very fabric of Dominica's untamed north.",
+          "label": "08:00 to 23:00"
+        },
+        {
+          "day": 4,
+          "title": "Saint Pierre",
+          "place": "Saint Pierre",
+          "lat": 14.743,
+          "lng": -61.177,
+          "summary": "",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Soufriere",
+          "place": "Soufrière, Saint Lucia",
+          "lat": 13.855098900234482,
+          "lng": -61.06182580244294,
+          "summary": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+          "label": "06:00 to 22:30, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Canouan",
+          "place": "Canouan, Saint Vincent and the Grenadines",
+          "lat": 12.7063,
+          "lng": -61.3297,
+          "summary": "Above the reef-sheltered bay, a forest path climbs Mount Royal, crowning Canouan’s lush surrounds of natural beauty.",
+          "label": "06:00 to 20:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Bridgetown to Oranjestad, 6 nights",
+      "nights": 6,
+      "direction": "Bridgetown to Oranjestad",
+      "days": [
+        {
+          "day": 1,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Tobago Cays",
+          "place": "Tobago Cays, Saint Vincent and the Grenadines",
+          "lat": 12.632992,
+          "lng": -61.349362,
+          "summary": "Across these cays, five untouched islets sit inside Horseshoe Reef, its coral arc enclosing turtle grass, shallow shoals and sand, dissolving to sky.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Saint George's",
+          "place": "Saint George's, Grenada",
+          "lat": 12.0448,
+          "lng": -61.7567,
+          "summary": "Nutmeg and mace perfume the hills above Saint George’s, where a crescent harbour shimmers below centuries-old forts and a storied coastline.",
+          "label": "06:00 to 21:00"
+        },
+        {
+          "day": 4,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 12.074,
+          "lng": -65.347,
+          "summary": "",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 5,
+          "title": "Willemstad",
+          "place": "Willemstad, Curaçao",
+          "lat": 12.104,
+          "lng": -68.9371,
+          "summary": "Stillness settles over Curaçao’s blue lagoons and peaceful mangroves, finding quiet harmony with the colourful gabled facades of Willemstad.",
+          "label": "Arrives 07:00"
+        },
+        {
+          "day": 6,
+          "title": "Willemstad",
+          "place": "Willemstad, Curaçao",
+          "lat": 12.104,
+          "lng": -68.9371,
+          "summary": "Stillness settles over Curaçao’s blue lagoons and peaceful mangroves, finding quiet harmony with the colourful gabled facades of Willemstad.",
+          "label": "Sails 22:30"
+        },
+        {
+          "day": 7,
+          "title": "Oranjestad",
+          "place": "Oranjestad, Aruba",
+          "lat": 12.5177,
+          "lng": -70.0447,
+          "summary": "Cradled by white sands, Oranjestad, and its Dutch colonial stylings, is complemented by the understated charm of the Lesser Antilles.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Oranjestad to Bridgetown, 8 nights",
+      "nights": 8,
+      "direction": "Oranjestad to Bridgetown",
+      "days": [
+        {
+          "day": 1,
+          "title": "Oranjestad",
+          "place": "Oranjestad, Aruba",
+          "lat": 12.5177,
+          "lng": -70.0447,
+          "summary": "Cradled by white sands, Oranjestad, and its Dutch colonial stylings, is complemented by the understated charm of the Lesser Antilles.",
+          "label": "Sails 22:00"
+        },
+        {
+          "day": 2,
+          "title": "Willemstad",
+          "place": "Willemstad, Curaçao",
+          "lat": 12.104,
+          "lng": -68.9371,
+          "summary": "Stillness settles over Curaçao’s blue lagoons and peaceful mangroves, finding quiet harmony with the colourful gabled facades of Willemstad.",
+          "label": "06:00 to 23:00"
+        },
+        {
+          "day": 3,
+          "title": "Kralendijk",
+          "place": "Kralendijk, Bonaire",
+          "lat": 12.15,
+          "lng": -68.28,
+          "summary": "Framed by myriad shades of blue, colourful Kralendijk yields to a world of quietude among castaway beaches and lush mangroves.",
+          "label": "06:00 to 22:00"
+        },
+        {
+          "day": 4,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 12.097,
+          "lng": -65.018,
+          "summary": "",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 5,
+          "title": "Saint George's",
+          "place": "Saint George's, Grenada",
+          "lat": 12.0448,
+          "lng": -61.7567,
+          "summary": "Nutmeg and mace perfume the hills above Saint George’s, where a crescent harbour shimmers below centuries-old forts and a storied coastline.",
+          "label": "07:00 to 23:00"
+        },
+        {
+          "day": 6,
+          "title": "Tobago Cays",
+          "place": "Tobago Cays, Saint Vincent and the Grenadines",
+          "lat": 12.632992,
+          "lng": -61.349362,
+          "summary": "Across these cays, five untouched islets sit inside Horseshoe Reef, its coral arc enclosing turtle grass, shallow shoals and sand, dissolving to sky.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Bequia",
+          "place": "Bequia",
+          "lat": 13.007,
+          "lng": -61.24,
+          "summary": "",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Soufriere",
+          "place": "Soufrière, Saint Lucia",
+          "lat": 13.855098900234482,
+          "lng": -61.06182580244294,
+          "summary": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+          "label": "06:00 to 20:00, by tender"
+        },
+        {
+          "day": 9,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Bridgetown to Saint John's, 7 nights, February 2028",
+      "nights": 7,
+      "direction": "Bridgetown to Saint John's (February 2028)",
+      "days": [
+        {
+          "day": 1,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Canouan",
+          "place": "Canouan, Saint Vincent and the Grenadines",
+          "lat": 12.7063,
+          "lng": -61.3297,
+          "summary": "Above the reef-sheltered bay, a forest path climbs Mount Royal, crowning Canouan’s lush surrounds of natural beauty.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Soufriere",
+          "place": "Soufrière, Saint Lucia",
+          "lat": 13.855098900234482,
+          "lng": -61.06182580244294,
+          "summary": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Saint Pierre",
+          "place": "Saint Pierre",
+          "lat": 14.743,
+          "lng": -61.177,
+          "summary": "",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Marie-Galante",
+          "place": "Marie-Galante",
+          "lat": 15.883,
+          "lng": -61.315,
+          "summary": "",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Portsmouth",
+          "place": "Portsmouth, Dominica",
+          "lat": 15.563779,
+          "lng": -61.460275,
+          "summary": "Fort Shirley's ruins, jungle trails and the slow, dark waters of the Indian River weave Portsmouth into the very fabric of Dominica's untamed north.",
+          "label": "06:00 to 20:00"
+        },
+        {
+          "day": 7,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's round trip, 7 nights, February 2028",
+      "nights": 7,
+      "direction": "Saint John's round trip (February 2028)",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Gustavia",
+          "place": "Gustavia, Saint Barthélemy",
+          "lat": 17.9006,
+          "lng": -62.8552,
+          "summary": "Light settles on still harbours, red roofs and pale facades. Swedish echoes linger in the town's ordered streets and the waterfront's calm composure.",
+          "label": "07:00 to 22:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Virgin Gorda",
+          "place": "Virgin Gorda, British Virgin Islands",
+          "lat": 18.452,
+          "lng": -64.4392,
+          "summary": "Nature finds balance on Virgin Gorda, where elemental landscapes and primordial boulders are lulled by the gentle rhythm of the Caribbean.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Pricky Pear Cays",
+          "place": "Prickly Pear Cays, Anguilla",
+          "lat": 18.26490883818951,
+          "lng": -63.18298949006624,
+          "summary": "Lapped by crystal-clear waves, time slows on the uninhabited sands of the Prickly Pear Cays, a pair of islets off the coast of Anguilla.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Barbuda",
+          "place": "Barbuda, Antigua and Barbuda",
+          "lat": 17.5559,
+          "lng": -61.8281,
+          "summary": "Folded between pristine reefs and a tapestry of mangroves cast in soft Caribbean light, perspective shifts on the delicate pink sands of Barbuda.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's to Bridgetown, 7 nights",
+      "nights": 7,
+      "direction": "Saint John's to Bridgetown",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Marie-Galante",
+          "place": "Marie-Galante",
+          "lat": 15.883,
+          "lng": -61.315,
+          "summary": "",
+          "label": "07:00 to 22:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Saint Pierre",
+          "place": "Saint Pierre",
+          "lat": 14.743,
+          "lng": -61.177,
+          "summary": "",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Soufriere",
+          "place": "Soufrière, Saint Lucia",
+          "lat": 13.855098900234482,
+          "lng": -61.06182580244294,
+          "summary": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Bequia",
+          "place": "Bequia",
+          "lat": 13.007,
+          "lng": -61.24,
+          "summary": "",
+          "label": "08:00 to 20:00, by tender"
+        },
+        {
+          "day": 8,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Arrives 07:00"
+        }
+      ]
+    },
+    {
+      "name": "Bridgetown to Saint John's, 6 nights",
+      "nights": 6,
+      "direction": "Bridgetown to Saint John's",
+      "days": [
+        {
+          "day": 1,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Soufriere",
+          "place": "Soufrière, Saint Lucia",
+          "lat": 13.855098900234482,
+          "lng": -61.06182580244294,
+          "summary": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Anses d'Arlet",
+          "place": "Anses d’Arlet, Martinique",
+          "lat": 14.49003971177075,
+          "lng": -61.08121336561399,
+          "summary": "A whitewashed church at the sea's edge defines Anses d’Arlet, a Martinican village of towering gommiers and turquoise-hued coves.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Marie-Galante",
+          "place": "Marie-Galante",
+          "lat": 15.883,
+          "lng": -61.315,
+          "summary": "",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Portsmouth",
+          "place": "Portsmouth, Dominica",
+          "lat": 15.563779,
+          "lng": -61.460275,
+          "summary": "Fort Shirley's ruins, jungle trails and the slow, dark waters of the Indian River weave Portsmouth into the very fabric of Dominica's untamed north.",
+          "label": "06:00 to 22:00"
+        },
+        {
+          "day": 6,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's to Bridgetown, 6 nights, March 2028",
+      "nights": 6,
+      "direction": "Saint John's to Bridgetown (March 2028)",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Gustavia",
+          "place": "Gustavia, Saint Barthélemy",
+          "lat": 17.9006,
+          "lng": -62.8552,
+          "summary": "Light settles on still harbours, red roofs and pale facades. Swedish echoes linger in the town's ordered streets and the waterfront's calm composure.",
+          "label": "06:00 to 23:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "Little Bay",
+          "place": "Little Bay, Montserrat",
+          "lat": 16.8027,
+          "lng": -62.2064,
+          "summary": "Lush hills embrace Little Bay, where black-sand coves, bougainvillea lanes and the lilting soul of the Caribbean's Emerald Isle enchant.",
+          "label": "08:00 to 18:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Saint Pierre",
+          "place": "Saint Pierre",
+          "lat": 14.743,
+          "lng": -61.177,
+          "summary": "",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Soufriere",
+          "place": "Soufrière, Saint Lucia",
+          "lat": 13.855098900234482,
+          "lng": -61.06182580244294,
+          "summary": "Soufrière’s steaming caldera frames the town below, resting between the twin Pitons, as narrow rainforest trails descend to the Sulphur Springs.",
+          "label": "06:00 to 18:00, by tender"
+        },
+        {
+          "day": 7,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Bridgetown to Saint John's, 5 nights",
+      "nights": 5,
+      "direction": "Bridgetown to Saint John's",
+      "days": [
+        {
+          "day": 1,
+          "title": "Bridgetown",
+          "place": "Bridgetown, Barbados",
+          "lat": 13.1095,
+          "lng": -59.6346,
+          "summary": "Easy-going rhythms and island rituals set the scene in historic Bridgetown, where pristine reefs and tropical forest invite deep discovery.",
+          "label": "Sails 20:00"
+        },
+        {
+          "day": 2,
+          "title": "Anses d'Arlet",
+          "place": "Anses d’Arlet, Martinique",
+          "lat": 14.49003971177075,
+          "lng": -61.08121336561399,
+          "summary": "A whitewashed church at the sea's edge defines Anses d’Arlet, a Martinican village of towering gommiers and turquoise-hued coves.",
+          "label": "08:00 to 22:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Portsmouth",
+          "place": "Portsmouth, Dominica",
+          "lat": 15.563779,
+          "lng": -61.460275,
+          "summary": "Fort Shirley's ruins, jungle trails and the slow, dark waters of the Indian River weave Portsmouth into the very fabric of Dominica's untamed north.",
+          "label": "06:00 to 19:00"
+        },
+        {
+          "day": 4,
+          "title": "Basseterre",
+          "place": "Basseterre, Saint Kitts and Nevis",
+          "lat": 17.2927,
+          "lng": -62.7157,
+          "summary": "Brimstone Hill Fortress presides above Basseterre's Georgian streets, its sugarcane hills rolling to the lush volcanic peak of Mount Liamuiga.",
+          "label": "08:00 to 23:00, by tender"
+        },
+        {
+          "day": 5,
+          "title": "Gustavia",
+          "place": "Gustavia, Saint Barthélemy",
+          "lat": 17.9006,
+          "lng": -62.8552,
+          "summary": "Light settles on still harbours, red roofs and pale facades. Swedish echoes linger in the town's ordered streets and the waterfront's calm composure.",
+          "label": "06:00 to 22:00, by tender"
+        },
+        {
+          "day": 6,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    },
+    {
+      "name": "Saint John's to Funchal, 11 nights",
+      "nights": 11,
+      "direction": "Saint John's to Funchal",
+      "days": [
+        {
+          "day": 1,
+          "title": "Saint John's",
+          "place": "Saint John's, Antigua and Barbuda",
+          "lat": 17.1262,
+          "lng": -61.8622,
+          "summary": "Tucked into folds of jungle-covered hillside, Saint John's is a window to cultural discovery where days unfold with the slow rhythm of Caribbean life.",
+          "label": "Sails 21:00"
+        },
+        {
+          "day": 2,
+          "title": "Philipsburg",
+          "place": "Philipsburg, Sint Maarten",
+          "lat": 18.0096,
+          "lng": -63.0511,
+          "summary": "Great Bay's golden crescent embraces Philipsburg, where French and Dutch sensibilities merge, as Fort Amsterdam keeps watch above.",
+          "label": "07:00 to 23:00, by tender"
+        },
+        {
+          "day": 3,
+          "title": "Gustavia",
+          "place": "Gustavia, Saint Barthélemy",
+          "lat": 17.9006,
+          "lng": -62.8552,
+          "summary": "Light settles on still harbours, red roofs and pale facades. Swedish echoes linger in the town's ordered streets and the waterfront's calm composure.",
+          "label": "06:00 to 20:00, by tender"
+        },
+        {
+          "day": 4,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 25.271,
+          "lng": -39.882,
+          "summary": ""
+        },
+        {
+          "day": 5,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 28.956,
+          "lng": -28.396,
+          "summary": ""
+        },
+        {
+          "day": 6,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 30.798,
+          "lng": -22.653,
+          "summary": ""
+        },
+        {
+          "day": 7,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 31.719,
+          "lng": -19.781,
+          "summary": ""
+        },
+        {
+          "day": 8,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 32.18,
+          "lng": -18.345,
+          "summary": ""
+        },
+        {
+          "day": 9,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 32.41,
+          "lng": -17.627,
+          "summary": ""
+        },
+        {
+          "day": 10,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 32.525,
+          "lng": -17.268,
+          "summary": ""
+        },
+        {
+          "day": 11,
+          "title": "At Sea",
+          "place": "At Sea",
+          "lat": 32.583,
+          "lng": -17.089,
+          "summary": "",
+          "label": "Sails 23:00"
+        },
+        {
+          "day": 12,
+          "title": "Funchal",
+          "place": "Funchal, Madeira, Portugal",
+          "lat": 32.640913,
+          "lng": -16.909768,
+          "summary": "Cascading from volcanic heights to a crescent-shaped harbour, Funchal unfolds with laurel forests, levada trails and the heady perfume of Madeira wine.",
+          "label": "Arrives 06:00"
+        }
+      ]
+    }
+  ],
+  "departures": [
+    {
+      "date": "2027-05-07",
+      "dateTo": "2027-05-13",
+      "season": "Mediterranean Spain",
+      "itinerary": "Palma de Mallorca to Nice, 6 nights",
+      "direction": "Palma de Mallorca to Nice",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 47500,
+        "Premier Suite": 62400,
+        "Premier Fore Suite": 59400,
+        "Signature Suite": 69600,
+        "Grand Suite": 109800,
+        "Aman Suite": 197300
+      },
+      "voyage": "AG270507",
+      "note": "Maiden voyage"
+    },
+    {
+      "date": "2027-05-13",
+      "dateTo": "2027-05-21",
+      "season": "French Riviera and Monaco F1",
+      "itinerary": "Nice round trip, 8 nights",
+      "direction": "Nice round trip",
+      "nights": 8,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 63400,
+        "Premier Suite": 83200,
+        "Premier Fore Suite": 79200,
+        "Signature Suite": 94000,
+        "Grand Suite": 127200,
+        "Aman Suite": 263100
+      },
+      "voyage": "AG270513"
+    },
+    {
+      "date": "2027-05-21",
+      "dateTo": "2027-05-27",
+      "season": "French Riviera and Monaco F1",
+      "itinerary": "Nice to Marseille, 6 nights",
+      "direction": "Nice to Marseille",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 52300,
+        "Premier Suite": 62400,
+        "Premier Fore Suite": 59400,
+        "Signature Suite": 64000,
+        "Grand Suite": 109800,
+        "Aman Suite": 197300
+      },
+      "voyage": "AG270521"
+    },
+    {
+      "date": "2027-05-27",
+      "dateTo": "2027-06-02",
+      "season": "French Riviera and Monaco F1",
+      "itinerary": "Marseille to Nice, 6 nights",
+      "direction": "Marseille to Nice",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 52400,
+        "Premier Suite": 62400,
+        "Premier Fore Suite": 59400,
+        "Signature Suite": 64000,
+        "Grand Suite": 109800,
+        "Aman Suite": 197300
+      },
+      "voyage": "AG270527"
+    },
+    {
+      "date": "2027-06-02",
+      "dateTo": "2027-06-07",
+      "season": "French Riviera and Monaco F1",
+      "itinerary": "Nice round trip, 5 nights",
+      "direction": "Nice round trip",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 65700,
+        "Premier Suite": 71200,
+        "Premier Fore Suite": 68700,
+        "Signature Suite": 77700,
+        "Grand Suite": 111200,
+        "Aman Suite": 188200
+      },
+      "voyage": "AG270602"
+    },
+    {
+      "date": "2027-06-07",
+      "dateTo": "2027-06-13",
+      "season": "Italian Riviera and Corsica",
+      "itinerary": "Nice to Florence (Livorno), 6 nights",
+      "direction": "Nice to Florence",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 53800,
+        "Premier Suite": 64500,
+        "Premier Fore Suite": 61400,
+        "Signature Suite": 72300,
+        "Grand Suite": 112500,
+        "Aman Suite": 203100
+      },
+      "voyage": "AG270607"
+    },
+    {
+      "date": "2027-06-20",
+      "dateTo": "2027-06-25",
+      "season": "Italian Riviera and Corsica",
+      "itinerary": "Naples to Salerno, 5 nights",
+      "direction": "Naples to Salerno",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 46700,
+        "Premier Suite": 61800,
+        "Premier Fore Suite": 53400,
+        "Signature Suite": 62700,
+        "Grand Suite": 97800,
+        "Aman Suite": 175800
+      },
+      "voyage": "AG270620"
+    },
+    {
+      "date": "2027-06-25",
+      "dateTo": "2027-06-30",
+      "season": "Italian Riviera and Corsica",
+      "itinerary": "Salerno to Naples, 5 nights",
+      "direction": "Salerno to Naples",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 42400,
+        "Premier Suite": 56100,
+        "Premier Fore Suite": 53400,
+        "Signature Suite": 57000,
+        "Grand Suite": 97800,
+        "Aman Suite": 175800
+      },
+      "voyage": "AG270625"
+    },
+    {
+      "date": "2027-06-30",
+      "dateTo": "2027-07-05",
+      "season": "Italian Riviera and Corsica",
+      "itinerary": "Naples to Salerno, 5 nights, June 2027",
+      "direction": "Naples to Salerno (June 2027)",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 46700,
+        "Premier Suite": 56100,
+        "Premier Fore Suite": 53400,
+        "Signature Suite": 62700,
+        "Grand Suite": 97800,
+        "Aman Suite": 175800
+      },
+      "voyage": "AG270630"
+    },
+    {
+      "date": "2027-07-05",
+      "dateTo": "2027-07-10",
+      "season": "Italian Riviera and Corsica",
+      "itinerary": "Salerno round trip, 5 nights",
+      "direction": "Salerno round trip",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 42400,
+        "Premier Suite": 51000,
+        "Premier Fore Suite": 48500,
+        "Signature Suite": 57000,
+        "Grand Suite": 97800,
+        "Aman Suite": 175800
+      },
+      "voyage": "AG270705"
+    },
+    {
+      "date": "2027-07-17",
+      "dateTo": "2027-07-22",
+      "season": "Italian Riviera and Corsica",
+      "itinerary": "Valletta to Catania, 5 nights",
+      "direction": "Valletta to Catania",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 46000,
+        "Premier Suite": 49900,
+        "Premier Fore Suite": 47500,
+        "Signature Suite": 56100,
+        "Grand Suite": 84000,
+        "Aman Suite": 173400
+      },
+      "voyage": "AG270717"
+    },
+    {
+      "date": "2027-07-22",
+      "dateTo": "2027-07-29",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Catania to Dubrovnik, 7 nights",
+      "direction": "Catania to Dubrovnik",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 60100,
+        "Premier Suite": 79300,
+        "Premier Fore Suite": 75500,
+        "Signature Suite": 80500,
+        "Grand Suite": 138500,
+        "Aman Suite": 249500
+      },
+      "voyage": "AG270722"
+    },
+    {
+      "date": "2027-07-29",
+      "dateTo": "2027-08-03",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Dubrovnik to Venice, 6 nights",
+      "direction": "Dubrovnik to Venice",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 54800,
+        "Premier Suite": 72200,
+        "Premier Fore Suite": 62400,
+        "Signature Suite": 73400,
+        "Grand Suite": 126300,
+        "Aman Suite": 227600
+      },
+      "voyage": "AG270729"
+    },
+    {
+      "date": "2027-08-04",
+      "dateTo": "2027-08-10",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Venice to Dubrovnik, 6 nights",
+      "direction": "Venice to Dubrovnik",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 49800,
+        "Premier Suite": 65600,
+        "Premier Fore Suite": 62400,
+        "Signature Suite": 73400,
+        "Grand Suite": 126300,
+        "Aman Suite": 227600
+      },
+      "voyage": "AG270804"
+    },
+    {
+      "date": "2027-08-10",
+      "dateTo": "2027-08-15",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Dubrovnik to Venice, 6 nights, August 2027",
+      "direction": "Dubrovnik to Venice (August 2027)",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 49800,
+        "Premier Suite": 65600,
+        "Premier Fore Suite": 62400,
+        "Signature Suite": 73400,
+        "Grand Suite": 109800,
+        "Aman Suite": 227600
+      },
+      "voyage": "AG270810"
+    },
+    {
+      "date": "2027-08-16",
+      "dateTo": "2027-08-22",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Venice to Dubrovnik, 6 nights, August 2027",
+      "direction": "Venice to Dubrovnik (August 2027)",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 49800,
+        "Premier Suite": 65600,
+        "Premier Fore Suite": 62400,
+        "Signature Suite": 73400,
+        "Grand Suite": 126300,
+        "Aman Suite": 227600
+      },
+      "voyage": "AG270816"
+    },
+    {
+      "date": "2027-08-22",
+      "dateTo": "2027-08-29",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Dubrovnik to Corfu, 7 nights",
+      "direction": "Dubrovnik to Corfu",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 54600,
+        "Premier Suite": 72100,
+        "Premier Fore Suite": 68600,
+        "Signature Suite": 80500,
+        "Grand Suite": 138500,
+        "Aman Suite": 249500
+      },
+      "voyage": "AG270822"
+    },
+    {
+      "date": "2027-08-29",
+      "dateTo": "2027-09-05",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Corfu to Athens (Piraeus), 7 nights",
+      "direction": "Corfu to Athens",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 66200,
+        "Premier Suite": 79300,
+        "Premier Fore Suite": 75500,
+        "Signature Suite": 80500,
+        "Grand Suite": 120400,
+        "Aman Suite": 249500
+      },
+      "voyage": "AG270829"
+    },
+    {
+      "date": "2027-09-05",
+      "dateTo": "2027-09-12",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Athens round trip, 7 nights",
+      "direction": "Athens round trip",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 62700,
+        "Premier Suite": 75300,
+        "Premier Fore Suite": 71700,
+        "Signature Suite": 76600,
+        "Grand Suite": 131300,
+        "Aman Suite": 236900
+      },
+      "voyage": "AG270905"
+    },
+    {
+      "date": "2027-09-12",
+      "dateTo": "2027-09-19",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Athens (Piraeus) to Rhodes, 7 nights",
+      "direction": "Athens to Rhodes",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 62700,
+        "Premier Suite": 75300,
+        "Premier Fore Suite": 71700,
+        "Signature Suite": 80500,
+        "Grand Suite": 114100,
+        "Aman Suite": 236900
+      },
+      "voyage": "AG270912"
+    },
+    {
+      "date": "2027-09-19",
+      "dateTo": "2027-09-26",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Rhodes to Bodrum, 7 nights",
+      "direction": "Rhodes to Bodrum",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 62700,
+        "Premier Suite": 68400,
+        "Premier Fore Suite": 65100,
+        "Signature Suite": 76600,
+        "Grand Suite": 114100,
+        "Aman Suite": 236900
+      },
+      "voyage": "AG270919"
+    },
+    {
+      "date": "2027-09-26",
+      "dateTo": "2027-10-02",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Bodrum to Istanbul, 7 nights",
+      "direction": "Bodrum to Istanbul",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 51800,
+        "Premier Suite": 68400,
+        "Premier Fore Suite": 65100,
+        "Signature Suite": 76600,
+        "Grand Suite": 114100,
+        "Aman Suite": 236900
+      },
+      "voyage": "AG270926"
+    },
+    {
+      "date": "2027-10-03",
+      "dateTo": "2027-10-10",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Istanbul to Athens (Piraeus), 7 nights",
+      "direction": "Istanbul to Athens",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 51800,
+        "Premier Suite": 68400,
+        "Premier Fore Suite": 65100,
+        "Signature Suite": 76600,
+        "Grand Suite": 131300,
+        "Aman Suite": 236900
+      },
+      "voyage": "AG271003"
+    },
+    {
+      "date": "2027-10-10",
+      "dateTo": "2027-10-18",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Athens (Piraeus) to Bari, 8 nights",
+      "direction": "Athens to Bari",
+      "nights": 8,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 59200,
+        "Premier Suite": 78400,
+        "Premier Fore Suite": 74400,
+        "Signature Suite": 88800,
+        "Grand Suite": 144000,
+        "Aman Suite": 270400
+      },
+      "voyage": "AG271010"
+    },
+    {
+      "date": "2027-10-18",
+      "dateTo": "2027-10-24",
+      "season": "Italian Riviera and Corsica",
+      "itinerary": "Bari to Palermo, 6 nights",
+      "direction": "Bari to Palermo",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 43200,
+        "Premier Suite": 57000,
+        "Premier Fore Suite": 54000,
+        "Signature Suite": 64800,
+        "Grand Suite": 105000,
+        "Aman Suite": 197400
+      },
+      "voyage": "AG271018"
+    },
+    {
+      "date": "2027-10-24",
+      "dateTo": "2027-11-01",
+      "season": "Adriatic, Greek Isles and Turkey",
+      "itinerary": "Palermo to Marseille, 8 nights",
+      "direction": "Palermo to Marseille",
+      "nights": 8,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 58400,
+        "Premier Suite": 76800,
+        "Premier Fore Suite": 73600,
+        "Signature Suite": 88000,
+        "Grand Suite": 141600,
+        "Aman Suite": 266400
+      },
+      "voyage": "AG271024"
+    },
+    {
+      "date": "2027-11-01",
+      "dateTo": "2027-11-08",
+      "season": "Mediterranean Spain",
+      "itinerary": "Marseille to Málaga, 7 nights",
+      "direction": "Marseille to Malaga",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 51100,
+        "Premier Suite": 67200,
+        "Premier Fore Suite": 64400,
+        "Signature Suite": 77000,
+        "Grand Suite": 123900,
+        "Aman Suite": 233100
+      },
+      "voyage": "AG271101"
+    },
+    {
+      "date": "2027-11-08",
+      "dateTo": "2027-11-21",
+      "season": "The Transatlantic",
+      "itinerary": "Málaga to Saint John's, 13 nights",
+      "direction": "Malaga to Saint John's",
+      "nights": 13,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 54600,
+        "Premier Suite": 72800,
+        "Premier Fore Suite": 68900,
+        "Signature Suite": 81900,
+        "Grand Suite": 132600,
+        "Aman Suite": 249600
+      },
+      "voyage": "AG271108"
+    },
+    {
+      "date": "2027-11-21",
+      "dateTo": "2027-11-28",
+      "season": "The Leeward Islands",
+      "itinerary": "Saint John's round trip, 7 nights",
+      "direction": "Saint John's round trip",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 47600,
+        "Premier Suite": 63000,
+        "Premier Fore Suite": 59500,
+        "Signature Suite": 71400,
+        "Grand Suite": 115500,
+        "Aman Suite": 217700
+      },
+      "voyage": "AG271121"
+    },
+    {
+      "date": "2027-11-28",
+      "dateTo": "2027-12-05",
+      "season": "The Leeward Islands",
+      "itinerary": "Saint John's to Philipsburg, 7 nights",
+      "direction": "Saint John's to Philipsburg",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 45500,
+        "Premier Suite": 60200,
+        "Premier Fore Suite": 57400,
+        "Signature Suite": 68600,
+        "Grand Suite": 110600,
+        "Aman Suite": 207900
+      },
+      "voyage": "AG271128"
+    },
+    {
+      "date": "2027-12-05",
+      "dateTo": "2027-12-10",
+      "season": "The Leeward Islands",
+      "itinerary": "Philipsburg to Saint John's, 5 nights",
+      "direction": "Philipsburg to Saint John's",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 32500,
+        "Premier Suite": 43000,
+        "Premier Fore Suite": 41000,
+        "Signature Suite": 49000,
+        "Grand Suite": 79000,
+        "Aman Suite": 148500
+      },
+      "voyage": "AG271205"
+    },
+    {
+      "date": "2027-12-10",
+      "dateTo": "2027-12-15",
+      "season": "The Windward Islands",
+      "itinerary": "Saint John's to Bridgetown, 5 nights",
+      "direction": "Saint John's to Bridgetown",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 32000,
+        "Premier Suite": 42000,
+        "Premier Fore Suite": 40000,
+        "Signature Suite": 48000,
+        "Grand Suite": 77500,
+        "Aman Suite": 146000
+      },
+      "voyage": "AG271210"
+    },
+    {
+      "date": "2027-12-15",
+      "dateTo": "2027-12-20",
+      "season": "The Dutch Caribbean",
+      "itinerary": "Bridgetown to Oranjestad, 5 nights",
+      "direction": "Bridgetown to Oranjestad",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 32500,
+        "Premier Suite": 43000,
+        "Premier Fore Suite": 41000,
+        "Signature Suite": 49000,
+        "Grand Suite": 79000,
+        "Aman Suite": 148500
+      },
+      "voyage": "AG271215"
+    },
+    {
+      "date": "2027-12-20",
+      "dateTo": "2027-12-26",
+      "season": "The Dutch Caribbean",
+      "itinerary": "Oranjestad to Bridgetown, 6 nights",
+      "direction": "Oranjestad to Bridgetown",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 43800,
+        "Premier Suite": 57600,
+        "Premier Fore Suite": 55200,
+        "Signature Suite": 66000,
+        "Grand Suite": 106200,
+        "Aman Suite": 199800
+      },
+      "voyage": "AG271220"
+    },
+    {
+      "date": "2027-12-26",
+      "dateTo": "2028-01-02",
+      "season": "The Leeward Islands",
+      "itinerary": "Bridgetown to Saint John's, 7 nights",
+      "direction": "Bridgetown to Saint John's",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 49700,
+        "Premier Suite": 65800,
+        "Premier Fore Suite": 62300,
+        "Signature Suite": 74900,
+        "Grand Suite": 120400,
+        "Aman Suite": 226800
+      },
+      "voyage": "AG271226"
+    },
+    {
+      "date": "2028-01-02",
+      "dateTo": "2028-01-07",
+      "season": "The Leeward Islands",
+      "itinerary": "Saint John's to Philipsburg, 5 nights",
+      "direction": "Saint John's to Philipsburg",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 31500,
+        "Premier Suite": 41500,
+        "Premier Fore Suite": 39500,
+        "Signature Suite": 47500,
+        "Grand Suite": 76500,
+        "Aman Suite": 144000
+      },
+      "voyage": "AG280102"
+    },
+    {
+      "date": "2028-01-07",
+      "dateTo": "2028-01-14",
+      "season": "Greater Antilles",
+      "itinerary": "Philipsburg to La Romana, 7 nights",
+      "direction": "Philipsburg to La Romana",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 45500,
+        "Premier Suite": 60200,
+        "Premier Fore Suite": 57400,
+        "Signature Suite": 68600,
+        "Grand Suite": 110600,
+        "Aman Suite": 207900
+      },
+      "voyage": "AG280107"
+    },
+    {
+      "date": "2028-01-14",
+      "dateTo": "2028-01-22",
+      "season": "Greater Antilles",
+      "itinerary": "La Romana to Saint John's, 8 nights",
+      "direction": "La Romana to Saint John's",
+      "nights": 8,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 52000,
+        "Premier Suite": 68800,
+        "Premier Fore Suite": 65600,
+        "Signature Suite": 78400,
+        "Grand Suite": 126400,
+        "Aman Suite": 237600
+      },
+      "voyage": "AG280114"
+    },
+    {
+      "date": "2028-01-22",
+      "dateTo": "2028-01-28",
+      "season": "The Windward Islands",
+      "itinerary": "Saint John's to Bridgetown, 6 nights",
+      "direction": "Saint John's to Bridgetown",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 38400,
+        "Premier Suite": 50400,
+        "Premier Fore Suite": 48000,
+        "Signature Suite": 57600,
+        "Grand Suite": 93000,
+        "Aman Suite": 175200
+      },
+      "voyage": "AG280122"
+    },
+    {
+      "date": "2028-01-28",
+      "dateTo": "2028-02-03",
+      "season": "The Dutch Caribbean",
+      "itinerary": "Bridgetown to Oranjestad, 6 nights",
+      "direction": "Bridgetown to Oranjestad",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 39000,
+        "Premier Suite": 51600,
+        "Premier Fore Suite": 49200,
+        "Signature Suite": 58800,
+        "Grand Suite": 94800,
+        "Aman Suite": 178200
+      },
+      "voyage": "AG280128"
+    },
+    {
+      "date": "2028-02-03",
+      "dateTo": "2028-02-11",
+      "season": "The Dutch Caribbean",
+      "itinerary": "Oranjestad to Bridgetown, 8 nights",
+      "direction": "Oranjestad to Bridgetown",
+      "nights": 8,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 52000,
+        "Premier Suite": 68800,
+        "Premier Fore Suite": 65600,
+        "Signature Suite": 78400,
+        "Grand Suite": 126400,
+        "Aman Suite": 237600
+      },
+      "voyage": "AG280203"
+    },
+    {
+      "date": "2028-02-11",
+      "dateTo": "2028-02-18",
+      "season": "The Windward Islands",
+      "itinerary": "Bridgetown to Saint John's, 7 nights, February 2028",
+      "direction": "Bridgetown to Saint John's (February 2028)",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 45500,
+        "Premier Suite": 60200,
+        "Premier Fore Suite": 57400,
+        "Signature Suite": 68600,
+        "Grand Suite": 110600,
+        "Aman Suite": 207900
+      },
+      "voyage": "AG280211"
+    },
+    {
+      "date": "2028-02-18",
+      "dateTo": "2028-02-25",
+      "season": "The Leeward Islands",
+      "itinerary": "Saint John's round trip, 7 nights, February 2028",
+      "direction": "Saint John's round trip (February 2028)",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 45500,
+        "Premier Suite": 60200,
+        "Premier Fore Suite": 57400,
+        "Signature Suite": 68600,
+        "Grand Suite": 110600,
+        "Aman Suite": 207900
+      },
+      "voyage": "AG280218"
+    },
+    {
+      "date": "2028-02-25",
+      "dateTo": "2028-03-03",
+      "season": "The Windward Islands",
+      "itinerary": "Saint John's to Bridgetown, 7 nights",
+      "direction": "Saint John's to Bridgetown",
+      "nights": 7,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 44800,
+        "Premier Suite": 58800,
+        "Premier Fore Suite": 56000,
+        "Signature Suite": 67200,
+        "Grand Suite": 108500,
+        "Aman Suite": 204400
+      },
+      "voyage": "AG280225"
+    },
+    {
+      "date": "2028-03-03",
+      "dateTo": "2028-03-09",
+      "season": "The Windward Islands",
+      "itinerary": "Bridgetown to Saint John's, 6 nights",
+      "direction": "Bridgetown to Saint John's",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 38400,
+        "Premier Suite": 50400,
+        "Premier Fore Suite": 48000,
+        "Signature Suite": 57600,
+        "Grand Suite": 93000,
+        "Aman Suite": 175200
+      },
+      "voyage": "AG280303"
+    },
+    {
+      "date": "2028-03-09",
+      "dateTo": "2028-03-15",
+      "season": "The Windward Islands",
+      "itinerary": "Saint John's to Bridgetown, 6 nights, March 2028",
+      "direction": "Saint John's to Bridgetown (March 2028)",
+      "nights": 6,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 39000,
+        "Premier Suite": 51600,
+        "Premier Fore Suite": 49200,
+        "Signature Suite": 58800,
+        "Grand Suite": 94800,
+        "Aman Suite": 178200
+      },
+      "voyage": "AG280309"
+    },
+    {
+      "date": "2028-03-15",
+      "dateTo": "2028-03-20",
+      "season": "The Leeward Islands",
+      "itinerary": "Bridgetown to Saint John's, 5 nights",
+      "direction": "Bridgetown to Saint John's",
+      "nights": 5,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 32500,
+        "Premier Suite": 43000,
+        "Premier Fore Suite": 41000,
+        "Signature Suite": 49000,
+        "Grand Suite": 79000,
+        "Aman Suite": 148500
+      },
+      "voyage": "AG280315"
+    },
+    {
+      "date": "2028-03-20",
+      "dateTo": "2028-03-31",
+      "season": "The Transatlantic",
+      "itinerary": "Saint John's to Funchal, 11 nights",
+      "direction": "Saint John's to Funchal",
+      "nights": 11,
+      "status": "open",
+      "prices": {
+        "Deluxe Suite": 46200,
+        "Premier Suite": 61600,
+        "Premier Fore Suite": 58300,
+        "Signature Suite": 69300,
+        "Grand Suite": 112200,
+        "Aman Suite": 211200
+      },
+      "voyage": "AG280320"
+    }
+  ],
+  "routesNote": "Every published voyage day by day, as Aman at Sea publishes it, read on 14 November 2026. Courses and positions are approximate.",
+  "datesPublished": true,
+  "fareUnit": "suite",
+  "fareBasis": "per suite for the voyage, in USD, as published",
+  "pricesNote": "Aman at Sea prices each voyage per suite, for the whole voyage, in US dollars (it also publishes euro and sterling fares). Each voyage shows every suite type's published fare, read on 14 November 2026. Availability is not yet published; James confirms your suite and fare.",
+  "inclusions": [
+    "Suite accommodation with an on-demand Suite Host",
+    "Unpacking and packing, daily laundry and pressing, twice-daily housekeeping",
+    "Personalised beverage replenishment in your suite",
+    "All-day dining at Alira, in-suite breakfast, light bites and the gelateria",
+    "Non-alcoholic drinks and beer",
+    "Fitness studio, marina platforms and water toys, pools",
+    "Onboard entertainment and enrichment, cinema and Youth Lounge",
+    "Starlink Wi-Fi",
+    "All onboard gratuities"
+  ],
+  "exclusions": [
+    "Dining at Akari, Hiori and the Aman Grill where charged",
+    "Wine and spirits beyond your suite's selection",
+    "Aman Spa treatments",
+    "Shore experiences",
+    "Flights and transfers (Aman at Sea does not arrange air travel)",
+    "Select premium experiences and bespoke arrangements"
+  ],
+  "children": "Children are welcome. The Youth Lounge is for ages six to 15, with virtual reality surf simulators and games consoles, and many suites connect into two- and three-bedroom family suites. Aman at Sea publishes no minimum age on its site; James confirms it for your voyage.",
+  "faqs": [
+    [
+      "When does Amangati first sail?",
+      "Her maiden voyage leaves Palma de Mallorca on 7 May 2027 and arrives in Nice on 13 May. She spends the summer of 2027 in the Mediterranean, crosses the Atlantic from Málaga in November, and winters in the Caribbean."
+    ],
+    [
+      "How many suites does Amangati have?",
+      "47, in six types from the Deluxe Suite (about 61 square metres) to the 354 square metre Aman Suite, every one with a private terrace."
+    ],
+    [
+      "Who built and designed Amangati?",
+      "She is under construction at T. Mariotti in Genoa, Italy, designed by Sinot Yacht Architecture & Design."
+    ],
+    [
+      "How much does an Amangati voyage cost?",
+      "Aman at Sea publishes a fare for each suite type on each voyage, per suite for the whole voyage, in US dollars. The lowest published today is US$31,500. Every voyage's fares are under Dates and rates on this page."
+    ],
+    [
+      "What is included in the fare?",
+      "Your suite and Suite Host, laundry and pressing, all-day dining at Alira, in-suite breakfast, non-alcoholic drinks and beer, the fitness studio, pools, marina and water toys, Starlink Wi-Fi and all onboard gratuities."
+    ],
+    [
+      "Where does Amangati sail?",
+      "Mediterranean Spain, the French and Italian Rivieras, Sicily and Malta, the Adriatic, the Greek islands and Turkey in 2027, then an Atlantic passage and the Leeward, Windward and ABC islands and the Dominican Republic in winter 2027 to 2028."
+    ],
+    [
+      "What are the restaurants on Amangati?",
+      "Four restaurants: Akari (washoku and omakase), Hiori (teppanyaki), the Aman Grill and Alira (all-day Mediterranean), with a private dining room for ten, in-suite dining, The Jazz Club and a cigar lounge."
+    ],
+    [
+      "Is there a spa on Amangati?",
+      "The Aman Spa has eight ocean-facing treatment suites with terraces and whirlpools, a hammam, a banya, a medi-spa, a beauty lounge, a yoga deck with two sea pools, and a two-storey Japanese garden."
+    ],
+    [
+      "Can families sail on Amangati?",
+      "Yes. There is a Youth Lounge for ages six to 15, and many suites connect into two- and three-bedroom suites."
+    ],
+    [
+      "What are the booking terms?",
+      "A 25% deposit at booking, with the balance due 150 days before departure. Cancellation charges rise from 15% of the fare more than 150 days out to 100% inside 60 days."
+    ],
+    [
+      "Can Amangati be chartered?",
+      "Yes. Aman at Sea offers the whole yacht for private charters and events, with custom itineraries."
+    ]
+  ],
+  "suits": [
+    {
+      "who": "Aman regulars",
+      "line": "The resorts you know, now with a wake behind them."
+    },
+    {
+      "who": "Couples",
+      "line": "A terrace suite, the spa, and dinner at Akari."
+    },
+    {
+      "who": "Families",
+      "line": "Connecting suites and a Youth Lounge for six to 15."
+    },
+    {
+      "who": "Wellness travellers",
+      "line": "Eight treatment suites on the sea, hammam, banya and yoga deck."
+    },
+    {
+      "who": "Groups and celebrations",
+      "line": "The whole yacht by charter, or the Aman Suite with a Premier Suite."
+    }
+  ],
+  "sources": [
+    "https://www.amanatsea.com/amangati",
+    "https://www.amanatsea.com/amangati/accommodation",
+    "https://www.amanatsea.com/amangati/dining",
+    "https://www.amanatsea.com/amangati/wellness",
+    "https://www.amanatsea.com/amangati/marina",
+    "https://www.amanatsea.com/destinations",
+    "https://www.amanatsea.com/faqs",
+    "https://www.amanatsea.com/press-room",
+    "https://www.amanatsea.com/voyages"
+  ],
+  "film": null,
+  "terms": [
+    "Deposit: 25% of the voyage fare at booking.",
+    "Final payment: 150 days before departure.",
+    "Cancellation: 15% of the voyage fare up to 151 days before departure, 25% from 150 to 121 days, 50% from 120 to 91 days, 75% from 90 to 61 days, and 100% from 60 days. Aman at Sea's full terms apply."
+  ]
+}

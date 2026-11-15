@@ -12,6 +12,7 @@ import { WD } from "@/lib/content/white-desert";
 import { JOURNEYS, journeyPath } from "@/lib/content/ships/journeys";
 import PLACES from "@/lib/content/places-library.json";
 import { TY_DOSSIERS, TY_PATH, tyPath } from "@/lib/content/terra-y";
+import { GUIDES } from "@/lib/content/guides";
 
 // The house search index (/search/index.json), rebuilt from the Ledger on every publish (James, 4 Nov 2026: "if you
 // type in Ivory Lodge, it should pull up"). It used to be a file written once on 24 Oct, so lodges and residences
@@ -95,6 +96,12 @@ export function GET() {
   for (const pl of (PLACES as { places: { slug: string; name: string; parentSlug: string; regionSlug: string; subtitle?: string }[] }).places) {
     const c = COUNTRIES.find((x) => x.slug === pl.parentSlug);
     if (c) add({ t: "destination", n: pl.name, u: `/destinations/${pl.regionSlug}/${pl.parentSlug}/${pl.slug}`, k: "Place", p: c.name, r: pl.regionSlug, f: [], g: pl.subtitle ?? null, c: [c.name] });
+  }
+  // Place guides (Tahiti's islands, Fiji's groups, the Maldives' three ways in) by name, tagline and keywords.
+  for (const g of Object.values(GUIDES)) {
+    if (!g.parent) continue;
+    const c = COUNTRIES.find((x) => x.slug === g.parent);
+    add({ t: "destination", n: g.name, u: g.path, k: "Place", p: c?.name ?? null, r: g.region, f: [], g: `${g.tagline}. ${g.seo.keywords.join(", ")}`, c: c ? [c.name] : [] });
   }
   for (const v of VOLUMES) add({ t: "page", n: v.label, u: v.href, k: "Section", p: null, r: null, f: [], g: v.intro ?? null });
   // Terra Y dossiers (James, 15 Nov 2026): each by name, with the places and words people search for.

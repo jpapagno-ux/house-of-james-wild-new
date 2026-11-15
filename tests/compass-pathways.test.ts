@@ -11,7 +11,7 @@ const RECORDS = MAP.map((r) => ({ ...r, hasVerdict: withVerdict(r.slug), bestMon
 
 test("adapter vocabulary mirrors the taxonomy", () => {
   for (const [id, p] of Object.entries(PATHWAYS)) assert.equal(PATHWAY_NAMES[id as keyof typeof PATHWAY_NAMES], p.name);
-  assert.equal(new Set(Object.values(SETTING_TO_PATHWAY)).size, 8, "every setting maps to its own pathway");
+  assert.equal(new Set(Object.values(SETTING_TO_PATHWAY)).size, 9, "every setting maps to its own pathway");
 });
 
 test("drafts are excluded unless asked for, and every fit is explained", () => {

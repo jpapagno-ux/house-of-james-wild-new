@@ -379,6 +379,7 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
   --jw-path-06: #4E4660; --jw-path-06-text: #2E2B28; --jw-path-06-tint: #FFFFFF;
   --jw-path-07: #6B3A4E; --jw-path-07-text: #2E2B28; --jw-path-07-tint: #FFFFFF;
   --jw-path-08: #9C4F45; --jw-path-08-text: #2E2B28; --jw-path-08-tint: #FFFFFF;
+  --jw-path-09: #1F4A66; --jw-path-09-text: #2E2B28; --jw-path-09-tint: #FFFFFF;
   /* Where Your Stay Gives Back (the Wild & Co. Impact Note): Stone Mist panel, Graphite copy, Warm Stone text mark (House Standard) */
   --jw-impact-panel: #F4F2EF; --jw-impact-copy: #2E2B28; --jw-impact-highlight: #6B635A;
   /* Character treatments: James annotates in espresso ink with the seal's oxblood; Iggi in a quiet green */
@@ -393,6 +394,7 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .pathway-06 { --jw-path: var(--jw-path-06); --jw-path-text: var(--jw-path-06-text); --jw-path-tint: var(--jw-path-06-tint); }
 .pathway-07 { --jw-path: var(--jw-path-07); --jw-path-text: var(--jw-path-07-text); --jw-path-tint: var(--jw-path-07-tint); }
 .pathway-08 { --jw-path: var(--jw-path-08); --jw-path-text: var(--jw-path-08-text); --jw-path-tint: var(--jw-path-08-tint); }
+.pathway-09 { --jw-path: var(--jw-path-09); --jw-path-text: var(--jw-path-09-text); --jw-path-tint: var(--jw-path-09-tint); }
 
 /* Stamps and badges on photographs (James, 30 Oct 2026): no paper behind them. The volume's
    stamp re-inks in its light tint so it reads on the picture, presses in as it comes into

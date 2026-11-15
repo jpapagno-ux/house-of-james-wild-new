@@ -7,7 +7,7 @@ import type { Reading, Party, Setting, Pace, Privacy, Season } from "./pathway-a
 
 const PARTIES: Party[] = ["couple", "family", "friends", "solo", "group"];
 // Mirrors SETTING_TO_PATHWAY in the adapter (a test asserts it); listed here so this file has no runtime imports.
-const SETTINGS: Setting[] = ["rainforest", "ocean", "mountain", "wildlife", "wellness", "hidden", "private", "heritage"];
+const SETTINGS: Setting[] = ["rainforest", "ocean", "mountain", "wildlife", "wellness", "hidden", "private", "heritage", "polar"];
 const PACES: Pace[] = ["unhurried", "balanced", "full"];
 const PRIVACIES: Privacy[] = ["any", "private_house", "small_camp"];
 const SEASONS: Season[] = ["dry", "green", "any"];

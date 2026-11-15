@@ -68,7 +68,7 @@ export const HOUSE_SET = [HOUSE.paper, HOUSE.mist, HOUSE.stone, HOUSE.stoneText,
 
 // Wild Pathways keep their colour only as a small 6px dot beside the printed name (chips are squared
 // graphite outlines). These are the eight dot colours; they never fill a chip, button or band.
-export type DeepSeaKey = "navy" | "ocean" | "cerulean" | "slate" | "teal" | "aqua" | "turquoise" | "seaGlass";
+export type DeepSeaKey = "navy" | "ocean" | "cerulean" | "slate" | "teal" | "aqua" | "turquoise" | "seaGlass" | "polar";
 export type Swatch = { name: string; fill: string; tint: string };
 export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
   navy: { name: "Mulberry (A Place of Our Own)", fill: "#6B3A4E", tint: "#FFFFFF" },
@@ -79,6 +79,7 @@ export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
   aqua: { name: "Terracotta Rose (Rooted in Place)", fill: "#9C4F45", tint: "#FFFFFF" },
   turquoise: { name: "Forest (Into the Green)", fill: "#2F6B45", tint: "#FFFFFF" },
   seaGlass: { name: "Sage (The Art of Stillness)", fill: "#5F6E58", tint: "#FFFFFF" },
+  polar: { name: "Polar Blue (The Far Edge)", fill: "#1F4A66", tint: "#FFFFFF" },
 };
 
 /** Marks only (never a text fill): the aqua sun of the On the Horizon stamp, on light and on dark grounds. */

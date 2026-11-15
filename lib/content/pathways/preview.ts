@@ -13,6 +13,7 @@ export const PATHWAY_CARD_STAY: Record<PathwayId, string> = {
   "PATH-06": "beyond-sussuvlei-desert-lodge",
   "PATH-07": "arijiju-laikipia",
   "PATH-08": "leeu-estates",
+  "PATH-09": "white-desert",
 };
 
 /** The six pictured prominently on the landing; the other two sit in the index below (brief §9). */

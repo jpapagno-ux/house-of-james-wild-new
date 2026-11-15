@@ -12,6 +12,7 @@ export const PATHWAY_ANSWER: Record<PathwayId, string> = {
   "PATH-06": "Off the Map is the Ledger's collection of hidden and undiscovered places: stays with no signpost, filed before anyone else found them. Each is vetted and keeps its own Ledger ID; some are shown only when a reading is sent to the house.",
   "PATH-07": "A Place of Our Own collects the Ledger's private residences: whole houses, whole islands and whole camps for one party under one roof. Each entry is vetted and keeps its own Ledger ID; many also appear in the Gatherings volume.",
   "PATH-08": "Rooted in Place gathers the heritage and culture stays in the Ledger: working farms, old houses and hosts whose families never left. Vetted entries only, each with its own Ledger ID.",
+  "PATH-09": "The Far Edge is the Ledger's polar and remote collection: camps on the Antarctic ice, polar voyages and the small planes and ships that reach the last wild edges of the map. Every entry is vetted by James or a named partner and keeps its own Ledger ID; the Terra Y expedition dossiers live here.",
 };
 
 export const PATHWAY_FAQS: Record<PathwayId, { q: string; a: string }[]> = {
@@ -49,6 +50,11 @@ export const PATHWAY_FAQS: Record<PathwayId, { q: string; a: string }[]> = {
     { q: "What makes a stay Rooted in Place?", a: "A working farm, an old house kept rather than rebuilt, hosts whose families never left. The host and the history are part of the stay." },
     { q: "Can a stay be on more than one pathway?", a: "Yes. A pathway is a collection, not a category. A stay leads with one pathway and may sit on others; it keeps a single Ledger ID and page." },
   ],
+  "PATH-09": [
+    { q: "What belongs on The Far Edge?", a: "Journeys to the polar and remote edges of the map: camps on the Antarctic ice, polar voyages and expedition flights to places no airline reaches. The way in is part of the journey." },
+    { q: "How is it different from Between Tides?", a: "Between Tides is islands, reefs and warm water. The Far Edge is ice, polar seas and the remote interiors reached by small plane or expedition ship." },
+    { q: "Can a journey be on more than one pathway?", a: "Yes. A pathway is a collection, not a category. A journey leads with one pathway and may sit on others; it keeps a single Ledger ID and page." },
+  ],
 };
 
 // Title and meta description per pathway, tuned to the head terms in
@@ -63,4 +69,5 @@ export const PATHWAY_SEO: Record<PathwayId, { title: string; description: string
   "PATH-06": { title: "Off the Map: Remote and Secluded Lodges Vetted by James Wild & Co", description: "Remote lodges and secluded houses with no signpost, filed in the James Wild & Co Ledger first. Some are shared only when a Compass reading is sent in." },
   "PATH-07": { title: "A Place of Our Own: Private Villas and Exclusive-Use Stays Vetted by James Wild & Co", description: "Private villas with staff, exclusive-use safari lodges and whole islands for one party under one roof, vetted by James Wild & Co. Many also sit in Gatherings." },
   "PATH-08": { title: "Rooted in Place: Heritage Hotels, Wine Estates and Host-Led Stays Vetted by James Wild & Co", description: "Heritage hotels, working farms, wine estates and old houses kept rather than rebuilt, with hosts whose families never left. Vetted by James Wild & Co." },
+  "PATH-09": { title: "The Far Edge: Antarctica, Polar Voyages and Remote Expeditions Vetted by James Wild & Co", description: "Antarctic ice camps, the South Pole, polar voyages and expedition flights to the last wild edges of the map, vetted by James Wild & Co." },
 };

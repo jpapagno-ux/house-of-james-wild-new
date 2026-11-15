@@ -19,10 +19,11 @@ import type { PathwayId, PathwayRecord, VolumeKey } from "@/lib/pathways";
 export const PATHWAY_NAMES: Record<PathwayId, string> = {
   "PATH-01": "Into the Green", "PATH-02": "Between Tides", "PATH-03": "Above It All", "PATH-04": "Where the Wild Lives",
   "PATH-05": "The Art of Stillness", "PATH-06": "Off the Map", "PATH-07": "A Place of Our Own", "PATH-08": "Rooted in Place",
+  "PATH-09": "The Far Edge",
 };
 
 export type Party = "couple" | "family" | "friends" | "solo" | "group";
-export type Setting = "rainforest" | "ocean" | "mountain" | "wildlife" | "wellness" | "hidden" | "private" | "heritage";
+export type Setting = "rainforest" | "ocean" | "mountain" | "wildlife" | "wellness" | "hidden" | "private" | "heritage" | "polar";
 export type Pace = "unhurried" | "balanced" | "full";
 export type Privacy = "any" | "private_house" | "small_camp";
 export type Season = "dry" | "green" | "any";
@@ -40,7 +41,7 @@ export type Reading = {
 
 export const SETTING_TO_PATHWAY: Record<Setting, PathwayId> = {
   rainforest: "PATH-01", ocean: "PATH-02", mountain: "PATH-03", wildlife: "PATH-04",
-  wellness: "PATH-05", hidden: "PATH-06", private: "PATH-07", heritage: "PATH-08",
+  wellness: "PATH-05", hidden: "PATH-06", private: "PATH-07", heritage: "PATH-08", polar: "PATH-09",
 };
 
 const PARTY_SUITS: Record<Party, string[]> = {

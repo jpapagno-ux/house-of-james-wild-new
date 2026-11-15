@@ -86,7 +86,7 @@ export default async function Commercial() {
               <div key={k as string} className="bg-white p-4"><dt className="text-[12px] uppercase tracking-[0.12em] ledger-muted">{k}</dt><dd className="ledger-display text-[1.5rem] mt-1">{formatMoney(v as number)}</dd></div>
             ))}
           </dl>
-          <p className="text-[13px] ledger-muted mt-3">Taxes, fees and Florida sales tax are never commissionable. Earnings by booking and by advisor arrive with bookings.</p>
+          <p className="text-[13px] ledger-muted mt-3">Taxes and fees are never commissionable. Earnings by booking and by advisor arrive with bookings.</p>
         </Section>
       )}
       {retired.length > 0 && (

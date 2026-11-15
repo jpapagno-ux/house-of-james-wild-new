@@ -164,7 +164,7 @@ export const ALIIKAI_RECORD: ShipRecord = {
   deckPlans: [],
   itineraries: [ALIIKAI_ITINERARY],
   departures: DEPARTURES,
-  pricesNote: "Voyage fares are per person in an ocean-view cabin with portholes, double occupancy, plus 11% tax and 7% Florida sales tax; the other cabins are priced by the night (see Cabins). Travelling solo, the single supplement is 50% of the nightly rate.",
+  pricesNote: "Voyage fares are per person in an ocean-view cabin with portholes, double occupancy, plus 11% tax; the other cabins are priced by the night (see Cabins). Travelling solo, the single supplement is 50% of the nightly rate.",
   inclusions: [],
   children: "",
   faqs: S0.faqs,

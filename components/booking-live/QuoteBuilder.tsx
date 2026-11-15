@@ -7,7 +7,7 @@ import { TBC, isEstimateSeason, seasonLabel, tbcNote } from "@/lib/booking-live/
 
 // Check Availability on a contracted card: dates + occupancy first (spec §11:
 // no bookable prices without them), then every room and rate with its
-// night-by-night breakdown, taxes, Florida sales tax, deposit and cancellation.
+// night-by-night breakdown, taxes, deposit and cancellation.
 // Always labelled "Request to Reserve": a card is not live availability.
 
 type Night = { date: string; season: string; baseMinor: number; extraAdultsMinor: number; childrenMinor: number; totalMinor: number };
@@ -126,7 +126,6 @@ export default function QuoteBuilder({ slug, name, signedIn }: { slug: string; n
                   <Row k="Room nights" v={fmt(q.roomSubtotalMinor, cur)} />
                   {q.discounts.map((d) => <Row key={d.code} k={d.label} v={`− ${fmt(d.amountMinor, cur)}`} />)}
                   {added.map((c) => <Row key={c.id} k={c.name} v={fmt(c.amountMinor, cur)} />)}
-                  <Row k="Florida sales tax (7%)" v={fmt(q.floridaTaxMinor, cur)} />
                   <div className="flex justify-between gap-4 py-3 border-b ledger-rule"><dt className="ledger-display text-xl">Total{tbc && <span className="ml-2 ledger-eyebrow ledger-crimson align-middle">{TBC}</span>}</dt><dd className="ledger-display text-xl ledger-crimson">{fmt(q.grandTotalMinor, cur)}</dd></div>
                   {included.length > 0 && <p className="py-2 text-[13px] ledger-muted">Already in the rate: {included.map((c) => `${c.name} (${fmt(c.amountMinor, cur)})`).join(", ")}.</p>}
                   <Row k="Deposit to confirm" v={fmt(q.depositDueMinor, cur)} />

@@ -1,5 +1,7 @@
 # Booking Live · Phase 2 — Commercial Rate Cards
 
+> 15 Nov 2026 (James): the house adds no Florida sales tax. Any 7% line or figure below is withdrawn; totals are now the same amounts without it.
+
 Contracted seasonal rates are edited in Airtable, approved there, synced to
 Supabase, and priced night by night on the site. Every price is labelled
 **Request to Reserve**: a contracted card is never proof of a free room.

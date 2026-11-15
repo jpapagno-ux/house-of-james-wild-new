@@ -36,10 +36,10 @@ test("GATE: the sample card prices 4 winter nights at Leeu, traceably, without c
   assert.equal(levy.amountMinor, 2550);        // 1% of US$2,550.00, added
   assert.equal(vat.included, true);            // 15% VAT already in the rate: shown, not added
   assert.equal(vat.amountMinor, 255000 - Math.round(255000 / 1.15));
-  assert.equal(q.floridaTaxMinor, 18029);      // 7% of US$2,575.50 = 180.285 → US$180.29
-  assert.equal(q.grandTotalMinor, 275579);     // US$2,755.79
-  assert.equal(q.depositDueMinor, 82674);      // 30%
-  assert.equal(q.balanceMinor, 192905);
+  assert.equal(q.floridaTaxMinor, 0);          // no Florida sales tax (James, 15 Nov 2026)
+  assert.equal(q.grandTotalMinor, 257550);     // US$2,575.50
+  assert.equal(q.depositDueMinor, 77265);      // 30%
+  assert.equal(q.balanceMinor, 180285);
   assert.equal(q.balanceDueDate, "2027-04-11");// 60 days before arrival
   // Traceable and honest
   assert.equal(q.availability, "on_request");

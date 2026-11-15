@@ -9,7 +9,7 @@
 //   room nights (season by season, night by night)
 //   − promotions
 //   + local taxes and mandatory fees the rate EXCLUDES (included ones are shown, not added)
-//   + 7% Florida sales tax on everything above            (house rule)
+//   (no Florida sales tax: James, 15 Nov 2026; the 7% house rule of 27 Oct 2026 is withdrawn)
 //   = grand total → deposit now, balance by the due date
 //
 // A contracted rate card is NEVER proof of availability: every quote from
@@ -149,8 +149,8 @@ export type QuoteErrorCode =
   | "no_rate_for_night" | "booking_window" | "closed" | "min_stay" | "max_stay" | "closed_to_arrival"
   | "closed_to_departure" | "promo_invalid" | "invalid_card";
 
-/** Florida sales tax on everything the house sells (James, 27 Oct 2026). */
-export const FL_TAX_BP: Bp = 700;
+/** Florida sales tax: none (James, 15 Nov 2026). A named zero, so quotes keep their shape and `floridaTaxMinor` stores 0. */
+export const FL_TAX_BP: Bp = 0;
 
 // ---------- dates (calendar arithmetic in UTC, so no daylight-saving drift)
 
@@ -321,7 +321,6 @@ export function quote(card: RateCard, room: Room, req: QuoteRequest): Quote | Qu
   });
   const taxesMinor = sum(charges.filter((c) => !c.included).map((c) => c.amountMinor));
   const floridaTaxMinor = pct(netRoomMinor + taxesMinor, FL_TAX_BP);
-  charges.push({ id: "fl-sales-tax", name: "Florida sales tax (7%)", kind: "house_tax", included: false, amountMinor: floridaTaxMinor });
   const grandTotalMinor = netRoomMinor + taxesMinor + floridaTaxMinor;
 
   // Payment schedule: if arrival is inside the balance window, everything is due now.

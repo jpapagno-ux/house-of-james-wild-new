@@ -4,6 +4,9 @@ These are James's standing rules for every phase of Booking Live. Anything that
 prices, books, pays or reports must follow them. The source is the owner's notes
 of 27 Oct 2026.
 
+> **15 Nov 2026 (James): the house adds no Florida sales tax.** The 7% rule below is withdrawn and removed from the
+> pricing engine, the price builder and every page. Where this file still names it, read "none".
+
 Status key:
 - **Built**: in the code now.
 - **Planned**: scheduled for the phase named.

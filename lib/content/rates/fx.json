@@ -3,6 +3,7 @@
   "date": "2026-11-01",
   "source": "European Central Bank reference rate (2026-10-30)",
   "rates": {
-    "ZAR": 16.69
+    "ZAR": 16.69,
+    "EUR": 0.8951
   }
 }

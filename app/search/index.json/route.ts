@@ -11,6 +11,7 @@ import { REGIONS, VOLUMES } from "@/lib/site";
 import { WD } from "@/lib/content/white-desert";
 import { JOURNEYS, journeyPath } from "@/lib/content/ships/journeys";
 import PLACES from "@/lib/content/places-library.json";
+import { TY_DOSSIERS, TY_PATH, tyPath } from "@/lib/content/terra-y";
 
 // The house search index (/search/index.json), rebuilt from the Ledger on every publish (James, 4 Nov 2026: "if you
 // type in Ivory Lodge, it should pull up"). It used to be a file written once on 24 Oct, so lodges and residences
@@ -28,6 +29,8 @@ type Item = { t: "stay" | "destination" | "route" | "page"; n: string; u: string
 // can find whatever they need quickly").
 const PAGES: [string, string, string][] = [
   ["Polar voyages: Antarctica and the Arctic", "/voyages/polar", "Expedition ships to the Antarctic Peninsula, South Georgia and the Arctic"],
+  ["Terra Y: VIP expedition dossiers", TY_PATH, "Antarctica by private jet, the South Pole and Emperor penguins with White Desert; DC-3 expeditions with Echo Charlie"],
+  ["The Far Edge: polar and remote journeys", "/pathways/the-far-edge", "Antarctica, the South Pole, Greenland and expedition flights by sea, ice and air"],
   ["All destinations", "/destinations", "Every region and country in the Ledger"],
   ["The Atlas", "/atlas", "Every stay, camp and ship on one map"],
   ["The Compass", "/compass", "The founder's compass: where to go, by what you want from it"],
@@ -94,6 +97,12 @@ export function GET() {
     if (c) add({ t: "destination", n: pl.name, u: `/destinations/${pl.regionSlug}/${pl.parentSlug}/${pl.slug}`, k: "Place", p: c.name, r: pl.regionSlug, f: [], g: pl.subtitle ?? null, c: [c.name] });
   }
   for (const v of VOLUMES) add({ t: "page", n: v.label, u: v.href, k: "Section", p: null, r: null, f: [], g: v.intro ?? null });
+  // Terra Y dossiers (James, 15 Nov 2026): each by name, with the places and words people search for.
+  const TY_COUNTRY: Record<string, string[]> = { ice: ["Antarctica", "South Africa"], "peru-to-patagonia": ["Peru", "Chile"], "colombia-to-guatemala": ["Colombia", "Guatemala"], "scotland-to-greenland": ["United Kingdom", "Faroe Islands", "Iceland", "Greenland"] };
+  for (const d of TY_DOSSIERS) {
+    const c = d.file === "ice" ? TY_COUNTRY.ice : TY_COUNTRY[d.slug] ?? [];
+    add({ t: "route", n: `${d.title} (Terra Y)`, u: tyPath(d.slug), k: d.file === "ice" ? "Antarctic expedition" : "DC-3 expedition", p: c[0] ?? null, r: d.file === "ice" ? "polar-antarctica" : regionOf(c[0] ?? ""), f: ["adventure", "luxury"], g: [d.line, d.operator, d.file === "ice" ? "White Desert Antarctica South Pole penguins private jet" : "Echo Charlie DC-3 Basler private plane", c.join(" ")].join(" · "), c });
+  }
   for (const [n, u, g] of PAGES) add({ t: "page", n, u, k: "Section", p: null, r: null, f: [], g });
   // The Exceptional Few: the collection itself, and its number on each place it holds.
   items.unshift({ t: "stay", n: "The Exceptional Few", u: EF_PATH, k: "Collection", p: null, r: null, f: [], g: `${EF_CARDS.length} hand-numbered stays and ships: ${EF_CARDS.map((c) => c.name).join(", ")}` });

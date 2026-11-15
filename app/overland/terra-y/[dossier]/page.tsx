@@ -25,7 +25,6 @@ export async function generateMetadata({ params }: { params: Promise<{ dossier: 
     description: d.answer.slice(0, 155).replace(/\s\S*$/, "") + ".",
     path: tyPath(d.slug),
     image: { url: ty(d.hero.id, 1600), alt: d.hero.alt },
-    noindex: true,
   });
 }
 

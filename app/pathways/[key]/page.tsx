@@ -34,7 +34,7 @@ export function generateStaticParams() { return PATHWAYS_ON ? PATHWAY_LIST.map((
 export async function generateMetadata({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params; const p = pathway(key);
   if (!p) return {};
-  return buildMetadata({ title: PATHWAY_SEO[p.id].title, description: PATHWAY_SEO[p.id].description, path: `/pathways/${p.key}`, noindex: p.id === "PATH-09" /* The Far Edge: review build until James approves */ ? true : false /* approved by James, 30 Oct 2026 */ });
+  return buildMetadata({ title: PATHWAY_SEO[p.id].title, description: PATHWAY_SEO[p.id].description, path: `/pathways/${p.key}`, noindex: false /* approved by James, 30 Oct 2026; The Far Edge 15 Nov 2026 */ });
 }
 
 export default async function PathwayPage({ params }: { params: Promise<{ key: string }> }) {

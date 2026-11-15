@@ -10,13 +10,12 @@ import { TY_AIRCRAFT, TY_CAMPS, TY_DOSSIERS, TY_FILES, TY_PATH, ty, tyFilm, tyPa
 import { buildMetadata } from "@/lib/seo";
 import { breadcrumbs, graph, touristTrip } from "@/lib/schema";
 
-// /overland/terra-y: Terra Y, the expedition dossiers (James, 15 Nov 2026). Review build: noindex and left out of the
-// menus until James approves it (house rule: design samples are reviewed before they go live).
+// /overland/terra-y: Terra Y, the expedition dossiers (James, 15 Nov 2026; approved for live the same day).
 export const metadata = buildMetadata({
   title: "Terra Y: Antarctica by Private Jet and the DC-3 Expeditions, by James Wild & Co",
   description: "Terra Y is James Wild & Co's VIP expedition file: White Desert's Antarctic camps and the South Pole, and Echo Charlie's twelve-guest DC-3 journeys. Published rates, every date.",
   path: TY_PATH,
-  noindex: true,
+  // approved by James, 15 Nov 2026
 });
 
 const trail = [{ name: "Home", path: "/" }, { name: "Overland", path: "/overland" }, { name: "Terra Y", path: TY_PATH }];

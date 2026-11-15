@@ -44,6 +44,7 @@ export default function TerraYMap({ stops, active, label, onReady, onFail, reduc
         const [{ style }, dem] = await Promise.all([baseStyle(), demSource()]);
         if (dead || !box.current) return;
         style.sources["jw-dem"] = dem;
+        style.sources["jw-dem-shade"] = { ...dem }; // the hillshade the house style draws
         style.sources["ty-all"] = { type: "geojson", data: lines(legs.current, stops.slice(1).map((s) => s.mode === "air")) };
         style.sources["ty-done"] = { type: "geojson", data: fc([]) };
         style.sources["ty-stops"] = { type: "geojson", data: fc(stops.map((s, i) => ({ type: "Feature", id: i, properties: { name: s.name }, geometry: { type: "Point", coordinates: ll(s) } }))) };

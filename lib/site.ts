@@ -150,6 +150,8 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "Field-tested by James", href: "/overland?stamp=field-tested" },
       { label: "Designed by James", href: "/overland?stamp=designed" },
+      { label: "Terra Y: VIP expedition dossiers", href: "/overland/terra-y" },
+      { label: "The Far Edge: polar and remote", href: "/pathways/the-far-edge" },
     ],
     ledger: [],
   },

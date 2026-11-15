@@ -88,7 +88,7 @@ export default function AccommodationCollection({ units, commerce, stayName, sta
         );
       })}
 
-      <p className="mt-6 text-[13px] ledger-muted max-w-3xl">{usesLive ? "Live rates are the engine's totals for your dates in US dollars, before the estate's own taxes, refreshed every 15 minutes; James Wild & Co adds 7% Florida sales tax at checkout. " : ""}Nothing is booked or charged on this page.</p>
+      <p className="mt-6 text-[13px] ledger-muted max-w-3xl">{usesLive ? "Live rates are the engine's totals for your dates in US dollars, before the estate's own taxes, refreshed every 15 minutes. " : ""}Nothing is booked or charged on this page.</p>
 
       {current && <AccommodationDetail unit={current} state={states.get(current.code)!} stayName={stayName} staySlug={staySlug} engineUrl={engineUrl} travellers={search?.adults ?? q.adults} dates={search ? { checkIn: search.checkIn, checkOut: search.checkOut } : null} onClose={() => setOpen(null)} />}
     </section>

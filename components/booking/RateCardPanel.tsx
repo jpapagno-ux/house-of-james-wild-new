@@ -111,7 +111,7 @@ export default function RateCardPanel({ name, partner, years, rowKeys, photo, in
         })}
       </ul>
       {rules?.notes?.length ? <ul className="mt-4 grid gap-1 text-[13.5px]">{rules.notes.map((n) => <li key={n}>{n}. Ask James to plan it.</li>)}</ul> : null}
-      <p className="mt-4 text-[13px] ledger-muted max-w-3xl">Prices are {partner}&rsquo;s published &ldquo;from&rdquo; rates (lowest season) in rand, shown in US dollars at {partner}&rsquo;s own conversion, so the price for your dates may be higher. Every booking is a request: the house confirms the price and space with the lodge before anything is charged. 7% Florida sales tax is added at checkout.</p>
+      <p className="mt-4 text-[13px] ledger-muted max-w-3xl">Prices are {partner}&rsquo;s published &ldquo;from&rdquo; rates (lowest season) in rand, shown in US dollars at {partner}&rsquo;s own conversion, so the price for your dates may be higher. Every booking is a request: the house confirms the price and space with the lodge before anything is charged.</p>
       {pick && <Checkout pick={pick} pricing={pick.pricing} guests={`${q.adults} ${q.adults === 1 ? "adult" : "adults"}${kids.length ? `, ${kids.length} ${kids.length === 1 ? "child" : "children"} (${kids.join(", ")})` : ""}`} q={q} nights={nights} name={name} included={included} excluded={excluded} policies={policies} engine="" hostHref={hostHref} onClose={() => setPick(null)} />}
     </section>
   );

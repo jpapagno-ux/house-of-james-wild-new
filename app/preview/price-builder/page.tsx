@@ -26,7 +26,7 @@ export default function PriceBuilderPreview() {
               addOns={[{ id: "sorong", label: "Sorong night before", pp: 150, detail: "hotel night before embarkation" }, { id: "dive", label: "Dive package", pp: 680, detail: "example" }]} />
           </div>
           <PreviewNote>
-            <p>Test before deploy: Land, As filed × 3 + turtle walk = US$22,614, deposit US$1,500. Voyage, Family cabin × 4 + Sorong night = US$19,431, deposit US$2,000. Both pass in the automated tests (npm test). The option and add-on prices are examples chosen so their per-person sums match the addendum.</p>
+            <p>Test before deploy: Land, As filed × 3 + turtle walk = US$21,135, deposit US$1,500. Voyage, Family cabin × 4 + Sorong night = US$18,160, deposit US$2,000. Both pass in the automated tests (npm test). The option and add-on prices are examples chosen so their per-person sums match the addendum.</p>
           </PreviewNote>
         </div>
       </main>

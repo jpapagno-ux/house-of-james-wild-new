@@ -13,8 +13,8 @@ configuration was changed in this session. All reads were read-only.
 
 **Decisions recorded, 15 Nov 2026**
 1. **No Florida sales tax.** The cart applies none and says so. The blanket 7% is still in the shared pricing engine,
-   `lib/pricing.ts`, the `quotes.florida_tax_minor` column, seven components and `COMMERCIAL-RULES.md`; removing it there
-   is a separate change for approval, because those files serve live pages and the pricing workstream.
+   `lib/pricing.ts`, the `quotes.florida_tax_minor` column, seven components and `COMMERCIAL-RULES.md`; James approved
+   removing it there too; that change is on its own branch, `remove-florida-sales-tax`, and goes live when merged.
 2. **Ellerman House.** James will complete the card. A Draft card (`PUBLISHED-2026-27`, 35 seasonal rates, ZAR) already
    sits in Airtable from Session 01; it needs VAT and levy treatment, deposit, cancellation, minimum stays and occupancy
    before it can be published.
@@ -37,16 +37,15 @@ configuration was changed in this session. All reads were read-only.
 | --- | --- | --- |
 | Ellerman House, rooms | `STY-2026-000075` | Published rand rates, night by night across seasons, US dollars first at the filed ECB rate, rand kept beside it. |
 | Ellerman House Villas (residence) | `STY-2026-000075` | Villa One and Villa Two, per villa a night, same method. Villa Two is capped at the six it sleeps; a larger party goes to the house. |
-| Casali di Casole (Gatherings residence) | `STY-2026-000650` | Published euro rate per residence a night, for the two weeks its engine was read (12 to 19 Jun and 11 to 18 Sep 2027). The Season of Savings rate applies only from five nights. Other dates and unpriced residences go to the house. **No EUR rate is on file, so it stays in euros and outside the US dollar total.** |
+| Casali di Casole (Gatherings residence) | `STY-2026-000650` | Published euro rate per residence a night, for the two weeks its engine was read (12 to 19 Jun and 11 to 18 Sep 2027). The Season of Savings rate applies only from five nights. Other dates and unpriced residences go to the house. US dollars first at the filed ECB rate, euros kept beside it (rate added later the same day). |
 | The Sand River by Road (land journey) | `ITN-LAND-2026-202031` | Start date and travelers. Route prices are not final in the record, so no figure: the house quotes it. Advisor Assisted only. |
 | Three Generations at Pioneer (family land journey) | `ITN-LAND-2026-982652` | The same, for up to twelve. |
 
 Checked by hand: Deluxe House Room, 26 Feb to 2 Mar 2027 = 3 Peak nights at R70,000 + 1 High night at R67,000 =
 R277,000 = US$16,596.76 at 16.69. Villa Two, 10 to 14 Jun 2027 = 4 Low nights at R220,000 = R880,000 = US$52,726.18.
-Santa Lucia, 12 to 18 Jun 2027 = 6 nights at EUR 4,000 = EUR 24,000.
+Santa Lucia, 12 to 18 Jun 2027 = 6 nights at EUR 4,000 = EUR 24,000 = US$26,812.65 at 0.8951.
 
 **New gaps this round**
-- A filed EUR to USD rate (add EUR to `lib/content/rates/fx.json`; the monthly refresh then keeps it current).
 - Land journeys have no price build at all (`prices_final: false`, the calculator reads "Quoted against your dates").
   A journey needs its component rates (Londolozi, the charter, transfers) before it can price.
 - Gatherings residences: only Casali di Casole and the Ellerman villas have published rates on file. Occupancy for
@@ -203,6 +202,6 @@ transactions inside one journey, since the existing `payments` table hangs off o
 - [ ] Ellerman House Draft card completed and published
 - [ ] Antarctica21 cabin fares and deposit terms supplied
 - [x] Florida sales tax rule settled: none
-- [ ] 7% removed from the shared pricing engine (separate change, awaiting approval)
-- [ ] EUR rate filed
+- [x] 7% removed from the shared pricing engine: branch `remove-florida-sales-tax`, approved by James, awaiting merge to go live
+- [x] EUR rate filed (0.8951 euros to US$1, ECB reference rate of 30 Oct 2026); Casali di Casole now shows US dollars first
 - [ ] Ledger / Folio writes (next session, on a Supabase branch, after approval)

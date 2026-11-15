@@ -1,4 +1,5 @@
 import type { Guide } from "./guides";
+import { ONWARD_ISLANDS } from "./guides-tahiti-islands.ts";
 
 // French Polynesia (Tahiti) place guides (James, 2 Nov 2026): Taha'a, Bora Bora, the Tuamotu atolls and the
 // Marquesas, inside the French Polynesia (Tahiti) country page. Facts only from Tahiti Tourisme, Air Tahiti,
@@ -71,7 +72,7 @@ export const TAHITI_GUIDES: Record<string, Guide> = {
       ],
     },
     onwardEyebrow: "Continue through French Polynesia",
-    onward: ONWARD,
+    onward: [...ONWARD_ISLANDS("tahaa"), { name: "Pearl Resorts of Tahiti", href: "/partners/pearl-resorts", line: "Every Pearl resort, founder vetted, and the Islands Dream Offer" }],
     voyageWaters: [],
     faqs: [
       { q: "Does Taha'a have an airport?", a: "No. Fly to Raiatea with Air Tahiti, 40 to 45 minutes from Tahiti or direct from Bora Bora, then cross the shared lagoon by boat in about 30 minutes, usually arranged by your hotel." },
@@ -130,7 +131,7 @@ export const TAHITI_GUIDES: Record<string, Guide> = {
       ],
     },
     onwardEyebrow: "Continue through French Polynesia",
-    onward: [...ONWARD, { name: "Taha'a", href: `${BASE}/tahaa`, line: "James's favourite island, a direct flight away" }],
+    onward: [...ONWARD_ISLANDS("bora-bora"), { name: "Pearl Resorts of Tahiti", href: "/partners/pearl-resorts", line: "Every Pearl resort, founder vetted, and the Islands Dream Offer" }],
     voyageWaters: [],
     faqs: [
       { q: "How do you get to Bora Bora?", a: "Fly from Tahiti Faa'a with Air Tahiti in 50 minutes, on more than 10 flights a day. The airport is on a motu; resorts meet you by boat." },
@@ -145,7 +146,7 @@ export const TAHITI_GUIDES: Record<string, Guide> = {
   },
   tuamotu: {
     slug: "tuamotu", region: "oceania", country: "tahiti", parent: "tahiti", name: "The Tuamotu", path: `${BASE}/tuamotu`,
-    theme: "sea", stays: ["pearl-resort-le-tikehau"],
+    theme: "sea", stays: [], // Le Tikehau now lives on the Tikehau page (15 Nov 2026); this is the archipelago chapter
     proofEyebrow: "Founder vetted · sailed with Windstar",
     seo: {
       title: "Tuamotu Guide: Rangiroa, Fakarava and Tikehau, Dive Passes and Flights",
@@ -189,7 +190,7 @@ export const TAHITI_GUIDES: Record<string, Guide> = {
       ],
     },
     onwardEyebrow: "Continue through French Polynesia",
-    onward: ONWARD,
+    onward: [...ONWARD_ISLANDS("tuamotu"), { name: "Pearl Resorts of Tahiti", href: "/partners/pearl-resorts", line: "Every Pearl resort, founder vetted, and the Islands Dream Offer" }],
     voyageWaters: [],
     faqs: [
       { q: "How many atolls are in the Tuamotu?", a: "Seventy six: the largest chain of atolls in the world, per Tahiti Tourisme." },
@@ -246,7 +247,7 @@ export const TAHITI_GUIDES: Record<string, Guide> = {
       ],
     },
     onwardEyebrow: "Continue through French Polynesia",
-    onward: ONWARD,
+    onward: [...ONWARD_ISLANDS("marquesas"), { name: "Pearl Resorts of Tahiti", href: "/partners/pearl-resorts", line: "Every Pearl resort, founder vetted, and the Islands Dream Offer" }],
     voyageWaters: [],
     faqs: [
       { q: "Are the Marquesas a UNESCO World Heritage site?", a: "Yes. Te Henua Enata, The Marquesas Islands, was inscribed in 2024 as a mixed property with seven components." },

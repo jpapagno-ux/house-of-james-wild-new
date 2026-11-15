@@ -4,7 +4,7 @@ import { useState, type ReactNode } from "react";
 import { offersByRoom, type RatePlan } from "@/lib/rates";
 import { niceDate } from "@/lib/booking-live/money";
 import { NO_PRICE, addDays, fmtMoney, isDate, nightsBetween, priceNights, toUsdMinor, verified, type Fx, type Line, type Price, type SeasonRule } from "@/lib/checkout/journey";
-import type { StayProduct, VoyageProduct } from "@/lib/checkout/pilot";
+import type { JourneyProduct, StayProduct, VoyageProduct } from "@/lib/checkout/pilot";
 
 // Journey Cart: the pieces that choose dates, rooms, cabins and guests, on Build Your Journey and again
 // when a line is edited in the cart. A price appears only when its source answers: the booking engine
@@ -24,6 +24,7 @@ export function Label({ text, children }: { text: string; children: ReactNode })
 const TONE: Record<Price["source"], { word: string; dot: string }> = {
   albie_live: { word: "Live price", dot: "bg-emerald-700" },
   rate_card: { word: "Contracted rate", dot: "bg-ink" },
+  published_rate: { word: "Published rate", dot: "bg-ink" },
   published_from: { word: "Published from fare", dot: "bg-stone" },
   none: { word: "No price on file", dot: "bg-transparent border border-stone" },
 };
@@ -69,7 +70,8 @@ export function StayConfigurator({ product, today, cardState, fx, initial, submi
   const key = `${start}|${end}|${adults}`;
   const offers = engine.state === "ok" && engine.key === key ? offersByRoom(engine.plans) : null;
   const card = cardState.state === "ok" ? cardState.card : null;
-  const rooms = product.pricing === "albie" ? (offers?.map((o) => o.name) ?? []) : card ? card.rooms.map((r) => r.name) : product.rooms;
+  const rooms = product.pricing === "albie" ? (offers?.map((o) => o.name) ?? []) : card ? card.rooms.map((r) => r.name) : product.units.map((u) => u.name);
+  const unit = product.units.find((u) => u.name === room);
   const chosen = rooms.includes(room) ? room : product.pricing === "albie" ? (rooms.find((r) => r === product.pilotRoom) ?? rooms[0] ?? "") : (rooms[0] ?? "");
 
   async function ask() {
@@ -95,10 +97,12 @@ export function StayConfigurator({ product, today, cardState, fx, initial, submi
       return { source: "albie_live", usdMinor: minor, sourceMinor: minor, sourceCurrency: "USD", fx: null, basis: `Total for ${n} nights, ${o.name}, ${party}, ${best.plan}`, provenance: `House booking engine (ALBIE by TAG), property ${product.engineProperty}, quoted in USD`, fetchedAt: engine.fetchedAt };
     }
     const r = card?.rooms.find((x) => x.name === chosen);
-    const p = card && r ? priceNights(card.rules, r.key, start, end, adults) : null;
-    if (!card || !p) return NO_PRICE(`${n} nights, ${chosen}, ${party}`, card ? "The published card does not cover every night or this party. The house prices it." : "No contracted rate card is on file. The house prices it with the supplier.");
-    const f = card.currency === "USD" ? null : (fx[card.currency] ?? null);
-    return { source: "rate_card", usdMinor: toUsdMinor(p.totalMinor, card.currency, f), sourceMinor: p.totalMinor, sourceCurrency: card.currency, fx: f, basis: `${p.seasons.map((s) => `${s.nights} × ${s.season} at ${fmtMoney(s.amountMinor, card.currency)}`).join(", ")}; ${chosen}, ${party}`, provenance: `Contracted card ${card.version}`, fetchedAt: null };
+    const u = product.units.find((x) => x.name === chosen);
+    const cur = card ? card.currency : product.currency;
+    const p = card && r ? priceNights(card.rules, r.key, start, end, adults) : !card && u ? priceNights(product.rules, u.key, start, end, adults) : null;
+    if (!p) return NO_PRICE(`${n} nights, ${chosen}, ${party}`, card ? "The contracted card does not cover every night or this party. The house prices it." : u && !product.rules.some((x) => x.roomKey === u.key) ? `No rate is published for ${chosen}. The house prices it with ${product.supplier}.` : `The published rates on file do not cover every night of these dates, or this party. The house prices it with ${product.supplier}.`);
+    const f = cur === "USD" ? null : (fx[cur] ?? null);
+    return { source: card ? "rate_card" : "published_rate", usdMinor: toUsdMinor(p.totalMinor, cur, f), sourceMinor: p.totalMinor, sourceCurrency: cur, fx: f, basis: `${p.seasons.map((s) => `${s.nights} × ${s.season} at ${fmtMoney(s.amountMinor, cur)}`).join(", ")}; ${chosen}, ${party}`, provenance: card ? `Contracted card ${card.version}` : product.rateSource, fetchedAt: null };
   }
 
   const p = datesOk && chosen ? price() : null;
@@ -109,7 +113,7 @@ export function StayConfigurator({ product, today, cardState, fx, initial, submi
       <div className="grid grid-cols-2 md:grid-cols-[1fr_1fr_.7fr] gap-4">
         <Label text="Arrive"><input type="date" className={field} value={start} min={today} onChange={(e) => { setStart(e.target.value); if (!end || end <= e.target.value) setEnd(isDate(e.target.value) ? addDays(e.target.value, 3) : ""); }} /></Label>
         <Label text="Depart"><input type="date" className={field} value={end} min={start || today} onChange={(e) => setEnd(e.target.value)} /></Label>
-        <Label text="Adults"><select className={field} value={adults} onChange={(e) => setAdults(Number(e.target.value))}>{[1, 2, 3, 4].map((n) => <option key={n}>{n}</option>)}</select></Label>
+        <Label text="Adults"><select className={field} value={adults} onChange={(e) => setAdults(Number(e.target.value))}>{Array.from({ length: product.maxAdults }, (_, i) => i + 1).map((n) => <option key={n}>{n}</option>)}</select></Label>
       </div>
 
       {product.pricing === "albie" ? (
@@ -136,11 +140,10 @@ export function StayConfigurator({ product, today, cardState, fx, initial, submi
         </div>
       ) : (
         <div className="mt-4">
-          <Label text="Room category"><select className={field} value={chosen} onChange={(e) => setRoom(e.target.value)}>{rooms.map((r) => <option key={r}>{r}</option>)}</select></Label>
-          <p className="mt-3 text-[14.5px] ledger-muted">
-            {cardState.state === "loading" && "Looking for a published contracted card."}
-            {cardState.state === "none" && "No contracted rate card is on file for this house yet, so no rate, season or currency figure is shown. You can add the stay and the house prices it with the supplier."}
-            {card && `Priced night by night from contracted card ${card.version}, in ${card.currency}, shown in US dollars first.`}
+          <Label text={product.unitWord}><select className={field} value={chosen} onChange={(e) => setRoom(e.target.value)}>{rooms.map((r) => <option key={r}>{r}</option>)}</select></Label>
+          {unit && !card && <p className="mt-2 text-[14px]">{unit.facts}{unit.note ? ` · ${unit.note}` : ""}</p>}
+          <p className="mt-2 text-[14.5px] ledger-muted">
+            {card ? `Priced night by night from contracted card ${card.version}, in ${card.currency}, shown in US dollars first.` : `Priced night by night from ${product.rateSource}, in ${product.currency}${fx[product.currency] || product.currency === "USD" ? ", shown in US dollars first" : `. No ${product.currency} conversion rate is on file, so the figure stays in ${product.currency}`}. The house confirms the rate before anything is charged.`}
           </p>
         </div>
       )}
@@ -149,7 +152,9 @@ export function StayConfigurator({ product, today, cardState, fx, initial, submi
         <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1.5" aria-live="polite">
           <PriceChip price={p} />
           {p.usdMinor != null && <span className="ledger-display text-[1.5rem]">{fmtMoney(p.usdMinor, "USD")}</span>}
-          {p.sourceCurrency && p.sourceCurrency !== "USD" && p.sourceMinor != null && <span className="text-[13.5px] ledger-muted">contracted at {fmtMoney(p.sourceMinor, p.sourceCurrency)}</span>}
+          {p.usdMinor == null && p.sourceMinor != null && p.sourceCurrency && <span className="ledger-display text-[1.5rem]">{fmtMoney(p.sourceMinor, p.sourceCurrency)}</span>}
+          {p.usdMinor != null && p.sourceCurrency && p.sourceCurrency !== "USD" && p.sourceMinor != null && <span className="text-[13.5px] ledger-muted">{p.source === "rate_card" ? "contracted" : "published"} at {fmtMoney(p.sourceMinor, p.sourceCurrency)}</span>}
+          {p.source === "none" && <span className="text-[14px] ledger-muted">{p.provenance}</span>}
         </p>
       )}
 
@@ -191,7 +196,7 @@ export function VoyageConfigurator({ product, initial, submitLabel, onSubmit }: 
         <Label text="Cabin category"><select className={field} value={cabin} onChange={(e) => setCabin(e.target.value)}>{product.cabins.map((c) => <option key={c.type} value={c.type}>{c.type}{c.size ? ` · ${c.size}` : ""}</option>)}</select></Label>
         <Label text="Guests"><select className={field} value={guests} onChange={(e) => setGuests(Number(e.target.value))}>{[1, 2, 3].map((n) => <option key={n}>{n}</option>)}</select></Label>
       </div>
-      <p className="mt-3 text-[14.5px] ledger-muted">{voyage.route}{sailing?.dateTo ? ` · ${niceDate(sailing.date)} to ${niceDate(sailing.dateTo)}` : ""}. Fares by cabin are not on file: Antarctica21 confirms the {cabin} fare and whether a cabin is open.</p>
+      <p className="mt-3 text-[14.5px] ledger-muted">{voyage.route}{sailing?.dateTo ? ` · ${niceDate(sailing.date)} to ${niceDate(sailing.dateTo)}` : ""}. Fares by cabin are not on file: Antarctica21 confirms the {cabin} fare and whether a cabin is open.{sailing?.code ? ` Departure ${sailing.code}.` : ""}</p>
       {sailing && (
         <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1.5" aria-live="polite">
           <PriceChip price={price()} />
@@ -200,7 +205,29 @@ export function VoyageConfigurator({ product, initial, submitLabel, onSubmit }: 
       )}
       <Experiences options={voyage.optional} supplier={product.supplier} picked={exp.filter((e) => voyage.optional.includes(e))} onChange={setExp} />
       <div className="mt-6">
-        <button type="button" className="ledger-btn ledger-btn--house" disabled={!sailing} onClick={() => sailing && onSubmit({ experiences: exp.filter((e) => voyage.optional.includes(e)), line: { kind: "voyage", productKey: `${product.key}:${voyage.slug}:${sailing.date}`, ledgerId: product.ledgerId, name: product.name, supplier: product.supplier, unit: cabin, unitKey: slugify(cabin), voyage: { slug: voyage.slug, name: voyage.name }, start: sailing.date, end: sailing.dateTo ?? addDays(sailing.date, voyage.nights), adults: guests, plan: null, parentId: null, price: price() } })}>{submitLabel}</button>
+        <button type="button" className="ledger-btn ledger-btn--house" disabled={!sailing} onClick={() => sailing && onSubmit({ experiences: exp.filter((e) => voyage.optional.includes(e)), line: { kind: "voyage", productKey: `${product.key}:${voyage.slug}:${sailing.date}`, ledgerId: product.ledgerId, name: product.name, supplier: product.supplier, unit: cabin, unitKey: slugify(cabin), voyage: { slug: voyage.slug, name: voyage.name, code: sailing.code }, start: sailing.date, end: sailing.dateTo ?? addDays(sailing.date, voyage.nights), adults: guests, plan: null, parentId: null, price: price() } })}>{submitLabel}</button>
+      </div>
+    </div>
+  );
+}
+
+export function JourneyConfigurator({ product, today, initial, submitLabel, onSubmit }: { product: JourneyProduct; today: string; initial?: Draft; submitLabel: string; onSubmit: (d: Draft) => void }) {
+  const [start, setStart] = useState(initial?.line.start ?? "");
+  const [travelers, setTravelers] = useState(initial?.line.adults ?? 2);
+  const ok = isDate(start) && start >= today;
+  const end = ok ? addDays(start, product.nights) : "";
+  return (
+    <div>
+      <div className="grid grid-cols-2 gap-4">
+        <Label text="Start date"><input type="date" className={field} value={start} min={today} onChange={(e) => setStart(e.target.value)} /></Label>
+        <Label text="Travelers"><select className={field} value={travelers} onChange={(e) => setTravelers(Number(e.target.value))}>{Array.from({ length: product.maxTravelers }, (_, i) => i + 1).map((n) => <option key={n}>{n}</option>)}</select></Label>
+      </div>
+      <ol className="mt-4 border ledger-border divide-y divide-[#DCD7D0] bg-paper">
+        {product.stops.map((s) => <li key={s.name} className="px-3.5 py-2.5"><span className="block ledger-display text-[1.15rem] leading-tight">{s.name}</span><span className="block text-[13px] ledger-muted">{s.line}</span></li>)}
+      </ol>
+      <p className="mt-3 text-[14.5px] ledger-muted">{product.nights} nights{ok ? ` · ${niceDate(start)} to ${niceDate(end)}` : ""}. Prices for this route are not final, so no figure is shown. The house quotes it against your dates and the terms of each lodge.</p>
+      <div className="mt-6">
+        <button type="button" className="ledger-btn ledger-btn--house" disabled={!ok} onClick={() => onSubmit({ experiences: [], line: { kind: "journey", productKey: product.key, ledgerId: product.ledgerId, name: product.name, supplier: product.supplier, unit: `${product.nights} nights, ${product.stops.length} stops`, unitKey: "", voyage: null, start, end, adults: travelers, plan: null, parentId: null, price: NO_PRICE(`${travelers} ${travelers === 1 ? "traveler" : "travelers"}, ${product.nights} nights`, "Route prices are not final. The house quotes the journey against your dates.") } })}>{submitLabel}</button>
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ const none: Policy = { payNow: { supported: false, basis: "not on file" }, depos
 test("only a live or contracted price is verified; a from fare and a missing price never are", () => {
   assert.equal(verified(price("albie_live", 100000)), true);
   assert.equal(verified(price("rate_card", 100000)), true);
+  assert.equal(verified(price("published_rate", 100000)), true, "a supplier's own published rate, approved by James on 15 Nov 2026");
   assert.equal(verified(price("published_from", 100000)), false);
   assert.equal(verified(NO_PRICE("x", "y")), false);
   assert.equal(verified(price("albie_live", 0)), false);
@@ -19,7 +20,11 @@ test("only a live or contracted price is verified; a from fare and a missing pri
 
 test("totals keep verified, from fares and unpriced lines in three separate piles", () => {
   const t = cartTotals([line("a", price("albie_live", 250000)), line("b", price("published_from", 3799000), "voyage"), line("c", NO_PRICE("x", "y")), line("d", NO_PRICE("x", "y"), "experience")]);
-  assert.deepEqual(t, { verifiedMinor: 250000, verifiedCount: 1, fromMinor: 3799000, fromCount: 1, awaitingCount: 2 });
+  assert.deepEqual(t, { verifiedMinor: 250000, verifiedCount: 1, fromMinor: 3799000, fromCount: 1, awaitingCount: 2, abroad: [] });
+  const eur: Price = { source: "published_rate", usdMinor: null, sourceMinor: 1000000, sourceCurrency: "EUR", fx: null, basis: "fixture", provenance: "fixture", fetchedAt: null };
+  const t2 = cartTotals([line("e", eur), line("f", eur), line("g", price("published_rate", 500000))]);
+  assert.deepEqual(t2, { verifiedMinor: 500000, verifiedCount: 1, fromMinor: 0, fromCount: 0, awaitingCount: 0, abroad: [{ currency: "EUR", minor: 2000000 }] }, "a price with no US dollar rate on file stays in its own currency, outside the US dollar total");
+  assert.equal(paymentOptions(line("e", eur), none).find((o) => o.method === "pay_now")?.amountMinor, null);
 });
 
 test("ZAR converts to USD for display with the filed rate, and never without one", () => {
@@ -41,6 +46,9 @@ test("a contracted card prices night by night across seasons, and refuses a gap 
   assert.equal(priceNights(rules, "r1", "2027-02-27", "2027-03-02", 2), null, "a night past the card is never guessed");
   assert.equal(priceNights(rules, "r1", "2027-01-05", "2027-01-07", 3), null, "over base occupancy goes to the house");
   assert.equal(priceNights(rules, "other", "2027-01-05", "2027-01-07", 2), null);
+  const longer: SeasonRule[] = [...rules, { season: "Five nights or more", roomKey: "r1", stayStart: "2027-01-01", stayEnd: "2027-01-29", baseOccupancy: 2, amountMinor: 2400000, minNights: 5, priority: 1 }];
+  assert.equal(priceNights(longer, "r1", "2027-01-05", "2027-01-08", 2)?.totalMinor, 3 * 3000000, "a long-stay rate never applies to a short stay");
+  assert.equal(priceNights(longer, "r1", "2027-01-05", "2027-01-10", 2)?.totalMinor, 5 * 2400000);
 });
 
 test("payment methods open only on a supplier policy on file and a verified price; advisor assisted is always open", () => {
@@ -110,4 +118,15 @@ test("the cart's logic adds no Florida sales tax and the page copy carries no em
   for (const f of ["components/checkout/JourneyCheckout.tsx", "components/checkout/Configurators.tsx", "lib/checkout/pilot.ts", "lib/checkout/journey.ts"]) {
     assert.doesNotMatch(readFileSync(new URL(`../${f}`, import.meta.url), "utf8"), /[–—]/, f);
   }
+});
+
+test("the published seasons on file map to night ranges for every priced room, with no dash in the catalogue's sources", () => {
+  const rooms = readFileSync(new URL("../lib/content/stay-rooms.ts", import.meta.url), "utf8");
+  const pilot = readFileSync(new URL("../lib/checkout/pilot.ts", import.meta.url), "utf8");
+  for (const [stay, keys] of [["ellerman-house", ["h26", "p27", "h27", "l27"]], ["casali-di-casole", ["ba", "ss"]]] as const) {
+    const block = rooms.slice(rooms.indexOf(`"${stay}": {`));
+    const windows = pilot.slice(pilot.indexOf(`"${stay}": {`, pilot.indexOf("const WINDOWS")));
+    for (const k of keys) { assert.match(block, new RegExp(`key: "${k}"`), `${stay} still publishes season ${k}`); assert.match(windows.slice(0, 900), new RegExp(`\\b${k}: \\{ ranges:`), `${stay} season ${k} has night ranges`); }
+  }
+  assert.match(pilot, /PCS-A21-CLA-\$\{d\.slice\(2\)/);
 });

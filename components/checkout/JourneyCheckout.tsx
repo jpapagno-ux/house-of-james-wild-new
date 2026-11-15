@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { niceDate, niceWhen } from "@/lib/booking-live/money";
-import { METHOD_NAMES, NO_PRICE, cartTotals, fmtMoney, idempotencyKey, ledgerHandoff, lineStatuses, nightsBetween, paymentOptions, validLead, verified, type Lead, type Line, type Method, type SimResponse, type Traveler } from "@/lib/checkout/journey";
+import { METHOD_NAMES, NO_PRICE, cartTotals, fmtMoney, idempotencyKey, ledgerHandoff, lineStatuses, nightsBetween, paymentOptions, pricedAbroad, validLead, verified, type Lead, type Line, type Method, type SimResponse, type Traveler } from "@/lib/checkout/journey";
 import type { Catalogue, Product } from "@/lib/checkout/pilot";
-import { Label, PriceChip, StayConfigurator, VoyageConfigurator, field, slugify, type CardState, type Draft } from "./Configurators";
+import { JourneyConfigurator, Label, PriceChip, StayConfigurator, VoyageConfigurator, field, slugify, type CardState, type Draft } from "./Configurators";
 
 // The Journey Cart (Booking & Checkout Studio, Session 03): seven screens from choosing stays and a
 // voyage to a confirmation that keeps payment, booking request and supplier confirmation apart.
@@ -31,7 +31,8 @@ function Head({ n, title, children }: { n: number; title: string; children?: Rea
   );
 }
 const dates = (l: Line) => (l.start ? `${niceDate(l.start)} to ${niceDate(l.end)}` : "");
-const party = (l: Line) => `${l.adults} ${l.kind === "voyage" ? (l.adults === 1 ? "guest" : "guests") : l.adults === 1 ? "adult" : "adults"}`;
+const party = (l: Line) => `${l.adults} ${l.kind === "voyage" ? (l.adults === 1 ? "guest" : "guests") : l.kind === "journey" ? (l.adults === 1 ? "traveler" : "travelers") : l.adults === 1 ? "adult" : "adults"}`;
+const NO_CARD: CardState = { state: "none", reason: "not_applicable" };
 
 export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, advisorFromLink }: { catalogue: Catalogue; advisors: AdvisorLite[]; assignedAdvisor: string; advisorFromLink: boolean }) {
   const [step, setStep] = useState(0);
@@ -129,13 +130,13 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
     <div key={l.id} className={l.kind === "experience" ? "pl-4 md:pl-8 border-l-2 border-[#DCD7D0] ml-1" : ""}>
       <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
         <div className="min-w-0">
-          {l.kind !== "experience" && <p className="ledger-eyebrow"><span className="ledger-id">{l.ledgerId}</span> · {l.kind === "voyage" ? "Voyage" : "Stay"} · {l.supplier}</p>}
+          {l.kind !== "experience" && <p className="ledger-eyebrow"><span className="ledger-id">{l.ledgerId}</span> · {product(l).volume} · {l.supplier}</p>}
           <p className={`ledger-display leading-tight ${l.kind === "experience" ? "text-[1.15rem]" : "text-[1.55rem] mt-1"}`}>{l.kind === "experience" ? `Experience · ${l.name}` : l.name}</p>
           {l.kind !== "experience" && <p className="mt-1 text-[15px]">{l.voyage ? `${l.voyage.name} · ` : ""}{l.unit || "Room to be chosen"} · {party(l)}</p>}
-          {l.start && <p className="text-[14px] ledger-muted">{dates(l)}{l.kind === "stay" ? ` · ${nightsBetween(l.start, l.end)} nights` : ""}</p>}
+          {l.start && <p className="text-[14px] ledger-muted">{dates(l)}{l.kind === "stay" ? ` · ${nightsBetween(l.start, l.end)} nights` : ""}{l.voyage?.code ? ` · ${l.voyage.code}` : ""}</p>}
         </div>
         <div className="text-right">
-          {l.price.usdMinor != null ? <p className="ledger-display text-[1.45rem] leading-none">{l.price.source === "published_from" ? "from " : ""}{fmtMoney(l.price.usdMinor, "USD")}</p> : <p className="text-[15px]">{l.kind === "experience" ? "On request" : "Priced by the house"}</p>}
+          {l.price.usdMinor != null ? <p className="ledger-display text-[1.45rem] leading-none">{l.price.source === "published_from" ? "from " : ""}{fmtMoney(l.price.usdMinor, "USD")}</p> : pricedAbroad(l.price) ? <p className="ledger-display text-[1.45rem] leading-none">{fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string)}</p> : <p className="text-[15px]">{l.kind === "experience" ? "On request" : "Priced by the house"}</p>}
           <p className="mt-1.5"><PriceChip price={l.price} /></p>
         </div>
       </div>
@@ -168,26 +169,30 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
 
           {step === 0 && (
             <>
-              <Head n={1} title="Build Your Journey">Choose the chapters of the journey: two houses at the Cape and a voyage south. Add as many as you like, in any order. A price appears only where its source answers today.</Head>
+              <Head n={1} title="Build Your Journey">Choose the chapters of the journey: houses and rooms, whole villas and residences, a voyage south, or a land journey the house has already drawn. Add as many as you like, in any order. A price appears only where its source answers today.</Head>
               <div className="space-y-5">
                 {catalogue.products.map((p) => {
                   const inCart = lines.filter((l) => l.kind !== "experience" && product(l).key === p.key).length;
                   return (
                     <Panel key={p.key}>
                       <div className="grid md:grid-cols-[240px_1fr]">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={p.hero} alt={p.alt} loading="lazy" className="w-full h-44 md:h-full object-cover" />
+                        {p.hero ? (
+                          /* eslint-disable-next-line @next/next/no-img-element */
+                          <img src={p.hero} alt={p.alt} loading="lazy" className="w-full h-44 md:h-full object-cover" />
+                        ) : (
+                          <div className="bg-paper-card h-28 md:h-full flex items-end p-5"><p className="ledger-display text-[1.4rem] leading-tight">{p.type === "journey" ? `${p.nights} nights · ${p.stops.length} stops` : p.name}</p></div>
+                        )}
                         <div className="p-5 md:p-6">
-                          <p className="ledger-eyebrow"><span className="ledger-id">{p.ledgerId}</span> · {p.type === "voyage" ? "Voyage" : "Stay"} · {p.place}</p>
+                          <p className="ledger-eyebrow"><span className="ledger-id">{p.ledgerId}</span> · {p.volume} · {p.place}</p>
                           <h2 className="ledger-display text-[1.9rem] leading-tight mt-1.5">{p.name}</h2>
                           <p className="mt-1.5 text-[15px] ledger-muted">{p.line}</p>
-                          <p className="mt-3 text-[13.5px]">{p.type === "voyage" ? "Fixed departures · published from fares per person" : p.pricing === "albie" ? "Live price from the house booking engine" : "Contracted seasonal rates · none on file yet"}{inCart > 0 && <span className="ml-2 ledger-id">· {inCart} in your journey</span>}</p>
+                          <p className="mt-3 text-[13.5px]">{p.type === "voyage" ? "Fixed departures · published from fares per person" : p.type === "journey" ? "Quoted by the house against your dates" : p.pricing === "albie" ? "Live price from the house booking engine" : `Published seasonal rates in ${p.currency}, per ${p.unitWord.toLowerCase().replace(" category", "")} a night`}{inCart > 0 && <span className="ml-2 ledger-id">· {inCart} in your journey</span>}</p>
                           <button type="button" className="ledger-btn mt-4" aria-expanded={open === p.key} onClick={() => setOpen(open === p.key ? null : p.key)}>{open === p.key ? "Close" : inCart ? "Add another" : p.type === "voyage" ? "Choose a departure" : "Choose dates"}</button>
                         </div>
                       </div>
                       {open === p.key && (
                         <div className="border-t ledger-border bg-paper-card/50 p-5 md:p-6">
-                          {p.type === "stay" ? <StayConfigurator product={p} today={catalogue.today} cardState={card} fx={catalogue.fx} submitLabel="Add to journey" onSubmit={add} /> : <VoyageConfigurator product={p} submitLabel="Add to journey" onSubmit={add} />}
+                          {p.type === "stay" ? <StayConfigurator product={p} today={catalogue.today} cardState={p.key === "ellerman-house" ? card : NO_CARD} fx={catalogue.fx} submitLabel="Add to journey" onSubmit={add} /> : p.type === "voyage" ? <VoyageConfigurator product={p} submitLabel="Add to journey" onSubmit={add} /> : <JourneyConfigurator product={p} today={catalogue.today} submitLabel="Add to journey" onSubmit={add} />}
                         </div>
                       )}
                     </Panel>
@@ -214,7 +219,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                       </div>
                       {editing === l.id && (
                         <div className="mt-5 border-t ledger-border pt-5">
-                          {p.type === "stay" ? <StayConfigurator product={p} today={catalogue.today} cardState={card} fx={catalogue.fx} initial={{ line: l, experiences: kids.map((k) => k.name) }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} /> : <VoyageConfigurator product={p} initial={{ line: l, experiences: kids.map((k) => k.name) }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} />}
+                          {p.type === "stay" ? <StayConfigurator product={p} today={catalogue.today} cardState={p.key === "ellerman-house" ? card : NO_CARD} fx={catalogue.fx} initial={{ line: l, experiences: kids.map((k) => k.name) }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} /> : p.type === "voyage" ? <VoyageConfigurator product={p} initial={{ line: l, experiences: kids.map((k) => k.name) }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} /> : <JourneyConfigurator product={p} today={catalogue.today} initial={{ line: l, experiences: [] }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} />}
                         </div>
                       )}
                     </Panel>
@@ -227,7 +232,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
 
           {step === 2 && (
             <>
-              <Head n={3} title="Pricing Review">Each figure with its source. US dollars first, with the supplier&rsquo;s own currency kept beside it. Only a live or contracted price counts toward the total.</Head>
+              <Head n={3} title="Pricing Review">Each figure with its source. US dollars first, with the supplier&rsquo;s own currency kept beside it. A live price, a contracted rate or a supplier&rsquo;s own published rate counts toward the total; a from fare never does.</Head>
               <div className="space-y-5">
                 {lines.map((l) => (
                   <Panel key={l.id} className="p-5 md:p-6">
@@ -236,9 +241,9 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                       <dt className="ledger-muted">Basis</dt><dd>{l.price.basis}</dd>
                       <dt className="ledger-muted">Source</dt><dd>{l.price.provenance}{l.price.fetchedAt ? ` · asked ${niceWhen(l.price.fetchedAt)}` : ""}</dd>
                       <dt className="ledger-muted">Supplier currency</dt><dd>{l.price.sourceMinor != null && l.price.sourceCurrency ? fmtMoney(l.price.sourceMinor, l.price.sourceCurrency) : "No figure on file"}</dd>
-                      <dt className="ledger-muted">Conversion</dt><dd>{l.price.fx ? `${l.price.fx.rate} ${l.price.sourceCurrency} to US$1 · ${l.price.fx.source} · display only, the contracted figure governs` : l.price.sourceCurrency === "USD" ? "None. Quoted in US dollars by the source." : "Not applicable"}</dd>
+                      <dt className="ledger-muted">Conversion</dt><dd>{l.price.fx ? `${l.price.fx.rate} ${l.price.sourceCurrency} to US$1 · ${l.price.fx.source} · display only, the ${l.price.sourceCurrency} figure governs` : l.price.sourceCurrency === "USD" ? "None. Quoted in US dollars by the source." : pricedAbroad(l.price) ? `No ${l.price.sourceCurrency} rate is on file, so no US dollar figure is shown.` : "Not applicable"}</dd>
                       <dt className="ledger-muted">Settlement currency</dt><dd>{l.kind === "experience" ? "Set when quoted" : "Not stated by the source. Confirmed before any charge."}</dd>
-                      <dt className="ledger-muted">Standing</dt><dd>{verified(l.price) ? "Verified at the time shown. The house re-checks it before a request goes to the supplier. Not proof of availability." : l.price.source === "published_from" ? "Indicative. A published from fare is not a quote and is left out of the total." : "No figure. Nothing is estimated."}</dd>
+                      <dt className="ledger-muted">Standing</dt><dd>{l.price.source === "published_rate" ? "The supplier's own published rate. The house confirms it, and its tax treatment, before a request goes out. Not proof of availability." : verified(l.price) ? "Verified at the time shown. The house re-checks it before a request goes to the supplier. Not proof of availability." : l.price.source === "published_from" ? "Indicative. A published from fare is not a quote and is left out of the total." : "No figure. Nothing is estimated."}</dd>
                     </dl>
                   </Panel>
                 ))}
@@ -254,6 +259,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                 {bookable.map((l) => {
                   const p = product(l), v = p.type === "voyage" ? p.voyages.find((x) => x.slug === l.voyage?.slug) : null;
                   const inc = p.type === "voyage" ? (v?.inclusions ?? []) : p.inclusions, exc = p.type === "voyage" ? (v?.exclusions ?? []) : p.exclusions;
+                  const incNote = p.type === "stay" ? p.inclusionsNote : p.type === "journey" ? "As drafted for this route; the house confirms each item with the quote." : "";
                   return (
                     <Panel key={l.id} className="p-5 md:p-6">
                       <p className="ledger-eyebrow"><span className="ledger-id">{l.ledgerId}</span> · {l.supplier}</p>
@@ -269,7 +275,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                         ))}
                       </ul>
                       <div className="mt-5 grid md:grid-cols-2 gap-6">
-                        <div><h3 className="ledger-eyebrow">Included</h3>{inc.length ? <ul className="mt-2 space-y-1.5 text-[14.5px] list-disc pl-5">{inc.map((x) => <li key={x}>{x}</li>)}</ul> : <p className="mt-2 text-[14.5px] ledger-muted">{p.type === "stay" ? p.inclusionsNote : "Not on file."}</p>}{l.plan && <p className="mt-2 text-[14.5px]">Rate plan priced: {l.plan}.</p>}</div>
+                        <div><h3 className="ledger-eyebrow">Included</h3>{inc.length ? <ul className="mt-2 space-y-1.5 text-[14.5px] list-disc pl-5">{inc.map((x) => <li key={x}>{x}</li>)}</ul> : <p className="mt-2 text-[14.5px] ledger-muted">{incNote || "Not on file."}</p>}{inc.length > 0 && p.type === "journey" && <p className="mt-2 text-[13.5px] ledger-muted">{incNote}</p>}{l.plan && <p className="mt-2 text-[14.5px]">Rate plan priced: {l.plan}.</p>}</div>
                         <div><h3 className="ledger-eyebrow">Not included</h3>{exc.length ? <ul className="mt-2 space-y-1.5 text-[14.5px] list-disc pl-5">{exc.map((x) => <li key={x}>{x}</li>)}</ul> : <p className="mt-2 text-[14.5px] ledger-muted">Not on file. Flights, transfers and anything not named as included should be assumed extra until the house confirms.</p>}</div>
                       </div>
                       <h3 className="ledger-eyebrow mt-5">Deposit, balance and cancellation</h3>
@@ -424,7 +430,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
             {!bookable.length && <p className="mt-2 text-[15px] ledger-muted">Nothing added yet.</p>}
             <ul className="mt-2 divide-y divide-[#DCD7D0]">
               {bookable.map((l) => (
-                <li key={l.id} className="py-2.5 text-[14.5px] flex justify-between gap-3"><span className="min-w-0"><span className="block truncate">{l.name}</span><span className="block text-[12.5px] ledger-muted truncate">{l.unit}{l.start ? ` · ${niceDate(l.start).replace(/^\w+, /, "")}` : ""}</span></span><span className="whitespace-nowrap">{l.price.usdMinor != null ? `${l.price.source === "published_from" ? "from " : ""}${fmtMoney(l.price.usdMinor, "USD").replace(/\.00$/, "")}` : "House"}</span></li>
+                <li key={l.id} className="py-2.5 text-[14.5px] flex justify-between gap-3"><span className="min-w-0"><span className="block truncate">{l.name}</span><span className="block text-[12.5px] ledger-muted truncate">{l.unit}{l.start ? ` · ${niceDate(l.start).replace(/^\w+, /, "")}` : ""}</span></span><span className="whitespace-nowrap">{l.price.usdMinor != null ? `${l.price.source === "published_from" ? "from " : ""}${fmtMoney(l.price.usdMinor, "USD").replace(/\.00$/, "")}` : pricedAbroad(l.price) ? fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string).replace(/\.00$/, "") : "House"}</span></li>
               ))}
             </ul>
             <Totals totals={totals} compact className="mt-3" />
@@ -435,7 +441,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
 
       {step < 6 && (
         <div className="md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-[#CFC8BF] bg-paper px-5 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] flex items-center gap-3">
-          <div className="min-w-0 flex-1"><p className="text-[11px] tracking-wide uppercase ledger-muted">Verified today</p><p className="ledger-display text-[1.35rem] leading-none mt-0.5">{fmtMoney(totals.verifiedMinor, "USD")}</p></div>
+          <div className="min-w-0 flex-1"><p className="text-[11px] tracking-wide uppercase ledger-muted">Priced today</p><p className="ledger-display text-[1.35rem] leading-none mt-0.5">{fmtMoney(totals.verifiedMinor, "USD")}</p></div>
           {step > 0 && <button type="button" className="border border-[#CFC8BF] px-3.5 py-3 text-[14px]" onClick={() => go(step - 1)}>Back</button>}
           <button type="button" className="bg-ink text-white px-4 py-3 text-[14px] disabled:opacity-50" disabled={busy} onClick={next}>{step === 5 ? (busy ? "Running" : "Run simulation") : "Continue"}</button>
         </div>
@@ -447,10 +453,11 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
 function Totals({ totals: t, compact, className = "" }: { totals: ReturnType<typeof cartTotals>; compact?: boolean; className?: string }) {
   return (
     <dl className={`${compact ? "text-[14px]" : "border ledger-border bg-paper-card p-5 md:p-6 text-[15.5px]"} ${className}`}>
-      <div className="flex justify-between gap-4 border-t border-ink pt-2.5"><dt>Verified today{t.verifiedCount ? ` · ${t.verifiedCount} ${t.verifiedCount === 1 ? "line" : "lines"}` : ""}</dt><dd className={compact ? "font-medium" : "ledger-display text-[1.7rem] leading-none"}>{fmtMoney(t.verifiedMinor, "USD")}</dd></div>
+      <div className="flex justify-between gap-4 border-t border-ink pt-2.5"><dt>Priced today{t.verifiedCount ? ` · ${t.verifiedCount} ${t.verifiedCount === 1 ? "line" : "lines"}` : ""}</dt><dd className={compact ? "font-medium" : "ledger-display text-[1.7rem] leading-none"}>{fmtMoney(t.verifiedMinor, "USD")}</dd></div>
+      {t.abroad.map((a) => <div key={a.currency} className="flex justify-between gap-4 mt-2"><dt>Priced in {a.currency} · no US dollar rate on file</dt><dd className="whitespace-nowrap">{fmtMoney(a.minor, a.currency)}</dd></div>)}
       {t.fromCount > 0 && <div className="flex justify-between gap-4 mt-2 ledger-muted"><dt>Published from fares · not in the total</dt><dd className="whitespace-nowrap">from {fmtMoney(t.fromMinor, "USD")}</dd></div>}
       {t.awaitingCount > 0 && <div className="flex justify-between gap-4 mt-2 ledger-muted"><dt>Awaiting a price from the house</dt><dd>{t.awaitingCount} {t.awaitingCount === 1 ? "line" : "lines"}</dd></div>}
-      {!compact && <p className="mt-4 text-[13.5px] ledger-muted">No tax has been added by the house. Supplier taxes and levies are on the next screen. A verified price is not proof of availability.</p>}
+      {!compact && <p className="mt-4 text-[13.5px] ledger-muted">No tax has been added by the house, and no Florida sales tax applies. Supplier taxes and levies are on the next screen. A price shown is not proof of availability.</p>}
     </dl>
   );
 }

@@ -9,11 +9,59 @@ configuration was changed in this session. All reads were read-only.
 
 ---
 
+## Round 2 (same day): James's decisions, corrections and four more examples
+
+**Decisions recorded, 15 Nov 2026**
+1. **No Florida sales tax.** The cart applies none and says so. The blanket 7% is still in the shared pricing engine,
+   `lib/pricing.ts`, the `quotes.florida_tax_minor` column, seven components and `COMMERCIAL-RULES.md`; removing it there
+   is a separate change for approval, because those files serve live pages and the pricing workstream.
+2. **Ellerman House.** James will complete the card. A Draft card (`PUBLISHED-2026-27`, 35 seasonal rates, ZAR) already
+   sits in Airtable from Session 01; it needs VAT and levy treatment, deposit, cancellation, minimum stays and occupancy
+   before it can be published.
+3. **TAG does not handle or allow cruise bookings.** Voyages never route to the booking engine: Antarctica21 is booked
+   through the house. For ALBIE stays the engine collects the payment and pays the house, so the house site takes no
+   payment for Leeu House; Pay Now is now described and simulated as a hand-off to the engine.
+
+**Corrections to the first report**
+- Session 01 did happen (a read-only audit, indexed in the project as `session-01-audit-index.md`). The first report
+  was wrong to say no earlier specification existed.
+- Ellerman House's published rates were on file all along, in `lib/content/stay-rooms.ts` (rand, four seasons, seven
+  room and villa types, read from Ellerman House's own site on 10 Nov 2026). The first report missed that file.
+  James approved building the pilot from published rates, so Ellerman House now prices in the cart.
+- Departures now carry the Airtable Departure Code (for example `PCS-A21-CLA-270114-ME`) wherever the Polar Crossings
+  Voyage Ledger has the sailing: 14 Magellan Explorer sailings. Sailings not filed there show no code; none is made up.
+
+**New examples in the cart**
+
+| Example | ID | How it prices |
+| --- | --- | --- |
+| Ellerman House, rooms | `STY-2026-000075` | Published rand rates, night by night across seasons, US dollars first at the filed ECB rate, rand kept beside it. |
+| Ellerman House Villas (residence) | `STY-2026-000075` | Villa One and Villa Two, per villa a night, same method. Villa Two is capped at the six it sleeps; a larger party goes to the house. |
+| Casali di Casole (Gatherings residence) | `STY-2026-000650` | Published euro rate per residence a night, for the two weeks its engine was read (12 to 19 Jun and 11 to 18 Sep 2027). The Season of Savings rate applies only from five nights. Other dates and unpriced residences go to the house. **No EUR rate is on file, so it stays in euros and outside the US dollar total.** |
+| The Sand River by Road (land journey) | `ITN-LAND-2026-202031` | Start date and travelers. Route prices are not final in the record, so no figure: the house quotes it. Advisor Assisted only. |
+| Three Generations at Pioneer (family land journey) | `ITN-LAND-2026-982652` | The same, for up to twelve. |
+
+Checked by hand: Deluxe House Room, 26 Feb to 2 Mar 2027 = 3 Peak nights at R70,000 + 1 High night at R67,000 =
+R277,000 = US$16,596.76 at 16.69. Villa Two, 10 to 14 Jun 2027 = 4 Low nights at R220,000 = R880,000 = US$52,726.18.
+Santa Lucia, 12 to 18 Jun 2027 = 6 nights at EUR 4,000 = EUR 24,000.
+
+**New gaps this round**
+- A filed EUR to USD rate (add EUR to `lib/content/rates/fx.json`; the monthly refresh then keeps it current).
+- Land journeys have no price build at all (`prices_final: false`, the calculator reads "Quoted against your dates").
+  A journey needs its component rates (Londolozi, the charter, transfers) before it can price.
+- Gatherings residences: only Casali di Casole and the Ellerman villas have published rates on file. Occupancy for
+  Villa One is not stated, and no residence has deposit, cancellation or house-rules terms on file.
+- A published rate is not a contracted rate: VAT and levy treatment for Ellerman House is still open.
+
+Tests: 11 for the cart, 388 in the suite, all passing; typecheck, lint and build clean.
+
+---
+
 ## 1. What previous sessions actually left (verified before any code)
 
 | Area | What exists on `main` | What does not exist |
 | --- | --- | --- |
-| Checkout prototype | A single-property quote flow (`/booking/property/[slug]`, `/booking/quote/[id]`), behind flags that are off unless switched on in Vercel. | No Journey Cart, no multi-product checkout, no Booking & Checkout specification, and no branch for one among the repo's 401 branches. Session 03 starts the cart from nothing. |
+| Checkout prototype | A single-property quote flow (`/booking/property/[slug]`, `/booking/quote/[id]`), behind flags that are off unless switched on in Vercel. | No Journey Cart or multi-product checkout code, and no branch for one among the repo's 401 branches. (Session 01's audit lives in the project, not the repo.) |
 | Rate Desk / rate cards | Airtable base "Commercial Rates (Booking Live)" with 9 properties and 8 cards; synced copy in Supabase "JWC Booking Live"; a tested pricing engine (`lib/booking-live/pricing/engine.ts`). Two cards are published: Leeu **Estates** (a SAMPLE card) and Lion Sands 2027-V1. | No card, and no Airtable property row, for **Leeu House** or **Ellerman House**. |
 | ALBIE | `lib/rates.ts` + `/api/rates`: the site reads the public page of the house booking engine (`book.wildearthstays.com`) and parses room names and the first price after each. Cached 15 minutes. | No ALBIE API, no credentials, no test or sandbox integration. It is a page reader, not a contract with TAG. |
 | Payments | A gateway seam for Stripe Checkout, webhook settle, refunds, idempotency keys, `payments` table. Off unless three env vars are set. | No payment has ever been recorded (`payments`, `bookings`, `quotes` all hold 0 rows). No sandbox keys were visible to this session. |
@@ -26,7 +74,7 @@ configuration was changed in this session. All reads were read-only.
 | Product | Canonical ID | Price source on file | Gaps |
 | --- | --- | --- | --- |
 | Leeu House, Classic Room | `STY-2026-000149`, Supabase slug `leeu-house`, engine property `leeu-house` | Live total per room and plan from the booking engine page, in USD | No room records in Supabase; no tax breakdown, deposit, cancellation or settlement currency in what the engine page gives us. Booking mode is `inquiry`. |
-| Ellerman House | `STY-2026-000075`, Supabase slug `ellerman-house` | **None.** Seven room names in the stay record; no rates, no seasons, no ZAR figures anywhere. | The whole contracted card: rooms, High / Mid / Low seasons, ZAR nightly rates, VAT and levy treatment, deposit, cancellation, commission terms. |
+| Ellerman House | `STY-2026-000075`, Supabase slug `ellerman-house` | Published rand rates by season in `lib/content/stay-rooms.ts` (corrected in Round 2; the first pass missed this file). | The contracted card: VAT and levy treatment, deposit, cancellation, minimum stays, occupancy. |
 | Magellan Explorer | `VSL-2026-000034`; voyage slugs and sailing dates from `lib/content/polar/voyages/*.json` | Antarctica21's published **from** fare per person (double cabin) per dated sailing, checked 8 Nov 2026. Classic Antarctica Air-Cruise: 49 sailings filed, one sold out, from US$15,995 to US$19,995 pp. | Fares by cabin category (seven categories, none priced), cabin availability, deposit amount, payment schedule, cancellation scale. |
 
 FX on file: 16.69 ZAR to US$1, European Central Bank reference rate of 30 Oct 2026 (`lib/content/rates/fx.json`).
@@ -72,7 +120,8 @@ FX on file: 16.69 ZAR to US$1, European Central Bank reference rate of 30 Oct 20
 | --- | --- |
 | Multi-product cart, edit, remove, experiences, three-pile totals | **Functional** |
 | Leeu House live price | **Functional code path**, through the existing `/api/rates`. Not confirmed from the build workspace, which cannot reach the engine; check it on the preview. |
-| Ellerman seasonal pricing, USD first with ZAR kept | **Functional and tested, with nothing to price.** It switches on by itself when a non-sample card for `ellerman-house` is published and synced. |
+| Ellerman seasonal pricing, USD first with ZAR kept | **Functional**, from published rates (Round 2). A published, non-sample contracted card for `ellerman-house` takes over by itself once synced. |
+| Villas, residences, land journeys | **Functional** as described in Round 2; land journeys are unpriced by design. |
 | Magellan Explorer departures and from fares | **Functional**, from filed data. Indicative only. |
 | Sold-out sailings blocked | **Functional** |
 | Advisor attribution (`?advisor=`), carried to every line | **Functional in the cart**; not saved anywhere. |
@@ -93,7 +142,7 @@ FX on file: 16.69 ZAR to US$1, European Central Bank reference rate of 30 Oct 20
 6. Real availability and a hold or booking endpoint with a confirmation number.
 7. Whether TAG permits payment to be taken on the house site, or only on the engine.
 
-**Ellerman House**: the contracted card (section 2), entered in Airtable in ZAR, approved and published.
+**Ellerman House**: the Draft card in Airtable completed (VAT and levy, deposit, cancellation, minimum stays, occupancy), approved and published.
 
 **Antarctica21**: fares by cabin category per departure, cabin availability, deposit and payment schedule,
 cancellation scale, and whether the house may collect deposits on its behalf.
@@ -103,8 +152,7 @@ cancellation scale, and whether the house may collect deposits on its behalf.
 transactions inside one journey, since the existing `payments` table hangs off one booking.
 
 **Decisions needed from James**
-- **Florida sales tax.** The existing engine and the live-rates band add 7% to everything (rule of 27 Oct 2026). This
-  project's rule is never to add it automatically. The cart adds none. One rule is needed, from the tax adviser.
+- **Florida sales tax.** Settled in Round 2: none. Removing the 7% from the shared engine is the open task.
 - **Displayed prices.** Prices came off the public site on 7 Nov 2026. This preview shows prices; it is unlisted and
   cannot run in Production.
 - Advisor share % (blank in Airtable), and the 70 / 30 reading still marked "Confirm" in `COMMERCIAL-RULES.md`.
@@ -146,13 +194,15 @@ transactions inside one journey, since the existing `payments` table hangs off o
 - [x] Seven screens, clickable end to end, desktop and phone
 - [x] Three pilot products on existing IDs
 - [x] No invented rates, taxes, deposits or availability
-- [x] USD first, source currency kept (path tested; no ZAR card to show yet)
+- [x] USD first, source currency kept (rand shown for Ellerman House; euros await a filed rate)
 - [x] Separate transactions per chapter, idempotent
 - [x] Advisor carried on every line; commission not recalculated
 - [x] Payment simulated; no card data accepted
 - [x] Payment, request and supplier confirmation kept apart
 - [ ] Leeu House live price seen working on the preview (to check)
-- [ ] Ellerman House contracted card supplied
+- [ ] Ellerman House Draft card completed and published
 - [ ] Antarctica21 cabin fares and deposit terms supplied
-- [ ] Florida sales tax rule settled
+- [x] Florida sales tax rule settled: none
+- [ ] 7% removed from the shared pricing engine (separate change, awaiting approval)
+- [ ] EUR rate filed
 - [ ] Ledger / Folio writes (next session, on a Supabase branch, after approval)

@@ -4,7 +4,8 @@
 // Money is INTEGER MINOR UNITS with an ISO-4217 currency, as in the pricing engine.
 //
 // The rules this file holds (project brief, 15 Nov 2026):
-//   - An indicative price is not a confirmed rate: only "albie_live" and "rate_card" count as verified.
+//   - An indicative price is not a confirmed rate: a live engine price, a contracted card and a supplier's own
+//     published rate (approved by James, 15 Nov 2026) count as priced; a "from" fare never does.
 //   - A supplier quotation is not confirmed inventory: nothing here ever says "confirmed".
 //   - Payment success is not supplier acceptance: three statuses, kept apart.
 //   - Florida sales tax is never added automatically.
@@ -12,8 +13,8 @@
 //   - Commission is not calculated here: only the commissionable base is handed across.
 //   - Payments are simulated: no card data is accepted, and anything card-shaped is refused.
 
-export type Kind = "stay" | "voyage" | "experience";
-export type PriceSource = "albie_live" | "rate_card" | "published_from" | "none";
+export type Kind = "stay" | "voyage" | "journey" | "experience";
+export type PriceSource = "albie_live" | "rate_card" | "published_rate" | "published_from" | "none";
 
 export type Price = {
   source: PriceSource;
@@ -40,8 +41,8 @@ export type Line = {
   /** Stay: room. Voyage: cabin category. Experience: empty. */
   unit: string;
   unitKey: string;
-  /** Voyage: the itinerary's name and slug. */
-  voyage?: { slug: string; name: string } | null;
+  /** Voyage: the itinerary's name and slug, and the Airtable Departure Code where the departure is filed there. */
+  voyage?: { slug: string; name: string; code?: string | null } | null;
   start: string;
   end: string;
   adults: number;
@@ -50,7 +51,10 @@ export type Line = {
   price: Price;
 };
 
-export const verified = (p: Price) => (p.source === "albie_live" || p.source === "rate_card") && p.usdMinor != null && p.usdMinor > 0;
+const PRICED: PriceSource[] = ["albie_live", "rate_card", "published_rate"];
+export const verified = (p: Price) => PRICED.includes(p.source) && p.usdMinor != null && p.usdMinor > 0;
+/** Priced by its source in the supplier's currency, with no conversion rate on file to show it in US dollars. */
+export const pricedAbroad = (p: Price) => PRICED.includes(p.source) && p.usdMinor == null && p.sourceMinor != null && p.sourceMinor > 0 && Boolean(p.sourceCurrency);
 
 export const nightsBetween = (a: string, b: string) => Math.round((Date.parse(`${b}T00:00:00Z`) - Date.parse(`${a}T00:00:00Z`)) / 86400000);
 export const isDate = (s: string) => /^\d{4}-\d{2}-\d{2}$/.test(s) && !Number.isNaN(Date.parse(`${s}T00:00:00Z`));
@@ -69,19 +73,20 @@ export function fmtMoney(minor: number, currency: string): string {
   const n = (minor / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   if (currency === "USD") return `US$${n}`;
   if (currency === "ZAR") return `R${n} ZAR`;
+  if (currency === "EUR") return `€${n}`;
   return `${n} ${currency}`;
 }
 
 // ---------- Contracted seasonal cards (Ellerman House, once its card is published)
 
-export type SeasonRule = { season: string; roomKey: string; stayStart: string; stayEnd: string; baseOccupancy: number; amountMinor: number; priority?: number };
+export type SeasonRule = { season: string; roomKey: string; stayStart: string; stayEnd: string; baseOccupancy: number; amountMinor: number; priority?: number; /** The rate applies only to stays of at least this many nights. */ minNights?: number };
 export type SeasonNight = { date: string; season: string; amountMinor: number };
 
 /** Night by night from a published card. Null when any night has no rule, or the party exceeds the base occupancy: the house then prices it. */
 export function priceNights(rules: SeasonRule[], roomKey: string, arrival: string, departure: string, adults: number): { totalMinor: number; nights: SeasonNight[]; seasons: { season: string; nights: number; amountMinor: number }[] } | null {
   const n = nightsBetween(arrival, departure);
   if (!(n > 0) || n > 60) return null;
-  const mine = rules.filter((r) => r.roomKey === roomKey);
+  const mine = rules.filter((r) => r.roomKey === roomKey && (r.minNights ?? 0) <= n);
   const nights: SeasonNight[] = [];
   for (let i = 0; i < n; i++) {
     const date = addDays(arrival, i);
@@ -99,13 +104,14 @@ export function priceNights(rules: SeasonRule[], roomKey: string, arrival: strin
 
 // ---------- Totals
 
-export type Totals = { verifiedMinor: number; verifiedCount: number; fromMinor: number; fromCount: number; awaitingCount: number };
+export type Totals = { verifiedMinor: number; verifiedCount: number; fromMinor: number; fromCount: number; awaitingCount: number; abroad: { currency: string; minor: number }[] };
 
-/** Three piles, never mixed: verified now, published "from" figures, and lines with no figure on file. */
+/** Piles that are never mixed: priced in US dollars, priced in another currency with no rate on file, published "from" figures, and lines with no figure. */
 export function cartTotals(lines: Line[]): Totals {
-  const t: Totals = { verifiedMinor: 0, verifiedCount: 0, fromMinor: 0, fromCount: 0, awaitingCount: 0 };
+  const t: Totals = { verifiedMinor: 0, verifiedCount: 0, fromMinor: 0, fromCount: 0, awaitingCount: 0, abroad: [] };
   for (const l of lines) {
     if (verified(l.price)) { t.verifiedMinor += l.price.usdMinor as number; t.verifiedCount += 1; }
+    else if (pricedAbroad(l.price)) { const c = l.price.sourceCurrency as string, a = t.abroad.find((x) => x.currency === c); if (a) a.minor += l.price.sourceMinor as number; else t.abroad.push({ currency: c, minor: l.price.sourceMinor as number }); }
     else if (l.price.source === "published_from" && l.price.usdMinor) { t.fromMinor += l.price.usdMinor; t.fromCount += 1; }
     else t.awaitingCount += 1;
   }
@@ -246,8 +252,8 @@ export function ledgerHandoff(a: { cartId: string; lines: Line[]; lead: Lead; pa
     advisor: { slug: a.advisor.slug, ledgerId: a.advisor.ledgerId, name: a.advisor.name, external: a.externalAdvisor.trim() || null },
     leadTraveler: { name: `${a.lead.first.trim()} ${a.lead.last.trim()}`.trim(), email: a.lead.email.trim(), country: a.lead.country.trim() || null, partySize: 1 + a.party.filter((p) => p.first.trim() || p.last.trim()).length },
     lines: a.lines.map((l) => ({
-      table: l.kind === "experience" ? "folio_items" : "quotes, then bookings",
-      ledgerId: l.ledgerId, productKey: l.productKey, unitKey: l.unitKey || null, voyage: l.voyage?.slug ?? null,
+      table: l.kind === "experience" ? "folio_items" : l.kind === "journey" ? "advisor_requests, then quotes" : "quotes, then bookings",
+      ledgerId: l.ledgerId, productKey: l.productKey, unitKey: l.unitKey || null, voyage: l.voyage?.slug ?? null, departureCode: l.voyage?.code ?? null,
       start: l.start || null, end: l.end || null, adults: l.adults,
       price: { source: l.price.source, verified: verified(l.price), usdMinor: l.price.usdMinor, sourceMinor: l.price.sourceMinor, sourceCurrency: l.price.sourceCurrency, fx: l.price.fx, provenance: l.price.provenance, fetchedAt: l.price.fetchedAt },
       availability: "on_request",

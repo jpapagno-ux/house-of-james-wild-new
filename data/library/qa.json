@@ -5368,11 +5368,9 @@
    "country": "French Polynesia (Tahiti)",
    "missing": [
     "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9f6",

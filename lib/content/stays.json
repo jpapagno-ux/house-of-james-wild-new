@@ -56145,6 +56145,84 @@
    "placeSlug": null
   },
   {
+   "slug": "vanira-lodge",
+   "name": "Vanira Lodge",
+   "ledgerId": "STY-2026-000621",
+   "country": "French Polynesia (Tahiti)",
+   "countrySlug": "tahiti",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Ten Polynesian bungalows in a tropical garden in the hills above Teahupo'o, at the end of the road on Tahiti Iti",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/vai-here",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/vai-here-lagoon",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/vai-iti",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/vai-ora",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/maara",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/kava",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/restaurant"
+   ],
+   "bestMonths": "May - October",
+   "bestMonthsNote": "Tahiti's dry season, and the months when Teahupo'o's southern swells arrive (Tahiti Tourisme).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Tahiti Faa'a International Airport (PPT)",
+   "airportDirections": "The lodge is in the hills above Teahupo'o, at the tip of Tahiti Iti, away from the towns. The lodge strongly recommends renting a car to explore the peninsula; free parking on site. Check-in from 3 pm, check-out before noon.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Ten bungalows of traditional Polynesian design, built from coral, wood, stone and earth, in a 1.5 hectare tropical garden between the lagoon and the mountain.",
+     "SPA Bungalows: Vai Iti (17 m², for 2) and Vai Ora (18 m², for 2), each with a private jacuzzi, deck, hammock, outdoor bathroom and air-conditioned bedroom; Vai Here (55 m², for 4), two air-conditioned bedrooms, private jacuzzi and lagoon and mountain views.",
+     "Nature Bungalows, with turtle-shell roofs: Maara (50 m², on stilts at the forest edge), Kava (50 m², for 4) and Ofai (50 m², for 5, with a private garden), each with a kitchenette.",
+     "Terrace Bungalows: Tehau (80 m², a loft by the pools), Haari (33 m², for 2), Aito (50 m², single-storey, for families with young children) and Lichee (70 m², for 6, facing the sea, with a barbecue garden)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Pools in the garden, bicycles, swings, books and games at the lodge. With local partners: boat trips, diving, surfing, hiking, horse riding and 4x4 crossings of Tahiti Iti.",
+     "Surfing and boat trips at Teahupo'o",
+     "Diving off Tahiti Iti",
+     "Hiking and horse riding on the peninsula",
+     "4x4 crossings",
+     "Restaurant Le Vanira, Breton and Tahitian cooking, open daily, and happy hour facing the lagoon Thursday to Sunday"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Ten bungalows in a 1.5 hectare tropical garden",
+     "Private jacuzzis in the SPA bungalows",
+     "Pools",
+     "Restaurant and bar, open every day",
+     "A small family-run lodge",
+     "Weddings, vow renewals and private celebrations"
+    ]
+   },
+   "onlyHere": [
+    "The closest stay in the Ledger to Teahupo'o: a family lodge in the hills at the end of the road on Tahiti Iti, a short way from the wave."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "velaa-private-island",
    "name": "Velaa\nPrivate\nIsland",
    "ledgerId": "STY-2026-000327",

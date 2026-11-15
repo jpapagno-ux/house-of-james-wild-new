@@ -697,6 +697,7 @@ export const STAY_SLUGS: string[] = [
   "under-canvas-zion",
   "ungasan-clifftops",
   "uxua-casa-hotel-spa",
+  "vanira-lodge",
   "velaa-private-island",
   "vermejo-ted-turner-reserve",
   "viceroy-bali",

@@ -126,5 +126,5 @@ export default function TerraYMap({ stops, active, label, onReady, onFail, reduc
     }
   }, [active, ready, stops, label, reduced]);
 
-  return <div ref={box} className="absolute inset-0" />;
+  return <div className="absolute inset-0"><div ref={box} className="h-full w-full" /></div>;
 }

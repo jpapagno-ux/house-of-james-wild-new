@@ -94,7 +94,6 @@ export const TAHITI_ISLAND_GUIDES: Record<string, Guide> = {
   moorea: {
     slug: "moorea", region: "oceania", country: "tahiti", parent: "tahiti", name: "Moorea", path: `${BASE}/moorea`,
     theme: "sea", stays: [],
-    // IMAGE FOLLOW-UP: no Moorea photography of the house's own yet; the hero falls back to the house share image.
     proofEyebrow: "Island by island · the house's Society Islands file",
     seo: {
       title: "Moorea Travel Guide: Ferry from Papeete, Whales, Rays and the Belvedere",
@@ -104,7 +103,8 @@ export const TAHITI_ISLAND_GUIDES: Record<string, Guide> = {
     eyebrow: EYEBROW,
     h1: "Moorea",
     tagline: "Two bays, eight mountains, and a lagoon with twelve passes",
-    slides: [],
+    // The house watercolour, with the hare at the Belvedere (James approved the hare plates, 15 Nov 2026).
+    slides: [{ url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/destinations/tahiti/plates/moorea-belvedere-b", alt: "Watercolour of Moorea from the Belvedere: Cook's Bay and Opunohu Bay either side of Mount Rotui, the house hare at the rail", credit: "Watercolour, James Wild & Co" }],
     answer: "Moorea is a volcanic island about 17 km north west of Tahiti, reached by ferry from Papeete in 30 to 45 minutes or by a flight of about 15 minutes from Faa'a (Tahiti Tourisme). Its two bays, Cook's and Opunohu, either side of Mount Rotui, give the island its trident shape; the Belvedere lookout looks over both. In the lagoon, inside a reef with twelve passes, Tiahura is known for sharks and rays; humpback whales come July to November; the water is 26 to 29°C all year. Hikes climb the passes and Mount Rotui, and Opunohu Valley holds ancient marae.",
     facts: [
       ["Where", "About 17 km north west of Tahiti, Society Islands"],

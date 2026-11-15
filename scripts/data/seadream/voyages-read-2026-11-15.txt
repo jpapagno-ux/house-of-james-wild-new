@@ -1,0 +1,270 @@
+2026-11-21|7|SD1|Bridgetown, Barbados|Bridgetown, Barbados|12641|5320
+2026-11-28|7|SD1|Bridgetown, Barbados|St. John's, Antigua|12642|5020
+2026-12-05|7|SD1|St. John's, Antigua|San Juan|12643|5520
+2026-12-12|7|SD1|San Juan|Charlotte Amalie, St. Thomas|12644|5620
+2026-12-12|7|SD2|Charlotte Amalie, St. Thomas|San Juan|22641|5220
+2026-12-19|8|SD1|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|12645|6680
+2026-12-19|8|SD2|San Juan|San Juan|22642|7080
+2026-12-27|7|SD1|Charlotte Amalie, St. Thomas|San Juan|12701|10720
+2026-12-27|7|SD2|San Juan|Charlotte Amalie, St. Thomas|22701|11620
+2027-01-03|6|SD1|San Juan|San Juan|12702|5160
+2027-01-03|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22702|6220
+2027-01-09|7|SD1|San Juan|San Juan|12703|6420
+2027-01-10|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22703|5920
+2027-01-16|7|SD1|San Juan|San Juan|12704|6520
+2027-01-23|7|SD1|San Juan|San Juan|12705|6520
+2027-01-24|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22705|6020
+2027-01-30|7|SD1|San Juan|San Juan|12706|6420
+2027-01-31|7|SD2|Charlotte Amalie, St. Thomas|Philipsburg|22706A|5520
+2027-02-06|7|SD1|San Juan|San Juan|12707|6420
+2027-02-07|7|SD2|Philipsburg|Marigot|22707A|6220
+2027-02-14|7|SD2|Marigot|Charlotte Amalie, St. Thomas|22708|6520
+2027-02-20|7|SD1|San Juan|San Juan|12709|6420
+2027-02-27|7|SD1|San Juan|Bridgetown, Barbados|12710|6820
+2027-02-27|8|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22710A|6580
+2027-03-06|7|SD1|Bridgetown, Barbados|Bridgetown, Barbados|12711|6320
+2027-03-07|6|SD2|Charlotte Amalie, St. Thomas|San Juan|22711|5760
+2027-03-13|7|SD1|Bridgetown, Barbados|San Juan|12712|6220
+2027-03-13|7|SD2|San Juan|Palm Beach|22712|7920
+2027-03-20|7|SD1|San Juan|San Juan|12713|6320
+2027-03-20|7|SD2|Palm Beach|Palm Beach|22713|7720
+2027-03-27|7|SD1|San Juan|San Juan|12714|6420
+2027-03-27|7|SD2|Palm Beach|Palm Beach|22714|7420
+2027-04-03|7|SD1|San Juan|San Juan|12715|6420
+2027-04-03|7|SD2|Palm Beach|Palm Beach|22715|7720
+2027-04-10|7|SD1|San Juan|San Juan|12716|6520
+2027-04-10|14|SD2|Palm Beach|Lisbon|22716|4860
+2027-04-17|14|SD1|San Juan|Lisbon|12717|5260
+2027-04-24|8|SD2|Lisbon|Malaga|22717|7180
+2027-04-24|22|SD2|Lisbon|Rome (Civitavecchia)|G22717|20620
+2027-05-02|7|SD2|Malaga|Nice|22718|7620
+2027-05-09|7|SD2|Nice|Rome (Civitavecchia)|22719|7220
+2027-05-16|7|SD2|Rome (Civitavecchia)|Nice|22720|8020
+2027-05-22|8|SD1|Lisbon|Bordeaux|12719|7280
+2027-05-30|12|SD1|Bordeaux|Oslo|12720|13240
+2027-05-30|23|SD1|Bordeaux|Tromsø|G12720|24270
+2027-05-31|7|SD2|Nice|Nice|22722|12720
+2027-06-11|11|SD1|Oslo|Tromsø|12721|12170
+2027-06-17|10|SD2|Venice|Athens (Piraeus)|22724|17700
+2027-06-22|11|SD1|Tromsø|Oslo|12722|12370
+2027-06-27|7|SD2|Athens (Piraeus)|Athens (Piraeus)|22725|8520
+2027-07-03|11|SD1|Oslo|Tromsø|12723|12170
+2027-07-04|7|SD2|Athens (Piraeus)|Athens (Piraeus)|22726|8120
+2027-07-11|7|SD2|Athens (Piraeus)|Rome (Civitavecchia)|22727|10120
+2027-07-14|10|SD1|Tromsø|Oslo|12724|11600
+2027-07-18|7|SD2|Rome (Civitavecchia)|Rome (Civitavecchia)|22728|8220
+2027-07-24|7|SD1|Oslo|Bergen|12725|7590
+2027-07-25|7|SD2|Rome (Civitavecchia)|Valletta|22729|8420
+2027-07-31|7|SD1|Bergen|Oslo|12726|9190
+2027-07-31|26|SD1|Bergen|Glasgow (Troon)|G12726|32750
+2027-08-01|7|SD2|Valletta|Rome (Civitavecchia)|22730|12520
+2027-08-07|8|SD1|Oslo|Edinburgh (Leith)|12727|9160
+2027-08-08|7|SD2|Rome (Civitavecchia)|Nice|22731|7420
+2027-08-15|7|SD2|Nice|Rome (Civitavecchia)|22732|7620
+2027-08-15|11|SD1|Edinburgh (Leith)|Glasgow (Troon)|12728|16870
+2027-08-15|18|SD2|Nice|Venice|G22732|20520
+2027-08-22|11|SD2|Rome (Civitavecchia)|Venice|22733|14260
+2027-08-26|7|SD1|Glasgow (Troon)|Dublin (Dún Laoghaire)|12729A|8490
+2027-09-02|10|SD2|Venice|Athens (Piraeus)|22734|16900
+2027-09-02|7|SD1|Dublin (Dún Laoghaire)|Dublin (Dún Laoghaire)|12730A|9690
+2027-09-09|7|SD1|Dublin (Dún Laoghaire)|Portsmouth, England|12731A|8490
+2027-09-12|7|SD2|Athens (Piraeus)|Athens (Piraeus)|22735|10220
+2027-09-16|7|SD1|Portsmouth, England|Bordeaux|12732|7989
+2027-09-19|7|SD2|Athens (Piraeus)|Athens (Piraeus)|22736|9920
+2027-09-23|8|SD1|Bordeaux|Lisbon|12733|8980
+2027-09-26|7|SD2|Athens (Piraeus)|Rome (Civitavecchia)|22737|12720
+2027-10-01|8|SD1|Lisbon|Seville|12734|9480
+2027-10-03|7|SD2|Rome (Civitavecchia)|Rome (Civitavecchia)|22738|8920
+2027-10-09|7|SD1|Seville|Barcelona|12735|8720
+2027-10-16|8|SD1|Barcelona|Malaga|12736|7880
+2027-10-16|29|SD1|Barcelona|Charlotte Amalie, St. Thomas|G12736|17140
+2027-10-17|7|SD2|Nice|Malaga|22740A|7320
+2027-10-24|14|SD1|Malaga|San Juan|12737|6060
+2027-10-24|14|SD2|Malaga|San Juan|22741A|5660
+2027-11-07|7|SD1|San Juan|Charlotte Amalie, St. Thomas|12738|4120
+2027-11-07|6|SD2|San Juan|San Juan|22742|3960
+2027-11-13|7|SD2|San Juan|San Juan|22743|4220
+2027-11-14|7|SD1|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|12739|4420
+2027-11-20|7|SD2|San Juan|Philipsburg|22744|3719
+2027-11-21|7|SD1|Charlotte Amalie, St. Thomas|Philipsburg|12740|3719
+2027-11-27|7|SD2|Philipsburg|San Juan|22745|3820
+2027-11-28|7|SD1|Philipsburg|Bridgetown, Barbados|12741|5419
+2027-12-04|7|SD2|San Juan|San Juan|22746|4320
+2027-12-05|7|SD1|Bridgetown, Barbados|Bridgetown, Barbados|12742|4520
+2027-12-11|8|SD2|San Juan|San Juan|22747|4679
+2027-12-12|7|SD1|Bridgetown, Barbados|Charlotte Amalie, St. Thomas|12743|3820
+2027-12-19|8|SD1|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|12744|5079
+2027-12-19|8|SD2|San Juan|San Juan|22748|5180
+2027-12-27|7|SD1|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|12801|9620
+2027-12-27|7|SD2|San Juan|San Juan|22801|9620
+2028-01-03|6|SD1|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|12802|3960
+2028-01-03|5|SD2|San Juan|San Juan|22802|3500
+2028-01-08|7|SD2|San Juan|San Juan|22803|4520
+2028-01-09|7|SD1|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|12803|4520
+2028-01-15|7|SD2|San Juan|San Juan|22804|4520
+2028-01-16|7|SD1|Charlotte Amalie, St. Thomas|Bridgetown, Barbados|12804|3920
+2028-01-22|7|SD2|San Juan|San Juan|22805|4520
+2028-01-23|10|SD1|Bridgetown, Barbados|Bridgetown, Barbados|12805|7300
+2028-01-29|7|SD2|San Juan|San Juan|22806|4720
+2028-02-02|11|SD1|Bridgetown, Barbados|Charlotte Amalie, St. Thomas|12806|6860
+2028-02-05|7|SD2|San Juan|San Juan|22807|4720
+2028-02-12|11|SD2|San Juan|Bridgetown, Barbados|22808|6659
+2028-02-13|7|SD1|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|12807|4419
+2028-02-20|7|SD1|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|12808|4620
+2028-02-23|10|SD2|Bridgetown, Barbados|Bridgetown, Barbados|22809|7400
+2028-02-27|7|SD1|Charlotte Amalie, St. Thomas|Philipsburg|12809|3520
+2028-03-04|7|SD2|Bridgetown, Barbados|San Juan|22810|4719
+2028-03-05|7|SD1|Philipsburg|Philipsburg|12810|4220
+2028-03-11|7|SD2|San Juan|San Juan|22811|5120
+2028-03-12|7|SD1|Philipsburg|Charlotte Amalie, St. Thomas|12811|3819
+2028-03-18|7|SD2|San Juan|San Juan|22812|4920
+2028-03-25|7|SD2|San Juan|Palm Beach|22813|5419
+2028-03-26|7|SD1|Charlotte Amalie, St. Thomas|Philipsburg|12813|4220
+2028-04-01|7|SD2|Palm Beach|Palm Beach|22814|5419
+2028-04-02|6|SD1|Philipsburg|Marigot|12814|3860
+2028-04-08|7|SD1|Marigot|Marigot|12815|5420
+2028-04-08|7|SD2|Palm Beach|Palm Beach|22815|5720
+2028-04-15|7|SD1|Marigot|San Juan|12816|3820
+2028-04-15|7|SD2|Palm Beach|Palm Beach|22816|5020
+2028-04-22|14|SD1|San Juan|Malaga|12817|5260
+2028-04-22|14|SD2|Palm Beach|Lisbon|22817|5260
+2028-05-06|7|SD1|Malaga|Barcelona|12818|6820
+2028-05-06|7|SD2|Lisbon|Malaga|22818A|7320
+2028-05-13|7|SD1|Barcelona|Nice|12819|7320
+2028-05-13|7|SD2|Malaga|Nice|22819A|6820
+2028-05-20|7|SD1|Nice|Rome (Civitavecchia)|12820|6920
+2028-05-20|7|SD2|Nice|Rome (Civitavecchia)|22820A|6719
+2028-05-27|7|SD1|Rome (Civitavecchia)|Nice|12821|6719
+2028-05-27|7|SD2|Rome (Civitavecchia)|Rome (Civitavecchia)|22821A|6920
+2028-06-03|7|SD1|Nice|Nice|12822|10419
+2028-06-03|8|SD2|Rome (Civitavecchia)|Athens (Piraeus)|22822A|9280
+2028-06-10|14|SD1|Nice|Venice|12823|15839
+2028-06-11|7|SD2|Athens (Piraeus)|Dubrovnik|22823A|7919
+2028-06-24|7|SD1|Venice|Dubrovnik|12824|9320
+2028-06-25|7|SD2|Venice|Dubrovnik|22825A|8120
+2028-07-01|7|SD1|Dubrovnik|Athens (Piraeus)|12825|7919
+2028-07-02|7|SD2|Dubrovnik|Athens (Piraeus)|22826A|7919
+2028-07-08|7|SD1|Athens (Piraeus)|Athens (Piraeus)|12826|8620
+2028-07-09|7|SD2|Athens (Piraeus)|Athens (Piraeus)|22827A|8120
+2028-07-15|7|SD1|Athens (Piraeus)|Rome (Civitavecchia)|12827|8020
+2028-07-16|7|SD2|Athens (Piraeus)|Athens (Piraeus)|22828A|7919
+2028-07-22|7|SD1|Rome (Civitavecchia)|Nice|12828|8020
+2028-07-23|11|SD2|Athens (Piraeus)|Rome (Civitavecchia)|22829A|12599
+2028-07-29|7|SD1|Nice|Rome (Civitavecchia)|12829|7919
+2028-08-03|10|SD2|Rome (Civitavecchia)|Athens (Piraeus)|22830A|11599
+2028-08-05|7|SD1|Rome (Civitavecchia)|Valletta|12830|7419
+2028-08-12|7|SD1|Valletta|Athens (Piraeus)|12831|7520
+2028-08-13|7|SD2|Athens (Piraeus)|Rome (Civitavecchia)|22831A|7919
+2028-08-19|7|SD1|Athens (Piraeus)|Athens (Piraeus)|12832|7620
+2028-08-20|7|SD2|Rome (Civitavecchia)|Rome (Civitavecchia)|22832A|8020
+2028-08-26|11|SD1|Athens (Piraeus)|Venice|12833|13860
+2028-08-27|7|SD2|Rome (Civitavecchia)|Athens (Piraeus)|22833A|8020
+2028-09-03|7|SD2|Athens (Piraeus)|Venice|22834A|8320
+2028-09-06|10|SD1|Venice|Rome (Civitavecchia)|12834|11900
+2028-09-10|7|SD2|Venice|Dubrovnik|22835A|8620
+2028-09-16|7|SD1|Rome (Civitavecchia)|Athens (Piraeus)|12835|8120
+2028-09-17|7|SD2|Dubrovnik|Athens (Piraeus)|22836A|8020
+2028-09-23|7|SD1|Athens (Piraeus)|Athens (Piraeus)|12836|8420
+2028-09-24|7|SD2|Athens (Piraeus)|Rome (Civitavecchia)|22837A|8020
+2028-09-30|7|SD1|Athens (Piraeus)|Rome (Civitavecchia)|12837|7620
+2028-10-01|7|SD2|Rome (Civitavecchia)|Rome (Civitavecchia)|22838A|7720
+2028-10-07|7|SD1|Rome (Civitavecchia)|Nice|12838|7520
+2028-10-08|7|SD2|Rome (Civitavecchia)|Nice|22839A|7720
+2028-10-14|7|SD1|Nice|Barcelona|12839|7419
+2028-10-15|7|SD2|Nice|Barcelona|22840A|7620
+2028-10-21|7|SD1|Barcelona|Malaga|12840|7419
+2028-10-22|8|SD2|Barcelona|Lisbon|22841A|8580
+2028-10-28|14|SD1|Malaga|San Juan|12841|5360
+2028-11-11|7|SD1|San Juan|San Juan|12842|5127
+2028-11-18|7|SD1|San Juan|San Juan|12843|5027
+2028-11-20|12|SD2|Lisbon|Charlotte Amalie, St. Thomas|22843A|4680
+2028-11-25|7|SD1|San Juan|San Juan|12844|4827
+2028-12-02|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22844|4827
+2028-12-02|7|SD1|San Juan|San Juan|12845|4827
+2028-12-09|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22845|4827
+2028-12-09|7|SD1|San Juan|San Juan|12846|4827
+2028-12-16|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22846|4827
+2028-12-16|7|SD1|San Juan|San Juan|12847|4827
+2028-12-23|6|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22847|4766
+2028-12-23|6|SD1|San Juan|San Juan|12848|4766
+2028-12-29|9|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22901|10649
+2028-12-29|9|SD1|San Juan|San Juan|12901|10649
+2029-01-07|6|SD1|San Juan|San Juan|12902|4266
+2029-01-07|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22902|5027
+2029-01-13|7|SD1|San Juan|San Juan|12903|5027
+2029-01-14|11|SD2|Charlotte Amalie, St. Thomas|Bridgetown, Barbados|22903|7871
+2029-01-20|7|SD1|San Juan|San Juan|12904|5027
+2029-01-25|10|SD2|Bridgetown, Barbados|Charlotte Amalie, St. Thomas|22904|7210
+2029-01-27|7|SD1|San Juan|San Juan|12905|5027
+2029-02-03|11|SD1|San Juan|Bridgetown, Barbados|12906|7871
+2029-02-04|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22905|5127
+2029-02-11|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22906|5027
+2029-02-14|7|SD1|Bridgetown, Barbados|Bridgetown, Barbados|12907|5027
+2029-02-18|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22907|5027
+2029-02-21|10|SD1|Bridgetown, Barbados|San Juan|12908|7310
+2029-02-25|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22908|5027
+2029-03-03|7|SD1|San Juan|San Juan|12909|5027
+2029-03-04|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22909|5027
+2029-03-10|7|SD1|San Juan|San Juan|12910|5027
+2029-03-11|7|SD2|Charlotte Amalie, St. Thomas|Charlotte Amalie, St. Thomas|22910|5027
+2029-03-17|7|SD1|San Juan|San Juan|12911|5027
+2029-03-18|7|SD2|Charlotte Amalie, St. Thomas|San Juan|22911|5127
+2029-03-24|7|SD1|San Juan|Palm Beach|12912|5027
+2029-03-25|7|SD2|San Juan|San Juan|22912|5027
+2029-03-31|7|SD1|Palm Beach|Palm Beach|12913|5127
+2029-04-01|7|SD2|San Juan|San Juan|22913|5027
+2029-04-07|7|SD1|Palm Beach|Palm Beach|12914|5127
+2029-04-08|7|SD2|San Juan|San Juan|22914|5027
+2029-04-14|14|SD1|Palm Beach|Lisbon|12915|5860
+2029-04-15|7|SD2|San Juan|San Juan|22915|5027
+2029-04-22|6|SD2|San Juan|San Juan|22916|4466
+2029-04-28|14|SD2|San Juan|Malaga|22917|5760
+2029-07-10|27|SD3|Hong Kong|Tokyo|32901|36094
+2029-08-06|14|SD3|Tokyo|Tokyo|32902|16200
+2029-08-20|14|SD3|Tokyo|Tokyo|32903|16200
+2029-09-03|14|SD3|Tokyo|Tokyo|32904|17500
+2029-09-17|15|SD3|Tokyo|Hong Kong|32905|17800
+2029-10-02|1|SD3|Hong Kong|Hong Kong|32906|
+2029-10-03|21|SD3|Hong Kong|Singapore|32907|20960
+2029-10-24|1|SD3|Singapore|Singapore|32908|
+2029-10-25|16|SD3|Singapore|Benoa (Bali)|32909|17240
+2029-11-10|19|SD3|Benoa (Bali)|Cairns, Queensland|32910|21600
+2029-11-29|15|SD3|Cairns, Queensland|Auckland|32911|17740
+2029-12-14|1|SD3|Auckland|Auckland|32912|
+2029-12-15|18|SD3|Auckland|Sydney, New South Wales|33001|23400
+2030-01-02|1|SD3|Sydney, New South Wales|Sydney, New South Wales|33002|
+2030-01-03|10|SD3|Sydney, New South Wales|Cairns, Queensland|33003|12240
+2030-01-13|12|SD3|Cairns, Queensland|Benoa (Bali)|33004|12630
+2030-01-25|14|SD3|Benoa (Bali)|Bangkok (Khlong Toei)|33005|15860
+2030-02-08|8|SD3|Bangkok (Khlong Toei)|Singapore|33006|8750
+2030-02-16|15|SD3|Singapore|Mumbai, Maharashtra|33007|15040
+2030-03-03|2|SD3|Mumbai, Maharashtra|Mumbai, Maharashtra|33008|
+2030-03-05|10|SD3|Mumbai, Maharashtra|Dubai|33009|11520
+2030-03-15|21|SD3|Dubai|Athens (Piraeus)|33010|22640
+2030-04-05|14|SD3|Athens (Piraeus)|Venice|33011|16270
+2030-04-19|14|SD3|Venice|Nice|33012|15600
+2030-05-03|14|SD3|Nice|Lisbon|33013|16350
+2030-05-17|8|SD3|Lisbon|London|33014|10500
+2030-05-25|2|SD3|London|London|33015|
+2030-05-27|14|SD3|London|Glasgow (Troon)|33016|18900
+2030-06-10|12|SD3|Glasgow (Troon)|Oslo|33017|17600
+2030-06-22|1|SD3|Oslo|Oslo|33018|
+2030-06-23|11|SD3|Oslo|Oslo|33019|14300
+2030-07-04|10|SD3|Oslo|Tromsø|33020|13100
+2030-07-14|10|SD3|Tromsø|Longyearbyen|33021|16300
+2030-07-24|10|SD3|Longyearbyen|Reykjavík|33022|15700
+2030-08-03|16|SD3|Reykjavík|Montreal, Québec|33023|21600
+2030-08-19|10|SD3|Montreal, Québec|Milwaukee, Wisconsin|33024|13800
+2030-08-29|7|SD3|Milwaukee, Wisconsin|Toronto, Ontario|33025|10200
+2030-09-05|10|SD3|Toronto, Ontario|Detroit, Michigan|33026|15500
+2030-09-15|7|SD3|Detroit, Michigan|Montreal, Québec|33027|10800
+2030-09-22|11|SD3|Montreal, Québec|Boston, Massachusetts|33028|13900
+2030-10-03|1|SD3|Boston, Massachusetts|Boston, Massachusetts|33029|
+2030-10-04|12|SD3|Boston, Massachusetts|Nassau|33030|13200
+2030-10-16|2|SD3|Nassau|Palm Beach|33031|
+2030-10-18|20|SD3|Palm Beach|Palm Beach|33032|20270
+2030-11-07|20|SD3|Palm Beach|Palm Beach|33033|20270
+2030-11-27|20|SD3|Palm Beach|Palm Beach|33034|20270
+2030-12-17|10|SD3|Palm Beach|San Juan|33035|10940
+2030-12-27|9|SD3|San Juan|Palm Beach|33101|10540
+2031-01-05|180|SD3|Palm Beach|London|33102|223440

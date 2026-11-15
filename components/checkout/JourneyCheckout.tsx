@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { niceDate, niceWhen } from "@/lib/booking-live/money";
 import { METHOD_NAMES, NO_PRICE, READINESS, READINESS_ORDER, readiness, type Readiness, cartTotals, fmtMoney, idempotencyKey, ledgerHandoff, lineStatuses, nightsBetween, paymentOptions, pricedAbroad, validLead, verified, type Lead, type Line, type Method, type SimResponse, type Traveler } from "@/lib/checkout/journey";
 import type { Catalogue, Product } from "@/lib/checkout/pilot";
+import { engineUrl } from "@/lib/rates";
 import { JourneyConfigurator, Label, PriceChip, StayConfigurator, VoyageConfigurator, field, slugify, type CardState, type Draft } from "./Configurators";
 
 // The Journey Cart (Booking & Checkout Studio, Session 03): seven screens from choosing stays and a
@@ -62,6 +63,16 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   const top = useRef<HTMLDivElement>(null);
 
   const product = (l: Line): Product => catalogue.products.find((p) => l.productKey === p.key || l.productKey.startsWith(`${p.key}:`)) as Product;
+  // Stays the house booking engine sells: the traveler finishes on ALBIE's own secure checkout, on the same dates and party.
+  const albieUrl = (l: Line): string | null => { const p = product(l); return l.kind === "stay" && p?.type === "stay" && p.pricing === "albie" && p.engineProperty ? engineUrl({ property: p.engineProperty, checkIn: l.start, checkOut: l.end, adults: l.adults, children: 0, rooms: 1, currency: "USD" }) : null; };
+  const albieNote = (l: Line) => (
+    <div className="mt-4 border-t ledger-border pt-4">
+      <p className="ledger-eyebrow">Secure payment · ALBIE by TAG</p>
+      <p className="mt-1.5 text-[14.5px]">{verified(l.price) ? `${fmtMoney(l.price.usdMinor as number, "USD")} for the room, before taxes and fees. ` : ""}VAT is calculated by ALBIE at the next step, where the final total, the initial payment and the balance are shown before you pay. This site takes no payment and sees no card.</p>
+      <a href={albieUrl(l) as string} target="_blank" rel="noopener noreferrer" className="ledger-btn ledger-btn--house mt-3 inline-flex" data-event="checkout_albie_handoff">Continue to secure payment in ALBIE</a>
+      <p className="mt-2 text-[13px] ledger-muted">Opens the house booking engine on your dates, {niceDate(l.start)} to {niceDate(l.end)}, {l.adults} {l.adults === 1 ? "adult" : "adults"}. Choose {l.unit || "your room"}{l.plan ? `, ${l.plan}` : ""} there to finish. Your room is not held until then.</p>
+    </div>
+  );
   const bookable = lines.filter((l) => l.kind !== "experience");
   const totals = useMemo(() => cartTotals(lines), [lines]);
   const adv = advisors.find((a) => a.slug === advisor) ?? advisors[0];
@@ -435,6 +446,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                           })}
                         </div>
                       </fieldset>
+                      {albieUrl(l) && albieNote(l)}
                       {res && "error" in res && <p role="alert" className="mt-3 border-l-2 border-[#8B2525] pl-3 text-[14.5px]">{res.error}</p>}
                       {isPay(res) && res.status === "declined" && <p role="alert" className="mt-3 border-l-2 border-[#8B2525] pl-3 text-[14.5px]">{res.message}</p>}
                     </Panel>
@@ -470,6 +482,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                           <li key={k} className="bg-paper p-4"><p className="ledger-eyebrow">{k}</p><p className="mt-1.5 text-[15.5px] font-medium">{v.label}</p><p className="mt-1 text-[13.5px] ledger-muted">{v.note}</p></li>
                         ))}
                       </ol>
+                      {albieUrl(l) && albieNote(l)}
                       {kids.length > 0 && <p className="mt-3 text-[14.5px]">Experiences requested with this chapter: {kids.map((k) => k.name).join(", ")}. Each is quoted by the house; none is booked.</p>}
                     </Panel>
                   );

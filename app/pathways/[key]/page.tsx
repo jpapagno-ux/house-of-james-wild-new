@@ -20,6 +20,7 @@ import ShipCard from "@/components/ships/ShipCard";
 import { VOYAGE_PATHWAYS_ON } from "@/lib/content/ships/flags";
 import { VOYAGE_LINES, voyageQuestion, voyagesOnPathway } from "@/lib/content/ships/pathways";
 import { vessel } from "@/lib/content/vessels";
+import FarEdge from "@/components/terra-y/FarEdge";
 
 // /pathways/[key]: one Wild Pathway's collection page (Phase 2C). Lists the
 // Ledger records James has APPROVED on it, each under its own canonical card
@@ -33,12 +34,14 @@ export function generateStaticParams() { return PATHWAYS_ON ? PATHWAY_LIST.map((
 export async function generateMetadata({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params; const p = pathway(key);
   if (!p) return {};
-  return buildMetadata({ title: PATHWAY_SEO[p.id].title, description: PATHWAY_SEO[p.id].description, path: `/pathways/${p.key}`, noindex: false /* approved by James, 30 Oct 2026 */ });
+  return buildMetadata({ title: PATHWAY_SEO[p.id].title, description: PATHWAY_SEO[p.id].description, path: `/pathways/${p.key}`, noindex: false /* approved by James, 30 Oct 2026; The Far Edge 15 Nov 2026 */ });
 }
 
 export default async function PathwayPage({ params }: { params: Promise<{ key: string }> }) {
   const { key } = await params; const p = pathway(key);
   if (!PATHWAYS_ON || !p) notFound();
+  // The Far Edge has its own expedition landing (James, 15 Nov 2026), in the Terra Y Polar Chart theme.
+  if (p.id === "PATH-09") return (<><SiteHeader overlay /><FarEdge /></>);
   const items = onPathway(p.id); // approved only
   // 2B: approved voyages and routes, primary first; then vessels filed in the Stay library, which list
   // here as Voyages and never among the stays (lib/content/vessels.ts, 1 Nov 2026).

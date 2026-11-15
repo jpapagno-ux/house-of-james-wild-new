@@ -68,7 +68,7 @@ export const HOUSE_SET = [HOUSE.paper, HOUSE.mist, HOUSE.stone, HOUSE.stoneText,
 
 // Wild Pathways keep their colour only as a small 6px dot beside the printed name (chips are squared
 // graphite outlines). These are the eight dot colours; they never fill a chip, button or band.
-export type DeepSeaKey = "navy" | "ocean" | "cerulean" | "slate" | "teal" | "aqua" | "turquoise" | "seaGlass";
+export type DeepSeaKey = "navy" | "ocean" | "cerulean" | "slate" | "teal" | "aqua" | "turquoise" | "seaGlass" | "polar";
 export type Swatch = { name: string; fill: string; tint: string };
 export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
   navy: { name: "Mulberry (A Place of Our Own)", fill: "#6B3A4E", tint: "#FFFFFF" },
@@ -79,6 +79,7 @@ export const DEEP_SEA: Record<DeepSeaKey, Swatch> = {
   aqua: { name: "Terracotta Rose (Rooted in Place)", fill: "#9C4F45", tint: "#FFFFFF" },
   turquoise: { name: "Forest (Into the Green)", fill: "#2F6B45", tint: "#FFFFFF" },
   seaGlass: { name: "Sage (The Art of Stillness)", fill: "#5F6E58", tint: "#FFFFFF" },
+  polar: { name: "Polar Blue (The Far Edge)", fill: "#1F4A66", tint: "#FFFFFF" },
 };
 
 /** Marks only (never a text fill): the aqua sun of the On the Horizon stamp, on light and on dark grounds. */
@@ -102,3 +103,13 @@ export const WATERS_PALETTE: Record<WatersKey, WatersSet> = {
 /** The waters context a ship or hub takes, by its registry waters key. Sea waters follow the House Standard. */
 // The Mekong (Aqua Mekong, 13 Nov 2026) is a river and takes the By River set until it has a set of its own.
 export const watersTheme = (waters?: string | null): string => (waters === "amazon" || waters === "nile" || waters === "river" ? `theme-waters-${waters}` : waters === "mekong" ? "theme-waters-river" : "");
+
+/** Terra Y, Polar Chart (James, 15 Nov 2026: "colored borders, some faded colors, tints… like that Antarctica nautical
+ *  trip. Remote. Adventurous"). Protected like the river waters and The Exceptional Few: used only inside
+ *  .theme-terra-y (app/globals.css) on the Terra Y dossiers. Polar-night grounds, glacier keylines, faded ice panels,
+ *  and International Orange as the expedition signal (the VIP stamp, the route line, one action), never a ground.
+ *  No browns or tans. Graphite text on the ice tints reaches AA; ice and frost text on Night reaches AA. */
+export const TERRA_Y_POLAR = {
+  night: "#0D1B26", deep: "#14324A", chart: "#2F5D7C", glacier: "#6F9DBA", ice: "#B9D3E1",
+  mist: "#EAF2F6", frost: "#F6FAFC", signal: "#D2531F", signalDeep: "#A63E14",
+};

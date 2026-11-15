@@ -33,8 +33,8 @@
 export type VolumeKey = "stays" | "safaris" | "gatherings" | "voyages" | "europe" | "overland";
 export const VOLUME_KEYS: VolumeKey[] = ["stays", "safaris", "gatherings", "voyages", "europe", "overland"];
 
-export type PathwayId = "PATH-01" | "PATH-02" | "PATH-03" | "PATH-04" | "PATH-05" | "PATH-06" | "PATH-07" | "PATH-08";
-export type PathwayKey = "into-the-green" | "between-tides" | "above-it-all" | "where-the-wild-lives" | "the-art-of-stillness" | "off-the-map" | "a-place-of-our-own" | "rooted-in-place";
+export type PathwayId = "PATH-01" | "PATH-02" | "PATH-03" | "PATH-04" | "PATH-05" | "PATH-06" | "PATH-07" | "PATH-08" | "PATH-09";
+export type PathwayKey = "into-the-green" | "between-tides" | "above-it-all" | "where-the-wild-lives" | "the-art-of-stillness" | "off-the-map" | "a-place-of-our-own" | "rooted-in-place" | "the-far-edge";
 
 export type Pathway = {
   id: PathwayId;
@@ -91,9 +91,16 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
     line: "Working farms, old houses and hosts whose families never left.",
     accent: "#9C4F45", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["europe", "stays", "gatherings"],
   },
+  // The ninth pathway (James, 15 Nov 2026): polar and remote journeys by sea, ice and air, from the Antarctic camps
+  // and the DC-3 to the polar voyages. A deep polar blue, apart from Between Tides' teal and Above It All's slate.
+  "PATH-09": {
+    id: "PATH-09", key: "the-far-edge", name: "The Far Edge", setting: "Polar and remote, by sea, ice and air",
+    line: "Ice camps, polar seas and the small planes and ships that reach the last wild edges.",
+    accent: "#1F4A66", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["voyages", "overland", "stays"],
+  },
 };
 
-export const PATHWAY_ORDER: PathwayId[] = ["PATH-01", "PATH-02", "PATH-03", "PATH-04", "PATH-05", "PATH-06", "PATH-07", "PATH-08"];
+export const PATHWAY_ORDER: PathwayId[] = ["PATH-01", "PATH-02", "PATH-03", "PATH-04", "PATH-05", "PATH-06", "PATH-07", "PATH-08", "PATH-09"];
 export const PATHWAY_LIST: Pathway[] = PATHWAY_ORDER.map((id) => PATHWAYS[id]);
 
 /** Pathway by ID or by key; undefined for anything else (never a silent default). */

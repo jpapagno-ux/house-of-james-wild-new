@@ -16,6 +16,7 @@ export const VOYAGE_LINES: Record<PathwayId, string | null> = {
   "PATH-06": "Remote expedition voyages",
   "PATH-07": "Private yacht and boat charters for your group",
   "PATH-08": "Heritage and cultural river cruises",
+  "PATH-09": "Polar and remote expedition voyages",
 };
 
 const SMALL = new Set(["and", "for", "or", "the", "a", "of", "to", "your"]);

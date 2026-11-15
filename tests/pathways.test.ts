@@ -12,21 +12,21 @@ const lum = (hex: string) => {
 const contrast = (a: string, b: string) => { const [x, y] = [lum(a), lum(b)]; return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
 const WHITE = "#FFFFFF", CARD = "#F4F2EF", INK = "#2E2B28"; // The House Standard: Paper, Stone Mist, Graphite
 
-test("eight pathways, stable IDs, unique keys, names and accents", () => {
-  assert.equal(PATHWAY_ORDER.length, 8);
+test("nine pathways, stable IDs, unique keys, names and accents", () => {
+  assert.equal(PATHWAY_ORDER.length, 9);
   assert.deepEqual(PATHWAY_ORDER, PATHWAY_LIST.map((p) => p.id));
   const uniq = (xs: string[]) => new Set(xs).size === xs.length;
   assert.ok(uniq(PATHWAY_LIST.map((p) => p.key)));
   assert.ok(uniq(PATHWAY_LIST.map((p) => p.name)));
   assert.ok(uniq(PATHWAY_LIST.map((p) => p.accent)), "one accent per pathway");
   for (const p of PATHWAY_LIST) {
-    assert.match(p.id, /^PATH-0[1-8]$/);
+    assert.match(p.id, /^PATH-0[1-9]$/);
     assert.match(p.key, /^[a-z-]+$/);
     for (const v of p.volumes) assert.ok(v in VOLUME_STYLES, `${p.id} volume ${v}`);
   }
   assert.equal(pathway("PATH-04")?.name, "Where the Wild Lives");
   assert.equal(pathway("between-tides")?.id, "PATH-02");
-  assert.equal(pathway("PATH-09"), undefined, "no silent default");
+  assert.equal(pathway("PATH-10"), undefined, "no silent default");
 });
 
 test("pathway accents never collide with the impact palette or the house seal", () => {
@@ -99,13 +99,13 @@ test("the validator catches unsourced and invented impact claims", () => {
   assert.ok(errs.some((e) => /repeated as secondary/.test(e)));
   assert.ok(errs.some((e) => /names no source/.test(e)));
   assert.ok(errs.some((e) => /quotes a figure/.test(e)));
-  assert.ok(Object.keys(PATHWAYS).length === 8);
+  assert.ok(Object.keys(PATHWAYS).length === 9);
 });
 
 test("Phase 2A: the library export wins, the override file fills gaps, and bad library values are ignored", async () => {
   const { mergeRecords } = await import("../lib/pathways.ts");
   const override: PathwayRecord = { slug: "a", ledgerId: "STY-2026-000001", primaryPathway: "PATH-01", secondaryPathways: ["PATH-02"], volumes: ["stays"], setting: "rainforest", intentions: ["canopy"], suitability: ["couples"], classificationStatus: "draft", classifiedBy: "house draft", impact: [{ kind: "habitat", money: "none", statement: "x", source: "y", reviewed: "2026-10-30", status: "partner_reported" }] };
-  const libStay = { slug: "a", ledgerId: "STY-2026-000001", pathway: { primary: "PATH-04", secondary: ["PATH-04", "PATH-09", "PATH-08"], setting: null, intentions: [], suitability: ["families"], status: "approved" as const, classifiedBy: "James", classifiedAt: "2026-11-02" }, volumes: ["safaris", "bogus"] };
+  const libStay = { slug: "a", ledgerId: "STY-2026-000001", pathway: { primary: "PATH-04", secondary: ["PATH-04", "PATH-10", "PATH-08"], setting: null, intentions: [], suitability: ["families"], status: "approved" as const, classifiedBy: "James", classifiedAt: "2026-11-02" }, volumes: ["safaris", "bogus"] };
   const unclassified = { slug: "b", ledgerId: "STY-2026-000002", pathway: null, volumes: ["stays"] };
   const [a] = mergeRecords([libStay, unclassified], [override]);
   assert.equal(a.primaryPathway, "PATH-04", "library primary wins");

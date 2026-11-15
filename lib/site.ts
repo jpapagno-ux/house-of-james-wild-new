@@ -150,6 +150,8 @@ export const VOLUMES: MegaMenu[] = [
     browse: [
       { label: "Field-tested by James", href: "/overland?stamp=field-tested" },
       { label: "Designed by James", href: "/overland?stamp=designed" },
+      { label: "Terra Y: VIP expedition dossiers", href: "/overland/terra-y" },
+      { label: "The Far Edge: polar and remote", href: "/pathways/the-far-edge" },
     ],
     ledger: [],
   },
@@ -247,6 +249,10 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/pathways/between-tides", priority: 0.7, changeFrequency: "weekly" },
   { path: "/pathways/above-it-all", priority: 0.7, changeFrequency: "weekly" },
   { path: "/pathways/where-the-wild-lives", priority: 0.7, changeFrequency: "weekly" },
+  // The Far Edge and Terra Y (approved by James, 15 Nov 2026)
+  { path: "/pathways/the-far-edge", priority: 0.8, changeFrequency: "weekly" },
+  { path: "/overland/terra-y", priority: 0.8, changeFrequency: "weekly" },
+  ...["south-pole-penguins", "south-pole-blue-rivers", "the-long-stay", "baby-penguins-blue-tunnels", "discovery-week", "antarctica-in-a-day", "peru-to-patagonia", "colombia-to-guatemala", "scotland-to-greenland"].map((s) => ({ path: `/overland/terra-y/${s}`, priority: 0.7, changeFrequency: "weekly" as const })),
   { path: "/pathways/the-art-of-stillness", priority: 0.7, changeFrequency: "weekly" },
   { path: "/pathways/off-the-map", priority: 0.7, changeFrequency: "weekly" },
   { path: "/pathways/a-place-of-our-own", priority: 0.7, changeFrequency: "weekly" },

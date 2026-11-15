@@ -20,6 +20,8 @@ const MARK: Record<PathwayId, (x: number) => string> = {
   "PATH-06": (x) => `<circle cx="${x}" cy="125" r="6"/><path d="M${x} 119 l2 6 -2 6 -2 -6z" />`,
   "PATH-07": (x) => `<path d="M${x - 6} 131 v-6 l6-5 6 5 v6z M${x - 2} 131 v-3 h4 v3" />`,
   "PATH-08": (x) => `<path d="M${x} 119 v7 M${x} 126 c-2 2-4 3-6 5 M${x} 126 c2 2 4 3 6 5 M${x} 126 v5" />`,
+  // The Far Edge: a compass star over the ice line
+  "PATH-09": (x) => `<path d="M${x} 118 l1.6 5.4 5.4 1.6 -5.4 1.6 -1.6 5.4 -1.6 -5.4 -5.4 -1.6 5.4 -1.6z" />`,
 };
 
 /** The voyage stamp's own lines (James, 11 Nov 2026: "I thought we had individual, unique pathway stamps for cruises.
@@ -34,6 +36,7 @@ const AT_SEA: Record<PathwayId, string> = {
   "PATH-06": "Remote expedition voyages",
   "PATH-07": "The whole ship, your group",
   "PATH-08": "Heritage river cruises",
+  "PATH-09": "Polar and far-edge voyages",
 };
 /** An anchor, the sea's own mark, on the right of every voyage stamp. */
 const ANCHOR = (x: number) => `<circle cx="${x}" cy="119.5" r="1.8"/><path d="M${x} 121.5 v10 M${x - 3.5} 124 h7 M${x - 6} 128 c1 3 3.5 4 6 4 s5-1 6-4" />`;

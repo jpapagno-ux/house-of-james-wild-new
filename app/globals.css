@@ -379,6 +379,7 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
   --jw-path-06: #4E4660; --jw-path-06-text: #2E2B28; --jw-path-06-tint: #FFFFFF;
   --jw-path-07: #6B3A4E; --jw-path-07-text: #2E2B28; --jw-path-07-tint: #FFFFFF;
   --jw-path-08: #9C4F45; --jw-path-08-text: #2E2B28; --jw-path-08-tint: #FFFFFF;
+  --jw-path-09: #1F4A66; --jw-path-09-text: #2E2B28; --jw-path-09-tint: #FFFFFF;
   /* Where Your Stay Gives Back (the Wild & Co. Impact Note): Stone Mist panel, Graphite copy, Warm Stone text mark (House Standard) */
   --jw-impact-panel: #F4F2EF; --jw-impact-copy: #2E2B28; --jw-impact-highlight: #6B635A;
   /* Character treatments: James annotates in espresso ink with the seal's oxblood; Iggi in a quiet green */
@@ -393,6 +394,7 @@ button:hover .jw-spin, button[aria-expanded="true"] .jw-spin { animation-play-st
 .pathway-06 { --jw-path: var(--jw-path-06); --jw-path-text: var(--jw-path-06-text); --jw-path-tint: var(--jw-path-06-tint); }
 .pathway-07 { --jw-path: var(--jw-path-07); --jw-path-text: var(--jw-path-07-text); --jw-path-tint: var(--jw-path-07-tint); }
 .pathway-08 { --jw-path: var(--jw-path-08); --jw-path-text: var(--jw-path-08-text); --jw-path-tint: var(--jw-path-08-tint); }
+.pathway-09 { --jw-path: var(--jw-path-09); --jw-path-text: var(--jw-path-09-text); --jw-path-tint: var(--jw-path-09-tint); }
 
 /* Stamps and badges on photographs (James, 30 Oct 2026): no paper behind them. The volume's
    stamp re-inks in its light tint so it reads on the picture, presses in as it comes into
@@ -786,3 +788,55 @@ li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in s
 }
 .design-review #experiences, .design-review #location { border-top-color: transparent !important; }
 @media (min-width: 768px) { .design-review #overview, .design-review #experiences, .design-review #location { padding-bottom: 5rem; } }
+
+/* Terra Y, Polar Chart (James, 15 Nov 2026), protected like .theme-waters-*: values = lib/palette.ts TERRA_Y_POLAR.
+   Polar-night covers, glacier keylines, faded ice panels, International Orange as the signal (stamp, route, one action). */
+.theme-terra-y {
+  --ty-night: #0D1B26; --ty-deep: #14324A; --ty-chart: #2F5D7C; --ty-glacier: #6F9DBA; --ty-ice: #B9D3E1;
+  --ty-mist: #EAF2F6; --ty-frost: #F6FAFC; --ty-signal: #D2531F; --ty-signal-deep: #A63E14;
+}
+.theme-terra-y .ty-mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: 0.14em; text-transform: uppercase; }
+/* the nautical chart: a faint graticule of latitude and longitude */
+.theme-terra-y .ty-chart {
+  background-color: var(--ty-frost);
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--ty-glacier) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--ty-glacier) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(to right, color-mix(in srgb, var(--ty-glacier) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--ty-glacier) 7%, transparent) 1px, transparent 1px);
+  background-size: 160px 160px, 160px 160px, 32px 32px, 32px 32px;
+}
+.theme-terra-y .ty-night { background: radial-gradient(120% 80% at 20% 0%, var(--ty-deep), var(--ty-night) 70%); color: var(--ty-frost); }
+.theme-terra-y .ty-fade { -webkit-mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 62%, transparent 100%); mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 62%, transparent 100%); }
+.theme-terra-y .ty-fade-b { -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent); mask-image: linear-gradient(to bottom, #000 70%, transparent); }
+.theme-terra-y .ty-edge-ice { border-left: 6px solid var(--ty-glacier); }
+.theme-terra-y .ty-edge-dc3 { border-left: 6px solid var(--ty-signal); }
+.theme-terra-y .ty-stamp {
+  display: inline-grid; place-items: center; padding: 0.55rem 0.9rem; border: 2px solid var(--ty-signal); outline: 1px solid var(--ty-signal); outline-offset: 3px;
+  color: var(--ty-signal); transform: rotate(-4deg); font-family: 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; line-height: 1.35; text-align: center;
+  -webkit-mask-image: repeating-radial-gradient(circle at 30% 40%, #000 0 2px, rgba(0,0,0,0.82) 2px 3px); mask-image: repeating-radial-gradient(circle at 30% 40%, #000 0 2px, rgba(0,0,0,0.82) 2px 3px);
+}
+.theme-terra-y .ty-outline-num { -webkit-text-stroke: 1.2px var(--ty-chart); color: transparent; font-family: 'Cormorant Garamond', Georgia, serif; }
+.theme-terra-y .ty-btn {
+  display: inline-flex; align-items: center; gap: 0.75rem; height: 52px; padding: 0 1.4rem; border-radius: 2px; background: var(--ty-signal-deep); color: #FFFFFF;
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+}
+.theme-terra-y .ty-btn:hover { background: var(--ty-night); }
+.theme-terra-y .ty-stamp--light { color: var(--ty-signal-deep); border-color: var(--ty-signal-deep); outline-color: var(--ty-signal-deep); }
+.theme-terra-y .ty-btn-line { display: inline-flex; align-items: center; gap: 0.6rem; height: 52px; padding: 0 1.2rem; border-radius: 2px; border: 1px solid currentColor;
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; }
+/* Terra Y route map: the frame, the stop chip and the vehicle */
+.theme-terra-y .ty-map { background: radial-gradient(90% 90% at 50% 40%, var(--ty-deep), var(--ty-night)); border-color: var(--ty-chart); }
+.theme-terra-y .ty-map .maplibregl-ctrl-group { border-radius: 2px; box-shadow: none; border: 1px solid var(--ty-ice); }
+.ty-chip { display: flex; align-items: stretch; pointer-events: none; filter: drop-shadow(0 6px 14px rgba(13, 27, 38, 0.35)); }
+.ty-chip > span { animation: ty-chip-in 0.6s ease-out both; } /* on the parts, never the marker: MapLibre positions it by transform */
+.ty-chip__n { background: #D2531F; color: #FFFFFF; font: 600 10px/1 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: 0.16em; text-transform: uppercase; padding: 9px 9px; border-radius: 2px 0 0 2px; display: flex; align-items: center; white-space: nowrap; }
+.ty-chip__b { background: #0D1B26; color: #F6FAFC; padding: 5px 10px; border-radius: 0 2px 2px 0; display: flex; flex-direction: column; gap: 2px; border: 1px solid #6F9DBA; border-left: 0; }
+.ty-chip__b b { font: 600 13px/1.2 'Manrope', ui-sans-serif, system-ui, sans-serif; white-space: nowrap; }
+.ty-chip__b i { font: 500 9.5px/1.2 'IBM Plex Mono', ui-monospace, monospace; font-style: normal; letter-spacing: 0.1em; color: #B9D3E1; white-space: nowrap; }
+@keyframes ty-chip-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .ty-chip > span { animation: none; } }
+.ty-ride { width: 26px; height: 26px; display: grid; place-items: center; filter: drop-shadow(0 2px 3px rgba(13, 27, 38, 0.45)); }
+.theme-terra-y .ty-chipbtn { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 12px; border: 1px solid var(--ty-ice); border-radius: 2px; background: #FFFFFF; color: var(--ty-night); font: 600 12px/1 'Manrope', ui-sans-serif, system-ui, sans-serif; cursor: pointer; }
+.theme-terra-y .ty-chipbtn[aria-pressed="true"] { background: var(--ty-night); border-color: var(--ty-night); color: var(--ty-frost); }
+.theme-terra-y .ty-chipbtn:focus-visible { outline: 2px solid var(--ty-signal-deep); outline-offset: 2px; }

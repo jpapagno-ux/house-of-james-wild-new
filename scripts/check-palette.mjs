@@ -111,7 +111,7 @@ if (!/:is\(a, button, input, select, textarea, label, summary\)\.rounded-full/.t
 
 // ---------- pathways: graphite chips, colour only as a dot ----------
 const fills = new Set([...pal.matchAll(/fill: "(#[0-9A-F]{6})", tint: "#FFFFFF"/g)].map((m) => m[1]));
-if (fills.size !== 8) errs.push(`lib/palette.ts: expected 8 pathway dot colours (DEEP_SEA) on Paper tints, found ${fills.size}`);
+if (fills.size !== 9) errs.push(`lib/palette.ts: expected 9 pathway dot colours (DEEP_SEA) on Paper tints, found ${fills.size}`);
 const pw = read("lib/pathways.ts");
 for (const m of pw.matchAll(/id: "(PATH-\d\d)"[^]*?accent: "(#\w{6})", text: "(#\w{6})", tint: "(#\w{6})"/g)) {
   const [, id, a, t, ti] = m;

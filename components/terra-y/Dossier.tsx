@@ -25,6 +25,7 @@ export function TyHero({ eyebrow, title, line, image, film, stats, stamp, childr
       <div className="absolute inset-0">
         <Pic src={ty(image.id, 2600)} alt={image.alt} sizes="100vw" priority className="object-cover opacity-80" upscaleUnder={2400} />
         {film && <WideFilmLayer film={{ kind: "mp4", src: tyFilm(film), srcMobile: `${tyFilm(film)}`.replace("q_auto/", "q_auto,w_960/"), poster: tyPoster(film), title, credit: "" }} />}
+        <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, color-mix(in srgb, var(--ty-night) 72%, transparent) 0%, color-mix(in srgb, var(--ty-night) 30%, transparent) 55%, transparent 80%)" }} />
         <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--ty-night) 55%, transparent) 0%, transparent 30%, color-mix(in srgb, var(--ty-night) 35%, transparent) 55%, var(--ty-night) 100%)" }} />
       </div>
       <div className="relative mt-auto max-w-ledger w-full mx-auto px-5 md:px-10 pb-10 md:pb-14 pt-40">
@@ -84,12 +85,12 @@ export function DossierCard({ d }: { d: TyDossier }) {
 export function DayLog({ days, note, file }: { days: TyDay[]; note?: string; file: "ice" | "dc3" }) {
   return (
     <ol className="relative mt-10">
-      <span aria-hidden className="absolute left-[27px] md:left-[43px] top-2 bottom-2 w-[2px]" style={{ background: "repeating-linear-gradient(to bottom, var(--ty-signal) 0 10px, transparent 10px 16px)" }} />
+      <span aria-hidden className="absolute left-[6px] top-2 bottom-2 w-[2px]" style={{ background: "repeating-linear-gradient(to bottom, var(--ty-signal) 0 10px, transparent 10px 16px)" }} />
       {days.map((d, i) => (
         <li key={i} className="relative grid grid-cols-[56px_1fr] md:grid-cols-[88px_1fr] gap-4 md:gap-8 pb-10 md:pb-14">
           <div className="relative">
-            <span className="absolute left-[21px] md:left-[37px] top-3 h-[14px] w-[14px] rotate-45 border-2" style={{ borderColor: "var(--ty-signal)", background: "var(--ty-frost)" }} />
-            <span className="ty-outline-num block text-[2.4rem] md:text-[3.6rem] leading-none pt-8 md:pt-9 select-none" aria-hidden>{d.n}</span>
+            <span className="absolute left-0 top-3 h-[14px] w-[14px] rotate-45 border-2" style={{ borderColor: "var(--ty-signal)", background: "var(--ty-frost)" }} />
+            <span className="ty-outline-num block text-[2.2rem] md:text-[3.4rem] leading-none pl-5 md:pl-7 pt-1 select-none" aria-hidden>{d.n}</span>
           </div>
           <div className={`grid gap-5 ${d.photo ? "md:grid-cols-[1.1fr_1fr]" : ""} items-start`}>
             <div className="bg-white/90 p-5 md:p-6 border" style={{ borderColor: "var(--ty-ice)" }}>

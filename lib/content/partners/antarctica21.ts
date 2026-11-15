@@ -6,6 +6,8 @@ import { POLAR_PATH, POLAR_VOYAGES, STYLES, nightsWords, usd, voyageFrom, voyage
 // Photographs Antarctica21 (no media kit is published; images from its own pages). Left out: the
 // aircraft operator's other name in some image captions (the site does not reconcile it), the
 // airstrip details it does not publish, and Ocean Nova, which Antarctica21 says has left the fleet.
+// Only Antarctica21's own voyages: the polar library also holds other operators' voyages (HX's Antarctic Circle).
+const OWN = POLAR_VOYAGES.filter((v) => v.operator === "Antarctica21");
 const IMG = "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/partners/antarctica21";
 
 export const ANTARCTICA21: Partner = {
@@ -58,10 +60,10 @@ export const ANTARCTICA21: Partner = {
   fleet: ["magellan-explorer", "magellan-discoverer"],
   fleetNote: "Ocean Nova still has a page on Antarctica21's site, which says she has made her final trip and left the fleet.",
   itineraries: {
-    title: `${POLAR_VOYAGES.length} Itineraries, From Air-Cruises to Sea Voyages`,
+    title: `${OWN.length} Itineraries, From Air-Cruises to Sea Voyages`,
     href: POLAR_PATH,
     hrefLabel: "Browse them by trip style, region, length, month and ship",
-    items: POLAR_VOYAGES.map((v) => {
+    items: OWN.map((v) => {
       const from = voyageFrom(v);
       return { name: v.name, href: voyagePath(v.slug), eyebrow: STYLES[v.style].name, line: v.tagline, image: v.hero, price: v.status === "sold-out" ? "Sold out" : from ? `From ${usd(from)}` : null, facts: [["Nights", nightsWords(v).replace(" nights", "")]] };
     }),

@@ -39,11 +39,11 @@ const dates = (l: Line) => (l.start ? `${niceDate(l.start)} to ${niceDate(l.end)
 const party = (l: Line) => `${l.adults} ${l.kind === "voyage" ? (l.adults === 1 ? "guest" : "guests") : l.kind === "journey" ? (l.adults === 1 ? "traveler" : "travelers") : l.adults === 1 ? "adult" : "adults"}`;
 const NO_CARD: CardState = { state: "none", reason: "not_applicable" };
 
-export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, advisorFromLink }: { catalogue: Catalogue; advisors: AdvisorLite[]; assignedAdvisor: string; advisorFromLink: boolean }) {
+export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, advisorFromLink, openKey = null }: { catalogue: Catalogue; advisors: AdvisorLite[]; assignedAdvisor: string; advisorFromLink: boolean; openKey?: string | null }) {
   const [step, setStep] = useState(0);
   const [cartId, setCartId] = useState("pending");
   const [lines, setLines] = useState<Line[]>([]);
-  const [open, setOpen] = useState<string | null>(catalogue.products[0]?.key ?? null);
+  const [open, setOpen] = useState<string | null>(openKey ?? catalogue.products[0]?.key ?? null);
   const [editing, setEditing] = useState<string | null>(null);
   const [card, setCard] = useState<CardState>({ state: "loading" });
   const [lead, setLead] = useState<Lead>({ first: "", last: "", email: "", phone: "", country: "" });
@@ -160,7 +160,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   }
   function restart() { setLines([]); setResults({}); setMethods({}); setCartId(uid()); setLead({ first: "", last: "", email: "", phone: "", country: "" }); setAgreed(false); setOpen(catalogue.products[0]?.key ?? null); go(0); }
 
-  const nextLabel = step === 5 ? (busy ? "Running the simulation" : "Run simulated payments") : step === 0 ? "Review your cart" : `Continue to ${STEPS[step + 1]}`;
+  const nextLabel = step === 5 ? (lines.filter((l) => l.kind !== "experience").every((l) => albieUrl(l)) ? "Continue to Journey Confirmation" : busy ? "Running the simulation" : "Run simulated payments") : step === 0 ? "Review your cart" : `Continue to ${STEPS[step + 1]}`;
   const handoff = step === 6 ? ledgerHandoff({ cartId, lines, lead, party: companions, advisor: adv, externalAdvisor: external, payments: Object.fromEntries(lines.map((l) => [l.id, isPay(results[l.id]) ? (results[l.id] as SimResponse) : null])) }) : null;
 
   const ready = (l: Line) => readiness(l, product(l).policy);
@@ -216,7 +216,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
 
   return (
     <div ref={top} className="max-w-ledger mx-auto px-5 md:px-10 scroll-mt-24">
-      <p role="note" className="border border-dashed border-[#8B2525]/60 px-4 py-2.5 text-[13.5px]"><span className="ledger-id">PREVIEW</span> · Simulation only. No card is asked for, no money moves, nothing is sent to a supplier and nothing is written to the Travel Ledger.</p>
+      <p role="note" className="border border-dashed border-[#8B2525]/60 px-4 py-2.5 text-[13.5px]"><span className="ledger-id">PREVIEW</span> · Stays on the house booking engine show live ALBIE prices and finish on ALBIE&rsquo;s own secure checkout. Everything else is simulated: no card is asked for on this site, no money moves here and nothing is written to the Travel Ledger.</p>
 
       <div className="mt-4 flex items-end justify-between gap-4 lg:hidden">
         <div className="min-w-0 flex-1 md:hidden">
@@ -431,7 +431,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                       <fieldset className="mt-4 border-t ledger-border pt-4">
                         <legend className="sr-only">Payment method for {l.name}</legend>
                         <div className="grid sm:grid-cols-2 gap-3">
-                          {options(l).map((o) => {
+                          {options(l).filter((o) => !albieUrl(l) || o.method === "advisor_assisted").map((o) => {
                             const can = o.available || tester.locked;
                             return (
                               <label key={o.method} className={`block border p-3.5 ${chosen === o.method ? "border-ink bg-paper-card" : "border-[#DCD7D0] bg-paper"} ${can ? "cursor-pointer" : "opacity-70 cursor-not-allowed"}`}>

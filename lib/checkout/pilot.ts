@@ -100,8 +100,47 @@ function journey(t: TripFile, maxTravelers: number): JourneyProduct {
   };
 }
 
+
+// Stays the house booking engine (ALBIE by TAG) sells: live prices at request time, and the traveler finishes on
+// ALBIE's own secure checkout. Engine keys come from each stay's record (lib/content/stays.json, `engine`).
+// The VAT note on Leeu House is what the engine's checkout showed on 15 Nov 2026; the others say only that
+// ALBIE adds its taxes and fees at the next step, since their checkouts have not been read.
+const ALBIE_STAYS: { ledgerId: string; name: string; supplier: string; place: string; vatSeen: boolean; pilotRoom: string | null }[] = [
+  { ledgerId: "STY-2026-000149", name: "Leeu House", supplier: "Leeu Collection", place: "Franschhoek, South Africa", vatSeen: true, pilotRoom: "Classic Room with Terrace" },
+  { ledgerId: "STY-2026-000148", name: "Leeu Estates", supplier: "Leeu Collection", place: "Franschhoek, South Africa", vatSeen: false, pilotRoom: null },
+  { ledgerId: "STY-2026-000145", name: "Le Quartier Fran\u00e7ais", supplier: "Leeu Collection", place: "Franschhoek, South Africa", vatSeen: false, pilotRoom: null },
+  { ledgerId: "STY-2026-000130", name: "Kayumanis Ubud", supplier: "Kayumanis", place: "Ubud, Bali, Indonesia", vatSeen: false, pilotRoom: null },
+  { ledgerId: "STY-2026-000129", name: "Kayumanis Nusa Dua", supplier: "Kayumanis", place: "Nusa Dua, Bali, Indonesia", vatSeen: false, pilotRoom: null },
+  { ledgerId: "STY-2026-000128", name: "Kayumanis Jimbaran", supplier: "Kayumanis", place: "Jimbaran, Bali, Indonesia", vatSeen: false, pilotRoom: null },
+  { ledgerId: "STY-2026-000547", name: "Kayumanis Sanur", supplier: "Kayumanis", place: "Sanur, Bali, Indonesia", vatSeen: false, pilotRoom: null },
+];
+
+function albieStay(a: (typeof ALBIE_STAYS)[number]): StayProduct {
+  const rec = stay(a.ledgerId) as Stay & { engine: string };
+  return {
+    type: "stay", key: rec.slug, slug: rec.slug, ledgerId: rec.ledgerId, name: a.name, supplier: a.supplier, place: a.place,
+    hero: rec.hero, alt: `${a.name}, ${a.place}`, line: rec.tagline, volume: "Stay", unitWord: "Room",
+    pricing: "albie", engineProperty: rec.engine, pilotRoom: a.pilotRoom, units: [], rules: [], currency: "USD", rateSource: "", maxAdults: 4, experiences: rec.experiences?.items ?? [],
+    fees: [
+      a.vatSeen
+        ? { name: "South African VAT", state: "added", note: "Calculated by ALBIE at the next step and added to the room total. The engine prices the room before taxes and fees; on 15 Nov 2026 its checkout showed VAT as one added line." }
+        : { name: "Taxes and fees", state: "added", note: "Calculated by ALBIE at the next step and added to the room total. The engine prices the room before taxes and fees." },
+      { name: "Other mandatory charges", state: "not_on_file", note: "Not itemised in the feed this site reads. The final figure is the one ALBIE shows before you pay." },
+      FLORIDA,
+    ],
+    inclusions: [], exclusions: [],
+    inclusionsNote: "What the rate includes follows the rate plan the booking engine prices (shown on the line). The plan's own inclusion list is not in the feed, so none is printed here.",
+    policy: {
+      payNow: { supported: false, basis: `Paid on the house booking engine (ALBIE by TAG), which collects the payment and settles with ${a.supplier}. The house site takes no payment for this stay.` },
+      deposit: null, depositNote: "Set by the rate plan and shown by ALBIE at its checkout (initial payment and balance due). Not in the feed this site reads.",
+      payAtProperty: { supported: false, basis: `Not stated by ${a.supplier} or by the booking engine feed.` },
+      balance: NOT_ON_FILE, cancellation: "Follows the rate plan the engine prices. The plan's cancellation terms are shown by ALBIE at its checkout.",
+    },
+  };
+}
+
 export function pilotCatalogue(today: string): Catalogue {
-  const leeu = stay("STY-2026-000149"), ellerman = stay("STY-2026-000075"), casali = stay("STY-2026-000650");
+  const ellerman = stay("STY-2026-000075"), casali = stay("STY-2026-000650");
   const ship = explorer as unknown as { slug: string; name: string; ledgerId: string; operator: string; tagline: string; hero: { url: string; alt: string }; cabins: { type: string; size: string | null; beds: string | null }[]; pricesNote: string };
   const eRooms = published("ellerman-house", (r) => !r.basis, 2), eVillas = published("ellerman-house", (r) => Boolean(r.basis), null), cRes = published("casali-di-casole", () => true, null);
 
@@ -132,25 +171,7 @@ export function pilotCatalogue(today: string): Catalogue {
     today,
     fx: Object.fromEntries(Object.entries(fxData.rates).map(([c, rate]) => [c, { rate, date: fxData.date, source: fxData.source }])),
     products: [
-      {
-        type: "stay", key: "leeu-house", slug: leeu.slug, ledgerId: leeu.ledgerId, name: "Leeu House", supplier: "Leeu Collection", place: "Franschhoek, South Africa",
-        hero: leeu.hero, alt: "Leeu House, Franschhoek", line: leeu.tagline, volume: "Stay", unitWord: "Room",
-        pricing: "albie", engineProperty: "leeu-house", pilotRoom: "Classic Room", units: [], rules: [], currency: "USD", rateSource: "", maxAdults: 4, experiences: leeu.experiences.items,
-        fees: [
-          { name: "South African VAT", state: "added", note: "Calculated by ALBIE at the next step and added to the room total. The engine prices the room before taxes and fees; on 15 Nov 2026 its checkout showed VAT as one added line." },
-          { name: "Tourism levy", state: "not_on_file", note: "Not shown as a separate line on the engine's checkout when read on 15 Nov 2026." },
-          { name: "Other mandatory charges", state: "not_on_file", note: "None were itemised on the engine's checkout. The final figure is the one ALBIE shows before you pay." },
-          FLORIDA,
-        ],
-        inclusions: [], exclusions: [],
-        inclusionsNote: "What the rate includes follows the rate plan the booking engine prices (shown on the line). The plan's own inclusion list is not in the feed, so none is printed here.",
-        policy: {
-          payNow: { supported: true, basis: "Paid on the house booking engine (ALBIE by TAG), which collects the payment and settles with Leeu Collection. The house site takes no payment for this stay: you continue to ALBIE's secure checkout, where the taxes are added and the final total is shown." },
-          deposit: null, depositNote: "Set by the rate plan and shown by ALBIE at its checkout (initial payment and balance due). Not in the feed this site reads.",
-          payAtProperty: { supported: false, basis: "Not stated by Leeu Collection or by the booking engine feed." },
-          balance: NOT_ON_FILE, cancellation: "Follows the rate plan the engine prices. The plan's cancellation terms are not in the feed.",
-        },
-      },
+      ...ALBIE_STAYS.map(albieStay),
       { ...ellermanBase, key: "ellerman-house", name: "Ellerman House", line: ellerman.tagline, volume: "Stay", unitWord: "Room category", units: eRooms.units, rules: eRooms.rules, maxAdults: 2, experiences: ellerman.experiences.items },
       { ...ellermanBase, key: "ellerman-house-villas", name: "Ellerman House Villas", line: "Villa One and Villa Two, below the house: each taken whole, with a private chef and hospitality team.", volume: "Residence", unitWord: "Villa", units: eVillas.units, rules: eVillas.rules, maxAdults: 10, experiences: [] },
       {
@@ -195,3 +216,5 @@ export function pilotCatalogue(today: string): Catalogue {
 
 /** Slugs the preview rate-card route may read. */
 export const CARD_SLUGS = ["ellerman-house", "leeu-house"];
+/** Product keys the preview can open directly with ?open=. */
+export const ALBIE_KEYS = ALBIE_STAYS.map((a) => stay(a.ledgerId).slug);

@@ -370,12 +370,12 @@ export type TyStop = { name: string; lat: number; lng: number; mode: "air" | "gr
 
 const S = {
   capeTown: { name: "Cape Town", lat: -33.92, lng: 18.42, zoom: 8 },
-  wolfsFang: { name: "Wolf's Fang Runway", lat: -71.53, lng: 8.84, zoom: 8 },
-  echo: { name: "Echo Base", lat: -71.5464, lng: 8.8364, zoom: 8.5 },
-  explorer: { name: "Explorer Camp", lat: -71.5269, lng: 8.8556, zoom: 8.5 },
-  whichaway: { name: "Whichaway Camp", lat: -70.8, lng: 11.3833, zoom: 8.5 },
+  wolfsFang: { name: "Wolf's Fang Runway", lat: -71.53, lng: 8.84, zoom: 6.8 },
+  echo: { name: "Echo Base", lat: -71.5464, lng: 8.8364, zoom: 6.8 },
+  explorer: { name: "Explorer Camp", lat: -71.5269, lng: 8.8556, zoom: 6.8 },
+  whichaway: { name: "Whichaway Camp", lat: -70.8, lng: 11.3833, zoom: 6.8 },
   schirmacher: { name: "Blue Rivers, Schirmacher Oasis", lat: -70.75, lng: 11.6, zoom: 9.5 },
-  atka: { name: "Atka Bay Emperor colony", lat: -70.6, lng: -8.0, zoom: 8 },
+  atka: { name: "Atka Bay Emperor colony", lat: -70.6, lng: -8.0, zoom: 6.5 },
   dixies: { name: "Dixie's Camp, 83° S", lat: -83.0, lng: 8.84, zoom: 6 },
   pole: { name: "The South Pole, 90° S", lat: -89.99, lng: 0, zoom: 5 },
 };

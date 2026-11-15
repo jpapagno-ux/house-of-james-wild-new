@@ -788,3 +788,40 @@ li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in s
 }
 .design-review #experiences, .design-review #location { border-top-color: transparent !important; }
 @media (min-width: 768px) { .design-review #overview, .design-review #experiences, .design-review #location { padding-bottom: 5rem; } }
+
+/* Terra Y, Polar Chart (James, 15 Nov 2026), protected like .theme-waters-*: values = lib/palette.ts TERRA_Y_POLAR.
+   Polar-night covers, glacier keylines, faded ice panels, International Orange as the signal (stamp, route, one action). */
+.theme-terra-y {
+  --ty-night: #0D1B26; --ty-deep: #14324A; --ty-chart: #2F5D7C; --ty-glacier: #6F9DBA; --ty-ice: #B9D3E1;
+  --ty-mist: #EAF2F6; --ty-frost: #F6FAFC; --ty-signal: #D2531F; --ty-signal-deep: #A63E14;
+}
+.theme-terra-y .ty-mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: 0.14em; text-transform: uppercase; }
+/* the nautical chart: a faint graticule of latitude and longitude */
+.theme-terra-y .ty-chart {
+  background-color: var(--ty-frost);
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--ty-glacier) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--ty-glacier) 16%, transparent) 1px, transparent 1px),
+    linear-gradient(to right, color-mix(in srgb, var(--ty-glacier) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--ty-glacier) 7%, transparent) 1px, transparent 1px);
+  background-size: 160px 160px, 160px 160px, 32px 32px, 32px 32px;
+}
+.theme-terra-y .ty-night { background: radial-gradient(120% 80% at 20% 0%, var(--ty-deep), var(--ty-night) 70%); color: var(--ty-frost); }
+.theme-terra-y .ty-fade { -webkit-mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 62%, transparent 100%); mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 62%, transparent 100%); }
+.theme-terra-y .ty-fade-b { -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent); mask-image: linear-gradient(to bottom, #000 70%, transparent); }
+.theme-terra-y .ty-edge-ice { border-left: 6px solid var(--ty-glacier); }
+.theme-terra-y .ty-edge-dc3 { border-left: 6px solid var(--ty-signal); }
+.theme-terra-y .ty-stamp {
+  display: inline-grid; place-items: center; padding: 0.55rem 0.9rem; border: 2px solid var(--ty-signal); outline: 1px solid var(--ty-signal); outline-offset: 3px;
+  color: var(--ty-signal); transform: rotate(-4deg); font-family: 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: 0.2em; text-transform: uppercase; font-size: 11px; line-height: 1.35; text-align: center;
+  -webkit-mask-image: repeating-radial-gradient(circle at 30% 40%, #000 0 2px, rgba(0,0,0,0.82) 2px 3px); mask-image: repeating-radial-gradient(circle at 30% 40%, #000 0 2px, rgba(0,0,0,0.82) 2px 3px);
+}
+.theme-terra-y .ty-outline-num { -webkit-text-stroke: 1.2px var(--ty-chart); color: transparent; font-family: 'Cormorant Garamond', Georgia, serif; }
+.theme-terra-y .ty-btn {
+  display: inline-flex; align-items: center; gap: 0.75rem; height: 52px; padding: 0 1.4rem; border-radius: 2px; background: var(--ty-signal-deep); color: #FFFFFF;
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase;
+}
+.theme-terra-y .ty-btn:hover { background: var(--ty-night); }
+.theme-terra-y .ty-stamp--light { color: var(--ty-signal-deep); border-color: var(--ty-signal-deep); outline-color: var(--ty-signal-deep); }
+.theme-terra-y .ty-btn-line { display: inline-flex; align-items: center; gap: 0.6rem; height: 52px; padding: 0 1.2rem; border-radius: 2px; border: 1px solid currentColor;
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; }

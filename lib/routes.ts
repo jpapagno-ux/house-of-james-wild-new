@@ -35,6 +35,8 @@ export const BUILT: string[] = [
   // Wild Pathways: on site-wide since the Voyages launch; NEXT_PUBLIC_PATHWAYS=off removes them.
   ...(process.env.NEXT_PUBLIC_PATHWAYS !== "off" ? ["/pathways", "/pathways/*"] : []),
   // Journeys and voyages from James's route files (lib/content/trips)
+  "/overland/terra-y", // Terra Y dossiers (James, 15 Nov 2026), noindex until approved
+  "/overland/terra-y/*",
   "/overland/costa-rica/two-oceans-one-volcano",
   "/overland/costa-rica/the-original-costa-route-7-days",
   "/overland/costa-rica/the-original-costa-route-10-days",

@@ -103,3 +103,13 @@ export const WATERS_PALETTE: Record<WatersKey, WatersSet> = {
 /** The waters context a ship or hub takes, by its registry waters key. Sea waters follow the House Standard. */
 // The Mekong (Aqua Mekong, 13 Nov 2026) is a river and takes the By River set until it has a set of its own.
 export const watersTheme = (waters?: string | null): string => (waters === "amazon" || waters === "nile" || waters === "river" ? `theme-waters-${waters}` : waters === "mekong" ? "theme-waters-river" : "");
+
+/** Terra Y, Polar Chart (James, 15 Nov 2026: "colored borders, some faded colors, tints… like that Antarctica nautical
+ *  trip. Remote. Adventurous"). Protected like the river waters and The Exceptional Few: used only inside
+ *  .theme-terra-y (app/globals.css) on the Terra Y dossiers. Polar-night grounds, glacier keylines, faded ice panels,
+ *  and International Orange as the expedition signal (the VIP stamp, the route line, one action), never a ground.
+ *  No browns or tans. Graphite text on the ice tints reaches AA; ice and frost text on Night reaches AA. */
+export const TERRA_Y_POLAR = {
+  night: "#0D1B26", deep: "#14324A", chart: "#2F5D7C", glacier: "#6F9DBA", ice: "#B9D3E1",
+  mist: "#EAF2F6", frost: "#F6FAFC", signal: "#D2531F", signalDeep: "#A63E14",
+};

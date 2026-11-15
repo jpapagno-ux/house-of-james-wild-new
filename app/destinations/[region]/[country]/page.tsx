@@ -80,6 +80,8 @@ function EFCountry({ path, name }: { path: string; name: string }) {
 import { countryLayoutOn, liveBoardOn, showDrafts } from "@/lib/content/country-layout";
 import { liveBoard } from "@/lib/content/board";
 import { atlasOn } from "@/components/maps/terrain/flag";
+import { SketchPlate } from "@/components/about/Sketchbook";
+import { sketchForCountry } from "@/lib/content/founder-sketchbook";
 
 // /destinations/[region]/[country]: the country page. Hero slider + counts ›
 // region/country bar › the Ledger chart map (every stay, linked) › in short ›
@@ -449,6 +451,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             </section>
           )}
 
+          {sketchForCountry(c.slug) && <SketchPlate s={sketchForCountry(c.slug)!} />}
           <WhenToGo place={c.name} rows={c.months} airports={airports} transfers={transfers} ledger={hubs.length > 0} />
           <WhoPlans where={{ countrySlug: c.slug, regionSlug: c.region }} place={c.name} />
           {IGGI_ON && <IggiPanel ctx={{ entityType: "destination", entitySlug: c.slug, countrySlug: c.slug, regionSlug: c.region, ledgerId: c.ledgerId ?? null, sourcePage: path, volume: c.region === "europe" ? "europe" : "stays" }} heading={`Ask Iggi about ${c.name}`} />}

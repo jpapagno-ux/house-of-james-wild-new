@@ -82,6 +82,8 @@ import { isBuilt } from "@/lib/routes";
 import { RESERVES } from "@/lib/content/reserves";
 import GatewayNight from "@/components/stays/GatewayNight";
 import EuropePlate from "@/components/stays/EuropePlate";
+import { SketchPlate } from "@/components/about/Sketchbook";
+import { sketchForStay } from "@/lib/content/founder-sketchbook";
 import { EUROPE_PLATES } from "@/lib/content/europe-plates";
 import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, imageObject, lodging, touristTrip } from "@/lib/schema";
@@ -366,6 +368,7 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           {tight && <WhyWhoVerdict name={s.name} why={s.why} vetted={`${status ?? `Vetted by the house${s.ledgerId ? ` · ${s.ledgerId}` : ""}`}${(stamp === "Field verified" || stamp === "Founder favorite") && CHOSEN["in-01"] ? ` · “${CHOSEN["in-01"]}” JW` : ""}`} whoFor={s.facts.who_its_for ?? null} suited={suited.length ? suited : bestFor} thinkTwice={twice} verdict={verdict ? { line: verdict.text[0], by: `James Wild · ${verdict.where}, ${verdict.when}` } : founderLine(`stay:${s.slug}`) ? { line: founderLine(`stay:${s.slug}`)!.line, by: `James Wild · ${founderLine(`stay:${s.slug}`)!.where}, ${founderLine(`stay:${s.slug}`)!.when}`, short: true } : null} planHref={planHref} />}
           <Overview quote={tight ? undefined : s.quote ?? undefined} answer={answer} facts={tight && !card ? facts.filter(([k]) => !inOpening.has(k)) : facts} paragraphs={overviewParas} card={card} lead={s.tagline} name={s.name} ledgerId={s.ledgerId} volume={safariVol ? "safaris" : "stays"} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
+          {sketchForStay(s.slug) && <SketchPlate s={sketchForStay(s.slug)!} />}
           {!(tight && verdict) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof eyebrow={VETTED_UNVISITED.has(s.slug) ? "Founder vetted · not yet visited" : FOUNDER_EYEBROW[safariVol ? "safaris" : s.volumes?.includes("gatherings") && /\b(house|residence|villa|estate|farm|ranch|island)\b/i.test(s.name) ? "gatherings" : "stays"]} proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}className="mt-10 max-w-3xl"  signed={card} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : null} mark={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={150} /> : undefined} />}
           {/* The house entrance order (James, 10 Nov 2026: "the verdict seems to be way at the bottom ... tighten this up to
               get the user more information about why, where, and how to get there"): why (the verdict, then the facts

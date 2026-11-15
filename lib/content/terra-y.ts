@@ -358,3 +358,55 @@ export const TY_CAMPS = [
 
 export const tyDossier = (slug: string) => TY_DOSSIERS.find((d) => d.slug === slug) ?? null;
 export const tyUsd = (n: number) => `US $${n.toLocaleString("en-US")}`;
+
+// ---------- the route maps (James, 15 Nov 2026: "animate Terra Y… a chip of each location as the map scrolls along,
+// and the boats or the planes must not go through the islands") ----------
+// Every leg is flown except where noted: air legs draw as great-circle arcs (an aircraft crosses land; that is the
+// point of the DC-3), ground legs straight, and the one sea leg, Kulusuk to Tasiilaq by boat, is routed round the
+// islands by scripts/sealanes.py on the OSM coastline (scripts/data/coast/east-greenland.geojson), never across them.
+// Camp, Pole and Dixie's positions are White Desert's own; Dixie's Camp sits at 83° S on the Pole meridian from
+// the camps (White Desert gives the latitude only), Atka Bay and towns at their own positions.
+export type TyStop = { name: string; lat: number; lng: number; mode: "air" | "ground" | "sea"; days: string[]; zoom?: number; path?: [number, number][] };
+
+const S = {
+  capeTown: { name: "Cape Town", lat: -33.92, lng: 18.42, zoom: 8 },
+  wolfsFang: { name: "Wolf's Fang Runway", lat: -71.53, lng: 8.84, zoom: 8 },
+  echo: { name: "Echo Base", lat: -71.5464, lng: 8.8364, zoom: 8.5 },
+  explorer: { name: "Explorer Camp", lat: -71.5269, lng: 8.8556, zoom: 8.5 },
+  whichaway: { name: "Whichaway Camp", lat: -70.8, lng: 11.3833, zoom: 8.5 },
+  schirmacher: { name: "Blue Rivers, Schirmacher Oasis", lat: -70.75, lng: 11.6, zoom: 9.5 },
+  atka: { name: "Atka Bay Emperor colony", lat: -70.6, lng: -8.0, zoom: 8 },
+  dixies: { name: "Dixie's Camp, 83° S", lat: -83.0, lng: 8.84, zoom: 6 },
+  pole: { name: "The South Pole, 90° S", lat: -89.99, lng: 0, zoom: 5 },
+};
+type P = { name: string; lat: number; lng: number; zoom?: number };
+const at = (p: P, mode: TyStop["mode"], ...days: string[]): TyStop => ({ ...p, mode, days });
+
+export const TY_ROUTES: Record<string, TyStop[]> = {
+  "south-pole-penguins": [at(S.capeTown, "air"), at(S.echo, "air", "01"), at(S.atka, "air", "02"), at(S.echo, "air", "03"), at(S.dixies, "air"), at(S.pole, "air", "04"), at(S.dixies, "air", "05"), at(S.echo, "air", "06", "07"), at(S.capeTown, "air", "08")],
+  "south-pole-blue-rivers": [at(S.capeTown, "air"), at(S.echo, "air", "01", "02"), at(S.dixies, "air"), at(S.pole, "air", "03"), at(S.dixies, "air", "04"), at(S.echo, "air", "05"), at(S.schirmacher, "ground", "06"), at(S.whichaway, "ground", "07"), at(S.capeTown, "air", "08")],
+  "the-long-stay": [at(S.capeTown, "air"), at(S.whichaway, "air", "01", "02", "03"), at(S.dixies, "air"), at(S.pole, "air", "04"), at(S.dixies, "air"), at(S.echo, "air", "05", "06", "07"), at(S.capeTown, "air", "08")],
+  "baby-penguins-blue-tunnels": [at(S.capeTown, "air"), at(S.whichaway, "air", "01", "02"), at(S.atka, "air", "03"), at(S.whichaway, "air", "04", "05"), at(S.capeTown, "air", "06")],
+  "discovery-week": [at(S.capeTown, "air"), at(S.explorer, "air", "01", "02", "03", "04"), at(S.schirmacher, "air", "05"), at(S.explorer, "air", "06"), at(S.capeTown, "air", "07")],
+  "antarctica-in-a-day": [at(S.capeTown, "air", "00"), at(S.wolfsFang, "air", "01", "02", "03"), at(S.capeTown, "air")],
+  "peru-to-patagonia": [
+    at({ name: "Lima", lat: -12.05, lng: -77.05, zoom: 9 }, "air", "Lima"), at({ name: "Chachapoyas", lat: -6.22, lng: -77.87, zoom: 9 }, "air", "Chachapoyas"),
+    at({ name: "Paracas", lat: -13.83, lng: -76.25, zoom: 9 }, "air", "Paracas"), at({ name: "Atacama", lat: -22.91, lng: -68.2, zoom: 9 }, "air", "Atacama"),
+    at({ name: "Chiloé", lat: -42.48, lng: -73.77, zoom: 9 }, "air", "Chiloé"), at({ name: "Torres del Paine", lat: -51.0, lng: -72.92, zoom: 9 }, "air", "Patagonia"),
+  ],
+  "colombia-to-guatemala": [
+    at({ name: "Medellín", lat: 6.25, lng: -75.57, zoom: 10 }, "air", "Medellín"), at({ name: "San Agustín", lat: 1.88, lng: -76.27, zoom: 10 }, "air", "San Agustín"),
+    at({ name: "La Macarena", lat: 2.18, lng: -73.79, zoom: 10 }, "air", "La Macarena"), at({ name: "Los Llanos", lat: 4.9, lng: -71.4, zoom: 7 }, "air", "Los Llanos"),
+    at({ name: "Providencia", lat: 13.35, lng: -81.37, zoom: 11 }, "air", "Providencia"), at({ name: "Uaxactún", lat: 17.39, lng: -89.63, zoom: 10 }, "air", "Uaxactún"),
+    at({ name: "Antigua", lat: 14.56, lng: -90.73, zoom: 11 }, "air", "Antigua"),
+  ],
+  "scotland-to-greenland": [
+    at({ name: "Edinburgh", lat: 55.95, lng: -3.19, zoom: 10 }, "air", "Edinburgh"), at({ name: "The Faroes", lat: 62.07, lng: -7.27, zoom: 9 }, "air", "The Faroes"),
+    at({ name: "Snæfellsnes", lat: 64.8, lng: -23.77, zoom: 8.5 }, "air", "Snæfellsnes"), at({ name: "Kulusuk", lat: 65.57, lng: -37.18, zoom: 10 }, "air"),
+    { name: "Tasiilaq, by boat", lat: 65.61, lng: -37.64, mode: "sea", zoom: 10, days: ["East Greenland"], path: [[-37.18, 65.57], [-37.1784, 65.5811], [-37.1827, 65.5829], [-37.1611, 65.6078], [-37.1697, 65.6185], [-37.1956, 65.6327], [-37.2128, 65.6398], [-37.2257, 65.6416], [-37.2601, 65.6398], [-37.4711, 65.59], [-37.5399, 65.5793], [-37.5787, 65.5793], [-37.5873, 65.5811], [-37.5959, 65.5847], [-37.6002, 65.59], [-37.5916, 65.5953], [-37.5916, 65.5989], [-37.6002, 65.6025], [-37.64, 65.61]] },
+    at({ name: "DYE-2, the ice sheet", lat: 66.48, lng: -46.3, zoom: 7 }, "air"), at({ name: "Ilulissat", lat: 69.22, lng: -51.1, zoom: 10 }, "air", "Ilulissat"),
+    at({ name: "Nuuk fjord", lat: 64.18, lng: -51.72, zoom: 9 }, "air", "Nuuk fjord"),
+  ],
+};
+/** The route stop a day card belongs to: White Desert days by number, Echo Charlie stops by title. */
+export const stopForDay = (slug: string, d: { n: string; title: string }) => (TY_ROUTES[slug] ?? []).findIndex((s) => s.days.includes(d.n) || s.days.includes(d.title));

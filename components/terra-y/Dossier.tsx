@@ -82,17 +82,17 @@ export function DossierCard({ d }: { d: TyDossier }) {
   );
 }
 
-export function DayLog({ days, note, file }: { days: TyDay[]; note?: string; file: "ice" | "dc3" }) {
+export function DayLog({ days, note, file, stopOf, compact = false }: { days: TyDay[]; note?: string; file: "ice" | "dc3"; stopOf?: (d: TyDay) => number; compact?: boolean }) {
   return (
     <ol className="relative mt-10">
       <span aria-hidden className="absolute left-[6px] top-2 bottom-2 w-[2px]" style={{ background: "repeating-linear-gradient(to bottom, var(--ty-signal) 0 10px, transparent 10px 16px)" }} />
       {days.map((d, i) => (
-        <li key={i} className="relative grid grid-cols-[56px_1fr] md:grid-cols-[88px_1fr] gap-4 md:gap-8 pb-10 md:pb-14">
+        <li key={i} data-ty-stop={stopOf ? stopOf(d) : undefined} className="relative grid grid-cols-[56px_1fr] md:grid-cols-[88px_1fr] gap-4 md:gap-8 pb-10 md:pb-14">
           <div className="relative">
             <span className="absolute left-0 top-3 h-[14px] w-[14px] rotate-45 border-2" style={{ borderColor: "var(--ty-signal)", background: "var(--ty-frost)" }} />
             <span className="ty-outline-num block text-[2.2rem] md:text-[3.4rem] leading-none pl-5 md:pl-7 pt-1 select-none" aria-hidden>{d.n}</span>
           </div>
-          <div className={`grid gap-5 ${d.photo ? "md:grid-cols-[1.1fr_1fr]" : ""} items-start`}>
+          <div className={`grid gap-5 ${d.photo && !compact ? "md:grid-cols-[1.1fr_1fr]" : ""} items-start`}>
             <div className="bg-white/90 p-5 md:p-6 border" style={{ borderColor: "var(--ty-ice)" }}>
               <p className="ty-mono text-[10px]" style={{ color: "var(--ty-chart)" }}>{file === "dc3" ? `${d.n} ${d.n === "1" ? "night" : "nights"}` : d.n === "00" ? "Before" : `Day ${d.n}`} · {d.place}</p>
               <h3 className="ledger-display text-[1.55rem] md:text-[1.8rem] leading-tight mt-1" style={{ color: "var(--ty-night)" }}>{d.title}</h3>

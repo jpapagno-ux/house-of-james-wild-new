@@ -190,6 +190,7 @@ export const BUILT: string[] = [
   "/destinations/oceania/australia/lord-howe-island",
   "/destinations/oceania/new-zealand/taupo",
   "/destinations/oceania/new-zealand/northland",
+  "/destinations/oceania/new-zealand/central-otago",
   "/destinations/south-america/chile/patagonia",
   "/destinations/europe/slovenia/ljubljana",
   "/destinations/europe/slovenia/logar-valley",

@@ -82,7 +82,7 @@ export default function FleetBrowser({ items, sections, pathwayNames, credits }:
           <section key={sec.operator} className={`mt-8 md:mt-10 ${vis.length ? "" : "hidden"}`} aria-label={sec.operator}>
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b ledger-rule pb-2">
               <h3 className="ledger-display text-[24px] md:text-[28px] leading-tight">{sec.operator} <span className="text-[15px] ledger-muted font-normal">{mine.length} {mine.length === 1 ? "ship" : "ships"}</span></h3>
-              {sec.href && <Link href={sec.href} className="inline-flex items-center gap-1.5 min-h-[44px] text-[14px] underline-offset-4 hover:underline">Who are {sec.operator}?<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>}
+              {sec.href && <Link href={sec.href} className="inline-flex items-center gap-1.5 min-h-[44px] text-[14px] underline-offset-4 hover:underline">Who is {sec.operator}?<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>}
             </div>
             <p className="mt-2 text-[14.5px] ledger-muted max-w-3xl">{sec.line}</p>
             {sec.tiers.map((t) => {

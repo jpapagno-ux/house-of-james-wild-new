@@ -56,7 +56,7 @@ export default function PartnerPage({ p }: { p: Partner }) {
           {p.founder && <FounderProof proof={p.founder.proof} eyebrow={p.founder.eyebrow} className="mt-10 max-w-3xl" />}
 
           <section className={SEC} aria-labelledby="who-h">
-            <SectionHead eyebrow="Who they are" title={`Who Are ${p.name}?`} icon="mountain-sun" />
+            <SectionHead eyebrow="Who they are" title={`Who Is ${p.name}?`} icon="mountain-sun" />
             <div className="mt-6 grid lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-12">
               <dl className="border-t ledger-rule">
                 {p.who.facts.map(([k, v]) => <div key={k} className="grid sm:grid-cols-[9rem_minmax(0,1fr)] gap-x-4 gap-y-0.5 py-3 border-b ledger-rule"><dt className="ledger-eyebrow">{k}</dt><dd className="text-[15.5px] leading-relaxed">{v}</dd></div>)}

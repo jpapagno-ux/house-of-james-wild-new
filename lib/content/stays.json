@@ -21867,14 +21867,14 @@
   },
   {
    "slug": "ja-manufaru-maldives",
-   "name": "JA Manafaru Maldives \nLuxury Island Residences",
+   "name": "JA Manafaru Maldives",
    "ledgerId": "STY-2026-000120",
    "country": "Maldives",
    "countrySlug": "maldives",
    "regionSlug": "asia",
    "misfiled": null,
-   "category": "hotel",
-   "tagline": "Secluded Splendor: Authentic Island Luxury at the Edge of the World",
+   "category": "resort",
+   "tagline": "A natural island in the Haa Alifu Atoll, far north, with water villas facing sunrise and sunset, family pool villas and a treehouse restaurant",
    "quote": "Discover yourself in the sea breeze this island isn't just an escape, it's a doorway to transformation.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f31157fec_b9999ad3b_685db52b855bdf3477c4c856_hero-image-JAmanufaru.jpg",
    "gallery": [
@@ -21902,22 +21902,20 @@
    "airportDirections": "Fly into MLE, then seaplane transfer (~60 min) directly to the island. Alternatively fly domestic to DRV (~35 min), followed by speedboat (~30 min). Seaplane from MLE offers panoramas and convenience.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Sunrise Water Villa with Infinity Pool",
-     "Sunset Water Villa with Infinity Pool",
-     "Beach Villa with Private Pool",
-     "2‑ & 3‑Bedroom Beach Residences with Family Pools"
-    ]
+    "paras": [
+     "Sunrise Water Villa with Infinity Pool and Sunset Water Villa with Infinity Pool.",
+     "Beach Villa with Private Pool; Deluxe Beach Villa with Private Family Pool; Deluxe Garden Villa with Family Private Pool; 2 Bedroom Interconnecting Beach Villas.",
+     "Residences: 2 Bedroom Grand Ocean Residence, 2 Bedroom Manafaru Residence, 3 Bedroom Royal Beach Residence."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Guided snorkeling & diving with vibrant reefs",
-     "",
-     "PADI-certified dive center",
-     "Water sports,",
-     "Night cruises, cooking classes & romantic beach picnics"
+     "Reef diving and lagoon adventures",
+     "Kids Club and arcade",
+     "Calm Spa Sanctuary: healing rituals, yoga and wellbeing treatments",
+     "Lagoon pool, tennis and a futsal pitch"
     ]
    },
    "features": {
@@ -33858,99 +33856,6 @@
    "placeSlug": null
   },
   {
-   "slug": "nautilus-maldives",
-   "name": "Nautilus Maldives",
-   "ledgerId": "STY-2026-000178",
-   "country": "Maldives",
-   "countrySlug": "maldives",
-   "regionSlug": "asia",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "“Live Unscripted. Your Island. Your Way.”",
-   "quote": "Because in a world moving fast, you deserve a place where time stands still, your own barefoot luxury hideaway, where every detail is shaped around you.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8420acb08_2875cd5d0_6925a0bf3ecfc31d5ccb992e_Untitled-design-62.png",
-   "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a4692fc3d_aac15ce3f_69259da4195410c5d4a58dc0_2.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eb639e8ca_05f3b052f_69259da4abe970cc915048f3_Dinner-blog.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e74e7c71_d166d9524_69259caa2f4eac43ffcf8de2_TNM-beach-houses-and-residences.png",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f25e8f52_80215fc94_69259da4308aa8d38e3a54ab_TNM-beach-houses-and-residences-4.png",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/51bcb204a_ae2d7c9d2_69259da411132ce9a6c5bc38_494782994.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fbecffd75_0bb8b135b_69259d8cb9baa19390ddd89d_og-image-beach-house.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dfaaa822f_b4a85974b_69259da49e800ce5684d0a3c_og-image-beach-recidence.jpg"
-   ],
-   "bestMonths": "Aril - Nov",
-   "bestMonthsNote": "These months generally feature the driest weather, calm seas, warm sunshine and excellent visibility for snorkelling and diving. It’s perfect for both exploring the marine environment and relaxing in luxury.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": 5.23862,
-    "lng": 73.22098
-   },
-   "airport": "Velana International Airport (MLE)",
-   "airportDirections": "Approximately 30 minutes by seaplane from Velana International Airport.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [],
-    "items": [
-     "Ocean House with Private Pool",
-     "Beach House with Private Pool",
-     "Beach Residence with Private Pool",
-     "Ocean Residence with Private Pool",
-     "The Nautilus Retreat with Private Pool",
-     "The Nautilus Mansion with Private Pool"
-    ]
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Private yacht breakfast",
-     "Sandbank barbecue under stars",
-     "Sunrise yoga on the beach",
-     "Snorkelling in a UNESCO Biosphere",
-     "Over-water spa treatments.Kids’ Young Wonderers immersive club"
-    ]
-   },
-   "features": {
-    "paras": [
-     "Dedicated 24/7 House Master for each villa. “Unscripted dining” – no set timings, dress codes, or menus. Private pool in every accommodation. All-inclusive non-motorised water sports and daily sunrise yoga. Located within the UNESCO biosphere of Baa Atoll. Children’s club and family-friendly large residences"
-    ],
-    "items": []
-   },
-   "onlyHere": [
-    "With just 26 houses and residences, every stay becomes personal, private, and tailored. Bask in barefoot elegance on white sand fringed by coral-rich lagoon, dive into a world of vibrant marine life, and dine whenever the mood strikes. Here, you are at ease. Time stands still."
-   ],
-   "why": [
-    {
-     "title": null,
-     "body": "Bespoke Private-Island Elegance in the Maldives. For travellers seeking more than just a resort stay, The Nautilus offers a deeply personalised experience in absolute seclusion"
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-02",
-    "secondary": [],
-    "setting": "baa_atoll",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays"
-   ],
-   "arrivalHubIds": [
-    "6ae6974d4fb5d85162de5ae2"
-   ],
-   "placeSlug": null
-  },
-  {
    "slug": "nay-palad-hideaway",
    "name": "Nay Palad Hideaway",
    "ledgerId": "STY-2026-000179",
@@ -35577,25 +35482,22 @@
   },
   {
    "slug": "niyama-private-islands-maldives",
-   "name": "Niyama Private Islands \n Maldives",
+   "name": "Niyama Private Islands Maldives",
    "ledgerId": "STY-2026-000190",
    "country": "Maldives",
    "countrySlug": "maldives",
    "regionSlug": "asia",
    "misfiled": null,
-   "category": "hotel",
-   "tagline": "Family Tides & Island Vibes – Bond, Explore, Renew.",
+   "category": "resort",
+   "tagline": "Two islands in the Dhaalu Atoll, one for playing and one for chilling, with a private surf break off one tip and an underwater restaurant off the other",
    "quote": "Here, every sunrise restores, every splash connects, and every moment together transforms.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3204af383_53352493b_685db4afe8efee1daf602a45_hero-image-niyama.jpg",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b63adfadb_0d6553c79_685db4da45632ce3b6bf6808_niyamastays-01.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4f5698796_064dc3722_685db4dbc7ebf691adb6c4c8_niyamastays-02.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d5ad6582a_9e7c3407d_685db4dac7ebf691adb6c4bf_niyamastays-03.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b2aed9355_4f9122009_685db4dcc7ebf691adb6c560_niyamastays-04.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/207a1caf4_a7b5e9d7f_685db4da48a840085584af24_niyamastays-05.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5e80cb2d0_f3726d21f_685db4dad10d2ef882ae4049_niyamastays-06.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/44fec7492_9966a1d5b_685db4da4bfad39193730be5_niyamastays-07.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4a4ceec89_c8ca4bb87_685db4da69e4fa735e8e9baa_niyamastays-08.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/ocean-pool-pavilion",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/ocean-pool-pavilion-living",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/ocean-pool-pavilion-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/two-bedroom-beach-pool-pavilion",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/hero-pavilions-aerial"
    ],
    "bestMonths": "November–April (dry season); June–September (surf season & lower rates)",
    "bestMonthsNote": "Dry season offers calm seas, clear skies, and ideal snorkeling. June–Sept brings Pacific swells, perfect for surf-loving families with quieter islands and cost savings.",
@@ -35610,24 +35512,26 @@
    "airportDirections": "Seaplane from MLE (~40 min) lands directly. Best for families and scenic transfers.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Family Beach Pool Villa (255 sqm);",
-     "Deluxe Family Beach Pool Villa;",
-     "Three‑Bedroom Beach Pool Pavilion;",
-     "One‑ & Two‑Bedroom Beach & Ocean Pavilions;",
-     "Overwater Pool Villas"
-    ]
+    "paras": [
+     "Newly refurbished villas and pavilions across two islands, Play and Chill, crossed by bicycle.",
+     "Beach Villa and Deluxe Beach Villa (135 m²).",
+     "Beach Pool Villa and Deluxe Beach Pool Villa (190 m²), beachfront plunge pool.",
+     "Over Water Pool Villa (175 m²) and Deluxe Over Water Pool Villa (190 m², plunge pool and jacuzzi over the lagoon, up to 3 adults and 1 child).",
+     "Family Beach Pool Villa and Deluxe Family Beach Pool Villa (255 m², up to 4 adults and 1 child).",
+     "Pavilions, with separate living and dining rooms, full-sized pool and jacuzzi: One Bedroom Ocean Pool Pavilion (340 m²), One Bedroom Beach Pool Pavilion (400 m²), Two Bedroom Ocean Pool Pavilion (515 m²), Two Bedroom Beach Pool Pavilion (635 m²), Three Bedroom Beach Pool Pavilion (770 m², up to 9 adults).",
+     "The Crescent (1,045 m²): five pool villas reached by a private boardwalk, for up to 14 adults and 8 children, with a Subsix underwater champagne breakfast and a beach barbecue and film night.",
+     "Thakuru (butler) service in the larger villas and every pavilion."
+    ],
+    "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Big‑kid & little‑kid surf lessons;",
-     "Explorers Kids Club treasure safaris;",
-     "snorkeling trips to house reef;",
-     "PADI‑dives & shop, custom dive safaris;",
-     "secluded beach picnics"
-    ]
+    "paras": [
+     "Surf Vodi, a powerful and sometimes hollow left off Play Island, by walking to the point; Kasabu, a hollow right, 5 to 10 minutes by speedboat; lessons for every level",
+     "Water sports at FLOAT",
+     "Dine at Subsix, the underwater restaurant, with sea turtles",
+     "Cycle between the two islands, a torchlit jungle camp, treetop adventures"
+    ],
+    "items": []
    },
    "features": {
     "paras": [],
@@ -35638,7 +35542,7 @@
     ]
    },
    "onlyHere": [
-    "Niyama instead of separating families splits the island: Play is full of active fun, treetop adventures and surf breaks, while Chill offers quiet spa moments and underwater lounges. Ideal for families, multi-gen groups, couples, or solo travelers craving connection in a mindful way. Kids and parents find joy here together, each day seamlessly blending discovery with comfort, laughter with renewal, all within a conservation-minded sanctuary."
+    "A private surf break at the tip of one island, an underwater restaurant, Subsix, half a kilometre beyond the tip of the other, and The Crescent: five pool villas on their own boardwalk for a family of up to 22."
    ],
    "why": [
     {
@@ -52301,6 +52205,96 @@
     "6ae697442cd3e7e2ab4884c7",
     "6ae697445c7b134365e994e7",
     "6ae69744c23ffff6bdd6ef40"
+   ],
+   "placeSlug": null
+  },
+  {
+   "slug": "nautilus-maldives",
+   "name": "The Nautilus Maldives",
+   "ledgerId": "STY-2026-000178",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Twenty six beach and overwater houses and residences in the Baa Atoll UNESCO Biosphere Reserve, with breakfast anywhere, anytime",
+   "quote": "Because in a world moving fast, you deserve a place where time stands still, your own barefoot luxury hideaway, where every detail is shaped around you.",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8420acb08_2875cd5d0_6925a0bf3ecfc31d5ccb992e_Untitled-design-62.png",
+   "gallery": [
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a4692fc3d_aac15ce3f_69259da4195410c5d4a58dc0_2.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eb639e8ca_05f3b052f_69259da4abe970cc915048f3_Dinner-blog.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e74e7c71_d166d9524_69259caa2f4eac43ffcf8de2_TNM-beach-houses-and-residences.png",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f25e8f52_80215fc94_69259da4308aa8d38e3a54ab_TNM-beach-houses-and-residences-4.png",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/51bcb204a_ae2d7c9d2_69259da411132ce9a6c5bc38_494782994.webp",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fbecffd75_0bb8b135b_69259d8cb9baa19390ddd89d_og-image-beach-house.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dfaaa822f_b4a85974b_69259da49e800ce5684d0a3c_og-image-beach-recidence.jpg"
+   ],
+   "bestMonths": "Aril - Nov",
+   "bestMonthsNote": "These months generally feature the driest weather, calm seas, warm sunshine and excellent visibility for snorkelling and diving. It’s perfect for both exploring the marine environment and relaxing in luxury.",
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 5.23862,
+    "lng": 73.22098
+   },
+   "airport": "Velana International Airport (MLE)",
+   "airportDirections": "Approximately 30 minutes by seaplane from Velana International Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "26 private houses and residences, every one with a private pool: 17 houses, nine on the beach and eight over the lagoon, and the residences.",
+     "Beach House and Ocean House, one bedroom, private pool.",
+     "Beach Residence and Ocean Residence, one or two bedrooms, private pool; Two-Bedroom Beach Residence.",
+     "The Nautilus Retreat: two bedrooms over the water, private infinity pool on the sun deck.",
+     "The Nautilus Mansion: three bedrooms on the beach, private pool."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Daily breakfast anywhere, anytime",
+     "Dine at Zeytoun, Ocaso, Thyme and Naiboli",
+     "Solasta Spa: treatments, yoga and wellness rituals"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Dedicated 24/7 House Master for each villa. “Unscripted dining” – no set timings, dress codes, or menus. Private pool in every accommodation. All-inclusive non-motorised water sports and daily sunrise yoga. Located within the UNESCO biosphere of Baa Atoll. Children’s club and family-friendly large residences"
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "With just 26 houses and residences, every stay becomes personal, private, and tailored. Bask in barefoot elegance on white sand fringed by coral-rich lagoon, dive into a world of vibrant marine life, and dine whenever the mood strikes. Here, you are at ease. Time stands still."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Bespoke Private-Island Elegance in the Maldives. For travellers seeking more than just a resort stay, The Nautilus offers a deeply personalised experience in absolute seclusion"
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": "baa_atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
    ],
    "placeSlug": null
   },

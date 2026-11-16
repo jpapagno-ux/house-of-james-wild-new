@@ -8345,8 +8345,8 @@
     "adventure",
     "honeymoon"
    ],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": null,
    "airport": "Velana International Airport, Malé (MLE)",
    "airportDirections": "A scenic 30 to 60 minute seaplane transfer from Velana International Airport.",
@@ -37828,8 +37828,8 @@
     "family",
     "luxury"
    ],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": null,
    "airport": "Velana International Airport, Malé (MLE)",
    "airportDirections": null,

@@ -477,6 +477,7 @@ a:hover .jw-needle { animation-duration: 1.6s; }
 .theme-ef-hadiprana { --ef-sand: #B9C78F; --ef-earth: #5B6B2E; --ef-landscape: #F3F4EA; --ef-shadow: #2F3520; --ef-accent: #E1E8C8; }
 /* The Exceptional Few: The Soori Estate, Soori Bali palette (2026-11-12). Tabanan: black volcanic sand, stone and sea mist. */
 .theme-ef-soori { --ef-sand: #C9C1B6; --ef-earth: #4A4540; --ef-landscape: #F4F2EE; --ef-shadow: #262321; --ef-accent: #E6E1D9; }
+.theme-ef-niyama { --ef-sand: #9ED3D6; --ef-earth: #1B6C80; --ef-landscape: #EEF6F7; --ef-shadow: #22414D; --ef-accent: #D3EBEE; } /* the Dhaalu lagoon (EF-023, 16 Nov 2026) */
 .ef-module { --jw-card: var(--ef-landscape); }
 .ef-eyebrow { color: var(--ef-earth); }
 .ef-rule { border-color: var(--ef-sand); }

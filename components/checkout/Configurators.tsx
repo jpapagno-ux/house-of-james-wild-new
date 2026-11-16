@@ -56,6 +56,19 @@ export function Experiences({ options: all, supplier, picked, onChange }: { opti
   );
 }
 
+/** A stay priced night by night from its contracted card, or failing that its published rates. Shared by the picker and the example journey. */
+export function ratedStayPrice(product: StayProduct, card: Card | null, fx: Record<string, Fx>, chosen: string, start: string, end: string, adults: number): Price {
+  const n = nightsBetween(start, end);
+  const party = `${adults} ${adults === 1 ? "adult" : "adults"}`;
+    const r = card?.rooms.find((x) => x.name === chosen);
+    const u = product.units.find((x) => x.name === chosen);
+    const cur = card ? card.currency : product.currency;
+    const p = card && r ? priceNights(card.rules, r.key, start, end, adults) : !card && u ? priceNights(product.rules, u.key, start, end, adults) : null;
+    if (!p) return NO_PRICE(`${n} nights, ${chosen}, ${party}`, card ? "The contracted card does not cover every night or this party. The house prices it." : u && !product.rules.some((x) => x.roomKey === u.key) ? `No rate is published for ${chosen}. The house prices it with ${product.supplier}.` : `The published rates on file do not cover every night of these dates, or this party. The house prices it with ${product.supplier}.`);
+    const f = cur === "USD" ? null : (fx[cur] ?? null);
+    return { source: card ? "rate_card" : "published_rate", usdMinor: toUsdMinor(p.totalMinor, cur, f), sourceMinor: p.totalMinor, sourceCurrency: cur, fx: f, basis: `${p.seasons.map((s) => `${s.nights} × ${s.season} at ${fmtMoney(s.amountMinor, cur)}`).join(", ")}; ${chosen}, ${party}`, provenance: card ? `Contracted card ${card.version}` : product.rateSource, fetchedAt: null };
+}
+
 type Engine = { state: "idle" } | { state: "loading" } | { state: "error"; message: string } | { state: "ok"; key: string; nights: number; fetchedAt: string; plans: RatePlan[] };
 
 export function StayConfigurator({ product, today, cardState, fx, initial, submitLabel, onSubmit }: { product: StayProduct; today: string; cardState: CardState; fx: Record<string, Fx>; initial?: Draft; submitLabel: string; onSubmit: (d: Draft) => void }) {
@@ -96,13 +109,7 @@ export function StayConfigurator({ product, today, cardState, fx, initial, submi
       const minor = Math.round(best.total * 100);
       return { source: "albie_live", usdMinor: minor, sourceMinor: minor, sourceCurrency: "USD", fx: null, basis: `Total for ${n} nights, ${o.name}, ${party}, ${best.plan}`, provenance: `House booking engine (ALBIE by TAG), property ${product.engineProperty}, quoted in USD`, fetchedAt: engine.fetchedAt };
     }
-    const r = card?.rooms.find((x) => x.name === chosen);
-    const u = product.units.find((x) => x.name === chosen);
-    const cur = card ? card.currency : product.currency;
-    const p = card && r ? priceNights(card.rules, r.key, start, end, adults) : !card && u ? priceNights(product.rules, u.key, start, end, adults) : null;
-    if (!p) return NO_PRICE(`${n} nights, ${chosen}, ${party}`, card ? "The contracted card does not cover every night or this party. The house prices it." : u && !product.rules.some((x) => x.roomKey === u.key) ? `No rate is published for ${chosen}. The house prices it with ${product.supplier}.` : `The published rates on file do not cover every night of these dates, or this party. The house prices it with ${product.supplier}.`);
-    const f = cur === "USD" ? null : (fx[cur] ?? null);
-    return { source: card ? "rate_card" : "published_rate", usdMinor: toUsdMinor(p.totalMinor, cur, f), sourceMinor: p.totalMinor, sourceCurrency: cur, fx: f, basis: `${p.seasons.map((s) => `${s.nights} × ${s.season} at ${fmtMoney(s.amountMinor, cur)}`).join(", ")}; ${chosen}, ${party}`, provenance: card ? `Contracted card ${card.version}` : product.rateSource, fetchedAt: null };
+    return ratedStayPrice(product, card, fx, chosen, start, end, adults);
   }
 
   const p = datesOk && chosen ? price() : null;

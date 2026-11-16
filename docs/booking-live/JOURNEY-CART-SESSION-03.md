@@ -69,6 +69,15 @@ Tests: 11 for the cart, 388 in the suite, all passing; typecheck, lint and build
 - **After adding.** The notice offers "View journey cart". Removing a line offers Undo.
 - **Filters** on Build Your Journey: All, Stays, Villas & residences, Voyages, Land journeys.
 
+- **Five steps, not seven.** Pricing Review and Fees & Inclusions are one Review screen: Build, Cart, Review, Your
+  Details, Payment, then Confirmation.
+- **Two wordings.** The traveler view speaks plainly ("Your advisor confirms the deposit with your quote"). The house
+  and advisor detail (the link in the preview banner, or `?view=advisor`) adds sources, currencies, supplier-by-supplier
+  reasons, tester controls and the Ledger hand-off record.
+- **How it works.** A "?" button opens six plain instructions on any screen.
+- **An example journey.** "Load an example journey", or the link `/preview/journey-cart?example=1`, opens a cart with a
+  room, a residence, a voyage and a land journey already in it, priced by the same rules as anything picked by hand.
+
 Tests: 12 for the cart, 389 in the suite, all passing.
 
 ---

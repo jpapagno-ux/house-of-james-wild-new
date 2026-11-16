@@ -132,6 +132,8 @@ export type Policy = {
   payAtProperty: { supported: boolean; basis: string };
   balance: string;
   cancellation: string;
+  /** A term worth telling the traveler in plain words, where the supplier publishes one. */
+  travelerNote?: string;
 };
 
 export type Option = { method: Method; available: boolean; amountMinor: number | null; reason: string };

@@ -185,6 +185,7 @@ export function pilotCatalogue(today: string): Catalogue {
           deposit: null, depositNote: "Antarctica21's deposit and payment schedule are not on file.",
           payAtProperty: { supported: false, basis: "Does not apply to a voyage." },
           balance: NOT_ON_FILE, cancellation: "Not on file, apart from Antarctica21's published flight contingency: a full refund of the cruise fare if guests cannot fly out by 2 PM on Day 4 (air-cruises from Punta Arenas).",
+          travelerNote: "Antarctica21 refunds the cruise fare in full if guests cannot fly out by 2 PM on Day 4 (air-cruises from Punta Arenas).",
         },
       },
       journey(sandRiver as unknown as TripFile, 12),

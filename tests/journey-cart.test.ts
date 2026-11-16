@@ -3,7 +3,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { NO_PRICE, cartTotals, commissionHandoff, hasCardLikeData, idempotencyKey, ledgerHandoff, lineStatuses, paymentOptions, priceNights, simulatePayment, toUsdMinor, validLead, verified, type Line, type Policy, type Price, type SeasonRule } from "../lib/checkout/journey.ts";
+import { NO_PRICE, cartTotals, commissionHandoff, hasCardLikeData, idempotencyKey, ledgerHandoff, lineStatuses, paymentOptions, priceNights, readiness, simulatePayment, toUsdMinor, validLead, verified, type Line, type Policy, type Price, type SeasonRule } from "../lib/checkout/journey.ts";
 
 const price = (source: Price["source"], usdMinor: number | null): Price => ({ source, usdMinor, sourceMinor: usdMinor, sourceCurrency: usdMinor == null ? null : "USD", fx: null, basis: "fixture", provenance: "fixture", fetchedAt: null });
 const line = (id: string, p: Price, kind: Line["kind"] = "stay"): Line => ({ id, kind, productKey: "fixture", ledgerId: "FIXTURE", name: "Fixture House", supplier: "Fixture Supplier", unit: "Room", unitKey: "room", start: "2027-02-01", end: "2027-02-04", adults: 2, price: p });
@@ -129,4 +129,14 @@ test("the published seasons on file map to night ranges for every priced room, w
     for (const k of keys) { assert.match(block, new RegExp(`key: "${k}"`), `${stay} still publishes season ${k}`); assert.match(windows.slice(0, 900), new RegExp(`\\b${k}: \\{ ranges:`), `${stay} season ${k} has night ranges`); }
   }
   assert.match(pilot, /PCS-A21-CLA-\$\{d\.slice\(2\)/);
+});
+
+test("a line is ready to book only with a verified price and a supplier-approved way to pay", () => {
+  const open: Policy = { ...none, payNow: { supported: true, basis: "engine" } };
+  assert.equal(readiness(line("a", price("albie_live", 240000)), open), "ready");
+  assert.equal(readiness(line("a", price("albie_live", 240000)), none), "priced", "a price with no payment terms on file is not ready");
+  assert.equal(readiness(line("b", price("published_rate", 1600000)), none), "priced");
+  assert.equal(readiness(line("c", price("published_from", 3799000), "voyage"), open), "from", "a from fare is never ready, whatever the policy");
+  assert.equal(readiness(line("d", NO_PRICE("x", "y"), "journey"), open), "quote");
+  assert.equal(readiness(line("e", price("albie_live", 240000), "experience"), open), "quote");
 });

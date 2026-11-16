@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { niceDate, niceWhen } from "@/lib/booking-live/money";
-import { METHOD_NAMES, NO_PRICE, cartTotals, fmtMoney, idempotencyKey, ledgerHandoff, lineStatuses, nightsBetween, paymentOptions, pricedAbroad, validLead, verified, type Lead, type Line, type Method, type SimResponse, type Traveler } from "@/lib/checkout/journey";
+import { METHOD_NAMES, NO_PRICE, READINESS, READINESS_ORDER, readiness, type Readiness, cartTotals, fmtMoney, idempotencyKey, ledgerHandoff, lineStatuses, nightsBetween, paymentOptions, pricedAbroad, validLead, verified, type Lead, type Line, type Method, type SimResponse, type Traveler } from "@/lib/checkout/journey";
 import type { Catalogue, Product } from "@/lib/checkout/pilot";
 import { JourneyConfigurator, Label, PriceChip, StayConfigurator, VoyageConfigurator, field, slugify, type CardState, type Draft } from "./Configurators";
 
@@ -15,6 +15,10 @@ type AdvisorLite = { slug: string; name: string; role: string; ledgerId: string 
 type PayResult = SimResponse | { error: string };
 const STEPS = ["Build Your Journey", "Journey Cart", "Pricing Review", "Fees & Inclusions", "Traveler Registration", "Payment Selection", "Journey Confirmation"];
 const STORE = "jwc-journey-cart-v1";
+const SHORT_NEXT = ["Review cart", "Review prices", "Fees & inclusions", "Your details", "Payment", "Run simulation"];
+const FILTERS = [["all", "All"], ["stay", "Stays"], ["residence", "Villas & residences"], ["voyage", "Voyages"], ["journey", "Land journeys"]] as const;
+const DOT: Record<Readiness, string> = { ready: "bg-emerald-700", priced: "bg-ink", from: "bg-stone", quote: "bg-transparent border border-stone" };
+const family = (p: Product) => (p.type === "stay" ? (p.volume.startsWith("Residence") ? "residence" : "stay") : p.type);
 const uid = () => Math.random().toString(36).slice(2, 10);
 const isPay = (r: PayResult | null | undefined): r is SimResponse => Boolean(r && !("error" in r));
 
@@ -51,6 +55,10 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   const [tester, setTester] = useState({ locked: false, decline: false });
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState("");
+  const [offer, setOffer] = useState<"cart" | "undo" | null>(null);
+  const [removed, setRemoved] = useState<{ at: number; lines: Line[] } | null>(null);
+  const [cartOpen, setCartOpen] = useState(false);
+  const [filter, setFilter] = useState<(typeof FILTERS)[number][0]>("all");
   const top = useRef<HTMLDivElement>(null);
 
   const product = (l: Line): Product => catalogue.products.find((p) => l.productKey === p.key || l.productKey.startsWith(`${p.key}:`)) as Product;
@@ -73,8 +81,15 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   }, []);
   useEffect(() => { setCompanions((c) => Array.from({ length: partySize - 1 }, (_, i) => c[i] ?? { first: "", last: "" })); }, [partySize]);
 
+  useEffect(() => {
+    if (!cartOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setCartOpen(false); };
+    document.addEventListener("keydown", onKey); document.body.style.overflow = "hidden";
+    return () => { document.removeEventListener("keydown", onKey); document.body.style.overflow = ""; };
+  }, [cartOpen]);
+
   function go(n: number) {
-    setNotice("");
+    setNotice(""); setOffer(null); setCartOpen(false);
     setStep(n);
     requestAnimationFrame(() => { top.current?.scrollIntoView({ block: "start" }); top.current?.querySelector<HTMLElement>("[data-step-title]")?.focus({ preventScroll: true }); });
   }
@@ -86,14 +101,25 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
     const parent: Line = { ...d.line, id: uid() };
     setLines((ls) => [...ls, parent, ...experienceLines(parent, d.experiences)]);
     setResults({}); setOpen(null);
-    setNotice(`${parent.name} added to your journey.`);
+    setNotice(`${parent.name} added to your journey.`); setOffer("cart");
   }
   function save(id: string, d: Draft) {
     const parent: Line = { ...d.line, id };
     setLines((ls) => { const at = ls.findIndex((l) => l.id === id); const rest = ls.filter((l) => l.id !== id && l.parentId !== id); rest.splice(Math.min(at, rest.length), 0, parent, ...experienceLines(parent, d.experiences)); return rest; });
     setResults({}); setEditing(null);
   }
-  const remove = (id: string) => { setLines((ls) => ls.filter((l) => l.id !== id && l.parentId !== id)); setResults({}); };
+  function remove(id: string) {
+    const at = lines.findIndex((l) => l.id === id), gone = lines.filter((l) => l.id === id || l.parentId === id);
+    if (at < 0) return;
+    setLines((ls) => ls.filter((l) => l.id !== id && l.parentId !== id)); setResults({}); setEditing(null);
+    setRemoved({ at, lines: gone }); setNotice(`${gone[0].name} removed.`); setOffer("undo");
+  }
+  function undo() {
+    if (!removed) return;
+    setLines((ls) => { const next = [...ls]; next.splice(Math.min(removed.at, next.length), 0, ...removed.lines); return next; });
+    setRemoved(null); setNotice(""); setOffer(null);
+  }
+  function editLine(id: string) { go(1); setEditing(id); }
 
   const options = (l: Line) => paymentOptions(l, product(l).policy);
   const methodFor = (l: Line): Method => methods[l.id] ?? (options(l).find((o) => o.available && o.method !== "advisor_assisted")?.method ?? "advisor_assisted");
@@ -116,7 +142,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   }
 
   function next() {
-    if (step === 0 || step === 1) { if (!lines.length) { setNotice("Add a stay or a voyage first."); return; } }
+    if (step === 0 || step === 1) { if (!lines.length) { setNotice("Add a stay, a residence, a voyage or a journey first."); setOffer(null); return; } }
     if (step === 4) { const e = validLead(lead); if (e) { setNotice(e); return; } if (!agreed) { setNotice("Please confirm you have read how this preview works."); return; } }
     if (step === 5) { void pay(); return; }
     go(step + 1);
@@ -125,6 +151,38 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
 
   const nextLabel = step === 5 ? (busy ? "Running the simulation" : "Run simulated payments") : step === 0 ? "Review your cart" : `Continue to ${STEPS[step + 1]}`;
   const handoff = step === 6 ? ledgerHandoff({ cartId, lines, lead, party: companions, advisor: adv, externalAdvisor: external, payments: Object.fromEntries(lines.map((l) => [l.id, isPay(results[l.id]) ? (results[l.id] as SimResponse) : null])) }) : null;
+
+  const ready = (l: Line) => readiness(l, product(l).policy);
+  const shortPrice = (l: Line) => (l.price.usdMinor != null ? `${l.price.source === "published_from" ? "from " : ""}${fmtMoney(l.price.usdMinor, "USD").replace(/\.00$/, "")}` : pricedAbroad(l.price) ? fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string).replace(/\.00$/, "") : "House quotes");
+  const readyCount = bookable.filter((l) => ready(l) === "ready").length;
+
+  // The cart, grouped by how far along each line is. Shown beside the page on a wide screen and in a sheet on a phone.
+  const cartView = (notes: boolean) => (
+    <>
+      {removed && offer === "undo" && <p role="status" className="mt-2 border-l-2 border-[#8B2525] bg-paper-card px-3 py-2 text-[13.5px]">{removed.lines[0].name} removed. <button type="button" className="underline underline-offset-4" onClick={undo}>Undo</button></p>}
+      {!bookable.length && <p className="mt-2 text-[15px] ledger-muted">Nothing added yet. Choose dates on any stay, residence, voyage or journey to begin.</p>}
+      {READINESS_ORDER.map((r) => {
+        const group = bookable.filter((l) => ready(l) === r);
+        if (!group.length) return null;
+        return (
+          <section key={r} className="mt-4 first:mt-2">
+            <h3 title={READINESS[r].note} className="flex items-center gap-2 text-[12.5px] tracking-wide uppercase"><span className={`w-2 h-2 ${DOT[r]}`} aria-hidden="true" />{READINESS[r].label} · {group.length}</h3>
+            {notes && <p className="mt-1 text-[12.5px] ledger-muted">{READINESS[r].note}</p>}
+            <ul className="mt-1.5 divide-y divide-[#DCD7D0] border-y ledger-border">
+              {group.map((l) => (
+                <li key={l.id} className="py-2.5">
+                  <div className="flex justify-between gap-3 text-[14.5px]"><span className="min-w-0"><span className="block">{l.name}</span><span className="block text-[12.5px] ledger-muted">{[l.unit, l.start ? niceDate(l.start).replace(/^\w+, /, "") : "", party(l)].filter(Boolean).join(" · ")}</span></span><span className="whitespace-nowrap">{shortPrice(l)}</span></div>
+                  {step < 6 && <div className="mt-1 flex gap-5 text-[13px]"><button type="button" className="underline underline-offset-4 decoration-[#CFC8BF]" onClick={() => editLine(l.id)}>Edit</button><button type="button" className="underline underline-offset-4 decoration-[#CFC8BF]" onClick={() => remove(l.id)}>Remove</button></div>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })}
+      <Totals totals={totals} compact className="mt-4" />
+      <p className="mt-3 text-[13px] ledger-muted"><span className="ledger-id">{adv.ledgerId}</span> · held by {adv.name}</p>
+    </>
+  );
 
   const lineCard = (l: Line, children?: ReactNode) => (
     <div key={l.id} className={l.kind === "experience" ? "pl-4 md:pl-8 border-l-2 border-[#DCD7D0] ml-1" : ""}>
@@ -138,6 +196,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
         <div className="text-right">
           {l.price.usdMinor != null ? <p className="ledger-display text-[1.45rem] leading-none">{l.price.source === "published_from" ? "from " : ""}{fmtMoney(l.price.usdMinor, "USD")}</p> : pricedAbroad(l.price) ? <p className="ledger-display text-[1.45rem] leading-none">{fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string)}</p> : <p className="text-[15px]">{l.kind === "experience" ? "On request" : "Priced by the house"}</p>}
           <p className="mt-1.5"><PriceChip price={l.price} /></p>
+          {l.kind !== "experience" && <p className="mt-1.5 inline-flex items-center gap-2 text-[12.5px]"><span className={`w-2 h-2 ${DOT[ready(l)]}`} aria-hidden="true" />{READINESS[ready(l)].label}</p>}
         </div>
       </div>
       {children}
@@ -148,13 +207,21 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
     <div ref={top} className="max-w-ledger mx-auto px-5 md:px-10 scroll-mt-24">
       <p role="note" className="border border-dashed border-[#8B2525]/60 px-4 py-2.5 text-[13.5px]"><span className="ledger-id">PREVIEW</span> · Simulation only. No card is asked for, no money moves, nothing is sent to a supplier and nothing is written to the Travel Ledger.</p>
 
-      <nav aria-label="Checkout steps" className="mt-5 -mx-5 px-5 md:mx-0 md:px-0 overflow-x-auto">
-        <ol className="flex gap-1.5 min-w-max md:min-w-0 md:grid md:grid-cols-7">
+      <div className="mt-4 flex items-end justify-between gap-4 lg:hidden">
+        <div className="min-w-0 flex-1 md:hidden">
+          <p className="text-[12.5px] tracking-wide uppercase ledger-muted">Step {step + 1} of 7 · {STEPS[step]}</p>
+          <div className="mt-2 h-[3px] bg-[#DCD7D0]" role="progressbar" aria-valuemin={1} aria-valuemax={7} aria-valuenow={step + 1} aria-label="Checkout progress"><div className="h-full bg-ink" style={{ width: `${((step + 1) / 7) * 100}%` }} /></div>
+        </div>
+        <button type="button" className="house-chip house-chip--primary ml-auto whitespace-nowrap" aria-haspopup="dialog" onClick={() => setCartOpen(true)}>Journey cart · {bookable.length}</button>
+      </div>
+
+      <nav aria-label="Checkout steps" className="hidden md:block mt-5">
+        <ol className="grid grid-cols-7 gap-1.5">
           {STEPS.map((s, i) => {
             const reach = i <= step;
             return (
               <li key={s}>
-                <button type="button" disabled={!reach || step === 6} aria-current={i === step ? "step" : undefined} onClick={() => go(i)} className={`w-full text-left border px-3 py-2 text-[12px] leading-tight tracking-wide whitespace-nowrap md:whitespace-normal ${i === step ? "border-ink bg-ink text-white" : i < step ? "border-[#CFC8BF] bg-paper-card text-ink" : "border-[#DCD7D0] bg-paper text-[#6B635A]"} ${reach && step !== 6 ? "cursor-pointer" : "cursor-default"}`}>
+                <button type="button" disabled={!reach || step === 6} aria-current={i === step ? "step" : undefined} onClick={() => go(i)} className={`w-full text-left border px-3 py-2 text-[12px] leading-tight tracking-wide ${i === step ? "border-ink bg-ink text-white" : i < step ? "border-[#CFC8BF] bg-paper-card text-ink" : "border-[#DCD7D0] bg-paper text-[#6B635A]"} ${reach && step !== 6 ? "cursor-pointer" : "cursor-default"}`}>
                   <span className="block font-mono text-[11px] opacity-80">{String(i + 1).padStart(2, "0")}</span>{s}
                 </button>
               </li>
@@ -165,13 +232,22 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
 
       <div className="mt-8 md:mt-12 grid lg:grid-cols-[minmax(0,1fr)_340px] gap-10 lg:gap-14 items-start">
         <div className="min-w-0">
-          {notice && <p role="status" className="mb-5 border-l-2 border-[#8B2525] bg-paper-card px-4 py-3 text-[15px]">{notice}</p>}
+          {notice && (
+            <div role="status" className="mb-5 border-l-2 border-[#8B2525] bg-paper-card px-4 py-3 text-[15px] flex flex-wrap items-center gap-x-5 gap-y-2">
+              <span>{notice}</span>
+              {offer === "cart" && <button type="button" className="ledger-btn" onClick={() => go(1)}>View journey cart</button>}
+              {offer === "undo" && <button type="button" className="ledger-btn" onClick={undo}>Undo</button>}
+            </div>
+          )}
 
           {step === 0 && (
             <>
               <Head n={1} title="Build Your Journey">Choose the chapters of the journey: houses and rooms, whole villas and residences, a voyage south, or a land journey the house has already drawn. Add as many as you like, in any order. A price appears only where its source answers today.</Head>
+              <div className="mb-5 flex flex-wrap gap-2" role="group" aria-label="Show">
+                {FILTERS.map(([k, label]) => <button key={k} type="button" aria-pressed={filter === k} className={`house-chip ${filter === k ? "house-chip--primary" : ""}`} onClick={() => setFilter(k)}>{label}</button>)}
+              </div>
               <div className="space-y-5">
-                {catalogue.products.map((p) => {
+                {catalogue.products.filter((p) => filter === "all" || family(p) === filter).map((p) => {
                   const inCart = lines.filter((l) => l.kind !== "experience" && product(l).key === p.key).length;
                   return (
                     <Panel key={p.key}>
@@ -417,33 +493,44 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
           )}
 
           {step < 6 && (
-            <div className="hidden md:flex mt-10 items-center gap-8">
+            <div className="hidden md:flex mt-10 items-center gap-8 border-t ledger-border pt-8">
               <button type="button" className="ledger-btn ledger-btn--house" disabled={busy} onClick={next}>{nextLabel}</button>
               {step > 0 && <button type="button" className="ledger-btn" onClick={() => go(step - 1)}>Back</button>}
             </div>
           )}
         </div>
 
-        <aside className="hidden lg:block sticky top-28" aria-label="Journey summary">
+        <aside className="hidden lg:block sticky top-28 max-h-[calc(100vh-8.5rem)] overflow-y-auto" aria-label="Journey cart">
           <Panel className="p-5">
-            <p className="ledger-eyebrow">Your journey</p>
-            {!bookable.length && <p className="mt-2 text-[15px] ledger-muted">Nothing added yet.</p>}
-            <ul className="mt-2 divide-y divide-[#DCD7D0]">
-              {bookable.map((l) => (
-                <li key={l.id} className="py-2.5 text-[14.5px] flex justify-between gap-3"><span className="min-w-0"><span className="block truncate">{l.name}</span><span className="block text-[12.5px] ledger-muted truncate">{l.unit}{l.start ? ` · ${niceDate(l.start).replace(/^\w+, /, "")}` : ""}</span></span><span className="whitespace-nowrap">{l.price.usdMinor != null ? `${l.price.source === "published_from" ? "from " : ""}${fmtMoney(l.price.usdMinor, "USD").replace(/\.00$/, "")}` : pricedAbroad(l.price) ? fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string).replace(/\.00$/, "") : "House"}</span></li>
-              ))}
-            </ul>
-            <Totals totals={totals} compact className="mt-3" />
-            <p className="mt-4 text-[13px] ledger-muted"><span className="ledger-id">{adv.ledgerId}</span><br />Held by {adv.name}</p>
+            <p className="ledger-eyebrow">Journey cart{bookable.length ? ` · ${bookable.length}${readyCount ? ` · ${readyCount} ready to book` : ""}` : ""}</p>
+            {step < 6 && bookable.length > 0 && <button type="button" className="ledger-btn ledger-btn--house mt-3 mb-1 w-full" disabled={busy} onClick={next}>{step === 5 && busy ? "Running" : SHORT_NEXT[step]}</button>}
+            {cartView(false)}
           </Panel>
         </aside>
       </div>
 
       {step < 6 && (
-        <div className="md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-[#CFC8BF] bg-paper px-5 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] flex items-center gap-3">
-          <div className="min-w-0 flex-1"><p className="text-[11px] tracking-wide uppercase ledger-muted">Priced today</p><p className="ledger-display text-[1.35rem] leading-none mt-0.5">{fmtMoney(totals.verifiedMinor, "USD")}</p></div>
-          {step > 0 && <button type="button" className="border border-[#CFC8BF] px-3.5 py-3 text-[14px]" onClick={() => go(step - 1)}>Back</button>}
-          <button type="button" className="bg-ink text-white px-4 py-3 text-[14px] disabled:opacity-50" disabled={busy} onClick={next}>{step === 5 ? (busy ? "Running" : "Run simulation") : "Continue"}</button>
+        <div className="md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-[#CFC8BF] bg-paper px-4 pt-2.5 pb-[calc(0.6rem+env(safe-area-inset-bottom))] flex items-stretch gap-2">
+          <button type="button" className="min-w-0 flex-1 text-left border border-[#CFC8BF] px-3 py-2" aria-haspopup="dialog" onClick={() => setCartOpen(true)}>
+            <span className="block text-[11px] tracking-wide uppercase ledger-muted truncate">Cart · {bookable.length}{readyCount ? ` · ${readyCount} ready` : ""}</span>
+            <span className="block ledger-display text-[1.2rem] leading-none mt-0.5 truncate">{fmtMoney(totals.verifiedMinor, "USD").replace(/\.00$/, "")}</span>
+          </button>
+          {step > 0 && <button type="button" className="border border-[#CFC8BF] px-3 text-[14px]" onClick={() => go(step - 1)}>Back</button>}
+          <button type="button" className="bg-ink text-white px-4 text-[14px] font-medium disabled:opacity-50 whitespace-nowrap" disabled={busy} onClick={next}>{step === 5 && busy ? "Running" : SHORT_NEXT[step]} <span aria-hidden="true">→</span></button>
+        </div>
+      )}
+
+      {cartOpen && (
+        <div className="lg:hidden fixed inset-0 z-50 flex items-end md:items-stretch md:justify-end" role="dialog" aria-modal="true" aria-label="Journey cart">
+          <button type="button" className="absolute inset-0 bg-ink/50 cursor-default" aria-label="Close the cart" onClick={() => setCartOpen(false)} />
+          <div className="relative w-full md:w-[420px] max-h-[88vh] md:max-h-none overflow-y-auto bg-paper border-t md:border-t-0 md:border-l border-[#CFC8BF] p-5 pb-[calc(1.25rem+env(safe-area-inset-bottom))]">
+            <div className="flex items-center justify-between gap-4">
+              <h2 className="ledger-display text-[1.7rem] leading-none">Journey cart</h2>
+              <button type="button" className="house-chip" onClick={() => setCartOpen(false)}>Close</button>
+            </div>
+            {cartView(true)}
+            {step < 6 && bookable.length > 0 && <button type="button" className="ledger-btn ledger-btn--house mt-5 w-full" disabled={busy} onClick={() => (step === 0 ? go(1) : setCartOpen(false))}>{step === 0 ? "Review cart" : "Back to checkout"}</button>}
+          </div>
         </div>
       )}
     </div>

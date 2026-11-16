@@ -150,6 +150,26 @@ export function paymentOptions(line: Line, policy: Policy): Option[] {
   ];
 }
 
+// ---------- How far along each line is, in the traveler's words
+
+export type Readiness = "ready" | "priced" | "from" | "quote";
+export const READINESS_ORDER: Readiness[] = ["ready", "priced", "from", "quote"];
+export const READINESS: Record<Readiness, { label: string; note: string }> = {
+  ready: { label: "Ready to book", note: "A price and a way to pay are both on file. You can complete these today." },
+  priced: { label: "Priced · advisor completes", note: "The price is on file. The supplier's payment terms are not, so your advisor completes the booking with you." },
+  from: { label: "From fare · to confirm", note: "A published from fare only. The supplier confirms the fare for your cabin before anything is paid." },
+  quote: { label: "Quoted by the house", note: "No price is on file yet. The house prices these against your dates and writes to you." },
+};
+
+/** Ready only when the price is verified AND the supplier's own policy opens a way to pay beyond the advisor. */
+export function readiness(line: Line, policy: Policy): Readiness {
+  if (line.kind === "experience") return "quote";
+  if (verified(line.price) && paymentOptions(line, policy).some((o) => o.available && o.method !== "advisor_assisted")) return "ready";
+  if (verified(line.price) || pricedAbroad(line.price)) return "priced";
+  if (line.price.source === "published_from" && line.price.usdMinor) return "from";
+  return "quote";
+}
+
 // ---------- The simulated payment provider. No network, no keys, no card data.
 
 const CARD_KEY = /card|cvv|cvc|pan\b|expiry|exp_month|exp_year|security.?code/i;

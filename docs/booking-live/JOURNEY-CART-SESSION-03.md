@@ -56,6 +56,23 @@ Tests: 11 for the cart, 388 in the suite, all passing; typecheck, lint and build
 
 ---
 
+## Round 3 (16 Nov 2026): clarity pass on the flow, phone and desktop
+
+- **A cart you can always open.** Desktop: the Journey cart sits beside every step. Phone and tablet: a "Journey cart"
+  button at the top and a cart button in the bottom bar open it as a sheet. Edit and Remove work from inside it.
+- **What is ready to book.** Every line carries one of four standings, and the cart groups by them: Ready to book
+  (a verified price and a supplier-approved way to pay), Priced · advisor completes, From fare · to confirm,
+  Quoted by the house. The rule is in `readiness()` and tested. Today only an ALBIE stay with a live price is Ready.
+- **Buttons that say where they go.** The main button names the next screen (Review cart, Review prices, Fees &
+  inclusions, Your details, Payment, Run simulation). On desktop it sits at the top of the cart as well as under the page.
+- **Phone.** The seven scrolling step chips are replaced by "Step 2 of 7" and a progress bar.
+- **After adding.** The notice offers "View journey cart". Removing a line offers Undo.
+- **Filters** on Build Your Journey: All, Stays, Villas & residences, Voyages, Land journeys.
+
+Tests: 12 for the cart, 389 in the suite, all passing.
+
+---
+
 ## 1. What previous sessions actually left (verified before any code)
 
 | Area | What exists on `main` | What does not exist |

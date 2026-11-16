@@ -30,6 +30,7 @@ const ATOLL_POINTS = [
   { name: "Niyama Private Islands, Dhaalu", lat: 2.626, lng: 72.887 },
   { name: "Six Senses Laamu, Laamu", lat: 1.7963, lng: 73.4472 },
 ];
+// JOALI BEING, COMO Maalifushi and One&Only Reethi Rah publish no pin on their own sites yet (PIN MISSING in the library).
 
 const ONWARD = (except: string) => [
   { name: "The Maldives for Honeymoons", href: `${BASE}/honeymoon`, line: "Overwater villas, slides into the lagoon, a yacht at sunset" },
@@ -57,7 +58,7 @@ const CHARTERS = {
 export const MALDIVES_GUIDES: Record<string, Guide> = {
   honeymoon: {
     slug: "honeymoon", region: "asia", country: "maldives", parent: "maldives", name: "The Maldives for Honeymoons", path: `${BASE}/honeymoon`,
-    theme: "sea", stays: ["soneva-jani-maldives", "velaa-private-island", "soneva-secret-maldives", "ja-manufaru-maldives", "six-senses-kanuhura"],
+    theme: "sea", stays: ["soneva-jani-maldives", "velaa-private-island", "one-only-reethi-rah", "joali-being", "soneva-secret-maldives", "ja-manufaru-maldives", "six-senses-kanuhura"],
     proofEyebrow: "Chosen for two · the house's honeymoon file",
     seo: {
       title: "Maldives Honeymoon: The Best Overwater Villas, Private Islands and Yacht Days",
@@ -93,6 +94,8 @@ export const MALDIVES_GUIDES: Record<string, Guide> = {
       { who: "Total privacy", line: "Romantic Residences on an island of its own design.", href: "/stays/velaa-private-island", label: "Velaa" },
       { who: "No bills, no decisions", line: "Fifteen residences, everything included.", href: "/stays/kudadoo-private-island", label: "Kudadoo" },
       { who: "Off the map", line: "Fourteen villas in the far north, a zip-line to the observatory.", href: "/stays/soneva-secret-maldives", label: "Soneva Secret" },
+      { who: "Rest and renewal", line: "An island given to wellbeing, 40 minutes by seaplane.", href: "/stays/joali-being", label: "JOALI BEING" },
+      { who: "Twelve beaches, one island", line: "Beach and water villas, yachts and dhonis at the jetty.", href: "/stays/one-only-reethi-rah", label: "One&Only Reethi Rah" },
     ],
     howTo: YACHT_DAYS,
     places: undefined,
@@ -170,7 +173,7 @@ export const MALDIVES_GUIDES: Record<string, Guide> = {
 
   "surf-and-ocean-sports": {
     slug: "surf-and-ocean-sports", region: "asia", country: "maldives", parent: "maldives", name: "Surf and Ocean Sports", path: `${BASE}/surf-and-ocean-sports`,
-    theme: "sea", stays: ["niyama-private-islands-maldives", "six-senses-laamu"],
+    theme: "sea", stays: ["niyama-private-islands-maldives", "como-maalifushi", "six-senses-laamu"],
     proofEyebrow: "Surfed and sailed · the house's water-sports file",
     seo: {
       title: "Maldives Surf and Water Sports: Vodi, Kasabu, Yin Yang and the Best Resorts",
@@ -208,6 +211,7 @@ export const MALDIVES_GUIDES: Record<string, Guide> = {
       { who: "Surfers", line: "Two breaks, one off the beach.", href: "/stays/niyama-private-islands-maldives", label: "Niyama" },
       { who: "Surf and a family", line: "Lessons in the lagoon, a kids' club, the left for you.", href: "/stays/niyama-private-islands-maldives", label: "Niyama" },
       { who: "Wind and water", line: "Kites, foils, catamarans and Yin Yang.", href: "/stays/six-senses-laamu", label: "Six Senses Laamu" },
+      { who: "A surf guide on the island", line: "Tropicsurf April to October; Farms 25 minutes by speedboat.", href: "/stays/como-maalifushi", label: "COMO Maalifushi" },
     ],
     howTo: YACHT_DAYS,
     onwardEyebrow: "Three ways into the Maldives",

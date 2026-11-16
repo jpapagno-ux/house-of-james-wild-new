@@ -58,7 +58,7 @@ const CHARTERS = {
 export const MALDIVES_GUIDES: Record<string, Guide> = {
   honeymoon: {
     slug: "honeymoon", region: "asia", country: "maldives", parent: "maldives", name: "The Maldives for Honeymoons", path: `${BASE}/honeymoon`,
-    theme: "sea", stays: ["soneva-jani-maldives", "velaa-private-island", "one-only-reethi-rah", "joali-being", "soneva-secret-maldives", "ja-manufaru-maldives", "six-senses-kanuhura"],
+    theme: "sea", stays: ["soneva-jani-maldives", "velaa-private-island", "cheval-blanc-randheli", "gili-lankanfushi", "one-only-reethi-rah", "joali-being", "soneva-secret-maldives", "ja-manufaru-maldives", "six-senses-kanuhura"],
     proofEyebrow: "Chosen for two · the house's honeymoon file",
     seo: {
       title: "Maldives Honeymoon: The Best Overwater Villas, Private Islands and Yacht Days",
@@ -94,6 +94,8 @@ export const MALDIVES_GUIDES: Record<string, Guide> = {
       { who: "Total privacy", line: "Romantic Residences on an island of its own design.", href: "/stays/velaa-private-island", label: "Velaa" },
       { who: "No bills, no decisions", line: "Fifteen residences, everything included.", href: "/stays/kudadoo-private-island", label: "Kudadoo" },
       { who: "Off the map", line: "Fourteen villas in the far north, a zip-line to the observatory.", href: "/stays/soneva-secret-maldives", label: "Soneva Secret" },
+      { who: "Half an hour from the airport", line: "Crusoe Residences reached only by boat.", href: "/stays/gili-lankanfushi", label: "Gili Lankanfushi" },
+      { who: "An island of your own", line: "Cheval Blanc's Private Island, for eight.", href: "/stays/cheval-blanc-randheli", label: "Cheval Blanc Randheli" },
       { who: "Rest and renewal", line: "An island given to wellbeing, 40 minutes by seaplane.", href: "/stays/joali-being", label: "JOALI BEING" },
       { who: "Twelve beaches, one island", line: "Beach and water villas, yachts and dhonis at the jetty.", href: "/stays/one-only-reethi-rah", label: "One&Only Reethi Rah" },
     ],

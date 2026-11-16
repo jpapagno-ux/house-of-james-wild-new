@@ -4,7 +4,7 @@ import type { Guide } from "./guides";
 // Fakarava and Tikehau, beside the existing Taha'a, Bora Bora, Tuamotu and Marquesas guides (guides-tahiti.ts).
 // Facts only from Tahiti Tourisme and Air Tahiti (as filed in lib/content/french-polynesia.ts and read 15 Nov 2026)
 // and from each stay's own site; sources kept as data, never printed as links. Founder: in French Polynesia since
-// May 1996; has sailed Windstar to Taha'a, Fakarava and Rangiroa with Miriam. No claim that he has surfed Teahupo'o.
+// May 1996; has sailed Windstar to Taha'a, Fakarava and Rangiroa with Miriam. Surfed Teahupo'o in May 1996, touring six days with Moana David after the Tahiti travel trade show (James, 16 Nov 2026).
 
 type Month = "best" | "good" | "wet";
 const M = (s: string) => s.split("").map((c) => (c === "B" ? "best" : c === "g" ? "good" : "wet")) as Month[];
@@ -36,7 +36,7 @@ export const TAHITI_ISLAND_GUIDES: Record<string, Guide> = {
   "tahiti-iti": {
     slug: "tahiti-iti", region: "oceania", country: "tahiti", parent: "tahiti", name: "Tahiti Iti and Teahupo'o", path: `${BASE}/tahiti-iti`,
     theme: "sea", stays: ["vanira-lodge"],
-    proofEyebrow: "In French Polynesia since May 1996",
+    proofEyebrow: "Founder surfed · Teahupo'o, May 1996",
     seo: {
       title: "Teahupo'o and Tahiti Iti: The Wave, the Peninsula and Where to Stay",
       description: "Tahiti Iti, the wild peninsula of Tahiti, ends at Teahupo'o, a powerful left whose biggest swells come May to October. Vanira Lodge in the hills above the wave, getting there from Faa'a, and when to go.",
@@ -55,7 +55,7 @@ export const TAHITI_ISLAND_GUIDES: Record<string, Guide> = {
       ["The stay", "Vanira Lodge: ten bungalows in a 1.5 hectare garden above Teahupo'o"],
       ["On the water", "Boat trips, surfing and diving with local partners"],
     ],
-    proof: "James has surfed and dived French Polynesia since May 1996, and Tahiti is his favourite. Vanira Lodge is in the Ledger as the closest stay to the wave.",
+    proof: "James surfed Teahupo'o in May 1996, when few surfers knew the wave existed, touring the island for six days with Moana David after the Tahiti travel trade show. Tahiti has been his favourite ever since, and Vanira Lodge is in the Ledger as the closest stay to the wave.",
     months: [
       { area: "Teahupo'o swell", note: "Biggest swells May to October; contest in August (Tahiti Tourisme)", months: M("ggggBBBBBBgg") },
       { area: "Dry season", note: "May to October (Tahiti Tourisme)", months: M("wwwgBBBBBBgw") },

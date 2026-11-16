@@ -102,7 +102,7 @@ export const LAGOONS: Lagoon[] = [
   },
   {
     key: "tahiti-iti", label: "Tahiti & Tahiti Iti", archipelago: "Society Islands",
-    sub: "Every international flight lands at Faa'a. Tahiti Iti, the smaller peninsula, ends at Teahupo'o, the wave that brought James here in 1996.",
+    sub: "Every international flight lands at Faa'a. Tahiti Iti, the smaller peninsula, ends at Teahupo'o, the wave James surfed in May 1996, when few surfers knew it existed.",
     labels: [{ text: "Tahiti Nui", lng: -149.43, lat: -17.66, kind: "land" }, { text: "Tahiti Iti", lng: -149.25, lat: -17.79, kind: "land" }, { text: "Papeete", lng: -149.57, lat: -17.535, kind: "town" }],
     points: [TEAHUPOO],
     stays: ["intercontinental-tahiti-resort-spa", "pearl-resort-le-tahiti"],

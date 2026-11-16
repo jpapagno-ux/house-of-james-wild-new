@@ -1,4 +1,5 @@
 import ExceptionalFewBand from "@/components/home/ExceptionalFewBand";
+import ExceptionalFewEntrance from "@/components/home/ExceptionalFewEntrance";
 import TerraYBand from "@/components/home/TerraYBand";
 import { HouseInvitation } from "@/components/ledger/SiteFooter";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -123,8 +124,9 @@ export default function Home() {
           {BOARD.length > 0 && <ComingTicker entries={BOARD} label="On now: coming and on offer" />}
           <div className="max-w-ledger mx-auto px-5 md:px-10"><WhenToGoBand places={WHEN} /></div>
         </div>
-        {/* Act IV · The Ledger: the signature stays, the routes, the Compass */}
-        <div id="act-4" className="scroll-mt-28 max-w-ledger mx-auto px-5 md:px-10">
+        {/* Act IV · The Ledger: the Exceptional Few entrance full bleed, then the signature stays, the routes, the Compass */}
+        <div id="act-4" className="scroll-mt-28 mt-16 md:mt-24"><ExceptionalFewEntrance /></div>
+        <div className="max-w-ledger mx-auto px-5 md:px-10">
           <ExceptionalFewBand />
           <TerraYBand />
           <SignatureShelf />

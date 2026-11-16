@@ -2589,6 +2589,26 @@
    "sort": 1,
    "width": 1920,
    "height": 1080
+  },
+  {
+   "mediaId": "STY-2026-000190-hero-1",
+   "entityId": "STY-2026-000190",
+   "entityType": "stay",
+   "publicId": "jwco/stays/maldives/niyama/hero",
+   "role": "hero",
+   "caption": "The villas around the lagoon",
+   "alt": "Niyama's overwater villas curving around the lagoon, Dhaalu Atoll, Maldives",
+   "credit": "Photograph courtesy of Niyama Private Islands Maldives",
+   "creditUrl": "https://www.niyama.com/en",
+   "rights": "approved",
+   "licence": "owner",
+   "orientation": "landscape",
+   "crop": "g_auto",
+   "sort": 1,
+   "active": true,
+   "width": 4000,
+   "height": 2917,
+   "focalPoint": null
   }
  ]
 }

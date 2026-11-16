@@ -11,6 +11,7 @@ import { shipCard, watersCards } from "@/lib/content/ships/cards";
 import { exceptionalFewFor, collectionNo } from "@/lib/content/exceptional-few";
 import { volumeInk, volumeMark } from "@/lib/volumes";
 import SeeIn3D from "@/components/maps/terrain/SeeIn3D";
+import TahitiChapters from "./TahitiChapters";
 
 // French Polynesia (Tahiti) country page modules (James, 2 Nov 2026), on the archipelago template (voyages plan
 // Part 15): the lagoon atlas, the island-hopping routes on Air Tahiti's network, the ships that sail here, the
@@ -33,6 +34,7 @@ export default function FrenchPolynesia() {
   const ef = ["pearl-resort-vahine-private-island", "the-brando-tetiaroa"].map((slug) => { const s = ready(slug); const e = s ? exceptionalFewFor(s.ledgerId) : null; return s && e ? { s, e } : null; }).filter((x): x is NonNullable<typeof x> => !!x);
   return (
     <>
+      <TahitiChapters />
       <LagoonAtlas lagoons={LAGOONS} charts={CHARTS} stays={pins} stayInk={volumeInk("stays")} />
       {tahaaPins.length > 0 && <SeeIn3D page="destinations/oceania/tahiti#tahaa" id="see-tahaa-in-3d" kind="points" ink={volumeMark("voyages")} title="The Taha'a lagoon" exaggeration={1.8} playLabel="Fly the lagoon" points={tahaaPins}
         intro="Taha'a and Raiatea rise from the lagoon they share: fly from Vahine on its motu to the Coral Garden on the west side." />}

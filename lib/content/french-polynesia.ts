@@ -220,3 +220,48 @@ export const ISLANDS_DREAM = {
   source: "leborabora.com, Islands Dream Offer page (read 2 Nov 2026)",
   checked: "2026-11-02",
 };
+
+// Tahiti and her islands, the hub (James, 15 to 16 Nov 2026): the five archipelagos as chapters, the seasons calendar
+// and the founder note. Facts from Tahiti Tourisme (islands pages, when to visit, the whale season; read 16 Nov 2026)
+// and Air Tahiti, as everywhere on this page. The founder note is only what James has said: May 1996 after the Tahiti
+// travel trade show, six days with Moana David, Teahupo'o; Taha'a his favourite; Windstar with Miriam; Vahine 2025.
+export type Archipelago = { key: string; name: string; line: string; facts: string[]; islands: { name: string; href: string | null }[] };
+const ISL = "/destinations/oceania/tahiti";
+export const ARCHIPELAGOS: Archipelago[] = [
+  { key: "society", name: "The Society Islands", line: "Tahiti, Moorea and the Leeward Islands: high green peaks inside turquoise lagoons, and every international arrival.",
+    facts: ["Faa'a on Tahiti is the gateway; Moorea is 30 to 45 minutes by ferry", "Bora Bora, Raiatea and Taha'a share the Leeward lagoons", "Humpback whales July to November"],
+    islands: [{ name: "Tahiti Iti and Teahupo'o", href: `${ISL}/tahiti-iti` }, { name: "Moorea", href: `${ISL}/moorea` }, { name: "Taha'a", href: `${ISL}/tahaa` }, { name: "Bora Bora", href: `${ISL}/bora-bora` }] },
+  { key: "tuamotu", name: "The Tuamotu", line: "The largest chain of atolls in the world, seventy six of them, and the great drift dives of the Pacific.",
+    facts: ["Rangiroa about an hour from Tahiti; Fakarava 1 hour 10", "Fakarava's groupers spawn in June; the shark wall June and July", "Warmest water November to April"],
+    islands: [{ name: "Rangiroa", href: `${ISL}/rangiroa` }, { name: "Fakarava", href: `${ISL}/fakarava` }, { name: "Tikehau", href: `${ISL}/tikehau` }, { name: "The whole chain", href: `${ISL}/tuamotu` }] },
+  { key: "marquesas", name: "The Marquesas", line: "Far to the north east: sheer volcanic islands with no fringing reef, a UNESCO World Heritage landscape and a living culture.",
+    facts: ["Nuku Hiva is the gateway, by Air Tahiti", "Matavaa o te Fenua Enata, the arts festival, every two years"],
+    islands: [{ name: "Nuku Hiva and the Marquesas", href: `${ISL}/marquesas` }] },
+  { key: "austral", name: "The Austral Islands", line: "Four hundred miles south west of Tahiti: seven islands, five lived on, and humpbacks you can watch from the shore on Rurutu.",
+    facts: ["Air Tahiti flies to Tubuai, Rurutu, Raivavae and Rimatara; Rapa by the Aranui", "Humpbacks July to October, especially Rurutu and Tubuai", "Cooler June to September, often under 20°C"],
+    islands: [{ name: "Rurutu, Tubuai, Raivavae, Rimatara, Rapa", href: null }] },
+  { key: "gambier", name: "The Gambier Islands", line: "Nearly a thousand miles south east: Mangareva, pearl farms, and a cathedral built of coral in 1848.",
+    facts: ["Air Tahiti twice a week, 3 hours 40, then 40 minutes by boat to Rikitea", "Saint Michel's Cathedral, its altar inlaid with pearl and mother of pearl", "Warmest for the lagoon November to May"],
+    islands: [{ name: "Mangareva and the Gambier lagoon", href: null }] },
+];
+
+export type SeasonRow = { label: string; note: string; months: ("best" | "good" | "off")[] };
+const SM = (s: string) => s.split("").map((c) => (c === "B" ? "best" : c === "g" ? "good" : "off")) as SeasonRow["months"];
+export const SEASONS: SeasonRow[] = [
+  { label: "Dry season", note: "May to October: sunny days, lower humidity, light breezes", months: SM("ggggBBBBBBgg") },
+  { label: "Humpback whales", note: "July to November in the Society Islands; July to October in the Austral Islands", months: SM("------BBBBB-") },
+  { label: "Surf, Teahupo'o", note: "Southern swells May to October; the contest in August", months: SM("ggggBBBBBBgg") },
+  { label: "Tuamotu diving", note: "High season June to September; groupers spawn in Fakarava in June", months: SM("gggggBBBBggg") },
+  { label: "Quieter atolls", note: "February to April, more choice of rooms in the Tuamotu", months: SM("-BBB--------") },
+  { label: "Heiva i Tahiti", note: "July: song, dance and traditional sports", months: SM("------B-----") },
+  { label: "Gambier lagoon", note: "Warmest November to May", months: SM("BBBBB-----BB") },
+];
+export const WATER_C = [29, 29, 29, 29, 28, 28, 27, 27, 27, 27, 28, 28];
+
+export const FOUNDER_NOTE = {
+  eyebrow: "Founder's note · Tahiti since May 1996",
+  lines: [
+    "James first came to Tahiti in May 1996, after the Tahiti travel trade show, and spent six days touring the island with Moana David, surfing Teahupo'o when few surfers knew the wave existed.",
+    "He has surfed, dived and planned travel in these islands ever since. Taha'a is his favourite; he has sailed to Taha'a, Fakarava and Rangiroa with Windstar with his wife, Miriam, and in 2025 he vetted Vahine Private Island on its motu off Taha'a.",
+  ],
+};

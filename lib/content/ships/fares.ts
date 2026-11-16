@@ -7,7 +7,7 @@ import { cabinColour, cruiseOnly, dayLabel, isPackage, monthLabel, rateBasisOf, 
 // no dates of their own. Built from departures already filtered by lib/dates.ts.
 
 export type FareWindow = { key: string; label: string; sub?: string; prices: [string, number][]; count: number; plan: string; from: string; to: string };
-export type Sailing = { id: string; date: string; dateTo: string | null; day: string; month: string; when: string; route: string; routeLabel: string; nights: number | null; status: "Open" | "Few left" | "Full" | null; prices: [string, number][]; plan: string };
+export type Sailing = { id: string; date: string; dateTo: string | null; day: string; month: string; when: string; route: string; routeLabel: string; nights: number | null; status: "Open" | "Few left" | "Full" | null; prices: [string, number][]; plan: string; href?: string };
 export type DatesData = { windows: FareWindow[]; sailings: Sailing[]; routes: { name: string; label: string; colour: string }[]; cabins: { type: string; colour: string }[]; bands: boolean };
 
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -88,6 +88,7 @@ export function datesData(s: ShipRecord, plan: (what: string, date: string, full
       when: d.dateTo ? `${dayLabel(d.date)} to ${dayLabel(d.dateTo)}` : dayLabel(d.date), route: d.itinerary, routeLabel: routes.find((r) => r.name === d.itinerary)?.label ?? d.itinerary,
       nights: d.nights ?? s.itineraries.find((x) => x.name === d.itinerary)?.nights ?? null, status: st, prices: priced(d),
       plan: plan(`${undash(d.itinerary)}, ${s.name}`, d.dateTo ? `${d.date} to ${d.dateTo}` : d.date, st === "Full"),
+      ...(d.href ? { href: d.href } : {}),
     };
   });
   return { windows, sailings, routes, cabins, bands };

@@ -1,0 +1,2520 @@
+{
+ "slug": "seadream-ii",
+ "name": "SeaDream II",
+ "ledgerId": "VSL-2026-000054",
+ "brandLine": "SeaDream Yacht Club: 112 guests, 95 crew, a marina at the stern",
+ "operator": "SeaDream Yacht Club",
+ "type": "yacht",
+ "waters": "Caribbean, Bahamas and Mediterranean",
+ "country": "The Caribbean, the Bahamas and the Mediterranean",
+ "status": "sailing",
+ "seo": {
+  "title": "SeaDream II: Every Voyage, Stateroom and Fare | James Wild & Co",
+  "description": "SeaDream II, SeaDream Yacht Club's 112-guest yacht: 109 published voyages across The Caribbean, Transatlantic and The Mediterranean, each with its day by day and fares, from US$3,500 per person. Staterooms, suites and deck plans.",
+  "keywords": [
+   "SeaDream II",
+   "SeaDream Yacht Club",
+   "SeaDream II voyages",
+   "SeaDream II staterooms",
+   "SeaDream II deck plan",
+   "SeaDream Caribbean yacht",
+   "SeaDream Bahamas",
+   "small luxury yacht cruise",
+   "all inclusive yacht voyage"
+  ]
+ },
+ "tagline": "A hundred and twelve guests, ninety-five crew, and a marina that opens off the stern.",
+ "answer": "SeaDream II is one of SeaDream Yacht Club's twin yachts: 104.8 metres long, with 56 staterooms and suites for 112 guests and a crew of 95. Every stateroom faces the sea. Meals, an open bar, wines with lunch and dinner, gratuities and the marina's water toys are in the fare. SeaDream publishes 109 voyages for her, across The Caribbean, Transatlantic and The Mediterranean, with fares from US$3,500 per person, double occupancy. Each voyage has its own page here with its day by day and the fare of every stateroom and suite.",
+ "facts": [
+  [
+   "Guests",
+   "112, in 56 staterooms and suites"
+  ],
+  [
+   "Crew",
+   "95"
+  ],
+  [
+   "Length",
+   "104.8 m (343.8 ft), beam 18.2 m, draft 4.4 m"
+  ],
+  [
+   "Tonnage",
+   "4,333 gross tons"
+  ],
+  [
+   "Speed",
+   "15 knots"
+  ],
+  [
+   "Decks",
+   "Five guest decks, Deck 2 to Deck 6"
+  ],
+  [
+   "Refit",
+   "Upgraded 2023 to 2024; her construction began in 1984"
+  ],
+  [
+   "Marina",
+   "A platform at the stern on Deck 2, with the water toys"
+  ],
+  [
+   "Dining",
+   "The Dining Salon and the open-air Topside Restaurant"
+  ],
+  [
+   "Voyages",
+   "109 published, to 2029-05-12"
+  ]
+ ],
+ "glance": {
+  "guests": "112 guests, 95 crew",
+  "route": "Caribbean, Bahamas, Mediterranean, northern Europe",
+  "ages": "One year and over; no children's programme"
+ },
+ "overview": [
+  "SeaDream II and SeaDream I are twins, and small by design: 112 guests is a dinner party next to the ships that share their harbours. She calls at small yachting harbours and anchors off beaches, and her marina opens at the stern for kayaks, paddleboards and sailing dinghies.",
+  "Life aboard is mostly outdoors. Lunch and dinner are served to order at the Topside Restaurant when the weather allows, the pool is on Deck 3, and Deck 6 has the Balinese Dream Beds, which can be made up for a night under the stars, and the Top of the Yacht Bar.",
+  "Inside are the Dining Salon, the Main Salon, a library, the piano bar, a small casino, a fitness centre and the spa, which SeaDream describes as the only Thai-certified spa at sea. Yoga and Tai Chi on deck each morning are in the fare.",
+  "SeaDream also charters each yacht whole, for up to 56 couples, in the Caribbean or the Mediterranean."
+ ],
+ "why": [
+  "Small enough to anchor where the large ships cannot, with a marina at the waterline.",
+  "Close to one crew member for every guest: 95 crew for 112 guests.",
+  "The fare covers the things that usually become a bill: the bar, wine with meals, gratuities and the water toys.",
+  "Every stateroom and suite faces the sea, and the top deck beds can be made up for a night outside.",
+  "SeaDream publishes each voyage with its ports, times and the fare of every category, so the choice is made on facts.",
+  "Voyages run back to back, so two can be joined without changing yacht."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-2",
+  "alt": "SeaDream I and SeaDream II from the air, crossing a sunlit bay ringed by islands",
+  "credit": "SeaDream Yacht Club"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-6",
+   "alt": "SeaDream yacht at anchor beneath tall pale limestone cliffs",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-3",
+   "alt": "SeaDream yacht at anchor off a wooded shore, jet skis and a small sailing boat circling in her wake",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-7",
+   "alt": "The pool on deck at sunset, sun loungers along the rail and an island on the horizon",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-9",
+   "alt": "Balinese Dream Beds with navy cushions and rolled towels along the top deck, open sea beyond",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-12",
+   "alt": "The open-air Topside Restaurant: tables in white linen on teak decking under an awning",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-13",
+   "alt": "The Top of the Yacht Bar: a round wooden bar with stools and wicker armchairs, open to the sea",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-14",
+   "alt": "The Dining Salon: round tables laid with white linen, wood panelling and red curtains",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-18",
+   "alt": "The Main Salon: grey armchairs and low tables around a small stage under a mirrored ceiling",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-19",
+   "alt": "The library: bookshelves, plum armchairs and a round card table on a polished wood floor",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/site/yachts-20",
+   "alt": "The Piano Bar: a pianist at a bar built around the piano, a barman behind",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/jwco/voyages/ships/seadream/site/champagne-caviar-splash",
+   "alt": "SeaDream crew in bright shirts serving caviar from a surfboard in waist-deep water, the Champagne and Caviar Splash",
+   "credit": "SeaDream Yacht Club"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/jwco/voyages/ships/seadream/site/entire-ship",
+   "alt": "SeaDream yacht from directly above on dark blue water, the pool at her stern",
+   "credit": "SeaDream Yacht Club"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Yacht Club Stateroom (Deck 2)",
+   "count": null,
+   "size": "195 sq ft (18 sq m)",
+   "beds": "Twin beds or a queen",
+   "deck": "Deck 2",
+   "features": [
+    "Two round windows on the sea",
+    "Sofa, chair and cocktail table",
+    "Marble bathroom with a multi-jet shower"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/suites/yacht-club-stateroom-deck-2-1",
+    "alt": "Yacht Club Stateroom on Deck 2: a queen bed beneath two round portholes, a blue sofa and a desk with Champagne on ice",
+    "credit": "SeaDream Yacht Club"
+   }
+  },
+  {
+   "type": "Yacht Club Stateroom (Deck 3)",
+   "count": null,
+   "size": "195 sq ft (18 sq m)",
+   "beds": "Twin beds or a queen",
+   "deck": "Deck 3",
+   "features": [
+    "Picture window on the sea",
+    "Sofa, chair and cocktail table",
+    "Marble bathroom, a multi-jet shower in select staterooms",
+    "Steps from the pool"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/suites/yacht-club-stateroom-deck-3-4-1",
+    "alt": "Yacht Club Stateroom on Deck 3: a bed beside a picture window on the sea, a blue sofa and a wooden desk",
+    "credit": "SeaDream Yacht Club"
+   }
+  },
+  {
+   "type": "Yacht Club Stateroom (Deck 4)",
+   "count": null,
+   "size": "195 sq ft (18 sq m)",
+   "beds": "Twin beds or a queen",
+   "deck": "Deck 4",
+   "features": [
+    "Picture window on the sea",
+    "Sofa, chair and cocktail table",
+    "Near the spa, the fitness centre and the library"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/suites/yacht-club-stateroom-deck-3-4-3",
+    "alt": "Yacht Club Stateroom: a bed in white linen beside a picture window on open sea",
+    "credit": "SeaDream Yacht Club"
+   }
+  },
+  {
+   "type": "Commodore Suite (Deck 2)",
+   "count": null,
+   "size": "390 sq ft (36 sq m)",
+   "beds": "A queen, with room for a second permanent queen or a dining area",
+   "deck": "Deck 2",
+   "features": [
+    "Two Yacht Club Staterooms joined",
+    "Two marble bathrooms with multi-jet showers",
+    "Two closets, a sitting area and a desk"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/suites/commodore-suite-deck-2-1",
+    "alt": "Commodore Suite on Deck 2: a bedroom and a sitting room divided by a curtain, blue sofas and a round table",
+    "credit": "SeaDream Yacht Club"
+   }
+  },
+  {
+   "type": "Commodore Suite (Deck 3)",
+   "count": null,
+   "size": "390 sq ft (36 sq m)",
+   "beds": "A queen, with room for a second permanent queen or a dining area",
+   "deck": "Deck 3",
+   "features": [
+    "Two Yacht Club Staterooms joined",
+    "Two marble bathrooms with multi-jet showers",
+    "Picture windows on the sea"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/suites/commodore-suite-deck-3-2",
+    "alt": "Commodore Suite on Deck 3: a queen bed beside a wide picture window on the sea",
+    "credit": "SeaDream Yacht Club"
+   }
+  },
+  {
+   "type": "Admiral Suite",
+   "count": 1,
+   "size": "375 sq ft (35 sq m)",
+   "beds": "Queen, in a separate bedroom",
+   "deck": "Deck 4",
+   "features": [
+    "Three picture windows",
+    "Living and dining area, and a guest half bath",
+    "Marble bathroom with a soaking tub and a multi-jet shower"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/suites/admirals-suite-1",
+    "alt": "Admiral Suite: a dining table and sitting area with honey wood shelving, the bedroom through a doorway",
+    "credit": "SeaDream Yacht Club"
+   }
+  },
+  {
+   "type": "Owner's Suite",
+   "count": 1,
+   "size": "447 sq ft (42 sq m)",
+   "beds": "Queen, in a separate bedroom",
+   "deck": "Deck 3",
+   "features": [
+    "Living and dining area",
+    "Bathroom with a soaking tub facing the sea and a massage shower"
+   ],
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/suites/owners-suite-1",
+    "alt": "Owner's Suite living room: a sofa, armchairs and a writing desk beneath windows on the sea",
+    "credit": "SeaDream Yacht Club"
+   }
+  }
+ ],
+ "deckPlans": [
+  {
+   "deck": "Deck 2",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/deck-2",
+    "alt": "Deck plan of Deck 2 aboard SeaDream II",
+    "credit": "SeaDream Yacht Club"
+   },
+   "cabins": [
+    "Yacht Club Stateroom (Deck 2)",
+    "Commodore Suite (Deck 2)"
+   ]
+  },
+  {
+   "deck": "Deck 3",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/deck-3",
+    "alt": "Deck plan of Deck 3 aboard SeaDream II",
+    "credit": "SeaDream Yacht Club"
+   },
+   "cabins": [
+    "Yacht Club Stateroom (Deck 3)",
+    "Commodore Suite (Deck 3)",
+    "Owner's Suite"
+   ]
+  },
+  {
+   "deck": "Deck 4",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/deck-4",
+    "alt": "Deck plan of Deck 4 aboard SeaDream II",
+    "credit": "SeaDream Yacht Club"
+   },
+   "cabins": [
+    "Yacht Club Stateroom (Deck 4)",
+    "Admiral Suite"
+   ]
+  },
+  {
+   "deck": "Deck 5",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/deck-5",
+    "alt": "Deck plan of Deck 5 aboard SeaDream II",
+    "credit": "SeaDream Yacht Club"
+   },
+   "cabins": []
+  },
+  {
+   "deck": "Deck 6",
+   "image": {
+    "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_sharpen:40/f_auto,q_auto/jwco/voyages/ships/seadream/deck-6",
+    "alt": "Deck plan of Deck 6 aboard SeaDream II",
+    "credit": "SeaDream Yacht Club"
+   },
+   "cabins": []
+  }
+ ],
+ "itineraries": [],
+ "departures": [
+  {
+   "date": "2026-12-12",
+   "dateTo": "2026-12-19",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie to San Juan",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5220,
+    "Yacht Club Stateroom (Deck 3)": 5520,
+    "Yacht Club Stateroom (Deck 4)": 5820,
+    "Commodore Suite (Deck 2)": 10720,
+    "Commodore Suite (Deck 3)": 11420,
+    "Admiral Suite": 14920,
+    "Owner's Suite": 15720
+   },
+   "voyage": "22641",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2026-12-12"
+  },
+  {
+   "date": "2026-12-19",
+   "dateTo": "2026-12-27",
+   "itinerary": "Caribbean Celebration II",
+   "direction": "San Juan round trip",
+   "nights": 8,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7080,
+    "Yacht Club Stateroom (Deck 3)": 7380,
+    "Yacht Club Stateroom (Deck 4)": 7880,
+    "Commodore Suite (Deck 2)": 14680,
+    "Commodore Suite (Deck 3)": 15280,
+    "Admiral Suite": 20480,
+    "Owner's Suite": 21580
+   },
+   "voyage": "22642",
+   "href": "/voyages/ships/seadream-ii/caribbean-celebration-ii-2026-12-19"
+  },
+  {
+   "date": "2026-12-27",
+   "dateTo": "2027-01-03",
+   "itinerary": "Tropical New Year's II",
+   "direction": "San Juan to Charlotte Amalie",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 11620,
+    "Yacht Club Stateroom (Deck 3)": 12220,
+    "Yacht Club Stateroom (Deck 4)": 12920,
+    "Commodore Suite (Deck 2)": 24520,
+    "Commodore Suite (Deck 3)": 25820,
+    "Admiral Suite": 34320,
+    "Owner's Suite": 36120
+   },
+   "voyage": "22701",
+   "href": "/voyages/ships/seadream-ii/tropical-new-year-s-ii-2026-12-27"
+  },
+  {
+   "date": "2027-01-03",
+   "dateTo": "2027-01-10",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6220,
+    "Yacht Club Stateroom (Deck 3)": 6520,
+    "Yacht Club Stateroom (Deck 4)": 6920,
+    "Commodore Suite (Deck 2)": 12920,
+    "Commodore Suite (Deck 3)": 13520,
+    "Admiral Suite": 17920,
+    "Owner's Suite": 18920
+   },
+   "voyage": "22702",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-01-03"
+  },
+  {
+   "date": "2027-01-10",
+   "dateTo": "2027-01-17",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5920,
+    "Yacht Club Stateroom (Deck 3)": 6220,
+    "Yacht Club Stateroom (Deck 4)": 6620,
+    "Commodore Suite (Deck 2)": 12220,
+    "Commodore Suite (Deck 3)": 12920,
+    "Admiral Suite": 17020,
+    "Owner's Suite": 17920
+   },
+   "voyage": "22703",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-01-10"
+  },
+  {
+   "date": "2027-01-24",
+   "dateTo": "2027-01-31",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6020,
+    "Yacht Club Stateroom (Deck 3)": 6320,
+    "Yacht Club Stateroom (Deck 4)": 6720,
+    "Commodore Suite (Deck 2)": 12420,
+    "Commodore Suite (Deck 3)": 13120,
+    "Admiral Suite": 17320,
+    "Owner's Suite": 18320
+   },
+   "voyage": "22705",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-01-24"
+  },
+  {
+   "date": "2027-01-31",
+   "dateTo": "2027-02-07",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie to Philipsburg",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5520,
+    "Yacht Club Stateroom (Deck 3)": 5820,
+    "Yacht Club Stateroom (Deck 4)": 6120,
+    "Commodore Suite (Deck 2)": 11420,
+    "Commodore Suite (Deck 3)": 12020,
+    "Admiral Suite": 15820,
+    "Owner's Suite": 16720
+   },
+   "voyage": "22706A",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-01-31"
+  },
+  {
+   "date": "2027-02-07",
+   "dateTo": "2027-02-14",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Philipsburg to Marigot",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6220,
+    "Yacht Club Stateroom (Deck 3)": 6520,
+    "Yacht Club Stateroom (Deck 4)": 6920,
+    "Commodore Suite (Deck 2)": 12920,
+    "Commodore Suite (Deck 3)": 13520,
+    "Admiral Suite": 17920,
+    "Owner's Suite": 18920
+   },
+   "voyage": "22707A",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-02-07"
+  },
+  {
+   "date": "2027-02-14",
+   "dateTo": "2027-02-21",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Marigot to Charlotte Amalie",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6520,
+    "Yacht Club Stateroom (Deck 3)": 6820,
+    "Yacht Club Stateroom (Deck 4)": 7220,
+    "Commodore Suite (Deck 2)": 13520,
+    "Commodore Suite (Deck 3)": 14220,
+    "Admiral Suite": 18920,
+    "Owner's Suite": 19920
+   },
+   "voyage": "22708",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-02-14"
+  },
+  {
+   "date": "2027-02-27",
+   "dateTo": "2027-03-07",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 8,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6580,
+    "Yacht Club Stateroom (Deck 3)": 6880,
+    "Yacht Club Stateroom (Deck 4)": 7280,
+    "Commodore Suite (Deck 2)": 13580,
+    "Commodore Suite (Deck 3)": 14280,
+    "Admiral Suite": 18980,
+    "Owner's Suite": 19980
+   },
+   "voyage": "22710A",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-02-27"
+  },
+  {
+   "date": "2027-03-07",
+   "dateTo": "2027-03-13",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie to San Juan",
+   "nights": 6,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5760,
+    "Yacht Club Stateroom (Deck 3)": 6060,
+    "Yacht Club Stateroom (Deck 4)": 6360,
+    "Commodore Suite (Deck 2)": 11960,
+    "Commodore Suite (Deck 3)": 12660,
+    "Admiral Suite": 16660,
+    "Owner's Suite": 17560
+   },
+   "voyage": "22711",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-03-07"
+  },
+  {
+   "date": "2027-03-13",
+   "dateTo": "2027-03-20",
+   "itinerary": "Yachting the Bahamas",
+   "direction": "San Juan to Palm Beach",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7920,
+    "Yacht Club Stateroom (Deck 3)": 8320,
+    "Yacht Club Stateroom (Deck 4)": 8820,
+    "Commodore Suite (Deck 2)": 16520,
+    "Commodore Suite (Deck 3)": 17420,
+    "Admiral Suite": 23120,
+    "Owner's Suite": 24320
+   },
+   "voyage": "22712",
+   "href": "/voyages/ships/seadream-ii/yachting-the-bahamas-2027-03-13"
+  },
+  {
+   "date": "2027-03-20",
+   "dateTo": "2027-03-27",
+   "itinerary": "Bountiful Bahamas",
+   "direction": "Palm Beach round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7720,
+    "Yacht Club Stateroom (Deck 3)": 8120,
+    "Yacht Club Stateroom (Deck 4)": 8620,
+    "Commodore Suite (Deck 2)": 16120,
+    "Commodore Suite (Deck 3)": 17020,
+    "Admiral Suite": 22520,
+    "Owner's Suite": 23720
+   },
+   "voyage": "22713",
+   "href": "/voyages/ships/seadream-ii/bountiful-bahamas-2027-03-20"
+  },
+  {
+   "date": "2027-03-27",
+   "dateTo": "2027-04-03",
+   "itinerary": "Bountiful Bahamas",
+   "direction": "Palm Beach round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7420,
+    "Yacht Club Stateroom (Deck 3)": 7820,
+    "Yacht Club Stateroom (Deck 4)": 8220,
+    "Commodore Suite (Deck 2)": 15420,
+    "Commodore Suite (Deck 3)": 16320,
+    "Admiral Suite": 21620,
+    "Owner's Suite": 22720
+   },
+   "voyage": "22714",
+   "href": "/voyages/ships/seadream-ii/bountiful-bahamas-2027-03-27"
+  },
+  {
+   "date": "2027-04-03",
+   "dateTo": "2027-04-10",
+   "itinerary": "Bountiful Bahamas",
+   "direction": "Palm Beach round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7720,
+    "Yacht Club Stateroom (Deck 3)": 8120,
+    "Yacht Club Stateroom (Deck 4)": 8620,
+    "Commodore Suite (Deck 2)": 16120,
+    "Commodore Suite (Deck 3)": 17020,
+    "Admiral Suite": 22520,
+    "Owner's Suite": 23720
+   },
+   "voyage": "22715",
+   "href": "/voyages/ships/seadream-ii/bountiful-bahamas-2027-04-03"
+  },
+  {
+   "date": "2027-04-10",
+   "dateTo": "2027-04-24",
+   "itinerary": "Transatlantic Spring Voyage II",
+   "direction": "Palm Beach to Lisbon",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4860,
+    "Yacht Club Stateroom (Deck 3)": 5060,
+    "Yacht Club Stateroom (Deck 4)": 5360,
+    "Commodore Suite (Deck 2)": 9760,
+    "Commodore Suite (Deck 3)": 10260,
+    "Admiral Suite": 13560,
+    "Owner's Suite": 14260
+   },
+   "voyage": "22716",
+   "href": "/voyages/ships/seadream-ii/transatlantic-spring-voyage-ii-2027-04-10"
+  },
+  {
+   "date": "2027-04-24",
+   "dateTo": "2027-05-02",
+   "itinerary": "Western Mediterranean Explorer",
+   "direction": "Lisbon to Malaga",
+   "nights": 8,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7180,
+    "Yacht Club Stateroom (Deck 3)": 7580,
+    "Yacht Club Stateroom (Deck 4)": 7980,
+    "Commodore Suite (Deck 2)": 14880,
+    "Commodore Suite (Deck 3)": 15780,
+    "Admiral Suite": 20780,
+    "Owner's Suite": 21880
+   },
+   "voyage": "22717",
+   "href": "/voyages/ships/seadream-ii/western-mediterranean-explorer-2027-04-24"
+  },
+  {
+   "date": "2027-04-24",
+   "dateTo": "2027-05-16",
+   "itinerary": "Grand Mediterranean & Riviera Escape",
+   "direction": "Lisbon to Rome (Civitavecchia)",
+   "nights": 22,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 20620,
+    "Yacht Club Stateroom (Deck 3)": 21740,
+    "Yacht Club Stateroom (Deck 4)": 22950,
+    "Commodore Suite (Deck 2)": 42810,
+    "Commodore Suite (Deck 3)": 45240,
+    "Admiral Suite": 59780,
+    "Owner's Suite": 62950
+   },
+   "voyage": "G22717",
+   "href": "/voyages/ships/seadream-ii/grand-mediterranean-and-riviera-escape-2027-04-24"
+  },
+  {
+   "date": "2027-05-02",
+   "dateTo": "2027-05-09",
+   "itinerary": "Southern Spain & the French Riviera",
+   "direction": "Malaga to Nice",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7620,
+    "Yacht Club Stateroom (Deck 3)": 8020,
+    "Yacht Club Stateroom (Deck 4)": 8520,
+    "Commodore Suite (Deck 2)": 15920,
+    "Commodore Suite (Deck 3)": 16720,
+    "Admiral Suite": 22220,
+    "Owner's Suite": 23420
+   },
+   "voyage": "22718",
+   "href": "/voyages/ships/seadream-ii/southern-spain-and-the-french-riviera-2027-05-02"
+  },
+  {
+   "date": "2027-05-09",
+   "dateTo": "2027-05-16",
+   "itinerary": "Italian Riviera Wine Voyage",
+   "direction": "Nice to Rome (Civitavecchia)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7220,
+    "Yacht Club Stateroom (Deck 3)": 7620,
+    "Yacht Club Stateroom (Deck 4)": 8020,
+    "Commodore Suite (Deck 2)": 15020,
+    "Commodore Suite (Deck 3)": 15920,
+    "Admiral Suite": 21020,
+    "Owner's Suite": 22120
+   },
+   "voyage": "22719",
+   "href": "/voyages/ships/seadream-ii/italian-riviera-wine-voyage-2027-05-09"
+  },
+  {
+   "date": "2027-05-16",
+   "dateTo": "2027-05-23",
+   "itinerary": "French Riviera & Corsica Dream",
+   "direction": "Rome (Civitavecchia) to Nice",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8020,
+    "Yacht Club Stateroom (Deck 3)": 8420,
+    "Yacht Club Stateroom (Deck 4)": 8920,
+    "Commodore Suite (Deck 2)": 16720,
+    "Commodore Suite (Deck 3)": 17620,
+    "Admiral Suite": 23420,
+    "Owner's Suite": 24620
+   },
+   "voyage": "22720",
+   "href": "/voyages/ships/seadream-ii/french-riviera-and-corsica-dream-2027-05-16"
+  },
+  {
+   "date": "2027-05-31",
+   "dateTo": "2027-06-07",
+   "itinerary": "Corsica & the Monaco Grand Prix",
+   "direction": "Nice round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 12720,
+    "Yacht Club Stateroom (Deck 3)": 13420,
+    "Yacht Club Stateroom (Deck 4)": 14220,
+    "Commodore Suite (Deck 2)": 26820,
+    "Commodore Suite (Deck 3)": 28320,
+    "Admiral Suite": 37620,
+    "Owner's Suite": 39620
+   },
+   "voyage": "22722",
+   "href": "/voyages/ships/seadream-ii/corsica-and-the-monaco-grand-prix-2027-05-31"
+  },
+  {
+   "date": "2027-06-17",
+   "dateTo": "2027-06-27",
+   "itinerary": "Yachting the Adriatic",
+   "direction": "Venice to Athens (Piraeus)",
+   "nights": 10,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 17700,
+    "Yacht Club Stateroom (Deck 3)": 18600,
+    "Yacht Club Stateroom (Deck 4)": 19800,
+    "Commodore Suite (Deck 2)": 37400,
+    "Commodore Suite (Deck 3)": 39300,
+    "Admiral Suite": 52300,
+    "Owner's Suite": 55100
+   },
+   "voyage": "22724",
+   "href": "/voyages/ships/seadream-ii/yachting-the-adriatic-2027-06-17"
+  },
+  {
+   "date": "2027-06-27",
+   "dateTo": "2027-07-04",
+   "itinerary": "The Greek Isles & Ephesus",
+   "direction": "Athens (Piraeus) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8520,
+    "Yacht Club Stateroom (Deck 3)": 8920,
+    "Yacht Club Stateroom (Deck 4)": 9520,
+    "Commodore Suite (Deck 2)": 17820,
+    "Commodore Suite (Deck 3)": 18720,
+    "Admiral Suite": 24920,
+    "Owner's Suite": 26220
+   },
+   "voyage": "22725",
+   "href": "/voyages/ships/seadream-ii/the-greek-isles-and-ephesus-2027-06-27"
+  },
+  {
+   "date": "2027-07-04",
+   "dateTo": "2027-07-11",
+   "itinerary": "Yachting the Greek Isles",
+   "direction": "Athens (Piraeus) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8120,
+    "Yacht Club Stateroom (Deck 3)": 8520,
+    "Yacht Club Stateroom (Deck 4)": 9020,
+    "Commodore Suite (Deck 2)": 17020,
+    "Commodore Suite (Deck 3)": 17820,
+    "Admiral Suite": 23720,
+    "Owner's Suite": 25020
+   },
+   "voyage": "22726",
+   "href": "/voyages/ships/seadream-ii/yachting-the-greek-isles-2027-07-04"
+  },
+  {
+   "date": "2027-07-11",
+   "dateTo": "2027-07-18",
+   "itinerary": "Classic Greece & the Amalfi Coast",
+   "direction": "Athens (Piraeus) to Rome (Civitavecchia)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 10120,
+    "Yacht Club Stateroom (Deck 3)": 10620,
+    "Yacht Club Stateroom (Deck 4)": 11320,
+    "Commodore Suite (Deck 2)": 21320,
+    "Commodore Suite (Deck 3)": 22320,
+    "Admiral Suite": 29720,
+    "Owner's Suite": 31320
+   },
+   "voyage": "22727",
+   "href": "/voyages/ships/seadream-ii/classic-greece-and-the-amalfi-coast-2027-07-11"
+  },
+  {
+   "date": "2027-07-18",
+   "dateTo": "2027-07-25",
+   "itinerary": "Corsica & the Amalfi Coast",
+   "direction": "Rome (Civitavecchia) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8220,
+    "Yacht Club Stateroom (Deck 3)": 8620,
+    "Yacht Club Stateroom (Deck 4)": 9120,
+    "Commodore Suite (Deck 2)": 17220,
+    "Commodore Suite (Deck 3)": 18020,
+    "Admiral Suite": 24020,
+    "Owner's Suite": 25320
+   },
+   "voyage": "22728",
+   "href": "/voyages/ships/seadream-ii/corsica-and-the-amalfi-coast-2027-07-18"
+  },
+  {
+   "date": "2027-07-25",
+   "dateTo": "2027-08-01",
+   "itinerary": "The Amalfi Coast & Sicily",
+   "direction": "Rome (Civitavecchia) to Valletta",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8420,
+    "Yacht Club Stateroom (Deck 3)": 8820,
+    "Yacht Club Stateroom (Deck 4)": 9420,
+    "Commodore Suite (Deck 2)": 17620,
+    "Commodore Suite (Deck 3)": 18520,
+    "Admiral Suite": 24620,
+    "Owner's Suite": 25920
+   },
+   "voyage": "22729",
+   "href": "/voyages/ships/seadream-ii/the-amalfi-coast-and-sicily-2027-07-25"
+  },
+  {
+   "date": "2027-08-01",
+   "dateTo": "2027-08-08",
+   "itinerary": "Solar Eclipse Sojourn",
+   "direction": "Valletta to Rome (Civitavecchia)",
+   "nights": 7,
+   "status": "Full",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 12520,
+    "Yacht Club Stateroom (Deck 3)": 13120,
+    "Yacht Club Stateroom (Deck 4)": 14020,
+    "Commodore Suite (Deck 2)": 26420,
+    "Commodore Suite (Deck 3)": 27720,
+    "Admiral Suite": 37020,
+    "Owner's Suite": 39020
+   },
+   "voyage": "22730",
+   "href": "/voyages/ships/seadream-ii/solar-eclipse-sojourn-2027-08-01"
+  },
+  {
+   "date": "2027-08-08",
+   "dateTo": "2027-08-15",
+   "itinerary": "French & Italian Riviera Dream",
+   "direction": "Rome (Civitavecchia) to Nice",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7420,
+    "Yacht Club Stateroom (Deck 3)": 7820,
+    "Yacht Club Stateroom (Deck 4)": 8220,
+    "Commodore Suite (Deck 2)": 15420,
+    "Commodore Suite (Deck 3)": 16320,
+    "Admiral Suite": 21620,
+    "Owner's Suite": 22720
+   },
+   "voyage": "22731",
+   "href": "/voyages/ships/seadream-ii/french-and-italian-riviera-dream-2027-08-08"
+  },
+  {
+   "date": "2027-08-15",
+   "dateTo": "2027-08-22",
+   "itinerary": "French & Italian Wine Voyage",
+   "direction": "Nice to Rome (Civitavecchia)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7620,
+    "Yacht Club Stateroom (Deck 3)": 8020,
+    "Yacht Club Stateroom (Deck 4)": 8520,
+    "Commodore Suite (Deck 2)": 15920,
+    "Commodore Suite (Deck 3)": 16720,
+    "Admiral Suite": 22220,
+    "Owner's Suite": 23420
+   },
+   "voyage": "22732",
+   "href": "/voyages/ships/seadream-ii/french-and-italian-wine-voyage-2027-08-15"
+  },
+  {
+   "date": "2027-08-15",
+   "dateTo": "2027-09-02",
+   "itinerary": "Grand Mediterranean & Adriatic Dream",
+   "direction": "Nice to Venice",
+   "nights": 18,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 20520,
+    "Yacht Club Stateroom (Deck 3)": 21550,
+    "Yacht Club Stateroom (Deck 4)": 22860,
+    "Commodore Suite (Deck 2)": 42860,
+    "Commodore Suite (Deck 3)": 45010,
+    "Admiral Suite": 59870,
+    "Owner's Suite": 63140
+   },
+   "voyage": "G22732",
+   "href": "/voyages/ships/seadream-ii/grand-mediterranean-and-adriatic-dream-2027-08-15"
+  },
+  {
+   "date": "2027-08-22",
+   "dateTo": "2027-09-02",
+   "itinerary": "Mediterranean & Adriatic Explorer",
+   "direction": "Rome (Civitavecchia) to Venice",
+   "nights": 11,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 14260,
+    "Yacht Club Stateroom (Deck 3)": 14960,
+    "Yacht Club Stateroom (Deck 4)": 15860,
+    "Commodore Suite (Deck 2)": 29860,
+    "Commodore Suite (Deck 3)": 31360,
+    "Admiral Suite": 41760,
+    "Owner's Suite": 44060
+   },
+   "voyage": "22733",
+   "href": "/voyages/ships/seadream-ii/mediterranean-and-adriatic-explorer-2027-08-22"
+  },
+  {
+   "date": "2027-09-02",
+   "dateTo": "2027-09-12",
+   "itinerary": "Yachting the Adriatic",
+   "direction": "Venice to Athens (Piraeus)",
+   "nights": 10,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 16900,
+    "Yacht Club Stateroom (Deck 3)": 17800,
+    "Yacht Club Stateroom (Deck 4)": 18900,
+    "Commodore Suite (Deck 2)": 35600,
+    "Commodore Suite (Deck 3)": 37600,
+    "Admiral Suite": 49900,
+    "Owner's Suite": 52600
+   },
+   "voyage": "22734",
+   "href": "/voyages/ships/seadream-ii/yachting-the-adriatic-2027-09-02"
+  },
+  {
+   "date": "2027-09-12",
+   "dateTo": "2027-09-19",
+   "itinerary": "The Greek Isles & Ephesus",
+   "direction": "Athens (Piraeus) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 10220,
+    "Yacht Club Stateroom (Deck 3)": 10720,
+    "Yacht Club Stateroom (Deck 4)": 11420,
+    "Commodore Suite (Deck 2)": 21520,
+    "Commodore Suite (Deck 3)": 22520,
+    "Admiral Suite": 30020,
+    "Owner's Suite": 31720
+   },
+   "voyage": "22735",
+   "href": "/voyages/ships/seadream-ii/the-greek-isles-and-ephesus-2027-09-12"
+  },
+  {
+   "date": "2027-09-19",
+   "dateTo": "2027-09-26",
+   "itinerary": "Yachting the Greek Isles",
+   "direction": "Athens (Piraeus) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 9920,
+    "Yacht Club Stateroom (Deck 3)": 10420,
+    "Yacht Club Stateroom (Deck 4)": 11020,
+    "Commodore Suite (Deck 2)": 20820,
+    "Commodore Suite (Deck 3)": 21920,
+    "Admiral Suite": 29120,
+    "Owner's Suite": 30720
+   },
+   "voyage": "22736",
+   "href": "/voyages/ships/seadream-ii/yachting-the-greek-isles-2027-09-19"
+  },
+  {
+   "date": "2027-09-26",
+   "dateTo": "2027-10-03",
+   "itinerary": "Classic Greece & the Amalfi Coast",
+   "direction": "Athens (Piraeus) to Rome (Civitavecchia)",
+   "nights": 7,
+   "status": "Full",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 12720,
+    "Yacht Club Stateroom (Deck 3)": 13420,
+    "Yacht Club Stateroom (Deck 4)": 14220,
+    "Commodore Suite (Deck 2)": 26820,
+    "Commodore Suite (Deck 3)": 28320,
+    "Admiral Suite": 37620,
+    "Owner's Suite": 39620
+   },
+   "voyage": "22737",
+   "href": "/voyages/ships/seadream-ii/classic-greece-and-the-amalfi-coast-2027-09-26"
+  },
+  {
+   "date": "2027-10-03",
+   "dateTo": "2027-10-10",
+   "itinerary": "Corsica & the Amalfi Coast",
+   "direction": "Rome (Civitavecchia) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8920,
+    "Yacht Club Stateroom (Deck 3)": 9420,
+    "Yacht Club Stateroom (Deck 4)": 9920,
+    "Commodore Suite (Deck 2)": 18720,
+    "Commodore Suite (Deck 3)": 19720,
+    "Admiral Suite": 26120,
+    "Owner's Suite": 27520
+   },
+   "voyage": "22738",
+   "href": "/voyages/ships/seadream-ii/corsica-and-the-amalfi-coast-2027-10-03"
+  },
+  {
+   "date": "2027-10-17",
+   "dateTo": "2027-10-24",
+   "itinerary": "Western Mediterranean Delight",
+   "direction": "Nice to Malaga",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7320,
+    "Yacht Club Stateroom (Deck 3)": 7720,
+    "Yacht Club Stateroom (Deck 4)": 8120,
+    "Commodore Suite (Deck 2)": 15220,
+    "Commodore Suite (Deck 3)": 16120,
+    "Admiral Suite": 21320,
+    "Owner's Suite": 22420
+   },
+   "voyage": "22740A",
+   "href": "/voyages/ships/seadream-ii/western-mediterranean-delight-2027-10-17"
+  },
+  {
+   "date": "2027-10-24",
+   "dateTo": "2027-11-07",
+   "itinerary": "Transatlantic Autumn Voyage II",
+   "direction": "Malaga to San Juan",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5660,
+    "Yacht Club Stateroom (Deck 3)": 5960,
+    "Yacht Club Stateroom (Deck 4)": 6260,
+    "Commodore Suite (Deck 2)": 11560,
+    "Commodore Suite (Deck 3)": 12160,
+    "Admiral Suite": 15960,
+    "Owner's Suite": 16860
+   },
+   "voyage": "22741A",
+   "href": "/voyages/ships/seadream-ii/transatlantic-autumn-voyage-ii-2027-10-24"
+  },
+  {
+   "date": "2027-11-07",
+   "dateTo": "2027-11-13",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "San Juan round trip",
+   "nights": 6,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 3960,
+    "Yacht Club Stateroom (Deck 3)": 4160,
+    "Yacht Club Stateroom (Deck 4)": 4360,
+    "Commodore Suite (Deck 2)": 8060,
+    "Commodore Suite (Deck 3)": 8560,
+    "Admiral Suite": 11260,
+    "Owner's Suite": 11860
+   },
+   "voyage": "22742",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2027-11-07"
+  },
+  {
+   "date": "2027-11-13",
+   "dateTo": "2027-11-20",
+   "itinerary": "Best of the Virgin Islands & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4220,
+    "Yacht Club Stateroom (Deck 3)": 4420,
+    "Yacht Club Stateroom (Deck 4)": 4720,
+    "Commodore Suite (Deck 2)": 8620,
+    "Commodore Suite (Deck 3)": 9020,
+    "Admiral Suite": 11920,
+    "Owner's Suite": 12520
+   },
+   "voyage": "22743",
+   "href": "/voyages/ships/seadream-ii/best-of-the-virgin-islands-and-st-barths-2027-11-13"
+  },
+  {
+   "date": "2027-11-20",
+   "dateTo": "2027-11-27",
+   "itinerary": "Best of British Virgin Isles & St. Barths",
+   "direction": "San Juan to Philipsburg",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 3719,
+    "Yacht Club Stateroom (Deck 3)": 3919,
+    "Yacht Club Stateroom (Deck 4)": 4119,
+    "Commodore Suite (Deck 2)": 7519,
+    "Commodore Suite (Deck 3)": 7919,
+    "Admiral Suite": 9519,
+    "Owner's Suite": 10019
+   },
+   "voyage": "22744",
+   "href": "/voyages/ships/seadream-ii/best-of-british-virgin-isles-and-st-barths-2027-11-20"
+  },
+  {
+   "date": "2027-11-27",
+   "dateTo": "2027-12-04",
+   "itinerary": "British & French Islands Explorer",
+   "direction": "Philipsburg to San Juan",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 3820,
+    "Yacht Club Stateroom (Deck 3)": 4020,
+    "Yacht Club Stateroom (Deck 4)": 4220,
+    "Commodore Suite (Deck 2)": 7720,
+    "Commodore Suite (Deck 3)": 8120,
+    "Admiral Suite": 10720,
+    "Owner's Suite": 11220
+   },
+   "voyage": "22745",
+   "href": "/voyages/ships/seadream-ii/british-and-french-islands-explorer-2027-11-27"
+  },
+  {
+   "date": "2027-12-04",
+   "dateTo": "2027-12-11",
+   "itinerary": "Best of the Virgin Islands & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4320,
+    "Yacht Club Stateroom (Deck 3)": 4520,
+    "Yacht Club Stateroom (Deck 4)": 4820,
+    "Commodore Suite (Deck 2)": 8820,
+    "Commodore Suite (Deck 3)": 9220,
+    "Admiral Suite": 12220,
+    "Owner's Suite": 12820
+   },
+   "voyage": "22746",
+   "href": "/voyages/ships/seadream-ii/best-of-the-virgin-islands-and-st-barths-2027-12-04"
+  },
+  {
+   "date": "2027-12-11",
+   "dateTo": "2027-12-19",
+   "itinerary": "Best of the Virgin Islands & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 8,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4679,
+    "Yacht Club Stateroom (Deck 3)": 4879,
+    "Yacht Club Stateroom (Deck 4)": 5179,
+    "Commodore Suite (Deck 2)": 9479,
+    "Commodore Suite (Deck 3)": 9979,
+    "Admiral Suite": 11979,
+    "Owner's Suite": 12679
+   },
+   "voyage": "22747",
+   "href": "/voyages/ships/seadream-ii/best-of-the-virgin-islands-and-st-barths-2027-12-11"
+  },
+  {
+   "date": "2027-12-19",
+   "dateTo": "2027-12-27",
+   "itinerary": "Caribbean Celebration II",
+   "direction": "San Juan round trip",
+   "nights": 8,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5180,
+    "Yacht Club Stateroom (Deck 3)": 5380,
+    "Yacht Club Stateroom (Deck 4)": 5780,
+    "Commodore Suite (Deck 2)": 10580,
+    "Commodore Suite (Deck 3)": 10980,
+    "Admiral Suite": 14680,
+    "Owner's Suite": 15480
+   },
+   "voyage": "22748",
+   "href": "/voyages/ships/seadream-ii/caribbean-celebration-ii-2027-12-19"
+  },
+  {
+   "date": "2027-12-27",
+   "dateTo": "2028-01-03",
+   "itinerary": "St. Barths New Year's II",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 9620,
+    "Yacht Club Stateroom (Deck 3)": 10120,
+    "Yacht Club Stateroom (Deck 4)": 10720,
+    "Commodore Suite (Deck 2)": 20220,
+    "Commodore Suite (Deck 3)": 21320,
+    "Admiral Suite": 28220,
+    "Owner's Suite": 29720
+   },
+   "voyage": "22801",
+   "href": "/voyages/ships/seadream-ii/st-barths-new-year-s-ii-2027-12-27"
+  },
+  {
+   "date": "2028-01-03",
+   "dateTo": "2028-01-08",
+   "itinerary": "St. Barths Getaway",
+   "direction": "San Juan round trip",
+   "nights": 5,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 3500,
+    "Yacht Club Stateroom (Deck 3)": 3700,
+    "Yacht Club Stateroom (Deck 4)": 3900,
+    "Commodore Suite (Deck 2)": 7200,
+    "Commodore Suite (Deck 3)": 7600,
+    "Admiral Suite": 10000,
+    "Owner's Suite": 10500
+   },
+   "voyage": "22802",
+   "href": "/voyages/ships/seadream-ii/st-barths-getaway-2028-01-03"
+  },
+  {
+   "date": "2028-01-08",
+   "dateTo": "2028-01-15",
+   "itinerary": "Best of the Virgin Isles & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4520,
+    "Yacht Club Stateroom (Deck 3)": 4720,
+    "Yacht Club Stateroom (Deck 4)": 5020,
+    "Commodore Suite (Deck 2)": 9220,
+    "Commodore Suite (Deck 3)": 9620,
+    "Admiral Suite": 12820,
+    "Owner's Suite": 13520
+   },
+   "voyage": "22803",
+   "href": "/voyages/ships/seadream-ii/best-of-the-virgin-isles-and-st-barths-2028-01-08"
+  },
+  {
+   "date": "2028-01-15",
+   "dateTo": "2028-01-22",
+   "itinerary": "Best of British Virgin Isles & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4520,
+    "Yacht Club Stateroom (Deck 3)": 4720,
+    "Yacht Club Stateroom (Deck 4)": 5020,
+    "Commodore Suite (Deck 2)": 9220,
+    "Commodore Suite (Deck 3)": 9620,
+    "Admiral Suite": 12820,
+    "Owner's Suite": 13520
+   },
+   "voyage": "22804",
+   "href": "/voyages/ships/seadream-ii/best-of-british-virgin-isles-and-st-barths-2028-01-15"
+  },
+  {
+   "date": "2028-01-22",
+   "dateTo": "2028-01-29",
+   "itinerary": "Best of the Virgin Isles & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4520,
+    "Yacht Club Stateroom (Deck 3)": 4720,
+    "Yacht Club Stateroom (Deck 4)": 5020,
+    "Commodore Suite (Deck 2)": 9220,
+    "Commodore Suite (Deck 3)": 9620,
+    "Admiral Suite": 12820,
+    "Owner's Suite": 13520
+   },
+   "voyage": "22805",
+   "href": "/voyages/ships/seadream-ii/best-of-the-virgin-isles-and-st-barths-2028-01-22"
+  },
+  {
+   "date": "2028-01-29",
+   "dateTo": "2028-02-05",
+   "itinerary": "Best of British Virgin Isles & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4720,
+    "Yacht Club Stateroom (Deck 3)": 4920,
+    "Yacht Club Stateroom (Deck 4)": 5220,
+    "Commodore Suite (Deck 2)": 9620,
+    "Commodore Suite (Deck 3)": 10120,
+    "Admiral Suite": 13420,
+    "Owner's Suite": 14120
+   },
+   "voyage": "22806",
+   "href": "/voyages/ships/seadream-ii/best-of-british-virgin-isles-and-st-barths-2028-01-29"
+  },
+  {
+   "date": "2028-02-05",
+   "dateTo": "2028-02-12",
+   "itinerary": "Best of the Virgin Isles & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4720,
+    "Yacht Club Stateroom (Deck 3)": 4920,
+    "Yacht Club Stateroom (Deck 4)": 5220,
+    "Commodore Suite (Deck 2)": 9620,
+    "Commodore Suite (Deck 3)": 10120,
+    "Admiral Suite": 13420,
+    "Owner's Suite": 14120
+   },
+   "voyage": "22807",
+   "href": "/voyages/ships/seadream-ii/best-of-the-virgin-isles-and-st-barths-2028-02-05"
+  },
+  {
+   "date": "2028-02-12",
+   "dateTo": "2028-02-23",
+   "itinerary": "Leeward & Windward Islands Explorer",
+   "direction": "San Juan to Bridgetown",
+   "nights": 11,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6659,
+    "Yacht Club Stateroom (Deck 3)": 6959,
+    "Yacht Club Stateroom (Deck 4)": 7359,
+    "Commodore Suite (Deck 2)": 13559,
+    "Commodore Suite (Deck 3)": 14159,
+    "Admiral Suite": 17159,
+    "Owner's Suite": 18059
+   },
+   "voyage": "22808",
+   "href": "/voyages/ships/seadream-ii/leeward-and-windward-islands-explorer-2028-02-12"
+  },
+  {
+   "date": "2028-02-23",
+   "dateTo": "2028-03-04",
+   "itinerary": "Best of the Secluded Caribbean",
+   "direction": "Bridgetown round trip",
+   "nights": 10,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7400,
+    "Yacht Club Stateroom (Deck 3)": 7800,
+    "Yacht Club Stateroom (Deck 4)": 8200,
+    "Commodore Suite (Deck 2)": 15200,
+    "Commodore Suite (Deck 3)": 16100,
+    "Admiral Suite": 21200,
+    "Owner's Suite": 22300
+   },
+   "voyage": "22809",
+   "href": "/voyages/ships/seadream-ii/best-of-the-secluded-caribbean-2028-02-23"
+  },
+  {
+   "date": "2028-03-04",
+   "dateTo": "2028-03-11",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Bridgetown to San Juan",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4719,
+    "Yacht Club Stateroom (Deck 3)": 4919,
+    "Yacht Club Stateroom (Deck 4)": 5219,
+    "Commodore Suite (Deck 2)": 9619,
+    "Commodore Suite (Deck 3)": 10119,
+    "Admiral Suite": 12219,
+    "Owner's Suite": 12919
+   },
+   "voyage": "22810",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2028-03-04"
+  },
+  {
+   "date": "2028-03-11",
+   "dateTo": "2028-03-18",
+   "itinerary": "Best of the Virgin Isles & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5120,
+    "Yacht Club Stateroom (Deck 3)": 5320,
+    "Yacht Club Stateroom (Deck 4)": 5720,
+    "Commodore Suite (Deck 2)": 10520,
+    "Commodore Suite (Deck 3)": 10920,
+    "Admiral Suite": 14620,
+    "Owner's Suite": 15420
+   },
+   "voyage": "22811",
+   "href": "/voyages/ships/seadream-ii/best-of-the-virgin-isles-and-st-barths-2028-03-11"
+  },
+  {
+   "date": "2028-03-18",
+   "dateTo": "2028-03-25",
+   "itinerary": "Best of British Virgin Isles & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4920,
+    "Yacht Club Stateroom (Deck 3)": 5120,
+    "Yacht Club Stateroom (Deck 4)": 5420,
+    "Commodore Suite (Deck 2)": 10120,
+    "Commodore Suite (Deck 3)": 10520,
+    "Admiral Suite": 14020,
+    "Owner's Suite": 14820
+   },
+   "voyage": "22812",
+   "href": "/voyages/ships/seadream-ii/best-of-british-virgin-isles-and-st-barths-2028-03-18"
+  },
+  {
+   "date": "2028-03-25",
+   "dateTo": "2028-04-01",
+   "itinerary": "Yachting the Bahamas",
+   "direction": "San Juan to Palm Beach",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5419,
+    "Yacht Club Stateroom (Deck 3)": 5719,
+    "Yacht Club Stateroom (Deck 4)": 6019,
+    "Commodore Suite (Deck 2)": 11119,
+    "Commodore Suite (Deck 3)": 11819,
+    "Admiral Suite": 14119,
+    "Owner's Suite": 14919
+   },
+   "voyage": "22813",
+   "href": "/voyages/ships/seadream-ii/yachting-the-bahamas-2028-03-25"
+  },
+  {
+   "date": "2028-04-01",
+   "dateTo": "2028-04-08",
+   "itinerary": "Bountiful Bahamas",
+   "direction": "Palm Beach round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5419,
+    "Yacht Club Stateroom (Deck 3)": 5719,
+    "Yacht Club Stateroom (Deck 4)": 6019,
+    "Commodore Suite (Deck 2)": 11119,
+    "Commodore Suite (Deck 3)": 11819,
+    "Admiral Suite": 14119,
+    "Owner's Suite": 14919
+   },
+   "voyage": "22814",
+   "href": "/voyages/ships/seadream-ii/bountiful-bahamas-2028-04-01"
+  },
+  {
+   "date": "2028-04-08",
+   "dateTo": "2028-04-15",
+   "itinerary": "Bountiful Bahamas",
+   "direction": "Palm Beach round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5720,
+    "Yacht Club Stateroom (Deck 3)": 6020,
+    "Yacht Club Stateroom (Deck 4)": 6320,
+    "Commodore Suite (Deck 2)": 11820,
+    "Commodore Suite (Deck 3)": 12420,
+    "Admiral Suite": 16420,
+    "Owner's Suite": 17320
+   },
+   "voyage": "22815",
+   "href": "/voyages/ships/seadream-ii/bountiful-bahamas-2028-04-08"
+  },
+  {
+   "date": "2028-04-15",
+   "dateTo": "2028-04-22",
+   "itinerary": "Bountiful Bahamas",
+   "direction": "Palm Beach round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5020,
+    "Yacht Club Stateroom (Deck 3)": 5220,
+    "Yacht Club Stateroom (Deck 4)": 5620,
+    "Commodore Suite (Deck 2)": 10320,
+    "Commodore Suite (Deck 3)": 10720,
+    "Admiral Suite": 14320,
+    "Owner's Suite": 15120
+   },
+   "voyage": "22816",
+   "href": "/voyages/ships/seadream-ii/bountiful-bahamas-2028-04-15"
+  },
+  {
+   "date": "2028-04-22",
+   "dateTo": "2028-05-06",
+   "itinerary": "Transatlantic Spring Voyage II",
+   "direction": "Palm Beach to Lisbon",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5260,
+    "Yacht Club Stateroom (Deck 3)": 5460,
+    "Yacht Club Stateroom (Deck 4)": 5860,
+    "Commodore Suite (Deck 2)": 10660,
+    "Commodore Suite (Deck 3)": 11060,
+    "Admiral Suite": 14760,
+    "Owner's Suite": 15560
+   },
+   "voyage": "22817",
+   "href": "/voyages/ships/seadream-ii/transatlantic-spring-voyage-ii-2028-04-22"
+  },
+  {
+   "date": "2028-05-06",
+   "dateTo": "2028-05-13",
+   "itinerary": "Western Mediterranean Explorer",
+   "direction": "Lisbon to Malaga",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7320,
+    "Yacht Club Stateroom (Deck 3)": 7720,
+    "Yacht Club Stateroom (Deck 4)": 8120,
+    "Commodore Suite (Deck 2)": 15220,
+    "Commodore Suite (Deck 3)": 16120,
+    "Admiral Suite": 21320,
+    "Owner's Suite": 22420
+   },
+   "voyage": "22818A",
+   "href": "/voyages/ships/seadream-ii/western-mediterranean-explorer-2028-05-06"
+  },
+  {
+   "date": "2028-05-13",
+   "dateTo": "2028-05-20",
+   "itinerary": "Spanish Coast & French Riviera",
+   "direction": "Malaga to Nice",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6820,
+    "Yacht Club Stateroom (Deck 3)": 7120,
+    "Yacht Club Stateroom (Deck 4)": 7620,
+    "Commodore Suite (Deck 2)": 14220,
+    "Commodore Suite (Deck 3)": 14820,
+    "Admiral Suite": 19820,
+    "Owner's Suite": 20820
+   },
+   "voyage": "22819A",
+   "href": "/voyages/ships/seadream-ii/spanish-coast-and-french-riviera-2028-05-13"
+  },
+  {
+   "date": "2028-05-20",
+   "dateTo": "2028-05-27",
+   "itinerary": "French & Italian Discovery",
+   "direction": "Nice to Rome (Civitavecchia)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6719,
+    "Yacht Club Stateroom (Deck 3)": 7019,
+    "Yacht Club Stateroom (Deck 4)": 7519,
+    "Commodore Suite (Deck 2)": 13919,
+    "Commodore Suite (Deck 3)": 14619,
+    "Admiral Suite": 17719,
+    "Owner's Suite": 18719
+   },
+   "voyage": "22820A",
+   "href": "/voyages/ships/seadream-ii/french-and-italian-discovery-2028-05-20"
+  },
+  {
+   "date": "2028-05-27",
+   "dateTo": "2028-06-03",
+   "itinerary": "Mediterranean Isles Discovery",
+   "direction": "Rome (Civitavecchia) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 6920,
+    "Yacht Club Stateroom (Deck 3)": 7220,
+    "Yacht Club Stateroom (Deck 4)": 7720,
+    "Commodore Suite (Deck 2)": 14420,
+    "Commodore Suite (Deck 3)": 15020,
+    "Admiral Suite": 20120,
+    "Owner's Suite": 21120
+   },
+   "voyage": "22821A",
+   "href": "/voyages/ships/seadream-ii/mediterranean-isles-discovery-2028-05-27"
+  },
+  {
+   "date": "2028-06-03",
+   "dateTo": "2028-06-11",
+   "itinerary": "Classic Greece & the Amalfi Coast",
+   "direction": "Rome (Civitavecchia) to Athens (Piraeus)",
+   "nights": 8,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 9280,
+    "Yacht Club Stateroom (Deck 3)": 9780,
+    "Yacht Club Stateroom (Deck 4)": 10380,
+    "Commodore Suite (Deck 2)": 19380,
+    "Commodore Suite (Deck 3)": 20480,
+    "Admiral Suite": 27080,
+    "Owner's Suite": 28580
+   },
+   "voyage": "22822A",
+   "href": "/voyages/ships/seadream-ii/classic-greece-and-the-amalfi-coast-2028-06-03"
+  },
+  {
+   "date": "2028-06-11",
+   "dateTo": "2028-06-18",
+   "itinerary": "Greek Isles & Adriatic Explorer",
+   "direction": "Athens (Piraeus) to Dubrovnik",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7919,
+    "Yacht Club Stateroom (Deck 3)": 8319,
+    "Yacht Club Stateroom (Deck 4)": 8819,
+    "Commodore Suite (Deck 2)": 16519,
+    "Commodore Suite (Deck 3)": 17419,
+    "Admiral Suite": 21019,
+    "Owner's Suite": 22119
+   },
+   "voyage": "22823A",
+   "href": "/voyages/ships/seadream-ii/greek-isles-and-adriatic-explorer-2028-06-11"
+  },
+  {
+   "date": "2028-06-25",
+   "dateTo": "2028-07-02",
+   "itinerary": "Venice & the Dalmatian Coast",
+   "direction": "Venice to Dubrovnik",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8120,
+    "Yacht Club Stateroom (Deck 3)": 8520,
+    "Yacht Club Stateroom (Deck 4)": 9020,
+    "Commodore Suite (Deck 2)": 17020,
+    "Commodore Suite (Deck 3)": 17820,
+    "Admiral Suite": 23720,
+    "Owner's Suite": 25020
+   },
+   "voyage": "22825A",
+   "href": "/voyages/ships/seadream-ii/venice-and-the-dalmatian-coast-2028-06-25"
+  },
+  {
+   "date": "2028-07-02",
+   "dateTo": "2028-07-09",
+   "itinerary": "Adriatic Coast & Greek Isles",
+   "direction": "Dubrovnik to Athens (Piraeus)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7919,
+    "Yacht Club Stateroom (Deck 3)": 8319,
+    "Yacht Club Stateroom (Deck 4)": 8819,
+    "Commodore Suite (Deck 2)": 16519,
+    "Commodore Suite (Deck 3)": 17419,
+    "Admiral Suite": 21019,
+    "Owner's Suite": 22119
+   },
+   "voyage": "22826A",
+   "href": "/voyages/ships/seadream-ii/adriatic-coast-and-greek-isles-2028-07-02"
+  },
+  {
+   "date": "2028-07-09",
+   "dateTo": "2028-07-16",
+   "itinerary": "Greek Odyssey",
+   "direction": "Athens (Piraeus) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8120,
+    "Yacht Club Stateroom (Deck 3)": 8520,
+    "Yacht Club Stateroom (Deck 4)": 9020,
+    "Commodore Suite (Deck 2)": 17020,
+    "Commodore Suite (Deck 3)": 17820,
+    "Admiral Suite": 23720,
+    "Owner's Suite": 25020
+   },
+   "voyage": "22827A",
+   "href": "/voyages/ships/seadream-ii/greek-odyssey-2028-07-09"
+  },
+  {
+   "date": "2028-07-16",
+   "dateTo": "2028-07-23",
+   "itinerary": "Greek Isles Discovery",
+   "direction": "Athens (Piraeus) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7919,
+    "Yacht Club Stateroom (Deck 3)": 8319,
+    "Yacht Club Stateroom (Deck 4)": 8819,
+    "Commodore Suite (Deck 2)": 16519,
+    "Commodore Suite (Deck 3)": 17419,
+    "Admiral Suite": 21019,
+    "Owner's Suite": 22119
+   },
+   "voyage": "22828A",
+   "href": "/voyages/ships/seadream-ii/greek-isles-discovery-2028-07-16"
+  },
+  {
+   "date": "2028-07-23",
+   "dateTo": "2028-08-03",
+   "itinerary": "Greece, Sicily & the Amalfi Coast",
+   "direction": "Athens (Piraeus) to Rome (Civitavecchia)",
+   "nights": 11,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 12599,
+    "Yacht Club Stateroom (Deck 3)": 13199,
+    "Yacht Club Stateroom (Deck 4)": 13999,
+    "Commodore Suite (Deck 2)": 26399,
+    "Commodore Suite (Deck 3)": 27699,
+    "Admiral Suite": 33599,
+    "Owner's Suite": 35399
+   },
+   "voyage": "22829A",
+   "href": "/voyages/ships/seadream-ii/greece-sicily-and-the-amalfi-coast-2028-07-23"
+  },
+  {
+   "date": "2028-08-03",
+   "dateTo": "2028-08-13",
+   "itinerary": "Yachting Southern Italy & Greece",
+   "direction": "Rome (Civitavecchia) to Athens (Piraeus)",
+   "nights": 10,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 11599,
+    "Yacht Club Stateroom (Deck 3)": 12199,
+    "Yacht Club Stateroom (Deck 4)": 12899,
+    "Commodore Suite (Deck 2)": 24199,
+    "Commodore Suite (Deck 3)": 25499,
+    "Admiral Suite": 30799,
+    "Owner's Suite": 32499
+   },
+   "voyage": "22830A",
+   "href": "/voyages/ships/seadream-ii/yachting-southern-italy-and-greece-2028-08-03"
+  },
+  {
+   "date": "2028-08-13",
+   "dateTo": "2028-08-20",
+   "itinerary": "Greek & Italian Isles Explorer",
+   "direction": "Athens (Piraeus) to Rome (Civitavecchia)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7919,
+    "Yacht Club Stateroom (Deck 3)": 8319,
+    "Yacht Club Stateroom (Deck 4)": 8819,
+    "Commodore Suite (Deck 2)": 16519,
+    "Commodore Suite (Deck 3)": 17419,
+    "Admiral Suite": 21019,
+    "Owner's Suite": 22119
+   },
+   "voyage": "22831A",
+   "href": "/voyages/ships/seadream-ii/greek-and-italian-isles-explorer-2028-08-13"
+  },
+  {
+   "date": "2028-08-20",
+   "dateTo": "2028-08-27",
+   "itinerary": "Corsica & the Italian Coast",
+   "direction": "Rome (Civitavecchia) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8020,
+    "Yacht Club Stateroom (Deck 3)": 8420,
+    "Yacht Club Stateroom (Deck 4)": 8920,
+    "Commodore Suite (Deck 2)": 16720,
+    "Commodore Suite (Deck 3)": 17620,
+    "Admiral Suite": 23420,
+    "Owner's Suite": 24620
+   },
+   "voyage": "22832A",
+   "href": "/voyages/ships/seadream-ii/corsica-and-the-italian-coast-2028-08-20"
+  },
+  {
+   "date": "2028-08-27",
+   "dateTo": "2028-09-03",
+   "itinerary": "Southern Italy & Greece Discovery",
+   "direction": "Rome (Civitavecchia) to Athens (Piraeus)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8020,
+    "Yacht Club Stateroom (Deck 3)": 8420,
+    "Yacht Club Stateroom (Deck 4)": 8920,
+    "Commodore Suite (Deck 2)": 16720,
+    "Commodore Suite (Deck 3)": 17620,
+    "Admiral Suite": 23420,
+    "Owner's Suite": 24620
+   },
+   "voyage": "22833A",
+   "href": "/voyages/ships/seadream-ii/southern-italy-and-greece-discovery-2028-08-27"
+  },
+  {
+   "date": "2028-09-03",
+   "dateTo": "2028-09-10",
+   "itinerary": "Croatia & Greek Isles",
+   "direction": "Athens (Piraeus) to Venice",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8320,
+    "Yacht Club Stateroom (Deck 3)": 8720,
+    "Yacht Club Stateroom (Deck 4)": 9220,
+    "Commodore Suite (Deck 2)": 17420,
+    "Commodore Suite (Deck 3)": 18220,
+    "Admiral Suite": 24320,
+    "Owner's Suite": 25620
+   },
+   "voyage": "22834A",
+   "href": "/voyages/ships/seadream-ii/croatia-and-greek-isles-2028-09-03"
+  },
+  {
+   "date": "2028-09-10",
+   "dateTo": "2028-09-17",
+   "itinerary": "Croatia’s Dalmatian Coast",
+   "direction": "Venice to Dubrovnik",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8620,
+    "Yacht Club Stateroom (Deck 3)": 9020,
+    "Yacht Club Stateroom (Deck 4)": 9620,
+    "Commodore Suite (Deck 2)": 18020,
+    "Commodore Suite (Deck 3)": 18920,
+    "Admiral Suite": 25220,
+    "Owner's Suite": 26620
+   },
+   "voyage": "22835A",
+   "href": "/voyages/ships/seadream-ii/croatia-s-dalmatian-coast-2028-09-10"
+  },
+  {
+   "date": "2028-09-17",
+   "dateTo": "2028-09-24",
+   "itinerary": "Adriatic & Greek Isles",
+   "direction": "Dubrovnik to Athens (Piraeus)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8020,
+    "Yacht Club Stateroom (Deck 3)": 8420,
+    "Yacht Club Stateroom (Deck 4)": 8920,
+    "Commodore Suite (Deck 2)": 16720,
+    "Commodore Suite (Deck 3)": 17620,
+    "Admiral Suite": 23420,
+    "Owner's Suite": 24620
+   },
+   "voyage": "22836A",
+   "href": "/voyages/ships/seadream-ii/adriatic-and-greek-isles-2028-09-17"
+  },
+  {
+   "date": "2028-09-24",
+   "dateTo": "2028-10-01",
+   "itinerary": "Classic Greece & the Amalfi Coast",
+   "direction": "Athens (Piraeus) to Rome (Civitavecchia)",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8020,
+    "Yacht Club Stateroom (Deck 3)": 8420,
+    "Yacht Club Stateroom (Deck 4)": 8920,
+    "Commodore Suite (Deck 2)": 16720,
+    "Commodore Suite (Deck 3)": 17620,
+    "Admiral Suite": 23420,
+    "Owner's Suite": 24620
+   },
+   "voyage": "22837A",
+   "href": "/voyages/ships/seadream-ii/classic-greece-and-the-amalfi-coast-2028-09-24"
+  },
+  {
+   "date": "2028-10-01",
+   "dateTo": "2028-10-08",
+   "itinerary": "Amalfi Coast Delight",
+   "direction": "Rome (Civitavecchia) round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7720,
+    "Yacht Club Stateroom (Deck 3)": 8120,
+    "Yacht Club Stateroom (Deck 4)": 8620,
+    "Commodore Suite (Deck 2)": 16120,
+    "Commodore Suite (Deck 3)": 17020,
+    "Admiral Suite": 22520,
+    "Owner's Suite": 23720
+   },
+   "voyage": "22838A",
+   "href": "/voyages/ships/seadream-ii/amalfi-coast-delight-2028-10-01"
+  },
+  {
+   "date": "2028-10-08",
+   "dateTo": "2028-10-15",
+   "itinerary": "French & Italian Riviera Dream",
+   "direction": "Rome (Civitavecchia) to Nice",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7720,
+    "Yacht Club Stateroom (Deck 3)": 8120,
+    "Yacht Club Stateroom (Deck 4)": 8620,
+    "Commodore Suite (Deck 2)": 16120,
+    "Commodore Suite (Deck 3)": 17020,
+    "Admiral Suite": 22520,
+    "Owner's Suite": 23720
+   },
+   "voyage": "22839A",
+   "href": "/voyages/ships/seadream-ii/french-and-italian-riviera-dream-2028-10-08"
+  },
+  {
+   "date": "2028-10-15",
+   "dateTo": "2028-10-22",
+   "itinerary": "French Riviera & Spanish Coast Discovery",
+   "direction": "Nice to Barcelona",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7620,
+    "Yacht Club Stateroom (Deck 3)": 8020,
+    "Yacht Club Stateroom (Deck 4)": 8520,
+    "Commodore Suite (Deck 2)": 15920,
+    "Commodore Suite (Deck 3)": 16720,
+    "Admiral Suite": 22220,
+    "Owner's Suite": 23420
+   },
+   "voyage": "22840A",
+   "href": "/voyages/ships/seadream-ii/french-riviera-and-spanish-coast-discovery-2028-10-15"
+  },
+  {
+   "date": "2028-10-22",
+   "dateTo": "2028-10-30",
+   "itinerary": "Western Mediterranean Sojourn",
+   "direction": "Barcelona to Lisbon",
+   "nights": 8,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 8580,
+    "Yacht Club Stateroom (Deck 3)": 8980,
+    "Yacht Club Stateroom (Deck 4)": 9580,
+    "Commodore Suite (Deck 2)": 17880,
+    "Commodore Suite (Deck 3)": 18780,
+    "Admiral Suite": 24980,
+    "Owner's Suite": 26280
+   },
+   "voyage": "22841A",
+   "href": "/voyages/ships/seadream-ii/western-mediterranean-sojourn-2028-10-22"
+  },
+  {
+   "date": "2028-11-20",
+   "dateTo": "2028-12-02",
+   "itinerary": "Transatlantic Autumn Voyage II",
+   "direction": "Lisbon to Charlotte Amalie",
+   "nights": 12,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4680,
+    "Yacht Club Stateroom (Deck 3)": 4880,
+    "Yacht Club Stateroom (Deck 4)": 5180,
+    "Commodore Suite (Deck 2)": 9480,
+    "Commodore Suite (Deck 3)": 9980,
+    "Admiral Suite": 13180,
+    "Owner's Suite": 13880
+   },
+   "voyage": "22843A",
+   "href": "/voyages/ships/seadream-ii/transatlantic-autumn-voyage-ii-2028-11-20"
+  },
+  {
+   "date": "2028-12-02",
+   "dateTo": "2028-12-09",
+   "itinerary": "St. Barths & the Virgin Islands",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4827,
+    "Yacht Club Stateroom (Deck 3)": 5027,
+    "Yacht Club Stateroom (Deck 4)": 5327,
+    "Commodore Suite (Deck 2)": 9927,
+    "Commodore Suite (Deck 3)": 10327,
+    "Admiral Suite": 13727,
+    "Owner's Suite": 14427
+   },
+   "voyage": "22844",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-the-virgin-islands-2028-12-02"
+  },
+  {
+   "date": "2028-12-09",
+   "dateTo": "2028-12-16",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4827,
+    "Yacht Club Stateroom (Deck 3)": 5027,
+    "Yacht Club Stateroom (Deck 4)": 5327,
+    "Commodore Suite (Deck 2)": 9927,
+    "Commodore Suite (Deck 3)": 10327,
+    "Admiral Suite": 13727,
+    "Owner's Suite": 14427
+   },
+   "voyage": "22845",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2028-12-09"
+  },
+  {
+   "date": "2028-12-16",
+   "dateTo": "2028-12-23",
+   "itinerary": "Best of the Secluded Caribbean",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4827,
+    "Yacht Club Stateroom (Deck 3)": 5027,
+    "Yacht Club Stateroom (Deck 4)": 5327,
+    "Commodore Suite (Deck 2)": 9927,
+    "Commodore Suite (Deck 3)": 10327,
+    "Admiral Suite": 13727,
+    "Owner's Suite": 14427
+   },
+   "voyage": "22846",
+   "href": "/voyages/ships/seadream-ii/best-of-the-secluded-caribbean-2028-12-16"
+  },
+  {
+   "date": "2028-12-23",
+   "dateTo": "2028-12-29",
+   "itinerary": "Caribbean Celebration II",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 6,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4766,
+    "Yacht Club Stateroom (Deck 3)": 4966,
+    "Yacht Club Stateroom (Deck 4)": 5266,
+    "Commodore Suite (Deck 2)": 9866,
+    "Commodore Suite (Deck 3)": 10266,
+    "Admiral Suite": 13666,
+    "Owner's Suite": 14366
+   },
+   "voyage": "22847",
+   "href": "/voyages/ships/seadream-ii/caribbean-celebration-ii-2028-12-23"
+  },
+  {
+   "date": "2028-12-29",
+   "dateTo": "2029-01-07",
+   "itinerary": "Tropical New Year's II",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 9,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 10649,
+    "Yacht Club Stateroom (Deck 3)": 11149,
+    "Yacht Club Stateroom (Deck 4)": 11849,
+    "Commodore Suite (Deck 2)": 22249,
+    "Commodore Suite (Deck 3)": 23349,
+    "Admiral Suite": 31149,
+    "Owner's Suite": 32749
+   },
+   "voyage": "22901",
+   "href": "/voyages/ships/seadream-ii/tropical-new-year-s-ii-2028-12-29"
+  },
+  {
+   "date": "2029-01-07",
+   "dateTo": "2029-01-14",
+   "itinerary": "St. Barths Getaway",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22902",
+   "href": "/voyages/ships/seadream-ii/st-barths-getaway-2029-01-07"
+  },
+  {
+   "date": "2029-01-14",
+   "dateTo": "2029-01-25",
+   "itinerary": "Leeward Islands & Grenadines Discovery",
+   "direction": "Charlotte Amalie to Bridgetown",
+   "nights": 11,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7871,
+    "Yacht Club Stateroom (Deck 3)": 8271,
+    "Yacht Club Stateroom (Deck 4)": 8771,
+    "Commodore Suite (Deck 2)": 16171,
+    "Commodore Suite (Deck 3)": 16971,
+    "Admiral Suite": 22471,
+    "Owner's Suite": 23671
+   },
+   "voyage": "22903",
+   "href": "/voyages/ships/seadream-ii/leeward-islands-and-grenadines-discovery-2029-01-14"
+  },
+  {
+   "date": "2029-01-25",
+   "dateTo": "2029-02-04",
+   "itinerary": "British & French Islands Escape",
+   "direction": "Bridgetown to Charlotte Amalie",
+   "nights": 10,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 7210,
+    "Yacht Club Stateroom (Deck 3)": 7510,
+    "Yacht Club Stateroom (Deck 4)": 8010,
+    "Commodore Suite (Deck 2)": 14810,
+    "Commodore Suite (Deck 3)": 15410,
+    "Admiral Suite": 20610,
+    "Owner's Suite": 21710
+   },
+   "voyage": "22904",
+   "href": "/voyages/ships/seadream-ii/british-and-french-islands-escape-2029-01-25"
+  },
+  {
+   "date": "2029-02-04",
+   "dateTo": "2029-02-11",
+   "itinerary": "Best of the British Leewards & St. Barths",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5127,
+    "Yacht Club Stateroom (Deck 3)": 5327,
+    "Yacht Club Stateroom (Deck 4)": 5727,
+    "Commodore Suite (Deck 2)": 10527,
+    "Commodore Suite (Deck 3)": 10927,
+    "Admiral Suite": 14627,
+    "Owner's Suite": 15427
+   },
+   "voyage": "22905",
+   "href": "/voyages/ships/seadream-ii/best-of-the-british-leewards-and-st-barths-2029-02-04"
+  },
+  {
+   "date": "2029-02-11",
+   "dateTo": "2029-02-18",
+   "itinerary": "Spanish & British Caribbean Delight",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22906",
+   "href": "/voyages/ships/seadream-ii/spanish-and-british-caribbean-delight-2029-02-11"
+  },
+  {
+   "date": "2029-02-18",
+   "dateTo": "2029-02-25",
+   "itinerary": "British Leewards & St. Barths Discovery",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22907",
+   "href": "/voyages/ships/seadream-ii/british-leewards-and-st-barths-discovery-2029-02-18"
+  },
+  {
+   "date": "2029-02-25",
+   "dateTo": "2029-03-04",
+   "itinerary": "St. Barths & Leeward Islands Delight",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22908",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-leeward-islands-delight-2029-02-25"
+  },
+  {
+   "date": "2029-03-04",
+   "dateTo": "2029-03-11",
+   "itinerary": "St. Barths & Caribbean Gems",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22909",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-caribbean-gems-2029-03-04"
+  },
+  {
+   "date": "2029-03-11",
+   "dateTo": "2029-03-18",
+   "itinerary": "St. Barths & Leeward Islands Delight",
+   "direction": "Charlotte Amalie round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22910",
+   "href": "/voyages/ships/seadream-ii/st-barths-and-leeward-islands-delight-2029-03-11"
+  },
+  {
+   "date": "2029-03-18",
+   "dateTo": "2029-03-25",
+   "itinerary": "Best of St. Barths & the Virgin Isles",
+   "direction": "Charlotte Amalie to San Juan",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5127,
+    "Yacht Club Stateroom (Deck 3)": 5327,
+    "Yacht Club Stateroom (Deck 4)": 5727,
+    "Commodore Suite (Deck 2)": 10527,
+    "Commodore Suite (Deck 3)": 10927,
+    "Admiral Suite": 14627,
+    "Owner's Suite": 15427
+   },
+   "voyage": "22911",
+   "href": "/voyages/ships/seadream-ii/best-of-st-barths-and-the-virgin-isles-2029-03-18"
+  },
+  {
+   "date": "2029-03-25",
+   "dateTo": "2029-04-01",
+   "itinerary": "Spanish & French Caribbean Discovery",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22912",
+   "href": "/voyages/ships/seadream-ii/spanish-and-french-caribbean-discovery-2029-03-25"
+  },
+  {
+   "date": "2029-04-01",
+   "dateTo": "2029-04-08",
+   "itinerary": "Best of the Leeward Islands",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22913",
+   "href": "/voyages/ships/seadream-ii/best-of-the-leeward-islands-2029-04-01"
+  },
+  {
+   "date": "2029-04-08",
+   "dateTo": "2029-04-15",
+   "itinerary": "Spanish Caribbean & the Leewards",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22914",
+   "href": "/voyages/ships/seadream-ii/spanish-caribbean-and-the-leewards-2029-04-08"
+  },
+  {
+   "date": "2029-04-15",
+   "dateTo": "2029-04-22",
+   "itinerary": "Best of the Virgin Isles & St. Barths",
+   "direction": "San Juan round trip",
+   "nights": 7,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5027,
+    "Yacht Club Stateroom (Deck 3)": 5227,
+    "Yacht Club Stateroom (Deck 4)": 5627,
+    "Commodore Suite (Deck 2)": 10327,
+    "Commodore Suite (Deck 3)": 10727,
+    "Admiral Suite": 14327,
+    "Owner's Suite": 15127
+   },
+   "voyage": "22915",
+   "href": "/voyages/ships/seadream-ii/best-of-the-virgin-isles-and-st-barths-2029-04-15"
+  },
+  {
+   "date": "2029-04-22",
+   "dateTo": "2029-04-28",
+   "itinerary": "Yachting the Leeward Islands",
+   "direction": "San Juan round trip",
+   "nights": 6,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 4466,
+    "Yacht Club Stateroom (Deck 3)": 4666,
+    "Yacht Club Stateroom (Deck 4)": 4966,
+    "Commodore Suite (Deck 2)": 9166,
+    "Commodore Suite (Deck 3)": 9566,
+    "Admiral Suite": 12766,
+    "Owner's Suite": 13466
+   },
+   "voyage": "22916",
+   "href": "/voyages/ships/seadream-ii/yachting-the-leeward-islands-2029-04-22"
+  },
+  {
+   "date": "2029-04-28",
+   "dateTo": "2029-05-12",
+   "itinerary": "Transatlantic Spring Voyage II",
+   "direction": "San Juan to Malaga",
+   "nights": 14,
+   "status": "open",
+   "prices": {
+    "Yacht Club Stateroom (Deck 2)": 5760,
+    "Yacht Club Stateroom (Deck 3)": 6060,
+    "Yacht Club Stateroom (Deck 4)": 6360,
+    "Commodore Suite (Deck 2)": 11760,
+    "Commodore Suite (Deck 3)": 12360,
+    "Admiral Suite": 16260,
+    "Owner's Suite": 17160
+   },
+   "voyage": "22917",
+   "href": "/voyages/ships/seadream-ii/transatlantic-spring-voyage-ii-2029-04-28"
+  }
+ ],
+ "routesNote": "Every published SeaDream II voyage has its own page, with its day by day, chart and fares. Open a year and a month below and pick a sailing.",
+ "datesPublished": true,
+ "fareBasis": "per person, double occupancy, in USD, as published",
+ "pricesNote": "SeaDream prices each voyage per person, double occupancy, in US dollars, by stateroom and suite category. Each sailing below shows its lowest published fare, as SeaDream publishes it; open a voyage for the fare of every category. Fares are capacity controlled and can change, port and government fees are extra, and single and third-person fares are on request. James confirms yours before you book.",
+ "inclusions": [
+  "All meals, served to order, in the Dining Salon or outdoors at the Topside Restaurant",
+  "Open bar with select premium brands",
+  "Wines with lunch and dinner",
+  "Gratuities",
+  "The marina's water toys, from kayaks and paddleboards to sailing dinghies",
+  "Mountain bikes to take ashore",
+  "The golf simulator",
+  "Room service around the clock",
+  "Morning yoga and Tai Chi, and the fitness centre"
+ ],
+ "exclusions": [
+  "Port and government fees",
+  "Wi-Fi (US$35 a day or US$99 a week)",
+  "Spa treatments",
+  "Premium wines and spirits beyond the open bar",
+  "Land adventures ashore",
+  "Laundry",
+  "Flights and transfers",
+  "Travel insurance, which SeaDream strongly recommends"
+ ],
+ "children": "SeaDream takes no children under one year old, guests under 18 travel with an adult, and there is no children's programme on board. She suits older children and teenagers who are happy at an adults' pace. One stateroom (215) is accessible.",
+ "faqs": [
+  [
+   "How many guests does SeaDream II carry?",
+   "112 guests in 56 staterooms and suites, with a crew of 95."
+  ],
+  [
+   "What is included in the fare aboard SeaDream II?",
+   "All meals, an open bar with select premium brands, wines with lunch and dinner, gratuities, the marina's water toys, mountain bikes, the golf simulator, morning yoga and Tai Chi, and room service around the clock. Port and government fees, Wi-Fi, spa treatments, premium wines and spirits, land adventures and laundry are extra."
+  ],
+  [
+   "Where does SeaDream II sail?",
+   "SeaDream publishes 109 voyages for her across The Caribbean, Transatlantic and The Mediterranean, from 2026-12-12 to 2029-05-12. Each has its own page with its day by day."
+  ],
+  [
+   "Does SeaDream II sail the Bahamas?",
+   "Yes. SeaDream publishes 8 voyages for her that call in the Bahamas, at Sailing the Bahamas Archipelago, Gordon's Beach, Staniel Cay, Taino Beach, Andros Island, Emerald Bay, San Salvador. Each has its own page here."
+  ],
+  [
+   "What staterooms and suites does SeaDream II have?",
+   "Yacht Club Staterooms of 195 square feet on Decks 2, 3 and 4; Commodore Suites of 390 square feet, which are two staterooms joined; the 375 square foot Admiral Suite on Deck 4; and the 447 square foot Owner's Suite on Deck 3. All face the sea."
+  ],
+  [
+   "Can children sail aboard SeaDream II?",
+   "From one year old. Guests under 18 travel with an adult, and there is no children's programme on board."
+  ],
+  [
+   "How much does a voyage aboard SeaDream II cost?",
+   "Published fares start from US$3,500 per person, double occupancy, and vary by voyage and by stateroom or suite. Every voyage page shows the fare of every category as SeaDream publishes it."
+  ],
+  [
+   "What are SeaDream's payment and cancellation terms?",
+   "A 25% deposit confirms, and the balance is due 90 days before departure. Cancelling more than 120 days out costs US$200 per booking; from 120 to 91 days, 25% of the fare; 90 to 61 days, 50%; 60 to 31 days, 75%; and 30 days or fewer, the full fare."
+  ],
+  [
+   "Can SeaDream II be chartered whole?",
+   "Yes. SeaDream charters each of the twin yachts for up to 56 couples in the Caribbean or the Mediterranean, on a published itinerary or one set with you. Ask James."
+  ],
+  [
+   "Is there Wi-Fi?",
+   "Yes, at US$35 a day or US$99 a week."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples",
+   "line": "A stateroom on the sea, dinner outdoors, and a bed on deck for one night."
+  },
+  {
+   "who": "Groups of friends",
+   "line": "Small enough that the yacht feels shared, and she can be chartered whole."
+  },
+  {
+   "who": "Swimmers and sailors",
+   "line": "The marina opens at anchor: kayaks, paddleboards, dinghies and a swim off the stern."
+  },
+  {
+   "who": "Solo travellers",
+   "line": "Single fares are on request for every voyage."
+  },
+  {
+   "who": "First time at sea",
+   "line": "Short Caribbean and Bahamas voyages, port to port, with few days at sea."
+  }
+ ],
+ "sources": [
+  "seadream.com/yachts",
+  "seadream.com/voyages and each voyage page",
+  "seadream.com deck plans and stateroom pages",
+  "seadream.com/charter",
+  "seadream.com/spa",
+  "seadream.com policies, terms and conditions"
+ ],
+ "film": null,
+ "terms": [
+  "Deposit: 25% of the fare to confirm.",
+  "Final payment: 90 days before departure.",
+  "Cancellation more than 120 days before departure: US$200 per booking.",
+  "Cancellation 120 to 91 days before: 25% of the fare. 90 to 61 days: 50%. 60 to 31 days: 75%. 30 days or fewer: 100%.",
+  "Fares are capacity controlled and can change without notice."
+ ],
+ "pathway": {
+  "primary": "PATH-02",
+  "secondary": [
+   "PATH-05"
+  ]
+ }
+}

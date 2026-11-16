@@ -40,6 +40,8 @@ export type ShipDeparture = {
   singlePrices?: Record<string, number | null>; childPrices?: Record<string, number | null>;
   /** Nights on this sailing, when sailings differ in length (Aliikai). */
   nights?: number;
+  /** The sailing's own voyage page, where each voyage has one (SeaDream, 16 Nov 2026): the sailing table links its name. */
+  href?: string;
 };
 export const isPackage = (d: ShipDeparture) => d.priceBasis === "package";
 export const cruiseOnly = (s: Pick<ShipRecord, "departures">) => s.departures.filter((d) => !isPackage(d));

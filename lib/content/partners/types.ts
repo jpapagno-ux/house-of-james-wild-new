@@ -12,6 +12,8 @@ export type Partner = {
   /** "Expedition operator", "Safari operator", "Small-ship operator". */
   kind: string;
   seo: { title: string; description: string; keywords?: string[] };
+  /** The house's standing wording for the partnership, where James has set one ("Preferred & Vetted partner"): shown above the name. */
+  standing?: string;
   /** One line under the name. */
   line: string;
   /** The answer, first (AEO). */
@@ -24,6 +26,10 @@ export type Partner = {
   fleetNote?: string;
   /** The partner's itineraries on this site, each with its page. */
   itineraries?: { title: string; items: PartnerItinerary[]; href?: string; hrefLabel?: string };
+  /** Every published voyage of the fleet in one filterable list (components/ships/VoyageFinder), where each has its own page. */
+  finder?: { title: string; intro: string; rows: import("@/lib/content/ships/seadream").FinderRow[] };
+  /** The partner's own films, from the house Cloudinary library (never an outbound link). */
+  films?: { title: string; intro?: string; items: { title: string; src: string; poster: string }[] };
   /** What sets them apart, in their words, each with where they say it. */
   apart: { claim: string; attribution: string }[];
   /** Their own sustainability claims, attributed. */

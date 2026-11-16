@@ -3021,13 +3021,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff949",
    "slug": "lindis-lodge",
-   "name": "Lindis Lodge",
+   "name": "The Lindis",
    "country": "New Zealand",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff94a",
@@ -3304,6 +3303,16 @@
    "name": "Morukuru Farm House",
    "country": "South Africa",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afb04e524603413a7b42086",
+   "slug": "mt-isthmus-villa",
+   "name": "Mt Isthmus Villa",
+   "country": "New Zealand",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3728,6 +3737,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afb04e524603413a7b42087",
+   "slug": "paroa-bay",
+   "name": "Paroa Bay",
+   "country": "New Zealand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff97f",

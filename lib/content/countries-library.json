@@ -3135,16 +3135,16 @@
      "Serves 2 stays in the Ledger here"
     ],
     [
-     "Taupō Airport (TUO)",
-     "Serves 1 stay in the Ledger here"
+     "Queenstown International Airport (ZQN)",
+     "Serves 2 stays in the Ledger here"
     ],
     [
-     "Rotorua Regional Airport (ROT)",
+     "Taupō Airport (TUO)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "AKL · TUO",
+   "flyInto": "AKL · ZQN",
    "bestShort": "Nov–Apr",
    "atlasName": "New Zealand"
   },

@@ -33052,6 +33052,72 @@
    "placeSlug": null
   },
   {
+   "slug": "mt-isthmus-villa",
+   "name": "Mt Isthmus Villa",
+   "ledgerId": "STY-2026-000662",
+   "country": "New Zealand",
+   "countrySlug": "new-zealand",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "A private villa on the narrow ridge between Lake Wānaka and Lake Hāwea, with its own chef and villa host, twenty minutes from Wānaka",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/aurora",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/lakes"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "group_exclusive_use",
+    "family",
+    "luxury"
+   ],
+   "status": "partner_verified",
+   "statusDate": "2026-11-16",
+   "coords": null,
+   "airport": "Queenstown International Airport (ZQN)",
+   "airportDirections": "Just 20 minutes from Lake Wānaka. Access by private vehicle or by helicopter; The Lindis Group's reservations team arranges travel and transfers.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "One villa, taken whole, with a personal chef and a villa host."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Hiking and river rafting",
+     "World-class wines",
+     "Gourmet heli trips"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "An isthmus is a narrow strip of land between two bodies of water: here, Lake Wānaka to the west and Lake Hāwea to the east, with the villa between them."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "mutiara-laut",
    "name": "Mutiara Laut\n“Pearl of the Sea”",
    "ledgerId": "STY-2026-481277",
@@ -38247,6 +38313,73 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "paroa-bay",
+   "name": "Paroa Bay",
+   "ledgerId": "STY-2026-000663",
+   "country": "New Zealand",
+   "countrySlug": "new-zealand",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "A vineyard estate above a north-facing inlet in the Bay of Islands, with Tarāpunga, a three-bedroom villa with an infinity pool, and Sage, a one-hat restaurant",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/pool-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/vineyard",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/hole-in-the-rock"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "wine"
+   ],
+   "status": "partner_verified",
+   "statusDate": "2026-11-16",
+   "coords": null,
+   "airport": "Bay of Islands Airport, Kerikeri (KKE)",
+   "airportDirections": "Kerikeri is a 30 minute flight from Auckland, then a scenic 40 minute drive. Russell is 15 minutes away; Auckland about 4 hours by road. The estate can also be reached by boat or helicopter; private vehicle or helicopter transfers from Kerikeri, Paihia or Russell at additional cost.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Tarāpunga Villa: the premier three-bedroom villa above a secluded inlet, open-plan, with a deck and infinity pool over the Bay of Islands. A welcome bottle of Louis Roederer Champagne, estate provisions for a self-prepared breakfast, a golf cart for the estate and private transfers to Russell (subject to availability).",
+     "The Vineyard Cottage and off-grid cabins on the estate."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Dine at Sage, the estate's one-hat restaurant, over the bay and the vines",
+     "Taste the estate's wines from its boutique eight-block vineyard",
+     "Native bush walks, hidden beaches and the 144 islands of the Bay of Islands"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Land that seems to emerge from the sea: rolling vineyards and native bush above a north-facing inlet of the Bay of Islands, with the estate's own wine and restaurant."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -52249,6 +52382,80 @@
    "arrivalHubIds": [
     "6ae69754ca4211dce76cf97a"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "lindis-lodge",
+   "name": "The Lindis",
+   "ledgerId": "STY-2026-000154",
+   "country": "New Zealand",
+   "countrySlug": "new-zealand",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Five suites and three mirrored Pods resting almost unseen on the floor of the Ahuriri Valley, on a 6,500 acre high-country station, with Two MICHELIN Keys",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/pod-stars",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/pod-mirrored",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/lodge-window",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/ahuriri-aerial",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/horse-trek",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/stargazing"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "adventure",
+    "luxury"
+   ],
+   "status": "partner_verified",
+   "statusDate": "2026-11-16",
+   "coords": null,
+   "airport": "Queenstown International Airport (ZQN)",
+   "airportDirections": "Queenstown is about 2 hours 15 minutes by road, Christchurch about 4.5 hours. Helicopter transfers land on the lodge's own helipad from Queenstown, Wanaka or Christchurch, and private vehicle transfers can be arranged (both at additional cost). The last stretch is Birchwood Road, a gravel road best suited to 4WD. Flights to Queenstown: Auckland 1 hour 50, Wellington 1 hour 20, Christchurch 50 minutes.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Two Master Suites in the Main Lodge, the most generously proportioned: double-sided gas fireplace, deep bathtub, private outdoor seating, super king bed.",
+     "Three Lodge Suites in the Main Lodge: floor-to-ceiling windows on the Ahuriri Valley, fireside lounge, ensuite bathtub, private outdoor seating, super king bed.",
+     "Three Pods, a stone's throw from the Main Lodge and out of sight of it: mirrored glass walls on three sides, an outdoor bath, a king bed facing the valley.",
+     "Every stay includes nightly pre-dinner drinks and canapés, a nightly multi-course dinner, and a daily lodge lunch or packed lunch on stayover days."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Fly fishing on the Ahuriri River, a short walk from the lodge, rated among the top ten rivers in the world",
+     "Private guided horse treks from the lodge's own stables across 6,500 acres of Ben Avon Station",
+     "Stargazing with expert guides beneath some of the world's darkest skies",
+     "Guided hikes from the lodge and private 4WD valley tours",
+     "Buggy tours, e-biking, archery, clay target shooting and seasonal rafting"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A lodge resting almost unseen on the floor of the Ahuriri Valley, beside a 49,000 hectare conservation park, with Pods walled in mirrored glass that hand the room over to the valley itself."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

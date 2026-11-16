@@ -1121,6 +1121,16 @@
    "released": true
   },
   {
+   "stay_id": "6afac88857a0e0b5bb326983",
+   "slug": "cheval-blanc-randheli",
+   "name": "Cheval Blanc Randheli",
+   "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1a2dc05de61f23e191f",
    "slug": "chiawa-safaris",
    "name": "Chiawa Camp",
@@ -1844,6 +1854,16 @@
    "name": "Gibb's Farm",
    "country": "Tanzania",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afac88857a0e0b5bb326982",
+   "slug": "gili-lankanfushi",
+   "name": "Gili Lankanfushi Maldives",
+   "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

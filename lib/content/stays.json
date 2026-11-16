@@ -11034,6 +11034,69 @@
    "placeSlug": null
   },
   {
+   "slug": "cheval-blanc-randheli",
+   "name": "Cheval Blanc Randheli",
+   "ledgerId": "STY-2026-000661",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Water, lagoon and island villas in the Noonu Atoll, reached only by seaplane, and a private island of its own for eight",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/cheval-blanc-randheli/hero-water-villa",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/cheval-blanc-randheli/water-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/cheval-blanc-randheli/lagoon-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/cheval-blanc-randheli/lagoon-villa-2"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "luxury",
+    "group_exclusive_use"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": "In the Noonu Atoll, accessible only by seaplane from Malé.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "One-bedroom villas for two: Water Villa, Lagoon Villa, Horizon Villa, Garden Water Villa, Island Villa.",
+     "Two-bedroom villas for four: Garden Water Villa (infinity pool), Lagoon Garden Villa, Island Villa.",
+     "The Private Island: a one hectare island, about 2,200 m², four bedrooms for up to eight guests, a 25 metre pool, a separate guest villa, private beaches, spa treatment room, fitness centre, screening room and a resident team of Ambassadeurs, reached by its own jetty."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The Private Island: a one hectare island of its own, with a 25 metre pool and a team that lives on it, for eight guests."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "chiawa-safaris",
    "name": "Chiawa Camp",
    "ledgerId": "STY-2026-404563",
@@ -17855,6 +17918,79 @@
     "6ae6975466e4a788ffb3f1ea",
     "6ae69753a6b76fae048726a8"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "gili-lankanfushi",
+   "name": "Gili Lankanfushi Maldives",
+   "ledgerId": "STY-2026-000660",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Overwater villas thirty minutes by speedboat from Malé, Crusoe Residences reached only by boat, and The Private Reserve, a four-bedroom villa with a slide into the sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/gili-lankanfushi/hero-private-reserve",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/gili-lankanfushi/crusoe-residence",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/gili-lankanfushi/crusoe-villas",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/gili-lankanfushi/private-reserve-aerial"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "group_exclusive_use"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": "About 20 km from Velana International Airport, a 30 minute speedboat transfer.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Villa Suites and Villa Suites with Pool, overwater, one or two bedrooms, some with rooftop terraces, infinity pools, private gyms and a Maldivian swing.",
+     "Gili Lagoon Villa, Gili Lagoon Retreat and Gili Lagoon Residence; Two-Bedroom Villa with Pool; Residence and Residence with Pool.",
+     "Crusoe Residences (Sunset and Island View), standalone and reached only by boat, with catamaran nets over the sea and overwater hammocks.",
+     "The Private Reserve: four bedrooms over the water, a personal butler, infinity pool, spa pavilion with sauna and steam room, gym, cinema and a water slide into the sea."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling and diving on the house reef",
+     "Sunset cocktails aboard a traditional dhoni",
+     "Meera Spa: Ayurvedic rituals, signature massages, organic facials",
+     "The organic garden and the underground wine cellar"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Kashiveli: international and local flavours",
+     "By the Sea: Japanese fusion",
+     "EarthCheck Gold"
+    ]
+   },
+   "onlyHere": [
+    "The Private Reserve, which Gili Lankanfushi calls the world's largest stand-alone overwater villa, and Crusoe Residences you can only reach by boat, half an hour from the airport."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

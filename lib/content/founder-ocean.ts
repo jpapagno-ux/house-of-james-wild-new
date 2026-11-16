@@ -1,6 +1,6 @@
 // The founder's surf and dive credential (James, 2 Nov 2026): one short line on James's advisor card
 // where the page is about the ocean. His own statement: he has surfed and dived in Costa Rica, the
-// Bahamas, the Galápagos, Peru, Panama and Indonesia; French Polynesia (Tahiti) since 1996, when his first trip surfed Teahupo'o, guiding and selling
+// Bahamas, the Galápagos, Peru, Panama and Indonesia; French Polynesia (Tahiti) since 1996, when his first trip (May 1996, six days touring with Moana David after the Tahiti travel trade show) surfed Teahupo'o, guiding and selling
 // surf travel there ever since, and a Gold Certified Tahiti Specialist (Tahiti Tourisme); the
 // Bahamas (Eleuthera) since 1982, his first journey designed; diving and surfing for 44 years.
 //

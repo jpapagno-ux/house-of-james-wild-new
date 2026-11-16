@@ -1,0 +1,3228 @@
+{
+ "Bridgetown, Barbados|Barbados": {
+  "lat": 13.0817,
+  "lng": -59.6048,
+  "as": "Barbados Rugby Club, Barbados Turf Club Racecourse, Bridgetown, Saint Michael, BB14038, Barbados",
+  "q": "Bridgetown, Barbados, Barbados"
+ },
+ "Soufriere Bay|Saint Lucia": {
+  "lat": 13.8521,
+  "lng": -61.0669,
+  "as": "Soufrière Bay, Coin de l'Anse / Lenny Hill, Soufrière, LC00 124, Saint Lucia",
+  "q": "Soufriere Bay, Saint Lucia"
+ },
+ "Kingstown|St. Vincent and the Grenadines": {
+  "lat": 13.1534,
+  "lng": -61.2228,
+  "as": "Bank of St Vincent and the Grenadines, Granby Street, Kingstown, Saint George, VC0100, Saint Vincent and the Grenadines",
+  "q": "Kingstown, St. Vincent and the Grenadines"
+ },
+ "Port Elizabeth, Bequia|St. Vincent and the Grenadines": {
+  "lat": 13.0165,
+  "lng": -61.232,
+  "as": "Bequia, Port Elizabeth, Grenadines, VC0400, Saint Vincent and the Grenadines",
+  "q": "Port Elizabeth, Bequia"
+ },
+ "Tobago Cays|St. Vincent and the Grenadines": {
+  "lat": 12.597,
+  "lng": -61.4172,
+  "as": "Tobago Cays Marine Park Office, Front Street, Clifton, Grenadines, VC0472, Saint Vincent and the Grenadines",
+  "q": "Tobago Cays"
+ },
+ "St. George's|Grenada": {
+  "lat": 12.0535,
+  "lng": -61.7518,
+  "as": "St. George's, Saint George, Grenada",
+  "q": "St. George's, Grenada"
+ },
+ "Mayreau|St. Vincent and the Grenadines": {
+  "lat": 12.6397,
+  "lng": -61.3897,
+  "as": "Mayreau, Mayreau Village, Grenadines, Saint Vincent and the Grenadines",
+  "q": "Mayreau"
+ },
+ "Terre De Haut, Îles des Saintes|Guadeloupe, F.W.I.": {
+  "lat": 15.8681,
+  "lng": -61.5822,
+  "as": "Terre-de-Haut, Basse-Terre, Guadeloupe, 97137, France",
+  "q": "Terre De Haut"
+ },
+ "Philipsburg|Sint Maarten, Dutch Caribbean": {
+  "lat": 18.0251,
+  "lng": -63.0483,
+  "as": "Philipsburg, Sint Maarten, Netherlands",
+  "q": "Philipsburg"
+ },
+ "Simpson Bay|Sint Maarten, Dutch Caribbean": {
+  "lat": 18.0397,
+  "lng": -63.0972,
+  "as": "Simpson Bay, Sint Maarten, Netherlands",
+  "q": "Simpson Bay"
+ },
+ "Gustavia|St. Barths, F.W.I.": {
+  "lat": 17.8957,
+  "lng": -62.8508,
+  "as": "Gustavia, Saint Barthélemy, 97133, France",
+  "q": "Gustavia"
+ },
+ "St. John's, Antigua|Antigua and Barbuda": {
+  "lat": 17.1185,
+  "lng": -61.8449,
+  "as": "St. John's, Saint John, Antigua, Antigua and Barbuda",
+  "q": "St. John's, Antigua, Antigua and Barbuda"
+ },
+ "Sint Eustatius|Netherlands Antilles": {
+  "lat": 17.5085,
+  "lng": -62.9955,
+  "as": "Sint Eustatius, Netherlands",
+  "q": "Sint Eustatius"
+ },
+ "Charlestown, Nevis|St. Kitts & Nevis": {
+  "lat": 17.1338,
+  "lng": -62.6244,
+  "as": "Charlestown Secondary School, High School Road, Charlestown, Saint Paul Charlestown, Nevis, Saint Kitts and Nevis",
+  "q": "Charlestown, Nevis, St. Kitts & Nevis"
+ },
+ "Sandy Ground|Anguilla, B.W.I.": {
+  "lat": 18.1998,
+  "lng": -63.0902,
+  "as": "Sandy Ground, AI-2640, Anguilla",
+  "q": "Sandy Ground"
+ },
+ "White Bay, Jost van Dyke|B. V. I.": {
+  "lat": 18.4428,
+  "lng": -64.7629,
+  "as": "White Bay, Jost Van Dyke, British Virgin Islands",
+  "q": "White Bay, Jost van Dyke, B. V. I."
+ },
+ "Spanish Town, Virgin Gorda|B. V. I.": {
+  "lat": 18.4464,
+  "lng": -64.4346,
+  "as": "Spanish Town, Virgin Gorda, VG1150, British Virgin Islands",
+  "q": "Spanish Town, Virgin Gorda, B. V. I."
+ },
+ "Norman Island|B. V. I.": {
+  "lat": 18.3156,
+  "lng": -64.6132,
+  "as": "Norman Island, Other British Virgin Islands, British Virgin Islands",
+  "q": "Norman Island, B. V. I."
+ },
+ "San Juan|Puerto Rico": {
+  "lat": 18.3842,
+  "lng": -66.0534,
+  "as": "San Juan, Puerto Rico, United States",
+  "q": "San Juan, Puerto Rico"
+ },
+ "Culebra|Puerto Rico": {
+  "lat": 18.3137,
+  "lng": -65.2826,
+  "as": "Culebra, Puerto Rico, 00775, United States",
+  "q": "Culebra, Puerto Rico"
+ },
+ "Esperanza, Vieques Island|Puerto Rico": {
+  "lat": 18.0977,
+  "lng": -65.4746,
+  "as": "Esperanza, Puerto Real, Vieques, Puerto Rico, 00765, United States",
+  "q": "Esperanza, Puerto Rico"
+ },
+ "Cruz Bay, St. John|U.S.V.I.": {
+  "lat": 18.3356,
+  "lng": -64.755,
+  "as": "Saint John, East End, Saint Thomas - Saint John District, United States Virgin Islands, United States",
+  "q": "Cruz Bay, St. John, U.S.V.I."
+ },
+ "Leverick Bay, Virgin Gorda|B. V. I.": {
+  "lat": 18.4972,
+  "lng": -64.3845,
+  "as": "Leverick Bay, Virgin Gorda, VG1150, British Virgin Islands",
+  "q": "Leverick Bay, Virgin Gorda, B. V. I."
+ },
+ "Charlotte Amalie, St. Thomas|U.S.V.I.": {
+  "lat": 18.3429,
+  "lng": -64.9189,
+  "as": "Saint Thomas, Charlotte Amalie, Saint Thomas - Saint John District, United States Virgin Islands, United States",
+  "q": "Charlotte Amalie, St. Thomas, U.S.V.I."
+ },
+ "Falmouth Bay|Antigua and Barbuda": {
+  "lat": 17.0179,
+  "lng": -61.7725,
+  "as": "Falmouth Harbour, English Harbour, Antigua, Antigua and Barbuda",
+  "q": "Falmouth Bay, Antigua and Barbuda"
+ },
+ "Trellis Bay, Beef Island|B. V. I.": {
+  "lat": 18.4464,
+  "lng": -64.5328,
+  "as": "Trellis Bay, Little Mountain, VG1120, British Virgin Islands",
+  "q": "Trellis Bay, B. V. I."
+ },
+ "Marigot|Saint Martin, F.W.I.": {
+  "lat": 18.0669,
+  "lng": -63.0849,
+  "as": "Marigot, Saint Martin, 97150, France",
+  "q": "Marigot"
+ },
+ "Cane Garden Bay, Tortola|B. V. I.": {
+  "lat": 18.4339,
+  "lng": -64.6548,
+  "as": "Cane Garden Bay Road, Chalwell, Road Town, Tortola, VG1130, British Virgin Islands",
+  "q": "Cane Garden Bay, Tortola, B. V. I."
+ },
+ "North Sound, Virgin Gorda|B. V. I.": {
+  "lat": 18.4794,
+  "lng": -64.4002,
+  "as": "North Sound Road, Leverick Bay, Spanish Town, Virgin Gorda, VG1150, British Virgin Islands",
+  "q": "North Sound, Virgin Gorda, B. V. I."
+ },
+ "South Friars Bay|St. Kitts & Nevis": {
+  "lat": 17.2705,
+  "lng": -62.6706,
+  "as": "South Friars Bay, Kittian Village, Saint George Basseterre, Saint Kitts, Saint Kitts and Nevis",
+  "q": "South Friars Bay"
+ },
+ "Rodney Bay|Saint Lucia": {
+  "lat": 14.0748,
+  "lng": -60.9527,
+  "as": "Rodney Bay, Gros Islet, LC01 601, Saint Lucia",
+  "q": "Rodney Bay, Saint Lucia"
+ },
+ "Mount Wynne|St. Vincent and the Grenadines": {
+  "lat": -18.0983,
+  "lng": 124.4609,
+  "as": "Mount Wynne, Western Australia, Australia",
+  "q": "Mount Wynne"
+ },
+ "Samana|Dominican Republic": {
+  "lat": 19.2037,
+  "lng": -69.339,
+  "as": "Samana, Samaná, 82202, Dominican Republic",
+  "q": "Samana, Dominican Republic"
+ },
+ "Grand Turk|Turks And Caicos Islands": {
+  "lat": 21.468,
+  "lng": -71.1387,
+  "as": "Grand Turk, Cockburn Town, Grand Turk, Turks and Caicos Islands",
+  "q": "Grand Turk, Turks And Caicos Islands"
+ },
+ "Sailing the Bahamas Archipelago|Bahamas": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Gordon's Beach, Long Island|Bahamas": {
+  "lat": 48.3697,
+  "lng": -123.8355,
+  "as": "Gordon's Beach, Otter Point, Juan de Fuca Electoral Area, Capital Regional District, British Columbia, Canada",
+  "q": "Gordon's Beach"
+ },
+ "Staniel Cay, Exumas|Bahamas": {
+  "lat": 24.1707,
+  "lng": -76.4416,
+  "as": "Staniel Cay, Black Point, Bahamas",
+  "q": "Staniel Cay, Bahamas"
+ },
+ "Taino Beach, Grand Bahama|Bahamas": {
+  "lat": 26.52,
+  "lng": -78.6194,
+  "as": "Taino Beach, City of Freeport, Bahamas",
+  "q": "Taino Beach, Grand Bahama, Bahamas"
+ },
+ "Palm Beach|United States": {
+  "lat": 26.628,
+  "lng": -80.4494,
+  "as": "Palm Beach County, Florida, United States",
+  "q": "Palm Beach, United States"
+ },
+ "Andros Island|Bahamas": {
+  "lat": 24.7369,
+  "lng": -78.0236,
+  "as": "Andros Island, Bahamas",
+  "q": "Andros Island, Bahamas"
+ },
+ "Emerald Bay, Great Exuma Island|Bahamas": {
+  "lat": 26.4975,
+  "lng": -78.7081,
+  "as": "Emerald Bay, Bahamia, City of Freeport, Bahamas",
+  "q": "Emerald Bay, Bahamas"
+ },
+ "San Salvador|Bahamas": {
+  "lat": 24.032,
+  "lng": -74.49,
+  "as": "San Salvador, Bahamas",
+  "q": "San Salvador, Bahamas"
+ },
+ "Horta, Azores|Portugal": {
+  "lat": 38.5796,
+  "lng": -28.7096,
+  "as": "Horta, Azores, Portugal",
+  "q": "Horta, Azores, Portugal"
+ },
+ "Lisbon|Portugal": {
+  "lat": 38.7078,
+  "lng": -9.1366,
+  "as": "Lisbon, Portugal",
+  "q": "Lisbon, Portugal"
+ },
+ "Funchal, Madeira|Portugal": {
+  "lat": 32.6496,
+  "lng": -16.9087,
+  "as": "Funchal, Madeira, Portugal",
+  "q": "Funchal, Madeira, Portugal"
+ },
+ "Setubal|Portugal": {
+  "lat": 38.5242,
+  "lng": -8.8932,
+  "as": "Setúbal, Portugal",
+  "q": "Setubal, Portugal"
+ },
+ "Portimao, Algarve|Portugal": {
+  "lat": 37.1376,
+  "lng": -8.5368,
+  "as": "Portimão, Faro, Portugal",
+  "q": "Portimao, Portugal"
+ },
+ "Huelva|Spain": {
+  "lat": 37.2576,
+  "lng": -6.9485,
+  "as": "Huelva, Comarca Metropolitana de Huelva, Huelva, Andalusia, Spain",
+  "q": "Huelva, Spain"
+ },
+ "Cadiz|Spain": {
+  "lat": 36.5297,
+  "lng": -6.2929,
+  "as": "Cádiz, Bay of Cádiz, Cádiz, Andalusia, Spain",
+  "q": "Cadiz, Spain"
+ },
+ "Ceuta|Spain": {
+  "lat": 35.8884,
+  "lng": -5.3041,
+  "as": "Ceuta, Spain",
+  "q": "Ceuta, Spain"
+ },
+ "Motril|Spain": {
+  "lat": 36.7451,
+  "lng": -3.5208,
+  "as": "Motril, Comarca de la Costa Granadina, Granada, Andalusia, Spain",
+  "q": "Motril, Spain"
+ },
+ "Puerto Banus|Spain": {
+  "lat": 36.4875,
+  "lng": -4.9536,
+  "as": "Puerto Banús, Avenida Julio Iglesias, Nueva Andalucía, San Pedro Alcántara, Marbella, Costa del Sol Occidental, Malaga, Andalusia, 29660, Spain",
+  "q": "Puerto Banus, Spain"
+ },
+ "Malaga|Spain": {
+  "lat": 36.7648,
+  "lng": -4.4422,
+  "as": "Málaga, Málaga-Costa del Sol, Malaga, Andalusia, Spain",
+  "q": "Malaga, Spain"
+ },
+ "Cartagena|Spain": {
+  "lat": 37.6155,
+  "lng": -0.9875,
+  "as": "Cartagena, Campo de Cartagena y Mar Menor, Region of Murcia, Spain",
+  "q": "Cartagena, Spain"
+ },
+ "Valencia|Spain": {
+  "lat": 39.4697,
+  "lng": -0.3763,
+  "as": "Valencia, Comarca de València, Valencia, Valencian Community, Spain",
+  "q": "Valencia, Spain"
+ },
+ "Castellón|Spain": {
+  "lat": 40.2519,
+  "lng": -0.0615,
+  "as": "Castelló / Castellón, Valencian Community, Spain",
+  "q": "Castellón, Spain"
+ },
+ "Port-Vendres|France": {
+  "lat": 42.5204,
+  "lng": 3.1056,
+  "as": "Port-Vendres, Céret, Pyrénées-Orientales, Occitania, Metropolitan France, 66660, France",
+  "q": "Port-Vendres, France"
+ },
+ "Sanary-sur-Mer|France": {
+  "lat": 43.1177,
+  "lng": 5.8009,
+  "as": "Sanary-sur-Mer, Toulon, Var, Provence-Alpes-Côte d'Azur, Metropolitan France, 83110, France",
+  "q": "Sanary-sur-Mer, France"
+ },
+ "Nice|France": {
+  "lat": 43.7009,
+  "lng": 7.2684,
+  "as": "Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
+  "q": "Nice, France"
+ },
+ "Portofino|Italy": {
+  "lat": 44.3033,
+  "lng": 9.2096,
+  "as": "Portofino, Genoa, Liguria, Italy",
+  "q": "Portofino, Italy"
+ },
+ "Livorno (Florence)|Italy": {
+  "lat": 42.7902,
+  "lng": 10.3402,
+  "as": "Livorno, Tuscany, Italy",
+  "q": "Livorno, Italy"
+ },
+ "Capraia|Italy": {
+  "lat": 43.0374,
+  "lng": 9.8226,
+  "as": "Capraia Isola, Livorno, Tuscany, 57032, Italy",
+  "q": "Capraia, Italy"
+ },
+ "Portoferraio, Elba|Italy": {
+  "lat": 42.7484,
+  "lng": 10.235,
+  "as": "Via per Portoferraio, Marina di Campo, Campo nell'Elba, Livorno, Tuscany, 57034, Italy",
+  "q": "Portoferraio, Elba, Italy"
+ },
+ "Bonifacio, Corsica|France": {
+  "lat": 41.3872,
+  "lng": 9.1591,
+  "as": "Bonifacio / Bunifaziu, Sartène, South Corsica, Corsica, Metropolitan France, 20169, France",
+  "q": "Bonifacio, Corsica, France"
+ },
+ "Porto Ercole|Italy": {
+  "lat": 42.396,
+  "lng": 11.2025,
+  "as": "Porto Ercole, Monte Argentario, Grosseto, Tuscany, 58018, Italy",
+  "q": "Porto Ercole, Italy"
+ },
+ "Rome (Civitavecchia)|Italy": {
+  "lat": 41.8933,
+  "lng": 12.4829,
+  "as": "Rome, Roma Capitale, Lazio, Italy",
+  "q": "Rome, Italy"
+ },
+ "Porto Cervo, Sardinia|Italy": {
+  "lat": 41.1319,
+  "lng": 9.5354,
+  "as": "Porto Cervo, Alzachèna/Arzachena, Gallura Nord-Est Sardegna, Sardinia, Italy",
+  "q": "Porto Cervo, Sardinia, Italy"
+ },
+ "Calvi, Corsica|France": {
+  "lat": 42.5677,
+  "lng": 8.7589,
+  "as": "Calvi, Upper Corsica, Corsica, Metropolitan France, 20260, France",
+  "q": "Calvi, Corsica, France"
+ },
+ "Monte Carlo|Monaco": {
+  "lat": 43.7403,
+  "lng": 7.4266,
+  "as": "Monte-Carlo, Monaco",
+  "q": "Monte Carlo, Monaco"
+ },
+ "St. Tropez|France": {
+  "lat": 43.2727,
+  "lng": 6.6405,
+  "as": "Saint-Tropez, Draguignan, Var, Provence-Alpes-Côte d'Azur, Metropolitan France, 83990, France",
+  "q": "St. Tropez, France"
+ },
+ "Cannes|France": {
+  "lat": 43.5515,
+  "lng": 7.0134,
+  "as": "Cannes, Grasse, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, France",
+  "q": "Cannes, France"
+ },
+ "Vigo (Baiona), Galicia|Spain": {
+  "lat": 42.1986,
+  "lng": -8.728,
+  "as": "Vigo, Pontevedra, Galicia, Spain",
+  "q": "Vigo , Galicia, Spain"
+ },
+ "A Coruña|Spain": {
+  "lat": 43.3455,
+  "lng": -8.4139,
+  "as": "A Coruña, Galicia, Spain",
+  "q": "A Coruña, Spain"
+ },
+ "Sailing the Cantabrian Sea|Spain": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Saint-Jean-de-Luz|France": {
+  "lat": 43.3872,
+  "lng": -1.6637,
+  "as": "Saint-Jean-de-Luz, Bayonne, Pyrénées-Atlantiques, Nouvelle-Aquitaine, Metropolitan France, 64500, France",
+  "q": "Saint-Jean-de-Luz, France"
+ },
+ "Bordeaux|France": {
+  "lat": 44.8412,
+  "lng": -0.58,
+  "as": "Bordeaux, Gironde, Nouvelle-Aquitaine, Metropolitan France, France",
+  "q": "Bordeaux, France"
+ },
+ "Belle Île|France": {
+  "lat": 47.3339,
+  "lng": -3.1973,
+  "as": "Belle-Île-en-Mer, Morbihan, Brittany, Metropolitan France, 56360, France",
+  "q": "Belle Île, France"
+ },
+ "Douarnenez|France": {
+  "lat": 48.0944,
+  "lng": -4.3311,
+  "as": "Douarnenez, Quimper, Finistère, Brittany, Metropolitan France, 29100, France",
+  "q": "Douarnenez, France"
+ },
+ "Guernsey, Channel Islands|United Kingdom": {
+  "lat": 57.167,
+  "lng": -7.3747,
+  "as": "Guernsey, 1, B888, Garryheillie, Daliburgh, Western Isles, Scotland, HS8 5SS, United Kingdom",
+  "q": "Guernsey, United Kingdom"
+ },
+ "Sailing the Strait of Dover|United Kingdom": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Antwerp|Belgium": {
+  "lat": 51.2211,
+  "lng": 4.3997,
+  "as": "Antwerp, Flanders, Belgium",
+  "q": "Antwerp, Belgium"
+ },
+ "Rotterdam|Netherlands": {
+  "lat": 51.9244,
+  "lng": 4.4778,
+  "as": "Rotterdam, South Holland, Netherlands",
+  "q": "Rotterdam, Netherlands"
+ },
+ "Oudeschild, Texel Island|Netherlands": {
+  "lat": 53.0384,
+  "lng": 4.8457,
+  "as": "Oudeschild, Texel, North Holland, Netherlands",
+  "q": "Oudeschild, Netherlands"
+ },
+ "Kiel Canal Transit|Germany": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Copenhagen|Denmark": {
+  "lat": 55.6867,
+  "lng": 12.5701,
+  "as": "Copenhagen, Copenhagen Municipality, Capital Region of Denmark, 1357, Denmark",
+  "q": "Copenhagen, Denmark"
+ },
+ "Lysekil|Sweden": {
+  "lat": 58.2772,
+  "lng": 11.4431,
+  "as": "Lysekil, Lysekils kommun, Västra Götaland County, 453 35, Sweden",
+  "q": "Lysekil, Sweden"
+ },
+ "Oslo|Norway": {
+  "lat": 59.9133,
+  "lng": 10.739,
+  "as": "Oslo, Norway",
+  "q": "Oslo, Norway"
+ },
+ "Skagen|Denmark": {
+  "lat": 57.726,
+  "lng": 10.5845,
+  "as": "Skagen, Frederikshavn Municipality, North Denmark Region, 9990, Denmark",
+  "q": "Skagen, Denmark"
+ },
+ "Rosendal|Norway": {
+  "lat": 59.987,
+  "lng": 6.0068,
+  "as": "Rosendal, Kvinnherad, Vestland, 5470, Norway",
+  "q": "Rosendal, Norway"
+ },
+ "Bergen|Norway": {
+  "lat": 60.3943,
+  "lng": 5.3259,
+  "as": "Bergen, Vestland, Norway",
+  "q": "Bergen, Norway"
+ },
+ "Vik|Norway": {
+  "lat": 61.035,
+  "lng": 6.5941,
+  "as": "Vik, Vestland, Norway",
+  "q": "Vik, Norway"
+ },
+ "Olden|Norway": {
+  "lat": 61.8352,
+  "lng": 6.8072,
+  "as": "Olden, Stryn, Vestland, 6788, Norway",
+  "q": "Olden, Norway"
+ },
+ "Måløy|Norway": {
+  "lat": 61.9337,
+  "lng": 5.1129,
+  "as": "Måløy, Kinn, Vestland, 6700, Norway",
+  "q": "Måløy, Norway"
+ },
+ "Ålesund|Norway": {
+  "lat": 62.4802,
+  "lng": 6.5551,
+  "as": "Ålesund, Møre og Romsdal, Norway",
+  "q": "Ålesund, Norway"
+ },
+ "Brønnøysund|Norway": {
+  "lat": 65.4749,
+  "lng": 12.2116,
+  "as": "Brønnøysund, Brønnøy, Nordland, 8900, Norway",
+  "q": "Brønnøysund, Norway"
+ },
+ "Reine, Lofoten Islands|Norway": {
+  "lat": 67.9325,
+  "lng": 13.0888,
+  "as": "Reine, Moskenes, Nordland, 8390, Norway",
+  "q": "Reine, Norway"
+ },
+ "Svolvær, Lofoten Islands|Norway": {
+  "lat": 68.2322,
+  "lng": 14.5646,
+  "as": "Svolvær, Vågan, Nordland, 8300, Norway",
+  "q": "Svolvær, Norway"
+ },
+ "Trollfjord Scenic Sailing|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Tromsø|Norway": {
+  "lat": 69.6516,
+  "lng": 18.9559,
+  "as": "Tromsø, Troms, Norway",
+  "q": "Tromsø, Norway"
+ },
+ "Bastia, Corsica|France": {
+  "lat": 42.6975,
+  "lng": 9.4498,
+  "as": "Bastia, Upper Corsica, Corsica, Metropolitan France, France",
+  "q": "Bastia, Corsica, France"
+ },
+ "Beaulieu-sur-Mer|France": {
+  "lat": 43.7088,
+  "lng": 7.3338,
+  "as": "Beaulieu-sur-Mer, Nice, Maritime Alps, Provence-Alpes-Côte d'Azur, Metropolitan France, 06310, France",
+  "q": "Beaulieu-sur-Mer, France"
+ },
+ "Venice|Italy": {
+  "lat": 45.4372,
+  "lng": 12.3346,
+  "as": "Venice, Venezia, Veneto, 30121-30176, Italy",
+  "q": "Venice, Italy"
+ },
+ "Rovinj|Croatia": {
+  "lat": 45.0826,
+  "lng": 13.6343,
+  "as": "Rovinj, Grad Rovinj, Istria County, Croatia",
+  "q": "Rovinj, Croatia"
+ },
+ "Hvar|Croatia": {
+  "lat": 43.1739,
+  "lng": 16.5565,
+  "as": "Hvar, Split-Dalmatia County, Croatia",
+  "q": "Hvar, Croatia"
+ },
+ "Komiza, Vis Island|Croatia": {
+  "lat": 43.0446,
+  "lng": 16.0905,
+  "as": "Grad Komiža, Split-Dalmatia County, Croatia",
+  "q": "Komiza, Croatia"
+ },
+ "Korcula|Croatia": {
+  "lat": 42.9438,
+  "lng": 16.9135,
+  "as": "Korčula, Dubrovnik-Neretva County, Croatia",
+  "q": "Korcula, Croatia"
+ },
+ "Dubrovnik|Croatia": {
+  "lat": 42.6491,
+  "lng": 18.094,
+  "as": "Dubrovnik, Dubrovnik-Neretva County, Croatia",
+  "q": "Dubrovnik, Croatia"
+ },
+ "Kotor|Montenegro": {
+  "lat": 42.4249,
+  "lng": 18.7713,
+  "as": "Kotor, Kotor Municipality, 85339, Montenegro",
+  "q": "Kotor, Montenegro"
+ },
+ "Corfu|Greece": {
+  "lat": 39.5913,
+  "lng": 19.8596,
+  "as": "Corfu, Corfu Regional Unit, Ioanian Islands, Peloponnese, Western Greece and the Ionian, Greece",
+  "q": "Corfu, Greece"
+ },
+ "Fiskardo, Kefalonia|Greece": {
+  "lat": 38.4609,
+  "lng": 20.5752,
+  "as": "Fiskardo, Erisos Municipal Unit, Sami Municipality, Kefallonia Regional Unit, Ioanian Islands, Peloponnese, Western Greece and the Ionian, 280 84, Greece",
+  "q": "Fiskardo, Kefalonia, Greece"
+ },
+ "Galaxidi (Delphi)|Greece": {
+  "lat": 38.3775,
+  "lng": 22.383,
+  "as": "Galaxidi, Municipal Unit of Galaxidi, Delphi Municipality, Regional Unit of Phocis, Central Greece, Thessaly and Central Greece, Greece",
+  "q": "Galaxidi, Greece"
+ },
+ "Corinth Canal Transit|Greece": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Athens (Piraeus)|Greece": {
+  "lat": 37.9756,
+  "lng": 23.7348,
+  "as": "Athens, Municipality of Athens, Regional Unit of Central Athens, Attica, 105 57, Greece",
+  "q": "Athens, Greece"
+ },
+ "Milos|Greece": {
+  "lat": 36.7093,
+  "lng": 24.5068,
+  "as": "Milos, Milos Regional Unit, South Aegean, Aegean, 848 00, Greece",
+  "q": "Milos, Greece"
+ },
+ "Tinos|Greece": {
+  "lat": 37.6017,
+  "lng": 25.154,
+  "as": "Tinos, Tinos Regional Unit, South Aegean, Aegean, Greece",
+  "q": "Tinos, Greece"
+ },
+ "Mykonos|Greece": {
+  "lat": 37.4514,
+  "lng": 25.3923,
+  "as": "Mykonos, Klouvas, Municipality of Mykonos, Mykonos Regional Unit, South Aegean, Aegean, 846 00, Greece",
+  "q": "Mykonos, Greece"
+ },
+ "Kusadasi (Ephesus)|Turkey": {
+  "lat": 37.8632,
+  "lng": 27.2669,
+  "as": "Kuşadası, Aydın, Aegean Region, Turkey",
+  "q": "Kusadasi, Turkey"
+ },
+ "Cesme|Turkey": {
+  "lat": 38.3244,
+  "lng": 26.303,
+  "as": "Çeşme, Izmir, Aegean Region, Turkey",
+  "q": "Cesme, Turkey"
+ },
+ "Patmos|Greece": {
+  "lat": 37.3247,
+  "lng": 26.5382,
+  "as": "Patmos, Patmos Municipality, Kalymnos Regional Unit, South Aegean, Aegean, 855 00, Greece",
+  "q": "Patmos, Greece"
+ },
+ "Kythnos|Greece": {
+  "lat": 37.3912,
+  "lng": 24.426,
+  "as": "Kythnos, Kea-Kythnos Regional Unit, South Aegean, Aegean, 840 06, Greece",
+  "q": "Kythnos, Greece"
+ },
+ "Hydra|Greece": {
+  "lat": 37.3321,
+  "lng": 23.4664,
+  "as": "Hydra, Vlychos, Municipality of Hydra, Regional Unit of Islands, Attica, 180 40, Greece",
+  "q": "Hydra, Greece"
+ },
+ "Sifnos Island|Greece": {
+  "lat": 36.9714,
+  "lng": 24.7081,
+  "as": "Sifnos, Πλατύς Γιαλός, Municipality of Sifnos, Milos Regional Unit, South Aegean, Aegean, 840 03, Greece",
+  "q": "Sifnos Island, Greece"
+ },
+ "Santorini|Greece": {
+  "lat": 36.4071,
+  "lng": 25.4567,
+  "as": "Santorini, Thira Municipal Unit, Municipality of Thira, Thira Regional Unit, South Aegean, Aegean, Greece",
+  "q": "Santorini, Greece"
+ },
+ "Itea (Delphi)|Greece": {
+  "lat": 38.4335,
+  "lng": 22.4239,
+  "as": "Itea, Municipal Unit of Itea, Delphi Municipality, Regional Unit of Phocis, Central Greece, Thessaly and Central Greece, 332 00, Greece",
+  "q": "Itea, Greece"
+ },
+ "Sailing the Ionian Sea|Greece": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Taormina (Etna) Sicily|Italy": {
+  "lat": 37.8512,
+  "lng": 15.283,
+  "as": "Taormina, Messina, Sicily, 98039, Italy",
+  "q": "Taormina Sicily, Italy"
+ },
+ "Capri|Italy": {
+  "lat": 40.5488,
+  "lng": 14.2284,
+  "as": "Capri, Anacapri, Naples, Campania, Italy",
+  "q": "Capri, Italy"
+ },
+ "Amalfi|Italy": {
+  "lat": 40.6337,
+  "lng": 14.6026,
+  "as": "Amalfi, Salerno, Campania, 84011, Italy",
+  "q": "Amalfi, Italy"
+ },
+ "Positano|Italy": {
+  "lat": 40.6287,
+  "lng": 14.4855,
+  "as": "Positano, Salerno, Campania, 84017, Italy",
+  "q": "Positano, Italy"
+ },
+ "Sorrento|Italy": {
+  "lat": 40.6249,
+  "lng": 14.3748,
+  "as": "Sorrento, Naples, Campania, 80067, Italy",
+  "q": "Sorrento, Italy"
+ },
+ "Fjords Scenic Sailing|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Kalvåg|Norway": {
+  "lat": 61.7668,
+  "lng": 4.879,
+  "as": "Kalvåg, Bremanger, Vestland, 6729, Norway",
+  "q": "Kalvåg, Norway"
+ },
+ "Lipari, Aeolian Islands|Italy": {
+  "lat": 38.4693,
+  "lng": 14.9565,
+  "as": "Lipari, Messina, Sicily, 98055, Italy",
+  "q": "Lipari, Italy"
+ },
+ "Syracuse, Sicily|Italy": {
+  "lat": 37.0316,
+  "lng": 15.2124,
+  "as": "Siracusa, Sicily, 96100, Italy",
+  "q": "Syracuse, Sicily, Italy"
+ },
+ "Valletta|Malta": {
+  "lat": 35.899,
+  "lng": 14.5137,
+  "as": "Valletta, Port Region, Malta",
+  "q": "Valletta, Malta"
+ },
+ "Arendal|Norway": {
+  "lat": 58.4267,
+  "lng": 8.9469,
+  "as": "Arendal, Agder, Norway",
+  "q": "Arendal, Norway"
+ },
+ "Skudeneshavn|Norway": {
+  "lat": 59.1497,
+  "lng": 5.2582,
+  "as": "Skudeneshavn, Karmøy, Rogaland, 4280, Norway",
+  "q": "Skudeneshavn, Norway"
+ },
+ "Lerwick, Shetland, Scotland|United Kingdom": {
+  "lat": 60.1531,
+  "lng": -1.1427,
+  "as": "Lerwick, Shetland, Scotland, United Kingdom",
+  "q": "Lerwick, Shetland, Scotland, United Kingdom"
+ },
+ "Fair Isle, Shetland|United Kingdom": {
+  "lat": 59.5326,
+  "lng": -1.631,
+  "as": "Fair Isle, Stonybreck, Shetland, Scotland, ZE2 9JU, United Kingdom",
+  "q": "Fair Isle, Shetland, United Kingdom"
+ },
+ "Kirkwall, Orkney, Scotland|United Kingdom": {
+  "lat": 58.9817,
+  "lng": -2.9603,
+  "as": "Kirkwall, Orkney Islands, Scotland, KW15 1DH, United Kingdom",
+  "q": "Kirkwall, Orkney, Scotland, United Kingdom"
+ },
+ "Montrose, Scotland|United Kingdom": {
+  "lat": 56.7114,
+  "lng": -2.4682,
+  "as": "Montrose, Angus, Scotland, DD10 8QZ, United Kingdom",
+  "q": "Montrose, Scotland, United Kingdom"
+ },
+ "Dundee, Scotland|United Kingdom": {
+  "lat": 56.4606,
+  "lng": -2.9702,
+  "as": "Dundee, Dundee City, Scotland, DD1 1SA, United Kingdom",
+  "q": "Dundee, Scotland, United Kingdom"
+ },
+ "Edinburgh (Leith), Scotland|United Kingdom": {
+  "lat": 55.9533,
+  "lng": -3.1884,
+  "as": "City of Edinburgh, Scotland, United Kingdom",
+  "q": "Edinburgh , Scotland, United Kingdom"
+ },
+ "Invergordon, Scotland|United Kingdom": {
+  "lat": 57.6884,
+  "lng": -4.1692,
+  "as": "Invergordon, Highland, Scotland, IV18 0DT, United Kingdom",
+  "q": "Invergordon, Scotland, United Kingdom"
+ },
+ "Stromness, Orkney, Scotland|United Kingdom": {
+  "lat": 58.9614,
+  "lng": -3.2994,
+  "as": "Stromness, Orkney Islands, Scotland, KW16 3BU, United Kingdom",
+  "q": "Stromness, Orkney, Scotland, United Kingdom"
+ },
+ "Torshavn|Faroe Islands": {
+  "lat": 62.0101,
+  "lng": -6.7716,
+  "as": "Tórshavn, Tórshavnar kommuna, Streymoy region, 100, Faroe Islands",
+  "q": "Torshavn, Faroe Islands"
+ },
+ "Vágur, Faroe Islands|Faroe Islands": {
+  "lat": 61.4739,
+  "lng": -6.8115,
+  "as": "Vágur, Vágs kommuna, Suðuroy region, 900, Faroe Islands",
+  "q": "Vágur, Faroe Islands"
+ },
+ "Portree, Isle of Skye, Scotland|United Kingdom": {
+  "lat": 57.4131,
+  "lng": -6.1944,
+  "as": "Portree, Highland, Scotland, IV51 9EH, United Kingdom",
+  "q": "Portree, United Kingdom"
+ },
+ "Stornoway, Isle of Lewis, Scotland|United Kingdom": {
+  "lat": 58.2154,
+  "lng": -6.389,
+  "as": "Stornoway Golf Club, Willowglen Road, Manor Park, Guershader, Stornoway, Western Isles, Scotland, HS2 0XP, United Kingdom",
+  "q": "Stornoway, Isle of Lewis, Scotland, United Kingdom"
+ },
+ "Castlebay, Isle of Barra, Scotland|United Kingdom": {
+  "lat": 56.9563,
+  "lng": -7.4973,
+  "as": "Castlebay School, The Square, Nask, Castlebay, Western Isles, Scotland, HS9 5XD, United Kingdom",
+  "q": "Castlebay, Isle of Barra, Scotland, United Kingdom"
+ },
+ "Oban, Scotland|United Kingdom": {
+  "lat": 56.412,
+  "lng": -5.4724,
+  "as": "Oban, Argyll and Bute, Scotland, PA34 4AT, United Kingdom",
+  "q": "Oban, Scotland, United Kingdom"
+ },
+ "Glasgow (Troon)|United Kingdom": {
+  "lat": 55.8612,
+  "lng": -4.2502,
+  "as": "Glasgow, Glasgow City, Scotland, G2 1AL, United Kingdom",
+  "q": "Glasgow, United Kingdom"
+ },
+ "Solar Eclipse Viewing|Malta": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Portovenere (Cinque Terre)|Italy": {
+  "lat": 44.0507,
+  "lng": 9.8345,
+  "as": "Portovenere, La Spezia, Liguria, 19025, Italy",
+  "q": "Portovenere, Italy"
+ },
+ "Sailing the Gulf of Squillace|Italy": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Porto Montenegro (Tivat)|Montenegro": {
+  "lat": 42.4336,
+  "lng": 18.6902,
+  "as": "Porto Montenegro, Pomorska, Seljanovo, Tivat, Tivat Municipality, 82000, Montenegro",
+  "q": "Porto Montenegro, Montenegro"
+ },
+ "Mali Losinj|Croatia": {
+  "lat": 44.5316,
+  "lng": 14.4694,
+  "as": "Mali Lošinj, Grad Mali Lošinj, Primorje-Gorski Kotar County, 51553, Croatia",
+  "q": "Mali Losinj, Croatia"
+ },
+ "Piran|Slovenia": {
+  "lat": 45.5285,
+  "lng": 13.5684,
+  "as": "Piran / Pirano, Upravna enota Piran / Unità amministrativa Pirano, 6630, Slovenia",
+  "q": "Piran, Slovenia"
+ },
+ "Port Ellen, Isle of Islay, Scotland|United Kingdom": {
+  "lat": 55.6312,
+  "lng": -6.1882,
+  "as": "Port Ellen Telephone Exchange, Back Road, Imeraval, Port Ellen, Argyll and Bute, Scotland, PA42 7DR, United Kingdom",
+  "q": "Port Ellen, Isle of Islay, Scotland, United Kingdom"
+ },
+ "Portrush, Northern Ireland|United Kingdom": {
+  "lat": 55.2045,
+  "lng": -6.6529,
+  "as": "Portrush, Causeway Coast and Glens District, County Antrim, Northern Ireland, BT56 8DX, United Kingdom",
+  "q": "Portrush, Northern Ireland, United Kingdom"
+ },
+ "Belfast, Northern Ireland|United Kingdom": {
+  "lat": 54.5964,
+  "lng": -5.9302,
+  "as": "Belfast City District, County Antrim, Northern Ireland, United Kingdom",
+  "q": "Belfast, Northern Ireland, United Kingdom"
+ },
+ "Whitehaven|United Kingdom": {
+  "lat": 54.5474,
+  "lng": -3.5885,
+  "as": "Whitehaven, Cumberland, England, United Kingdom",
+  "q": "Whitehaven, United Kingdom"
+ },
+ "Port Douglas, Isle of Man|United Kingdom": {
+  "lat": -16.4846,
+  "lng": 145.4636,
+  "as": "Port Douglas, Queensland, Australia",
+  "q": "Port Douglas"
+ },
+ "Warrenpoint, Northern Ireland|United Kingdom": {
+  "lat": 54.1,
+  "lng": -6.2513,
+  "as": "Warrenpoint, County Down, Northern Ireland, BT34 8NU, United Kingdom",
+  "q": "Warrenpoint, Northern Ireland, United Kingdom"
+ },
+ "Dublin (Dún Laoghaire)|Ireland": {
+  "lat": 53.3494,
+  "lng": -6.2606,
+  "as": "Dublin, County Dublin, Leinster, Ireland",
+  "q": "Dublin, Ireland"
+ },
+ "Waterford|Ireland": {
+  "lat": 52.261,
+  "lng": -7.1119,
+  "as": "Waterford, County Waterford, Munster, Ireland",
+  "q": "Waterford, Ireland"
+ },
+ "Kinsale|Ireland": {
+  "lat": 51.7057,
+  "lng": -8.523,
+  "as": "Kinsale, County Cork, Munster, Ireland",
+  "q": "Kinsale, Ireland"
+ },
+ "Cork (Cobh)|Ireland": {
+  "lat": 51.8985,
+  "lng": -8.4726,
+  "as": "Cork, County Cork, Munster, Ireland",
+  "q": "Cork, Ireland"
+ },
+ "Youghal|Ireland": {
+  "lat": 51.9495,
+  "lng": -7.8432,
+  "as": "Youghal, County Cork, Munster, Ireland",
+  "q": "Youghal, Ireland"
+ },
+ "Liverpool, England|United Kingdom": {
+  "lat": 53.3933,
+  "lng": -2.9166,
+  "as": "Liverpool, Liverpool City Region, England, United Kingdom",
+  "q": "Liverpool, England, United Kingdom"
+ },
+ "Fishguard, Wales|United Kingdom": {
+  "lat": 51.9938,
+  "lng": -4.9765,
+  "as": "Fishguard, Pembrokeshire, Wales, SA65 9HA, United Kingdom",
+  "q": "Fishguard, Wales, United Kingdom"
+ },
+ "St. Mary's, Isles of Scilly|United Kingdom": {
+  "lat": 49.9203,
+  "lng": -6.2929,
+  "as": "St Mary's, Old Town, Isles of Scilly, England, United Kingdom",
+  "q": "St. Mary's, Isles of Scilly, United Kingdom"
+ },
+ "Dartmouth, England|United Kingdom": {
+  "lat": 50.3515,
+  "lng": -3.5838,
+  "as": "Dartmouth, Devon, Devon and Torbay, England, United Kingdom",
+  "q": "Dartmouth, England, United Kingdom"
+ },
+ "Fowey|United Kingdom": {
+  "lat": 50.3358,
+  "lng": -4.6366,
+  "as": "Fowey, Cornwall, England, United Kingdom",
+  "q": "Fowey, United Kingdom"
+ },
+ "Poole, England|United Kingdom": {
+  "lat": 50.7402,
+  "lng": -1.9537,
+  "as": "Poole, Bournemouth, Christchurch and Poole, England, United Kingdom",
+  "q": "Poole, England, United Kingdom"
+ },
+ "Portsmouth, England|United Kingdom": {
+  "lat": 50.8,
+  "lng": -1.0906,
+  "as": "Portsmouth, England, United Kingdom",
+  "q": "Portsmouth, England, United Kingdom"
+ },
+ "Caen (Ouistreham), Normandy|France": {
+  "lat": 49.1813,
+  "lng": -0.3636,
+  "as": "Caen, Calvados, Normandy, Metropolitan France, 14000, France",
+  "q": "Caen , Normandy, France"
+ },
+ "Sark, Channel Islands|United Kingdom": {
+  "lat": 53.8736,
+  "lng": -0.5348,
+  "as": "East Riding of Yorkshire, England, United Kingdom",
+  "q": "Sark, United Kingdom"
+ },
+ "Paros|Greece": {
+  "lat": 37.0651,
+  "lng": 25.192,
+  "as": "Paros, Paros Regional Unit, South Aegean, Aegean, Greece",
+  "q": "Paros, Greece"
+ },
+ "Symi|Greece": {
+  "lat": 36.5904,
+  "lng": 27.8412,
+  "as": "Symi, Municipality of Symi, Rhodes Regional Unit, South Aegean, Aegean, 856 00, Greece",
+  "q": "Symi, Greece"
+ },
+ "Bodrum|Turkey": {
+  "lat": 37.0344,
+  "lng": 27.4307,
+  "as": "Bodrum, Muğla, Aegean Region, Turkey",
+  "q": "Bodrum, Turkey"
+ },
+ "Lindos, Rhodes|Greece": {
+  "lat": 36.452,
+  "lng": 28.2232,
+  "as": "Lindos, Αμερικής, Neochori, Medieval city of Rhodes, Rhodes, Municipal Unit of Rhodes, Municipality of Rhodes, Rhodes Regional Unit, South Aegean, Aegean, 851 00, Greece",
+  "q": "Lindos, Rhodes, Greece"
+ },
+ "Agia Anna, Naxos|Greece": {
+  "lat": 36.824,
+  "lng": 25.9061,
+  "as": "Agia Anna, Amorgos, Municipality of Amorgos, Naxos Regional Unit, South Aegean, Aegean, 840 08, Greece",
+  "q": "Agia Anna, Naxos, Greece"
+ },
+ "San Sebastian|Spain": {
+  "lat": 43.3224,
+  "lng": -1.9839,
+  "as": "San Sebastián, Gipuzkoa, Autonomous Community of the Basque Country, Spain",
+  "q": "San Sebastian, Spain"
+ },
+ "Bilbao|Spain": {
+  "lat": 43.263,
+  "lng": -2.935,
+  "as": "Bilbao, Biscay, Autonomous Community of the Basque Country, Spain",
+  "q": "Bilbao, Spain"
+ },
+ "Porto|Portugal": {
+  "lat": 41.1502,
+  "lng": -8.6103,
+  "as": "Porto, Portugal",
+  "q": "Porto, Portugal"
+ },
+ "Tangier|Morocco": {
+  "lat": 35.7695,
+  "lng": -5.8045,
+  "as": "Tangier, Pachalik de Tanger باشوية طنجة, Prefecture of Tangier - Assilah, Tangier-Tetouan-Al Hoceima, Morocco",
+  "q": "Tangier, Morocco"
+ },
+ "Gibraltar|United Kingdom": {
+  "lat": 51.7919,
+  "lng": -0.9022,
+  "as": "Gibraltar, Dinton-with-Ford and Upton, Dinton, Buckinghamshire, England, HP17 8TY, United Kingdom",
+  "q": "Gibraltar, United Kingdom"
+ },
+ "Seville|Spain": {
+  "lat": 37.3886,
+  "lng": -5.9953,
+  "as": "Seville, Sevilla, Andalusia, Spain",
+  "q": "Seville, Spain"
+ },
+ "Motril for Granada|Spain": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Ibiza, Balearic Islands|Spain": {
+  "lat": 38.9744,
+  "lng": 1.4197,
+  "as": "Ibiza, Balearic Islands, Spain",
+  "q": "Ibiza, Balearic Islands, Spain"
+ },
+ "Barcelona|Spain": {
+  "lat": 41.3826,
+  "lng": 2.1771,
+  "as": "Barcelona, Barcelonès, Barcelona, Catalonia, Spain",
+  "q": "Barcelona, Spain"
+ },
+ "Mahon, Menorca, Balearic Islands|Spain": {
+  "lat": 39.8895,
+  "lng": 4.2662,
+  "as": "Maó, Menorca, Balearic Islands, Spain",
+  "q": "Mahon, Menorca, Balearic Islands, Spain"
+ },
+ "Palma de Mallorca, Balearic Islands|Spain": {
+  "lat": 39.5696,
+  "lng": 2.6501,
+  "as": "Palma, Balearic Islands, Spain",
+  "q": "Palma de Mallorca, Balearic Islands, Spain"
+ },
+ "Alghero, Sardinia|Italy": {
+  "lat": 40.5587,
+  "lng": 8.3153,
+  "as": "Alghero, Tàttari/Sassari, Sardinia, Italy",
+  "q": "Alghero, Sardinia, Italy"
+ },
+ "Prickly Pear|B. V. I.": {
+  "lat": 18.508,
+  "lng": -64.3687,
+  "as": "Prickly Pear, Other British Virgin Islands, British Virgin Islands",
+  "q": "Prickly Pear, B. V. I."
+ },
+ "Deshaies|Guadeloupe, F.W.I.": {
+  "lat": 16.3062,
+  "lng": -61.7939,
+  "as": "Deshaies, Basse-Terre, Guadeloupe, 97126, France",
+  "q": "Deshaies"
+ },
+ "Saba|Netherlands Antilles": {
+  "lat": 17.632,
+  "lng": -63.2733,
+  "as": "Saba, Netherlands",
+  "q": "Saba"
+ },
+ "Le Marin|Martinique, F.W.I.": {
+  "lat": 14.5252,
+  "lng": -60.9624,
+  "as": "Le Marin, Martinique, France",
+  "q": "Le Marin"
+ },
+ "Canouan|St. Vincent and the Grenadines": {
+  "lat": 12.7127,
+  "lng": -61.3264,
+  "as": "Coast Guard St. Vincent and the Grenadines, Canouan Main Road, Barbruce, Charlestown, Grenadines, VC0450, Saint Vincent and the Grenadines",
+  "q": "Canouan, St. Vincent and the Grenadines"
+ },
+ "Port St. Charles|Barbados": {
+  "lat": 13.2612,
+  "lng": -59.6425,
+  "as": "Port St. Charles, Highway 1B, Speightstown, Saint Peter, BB26015, Barbados",
+  "q": "Port St. Charles, Barbados"
+ },
+ "St. Pierre|Martinique, F.W.I.": {
+  "lat": 48.3833,
+  "lng": 7.4719,
+  "as": "Saint-Pierre, Sélestat-Erstein, Bas-Rhin, European Collectivity of Alsace, Great East, Metropolitan France, 67140, France",
+  "q": "St. Pierre"
+ },
+ "Little Bay|Montserrat": {
+  "lat": 16.7982,
+  "lng": -62.2044,
+  "as": "Little Bay, Saint Peter, MSR1210, Montserrat",
+  "q": "Little Bay, Montserrat"
+ },
+ "Lagos|Portugal": {
+  "lat": 37.1028,
+  "lng": -8.6729,
+  "as": "Lagos, Faro, Portugal",
+  "q": "Lagos, Portugal"
+ },
+ "Palamos|Spain": {
+  "lat": 41.8495,
+  "lng": 3.1279,
+  "as": "Palamós i Sant Joan, Lower Empordà, Girona, Catalonia, 17230, Spain",
+  "q": "Palamos, Spain"
+ },
+ "Almeria|Spain": {
+  "lat": 36.8686,
+  "lng": -2.312,
+  "as": "Almeria, Andalusia, Spain",
+  "q": "Almeria, Spain"
+ },
+ "Alicante|Spain": {
+  "lat": 38.3436,
+  "lng": -0.4882,
+  "as": "Alicante, l'Alacantí, Alacant / Alicante, Valencian Community, Spain",
+  "q": "Alicante, Spain"
+ },
+ "Tarragona|Spain": {
+  "lat": 41.1172,
+  "lng": 1.2546,
+  "as": "Tarragona, Tarragonès, Tarragona, Catalonia, Spain",
+  "q": "Tarragona, Spain"
+ },
+ "Carloforte, Sardinia|Italy": {
+  "lat": 39.1455,
+  "lng": 8.3064,
+  "as": "U Pàize/Carloforte, Sulcis Iglesiente, Sardinia, 09014, Italy",
+  "q": "Carloforte, Sardinia, Italy"
+ },
+ "Porto Santo Stefano|Italy": {
+  "lat": 42.4338,
+  "lng": 11.1237,
+  "as": "Porto Santo Stefano, Monte Argentario, Grosseto, Tuscany, 58019, Italy",
+  "q": "Porto Santo Stefano, Italy"
+ },
+ "Gaeta|Italy": {
+  "lat": 41.2183,
+  "lng": 13.5628,
+  "as": "Gaeta, Latina, Lazio, 04024, Italy",
+  "q": "Gaeta, Italy"
+ },
+ "Ponza|Italy": {
+  "lat": 40.8932,
+  "lng": 12.9631,
+  "as": "Ponza, Latina, Lazio, Italy",
+  "q": "Ponza, Italy"
+ },
+ "Saint-Florent, Corsica|France": {
+  "lat": 42.6813,
+  "lng": 9.3025,
+  "as": "Saint-Florent, Calvi, Upper Corsica, Corsica, Metropolitan France, 20217, France",
+  "q": "Saint-Florent, Corsica, France"
+ },
+ "Portonovi|Montenegro": {
+  "lat": 42.4349,
+  "lng": 18.5996,
+  "as": "Portonovi, Indigo Street, Miočevići, Kumbor, Herceg Novi Municipality, 83450, Montenegro",
+  "q": "Portonovi, Montenegro"
+ },
+ "Bol, Brac|Croatia": {
+  "lat": 43.2605,
+  "lng": 16.652,
+  "as": "Općina Bol, Split-Dalmatia County, 21420, Croatia",
+  "q": "Bol, Croatia"
+ },
+ "Parga|Greece": {
+  "lat": 39.2853,
+  "lng": 20.3998,
+  "as": "Parga, Parga Municipality, Preveza Regional Unit, Epirus, Epirus and Western Macedonia, 480 60, Greece",
+  "q": "Parga, Greece"
+ },
+ "Dubrovnik, Old Town|Croatia": {
+  "lat": 42.6491,
+  "lng": 18.094,
+  "as": "Dubrovnik, Dubrovnik-Neretva County, Croatia",
+  "q": "Dubrovnik, Croatia"
+ },
+ "Primosten|Croatia": {
+  "lat": 43.5863,
+  "lng": 15.9228,
+  "as": "Općina Primošten, Šibenik-Knin County, 22202, Croatia",
+  "q": "Primosten, Croatia"
+ },
+ "Krk|Croatia": {
+  "lat": 45.0902,
+  "lng": 14.5497,
+  "as": "Krk, Primorje-Gorski Kotar County, Croatia",
+  "q": "Krk, Croatia"
+ },
+ "Zadar|Croatia": {
+  "lat": 44.1169,
+  "lng": 15.2353,
+  "as": "Zadar, Grad Zadar, Zadar County, Croatia",
+  "q": "Zadar, Croatia"
+ },
+ "Trogir|Croatia": {
+  "lat": 43.5164,
+  "lng": 16.2497,
+  "as": "Grad Trogir, Split-Dalmatia County, Croatia",
+  "q": "Trogir, Croatia"
+ },
+ "Otranto|Italy": {
+  "lat": 40.1457,
+  "lng": 18.4908,
+  "as": "Otranto, Lecce, Apulia, 73028, Italy",
+  "q": "Otranto, Italy"
+ },
+ "Syvota|Greece": {
+  "lat": 38.625,
+  "lng": 20.6813,
+  "as": "Syvota, Κ. Εύγηρου, Municipal Unit of Apollonioi, Lefkada Municipality, Lefkada Regional Unit, Ioanian Islands, Peloponnese, Western Greece and the Ionian, 310 82, Greece",
+  "q": "Syvota, Greece"
+ },
+ "Pilos, Navarino Bay|Greece": {
+  "lat": 36.9138,
+  "lng": 21.6964,
+  "as": "Pylos, Municipality of Pylos and Nestor, Messenia Regional Unit, Peloponnese Region, Peloponnese, Western Greece and the Ionian, 240 01, Greece",
+  "q": "Pilos, Greece"
+ },
+ "Ikaria|Greece": {
+  "lat": 37.5999,
+  "lng": 26.1517,
+  "as": "Icaria, Ikaria Regional Unit, Northern Aegean, Aegean, Greece",
+  "q": "Ikaria, Greece"
+ },
+ "Andros|Greece": {
+  "lat": 37.8408,
+  "lng": 24.8624,
+  "as": "Municipality of Andros, Andros Regional Unit, South Aegean, Aegean, Greece",
+  "q": "Andros, Greece"
+ },
+ "Delos, Cyclades|Greece": {
+  "lat": 37.3909,
+  "lng": 25.2717,
+  "as": "Delos, Municipality of Mykonos, Mykonos Regional Unit, South Aegean, Aegean, Greece",
+  "q": "Delos, Greece"
+ },
+ "Zakynthos|Greece": {
+  "lat": 37.7891,
+  "lng": 20.7901,
+  "as": "Zakynthos, Zakynthos Regional Unit, Ioanian Islands, Peloponnese, Western Greece and the Ionian, Greece",
+  "q": "Zakynthos, Greece"
+ },
+ "Nafplion|Greece": {
+  "lat": 37.5659,
+  "lng": 22.8069,
+  "as": "Nafplio, Municipal Unit of Nafplio, Municipality of Nafplio, Argolis Regional Unit, Peloponnese Region, Peloponnese, Western Greece and the Ionian, 211 00, Greece",
+  "q": "Nafplion, Greece"
+ },
+ "Monemvasia|Greece": {
+  "lat": 36.6879,
+  "lng": 23.0506,
+  "as": "Monemvasia, Gefyra, Municipality of Monemvasia, Laconia Regional Unit, Peloponnese Region, Peloponnese, Western Greece and the Ionian, 230 70, Greece",
+  "q": "Monemvasia, Greece"
+ },
+ "Scenic Cruising, Stromboli Volcano|Italy": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing the Adriatic Sea|Italy": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sibenik|Croatia": {
+  "lat": 43.7341,
+  "lng": 15.8945,
+  "as": "Grad Šibenik, Šibenik-Knin County, Croatia",
+  "q": "Sibenik, Croatia"
+ },
+ "Parikia, Paros|Greece": {
+  "lat": 37.0842,
+  "lng": 25.1504,
+  "as": "Parikia, Paros Municipality, Paros Regional Unit, South Aegean, Aegean, 844 00, Greece",
+  "q": "Parikia, Paros, Greece"
+ },
+ "Sailing the Balearic Sea|Spain": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Cassis|France": {
+  "lat": 43.214,
+  "lng": 5.5396,
+  "as": "Cassis, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, Metropolitan France, 13260, France",
+  "q": "Cassis, France"
+ },
+ "Roses, Costa Brava|Spain": {
+  "lat": 42.2632,
+  "lng": 3.1755,
+  "as": "Roses, Upper Empordà, Girona, Catalonia, 17480, Spain",
+  "q": "Roses, Spain"
+ },
+ "Sailing the Alboran Sea|Spain": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Anegada|B. V. I.": {
+  "lat": 18.719,
+  "lng": -64.3191,
+  "as": "Anegada, British Virgin Islands",
+  "q": "Anegada, B. V. I."
+ },
+ "Speightstown|Barbados": {
+  "lat": 13.2501,
+  "lng": -59.6424,
+  "as": "Speightstown, Saint Peter, Barbados",
+  "q": "Speightstown, Barbados"
+ },
+ "Salinas|Puerto Rico": {
+  "lat": 18.0133,
+  "lng": -66.2674,
+  "as": "Salinas, Puerto Rico, United States",
+  "q": "Salinas, Puerto Rico"
+ },
+ "Hong Kong|Hong Kong, China": {
+  "lat": 22.2818,
+  "lng": 114.1583,
+  "as": "Hong Kong, China",
+  "q": "Hong Kong, Hong Kong, China"
+ },
+ "Ishigaki|Japan": {
+  "lat": 24.3444,
+  "lng": 124.1852,
+  "as": "Ishigaki, Okinawa Prefecture, 907-8501, Japan",
+  "q": "Ishigaki, Japan"
+ },
+ "Okinawa (Naha)|Japan": {
+  "lat": 26.5708,
+  "lng": 128.0256,
+  "as": "Okinawa Prefecture, Japan",
+  "q": "Okinawa, Japan"
+ },
+ "Amami Oshima|Japan": {
+  "lat": 28.3199,
+  "lng": 129.3968,
+  "as": "Amamioshima, Oshima County, Kagoshima Prefecture, Japan",
+  "q": "Amami Oshima, Japan"
+ },
+ "Yakushima|Japan": {
+  "lat": 30.3479,
+  "lng": 130.5245,
+  "as": "Yakushima, Kumage County, Kagoshima Prefecture, Japan",
+  "q": "Yakushima, Japan"
+ },
+ "Kochi|Japan": {
+  "lat": 33.5588,
+  "lng": 133.5311,
+  "as": "Kōchi, Kochi Prefecture, 780-8571, Japan",
+  "q": "Kochi, Japan"
+ },
+ "Shimizu|Japan": {
+  "lat": 35.0991,
+  "lng": 138.9027,
+  "as": "Shimizu, Sunto County, Shizuoka Prefecture, Japan",
+  "q": "Shimizu, Japan"
+ },
+ "Tokyo|Japan": {
+  "lat": 35.6769,
+  "lng": 139.7639,
+  "as": "Tokyo, Japan",
+  "q": "Tokyo, Japan"
+ },
+ "Hakodate|Japan": {
+  "lat": 41.7688,
+  "lng": 140.729,
+  "as": "Hakodate, Oshima Subprefecture, Hokkaido Prefecture, Hokkaido Region, Japan",
+  "q": "Hakodate, Japan"
+ },
+ "Aomori|Japan": {
+  "lat": 40.8869,
+  "lng": 140.5901,
+  "as": "Aomori Prefecture, Japan",
+  "q": "Aomori, Japan"
+ },
+ "Akita|Japan": {
+  "lat": 39.6899,
+  "lng": 140.3426,
+  "as": "Akita Prefecture, Japan",
+  "q": "Akita, Japan"
+ },
+ "Kanazawa|Japan": {
+  "lat": 36.5616,
+  "lng": 136.6569,
+  "as": "Kanazawa, Ishikawa Prefecture, Japan",
+  "q": "Kanazawa, Japan"
+ },
+ "Sakaiminato|Japan": {
+  "lat": 35.5392,
+  "lng": 133.2319,
+  "as": "Sakaiminato, Tottori Prefecture, Japan",
+  "q": "Sakaiminato, Japan"
+ },
+ "Busan|Korea, Republic Of": {
+  "lat": 35.18,
+  "lng": 129.0752,
+  "as": "Busan, South Korea",
+  "q": "Busan"
+ },
+ "Hakata|Japan": {
+  "lat": 33.5897,
+  "lng": 130.4185,
+  "as": "Hakata, Hakata Ekimae Dori, Hakata-Ekimae 3-chome, Hakataeki-Chuogai, Hakata Ward, Fukuoka, Fukuoka Prefecture, 812-0011, Japan",
+  "q": "Hakata, Japan"
+ },
+ "Hiroshima|Japan": {
+  "lat": 34.3917,
+  "lng": 132.4518,
+  "as": "Hiroshima, Hiroshima Prefecture, Japan",
+  "q": "Hiroshima, Japan"
+ },
+ "Kobe|Japan": {
+  "lat": 34.6932,
+  "lng": 135.1944,
+  "as": "Kobe, Hyogo Prefecture, Japan",
+  "q": "Kobe, Japan"
+ },
+ "Toba|Japan": {
+  "lat": 34.4813,
+  "lng": 136.8435,
+  "as": "Toba, Mie Prefecture, 517-0011, Japan",
+  "q": "Toba, Japan"
+ },
+ "Tagonoura|Japan": {
+  "lat": 35.1362,
+  "lng": 138.7461,
+  "as": "Higashi-Tagonoura, 須津東田子浦停車場線, 中柏原新田, Fuji, Shizuoka Prefecture, 417-0815, Japan",
+  "q": "Tagonoura, Japan"
+ },
+ "Osaka|Japan": {
+  "lat": 34.6938,
+  "lng": 135.5015,
+  "as": "Osaka, Osaka Prefecture, Japan",
+  "q": "Osaka, Japan"
+ },
+ "Takamatsu|Japan": {
+  "lat": 34.3426,
+  "lng": 134.0465,
+  "as": "Takamatsu, Kagawa Prefecture, Takamatsu-shi, Japan",
+  "q": "Takamatsu, Japan"
+ },
+ "Shimonoseki|Japan": {
+  "lat": 33.9577,
+  "lng": 130.9415,
+  "as": "Shimonoseki, Yamaguchi Prefecture, Japan",
+  "q": "Shimonoseki, Japan"
+ },
+ "Jeju|Korea, Republic Of": {
+  "lat": 33.4888,
+  "lng": 126.4987,
+  "as": "Jeju, South Korea",
+  "q": "Jeju"
+ },
+ "Nagasaki|Japan": {
+  "lat": 33.1155,
+  "lng": 129.7874,
+  "as": "Nagasaki Prefecture, Japan",
+  "q": "Nagasaki, Japan"
+ },
+ "Fukue|Japan": {
+  "lat": 34.0471,
+  "lng": 130.9157,
+  "as": "Fukue, National Highway Route 191, 横野町一丁目, 大字横野, Shimonoseki, Yamaguchi Prefecture, 759-6601, Japan",
+  "q": "Fukue, Japan"
+ },
+ "Ha Long Bay|Vietnam": {
+  "lat": 20.9084,
+  "lng": 107.0683,
+  "as": "Hạ Long Bay, Quang Ninh City, Vietnam",
+  "q": "Ha Long Bay, Vietnam"
+ },
+ "Da Nang / Hoi An|Vietnam": {
+  "lat": 16.0686,
+  "lng": 108.2156,
+  "as": "Da Nang - Hoi An, Đường Chi Lăng, Tổ dân phố 31 Hải Châu, Hải Châu Ward, Đà Nẵng, 50206, Vietnam",
+  "q": "Da Nang / Hoi An, Vietnam"
+ },
+ "Nha Trang|Vietnam": {
+  "lat": 12.2085,
+  "lng": 109.2871,
+  "as": "Nha Trang, Khánh Hòa Province, Vietnam",
+  "q": "Nha Trang, Vietnam"
+ },
+ "Con Dao|Vietnam": {
+  "lat": 8.7003,
+  "lng": 106.6068,
+  "as": "Côn Đảo District, Ho Chi Minh City, Vietnam",
+  "q": "Con Dao, Vietnam"
+ },
+ "Ho Chi Minh City|Vietnam": {
+  "lat": 10.7737,
+  "lng": 106.7166,
+  "as": "Ho Chi Minh City, Vietnam",
+  "q": "Ho Chi Minh City, Vietnam"
+ },
+ "Phu Quoc|Vietnam": {
+  "lat": 10.2288,
+  "lng": 104.0144,
+  "as": "Phú Quốc, An Giang Province, Vietnam",
+  "q": "Phu Quoc, Vietnam"
+ },
+ "Sihanoukville|Cambodia": {
+  "lat": 10.622,
+  "lng": 103.5223,
+  "as": "Sihanoukville, Preah Sihanouk, Khaet Preah Sihanouk, 180403, Cambodia",
+  "q": "Sihanoukville, Cambodia"
+ },
+ "Ko Kut|Thailand": {
+  "lat": 11.6622,
+  "lng": 102.5681,
+  "as": "Ko Kut, Baan Khlong Chao, Ko Kut District, Trat Province, Thailand",
+  "q": "Ko Kut, Thailand"
+ },
+ "Bangkok (Khlong Toei)|Thailand": {
+  "lat": 13.7525,
+  "lng": 100.4935,
+  "as": "Bangkok, Thailand",
+  "q": "Bangkok, Thailand"
+ },
+ "Ko Samui|Thailand": {
+  "lat": 9.5072,
+  "lng": 99.9958,
+  "as": "Ko Samui District, Surat Thani Province, Thailand",
+  "q": "Ko Samui, Thailand"
+ },
+ "Kuala Terengganu, Terengganu|Malaysia": {
+  "lat": 5.3296,
+  "lng": 103.1383,
+  "as": "Kuala Terengganu, Terengganu, 20300, Malaysia",
+  "q": "Kuala Terengganu, Terengganu, Malaysia"
+ },
+ "Kuala Lumpur, Selangor (Port Klang)|Malaysia": {
+  "lat": 3.2303,
+  "lng": 101.6284,
+  "as": "Forest Research Institute Malaysia Forest Park Selangor, Selayang Municipal Council, Gombak, Selangor, Malaysia",
+  "q": "Kuala Lumpur, Selangor, Malaysia"
+ },
+ "Perhentian Islands, Terengganu|Malaysia": {
+  "lat": 5.9029,
+  "lng": 102.7557,
+  "as": "Perhentian Islands, Fishermen’s Village, Besut, Terengganu, Malaysia",
+  "q": "Perhentian Islands, Terengganu, Malaysia"
+ },
+ "Tioman, Pahang|Malaysia": {
+  "lat": 2.8065,
+  "lng": 104.1721,
+  "as": "Tioman, Rompin, Pahang, Malaysia",
+  "q": "Tioman, Pahang, Malaysia"
+ },
+ "Singapore|Republic of Singapore": {
+  "lat": 1.2899,
+  "lng": 103.8519,
+  "as": "Singapore",
+  "q": "Singapore, Republic of Singapore"
+ },
+ "Anambas Islands (Tarempa)|Indonesia": {
+  "lat": 2.9389,
+  "lng": 105.7603,
+  "as": "Anambas Islands, Kepulauan Anambas, Riau Islands, Indonesia",
+  "q": "Anambas Islands, Indonesia"
+ },
+ "Parai Tenggiri, Bangka|Indonesia": {
+  "lat": -1.8183,
+  "lng": 106.11,
+  "as": "Jalan Parai Tenggiri, Kompleks Parai Tengiri Resort, Sungailiat, Bangka, Bangka-Belitung Islands, 33211, Indonesia",
+  "q": "Parai Tenggiri, Bangka, Indonesia"
+ },
+ "Belitung|Indonesia": {
+  "lat": -2.8843,
+  "lng": 107.6632,
+  "as": "Belitung, Bangka-Belitung Islands, Indonesia",
+  "q": "Belitung, Indonesia"
+ },
+ "Krakatoa|Indonesia": {
+  "lat": -6.125,
+  "lng": 105.4078,
+  "as": "Krakatau Islands, Lampung, Indonesia",
+  "q": "Krakatoa, Indonesia"
+ },
+ "Ujung Kulon NP (Peucang Island)|Indonesia": {
+  "lat": -6.7514,
+  "lng": 105.3178,
+  "as": "Ujung Kulon National Park, Pandeglang, Banten, 42283, Indonesia",
+  "q": "Ujung Kulon NP, Indonesia"
+ },
+ "Thousand Islands (Pulau Seribu)|Indonesia": {
+  "lat": -5.635,
+  "lng": 106.5804,
+  "as": "Thousand Islands, Special Capital Region of Jakarta, 14520, Indonesia",
+  "q": "Thousand Islands, Indonesia"
+ },
+ "Jakarta|Indonesia": {
+  "lat": -6.1754,
+  "lng": 106.8272,
+  "as": "Special Capital Region of Jakarta, Indonesia",
+  "q": "Jakarta, Indonesia"
+ },
+ "Semarang (Borobudur)|Indonesia": {
+  "lat": -6.9904,
+  "lng": 110.4229,
+  "as": "Semarang, Central Java, Indonesia",
+  "q": "Semarang, Indonesia"
+ },
+ "Karimunjawa|Indonesia": {
+  "lat": -5.8796,
+  "lng": 110.4329,
+  "as": "Karimunjawa, Jepara, Central Java, Indonesia",
+  "q": "Karimunjawa, Indonesia"
+ },
+ "Bawean Island|Indonesia": {
+  "lat": -5.7933,
+  "lng": 112.6598,
+  "as": "Bawean island, Dayasawah, Gresik, East Java, 61181, Indonesia",
+  "q": "Bawean Island, Indonesia"
+ },
+ "Surabaya|Indonesia": {
+  "lat": -7.2463,
+  "lng": 112.7378,
+  "as": "Surabaya, East Java, Indonesia",
+  "q": "Surabaya, Indonesia"
+ },
+ "Probolinggo (Mount Bromo)|Indonesia": {
+  "lat": -7.7441,
+  "lng": 113.2158,
+  "as": "Probolinggo, East Java, Indonesia",
+  "q": "Probolinggo, Indonesia"
+ },
+ "Celukan Bawang|Indonesia": {
+  "lat": -8.1909,
+  "lng": 114.8362,
+  "as": "Celukan Bawang Harbour, Celukanbawang, Gerokgak, Buleleng, Bali, 81155, Indonesia",
+  "q": "Celukan Bawang, Indonesia"
+ },
+ "Benoa (Bali)|Indonesia": {
+  "lat": -8.8033,
+  "lng": 115.2097,
+  "as": "Benoa, Kuta Selatan, Badung, Bali, 80362, Indonesia",
+  "q": "Benoa, Indonesia"
+ },
+ "Lombok|Indonesia": {
+  "lat": -8.5836,
+  "lng": 116.3581,
+  "as": "Lombok, West Nusa Tenggara, Indonesia",
+  "q": "Lombok, Indonesia"
+ },
+ "Satonda Island|Indonesia": {
+  "lat": -8.5218,
+  "lng": 119.7355,
+  "as": "Satonda Island, Pasir Putih, Manggarai Barat, East Nusa Tenggara, Indonesia",
+  "q": "Satonda Island, Indonesia"
+ },
+ "Komodo|Indonesia": {
+  "lat": -8.5892,
+  "lng": 119.4624,
+  "as": "Komodo Island, Komodo Village, Manggarai Barat, East Nusa Tenggara, Indonesia",
+  "q": "Komodo, Indonesia"
+ },
+ "Larantuka (Flores)|Indonesia": {
+  "lat": -8.3267,
+  "lng": 123.0036,
+  "as": "Larantuka, Flores Timur, East Nusa Tenggara, Indonesia",
+  "q": "Larantuka, Indonesia"
+ },
+ "Kupang, Timor|Indonesia": {
+  "lat": -10.1566,
+  "lng": 123.5938,
+  "as": "BRI, Jalan Timor Raya, Kec. Kota Lama, Fatubesi, Kupang, East Nusa Tenggara, 85226, Indonesia",
+  "q": "Kupang, Timor, Indonesia"
+ },
+ "Dili|Timor-Leste": {
+  "lat": -8.5537,
+  "lng": 125.5784,
+  "as": "Dili, Vera Cruz, Dili, East Timor",
+  "q": "Dili, Timor-Leste"
+ },
+ "Atauro Island|Timor-Leste": {
+  "lat": -8.2179,
+  "lng": 125.5819,
+  "as": "Atauro, Beloi, Atauro, East Timor",
+  "q": "Atauro Island, Timor-Leste"
+ },
+ "Darwin, Northern Territory|Australia": {
+  "lat": -12.4604,
+  "lng": 130.841,
+  "as": "Darwin, Northern Territory, 0800, Australia",
+  "q": "Darwin, Northern Territory, Australia"
+ },
+ "Seven Spirit Bay, Northern Territory|Australia": {
+  "lat": -11.2009,
+  "lng": 132.0519,
+  "as": "Seven Spirit Bay Wilderness Lodge, Cobourg, Northern Territory, 0822, Australia",
+  "q": "Seven Spirit Bay, Northern Territory, Australia"
+ },
+ "Wessel Islands, Northern Territory|Australia": {
+  "lat": -11.5,
+  "lng": 136.5,
+  "as": "Wessel Islands, East Arnhem, Northern Territory, 0852, Australia",
+  "q": "Wessel Islands, Northern Territory, Australia"
+ },
+ "Yirrkala, Northern Territory|Australia": {
+  "lat": -12.2539,
+  "lng": 136.89,
+  "as": "Yirrkala, Northern Territory, Australia",
+  "q": "Yirrkala, Northern Territory, Australia"
+ },
+ "Thursday Island, Queensland|Australia": {
+  "lat": -10.5786,
+  "lng": 142.2189,
+  "as": "Thursday Island, Queensland, 4875, Australia",
+  "q": "Thursday Island, Queensland, Australia"
+ },
+ "Lizard Island, Queensland|Australia": {
+  "lat": -14.6683,
+  "lng": 145.4609,
+  "as": "Lizard Island, Queensland, Australia",
+  "q": "Lizard Island, Queensland, Australia"
+ },
+ "Cairns, Queensland|Australia": {
+  "lat": -16.9207,
+  "lng": 145.7722,
+  "as": "Cairns, Queensland, 4870, Australia",
+  "q": "Cairns, Queensland, Australia"
+ },
+ "Townsville, Queensland|Australia": {
+  "lat": -19.2569,
+  "lng": 146.824,
+  "as": "Townsville, Queensland, 4810, Australia",
+  "q": "Townsville, Queensland, Australia"
+ },
+ "Nara Inlet, Hook Island|Australia": {
+  "lat": -20.1374,
+  "lng": 148.9121,
+  "as": "Nara Inlet, Whitsundays, Queensland, 4802, Australia",
+  "q": "Nara Inlet, Australia"
+ },
+ "Airlie Beach, Queensland|Australia": {
+  "lat": -20.2725,
+  "lng": 148.7181,
+  "as": "Airlie Beach, Queensland, Australia",
+  "q": "Airlie Beach, Queensland, Australia"
+ },
+ "Percy Islands, Queensland|Australia": {
+  "lat": -38.4187,
+  "lng": 142.0017,
+  "as": "Deen Maar, Victoria, Australia",
+  "q": "Percy Islands, Australia"
+ },
+ "Great Keppel Island, Queensland|Australia": {
+  "lat": -23.1734,
+  "lng": 150.9571,
+  "as": "Great Keppel Island, The Keppels, Queensland, Australia",
+  "q": "Great Keppel Island, Queensland, Australia"
+ },
+ "Lady Elliot Island, Queensland|Australia": {
+  "lat": -24.1131,
+  "lng": 152.715,
+  "as": "Lady Elliot Island, Coral Sea, Queensland, 4800, Australia",
+  "q": "Lady Elliot Island, Queensland, Australia"
+ },
+ "Brisbane, Queensland|Australia": {
+  "lat": -27.469,
+  "lng": 153.0235,
+  "as": "Brisbane, Queensland, Australia",
+  "q": "Brisbane, Queensland, Australia"
+ },
+ "Norfolk Island|Norfolk Island": {
+  "lat": -29.0362,
+  "lng": 167.9648,
+  "as": "Norfolk Island, Burnt Pine, Norfolk Island, 2899, Australia",
+  "q": "Norfolk Island, Norfolk Island"
+ },
+ "Bay of Islands|New Zealand": {
+  "lat": -35.255,
+  "lng": 174.1627,
+  "as": "Bay of Islands, Far North District, Northland, 0247, New Zealand",
+  "q": "Bay of Islands, New Zealand"
+ },
+ "Great Barrier Island (Port Fitzroy)|New Zealand": {
+  "lat": -36.1994,
+  "lng": 175.4173,
+  "as": "Great Barrier Island, Auckland, 0991, New Zealand",
+  "q": "Great Barrier Island, New Zealand"
+ },
+ "Waiheke Island|New Zealand": {
+  "lat": -36.7931,
+  "lng": 175.0884,
+  "as": "Waiheke Island, Waiheke, Auckland, New Zealand",
+  "q": "Waiheke Island, New Zealand"
+ },
+ "Auckland|New Zealand": {
+  "lat": -36.8521,
+  "lng": 174.7632,
+  "as": "Auckland, Waitematā, Auckland, 1010, New Zealand",
+  "q": "Auckland, New Zealand"
+ },
+ "Napier|New Zealand": {
+  "lat": -39.4902,
+  "lng": 176.9178,
+  "as": "Napier City, Hawke's Bay, New Zealand",
+  "q": "Napier, New Zealand"
+ },
+ "Wellington|New Zealand": {
+  "lat": -41.2888,
+  "lng": 174.7772,
+  "as": "Wellington, Wellington City, Wellington, 6011, New Zealand",
+  "q": "Wellington, New Zealand"
+ },
+ "Picton / Marlborough|New Zealand": {
+  "lat": -41.2905,
+  "lng": 174.007,
+  "as": "Bank of New Zealand, High Street, Picton, Marlborough District, Marlborough, 7220, New Zealand",
+  "q": "Picton / Marlborough, New Zealand"
+ },
+ "Lyttelton / Christchurch|New Zealand": {
+  "lat": -43.603,
+  "lng": 172.7194,
+  "as": "SSA New Zealand, 46, Norwich Quay, Lyttelton, Banks Peninsula Community, Christchurch City, Canterbury, 8082, New Zealand",
+  "q": "Lyttelton / Christchurch, New Zealand"
+ },
+ "Stewart Island|New Zealand": {
+  "lat": -46.9867,
+  "lng": 167.8821,
+  "as": "Stewart Island, Southland, New Zealand",
+  "q": "Stewart Island, New Zealand"
+ },
+ "Sailing through Doubtful Sound & Fiordland|New Zealand": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Hobart, Tasmania|Australia": {
+  "lat": -42.8825,
+  "lng": 147.3281,
+  "as": "Hobart, Tasmania, Australia",
+  "q": "Hobart, Tasmania, Australia"
+ },
+ "Port Arthur, Tasmania|Australia": {
+  "lat": -43.1435,
+  "lng": 147.844,
+  "as": "Port Arthur, Tasmania, Australia",
+  "q": "Port Arthur, Tasmania, Australia"
+ },
+ "Launceston, Tasmania|Australia": {
+  "lat": -41.4341,
+  "lng": 147.1373,
+  "as": "Launceston, Tasmania, Australia",
+  "q": "Launceston, Tasmania, Australia"
+ },
+ "Eden, New South Wales|Australia": {
+  "lat": -37.064,
+  "lng": 149.9035,
+  "as": "Eden, New South Wales, Australia",
+  "q": "Eden, New South Wales, Australia"
+ },
+ "Sydney, New South Wales|Australia": {
+  "lat": -33.8698,
+  "lng": 151.2083,
+  "as": "Sydney, New South Wales, Australia",
+  "q": "Sydney, New South Wales, Australia"
+ },
+ "K’gari, Queensland|Australia": {
+  "lat": -25.2467,
+  "lng": 153.1468,
+  "as": "K'gari, Queensland, Australia",
+  "q": "K’gari, Queensland, Australia"
+ },
+ "Lady Musgrave Island, Queensland|Australia": {
+  "lat": -23.9067,
+  "lng": 152.393,
+  "as": "Lady Musgrave Island, Coral Sea, Queensland, 4800, Australia",
+  "q": "Lady Musgrave Island, Queensland, Australia"
+ },
+ "Dunk Island, Queensland|Australia": {
+  "lat": -17.9372,
+  "lng": 146.1408,
+  "as": "Dunk Island Airport, Island Circuit Track, Dunk, Queensland, 4852, Australia",
+  "q": "Dunk Island, Queensland, Australia"
+ },
+ "Port Douglas, Queensland|Australia": {
+  "lat": -16.4846,
+  "lng": 145.4636,
+  "as": "Port Douglas, Queensland, Australia",
+  "q": "Port Douglas, Queensland, Australia"
+ },
+ "Ang Thong National Marine Park|Thailand": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Ko Tao|Thailand": {
+  "lat": 10.0922,
+  "lng": 99.8395,
+  "as": "Ko Tao, Ko Pha-ngan District, Surat Thani Province, Thailand",
+  "q": "Ko Tao, Thailand"
+ },
+ "Hua Hin|Thailand": {
+  "lat": 12.5699,
+  "lng": 99.9573,
+  "as": "Hua Hin City Municipality, Hua Hin District, Prachuap Khiri Khan Province, 77110, Thailand",
+  "q": "Hua Hin, Thailand"
+ },
+ "Redang, Terengganu|Malaysia": {
+  "lat": 5.7834,
+  "lng": 103.0141,
+  "as": "Redang Island, Pulau Redang, Kuala Nerus, Terengganu, Malaysia",
+  "q": "Redang, Terengganu, Malaysia"
+ },
+ "Penang|Malaysia": {
+  "lat": 5.4065,
+  "lng": 100.2559,
+  "as": "Penang, Malaysia",
+  "q": "Penang, Malaysia"
+ },
+ "Phuket|Thailand": {
+  "lat": 7.9366,
+  "lng": 98.3529,
+  "as": "Phuket Province, Thailand",
+  "q": "Phuket, Thailand"
+ },
+ "Port Blair, Andaman & Nicobar Islands|India": {
+  "lat": 11.6645,
+  "lng": 92.739,
+  "as": "Port Blair, Port Blair Tehsil, South Andaman, Andaman and Nicobar Islands, 744101, India",
+  "q": "Port Blair, Andaman & Nicobar Islands, India"
+ },
+ "Trincomalee|Sri Lanka": {
+  "lat": 8.5764,
+  "lng": 81.2345,
+  "as": "Trincomalee, Trincomalee District, Eastern Province, 32100, Sri Lanka",
+  "q": "Trincomalee, Sri Lanka"
+ },
+ "Colombo|Sri Lanka": {
+  "lat": 6.9389,
+  "lng": 79.8542,
+  "as": "Colombo, Colombo District, Western Province, Sri Lanka",
+  "q": "Colombo, Sri Lanka"
+ },
+ "Cochin, Kerala|India": {
+  "lat": 9.9679,
+  "lng": 76.2444,
+  "as": "Kochi, Ernakulam, Kerala, 682001, India",
+  "q": "Cochin, Kerala, India"
+ },
+ "Goa|India": {
+  "lat": 15.3005,
+  "lng": 74.0855,
+  "as": "Goa, India",
+  "q": "Goa, India"
+ },
+ "Mumbai, Maharashtra|India": {
+  "lat": 19.055,
+  "lng": 72.8692,
+  "as": "Mumbai, Mumbai Suburban District, Maharashtra, 400051, India",
+  "q": "Mumbai, Maharashtra, India"
+ },
+ "Diu, Daman & Diu|India": {
+  "lat": 20.7155,
+  "lng": 70.9782,
+  "as": "Government Hospital, Diu, Bunder Road, Zampa Gate, Diu, Dadra and Nagar Haveli and Daman and Diu, 362520, India",
+  "q": "Diu, Daman & Diu, India"
+ },
+ "Porbandar, Gujarat|India": {
+  "lat": 21.6505,
+  "lng": 69.6565,
+  "as": "Porbandar, Terminal Road, Ranavav Taluka, Porbandar, Gujarat, 360578, India",
+  "q": "Porbandar, Gujarat, India"
+ },
+ "Muscat|Oman": {
+  "lat": 23.6124,
+  "lng": 58.5938,
+  "as": "Muscat, Muscat Province, Muscat Governorate, Oman",
+  "q": "Muscat, Oman"
+ },
+ "Khasab|Oman": {
+  "lat": 26.1841,
+  "lng": 56.247,
+  "as": "Khasab Province, Musandam Governorate, 811, Oman",
+  "q": "Khasab, Oman"
+ },
+ "Sir Bani Yas Island|United Arab Emirates": {
+  "lat": 24.3166,
+  "lng": 52.5991,
+  "as": "Sir Bani Yas, Al Dhafrah Region, Abu Dhabi Emirate, United Arab Emirates",
+  "q": "Sir Bani Yas Island, United Arab Emirates"
+ },
+ "Abu Dhabi|United Arab Emirates": {
+  "lat": 24.4538,
+  "lng": 54.3774,
+  "as": "Abu Dhabi, Abu Dhabi Emirate, United Arab Emirates",
+  "q": "Abu Dhabi, United Arab Emirates"
+ },
+ "Doha|Qatar": {
+  "lat": 25.3109,
+  "lng": 51.5082,
+  "as": "Doha, Qatar",
+  "q": "Doha, Qatar"
+ },
+ "Dubai|United Arab Emirates": {
+  "lat": 25.0743,
+  "lng": 55.1886,
+  "as": "Dubai, Dubai Emirate, United Arab Emirates",
+  "q": "Dubai, United Arab Emirates"
+ },
+ "Sur|Oman": {
+  "lat": 22.5693,
+  "lng": 59.5296,
+  "as": "Sur, Jalaan Bani Bu ALi Province, Ash Sharqiyah South Governorate, 411, Oman",
+  "q": "Sur, Oman"
+ },
+ "Salalah|Oman": {
+  "lat": 17.0175,
+  "lng": 54.1011,
+  "as": "Salalah Province, Dhofar Governorate, Oman",
+  "q": "Salalah, Oman"
+ },
+ "Jeddah|Saudi Arabia": {
+  "lat": 21.5504,
+  "lng": 39.1742,
+  "as": "Jeddah, Governorate of Jeddah, Makkah Region, 23124, Saudi Arabia",
+  "q": "Jeddah, Saudi Arabia"
+ },
+ "Yanbu|Saudi Arabia": {
+  "lat": 24.089,
+  "lng": 38.0687,
+  "as": "Yanbu`, Yanbu, Medina Province, 46424, Saudi Arabia",
+  "q": "Yanbu, Saudi Arabia"
+ },
+ "Safaga (Luxor)|Egypt": {
+  "lat": 26.7633,
+  "lng": 33.9384,
+  "as": "Safaga, Red Sea, 84711, Egypt",
+  "q": "Safaga, Egypt"
+ },
+ "Aqaba (Petra)|Jordan": {
+  "lat": 29.5266,
+  "lng": 35.0075,
+  "as": "Aqaba, Aqaba Sub-District, Aqaba Qasabah District, Aqaba, 77100, Jordan",
+  "q": "Aqaba, Jordan"
+ },
+ "Sharm el-Sheikh|Egypt": {
+  "lat": 27.8644,
+  "lng": 34.2954,
+  "as": "Sharm El Sheikh, Ras Umm Sid, South Sinai, 25080, Egypt",
+  "q": "Sharm el-Sheikh, Egypt"
+ },
+ "Sailing through the Suez Canal|Egypt": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Alexandria|Egypt": {
+  "lat": 31.1992,
+  "lng": 29.8952,
+  "as": "Alexandria, 21519, Egypt",
+  "q": "Alexandria, Egypt"
+ },
+ "Syros|Greece": {
+  "lat": 37.4385,
+  "lng": 24.9124,
+  "as": "Syros, Kini, Municipality of Syros and Ermoupoli, Syros Regional Unit, South Aegean, Aegean, 841 00, Greece",
+  "q": "Syros, Greece"
+ },
+ "Gaios, Paxoi Island|Greece": {
+  "lat": 39.197,
+  "lng": 20.1854,
+  "as": "Gaios, Municipality of Paxos, Corfu Regional Unit, Ioanian Islands, Peloponnese, Western Greece and the Ionian, 490 82, Greece",
+  "q": "Gaios, Greece"
+ },
+ "Opatija|Croatia": {
+  "lat": 45.3385,
+  "lng": 14.309,
+  "as": "Opatija, Grad Opatija, Primorje-Gorski Kotar County, Croatia",
+  "q": "Opatija, Croatia"
+ },
+ "Ravenna|Italy": {
+  "lat": 44.3641,
+  "lng": 12.059,
+  "as": "Ravenna, Emilia-Romagna, Italy",
+  "q": "Ravenna, Italy"
+ },
+ "La Rochelle|France": {
+  "lat": 46.1597,
+  "lng": -1.1516,
+  "as": "La Rochelle, Charente-Maritime, Nouvelle-Aquitaine, Metropolitan France, 17000, France",
+  "q": "La Rochelle, France"
+ },
+ "Cowes, Isle of Wight|United Kingdom": {
+  "lat": 50.7633,
+  "lng": -1.2985,
+  "as": "Cowes, Isle of Wight, England, United Kingdom",
+  "q": "Cowes, Isle of Wight, United Kingdom"
+ },
+ "London|United Kingdom": {
+  "lat": 51.5074,
+  "lng": -0.1278,
+  "as": "Greater London, England, United Kingdom",
+  "q": "London, United Kingdom"
+ },
+ "New Ross|Ireland": {
+  "lat": 52.3956,
+  "lng": -6.9446,
+  "as": "New Ross, The Municipal District of New Ross, County Wexford, Leinster, Ireland",
+  "q": "New Ross, Ireland"
+ },
+ "Dublin|Ireland": {
+  "lat": 53.3494,
+  "lng": -6.2606,
+  "as": "Dublin, County Dublin, Leinster, Ireland",
+  "q": "Dublin, Ireland"
+ },
+ "Brodick, Isle of Arran, Scotland|United Kingdom": {
+  "lat": 55.5939,
+  "lng": -5.1507,
+  "as": "Brodick Castle, North Ayrshire, Scotland, KA27 8HY, United Kingdom",
+  "q": "Brodick, Isle of Arran, Scotland, United Kingdom"
+ },
+ "Tobermory, Isle of Mull|United Kingdom": {
+  "lat": 56.6228,
+  "lng": -6.0682,
+  "as": "Tobermory, Argyll and Bute, Scotland, United Kingdom",
+  "q": "Tobermory, United Kingdom"
+ },
+ "Stavanger|Norway": {
+  "lat": 58.97,
+  "lng": 5.7318,
+  "as": "Stavanger, Rogaland, Norway",
+  "q": "Stavanger, Norway"
+ },
+ "Lillesand|Norway": {
+  "lat": 58.1161,
+  "lng": 8.4403,
+  "as": "Lillesand, Agder, Norway",
+  "q": "Lillesand, Norway"
+ },
+ "Gdańsk|Poland": {
+  "lat": 54.4288,
+  "lng": 18.7983,
+  "as": "Gdańsk, Pomeranian Voivodeship, Poland",
+  "q": "Gdańsk, Poland"
+ },
+ "Klaipeda|Lithuania": {
+  "lat": 55.7128,
+  "lng": 21.135,
+  "as": "Klaipėda, Klaipėda City Municipality, Klaipėda County, Lithuania",
+  "q": "Klaipeda, Lithuania"
+ },
+ "Riga|Latvia": {
+  "lat": 56.9494,
+  "lng": 24.1052,
+  "as": "Riga, Latvia",
+  "q": "Riga, Latvia"
+ },
+ "Tallinn|Estonia": {
+  "lat": 59.4372,
+  "lng": 24.7573,
+  "as": "Tallinn, Harju County, Estonia",
+  "q": "Tallinn, Estonia"
+ },
+ "Helsinki|Finland": {
+  "lat": 60.1666,
+  "lng": 24.9435,
+  "as": "Helsinki, Helsinki sub-region, Uusimaa, Mainland Finland, Finland",
+  "q": "Helsinki, Finland"
+ },
+ "Stockholm|Sweden": {
+  "lat": 59.3251,
+  "lng": 18.0711,
+  "as": "Stockholm, Stockholm Municipality, Stockholm County, 111 29, Sweden",
+  "q": "Stockholm, Sweden"
+ },
+ "Visby, Gotland Island|Sweden": {
+  "lat": 57.6379,
+  "lng": 18.298,
+  "as": "Visby, Gotland Municipality, Gotland County, 621 45, Sweden",
+  "q": "Visby, Sweden"
+ },
+ "Kristiansand|Norway": {
+  "lat": 58.0856,
+  "lng": 7.9319,
+  "as": "Kristiansand, Agder, Norway",
+  "q": "Kristiansand, Norway"
+ },
+ "Flåm|Norway": {
+  "lat": 60.863,
+  "lng": 7.1132,
+  "as": "Flåm, A-feltvegen, Fretheim, Flåm, Aurland, Vestland, 5743, Norway",
+  "q": "Flåm, Norway"
+ },
+ "Geiranger|Norway": {
+  "lat": 62.1006,
+  "lng": 7.2059,
+  "as": "Geiranger, Stranda, Møre og Romsdal, 6216, Norway",
+  "q": "Geiranger, Norway"
+ },
+ "Trondheim|Norway": {
+  "lat": 63.4304,
+  "lng": 10.3952,
+  "as": "Trondheim, Trøndelag, Norway",
+  "q": "Trondheim, Norway"
+ },
+ "Hammerfest|Norway": {
+  "lat": 70.6413,
+  "lng": 23.8361,
+  "as": "Hammerfest, Finnmark, Norway",
+  "q": "Hammerfest, Norway"
+ },
+ "Kirkenes|Norway": {
+  "lat": 69.7271,
+  "lng": 30.0449,
+  "as": "Kirkenes, Sør-Varanger, Finnmark, 9900, Norway",
+  "q": "Kirkenes, Norway"
+ },
+ "Honningsvåg (North Cape)|Norway": {
+  "lat": 70.9803,
+  "lng": 25.9778,
+  "as": "Honningsvåg, Nordkapp, Finnmark, 9750, Norway",
+  "q": "Honningsvåg, Norway"
+ },
+ "Sailing past Bear Island|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Barentsburg, Svalbard|Norway": {
+  "lat": 78.0654,
+  "lng": 14.2172,
+  "as": "Barentsburg, Nordenskiöld Land, Svalbard, Norway",
+  "q": "Barentsburg, Svalbard, Norway"
+ },
+ "Pyramiden, Svalbard|Norway": {
+  "lat": 78.6746,
+  "lng": 16.3486,
+  "as": "Pyramiden, Svalbard, Norway",
+  "q": "Pyramiden, Svalbard, Norway"
+ },
+ "Sailing through Adolfbukta|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing through Nordre Isfjorden National Park|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing through Forlandet National Park|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Ny-Ålesund|Norway": {
+  "lat": 78.9255,
+  "lng": 11.9292,
+  "as": "Ny-Ålesund, Oscar II Land, Svalbard, 9173, Norway",
+  "q": "Ny-Ålesund, Norway"
+ },
+ "Sailing through Kongsfjorden|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing through Magdalenefjord|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing past Alkhornet|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Longyearbyen|Norway": {
+  "lat": 78.2232,
+  "lng": 15.6464,
+  "as": "Longyearbyen, Nordenskiöld Land, Svalbard, 9170, Norway",
+  "q": "Longyearbyen, Norway"
+ },
+ "Sailing through Hornsund|Norway": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Jan Mayen|Norway": {
+  "lat": 70.9952,
+  "lng": -8.4657,
+  "as": "Jan Mayen, Norway",
+  "q": "Jan Mayen, Norway"
+ },
+ "Sailing through Scoresby Sund|Greenland": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Seyðisfjörður|Iceland": {
+  "lat": 66.0078,
+  "lng": -22.908,
+  "as": "Seyðisfjörður, Westfjords Region, Iceland",
+  "q": "Seyðisfjörður, Iceland"
+ },
+ "Siglufjörður|Iceland": {
+  "lat": 66.1505,
+  "lng": -18.9096,
+  "as": "Siglufjörður, Fjallabyggð, Northeastern Region, 580, Iceland",
+  "q": "Siglufjörður, Iceland"
+ },
+ "Akureyri|Iceland": {
+  "lat": 65.6839,
+  "lng": -18.1122,
+  "as": "Akureyri, Northeastern Region, Iceland",
+  "q": "Akureyri, Iceland"
+ },
+ "Ísafjörður|Iceland": {
+  "lat": 66.0727,
+  "lng": -23.1194,
+  "as": "Ísafjörður, Ísafjarðarbær, Westfjords Region, 400, Iceland",
+  "q": "Ísafjörður, Iceland"
+ },
+ "Reykjavík|Iceland": {
+  "lat": 64.146,
+  "lng": -21.9422,
+  "as": "Reykjavik, Capital Region, Iceland",
+  "q": "Reykjavík, Iceland"
+ },
+ "Tasiilaq|Greenland": {
+  "lat": 65.6141,
+  "lng": -37.6392,
+  "as": "Tasiilaq, Sermersooq, Greenland",
+  "q": "Tasiilaq, Greenland"
+ },
+ "Sailing through Prins Christianssund|Greenland": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Nanortalik|Greenland": {
+  "lat": 60.14,
+  "lng": -45.2429,
+  "as": "Nanortalik, Kujalleq, Greenland",
+  "q": "Nanortalik, Greenland"
+ },
+ "Qaqortoq|Greenland": {
+  "lat": 60.7182,
+  "lng": -46.0385,
+  "as": "Qaqortoq, Kujalleq, 3920, Greenland",
+  "q": "Qaqortoq, Greenland"
+ },
+ "Narsaq|Greenland": {
+  "lat": 60.9127,
+  "lng": -46.0453,
+  "as": "Narsaq, Kujalleq, 3921, Greenland",
+  "q": "Narsaq, Greenland"
+ },
+ "Paamiut|Greenland": {
+  "lat": 61.9946,
+  "lng": -49.6659,
+  "as": "Paamiut, Sermersooq, 3940, Greenland",
+  "q": "Paamiut, Greenland"
+ },
+ "Nuuk|Greenland": {
+  "lat": 64.1767,
+  "lng": -51.7361,
+  "as": "Nuuk, Sermersooq, 3900, Greenland",
+  "q": "Nuuk, Greenland"
+ },
+ "St. Anthony, Newfoundland & Labrador|Canada": {
+  "lat": 51.3654,
+  "lng": -55.5919,
+  "as": "St. Anthony, Newfoundland, Newfoundland and Labrador, Canada",
+  "q": "St. Anthony, Newfoundland & Labrador, Canada"
+ },
+ "Corner Brook, Newfoundland & Labrador|Canada": {
+  "lat": 48.9532,
+  "lng": -57.9474,
+  "as": "Corner Brook, Newfoundland, Newfoundland and Labrador, Canada",
+  "q": "Corner Brook, Newfoundland & Labrador, Canada"
+ },
+ "Sept-Îles, Québec|Canada": {
+  "lat": 50.211,
+  "lng": -66.3791,
+  "as": "Sept-Îles, Sept-Rivières, Côte-Nord, Quebec, Canada",
+  "q": "Sept-Îles, Québec, Canada"
+ },
+ "Saguenay, Québec|Canada": {
+  "lat": 48.406,
+  "lng": -71.0692,
+  "as": "Saguenay, Saguenay–Lac-Saint-Jean, Quebec, Canada",
+  "q": "Saguenay, Québec, Canada"
+ },
+ "Québec City, Québec|Canada": {
+  "lat": 46.8137,
+  "lng": -71.2084,
+  "as": "Quebec, Urban agglomeration of Québec, Capitale-Nationale, Quebec, Canada",
+  "q": "Québec City, Québec, Canada"
+ },
+ "Montreal, Québec|Canada": {
+  "lat": 45.5032,
+  "lng": -73.5698,
+  "as": "Montreal, Urban agglomeration of Montreal, Montreal (administrative region), Quebec, Canada",
+  "q": "Montreal, Québec, Canada"
+ },
+ "Sailing through the St. Lawrence Seaway|Canada": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Cornwall, Ontario|Canada": {
+  "lat": 45.047,
+  "lng": -74.7334,
+  "as": "Cornwall, Eastern Ontario, Ontario, Canada",
+  "q": "Cornwall, Ontario, Canada"
+ },
+ "Kingston, Ontario|Canada": {
+  "lat": 44.3054,
+  "lng": -76.4284,
+  "as": "Kingston, Eastern Ontario, Ontario, Canada",
+  "q": "Kingston, Ontario, Canada"
+ },
+ "Toronto, Ontario|Canada": {
+  "lat": 43.6535,
+  "lng": -79.3839,
+  "as": "Toronto, Ontario, Canada",
+  "q": "Toronto, Ontario, Canada"
+ },
+ "Sailing through the Welland Canal|Canada": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Niagara Peninsula, Ontario (Port Colborne)|Canada": {
+  "lat": 43.0408,
+  "lng": -79.5394,
+  "as": "Niagara Peninsula, Niagara Region, Southwestern Ontario, Ontario, Canada",
+  "q": "Niagara Peninsula, Ontario, Canada"
+ },
+ "Cleveland, Ohio|United States": {
+  "lat": 41.4997,
+  "lng": -81.6937,
+  "as": "Cleveland, Cuyahoga County, Ohio, United States",
+  "q": "Cleveland, Ohio, United States"
+ },
+ "Sailing through Lake Erie & the Detroit River|United States": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sault Ste. Marie, Michigan|United States": {
+  "lat": 46.4977,
+  "lng": -84.3477,
+  "as": "Sault Ste. Marie, Chippewa County, Michigan, 49783, United States",
+  "q": "Sault Ste. Marie, Michigan, United States"
+ },
+ "Sailing through the Soo Locks & St. Marys River|United States": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing through Lake Huron & Lake Michigan|United States": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Chicago, Illinois|United States": {
+  "lat": 41.8756,
+  "lng": -87.6244,
+  "as": "Chicago, South Chicago Township, Cook County, Illinois, United States",
+  "q": "Chicago, Illinois, United States"
+ },
+ "Muskegon, Michigan|United States": {
+  "lat": 43.2342,
+  "lng": -86.2484,
+  "as": "Muskegon, Muskegon County, Michigan, United States",
+  "q": "Muskegon, Michigan, United States"
+ },
+ "Milwaukee, Wisconsin|United States": {
+  "lat": 43.0386,
+  "lng": -87.9091,
+  "as": "Milwaukee, Milwaukee County, Wisconsin, United States",
+  "q": "Milwaukee, Wisconsin, United States"
+ },
+ "Escanaba, Michigan|United States": {
+  "lat": 45.7456,
+  "lng": -87.0647,
+  "as": "Escanaba, Delta County, Michigan, 49829, United States",
+  "q": "Escanaba, Michigan, United States"
+ },
+ "Harbor Springs, Michigan|United States": {
+  "lat": 45.4317,
+  "lng": -84.992,
+  "as": "Harbor Springs, Emmet County, Michigan, United States",
+  "q": "Harbor Springs, Michigan, United States"
+ },
+ "Mackinac Island, Michigan|United States": {
+  "lat": 45.8658,
+  "lng": -84.6305,
+  "as": "Mackinac Island, Mackinac County, Michigan, 49757, United States",
+  "q": "Mackinac Island, Michigan, United States"
+ },
+ "Killarney, Ontario|Canada": {
+  "lat": 46.1021,
+  "lng": -81.4129,
+  "as": "Killarney Provincial Park, 960, Killarney, Sudbury District, Northeastern Ontario, Ontario, P0M 2A0, Canada",
+  "q": "Killarney, Ontario, Canada"
+ },
+ "Little Current, Ontario|Canada": {
+  "lat": 45.98,
+  "lng": -81.9268,
+  "as": "Little Current, Northeastern Manitoulin and the Islands, Manitoulin District, Northeastern Ontario, Ontario, P0P 1K0, Canada",
+  "q": "Little Current, Ontario, Canada"
+ },
+ "Midland, Ontario|Canada": {
+  "lat": 44.7501,
+  "lng": -79.8857,
+  "as": "Midland, Simcoe County, Central Ontario, Ontario, Canada",
+  "q": "Midland, Ontario, Canada"
+ },
+ "Sailing through Georgian Bay, the Lower Lakes & the Welland Canal|Canada": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing through Lake Ontario|United States": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing through Lake Huron|United States": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing through the Soo Locks & the Lake Superior North Shore|United States": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Rossport, Ontario|Canada": {
+  "lat": 48.8351,
+  "lng": -87.5209,
+  "as": "Rossport, Unorganized Thunder Bay District, Thunder Bay District, Northwestern Ontario, Ontario, Canada",
+  "q": "Rossport, Ontario, Canada"
+ },
+ "Red Rock, Ontario|Canada": {
+  "lat": 48.9425,
+  "lng": -88.2592,
+  "as": "Red Rock, Red Rock Township, Thunder Bay District, Northwestern Ontario, Ontario, P0T 2P0, Canada",
+  "q": "Red Rock, Ontario, Canada"
+ },
+ "Thunder Bay, Ontario|Canada": {
+  "lat": 48.4064,
+  "lng": -89.2598,
+  "as": "Thunder Bay, Thunder Bay District, Northwestern Ontario, Ontario, Canada",
+  "q": "Thunder Bay, Ontario, Canada"
+ },
+ "Sailing through Lake Superior & Lake Huron|United States": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Detroit, Michigan|United States": {
+  "lat": 42.3316,
+  "lng": -83.0466,
+  "as": "Detroit, Wayne County, Michigan, United States",
+  "q": "Detroit, Michigan, United States"
+ },
+ "Put-in-Bay, Ohio|United States": {
+  "lat": 41.6519,
+  "lng": -82.8187,
+  "as": "Put-in-Bay, Put-in-Bay Township, Ottawa County, Ohio, United States",
+  "q": "Put-in-Bay, Ohio, United States"
+ },
+ "Prince Edward County, Ontario|Canada": {
+  "lat": 44.0318,
+  "lng": -77.2469,
+  "as": "Prince Edward County, Central Ontario, Ontario, Canada",
+  "q": "Prince Edward County, Ontario, Canada"
+ },
+ "Brockville, Ontario|Canada": {
+  "lat": 44.6039,
+  "lng": -75.7017,
+  "as": "Brockville, Eastern Ontario, Ontario, Canada",
+  "q": "Brockville, Ontario, Canada"
+ },
+ "Tadoussac, Québec|Canada": {
+  "lat": 48.1433,
+  "lng": -69.7175,
+  "as": "Tadoussac, La Haute-Côte-Nord, Côte-Nord, Quebec, Canada",
+  "q": "Tadoussac, Québec, Canada"
+ },
+ "Gaspé, Québec|Canada": {
+  "lat": 48.6147,
+  "lng": -66.0666,
+  "as": "Gaspé Peninsula, Quebec, Canada",
+  "q": "Gaspé, Québec, Canada"
+ },
+ "Charlottetown, Prince Edward Island|Canada": {
+  "lat": 46.2354,
+  "lng": -63.1265,
+  "as": "Charlottetown, Queens County, Prince Edward Island, Canada",
+  "q": "Charlottetown, Prince Edward Island, Canada"
+ },
+ "Sailing through the Strait of Canso|Canada": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Lunenburg, Nova Scotia|Canada": {
+  "lat": 44.3775,
+  "lng": -64.3155,
+  "as": "Lunenburg, Town of Lunenburg, Lunenburg County, Nova Scotia, B0J 2C0, Canada",
+  "q": "Lunenburg, Nova Scotia, Canada"
+ },
+ "Eastport, Maine|United States": {
+  "lat": 44.905,
+  "lng": -66.9846,
+  "as": "Eastport, Washington County, Maine, 04631, United States",
+  "q": "Eastport, Maine, United States"
+ },
+ "Bar Harbor, Maine|United States": {
+  "lat": 44.3876,
+  "lng": -68.2043,
+  "as": "Bar Harbor, Hancock County, Maine, United States",
+  "q": "Bar Harbor, Maine, United States"
+ },
+ "Rockland, Maine|United States": {
+  "lat": 44.1048,
+  "lng": -69.1092,
+  "as": "Rockland, Knox County, Maine, 04841, United States",
+  "q": "Rockland, Maine, United States"
+ },
+ "Portland, Maine|United States": {
+  "lat": 43.6574,
+  "lng": -70.2587,
+  "as": "Portland, Cumberland County, Maine, United States",
+  "q": "Portland, Maine, United States"
+ },
+ "Boston, Massachusetts|United States": {
+  "lat": 42.3588,
+  "lng": -71.0578,
+  "as": "Boston, Suffolk County, Massachusetts, United States",
+  "q": "Boston, Massachusetts, United States"
+ },
+ "Oak Bluffs, Martha's Vineyard|United States": {
+  "lat": 41.4536,
+  "lng": -70.5684,
+  "as": "Oak Bluffs, Dukes County, Massachusetts, 02557, United States",
+  "q": "Oak Bluffs, United States"
+ },
+ "Newport, Rhode Island|United States": {
+  "lat": 41.49,
+  "lng": -71.3138,
+  "as": "Newport, Newport County, Rhode Island, 02840, United States",
+  "q": "Newport, Rhode Island, United States"
+ },
+ "New York, New York|United States": {
+  "lat": 40.7127,
+  "lng": -74.006,
+  "as": "New York, United States",
+  "q": "New York, New York, United States"
+ },
+ "Philadelphia, Pennsylvania|United States": {
+  "lat": 39.9527,
+  "lng": -75.1635,
+  "as": "Philadelphia, Philadelphia County, Pennsylvania, United States",
+  "q": "Philadelphia, Pennsylvania, United States"
+ },
+ "Sailing through the Chesapeake & Delaware Canal|United States": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Annapolis, Maryland|United States": {
+  "lat": 38.9786,
+  "lng": -76.4928,
+  "as": "Annapolis, Anne Arundel County, Maryland, United States",
+  "q": "Annapolis, Maryland, United States"
+ },
+ "Norfolk, Virginia|United States": {
+  "lat": 36.8494,
+  "lng": -76.29,
+  "as": "Norfolk, Virginia, United States",
+  "q": "Norfolk, Virginia, United States"
+ },
+ "Beaufort, North Carolina|United States": {
+  "lat": 35.4693,
+  "lng": -76.8928,
+  "as": "Beaufort County, North Carolina, United States",
+  "q": "Beaufort, North Carolina, United States"
+ },
+ "Charleston, South Carolina|United States": {
+  "lat": 32.7884,
+  "lng": -79.9399,
+  "as": "Charleston, Charleston County, South Carolina, United States",
+  "q": "Charleston, South Carolina, United States"
+ },
+ "Savannah, Georgia|United States": {
+  "lat": 32.079,
+  "lng": -81.0921,
+  "as": "Savannah, Chatham County, Georgia, United States",
+  "q": "Savannah, Georgia, United States"
+ },
+ "Jacksonville, Florida|United States": {
+  "lat": 30.3262,
+  "lng": -81.6579,
+  "as": "Jacksonville, Duval County, Florida, United States",
+  "q": "Jacksonville, Florida, United States"
+ },
+ "Port Canaveral, Florida|United States": {
+  "lat": 28.4161,
+  "lng": -80.6078,
+  "as": "Port Canaveral, Brevard County, Florida, 32920, United States",
+  "q": "Port Canaveral, Florida, United States"
+ },
+ "Nassau|Bahamas": {
+  "lat": 25.0782,
+  "lng": -77.3383,
+  "as": "Nassau, New Providence, Bahamas",
+  "q": "Nassau, Bahamas"
+ },
+ "Key West, Florida|United States": {
+  "lat": 24.5548,
+  "lng": -81.8021,
+  "as": "Key West, Monroe County, Florida, United States",
+  "q": "Key West, Florida, United States"
+ },
+ "Little Cayman|Cayman Islands": {
+  "lat": 19.6853,
+  "lng": -80.0478,
+  "as": "Little Cayman, Sister Islands, Cayman Islands",
+  "q": "Little Cayman, Cayman Islands"
+ },
+ "San Andrés|Colombia": {
+  "lat": 12.5376,
+  "lng": -81.7204,
+  "as": "San Andrés Island, La Loma, Archipelago of San Andrés, Providencia and Santa Catalina, Colombia",
+  "q": "San Andrés, Colombia"
+ },
+ "Cartagena de Indias|Colombia": {
+  "lat": 10.4266,
+  "lng": -75.5442,
+  "as": "Cartagena, Dique, Bolívar, RAP Caribe, Colombia",
+  "q": "Cartagena de Indias, Colombia"
+ },
+ "Holandés Cays, San Blas|Panama": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Sailing through the Panama Canal|Panama": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Panama City|Panama": {
+  "lat": 8.9714,
+  "lng": -79.5342,
+  "as": "Panama City, Calidonia, Distrito de Panamá, Panamá Province, 0843, Panama",
+  "q": "Panama City, Panama"
+ },
+ "Bocas del Toro|Panama": {
+  "lat": 9.2675,
+  "lng": -81.9575,
+  "as": "Bocas del Toro, Panama",
+  "q": "Bocas del Toro, Panama"
+ },
+ "Coxen Hole, Roatán|Honduras": {
+  "lat": 16.3211,
+  "lng": -86.5383,
+  "as": "Coxen Hole, Roatán, Bay Islands, 34101, Honduras",
+  "q": "Coxen Hole, Roatán, Honduras"
+ },
+ "Guanaja|Honduras": {
+  "lat": 16.4421,
+  "lng": -85.887,
+  "as": "Guanaja, Bay Islands, Honduras",
+  "q": "Guanaja, Honduras"
+ },
+ "Placencia|Belize": {
+  "lat": 16.5156,
+  "lng": -88.3672,
+  "as": "Placencia, Stann Creek, Belize",
+  "q": "Placencia, Belize"
+ },
+ "Puerto Morelos, Quintana Roo|Mexico": {
+  "lat": 20.9318,
+  "lng": -87.2012,
+  "as": "Puerto Morelos, Quintana Roo, Mexico",
+  "q": "Puerto Morelos, Quintana Roo, Mexico"
+ },
+ "Dream Marina Day|Bahamas": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Salt Cay|Bahamas": {
+  "lat": 23.8512,
+  "lng": -76.2096,
+  "as": "Salt Cay, Black Point, Bahamas",
+  "q": "Salt Cay, Bahamas"
+ },
+ "Monte Cristi|Dominican Republic": {
+  "lat": 19.7178,
+  "lng": -71.4448,
+  "as": "Monte Cristi, Dominican Republic",
+  "q": "Monte Cristi, Dominican Republic"
+ },
+ "Providencia|Colombia": {
+  "lat": 13.3531,
+  "lng": -81.375,
+  "as": "Providence Island, Freetown, Archipelago of San Andrés, Providencia and Santa Catalina, Colombia",
+  "q": "Providencia, Colombia"
+ },
+ "Mogo Mogo (Pearl Islands)|Panama": {
+  "lat": 8.5718,
+  "lng": -79.0227,
+  "as": "Isla Mogo Mogo, Chapera, Saboga, Balboa, Panamá Province, Panama",
+  "q": "Mogo Mogo, Panama"
+ },
+ "Isla de la Plata|Ecuador": {
+  "lat": -1.2741,
+  "lng": -81.0708,
+  "as": "Isla de la Plata, Montecristi, Manabí, Ecuador",
+  "q": "Isla de la Plata, Ecuador"
+ },
+ "Guayaquil|Ecuador": {
+  "lat": -2.1901,
+  "lng": -79.8869,
+  "as": "Guayaquil, Guayas, Ecuador",
+  "q": "Guayaquil, Ecuador"
+ },
+ "Trujillo / Salaverry|Peru": {
+  "lat": -16.4336,
+  "lng": -71.5389,
+  "as": "Sánchez Trujillo, Salaverry, San Martín de Socabaya, Socabaya, Province of Arequipa, Arequipa, 04009, Peru",
+  "q": "Trujillo / Salaverry, Peru"
+ },
+ "Callao / Lima|Peru": {
+  "lat": -12.0602,
+  "lng": -77.1489,
+  "as": "Museo Naval del Perú, 123, Jorge Chávez Avenue, Villa Bonita 3, Callao, Lima Metropolitan Area, Callao, 07006, Peru",
+  "q": "Callao / Lima, Peru"
+ },
+ "Pisco / Paracas|Peru": {
+  "lat": -13.7884,
+  "lng": -76.2374,
+  "as": "Petrol de Peru, Paracas, Province of Pisco, Ica, Peru",
+  "q": "Pisco / Paracas, Peru"
+ },
+ "Arica|Chile": {
+  "lat": -18.4785,
+  "lng": -70.3211,
+  "as": "Arica, Provincia de Arica, Arica y Parinacota Region, Chile",
+  "q": "Arica, Chile"
+ },
+ "Iquique|Chile": {
+  "lat": -20.2141,
+  "lng": -70.1525,
+  "as": "Iquique, Provincia de Iquique, Tarapacá Region, Chile",
+  "q": "Iquique, Chile"
+ },
+ "Antofagasta|Chile": {
+  "lat": -23.6464,
+  "lng": -70.398,
+  "as": "Antofagasta, Provincia de Antofagasta, Antofagasta Region, Chile",
+  "q": "Antofagasta, Chile"
+ },
+ "Coquimbo|Chile": {
+  "lat": -30.7547,
+  "lng": -70.9006,
+  "as": "Coquimbo Region, Chile",
+  "q": "Coquimbo, Chile"
+ },
+ "Valparaíso|Chile": {
+  "lat": -33.0458,
+  "lng": -71.6197,
+  "as": "Valparaíso, Provincia de Valparaíso, Valparaiso Region, Chile",
+  "q": "Valparaíso, Chile"
+ },
+ "Robinson Crusoe Island|Chile": {
+  "lat": -33.6445,
+  "lng": -78.8262,
+  "as": "Robinson Crusoe Island, Juan Fernández, Provincia de Valparaíso, Valparaiso Region, Chile",
+  "q": "Robinson Crusoe Island, Chile"
+ },
+ "Alejandro Selkirk Island|Chile": {
+  "lat": -33.7692,
+  "lng": -80.7908,
+  "as": "Isla Alejandro Selkirk, Juan Fernández, Provincia de Valparaíso, Valparaiso Region, Chile",
+  "q": "Alejandro Selkirk Island, Chile"
+ },
+ "Easter Island / Rapa Nui|Chile": {
+  "lat": -27.1259,
+  "lng": -109.3496,
+  "as": "Easter Island, Easter Island Province, Valparaiso Region, 2770000, Chile",
+  "q": "Easter Island / Rapa Nui, Chile"
+ },
+ "Ducie Island|British Indian Ocean Territory": {
+  "lat": -24.6824,
+  "lng": -124.7855,
+  "as": "Ducie Atoll, Pitcairn Islands",
+  "q": "Ducie Island"
+ },
+ "Pitcairn Island|British Indian Ocean Territory": {
+  "lat": -25.0696,
+  "lng": -130.106,
+  "as": "Pitcairn Island, Pitcairn Islands",
+  "q": "Pitcairn Island"
+ },
+ "Mangareva / Gambier|French Polynesia": {
+  "lat": -23.1045,
+  "lng": -134.9696,
+  "as": "Mangareva, Gambier, Tuamotu-Gambier, French Polynesia, France",
+  "q": "Mangareva / Gambier, French Polynesia"
+ },
+ "Hao (Tuamotu)|French Polynesia": {
+  "lat": -18.2523,
+  "lng": -140.8898,
+  "as": "Hao, Tuamotu-Gambier, French Polynesia, 98767, France",
+  "q": "Hao, French Polynesia"
+ },
+ "Fakarava (Tuamotu)|French Polynesia": {
+  "lat": -16.0564,
+  "lng": -145.6186,
+  "as": "Fakarava, Tuamotu-Gambier, French Polynesia, 98763, France",
+  "q": "Fakarava, French Polynesia"
+ },
+ "Papeete / Tahiti|French Polynesia": {
+  "lat": -17.5367,
+  "lng": -149.5562,
+  "as": "Papeete Tahiti Temple, Avenue Pierre Loti, Fautaua, Fautaua (Titioro), Papeete, Windward Islands, French Polynesia, 98714, France",
+  "q": "Papeete / Tahiti, French Polynesia"
+ },
+ "Moorea|French Polynesia": {
+  "lat": -17.5333,
+  "lng": -149.8386,
+  "as": "Mo’orea, Windward Islands, French Polynesia, 98728, France",
+  "q": "Moorea, French Polynesia"
+ },
+ "Bora Bora|French Polynesia": {
+  "lat": -16.5043,
+  "lng": -151.7367,
+  "as": "Bora-Bora, Leeward Islands, French Polynesia, 98730, France",
+  "q": "Bora Bora, French Polynesia"
+ },
+ "Aitutaki|Cook Islands": {
+  "lat": -18.888,
+  "lng": -159.7843,
+  "as": "Aitutaki, Cook Islands",
+  "q": "Aitutaki, Cook Islands"
+ },
+ "Niue|Niue": {
+  "lat": -19.0805,
+  "lng": -169.9214,
+  "as": "Niue International Airport, Tuila Road, Alofi, Niue",
+  "q": "Niue, Niue"
+ },
+ "International Date Line - Lose a Day|Fiji": {
+  "lat": null,
+  "lng": null,
+  "tried": true
+ },
+ "Vava'u (Tonga)|Tonga": {
+  "lat": -18.6231,
+  "lng": -174.0021,
+  "as": "Vavaʻu ʻUta, Longomapu, Vahe Hihifo, Vavaʻu, Tonga",
+  "q": "Vava'u, Tonga"
+ },
+ "Suva|Fiji": {
+  "lat": -18.1416,
+  "lng": 178.4422,
+  "as": "Suva, Rewa, Central, Fiji",
+  "q": "Suva, Fiji"
+ },
+ "Port Vila|Vanuatu": {
+  "lat": -17.7415,
+  "lng": 168.315,
+  "as": "Port Vila, Shefa Province, Vanuatu",
+  "q": "Port Vila, Vanuatu"
+ },
+ "Merauke|Indonesia": {
+  "lat": -8.4903,
+  "lng": 140.3956,
+  "as": "Merauke, Semangga, South Papua, Indonesia",
+  "q": "Merauke, Indonesia"
+ },
+ "Labuan Bajo|Indonesia": {
+  "lat": -8.4899,
+  "lng": 119.8765,
+  "as": "Labuan Bajo, Manggarai Barat, East Nusa Tenggara, 86554, Indonesia",
+  "q": "Labuan Bajo, Indonesia"
+ },
+ "Pulau Kenawa|Indonesia": {
+  "lat": -8.4986,
+  "lng": 116.8329,
+  "as": "Pulau Kenawa, Senayan, Sumbawa Barat, West Nusa Tenggara, Indonesia",
+  "q": "Pulau Kenawa, Indonesia"
+ },
+ "Kuching, Sarawak|Malaysia": {
+  "lat": 1.5598,
+  "lng": 110.3454,
+  "as": "Kuching, Kuching Division, Sarawak, 93000, Malaysia",
+  "q": "Kuching, Sarawak, Malaysia"
+ },
+ "Bandar Seri Begawan|Brunei Darussalam": {
+  "lat": 4.8895,
+  "lng": 114.9418,
+  "as": "Bandar Seri Begawan, Mukim Kianggeh, Brunei-Muara District, Brunei",
+  "q": "Bandar Seri Begawan, Brunei Darussalam"
+ },
+ "Kota Kinabalu, Sabah|Malaysia": {
+  "lat": 5.978,
+  "lng": 116.0729,
+  "as": "Kota Kinabalu, West Coast Division, Sabah, 88000, Malaysia",
+  "q": "Kota Kinabalu, Sabah, Malaysia"
+ },
+ "Puerto Princesa, Palawan|Philippines": {
+  "lat": 9.7805,
+  "lng": 118.7301,
+  "as": "Puerto Princesa City National Science High School, Santa Monica, Puerto Princesa, Mimaropa, Philippines",
+  "q": "Puerto Princesa, Palawan, Philippines"
+ },
+ "El Nido / Palawan|Philippines": {
+  "lat": 11.364,
+  "lng": 119.5283,
+  "as": "Tao Philippines Base Camp, El Nido - New Ibajay Road, San Fernando, El Nido, Palawan, Mimaropa, Philippines",
+  "q": "El Nido / Palawan, Philippines"
+ },
+ "Boracay|Philippines": {
+  "lat": 11.9694,
+  "lng": 121.9227,
+  "as": "Boracay, Caticlan, Malay, Aklan, Western Visayas, 5608, Philippines",
+  "q": "Boracay, Philippines"
+ },
+ "Sanya / Hainan|China": {
+  "lat": 18.244,
+  "lng": 109.5024,
+  "as": "Bank of China, 解放路, Fenghuanghai'an, Tianya District, Sanya City, Hainan, 572012, China",
+  "q": "Sanya / Hainan, China"
+ },
+ "Lagoi / Bandar Bintan Telani|Indonesia": {
+  "lat": 1.1605,
+  "lng": 104.3202,
+  "as": "Bandar Bentan Telani, Jalan Langsat, Sebong Lagoi, Bintan, Riau Islands, Indonesia",
+  "q": "Lagoi / Bandar Bintan Telani"
+ },
+ "Pangkor Laut, Perak|Malaysia": {
+  "lat": 4.1951,
+  "lng": 100.5457,
+  "as": "Pangkor Laut Island, Pangkor Island, Manjung, Perak, 32300, Malaysia",
+  "q": "Pangkor Laut, Perak, Malaysia"
+ },
+ "Langkawi, Kedah|Malaysia": {
+  "lat": 6.37,
+  "lng": 99.7929,
+  "as": "Langkawi, Kedah, Malaysia",
+  "q": "Langkawi, Kedah, Malaysia"
+ },
+ "Sabang (Pulau Weh)|Indonesia": {
+  "lat": 5.8927,
+  "lng": 95.3226,
+  "as": "Sabang, Aceh, Indonesia",
+  "q": "Sabang, Indonesia"
+ },
+ "Galle|Sri Lanka": {
+  "lat": 6.0328,
+  "lng": 80.215,
+  "as": "Galle, Galle District, Southern Province, Sri Lanka",
+  "q": "Galle, Sri Lanka"
+ },
+ "Malé|Maldives": {
+  "lat": 4.178,
+  "lng": 73.5107,
+  "as": "Malé, Maldives",
+  "q": "Malé, Maldives"
+ },
+ "Baa Atoll|Maldives": {
+  "lat": 5.1852,
+  "lng": 73.1037,
+  "as": "Baa Atoll, South Maalhosmadulu, Maldives",
+  "q": "Baa Atoll, Maldives"
+ },
+ "Uligan|Maldives": {
+  "lat": 7.0841,
+  "lng": 72.927,
+  "as": "Uligan, North Thiladhunmathi, Maldives",
+  "q": "Uligan, Maldives"
+ },
+ "Agatti, Lakshadweep|India": {
+  "lat": 10.9479,
+  "lng": 72.3177,
+  "as": "Agatti, Lakshadweep, India",
+  "q": "Agatti, Lakshadweep, India"
+ },
+ "Dwarka, Gujarat|India": {
+  "lat": 22.2425,
+  "lng": 68.9671,
+  "as": "Dwarka, Okhamandal Taluka, Devbhumi Dwaraka, Gujarat, 361335, India",
+  "q": "Dwarka, Gujarat, India"
+ },
+ "Umluj (Shebara Island)|Saudi Arabia": {
+  "lat": 25.234,
+  "lng": 37.4983,
+  "as": "Umluj, Tabuk Province, 48512, Saudi Arabia",
+  "q": "Umluj, Saudi Arabia"
+ },
+ "Tropea|Italy": {
+  "lat": 38.6753,
+  "lng": 15.8949,
+  "as": "Tropea, Vibo Valentia, Calabria, 89861, Italy",
+  "q": "Tropea, Italy"
+ }
+}

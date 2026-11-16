@@ -133,7 +133,8 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   function editLine(id: string) { go(1); setEditing(id); }
 
   const options = (l: Line) => paymentOptions(l, product(l).policy);
-  const methodFor = (l: Line): Method => methods[l.id] ?? (options(l).find((o) => o.available && o.method !== "advisor_assisted")?.method ?? "advisor_assisted");
+  // A stay paid on ALBIE is never charged or simulated here: the only method this site runs for it is the advisor path.
+  const methodFor = (l: Line): Method => albieUrl(l) ? "advisor_assisted" : methods[l.id] ?? (options(l).find((o) => o.available && o.method !== "advisor_assisted")?.method ?? "advisor_assisted");
 
   async function pay() {
     setBusy(true); setNotice("");
@@ -160,7 +161,9 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   }
   function restart() { setLines([]); setResults({}); setMethods({}); setCartId(uid()); setLead({ first: "", last: "", email: "", phone: "", country: "" }); setAgreed(false); setOpen(catalogue.products[0]?.key ?? null); go(0); }
 
-  const nextLabel = step === 5 ? (lines.filter((l) => l.kind !== "experience").every((l) => albieUrl(l)) ? "Continue to Journey Confirmation" : busy ? "Running the simulation" : "Run simulated payments") : step === 0 ? "Review your cart" : `Continue to ${STEPS[step + 1]}`;
+  const allAlbie = lines.filter((l) => l.kind !== "experience").every((l) => albieUrl(l));
+  const shortNext = step === 5 && allAlbie ? "Confirmation" : SHORT_NEXT[step];
+  const nextLabel = step === 5 ? (allAlbie ? "Continue to Journey Confirmation" : busy ? "Running the simulation" : "Run simulated payments") : step === 0 ? "Review your cart" : `Continue to ${STEPS[step + 1]}`;
   const handoff = step === 6 ? ledgerHandoff({ cartId, lines, lead, party: companions, advisor: adv, externalAdvisor: external, payments: Object.fromEntries(lines.map((l) => [l.id, isPay(results[l.id]) ? (results[l.id] as SimResponse) : null])) }) : null;
 
   const ready = (l: Line) => readiness(l, product(l).policy);
@@ -516,7 +519,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
         <aside className="hidden lg:block sticky top-28 max-h-[calc(100vh-8.5rem)] overflow-y-auto" aria-label="Journey cart">
           <Panel className="p-5">
             <p className="ledger-eyebrow">Journey cart{bookable.length ? ` · ${bookable.length}${readyCount ? ` · ${readyCount} ready to book` : ""}` : ""}</p>
-            {step < 6 && bookable.length > 0 && <button type="button" className="ledger-btn ledger-btn--house mt-3 mb-1 w-full" disabled={busy} onClick={next}>{step === 5 && busy ? "Running" : SHORT_NEXT[step]}</button>}
+            {step < 6 && bookable.length > 0 && <button type="button" className="ledger-btn ledger-btn--house mt-3 mb-1 w-full" disabled={busy} onClick={next}>{step === 5 && busy ? "Running" : shortNext}</button>}
             {cartView(false)}
           </Panel>
         </aside>
@@ -529,7 +532,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
             <span className="block ledger-display text-[1.2rem] leading-none mt-0.5 truncate">{fmtMoney(totals.verifiedMinor, "USD").replace(/\.00$/, "")}</span>
           </button>
           {step > 0 && <button type="button" className="border border-[#CFC8BF] px-3 text-[14px]" onClick={() => go(step - 1)}>Back</button>}
-          <button type="button" className="bg-ink text-white px-4 text-[14px] font-medium disabled:opacity-50 whitespace-nowrap" disabled={busy} onClick={next}>{step === 5 && busy ? "Running" : SHORT_NEXT[step]} <span aria-hidden="true">→</span></button>
+          <button type="button" className="bg-ink text-white px-4 text-[14px] font-medium disabled:opacity-50 whitespace-nowrap" disabled={busy} onClick={next}>{step === 5 && busy ? "Running" : shortNext} <span aria-hidden="true">→</span></button>
         </div>
       )}
 

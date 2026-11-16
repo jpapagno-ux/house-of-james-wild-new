@@ -131,7 +131,7 @@ function albieStay(a: (typeof ALBIE_STAYS)[number]): StayProduct {
     inclusions: [], exclusions: [],
     inclusionsNote: "What the rate includes follows the rate plan the booking engine prices (shown on the line). The plan's own inclusion list is not in the feed, so none is printed here.",
     policy: {
-      payNow: { supported: false, basis: `Paid on the house booking engine (ALBIE by TAG), which collects the payment and settles with ${a.supplier}. The house site takes no payment for this stay.` },
+      payNow: { supported: true, basis: `Paid on the house booking engine (ALBIE by TAG), which collects the payment and settles with ${a.supplier}. The house site takes no payment for this stay: you continue to ALBIE's secure checkout.` },
       deposit: null, depositNote: "Set by the rate plan and shown by ALBIE at its checkout (initial payment and balance due). Not in the feed this site reads.",
       payAtProperty: { supported: false, basis: `Not stated by ${a.supplier} or by the booking engine feed.` },
       balance: NOT_ON_FILE, cancellation: "Follows the rate plan the engine prices. The plan's cancellation terms are shown by ALBIE at its checkout.",

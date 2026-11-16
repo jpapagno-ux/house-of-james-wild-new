@@ -1209,6 +1209,16 @@
    "released": true
   },
   {
+   "stay_id": "6afac2d30bd00a059187aff8",
+   "slug": "como-maalifushi",
+   "name": "COMO Maalifushi",
+   "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae8707bb3d5b36ad443b088",
    "slug": "como-parrot-cay",
    "name": "COMO Parrot Cay",
@@ -2390,6 +2400,16 @@
    "slug": "jk-place-capri",
    "name": "J.K. Place Capri",
    "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afac2d30bd00a059187aff7",
+   "slug": "joali-being",
+   "name": "JOALI BEING",
+   "country": "Maldives",
    "missing": [
     "coordinates"
    ],
@@ -3618,6 +3638,16 @@
    "slug": "one-only-kea-island",
    "name": "One&Only Kéa Island",
    "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afac3154e539f7533296da4",
+   "slug": "one-only-reethi-rah",
+   "name": "One&Only Reethi Rah",
+   "country": "Maldives",
    "missing": [
     "coordinates"
    ],

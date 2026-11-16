@@ -8321,6 +8321,80 @@
    "placeSlug": null
   },
   {
+   "slug": "como-maalifushi",
+   "name": "COMO Maalifushi",
+   "ledgerId": "STY-2026-000658",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Water villas and beach houses in the Thaa Atoll, with COMO Shambhala and a resident Tropicsurf guide for the waves at Farms, 25 minutes by speedboat",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/water-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/maalifushi-water-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/beach-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/beach-suite"
+   ],
+   "bestMonths": "April - October",
+   "bestMonthsNote": "Surf season with Tropicsurf: April, May and October bring lighter winds and glassy waves for beginners and intermediates; June to September the biggest swells for advanced surfers (COMO).",
+   "bestFor": [
+    "family",
+    "adventure",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": "A scenic 30 to 60 minute seaplane transfer from Velana International Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Beach Villas and Beach Suites, one bedroom, on the island's west side.",
+     "Maalifushi Beach Villa.",
+     "Water Villas, one bedroom, with private pools over the lagoon; the Maalifushi Water Villa, a two-bedroom overwater bungalow.",
+     "Two-Bedroom Beach House, and the four-bedroom COMO Residence; family villas take up to twelve guests."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Surf with Tropicsurf, full time at the resort April to October: Farms (Thaa, 25 minutes by speedboat, beginners to experienced), Machine (Laamu, advanced) and Kasabu (Dhaalu) on surf safaris by speedboat",
+     "Dive more than 30 sites, with turtles, reef sharks and manta rays; PADI courses and private charters",
+     "COMO Shambhala wellness",
+     "Play by COMO for children aged 4 to 11: ziplines, treasure hunts, drumming, marine biology outings"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Madi: international and Maldivian dishes",
+     "Tai: overwater Japanese dining",
+     "Thila: poolside and beachside"
+    ]
+   },
+   "onlyHere": [
+    "A resident Tropicsurf guide from April to October and speedboat surf safaris to breaks in three atolls: Farms in Thaa, Machine in Laamu and Kasabu in Dhaalu."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "como-parrot-cay",
    "name": "COMO Parrot Cay",
    "ledgerId": "STY-2026-000575",
@@ -21892,8 +21966,8 @@
    "bestMonths": "November–April, June–September",
    "bestMonthsNote": "November–April brings clear skies, calm seas, and peak visibility. Ideal for diving and snorkeling. June–September offers fewer tourists, discounted rates, and excellent conditions for surfing and adventurous water sports.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 6.8365,
     "lng": 73.157
@@ -21961,6 +22035,81 @@
     "6ae6974d4fb5d85162de5ae2",
     "6ae6974c2a487b11a3a5ce28"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "joali-being",
+   "name": "JOALI BEING",
+   "ledgerId": "STY-2026-000657",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A well-living island on Bodufushi in the Raa Atoll: 68 pool villas and a wellbeing approach built on four pillars, Mind, Skin, Microbiome and Energy",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/ocean-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/beach-residence",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/sound-path",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/mojo",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/bkidult"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "luxury",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": "A 40 minute seaplane flight from Malé to Bodufushi Island, shared or private, in daylight hours only. CIP Maamahi lounge service at Malé airport for faster immigration; a private lounge on arrival at Bodufushi.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "68 villas and residences, every one with a private pool",
+     "Beach villas with a private pool and direct beach access",
+     "Ocean villas with a private pool and direct access to the water"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "Wellbeing programmes shaped by in-house consultants, across four pillars: Mind, Skin, Microbiome and Energy",
+     "Sound therapy in the island's indigenous forest, meditation above the water, a daily sunset ritual",
+     "The Areka wellbeing zone and CORE (12 and over)",
+     "Cooking classes at the Culinary Learning Centre, wine tastings, tea ceremonies",
+     "B'Kidult, a multigenerational playground, and marine conservation and ocean discovery"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "MOJO beach restaurant, cocktail bar and SAI tea lounge",
+     "Yutori, Japanese; Rakuzen, private teppanyaki",
+     "Island Time: from 1 July 2026, GMT+6, one hour ahead of Malé"
+    ]
+   },
+   "onlyHere": [
+    "A whole island given to wellbeing, with programmes built on four pillars, Mind, Skin, Microbiome and Energy, and sound therapy in its own forest."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -25202,8 +25351,8 @@
    "bestMonths": "November - April",
    "bestMonthsNote": "These months fall in the dry season in the Maldives, bringing clearer skies, calm seas, excellent visibility for diving and snorkeling, and minimal heavy rain or storms.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.493,
     "lng": 73.44
@@ -35502,8 +35651,8 @@
    "bestMonths": "November–April (dry season); June–September (surf season & lower rates)",
    "bestMonthsNote": "Dry season offers calm seas, clear skies, and ideal snorkeling. June–Sept brings Pacific swells, perfect for surf-loving families with quieter islands and cost savings.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 2.626,
     "lng": 72.887
@@ -37518,6 +37667,84 @@
    ],
    "arrivalHubIds": [],
    "placeSlug": "cyclades"
+  },
+  {
+   "slug": "one-only-reethi-rah",
+   "name": "One&Only Reethi Rah",
+   "ledgerId": "STY-2026-000659",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A private island ringed by twelve secret beaches, with beach and water villas, grand residences and yachts, catamarans and dhonis to take you out",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/one-only-reethi-rah/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/one-only-reethi-rah/beach-villa-with-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/one-only-reethi-rah/beach-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/one-only-reethi-rah/two-villa-residence"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Beach Villa (108 m², up to 4), on its own slice of sand.",
+     "Beach Villa with Pool (126 m², up to 4).",
+     "Water Villas, with and without pools, and the Grand Water Villa with Pool.",
+     "Grand Beach Villa with Pool (368 m², two bedrooms, up to 6), direct beach access.",
+     "Two Villa Residence with Pool (391 m², two standalone villas, up to 8).",
+     "Grand Residence (436 m² inside, 639 m² outside; three bedrooms, up to 12 guests, 9 adults): a 210 m² infinity pool with heated jacuzzi, kids' pool, open-air beach cinema, fire pit, outdoor kitchen, wine room, personal host and chef. Also the Grand Sunset Residence."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "PADI dive and freediving courses, private dive tours, complimentary snorkelling and watersports",
+     "A private sunset yacht cruise with spinner and bottlenose dolphins",
+     "Charter a private yacht, catamaran or dhoni; marlin fishing on the Sportfisherman 47 or Maldivian hand-line fishing by dhoni",
+     "Sea turtle encounters; cycling; padel; family cooking and art classes",
+     "One&Only Spa"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Tapasake: Japanese with Mediterranean touches",
+     "Botanica: farm-to-table in the garden",
+     "Reethi: overwater, breakfast and French, Italian and Asian dinners",
+     "Rabarbaro: poolside Italian; Rah Bar, drinks and live music",
+     "Forbes Travel Guide Five-Star (2026)"
+    ]
+   },
+   "onlyHere": [
+    "Twelve secret beaches around one private island, and the Grand Residence: three bedrooms, a 210 m² infinity pool and an open-air beach cinema, with its own host and chef."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "open-sky",
@@ -47001,8 +47228,8 @@
    "bestMonths": "January - April",
    "bestMonthsNote": "The dry season offers calm seas, excellent visibility for snorkeling and diving, abundant sunshine, and ideal conditions for enjoying the beaches, marine adventures, and outdoor experiences that define the Maldives.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.3546,
     "lng": 73.3639
@@ -47190,8 +47417,8 @@
    "bestMonths": "November–April",
    "bestMonthsNote": "Dry, sunny days with calm seas for snorkeling, diving, surfing, and outdoor adventure, peak marine life viewing.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 1.7963,
     "lng": 73.4472
@@ -48364,8 +48591,8 @@
    "bestMonths": "All year",
    "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.318,
     "lng": 73.015
@@ -48489,8 +48716,8 @@
    "bestMonths": "All year",
    "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.567,
     "lng": 73.001
@@ -48609,8 +48836,8 @@
    "bestMonths": "All year",
    "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 6.7,
     "lng": 72.9
@@ -52232,8 +52459,8 @@
    "bestMonths": "Aril - Nov",
    "bestMonthsNote": "These months generally feature the driest weather, calm seas, warm sunshine and excellent visibility for snorkelling and diving. It’s perfect for both exploring the marine environment and relaxing in luxury.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.23862,
     "lng": 73.22098
@@ -56240,8 +56467,8 @@
    "bestMonths": "November – April",
    "bestMonthsNote": "These months align with the dry season in the Maldives, offering clearer skies, calmer seas, better visibility for snorkeling and diving, and generally ideal weather for outdoor and marine experiences.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.83348,
     "lng": 73.2065

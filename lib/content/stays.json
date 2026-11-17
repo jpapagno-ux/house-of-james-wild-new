@@ -1808,6 +1808,85 @@
    "placeSlug": null
   },
   {
+   "slug": "aman-nai-lert-bangkok",
+   "name": "Aman Nai Lert Bangkok",
+   "ledgerId": "STY-2026-000667",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Fifty-two suites by Jean-Michel Gathy within the seven-acre gardens of Nai Lert Park, in the middle of Bangkok",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/aman-nai-lert-bangkok/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/aman-nai-lert-bangkok/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/aman-nai-lert-bangkok/arva",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/aman-nai-lert-bangkok/pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "city",
+    "wellness",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bangkok Suvarnabhumi (BKK) or Don Mueang (DMK)",
+   "airportDirections": "Aman offers fast-track arrival at Suvarnabhumi and limousine transfers from Suvarnabhumi or Don Mueang; round-trip transfers are included for stays of two nights or more, and for one night in Corner Suites and above. Aman does not publish the drive time.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "52 suites designed by Jean-Michel Gathy, from Deluxe Suites of 94 to 98 sqm to Corner Suites of 92 sqm with 270 degree views.",
+     "Terrace Suite: 114 sqm with its own open-air terrace.",
+     "Aman Suite: the entire 18th floor, 566 sqm.",
+     "Every suite has a daybed, a workspace and a bathroom with an oversized tub, rain shower and double vanity; breakfast is included."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Aman Spa & Wellness over two floors, with medical wellness, hydrotherapy and thermal facilities and Banya Spa House",
+     "Arva, Hiori, Sesui, Aman Club and the Aman Lounge; afternoon tea at 1872",
+     "The gardens of Nai Lert Park"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Aman in the middle of Bangkok: 52 suites, among the largest in the city, inside the seven-acre green of Nai Lert Park, with a 1,500 square metre spa and wellness centre."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "bangkok",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "amandari",
    "name": "Amandari",
    "ledgerId": "STY-2026-000008",
@@ -9367,6 +9446,83 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "capella-bangkok",
+   "name": "Capella Bangkok",
+   "ledgerId": "STY-2026-000668",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A low-rise riverside hotel of 101 suites and villas, every one facing the Chao Phraya",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/capella-bangkok/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/capella-bangkok/riverfront",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/capella-bangkok/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/capella-bangkok/courtyard-suite"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "city",
+    "couples",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "101 suites and villas, all with river views.",
+     "Courtyard and verandah suites, and riverfront villas."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Auriga Wellness",
+     "Contemporary dining on the river",
+     "Riverfront life on Charoenkrung"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A low-rise hotel on the Chao Phraya where all 101 suites and villas look at the river, with riverfront villas and Auriga Wellness. Capella shows The World's 50 Best Hotels 2026, No. 2, on its own page."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "bangkok",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -39682,6 +39838,81 @@
    "placeSlug": null
   },
   {
+   "slug": "phulay-bay-ritz-carlton-reserve",
+   "name": "Phulay Bay",
+   "ledgerId": "STY-2026-000671",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Pavilions and villas with their own pools on the Andaman Sea in Krabi, each with a personal butler",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/phulay-bay/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/phulay-bay/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/phulay-bay/spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/phulay-bay/hong-island"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Pavilions and villas with private pools and ocean or garden views; all suites."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Lae Lay, Chomtawan, Plai Fah, Jampoon (with a chef's table) and Sri Trang; Pirom Bar",
+     "Spa with vitality pool, saunas and steam baths; Reserve Yogi sessions",
+     "Hiking Dragon Crest Mountain; islands such as Hong Island offshore"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "An all-suite Ritz-Carlton Reserve on the Andaman Sea among Krabi's limestone mountains, with private pools, a personal butler for every guest and Southern Thai family dinners at Sri Trang."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "krabi",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "pikaia-lodge",
    "name": "Pikaia Lodge",
    "ledgerId": "STY-2026-000583",
@@ -53512,6 +53743,83 @@
    "placeSlug": null
   },
   {
+   "slug": "the-siam-bangkok",
+   "name": "The Siam",
+   "ledgerId": "STY-2026-000669",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Suites and pool villas full of art and antiques in three acres of gardens on the Chao Phraya, in old Dusit",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/riverside-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/courtyard-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/chon"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "city",
+    "culture",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Suites: Siam Suite, Garden View, Premier Garden View, River View and Premier River View.",
+     "Pool villas: Courtyard Pool Villa and Riverside Pool Villa."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Chon Thai Restaurant, Deco Bar & Bistro, The Story House, The Pier and Bathers Bar",
+     "Opium Spa",
+     "The hotel's river shuttle and excursions into the old city"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A private urban sanctuary of art and antiques in three acres of gardens on the Chao Phraya River, beside Dusit's historic and cultural sights, with its own river shuttle."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "bangkok",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "the-silo-hotel",
    "name": "The Silo Hotel",
    "ledgerId": "STY-2026-000304",
@@ -54726,6 +55034,85 @@
    },
    "volumes": [
     "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "trisara",
+   "name": "Trisara",
+   "ledgerId": "STY-2026-000670",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Private pool villas, suites and residences above a secluded beach on Phuket's north west coast, with PRU",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/trisara/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/trisara/ocean-front-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/trisara/residence",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/trisara/pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "families",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Ocean View Pool Junior Suite: 135 sqm, for two adults",
+     "Ocean View Pool Villa and Oceanfront Pool Villa: 240 sqm each",
+     "Two Bedroom Oceanfront Pool Villa: 300 sqm, for families",
+     "Ten types of private pool residence, of three bedrooms and more"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "PRU, the Michelin-starred restaurant; JAMPA, Cielo & Spice, Thai Library, La Crique on the beach and private dining",
+     "JARA Wellness, rooted in ancient Thai healing",
+     "A secluded beach for in-residence guests"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Every villa and suite has its own pool above a secluded beach kept for in-residence guests, and PRU, Trisara's Michelin-starred restaurant, cooks from the island. Trisara shows Two MICHELIN Keys on its own page."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "phuket",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
     "stays"
    ],
    "arrivalHubIds": [],

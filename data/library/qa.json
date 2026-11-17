@@ -2,6 +2,19 @@
  "checkedOn": "2026-11-17",
  "rows": [
   {
+   "stay_id": "6afcd60dd016b84dcfe94ea1",
+   "slug": "137-pillars-house",
+   "name": "137 Pillars House",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a9d46027650cc04166342d9",
    "slug": "abaco-inn",
    "name": "Abaco Inn",
@@ -93,6 +106,16 @@
    "slug": "alya-catamaran-galapagos",
    "name": "Alya Galápagos Catamaran",
    "country": "Ecuador & Galapagos",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afcd5f16e7407a49fc21938",
+   "slug": "aman-nai-lert-bangkok",
+   "name": "Aman Nai Lert Bangkok",
+   "country": "Thailand",
    "missing": [
     "coordinates"
    ],
@@ -962,6 +985,16 @@
    "released": true
   },
   {
+   "stay_id": "6afcd5f16e7407a49fc21939",
+   "slug": "capella-bangkok",
+   "name": "Capella Bangkok",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8e3",
    "slug": "capella-ubud",
    "name": "Capella Ubud Bali",
@@ -1802,6 +1835,32 @@
    "country": "Canada",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6afcd60dd016b84dcfe94ea0",
+   "slug": "four-seasons-chiang-mai",
+   "name": "Four Seasons Resort Chiang Mai",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6afcd60dd016b84dcfe94e9f",
+   "slug": "four-seasons-koh-samui",
+   "name": "Four Seasons Resort Koh Samui",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6ae8ef16d685943e616492bf",
@@ -3161,6 +3220,19 @@
    "released": true
   },
   {
+   "stay_id": "6afcd60dd016b84dcfe94e9d",
+   "slug": "mandarin-oriental-bangkok",
+   "name": "Mandarin Oriental, Bangkok",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff93e",
    "slug": "manyara-tree-lodge-by-and-beyond",
    "name": "andBeyond Lake Manyara Tree Lodge",
@@ -3840,6 +3912,16 @@
    "name": "Phinda Homestead by &Beyond",
    "country": "South Africa",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afcd5f16e7407a49fc2193c",
+   "slug": "phulay-bay-ritz-carlton-reserve",
+   "name": "Phulay Bay",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -5128,6 +5210,16 @@
    "released": true
   },
   {
+   "stay_id": "6afcd5f16e7407a49fc2193a",
+   "slug": "the-siam-bangkok",
+   "name": "The Siam",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9df",
    "slug": "the-silo-hotel",
    "name": "The Silo Hotel",
@@ -5264,6 +5356,16 @@
    "name": "Explora Torres del Paine C. Reserve",
    "country": "Chile & Easter Island",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afcd5f16e7407a49fc2193b",
+   "slug": "trisara",
+   "name": "Trisara",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -5798,6 +5900,19 @@
    "country": "Namibia",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6afcd60dd016b84dcfe94e9e",
+   "slug": "zeavola",
+   "name": "Zeavola",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6ae77589226395e87383fce2",

@@ -11,6 +11,7 @@ import { AFRICA_BODY } from "./africa-inspired-wild-and-co-safaris";
 import { CAYUGA_BODY } from "./cayuga-collection-sustainable-luxury";
 import { AKAGERA_BODY } from "./akagera-rewilding-magashi-peninsula";
 import { MARSH_PRIDE_BODY } from "./marsh-pride-topi-boys-masai-mara";
+import { THREE_ASIA_BODY } from "./three-new-asia-stays";
 import { cayugaImg as cy } from "../collections/cayuga";
 import { pathwayHref } from "../pathways/flag";
 
@@ -66,6 +67,56 @@ const GOV = "jwco/stays"; // Governors' Camp Collection photographs on the live 
 const GOV_CREDIT = "Photograph: Governors' Camp Collection";
 
 export const POSTS: Record<string, JournalPost> = {
+  "auko-siempang-kaia-new-asia-stays": {
+    slug: "auko-siempang-kaia-new-asia-stays",
+    ledgerId: "WED-2026-000016",
+    shelf: "Field notes",
+    title: "Three New Stays in Asia, and Why None of Them Could Be Anywhere Else",
+    seoTitle: "Auko, Siempang Forest Lodge and KAIA: New Stays in Asia",
+    description: "Why Auko in Vietnam's Phong Nha caves, Siempang Forest Lodge in Cambodia's giant ibis sanctuary and KAIA Koh Phangan in Thailand joined the James Wild & Co Ledger, who each suits and how to fit them into a trip.",
+    dek: "A wellness retreat in cave country, a tented lodge that pays for the ibis, and a resort that has not opened yet. What makes each one different, and how I would fit them into a trip.",
+    answer: "Auko is 30 lodges on the Son River in Vietnam's Phong Nha-Ke Bang World Heritage Site, with cave meditation, sound healing and clifftop cold plunges, all inclusive. Siempang Forest Lodge is 15 safari tents in Cambodia's Siem Pang Wildlife Sanctuary, home to the giant ibis, giving ten percent of every booking to conservation. KAIA Koh Phangan is a new place-led resort in Thailand, preparing to open.",
+    place: "Vietnam · Cambodia · Thailand",
+    published: "2026-11-17",
+    modified: "2026-11-17",
+    hero: { url: hi("jwco/stays/vietnam/auko/hero"), alt: "A Canopy Lodge on stilts among the limestone peaks of Phong Nha at Auko, Vietnam", w: 2500, h: 1667, credit: "Photograph courtesy of Auko" },
+    body: THREE_ASIA_BODY,
+    figures: [
+      { after: "auko-why-stillness-works-in-phong-nha", layout: "pair", images: [
+        { url: hi("jwco/stays/vietnam/auko/canopy-lodge"), alt: "Inside a Canopy Lodge at Auko, Phong Nha", w: 2500, h: 1667, caption: "A Canopy Lodge: one of 21 on stilts.", credit: "Auko" },
+        { url: hi("jwco/stays/vietnam/auko/sound-healing-cave"), alt: "The Sound Healing Cave at Auko, Phong Nha", w: 2000, h: 2000, caption: "The Sound Healing Cave.", credit: "Auko" },
+      ] },
+      { after: "siempang-forest-lodge-a-lodge-that-pays-for-the-ibis", layout: "wide", images: [{ url: hi("jwco/stays/cambodia/siempang-forest-lodge/hero"), alt: "Siempang Forest Lodge on its forest ridge in Siem Pang Wildlife Sanctuary, from the air", w: 2048, h: 1536, caption: "Fifteen tents on a ridge, built around the trees.", credit: "Siempang Forest Lodge" }] },
+      { after: "kaia-koh-phangan-a-resort-before-its-first-guest", layout: "bleed", images: [{ url: hi("jwco/stays/thailand/kaia-koh-phangan/hero", false), alt: "KAIA Koh Phangan where the jungle meets the coast, from the air", w: 4000, h: 1800, caption: "Koh Phangan, where KAIA's first resort is taking shape.", credit: "KAIA Resorts" }] },
+    ],
+    pull: { text: "Plenty of resorts have a spa. Very few have a mountain full of caves to put it in.", after: "auko-why-stillness-works-in-phong-nha" },
+    close: "James Wild & Co",
+    faqTitle: "Questions About Auko, Siempang Forest Lodge and KAIA",
+    planPlace: "Southeast Asia",
+    faqs: [
+      { q: "What is Auko in Vietnam?", a: "Auko is an all inclusive eco-wellness retreat of 30 lodges on the Son River in Phong Nha, inside the Phong Nha-Ke Bang UNESCO World Heritage Site, with a sound healing cave, a silent meditation cave and clifftop cold plunges. It is a one hour transfer from Dong Hoi airport." },
+      { q: "How long should you stay at Auko?", a: "The Still Way is four nights with a Wellness Guide; the Wild Way, coming soon, is three nights of adventure; the Open Way lets you arrive any day and stay as long as you like." },
+      { q: "Where is Siempang Forest Lodge?", a: "In Western Siem Pang Wildlife Sanctuary, Stung Treng Province, northern Cambodia, about 5.5 to 6 hours by road from Siem Reap. Its packages include the transfer." },
+      { q: "Can you see the giant ibis at Siem Pang?", a: "The sanctuary is home to the giant ibis, Cambodia's national bird, one of five critically endangered bird species Rising Phoenix has stabilised there, and the lodge runs guided birding with expert local guides. Sightings are never guaranteed." },
+      { q: "When does KAIA Koh Phangan open?", a: "KAIA has not announced an opening date. The house will publish rooms, transfers and dates as soon as KAIA does." },
+    ],
+    stays: [
+      { slug: "auko", name: "Auko", line: "Phong Nha, Vietnam · 30 lodges on the Son River", note: "New to the Ledger. Caves, cold plunges and every meal included.", image: { url: hi("jwco/stays/vietnam/auko/hero"), alt: "Auko among the limestone peaks of Phong Nha", w: 2500, h: 1667 } },
+      { slug: "siempang-forest-lodge", name: "Siempang Forest Lodge", line: "Siem Pang, Cambodia · 15 safari tents", note: "New to the Ledger. Ten percent of every booking goes to conservation.", image: { url: hi("jwco/stays/cambodia/siempang-forest-lodge/hero"), alt: "Siempang Forest Lodge from the air", w: 2048, h: 1536 } },
+      { slug: "kaia-koh-phangan", name: "KAIA Koh Phangan", line: "Koh Phangan, Thailand · opening", note: "New to the Ledger and not yet open; details as KAIA publishes them.", image: { url: hi("jwco/stays/thailand/kaia-koh-phangan/hero", false), alt: "KAIA Koh Phangan from the air", w: 4000, h: 1800 } },
+    ],
+    links: [
+      { label: "Vietnam", href: "/destinations/asia/vietnam", line: "Every Vietnam stay in the Ledger." },
+      { label: "Siem Pang", href: "/destinations/asia/cambodia/siem-pang", line: "The giant ibis, the vultures and when to go." },
+      { label: "The Cardamom Mountains", href: "/destinations/asia/cambodia/cardamom-mountains", line: "Shinta Mani Wild, Cardamom Tented Camp and Krabey Island." },
+      { label: "Koh Samui and the Gulf", href: "/destinations/asia/thailand/koh-samui-and-the-gulf", line: "Samui, Koh Phangan and Hua Hin." },
+      { label: "The Art of Stillness", href: pathwayHref("the-art-of-stillness"), line: "Stays built for rest, Auko among them." },
+      { label: "Meet James", href: "/about/founder", line: "Forty-four years on the road." },
+    ],
+    keywords: ["Auko Phong Nha", "Auko Vietnam wellness retreat", "Phong Nha luxury stay", "Siempang Forest Lodge", "Siem Pang giant ibis", "Cambodia birding lodge", "KAIA Koh Phangan", "new resort Koh Phangan", "new luxury stays Asia 2026"],
+    about: ["Auko", "Phong Nha-Ke Bang National Park", "Siempang Forest Lodge", "Siem Pang Wildlife Sanctuary", "Giant ibis", "Rising Phoenix", "KAIA Koh Phangan", "Koh Phangan"],
+    approved: false, // James reviews on the Proofs sheet before it is indexed
+  },
   "marsh-pride-topi-boys-masai-mara": {
     slug: "marsh-pride-topi-boys-masai-mara",
     ledgerId: "WED-2026-000015",

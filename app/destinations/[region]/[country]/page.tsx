@@ -264,7 +264,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const tally = (k: MapItem["category"]) => items.filter((i) => i.category === k).length;
   // Destination card: no stays filed yet (c.staysComing). Set from the data, so a first stay ends the card state.
   const coming = !!c.staysComing && all.length === 0;
-  const slides: Slide[] = [...(c.hero.src ? [{ src: c.hero.src, alt: c.hero.alt, caption: c.name }] : []), ...featured.filter((s) => s.hero && !tooSmall(s.hero)).slice(0, 5).map((s) => ({ src: sharpen(s.hero as string), alt: `${s.name}, ${c.name}`, caption: s.name }))];
+  const slides: Slide[] = [...(c.heroSlides?.length ? c.heroSlides : c.hero.src ? [{ src: c.hero.src, alt: c.hero.alt, caption: c.name }] : []), ...featured.filter((s) => s.hero && !tooSmall(s.hero)).slice(0, 5).map((s) => ({ src: sharpen(s.hero as string), alt: `${s.name}, ${c.name}`, caption: s.name }))];
   const live = c.liveRates ? pages.find((s) => s.slug === c.liveRates!.stay) : undefined;
   const siblings = region?.countries ?? [];
   const doors: Door[] = siblings.filter((x) => x.slug !== c.slug).map((x) => ({ name: x.name, href: `/destinations/${c.region}/${x.slug}`, image: x.image, line: x.line, stays: x.stays, coming: x.coming }));

@@ -13,6 +13,7 @@ import { JOURNEYS, journeyPath } from "@/lib/content/ships/journeys";
 import PLACES from "@/lib/content/places-library.json";
 import { TY_DOSSIERS, TY_PATH, tyPath } from "@/lib/content/terra-y";
 import { GUIDES } from "@/lib/content/guides";
+import { PARTNER_LIST, partnerPath } from "@/lib/content/partners";
 
 // The house search index (/search/index.json), rebuilt from the Ledger on every publish (James, 4 Nov 2026: "if you
 // type in Ivory Lodge, it should pull up"). It used to be a file written once on 24 Oct, so lodges and residences
@@ -97,6 +98,8 @@ export function GET() {
     const c = COUNTRIES.find((x) => x.slug === pl.parentSlug);
     if (c) add({ t: "destination", n: pl.name, u: `/destinations/${pl.regionSlug}/${pl.parentSlug}/${pl.slug}`, k: "Place", p: c.name, r: pl.regionSlug, f: [], g: pl.subtitle ?? null, c: [c.name] });
   }
+  // House partners (17 Nov 2026 audit): every partner page by name, kind and line.
+  for (const p of PARTNER_LIST) add({ t: "destination", n: p.name, u: partnerPath(p.slug), k: "Partner", p: p.kind, r: null, f: [], g: `${p.line} ${(p.seo.keywords ?? []).join(", ")}`, c: [] });
   // Place guides (Tahiti's islands, Fiji's groups, the Maldives' three ways in) by name, tagline and keywords.
   for (const g of Object.values(GUIDES)) {
     if (!g.parent) continue;

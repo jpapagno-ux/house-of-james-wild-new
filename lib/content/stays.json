@@ -5265,6 +5265,92 @@
    "placeSlug": null
   },
   {
+   "slug": "auko",
+   "name": "Auko",
+   "ledgerId": "STY-2026-000664",
+   "country": "Vietnam",
+   "countrySlug": "vietnam",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Thirty lodges on the Son River inside the Phong Nha-Ke Bang World Heritage Site, with cave meditation, clifftop cold plunges and every meal included",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/canopy-lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/ground-lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/wellness",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/origin-restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/sound-healing-cave"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wellness",
+    "couples",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Dong Hoi Airport (VDH)",
+   "airportDirections": "Fly to Dong Hoi from Hanoi or Ho Chi Minh City, then a one hour private transfer. Hue Airport is the alternative, three hours by private transfer. By train to Dong Hoi station from Hanoi or Da Nang, then one hour by road; Da Nang is about five hours by private car.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "21 Canopy Lodges: one bedroom, on stilts with mountain views; king bed, 30 sqm inside and a 15 sqm terrace.",
+     "6 Ground Lodges: one bedroom at ground level with forest views.",
+     "1 Earth Lodge: two bedrooms at ground level with a shared terrace, for families and small groups of up to four.",
+     "2 River Lodges: two bedrooms on stilts over the Son River, up to four.",
+     "Every lodge has an open-air bathtub, a terrace, air conditioning and wifi."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The Open Way: arrive any day, stay as long as you like, choose your own classes and sessions",
+     "The Still Way: four nights led by a Wellness Guide, with silence, breathwork, somatic movement and sound healing in the caves",
+     "The Wild Way: three nights of guided adventure (coming soon)",
+     "Boat trips into the cave network, village cycling and guided walks in Phong Nha",
+     "Hydro journeys: a heated kaolin clay steam chamber, a forest rain shower and a clifftop cold plunge with breathwork",
+     "Harvest table meals at Origin Restaurant, forest to table, with vegan and vegetarian menus"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Lodges on stilts among limestone peaks in the Phong Nha-Ke Bang UNESCO World Heritage Site, with a sound healing cave, a silent meditation cave and six clifftop cold plunge tubs held at 5 to 10 degrees C."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-01",
+     "PATH-08"
+    ],
+    "setting": "karst_river",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "awasi-atacama",
    "name": "Awasi Atacama",
    "ledgerId": "STY-2026-000026",
@@ -23161,6 +23247,77 @@
    "volumes": [
     "stays",
     "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "kaia-koh-phangan",
+   "name": "KAIA Koh Phangan",
+   "ledgerId": "STY-2026-000666",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "The first of KAIA's place-led resorts, where the jungle meets the coast on Koh Phangan",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/gallery-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/gallery-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/gallery-3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/gallery-4"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "KAIA is a new collection of place-led resorts built around connection to people, to place and to a deeper purpose; Koh Phangan, where jungle meets coastline and ritual meets freedom, is its first."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01",
+     "PATH-05"
+    ],
+    "setting": "koh_phangan",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -43416,8 +43573,8 @@
     "/img/b44/1c6d5a1a9_532527e6a_697a9983cb8481858e413cc4_4672c58d.avif",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ec34ca5e5_12b1ed5f8_697a99a801c604296021de17_a2fa17de.webp"
    ],
-   "bestMonths": "November–April",
-   "bestMonthsNote": "Dry season offers sunny days, river adventures, and best wildlife viewing; green season brings lush landscapes and fewer guests.",
+   "bestMonths": "All year",
+   "bestMonthsNote": "Shinta Mani Wild says there is no bad time to visit: November to February for river swims and butterflies, March to May for low water and hiking, June to October for waterfalls and orchids.",
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
@@ -43429,13 +43586,11 @@
    "airportDirections": "3.5-hour drive from Phnom Penh, 2.5-hour drive from Sihanoukville; transfers arranged by the camp.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Waterfall Tent",
-     "Wild Tent",
-     "Two-Bedroom Tent",
-     "Exclusive Use"
-    ]
+    "paras": [
+     "15 tents dotted along the river, designed by Bill Bensley and placed over seven years of planning to be completely private.",
+     "Each tent is stilted and air conditioned, with a large porch and an outdoor tub."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -43609,6 +43764,86 @@
    "arrivalHubIds": [
     "6ae6974e95f3dd1b670575e2"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "siempang-forest-lodge",
+   "name": "Siempang Forest Lodge",
+   "ledgerId": "STY-2026-000665",
+   "country": "Cambodia",
+   "countrySlug": "cambodia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "camp",
+   "tagline": "Fifteen safari tents on a forest ridge in Siem Pang Wildlife Sanctuary, home to the giant ibis, Cambodia's national bird",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/siempang-forest-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/siempang-forest-lodge/main-lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/siempang-forest-lodge/meditation-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/siempang-forest-lodge/white-bellied-woodpecker"
+   ],
+   "bestMonths": "October to March",
+   "bestMonthsNote": "The lodge names October to March for clear skies and wildlife at the waterholes (Eld's deer and ibises), April to June for orchids and storms, and August and September for vultures and greater adjutant storks at the feeding sites.",
+   "bestFor": [
+    "wildlife",
+    "birding",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Siem Reap (via NR 64)",
+   "airportDirections": "About 5.5 to 6 hours by road from Siem Reap via NR 64; about 8 hours from Phnom Penh, including a Mekong ferry crossing; about 3.5 hours from Pakse in Laos. The International Explorer packages include transfers from Siem Reap.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Fifteen safari tents arc through the trees on hardwood decks raised above the forest floor, built around the standing trunks.",
+     "Deluxe Tent: king or twin beds, two adults, forest view.",
+     "Suite Tent: the flagship, reached by boardwalk, king bed, two adults, meadow view."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Birdwatching with expert local guides",
+     "Visits to the vulture feeding grounds",
+     "Forest walks with trackers who read the signs of wildlife",
+     "Sunrise birding, sunset cycling and village conservation stories"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A tented lodge inside a sanctuary co-managed by Rising Phoenix with Cambodia's Ministry of Environment, where five critically endangered bird species, among them the giant ibis, have been stabilised, and ten percent of every booking goes to rangers, vulture feeding and the IBIS Rice farmers."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06",
+     "PATH-08"
+    ],
+    "setting": "dry_forest",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -61641,7 +61876,7 @@
     "lng": 103.547
    },
    "airport": "Sihanouk International Airport (KOS) Phnom Penh International Airport (PNH)",
-   "airportDirections": "Sihanouk International Airport (KOS)\nApproximately 18 km from the resort arrival lounge\nAround 20–30 minutes by vehicle plus short resort speedboat transfer\nPhnom Penh International Airport (PNH)\nApproximately 230 km away\nAround 3–4 hours by road transfer plus boat connection\nRecommended Arrival Airport: Sihanouk International Airport (KOS)",
+   "airportDirections": "From Sihanouk International Airport (KOS), a 10 minute drive to the resort's mainland welcome lounge and private jetty, then a 15 minute speedboat to the island. From Phnom Penh, about two hours by motorway.",
    "founderNote": null,
    "rooms": {
     "paras": [],

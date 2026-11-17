@@ -489,6 +489,16 @@
    "released": true
   },
   {
+   "stay_id": "6afc606cd3de68956dc02c9b",
+   "slug": "auko",
+   "name": "Auko",
+   "country": "Vietnam",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8c9",
    "slug": "awasi-atacama",
    "name": "Awasi Atacama",
@@ -2480,6 +2490,16 @@
    "released": false
   },
   {
+   "stay_id": "6afc606cd3de68956dc02c9d",
+   "slug": "kaia-koh-phangan",
+   "name": "KAIA Koh Phangan",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae8ed8ba6295b5316ea6ce2",
    "slug": "kalinaw-resort",
    "name": "Kalinaw Resort",
@@ -4254,6 +4274,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afc606cd3de68956dc02c9c",
+   "slug": "siempang-forest-lodge",
+   "name": "Siempang Forest Lodge",
+   "country": "Cambodia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6ae4c00a0876218d92823920",

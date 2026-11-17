@@ -25,9 +25,8 @@ export function EFFrame({ a, ratio, sizes, priority = false, className = "" }: {
 
 export function Credit({ a, className = "" }: { a: MediaAsset; className?: string }) {
   const text = a.photographer ? `${a.credit} · ${a.photographer}` : a.credit;
-  return a.creditUrl
-    ? <a href={a.creditUrl} rel="noopener" className={`ef-caption shrink-0 text-[11px] tracking-[0.08em] hover:text-crimson ${className}`}>{text}</a>
-    : <span className={`ef-caption shrink-0 text-[11px] tracking-[0.08em] ${className}`}>{text}</span>;
+  // Plain text, never a link out (James, 13 Nov 2026, the hard freeze; the creditUrl stays in the data as the source).
+  return <span className={`ef-caption shrink-0 text-[11px] tracking-[0.08em] ${className}`}>{text}</span>;
 }
 
 export default function EFStory({ name, frames, id = "story" }: { name: string; frames: { arrival?: MediaAsset | null; interior?: MediaAsset | null; human?: MediaAsset | null; night?: MediaAsset | null }; id?: string }) {

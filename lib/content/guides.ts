@@ -5,6 +5,8 @@ import { FIJI_GUIDES } from "./guides-fiji.ts";
 import { TAHITI_ISLAND_GUIDES } from "./guides-tahiti-islands.ts";
 import { MALDIVES_GUIDES } from "./guides-maldives.ts";
 import { AUSTRALIA_GUIDES } from "./guides-australia.ts";
+import { THAILAND_GUIDES } from "./guides-thailand.ts";
+import { CAMBODIA_GUIDES } from "./guides-cambodia.ts";
 import { NEW_ZEALAND_GUIDES } from "./guides-new-zealand.ts";
 
 // Destination guides: search-led pages for places people look up by name
@@ -1378,6 +1380,8 @@ export const GUIDES: Record<string, Guide> = {
   ...MALDIVES_GUIDES,
   ...AUSTRALIA_GUIDES,
   ...NEW_ZEALAND_GUIDES,
+  ...THAILAND_GUIDES,
+  ...CAMBODIA_GUIDES,
 };
 
 // Destination-first (Stage 2): the library's own place records (scripts/export-places.py) carry the

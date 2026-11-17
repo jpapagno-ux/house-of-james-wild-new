@@ -20,9 +20,10 @@ export const SETTING_ORDER: SettingKey[] = ["mountain", "jungle", "coast", "dese
 export function settingFrom(label?: string): SettingKey {
   const l = (label || "").toLowerCase();
   if (l.startsWith("jungle") || l.includes("rainforest")) return "jungle";
-  if (l.startsWith("coast") || l.includes("island") || l.includes("beach")) return "coast";
+  // Water settings by name (17 Nov 2026 audit): atolls, lagoons, reefs and the Maldives atoll names read as Coast & Island.
+  if (l.startsWith("coast") || /island|beach|atoll|lagoon|reef|bay|sea|ocean|maldives|motu|noonu|lhaviyani|laamu|dhaalu/.test(l)) return "coast";
   if (l.startsWith("desert")) return "desert";
   if (l.startsWith("savanna") || l.includes("safari")) return "savanna";
-  if (l.startsWith("polar") || l.includes("ice")) return "polar";
+  if (l.startsWith("polar") || /\bice\b|antarctic/.test(l)) return "polar";
   return "mountain";
 }

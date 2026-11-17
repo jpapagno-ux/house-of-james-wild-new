@@ -8387,7 +8387,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],
@@ -11089,7 +11100,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],
@@ -17986,7 +18008,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],
@@ -22241,7 +22274,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],
@@ -33110,7 +33154,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "alpine",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],
@@ -37941,7 +37996,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],
@@ -38375,7 +38441,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],
@@ -52451,7 +52528,19 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-04",
+     "PATH-06"
+    ],
+    "setting": "alpine",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],
@@ -56779,7 +56868,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "lagoon",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
    "volumes": [
     "stays"
    ],

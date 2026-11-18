@@ -1,1 +1,227 @@
-{"id":"seadream-i-transatlantic-autumn-voyage-i-2028-10-28","type":"voyage","destination":"trans-atlantic","title":"Transatlantic Autumn Voyage I aboard SeaDream I","subtitle":"14 nights · Malaga to San Juan · SeaDream I","days":{"1":"Malaga","2":"At sea","3":"At sea","4":"At sea","5":"At sea","6":"At sea","7":"At sea","8":"At sea","9":"At sea","10":"At sea","11":"At sea","12":"At sea","13":"At sea","14":"White Bay","15":"San Juan"},"stops":[{"day":1,"name":"Malaga","lat":36.71,"lng":-4.42,"kind":"port"},{"day":14,"name":"White Bay, Jost van Dyke","lat":18.4428,"lng":-64.7629,"mode":"sea","path":[[-4.42,36.71],[-64.7629,18.4428]]},{"day":15,"name":"San Juan","lat":18.46,"lng":-66.11,"mode":"sea","path":[[-64.7629,18.4428],[-66.11,18.46]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Atlantic Ocean","lat":25,"lng":-40,"kind":"sea"}]}}
+{
+ "id": "seadream-i-transatlantic-autumn-voyage-i-2028-10-28",
+ "type": "voyage",
+ "destination": "trans-atlantic",
+ "title": "Transatlantic Autumn Voyage I aboard SeaDream I",
+ "subtitle": "14 nights · Malaga to San Juan · SeaDream I",
+ "days": {
+  "1": "Malaga",
+  "2": "At sea",
+  "3": "At sea",
+  "4": "At sea",
+  "5": "At sea",
+  "6": "At sea",
+  "7": "At sea",
+  "8": "At sea",
+  "9": "At sea",
+  "10": "At sea",
+  "11": "At sea",
+  "12": "At sea",
+  "13": "At sea",
+  "14": "White Bay",
+  "15": "San Juan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Malaga",
+   "lat": 36.71,
+   "lng": -4.42,
+   "kind": "port"
+  },
+  {
+   "day": 14,
+   "name": "White Bay, Jost van Dyke",
+   "lat": 18.4368,
+   "lng": -64.7629,
+   "mode": "sea",
+   "path": [
+    [
+     -4.42,
+     36.71
+    ],
+    [
+     -4.4283,
+     36.6724
+    ],
+    [
+     -4.4956,
+     36.5912
+    ],
+    [
+     -4.9936,
+     36.2338
+    ],
+    [
+     -5.3436,
+     36.093
+    ],
+    [
+     -5.3571,
+     36.093
+    ],
+    [
+     -5.3705,
+     36.1038
+    ],
+    [
+     -5.399,
+     36.1513
+    ],
+    [
+     -5.4047,
+     36.1077
+    ],
+    [
+     -5.4297,
+     36.067
+    ],
+    [
+     -5.5298,
+     36.006
+    ],
+    [
+     -8.3563,
+     35.0705
+    ],
+    [
+     -9.0373,
+     35.0659
+    ],
+    [
+     -12.6756,
+     33.9805
+    ],
+    [
+     -16.314,
+     32.8952
+    ],
+    [
+     -17.2702,
+     32.8711
+    ],
+    [
+     -19.9523,
+     31.8098
+    ],
+    [
+     -23.5906,
+     30.7244
+    ],
+    [
+     -27.2289,
+     29.639
+    ],
+    [
+     -30.8672,
+     28.5537
+    ],
+    [
+     -34.5056,
+     27.4683
+    ],
+    [
+     -38.1439,
+     26.3829
+    ],
+    [
+     -41.7822,
+     25.2975
+    ],
+    [
+     -45.4205,
+     24.2122
+    ],
+    [
+     -49.0588,
+     23.1268
+    ],
+    [
+     -52.6971,
+     22.0414
+    ],
+    [
+     -56.3355,
+     20.956
+    ],
+    [
+     -59.9738,
+     19.8707
+    ],
+    [
+     -63.6121,
+     18.7853
+    ],
+    [
+     -64.5855,
+     18.5009
+    ],
+    [
+     -64.7206,
+     18.4236
+    ],
+    [
+     -64.7431,
+     18.4236
+    ],
+    [
+     -64.7487,
+     18.4263
+    ],
+    [
+     -64.7543,
+     18.4316
+    ],
+    [
+     -64.7629,
+     18.4368
+    ]
+   ],
+   "charted": [
+    -64.7629,
+    18.4428
+   ],
+   "lane": "sea",
+   "clear": 0.41
+  },
+  {
+   "day": 15,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7629,
+     18.4368
+    ],
+    [
+     -64.8298,
+     18.4652
+    ],
+    [
+     -66.0708,
+     18.4739
+    ],
+    [
+     -66.11,
+     18.46
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.42
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Atlantic Ocean",
+    "lat": 25,
+    "lng": -40,
+    "kind": "sea"
+   }
+  ]
+ }
+}

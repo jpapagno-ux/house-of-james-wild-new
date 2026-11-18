@@ -1,1 +1,323 @@
-{"id":"seadream-i-st-barths-and-caribbean-gems-2028-01-16","type":"voyage","destination":"caribbean","title":"St. Barths & Caribbean Gems aboard SeaDream I","subtitle":"7 nights · Charlotte Amalie to Bridgetown · SeaDream I","days":{"1":"Charlotte Amalie","2":"Cruz Bay","3":"Marigot and Gustavia","4":"Gustavia","5":"Terre De Haut","6":"Rodney Bay","7":"Mayreau","8":"Bridgetown"},"stops":[{"day":1,"name":"Charlotte Amalie, St. Thomas","lat":18.3429,"lng":-64.9189,"kind":"port"},{"day":2,"name":"Cruz Bay, St. John","lat":18.3356,"lng":-64.755,"mode":"sea","path":[[-64.9189,18.3429],[-64.755,18.3356]]},{"day":3,"name":"Marigot","lat":18.0669,"lng":-63.0849,"mode":"sea","path":[[-64.755,18.3356],[-63.0849,18.0669]]},{"day":3,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-63.0849,18.0669],[-62.8508,17.8957]]},{"day":5,"name":"Terre De Haut, Îles des Saintes","lat":15.8681,"lng":-61.5822,"mode":"sea","path":[[-62.8508,17.8957],[-61.5822,15.8681]]},{"day":6,"name":"Rodney Bay","lat":14.0748,"lng":-60.9527,"mode":"sea","path":[[-61.5822,15.8681],[-60.9527,14.0748]]},{"day":7,"name":"Mayreau","lat":12.6397,"lng":-61.3897,"mode":"sea","path":[[-60.9527,14.0748],[-61.3897,12.6397]]},{"day":8,"name":"Bridgetown, Barbados","lat":13.0817,"lng":-59.6048,"mode":"sea","path":[[-61.3897,12.6397],[-59.6048,13.0817]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-st-barths-and-caribbean-gems-2028-01-16",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "St. Barths & Caribbean Gems aboard SeaDream I",
+ "subtitle": "7 nights · Charlotte Amalie to Bridgetown · SeaDream I",
+ "days": {
+  "1": "Charlotte Amalie",
+  "2": "Cruz Bay",
+  "3": "Marigot and Gustavia",
+  "4": "Gustavia",
+  "5": "Terre De Haut",
+  "6": "Rodney Bay",
+  "7": "Mayreau",
+  "8": "Bridgetown"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Charlotte Amalie, St. Thomas",
+   "lat": 18.3345,
+   "lng": -64.9277,
+   "kind": "port",
+   "charted": [
+    -64.9189,
+    18.3429
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Cruz Bay, St. John",
+   "lat": 18.3176,
+   "lng": -64.7474,
+   "mode": "sea",
+   "path": [
+    [
+     -64.9277,
+     18.3345
+    ],
+    [
+     -64.9289,
+     18.3232
+    ],
+    [
+     -64.9265,
+     18.3187
+    ],
+    [
+     -64.9218,
+     18.3142
+    ],
+    [
+     -64.9076,
+     18.3075
+    ],
+    [
+     -64.8768,
+     18.2985
+    ],
+    [
+     -64.8343,
+     18.3008
+    ],
+    [
+     -64.8224,
+     18.3052
+    ],
+    [
+     -64.768,
+     18.3075
+    ],
+    [
+     -64.7474,
+     18.3176
+    ]
+   ],
+   "charted": [
+    -64.755,
+    18.3356
+   ],
+   "lane": "sea",
+   "clear": 0.28
+  },
+  {
+   "day": 3,
+   "name": "Marigot",
+   "lat": 18.0693,
+   "lng": -63.0912,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7474,
+     18.3176
+    ],
+    [
+     -64.7351,
+     18.3002
+    ],
+    [
+     -64.727,
+     18.2925
+    ],
+    [
+     -64.7067,
+     18.2849
+    ],
+    [
+     -63.1116,
+     18.0849
+    ],
+    [
+     -63.0912,
+     18.0693
+    ]
+   ],
+   "charted": [
+    -63.0849,
+    18.0669
+   ],
+   "lane": "sea",
+   "clear": 0.89
+  },
+  {
+   "day": 3,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0912,
+     18.0693
+    ],
+    [
+     -63.0995,
+     18.0853
+    ],
+    [
+     -63.0971,
+     18.0898
+    ],
+    [
+     -63.0617,
+     18.1235
+    ],
+    [
+     -63.0381,
+     18.1325
+    ],
+    [
+     -63.0215,
+     18.1325
+    ],
+    [
+     -63.0168,
+     18.1302
+    ],
+    [
+     -63.0121,
+     18.1257
+    ],
+    [
+     -62.92,
+     17.9506
+    ],
+    [
+     -62.8799,
+     17.9101
+    ],
+    [
+     -62.8657,
+     17.8989
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ],
+   "lane": "sea",
+   "clear": 0.88
+  },
+  {
+   "day": 5,
+   "name": "Terre De Haut, Îles des Saintes",
+   "lat": 15.8681,
+   "lng": -61.5884,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -62.1554,
+     16.7763
+    ],
+    [
+     -61.7334,
+     15.9409
+    ],
+    [
+     -61.7189,
+     15.927
+    ],
+    [
+     -61.5884,
+     15.8681
+    ]
+   ],
+   "charted": [
+    -61.5822,
+    15.8681
+   ],
+   "lane": "sea",
+   "clear": 1.39
+  },
+  {
+   "day": 6,
+   "name": "Rodney Bay",
+   "lat": 14.0772,
+   "lng": -60.9601,
+   "mode": "sea",
+   "path": [
+    [
+     -61.5884,
+     15.8681
+    ],
+    [
+     -61.2924,
+     14.8064
+    ],
+    [
+     -60.9601,
+     14.0772
+    ]
+   ],
+   "charted": [
+    -60.9527,
+    14.0748
+   ],
+   "lane": "sea",
+   "clear": 7.03
+  },
+  {
+   "day": 7,
+   "name": "Mayreau",
+   "lat": 12.6337,
+   "lng": -61.3872,
+   "mode": "sea",
+   "path": [
+    [
+     -60.9601,
+     14.0772
+    ],
+    [
+     -61.0381,
+     13.9956
+    ],
+    [
+     -61.0993,
+     13.8765
+    ],
+    [
+     -61.2931,
+     13.2413
+    ],
+    [
+     -61.3872,
+     12.6337
+    ]
+   ],
+   "charted": [
+    -61.3897,
+    12.6397
+   ],
+   "lane": "sea",
+   "clear": 1.54
+  },
+  {
+   "day": 8,
+   "name": "Bridgetown, Barbados",
+   "lat": 13.0721,
+   "lng": -59.6097,
+   "mode": "sea",
+   "path": [
+    [
+     -61.3872,
+     12.6337
+    ],
+    [
+     -59.6097,
+     13.0721
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -59.6048,
+    13.0817
+   ]
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

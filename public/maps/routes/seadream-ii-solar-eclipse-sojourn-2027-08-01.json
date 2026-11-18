@@ -1,1 +1,393 @@
-{"id":"seadream-ii-solar-eclipse-sojourn-2027-08-01","type":"voyage","destination":"mediterranean","title":"Solar Eclipse Sojourn aboard SeaDream II","subtitle":"7 nights · Valletta to Rome (Civitavecchia) · SeaDream II","days":{"1":"Valletta","2":"Solar Eclipse Viewing","3":"Syracuse","4":"Lipari","5":"Amalfi and Capri","6":"Capri and Positano","7":"Sorrento","8":"Rome (Civitavecchia)"},"stops":[{"day":1,"name":"Valletta","lat":35.899,"lng":14.5137,"kind":"port"},{"day":3,"name":"Syracuse, Sicily","lat":37.06,"lng":15.29,"mode":"sea","path":[[14.5137,35.899],[15.29,37.06]]},{"day":4,"name":"Lipari, Aeolian Islands","lat":38.4693,"lng":14.9565,"mode":"sea","path":[[15.29,37.06],[14.9565,38.4693]]},{"day":5,"name":"Amalfi","lat":40.6337,"lng":14.6026,"mode":"sea","path":[[14.9565,38.4693],[14.6026,40.6337]]},{"day":5,"name":"Capri","lat":40.5488,"lng":14.2284,"mode":"sea","path":[[14.6026,40.6337],[14.2284,40.5488]]},{"day":6,"name":"Positano","lat":40.6287,"lng":14.4855,"mode":"sea","path":[[14.2284,40.5488],[14.4855,40.6287]]},{"day":7,"name":"Sorrento","lat":40.6249,"lng":14.3748,"mode":"sea","path":[[14.4855,40.6287],[14.3748,40.6249]]},{"day":8,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"mode":"sea","path":[[14.3748,40.6249],[12.4829,41.8933]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-solar-eclipse-sojourn-2027-08-01",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Solar Eclipse Sojourn aboard SeaDream II",
+ "subtitle": "7 nights · Valletta to Rome (Civitavecchia) · SeaDream II",
+ "days": {
+  "1": "Valletta",
+  "2": "Solar Eclipse Viewing",
+  "3": "Syracuse",
+  "4": "Lipari",
+  "5": "Amalfi and Capri",
+  "6": "Capri and Positano",
+  "7": "Sorrento",
+  "8": "Rome (Civitavecchia)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Valletta",
+   "lat": 35.8954,
+   "lng": 14.5196,
+   "kind": "port",
+   "charted": [
+    14.5137,
+    35.899
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Syracuse, Sicily",
+   "lat": 37.06,
+   "lng": 15.29,
+   "mode": "sea",
+   "path": [
+    [
+     14.5196,
+     35.8954
+    ],
+    [
+     15.1691,
+     36.6819
+    ],
+    [
+     15.3483,
+     36.9941
+    ],
+    [
+     15.3483,
+     37.0101
+    ],
+    [
+     15.3185,
+     37.0422
+    ],
+    [
+     15.29,
+     37.06
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.66
+  },
+  {
+   "day": 4,
+   "name": "Lipari, Aeolian Islands",
+   "lat": 38.4693,
+   "lng": 14.9565,
+   "mode": "sea",
+   "path": [
+    [
+     15.29,
+     37.06
+    ],
+    [
+     15.3097,
+     37.0705
+    ],
+    [
+     15.314,
+     37.0739
+    ],
+    [
+     15.6147,
+     38.228
+    ],
+    [
+     15.6191,
+     38.2349
+    ],
+    [
+     15.6278,
+     38.2418
+    ],
+    [
+     15.6539,
+     38.2521
+    ],
+    [
+     15.6627,
+     38.259
+    ],
+    [
+     15.6627,
+     38.2659
+    ],
+    [
+     15.6583,
+     38.2728
+    ],
+    [
+     15.6496,
+     38.2797
+    ],
+    [
+     15.0526,
+     38.4657
+    ],
+    [
+     14.9654,
+     38.4657
+    ],
+    [
+     14.9565,
+     38.4693
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.83
+  },
+  {
+   "day": 5,
+   "name": "Amalfi",
+   "lat": 40.6289,
+   "lng": 14.6073,
+   "mode": "sea",
+   "path": [
+    [
+     14.9565,
+     38.4693
+    ],
+    [
+     14.9842,
+     38.4643
+    ],
+    [
+     14.991,
+     38.4695
+    ],
+    [
+     14.6073,
+     40.6289
+    ]
+   ],
+   "charted": [
+    14.6026,
+    40.6337
+   ],
+   "lane": "sea",
+   "clear": 1.47
+  },
+  {
+   "day": 5,
+   "name": "Capri",
+   "lat": 40.5404,
+   "lng": 14.2347,
+   "mode": "sea",
+   "path": [
+    [
+     14.6073,
+     40.6289
+    ],
+    [
+     14.5852,
+     40.6075
+    ],
+    [
+     14.5792,
+     40.603
+    ],
+    [
+     14.5761,
+     40.6007
+    ],
+    [
+     14.2538,
+     40.532
+    ],
+    [
+     14.2478,
+     40.532
+    ],
+    [
+     14.2347,
+     40.5404
+    ]
+   ],
+   "charted": [
+    14.2284,
+    40.5488
+   ],
+   "lane": "sea",
+   "clear": 1.11
+  },
+  {
+   "day": 6,
+   "name": "Positano",
+   "lat": 40.6215,
+   "lng": 14.4855,
+   "mode": "sea",
+   "path": [
+    [
+     14.2347,
+     40.5404
+    ],
+    [
+     14.245,
+     40.5325
+    ],
+    [
+     14.2539,
+     40.5303
+    ],
+    [
+     14.3515,
+     40.5617
+    ],
+    [
+     14.4727,
+     40.6089
+    ],
+    [
+     14.4786,
+     40.6134
+    ],
+    [
+     14.4855,
+     40.6215
+    ]
+   ],
+   "charted": [
+    14.4855,
+    40.6287
+   ],
+   "lane": "sea",
+   "clear": 1.03
+  },
+  {
+   "day": 7,
+   "name": "Sorrento",
+   "lat": 40.6333,
+   "lng": 14.3701,
+   "mode": "sea",
+   "path": [
+    [
+     14.4855,
+     40.6215
+    ],
+    [
+     14.4781,
+     40.6136
+    ],
+    [
+     14.4722,
+     40.6091
+    ],
+    [
+     14.3449,
+     40.5597
+    ],
+    [
+     14.3302,
+     40.5575
+    ],
+    [
+     14.3242,
+     40.5575
+    ],
+    [
+     14.3183,
+     40.5597
+    ],
+    [
+     14.3124,
+     40.5642
+    ],
+    [
+     14.3065,
+     40.5777
+    ],
+    [
+     14.3035,
+     40.5934
+    ],
+    [
+     14.3272,
+     40.6316
+    ],
+    [
+     14.339,
+     40.6406
+    ],
+    [
+     14.3509,
+     40.6451
+    ],
+    [
+     14.3568,
+     40.6428
+    ],
+    [
+     14.3701,
+     40.6333
+    ]
+   ],
+   "charted": [
+    14.3748,
+    40.6249
+   ],
+   "lane": "sea",
+   "clear": 0.99
+  },
+  {
+   "day": 8,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "mode": "sea",
+   "path": [
+    [
+     14.3701,
+     40.6333
+    ],
+    [
+     14.0318,
+     40.7724
+    ],
+    [
+     13.0545,
+     41.2034
+    ],
+    [
+     12.6217,
+     41.4241
+    ],
+    [
+     12.3704,
+     41.6344
+    ],
+    [
+     12.3393,
+     41.6733
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ],
+   "lane": "sea",
+   "clear": 0.4
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

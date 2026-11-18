@@ -1,1 +1,550 @@
-{"id":"seadream-i-best-of-scotland-and-the-faroe-islands-2027-08-15","type":"voyage","destination":"scandinavia-northern-europe","title":"Best of Scotland & the Faroe Islands aboard SeaDream I","subtitle":"11 nights · Edinburgh (Leith) to Glasgow (Troon) · SeaDream I","days":{"1":"Edinburgh (Leith)","2":"Dundee","3":"Invergordon","4":"Invergordon","5":"Stromness","6":"Torshavn","7":"Vágur","8":"Portree","9":"Stornoway","10":"Castlebay","11":"Oban","12":"Glasgow (Troon)"},"stops":[{"day":1,"name":"Edinburgh (Leith), Scotland","lat":55.9533,"lng":-3.1884,"kind":"port"},{"day":2,"name":"Dundee, Scotland","lat":56.4606,"lng":-2.9702,"mode":"sea","path":[[-3.1884,55.9533],[-2.9702,56.4606]]},{"day":3,"name":"Invergordon, Scotland","lat":57.6884,"lng":-4.1692,"mode":"sea","path":[[-2.9702,56.4606],[-4.1692,57.6884]]},{"day":5,"name":"Stromness, Orkney, Scotland","lat":58.9614,"lng":-3.2994,"mode":"sea","path":[[-4.1692,57.6884],[-3.2994,58.9614]]},{"day":6,"name":"Torshavn","lat":62.0101,"lng":-6.7716,"mode":"sea","path":[[-3.2994,58.9614],[-6.7716,62.0101]]},{"day":7,"name":"Vágur, Faroe Islands","lat":61.4739,"lng":-6.8115,"mode":"sea","path":[[-6.7716,62.0101],[-6.8115,61.4739]]},{"day":8,"name":"Portree, Isle of Skye, Scotland","lat":57.4131,"lng":-6.1944,"mode":"sea","path":[[-6.8115,61.4739],[-6.1944,57.4131]]},{"day":9,"name":"Stornoway, Isle of Lewis, Scotland","lat":58.2154,"lng":-6.389,"mode":"sea","path":[[-6.1944,57.4131],[-6.389,58.2154]]},{"day":10,"name":"Castlebay, Isle of Barra, Scotland","lat":56.9563,"lng":-7.4973,"mode":"sea","path":[[-6.389,58.2154],[-7.4973,56.9563]]},{"day":11,"name":"Oban, Scotland","lat":56.412,"lng":-5.4724,"mode":"sea","path":[[-7.4973,56.9563],[-5.4724,56.412]]},{"day":12,"name":"Glasgow (Troon)","lat":55.8612,"lng":-4.2502,"mode":"sea","path":[[-5.4724,56.412],[-4.2502,55.8612]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-best-of-scotland-and-the-faroe-islands-2027-08-15",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "Best of Scotland & the Faroe Islands aboard SeaDream I",
+ "subtitle": "11 nights · Edinburgh (Leith) to Glasgow (Troon) · SeaDream I",
+ "days": {
+  "1": "Edinburgh (Leith)",
+  "2": "Dundee",
+  "3": "Invergordon",
+  "4": "Invergordon",
+  "5": "Stromness",
+  "6": "Torshavn",
+  "7": "Vágur",
+  "8": "Portree",
+  "9": "Stornoway",
+  "10": "Castlebay",
+  "11": "Oban",
+  "12": "Glasgow (Troon)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Edinburgh (Leith), Scotland",
+   "lat": 55.9844,
+   "lng": -3.2055,
+   "kind": "port",
+   "charted": [
+    -3.1884,
+    55.9533
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Dundee, Scotland",
+   "lat": 56.4546,
+   "lng": -2.9659,
+   "mode": "sea",
+   "path": [
+    [
+     -3.2055,
+     55.9844
+    ],
+    [
+     -3.2054,
+     55.9879
+    ],
+    [
+     -3.1868,
+     55.9971
+    ],
+    [
+     -3.1269,
+     56.0212
+    ],
+    [
+     -2.6824,
+     56.2166
+    ],
+    [
+     -2.5956,
+     56.258
+    ],
+    [
+     -2.5873,
+     56.2626
+    ],
+    [
+     -2.5749,
+     56.2764
+    ],
+    [
+     -2.5749,
+     56.281
+    ],
+    [
+     -2.794,
+     56.4454
+    ],
+    [
+     -2.8002,
+     56.4488
+    ],
+    [
+     -2.8106,
+     56.4511
+    ],
+    [
+     -2.885,
+     56.458
+    ],
+    [
+     -2.9511,
+     56.4557
+    ],
+    [
+     -2.9573,
+     56.4545
+    ],
+    [
+     -2.9659,
+     56.4546
+    ]
+   ],
+   "charted": [
+    -2.9702,
+    56.4606
+   ],
+   "lane": "sea",
+   "clear": 0.6
+  },
+  {
+   "day": 3,
+   "name": "Invergordon, Scotland",
+   "lat": 57.6812,
+   "lng": -4.167,
+   "mode": "sea",
+   "path": [
+    [
+     -2.9659,
+     56.4546
+    ],
+    [
+     -4.167,
+     57.6812
+    ]
+   ],
+   "charted": [
+    -4.1692,
+    57.6884
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 5,
+   "name": "Stromness, Orkney, Scotland",
+   "lat": 58.9554,
+   "lng": -3.2924,
+   "mode": "sea",
+   "path": [
+    [
+     -4.167,
+     57.6812
+    ],
+    [
+     -4.0363,
+     57.6876
+    ],
+    [
+     -4.0303,
+     57.6845
+    ],
+    [
+     -3.9829,
+     57.6845
+    ],
+    [
+     -3.971,
+     57.6876
+    ],
+    [
+     -3.6093,
+     57.9025
+    ],
+    [
+     -3.0992,
+     58.3666
+    ],
+    [
+     -3.0399,
+     58.4507
+    ],
+    [
+     -3.0162,
+     58.6562
+    ],
+    [
+     -3.0518,
+     58.8244
+    ],
+    [
+     -3.0577,
+     58.8556
+    ],
+    [
+     -3.1052,
+     58.8774
+    ],
+    [
+     -3.2119,
+     58.9054
+    ],
+    [
+     -3.2594,
+     58.9303
+    ],
+    [
+     -3.2653,
+     58.9366
+    ],
+    [
+     -3.2924,
+     58.9554
+    ]
+   ],
+   "charted": [
+    -3.2994,
+    58.9614
+   ],
+   "lane": "sea",
+   "clear": 0.31
+  },
+  {
+   "day": 6,
+   "name": "Torshavn",
+   "lat": 62.0065,
+   "lng": -6.7537,
+   "mode": "sea",
+   "path": [
+    [
+     -3.2924,
+     58.9554
+    ],
+    [
+     -3.3623,
+     58.9483
+    ],
+    [
+     -3.3926,
+     58.9632
+    ],
+    [
+     -6.7076,
+     61.9763
+    ],
+    [
+     -6.7537,
+     62.0065
+    ]
+   ],
+   "charted": [
+    -6.7716,
+    62.0101
+   ],
+   "lane": "sea",
+   "clear": 1.43
+  },
+  {
+   "day": 7,
+   "name": "Vágur, Faroe Islands",
+   "lat": 61.4667,
+   "lng": -6.7889,
+   "mode": "sea",
+   "path": [
+    [
+     -6.7537,
+     62.0065
+    ],
+    [
+     -6.7275,
+     61.98
+    ],
+    [
+     -6.6272,
+     61.8296
+    ],
+    [
+     -6.6968,
+     61.4879
+    ],
+    [
+     -6.6996,
+     61.4852
+    ],
+    [
+     -6.7247,
+     61.4734
+    ],
+    [
+     -6.7637,
+     61.4641
+    ],
+    [
+     -6.7889,
+     61.4667
+    ]
+   ],
+   "charted": [
+    -6.8115,
+    61.4739
+   ],
+   "lane": "sea",
+   "clear": 0.31
+  },
+  {
+   "day": 8,
+   "name": "Portree, Isle of Skye, Scotland",
+   "lat": 57.4035,
+   "lng": -6.1922,
+   "mode": "sea",
+   "path": [
+    [
+     -6.7889,
+     61.4667
+    ],
+    [
+     -6.7556,
+     61.461
+    ],
+    [
+     -6.7335,
+     61.4647
+    ],
+    [
+     -6.6893,
+     61.4535
+    ],
+    [
+     -6.6819,
+     61.4497
+    ],
+    [
+     -6.6746,
+     61.4385
+    ],
+    [
+     -6.1296,
+     58.2368
+    ],
+    [
+     -6.1296,
+     57.4392
+    ],
+    [
+     -6.1443,
+     57.4242
+    ],
+    [
+     -6.1922,
+     57.4035
+    ]
+   ],
+   "charted": [
+    -6.1944,
+    57.4131
+   ],
+   "lane": "sea",
+   "clear": 0.33
+  },
+  {
+   "day": 9,
+   "name": "Stornoway, Isle of Lewis, Scotland",
+   "lat": 58.1986,
+   "lng": -6.3754,
+   "mode": "sea",
+   "path": [
+    [
+     -6.1922,
+     57.4035
+    ],
+    [
+     -6.1892,
+     57.4075
+    ],
+    [
+     -6.1856,
+     57.4094
+    ],
+    [
+     -6.1746,
+     57.4094
+    ],
+    [
+     -6.1454,
+     57.425
+    ],
+    [
+     -6.1418,
+     57.4308
+    ],
+    [
+     -6.1345,
+     57.4677
+    ],
+    [
+     -6.1382,
+     57.9458
+    ],
+    [
+     -6.3754,
+     58.1986
+    ]
+   ],
+   "charted": [
+    -6.389,
+    58.2154
+   ],
+   "lane": "sea",
+   "clear": 0.15
+  },
+  {
+   "day": 10,
+   "name": "Castlebay, Isle of Barra, Scotland",
+   "lat": 56.9467,
+   "lng": -7.4951,
+   "mode": "sea",
+   "path": [
+    [
+     -6.3754,
+     58.1986
+    ],
+    [
+     -6.3649,
+     58.1893
+    ],
+    [
+     -6.3535,
+     58.0301
+    ],
+    [
+     -7.2266,
+     57.0937
+    ],
+    [
+     -7.3408,
+     56.9927
+    ],
+    [
+     -7.4492,
+     56.9407
+    ],
+    [
+     -7.4834,
+     56.9407
+    ],
+    [
+     -7.4951,
+     56.9467
+    ]
+   ],
+   "charted": [
+    -7.4973,
+    56.9563
+   ],
+   "lane": "sea",
+   "clear": 0.3
+  },
+  {
+   "day": 11,
+   "name": "Oban, Scotland",
+   "lat": 56.4156,
+   "lng": -5.4876,
+   "mode": "sea",
+   "path": [
+    [
+     -7.4951,
+     56.9467
+    ],
+    [
+     -7.4851,
+     56.9414
+    ],
+    [
+     -6.1209,
+     56.6556
+    ],
+    [
+     -6.0669,
+     56.6395
+    ],
+    [
+     -5.9589,
+     56.5748
+    ],
+    [
+     -5.9049,
+     56.5451
+    ],
+    [
+     -5.797,
+     56.5155
+    ],
+    [
+     -5.4927,
+     56.4238
+    ],
+    [
+     -5.4878,
+     56.4211
+    ],
+    [
+     -5.4876,
+     56.4156
+    ]
+   ],
+   "charted": [
+    -5.4724,
+    56.412
+   ],
+   "lane": "sea",
+   "clear": 0.05
+  },
+  {
+   "day": 12,
+   "name": "Glasgow (Troon)",
+   "lat": 54.9372,
+   "lng": -3.5357,
+   "mode": "sea",
+   "path": [
+    [
+     -5.4876,
+     56.4156
+    ],
+    [
+     -3.5357,
+     54.9372
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -4.2502,
+    55.8612
+   ],
+   "lane": "passage"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

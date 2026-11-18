@@ -1,1 +1,274 @@
-{"id":"seadream-iii-iberia-and-the-bay-of-biscay-2030-05-17","type":"voyage","destination":"scandinavia-northern-europe","title":"Iberia & the Bay of Biscay aboard SeaDream III","subtitle":"8 nights · Lisbon to London · SeaDream III","days":{"1":"Lisbon","2":"Porto","3":"At sea","4":"Bordeaux","5":"Bordeaux","6":"La Rochelle","7":"Guernsey","8":"Cowes","9":"London"},"stops":[{"day":1,"name":"Lisbon","lat":38.7078,"lng":-9.1366,"kind":"port"},{"day":2,"name":"Porto","lat":41.1502,"lng":-8.6103,"mode":"sea","path":[[-9.1366,38.7078],[-8.6103,41.1502]]},{"day":4,"name":"Bordeaux","lat":44.8412,"lng":-0.58,"mode":"sea","path":[[-8.6103,41.1502],[-0.58,44.8412]]},{"day":6,"name":"La Rochelle","lat":46.1597,"lng":-1.1516,"mode":"sea","path":[[-0.58,44.8412],[-1.1516,46.1597]]},{"day":7,"name":"Guernsey, Channel Islands","lat":49.455,"lng":-2.535,"mode":"sea","path":[[-1.1516,46.1597],[-2.535,49.455]]},{"day":8,"name":"Cowes, Isle of Wight","lat":50.7633,"lng":-1.2985,"mode":"sea","path":[[-2.535,49.455],[-1.2985,50.7633]]},{"day":9,"name":"London","lat":51.5074,"lng":-0.1278,"mode":"sea","path":[[-1.2985,50.7633],[-0.1278,51.5074]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-iii-iberia-and-the-bay-of-biscay-2030-05-17",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "Iberia & the Bay of Biscay aboard SeaDream III",
+ "subtitle": "8 nights · Lisbon to London · SeaDream III",
+ "days": {
+  "1": "Lisbon",
+  "2": "Porto",
+  "3": "At sea",
+  "4": "Bordeaux",
+  "5": "Bordeaux",
+  "6": "La Rochelle",
+  "7": "Guernsey",
+  "8": "Cowes",
+  "9": "London"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Lisbon",
+   "lat": 38.7078,
+   "lng": -9.1366,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Porto",
+   "lat": 41.1454,
+   "lng": -8.6548,
+   "mode": "sea",
+   "path": [
+    [
+     -9.1366,
+     38.7078
+    ],
+    [
+     -8.6548,
+     41.1454
+    ]
+   ],
+   "charted": [
+    -8.6103,
+    41.1502
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 4,
+   "name": "Bordeaux",
+   "lat": 45.335,
+   "lng": -0.7659,
+   "mode": "sea",
+   "path": [
+    [
+     -8.6548,
+     41.1454
+    ],
+    [
+     -0.7659,
+     45.335
+    ]
+   ],
+   "charted": [
+    -0.58,
+    44.8412
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 6,
+   "name": "La Rochelle",
+   "lat": 46.1489,
+   "lng": -1.1775,
+   "mode": "sea",
+   "path": [
+    [
+     -0.7659,
+     45.335
+    ],
+    [
+     -1.0554,
+     45.5713
+    ],
+    [
+     -1.1757,
+     45.6384
+    ],
+    [
+     -1.2398,
+     45.6608
+    ],
+    [
+     -1.2478,
+     45.6664
+    ],
+    [
+     -1.4082,
+     45.9518
+    ],
+    [
+     -1.4322,
+     46.0413
+    ],
+    [
+     -1.4322,
+     46.0469
+    ],
+    [
+     -1.4162,
+     46.0581
+    ],
+    [
+     -1.1997,
+     46.1308
+    ],
+    [
+     -1.1775,
+     46.1489
+    ]
+   ],
+   "charted": [
+    -1.1516,
+    46.1597
+   ],
+   "lane": "sea",
+   "clear": 0.77
+  },
+  {
+   "day": 7,
+   "name": "Guernsey, Channel Islands",
+   "lat": 49.4598,
+   "lng": -2.5239,
+   "mode": "sea",
+   "path": [
+    [
+     -1.1775,
+     46.1489
+    ],
+    [
+     -2.5239,
+     49.4598
+    ]
+   ],
+   "charted": [
+    -2.535,
+    49.455
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 8,
+   "name": "Cowes, Isle of Wight",
+   "lat": 50.7669,
+   "lng": -1.2928,
+   "mode": "sea",
+   "path": [
+    [
+     -2.5239,
+     49.4598
+    ],
+    [
+     -2.5037,
+     49.4663
+    ],
+    [
+     -1.7813,
+     49.9808
+    ],
+    [
+     -1.7115,
+     50.0574
+    ],
+    [
+     -1.4524,
+     50.3322
+    ],
+    [
+     -1.0588,
+     50.6805
+    ],
+    [
+     -1.0588,
+     50.6901
+    ],
+    [
+     -1.0987,
+     50.722
+    ],
+    [
+     -1.1086,
+     50.7284
+    ],
+    [
+     -1.2681,
+     50.7731
+    ],
+    [
+     -1.278,
+     50.7731
+    ],
+    [
+     -1.2928,
+     50.7669
+    ]
+   ],
+   "charted": [
+    -1.2985,
+    50.7633
+   ],
+   "lane": "sea",
+   "clear": 0.73
+  },
+  {
+   "day": 9,
+   "name": "London",
+   "lat": 50.7496,
+   "lng": -0.6781,
+   "mode": "sea",
+   "path": [
+    [
+     -1.2928,
+     50.7669
+    ],
+    [
+     -1.2792,
+     50.7769
+    ],
+    [
+     -0.7932,
+     50.7101
+    ],
+    [
+     -0.7889,
+     50.7101
+    ],
+    [
+     -0.6781,
+     50.7496
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -0.1278,
+    51.5074
+   ],
+   "lane": "sea",
+   "clear": 1.18
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

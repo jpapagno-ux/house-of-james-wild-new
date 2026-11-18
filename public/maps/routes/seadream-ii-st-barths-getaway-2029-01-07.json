@@ -1,1 +1,315 @@
-{"id":"seadream-ii-st-barths-getaway-2029-01-07","type":"voyage","destination":"caribbean","title":"St. Barths Getaway aboard SeaDream II","subtitle":"7 nights · Charlotte Amalie round trip · SeaDream II","days":{"1":"Charlotte Amalie","2":"North Sound","3":"White Bay","4":"Gustavia","5":"Gustavia","6":"Gustavia","7":"Cruz Bay","8":"Charlotte Amalie"},"stops":[{"day":1,"name":"Charlotte Amalie, St. Thomas","lat":18.3429,"lng":-64.9189,"kind":"port"},{"day":2,"name":"North Sound, Virgin Gorda","lat":18.4794,"lng":-64.4002,"mode":"sea","path":[[-64.9189,18.3429],[-64.4002,18.4794]]},{"day":3,"name":"White Bay, Jost van Dyke","lat":18.4428,"lng":-64.7629,"mode":"sea","path":[[-64.4002,18.4794],[-64.7629,18.4428]]},{"day":4,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-64.7629,18.4428],[-62.8508,17.8957]]},{"day":7,"name":"Cruz Bay, St. John","lat":18.3356,"lng":-64.755,"mode":"sea","path":[[-62.8508,17.8957],[-64.755,18.3356]]},{"day":8,"name":"Charlotte Amalie, St. Thomas","lat":18.3429,"lng":-64.9189,"mode":"sea","path":[[-64.755,18.3356],[-64.9189,18.3429]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-st-barths-getaway-2029-01-07",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "St. Barths Getaway aboard SeaDream II",
+ "subtitle": "7 nights · Charlotte Amalie round trip · SeaDream II",
+ "days": {
+  "1": "Charlotte Amalie",
+  "2": "North Sound",
+  "3": "White Bay",
+  "4": "Gustavia",
+  "5": "Gustavia",
+  "6": "Gustavia",
+  "7": "Cruz Bay",
+  "8": "Charlotte Amalie"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Charlotte Amalie, St. Thomas",
+   "lat": 18.3345,
+   "lng": -64.9277,
+   "kind": "port",
+   "charted": [
+    -64.9189,
+    18.3429
+   ]
+  },
+  {
+   "day": 2,
+   "name": "North Sound, Virgin Gorda",
+   "lat": 18.4758,
+   "lng": -64.3863,
+   "mode": "sea",
+   "path": [
+    [
+     -64.9277,
+     18.3345
+    ],
+    [
+     -64.9306,
+     18.3282
+    ],
+    [
+     -64.9269,
+     18.3247
+    ],
+    [
+     -64.9269,
+     18.3176
+    ],
+    [
+     -64.9231,
+     18.3141
+    ],
+    [
+     -64.8822,
+     18.2965
+    ],
+    [
+     -64.7817,
+     18.2929
+    ],
+    [
+     -64.7035,
+     18.2929
+    ],
+    [
+     -64.6142,
+     18.353
+    ],
+    [
+     -64.4244,
+     18.4271
+    ],
+    [
+     -64.3834,
+     18.466
+    ],
+    [
+     -64.3863,
+     18.4758
+    ]
+   ],
+   "charted": [
+    -64.4002,
+    18.4794
+   ],
+   "lane": "sea",
+   "clear": 0.1
+  },
+  {
+   "day": 3,
+   "name": "White Bay, Jost van Dyke",
+   "lat": 18.4368,
+   "lng": -64.7629,
+   "mode": "sea",
+   "path": [
+    [
+     -64.3863,
+     18.4758
+    ],
+    [
+     -64.3767,
+     18.468
+    ],
+    [
+     -64.3767,
+     18.463
+    ],
+    [
+     -64.4218,
+     18.4201
+    ],
+    [
+     -64.4484,
+     18.4151
+    ],
+    [
+     -64.4723,
+     18.4378
+    ],
+    [
+     -64.4909,
+     18.473
+    ],
+    [
+     -64.5148,
+     18.4957
+    ],
+    [
+     -64.5308,
+     18.5033
+    ],
+    [
+     -64.5786,
+     18.5008
+    ],
+    [
+     -64.722,
+     18.4252
+    ],
+    [
+     -64.7406,
+     18.4226
+    ],
+    [
+     -64.7513,
+     18.4277
+    ],
+    [
+     -64.7629,
+     18.4368
+    ]
+   ],
+   "charted": [
+    -64.7629,
+    18.4428
+   ],
+   "lane": "sea",
+   "clear": 0.85
+  },
+  {
+   "day": 4,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7629,
+     18.4368
+    ],
+    [
+     -64.7487,
+     18.4202
+    ],
+    [
+     -64.7254,
+     18.4202
+    ],
+    [
+     -64.5903,
+     18.4955
+    ],
+    [
+     -64.5763,
+     18.4999
+    ],
+    [
+     -64.3574,
+     18.5398
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ],
+   "lane": "sea",
+   "clear": 1.11
+  },
+  {
+   "day": 7,
+   "name": "Cruz Bay, St. John",
+   "lat": 18.3176,
+   "lng": -64.7474,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -64.7056,
+     18.2844
+    ],
+    [
+     -64.7241,
+     18.2932
+    ],
+    [
+     -64.7426,
+     18.3107
+    ],
+    [
+     -64.7474,
+     18.3176
+    ]
+   ],
+   "charted": [
+    -64.755,
+    18.3356
+   ],
+   "lane": "sea",
+   "clear": 0.95
+  },
+  {
+   "day": 8,
+   "name": "Charlotte Amalie, St. Thomas",
+   "lat": 18.3345,
+   "lng": -64.9277,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7474,
+     18.3176
+    ],
+    [
+     -64.768,
+     18.3075
+    ],
+    [
+     -64.8248,
+     18.3052
+    ],
+    [
+     -64.8272,
+     18.303
+    ],
+    [
+     -64.8437,
+     18.3008
+    ],
+    [
+     -64.8887,
+     18.2985
+    ],
+    [
+     -64.9242,
+     18.3165
+    ],
+    [
+     -64.9265,
+     18.3187
+    ],
+    [
+     -64.9289,
+     18.3322
+    ],
+    [
+     -64.9277,
+     18.3345
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -64.9189,
+    18.3429
+   ],
+   "lane": "sea",
+   "clear": 0.07
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,1 +1,312 @@
-{"id":"seadream-ii-best-of-st-barths-and-the-virgin-isles-2029-03-18","type":"voyage","destination":"caribbean","title":"Best of St. Barths & the Virgin Isles aboard SeaDream II","subtitle":"7 nights · Charlotte Amalie to San Juan · SeaDream II","days":{"1":"Charlotte Amalie","2":"Gustavia","3":"Gustavia","4":"Gustavia","5":"Spanish Town and North Sound","6":"Norman Island","7":"White Bay","8":"San Juan"},"stops":[{"day":1,"name":"Charlotte Amalie, St. Thomas","lat":18.3429,"lng":-64.9189,"kind":"port"},{"day":2,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-64.9189,18.3429],[-62.8508,17.8957]]},{"day":5,"name":"Spanish Town, Virgin Gorda","lat":18.4464,"lng":-64.4346,"mode":"sea","path":[[-62.8508,17.8957],[-64.4346,18.4464]]},{"day":5,"name":"North Sound, Virgin Gorda","lat":18.4794,"lng":-64.4002,"mode":"sea","path":[[-64.4346,18.4464],[-64.4002,18.4794]]},{"day":6,"name":"Norman Island","lat":18.3156,"lng":-64.6132,"mode":"sea","path":[[-64.4002,18.4794],[-64.6132,18.3156]]},{"day":7,"name":"White Bay, Jost van Dyke","lat":18.4428,"lng":-64.7629,"mode":"sea","path":[[-64.6132,18.3156],[-64.7629,18.4428]]},{"day":8,"name":"San Juan","lat":18.46,"lng":-66.11,"mode":"sea","path":[[-64.7629,18.4428],[-66.11,18.46]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-best-of-st-barths-and-the-virgin-isles-2029-03-18",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Best of St. Barths & the Virgin Isles aboard SeaDream II",
+ "subtitle": "7 nights · Charlotte Amalie to San Juan · SeaDream II",
+ "days": {
+  "1": "Charlotte Amalie",
+  "2": "Gustavia",
+  "3": "Gustavia",
+  "4": "Gustavia",
+  "5": "Spanish Town and North Sound",
+  "6": "Norman Island",
+  "7": "White Bay",
+  "8": "San Juan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Charlotte Amalie, St. Thomas",
+   "lat": 18.3345,
+   "lng": -64.9277,
+   "kind": "port",
+   "charted": [
+    -64.9189,
+    18.3429
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -64.9277,
+     18.3345
+    ],
+    [
+     -64.9275,
+     18.3169
+    ],
+    [
+     -64.9325,
+     18.312
+    ],
+    [
+     -64.9275,
+     18.3072
+    ],
+    [
+     -64.8667,
+     18.2832
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ],
+   "lane": "sea",
+   "clear": 0.57
+  },
+  {
+   "day": 5,
+   "name": "Spanish Town, Virgin Gorda",
+   "lat": 18.45,
+   "lng": -64.4422,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -64.4422,
+     18.45
+    ]
+   ],
+   "charted": [
+    -64.4346,
+    18.4464
+   ]
+  },
+  {
+   "day": 5,
+   "name": "North Sound, Virgin Gorda",
+   "lat": 18.4758,
+   "lng": -64.3863,
+   "mode": "sea",
+   "path": [
+    [
+     -64.4422,
+     18.45
+    ],
+    [
+     -64.4529,
+     18.4489
+    ],
+    [
+     -64.4552,
+     18.4466
+    ],
+    [
+     -64.4576,
+     18.4399
+    ],
+    [
+     -64.4576,
+     18.4242
+    ],
+    [
+     -64.4552,
+     18.4197
+    ],
+    [
+     -64.4505,
+     18.4152
+    ],
+    [
+     -64.4434,
+     18.4129
+    ],
+    [
+     -64.4197,
+     18.4219
+    ],
+    [
+     -64.3795,
+     18.4624
+    ],
+    [
+     -64.3795,
+     18.4646
+    ],
+    [
+     -64.3818,
+     18.4668
+    ],
+    [
+     -64.3863,
+     18.4758
+    ]
+   ],
+   "charted": [
+    -64.4002,
+    18.4794
+   ],
+   "lane": "sea",
+   "clear": 0.57
+  },
+  {
+   "day": 6,
+   "name": "Norman Island",
+   "lat": 18.312,
+   "lng": -64.6069,
+   "mode": "sea",
+   "path": [
+    [
+     -64.3863,
+     18.4758
+    ],
+    [
+     -64.3761,
+     18.4658
+    ],
+    [
+     -64.3785,
+     18.4613
+    ],
+    [
+     -64.4187,
+     18.4209
+    ],
+    [
+     -64.4708,
+     18.3693
+    ],
+    [
+     -64.582,
+     18.3086
+    ],
+    [
+     -64.5915,
+     18.3041
+    ],
+    [
+     -64.6069,
+     18.312
+    ]
+   ],
+   "charted": [
+    -64.6132,
+    18.3156
+   ],
+   "lane": "sea",
+   "clear": 1.15
+  },
+  {
+   "day": 7,
+   "name": "White Bay, Jost van Dyke",
+   "lat": 18.4368,
+   "lng": -64.7629,
+   "mode": "sea",
+   "path": [
+    [
+     -64.6069,
+     18.312
+    ],
+    [
+     -64.6032,
+     18.3019
+    ],
+    [
+     -64.6079,
+     18.2974
+    ],
+    [
+     -64.615,
+     18.2952
+    ],
+    [
+     -64.7168,
+     18.2862
+    ],
+    [
+     -64.783,
+     18.2974
+    ],
+    [
+     -64.7972,
+     18.3041
+    ],
+    [
+     -64.8043,
+     18.3109
+    ],
+    [
+     -64.8114,
+     18.3244
+    ],
+    [
+     -64.8256,
+     18.3603
+    ],
+    [
+     -64.8232,
+     18.3648
+    ],
+    [
+     -64.7629,
+     18.4368
+    ]
+   ],
+   "charted": [
+    -64.7629,
+    18.4428
+   ],
+   "lane": "sea",
+   "clear": 1.07
+  },
+  {
+   "day": 8,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7629,
+     18.4368
+    ],
+    [
+     -64.8298,
+     18.4652
+    ],
+    [
+     -66.0708,
+     18.4739
+    ],
+    [
+     -66.11,
+     18.46
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.42
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

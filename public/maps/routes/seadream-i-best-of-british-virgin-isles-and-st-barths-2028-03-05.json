@@ -1,1 +1,451 @@
-{"id":"seadream-i-best-of-british-virgin-isles-and-st-barths-2028-03-05","type":"voyage","destination":"caribbean","title":"Best of British Virgin Isles & St. Barths aboard SeaDream I","subtitle":"7 nights · Philipsburg round trip · SeaDream I","days":{"1":"Philipsburg","2":"Sint Eustatius and Gustavia","3":"Gustavia","4":"Spanish Town and Leverick Bay","5":"Norman Island","6":"Prickly Pear and Trellis Bay","7":"Sandy Ground","8":"Philipsburg"},"stops":[{"day":1,"name":"Philipsburg","lat":18.0251,"lng":-63.0483,"kind":"port"},{"day":2,"name":"Sint Eustatius","lat":17.5085,"lng":-62.9955,"mode":"sea","path":[[-63.0483,18.0251],[-62.9955,17.5085]]},{"day":2,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-62.9955,17.5085],[-62.8508,17.8957]]},{"day":4,"name":"Spanish Town, Virgin Gorda","lat":18.4464,"lng":-64.4346,"mode":"sea","path":[[-62.8508,17.8957],[-64.4346,18.4464]]},{"day":4,"name":"Leverick Bay, Virgin Gorda","lat":18.4972,"lng":-64.3845,"mode":"sea","path":[[-64.4346,18.4464],[-64.3845,18.4972]]},{"day":5,"name":"Norman Island","lat":18.3156,"lng":-64.6132,"mode":"sea","path":[[-64.3845,18.4972],[-64.6132,18.3156]]},{"day":6,"name":"Prickly Pear","lat":18.508,"lng":-64.3687,"mode":"sea","path":[[-64.6132,18.3156],[-64.3687,18.508]]},{"day":6,"name":"Trellis Bay, Beef Island","lat":18.4464,"lng":-64.5328,"mode":"sea","path":[[-64.3687,18.508],[-64.5328,18.4464]]},{"day":7,"name":"Sandy Ground","lat":18.1998,"lng":-63.0902,"mode":"sea","path":[[-64.5328,18.4464],[-63.0902,18.1998]]},{"day":8,"name":"Philipsburg","lat":18.0251,"lng":-63.0483,"mode":"sea","path":[[-63.0902,18.1998],[-63.0483,18.0251]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-best-of-british-virgin-isles-and-st-barths-2028-03-05",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Best of British Virgin Isles & St. Barths aboard SeaDream I",
+ "subtitle": "7 nights · Philipsburg round trip · SeaDream I",
+ "days": {
+  "1": "Philipsburg",
+  "2": "Sint Eustatius and Gustavia",
+  "3": "Gustavia",
+  "4": "Spanish Town and Leverick Bay",
+  "5": "Norman Island",
+  "6": "Prickly Pear and Trellis Bay",
+  "7": "Sandy Ground",
+  "8": "Philipsburg"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Philipsburg",
+   "lat": 18.0191,
+   "lng": -63.0521,
+   "kind": "port",
+   "charted": [
+    -63.0483,
+    18.0251
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Sint Eustatius",
+   "lat": 17.5109,
+   "lng": -63.0068,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0521,
+     18.0191
+    ],
+    [
+     -63.0068,
+     17.5109
+    ]
+   ],
+   "charted": [
+    -62.9955,
+    17.5085
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0068,
+     17.5109
+    ],
+    [
+     -63.0117,
+     17.5273
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ],
+   "lane": "sea",
+   "clear": 1.45
+  },
+  {
+   "day": 4,
+   "name": "Spanish Town, Virgin Gorda",
+   "lat": 18.45,
+   "lng": -64.4422,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -64.4422,
+     18.45
+    ]
+   ],
+   "charted": [
+    -64.4346,
+    18.4464
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Leverick Bay, Virgin Gorda",
+   "lat": 18.4972,
+   "lng": -64.3845,
+   "mode": "sea",
+   "path": [
+    [
+     -64.4422,
+     18.45
+    ],
+    [
+     -64.4505,
+     18.4534
+    ],
+    [
+     -64.4529,
+     18.4556
+    ],
+    [
+     -64.4529,
+     18.4601
+    ],
+    [
+     -64.4244,
+     18.505
+    ],
+    [
+     -64.4197,
+     18.5095
+    ],
+    [
+     -64.3937,
+     18.5207
+    ],
+    [
+     -64.3889,
+     18.5207
+    ],
+    [
+     -64.3842,
+     18.5163
+    ],
+    [
+     -64.3845,
+     18.4972
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.58
+  },
+  {
+   "day": 5,
+   "name": "Norman Island",
+   "lat": 18.312,
+   "lng": -64.6069,
+   "mode": "sea",
+   "path": [
+    [
+     -64.3845,
+     18.4972
+    ],
+    [
+     -64.3832,
+     18.5175
+    ],
+    [
+     -64.388,
+     18.522
+    ],
+    [
+     -64.3998,
+     18.5197
+    ],
+    [
+     -64.4045,
+     18.5175
+    ],
+    [
+     -64.4187,
+     18.5085
+    ],
+    [
+     -64.4424,
+     18.4838
+    ],
+    [
+     -64.4448,
+     18.4793
+    ],
+    [
+     -64.5418,
+     18.3738
+    ],
+    [
+     -64.5584,
+     18.3266
+    ],
+    [
+     -64.5655,
+     18.3199
+    ],
+    [
+     -64.5891,
+     18.3086
+    ],
+    [
+     -64.6069,
+     18.312
+    ]
+   ],
+   "charted": [
+    -64.6132,
+    18.3156
+   ],
+   "lane": "sea",
+   "clear": 0.58
+  },
+  {
+   "day": 6,
+   "name": "Prickly Pear",
+   "lat": 18.5104,
+   "lng": -64.3636,
+   "mode": "sea",
+   "path": [
+    [
+     -64.6069,
+     18.312
+    ],
+    [
+     -64.5915,
+     18.3041
+    ],
+    [
+     -64.5607,
+     18.3199
+    ],
+    [
+     -64.556,
+     18.3244
+    ],
+    [
+     -64.5536,
+     18.3311
+    ],
+    [
+     -64.5465,
+     18.3715
+    ],
+    [
+     -64.5442,
+     18.376
+    ],
+    [
+     -64.44,
+     18.4793
+    ],
+    [
+     -64.4258,
+     18.5063
+    ],
+    [
+     -64.4164,
+     18.5152
+    ],
+    [
+     -64.3903,
+     18.5265
+    ],
+    [
+     -64.3572,
+     18.5399
+    ],
+    [
+     -64.3525,
+     18.5377
+    ],
+    [
+     -64.3454,
+     18.531
+    ],
+    [
+     -64.343,
+     18.5265
+    ],
+    [
+     -64.3454,
+     18.522
+    ],
+    [
+     -64.3525,
+     18.5152
+    ],
+    [
+     -64.3636,
+     18.5104
+    ]
+   ],
+   "charted": [
+    -64.3687,
+    18.508
+   ],
+   "lane": "sea",
+   "clear": 0.91
+  },
+  {
+   "day": 6,
+   "name": "Trellis Bay, Beef Island",
+   "lat": 18.4464,
+   "lng": -64.5328,
+   "mode": "sea",
+   "path": [
+    [
+     -64.3636,
+     18.5104
+    ],
+    [
+     -64.3635,
+     18.5149
+    ],
+    [
+     -64.3682,
+     18.5194
+    ],
+    [
+     -64.3966,
+     18.5216
+    ],
+    [
+     -64.4629,
+     18.4902
+    ],
+    [
+     -64.4985,
+     18.461
+    ],
+    [
+     -64.5292,
+     18.4565
+    ],
+    [
+     -64.5316,
+     18.4543
+    ],
+    [
+     -64.5328,
+     18.4464
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.6
+  },
+  {
+   "day": 7,
+   "name": "Sandy Ground",
+   "lat": 18.1998,
+   "lng": -63.0978,
+   "mode": "sea",
+   "path": [
+    [
+     -64.5328,
+     18.4464
+    ],
+    [
+     -64.4516,
+     18.408
+    ],
+    [
+     -63.0978,
+     18.1998
+    ]
+   ],
+   "charted": [
+    -63.0902,
+    18.1998
+   ],
+   "lane": "sea",
+   "clear": 2.07
+  },
+  {
+   "day": 8,
+   "name": "Philipsburg",
+   "lat": 18.0191,
+   "lng": -63.0521,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0978,
+     18.1998
+    ],
+    [
+     -63.1344,
+     18.1976
+    ],
+    [
+     -63.1651,
+     18.1774
+    ],
+    [
+     -63.1817,
+     18.1617
+    ],
+    [
+     -63.1604,
+     18.0584
+    ],
+    [
+     -63.125,
+     18.027
+    ],
+    [
+     -63.0612,
+     18.0045
+    ],
+    [
+     -63.0588,
+     18.0045
+    ],
+    [
+     -63.0541,
+     18.009
+    ],
+    [
+     -63.0521,
+     18.0191
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -63.0483,
+    18.0251
+   ],
+   "lane": "sea",
+   "clear": 0.74
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

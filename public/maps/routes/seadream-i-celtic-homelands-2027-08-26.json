@@ -1,1 +1,295 @@
-{"id":"seadream-i-celtic-homelands-2027-08-26","type":"voyage","destination":"scandinavia-northern-europe","title":"Celtic Homelands aboard SeaDream I","subtitle":"7 nights · Glasgow (Troon) to Dublin (Dún Laoghaire) · SeaDream I","days":{"1":"Glasgow (Troon)","2":"Port Ellen","3":"Portrush","4":"Belfast","5":"Whitehaven","6":"Port Douglas","7":"Warrenpoint","8":"Dublin (Dún Laoghaire)"},"stops":[{"day":1,"name":"Glasgow (Troon)","lat":55.8612,"lng":-4.2502,"kind":"port"},{"day":2,"name":"Port Ellen, Isle of Islay, Scotland","lat":55.6312,"lng":-6.1882,"mode":"sea","path":[[-4.2502,55.8612],[-6.1882,55.6312]]},{"day":3,"name":"Portrush, Northern Ireland","lat":55.2045,"lng":-6.6529,"mode":"sea","path":[[-6.1882,55.6312],[-6.6529,55.2045]]},{"day":4,"name":"Belfast, Northern Ireland","lat":54.5964,"lng":-5.9302,"mode":"sea","path":[[-6.6529,55.2045],[-5.9302,54.5964]]},{"day":5,"name":"Whitehaven","lat":54.5474,"lng":-3.5885,"mode":"sea","path":[[-5.9302,54.5964],[-3.5885,54.5474]]},{"day":6,"name":"Port Douglas, Isle of Man","lat":54.15,"lng":-4.48,"mode":"sea","path":[[-3.5885,54.5474],[-4.48,54.15]]},{"day":7,"name":"Warrenpoint, Northern Ireland","lat":54.1,"lng":-6.2513,"mode":"sea","path":[[-4.48,54.15],[-6.2513,54.1]]},{"day":8,"name":"Dublin (Dún Laoghaire)","lat":53.3494,"lng":-6.2606,"mode":"sea","path":[[-6.2513,54.1],[-6.2606,53.3494]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-celtic-homelands-2027-08-26",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "Celtic Homelands aboard SeaDream I",
+ "subtitle": "7 nights · Glasgow (Troon) to Dublin (Dún Laoghaire) · SeaDream I",
+ "days": {
+  "1": "Glasgow (Troon)",
+  "2": "Port Ellen",
+  "3": "Portrush",
+  "4": "Belfast",
+  "5": "Whitehaven",
+  "6": "Port Douglas",
+  "7": "Warrenpoint",
+  "8": "Dublin (Dún Laoghaire)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Glasgow (Troon)",
+   "lat": 54.9372,
+   "lng": -3.5357,
+   "kind": "port",
+   "charted": [
+    -4.2502,
+    55.8612
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Port Ellen, Isle of Islay, Scotland",
+   "lat": 55.6276,
+   "lng": -6.1988,
+   "mode": "sea",
+   "path": [
+    [
+     -3.5357,
+     54.9372
+    ],
+    [
+     -6.1988,
+     55.6276
+    ]
+   ],
+   "charted": [
+    -6.1882,
+    55.6312
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 3,
+   "name": "Portrush, Northern Ireland",
+   "lat": 55.2093,
+   "lng": -6.6466,
+   "mode": "sea",
+   "path": [
+    [
+     -6.1988,
+     55.6276
+    ],
+    [
+     -6.6466,
+     55.2093
+    ]
+   ],
+   "charted": [
+    -6.6529,
+    55.2045
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Belfast, Northern Ireland",
+   "lat": 54.6395,
+   "lng": -5.893,
+   "mode": "sea",
+   "path": [
+    [
+     -6.6466,
+     55.2093
+    ],
+    [
+     -5.893,
+     54.6395
+    ]
+   ],
+   "charted": [
+    -5.9302,
+    54.5964
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 5,
+   "name": "Whitehaven",
+   "lat": 54.5558,
+   "lng": -3.5988,
+   "mode": "sea",
+   "path": [
+    [
+     -5.893,
+     54.6395
+    ],
+    [
+     -5.8591,
+     54.6534
+    ],
+    [
+     -5.7469,
+     54.6859
+    ],
+    [
+     -5.5058,
+     54.7086
+    ],
+    [
+     -4.8777,
+     54.6209
+    ],
+    [
+     -3.5988,
+     54.5558
+    ]
+   ],
+   "charted": [
+    -3.5885,
+    54.5474
+   ],
+   "lane": "sea",
+   "clear": 0.99
+  },
+  {
+   "day": 6,
+   "name": "Port Douglas, Isle of Man",
+   "lat": 54.1524,
+   "lng": -4.4698,
+   "mode": "sea",
+   "path": [
+    [
+     -3.5988,
+     54.5558
+    ],
+    [
+     -3.6181,
+     54.551
+    ],
+    [
+     -4.4205,
+     54.1567
+    ],
+    [
+     -4.4698,
+     54.1524
+    ]
+   ],
+   "charted": [
+    -4.48,
+    54.15
+   ],
+   "lane": "sea",
+   "clear": 1.16
+  },
+  {
+   "day": 7,
+   "name": "Warrenpoint, Northern Ireland",
+   "lat": 54.094,
+   "lng": -6.2452,
+   "mode": "sea",
+   "path": [
+    [
+     -4.4698,
+     54.1524
+    ],
+    [
+     -4.4604,
+     54.1385
+    ],
+    [
+     -4.6313,
+     54.0456
+    ],
+    [
+     -4.8632,
+     54.0312
+    ],
+    [
+     -6.0715,
+     54.0098
+    ],
+    [
+     -6.1448,
+     54.0456
+    ],
+    [
+     -6.1936,
+     54.0599
+    ],
+    [
+     -6.2452,
+     54.094
+    ]
+   ],
+   "charted": [
+    -6.2513,
+    54.1
+   ],
+   "lane": "sea",
+   "clear": 0.38
+  },
+  {
+   "day": 8,
+   "name": "Dublin (Dún Laoghaire)",
+   "lat": 53.3314,
+   "lng": -6.2044,
+   "mode": "sea",
+   "path": [
+    [
+     -6.2452,
+     54.094
+    ],
+    [
+     -6.1723,
+     54.0509
+    ],
+    [
+     -6.1369,
+     54.0404
+    ],
+    [
+     -6.1192,
+     54.0299
+    ],
+    [
+     -6.0926,
+     53.9984
+    ],
+    [
+     -6.0572,
+     53.4794
+    ],
+    [
+     -6.0306,
+     53.3693
+    ],
+    [
+     -6.0394,
+     53.3588
+    ],
+    [
+     -6.0572,
+     53.3483
+    ],
+    [
+     -6.1635,
+     53.3326
+    ],
+    [
+     -6.2044,
+     53.3314
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -6.2606,
+    53.3494
+   ],
+   "lane": "sea",
+   "clear": 0.7
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

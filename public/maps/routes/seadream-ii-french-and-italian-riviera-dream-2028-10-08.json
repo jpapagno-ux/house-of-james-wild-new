@@ -1,1 +1,323 @@
-{"id":"seadream-ii-french-and-italian-riviera-dream-2028-10-08","type":"voyage","destination":"mediterranean","title":"French & Italian Riviera Dream aboard SeaDream II","subtitle":"7 nights · Rome (Civitavecchia) to Nice · SeaDream II","days":{"1":"Rome (Civitavecchia)","2":"Porto Ercole","3":"Portoferraio","4":"Portovenere (Cinque Terre)","5":"Portofino","6":"St. Tropez","7":"Monte Carlo","8":"Nice"},"stops":[{"day":1,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"kind":"port"},{"day":2,"name":"Porto Ercole","lat":42.396,"lng":11.2025,"mode":"sea","path":[[12.4829,41.8933],[11.2025,42.396]]},{"day":3,"name":"Portoferraio, Elba","lat":42.7484,"lng":10.235,"mode":"sea","path":[[11.2025,42.396],[10.235,42.7484]]},{"day":4,"name":"Portovenere (Cinque Terre)","lat":44.0507,"lng":9.8345,"mode":"sea","path":[[10.235,42.7484],[9.8345,44.0507]]},{"day":5,"name":"Portofino","lat":44.3033,"lng":9.2096,"mode":"sea","path":[[9.8345,44.0507],[9.2096,44.3033]]},{"day":6,"name":"St. Tropez","lat":43.2727,"lng":6.6405,"mode":"sea","path":[[9.2096,44.3033],[6.6405,43.2727]]},{"day":7,"name":"Monte Carlo","lat":43.7403,"lng":7.4266,"mode":"sea","path":[[6.6405,43.2727],[7.4266,43.7403]]},{"day":8,"name":"Nice","lat":43.7009,"lng":7.2684,"mode":"sea","path":[[7.4266,43.7403],[7.2684,43.7009]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-french-and-italian-riviera-dream-2028-10-08",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "French & Italian Riviera Dream aboard SeaDream II",
+ "subtitle": "7 nights · Rome (Civitavecchia) to Nice · SeaDream II",
+ "days": {
+  "1": "Rome (Civitavecchia)",
+  "2": "Porto Ercole",
+  "3": "Portoferraio",
+  "4": "Portovenere (Cinque Terre)",
+  "5": "Portofino",
+  "6": "St. Tropez",
+  "7": "Monte Carlo",
+  "8": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Porto Ercole",
+   "lat": 42.396,
+   "lng": 11.2155,
+   "mode": "sea",
+   "path": [
+    [
+     12.3393,
+     41.6733
+    ],
+    [
+     12.2217,
+     41.7263
+    ],
+    [
+     11.2155,
+     42.396
+    ]
+   ],
+   "charted": [
+    11.2025,
+    42.396
+   ],
+   "lane": "sea",
+   "clear": 1.8
+  },
+  {
+   "day": 3,
+   "name": "Portoferraio, Elba",
+   "lat": 42.7448,
+   "lng": 10.2432,
+   "mode": "sea",
+   "path": [
+    [
+     11.2155,
+     42.396
+    ],
+    [
+     11.2207,
+     42.3824
+    ],
+    [
+     11.2006,
+     42.3577
+    ],
+    [
+     11.1939,
+     42.3528
+    ],
+    [
+     11.1405,
+     42.3479
+    ],
+    [
+     10.2648,
+     42.722
+    ],
+    [
+     10.2581,
+     42.7269
+    ],
+    [
+     10.2432,
+     42.7448
+    ]
+   ],
+   "charted": [
+    10.235,
+    42.7484
+   ],
+   "lane": "sea",
+   "clear": 0.88
+  },
+  {
+   "day": 4,
+   "name": "Portovenere (Cinque Terre)",
+   "lat": 44.0507,
+   "lng": 9.8428,
+   "mode": "sea",
+   "path": [
+    [
+     10.2432,
+     42.7448
+    ],
+    [
+     10.2039,
+     42.7109
+    ],
+    [
+     10.1545,
+     42.702
+    ],
+    [
+     10.1298,
+     42.7109
+    ],
+    [
+     10.0804,
+     42.7468
+    ],
+    [
+     10.068,
+     42.7738
+    ],
+    [
+     9.8428,
+     44.0507
+    ]
+   ],
+   "charted": [
+    9.8345,
+    44.0507
+   ],
+   "lane": "sea",
+   "clear": 2.38
+  },
+  {
+   "day": 5,
+   "name": "Portofino",
+   "lat": 44.3045,
+   "lng": 9.218,
+   "mode": "sea",
+   "path": [
+    [
+     9.8428,
+     44.0507
+    ],
+    [
+     9.8504,
+     44.0483
+    ],
+    [
+     9.859,
+     44.0422
+    ],
+    [
+     9.8547,
+     44.036
+    ],
+    [
+     9.8461,
+     44.0298
+    ],
+    [
+     9.218,
+     44.3045
+    ]
+   ],
+   "charted": [
+    9.2096,
+    44.3033
+   ],
+   "lane": "sea",
+   "clear": 0.06
+  },
+  {
+   "day": 6,
+   "name": "St. Tropez",
+   "lat": 43.2775,
+   "lng": 6.6356,
+   "mode": "sea",
+   "path": [
+    [
+     9.218,
+     44.3045
+    ],
+    [
+     6.6356,
+     43.2775
+    ]
+   ],
+   "charted": [
+    6.6405,
+    43.2727
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Monte Carlo",
+   "lat": 43.7403,
+   "lng": 7.4365,
+   "mode": "sea",
+   "path": [
+    [
+     6.6356,
+     43.2775
+    ],
+    [
+     7.1434,
+     43.53
+    ],
+    [
+     7.4297,
+     43.7177
+    ],
+    [
+     7.4408,
+     43.7257
+    ],
+    [
+     7.4365,
+     43.7403
+    ]
+   ],
+   "charted": [
+    7.4266,
+    43.7403
+   ],
+   "lane": "sea",
+   "clear": 1.16
+  },
+  {
+   "day": 8,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "mode": "sea",
+   "path": [
+    [
+     7.4365,
+     43.7403
+    ],
+    [
+     7.444,
+     43.7304
+    ],
+    [
+     7.4315,
+     43.7192
+    ],
+    [
+     7.4098,
+     43.7035
+    ],
+    [
+     7.3383,
+     43.6653
+    ],
+    [
+     7.329,
+     43.6631
+    ],
+    [
+     7.2979,
+     43.6721
+    ],
+    [
+     7.2855,
+     43.6765
+    ],
+    [
+     7.2684,
+     43.6889
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ],
+   "lane": "sea",
+   "clear": 1.13
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,1 +1,317 @@
-{"id":"seadream-iii-the-baltic-capitals-2030-06-23","type":"voyage","destination":"scandinavia-northern-europe","title":"The Baltic Capitals aboard SeaDream III","subtitle":"11 nights · Oslo round trip · SeaDream III","days":{"1":"Oslo","2":"Copenhagen","3":"Copenhagen","4":"Gdańsk","5":"Klaipeda","6":"Riga","7":"Tallinn","8":"Helsinki","9":"Stockholm","10":"Visby","11":"At sea","12":"Oslo"},"stops":[{"day":1,"name":"Oslo","lat":59.9133,"lng":10.739,"kind":"port"},{"day":2,"name":"Copenhagen","lat":55.6867,"lng":12.5701,"mode":"sea","path":[[10.739,59.9133],[12.5701,55.6867]]},{"day":4,"name":"Gdańsk","lat":54.4288,"lng":18.7983,"mode":"sea","path":[[12.5701,55.6867],[18.7983,54.4288]]},{"day":5,"name":"Klaipeda","lat":55.7128,"lng":21.135,"mode":"sea","path":[[18.7983,54.4288],[21.135,55.7128]]},{"day":6,"name":"Riga","lat":56.9494,"lng":24.1052,"mode":"sea","path":[[21.135,55.7128],[24.1052,56.9494]]},{"day":7,"name":"Tallinn","lat":59.4372,"lng":24.7573,"mode":"sea","path":[[24.1052,56.9494],[24.7573,59.4372]]},{"day":8,"name":"Helsinki","lat":60.1666,"lng":24.9435,"mode":"sea","path":[[24.7573,59.4372],[24.9435,60.1666]]},{"day":9,"name":"Stockholm","lat":59.3251,"lng":18.0711,"mode":"sea","path":[[24.9435,60.1666],[18.0711,59.3251]]},{"day":10,"name":"Visby, Gotland Island","lat":57.6379,"lng":18.298,"mode":"sea","path":[[18.0711,59.3251],[18.298,57.6379]]},{"day":12,"name":"Oslo","lat":59.9133,"lng":10.739,"mode":"sea","path":[[18.298,57.6379],[10.739,59.9133]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-iii-the-baltic-capitals-2030-06-23",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "The Baltic Capitals aboard SeaDream III",
+ "subtitle": "11 nights · Oslo round trip · SeaDream III",
+ "days": {
+  "1": "Oslo",
+  "2": "Copenhagen",
+  "3": "Copenhagen",
+  "4": "Gdańsk",
+  "5": "Klaipeda",
+  "6": "Riga",
+  "7": "Tallinn",
+  "8": "Helsinki",
+  "9": "Stockholm",
+  "10": "Visby",
+  "11": "At sea",
+  "12": "Oslo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Oslo",
+   "lat": 59.9049,
+   "lng": 10.7271,
+   "kind": "port",
+   "charted": [
+    10.739,
+    59.9133
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Copenhagen",
+   "lat": 55.6999,
+   "lng": 12.602,
+   "mode": "sea",
+   "path": [
+    [
+     10.7271,
+     59.9049
+    ],
+    [
+     10.6902,
+     59.8927
+    ],
+    [
+     10.6503,
+     59.8694
+    ],
+    [
+     10.6264,
+     59.8375
+    ],
+    [
+     10.5746,
+     59.7611
+    ],
+    [
+     10.5666,
+     59.7229
+    ],
+    [
+     10.6184,
+     59.6655
+    ],
+    [
+     10.6264,
+     59.5806
+    ],
+    [
+     10.5826,
+     59.4299
+    ],
+    [
+     10.6543,
+     59.0944
+    ],
+    [
+     11.0448,
+     58.2387
+    ],
+    [
+     11.4273,
+     57.8311
+    ],
+    [
+     12.5869,
+     56.0815
+    ],
+    [
+     12.6268,
+     56.039
+    ],
+    [
+     12.6148,
+     55.7099
+    ],
+    [
+     12.602,
+     55.6999
+    ]
+   ],
+   "charted": [
+    12.5701,
+    55.6867
+   ],
+   "lane": "sea",
+   "clear": 0.16
+  },
+  {
+   "day": 4,
+   "name": "Gdańsk",
+   "lat": 54.4288,
+   "lng": 18.7983,
+   "mode": "sea",
+   "path": [
+    [
+     12.602,
+     55.6999
+    ],
+    [
+     18.7983,
+     54.4288
+    ]
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 5,
+   "name": "Klaipeda",
+   "lat": 55.7092,
+   "lng": 21.0882,
+   "mode": "sea",
+   "path": [
+    [
+     18.7983,
+     54.4288
+    ],
+    [
+     21.0882,
+     55.7092
+    ]
+   ],
+   "charted": [
+    21.135,
+    55.7128
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Riga",
+   "lat": 57.0404,
+   "lng": 24.0613,
+   "mode": "sea",
+   "path": [
+    [
+     21.0882,
+     55.7092
+    ],
+    [
+     24.0613,
+     57.0404
+    ]
+   ],
+   "charted": [
+    24.1052,
+    56.9494
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 7,
+   "name": "Tallinn",
+   "lat": 59.4516,
+   "lng": 24.7502,
+   "mode": "sea",
+   "path": [
+    [
+     24.0613,
+     57.0404
+    ],
+    [
+     24.7502,
+     59.4516
+    ]
+   ],
+   "charted": [
+    24.7573,
+    59.4372
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 8,
+   "name": "Helsinki",
+   "lat": 60.1582,
+   "lng": 24.97,
+   "mode": "sea",
+   "path": [
+    [
+     24.7502,
+     59.4516
+    ],
+    [
+     24.7916,
+     59.5709
+    ],
+    [
+     24.795,
+     59.5726
+    ],
+    [
+     24.97,
+     60.1582
+    ]
+   ],
+   "charted": [
+    24.9435,
+    60.1666
+   ],
+   "lane": "sea",
+   "clear": 0.09
+  },
+  {
+   "day": 9,
+   "name": "Stockholm",
+   "lat": 59.3622,
+   "lng": 18.1063,
+   "mode": "sea",
+   "path": [
+    [
+     24.97,
+     60.1582
+    ],
+    [
+     18.1063,
+     59.3622
+    ]
+   ],
+   "charted": [
+    18.0711,
+    59.3251
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 10,
+   "name": "Visby, Gotland Island",
+   "lat": 57.6439,
+   "lng": 18.2823,
+   "mode": "sea",
+   "path": [
+    [
+     18.1063,
+     59.3622
+    ],
+    [
+     18.2823,
+     57.6439
+    ]
+   ],
+   "charted": [
+    18.298,
+    57.6379
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 12,
+   "name": "Oslo",
+   "lat": 59.9049,
+   "lng": 10.7271,
+   "mode": "sea",
+   "path": [
+    [
+     18.2823,
+     57.6439
+    ],
+    [
+     10.7271,
+     59.9049
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    10.739,
+    59.9133
+   ],
+   "lane": "passage"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

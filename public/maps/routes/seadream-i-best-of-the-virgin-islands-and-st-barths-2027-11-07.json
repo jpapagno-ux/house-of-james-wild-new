@@ -1,1 +1,406 @@
-{"id":"seadream-i-best-of-the-virgin-islands-and-st-barths-2027-11-07","type":"voyage","destination":"caribbean","title":"Best of the Virgin Islands & St. Barths aboard SeaDream I","subtitle":"7 nights · San Juan to Charlotte Amalie · SeaDream I","days":{"1":"San Juan","2":"Culebra and Esperanza","3":"Gustavia","4":"Gustavia","5":"Sandy Ground","6":"White Bay","7":"Spanish Town and Trellis Bay","8":"Charlotte Amalie"},"stops":[{"day":1,"name":"San Juan","lat":18.46,"lng":-66.11,"kind":"port"},{"day":2,"name":"Culebra","lat":18.3137,"lng":-65.2826,"mode":"sea","path":[[-66.11,18.46],[-65.2826,18.3137]]},{"day":2,"name":"Esperanza, Vieques Island","lat":18.0977,"lng":-65.4746,"mode":"sea","path":[[-65.2826,18.3137],[-65.4746,18.0977]]},{"day":3,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-65.4746,18.0977],[-62.8508,17.8957]]},{"day":5,"name":"Sandy Ground","lat":18.1998,"lng":-63.0902,"mode":"sea","path":[[-62.8508,17.8957],[-63.0902,18.1998]]},{"day":6,"name":"White Bay, Jost van Dyke","lat":18.4428,"lng":-64.7629,"mode":"sea","path":[[-63.0902,18.1998],[-64.7629,18.4428]]},{"day":7,"name":"Spanish Town, Virgin Gorda","lat":18.4464,"lng":-64.4346,"mode":"sea","path":[[-64.7629,18.4428],[-64.4346,18.4464]]},{"day":7,"name":"Trellis Bay, Beef Island","lat":18.4464,"lng":-64.5328,"mode":"sea","path":[[-64.4346,18.4464],[-64.5328,18.4464]]},{"day":8,"name":"Charlotte Amalie, St. Thomas","lat":18.3429,"lng":-64.9189,"mode":"sea","path":[[-64.5328,18.4464],[-64.9189,18.3429]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-best-of-the-virgin-islands-and-st-barths-2027-11-07",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Best of the Virgin Islands & St. Barths aboard SeaDream I",
+ "subtitle": "7 nights · San Juan to Charlotte Amalie · SeaDream I",
+ "days": {
+  "1": "San Juan",
+  "2": "Culebra and Esperanza",
+  "3": "Gustavia",
+  "4": "Gustavia",
+  "5": "Sandy Ground",
+  "6": "White Bay",
+  "7": "Spanish Town and Trellis Bay",
+  "8": "Charlotte Amalie"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Culebra",
+   "lat": 18.3029,
+   "lng": -65.2889,
+   "mode": "sea",
+   "path": [
+    [
+     -66.11,
+     18.46
+    ],
+    [
+     -66.0748,
+     18.4702
+    ],
+    [
+     -65.7079,
+     18.4595
+    ],
+    [
+     -65.3353,
+     18.2827
+    ],
+    [
+     -65.3241,
+     18.2827
+    ],
+    [
+     -65.2889,
+     18.3029
+    ]
+   ],
+   "charted": [
+    -65.2826,
+    18.3137
+   ],
+   "lane": "sea",
+   "clear": 1.11
+  },
+  {
+   "day": 2,
+   "name": "Esperanza, Vieques Island",
+   "lat": 18.0905,
+   "lng": -65.4771,
+   "mode": "sea",
+   "path": [
+    [
+     -65.2889,
+     18.3029
+    ],
+    [
+     -65.2797,
+     18.2937
+    ],
+    [
+     -65.2773,
+     18.2825
+    ],
+    [
+     -65.2632,
+     18.1343
+    ],
+    [
+     -65.2702,
+     18.1276
+    ],
+    [
+     -65.4121,
+     18.0826
+    ],
+    [
+     -65.4641,
+     18.0804
+    ],
+    [
+     -65.4688,
+     18.0826
+    ],
+    [
+     -65.4771,
+     18.0905
+    ]
+   ],
+   "charted": [
+    -65.4746,
+    18.0977
+   ],
+   "lane": "sea",
+   "clear": 0.29
+  },
+  {
+   "day": 3,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -65.4771,
+     18.0905
+    ],
+    [
+     -65.4704,
+     18.0763
+    ],
+    [
+     -65.464,
+     18.0702
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ],
+   "lane": "sea",
+   "clear": 1.34
+  },
+  {
+   "day": 5,
+   "name": "Sandy Ground",
+   "lat": 18.1998,
+   "lng": -63.0978,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -63.1216,
+     18.0218
+    ],
+    [
+     -63.1589,
+     18.0525
+    ],
+    [
+     -63.1639,
+     18.0572
+    ],
+    [
+     -63.1837,
+     18.1587
+    ],
+    [
+     -63.1837,
+     18.1634
+    ],
+    [
+     -63.1788,
+     18.1705
+    ],
+    [
+     -63.1614,
+     18.1871
+    ],
+    [
+     -63.1366,
+     18.1989
+    ],
+    [
+     -63.1018,
+     18.2012
+    ],
+    [
+     -63.0978,
+     18.1998
+    ]
+   ],
+   "charted": [
+    -63.0902,
+    18.1998
+   ],
+   "lane": "sea",
+   "clear": 0.71
+  },
+  {
+   "day": 6,
+   "name": "White Bay, Jost van Dyke",
+   "lat": 18.4368,
+   "lng": -64.7629,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0978,
+     18.1998
+    ],
+    [
+     -64.3557,
+     18.54
+    ],
+    [
+     -64.5877,
+     18.5014
+    ],
+    [
+     -64.722,
+     18.4241
+    ],
+    [
+     -64.7424,
+     18.4202
+    ],
+    [
+     -64.7505,
+     18.4241
+    ],
+    [
+     -64.7629,
+     18.4368
+    ]
+   ],
+   "charted": [
+    -64.7629,
+    18.4428
+   ],
+   "lane": "sea",
+   "clear": 1.11
+  },
+  {
+   "day": 7,
+   "name": "Spanish Town, Virgin Gorda",
+   "lat": 18.45,
+   "lng": -64.4422,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7629,
+     18.4368
+    ],
+    [
+     -64.7527,
+     18.4276
+    ],
+    [
+     -64.7353,
+     18.4253
+    ],
+    [
+     -64.718,
+     18.4253
+    ],
+    [
+     -64.5864,
+     18.4983
+    ],
+    [
+     -64.5269,
+     18.503
+    ],
+    [
+     -64.4524,
+     18.4512
+    ],
+    [
+     -64.4422,
+     18.45
+    ]
+   ],
+   "charted": [
+    -64.4346,
+    18.4464
+   ],
+   "lane": "sea",
+   "clear": 0.92
+  },
+  {
+   "day": 7,
+   "name": "Trellis Bay, Beef Island",
+   "lat": 18.4464,
+   "lng": -64.5328,
+   "mode": "sea",
+   "path": [
+    [
+     -64.4422,
+     18.45
+    ],
+    [
+     -64.5328,
+     18.4464
+    ]
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Charlotte Amalie, St. Thomas",
+   "lat": 18.3345,
+   "lng": -64.9277,
+   "mode": "sea",
+   "path": [
+    [
+     -64.5328,
+     18.4464
+    ],
+    [
+     -64.5307,
+     18.451
+    ],
+    [
+     -64.528,
+     18.4536
+    ],
+    [
+     -64.5144,
+     18.4407
+    ],
+    [
+     -64.5117,
+     18.433
+    ],
+    [
+     -64.5253,
+     18.4201
+    ],
+    [
+     -64.7045,
+     18.2913
+    ],
+    [
+     -64.8809,
+     18.2913
+    ],
+    [
+     -64.9081,
+     18.3042
+    ],
+    [
+     -64.9244,
+     18.3145
+    ],
+    [
+     -64.9298,
+     18.3196
+    ],
+    [
+     -64.9271,
+     18.3248
+    ],
+    [
+     -64.9298,
+     18.3274
+    ],
+    [
+     -64.9271,
+     18.3299
+    ],
+    [
+     -64.9277,
+     18.3345
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -64.9189,
+    18.3429
+   ],
+   "lane": "sea",
+   "clear": 0.12
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,1 +1,406 @@
-{"id":"seadream-i-british-isles-discovery-2027-09-09","type":"voyage","destination":"scandinavia-northern-europe","title":"British Isles Discovery aboard SeaDream I","subtitle":"7 nights · Dublin (Dún Laoghaire) to Portsmouth · SeaDream I","days":{"1":"Dublin (Dún Laoghaire)","2":"Liverpool","3":"Fishguard","4":"St. Mary's","5":"Dartmouth","6":"Fowey","7":"Poole","8":"Portsmouth"},"stops":[{"day":1,"name":"Dublin (Dún Laoghaire)","lat":53.3494,"lng":-6.2606,"kind":"port"},{"day":2,"name":"Liverpool, England","lat":53.3933,"lng":-2.9166,"mode":"sea","path":[[-6.2606,53.3494],[-2.9166,53.3933]]},{"day":3,"name":"Fishguard, Wales","lat":51.9938,"lng":-4.9765,"mode":"sea","path":[[-2.9166,53.3933],[-4.9765,51.9938]]},{"day":4,"name":"St. Mary's, Isles of Scilly","lat":49.9203,"lng":-6.2929,"mode":"sea","path":[[-4.9765,51.9938],[-6.2929,49.9203]]},{"day":5,"name":"Dartmouth, England","lat":50.3515,"lng":-3.5838,"mode":"sea","path":[[-6.2929,49.9203],[-3.5838,50.3515]]},{"day":6,"name":"Fowey","lat":50.3358,"lng":-4.6366,"mode":"sea","path":[[-3.5838,50.3515],[-4.6366,50.3358]]},{"day":7,"name":"Poole, England","lat":50.7402,"lng":-1.9537,"mode":"sea","path":[[-4.6366,50.3358],[-1.9537,50.7402]]},{"day":8,"name":"Portsmouth, England","lat":50.8,"lng":-1.0906,"mode":"sea","path":[[-1.9537,50.7402],[-1.0906,50.8]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-british-isles-discovery-2027-09-09",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "British Isles Discovery aboard SeaDream I",
+ "subtitle": "7 nights · Dublin (Dún Laoghaire) to Portsmouth · SeaDream I",
+ "days": {
+  "1": "Dublin (Dún Laoghaire)",
+  "2": "Liverpool",
+  "3": "Fishguard",
+  "4": "St. Mary's",
+  "5": "Dartmouth",
+  "6": "Fowey",
+  "7": "Poole",
+  "8": "Portsmouth"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Dublin (Dún Laoghaire)",
+   "lat": 53.3314,
+   "lng": -6.2044,
+   "kind": "port",
+   "charted": [
+    -6.2606,
+    53.3494
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Liverpool, England",
+   "lat": 53.3622,
+   "lng": -2.9487,
+   "mode": "sea",
+   "path": [
+    [
+     -6.2044,
+     53.3314
+    ],
+    [
+     -4.4071,
+     53.4317
+    ],
+    [
+     -3.032,
+     53.4511
+    ],
+    [
+     -3.0255,
+     53.4472
+    ],
+    [
+     -3.0124,
+     53.4083
+    ],
+    [
+     -2.9863,
+     53.3772
+    ],
+    [
+     -2.9733,
+     53.3694
+    ],
+    [
+     -2.9487,
+     53.3622
+    ]
+   ],
+   "charted": [
+    -2.9166,
+    53.3933
+   ],
+   "lane": "sea",
+   "clear": 0.26
+  },
+  {
+   "day": 3,
+   "name": "Fishguard, Wales",
+   "lat": 52.0046,
+   "lng": -4.9746,
+   "mode": "sea",
+   "path": [
+    [
+     -2.9487,
+     53.3622
+    ],
+    [
+     -4.9746,
+     52.0046
+    ]
+   ],
+   "charted": [
+    -4.9765,
+    51.9938
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 4,
+   "name": "St. Mary's, Isles of Scilly",
+   "lat": 49.9131,
+   "lng": -6.2743,
+   "mode": "sea",
+   "path": [
+    [
+     -4.9746,
+     52.0046
+    ],
+    [
+     -4.9671,
+     52.0197
+    ],
+    [
+     -4.9915,
+     52.035
+    ],
+    [
+     -5.0808,
+     52.0402
+    ],
+    [
+     -5.3243,
+     51.9123
+    ],
+    [
+     -5.3649,
+     51.8766
+    ],
+    [
+     -5.373,
+     51.8612
+    ],
+    [
+     -5.3486,
+     51.7539
+    ],
+    [
+     -6.2415,
+     49.9389
+    ],
+    [
+     -6.2743,
+     49.9131
+    ]
+   ],
+   "charted": [
+    -6.2929,
+    49.9203
+   ],
+   "lane": "sea",
+   "clear": 0.8
+  },
+  {
+   "day": 5,
+   "name": "Dartmouth, England",
+   "lat": 50.3347,
+   "lng": -3.5575,
+   "mode": "sea",
+   "path": [
+    [
+     -6.2743,
+     49.9131
+    ],
+    [
+     -4.6451,
+     49.9517
+    ],
+    [
+     -3.6925,
+     50.1912
+    ],
+    [
+     -3.6551,
+     50.2032
+    ],
+    [
+     -3.6365,
+     50.2152
+    ],
+    [
+     -3.5575,
+     50.3347
+    ]
+   ],
+   "charted": [
+    -3.5838,
+    50.3515
+   ],
+   "lane": "sea",
+   "clear": 0.76
+  },
+  {
+   "day": 6,
+   "name": "Fowey",
+   "lat": 50.3226,
+   "lng": -4.6422,
+   "mode": "sea",
+   "path": [
+    [
+     -3.5575,
+     50.3347
+    ],
+    [
+     -3.5741,
+     50.2808
+    ],
+    [
+     -3.6263,
+     50.2142
+    ],
+    [
+     -3.6338,
+     50.2094
+    ],
+    [
+     -3.7233,
+     50.1904
+    ],
+    [
+     -4.6107,
+     50.3142
+    ],
+    [
+     -4.6422,
+     50.3226
+    ]
+   ],
+   "charted": [
+    -4.6366,
+    50.3358
+   ],
+   "lane": "sea",
+   "clear": 1.21
+  },
+  {
+   "day": 7,
+   "name": "Poole, England",
+   "lat": 50.7091,
+   "lng": -1.9669,
+   "mode": "sea",
+   "path": [
+    [
+     -4.6422,
+     50.3226
+    ],
+    [
+     -3.7845,
+     50.2076
+    ],
+    [
+     -3.7174,
+     50.2002
+    ],
+    [
+     -2.931,
+     50.2914
+    ],
+    [
+     -2.5748,
+     50.4047
+    ],
+    [
+     -1.9618,
+     50.5885
+    ],
+    [
+     -1.9526,
+     50.5929
+    ],
+    [
+     -1.9503,
+     50.5944
+    ],
+    [
+     -1.9202,
+     50.6385
+    ],
+    [
+     -1.9294,
+     50.6665
+    ],
+    [
+     -1.9364,
+     50.6753
+    ],
+    [
+     -1.9433,
+     50.6797
+    ],
+    [
+     -1.9479,
+     50.6812
+    ],
+    [
+     -1.9549,
+     50.6856
+    ],
+    [
+     -1.9572,
+     50.6974
+    ],
+    [
+     -1.9669,
+     50.7091
+    ]
+   ],
+   "charted": [
+    -1.9537,
+    50.7402
+   ],
+   "lane": "sea",
+   "clear": 0.06
+  },
+  {
+   "day": 8,
+   "name": "Portsmouth, England",
+   "lat": 50.8108,
+   "lng": -1.1114,
+   "mode": "sea",
+   "path": [
+    [
+     -1.9669,
+     50.7091
+    ],
+    [
+     -1.9543,
+     50.6906
+    ],
+    [
+     -1.9543,
+     50.6853
+    ],
+    [
+     -1.9522,
+     50.6827
+    ],
+    [
+     -1.948,
+     50.6801
+    ],
+    [
+     -1.5318,
+     50.7052
+    ],
+    [
+     -1.3143,
+     50.7674
+    ],
+    [
+     -1.1429,
+     50.7713
+    ],
+    [
+     -1.1157,
+     50.7859
+    ],
+    [
+     -1.1115,
+     50.7885
+    ],
+    [
+     -1.1157,
+     50.8031
+    ],
+    [
+     -1.1157,
+     50.8057
+    ],
+    [
+     -1.1114,
+     50.8108
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -1.0906,
+    50.8
+   ],
+   "lane": "sea",
+   "clear": 0.03
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

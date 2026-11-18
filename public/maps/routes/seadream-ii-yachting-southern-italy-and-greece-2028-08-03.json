@@ -1,1 +1,448 @@
-{"id":"seadream-ii-yachting-southern-italy-and-greece-2028-08-03","type":"voyage","destination":"mediterranean","title":"Yachting Southern Italy & Greece aboard SeaDream II","subtitle":"10 nights · Rome (Civitavecchia) to Athens (Piraeus) · SeaDream II","days":{"1":"Rome (Civitavecchia)","2":"Bonifacio","3":"Ponza","4":"Capri","5":"Amalfi","6":"Taormina (Etna) Sicily","7":"Sailing the Ionian Sea","8":"Fiskardo","9":"Zakynthos","10":"Galaxidi (Delphi) and Corinth Canal Transit","11":"Athens (Piraeus)"},"stops":[{"day":1,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"kind":"port"},{"day":2,"name":"Bonifacio, Corsica","lat":41.3872,"lng":9.1591,"mode":"sea","path":[[12.4829,41.8933],[9.1591,41.3872]]},{"day":3,"name":"Ponza","lat":40.8932,"lng":12.9631,"mode":"sea","path":[[9.1591,41.3872],[12.9631,40.8932]]},{"day":4,"name":"Capri","lat":40.5488,"lng":14.2284,"mode":"sea","path":[[12.9631,40.8932],[14.2284,40.5488]]},{"day":5,"name":"Amalfi","lat":40.6337,"lng":14.6026,"mode":"sea","path":[[14.2284,40.5488],[14.6026,40.6337]]},{"day":6,"name":"Taormina (Etna) Sicily","lat":37.8512,"lng":15.283,"mode":"sea","path":[[14.6026,40.6337],[15.283,37.8512]]},{"day":8,"name":"Fiskardo, Kefalonia","lat":38.4609,"lng":20.5752,"mode":"sea","path":[[15.283,37.8512],[20.5752,38.4609]]},{"day":9,"name":"Zakynthos","lat":37.78,"lng":20.9,"mode":"sea","path":[[20.5752,38.4609],[20.9,37.78]]},{"day":10,"name":"Galaxidi (Delphi)","lat":38.3775,"lng":22.383,"mode":"sea","path":[[20.9,37.78],[22.383,38.3775]]},{"day":10,"name":"Corinth Canal Transit","lat":37.93,"lng":22.99,"mode":"sea","path":[[22.383,38.3775],[22.99,37.93]]},{"day":11,"name":"Athens (Piraeus)","lat":37.94,"lng":23.63,"mode":"sea","path":[[22.99,37.93],[23.63,37.94]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-yachting-southern-italy-and-greece-2028-08-03",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Yachting Southern Italy & Greece aboard SeaDream II",
+ "subtitle": "10 nights · Rome (Civitavecchia) to Athens (Piraeus) · SeaDream II",
+ "days": {
+  "1": "Rome (Civitavecchia)",
+  "2": "Bonifacio",
+  "3": "Ponza",
+  "4": "Capri",
+  "5": "Amalfi",
+  "6": "Taormina (Etna) Sicily",
+  "7": "Sailing the Ionian Sea",
+  "8": "Fiskardo",
+  "9": "Zakynthos",
+  "10": "Galaxidi (Delphi) and Corinth Canal Transit",
+  "11": "Athens (Piraeus)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Bonifacio, Corsica",
+   "lat": 41.3812,
+   "lng": 9.1575,
+   "mode": "sea",
+   "path": [
+    [
+     12.3393,
+     41.6733
+    ],
+    [
+     9.2434,
+     41.3174
+    ],
+    [
+     9.1734,
+     41.3582
+    ],
+    [
+     9.1575,
+     41.3812
+    ]
+   ],
+   "charted": [
+    9.1591,
+    41.3872
+   ],
+   "lane": "sea",
+   "clear": 1.02
+  },
+  {
+   "day": 3,
+   "name": "Ponza",
+   "lat": 40.8992,
+   "lng": 12.9679,
+   "mode": "sea",
+   "path": [
+    [
+     9.1575,
+     41.3812
+    ],
+    [
+     9.1672,
+     41.3555
+    ],
+    [
+     9.1952,
+     41.3344
+    ],
+    [
+     9.2511,
+     41.3134
+    ],
+    [
+     9.4001,
+     41.3204
+    ],
+    [
+     12.9488,
+     40.8574
+    ],
+    [
+     12.9768,
+     40.8785
+    ],
+    [
+     12.9679,
+     40.8992
+    ]
+   ],
+   "charted": [
+    12.9631,
+    40.8932
+   ],
+   "lane": "sea",
+   "clear": 1.52
+  },
+  {
+   "day": 4,
+   "name": "Capri",
+   "lat": 40.5404,
+   "lng": 14.2347,
+   "mode": "sea",
+   "path": [
+    [
+     12.9679,
+     40.8992
+    ],
+    [
+     12.9866,
+     40.9019
+    ],
+    [
+     14.1881,
+     40.5264
+    ],
+    [
+     14.2284,
+     40.5264
+    ],
+    [
+     14.2315,
+     40.5288
+    ],
+    [
+     14.2347,
+     40.5404
+    ]
+   ],
+   "charted": [
+    14.2284,
+    40.5488
+   ],
+   "lane": "sea",
+   "clear": 1.19
+  },
+  {
+   "day": 5,
+   "name": "Amalfi",
+   "lat": 40.6289,
+   "lng": 14.6073,
+   "mode": "sea",
+   "path": [
+    [
+     14.2347,
+     40.5404
+    ],
+    [
+     14.2478,
+     40.532
+    ],
+    [
+     14.4617,
+     40.5572
+    ],
+    [
+     14.5761,
+     40.6007
+    ],
+    [
+     14.6002,
+     40.619
+    ],
+    [
+     14.6073,
+     40.6289
+    ]
+   ],
+   "charted": [
+    14.6026,
+    40.6337
+   ],
+   "lane": "sea",
+   "clear": 1.16
+  },
+  {
+   "day": 6,
+   "name": "Taormina (Etna) Sicily",
+   "lat": 37.8416,
+   "lng": 15.286,
+   "mode": "sea",
+   "path": [
+    [
+     14.6073,
+     40.6289
+    ],
+    [
+     15.6633,
+     38.2643
+    ],
+    [
+     15.6457,
+     38.2507
+    ],
+    [
+     15.6281,
+     38.2439
+    ],
+    [
+     15.6105,
+     38.2303
+    ],
+    [
+     15.4874,
+     38.0463
+    ],
+    [
+     15.3202,
+     37.8692
+    ],
+    [
+     15.286,
+     37.8416
+    ]
+   ],
+   "charted": [
+    15.283,
+    37.8512
+   ],
+   "lane": "sea",
+   "clear": 1.02
+  },
+  {
+   "day": 8,
+   "name": "Fiskardo, Kefalonia",
+   "lat": 38.4561,
+   "lng": 20.5844,
+   "mode": "sea",
+   "path": [
+    [
+     15.286,
+     37.8416
+    ],
+    [
+     19.9362,
+     38.2495
+    ],
+    [
+     20.532,
+     38.4837
+    ],
+    [
+     20.5579,
+     38.4837
+    ],
+    [
+     20.5844,
+     38.4561
+    ]
+   ],
+   "charted": [
+    20.5752,
+    38.4609
+   ],
+   "lane": "sea",
+   "clear": 1.05
+  },
+  {
+   "day": 9,
+   "name": "Zakynthos",
+   "lat": 37.78,
+   "lng": 20.9,
+   "mode": "sea",
+   "path": [
+    [
+     20.5844,
+     38.4561
+    ],
+    [
+     20.5976,
+     38.4411
+    ],
+    [
+     20.6803,
+     38.3063
+    ],
+    [
+     20.8221,
+     38.1204
+    ],
+    [
+     20.9107,
+     37.8043
+    ],
+    [
+     20.9,
+     37.78
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.54
+  },
+  {
+   "day": 10,
+   "name": "Galaxidi (Delphi)",
+   "lat": 38.3835,
+   "lng": 22.3876,
+   "mode": "sea",
+   "path": [
+    [
+     20.9,
+     37.78
+    ],
+    [
+     21.3728,
+     38.2246
+    ],
+    [
+     21.7614,
+     38.3131
+    ],
+    [
+     21.8432,
+     38.3453
+    ],
+    [
+     22.2114,
+     38.3051
+    ],
+    [
+     22.375,
+     38.3212
+    ],
+    [
+     22.3853,
+     38.3292
+    ],
+    [
+     22.4057,
+     38.3695
+    ],
+    [
+     22.3876,
+     38.3835
+    ]
+   ],
+   "charted": [
+    22.383,
+    38.3775
+   ],
+   "lane": "sea",
+   "clear": 0.44
+  },
+  {
+   "day": 10,
+   "name": "Corinth Canal Transit",
+   "lat": 37.93,
+   "lng": 22.99,
+   "mode": "sea",
+   "path": [
+    [
+     22.3876,
+     38.3835
+    ],
+    [
+     22.99,
+     37.93
+    ]
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 11,
+   "name": "Athens (Piraeus)",
+   "lat": 37.94,
+   "lng": 23.63,
+   "mode": "sea",
+   "path": [
+    [
+     22.99,
+     37.93
+    ],
+    [
+     23.0086,
+     37.9204
+    ],
+    [
+     23.013,
+     37.9169
+    ],
+    [
+     23.0262,
+     37.9134
+    ],
+    [
+     23.0614,
+     37.9065
+    ],
+    [
+     23.4574,
+     37.8683
+    ],
+    [
+     23.5102,
+     37.8891
+    ],
+    [
+     23.63,
+     37.94
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 0.09
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

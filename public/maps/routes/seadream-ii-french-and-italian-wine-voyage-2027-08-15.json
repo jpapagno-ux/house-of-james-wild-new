@@ -1,1 +1,401 @@
-{"id":"seadream-ii-french-and-italian-wine-voyage-2027-08-15","type":"voyage","destination":"mediterranean","title":"French & Italian Wine Voyage aboard SeaDream II","subtitle":"7 nights · Nice to Rome (Civitavecchia) · SeaDream II","days":{"1":"Nice","2":"Sanary-sur-Mer","3":"St. Tropez","4":"Cannes","5":"Portofino","6":"Livorno (Florence)","7":"Portoferraio","8":"Rome (Civitavecchia)"},"stops":[{"day":1,"name":"Nice","lat":43.7009,"lng":7.2684,"kind":"port"},{"day":2,"name":"Sanary-sur-Mer","lat":43.1177,"lng":5.8009,"mode":"sea","path":[[7.2684,43.7009],[5.8009,43.1177]]},{"day":3,"name":"St. Tropez","lat":43.2727,"lng":6.6405,"mode":"sea","path":[[5.8009,43.1177],[6.6405,43.2727]]},{"day":4,"name":"Cannes","lat":43.5515,"lng":7.0134,"mode":"sea","path":[[6.6405,43.2727],[7.0134,43.5515]]},{"day":5,"name":"Portofino","lat":44.3033,"lng":9.2096,"mode":"sea","path":[[7.0134,43.5515],[9.2096,44.3033]]},{"day":6,"name":"Livorno (Florence)","lat":42.7902,"lng":10.3402,"mode":"sea","path":[[9.2096,44.3033],[10.3402,42.7902]]},{"day":7,"name":"Portoferraio, Elba","lat":42.7484,"lng":10.235,"mode":"sea","path":[[10.3402,42.7902],[10.235,42.7484]]},{"day":8,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"mode":"sea","path":[[10.235,42.7484],[12.4829,41.8933]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-french-and-italian-wine-voyage-2027-08-15",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "French & Italian Wine Voyage aboard SeaDream II",
+ "subtitle": "7 nights · Nice to Rome (Civitavecchia) · SeaDream II",
+ "days": {
+  "1": "Nice",
+  "2": "Sanary-sur-Mer",
+  "3": "St. Tropez",
+  "4": "Cannes",
+  "5": "Portofino",
+  "6": "Livorno (Florence)",
+  "7": "Portoferraio",
+  "8": "Rome (Civitavecchia)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Sanary-sur-Mer",
+   "lat": 43.1093,
+   "lng": 5.8009,
+   "mode": "sea",
+   "path": [
+    [
+     7.2684,
+     43.6889
+    ],
+    [
+     7.1652,
+     43.5508
+    ],
+    [
+     6.6406,
+     43.1476
+    ],
+    [
+     6.3581,
+     43.0303
+    ],
+    [
+     6.2269,
+     42.9717
+    ],
+    [
+     6.1866,
+     42.9644
+    ],
+    [
+     5.8234,
+     43.0303
+    ],
+    [
+     5.7729,
+     43.0523
+    ],
+    [
+     5.7527,
+     43.067
+    ],
+    [
+     5.7527,
+     43.0816
+    ],
+    [
+     5.7729,
+     43.0963
+    ],
+    [
+     5.8009,
+     43.1093
+    ]
+   ],
+   "charted": [
+    5.8009,
+    43.1177
+   ],
+   "lane": "sea",
+   "clear": 1.37
+  },
+  {
+   "day": 3,
+   "name": "St. Tropez",
+   "lat": 43.2775,
+   "lng": 6.6356,
+   "mode": "sea",
+   "path": [
+    [
+     5.8009,
+     43.1093
+    ],
+    [
+     5.7678,
+     43.0893
+    ],
+    [
+     5.7563,
+     43.081
+    ],
+    [
+     5.7563,
+     43.0684
+    ],
+    [
+     5.7792,
+     43.0517
+    ],
+    [
+     5.8424,
+     43.0308
+    ],
+    [
+     6.1408,
+     43.0015
+    ],
+    [
+     6.158,
+     43.014
+    ],
+    [
+     6.2441,
+     43.0391
+    ],
+    [
+     6.6458,
+     43.1521
+    ],
+    [
+     6.6859,
+     43.1814
+    ],
+    [
+     6.6974,
+     43.2023
+    ],
+    [
+     6.7146,
+     43.265
+    ],
+    [
+     6.6859,
+     43.286
+    ],
+    [
+     6.6687,
+     43.2901
+    ],
+    [
+     6.6356,
+     43.2775
+    ]
+   ],
+   "charted": [
+    6.6405,
+    43.2727
+   ],
+   "lane": "sea",
+   "clear": 0.92
+  },
+  {
+   "day": 4,
+   "name": "Cannes",
+   "lat": 43.5431,
+   "lng": 7.0084,
+   "mode": "sea",
+   "path": [
+    [
+     6.6356,
+     43.2775
+    ],
+    [
+     6.8979,
+     43.4208
+    ],
+    [
+     6.935,
+     43.4455
+    ],
+    [
+     7.0084,
+     43.5431
+    ]
+   ],
+   "charted": [
+    7.0134,
+    43.5515
+   ],
+   "lane": "sea",
+   "clear": 1.07
+  },
+  {
+   "day": 5,
+   "name": "Portofino",
+   "lat": 44.3045,
+   "lng": 9.218,
+   "mode": "sea",
+   "path": [
+    [
+     7.0084,
+     43.5431
+    ],
+    [
+     7.1182,
+     43.5237
+    ],
+    [
+     9.218,
+     44.3045
+    ]
+   ],
+   "charted": [
+    9.2096,
+    44.3033
+   ],
+   "lane": "sea",
+   "clear": 2.07
+  },
+  {
+   "day": 6,
+   "name": "Livorno (Florence)",
+   "lat": 42.801,
+   "lng": 10.3418,
+   "mode": "sea",
+   "path": [
+    [
+     9.218,
+     44.3045
+    ],
+    [
+     9.9282,
+     43.4186
+    ],
+    [
+     10.344,
+     42.8159
+    ],
+    [
+     10.3418,
+     42.801
+    ]
+   ],
+   "charted": [
+    10.3402,
+    42.7902
+   ],
+   "lane": "sea",
+   "clear": 0.79
+  },
+  {
+   "day": 7,
+   "name": "Portoferraio, Elba",
+   "lat": 42.7448,
+   "lng": 10.2432,
+   "mode": "sea",
+   "path": [
+    [
+     10.3418,
+     42.801
+    ],
+    [
+     10.3426,
+     42.8155
+    ],
+    [
+     10.3396,
+     42.82
+    ],
+    [
+     10.3335,
+     42.8245
+    ],
+    [
+     10.257,
+     42.8358
+    ],
+    [
+     10.1346,
+     42.8155
+    ],
+    [
+     10.1162,
+     42.8088
+    ],
+    [
+     10.0948,
+     42.7931
+    ],
+    [
+     10.0918,
+     42.7684
+    ],
+    [
+     10.0918,
+     42.7639
+    ],
+    [
+     10.1193,
+     42.7324
+    ],
+    [
+     10.1315,
+     42.7235
+    ],
+    [
+     10.156,
+     42.7167
+    ],
+    [
+     10.2417,
+     42.719
+    ],
+    [
+     10.2478,
+     42.7235
+    ],
+    [
+     10.2478,
+     42.7414
+    ],
+    [
+     10.2432,
+     42.7448
+    ]
+   ],
+   "charted": [
+    10.235,
+    42.7484
+   ],
+   "lane": "sea",
+   "clear": 0.61
+  },
+  {
+   "day": 8,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "mode": "sea",
+   "path": [
+    [
+     10.2432,
+     42.7448
+    ],
+    [
+     12.2207,
+     41.7184
+    ],
+    [
+     12.3393,
+     41.6733
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ],
+   "lane": "sea",
+   "clear": 2.64
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

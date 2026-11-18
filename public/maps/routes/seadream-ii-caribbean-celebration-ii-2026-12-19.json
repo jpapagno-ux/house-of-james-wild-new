@@ -1,1 +1,440 @@
-{"id":"seadream-ii-caribbean-celebration-ii-2026-12-19","type":"voyage","destination":"caribbean","title":"Caribbean Celebration II aboard SeaDream II","subtitle":"8 nights · San Juan round trip · SeaDream II","days":{"1":"San Juan","2":"Gustavia","3":"Gustavia","4":"Sandy Ground","5":"Spanish Town and Trellis Bay","6":"Leverick Bay","7":"Cane Garden Bay and Norman Island","8":"White Bay","9":"San Juan"},"stops":[{"day":1,"name":"San Juan","lat":18.46,"lng":-66.11,"kind":"port"},{"day":2,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-66.11,18.46],[-62.8508,17.8957]]},{"day":4,"name":"Sandy Ground","lat":18.1998,"lng":-63.0902,"mode":"sea","path":[[-62.8508,17.8957],[-63.0902,18.1998]]},{"day":5,"name":"Spanish Town, Virgin Gorda","lat":18.4464,"lng":-64.4346,"mode":"sea","path":[[-63.0902,18.1998],[-64.4346,18.4464]]},{"day":5,"name":"Trellis Bay, Beef Island","lat":18.4464,"lng":-64.5328,"mode":"sea","path":[[-64.4346,18.4464],[-64.5328,18.4464]]},{"day":6,"name":"Leverick Bay, Virgin Gorda","lat":18.4972,"lng":-64.3845,"mode":"sea","path":[[-64.5328,18.4464],[-64.3845,18.4972]]},{"day":7,"name":"Cane Garden Bay, Tortola","lat":18.4339,"lng":-64.6548,"mode":"sea","path":[[-64.3845,18.4972],[-64.6548,18.4339]]},{"day":7,"name":"Norman Island","lat":18.3156,"lng":-64.6132,"mode":"sea","path":[[-64.6548,18.4339],[-64.6132,18.3156]]},{"day":8,"name":"White Bay, Jost van Dyke","lat":18.4428,"lng":-64.7629,"mode":"sea","path":[[-64.6132,18.3156],[-64.7629,18.4428]]},{"day":9,"name":"San Juan","lat":18.46,"lng":-66.11,"mode":"sea","path":[[-64.7629,18.4428],[-66.11,18.46]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-caribbean-celebration-ii-2026-12-19",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Caribbean Celebration II aboard SeaDream II",
+ "subtitle": "8 nights · San Juan round trip · SeaDream II",
+ "days": {
+  "1": "San Juan",
+  "2": "Gustavia",
+  "3": "Gustavia",
+  "4": "Sandy Ground",
+  "5": "Spanish Town and Trellis Bay",
+  "6": "Leverick Bay",
+  "7": "Cane Garden Bay and Norman Island",
+  "8": "White Bay",
+  "9": "San Juan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -66.11,
+     18.46
+    ],
+    [
+     -65.9665,
+     18.4754
+    ],
+    [
+     -65.235,
+     18.3469
+    ],
+    [
+     -64.9567,
+     18.2865
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ],
+   "lane": "sea",
+   "clear": 1.61
+  },
+  {
+   "day": 4,
+   "name": "Sandy Ground",
+   "lat": 18.1998,
+   "lng": -63.0978,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -63.1216,
+     18.0218
+    ],
+    [
+     -63.1589,
+     18.0525
+    ],
+    [
+     -63.1639,
+     18.0572
+    ],
+    [
+     -63.1837,
+     18.1587
+    ],
+    [
+     -63.1837,
+     18.1634
+    ],
+    [
+     -63.1788,
+     18.1705
+    ],
+    [
+     -63.1614,
+     18.1871
+    ],
+    [
+     -63.1366,
+     18.1989
+    ],
+    [
+     -63.1018,
+     18.2012
+    ],
+    [
+     -63.0978,
+     18.1998
+    ]
+   ],
+   "charted": [
+    -63.0902,
+    18.1998
+   ],
+   "lane": "sea",
+   "clear": 0.71
+  },
+  {
+   "day": 5,
+   "name": "Spanish Town, Virgin Gorda",
+   "lat": 18.45,
+   "lng": -64.4422,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0978,
+     18.1998
+    ],
+    [
+     -64.4422,
+     18.45
+    ]
+   ],
+   "charted": [
+    -64.4346,
+    18.4464
+   ]
+  },
+  {
+   "day": 5,
+   "name": "Trellis Bay, Beef Island",
+   "lat": 18.4464,
+   "lng": -64.5328,
+   "mode": "sea",
+   "path": [
+    [
+     -64.4422,
+     18.45
+    ],
+    [
+     -64.5328,
+     18.4464
+    ]
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Leverick Bay, Virgin Gorda",
+   "lat": 18.4972,
+   "lng": -64.3845,
+   "mode": "sea",
+   "path": [
+    [
+     -64.5328,
+     18.4464
+    ],
+    [
+     -64.5316,
+     18.4543
+    ],
+    [
+     -64.5292,
+     18.4565
+    ],
+    [
+     -64.4985,
+     18.461
+    ],
+    [
+     -64.463,
+     18.4902
+    ],
+    [
+     -64.3943,
+     18.5216
+    ],
+    [
+     -64.3896,
+     18.5216
+    ],
+    [
+     -64.3848,
+     18.5171
+    ],
+    [
+     -64.3845,
+     18.4972
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.56
+  },
+  {
+   "day": 7,
+   "name": "Cane Garden Bay, Tortola",
+   "lat": 18.4267,
+   "lng": -64.6636,
+   "mode": "sea",
+   "path": [
+    [
+     -64.3845,
+     18.4972
+    ],
+    [
+     -64.383,
+     18.5177
+    ],
+    [
+     -64.3878,
+     18.5221
+    ],
+    [
+     -64.5843,
+     18.4952
+    ],
+    [
+     -64.6648,
+     18.4503
+    ],
+    [
+     -64.6695,
+     18.4458
+    ],
+    [
+     -64.6719,
+     18.4368
+    ],
+    [
+     -64.6719,
+     18.4323
+    ],
+    [
+     -64.6695,
+     18.4301
+    ],
+    [
+     -64.6636,
+     18.4267
+    ]
+   ],
+   "charted": [
+    -64.6548,
+    18.4339
+   ],
+   "lane": "sea",
+   "clear": 0.64
+  },
+  {
+   "day": 7,
+   "name": "Norman Island",
+   "lat": 18.312,
+   "lng": -64.6069,
+   "mode": "sea",
+   "path": [
+    [
+     -64.6636,
+     18.4267
+    ],
+    [
+     -64.6955,
+     18.4277
+    ],
+    [
+     -64.8186,
+     18.3693
+    ],
+    [
+     -64.8233,
+     18.3648
+    ],
+    [
+     -64.8257,
+     18.358
+    ],
+    [
+     -64.8091,
+     18.3199
+    ],
+    [
+     -64.802,
+     18.3086
+    ],
+    [
+     -64.7973,
+     18.3041
+    ],
+    [
+     -64.7831,
+     18.2974
+    ],
+    [
+     -64.6979,
+     18.2862
+    ],
+    [
+     -64.6127,
+     18.2952
+    ],
+    [
+     -64.608,
+     18.2974
+    ],
+    [
+     -64.6033,
+     18.3019
+    ],
+    [
+     -64.6069,
+     18.312
+    ]
+   ],
+   "charted": [
+    -64.6132,
+    18.3156
+   ],
+   "lane": "sea",
+   "clear": 1.01
+  },
+  {
+   "day": 8,
+   "name": "White Bay, Jost van Dyke",
+   "lat": 18.4368,
+   "lng": -64.7629,
+   "mode": "sea",
+   "path": [
+    [
+     -64.6069,
+     18.312
+    ],
+    [
+     -64.6032,
+     18.3019
+    ],
+    [
+     -64.6079,
+     18.2974
+    ],
+    [
+     -64.615,
+     18.2952
+    ],
+    [
+     -64.7168,
+     18.2862
+    ],
+    [
+     -64.783,
+     18.2974
+    ],
+    [
+     -64.7972,
+     18.3041
+    ],
+    [
+     -64.8043,
+     18.3109
+    ],
+    [
+     -64.8114,
+     18.3244
+    ],
+    [
+     -64.8256,
+     18.3603
+    ],
+    [
+     -64.8232,
+     18.3648
+    ],
+    [
+     -64.7629,
+     18.4368
+    ]
+   ],
+   "charted": [
+    -64.7629,
+    18.4428
+   ],
+   "lane": "sea",
+   "clear": 1.07
+  },
+  {
+   "day": 9,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7629,
+     18.4368
+    ],
+    [
+     -64.8298,
+     18.4652
+    ],
+    [
+     -66.0708,
+     18.4739
+    ],
+    [
+     -66.11,
+     18.46
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.42
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

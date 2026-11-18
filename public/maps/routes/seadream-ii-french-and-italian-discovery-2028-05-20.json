@@ -1,1 +1,314 @@
-{"id":"seadream-ii-french-and-italian-discovery-2028-05-20","type":"voyage","destination":"mediterranean","title":"French & Italian Discovery aboard SeaDream II","subtitle":"7 nights · Nice to Rome (Civitavecchia) · SeaDream II","days":{"1":"Nice","2":"Portofino","3":"Livorno (Florence)","4":"Livorno (Florence)","5":"Portoferraio","6":"Porto Santo Stefano","7":"Bonifacio","8":"Rome (Civitavecchia)"},"stops":[{"day":1,"name":"Nice","lat":43.7009,"lng":7.2684,"kind":"port"},{"day":2,"name":"Portofino","lat":44.3033,"lng":9.2096,"mode":"sea","path":[[7.2684,43.7009],[9.2096,44.3033]]},{"day":3,"name":"Livorno (Florence)","lat":42.7902,"lng":10.3402,"mode":"sea","path":[[9.2096,44.3033],[10.3402,42.7902]]},{"day":5,"name":"Portoferraio, Elba","lat":42.7484,"lng":10.235,"mode":"sea","path":[[10.3402,42.7902],[10.235,42.7484]]},{"day":6,"name":"Porto Santo Stefano","lat":42.4338,"lng":11.1237,"mode":"sea","path":[[10.235,42.7484],[11.1237,42.4338]]},{"day":7,"name":"Bonifacio, Corsica","lat":41.3872,"lng":9.1591,"mode":"sea","path":[[11.1237,42.4338],[9.1591,41.3872]]},{"day":8,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"mode":"sea","path":[[9.1591,41.3872],[12.4829,41.8933]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-french-and-italian-discovery-2028-05-20",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "French & Italian Discovery aboard SeaDream II",
+ "subtitle": "7 nights · Nice to Rome (Civitavecchia) · SeaDream II",
+ "days": {
+  "1": "Nice",
+  "2": "Portofino",
+  "3": "Livorno (Florence)",
+  "4": "Livorno (Florence)",
+  "5": "Portoferraio",
+  "6": "Porto Santo Stefano",
+  "7": "Bonifacio",
+  "8": "Rome (Civitavecchia)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Portofino",
+   "lat": 44.3045,
+   "lng": 9.218,
+   "mode": "sea",
+   "path": [
+    [
+     7.2684,
+     43.6889
+    ],
+    [
+     7.3251,
+     43.6622
+    ],
+    [
+     7.955,
+     43.8357
+    ],
+    [
+     9.218,
+     44.3045
+    ]
+   ],
+   "charted": [
+    9.2096,
+    44.3033
+   ],
+   "lane": "sea",
+   "clear": 1.37
+  },
+  {
+   "day": 3,
+   "name": "Livorno (Florence)",
+   "lat": 42.801,
+   "lng": 10.3418,
+   "mode": "sea",
+   "path": [
+    [
+     9.218,
+     44.3045
+    ],
+    [
+     9.9282,
+     43.4186
+    ],
+    [
+     10.344,
+     42.8159
+    ],
+    [
+     10.3418,
+     42.801
+    ]
+   ],
+   "charted": [
+    10.3402,
+    42.7902
+   ],
+   "lane": "sea",
+   "clear": 0.79
+  },
+  {
+   "day": 5,
+   "name": "Portoferraio, Elba",
+   "lat": 42.7448,
+   "lng": 10.2432,
+   "mode": "sea",
+   "path": [
+    [
+     10.3418,
+     42.801
+    ],
+    [
+     10.3426,
+     42.8155
+    ],
+    [
+     10.3396,
+     42.82
+    ],
+    [
+     10.3335,
+     42.8245
+    ],
+    [
+     10.257,
+     42.8358
+    ],
+    [
+     10.1346,
+     42.8155
+    ],
+    [
+     10.1162,
+     42.8088
+    ],
+    [
+     10.0948,
+     42.7931
+    ],
+    [
+     10.0918,
+     42.7684
+    ],
+    [
+     10.0918,
+     42.7639
+    ],
+    [
+     10.1193,
+     42.7324
+    ],
+    [
+     10.1315,
+     42.7235
+    ],
+    [
+     10.156,
+     42.7167
+    ],
+    [
+     10.2417,
+     42.719
+    ],
+    [
+     10.2478,
+     42.7235
+    ],
+    [
+     10.2478,
+     42.7414
+    ],
+    [
+     10.2432,
+     42.7448
+    ]
+   ],
+   "charted": [
+    10.235,
+    42.7484
+   ],
+   "lane": "sea",
+   "clear": 0.61
+  },
+  {
+   "day": 6,
+   "name": "Porto Santo Stefano",
+   "lat": 42.4422,
+   "lng": 11.1253,
+   "mode": "sea",
+   "path": [
+    [
+     10.2432,
+     42.7448
+    ],
+    [
+     10.2628,
+     42.7245
+    ],
+    [
+     10.2688,
+     42.72
+    ],
+    [
+     11.1057,
+     42.4566
+    ],
+    [
+     11.1253,
+     42.4422
+    ]
+   ],
+   "charted": [
+    11.1237,
+    42.4338
+   ],
+   "lane": "sea",
+   "clear": 1.09
+  },
+  {
+   "day": 7,
+   "name": "Bonifacio, Corsica",
+   "lat": 41.3812,
+   "lng": 9.1575,
+   "mode": "sea",
+   "path": [
+    [
+     11.1253,
+     42.4422
+    ],
+    [
+     11.0952,
+     42.4507
+    ],
+    [
+     10.9193,
+     42.2996
+    ],
+    [
+     9.2553,
+     41.3835
+    ],
+    [
+     9.2282,
+     41.3634
+    ],
+    [
+     9.2147,
+     41.3533
+    ],
+    [
+     9.1575,
+     41.3812
+    ]
+   ],
+   "charted": [
+    9.1591,
+    41.3872
+   ],
+   "lane": "sea",
+   "clear": 0.74
+  },
+  {
+   "day": 8,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "mode": "sea",
+   "path": [
+    [
+     9.1575,
+     41.3812
+    ],
+    [
+     9.1734,
+     41.3582
+    ],
+    [
+     9.2434,
+     41.3174
+    ],
+    [
+     12.3393,
+     41.6733
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ],
+   "lane": "sea",
+   "clear": 1.02
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

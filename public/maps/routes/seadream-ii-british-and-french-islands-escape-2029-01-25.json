@@ -1,1 +1,502 @@
-{"id":"seadream-ii-british-and-french-islands-escape-2029-01-25","type":"voyage","destination":"caribbean","title":"British & French Islands Escape aboard SeaDream II","subtitle":"10 nights · Bridgetown to Charlotte Amalie · SeaDream II","days":{"1":"Bridgetown","2":"Speightstown","3":"Tobago Cays and Port Elizabeth","4":"Port Elizabeth","5":"St. Pierre","6":"Terre De Haut","7":"Charlestown and South Friars Bay","8":"Marigot and Gustavia","9":"Gustavia","10":"White Bay","11":"Charlotte Amalie"},"stops":[{"day":1,"name":"Bridgetown, Barbados","lat":13.0817,"lng":-59.6048,"kind":"port"},{"day":2,"name":"Speightstown","lat":13.2501,"lng":-59.6424,"mode":"sea","path":[[-59.6048,13.0817],[-59.6424,13.2501]]},{"day":3,"name":"Tobago Cays","lat":12.597,"lng":-61.4172,"mode":"sea","path":[[-59.6424,13.2501],[-61.4172,12.597]]},{"day":3,"name":"Port Elizabeth, Bequia","lat":13.0165,"lng":-61.232,"mode":"sea","path":[[-61.4172,12.597],[-61.232,13.0165]]},{"day":5,"name":"St. Pierre","lat":14.74,"lng":-61.18,"mode":"sea","path":[[-61.232,13.0165],[-61.18,14.74]]},{"day":6,"name":"Terre De Haut, Îles des Saintes","lat":15.8681,"lng":-61.5822,"mode":"sea","path":[[-61.18,14.74],[-61.5822,15.8681]]},{"day":7,"name":"Charlestown, Nevis","lat":17.1338,"lng":-62.6244,"mode":"sea","path":[[-61.5822,15.8681],[-62.6244,17.1338]]},{"day":7,"name":"South Friars Bay","lat":17.2705,"lng":-62.6706,"mode":"sea","path":[[-62.6244,17.1338],[-62.6706,17.2705]]},{"day":8,"name":"Marigot","lat":18.0669,"lng":-63.0849,"mode":"sea","path":[[-62.6706,17.2705],[-63.0849,18.0669]]},{"day":8,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-63.0849,18.0669],[-62.8508,17.8957]]},{"day":10,"name":"White Bay, Jost van Dyke","lat":18.4428,"lng":-64.7629,"mode":"sea","path":[[-62.8508,17.8957],[-64.7629,18.4428]]},{"day":11,"name":"Charlotte Amalie, St. Thomas","lat":18.3429,"lng":-64.9189,"mode":"sea","path":[[-64.7629,18.4428],[-64.9189,18.3429]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-british-and-french-islands-escape-2029-01-25",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "British & French Islands Escape aboard SeaDream II",
+ "subtitle": "10 nights · Bridgetown to Charlotte Amalie · SeaDream II",
+ "days": {
+  "1": "Bridgetown",
+  "2": "Speightstown",
+  "3": "Tobago Cays and Port Elizabeth",
+  "4": "Port Elizabeth",
+  "5": "St. Pierre",
+  "6": "Terre De Haut",
+  "7": "Charlestown and South Friars Bay",
+  "8": "Marigot and Gustavia",
+  "9": "Gustavia",
+  "10": "White Bay",
+  "11": "Charlotte Amalie"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Bridgetown, Barbados",
+   "lat": 13.0721,
+   "lng": -59.6097,
+   "kind": "port",
+   "charted": [
+    -59.6048,
+    13.0817
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Speightstown",
+   "lat": 13.2501,
+   "lng": -59.6486,
+   "mode": "sea",
+   "path": [
+    [
+     -59.6097,
+     13.0721
+    ],
+    [
+     -59.6198,
+     13.071
+    ],
+    [
+     -59.6428,
+     13.0957
+    ],
+    [
+     -59.6451,
+     13.1024
+    ],
+    [
+     -59.6521,
+     13.1473
+    ],
+    [
+     -59.6567,
+     13.2394
+    ],
+    [
+     -59.6486,
+     13.2501
+    ]
+   ],
+   "charted": [
+    -59.6424,
+    13.2501
+   ],
+   "lane": "sea",
+   "clear": 1.1
+  },
+  {
+   "day": 3,
+   "name": "Tobago Cays",
+   "lat": 12.5946,
+   "lng": -61.4123,
+   "mode": "sea",
+   "path": [
+    [
+     -59.6486,
+     13.2501
+    ],
+    [
+     -61.4123,
+     12.5946
+    ]
+   ],
+   "charted": [
+    -61.4172,
+    12.597
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Port Elizabeth, Bequia",
+   "lat": 13.0285,
+   "lng": -61.2406,
+   "mode": "sea",
+   "path": [
+    [
+     -61.4123,
+     12.5946
+    ],
+    [
+     -61.3994,
+     12.5983
+    ],
+    [
+     -61.3902,
+     12.6072
+    ],
+    [
+     -61.3718,
+     12.64
+    ],
+    [
+     -61.3596,
+     12.8399
+    ],
+    [
+     -61.2984,
+     12.995
+    ],
+    [
+     -61.2648,
+     13.0219
+    ],
+    [
+     -61.2495,
+     13.0278
+    ],
+    [
+     -61.2406,
+     13.0285
+    ]
+   ],
+   "charted": [
+    -61.232,
+    13.0165
+   ],
+   "lane": "sea",
+   "clear": 0.94
+  },
+  {
+   "day": 5,
+   "name": "St. Pierre",
+   "lat": 14.74,
+   "lng": -61.18,
+   "mode": "sea",
+   "path": [
+    [
+     -61.2406,
+     13.0285
+    ],
+    [
+     -61.2984,
+     13.2077
+    ],
+    [
+     -61.2015,
+     14.6903
+    ],
+    [
+     -61.18,
+     14.74
+    ]
+   ],
+   "lane": "sea",
+   "clear": 2.19
+  },
+  {
+   "day": 6,
+   "name": "Terre De Haut, Îles des Saintes",
+   "lat": 15.8681,
+   "lng": -61.5884,
+   "mode": "sea",
+   "path": [
+    [
+     -61.18,
+     14.74
+    ],
+    [
+     -61.2167,
+     14.765
+    ],
+    [
+     -61.2489,
+     14.7961
+    ],
+    [
+     -61.5544,
+     15.6802
+    ],
+    [
+     -61.5705,
+     15.8353
+    ],
+    [
+     -61.5884,
+     15.8681
+    ]
+   ],
+   "charted": [
+    -61.5822,
+    15.8681
+   ],
+   "lane": "sea",
+   "clear": 1.48
+  },
+  {
+   "day": 7,
+   "name": "Charlestown, Nevis",
+   "lat": 17.1338,
+   "lng": -62.6369,
+   "mode": "sea",
+   "path": [
+    [
+     -61.5884,
+     15.8681
+    ],
+    [
+     -61.7091,
+     15.9223
+    ],
+    [
+     -62.4261,
+     16.6967
+    ],
+    [
+     -62.6348,
+     17.097
+    ],
+    [
+     -62.6369,
+     17.1338
+    ]
+   ],
+   "charted": [
+    -62.6244,
+    17.1338
+   ],
+   "lane": "sea",
+   "clear": 1.65
+  },
+  {
+   "day": 7,
+   "name": "South Friars Bay",
+   "lat": 17.2705,
+   "lng": -62.6706,
+   "mode": "sea",
+   "path": [
+    [
+     -62.6369,
+     17.1338
+    ],
+    [
+     -62.6436,
+     17.1462
+    ],
+    [
+     -62.6718,
+     17.2113
+    ],
+    [
+     -62.6706,
+     17.2705
+    ]
+   ],
+   "lane": "sea",
+   "clear": 1.39
+  },
+  {
+   "day": 8,
+   "name": "Marigot",
+   "lat": 18.0693,
+   "lng": -63.0912,
+   "mode": "sea",
+   "path": [
+    [
+     -62.6706,
+     17.2705
+    ],
+    [
+     -62.6749,
+     17.3047
+    ],
+    [
+     -63.1648,
+     18.0516
+    ],
+    [
+     -63.1648,
+     18.0735
+    ],
+    [
+     -63.1591,
+     18.079
+    ],
+    [
+     -63.1129,
+     18.0845
+    ],
+    [
+     -63.0912,
+     18.0693
+    ]
+   ],
+   "charted": [
+    -63.0849,
+    18.0669
+   ],
+   "lane": "sea",
+   "clear": 0.84
+  },
+  {
+   "day": 8,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0912,
+     18.0693
+    ],
+    [
+     -63.0995,
+     18.0853
+    ],
+    [
+     -63.0971,
+     18.0898
+    ],
+    [
+     -63.0617,
+     18.1235
+    ],
+    [
+     -63.0381,
+     18.1325
+    ],
+    [
+     -63.0215,
+     18.1325
+    ],
+    [
+     -63.0168,
+     18.1302
+    ],
+    [
+     -63.0121,
+     18.1257
+    ],
+    [
+     -62.92,
+     17.9506
+    ],
+    [
+     -62.8799,
+     17.9101
+    ],
+    [
+     -62.8657,
+     17.8989
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ],
+   "lane": "sea",
+   "clear": 0.88
+  },
+  {
+   "day": 10,
+   "name": "White Bay, Jost van Dyke",
+   "lat": 18.4368,
+   "lng": -64.7629,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -64.3574,
+     18.5398
+    ],
+    [
+     -64.581,
+     18.4999
+    ],
+    [
+     -64.6555,
+     18.4601
+    ],
+    [
+     -64.7254,
+     18.4202
+    ],
+    [
+     -64.7487,
+     18.4202
+    ],
+    [
+     -64.7629,
+     18.4368
+    ]
+   ],
+   "charted": [
+    -64.7629,
+    18.4428
+   ],
+   "lane": "sea",
+   "clear": 1.05
+  },
+  {
+   "day": 11,
+   "name": "Charlotte Amalie, St. Thomas",
+   "lat": 18.3345,
+   "lng": -64.9277,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7629,
+     18.4368
+    ],
+    [
+     -64.7964,
+     18.3626
+    ],
+    [
+     -64.8342,
+     18.3154
+    ],
+    [
+     -64.8366,
+     18.3132
+    ],
+    [
+     -64.8484,
+     18.3087
+    ],
+    [
+     -64.8816,
+     18.2997
+    ],
+    [
+     -64.9076,
+     18.3064
+    ],
+    [
+     -64.9242,
+     18.3154
+    ],
+    [
+     -64.9265,
+     18.3177
+    ],
+    [
+     -64.9289,
+     18.3334
+    ],
+    [
+     -64.9277,
+     18.3345
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -64.9189,
+    18.3429
+   ],
+   "lane": "sea",
+   "clear": 0.17
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

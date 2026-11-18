@@ -1,1 +1,608 @@
-{"id":"seadream-iii-the-hebrides-the-northern-isles-and-the-north-sea-2030-06-10","type":"voyage","destination":"scandinavia-northern-europe","title":"The Hebrides, the Northern Isles & the North Sea aboard SeaDream III","subtitle":"12 nights · Glasgow (Troon) to Oslo · SeaDream III","days":{"1":"Glasgow (Troon)","2":"Tobermory","3":"Portree","4":"Kirkwall","5":"Fair Isle","6":"Lerwick","7":"Invergordon","8":"Dundee","9":"Edinburgh (Leith)","10":"At sea","11":"Stavanger","12":"Lillesand","13":"Oslo"},"stops":[{"day":1,"name":"Glasgow (Troon)","lat":55.8612,"lng":-4.2502,"kind":"port"},{"day":2,"name":"Tobermory, Isle of Mull","lat":56.6228,"lng":-6.0682,"mode":"sea","path":[[-4.2502,55.8612],[-6.0682,56.6228]]},{"day":3,"name":"Portree, Isle of Skye, Scotland","lat":57.4131,"lng":-6.1944,"mode":"sea","path":[[-6.0682,56.6228],[-6.1944,57.4131]]},{"day":4,"name":"Kirkwall, Orkney, Scotland","lat":58.9817,"lng":-2.9603,"mode":"sea","path":[[-6.1944,57.4131],[-2.9603,58.9817]]},{"day":5,"name":"Fair Isle, Shetland","lat":59.5326,"lng":-1.631,"mode":"sea","path":[[-2.9603,58.9817],[-1.631,59.5326]]},{"day":6,"name":"Lerwick, Shetland, Scotland","lat":60.1531,"lng":-1.1427,"mode":"sea","path":[[-1.631,59.5326],[-1.1427,60.1531]]},{"day":7,"name":"Invergordon, Scotland","lat":57.6884,"lng":-4.1692,"mode":"sea","path":[[-1.1427,60.1531],[-4.1692,57.6884]]},{"day":8,"name":"Dundee, Scotland","lat":56.4606,"lng":-2.9702,"mode":"sea","path":[[-4.1692,57.6884],[-2.9702,56.4606]]},{"day":9,"name":"Edinburgh (Leith), Scotland","lat":55.9533,"lng":-3.1884,"mode":"sea","path":[[-2.9702,56.4606],[-3.1884,55.9533]]},{"day":11,"name":"Stavanger","lat":58.97,"lng":5.7318,"mode":"sea","path":[[-3.1884,55.9533],[5.7318,58.97]]},{"day":12,"name":"Lillesand","lat":58.1161,"lng":8.4403,"mode":"sea","path":[[5.7318,58.97],[8.4403,58.1161]]},{"day":13,"name":"Oslo","lat":59.9133,"lng":10.739,"mode":"sea","path":[[8.4403,58.1161],[10.739,59.9133]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-iii-the-hebrides-the-northern-isles-and-the-north-sea-2030-06-10",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "The Hebrides, the Northern Isles & the North Sea aboard SeaDream III",
+ "subtitle": "12 nights · Glasgow (Troon) to Oslo · SeaDream III",
+ "days": {
+  "1": "Glasgow (Troon)",
+  "2": "Tobermory",
+  "3": "Portree",
+  "4": "Kirkwall",
+  "5": "Fair Isle",
+  "6": "Lerwick",
+  "7": "Invergordon",
+  "8": "Dundee",
+  "9": "Edinburgh (Leith)",
+  "10": "At sea",
+  "11": "Stavanger",
+  "12": "Lillesand",
+  "13": "Oslo"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Glasgow (Troon)",
+   "lat": 54.9372,
+   "lng": -3.5357,
+   "kind": "port",
+   "charted": [
+    -4.2502,
+    55.8612
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Tobermory, Isle of Mull",
+   "lat": 56.6204,
+   "lng": -6.0595,
+   "mode": "sea",
+   "path": [
+    [
+     -3.5357,
+     54.9372
+    ],
+    [
+     -6.0595,
+     56.6204
+    ]
+   ],
+   "charted": [
+    -6.0682,
+    56.6228
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 3,
+   "name": "Portree, Isle of Skye, Scotland",
+   "lat": 57.4035,
+   "lng": -6.1922,
+   "mode": "sea",
+   "path": [
+    [
+     -6.0595,
+     56.6204
+    ],
+    [
+     -6.1001,
+     56.658
+    ],
+    [
+     -6.1117,
+     56.6643
+    ],
+    [
+     -6.1807,
+     56.6643
+    ],
+    [
+     -6.4223,
+     56.7457
+    ],
+    [
+     -7.0782,
+     57.0276
+    ],
+    [
+     -7.0897,
+     57.0339
+    ],
+    [
+     -7.1127,
+     57.1153
+    ],
+    [
+     -7.1012,
+     57.1717
+    ],
+    [
+     -6.5374,
+     57.7857
+    ],
+    [
+     -6.5259,
+     57.7919
+    ],
+    [
+     -6.4568,
+     57.7857
+    ],
+    [
+     -6.2958,
+     57.7418
+    ],
+    [
+     -6.2267,
+     57.7042
+    ],
+    [
+     -6.1232,
+     57.5914
+    ],
+    [
+     -6.1232,
+     57.4223
+    ],
+    [
+     -6.1462,
+     57.4098
+    ],
+    [
+     -6.1922,
+     57.4035
+    ]
+   ],
+   "charted": [
+    -6.1944,
+    57.4131
+   ],
+   "lane": "sea",
+   "clear": 0.46
+  },
+  {
+   "day": 4,
+   "name": "Kirkwall, Orkney, Scotland",
+   "lat": 58.9925,
+   "lng": -2.9603,
+   "mode": "sea",
+   "path": [
+    [
+     -6.1922,
+     57.4035
+    ],
+    [
+     -6.1829,
+     57.4085
+    ],
+    [
+     -6.1455,
+     57.415
+    ],
+    [
+     -6.1201,
+     57.4552
+    ],
+    [
+     -6.1201,
+     58.5009
+    ],
+    [
+     -6.2218,
+     58.6081
+    ],
+    [
+     -6.6036,
+     61.0883
+    ],
+    [
+     -6.4,
+     61.3832
+    ],
+    [
+     -6.3745,
+     61.3966
+    ],
+    [
+     -4.5423,
+     60.3107
+    ],
+    [
+     -4.186,
+     59.989
+    ],
+    [
+     -3.4989,
+     59.3857
+    ],
+    [
+     -3.4226,
+     59.3455
+    ],
+    [
+     -2.9136,
+     59.1712
+    ],
+    [
+     -2.8882,
+     59.1578
+    ],
+    [
+     -2.9645,
+     59.0371
+    ],
+    [
+     -2.9645,
+     59.0054
+    ],
+    [
+     -2.9603,
+     58.9925
+    ]
+   ],
+   "charted": [
+    -2.9603,
+    58.9817
+   ],
+   "lane": "sea",
+   "clear": 0.11
+  },
+  {
+   "day": 5,
+   "name": "Fair Isle, Shetland",
+   "lat": 59.5362,
+   "lng": -1.6546,
+   "mode": "sea",
+   "path": [
+    [
+     -2.9603,
+     58.9925
+    ],
+    [
+     -2.9672,
+     59.0257
+    ],
+    [
+     -2.9313,
+     59.0715
+    ],
+    [
+     -2.9224,
+     59.0807
+    ],
+    [
+     -2.9134,
+     59.0853
+    ],
+    [
+     -2.7338,
+     59.1312
+    ],
+    [
+     -2.689,
+     59.1587
+    ],
+    [
+     -2.68,
+     59.1679
+    ],
+    [
+     -2.662,
+     59.1771
+    ],
+    [
+     -2.5004,
+     59.2138
+    ],
+    [
+     -2.3658,
+     59.2642
+    ],
+    [
+     -1.6546,
+     59.5362
+    ]
+   ],
+   "charted": [
+    -1.631,
+    59.5326
+   ],
+   "lane": "sea",
+   "clear": 0.99
+  },
+  {
+   "day": 6,
+   "name": "Lerwick, Shetland, Scotland",
+   "lat": 60.1543,
+   "lng": -1.1331,
+   "mode": "sea",
+   "path": [
+    [
+     -1.6546,
+     59.5362
+    ],
+    [
+     -1.2635,
+     59.8559
+    ],
+    [
+     -1.1536,
+     59.9919
+    ],
+    [
+     -1.1367,
+     60.1363
+    ],
+    [
+     -1.1282,
+     60.1448
+    ],
+    [
+     -1.1331,
+     60.1543
+    ]
+   ],
+   "charted": [
+    -1.1427,
+    60.1531
+   ],
+   "lane": "sea",
+   "clear": 0.34
+  },
+  {
+   "day": 7,
+   "name": "Invergordon, Scotland",
+   "lat": 57.6812,
+   "lng": -4.167,
+   "mode": "sea",
+   "path": [
+    [
+     -1.1331,
+     60.1543
+    ],
+    [
+     -1.1251,
+     59.9688
+    ],
+    [
+     -1.5563,
+     59.5237
+    ],
+    [
+     -2.658,
+     58.7817
+    ],
+    [
+     -3.0892,
+     58.3366
+    ],
+    [
+     -3.5203,
+     58.0645
+    ],
+    [
+     -3.7598,
+     57.8172
+    ],
+    [
+     -3.9035,
+     57.7183
+    ],
+    [
+     -3.9514,
+     57.6936
+    ],
+    [
+     -4.167,
+     57.6812
+    ]
+   ],
+   "charted": [
+    -4.1692,
+    57.6884
+   ],
+   "lane": "sea",
+   "clear": 1.24
+  },
+  {
+   "day": 8,
+   "name": "Dundee, Scotland",
+   "lat": 56.4546,
+   "lng": -2.9659,
+   "mode": "sea",
+   "path": [
+    [
+     -4.167,
+     57.6812
+    ],
+    [
+     -2.9659,
+     56.4546
+    ]
+   ],
+   "charted": [
+    -2.9702,
+    56.4606
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 9,
+   "name": "Edinburgh (Leith), Scotland",
+   "lat": 55.9844,
+   "lng": -3.2055,
+   "mode": "sea",
+   "path": [
+    [
+     -2.9659,
+     56.4546
+    ],
+    [
+     -2.8871,
+     56.458
+    ],
+    [
+     -2.8126,
+     56.4522
+    ],
+    [
+     -2.8002,
+     56.4488
+    ],
+    [
+     -2.6452,
+     56.3591
+    ],
+    [
+     -2.5749,
+     56.281
+    ],
+    [
+     -2.5749,
+     56.2764
+    ],
+    [
+     -2.5894,
+     56.2615
+    ],
+    [
+     -2.7672,
+     56.1661
+    ],
+    [
+     -3.1868,
+     55.9971
+    ],
+    [
+     -3.2054,
+     55.9879
+    ],
+    [
+     -3.2055,
+     55.9844
+    ]
+   ],
+   "charted": [
+    -3.1884,
+    55.9533
+   ],
+   "lane": "sea",
+   "clear": 0.62
+  },
+  {
+   "day": 11,
+   "name": "Stavanger",
+   "lat": 58.9772,
+   "lng": 5.7527,
+   "mode": "sea",
+   "path": [
+    [
+     -3.2055,
+     55.9844
+    ],
+    [
+     5.7527,
+     58.9772
+    ]
+   ],
+   "charted": [
+    5.7318,
+    58.97
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 12,
+   "name": "Lillesand",
+   "lat": 58.1161,
+   "lng": 8.4403,
+   "mode": "sea",
+   "path": [
+    [
+     5.7527,
+     58.9772
+    ],
+    [
+     8.4403,
+     58.1161
+    ]
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 13,
+   "name": "Oslo",
+   "lat": 59.9049,
+   "lng": 10.7271,
+   "mode": "sea",
+   "path": [
+    [
+     8.4403,
+     58.1161
+    ],
+    [
+     9.5455,
+     58.6646
+    ],
+    [
+     10.4592,
+     58.7936
+    ],
+    [
+     10.462,
+     58.7951
+    ],
+    [
+     10.5674,
+     59.5161
+    ],
+    [
+     10.6186,
+     59.5689
+    ],
+    [
+     10.6158,
+     59.6759
+    ],
+    [
+     10.5987,
+     59.6935
+    ],
+    [
+     10.5816,
+     59.7198
+    ],
+    [
+     10.5759,
+     59.7462
+    ],
+    [
+     10.5816,
+     59.799
+    ],
+    [
+     10.6499,
+     59.8693
+    ],
+    [
+     10.6926,
+     59.8928
+    ],
+    [
+     10.7271,
+     59.9049
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    10.739,
+    59.9133
+   ],
+   "lane": "sea",
+   "clear": 0.07
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

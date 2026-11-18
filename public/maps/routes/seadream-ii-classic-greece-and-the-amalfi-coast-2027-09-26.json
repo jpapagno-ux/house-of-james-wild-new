@@ -1,1 +1,400 @@
-{"id":"seadream-ii-classic-greece-and-the-amalfi-coast-2027-09-26","type":"voyage","destination":"mediterranean","title":"Classic Greece & the Amalfi Coast aboard SeaDream II","subtitle":"7 nights · Athens (Piraeus) to Rome (Civitavecchia) · SeaDream II","days":{"1":"Athens (Piraeus)","2":"Hydra and Corinth Canal Transit","3":"Itea (Delphi)","4":"Sailing the Ionian Sea","5":"Taormina (Etna) Sicily","6":"Capri","7":"Capri and Amalfi","8":"Rome (Civitavecchia)"},"stops":[{"day":1,"name":"Athens (Piraeus)","lat":37.94,"lng":23.63,"kind":"port"},{"day":2,"name":"Hydra","lat":37.3321,"lng":23.4664,"mode":"sea","path":[[23.63,37.94],[23.4664,37.3321]]},{"day":2,"name":"Corinth Canal Transit","lat":37.93,"lng":22.99,"mode":"sea","path":[[23.4664,37.3321],[22.99,37.93]]},{"day":3,"name":"Itea (Delphi)","lat":38.4335,"lng":22.4239,"mode":"sea","path":[[22.99,37.93],[22.4239,38.4335]]},{"day":5,"name":"Taormina (Etna) Sicily","lat":37.8512,"lng":15.283,"mode":"sea","path":[[22.4239,38.4335],[15.283,37.8512]]},{"day":6,"name":"Capri","lat":40.5488,"lng":14.2284,"mode":"sea","path":[[15.283,37.8512],[14.2284,40.5488]]},{"day":7,"name":"Amalfi","lat":40.6337,"lng":14.6026,"mode":"sea","path":[[14.2284,40.5488],[14.6026,40.6337]]},{"day":8,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"mode":"sea","path":[[14.6026,40.6337],[12.4829,41.8933]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-classic-greece-and-the-amalfi-coast-2027-09-26",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Classic Greece & the Amalfi Coast aboard SeaDream II",
+ "subtitle": "7 nights · Athens (Piraeus) to Rome (Civitavecchia) · SeaDream II",
+ "days": {
+  "1": "Athens (Piraeus)",
+  "2": "Hydra and Corinth Canal Transit",
+  "3": "Itea (Delphi)",
+  "4": "Sailing the Ionian Sea",
+  "5": "Taormina (Etna) Sicily",
+  "6": "Capri",
+  "7": "Capri and Amalfi",
+  "8": "Rome (Civitavecchia)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens (Piraeus)",
+   "lat": 37.94,
+   "lng": 23.63,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Hydra",
+   "lat": 37.3117,
+   "lng": 23.4664,
+   "mode": "sea",
+   "path": [
+    [
+     23.63,
+     37.94
+    ],
+    [
+     23.5931,
+     37.3645
+    ],
+    [
+     23.5876,
+     37.3559
+    ],
+    [
+     23.544,
+     37.3213
+    ],
+    [
+     23.5004,
+     37.304
+    ],
+    [
+     23.484,
+     37.304
+    ],
+    [
+     23.4664,
+     37.3117
+    ]
+   ],
+   "charted": [
+    23.4664,
+    37.3321
+   ],
+   "lane": "sea",
+   "clear": 1.22
+  },
+  {
+   "day": 2,
+   "name": "Corinth Canal Transit",
+   "lat": 37.93,
+   "lng": 22.99,
+   "mode": "sea",
+   "path": [
+    [
+     23.4664,
+     37.3117
+    ],
+    [
+     23.5011,
+     37.3084
+    ],
+    [
+     23.5655,
+     37.3467
+    ],
+    [
+     23.5869,
+     37.3637
+    ],
+    [
+     23.5333,
+     37.521
+    ],
+    [
+     23.4045,
+     37.6357
+    ],
+    [
+     23.3937,
+     37.6442
+    ],
+    [
+     23.3132,
+     37.6655
+    ],
+    [
+     23.2971,
+     37.6782
+    ],
+    [
+     23.281,
+     37.708
+    ],
+    [
+     23.1522,
+     37.8313
+    ],
+    [
+     23.0771,
+     37.8865
+    ],
+    [
+     23.0234,
+     37.9078
+    ],
+    [
+     23.002,
+     37.9248
+    ],
+    [
+     22.99,
+     37.93
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.22
+  },
+  {
+   "day": 3,
+   "name": "Itea (Delphi)",
+   "lat": 38.4251,
+   "lng": 22.4208,
+   "mode": "sea",
+   "path": [
+    [
+     22.99,
+     37.93
+    ],
+    [
+     22.4208,
+     38.4251
+    ]
+   ],
+   "charted": [
+    22.4239,
+    38.4335
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 5,
+   "name": "Taormina (Etna) Sicily",
+   "lat": 37.8416,
+   "lng": 15.286,
+   "mode": "sea",
+   "path": [
+    [
+     22.4208,
+     38.4251
+    ],
+    [
+     22.4093,
+     38.3594
+    ],
+    [
+     22.3999,
+     38.3447
+    ],
+    [
+     22.3718,
+     38.3226
+    ],
+    [
+     22.1282,
+     38.3079
+    ],
+    [
+     21.8376,
+     38.3447
+    ],
+    [
+     21.7627,
+     38.3153
+    ],
+    [
+     21.4722,
+     38.2859
+    ],
+    [
+     21.0879,
+     38.2712
+    ],
+    [
+     21.0786,
+     38.2786
+    ],
+    [
+     21.0577,
+     38.3136
+    ],
+    [
+     20.8083,
+     38.0539
+    ],
+    [
+     20.778,
+     38.03
+    ],
+    [
+     16.6491,
+     37.9531
+    ],
+    [
+     15.286,
+     37.8416
+    ]
+   ],
+   "charted": [
+    15.283,
+    37.8512
+   ],
+   "lane": "sea",
+   "clear": 0.59
+  },
+  {
+   "day": 6,
+   "name": "Capri",
+   "lat": 40.5404,
+   "lng": 14.2347,
+   "mode": "sea",
+   "path": [
+    [
+     15.286,
+     37.8416
+    ],
+    [
+     15.4097,
+     37.9541
+    ],
+    [
+     15.5374,
+     38.1124
+    ],
+    [
+     15.614,
+     38.2311
+    ],
+    [
+     15.631,
+     38.2443
+    ],
+    [
+     15.6481,
+     38.2509
+    ],
+    [
+     15.6651,
+     38.2641
+    ],
+    [
+     14.2347,
+     40.5404
+    ]
+   ],
+   "charted": [
+    14.2284,
+    40.5488
+   ],
+   "lane": "sea",
+   "clear": 1.18
+  },
+  {
+   "day": 7,
+   "name": "Amalfi",
+   "lat": 40.6289,
+   "lng": 14.6073,
+   "mode": "sea",
+   "path": [
+    [
+     14.2347,
+     40.5404
+    ],
+    [
+     14.2478,
+     40.532
+    ],
+    [
+     14.4617,
+     40.5572
+    ],
+    [
+     14.5761,
+     40.6007
+    ],
+    [
+     14.6002,
+     40.619
+    ],
+    [
+     14.6073,
+     40.6289
+    ]
+   ],
+   "charted": [
+    14.6026,
+    40.6337
+   ],
+   "lane": "sea",
+   "clear": 1.16
+  },
+  {
+   "day": 8,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "mode": "sea",
+   "path": [
+    [
+     14.6073,
+     40.6289
+    ],
+    [
+     14.5258,
+     40.5846
+    ],
+    [
+     14.3231,
+     40.5494
+    ],
+    [
+     13.9801,
+     40.7255
+    ],
+    [
+     13.5747,
+     41.0073
+    ],
+    [
+     13.0445,
+     41.2069
+    ],
+    [
+     12.6079,
+     41.4299
+    ],
+    [
+     12.3393,
+     41.6733
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ],
+   "lane": "sea",
+   "clear": 1.31
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

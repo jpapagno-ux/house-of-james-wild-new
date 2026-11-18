@@ -1,1 +1,310 @@
-{"id":"seadream-i-yachting-the-bahamas-2029-03-24","type":"voyage","destination":"caribbean","title":"Yachting the Bahamas aboard SeaDream I","subtitle":"7 nights · San Juan to Palm Beach · SeaDream I","days":{"1":"San Juan","2":"Samana","3":"At sea","4":"San Salvador","5":"Gordon's Beach","6":"Staniel Cay","7":"Taino Beach","8":"Palm Beach"},"stops":[{"day":1,"name":"San Juan","lat":18.46,"lng":-66.11,"kind":"port"},{"day":2,"name":"Samana","lat":19.2037,"lng":-69.339,"mode":"sea","path":[[-66.11,18.46],[-69.339,19.2037]]},{"day":4,"name":"San Salvador","lat":24.032,"lng":-74.49,"mode":"sea","path":[[-69.339,19.2037],[-74.49,24.032]]},{"day":5,"name":"Gordon's Beach, Long Island","lat":22.87,"lng":-74.86,"mode":"sea","path":[[-74.49,24.032],[-74.86,22.87]]},{"day":6,"name":"Staniel Cay, Exumas","lat":24.1707,"lng":-76.4416,"mode":"sea","path":[[-74.86,22.87],[-76.4416,24.1707]]},{"day":7,"name":"Taino Beach, Grand Bahama","lat":26.52,"lng":-78.6194,"mode":"sea","path":[[-76.4416,24.1707],[-78.6194,26.52]]},{"day":8,"name":"Palm Beach","lat":26.77,"lng":-80.05,"mode":"sea","path":[[-78.6194,26.52],[-80.05,26.77]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-yachting-the-bahamas-2029-03-24",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Yachting the Bahamas aboard SeaDream I",
+ "subtitle": "7 nights · San Juan to Palm Beach · SeaDream I",
+ "days": {
+  "1": "San Juan",
+  "2": "Samana",
+  "3": "At sea",
+  "4": "San Salvador",
+  "5": "Gordon's Beach",
+  "6": "Staniel Cay",
+  "7": "Taino Beach",
+  "8": "Palm Beach"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Samana",
+   "lat": 19.1965,
+   "lng": -69.3327,
+   "mode": "sea",
+   "path": [
+    [
+     -66.11,
+     18.46
+    ],
+    [
+     -66.1419,
+     18.4902
+    ],
+    [
+     -69.3008,
+     19.1687
+    ],
+    [
+     -69.3327,
+     19.1965
+    ]
+   ],
+   "charted": [
+    -69.339,
+    19.2037
+   ],
+   "lane": "sea",
+   "clear": 1.67
+  },
+  {
+   "day": 4,
+   "name": "San Salvador",
+   "lat": 24.032,
+   "lng": -74.49,
+   "mode": "sea",
+   "path": [
+    [
+     -69.3327,
+     19.1965
+    ],
+    [
+     -69.3284,
+     19.1871
+    ],
+    [
+     -69.3228,
+     19.1818
+    ],
+    [
+     -69.2835,
+     19.1713
+    ],
+    [
+     -69.2273,
+     19.166
+    ],
+    [
+     -69.2161,
+     19.1713
+    ],
+    [
+     -69.2105,
+     19.1765
+    ],
+    [
+     -69.1544,
+     19.2559
+    ],
+    [
+     -69.1431,
+     19.2823
+    ],
+    [
+     -69.1431,
+     19.3035
+    ],
+    [
+     -69.6315,
+     19.7212
+    ],
+    [
+     -70.1491,
+     19.962
+    ],
+    [
+     -71.9113,
+     21.6142
+    ],
+    [
+     -72.3537,
+     21.7356
+    ],
+    [
+     -72.4193,
+     21.8002
+    ],
+    [
+     -72.7033,
+     22.3253
+    ],
+    [
+     -73.6736,
+     23.2665
+    ],
+    [
+     -74.4772,
+     23.9834
+    ],
+    [
+     -74.49,
+     24.032
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.96
+  },
+  {
+   "day": 5,
+   "name": "Gordon's Beach, Long Island",
+   "lat": 22.8772,
+   "lng": -74.8535,
+   "mode": "sea",
+   "path": [
+    [
+     -74.49,
+     24.032
+    ],
+    [
+     -74.4881,
+     23.9905
+    ],
+    [
+     -74.4707,
+     23.9746
+    ],
+    [
+     -74.4621,
+     23.9667
+    ],
+    [
+     -74.8169,
+     22.8711
+    ],
+    [
+     -74.8342,
+     22.8552
+    ],
+    [
+     -74.8535,
+     22.8772
+    ]
+   ],
+   "charted": [
+    -74.86,
+    22.87
+   ],
+   "lane": "sea",
+   "clear": 0.53
+  },
+  {
+   "day": 6,
+   "name": "Staniel Cay, Exumas",
+   "lat": 24.1707,
+   "lng": -76.4495,
+   "mode": "sea",
+   "path": [
+    [
+     -74.8535,
+     22.8772
+    ],
+    [
+     -74.8439,
+     22.8567
+    ],
+    [
+     -74.8631,
+     22.8392
+    ],
+    [
+     -75.2717,
+     23.1787
+    ],
+    [
+     -75.4504,
+     23.3894
+    ],
+    [
+     -76.4335,
+     24.162
+    ],
+    [
+     -76.4495,
+     24.1707
+    ]
+   ],
+   "charted": [
+    -76.4416,
+    24.1707
+   ],
+   "lane": "sea",
+   "clear": 0.33
+  },
+  {
+   "day": 7,
+   "name": "Taino Beach, Grand Bahama",
+   "lat": 26.5164,
+   "lng": -78.6167,
+   "mode": "sea",
+   "path": [
+    [
+     -76.4495,
+     24.1707
+    ],
+    [
+     -76.4402,
+     24.1996
+    ],
+    [
+     -76.8019,
+     24.8533
+    ],
+    [
+     -77.0937,
+     25.14
+    ],
+    [
+     -78.6167,
+     26.5164
+    ]
+   ],
+   "charted": [
+    -78.6194,
+    26.52
+   ],
+   "lane": "sea",
+   "clear": 0.79
+  },
+  {
+   "day": 8,
+   "name": "Palm Beach",
+   "lat": 26.77,
+   "lng": -80.05,
+   "mode": "sea",
+   "path": [
+    [
+     -78.6167,
+     26.5164
+    ],
+    [
+     -78.6682,
+     26.4744
+    ],
+    [
+     -78.7175,
+     26.4656
+    ],
+    [
+     -80.05,
+     26.77
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 2.36
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

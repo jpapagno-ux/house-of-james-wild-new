@@ -1,1 +1,376 @@
-{"id":"seadream-ii-best-of-the-secluded-caribbean-2028-02-23","type":"voyage","destination":"caribbean","title":"Best of the Secluded Caribbean aboard SeaDream II","subtitle":"10 nights · Bridgetown round trip · SeaDream II","days":{"1":"Bridgetown","2":"Rodney Bay","3":"South Friars Bay","4":"Saba and Gustavia","5":"Gustavia","6":"Terre De Haut","7":"Terre De Haut","8":"Tobago Cays and Port Elizabeth","9":"Port Elizabeth","10":"Mayreau","11":"Bridgetown"},"stops":[{"day":1,"name":"Bridgetown, Barbados","lat":13.0817,"lng":-59.6048,"kind":"port"},{"day":2,"name":"Rodney Bay","lat":14.0748,"lng":-60.9527,"mode":"sea","path":[[-59.6048,13.0817],[-60.9527,14.0748]]},{"day":3,"name":"South Friars Bay","lat":17.2705,"lng":-62.6706,"mode":"sea","path":[[-60.9527,14.0748],[-62.6706,17.2705]]},{"day":4,"name":"Saba","lat":17.632,"lng":-63.2733,"mode":"sea","path":[[-62.6706,17.2705],[-63.2733,17.632]]},{"day":4,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-63.2733,17.632],[-62.8508,17.8957]]},{"day":6,"name":"Terre De Haut, Îles des Saintes","lat":15.8681,"lng":-61.5822,"mode":"sea","path":[[-62.8508,17.8957],[-61.5822,15.8681]]},{"day":8,"name":"Tobago Cays","lat":12.597,"lng":-61.4172,"mode":"sea","path":[[-61.5822,15.8681],[-61.4172,12.597]]},{"day":8,"name":"Port Elizabeth, Bequia","lat":13.0165,"lng":-61.232,"mode":"sea","path":[[-61.4172,12.597],[-61.232,13.0165]]},{"day":10,"name":"Mayreau","lat":12.6397,"lng":-61.3897,"mode":"sea","path":[[-61.232,13.0165],[-61.3897,12.6397]]},{"day":11,"name":"Bridgetown, Barbados","lat":13.0817,"lng":-59.6048,"mode":"sea","path":[[-61.3897,12.6397],[-59.6048,13.0817]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-best-of-the-secluded-caribbean-2028-02-23",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "Best of the Secluded Caribbean aboard SeaDream II",
+ "subtitle": "10 nights · Bridgetown round trip · SeaDream II",
+ "days": {
+  "1": "Bridgetown",
+  "2": "Rodney Bay",
+  "3": "South Friars Bay",
+  "4": "Saba and Gustavia",
+  "5": "Gustavia",
+  "6": "Terre De Haut",
+  "7": "Terre De Haut",
+  "8": "Tobago Cays and Port Elizabeth",
+  "9": "Port Elizabeth",
+  "10": "Mayreau",
+  "11": "Bridgetown"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Bridgetown, Barbados",
+   "lat": 13.0721,
+   "lng": -59.6097,
+   "kind": "port",
+   "charted": [
+    -59.6048,
+    13.0817
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Rodney Bay",
+   "lat": 14.0772,
+   "lng": -60.9601,
+   "mode": "sea",
+   "path": [
+    [
+     -59.6097,
+     13.0721
+    ],
+    [
+     -59.6363,
+     13.0883
+    ],
+    [
+     -60.9236,
+     14.1151
+    ],
+    [
+     -60.95,
+     14.1183
+    ],
+    [
+     -60.9732,
+     14.0991
+    ],
+    [
+     -60.9798,
+     14.0926
+    ],
+    [
+     -60.9798,
+     14.0862
+    ],
+    [
+     -60.9732,
+     14.0798
+    ],
+    [
+     -60.9601,
+     14.0772
+    ]
+   ],
+   "charted": [
+    -60.9527,
+    14.0748
+   ],
+   "lane": "sea",
+   "clear": 0.9
+  },
+  {
+   "day": 3,
+   "name": "South Friars Bay",
+   "lat": 17.2705,
+   "lng": -62.6706,
+   "mode": "sea",
+   "path": [
+    [
+     -60.9601,
+     14.0772
+    ],
+    [
+     -62.5286,
+     17.1777
+    ],
+    [
+     -62.6426,
+     17.2655
+    ],
+    [
+     -62.6706,
+     17.2705
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.89
+  },
+  {
+   "day": 4,
+   "name": "Saba",
+   "lat": 17.632,
+   "lng": -63.2733,
+   "mode": "sea",
+   "path": [
+    [
+     -62.6706,
+     17.2705
+    ],
+    [
+     -62.7378,
+     17.2674
+    ],
+    [
+     -62.7834,
+     17.2833
+    ],
+    [
+     -63.2641,
+     17.6074
+    ],
+    [
+     -63.2724,
+     17.6153
+    ],
+    [
+     -63.2733,
+     17.632
+    ]
+   ],
+   "lane": "sea",
+   "clear": 1.53
+  },
+  {
+   "day": 4,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -63.2733,
+     17.632
+    ],
+    [
+     -63.2669,
+     17.6462
+    ],
+    [
+     -63.2355,
+     17.6762
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ],
+   "lane": "sea",
+   "clear": 1.49
+  },
+  {
+   "day": 6,
+   "name": "Terre De Haut, Îles des Saintes",
+   "lat": 15.8681,
+   "lng": -61.5884,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -62.1554,
+     16.7763
+    ],
+    [
+     -61.7334,
+     15.9409
+    ],
+    [
+     -61.7189,
+     15.927
+    ],
+    [
+     -61.5884,
+     15.8681
+    ]
+   ],
+   "charted": [
+    -61.5822,
+    15.8681
+   ],
+   "lane": "sea",
+   "clear": 1.39
+  },
+  {
+   "day": 8,
+   "name": "Tobago Cays",
+   "lat": 12.5946,
+   "lng": -61.4123,
+   "mode": "sea",
+   "path": [
+    [
+     -61.5884,
+     15.8681
+    ],
+    [
+     -61.5377,
+     15.8517
+    ],
+    [
+     -61.4123,
+     12.5946
+    ]
+   ],
+   "charted": [
+    -61.4172,
+    12.597
+   ],
+   "lane": "sea",
+   "clear": 3.81
+  },
+  {
+   "day": 8,
+   "name": "Port Elizabeth, Bequia",
+   "lat": 13.0285,
+   "lng": -61.2406,
+   "mode": "sea",
+   "path": [
+    [
+     -61.4123,
+     12.5946
+    ],
+    [
+     -61.3994,
+     12.5983
+    ],
+    [
+     -61.3902,
+     12.6072
+    ],
+    [
+     -61.3718,
+     12.64
+    ],
+    [
+     -61.3596,
+     12.8399
+    ],
+    [
+     -61.2984,
+     12.995
+    ],
+    [
+     -61.2648,
+     13.0219
+    ],
+    [
+     -61.2495,
+     13.0278
+    ],
+    [
+     -61.2406,
+     13.0285
+    ]
+   ],
+   "charted": [
+    -61.232,
+    13.0165
+   ],
+   "lane": "sea",
+   "clear": 0.94
+  },
+  {
+   "day": 10,
+   "name": "Mayreau",
+   "lat": 12.6337,
+   "lng": -61.3872,
+   "mode": "sea",
+   "path": [
+    [
+     -61.2406,
+     13.0285
+    ],
+    [
+     -61.2529,
+     13.0279
+    ],
+    [
+     -61.2947,
+     12.9953
+    ],
+    [
+     -61.3003,
+     12.9899
+    ],
+    [
+     -61.3726,
+     12.6777
+    ],
+    [
+     -61.3726,
+     12.637
+    ],
+    [
+     -61.3754,
+     12.6343
+    ],
+    [
+     -61.3872,
+     12.6337
+    ]
+   ],
+   "charted": [
+    -61.3897,
+    12.6397
+   ],
+   "lane": "sea",
+   "clear": 0.97
+  },
+  {
+   "day": 11,
+   "name": "Bridgetown, Barbados",
+   "lat": 13.0721,
+   "lng": -59.6097,
+   "mode": "sea",
+   "path": [
+    [
+     -61.3872,
+     12.6337
+    ],
+    [
+     -59.6097,
+     13.0721
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -59.6048,
+    13.0817
+   ]
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

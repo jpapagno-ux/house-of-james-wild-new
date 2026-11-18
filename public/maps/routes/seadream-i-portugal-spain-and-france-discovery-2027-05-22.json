@@ -1,1 +1,139 @@
-{"id":"seadream-i-portugal-spain-and-france-discovery-2027-05-22","type":"voyage","destination":"scandinavia-northern-europe","title":"Portugal, Spain & France Discovery aboard SeaDream I","subtitle":"8 nights · Lisbon to Bordeaux · SeaDream I","days":{"1":"Lisbon","2":"Vigo (Baiona)","3":"Vigo (Baiona)","4":"A Coruña","5":"Sailing the Cantabrian Sea","6":"Saint-Jean-de-Luz","7":"Bordeaux","8":"Bordeaux","9":"Bordeaux"},"stops":[{"day":1,"name":"Lisbon","lat":38.7078,"lng":-9.1366,"kind":"port"},{"day":2,"name":"Vigo (Baiona), Galicia","lat":42.1986,"lng":-8.728,"mode":"sea","path":[[-9.1366,38.7078],[-8.728,42.1986]]},{"day":4,"name":"A Coruña","lat":43.3455,"lng":-8.4139,"mode":"sea","path":[[-8.728,42.1986],[-8.4139,43.3455]]},{"day":6,"name":"Saint-Jean-de-Luz","lat":43.3872,"lng":-1.6637,"mode":"sea","path":[[-8.4139,43.3455],[-1.6637,43.3872]]},{"day":7,"name":"Bordeaux","lat":44.8412,"lng":-0.58,"mode":"sea","path":[[-1.6637,43.3872],[-0.58,44.8412]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-portugal-spain-and-france-discovery-2027-05-22",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "Portugal, Spain & France Discovery aboard SeaDream I",
+ "subtitle": "8 nights · Lisbon to Bordeaux · SeaDream I",
+ "days": {
+  "1": "Lisbon",
+  "2": "Vigo (Baiona)",
+  "3": "Vigo (Baiona)",
+  "4": "A Coruña",
+  "5": "Sailing the Cantabrian Sea",
+  "6": "Saint-Jean-de-Luz",
+  "7": "Bordeaux",
+  "8": "Bordeaux",
+  "9": "Bordeaux"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Lisbon",
+   "lat": 38.7078,
+   "lng": -9.1366,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Vigo (Baiona), Galicia",
+   "lat": 42.2369,
+   "lng": -8.7442,
+   "mode": "sea",
+   "path": [
+    [
+     -9.1366,
+     38.7078
+    ],
+    [
+     -8.7442,
+     42.2369
+    ]
+   ],
+   "charted": [
+    -8.728,
+    42.1986
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 4,
+   "name": "A Coruña",
+   "lat": 43.3587,
+   "lng": -8.3826,
+   "mode": "sea",
+   "path": [
+    [
+     -8.7442,
+     42.2369
+    ],
+    [
+     -8.3826,
+     43.3587
+    ]
+   ],
+   "charted": [
+    -8.4139,
+    43.3455
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 6,
+   "name": "Saint-Jean-de-Luz",
+   "lat": 43.3932,
+   "lng": -1.6686,
+   "mode": "sea",
+   "path": [
+    [
+     -8.3826,
+     43.3587
+    ],
+    [
+     -1.6686,
+     43.3932
+    ]
+   ],
+   "charted": [
+    -1.6637,
+    43.3872
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 7,
+   "name": "Bordeaux",
+   "lat": 45.335,
+   "lng": -0.7659,
+   "mode": "sea",
+   "path": [
+    [
+     -1.6686,
+     43.3932
+    ],
+    [
+     -0.7659,
+     45.335
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -0.58,
+    44.8412
+   ],
+   "lane": "passage"
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

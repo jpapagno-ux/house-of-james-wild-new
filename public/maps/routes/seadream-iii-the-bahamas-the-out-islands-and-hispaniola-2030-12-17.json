@@ -1,1 +1,442 @@
-{"id":"seadream-iii-the-bahamas-the-out-islands-and-hispaniola-2030-12-17","type":"voyage","destination":"caribbean","title":"The Bahamas, the Out Islands & Hispaniola aboard SeaDream III","subtitle":"10 nights · Palm Beach to San Juan · SeaDream III","days":{"1":"Palm Beach","2":"Taino Beach","3":"Nassau","4":"Nassau","5":"Staniel Cay","6":"Gordon's Beach","7":"San Salvador","8":"Salt Cay","9":"Monte Cristi","10":"Samana","11":"San Juan"},"stops":[{"day":1,"name":"Palm Beach","lat":26.77,"lng":-80.05,"kind":"port"},{"day":2,"name":"Taino Beach, Grand Bahama","lat":26.52,"lng":-78.6194,"mode":"sea","path":[[-80.05,26.77],[-78.6194,26.52]]},{"day":3,"name":"Nassau","lat":25.0782,"lng":-77.3383,"mode":"sea","path":[[-78.6194,26.52],[-77.3383,25.0782]]},{"day":5,"name":"Staniel Cay, Exumas","lat":24.1707,"lng":-76.4416,"mode":"sea","path":[[-77.3383,25.0782],[-76.4416,24.1707]]},{"day":6,"name":"Gordon's Beach, Long Island","lat":22.87,"lng":-74.86,"mode":"sea","path":[[-76.4416,24.1707],[-74.86,22.87]]},{"day":7,"name":"San Salvador","lat":24.032,"lng":-74.49,"mode":"sea","path":[[-74.86,22.87],[-74.49,24.032]]},{"day":8,"name":"Salt Cay","lat":23.8512,"lng":-76.2096,"mode":"sea","path":[[-74.49,24.032],[-76.2096,23.8512]]},{"day":9,"name":"Monte Cristi","lat":19.87,"lng":-71.65,"mode":"sea","path":[[-76.2096,23.8512],[-71.65,19.87]]},{"day":10,"name":"Samana","lat":19.2037,"lng":-69.339,"mode":"sea","path":[[-71.65,19.87],[-69.339,19.2037]]},{"day":11,"name":"San Juan","lat":18.46,"lng":-66.11,"mode":"sea","path":[[-69.339,19.2037],[-66.11,18.46]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-iii-the-bahamas-the-out-islands-and-hispaniola-2030-12-17",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "The Bahamas, the Out Islands & Hispaniola aboard SeaDream III",
+ "subtitle": "10 nights · Palm Beach to San Juan · SeaDream III",
+ "days": {
+  "1": "Palm Beach",
+  "2": "Taino Beach",
+  "3": "Nassau",
+  "4": "Nassau",
+  "5": "Staniel Cay",
+  "6": "Gordon's Beach",
+  "7": "San Salvador",
+  "8": "Salt Cay",
+  "9": "Monte Cristi",
+  "10": "Samana",
+  "11": "San Juan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Palm Beach",
+   "lat": 26.77,
+   "lng": -80.05,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Taino Beach, Grand Bahama",
+   "lat": 26.5164,
+   "lng": -78.6167,
+   "mode": "sea",
+   "path": [
+    [
+     -80.05,
+     26.77
+    ],
+    [
+     -78.6978,
+     26.4656
+    ],
+    [
+     -78.6682,
+     26.4744
+    ],
+    [
+     -78.6167,
+     26.5164
+    ]
+   ],
+   "charted": [
+    -78.6194,
+    26.52
+   ],
+   "lane": "sea",
+   "clear": 2.36
+  },
+  {
+   "day": 3,
+   "name": "Nassau",
+   "lat": 25.089,
+   "lng": -77.3383,
+   "mode": "sea",
+   "path": [
+    [
+     -78.6167,
+     26.5164
+    ],
+    [
+     -77.5896,
+     25.5426
+    ],
+    [
+     -77.3383,
+     25.089
+    ]
+   ],
+   "charted": [
+    -77.3383,
+    25.0782
+   ],
+   "lane": "sea",
+   "clear": 12.64
+  },
+  {
+   "day": 5,
+   "name": "Staniel Cay, Exumas",
+   "lat": 24.1707,
+   "lng": -76.4495,
+   "mode": "sea",
+   "path": [
+    [
+     -77.3383,
+     25.089
+    ],
+    [
+     -77.3089,
+     25.1065
+    ],
+    [
+     -77.0867,
+     25.1381
+    ],
+    [
+     -76.7881,
+     24.835
+    ],
+    [
+     -76.4408,
+     24.2037
+    ],
+    [
+     -76.4495,
+     24.1707
+    ]
+   ],
+   "charted": [
+    -76.4416,
+    24.1707
+   ],
+   "lane": "sea",
+   "clear": 1.04
+  },
+  {
+   "day": 6,
+   "name": "Gordon's Beach, Long Island",
+   "lat": 22.8772,
+   "lng": -74.8535,
+   "mode": "sea",
+   "path": [
+    [
+     -76.4495,
+     24.1707
+    ],
+    [
+     -76.4499,
+     24.1624
+    ],
+    [
+     -76.4456,
+     24.1545
+    ],
+    [
+     -76.4413,
+     24.1505
+    ],
+    [
+     -76.4196,
+     24.1505
+    ],
+    [
+     -75.4503,
+     23.3966
+    ],
+    [
+     -75.2599,
+     23.1744
+    ],
+    [
+     -74.8617,
+     22.8451
+    ],
+    [
+     -74.8574,
+     22.8451
+    ],
+    [
+     -74.8401,
+     22.8609
+    ],
+    [
+     -74.8535,
+     22.8772
+    ]
+   ],
+   "charted": [
+    -74.86,
+    22.87
+   ],
+   "lane": "sea",
+   "clear": 0.03
+  },
+  {
+   "day": 7,
+   "name": "San Salvador",
+   "lat": 24.032,
+   "lng": -74.49,
+   "mode": "sea",
+   "path": [
+    [
+     -74.8535,
+     22.8772
+    ],
+    [
+     -74.8342,
+     22.8552
+    ],
+    [
+     -74.8169,
+     22.8711
+    ],
+    [
+     -74.4621,
+     23.9667
+    ],
+    [
+     -74.4794,
+     23.9826
+    ],
+    [
+     -74.4881,
+     23.9905
+    ],
+    [
+     -74.49,
+     24.032
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.82
+  },
+  {
+   "day": 8,
+   "name": "Salt Cay",
+   "lat": 23.8512,
+   "lng": -76.2096,
+   "mode": "sea",
+   "path": [
+    [
+     -74.49,
+     24.032
+    ],
+    [
+     -74.5045,
+     24.0157
+    ],
+    [
+     -74.4809,
+     23.9833
+    ],
+    [
+     -74.469,
+     23.9725
+    ],
+    [
+     -74.4809,
+     23.9401
+    ],
+    [
+     -74.4927,
+     23.9293
+    ],
+    [
+     -76.2096,
+     23.8512
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.65
+  },
+  {
+   "day": 9,
+   "name": "Monte Cristi",
+   "lat": 19.87,
+   "lng": -71.6602,
+   "mode": "sea",
+   "path": [
+    [
+     -76.2096,
+     23.8512
+    ],
+    [
+     -76.1909,
+     23.8483
+    ],
+    [
+     -75.4298,
+     23.4113
+    ],
+    [
+     -75.4239,
+     23.406
+    ],
+    [
+     -75.3645,
+     23.1117
+    ],
+    [
+     -73.8196,
+     21.719
+    ],
+    [
+     -73.0228,
+     21.3493
+    ],
+    [
+     -72.9878,
+     21.3169
+    ],
+    [
+     -72.5053,
+     20.6095
+    ],
+    [
+     -71.6602,
+     19.87
+    ]
+   ],
+   "charted": [
+    -71.65,
+    19.87
+   ],
+   "lane": "sea",
+   "clear": 0.81
+  },
+  {
+   "day": 10,
+   "name": "Samana",
+   "lat": 19.1965,
+   "lng": -69.3327,
+   "mode": "sea",
+   "path": [
+    [
+     -71.6602,
+     19.87
+    ],
+    [
+     -71.6372,
+     19.8938
+    ],
+    [
+     -71.6258,
+     19.9045
+    ],
+    [
+     -71.5803,
+     19.9206
+    ],
+    [
+     -70.9829,
+     19.9421
+    ],
+    [
+     -69.9759,
+     19.7276
+    ],
+    [
+     -69.2135,
+     19.3683
+    ],
+    [
+     -69.1452,
+     19.304
+    ],
+    [
+     -69.1452,
+     19.2772
+    ],
+    [
+     -69.1566,
+     19.2557
+    ],
+    [
+     -69.2135,
+     19.1807
+    ],
+    [
+     -69.2305,
+     19.1646
+    ],
+    [
+     -69.3102,
+     19.1753
+    ],
+    [
+     -69.3216,
+     19.1807
+    ],
+    [
+     -69.3273,
+     19.186
+    ],
+    [
+     -69.3327,
+     19.1965
+    ]
+   ],
+   "charted": [
+    -69.339,
+    19.2037
+   ],
+   "lane": "sea",
+   "clear": 0.55
+  },
+  {
+   "day": 11,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "mode": "sea",
+   "path": [
+    [
+     -69.3327,
+     19.1965
+    ],
+    [
+     -69.3008,
+     19.1687
+    ],
+    [
+     -66.1419,
+     18.4902
+    ],
+    [
+     -66.11,
+     18.46
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.67
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

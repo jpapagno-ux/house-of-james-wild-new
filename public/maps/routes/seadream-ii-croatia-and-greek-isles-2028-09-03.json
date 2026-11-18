@@ -1,1 +1,408 @@
-{"id":"seadream-ii-croatia-and-greek-isles-2028-09-03","type":"voyage","destination":"mediterranean","title":"Croatia & Greek Isles aboard SeaDream II","subtitle":"7 nights · Athens (Piraeus) to Venice · SeaDream II","days":{"1":"Athens (Piraeus)","2":"Corinth Canal Transit and Galaxidi (Delphi)","3":"Parga","4":"Dubrovnik","5":"Dubrovnik","6":"Hvar","7":"Rovinj","8":"Venice"},"stops":[{"day":1,"name":"Athens (Piraeus)","lat":37.94,"lng":23.63,"kind":"port"},{"day":2,"name":"Corinth Canal Transit","lat":37.93,"lng":22.99,"mode":"sea","path":[[23.63,37.94],[22.99,37.93]]},{"day":2,"name":"Galaxidi (Delphi)","lat":38.3775,"lng":22.383,"mode":"sea","path":[[22.99,37.93],[22.383,38.3775]]},{"day":3,"name":"Parga","lat":39.2853,"lng":20.3998,"mode":"sea","path":[[22.383,38.3775],[20.3998,39.2853]]},{"day":4,"name":"Dubrovnik, Old Town","lat":42.6491,"lng":18.094,"mode":"sea","path":[[20.3998,39.2853],[18.094,42.6491]]},{"day":6,"name":"Hvar","lat":43.1739,"lng":16.5565,"mode":"sea","path":[[18.094,42.6491],[16.5565,43.1739]]},{"day":7,"name":"Rovinj","lat":45.0826,"lng":13.6343,"mode":"sea","path":[[16.5565,43.1739],[13.6343,45.0826]]},{"day":8,"name":"Venice","lat":45.4372,"lng":12.3346,"mode":"sea","path":[[13.6343,45.0826],[12.3346,45.4372]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-croatia-and-greek-isles-2028-09-03",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Croatia & Greek Isles aboard SeaDream II",
+ "subtitle": "7 nights · Athens (Piraeus) to Venice · SeaDream II",
+ "days": {
+  "1": "Athens (Piraeus)",
+  "2": "Corinth Canal Transit and Galaxidi (Delphi)",
+  "3": "Parga",
+  "4": "Dubrovnik",
+  "5": "Dubrovnik",
+  "6": "Hvar",
+  "7": "Rovinj",
+  "8": "Venice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Athens (Piraeus)",
+   "lat": 37.94,
+   "lng": 23.63,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Corinth Canal Transit",
+   "lat": 37.93,
+   "lng": 22.99,
+   "mode": "sea",
+   "path": [
+    [
+     23.63,
+     37.94
+    ],
+    [
+     23.5102,
+     37.8891
+    ],
+    [
+     23.4486,
+     37.8683
+    ],
+    [
+     23.0306,
+     37.91
+    ],
+    [
+     23.013,
+     37.9169
+    ],
+    [
+     22.9998,
+     37.9273
+    ],
+    [
+     22.99,
+     37.93
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.09
+  },
+  {
+   "day": 2,
+   "name": "Galaxidi (Delphi)",
+   "lat": 38.3835,
+   "lng": 22.3876,
+   "mode": "sea",
+   "path": [
+    [
+     22.99,
+     37.93
+    ],
+    [
+     22.3876,
+     38.3835
+    ]
+   ],
+   "charted": [
+    22.383,
+    38.3775
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 3,
+   "name": "Parga",
+   "lat": 39.2781,
+   "lng": 20.4013,
+   "mode": "sea",
+   "path": [
+    [
+     22.3876,
+     38.3835
+    ],
+    [
+     22.3971,
+     38.3837
+    ],
+    [
+     22.4068,
+     38.3761
+    ],
+    [
+     22.4117,
+     38.3648
+    ],
+    [
+     22.4117,
+     38.3572
+    ],
+    [
+     22.4019,
+     38.3421
+    ],
+    [
+     22.3777,
+     38.3232
+    ],
+    [
+     22.1543,
+     38.3118
+    ],
+    [
+     21.8387,
+     38.3458
+    ],
+    [
+     21.7707,
+     38.3194
+    ],
+    [
+     21.7659,
+     38.3156
+    ],
+    [
+     21.494,
+     38.2853
+    ],
+    [
+     21.091,
+     38.274
+    ],
+    [
+     20.6589,
+     38.5085
+    ],
+    [
+     20.5326,
+     38.5501
+    ],
+    [
+     20.5278,
+     38.5539
+    ],
+    [
+     20.4013,
+     39.2781
+    ]
+   ],
+   "charted": [
+    20.3998,
+    39.2853
+   ],
+   "lane": "sea",
+   "clear": 0.44
+  },
+  {
+   "day": 4,
+   "name": "Dubrovnik, Old Town",
+   "lat": 42.6395,
+   "lng": 18.0907,
+   "mode": "sea",
+   "path": [
+    [
+     20.4013,
+     39.2781
+    ],
+    [
+     20.3435,
+     39.262
+    ],
+    [
+     20.1258,
+     39.3278
+    ],
+    [
+     19.9082,
+     39.4099
+    ],
+    [
+     19.8647,
+     39.4346
+    ],
+    [
+     19.7342,
+     39.5414
+    ],
+    [
+     19.6253,
+     39.7057
+    ],
+    [
+     19.6036,
+     39.7468
+    ],
+    [
+     19.6145,
+     39.7715
+    ],
+    [
+     19.4948,
+     39.9605
+    ],
+    [
+     18.1021,
+     42.6063
+    ],
+    [
+     18.0907,
+     42.6395
+    ]
+   ],
+   "charted": [
+    18.094,
+    42.6491
+   ],
+   "lane": "sea",
+   "clear": 1.63
+  },
+  {
+   "day": 6,
+   "name": "Hvar",
+   "lat": 43.1823,
+   "lng": 16.5664,
+   "mode": "sea",
+   "path": [
+    [
+     18.0907,
+     42.6395
+    ],
+    [
+     17.25,
+     42.7257
+    ],
+    [
+     16.6526,
+     42.9022
+    ],
+    [
+     16.2963,
+     43.1632
+    ],
+    [
+     16.2963,
+     43.1708
+    ],
+    [
+     16.3382,
+     43.1939
+    ],
+    [
+     16.3697,
+     43.2015
+    ],
+    [
+     16.4849,
+     43.2169
+    ],
+    [
+     16.5164,
+     43.2092
+    ],
+    [
+     16.5664,
+     43.1823
+    ]
+   ],
+   "charted": [
+    16.5565,
+    43.1739
+   ],
+   "lane": "sea",
+   "clear": 0.42
+  },
+  {
+   "day": 7,
+   "name": "Rovinj",
+   "lat": 45.079,
+   "lng": 13.6275,
+   "mode": "sea",
+   "path": [
+    [
+     16.5664,
+     43.1823
+    ],
+    [
+     16.1638,
+     43.3939
+    ],
+    [
+     16.0488,
+     43.4352
+    ],
+    [
+     15.4669,
+     43.6827
+    ],
+    [
+     15.4023,
+     43.7136
+    ],
+    [
+     15.2945,
+     43.7704
+    ],
+    [
+     13.8002,
+     44.8326
+    ],
+    [
+     13.7356,
+     44.8893
+    ],
+    [
+     13.7356,
+     44.9099
+    ],
+    [
+     13.7212,
+     44.9254
+    ],
+    [
+     13.6275,
+     45.079
+    ]
+   ],
+   "charted": [
+    13.6343,
+    45.0826
+   ],
+   "lane": "sea",
+   "clear": 0.21
+  },
+  {
+   "day": 8,
+   "name": "Venice",
+   "lat": 45.4468,
+   "lng": 12.3346,
+   "mode": "sea",
+   "path": [
+    [
+     13.6275,
+     45.079
+    ],
+    [
+     12.4255,
+     45.4183
+    ],
+    [
+     12.39,
+     45.4433
+    ],
+    [
+     12.3346,
+     45.4468
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    12.3346,
+    45.4372
+   ],
+   "lane": "sea",
+   "clear": 0.56
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

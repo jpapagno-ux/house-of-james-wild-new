@@ -1,1 +1,308 @@
-{"id":"seadream-ii-southern-spain-and-the-french-riviera-2027-05-02","type":"voyage","destination":"mediterranean","title":"Southern Spain & the French Riviera aboard SeaDream II","subtitle":"7 nights · Malaga to Nice · SeaDream II","days":{"1":"Malaga","2":"Cartagena","3":"Cartagena","4":"Valencia","5":"Castellón","6":"Port-Vendres","7":"Sanary-sur-Mer","8":"Nice"},"stops":[{"day":1,"name":"Malaga","lat":36.71,"lng":-4.42,"kind":"port"},{"day":2,"name":"Cartagena","lat":37.6155,"lng":-0.9875,"mode":"sea","path":[[-4.42,36.71],[-0.9875,37.6155]]},{"day":4,"name":"Valencia","lat":39.4697,"lng":-0.3763,"mode":"sea","path":[[-0.9875,37.6155],[-0.3763,39.4697]]},{"day":5,"name":"Castellón","lat":39.97,"lng":0.02,"mode":"sea","path":[[-0.3763,39.4697],[0.02,39.97]]},{"day":6,"name":"Port-Vendres","lat":42.5204,"lng":3.1056,"mode":"sea","path":[[0.02,39.97],[3.1056,42.5204]]},{"day":7,"name":"Sanary-sur-Mer","lat":43.1177,"lng":5.8009,"mode":"sea","path":[[3.1056,42.5204],[5.8009,43.1177]]},{"day":8,"name":"Nice","lat":43.7009,"lng":7.2684,"mode":"sea","path":[[5.8009,43.1177],[7.2684,43.7009]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-southern-spain-and-the-french-riviera-2027-05-02",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Southern Spain & the French Riviera aboard SeaDream II",
+ "subtitle": "7 nights · Malaga to Nice · SeaDream II",
+ "days": {
+  "1": "Malaga",
+  "2": "Cartagena",
+  "3": "Cartagena",
+  "4": "Valencia",
+  "5": "Castellón",
+  "6": "Port-Vendres",
+  "7": "Sanary-sur-Mer",
+  "8": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Malaga",
+   "lat": 36.71,
+   "lng": -4.42,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Cartagena",
+   "lat": 37.5808,
+   "lng": -0.9981,
+   "mode": "sea",
+   "path": [
+    [
+     -4.42,
+     36.71
+    ],
+    [
+     -4.2029,
+     36.6768
+    ],
+    [
+     -2.7679,
+     36.658
+    ],
+    [
+     -2.1327,
+     36.6955
+    ],
+    [
+     -0.9981,
+     37.5808
+    ]
+   ],
+   "charted": [
+    -0.9875,
+    37.6155
+   ],
+   "lane": "sea",
+   "clear": 2.6
+  },
+  {
+   "day": 4,
+   "name": "Valencia",
+   "lat": 39.4697,
+   "lng": -0.3158,
+   "mode": "sea",
+   "path": [
+    [
+     -0.9981,
+     37.5808
+    ],
+    [
+     -0.986,
+     37.5533
+    ],
+    [
+     -0.9801,
+     37.5487
+    ],
+    [
+     -0.8798,
+     37.5441
+    ],
+    [
+     -0.7145,
+     37.5949
+    ],
+    [
+     -0.1243,
+     38.1536
+    ],
+    [
+     0.2416,
+     38.7261
+    ],
+    [
+     0.2416,
+     38.7584
+    ],
+    [
+     -0.2778,
+     39.4556
+    ],
+    [
+     -0.2896,
+     39.4649
+    ],
+    [
+     -0.3073,
+     39.4695
+    ],
+    [
+     -0.3158,
+     39.4697
+    ]
+   ],
+   "charted": [
+    -0.3763,
+    39.4697
+   ],
+   "lane": "sea",
+   "clear": 0.69
+  },
+  {
+   "day": 5,
+   "name": "Castellón",
+   "lat": 39.9616,
+   "lng": 0.02,
+   "mode": "sea",
+   "path": [
+    [
+     -0.3158,
+     39.4697
+    ],
+    [
+     -0.0027,
+     39.9135
+    ],
+    [
+     0.0193,
+     39.9541
+    ],
+    [
+     0.02,
+     39.9616
+    ]
+   ],
+   "charted": [
+    0.02,
+    39.97
+   ],
+   "lane": "sea",
+   "clear": 0.17
+  },
+  {
+   "day": 6,
+   "name": "Port-Vendres",
+   "lat": 42.5276,
+   "lng": 3.1105,
+   "mode": "sea",
+   "path": [
+    [
+     0.02,
+     39.9616
+    ],
+    [
+     3.0285,
+     41.7474
+    ],
+    [
+     3.1927,
+     41.8532
+    ],
+    [
+     3.2396,
+     41.9061
+    ],
+    [
+     3.3335,
+     42.3119
+    ],
+    [
+     3.1105,
+     42.5276
+    ]
+   ],
+   "charted": [
+    3.1056,
+    42.5204
+   ],
+   "lane": "sea",
+   "clear": 1.2
+  },
+  {
+   "day": 7,
+   "name": "Sanary-sur-Mer",
+   "lat": 43.1093,
+   "lng": 5.8009,
+   "mode": "sea",
+   "path": [
+    [
+     3.1105,
+     42.5276
+    ],
+    [
+     5.8009,
+     43.1093
+    ]
+   ],
+   "charted": [
+    5.8009,
+    43.1177
+   ]
+  },
+  {
+   "day": 8,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "mode": "sea",
+   "path": [
+    [
+     5.8009,
+     43.1093
+    ],
+    [
+     5.7628,
+     43.089
+    ],
+    [
+     5.7527,
+     43.0816
+    ],
+    [
+     5.7527,
+     43.067
+    ],
+    [
+     5.783,
+     43.045
+    ],
+    [
+     5.8335,
+     43.0303
+    ],
+    [
+     6.1967,
+     42.9644
+    ],
+    [
+     6.2471,
+     42.979
+    ],
+    [
+     6.5599,
+     43.1183
+    ],
+    [
+     6.6406,
+     43.1476
+    ],
+    [
+     7.1753,
+     43.5581
+    ],
+    [
+     7.2684,
+     43.6889
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ],
+   "lane": "sea",
+   "clear": 1.43
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

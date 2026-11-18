@@ -1,1 +1,377 @@
-{"id":"seadream-ii-mediterranean-isles-discovery-2028-05-27","type":"voyage","destination":"mediterranean","title":"Mediterranean Isles Discovery aboard SeaDream II","subtitle":"7 nights · Rome (Civitavecchia) round trip · SeaDream II","days":{"1":"Rome (Civitavecchia)","2":"Bonifacio","3":"Bastia","4":"Portoferraio","5":"Portofino","6":"Portovenere (Cinque Terre)","7":"Porto Ercole","8":"Rome (Civitavecchia)"},"stops":[{"day":1,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"kind":"port"},{"day":2,"name":"Bonifacio, Corsica","lat":41.3872,"lng":9.1591,"mode":"sea","path":[[12.4829,41.8933],[9.1591,41.3872]]},{"day":3,"name":"Bastia, Corsica","lat":42.6975,"lng":9.4498,"mode":"sea","path":[[9.1591,41.3872],[9.4498,42.6975]]},{"day":4,"name":"Portoferraio, Elba","lat":42.7484,"lng":10.235,"mode":"sea","path":[[9.4498,42.6975],[10.235,42.7484]]},{"day":5,"name":"Portofino","lat":44.3033,"lng":9.2096,"mode":"sea","path":[[10.235,42.7484],[9.2096,44.3033]]},{"day":6,"name":"Portovenere (Cinque Terre)","lat":44.0507,"lng":9.8345,"mode":"sea","path":[[9.2096,44.3033],[9.8345,44.0507]]},{"day":7,"name":"Porto Ercole","lat":42.396,"lng":11.2025,"mode":"sea","path":[[9.8345,44.0507],[11.2025,42.396]]},{"day":8,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"mode":"sea","path":[[11.2025,42.396],[12.4829,41.8933]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-mediterranean-isles-discovery-2028-05-27",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Mediterranean Isles Discovery aboard SeaDream II",
+ "subtitle": "7 nights · Rome (Civitavecchia) round trip · SeaDream II",
+ "days": {
+  "1": "Rome (Civitavecchia)",
+  "2": "Bonifacio",
+  "3": "Bastia",
+  "4": "Portoferraio",
+  "5": "Portofino",
+  "6": "Portovenere (Cinque Terre)",
+  "7": "Porto Ercole",
+  "8": "Rome (Civitavecchia)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Bonifacio, Corsica",
+   "lat": 41.3812,
+   "lng": 9.1575,
+   "mode": "sea",
+   "path": [
+    [
+     12.3393,
+     41.6733
+    ],
+    [
+     9.2434,
+     41.3174
+    ],
+    [
+     9.1734,
+     41.3582
+    ],
+    [
+     9.1575,
+     41.3812
+    ]
+   ],
+   "charted": [
+    9.1591,
+    41.3872
+   ],
+   "lane": "sea",
+   "clear": 1.02
+  },
+  {
+   "day": 3,
+   "name": "Bastia, Corsica",
+   "lat": 42.6963,
+   "lng": 9.4596,
+   "mode": "sea",
+   "path": [
+    [
+     9.1575,
+     41.3812
+    ],
+    [
+     9.162,
+     41.3653
+    ],
+    [
+     9.1707,
+     41.3588
+    ],
+    [
+     9.175,
+     41.3556
+    ],
+    [
+     9.2053,
+     41.3524
+    ],
+    [
+     9.2226,
+     41.3556
+    ],
+    [
+     9.2313,
+     41.3621
+    ],
+    [
+     9.2356,
+     41.3717
+    ],
+    [
+     9.3308,
+     41.481
+    ],
+    [
+     9.3741,
+     41.5453
+    ],
+    [
+     9.5646,
+     42.1207
+    ],
+    [
+     9.5689,
+     42.2461
+    ],
+    [
+     9.5559,
+     42.5547
+    ],
+    [
+     9.4596,
+     42.6963
+    ]
+   ],
+   "charted": [
+    9.4498,
+    42.6975
+   ],
+   "lane": "sea",
+   "clear": 0.91
+  },
+  {
+   "day": 4,
+   "name": "Portoferraio, Elba",
+   "lat": 42.7448,
+   "lng": 10.2432,
+   "mode": "sea",
+   "path": [
+    [
+     9.4596,
+     42.6963
+    ],
+    [
+     10.242,
+     42.713
+    ],
+    [
+     10.2528,
+     42.7209
+    ],
+    [
+     10.2528,
+     42.7289
+    ],
+    [
+     10.2474,
+     42.7328
+    ],
+    [
+     10.2432,
+     42.7448
+    ]
+   ],
+   "charted": [
+    10.235,
+    42.7484
+   ],
+   "lane": "sea",
+   "clear": 0.54
+  },
+  {
+   "day": 5,
+   "name": "Portofino",
+   "lat": 44.3045,
+   "lng": 9.218,
+   "mode": "sea",
+   "path": [
+    [
+     10.2432,
+     42.7448
+    ],
+    [
+     10.2541,
+     42.7259
+    ],
+    [
+     10.2541,
+     42.7221
+    ],
+    [
+     10.2436,
+     42.7145
+    ],
+    [
+     10.1489,
+     42.7107
+    ],
+    [
+     10.1279,
+     42.7183
+    ],
+    [
+     10.1016,
+     42.7373
+    ],
+    [
+     9.8965,
+     43.0729
+    ],
+    [
+     9.218,
+     44.3045
+    ]
+   ],
+   "charted": [
+    9.2096,
+    44.3033
+   ],
+   "lane": "sea",
+   "clear": 1.17
+  },
+  {
+   "day": 6,
+   "name": "Portovenere (Cinque Terre)",
+   "lat": 44.0507,
+   "lng": 9.8428,
+   "mode": "sea",
+   "path": [
+    [
+     9.218,
+     44.3045
+    ],
+    [
+     9.8461,
+     44.0298
+    ],
+    [
+     9.8547,
+     44.036
+    ],
+    [
+     9.859,
+     44.0422
+    ],
+    [
+     9.8504,
+     44.0483
+    ],
+    [
+     9.8428,
+     44.0507
+    ]
+   ],
+   "charted": [
+    9.8345,
+    44.0507
+   ],
+   "lane": "sea",
+   "clear": 0.06
+  },
+  {
+   "day": 7,
+   "name": "Porto Ercole",
+   "lat": 42.396,
+   "lng": 11.2155,
+   "mode": "sea",
+   "path": [
+    [
+     9.8428,
+     44.0507
+    ],
+    [
+     9.8653,
+     44.0465
+    ],
+    [
+     9.8708,
+     44.0424
+    ],
+    [
+     10.4758,
+     42.9301
+    ],
+    [
+     11.0809,
+     42.3881
+    ],
+    [
+     11.1197,
+     42.3598
+    ],
+    [
+     11.153,
+     42.3476
+    ],
+    [
+     11.1863,
+     42.3476
+    ],
+    [
+     11.2086,
+     42.3638
+    ],
+    [
+     11.2197,
+     42.384
+    ],
+    [
+     11.2155,
+     42.396
+    ]
+   ],
+   "charted": [
+    11.2025,
+    42.396
+   ],
+   "lane": "sea",
+   "clear": 0.7
+  },
+  {
+   "day": 8,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "mode": "sea",
+   "path": [
+    [
+     11.2155,
+     42.396
+    ],
+    [
+     12.2448,
+     41.709
+    ],
+    [
+     12.3393,
+     41.6733
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ],
+   "lane": "sea",
+   "clear": 3.03
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

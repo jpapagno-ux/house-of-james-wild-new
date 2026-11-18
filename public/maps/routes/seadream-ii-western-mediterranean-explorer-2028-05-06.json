@@ -1,1 +1,317 @@
-{"id":"seadream-ii-western-mediterranean-explorer-2028-05-06","type":"voyage","destination":"mediterranean","title":"Western Mediterranean Explorer aboard SeaDream II","subtitle":"7 nights · Lisbon to Malaga · SeaDream II","days":{"1":"Lisbon","2":"Lagos","3":"Cadiz","4":"Tangier","5":"Gibraltar","6":"Motril","7":"Puerto Banus","8":"Malaga"},"stops":[{"day":1,"name":"Lisbon","lat":38.7078,"lng":-9.1366,"kind":"port"},{"day":2,"name":"Lagos","lat":37.1028,"lng":-8.6729,"mode":"sea","path":[[-9.1366,38.7078],[-8.6729,37.1028]]},{"day":3,"name":"Cadiz","lat":36.5297,"lng":-6.2929,"mode":"sea","path":[[-8.6729,37.1028],[-6.2929,36.5297]]},{"day":4,"name":"Tangier","lat":35.7695,"lng":-5.8045,"mode":"sea","path":[[-6.2929,36.5297],[-5.8045,35.7695]]},{"day":5,"name":"Gibraltar","lat":36.14,"lng":-5.35,"mode":"sea","path":[[-5.8045,35.7695],[-5.35,36.14]]},{"day":6,"name":"Motril","lat":36.7451,"lng":-3.5208,"mode":"sea","path":[[-5.35,36.14],[-3.5208,36.7451]]},{"day":7,"name":"Puerto Banus","lat":36.4875,"lng":-4.9536,"mode":"sea","path":[[-3.5208,36.7451],[-4.9536,36.4875]]},{"day":8,"name":"Malaga","lat":36.71,"lng":-4.42,"mode":"sea","path":[[-4.9536,36.4875],[-4.42,36.71]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-western-mediterranean-explorer-2028-05-06",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Western Mediterranean Explorer aboard SeaDream II",
+ "subtitle": "7 nights · Lisbon to Malaga · SeaDream II",
+ "days": {
+  "1": "Lisbon",
+  "2": "Lagos",
+  "3": "Cadiz",
+  "4": "Tangier",
+  "5": "Gibraltar",
+  "6": "Motril",
+  "7": "Puerto Banus",
+  "8": "Malaga"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Lisbon",
+   "lat": 38.7078,
+   "lng": -9.1366,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Lagos",
+   "lat": 37.1004,
+   "lng": -8.6624,
+   "mode": "sea",
+   "path": [
+    [
+     -9.1366,
+     38.7078
+    ],
+    [
+     -9.1563,
+     38.6958
+    ],
+    [
+     -9.236,
+     38.6762
+    ],
+    [
+     -9.2609,
+     38.6605
+    ],
+    [
+     -9.2658,
+     38.6565
+    ],
+    [
+     -9.0218,
+     37.0456
+    ],
+    [
+     -9.0069,
+     37.022
+    ],
+    [
+     -8.9521,
+     36.9866
+    ],
+    [
+     -8.6683,
+     37.0731
+    ],
+    [
+     -8.6633,
+     37.077
+    ],
+    [
+     -8.6624,
+     37.1004
+    ]
+   ],
+   "charted": [
+    -8.6729,
+    37.1028
+   ],
+   "lane": "sea",
+   "clear": 0.2
+  },
+  {
+   "day": 3,
+   "name": "Cadiz",
+   "lat": 36.5237,
+   "lng": -6.2989,
+   "mode": "sea",
+   "path": [
+    [
+     -8.6624,
+     37.1004
+    ],
+    [
+     -6.2989,
+     36.5237
+    ]
+   ],
+   "charted": [
+    -6.2929,
+    36.5297
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Tangier",
+   "lat": 35.7815,
+   "lng": -5.7927,
+   "mode": "sea",
+   "path": [
+    [
+     -6.2989,
+     36.5237
+    ],
+    [
+     -6.2911,
+     36.4766
+    ],
+    [
+     -6.2343,
+     36.3848
+    ],
+    [
+     -5.7982,
+     35.7929
+    ],
+    [
+     -5.7927,
+     35.7815
+    ]
+   ],
+   "charted": [
+    -5.8045,
+    35.7695
+   ],
+   "lane": "sea",
+   "clear": 0.14
+  },
+  {
+   "day": 5,
+   "name": "Gibraltar",
+   "lat": 36.1364,
+   "lng": -5.3633,
+   "mode": "sea",
+   "path": [
+    [
+     -5.7927,
+     35.7815
+    ],
+    [
+     -5.7768,
+     35.7994
+    ],
+    [
+     -5.7644,
+     35.8195
+    ],
+    [
+     -5.5067,
+     36.0205
+    ],
+    [
+     -5.4571,
+     36.0406
+    ],
+    [
+     -5.4478,
+     36.0456
+    ],
+    [
+     -5.3981,
+     36.0858
+    ],
+    [
+     -5.3733,
+     36.126
+    ],
+    [
+     -5.367,
+     36.1311
+    ],
+    [
+     -5.3633,
+     36.1364
+    ]
+   ],
+   "charted": [
+    -5.35,
+    36.14
+   ],
+   "lane": "sea",
+   "clear": 0.37
+  },
+  {
+   "day": 6,
+   "name": "Motril",
+   "lat": 36.7164,
+   "lng": -3.5343,
+   "mode": "sea",
+   "path": [
+    [
+     -5.3633,
+     36.1364
+    ],
+    [
+     -3.5343,
+     36.7164
+    ]
+   ],
+   "charted": [
+    -3.5208,
+    36.7451
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Puerto Banus",
+   "lat": 36.4851,
+   "lng": -4.9447,
+   "mode": "sea",
+   "path": [
+    [
+     -3.5343,
+     36.7164
+    ],
+    [
+     -3.5753,
+     36.7048
+    ],
+    [
+     -4.7486,
+     36.4635
+    ],
+    [
+     -4.9447,
+     36.4851
+    ]
+   ],
+   "charted": [
+    -4.9536,
+    36.4875
+   ],
+   "lane": "sea",
+   "clear": 1.76
+  },
+  {
+   "day": 8,
+   "name": "Malaga",
+   "lat": 36.71,
+   "lng": -4.42,
+   "mode": "sea",
+   "path": [
+    [
+     -4.9447,
+     36.4851
+    ],
+    [
+     -4.7238,
+     36.4684
+    ],
+    [
+     -4.6337,
+     36.4973
+    ],
+    [
+     -4.5038,
+     36.5842
+    ],
+    [
+     -4.4316,
+     36.674
+    ],
+    [
+     -4.4244,
+     36.6914
+    ],
+    [
+     -4.42,
+     36.71
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.1
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,1 +1,291 @@
-{"id":"seadream-i-yachting-the-channel-islands-and-france-2027-09-16","type":"voyage","destination":"scandinavia-northern-europe","title":"Yachting the Channel Islands & France aboard SeaDream I","subtitle":"7 nights · Portsmouth to Bordeaux · SeaDream I","days":{"1":"Portsmouth","2":"Caen (Ouistreham)","3":"Guernsey","4":"Sark","5":"Douarnenez","6":"Belle Île","7":"Bordeaux","8":"Bordeaux"},"stops":[{"day":1,"name":"Portsmouth, England","lat":50.8,"lng":-1.0906,"kind":"port"},{"day":2,"name":"Caen (Ouistreham), Normandy","lat":49.1813,"lng":-0.3636,"mode":"sea","path":[[-1.0906,50.8],[-0.3636,49.1813]]},{"day":3,"name":"Guernsey, Channel Islands","lat":49.455,"lng":-2.535,"mode":"sea","path":[[-0.3636,49.1813],[-2.535,49.455]]},{"day":4,"name":"Sark, Channel Islands","lat":49.43,"lng":-2.36,"mode":"sea","path":[[-2.535,49.455],[-2.36,49.43]]},{"day":5,"name":"Douarnenez","lat":48.0944,"lng":-4.3311,"mode":"sea","path":[[-2.36,49.43],[-4.3311,48.0944]]},{"day":6,"name":"Belle Île","lat":47.3339,"lng":-3.1973,"mode":"sea","path":[[-4.3311,48.0944],[-3.1973,47.3339]]},{"day":7,"name":"Bordeaux","lat":44.8412,"lng":-0.58,"mode":"sea","path":[[-3.1973,47.3339],[-0.58,44.8412]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-yachting-the-channel-islands-and-france-2027-09-16",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "Yachting the Channel Islands & France aboard SeaDream I",
+ "subtitle": "7 nights · Portsmouth to Bordeaux · SeaDream I",
+ "days": {
+  "1": "Portsmouth",
+  "2": "Caen (Ouistreham)",
+  "3": "Guernsey",
+  "4": "Sark",
+  "5": "Douarnenez",
+  "6": "Belle Île",
+  "7": "Bordeaux",
+  "8": "Bordeaux"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Portsmouth, England",
+   "lat": 50.8108,
+   "lng": -1.1114,
+   "kind": "port",
+   "charted": [
+    -1.0906,
+    50.8
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Caen (Ouistreham), Normandy",
+   "lat": 49.2711,
+   "lng": -0.2408,
+   "mode": "sea",
+   "path": [
+    [
+     -1.1114,
+     50.8108
+    ],
+    [
+     -1.1161,
+     50.8064
+    ],
+    [
+     -1.1161,
+     50.796
+    ],
+    [
+     -0.2461,
+     49.2903
+    ],
+    [
+     -0.2415,
+     49.2799
+    ],
+    [
+     -0.2408,
+     49.2711
+    ]
+   ],
+   "charted": [
+    -0.3636,
+    49.1813
+   ],
+   "lane": "sea",
+   "clear": 0.01
+  },
+  {
+   "day": 3,
+   "name": "Guernsey, Channel Islands",
+   "lat": 49.4598,
+   "lng": -2.5239,
+   "mode": "sea",
+   "path": [
+    [
+     -0.2408,
+     49.2711
+    ],
+    [
+     -1.097,
+     50.3491
+    ],
+    [
+     -1.1198,
+     50.3639
+    ],
+    [
+     -1.4394,
+     50.3342
+    ],
+    [
+     -2.3298,
+     49.6948
+    ],
+    [
+     -2.5239,
+     49.4598
+    ]
+   ],
+   "charted": [
+    -2.535,
+    49.455
+   ],
+   "lane": "sea",
+   "clear": 0.64
+  },
+  {
+   "day": 4,
+   "name": "Sark, Channel Islands",
+   "lat": 49.418,
+   "lng": -2.3582,
+   "mode": "sea",
+   "path": [
+    [
+     -2.5239,
+     49.4598
+    ],
+    [
+     -2.384,
+     49.3967
+    ],
+    [
+     -2.3771,
+     49.3944
+    ],
+    [
+     -2.3702,
+     49.3967
+    ],
+    [
+     -2.3564,
+     49.4056
+    ],
+    [
+     -2.3582,
+     49.418
+    ]
+   ],
+   "charted": [
+    -2.36,
+    49.43
+   ],
+   "lane": "sea",
+   "clear": 1.06
+  },
+  {
+   "day": 5,
+   "name": "Douarnenez",
+   "lat": 48.1004,
+   "lng": -4.3347,
+   "mode": "sea",
+   "path": [
+    [
+     -2.3582,
+     49.418
+    ],
+    [
+     -4.3347,
+     48.1004
+    ]
+   ],
+   "charted": [
+    -4.3311,
+    48.0944
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 6,
+   "name": "Belle Île",
+   "lat": 47.365,
+   "lng": -3.1743,
+   "mode": "sea",
+   "path": [
+    [
+     -4.3347,
+     48.1004
+    ],
+    [
+     -4.3568,
+     48.1174
+    ],
+    [
+     -4.6121,
+     48.1121
+    ],
+    [
+     -4.7238,
+     48.0745
+    ],
+    [
+     -4.7637,
+     48.0423
+    ],
+    [
+     -4.7637,
+     48.0316
+    ],
+    [
+     -4.3887,
+     47.7847
+    ],
+    [
+     -4.1015,
+     47.7043
+    ],
+    [
+     -3.2,
+     47.3823
+    ],
+    [
+     -3.1743,
+     47.365
+    ]
+   ],
+   "charted": [
+    -3.1973,
+    47.3339
+   ],
+   "lane": "sea",
+   "clear": 0.37
+  },
+  {
+   "day": 7,
+   "name": "Bordeaux",
+   "lat": 45.335,
+   "lng": -0.7659,
+   "mode": "sea",
+   "path": [
+    [
+     -3.1743,
+     47.365
+    ],
+    [
+     -3.0686,
+     47.32
+    ],
+    [
+     -2.2801,
+     46.6919
+    ],
+    [
+     -1.2691,
+     45.6731
+    ],
+    [
+     -1.1882,
+     45.6173
+    ],
+    [
+     -1.0669,
+     45.5754
+    ],
+    [
+     -0.7659,
+     45.335
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -0.58,
+    44.8412
+   ],
+   "lane": "sea",
+   "clear": 0.35
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

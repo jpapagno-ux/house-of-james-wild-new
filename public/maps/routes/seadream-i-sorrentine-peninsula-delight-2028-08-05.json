@@ -1,1 +1,373 @@
-{"id":"seadream-i-sorrentine-peninsula-delight-2028-08-05","type":"voyage","destination":"mediterranean","title":"Sorrentine Peninsula Delight aboard SeaDream I","subtitle":"7 nights · Rome (Civitavecchia) to Valletta · SeaDream I","days":{"1":"Rome (Civitavecchia)","2":"Gaeta","3":"Ponza","4":"Amalfi and Capri","5":"Capri","6":"Lipari","7":"Taormina (Etna) Sicily","8":"Valletta"},"stops":[{"day":1,"name":"Rome (Civitavecchia)","lat":41.8933,"lng":12.4829,"kind":"port"},{"day":2,"name":"Gaeta","lat":41.2183,"lng":13.5628,"mode":"sea","path":[[12.4829,41.8933],[13.5628,41.2183]]},{"day":3,"name":"Ponza","lat":40.8932,"lng":12.9631,"mode":"sea","path":[[13.5628,41.2183],[12.9631,40.8932]]},{"day":4,"name":"Amalfi","lat":40.6337,"lng":14.6026,"mode":"sea","path":[[12.9631,40.8932],[14.6026,40.6337]]},{"day":4,"name":"Capri","lat":40.5488,"lng":14.2284,"mode":"sea","path":[[14.6026,40.6337],[14.2284,40.5488]]},{"day":6,"name":"Lipari, Aeolian Islands","lat":38.4693,"lng":14.9565,"mode":"sea","path":[[14.2284,40.5488],[14.9565,38.4693]]},{"day":7,"name":"Taormina (Etna) Sicily","lat":37.8512,"lng":15.283,"mode":"sea","path":[[14.9565,38.4693],[15.283,37.8512]]},{"day":8,"name":"Valletta","lat":35.899,"lng":14.5137,"mode":"sea","path":[[15.283,37.8512],[14.5137,35.899]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-i-sorrentine-peninsula-delight-2028-08-05",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Sorrentine Peninsula Delight aboard SeaDream I",
+ "subtitle": "7 nights · Rome (Civitavecchia) to Valletta · SeaDream I",
+ "days": {
+  "1": "Rome (Civitavecchia)",
+  "2": "Gaeta",
+  "3": "Ponza",
+  "4": "Amalfi and Capri",
+  "5": "Capri",
+  "6": "Lipari",
+  "7": "Taormina (Etna) Sicily",
+  "8": "Valletta"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Gaeta",
+   "lat": 41.2243,
+   "lng": 13.5755,
+   "mode": "sea",
+   "path": [
+    [
+     12.3393,
+     41.6733
+    ],
+    [
+     12.6132,
+     41.436
+    ],
+    [
+     12.8852,
+     41.2703
+    ],
+    [
+     13.0381,
+     41.213
+    ],
+    [
+     13.1741,
+     41.1939
+    ],
+    [
+     13.5651,
+     41.1875
+    ],
+    [
+     13.5821,
+     41.1939
+    ],
+    [
+     13.5991,
+     41.2066
+    ],
+    [
+     13.5755,
+     41.2243
+    ]
+   ],
+   "charted": [
+    13.5628,
+    41.2183
+   ],
+   "lane": "sea",
+   "clear": 0.79
+  },
+  {
+   "day": 3,
+   "name": "Ponza",
+   "lat": 40.8992,
+   "lng": 12.9679,
+   "mode": "sea",
+   "path": [
+    [
+     13.5755,
+     41.2243
+    ],
+    [
+     13.5954,
+     41.218
+    ],
+    [
+     13.5996,
+     41.2149
+    ],
+    [
+     13.5996,
+     41.1991
+    ],
+    [
+     13.3281,
+     41.0354
+    ],
+    [
+     12.9679,
+     40.8992
+    ]
+   ],
+   "charted": [
+    12.9631,
+    40.8932
+   ],
+   "lane": "sea",
+   "clear": 0.93
+  },
+  {
+   "day": 4,
+   "name": "Amalfi",
+   "lat": 40.6289,
+   "lng": 14.6073,
+   "mode": "sea",
+   "path": [
+    [
+     12.9679,
+     40.8992
+    ],
+    [
+     13.5565,
+     40.793
+    ],
+    [
+     13.8721,
+     40.6735
+    ],
+    [
+     14.2779,
+     40.5625
+    ],
+    [
+     14.3342,
+     40.5455
+    ],
+    [
+     14.5709,
+     40.5882
+    ],
+    [
+     14.5822,
+     40.5967
+    ],
+    [
+     14.6073,
+     40.6289
+    ]
+   ],
+   "charted": [
+    14.6026,
+    40.6337
+   ],
+   "lane": "sea",
+   "clear": 1.21
+  },
+  {
+   "day": 4,
+   "name": "Capri",
+   "lat": 40.5404,
+   "lng": 14.2347,
+   "mode": "sea",
+   "path": [
+    [
+     14.6073,
+     40.6289
+    ],
+    [
+     14.5852,
+     40.6075
+    ],
+    [
+     14.5792,
+     40.603
+    ],
+    [
+     14.5761,
+     40.6007
+    ],
+    [
+     14.2538,
+     40.532
+    ],
+    [
+     14.2478,
+     40.532
+    ],
+    [
+     14.2347,
+     40.5404
+    ]
+   ],
+   "charted": [
+    14.2284,
+    40.5488
+   ],
+   "lane": "sea",
+   "clear": 1.11
+  },
+  {
+   "day": 6,
+   "name": "Lipari, Aeolian Islands",
+   "lat": 38.4693,
+   "lng": 14.9565,
+   "mode": "sea",
+   "path": [
+    [
+     14.2347,
+     40.5404
+    ],
+    [
+     14.9896,
+     38.4797
+    ],
+    [
+     14.9896,
+     38.4695
+    ],
+    [
+     14.983,
+     38.4645
+    ],
+    [
+     14.9565,
+     38.4693
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.84
+  },
+  {
+   "day": 7,
+   "name": "Taormina (Etna) Sicily",
+   "lat": 37.8416,
+   "lng": 15.286,
+   "mode": "sea",
+   "path": [
+    [
+     14.9565,
+     38.4693
+    ],
+    [
+     15.6218,
+     38.2914
+    ],
+    [
+     15.6438,
+     38.2828
+    ],
+    [
+     15.6547,
+     38.2741
+    ],
+    [
+     15.6602,
+     38.2698
+    ],
+    [
+     15.6657,
+     38.2612
+    ],
+    [
+     15.6492,
+     38.2482
+    ],
+    [
+     15.6328,
+     38.2439
+    ],
+    [
+     15.6108,
+     38.2267
+    ],
+    [
+     15.4956,
+     38.054
+    ],
+    [
+     15.3145,
+     37.8426
+    ],
+    [
+     15.309,
+     37.8383
+    ],
+    [
+     15.3035,
+     37.8426
+    ],
+    [
+     15.286,
+     37.8416
+    ]
+   ],
+   "charted": [
+    15.283,
+    37.8512
+   ],
+   "lane": "sea",
+   "clear": 0.49
+  },
+  {
+   "day": 8,
+   "name": "Valletta",
+   "lat": 35.8954,
+   "lng": 14.5196,
+   "mode": "sea",
+   "path": [
+    [
+     15.286,
+     37.8416
+    ],
+    [
+     15.3429,
+     36.9689
+    ],
+    [
+     15.1589,
+     36.6745
+    ],
+    [
+     14.5196,
+     35.8954
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    14.5137,
+    35.899
+   ],
+   "lane": "sea",
+   "clear": 1.49
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

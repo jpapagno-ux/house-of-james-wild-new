@@ -1,1 +1,424 @@
-{"id":"seadream-i-norway-and-the-british-isles-2027-08-07","type":"voyage","destination":"scandinavia-northern-europe","title":"Norway & the British Isles aboard SeaDream I","subtitle":"8 nights · Oslo to Edinburgh (Leith) · SeaDream I","days":{"1":"Oslo","2":"Arendal","3":"Skudeneshavn","4":"Lerwick","5":"Fair Isle","6":"Kirkwall","7":"Montrose and Dundee","8":"Dundee and Edinburgh (Leith)","9":"Edinburgh (Leith)"},"stops":[{"day":1,"name":"Oslo","lat":59.9133,"lng":10.739,"kind":"port"},{"day":2,"name":"Arendal","lat":58.4267,"lng":8.9469,"mode":"sea","path":[[10.739,59.9133],[8.9469,58.4267]]},{"day":3,"name":"Skudeneshavn","lat":59.1497,"lng":5.2582,"mode":"sea","path":[[8.9469,58.4267],[5.2582,59.1497]]},{"day":4,"name":"Lerwick, Shetland, Scotland","lat":60.1531,"lng":-1.1427,"mode":"sea","path":[[5.2582,59.1497],[-1.1427,60.1531]]},{"day":5,"name":"Fair Isle, Shetland","lat":59.5326,"lng":-1.631,"mode":"sea","path":[[-1.1427,60.1531],[-1.631,59.5326]]},{"day":6,"name":"Kirkwall, Orkney, Scotland","lat":58.9817,"lng":-2.9603,"mode":"sea","path":[[-1.631,59.5326],[-2.9603,58.9817]]},{"day":7,"name":"Montrose, Scotland","lat":56.7114,"lng":-2.4682,"mode":"sea","path":[[-2.9603,58.9817],[-2.4682,56.7114]]},{"day":7,"name":"Dundee, Scotland","lat":56.4606,"lng":-2.9702,"mode":"sea","path":[[-2.4682,56.7114],[-2.9702,56.4606]]},{"day":8,"name":"Edinburgh (Leith), Scotland","lat":55.9533,"lng":-3.1884,"mode":"sea","path":[[-2.9702,56.4606],[-3.1884,55.9533]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"North Sea","lat":57,"lng":3.5,"kind":"sea"},{"text":"Norwegian Sea","lat":67,"lng":6,"kind":"sea"},{"text":"Baltic Sea","lat":57.5,"lng":19.5,"kind":"sea"}]}}
+{
+ "id": "seadream-i-norway-and-the-british-isles-2027-08-07",
+ "type": "voyage",
+ "destination": "scandinavia-northern-europe",
+ "title": "Norway & the British Isles aboard SeaDream I",
+ "subtitle": "8 nights · Oslo to Edinburgh (Leith) · SeaDream I",
+ "days": {
+  "1": "Oslo",
+  "2": "Arendal",
+  "3": "Skudeneshavn",
+  "4": "Lerwick",
+  "5": "Fair Isle",
+  "6": "Kirkwall",
+  "7": "Montrose and Dundee",
+  "8": "Dundee and Edinburgh (Leith)",
+  "9": "Edinburgh (Leith)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Oslo",
+   "lat": 59.9049,
+   "lng": 10.7271,
+   "kind": "port",
+   "charted": [
+    10.739,
+    59.9133
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Arendal",
+   "lat": 58.4267,
+   "lng": 8.9469,
+   "mode": "sea",
+   "path": [
+    [
+     10.7271,
+     59.9049
+    ],
+    [
+     10.6904,
+     59.8925
+    ],
+    [
+     10.6498,
+     59.8702
+    ],
+    [
+     10.6266,
+     59.8404
+    ],
+    [
+     10.5773,
+     59.7602
+    ],
+    [
+     10.5802,
+     59.7052
+    ],
+    [
+     10.5947,
+     59.6904
+    ],
+    [
+     10.6063,
+     59.6577
+    ],
+    [
+     10.6237,
+     59.5953
+    ],
+    [
+     10.6179,
+     59.4719
+    ],
+    [
+     10.5831,
+     59.4363
+    ],
+    [
+     10.5165,
+     59.1836
+    ],
+    [
+     10.4614,
+     58.7958
+    ],
+    [
+     10.4585,
+     58.7943
+    ],
+    [
+     9.5452,
+     58.665
+    ],
+    [
+     8.9469,
+     58.4267
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.09
+  },
+  {
+   "day": 3,
+   "name": "Skudeneshavn",
+   "lat": 59.1401,
+   "lng": 5.2652,
+   "mode": "sea",
+   "path": [
+    [
+     8.9469,
+     58.4267
+    ],
+    [
+     5.2652,
+     59.1401
+    ]
+   ],
+   "charted": [
+    5.2582,
+    59.1497
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 4,
+   "name": "Lerwick, Shetland, Scotland",
+   "lat": 60.1543,
+   "lng": -1.1331,
+   "mode": "sea",
+   "path": [
+    [
+     5.2652,
+     59.1401
+    ],
+    [
+     -1.1331,
+     60.1543
+    ]
+   ],
+   "charted": [
+    -1.1427,
+    60.1531
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 5,
+   "name": "Fair Isle, Shetland",
+   "lat": 59.5362,
+   "lng": -1.6546,
+   "mode": "sea",
+   "path": [
+    [
+     -1.1331,
+     60.1543
+    ],
+    [
+     -1.1282,
+     60.1448
+    ],
+    [
+     -1.1367,
+     60.1321
+    ],
+    [
+     -1.162,
+     59.9579
+    ],
+    [
+     -1.2635,
+     59.8559
+    ],
+    [
+     -1.6546,
+     59.5362
+    ]
+   ],
+   "charted": [
+    -1.631,
+    59.5326
+   ],
+   "lane": "sea",
+   "clear": 0.41
+  },
+  {
+   "day": 6,
+   "name": "Kirkwall, Orkney, Scotland",
+   "lat": 58.9925,
+   "lng": -2.9603,
+   "mode": "sea",
+   "path": [
+    [
+     -1.6546,
+     59.5362
+    ],
+    [
+     -2.4825,
+     59.2183
+    ],
+    [
+     -2.662,
+     59.1771
+    ],
+    [
+     -2.7069,
+     59.1541
+    ],
+    [
+     -2.7249,
+     59.1358
+    ],
+    [
+     -2.7338,
+     59.1312
+    ],
+    [
+     -2.9134,
+     59.0853
+    ],
+    [
+     -2.9224,
+     59.0807
+    ],
+    [
+     -2.9493,
+     59.0532
+    ],
+    [
+     -2.9672,
+     59.0027
+    ],
+    [
+     -2.9603,
+     58.9925
+    ]
+   ],
+   "charted": [
+    -2.9603,
+    58.9817
+   ],
+   "lane": "sea",
+   "clear": 0.67
+  },
+  {
+   "day": 7,
+   "name": "Montrose, Scotland",
+   "lat": 56.7102,
+   "lng": -2.442,
+   "mode": "sea",
+   "path": [
+    [
+     -2.9603,
+     58.9925
+    ],
+    [
+     -2.442,
+     56.7102
+    ]
+   ],
+   "charted": [
+    -2.4682,
+    56.7114
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 7,
+   "name": "Dundee, Scotland",
+   "lat": 56.4546,
+   "lng": -2.9659,
+   "mode": "sea",
+   "path": [
+    [
+     -2.442,
+     56.7102
+    ],
+    [
+     -2.4298,
+     56.7038
+    ],
+    [
+     -2.4256,
+     56.7015
+    ],
+    [
+     -2.4382,
+     56.6553
+    ],
+    [
+     -2.5093,
+     56.577
+    ],
+    [
+     -2.5344,
+     56.5608
+    ],
+    [
+     -2.7186,
+     56.4617
+    ],
+    [
+     -2.7395,
+     56.4571
+    ],
+    [
+     -2.8777,
+     56.4548
+    ],
+    [
+     -2.8818,
+     56.4571
+    ],
+    [
+     -2.9404,
+     56.4571
+    ],
+    [
+     -2.953,
+     56.4548
+    ],
+    [
+     -2.9659,
+     56.4546
+    ]
+   ],
+   "charted": [
+    -2.9702,
+    56.4606
+   ],
+   "lane": "sea",
+   "clear": 0.43
+  },
+  {
+   "day": 8,
+   "name": "Edinburgh (Leith), Scotland",
+   "lat": 55.9844,
+   "lng": -3.2055,
+   "mode": "sea",
+   "path": [
+    [
+     -2.9659,
+     56.4546
+    ],
+    [
+     -2.8871,
+     56.458
+    ],
+    [
+     -2.8126,
+     56.4522
+    ],
+    [
+     -2.8002,
+     56.4488
+    ],
+    [
+     -2.6452,
+     56.3591
+    ],
+    [
+     -2.5749,
+     56.281
+    ],
+    [
+     -2.5749,
+     56.2764
+    ],
+    [
+     -2.5894,
+     56.2615
+    ],
+    [
+     -2.7672,
+     56.1661
+    ],
+    [
+     -3.1868,
+     55.9971
+    ],
+    [
+     -3.2054,
+     55.9879
+    ],
+    [
+     -3.2055,
+     55.9844
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    -3.1884,
+    55.9533
+   ],
+   "lane": "sea",
+   "clear": 0.62
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "North Sea",
+    "lat": 57,
+    "lng": 3.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 67,
+    "lng": 6,
+    "kind": "sea"
+   },
+   {
+    "text": "Baltic Sea",
+    "lat": 57.5,
+    "lng": 19.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,1 +1,321 @@
-{"id":"seadream-ii-british-and-french-islands-explorer-2027-11-27","type":"voyage","destination":"caribbean","title":"British & French Islands Explorer aboard SeaDream II","subtitle":"7 nights · Philipsburg to San Juan · SeaDream II","days":{"1":"Philipsburg","2":"Terre De Haut","3":"Deshaies","4":"Gustavia","5":"Gustavia","6":"Spanish Town and Norman Island","7":"White Bay","8":"San Juan"},"stops":[{"day":1,"name":"Philipsburg","lat":18.0251,"lng":-63.0483,"kind":"port"},{"day":2,"name":"Terre De Haut, Îles des Saintes","lat":15.8681,"lng":-61.5822,"mode":"sea","path":[[-63.0483,18.0251],[-61.5822,15.8681]]},{"day":3,"name":"Deshaies","lat":16.3062,"lng":-61.7939,"mode":"sea","path":[[-61.5822,15.8681],[-61.7939,16.3062]]},{"day":4,"name":"Gustavia","lat":17.8957,"lng":-62.8508,"mode":"sea","path":[[-61.7939,16.3062],[-62.8508,17.8957]]},{"day":6,"name":"Spanish Town, Virgin Gorda","lat":18.4464,"lng":-64.4346,"mode":"sea","path":[[-62.8508,17.8957],[-64.4346,18.4464]]},{"day":6,"name":"Norman Island","lat":18.3156,"lng":-64.6132,"mode":"sea","path":[[-64.4346,18.4464],[-64.6132,18.3156]]},{"day":7,"name":"White Bay, Jost van Dyke","lat":18.4428,"lng":-64.7629,"mode":"sea","path":[[-64.6132,18.3156],[-64.7629,18.4428]]},{"day":8,"name":"San Juan","lat":18.46,"lng":-66.11,"mode":"sea","path":[[-64.7629,18.4428],[-66.11,18.46]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Caribbean Sea","lat":15.5,"lng":-64.5,"kind":"sea"},{"text":"Atlantic Ocean","lat":21.5,"lng":-60.5,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-british-and-french-islands-explorer-2027-11-27",
+ "type": "voyage",
+ "destination": "caribbean",
+ "title": "British & French Islands Explorer aboard SeaDream II",
+ "subtitle": "7 nights · Philipsburg to San Juan · SeaDream II",
+ "days": {
+  "1": "Philipsburg",
+  "2": "Terre De Haut",
+  "3": "Deshaies",
+  "4": "Gustavia",
+  "5": "Gustavia",
+  "6": "Spanish Town and Norman Island",
+  "7": "White Bay",
+  "8": "San Juan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Philipsburg",
+   "lat": 18.0191,
+   "lng": -63.0521,
+   "kind": "port",
+   "charted": [
+    -63.0483,
+    18.0251
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Terre De Haut, Îles des Saintes",
+   "lat": 15.8681,
+   "lng": -61.5884,
+   "mode": "sea",
+   "path": [
+    [
+     -63.0521,
+     18.0191
+    ],
+    [
+     -62.2602,
+     16.7144
+    ],
+    [
+     -61.7346,
+     15.9454
+    ],
+    [
+     -61.7191,
+     15.9306
+    ],
+    [
+     -61.5884,
+     15.8681
+    ]
+   ],
+   "charted": [
+    -61.5822,
+    15.8681
+   ],
+   "lane": "sea",
+   "clear": 2.16
+  },
+  {
+   "day": 3,
+   "name": "Deshaies",
+   "lat": 16.3062,
+   "lng": -61.8026,
+   "mode": "sea",
+   "path": [
+    [
+     -61.5884,
+     15.8681
+    ],
+    [
+     -61.595,
+     15.8688
+    ],
+    [
+     -61.7078,
+     15.9441
+    ],
+    [
+     -61.7298,
+     15.9682
+    ],
+    [
+     -61.7486,
+     16.0043
+    ],
+    [
+     -61.7737,
+     16.0585
+    ],
+    [
+     -61.8144,
+     16.2724
+    ],
+    [
+     -61.8082,
+     16.2995
+    ],
+    [
+     -61.8026,
+     16.3062
+    ]
+   ],
+   "charted": [
+    -61.7939,
+    16.3062
+   ],
+   "lane": "sea",
+   "clear": 0.34
+  },
+  {
+   "day": 4,
+   "name": "Gustavia",
+   "lat": 17.8933,
+   "lng": -62.8571,
+   "mode": "sea",
+   "path": [
+    [
+     -61.8026,
+     16.3062
+    ],
+    [
+     -62.8571,
+     17.8933
+    ]
+   ],
+   "charted": [
+    -62.8508,
+    17.8957
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Spanish Town, Virgin Gorda",
+   "lat": 18.45,
+   "lng": -64.4422,
+   "mode": "sea",
+   "path": [
+    [
+     -62.8571,
+     17.8933
+    ],
+    [
+     -64.4422,
+     18.45
+    ]
+   ],
+   "charted": [
+    -64.4346,
+    18.4464
+   ]
+  },
+  {
+   "day": 6,
+   "name": "Norman Island",
+   "lat": 18.312,
+   "lng": -64.6069,
+   "mode": "sea",
+   "path": [
+    [
+     -64.4422,
+     18.45
+    ],
+    [
+     -64.4519,
+     18.4456
+    ],
+    [
+     -64.5205,
+     18.3985
+    ],
+    [
+     -64.5442,
+     18.376
+    ],
+    [
+     -64.5466,
+     18.3693
+    ],
+    [
+     -64.5537,
+     18.3288
+    ],
+    [
+     -64.556,
+     18.3244
+    ],
+    [
+     -64.5631,
+     18.3176
+    ],
+    [
+     -64.5915,
+     18.3041
+    ],
+    [
+     -64.6069,
+     18.312
+    ]
+   ],
+   "charted": [
+    -64.6132,
+    18.3156
+   ],
+   "lane": "sea",
+   "clear": 0.92
+  },
+  {
+   "day": 7,
+   "name": "White Bay, Jost van Dyke",
+   "lat": 18.4368,
+   "lng": -64.7629,
+   "mode": "sea",
+   "path": [
+    [
+     -64.6069,
+     18.312
+    ],
+    [
+     -64.6032,
+     18.3019
+    ],
+    [
+     -64.6079,
+     18.2974
+    ],
+    [
+     -64.615,
+     18.2952
+    ],
+    [
+     -64.7168,
+     18.2862
+    ],
+    [
+     -64.783,
+     18.2974
+    ],
+    [
+     -64.7972,
+     18.3041
+    ],
+    [
+     -64.8043,
+     18.3109
+    ],
+    [
+     -64.8114,
+     18.3244
+    ],
+    [
+     -64.8256,
+     18.3603
+    ],
+    [
+     -64.8232,
+     18.3648
+    ],
+    [
+     -64.7629,
+     18.4368
+    ]
+   ],
+   "charted": [
+    -64.7629,
+    18.4428
+   ],
+   "lane": "sea",
+   "clear": 1.07
+  },
+  {
+   "day": 8,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "mode": "sea",
+   "path": [
+    [
+     -64.7629,
+     18.4368
+    ],
+    [
+     -64.8298,
+     18.4652
+    ],
+    [
+     -66.0708,
+     18.4739
+    ],
+    [
+     -66.11,
+     18.46
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.42
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Caribbean Sea",
+    "lat": 15.5,
+    "lng": -64.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 21.5,
+    "lng": -60.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

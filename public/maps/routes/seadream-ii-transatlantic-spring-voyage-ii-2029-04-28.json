@@ -1,1 +1,159 @@
-{"id":"seadream-ii-transatlantic-spring-voyage-ii-2029-04-28","type":"voyage","destination":"trans-atlantic","title":"Transatlantic Spring Voyage II aboard SeaDream II","subtitle":"14 nights · San Juan to Malaga · SeaDream II","days":{"1":"San Juan","2":"At sea","3":"At sea","4":"At sea","5":"At sea","6":"At sea","7":"At sea","8":"At sea","9":"At sea","10":"At sea","11":"At sea","12":"Funchal","13":"At sea","14":"At sea","15":"Malaga"},"stops":[{"day":1,"name":"San Juan","lat":18.46,"lng":-66.11,"kind":"port"},{"day":12,"name":"Funchal, Madeira","lat":32.6496,"lng":-16.9087,"mode":"sea","path":[[-66.11,18.46],[-16.9087,32.6496]]},{"day":15,"name":"Malaga","lat":36.71,"lng":-4.42,"mode":"sea","path":[[-16.9087,32.6496],[-4.42,36.71]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Atlantic Ocean","lat":25,"lng":-40,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-transatlantic-spring-voyage-ii-2029-04-28",
+ "type": "voyage",
+ "destination": "trans-atlantic",
+ "title": "Transatlantic Spring Voyage II aboard SeaDream II",
+ "subtitle": "14 nights · San Juan to Malaga · SeaDream II",
+ "days": {
+  "1": "San Juan",
+  "2": "At sea",
+  "3": "At sea",
+  "4": "At sea",
+  "5": "At sea",
+  "6": "At sea",
+  "7": "At sea",
+  "8": "At sea",
+  "9": "At sea",
+  "10": "At sea",
+  "11": "At sea",
+  "12": "Funchal",
+  "13": "At sea",
+  "14": "At sea",
+  "15": "Malaga"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "kind": "port"
+  },
+  {
+   "day": 12,
+   "name": "Funchal, Madeira",
+   "lat": 32.6412,
+   "lng": -16.9016,
+   "mode": "sea",
+   "path": [
+    [
+     -66.11,
+     18.46
+    ],
+    [
+     -64.9718,
+     18.788
+    ],
+    [
+     -18.0398,
+     32.3132
+    ],
+    [
+     -16.9269,
+     32.6183
+    ],
+    [
+     -16.9016,
+     32.6412
+    ]
+   ],
+   "charted": [
+    -16.9087,
+    32.6496
+   ],
+   "lane": "sea",
+   "clear": 2.0
+  },
+  {
+   "day": 15,
+   "name": "Malaga",
+   "lat": 36.71,
+   "lng": -4.42,
+   "mode": "sea",
+   "path": [
+    [
+     -16.9016,
+     32.6412
+    ],
+    [
+     -16.8578,
+     32.6217
+    ],
+    [
+     -16.774,
+     32.6287
+    ],
+    [
+     -15.6831,
+     33.0384
+    ],
+    [
+     -13.1114,
+     33.8167
+    ],
+    [
+     -10.5398,
+     34.5949
+    ],
+    [
+     -5.4399,
+     36.0143
+    ],
+    [
+     -5.4045,
+     36.0431
+    ],
+    [
+     -5.3965,
+     36.1514
+    ],
+    [
+     -5.3681,
+     36.104
+    ],
+    [
+     -5.3547,
+     36.0932
+    ],
+    [
+     -5.3413,
+     36.0932
+    ],
+    [
+     -4.6364,
+     36.4929
+    ],
+    [
+     -4.5021,
+     36.5847
+    ],
+    [
+     -4.4484,
+     36.6388
+    ],
+    [
+     -4.4282,
+     36.6712
+    ],
+    [
+     -4.42,
+     36.71
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.26
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Atlantic Ocean",
+    "lat": 25,
+    "lng": -40,
+    "kind": "sea"
+   }
+  ]
+ }
+}

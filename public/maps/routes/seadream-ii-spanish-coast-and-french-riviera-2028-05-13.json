@@ -1,1 +1,335 @@
-{"id":"seadream-ii-spanish-coast-and-french-riviera-2028-05-13","type":"voyage","destination":"mediterranean","title":"Spanish Coast & French Riviera aboard SeaDream II","subtitle":"7 nights · Malaga to Nice · SeaDream II","days":{"1":"Malaga","2":"Almeria","3":"Alicante","4":"Tarragona","5":"Palamos","6":"Sanary-sur-Mer","7":"Monte Carlo","8":"Nice"},"stops":[{"day":1,"name":"Malaga","lat":36.71,"lng":-4.42,"kind":"port"},{"day":2,"name":"Almeria","lat":36.83,"lng":-2.47,"mode":"sea","path":[[-4.42,36.71],[-2.47,36.83]]},{"day":3,"name":"Alicante","lat":38.3436,"lng":-0.4882,"mode":"sea","path":[[-2.47,36.83],[-0.4882,38.3436]]},{"day":4,"name":"Tarragona","lat":41.1172,"lng":1.2546,"mode":"sea","path":[[-0.4882,38.3436],[1.2546,41.1172]]},{"day":5,"name":"Palamos","lat":41.8495,"lng":3.1279,"mode":"sea","path":[[1.2546,41.1172],[3.1279,41.8495]]},{"day":6,"name":"Sanary-sur-Mer","lat":43.1177,"lng":5.8009,"mode":"sea","path":[[3.1279,41.8495],[5.8009,43.1177]]},{"day":7,"name":"Monte Carlo","lat":43.7403,"lng":7.4266,"mode":"sea","path":[[5.8009,43.1177],[7.4266,43.7403]]},{"day":8,"name":"Nice","lat":43.7009,"lng":7.2684,"mode":"sea","path":[[7.4266,43.7403],[7.2684,43.7009]],"kind":"port"}],"map_note":"Course and positions approximate, not a navigational chart","fallback":{"labels":[{"text":"Mediterranean Sea","lat":36.5,"lng":17.5,"kind":"sea"},{"text":"Aegean Sea","lat":38.5,"lng":25,"kind":"sea"},{"text":"Adriatic Sea","lat":43,"lng":15.5,"kind":"sea"},{"text":"Tyrrhenian Sea","lat":40,"lng":12,"kind":"sea"}]}}
+{
+ "id": "seadream-ii-spanish-coast-and-french-riviera-2028-05-13",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Spanish Coast & French Riviera aboard SeaDream II",
+ "subtitle": "7 nights · Malaga to Nice · SeaDream II",
+ "days": {
+  "1": "Malaga",
+  "2": "Almeria",
+  "3": "Alicante",
+  "4": "Tarragona",
+  "5": "Palamos",
+  "6": "Sanary-sur-Mer",
+  "7": "Monte Carlo",
+  "8": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Malaga",
+   "lat": 36.71,
+   "lng": -4.42,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Almeria",
+   "lat": 36.83,
+   "lng": -2.47,
+   "mode": "sea",
+   "path": [
+    [
+     -4.42,
+     36.71
+    ],
+    [
+     -4.3231,
+     36.691
+    ],
+    [
+     -2.6875,
+     36.6695
+    ],
+    [
+     -2.6607,
+     36.6802
+    ],
+    [
+     -2.47,
+     36.83
+    ]
+   ],
+   "lane": "sea",
+   "clear": 1.72
+  },
+  {
+   "day": 3,
+   "name": "Alicante",
+   "lat": 38.3388,
+   "lng": -0.4729,
+   "mode": "sea",
+   "path": [
+    [
+     -2.47,
+     36.83
+    ],
+    [
+     -2.206,
+     36.7019
+    ],
+    [
+     -2.1374,
+     36.7128
+    ],
+    [
+     -0.7232,
+     37.5941
+    ],
+    [
+     -0.682,
+     37.6267
+    ],
+    [
+     -0.5035,
+     38.2034
+    ],
+    [
+     -0.4729,
+     38.3388
+    ]
+   ],
+   "charted": [
+    -0.4882,
+    38.3436
+   ],
+   "lane": "sea",
+   "clear": 0.52
+  },
+  {
+   "day": 4,
+   "name": "Tarragona",
+   "lat": 41.1064,
+   "lng": 1.2578,
+   "mode": "sea",
+   "path": [
+    [
+     -0.4729,
+     38.3388
+    ],
+    [
+     -0.4178,
+     38.3241
+    ],
+    [
+     -0.0715,
+     38.5144
+    ],
+    [
+     0.2501,
+     38.7237
+    ],
+    [
+     1.2578,
+     41.1064
+    ]
+   ],
+   "charted": [
+    1.2546,
+    41.1172
+   ],
+   "lane": "sea",
+   "clear": 1.84
+  },
+  {
+   "day": 5,
+   "name": "Palamos",
+   "lat": 41.8447,
+   "lng": 3.1408,
+   "mode": "sea",
+   "path": [
+    [
+     1.2578,
+     41.1064
+    ],
+    [
+     1.7915,
+     41.1474
+    ],
+    [
+     2.154,
+     41.2832
+    ],
+    [
+     2.9307,
+     41.7003
+    ],
+    [
+     3.0602,
+     41.7779
+    ],
+    [
+     3.1408,
+     41.8447
+    ]
+   ],
+   "charted": [
+    3.1279,
+    41.8495
+   ],
+   "lane": "sea",
+   "clear": 1.09
+  },
+  {
+   "day": 6,
+   "name": "Sanary-sur-Mer",
+   "lat": 43.1093,
+   "lng": 5.8009,
+   "mode": "sea",
+   "path": [
+    [
+     3.1408,
+     41.8447
+    ],
+    [
+     5.8009,
+     43.1093
+    ]
+   ],
+   "charted": [
+    5.8009,
+    43.1177
+   ]
+  },
+  {
+   "day": 7,
+   "name": "Monte Carlo",
+   "lat": 43.7403,
+   "lng": 7.4365,
+   "mode": "sea",
+   "path": [
+    [
+     5.8009,
+     43.1093
+    ],
+    [
+     5.7472,
+     43.0785
+    ],
+    [
+     5.7472,
+     43.0703
+    ],
+    [
+     5.781,
+     43.0458
+    ],
+    [
+     5.8372,
+     43.0295
+    ],
+    [
+     6.197,
+     42.9642
+    ],
+    [
+     6.2308,
+     42.9723
+    ],
+    [
+     6.4669,
+     43.0785
+    ],
+    [
+     6.6468,
+     43.1438
+    ],
+    [
+     7.4227,
+     43.7073
+    ],
+    [
+     7.4365,
+     43.7403
+    ]
+   ],
+   "charted": [
+    7.4266,
+    43.7403
+   ],
+   "lane": "sea",
+   "clear": 1.84
+  },
+  {
+   "day": 8,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "mode": "sea",
+   "path": [
+    [
+     7.4365,
+     43.7403
+    ],
+    [
+     7.444,
+     43.7304
+    ],
+    [
+     7.4315,
+     43.7192
+    ],
+    [
+     7.4098,
+     43.7035
+    ],
+    [
+     7.3383,
+     43.6653
+    ],
+    [
+     7.329,
+     43.6631
+    ],
+    [
+     7.2979,
+     43.6721
+    ],
+    [
+     7.2855,
+     43.6765
+    ],
+    [
+     7.2684,
+     43.6889
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ],
+   "lane": "sea",
+   "clear": 1.13
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

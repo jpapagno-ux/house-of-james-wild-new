@@ -2195,10 +2195,6 @@
    "batch": "2026-11-17 Thailand round 2 (James)"
   },
   {
-   "slug": "capella-bangkok",
-   "batch": "2026-11-17 Thailand round 2 (James)"
-  },
-  {
    "slug": "the-siam-bangkok",
    "batch": "2026-11-17 Thailand round 2 (James)"
   },
@@ -2209,6 +2205,38 @@
   {
    "slug": "phulay-bay-ritz-carlton-reserve",
    "batch": "2026-11-17 Thailand round 2 (James)"
+  },
+  {
+   "slug": "amanoi",
+   "batch": "2026-11-17 Asia round 2 (James)"
+  },
+  {
+   "slug": "song-saa-private-island",
+   "batch": "2026-11-17 Asia round 2 (James)"
+  },
+  {
+   "slug": "zannier-phum-baitang",
+   "batch": "2026-11-17 Asia round 2 (James)"
+  },
+  {
+   "slug": "cape-weligama",
+   "batch": "2026-11-17 Asia round 2 (James)"
+  },
+  {
+   "slug": "ceylon-tea-trails",
+   "batch": "2026-11-17 Asia round 2 (James)"
+  },
+  {
+   "slug": "aman-tokyo",
+   "batch": "2026-11-17 Asia round 2 (James)"
+  },
+  {
+   "slug": "ayana-komodo",
+   "batch": "2026-11-17 Asia round 2 (James)"
+  },
+  {
+   "slug": "plataran-borobudur",
+   "batch": "2026-11-17 Asia round 2 (James)"
   }
  ]
 }

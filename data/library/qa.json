@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-17",
+ "checkedOn": "2026-11-18",
  "rows": [
   {
    "stay_id": "6afcd60dd016b84dcfe94ea1",
@@ -122,6 +122,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd087bddbdccdba27f169a",
+   "slug": "aman-tokyo",
+   "name": "Aman Tokyo",
+   "country": "Japan",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8b7",
    "slug": "amandari",
    "name": "Amandari",
@@ -156,6 +166,28 @@
     "stay_copy"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afd087bddbdccdba27f169d",
+   "slug": "amankora",
+   "name": "Amankora",
+   "country": "",
+   "missing": [
+    "coming_soon",
+    "country",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6afd085239cd1e0eb98d551f",
+   "slug": "amanoi",
+   "name": "Amanoi",
+   "country": "Vietnam",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6ae8ed8ba6295b5316ea6ce0",
@@ -551,6 +583,16 @@
    "name": "Santa Catarina",
    "country": "Brazil",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd087bddbdccdba27f169b",
+   "slug": "ayana-komodo",
+   "name": "AYANA Komodo",
+   "country": "Indonesia",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -985,14 +1027,26 @@
    "released": true
   },
   {
+   "stay_id": "6afd085239cd1e0eb98d5522",
+   "slug": "cape-weligama",
+   "name": "Cape Weligama",
+   "country": "Sri Lanka",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6afcd5f16e7407a49fc21939",
    "slug": "capella-bangkok",
    "name": "Capella Bangkok",
    "country": "Thailand",
    "missing": [
+    "coming_soon",
+    "hero_photo",
     "coordinates"
    ],
-   "released": true
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8e3",
@@ -1120,6 +1174,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afd085239cd1e0eb98d5523",
+   "slug": "ceylon-tea-trails",
+   "name": "Ceylon Tea Trails",
+   "country": "Sri Lanka",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6ae7b402d0c28c1c7104aab2",
@@ -3946,6 +4010,16 @@
    "released": false
   },
   {
+   "stay_id": "6afd087bddbdccdba27f169c",
+   "slug": "plataran-borobudur",
+   "name": "Plataran Borobudur",
+   "country": "Indonesia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff985",
    "slug": "playa-viva",
    "name": "Playa Viva",
@@ -4796,6 +4870,16 @@
    "name": "Soneva Secret",
    "country": "Maldives",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd085239cd1e0eb98d5520",
+   "slug": "song-saa-private-island",
+   "name": "Song Saa Private Island",
+   "country": "Cambodia",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -5891,6 +5975,16 @@
    "name": "Yasawa Island Resort & Spa",
    "country": "Fiji",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd085239cd1e0eb98d5521",
+   "slug": "zannier-phum-baitang",
+   "name": "Zannier Phum Baitang",
+   "country": "Cambodia",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

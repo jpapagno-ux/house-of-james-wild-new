@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-17",
+ "exportedOn": "2026-11-18",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -1000,6 +1000,82 @@
    "placeSlug": null
   },
   {
+   "slug": "ayana-komodo",
+   "name": "AYANA Komodo",
+   "ledgerId": "STY-2026-000683",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A sea-facing resort on Waecicu Beach at the edge of Komodo National Park, with its own 54 metre phinisi, Lako Di'a",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/ayana-komodo/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/ayana-komodo/room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/ayana-komodo/lako-dia",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/ayana-komodo/dining"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wildlife",
+    "diving",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "205 rooms and suites, every one with a sea view."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Komodo National Park's UNESCO sites, one to two hours from the resort jetty",
+     "AYANA Lako Di'a: nine cabins for 18 guests, April to October; sunset cruises on Lako Sae and a glass-bottom boat",
+     "Coral restoration at the Marine Discovery Center; KISIK, HonZEN and the UNIQUE rooftop bar; a spa with volcanic stone massage"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The gateway resort to Komodo National Park, where all 205 rooms face the sea and the resort's own 54 metre phinisi, AYANA Lako Di'a, sails the park from April to October."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": "komodo",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "acro-suites",
    "name": "Acro Suites",
    "ledgerId": "STY-2026-000572",
@@ -1887,6 +1963,84 @@
    "placeSlug": null
   },
   {
+   "slug": "aman-tokyo",
+   "name": "Aman Tokyo",
+   "ledgerId": "STY-2026-000682",
+   "country": "Japan",
+   "countrySlug": "japan",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Eighty-four rooms and suites on the top six floors of the Otemachi Tower, with a 2,500 square metre spa and a 30 metre pool",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/japan/aman-tokyo/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/japan/aman-tokyo/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/japan/aman-tokyo/spa-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/japan/aman-tokyo/arva"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "city",
+    "wellness",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Tokyo Haneda (HND) or Narita (NRT)",
+   "airportDirections": "About 40 minutes by car from Haneda and 60 from Narita; the tower connects to Otemachi station, and Tokyo Station is within walking distance.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "84 rooms and suites on levels 35 to 38.",
+     "Deluxe Rooms and Deluxe Palace Garden View Rooms (71 sqm); Premier Rooms (80 sqm).",
+     "Suites (141 to 146 sqm), Corner Suites (121 to 139 sqm) and 4 Aman Suites (157 sqm)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Aman Spa, 2,500 sqm over two floors, with a 30 metre heated pool",
+     "Arva, Musashi by Aman for Edomae sushi, The Lounge by Aman, Fumoir and The Café by Aman",
+     "Tokyo Station on foot; the bullet train onward to Kyoto"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Aman's first city hotel takes the top six floors of the Otemachi Tower in central Tokyo; every room has a deep furo bathtub, and the Aman Spa spans two floors with a heated 30 metre pool."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "tokyo",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "amandari",
    "name": "Amandari",
    "ledgerId": "STY-2026-000008",
@@ -2134,6 +2288,85 @@
     "status": "draft",
     "classifiedBy": "house draft, for James to approve",
     "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "amanoi",
+   "name": "Amanoi",
+   "ledgerId": "STY-2026-000677",
+   "country": "Vietnam",
+   "countrySlug": "vietnam",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Pavilions, pool villas and residences above Vinh Hy Bay inside the 29,000 hectare Nui Chua National Park",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/amanoi/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/amanoi/ocean-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/amanoi/beach-club",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/amanoi/wellness"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "families",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Cam Ranh International Airport (CXR)",
+   "airportDirections": "About 75 minutes by car from Cam Ranh (Nha Trang) airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "9 freestanding Pavilions.",
+     "23 Villas with private pools and 2 Wellness Pool Villas.",
+     "12 Residences of one to five bedrooms, among them the 925 sqm, three bedroom Ocean Pool Residence with its own spa."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Kayaking and catamaran trips on Vinh Hy Bay",
+     "Snorkelling, fishing villages and Cham culture",
+     "The lakeside Aman Spa and the Beach Club"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Aman's Vietnamese hideaway sits inside Nui Chua National Park, a UNESCO Biosphere Reserve, above Vinh Hy Bay, with a lakeside spa, a beach club on its own shore and a clifftop infinity pool."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-01"
+    ],
+    "setting": "vinh_hy_bay",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
    },
    "volumes": [
     "stays"
@@ -9449,56 +9682,57 @@
    "placeSlug": null
   },
   {
-   "slug": "capella-bangkok",
-   "name": "Capella Bangkok",
-   "ledgerId": "STY-2026-000668",
-   "country": "Thailand",
-   "countrySlug": "thailand",
+   "slug": "cape-weligama",
+   "name": "Cape Weligama",
+   "ledgerId": "STY-2026-000680",
+   "country": "Sri Lanka",
+   "countrySlug": "sri-lanka",
    "regionSlug": "asia",
    "misfiled": null,
    "category": "hotel",
-   "tagline": "A low-rise riverside hotel of 101 suites and villas, every one facing the Chao Phraya",
+   "tagline": "Thirty-nine villas and suites on twelve acres of a promontory above the Indian Ocean, with a 60 metre crescent Moon Pool",
    "quote": null,
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/capella-bangkok/hero",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/hero",
    "gallery": [
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/capella-bangkok/riverfront",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/capella-bangkok/villa",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/capella-bangkok/courtyard-suite"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/premier-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/pool-pavilion",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/lookout"
    ],
-   "bestMonths": null,
-   "bestMonthsNote": null,
+   "bestMonths": "Mid-December to March",
+   "bestMonthsNote": "Driest from mid-December to March, and again in August and September; the monsoon traditionally May to July; brief evening rain in October and November. Diving and snorkelling are best late November to early April (Resplendent Ceylon).",
    "bestFor": [
-    "city",
-    "couples",
-    "families"
+    "honeymoon",
+    "families",
+    "surf"
    ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
-   "airportDirections": null,
+   "airport": "Bandaranaike International Airport (CMB)",
+   "airportDirections": "About two hours by the Southern Highway from Colombo or the airport (190 km); Galle is 30 minutes away. A scheduled seaplane flies from Colombo, and a charter seaplane links Cape Weligama with Ceylon Tea Trails.",
    "founderNote": null,
    "rooms": {
     "paras": [
-     "101 suites and villas, all with river views.",
-     "Courtyard and verandah suites, and riverfront villas."
+     "23 villas in eight stone-ringed gardens: Luxury (130 sqm), Premier and Prestige (180 sqm) and Grand Villas (200 sqm), with 15 metre private or shared pools.",
+     "3 Pool Pavilions of 130 sqm with a 15 by 4 metre pool, and 3 Cape Residences of 310 sqm.",
+     "16 suites around the Cove Pool: Junior Suites (130 sqm), Master Suites (150 sqm) and two bedroom Family Suites (280 sqm)."
     ],
     "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Auriga Wellness",
-     "Contemporary dining on the river",
-     "Riverfront life on Charoenkrung"
-    ]
+    "paras": [
+     "Surf lessons on Weligama's curls, snorkelling and diving in the bay",
+     "Whale watching, kayaking on Koggala Lake and day trips to Uda Walawe",
+     "The Atlas, Tableau chef's table, The Society for Ceylon cream tea, and Sanctuary Spa"
+    ],
+    "items": []
    },
    "features": {
     "paras": [],
     "items": []
    },
    "onlyHere": [
-    "A low-rise hotel on the Chao Phraya where all 101 suites and villas look at the river, with riverfront villas and Auriga Wellness. Capella shows The World's 50 Best Hotels 2026, No. 2, on its own page."
+    "A Relais & Châteaux resort on its own promontory above the Indian Ocean, 30 minutes east of Galle, where the Moon Pool curves 60 metres around the cape."
    ],
    "why": [],
    "facts": {},
@@ -9508,11 +9742,11 @@
    "parentSlug": null,
    "engine": null,
    "pathway": {
-    "primary": "PATH-08",
+    "primary": "PATH-02",
     "secondary": [
-     "PATH-05"
+     "PATH-07"
     ],
-    "setting": "bangkok",
+    "setting": "south_coast",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -10640,6 +10874,85 @@
     "status": "approved",
     "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
     "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "ceylon-tea-trails",
+   "name": "Ceylon Tea Trails",
+   "ledgerId": "STY-2026-000681",
+   "country": "Sri Lanka",
+   "countrySlug": "sri-lanka",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Five planters' bungalows and 27 rooms at 1,250 metres in Sri Lanka's tea country, all inclusive",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/estate",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/norwood-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/dunkeld-pool"
+   ],
+   "bestMonths": "December to May",
+   "bestMonthsNote": "A year-round stay: driest from December to May, wetter in June and July and October and November (Resplendent Ceylon).",
+   "bestFor": [
+    "couples",
+    "families",
+    "culture"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bandaranaike International Airport (CMB)",
+   "airportDirections": "About 4.5 hours by road from the airport (160 km) or four from Colombo; seaplane and helicopter transfers are available, and Hatton station has trains to Colombo, Kandy, Nuwara Eliya and Ella.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Norwood: 6 rooms. Tientsin: 6 rooms, the highest at 1,402 metres.",
+     "Castlereagh: 5 rooms on the lake. Summerville: 5 rooms. Dunkeld: 5 rooms with the Owner's Cottage.",
+     "Master Suites, Garden Suites and Luxury Rooms; two nights minimum."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The daily Tea Experience in the fields and factory",
+     "Walks between bungalows through the estates; the hill-country railway from Hatton",
+     "Afternoon cream tea, cocktails and a four course dinner each evening"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Five working tea planters' bungalows around Lake Castlereagh in the hill country bordering the UNESCO Central Highlands, each staffed and run as a house, with meals, drinks and a daily tea experience included."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-03",
+     "PATH-07"
+    ],
+    "setting": "tea_country",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
    },
    "volumes": [
     "stays"
@@ -40063,6 +40376,84 @@
    "placeSlug": null
   },
   {
+   "slug": "plataran-borobudur",
+   "name": "Plataran Borobudur",
+   "ledgerId": "STY-2026-000684",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Pool villas on the hills five minutes from Borobudur, with the temple at lunch and Merapi at sunrise",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/plataran-borobudur/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/plataran-borobudur/resort",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/plataran-borobudur/garden-plunge-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/plataran-borobudur/patio"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "culture",
+    "families",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Yogyakarta International Airport",
+   "airportDirections": "About an hour and a half by road from Yogyakarta International Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Founder's Home; Duplex Classic two bedroom family villas with garden pools.",
+     "Borobudur Pool Villa, Residence Pool Villa and Exclusive Modern Pool Villa.",
+     "Garden Plunge Pool Villa looking over the gardens and the Menoreh Hills."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Sunrise over Borobudur; the Glory of Borobudur encounter",
+     "A pottery village by andong, a retro countryside drive",
+     "Patio Colonial Hall and Tiga Dari Borobudur with temple views; Javanese spa rituals and Plataran Junior for children"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Villas on the hills of Tanjungan Village about five minutes from Borobudur, with views of the temple, Mount Merapi and the Menoreh Hills, sunrise over the temple from a wooden deck, and lunch at Tiga Dari facing it."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "central_java",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "pods-camp-bay",
    "name": "Pods Camp Bay",
    "ledgerId": "STY-2026-000215",
@@ -49748,6 +50139,88 @@
    "placeSlug": null
   },
   {
+   "slug": "song-saa-private-island",
+   "name": "Song Saa Private Island",
+   "ledgerId": "STY-2026-000678",
+   "country": "Cambodia",
+   "countrySlug": "cambodia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-four villas across two small islands in the Koh Rong archipelago, the Sweethearts, built to support the Song Saa Foundation",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/song-saa/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/song-saa/overwater-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/song-saa/jungle-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/song-saa/vista"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "conservation",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "24 villas, each with a 26 sqm private pool",
+     "One and Two Bedroom Jungle Villas with canopy beds and outdoor showers",
+     "Ocean View Villa with a sandy beach deck",
+     "One and Two Bedroom Overwater Villas with direct ocean access",
+     "Soluna Villa, with a sala for treatments and a sunrise meditation deck",
+     "The Royal Villa: the two bedroom flagship over the water"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "Kayaking, snorkelling and coral restoration with the resident marine biologists",
+     "Vista, the overwater restaurant, and Driftwood Beach Bar",
+     "Meals on the beach, by the pool or in the jungle, with herbs from the organic garden"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A marine-positive private island resort across two islands the locals call The Sweethearts, with coral restoration led by resident marine biologists; the resort was born to support the Song Saa Foundation, at work in the Koh Rong archipelago since 2007."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-08"
+    ],
+    "setting": "koh_rong",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "soori-bali",
    "name": "Soori \n Bali",
    "ledgerId": "STY-2026-000283",
@@ -53755,8 +54228,8 @@
    "quote": null,
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/hero",
    "gallery": [
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/riverside-pool-villa",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/courtyard-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/atrium",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/chon"
    ],
    "bestMonths": null,
@@ -61717,6 +62190,84 @@
     "status": "approved",
     "classifiedBy": "James Papagno",
     "classifiedAt": "2026-11-07"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "zannier-phum-baitang",
+   "name": "Zannier Phum Baitang",
+   "ledgerId": "STY-2026-000679",
+   "country": "Cambodia",
+   "countrySlug": "cambodia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A Khmer village of 45 villas on eight hectares of working rice fields, twenty minutes from Angkor",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/zannier-phum-baitang/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/zannier-phum-baitang/pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/zannier-phum-baitang/terrace-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/zannier-phum-baitang/angkor"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "culture",
+    "couples",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "45 villas in Cambodian style on eight hectares",
+     "Twenty Pool Villas of 130 sqm, each with a garden and private pool",
+     "Twenty-five Terrace Villas of 80 sqm with a large terrace"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "The Angkor temples, a 20 minute drive",
+     "The Spa Temple, a 50 metre pool, hammam and yoga pavilion",
+     "Hang Bay and Bay Phasar restaurants; the Cigar & Cocktail Lounge in a 100 year old Cambodian farmhouse"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A village built in 2015 in the traditional Cambodian style among rice fields worked by buffalo, with rice from the village on the table at Bay Phasar and a spa temple drawn from Angkor's architecture."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "siem_reap",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
    },
    "volumes": [
     "stays"

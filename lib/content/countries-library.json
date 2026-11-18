@@ -2359,7 +2359,7 @@
    "region": "asia",
    "regionName": "Asia",
    "ledgerId": "DST-2026-000032",
-   "subtitle": "1 vetted stays",
+   "subtitle": "2 vetted stays",
    "leading": "Alpine forests, volcanic landscapes, quiet temples, and coastal beauty blend into a world of balance and refinement. Each season brings its own shifts in color, mood, and atmosphere. Stays honor thoughtful simplicity, whether in rural ryokans or modern retreats. Experience ancient paths, soak in onsen waters, or admire gardens shaped with intention. Japan invites presence and appreciation for the quiet harmony of nature and culture.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6862f8892a316af7937473b0_JapanHeroView1.jpg",
@@ -2391,16 +2391,20 @@
    ],
    "airports": [
     [
-     "Kansai International Airport (KIX)",
+     "Tokyo Haneda (HND)",
      "Serves 1 stay in the Ledger here"
     ],
     [
-     "Osaka International Airport / Itami Airport (ITM)",
+     "Narita (NRT)",
+     "Serves 1 stay in the Ledger here"
+    ],
+    [
+     "Kansai International Airport (KIX)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "KIX · ITM",
+   "flyInto": "HND · NRT",
    "bestShort": "Mar–May",
    "atlasName": "Japan"
   },
@@ -3979,7 +3983,7 @@
    "subtitle": "Ancient cities, tea country, leopards and two monsoons",
    "leading": "Rock fortresses and cave temples in the dry zone, tea estates in the hills, a Dutch-walled fort on the south coast and leopards in the scrub at Yala. Two monsoons reach opposite coasts at different times of year, so the house plans Sri Lanka around the month.",
    "hero": {
-    "src": null,
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/hero",
     "alt": "Sri Lanka, Asia"
    },
    "story": [
@@ -3992,7 +3996,7 @@
       }
      ],
      "image": {
-      "src": null,
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/hero",
       "alt": "Sri Lanka: One Island, Two Monsoons"
      }
     },
@@ -4018,7 +4022,7 @@
       }
      ],
      "image": {
-      "src": null,
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/hero",
       "alt": "Sri Lanka: Sigiriya, Kandy, Galle and Yala"
      }
     }
@@ -4127,14 +4131,13 @@
    "airports": [
     [
      "Bandaranaike International Airport (CMB)",
-     "The main international gateway"
+     "Serves 2 stays in the Ledger here"
     ]
    ],
    "transfers": [],
    "flyInto": "CMB",
    "bestShort": "Dec–Sep",
-   "atlasName": "Sri Lanka",
-   "staysComing": true
+   "atlasName": "Sri Lanka"
   },
   {
    "slug": "switzerland",
@@ -4858,20 +4861,20 @@
    ],
    "airports": [
     [
+     "Cam Ranh International Airport (CXR)",
+     "Serves 2 stays in the Ledger here"
+    ],
+    [
      "Tan Son Nhat International Airport (SGN)",
      "Serves 2 stays in the Ledger here"
     ],
     [
      "Lien Khuong Airport (DLI)",
      "Serves 1 stay in the Ledger here"
-    ],
-    [
-     "Dong Hoi Airport (VDH)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "SGN · DLI",
+   "flyInto": "CXR · SGN",
    "bestShort": "Nov–Apr",
    "atlasName": "Vietnam"
   },

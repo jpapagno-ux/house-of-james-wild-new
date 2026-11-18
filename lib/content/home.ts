@@ -21,7 +21,7 @@ export type Img = { url: string; alt: string };
 
 export const HOME = {
   seo: {
-    title: "James Wild & Co | Vetted Safaris, Stays & Small-Ship Voyages",
+    title: "James Wild & Co | Founder-Led Journeys, Stays & Voyages Since 1982",
     description:
       "A founder-led travel house exploring since 1982. Safaris, stays, family residences and small-ship voyages, each vetted in person and filed in the Ledger.",
     answer:
@@ -32,6 +32,17 @@ export const HOME = {
     eyebrow: "The House of James Wild & Co · Exploring Since 1982",
     h1: "Go somewhere that's been slept in first.",
     sub: "Every stay, camp and ship in the Ledger was vetted in person before it was offered to you. Tell a named advisor where you've always meant to go.",
+    // Rotating headlines (James, 18 Nov 2026: "why James Wild & Co and our features ... cool headlines on rotate").
+    // The first is the page's own H1 for search; the rest turn every few seconds, each with its own door.
+    slides: [
+      { h1: "Go somewhere that's been slept in first.", sub: "Every stay, camp and ship in the Ledger was vetted in person before it was offered to you. Tell a named advisor where you've always meant to go.", cta: { label: "Enter the Ledger", href: "#volumes" } },
+      { h1: "Forty-four years of journeys. One house.", sub: "A modern agency, founder and advisor led. James has designed journeys since 1982; a named advisor plans yours with you.", cta: { label: "Meet the advisors", href: "/advisors" } },
+      { h1: "The whole world on one chart.", sub: "The Atlas flies every route, ship and camp in the Ledger, and your itinerary plays out on it day by day.", cta: { label: "Open the Atlas", href: "/voyages#voyages-atlas" } },
+      { h1: "Meet Iggi, your live companion.", sub: "Iggi helps you plan, book and journey: ask anything, any hour, and Iggi brings in your advisor when it matters.", cta: { label: "Ask Iggi", href: "/plan/iggi" } },
+      { h1: "A journal that travels with you.", sub: "Your Folio keeps every stay, transfer and note in one place, follows you on the road, and keeps your own pages too.", cta: { label: "See how it works", href: "/how-the-house-works" } },
+      { h1: "Small ships to the far reefs.", sub: "Phinisis in Raja Ampat, sailing ships in Polynesia, expedition ships to the ice. Every one in the Ledger.", cta: { label: "See this volume", href: "/voyages" } },
+      { h1: "Africa, camp by camp.", sub: "Safaris James has slept in, from the Okavango to the Serengeti, planned by the advisors who know them.", cta: { label: "See this volume", href: "/safaris" } },
+    ],
     loop: {
       mp4: `${HOME_CDN}/691cb223d3a2dde99dc01c54_Wes-Webloop-Regrade-Felixstudios-02_LQ_mp4.mp4`,
       webm: `${HOME_CDN}/691cb223d3a2dde99dc01c54_Wes-Webloop-Regrade-Felixstudios-02_LQ_webm.webm`,

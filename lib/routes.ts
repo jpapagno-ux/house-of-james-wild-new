@@ -191,6 +191,7 @@ export const BUILT: string[] = [
   "/destinations/asia/thailand/andaman-coast",
   "/destinations/asia/thailand/koh-samui-and-the-gulf",
   "/destinations/asia/thailand/northern-thailand",
+  "/destinations/asia/thailand/bangkok",
   "/destinations/asia/cambodia/cardamom-mountains",
   "/destinations/asia/cambodia/siem-pang",
   "/destinations/oceania/new-zealand/taupo",

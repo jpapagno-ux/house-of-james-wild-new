@@ -80,9 +80,9 @@ const airOf = (stops: TerrainStop[]) => stops.slice(1).map(isAir);
 const routeLegs = (stops: TerrainStop[]) => legsOf(stops).map((l, i) => (isAir(stops[i + 1]) ? l : smoothLine(l, cutFor(stops[i + 1]))));
 
 // The vehicle on the route, drawn pointing north and rotated to the heading: the house vessel (graphite hull, crimson
-// pennant) under way, a small plane on a flown leg. The vessel is 36px with a soft shadow (James, 18 Nov 2026: "a bigger
+// pennant) under way, a small plane on a flown leg. The vessel is 36px (James, 18 Nov 2026: "a bigger
 // vessel"), so she reads against open sea on the wide-water voyages; the plane stays 22px.
-const VESSEL = `<svg viewBox="0 0 22 22" width="36" height="36" aria-hidden="true" style="filter: drop-shadow(0 1px 2px rgba(26,24,22,.45))"><path d="M11 1.5 C14.6 5 15.4 9.5 15 14.5 L14.2 20 H7.8 L7 14.5 C6.6 9.5 7.4 5 11 1.5 Z" fill="${HOUSE.graphite}" stroke="${HOUSE.paper}" stroke-width="1.2" stroke-linejoin="round"/><path d="M11 6 V15.5" stroke="${HOUSE.paper}" stroke-width="1"/><path d="M11 6 L15.8 7.6 L11 9.2 Z" fill="${CRIMSON.fill}" stroke="${HOUSE.paper}" stroke-width=".6" stroke-linejoin="round"/></svg>`;
+const VESSEL = `<svg viewBox="0 0 22 22" width="36" height="36" aria-hidden="true"><path d="M11 1.5 C14.6 5 15.4 9.5 15 14.5 L14.2 20 H7.8 L7 14.5 C6.6 9.5 7.4 5 11 1.5 Z" fill="${HOUSE.graphite}" stroke="${HOUSE.paper}" stroke-width="1.2" stroke-linejoin="round"/><path d="M11 6 V15.5" stroke="${HOUSE.paper}" stroke-width="1"/><path d="M11 6 L15.8 7.6 L11 9.2 Z" fill="${CRIMSON.fill}" stroke="${HOUSE.paper}" stroke-width=".6" stroke-linejoin="round"/></svg>`;
 const PLANE = `<svg viewBox="0 0 22 22" width="22" height="22" aria-hidden="true"><path d="M11 1.5 C11.9 1.5 12.3 2.6 12.3 4 V8.6 L20 13 V15 L12.3 12.6 V17.2 L14.6 19 V20.5 L11 19.5 L7.4 20.5 V19 L9.7 17.2 V12.6 L2 15 V13 L9.7 8.6 V4 C9.7 2.6 10.1 1.5 11 1.5 Z" fill="${HOUSE.graphite}" stroke="${HOUSE.paper}" stroke-width="1.1" stroke-linejoin="round"/><circle cx="11" cy="5" r="1" fill="${CRIMSON.fill}"/></svg>`;
 const stopsFc = (stops: TerrainStop[]) => fc(stops.map((s, i) => ({ type: "Feature", id: i, properties: { name: s.name }, geometry: { type: "Point", coordinates: lngLat(s) } })));
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));

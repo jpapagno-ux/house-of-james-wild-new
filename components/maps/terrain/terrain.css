@@ -33,7 +33,7 @@
 .jw-relief .maplibregl-ctrl-attrib a { color: #2E2B28; }
 .jw-relief .maplibregl-ctrl-attrib.maplibregl-compact { border-radius: 2px; }
 .jw-relief .maplibregl-cooperative-gesture-screen { background: rgba(26, 24, 22, 0.55); font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif; font-size: 15px; color: #FFFFFF; }
-.jw-relief__vehicle{width:22px;height:22px;pointer-events:none;filter:drop-shadow(0 1px 1.5px rgba(26,24,22,.35))}.jw-relief__vehicle svg{display:block}
+.jw-relief__vehicle{display:grid;place-items:center;width:36px;height:36px;pointer-events:none;filter:drop-shadow(0 1px 1.5px rgba(26,24,22,.35))}.jw-relief__vehicle svg{display:block}
 
 /* No white under the tiles (3 Nov 2026): the map container shows Stone Mist in Chart and the satellite earth tone
    (style.ts SATELLITE.ground) in Satellite, so nothing loading flashes Paper. */

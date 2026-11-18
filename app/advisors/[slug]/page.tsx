@@ -1,3 +1,4 @@
+import AdvisorStories from "@/components/advisor/AdvisorStories";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -107,32 +108,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
             </aside>
           </section>}
 
-          {a.stories && a.stories.length > 0 && (
-            <section className="mt-16 md:mt-20 border-t ledger-rule pt-8" aria-labelledby="stories-heading">
-              <p className="ledger-eyebrow ledger-crimson">Photo stories</p>
-              <h2 id="stories-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Where {a.firstName} Has Been</h2>
-              {a.stories.map((s) => (
-                <article key={s.id} className="mt-8">
-                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                    <h3 className="ledger-display text-[1.5rem] md:text-[1.75rem]">{s.title}</h3>
-                    <p className="ledger-eyebrow">{s.place} · {s.when}{s.ledgerIds.length ? <span className="ledger-id"> · {s.ledgerIds.join(" · ")}</span> : null}</p>
-                  </div>
-                  <p className="mt-2 text-[16px] ledger-muted max-w-2xl">{s.line}</p>
-                  <div className="mt-5 grid gap-4 md:grid-cols-[1.6fr_1fr]">
-                    {s.photos.map((ph) => (
-                      <figure key={ph.url}>
-                        <div className="relative bg-paper-card overflow-hidden" style={{ aspectRatio: `${ph.w} / ${ph.h}` }}>
-                          <Image src={ph.url} alt={ph.alt} fill sizes="(min-width: 768px) 60vw, 100vw" className="object-cover" />
-                        </div>
-                        <figcaption className="mt-2 text-[12.5px] ledger-muted">{ph.credit}</figcaption>
-                      </figure>
-                    ))}
-                  </div>
-                  {s.journalSlug && <p className="mt-4"><Link href={`/journal/${s.journalSlug}`} className="ledger-btn">Read the full story</Link></p>}
-                </article>
-              ))}
-            </section>
-          )}
+          {a.stories && <AdvisorStories firstName={a.firstName} stories={a.stories} />}
 
           {a.desk && <DeskTies a={a} />}
 

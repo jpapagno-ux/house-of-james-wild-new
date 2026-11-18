@@ -22,8 +22,8 @@ export const POST = withHouse(async ({ req, desk, requestId, params }) => {
   const link = `${new URL(req.url).origin}/advisor/invite/${token}`;
   let emailed = false;
   if (b.send === true) {
-    const { data: a } = await desk.sb.from("advisors").select("display_name").eq("id", params.id).maybeSingle();
-    const sent = await sendDeskMail(email, advisorInviteMail({ name: a?.display_name ?? "Advisor", link, inviter: "James Papagno" }), "advisor_invite");
+    const { data: a } = await desk.sb.from("advisors").select("display_name, adv_number").eq("id", params.id).maybeSingle();
+    const sent = await sendDeskMail(email, advisorInviteMail({ name: a?.display_name ?? "Advisor", link, inviter: "James Papagno", adv: a?.adv_number ?? null }), "advisor_invite");
     emailed = sent === "sent";
     if (emailed) await desk.sb.rpc("advisor_invitation_emailed", { p_invitation: id });
   }

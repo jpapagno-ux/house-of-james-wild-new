@@ -19,18 +19,80 @@ ${lines.map((l) => `<p style="font-size:16px;line-height:1.5;margin:0 0 10px">${
   return { subject, text, html };
 }
 
-export function advisorInviteMail(o: { name: string; link: string; inviter: string | null }): Mail {
-  const first = o.name.split(" ")[0];
-  return deskMail({
-    eyebrow: "James Wild & Co · Advisor Desk",
-    title: `${first}, your Advisor Desk is ready`,
-    lines: [
-      `${o.inviter ? `${o.inviter} has invited you` : "You have been invited"} to the James Wild & Co Advisor Desk.`,
-      "Open the link, sign in with this email address and set up an authenticator app on your phone. Then fill in your file: your details, plan, agreement, documents and your Advisor DNA. The house reviews it and opens your desk.",
-      "The link works once and expires in 14 days.",
-    ],
-    link: o.link, cta: "Accept the invitation",
-  });
+/**
+ * The advisor's invitation (redesigned, James, 18 Nov 2026): the house lockup, the advisor's name and ADV
+ * number, one button, the three steps in order and what waits on the desk. Type only, no images, so it
+ * reads the same in every mail client; tables and inline styles for Outlook and Gmail.
+ */
+export function advisorInviteMail(o: { name: string; link: string; inviter: string | null; adv?: string | null; role?: string | null }): Mail {
+  const first = undashMail(o.name.split(" ")[0]);
+  const title = `${first}, your Advisor Desk is ready`;
+  const who = o.inviter ? `${o.inviter} has invited you` : "You have been invited";
+  const lead = `${who} to the James Wild & Co Advisor Desk: the house's Ledger, your clients, your quotes and your earnings, behind one sign-in.`;
+  const steps: [string, string][] = [
+    ["Accept the invitation", "Open the link and sign in with this email address."],
+    ["Secure your desk", "Set up an authenticator app on your phone. You enter its code each time you sign in."],
+    ["Fill in your file", "Your details, plan, agreement, documents and your Advisor DNA. The house reviews it and opens your desk."],
+  ];
+  const desk: [string, string][] = [
+    ["The Ledger", "Every stay, voyage and safari the house has vetted, at the house's own rates."],
+    ["Quote requests", "Ask the house to price and hold a stay for your client."],
+    ["My clients", "Everyone you are planning for, with their quotes and trips."],
+    ["Earnings", "Your commission on every booking, as it is confirmed and paid."],
+  ];
+  const role = o.role ? undashMail(o.role) : null;
+  const subject = `${title} · James Wild & Co`.slice(0, 180);
+  const text = [
+    title, "", lead, "",
+    ...(o.adv ? [`Your advisor number: ${o.adv}${role ? ` · ${role}` : ""}`, ""] : []),
+    `Accept the invitation: ${o.link}`, "",
+    "What happens next", ...steps.map(([t, l], i) => `${i + 1}. ${t}. ${l}`), "",
+    "On your desk", ...desk.map(([t, l]) => `- ${t}: ${l}`), "",
+    "The link works once and expires in 14 days.", "",
+    "James Wild & Co · Exploring since 1982 · 1.800.419.7000 · hello@jameswildco.com",
+  ].join("\n");
+  const serif = "Georgia,'Times New Roman',serif", sans = "Arial,Helvetica,sans-serif";
+  const label = `font:11px/1.4 ${sans};letter-spacing:.22em;text-transform:uppercase`;
+  const html = `<div style="background:#F4F2EF;padding:24px 12px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background:#FFFFFF;border:1px solid #DCD7D0;border-collapse:collapse">
+<tr><td style="height:4px;background:#8B2525;font-size:0;line-height:0">&nbsp;</td></tr>
+<tr><td style="padding:30px 36px 22px;text-align:center;border-bottom:1px solid #DCD7D0">
+<p style="${label};color:#8B2525;margin:0 0 10px">Advisor Desk · Invitation</p>
+<p style="font:normal 30px/1.1 ${serif};color:#1A1816;margin:0">James Wild &amp; Co.</p>
+<p style="${label};font-size:10px;color:#6B635A;margin:8px 0 0">Exploring since 1982</p>
+</td></tr>
+<tr><td style="padding:34px 36px 8px">
+<h1 style="font:normal 32px/1.15 ${serif};color:#1A1816;margin:0 0 16px">${esc(title)}</h1>
+<p style="font:16px/1.6 ${serif};color:#2E2B28;margin:0 0 22px">${esc(lead)}</p>
+${o.adv ? `<table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 26px"><tr><td style="border-left:3px solid #8B2525;background:#F4F2EF;padding:12px 18px">
+<p style="${label};font-size:10px;color:#6B635A;margin:0 0 4px">Your advisor number</p>
+<p style="font:15px/1.3 'Courier New',Courier,monospace;letter-spacing:.06em;color:#8B2525;margin:0">${esc(o.adv)}</p>
+${role ? `<p style="font:14px/1.4 ${serif};color:#2E2B28;margin:6px 0 0">${esc(role)}</p>` : ""}
+</td></tr></table>` : ""}
+<table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin:0 0 10px"><tr>
+<td style="background:#1A1816"><a href="${esc(o.link)}" style="display:inline-block;padding:16px 26px;font:12px/1 ${sans};letter-spacing:.2em;text-transform:uppercase;color:#FFFFFF;text-decoration:none">Accept the invitation</a></td>
+<td style="background:#8B2525"><a href="${esc(o.link)}" style="display:inline-block;padding:16px 18px;font:14px/1 ${sans};color:#FFFFFF;text-decoration:none" aria-hidden="true">&rarr;</a></td>
+</tr></table>
+<p style="font:13px/1.5 ${serif};color:#6B635A;margin:0 0 6px">The link works once and expires in 14 days.</p>
+</td></tr>
+<tr><td style="padding:22px 36px 6px">
+<p style="${label};color:#8B2525;margin:0 0 12px;padding-top:22px;border-top:1px solid #DCD7D0">What happens next</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+${steps.map(([t, l], i) => `<tr><td valign="top" style="width:44px;padding:0 0 16px;font:12px/1.6 'Courier New',Courier,monospace;letter-spacing:.1em;color:#6B635A">0${i + 1}</td><td valign="top" style="padding:0 0 16px"><p style="font:18px/1.3 ${serif};color:#1A1816;margin:0">${esc(t)}</p><p style="font:14.5px/1.55 ${serif};color:#2E2B28;margin:3px 0 0">${esc(l)}</p></td></tr>`).join("\n")}
+</table>
+</td></tr>
+<tr><td style="padding:6px 36px 26px">
+<p style="${label};color:#8B2525;margin:0 0 12px;padding-top:22px;border-top:1px solid #DCD7D0">On your desk</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse">
+${desk.map(([t, l]) => `<tr><td valign="top" style="padding:0 0 12px"><p style="font:16px/1.3 ${serif};color:#1A1816;margin:0">${esc(t)}</p><p style="font:14px/1.5 ${serif};color:#6B635A;margin:2px 0 0">${esc(l)}</p></td></tr>`).join("\n")}
+</table>
+</td></tr>
+<tr><td style="padding:18px 36px 22px;background:#F4F2EF;border-top:1px solid #DCD7D0">
+<p style="font:12.5px/1.6 ${serif};color:#6B635A;margin:0 0 10px">If the button does not open, copy this address into your browser:<br><span style="font:12px/1.5 'Courier New',Courier,monospace;color:#2E2B28;word-break:break-all">${esc(o.link)}</span></p>
+<p style="${label};font-size:10px;color:#6B635A;margin:0">James Wild &amp; Co · 1.800.419.7000 · hello@jameswildco.com</p>
+</td></tr>
+</table></div>`;
+  return { subject, text, html };
 }
 
 export type AlertEvent =

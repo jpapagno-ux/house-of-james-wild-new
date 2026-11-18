@@ -35,6 +35,18 @@ test("the invitation email names the advisor and the link, without long dashes",
   assert.doesNotMatch(m.text + m.html, /[–—]/);
 });
 
+test("the redesigned invitation: the ADV number and role show when given, the link is in the button and the fallback, and names are escaped", () => {
+  const m = advisorInviteMail({ name: "Anthony Papagno", link: "https://example.com/advisor/invite/abc", inviter: "James Papagno", adv: "ADV-2026-000002", role: "Travel Advisor · Indonesia" });
+  assert.match(m.html, /ADV-2026-000002/);
+  assert.match(m.text, /Your advisor number: ADV-2026-000002 · Travel Advisor · Indonesia/);
+  assert.equal(m.html.split('href="https://example.com/advisor/invite/abc"').length - 1, 2);
+  assert.match(m.html, /copy this address[\s\S]*https:\/\/example\.com\/advisor\/invite\/abc/);
+  assert.doesNotMatch(m.html, /<img|<script|https?:\/\/(?!example\.com)/);
+  const plain = advisorInviteMail({ name: "<i>Ann</i> Lee", link: "https://example.com/x", inviter: null });
+  assert.doesNotMatch(plain.html, /Your advisor number|<i>Ann/);
+  assert.match(plain.text, /You have been invited/);
+});
+
 test("alerts link to the right screen and escape what the advisor typed", () => {
   const m = alertMail({ kind: "request_sent", advisor: "<b>Ann</b>", ref: "AR-2026-000001", stay: "Tswalu", dates: "2027-05-01 to 2027-05-04" }, "https://x.test", "/desk/advisor-requests/1");
   assert.match(m.text, /https:\/\/x\.test\/desk\/advisor-requests\/1/);

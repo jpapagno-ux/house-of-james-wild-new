@@ -51,7 +51,8 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, slides, filmH
     return () => clearInterval(id);
   }, [reduce, quotes.length]);
 
-  // Rotating headlines: one every 7 s; the reader's hover or focus holds the current one; reduced motion keeps the first.
+  // Rotating headlines: one every 7 s (fix, 18 Nov 2026: a resting mouse no longer freezes them; only keyboard focus
+  // holds the current one, and a tap on a bar picks one); reduced motion keeps the first.
   const deck = slides?.length ? slides : [{ h1, sub, cta: { label: "Enter the Ledger", href: "#volumes" } }];
   const [s, setS] = useState(0);
   const [hold, setHold] = useState(false);
@@ -94,7 +95,7 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, slides, filmH
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-6 md:gap-10 lg:gap-16 items-end">
           <motion.div data-hero-copy initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.1, ease: EASE }}>
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{eyebrow}</p>
-            <div onMouseEnter={() => setHold(true)} onMouseLeave={() => setHold(false)} onFocus={() => setHold(true)} onBlur={() => setHold(false)} aria-live="polite" className="min-h-[13rem] md:min-h-[17rem] lg:min-h-[22rem] flex flex-col justify-end">
+            <div onFocus={() => setHold(true)} onBlur={() => setHold(false)} aria-live="polite" className="min-h-[13rem] md:min-h-[17rem] lg:min-h-[22rem] flex flex-col justify-end">
               <AnimatePresence mode="wait">
                 <motion.div key={s} initial={reduce ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -14 }} transition={{ duration: 0.7, ease: EASE }}>
                   {s === 0 ? (

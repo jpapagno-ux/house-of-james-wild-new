@@ -51,7 +51,10 @@ export const SKY_NIGHT: SkySpecification = {
 export const depthLayer = (): LayerSpecification => ({
   id: "jw-depth", type: "color-relief", source: "jw-depth",
   paint: {
-    "color-relief-color": ["interpolate", ["linear"], ["elevation"], -5000, "#23404B", -2000, "#2F5560", -600, "#3F6672", -150, "#5E8791", -30, "#8FB3B5", -2, "#BFD6D2", 0, "rgba(0,0,0,0)"],
+    // One tone from 200 m up to the shore (James, 18 Nov 2026: "what are these boxes"): the open seabed survey is a coarse
+    // grid, and shading the shallows by it drew that grid as rows of boxes over the banks. Only deep water is shaded now,
+    // where the seabed changes slowly; the shallow tone is the sea colour itself (lib/palette.ts TERRAIN.water).
+    "color-relief-color": ["interpolate", ["linear"], ["elevation"], -5000, "#23404B", -2500, "#2F5560", -800, "#46707C", -200, "#5E8490", -1, "#5E8490", 0, "rgba(0,0,0,0)"],
     "color-relief-opacity": 0.85,
   },
 } as unknown as LayerSpecification);

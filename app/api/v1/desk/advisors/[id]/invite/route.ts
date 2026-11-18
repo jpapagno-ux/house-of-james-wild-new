@@ -22,8 +22,9 @@ export const POST = withHouse(async ({ req, desk, requestId, params }) => {
   const link = `${new URL(req.url).origin}/advisor/invite/${token}`;
   let emailed = false;
   if (b.send === true) {
-    const { data: a } = await desk.sb.from("advisors").select("display_name").eq("id", params.id).maybeSingle();
-    const sent = await sendDeskMail(email, advisorInviteMail({ name: a?.display_name ?? "Advisor", link, inviter: "James Papagno" }), "advisor_invite");
+    const { data: a } = await desk.sb.from("advisors").select("display_name, portrait_public_id").eq("id", params.id).maybeSingle();
+    const photo = a?.portrait_public_id ? `https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,g_face,w_240,h_300,q_auto,f_jpg/${a.portrait_public_id}` : null;
+    const sent = await sendDeskMail(email, advisorInviteMail({ name: a?.display_name ?? "Advisor", link, inviter: "James Papagno", photo }), "advisor_invite");
     emailed = sent === "sent";
     if (emailed) await desk.sb.rpc("advisor_invitation_emailed", { p_invitation: id });
   }

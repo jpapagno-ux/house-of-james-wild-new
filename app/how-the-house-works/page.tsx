@@ -79,7 +79,7 @@ export default function HowTheHouseWorks() {
             <ul className="mt-6 grid gap-4 md:grid-cols-3">
               {INSTRUMENTS.map((i) => <li key={i.key} className="border-l-2 border-house pl-5"><p className="ledger-display text-[18px]">{i.name}</p><p className="mt-1 text-[15px] leading-relaxed ledger-muted">{i.advisor}</p></li>)}
             </ul>
-            <p className="mt-6 text-[15px] leading-relaxed max-w-2xl">Your own DNA, in your words, is what the house reads when it names you. <Link href="/for-advisors" className="underline underline-offset-4 hover:text-house">About advisors of the house</Link></p>
+            <p className="mt-6 text-[15px] leading-relaxed max-w-2xl">Your own Bearing, in your words, is what the house reads when it names you. <Link href="/for-advisors" className="underline underline-offset-4 hover:text-house">About advisors of the house</Link></p>
           </section>
 
           <PlanClose title="Start anywhere." line="Read the Compass, open the Atlas, or ask Iggi. The house takes it from there." />

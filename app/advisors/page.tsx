@@ -46,7 +46,7 @@ export default function AdvisorsIndex() {
           <header className="max-w-3xl">
             <p className="ledger-eyebrow ledger-crimson">Advisor-led · Advisor-built</p>
             <h1 className="ledger-display text-[2.3rem] md:text-[3.3rem] leading-[1.08] mt-2">The Advisors of the House</h1>
-            <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">A named person with an Advisor ID carries every journey. James vouches for the place; the advisor vouches for you. Each advisor&rsquo;s DNA below is theirs: the journeys they plan and the places they know, as they stated them to the house. Each advisor confirms it on the Advisor Desk, and the house approves it before it shows here.</p>
+            <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">A named person with an Advisor ID carries every journey. James vouches for the place; the advisor vouches for you. Each advisor&rsquo;s Bearing below is theirs: the journeys they plan and the places they know, as they stated them to the house. Each advisor confirms it on the Advisor Desk, and the house approves it before it shows here.</p>
           </header>
 
           <div className="mt-10"><AnswerBlock>{answer}</AnswerBlock></div>

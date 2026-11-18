@@ -23,7 +23,7 @@ export default function AdvisorDnaBlock({ a, idBase = "dna" }: { a: Advisor; idB
   const stayOf = new Map([...STAYS, ...VESSEL_RECORDS].filter((s) => s.ledgerId).map((s) => [s.ledgerId as string, s]));
   return (
     <section className="mt-12 border-t ledger-rule pt-8 md:pt-10" aria-labelledby={`${idBase}-heading`}>
-      <p className="ledger-eyebrow" style={{ color: GREEN_INK }}>Advisor DNA · {a.ledgerId}</p>
+      <p className="ledger-eyebrow" style={{ color: GREEN_INK }}>Their Bearing · {a.ledgerId}</p>
       <h2 id={`${idBase}-heading`} className="ledger-display text-[1.75rem] md:text-4xl mt-2">What {a.firstName} Carries</h2>
       {d.matchNote && <p className="mt-5 ledger-display italic text-[1.35rem] md:text-[1.6rem] leading-snug max-w-3xl">&ldquo;{d.matchNote}&rdquo;</p>}
       <p className="mt-2 text-[13px] ledger-muted">{d.confirmed ? `In ${a.firstName}'s own words, confirmed ${d.confirmed.slice(0, 10)}.` : `As the house reads ${a.firstName}; not yet confirmed by ${a.firstName}.`}</p>

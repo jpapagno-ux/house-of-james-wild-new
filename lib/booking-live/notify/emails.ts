@@ -2,6 +2,8 @@
 // each step. Sent from myfolio@ with the reference in the subject (James, 25
 // Oct 2026). No imports, so plain Node tests them (tests/notify.test.ts).
 
+import { mailShell } from "../../mail-shell.ts";
+
 export type Mail = { subject: string; text: string; html: string };
 export type Money = { minor: number | string; currency: string };
 export type Stay = { propertyName: string; roomName: string | null; arrival: string; departure: string; adults: number; children: number };
@@ -13,7 +15,8 @@ const party = (s: Stay) => `${s.adults} adult${s.adults === 1 ? "" : "s"}${s.chi
 const where = (s: Stay) => `${s.roomName ? `${s.roomName} at ` : ""}${s.propertyName}`;
 
 function wrap(eyebrow: string, title: string, paras: string[], cta: { label: string; url: string } | null, foot: string): string {
-  return `<div style="font-family:Georgia,serif;color:#2D2A26;max-width:620px"><p style="font:12px/1.4 monospace;letter-spacing:.12em;text-transform:uppercase;color:#8B2525;margin:0 0 6px">${esc(eyebrow)}</p><h1 style="font-size:22px;margin:0 0 16px">${esc(title)}</h1>${paras.map((p) => `<p style="font-size:16px;line-height:1.5">${p}</p>`).join("")}${cta ? `<p style="margin:20px 0"><a href="${esc(cta.url)}" style="display:inline-block;padding:10px 18px;border:1px solid #8B2525;color:#8B2525;text-decoration:none;font:12px/1 monospace;letter-spacing:.14em;text-transform:uppercase">${esc(cta.label)}</a></p>` : ""}<p style="font-size:12px;color:#8a857d;margin-top:24px">${esc(foot)}</p></div>`;
+  // The house mail shell (18 Nov 2026); paragraphs here are already-escaped HTML.
+  return mailShell({ eyebrow, title, body: paras.map((p) => `<p style="margin:0 0 14px">${p}</p>`).join(""), cta, foot });
 }
 const lines = (s: Stay) => [`${where(s)}`, `${nice(s.arrival)} → ${nice(s.departure)} · ${party(s)}`];
 const FOOT = "James Wild & Co · Nothing is charged without you; the house confirms every room with the property first.";

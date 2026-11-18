@@ -222,3 +222,30 @@ export function SetPortrait({ id, slug, current }: { id: string; slug: string; c
     </form>
   );
 }
+
+// ===== The profile switch, house side (18 Nov 2026): approve a request to show again, or hide with a note.
+export function HouseProfile({ id, visible, requested, awayUntil, message }: { id: string; visible: boolean; requested: boolean; awayUntil: string | null; message: string | null }) {
+  const router = useRouter();
+  const [busy, setBusy] = useState(false);
+  const [note, setNote] = useState(message ?? "");
+  const [msg, setMsg] = useState<string | null>(null);
+  async function go(show: boolean) {
+    setBusy(true); setMsg(null);
+    const r = await api("POST", `/api/v1/desk/advisors/${id}/profile`, { visible: show, message: note });
+    setBusy(false); setMsg(r.ok ? (show ? "Shown. The site updates within a few minutes." : "Hidden. The site updates within a few minutes.") : r.message);
+    if (r.ok) router.refresh();
+  }
+  return (
+    <div className="grid gap-3">
+      <p className="text-[15px]">{visible ? "On the site." : requested ? "Off the site; the advisor asks to show it again." : "Off the site."}{awayUntil ? ` Away until ${awayUntil}.` : ""}</p>
+      <label className="grid gap-1 text-[13px] ledger-muted">A note the advisor sees on their desk (optional)
+        <input value={note} onChange={(e) => setNote(e.target.value)} maxLength={500} className="bg-white border ledger-border px-3 py-2 text-[15px]" />
+      </label>
+      <div className="flex flex-wrap gap-3">
+        {!visible && <button type="button" disabled={busy} onClick={() => go(true)} className="ledger-btn ledger-btn--solid">{requested ? "Approve: show the profile" : "Show the profile"}</button>}
+        {visible && <button type="button" disabled={busy} onClick={() => go(false)} className="ledger-btn">Hide the profile</button>}
+      </div>
+      {msg && <p role="status" className="text-[14px]">{msg}</p>}
+    </div>
+  );
+}

@@ -105,7 +105,7 @@ export function dnaChanges(before: DnaInput | null, after: DnaInput): { field: s
 }
 
 // ===== The website's overlay: the desk's approved DNA over the Library's copy, advisor by advisor.
-export type DeskDna = { slug: string; ledgerId: string; hidden: boolean } & Partial<LibraryDna & { confirmed: string | null; updated: string | null }>;
+export type DeskDna = { slug: string; ledgerId: string; hidden: boolean; offline?: boolean } & Partial<LibraryDna & { confirmed: string | null; updated: string | null; awayUntil: string | null }>;
 /** Desk wins where it has an advisor; hidden (paused or left) keeps the Library's marks but closes them to new
  *  places; an advisor the desk has not reached keeps the Library's copy unchanged. */
 export function overlayDna<T extends LibraryDna & { slug: string; ledgerId: string }>(library: T[], desk: DeskDna[]): (T & { source: "desk" | "library" })[] {

@@ -4,6 +4,7 @@ import { loadBook } from "@/lib/platform/advisor-book";
 import { attention, buildClients, isLiveBooking, isOpenQuote, money, personName } from "@/lib/platform/advisor-clients";
 import { niceDate } from "@/lib/platform/labels";
 import { Empty, PageHead, Panel, Section, StatusPill, TextLink } from "@/components/platform/ui";
+import ProfileSwitch from "@/components/advisor/ProfileSwitch";
 
 export const metadata = { title: "Overview" };
 
@@ -36,6 +37,8 @@ export default async function AdvisorOverview() {
           </Link>
         ))}
       </div>
+
+      <div className="mt-8"><ProfileSwitch visible={a.advisor.profile_visible !== false} requested={!!a.advisor.profile_show_requested_at} awayUntil={a.advisor.away_until ?? null} houseMessage={a.advisor.house_message ?? null} /></div>
 
       <Section title="Needs your eye" aside={eye.length ? `${eye.length} item${eye.length === 1 ? "" : "s"}` : undefined}>
         {eye.length ? (

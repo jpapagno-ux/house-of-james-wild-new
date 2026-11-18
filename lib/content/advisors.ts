@@ -11,7 +11,8 @@
 //  - a profile page is built only when a bio is filed; until then the card
 //    says the profile is on its way and offers the planning form;
 //  - James's card opens /about/founder, so there's one page about him.
-// Public fields only: no personal email or phone numbers here.
+// Public fields only. Work contact details (house email, direct line) show only when James approves
+// them for that advisor (Anthony, 18 Nov 2026); never a personal address.
 
 import { SAMPLE_DESKS, samplePortrait } from "./advisor-samples";
 import { deskCounts, type AdvisorMark, type DeskProfile, type Volume } from "./advisor-desk";
@@ -63,6 +64,16 @@ export type Advisor = {
   sample?: boolean; // invented to show the layout; labelled as such everywhere
   desk?: DeskProfile; // the Advisor Desk: ID, marks, entries carried, folios
   dna?: AdvisorDna; // Stage 4b: from the Library, merged at load (real advisors only)
+  contact?: { email: string; phone: string; tel: string }; // work contact, James-approved per advisor
+  stories?: AdvisorStory[]; // photo stories of their own journeys: their photos, their facts
+};
+
+/** A photo story from an advisor's own journey. Photos are theirs (or the house's); facts are what they stated. */
+export type AdvisorStory = {
+  id: string; title: string; place: string; when: string; line: string;
+  ledgerIds: string[]; // Ledger records the story touches (a stay, a ship)
+  photos: { url: string; alt: string; credit: string; w: number; h: number }[];
+  journalSlug?: string; // the long version, once it is in the Journal
 };
 
 const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
@@ -138,7 +149,20 @@ const CARDS: Advisor[] = [
     firstName: "Anthony",
     role: "Travel Advisor · Nature & Wildlife",
     roleApproved: true,
-    portrait: { url: `${CDN}/67d1f822a724915185466057_team-anthony.avif`, alt: "Portrait of Anthony Papagno, travel advisor at James Wild & Co" },
+    // Portrait and contact sent by James, 18 Nov 2026.
+    portrait: { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_fill,g_face,ar_4:5,w_800/jwco/advisors/anthony-papagno/portrait", alt: "Portrait of Anthony Papagno, travel advisor at James Wild & Co" },
+    contact: { email: "anthony@jameswildco.com", phone: "561.479.6356", tel: "+15614796356" },
+    stories: [
+      {
+        id: "raja-ampat-2024", title: "Raja Ampat aboard Aliikai", place: "Raja Ampat, Indonesia", when: "November 2024",
+        line: "Anthony and James sailed Raja Ampat aboard the yacht Aliikai, 3 to 14 November 2024.",
+        ledgerIds: ["VSL-2026-000004"],
+        photos: [
+          { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_limit,w_1600/jwco/advisors/anthony-papagno/stories/indonesia-2024/raja-ampat-2024-beach", alt: "Anthony and James Papagno on a white sand beach in Raja Ampat at dusk, with Raja Ampat 2024 written in the sand", credit: "Photograph, James Wild & Co", w: 1600, h: 900 },
+          { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_limit,w_1200/jwco/advisors/anthony-papagno/stories/indonesia-2024/james-and-anthony-bar", alt: "James and Anthony Papagno at a bamboo-roofed beach bar in Indonesia, November 2024", credit: "Photograph, James Wild & Co", w: 1200, h: 1600 },
+        ],
+      },
+    ],
     intro: "James's son. Nature, wildlife and the trail: Indonesia, the Galápagos and Costa Rica so far, and he's following his father's footsteps.",
     bio: [
       "Anthony is James's son, and he grew up watching his father leave for somewhere wild and come back with a story. Then he started going himself. He travels for nature, wildlife and the walk in: the trail, the reef, the forest at first light.",

@@ -63,6 +63,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
               <h1 className="ledger-display text-[2.3rem] md:text-[3.3rem] leading-[1.08] mt-2">{a.name}</h1>
               {a.intro && <p className="mt-4 text-[18px] md:text-[19px] ledger-muted max-w-xl leading-relaxed">{a.intro}</p>}
               <div className="mt-6 flex flex-wrap gap-4 items-center"><Link href={`/plan?advisor=${a.slug}`} className="ledger-btn ledger-btn--solid">Plan with {a.firstName}</Link><Link href="/about/team" className="ledger-btn-ghost">The whole team</Link></div>
+              {a.contact && <p className="mt-5 flex flex-wrap gap-x-6 gap-y-1 text-[16px]"><a href={`mailto:${a.contact.email}`} className="underline underline-offset-4 hover:ledger-crimson">{a.contact.email}</a><a href={`tel:${a.contact.tel}`} className="underline underline-offset-4 hover:ledger-crimson">{a.contact.phone}</a></p>}
             </div>
           </header>
 
@@ -105,6 +106,33 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
             </aside>
           </section>}
 
+          {a.stories && a.stories.length > 0 && (
+            <section className="mt-16 md:mt-20 border-t ledger-rule pt-8" aria-labelledby="stories-heading">
+              <p className="ledger-eyebrow ledger-crimson">Photo stories</p>
+              <h2 id="stories-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Where {a.firstName} Has Been</h2>
+              {a.stories.map((s) => (
+                <article key={s.id} className="mt-8">
+                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                    <h3 className="ledger-display text-[1.5rem] md:text-[1.75rem]">{s.title}</h3>
+                    <p className="ledger-eyebrow">{s.place} · {s.when}{s.ledgerIds.length ? <span className="ledger-id"> · {s.ledgerIds.join(" · ")}</span> : null}</p>
+                  </div>
+                  <p className="mt-2 text-[16px] ledger-muted max-w-2xl">{s.line}</p>
+                  <div className="mt-5 grid gap-4 md:grid-cols-[1.6fr_1fr]">
+                    {s.photos.map((ph) => (
+                      <figure key={ph.url}>
+                        <div className="relative bg-paper-card overflow-hidden" style={{ aspectRatio: `${ph.w} / ${ph.h}` }}>
+                          <Image src={ph.url} alt={ph.alt} fill sizes="(min-width: 768px) 60vw, 100vw" className="object-cover" />
+                        </div>
+                        <figcaption className="mt-2 text-[12.5px] ledger-muted">{ph.credit}</figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                  {s.journalSlug && <p className="mt-4"><Link href={`/journal/${s.journalSlug}`} className="ledger-btn">Read the full story</Link></p>}
+                </article>
+              ))}
+            </section>
+          )}
+
           {a.desk && <DeskTies a={a} />}
 
           <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="others-heading">
@@ -124,7 +152,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
           <PlanClose title={`Start with ${a.firstName}.`} line={`Send ${a.firstName} the place you can't stop thinking about. You'll hear back from a person, not a form.`} />
         </div>
       </main>
-      <JsonLd data={graph({ "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: a.name, mainEntity: { "@id": absoluteUrl(`${path}#person`) }, isPartOf: { "@id": ids.website } }, { "@type": "Person", "@id": absoluteUrl(`${path}#person`), name: a.name, ...(a.roleApproved ? { jobTitle: a.role } : {}), worksFor: { "@id": ids.house }, description: a.dna?.matchNote ?? a.intro, ...(a.portrait ? { image: a.portrait.url } : {}), url: absoluteUrl(path), identifier: { "@type": "PropertyValue", propertyID: "Advisor ID", value: a.ledgerId }, ...(dnaPlaces.length || dnaPaths.length ? { knowsAbout: [...dnaPlaces, ...dnaPaths] } : {}), ...(a.dna?.languages.length ? { knowsLanguage: a.dna.languages } : {}) })} />
+      <JsonLd data={graph({ "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: a.name, mainEntity: { "@id": absoluteUrl(`${path}#person`) }, isPartOf: { "@id": ids.website } }, { "@type": "Person", "@id": absoluteUrl(`${path}#person`), name: a.name, ...(a.roleApproved ? { jobTitle: a.role } : {}), worksFor: { "@id": ids.house }, description: a.dna?.matchNote ?? a.intro, ...(a.portrait ? { image: a.portrait.url } : {}), url: absoluteUrl(path), identifier: { "@type": "PropertyValue", propertyID: "Advisor ID", value: a.ledgerId }, ...(dnaPlaces.length || dnaPaths.length ? { knowsAbout: [...dnaPlaces, ...dnaPaths] } : {}), ...(a.dna?.languages.length ? { knowsLanguage: a.dna.languages } : {}), ...(a.contact ? { email: a.contact.email, telephone: a.contact.tel } : {}) })} />
     </>
   );
 }

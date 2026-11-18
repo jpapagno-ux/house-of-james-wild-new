@@ -13,7 +13,8 @@ from shapely.strtree import STRtree
 
 fine_src, coarse_src, only = sys.argv[1], sys.argv[2], sys.argv[3:]
 DESTS = ["caribbean", "mediterranean", "scandinavia-northern-europe", "arctic", "trans-atlantic", "asia", "oceania-and-pacific", "north-and-south-america", "seychelles"]
-NEAR, LEG, PAD = 0.45, 0.2, 2.0   # degrees: fine land round a stop, along a short leg; box padding
+NEAR, LEG, PAD = float(os.environ.get("NEAR", 0.45)), float(os.environ.get("LEG", 0.2)), 2.0   # degrees: fine land round a stop, along a short leg; box padding
+# Northern Europe is built with NEAR=1.6 LEG=0.6: the Norwegian fjord ports lie up to 150 km from open sea.
 
 def parts(path):
     g = json.load(open(path))

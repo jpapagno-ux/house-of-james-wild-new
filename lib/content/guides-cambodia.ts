@@ -13,7 +13,7 @@ const SITES: Record<string, string> = {
   "Shinta Mani Wild": "https://shintamani.com/wild/", "Cardamom Tented Camp": "https://cardamomtentedcamp.com/",
   "Canvas & Orchids Retreat": "https://canvasandorchids.com/", "Six Senses Krabey Island fact sheet": "https://media.sixsenses.com/B60H3R33/at/qnj8jf7gk6g5v6xzrz6v89q/Six_Senses_Krabey_Island_Factsheet.pdf",
   "Six Senses Krabey Island": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/cambodia/krabey-island",
-  "Siempang Forest Lodge": "https://www.siempangforestlodge.com", "Siempang Forest Lodge: conservation": "https://www.siempangforestlodge.com/conservation",
+  "Song Saa Private Island": "https://www.songsaa-privateisland.com", "Siempang Forest Lodge": "https://www.siempangforestlodge.com", "Siempang Forest Lodge: conservation": "https://www.siempangforestlodge.com/conservation",
   "Siempang Forest Lodge: FAQs": "https://www.siempangforestlodge.com/faqs",
 };
 // Sources are kept as data, never printed as links (James, 13 Nov 2026).
@@ -31,7 +31,7 @@ const PROOF = "Filed from each lodge's own pages. Every stay on this page is in 
 export const CAMBODIA_GUIDES: Record<string, Guide> = {
   "cardamom-mountains": {
     slug: "cardamom-mountains", region: "asia", country: "cambodia", parent: "cambodia", name: "The Cardamom Mountains and the Coast", path: `${BASE}/cardamom-mountains`,
-    theme: "stays", stays: ["shinta-mani-wild", "cardamom-tented-camp", "canvas-and-orchids-retreat", "six-senses-krabey-island"],
+    theme: "stays", stays: ["shinta-mani-wild", "cardamom-tented-camp", "canvas-and-orchids-retreat", "six-senses-krabey-island", "song-saa-private-island"],
     proofEyebrow: "Camp by camp · the house's Cardamom file",
     seo: {
       title: "Cardamom Mountains Luxury Camps: Shinta Mani Wild, Cardamom Tented Camp and Krabey Island",
@@ -43,10 +43,10 @@ export const CAMBODIA_GUIDES: Record<string, Guide> = {
     tagline: "A zipline into the rainforest, tents on the river, and a private island off Ream",
     slides: [],
     slidesFromStay: { slug: "shinta-mani-wild", alt: "A tent above the river at Shinta Mani Wild in the Cardamom rainforest", credit: "Photograph courtesy of Shinta Mani Wild" },
-    answer: "In Cambodia's south west the house chooses from three camps in the Cardamom rainforest and one island off the coast. Shinta Mani Wild has 15 tents along a river, designed by Bill Bensley; guests arrive by a 400 metre zipline, stay three nights or more, and everything, spa included, is in the rate. Cardamom Tented Camp sits in Botum Sakor National Park, reached by a 45 minute boat, with treks, kayaking on the Preak Tachan River and night boat safaris. Canvas & Orchids floats on the Tatai River below the mountains, run since 2009 by Valentin and Anna. Off the coast, Six Senses Krabey Island has 40 pool villas on a 30 acre island 15 minutes by speedboat from its mainland jetty. Shinta Mani Wild and Cardamom Tented Camp both fund Wildlife Alliance rangers. November to April is the dry season the camps recommend.",
+    answer: "In Cambodia's south west the house chooses from three camps in the Cardamom rainforest and one island off the coast. Shinta Mani Wild has 15 tents along a river, designed by Bill Bensley; guests arrive by a 400 metre zipline, stay three nights or more, and everything, spa included, is in the rate. Cardamom Tented Camp sits in Botum Sakor National Park, reached by a 45 minute boat, with treks, kayaking on the Preak Tachan River and night boat safaris. Canvas & Orchids floats on the Tatai River below the mountains, run since 2009 by Valentin and Anna. Off the coast, Six Senses Krabey Island has 40 pool villas on a 30 acre island 15 minutes by speedboat from its mainland jetty. Further out, Song Saa Private Island spreads 24 pool villas across two small islands in the Koh Rong archipelago, built to support the Song Saa Foundation. Shinta Mani Wild and Cardamom Tented Camp both fund Wildlife Alliance rangers. November to April is the dry season the camps recommend.",
     facts: [
       ["The rainforest", "Shinta Mani Wild · Cardamom Tented Camp · Canvas & Orchids"],
-      ["The coast", "Six Senses Krabey Island, about 5 km off Ream National Park"],
+      ["The coast", "Six Senses Krabey Island, about 5 km off Ream National Park · Song Saa Private Island in the Koh Rong archipelago"],
       ["Getting there", "Phnom Penh or Sihanoukville, then road, boat or zipline"],
       ["Best months", "November to April, the dry season (Cardamom Tented Camp, Six Senses); Shinta Mani Wild says there is no bad time"],
       ["Conservation", "Wildlife Alliance rangers patrol the forest (Shinta Mani Wild, Cardamom Tented Camp)"],
@@ -79,6 +79,7 @@ export const CAMBODIA_GUIDES: Record<string, Guide> = {
       title: "Forest First, Then the Island",
       intro: "The camps and the island share the same airports, so a Cambodian south coast journey can take the forest and the sea in one week.",
       options: [
+        { name: "Two islands, the Sweethearts", body: "Finish on Song Saa Private Island, 24 pool villas over the water and in the jungle of the Koh Rong archipelago.", href: "/stays/song-saa-private-island", label: "Song Saa" },
         { name: "Zipline in, speedboat out", body: "Three nights at Shinta Mani Wild, then Six Senses Krabey Island via Sihanoukville.", href: "/stays/shinta-mani-wild", label: "Shinta Mani Wild" },
         { name: "Two rivers", body: "Cardamom Tented Camp's packages of two or three nights, then the floating tents of Canvas & Orchids on the Tatai.", href: "/stays/cardamom-tented-camp", label: "Cardamom Tented Camp" },
         { name: "North to the ibis", body: "Add Siem Pang in the north for the giant ibis and the vultures, via Siem Reap.", href: `${BASE}/siem-pang`, label: "Siem Pang" },
@@ -95,7 +96,7 @@ export const CAMBODIA_GUIDES: Record<string, Guide> = {
       { q: "Do these camps support conservation?", a: "Yes. Shinta Mani Wild and Cardamom Tented Camp support Wildlife Alliance ranger teams who patrol the forest, and Canvas & Orchids employs people from the local villages, among them former hunters, as guides and boat drivers." },
     ],
     geo: { lat: 11.3, lng: 103.3 },
-    sources: [src("Shinta Mani Wild"), src("Cardamom Tented Camp"), src("Canvas & Orchids Retreat"), src("Six Senses Krabey Island fact sheet"), src("Six Senses Krabey Island")],
+    sources: [src("Shinta Mani Wild"), src("Cardamom Tented Camp"), src("Canvas & Orchids Retreat"), src("Six Senses Krabey Island fact sheet"), src("Six Senses Krabey Island"), src("Song Saa Private Island")],
   },
 
   "siem-pang": {

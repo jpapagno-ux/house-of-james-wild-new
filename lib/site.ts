@@ -304,6 +304,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/destinations/asia/thailand/andaman-coast", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/thailand/koh-samui-and-the-gulf", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/thailand/northern-thailand", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/asia/thailand/bangkok", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/cambodia/cardamom-mountains", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/cambodia/siem-pang", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/oceania/new-zealand/taupo", priority: 0.8, changeFrequency: "monthly" },

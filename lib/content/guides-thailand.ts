@@ -18,6 +18,9 @@ const SITES: Record<string, string> = {
   "Anantara Bophut Koh Samui": "https://www.anantara.com/en/bophut-koh-samui", "KAIA Resorts": "https://www.kaiaresorts.com",
   "Anantara Hua Hin": "https://www.anantara.com/en/hua-hin", "Anantara Chiang Mai": "https://www.anantara.com/en/chiang-mai",
   "Anantara Golden Triangle": "https://www.anantara.com/en/golden-triangle-chiang-rai", "Four Seasons Tented Camp Golden Triangle": "https://www.fourseasons.com/goldentriangle/",
+  Trisara: "https://trisara.com/", "Phulay Bay": "https://www.ritzcarlton.com/en/hotels/phulay-bay",
+  "Aman Nai Lert Bangkok": "https://www.aman.com/hotels/aman-nai-lert-bangkok", "The Siam": "https://www.thesiamhotel.com/",
+  "TAT: plan your trip": "https://www.tourismthailand.org/Articles/plan-your-trip-around-thailand",
   "TAT: the cooler months": "https://www.tatnews.org/2020/11/thailands-comfortable-cooler-months-of-november-february-are-a-fantastic-time-to-travel/",
   "TAT: the Andaman opens its doors again": "https://www.tatnews.org/2026/10/the-andaman-opens-its-doors-again/",
 };
@@ -28,6 +31,7 @@ const ALL = [
   { name: "The Andaman Coast", slug: "andaman-coast", line: "Phuket, Phang Nga Bay, Khao Lak and Krabi, November to April" },
   { name: "Koh Samui and the Gulf", slug: "koh-samui-and-the-gulf", line: "Samui, Koh Phangan and Hua Hin, December to June" },
   { name: "Northern Thailand", slug: "northern-thailand", line: "Chiang Mai and the Golden Triangle, cool from November to February" },
+  { name: "Bangkok", slug: "bangkok", line: "Two quiet ways into the capital, before the beach or the north" },
 ];
 const ONWARD = (except: string) => [...ALL.filter((a) => a.slug !== except).map((a) => ({ name: a.name, href: `${BASE}/${a.slug}`, line: a.line })), { name: "Cambodia", href: "/destinations/asia/cambodia", line: "The Cardamom rainforest and Siem Pang, across the border" }, { name: "Thailand", href: BASE, line: "Every Thailand stay in the Ledger" }];
 const EYEBROW = "Destinations · Asia · Thailand";
@@ -37,24 +41,24 @@ const PROOF = "Filed from each resort's own pages and the Tourism Authority of T
 export const THAILAND_GUIDES: Record<string, Guide> = {
   "andaman-coast": {
     slug: "andaman-coast", region: "asia", country: "thailand", parent: "thailand", name: "The Andaman Coast", path: `${BASE}/andaman-coast`,
-    theme: "sea", stays: ["amanpuri", "rosewood-phuket", "keemala", "the-sarojin", "six-senses-yao-noi", "rayavadee", "banyan-tree-krabi"],
+    theme: "sea", stays: ["amanpuri", "rosewood-phuket", "keemala", "the-sarojin", "six-senses-yao-noi", "rayavadee", "banyan-tree-krabi", "trisara", "phulay-bay-ritz-carlton-reserve"],
     proofEyebrow: "Resort by resort · the house's Andaman file",
     seo: {
       title: "Phuket, Phang Nga and Krabi Luxury Resorts: Thailand's Andaman Coast",
-      description: "Where to stay on Thailand's Andaman coast: Amanpuri, Rosewood Phuket, Keemala, The Sarojin at Khao Lak, Six Senses Yao Noi in Phang Nga Bay, Rayavadee and Banyan Tree Krabi. Transfers, best months and the Similan season.",
-      keywords: ["best luxury resort Phuket", "Amanpuri", "Rosewood Phuket", "Keemala Phuket", "Six Senses Yao Noi", "Rayavadee Krabi", "Banyan Tree Krabi", "The Sarojin Khao Lak", "Phang Nga Bay resort", "Andaman coast Thailand"],
+      description: "Where to stay on Thailand's Andaman coast: Amanpuri, Rosewood Phuket, Keemala, The Sarojin at Khao Lak, Trisara, Six Senses Yao Noi in Phang Nga Bay, Rayavadee, Banyan Tree Krabi and Phulay Bay. Transfers, best months and the Similan season.",
+      keywords: ["best luxury resort Phuket", "Amanpuri", "Trisara Phuket", "Phulay Bay Ritz-Carlton Reserve", "Rosewood Phuket", "Keemala Phuket", "Six Senses Yao Noi", "Rayavadee Krabi", "Banyan Tree Krabi", "The Sarojin Khao Lak", "Phang Nga Bay resort", "Andaman coast Thailand"],
     },
     eyebrow: EYEBROW,
     h1: "The Andaman Coast",
     tagline: "Phuket's west coast, the karsts of Phang Nga Bay and the cliffs of Krabi",
     slides: [],
     slidesFromStay: { slug: "six-senses-yao-noi", alt: "Phang Nga Bay's limestone karsts from Six Senses Yao Noi", credit: "Photograph courtesy of Six Senses Yao Noi" },
-    answer: "On Thailand's Andaman coast the house chooses from seven stays in three provinces. On Phuket: Amanpuri, Aman's first resort, on its own peninsula at Pansea Beach; Rosewood Phuket, on a 600 metre beach at Emerald Bay; and Keemala, 38 pool villas in the rainforest above Kamala. North at Khao Lak, The Sarojin keeps 56 residences beside an 11 km beach. In Phang Nga Bay, Six Senses Yao Noi faces the limestone karsts from Koh Yao Noi, about 70 minutes from Phuket airport by car and speedboat. In Krabi, Rayavadee sits on the Phranang Peninsula inside Krabi Marine National Park, and Banyan Tree Krabi has 72 pool suites and villas at the north end of Tubkaek Beach. The Tourism Authority of Thailand names November to April as the Andaman's best months.",
+    answer: "On Thailand's Andaman coast the house chooses from nine stays in three provinces. On Phuket: Amanpuri, Aman's first resort, on its own peninsula at Pansea Beach; Trisara, private pool villas above a secluded beach on the north west coast, with PRU, its Michelin-starred restaurant; Rosewood Phuket, on a 600 metre beach at Emerald Bay; and Keemala, 38 pool villas in the rainforest above Kamala. North at Khao Lak, The Sarojin keeps 56 residences beside an 11 km beach. In Phang Nga Bay, Six Senses Yao Noi faces the limestone karsts from Koh Yao Noi, about 70 minutes from Phuket airport by car and speedboat. In Krabi, Rayavadee sits on the Phranang Peninsula inside Krabi Marine National Park, Banyan Tree Krabi has 72 pool suites and villas at the north end of Tubkaek Beach, and Phulay Bay, a Ritz-Carlton Reserve, keeps pool pavilions and villas with a butler for every guest, 40 km from Krabi airport. The Tourism Authority of Thailand names November to April as the Andaman's best months.",
     facts: [
-      ["Phuket", "Amanpuri · Rosewood Phuket · Keemala"],
+      ["Phuket", "Amanpuri · Trisara · Rosewood Phuket · Keemala"],
       ["Khao Lak", "The Sarojin, an hour north of Phuket airport"],
       ["Phang Nga Bay", "Six Senses Yao Noi, on Koh Yao Noi"],
-      ["Krabi", "Rayavadee · Banyan Tree Krabi"],
+      ["Krabi", "Rayavadee · Banyan Tree Krabi · Phulay Bay"],
       ["Best months", "November to April (Tourism Authority of Thailand)"],
       ["Marine parks", "The Similan Islands reopened on 15 October 2026 after the monsoon closure (TAT)"],
     ],
@@ -73,6 +77,7 @@ export const THAILAND_GUIDES: Record<string, Guide> = {
       ["Phuket airport → Six Senses Yao Noi", "30 minutes to Ao Po Grand Marina, then 40 minutes by speedboat"],
       ["Krabi airport → Rayavadee", "20 minutes to Nong Nuch pier, then 20 minutes by boat to the resort beach"],
       ["Krabi airport → Banyan Tree Krabi", "40 km, about 45 minutes"],
+      ["Krabi airport → Phulay Bay", "40 km; the resort books the transfer (130 km from Phuket airport)"],
     ],
     highlights: [
       { title: "Where Aman began", line: "Amanpuri", body: "Aman's first resort still has its own peninsula on Phuket's west coast: pool pavilions for two, and villas of three to nine bedrooms with a Villa Host and a personal Thai chef." },
@@ -106,7 +111,7 @@ export const THAILAND_GUIDES: Record<string, Guide> = {
       { q: "When are the Similan Islands open?", a: "The Similan Islands reopened on 15 October 2026 after a five month monsoon closure, the Tourism Authority of Thailand reported, and the marine parks now use e-tickets." },
     ],
     geo: { lat: 8.1, lng: 98.45 },
-    sources: [src("Amanpuri"), src("Rosewood Phuket"), src("Keemala"), src("The Sarojin"), src("Six Senses Yao Noi"), src("Rayavadee"), src("Banyan Tree Krabi"), src("TAT: the cooler months"), src("TAT: the Andaman opens its doors again")],
+    sources: [src("Amanpuri"), src("Rosewood Phuket"), src("Keemala"), src("The Sarojin"), src("Six Senses Yao Noi"), src("Rayavadee"), src("Banyan Tree Krabi"), src("Trisara"), src("Phulay Bay"), src("TAT: the cooler months"), src("TAT: the Andaman opens its doors again")],
   },
 
   "koh-samui-and-the-gulf": {
@@ -240,5 +245,59 @@ export const THAILAND_GUIDES: Record<string, Guide> = {
     ],
     geo: { lat: 19.6, lng: 99.6 },
     sources: [src("Anantara Chiang Mai"), src("Anantara Golden Triangle"), src("Four Seasons Tented Camp Golden Triangle"), src("TAT: the cooler months")],
+  },
+  bangkok: {
+    slug: "bangkok", region: "asia", country: "thailand", parent: "thailand", name: "Bangkok", path: `${BASE}/bangkok`,
+    theme: "stays", stays: ["aman-nai-lert-bangkok", "the-siam-bangkok"],
+    proofEyebrow: "City by city · the house's Bangkok file",
+    seo: {
+      title: "Where to Stay in Bangkok: Aman Nai Lert and The Siam",
+      description: "Bangkok with James Wild & Co: Aman Nai Lert's 52 suites in the gardens of Nai Lert Park, and The Siam's pool villas among art and antiques on the Chao Phraya in old Dusit. Airports, transfers and how to pair the city with the beach or the north.",
+      keywords: ["best hotel Bangkok", "Aman Nai Lert Bangkok", "The Siam Bangkok", "Bangkok luxury hotel river", "Bangkok pool villa hotel", "Nai Lert Park", "Dusit Bangkok hotel"],
+    },
+    eyebrow: EYEBROW,
+    h1: "Bangkok",
+    tagline: "A garden in the middle of the city, and a river house full of antiques in old Dusit",
+    slides: [],
+    slidesFromStay: { slug: "aman-nai-lert-bangkok", alt: "Aman Nai Lert Bangkok rising above the trees of Nai Lert Park", credit: "Photograph courtesy of Aman" },
+    answer: "In Bangkok the house chooses two quiet ways into the capital. Aman Nai Lert Bangkok has 52 suites by Jean-Michel Gathy within the seven-acre gardens of Nai Lert Park, with a 1,500 square metre spa; Aman includes round-trip airport transfers for stays of two nights or more. The Siam keeps suites and pool villas full of art and antiques in three acres of gardens on the Chao Phraya River in Dusit, beside the old city's sights, with its own river shuttle. Both work as the first or last nights of a trip to the Andaman coast, the Gulf islands or the north. Bangkok is served by two airports, Suvarnabhumi and Don Mueang.",
+    facts: [
+      ["The stays", "Aman Nai Lert Bangkok · The Siam"],
+      ["Airports", "Suvarnabhumi (BKK) and Don Mueang (DMK)"],
+      ["Aman Nai Lert", "52 suites in the seven-acre Nai Lert Park"],
+      ["The Siam", "Three acres of gardens on the Chao Phraya in Dusit"],
+      ["Onward", "Short flights to Phuket, Krabi, Samui and Chiang Mai"],
+    ],
+    proof: PROOF,
+    months: [{ area: "Bangkok", note: "Cooler and drier November to February (TAT)", months: M("BBggggggggBB") }],
+    airports: [["Bangkok Suvarnabhumi (BKK)", "The main international airport"], ["Bangkok Don Mueang (DMK)", "The second airport"]],
+    transfers: [["Airport → Aman Nai Lert", "Aman's limousine from Suvarnabhumi or Don Mueang, included for two nights or more, with fast-track arrival at Suvarnabhumi"], ["Airport → The Siam", "The house arranges the car; the hotel's river shuttle runs into the city"]],
+    highlights: [
+      { title: "A garden in the middle of Bangkok", line: "Aman Nai Lert Bangkok", body: "Fifty-two suites among the largest in the city, in the green of Nai Lert Park, with Aman Spa & Wellness over two floors." },
+      { title: "Antiques on the river", line: "The Siam", body: "Suites and pool villas full of art and antiques in three acres of gardens on the Chao Phraya, with Chon Thai and Opium Spa." },
+    ],
+    suits: [
+      { who: "Wellness in the city", line: "A 1,500 sqm spa and thermal suite.", href: "/stays/aman-nai-lert-bangkok", label: "Aman Nai Lert Bangkok" },
+      { who: "Old Bangkok by river", line: "A pool villa and the hotel's own boat.", href: "/stays/the-siam-bangkok", label: "The Siam" },
+    ],
+    howTo: {
+      title: "Bangkok First, or Last",
+      intro: "Bangkok is where most Thailand journeys begin or end. Two or three nights here, then a short flight south or north.",
+      options: [
+        { name: "Bangkok and the Andaman", body: "The city, then an hour's flight to Phuket or Krabi.", href: `${BASE}/andaman-coast`, label: "The Andaman Coast" },
+        { name: "Bangkok and the Gulf", body: "The city, then a short flight to Samui.", href: `${BASE}/koh-samui-and-the-gulf`, label: "Koh Samui and the Gulf" },
+        { name: "Bangkok and the north", body: "The city, then Chiang Mai and the Golden Triangle.", href: `${BASE}/northern-thailand`, label: "Northern Thailand" },
+      ],
+    },
+    onwardEyebrow: ONWARD_EYEBROW,
+    onward: ONWARD("bangkok"),
+    voyageWaters: [],
+    faqs: [
+      { q: "Which Bangkok hotel is best for a first night?", a: "Aman Nai Lert includes round-trip limousine transfers for stays of two nights or more, with fast-track arrival at Suvarnabhumi, so it is the easiest landing. The Siam suits travellers who want the river and the old city on the doorstep." },
+      { q: "How many nights in Bangkok?", a: "Two or three nights before or after the beach or the north, the house suggests; the city connects by short flights to Phuket, Krabi, Samui and Chiang Mai." },
+      { q: "Which airport does Bangkok use?", a: "Two: Suvarnabhumi (BKK), the main international airport, and Don Mueang (DMK). Aman's transfers run from both." },
+    ],
+    geo: { lat: 13.75, lng: 100.52 },
+    sources: [src("Aman Nai Lert Bangkok"), src("The Siam"), src("TAT: plan your trip"), src("TAT: the cooler months")],
   },
 };

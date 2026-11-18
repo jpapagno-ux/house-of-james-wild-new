@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X, Phone, Search } from "lucide-react";
@@ -12,6 +13,7 @@ import BackToSearch from "./BackToSearch";
 import { onOpenSearch, type SearchOpen } from "@/lib/search-bus";
 import HouseMenu from "./HouseMenu";
 import CompassSpin from "./CompassSpin";
+import { planFor } from "@/lib/content/page-leads";
 import SignInDoors from "./SignInDoors";
 import { MAIN_EXTRA as ALL_EXTRA, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, UTILITY_NAV as ALL_UTILITY, LINKED_VOLUMES as ALL_VOLUMES, type MegaMenu } from "@/lib/site";
 import { GUARD_ON, isBuilt, live } from "@/lib/routes";
@@ -137,6 +139,8 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
   const headerRef = useRef<HTMLElement>(null);
   const [tucked, setTucked] = useState(false);
   const [open, setOpen] = useState(false);
+  // "Plan with" follows the page (James, 18 Nov 2026): Anthony on Indonesia pages, James elsewhere.
+  const plan = planFor(usePathname());
   // The house search: null when closed; otherwise what it opens with (typed words, a destination scope).
   const [search, setSearch] = useState<(SearchOpen & { at: number }) | null>(null);
   const searching = !!search;
@@ -287,12 +291,12 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
           {/* Plan with James, the main action: the Ledger column, compact (48px), white over a film (button family, 2 Nov 2026).
               Under 640px the column would crowd the centred lockup, so phones get the crimson arrow cell alone (40px square,
               aria-label "Plan with James"); the full column returns from 640px (header fix, 2 Nov 2026). */}
-          <Link href={PLAN_CTA.href} aria-label={PLAN_CTA.label} className={`jw-plan-cell sm:hidden ${lt ? "jw-plan-cell--light" : ""}`} />
+          <Link href={plan.href} aria-label={plan.label} className={`jw-plan-cell sm:hidden ${lt ? "jw-plan-cell--light" : ""}`} />
           <Link
-            href={PLAN_CTA.href}
+            href={plan.href}
             className={`ledger-btn ledger-btn--house ledger-btn--compact !hidden sm:!inline-flex ${lt ? "ledger-btn--light" : ""}`}
           >
-            {PLAN_CTA.label}
+            {plan.label}
           </Link>
         </div>
       </div>
@@ -304,6 +308,8 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
           {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={lt} />)}
           {/* The reader's own pages, after a hairline: the Journal and My Folio (18 Nov 2026) */}
           <li aria-hidden="true" className={`hidden xl:block w-px h-4 ${lt ? "bg-white/35" : "bg-keyline"}`} />
+          {/* The Bearing: for travellers who don't know where to go or who to plan with (James, 18 Nov 2026) */}
+          <li className="hidden xl:block"><Link href="/advisors/match" className={`${mainItem} !opacity-80`}>Find your bearing</Link></li>
           {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
             <li key={l.href} className="hidden xl:block"><Link href={l.href} className={`${mainItem} !opacity-80`}>{l.label}</Link></li>
           ))}

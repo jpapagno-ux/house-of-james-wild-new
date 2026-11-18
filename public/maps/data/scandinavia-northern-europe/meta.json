@@ -1,0 +1,11 @@
+{
+ "slug": "scandinavia-northern-europe",
+ "name": "Northern Europe",
+ "bbox": [
+  -11.59,
+  36.26,
+  27.39,
+  72.1
+ ],
+ "attribution": "Land: OpenStreetMap contributors (ODbL), simplified"
+}

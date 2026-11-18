@@ -158,5 +158,117 @@
  "Guernsey, Channel Islands|United Kingdom": {
   "lat": 49.455,
   "lng": -2.535
+ },
+ "San Juan|Puerto Rico": {
+  "lat": 18.46,
+  "lng": -66.11
+ },
+ "Palm Beach|United States": {
+  "lat": 26.77,
+  "lng": -80.05
+ },
+ "Andros Island|Bahamas": {
+  "lat": 24.73,
+  "lng": -77.77
+ },
+ "Horta, Azores|Portugal": {
+  "lat": 38.53,
+  "lng": -28.62
+ },
+ "Portimao, Algarve|Portugal": {
+  "lat": 37.12,
+  "lng": -8.53
+ },
+ "Malaga|Spain": {
+  "lat": 36.71,
+  "lng": -4.42
+ },
+ "Castellón|Spain": {
+  "lat": 39.97,
+  "lng": 0.02
+ },
+ "Corfu|Greece": {
+  "lat": 39.63,
+  "lng": 19.93
+ },
+ "Athens (Piraeus)|Greece": {
+  "lat": 37.94,
+  "lng": 23.63
+ },
+ "Santorini|Greece": {
+  "lat": 36.42,
+  "lng": 25.43
+ },
+ "Syracuse, Sicily|Italy": {
+  "lat": 37.06,
+  "lng": 15.29
+ },
+ "Sark, Channel Islands|United Kingdom": {
+  "lat": 49.43,
+  "lng": -2.36
+ },
+ "Ibiza, Balearic Islands|Spain": {
+  "lat": 38.91,
+  "lng": 1.44
+ },
+ "Almeria|Spain": {
+  "lat": 36.83,
+  "lng": -2.47
+ },
+ "Zakynthos|Greece": {
+  "lat": 37.78,
+  "lng": 20.9
+ },
+ "Salinas|Puerto Rico": {
+  "lat": 17.96,
+  "lng": -66.3
+ },
+ "Aomori|Japan": {
+  "lat": 40.83,
+  "lng": 140.74
+ },
+ "Akita|Japan": {
+  "lat": 39.75,
+  "lng": 140.07
+ },
+ "Kanazawa|Japan": {
+  "lat": 36.61,
+  "lng": 136.6
+ },
+ "Jeju|Korea, Republic Of": {
+  "lat": 33.52,
+  "lng": 126.53
+ },
+ "Kuala Lumpur, Selangor (Port Klang)|Malaysia": {
+  "lat": 3.0,
+  "lng": 101.36
+ },
+ "Penang|Malaysia": {
+  "lat": 5.42,
+  "lng": 100.34
+ },
+ "Phuket|Thailand": {
+  "lat": 7.82,
+  "lng": 98.4
+ },
+ "Goa|India": {
+  "lat": 15.41,
+  "lng": 73.8
+ },
+ "Ravenna|Italy": {
+  "lat": 44.49,
+  "lng": 12.28
+ },
+ "Gaspé, Québec|Canada": {
+  "lat": 48.83,
+  "lng": -64.48
+ },
+ "Puerto Morelos, Quintana Roo|Mexico": {
+  "lat": 20.85,
+  "lng": -86.87
+ },
+ "Monte Cristi|Dominican Republic": {
+  "lat": 19.87,
+  "lng": -71.65
  }
 }

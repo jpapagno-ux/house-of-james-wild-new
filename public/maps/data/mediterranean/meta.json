@@ -1,0 +1,11 @@
+{
+ "slug": "mediterranean",
+ "name": "The Mediterranean",
+ "bbox": [
+  -68.5,
+  14.68,
+  32.33,
+  48.1
+ ],
+ "attribution": "Land: OpenStreetMap contributors (ODbL), simplified"
+}

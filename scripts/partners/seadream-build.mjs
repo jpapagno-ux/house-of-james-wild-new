@@ -6,7 +6,9 @@
 // Facts, fares and photographs only from seadream.com. Port positions are OpenStreetMap's, by port name (the brand
 // publishes none); the hand corrections sit in scripts/data/seadream/port-fixes.json. Fares are per person, double
 // occupancy, in US dollars, as SeaDream publishes them. Editorial copy for the yachts lives in seadream-editorial.mjs.
-// Run: node scripts/partners/seadream-build.mjs
+// Run: node scripts/partners/seadream-build.mjs && python3 scripts/sealanes-wide.py   (the second routes every leg round the
+// land from the kept lanes, scripts/data/coast/lanes; only legs it has not seen before take time)
+// was: node scripts/partners/seadream-build.mjs
 import fs from "node:fs";
 import { YACHTS, REGIONS, INCLUSIONS, EXCLUSIONS, TERMS, SOURCES, NOT_SOLD, REGION_PICTURE } from "./seadream-editorial.mjs";
 

@@ -16,6 +16,9 @@ import { dayLabel, type ShipRecord } from "@/lib/content/ships/types";
 import { SEADREAM_HUB, SEADREAM_READ, neighbours, sameVoyage, seadreamPath, type OperatorVoyage } from "@/lib/content/ships/seadream";
 import { isPast } from "@/lib/dates";
 import { absoluteUrl } from "@/lib/seo";
+import { terrainRegion } from "@/components/maps/terrain/flag";
+import { terrainRoute } from "@/components/maps/terrain/routed";
+import { volumeMark } from "@/lib/volumes";
 
 // One published voyage on its own page (/voyages/ships/<yacht>/<voyage>; James, 16 Nov 2026: "itineraries one by one").
 // The answer first, then the day by day with the house chart, the fare of every stateroom and suite as the operator
@@ -96,7 +99,8 @@ export default function OperatorVoyagePage({ v }: { v: OperatorVoyage }) {
           {sailed && <p className="mt-8 border-l-2 border-crimson pl-4 text-[15.5px] max-w-3xl">This sailing has left. {others.length ? "The same itinerary sails again on the dates below." : `See what ${v.shipName} sails next on her page.`}</p>}
           <AnswerBlock>{answer}</AnswerBlock>
 
-          <ShipItinerary ship={v.shipName} itineraries={[{ name: v.title, nights: v.nights, direction: v.direction, days: v.days }]} map={map} title={`Where Does ${v.title} Go, Day by Day?`} intro="Scroll the log and the chart sails the route as you read. Times and port notes are SeaDream's, and the captain may change a call for weather." />
+          <ShipItinerary ship={v.shipName} itineraries={[{ name: v.title, nights: v.nights, direction: v.direction, days: v.days }]} map={map}
+            terrain={route && terrainRegion(v.region) ? { id: `see-${v.slug}-in-3d`, kind: "voyage", ink: volumeMark("voyages"), title: `${v.title} aboard ${v.shipName}`, exaggeration: 1.8, routes: [terrainRoute(v.title, route, v.days.filter((d) => d.lat != null).map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng })))] } : undefined} title={`Where Does ${v.title} Go, Day by Day?`} intro="Fly the voyage in 3D, or switch to the itinerary chart, which sails the route as you scroll the log. Times and port notes are SeaDream's, and the captain may change a call for weather." />
 
           {!sailed && (
             <section id="fares" className={SEC} aria-labelledby="fares-h">

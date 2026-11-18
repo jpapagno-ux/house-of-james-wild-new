@@ -38,7 +38,7 @@ import { graph, imageObject } from "@/lib/schema";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
 import StayFilter from "@/components/destination/StayFilter";
 import { Headshot } from "@/components/advisor/Desk";
-import { advisorsFor } from "@/lib/content/advisors";
+import { advisorsFor, leadFor } from "@/lib/content/advisors";
 import { COUNTRY_PAGES, shortAnswer } from "@/lib/content/country-pages";
 import type { BoardEntry } from "@/lib/content/coming-view";
 
@@ -246,7 +246,7 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
   );
   const planSec = (
     <>
-          <PlanBand place={g.name} compassHref="/compass" where={g.parent ? undefined : { countrySlug: g.country }} />
+          <PlanBand place={g.name} compassHref="/compass" where={g.parent && !leadFor(g.country) ? undefined : { countrySlug: g.country }} />
     </>
   );
   const whenSec = (
@@ -264,8 +264,12 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
     const best = fact(/^(Seasons|Best time)/)?.split(" · ").slice(0, 3).join(" · ") ?? null;
     const fly = fact(/^Fly into/)?.split(",")[0] ?? null;
     const quick: [string, string][] = [["Best months", best], ["Fly into", fly], ["How long", extras?.howLong?.text ?? null]].filter((x): x is [string, string] => !!x[1]);
-    const advisors = advisorsFor({ countrySlug: g.country, regionSlug: g.region }).advisors.filter((a) => !a.sample);
-    const planJames = `/plan?advisor=james-papagno&destination=${encodeURIComponent(g.country)}`;
+    // A named lead (Anthony for Indonesia, James 18 Nov 2026) takes the page's plan button and heads the faces.
+    const named = leadFor(g.country);
+    const ranked = advisorsFor({ countrySlug: g.country, regionSlug: g.region }).advisors.filter((a) => !a.sample);
+    const advisors = named ? [named, ...ranked.filter((a) => a !== named)] : ranked;
+    const planJames = `/plan?advisor=${named?.slug ?? "james-papagno"}&destination=${encodeURIComponent(g.country)}`;
+    const planWho = named?.firstName ?? "James";
     const keyFacts = g.facts.filter(([k]) => extras?.factSources[k]?.length);
     // Area chips from each stay's filed gateway airport, named as the guide names that airport ("Bali (DPS)" -> Bali).
     const areaOf = (airport: string | null | undefined) => {
@@ -297,13 +301,13 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
                     <span className="text-[13px] leading-snug ledger-muted whitespace-nowrap">{advisors.slice(0, 2).map((a) => a.firstName).join(" and ")}{advisors.length > 2 ? ` and ${advisors.length - 2} more` : ""} {advisors.length === 1 ? "knows" : "know"} {g.name}</span>
                   </div>
                 )}
-                <Link href={planJames} className="ledger-btn ledger-btn--house">Plan {g.name} with James</Link>
+                <Link href={planJames} className="ledger-btn ledger-btn--house">Plan {g.name} with {planWho}</Link>
               </div>
             </div>
           </section>
           {/* 2. The live board. */}
           <ComingTicker entries={v2.board} label={v2.boardLabel} compact />
-          <RecordNav items={chapters} cta={`Plan with James`} ctaHref={planJames} />
+          <RecordNav items={chapters} cta={`Plan with ${planWho}`} ctaHref={planJames} />
           <div className="max-w-ledger mx-auto px-5 md:px-10">
             <div className="pt-6"><Breadcrumbs trail={trail} /></div>
             {g.slidesFromStay && slides[0]?.credit && <p className="mt-2 font-mono text-[10.5px] tracking-[0.12em] uppercase ledger-muted">Hero photographs · {slides[0].credit}</p>}
@@ -433,7 +437,7 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
         <div id="record-bar" className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-paper/95 backdrop-blur border-t ledger-border pb-[env(safe-area-inset-bottom)]">
           <div className="h-14 px-4 flex items-center gap-3">
             <span className="mr-auto ledger-display text-[1.05rem] truncate">{g.name}</span>
-            <Link href={planJames} className="ledger-btn ledger-btn--solid !h-10 shrink-0" data-event="enquire_click">Plan with James</Link>
+            <Link href={planJames} className="ledger-btn ledger-btn--solid !h-10 shrink-0" data-event="enquire_click">Plan with {planWho}</Link>
           </div>
         </div>
         <JsonLd data={schema} />

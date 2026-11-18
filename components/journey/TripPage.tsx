@@ -1,3 +1,5 @@
+import PlanBand from "@/components/destination/PlanBand";
+import { leadFor } from "@/lib/content/advisors";
 import Image from "next/image";
 import MapBoot from "./MapBoot";
 import { FOUNDER_YEARS, SITE } from "@/lib/site";
@@ -613,6 +615,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           <SessionsFor sessions={sessionsFor(T.seo.path)} name={T.h1} />
           <FaqBlock faqs={T.faqs.map(([q, a]) => ({ q, a }))} title={voyage ? "Questions About This Voyage" : "Questions About This Route"} />
           {Related}
+          {place && leadFor(place.key) && <PlanBand place={place.name} compassHref="/compass" where={{ countrySlug: place.key, volume: "voyages" }} />}
           {Enquire}
         </div>
       </main>

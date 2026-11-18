@@ -3,7 +3,7 @@ import TravelNotesForm from "@/components/TravelNotesForm";
 import { Headshot } from "@/components/advisor/Desk";
 import FadeNote from "@/components/record/FadeNote";
 import Scroller from "./Scroller";
-import { ADVISORS, DEFAULT_ADVISOR, advisorsFor, type Advisor } from "@/lib/content/advisors";
+import { ADVISORS, DEFAULT_ADVISOR, advisorsFor, leadFor, type Advisor } from "@/lib/content/advisors";
 import type { Volume } from "@/lib/content/advisor-desk";
 import { founderOceanForCountry } from "@/lib/content/founder-ocean";
 
@@ -49,9 +49,11 @@ function cardFacts(a: Advisor, where?: PlanWhere) {
 }
 
 export default function PlanBand({ place, compassHref = "#compass", where }: { place: string; compassHref?: string; where?: PlanWhere }) {
-  const lead = ADVISORS.find((a) => a.slug === DEFAULT_ADVISOR)!;
-  const others = where ? advisorsFor(where).advisors.filter((a) => a.slug !== DEFAULT_ADVISOR && !a.sample).slice(0, 4) : [];
-  const people = [lead, ...others];
+  const james = ADVISORS.find((a) => a.slug === DEFAULT_ADVISOR)!;
+  // The named lead for this country (James, 18 Nov 2026: Anthony for Indonesia) opens the strip; James follows.
+  const named = leadFor(where?.countrySlug);
+  const others = where ? advisorsFor(where).advisors.filter((a) => a.slug !== DEFAULT_ADVISOR && a !== named && !a.sample).slice(0, 4) : [];
+  const people = named ? [named, james, ...others] : [james, ...others];
   const q = encodeURIComponent(place);
   const planHref = (a: Advisor) => `/plan?advisor=${a.slug}&q=${q}`;
   const note = where?.countrySlug ? NOTE[where.countrySlug] : undefined;
@@ -61,7 +63,7 @@ export default function PlanBand({ place, compassHref = "#compass", where }: { p
     <section id="plan" className="mt-20 md:mt-28 border-t ledger-rule pt-10" aria-label={`Plan ${place}`}>
       <p className="ledger-eyebrow ledger-crimson">Advisors who know {place}</p>
       <h2 className="ledger-display text-[1.6rem] md:text-[2rem] mt-2 mb-6 max-w-2xl">Pick the person you&rsquo;d enjoy planning {place} with.</h2>
-      <Scroller label={`Advisors who know ${place}`} count={people.length + 1}>
+      <Scroller label={`Advisors who know ${place}`} count={people.length + 1} auto>
         {people.map((a) => {
           const { specs, been } = cardFacts(a, where);
           const av = a.dna ? AVAIL[a.dna.availability] : undefined;
@@ -75,6 +77,13 @@ export default function PlanBand({ place, compassHref = "#compass", where }: { p
                   {a.roleApproved && <p className="ledger-eyebrow !text-[10px] mt-1">{a.role}</p>}
                 </div>
               </div>
+              {a === named && <p className="mt-3 ledger-eyebrow !text-[10px] text-house">Your advisor for {place}</p>}
+              {a.contact && (
+                <p className="mt-3 text-[13.5px] grid gap-0.5">
+                  <a href={`mailto:${a.contact.email}`} className="underline underline-offset-4 decoration-[#CFC8BF] hover:text-house">{a.contact.email}</a>
+                  <a href={`tel:${a.contact.tel}`} className="underline underline-offset-4 decoration-[#CFC8BF] hover:text-house">{a.contact.phone}</a>
+                </p>
+              )}
               {av && <p className="mt-3 text-[13px] flex items-center gap-2"><span className={`w-1.5 h-1.5 rounded-full ${av.dot}`} aria-hidden="true" />{av.label}</p>}
               {specs.length > 0 && (
                 <ul className="mt-3 flex flex-wrap gap-1.5" aria-label="Known for">
@@ -100,6 +109,7 @@ export default function PlanBand({ place, compassHref = "#compass", where }: { p
           <p className="mt-3 text-[14.5px] ledger-muted">Every enquiry is read by a person.</p>
           <div className="mt-auto pt-5 flex flex-wrap items-center gap-4">
             <Link href={`/plan?q=${q}&with=my-advisor`} className="ledger-btn">Bring your advisor</Link>
+<Link href="/advisors/match" className="ledger-btn-ghost">Find your DNA match</Link>
             <a href={compassHref} className="ledger-btn-ghost">Or take the Compass</a>
           </div>
         </article>

@@ -62,7 +62,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
               <p className="ledger-eyebrow ledger-crimson">{a.role} · James Wild &amp; Co</p>
               <h1 className="ledger-display text-[2.3rem] md:text-[3.3rem] leading-[1.08] mt-2">{a.name}</h1>
               {a.intro && <p className="mt-4 text-[18px] md:text-[19px] ledger-muted max-w-xl leading-relaxed">{a.intro}</p>}
-              <div className="mt-6 flex flex-wrap gap-4 items-center"><Link href={`/plan?advisor=${a.slug}`} className="ledger-btn ledger-btn--solid">Plan with {a.firstName}</Link><Link href="/about/team" className="ledger-btn-ghost">The whole team</Link></div>
+              <div className="mt-6 flex flex-wrap gap-4 items-center"><Link href={`/plan?advisor=${a.slug}`} className="ledger-btn ledger-btn--solid">Plan with {a.firstName}</Link><Link href="/advisors/match" className="ledger-btn-ghost">Is {a.firstName} my match?</Link><Link href="/about/team" className="ledger-btn-ghost">The whole team</Link></div>
               {a.contact && <p className="mt-5 flex flex-wrap gap-x-6 gap-y-1 text-[16px]"><a href={`mailto:${a.contact.email}`} className="underline underline-offset-4 hover:ledger-crimson">{a.contact.email}</a><a href={`tel:${a.contact.tel}`} className="underline underline-offset-4 hover:ledger-crimson">{a.contact.phone}</a></p>}
             </div>
           </header>

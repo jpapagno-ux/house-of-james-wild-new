@@ -192,6 +192,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
       { label: "The Exceptional Few", href: "/the-exceptional-few" },
       { label: "Meet James", href: "/about/founder" },
       { label: "The team", href: "/about/team" },
+      { label: "Find your advisor match", href: "/advisors/match" },
       { label: "Journal", href: "/journal" },
       { label: "What's coming", href: "/whats-coming" },
     ],

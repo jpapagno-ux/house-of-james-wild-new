@@ -12,6 +12,7 @@ import { CAYUGA_BODY } from "./cayuga-collection-sustainable-luxury";
 import { AKAGERA_BODY } from "./akagera-rewilding-magashi-peninsula";
 import { MARSH_PRIDE_BODY } from "./marsh-pride-topi-boys-masai-mara";
 import { THREE_ASIA_BODY } from "./three-new-asia-stays";
+import { ITALIAN_HERITAGE_BODY } from "./italian-heritage-journey-hidden-hotels";
 import { cayugaImg as cy } from "../collections/cayuga";
 import { pathwayHref } from "../pathways/flag";
 
@@ -66,7 +67,45 @@ const MAG = (f: string) => `${B44}/${f}`; // Magashi photographs on the live sta
 const GOV = "jwco/stays"; // Governors' Camp Collection photographs on the live stay records
 const GOV_CREDIT = "Photograph: Governors' Camp Collection";
 
+const ITA = "jwco/journal/italian-heritage-journey-hidden-hotels"; // the blog's featured photograph (Shutterstock, James's licence)
+
 export const POSTS: Record<string, JournalPost> = {
+  "italian-heritage-journey-hidden-hotels": {
+    slug: "italian-heritage-journey-hidden-hotels",
+    ledgerId: "WED-2026-000008",
+    shelf: "Captain's Log",
+    title: "Tracing My Italian Roots Through Five Remarkable Stays",
+    seoTitle: "Five Hidden Hotels for an Italian Heritage Journey",
+    description: "James Papagno traces his Italian roots through five character-rich stays in Matera, Umbria, Tuscany, Salina and South Tyrol, with practical advice on planning an ancestry trip and routing it by region.",
+    dek: "Italy feels less like a destination and more like a return. Five stays that hold onto memory, and how to build an ancestry journey without rushing the country.",
+    answer: "An Italian heritage journey begins with the ancestral town, then uses character-rich regional stays to deepen the connection. These five properties span Matera, Umbria, Tuscany, Salina and South Tyrol and should be planned as separate regional chapters: Sextantio Le Grotte della Civita, Locanda del Gallo, Castello di Vicarello, Capofaro Resort and Pension Briol.",
+    place: "Italy",
+    published: "2026-11-18",
+    modified: "2026-11-18",
+    hero: { url: hi(`${ITA}/hero`), alt: "A narrow paved lane between tall ochre and terracotta houses with balconies and potted plants in an Italian town", w: 1920, h: 1279 },
+    body: ITALIAN_HERITAGE_BODY,
+    figures: [],
+    pull: { text: "I used to think tracing your roots meant finding the place your family left. Italy taught me it can also mean noticing what they carried with them.", after: "why-does-this-journey-remain-personal" },
+    close: "James Papagno",
+    faqTitle: "Questions About an Italian Heritage Journey",
+    planPlace: "Italy",
+    faqs: [
+      { q: "What are the best regions for an Italian heritage trip?", a: "Begin with the town or province connected to your family records. Basilicata, Campania, Calabria, Sicily, Puglia and Abruzzo are common origins for many Italian-American families, but ancestry journeys can lead anywhere in Italy." },
+      { q: "How many nights should I allow in an ancestral village?", a: "Allow at least two or three nights in the area. Archive hours, local appointments and family conversations rarely fit neatly into a single day." },
+      { q: "Do I need an ancestry researcher in Italy?", a: "Not always, but a local genealogist can help when records are incomplete, written in older Italian or Latin, or held in municipal and parish archives with limited access." },
+      { q: "Can James Wild & Co book these five Italian hotels?", a: "Not yet as Ledger stays. Each property has to be added, verified and approved before we book it. Tell us about your family story and the region you want to explore, and we will tell you where each one stands." },
+      { q: "What is the best time for this type of Italy journey?", a: "Spring and early autumn often provide comfortable weather and fewer crowds. Island and mountain properties may operate seasonally, so confirm opening dates, ferries and local access before finalising the route." },
+    ],
+    stays: [], // none of the five is in the Ledger yet (stays.json); link them once they pass House Review
+    links: [
+      { label: "Italy", href: "/destinations/europe/italy", line: "Every Italy stay in the Ledger." },
+      { label: "Meet James", href: "/about/founder", line: "Forty-four years on the road." },
+    ],
+    keywords: ["Italian heritage journey", "Italian ancestry trip", "heritage travel Italy", "hidden hotels in Italy", "family roots Italy", "Sextantio Le Grotte della Civita", "Locanda del Gallo", "Castello di Vicarello", "Capofaro Resort Salina", "Pension Briol"],
+    about: ["Sassi of Matera", "Sextantio Le Grotte della Civita", "Locanda del Gallo", "Castello di Vicarello", "Capofaro Resort", "Salina", "Aeolian Islands", "Pension Briol", "South Tyrol", "Italian genealogy"],
+    oldUrl: "/memoir/blog-tracing-my-italian-heritage-through-italys-hidden-stays",
+    approved: false, // James reviews on the Proofs sheet before it is indexed (ancestral town and closing quote to confirm)
+  },
   "auko-siempang-kaia-new-asia-stays": {
     slug: "auko-siempang-kaia-new-asia-stays",
     ledgerId: "WED-2026-000016",

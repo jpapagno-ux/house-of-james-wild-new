@@ -340,13 +340,19 @@ const deskOnly: Advisor[] = DESK_CARDS.filter((d) => d.name && !CARDS.some((c) =
   portrait: null, intro: null, bio: [], specialties: d.specialties ?? [], traveled: [], profileHref: `/advisors/${d.slug}`,
 }));
 /** Every advisor card on file, stand-ins included (`sample: true`: the invented advisors in advisor-samples.ts). */
-export const ALL_ADVISORS: Advisor[] = [...CARDS, ...deskOnly].map(withDna).map(withDeskProfile);
+// Profile switch (James, 18 Nov 2026): an advisor who turned their profile off on their desk is off every page.
+const OFFLINE = new Set((deskDna as { advisors: DeskDna[] }).advisors.filter((d) => d.offline).map((d) => d.slug));
+export const ALL_ADVISORS: Advisor[] = [...CARDS, ...deskOnly].filter((a) => !OFFLINE.has(a.slug)).map(withDna).map(withDeskProfile);
 /** Stand-ins never render on the public site (James, 3 Nov 2026: no invented people or facts). They stay in the data
  *  and show only on a deployment that sets NEXT_PUBLIC_SHOW_STAND_INS=true (a preview, to test a layout). */
 export const SHOW_STAND_INS = process.env.NEXT_PUBLIC_SHOW_STAND_INS === "true";
 /** The advisors the site renders: the strip, the chip, "Who plans", /advisors and the profiles, the feed, search,
  *  llms.txt and the JSON-LD all read this list, so a stand-in is hidden everywhere by this one filter. */
 export const ADVISORS: Advisor[] = SHOW_STAND_INS ? ALL_ADVISORS : ALL_ADVISORS.filter((a) => !a.sample);
+/** "Away until" from the desk: the date the advisor is back (ISO), shown on their card; null when they are in. */
+const AWAY = new Map((deskDna as { advisors: DeskDna[] }).advisors.filter((d) => d.awayUntil).map((d) => [d.slug, d.awayUntil as string]));
+export const awayUntil = (slug: string) => { const d = AWAY.get(slug); return d && d > new Date().toISOString().slice(0, 10) ? d : null; };
+export const backOn = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", timeZone: "UTC" });
 
 // In the field with us: partners who aren't James Wild & Co booking
 // advisors, shown with their own affiliation (old WES team page, 25 Oct 2026).

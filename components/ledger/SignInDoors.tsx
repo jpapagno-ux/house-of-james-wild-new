@@ -17,7 +17,7 @@ type Door = { key: "traveler" | "advisor" | "partner"; eyebrow: string; title: s
 
 const DOORS: Door[] = [
   { key: "traveler", eyebrow: "Traveler", title: "My Folio", line: "Your shelf for the places worth returning to. Save stays, gather them into a journey, share it with the people you travel with.", open: FLAGS.accounts, href: FLAGS.accounts ? "/account/sign-in" : "/folio", cta: FLAGS.accounts ? "Sign in" : "See how Folios work", soon: "Folio accounts open with Booking Live." },
-  { key: "advisor", eyebrow: "Advisor", title: "The Desk", line: "The Ledger open, your travelers, the journeys you carry, and your own DNA in your words, where the house can read it.", open: FLAGS.quotes, href: FLAGS.quotes ? "/account/sign-in?next=%2Fdesk" : "/for-advisors", cta: FLAGS.quotes ? "Sign in" : "About advisors of the house", soon: "The Desk opens with Booking Live. Today, James sends each advisor their DNA link by hand." },
+  { key: "advisor", eyebrow: "Advisor", title: "The Desk", line: "The Ledger open, your travelers, the journeys you carry, and your own Bearing in your words, where the house can read it.", open: FLAGS.quotes, href: FLAGS.quotes ? "/account/sign-in?next=%2Fdesk" : "/for-advisors", cta: FLAGS.quotes ? "Sign in" : "About advisors of the house", soon: "The Desk opens with Booking Live. Today, James sends each advisor their Bearing link by hand." },
   { key: "partner", eyebrow: "Partner", title: "Partner Desk", line: "Your properties as the house sells them: rooms, rates, photographs and the facts, written by you, approved by James.", open: PARTNER_DESK, href: PARTNER_DESK ? "/partner/login" : "/partners", cta: PARTNER_DESK ? "Sign in" : "Partner with the house", soon: "The Partner Desk is in review with the first partners." },
 ];
 

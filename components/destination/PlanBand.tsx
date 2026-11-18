@@ -3,7 +3,7 @@ import TravelNotesForm from "@/components/TravelNotesForm";
 import { Headshot } from "@/components/advisor/Desk";
 import FadeNote from "@/components/record/FadeNote";
 import Scroller from "./Scroller";
-import { ADVISORS, DEFAULT_ADVISOR, advisorsFor, leadFor, type Advisor } from "@/lib/content/advisors";
+import { ADVISORS, DEFAULT_ADVISOR, advisorsFor, awayUntil, backOn, leadFor, type Advisor } from "@/lib/content/advisors";
 import type { Volume } from "@/lib/content/advisor-desk";
 import { founderOceanForCountry } from "@/lib/content/founder-ocean";
 
@@ -78,6 +78,7 @@ export default function PlanBand({ place, compassHref = "#compass", where }: { p
                 </div>
               </div>
               {a === named && <p className="mt-3 ledger-eyebrow !text-[10px] text-house">Your advisor for {place}</p>}
+              {awayUntil(a.slug) && <p className="mt-2 text-[13px] ledger-muted">Away until {backOn(awayUntil(a.slug)!)}; the house answers in the meantime.</p>}
               {a.contact && (
                 <p className="mt-3 text-[13.5px] grid gap-0.5">
                   <a href={`mailto:${a.contact.email}`} className="underline underline-offset-4 decoration-[#CFC8BF] hover:text-house">{a.contact.email}</a>
@@ -109,7 +110,7 @@ export default function PlanBand({ place, compassHref = "#compass", where }: { p
           <p className="mt-3 text-[14.5px] ledger-muted">Every enquiry is read by a person.</p>
           <div className="mt-auto pt-5 flex flex-wrap items-center gap-4">
             <Link href={`/plan?q=${q}&with=my-advisor`} className="ledger-btn">Bring your advisor</Link>
-<Link href="/advisors/match" className="ledger-btn-ghost">Find your DNA match</Link>
+<Link href="/advisors/match" className="ledger-btn-ghost">Find your bearing</Link>
             <a href={compassHref} className="ledger-btn-ghost">Or take the Compass</a>
           </div>
         </article>

@@ -10,7 +10,7 @@ import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import staysData from "@/lib/content/stays.json";
 import { ADV_DOC_LABEL, ENTITY_TYPES, TIER_NAME, feeText, fileSteps, readyToActivate, type AdvDocKind, type FileState, type Plan } from "@/lib/platform/advisor-file";
 import { niceDate } from "@/lib/platform/labels";
-import { Activate, DecideDna, DecideDocument, InviteAdvisor, SetPlan, SetPortrait, type InvitationRow } from "@/components/advisor/HouseForms";
+import { Activate, DecideDna, DecideDocument, HouseProfile, InviteAdvisor, SetPlan, SetPortrait, type InvitationRow } from "@/components/advisor/HouseForms";
 import { mailLive } from "@/lib/platform/advisor-alerts";
 import { DataList, Section, StatusPill, TextLink } from "@/components/platform/ui";
 
@@ -25,7 +25,7 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
   const { id } = await params;
   if (!isUuid(id)) notFound();
   const desk = await requireHouse(`/desk/advisors/${id}`);
-  const { data: a } = await desk.sb.from("advisors").select("id, adv_number, slug, display_name, status, user_id, house_advisor, program_fee_minor, fee_currency, fee_period, payment_terms, activated_at, portrait_public_id").eq("id", id).maybeSingle();
+  const { data: a } = await desk.sb.from("advisors").select("id, adv_number, slug, display_name, status, user_id, house_advisor, program_fee_minor, fee_currency, fee_period, payment_terms, activated_at, portrait_public_id, profile_visible, profile_show_requested_at, away_until, house_message").eq("id", id).maybeSingle();
   if (!a) notFound();
   const [{ data: st, error: stErr }, { data: plan }, { data: det }, docs, sigs, pubDna, dnaProps, { data: invs }] = await Promise.all([
     desk.sb.rpc("advisor_file_state", { p_advisor: id }),
@@ -61,6 +61,12 @@ export default async function HouseAdvisor({ params }: { params: Promise<{ id: s
         <Section title="Invitation">
           <p className="text-[15px] mb-4">{a.display_name} has no desk access yet. Invite them with the address they will sign in with. Nothing is sent until you press a button.</p>
           <InviteAdvisor id={a.id} open={openInv} mailLive={mailLive()} />
+        </Section>
+      )}
+
+      {a.status === "active" && (
+        <Section title="Profile on the site">
+          <HouseProfile id={a.id} visible={a.profile_visible !== false} requested={!!a.profile_show_requested_at} awayUntil={a.away_until ?? null} message={a.house_message ?? null} />
         </Section>
       )}
 

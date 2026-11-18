@@ -13,7 +13,8 @@ import { ADVISOR_DESK } from "./flags";
 // whether to send them to the code screen, to their onboarding, or away. Everything an advisor then
 // reads (clients, quotes, bookings) goes through their own session, so the database rules decide.
 
-export type AdvisorRecord = { id: string; adv_number: string; slug: string; display_name: string; status: "invited" | "active" | "paused" | "left"; house_advisor: boolean };
+export type AdvisorRecord = { id: string; adv_number: string; slug: string; display_name: string; status: "invited" | "active" | "paused" | "left"; house_advisor: boolean;
+  profile_visible?: boolean; profile_show_requested_at?: string | null; away_until?: string | null; house_message?: string | null };
 export type AdvisorContext = {
   sb: SupabaseClient; user: User; advisor: AdvisorRecord;
   /** "ok" once signed in with the authenticator code; "verify" when set up but not entered; "enroll" when not set up yet. */
@@ -28,7 +29,7 @@ export const loadAdvisor = cache(async (): Promise<AdvisorContext | null> => {
   if (!user) return null;
   const admin = supabaseAdmin();
   if (!admin) return null;
-  const { data: advisor } = await admin.from("advisors").select("id, adv_number, slug, display_name, status, house_advisor").eq("user_id", user.id).maybeSingle();
+  const { data: advisor } = await admin.from("advisors").select("id, adv_number, slug, display_name, status, house_advisor, profile_visible, profile_show_requested_at, away_until, house_message").eq("user_id", user.id).maybeSingle();
   if (!advisor) return null;
   const { data: { session } } = await sb.auth.getSession();
   const { data: aal } = await sb.auth.mfa.getAuthenticatorAssuranceLevel(session?.access_token);

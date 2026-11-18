@@ -25,9 +25,9 @@ export default async function AdvisorDeskLayout({ children }: { children: React.
             <p className="ledger-eyebrow text-[#8B2525]">Advisor Desk</p>
             <p className="ledger-display text-[1.2rem] leading-none">{a.advisor.display_name}</p>
             <span className="font-mono text-[11.5px] tracking-[0.06em] ledger-crimson">{a.advisor.adv_number}</span>
-            <div className="ml-auto flex flex-wrap items-center gap-4 text-[13px]">
+            <div className="w-full sm:w-auto sm:ml-auto flex flex-wrap items-center justify-between sm:justify-end gap-4 text-[13px]">
               <span className="ledger-muted">{active ? a.tier.label : "File in progress"}</span>
-              <span className="ledger-muted max-w-[16rem] truncate">{a.user.email}</span>
+              <span className="hidden sm:inline ledger-muted max-w-[16rem] truncate">{a.user.email}</span>
               <form action="/auth/sign-out?to=advisor" method="post"><button type="submit" className="ledger-eyebrow hover:opacity-60">Sign out</button></form>
             </div>
           </div>

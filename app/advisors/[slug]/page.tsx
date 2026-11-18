@@ -8,7 +8,7 @@ import JsonLd from "@/components/ledger/JsonLd";
 import AdvisorCard from "@/components/advisor/AdvisorCard";
 import { DeskFolios, DeskIdCard, DeskSends, DeskSheet, DeskTies } from "@/components/advisor/DeskPage";
 import { Prose, PlanClose } from "@/components/about/Parts";
-import { ADVISORS, advisorProfile } from "@/lib/content/advisors";
+import { ADVISORS, advisorProfile, awayUntil, backOn } from "@/lib/content/advisors";
 import AdvisorDnaBlock from "@/components/advisor/AdvisorDnaBlock";
 import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import { COUNTRIES } from "@/lib/content/countries";
@@ -61,6 +61,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
             <div>
               <p className="ledger-eyebrow ledger-crimson">{a.role} · James Wild &amp; Co</p>
               <h1 className="ledger-display text-[2.3rem] md:text-[3.3rem] leading-[1.08] mt-2">{a.name}</h1>
+              {awayUntil(a.slug) && <p className="mt-3 text-[15px] ledger-muted">Away until {backOn(awayUntil(a.slug)!)}. Write anyway: the house answers until {a.firstName} is back.</p>}
               {a.intro && <p className="mt-4 text-[18px] md:text-[19px] ledger-muted max-w-xl leading-relaxed">{a.intro}</p>}
               <div className="mt-6 flex flex-wrap gap-4 items-center"><Link href={`/plan?advisor=${a.slug}`} className="ledger-btn ledger-btn--solid">Plan with {a.firstName}</Link><Link href="/advisors/match" className="ledger-btn-ghost">Is {a.firstName} my match?</Link><Link href="/about/team" className="ledger-btn-ghost">The whole team</Link></div>
               {a.contact && <p className="mt-5 flex flex-wrap gap-x-6 gap-y-1 text-[16px]"><a href={`mailto:${a.contact.email}`} className="underline underline-offset-4 hover:ledger-crimson">{a.contact.email}</a><a href={`tel:${a.contact.tel}`} className="underline underline-offset-4 hover:ledger-crimson">{a.contact.phone}</a></p>}

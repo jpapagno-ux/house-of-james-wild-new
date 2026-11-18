@@ -3,12 +3,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { X, KeyRound, ArrowRight } from "lucide-react";
 import { FLAGS } from "@/lib/booking-live/flags";
-import { PARTNER_DESK } from "@/lib/platform/flags";
+import { ADVISOR_DESK, PARTNER_DESK } from "@/lib/platform/flags";
+import { ADVISOR_SIGN_IN, PARTNER_SIGN_IN } from "@/lib/platform/doors";
 import { JwcoSeal } from "./Marks";
 import { lockScroll } from "@/lib/scroll-lock";
 
 // SignInDoors — one "Sign in" in the header, three doors behind it (James, 3 Nov 2026):
-// Traveler (My Folio), Advisor (the Desk), Partner (Partner Desk). Each door is
+// Traveler (My Folio), Advisor (the Advisor Desk at /advisor), Partner (Partner Desk). Each door is
 // open only when its feature flag is on in this build; otherwise it says so and
 // points at the page that explains it, so a door never leads to a 404. Copy is the
 // house's: a person, not a form; the Ledger behind every door.
@@ -17,8 +18,8 @@ type Door = { key: "traveler" | "advisor" | "partner"; eyebrow: string; title: s
 
 const DOORS: Door[] = [
   { key: "traveler", eyebrow: "Traveler", title: "My Folio", line: "Your shelf for the places worth returning to. Save stays, gather them into a journey, share it with the people you travel with.", open: FLAGS.accounts, href: FLAGS.accounts ? "/account/sign-in" : "/folio", cta: FLAGS.accounts ? "Sign in" : "See how Folios work", soon: "Folio accounts open with Booking Live." },
-  { key: "advisor", eyebrow: "Advisor", title: "The Desk", line: "The Ledger open, your travelers, the journeys you carry, and your own DNA in your words, where the house can read it.", open: FLAGS.quotes, href: FLAGS.quotes ? "/account/sign-in?next=%2Fdesk" : "/for-advisors", cta: FLAGS.quotes ? "Sign in" : "About advisors of the house", soon: "The Desk opens with Booking Live. Today, James sends each advisor their DNA link by hand." },
-  { key: "partner", eyebrow: "Partner", title: "Partner Desk", line: "Your properties as the house sells them: rooms, rates, photographs and the facts, written by you, approved by James.", open: PARTNER_DESK, href: PARTNER_DESK ? "/partner/login" : "/partners", cta: PARTNER_DESK ? "Sign in" : "Partner with the house", soon: "The Partner Desk is in review with the first partners." },
+  { key: "advisor", eyebrow: "Advisor", title: "The Desk", line: "The Ledger open, your travelers, the journeys you carry, and your own DNA in your words, where the house can read it.", open: ADVISOR_DESK, href: ADVISOR_DESK ? ADVISOR_SIGN_IN : "/for-advisors", cta: ADVISOR_DESK ? "Sign in" : "About advisors of the house", soon: "The Advisor Desk opens to advisors of the house by invitation." },
+  { key: "partner", eyebrow: "Partner", title: "Partner Desk", line: "Your properties as the house sells them: rooms, rates, photographs and the facts, written by you, approved by James.", open: PARTNER_DESK, href: PARTNER_DESK ? PARTNER_SIGN_IN : "/partners", cta: PARTNER_DESK ? "Sign in" : "Partner with the house", soon: "The Partner Desk is in review with the first partners." },
 ];
 
 export default function SignInDoors({ light = false, className = "" }: { light?: boolean; className?: string }) {
@@ -65,7 +66,7 @@ export default function SignInDoors({ light = false, className = "" }: { light?:
                   </li>
                 ))}
               </ul>
-              <p className="mt-5 text-[12.5px] ledger-muted">No passwords to remember: each door sends a sign-in link to your email. Prices, availability and bookings stay with a person at the house.</p>
+              <p className="mt-5 text-[12.5px] ledger-muted">Advisor and partner desks are by invitation. Prices, availability and bookings stay with a person at the house.</p>
             </div>
           </div>
         </div>

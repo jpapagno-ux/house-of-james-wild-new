@@ -6,6 +6,7 @@ import { FLAGS } from "@/lib/booking-live/flags";
 import { FOOTER_COLUMNS as ALL_COLUMNS, LEGAL_NAV as ALL_LEGAL, PLAN_CTA, REGIONS as ALL_REGIONS, SITE, LINKED_VOLUMES, HOUSE_LINE } from "@/lib/site";
 import { defaultAdvisor } from "@/lib/content/advisors";
 import { live } from "@/lib/routes";
+import { TRADE_SIGN_INS } from "@/lib/platform/doors";
 import { FOOTER } from "@/lib/palette";
 import { JwcoSeal } from "./Marks";
 
@@ -141,6 +142,7 @@ export default function SiteFooter({ tone }: { tone?: FooterTone }) {
               <li><a href={`tel:${SITE.phone.tel}`} className="font-display text-[26px] leading-none text-white hover:underline underline-offset-4">{SITE.phone.display}</a></li>
               {SITE.email && <li className="pt-1"><a href={`mailto:${SITE.email}`} className={link}>{SITE.email}</a></li>}
               <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={link}>My Folio</Link></li>
+              {TRADE_SIGN_INS.map((d) => <li key={d.href}><Link href={d.href} rel="nofollow" className={link}>{d.label}</Link></li>)}
             </ul>
             <ul className="mt-5 flex flex-wrap gap-x-4 gap-y-1.5">
               {SITE.social.map((s) => <li key={s.url}><a href={s.url} rel="me noopener" className="font-mono text-[10.5px] uppercase tracking-[0.18em] hover:underline underline-offset-4 inline-flex items-center min-h-[44px] lg:min-h-0" style={{ color: F.soft }}>{s.label}</a></li>)}

@@ -10,6 +10,8 @@ import { FOR_ADVISORS } from "@/lib/content/house";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 import { IGGI_CORE_ORIGIN } from "@/lib/iggi/flag";
+import { ADVISOR_DESK } from "@/lib/platform/flags";
+import { ADVISOR_SIGN_IN } from "@/lib/platform/doors";
 
 // /for-advisors: join the house. Hero › in short › more than an ID › the
 // comparison › the terms › what you get › how to join › James's note › FAQ ›
@@ -86,7 +88,7 @@ export default function ForAdvisorsPage() {
                 <p className="ledger-eyebrow ledger-crimson">The Desk</p>
                 <h2 id="desk-heading" className="ledger-display text-[1.8rem] md:text-[2.4rem] leading-tight mt-2">Your page in the book, and the tools behind it.</h2>
                 <p className="mt-3 text-[16.5px] ledger-muted leading-relaxed">An advisor of the house gets an ADV number, a page with their marks in green ink beside the founder&rsquo;s, and the Desk: Iggi with the whole Ledger open, for research and for shaping a client&rsquo;s journey into a Folio with its own number.</p>
-                <div className="mt-6 flex flex-wrap gap-3"><Link href={APPLY} className="ledger-btn ledger-btn--solid">Apply to the desk</Link><a href={`${IGGI_CORE_ORIGIN}/advisor/chat`} className="ledger-btn" rel="noopener">Sign in to the Desk</a></div>
+                <div className="mt-6 flex flex-wrap gap-3"><Link href={APPLY} className="ledger-btn ledger-btn--solid">Apply to the desk</Link>{ADVISOR_DESK ? <Link href={ADVISOR_SIGN_IN} className="ledger-btn" rel="nofollow">Sign in to the Advisor Desk</Link> : <a href={`${IGGI_CORE_ORIGIN}/advisor/chat`} className="ledger-btn" rel="noopener">Sign in to the Desk</a>}</div>
                 <p className="mt-3 text-[13px] ledger-muted">Sign-in is for advisors already on the roster.</p>
               </div>
               <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-6">

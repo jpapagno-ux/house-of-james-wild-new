@@ -148,9 +148,9 @@ export function aliikaiExtra(): ShipExtra {
 // the only place outside their two profiles where the Raja Ampat watercolours appear (James, 18 Nov 2026).
 function SailedBy() {
   return (
-    <section aria-labelledby="sailed-by" className="relative mt-10 overflow-hidden border ledger-border bg-white">
-      <Image src="https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1800/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-phinisi-father-son-drone" alt="" aria-hidden="true" fill sizes="100vw" className="object-cover object-right opacity-60 mix-blend-multiply" />
-      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/10" aria-hidden="true" />
+    <section aria-labelledby="sailed-by" className="relative mt-10 overflow-hidden border ledger-border bg-[#F4F2EF]">
+      <Image src="https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1800/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-phinisi-father-son-drone" alt="" aria-hidden="true" fill sizes="100vw" className="object-cover object-right opacity-90 mix-blend-multiply" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/75 to-transparent" aria-hidden="true" />
       <div className="relative px-6 py-10 md:px-10 md:py-14 max-w-xl">
         <p className="ledger-eyebrow ledger-crimson">Sailed by the house · November 2024</p>
         <h2 id="sailed-by" className="ledger-display text-[1.7rem] md:text-[2.2rem] leading-tight mt-2">James and Anthony Sailed Her</h2>

@@ -35,7 +35,12 @@ export const TAHITI_GUIDES: Record<string, Guide> = {
     eyebrow: "Destinations · Oceania · French Polynesia (Tahiti)",
     h1: "Taha'a",
     tagline: "One lagoon with Raiatea, a coral garden between two motu, and no airport at all",
-    slides: [],
+    slides: [
+      { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/destinations/tahiti/plates/tahaa-coral-garden-snorkel-hares", alt: "Watercolour: two hares, husband and wife, snorkelling hand in hand over the Coral Garden of Taha'a, Bora Bora on the horizon", credit: "Watercolour, James Wild & Co" },
+      { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-01", alt: "Vahine Private Island on its motu in the Taha'a lagoon", credit: "Photograph courtesy of Vahine Private Island, Pearl Resorts of Tahiti" },
+      { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-02", alt: "Vahine Private Island on its motu in the Taha'a lagoon", credit: "Photograph courtesy of Vahine Private Island, Pearl Resorts of Tahiti" },
+      { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-03", alt: "Vahine Private Island on its motu in the Taha'a lagoon", credit: "Photograph courtesy of Vahine Private Island, Pearl Resorts of Tahiti" },
+    ],
     slidesFromStay: { slug: "pearl-resort-vahine-private-island", alt: "Vahine Private Island on its motu in the Taha'a lagoon", credit: "Photograph courtesy of Vahine Private Island, Pearl Resorts of Tahiti" },
     answer: "Taha'a is a Society Island that shares one lagoon with Raiatea, and it has no airport: you fly to Raiatea with Air Tahiti, 40 to 45 minutes from Tahiti or direct from Bora Bora, then cross the lagoon by boat in about 30 minutes, usually with your hotel. Its Coral Garden, between two motu on the west coast, is one of Tahiti Tourisme's natural heritage sites. Lagoon outings are best in the dry season, May to October. Taha'a is James Wild's favourite island in French Polynesia; the house files Le Taha'a, a founder favourite, and Vahine Private Island, whose Royal Villa is in The Exceptional Few.",
     facts: [

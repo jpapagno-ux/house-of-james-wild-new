@@ -122,6 +122,8 @@ export const GUIDES: Record<string, Guide> = {
     // A country guide lists every released stay in the country (founder favourites first), not a place selection.
     countryStays: true,
     slides: [
+      { url: `${CLD}jwco/destinations/indonesia/plates/raja-ampat-phinisi-father-son-drone`, alt: "Watercolour: two hares, a father and his son, on the bow of a phinisi among the karsts of Raja Ampat, the son flying a drone", credit: "Watercolour, James Wild & Co" },
+      { url: `${CLD}jwco/destinations/indonesia/plates/raja-ampat-manta-dive-father-son`, alt: "Watercolour: a father and son hare diving a Raja Ampat reef as two manta rays glide overhead", credit: "Watercolour, James Wild & Co" },
       { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Jungle-covered karst islands rising from turquoise lagoons in Raja Ampat, West Papua" },
       { url: `${KOM}padar-island-aerial`, alt: "Padar Island's ridges and crescent bays from the air, Komodo National Park" },
       { url: `${CLD}wildco/voyages/vessels/aliikai/DJI_0472-1`, alt: "The phinisi Aliikai under full sail from the air" },

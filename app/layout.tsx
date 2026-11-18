@@ -33,7 +33,7 @@ import { SITE } from "@/lib/site";
 // over the film (overlay) while other pages keep it on paper.
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
-  title: { default: `${SITE.name} | Vetted Safaris, Stays & Voyages`, template: `%s | ${SITE.name}` },
+  title: { default: `${SITE.name} | Founder-Led Journeys Since 1982`, template: `%s | ${SITE.name}` },
   description: SITE.description,
   applicationName: SITE.name,
   robots: isIndexable ? { index: true, follow: true } : { index: false, follow: false },

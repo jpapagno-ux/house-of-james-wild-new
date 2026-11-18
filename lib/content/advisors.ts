@@ -65,6 +65,7 @@ export type Advisor = {
   desk?: DeskProfile; // the Advisor Desk: ID, marks, entries carried, folios
   dna?: AdvisorDna; // Stage 4b: from the Library, merged at load (real advisors only)
   contact?: { email: string; phone: string; tel: string }; // work contact, James-approved per advisor
+  leads?: string[]; // country slugs where James has named this advisor the lead: their card opens every page there
   stories?: AdvisorStory[]; // photo stories of their own journeys: their photos, their facts
 };
 
@@ -147,8 +148,9 @@ const CARDS: Advisor[] = [
     ledgerId: "ADV-2026-000002",
     name: "Anthony Papagno",
     firstName: "Anthony",
-    role: "Travel Advisor · Nature & Wildlife",
-    roleApproved: true,
+    role: "Travel Advisor · Indonesia & Indonesia Voyages",
+    roleApproved: true, // James, 18 Nov 2026
+    leads: ["indonesia"], // James, 18 Nov 2026: Anthony is the advisor for all of Indonesia and its voyages
     // Portrait and contact sent by James, 18 Nov 2026.
     portrait: { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_fill,g_face,ar_4:5,w_800/jwco/advisors/anthony-papagno/portrait", alt: "Portrait of Anthony Papagno, travel advisor at James Wild & Co" },
     contact: { email: "anthony@jameswildco.com", phone: "561.479.6356", tel: "+15614796356" },
@@ -401,6 +403,9 @@ export function whoCarries(pathwayId: string): Advisor[] {
   const real = ADVISORS.filter((a) => !a.sample && a.dna?.pathways.includes(pathwayId) && a.dna.availability !== "closed");
   return real.sort((x, y) => (x.slug === DEFAULT_ADVISOR ? -1 : y.slug === DEFAULT_ADVISOR ? 1 : 0));
 }
+
+/** The advisor James has named lead for a country (their card opens every page there), or null. */
+export const leadFor = (countrySlug?: string | null) => (countrySlug ? ADVISORS.find((a) => !a.sample && a.leads?.includes(countrySlug)) ?? null : null);
 
 export const advisorCounts = (a: Advisor) => (a.desk ? deskCounts(a.desk) : { carried: 0, guests: 0, folios: 0, slept: 0 });
 export const initials = (name: string) => name.split(" ").map((p) => p[0]).join("").slice(0, 2).toUpperCase();

@@ -1,3 +1,4 @@
+import PlanBand from "@/components/destination/PlanBand";
 import VoyageHub from "@/components/ships/VoyageHub";
 import CharterJourneys from "@/components/ships/CharterJourneys";
 import { watersHub } from "@/lib/content/ships/hubs";
@@ -10,5 +11,5 @@ const H = watersHub("indonesia");
 export const metadata = buildMetadata({ title: "Raja Ampat and Komodo Phinisi Voyages and Charters", description: `What does a Raja Ampat phinisi cost? Aliikai's shared voyages, Rascal Voyages, Silolona Sojourns and Celestia chartered whole, published nightly rates and two charter weeks.`, path: H.path, image: H.cards[0]?.image ?? undefined });
 
 export default function Page() {
-  return <VoyageHub {...H} after={<CharterJourneys id="charter-the-whole-yacht" title="Which Week Should You Charter in Indonesia?" />} />;
+  return <VoyageHub {...H} after={<><CharterJourneys id="charter-the-whole-yacht" title="Which Week Should You Charter in Indonesia?" /><PlanBand place="Indonesia" compassHref="/compass" where={{ countrySlug: "indonesia", volume: "voyages" }} /></>} />;
 }

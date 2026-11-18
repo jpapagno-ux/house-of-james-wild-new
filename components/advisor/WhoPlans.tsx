@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ADVISORS, DEFAULT_ADVISOR, JAMES_HEADS_EVERY_PAGE, advisorsFor, countryOfRecord, initials, type Advisor } from "@/lib/content/advisors";
+import { ADVISORS, DEFAULT_ADVISOR, JAMES_HEADS_EVERY_PAGE, advisorsFor, countryOfRecord, initials, leadFor, type Advisor } from "@/lib/content/advisors";
 import { PATHWAY_NAMES } from "@/lib/compass/pathway-adapter";
 import { COUNTRIES } from "@/lib/content/countries";
 import { GREEN_INK, VOLUME_LABEL, type DeskEntry, type Volume } from "@/lib/content/advisor-desk";
@@ -21,18 +21,20 @@ export type Where = { countrySlug?: string | null; regionSlug?: string | null; v
 // they know the country. While the house is in testing (HANDOFF §1, JAMES_HEADS_EVERY_PAGE)
 // James stays the lead on every page and the matched advisor is named beside him.
 type OwnMark = { ledgerId: string; mark: string; when: string | null; note: string | null };
-function pick(where: Where): { lead: Advisor; others: Advisor[]; entries: DeskEntry[]; marks: OwnMark[]; matched: Advisor | null } {
+function pick(where: Where): { lead: Advisor; others: Advisor[]; entries: DeskEntry[]; marks: OwnMark[]; matched: Advisor | null; named: boolean } {
   const { advisors } = advisorsFor(where);
   const james = ADVISORS.find((a) => a.slug === DEFAULT_ADVISOR)!;
   const ranked = advisors.length ? advisors : [james];
-  const lead = JAMES_HEADS_EVERY_PAGE ? james : ranked[0];
-  const rest = ranked.filter((a) => a !== lead);
+  // A lead James has named for the country (Anthony for Indonesia, 18 Nov 2026) heads the page; James is named beside them.
+  const named = leadFor(where.countrySlug ?? (where.ledgerId ? countryOfRecord(where.ledgerId) : null));
+  const lead = named ?? (JAMES_HEADS_EVERY_PAGE ? james : ranked[0]);
+  const rest = [...(named && !ranked.includes(james) ? [james] : []), ...ranked].filter((a) => a !== lead);
   // The advisor the ranking would hand the page to, when it isn't James (named "with …" while testing).
   // Stand-ins are never the match (A6). The match is the first REAL advisor the ranking
   // puts ahead of James (or anyone real at all when James has nothing here).
   const firstReal = ranked.find((a) => !a.sample) ?? james;
   const jamesAt = ranked.indexOf(james);
-  const matched = JAMES_HEADS_EVERY_PAGE && firstReal !== james && (jamesAt === -1 || ranked.indexOf(firstReal) < jamesAt) ? firstReal : null;
+  const matched = !named && JAMES_HEADS_EVERY_PAGE && firstReal !== james && (jamesAt === -1 || ranked.indexOf(firstReal) < jamesAt) ? firstReal : null;
   const match = (e: DeskEntry) =>
     (where.ledgerId ? e.ledgerId === where.ledgerId : true) && (where.countrySlug ? e.countrySlug === where.countrySlug : true) && (where.regionSlug ? e.regionSlug === where.regionSlug : true) && (where.volume ? e.volume === where.volume : true);
   const entries = (lead.desk?.entries ?? []).filter(match).slice(0, 3);
@@ -41,18 +43,18 @@ function pick(where: Where): { lead: Advisor; others: Advisor[]; entries: DeskEn
   const marks = (shown.dna?.marks ?? []).filter((m) => (where.ledgerId ? m.ledgerId === where.ledgerId : where.countrySlug ? countryOfRecord(m.ledgerId) === where.countrySlug : false)).slice(0, 3);
   // Real advisors before stand-ins in "also knows"; the matched advisor is already named above.
   const others = rest.filter((a) => a !== matched).sort((x, y) => Number(!!x.sample) - Number(!!y.sample)).slice(0, 3);
-  return { lead, others, entries, marks, matched };
+  return { lead, others, entries, marks, matched, named: !!named };
 }
 
 export default function WhoPlans({ where, place }: { where: Where; place: string }) {
-  const { lead, others, entries, marks, matched } = pick(where);
+  const { lead, others, entries, marks, matched, named } = pick(where);
   const founder = lead.slug === DEFAULT_ADVISOR;
   const countryName = where.countrySlug ? COUNTRIES.find((c) => c.slug === where.countrySlug)?.name ?? place : place;
   const plan = `/plan?advisor=${lead.slug}&destination=${encodeURIComponent(where.countrySlug ?? where.regionSlug ?? "")}`;
   return (
     <section className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10" aria-labelledby="who-plans-heading">
       <p className="ledger-eyebrow" style={{ color: GREEN_INK }}>Who plans this</p>
-      <h2 id="who-plans-heading" className="ledger-h2 mt-2">{founder ? (matched ? `James plans ${place} himself, with ${matched.firstName}.` : `James plans ${place} himself.`) : `${lead.firstName} plans ${place}.`}</h2>
+      <h2 id="who-plans-heading" className="ledger-h2 mt-2">{founder ? (matched ? `James plans ${place} himself, with ${matched.firstName}.` : `James plans ${place} himself.`) : named ? `${lead.firstName} plans ${place}, with James.` : `${lead.firstName} plans ${place}.`}</h2>
       {matched && (
         <p className="mt-3 text-[15.5px] leading-relaxed max-w-2xl">
           <Link href={matched.profileHref ?? "/about/team#advisors"} className="underline underline-offset-4 hover:ledger-crimson">{matched.name}</Link>
@@ -70,6 +72,7 @@ export default function WhoPlans({ where, place }: { where: Where; place: string
           <p className="ledger-display text-[1.5rem] leading-tight"><Link href={lead.profileHref ?? "/about/team#advisors"} className="hover:ledger-crimson">{lead.name}</Link></p>
           <p className="ledger-eyebrow !text-[9.5px] mt-1" style={{ color: founder ? undefined : GREEN_INK }}>{lead.role}{lead.desk ? <span className="ledger-crimson"> · {lead.desk.adv}</span> : null}</p>
           {founder && founderOceanForCountry(where.countrySlug) && <p className="mt-1.5 text-[14px]" style={{ color: GREEN_INK }}>{founderOceanForCountry(where.countrySlug)}</p>}
+          {lead.contact && <p className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-[15px]"><a href={`mailto:${lead.contact.email}`} className="underline underline-offset-4 hover:ledger-crimson">{lead.contact.email}</a><a href={`tel:${lead.contact.tel}`} className="underline underline-offset-4 hover:ledger-crimson">{lead.contact.phone}</a></p>}
           {(lead.line ?? lead.desk?.line) && <p className="mt-3 ledger-display italic text-[1.1rem] leading-snug max-w-xl">&ldquo;{lead.line ?? lead.desk?.line}&rdquo;</p>}
           {entries.length > 0 && (
             <ul className="mt-4 grid gap-1.5 text-[15px]">

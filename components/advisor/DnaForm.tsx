@@ -2,6 +2,7 @@
 import { useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
 import { api } from "@/lib/platform/client";
+import { DNA_SPECIALTIES } from "@/lib/dna/vocabulary";
 import { DNA_AVAILABILITY, DNA_MARKS, DNA_PARTIES, DNA_VOLUMES, type DnaInput, type DnaMark } from "@/lib/platform/advisor-dna";
 
 // Part five of the advisor's file: their Advisor DNA. Sent to the house; nothing reaches the website until
@@ -150,7 +151,7 @@ export function DnaForm({ initial, options, waiting }: { initial: DnaInput; opti
         <legend className="ledger-display text-[1.3rem] px-1">In your words</legend>
         <div className="grid gap-4 sm:grid-cols-2">
           <label className={lab}>Languages (separate with commas)<input value={d.languages.join(", ")} onChange={(e) => set("languages", e.target.value.split(",").map((x) => x.trimStart()))} className={input} /></label>
-          <label className={lab}>Specialties (up to twelve, separate with commas)<input value={d.specialties.join(", ")} onChange={(e) => set("specialties", e.target.value.split(",").map((x) => x.trimStart()))} className={input} /></label>
+          <div><p className={lab}>What are your specialties? (up to twelve; the same list travellers choose from)</p><div className="mt-1"><Toggle name="Specialties" items={[...DNA_SPECIALTIES, ...d.specialties.filter((s) => !(DNA_SPECIALTIES as readonly string[]).includes(s))].map((s) => [s, s] as [string, string])} value={d.specialties} onChange={(v) => set("specialties", v.slice(0, 12))} /></div></div>
         </div>
         <label className={lab}>A line in your own words, for your card (under 300 characters)
           <textarea rows={2} maxLength={300} value={d.match_note ?? ""} onChange={(e) => set("match_note", e.target.value || null)} className={input} placeholder="What you love planning, and why" />

@@ -230,7 +230,7 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
       {/* The band (house chrome, 30 Oct 2026): the seal and wordmark centred on
           their own line, search left, the reader's tools right; the six volumes
           on one centred line beneath. Transparent over a film, paper once scrolled. */}
-      <div className="max-w-[1400px] mx-auto px-4 min-[380px]:px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center gap-3 lg:gap-6">
+      <div className="max-w-[1640px] mx-auto px-4 min-[380px]:px-5 md:px-10 h-[76px] lg:h-[116px] grid grid-cols-[auto_1fr_auto] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-3 lg:gap-6">
         <div className="flex items-center gap-3">
           <button type="button" onClick={() => setOpen(true)} className={`inline-flex items-center gap-3 h-10 ledger-eyebrow !text-[11px] !tracking-[0.24em] hover:opacity-60 ${lt ? "!text-white" : "!text-ink"}`} aria-label="Open menu" aria-expanded={open}>
             <span className="flex flex-col gap-[5px]" aria-hidden="true"><span className="block w-6 h-px bg-current" /><span className="block w-6 h-px bg-current" /></span>
@@ -275,15 +275,12 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
         </Link>
 
         <div className="flex items-center justify-end gap-3">
-          {/* The reader's tools give way as the band narrows (header overlap fix, 3 Nov 2026): below 1280 they live in
-              the menu and "Ask the house" is the search glass alone; Compass returns at 1280, Journal and My Folio at 1440. */}
-          <ul className="hidden xl:flex items-center gap-4 mr-1">
-            {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
-              <li key={l.href} className="hidden min-[1440px]:block"><Link href={l.href} className={mainItem}>{l.label}</Link></li>
-            ))}
+          {/* The reader's tools (header fix, 18 Nov 2026: Journal had slid under the wordmark at laptop widths): the top band
+              keeps only Compass and Sign in beside Plan with James; Journal and My Folio moved to the end of the volumes
+              line below. Compass shows its rose alone until 1760, then its name too. */}
+          <ul className="hidden xl:flex items-center gap-5 mr-1 shrink-0">
             {/* The founder's Compass rose, turning (James, 30 Oct 2026: approved site-wide) */}
-            <li><Link href="/compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={lt} />Compass</Link></li>
-            <li className="hidden min-[1440px]:block"><Link href={FLAGS.accounts ? "/account" : "/folio"} className={mainItem}>My Folio</Link></li>
+            <li><Link href="/compass" aria-label="Compass" className={`${mainItem} !inline-flex items-center gap-2`}><CompassSpin size={18} light={lt} /><span className="hidden min-[1760px]:inline">Compass</span></Link></li>
             {/* Sign in — three doors: Traveler, Advisor, Partner (James, 3 Nov 2026) */}
             <li><SignInDoors light={lt} className={mainItem} /></li>
           </ul>
@@ -302,9 +299,15 @@ export default function SiteHeader({ overlay = false, tuck = false }: { overlay?
 
       {/* The six volumes, one centred line */}
       <nav aria-label="Main" className={`hidden lg:block border-t ${lt ? "border-white/20" : "ledger-border"}`}>
-        <ul className="max-w-[1400px] mx-auto px-10 h-12 flex items-center justify-center gap-8 xl:gap-11">
+        <ul className="max-w-[1400px] mx-auto px-10 h-12 flex items-center justify-center gap-7 xl:gap-9 min-[1440px]:gap-11">
           {SHOW_DESTINATIONS && <DestinationsMenu light={lt} />}
           {VOLUMES.map((v) => <VolumeMenu key={v.href} v={v} light={lt} />)}
+          {/* The reader's own pages, after a hairline: the Journal and My Folio (18 Nov 2026) */}
+          <li aria-hidden="true" className={`hidden xl:block w-px h-4 ${lt ? "bg-white/35" : "bg-keyline"}`} />
+          {MAIN_EXTRA.filter((l) => l.href !== "/destinations").map((l) => (
+            <li key={l.href} className="hidden xl:block"><Link href={l.href} className={`${mainItem} !opacity-80`}>{l.label}</Link></li>
+          ))}
+          <li className="hidden xl:block"><Link href={FLAGS.accounts ? "/account" : "/folio"} className={`${mainItem} !opacity-80`}>My Folio</Link></li>
         </ul>
       </nav>
     </header>

@@ -4,7 +4,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFlags } from "../lib/booking-live/flags.ts";
-import { isUuid, isValidDate, parseFavorite, parseFolio, parseInvite, parseItem, parseProfile, safeNext } from "../lib/booking-live/validate.ts";
+import { favoriteItemType, isUuid, isValidDate, parseFavorite, parseFolio, parseInvite, parseItem, parseProfile, safeNext } from "../lib/booking-live/validate.ts";
 
 const SB = { NEXT_PUBLIC_SUPABASE_URL: "https://x.supabase.co", NEXT_PUBLIC_SUPABASE_ANON_KEY: "k" };
 
@@ -71,6 +71,24 @@ test("profile: email and ids are never accepted", () => {
   assert.equal(parseProfile({ phone: "<script>" }).ok, false);
   assert.deepEqual(parseProfile({ firstName: "James", preferredCurrency: "ZAR" }), { ok: true, value: { first_name: "James", preferred_currency: "ZAR" } });
   assert.equal(parseProfile({}).ok, false);
+});
+
+test("parseFavorite: a ship, voyage, safari or route page is saved by its own path; the kind is read from the path", () => {
+  assert.deepEqual(parseFavorite({ item: { path: "/voyages/ships/star-breeze", title: "  Star   Breeze " } }), { ok: true, value: { item: { type: "ship", path: "/voyages/ships/star-breeze", title: "Star Breeze" } } });
+  assert.equal(favoriteItemType("/voyages/polar/classic-antarctica-air-cruise"), "voyage");
+  assert.equal(favoriteItemType("/safaris/sabi-sand/kirkmans-kamp"), "safari");
+  assert.equal(favoriteItemType("/overland/chile/atacama-to-patagonia"), "route");
+  for (const bad of ["/voyages/polar", "/stays/leeu-estates", "/account/trips", "//evil.test/a/b", "/voyages/ships/../x", "/voyages/ships/Star", "https://evil.test/voyages/ships/x", "/voyages/a/b/c", 7, null]) assert.equal(favoriteItemType(bad), null, String(bad));
+  assert.equal(parseFavorite({ item: { path: "/voyages/ships/star-breeze", title: "" } }).ok, false);
+  assert.equal(parseFavorite({ item: { path: "/voyages/ships/star-breeze", title: "Star Breeze", type: "stay" } }).ok, false);
+  assert.equal(parseFavorite({ item: { path: "/voyages/ships/star-breeze", title: "Star Breeze" }, property: "leeu-estates" }).ok, false);
+  assert.equal(parseFavorite({ item: "/voyages/ships/star-breeze" }).ok, false);
+});
+
+test("safeNext: a traveler returns to the voyage, safari or route they were saving", () => {
+  assert.equal(safeNext("/voyages/ships/star-breeze"), "/voyages/ships/star-breeze");
+  assert.equal(safeNext("/safaris/sabi-sand/kirkmans-kamp"), "/safaris/sabi-sand/kirkmans-kamp");
+  assert.equal(safeNext("/overland/chile/atacama-to-patagonia"), "/overland/chile/atacama-to-patagonia");
 });
 
 test("safeNext: same-site account and stay paths only (no open redirects)", () => {

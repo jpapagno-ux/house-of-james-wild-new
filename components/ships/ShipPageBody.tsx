@@ -26,6 +26,7 @@ import { offersFor, offerEnd } from "@/lib/content/offers/offers";
 import SignatureEdition from "@/components/ships/SignatureEdition";
 import { savingFor, timelessVoyageFor, type TimelessVoyage } from "@/lib/content/timeless-voyages";
 import TimelessStamp, { SavingNote, SavingStamp } from "@/components/ships/TimelessStamp";
+import SaveToFolio from "@/components/booking-live/SaveToFolio";
 
 // The ship page body, shared by /voyages/ships/<ship> and the opening previews (app/preview/voyages/*).
 export default async function ShipPageBody({ slug, opening: given, surface: givenSurface, tones: givenTones, timeless }: { slug: string; opening?: ReactNode; surface?: string; tones?: import("@/components/opening/Tones").Tones; /** A draft Timeless Voyages row, for the noindex previews only. */ timeless?: TimelessVoyage }) {
@@ -113,5 +114,5 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
   // an Exceptional Few ship, whose own entrance always wins.
   const sigPalette = tv?.signatureEdition && !ef ? (shipOpening(e)?.palette ?? null) : null;
   const signature = tv && sigPalette ? <SignatureEdition ship={rec} tv={tv} night={sigPalette.night} ink={sigPalette.sand ?? sigPalette.hi} /> : null;
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}{saving && !ef && <SavingNote saving={saving} operator={rec.operator} />}{signature}{glance}</>, after: <>{either}{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={ef} />;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}<SaveToFolio name={rec.name} item={{ path: shipPath(e.slug) }} />{saving && !ef && <SavingNote saving={saving} operator={rec.operator} />}{signature}{glance}</>, after: <>{either}{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}</> }} ef={ef} />;
 }

@@ -5,14 +5,14 @@ import { BookmarkPlus, BookmarkCheck } from "lucide-react";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { api } from "./client";
 
-// "Save to My Folio" on a stay page. A small client island: the stay page
-// stays fully static (titles, copy, JSON-LD untouched); this renders nothing
-// at all while the save flag is off. Signed-out travelers are sent to sign in
-// and returned to the same stay.
-export default function SaveToFolio({ slug, name, inline = false }: { slug: string; name: string; inline?: boolean }) {
+// "Save to My Folio" on a stay page, and on a ship, voyage, safari camp or overland route page (pass
+// `item`, the page's own path; James, 18 Nov 2026). A small client island: the page stays fully static
+// (titles, copy, JSON-LD untouched); this renders nothing at all while the save flag is off. Signed-out
+// travelers are sent to sign in and returned to the same page.
+export default function SaveToFolio({ slug, name, inline = false, item }: { slug?: string; name: string; inline?: boolean; item?: { path: string } }) {
   const [state, setState] = useState<"idle" | "saving" | "saved" | "signin" | "error">("idle");
   if (!FLAGS.save) return null;
-  const back = `/stays/${slug}`;
+  const back = item ? item.path : `/stays/${slug}`;
   return (
     <div className={inline ? "contents" : "pt-4 flex flex-wrap items-center gap-3"}>
       {state === "signin" ? (
@@ -22,7 +22,7 @@ export default function SaveToFolio({ slug, name, inline = false }: { slug: stri
           aria-live="polite"
           onClick={async () => {
             setState("saving");
-            const r = await api("/api/v1/me/favorites", "POST", { property: slug });
+            const r = await api("/api/v1/me/favorites", "POST", item ? { item: { path: item.path, title: name } } : { property: slug });
             setState(r.ok ? "saved" : r.code === "sign_in_required" ? "signin" : "error");
           }}>
           {state === "saved" ? <BookmarkCheck className="w-4 h-4" strokeWidth={1.5} /> : <BookmarkPlus className="w-4 h-4" strokeWidth={1.5} />}

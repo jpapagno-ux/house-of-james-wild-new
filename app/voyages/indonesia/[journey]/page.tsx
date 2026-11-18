@@ -22,6 +22,7 @@ import { partnerPath } from "@/lib/content/partners";
 import { volumeInk, volumeMark } from "@/lib/volumes";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
+import SaveToFolio from "@/components/booking-live/SaveToFolio";
 
 // /voyages/indonesia/<journey>: a signature charter journey shared by both Indonesian fleets (James,
 // 2 Nov 2026). The answer first; the route chart with the moving boat and a typical week, every day
@@ -71,6 +72,7 @@ export default async function JourneyPage({ params }: P) {
               <p className="ledger-eyebrow" style={{ color: ink }}>Wild &amp; Co Voyages · Charter the whole yacht</p>
               <h1 className="ledger-h1 mt-3">{j.name}</h1>
               <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">{t(j.line)}</p>
+              <SaveToFolio name={j.name} item={{ path }} />
               <dl className="mt-6 grid grid-cols-2 sm:grid-cols-4 border-t border-l ledger-border">
                 {[["Nights", `${j.nights}, a typical week`], ["From", j.embark.split(",")[0]], ["Best season", j.season.best], ["Yacht from", from ? `${usd(from)} a night` : "Ask us"]].map(([k, v]) => (
                   <div key={k} className="p-3 min-w-0 border-r border-b ledger-border"><dt className="ledger-eyebrow">{k}</dt><dd className="mt-1 text-[14.5px] leading-snug">{v}</dd></div>

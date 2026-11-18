@@ -38,6 +38,7 @@ import { absoluteUrl, buildMetadata, fitTitle } from "@/lib/seo";
 import { graph, ids, imageObject } from "@/lib/schema";
 import { RESERVE_PHOTO_CREDIT } from "@/lib/content/reserves";
 import RateCardSection from "@/components/booking/RateCardSection";
+import SaveToFolio from "@/components/booking-live/SaveToFolio";
 
 // CAMP template (/safaris/[reserve]/[camp]): a lodge, camp or residence
 // inside a reserve, on its own page and always tied to its parent.
@@ -124,6 +125,7 @@ export default async function CampPage({ params }: { params: Promise<{ reserve: 
           {IGGI_ON && <IggiPanel ctx={{ entityType: "stay", entitySlug: c.slug, countrySlug: r.stay.countrySlug, regionSlug: r.stay.regionSlug, ledgerId: c.ledgerId, sourcePage: path, volume: "safaris" }} heading={`Ask Iggi about ${c.name}`} />}
           <FaqBlock faqs={faqs} title={`${c.name}, Answered Straight`} schema={false} /> {/* generated from Ledger facts, not AEO-approved Q&A (D15) */}
           {verdict && <VerdictCard k={`camp:${r.slug}/${c.slug}`} name={c.name} v={verdict} stamp={entryNo(r.stay.ledgerId) ? <InkStamp volume="safaris" no={entryNo(r.stay.ledgerId)!} size={170} /> : undefined} />}
+          <SaveToFolio name={c.name} item={{ path }} />
           <TalkToUs name={c.name} planHref={planHref} />
           {host.state !== "off" && !(host.state === "available" && host.host) && <LiveHostPanel pageKey={`camp:${r.slug}/${c.slug}`} initial={host} stayName={c.name} kind={c.kind === "residence" ? "residence" : "camp"} />}
           <div id="plan" className=""><PlanBand place={`${c.name} on ${r.name}`} compassHref={rpath} where={{ ledgerId: c.ledgerId, countrySlug: r.stay.countrySlug, volume: "safaris" }} /></div>

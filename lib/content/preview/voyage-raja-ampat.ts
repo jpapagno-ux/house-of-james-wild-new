@@ -10,10 +10,10 @@ const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 export const SAMPLE_VOYAGE_ITINERARY = {
   name: "10 Day Raja Ampat North",
   vessel: "Aliikai Voyage",
-  ledgerId: "ITN-VSL-2026-000012",
+  ledgerId: "ITN-VSL-2026-302558",
   introQuote: "Set sail on a 10-day luxury voyage aboard Aliikai through Raja Ampat's legendary reefs and wild islands.",
   meta: [
-    ["Ledger ID", "ITN-VSL-2026-000012"],
+    ["Ledger ID", "ITN-VSL-2026-302558"],
     ["Vessel", "Aliikai Voyage · STY-registered phinisi"],
     ["Waters", "Raja Ampat, West Papua · Indonesia"],
     ["Duration", "10 days / 9 nights"],

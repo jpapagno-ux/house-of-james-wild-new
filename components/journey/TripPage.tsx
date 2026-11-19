@@ -38,6 +38,8 @@ import RouteScrollSync from "./RouteScrollSync";
 import { SuitedMark, SuitedRow } from "@/components/ledger/SuitedIcon";
 import { suitedKey } from "@/lib/suited";
 import { VOLUME_STYLES } from "@/lib/volumes";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
 import NoDates from "@/components/ships/NoDates";
@@ -615,6 +617,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           {order}
           <SessionsFor sessions={sessionsFor(T.seo.path)} name={T.h1} />
           <FaqBlock faqs={T.faqs.map(([q, a]) => ({ q, a }))} title={voyage ? "Questions About This Voyage" : "Questions About This Route"} />
+          {/* Iggi on every voyage page (James, 19 Nov 2026): the Core is told the page is a voyage, its ITN-VSL
+              Ledger ID (pinned in the excerpts) and its waters, so he answers from this route's record first. */}
+          {voyage && IGGI_ON && <IggiPanel ctx={{ entityType: "voyage", entitySlug: T.id, ledgerId: ledgerRef || null, countrySlug: place?.key ?? null, sourcePage: T.seo.path, volume: "voyages" }} heading={`Ask Iggi about ${T.crumbs.at(-1) ?? "this voyage"}`} />}
           {Related}
           {place && leadFor(place.key) && <PlanBand place={place.name} compassHref="/compass" where={{ countrySlug: place.key, volume: "voyages" }} />}
           {Enquire}

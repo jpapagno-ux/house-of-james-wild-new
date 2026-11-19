@@ -170,12 +170,12 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0,
+   "graze": true,
    "charted": [
     -4.3311,
     48.0944
-   ],
-   "clear": 0,
-   "graze": true
+   ]
   },
   {
    "day": 6,

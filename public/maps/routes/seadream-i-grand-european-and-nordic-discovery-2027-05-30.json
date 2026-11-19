@@ -217,11 +217,11 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0.92,
    "charted": [
     -2.535,
     49.455
-   ],
-   "clear": 0.92
+   ]
   },
   {
    "day": 7,
@@ -292,11 +292,11 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0.36,
    "charted": [
     4.3997,
     51.2211
-   ],
-   "clear": 0.36
+   ]
   },
   {
    "day": 8,
@@ -350,12 +350,12 @@
      52.0857
     ]
    ],
+   "lane": "sea",
+   "clear": 1.18,
    "charted": [
     4.4778,
     51.9244
-   ],
-   "lane": "sea",
-   "clear": 1.18
+   ]
   },
   {
    "day": 9,
@@ -441,11 +441,11 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0.85,
    "charted": [
     9.45,
     54.15
-   ],
-   "clear": 0.85
+   ]
   },
   {
    "day": 11,
@@ -888,11 +888,11 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0.14,
    "charted": [
     6.0068,
     59.987
-   ],
-   "clear": 0.14
+   ]
   },
   {
    "day": 16,
@@ -1011,11 +1011,11 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0.03,
    "charted": [
     5.3259,
     60.3943
-   ],
-   "clear": 0.03
+   ]
   },
   {
    "day": 17,
@@ -1174,11 +1174,11 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0.17,
    "charted": [
     6.5941,
     61.035
-   ],
-   "clear": 0.17
+   ]
   },
   {
    "day": 18,
@@ -1309,11 +1309,11 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0.38,
    "charted": [
     6.8072,
     61.8352
-   ],
-   "clear": 0.38
+   ]
   },
   {
    "day": 19,
@@ -1400,11 +1400,11 @@
     ]
    ],
    "lane": "sea",
+   "clear": 0.12,
    "charted": [
     5.1129,
     61.9337
-   ],
-   "clear": 0.12
+   ]
   },
   {
    "day": 19,
@@ -1610,12 +1610,12 @@
     ]
    ],
    "lane": "sea",
+   "graze": true,
+   "clear": 0,
    "charted": [
     12.2116,
     65.4749
-   ],
-   "graze": true,
-   "clear": 0
+   ]
   },
   {
    "day": 22,
@@ -1988,11 +1988,11 @@
    ],
    "kind": "port",
    "lane": "sea",
+   "clear": 0.03,
    "charted": [
     18.9559,
     69.6516
-   ],
-   "clear": 0.03
+   ]
   }
  ],
  "map_note": "Course and positions approximate, not a navigational chart",

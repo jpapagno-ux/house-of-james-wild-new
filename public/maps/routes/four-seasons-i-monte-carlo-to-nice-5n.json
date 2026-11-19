@@ -44,12 +44,12 @@
      44.3035
     ]
    ],
+   "lane": "sea",
+   "clear": 2.22,
    "charted": [
     9.2119,
     44.3023
-   ],
-   "lane": "sea",
-   "clear": 2.22
+   ]
   },
   {
    "day": 3,
@@ -104,12 +104,12 @@
      43.5394
     ]
    ],
+   "lane": "sea",
+   "clear": 1.1,
    "charted": [
     7.0392,
     43.5418
-   ],
-   "lane": "sea",
-   "clear": 1.1
+   ]
   },
   {
    "day": 5,
@@ -291,12 +291,12 @@
     ]
    ],
    "kind": "port",
+   "lane": "sea",
+   "clear": 0.52,
    "charted": [
     7.2862,
     43.6939
-   ],
-   "lane": "sea",
-   "clear": 0.52
+   ]
   }
  ],
  "map_note": "Course and positions approximate, not a navigational chart",

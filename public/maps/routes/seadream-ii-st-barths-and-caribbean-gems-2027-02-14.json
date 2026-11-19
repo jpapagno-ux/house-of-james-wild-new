@@ -66,12 +66,12 @@
      18.1998
     ]
    ],
+   "lane": "sea",
+   "clear": 0.99,
    "charted": [
     -63.0902,
     18.1998
-   ],
-   "lane": "sea",
-   "clear": 0.99
+   ]
   },
   {
    "day": 2,
@@ -117,12 +117,12 @@
      17.8933
     ]
    ],
+   "lane": "sea",
+   "clear": 1.07,
    "charted": [
     -62.8508,
     17.8957
-   ],
-   "lane": "sea",
-   "clear": 1.07
+   ]
   },
   {
    "day": 4,
@@ -152,12 +152,12 @@
      17.1338
     ]
    ],
+   "lane": "sea",
+   "clear": 1.04,
    "charted": [
     -62.6244,
     17.1338
-   ],
-   "lane": "sea",
-   "clear": 1.04
+   ]
   },
   {
    "day": 5,
@@ -238,12 +238,12 @@
      18.45
     ]
    ],
+   "lane": "sea",
+   "clear": 0.74,
    "charted": [
     -64.4346,
     18.4464
-   ],
-   "lane": "sea",
-   "clear": 0.74
+   ]
   },
   {
    "day": 6,
@@ -356,12 +356,12 @@
      18.312
     ]
    ],
+   "lane": "sea",
+   "clear": 0.58,
    "charted": [
     -64.6132,
     18.3156
-   ],
-   "lane": "sea",
-   "clear": 0.58
+   ]
   },
   {
    "day": 8,
@@ -404,12 +404,12 @@
     ]
    ],
    "kind": "port",
+   "lane": "sea",
+   "clear": 0.21,
    "charted": [
     -64.9189,
     18.3429
-   ],
-   "lane": "sea",
-   "clear": 0.21
+   ]
   }
  ],
  "map_note": "Course and positions approximate, not a navigational chart",

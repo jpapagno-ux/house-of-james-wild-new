@@ -62,12 +62,12 @@
      37.3117
     ]
    ],
+   "lane": "sea",
+   "clear": 1.22,
    "charted": [
     23.4664,
     37.3321
-   ],
-   "lane": "sea",
-   "clear": 1.22
+   ]
   },
   {
    "day": 3,
@@ -156,11 +156,11 @@
      38.3835
     ]
    ],
+   "lane": "passage",
    "charted": [
     22.383,
     38.3775
-   ],
-   "lane": "passage"
+   ]
   },
   {
    "day": 4,
@@ -230,12 +230,12 @@
      38.4561
     ]
    ],
+   "lane": "sea",
+   "clear": 0.57,
    "charted": [
     20.5752,
     38.4609
-   ],
-   "lane": "sea",
-   "clear": 0.57
+   ]
   },
   {
    "day": 5,
@@ -257,12 +257,12 @@
      38.625
     ]
    ],
+   "lane": "sea",
+   "clear": 0.34,
    "charted": [
     20.6813,
     38.625
-   ],
-   "lane": "sea",
-   "clear": 0.34
+   ]
   },
   {
    "day": 7,
@@ -384,12 +384,12 @@
      42.4465
     ]
    ],
+   "lane": "sea",
+   "clear": 0.01,
    "charted": [
     18.7713,
     42.4249
-   ],
-   "lane": "sea",
-   "clear": 0.01
+   ]
   },
   {
    "day": 7,
@@ -491,12 +491,12 @@
      42.6395
     ]
    ],
+   "lane": "sea",
+   "clear": 0.07,
    "charted": [
     18.094,
     42.6491
-   ],
-   "lane": "sea",
-   "clear": 0.07
+   ]
   },
   {
    "day": 9,
@@ -550,12 +550,12 @@
      43.5803
     ]
    ],
+   "lane": "sea",
+   "clear": 1.28,
    "charted": [
     15.9228,
     43.5863
-   ],
-   "lane": "sea",
-   "clear": 1.28
+   ]
   },
   {
    "day": 10,
@@ -589,12 +589,12 @@
      45.079
     ]
    ],
+   "lane": "sea",
+   "clear": 1.97,
    "charted": [
     13.6343,
     45.0826
-   ],
-   "lane": "sea",
-   "clear": 1.97
+   ]
   },
   {
    "day": 11,
@@ -644,12 +644,12 @@
      45.5309
     ]
    ],
+   "lane": "sea",
+   "clear": 1.05,
    "charted": [
     13.5684,
     45.5285
-   ],
-   "lane": "sea",
-   "clear": 1.05
+   ]
   },
   {
    "day": 12,
@@ -676,12 +676,12 @@
     ]
    ],
    "kind": "port",
+   "lane": "sea",
+   "clear": 0.41,
    "charted": [
     12.3346,
     45.4372
-   ],
-   "lane": "sea",
-   "clear": 0.41
+   ]
   }
  ],
  "map_note": "Course and positions approximate, not a navigational chart",

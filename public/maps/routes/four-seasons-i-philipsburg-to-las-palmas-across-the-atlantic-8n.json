@@ -81,12 +81,12 @@
     ]
    ],
    "kind": "port",
+   "lane": "sea",
+   "clear": 1.31,
    "charted": [
     -15.423,
     28.1401
-   ],
-   "lane": "sea",
-   "clear": 1.31
+   ]
   }
  ],
  "map_note": "Course and positions approximate, not a navigational chart",

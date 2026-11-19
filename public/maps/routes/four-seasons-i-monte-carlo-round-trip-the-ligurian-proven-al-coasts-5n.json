@@ -43,12 +43,12 @@
      44.3035
     ]
    ],
+   "lane": "sea",
+   "clear": 2.22,
    "charted": [
     9.2119,
     44.3023
-   ],
-   "lane": "sea",
-   "clear": 2.22
+   ]
   },
   {
    "day": null,

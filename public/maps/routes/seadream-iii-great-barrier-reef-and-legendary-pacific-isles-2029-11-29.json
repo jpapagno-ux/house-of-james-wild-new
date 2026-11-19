@@ -74,12 +74,12 @@
      -19.2497
     ]
    ],
+   "lane": "sea",
+   "clear": 1.13,
    "charted": [
     146.824,
     -19.2569
-   ],
-   "lane": "sea",
-   "clear": 1.13
+   ]
   },
   {
    "day": 3,
@@ -168,12 +168,12 @@
      -20.2641
     ]
    ],
+   "lane": "sea",
+   "clear": 0.23,
    "charted": [
     148.7181,
     -20.2725
-   ],
-   "lane": "sea",
-   "clear": 0.23
+   ]
   },
   {
    "day": 5,
@@ -255,12 +255,12 @@
      -21.6392
     ]
    ],
+   "lane": "sea",
+   "clear": 0.95,
    "charted": [
     150.27,
     -21.65
-   ],
-   "lane": "sea",
-   "clear": 0.95
+   ]
   },
   {
    "day": 6,
@@ -322,12 +322,12 @@
      -23.1662
     ]
    ],
+   "lane": "sea",
+   "clear": 0.8,
    "charted": [
     150.9571,
     -23.1734
-   ],
-   "lane": "sea",
-   "clear": 0.8
+   ]
   },
   {
    "day": 7,
@@ -373,12 +373,12 @@
      -24.1179
     ]
    ],
+   "lane": "sea",
+   "clear": 0.78,
    "charted": [
     152.715,
     -24.1131
-   ],
-   "lane": "sea",
-   "clear": 0.78
+   ]
   },
   {
    "day": 8,
@@ -420,12 +420,12 @@
      -27.3935
     ]
    ],
+   "lane": "sea",
+   "clear": 0.17,
    "charted": [
     153.0235,
     -27.469
-   ],
-   "lane": "sea",
-   "clear": 0.17
+   ]
   },
   {
    "day": 10,
@@ -479,12 +479,12 @@
      -29.0194
     ]
    ],
+   "lane": "sea",
+   "clear": 0.03,
    "charted": [
     167.9648,
     -29.0362
-   ],
-   "lane": "sea",
-   "clear": 0.03
+   ]
   },
   {
    "day": 13,
@@ -593,12 +593,12 @@
      -36.2078
     ]
    ],
+   "lane": "sea",
+   "clear": 0.65,
    "charted": [
     175.4173,
     -36.1994
-   ],
-   "lane": "sea",
-   "clear": 0.65
+   ]
   },
   {
    "day": 15,
@@ -660,12 +660,12 @@
      -36.7835
     ]
    ],
+   "lane": "sea",
+   "clear": 0.81,
    "charted": [
     175.0884,
     -36.7931
-   ],
-   "lane": "sea",
-   "clear": 0.81
+   ]
   },
   {
    "day": 16,
@@ -704,12 +704,12 @@
     ]
    ],
    "kind": "port",
+   "lane": "sea",
+   "clear": 0.33,
    "charted": [
     174.7632,
     -36.8521
-   ],
-   "lane": "sea",
-   "clear": 0.33
+   ]
   }
  ],
  "map_note": "Course and positions approximate, not a navigational chart",

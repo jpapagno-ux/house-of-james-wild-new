@@ -1,4 +1,6 @@
 import Link from "next/link";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import { ArrowRight, Check, X } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
@@ -223,6 +225,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
           {!tones && operatorBlock}
 
           <Band t={tones} tone="night"><LiveHostPanel pageKey={`voyage:${v.slug}`} initial={hostFor(`voyage:${v.slug}`)} stayName={v.name} kind="vessel" /></Band>
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "voyage", entitySlug: v.slug, countrySlug: "antarctica", sourcePage: `/voyages/polar/${v.slug}`, volume: "voyages" }} heading={`Ask Iggi about the ${v.name}`} lead={`Starts ${v.start.place}, ends ${v.end.place}. Ask about the crossing, what to pair before or after, and getting there.`} />}
           <FaqBlock faqs={v.faqs.map(([q, a]) => ({ q: t(q), a: t(a) }))} title={`What Else Should You Know About the ${v.name}?`} icon={tones ? "frond" : undefined} />
         </div>
       </main>

@@ -1,4 +1,6 @@
 import WhiteDesertCallout from "@/components/polar/WhiteDesertCallout";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
@@ -134,6 +136,7 @@ export default function PolarPage() {
           <p className="mt-4 text-[15px]"><Link href="/partners/antarctica21" className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: ink }}>Who is Antarctica21, and why the house works with it<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></p>
         </section>
 
+        {IGGI_ON && <IggiPanel ctx={{ entityType: "region", entitySlug: "polar", countrySlug: "antarctica", sourcePage: "/voyages/polar", volume: "voyages" }} heading="Ask Iggi about going south" />}
         <FaqBlock faqs={FAQS} title="What Should You Know Before You Go South?" />
       </HubShell>
       <JsonLd data={graph({

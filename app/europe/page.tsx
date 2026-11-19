@@ -1,4 +1,6 @@
 import Link from "next/link";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import VolumeEntrance from "@/components/entrance/VolumeEntrance";
 import { ENTRANCES } from "@/lib/content/entrances";
@@ -87,6 +89,7 @@ export default function EuropeHub() {
         {region && <HubSection eyebrow="On the chart" title="Europe, Pinned" id="map-h" more={{ label: "The Europe region page", href: "/destinations/europe" }}><p className="-mt-4 text-[16px] ledger-muted max-w-2xl">Every Other Europe stay with a position on file is pinned on the region chart, country by country, with the Greek islands and Mallorca open now.</p></HubSection>}
 
         <AdvisorScroll volume="europe" title="Who knows Other Europe" />
+        {IGGI_ON && <div className="max-w-ledger mx-auto px-5 md:px-10"><IggiPanel ctx={{ entityType: "region", entitySlug: "europe", regionSlug: "europe", sourcePage: PATH, volume: "europe" }} heading="Ask Iggi about Other Europe" lead="Ask which small town or valley fits you, what to pair with a river week, and how the house moves you between them." /></div>}
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Other Europe", mainEntity: { "@type": "ItemList", itemListElement: EU.map((s, i) => ({ "@type": "ListItem", position: i + 1, name: s.name, url: absoluteUrl(recordHref("stay", s.slug)) })) } })} />
     </>

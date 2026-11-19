@@ -9,6 +9,8 @@ export type CountryData = {
   ledgerId?: string | null; // DST-… from the Library (sole issuer)
   // A destination card (no stay pages yet) may have no photograph on file: src is null, never a stand-in.
   subtitle: string; leading: string; hero: { src: string | null; alt: string };
+  /** More full-screen photographs for the hero, shown after `hero` and before the stays' own (HOUSE_HEROES). */
+  heroSlides?: { src: string; alt: string; caption?: string }[];
   story: { eyebrow: string; title: string; blocks: { h?: string; p: string }[]; image: { src: string | null; alt: string } }[];
   /** Destination card (James, 1 Nov 2026): the country is on the site before its stays are filed.
    *  The page shows "stays coming soon, plan with James" instead of stay counts and empty sections. */
@@ -105,6 +107,35 @@ const HAND: CountryData[] = [
 
 // Country pages generated from the library (scripts/export-countries.py), 28 Oct 2026.
 const FROM_LIBRARY = (LIBRARY.countries as unknown as (CountryData & { atlasName?: string })[]).map(({ atlasName: _a, ...c }) => c as CountryData);
-export const COUNTRIES: CountryData[] = [...HAND.map((h) => ({ ...h, ledgerId: h.ledgerId ?? FROM_LIBRARY.find((c) => c.slug === h.slug)?.ledgerId ?? null })), ...FROM_LIBRARY.filter((c) => !HAND.some((h) => h.slug === c.slug))];
+// House hero photographs (James, 16 Nov 2026): photographs James has cleared for a country's full-screen hero, held
+// once in the Cloudinary library (jwco/heroes/<country>) and delivered through its AI upscaler and auto improve, the
+// same chain as lib/content/sharpen.ts. They replace the library record's hero here, so a re-run of
+// scripts/export-countries.py never puts the old photograph back. The first is the hero (and the share image); the
+// rest follow it in the slider. A caption carries the photographer's credit where James asked for one.
+const HERO_CLD = (id: string) => `https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200,h_1200/e_upscale/e_improve/c_limit,w_2560/q_auto:good/f_jpg/${id}`;
+const HOUSE_HEROES: Record<string, { id: string; alt: string; caption?: string }[]> = {
+  philippines: [
+    { id: "jwco/heroes/philippines/coron-palawan-philippines-blue-lagoon-limestone-aerial", alt: "Aerial view of a deep blue lagoon ringed by reef and limestone karst cliffs in Coron, Palawan, Philippines", caption: "Coron, Palawan" },
+    { id: "jwco/heroes/philippines/coron-palawan-philippines-limestone-karst-lagoon-aerial", alt: "Aerial view of jagged grey limestone karst pinnacles above a dark blue lagoon in Coron, Palawan, Philippines", caption: "Coron, Palawan" },
+    { id: "jwco/heroes/philippines/coron-palawan-philippines-sandbar-island-bangka-aerial", alt: "Aerial view of a white sandbar islet on a turquoise reef with a bangka boat anchored offshore near Coron, Palawan, Philippines", caption: "Coron, Palawan" },
+  ],
+  iceland: [
+    { id: "jwco/heroes/iceland/iceland-highlands-moss-valley-glacier-storm-light", alt: "Moss green valley and river in the Icelandic highlands with a glacier under storm clouds beyond", caption: "The Icelandic highlands · Photograph by Ben Rehn" },
+    { id: "jwco/heroes/iceland/iceland-highlands-volcanic-peaks-braided-river-lake", alt: "Volcanic peaks, a braided river and a lake across black sand plains in the Icelandic highlands under broken cloud", caption: "The Icelandic highlands · Photograph by Ben Rehn" },
+    { id: "jwco/heroes/iceland/iceland-highlands-moss-hill-snow-streaked-mountains", alt: "A moss covered volcanic hill lit by sun beneath dark snow streaked mountains in the Icelandic highlands", caption: "The Icelandic highlands · Photograph by Ben Rehn" },
+    { id: "jwco/heroes/iceland/iceland-highlands-painted-slopes-lone-4x4", alt: "A lone 4x4 crossing green and rust striped slopes above a river canyon in the Icelandic highlands", caption: "The Icelandic highlands · Photograph by Ben Rehn" },
+  ],
+  chile: [
+    { id: "jwco/heroes/chile/atacama-desert-chile-sand-dunes-golden-hour-aerial", alt: "Aerial view of sculpted sand dunes in light and shadow at golden hour in the Atacama Desert, Chile", caption: "Atacama Desert" },
+    { id: "jwco/heroes/chile/atacama-desert-chile-volcanic-crater-salt-flat-sunrise-aerial", alt: "Aerial view of a volcanic cinder cone beside a salt flat with volcanoes on the horizon at first light in the Atacama Desert, Chile", caption: "Atacama Desert" },
+  ],
+};
+const withHouseHero = (c: CountryData): CountryData => {
+  const set = HOUSE_HEROES[c.slug];
+  if (!set?.length) return c;
+  const [first, ...rest] = set;
+  return { ...c, hero: { src: HERO_CLD(first.id), alt: first.alt }, heroSlides: [{ src: HERO_CLD(first.id), alt: first.alt, caption: first.caption }, ...rest.map((x) => ({ src: HERO_CLD(x.id), alt: x.alt, caption: x.caption }))] };
+};
+export const COUNTRIES: CountryData[] = [...HAND.map((h) => ({ ...h, ledgerId: h.ledgerId ?? FROM_LIBRARY.find((c) => c.slug === h.slug)?.ledgerId ?? null })), ...FROM_LIBRARY.filter((c) => !HAND.some((h) => h.slug === c.slug))].map(withHouseHero);
 
 export const countryBySlug = (region: string, slug: string) => COUNTRIES.find((c) => c.region === region && c.slug === slug);

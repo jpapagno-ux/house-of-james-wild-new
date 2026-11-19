@@ -108,7 +108,7 @@ export const POSTS: Record<string, JournalPost> = {
     keywords: ["Italian heritage journey", "Italian ancestry trip", "Naples ancestry", "Neapolitan roots", "heritage travel Italy", "hidden hotels in Italy", "family roots Italy", "Sextantio Le Grotte della Civita", "Locanda del Gallo", "Castello di Vicarello", "Capofaro Resort Salina", "Pension Briol"],
     about: ["Sassi of Matera", "Sextantio Le Grotte della Civita", "Locanda del Gallo", "Castello di Vicarello", "Capofaro Resort", "Salina", "Aeolian Islands", "Pension Briol", "South Tyrol", "Italian genealogy"],
     oldUrl: "/memoir/blog-tracing-my-italian-heritage-through-italys-hidden-stays",
-    approved: false, // ancestral town confirmed (Naples, 19 Nov 2026); James still to confirm the pull quote and send his blog photos
+    approved: true, // James, 19 Nov 2026: "Go ahead live"; pull quote approved; Naples confirmed; no blog photos, so the licensed hero stands
   },
   "auko-siempang-kaia-new-asia-stays": {
     slug: "auko-siempang-kaia-new-asia-stays",

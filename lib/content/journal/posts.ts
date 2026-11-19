@@ -78,10 +78,10 @@ export const POSTS: Record<string, JournalPost> = {
     seoTitle: "Five Hidden Hotels for an Italian Heritage Journey",
     description: "James Papagno traces his Italian roots through five character-rich stays in Matera, Umbria, Tuscany, Salina and South Tyrol, with practical advice on planning an ancestry trip and routing it by region.",
     dek: "Italy feels less like a destination and more like a return. Five stays that hold onto memory, and how to build an ancestry journey without rushing the country.",
-    answer: "An Italian heritage journey begins with the ancestral town, then uses character-rich regional stays to deepen the connection. These five properties span Matera, Umbria, Tuscany, Salina and South Tyrol and should be planned as separate regional chapters: Sextantio Le Grotte della Civita, Locanda del Gallo, Castello di Vicarello, Capofaro Resort and Pension Briol.",
+    answer: "An Italian heritage journey begins with the ancestral town (for James, Naples), then uses character-rich regional stays to deepen the connection. These five properties span Matera, Umbria, Tuscany, Salina and South Tyrol and should be planned as separate regional chapters: Sextantio Le Grotte della Civita, Locanda del Gallo, Castello di Vicarello, Capofaro Resort and Pension Briol.",
     place: "Italy",
     published: "2026-11-18",
-    modified: "2026-11-18",
+    modified: "2026-11-19",
     hero: { url: hi(`${ITA}/hero`), alt: "A narrow paved lane between tall ochre and terracotta houses with balconies and potted plants in an Italian town", w: 1920, h: 1279 },
     body: ITALIAN_HERITAGE_BODY,
     figures: [],
@@ -93,18 +93,22 @@ export const POSTS: Record<string, JournalPost> = {
       { q: "What are the best regions for an Italian heritage trip?", a: "Begin with the town or province connected to your family records. Basilicata, Campania, Calabria, Sicily, Puglia and Abruzzo are common origins for many Italian-American families, but ancestry journeys can lead anywhere in Italy." },
       { q: "How many nights should I allow in an ancestral village?", a: "Allow at least two or three nights in the area. Archive hours, local appointments and family conversations rarely fit neatly into a single day." },
       { q: "Do I need an ancestry researcher in Italy?", a: "Not always, but a local genealogist can help when records are incomplete, written in older Italian or Latin, or held in municipal and parish archives with limited access." },
-      { q: "Can James Wild & Co book these five Italian hotels?", a: "Not yet as Ledger stays. Each property has to be added, verified and approved before we book it. Tell us about your family story and the region you want to explore, and we will tell you where each one stands." },
+      { q: "Can James Wild & Co book these five Italian hotels?", a: "Castello di Vicarello, Capofaro and Pension Briol are in the Ledger now. Sextantio Le Grotte della Civita and Locanda del Gallo are still being verified. Tell us about your family story and the region you want to explore, and we will tell you where each one stands." },
       { q: "What is the best time for this type of Italy journey?", a: "Spring and early autumn often provide comfortable weather and fewer crowds. Island and mountain properties may operate seasonally, so confirm opening dates, ferries and local access before finalising the route." },
     ],
-    stays: [], // none of the five is in the Ledger yet (stays.json); link them once they pass House Review
+    stays: [ // Sextantio and Locanda del Gallo join when they pass House Review
+      { slug: "castello-di-vicarello", name: "Castello di Vicarello", line: "Maremma, Tuscany · a family-run 12th century castle", note: "New to the Ledger. Ten suites and a villa, restored over 18 years.", image: { url: hi("jwco/stays/italy/castello-di-vicarello/hero"), alt: "The pool below the castle tower at Castello di Vicarello", w: 1920, h: 1282 } },
+      { slug: "capofaro", name: "Capofaro", line: "Salina, Aeolian Islands · 23 rooms among the vines", note: "New to the Ledger. A lighthouse, Malvasia vines and Stromboli on the horizon.", image: { url: hi("jwco/stays/italy/capofaro/hero"), alt: "Capofaro among the vines on Salina, from the air", w: 2500, h: 1875 } },
+      { slug: "pension-briol", name: "Pension Briol", line: "Dreikirchen, South Tyrol · a car-free 1928 summer house", note: "New to the Ledger. Open May to October; shared bathrooms by design.", image: { url: hi("jwco/stays/italy/pension-briol/hero"), alt: "Pension Briol on the Dreikirchen mountain", w: 1622, h: 1081 } },
+    ],
     links: [
       { label: "Italy", href: "/destinations/europe/italy", line: "Every Italy stay in the Ledger." },
       { label: "Meet James", href: "/about/founder", line: "Forty-four years on the road." },
     ],
-    keywords: ["Italian heritage journey", "Italian ancestry trip", "heritage travel Italy", "hidden hotels in Italy", "family roots Italy", "Sextantio Le Grotte della Civita", "Locanda del Gallo", "Castello di Vicarello", "Capofaro Resort Salina", "Pension Briol"],
+    keywords: ["Italian heritage journey", "Italian ancestry trip", "Naples ancestry", "Neapolitan roots", "heritage travel Italy", "hidden hotels in Italy", "family roots Italy", "Sextantio Le Grotte della Civita", "Locanda del Gallo", "Castello di Vicarello", "Capofaro Resort Salina", "Pension Briol"],
     about: ["Sassi of Matera", "Sextantio Le Grotte della Civita", "Locanda del Gallo", "Castello di Vicarello", "Capofaro Resort", "Salina", "Aeolian Islands", "Pension Briol", "South Tyrol", "Italian genealogy"],
     oldUrl: "/memoir/blog-tracing-my-italian-heritage-through-italys-hidden-stays",
-    approved: false, // James reviews on the Proofs sheet before it is indexed (ancestral town and closing quote to confirm)
+    approved: false, // ancestral town confirmed (Naples, 19 Nov 2026); James still to confirm the pull quote and send his blog photos
   },
   "auko-siempang-kaia-new-asia-stays": {
     slug: "auko-siempang-kaia-new-asia-stays",

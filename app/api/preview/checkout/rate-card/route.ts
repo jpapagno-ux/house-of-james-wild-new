@@ -18,7 +18,9 @@ export async function GET(req: Request) {
     const sb = createClient(url, key, { auth: { persistSession: false } });
     const { data: prop } = await sb.from("properties").select("id, legacy_cms_id").eq("slug", slug).maybeSingle();
     if (!prop) return NextResponse.json({ card: null, reason: "no_property" });
-    const { data: cards } = await sb.from("rate_card_versions").select("id, version_label, source_revision, currency, payment_terms, cancellation, effective_from, effective_to, supplier_contract_reference, published_at").eq("property_id", prop.id).eq("status", "published").eq("is_sample", false).order("effective_from", { ascending: false }).limit(1);
+    // Only the columns visitors are granted (migration 20261101170000): asking for any other column fails the whole read.
+    const { data: cards, error } = await sb.from("rate_card_versions").select("id, version_label, source_revision, currency, payment_terms, cancellation, effective_from, effective_to, published_at").eq("property_id", prop.id).eq("status", "published").eq("is_sample", false).order("effective_from", { ascending: false }).limit(1);
+    if (error) return NextResponse.json({ card: null, reason: "read_refused" }, { headers: { "Cache-Control": "no-store" } });
     const card = cards?.[0];
     if (!card) return NextResponse.json({ card: null, reason: "no_published_card" }, { headers: { "Cache-Control": "no-store" } });
     const [{ data: rules }, { data: rooms }, { data: taxes }] = await Promise.all([

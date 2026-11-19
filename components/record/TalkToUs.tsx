@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { CalendarClock, Mail, PenLine, Phone } from "lucide-react";
+import IggiMark from "@/components/iggi/IggiMark";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import { SITE } from "@/lib/site";
 
 // "Talk to the house" — the four ways in, on every stay, camp and reserve,
@@ -48,7 +50,11 @@ export function ContactBar({ name, planHref, from }: { name: string; planHref: s
           <span className="ledger-display text-[1.05rem] truncate block">{name}</span>
         </div>
         <a href={`tel:${SITE.phone.tel}`} aria-label="Call the house" className="w-11 h-11 shrink-0 border ledger-border flex items-center justify-center" data-event="call_click"><Phone className="w-4 h-4" strokeWidth={1.5} /></a>
-        {SITE.email && <a href={`mailto:${SITE.email}?subject=${subject}`} aria-label="Email the house" className="w-11 h-11 shrink-0 border ledger-border flex items-center justify-center" data-event="email_click"><Mail className="w-4 h-4" strokeWidth={1.5} /></a>}
+        {/* Ask Iggi (James, 19 Nov 2026: "the screen seems to be hard to find"): one tap from anywhere on the page to the
+            chat; the email door stays in Talk to us above. */}
+        {IGGI_ON ? (
+          <a href="#iggi-chat" aria-label="Ask Iggi, the house's Field Guide" className="w-11 h-11 shrink-0 border ledger-border flex items-center justify-center text-coast" data-event="iggi_jump"><IggiMark size={26} decorative /></a>
+        ) : SITE.email && <a href={`mailto:${SITE.email}?subject=${subject}`} aria-label="Email the house" className="w-11 h-11 shrink-0 border ledger-border flex items-center justify-center" data-event="email_click"><Mail className="w-4 h-4" strokeWidth={1.5} /></a>}
         <Link href={planHref} className="ledger-btn ledger-btn--solid !h-11 shrink-0" data-event="enquire_click">Enquire</Link>
       </div>
     </div>
@@ -60,6 +66,7 @@ export function ContactPill({ name, planHref }: { name: string; planHref: string
   return (
     <div data-quiet-actions className="hidden lg:flex fixed bottom-6 right-6 z-30 items-center gap-3 bg-paper/95 backdrop-blur border ledger-border shadow-[0_8px_30px_rgba(0,0,0,0.12)] pl-4 pr-2 py-2">
       <span className="text-[13px]"><span className="ledger-eyebrow block !text-[9.5px]">Ask about {name.length > 26 ? "this place" : name}</span><a href={`tel:${SITE.phone.tel}`} className="hover:ledger-crimson" data-event="call_click">{SITE.phone.display}</a></span>
+      {IGGI_ON && <a href="#iggi-chat" className="ledger-btn-ghost !py-2 !px-2 inline-flex items-center gap-1.5 text-[13px]" data-event="iggi_jump"><IggiMark size={20} decorative />Ask Iggi</a>}
       <Link href={planHref} className="ledger-btn !py-2 !px-3.5" data-event="enquire_click">Enquire</Link>
     </div>
   );

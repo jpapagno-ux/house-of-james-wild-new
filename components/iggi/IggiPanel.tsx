@@ -144,6 +144,23 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
     return () => window.removeEventListener("message", onMessage);
   }, [ctx.sourcePage, ctx.advisor, folio]);
 
+  // The Ask Iggi door (#iggi-chat, from the phone bar and the desktop card): land with the chat fully in view under
+  // the sticky header, not the heading. CSS scroll-margin alone landed short on phones (19 Nov 2026).
+  useEffect(() => {
+    const go = () => {
+      if (location.hash !== "#iggi-chat") return;
+      const el = document.getElementById("iggi-chat");
+      if (!el) return;
+      const header = document.querySelector("header");
+      const offset = (header ? header.getBoundingClientRect().height : 120) + 8;
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    };
+    const t = setTimeout(go, 50);
+    window.addEventListener("hashchange", go);
+    return () => { clearTimeout(t); window.removeEventListener("hashchange", go); };
+  }, []);
+
   const planHref = folio ? toLocal(folio.plan) : null;
   return (
     <section ref={hostRef} id="iggi" className="mt-12 md:mt-24 border-t ledger-rule pt-6 md:pt-10 scroll-mt-32" aria-labelledby="iggi-heading" data-iggi-panel>
@@ -155,7 +172,7 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
           <p className="mt-2 text-[14.5px] md:text-[16px] ledger-muted max-w-2xl leading-relaxed">{lead ?? "Iggi answers from the Ledger and says where each answer comes from. Prices, availability and bookings go to a person."}</p>
         </div>
       </div>
-      <div className="mt-4 md:mt-6 bg-paper-card iggi-frame">
+      <div id="iggi-chat" className="mt-4 md:mt-6 bg-paper-card iggi-frame scroll-mt-[136px] md:scroll-mt-40">
         {src ? (
           <iframe
             ref={frameRef}

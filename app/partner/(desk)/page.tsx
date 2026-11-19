@@ -5,6 +5,7 @@ import { portfolioScore, type HealthCheck } from "@/lib/platform/completeness";
 import { REQUEST_STATUS, REQUEST_TYPE, SUBMISSION_STATUS, niceDate } from "@/lib/platform/labels";
 import { VOLUME_STYLES, volumeInk, type VolumeKey } from "@/lib/volumes";
 import { CheckLine, Empty, HealthRing, PageHead, Panel, Section, StatusPill, TextLink } from "@/components/platform/ui";
+import { loadSetup } from "@/lib/platform/setup-load";
 
 export const metadata = { title: "Overview" };
 
@@ -44,11 +45,18 @@ export default async function Overview() {
   const byVol = ORDER.map((k) => ({ k, list: entities.filter((e) => (e.volume_key ?? "stays") === k) })).filter((g) => g.list.length);
   const rates = entities.map((e) => ({ e, c: h.get(e.id)?.checks.find((c) => c.key === "rates") })).filter((x) => x.c && x.c.state !== "ok");
   const viewing = desk.house && !desk.membership;
+  const setup = await loadSetup(desk);
 
   return (
     <div>
       <PageHead eyebrow={viewing ? "Overview · viewing as James Wild & Co" : "Overview"} title={desk.org.name}
         lead={<>What the house holds for you, what it has asked for, and what is waiting for review. Nothing you send changes the website until James Wild &amp; Co approves it.</>} />
+      {!setup.finished && (
+        <Link href="/partner/setup" className="mt-6 flex flex-wrap items-center justify-between gap-4 border ledger-border border-l-2 border-l-[#8B2525] bg-white px-5 py-4 hover:bg-[#F7F5F2]">
+          <span><span className="ledger-eyebrow block">Set-up · {setup.progress.done} of {setup.progress.total} steps</span><span className="ledger-display text-[1.25rem]">{setup.progress.done === 0 ? "Start setting up your desk" : "Finish setting up your desk"}</span></span>
+          <span className="ledger-btn ledger-btn--solid">Continue</span>
+        </Link>
+      )}
 
       <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-[1fr_1.15fr]">
         <Panel>

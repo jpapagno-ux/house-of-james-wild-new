@@ -9,6 +9,7 @@ export default function DeskIndex() {
   const doors = [
     ...(FLAGS.quotes ? [{ href: "/desk/bookings", title: "Bookings", line: "Requests to reserve, holds, bookings and payments." }] : []),
     ...(PARTNER_DESK ? [
+      { href: "/desk/partners", title: "Partners", line: "Requests to join, invitations, and every partner with who has signed in." },
       { href: "/desk/review", title: "Partner review", line: "Submissions and proposed changes from partners." },
       { href: "/desk/commission", title: "Price and commission check", line: "Price a stay and see the commission, the advisor's share and the house's." },
     ] : []),

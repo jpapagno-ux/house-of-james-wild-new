@@ -17,6 +17,7 @@ export default async function DeskLayout({ children }: { children: React.ReactNo
     .eq("organization_id", desk.org.id).in("status", ["open", "changes_requested"]);
   const items: RailItem[] = [
     { href: "/partner", label: "Overview" },
+    { href: "/partner/setup", label: "Set-up" },
     { href: "/partner/portfolio", label: "My Portfolio" },
     { href: "/partner/content", label: "Content" },
     { href: "/partner/rooms", label: "Rooms & Accommodation" },

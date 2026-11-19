@@ -16,7 +16,7 @@ export default async function Account({ searchParams }: { searchParams: Promise<
   return (
     <div>
       <PageHead eyebrow="Account" title="You and your company" />
-      {sp.welcome && <div className="mt-6"><Notice tone="good" title="Welcome to the desk">Choose a password below so you can sign in directly next time.</Notice></div>}
+      {sp.welcome && <div className="mt-6"><Notice tone="good" title="Welcome to the desk">Choose a password below so you can sign in directly next time. Then <a href="/partner/setup" className="underline underline-offset-2">set up your desk</a>: a short checklist of everything the house holds for you.</Notice></div>}
       <div className="grid grid-cols-1 gap-x-10 lg:grid-cols-2">
         <Section title="You">
           <DataList rows={[["Email", desk.user.email ?? "—"], ["Role", desk.membership ? ROLE_LABEL[desk.membership.role] : "James Wild & Co"]]} />

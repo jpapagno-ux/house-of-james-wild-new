@@ -9,14 +9,14 @@ const FEATS50 = feature(topo, topo.objects.countries).features;
 // Small islands framed close (Ibiza) draw from the 1:10m stock, as the region insets do; at 1:50m the coast is a polygon.
 const topo10 = require("world-atlas/countries-10m.json");
 const FEATS10 = feature(topo10, topo10.objects.countries).features;
-const FINE = new Set(["spain-ibiza"]);
+const FINE = new Set(["spain-ibiza", "spain-isla-mallorca"]);
 const countries = require("../lib/content/countries-library.json").countries;
 const stays = require("../lib/content/stays.json").stays;
 
 const W = 1000;
 // Hand-set frames where the stays sit in one corner of a scattered country (Society Islands, not the Marquesas).
 // Ibiza: the island, not the whole of Spain.
-const FRAME = { tahiti: [-152.4, -18.0, -147.4, -14.6], "spain-ibiza": [1.05, 38.75, 1.85, 39.2] };
+const FRAME = { tahiti: [-152.4, -18.0, -147.4, -14.6], "spain-ibiza": [1.05, 38.75, 1.85, 39.2], "spain-isla-mallorca": [2.25, 39.22, 3.55, 40.02] };
 // Place names drawn on a country's chart (lat, lng, text; the text starts at the point). Set by hand,
 // sparingly, where the stays sit far apart (Guatemala, 1 Nov 2026: the Petén and the highlands).
 const AREAS = {

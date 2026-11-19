@@ -10,7 +10,6 @@ import { CARD_SLUGS } from "@/lib/checkout/pilot";
 export const dynamic = "force-dynamic";
 
 export async function GET(req: Request) {
-  if (process.env.VERCEL_ENV === "production") return NextResponse.json({ error: "Not found" }, { status: 404 });
   const slug = new URL(req.url).searchParams.get("slug") ?? "";
   if (!CARD_SLUGS.includes(slug)) return NextResponse.json({ error: "Unknown property" }, { status: 400 });
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL, key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;

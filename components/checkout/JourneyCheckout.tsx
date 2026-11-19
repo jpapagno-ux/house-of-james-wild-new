@@ -183,9 +183,10 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
     return out;
   }
   function loadExample() {
-    setLines(exampleLines()); setResults({}); setMethods({}); setOpen(null); setHelp(false);
+    const ex = exampleLines();
+    setLines(ex); setResults({}); setMethods({}); setOpen(null); setHelp(false);
     setLead({ first: "Ada", last: "Example", email: "ada@example.com", phone: "", country: "United States" });
-    go(1); setNotice("An example journey is loaded: a room, a residence, a safari suite on a rate card, a voyage and a land journey. Change anything, or carry on to Review.");
+    go(1); setNotice(ex.length === 1 ? `An example stay is loaded: ${ex[0].name}. Change anything, or carry on to Review.` : "An example journey is loaded: a room, a residence, a safari suite on a rate card, a voyage and a land journey. Change anything, or carry on to Review.");
   }
 
   function go(n: number) {
@@ -378,7 +379,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
           {step === 0 && (
             <>
               <Head n={1} title="Build Your Journey">Choose the chapters of the journey: houses and rooms, whole villas and residences, a voyage south, or a land journey the house has already drawn. Add as many as you like, in any order. A price appears only where its source answers today.</Head>
-              <div className="mb-5 flex flex-wrap gap-2" role="group" aria-label="Show">
+              <div className={`mb-5 flex-wrap gap-2 ${catalogue.products.length > 1 ? "flex" : "hidden"}`} role="group" aria-label="Show">
                 {FILTERS.map(([k, label]) => <button key={k} type="button" aria-pressed={filter === k} className={`house-chip ${filter === k ? "house-chip--primary" : ""}`} onClick={() => setFilter(k)}>{label}</button>)}
               </div>
               <div className="space-y-5">
@@ -693,7 +694,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
             <ul className="mt-4 space-y-1.5 text-[14px] ledger-muted list-disc pl-5">
               <li>The link carries what was chosen: chapters, dates, rooms and guests. It carries no names, no email and no prices.</li>
               <li>Every price is asked again from its source when the client opens it. A live room on the booking engine is chosen again with its live price.</li>
-              <li>This preview sits behind the team sign-in, so for now the link opens only for people on the team.</li>
+              <li>The link opens for anyone you send it to. It is still a preview: nothing is booked or paid from it.</li>
             </ul>
             <div className="mt-5 flex flex-wrap gap-x-8 gap-y-3"><button type="button" className="ledger-btn ledger-btn--house" onClick={sendToClient}>Copy link again</button><a className="ledger-btn" href={`mailto:?subject=${encodeURIComponent("Your journey with James Wild & Co")}&body=${encodeURIComponent(`Here is the journey we discussed. Open it to review each chapter:\n\n${share.url}\n\n${adv.name}\nJames Wild & Co`)}`}>Open in email</a></div>
           </div>

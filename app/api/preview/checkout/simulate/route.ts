@@ -4,11 +4,10 @@ import { hasCardLikeData, simulatePayment, type SimRequest } from "@/lib/checkou
 // POST /api/preview/checkout/simulate  (Journey Cart preview, Session 03)
 // A stand-in for a payment provider. It holds no keys, calls no network, moves no money and writes
 // nothing. It answers deterministically from the idempotency key, so a repeated request is the same
-// transaction. Anything shaped like card data is refused. It does not exist in Production.
+// transaction. Anything shaped like card data is refused. Open on the live site since 19 Nov 2026 with the page; it moves no money anywhere.
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
-  if (process.env.VERCEL_ENV === "production") return NextResponse.json({ error: "Not found" }, { status: 404 });
   const raw = await req.text();
   if (raw.length > 2000) return NextResponse.json({ error: "Request too large" }, { status: 413 });
   let body: unknown;

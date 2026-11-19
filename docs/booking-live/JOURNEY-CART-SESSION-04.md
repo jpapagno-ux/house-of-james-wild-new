@@ -136,7 +136,7 @@ nothing runs it. Until then, a link only works for someone who can open the prev
 | Commission stays in Advisor Rates & Commissions | Pass. Estimated lines pass no base |
 | No Florida sales tax | Pass |
 | No personal data in a URL | Pass. Verified by test |
-| Preview only, 404 in production, noindex | Pass, unchanged |
+| Never indexed, never linked from the site | Pass. Open on the live site from Round 2, see section 11 |
 | House rules: palette, buttons, no dashes, no outbound links | Pass. `mailto:` opens the user's own mail, it is not a link to an operator |
 | Tests | 393 passing, 16 in the cart file (4 new) |
 | Type check, lint, production build | Pass |
@@ -165,7 +165,7 @@ nothing runs it. Until then, a link only works for someone who can open the prev
 
 ## 9. SEO and AEO
 
-Nothing here is indexed: the route is noindex and a 404 in production, and that is correct for a checkout.
+Nothing here is indexed: the route is noindex and unlinked, and that is correct for a checkout.
 The marketing value is in what this logic lets the public pages say truthfully once it goes live:
 
 - **Answer engines favour pages that state how to book in one plain sentence.** Each stay page can carry a single line
@@ -185,3 +185,26 @@ The marketing value is in what this logic lets the public pages say truthfully o
 2. Payment provider for the sandbox.
 3. The enquiry wording in section 3.
 4. Still open from Session 03: Ellerman card details, Antarctica21 cabin fares, the seven ALBIE items for TAG.
+
+## 11. Round 2 · 19 Nov 2026 · merged to the live site
+
+James, 19 Nov 2026: enquiry wording approved; `partner-preview` chosen as the staging database; "merge live"; a
+Lion Sands only example to review on the live site.
+
+- **Merged to main.** The checkout page and its two helper routes no longer return 404 on the live site, so the
+  links open without a team sign-in. It remains a simulation, is marked PREVIEW on every screen, is noindex, and is
+  linked from nowhere. No payment exists in it to switch on. To close it again, restore the three
+  `VERCEL_ENV === "production"` lines.
+- **Lion Sands only.** `/preview/journey-cart?example=lion-sands` shows Lion Sands Ivory Lodge alone, with the
+  example stay loaded. Add `&view=advisor` for the house and advisor detail.
+- **The Lion Sands rate still shows as an estimate.** James said the rates are now verified. The card in Airtable is
+  unchanged: every season still reads "library from-rate x2, verify" and the card's own contract reference says
+  "replace with the contracted card as 2027-V2". The cart follows the card, so it still says "est.". Nothing was
+  edited in Airtable: a published card is corrected by a new revision that James approves there.
+- **A figure to check before that approval.** The card holds US$6,840 a night for the Ivory Suite for two. MORE's own
+  published rate filed in `lib/content/rate-cards/more.json` (read 1 Nov 2026) is R47,310 per person, US$2,844.23 by
+  MORE's conversion, which is US$5,688.46 a night for two. The two differ by about 20%.
+- **Staging database.** Agreed, not yet connected. The table is still a draft and the save route is the next build.
+  Settings to add in Vercel, Preview environment only: `CHECKOUT_STAGING_SUPABASE_URL` and
+  `CHECKOUT_STAGING_SERVICE_ROLE_KEY`.
+- **Payment provider.** Pending with James.

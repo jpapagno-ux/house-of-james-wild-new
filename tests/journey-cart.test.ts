@@ -3,7 +3,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { ENQUIRE, NO_PRICE, dateClashes, decodeJourney, encodeJourney, indicative, cartTotals, commissionHandoff, hasCardLikeData, idempotencyKey, ledgerHandoff, lineStatuses, paymentOptions, priceNights, readiness, simulatePayment, toUsdMinor, validLead, verified, type Line, type Policy, type Price, type SeasonRule } from "../lib/checkout/journey.ts";
+import { ENQUIRE, NO_PRICE, dateClashes, decodeJourney, encodeJourney, encodePicks, indicative, cartTotals, commissionHandoff, hasCardLikeData, idempotencyKey, ledgerHandoff, lineStatuses, paymentOptions, priceNights, readiness, simulatePayment, toUsdMinor, validLead, verified, type Line, type Policy, type Price, type SeasonRule } from "../lib/checkout/journey.ts";
 
 const price = (source: Price["source"], usdMinor: number | null): Price => ({ source, usdMinor, sourceMinor: usdMinor, sourceCurrency: usdMinor == null ? null : "USD", fx: null, basis: "fixture", provenance: "fixture", fetchedAt: null });
 const line = (id: string, p: Price, kind: Line["kind"] = "stay"): Line => ({ id, kind, productKey: "fixture", ledgerId: "FIXTURE", name: "Fixture House", supplier: "Fixture Supplier", unit: "Room", unitKey: "room", start: "2027-02-01", end: "2027-02-04", adults: 2, price: p });
@@ -190,4 +190,14 @@ test("a journey link carries choices only: no price, no traveler, and nothing ma
   assert.equal(decodeJourney(enc({ v: 1, l: [["leeu-house", "Room", "2027-02-01", "2027-02-04", 99, []]] })), null);
   assert.equal(decodeJourney(enc({ v: 1, l: [["Leeu House<script>", "Room", "2027-02-01", "2027-02-04", 2, []]] })), null);
   assert.equal(decodeJourney(enc({ v: 1, l: [["leeu-house", "4242 4242 4242 4242", "2027-02-01", "2027-02-04", 2, []]] })), null, "card-shaped text is refused");
+});
+
+test("a saved cart reads back to the same link code, and anything that is not a list of choices is refused", () => {
+  const a: Line = { ...line("a", price("rate_card", 2052000)), productKey: "lion-sands-ivory-lodge", unit: "Ivory Lodge · Ivory Suite" };
+  const code = encodeJourney([a]);
+  const stored = decodeJourney(code);
+  assert.equal(encodePicks(stored), code, "what the database holds encodes back to the same code");
+  assert.equal(encodePicks("not an array"), null);
+  assert.equal(encodePicks(null), null);
+  assert.equal(decodeJourney(encodePicks([{ productKey: "x", unit: "y", start: "bad", end: "2027-01-02", adults: 2, experiences: [] }]) ?? ""), null, "a tampered row is refused on the way out");
 });

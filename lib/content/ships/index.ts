@@ -10,6 +10,7 @@ import { FIJI_SHIPS } from "./fiji";
 import { MEKONG_SHIPS } from "./mekong";
 import { SEYCHELLES_SHIPS } from "./seychelles";
 import { CARIBBEAN_SHIPS } from "./caribbean";
+import { MEDITERRANEAN_SHIPS } from "./mediterranean";
 import { SHIP_REGISTRY, WATERS_HUBS, type RegistryShip, type Waters } from "./registry";
 import type { ShipRecord } from "./types";
 
@@ -40,6 +41,7 @@ const FILED: { data: ShipRecord; credit?: string; offerRefs: string[] }[] = [
   ...MEKONG_SHIPS,
   ...SEYCHELLES_SHIPS,
   ...CARIBBEAN_SHIPS,
+  ...MEDITERRANEAN_SHIPS,
 ];
 // Every registry ship with a page, in registry order. A page ship without a record fails the build.
 export const SHIPS: ShipEntry[] = SHIP_REGISTRY.filter((r) => r.page).map((reg) => {

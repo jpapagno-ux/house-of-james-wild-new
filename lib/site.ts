@@ -367,6 +367,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/voyages/ships/galaxy-orion-yacht", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/hermes-galapagos", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/star-breeze", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/voyages/ships/wind-surf", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/wind-star", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/yasawa-princess-ii", priority: 0.7, changeFrequency: "monthly" },
   { path: "/voyages/ships/amandira", priority: 0.7, changeFrequency: "monthly" },

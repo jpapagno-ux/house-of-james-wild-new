@@ -19,6 +19,7 @@ LABELS = {
   # Four Seasons I (lib/content/ships/caribbean): the Caribbean and the Bahamas in winter; her Mediterranean
   # and Atlantic routes, filed in the same file, take MED or ATLANTIC by where they sail.
   "caribbean": [{"text": "Caribbean Sea", "lat": 15.5, "lng": -64.5, "kind": "sea"}, {"text": "Atlantic Ocean", "lat": 21.5, "lng": -60.5, "kind": "sea"}, {"text": "Lesser Antilles", "lat": 15.3, "lng": -61.0, "kind": "region"}],
+  "mediterranean": [{"text": "Mediterranean Sea", "lat": 36.5, "lng": 17.5, "kind": "sea"}, {"text": "Aegean Sea", "lat": 38.5, "lng": 25.0, "kind": "sea"}, {"text": "Tyrrhenian Sea", "lat": 40.0, "lng": 12.0, "kind": "sea"}, {"text": "Atlantic Ocean", "lat": 37.5, "lng": -11.5, "kind": "sea"}],
   "tahiti": [{"text": "Pacific Ocean", "lat": -17.6, "lng": -148.6, "kind": "sea"}, {"text": "Society Islands", "lat": -16.2, "lng": -151.0, "kind": "region"}, {"text": "Tuamotu", "lat": -15.4, "lng": -146.4, "kind": "region"}],
 }
 # Where an Indonesian route's chart sits (the engine's regional data: public/maps/data/<dest>).

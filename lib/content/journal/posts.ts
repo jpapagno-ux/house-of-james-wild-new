@@ -183,6 +183,7 @@ export const POSTS: Record<string, JournalPost> = {
       ] },
       { after: "when-is-the-best-time-to-go", layout: "wide", images: [{ url: hi(`${GOV}/governors-camp/g6`), alt: "A safari vehicle in silhouette against a low orange sun on the Masai Mara plains", w: 992, h: 695, caption: "The Mara at last light.", credit: GOV_CREDIT }] },
     ],
+    pull: { text: "I stayed at Governors' Camp in 2012. The pride has changed since then, but the river and the marsh have not, and neither has the feeling of waking up beside them.", after: "where-should-you-stay-to-see-the-marsh-pride" }, // James approved, 19 Nov 2026
     close: "James Wild & Co",
     faqTitle: "Questions About the Marsh Pride and Governors' Camp",
     planPlace: "Kenya",
@@ -243,6 +244,7 @@ export const POSTS: Record<string, JournalPost> = {
       ] },
       { after: "how-do-you-combine-akagera-with-gorilla-trekking", layout: "wide", images: [{ url: MAG("bb8f82263_723b9c880_695b86df6bf212898cc00766_Villa_MagashiPeninsula_Rwanda10-25-FELIX-142.jpg"), alt: "A stone basin on a wooden vanity against a patterned wall in the villa bathroom at Magashi Peninsula", w: 1275, h: 850, caption: "Three nights here after the gorillas is about right.", credit: "Photograph: Wilderness" }] },
     ],
+    pull: { text: "Most people come to Rwanda for the gorillas and leave. I would stay three more nights and see what African Parks has brought back.", after: "how-do-you-combine-akagera-with-gorilla-trekking" }, // James approved, 19 Nov 2026
     close: "James Wild & Co",
     faqTitle: "Questions About Akagera and Magashi Peninsula",
     planPlace: "Rwanda",

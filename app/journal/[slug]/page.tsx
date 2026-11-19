@@ -182,7 +182,7 @@ export default async function JournalPostPage({ params }: P) {
                   {p.pull?.after === s.id && !p.pull.image && (
                     <figure className="journal-pull">
                       <blockquote><p>{p.pull.text}</p></blockquote>
-                      <figcaption className="mt-6 flex items-center gap-4"><Signature className="w-24 md:w-28" label="Signed, James Papagno" /><span className="ledger-eyebrow">{p.close} · Founder, James Wild &amp; Co</span></figcaption>
+                      <figcaption className="mt-6 flex items-center gap-4"><Signature className="w-24 md:w-28" label="Signed, James Papagno" /><span className="ledger-eyebrow">James Papagno · Founder, James Wild &amp; Co</span></figcaption>
                     </figure>
                   )}
                 </section>
@@ -190,7 +190,7 @@ export default async function JournalPostPage({ params }: P) {
                   <figure className="journal-lion journal-wide my-16 md:my-24" aria-label="From James">
                     <div className="journal-lion-text">
                       <blockquote><p>{p.pull.text}</p></blockquote>
-                      <figcaption className="mt-6 flex items-center gap-4"><Signature className="w-24 md:w-28" label="Signed, James Papagno" /><span className="ledger-eyebrow">{p.close} · Founder, James Wild &amp; Co</span></figcaption>
+                      <figcaption className="mt-6 flex items-center gap-4"><Signature className="w-24 md:w-28" label="Signed, James Papagno" /><span className="ledger-eyebrow">James Papagno · Founder, James Wild &amp; Co</span></figcaption>
                     </div>
                     <div className="journal-lion-art" style={{ aspectRatio: `${p.pull.image.w} / ${p.pull.image.h}` }}><Image src={p.pull.image.url} alt={p.pull.image.alt} fill sizes="(min-width: 900px) 45vw, 100vw" quality={85} className="object-contain" /></div>
                   </figure>

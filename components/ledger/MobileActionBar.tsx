@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Phone, PenLine, Search, Navigation } from "lucide-react";
+import { KeyRound, Phone, PenLine, Search, Navigation } from "lucide-react";
 import { SITE } from "@/lib/site";
-import { FLAGS } from "@/lib/booking-live/flags";
 import { openSearch } from "@/lib/search-bus";
 import { planFor } from "@/lib/content/page-leads";
+import { openSignIn } from "@/lib/signin-bus";
 
 // MobileActionBar (James, 18 Nov 2026: "best UX"): on phones, the five things a traveller reaches for, always under
-// the thumb. Search opens the house search; Bearing finds the advisor who shares your answers; Folio is your own
-// journal; Call rings the house; Plan names the page's advisor (Anthony on Indonesia pages, James elsewhere).
+// the thumb. Search opens the house search; Bearing finds the advisor who shares your answers; Sign in opens the three
+// doors (Traveler, Advisor, Partner; 19 Nov 2026, replacing Folio, which is behind the Traveler door); Call rings the house; Plan names the page's advisor (Anthony on Indonesia pages, James elsewhere).
 // Hidden from lg up, under a record's own bar, and on the desks (advisor, house, partner), which have their own tabs.
 const DESKS = ["/advisor", "/desk", "/partner"];
 
@@ -25,7 +25,7 @@ export default function MobileActionBar() {
       <ul className="grid grid-cols-5">
         <li><button type="button" onClick={() => openSearch()} className={item}><Search className={icon} strokeWidth={1.25} aria-hidden="true" />Search</button></li>
         <li><Link href="/advisors/match" className={item}><Navigation className={icon} strokeWidth={1.25} aria-hidden="true" />Bearing</Link></li>
-        <li><Link href={FLAGS.accounts ? "/account" : "/folio"} className={item}><BookOpen className={icon} strokeWidth={1.25} aria-hidden="true" />Folio</Link></li>
+        <li><button type="button" onClick={() => openSignIn()} className={item}><KeyRound className={icon} strokeWidth={1.25} aria-hidden="true" />Sign in</button></li>
         <li><a href={`tel:${SITE.phone.tel}`} className={item}><Phone className={icon} strokeWidth={1.25} aria-hidden="true" />Call</a></li>
         <li><Link href={plan.href} aria-label={plan.label} className={`${item} !text-[#8B2525]`}><PenLine className={icon} strokeWidth={1.25} aria-hidden="true" />Plan</Link></li>
       </ul>

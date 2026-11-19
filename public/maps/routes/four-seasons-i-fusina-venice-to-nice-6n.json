@@ -19,8 +19,8 @@
   {
    "day": null,
    "name": "Adriatic Sea",
-   "lat": 44.559,
-   "lng": 9.771,
+   "lat": 44.2021,
+   "lng": 9.4842,
    "mode": "sea",
    "path": [
     [
@@ -28,28 +28,47 @@
      45.424
     ],
     [
-     9.771,
-     44.559
+     9.4842,
+     44.2021
     ]
-   ]
+   ],
+   "charted": [
+    9.771,
+    44.559
+   ],
+   "lane": "passage"
   },
   {
    "day": 7,
    "name": "Nice, France",
-   "lat": 43.6939,
-   "lng": 7.2862,
+   "lat": 43.6879,
+   "lng": 7.2829,
    "mode": "sea",
    "path": [
     [
-     9.771,
-     44.559
+     9.4842,
+     44.2021
     ],
     [
-     7.2862,
-     43.6939
+     7.3316,
+     43.661
+    ],
+    [
+     7.3208,
+     43.661
+    ],
+    [
+     7.2829,
+     43.6879
     ]
    ],
-   "kind": "port"
+   "kind": "port",
+   "charted": [
+    7.2862,
+    43.6939
+   ],
+   "lane": "sea",
+   "clear": 1.54
   }
  ],
  "map_note": "Course and positions approximate, not a navigational chart",

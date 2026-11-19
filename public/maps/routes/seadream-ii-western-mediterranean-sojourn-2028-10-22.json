@@ -1,0 +1,340 @@
+{
+ "id": "seadream-ii-western-mediterranean-sojourn-2028-10-22",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Western Mediterranean Sojourn aboard SeaDream II",
+ "subtitle": "8 nights · Barcelona to Lisbon · SeaDream II",
+ "days": {
+  "1": "Barcelona",
+  "2": "Palma de Mallorca",
+  "3": "Ibiza",
+  "4": "Cartagena",
+  "5": "Sailing the Alboran Sea",
+  "6": "Tangier",
+  "7": "Cadiz",
+  "8": "Lagos",
+  "9": "Lisbon"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Barcelona",
+   "lat": 41.3766,
+   "lng": 2.1994,
+   "kind": "port",
+   "charted": [
+    2.1771,
+    41.3826
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Palma de Mallorca, Balearic Islands",
+   "lat": 39.56,
+   "lng": 2.647,
+   "mode": "sea",
+   "path": [
+    [
+     2.1994,
+     41.3766
+    ],
+    [
+     2.2852,
+     39.5628
+    ],
+    [
+     2.3837,
+     39.4879
+    ],
+    [
+     2.4986,
+     39.4379
+    ],
+    [
+     2.515,
+     39.4379
+    ],
+    [
+     2.647,
+     39.56
+    ]
+   ],
+   "charted": [
+    2.6501,
+    39.5696
+   ],
+   "lane": "sea",
+   "clear": 1.91
+  },
+  {
+   "day": 3,
+   "name": "Ibiza, Balearic Islands",
+   "lat": 38.8992,
+   "lng": 1.4431,
+   "mode": "sea",
+   "path": [
+    [
+     2.647,
+     39.56
+    ],
+    [
+     2.6368,
+     39.5354
+    ],
+    [
+     2.5127,
+     39.4328
+    ],
+    [
+     1.5029,
+     38.9135
+    ],
+    [
+     1.4781,
+     38.9071
+    ],
+    [
+     1.4431,
+     38.8992
+    ]
+   ],
+   "charted": [
+    1.44,
+    38.91
+   ],
+   "lane": "sea",
+   "clear": 0.65
+  },
+  {
+   "day": 4,
+   "name": "Cartagena",
+   "lat": 37.5808,
+   "lng": -0.9981,
+   "mode": "sea",
+   "path": [
+    [
+     1.4431,
+     38.8992
+    ],
+    [
+     1.413,
+     38.823
+    ],
+    [
+     -0.2519,
+     37.7779
+    ],
+    [
+     -0.7174,
+     37.5951
+    ],
+    [
+     -0.8248,
+     37.5623
+    ],
+    [
+     -0.9203,
+     37.5435
+    ],
+    [
+     -0.9799,
+     37.5482
+    ],
+    [
+     -0.9859,
+     37.5529
+    ],
+    [
+     -0.9981,
+     37.5808
+    ]
+   ],
+   "charted": [
+    -0.9875,
+    37.6155
+   ],
+   "lane": "sea",
+   "clear": 1.12
+  },
+  {
+   "day": 6,
+   "name": "Tangier",
+   "lat": 35.7815,
+   "lng": -5.7927,
+   "mode": "sea",
+   "path": [
+    [
+     -0.9981,
+     37.5808
+    ],
+    [
+     -2.1263,
+     36.6863
+    ],
+    [
+     -5.6204,
+     35.8932
+    ],
+    [
+     -5.7522,
+     35.8404
+    ],
+    [
+     -5.7852,
+     35.8139
+    ],
+    [
+     -5.7927,
+     35.7815
+    ]
+   ],
+   "charted": [
+    -5.8045,
+    35.7695
+   ],
+   "lane": "sea",
+   "clear": 2.45
+  },
+  {
+   "day": 7,
+   "name": "Cadiz",
+   "lat": 36.5237,
+   "lng": -6.2989,
+   "mode": "sea",
+   "path": [
+    [
+     -5.7927,
+     35.7815
+    ],
+    [
+     -5.9057,
+     35.9459
+    ],
+    [
+     -6.2406,
+     36.395
+    ],
+    [
+     -6.2722,
+     36.446
+    ],
+    [
+     -6.2975,
+     36.5072
+    ],
+    [
+     -6.2989,
+     36.5237
+    ]
+   ],
+   "charted": [
+    -6.2929,
+    36.5297
+   ],
+   "lane": "sea",
+   "clear": 1.47
+  },
+  {
+   "day": 8,
+   "name": "Lagos",
+   "lat": 37.1004,
+   "lng": -8.6624,
+   "mode": "sea",
+   "path": [
+    [
+     -6.2989,
+     36.5237
+    ],
+    [
+     -8.6624,
+     37.1004
+    ]
+   ],
+   "charted": [
+    -8.6729,
+    37.1028
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Lisbon",
+   "lat": 38.7078,
+   "lng": -9.1366,
+   "mode": "sea",
+   "path": [
+    [
+     -8.6624,
+     37.1004
+    ],
+    [
+     -8.6633,
+     37.077
+    ],
+    [
+     -8.6683,
+     37.0731
+    ],
+    [
+     -8.9521,
+     36.9866
+    ],
+    [
+     -9.0069,
+     37.022
+    ],
+    [
+     -9.231,
+     38.4247
+    ],
+    [
+     -9.2658,
+     38.6565
+    ],
+    [
+     -9.2459,
+     38.6723
+    ],
+    [
+     -9.1563,
+     38.6958
+    ],
+    [
+     -9.1366,
+     38.7078
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 0.38
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -46,7 +46,7 @@ function Row({ x, flags, unit }: { x: Sailing; flags: SailingFlag[]; unit: strin
         {low ? <span className="block ledger-display text-[1.1rem] tabular-nums" style={{ color: "var(--tone-path, inherit)" }}>{usd(low)}</span> : <span className="ledger-muted text-[14px]">Ask us</span>}
         <span className="block text-[10.5px] tracking-[0.12em] uppercase ledger-muted">{unit}</span>
       </p>
-      <p className="text-[14.5px] leading-snug md:order-2">{voyageName(x.route)}</p>
+      <p className="text-[14.5px] leading-snug md:order-2">{x.href ? <Link href={x.href} className="underline underline-offset-4 decoration-[0.5px] hover:decoration-1">{voyageName(x.route)}</Link> : voyageName(x.route)}</p>
       <p className="hidden md:block md:order-3 text-[14px] tabular-nums">{n ? `${n} nights` : "To confirm"}</p>
       <p className="col-span-2 md:col-span-1 md:order-5 flex flex-wrap items-center gap-2 md:justify-end">
         {on.map((f) => <Flag key={f.id} f={f} />)}

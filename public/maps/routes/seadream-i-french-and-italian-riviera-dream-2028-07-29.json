@@ -1,0 +1,309 @@
+{
+ "id": "seadream-i-french-and-italian-riviera-dream-2028-07-29",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "French & Italian Riviera Dream aboard SeaDream I",
+ "subtitle": "7 nights · Nice to Rome (Civitavecchia) · SeaDream I",
+ "days": {
+  "1": "Nice",
+  "2": "St. Tropez",
+  "3": "Monte Carlo",
+  "4": "Portofino",
+  "5": "Saint-Florent",
+  "6": "Portoferraio",
+  "7": "Bonifacio",
+  "8": "Rome (Civitavecchia)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ]
+  },
+  {
+   "day": 2,
+   "name": "St. Tropez",
+   "lat": 43.2775,
+   "lng": 6.6356,
+   "mode": "sea",
+   "path": [
+    [
+     7.2684,
+     43.6889
+    ],
+    [
+     7.1499,
+     43.5371
+    ],
+    [
+     6.8193,
+     43.3445
+    ],
+    [
+     6.6356,
+     43.2775
+    ]
+   ],
+   "charted": [
+    6.6405,
+    43.2727
+   ],
+   "lane": "sea",
+   "clear": 1.35
+  },
+  {
+   "day": 3,
+   "name": "Monte Carlo",
+   "lat": 43.7403,
+   "lng": 7.4365,
+   "mode": "sea",
+   "path": [
+    [
+     6.6356,
+     43.2775
+    ],
+    [
+     7.1434,
+     43.53
+    ],
+    [
+     7.4297,
+     43.7177
+    ],
+    [
+     7.4408,
+     43.7257
+    ],
+    [
+     7.4365,
+     43.7403
+    ]
+   ],
+   "charted": [
+    7.4266,
+    43.7403
+   ],
+   "lane": "sea",
+   "clear": 1.16
+  },
+  {
+   "day": 4,
+   "name": "Portofino",
+   "lat": 44.3045,
+   "lng": 9.218,
+   "mode": "sea",
+   "path": [
+    [
+     7.4365,
+     43.7403
+    ],
+    [
+     7.77,
+     43.7599
+    ],
+    [
+     8.0639,
+     43.8656
+    ],
+    [
+     9.1907,
+     44.2883
+    ],
+    [
+     9.218,
+     44.3045
+    ]
+   ],
+   "charted": [
+    9.2096,
+    44.3033
+   ],
+   "lane": "sea",
+   "clear": 2.03
+  },
+  {
+   "day": 5,
+   "name": "Saint-Florent, Corsica",
+   "lat": 42.6861,
+   "lng": 9.2992,
+   "mode": "sea",
+   "path": [
+    [
+     9.218,
+     44.3045
+    ],
+    [
+     9.2828,
+     42.7109
+    ],
+    [
+     9.2992,
+     42.6861
+    ]
+   ],
+   "charted": [
+    9.3025,
+    42.6813
+   ],
+   "lane": "sea",
+   "clear": 1.53
+  },
+  {
+   "day": 6,
+   "name": "Portoferraio, Elba",
+   "lat": 42.7448,
+   "lng": 10.2432,
+   "mode": "sea",
+   "path": [
+    [
+     9.2992,
+     42.6861
+    ],
+    [
+     9.2942,
+     42.9542
+    ],
+    [
+     9.3266,
+     43.0019
+    ],
+    [
+     9.3461,
+     43.0162
+    ],
+    [
+     9.424,
+     43.021
+    ],
+    [
+     10.1249,
+     42.7206
+    ],
+    [
+     10.1703,
+     42.7158
+    ],
+    [
+     10.2417,
+     42.7158
+    ],
+    [
+     10.2482,
+     42.7206
+    ],
+    [
+     10.2432,
+     42.7448
+    ]
+   ],
+   "charted": [
+    10.235,
+    42.7484
+   ],
+   "lane": "sea",
+   "clear": 0.98
+  },
+  {
+   "day": 7,
+   "name": "Bonifacio, Corsica",
+   "lat": 41.3812,
+   "lng": 9.1575,
+   "mode": "sea",
+   "path": [
+    [
+     10.2432,
+     42.7448
+    ],
+    [
+     9.375,
+     41.5427
+    ],
+    [
+     9.2488,
+     41.3833
+    ],
+    [
+     9.2109,
+     41.3552
+    ],
+    [
+     9.1575,
+     41.3812
+    ]
+   ],
+   "charted": [
+    9.1591,
+    41.3872
+   ],
+   "lane": "sea",
+   "clear": 1.29
+  },
+  {
+   "day": 8,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "mode": "sea",
+   "path": [
+    [
+     9.1575,
+     41.3812
+    ],
+    [
+     9.1734,
+     41.3582
+    ],
+    [
+     9.2434,
+     41.3174
+    ],
+    [
+     12.3393,
+     41.6733
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ],
+   "lane": "sea",
+   "clear": 1.02
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

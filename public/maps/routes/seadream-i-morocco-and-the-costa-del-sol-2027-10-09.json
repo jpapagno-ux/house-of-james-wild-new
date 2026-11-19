@@ -1,0 +1,239 @@
+{
+ "id": "seadream-i-morocco-and-the-costa-del-sol-2027-10-09",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Morocco & the Costa del Sol aboard SeaDream I",
+ "subtitle": "7 nights · Seville to Barcelona · SeaDream I",
+ "days": {
+  "1": "Seville",
+  "2": "Seville",
+  "3": "Tangier",
+  "4": "Puerto Banus",
+  "5": "Motril for Granada",
+  "6": "Ibiza",
+  "7": "Ibiza",
+  "8": "Barcelona"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Seville",
+   "lat": 36.9535,
+   "lng": -6.5423,
+   "kind": "port",
+   "charted": [
+    -5.9953,
+    37.3886
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Tangier",
+   "lat": 35.7815,
+   "lng": -5.7927,
+   "mode": "sea",
+   "path": [
+    [
+     -6.5423,
+     36.9535
+    ],
+    [
+     -6.45,
+     36.6777
+    ],
+    [
+     -6.4199,
+     36.6294
+    ],
+    [
+     -5.7927,
+     35.7815
+    ]
+   ],
+   "charted": [
+    -5.8045,
+    35.7695
+   ],
+   "lane": "sea",
+   "clear": 2.35
+  },
+  {
+   "day": 4,
+   "name": "Puerto Banus",
+   "lat": 36.4851,
+   "lng": -4.9447,
+   "mode": "sea",
+   "path": [
+    [
+     -5.7927,
+     35.7815
+    ],
+    [
+     -5.7674,
+     35.8213
+    ],
+    [
+     -5.3362,
+     36.1019
+    ],
+    [
+     -4.9447,
+     36.4851
+    ]
+   ],
+   "charted": [
+    -4.9536,
+    36.4875
+   ],
+   "lane": "sea",
+   "clear": 1.13
+  },
+  {
+   "day": 5,
+   "name": "Motril for Granada",
+   "lat": 36.7128,
+   "lng": -3.526,
+   "mode": "sea",
+   "path": [
+    [
+     -4.9447,
+     36.4851
+    ],
+    [
+     -4.7279,
+     36.4634
+    ],
+    [
+     -3.526,
+     36.7128
+    ]
+   ],
+   "charted": [
+    -3.52,
+    36.72
+   ],
+   "lane": "sea",
+   "clear": 2.41
+  },
+  {
+   "day": 6,
+   "name": "Ibiza, Balearic Islands",
+   "lat": 38.8992,
+   "lng": 1.4431,
+   "mode": "sea",
+   "path": [
+    [
+     -3.526,
+     36.7128
+    ],
+    [
+     -3.4755,
+     36.6753
+    ],
+    [
+     -2.7058,
+     36.6623
+    ],
+    [
+     -2.3475,
+     36.8119
+    ],
+    [
+     -2.2005,
+     36.7019
+    ],
+    [
+     -2.1469,
+     36.7019
+    ],
+    [
+     -0.7356,
+     37.5795
+    ],
+    [
+     0.2511,
+     38.3747
+    ],
+    [
+     1.4003,
+     38.8179
+    ],
+    [
+     1.4167,
+     38.8307
+    ],
+    [
+     1.4431,
+     38.8992
+    ]
+   ],
+   "charted": [
+    1.44,
+    38.91
+   ],
+   "lane": "sea",
+   "clear": 0.91
+  },
+  {
+   "day": 8,
+   "name": "Barcelona",
+   "lat": 41.3766,
+   "lng": 2.1994,
+   "mode": "sea",
+   "path": [
+    [
+     1.4431,
+     38.8992
+    ],
+    [
+     1.515,
+     38.9201
+    ],
+    [
+     1.671,
+     39.0223
+    ],
+    [
+     2.1994,
+     41.3766
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    2.1771,
+    41.3826
+   ],
+   "lane": "sea",
+   "clear": 1.68
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

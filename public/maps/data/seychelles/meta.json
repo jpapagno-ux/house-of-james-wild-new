@@ -1,0 +1,11 @@
+{
+ "slug": "seychelles",
+ "name": "The Seychelles",
+ "bbox": [
+  36.74,
+  -12.52,
+  56.7,
+  -1.83
+ ],
+ "attribution": "Land: OpenStreetMap contributors (ODbL), simplified"
+}

@@ -78,8 +78,11 @@ class Grid:
         img = Image.new("1", (self.nx, self.ny), 0)
         dr = ImageDraw.Draw(img)
         px = lambda r: [((x - self.x0) / self.dlng - 0.5, (y - self.y0) / self.dlat - 0.5) for x, y in r]
-        for (bx0, by0, bx1, by1), rings in land:
-            if bx1 < self.x0 or bx0 > x1 or by1 < self.y0 or by0 > y1: continue
+        # Polygons with holes go first, largest first: a clipped continent can be one polygon whose hole is a whole sea,
+        # and cutting that hole after the islands were drawn would erase them (the Mediterranean, 18 Nov 2026).
+        near = [q for q in land if not (q[0][2] < self.x0 or q[0][0] > x1 or q[0][3] < self.y0 or q[0][1] > y1)]
+        near.sort(key=lambda q: (len(q[1]) < 2, -(q[0][2] - q[0][0]) * (q[0][3] - q[0][1])))
+        for (bx0, by0, bx1, by1), rings in near:
             if len(rings[0]) >= 3: dr.polygon(px(rings[0]), fill=1, outline=1)
             for hole in rings[1:]:
                 if len(hole) >= 3: dr.polygon(px(hole), fill=0, outline=0)
@@ -372,15 +375,97 @@ def anchorage(p, land):
     if not land or not _on_land(np.asarray([p]), land)[0]: return None
     g = Grid(p, p, land, 0.0, 600)                       # 25 km of coast and sea round the pin, ~0.08 km cells
     lab, n = ndimage.label(~g.land, structure=np.ones((3, 3)))
-    if not n: return None
-    sizes = np.bincount(lab.ravel()); sizes[0] = 0
-    sea = (lab == sizes.argmax()) & (g.dist > ANCHOR_KM)
+    sizes = np.bincount(lab.ravel()) if n else np.zeros(1); sizes[0] = 0
+    if not n or sizes.max() * g.cell * g.cell < 150:      # no open sea within 25 km (a sea-day mark the data put far inland): look wider
+        w = 4.0
+        g = Grid([p[0] - w, p[1] - w], [p[0] + w, p[1] + w], land, 0.05, 900)
+        lab, n = ndimage.label(~g.land, structure=np.ones((3, 3)))
+        if not n: return None
+        sizes = np.bincount(lab.ravel()); sizes[0] = 0
+    sea = (lab == sizes.argmax()) & (g.dist > max(ANCHOR_KM, g.cell * 2))
     if not sea.any(): sea = lab == sizes.argmax()
     i, j = g.ij(p)
     idx = ndimage.distance_transform_edt(~sea, return_indices=True)[1]
     c = (idx[0][i, j], idx[1][i, j])
     q = g.ll(c)
     return [round(float(q[0]), 4), round(float(q[1]), 4)]
+
+
+# The wide waters (whole seas, built in two tiers by scripts/coast-routes.py) hold hundreds of voyages that share their
+# legs, and a leg takes seconds to route, so their lanes are kept: scripts/data/coast/lanes/<dest>.json maps each
+# anchorage and each leg to its routed result. scripts/sealanes-wide.py fills it in parallel; any later build that
+# routes the same leg reads it back at once (James, 18 Nov 2026: every voyage round the islands, the site uniform).
+LANES_DIR = os.path.join(COAST_DIR, "lanes")
+_LANES, _DIRTY = {}, set()
+_key = lambda p: f"{round(float(p[0]), 4)},{round(float(p[1]), 4)}"
+
+
+def lanes(dest):
+    if dest not in _LANES:
+        f = os.path.join(LANES_DIR, f"{dest}.json")
+        _LANES[dest] = json.load(open(f)) if os.path.exists(f) else None
+        if _LANES[dest] is None and os.path.exists(os.path.join(COAST_DIR, f"{dest}.geojson")) and dest in WIDE: _LANES[dest] = {"anchor": {}, "leg": {}}
+    return _LANES[dest]
+
+
+WIDE = {"caribbean", "mediterranean", "scandinavia-northern-europe", "arctic", "trans-atlantic", "asia", "oceania-and-pacific", "seychelles"}
+
+
+def save_lanes():
+    os.makedirs(LANES_DIR, exist_ok=True)
+    for dest in list(_DIRTY):
+        json.dump(_LANES[dest], open(os.path.join(LANES_DIR, f"{dest}.json"), "w"), separators=(",", ":"), sort_keys=True)
+    _DIRTY.clear()
+
+
+def anchor_of(p, land, dest):
+    c = lanes(dest)
+    if c is None: return anchorage(p, land)
+    k = _key(p)
+    if k not in c["anchor"]: c["anchor"][k] = anchorage(p, land); _DIRTY.add(dest)
+    return c["anchor"][k]
+
+
+def leg_of(a, b, land, dest):
+    """(path, moved, clear, passage) for one sailed leg. A passage is a leg no sea lane was found for: a canal, a lock,
+    a river or a lake the land data does not open. It is drawn straight and flagged, never passed off as a sea lane."""
+    c = lanes(dest)
+    k = f"{_key(a)}>{_key(b)}"
+    if c is not None and k in c["leg"]:
+        v = c["leg"][k]; return v["path"], v["moved"], v.get("clear"), v.get("passage", False)
+    p, moved = long_path(a, b, land)
+    clear = clearance(p, land) if moved else None
+    passage = (not moved) and bool(crosses(p, land))
+    if c is not None:
+        c["leg"][k] = {"path": p, "moved": moved, **({"clear": clear} if moved else {}), **({"passage": True} if passage else {})}; _DIRTY.add(dest)
+    return p, moved, clear, passage
+
+
+LONG_KM, END_KM = 500.0, 120.0
+
+
+def _snap(p, land):
+    return anchorage(p, land) or p if _on_land(np.asarray([p], float), land)[0] else p
+
+
+def long_path(a, b, land, depth=0):
+    """A leg across open sea (an Atlantic crossing, a long run down a coast): the router's grid would be too coarse to
+    leave harbour, so the leg is cut near each end and, where the middle still meets land, at its midpoint (snapped to the
+    nearest open sea), and each piece is routed on its own. Short legs go straight to sea_path."""
+    k = math.cos(math.radians((a[1] + b[1]) / 2)); L = km(a, b, k)
+    if L <= LONG_KM or depth > 4: return sea_path(a, b, land)
+    at = lambda t: [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]
+    cuts = [a, _snap(at(END_KM / L), land), _snap(at(1 - END_KM / L), land), b] if depth == 0 else [a, _snap(at(0.5), land), b]
+    line, moved = [a], False
+    for i, (p, q) in enumerate(zip(cuts, cuts[1:])):
+        middle = depth == 0 and i == 1
+        if middle and not crosses([p, q], land): piece, m = [p, q], False
+        elif middle or km(p, q, k) > LONG_KM: piece, m = long_path(p, q, land, depth + 1)
+        else: piece, m = sea_path(p, q, land)
+        moved = moved or m or len(piece) > 2
+        line += piece[1:]
+    if not crosses(line, land): return [[round(float(x), 4), round(float(y), 4)] for x, y in line], True if len(line) > 2 else moved
+    return sea_path(a, b, land) if depth else ([a, b], False)
 
 
 def anchor_stops(r, land):
@@ -391,24 +476,27 @@ def anchor_stops(r, land):
         arrive = k > 0 and str(s.get("mode", "sea")).lower() in SEA_MODES
         leave = k + 1 < len(st) and str(st[k + 1].get("mode", "sea")).lower() in SEA_MODES
         if not (arrive or leave) or "charted" in s: continue
-        a = anchorage([s["lng"], s["lat"]], land)
+        a = anchor_of([s["lng"], s["lat"]], land, r.get("destination") or "")
         if a: s["charted"] = [s["lng"], s["lat"]]; s["lng"], s["lat"] = a
 
 
 def route_stops(r, maps_dir):
     """Route every sailed leg of a jw-route v1 route (dict) in place. Returns the rerouted legs, "from > to"."""
-    land = land_of(maps_dir, r.get("destination") or "")
+    dest = r.get("destination") or ""
+    land = land_of(maps_dir, dest)
     if land and r.get("type") != "overland": anchor_stops(r, land)
     done, prev = [], None
     for s in r["stops"]:
         if prev is not None and land and str(s.get("mode", "sea")).lower() in SEA_MODES:
-            p, moved = sea_path([prev["lng"], prev["lat"]], [s["lng"], s["lat"]], land)
+            p, moved, clear, passage = leg_of([prev["lng"], prev["lat"]], [s["lng"], s["lat"]], land, dest)
             s["path"] = p
             if moved:
                 s["lane"] = "sea"; done.append(f"{prev['name']} > {s['name']}")
-                s["clear"] = clearance(p, land)
+                s["clear"] = clear
+            elif passage: s["lane"] = "passage"; s.pop("clear", None)
             else: s.pop("lane", None); s.pop("clear", None)
         prev = s
+    save_lanes()
     return done
 
 

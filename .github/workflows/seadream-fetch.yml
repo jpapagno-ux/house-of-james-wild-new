@@ -1,0 +1,29 @@
+# SeaDream Yacht Club partner data, read from seadream.com's own pages (partner agreement, James, 15 Nov 2026).
+# Commits scripts/data/seadream/ to the branch it ran on, for scripts/partners/seadream-build.mjs.
+name: SeaDream fetch
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/partners/seadream-fetch.mjs, .github/workflows/seadream-fetch.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/partners/seadream-fetch.mjs
+      - name: Commit
+        run: |
+          git config user.name "jwco-bot"
+          git config user.email "jwco-bot@users.noreply.github.com"
+          git add scripts/data/seadream/
+          git diff --cached --quiet || git commit -m "SeaDream data, $(date -u +%F)"
+          git push

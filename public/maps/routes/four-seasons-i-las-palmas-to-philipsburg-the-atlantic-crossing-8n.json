@@ -13,9 +13,13 @@
   {
    "day": 1,
    "name": "Las Palmas, Gran Canaria, Canarias, Spain",
-   "lat": 28.1401,
-   "lng": -15.423,
-   "kind": "port"
+   "lat": 28.1461,
+   "lng": -15.4379,
+   "kind": "port",
+   "charted": [
+    -15.423,
+    28.1401
+   ]
   },
   {
    "day": null,
@@ -25,20 +29,31 @@
    "mode": "sea",
    "path": [
     [
-     -15.423,
-     28.1401
+     -15.4379,
+     28.1461
+    ],
+    [
+     -16.009,
+     28.2267
+    ],
+    [
+     -18.103,
+     27.3684
     ],
     [
      -39.233,
      23.077
     ]
-   ]
+   ],
+   "lane": "sea",
+   "clear": 0,
+   "graze": true
   },
   {
    "day": 9,
    "name": "Philipsburg, Sint Maarten",
-   "lat": 18.0148,
-   "lng": -63.0429,
+   "lat": 18.0112,
+   "lng": -63.0505,
    "mode": "sea",
    "path": [
     [
@@ -46,11 +61,25 @@
      23.077
     ],
     [
-     -63.0429,
-     18.0148
+     -40.3556,
+     22.8382
+    ],
+    [
+     -61.9279,
+     18.25
+    ],
+    [
+     -63.0505,
+     18.0112
     ]
    ],
-   "kind": "port"
+   "kind": "port",
+   "charted": [
+    -63.0429,
+    18.0148
+   ],
+   "lane": "sea",
+   "clear": 58.66
   }
  ],
  "map_note": "Course and positions approximate, not a navigational chart",

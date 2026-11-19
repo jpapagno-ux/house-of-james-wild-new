@@ -1,0 +1,324 @@
+{
+ "id": "seadream-i-western-mediterranean-delight-2028-10-14",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Western Mediterranean Delight aboard SeaDream I",
+ "subtitle": "7 nights · Nice to Barcelona · SeaDream I",
+ "days": {
+  "1": "Nice",
+  "2": "Calvi",
+  "3": "Bonifacio",
+  "4": "Carloforte",
+  "5": "Sailing the Balearic Sea",
+  "6": "Mahon",
+  "7": "Palma de Mallorca",
+  "8": "Barcelona"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Calvi, Corsica",
+   "lat": 42.5653,
+   "lng": 8.7654,
+   "mode": "sea",
+   "path": [
+    [
+     7.2684,
+     43.6889
+    ],
+    [
+     8.7654,
+     42.5653
+    ]
+   ],
+   "charted": [
+    8.7589,
+    42.5677
+   ]
+  },
+  {
+   "day": 3,
+   "name": "Bonifacio, Corsica",
+   "lat": 41.3812,
+   "lng": 9.1575,
+   "mode": "sea",
+   "path": [
+    [
+     8.7654,
+     42.5653
+    ],
+    [
+     8.7569,
+     42.5797
+    ],
+    [
+     8.746,
+     42.5879
+    ],
+    [
+     8.7241,
+     42.596
+    ],
+    [
+     8.7022,
+     42.5879
+    ],
+    [
+     8.6365,
+     42.539
+    ],
+    [
+     8.5051,
+     42.3681
+    ],
+    [
+     8.5598,
+     41.8471
+    ],
+    [
+     8.7569,
+     41.554
+    ],
+    [
+     8.9102,
+     41.44
+    ],
+    [
+     9.0854,
+     41.3749
+    ],
+    [
+     9.1575,
+     41.3812
+    ]
+   ],
+   "charted": [
+    9.1591,
+    41.3872
+   ],
+   "lane": "sea",
+   "clear": 0.91
+  },
+  {
+   "day": 4,
+   "name": "Carloforte, Sardinia",
+   "lat": 39.1503,
+   "lng": 8.3141,
+   "mode": "sea",
+   "path": [
+    [
+     9.1575,
+     41.3812
+    ],
+    [
+     8.293,
+     41.1246
+    ],
+    [
+     8.2644,
+     41.1137
+    ],
+    [
+     8.2215,
+     41.0756
+    ],
+    [
+     8.2001,
+     41.0428
+    ],
+    [
+     8.1572,
+     40.9338
+    ],
+    [
+     8.1143,
+     40.7266
+    ],
+    [
+     8.293,
+     39.2596
+    ],
+    [
+     8.3359,
+     39.1942
+    ],
+    [
+     8.3359,
+     39.1833
+    ],
+    [
+     8.3141,
+     39.1503
+    ]
+   ],
+   "charted": [
+    8.3064,
+    39.1455
+   ],
+   "lane": "sea",
+   "clear": 1.01
+  },
+  {
+   "day": 6,
+   "name": "Mahon, Menorca, Balearic Islands",
+   "lat": 39.9027,
+   "lng": 4.3005,
+   "mode": "sea",
+   "path": [
+    [
+     8.3141,
+     39.1503
+    ],
+    [
+     8.3431,
+     39.1885
+    ],
+    [
+     8.3235,
+     39.2036
+    ],
+    [
+     4.3005,
+     39.9027
+    ]
+   ],
+   "charted": [
+    4.2662,
+    39.8895
+   ],
+   "lane": "sea",
+   "clear": 1.08
+  },
+  {
+   "day": 7,
+   "name": "Palma de Mallorca, Balearic Islands",
+   "lat": 39.56,
+   "lng": 2.647,
+   "mode": "sea",
+   "path": [
+    [
+     4.3005,
+     39.9027
+    ],
+    [
+     4.3207,
+     39.8942
+    ],
+    [
+     4.3434,
+     39.8767
+    ],
+    [
+     4.3093,
+     39.798
+    ],
+    [
+     4.2865,
+     39.7805
+    ],
+    [
+     3.0588,
+     39.2473
+    ],
+    [
+     2.786,
+     39.3434
+    ],
+    [
+     2.7178,
+     39.3959
+    ],
+    [
+     2.647,
+     39.56
+    ]
+   ],
+   "charted": [
+    2.6501,
+    39.5696
+   ],
+   "lane": "sea",
+   "clear": 0.9
+  },
+  {
+   "day": 8,
+   "name": "Barcelona",
+   "lat": 41.3766,
+   "lng": 2.1994,
+   "mode": "sea",
+   "path": [
+    [
+     2.647,
+     39.56
+    ],
+    [
+     2.515,
+     39.4379
+    ],
+    [
+     2.4658,
+     39.4504
+    ],
+    [
+     2.3509,
+     39.5129
+    ],
+    [
+     2.2852,
+     39.5628
+    ],
+    [
+     2.1994,
+     41.3766
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    2.1771,
+    41.3826
+   ],
+   "lane": "sea",
+   "clear": 1.91
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

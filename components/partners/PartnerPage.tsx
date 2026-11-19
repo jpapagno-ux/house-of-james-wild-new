@@ -20,6 +20,7 @@ import { absoluteUrl } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 import FounderProof from "@/components/record/FounderProof";
 import CharterJourneys from "@/components/ships/CharterJourneys";
+import VoyageFinder from "@/components/ships/VoyageFinder";
 
 // The reusable partner page (/partners/<slug>, James, 2 Nov 2026): who they are, how they work,
 // the fleet (ship pages), the itineraries (their pages on this site), what sets them apart in
@@ -42,7 +43,7 @@ export default function PartnerPage({ p }: { p: Partner }) {
           <div className="mb-6"><Breadcrumbs trail={trail} touch /></div>
           <header className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-end">
             <div>
-              <p className="ledger-eyebrow ledger-crimson">Partner · {p.kind}</p>
+              <p className="ledger-eyebrow ledger-crimson">{p.standing ?? "Partner"} · {p.kind}</p>
               <h1 className="ledger-h1 mt-3">{p.name}</h1>
               <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed">{p.line}</p>
             </div>
@@ -55,7 +56,7 @@ export default function PartnerPage({ p }: { p: Partner }) {
           {p.founder && <FounderProof proof={p.founder.proof} eyebrow={p.founder.eyebrow} className="mt-10 max-w-3xl" />}
 
           <section className={SEC} aria-labelledby="who-h">
-            <SectionHead eyebrow="Who they are" title={`Who Are ${p.name}?`} icon="mountain-sun" />
+            <SectionHead eyebrow="Who they are" title={`Who Is ${p.name}?`} icon="mountain-sun" />
             <div className="mt-6 grid lg:grid-cols-[1.2fr_1fr] gap-8 lg:gap-12">
               <dl className="border-t ledger-rule">
                 {p.who.facts.map(([k, v]) => <div key={k} className="grid sm:grid-cols-[9rem_minmax(0,1fr)] gap-x-4 gap-y-0.5 py-3 border-b ledger-rule"><dt className="ledger-eyebrow">{k}</dt><dd className="text-[15.5px] leading-relaxed">{v}</dd></div>)}
@@ -105,6 +106,28 @@ export default function PartnerPage({ p }: { p: Partner }) {
                 ))}
               </ul>
               {p.itineraries.href && <p className="mt-4"><Link href={p.itineraries.href} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: ink }}>{p.itineraries.hrefLabel ?? "See them all"}<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></p>}
+            </section>
+          )}
+
+          {p.finder && (
+            <section id="voyages" className={SEC} aria-labelledby="voyages-h">
+              <SectionHead eyebrow="Find a voyage" title={p.finder.title} icon="signal-flag" intro={p.finder.intro} />
+              <div className="mt-7"><VoyageFinder rows={p.finder.rows} /></div>
+            </section>
+          )}
+
+          {p.films && p.films.items.length > 0 && (
+            <section id="films" className={SEC} aria-labelledby="films-h">
+              <SectionHead eyebrow="On film" title={p.films.title} icon="wave" intro={p.films.intro} />
+              <ul className="mt-7 grid gap-5 sm:grid-cols-2">
+                {p.films.items.map((f) => (
+                  <li key={f.src}>
+                    <video className="w-full aspect-video bg-ink object-cover" controls playsInline preload="none" poster={f.poster} aria-label={`${f.title}, a film by ${p.name}`}><source src={f.src} type="video/mp4" /></video>
+                    <p className="mt-2 ledger-display text-[18px]">{f.title}</p>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-[12px] ledger-muted">Films: {p.credit}.</p>
             </section>
           )}
 

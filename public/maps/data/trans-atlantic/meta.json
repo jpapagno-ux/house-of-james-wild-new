@@ -1,0 +1,11 @@
+{
+ "slug": "trans-atlantic",
+ "name": "The Atlantic",
+ "bbox": [
+  -82.9,
+  15.58,
+  -1.99,
+  41.16
+ ],
+ "attribution": "Land: OpenStreetMap contributors (ODbL), simplified"
+}

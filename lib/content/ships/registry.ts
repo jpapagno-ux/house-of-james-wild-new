@@ -314,6 +314,26 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     pathway: { primary: "PATH-02", secondary: ["PATH-05"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "launching", launch: "2027-05", page: true,
     traits: { connecting: true, activities: ["culture", "slow"] } },
 
+  // SeaDream Yacht Club (Preferred & Vetted partner; James, 15 and 16 Nov 2026), filed By Yacht. seadream.com: no children
+  // under one year, under 18 with an adult, no children's programme; single fares "also available" (no figure published);
+  // kayaks, paddleboards and sailing dinghies from the marina, mountain bikes ashore, yoga, Tai Chi and the spa.
+  // Each twin can be chartered whole, for up to 56 couples. Countries: where the published voyages call most.
+  { slug: "seadream-i", name: "SeaDream I", operator: "SeaDream Yacht Club", kind: "motor-yacht", types: ["yacht", "charter"], waters: ["caribbean", "mediterranean", "bahamas"],
+    country: ["Saint Barthélemy", "British Virgin Islands", "Puerto Rico", "US Virgin Islands", "Anguilla", "Saint Martin", "Sint Maarten", "Saint Kitts and Nevis", "Barbados", "Saint Vincent and the Grenadines", "Saint Lucia", "Bahamas", "Italy", "France", "Spain", "Greece", "United Kingdom", "Norway"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-05"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { minChildAge: 1, childNote: "One year and over; under 18 with an adult; no children's programme", single: { kind: "applies", note: "SeaDream says single fares are available; the figure is on request" }, activities: ["snorkelling", "kayaking", "culture", "slow", "sailing"] } },
+  { slug: "seadream-ii", name: "SeaDream II", operator: "SeaDream Yacht Club", kind: "motor-yacht", types: ["yacht", "charter"], waters: ["caribbean", "mediterranean", "bahamas"],
+    country: ["Saint Barthélemy", "British Virgin Islands", "US Virgin Islands", "Puerto Rico", "Anguilla", "Saint Kitts and Nevis", "Sint Maarten", "Bahamas", "United States", "Italy", "Greece", "France", "Spain", "Croatia", "Portugal", "Montenegro"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-05"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { minChildAge: 1, childNote: "One year and over; under 18 with an adult; no children's programme", single: { kind: "applies", note: "SeaDream says single fares are available; the figure is on request" }, activities: ["snorkelling", "kayaking", "culture", "slow", "sailing"] } },
+  // SeaDream III (Timeless Voyages, Maiden Voyage: James, 16 Nov 2026): inaugural voyage 10 July 2029, Hong Kong to Tokyo.
+  // SeaDream has published her voyages and a lead fare for each; her size, suites and policies are not yet published.
+  { slug: "seadream-iii", name: "SeaDream III", operator: "SeaDream Yacht Club", kind: "motor-yacht", types: ["yacht"], waters: ["caribbean", "mediterranean"],
+    country: ["Japan", "South Korea", "Hong Kong", "Singapore", "Thailand", "Indonesia", "Malaysia", "Australia", "New Zealand", "United States", "Canada", "Norway", "United Kingdom", "Bahamas"],
+    pathway: { primary: "PATH-02", secondary: ["PATH-05"] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2029-07", page: true,
+    // Only what her published voyages show: port calls. No policies or activities are published for her yet.
+    traits: { activities: ["culture"] } },
+
   // Filed in the Ledger, ship pages to follow (their country passes) ----------
   { slug: "mutiara-laut", name: "Mutiara Laut", operator: "Mutiara Laut", kind: "schooner", types: ["sailing", "charter"], waters: ["indonesia"], country: ["Indonesia"], pathway: null, charter: { whole: true }, rateBasis: null, status: "filed", page: false, staySlug: "mutiara-laut" },
 

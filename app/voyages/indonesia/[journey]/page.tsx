@@ -110,7 +110,7 @@ export default async function JourneyPage({ params }: P) {
               <div key={f.operator} className="mt-8">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-2">
                   <div><h3 className="ledger-display text-[24px]">{f.operator}</h3><p className="text-[15px] ledger-muted max-w-2xl">{t(f.line)}</p></div>
-                  <Link href={partnerPath(f.partner)} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline shrink-0" style={{ color: ink }}>Who are {f.operator}?<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>
+                  <Link href={partnerPath(f.partner)} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline shrink-0" style={{ color: ink }}>Who is {f.operator}?<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link>
                 </div>
                 <ul className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">{f.cards.map((c) => <li key={c.slug}><ShipCard c={c} /></li>)}</ul>
                 <p className="mt-2 text-[12px] ledger-muted">Photographs: {f.operator}.</p>

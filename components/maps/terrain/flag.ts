@@ -24,7 +24,13 @@ export type TerrainPage = (typeof TERRAIN_PAGES)[number];
 
 /** Waters whose ship pages carry "See It in 3D" (their route files are routed round the OSM coastline). */
 // Tahiti (James, 9 Nov 2026: the Windstar voyages), routed round the OSM coast like Fiji.
-export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji", "indonesia", "tahiti"] as const;
+// The wide waters (James, 18 Nov 2026: Timeless Voyages and every voyage added since in 3D, the site uniform): the
+// Caribbean, the Mediterranean and the Seychelles, routed round a two-tier OSM coast (scripts/coast-routes.py).
+export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji", "indonesia", "tahiti", "caribbean", "mediterranean", "seychelles"] as const;
+/** Regions of the operator voyage pages (SeaDream) whose legs are routed round the OSM coast. The Americas (the Great
+ *  Lakes and the St Lawrence, which the land data keeps closed) stay on the chart alone. */
+export const TERRAIN_REGIONS = ["caribbean", "mediterranean", "scandinavia-northern-europe", "arctic", "trans-atlantic", "asia", "oceania-and-pacific"] as const;
+export const terrainRegion = (r: string | undefined) => !!r && (TERRAIN_REGIONS as readonly string[]).includes(r) && process.env.NEXT_PUBLIC_TERRAIN_PILOT !== "false";
 export const terrainWaters = (w: string | undefined) => !!w && (TERRAIN_WATERS as readonly string[]).includes(w);
 
 /** One frame, two views ("3D Flyover | Itinerary Chart") on every cruise page with both maps: ship pages, polar voyages,

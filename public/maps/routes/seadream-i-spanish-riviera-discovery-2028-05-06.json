@@ -1,0 +1,339 @@
+{
+ "id": "seadream-i-spanish-riviera-discovery-2028-05-06",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Spanish Riviera Discovery aboard SeaDream I",
+ "subtitle": "7 nights · Malaga to Barcelona · SeaDream I",
+ "days": {
+  "1": "Malaga",
+  "2": "Gibraltar",
+  "3": "Motril",
+  "4": "Cartagena",
+  "5": "Ibiza",
+  "6": "Palma de Mallorca",
+  "7": "Mahon",
+  "8": "Barcelona"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Malaga",
+   "lat": 36.71,
+   "lng": -4.42,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Gibraltar",
+   "lat": 36.1364,
+   "lng": -5.3633,
+   "mode": "sea",
+   "path": [
+    [
+     -4.42,
+     36.71
+    ],
+    [
+     -4.4409,
+     36.6594
+    ],
+    [
+     -4.4993,
+     36.5864
+    ],
+    [
+     -5.0311,
+     36.2211
+    ],
+    [
+     -5.3424,
+     36.0958
+    ],
+    [
+     -5.3618,
+     36.0958
+    ],
+    [
+     -5.3683,
+     36.1011
+    ],
+    [
+     -5.3748,
+     36.1219
+    ],
+    [
+     -5.3683,
+     36.1271
+    ],
+    [
+     -5.3633,
+     36.1364
+    ]
+   ],
+   "charted": [
+    -5.35,
+    36.14
+   ],
+   "lane": "sea",
+   "clear": 0.72
+  },
+  {
+   "day": 3,
+   "name": "Motril",
+   "lat": 36.7164,
+   "lng": -3.5343,
+   "mode": "sea",
+   "path": [
+    [
+     -5.3633,
+     36.1364
+    ],
+    [
+     -3.5343,
+     36.7164
+    ]
+   ],
+   "charted": [
+    -3.5208,
+    36.7451
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Cartagena",
+   "lat": 37.5808,
+   "lng": -0.9981,
+   "mode": "sea",
+   "path": [
+    [
+     -3.5343,
+     36.7164
+    ],
+    [
+     -3.4606,
+     36.6779
+    ],
+    [
+     -2.24,
+     36.664
+    ],
+    [
+     -2.1354,
+     36.7057
+    ],
+    [
+     -0.9981,
+     37.5808
+    ]
+   ],
+   "charted": [
+    -0.9875,
+    37.6155
+   ],
+   "lane": "sea",
+   "clear": 1.87
+  },
+  {
+   "day": 5,
+   "name": "Ibiza, Balearic Islands",
+   "lat": 38.8992,
+   "lng": 1.4431,
+   "mode": "sea",
+   "path": [
+    [
+     -0.9981,
+     37.5808
+    ],
+    [
+     -0.9859,
+     37.5529
+    ],
+    [
+     -0.9799,
+     37.5482
+    ],
+    [
+     -0.8844,
+     37.5435
+    ],
+    [
+     -0.7174,
+     37.5951
+    ],
+    [
+     1.407,
+     38.8184
+    ],
+    [
+     1.413,
+     38.823
+    ],
+    [
+     1.4431,
+     38.8992
+    ]
+   ],
+   "charted": [
+    1.44,
+    38.91
+   ],
+   "lane": "sea",
+   "clear": 1.12
+  },
+  {
+   "day": 6,
+   "name": "Palma de Mallorca, Balearic Islands",
+   "lat": 39.56,
+   "lng": 2.647,
+   "mode": "sea",
+   "path": [
+    [
+     1.4431,
+     38.8992
+    ],
+    [
+     1.4864,
+     38.9071
+    ],
+    [
+     1.7678,
+     39.0481
+    ],
+    [
+     2.521,
+     39.4392
+    ],
+    [
+     2.6368,
+     39.5354
+    ],
+    [
+     2.647,
+     39.56
+    ]
+   ],
+   "charted": [
+    2.6501,
+    39.5696
+   ],
+   "lane": "sea",
+   "clear": 1.05
+  },
+  {
+   "day": 7,
+   "name": "Mahon, Menorca, Balearic Islands",
+   "lat": 39.9027,
+   "lng": 4.3005,
+   "mode": "sea",
+   "path": [
+    [
+     2.647,
+     39.56
+    ],
+    [
+     2.7064,
+     39.4134
+    ],
+    [
+     2.7292,
+     39.3871
+    ],
+    [
+     2.786,
+     39.3434
+    ],
+    [
+     3.0588,
+     39.2473
+    ],
+    [
+     4.2865,
+     39.7805
+    ],
+    [
+     4.3093,
+     39.798
+    ],
+    [
+     4.3434,
+     39.8767
+    ],
+    [
+     4.3207,
+     39.8942
+    ],
+    [
+     4.3005,
+     39.9027
+    ]
+   ],
+   "charted": [
+    4.2662,
+    39.8895
+   ],
+   "lane": "sea",
+   "clear": 0.9
+  },
+  {
+   "day": 8,
+   "name": "Barcelona",
+   "lat": 41.3766,
+   "lng": 2.1994,
+   "mode": "sea",
+   "path": [
+    [
+     4.3005,
+     39.9027
+    ],
+    [
+     4.2972,
+     39.971
+    ],
+    [
+     4.2828,
+     39.9929
+    ],
+    [
+     2.1994,
+     41.3766
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    2.1771,
+    41.3826
+   ],
+   "lane": "sea",
+   "clear": 1.21
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

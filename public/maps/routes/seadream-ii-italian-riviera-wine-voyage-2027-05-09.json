@@ -1,0 +1,329 @@
+{
+ "id": "seadream-ii-italian-riviera-wine-voyage-2027-05-09",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Italian Riviera Wine Voyage aboard SeaDream II",
+ "subtitle": "7 nights · Nice to Rome (Civitavecchia) · SeaDream II",
+ "days": {
+  "1": "Nice",
+  "2": "Portofino",
+  "3": "Livorno (Florence)",
+  "4": "Capraia and Portoferraio",
+  "5": "Portoferraio",
+  "6": "Bonifacio",
+  "7": "Porto Ercole",
+  "8": "Rome (Civitavecchia)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Portofino",
+   "lat": 44.3045,
+   "lng": 9.218,
+   "mode": "sea",
+   "path": [
+    [
+     7.2684,
+     43.6889
+    ],
+    [
+     7.3251,
+     43.6622
+    ],
+    [
+     7.955,
+     43.8357
+    ],
+    [
+     9.218,
+     44.3045
+    ]
+   ],
+   "charted": [
+    9.2096,
+    44.3033
+   ],
+   "lane": "sea",
+   "clear": 1.37
+  },
+  {
+   "day": 3,
+   "name": "Livorno (Florence)",
+   "lat": 42.801,
+   "lng": 10.3418,
+   "mode": "sea",
+   "path": [
+    [
+     9.218,
+     44.3045
+    ],
+    [
+     9.9282,
+     43.4186
+    ],
+    [
+     10.344,
+     42.8159
+    ],
+    [
+     10.3418,
+     42.801
+    ]
+   ],
+   "charted": [
+    10.3402,
+    42.7902
+   ],
+   "lane": "sea",
+   "clear": 0.79
+  },
+  {
+   "day": 4,
+   "name": "Capraia",
+   "lat": 43.0218,
+   "lng": 9.8373,
+   "mode": "sea",
+   "path": [
+    [
+     10.3418,
+     42.801
+    ],
+    [
+     10.3428,
+     42.8156
+    ],
+    [
+     10.3218,
+     42.831
+    ],
+    [
+     9.8373,
+     43.0218
+    ]
+   ],
+   "charted": [
+    9.8226,
+    43.0374
+   ],
+   "lane": "sea",
+   "clear": 0.68
+  },
+  {
+   "day": 4,
+   "name": "Portoferraio, Elba",
+   "lat": 42.7448,
+   "lng": 10.2432,
+   "mode": "sea",
+   "path": [
+    [
+     9.8373,
+     43.0218
+    ],
+    [
+     10.1119,
+     42.7384
+    ],
+    [
+     10.131,
+     42.7244
+    ],
+    [
+     10.1565,
+     42.7174
+    ],
+    [
+     10.2424,
+     42.7197
+    ],
+    [
+     10.2488,
+     42.7244
+    ],
+    [
+     10.2488,
+     42.736
+    ],
+    [
+     10.2432,
+     42.7448
+    ]
+   ],
+   "charted": [
+    10.235,
+    42.7484
+   ],
+   "lane": "sea",
+   "clear": 0.66
+  },
+  {
+   "day": 6,
+   "name": "Bonifacio, Corsica",
+   "lat": 41.3812,
+   "lng": 9.1575,
+   "mode": "sea",
+   "path": [
+    [
+     10.2432,
+     42.7448
+    ],
+    [
+     9.375,
+     41.5427
+    ],
+    [
+     9.2488,
+     41.3833
+    ],
+    [
+     9.2109,
+     41.3552
+    ],
+    [
+     9.1575,
+     41.3812
+    ]
+   ],
+   "charted": [
+    9.1591,
+    41.3872
+   ],
+   "lane": "sea",
+   "clear": 1.29
+  },
+  {
+   "day": 7,
+   "name": "Porto Ercole",
+   "lat": 42.396,
+   "lng": 11.2155,
+   "mode": "sea",
+   "path": [
+    [
+     9.1575,
+     41.3812
+    ],
+    [
+     9.1577,
+     41.3664
+    ],
+    [
+     9.1628,
+     41.3589
+    ],
+    [
+     9.1728,
+     41.3514
+    ],
+    [
+     9.2131,
+     41.3514
+    ],
+    [
+     9.2231,
+     41.3552
+    ],
+    [
+     9.2332,
+     41.3626
+    ],
+    [
+     9.2332,
+     41.3701
+    ],
+    [
+     9.9576,
+     41.8907
+    ],
+    [
+     11.1951,
+     42.3513
+    ],
+    [
+     11.2153,
+     42.3663
+    ],
+    [
+     11.2253,
+     42.3813
+    ],
+    [
+     11.2155,
+     42.396
+    ]
+   ],
+   "charted": [
+    11.2025,
+    42.396
+   ],
+   "lane": "sea",
+   "clear": 1.02
+  },
+  {
+   "day": 8,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "mode": "sea",
+   "path": [
+    [
+     11.2155,
+     42.396
+    ],
+    [
+     12.2448,
+     41.709
+    ],
+    [
+     12.3393,
+     41.6733
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ],
+   "lane": "sea",
+   "clear": 3.03
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

@@ -1,0 +1,341 @@
+{
+ "id": "seadream-iii-royal-thailand-and-malaysia-s-emerald-islands-2030-02-08",
+ "type": "voyage",
+ "destination": "arctic",
+ "title": "Royal Thailand & Malaysia’s Emerald Islands aboard SeaDream III",
+ "subtitle": "8 nights · Bangkok (Khlong Toei) to Singapore · SeaDream III",
+ "days": {
+  "1": "Bangkok (Khlong Toei)",
+  "2": "Hua Hin",
+  "3": "Ko Samui",
+  "4": "Kuala Terengganu",
+  "5": "Kuala Terengganu and Perhentian Islands",
+  "6": "Perhentian Islands and Redang",
+  "7": "Redang",
+  "8": "Tioman",
+  "9": "Singapore"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Bangkok (Khlong Toei)",
+   "lat": 13.0925,
+   "lng": 98.553,
+   "kind": "port",
+   "charted": [
+    100.4935,
+    13.7525
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Hua Hin",
+   "lat": 12.5711,
+   "lng": 99.9634,
+   "mode": "sea",
+   "path": [
+    [
+     98.553,
+     13.0925
+    ],
+    [
+     99.9634,
+     12.5711
+    ]
+   ],
+   "charted": [
+    99.9573,
+    12.5699
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 3,
+   "name": "Ko Samui",
+   "lat": 9.506,
+   "lng": 100.0602,
+   "mode": "sea",
+   "path": [
+    [
+     99.9634,
+     12.5711
+    ],
+    [
+     99.9943,
+     12.5108
+    ],
+    [
+     100.0401,
+     12.1886
+    ],
+    [
+     100.1012,
+     9.5588
+    ],
+    [
+     100.0602,
+     9.506
+    ]
+   ],
+   "charted": [
+    99.9958,
+    9.5072
+   ],
+   "lane": "sea",
+   "clear": 1.05
+  },
+  {
+   "day": 4,
+   "name": "Kuala Terengganu, Terengganu",
+   "lat": 5.332,
+   "lng": 103.1275,
+   "mode": "sea",
+   "path": [
+    [
+     100.0602,
+     9.506
+    ],
+    [
+     100.7004,
+     8.6348
+    ],
+    [
+     102.4873,
+     6.2032
+    ],
+    [
+     102.6994,
+     5.8904
+    ],
+    [
+     103.1268,
+     5.3992
+    ],
+    [
+     103.1388,
+     5.3633
+    ],
+    [
+     103.1275,
+     5.332
+    ]
+   ],
+   "charted": [
+    103.1383,
+    5.3296
+   ],
+   "lane": "sea",
+   "clear": 1.12
+  },
+  {
+   "day": 5,
+   "name": "Perhentian Islands, Terengganu",
+   "lat": 5.9149,
+   "lng": 102.7497,
+   "mode": "sea",
+   "path": [
+    [
+     103.1275,
+     5.332
+    ],
+    [
+     103.1452,
+     5.3529
+    ],
+    [
+     103.1251,
+     5.397
+    ],
+    [
+     102.7828,
+     5.914
+    ],
+    [
+     102.7627,
+     5.934
+    ],
+    [
+     102.7546,
+     5.934
+    ],
+    [
+     102.7506,
+     5.93
+    ],
+    [
+     102.7497,
+     5.9149
+    ]
+   ],
+   "charted": [
+    102.7557,
+    5.9029
+   ],
+   "lane": "sea",
+   "clear": 0.78
+  },
+  {
+   "day": 6,
+   "name": "Redang, Terengganu",
+   "lat": 5.793,
+   "lng": 103.0201,
+   "mode": "sea",
+   "path": [
+    [
+     102.7497,
+     5.9149
+    ],
+    [
+     102.7463,
+     5.9244
+    ],
+    [
+     102.7486,
+     5.9289
+    ],
+    [
+     102.7531,
+     5.9334
+    ],
+    [
+     102.7599,
+     5.9356
+    ],
+    [
+     103.0127,
+     5.8256
+    ],
+    [
+     103.024,
+     5.8143
+    ],
+    [
+     103.0285,
+     5.8031
+    ],
+    [
+     103.0285,
+     5.8009
+    ],
+    [
+     103.0201,
+     5.793
+    ]
+   ],
+   "charted": [
+    103.0141,
+    5.7834
+   ],
+   "lane": "sea",
+   "clear": 0.82
+  },
+  {
+   "day": 8,
+   "name": "Tioman, Pahang",
+   "lat": 2.8221,
+   "lng": 104.1553,
+   "mode": "sea",
+   "path": [
+    [
+     103.0201,
+     5.793
+    ],
+    [
+     103.0423,
+     5.7636
+    ],
+    [
+     103.4355,
+     4.8558
+    ],
+    [
+     104.1274,
+     2.9023
+    ],
+    [
+     104.1274,
+     2.8515
+    ],
+    [
+     104.1553,
+     2.8221
+    ]
+   ],
+   "charted": [
+    104.1721,
+    2.8065
+   ],
+   "lane": "sea",
+   "clear": 1.15
+  },
+  {
+   "day": 9,
+   "name": "Singapore",
+   "lat": 1.2731,
+   "lng": 103.8723,
+   "mode": "sea",
+   "path": [
+    [
+     104.1553,
+     2.8221
+    ],
+    [
+     104.1198,
+     2.809
+    ],
+    [
+     104.1092,
+     2.7984
+    ],
+    [
+     104.0985,
+     2.7664
+    ],
+    [
+     104.301,
+     1.4246
+    ],
+    [
+     104.2903,
+     1.3607
+    ],
+    [
+     104.2797,
+     1.3501
+    ],
+    [
+     104.1838,
+     1.3181
+    ],
+    [
+     103.8723,
+     1.2731
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    103.8519,
+    1.2899
+   ],
+   "lane": "sea",
+   "clear": 1.18
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Arctic Ocean",
+    "lat": 79.5,
+    "lng": 8,
+    "kind": "sea"
+   },
+   {
+    "text": "Norwegian Sea",
+    "lat": 68,
+    "lng": 6,
+    "kind": "sea"
+   }
+  ]
+ }
+}

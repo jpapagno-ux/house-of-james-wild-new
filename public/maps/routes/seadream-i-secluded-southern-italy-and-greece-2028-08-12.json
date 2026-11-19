@@ -1,0 +1,360 @@
+{
+ "id": "seadream-i-secluded-southern-italy-and-greece-2028-08-12",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Secluded Southern Italy & Greece aboard SeaDream I",
+ "subtitle": "7 nights · Valletta to Athens (Piraeus) · SeaDream I",
+ "days": {
+  "1": "Valletta",
+  "2": "Taormina (Etna) Sicily",
+  "3": "Sailing the Ionian Sea",
+  "4": "Fiskardo",
+  "5": "Galaxidi (Delphi) and Corinth Canal Transit",
+  "6": "Kythnos",
+  "7": "Hydra",
+  "8": "Athens (Piraeus)"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Valletta",
+   "lat": 35.8954,
+   "lng": 14.5196,
+   "kind": "port",
+   "charted": [
+    14.5137,
+    35.899
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Taormina (Etna) Sicily",
+   "lat": 37.8416,
+   "lng": 15.286,
+   "mode": "sea",
+   "path": [
+    [
+     14.5196,
+     35.8954
+    ],
+    [
+     15.1589,
+     36.6745
+    ],
+    [
+     15.3429,
+     36.9956
+    ],
+    [
+     15.286,
+     37.8416
+    ]
+   ],
+   "charted": [
+    15.283,
+    37.8512
+   ],
+   "lane": "sea",
+   "clear": 0.91
+  },
+  {
+   "day": 4,
+   "name": "Fiskardo, Kefalonia",
+   "lat": 38.4561,
+   "lng": 20.5844,
+   "mode": "sea",
+   "path": [
+    [
+     15.286,
+     37.8416
+    ],
+    [
+     19.9362,
+     38.2495
+    ],
+    [
+     20.532,
+     38.4837
+    ],
+    [
+     20.5579,
+     38.4837
+    ],
+    [
+     20.5844,
+     38.4561
+    ]
+   ],
+   "charted": [
+    20.5752,
+    38.4609
+   ],
+   "lane": "sea",
+   "clear": 1.05
+  },
+  {
+   "day": 5,
+   "name": "Galaxidi (Delphi)",
+   "lat": 38.3835,
+   "lng": 22.3876,
+   "mode": "sea",
+   "path": [
+    [
+     20.5844,
+     38.4561
+    ],
+    [
+     20.674,
+     38.308
+    ],
+    [
+     20.6864,
+     38.2983
+    ],
+    [
+     20.7236,
+     38.2886
+    ],
+    [
+     21.2071,
+     38.2692
+    ],
+    [
+     21.7153,
+     38.2886
+    ],
+    [
+     21.7649,
+     38.308
+    ],
+    [
+     21.8145,
+     38.3371
+    ],
+    [
+     21.8517,
+     38.3469
+    ],
+    [
+     22.2112,
+     38.308
+    ],
+    [
+     22.3724,
+     38.3177
+    ],
+    [
+     22.4096,
+     38.3566
+    ],
+    [
+     22.4096,
+     38.3663
+    ],
+    [
+     22.3876,
+     38.3835
+    ]
+   ],
+   "charted": [
+    22.383,
+    38.3775
+   ],
+   "lane": "sea",
+   "clear": 0.68
+  },
+  {
+   "day": 5,
+   "name": "Corinth Canal Transit",
+   "lat": 37.93,
+   "lng": 22.99,
+   "mode": "sea",
+   "path": [
+    [
+     22.3876,
+     38.3835
+    ],
+    [
+     22.99,
+     37.93
+    ]
+   ],
+   "lane": "passage"
+  },
+  {
+   "day": 6,
+   "name": "Kythnos",
+   "lat": 37.3828,
+   "lng": 24.4607,
+   "mode": "sea",
+   "path": [
+    [
+     22.99,
+     37.93
+    ],
+    [
+     23.0224,
+     37.9068
+    ],
+    [
+     23.4694,
+     37.7996
+    ],
+    [
+     23.5695,
+     37.7763
+    ],
+    [
+     23.9342,
+     37.632
+    ],
+    [
+     24.2695,
+     37.5109
+    ],
+    [
+     24.4401,
+     37.4922
+    ],
+    [
+     24.446,
+     37.4876
+    ],
+    [
+     24.4931,
+     37.4038
+    ],
+    [
+     24.4931,
+     37.3898
+    ],
+    [
+     24.4813,
+     37.3805
+    ],
+    [
+     24.4607,
+     37.3828
+    ]
+   ],
+   "charted": [
+    24.426,
+    37.3912
+   ],
+   "lane": "sea",
+   "clear": 0.8
+  },
+  {
+   "day": 7,
+   "name": "Hydra",
+   "lat": 37.3117,
+   "lng": 23.4664,
+   "mode": "sea",
+   "path": [
+    [
+     24.4607,
+     37.3828
+    ],
+    [
+     24.466,
+     37.3564
+    ],
+    [
+     24.4523,
+     37.3347
+    ],
+    [
+     24.3976,
+     37.2912
+    ],
+    [
+     24.3771,
+     37.2858
+    ],
+    [
+     23.4953,
+     37.3021
+    ],
+    [
+     23.4664,
+     37.3117
+    ]
+   ],
+   "charted": [
+    23.4664,
+    37.3321
+   ],
+   "lane": "sea",
+   "clear": 1.43
+  },
+  {
+   "day": 8,
+   "name": "Athens (Piraeus)",
+   "lat": 37.94,
+   "lng": 23.63,
+   "mode": "sea",
+   "path": [
+    [
+     23.4664,
+     37.3117
+    ],
+    [
+     23.4895,
+     37.304
+    ],
+    [
+     23.5004,
+     37.304
+    ],
+    [
+     23.5658,
+     37.3386
+    ],
+    [
+     23.5876,
+     37.3559
+    ],
+    [
+     23.5931,
+     37.3688
+    ],
+    [
+     23.63,
+     37.94
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.26
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

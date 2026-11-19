@@ -1,0 +1,33 @@
+# Routes every voyage of the wide waters round the land (James, 18 Nov 2026: the boats go round the islands, never over
+# them). Fills the kept lanes (scripts/data/coast/lanes) in parallel and rewrites the route files; commits both.
+name: Sea lanes
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/sealanes-wide.py, .github/workflows/sea-lanes.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  lanes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q numpy scipy pillow matplotlib
+      - run: python3 scripts/sealanes-wide.py
+        env:
+          JOBS: 4
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "jwco-bot"
+          git config user.email "jwco-bot@users.noreply.github.com"
+          git add scripts/data/coast/lanes public/maps/routes
+          git diff --cached --quiet || git commit -m "Sea lanes for the wide waters, $(date -u +%F)"
+          git pull --rebase -q && git push

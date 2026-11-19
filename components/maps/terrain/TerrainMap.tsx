@@ -7,7 +7,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { AttributionControl, Map as MLMap, Marker, NavigationControl, addProtocol, setWorkerUrl, type GeoJSONSource, type LayerSpecification, type LngLatLike, type RasterDEMSourceSpecification, type StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_NIGHT, SKY_SATELLITE, TILE_CACHE, depthIndex, depthLayer, fontOf, groundStyle, houseStyle, nightOps, pixelRatioFor, redact, satelliteIndex, satelliteLayer, viewOps, type MapView } from "./style";
+import { ATTRIBUTION, AWS_TERRARIUM, DEM_PROTOCOL, MAPTILER, OFM_STYLE, SKY, SKY_NIGHT, SKY_SATELLITE, TILE_CACHE, depthIndex, depthLayer, landLayer, mossFor, fontOf, groundStyle, houseStyle, nightOps, pixelRatioFor, redact, satelliteIndex, satelliteLayer, viewOps, type MapView } from "./style";
 import { boundsOf, frameBounds, clampSeabed, dayLabel, headingAt, isAir, legsOf, lengthKm, lngLat, partOf, smoothLine, cutFor, type LngLat, type TerrainKind, type TerrainRoute, type TerrainStop } from "./geo";
 import { CRIMSON, HOUSE } from "@/lib/palette";
 
@@ -80,8 +80,9 @@ const airOf = (stops: TerrainStop[]) => stops.slice(1).map(isAir);
 const routeLegs = (stops: TerrainStop[]) => legsOf(stops).map((l, i) => (isAir(stops[i + 1]) ? l : smoothLine(l, cutFor(stops[i + 1]))));
 
 // The vehicle on the route, drawn pointing north and rotated to the heading: the house vessel (graphite hull, crimson
-// pennant) under way, a small plane on a flown leg. About 22px, like the SVG charts' moving boat.
-const VESSEL = `<svg viewBox="0 0 22 22" width="22" height="22" aria-hidden="true"><path d="M11 1.5 C14.6 5 15.4 9.5 15 14.5 L14.2 20 H7.8 L7 14.5 C6.6 9.5 7.4 5 11 1.5 Z" fill="${HOUSE.graphite}" stroke="${HOUSE.paper}" stroke-width="1.2" stroke-linejoin="round"/><path d="M11 6 V15.5" stroke="${HOUSE.paper}" stroke-width="1"/><path d="M11 6 L15.8 7.6 L11 9.2 Z" fill="${CRIMSON.fill}" stroke="${HOUSE.paper}" stroke-width=".6" stroke-linejoin="round"/></svg>`;
+// pennant) under way, a small plane on a flown leg. The vessel is 36px (James, 18 Nov 2026: "a bigger
+// vessel"), with a white wake astern, so she reads as under way on open sea; the plane stays 22px.
+const VESSEL = `<svg viewBox="0 0 22 22" width="36" height="36" aria-hidden="true" overflow="visible"><path d="M8.2 20 L3.5 40 M13.8 20 L18.5 40" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" opacity="0.7" fill="none"/><path d="M11 20.5 V36" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity="0.45"/><path d="M11 1.5 C14.6 5 15.4 9.5 15 14.5 L14.2 20 H7.8 L7 14.5 C6.6 9.5 7.4 5 11 1.5 Z" fill="${HOUSE.graphite}" stroke="${HOUSE.paper}" stroke-width="1.2" stroke-linejoin="round"/><path d="M11 6 V15.5" stroke="${HOUSE.paper}" stroke-width="1"/><path d="M11 6 L15.8 7.6 L11 9.2 Z" fill="${CRIMSON.fill}" stroke="${HOUSE.paper}" stroke-width=".6" stroke-linejoin="round"/></svg>`;
 const PLANE = `<svg viewBox="0 0 22 22" width="22" height="22" aria-hidden="true"><path d="M11 1.5 C11.9 1.5 12.3 2.6 12.3 4 V8.6 L20 13 V15 L12.3 12.6 V17.2 L14.6 19 V20.5 L11 19.5 L7.4 20.5 V19 L9.7 17.2 V12.6 L2 15 V13 L9.7 8.6 V4 C9.7 2.6 10.1 1.5 11 1.5 Z" fill="${HOUSE.graphite}" stroke="${HOUSE.paper}" stroke-width="1.1" stroke-linejoin="round"/><circle cx="11" cy="5" r="1" fill="${CRIMSON.fill}"/></svg>`;
 const stopsFc = (stops: TerrainStop[]) => fc(stops.map((s, i) => ({ type: "Feature", id: i, properties: { name: s.name }, geometry: { type: "Point", coordinates: lngLat(s) } })));
 const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -139,9 +140,16 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         style.sources["jw-dem"] = dem;
         style.sources["jw-dem-shade"] = { ...dem };
         // Depth tints: the same elevation tiles read raw (the seabed not flattened), shaded by depth under the coast.
-        style.sources["jw-depth"] = { ...dem, tiles: (dem.tiles ?? []).map((t) => t.replace(/^jwdem:\/\/[a-z]+\//, "")) };
+        // Capped at zoom 8 (James, 18 Nov 2026: "tiles showing broken up"): the open elevation tiles take their seabed from
+        // different surveys at different zooms, so a pitched view that mixes zooms drew the sea in mismatched blocks. One
+        // zoom for the whole sea gives one even tint; the seabed data is no finer than this anyway.
+        style.sources["jw-depth"] = { ...dem, maxzoom: Math.min(8, (dem as { maxzoom?: number }).maxzoom ?? 8), tiles: (dem.tiles ?? []).map((t) => t.replace(/^jwdem:\/\/[a-z]+\//, "")) };
         const layers = style.layers as LayerSpecification[];
         layers.splice(depthIndex(layers), 0, depthLayer());
+        if (mossFor(kind, routes.flatMap((r) => r.stops.map((x) => x.lat)))) {
+          style.sources["jw-land"] = { ...dem, tiles: (dem.tiles ?? []).map((t) => t.replace(/^jwdem:\/\/[a-z]+\//, "")) };
+          layers.splice(depthIndex(layers) + 1, 0, landLayer());
+        }
         if (maptiler && KEY) {
           style.sources["jw-satellite"] = { type: "raster", url: MAPTILER.satellite(KEY), attribution: ATTRIBUTION.maptiler };
           layers.splice(satelliteIndex(layers), 0, satelliteLayer());
@@ -155,8 +163,11 @@ export default function TerrainMap({ routes, kind, ink, exaggeration, reduced, p
         style.sources["jw-route"] = { type: "geojson", data: isRoute ? legsFc(routeLegs(first), airOf(first)) : fc([]) };
         style.sources["jw-stops"] = { type: "geojson", data: stopsFc(first) };
         layers.push(
-          { id: "jw-route-ghost", type: "line", source: "jw-route-all", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": HOUSE.stone, "line-width": 1.4, "line-opacity": 0.7, "line-dasharray": [2, 2] } },
-          { id: "jw-route-line", type: "line", source: "jw-route", filter: ["!", ["get", "air"]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ink, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 12, 4.5] } },
+          // The route (James, 18 Nov 2026): the legs still to come in fine white dashes; the leg being sailed in House Crimson
+          // on voyage maps, with a white edge under it so it reads on the deeper sea and over land alike.
+          { id: "jw-route-ghost", type: "line", source: "jw-route-all", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": HOUSE.paper, "line-width": 1.6, "line-opacity": 0.85, "line-dasharray": [2, 2] } },
+          { id: "jw-route-edge", type: "line", source: "jw-route", filter: ["!", ["get", "air"]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": HOUSE.paper, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 5, 12, 8] } },
+          { id: "jw-route-line", type: "line", source: "jw-route", filter: ["!", ["get", "air"]], layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": kind === "voyage" ? CRIMSON.fill : ink, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 12, 4.5] } },
           { id: "jw-route-air", type: "line", source: "jw-route", filter: ["get", "air"], layout: { "line-cap": "butt", "line-join": "round" }, paint: { "line-color": ink, "line-width": 2, "line-dasharray": [2, 2] } },
           { id: "jw-stops-dot", type: "circle", source: "jw-stops", paint: {
             "circle-radius": ["case", ["boolean", ["feature-state", "active"], false], 8, 5.5],

@@ -1,0 +1,155 @@
+{
+ "id": "seadream-ii-transatlantic-autumn-voyage-ii-2027-10-24",
+ "type": "voyage",
+ "destination": "trans-atlantic",
+ "title": "Transatlantic Autumn Voyage II aboard SeaDream II",
+ "subtitle": "14 nights · Malaga to San Juan · SeaDream II",
+ "days": {
+  "1": "Malaga",
+  "2": "At sea",
+  "3": "At sea",
+  "4": "Funchal",
+  "5": "At sea",
+  "6": "At sea",
+  "7": "At sea",
+  "8": "At sea",
+  "9": "At sea",
+  "10": "At sea",
+  "11": "At sea",
+  "12": "At sea",
+  "13": "At sea",
+  "14": "At sea",
+  "15": "San Juan"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Malaga",
+   "lat": 36.71,
+   "lng": -4.42,
+   "kind": "port"
+  },
+  {
+   "day": 4,
+   "name": "Funchal, Madeira",
+   "lat": 32.6412,
+   "lng": -16.9016,
+   "mode": "sea",
+   "path": [
+    [
+     -4.42,
+     36.71
+    ],
+    [
+     -4.4282,
+     36.6712
+    ],
+    [
+     -4.4954,
+     36.5901
+    ],
+    [
+     -4.9922,
+     36.2336
+    ],
+    [
+     -5.3413,
+     36.0932
+    ],
+    [
+     -5.3547,
+     36.0932
+    ],
+    [
+     -5.3681,
+     36.104
+    ],
+    [
+     -5.3965,
+     36.1514
+    ],
+    [
+     -5.4045,
+     36.0431
+    ],
+    [
+     -5.4399,
+     36.0143
+    ],
+    [
+     -10.5398,
+     34.5949
+    ],
+    [
+     -13.1114,
+     33.8167
+    ],
+    [
+     -15.6831,
+     33.0384
+    ],
+    [
+     -16.8327,
+     32.6217
+    ],
+    [
+     -16.8578,
+     32.6217
+    ],
+    [
+     -16.9016,
+     32.6412
+    ]
+   ],
+   "charted": [
+    -16.9087,
+    32.6496
+   ],
+   "lane": "sea",
+   "clear": 1.37
+  },
+  {
+   "day": 15,
+   "name": "San Juan",
+   "lat": 18.46,
+   "lng": -66.11,
+   "mode": "sea",
+   "path": [
+    [
+     -16.9016,
+     32.6412
+    ],
+    [
+     -16.9269,
+     32.6183
+    ],
+    [
+     -18.0398,
+     32.3132
+    ],
+    [
+     -64.9718,
+     18.788
+    ],
+    [
+     -66.11,
+     18.46
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 2.0
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Atlantic Ocean",
+    "lat": 25,
+    "lng": -40,
+    "kind": "sea"
+   }
+  ]
+ }
+}

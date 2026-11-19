@@ -1,0 +1,33 @@
+# SeaDream Yacht Club, second pass: port positions, the brand's yacht pages, and its photographs and suite films
+# copied into the house Cloudinary library (partner agreement, James, 15 Nov 2026). Commits scripts/data/seadream/.
+name: SeaDream assets
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/partners/seadream-assets.mjs, .github/workflows/seadream-assets.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
+      - run: node scripts/partners/seadream-assets.mjs
+        env:
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "jwco-bot"
+          git config user.email "jwco-bot@users.noreply.github.com"
+          git add scripts/data/seadream/
+          git diff --cached --quiet || git commit -m "SeaDream ports and photographs, $(date -u +%F)"
+          git pull --rebase -q && git push

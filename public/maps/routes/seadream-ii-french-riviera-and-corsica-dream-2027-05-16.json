@@ -1,0 +1,333 @@
+{
+ "id": "seadream-ii-french-riviera-and-corsica-dream-2027-05-16",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "French Riviera & Corsica Dream aboard SeaDream II",
+ "subtitle": "7 nights · Rome (Civitavecchia) to Nice · SeaDream II",
+ "days": {
+  "1": "Rome (Civitavecchia)",
+  "2": "Porto Cervo and Bonifacio",
+  "3": "Bonifacio",
+  "4": "Calvi",
+  "5": "Monte Carlo",
+  "6": "St. Tropez",
+  "7": "Cannes",
+  "8": "Nice"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Rome (Civitavecchia)",
+   "lat": 41.6733,
+   "lng": 12.3393,
+   "kind": "port",
+   "charted": [
+    12.4829,
+    41.8933
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Porto Cervo, Sardinia",
+   "lat": 41.1379,
+   "lng": 9.5434,
+   "mode": "sea",
+   "path": [
+    [
+     12.3393,
+     41.6733
+    ],
+    [
+     9.5434,
+     41.1379
+    ]
+   ],
+   "charted": [
+    9.5354,
+    41.1319
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Bonifacio, Corsica",
+   "lat": 41.3812,
+   "lng": 9.1575,
+   "mode": "sea",
+   "path": [
+    [
+     9.5434,
+     41.1379
+    ],
+    [
+     9.5394,
+     41.1732
+    ],
+    [
+     9.4933,
+     41.2425
+    ],
+    [
+     9.3796,
+     41.3211
+    ],
+    [
+     9.2506,
+     41.3234
+    ],
+    [
+     9.1737,
+     41.3557
+    ],
+    [
+     9.1676,
+     41.3603
+    ],
+    [
+     9.1615,
+     41.3719
+    ],
+    [
+     9.1575,
+     41.3812
+    ]
+   ],
+   "charted": [
+    9.1591,
+    41.3872
+   ],
+   "lane": "sea",
+   "clear": 0.99
+  },
+  {
+   "day": 4,
+   "name": "Calvi, Corsica",
+   "lat": 42.5653,
+   "lng": 8.7654,
+   "mode": "sea",
+   "path": [
+    [
+     9.1575,
+     41.3812
+    ],
+    [
+     9.0854,
+     41.3749
+    ],
+    [
+     8.8336,
+     41.497
+    ],
+    [
+     8.7569,
+     41.554
+    ],
+    [
+     8.6365,
+     41.7331
+    ],
+    [
+     8.5598,
+     41.8715
+    ],
+    [
+     8.5051,
+     42.3681
+    ],
+    [
+     8.6803,
+     42.5716
+    ],
+    [
+     8.7022,
+     42.5879
+    ],
+    [
+     8.7241,
+     42.596
+    ],
+    [
+     8.746,
+     42.5879
+    ],
+    [
+     8.7569,
+     42.5797
+    ],
+    [
+     8.7654,
+     42.5653
+    ]
+   ],
+   "charted": [
+    8.7589,
+    42.5677
+   ],
+   "lane": "sea",
+   "clear": 0.91
+  },
+  {
+   "day": 5,
+   "name": "Monte Carlo",
+   "lat": 43.7403,
+   "lng": 7.4365,
+   "mode": "sea",
+   "path": [
+    [
+     8.7654,
+     42.5653
+    ],
+    [
+     7.4365,
+     43.7403
+    ]
+   ],
+   "charted": [
+    7.4266,
+    43.7403
+   ]
+  },
+  {
+   "day": 6,
+   "name": "St. Tropez",
+   "lat": 43.2775,
+   "lng": 6.6356,
+   "mode": "sea",
+   "path": [
+    [
+     7.4365,
+     43.7403
+    ],
+    [
+     7.4408,
+     43.7257
+    ],
+    [
+     6.9782,
+     43.4022
+    ],
+    [
+     6.6356,
+     43.2775
+    ]
+   ],
+   "charted": [
+    6.6405,
+    43.2727
+   ],
+   "lane": "sea",
+   "clear": 1.3
+  },
+  {
+   "day": 7,
+   "name": "Cannes",
+   "lat": 43.5431,
+   "lng": 7.0084,
+   "mode": "sea",
+   "path": [
+    [
+     6.6356,
+     43.2775
+    ],
+    [
+     6.8979,
+     43.4208
+    ],
+    [
+     6.935,
+     43.4455
+    ],
+    [
+     7.0084,
+     43.5431
+    ]
+   ],
+   "charted": [
+    7.0134,
+    43.5515
+   ],
+   "lane": "sea",
+   "clear": 1.07
+  },
+  {
+   "day": 8,
+   "name": "Nice",
+   "lat": 43.6889,
+   "lng": 7.2684,
+   "mode": "sea",
+   "path": [
+    [
+     7.0084,
+     43.5431
+    ],
+    [
+     7.0193,
+     43.506
+    ],
+    [
+     7.0224,
+     43.5016
+    ],
+    [
+     7.0286,
+     43.4971
+    ],
+    [
+     7.0472,
+     43.4926
+    ],
+    [
+     7.0596,
+     43.4971
+    ],
+    [
+     7.1433,
+     43.5352
+    ],
+    [
+     7.1837,
+     43.5667
+    ],
+    [
+     7.2684,
+     43.6889
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    7.2684,
+    43.7009
+   ],
+   "lane": "sea",
+   "clear": 1.24
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25,
+    "kind": "sea"
+   },
+   {
+    "text": "Adriatic Sea",
+    "lat": 43,
+    "lng": 15.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40,
+    "lng": 12,
+    "kind": "sea"
+   }
+  ]
+ }
+}

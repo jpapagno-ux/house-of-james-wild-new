@@ -52,7 +52,7 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
     const weeks = pilot ? dayed.filter((i) => i.nights === 7).reverse() : dayed.filter((i) => readRoute(shipRouteId(rec, i)));
     if (!weeks.length) return null;
     const routes = weeks.map((w) => terrainRoute(w.name.split(":")[0], readRoute(shipRouteId(rec, w)), w.days.map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng, mode: d.mode }))));
-    const where = e.waters === "galapagos" ? "in the Galapagos" : e.waters === "fiji" ? "in Fiji" : e.waters === "tahiti" ? "in French Polynesia" : e.waters === "indonesia" ? "in Indonesia" : "in Antarctica";
+    const where = ({ galapagos: "in the Galapagos", fiji: "in Fiji", tahiti: "in French Polynesia", indonesia: "in Indonesia", caribbean: "at sea", mediterranean: "at sea", seychelles: "in the Seychelles" } as Record<string, string>)[e.waters] ?? "in Antarctica";
     // One frame, two views (James, 8 Nov 2026): where every itinerary of the day log has its 3D route, in the same order,
     // the 3D map opens in the chart's frame behind a "3D Flyover | Itinerary Chart" switch (routeViewsOn, flag.ts).
     // every itinerary of the log with its route, in log order (Natural Paradise's two weeks included)

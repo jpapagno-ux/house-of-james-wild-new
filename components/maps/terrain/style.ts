@@ -51,10 +51,24 @@ export const SKY_NIGHT: SkySpecification = {
 export const depthLayer = (): LayerSpecification => ({
   id: "jw-depth", type: "color-relief", source: "jw-depth",
   paint: {
-    "color-relief-color": ["interpolate", ["linear"], ["elevation"], -5000, "#2B4954", -2000, "#3B606B", -600, "#557D86", -150, "#7FA3A6", -30, "#AFC8C6", -2, "#D3E1DD", 0, "rgba(0,0,0,0)"],
-    "color-relief-opacity": 0.7,
+    // One tone from 200 m up to the shore (James, 18 Nov 2026: "what are these boxes"): the open seabed survey is a coarse
+    // grid, and shading the shallows by it drew that grid as rows of boxes over the banks. Only deep water is shaded now,
+    // where the seabed changes slowly; the shallow tone is the sea colour itself (lib/palette.ts TERRAIN.water).
+    "color-relief-color": ["interpolate", ["linear"], ["elevation"], -5000, "#23404B", -2500, "#2F5560", -800, "#46707C", -200, "#5E8490", -1, "#5E8490", 0, "rgba(0,0,0,0)"],
+    "color-relief-opacity": 0.85,
   },
 } as unknown as LayerSpecification);
+/** Moss and stone (James, 18 Nov 2026): on voyage maps the land is tinted by height from the raw elevation tiles, a stone
+ *  shore, moss slopes and pale summits, so an island reads as an island at a glance. The sea is left clear (the depth
+ *  tints draw it). Voyages between 62 N and 62 S only: ice, desert stays and the country atlases keep the plain chart. */
+export const landLayer = (): LayerSpecification => ({
+  id: "jw-land", type: "color-relief", source: "jw-land",
+  paint: {
+    "color-relief-color": ["interpolate", ["linear"], ["elevation"], 0, "rgba(0,0,0,0)", 1, "#D8CFBF", 40, "#B9BC9A", 200, "#8F9A70", 700, "#6F7D56", 1500, "#A9A590", 2600, "#E4DFD4"],
+    "color-relief-opacity": 0.8,
+  },
+} as unknown as LayerSpecification);
+export const mossFor = (kind: string, lats: number[]) => kind === "voyage" && lats.length > 0 && lats.every((y) => Math.abs(y) < 62);
 /** Where the depth tints sit: just above the base style's water fills, under every line, label and our own route. */
 export const depthIndex = (layers: { type: string; "source-layer"?: string }[]) => {
   let at = -1;
@@ -85,7 +99,7 @@ export function viewOps(base: Lyr[], on: boolean, relief: "terrain" | "flat" | u
   const vis = (l: Lyr) => (l.layout?.visibility === "none" ? "none" : "visible");
   for (const l of base) {
     if (l.id === "jw-satellite") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on ? "visible" : "none" });
-    else if (l.id === "jw-depth") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on ? "none" : "visible" });
+    else if (l.id === "jw-depth" || l.id === "jw-land") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on ? "none" : "visible" });
     else if (l.id === "jw-hillshade") ops.push({ id: l.id, kind: "layout", prop: "visibility", value: on || relief === "flat" ? "none" : vis(l) });
     else if (l.id.startsWith("jw-")) continue; // our own route, stops and pins stay as they are
     else if (l.type === "background") ops.push({ id: l.id, kind: "paint", prop: "background-color", value: groundOf(on) });
@@ -106,6 +120,7 @@ export function nightOps(base: PaintLyr[], on: boolean): ViewOp[] {
     const sl = l["source-layer"] ?? "";
     if (l.id === "jw-hillshade") { set(l, "hillshade-shadow-color", "#000000"); set(l, "hillshade-highlight-color", "#5A534C"); set(l, "hillshade-accent-color", "#2E2B28"); }
     else if (l.id === "jw-depth") set(l, "color-relief-opacity", 0.45);
+    else if (l.id === "jw-land") set(l, "color-relief-opacity", 0.18);
     else if (l.id.startsWith("jw-")) continue;
     else if (l.type === "background") ops.push({ id: l.id, kind: "paint", prop: "background-color", value: on ? NIGHT.ground : TERRAIN.ground });
     else if (l.type === "fill" && sl === "water") { set(l, "fill-color", NIGHT.sea); set(l, "fill-outline-color", NIGHT.sea); }

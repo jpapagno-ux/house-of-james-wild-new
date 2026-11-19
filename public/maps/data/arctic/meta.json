@@ -1,0 +1,11 @@
+{
+ "slug": "arctic",
+ "name": "The Arctic",
+ "bbox": [
+  -76.02,
+  -1.16,
+  106.62,
+  83.05
+ ],
+ "attribution": "Land: OpenStreetMap contributors (ODbL), simplified"
+}

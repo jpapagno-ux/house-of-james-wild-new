@@ -1,0 +1,11 @@
+{
+ "slug": "caribbean",
+ "name": "The Caribbean",
+ "bbox": [
+  -90.82,
+  6.52,
+  -12.97,
+  44.81
+ ],
+ "attribution": "Land: OpenStreetMap contributors (ODbL), simplified"
+}

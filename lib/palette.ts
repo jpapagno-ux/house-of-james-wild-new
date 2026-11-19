@@ -54,8 +54,9 @@ export const COMING_TINTS = { blush: "#E8C4C6", blushSoft: "#E9DCDD", dot: "#C24
  *  with two warmer covers, water a soft verdigris-tinted neutral, roads and borders the house keylines, labels Graphite
  *  on a Paper halo, hillshade in warm graphite shadows and paper highlights, the sky and fog in warm mist. Route lines
  *  and pins are the volume bases (lib/volumes.ts) and the active stop House Crimson, so they need no token here. */
+// The sea deepened to a slate teal (James, 18 Nov 2026: "go" on the stronger chart), so islands and the route stand out.
 export const TERRAIN = {
-  ground: "#F4F2EF", landcover: "#EEEBE6", park: "#ECE9E2", water: "#E4EBE8", waterLine: "#C9D6D1",
+  ground: "#F4F2EF", landcover: "#EEEBE6", park: "#ECE9E2", water: "#5E8490", waterLine: "#7FA0A8",
   road: "#DCD7D0", boundary: "#CFC8BF", label: "#2E2B28", labelSoft: "#6B635A", halo: "#FFFFFF",
   shadow: "#2E2B28", highlight: "#FFFFFF", accent: "#8C8277", sky: "#F4F2EF", horizon: "#FFFFFF", fog: "#F4F2EF",
 };

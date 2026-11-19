@@ -131,7 +131,7 @@ export default function PolarPage() {
             </div>
             <a href={POLAR_CROSSINGS_URL} target="_blank" rel="noopener" className="md:justify-self-end ledger-btn ledger-btn--solid inline-flex items-center gap-2 min-h-[48px]">Visit polarcrossings.com<ArrowUpRight className="w-4 h-4" strokeWidth={1.5} aria-hidden="true" /></a>
           </div>
-          <p className="mt-4 text-[15px]"><Link href="/partners/antarctica21" className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: ink }}>Who are Antarctica21, and why the house works with them<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></p>
+          <p className="mt-4 text-[15px]"><Link href="/partners/antarctica21" className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: ink }}>Who is Antarctica21, and why the house works with it<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></p>
         </section>
 
         <FaqBlock faqs={FAQS} title="What Should You Know Before You Go South?" />

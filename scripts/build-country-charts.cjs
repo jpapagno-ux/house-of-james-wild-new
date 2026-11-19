@@ -16,7 +16,9 @@ const stays = require("../lib/content/stays.json").stays;
 const W = 1000;
 // Hand-set frames where the stays sit in one corner of a scattered country (Society Islands, not the Marquesas).
 // Ibiza: the island, not the whole of Spain.
-const FRAME = { tahiti: [-152.4, -18.0, -147.4, -14.6], "spain-ibiza": [1.05, 38.75, 1.85, 39.2], "spain-isla-mallorca": [2.25, 39.22, 3.55, 40.02] };
+const FRAME = { tahiti: [-152.4, -18.0, -147.4, -14.6], "spain-ibiza": [1.05, 38.75, 1.85, 39.2], "spain-isla-mallorca": [2.25, 39.22, 3.55, 40.02],
+  // Alaska (19 Nov 2026): no stays yet, so the chart frames the coast the UnCruise voyages sail, Dutch Harbor to Ketchikan.
+  alaska: [-168.5, 52.5, -129.5, 64.5] };
 // Place names drawn on a country's chart (lat, lng, text; the text starts at the point). Set by hand,
 // sparingly, where the stays sit far apart (Guatemala, 1 Nov 2026: the Petén and the highlands).
 const AREAS = {
@@ -26,6 +28,8 @@ const AREAS = {
   "sri-lanka": [[6.93, 79.86, "Colombo"], [7.17, 79.88, "CMB ✈"], [7.29, 80.64, "Kandy"], [7.96, 80.76, "Sigiriya"], [7.86, 80.65, "Dambulla"],
     [8.35, 80.39, "Anuradhapura"], [7.94, 81.0, "Polonnaruwa"], [8.45, 80.0, "Wilpattu"], [6.97, 80.78, "Nuwara Eliya"], [6.03, 80.22, "Galle"],
     [5.95, 80.46, "Mirissa"], [6.44, 80.9, "Udawalawe"], [6.37, 81.52, "Yala"], [8.59, 81.21, "Trincomalee"]],
+  alaska: [[58.3, -134.42, "Juneau"], [57.05, -135.33, "Sitka"], [55.34, -131.65, "Ketchikan"], [58.75, -136.5, "Glacier Bay"], [60.1, -149.44, "Seward"],
+    [61.22, -149.9, "Anchorage"], [64.84, -147.72, "Fairbanks"], [63.07, -151.0, "Denali"], [58.5, -155.0, "Katmai"], [53.89, -166.54, "Dutch Harbor"]],
 };
 const polysOf = (g) => (g.type === "Polygon" ? [g.coordinates] : g.type === "MultiPolygon" ? g.coordinates : []);
 const ringBox = (ring) => ring.reduce((b, [x, y]) => [Math.min(b[0], x), Math.min(b[1], y), Math.max(b[2], x), Math.max(b[3], y)], [Infinity, Infinity, -Infinity, -Infinity]);
@@ -54,7 +58,7 @@ for (const c of countries) {
   let B;
   if (FRAME[c.slug]) B = FRAME[c.slug].slice();
   const sp = pts.length ? ringBox(S(pts)) : null;
-  if (B) { /* hand frame */ } else if (c.useStays || (spanOf(box) > 22 && sp)) {
+  if (B) { /* hand frame */ } else if (sp && (c.useStays || spanOf(box) > 22)) {
     B = sp; const min = c.useStays ? 7 : 9;
     const cx = (B[0] + B[2]) / 2, cy = (B[1] + B[3]) / 2;
     const hw = Math.max((B[2] - B[0]) / 2, min / 2 / Math.cos(cy * Math.PI / 180)), hh = Math.max((B[3] - B[1]) / 2, min / 2);

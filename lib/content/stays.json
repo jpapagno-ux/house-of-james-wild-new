@@ -20156,6 +20156,73 @@
    "placeSlug": null
   },
   {
+   "slug": "grand-park-hotel-rovinj",
+   "name": "Grand Park Hotel Rovinj",
+   "ledgerId": "STY-2026-000765",
+   "country": "Croatia",
+   "countrySlug": "croatia",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Two hundred and nine rooms and suites by Piero Lissoni on Rovinj's eastern shore, with two Michelin-starred restaurants",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/grand-park-hotel-rovinj/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/grand-park-hotel-rovinj/pools",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/grand-park-hotel-rovinj/spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/grand-park-hotel-rovinj/restaurant"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "food_and_wine"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "209 rooms and suites.",
+     "Rooms: Premium Park View, Premium Sea View, Deluxe Sea View, Grand Sea View, Grand Marina View, and connecting rooms.",
+     "Suites: Hideaway Duplex, Horizon Deluxe, Rovinj Signature, Island Deluxe and Sunset Signature."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Dinner at Cap Aureo or Agli Amici Rovinj, both Michelin starred",
+     "Albaro Wellness and Spa",
+     "Pools above the harbour and a beach 150 metres away",
+     "The old town of Rovinj, 800 metres along the shore"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Grand Park Hotel Rovinj steps down the hillside on the eastern shore of Rovinj, twenty metres from the harbour and looking straight across at the old town and its bell tower. Piero Lissoni designed the interiors; two of its seven restaurants and bars, Cap Aureo and Agli Amici Rovinj, hold Michelin stars."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "greystoke-mahale-by-nomad",
    "name": "Greystoke Mahale",
    "ledgerId": "STY-2026-000103",
@@ -33782,6 +33849,72 @@
    },
    "volumes": [
     "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "maslina-resort",
+   "name": "Maslina Resort",
+   "ledgerId": "STY-2026-000763",
+   "country": "Croatia",
+   "countrySlug": "croatia",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Rooms, suites and villas on Maslinica Bay on Hvar, finished in natural materials, with heated plunge pools and an island spa",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/maslina-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/maslina-resort/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/maslina-resort/room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/maslina-resort/spa"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rooms: Garden Room and Panoramic Room, each with a sunlit loggia.",
+     "Suites: Panoramic, Pool Panoramic, Garden, Pool and Bay Suites, plus two and three bedroom family suites. Eight suites have a private heated plunge pool.",
+     "Villas: Villa Litica, Villa Borovina, Villa Uvala and Maslinica Maison N52."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Pharomatiq Wellness, the resort's spa, drawn from Hvar's plants and the Mediterranean way of life.",
+     "An organic garden, with workshops for children.",
+     "Arrival by speedboat, and days of yoga, paddleboarding and snorkelling in the bay."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Maslina Resort sits above Maslinica Bay near Stari Grad on Hvar, finished in stone, wood and organic linens so that the island does the decorating. The rooms, suites and villas look out over the bay, and eight of the suites have their own heated plunge pool."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
     "stays"
    ],
    "arrivalHubIds": [],
@@ -53217,6 +53350,71 @@
    "placeSlug": null
   },
   {
+   "slug": "sorrisniva",
+   "name": "Sorrisniva Arctic Wilderness Lodge",
+   "ledgerId": "STY-2026-000762",
+   "country": "Norway",
+   "countrySlug": "norway",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A lodge on the Alta River in Arctic Norway, open all year, with an Igloo Hotel rebuilt from snow every winter",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/sorrisniva/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/sorrisniva/igloo-hotel"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twenty-four rooms and suites at the Arctic Wilderness Lodge.",
+     "Seventeen River Rooms, five River Suites and two Dual Room Premium Suites.",
+     "The Igloo Hotel, rebuilt every winter, open 20 December to 1 April."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Northern lights in winter and the midnight sun in summer",
+     "Snowmobiles across the plateau and boats on the Alta River",
+     "Dinner at Maku and at the Lavvu restaurant",
+     "A spa on the river"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Sorrisniva sits on the banks of the Alta River in Finnmark, far above the Arctic Circle. The lodge is open all year: northern lights and snowmobiles in winter, the midnight sun and the river in summer. Each winter the Igloo Hotel next door is carved again from snow and ice, open from 20 December to 1 April."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "beckon-southern-ocean-lodge",
    "name": "Southern Ocean Lodge",
    "ledgerId": "STY-2026-000041",
@@ -53534,6 +53732,73 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "storfjord-hotel",
+   "name": "Storfjord Hotel",
+   "ledgerId": "STY-2026-000761",
+   "country": "Norway",
+   "countrySlug": "norway",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Thirty timber rooms on a hillside above the Storfjord, with open fires, a lavvo and a boathouse supper on Fridays",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/storfjord/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/storfjord/suite-fireplace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/storfjord/lounge-fireplace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/storfjord/log-room"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Thirty rooms across four timber buildings.",
+     "The Storfjord Suite, 88 square metres with its own fireplace.",
+     "Suites, junior suites and log rooms looking over the fjord or the forest."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Dinner in the main dining room, built around the coast and the season",
+     "Fridays in the Boathouse: supper cooked over an open fire by the water",
+     "Evenings in the Lavvo, the hotel's traditional tent",
+     "Outdoor jacuzzis and a sauna looking out over the fjord"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Storfjord Hotel stands in the forest above the Storfjord near Ålesund, built in timber with turf roofs and filled with open fires. A member of Relais & Châteaux, it keeps to thirty rooms across four buildings, so the fjord, the birches and the quiet do most of the work."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -61734,6 +61999,73 @@
    "volumes": [
     "stays",
     "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "villa-nai-3-3",
+   "name": "Villa Nai 3.3",
+   "ledgerId": "STY-2026-000764",
+   "country": "Croatia",
+   "countrySlug": "croatia",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Eight adults-only rooms and suites in a 500-year-old olive grove on Dugi Otok, with a seawater pool and the family's own olive oil",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-nai-3-3/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-nai-3-3/terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-nai-3-3/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-nai-3-3/detail"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "food_and_wine"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five deluxe rooms and three deluxe suites, each with its own terrace onto the olive grove.",
+     "Adults only; children from 12, or of any age on a full buyout.",
+     "King beds with Frette linens, separate tub and shower; some with four-poster beds and fireplaces."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "A seawater swimming pool in the olive grove",
+     "Menus from the estate's own organic garden, olive oil, meat and fish",
+     "The olive harvest and same-day pressing"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Villa Nai 3.3 stands in a 500-year-old olive grove in the village of Žman on Dugi Otok, an island off Zadar ringed by national parks. The estate presses its own olive oil on the day of the harvest. Nai means snow in old Dalmatian: over the past century it fell here just 3.3 days a year."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null

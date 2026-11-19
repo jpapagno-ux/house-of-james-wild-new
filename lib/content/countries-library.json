@@ -1584,7 +1584,7 @@
    "region": "europe",
    "regionName": "Europe",
    "ledgerId": "DST-2026-000029",
-   "subtitle": "Walled towns, island channels and a long, dry summer",
+   "subtitle": "Walled towns, island channels and a long Adriatic summer",
    "leading": "Clear Adriatic waters, limestone towns, and sunlit islands create a coastal world full of charm. The landscape blends history with natural beauty, from terracotta rooftops to hidden bays and olive groves. Stays range from seaside escapes to countryside retreats. Sail between islands, swim in calm coves, or wander historic streets that open into the sea breeze. Croatia invites days shaped by saltwater, sunlight, and simple joy.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec807a21d809555ca6e71_CroatiaHero1.jpg",
@@ -1592,7 +1592,7 @@
    },
    "story": [
     {
-     "eyebrow": "Walled towns, island channels and a long, dry summer",
+     "eyebrow": "Walled towns, island channels and a long Adriatic summer",
      "title": "A Coast of 1,244 Islands",
      "blocks": [
       {
@@ -1600,7 +1600,7 @@
       }
      ],
      "image": {
-      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-dubrovnik/hero",
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/hotel-excelsior-dubrovnik/hero",
       "alt": "Croatia: A Coast of 1,244 Islands"
      }
     },
@@ -1626,7 +1626,7 @@
       }
      ],
      "image": {
-      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/hotel-excelsior-dubrovnik/hero",
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/maslina-resort/hero",
       "alt": "Croatia: Dubrovnik, Split, the Islands and the Parks"
      }
     }

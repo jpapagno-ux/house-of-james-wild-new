@@ -208,3 +208,7 @@ Lion Sands only example to review on the live site.
   Settings to add in Vercel, Preview environment only: `CHECKOUT_STAGING_SUPABASE_URL` and
   `CHECKOUT_STAGING_SERVICE_ROLE_KEY`.
 - **Payment provider.** Pending with James.
+- **Live check, 19 Nov 2026.** Opened on the live site at `house-of-james-wild-new.vercel.app`. The first live load
+  showed no Lion Sands price: the card route asked for a column visitors are not granted. Fixed in PR #440 and
+  checked again live: the card loads and the example shows est. US$20,520.00 for three nights, "Estimated rate · to be
+  confirmed", "Indicative price · please enquire". Not checked live: the phone layout, photographs, and Leeu House.

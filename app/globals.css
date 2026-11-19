@@ -849,3 +849,9 @@ li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in s
 .theme-terra-y .ty-chipbtn { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 12px; border: 1px solid var(--ty-ice); border-radius: 2px; background: #FFFFFF; color: var(--ty-night); font: 600 12px/1 'Manrope', ui-sans-serif, system-ui, sans-serif; cursor: pointer; }
 .theme-terra-y .ty-chipbtn[aria-pressed="true"] { background: var(--ty-night); border-color: var(--ty-night); color: var(--ty-frost); }
 .theme-terra-y .ty-chipbtn:focus-visible { outline: 2px solid var(--ty-signal-deep); outline-offset: 2px; }
+
+/* Iggi's frame (19 Nov 2026): a chat-sized window, not a page-length one. On phones it is the viewport less the
+   sticky header and the Enquire bar, so the input is always reachable; on desktop a steady 640px. The thread
+   scrolls inside the frame (the Core's shell is 100dvh of it). */
+.iggi-frame { height: clamp(420px, calc(100svh - 240px), 620px); }
+@media (min-width: 768px) { .iggi-frame { height: 640px; } }

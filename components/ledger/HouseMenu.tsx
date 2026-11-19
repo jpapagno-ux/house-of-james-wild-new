@@ -5,7 +5,7 @@ import { EF_COUNT, EF_PATH } from "@/lib/content/exceptional-few";
 import Link from "next/link";
 import { FLAGS } from "@/lib/booking-live/flags";
 import { useEffect, useRef, useState } from "react";
-import { X, Search, Phone, ChevronRight } from "lucide-react";
+import { X, Search, Phone, ChevronRight, KeyRound } from "lucide-react";
 import { MAIN_EXTRA, PLAN_CTA, REGIONS, SITE, UTILITY_NAV, LINKED_VOLUMES as VOLUMES, type MegaMenu } from "@/lib/site";
 import { romanForHref } from "@/lib/volumes";
 import { REGION_DATA } from "@/lib/content/regions";
@@ -15,6 +15,7 @@ import { lockScroll } from "@/lib/scroll-lock";
 import { JwcoSeal } from "./Marks";
 import Wordmark from "./Wordmark";
 import CompassSpin from "./CompassSpin";
+import { openSignIn } from "@/lib/signin-bus";
 
 // HouseMenu — the full-screen menu (house chrome, 30 Oct 2026). One "Menu"
 // word in the bar opens it on every screen size. Left: the six volumes at
@@ -105,6 +106,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
               <ul className="mt-2 grid grid-cols-2 gap-x-4">
                 {EXTRA.filter((l) => l.href !== "/destinations").map((l) => <li key={l.href}><Link href={l.href} onClick={onClose} className="min-h-[44px] flex items-center text-[15px]">{l.label}</Link></li>)}
                 <li><Link href={FLAGS.accounts ? "/account" : "/folio"} onClick={onClose} className="min-h-[44px] flex items-center text-[15px]">My Folio</Link></li>
+                <li><button type="button" onClick={() => { onClose(); openSignIn(); }} className="min-h-[44px] flex items-center gap-2 text-[15px] font-medium"><KeyRound className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />Sign in</button></li>
                 <li><a href={`tel:${SITE.phone.tel}`} className="min-h-[44px] flex items-center gap-2 text-[15px]"><Phone className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />{SITE.phone.display}</a></li>
               </ul>
             </nav>
@@ -172,6 +174,7 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
               <li key={l.href}><Link href={l.href} onClick={onClose} className="text-[16px] hover:ledger-crimson inline-flex items-center gap-2">{l.href === "/compass" && <CompassSpin size={18} />}{l.label}</Link></li>
             ))}
             <li><Link href={FLAGS.accounts ? "/account" : "/folio"} onClick={onClose} className="text-[16px] hover:ledger-crimson">My Folio</Link></li>
+            <li><button type="button" onClick={() => { onClose(); openSignIn(); }} className="text-[16px] hover:ledger-crimson inline-flex items-center gap-2"><KeyRound className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />Sign in</button></li>
           </ul>
           <div className="mt-10 flex flex-col gap-2 text-[15px]">
             <a href={`tel:${SITE.phone.tel}`} className="inline-flex items-center gap-2 hover:ledger-crimson"><Phone className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />{SITE.phone.display}</a>

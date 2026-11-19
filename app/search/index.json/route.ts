@@ -115,7 +115,7 @@ export function GET() {
   }
   for (const [n, u, g] of PAGES) add({ t: "page", n, u, k: "Section", p: null, r: null, f: [], g });
   // The Exceptional Few: the collection itself, and its number on each place it holds.
-  items.unshift({ t: "stay", n: "The Exceptional Few", u: EF_PATH, k: "Collection", p: null, r: null, f: [], g: `${EF_CARDS.length} hand-numbered stays and ships: ${EF_CARDS.map((c) => c.name).join(", ")}` });
+  items.unshift({ t: "stay", n: "The Exceptional Few", u: EF_PATH, k: "Collection", p: null, r: null, f: [], g: `${EF_CARDS.length} hand-numbered stays: ${EF_CARDS.map((c) => c.name).join(", ")}` });
   for (const i of items) { const c = efCardForHref(i.u); if (c) i.g = `The Exceptional Few, ${c.label}. ${i.g ?? ""}`.trim(); }
   return Response.json({ builtOn: new Date().toISOString().slice(0, 10), items });
 }

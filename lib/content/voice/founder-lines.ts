@@ -8,6 +8,10 @@ export type FounderLine = { line: string; where: string; when: string };
 
 export const FOUNDER_LINES: Record<string, FounderLine> = {
   // filled from James's marks in the Voice Bank
+  // Hermes and Amandira (19 Nov 2026): the notes James approved for each ship on 4 Nov 2026, word for word. They sat on
+  // the ships' Exceptional Few entrance until the collection became stays only; they move here so his words stay on the page.
+  "ship:hermes-galapagos": { line: "I send people to Hermes when they want the Galápagos without giving up a good night's sleep. Twenty guests, twenty crew, a butler on every deck. You'll be looked after before you know you needed it. Bringing the family or a group of friends? Take the whole ship.", where: "Galápagos", when: "The Ledger, 2026" },
+  "ship:amandira": { line: "Amandira is for the family that wants Indonesia to themselves. Ten guests, fourteen crew, two chefs and a dive master, and the whole boat bends around your day. Put an Aman on land at either end and ask me which route.", where: "Indonesia", when: "The Ledger, 2026" },
 };
 
 export const founderLine = (key: string): FounderLine | undefined => FOUNDER_LINES[key];

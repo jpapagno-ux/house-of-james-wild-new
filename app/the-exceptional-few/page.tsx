@@ -9,19 +9,21 @@ import EFCollectionCard from "@/components/exceptional-few/EFCollectionCard";
 import { EFStamp } from "@/components/exceptional-few/EFBadge";
 import { EF_CARDS, EF_PATH } from "@/lib/content/exceptional-few-cards";
 import { SIGNAL_LABEL, type SignalKey } from "@/lib/content/exceptional-few";
+import { TV_PATH } from "@/lib/content/timeless-voyages-flag";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph, ids } from "@/lib/schema";
 
 // /the-exceptional-few: the home of the numbered collection (James approved, 4 Nov 2026). Not a volume: each
-// place stays filed in its own volume (Amangiri in Stays, Hermes in Voyages) and wears the stamp wherever it
+// place stays filed in its own volume and wears the stamp wherever it
 // appears. Numbers stand as they were given; gaps are left as they are. Everything is read from
-// lib/content/exceptional-few-cards.ts.
+// lib/content/exceptional-few-cards.ts. Stays only since 19 Nov 2026 (James): ships are Timeless Voyages, and the
+// Ships section below only prints if a ship card ever exists again.
 
 const stays = EF_CARDS.filter((c) => c.kind === "Stay");
 const ships = EF_CARDS.filter((c) => c.kind === "Ship");
 const countries = [...new Set(EF_CARDS.map((c) => c.country).filter(Boolean))] as string[];
 
-const ANSWER = `The Exceptional Few is James Wild & Co's numbered collection of the stays and ships that are genuinely singular: places with no real equivalent anywhere else. There are ${EF_CARDS.length} today, ${stays.length} stays and ${ships.length} ships across ${countries.length} countries. Each one stays filed in its own volume and carries a hand-numbered stamp, signed J.W., wherever it appears on the site.`;
+const ANSWER = `The Exceptional Few is James Wild & Co's numbered collection of the stays that are genuinely singular: places with no real equivalent anywhere else. There are ${EF_CARDS.length} today, across ${countries.length} countries. Each one stays filed in its own volume and carries a hand-numbered stamp, signed J.W., wherever it appears on the site. Ships have their own collection, Timeless Voyages.`;
 
 const SIGNALS: Record<SignalKey, string> = {
   place: "Somewhere you could not move it from. The setting is the reason, not the backdrop.",
@@ -40,15 +42,16 @@ const together = [
 const FAQS = [
   { q: "What is The Exceptional Few?", a: ANSWER },
   { q: "How does a place join The Exceptional Few?", a: "It is already in the Ledger, vetted by James or a named partner, and it is judged against six signals: place, privacy, design, access, humanity and rarity. The signals are written in words, never as a score. A place is designated, numbered in the order it was chosen, and reviewed again over time." },
-  { q: "Is The Exceptional Few a separate volume?", a: "No. A place keeps its home in its own volume: Amangiri stays in Stays and Hermes stays in Voyages. The collection runs across every volume, the way a star sits beside a restaurant in its city guide." },
+  { q: "Is The Exceptional Few a separate volume?", a: "No. A place keeps its home in its own volume: Amangiri is still filed in Stays. The designation sits beside it, the way a star sits beside a restaurant in its city guide." },
+  { q: "Are there ships in The Exceptional Few?", a: "No. The Exceptional Few is for stays. The ships James chooses one at a time are in Timeless Voyages, the collection inside Voyages, and Hermes and Amandira are both there." },
   { q: `Which places are in The Exceptional Few?`, a: EF_CARDS.map((c) => `${c.label} ${c.name} (${c.place})`).join("; ") + "." },
-  { q: "Why are some numbers missing?", a: "Numbers stand as they were given when each place was chosen. The collection shows only the places that are designated and published today." },
+  { q: "Why are some numbers missing?", a: "Numbers stand as they were given when each place was chosen, and a number is never given twice. No. 002 and No. 003 belonged to two ships, Hermes and Amandira, which now sit in Timeless Voyages." },
   { q: "Can I book one of them through James Wild & Co?", a: "Yes. Every place in the collection is booked through James Wild & Co, with the same planning as any other Ledger stay or voyage. Use Plan with James, or open the place and choose Plan this stay." },
 ];
 
 export const metadata = buildMetadata({
-  title: "The Exceptional Few: James Wild & Co's Numbered Collection of Singular Stays and Ships",
-  description: `${EF_CARDS.length} hand-numbered stays and ships with no real equivalent anywhere, from ${EF_CARDS.slice(0, 3).map((c) => c.name).join(", ")} to ${EF_CARDS[EF_CARDS.length - 1]?.name}. Chosen and signed by James Wild & Co.`,
+  title: "The Exceptional Few: James Wild & Co's Numbered Collection of Singular Stays",
+  description: `${EF_CARDS.length} hand-numbered stays with no real equivalent anywhere, from ${EF_CARDS.slice(0, 3).map((c) => c.name).join(", ")} to ${EF_CARDS[EF_CARDS.length - 1]?.name}. Chosen and signed by James Wild & Co.`,
   path: EF_PATH,
 });
 
@@ -68,8 +71,8 @@ export default function ExceptionalFewPage() {
               <p className="ledger-eyebrow text-house">A numbered collection · Across every volume</p>
               <h1 className="ledger-display text-[2.3rem] leading-[1.08] md:text-[3.4rem] mt-3">The Exceptional Few<span className="align-super text-[0.4em]">&trade;</span></h1>
               <p className="mt-4 text-[18px] md:text-[19px] ledger-muted max-w-xl leading-relaxed">Places with no second version. Each one is chosen, numbered and stamped by James, and stays filed in its own volume.</p>
-              <dl className="mt-7 grid grid-cols-3 gap-4 border-t ledger-rule pt-4 max-w-md">
-                {([[EF_CARDS.length, "In the collection"], [stays.length, "Stays"], [ships.length, "Ships"]] as const).map(([n, k]) => <div key={k}><dt className="sr-only">{k}</dt><dd><span className="ledger-display text-[1.9rem] leading-none">{n}</span><span className="block ledger-eyebrow mt-1">{k}</span></dd></div>)}
+              <dl className="mt-7 grid grid-cols-2 gap-4 border-t ledger-rule pt-4 max-w-xs">
+                {([[EF_CARDS.length, "Stays in the collection"], [countries.length, "Countries"]] as const).map(([n, k]) => <div key={k}><dt className="sr-only">{k}</dt><dd><span className="ledger-display text-[1.9rem] leading-none">{n}</span><span className="block ledger-eyebrow mt-1">{k}</span></dd></div>)}
               </dl>
             </div>
             <div className="flex justify-center lg:justify-end py-6" aria-hidden="true"><EFStamp no={EF_CARDS[0]?.no ?? 1} size={300} rotate={-6} /></div>
@@ -79,7 +82,7 @@ export default function ExceptionalFewPage() {
 
           <nav aria-label="Browse the collection" className="mt-8 flex flex-wrap gap-2">
             <a href="#the-stays" className="house-chip">Stays · {stays.length}</a>
-            <a href="#the-ships" className="house-chip">Ships · {ships.length}</a>
+            {ships.length > 0 && <a href="#the-ships" className="house-chip">Ships · {ships.length}</a>}
             <a href="#signals" className="house-chip">What earns a place</a>
             {together.length > 0 && <a href="#together" className="house-chip">Two in one trip</a>}
           </nav>
@@ -90,11 +93,15 @@ export default function ExceptionalFewPage() {
             <Grid items={stays} id="stays-grid" />
           </section>
 
-          <section className="mt-16 border-t ledger-rule pt-8" aria-labelledby="the-ships">
-            <p className="ledger-eyebrow text-house">Volume IV · Voyages</p>
-            <h2 id="the-ships" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2 scroll-mt-28">The Ships</h2>
-            <Grid items={ships} id="ships-grid" />
-          </section>
+          {ships.length > 0 ? (
+            <section className="mt-16 border-t ledger-rule pt-8" aria-labelledby="the-ships">
+              <p className="ledger-eyebrow text-house">Volume IV · Voyages</p>
+              <h2 id="the-ships" className="ledger-display text-[1.9rem] md:text-[2.4rem] mt-2 scroll-mt-28">The Ships</h2>
+              <Grid items={ships} id="ships-grid" />
+            </section>
+          ) : (
+            <p id="the-ships" className="mt-10 max-w-2xl text-[17px] leading-relaxed ledger-muted scroll-mt-28">Looking for a ship? The Exceptional Few is for stays. The ships James chooses one at a time, Hermes and Amandira among them, are in <SafeLink href={TV_PATH} className="underline underline-offset-4 hover:text-crimson">Timeless Voyages</SafeLink>.</p>
+          )}
 
           <section id="signals" className="mt-16 border-t ledger-rule pt-8 scroll-mt-28" aria-labelledby="signals-h">
             <p className="ledger-eyebrow text-house">How a place is chosen</p>

@@ -40,7 +40,7 @@ export function GET() {
     "",
     ...(TIMELESS_VOYAGES_ON ? ["## Timeless Voyages", `- A collection of ships inside Voyages, chosen one at a time, at ${absoluteUrl(TV_PATH)}: ${TIMELESS_VOYAGES.map((t) => `${t.vesselName ?? t.vesselSlug}${t.operator ? ` (${t.operator})` : ""}`).join(", ")}. Fares are shown as each operator publishes them, per person or per suite as stated on the ship page.`, ""] : []),
     "## The Exceptional Few",
-    `- A hand-numbered collection across every volume, at ${absoluteUrl(EF_PATH)}: the stays and ships James Wild & Co judges to have no real equivalent. Each place stays filed in its own volume and carries its number. Cite the number with the name.`,
+    `- A hand-numbered collection across every volume, at ${absoluteUrl(EF_PATH)}: the stays James Wild & Co judges to have no real equivalent (stays only; ships are in Timeless Voyages). Each place stays filed in its own volume and carries its number. Cite the number with the name.`,
     ...EF_CARDS.map((c) => `- ${c.label} ${c.name}, ${c.place}: ${absoluteUrl(c.href)}`),
     "",
     "## Ledger ID scheme (cite the ID with the name; one ID per place)",

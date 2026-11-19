@@ -100,7 +100,7 @@ export default function OperatorVoyagePage({ v }: { v: OperatorVoyage }) {
           <AnswerBlock>{answer}</AnswerBlock>
 
           <ShipItinerary ship={v.shipName} itineraries={[{ name: v.title, nights: v.nights, direction: v.direction, days: v.days }]} map={map}
-            terrain={route && terrainRegion(v.region) ? { id: `see-${v.slug}-in-3d`, kind: "voyage", ink: volumeMark("voyages"), title: `${v.title} aboard ${v.shipName}`, exaggeration: 1.8, routes: [terrainRoute(v.title, route, v.days.filter((d) => d.lat != null).map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng })))] } : undefined} title={`Where Does ${v.title} Go, Day by Day?`} intro="Fly the voyage in 3D, or switch to the itinerary chart, which sails the route as you scroll the log. Times and port notes are SeaDream's, and the captain may change a call for weather." />
+            terrain={route && terrainRegion(v.region) ? { id: `see-${v.slug}-in-3d`, kind: "voyage", ink: volumeMark("voyages"), title: `${v.title} aboard ${v.shipName}`, exaggeration: 1.8, routes: [terrainRoute(v.title, route, v.days.filter((d) => d.lat != null).map((d) => ({ day: d.day, name: d.place, lat: d.lat, lng: d.lng })))] } : undefined} title={`Where Does ${v.title} Go, Day by Day?`} intro={route ? "Fly the voyage in 3D, or switch to the itinerary chart, which sails the route as you scroll the log. Times and port notes are SeaDream's, and the captain may change a call for weather." : "Times and port notes are SeaDream's, and the captain may change a call for weather."} />
 
           {!sailed && (
             <section id="fares" className={SEC} aria-labelledby="fares-h">

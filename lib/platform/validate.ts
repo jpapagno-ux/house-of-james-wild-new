@@ -159,17 +159,17 @@ export function parseTeamChange(body: unknown): Result<TeamChange> {
 }
 
 // ===== Applications (/partner/apply)
-export type ApplicationInput = { organization_name: string; website: string | null; contact_name: string; email: string; country: string | null; properties: string | null; message: string | null };
+export type ApplicationInput = { organization_name: string; website: string | null; contact_name: string; email: string; phone: string | null; role_title: string | null; country: string | null; properties: string | null; message: string | null };
 export function parseApplication(body: unknown): Result<ApplicationInput> {
   if (!isObj(body)) return fail("Body must be a JSON object");
-  const bad = only(body, ["organizationName", "website", "contactName", "email", "country", "properties", "message", "company"]); if (bad) return bad;
+  const bad = only(body, ["organizationName", "website", "contactName", "roleTitle", "email", "phone", "country", "properties", "message", "company"]); if (bad) return bad;
   const organization_name = text(body.organizationName, 160), contact_name = text(body.contactName, 120), email = text(body.email, 254).toLowerCase();
   if (!organization_name) return fail("Tell us the company name", "organizationName");
   if (!contact_name) return fail("Tell us your name", "contactName");
   if (!EMAIL.test(email)) return fail("That email doesn't look right", "email");
   const website = opt(body.website, 200);
   if (website && !/^https?:\/\/[^\s]+\.[^\s]+$/.test(website)) return fail("Use a full web address", "website");
-  return { ok: true, value: { organization_name, website, contact_name, email, country: opt(body.country, 80), properties: opt(body.properties, 1000, true), message: opt(body.message, 4000, true) } };
+  return { ok: true, value: { organization_name, website, contact_name, email, phone: opt(body.phone, 40), role_title: opt(body.roleTitle, 120), country: opt(body.country, 80), properties: opt(body.properties, 1000, true), message: opt(body.message, 4000, true) } };
 }
 
 // ===== House decisions

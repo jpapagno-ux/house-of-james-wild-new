@@ -4,7 +4,7 @@ import { api } from "@/lib/platform/client";
 
 // /partner/apply — asks to join; the house reviews and invites (no self-signup).
 export default function ApplyForm() {
-  const [f, setF] = useState({ organizationName: "", website: "", contactName: "", email: "", country: "", properties: "", message: "", company: "" });
+  const [f, setF] = useState({ organizationName: "", website: "", contactName: "", roleTitle: "", email: "", phone: "", country: "", properties: "", message: "", company: "" });
   const [state, setState] = useState<"idle" | "busy" | "done">("idle");
   const [err, setErr] = useState<{ field?: string; message: string } | null>(null);
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => setF({ ...f, [k]: e.target.value });
@@ -34,8 +34,12 @@ export default function ApplyForm() {
         {field("contactName", "Your name", { required: true, auto: "name" })}
         {field("email", "Work email", { type: "email", required: true, auto: "email" })}
       </div>
+      <div className="grid sm:grid-cols-2 gap-4">
+        {field("roleTitle", "Your role", { auto: "organization-title" })}
+        {field("phone", "Phone", { type: "tel", auto: "tel" })}
+      </div>
       {field("country", "Country", { auto: "country-name" })}
-      {field("properties", "Your properties, camps or vessels", { area: true })}
+      {field("properties", "Your properties, camps, vessels or brands (one per line, with the country)", { area: true })}
       {field("message", "Anything the house should know", { area: true })}
       <input type="text" tabIndex={-1} autoComplete="off" value={f.company} onChange={set("company")} className="hidden" aria-hidden="true" />
       {err && <p role="alert" className="text-[14px] ledger-crimson">{err.message}</p>}

@@ -16,12 +16,12 @@ import { SIGN_IN_EVENT } from "@/lib/signin-bus";
 // points at the page that explains it, so a door never leads to a 404. Copy is the
 // house's: a person, not a form; the Ledger behind every door.
 
-type Door = { key: "traveler" | "advisor" | "partner"; eyebrow: string; title: string; line: string; open: boolean; href: string; cta: string; soon?: string };
+type Door = { key: "traveler" | "advisor" | "partner"; eyebrow: string; title: string; line: string; open: boolean; href: string; cta: string; soon?: string; ask?: { href: string; label: string } };
 
 const DOORS: Door[] = [
   { key: "traveler", eyebrow: "Traveler", title: "My Folio", line: "Your shelf for the places worth returning to. Save stays, gather them into a journey, share it with the people you travel with.", open: FLAGS.accounts, href: FLAGS.accounts ? "/account/sign-in" : "/folio", cta: FLAGS.accounts ? "Sign in" : "See how Folios work", soon: "Folio accounts open with Booking Live." },
-  { key: "advisor", eyebrow: "Advisor", title: "The Desk", line: "The Ledger open, your travelers, the journeys you carry, and your own Bearing in your words, where the house can read it.", open: ADVISOR_DESK, href: ADVISOR_DESK ? "/advisor/login" : "/for-advisors", cta: ADVISOR_DESK ? "Sign in" : "About advisors of the house", soon: "The Desk opens by invitation from the house." },
-  { key: "partner", eyebrow: "Partner", title: "Partner Desk", line: "Your properties as the house sells them: rooms, rates, photographs and the facts, written by you, approved by James.", open: PARTNER_DESK, href: PARTNER_DESK ? "/partner/login" : "/partners", cta: PARTNER_DESK ? "Sign in" : "Partner with the house", soon: "The Partner Desk is in review with the first partners." },
+  { key: "advisor", eyebrow: "Advisor", title: "The Desk", line: "The Ledger open, your travelers, the journeys you carry, and your own Bearing in your words, where the house can read it.", open: ADVISOR_DESK, href: ADVISOR_DESK ? "/advisor/login" : "/for-advisors", cta: ADVISOR_DESK ? "Sign in" : "About advisors of the house", soon: "The Desk opens by invitation from the house.", ask: { href: "/for-advisors/apply", label: "New advisor? Apply to the house" } },
+  { key: "partner", eyebrow: "Partner", title: "Partner Desk", line: "Your properties as the house sells them: rooms, rates, photographs and the facts, written by you, approved by James.", open: PARTNER_DESK, href: PARTNER_DESK ? "/partner/login" : "/partners", cta: PARTNER_DESK ? "Sign in" : "Partner with the house", soon: "The Partner Desk is in review with the first partners.", ...(PARTNER_DESK ? { ask: { href: "/partner/apply", label: "New partner? Request access" } } : {}) },
 ];
 
 // Three trails, three watercolours (James, 19 Nov 2026): a beach path for travellers, a mountain path for advisors,
@@ -98,10 +98,12 @@ export default function SignInDoors({ light = false, className = "" }: { light?:
                         </span>
                       </span>
                     </Link>
+                    {/* Joining (James, 19 Nov 2026): partners and advisors ask the house; the house invites. */}
+                    {d.ask && <Link href={d.ask.href} onClick={() => setOpen(false)} className="mt-3 ml-24 md:ml-0 md:mx-auto block w-fit text-[13.5px] text-[#2E2B28] underline decoration-[#CFC8BF] underline-offset-4 hover:decoration-[#8B2525]">{d.ask.label}</Link>}
                   </li>
                 ))}
               </ol>
-              <p className="mt-8 md:mt-10 md:text-center text-[13px] text-[#6B635A]">Travellers sign in with a link sent to their email; advisors and partners with their own password and a code from their phone.</p>
+              <p className="mt-8 md:mt-10 md:text-center text-[13px] text-[#6B635A]">Travellers sign in with a link sent to their email; partners with their own password; advisors with their password and a code from their phone. New partners and advisors ask the house, and the house invites them.</p>
             </div>
           </div>
         </div>,

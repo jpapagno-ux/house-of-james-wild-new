@@ -25,6 +25,9 @@ const iso = (s) => { const m = String(s).match(/([A-Z][a-z]{2})[a-z]* (\d{1,2}),
 // A day with no harbour of its own (at sea, crossing a named sea, an eclipse, a marina day at anchor between ports):
 // it keeps the name SeaDream gives it and sits between the ports either side on the chart.
 const isSea = (p) => /^(at sea|sailing the |solar eclipse|dream marina day|international date line)/i.test(p ?? "");
+// SeaDream files Ducie and Pitcairn under the British Indian Ocean Territory; they are in the Pitcairn Islands (South Pacific).
+const COUNTRY_FIX = { "Ducie Island": "Pitcairn Islands", "Pitcairn Island": "Pitcairn Islands" };
+const land = (r) => COUNTRY_FIX[r.port] ?? r.country;
 const seaName = (p) => (/^at sea/i.test(p) ? "At sea" : p.replace(/\s+-\s+.*$/, ""));
 const short = (p) => p.split(",")[0].trim();
 const first = (t, max = 240) => {
@@ -73,7 +76,7 @@ for (const v of raw.voyages) {
     const p = isSea(last.port) ? null : pos(last.port, last.country);
     if (!isSea(last.port) && !p) unplaced.add(`${last.port}|${last.country}`);
     const names = calls.filter((c) => !isSea(c.port) || calls.length === 1).map((c) => (isSea(c.port) ? seaName(c.port) : short(c.port)));
-    const place = isSea(last.port) ? seaName(last.port) : last.port.includes(last.country) || !last.country ? last.port : `${last.port}, ${last.country}`;
+    const place = isSea(last.port) ? seaName(last.port) : last.port.includes(land(last)) || !land(last) ? last.port : `${last.port}, ${land(last)}`;
     const summary = calls.filter((c) => c.note && !isSea(c.port)).map((c) => first(c.note, calls.length > 1 ? 150 : 240)).join(" ");
     return { day: i + 1, date, title: [...new Set(names)].join(" and "), place: undash(place), lat: p ? p[0] : null, lng: p ? p[1] : null, summary, label: calls.map((c) => when(c.arrive, c.depart)).filter(Boolean).join("; ") || undefined };
   });
@@ -98,7 +101,7 @@ for (const v of raw.voyages) {
   for (const s of v.suites ?? []) byName.set(s.name, (byName.get(s.name) ?? 0) + 1);
   const prices = Object.fromEntries((v.suites ?? []).filter((s) => +s.fromPrice > 0).sort((x, y) => x.fromPrice - y.fromPrice).map((s) => [byName.get(s.name) > 1 ? `${s.name} (${s.deck})` : s.name, +s.fromPrice]));
   const lead = Object.values(prices).length ? Math.min(...Object.values(prices)) : +v.leadFare > 0 ? +v.leadFare : null;
-  const countries = [...new Set(rows.map((r) => r.country).filter(Boolean))];
+  const countries = [...new Set(rows.map((r) => land(r)).filter(Boolean))];
   const callNames = [...new Set(stops.map((s) => short(s.name)))];
   const id = `${slug(title)}-${dates[0]}`;
   // SeaDream files The World Cruise under the Caribbean, where it starts; here it is its own region.

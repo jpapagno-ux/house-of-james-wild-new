@@ -49,7 +49,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   const [open, setOpen] = useState<string | null>(catalogue.products[0]?.key ?? null);
   const [editing, setEditing] = useState<string | null>(null);
   const [cards, setCards] = useState<Record<string, CardState>>({});
-  const [share, setShare] = useState<{ url: string; copied: boolean } | null>(null);
+  const [share, setShare] = useState<{ url: string; copied: boolean; saved: boolean } | null>(null);
   const [lead, setLead] = useState<Lead>({ first: "", last: "", email: "", phone: "", country: "" });
   const [companions, setCompanions] = useState<Traveler[]>([]);
   const [advisor, setAdvisor] = useState(assignedAdvisor);
@@ -126,14 +126,24 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   // The cart (no traveler details) is kept on this device, so it survives a refresh or a closed tab. Names and email are never stored.
   useEffect(() => {
     if (exampleDefault) { setCartId(uid()); loadExample(); return; }
-    const code = window.location.hash.startsWith("#j=") ? window.location.hash.slice(3) : "";
-    const sent = code ? fromPicks(code) : null;
-    if (sent) {
+    const unreadable = "That journey link could not be read, or its dates have passed. Start a new journey below.";
+    const openSent = (c: string) => {
+      const sent = c ? fromPicks(c) : null;
+      if (!sent) return false;
       setCartId(uid()); setLines(sent); setOpen(null); setStep(1);
       setNotice(`${advisorFromLink ? `${advisors.find((a) => a.slug === assignedAdvisor)?.name ?? "Your advisor"} has` : "The house has"} prepared this journey for you. Every price is checked again from its source as it opens. Change anything, or carry on to Review.`);
+      return true;
+    };
+    // A saved journey (short link) is read back from the staging database; a long link carries its choices after the #.
+    const saved = new URLSearchParams(window.location.search).get("j") ?? "";
+    if (/^[a-f0-9]{32}$/.test(saved)) {
+      setCartId(uid());
+      fetch(`/api/preview/checkout/cart?token=${saved}`).then((r) => r.json()).then((j: { code?: string }) => { if (!openSent(j.code ?? "")) setNotice(unreadable); }).catch(() => setNotice(unreadable));
       return;
     }
-    if (code) setNotice("That journey link could not be read, or its dates have passed. Start a new journey below.");
+    const code = window.location.hash.startsWith("#j=") ? window.location.hash.slice(3) : "";
+    if (openSent(code)) return;
+    if (code) setNotice(unreadable);
     try {
       const s = JSON.parse(localStorage.getItem(STORE) ?? "null") as { cartId: string; lines: Line[] } | null;
       if (!code && s?.cartId && Array.isArray(s.lines)) { const kept = s.lines.filter((l) => !isDate(l.start) || l.start >= catalogue.today).map(reprice); setCartId(s.cartId); setLines(kept.filter((l) => !l.parentId || kept.some((x) => x.id === l.parentId))); if (kept.length) setOpen(null); return; }
@@ -261,9 +271,15 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   const hero = (l: Line) => product(l).hero;
   const est = (l: Line) => (l.price.source === "published_from" ? "from " : l.price.estimate ? "est. " : "");
   function sendToClient() {
-    const url = `${window.location.origin}${window.location.pathname}?advisor=${encodeURIComponent(adv.slug)}#j=${encodeJourney(lines)}`;
-    setShare({ url, copied: false });
-    navigator.clipboard?.writeText(url).then(() => setShare({ url, copied: true })).catch(() => { /* the link stays on screen to copy by hand */ });
+    const code = encodeJourney(lines), base = `${window.location.origin}${window.location.pathname}?advisor=${encodeURIComponent(adv.slug)}`;
+    const show = (url: string, saved: boolean) => {
+      setShare({ url, copied: false, saved });
+      navigator.clipboard?.writeText(url).then(() => setShare({ url, copied: true, saved })).catch(() => { /* the link stays on screen to copy by hand */ });
+    };
+    // Saved to the staging database where that is connected (a short link the desk can track); otherwise the long link, which needs no database.
+    fetch("/api/preview/checkout/cart", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ code, advisor: adv.slug }) })
+      .then((r) => (r.ok ? r.json() : null)).then((j: { token?: string } | null) => show(j?.token ? `${base}&j=${j.token}` : `${base}#j=${code}`, Boolean(j?.token)))
+      .catch(() => show(`${base}#j=${code}`, false));
   }
   // The traveler's wording for each payment method. The supplier-by-supplier reason stays in the house and advisor view.
   const plainReason = (o: Option, l: Line) => {
@@ -692,7 +708,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
             <p className="mt-3 text-[15px]" role="status">{share.copied ? "Link copied." : "Copy this link."} It opens this journey with {adv.name} attached.</p>
             <input readOnly className={`${field} font-mono text-[13px]`} value={share.url} aria-label="Journey link" onFocus={(e) => e.currentTarget.select()} />
             <ul className="mt-4 space-y-1.5 text-[14px] ledger-muted list-disc pl-5">
-              <li>The link carries what was chosen: chapters, dates, rooms and guests. It carries no names, no email and no prices.</li>
+              <li>{share.saved ? "This journey is saved on the staging database, and the desk can see when the client opens it. What is saved is what was chosen: chapters, dates, rooms and guests. No names, no email and no prices." : "The link carries what was chosen: chapters, dates, rooms and guests. It carries no names, no email and no prices."}</li>
               <li>Every price is asked again from its source when the client opens it. A live room on the booking engine is chosen again with its live price.</li>
               <li>The link opens for anyone you send it to. It is still a preview: nothing is booked or paid from it.</li>
             </ul>

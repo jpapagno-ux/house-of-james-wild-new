@@ -333,6 +333,12 @@ export function encodeJourney(lines: Line[]): string {
   return B64.to(JSON.stringify({ v: 1, l: picks }));
 }
 
+/** The same link code from stored choices (a saved cart read back from the database). Null if they are not choices. */
+export function encodePicks(picks: unknown): string | null {
+  if (!Array.isArray(picks)) return null;
+  try { return B64.to(JSON.stringify({ v: 1, l: picks.map((k: Pick) => [k.productKey, k.unit, k.start, k.end, k.adults, k.experiences]) })); } catch { return null; }
+}
+
 /** Null for anything malformed, oversized or card-shaped. The caller still checks each pick against the catalogue. */
 export function decodeJourney(code: string): Pick[] | null {
   if (!code || code.length > 6000 || !/^[A-Za-z0-9_-]+$/.test(code)) return null;

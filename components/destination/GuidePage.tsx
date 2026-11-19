@@ -1,4 +1,6 @@
 import type React from "react";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import Cite from "@/components/ledger/Cite";
 import Image from "next/image";
 import GuideOffer from "@/components/guides/GuideOffer";
@@ -233,6 +235,8 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
   );
   const faqSec = (
     <>
+          {/* Iggi on every guide (James, 19 Nov 2026): a place is scoped to its parent country; a guide country to itself. */}
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "destination", entitySlug: g.slug, countrySlug: g.parent ?? g.country, regionSlug: g.region, ledgerId: g.ledgerId ?? null, sourcePage: g.path, volume: g.region === "europe" ? "europe" : "stays" }} heading={`Ask Iggi about ${g.name}`} />}
           <FaqBlock faqs={g.faqs} title={`Questions About ${g.name}`} />
     </>
   );

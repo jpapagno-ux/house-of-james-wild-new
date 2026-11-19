@@ -1,4 +1,6 @@
 import PlanBand from "@/components/destination/PlanBand";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -144,6 +146,7 @@ export default async function JourneyPage({ params }: P) {
 
           {other && <p className="mt-12"><Link href={journeyPath(other.slug)} className="inline-flex items-center gap-1.5 min-h-[44px] underline-offset-4 hover:underline" style={{ color: ink }}>The other charter week: {other.name}<ArrowRight className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" /></Link></p>}
 
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "voyage", entitySlug: j.slug, countrySlug: "indonesia", sourcePage: path, volume: "voyages" }} heading={`Ask Iggi about ${j.short}`} />}
           <FaqBlock faqs={j.faqs.map(([q, a]) => ({ q: t(q), a: t(a) }))} title={`What Else Should You Know About ${j.short}?`} />
           <PlanBand place="Indonesia" compassHref="/compass" where={{ countrySlug: "indonesia", volume: "voyages" }} />
           <PlanClose title="Want the whole yacht for a week?" line="Tell James your dates, your party and the yacht you like, and he will confirm what is open." />

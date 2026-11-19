@@ -1,4 +1,6 @@
 import SafeLink from "@/components/ledger/SafeLink";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
 import AnswerBlock from "@/components/ledger/AnswerBlock";
@@ -129,6 +131,7 @@ export default function ExceptionalFewPage() {
             </section>
           )}
 
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "pathway", entitySlug: "the-exceptional-few", sourcePage: "/the-exceptional-few", volume: "stays" }} heading="Ask Iggi about The Exceptional Few" lead="Ask what earns a designation, which of the few fits you, and what to pair it with." />}
           <FaqBlock faqs={FAQS} title="The Exceptional Few, Answered" schema={false} /> {/* FAQPage markup waits for house approval of these answers (D15) */}
           <PlanClose title="Ask James which of the Few fits your year." line="Tell him who is travelling and when, and he will tell you which number to start with." />
         </div>

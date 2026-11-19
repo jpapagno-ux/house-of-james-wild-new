@@ -1,4 +1,6 @@
 import Pic from "@/components/opening/Pic";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import Cite from "@/components/ledger/Cite";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -308,6 +310,7 @@ export default async function CollectionPage({ params }: P) {
 
           <FromTheJournal posts={posts} />
 
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "pathway", entitySlug: c.slug, sourcePage: `/collections/${c.slug}`, volume: "stays" }} heading={`Ask Iggi about ${c.name}`} />}
           <FaqBlock faqs={c.faqs} title={t.faqTitle} />
           <p className="mt-8 text-[13px] ledger-muted max-w-3xl">{c.disclosure} {t.source}</p>
 

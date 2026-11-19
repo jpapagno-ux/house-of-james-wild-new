@@ -1,4 +1,6 @@
 import Link from "next/link";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import { Users } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import VolumeEntrance from "@/components/entrance/VolumeEntrance";
@@ -110,6 +112,7 @@ export default function VoyagesHub() {
           </div>
         </section>
         <AdvisorScroll volume="voyages" title="Who sails with the small ships" unlinked={["gatherings"]} />
+        {IGGI_ON && <IggiPanel ctx={{ entityType: "region", entitySlug: "voyages", sourcePage: "/voyages", volume: "voyages" }} heading="Ask Iggi about the Voyages" lead="Ask which waters and which ship, what to pair before or after a sailing, and how the house moves you to and from the port." />}
         <FaqBlock faqs={FAQS} title="What Should You Know Before You Sail?" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Voyages", mainEntity: { "@type": "ItemList", numberOfItems: cards.length, itemListElement: cards.map((c, i) => ({ "@type": "ListItem", position: i + 1, name: c.name, url: absoluteUrl(c.href) })) } })} />

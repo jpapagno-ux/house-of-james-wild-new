@@ -1,4 +1,6 @@
 import Image from "next/image";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -151,6 +153,7 @@ export default function OperatorVoyagePage({ v }: { v: OperatorVoyage }) {
             </p>
           </section>
 
+          {IGGI_ON && <IggiPanel ctx={{ entityType: "voyage", entitySlug: `${v.ship}-${v.slug}`.slice(0, 120), countrySlug: null, sourcePage: `/voyages/ships/${v.ship}/${v.slug}`, volume: "voyages" }} heading={`Ask Iggi about ${v.title}`} lead={`Embarks ${v.from}, disembarks ${v.to}. Ask about the ports, what to pair before or after, and getting to and from the ship.`} />}
           <FaqBlock faqs={faqs.map(([q, a]) => ({ q, a }))} title={`What Else Should You Know About ${v.title}?`} />
           <PlanClose />
         </div>

@@ -1,4 +1,6 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import JsonLd from "@/components/ledger/JsonLd";
 import FaqBlock from "@/components/ledger/FaqBlock";
 import { HubShell, HubSection } from "@/components/hub/Hub";
@@ -198,6 +200,7 @@ export default function TimelessCollection({ rows, path = TV_PATH, on = new Date
           </ol>
           <p className="mt-8"><Link href="/plan?trip=Timeless%20Voyages" className="ledger-btn ledger-btn--solid">Start with James</Link></p>
         </HubSection>
+        {IGGI_ON && <IggiPanel ctx={{ entityType: "voyage", entitySlug: "timeless-voyages", sourcePage: path, volume: "voyages" }} heading="Ask Iggi about Timeless Voyages" lead="Ask which sailing fits you, what to pair before or after it, and how the house gets you to and from the ship." />}
         <FaqBlock faqs={faqs} title="What Else Should You Know About Timeless Voyages?" />
       </HubShell>
       <JsonLd data={graph(

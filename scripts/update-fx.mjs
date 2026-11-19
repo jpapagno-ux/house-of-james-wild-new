@@ -30,7 +30,8 @@ for (const [cur, old] of Object.entries(fx.rates)) {
   if (typeof v !== "number" || !(v > 0)) { console.error(`${cur}: no rate in the feed`); process.exit(1); }
   const move = Math.abs(v - old) / old;
   if (move > MAX_MOVE) { console.error(`${cur}: ${old} -> ${v} (${(move * 100).toFixed(1)}%) is over the ${MAX_MOVE * 100}% guard. Check and update fx.json by hand.`); process.exit(1); }
-  next[cur] = Math.round(v * 100) / 100;
+  // Two decimals for a rate like 16.69 rand; four for one near 1 (0.8951 euros), where two would be half a percent out.
+  next[cur] = v < 10 ? Math.round(v * 10000) / 10000 : Math.round(v * 100) / 100;
   console.log(`${cur}: ${old} -> ${next[cur]} (${(move * 100).toFixed(2)}%)`);
 }
 const today = new Date().toISOString().slice(0, 10);

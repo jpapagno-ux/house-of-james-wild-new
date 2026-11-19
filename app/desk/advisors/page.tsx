@@ -28,11 +28,14 @@ export default async function HouseAdvisors() {
   const dnaOpen = new Set((open ?? []).map((x) => x.advisor_id as string));
   const { data: invs } = await desk.sb.from("advisor_invitations").select("advisor_id, expires_at").is("accepted_at", null).is("revoked_at", null).gt("expires_at", new Date().toISOString());
   const invited = new Set((invs ?? []).map((x) => x.advisor_id as string));
+  // Who has registered for the training program (empty until the advisor_training migration is applied).
+  const { data: trn } = await desk.sb.from("advisor_training_registrations").select("advisor_id");
+  const training = new Set((trn ?? []).map((x) => x.advisor_id as string));
   return (
     <div>
       <p className="ledger-eyebrow ledger-crimson">House desk</p>
       <h1 className="ledger-display text-[2rem] md:text-[2.6rem] leading-[1.1]">Advisors</h1>
-      <p className="mt-3 max-w-2xl text-[15.5px] ledger-muted">Each advisor&rsquo;s file: details, plan, agreement, documents and Advisor DNA. Review the documents and the DNA, set the plan, then activate.</p>
+      <p className="mt-3 max-w-2xl text-[15.5px] ledger-muted">Each advisor&rsquo;s file: details, plan, agreement, documents and Advisor DNA. Review the documents and the DNA, set the plan, then activate.{training.size > 0 ? ` ${training.size} registered for training.` : ""}</p>
       <div className="mt-5"><AddAdvisor /></div>
       <ul className="mt-8 border-y ledger-border">
         {(advisors ?? []).map((a, i) => {
@@ -48,6 +51,7 @@ export default async function HouseAdvisors() {
                 <span className="ledger-display text-[1.3rem] group-hover:underline">{a.display_name}</span>
                 <StatusPill label={label} tone={tone} />
                 {a.house_advisor && <span className="text-[12.5px] ledger-muted">House advisor</span>}
+                {training.has(a.id) && <StatusPill label="Training: registered" tone="progress" />}
                 <span className="ml-auto text-[13.5px] ledger-muted">
                   {a.status === "invited" ? (!a.user_id ? (invited.has(a.id) ? "Invitation open" : "Not invited yet") : readyToActivate(s) ? "Ready to activate" : waiting ? "Documents to review" : dnaWaiting ? "DNA to review" : `${done} of 5 parts`) : dnaWaiting ? "DNA to review" : ""}
                 </span>

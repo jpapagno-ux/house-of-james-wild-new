@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ dossier: 
   const d = tyDossier((await params).dossier);
   if (!d) return {};
   return buildMetadata({
-    title: `${d.title}: ${d.operator} ${d.file === "ice" ? "Antarctica" : "DC-3 Expedition"}, ${d.length}, from ${tyUsd(d.from)} | Terra Y`,
+    title: `${d.title}: ${d.operator} ${d.file === "ice" ? "Antarctica" : d.file === "sea" ? "Alaska Expedition Yacht" : "DC-3 Expedition"}, ${d.length}, from ${tyUsd(d.from)} | Terra Y`,
     description: d.answer.slice(0, 155).replace(/\s\S*$/, "") + ".",
     path: tyPath(d.slug),
     image: { url: ty(d.hero.id, 1600), alt: d.hero.alt },
@@ -38,7 +38,7 @@ export default async function TerraYDossier({ params }: { params: Promise<{ doss
   const far = PATHWAYS["PATH-09"];
   const route = TY_ROUTES[d.slug] ?? [];
   let stopNo = 0;
-  const labels = route.map((s) => (s.days.length ? (d.file === "ice" ? (s.days[0] === "00" ? "Before" : `Day ${s.days[0]}`) : `Stop ${++stopNo}`) : "En route"));
+  const labels = route.map((s) => (s.days.length ? (d.file !== "dc3" ? (s.days[0] === "00" ? "Before" : `Day ${s.days[0]}`) : `Stop ${++stopNo}`) : "En route"));
   return (
     <div className="theme-terra-y">
       <SiteHeader overlay />
@@ -53,7 +53,7 @@ export default async function TerraYDossier({ params }: { params: Promise<{ doss
           <section className="ty-night border-t" style={{ borderColor: "var(--ty-chart)" }}>
             <div className="max-w-ledger mx-auto px-5 md:px-10 py-12 md:py-16">
               <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
-                <TyHead light={false} code="The chart · The whole route" title={d.file === "ice" ? "Cape Town to the Ice and Back" : "The Route, Landing by Landing"} />
+                <TyHead light={false} code="The chart · The whole route" title={d.file === "ice" ? "Cape Town to the Ice and Back" : d.file === "sea" ? "The Route, Anchorage by Anchorage" : "The Route, Landing by Landing"} />
                 <p className="ty-mono text-[10px] max-w-xs" style={{ color: "var(--ty-glacier)" }}>{route.some((s) => s.mode === "sea") ? "Flown legs arc across the globe; the boat leg keeps to open water round the islands." : "Every leg is flown: arcs across the globe, as the aircraft goes."}</p>
               </div>
               <TyRouteOverview stops={route} labels={labels} title={d.title} />
@@ -97,7 +97,7 @@ export default async function TerraYDossier({ params }: { params: Promise<{ doss
 
         <section id="log" className="ty-chart border-t-4" style={{ borderColor: d.file === "ice" ? "var(--ty-glacier)" : "var(--ty-signal)" }}>
           <div className="max-w-ledger mx-auto px-5 md:px-10 py-16 md:py-20">
-            <TyHead code="Ship's log · The route" title={d.file === "ice" ? "Day by Day on the Ice" : "Landing by Landing"} intro={d.file === "dc3" ? `${d.length}, ${d.base}.` : undefined} />
+            <TyHead code="Ship's log · The route" title={d.file === "ice" ? "Day by Day on the Ice" : d.file === "sea" ? "Day by Day at Sea" : "Landing by Landing"} intro={d.file === "dc3" ? `${d.length}, ${d.base}.` : undefined} />
             {route.length > 1 ? (
               <TyRouteScroll stops={route} labels={labels}>
                 <DayLog days={d.days} note={d.dayNote} file={d.file} compact stopOf={(x) => stopForDay(d.slug, x)} />

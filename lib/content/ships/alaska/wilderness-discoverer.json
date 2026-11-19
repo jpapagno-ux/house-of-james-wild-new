@@ -1,0 +1,1721 @@
+{
+ "slug": "wilderness-discoverer",
+ "name": "Wilderness Discoverer",
+ "brandLine": "UnCruise Adventures",
+ "operator": "UnCruise Adventures",
+ "type": "small expedition ship",
+ "waters": "Alaska",
+ "country": "United States",
+ "status": "sailing",
+ "seo": {
+  "title": "Wilderness Discoverer: UnCruise's 76-Guest Ship, Glacier Bay and Misty Fjords | James Wild & Co",
+  "description": "Wilderness Discoverer, UnCruise's 76-guest ship, sails the Glacier Bay Adventure from Juneau and Alaska's Fjords and Glaciers to Ketchikan, with Families in Nature and Adult Escape weeks. Every 2027 and 2028 sailing and fare, from $4,900.",
+  "keywords": [
+   "Wilderness Discoverer",
+   "UnCruise Wilderness Discoverer",
+   "Misty Fjords cruise",
+   "Glacier Bay family cruise",
+   "Alaska small ship families"
+  ]
+ },
+ "tagline": "A shoal draft, a bar carved from a Peril Strait cedar, and Glacier Bay twice a week.",
+ "answer": "Wilderness Discoverer is a 76-guest UnCruise ship, 174 feet with 38 cabins and a shoal draft that takes her into water closed to bigger boats. She sails the Glacier Bay Adventure from Juneau and Alaska's Fjords and Glaciers between Juneau and Ketchikan, with Families in Nature, Adult Escape and photography weeks. Fares run from $4,900 per person, the lowest in UnCruise's Alaska fleet.",
+ "facts": [
+  [
+   "Guests",
+   "76"
+  ],
+  [
+   "Cabins",
+   "38, all outside"
+  ],
+  [
+   "Guest to crew",
+   "2.6:1"
+  ],
+  [
+   "Length",
+   "174 ft (53 m)"
+  ],
+  [
+   "Beam",
+   "54 ft"
+  ],
+  [
+   "Built",
+   "1992"
+  ],
+  [
+   "Decks",
+   "3"
+  ],
+  [
+   "Speed",
+   "10.3 mph"
+  ],
+  [
+   "Registry and crew",
+   "USA"
+  ]
+ ],
+ "overview": [
+  "She was the first of UnCruise's Wilderness boats, and the one that set the company on its path to bigger adventures. Her bar top and tap tower are cut from a yellow cedar log found in Peril Strait.",
+  "Three decks, two hot tubs, an EZ Dock for kayaks and paddleboards, snorkel gear and wetsuits, and a lounge with a GPS map, wildlife books and binoculars. Every drink is included.",
+  "Her Alaska is the Inside Passage classic: Glacier Bay twice a week from Juneau, and in spring and summer the run south past Dawes Glacier, Wrangell Narrows and Misty Fjords to Ketchikan."
+ ],
+ "why": [
+  "The lowest fares in UnCruise's Alaska fleet, from $4,900.",
+  "Families in Nature and Adult Escape weeks, and a photography week with Lisa Mize.",
+  "Two hot tubs, and five cabins that sleep three."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wilderness-discoverer/hero",
+  "alt": "A skiff of guests among icebergs below a tidewater glacier in Southeast Alaska",
+  "credit": "UnCruise Adventures"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wilderness-discoverer/cabin",
+   "alt": "A Wilderness Discoverer cabin with twin beds and a wide window",
+   "credit": "UnCruise Adventures"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wilderness-adventurer/hero",
+   "alt": "Kayakers paddling below a tidewater glacier in Glacier Bay National Park",
+   "credit": "UnCruise Adventures"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Admiral",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "The top category"
+   ],
+   "image": null
+  },
+  {
+   "type": "Pathfinder",
+   "count": null,
+   "size": null,
+   "beds": "Double; 307 and 309 add a twin",
+   "deck": null,
+   "features": [
+    "View window"
+   ],
+   "image": null
+  },
+  {
+   "type": "Trailblazer",
+   "count": null,
+   "size": null,
+   "beds": "Queen or two twins",
+   "deck": null,
+   "features": [
+    "View window"
+   ],
+   "image": null
+  },
+  {
+   "type": "Navigator",
+   "count": null,
+   "size": null,
+   "beds": "Queen or two twins",
+   "deck": null,
+   "features": [
+    "View window"
+   ],
+   "image": null
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Alaska's Fjords and Glaciers, 7 nights",
+   "nights": 7,
+   "direction": "Juneau to Ketchikan",
+   "short": "Dawes Glacier, Frederick Sound and Misty Fjords",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Fly into Juneau by 4 pm; UnCruise meets you and you board in the evening."
+    },
+    {
+     "day": 2,
+     "title": "Endicott Arm and Dawes Glacier",
+     "place": "Endicott Arm and Dawes Glacier",
+     "lat": 57.58,
+     "lng": -133.25,
+     "summary": "Granite walls, drifting icebergs and harbor seals hauled out on the ice."
+    },
+    {
+     "day": 3,
+     "title": "Frederick Sound",
+     "place": "Frederick Sound",
+     "lat": 57.12,
+     "lng": -133.75,
+     "summary": "A day among feeding humpbacks."
+    },
+    {
+     "day": 4,
+     "title": "Thomas Bay and Wrangell Narrows",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Moraines and muskeg in Thomas Bay, then the narrow channel locals call Christmas Tree Lane."
+    },
+    {
+     "day": 5,
+     "title": "Blashke Islands",
+     "place": "Blashke Islands",
+     "lat": 56.15,
+     "lng": -132.92,
+     "summary": "Hike, kayak, snorkel or skiff among remote, forested islands."
+    },
+    {
+     "day": 6,
+     "title": "Behm Canal",
+     "place": "Behm Canal",
+     "lat": 55.92,
+     "lng": -131.62,
+     "summary": "Streams, moss and old forest on low trails, and the wildlife that lives along them."
+    },
+    {
+     "day": 7,
+     "title": "Misty Fjords National Monument",
+     "place": "Misty Fjords National Monument",
+     "lat": 55.55,
+     "lng": -130.88,
+     "summary": "Cliffs of 3,000 feet in Walker Cove or Rudyerd Bay, by kayak and skiff."
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Ketchikan",
+     "place": "Ketchikan",
+     "lat": 55.34,
+     "lng": -131.65,
+     "summary": "Breakfast aboard, then the transfer to Ketchikan airport for flights from 11.30 am."
+    }
+   ]
+  },
+  {
+   "name": "Alaska's Fjords and Glaciers, 7 nights",
+   "nights": 7,
+   "direction": "Ketchikan to Juneau",
+   "short": "Dawes Glacier, Frederick Sound and Misty Fjords (reverse)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Ketchikan",
+     "place": "Ketchikan",
+     "lat": 55.34,
+     "lng": -131.65,
+     "summary": "Breakfast aboard, then the transfer to Ketchikan airport for flights from 11.30 am.",
+     "indicative": true
+    },
+    {
+     "day": 2,
+     "title": "Misty Fjords National Monument",
+     "place": "Misty Fjords National Monument",
+     "lat": 55.55,
+     "lng": -130.88,
+     "summary": "Cliffs of 3,000 feet in Walker Cove or Rudyerd Bay, by kayak and skiff.",
+     "indicative": true
+    },
+    {
+     "day": 3,
+     "title": "Behm Canal",
+     "place": "Behm Canal",
+     "lat": 55.92,
+     "lng": -131.62,
+     "summary": "Streams, moss and old forest on low trails, and the wildlife that lives along them.",
+     "indicative": true
+    },
+    {
+     "day": 4,
+     "title": "Blashke Islands",
+     "place": "Blashke Islands",
+     "lat": 56.15,
+     "lng": -132.92,
+     "summary": "Hike, kayak, snorkel or skiff among remote, forested islands.",
+     "indicative": true
+    },
+    {
+     "day": 5,
+     "title": "Thomas Bay and Wrangell Narrows",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Moraines and muskeg in Thomas Bay, then the narrow channel locals call Christmas Tree Lane.",
+     "indicative": true
+    },
+    {
+     "day": 6,
+     "title": "Frederick Sound",
+     "place": "Frederick Sound",
+     "lat": 57.12,
+     "lng": -133.75,
+     "summary": "A day among feeding humpbacks.",
+     "indicative": true
+    },
+    {
+     "day": 7,
+     "title": "Endicott Arm and Dawes Glacier",
+     "place": "Endicott Arm and Dawes Glacier",
+     "lat": 57.58,
+     "lng": -133.25,
+     "summary": "Granite walls, drifting icebergs and harbor seals hauled out on the ice.",
+     "indicative": true
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Fly into Juneau by 4 pm; UnCruise meets you and you board in the evening.",
+     "indicative": true
+    }
+   ]
+  },
+  {
+   "name": "Glacier Bay Adventure, 7 nights",
+   "nights": 7,
+   "direction": "Juneau round trip",
+   "short": "Two days in Glacier Bay, Frederick Sound and Chichagof",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Fly into Juneau by 4 pm; UnCruise meets you and you board in the evening."
+    },
+    {
+     "day": 2,
+     "title": "Tracy Arm, or another tidewater glacier",
+     "place": "Tracy Arm (or another tidewater glacier)",
+     "lat": 57.85,
+     "lng": -133.45,
+     "summary": "A fjord of floating ice and sheer walls; after landslides in Tracy Arm, the expedition team picks the safest tidewater glacier."
+    },
+    {
+     "day": 3,
+     "title": "Frederick Sound",
+     "place": "Frederick Sound",
+     "lat": 57.12,
+     "lng": -133.75,
+     "summary": "Humpback country: paddle, watch the spouts and walk the shoreline."
+    },
+    {
+     "day": 4,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach."
+    },
+    {
+     "day": 5,
+     "title": "Glacier Bay National Park",
+     "place": "Glacier Bay National Park",
+     "lat": 58.62,
+     "lng": -136.05,
+     "summary": "Deep into the park by kayak, skiff and on foot: moraines, glacial ridges, puffins, sea lions and mountain goats."
+    },
+    {
+     "day": 6,
+     "title": "Glacier Bay National Park",
+     "place": "Upper Glacier Bay",
+     "lat": 58.93,
+     "lng": -136.8,
+     "summary": "Margerie and Lamplugh glaciers, Bartlett Cove and the birds of South Marble Island."
+    },
+    {
+     "day": 7,
+     "title": "Icy Strait or Neka Bay",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Kayaking, all-day paddles, shore walks and bushwhacks where the humpbacks feed."
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Breakfast aboard, then the transfer to Juneau airport for flights from 11.30 am."
+    }
+   ]
+  },
+  {
+   "name": "Alaska's National Parks by Land and Sea, 15 nights",
+   "nights": 15,
+   "direction": "Fairbanks to Juneau",
+   "short": "Fairbanks, Denali and Talkeetna by land, then Glacier Bay by sea",
+   "days": [
+    {
+     "day": 1,
+     "title": "Fairbanks",
+     "place": "Fairbanks",
+     "lat": 64.84,
+     "lng": -147.72,
+     "summary": "Arrive in Fairbanks; hotel night."
+    },
+    {
+     "day": 2,
+     "title": "Reindeer and gold",
+     "place": "Fairbanks",
+     "lat": 64.84,
+     "lng": -147.72,
+     "summary": "A reindeer farm and gold panning in Fairbanks."
+    },
+    {
+     "day": 3,
+     "title": "Fairbanks to Denali",
+     "place": "Denali National Park",
+     "lat": 63.73,
+     "lng": -148.9,
+     "summary": "By coach south to Denali National Park.",
+     "mode": "road"
+    },
+    {
+     "day": 4,
+     "title": "Denali National Park",
+     "place": "Denali National Park",
+     "lat": 63.73,
+     "lng": -148.9,
+     "summary": "Into the park on the Tundra Wilderness Tour."
+    },
+    {
+     "day": 5,
+     "title": "Denali to Talkeetna by rail",
+     "place": "Talkeetna",
+     "lat": 62.32,
+     "lng": -150.11,
+     "summary": "A dome railcar south to Talkeetna.",
+     "mode": "road"
+    },
+    {
+     "day": 6,
+     "title": "Talkeetna",
+     "place": "Talkeetna",
+     "lat": 62.32,
+     "lng": -150.11,
+     "summary": "A hike on the Curry Ridge Trail, then kayaking."
+    },
+    {
+     "day": 7,
+     "title": "Talkeetna to Anchorage",
+     "place": "Anchorage",
+     "lat": 61.22,
+     "lng": -149.9,
+     "summary": "A guided hike in the Talkeetna Lakes, then on to Anchorage.",
+     "mode": "road"
+    },
+    {
+     "day": 8,
+     "title": "Anchorage to Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Fly to Juneau (the flight is not included); a night in Juneau.",
+     "mode": "air"
+    },
+    {
+     "day": 9,
+     "title": "Embark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "A day in Juneau, then aboard."
+    },
+    {
+     "day": 10,
+     "title": "Tracy Arm, or another tidewater glacier",
+     "place": "Tracy Arm (or another tidewater glacier)",
+     "lat": 57.85,
+     "lng": -133.45,
+     "summary": "The expedition team picks the safest tidewater glacier."
+    },
+    {
+     "day": 11,
+     "title": "Frederick Sound",
+     "place": "Frederick Sound",
+     "lat": 57.12,
+     "lng": -133.75,
+     "summary": "Humpback country."
+    },
+    {
+     "day": 12,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach."
+    },
+    {
+     "day": 13,
+     "title": "Glacier Bay National Park",
+     "place": "Glacier Bay National Park",
+     "lat": 58.62,
+     "lng": -136.05,
+     "summary": "Deep into the park by kayak, skiff and on foot: moraines, glacial ridges, puffins, sea lions and mountain goats."
+    },
+    {
+     "day": 14,
+     "title": "Glacier Bay National Park",
+     "place": "Upper Glacier Bay",
+     "lat": 58.93,
+     "lng": -136.8,
+     "summary": "A second day in the park, among the tidewater glaciers of the upper bay."
+    },
+    {
+     "day": 15,
+     "title": "Icy Strait or Neka Bay",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Kayaking, all-day paddles, shore walks and bushwhacks where the humpbacks feed."
+    },
+    {
+     "day": 16,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Breakfast aboard, then the transfer to Juneau airport for flights from 11.30 am."
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2027-04-11",
+   "dateTo": "2027-04-18",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Ketchikan to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 4900,
+    "Trailblazer": 5400,
+    "Pathfinder": 5900,
+    "Admiral": 7400
+   },
+   "singlePrices": {
+    "Navigator": 8600,
+    "Trailblazer": 9500,
+    "Pathfinder": 10400,
+    "Admiral": 13000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-04-18",
+   "dateTo": "2027-04-25",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 4900,
+    "Trailblazer": 5400,
+    "Pathfinder": 5900,
+    "Admiral": 7400
+   },
+   "singlePrices": {
+    "Navigator": 8600,
+    "Trailblazer": 9500,
+    "Pathfinder": 10400,
+    "Admiral": 13000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-04-25",
+   "dateTo": "2027-05-02",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 5300,
+    "Trailblazer": 5900,
+    "Pathfinder": 6400,
+    "Admiral": 8000
+   },
+   "singlePrices": {
+    "Navigator": 9300,
+    "Trailblazer": 10400,
+    "Pathfinder": 11200,
+    "Admiral": 14000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-02",
+   "dateTo": "2027-05-09",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 5700,
+    "Trailblazer": 6300,
+    "Pathfinder": 6900,
+    "Admiral": 8600
+   },
+   "singlePrices": {
+    "Navigator": 10000,
+    "Trailblazer": 11100,
+    "Pathfinder": 12100,
+    "Admiral": 15100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-09",
+   "dateTo": "2027-05-16",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6100,
+    "Trailblazer": 6800,
+    "Pathfinder": 7400,
+    "Admiral": 9200
+   },
+   "singlePrices": {
+    "Navigator": 10700,
+    "Trailblazer": 11900,
+    "Pathfinder": 13000,
+    "Admiral": 16100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-16",
+   "dateTo": "2027-05-23",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6500,
+    "Trailblazer": 7200,
+    "Pathfinder": 7800,
+    "Admiral": 9800
+   },
+   "singlePrices": {
+    "Navigator": 11400,
+    "Trailblazer": 12600,
+    "Pathfinder": 13700,
+    "Admiral": 17200
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-23",
+   "dateTo": "2027-05-30",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6900,
+    "Trailblazer": 7600,
+    "Pathfinder": 8300,
+    "Admiral": 10400
+   },
+   "singlePrices": {
+    "Navigator": 12100,
+    "Trailblazer": 13300,
+    "Pathfinder": 14600,
+    "Admiral": 18200
+   },
+   "note": "Adult Escape (18 and over)"
+  },
+  {
+   "date": "2027-05-30",
+   "dateTo": "2027-06-06",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-05",
+   "dateTo": "2027-06-20",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14500,
+    "Trailblazer": 15300,
+    "Pathfinder": 16000,
+    "Admiral": 18200
+   },
+   "singlePrices": {
+    "Navigator": 21600,
+    "Trailblazer": 23000,
+    "Pathfinder": 24200,
+    "Admiral": 28100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-06",
+   "dateTo": "2027-06-13",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-12",
+   "dateTo": "2027-06-27",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14500,
+    "Trailblazer": 15300,
+    "Pathfinder": 16000,
+    "Admiral": 18200
+   },
+   "singlePrices": {
+    "Navigator": 21600,
+    "Trailblazer": 23000,
+    "Pathfinder": 24200,
+    "Admiral": 28100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-13",
+   "dateTo": "2027-06-20",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2027-06-20",
+   "dateTo": "2027-06-27",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2027-06-27",
+   "dateTo": "2027-07-04",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Juneau to Ketchikan",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": "Photography cruise with Lisa Mize"
+  },
+  {
+   "date": "2027-07-03",
+   "dateTo": "2027-07-18",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14500,
+    "Trailblazer": 15300,
+    "Pathfinder": 16000,
+    "Admiral": 18200
+   },
+   "singlePrices": {
+    "Navigator": 21600,
+    "Trailblazer": 23000,
+    "Pathfinder": 24200,
+    "Admiral": 28100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-04",
+   "dateTo": "2027-07-11",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Ketchikan to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-10",
+   "dateTo": "2027-07-25",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14500,
+    "Trailblazer": 15300,
+    "Pathfinder": 16000,
+    "Admiral": 18200
+   },
+   "singlePrices": {
+    "Navigator": 21600,
+    "Trailblazer": 23000,
+    "Pathfinder": 24200,
+    "Admiral": 28100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-11",
+   "dateTo": "2027-07-18",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-17",
+   "dateTo": "2027-08-01",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14500,
+    "Trailblazer": 15300,
+    "Pathfinder": 16000,
+    "Admiral": 18200
+   },
+   "singlePrices": {
+    "Navigator": 21600,
+    "Trailblazer": 23000,
+    "Pathfinder": 24200,
+    "Admiral": 28100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-18",
+   "dateTo": "2027-07-25",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-25",
+   "dateTo": "2027-08-01",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-01",
+   "dateTo": "2027-08-08",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Juneau to Ketchikan",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-07",
+   "dateTo": "2027-08-22",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14500,
+    "Trailblazer": 15300,
+    "Pathfinder": 16000,
+    "Admiral": 18200
+   },
+   "singlePrices": {
+    "Navigator": 21600,
+    "Trailblazer": 23000,
+    "Pathfinder": 24200,
+    "Admiral": 28100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-08",
+   "dateTo": "2027-08-15",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Ketchikan to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-14",
+   "dateTo": "2027-08-29",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14500,
+    "Trailblazer": 15300,
+    "Pathfinder": 16000,
+    "Admiral": 18200
+   },
+   "singlePrices": {
+    "Navigator": 21600,
+    "Trailblazer": 23000,
+    "Pathfinder": 24200,
+    "Admiral": 28100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-15",
+   "dateTo": "2027-08-22",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-21",
+   "dateTo": "2027-09-05",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14500,
+    "Trailblazer": 15300,
+    "Pathfinder": 16000,
+    "Admiral": 18200
+   },
+   "singlePrices": {
+    "Navigator": 21600,
+    "Trailblazer": 23000,
+    "Pathfinder": 24200,
+    "Admiral": 28100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-22",
+   "dateTo": "2027-08-29",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-28",
+   "dateTo": "2027-09-12",
+   "itinerary": "Alaska's National Parks by Land and Sea, 15 nights",
+   "direction": "Fairbanks to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 14100,
+    "Trailblazer": 14800,
+    "Pathfinder": 15500,
+    "Admiral": 17600
+   },
+   "singlePrices": {
+    "Navigator": 20900,
+    "Trailblazer": 22100,
+    "Pathfinder": 23400,
+    "Admiral": 27000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-29",
+   "dateTo": "2027-09-05",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": "Adult Escape (18 and over)"
+  },
+  {
+   "date": "2027-09-05",
+   "dateTo": "2027-09-12",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6900,
+    "Trailblazer": 7600,
+    "Pathfinder": 8300,
+    "Admiral": 10400
+   },
+   "singlePrices": {
+    "Navigator": 12100,
+    "Trailblazer": 13300,
+    "Pathfinder": 14600,
+    "Admiral": 18200
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-12",
+   "dateTo": "2027-09-19",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6500,
+    "Trailblazer": 7200,
+    "Pathfinder": 7800,
+    "Admiral": 9800
+   },
+   "singlePrices": {
+    "Navigator": 11400,
+    "Trailblazer": 12600,
+    "Pathfinder": 13700,
+    "Admiral": 17200
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-19",
+   "dateTo": "2027-09-26",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6100,
+    "Trailblazer": 6800,
+    "Pathfinder": 7400,
+    "Admiral": 9200
+   },
+   "singlePrices": {
+    "Navigator": 10700,
+    "Trailblazer": 11900,
+    "Pathfinder": 13000,
+    "Admiral": 16100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-26",
+   "dateTo": "2027-10-03",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Juneau to Ketchikan",
+   "status": null,
+   "prices": {
+    "Navigator": 5700,
+    "Trailblazer": 6300,
+    "Pathfinder": 6900,
+    "Admiral": 8600
+   },
+   "singlePrices": {
+    "Navigator": 10000,
+    "Trailblazer": 11100,
+    "Pathfinder": 12100,
+    "Admiral": 15100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-04-16",
+   "dateTo": "2028-04-23",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Ketchikan to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 5300,
+    "Trailblazer": 5900,
+    "Pathfinder": 6400,
+    "Admiral": 8000
+   },
+   "singlePrices": {
+    "Navigator": 9300,
+    "Trailblazer": 10400,
+    "Pathfinder": 11200,
+    "Admiral": 14000
+   },
+   "note": null
+  },
+  {
+   "date": "2028-04-23",
+   "dateTo": "2028-04-30",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 5300,
+    "Trailblazer": 5900,
+    "Pathfinder": 6400,
+    "Admiral": 8000
+   },
+   "singlePrices": {
+    "Navigator": 9300,
+    "Trailblazer": 10400,
+    "Pathfinder": 11200,
+    "Admiral": 14000
+   },
+   "note": null
+  },
+  {
+   "date": "2028-04-30",
+   "dateTo": "2028-05-07",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 5300,
+    "Trailblazer": 5900,
+    "Pathfinder": 6400,
+    "Admiral": 8000
+   },
+   "singlePrices": {
+    "Navigator": 9300,
+    "Trailblazer": 10400,
+    "Pathfinder": 11200,
+    "Admiral": 14000
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-07",
+   "dateTo": "2028-05-14",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 5700,
+    "Trailblazer": 6300,
+    "Pathfinder": 6900,
+    "Admiral": 8600
+   },
+   "singlePrices": {
+    "Navigator": 10000,
+    "Trailblazer": 11100,
+    "Pathfinder": 12100,
+    "Admiral": 15100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-14",
+   "dateTo": "2028-05-21",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6100,
+    "Trailblazer": 6800,
+    "Pathfinder": 7400,
+    "Admiral": 9200
+   },
+   "singlePrices": {
+    "Navigator": 10700,
+    "Trailblazer": 11900,
+    "Pathfinder": 13000,
+    "Admiral": 16100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-21",
+   "dateTo": "2028-05-28",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6500,
+    "Trailblazer": 7200,
+    "Pathfinder": 7800,
+    "Admiral": 9800
+   },
+   "singlePrices": {
+    "Navigator": 11400,
+    "Trailblazer": 12600,
+    "Pathfinder": 13700,
+    "Admiral": 17200
+   },
+   "note": "Adult Escape (18 and over)"
+  },
+  {
+   "date": "2028-05-28",
+   "dateTo": "2028-06-04",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6900,
+    "Trailblazer": 7600,
+    "Pathfinder": 8300,
+    "Admiral": 10400
+   },
+   "singlePrices": {
+    "Navigator": 12100,
+    "Trailblazer": 13300,
+    "Pathfinder": 14600,
+    "Admiral": 18200
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-04",
+   "dateTo": "2028-06-11",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-11",
+   "dateTo": "2028-06-18",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-18",
+   "dateTo": "2028-06-25",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-25",
+   "dateTo": "2028-07-02",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Juneau to Ketchikan",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-02",
+   "dateTo": "2028-07-09",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Ketchikan to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-09",
+   "dateTo": "2028-07-16",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-16",
+   "dateTo": "2028-07-23",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-23",
+   "dateTo": "2028-07-30",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2028-07-30",
+   "dateTo": "2028-08-06",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Juneau to Ketchikan",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-06",
+   "dateTo": "2028-08-13",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Ketchikan to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-13",
+   "dateTo": "2028-08-20",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-20",
+   "dateTo": "2028-08-27",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-27",
+   "dateTo": "2028-09-03",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 11000
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 19300
+   },
+   "note": "Adult Escape (18 and over)"
+  },
+  {
+   "date": "2028-09-03",
+   "dateTo": "2028-09-10",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6900,
+    "Trailblazer": 7600,
+    "Pathfinder": 8300,
+    "Admiral": 10400
+   },
+   "singlePrices": {
+    "Navigator": 12100,
+    "Trailblazer": 13300,
+    "Pathfinder": 14600,
+    "Admiral": 18200
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-10",
+   "dateTo": "2028-09-17",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6500,
+    "Trailblazer": 7200,
+    "Pathfinder": 7800,
+    "Admiral": 9800
+   },
+   "singlePrices": {
+    "Navigator": 11400,
+    "Trailblazer": 12600,
+    "Pathfinder": 13700,
+    "Admiral": 17200
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-17",
+   "dateTo": "2028-09-24",
+   "itinerary": "Glacier Bay Adventure, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6100,
+    "Trailblazer": 6800,
+    "Pathfinder": 7400,
+    "Admiral": 9200
+   },
+   "singlePrices": {
+    "Navigator": 10700,
+    "Trailblazer": 11900,
+    "Pathfinder": 13000,
+    "Admiral": 16100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-24",
+   "dateTo": "2028-10-01",
+   "itinerary": "Alaska's Fjords and Glaciers, 7 nights",
+   "direction": "Juneau to Ketchikan",
+   "status": null,
+   "prices": {
+    "Navigator": 5700,
+    "Trailblazer": 6300,
+    "Pathfinder": 6900,
+    "Admiral": 8600
+   },
+   "singlePrices": {
+    "Navigator": 10000,
+    "Trailblazer": 11100,
+    "Pathfinder": 12100,
+    "Admiral": 15100
+   },
+   "note": null
+  }
+ ],
+ "datesPublished": true,
+ "pricesNote": "Fares per person in USD as UnCruise publishes them for 2027 and 2028, by cabin, sharing; single fares where UnCruise publishes them (Compass cabins are singles). Port fees and taxes included; gratuities not. Whole-ship charters on request.",
+ "fareBasis": "Per person, sharing, by cabin; single fares as published",
+ "inclusions": [
+  "All meals, with vegetarian, vegan, gluten-free and dairy-free options",
+  "All drinks, alcoholic and not",
+  "Port fees and taxes",
+  "Kayaks, paddleboards, skiffs and hiking poles, with naturalist guides",
+  "Airport transfers on embarkation and disembarkation days, as UnCruise publishes them"
+ ],
+ "exclusions": [
+  "Gratuities",
+  "Flights to and from Alaska",
+  "Pre and post cruise hotels (we arrange them)",
+  "Wi-Fi inside national parks and protected areas (none is available there)"
+ ],
+ "children": "Families in Nature weeks are planned for children; Adult Escape weeks are 18 and over.",
+ "faqs": [
+  [
+   "How many guests does Wilderness Discoverer carry?",
+   "76, in 38 cabins; five cabins take a third guest."
+  ],
+  [
+   "Does she have family departures?",
+   "Yes: Families in Nature weeks on the Glacier Bay Adventure in June and July 2027 and July 2028."
+  ],
+  [
+   "What is the photography cruise?",
+   "Alaska's Fjords and Glaciers on 27 June 2027, Juneau to Ketchikan, with photographer Lisa Mize aboard."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Families",
+   "line": "Families in Nature weeks on the Glacier Bay Adventure."
+  },
+  {
+   "who": "Photographers",
+   "line": "The Lisa Mize week through Misty Fjords."
+  }
+ ],
+ "sources": [
+  "https://uncruise.com/blogs/our-ships/wilderness-discoverer",
+  "https://uncruise.com/products/alaskas-fjords-glaciers-with-ketchikan",
+  "https://uncruise.com/products/glacier-bay-adventure-cruise-with-2-days-in-glacier-bay",
+  "https://uncruise.com/products/alaskas-national-parks-by-land-and-sea"
+ ],
+ "film": null,
+ "proofLine": "UnCruise Adventures partner",
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-02"
+  ]
+ },
+ "terms": [
+  "UnCruise's own terms apply; we confirm deposit, payment and cancellation terms with your quote."
+ ]
+}

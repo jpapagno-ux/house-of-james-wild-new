@@ -161,6 +161,27 @@ export function watersHub(w: Waters): HubProps {
       adding: filed.length ? `${list(filed)} have their ship pages to follow, written with James.` : undefined,
       atlas: { routes: routesFor(cards), legend: "sea", dest: "raja-ampat", kicker: "INDONESIA · UNDER SAIL", title: "Where Do the Indonesian Yachts Sail?", line: "Every published Indonesian route on one chart: pick a yacht and a route, and the globe sails it day by day." } };
   }
+  if (w === "alaska") {
+    // UnCruise Adventures (partner; James, 19 Nov 2026): seven boats, every 2027 and 2028 sailing filed (scripts/partners/uncruise-build.py).
+    const g = cards.map((c) => SHIPS.find((e) => e.slug === c.slug)?.data).filter((d): d is NonNullable<typeof d> => !!d);
+    const guests = (d: (typeof g)[number]) => Number(d.facts.find(([k]) => k === "Guests")?.[1] ?? 0);
+    const sail = g.reduce((n, d) => n + d.departures.length, 0);
+    const lo = Math.min(...g.flatMap((d) => d.departures.flatMap((x) => Object.values(x.prices).filter((v): v is number => v != null))));
+    const bySize = [...g].sort((a, b) => guests(a) - guests(b));
+    return { ...base,
+      title: "Small-Ship Alaska Cruises with UnCruise Adventures", intro: `Seven UnCruise boats for 22 to 88 guests: Glacier Bay, the Inside Passage, Prince William Sound and the Aleutian Islands, with every 2027 and 2028 sailing and fare.`,
+      answer: `The house sails Alaska with UnCruise Adventures, a partner: ${list(bySize.map((d) => `${d.name} (${guests(d)} guests)`))}. Between them they run ${sail} dated sailings in 2027 and 2028, from April to September, from ${usd(lo)} per person: seven nights round trip from Juneau through Glacier Bay, Juneau to Sitka or Ketchikan, twelve nights from Seattle up the Inside Passage, Prince William Sound from Seward, the Gulf coast, and ten nights in the Aleutian Islands. Every boat carries kayaks, paddleboards and skiffs, and every drink is included.`,
+      faqs: [
+        { q: "What is the best small ship cruise in Alaska?", a: "It depends on what you want to see. For Glacier Bay twice in a week, the Glacier Bay Adventure on Wilderness Discoverer or Wilderness Adventurer; for the most active week, Wild, Woolly and Wow on Wilderness Legacy; for bears and Sitka, Northern Passages on Safari Endeavour; for a private-feeling week, Safari Quest at 22 guests; for the far coast, the Aleutians on Safari Explorer or Wilderness Explorer." },
+        { q: "When is the Alaska small-ship season?", a: "UnCruise sails Alaska from mid April to late September. May and September are the quietest and lowest fares; June to August is the long-daylight peak. The Inside Passage from Seattle runs in April, May and September, as the boats come north and go south." },
+        { q: "Where do UnCruise voyages start?", a: "Juneau for most weeks; Sitka, Ketchikan and Seattle at either end of the one-way routes; Seward (with the transfer from Anchorage included) for Prince William Sound, the Gulf coast and the Aleutians; Fairbanks for the Denali to Glacier Bay journey." },
+        { q: "Are there family and adults-only sailings?", a: "Yes. Families in Nature weeks run on Wilderness Legacy and Wilderness Discoverer in June, July and August; Adult Escape weeks (18 and over) on Wilderness Legacy, Wilderness Discoverer and Safari Endeavour in spring, summer and autumn." },
+        { q: "What is included in the fare?", a: "Meals, all drinks, port fees and taxes, the kayaks, paddleboards and skiffs with naturalist guides, and the airport transfers on the first and last days. Gratuities, flights and hotels before or after are not; we arrange those." },
+        { q: "Can we charter a whole UnCruise boat?", a: "Yes, every boat can be chartered whole, from Safari Quest for 22 to Wilderness Legacy for 88. Ask us for the rate on your dates." },
+        FARES,
+      ],
+      atlas: { routes: routesFor(cards), legend: "sea", dest: "alaska", kicker: "ALASKA · BY SMALL SHIP", title: "Where Do the UnCruise Boats Sail?", line: "Every Alaska route on one chart: pick a boat and a route, and the chart sails it day by day." } };
+  }
   // nile
   return { ...base, title: "Nile Cruises Aboard the A&K Sanctuary Ships", intro: "Riverboats and a dahabiya between Luxor and Aswan, each filed with its cabins, deck plan, day by day and every published date.", answer: "", faqs: [],
     atlas: { routes: routesFor(cards), legend: "river", dest: "nile", chart: NILE_CHART, kicker: "THE NILE · BY RIVER", title: "Every Nile Route on One Chart", line: "Pick a ship and a direction: the chart flies to Egypt and sails the river day by day." } };

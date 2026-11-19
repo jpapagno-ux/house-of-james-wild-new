@@ -86,7 +86,7 @@ test("a vessel with a ship page 301s from her stay URL (as Aliikai's does)", () 
 // Search and category facts (James, 2 Nov 2026): read only from each ship's filed record; never a guess.
 type Rec = { slug: string; children?: string; facts?: [string, string][]; pricesNote?: string; overview?: string[]; faqs?: [string, string][]; cabins?: { features: string[] }[]; departures?: { prices: Record<string, number | null>; singlePrices?: Record<string, number | null> }[] };
 const full = new Map<string, Rec>();
-for (const dir of ["nile", "amazon", "galapagos", "polar"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
+for (const dir of ["nile", "amazon", "galapagos", "polar", "alaska"]) for (const f of readdirSync(new URL(`lib/content/ships/${dir}/`, root)).filter((x) => x.endsWith(".json"))) {
   const r = JSON.parse(readFileSync(new URL(`lib/content/ships/${dir}/${f}`, root), "utf8")) as Rec;
   full.set(r.slug, r);
 }

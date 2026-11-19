@@ -1,0 +1,1613 @@
+{
+ "slug": "wilderness-legacy",
+ "name": "Wilderness Legacy",
+ "brandLine": "UnCruise Adventures",
+ "operator": "UnCruise Adventures",
+ "type": "small expedition ship",
+ "waters": "Alaska",
+ "country": "United States",
+ "status": "sailing",
+ "seo": {
+  "title": "Wilderness Legacy: UnCruise's 88-Guest Ship, Wild, Woolly and Wow | James Wild & Co",
+  "description": "Wilderness Legacy, UnCruise's largest Alaska ship at 88 guests, sails Wild, Woolly and Wow from Juneau: LeConte Glacier, Kuiu Island, Chichagof and Glacier Bay, the fleet's most active week. Every 2027 and 2028 sailing and fare, from $5,300.",
+  "keywords": [
+   "Wilderness Legacy",
+   "UnCruise Wilderness Legacy",
+   "Wild Woolly and Wow",
+   "LeConte Glacier cruise",
+   "active Alaska cruise",
+   "Alaska family cruise"
+  ]
+ },
+ "tagline": "UnCruise's largest Alaska ship, on its most active week.",
+ "answer": "Wilderness Legacy is UnCruise's largest Alaska vessel: 192 feet, 88 guests in 44 cabins, with the most spacious viewing decks in the fleet and its only elevator. From April to September she sails Wild, Woolly and Wow, seven nights round trip from Juneau to LeConte Glacier, Kuiu Island, Chichagof and Glacier Bay's outer bay, the most active week UnCruise offers. Fares run from $5,300 per person.",
+ "facts": [
+  [
+   "Guests",
+   "88"
+  ],
+  [
+   "Cabins",
+   "44, all outside"
+  ],
+  [
+   "Guest to crew",
+   "3:1"
+  ],
+  [
+   "Length",
+   "192 ft (59 m)"
+  ],
+  [
+   "Beam",
+   "40 ft"
+  ],
+  [
+   "Built",
+   "1984"
+  ],
+  [
+   "Decks",
+   "4"
+  ],
+  [
+   "Speed",
+   "14 mph"
+  ],
+  [
+   "Registry and crew",
+   "USA"
+  ]
+ ],
+ "overview": [
+  "Carved wooden cabinetry, an Owner's Suite and a whistle she blows on arrival: the Legacy is the character of the fleet. Her Sea Dragon platform launches kayaks and paddleboards, and three bow viewing areas give the best wildlife watching in the fleet.",
+  "Four decks: two hot tubs and the open bridge up top, the largest lounge in the Alaska fleet, and a dining room serving plated meals. Every drink is included. She is the only boat with an elevator, though it does not reach the bridge deck.",
+  "Her week is Wild, Woolly and Wow: bushwhacks in old growth, LeConte Glacier up a channel big ships cannot enter, Thomas Bay's falls, black bears on Kuiu, brown bears on Chichagof and Glacier Bay's rarely visited outer bay."
+ ],
+ "why": [
+  "UnCruise's most active Alaska week.",
+  "Families in Nature and Adult Escape departures, and a week hosted with the National Forest Foundation.",
+  "The only elevator in the fleet, and Jr. Commodore and Commodore suites."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wilderness-legacy/hero",
+  "alt": "Kayakers paddling past a brown bear on the shore in Southeast Alaska",
+  "credit": "UnCruise Adventures"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wilderness-legacy/kayaks",
+   "alt": "Guests in a red double kayak on calm water below the mountains",
+   "credit": "UnCruise Adventures"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wilderness-legacy/families",
+   "alt": "A young guest watching for wildlife through binoculars on a Families in Nature sailing",
+   "credit": "UnCruise Adventures"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wilderness-legacy/commodore-suite",
+   "alt": "A Wilderness Legacy suite with carved wood and a wide bed",
+   "credit": "UnCruise Adventures"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Commodore Suite",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "The top category"
+   ],
+   "image": null
+  },
+  {
+   "type": "Jr. Commodore Suite",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Suite category"
+   ],
+   "image": null
+  },
+  {
+   "type": "Admiral",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Cabin 309 has a short ramp and grab bars (not ADA accessible)"
+   ],
+   "image": null
+  },
+  {
+   "type": "Pathfinder",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "View window"
+   ],
+   "image": null
+  },
+  {
+   "type": "Trailblazer",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "View windows"
+   ],
+   "image": null
+  },
+  {
+   "type": "Navigator",
+   "count": null,
+   "size": null,
+   "beds": "Fixed double",
+   "deck": null,
+   "features": [
+    "View window"
+   ],
+   "image": null
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "nights": 7,
+   "direction": "Juneau round trip",
+   "short": "LeConte Glacier, Kuiu Island, Chichagof and Glacier Bay",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Fly into Juneau by 4 pm; UnCruise meets you and you board in the evening."
+    },
+    {
+     "day": 2,
+     "title": "Robert and Crow",
+     "place": "Robert and Crow",
+     "lat": 57.3,
+     "lng": -133.62,
+     "summary": "Bushwhacks, forest walks and kayaking among old growth, with the Five Finger lighthouse in view."
+    },
+    {
+     "day": 3,
+     "title": "LeConte Glacier",
+     "place": "LeConte Bay",
+     "lat": 56.8,
+     "lng": -132.55,
+     "summary": "The southernmost tidewater glacier in the Northern Hemisphere, up a channel the big ships cannot enter."
+    },
+    {
+     "day": 4,
+     "title": "Thomas Bay",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Cascade Creek's falls and the trails of the land the Tlingit call home of the Kushtaka."
+    },
+    {
+     "day": 5,
+     "title": "Kuiu Island and whale watching",
+     "place": "Kuiu Island",
+     "lat": 56.62,
+     "lng": -134.22,
+     "summary": "Black bear country, sea otters in the bays and humpbacks offshore."
+    },
+    {
+     "day": 6,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach."
+    },
+    {
+     "day": 7,
+     "title": "Glacier Bay, the outer bay",
+     "place": "Glacier Bay, the outer bay",
+     "lat": 58.45,
+     "lng": -136.05,
+     "summary": "Parts of the park very few visitors ever reach."
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Breakfast aboard, then the transfer to Juneau airport for flights from 11.30 am."
+    }
+   ]
+  },
+  {
+   "name": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "nights": 12,
+   "direction": "Seattle to Juneau",
+   "short": "Sucia Island, Canada's Inside Passage, Misty Fjords and Glacier Bay",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Seattle",
+     "place": "Seattle",
+     "lat": 47.66,
+     "lng": -122.4,
+     "summary": "Fly into Seattle by 2 pm; you board in Ballard."
+    },
+    {
+     "day": 2,
+     "title": "Sucia Island",
+     "place": "Sucia Island",
+     "lat": 48.76,
+     "lng": -122.9,
+     "summary": "A marine state park in the San Juans, reached only by boat."
+    },
+    {
+     "day": 3,
+     "title": "Canada's Inside Passage",
+     "place": "Strait of Georgia",
+     "lat": 49.6,
+     "lng": -124.4,
+     "summary": "North through the Strait of Georgia, eagles over the treetops."
+    },
+    {
+     "day": 4,
+     "title": "Canada's Inside Passage",
+     "place": "Queen Charlotte Sound",
+     "lat": 51.0,
+     "lng": -127.7,
+     "summary": "Coffee on the bow through Queen Charlotte Sound."
+    },
+    {
+     "day": 5,
+     "title": "The Great Bear Rainforest",
+     "place": "Great Bear Rainforest",
+     "lat": 52.8,
+     "lng": -128.7,
+     "summary": "Watching the shore for the white spirit bear."
+    },
+    {
+     "day": 6,
+     "title": "Misty Fjords National Monument",
+     "place": "Misty Fjords National Monument",
+     "lat": 55.55,
+     "lng": -130.88,
+     "summary": "Sheer cliffs and waterfalls by kayak and skiff."
+    },
+    {
+     "day": 7,
+     "title": "Ketchikan",
+     "place": "Ketchikan",
+     "lat": 55.34,
+     "lng": -131.65,
+     "summary": "Alaska's First City and its Tlingit culture."
+    },
+    {
+     "day": 8,
+     "title": "Thomas Bay and Wrangell Narrows",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Moraines, muskeg and Christmas Tree Lane."
+    },
+    {
+     "day": 9,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach."
+    },
+    {
+     "day": 10,
+     "title": "Icy Strait",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Kayaking, all-day paddles, shore walks and bushwhacks where the humpbacks feed."
+    },
+    {
+     "day": 11,
+     "title": "Glacier Bay National Park",
+     "place": "Glacier Bay National Park",
+     "lat": 58.62,
+     "lng": -136.05,
+     "summary": "Deep into the park by kayak, skiff and on foot: moraines, glacial ridges, puffins, sea lions and mountain goats."
+    },
+    {
+     "day": 12,
+     "title": "Glacier Bay National Park",
+     "place": "Upper Glacier Bay",
+     "lat": 58.93,
+     "lng": -136.8,
+     "summary": "A second day in the park, among the tidewater glaciers of the upper bay."
+    },
+    {
+     "day": 13,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "The transfer to Juneau airport is included."
+    }
+   ]
+  },
+  {
+   "name": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "nights": 12,
+   "direction": "Juneau to Seattle",
+   "short": "Sucia Island, Canada's Inside Passage, Misty Fjords and Glacier Bay (reverse)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "The transfer to Juneau airport is included.",
+     "indicative": true
+    },
+    {
+     "day": 2,
+     "title": "Glacier Bay National Park",
+     "place": "Upper Glacier Bay",
+     "lat": 58.93,
+     "lng": -136.8,
+     "summary": "A second day in the park, among the tidewater glaciers of the upper bay.",
+     "indicative": true
+    },
+    {
+     "day": 3,
+     "title": "Glacier Bay National Park",
+     "place": "Glacier Bay National Park",
+     "lat": 58.62,
+     "lng": -136.05,
+     "summary": "Deep into the park by kayak, skiff and on foot: moraines, glacial ridges, puffins, sea lions and mountain goats.",
+     "indicative": true
+    },
+    {
+     "day": 4,
+     "title": "Icy Strait",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Kayaking, all-day paddles, shore walks and bushwhacks where the humpbacks feed.",
+     "indicative": true
+    },
+    {
+     "day": 5,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach.",
+     "indicative": true
+    },
+    {
+     "day": 6,
+     "title": "Thomas Bay and Wrangell Narrows",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Moraines, muskeg and Christmas Tree Lane.",
+     "indicative": true
+    },
+    {
+     "day": 7,
+     "title": "Ketchikan",
+     "place": "Ketchikan",
+     "lat": 55.34,
+     "lng": -131.65,
+     "summary": "Alaska's First City and its Tlingit culture.",
+     "indicative": true
+    },
+    {
+     "day": 8,
+     "title": "Misty Fjords National Monument",
+     "place": "Misty Fjords National Monument",
+     "lat": 55.55,
+     "lng": -130.88,
+     "summary": "Sheer cliffs and waterfalls by kayak and skiff.",
+     "indicative": true
+    },
+    {
+     "day": 9,
+     "title": "The Great Bear Rainforest",
+     "place": "Great Bear Rainforest",
+     "lat": 52.8,
+     "lng": -128.7,
+     "summary": "Watching the shore for the white spirit bear.",
+     "indicative": true
+    },
+    {
+     "day": 10,
+     "title": "Canada's Inside Passage",
+     "place": "Queen Charlotte Sound",
+     "lat": 51.0,
+     "lng": -127.7,
+     "summary": "Coffee on the bow through Queen Charlotte Sound.",
+     "indicative": true
+    },
+    {
+     "day": 11,
+     "title": "Canada's Inside Passage",
+     "place": "Strait of Georgia",
+     "lat": 49.6,
+     "lng": -124.4,
+     "summary": "North through the Strait of Georgia, eagles over the treetops.",
+     "indicative": true
+    },
+    {
+     "day": 12,
+     "title": "Sucia Island",
+     "place": "Sucia Island",
+     "lat": 48.76,
+     "lng": -122.9,
+     "summary": "A marine state park in the San Juans, reached only by boat.",
+     "indicative": true
+    },
+    {
+     "day": 13,
+     "title": "Disembark in Seattle",
+     "place": "Seattle",
+     "lat": 47.66,
+     "lng": -122.4,
+     "summary": "Fly into Seattle by 2 pm; you board in Ballard.",
+     "indicative": true
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2027-04-12",
+   "dateTo": "2027-04-24",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Seattle to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 9500,
+    "Jr. Commodore Suite": 11000,
+    "Commodore Suite": 13200
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 16700,
+    "Jr. Commodore Suite": 19300,
+    "Commodore Suite": 23100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-04-24",
+   "dateTo": "2027-05-01",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 5300,
+    "Trailblazer": 5900,
+    "Pathfinder": 6400,
+    "Admiral": 6900,
+    "Jr. Commodore Suite": 8000,
+    "Commodore Suite": 9600
+   },
+   "singlePrices": {
+    "Navigator": 9300,
+    "Trailblazer": 10400,
+    "Pathfinder": 11200,
+    "Admiral": 12100,
+    "Jr. Commodore Suite": 14000,
+    "Commodore Suite": 16800
+   },
+   "note": "Adult Escape (18 and over)"
+  },
+  {
+   "date": "2027-05-01",
+   "dateTo": "2027-05-08",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 5800,
+    "Trailblazer": 6400,
+    "Pathfinder": 7000,
+    "Admiral": 7600,
+    "Jr. Commodore Suite": 8700,
+    "Commodore Suite": 10500
+   },
+   "singlePrices": {
+    "Navigator": 10200,
+    "Trailblazer": 11200,
+    "Pathfinder": 12300,
+    "Admiral": 13300,
+    "Jr. Commodore Suite": 15300,
+    "Commodore Suite": 18400
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-08",
+   "dateTo": "2027-05-15",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6300,
+    "Trailblazer": 7000,
+    "Pathfinder": 7600,
+    "Admiral": 8200,
+    "Jr. Commodore Suite": 9500,
+    "Commodore Suite": 11400
+   },
+   "singlePrices": {
+    "Navigator": 11100,
+    "Trailblazer": 12300,
+    "Pathfinder": 13300,
+    "Admiral": 14400,
+    "Jr. Commodore Suite": 16700,
+    "Commodore Suite": 20000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-15",
+   "dateTo": "2027-05-22",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6800,
+    "Trailblazer": 7500,
+    "Pathfinder": 8200,
+    "Admiral": 8900,
+    "Jr. Commodore Suite": 10200,
+    "Commodore Suite": 12300
+   },
+   "singlePrices": {
+    "Navigator": 11900,
+    "Trailblazer": 13200,
+    "Pathfinder": 14400,
+    "Admiral": 15600,
+    "Jr. Commodore Suite": 17900,
+    "Commodore Suite": 21600
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-22",
+   "dateTo": "2027-05-29",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 9500,
+    "Jr. Commodore Suite": 11000,
+    "Commodore Suite": 13200
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 16700,
+    "Jr. Commodore Suite": 19300,
+    "Commodore Suite": 23100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-29",
+   "dateTo": "2027-06-05",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8000,
+    "Trailblazer": 8800,
+    "Pathfinder": 9600,
+    "Admiral": 10400,
+    "Jr. Commodore Suite": 12000,
+    "Commodore Suite": 14400
+   },
+   "singlePrices": {
+    "Navigator": 14000,
+    "Trailblazer": 15400,
+    "Pathfinder": 16800,
+    "Admiral": 18200,
+    "Jr. Commodore Suite": 21000,
+    "Commodore Suite": 25200
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-05",
+   "dateTo": "2027-06-12",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-12",
+   "dateTo": "2027-06-19",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-19",
+   "dateTo": "2027-06-26",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-26",
+   "dateTo": "2027-07-03",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2027-07-03",
+   "dateTo": "2027-07-10",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-10",
+   "dateTo": "2027-07-17",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-17",
+   "dateTo": "2027-07-24",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-24",
+   "dateTo": "2027-07-31",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2027-07-31",
+   "dateTo": "2027-08-07",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2027-08-07",
+   "dateTo": "2027-08-14",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-14",
+   "dateTo": "2027-08-21",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": "Hosted with the National Forest Foundation"
+  },
+  {
+   "date": "2027-08-21",
+   "dateTo": "2027-08-28",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": "Adult Escape (18 and over)"
+  },
+  {
+   "date": "2027-08-28",
+   "dateTo": "2027-09-04",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-04",
+   "dateTo": "2027-09-11",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8000,
+    "Trailblazer": 8800,
+    "Pathfinder": 9600,
+    "Admiral": 10400,
+    "Jr. Commodore Suite": 12000,
+    "Commodore Suite": 14400
+   },
+   "singlePrices": {
+    "Navigator": 14000,
+    "Trailblazer": 15400,
+    "Pathfinder": 16800,
+    "Admiral": 18200,
+    "Jr. Commodore Suite": 21000,
+    "Commodore Suite": 25200
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-11",
+   "dateTo": "2027-09-18",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 9500,
+    "Jr. Commodore Suite": 11000,
+    "Commodore Suite": 13200
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 16700,
+    "Jr. Commodore Suite": 19300,
+    "Commodore Suite": 23100
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-18",
+   "dateTo": "2027-09-30",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Juneau to Seattle",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 12800,
+    "Commodore Suite": 15300
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 22400,
+    "Commodore Suite": 26800
+   },
+   "note": null
+  },
+  {
+   "date": "2028-04-17",
+   "dateTo": "2028-04-29",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Seattle to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 9500,
+    "Jr. Commodore Suite": 11900,
+    "Commodore Suite": 12900
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 16700,
+    "Jr. Commodore Suite": 20900,
+    "Commodore Suite": 22600
+   },
+   "note": null
+  },
+  {
+   "date": "2028-04-29",
+   "dateTo": "2028-05-06",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 5800,
+    "Trailblazer": 6400,
+    "Pathfinder": 7000,
+    "Admiral": 7600,
+    "Jr. Commodore Suite": 9900,
+    "Commodore Suite": 10800
+   },
+   "singlePrices": {
+    "Navigator": 10200,
+    "Trailblazer": 11200,
+    "Pathfinder": 12300,
+    "Admiral": 13300,
+    "Jr. Commodore Suite": 17400,
+    "Commodore Suite": 18900
+   },
+   "note": "Adult Escape (18 and over)"
+  },
+  {
+   "date": "2028-05-06",
+   "dateTo": "2028-05-13",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6300,
+    "Trailblazer": 7000,
+    "Pathfinder": 7600,
+    "Admiral": 8200,
+    "Jr. Commodore Suite": 10300,
+    "Commodore Suite": 11400
+   },
+   "singlePrices": {
+    "Navigator": 11100,
+    "Trailblazer": 12300,
+    "Pathfinder": 13300,
+    "Admiral": 14400,
+    "Jr. Commodore Suite": 18100,
+    "Commodore Suite": 20000
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-13",
+   "dateTo": "2028-05-20",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 6800,
+    "Trailblazer": 7500,
+    "Pathfinder": 8200,
+    "Admiral": 8900,
+    "Jr. Commodore Suite": 11100,
+    "Commodore Suite": 11900
+   },
+   "singlePrices": {
+    "Navigator": 11900,
+    "Trailblazer": 13200,
+    "Pathfinder": 14400,
+    "Admiral": 15600,
+    "Jr. Commodore Suite": 19500,
+    "Commodore Suite": 20900
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-20",
+   "dateTo": "2028-05-27",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 9500,
+    "Jr. Commodore Suite": 11900,
+    "Commodore Suite": 12900
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 16700,
+    "Jr. Commodore Suite": 20900,
+    "Commodore Suite": 22600
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-27",
+   "dateTo": "2028-06-03",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8000,
+    "Trailblazer": 8800,
+    "Pathfinder": 9600,
+    "Admiral": 10400,
+    "Jr. Commodore Suite": 12900,
+    "Commodore Suite": 14100
+   },
+   "singlePrices": {
+    "Navigator": 14000,
+    "Trailblazer": 15400,
+    "Pathfinder": 16800,
+    "Admiral": 18200,
+    "Jr. Commodore Suite": 22600,
+    "Commodore Suite": 24700
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-03",
+   "dateTo": "2028-06-10",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-10",
+   "dateTo": "2028-06-17",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-17",
+   "dateTo": "2028-06-24",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-24",
+   "dateTo": "2028-07-01",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2028-07-01",
+   "dateTo": "2028-07-08",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-08",
+   "dateTo": "2028-07-15",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-15",
+   "dateTo": "2028-07-22",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2028-07-22",
+   "dateTo": "2028-07-29",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-29",
+   "dateTo": "2028-08-05",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-05",
+   "dateTo": "2028-08-12",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": "Families in Nature"
+  },
+  {
+   "date": "2028-08-12",
+   "dateTo": "2028-08-19",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-19",
+   "dateTo": "2028-08-26",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": "Adult Escape (18 and over)"
+  },
+  {
+   "date": "2028-08-26",
+   "dateTo": "2028-09-02",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-02",
+   "dateTo": "2028-09-09",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 8000,
+    "Trailblazer": 8800,
+    "Pathfinder": 9600,
+    "Admiral": 10400,
+    "Jr. Commodore Suite": 12900,
+    "Commodore Suite": 14100
+   },
+   "singlePrices": {
+    "Navigator": 14000,
+    "Trailblazer": 15400,
+    "Pathfinder": 16800,
+    "Admiral": 18200,
+    "Jr. Commodore Suite": 22600,
+    "Commodore Suite": 24700
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-09",
+   "dateTo": "2028-09-16",
+   "itinerary": "Wild, Woolly and Wow with Glacier Bay, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 7300,
+    "Trailblazer": 8100,
+    "Pathfinder": 8800,
+    "Admiral": 9500,
+    "Jr. Commodore Suite": 11900,
+    "Commodore Suite": 12900
+   },
+   "singlePrices": {
+    "Navigator": 12800,
+    "Trailblazer": 14200,
+    "Pathfinder": 15400,
+    "Admiral": 16700,
+    "Jr. Commodore Suite": 20900,
+    "Commodore Suite": 22600
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-16",
+   "dateTo": "2028-09-28",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Juneau to Seattle",
+   "status": null,
+   "prices": {
+    "Navigator": 8500,
+    "Trailblazer": 9400,
+    "Pathfinder": 10200,
+    "Admiral": 11100,
+    "Jr. Commodore Suite": 13300,
+    "Commodore Suite": 14900
+   },
+   "singlePrices": {
+    "Navigator": 14900,
+    "Trailblazer": 16500,
+    "Pathfinder": 17900,
+    "Admiral": 19500,
+    "Jr. Commodore Suite": 23300,
+    "Commodore Suite": 26100
+   },
+   "note": null
+  }
+ ],
+ "datesPublished": true,
+ "pricesNote": "Fares per person in USD as UnCruise publishes them for 2027 and 2028, by cabin, sharing; single fares where UnCruise publishes them (Compass cabins are singles). Port fees and taxes included; gratuities not. Whole-ship charters on request.",
+ "fareBasis": "Per person, sharing, by cabin; single fares as published",
+ "inclusions": [
+  "All meals, with vegetarian, vegan, gluten-free and dairy-free options",
+  "All drinks, alcoholic and not",
+  "Port fees and taxes",
+  "Kayaks, paddleboards, skiffs and hiking poles, with naturalist guides",
+  "Airport transfers on embarkation and disembarkation days, as UnCruise publishes them"
+ ],
+ "exclusions": [
+  "Gratuities",
+  "Flights to and from Alaska",
+  "Pre and post cruise hotels (we arrange them)",
+  "Wi-Fi inside national parks and protected areas (none is available there)"
+ ],
+ "children": "Families in Nature weeks are planned for children; Adult Escape weeks are 18 and over.",
+ "faqs": [
+  [
+   "How many guests does Wilderness Legacy carry?",
+   "88, in 44 cabins."
+  ],
+  [
+   "What is Wild, Woolly and Wow?",
+   "Seven nights round trip from Juneau: Robert and Crow, LeConte Glacier, Thomas Bay, Kuiu Island, Chichagof Island and Glacier Bay's outer bay. UnCruise calls it its most active expedition cruise."
+  ],
+  [
+   "Is she suitable for guests with limited mobility?",
+   "She is the only boat in the fleet with an elevator (not to the bridge deck), but guests must manage the gangway and one flight of stairs; ask us before you book."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Families",
+   "line": "Families in Nature weeks in June, July and August."
+  },
+  {
+   "who": "Active travellers",
+   "line": "The bushwhacks, paddles and hikes of Wild, Woolly and Wow."
+  }
+ ],
+ "sources": [
+  "https://uncruise.com/blogs/our-ships/wilderness-legacy",
+  "https://uncruise.com/products/wild-woolly-and-wow-with-glacier-bay",
+  "https://uncruise.com/products/glacier-bay-national-park-with-inside-passage-and-san-juan-islands"
+ ],
+ "film": null,
+ "proofLine": "UnCruise Adventures partner",
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-01"
+  ]
+ },
+ "terms": [
+  "UnCruise's own terms apply; we confirm deposit, payment and cancellation terms with your quote."
+ ]
+}

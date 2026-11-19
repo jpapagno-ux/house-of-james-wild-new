@@ -13,7 +13,7 @@ import { breadcrumbs, graph, touristTrip } from "@/lib/schema";
 // /overland/terra-y: Terra Y, the expedition dossiers (James, 15 Nov 2026; approved for live the same day).
 export const metadata = buildMetadata({
   title: "Terra Y: Antarctica by Private Jet and the DC-3 Expeditions, by James Wild & Co",
-  description: "Terra Y is James Wild & Co's VIP expedition file: White Desert's Antarctic camps and the South Pole, and Echo Charlie's twelve-guest DC-3 journeys. Published rates, every date.",
+  description: "Terra Y is James Wild & Co's VIP expedition file: White Desert's Antarctic camps and the South Pole, and Echo Charlie's twelve-guest DC-3 journeys and UnCruise's Aleutians and Safari Quest in Alaska. Published rates, every date.",
   path: TY_PATH,
   // approved by James, 15 Nov 2026
 });
@@ -24,11 +24,13 @@ const FAQS = [
   { q: "Who operates the journeys?", a: "White Desert runs the Antarctic camps and flights; Echo Charlie, presented by White Desert, runs the DC-3 journeys. James Wild & Co is their partner: we plan the journey around them, the nights before and after, the flights and the forms, under one Traveler Folio and one advisor." },
   { q: "How much does a private trip to Antarctica cost?", a: "White Desert publishes its rates per person sharing: US $16,500 for Antarctica in a Day, US $45,000 for Discovery Week, from US $65,000 for Baby Penguins & Blue Tunnels and from US $95,000 for the South Pole trips in the 2026 to 2027 season." },
   { q: "What is the DC-3 expedition?", a: "Echo Charlie flies twelve guests at most in a Douglas C-47 from 1942, rebuilt as a Basler BT-67, on twelve-night journeys: Peru to Patagonia from US $67,500, Colombia to Guatemala from US $54,000 and Scotland to Greenland from US $79,000 per person, all in 2027." },
+  { q: "Are there Alaska journeys in Terra Y?", a: "Two, with UnCruise Adventures: the ten-night Aleutian Islands Adventure between Seward and Dutch Harbor, from US $13,600 per person sharing, and Safari Quest, a 22-guest yacht held whole for one party on seven-night Glacier Wilderness weeks from Juneau, from US $9,900 per person by the cabin, with the charter quoted on request." },
 ];
 
 export default function TerraYHub() {
   const ice = TY_DOSSIERS.filter((d) => d.file === "ice");
   const dc3 = TY_DOSSIERS.filter((d) => d.file === "dc3");
+  const sea = TY_DOSSIERS.filter((d) => d.file === "sea");
   return (
     <div className="theme-terra-y">
       <SiteHeader overlay />
@@ -110,6 +112,17 @@ export default function TerraYHub() {
                 </dl>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="sea" className="ty-chart border-t-4" style={{ borderColor: "var(--ty-glacier)" }}>
+          <div className="max-w-ledger mx-auto px-5 md:px-10 py-16 md:py-20">
+            <div className="flex flex-wrap items-end justify-between gap-6">
+              <TyHead code={`${TY_FILES.sea.code} · ${TY_FILES.sea.operator} · Alaska`} title={TY_FILES.sea.name} intro={TY_FILES.sea.line} />
+              <Credit file="sea" />
+            </div>
+            <div className="mt-10 grid gap-6 md:grid-cols-3">{sea.map((d) => <DossierCard key={d.slug} d={d} />)}</div>
+            <p className="mt-8 text-[14.5px] text-graphite max-w-2xl">The rest of the UnCruise fleet, seven small ships and every 2027 and 2028 sailing, is filed under <Link href="/voyages/alaska" className="underline underline-offset-4">Alaska voyages</Link>.</p>
           </div>
         </section>
 

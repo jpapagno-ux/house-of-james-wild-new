@@ -121,6 +121,14 @@ export const BUILT: string[] = [
   "/voyages/ships/wind-star",
   // Windstar in the Mediterranean (19 Nov 2026)
   "/voyages/ships/wind-surf",
+  "/voyages/alaska",
+  "/voyages/ships/safari-quest",
+  "/voyages/ships/safari-explorer",
+  "/voyages/ships/wilderness-adventurer",
+  "/voyages/ships/wilderness-explorer",
+  "/voyages/ships/wilderness-discoverer",
+  "/voyages/ships/safari-endeavour",
+  "/voyages/ships/wilderness-legacy",
   // Blue Lagoon Cruises in Fiji (7 Nov 2026)
   "/voyages/ships/yasawa-princess-ii",
   "/safaris",

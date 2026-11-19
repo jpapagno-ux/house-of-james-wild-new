@@ -1,0 +1,1403 @@
+{
+ "slug": "safari-explorer",
+ "name": "Safari Explorer",
+ "brandLine": "UnCruise Adventures",
+ "operator": "UnCruise Adventures",
+ "type": "expedition yacht",
+ "waters": "Alaska",
+ "country": "United States",
+ "status": "sailing",
+ "seo": {
+  "title": "Safari Explorer in Alaska: UnCruise's 36-Guest Expedition Yacht | James Wild & Co",
+  "description": "Safari Explorer, UnCruise's 36-guest expedition yacht, sails Prince William Sound, the Aleutian Islands and Alaska's wild Gulf coast in summer. Every 2027 and 2028 sailing and fare, from $11,200.",
+  "keywords": [
+   "Safari Explorer",
+   "UnCruise Safari Explorer",
+   "Aleutian Islands cruise",
+   "Prince William Sound cruise",
+   "small ship Alaska",
+   "Alaska expedition yacht"
+  ]
+ },
+ "tagline": "Thirty-six guests to Alaska's far coast: Prince William Sound, the Gulf of Alaska and the Aleutians.",
+ "answer": "Safari Explorer is UnCruise's 36-guest expedition yacht, 145 feet with 18 cabins. In summer she sails Alaska's farther waters: Prince William Sound from Seward, the Aleutian Islands between Seward and Dutch Harbor, the Gulf coast between Seward and Juneau, and the Inside Passage from Seattle. Fares run from $11,200 per person.",
+ "facts": [
+  [
+   "Guests",
+   "36"
+  ],
+  [
+   "Cabins",
+   "18, all outside"
+  ],
+  [
+   "Balcony cabins",
+   "2"
+  ],
+  [
+   "Guest to crew",
+   "2:1"
+  ],
+  [
+   "Length",
+   "145 ft (44 m)"
+  ],
+  [
+   "Beam",
+   "36 ft"
+  ],
+  [
+   "Built",
+   "1998"
+  ],
+  [
+   "Decks",
+   "3"
+  ],
+  [
+   "Speed",
+   "11.5 mph"
+  ],
+  [
+   "Registry and crew",
+   "USA"
+  ]
+ ],
+ "overview": [
+  "Safari Explorer winters in Hawaii and comes north for the summer, to the parts of Alaska most small ships never reach. Her rugged hull and small size take her into remote waterways with room for only a few.",
+  "Three decks: a rooftop sun lounge, fitness equipment, an open bridge and the Commodore Suites up top, a hot tub in Alaska, the dining room and lounge below. Meals are plated, every drink is included, and there are kayaks, paddleboards, skiffs, snorkel gear and rubber boots for everyone.",
+  "In 2027 she sails the Aleutian Islands Adventure six times, Kodiak, Katmai and Aniakchak to Dutch Harbor; Prince William Sound with Cordova; Alaska's Coastal Treasures to Juneau; and the Inside Passage south to Seattle in September."
+ ],
+ "why": [
+  "The Aleutians: Katmai, Aniakchak and Akutan, on a route very few ships sail.",
+  "Thirty-six guests, with two balcony cabins and Commodore Suites on the bridge deck.",
+  "The Gulf of Alaska coast: Kayak Island, Icy Bay, Hubbard Glacier and Lituya Bay."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/safari-explorer/hero",
+  "alt": "Safari Explorer at anchor below green mountains in a still Alaskan fjord",
+  "credit": "UnCruise Adventures"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/safari-explorer/harbor-seal-ice",
+   "alt": "A harbor seal resting on floating ice in an Alaskan bay",
+   "credit": "UnCruise Adventures"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/safari-explorer/cabin",
+   "alt": "A Safari Explorer cabin with a king bed and a view window",
+   "credit": "UnCruise Adventures"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wilderness-explorer/hero",
+   "alt": "Guests in rain gear on blue glacier ice in Prince William Sound",
+   "credit": "UnCruise Adventures"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Commodore Suite",
+   "count": null,
+   "size": null,
+   "beds": "King or two twins",
+   "deck": "Bridge Deck",
+   "features": [
+    "The top category",
+    "On the bridge deck"
+   ],
+   "image": null
+  },
+  {
+   "type": "Jr. Commodore",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": "Cabin Deck",
+   "features": [
+    "Suite category"
+   ],
+   "image": null
+  },
+  {
+   "type": "Admiral",
+   "count": null,
+   "size": null,
+   "beds": "King or two twins",
+   "deck": "Main and Cabin Decks",
+   "features": [
+    "Two admit a third guest"
+   ],
+   "image": null
+  },
+  {
+   "type": "Trailblazer",
+   "count": null,
+   "size": null,
+   "beds": "King or two twins",
+   "deck": "Cabin Deck",
+   "features": [
+    "View window"
+   ],
+   "image": null
+  },
+  {
+   "type": "Navigator",
+   "count": null,
+   "size": null,
+   "beds": "Fixed queen, or queen or two twins",
+   "deck": "Cabin Deck",
+   "features": [
+    "View window"
+   ],
+   "image": null
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Prince William Sound Explorer with Cordova, 7 nights",
+   "nights": 7,
+   "direction": "Seward round trip",
+   "short": "Columbia Glacier, Cordova, Knight Island and College Fjord",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Seward",
+     "place": "Seward",
+     "lat": 60.1,
+     "lng": -149.44,
+     "summary": "Fly into Anchorage; the transfer to Seward is included."
+    },
+    {
+     "day": 2,
+     "title": "Icy Bay glaciers",
+     "place": "Icy Bay, Prince William Sound",
+     "lat": 60.27,
+     "lng": -148.2,
+     "summary": "Waking among the glacial waterways of Icy Bay."
+    },
+    {
+     "day": 3,
+     "title": "Knight Island",
+     "place": "Knight Island",
+     "lat": 60.35,
+     "lng": -147.7,
+     "summary": "One of the sound's largest islands, by kayak, skiff and trail."
+    },
+    {
+     "day": 4,
+     "title": "Cordova",
+     "place": "Cordova",
+     "lat": 60.54,
+     "lng": -145.76,
+     "summary": "A fishing town reached only by air or sea."
+    },
+    {
+     "day": 5,
+     "title": "Columbia Glacier",
+     "place": "Columbia Glacier",
+     "lat": 60.98,
+     "lng": -147.05,
+     "summary": "The widest and most powerful glacier of the week."
+    },
+    {
+     "day": 6,
+     "title": "Unakwik Inlet and Meares Glacier",
+     "place": "Unakwik Inlet and Meares Glacier",
+     "lat": 61.05,
+     "lng": -147.55,
+     "summary": "Two glacier-carved worlds in one day."
+    },
+    {
+     "day": 7,
+     "title": "Barry Arm and Esther Island",
+     "place": "Barry Arm and Esther Island",
+     "lat": 60.85,
+     "lng": -148.05,
+     "summary": "Wildlife, culture and big scenery to close the week."
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Seward",
+     "place": "Seward",
+     "lat": 60.1,
+     "lng": -149.44,
+     "summary": "The transfer to Anchorage airport is included."
+    }
+   ]
+  },
+  {
+   "name": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "nights": 12,
+   "direction": "Seattle to Juneau",
+   "short": "Sucia Island, Canada's Inside Passage, Misty Fjords and Glacier Bay",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Seattle",
+     "place": "Seattle",
+     "lat": 47.66,
+     "lng": -122.4,
+     "summary": "Fly into Seattle by 2 pm; you board in Ballard."
+    },
+    {
+     "day": 2,
+     "title": "Sucia Island",
+     "place": "Sucia Island",
+     "lat": 48.76,
+     "lng": -122.9,
+     "summary": "A marine state park in the San Juans, reached only by boat."
+    },
+    {
+     "day": 3,
+     "title": "Canada's Inside Passage",
+     "place": "Strait of Georgia",
+     "lat": 49.6,
+     "lng": -124.4,
+     "summary": "North through the Strait of Georgia, eagles over the treetops."
+    },
+    {
+     "day": 4,
+     "title": "Canada's Inside Passage",
+     "place": "Queen Charlotte Sound",
+     "lat": 51.0,
+     "lng": -127.7,
+     "summary": "Coffee on the bow through Queen Charlotte Sound."
+    },
+    {
+     "day": 5,
+     "title": "The Great Bear Rainforest",
+     "place": "Great Bear Rainforest",
+     "lat": 52.8,
+     "lng": -128.7,
+     "summary": "Watching the shore for the white spirit bear."
+    },
+    {
+     "day": 6,
+     "title": "Misty Fjords National Monument",
+     "place": "Misty Fjords National Monument",
+     "lat": 55.55,
+     "lng": -130.88,
+     "summary": "Sheer cliffs and waterfalls by kayak and skiff."
+    },
+    {
+     "day": 7,
+     "title": "Ketchikan",
+     "place": "Ketchikan",
+     "lat": 55.34,
+     "lng": -131.65,
+     "summary": "Alaska's First City and its Tlingit culture."
+    },
+    {
+     "day": 8,
+     "title": "Thomas Bay and Wrangell Narrows",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Moraines, muskeg and Christmas Tree Lane."
+    },
+    {
+     "day": 9,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach."
+    },
+    {
+     "day": 10,
+     "title": "Icy Strait",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Kayaking, all-day paddles, shore walks and bushwhacks where the humpbacks feed."
+    },
+    {
+     "day": 11,
+     "title": "Glacier Bay National Park",
+     "place": "Glacier Bay National Park",
+     "lat": 58.62,
+     "lng": -136.05,
+     "summary": "Deep into the park by kayak, skiff and on foot: moraines, glacial ridges, puffins, sea lions and mountain goats."
+    },
+    {
+     "day": 12,
+     "title": "Glacier Bay National Park",
+     "place": "Upper Glacier Bay",
+     "lat": 58.93,
+     "lng": -136.8,
+     "summary": "A second day in the park, among the tidewater glaciers of the upper bay."
+    },
+    {
+     "day": 13,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "The transfer to Juneau airport is included."
+    }
+   ]
+  },
+  {
+   "name": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "nights": 12,
+   "direction": "Juneau to Seattle",
+   "short": "Sucia Island, Canada's Inside Passage, Misty Fjords and Glacier Bay (reverse)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "The transfer to Juneau airport is included.",
+     "indicative": true
+    },
+    {
+     "day": 2,
+     "title": "Glacier Bay National Park",
+     "place": "Upper Glacier Bay",
+     "lat": 58.93,
+     "lng": -136.8,
+     "summary": "A second day in the park, among the tidewater glaciers of the upper bay.",
+     "indicative": true
+    },
+    {
+     "day": 3,
+     "title": "Glacier Bay National Park",
+     "place": "Glacier Bay National Park",
+     "lat": 58.62,
+     "lng": -136.05,
+     "summary": "Deep into the park by kayak, skiff and on foot: moraines, glacial ridges, puffins, sea lions and mountain goats.",
+     "indicative": true
+    },
+    {
+     "day": 4,
+     "title": "Icy Strait",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Kayaking, all-day paddles, shore walks and bushwhacks where the humpbacks feed.",
+     "indicative": true
+    },
+    {
+     "day": 5,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach.",
+     "indicative": true
+    },
+    {
+     "day": 6,
+     "title": "Thomas Bay and Wrangell Narrows",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Moraines, muskeg and Christmas Tree Lane.",
+     "indicative": true
+    },
+    {
+     "day": 7,
+     "title": "Ketchikan",
+     "place": "Ketchikan",
+     "lat": 55.34,
+     "lng": -131.65,
+     "summary": "Alaska's First City and its Tlingit culture.",
+     "indicative": true
+    },
+    {
+     "day": 8,
+     "title": "Misty Fjords National Monument",
+     "place": "Misty Fjords National Monument",
+     "lat": 55.55,
+     "lng": -130.88,
+     "summary": "Sheer cliffs and waterfalls by kayak and skiff.",
+     "indicative": true
+    },
+    {
+     "day": 9,
+     "title": "The Great Bear Rainforest",
+     "place": "Great Bear Rainforest",
+     "lat": 52.8,
+     "lng": -128.7,
+     "summary": "Watching the shore for the white spirit bear.",
+     "indicative": true
+    },
+    {
+     "day": 10,
+     "title": "Canada's Inside Passage",
+     "place": "Queen Charlotte Sound",
+     "lat": 51.0,
+     "lng": -127.7,
+     "summary": "Coffee on the bow through Queen Charlotte Sound.",
+     "indicative": true
+    },
+    {
+     "day": 11,
+     "title": "Canada's Inside Passage",
+     "place": "Strait of Georgia",
+     "lat": 49.6,
+     "lng": -124.4,
+     "summary": "North through the Strait of Georgia, eagles over the treetops.",
+     "indicative": true
+    },
+    {
+     "day": 12,
+     "title": "Sucia Island",
+     "place": "Sucia Island",
+     "lat": 48.76,
+     "lng": -122.9,
+     "summary": "A marine state park in the San Juans, reached only by boat.",
+     "indicative": true
+    },
+    {
+     "day": 13,
+     "title": "Disembark in Seattle",
+     "place": "Seattle",
+     "lat": 47.66,
+     "lng": -122.4,
+     "summary": "Fly into Seattle by 2 pm; you board in Ballard.",
+     "indicative": true
+    }
+   ]
+  },
+  {
+   "name": "Aleutian Islands Adventure, 10 nights",
+   "nights": 10,
+   "direction": "Seward to Dutch Harbor",
+   "short": "Kenai Fjords, Kodiak, Katmai, Aniakchak and the Aleutians",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Seward",
+     "place": "Seward",
+     "lat": 60.1,
+     "lng": -149.44,
+     "summary": "Fly into Anchorage; the transfer to Seward is included."
+    },
+    {
+     "day": 2,
+     "title": "Kenai Fjords National Park",
+     "place": "Kenai Fjords National Park",
+     "lat": 59.75,
+     "lng": -149.65,
+     "summary": "A glacial wonderland, protected since 1980."
+    },
+    {
+     "day": 3,
+     "title": "Kodiak Island",
+     "place": "Kodiak Island",
+     "lat": 57.79,
+     "lng": -152.4,
+     "summary": "Volcanic shores and clear water, by kayak and on foot."
+    },
+    {
+     "day": 4,
+     "title": "Katmai National Park",
+     "place": "Katmai National Park",
+     "lat": 58.1,
+     "lng": -154.55,
+     "summary": "A coast shaped by fire, and its brown bears."
+    },
+    {
+     "day": 5,
+     "title": "Alaska Peninsula National Wildlife Refuge",
+     "place": "Alaska Peninsula National Wildlife Refuge",
+     "lat": 57.05,
+     "lng": -156.55,
+     "summary": "Volcanic peaks and open tundra on the peninsula."
+    },
+    {
+     "day": 6,
+     "title": "Aniakchak National Monument and Preserve",
+     "place": "Aniakchak National Monument and Preserve",
+     "lat": 56.8,
+     "lng": -157.95,
+     "summary": "One of the least visited places in the National Park System."
+    },
+    {
+     "day": 7,
+     "title": "Unga Island",
+     "place": "Unga Island",
+     "lat": 55.25,
+     "lng": -160.7,
+     "summary": "An abandoned village and the petrified stumps of an ancient forest."
+    },
+    {
+     "day": 8,
+     "title": "Captain's choice",
+     "place": "Captain's choice, the Alaska Peninsula",
+     "lat": 54.8,
+     "lng": -163.3,
+     "summary": "Chosen by tides, weather and the shifting channels."
+    },
+    {
+     "day": 9,
+     "title": "Akutan Island",
+     "place": "Akutan Island",
+     "lat": 54.13,
+     "lng": -165.77,
+     "summary": "Below Mount Akutan, one of Alaska's most active volcanoes."
+    },
+    {
+     "day": 10,
+     "title": "Unalaska and Dutch Harbor",
+     "place": "Dutch Harbor, Unalaska",
+     "lat": 53.89,
+     "lng": -166.54,
+     "summary": "The heart of the Aleutians and its working waterfront."
+    },
+    {
+     "day": 11,
+     "title": "Disembark in Dutch Harbor",
+     "place": "Dutch Harbor, Unalaska",
+     "lat": 53.89,
+     "lng": -166.54,
+     "summary": "The transfer to the airport is included."
+    }
+   ]
+  },
+  {
+   "name": "Aleutian Islands Adventure, 10 nights",
+   "nights": 10,
+   "direction": "Dutch Harbor to Seward",
+   "short": "Kenai Fjords, Kodiak, Katmai, Aniakchak and the Aleutians (reverse)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Dutch Harbor",
+     "place": "Dutch Harbor, Unalaska",
+     "lat": 53.89,
+     "lng": -166.54,
+     "summary": "The transfer to the airport is included.",
+     "indicative": true
+    },
+    {
+     "day": 2,
+     "title": "Unalaska and Dutch Harbor",
+     "place": "Dutch Harbor, Unalaska",
+     "lat": 53.89,
+     "lng": -166.54,
+     "summary": "The heart of the Aleutians and its working waterfront.",
+     "indicative": true
+    },
+    {
+     "day": 3,
+     "title": "Akutan Island",
+     "place": "Akutan Island",
+     "lat": 54.13,
+     "lng": -165.77,
+     "summary": "Below Mount Akutan, one of Alaska's most active volcanoes.",
+     "indicative": true
+    },
+    {
+     "day": 4,
+     "title": "Captain's choice",
+     "place": "Captain's choice, the Alaska Peninsula",
+     "lat": 54.8,
+     "lng": -163.3,
+     "summary": "Chosen by tides, weather and the shifting channels.",
+     "indicative": true
+    },
+    {
+     "day": 5,
+     "title": "Unga Island",
+     "place": "Unga Island",
+     "lat": 55.25,
+     "lng": -160.7,
+     "summary": "An abandoned village and the petrified stumps of an ancient forest.",
+     "indicative": true
+    },
+    {
+     "day": 6,
+     "title": "Aniakchak National Monument and Preserve",
+     "place": "Aniakchak National Monument and Preserve",
+     "lat": 56.8,
+     "lng": -157.95,
+     "summary": "One of the least visited places in the National Park System.",
+     "indicative": true
+    },
+    {
+     "day": 7,
+     "title": "Alaska Peninsula National Wildlife Refuge",
+     "place": "Alaska Peninsula National Wildlife Refuge",
+     "lat": 57.05,
+     "lng": -156.55,
+     "summary": "Volcanic peaks and open tundra on the peninsula.",
+     "indicative": true
+    },
+    {
+     "day": 8,
+     "title": "Katmai National Park",
+     "place": "Katmai National Park",
+     "lat": 58.1,
+     "lng": -154.55,
+     "summary": "A coast shaped by fire, and its brown bears.",
+     "indicative": true
+    },
+    {
+     "day": 9,
+     "title": "Kodiak Island",
+     "place": "Kodiak Island",
+     "lat": 57.79,
+     "lng": -152.4,
+     "summary": "Volcanic shores and clear water, by kayak and on foot.",
+     "indicative": true
+    },
+    {
+     "day": 10,
+     "title": "Kenai Fjords National Park",
+     "place": "Kenai Fjords National Park",
+     "lat": 59.75,
+     "lng": -149.65,
+     "summary": "A glacial wonderland, protected since 1980.",
+     "indicative": true
+    },
+    {
+     "day": 11,
+     "title": "Disembark in Seward",
+     "place": "Seward",
+     "lat": 60.1,
+     "lng": -149.44,
+     "summary": "Fly into Anchorage; the transfer to Seward is included.",
+     "indicative": true
+    }
+   ]
+  },
+  {
+   "name": "Alaska's Coastal Treasures, 13 nights",
+   "nights": 13,
+   "direction": "Seward to Juneau",
+   "short": "Kayak Island, Icy Bay, Hubbard Glacier, Yakutat and Lituya Bay",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Seward",
+     "place": "Seward",
+     "lat": 60.1,
+     "lng": -149.44,
+     "summary": "Fly into Anchorage by 1 pm; the transfer to Seward is included, and the ship sails at about 9 pm."
+    },
+    {
+     "day": 2,
+     "title": "Driftwood Bay State Marine Park",
+     "place": "Driftwood Bay State Marine Park",
+     "lat": 60.2,
+     "lng": -147.85,
+     "summary": "Beach walks, muskeg meadows and a first paddle; whales and sea lions."
+    },
+    {
+     "day": 3,
+     "title": "Montague or Hinchinbrook Island",
+     "place": "Montague or Hinchinbrook Island",
+     "lat": 60.25,
+     "lng": -146.9,
+     "summary": "Brown bears in Zaikof Bay, or the Cape Hinchinbrook lighthouse."
+    },
+    {
+     "day": 4,
+     "title": "Kayak Island",
+     "place": "Kayak Island",
+     "lat": 59.9,
+     "lng": -144.4,
+     "summary": "Where Bering's expedition met the Steller's sea cow in 1741.",
+     "label": "Days 4 and 5"
+    },
+    {
+     "day": 6,
+     "title": "Icy Bay",
+     "place": "Icy Bay, Wrangell-St. Elias",
+     "lat": 59.95,
+     "lng": -141.4,
+     "summary": "Malaspina and Guyot glaciers below Mount St. Elias.",
+     "label": "Days 6 and 7"
+    },
+    {
+     "day": 8,
+     "title": "Disenchantment Bay",
+     "place": "Disenchantment Bay and Hubbard Glacier",
+     "lat": 60.0,
+     "lng": -139.55,
+     "summary": "Hubbard Glacier, calving into the bay."
+    },
+    {
+     "day": 9,
+     "title": "Yakutat",
+     "place": "Yakutat",
+     "lat": 59.55,
+     "lng": -139.73,
+     "summary": "A fishing town between the wild coast and the rainforest."
+    },
+    {
+     "day": 10,
+     "title": "Lituya Bay",
+     "place": "Lituya Bay",
+     "lat": 58.64,
+     "lng": -137.6,
+     "summary": "Cenotaph Island, kittiwakes, sea lions and the Fairweather Range, when the entrance allows.",
+     "label": "Days 10 and 11"
+    },
+    {
+     "day": 12,
+     "title": "George Island",
+     "place": "George Island",
+     "lat": 58.2,
+     "lng": -136.38,
+     "summary": "A cannon from the world wars, and Cape Spencer."
+    },
+    {
+     "day": 13,
+     "title": "Captain's choice",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Whales in the Inian Islands and Icy Strait."
+    },
+    {
+     "day": 14,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Breakfast aboard, then the transfer to Juneau airport for flights from 11.30 am."
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2027-05-21",
+   "dateTo": "2027-05-28",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-28",
+   "dateTo": "2027-06-04",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-04",
+   "dateTo": "2027-06-14",
+   "itinerary": "Aleutian Islands Adventure, 10 nights",
+   "direction": "Seward to Dutch Harbor",
+   "status": null,
+   "prices": {
+    "Navigator": 13600,
+    "Trailblazer": 15000,
+    "Admiral": 17700,
+    "Jr. Commodore Suite": 20400,
+    "Commodore Suite": 22500
+   },
+   "singlePrices": {
+    "Navigator": 27200,
+    "Trailblazer": 30000,
+    "Admiral": 35400,
+    "Jr. Commodore Suite": 40800,
+    "Commodore Suite": 45000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-15",
+   "dateTo": "2027-06-25",
+   "itinerary": "Aleutian Islands Adventure, 10 nights",
+   "direction": "Dutch Harbor to Seward",
+   "status": null,
+   "prices": {
+    "Navigator": 13600,
+    "Trailblazer": 15000,
+    "Admiral": 17700,
+    "Jr. Commodore Suite": 20400,
+    "Commodore Suite": 22500
+   },
+   "singlePrices": {
+    "Navigator": 27200,
+    "Trailblazer": 30000,
+    "Admiral": 35400,
+    "Jr. Commodore Suite": 40800,
+    "Commodore Suite": 45000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-25",
+   "dateTo": "2027-07-02",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-02",
+   "dateTo": "2027-07-12",
+   "itinerary": "Aleutian Islands Adventure, 10 nights",
+   "direction": "Seward to Dutch Harbor",
+   "status": null,
+   "prices": {
+    "Navigator": 13600,
+    "Trailblazer": 15000,
+    "Admiral": 17700,
+    "Jr. Commodore Suite": 20400,
+    "Commodore Suite": 22500
+   },
+   "singlePrices": {
+    "Navigator": 27200,
+    "Trailblazer": 30000,
+    "Admiral": 35400,
+    "Jr. Commodore Suite": 40800,
+    "Commodore Suite": 45000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-13",
+   "dateTo": "2027-07-23",
+   "itinerary": "Aleutian Islands Adventure, 10 nights",
+   "direction": "Dutch Harbor to Seward",
+   "status": null,
+   "prices": {
+    "Navigator": 13600,
+    "Trailblazer": 15000,
+    "Admiral": 17700,
+    "Jr. Commodore Suite": 20400,
+    "Commodore Suite": 22500
+   },
+   "singlePrices": {
+    "Navigator": 27200,
+    "Trailblazer": 30000,
+    "Admiral": 35400,
+    "Jr. Commodore Suite": 40800,
+    "Commodore Suite": 45000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-23",
+   "dateTo": "2027-07-30",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-30",
+   "dateTo": "2027-08-09",
+   "itinerary": "Aleutian Islands Adventure, 10 nights",
+   "direction": "Seward to Dutch Harbor",
+   "status": null,
+   "prices": {
+    "Navigator": 13600,
+    "Trailblazer": 15000,
+    "Admiral": 17700,
+    "Jr. Commodore Suite": 20400,
+    "Commodore Suite": 22500
+   },
+   "singlePrices": {
+    "Navigator": 27200,
+    "Trailblazer": 30000,
+    "Admiral": 35400,
+    "Jr. Commodore Suite": 40800,
+    "Commodore Suite": 45000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-10",
+   "dateTo": "2027-08-20",
+   "itinerary": "Aleutian Islands Adventure, 10 nights",
+   "direction": "Dutch Harbor to Seward",
+   "status": null,
+   "prices": {
+    "Navigator": 13600,
+    "Trailblazer": 15000,
+    "Admiral": 17700,
+    "Jr. Commodore Suite": 20400,
+    "Commodore Suite": 22500
+   },
+   "singlePrices": {
+    "Navigator": 27200,
+    "Trailblazer": 30000,
+    "Admiral": 35400,
+    "Jr. Commodore Suite": 40800,
+    "Commodore Suite": 45000
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-20",
+   "dateTo": "2027-09-02",
+   "itinerary": "Alaska's Coastal Treasures, 13 nights",
+   "direction": "Seward to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-02",
+   "dateTo": "2027-09-14",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Juneau to Seattle",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-03",
+   "dateTo": "2028-06-10",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-10",
+   "dateTo": "2028-06-17",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-17",
+   "dateTo": "2028-06-24",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-24",
+   "dateTo": "2028-07-01",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-01",
+   "dateTo": "2028-07-08",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-08",
+   "dateTo": "2028-07-15",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-15",
+   "dateTo": "2028-07-22",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-22",
+   "dateTo": "2028-07-29",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-29",
+   "dateTo": "2028-08-05",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-05",
+   "dateTo": "2028-08-12",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-12",
+   "dateTo": "2028-08-19",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-19",
+   "dateTo": "2028-08-26",
+   "itinerary": "Prince William Sound Explorer with Cordova, 7 nights",
+   "direction": "Seward round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-26",
+   "dateTo": "2028-09-08",
+   "itinerary": "Alaska's Coastal Treasures, 13 nights",
+   "direction": "Seward to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-08",
+   "dateTo": "2028-09-20",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Juneau to Seattle",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Trailblazer": 12400,
+    "Admiral": 14600,
+    "Jr. Commodore Suite": 16800,
+    "Commodore Suite": 18500
+   },
+   "singlePrices": {
+    "Navigator": 19600,
+    "Trailblazer": 21700,
+    "Admiral": 25600,
+    "Jr. Commodore Suite": 29400,
+    "Commodore Suite": 32400
+   },
+   "note": null
+  }
+ ],
+ "datesPublished": true,
+ "pricesNote": "Fares per person in USD as UnCruise publishes them for 2027 and 2028, by cabin, sharing; single fares where UnCruise publishes them (Compass cabins are singles). Port fees and taxes included; gratuities not. Whole-ship charters on request.",
+ "fareBasis": "Per person, sharing, by cabin; single fares as published",
+ "inclusions": [
+  "All meals, with vegetarian, vegan, gluten-free and dairy-free options",
+  "All drinks, alcoholic and not",
+  "Port fees and taxes",
+  "Kayaks, paddleboards, skiffs and hiking poles, with naturalist guides",
+  "Airport transfers on embarkation and disembarkation days, as UnCruise publishes them"
+ ],
+ "exclusions": [
+  "Gratuities",
+  "Flights to and from Alaska",
+  "Pre and post cruise hotels (we arrange them)",
+  "Wi-Fi inside national parks and protected areas (none is available there)"
+ ],
+ "children": "UnCruise publishes no family departures on Safari Explorer's Alaska routes; ask us about ages before you book.",
+ "faqs": [
+  [
+   "How many guests does Safari Explorer carry?",
+   "36, in 18 cabins."
+  ],
+  [
+   "Does Safari Explorer sail the Aleutian Islands?",
+   "Yes: in 2027 she sails the Aleutian Islands Adventure, ten nights between Seward and Dutch Harbor, six times between June and August."
+  ],
+  [
+   "What is included?",
+   "Meals, all drinks, port fees and taxes, and the kayaks, paddleboards and skiffs. Gratuities are not."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Travellers who have done the Inside Passage",
+   "line": "The Aleutians and the Gulf coast, where few ships go."
+  },
+  {
+   "who": "Photographers",
+   "line": "Glaciers, volcanoes and seabird cliffs in long summer light."
+  }
+ ],
+ "sources": [
+  "https://uncruise.com/blogs/our-ships/safari-explorer",
+  "https://uncruise.com/products/price-william-sound-explorer-with-cordova",
+  "https://uncruise.com/products/glacier-bay-national-park-with-inside-passage-and-san-juan-islands",
+  "https://uncruise.com/products/aleutian-islands-adventure-with-dutch-harbor-and-kodiak",
+  "https://uncruise.com/products/alaskas-coastal-treasures"
+ ],
+ "film": null,
+ "proofLine": "UnCruise Adventures partner",
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-09"
+  ]
+ },
+ "terms": [
+  "UnCruise's own terms apply; we confirm deposit, payment and cancellation terms with your quote."
+ ]
+}

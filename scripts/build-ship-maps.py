@@ -20,6 +20,8 @@ LABELS = {
   # and Atlantic routes, filed in the same file, take MED or ATLANTIC by where they sail.
   "caribbean": [{"text": "Caribbean Sea", "lat": 15.5, "lng": -64.5, "kind": "sea"}, {"text": "Atlantic Ocean", "lat": 21.5, "lng": -60.5, "kind": "sea"}, {"text": "Lesser Antilles", "lat": 15.3, "lng": -61.0, "kind": "region"}],
   "mediterranean": [{"text": "Mediterranean Sea", "lat": 36.5, "lng": 17.5, "kind": "sea"}, {"text": "Aegean Sea", "lat": 38.5, "lng": 25.0, "kind": "sea"}, {"text": "Tyrrhenian Sea", "lat": 40.0, "lng": 12.0, "kind": "sea"}, {"text": "Atlantic Ocean", "lat": 37.5, "lng": -11.5, "kind": "sea"}],
+  # UnCruise Adventures (19 Nov 2026): Southeast Alaska, the Gulf, the Aleutians and the Inside Passage from Seattle.
+  "alaska": [{"text": "Gulf of Alaska", "lat": 57.5, "lng": -146.0, "kind": "sea"}, {"text": "Inside Passage", "lat": 56.6, "lng": -133.3, "kind": "region"}, {"text": "Pacific Ocean", "lat": 51.0, "lng": -150.0, "kind": "sea"}, {"text": "Bering Sea", "lat": 56.5, "lng": -170.0, "kind": "sea"}],
   "tahiti": [{"text": "Pacific Ocean", "lat": -17.6, "lng": -148.6, "kind": "sea"}, {"text": "Society Islands", "lat": -16.2, "lng": -151.0, "kind": "region"}, {"text": "Tuamotu", "lat": -15.4, "lng": -146.4, "kind": "region"}],
 }
 # Where an Indonesian route's chart sits (the engine's regional data: public/maps/data/<dest>).
@@ -40,7 +42,10 @@ OUT = os.path.join(ROOT, "public/maps/routes")
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
+# Optional: build one or more waters only (python3 scripts/build-ship-maps.py . alaska), skipping the journeys.
+ONLY = sys.argv[2:]
 for waters in LABELS:
+  if ONLY and waters not in ONLY: continue
   SHIPS = os.path.join(ROOT, "lib/content/ships", waters)
   for f in sorted(os.listdir(SHIPS)):
     if not f.endswith(".json"): continue
@@ -49,6 +54,7 @@ for waters in LABELS:
         if not it["days"]: continue
         # A route whose length is not published (stops in the operator's order) ends in "-stops".
         rid = f"{s['slug']}-{slug(it['direction'])}-{str(it['nights']) + 'n' if it['nights'] is not None else 'stops'}"
+        if os.environ.get("KEEP") and os.path.exists(os.path.join(OUT, f"{rid}.json")): continue   # KEEP=1: only routes not yet built
         dest = DEST.get(it["direction"], "komodo") if waters == "indonesia" else ("arctic" if waters == "seychelles" and it["days"][0]["lat"] > 50 else "mediterranean" if waters == "caribbean" and it["days"][0]["lng"] > -30 else waters)
         stops, prev = [], None
         for d in it["days"]:
@@ -73,7 +79,7 @@ for waters in LABELS:
 # The signature charter journeys (lib/content/ships/journeys.json, James 2 Nov 2026): one route file each,
 # <slug>-<nights>n, the same jw-route v1 shape as the ship routes, with the dive flags as chart labels.
 J = json.load(open(os.path.join(ROOT, "lib/content/ships/journeys.json")))
-for j in J["journeys"]:
+for j in ([] if ONLY else J["journeys"]):
     rid = f"{j['slug']}-{j['nights']}n"
     stops, prev = [], None
     for d in j["days"]:

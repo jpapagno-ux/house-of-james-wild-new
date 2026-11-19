@@ -20,7 +20,7 @@ import type { PathwayId } from "@/lib/pathways";
 
 export type VoyageType = "river" | "sailing" | "expedition" | "yacht" | "charter";
 /** antarctica and patagonia: the polar waters, both listed in Polar Voyages (/voyages/polar). */
-export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji" | "mekong" | "seychelles" | "arctic" | "caribbean" | "mediterranean" | "bahamas";
+export type Waters = "nile" | "amazon" | "galapagos" | "indonesia" | "antarctica" | "patagonia" | "philippines" | "tahiti" | "fiji" | "mekong" | "seychelles" | "arctic" | "caribbean" | "mediterranean" | "bahamas" | "alaska";
 export const POLAR_WATERS: Waters[] = ["antarctica", "patagonia"];
 export type ShipKind = "riverboat" | "dahabiya" | "phinisi" | "catamaran" | "motor-yacht" | "expedition-ship" | "yacht" | "schooner" | "river-yacht" | "trimaran" | "bangka";
 /** The operator's own class label (Galápagos, James, 2 Nov 2026): the hub groups ships by partner and tier.
@@ -294,6 +294,31 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     pathway: { primary: "PATH-02", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
     traits: { activities: ["sailing", "culture", "slow"] } },
 
+  // UnCruise Adventures in Alaska (partner; James, 19 Nov 2026). Seven boats, filed from uncruise.com by
+  // scripts/partners/uncruise-build.py. Where the Wild Lives first (bears, whales, Glacier Bay); Between Tides for the
+  // kayaks, skiffs and snorkelling. Safari Quest and Safari Explorer's Aleutians also stand in Terra Y (James, 19 Nov 2026).
+  { slug: "safari-quest", name: "Safari Quest", operator: "UnCruise Adventures", kind: "yacht", types: ["expedition", "charter"], waters: ["alaska"], country: ["United States", "Canada"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { single: { kind: "applies", note: "UnCruise publishes single fares by cabin, and Compass single cabins" }, activities: ["wildlife", "kayaking", "hiking"] } },
+  { slug: "safari-explorer", name: "Safari Explorer", operator: "UnCruise Adventures", kind: "yacht", types: ["expedition"], waters: ["alaska"], country: ["United States", "Canada"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-09"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { activities: ["wildlife", "kayaking", "hiking", "snorkelling"] } },
+  { slug: "wilderness-adventurer", name: "Wilderness Adventurer", operator: "UnCruise Adventures", kind: "expedition-ship", types: ["expedition"], waters: ["alaska"], country: ["United States"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { single: { kind: "applies", note: "UnCruise publishes single fares by cabin, and Compass single cabins" }, activities: ["wildlife", "kayaking", "hiking", "snorkelling"] } },
+  { slug: "wilderness-explorer", name: "Wilderness Explorer", operator: "UnCruise Adventures", kind: "expedition-ship", types: ["expedition"], waters: ["alaska"], country: ["United States", "Canada"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { single: { kind: "applies", note: "UnCruise publishes single fares by cabin, and Compass single cabins" }, activities: ["wildlife", "kayaking", "hiking"] } },
+  { slug: "wilderness-discoverer", name: "Wilderness Discoverer", operator: "UnCruise Adventures", kind: "expedition-ship", types: ["expedition"], waters: ["alaska"], country: ["United States"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { activities: ["wildlife", "kayaking", "hiking", "snorkelling"] } },
+  { slug: "safari-endeavour", name: "Safari Endeavour", operator: "UnCruise Adventures", kind: "expedition-ship", types: ["expedition"], waters: ["alaska"], country: ["United States", "Canada"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-02"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { activities: ["wildlife", "kayaking", "hiking", "snorkelling"] } },
+  { slug: "wilderness-legacy", name: "Wilderness Legacy", operator: "UnCruise Adventures", kind: "expedition-ship", types: ["expedition"], waters: ["alaska"], country: ["United States", "Canada"],
+    pathway: { primary: "PATH-04", secondary: ["PATH-01"] }, charter: { whole: true }, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { activities: ["wildlife", "kayaking", "hiking"] } },
+
   // Fiji (James, 5 to 7 Nov 2026): Blue Lagoon Cruises' MV Yasawa Princess II, filed from bluelagooncruises.com.
   // Between Tides first (the water is the activity: snorkelling, manta rays, the Blue Lagoon); Rooted in Place for
   // the Yasawa villages, kava and lovo. Adults only (16 and over) from mid-January 2027.
@@ -393,6 +418,8 @@ export const WATERS_HUBS: Record<Waters, { name: string; path: string; countries
   caribbean: { name: "The Caribbean", path: "/voyages/ships/four-seasons-i", countries: ["Sint Maarten", "Antigua and Barbuda", "Saint Lucia"], question: "Which yacht sails the Lesser Antilles in winter?" },
   mediterranean: { name: "The Mediterranean", path: "/voyages/ships/four-seasons-i", countries: ["Greece", "Italy", "France", "Monaco", "Croatia", "Spain", "Malta", "Turkey"], question: "Which yacht sails the Mediterranean in summer?" },
   bahamas: { name: "The Bahamas", path: "/voyages/ships/four-seasons-i", countries: ["Bahamas"], question: "Which yacht sails the Exumas from Miami?" },
+  // UnCruise Adventures (19 Nov 2026): its own hub, /voyages/alaska.
+  alaska: { name: "Alaska", path: "/voyages/alaska", countries: ["United States", "Canada"], question: "Which small ship sails Glacier Bay?" },
 };
 
 export const registryShip = (slug: string) => SHIP_REGISTRY.find((s) => s.slug === slug);

@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import Pic from "@/components/opening/Pic";
 import WideFilmLayer from "@/components/media/WideFilm";
 import { stayBySlug } from "@/lib/content/stays";
-import { TY_FILES, ty, tyFilm, tyPath, tyPoster, tyUsd, type TyAddition, type TyDay, type TyDossier, type TyRate } from "@/lib/content/terra-y";
+import { TY_FILES, ty, tyFilm, tyPath, tyPoster, tyUsd, type TyAddition, type TyDay, type TyFile, type TyDossier, type TyRate } from "@/lib/content/terra-y";
 
 // Terra Y expedition dossiers (James, 15 Nov 2026): Polar Chart theme (.theme-terra-y, lib/palette.ts TERRA_Y_POLAR).
 // Night covers with the brand's film, a nautical graticule behind the sections, glacier keylines, faded photograph
@@ -82,7 +82,7 @@ export function DossierCard({ d }: { d: TyDossier }) {
   );
 }
 
-export function DayLog({ days, note, file, stopOf, compact = false }: { days: TyDay[]; note?: string; file: "ice" | "dc3"; stopOf?: (d: TyDay) => number; compact?: boolean }) {
+export function DayLog({ days, note, file, stopOf, compact = false }: { days: TyDay[]; note?: string; file: TyFile; stopOf?: (d: TyDay) => number; compact?: boolean }) {
   return (
     <ol className="relative mt-10">
       <span aria-hidden className="absolute left-[6px] top-2 bottom-2 w-[2px]" style={{ background: "repeating-linear-gradient(to bottom, var(--ty-signal) 0 10px, transparent 10px 16px)" }} />
@@ -180,6 +180,6 @@ export function Additions({ items }: { items: TyAddition[] }) {
   );
 }
 
-export function Credit({ file }: { file: "ice" | "dc3" }) {
+export function Credit({ file }: { file: TyFile }) {
   return <p className="ty-mono text-[9.5px]" style={{ color: "var(--ty-glacier)" }}>{TY_FILES[file].credit}</p>;
 }

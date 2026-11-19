@@ -9,19 +9,20 @@
 // The pathway is The Far Edge (PATH-09), created for these on the same day.
 
 const CLD = "https://res.cloudinary.com/jhlnq5h5";
-export const ty = (id: string, w = 2000) => `${CLD}/image/upload/c_limit,w_${w}/q_auto:good/f_auto/jwco/terra-y/${id}`;
+/** A Terra Y photograph; an id that starts "jwco/" is a full public_id already in the library (one copy per image). */
+export const ty = (id: string, w = 2000) => `${CLD}/image/upload/c_limit,w_${w}/q_auto:good/f_auto/${id.startsWith("jwco/") ? id : `jwco/terra-y/${id}`}`;
 export const tyFilm = (id: string) => `${CLD}/video/upload/q_auto/f_auto/jwco/terra-y/films/${id}`;
 export const tyPoster = (id: string) => `${CLD}/video/upload/so_2,q_auto,f_jpg,w_1600/jwco/terra-y/films/${id}`;
 
 export const TY_PATH = "/overland/terra-y";
 export const tyPath = (slug: string) => `${TY_PATH}/${slug}`;
 
-export type TyFile = "ice" | "dc3";
+export type TyFile = "ice" | "dc3" | "sea";
 export type TyDay = { n: string; title: string; body: string; place: string; coords?: string; photo?: { id: string; alt: string } };
 export type TyRate = { season: string; option: string; rate: string; dates: string[]; note?: string };
 export type TyAddition = { title: string; body: string; stays?: string[] };
 export type TyDossier = {
-  slug: string; no: string; file: TyFile; title: string; operator: "White Desert" | "Echo Charlie";
+  slug: string; no: string; file: TyFile; title: string; operator: "White Desert" | "Echo Charlie" | "UnCruise Adventures";
   length: string; from: number; season: string; group: string; base: string;
   hero: { id: string; alt: string }; film?: string;
   line: string; answer: string; brief: string[];
@@ -34,6 +35,7 @@ export type TyDossier = {
 
 export const TY_FILES: Record<TyFile, { name: string; code: string; operator: string; line: string; film: string; poster: string; credit: string }> = {
   ice: { name: "The Ice", code: "FILE A", operator: "White Desert", line: "Cape Town to the Antarctic interior by private jet: three camps of six suites in Queen Maud Land, the South Pole and the Emperor penguins.", film: "white-desert", poster: "south-pole-penguins/hero", credit: "Photographs and films: White Desert" },
+  sea: { name: "The North Pacific", code: "FILE C", operator: "UnCruise Adventures", line: "Small expedition yachts off Alaska's far coast: the Aleutian chain to Dutch Harbor, and a 22-guest yacht held for one party in Southeast Alaska.", film: "", poster: "", credit: "Photographs: UnCruise Adventures" },
   dc3: { name: "The DC-3", code: "FILE B", operator: "Echo Charlie", line: "Twelve guests, a 1942 Dakota rebuilt as a Basler BT-67, and twelve nights across a continent, landing at the door of each lodge.", film: "echo-charlie", poster: "scotland-to-greenland/hero", credit: "Photographs and films: Echo Charlie, presented by White Desert" },
 };
 
@@ -341,6 +343,93 @@ export const TY_DOSSIERS: TyDossier[] = [
       { q: "How do you get home from Greenland?", a: "The journey ends at the Nuuk fjord; Echo Charlie notes direct flights from Nuuk to New York." },
     ],
   },
+  // ---------- FILE C · The North Pacific (James, 19 Nov 2026: "add those for Safari Quest, 22 guests, and the Aleutian
+  // Islands Adventure, Kodiak and Dutch Harbor ... to Terra Y"). James is an UnCruise partner (photographs cleared);
+  // every fact, date and rate is from uncruise.com as read on 19 Nov 2026 (scripts/data/uncruise), nothing links out.
+  {
+    slug: "aleutian-islands", no: "TY-010", file: "sea", operator: "UnCruise Adventures", title: "The Aleutian Islands",
+    length: "10 nights", from: 13600, season: "June to August, 2027 and 2028", group: "36 guests (2027), 74 guests (2028)", base: "Seward to Dutch Harbor, or the reverse",
+    hero: { id: "jwco/voyages/uncruise/breaching-humpback", alt: "A humpback whale breaching in Alaskan waters" },
+    line: "Ten nights from Seward along the Alaska Peninsula to Dutch Harbor: Kenai Fjords, Kodiak, Katmai's bears, Aniakchak and the volcanoes of the Aleutian chain.",
+    answer: "The Aleutian Islands Adventure is a ten-night UnCruise Adventures voyage between Seward and Dutch Harbor, in either direction, by way of Kenai Fjords National Park, Kodiak Island, Katmai National Park, Aniakchak National Monument and Akutan Island. It sails in June, July and August aboard Safari Explorer (36 guests) in 2027 and Wilderness Explorer (74 guests) in 2028, from US $13,600 per person sharing.",
+    brief: [
+      "Most Alaska voyages stay in the Inside Passage. This one turns west, out along the Alaska Peninsula where the National Park System is at its emptiest: Katmai's coast and its brown bears, the open tundra of the Alaska Peninsula refuge, and Aniakchak, one of the least visited places the Park Service keeps.",
+      "Past Unga Island, with its abandoned village and petrified forest, the yacht threads the channels to Akutan, below one of Alaska's most active volcanoes, and ends at Dutch Harbor on Unalaska, the working heart of the Aleutians.",
+    ],
+    facts: [["Length", "10 nights"], ["Route", "Seward, Kenai Fjords, Kodiak, Katmai, Aniakchak, Unga, Akutan, Dutch Harbor"], ["Yacht", "Safari Explorer (2027), Wilderness Explorer (2028)"], ["Guests", "36 in 2027; 74 in 2028"], ["Departures", "June to August, both directions"], ["Included", "Meals, drinks, kayaks, skiffs, guides, port fees, transfers"]],
+    days: [
+      { n: "01", title: "Embark in Seward", place: "Seward", body: "Fly into Anchorage; the transfer down the Kenai Peninsula to Seward is included, and the yacht sails that evening.", photo: { id: "jwco/ships/safari-explorer/hero", alt: "Safari Explorer at anchor below green mountains in a still Alaskan fjord" } },
+      { n: "02", title: "Kenai Fjords National Park", place: "Kenai Fjords", body: "A glacial coast, protected since 1980: tidewater ice, seals on the floes and the first skiff outing.", photo: { id: "jwco/ships/safari-explorer/harbor-seal-ice", alt: "A harbor seal resting on floating ice in an Alaskan bay" } },
+      { n: "03", title: "Kodiak Island", place: "Kodiak", body: "Volcanic shores and clear water, explored by kayak and on foot." },
+      { n: "04", title: "Katmai National Park", place: "Katmai", body: "A coast shaped by fire, and the brown bears that fish and graze along it." },
+      { n: "05", title: "Alaska Peninsula National Wildlife Refuge", place: "The Alaska Peninsula", body: "Volcanic peaks and open tundra, walked with the naturalists." },
+      { n: "06", title: "Aniakchak National Monument and Preserve", place: "Aniakchak", body: "One of the least visited places in the National Park System." },
+      { n: "07", title: "Unga Island", place: "Unga Island", body: "An abandoned village and the petrified stumps of an ancient forest." },
+      { n: "08", title: "Captain's choice", place: "The Alaska Peninsula", body: "The day is chosen by the tides, the weather and the shifting channels." },
+      { n: "09", title: "Akutan Island", place: "Akutan", body: "Below Mount Akutan, one of Alaska's most active volcanoes." },
+      { n: "10", title: "Unalaska and Dutch Harbor", place: "Dutch Harbor", body: "The heart of the Aleutians and its working waterfront." },
+      { n: "11", title: "Disembark in Dutch Harbor", place: "Dutch Harbor, Unalaska", body: "The transfer to the airport is included." },
+    ],
+    dayNote: "Sailings alternate direction; from Dutch Harbor the days run in reverse. UnCruise plans each day around tides and weather, so the order can change.",
+    rates: [
+      {"season": "2027 · Safari Explorer, 36 guests", "option": "Navigator cabin", "rate": "From US $13,600", "dates": ["4 to 14 Jun 2027, Seward to Dutch Harbor", "15 to 25 Jun 2027, Dutch Harbor to Seward", "2 to 12 Jul 2027, Seward to Dutch Harbor", "13 to 23 Jul 2027, Dutch Harbor to Seward", "30 Jul to 9 Aug 2027, Seward to Dutch Harbor", "10 to 20 Aug 2027, Dutch Harbor to Seward"], "note": "Trailblazer US $15,000; Admiral US $17,700; Jr. Commodore Suite US $20,400; Commodore Suite US $22,500"},
+      {"season": "2028 · Wilderness Explorer, 74 guests", "option": "Navigator cabin", "rate": "From US $13,600", "dates": ["2 to 12 Jun 2028, Seward to Dutch Harbor", "13 to 23 Jun 2028, Dutch Harbor to Seward", "23 Jun to 3 Jul 2028, Seward to Dutch Harbor", "4 to 14 Jul 2028, Dutch Harbor to Seward", "14 to 24 Jul 2028, Seward to Dutch Harbor", "25 Jul to 4 Aug 2028, Dutch Harbor to Seward", "4 to 14 Aug 2028, Seward to Dutch Harbor", "15 to 25 Aug 2028, Dutch Harbor to Seward"], "note": "Trailblazer US $15,000; Pathfinder US $16,300; Admiral US $17,700"}
+    ],
+    ratesNote: "Per person sharing, by cabin, as UnCruise Adventures publishes it. Port fees, taxes, drinks and the embarkation transfers included; gratuities and flights not.",
+    additions: [
+      { title: "Anchorage either side", body: "Every sailing starts or ends with the flight to or from Anchorage. We plan the night before Seward and the connection out of Dutch Harbor, with room in the plan for the weather." },
+      { title: "The whole yacht", body: "In 2027 the voyage sails on Safari Explorer, 36 guests in 18 cabins. A family or a group of friends can ask us to hold every cabin; UnCruise quotes whole-yacht charters on request." },
+      { title: "One Folio, one advisor", body: "Flights, the Anchorage nights, the packing list for the North Pacific and the forms, in one Traveler Folio and run by one James Wild & Co advisor." },
+    ],
+    faqs: [
+      { q: "Which ship sails the Aleutian Islands Adventure?", a: "Safari Explorer, 36 guests, in June to August 2027; Wilderness Explorer, 74 guests, in June to August 2028. Both are UnCruise Adventures yachts." },
+      { q: "Does it run in both directions?", a: "Yes. Sailings alternate between Seward to Dutch Harbor and Dutch Harbor to Seward." },
+      { q: "What is included?", a: "UnCruise includes all meals and drinks, kayaks, paddleboards, skiffs and naturalist guides, port fees and taxes, and the transfers on embarkation and disembarkation days. Gratuities and flights are extra." },
+      { q: "Why is it in Terra Y?", a: "Because it goes where the Inside Passage voyages do not: out along the Alaska Peninsula to the Aleutian chain, with a handful of departures a year." },
+    ],
+  },
+  {
+    slug: "safari-quest-charter", no: "TY-011", file: "sea", operator: "UnCruise Adventures", title: "Safari Quest, the Whole Yacht",
+    length: "7 nights", from: 9900, season: "May to September, 2027 and 2028", group: "22 guests, one party", base: "Juneau round trip",
+    hero: { id: "jwco/ships/safari-quest/hero", alt: "A humpback whale's tail fluke below snow-capped mountains in Southeast Alaska" },
+    line: "Eleven cabins, 22 guests and a 120-foot yacht held for one party: seven nights from Juneau through Glacier Bay, Chichagof, Admiralty Island and Endicott Arm.",
+    answer: "Safari Quest is a 22-guest UnCruise Adventures yacht, 120 feet long with 11 outside cabins, that sails seven-night Glacier Wilderness voyages from Juneau from May to September. Terra Y holds the whole yacht for one family or group; by the cabin, UnCruise publishes fares from US $9,900 per person sharing, and whole-yacht charters are quoted on request.",
+    brief: [
+      "Twenty-two guests is a dinner party. Hold all eleven cabins and Safari Quest becomes a private expedition yacht in Southeast Alaska, with its naturalists, skiffs and kayaks, and a week that bends around your party rather than a schedule.",
+      "The route is UnCruise's Glacier Wilderness: Icy Strait's whales and Glacier Bay's outer reaches, Chichagof by skiff, Admiralty Island and its bears, a hot spring few reach, Frederick Sound, and the seals on the ice below Dawes Glacier.",
+    ],
+    facts: [["Yacht", "Safari Quest, built 1992"], ["Guests", "22 in 11 outside cabins"], ["Guest to crew", "2:1"], ["Length", "120 ft (37 m), four decks"], ["Route", "Juneau round trip, 7 nights"], ["Departures", "Weekly, May to September"]],
+    days: [
+      { n: "01", title: "Embark in Juneau", place: "Juneau", body: "Fly into Juneau by 3 pm and board Safari Quest.", photo: { id: "jwco/ships/safari-quest/admiral-cabin", alt: "A Safari Quest cabin with a wide window onto the water" } },
+      { n: "02", title: "Icy Strait and Glacier Bay's outer bay", place: "Glacier Bay", body: "Whales in Icy Strait, then the quiet outer reaches of the park." },
+      { n: "03", title: "Iyoukeen Cove and Basket Bay", place: "Chichagof Island", body: "Deep into Chichagof's wilderness by skiff and kayak." },
+      { n: "04", title: "Whitewater Bay or Takatz Bay", place: "Admiralty Island", body: "Admiralty Island, Kootznoowoo to the Tlingit, the fortress of the bears." },
+      { n: "05", title: "Warm Springs Bay", place: "Warm Springs Bay", body: "Hot springs few visitors reach, and the Red Bluff wilderness." },
+      { n: "06", title: "Frederick Sound", place: "Admiralty Island National Monument", body: "Humpback, killer, minke and fin whales off Admiralty Island.", photo: { id: "jwco/voyages/uncruise/breaching-humpback", alt: "A humpback whale breaching in Alaskan waters" } },
+      { n: "07", title: "Dawes Glacier", place: "Endicott Arm", body: "Skiffs up Endicott Arm among harbor seals on the ice." },
+      { n: "08", title: "Disembark in Juneau", place: "Juneau", body: "Breakfast aboard, then the transfer to Juneau airport for flights from 11.30 am." },
+    ],
+    dayNote: "UnCruise plans each day around wildlife, tides and weather, so the order can change. A whole-yacht party can ask for the week's emphasis: more whales, more bears, more kayaking.",
+    rates: [
+      {"season": "2027 · Spring and early September", "option": "Navigator cabin", "rate": "From US $10,500", "dates": ["14 to 21 May 2027", "21 to 28 May 2027", "3 to 10 Sep 2027"], "note": "Pathfinder US $12,600; Admiral US $14,700"},
+      {"season": "2027 · High summer", "option": "Navigator cabin", "rate": "From US $11,200", "dates": ["28 May to 4 Jun 2027", "4 to 11 Jun 2027", "11 to 18 Jun 2027", "18 to 25 Jun 2027", "25 Jun to 2 Jul 2027", "2 to 9 Jul 2027", "9 to 16 Jul 2027", "16 to 23 Jul 2027", "23 to 30 Jul 2027", "30 Jul to 6 Aug 2027", "6 to 13 Aug 2027", "13 to 20 Aug 2027", "20 to 27 Aug 2027", "27 Aug to 3 Sep 2027"], "note": "Pathfinder US $13,500; Admiral US $15,700"},
+      {"season": "2027 · Late season", "option": "Navigator cabin", "rate": "From US $9,900", "dates": ["10 to 17 Sep 2027"], "note": "Pathfinder US $11,900; Admiral US $13,900"},
+      {"season": "2028 · Spring and early September", "option": "Navigator cabin", "rate": "From US $10,500", "dates": ["19 to 26 May 2028", "26 May to 2 Jun 2028", "1 to 8 Sep 2028"], "note": "Pathfinder US $12,600; Admiral US $14,700"},
+      {"season": "2028 · High summer", "option": "Navigator cabin", "rate": "From US $11,200", "dates": ["2 to 9 Jun 2028", "9 to 16 Jun 2028", "16 to 23 Jun 2028", "23 to 30 Jun 2028", "30 Jun to 7 Jul 2028", "7 to 14 Jul 2028", "14 to 21 Jul 2028", "21 to 28 Jul 2028", "28 Jul to 4 Aug 2028", "4 to 11 Aug 2028", "11 to 18 Aug 2028", "18 to 25 Aug 2028", "25 Aug to 1 Sep 2028"], "note": "Pathfinder US $13,500; Admiral US $15,700"},
+      {"season": "2028 · Late season", "option": "Navigator cabin", "rate": "From US $9,900", "dates": ["8 to 15 Sep 2028"], "note": "Pathfinder US $11,900; Admiral US $13,900"}
+    ],
+    ratesNote: "Per person sharing, by cabin, as UnCruise Adventures publishes it; the whole yacht (all 11 cabins) is quoted by UnCruise on request. Port fees, taxes, drinks and transfers included; gratuities and flights not.",
+    additions: [
+      { title: "All eleven cabins", body: "Hold the yacht for one party and every cabin, every skiff seat and every naturalist is yours. We ask UnCruise for the charter rate on your dates and file it in your Folio." },
+      { title: "We know the Safari Quest team", body: "James Wild & Co works with UnCruise as a partner and knows the people aboard Safari Quest; the brief for your week goes to them directly." },
+      { title: "One Folio, one advisor", body: "Flights to Juneau, a night either side, the forms and the party's preferences, in one Traveler Folio and run by one James Wild & Co advisor." },
+    ],
+    faqs: [
+      { q: "How many guests does Safari Quest carry?", a: "Twenty-two, in 11 outside cabins, with a guest to crew ratio of 2:1, as UnCruise publishes it." },
+      { q: "Can we charter the whole yacht?", a: "Yes. UnCruise quotes whole-yacht charters on request; ask us for your dates and we request it." },
+      { q: "Where does the week start?", a: "In Juneau. Fly in by 3 pm on the first day; on the last morning the transfer reaches the airport for flights from 11.30 am." },
+    ],
+  },
 ];
 
 export const TY_AIRCRAFT = {
@@ -406,6 +495,31 @@ export const TY_ROUTES: Record<string, TyStop[]> = {
     { name: "Tasiilaq, by boat", lat: 65.61, lng: -37.64, mode: "sea", zoom: 10, days: ["East Greenland"], path: [[-37.18, 65.57], [-37.1784, 65.5811], [-37.1827, 65.5829], [-37.1611, 65.6078], [-37.1697, 65.6185], [-37.1956, 65.6327], [-37.2128, 65.6398], [-37.2257, 65.6416], [-37.2601, 65.6398], [-37.4711, 65.59], [-37.5399, 65.5793], [-37.5787, 65.5793], [-37.5873, 65.5811], [-37.5959, 65.5847], [-37.6002, 65.59], [-37.5916, 65.5953], [-37.5916, 65.5989], [-37.6002, 65.6025], [-37.64, 65.61]] },
     at({ name: "DYE-2, the ice sheet", lat: 66.48, lng: -46.3, zoom: 7 }, "air"), at({ name: "Ilulissat", lat: 69.22, lng: -51.1, zoom: 10 }, "air", "Ilulissat"),
     at({ name: "Nuuk fjord", lat: 64.18, lng: -51.72, zoom: 9 }, "air", "Nuuk fjord"),
+  ],
+  // UnCruise (19 Nov 2026): the Seward to Dutch Harbor sailing, every leg routed round the OSM coast by scripts/sealanes.py
+  // (public/maps/routes/safari-explorer-seward-to-dutch-harbor-10n.json); the reverse sails the same water.
+  "aleutian-islands": [
+    {"name": "Seward", "lat": 60.095, "lng": -149.438, "mode": "ground", "days": ["01"], "zoom": 8},
+    {"name": "Kenai Fjords National Park", "lat": 59.75, "lng": -149.65, "mode": "sea", "days": ["02"], "zoom": 8, "path": [[-149.438, 60.095], [-149.417, 60.075], [-149.368, 59.988], [-149.382, 59.919], [-149.432, 59.869], [-149.506, 59.696], [-149.516, 59.691], [-149.556, 59.685], [-149.576, 59.685], [-149.585, 59.688], [-149.66, 59.728], [-149.665, 59.735], [-149.665, 59.743], [-149.65, 59.75]]},
+    {"name": "Kodiak Island", "lat": 57.782, "lng": -152.418, "mode": "sea", "days": ["03"], "zoom": 8, "path": [[-149.65, 59.75], [-149.69, 59.702], [-149.699, 59.649], [-149.745, 59.601], [-152.204, 57.772], [-152.251, 57.753], [-152.297, 57.739], [-152.325, 57.739], [-152.362, 57.748], [-152.418, 57.782]]},
+    {"name": "Katmai National Park", "lat": 58.1, "lng": -154.55, "mode": "sea", "days": ["04"], "zoom": 8, "path": [[-152.418, 57.782], [-152.428, 57.77], [-152.42, 57.762], [-152.412, 57.758], [-152.374, 57.779], [-152.366, 57.787], [-152.328, 57.811], [-152.32, 57.823], [-152.473, 57.9], [-152.489, 57.904], [-152.496, 57.908], [-152.588, 57.929], [-152.803, 57.917], [-152.963, 57.965], [-153.293, 58.002], [-154.502, 58.075], [-154.518, 58.079], [-154.525, 58.083], [-154.533, 58.091], [-154.55, 58.1]]},
+    {"name": "Alaska Peninsula National Wildlife Refuge", "lat": 57.043, "lng": -156.541, "mode": "sea", "days": ["05"], "zoom": 8, "path": [[-154.55, 58.1], [-154.498, 58.072], [-154.457, 58.065], [-154.43, 58.065], [-154.416, 58.057], [-154.416, 58.05], [-156.442, 57.074], [-156.511, 57.052], [-156.541, 57.043]]},
+    {"name": "Aniakchak National Monument and Preserve", "lat": 56.667, "lng": -157.803, "mode": "sea", "days": ["06"], "zoom": 8, "path": [[-156.541, 57.043], [-156.535, 56.977], [-156.587, 56.948], [-156.656, 56.929], [-157.289, 56.649], [-157.394, 56.621], [-157.532, 56.602], [-157.689, 56.597], [-157.784, 56.649], [-157.803, 56.667]]},
+    {"name": "Unga Island", "lat": 55.196, "lng": -160.721, "mode": "sea", "days": ["07"], "zoom": 8, "path": [[-157.803, 56.667], [-157.808, 56.491], [-158.109, 56.232], [-158.39, 56.008], [-158.711, 55.805], [-160.416, 55.142], [-160.536, 55.109], [-160.676, 55.142], [-160.716, 55.165], [-160.721, 55.196]]},
+    {"name": "Captain's choice, the Alaska Peninsula", "lat": 54.8, "lng": -163.3, "mode": "sea", "days": ["08"], "zoom": 8, "path": [[-160.721, 55.196], [-160.778, 55.129], [-160.816, 55.108], [-162.178, 54.825], [-162.329, 54.797], [-163.3, 54.8]]},
+    {"name": "Akutan Island", "lat": 54.13, "lng": -165.77, "mode": "sea", "days": ["09"], "zoom": 8, "path": [[-163.3, 54.8], [-163.179, 54.786], [-163.143, 54.772], [-163.065, 54.723], [-163.035, 54.688], [-163.029, 54.667], [-163.047, 54.653], [-163.059, 54.646], [-164.496, 54.4], [-164.653, 54.376], [-165.643, 54.306], [-165.697, 54.274], [-165.709, 54.253], [-165.709, 54.141], [-165.721, 54.134], [-165.752, 54.127], [-165.77, 54.13]]},
+    {"name": "Dutch Harbor, Unalaska", "lat": 53.892, "lng": -166.53, "mode": "sea", "days": ["10", "11"], "zoom": 8, "path": [[-165.77, 54.13], [-165.756, 54.133], [-165.729, 54.142], [-165.724, 54.145], [-165.75, 54.163], [-165.881, 54.218], [-165.944, 54.228], [-165.985, 54.225], [-166.079, 54.182], [-166.44, 53.973], [-166.508, 53.899], [-166.518, 53.893], [-166.53, 53.892]]}
+  ],
+  // Safari Quest's Glacier Wilderness week (public/maps/routes/safari-quest-juneau-round-trip-7n.json).
+  "safari-quest-charter": [
+    {"name": "Juneau", "lat": 58.294, "lng": -134.418, "mode": "ground", "days": ["01"], "zoom": 8},
+    {"name": "Glacier Bay, the outer bay", "lat": 58.45, "lng": -136.05, "mode": "sea", "days": ["02"], "zoom": 8, "path": [[-134.418, 58.294], [-134.394, 58.282], [-134.386, 58.279], [-134.262, 58.21], [-134.25, 58.198], [-134.25, 58.196], [-134.266, 58.187], [-134.294, 58.185], [-134.593, 58.225], [-134.637, 58.244], [-134.897, 58.382], [-134.905, 58.384], [-134.921, 58.392], [-134.925, 58.397], [-134.941, 58.407], [-134.957, 58.416], [-134.964, 58.411], [-134.976, 58.386], [-135.048, 58.19], [-135.06, 58.183], [-135.196, 58.2], [-135.918, 58.371], [-136.042, 58.443], [-136.05, 58.45]]},
+    {"name": "Chichagof Island: Iyoukeen Cove and Basket Bay", "lat": 57.659, "lng": -134.903, "mode": "sea", "days": ["03"], "zoom": 8, "path": [[-136.05, 58.45], [-135.945, 58.367], [-135.678, 58.253], [-135.112, 58.101], [-134.968, 58.057], [-134.917, 58.03], [-134.896, 57.97], [-134.886, 57.682], [-134.903, 57.659]]},
+    {"name": "Admiralty Island: Whitewater Bay", "lat": 57.227, "lng": -134.591, "mode": "sea", "days": ["04"], "zoom": 8, "path": [[-134.903, 57.659], [-134.891, 57.655], [-134.885, 57.652], [-134.863, 57.629], [-134.626, 57.255], [-134.591, 57.227]]},
+    {"name": "Warm Springs Bay", "lat": 57.085, "lng": -134.819, "mode": "sea", "days": ["05"], "zoom": 8, "path": [[-134.591, 57.227], [-134.631, 57.248], [-134.639, 57.25], [-134.643, 57.248], [-134.775, 57.093], [-134.784, 57.086], [-134.792, 57.082], [-134.819, 57.085]]},
+    {"name": "Frederick Sound, Admiralty Island National Monument", "lat": 57.15, "lng": -134.05, "mode": "sea", "days": ["06"], "zoom": 8, "path": [[-134.819, 57.085], [-134.791, 57.08], [-134.786, 57.083], [-134.781, 57.083], [-134.622, 57.011], [-134.501, 57.014], [-134.05, 57.15]]},
+    {"name": "Endicott Arm and Dawes Glacier", "lat": 57.591, "lng": -133.368, "mode": "sea", "days": ["07"], "zoom": 8, "path": [[-134.05, 57.15], [-133.716, 57.331], [-133.518, 57.544], [-133.482, 57.574], [-133.47, 57.579], [-133.45, 57.585], [-133.376, 57.589], [-133.368, 57.591]]},
+    {"name": "Juneau", "lat": 58.294, "lng": -134.418, "mode": "sea", "days": ["08"], "zoom": 8, "path": [[-133.368, 57.591], [-133.421, 57.586], [-133.451, 57.586], [-133.454, 57.584], [-133.457, 57.584], [-133.466, 57.58], [-133.566, 57.56], [-133.59, 57.564], [-133.62, 57.576], [-133.665, 57.612], [-134.102, 58.101], [-134.195, 58.174], [-134.355, 58.261], [-134.418, 58.294]]}
   ],
 };
 /** The route stop a day card belongs to: White Desert days by number, Echo Charlie stops by title. */

@@ -1,0 +1,31 @@
+@itin price-william-sound-explorer-with-cordova | Prince William Sound Explorer with Cordova | 7 | Seward | Seward
+TABLE Wilderness Explorer 2027 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Aug 5, 12, 19, 26 | 11900 9900 17400 10900 19100 11900 20900 12900 22600
+TABLE Safari Explorer 2027 | Navigator D/S, Trailblazer D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+May 21, 28; Jun 25; Jul 23 | 11200 19600 12400 21700 14600 25600 16800 29400 18500 32400
+TABLE Safari Explorer 2028 | Navigator D/S, Trailblazer D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+Jun 3, 10, 17, 24; Jul 1, 8, 15, 22, 29; Aug 5, 12, 19 | 11200 19600 12400 21700 14600 25600 16800 29400 18500 32400
+TABLE Wilderness Explorer 2028 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+May 26 | 10700 9000 15800 9900 17400 10700 18800 11700 20500
+Aug 25; Sept 1 | 13400 11200 19600 12400 21700 13400 23500 14600 25600
+
+@itin aleutian-islands-adventure-with-dutch-harbor-and-kodiak | Aleutian Islands Adventure with Dutch Harbor and Kodiak | 10 | Seward | Dutch Harbor (or reverse)
+TABLE Safari Explorer 2027 | Navigator D/S, Trailblazer D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+Jun 4, 15*; Jul 2, 13*, 30; Aug 10* | 13600 27200 15000 30000 17700 35400 20400 40800 22500 45000
+TABLE Wilderness Explorer 2028 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Jun 2, 13*, 23; Jul 4*, 14, 25*; Aug 4, 15* | 16300 13600 23800 15000 26300 16300 28600 17700 31000
+NOTE * reverse (Dutch Harbor to Seward)
+
+@itin alaskas-coastal-treasures | Alaska's Coastal Treasures | 13 | Seward | Juneau
+TABLE Wilderness Explorer 2027 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Jul 23*; Sept 2 | 13000 10800 18900 11900 20900 13000 22800 14100 24700
+TABLE Safari Explorer 2027 | Navigator D/S, Trailblazer D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+Aug 20 | 11200 19600 12400 21700 14600 25600 16800 29400 18500 32400
+TABLE Safari Explorer 2028 | Navigator D/S, Trailblazer D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+Aug 26 | 11200 19600 12400 21700 14600 25600 16800 29400 18500 32400
+TABLE Wilderness Explorer 2028 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+May 13*; Sept 8 | 10700 9000 15800 9900 17400 10700 18800 11700 20500
+NOTE * reverse (Juneau to Seward)
+
+@land denali-adventure-rail-and-trail-with-fairbanks | Denali Adventure by Rail & Trail with Fairbanks | 7 | Fairbanks | Anchorage | pre/post-cruise extension only
+2027 | double 7200 | single 8800

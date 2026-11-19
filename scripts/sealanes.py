@@ -408,7 +408,7 @@ def lanes(dest):
     return _LANES[dest]
 
 
-WIDE = {"caribbean", "mediterranean", "scandinavia-northern-europe", "arctic", "trans-atlantic", "asia", "oceania-and-pacific", "seychelles"}
+WIDE = {"caribbean", "mediterranean", "scandinavia-northern-europe", "arctic", "trans-atlantic", "asia", "oceania-and-pacific", "seychelles", "alaska"}
 
 
 def save_lanes():

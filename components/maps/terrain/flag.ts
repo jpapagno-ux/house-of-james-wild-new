@@ -26,7 +26,8 @@ export type TerrainPage = (typeof TERRAIN_PAGES)[number];
 // Tahiti (James, 9 Nov 2026: the Windstar voyages), routed round the OSM coast like Fiji.
 // The wide waters (James, 18 Nov 2026: Timeless Voyages and every voyage added since in 3D, the site uniform): the
 // Caribbean, the Mediterranean and the Seychelles, routed round a two-tier OSM coast (scripts/coast-routes.py).
-export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji", "indonesia", "tahiti", "caribbean", "mediterranean", "seychelles"] as const;
+// Alaska (James, 19 Nov 2026: UnCruise "with animated maps"), routed round the OSM coast (scripts/data/coast/alaska.geojson).
+export const TERRAIN_WATERS = ["galapagos", "antarctica", "fiji", "indonesia", "tahiti", "caribbean", "mediterranean", "seychelles", "alaska"] as const;
 /** Regions of the operator voyage pages (SeaDream) whose legs are routed round the OSM coast. The Americas (the Great
  *  Lakes and the St Lawrence, which the land data keeps closed) stay on the chart alone. */
 export const TERRAIN_REGIONS = ["caribbean", "mediterranean", "scandinavia-northern-europe", "arctic", "trans-atlantic", "asia", "oceania-and-pacific"] as const;

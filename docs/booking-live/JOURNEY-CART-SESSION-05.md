@@ -65,7 +65,7 @@ to the long link.
 
 ## 6. Acceptance checklist
 
-- [ ] Add `CHECKOUT_STAGING_SUPABASE_URL` and `CHECKOUT_STAGING_SERVICE_ROLE_KEY` in Vercel, Preview only.
+- [ ] Add `CHECKOUT_STAGING_SUPABASE_URL` and `CHECKOUT_STAGING_PUBLISHABLE_KEY` in Vercel, Preview only.
 - [ ] Redeploy the preview for `feature/journey-cart-saved-carts`.
 - [ ] In advisor view, press Send to client. The link is short and ends in `&j=` and 32 characters.
 - [ ] Open the link in another browser. The same journey opens with the advisor attached.
@@ -83,3 +83,10 @@ Lion Sands rooms must keep "to be confirmed" until each is verified.
 
 Step 3, the advisor's list of saved journeys with status. Step 4, an enquiry record when a traveler presses
 Enquire to Confirm. Still pending with James: the payment provider for the sandbox.
+
+## 9. Round 2 · 19 Nov 2026 · connected
+
+James asked for the Vercel settings to be added for him. Rather than place a service-role secret in the preview, the
+routes now use staging's publishable key and two database functions on staging, `save_journey_cart` and
+`open_journey_cart`. The table stays closed to everyone but those functions. Saves are capped at 200 an hour.
+Settings added in Vercel, Preview only: `CHECKOUT_STAGING_SUPABASE_URL` and `CHECKOUT_STAGING_PUBLISHABLE_KEY`.

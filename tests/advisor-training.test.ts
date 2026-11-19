@@ -17,7 +17,7 @@ test("the training words carry no long dashes", () => {
 });
 
 test("the migration lets an advisor write only their own registration", () => {
-  const sql = readFileSync(new URL("../supabase/migrations/20261119101500_advisor_training.sql", import.meta.url), "utf8");
+  const sql = readFileSync(new URL("../supabase/migrations/20261119104738_advisor_training.sql", import.meta.url), "utf8");
   assert.match(sql, /enable row level security/);
   assert.match(sql, /revoke insert, update, delete on public\.advisor_training_registrations from authenticated/);
   assert.match(sql, /advisor_id = private\.my_advisor_file\(\) or private\.is_advisor_keeper\(\)/);

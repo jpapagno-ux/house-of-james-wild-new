@@ -15,7 +15,7 @@ export default async function AdvisorFile() {
   const complete = fileComplete(s);
   const active = a.advisor.status === "active";
   const first = a.advisor.display_name.split(" ")[0];
-  // Training registration (James, 19 Nov 2026). The panel is hidden until the advisor_training migration is applied.
+  // Training registration (James, 19 Nov 2026). The panel is hidden unless the advisor_training table is missing.
   const training = await a.sb.from("advisor_training_registrations").select("note, registered_at").eq("advisor_id", a.advisor.id).maybeSingle();
   return (
     <>

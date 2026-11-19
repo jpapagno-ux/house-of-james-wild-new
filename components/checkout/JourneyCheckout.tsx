@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { niceDate, niceWhen } from "@/lib/booking-live/money";
-import { METHOD_NAMES, NO_PRICE, READINESS, READINESS_ORDER, readiness, type Readiness, cartTotals, fmtMoney, idempotencyKey, ledgerHandoff, lineStatuses, nightsBetween, paymentOptions, pricedAbroad, validLead, type Lead, type Line, type Method, type Option, type SimResponse, type Traveler } from "@/lib/checkout/journey";
+import { ENQUIRE, METHOD_NAMES, NO_PRICE, READINESS, dateClashes, decodeJourney, encodeJourney, isDate, READINESS_ORDER, readiness, type Readiness, cartTotals, fmtMoney, idempotencyKey, ledgerHandoff, lineStatuses, nightsBetween, paymentOptions, pricedAbroad, validLead, type Lead, type Line, type Method, type Option, type SimResponse, type Traveler } from "@/lib/checkout/journey";
 import type { Catalogue, Product } from "@/lib/checkout/pilot";
 import { JourneyConfigurator, Label, PriceChip, StayConfigurator, VoyageConfigurator, field, ratedStayPrice, slugify, type CardState, type Draft } from "./Configurators";
 import { addDays } from "@/lib/checkout/journey";
@@ -15,7 +15,8 @@ import { addDays } from "@/lib/checkout/journey";
 type AdvisorLite = { slug: string; name: string; role: string; ledgerId: string };
 type PayResult = SimResponse | { error: string };
 const STEPS = ["Build Your Journey", "Journey Cart", "Review", "Your Details", "Payment", "Confirmation"];
-const STORE = "jwc-journey-cart-v1";
+const STORE = "jwc-journey-cart-v2";
+const LIVE_PRICE_LASTS = 30 * 60 * 1000;
 const SHORT_NEXT = ["Review cart", "Review prices", "Your details", "Payment", "Run simulation"];
 const FILTERS = [["all", "All"], ["stay", "Stays"], ["residence", "Villas & residences"], ["voyage", "Voyages"], ["journey", "Land journeys"]] as const;
 const DOT: Record<Readiness, string> = { ready: "bg-emerald-700", priced: "bg-ink", from: "bg-stone", quote: "bg-transparent border border-stone" };
@@ -47,7 +48,8 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   const [lines, setLines] = useState<Line[]>([]);
   const [open, setOpen] = useState<string | null>(catalogue.products[0]?.key ?? null);
   const [editing, setEditing] = useState<string | null>(null);
-  const [card, setCard] = useState<CardState>({ state: "loading" });
+  const [cards, setCards] = useState<Record<string, CardState>>({});
+  const [share, setShare] = useState<{ url: string; copied: boolean } | null>(null);
   const [lead, setLead] = useState<Lead>({ first: "", last: "", email: "", phone: "", country: "" });
   const [companions, setCompanions] = useState<Traveler[]>([]);
   const [advisor, setAdvisor] = useState(assignedAdvisor);
@@ -70,20 +72,86 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   const adv = advisors.find((a) => a.slug === advisor) ?? advisors[0];
   const partySize = Math.max(1, ...bookable.map((l) => l.adults));
 
-  // The cart (no traveler details) survives a refresh within the tab. Names and email are never stored.
+  // A product's contracted card, narrowed to the rooms that product sells. No card: the published rates on file, or no price.
+  const cardFor = (p: Product): CardState => {
+    if (p.type !== "stay" || !p.cardSlug) return NO_CARD;
+    const c = cards[p.cardSlug] ?? { state: "loading" as const };
+    if (c.state !== "ok" || !p.cardRooms) return c;
+    const rooms = c.card.rooms.filter((r) => r.key.startsWith(p.cardRooms as string));
+    return rooms.length ? { state: "ok", card: { ...c.card, rooms } } : { state: "none", reason: "no_rooms" };
+  };
+  const cardOf = (p: Product) => { const c = cardFor(p); return c.state === "ok" ? c.card : null; };
+  // Prices are never trusted from storage or a link: a rated stay is priced again from its source, and a live price lapses.
+  const reprice = (l: Line): Line => {
+    const p = catalogue.products.find((x) => l.productKey === x.key || l.productKey.startsWith(`${x.key}:`));
+    if (!p || l.kind !== "stay" || p.type !== "stay") return l;
+    if (p.pricing === "albie") return l.price.source === "albie_live" && (!l.price.fetchedAt || Date.now() - Date.parse(l.price.fetchedAt) > LIVE_PRICE_LASTS) ? { ...l, price: NO_PRICE(l.price.basis, "The live price shown earlier has lapsed. Open Edit and check the live price again.") } : l;
+    const price = ratedStayPrice(p, cardOf(p), catalogue.fx, l.unit, l.start, l.end, l.adults);
+    return JSON.stringify(price) === JSON.stringify(l.price) ? l : { ...l, price };
+  };
+
+  // A journey from a link: each choice is checked against the catalogue, and anything that no longer fits is left out.
+  function fromPicks(code: string): Line[] | null {
+    const picks = decodeJourney(code);
+    if (!picks) return null;
+    const out: Line[] = [];
+    for (const k of picks) {
+      const p = catalogue.products.find((x) => k.productKey === x.key || k.productKey.startsWith(`${x.key}:`));
+      if (!p || k.start < catalogue.today) continue;
+      const id = uid();
+      const exp = (all: string[]) => k.experiences.filter((e) => all.includes(e));
+      const base = { id, productKey: k.productKey, ledgerId: p.ledgerId, name: p.name, supplier: p.supplier, start: k.start, end: k.end, adults: k.adults, plan: null, parentId: null };
+      let parent: Line | null = null, extras: string[] = [];
+      if (p.type === "stay" && k.productKey === p.key && k.adults <= p.maxAdults) {
+        // A room on the booking engine is chosen again with its live price, so its name is not taken from the link.
+        const unit = p.pricing === "albie" ? "" : p.units.some((u) => u.name === k.unit) ? k.unit : "";
+        if (p.pricing !== "albie" && !unit) continue;
+        parent = { ...base, kind: "stay", unit, unitKey: slugify(unit), voyage: null, price: p.pricing === "albie" ? NO_PRICE(`${nightsBetween(k.start, k.end)} nights, room to be chosen`, "Open Edit and check the live price for these dates.") : ratedStayPrice(p, cardOf(p), catalogue.fx, unit, k.start, k.end, k.adults) };
+        extras = exp(p.experiences);
+      } else if (p.type === "voyage") {
+        const [, vslug, date] = k.productKey.split(":");
+        const v = p.voyages.find((x) => x.slug === vslug), sailing = v?.sailings.find((x) => x.date === date && !x.status);
+        if (!v || !sailing || date !== k.start || !p.cabins.some((c) => c.type === k.unit) || k.adults > 3) continue;
+        const minor = sailing.fromUsd ? sailing.fromUsd * k.adults * 100 : null;
+        parent = { ...base, kind: "voyage", unit: k.unit, unitKey: slugify(k.unit), voyage: { slug: v.slug, name: v.name, code: sailing.code }, end: sailing.dateTo ?? addDays(sailing.date, v.nights), price: minor ? { source: "published_from", usdMinor: minor, sourceMinor: minor, sourceCurrency: "USD", fx: null, basis: `From ${fmtMoney((sailing.fromUsd as number) * 100, "USD")} per person in a double cabin × ${k.adults}. The ship's lowest published fare, not the ${k.unit} fare`, provenance: `Antarctica21 published from fare, filed in the house voyage record, checked ${niceDate(v.checked)}`, fetchedAt: null } : NO_PRICE(`${k.adults} guests, ${k.unit}, ${v.name}`, "No fare is on file for this departure.") };
+        extras = exp(v.optional);
+      } else if (p.type === "journey" && k.productKey === p.key && k.adults <= p.maxTravelers) {
+        parent = { ...base, kind: "journey", unit: `${p.nights} nights, ${p.stops.length} stops`, unitKey: "", voyage: null, end: addDays(k.start, p.nights), price: NO_PRICE(`${k.adults} ${k.adults === 1 ? "traveler" : "travelers"}, ${p.nights} nights`, "Route prices are not final. The house quotes the journey against your dates.") };
+      }
+      if (parent) out.push(parent, ...experienceLines(parent, extras));
+    }
+    return out.length ? out : null;
+  }
+
+  // The cart (no traveler details) is kept on this device, so it survives a refresh or a closed tab. Names and email are never stored.
   useEffect(() => {
     if (exampleDefault) { setCartId(uid()); loadExample(); return; }
+    const code = window.location.hash.startsWith("#j=") ? window.location.hash.slice(3) : "";
+    const sent = code ? fromPicks(code) : null;
+    if (sent) {
+      setCartId(uid()); setLines(sent); setOpen(null); setStep(1);
+      setNotice(`${advisorFromLink ? `${advisors.find((a) => a.slug === assignedAdvisor)?.name ?? "Your advisor"} has` : "The house has"} prepared this journey for you. Every price is checked again from its source as it opens. Change anything, or carry on to Review.`);
+      return;
+    }
+    if (code) setNotice("That journey link could not be read, or its dates have passed. Start a new journey below.");
     try {
-      const s = JSON.parse(sessionStorage.getItem(STORE) ?? "null") as { cartId: string; lines: Line[] } | null;
-      if (s?.cartId && Array.isArray(s.lines)) { setCartId(s.cartId); setLines(s.lines); if (s.lines.length) setOpen(null); return; }
+      const s = JSON.parse(localStorage.getItem(STORE) ?? "null") as { cartId: string; lines: Line[] } | null;
+      if (!code && s?.cartId && Array.isArray(s.lines)) { const kept = s.lines.filter((l) => !isDate(l.start) || l.start >= catalogue.today).map(reprice); setCartId(s.cartId); setLines(kept.filter((l) => !l.parentId || kept.some((x) => x.id === l.parentId))); if (kept.length) setOpen(null); return; }
     } catch { /* storage unavailable */ }
     setCartId(uid());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  useEffect(() => { if (cartId !== "pending") { try { sessionStorage.setItem(STORE, JSON.stringify({ cartId, lines })); } catch { /* storage unavailable */ } } }, [cartId, lines]);
+  useEffect(() => { if (cartId !== "pending") { try { localStorage.setItem(STORE, JSON.stringify({ cartId, lines })); } catch { /* storage unavailable */ } } }, [cartId, lines]);
   useEffect(() => {
-    fetch("/api/preview/checkout/rate-card?slug=ellerman-house").then((r) => r.json()).then((j) => setCard(j.card ? { state: "ok", card: j.card } : { state: "none", reason: j.reason ?? "no_published_card" })).catch(() => setCard({ state: "none", reason: "unreachable" }));
+    const slugs = [...new Set(catalogue.products.flatMap((p) => (p.type === "stay" && p.cardSlug ? [p.cardSlug] : [])))];
+    for (const slug of slugs) fetch(`/api/preview/checkout/rate-card?slug=${slug}`).then((r) => r.json()).then((j) => setCards((c) => ({ ...c, [slug]: j.card ? { state: "ok", card: j.card } : { state: "none", reason: j.reason ?? "no_published_card" } }))).catch(() => setCards((c) => ({ ...c, [slug]: { state: "none", reason: "unreachable" } })));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  // When a contracted card arrives, stays it covers are priced from it.
+  useEffect(() => {
+    setLines((ls) => { const next = ls.map(reprice); return next.some((l, i) => l !== ls[i]) ? next : ls; });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cards]);
   useEffect(() => { setCompanions((c) => Array.from({ length: partySize - 1 }, (_, i) => c[i] ?? { first: "", last: "" })); }, [partySize]);
 
   useEffect(() => {
@@ -99,10 +167,11 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
     const stayLine = (key: string, unit: string, start: string, end: string, adults: number) => {
       const p = catalogue.products.find((x) => x.key === key);
       if (!p || p.type !== "stay" || start < catalogue.today) return;
-      out.push({ id: uid(), kind: "stay", productKey: p.key, ledgerId: p.ledgerId, name: p.name, supplier: p.supplier, unit, unitKey: slugify(unit), voyage: null, start, end, adults, plan: null, parentId: null, price: ratedStayPrice(p, null, catalogue.fx, unit, start, end, adults) });
+      out.push({ id: uid(), kind: "stay", productKey: p.key, ledgerId: p.ledgerId, name: p.name, supplier: p.supplier, unit, unitKey: slugify(unit), voyage: null, start, end, adults, plan: null, parentId: null, price: ratedStayPrice(p, cardOf(p), catalogue.fx, unit, start, end, adults) });
     };
     stayLine("ellerman-house", "Deluxe House Room", "2027-02-26", "2027-03-02", 2);
     stayLine("casali-di-casole", "Santa Lucia", "2027-06-12", "2027-06-18", 8);
+    stayLine("lion-sands-ivory-lodge", "Ivory Lodge · Ivory Suite", "2027-03-02", "2027-03-05", 2);
     const ship = catalogue.products.find((x) => x.type === "voyage");
     if (ship && ship.type === "voyage") {
       const v = ship.voyages[0], sailing = v?.sailings.find((x) => !x.status && x.fromUsd && x.date >= "2027-01-01") ?? v?.sailings.find((x) => !x.status && x.fromUsd);
@@ -116,7 +185,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   function loadExample() {
     setLines(exampleLines()); setResults({}); setMethods({}); setOpen(null); setHelp(false);
     setLead({ first: "Ada", last: "Example", email: "ada@example.com", phone: "", country: "United States" });
-    go(1); setNotice("An example journey is loaded: a room, a residence, a voyage and a land journey. Change anything, or carry on to Review.");
+    go(1); setNotice("An example journey is loaded: a room, a residence, a safari suite on a rate card, a voyage and a land journey. Change anything, or carry on to Review.");
   }
 
   function go(n: number) {
@@ -180,18 +249,30 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   }
   function restart() { setLines([]); setResults({}); setMethods({}); setCartId(uid()); setLead({ first: "", last: "", email: "", phone: "", country: "" }); setAgreed(false); setOpen(catalogue.products[0]?.key ?? null); go(0); }
 
-  const nextLabel = step === 4 ? (busy ? "Running the simulation" : "Run simulated payments") : step === 0 ? "Review your cart" : `Continue to ${STEPS[step + 1]}`;
-  const handoff = step === 5 ? ledgerHandoff({ cartId, lines, lead, party: companions, advisor: adv, externalAdvisor: external, payments: Object.fromEntries(lines.map((l) => [l.id, isPay(results[l.id]) ? (results[l.id] as SimResponse) : null])) }) : null;
+  const nextLabel = step === 4 ? (busy ? "Running the simulation" : bookable.length > 0 && bookable.every((l) => product(l).policy.confirm.mode === "enquire") ? "Send enquiry (simulated)" : "Run simulated payments") : step === 0 ? "Review your cart" : `Continue to ${STEPS[step + 1]}`;
+
+  const handoff = step === 5 ? ledgerHandoff({ cartId, lines, lead, party: companions, advisor: adv, externalAdvisor: external, payments: Object.fromEntries(lines.map((l) => [l.id, isPay(results[l.id]) ? (results[l.id] as SimResponse) : null])), confirm: Object.fromEntries(bookable.map((l) => [l.id, product(l).policy.confirm.mode])) }) : null;
 
   const ready = (l: Line) => readiness(l, product(l).policy);
+  const enquire = (l: Line) => product(l).policy.confirm.mode === "enquire";
+  const clashes = useMemo(() => dateClashes(lines), [lines]);
+  const clashNote = clashes.map((c) => { const a = lines.find((l) => l.id === c.a), b = lines.find((l) => l.id === c.b); return a && b ? `${a.name} and ${b.name} overlap from ${niceDate(c.from)} to ${niceDate(c.to)}.` : ""; }).filter(Boolean);
+  const hero = (l: Line) => product(l).hero;
+  const est = (l: Line) => (l.price.source === "published_from" ? "from " : l.price.estimate ? "est. " : "");
+  function sendToClient() {
+    const url = `${window.location.origin}${window.location.pathname}?advisor=${encodeURIComponent(adv.slug)}#j=${encodeJourney(lines)}`;
+    setShare({ url, copied: false });
+    navigator.clipboard?.writeText(url).then(() => setShare({ url, copied: true })).catch(() => { /* the link stays on screen to copy by hand */ });
+  }
   // The traveler's wording for each payment method. The supplier-by-supplier reason stays in the house and advisor view.
   const plainReason = (o: Option, l: Line) => {
     const p = product(l);
     if (o.method === "advisor_assisted") return o.reason;
     if (o.available) return o.method === "pay_now" ? (p.type === "stay" && p.pricing === "albie" ? "Pay in full, securely, on the house booking engine." : "Pay in full today.") : o.method === "deposit_now" ? "Pay the deposit today. The balance follows on the supplier's terms." : "Pay at the property, on its own terms.";
+    if (enquire(l) && o.method === "deposit_now" && p.policy.deposit) return `${p.policy.deposit.basis} It is taken once the team has confirmed your dates.`;
     return o.method === "pay_now" ? "Not available online for this chapter yet. Your advisor arranges payment once the price is confirmed." : o.method === "deposit_now" ? "Your advisor confirms the deposit with your quote." : l.kind === "stay" ? "Not offered for this stay yet." : "Does not apply to this chapter.";
   };
-  const shortPrice = (l: Line) => (l.price.usdMinor != null ? `${l.price.source === "published_from" ? "from " : ""}${fmtMoney(l.price.usdMinor, "USD").replace(/\.00$/, "")}` : pricedAbroad(l.price) ? fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string).replace(/\.00$/, "") : "House quotes");
+  const shortPrice = (l: Line) => (l.price.usdMinor != null ? `${est(l)}${fmtMoney(l.price.usdMinor, "USD").replace(/\.00$/, "")}` : pricedAbroad(l.price) ? fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string).replace(/\.00$/, "") : "House quotes");
   const readyCount = bookable.filter((l) => ready(l) === "ready").length;
 
   // The cart, grouped by how far along each line is. Shown beside the page on a wide screen and in a sheet on a phone.
@@ -209,7 +290,10 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
             <ul className="mt-1.5 divide-y divide-[#DCD7D0] border-y ledger-border">
               {group.map((l) => (
                 <li key={l.id} className="py-2.5">
-                  <div className="flex justify-between gap-3 text-[14.5px]"><span className="min-w-0"><span className="block">{l.name}</span><span className="block text-[12.5px] ledger-muted">{[l.unit, l.start ? niceDate(l.start).replace(/^\w+, /, "") : "", party(l)].filter(Boolean).join(" · ")}</span></span><span className="whitespace-nowrap">{shortPrice(l)}</span></div>
+                  <div className="flex justify-between gap-3 text-[14.5px]">{hero(l) && (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img src={hero(l)} alt="" loading="lazy" className="w-11 h-11 object-cover shrink-0" />
+                  )}<span className="min-w-0 flex-1"><span className="block">{l.name}</span><span className="block text-[12.5px] ledger-muted">{[l.unit, l.start ? niceDate(l.start).replace(/^\w+, /, "") : "", party(l)].filter(Boolean).join(" · ")}</span></span><span className="whitespace-nowrap">{shortPrice(l)}</span></div>
                   {step < 5 && <div className="mt-1 flex gap-5 text-[13px]"><button type="button" className="underline underline-offset-4 decoration-[#CFC8BF]" onClick={() => editLine(l.id)}>Edit</button><button type="button" className="underline underline-offset-4 decoration-[#CFC8BF]" onClick={() => remove(l.id)}>Remove</button></div>}
                 </li>
               ))}
@@ -217,7 +301,9 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
           </section>
         );
       })}
+      {clashNote.length > 0 && <p role="status" className="mt-4 border-l-2 border-[#8B2525] pl-3 text-[13px]">Dates overlap. {clashNote.join(" ")}</p>}
       <Totals totals={totals} compact className="mt-4" />
+      {detail && step < 5 && bookable.length > 0 && <button type="button" className="ledger-btn mt-3" onClick={sendToClient}>Send to client</button>}
       <p className="mt-3 text-[13px] ledger-muted"><span className="ledger-id">{adv.ledgerId}</span> · held by {adv.name}</p>
     </>
   );
@@ -225,14 +311,20 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
   const lineCard = (l: Line, children?: ReactNode) => (
     <div key={l.id} className={l.kind === "experience" ? "pl-4 md:pl-8 border-l-2 border-[#DCD7D0] ml-1" : ""}>
       <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
-        <div className="min-w-0">
+        <div className="flex gap-4 flex-1 min-w-[min(100%,240px)]">
+        {l.kind !== "experience" && hero(l) && (
+          /* eslint-disable-next-line @next/next/no-img-element */
+          <img src={hero(l)} alt="" loading="lazy" className="w-16 h-16 md:w-24 md:h-24 object-cover shrink-0 bg-paper-card" />
+        )}
+        <div className="min-w-0 flex-1">
           {l.kind !== "experience" && <p className="ledger-eyebrow"><span className="ledger-id">{l.ledgerId}</span> · {product(l).volume} · {l.supplier}</p>}
           <p className={`ledger-display leading-tight ${l.kind === "experience" ? "text-[1.15rem]" : "text-[1.55rem] mt-1"}`}>{l.kind === "experience" ? `Experience · ${l.name}` : l.name}</p>
           {l.kind !== "experience" && <p className="mt-1 text-[15px]">{l.voyage ? `${l.voyage.name} · ` : ""}{l.unit || "Room to be chosen"} · {party(l)}</p>}
           {l.start && <p className="text-[14px] ledger-muted">{dates(l)}{l.kind === "stay" ? ` · ${nightsBetween(l.start, l.end)} nights` : ""}{l.voyage?.code ? ` · ${l.voyage.code}` : ""}</p>}
         </div>
+        </div>
         <div className="text-right">
-          {l.price.usdMinor != null ? <p className="ledger-display text-[1.45rem] leading-none">{l.price.source === "published_from" ? "from " : ""}{fmtMoney(l.price.usdMinor, "USD")}</p> : pricedAbroad(l.price) ? <p className="ledger-display text-[1.45rem] leading-none">{fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string)}</p> : <p className="text-[15px]">{l.kind === "experience" ? "On request" : "Priced by the house"}</p>}
+          {l.price.usdMinor != null ? <p className="ledger-display text-[1.45rem] leading-none">{est(l)}{fmtMoney(l.price.usdMinor, "USD")}</p> : pricedAbroad(l.price) ? <p className="ledger-display text-[1.45rem] leading-none">{fmtMoney(l.price.sourceMinor as number, l.price.sourceCurrency as string)}</p> : <p className="text-[15px]">{l.kind === "experience" ? "On request" : "Priced by the house"}</p>}
           <p className="mt-1.5"><PriceChip price={l.price} /></p>
           {l.kind !== "experience" && <p className="mt-1.5 inline-flex items-center gap-2 text-[12.5px]"><span className={`w-2 h-2 ${DOT[ready(l)]}`} aria-hidden="true" />{READINESS[ready(l)].label}</p>}
         </div>
@@ -305,13 +397,13 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                           <p className="ledger-eyebrow"><span className="ledger-id">{p.ledgerId}</span> · {p.volume} · {p.place}</p>
                           <h2 className="ledger-display text-[1.9rem] leading-tight mt-1.5">{p.name}</h2>
                           <p className="mt-1.5 text-[15px] ledger-muted">{p.line}</p>
-                          <p className="mt-3 text-[13.5px]">{p.type === "voyage" ? "Fixed departures · published from fares per person" : p.type === "journey" ? "Quoted by the house against your dates" : p.pricing === "albie" ? "Live price from the house booking engine" : `Published seasonal rates in ${p.currency}, per ${p.unitWord.toLowerCase().replace(" category", "")} a night`}{inCart > 0 && <span className="ml-2 ledger-id">· {inCart} in your journey</span>}</p>
+                          <p className="mt-3 text-[13.5px]">{p.type === "voyage" ? "Fixed departures · published from fares per person" : p.type === "journey" ? "Quoted by the house against your dates" : p.pricing === "albie" ? "Live price from the house booking engine" : (p.pricingLine ?? `Published seasonal rates in ${p.currency}, per ${p.unitWord.toLowerCase().replace(" category", "")} a night`)}{p.policy.confirm.mode === "enquire" ? " · confirmed by enquiry" : " · confirmed as you book"}{inCart > 0 && <span className="ml-2 ledger-id">· {inCart} in your journey</span>}</p>
                           <button type="button" className="ledger-btn mt-4" aria-expanded={open === p.key} onClick={() => setOpen(open === p.key ? null : p.key)}>{open === p.key ? "Close" : inCart ? "Add another" : p.type === "voyage" ? "Choose a departure" : "Choose dates"}</button>
                         </div>
                       </div>
                       {open === p.key && (
                         <div className="border-t ledger-border bg-paper-card/50 p-5 md:p-6">
-                          {p.type === "stay" ? <StayConfigurator product={p} today={catalogue.today} cardState={p.key === "ellerman-house" ? card : NO_CARD} fx={catalogue.fx} submitLabel="Add to journey" onSubmit={add} /> : p.type === "voyage" ? <VoyageConfigurator product={p} submitLabel="Add to journey" onSubmit={add} /> : <JourneyConfigurator product={p} today={catalogue.today} submitLabel="Add to journey" onSubmit={add} />}
+                          {p.type === "stay" ? <StayConfigurator product={p} today={catalogue.today} cardState={cardFor(p)} fx={catalogue.fx} submitLabel="Add to journey" onSubmit={add} /> : p.type === "voyage" ? <VoyageConfigurator product={p} submitLabel="Add to journey" onSubmit={add} /> : <JourneyConfigurator product={p} today={catalogue.today} submitLabel="Add to journey" onSubmit={add} />}
                         </div>
                       )}
                     </Panel>
@@ -338,14 +430,21 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                       </div>
                       {editing === l.id && (
                         <div className="mt-5 border-t ledger-border pt-5">
-                          {p.type === "stay" ? <StayConfigurator product={p} today={catalogue.today} cardState={p.key === "ellerman-house" ? card : NO_CARD} fx={catalogue.fx} initial={{ line: l, experiences: kids.map((k) => k.name) }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} /> : p.type === "voyage" ? <VoyageConfigurator product={p} initial={{ line: l, experiences: kids.map((k) => k.name) }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} /> : <JourneyConfigurator product={p} today={catalogue.today} initial={{ line: l, experiences: [] }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} />}
+                          {p.type === "stay" ? <StayConfigurator product={p} today={catalogue.today} cardState={cardFor(p)} fx={catalogue.fx} initial={{ line: l, experiences: kids.map((k) => k.name) }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} /> : p.type === "voyage" ? <VoyageConfigurator product={p} initial={{ line: l, experiences: kids.map((k) => k.name) }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} /> : <JourneyConfigurator product={p} today={catalogue.today} initial={{ line: l, experiences: [] }} submitLabel="Save changes" onSubmit={(d) => save(l.id, d)} />}
                         </div>
                       )}
                     </Panel>
                   );
                 })}
               </div>
-              {lines.length > 0 && <button type="button" className="ledger-btn mt-6" onClick={() => go(0)}>Add another stay or voyage</button>}
+              {clashNote.length > 0 && (
+                <Panel className="mt-5 p-5 border-l-2 border-l-[#8B2525]">
+                  <p className="ledger-eyebrow">Dates overlap</p>
+                  <ul className="mt-2 space-y-1 text-[15px]">{clashNote.map((c) => <li key={c}>{c}</li>)}</ul>
+                  <p className="mt-2 text-[14px] ledger-muted">Change one of them with Edit, or keep both if different travelers are on each. The house checks this with you either way.</p>
+                </Panel>
+              )}
+              {lines.length > 0 && <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3"><button type="button" className="ledger-btn" onClick={() => go(0)}>Add another stay or voyage</button>{detail && <button type="button" className="ledger-btn" onClick={sendToClient}>Send to client</button>}</div>}
             </>
           )}
 
@@ -359,6 +458,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                   const kids = lines.filter((x) => x.parentId === l.id);
                   const fees = detail ? p.fees : p.fees.filter((f) => f.state !== "not_applied");
                   const standing = l.price.source === "albie_live" ? "A live price for your dates. The house checks it again before booking."
+                    : l.price.estimate ? `An estimated rate while ${l.supplier}'s new rates are finalised. The house confirms the exact price before anything is held or charged.`
                     : l.price.source === "rate_card" ? "The contracted rate for your dates. The house checks it again before booking."
                     : l.price.source === "published_rate" ? `${l.supplier}'s published rate for your dates. The house confirms it, with taxes, before anything is paid.`
                     : l.price.source === "published_from" ? `A starting fare, not a quote. ${l.supplier} confirms the fare for your cabin before anything is paid.`
@@ -367,6 +467,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                     <Panel key={l.id} className="p-5 md:p-6">
                       {lineCard(l)}
                       <p className="mt-3 text-[15px]">{standing}</p>
+                      {enquire(l) && <p className="mt-2 border-l-2 border-[#8B2525] pl-3 text-[15px]">{ENQUIRE.long(l.supplier)}</p>}
                       {l.price.sourceCurrency && l.price.sourceCurrency !== "USD" && l.price.sourceMinor != null && l.price.usdMinor != null && <p className="mt-1 text-[14px] ledger-muted">{fmtMoney(l.price.sourceMinor, l.price.sourceCurrency)} at {l.supplier}&rsquo;s own rate. The US dollar figure is a guide; the {l.price.sourceCurrency} figure governs.</p>}
                       {kids.length > 0 && <p className="mt-2 text-[14.5px]">Experiences requested: {kids.map((k) => k.name).join(", ")}. The house quotes each one.</p>}
 
@@ -376,6 +477,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                           <dt className="ledger-muted">Source</dt><dd>{l.price.provenance}{l.price.fetchedAt ? ` · asked ${niceWhen(l.price.fetchedAt)}` : ""}</dd>
                           <dt className="ledger-muted">Supplier currency</dt><dd>{l.price.sourceMinor != null && l.price.sourceCurrency ? fmtMoney(l.price.sourceMinor, l.price.sourceCurrency) : "No figure on file"}</dd>
                           <dt className="ledger-muted">Conversion</dt><dd>{l.price.fx ? `${l.price.fx.rate} ${l.price.sourceCurrency} to US$1 · ${l.price.fx.source}` : l.price.sourceCurrency === "USD" ? "None. Quoted in US dollars by the source." : pricedAbroad(l.price) ? `No ${l.price.sourceCurrency} rate is on file.` : "Not applicable"}</dd>
+                          <dt className="ledger-muted">Confirmation</dt><dd>{p.policy.confirm.mode === "instant" ? "Instant, on the booking engine" : "By enquiry, confirmed by the house"} · {p.policy.confirm.basis}</dd>
                           <dt className="ledger-muted">Settlement currency</dt><dd>Not stated by the source. Confirmed before any charge.</dd>
                         </dl>
                       )}
@@ -412,12 +514,13 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                           <dt className="ledger-muted">Cancellation</dt><dd>{p.policy.cancellation}</dd>
                         </dl>
                       ) : (
-                        <p className="mt-2 text-[14.5px]">{p.policy.deposit ? p.policy.deposit.basis : "Your advisor confirms the deposit, the balance date and the cancellation terms with your quote, before anything is paid."}{p.policy.travelerNote ? ` ${p.policy.travelerNote}` : ""}</p>
+                        <p className="mt-2 text-[14.5px]">{p.policy.deposit ? `${p.policy.deposit.basis} ${p.policy.balance}` : "Your advisor confirms the deposit, the balance date and the cancellation terms with your quote, before anything is paid."}{p.policy.travelerNote ? ` ${p.policy.travelerNote}` : ""}</p>
                       )}
                     </Panel>
                   );
                 })}
               </div>
+              {clashNote.length > 0 && <p role="status" className="mt-5 border-l-2 border-[#8B2525] pl-3 text-[15px]">Dates overlap. {clashNote.join(" ")}</p>}
               <Totals totals={totals} className="mt-6" />
             </>
           )}
@@ -465,13 +568,14 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
 
           {step === 4 && (
             <>
-              <Head n={5} title="Payment">Each chapter is paid on its own, on its own supplier&rsquo;s terms. Where paying online is not open yet, your advisor completes it with you.</Head>
+              <Head n={5} title="Payment">Each chapter is paid on its own, on its own supplier&rsquo;s terms. Some chapters confirm as you book. Others the house confirms by hand: for those, {ENQUIRE.line.charAt(0).toLowerCase() + ENQUIRE.line.slice(1)}</Head>
               <div className="space-y-5">
                 {bookable.map((l) => {
                   const chosen = methodFor(l), res = results[l.id];
                   return (
                     <Panel key={l.id} className="p-5 md:p-6">
                       {lineCard(l)}
+                      {enquire(l) && <p className="mt-3 border-l-2 border-[#8B2525] pl-3 text-[15px]">{ENQUIRE.long(l.supplier)}</p>}
                       <fieldset className="mt-4 border-t ledger-border pt-4">
                         <legend className="sr-only">Payment method for {l.name}</legend>
                         <div className="grid sm:grid-cols-2 gap-3">
@@ -481,7 +585,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
                               <label key={o.method} className={`block border p-3.5 ${chosen === o.method ? "border-ink bg-paper-card" : "border-[#DCD7D0] bg-paper"} ${can ? "cursor-pointer" : "opacity-70 cursor-not-allowed"}`}>
                                 <span className="flex items-center gap-2.5">
                                   <input type="radio" name={`pay-${l.id}`} className="w-4 h-4 accent-[#2E2B28]" disabled={!can} checked={chosen === o.method} onChange={() => setMethods({ ...methods, [l.id]: o.method })} />
-                                  <span className="ledger-display text-[1.2rem]">{METHOD_NAMES[o.method]}</span>
+                                  <span className="ledger-display text-[1.2rem]">{o.method === "advisor_assisted" && enquire(l) ? ENQUIRE.action : METHOD_NAMES[o.method]}</span>
                                   <span className="ml-auto text-[12px] tracking-wide whitespace-nowrap">{o.available ? (o.amountMinor ? fmtMoney(o.amountMinor, "USD") : "Open") : "Not open"}</span>
                                 </span>
                                 <span className="block mt-1.5 text-[13.5px] ledger-muted">{detail ? o.reason : plainReason(o, l)}</span>
@@ -517,7 +621,7 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
               </Panel>
               <div className="mt-5 space-y-5">
                 {bookable.map((l) => {
-                  const s = lineStatuses(l, isPay(results[l.id]) ? (results[l.id] as SimResponse) : null);
+                  const s = lineStatuses(l, isPay(results[l.id]) ? (results[l.id] as SimResponse) : null, enquire(l));
                   const kids = lines.filter((x) => x.parentId === l.id);
                   return (
                     <Panel key={l.id} className="p-5 md:p-6">
@@ -579,6 +683,23 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
         </div>
       )}
 
+      {share && (
+        <div className="fixed inset-0 z-50 flex items-end md:items-center md:justify-center" role="dialog" aria-modal="true" aria-label="Send to client">
+          <button type="button" className="absolute inset-0 bg-ink/50 cursor-default" aria-label="Close" onClick={() => setShare(null)} />
+          <div className="relative w-full md:w-[640px] max-h-[88vh] overflow-y-auto bg-paper border border-[#CFC8BF] p-5 md:p-7 pb-[calc(1.25rem+env(safe-area-inset-bottom))]">
+            <div className="flex items-center justify-between gap-4"><h2 className="ledger-display text-[1.8rem] leading-none">Send to client</h2><button type="button" className="house-chip" onClick={() => setShare(null)}>Close</button></div>
+            <p className="mt-3 text-[15px]" role="status">{share.copied ? "Link copied." : "Copy this link."} It opens this journey with {adv.name} attached.</p>
+            <input readOnly className={`${field} font-mono text-[13px]`} value={share.url} aria-label="Journey link" onFocus={(e) => e.currentTarget.select()} />
+            <ul className="mt-4 space-y-1.5 text-[14px] ledger-muted list-disc pl-5">
+              <li>The link carries what was chosen: chapters, dates, rooms and guests. It carries no names, no email and no prices.</li>
+              <li>Every price is asked again from its source when the client opens it. A live room on the booking engine is chosen again with its live price.</li>
+              <li>This preview sits behind the team sign-in, so for now the link opens only for people on the team.</li>
+            </ul>
+            <div className="mt-5 flex flex-wrap gap-x-8 gap-y-3"><button type="button" className="ledger-btn ledger-btn--house" onClick={sendToClient}>Copy link again</button><a className="ledger-btn" href={`mailto:?subject=${encodeURIComponent("Your journey with James Wild & Co")}&body=${encodeURIComponent(`Here is the journey we discussed. Open it to review each chapter:\n\n${share.url}\n\n${adv.name}\nJames Wild & Co`)}`}>Open in email</a></div>
+          </div>
+        </div>
+      )}
+
       {help && (
         <div className="fixed inset-0 z-50 flex items-end md:items-center md:justify-center" role="dialog" aria-modal="true" aria-label="How it works">
           <button type="button" className="absolute inset-0 bg-ink/50 cursor-default" aria-label="Close" onClick={() => setHelp(false)} />
@@ -586,13 +707,14 @@ export default function JourneyCheckout({ catalogue, advisors, assignedAdvisor, 
             <div className="flex items-center justify-between gap-4"><h2 className="ledger-display text-[1.8rem] leading-none">How it works</h2><button type="button" className="house-chip" onClick={() => setHelp(false)}>Close</button></div>
             <ol className="mt-4 space-y-3 text-[15px] list-decimal pl-5">
               <li><strong>Build your journey.</strong> Open any stay, residence, voyage or land journey, choose dates and guests, and press Add to journey. Add as many as you like. Use the filters to narrow the list.</li>
-              <li><strong>Check the Journey cart.</strong> It is always one tap away: beside the page on a computer, the Journey cart button on a phone. It sorts everything into Ready to book, Priced, From fare and Quoted by the house. Edit or Remove any line there.</li>
+              <li><strong>Check the Journey cart.</strong> It is always one tap away: beside the page on a computer, the Journey cart button on a phone. It sorts everything into Ready to book, Priced, Indicative price and Quoted by the house. Edit or Remove any line there.</li>
               <li><strong>Review.</strong> Each chapter shows its price, what is included and not included, taxes and charges, and deposit and cancellation terms.</li>
               <li><strong>Your details.</strong> The lead traveler&rsquo;s name and email, the names of those traveling, and your advisor. No passport or card details are asked for.</li>
-              <li><strong>Payment.</strong> Each chapter is paid on its own. Choose a method where one is open; otherwise your advisor completes it with you. Then press Run simulation.</li>
+              <li><strong>Payment.</strong> Each chapter is paid on its own. A stay on the house booking engine confirms as you book. Everything else is by enquiry: {ENQUIRE.line.charAt(0).toLowerCase() + ENQUIRE.line.slice(1)} Then press Run simulation.</li>
+              <li><strong>Overlapping dates.</strong> If two chapters cover the same nights, the cart says so. It is a reminder, never a block.</li>
               <li><strong>Confirmation.</strong> Each chapter shows three separate things: the booking request, the payment, and the supplier&rsquo;s confirmation.</li>
             </ol>
-            <p className="mt-4 text-[14px] ledger-muted">This is a preview. No card is taken and nothing is sent to a supplier. For the team: the link at the top switches between the traveler view and the house and advisor detail.</p>
+            <p className="mt-4 text-[14px] ledger-muted">This is a preview. No card is taken and nothing is sent to a supplier. Your cart is kept on this device, so it is still here if you close the page. For the team: the link at the top switches between the traveler view and the house and advisor detail, where Send to client makes a link to this journey.</p>
             <div className="mt-5 flex flex-wrap gap-x-8 gap-y-3"><button type="button" className="ledger-btn ledger-btn--house" onClick={loadExample}>Load an example journey</button><button type="button" className="ledger-btn" onClick={() => setHelp(false)}>Start from scratch</button></div>
           </div>
         </div>
@@ -620,7 +742,7 @@ function Totals({ totals: t, compact, className = "" }: { totals: ReturnType<typ
     <dl className={`${compact ? "text-[14px]" : "border ledger-border bg-paper-card p-5 md:p-6 text-[15.5px]"} ${className}`}>
       <div className="flex justify-between gap-4 border-t border-ink pt-2.5"><dt>Priced today{t.verifiedCount ? ` · ${t.verifiedCount} ${t.verifiedCount === 1 ? "line" : "lines"}` : ""}</dt><dd className={compact ? "font-medium" : "ledger-display text-[1.7rem] leading-none"}>{fmtMoney(t.verifiedMinor, "USD")}</dd></div>
       {t.abroad.map((a) => <div key={a.currency} className="flex justify-between gap-4 mt-2"><dt>Priced in {a.currency} · no US dollar rate on file</dt><dd className="whitespace-nowrap">{fmtMoney(a.minor, a.currency)}</dd></div>)}
-      {t.fromCount > 0 && <div className="flex justify-between gap-4 mt-2 ledger-muted"><dt>Published from fares · not in the total</dt><dd className="whitespace-nowrap">from {fmtMoney(t.fromMinor, "USD")}</dd></div>}
+      {t.fromCount > 0 && <div className="flex justify-between gap-4 mt-2 ledger-muted"><dt>Indicative, to be confirmed · not in the total</dt><dd className="whitespace-nowrap">from {fmtMoney(t.fromMinor, "USD")}</dd></div>}
       {t.awaitingCount > 0 && <div className="flex justify-between gap-4 mt-2 ledger-muted"><dt>Awaiting a price from the house</dt><dd>{t.awaitingCount} {t.awaitingCount === 1 ? "line" : "lines"}</dd></div>}
       {!compact && <p className="mt-4 text-[13.5px] ledger-muted">No tax has been added by the house, and no Florida sales tax applies. Supplier taxes and levies are on the next screen. A price shown is not proof of availability.</p>}
     </dl>

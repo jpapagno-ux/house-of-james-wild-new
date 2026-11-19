@@ -3,11 +3,11 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { NO_PRICE, cartTotals, commissionHandoff, hasCardLikeData, idempotencyKey, ledgerHandoff, lineStatuses, paymentOptions, priceNights, readiness, simulatePayment, toUsdMinor, validLead, verified, type Line, type Policy, type Price, type SeasonRule } from "../lib/checkout/journey.ts";
+import { ENQUIRE, NO_PRICE, dateClashes, decodeJourney, encodeJourney, indicative, cartTotals, commissionHandoff, hasCardLikeData, idempotencyKey, ledgerHandoff, lineStatuses, paymentOptions, priceNights, readiness, simulatePayment, toUsdMinor, validLead, verified, type Line, type Policy, type Price, type SeasonRule } from "../lib/checkout/journey.ts";
 
 const price = (source: Price["source"], usdMinor: number | null): Price => ({ source, usdMinor, sourceMinor: usdMinor, sourceCurrency: usdMinor == null ? null : "USD", fx: null, basis: "fixture", provenance: "fixture", fetchedAt: null });
 const line = (id: string, p: Price, kind: Line["kind"] = "stay"): Line => ({ id, kind, productKey: "fixture", ledgerId: "FIXTURE", name: "Fixture House", supplier: "Fixture Supplier", unit: "Room", unitKey: "room", start: "2027-02-01", end: "2027-02-04", adults: 2, price: p });
-const none: Policy = { payNow: { supported: false, basis: "not on file" }, deposit: null, depositNote: "Deposit terms not on file.", payAtProperty: { supported: false, basis: "not stated" }, balance: "Not on file.", cancellation: "Not on file." };
+const none: Policy = { payNow: { supported: false, basis: "not on file" }, deposit: null, depositNote: "Deposit terms not on file.", payAtProperty: { supported: false, basis: "not stated" }, balance: "Not on file.", cancellation: "Not on file.", confirm: { mode: "instant", basis: "fixture engine" } };
 
 test("only a live or contracted price is verified; a from fare and a missing price never are", () => {
   assert.equal(verified(price("albie_live", 100000)), true);
@@ -139,4 +139,55 @@ test("a line is ready to book only with a verified price and a supplier-approved
   assert.equal(readiness(line("c", price("published_from", 3799000), "voyage"), open), "from", "a from fare is never ready, whatever the policy");
   assert.equal(readiness(line("d", NO_PRICE("x", "y"), "journey"), open), "quote");
   assert.equal(readiness(line("e", price("albie_live", 240000), "experience"), open), "quote");
+});
+
+test("a stay the house confirms by hand opens no charge before that confirmation, and tells the traveler to enquire", () => {
+  const card: Policy = { ...none, deposit: { percentBp: 3000, fixedMinor: null, basis: "30% on the card." }, payNow: { supported: true, basis: "engine" }, confirm: { mode: "enquire", basis: "confirmed by hand" } };
+  const l = line("a", price("rate_card", 2052000));
+  const o = paymentOptions(l, card);
+  assert.deepEqual(o.filter((x) => x.available).map((x) => x.method), ["advisor_assisted"], "only the enquiry route is open");
+  assert.equal(o.find((x) => x.method === "deposit_now")!.amountMinor, null);
+  assert.match(o.find((x) => x.method === "deposit_now")!.reason, /30% on the card\. .*nothing is paid until the house has confirmed/);
+  assert.match(o.find((x) => x.method === "advisor_assisted")!.reason, /Please enquire\. The team at James Wild & Co/);
+  assert.equal(readiness(l, card), "priced", "priced and on a card, but never ready while the house must confirm by hand");
+  assert.equal(readiness(l, { ...card, confirm: { mode: "instant", basis: "engine" } }), "ready");
+  assert.match(lineStatuses(l, null, true).request.label, /Enquiry recorded/);
+  assert.match(ENQUIRE.line, /Please enquire, and the team at James Wild & Co will confirm your booking\./);
+});
+
+test("an estimated card rate is shown but never verified, never totalled and never chargeable", () => {
+  const est: Price = { ...price("rate_card", 2052000), estimate: true };
+  assert.equal(verified(est), false);
+  assert.equal(indicative(est), true);
+  const t = cartTotals([line("a", est), line("b", price("albie_live", 100000))]);
+  assert.equal(t.verifiedMinor, 100000, "the estimate stays out of the priced total");
+  assert.equal(t.fromMinor, 2052000);
+  const open: Policy = { ...none, payNow: { supported: true, basis: "engine" }, deposit: { percentBp: 3000, fixedMinor: null, basis: "30%." } };
+  assert.equal(paymentOptions(line("a", est), open).filter((x) => x.available && x.method !== "advisor_assisted").length, 0);
+  assert.equal(readiness(line("a", est), open), "from");
+  assert.equal(commissionHandoff(line("a", est), "ADV-1").commissionableBaseUsdMinor, null);
+});
+
+test("overlapping nights are flagged; leaving on the day the next chapter begins is not a clash", () => {
+  const at = (id: string, start: string, end: string, kind: Line["kind"] = "stay"): Line => ({ ...line(id, price("albie_live", 1000), kind), start, end });
+  assert.deepEqual(dateClashes([at("a", "2027-02-26", "2027-03-02"), at("b", "2027-03-02", "2027-03-05")]), []);
+  assert.deepEqual(dateClashes([at("a", "2027-02-26", "2027-03-02"), at("b", "2027-03-01", "2027-03-05"), at("c", "2027-06-01", "2027-06-04")]), [{ a: "a", b: "b", from: "2027-03-01", to: "2027-03-02" }]);
+  assert.deepEqual(dateClashes([at("a", "2027-02-26", "2027-03-02"), { ...at("x", "", "", "experience"), parentId: "a" }]), []);
+});
+
+test("a journey link carries choices only: no price, no traveler, and nothing malformed or card-shaped is read back", () => {
+  const a: Line = { ...line("a", price("rate_card", 2052000)), productKey: "lion-sands-ivory-lodge", unit: "Ivory Lodge · Ivory Suite" };
+  const x: Line = { ...line("x", NO_PRICE("x", "y"), "experience"), productKey: "lion-sands-ivory-lodge", name: "Game Drives", parentId: "a", start: "", end: "" };
+  const code = encodeJourney([a, x]);
+  assert.match(code, /^[A-Za-z0-9_-]+$/);
+  const raw = Buffer.from(code.replace(/-/g, "+").replace(/_/g, "/"), "base64").toString("utf8");
+  assert.doesNotMatch(raw, /2052000|usdMinor|price|email|Fixture Supplier/);
+  assert.deepEqual(decodeJourney(code), [{ productKey: "lion-sands-ivory-lodge", unit: "Ivory Lodge · Ivory Suite", start: "2027-02-01", end: "2027-02-04", adults: 2, experiences: ["Game Drives"] }]);
+  const enc = (v: unknown) => Buffer.from(JSON.stringify(v)).toString("base64url");
+  assert.equal(decodeJourney("not base64 !"), null);
+  assert.equal(decodeJourney(enc({ v: 2, l: [] })), null);
+  assert.equal(decodeJourney(enc({ v: 1, l: [["leeu-house", "Room", "2027-02-04", "2027-02-01", 2, []]] })), null, "departure before arrival");
+  assert.equal(decodeJourney(enc({ v: 1, l: [["leeu-house", "Room", "2027-02-01", "2027-02-04", 99, []]] })), null);
+  assert.equal(decodeJourney(enc({ v: 1, l: [["Leeu House<script>", "Room", "2027-02-01", "2027-02-04", 2, []]] })), null);
+  assert.equal(decodeJourney(enc({ v: 1, l: [["leeu-house", "4242 4242 4242 4242", "2027-02-01", "2027-02-04", 2, []]] })), null, "card-shaped text is refused");
 });

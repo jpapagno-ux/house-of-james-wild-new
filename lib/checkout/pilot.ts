@@ -6,6 +6,7 @@ import sandRiver from "@/lib/content/trips/the-sand-river-by-road.json";
 import pioneer from "@/lib/content/trips/three-generations-at-pioneer.json";
 import { POLAR_VOYAGES } from "@/lib/content/polar";
 import { roomsFor } from "@/lib/content/stay-rooms";
+import { originalOf, toCloud } from "@/lib/content/stay-cloud";
 import type { Fx, Policy, SeasonRule } from "./journey";
 
 // The Journey Cart's example products (Booking & Checkout Studio, Sessions 03 and 03b), read from the
@@ -22,11 +23,12 @@ import type { Fx, Policy, SeasonRule } from "./journey";
 // Supplier payment policies say only what is on file. "Not on file" is the honest answer for most of them.
 
 type Stay = { slug: string; name: string; ledgerId: string; hero: string; tagline: string; experiences: { items: string[] } };
-const stay = (ledgerId: string) => (staysData as unknown as { stays: Stay[] }).stays.find((s) => s.ledgerId === ledgerId) as Stay;
+// Photographs resolve as they do on the stay pages: Cloudinary once imported, the filed original otherwise.
+const stay = (ledgerId: string) => { const s = (staysData as unknown as { stays: Stay[] }).stays.find((x) => x.ledgerId === ledgerId) as Stay; return { ...s, hero: originalOf(toCloud(s.hero)) }; };
 
 export type FeeRow = { name: string; state: "included" | "added" | "not_on_file" | "not_applied"; note: string };
 export type Unit = { name: string; key: string; sleeps: number | null; facts: string; note: string | null };
-export type StayProduct = { type: "stay"; key: string; slug: string; ledgerId: string; name: string; supplier: string; place: string; hero: string; alt: string; line: string; volume: string; unitWord: string; pricing: "albie" | "published"; engineProperty: string | null; pilotRoom: string | null; units: Unit[]; rules: SeasonRule[]; currency: string; rateSource: string; maxAdults: number; experiences: string[]; fees: FeeRow[]; inclusions: string[]; exclusions: string[]; inclusionsNote: string; policy: Policy };
+export type StayProduct = { type: "stay"; key: string; slug: string; ledgerId: string; name: string; supplier: string; place: string; hero: string; alt: string; line: string; volume: string; unitWord: string; pricing: "albie" | "published"; /** The slug of a contracted card to read from Booking Live, and the room-code prefix this product sells from it. */ cardSlug?: string; cardRooms?: string; /** How the price is sourced, in a line for the product panel. */ pricingLine?: string; engineProperty: string | null; pilotRoom: string | null; units: Unit[]; rules: SeasonRule[]; currency: string; rateSource: string; maxAdults: number; experiences: string[]; fees: FeeRow[]; inclusions: string[]; exclusions: string[]; inclusionsNote: string; policy: Policy };
 export type Sailing = { date: string; dateTo: string | null; fromUsd: number | null; status: string | null; code: string | null };
 export type VoyageOption = { slug: string; name: string; nights: number; route: string; checked: string; sailings: Sailing[]; inclusions: string[]; exclusions: string[]; optional: string[] };
 export type VoyageProduct = { type: "voyage"; key: string; slug: string; ledgerId: string; name: string; supplier: string; place: string; hero: string; alt: string; line: string; volume: string; cabins: { type: string; size: string | null; beds: string | null }[]; voyages: VoyageOption[]; pricesNote: string; fees: FeeRow[]; policy: Policy };
@@ -87,6 +89,7 @@ const HOUSE_QUOTES: Policy = {
   deposit: null, depositNote: "The deposit is set with the house's quote, from each lodge's own terms.",
   payAtProperty: { supported: false, basis: "Does not apply to a journey of several lodges." },
   balance: "Set with the quote.", cancellation: "Set with the quote, from each lodge's own terms.",
+  confirm: { mode: "enquire", basis: "A journey of several lodges: the house asks each lodge for space and confirms the whole route." },
 };
 
 type TripFile = { id: string; h1: string; sub: string; ledgerline: string; answer: string; lodges: { name: string; line: string }[]; incl: string[]; excl: string[]; seo: { path: string } };
@@ -101,7 +104,7 @@ function journey(t: TripFile, maxTravelers: number): JourneyProduct {
 }
 
 export function pilotCatalogue(today: string): Catalogue {
-  const leeu = stay("STY-2026-000149"), ellerman = stay("STY-2026-000075"), casali = stay("STY-2026-000650");
+  const leeu = stay("STY-2026-000149"), ellerman = stay("STY-2026-000075"), casali = stay("STY-2026-000650"), lionSands = stay("STY-2026-290658");
   const ship = explorer as unknown as { slug: string; name: string; ledgerId: string; operator: string; tagline: string; hero: { url: string; alt: string }; cabins: { type: string; size: string | null; beds: string | null }[]; pricesNote: string };
   const eRooms = published("ellerman-house", (r) => !r.basis, 2), eVillas = published("ellerman-house", (r) => Boolean(r.basis), null), cRes = published("casali-di-casole", () => true, null);
 
@@ -120,6 +123,7 @@ export function pilotCatalogue(today: string): Catalogue {
     deposit: null, depositNote: "Deposit terms are open on the draft rate card. The house confirms them with the quote.",
     payAtProperty: { supported: false, basis: "Not stated. Ellerman House's payment terms are not on file." },
     balance: NOT_ON_FILE, cancellation: "Not on file. The house confirms deposit and cancellation terms with your quote, before anything is charged.",
+    confirm: { mode: "enquire", basis: "Ellerman House is not on the booking engine. The house asks Ellerman House for space and confirms by hand." },
   };
   const ellermanFees: FeeRow[] = [
     { name: "South African VAT", state: "not_on_file", note: "Whether the published rate includes VAT is open on the draft rate card." },
@@ -149,9 +153,36 @@ export function pilotCatalogue(today: string): Catalogue {
           deposit: null, depositNote: "Deposit terms are not in the booking engine feed and no contracted card is on file for Leeu House.",
           payAtProperty: { supported: false, basis: "Not stated by Leeu Collection or by the booking engine feed." },
           balance: NOT_ON_FILE, cancellation: "Follows the rate plan the engine prices. The plan's cancellation terms are not in the feed.",
+          confirm: { mode: "instant", basis: "The house booking engine (ALBIE by TAG) holds live inventory and confirms the room as it takes payment." },
         },
       },
-      { ...ellermanBase, key: "ellerman-house", name: "Ellerman House", line: ellerman.tagline, volume: "Stay", unitWord: "Room category", units: eRooms.units, rules: eRooms.rules, maxAdults: 2, experiences: ellerman.experiences.items },
+      {
+        // A contracted card example (James, 18 Nov 2026): Lion Sands' card is the one published, non-sample card in
+        // Booking Live (lion-sands 2027-V1, revision 2, synced from Airtable; read 19 Nov 2026). Its 2027 seasons are
+        // marked "verify" by the house, so every figure shows as an estimate, to be confirmed, and never as a total.
+        type: "stay", key: "lion-sands-ivory-lodge", slug: lionSands.slug, ledgerId: lionSands.ledgerId, name: "Lion Sands Ivory Lodge", supplier: "Lion Sands", place: "Sabi Sand, South Africa",
+        hero: lionSands.hero, alt: "Lion Sands Game Reserve, Sabi Sand", line: "Eight suites above the Sabie River, each with a private lounge, deck and plunge pool.", volume: "Stay", unitWord: "Suite",
+        pricing: "published", cardSlug: "lion-sands", cardRooms: "ivory-lodge", pricingLine: "Contracted rate card from Airtable · 2027 rates are estimates, to be confirmed",
+        engineProperty: null, pilotRoom: null,
+        units: [{ name: "Ivory Lodge · Ivory Suite", key: "ivory-lodge-ivory-suite", sleeps: 2, facts: "Suite for 2 guests", note: "Rate read from the contracted card" }], rules: [], currency: "USD",
+        rateSource: "Lion Sands' contracted card in Booking Live", maxAdults: 2, experiences: lionSands.experiences.items,
+        fees: [
+          { name: "South African VAT (15%)", state: "included", note: "Included in the rate, per the contracted card." },
+          { name: "Reserve, conservation and gate fees", state: "not_on_file", note: "Not on the contracted card. The house confirms them with the quote." },
+          FLORIDA,
+        ],
+        inclusions: [], exclusions: [], inclusionsNote: "The rate plan's inclusions are on the contracted card in Airtable and are listed with your quote.",
+        policy: {
+          payNow: { supported: false, basis: "Lion Sands is paid by deposit and balance, on the contracted card's terms, once the house has confirmed your dates." },
+          deposit: { percentBp: 3000, fixedMinor: null, basis: "A 30% deposit confirms the booking, per the contracted card." },
+          depositNote: "",
+          payAtProperty: { supported: false, basis: "Not offered on the contracted card." },
+          balance: "Due 60 days before arrival, per the contracted card.",
+          cancellation: "Cancellation terms are confirmed by the house with Lion Sands at the time of your quote, per the contracted card.",
+          confirm: { mode: "enquire", basis: "Lion Sands is not on the booking engine. The house asks Lion Sands for the suite and confirms by hand." },
+        },
+      },
+      { ...ellermanBase, key: "ellerman-house", cardSlug: "ellerman-house", name: "Ellerman House", line: ellerman.tagline, volume: "Stay", unitWord: "Room category", units: eRooms.units, rules: eRooms.rules, maxAdults: 2, experiences: ellerman.experiences.items },
       { ...ellermanBase, key: "ellerman-house-villas", name: "Ellerman House Villas", line: "Villa One and Villa Two, below the house: each taken whole, with a private chef and hospitality team.", volume: "Residence", unitWord: "Villa", units: eVillas.units, rules: eVillas.rules, maxAdults: 10, experiences: [] },
       {
         type: "stay", key: "casali-di-casole", slug: casali.slug, ledgerId: casali.ledgerId, name: "Casali di Casole", supplier: "Casali di Casole", place: "Tuscany, Italy",
@@ -168,6 +199,7 @@ export function pilotCatalogue(today: string): Catalogue {
           deposit: null, depositNote: "Deposit terms are not on file.",
           payAtProperty: { supported: false, basis: "Not stated." },
           balance: NOT_ON_FILE, cancellation: NOT_ON_FILE,
+          confirm: { mode: "enquire", basis: "No live inventory is on file for Casali di Casole. The house asks for the residence and confirms by hand." },
         },
       },
       {
@@ -186,6 +218,7 @@ export function pilotCatalogue(today: string): Catalogue {
           payAtProperty: { supported: false, basis: "Does not apply to a voyage." },
           balance: NOT_ON_FILE, cancellation: "Not on file, apart from Antarctica21's published flight contingency: a full refund of the cruise fare if guests cannot fly out by 2 PM on Day 4 (air-cruises from Punta Arenas).",
           travelerNote: "Antarctica21 refunds the cruise fare in full if guests cannot fly out by 2 PM on Day 4 (air-cruises from Punta Arenas).",
+          confirm: { mode: "enquire", basis: "Voyages are not on the booking engine. The house asks Antarctica21 for the cabin and confirms by hand." },
         },
       },
       journey(sandRiver as unknown as TripFile, 12),
@@ -195,4 +228,4 @@ export function pilotCatalogue(today: string): Catalogue {
 }
 
 /** Slugs the preview rate-card route may read. */
-export const CARD_SLUGS = ["ellerman-house", "leeu-house"];
+export const CARD_SLUGS = ["ellerman-house", "leeu-house", "lion-sands"];

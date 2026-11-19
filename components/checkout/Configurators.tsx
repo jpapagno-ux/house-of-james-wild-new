@@ -5,6 +5,7 @@ import { offersByRoom, type RatePlan } from "@/lib/rates";
 import { niceDate } from "@/lib/booking-live/money";
 import { NO_PRICE, addDays, fmtMoney, isDate, nightsBetween, priceNights, toUsdMinor, verified, type Fx, type Line, type Price, type SeasonRule } from "@/lib/checkout/journey";
 import type { JourneyProduct, StayProduct, VoyageProduct } from "@/lib/checkout/pilot";
+import { isEstimateSeason, seasonLabel } from "@/lib/booking-live/estimates";
 
 // Journey Cart: the pieces that choose dates, rooms, cabins and guests, on Build Your Journey and again
 // when a line is edited in the cart. A price appears only when its source answers: the booking engine
@@ -33,7 +34,7 @@ export function PriceChip({ price }: { price: Price }) {
   const t = TONE[price.source];
   return (
     <span className="inline-flex items-center gap-2 border ledger-border bg-paper px-2.5 py-1 text-[12px] tracking-wide text-ink whitespace-nowrap">
-      <span className={`w-2 h-2 ${t.dot}`} aria-hidden="true" />{t.word}{verified(price) ? "" : price.source === "published_from" ? " · not a quote" : ""}
+      <span className={`w-2 h-2 ${price.estimate ? "bg-stone" : t.dot}`} aria-hidden="true" />{price.estimate ? "Estimated rate · to be confirmed" : t.word}{verified(price) ? "" : price.source === "published_from" ? " · not a quote" : ""}
     </span>
   );
 }
@@ -66,7 +67,8 @@ export function ratedStayPrice(product: StayProduct, card: Card | null, fx: Reco
     const p = card && r ? priceNights(card.rules, r.key, start, end, adults) : !card && u ? priceNights(product.rules, u.key, start, end, adults) : null;
     if (!p) return NO_PRICE(`${n} nights, ${chosen}, ${party}`, card ? "The contracted card does not cover every night or this party. The house prices it." : u && !product.rules.some((x) => x.roomKey === u.key) ? `No rate is published for ${chosen}. The house prices it with ${product.supplier}.` : `The published rates on file do not cover every night of these dates, or this party. The house prices it with ${product.supplier}.`);
     const f = cur === "USD" ? null : (fx[cur] ?? null);
-    return { source: card ? "rate_card" : "published_rate", usdMinor: toUsdMinor(p.totalMinor, cur, f), sourceMinor: p.totalMinor, sourceCurrency: cur, fx: f, basis: `${p.seasons.map((s) => `${s.nights} × ${s.season} at ${fmtMoney(s.amountMinor, cur)}`).join(", ")}; ${chosen}, ${party}`, provenance: card ? `Contracted card ${card.version}` : product.rateSource, fetchedAt: null };
+    const estimate = Boolean(card) && p.seasons.some((s) => isEstimateSeason(s.season));
+    return { source: card ? "rate_card" : "published_rate", ...(estimate ? { estimate } : {}), usdMinor: toUsdMinor(p.totalMinor, cur, f), sourceMinor: p.totalMinor, sourceCurrency: cur, fx: f, basis: `${p.seasons.map((s) => `${s.nights} × ${seasonLabel(s.season)} at ${fmtMoney(s.amountMinor, cur)}`).join(", ")}; ${chosen}, ${party}`, provenance: card ? `Contracted card ${card.version}` : product.rateSource, fetchedAt: null };
 }
 
 type Engine = { state: "idle" } | { state: "loading" } | { state: "error"; message: string } | { state: "ok"; key: string; nights: number; fetchedAt: string; plans: RatePlan[] };
@@ -150,7 +152,7 @@ export function StayConfigurator({ product, today, cardState, fx, initial, submi
           <Label text={product.unitWord}><select className={field} value={chosen} onChange={(e) => setRoom(e.target.value)}>{rooms.map((r) => <option key={r}>{r}</option>)}</select></Label>
           {unit && !card && <p className="mt-2 text-[14px]">{unit.facts}{unit.note ? ` · ${unit.note}` : ""}</p>}
           <p className="mt-2 text-[14.5px] ledger-muted">
-            {card ? `Priced night by night from contracted card ${card.version}, in ${card.currency}, shown in US dollars first.` : `Priced night by night from ${product.rateSource}, in ${product.currency}${fx[product.currency] || product.currency === "USD" ? ", shown in US dollars first" : `. No ${product.currency} conversion rate is on file, so the figure stays in ${product.currency}`}. The house confirms the rate before anything is charged.`}
+            {card ? `Priced night by night from contracted card ${card.version}, in ${card.currency}${card.currency === "USD" ? "" : ", shown in US dollars first"}.${card.rules.some((x) => isEstimateSeason(x.season)) ? " These rates are estimates while the new rates are finalised: the house confirms the exact price before anything is held or charged." : ""}` : `Priced night by night from ${product.rateSource}, in ${product.currency}${fx[product.currency] || product.currency === "USD" ? ", shown in US dollars first" : `. No ${product.currency} conversion rate is on file, so the figure stays in ${product.currency}`}. The house confirms the rate before anything is charged.`}
           </p>
         </div>
       )}
@@ -158,7 +160,7 @@ export function StayConfigurator({ product, today, cardState, fx, initial, submi
       {p && (
         <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1.5" aria-live="polite">
           <PriceChip price={p} />
-          {p.usdMinor != null && <span className="ledger-display text-[1.5rem]">{fmtMoney(p.usdMinor, "USD")}</span>}
+          {p.usdMinor != null && <span className="ledger-display text-[1.5rem]">{p.estimate ? "est. " : ""}{fmtMoney(p.usdMinor, "USD")}</span>}
           {p.usdMinor == null && p.sourceMinor != null && p.sourceCurrency && <span className="ledger-display text-[1.5rem]">{fmtMoney(p.sourceMinor, p.sourceCurrency)}</span>}
           {p.usdMinor != null && p.sourceCurrency && p.sourceCurrency !== "USD" && p.sourceMinor != null && <span className="text-[13.5px] ledger-muted">{p.source === "rate_card" ? "contracted" : "published"} at {fmtMoney(p.sourceMinor, p.sourceCurrency)}</span>}
           {p.source === "none" && <span className="text-[14px] ledger-muted">{p.provenance}</span>}

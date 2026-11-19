@@ -27,6 +27,8 @@ export type Price = {
   basis: string;
   provenance: string;
   fetchedAt: string | null;
+  /** A card figure the house has marked as an estimate ("to be confirmed"). Shown, never counted as verified. */
+  estimate?: boolean;
 };
 
 export type Fx = { rate: number; date: string; source: string };
@@ -52,9 +54,11 @@ export type Line = {
 };
 
 const PRICED: PriceSource[] = ["albie_live", "rate_card", "published_rate"];
-export const verified = (p: Price) => PRICED.includes(p.source) && p.usdMinor != null && p.usdMinor > 0;
+export const verified = (p: Price) => PRICED.includes(p.source) && !p.estimate && p.usdMinor != null && p.usdMinor > 0;
+/** A figure worth showing that is not this booking's price: a published from fare, or a card rate still marked as an estimate. */
+export const indicative = (p: Price) => (p.source === "published_from" || (PRICED.includes(p.source) && Boolean(p.estimate))) && p.usdMinor != null && p.usdMinor > 0;
 /** Priced by its source in the supplier's currency, with no conversion rate on file to show it in US dollars. */
-export const pricedAbroad = (p: Price) => PRICED.includes(p.source) && p.usdMinor == null && p.sourceMinor != null && p.sourceMinor > 0 && Boolean(p.sourceCurrency);
+export const pricedAbroad = (p: Price) => PRICED.includes(p.source) && !p.estimate && p.usdMinor == null && p.sourceMinor != null && p.sourceMinor > 0 && Boolean(p.sourceCurrency);
 
 export const nightsBetween = (a: string, b: string) => Math.round((Date.parse(`${b}T00:00:00Z`) - Date.parse(`${a}T00:00:00Z`)) / 86400000);
 export const isDate = (s: string) => /^\d{4}-\d{2}-\d{2}$/.test(s) && !Number.isNaN(Date.parse(`${s}T00:00:00Z`));
@@ -106,13 +110,13 @@ export function priceNights(rules: SeasonRule[], roomKey: string, arrival: strin
 
 export type Totals = { verifiedMinor: number; verifiedCount: number; fromMinor: number; fromCount: number; awaitingCount: number; abroad: { currency: string; minor: number }[] };
 
-/** Piles that are never mixed: priced in US dollars, priced in another currency with no rate on file, published "from" figures, and lines with no figure. */
+/** Piles that are never mixed: priced in US dollars, priced in another currency with no rate on file, indicative figures (from fares and estimated rates), and lines with no figure. */
 export function cartTotals(lines: Line[]): Totals {
   const t: Totals = { verifiedMinor: 0, verifiedCount: 0, fromMinor: 0, fromCount: 0, awaitingCount: 0, abroad: [] };
   for (const l of lines) {
     if (verified(l.price)) { t.verifiedMinor += l.price.usdMinor as number; t.verifiedCount += 1; }
     else if (pricedAbroad(l.price)) { const c = l.price.sourceCurrency as string, a = t.abroad.find((x) => x.currency === c); if (a) a.minor += l.price.sourceMinor as number; else t.abroad.push({ currency: c, minor: l.price.sourceMinor as number }); }
-    else if (l.price.source === "published_from" && l.price.usdMinor) { t.fromMinor += l.price.usdMinor; t.fromCount += 1; }
+    else if (indicative(l.price)) { t.fromMinor += l.price.usdMinor as number; t.fromCount += 1; }
     else t.awaitingCount += 1;
   }
   return t;
@@ -134,6 +138,19 @@ export type Policy = {
   cancellation: string;
   /** A term worth telling the traveler in plain words, where the supplier publishes one. */
   travelerNote?: string;
+  /**
+   * How a booking is confirmed, which is a separate question from where its price comes from.
+   * "instant": the booking engine confirms as it takes payment (ALBIE by TAG).
+   * "enquire": the house checks the dates with the supplier by hand, so nothing is paid until the house has confirmed.
+   */
+  confirm: { mode: "instant" | "enquire"; basis: string };
+};
+
+/** The words for the enquiry route, in one place (James, 18 Nov 2026: the traveler is told to enquire and the team confirms). */
+export const ENQUIRE = {
+  action: "Enquire to Confirm",
+  line: "Please enquire, and the team at James Wild & Co will confirm your booking.",
+  long: (supplier: string) => `Please enquire. The team at James Wild & Co checks your dates with ${supplier} and confirms your booking. Nothing is paid until they do.`,
 };
 
 export type Option = { method: Method; available: boolean; amountMinor: number | null; reason: string };
@@ -141,14 +158,17 @@ export type Option = { method: Method; available: boolean; amountMinor: number |
 export function paymentOptions(line: Line, policy: Policy): Option[] {
   const ok = verified(line.price);
   const amount = ok ? (line.price.usdMinor as number) : null;
-  const noFigure = line.price.source === "published_from" ? "The figure on file is a published from fare, not this booking's fare." : "No verified price is on file for this line.";
+  const noFigure = line.price.estimate ? "The rate on file is an estimate, to be confirmed by the house." : line.price.source === "published_from" ? "The figure on file is a published from fare, not this booking's fare." : "No verified price is on file for this line.";
   const dep = policy.deposit;
   const depAmount = ok && dep ? (dep.fixedMinor ?? Math.round(((amount as number) * (dep.percentBp ?? 0)) / 10000)) : null;
+  // Where the house confirms by hand, no charge opens before that confirmation, whatever the price source.
+  const held = policy.confirm.mode === "enquire";
+  const wait = `${line.supplier} is confirmed by hand, so nothing is paid until the house has confirmed your dates.`;
   return [
-    { method: "pay_now", available: ok && policy.payNow.supported, amountMinor: ok && policy.payNow.supported ? amount : null, reason: !ok ? noFigure : policy.payNow.basis },
-    { method: "deposit_now", available: Boolean(ok && dep && depAmount && depAmount > 0), amountMinor: depAmount && depAmount > 0 ? depAmount : null, reason: !dep ? policy.depositNote : !ok ? noFigure : dep.basis },
+    { method: "pay_now", available: ok && policy.payNow.supported && !held, amountMinor: ok && policy.payNow.supported && !held ? amount : null, reason: !ok ? noFigure : policy.payNow.supported && held ? wait : policy.payNow.basis },
+    { method: "deposit_now", available: Boolean(ok && dep && depAmount && depAmount > 0 && !held), amountMinor: depAmount && depAmount > 0 && !held ? depAmount : null, reason: !dep ? policy.depositNote : !ok ? `${dep.basis} ${noFigure}` : held ? `${dep.basis} ${wait}` : dep.basis },
     { method: "pay_at_property", available: policy.payAtProperty.supported, amountMinor: null, reason: policy.payAtProperty.basis },
-    { method: "advisor_assisted", available: true, amountMinor: null, reason: "Your advisor confirms the rate and the supplier's terms with you, then takes payment by the house's approved method." },
+    { method: "advisor_assisted", available: true, amountMinor: null, reason: held ? ENQUIRE.long(line.supplier) : "Your advisor confirms the rate and the supplier's terms with you, then takes payment by the house's approved method." },
   ];
 }
 
@@ -158,18 +178,33 @@ export type Readiness = "ready" | "priced" | "from" | "quote";
 export const READINESS_ORDER: Readiness[] = ["ready", "priced", "from", "quote"];
 export const READINESS: Record<Readiness, { label: string; note: string }> = {
   ready: { label: "Ready to book", note: "A price and a way to pay are both on file. You can complete these today." },
-  priced: { label: "Priced · advisor completes", note: "The price is on file. The supplier's payment terms are not, so your advisor completes the booking with you." },
-  from: { label: "From fare · to confirm", note: "A published from fare only. The supplier confirms the fare for your cabin before anything is paid." },
+  priced: { label: "Priced · please enquire", note: "The price is on file. Please enquire, and the team at James Wild & Co checks your dates and confirms your booking before anything is paid." },
+  from: { label: "Indicative price · please enquire", note: "A from fare or an estimated rate, not a final price. Please enquire, and the team at James Wild & Co confirms the price and the space." },
   quote: { label: "Quoted by the house", note: "No price is on file yet. The house prices these against your dates and writes to you." },
 };
 
-/** Ready only when the price is verified AND the supplier's own policy opens a way to pay beyond the advisor. */
+/** Ready only when the price is verified, the booking confirms on the engine, AND the supplier's own policy opens a way to pay beyond the advisor. */
 export function readiness(line: Line, policy: Policy): Readiness {
   if (line.kind === "experience") return "quote";
   if (verified(line.price) && paymentOptions(line, policy).some((o) => o.available && o.method !== "advisor_assisted")) return "ready";
   if (verified(line.price) || pricedAbroad(line.price)) return "priced";
-  if (line.price.source === "published_from" && line.price.usdMinor) return "from";
+  if (indicative(line.price)) return "from";
   return "quote";
+}
+
+// ---------- Dates that overlap across the journey
+
+export type Clash = { a: string; b: string; from: string; to: string };
+
+/** Pairs of chapters whose nights overlap. Leaving one on the day the next begins is not a clash. Experiences carry no dates. */
+export function dateClashes(lines: Line[]): Clash[] {
+  const xs = lines.filter((l) => l.kind !== "experience" && isDate(l.start) && isDate(l.end) && l.end > l.start);
+  const out: Clash[] = [];
+  for (let i = 0; i < xs.length; i++) for (let j = i + 1; j < xs.length; j++) {
+    const a = xs[i], b = xs[j];
+    if (a.start < b.end && b.start < a.end) out.push({ a: a.id, b: b.id, from: a.start > b.start ? a.start : b.start, to: a.end < b.end ? a.end : b.end });
+  }
+  return out;
 }
 
 // ---------- The simulated payment provider. No network, no keys, no card data.
@@ -227,14 +262,14 @@ export function simulatePayment(r: SimRequest): SimResponse | { error: string } 
 
 export type Statuses = { request: { label: string; note: string }; payment: { label: string; note: string }; supplier: { label: string; note: string } };
 
-export function lineStatuses(line: Line, pay: SimResponse | null): Statuses {
+export function lineStatuses(line: Line, pay: SimResponse | null, enquire = false): Statuses {
   const payment = !pay ? { label: "No payment", note: "No payment was started for this line." }
     : pay.status === "succeeded" ? { label: `Payment received (simulated) · ${fmtMoney(pay.amountMinor, pay.currency)}`, note: `${METHOD_NAMES[pay.method]} · reference ${pay.reference}. A payment is not a confirmed booking.` }
     : pay.status === "declined" ? { label: "Payment declined (simulated)", note: `Reference ${pay.reference}. Nothing was charged.` }
     : pay.status === "no_charge_due_at_property" ? { label: "No payment taken · due at the property", note: `Reference ${pay.reference}.` }
     : { label: "No payment taken · advisor to follow", note: `Reference ${pay.reference}.` };
   return {
-    request: { label: "Booking request recorded (simulated)", note: verified(line.price) ? "Requested at the price shown, which the house re-checks before sending to the supplier." : "Requested without a verified price. The house prices it before anything is sent." },
+    request: { label: enquire ? "Enquiry recorded (simulated)" : "Booking request recorded (simulated)", note: enquire ? `The team at James Wild & Co checks your dates with ${line.supplier} and writes to you. Nothing is booked until they confirm.` : verified(line.price) ? "Requested at the price shown, which the house re-checks before sending to the supplier." : "Requested without a verified price. The house prices it before anything is sent." },
     payment,
     supplier: { label: "Supplier confirmation pending", note: `${line.supplier} has not been asked and has not confirmed. No space is held.` },
   };
@@ -266,7 +301,7 @@ export function validLead(l: Lead): string | null {
 }
 
 /** The records a real run would write through the existing Travel Ledger tables. Built for review; never written in simulation. */
-export function ledgerHandoff(a: { cartId: string; lines: Line[]; lead: Lead; party: Traveler[]; advisor: { slug: string; ledgerId: string; name: string }; externalAdvisor: string; payments: Record<string, SimResponse | null> }) {
+export function ledgerHandoff(a: { cartId: string; lines: Line[]; lead: Lead; party: Traveler[]; advisor: { slug: string; ledgerId: string; name: string }; externalAdvisor: string; payments: Record<string, SimResponse | null>; confirm?: Record<string, "instant" | "enquire"> }) {
   return {
     written: false,
     mode: "simulation",
@@ -277,11 +312,43 @@ export function ledgerHandoff(a: { cartId: string; lines: Line[]; lead: Lead; pa
       table: l.kind === "experience" ? "folio_items" : l.kind === "journey" ? "advisor_requests, then quotes" : "quotes, then bookings",
       ledgerId: l.ledgerId, productKey: l.productKey, unitKey: l.unitKey || null, voyage: l.voyage?.slug ?? null, departureCode: l.voyage?.code ?? null,
       start: l.start || null, end: l.end || null, adults: l.adults,
-      price: { source: l.price.source, verified: verified(l.price), usdMinor: l.price.usdMinor, sourceMinor: l.price.sourceMinor, sourceCurrency: l.price.sourceCurrency, fx: l.price.fx, provenance: l.price.provenance, fetchedAt: l.price.fetchedAt },
+      price: { source: l.price.source, verified: verified(l.price), estimate: Boolean(l.price.estimate), usdMinor: l.price.usdMinor, sourceMinor: l.price.sourceMinor, sourceCurrency: l.price.sourceCurrency, fx: l.price.fx, provenance: l.price.provenance, fetchedAt: l.price.fetchedAt },
       availability: "on_request",
-      statuses: lineStatuses(l, a.payments[l.id] ?? null),
+      confirmation: a.confirm?.[l.id] ?? "enquire",
+      statuses: lineStatuses(l, a.payments[l.id] ?? null, (a.confirm?.[l.id] ?? "enquire") === "enquire"),
       payment: a.payments[l.id] ? { table: "payments", provider: "simulation", reference: a.payments[l.id]!.reference, idempotencyKey: a.payments[l.id]!.idempotencyKey, status: a.payments[l.id]!.status, amountMinor: a.payments[l.id]!.amountMinor } : null,
       commission: commissionHandoff(l, a.advisor.ledgerId),
     })),
   };
+}
+
+// ---------- A journey as a link: what was chosen, never what it costs and never who is traveling
+
+export type Pick = { productKey: string; unit: string; start: string; end: string; adults: number; experiences: string[] };
+const B64 = { to: (s: string) => btoa(String.fromCharCode(...new TextEncoder().encode(s))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""), from: (s: string) => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0))) };
+
+/** The choices in a cart, for a link an advisor sends a client. No price travels in the link: every price is asked again from its source when it opens. */
+export function encodeJourney(lines: Line[]): string {
+  const picks = lines.filter((l) => l.kind !== "experience").map((l) => [l.productKey, l.unit, l.start, l.end, l.adults, lines.filter((x) => x.parentId === l.id).map((x) => x.name)]);
+  return B64.to(JSON.stringify({ v: 1, l: picks }));
+}
+
+/** Null for anything malformed, oversized or card-shaped. The caller still checks each pick against the catalogue. */
+export function decodeJourney(code: string): Pick[] | null {
+  if (!code || code.length > 6000 || !/^[A-Za-z0-9_-]+$/.test(code)) return null;
+  try {
+    const j = JSON.parse(B64.from(code)) as { v?: unknown; l?: unknown };
+    if (j.v !== 1 || !Array.isArray(j.l) || j.l.length < 1 || j.l.length > 12 || hasCardLikeData(j.l)) return null;
+    const str = (x: unknown, max: number) => typeof x === "string" && x.length <= max;
+    const out: Pick[] = [];
+    for (const r of j.l as unknown[]) {
+      if (!Array.isArray(r) || r.length !== 6) return null;
+      const [productKey, unit, start, end, adults, exp] = r as unknown[];
+      if (!str(productKey, 160) || !/^[a-z0-9:-]+$/.test(productKey as string) || !str(unit, 120) || !isDate(start as string) || !isDate(end as string) || (end as string) <= (start as string)) return null;
+      if (!Number.isInteger(adults) || (adults as number) < 1 || (adults as number) > 20) return null;
+      if (!Array.isArray(exp) || exp.length > 12 || !exp.every((e) => str(e, 160))) return null;
+      out.push({ productKey: productKey as string, unit: unit as string, start: start as string, end: end as string, adults: adults as number, experiences: exp as string[] });
+    }
+    return out;
+  } catch { return null; }
 }

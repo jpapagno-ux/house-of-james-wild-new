@@ -41,9 +41,32 @@ function only(body: Record<string, unknown>, keys: string[]): Err | null {
   return extra.length ? fail("invalid_input", `Unexpected field: ${extra[0]}`) : null;
 }
 
-/** POST /api/v1/me/favorites — { property: "<slug>" } */
-export function parseFavorite(body: unknown): Result<{ slug: string }> {
+// Everything else a traveler can save (James, 18 Nov 2026): a ship, a voyage, a safari camp page or an
+// overland route. The kind is read from the page's own path, never taken from the client.
+export type FavoriteItemType = "ship" | "voyage" | "safari" | "route";
+export type FavoriteItem = { type: FavoriteItemType; path: string; title: string };
+const ITEM_PATH = /^\/(voyages|safaris|overland)(\/[a-z0-9-]+){2}$/;
+
+/** "/voyages/ships/star-breeze" -> "ship"; null for anything that is not a savable Ledger page. */
+export function favoriteItemType(path: unknown): FavoriteItemType | null {
+  if (typeof path !== "string" || path.length > 200 || !ITEM_PATH.test(path)) return null;
+  if (path.startsWith("/voyages/ships/")) return "ship";
+  if (path.startsWith("/voyages/")) return "voyage";
+  return path.startsWith("/safaris/") ? "safari" : "route";
+}
+
+/** POST /api/v1/me/favorites — { property: "<slug>" } for a stay, or { item: { path, title } } for a ship, voyage, safari or route */
+export function parseFavorite(body: unknown): Result<{ slug: string } | { item: FavoriteItem }> {
   if (!isObj(body)) return fail("invalid_input", "Body must be a JSON object");
+  if ("item" in body) {
+    const badItem = only(body, ["item"]); if (badItem) return badItem;
+    if (!isObj(body.item)) return fail("invalid_input", "item must be an object");
+    const badKeys = only(body.item, ["path", "title"]); if (badKeys) return badKeys;
+    const type = favoriteItemType(body.item.path), title = text(body.item.title, 160);
+    if (!type) return fail("invalid_input", "item.path must be a ship, voyage, safari or route page");
+    if (!title) return fail("invalid_input", "item.title is required");
+    return { ok: true, value: { item: { type, path: body.item.path as string, title } } };
+  }
   const bad = only(body, ["property"]); if (bad) return bad;
   const slug = typeof body.property === "string" ? body.property.toLowerCase() : "";
   return SLUG.test(slug) ? { ok: true, value: { slug } } : fail("invalid_input", "property must be a stay slug");
@@ -131,7 +154,7 @@ export function parseProfile(body: unknown): Result<Record<string, string | null
 /** Only same-site return paths after sign-in; anything else goes to /account. */
 export function safeNext(next: string | null | undefined): string {
   if (!next || !next.startsWith("/") || next.startsWith("//") || next.includes("\\")) return "/account";
-  return /^\/(account|stays)(\/[a-z0-9\-/]*)?(\?[\w=&%-]*)?$/i.test(next) ? next : "/account";
+  return /^\/(account|stays|voyages|safaris|overland)(\/[a-z0-9\-/]*)?(\?[\w=&%-]*)?$/i.test(next) ? next : "/account";
 }
 
 export type SearchInput = { slug: string; arrival: string; departure: string; adults: number; childAges: number[]; promoCode: string | null; room: string | null; plan: string | null };

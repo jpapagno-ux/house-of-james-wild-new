@@ -41,6 +41,7 @@ import { VOLUME_STYLES } from "@/lib/volumes";
 import GuideOffer from "@/components/guides/GuideOffer";
 import { guidesFor } from "@/lib/content/field-guides";
 import NoDates from "@/components/ships/NoDates";
+import SaveToFolio from "@/components/booking-live/SaveToFolio";
 
 // The Journey (overland) and Voyage template, built from James's route files.
 // One component, two section orders from the wireframe:
@@ -610,7 +611,7 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
         {/* The first section follows the breadcrumb closely, without its rule: the full section gap there read as an
             empty band between the breadcrumb and The Vessel (hero arrows fix, 3 Nov 2026). */}
         <div className="max-w-ledger mx-auto px-5 md:px-10 pb-16 [&>div:first-child+section]:!mt-8 md:[&>div:first-child+section]:!mt-10 [&>div:first-child+section]:!border-t-0 [&>div:first-child+section]:!pt-0">
-          <div className="pt-6"><Breadcrumbs trail={crumbs} /></div>
+          <div className="pt-6"><Breadcrumbs trail={crumbs} /><SaveToFolio name={T.h1} item={{ path: T.seo.path }} /></div>
           {order}
           <SessionsFor sessions={sessionsFor(T.seo.path)} name={T.h1} />
           <FaqBlock faqs={T.faqs.map(([q, a]) => ({ q, a }))} title={voyage ? "Questions About This Voyage" : "Questions About This Route"} />

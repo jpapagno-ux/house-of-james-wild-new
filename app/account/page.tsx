@@ -27,7 +27,7 @@ export default async function AccountHome() {
           <p className="text-[13px] ledger-muted">{booked ?? 0} booked · {open} with the house</p>
         </Link>
         <Link href="/account/favorites" className="border ledger-rule p-6 hover:bg-paper-card block">
-          <p className="ledger-eyebrow">Saved stays</p>
+          <p className="ledger-eyebrow">Saved</p>
           <p className="ledger-display text-[2.4rem] mt-2">{saved ?? 0}</p>
         </Link>
         <Link href="/account/folios" className="border ledger-rule p-6 hover:bg-paper-card block">
@@ -39,6 +39,9 @@ export default async function AccountHome() {
           <p className="mt-2 text-[16px]">Talk through a journey with the house.</p>
         </Link>
       </div>
+      {(saved ?? 0) === 0 && (folios?.length ?? 0) === 0 && (
+        <p className="mt-8 border-l-2 border-[#8B2525] bg-mist px-5 py-4 text-[15.5px] max-w-2xl">New here? <Link href="/account/welcome" className="underline underline-offset-4 hover:text-house">See how your Folio works</Link>: what to save, how a journey comes together, and what happens when you ask the house.</p>
+      )}
       {folios && folios.length > 0 && (
         <div className="mt-10">
           <h2 className="ledger-eyebrow">Latest journeys</h2>

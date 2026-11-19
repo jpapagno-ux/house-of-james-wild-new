@@ -37,6 +37,7 @@ import { readRoute } from "@/lib/content/ships/routes";
 import { absoluteUrl } from "@/lib/seo";
 import { Band, tonesStyle, type Tones } from "@/components/opening/Tones";
 import { FieldIcon } from "@/components/ledger/FieldIcon";
+import SaveToFolio from "@/components/booking-live/SaveToFolio";
 
 // One landing page per Antarctica21 itinerary (/voyages/polar/<slug>), on the ship template's
 // pieces: hero and glance, the five-stop section nav, the answer first, the day by day with the
@@ -149,7 +150,7 @@ export default function PolarVoyagePage({ v, opening, surface, tones }: { v: Pol
           glance={<ShipGlance label={priceLabel} price={price} basis={basis} facts={[["Length", `${nightsWords(v)}, ${daysWords(v)}`], ["Route", t(v.route)], ["Ships", v.ships.map(shipName).join(" or ")], ["When", monthsWords(v)]]} cta={{ label: "Plan with James", href: plan }} />} />}
         <ShipNav items={nav} cta="Plan with James" ctaHref={plan} house />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
-          <div className="pt-4"><Breadcrumbs trail={crumbs} touch /></div>
+          <div className="pt-4"><Breadcrumbs trail={crumbs} touch /><SaveToFolio name={v.name} item={{ path }} /></div>
           {primary && <div className="mt-4"><PathwayChips primary={primary} secondary={secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>}
           <Overview answer={t(v.answer)} facts={facts} paragraphs={v.overview.map(t)} volume="voyages" />
           {opening ? (

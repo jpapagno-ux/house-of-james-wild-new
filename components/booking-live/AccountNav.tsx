@@ -8,7 +8,7 @@ import { FLAGS } from "@/lib/booking-live/flags";
 const TABS = [
   { href: "/account", label: "My Folio" },
   { href: "/account/trips", label: "Trips" },
-  { href: "/account/favorites", label: "Saved stays" },
+  { href: "/account/favorites", label: "Saved" },
   { href: "/account/folios", label: "Journeys" },
   { href: "/account/settings", label: "Account & privacy" },
 ];

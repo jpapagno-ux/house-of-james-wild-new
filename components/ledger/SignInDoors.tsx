@@ -24,13 +24,13 @@ const DOORS: Door[] = [
   { key: "partner", eyebrow: "Partner", title: "Partner Desk", line: "Your properties as the house sells them: rooms, rates, photographs and the facts, written by you, approved by James.", open: PARTNER_DESK, href: PARTNER_DESK ? "/partner/login" : "/partners", cta: PARTNER_DESK ? "Sign in" : "Partner with the house", soon: "The Partner Desk is in review with the first partners." },
 ];
 
-// Three trails, three watercolours (James, 19 Nov 2026): the beach trail for travellers, the mountain trail for
-// advisors, the city stroll for partners.
+// Three trails, three watercolours (James, 19 Nov 2026): a beach path for travellers, a mountain path for advisors,
+// an old-town lane for partners. The scene names are never printed (James: they only describe the images).
 const WC = "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_400,h_400,q_auto:good,f_auto/jwco/brand/trails";
 const TRAIL = [
-  { name: "The Beach Trail", art: `${WC}/beach-trail`, line: "Your Folio: the places worth returning to, gathered into journeys and shared with the people you travel with." },
-  { name: "The Mountain Trail", art: `${WC}/mountain-trail`, line: "The Desk: your travellers, the journeys you carry and your Bearing, with the Ledger open beside you." },
-  { name: "The City Stroll", art: `${WC}/city-stroll`, line: "The Partner Desk: your properties as the house sells them, written by you and approved by James." },
+  { art: `${WC}/beach-trail`, line: "Your Folio: the places worth returning to, gathered into journeys and shared with the people you travel with." },
+  { art: `${WC}/mountain-trail`, line: "The Desk: your travellers, the journeys you carry and your Bearing, with the Ledger open beside you." },
+  { art: `${WC}/city-stroll`, line: "The Partner Desk: your properties as the house sells them, written by you and approved by James." },
 ];
 
 export default function SignInDoors({ light = false, className = "" }: { light?: boolean; className?: string }) {
@@ -88,7 +88,7 @@ export default function SignInDoors({ light = false, className = "" }: { light?:
                         <Image src={TRAIL[i].art} alt="" aria-hidden="true" fill sizes="(min-width: 768px) 192px, 80px" className="object-cover" />
                       </span>
                       <span className="flex-1 min-w-0 md:mt-5 flex flex-col md:items-center">
-                        <span className="font-mono text-[11px] tracking-[0.16em] text-[#6B635A]">TRAIL 0{i + 1} · {TRAIL[i].name.toUpperCase()}</span>
+                        <span className="font-mono text-[11px] tracking-[0.16em] text-[#6B635A]">TRAIL 0{i + 1}</span>
                         <span className="ledger-display text-[1.45rem] md:text-[1.75rem] leading-tight mt-1">{d.title}</span>
                         <span className="ledger-eyebrow !text-[10.5px] !text-[#8B2525] mt-1">For {d.eyebrow === "Traveler" ? "travellers" : d.eyebrow === "Advisor" ? "advisors" : "partners"}</span>
                         <span className="mt-2 text-[14px] md:text-[14.5px] leading-relaxed text-[#6B635A] md:max-w-[30ch]">{TRAIL[i].line}</span>

@@ -75,6 +75,7 @@ export default function TimelessCollection({ rows, path = TV_PATH, on = new Date
   const faqs = [
     { q: "What is Timeless Voyages?", a: "A collection inside the Voyages volume of James Wild & Co. Ships are added one at a time, and each is filed from her operator's own site and media: suites, sailings, fares and what is included." },
     ...(all.length ? [{ q: "Which ships are in Timeless Voyages?", a: `${named(all)}.` }] : []),
+    { q: "How is Timeless Voyages different from The Exceptional Few?", a: "The Exceptional Few is the house's numbered collection of stays. Timeless Voyages is the collection for ships. A ship is never in both, which is why Hermes and Amandira are here." },
     { q: "What is a Signature Edition?", a: "A ship in the collection with a fuller page: her signature suites, her numbers at a glance, and house stays for before and after the voyage." },
     { q: "What is a Maiden Voyage?", a: "A ship whose first season is still ahead. She is listed with her launch date and joins the main collection once she is sailing." },
     { q: "How are fares shown?", a: "As each operator publishes them, per person on most ships and per suite on some. The basis is stated on every ship page and nothing is converted." },

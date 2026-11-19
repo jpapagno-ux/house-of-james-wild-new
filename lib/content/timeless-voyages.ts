@@ -2,8 +2,8 @@ import DATA from "./timeless-voyages.json";
 
 // Timeless Voyages: the house's premium ships collection inside Voyages (James, 13 Nov 2026). Membership lives in
 // Airtable (Editorial Layer, table "Timeless Voyages") and arrives here through scripts/export-editorial-layer.mjs,
-// the same path as The Exceptional Few. Only published rows with approved image rights are exported. A ship can be
-// in both collections; The Exceptional Few entrance always wins on her page.
+// the same path as The Exceptional Few. Only published rows with approved image rights are exported. Ships live here
+// and only here (James, 19 Nov 2026): The Exceptional Few is stays only, so Hermes and Amandira left it for this collection.
 export type TimelessVoyage = {
   id: string; vesselSlug: string; vesselName: string | null; operator: string | null; collectionNumber: number; ledgerId: string | null;
   sailingStatus: "sailing" | "launching"; launchDate: string | null; signatureEdition: boolean; heroLine: string | null; whyItBelongs: string[];

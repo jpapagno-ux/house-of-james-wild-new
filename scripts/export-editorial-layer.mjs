@@ -47,6 +47,13 @@ const ef = (await table("Exceptional Few")).map((f) => {
     selectionDate: f.selection_date ?? null, reviewDate: f.review_date ?? null, publicationStatus: f.publication_status ?? "draft", paletteKey: f.palette_key ?? "default",
   };
 }).sort((a, b) => a.collectionNumber - b.collectionNumber);
+// Stays only (James, 19 Nov 2026): The Exceptional Few is for stays; ships are Timeless Voyages. A vessel row may stay in
+// Airtable as history (withdrawn), but it must never be live. Hermes (No. 002) and Amandira (No. 003) left on that day and
+// their numbers are retired: no stay row may take 2 or 3.
+const liveVessels = ef.filter((e) => e.entityType === "vessel" && e.publicationStatus === "published");
+if (liveVessels.length) { console.error(`The Exceptional Few is stays only. Withdraw these vessel rows (ships belong in Timeless Voyages): ${liveVessels.map((e) => `${e.id} (${e.vesselSlug})`).join(", ")}`); process.exit(1); }
+const reused = ef.filter((e) => e.entityType !== "vessel" && [2, 3].includes(e.collectionNumber));
+if (reused.length) { console.error(`Collection numbers 002 and 003 are retired and cannot be given to a stay: ${reused.map((e) => e.id).join(", ")}`); process.exit(1); }
 
 // Tripwire (Stage 3, H): every stay_id must be a real Ledger ID that exists in the Stay export.
 const LEDGER_ID = /^STY-\d{4}-\d{6}$/;

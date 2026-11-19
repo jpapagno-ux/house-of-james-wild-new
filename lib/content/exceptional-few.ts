@@ -36,14 +36,18 @@ export type PublicationStatus = "draft" | "reviewed" | "approved" | "published" 
 /** What production renders. A noindex preview may pass a wider set explicitly. */
 export const LIVE: PublicationStatus[] = ["published"];
 
-export const EXCEPTIONAL_FEW: ExceptionalFew[] = (data.records as ExceptionalFew[]);
+// Stays only (James, 19 Nov 2026: "that is for hotels only"). Ships belong to Timeless Voyages, so a vessel row is dropped
+// here whatever its status in the export, and no ship can wear the designation. Hermes (No. 002) and Amandira (No. 003)
+// moved to Timeless Voyages; their two numbers are retired and never given again (tests/exceptional-few-stays-only.test.ts).
+export const RETIRED_NUMBERS = [2, 3];
+export const EXCEPTIONAL_FEW: ExceptionalFew[] = (data.records as ExceptionalFew[]).filter((e) => (e.entityType ?? "stay") === "stay");
 
 /** The designation for a Stay, by its canonical Ledger ID. Only a designated row in an allowed publication status counts; production allows "published" only. */
 export function exceptionalFewFor(stayId: string | null | undefined, allow: PublicationStatus[] = LIVE): ExceptionalFew | null {
   if (!stayId) return null;
   return EXCEPTIONAL_FEW.find((e) => (e.entityType ?? "stay") === "stay" && e.stayId === stayId && e.designationStatus === "designated" && allow.includes(e.publicationStatus)) ?? null;
 }
-/** The designation for a vessel, by its ships registry slug. Same rule: designated, and "published" only in production. */
+/** Always null since 19 Nov 2026: the collection is stays only, and vessel rows never load. Kept so ship pages need no change if that ever reverses. */
 export function exceptionalFewForVessel(slug: string | null | undefined, allow: PublicationStatus[] = LIVE): ExceptionalFew | null {
   if (!slug) return null;
   return EXCEPTIONAL_FEW.find((e) => e.entityType === "vessel" && e.vesselSlug === slug && e.designationStatus === "designated" && allow.includes(e.publicationStatus)) ?? null;
@@ -53,7 +57,7 @@ export const efEntityId = (e: ExceptionalFew) => (e.entityType === "vessel" ? `s
 /** Where a designation lives on the site. */
 export const efHref = (e: ExceptionalFew) => (e.entityType === "vessel" ? `/voyages/ships/${e.vesselSlug}` : `/stays/${e.staySlug}`);
 export const efName = (e: ExceptionalFew) => (e.entityType === "vessel" ? e.vesselName : e.stayName) ?? "";
-/** Every live designation, stays and vessels, in collection order (for the future landing page and the Continue rail). */
+/** Every live designation (stays only), in collection order (for the future landing page and the Continue rail). */
 export const EXCEPTIONAL_FEW_LIVE = EXCEPTIONAL_FEW.filter((e) => e.designationStatus === "designated" && LIVE.includes(e.publicationStatus)).sort((a, b) => a.collectionNumber - b.collectionNumber);
 
 export const collectionNo = (n: number) => `No. ${String(n).padStart(3, "0")}`;

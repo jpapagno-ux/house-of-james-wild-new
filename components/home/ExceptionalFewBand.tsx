@@ -17,7 +17,7 @@ export default function ExceptionalFewBand() {
         <div className="max-w-2xl">
           <p className="ledger-eyebrow text-house">The Exceptional Few&trade; · Across every volume</p>
           <h2 id="ef-band-h" className="ledger-display text-[1.9rem] md:text-[2.6rem] leading-tight mt-2">{WORD[n] ?? n} Places With No Second Version</h2>
-          <p className="mt-3 text-[17px] leading-relaxed ledger-muted">Stays and ships James has chosen, numbered and stamped, each still filed in its own volume. If you only travel once this year, start here.</p>
+          <p className="mt-3 text-[17px] leading-relaxed ledger-muted">Stays James has chosen, numbered and stamped, each still filed in its own volume. If you only travel once this year, start here.</p>
         </div>
         <div className="hidden md:block shrink-0" aria-hidden="true"><EFStamp no={EF_CARDS[0].no} size={210} rotate={-6} /></div>
       </div>

@@ -1,0 +1,327 @@
+{
+ "id": "wind-surf-rome-to-athens-7n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Enchanting Greece and the Amalfi Coast, 7 nights aboard Wind Surf",
+ "subtitle": "7 nights · Rome to Athens · Wind Surf",
+ "days": {
+  "1": "Embark in Civitavecchia, for Rome",
+  "2": "Sorrento, overnight",
+  "3": "Sorrento",
+  "4": "Messina, for Taormina",
+  "5": "At sea",
+  "6": "Gythion",
+  "7": "Monemvasia",
+  "8": "Disembark in Athens"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Civitavecchia",
+   "lat": 42.094,
+   "lng": 11.787,
+   "kind": "port"
+  },
+  {
+   "day": 2,
+   "name": "Sorrento",
+   "lat": 40.6328,
+   "lng": 14.3703,
+   "mode": "sea",
+   "path": [
+    [
+     11.787,
+     42.094
+    ],
+    [
+     11.8088,
+     42.0221
+    ],
+    [
+     12.9099,
+     41.1957
+    ],
+    [
+     14.0111,
+     40.7825
+    ],
+    [
+     14.0821,
+     40.7425
+    ],
+    [
+     14.3703,
+     40.6328
+    ]
+   ],
+   "charted": [
+    14.375,
+    40.628
+   ],
+   "lane": "sea",
+   "clear": 1.39
+  },
+  {
+   "day": 3,
+   "name": "Sorrento",
+   "lat": 40.6328,
+   "lng": 14.3703,
+   "mode": "sea",
+   "path": [
+    [
+     14.3703,
+     40.6328
+    ],
+    [
+     14.3703,
+     40.6328
+    ]
+   ],
+   "charted": [
+    14.375,
+    40.628
+   ]
+  },
+  {
+   "day": 4,
+   "name": "Messina, Sicily",
+   "lat": 38.2014,
+   "lng": 15.5667,
+   "mode": "sea",
+   "path": [
+    [
+     14.3703,
+     40.6328
+    ],
+    [
+     14.3476,
+     40.6444
+    ],
+    [
+     14.3245,
+     40.6385
+    ],
+    [
+     14.3168,
+     40.6325
+    ],
+    [
+     14.3014,
+     40.585
+    ],
+    [
+     14.3091,
+     40.5553
+    ],
+    [
+     15.6631,
+     38.273
+    ],
+    [
+     15.6631,
+     38.2552
+    ],
+    [
+     15.6554,
+     38.2492
+    ],
+    [
+     15.6247,
+     38.2433
+    ],
+    [
+     15.5667,
+     38.2014
+    ]
+   ],
+   "charted": [
+    15.556,
+    38.193
+   ],
+   "lane": "sea",
+   "clear": 1.15
+  },
+  {
+   "day": 5,
+   "name": "At sea",
+   "lat": 37.4,
+   "lng": 19.0,
+   "mode": "sea",
+   "path": [
+    [
+     15.5667,
+     38.2014
+    ],
+    [
+     15.5957,
+     38.0011
+    ],
+    [
+     15.6429,
+     37.9451
+    ],
+    [
+     15.6901,
+     37.9078
+    ],
+    [
+     15.7137,
+     37.8892
+    ],
+    [
+     19.0,
+     37.4
+    ]
+   ],
+   "lane": "sea",
+   "clear": 3.13
+  },
+  {
+   "day": 6,
+   "name": "Gythion",
+   "lat": 36.763,
+   "lng": 22.572,
+   "mode": "sea",
+   "path": [
+    [
+     19.0,
+     37.4
+    ],
+    [
+     22.4756,
+     36.3663
+    ],
+    [
+     22.5105,
+     36.3941
+    ],
+    [
+     22.5891,
+     36.7355
+    ],
+    [
+     22.572,
+     36.763
+    ]
+   ],
+   "charted": [
+    22.566,
+    36.757
+   ],
+   "lane": "sea",
+   "clear": 1.19
+  },
+  {
+   "day": 7,
+   "name": "Monemvasia",
+   "lat": 36.687,
+   "lng": 23.056,
+   "mode": "sea",
+   "path": [
+    [
+     22.572,
+     36.763
+    ],
+    [
+     22.5836,
+     36.7584
+    ],
+    [
+     22.9244,
+     36.4511
+    ],
+    [
+     23.1296,
+     36.417
+    ],
+    [
+     23.2031,
+     36.4232
+    ],
+    [
+     23.207,
+     36.4263
+    ],
+    [
+     23.2109,
+     36.4418
+    ],
+    [
+     23.2109,
+     36.4604
+    ],
+    [
+     23.1605,
+     36.5411
+    ],
+    [
+     23.056,
+     36.687
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.79
+  },
+  {
+   "day": 8,
+   "name": "Athens (Piraeus)",
+   "lat": 37.9324,
+   "lng": 23.6354,
+   "mode": "sea",
+   "path": [
+    [
+     23.056,
+     36.687
+    ],
+    [
+     23.1661,
+     36.7746
+    ],
+    [
+     23.5967,
+     37.3654
+    ],
+    [
+     23.6354,
+     37.9324
+    ]
+   ],
+   "kind": "port",
+   "charted": [
+    23.646,
+    37.942
+   ],
+   "lane": "sea",
+   "clear": 1.53
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 37.5,
+    "lng": -11.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

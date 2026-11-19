@@ -1,0 +1,1043 @@
+{
+ "slug": "wind-surf",
+ "name": "Wind Surf",
+ "brandLine": "Windstar Cruises",
+ "operator": "Windstar",
+ "type": "sailing yacht",
+ "waters": "The Mediterranean",
+ "country": "Greece, Italy, France, Spain",
+ "status": "sailing",
+ "seo": {
+  "title": "Wind Surf in the Mediterranean: Windstar's Five-Masted Sailing Yacht | James Wild & Co",
+  "description": "Wind Surf is Windstar's 346-guest, five-masted sailing yacht. In 2027 and 2028 she sails the Greek Isles weekly from Athens, with spring and autumn voyages to the Amalfi Coast, the Rivieras and Spain.",
+  "keywords": [
+   "Wind Surf",
+   "Windstar Wind Surf",
+   "Wind Surf Greek Isles",
+   "Windstar Mediterranean cruise",
+   "sailing yacht Mediterranean",
+   "small ship Greek islands"
+  ]
+ },
+ "tagline": "Windstar's five-masted flagship, sailing the Greek Isles and the Mediterranean.",
+ "answer": "Wind Surf is Windstar's flagship sailing yacht: five masts, seven computer-operated sails and 346 guests. From May to October 2027 and 2028 she sails Treasures of the Greek Isles every week from Athens, to Nafplio, Mykonos, Kusadasi for Ephesus, Patmos, Santorini and Monemvasia. In spring and autumn she moves between Lisbon, Barcelona, Rome and Athens on voyages along the coasts of Spain, the French and Italian Rivieras and the Amalfi Coast.",
+ "facts": [
+  [
+   "Guests",
+   "346"
+  ],
+  [
+   "Crew",
+   "213"
+  ],
+  [
+   "Staterooms",
+   "150 ocean-view staterooms (188 sq ft), 31 suites (376 sq ft) and an Owner's Suite"
+  ],
+  [
+   "Length",
+   "535 ft (162 m) at the waterline; 615 ft with the bowsprit"
+  ],
+  [
+   "Masts and sails",
+   "5 masts, 221 ft high; 7 self-furling, computer-operated sails"
+  ],
+  [
+   "Gross tonnage",
+   "14,745"
+  ],
+  [
+   "Decks",
+   "6"
+  ],
+  [
+   "Registry",
+   "Bahamas"
+  ],
+  [
+   "Speed",
+   "Up to 15 knots under wind and engine"
+  ]
+ ],
+ "overview": [
+  "Windstar calls Wind Surf its flagship sailing yacht. She carries 346 guests and 213 crew, and her five masts rise 221 feet, with seven triangular sails that furl themselves at the touch of a button.",
+  "Her 2027 and 2028 Mediterranean season starts in Lisbon in April, works east through Spain, the Rivieras and the Amalfi Coast to Athens, sails the Greek Isles every week from May to October, then returns west in the autumn.",
+  "On board: Amphora, Basil + Bamboo and the open-air Veranda, a refreshed spa and fitness centre, a sauna, an open bridge, and a watersports platform at the stern for swimming, kayaks and paddleboards at anchor."
+ ],
+ "why": [
+  "A real sailing ship, under five masts, small enough for harbours like Portofino, Patmos and Monemvasia.",
+  "The Greek Isles every week from Athens, May to October, so the dates fit you.",
+  "Spring and autumn voyages join Lisbon, Barcelona, Rome and Athens, with the house's stays on either side."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-surf/hero",
+  "alt": "Wind Surf under her five masts and white sails"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-surf/amphora",
+   "alt": "Amphora, Wind Surf's refreshed main restaurant (Windstar rendering)"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/wind-surf/spa",
+   "alt": "The spa aboard Wind Surf"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Owner's Suite",
+   "count": 1,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Up to 2 guests"
+   ],
+   "image": null
+  },
+  {
+   "type": "Broadmoor and Sea Island Suites",
+   "count": 2,
+   "size": null,
+   "beds": null,
+   "deck": null,
+   "features": [
+    "Up to 3 guests"
+   ],
+   "image": null
+  },
+  {
+   "type": "Suite",
+   "count": 18,
+   "size": "376 sq ft",
+   "beds": "Queen",
+   "deck": null,
+   "features": [
+    "Up to 3 guests"
+   ],
+   "image": null
+  },
+  {
+   "type": "Porthole Stateroom",
+   "count": null,
+   "size": "188 sq ft",
+   "beds": "Queen",
+   "deck": null,
+   "features": [
+    "Up to 2 guests",
+    "Midship, forward or aft positions"
+   ],
+   "image": null
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Treasures of the Greek Isles, 7 nights",
+   "nights": 7,
+   "direction": "Athens round trip",
+   "short": "Nafplio, Mykonos, Kusadasi, Patmos, Santorini and Monemvasia",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Athens",
+     "place": "Athens (Piraeus)",
+     "lat": 37.942,
+     "lng": 23.646,
+     "summary": "Board in Piraeus; Wind Surf sails at 5 pm."
+    },
+    {
+     "day": 2,
+     "title": "Nafplio",
+     "place": "Nafplio",
+     "lat": 37.567,
+     "lng": 22.806,
+     "summary": "A Venetian harbour town on the Peloponnese, below the Palamidi fortress."
+    },
+    {
+     "day": 3,
+     "title": "Mykonos",
+     "place": "Mykonos",
+     "lat": 37.446,
+     "lng": 25.328,
+     "summary": "Whitewashed lanes, chapels and the windmills above the harbour."
+    },
+    {
+     "day": 4,
+     "title": "Kusadasi, for Ephesus",
+     "place": "Kusadasi, Türkiye",
+     "lat": 37.86,
+     "lng": 27.257,
+     "summary": "The port for Ephesus, the Roman city on the UNESCO list."
+    },
+    {
+     "day": 5,
+     "title": "Patmos",
+     "place": "Patmos",
+     "lat": 37.322,
+     "lng": 26.546,
+     "summary": "The island of St John: the Monastery and the Cave of the Apocalypse are a UNESCO World Heritage site."
+    },
+    {
+     "day": 6,
+     "title": "Santorini",
+     "place": "Santorini",
+     "lat": 36.416,
+     "lng": 25.432,
+     "summary": "Into the caldera, with Fira and Oia on the cliffs above."
+    },
+    {
+     "day": 7,
+     "title": "Monemvasia",
+     "place": "Monemvasia",
+     "lat": 36.687,
+     "lng": 23.056,
+     "summary": "A walled town on a rock joined to the mainland by a single causeway."
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Athens",
+     "place": "Athens (Piraeus)",
+     "lat": 37.942,
+     "lng": 23.646,
+     "summary": "Back in Piraeus; disembark in the morning."
+    }
+   ]
+  },
+  {
+   "name": "Yachtsman's Harbors of the Rivieras",
+   "nights": 8,
+   "direction": "Barcelona to Rome",
+   "short": "Costa Brava, the French and Italian Rivieras, Portofino and Elba",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Tarragona, for Barcelona",
+     "place": "Tarragona",
+     "lat": 41.11,
+     "lng": 1.25,
+     "summary": "Board in Tarragona, Windstar's port for Barcelona."
+    },
+    {
+     "day": 2,
+     "title": "Palamós",
+     "place": "Palamós, Costa Brava",
+     "lat": 41.846,
+     "lng": 3.13,
+     "summary": "A fishing port on the Costa Brava."
+    },
+    {
+     "day": 3,
+     "title": "Collioure",
+     "place": "Collioure, France",
+     "lat": 42.526,
+     "lng": 3.084,
+     "summary": "A Catalan harbour village on the French side of the border, painted by Matisse and Derain."
+    },
+    {
+     "day": 4,
+     "title": "Toulon",
+     "place": "Toulon",
+     "lat": 43.118,
+     "lng": 5.931,
+     "summary": "Provence's naval harbour, for the markets and the coast road."
+    },
+    {
+     "day": 5,
+     "title": "Monte Carlo",
+     "place": "Monte Carlo, Monaco",
+     "lat": 43.739,
+     "lng": 7.427,
+     "summary": "The harbour of Monaco."
+    },
+    {
+     "day": 6,
+     "title": "Cannes",
+     "place": "Cannes",
+     "lat": 43.551,
+     "lng": 7.017,
+     "summary": "The Croisette and the old quarter of Le Suquet."
+    },
+    {
+     "day": 7,
+     "title": "Portofino",
+     "place": "Portofino, Italy",
+     "lat": 44.303,
+     "lng": 9.21,
+     "summary": "The Ligurian harbour village, at anchor."
+    },
+    {
+     "day": 8,
+     "title": "Portoferraio, Elba",
+     "place": "Portoferraio, Elba",
+     "lat": 42.813,
+     "lng": 10.33,
+     "summary": "Elba's harbour town, where Napoleon was exiled."
+    },
+    {
+     "day": 9,
+     "title": "Disembark in Civitavecchia, for Rome",
+     "place": "Civitavecchia",
+     "lat": 42.094,
+     "lng": 11.787,
+     "summary": "Disembark in the morning, about an hour from Rome."
+    }
+   ]
+  },
+  {
+   "name": "Enchanting Greece and the Amalfi Coast, 7 nights",
+   "nights": 7,
+   "direction": "Rome to Athens",
+   "short": "Sorrento overnight, Taormina, Gythion and Monemvasia",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Civitavecchia, for Rome",
+     "place": "Civitavecchia",
+     "lat": 42.094,
+     "lng": 11.787,
+     "summary": "Board in Civitavecchia, Rome's port."
+    },
+    {
+     "day": 2,
+     "title": "Sorrento, overnight",
+     "place": "Sorrento",
+     "lat": 40.628,
+     "lng": 14.375,
+     "summary": "Two days at Sorrento: the Amalfi Coast, Positano, Capri or Pompeii."
+    },
+    {
+     "day": 3,
+     "title": "Sorrento",
+     "place": "Sorrento",
+     "lat": 40.628,
+     "lng": 14.375,
+     "summary": "A second day for the Amalfi Coast, Capri or Pompeii."
+    },
+    {
+     "day": 4,
+     "title": "Messina, for Taormina",
+     "place": "Messina, Sicily",
+     "lat": 38.193,
+     "lng": 15.556,
+     "summary": "Through the Strait of Messina, for Taormina and Etna."
+    },
+    {
+     "day": 5,
+     "title": "At sea",
+     "place": "At sea",
+     "lat": 37.4,
+     "lng": 19.0,
+     "summary": "A day under sail across the Ionian Sea."
+    },
+    {
+     "day": 6,
+     "title": "Gythion",
+     "place": "Gythion",
+     "lat": 36.757,
+     "lng": 22.566,
+     "summary": "A Peloponnese harbour, for Mystras and the Mani."
+    },
+    {
+     "day": 7,
+     "title": "Monemvasia",
+     "place": "Monemvasia",
+     "lat": 36.687,
+     "lng": 23.056,
+     "summary": "The walled rock town joined to the mainland by a causeway."
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Athens",
+     "place": "Athens (Piraeus)",
+     "lat": 37.942,
+     "lng": 23.646,
+     "summary": "Disembark in Piraeus in the morning."
+    }
+   ]
+  },
+  {
+   "name": "Spanish Symphony, 8 nights",
+   "nights": 8,
+   "direction": "Lisbon to Barcelona",
+   "short": "Cádiz, Gibraltar, Málaga, Almería, Cartagena and Mallorca",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Lisbon",
+     "place": "Lisbon",
+     "lat": 38.707,
+     "lng": -9.139,
+     "summary": "Board in Lisbon."
+    },
+    {
+     "day": 2,
+     "title": "At sea",
+     "place": "At sea",
+     "lat": 36.75,
+     "lng": -8.3,
+     "summary": "A day under sail down the Atlantic coast."
+    },
+    {
+     "day": 3,
+     "title": "Cádiz",
+     "place": "Cádiz",
+     "lat": 36.534,
+     "lng": -6.297,
+     "summary": "One of Europe's oldest cities, for Seville and the sherry towns of Jerez."
+    },
+    {
+     "day": 4,
+     "title": "Gibraltar",
+     "place": "Gibraltar",
+     "lat": 36.14,
+     "lng": -5.353,
+     "summary": "The Rock, at the mouth of the Mediterranean."
+    },
+    {
+     "day": 5,
+     "title": "Málaga",
+     "place": "Málaga",
+     "lat": 36.718,
+     "lng": -4.418,
+     "summary": "For the Alhambra in Granada, or Picasso's birthplace in town."
+    },
+    {
+     "day": 6,
+     "title": "Almería",
+     "place": "Almería",
+     "lat": 36.835,
+     "lng": -2.465,
+     "summary": "The Alcazaba of Almería above the harbour."
+    },
+    {
+     "day": 7,
+     "title": "Cartagena",
+     "place": "Cartagena",
+     "lat": 37.6,
+     "lng": -0.985,
+     "summary": "A Roman theatre in a naval harbour town."
+    },
+    {
+     "day": 8,
+     "title": "Palma de Mallorca",
+     "place": "Palma de Mallorca",
+     "lat": 39.566,
+     "lng": 2.637,
+     "summary": "Palma's Gothic cathedral and old town, and the Serra de Tramuntana inland."
+    },
+    {
+     "day": 9,
+     "title": "Disembark in Tarragona, for Barcelona",
+     "place": "Tarragona",
+     "lat": 41.11,
+     "lng": 1.25,
+     "summary": "Disembark in the morning."
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2027-04-11",
+   "dateTo": "2027-04-19",
+   "itinerary": "Spanish Symphony, 8 nights",
+   "direction": "Lisbon to Barcelona",
+   "status": null,
+   "prices": {
+    "From": 2904
+   }
+  },
+  {
+   "date": "2027-04-19",
+   "dateTo": "2027-04-27",
+   "itinerary": "Yachtsman's Harbors of the Rivieras",
+   "direction": "Barcelona to Rome, 8 nights",
+   "status": null,
+   "prices": {
+    "From": 2923
+   }
+  },
+  {
+   "date": "2027-04-27",
+   "dateTo": "2027-05-04",
+   "itinerary": "Enchanting Greece and the Amalfi Coast, 7 nights",
+   "direction": "Rome to Athens",
+   "status": null,
+   "prices": {
+    "From": 3070
+   }
+  },
+  {
+   "date": "2027-05-04",
+   "dateTo": "2027-05-11",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 4084
+   }
+  },
+  {
+   "date": "2027-05-11",
+   "dateTo": "2027-05-18",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-05-18",
+   "dateTo": "2027-05-25",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-05-25",
+   "dateTo": "2027-06-01",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 4084
+   }
+  },
+  {
+   "date": "2027-06-01",
+   "dateTo": "2027-06-08",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-06-08",
+   "dateTo": "2027-06-15",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-06-15",
+   "dateTo": "2027-06-22",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-06-22",
+   "dateTo": "2027-06-29",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-06-29",
+   "dateTo": "2027-07-06",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-07-13",
+   "dateTo": "2027-07-20",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-07-20",
+   "dateTo": "2027-07-27",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-08-05",
+   "dateTo": "2027-08-12",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-08-12",
+   "dateTo": "2027-08-19",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-08-26",
+   "dateTo": "2027-09-02",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-09-02",
+   "dateTo": "2027-09-09",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-09-09",
+   "dateTo": "2027-09-16",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 4084
+   }
+  },
+  {
+   "date": "2027-09-16",
+   "dateTo": "2027-09-23",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-09-23",
+   "dateTo": "2027-09-30",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-09-30",
+   "dateTo": "2027-10-07",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3769
+   }
+  },
+  {
+   "date": "2027-10-07",
+   "dateTo": "2027-10-14",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 3944
+   }
+  },
+  {
+   "date": "2027-10-14",
+   "dateTo": "2027-10-21",
+   "itinerary": "Enchanting Greece and the Amalfi Coast, 7 nights",
+   "direction": "Athens to Rome",
+   "status": null,
+   "prices": {
+    "From": 2895
+   }
+  },
+  {
+   "date": "2027-10-21",
+   "dateTo": "2027-10-28",
+   "itinerary": "Yachtsman's Harbors of the Rivieras",
+   "direction": "Rome to Barcelona, 7 nights",
+   "status": null,
+   "prices": {
+    "From": 2982
+   }
+  },
+  {
+   "date": "2027-10-28",
+   "dateTo": "2027-11-05",
+   "itinerary": "Spanish Symphony, 8 nights",
+   "direction": "Barcelona to Lisbon",
+   "status": null,
+   "prices": {
+    "From": 4544
+   }
+  },
+  {
+   "date": "2028-04-03",
+   "dateTo": "2028-04-11",
+   "itinerary": "Spanish Symphony, 8 nights",
+   "direction": "Lisbon to Barcelona",
+   "status": null,
+   "prices": {
+    "From": 3104
+   }
+  },
+  {
+   "date": "2028-04-11",
+   "dateTo": "2028-04-18",
+   "itinerary": "Yachtsman's Harbors of the Rivieras",
+   "direction": "Barcelona to Rome, 7 nights",
+   "status": null,
+   "prices": {
+    "From": 3752
+   }
+  },
+  {
+   "date": "2028-04-18",
+   "dateTo": "2028-04-25",
+   "itinerary": "Enchanting Greece and the Amalfi Coast, 7 nights",
+   "direction": "Rome to Athens",
+   "status": null,
+   "prices": {
+    "From": 3752
+   }
+  },
+  {
+   "date": "2028-04-25",
+   "dateTo": "2028-05-02",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5659
+   }
+  },
+  {
+   "date": "2028-05-02",
+   "dateTo": "2028-05-09",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5659
+   }
+  },
+  {
+   "date": "2028-05-09",
+   "dateTo": "2028-05-16",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5659
+   }
+  },
+  {
+   "date": "2028-05-16",
+   "dateTo": "2028-05-23",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5764
+   }
+  },
+  {
+   "date": "2028-05-23",
+   "dateTo": "2028-05-30",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5764
+   }
+  },
+  {
+   "date": "2028-05-30",
+   "dateTo": "2028-06-06",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5764
+   }
+  },
+  {
+   "date": "2028-06-06",
+   "dateTo": "2028-06-13",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5659
+   }
+  },
+  {
+   "date": "2028-06-13",
+   "dateTo": "2028-06-20",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5659
+   }
+  },
+  {
+   "date": "2028-06-20",
+   "dateTo": "2028-06-27",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5659
+   }
+  },
+  {
+   "date": "2028-06-27",
+   "dateTo": "2028-07-04",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5554
+   }
+  },
+  {
+   "date": "2028-07-11",
+   "dateTo": "2028-07-18",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5554
+   }
+  },
+  {
+   "date": "2028-07-29",
+   "dateTo": "2028-08-05",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5554
+   }
+  },
+  {
+   "date": "2028-08-05",
+   "dateTo": "2028-08-12",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5659
+   }
+  },
+  {
+   "date": "2028-08-12",
+   "dateTo": "2028-08-19",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5659
+   }
+  },
+  {
+   "date": "2028-08-26",
+   "dateTo": "2028-09-02",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 6044
+   }
+  },
+  {
+   "date": "2028-09-02",
+   "dateTo": "2028-09-09",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 6044
+   }
+  },
+  {
+   "date": "2028-09-09",
+   "dateTo": "2028-09-16",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 6044
+   }
+  },
+  {
+   "date": "2028-09-16",
+   "dateTo": "2028-09-23",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 6044
+   }
+  },
+  {
+   "date": "2028-09-23",
+   "dateTo": "2028-09-30",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 6044
+   }
+  },
+  {
+   "date": "2028-09-30",
+   "dateTo": "2028-10-07",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 6044
+   }
+  },
+  {
+   "date": "2028-10-07",
+   "dateTo": "2028-10-14",
+   "itinerary": "Treasures of the Greek Isles, 7 nights",
+   "direction": "Athens round trip",
+   "status": null,
+   "prices": {
+    "From": 5974
+   }
+  },
+  {
+   "date": "2028-10-14",
+   "dateTo": "2028-10-21",
+   "itinerary": "Enchanting Greece and the Amalfi Coast, 7 nights",
+   "direction": "Athens to Rome",
+   "status": null,
+   "prices": {
+    "From": 5835
+   }
+  },
+  {
+   "date": "2028-10-21",
+   "dateTo": "2028-10-28",
+   "itinerary": "Yachtsman's Harbors of the Rivieras",
+   "direction": "Rome to Barcelona, 7 nights",
+   "status": null,
+   "prices": {
+    "From": 3857
+   }
+  },
+  {
+   "date": "2028-10-28",
+   "dateTo": "2028-11-05",
+   "itinerary": "Spanish Symphony, 8 nights",
+   "direction": "Barcelona to Lisbon",
+   "status": null,
+   "prices": {
+    "From": 5264
+   }
+  }
+ ],
+ "datesPublished": true,
+ "pricesNote": "From fares per person, double occupancy, cruise only, in USD, as Windstar publishes them for the lowest stateroom open on each sailing (read 19 Nov 2026). Taxes, fees and port expenses are additional and quoted with your stateroom; suggested onboard gratuities are extra unless an offer includes them. James confirms the fare for your stateroom.",
+ "inclusions": [
+  "All meals on board",
+  "The watersports platform at anchor: swimming, kayaks and paddleboards",
+  "Gym and sauna",
+  "Every stateroom: queen bed, walk-in closet, minibar and fridge, L'Occitane amenities"
+ ],
+ "exclusions": [
+  "Wi-Fi (sold on board)",
+  "Taxes, fees and port expenses",
+  "Suggested onboard gratuities",
+  "Alcoholic drinks, unless an offer includes them",
+  "Shore excursions",
+  "Flights, and hotels and transfers before and after the cruise"
+ ],
+ "children": "Windstar welcomes families; ask us about ages and connecting staterooms before you book.",
+ "faqs": [
+  [
+   "How many guests does Wind Surf carry?",
+   "346, with 213 crew."
+  ],
+  [
+   "Is Wind Surf a real sailing ship?",
+   "Yes. She has five masts, 221 feet high, and seven triangular sails that furl automatically; she sails under wind and engine, up to 15 knots."
+  ],
+  [
+   "Where does Wind Surf sail in 2027 and 2028?",
+   "The Mediterranean, April to November: Treasures of the Greek Isles every week from Athens from May to October, and voyages between Lisbon, Barcelona, Rome and Athens in spring and autumn."
+  ],
+  [
+   "Which islands does Treasures of the Greek Isles visit?",
+   "Nafplio, Mykonos, Kusadasi for Ephesus, Patmos, Santorini and Monemvasia, round trip from Athens in 7 nights."
+  ],
+  [
+   "How big are the cabins?",
+   "Staterooms are 188 sq ft and suites 376 sq ft, as Windstar publishes; there is one Owner's Suite and two Broadmoor and Sea Island suites."
+  ],
+  [
+   "Where can I stay before or after?",
+   "Ask us: in the Ledger, Palazzo Avino and Hotel Santa Caterina on the Amalfi Coast, Cap Rocat on Mallorca, and Sublime Comporta or Octant Douro in Portugal before Spanish Symphony."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "Couples",
+   "line": "Greek islands under sail, a week at a time."
+  },
+  {
+   "who": "First-timers in Greece",
+   "line": "Treasures of the Greek Isles every week from Athens."
+  },
+  {
+   "who": "Slow travellers",
+   "line": "Join two voyages: Lisbon to Barcelona, Rome, then Athens."
+  }
+ ],
+ "sources": [
+  "https://www.windstarcruises.com/ships/wind-surf/",
+  "https://www.windstarcruises.com/destinations/europe/",
+  "https://www.windstarcruises.com/tour-details/PIRPIR7D/greek/piraeus-to-piraeus/7-day-treasures-of-the-greek-isles/?pkgid=1045937",
+  "https://www.windstarcruises.com/tour-details/TARCVV8D/mediterranean/tarragona-barcelona-to-civitavecchia/8-day-yachtsman-s-harbors-of-the-rivieras/?pkgid=1092754",
+  "https://www.windstarcruises.com/tour-details/CVVPIR7D/mediterranean/civitavecchia-to-piraeus/7-day-wine-cruise-enchanting-greece-and-the-amalfi-coast/?pkgid=1045936",
+  "https://www.windstarcruises.com/tour-details/LISTAR8D/mediterranean/lisbon-to-tarragona-barcelona/8-day-spanish-symphony/?pkgid=1092753"
+ ],
+ "film": null,
+ "fareBasis": "Per person, double occupancy, cruise only, from the lowest stateroom open",
+ "terms": [
+  "Windstar's terms apply to every booking; we confirm deposit, payment and cancellation terms with your quote."
+ ],
+ "proofLine": "Windstar partner; James has sailed with Windstar"
+}

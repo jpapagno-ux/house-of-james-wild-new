@@ -288,6 +288,12 @@ export const SHIP_REGISTRY: RegistryShip[] = [
     pathway: { primary: "PATH-02", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "launching", launch: "2027-03", page: true,
     traits: { activities: ["sailing", "snorkelling", "culture", "slow"] } },
 
+  // Windstar in the Mediterranean (James, 19 Nov 2026): Wind Surf, the five-masted sailing yacht. Between Tides (island
+  // hopping in the Greek Isles). James has sailed with Windstar (Tahiti), not on her.
+  { slug: "wind-surf", name: "Wind Surf", operator: "Windstar", kind: "yacht", types: ["sailing"], waters: ["mediterranean"], country: ["Greece", "Italy", "France", "Spain", "Portugal", "Turkey", "Monaco"],
+    pathway: { primary: "PATH-02", secondary: [] }, charter: null, rateBasis: "per-cruise", status: "sailing", page: true,
+    traits: { activities: ["sailing", "culture", "slow"] } },
+
   // Fiji (James, 5 to 7 Nov 2026): Blue Lagoon Cruises' MV Yasawa Princess II, filed from bluelagooncruises.com.
   // Between Tides first (the water is the activity: snorkelling, manta rays, the Blue Lagoon); Rooted in Place for
   // the Yasawa villages, kava and lovo. Adults only (16 and over) from mid-January 2027.

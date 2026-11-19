@@ -1,0 +1,383 @@
+{
+ "id": "wind-surf-barcelona-to-rome-8n",
+ "type": "voyage",
+ "destination": "mediterranean",
+ "title": "Yachtsman's Harbors of the Rivieras aboard Wind Surf",
+ "subtitle": "8 nights · Barcelona to Rome · Wind Surf",
+ "days": {
+  "1": "Embark in Tarragona, for Barcelona",
+  "2": "Palamós",
+  "3": "Collioure",
+  "4": "Toulon",
+  "5": "Monte Carlo",
+  "6": "Cannes",
+  "7": "Portofino",
+  "8": "Portoferraio, Elba",
+  "9": "Disembark in Civitavecchia, for Rome"
+ },
+ "stops": [
+  {
+   "day": 1,
+   "name": "Tarragona",
+   "lat": 41.1064,
+   "lng": 1.2564,
+   "kind": "port",
+   "charted": [
+    1.25,
+    41.11
+   ]
+  },
+  {
+   "day": 2,
+   "name": "Palamós, Costa Brava",
+   "lat": 41.84,
+   "lng": 3.1364,
+   "mode": "sea",
+   "path": [
+    [
+     1.2564,
+     41.1064
+    ],
+    [
+     1.7893,
+     41.1473
+    ],
+    [
+     2.1512,
+     41.2829
+    ],
+    [
+     3.0301,
+     41.7574
+    ],
+    [
+     3.1364,
+     41.84
+    ]
+   ],
+   "charted": [
+    3.13,
+    41.846
+   ],
+   "lane": "sea",
+   "clear": 1.44
+  },
+  {
+   "day": 3,
+   "name": "Collioure, France",
+   "lat": 42.5284,
+   "lng": 3.0921,
+   "mode": "sea",
+   "path": [
+    [
+     3.1364,
+     41.84
+    ],
+    [
+     3.1638,
+     41.8458
+    ],
+    [
+     3.1894,
+     41.86
+    ],
+    [
+     3.2149,
+     41.8837
+    ],
+    [
+     3.2277,
+     41.9121
+    ],
+    [
+     3.2405,
+     41.9499
+    ],
+    [
+     3.3299,
+     42.3191
+    ],
+    [
+     3.3299,
+     42.3238
+    ],
+    [
+     3.151,
+     42.5179
+    ],
+    [
+     3.1446,
+     42.5226
+    ],
+    [
+     3.1127,
+     42.5321
+    ],
+    [
+     3.0921,
+     42.5284
+    ]
+   ],
+   "charted": [
+    3.084,
+    42.526
+   ],
+   "lane": "sea",
+   "clear": 0.58
+  },
+  {
+   "day": 4,
+   "name": "Toulon",
+   "lat": 43.118,
+   "lng": 5.931,
+   "mode": "sea",
+   "path": [
+    [
+     3.0921,
+     42.5284
+    ],
+    [
+     5.9376,
+     43.0478
+    ],
+    [
+     5.9515,
+     43.0529
+    ],
+    [
+     5.9584,
+     43.058
+    ],
+    [
+     5.9584,
+     43.0783
+    ],
+    [
+     5.931,
+     43.118
+    ]
+   ],
+   "lane": "sea",
+   "clear": 0.64
+  },
+  {
+   "day": 5,
+   "name": "Monte Carlo, Monaco",
+   "lat": 43.739,
+   "lng": 7.4369,
+   "mode": "sea",
+   "path": [
+    [
+     5.931,
+     43.118
+    ],
+    [
+     6.1094,
+     42.9919
+    ],
+    [
+     6.1922,
+     42.9618
+    ],
+    [
+     6.2439,
+     42.9769
+    ],
+    [
+     6.5959,
+     43.1347
+    ],
+    [
+     6.6374,
+     43.1498
+    ],
+    [
+     7.4345,
+     43.7212
+    ],
+    [
+     7.4369,
+     43.739
+    ]
+   ],
+   "charted": [
+    7.427,
+    43.739
+   ],
+   "lane": "sea",
+   "clear": 1.13
+  },
+  {
+   "day": 6,
+   "name": "Cannes",
+   "lat": 43.545,
+   "lng": 7.022,
+   "mode": "sea",
+   "path": [
+    [
+     7.4369,
+     43.739
+    ],
+    [
+     7.4414,
+     43.7291
+    ],
+    [
+     7.4382,
+     43.7244
+    ],
+    [
+     7.3993,
+     43.6963
+    ],
+    [
+     7.1178,
+     43.5183
+    ],
+    [
+     7.0531,
+     43.4949
+    ],
+    [
+     7.0369,
+     43.4949
+    ],
+    [
+     7.0304,
+     43.4972
+    ],
+    [
+     7.024,
+     43.5019
+    ],
+    [
+     7.0175,
+     43.5183
+    ],
+    [
+     7.0175,
+     43.5394
+    ],
+    [
+     7.022,
+     43.545
+    ]
+   ],
+   "charted": [
+    7.017,
+    43.551
+   ],
+   "lane": "sea",
+   "clear": 0.62
+  },
+  {
+   "day": 7,
+   "name": "Portofino, Italy",
+   "lat": 44.2982,
+   "lng": 9.205,
+   "mode": "sea",
+   "path": [
+    [
+     7.022,
+     43.545
+    ],
+    [
+     7.1305,
+     43.5258
+    ],
+    [
+     9.205,
+     44.2982
+    ]
+   ],
+   "charted": [
+    9.21,
+    44.303
+   ],
+   "lane": "sea",
+   "clear": 1.92
+  },
+  {
+   "day": 8,
+   "name": "Portoferraio, Elba",
+   "lat": 42.813,
+   "lng": 10.33,
+   "mode": "sea",
+   "path": [
+    [
+     9.205,
+     44.2982
+    ],
+    [
+     10.33,
+     42.813
+    ]
+   ]
+  },
+  {
+   "day": 9,
+   "name": "Civitavecchia",
+   "lat": 42.094,
+   "lng": 11.787,
+   "mode": "sea",
+   "path": [
+    [
+     10.33,
+     42.813
+    ],
+    [
+     10.3623,
+     42.8495
+    ],
+    [
+     10.4124,
+     42.8865
+    ],
+    [
+     11.1236,
+     42.3544
+    ],
+    [
+     11.1737,
+     42.3174
+    ],
+    [
+     11.787,
+     42.094
+    ]
+   ],
+   "kind": "port",
+   "lane": "sea",
+   "clear": 1.5
+  }
+ ],
+ "map_note": "Course and positions approximate, not a navigational chart",
+ "fallback": {
+  "labels": [
+   {
+    "text": "Mediterranean Sea",
+    "lat": 36.5,
+    "lng": 17.5,
+    "kind": "sea"
+   },
+   {
+    "text": "Aegean Sea",
+    "lat": 38.5,
+    "lng": 25.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Tyrrhenian Sea",
+    "lat": 40.0,
+    "lng": 12.0,
+    "kind": "sea"
+   },
+   {
+    "text": "Atlantic Ocean",
+    "lat": 37.5,
+    "lng": -11.5,
+    "kind": "sea"
+   }
+  ]
+ }
+}

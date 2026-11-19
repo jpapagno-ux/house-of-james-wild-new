@@ -3,6 +3,8 @@ import { requireAdvisorFile } from "@/lib/platform/advisor";
 import { myFileState } from "@/lib/platform/advisor-file-data";
 import { fileComplete, fileSteps } from "@/lib/platform/advisor-file";
 import { PageHead, Panel, StatusPill } from "@/components/platform/ui";
+import { TRAINING } from "@/lib/platform/advisor-training";
+import { RegisterTraining } from "@/components/advisor/TrainingForms";
 
 export const metadata = { title: "My file" };
 
@@ -13,6 +15,8 @@ export default async function AdvisorFile() {
   const complete = fileComplete(s);
   const active = a.advisor.status === "active";
   const first = a.advisor.display_name.split(" ")[0];
+  // Training registration (James, 19 Nov 2026). The panel is hidden until the advisor_training migration is applied.
+  const training = await a.sb.from("advisor_training_registrations").select("note, registered_at").eq("advisor_id", a.advisor.id).maybeSingle();
   return (
     <>
       <PageHead eyebrow={`Advisor Desk · ${a.advisor.adv_number}`} title={active ? "My file" : `Welcome, ${first}`}
@@ -38,6 +42,17 @@ export default async function AdvisorFile() {
           </li>
         ))}
       </ol>
+      {!training.error && (
+        <section id="training" aria-label={TRAINING.name} className="mt-8 bg-white border ledger-border border-l-2 border-l-[#8B2525] p-5 md:p-6">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <h2 className="ledger-display text-[1.5rem] leading-tight">{TRAINING.name}</h2>
+            <StatusPill label={training.data ? "Registered" : TRAINING.status} tone={training.data ? "good" : "progress"} />
+          </div>
+          <p className="mt-2 text-[15.5px] leading-relaxed max-w-2xl">{TRAINING.line}</p>
+          <p className="mt-2 text-[14px] leading-relaxed ledger-muted max-w-2xl">{training.data ? "You are on the list. The house writes to you first with the dates and how it runs." : TRAINING.detail}</p>
+          <div className="mt-4"><RegisterTraining registered={!!training.data} note={(training.data?.note as string | null) ?? ""} /></div>
+        </section>
+      )}
       <Panel className="mt-8">
         <p className="text-[14px] leading-relaxed ledger-muted">Everything here is private to you and the house&rsquo;s administrators. Never type a tax or bank account number into the desk: those travel only on your uploaded tax form and the house&rsquo;s secure payment setup.</p>
       </Panel>

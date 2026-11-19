@@ -110,8 +110,8 @@ export function GET() {
   // Terra Y dossiers (James, 15 Nov 2026): each by name, with the places and words people search for.
   const TY_COUNTRY: Record<string, string[]> = { ice: ["Antarctica", "South Africa"], "peru-to-patagonia": ["Peru", "Chile"], "colombia-to-guatemala": ["Colombia", "Guatemala"], "scotland-to-greenland": ["United Kingdom", "Faroe Islands", "Iceland", "Greenland"] };
   for (const d of TY_DOSSIERS) {
-    const c = d.file === "ice" ? TY_COUNTRY.ice : TY_COUNTRY[d.slug] ?? [];
-    add({ t: "route", n: `${d.title} (Terra Y)`, u: tyPath(d.slug), k: d.file === "ice" ? "Antarctic expedition" : "DC-3 expedition", p: c[0] ?? null, r: d.file === "ice" ? "polar-antarctica" : regionOf(c[0] ?? ""), f: ["adventure", "luxury"], g: [d.line, d.operator, d.file === "ice" ? "White Desert Antarctica South Pole penguins private jet" : "Echo Charlie DC-3 Basler private plane", c.join(" ")].join(" · "), c });
+    const c = d.file === "ice" ? TY_COUNTRY.ice : d.file === "sea" ? ["United States"] : TY_COUNTRY[d.slug] ?? [];
+    add({ t: "route", n: `${d.title} (Terra Y)`, u: tyPath(d.slug), k: d.file === "ice" ? "Antarctic expedition" : d.file === "sea" ? "Alaska expedition yacht" : "DC-3 expedition", p: c[0] ?? null, r: d.file === "ice" ? "polar-antarctica" : regionOf(c[0] ?? ""), f: ["adventure", "luxury"], g: [d.line, d.operator, d.file === "ice" ? "White Desert Antarctica South Pole penguins private jet" : d.file === "sea" ? "UnCruise Alaska Aleutians Safari Quest small ship charter" : "Echo Charlie DC-3 Basler private plane", c.join(" ")].join(" · "), c });
   }
   for (const [n, u, g] of PAGES) add({ t: "page", n, u, k: "Section", p: null, r: null, f: [], g });
   // The Exceptional Few: the collection itself, and its number on each place it holds.

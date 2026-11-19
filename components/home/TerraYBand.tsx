@@ -36,7 +36,7 @@ export default function TerraYBand() {
           ))}
         </ul>
         <div className="relative mt-8 flex flex-wrap gap-3">
-          <Link href={TY_PATH} className="ty-btn">All nine Terra Y dossiers <span aria-hidden>→</span></Link>
+          <Link href={TY_PATH} className="ty-btn">All {TY_DOSSIERS.length} Terra Y dossiers <span aria-hidden>→</span></Link>
           <Link href="/pathways/the-far-edge" className="ty-btn-line" style={{ color: "var(--ty-frost)" }}>The Far Edge</Link>
         </div>
       </div>

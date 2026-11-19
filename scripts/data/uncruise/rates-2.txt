@@ -1,0 +1,44 @@
+@itin glacier-bay-national-park-with-inside-passage-and-san-juan-islands | Glacier Bay National Park with Inside Passage and San Juan Islands | 12 | Seattle | Juneau (or reverse)
+MULTI | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+2027 Wilderness Legacy | Apr 12 | - 7300 12800 8100 14200 8800 15400 9500 16700 11000 19300 13200 23100
+2027 Wilderness Legacy | Sept 18* | - 8500 14900 9400 16500 10200 17900 11100 19500 12800 22400 15300 26800
+2027 Safari Explorer | Sept 2* | - 11200 19600 12400 21700 - - 14600 25600 16800 29400 18500 32400
+2027 Safari Quest | May 2 | 14700 10500 18400 - - 12600 22100 14700 25800 - - - -
+2027 Safari Quest | Sept 17* | 13900 9900 17400 - - 11900 20900 13900 24400 - - - -
+2027 Wilderness Explorer | Jun 13 | 13000 10800 18900 11900 20900 13000 22800 14100 24700 - - - -
+2027 Wilderness Explorer | Sept 15* | 10200 8500 14900 9400 16500 10200 17900 11100 19500 - - - -
+2028 Safari Endeavour | Apr 24 | - 8500 14900 9400 16500 10200 17900 11100 19500 - - 15800 27700
+2028 Safari Endeavour | Sept 23* | - 7300 12800 8100 14200 8800 15400 9500 16700 - - 13600 23800
+2028 Wilderness Legacy | Apr 17 | - 7300 12800 8100 14200 8800 15400 9500 16700 11900 20900 12900 22600
+2028 Wilderness Legacy | Sept 16* | - 8500 14900 9400 16500 10200 17900 11100 19500 13300 23300 14900 26100
+2028 Safari Explorer | Sept 8* | - 11200 19600 12400 21700 - - 14600 25600 16800 29400 18500 32400
+2028 Safari Quest | May 7 | 14700 10500 18400 - - 12600 22100 14700 25800 - - - -
+2028 Safari Quest | Sept 15* | 13900 9900 17400 - - 11900 20900 13900 24400 - - - -
+2028 Wilderness Explorer | May 1 | 10200 8500 14900 9400 16500 10200 17900 11100 19500 - - - -
+2028 Wilderness Explorer | Sept 21* | 8800 7300 12800 8100 14200 8800 15400 9500 16700 - - - -
+NOTE * September sailings run Juneau to Seattle (reverse)
+NOTE Safari Quest table columns: Compass S, Navigator D/S, Pathfinder D/S, Admiral D/S (no Trailblazer) - mapped into the MULTI columns above
+
+@itin alaskas-glacier-wilderness-with-glacier-bay | Alaska's Glacier Wilderness with Glacier Bay | 7 | Juneau | Juneau
+TABLE Safari Quest 2027 | Compass S, Navigator D/S, Pathfinder D/S, Admiral D/S
+Sept 10 | 13900 9900 17400 11900 20900 13900 24400
+May 14, 21; Sept 3 | 14700 10500 18400 12600 22100 14700 25800
+May 28; Jun 4, 11, 18, 25; Jul 2, 9, 16, 23, 30; Aug 6, 13, 20, 27 | 15700 11200 19600 13500 23700 15700 27500
+TABLE Safari Quest 2028 | Compass S, Navigator D/S, Pathfinder D/S, Admiral D/S
+Sept 8 | 13900 9900 17400 11900 20900 13900 24400
+May 19, 26; Sept 1 | 14700 10500 18400 12600 22100 14700 25800
+Jun 2, 9, 16, 23, 30; Jul 7, 14, 21, 28; Aug 4, 11, 18, 25 | 15700 11200 19600 13500 23700 15700 27500
+
+@itin alaskas-national-parks-by-land-and-sea | Alaska's National Parks by Land and Sea: Denali to Glacier Bay | 15 | Fairbanks | Juneau
+TABLE Wilderness Discoverer 2027 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Aug 28 | 14100 20900 14800 22100 15500 23400 17600 27000
+Jun 5, 12; Jul 3, 10, 17; Aug 7, 14, 21 | 14500 21600 15300 23000 16000 24200 18200 28100
+TABLE Wilderness Adventurer 2027 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S
+Aug 28 | 17100 14100 20900 14800 22100 15500 23400
+Jun 5, 12, 19, 26; Jul 24; Aug 14, 21 | 17600 14500 21600 15300 23000 16000 24200
+NOTE dates are the start of the land portion in Fairbanks [confirm]
+
+@itin glacier-bay-national-park-with-inside-passage-and-olympic-national-park | Glacier Bay National Park with Inside Passage and Olympic National Park | 12 | Seattle | Juneau (or reverse)
+MULTI | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+2027 Safari Endeavour | Apr 26 | - 8500 14900 9400 16500 10200 17900 11100 19500 - - 15800 27700
+2027 Safari Endeavour | Sept 25* | - 7300 12800 8100 14200 8800 15400 9500 16700 - - 13600 23800

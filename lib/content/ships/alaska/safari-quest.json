@@ -1,0 +1,1259 @@
+{
+ "slug": "safari-quest",
+ "name": "Safari Quest",
+ "brandLine": "UnCruise Adventures",
+ "operator": "UnCruise Adventures",
+ "type": "expedition yacht",
+ "waters": "Alaska",
+ "country": "United States",
+ "status": "sailing",
+ "seo": {
+  "title": "Safari Quest in Alaska: UnCruise's 22-Guest Yacht in Glacier Bay | James Wild & Co",
+  "description": "Safari Quest is UnCruise's smallest yacht: 22 guests, 11 cabins, a crew ratio of two guests to one. She sails Alaska's Glacier Wilderness week from Juneau and the Inside Passage from Seattle, 2027 and 2028, from $9,900.",
+  "keywords": [
+   "Safari Quest",
+   "UnCruise Safari Quest",
+   "Safari Quest Alaska",
+   "small ship Glacier Bay",
+   "22 guest yacht Alaska",
+   "private yacht charter Alaska"
+  ]
+ },
+ "tagline": "Twenty-two guests, eleven cabins, and the coves even UnCruise's other boats cannot reach.",
+ "answer": "Safari Quest is UnCruise's smallest yacht: 120 feet, 22 guests in 11 cabins, one crew member for every two guests. She sails Alaska's Glacier Wilderness, a week round trip from Juneau through Glacier Bay's outer reaches, Admiralty Island and Dawes Glacier, from May to September, and the Inside Passage between Seattle and Juneau in spring and autumn. Fares run from $9,900 per person; the whole yacht can be chartered.",
+ "facts": [
+  [
+   "Guests",
+   "22"
+  ],
+  [
+   "Cabins",
+   "11, all outside"
+  ],
+  [
+   "Guest to crew",
+   "2:1"
+  ],
+  [
+   "Length",
+   "120 ft (37 m)"
+  ],
+  [
+   "Beam",
+   "28 ft"
+  ],
+  [
+   "Built",
+   "1992"
+  ],
+  [
+   "Decks",
+   "4"
+  ],
+  [
+   "Speed",
+   "12 mph"
+  ],
+  [
+   "Registry and crew",
+   "USA"
+  ]
+ ],
+ "overview": [
+  "UnCruise built its Alaska fleet around access, and Safari Quest is the sharpest end of it. At 120 feet she reaches wilderness areas with the tightest permits, where no more than two groups of twelve may go ashore in a day. For those, UnCruise says, she is the ticket in.",
+  "Four decks hold a lounge and dining room, a small library, an open bridge, a hot tub on the observation deck and eleven cabins, the Admirals on the bridge deck. Meals are served at table; every drink is included.",
+  "Her Alaska summer is one week, repeated: Juneau round trip by Icy Strait, Chichagof, Admiralty Island, Warm Springs Bay, Frederick Sound and Dawes Glacier. In May and September she also sails the twelve nights between Seattle and Juneau."
+ ],
+ "why": [
+  "Twenty-two guests: a whole yacht for one family or a group of friends, or a week that feels like it.",
+  "Permit-limited wilderness, ashore in groups of twelve or fewer.",
+  "Frederick Sound for humpback, killer, minke and fin whales, and Admiralty Island, the island of the bears."
+ ],
+ "hero": {
+  "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/safari-quest/hero",
+  "alt": "A humpback whale's tail fluke below snow-capped mountains in Southeast Alaska",
+  "credit": "UnCruise Adventures"
+ },
+ "gallery": [
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/safari-quest/admiral-cabin",
+   "alt": "A Safari Quest cabin with a wide window onto the water",
+   "credit": "UnCruise Adventures"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/ships/safari-quest/cabin",
+   "alt": "A wood-panelled Safari Quest cabin with a queen bed",
+   "credit": "UnCruise Adventures"
+  },
+  {
+   "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/voyages/uncruise/breaching-humpback",
+   "alt": "A humpback whale breaching in Southeast Alaska",
+   "credit": "UnCruise Adventures"
+  }
+ ],
+ "cabins": [
+  {
+   "type": "Admiral",
+   "count": null,
+   "size": null,
+   "beds": null,
+   "deck": "Bridge Deck",
+   "features": [
+    "View window",
+    "The bridge deck, beside the library and open bridge"
+   ],
+   "image": null
+  },
+  {
+   "type": "Pathfinder",
+   "count": null,
+   "size": null,
+   "beds": "Fixed queen",
+   "deck": "Main Deck",
+   "features": [
+    "View window",
+    "On the main deck, no stairs to the dining room"
+   ],
+   "image": null
+  },
+  {
+   "type": "Navigator",
+   "count": null,
+   "size": null,
+   "beds": "Queen, or a queen or two twins",
+   "deck": "Cabin Deck",
+   "features": [
+    "Elevated portlights, no view"
+   ],
+   "image": null
+  },
+  {
+   "type": "Compass",
+   "count": null,
+   "size": null,
+   "beds": "One twin",
+   "deck": "Main Deck",
+   "features": [
+    "The single cabin",
+    "View window"
+   ],
+   "image": null
+  }
+ ],
+ "deckPlans": [],
+ "itineraries": [
+  {
+   "name": "Alaska's Glacier Wilderness, 7 nights",
+   "nights": 7,
+   "direction": "Juneau round trip",
+   "short": "Glacier Bay's outer bay, Admiralty Island and Dawes Glacier",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Fly into Juneau by 3 pm and board the Safari Quest."
+    },
+    {
+     "day": 2,
+     "title": "Icy Strait and Glacier Bay's outer bay",
+     "place": "Glacier Bay, the outer bay",
+     "lat": 58.45,
+     "lng": -136.05,
+     "summary": "Whales in Icy Strait, then the quiet outer reaches of the park."
+    },
+    {
+     "day": 3,
+     "title": "Iyoukeen Cove and Basket Bay",
+     "place": "Chichagof Island: Iyoukeen Cove and Basket Bay",
+     "lat": 57.66,
+     "lng": -134.93,
+     "summary": "Deep into Chichagof's wilderness by skiff and kayak."
+    },
+    {
+     "day": 4,
+     "title": "Whitewater Bay or Takatz Bay",
+     "place": "Admiralty Island: Whitewater Bay",
+     "lat": 57.22,
+     "lng": -134.6,
+     "summary": "Admiralty Island, Kootznoowoo to the Tlingit, the fortress of the bears."
+    },
+    {
+     "day": 5,
+     "title": "Warm Springs Bay",
+     "place": "Warm Springs Bay",
+     "lat": 57.09,
+     "lng": -134.83,
+     "summary": "Hot springs few visitors reach, and the Red Bluff wilderness."
+    },
+    {
+     "day": 6,
+     "title": "Frederick Sound",
+     "place": "Frederick Sound, Admiralty Island National Monument",
+     "lat": 57.15,
+     "lng": -134.05,
+     "summary": "Humpback, killer, minke and fin whales off Admiralty Island."
+    },
+    {
+     "day": 7,
+     "title": "Dawes Glacier",
+     "place": "Endicott Arm and Dawes Glacier",
+     "lat": 57.58,
+     "lng": -133.25,
+     "summary": "Skiffs up Endicott Arm among harbor seals on the ice."
+    },
+    {
+     "day": 8,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "Breakfast aboard, then the transfer to Juneau airport for flights from 11.30 am."
+    }
+   ]
+  },
+  {
+   "name": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "nights": 12,
+   "direction": "Seattle to Juneau",
+   "short": "Sucia Island, Canada's Inside Passage, Misty Fjords and Glacier Bay",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Seattle",
+     "place": "Seattle",
+     "lat": 47.66,
+     "lng": -122.4,
+     "summary": "Fly into Seattle by 2 pm; you board in Ballard."
+    },
+    {
+     "day": 2,
+     "title": "Sucia Island",
+     "place": "Sucia Island",
+     "lat": 48.76,
+     "lng": -122.9,
+     "summary": "A marine state park in the San Juans, reached only by boat."
+    },
+    {
+     "day": 3,
+     "title": "Canada's Inside Passage",
+     "place": "Strait of Georgia",
+     "lat": 49.6,
+     "lng": -124.4,
+     "summary": "North through the Strait of Georgia, eagles over the treetops."
+    },
+    {
+     "day": 4,
+     "title": "Canada's Inside Passage",
+     "place": "Queen Charlotte Sound",
+     "lat": 51.0,
+     "lng": -127.7,
+     "summary": "Coffee on the bow through Queen Charlotte Sound."
+    },
+    {
+     "day": 5,
+     "title": "The Great Bear Rainforest",
+     "place": "Great Bear Rainforest",
+     "lat": 52.8,
+     "lng": -128.7,
+     "summary": "Watching the shore for the white spirit bear."
+    },
+    {
+     "day": 6,
+     "title": "Misty Fjords National Monument",
+     "place": "Misty Fjords National Monument",
+     "lat": 55.55,
+     "lng": -130.88,
+     "summary": "Sheer cliffs and waterfalls by kayak and skiff."
+    },
+    {
+     "day": 7,
+     "title": "Ketchikan",
+     "place": "Ketchikan",
+     "lat": 55.34,
+     "lng": -131.65,
+     "summary": "Alaska's First City and its Tlingit culture."
+    },
+    {
+     "day": 8,
+     "title": "Thomas Bay and Wrangell Narrows",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Moraines, muskeg and Christmas Tree Lane."
+    },
+    {
+     "day": 9,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach."
+    },
+    {
+     "day": 10,
+     "title": "Icy Strait",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Kayaking, all-day paddles, shore walks and bushwhacks where the humpbacks feed."
+    },
+    {
+     "day": 11,
+     "title": "Glacier Bay National Park",
+     "place": "Glacier Bay National Park",
+     "lat": 58.62,
+     "lng": -136.05,
+     "summary": "Deep into the park by kayak, skiff and on foot: moraines, glacial ridges, puffins, sea lions and mountain goats."
+    },
+    {
+     "day": 12,
+     "title": "Glacier Bay National Park",
+     "place": "Upper Glacier Bay",
+     "lat": 58.93,
+     "lng": -136.8,
+     "summary": "A second day in the park, among the tidewater glaciers of the upper bay."
+    },
+    {
+     "day": 13,
+     "title": "Disembark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "The transfer to Juneau airport is included."
+    }
+   ]
+  },
+  {
+   "name": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "nights": 12,
+   "direction": "Juneau to Seattle",
+   "short": "Sucia Island, Canada's Inside Passage, Misty Fjords and Glacier Bay (reverse)",
+   "days": [
+    {
+     "day": 1,
+     "title": "Embark in Juneau",
+     "place": "Juneau",
+     "lat": 58.3,
+     "lng": -134.42,
+     "summary": "The transfer to Juneau airport is included.",
+     "indicative": true
+    },
+    {
+     "day": 2,
+     "title": "Glacier Bay National Park",
+     "place": "Upper Glacier Bay",
+     "lat": 58.93,
+     "lng": -136.8,
+     "summary": "A second day in the park, among the tidewater glaciers of the upper bay.",
+     "indicative": true
+    },
+    {
+     "day": 3,
+     "title": "Glacier Bay National Park",
+     "place": "Glacier Bay National Park",
+     "lat": 58.62,
+     "lng": -136.05,
+     "summary": "Deep into the park by kayak, skiff and on foot: moraines, glacial ridges, puffins, sea lions and mountain goats.",
+     "indicative": true
+    },
+    {
+     "day": 4,
+     "title": "Icy Strait",
+     "place": "Icy Strait",
+     "lat": 58.24,
+     "lng": -135.65,
+     "summary": "Kayaking, all-day paddles, shore walks and bushwhacks where the humpbacks feed.",
+     "indicative": true
+    },
+    {
+     "day": 5,
+     "title": "Chichagof Island",
+     "place": "Chichagof Island",
+     "lat": 57.93,
+     "lng": -135.15,
+     "summary": "A day on Chichagof's shore for coastal brown bears, from skiffs, kayaks and the beach.",
+     "indicative": true
+    },
+    {
+     "day": 6,
+     "title": "Thomas Bay and Wrangell Narrows",
+     "place": "Thomas Bay",
+     "lat": 57.04,
+     "lng": -132.98,
+     "summary": "Moraines, muskeg and Christmas Tree Lane.",
+     "indicative": true
+    },
+    {
+     "day": 7,
+     "title": "Ketchikan",
+     "place": "Ketchikan",
+     "lat": 55.34,
+     "lng": -131.65,
+     "summary": "Alaska's First City and its Tlingit culture.",
+     "indicative": true
+    },
+    {
+     "day": 8,
+     "title": "Misty Fjords National Monument",
+     "place": "Misty Fjords National Monument",
+     "lat": 55.55,
+     "lng": -130.88,
+     "summary": "Sheer cliffs and waterfalls by kayak and skiff.",
+     "indicative": true
+    },
+    {
+     "day": 9,
+     "title": "The Great Bear Rainforest",
+     "place": "Great Bear Rainforest",
+     "lat": 52.8,
+     "lng": -128.7,
+     "summary": "Watching the shore for the white spirit bear.",
+     "indicative": true
+    },
+    {
+     "day": 10,
+     "title": "Canada's Inside Passage",
+     "place": "Queen Charlotte Sound",
+     "lat": 51.0,
+     "lng": -127.7,
+     "summary": "Coffee on the bow through Queen Charlotte Sound.",
+     "indicative": true
+    },
+    {
+     "day": 11,
+     "title": "Canada's Inside Passage",
+     "place": "Strait of Georgia",
+     "lat": 49.6,
+     "lng": -124.4,
+     "summary": "North through the Strait of Georgia, eagles over the treetops.",
+     "indicative": true
+    },
+    {
+     "day": 12,
+     "title": "Sucia Island",
+     "place": "Sucia Island",
+     "lat": 48.76,
+     "lng": -122.9,
+     "summary": "A marine state park in the San Juans, reached only by boat.",
+     "indicative": true
+    },
+    {
+     "day": 13,
+     "title": "Disembark in Seattle",
+     "place": "Seattle",
+     "lat": 47.66,
+     "lng": -122.4,
+     "summary": "Fly into Seattle by 2 pm; you board in Ballard.",
+     "indicative": true
+    }
+   ]
+  }
+ ],
+ "departures": [
+  {
+   "date": "2027-05-02",
+   "dateTo": "2027-05-14",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Seattle to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 10500,
+    "Pathfinder": 12600,
+    "Admiral": 14700
+   },
+   "singlePrices": {
+    "Compass": 14700,
+    "Navigator": 18400,
+    "Pathfinder": 22100,
+    "Admiral": 25800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-14",
+   "dateTo": "2027-05-21",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 10500,
+    "Pathfinder": 12600,
+    "Admiral": 14700
+   },
+   "singlePrices": {
+    "Compass": 14700,
+    "Navigator": 18400,
+    "Pathfinder": 22100,
+    "Admiral": 25800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-21",
+   "dateTo": "2027-05-28",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 10500,
+    "Pathfinder": 12600,
+    "Admiral": 14700
+   },
+   "singlePrices": {
+    "Compass": 14700,
+    "Navigator": 18400,
+    "Pathfinder": 22100,
+    "Admiral": 25800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-05-28",
+   "dateTo": "2027-06-04",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-04",
+   "dateTo": "2027-06-11",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-11",
+   "dateTo": "2027-06-18",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-18",
+   "dateTo": "2027-06-25",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-06-25",
+   "dateTo": "2027-07-02",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-02",
+   "dateTo": "2027-07-09",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-09",
+   "dateTo": "2027-07-16",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-16",
+   "dateTo": "2027-07-23",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-23",
+   "dateTo": "2027-07-30",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-07-30",
+   "dateTo": "2027-08-06",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-06",
+   "dateTo": "2027-08-13",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-13",
+   "dateTo": "2027-08-20",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-20",
+   "dateTo": "2027-08-27",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-08-27",
+   "dateTo": "2027-09-03",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-03",
+   "dateTo": "2027-09-10",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 10500,
+    "Pathfinder": 12600,
+    "Admiral": 14700
+   },
+   "singlePrices": {
+    "Compass": 14700,
+    "Navigator": 18400,
+    "Pathfinder": 22100,
+    "Admiral": 25800
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-10",
+   "dateTo": "2027-09-17",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 9900,
+    "Pathfinder": 11900,
+    "Admiral": 13900
+   },
+   "singlePrices": {
+    "Compass": 13900,
+    "Navigator": 17400,
+    "Pathfinder": 20900,
+    "Admiral": 24400
+   },
+   "note": null
+  },
+  {
+   "date": "2027-09-17",
+   "dateTo": "2027-09-29",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Juneau to Seattle",
+   "status": null,
+   "prices": {
+    "Navigator": 9900,
+    "Pathfinder": 11900,
+    "Admiral": 13900
+   },
+   "singlePrices": {
+    "Compass": 13900,
+    "Navigator": 17400,
+    "Pathfinder": 20900,
+    "Admiral": 24400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-07",
+   "dateTo": "2028-05-19",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Seattle to Juneau",
+   "status": null,
+   "prices": {
+    "Navigator": 10500,
+    "Pathfinder": 12600,
+    "Admiral": 14700
+   },
+   "singlePrices": {
+    "Compass": 14700,
+    "Navigator": 18400,
+    "Pathfinder": 22100,
+    "Admiral": 25800
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-19",
+   "dateTo": "2028-05-26",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 10500,
+    "Pathfinder": 12600,
+    "Admiral": 14700
+   },
+   "singlePrices": {
+    "Compass": 14700,
+    "Navigator": 18400,
+    "Pathfinder": 22100,
+    "Admiral": 25800
+   },
+   "note": null
+  },
+  {
+   "date": "2028-05-26",
+   "dateTo": "2028-06-02",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 10500,
+    "Pathfinder": 12600,
+    "Admiral": 14700
+   },
+   "singlePrices": {
+    "Compass": 14700,
+    "Navigator": 18400,
+    "Pathfinder": 22100,
+    "Admiral": 25800
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-02",
+   "dateTo": "2028-06-09",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-09",
+   "dateTo": "2028-06-16",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-16",
+   "dateTo": "2028-06-23",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-23",
+   "dateTo": "2028-06-30",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-06-30",
+   "dateTo": "2028-07-07",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-07",
+   "dateTo": "2028-07-14",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-14",
+   "dateTo": "2028-07-21",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-21",
+   "dateTo": "2028-07-28",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-07-28",
+   "dateTo": "2028-08-04",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-04",
+   "dateTo": "2028-08-11",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-11",
+   "dateTo": "2028-08-18",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-18",
+   "dateTo": "2028-08-25",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-08-25",
+   "dateTo": "2028-09-01",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 11200,
+    "Pathfinder": 13500,
+    "Admiral": 15700
+   },
+   "singlePrices": {
+    "Compass": 15700,
+    "Navigator": 19600,
+    "Pathfinder": 23700,
+    "Admiral": 27500
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-01",
+   "dateTo": "2028-09-08",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 10500,
+    "Pathfinder": 12600,
+    "Admiral": 14700
+   },
+   "singlePrices": {
+    "Compass": 14700,
+    "Navigator": 18400,
+    "Pathfinder": 22100,
+    "Admiral": 25800
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-08",
+   "dateTo": "2028-09-15",
+   "itinerary": "Alaska's Glacier Wilderness, 7 nights",
+   "direction": "Juneau round trip",
+   "status": null,
+   "prices": {
+    "Navigator": 9900,
+    "Pathfinder": 11900,
+    "Admiral": 13900
+   },
+   "singlePrices": {
+    "Compass": 13900,
+    "Navigator": 17400,
+    "Pathfinder": 20900,
+    "Admiral": 24400
+   },
+   "note": null
+  },
+  {
+   "date": "2028-09-15",
+   "dateTo": "2028-09-27",
+   "itinerary": "Glacier Bay and the Inside Passage with the San Juan Islands, 12 nights",
+   "direction": "Juneau to Seattle",
+   "status": null,
+   "prices": {
+    "Navigator": 9900,
+    "Pathfinder": 11900,
+    "Admiral": 13900
+   },
+   "singlePrices": {
+    "Compass": 13900,
+    "Navigator": 17400,
+    "Pathfinder": 20900,
+    "Admiral": 24400
+   },
+   "note": null
+  }
+ ],
+ "datesPublished": true,
+ "pricesNote": "Fares per person in USD as UnCruise publishes them for 2027 and 2028, by cabin, sharing; single fares where UnCruise publishes them (Compass cabins are singles). Port fees and taxes included; gratuities not. Whole-ship charters on request.",
+ "fareBasis": "Per person, sharing, by cabin; single fares as published",
+ "inclusions": [
+  "All meals, with vegetarian, vegan, gluten-free and dairy-free options",
+  "All drinks, alcoholic and not",
+  "Port fees and taxes",
+  "Kayaks, paddleboards, skiffs and hiking poles, with naturalist guides",
+  "Airport transfers on embarkation and disembarkation days, as UnCruise publishes them"
+ ],
+ "exclusions": [
+  "Gratuities",
+  "Flights to and from Alaska",
+  "Pre and post cruise hotels (we arrange them)",
+  "Wi-Fi inside national parks and protected areas (none is available there)"
+ ],
+ "children": "UnCruise publishes no family departures on Safari Quest; for a family, charter the whole yacht and we plan the week around your children.",
+ "faqs": [
+  [
+   "How many guests does Safari Quest carry?",
+   "22, in 11 cabins, with a guest to crew ratio of two to one."
+  ],
+  [
+   "Where does Safari Quest sail in Alaska?",
+   "Alaska's Glacier Wilderness, seven nights round trip from Juneau, from May to September; and between Seattle and Juneau, twelve nights, in May and September."
+  ],
+  [
+   "Can we charter Safari Quest?",
+   "Yes. UnCruise offers her as a full ship on every sailing; ask us for the rate."
+  ],
+  [
+   "Is Wi-Fi available?",
+   "Yes, except inside national parks, preserves and protected areas, where there is none."
+  ]
+ ],
+ "suits": [
+  {
+   "who": "A family or group of up to 22",
+   "line": "The whole yacht, chartered, for a private Alaska week."
+  },
+  {
+   "who": "Whale watchers",
+   "line": "Frederick Sound and Icy Strait, at the pace of a yacht this small."
+  }
+ ],
+ "sources": [
+  "https://uncruise.com/blogs/our-ships/safari-quest",
+  "https://uncruise.com/products/alaskas-glacier-wilderness-with-glacier-bay",
+  "https://uncruise.com/products/glacier-bay-national-park-with-inside-passage-and-san-juan-islands"
+ ],
+ "film": null,
+ "proofLine": "UnCruise Adventures partner",
+ "pathway": {
+  "primary": "PATH-04",
+  "secondary": [
+   "PATH-02"
+  ]
+ },
+ "terms": [
+  "UnCruise's own terms apply; we confirm deposit, payment and cancellation terms with your quote."
+ ]
+}

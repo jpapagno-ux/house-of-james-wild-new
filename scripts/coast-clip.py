@@ -12,7 +12,8 @@ BOX = {  # lng/lat, padded round every sailed route of the destination
  "komodo": (117.0, -9.2, 120.5, -7.6),
  "costa-rica": (-86.3, 7.8, -82.3, 11.4),
  "fiji": (176.6, -19.3, 178.9, -16.3),
- "tahiti": (-152.3, -18.0, -145.1, -14.6),  # the Society Islands and the Tuamotu (Rangiroa, Fakarava)
+ "tahiti": (-152.3, -18.0, -145.1, -14.6),
+ "alaska": (-170.5, 46.5, -121.0, 62.2),  # UnCruise: Seattle and the Inside Passage to Prince William Sound and Dutch Harbor  # the Society Islands and the Tuamotu (Rangiroa, Fakarava)
 }
 g = json.load(open(src))
 geoms = g["geometries"] if "geometries" in g else [f["geometry"] for f in g["features"]]

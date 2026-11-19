@@ -1,0 +1,83 @@
+# Source: uncruise.com product pages, read 19 Nov 2026. Per person USD, port fees & taxes included, gratuities not.
+# Format: @itin handle | name | nights | embark | disembark ; TABLE ship year | cabins (D/S = double+single, S = single only) ; rows dates | prices in column order
+@itin glacier-bay-adventure-cruise-with-2-days-in-glacier-bay | Glacier Bay Adventure Cruise with 2 Days in Glacier Bay | 7 | Juneau | Juneau
+TABLE Wilderness Discoverer 2027 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Apr 18 | 4900 8600 5400 9500 5900 10400 7400 13000
+Apr 25 | 5300 9300 5900 10400 6400 11200 8000 14000
+May 2 | 5700 10000 6300 11100 6900 12100 8600 15100
+May 9; Sept 19 | 6100 10700 6800 11900 7400 13000 9200 16100
+May 16; Sept 12 | 6500 11400 7200 12600 7800 13700 9800 17200
+May 23**; Sept 5 | 6900 12100 7600 13300 8300 14600 10400 18200
+May 30; Jun 6, 13*, 20*; Jul 11, 18, 25; Aug 15, 22, 29** | 7300 12800 8100 14200 8800 15400 11000 19300
+TABLE Wilderness Adventurer 2027 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S
+May 9 | 7400 6100 10700 6800 11900 7400 13000
+May 16; Sept 12 | 7800 6500 11400 7200 12600 7800 13700
+May 23; Sept 5 | 8300 6900 12100 7600 13300 8300 14600
+May 30; Jun 6, 13, 20, 27; Jul 4, 11, 18, 25; Aug 1, 8, 15, 22, 29 | 8800 7300 12800 8100 14200 8800 15400
+TABLE Wilderness Discoverer 2028 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Apr 23, 30 | 5300 9300 5900 10400 6400 11200 8000 14000
+May 7 | 5700 10000 6300 11100 6900 12100 8600 15100
+May 14; Sept 17 | 6100 10700 6800 11900 7400 13000 9200 16100
+May 21**; Sept 10 | 6500 11400 7200 12600 7800 13700 9800 17200
+May 28; Sept 3 | 6900 12100 7600 13300 8300 14600 10400 18200
+Jun 4, 11, 18; Jul 9, 16, 23*; Aug 13, 20, 27** | 7300 12800 8100 14200 8800 15400 11000 19300
+TABLE Wilderness Adventurer 2028 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S
+Apr 30 | 6400 5300 9300 5900 10400 6400 11200
+May 7 | 6900 5700 10000 6300 11100 6900 12100
+May 14 | 7400 6100 10700 6800 11900 7400 13000
+May 21; Sept 10 | 7800 6500 11400 7200 12600 7800 13700
+May 28; Sept 3 | 8300 6900 12100 7600 13300 8300 14600
+Jun 4, 11, 18, 25; Jul 2, 9, 16, 23, 30; Aug 6, 13, 20, 27 | 8800 7300 12800 8100 14200 8800 15400
+NOTE ** Adult Escape (18+), * Families in Nature (Discoverer tables)
+
+@itin alaskas-fjords-glaciers-with-ketchikan | Alaska's Fjords & Glaciers with Ketchikan | 7 | Juneau | Ketchikan (or reverse)
+TABLE Wilderness Discoverer 2027 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Apr 11* | 4900 8600 5400 9500 5900 10400 7400 13000
+Sept 26 | 5700 10000 6300 11100 6900 12100 8600 15100
+Jun 27»; Jul 4*; Aug 1, 8* | 7300 12800 8100 14200 8800 15400 11000 19300
+TABLE Wilderness Adventurer 2027 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S
+May 2* | 6900 5700 10000 6300 11100 6900 12100
+Sept 19 | 7400 6100 10700 6800 11900 7400 13000
+TABLE Wilderness Discoverer 2028 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Apr 16* | 5300 9300 5900 10400 6400 11200 8000 14000
+Sept 24 | 5700 10000 6300 11100 6900 12100 8600 15100
+Jun 25; Jul 2*, 30; Aug 6* | 7300 12800 8100 14200 8800 15400 11000 19300
+TABLE Wilderness Adventurer 2028 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S
+Apr 23* | 6400 5300 9300 5900 10400 6400 11200
+Sept 17 | 7400 6100 10700 6800 11900 7400 13000
+NOTE * sails Ketchikan to Juneau (reverse); » Photography Cruise Jun 27 2027
+
+@itin wild-woolly-and-wow-with-glacier-bay | Wild, Woolly and Wow with Glacier Bay | 7 | Juneau | Juneau
+TABLE Wilderness Legacy 2027 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+Apr 24** | 5300 9300 5900 10400 6400 11200 6900 12100 8000 14000 9600 16800
+May 1 | 5800 10200 6400 11200 7000 12300 7600 13300 8700 15300 10500 18400
+May 8 | 6300 11100 7000 12300 7600 13300 8200 14400 9500 16700 11400 20000
+May 15 | 6800 11900 7500 13200 8200 14400 8900 15600 10200 17900 12300 21600
+May 22; Sept 11 | 7300 12800 8100 14200 8800 15400 9500 16700 11000 19300 13200 23100
+May 29; Sept 4 | 8000 14000 8800 15400 9600 16800 10400 18200 12000 21000 14400 25200
+Jun 5, 12, 19, 26*; Jul 3, 10, 17, 24*, 31*; Aug 7, 14, 21**, 28 | 8500 14900 9400 16500 10200 17900 11100 19500 12800 22400 15300 26800
+TABLE Wilderness Legacy 2028 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S, Jr. Commodore Suite D/S, Commodore Suite D/S
+Apr 29** | 5800 10200 6400 11200 7000 12300 7600 13300 9900 17400 10800 18900
+May 6 | 6300 11100 7000 12300 7600 13300 8200 14400 10300 18100 11400 20000
+May 13 | 6800 11900 7500 13200 8200 14400 8900 15600 11100 19500 11900 20900
+May 20; Sept 9 | 7300 12800 8100 14200 8800 15400 9500 16700 11900 20900 12900 22600
+May 27; Sept 2 | 8000 14000 8800 15400 9600 16800 10400 18200 12900 22600 14100 24700
+Jun 3, 10, 17, 24*; Jul 1, 8, 15*, 22, 29; Aug 5*, 12, 19**, 26 | 8500 14900 9400 16500 10200 17900 11100 19500 13300 23300 14900 26100
+NOTE ** Adult Escape (18+), * Families in Nature
+
+@itin northern-passages-with-glacier-bay | Northern Passages with Glacier Bay & Sitka | 7 | Juneau | Sitka (or reverse)
+TABLE Wilderness Explorer 2027 | Compass S, Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S
+Jun 25; Jul 2‡, 9, 16‡ | 10200 8500 14900 9400 16500 10200 17900 11100 19500
+TABLE Safari Endeavour 2027 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S, Commodore Suite D/S
+May 8** | 6300 11100 7000 12300 7600 13300 8200 14400 11700 20500
+May 15‡; Sept 18‡ | 6800 11900 7500 13200 8200 14400 8900 15600 12600 22100
+May 22; Sept 11 | 7300 12800 8100 14200 8800 15400 9500 16700 13600 23800
+May 29‡; Sept 4**‡ | 8000 14000 8800 15400 9600 16800 10400 18200 14800 25900
+Jun 5, 12‡, 19, 26‡; Jul 3, 10‡, 17, 24‡, 31**; Aug 7‡, 14, 21‡, 28 | 8500 14900 9400 16500 10200 17900 11100 19500 15800 27700
+TABLE Safari Endeavour 2028 | Navigator D/S, Trailblazer D/S, Pathfinder D/S, Admiral D/S, Commodore Suite D/S
+May 6** | 6300 11100 7000 12300 7600 13300 8200 14400 11700 20500
+May 13‡; Sept 16‡ | 6800 11900 7500 13200 8200 14400 8900 15600 12600 22100
+May 20; Sept 9 | 7300 12800 8100 14200 8800 15400 9500 16700 13600 23800
+May 27‡; Sept 2‡** | 8000 14000 8800 15400 9600 16800 10400 18200 14800 25900
+Jun 3, 10‡, 17, 24‡; Jul 1, 8‡, 15, 22‡, 29**; Aug 5‡, 12, 19‡, 26 | 8500 14900 9400 16500 10200 17900 11100 19500 15800 27700
+NOTE ‡ reverse (Sitka to Juneau); ** Adult Escape (18+)

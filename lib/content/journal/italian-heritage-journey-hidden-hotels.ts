@@ -2,13 +2,13 @@
 // Story record 6a8d69779081b23434f9daa3, rewrite of 25 Aug 2026). James asked on 18 Nov 2026 for it to be
 // built for the Journal with the stats added. Body is James's library text, tightened: notes to the team are
 // removed, "Wild Earth Stays" reads "we" or the house, and the stay H3s are made unique questions for AEO.
-// No anecdote, family name or town is added: the library notes ask James to confirm his ancestral town
-// before it is named, so the piece says only "southern Italy", as his text does.
+// James confirmed his ancestral town on 19 Nov 2026: Naples. No anecdote or family name is added.
 //
 // Stay facts are James's own (his text cites each hotel's own site). Sextantio's albergo diffuso detail,
 // Via Civita address (Sasso Barisano) and minimum-intervention restoration come from the Base44 Stay record
-// STY-2026-000703 (source: sextantio.it). None of the five stays is in lib/content/stays.json yet, so none
-// is linked; the post lists no stays until they pass House Review.
+// STY-2026-000703 (source: sextantio.it). Castello di Vicarello, Capofaro and Pension Briol joined the Ledger on
+// 19 Nov 2026 (STY-2026-000757 to 000759, from each hotel's own site) and are linked; Sextantio (no photos) and
+// Locanda del Gallo (its domain now shows an unrelated page) stay held.
 //
 // Place stats, official sources only (kept here, never printed as links):
 // - Sassi of Matera inscribed 1993, criteria (iii)(iv)(v); "the most outstanding, intact example of a
@@ -27,7 +27,7 @@ export const ITALIAN_HERITAGE_BODY = `Italy has never felt like a destination I 
 
 It feels familiar before I can explain why. A church bell carries across a village. Someone opens a door onto a stone courtyard. Lunch becomes the centre of the afternoon, and nobody seems in a hurry to end it.
 
-My family story begins in southern Italy, and perhaps that is why returning always feels personal. I am not looking for a grand tour built around the most famous hotel in each city. I am looking for places that hold onto memory: a cave restored without erasing its past, a castle still shaped by family life, a vineyard facing the sea.
+My family story begins in Naples, and perhaps that is why returning always feels personal. I am not looking for a grand tour built around the most famous hotel in each city. I am looking for places that hold onto memory: a cave restored without erasing its past, a castle still shaped by family life, a vineyard facing the sea.
 
 These five stays are spread across Italy, and I would not force them into one rushed itinerary. I think of them as five different ways into the country, each revealing something about belonging, preservation and the pleasure of staying somewhere with a story.
 

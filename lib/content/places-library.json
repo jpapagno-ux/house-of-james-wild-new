@@ -55,11 +55,13 @@
    "regionSlug": "europe",
    "subtitle": "Folegandros, Milos, Santorini and Kea, Greece",
    "stays": [
+    "canaves-oia-epitome",
     "domes-white-coast-milos",
     "gundari",
     "kapari-natural-resort",
     "katikies-santorini",
-    "one-only-kea-island"
+    "one-only-kea-island",
+    "perivolas"
    ]
   },
   {
@@ -93,7 +95,8 @@
    "regionSlug": "europe",
    "subtitle": "Zakynthos and the Ionian, Greece",
    "stays": [
-    "nobelos-seaside-lodge"
+    "nobelos-seaside-lodge",
+    "olea-all-suite-hotel"
    ]
   },
   {
@@ -141,7 +144,9 @@
    "regionSlug": "europe",
    "subtitle": "Monemvasia, the Mani and Laconia, Greece",
    "stays": [
+    "dexamenes-seaside-hotel",
     "eumelia",
+    "euphoria-retreat",
     "kinsterna-hotel",
     "tainaron-blue-retreat"
    ]

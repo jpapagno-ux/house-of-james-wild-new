@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-18",
+ "exportedOn": "2026-11-19",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -997,6 +997,86 @@
     "6ae69754485e2efc242bd93a",
     "6ae697555c7b134365e994fc"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "7132-hotel",
+   "name": "7132 Hotel",
+   "ledgerId": "STY-2026-000715",
+   "country": "Switzerland",
+   "countrySlug": "switzerland",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A spa hotel in the mountain village of Vals, home of Peter Zumthor's thermal baths built from 60,000 slabs of Vals quartzite",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/7132-hotel/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/7132-hotel/spa-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/7132-hotel/double-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/7132-hotel/hotel-interior"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wellness",
+    "architecture",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Zurich (ZRH), or Geneva, Basel, Bern, Lugano or Altenrhein",
+   "airportDirections": "The hotel collects guests by limousine from Zurich, Geneva, Basel, Bern, Lugano or Altenrhein, or by its Airbus EC 130 helicopter from anywhere in Switzerland. By car via Chur and Flims to Ilanz, then 20 km to Vals; by train via Chur to Ilanz, then the Swiss Postbus.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "7132 Hotel 5s: Double Rooms, Spa Deluxe and Spa Suites, each with a mountain view.",
+     "Three Penthouse Suites on the top floor designed by Kengo Kuma, with fully glazed fronts.",
+     "House of Architects: 73 rooms of 20 m2 each, by Peter Zumthor, Tadao Ando, Kengo Kuma and Thom Mayne."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The 7132 Therme thermal baths by Peter Zumthor",
+     "Hiking trails and ski slopes around Vals",
+     "Silver Sunday Lunch, Friday Night Dinner and Silver Sounds evenings",
+     "Private transfer by limousine or helicopter"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Guests stay beside the 7132 Therme, Peter Zumthor's thermal baths made from 60,000 slabs of Vals quartzite and given protected heritage status soon after completion, fed by the St. Peter spring at about 30 degrees Celsius. The House of Architects offers rooms by Zumthor, Tadao Ando, Kengo Kuma and Thom Mayne."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-03",
+     "PATH-08"
+    ],
+    "setting": "alpine_thermal",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -4549,6 +4629,87 @@
    "placeSlug": null
   },
   {
+   "slug": "areias-do-seixo",
+   "name": "Areias do Seixo",
+   "ledgerId": "STY-2026-000688",
+   "country": "Portugal + Azores",
+   "countrySlug": "portugal",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Forty suites, pool villas and townhouses on the Atlantic at Santa Cruz, warmed by geothermal and aerothermal energy, with a garden that feeds the table",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/areias-do-seixo/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/areias-do-seixo/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/areias-do-seixo/family-village",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/areias-do-seixo/garden"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "families",
+    "couples",
+    "surf"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 39.152983,
+    "lng": -9.36305
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "15 suites: a charm tent called the Shelter, 4 Love Superior Ocean Suites, 9 Tree Ocean Suites and a Land Garden Suite.",
+     "25 villas and townhouses: 3 Ocean Signature Superior Pool Villas (4 bedrooms, 8 guests), 6 Ocean Signature Pool Villas, 6 Ocean Superior Pool Villas, 4 Pool Villas and 6 Plunge Pool Townhouses (3 bedrooms, 6 guests each)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Restaurant Semear with produce from the garden",
+     "Spa with three treatment rooms, sauna and steam room (16 and over)",
+     "Yoga, trekking, bikes and the Family Village with two heated pools, karts and a trampoline; a free shuttle to Noah Surf House"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "An Atlantic hotel heated and cooled passively, with geothermal and aerothermal energy, fireplaces in every room, a vegetable garden for Restaurant Semear and a wood-fired hot tub."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-05"
+    ],
+    "setting": "silver_coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "arenas-del-mar-resort",
    "name": "Arenas del Mar",
    "ledgerId": "STY-2026-000022",
@@ -4692,6 +4853,88 @@
     "6ae6974787d64df6a150b163",
     "6ae697470cd87e591e92cccf"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "argos-in-cappadocia",
+   "name": "Argos in Cappadocia",
+   "ledgerId": "STY-2026-000748",
+   "country": "Turkey",
+   "countrySlug": "turkey",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A restored village within the village of Uçhisar, with 71 cave and stone rooms overlooking Pigeon Valley and Mount Erciyes.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/argos-in-cappadocia/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/argos-in-cappadocia/cave-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/argos-in-cappadocia/jacuzzi-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/argos-in-cappadocia/splendid-suite"
+   ],
+   "bestMonths": "Open all year",
+   "bestMonthsNote": "Argos keeps its heated outdoor pool open all year and plans by season: garden strolls in spring, poolside days in summer, valley trails in autumn and spa and fireplace evenings in winter.",
+   "bestFor": [
+    "couples",
+    "food",
+    "wine"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "71 rooms, each different, in cave or stone, double or twin",
+     "Standard Room: 20 to 35 m2; Deluxe Room: 25 to 45 m2",
+     "Jacuzzi Suite: 80 to 110 m2",
+     "Cave Splendid Suite: 60 to 135 m2; Splendid Suite: 90 to 115 m2",
+     "Two-Bedroom Suite: 100 m2; Grand Cave Splendid Suite: 160 m2"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Private cooking classes in Cappadocian cuisine",
+     "Sunrise breakfast on the infinity terrace",
+     "Barbecue at Monks, the outdoor event venue",
+     "Hot air balloon flights and seasonal picnics",
+     "Spa, gym and heated outdoor pool"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Argos was made by restoring a village within the village of Uçhisar: its historic chapel, caravanserai, mill house, caves and tunnels are now places to rest and celebrate. The heated outdoor pool looks over the whole of Pigeon Valley."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": "cappadocia_valleys",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -9294,6 +9537,91 @@
    "placeSlug": null
   },
   {
+   "slug": "canaves-oia-epitome",
+   "name": "Canaves Epitome",
+   "ledgerId": "STY-2026-000721",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Fifty-three suites and villas built in 2018 just outside Oia, each with a pool and a sunset view, around an 8,600 sq ft rooftop pool.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/canaves-oia-epitome/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/canaves-oia-epitome/honeymoon-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/canaves-oia-epitome/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/canaves-oia-epitome/sunset-lounge"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": "Canaves arranges airport and port transfers through its concierge; distances are not published by Canaves on the pages read.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "53 suites and villas in all",
+     "Deluxe Suite with Plunge Pool: 42 m², up to 3 guests, sea view",
+     "Honeymoon Suite with Plunge Pool: 50 m², up to 3 guests, sea view",
+     "Pool Suite: 45 m², up to 2 guests",
+     "Hideaway Pool Suite: 52 m², up to 2 guests, on the cliffs",
+     "Two Bedroom Pool Suite: 90 m², up to 4 guests",
+     "Villas: offered; sizes not published by Canaves on the pages read"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Sunset from the rooftop pool, a suite terrace or a villa",
+     "Fine dining at Elements Restaurant",
+     "Complimentary shuttle to Oia and Ammoudi, about two minutes away",
+     "A Kids Program tailored by age, and a children's pool",
+     "Spa and wellness treatments"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Canaves Epitome sits apart from the lanes of Oia, built in volcanic stone with landscaped gardens, which Canaves says few Santorini hotels have. Every suite and villa faces the sunset and has its own pool, and the rooftop pool, at 8,600 sq ft, is described by Canaves as the largest on the island."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "cyclades",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "cyclades"
+  },
+  {
    "slug": "canvas-and-orchids-retreat",
    "name": "Canvas & Orchids Retreat",
    "ledgerId": "STY-2026-000554",
@@ -9542,6 +9870,90 @@
     "6ae697491cde8e4e0c09adf2",
     "6ae69749a4b2f2b1952e65c1"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "cap-rocat",
+   "name": "Cap Rocat",
+   "ledgerId": "STY-2026-000710",
+   "country": "Spain-Isla Mallorca",
+   "countrySlug": "spain-isla-mallorca",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 19th century fortress on the Bay of Palma, set in a 30 hectare nature reserve with 2 km of protected coast",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/cap-rocat/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/cap-rocat/sentinel-room-at-sunset",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/cap-rocat/doble-fortaleza-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/cap-rocat/suite-el-cabo-terrace"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness",
+    "history"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Doble Fortaleza rooms inside the fortress.",
+     "Sentinels: rooms in the old watchtowers on the cliffs, each with a private pool and two bathrooms.",
+     "Suite Cap Rocat: suites in the fortress embrasures with a sitting area and a gazebo; king size beds, some with a canopy.",
+     "Suite El Cabo: a suite with a roof terrace over the bay and a large spa style bathroom.",
+     "Suite del Mar: a suite with a small overflow pool and a large terrace with hammocks.",
+     "Room count and sizes: not published by Cap Rocat on the pages read."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Boat tours around the island from the hotel's own boat",
+     "Sea, nature, history and tradition experiences arranged by the hotel",
+     "Private dinners under the moonlight",
+     "The spa, with a hammam ritual and a sensory journey programme",
+     "La Fortaleza restaurant and the Sea Club"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Cap Rocat is a military fortress that was never used for defence, now a hotel inside a Protected Natural Area beside the marine reserve of the Bay of Palma. Its Sentinel rooms are dug out of the rock at the old defensive positions on the cliff edge."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08",
+     "PATH-05"
+    ],
+    "setting": "sea_fortress",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -10016,6 +10428,158 @@
    "placeSlug": null
   },
   {
+   "slug": "capitolo-riviera",
+   "name": "Capitolo Riviera",
+   "ledgerId": "STY-2026-000705",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A hotel set in the parks of Nervi on the Ligurian coast, east of Genoa",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/capitolo-riviera/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/capitolo-riviera/capitolo-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/capitolo-riviera/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/capitolo-riviera/signature-room"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Genoa Cristoforo Colombo Airport",
+   "airportDirections": "Hilton's page for the hotel names Genoa Cristoforo Colombo as the nearest airport and states that no airport shuttle is offered. Distance not published on the pages read.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Capitolo Suite, from 50 m², terrace, bathtub and walk-in shower",
+     "Suite, from 38 m², terrace",
+     "Family Room, from 38 m², terrace, for up to four guests",
+     "Signature Room, from 30 m², terrace",
+     "Junior Suite, from 28 m², terrace or balcony",
+     "Premium Room, from 25 m², terrace or balcony",
+     "Deluxe Room, from 25 m²",
+     "Room count not published by Capitolo Riviera on the pages read"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "An outdoor pool in the garden, with cocktails by the pool",
+     "Botanico restaurant and Liquido bar",
+     "Trekking on the coast, to the Nervi lakes and the Sant'Ilario trails",
+     "Sea outings and cultural visits arranged from the hotel"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Capitolo Riviera sits among the parks of Nervi, between the green of the gardens and the Ligurian Sea, with a garden pool and a wellness area with a Kneipp path. Its name means chapter, for the new chapter it writes in Nervi's hospitality."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "ligurian_riviera",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "capofaro",
+   "name": "Capofaro Locanda & Malvasia",
+   "ledgerId": "STY-2026-000758",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-three white rooms among Malvasia vines beside a lighthouse on Salina, facing Stromboli and Panarea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/capofaro/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/capofaro/pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/capofaro/room-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/capofaro/estate-view"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "food_and_wine"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Twenty-three rooms and suites, split between the estate and the lighthouse.",
+     "Suites: Suite Faro, Suite 21, Suite Anfiteatro and Junior Suites.",
+     "Rooms: Room 20, Superior Faro, Superior, Superior Garden and Classic.",
+     "Private sea-facing terraces with bougainvillea and traditional reed shade."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Walks through the vineyards and wine tastings",
+     "Morning yoga, island massages, and an affiliated beach club",
+     "Dining from the estate's own garden and the local fishermen's catch"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Capofaro sits on a small plateau above the sea on Salina, the greenest of the Aeolian Islands, between a working lighthouse and the village of Malfa. The rooms are spread through the Malvasia vineyard and the lighthouse itself, with the cones of Stromboli and Panarea on the horizon."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "cardamom-tented-camp",
    "name": "Cardamom Tented Camp",
    "ledgerId": "STY-2026-000053",
@@ -10410,6 +10974,85 @@
    "placeSlug": null
   },
   {
+   "slug": "casa-de-sao-lourenco",
+   "name": "Casa de São Lourenço",
+   "ledgerId": "STY-2026-000752",
+   "country": "Portugal + Azores",
+   "countrySlug": "portugal",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 1940 mountain pousada in the Serra da Estrela Natural Park above Manteigas, reopened in 2018 by the Burel Mountain group.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/casa-de-sao-lourenco/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/casa-de-sao-lourenco/panoramic-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/casa-de-sao-lourenco/pool-at-night",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/casa-de-sao-lourenco/outdoor-ofuro"
+   ],
+   "bestMonths": "Not published by Casa de São Lourenço on the pages read.",
+   "bestMonthsNote": "Activities are seasonal: winter hikes run November to April, snowshoeing on snow days, and sheep shearing and transhumance from May to July.",
+   "bestFor": [
+    "adventure",
+    "couples",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Room types, counts and sizes: not published by Casa de São Lourenço on the pages read"
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Upper Plateau and Lagoons walk of about 5 hours, with picnic",
+     "Estrela Geopark tour with a geologist, monthly, for hotel guests",
+     "Guided snowshoeing and winter hikes (November to April)",
+     "Electric bike routes, birdwatching and stargazing",
+     "Sheep shearing and transhumance with shepherds (May to July)",
+     "Heated indoor and outdoor pools and an outdoor ofurô at 38 C"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The Pousada de São Lourenço was built in 1940 by Rogério Azevedo, with interiors by Maria Keil, and reopened in 2018 redesigned by Site Specific Arquitetura. It belongs to the Burel Mountain group, linked to the Burel Factory, where guests tour 19th century wool looms."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "serra_da_estrela",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "casali-di-casole",
    "name": "Casali di Casole",
    "ledgerId": "STY-2026-000650",
@@ -10530,6 +11173,74 @@
    "volumes": [
     "europe",
     "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "castello-di-vicarello",
+   "name": "Castello di Vicarello",
+   "ledgerId": "STY-2026-000757",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 12th century castle in the Tuscan Maremma, restored over 18 years by the family who still runs it",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/castello-di-vicarello/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/castello-di-vicarello/castle-living-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/castello-di-vicarello/maremma-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/castello-di-vicarello/suite-bathroom"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "food_and_wine"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Florence Peretola (FLR); Rome Fiumicino (FCO)",
+   "airportDirections": "About 1 hour 45 minutes by car from Florence, 2 hours from Rome Fiumicino, 1 hour 50 minutes from Pisa; Grosseto Beccarini (private aviation) 35 minutes.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Ten suites inside the castle: Torre, Spa, Villa Chiesina, Mezzatorre, Sassi, Vicario, Sprone, Giardino, Levante and the Deluxe Grotta.",
+     "Villa La Vedetta, a villa on the estate.",
+     "Original stone and brick walls throughout; the whole estate can be taken as a buyout."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Tuscan cooking lessons and tastings of the estate's own wines, from 40 hectares of organic vineyards.",
+     "E-bike rides through the countryside and horseback rides.",
+     "Truffle hunting, painting lessons, and sailing along the Argentario coast.",
+     "Wellness, and a pool below the castle tower."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The Baccheschi Berti family spent 18 years, from the 1980s, restoring a 12th century castle in the Maremma, midway between Rome and Florence. It is still family run. Each suite and villa was designed by the family and filled with furniture, art and objects gathered on their travels, so no two are alike."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -13537,6 +14248,90 @@
     "6ae697427ca51cd40af01fc0"
    ],
    "placeSlug": null
+  },
+  {
+   "slug": "dexamenes-seaside-hotel",
+   "name": "Dexamenes Seaside Hotel",
+   "ledgerId": "STY-2026-000723",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A late-1920s winery on Kourouta beach in the western Peloponnese, its concrete wine tanks turned into suites by k-studio.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/dexamenes-seaside-hotel/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/dexamenes-seaside-hotel/winetanks-architecture",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/dexamenes-seaside-hotel/winetank-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/dexamenes-seaside-hotel/courtyard"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wine",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Patras Araxos Airport; Kalamata International Airport; Athens International Airport",
+   "airportDirections": "About 45 minutes by road from Patras Araxos Airport, 1 hour 40 minutes from Kalamata International Airport and 3 hours from Athens International Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Beachfront WineTank Suites: 9, facing the sea.",
+     "Courtyard WineTank Suites: 17, looking onto the two silo tanks, the lake and the vineyard.",
+     "Backyard WineTank Suites: 8, smaller patios, quieter and more private.",
+     "Seaview Terrace Suites: 8, built on top of the Beachfront tanks, with an infinity lake at the balcony edge.",
+     "Seaview ChemLab Suites: 2, the largest, in a neoclassical building on the beach.",
+     "Interconnecting WineTanks available. Sizes not published by Dexamenes on the pages read."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Wine tastings of the Elis region, which has made wine for at least 3,000 years.",
+     "A route of more than eight wineries nearby.",
+     "Ancient Olympia, Ancient Elis, Chlemoutsi Castle and the Temple of Apollo Epicurius.",
+     "Food from young local farmers in the hotel kitchen.",
+     "Cultural gatherings and art projects through the year."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Dexamenes was built in the late 1920s, when the collapse of the currant trade pushed the region to turn unsold currants into wine. Owner Nikos Karaflos and k-studio architects turned the abandoned factory into suites inside the old wine tanks and chemistry labs, finished in steel, glass and timber, on the beach at Kourouta."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "peloponnese",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "peloponnese"
   },
   {
    "slug": "discovery-coron",
@@ -16606,6 +17401,86 @@
    "placeSlug": null
   },
   {
+   "slug": "eremito-hotelito-del-alma",
+   "name": "Eremito",
+   "ledgerId": "STY-2026-000704",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A contemporary hermitage of 18 cells in the Monte Peglia UNESCO Biosphere Reserve, with dinner in silence",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/eremito/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/eremito/celluzza",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/eremito/refectory",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/eremito/relaxation-area"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": "Eremito is open all year except a winter closure, generally mid January to the end of February; it says the weeks either side of the closure are the quietest, with the lounge fire lit.",
+   "bestFor": [
+    "solo",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": "Eremito arranges transfers from the station or airports on request, at extra cost; a jeep brings guests up from the parking area. The airports are not named on the pages read.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "18 Celluzze, inspired by the cells of hermit monks, in three types",
+     "Celluzza Garden: 9 m² (96 ft²), 120 cm French bed, rose garden view",
+     "Celluzza Valley: 9 m² (96 ft²), 120 cm French bed, Umbrian valley view",
+     "Celluzza Priore: 18 m² (193 ft²), 180 cm king bed, Umbrian valley view"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The silent dinner with Gregorian chant, vegetarian and seasonal",
+     "Light yoga and guided meditations, included",
+     "A relaxation area with steam bath and jacuzzi",
+     "Guided retreats and gatherings through the year"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Eremito is a hermitage hotel in the Monte Peglia UNESCO Biosphere Reserve, with no Wi-Fi and generally no mobile signal. Every evening the vegetarian dinner is shared in silence in the refectory, accompanied by Gregorian chant."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-01",
+     "PATH-06"
+    ],
+    "setting": "monte_peglia",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "etosha-mountain-lodge",
    "name": "Etosha Mountain Lodge",
    "ledgerId": "STY-2026-000085",
@@ -16825,6 +17700,93 @@
     "status": "draft",
     "classifiedBy": "Claude (draft for James)",
     "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "peloponnese"
+  },
+  {
+   "slug": "euphoria-retreat",
+   "name": "Euphoria Retreat",
+   "ledgerId": "STY-2026-000722",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A destination spa below the Byzantine town of Mystras, joining ancient Greek and Traditional Chinese medicine in its Euphoria Methodos.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/euphoria-retreat/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/euphoria-retreat/spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/euphoria-retreat/byzantium-grand-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/euphoria-retreat/location"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wellness",
+    "couples",
+    "culture"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Kalamata International Airport (seasonal); Athens International Airport",
+   "airportDirections": "About 1 hour by road from Kalamata International Airport, which operates seasonally, and about 2.5 hours from Athens International Airport. Euphoria arranges private transfers.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Classic Room: 25 to 32 m²",
+     "Superior Deluxe: 35 to 49 m²",
+     "Executive Deluxe: 42 to 49 m²",
+     "Euphoria Junior Suite: 53 m²",
+     "Euphoria Executive Junior Suite: 55 to 63 m²",
+     "Mystras Suite: 55 to 67 m²",
+     "Byzantium Grand Suite: 100 m²",
+     "Total room count: not published by Euphoria Retreat on the pages read"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "The spa building: Byzantine hammam, sphere pool, sanctuary deprivation pool, Finnish and infrared saunas, ice fountain, cold plunge and Kneipp therapy.",
+     "Programmes and retreats built on the Euphoria Methodos, with a medical offering.",
+     "Visits to Mystras: the Cathedral of Agios Demetrios and the Monastery of Panagia Perivleptos.",
+     "Hikes on the mountain paths around Mystras.",
+     "Excursions in the wider Peloponnese."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Euphoria's spa philosophy, the Euphoria Methodos, marries ancient Hellenic medicine with Traditional Chinese Medicine, and its spa building holds a Byzantine hammam, a sphere pool, a deprivation pool and Kneipp therapy. The UNESCO-listed Byzantine town of Mystras is a short drive or a walk up the mountainside from the door."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-08",
+     "PATH-03"
+    ],
+    "setting": "peloponnese",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
    },
    "volumes": [
     "stays",
@@ -18080,6 +19042,86 @@
     "6ae69743534ce9347649211f",
     "6ae69744a272964ca74e7085"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "forestis",
+   "name": "FORESTIS Dolomites",
+   "ledgerId": "STY-2026-000701",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A forest hideaway at 1,800 m on the Plose mountain, facing the Dolomites UNESCO World Heritage Site",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/forestis/fire-pit",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/forestis/hero",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/forestis/gallery-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/forestis/gallery-2"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bolzano Airport (50 km)",
+   "airportDirections": "FORESTIS lists Bolzano Airport at 50 km, Innsbruck at 90 km, Verona at 195 km, Munich at 260 km and Venice at 326 km. By road, drive to the village of Afers; Palmschoß lies directly above it, and signs lead to FORESTIS.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Penthouse: 200 m², 2 guests, 1 bedroom, rooftop with pool",
+     "Tower Suite: 55 m², 2 guests, 1 bedroom",
+     "Suite: 50 m², 2 guests, 1 bedroom",
+     "Room: 35 m², 2 guests, 1 bedroom"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "A spa built around four trees (mountain pine, spruce, larch and stone pine), with indoor and outdoor pool, saunas and silence rooms.",
+     "Forest cuisine at the restaurant, and cooking classes for bread, pasta and desserts.",
+     "Walks in the forest and mountains of the Plose."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "FORESTIS stands at 1,800 m on the sunny southern slope of the Plose, on the site of a tuberculosis sanatorium planned in 1912 for its water, air and sun. It looks straight across at the Dolomites, and its stone pool is filled with Plose spring water."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-05",
+     "PATH-01"
+    ],
+    "setting": "dolomites",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -19639,6 +20681,96 @@
    "placeSlug": null
   },
   {
+   "slug": "hacienda-na-xamena",
+   "name": "Hacienda Na Xamena",
+   "ledgerId": "STY-2026-000711",
+   "country": "Spain-Ibiza",
+   "countrySlug": "spain-ibiza",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "69 rooms and suites in a whitewashed Ibiza finca 180 metres above the sea, on 150 hectares of protected pine forest",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/hacienda-na-xamena/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/hacienda-na-xamena/double-superior-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/hacienda-na-xamena/double-deluxe-garden-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/hacienda-na-xamena/junior-suite"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "69 rooms and suites in total",
+     "Double Deluxe Garden, 30 m2, with jacuzzi",
+     "Double Deluxe, 30 m2",
+     "Double Superior, 40 m2",
+     "Suite Junior Hammam, 45 m2",
+     "Suite Junior Grand, 50 m2",
+     "Suite Junior Eden, 40 m2",
+     "Suite Eden, 45 m2",
+     "Family Suite, 60 m2",
+     "Na Xamena Suite, 80 m2",
+     "Presidential Suite, 90 m2"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "Yoga classes in the amphitheatre on Wednesdays and Fridays at 9 am.",
+     "Hike and Brunch on Saturdays: a guided trail along the cliff and through the forest to the organic garden, ending with brunch at La Finca.",
+     "Ibiza by boat: the team helps guests choose a boat to reach coves along the coast.",
+     "La Posidonia Spa, with SkinCeuticals facials and a signature massage.",
+     "Two restaurants, including Eden and Nidos, plus cocktail classes and live music.",
+     "Tennis, volleyball, football, petanque, a gym, three pools and a home cinema."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The Hacienda sits 180 metres above the Mediterranean in the north of Ibiza, surrounded by regional pine forest, and cares for more than 150 hectares of preserved land including its own organic farm. It is about 30 minutes by car from Ibiza town."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-01"
+    ],
+    "setting": "ibiza_cliffs",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "hayfield-manor",
    "name": "Hayfield Manor",
    "ledgerId": "STY-2026-272684",
@@ -20728,6 +21860,171 @@
    "placeSlug": null
   },
   {
+   "slug": "can-lluc",
+   "name": "Can Lluc",
+   "ledgerId": "STY-2026-000712",
+   "country": "Spain-Ibiza",
+   "countrySlug": "spain-ibiza",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A family run agritourism hotel built around a 200 year old Ibizan country house, on more than 10 hectares in a quiet inland valley",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/can-lluc/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/can-lluc/agritourism-estate",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/can-lluc/deluxe-rural-room-with-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/can-lluc/superior-rural-room-with-jacuzzi"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "families",
+    "couples",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rural rooms beneath the family house, with stone walls and wooden ceilings: Deluxe Rural Room with Terrace, Superior Rural Room with Living Room or Family Option, and Superior Rural Room with Jacuzzi.",
+     "One-Bedroom Villas, 60 m2, with a 200 x 200 cm king size bed.",
+     "One-Bedroom Villa with living room, over 60 m2, with a sofa bed for children.",
+     "Family Suites and Garden Suite Premium, more than 60 m2.",
+     "Deluxe suite villa with private pool.",
+     "Villa Can Prats and the private villa with pool Can Jaume Curt; one villa of more than 180 m2 sleeps up to 4.",
+     "Breakfast included and late checkout until 13h on rural rooms, as published."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Hiking routes on the estate to a viewpoint over the valley",
+     "Infinity pool inspired by the old Arab irrigation system",
+     "Wellness area with sauna, massage cabin and beauty treatments",
+     "Courtesy yoga classes and gym access",
+     "Restaurant cooking with local produce, some grown on the estate"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Can Lluc joins the stables, warehouses and main house of a country house more than 200 years old, the home of the owner's grandfather, into one hotel with dry stone walls, gardens of almond, olive and fig trees and vines. Three generations of the Prats family run it today."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "ibiza_countryside",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "hotel-excelsior-dubrovnik",
+   "name": "Hotel Excelsior Dubrovnik",
+   "ledgerId": "STY-2026-000726",
+   "country": "Croatia",
+   "countrySlug": "croatia",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 1913 villa on the shore 0.6 km from Dubrovnik's Old Town, facing the walls across the water, with its own beach and three restaurants.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/hotel-excelsior-dubrovnik/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/hotel-excelsior-dubrovnik/villa-odak-deluxe-balcony",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/hotel-excelsior-dubrovnik/hotel-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/hotel-excelsior-dubrovnik/interior"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "culture",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Dubrovnik Airport",
+   "airportDirections": "22.6 km (14 miles) from the airport; Adriatic Luxury Hotels offers a transfer service.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Main hotel and The Tower: Classic, Superior and Deluxe rooms, Junior, Executive, Deluxe and Signature suites, and a Presidential Suite.",
+     "Villa Odak: Superior and Deluxe rooms and a Villa Odak Suite.",
+     "Total room count and sizes: not published by Adriatic Luxury Hotels on the pages read."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The hotel beach, with views to Lokrum and the Old Town",
+     "Lunch at Prora, the beach restaurant (June to October)",
+     "A five-minute walk to the Old Town walls",
+     "Indoor pool, spa and fitness centre",
+     "Gardens above the sea"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Hotel Excelsior grew from a villa built in 1913, facing west across the water to the Old Town, a five-minute walk from the medieval walls. Its guests have included Queen Elizabeth II and Elizabeth Taylor, remembered in the hotel's Gallery of Fame."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "dalmatian_coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "hotel-indigo-bali-seminyak-beach",
    "name": "Hotel Indigo Bali Seminyak Beach",
    "ledgerId": "STY-2026-000646",
@@ -21204,6 +22501,168 @@
    "placeSlug": "logar-valley"
   },
   {
+   "slug": "hotel-santa-caterina",
+   "name": "Hotel Santa Caterina",
+   "ledgerId": "STY-2026-000707",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A family hotel above the sea at Amalfi since 1904, with a cliffside beach club and a Michelin starred restaurant",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/hotel-santa-caterina/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/hotel-santa-caterina/gallery-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/hotel-santa-caterina/gallery-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/hotel-santa-caterina/dining"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": "The Beach Club opens from mid April to October.",
+   "bestFor": [
+    "couples",
+    "families",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Naples Capodichino International Airport (NAP), 80 km",
+   "airportDirections": "Hotel Santa Caterina lists Naples Capodichino at 80 km and Rome Fiumicino at 280 km; the A30 motorway exit at Salerno is 23 km away, and Salerno railway station is 25 km (about 55 minutes).",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rooms in five categories: Partial Sea View, Executive Partial Sea View, Front Sea View, Front Upper Floor Sea View and Deluxe, with hand painted majolica floors, marble bathrooms and balconies.",
+     "Suites with a living area and a large bathtub.",
+     "Two Special Suites: Follia Amalfitana, in a grove of oranges and lemons, and the Chalet Giulietta e Romeo.",
+     "Casa Marchesa, a historic residence among Sfusato Amalfitano lemon groves.",
+     "Room count and sizes are not published by Hotel Santa Caterina on the pages read."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Glicine restaurant, with a Michelin star for the third year in a row.",
+     "The Beach Club with salt water pool, sun beds and lunch at Al Mare restaurant, mid April to October.",
+     "Excursions to Positano, Ravello, Sorrento, Capri, Pompeii, Herculaneum and Naples.",
+     "A wellness area at the hotel."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Hotel Santa Caterina opened in 1904, when Dr Giuseppe Gambardella began with just six rooms, and generations of the same families have returned since. A Beach Club, set in the cliff below the hotel and open only to hotel guests, has a salt water pool and its own restaurant."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "amalfi_coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "hotel-villa-honegg",
+   "name": "Villa Honegg",
+   "ledgerId": "STY-2026-000716",
+   "country": "Switzerland",
+   "countrySlug": "switzerland",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 1905 Art Nouveau villa with 25 rooms at 914 metres on the Burgenstock, high above Lake Lucerne",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/hotel-villa-honegg/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/hotel-villa-honegg/outdoor-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/hotel-villa-honegg/room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/hotel-villa-honegg/restaurant"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Zurich (ZRH)",
+   "airportDirections": "About 1 hour by car from Zurich Airport; Lucerne station is 30 minutes and Stans station 20 minutes. The private airfield at Buochs is 12 minutes away, and helicopters may land on a meadow 150 metres from the hotel.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "25 rooms and suites",
+     "Master Suite Lake View, 92 m2, with balcony",
+     "Corner Suite, 51 m2, with balcony and lake or Alpine views",
+     "Junior Suite Alpine Panorama, 44 m2",
+     "Superior Room, 31 m2, with balcony",
+     "Classic Room, 24 m2, with balcony",
+     "Classic Room Top Floor, 31 m2, with Alpine panorama"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Outdoor pool heated to 34 degrees, open all year",
+     "Restaurant cooking with local, seasonal produce",
+     "Helicopter arrival on a meadow near the hotel"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "An Art Nouveau villa built in 1905 on the Burgenstock and reopened in May 2011 after a full renovation, at 914 metres above sea level. Its outdoor pool is heated to 34 degrees all year and looks over Lake Lucerne, the mountains and, on some days, a sea of cloud."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "lake_lucerne",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "house-in-the-wild",
    "name": "House in the Wild",
    "ledgerId": "STY-2026-973623",
@@ -21481,6 +22940,89 @@
     "6ae6974f6a6a5dcb656ed20b",
     "6ae6974e462820454c7ce501"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "ion-adventure-hotel",
+   "name": "ION Adventure Hotel",
+   "ledgerId": "STY-2026-000734",
+   "country": "Iceland",
+   "countrySlug": "iceland",
+   "regionSlug": "polar-arctic",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A hotel at Nesjavellir beside Lake Thingvallavatn, with lava field and mountain views, the Lava Spa and Silfra restaurant.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iceland/ion-adventure-hotel/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iceland/ion-adventure-hotel/hotel",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iceland/ion-adventure-hotel/hotel-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iceland/ion-adventure-hotel/deluxe-double"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Single Sub-Parterre: sleeps 1, queen bed, 15 m2",
+     "Classic and Standard Double or Twin: sleeps 2, 20 m2, mountain view",
+     "Deluxe Double: king bed, 20 m2, mountain view",
+     "Patio Room: king bed, 25 to 28 m2, mountain view with patio",
+     "Junior Suite: king bed, 24 to 30 m2, mountain view",
+     "Lava Suite: king bed, 54 m2, lava field view, private sauna",
+     "Aurora Suite: king bed, 65 m2, private sauna, lake or mountain view"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The Lava Spa",
+     "Dinner at Silfra restaurant, and the Glass House restaurant and venue",
+     "Day tours run by ION"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "ION Adventure Hotel stands on the lava fields at Nesjavellir by Thingvallavatn, with suites that look out over the lava and two suites with their own sauna. Silfra restaurant serves modern Nordic cooking from chefs Hafsteinn Ólafsson and Þráinn Freyr Vigfússon."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-06",
+     "PATH-08"
+    ],
+    "setting": "lava_field",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -23716,6 +25258,85 @@
    "volumes": [
     "stays",
     "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "juvet-landscape-hotel",
+   "name": "Juvet Landscape Hotel",
+   "ledgerId": "STY-2026-000731",
+   "country": "Norway",
+   "countrySlug": "norway",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Seven glass walled Landscape Rooms on stilts above the river near Valldal, on the scenic route between the Geirangerfjord and Trollstigen.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/juvet-landscape-hotel/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/juvet-landscape-hotel/landscape-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/juvet-landscape-hotel/landscape-room-interior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/juvet-landscape-hotel/valley"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Ålesund Airport Vigra (AES)",
+   "airportDirections": "About 100 km by road; Juvet recommends renting a car. Transfers can be arranged from NOK 3,300 each way. Juvet is about a 90 minute drive from the city of Ålesund.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seven Landscape Rooms: small cubes on stilts with one or two glass walls, a 180 x 200 cm double bed and a shower.",
+     "The Bird Houses: rooms no bigger than 8 square metres, with a 160 x 200 cm double bed, a small sofa bench and large windows onto the mountainside.",
+     "The Writer's Lodge: two bedrooms (a 160 x 200 cm double and two 90 x 200 cm singles), a kitchen, shower and wifi.",
+     "Breakfast and a three course dinner are included in all rooms."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Hiking, climbing and river sports from the door",
+     "Skiing and fjord sightseeing",
+     "The bath house, and the barn house library"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Every Landscape Room has one or two walls made entirely of glass, oriented so that no room looks into another and each has its own view of the valley, forest or river. The interiors are kept dark so nothing competes with the landscape."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": "fjord_valley",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -27849,6 +29470,88 @@
    "placeSlug": null
   },
   {
+   "slug": "land-vineyards",
+   "name": "L'AND Vineyards",
+   "ledgerId": "STY-2026-000749",
+   "country": "Alentejo",
+   "countrySlug": "alentejo",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A wine retreat of 35 suites and 9 pool villas in an organic vineyard below Montemor Castle, about 45 minutes from Lisbon airport.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/land-vineyards/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/land-vineyards/lake-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/land-vineyards/vineyard-rows",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/land-vineyards/suites-at-night"
+   ],
+   "bestMonths": "Not published by L'AND Vineyards on the pages read.",
+   "bestMonthsNote": "Not published by L'AND Vineyards on the pages read.",
+   "bestFor": [
+    "wine",
+    "couples",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Lisbon International Airport (LIS)",
+   "airportDirections": "About 45 minutes by road from Lisbon's international airport. The hotel is 4 km from Montemor-o-Novo and 20 minutes from Évora.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "35 suites and 9 pool villas in total",
+     "Sky View Suites: 75 m2 or 120 m2, with a bedroom ceiling that opens to the sky",
+     "Land View Suites: from 90 m2, living room and private patio with outdoor fireplace",
+     "Lake Villas: private pool and large outdoor living areas"
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Make your own wine at the winery; L'AND Wine Club for guests and owners",
+     "Six hectares of organic vines: Touriga Nacional, Touriga Franca, Alicante Bouschet, Syrah and Gouveio",
+     "Vinothérapie Spa by VINOBLE with grape based treatments, sauna and detox programmes",
+     "Hot air balloon flights, yoga and meditation",
+     "MAPA gastronomic restaurant, plus the wine bar and lake deck, Café da Viagem",
+     "Évora, a UNESCO World Heritage city, 20 minutes away"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "In the Sky Suites the bedroom ceiling opens so guests can sleep under the Alentejo night sky. Guests can also make their own wine at the estate's winery, in six hectares of organic vineyard."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "alentejo_vineyard",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "la-bandita-townhouse",
    "name": "La Bandita Townhouse",
    "ledgerId": "STY-2026-000627",
@@ -29971,6 +31674,91 @@
    "placeSlug": null
   },
   {
+   "slug": "les-sources-de-caudalie",
+   "name": "Les Sources de Caudalie",
+   "ledgerId": "STY-2026-000713",
+   "country": "France",
+   "countrySlug": "france",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "62 rooms and suites in six houses among the vines of Chateau Smith Haut Lafitte, home of the first Vinotherapie Spa",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/les-sources-de-caudalie/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/les-sources-de-caudalie/vineyard-terraces",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/les-sources-de-caudalie/maison-du-lievre-garden",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/les-sources-de-caudalie/la-table-du-lavoir"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wine",
+    "food",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 44.731431,
+    "lng": -0.556559
+   },
+   "airport": "Bordeaux Merignac International Airport (BOD)",
+   "airportDirections": "About 20 minutes by car from Bordeaux Merignac. Bordeaux Saint-Jean TGV station is about 20 minutes away and Cadaujac TER station under 10 minutes. The hotel arranges transfers on request.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "62 rooms and suites across 6 houses: La Bastide des Grands Crus, Le Comptoir des Indes, La Maison du Lievre, La Grange au Bateau, Le Village des Pecheurs and L'Ile aux Oiseaux.",
+     "Comfort Rooms, Prestige Rooms and Junior Suites with antique furniture.",
+     "Prestige Suites and Signature Suites for 3 adults or 2 adults and 2 children, with a balcony or terrace.",
+     "Room sizes: not published by Les Sources de Caudalie on the pages read."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Vineyard tours of the Bordeaux vineyard.",
+     "Cooking classes with the hotel's Michelin starred chef, pastry classes and wine tastings.",
+     "The Vinotherapie Spa.",
+     "Indoor pool, seasonal outdoor pool, hot tub and sauna.",
+     "Fitness centre, tennis court, bike rental and a jogging trail.",
+     "Restaurants La Grand'Vigne, La Table du Lavoir and Rouge, and the bar French Paradox."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Les Sources de Caudalie stands in the vineyards of Chateau Smith Haut Lafitte, a Grand Cru Classe of Graves, and is the only Palace hotel in Bordeaux. It is home to what the hotel calls the world's first Vinotherapie Spa."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "bordeaux_vineyard",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "lewa-wilderness-lodge",
    "name": "Lewa \n Wilderness Lodge",
    "ledgerId": "STY-2026-000152",
@@ -30715,6 +32503,89 @@
     "status": "approved",
     "classifiedBy": "James Papagno (Australia stays, 13 Nov 2026)",
     "classifiedAt": "2026-11-13"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "loire-valley-lodges",
+   "name": "Loire Valley Lodges",
+   "ledgerId": "STY-2026-000714",
+   "country": "France",
+   "countrySlug": "france",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "21 artist designed tree lodges set 4 metres up in a 750 acre forest in Touraine",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/loire-valley-lodges/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/loire-valley-lodges/lodge-interior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/loire-valley-lodges/lodge-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/loire-valley-lodges/art-path-pasqua"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness",
+    "art"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Tours Val de Loire (TUF), or Paris Charles de Gaulle (CDG)",
+   "airportDirections": "Tours Val de Loire airport is 35 minutes away and the Amboise-Dierre aerodrome 24 minutes. By train from Paris to Tours in about 1 hour, then 30 minutes from Saint-Pierre-des-Corps or Tours station.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Every lodge has a large terrace with a private spa",
+     "Arty+ lodge suites restyled by artists such as Aurele and JonOne",
+     "Spa+ lodge suites with a private sauna on the terrace",
+     "Lodge sizes: not published by Loire Valley Lodges on the pages read"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Art path of monumental contemporary sculpture in the forest",
+     "Forest baths and massages",
+     "20 metre pool, open May to September from 10 am to 7 pm",
+     "Nordic bath and cold pool in winter, and a sauna by the pool",
+     "The dream tent for reading, music and sophrology sessions",
+     "Restaurant Ardent and the bar; nearby golf, castles, wine and gardens"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Each of the 21 lodge suites sits 4 metres up in the tree canopy of a 750 acre forest and was designed by a contemporary artist, with a large terrace and a private spa. An art path through the woods shows monumental works, including a bronze by Philippe Pasqua."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-05",
+     "PATH-08"
+    ],
+    "setting": "forest_canopy",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
    },
    "volumes": [
     "stays"
@@ -31528,6 +33399,88 @@
    "arrivalHubIds": [
     "6ae69752601cd109d453a25d"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "manshausen",
+   "name": "Manshausen",
+   "ledgerId": "STY-2026-000730",
+   "country": "Norway",
+   "countrySlug": "norway",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Seven Sea Cabins and two Towers on a private island above the Arctic Circle in Steigen, founded by polar explorer Børge Ousland.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/manshausen/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/manshausen/sea-cabin",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/manshausen/sauna",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/manshausen/kayaking"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bodø",
+   "airportDirections": "SAS and Norwegian fly to Bodø several times a day. The express boat terminal in Bodø city centre is a 15 minute walk from the airport; the boat to Nordskot takes 1.5 hours, and Manshausen collects guests by shuttle boat. A helicopter can land on the island from Bodø Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Seven Sea Cabins with floor to ceiling windows, a private patio and no television; each has a second bedroom with a 140 cm bed and a bunk beneath, suited to two couples or a family.",
+     "Two Towers with full roof windows, raised above the landscape.",
+     "The Main House holds the restaurant and library; the New Boathouse holds the conference rooms."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Guided kayaking among the Steigen islands, or a certified two day kayaking course.",
+     "Sea eagle safari by boat: Steigen has one of Europe's highest concentrations of white tailed sea eagles.",
+     "Fishing trips for cod, halibut and pollock with Manshausen's guides.",
+     "The Nordskot Traverse, a guided ridge climb from Sørskottind, and granite climbing 15 minutes from the Nordskot dock.",
+     "Hikes to the Troll Cave, Sørskottind and the Dronningruta.",
+     "Sauna and hot tub beside a seawater pond; two rowboats free for guests."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Manshausen was once part of Grøtøy Old Trading Post, the largest trading post in northern Norway for more than 200 years. Its Sea Cabins, designed by Snorre Stinessen for founder Børge Ousland, sit on the rocks with floor to ceiling windows onto the sea and have earned more than 50 architectural awards and nominations."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-06",
+     "PATH-04"
+    ],
+    "setting": "arctic_island",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -32349,6 +34302,90 @@
     "6ae6975c04de2bbf1d05d305",
     "6ae6975b94e2db43e2c6078c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "macakizi",
+   "name": "Maçakızı",
+   "ledgerId": "STY-2026-000746",
+   "country": "Turkey",
+   "countrySlug": "turkey",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A hotel on Göltürkbükü bay on the north side of the Bodrum peninsula, with a private beach deck, two pontoons for yachts and dinner under olive trees.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/macakizi/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/macakizi/terrace-bay-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/macakizi/bougainvillea-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/macakizi/sea-view-room"
+   ],
+   "bestMonths": "Open all year",
+   "bestMonthsNote": "Maçakızı's fact sheet says the hotel is open all year round.",
+   "bestFor": [
+    "couples",
+    "families",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Milas-Bodrum Airport (BJV)",
+   "airportDirections": "About 40 km from Milas-Bodrum Airport. Maçakızı adds that İzmir and Dalaman international airports are under three hours by road.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "51 rooms of about 35 m2: 25 Garden View and 26 Sea View, on upper deck, lower deck and sea front levels, each with a balcony or terrace",
+     "Garden View Suite and Sea View Junior Suite: 52.5 m2, with dressing room",
+     "Sea View Suite: about 70 m2, with partitioned lounge",
+     "Sea View Villa Suite: 150 m2, two ensuite bedrooms and a living room",
+     "Sea View Duplex Villa: 140 m2 on the top level, suited to larger families",
+     "22 suites in total: 13 Junior Suites, 3 Sea View Suites and 6 Villa Suites"
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Private beach deck with sunbeds and loggias",
+     "Yacht mooring at the hotel's two pontoons",
+     "Spa with massages, body treatments and a traditional Turkish hammam",
+     "Private yoga and pilates on call",
+     "Dinner under 100-year-old olive trees, and manti on Sundays",
+     "Bodrum Castle and the site of the Mausoleum of Halicarnassus nearby"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Maçakızı sits on Göltürkbükü bay with a private beach deck and two pontoons where guests arriving by yacht can moor from morning until evening. Dinner is a Mediterranean menu served in an open-air dining room under 100-year-old olive trees."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "aegean_bay",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -33265,6 +35302,88 @@
    "arrivalHubIds": [
     "6ae697423b5411a430e82331"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "montestyria",
+   "name": "Montestyria",
+   "ledgerId": "STY-2026-000745",
+   "country": "Austria",
+   "countrySlug": "austria",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Timber chalets and panorama suites above Mariazell, 200 metres from the town centre, with a sky pool and a private jetty on the Erlaufsee.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/austria/montestyria/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/austria/montestyria/sky-pool-chalets",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/austria/montestyria/chalet-living-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/austria/montestyria/pool-mountain-view"
+   ],
+   "bestMonths": "May to October for the heated sky pool; winter for snowshoeing and ski tours",
+   "bestMonthsNote": "Montestyria heats its sky pool from May to October and calls Mariazell a summer and winter destination, with hiking and biking in summer and snowshoeing and ski tours from the door in winter.",
+   "bestFor": [
+    "couples",
+    "families",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Not published by Montestyria on the pages read.",
+   "airportDirections": "Not published by Montestyria on the pages read.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Premium Chalets: 100 m2 on three levels for 2 to 4 guests, two bedrooms, living and dining room with wood burning stove and full kitchen, private sauna, two bathrooms, two covered terraces facing south and west, breakfast included",
+     "Panorama Suites: 35 m2 for 2 guests, south facing with a view of the basilica, lift access, breakfast served in the suite",
+     "Room counts: not published by Montestyria on the pages read"
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Hiking and ski touring straight from the chalets",
+     "Snowshoeing from the hotel in winter",
+     "Swimming and yoga at the hotel's bathing jetty on the Erlaufsee",
+     "E-bike rental and hike and bike service",
+     "Dinner at the hotel's own restaurant, the Mariazell Brewery",
+     "Shuttle from the train station and to restaurants in town"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Premium chalets of 100 m2 on three levels, each with its own sauna and two terraces, a few steps from Mariazell's basilica. Guests share a heated sky pool and the hotel's own 75 m2 bathing jetty on the Erlaufsee."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-05",
+     "PATH-08"
+    ],
+    "setting": "styrian_alps",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -37872,6 +39991,85 @@
    "placeSlug": null
   },
   {
+   "slug": "octant-douro",
+   "name": "Octant Douro",
+   "ledgerId": "STY-2026-000687",
+   "country": "Douro Valley",
+   "countrySlug": "douro-valley",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Rooms, suites and plunge-pool houses on a terraced hillside above the river at Castelo de Paiva, with pools for summer and a heated indoor pool and spa for winter",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/octant-douro/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/octant-douro/plunge-pool-house",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/octant-douro/river",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/octant-douro/rabelo"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wine",
+    "couples",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rooms from Deluxe and Superior River View to Full View Rooms with Terrace.",
+     "Pool Suites.",
+     "The House Collection: Retreat Plunge Pool one bedroom and Douro Plunge Pool two bedroom houses."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Boat trips to Ilha dos Amores and on the river",
+     "The Paiva Walkways",
+     "Two restaurants with local food and a Douro wine list; panoramic outdoor pools, a heated indoor pool and spa"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A contemporary retreat built to echo the Douro's centuries-old terraces, on the riverbank at Castelo de Paiva, with boat trips to Ilha dos Amores and the Paiva Walkways nearby."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-02",
+     "PATH-05"
+    ],
+    "setting": "douro",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "ol-jogi-conservancy",
    "name": "Ol Jogi Conservancy - Kenya",
    "ledgerId": "STY-2026-752932",
@@ -38210,6 +40408,91 @@
     "6ae6974d696b4469b6c2b952"
    ],
    "placeSlug": null
+  },
+  {
+   "slug": "olea-all-suite-hotel",
+   "name": "Olea All Suite Hotel",
+   "ledgerId": "STY-2026-000724",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Eighty-nine suites in an old olive grove on a hill above Tsilivi, set around a 4,000 m² lake-like pool; guests 12 and over.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/olea-all-suite-hotel/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/olea-all-suite-hotel/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/olea-all-suite-hotel/junior-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/olea-all-suite-hotel/boat-trip"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Zakynthos International Airport",
+   "airportDirections": "The hotel publishes directions from Zakynthos Port and Zakynthos International Airport and arranges pick-ups on request; distances are not published by Olea on the pages read.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "89 suites from 36 to 105 m², each with outdoor living space",
+     "Junior Suites, inland or pool view",
+     "Superior Suites Swim Up and Superior Water Suite Swim Up",
+     "Executive Private Pool Suites, sea or sunset view",
+     "Honeymoon Private Pool Suites",
+     "Presidential Private Pool Suite",
+     "Sizes per suite type: not published by Olea on the pages read"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The 4,000 m² lake-like pool",
+     "The Royal Spa, with a couples' package and private sauna",
+     "Private yacht cruises around Zakynthos",
+     "Private sunset dining",
+     "Restaurants built on local Zakynthos produce"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Olea is built into an ancient olive grove on an evergreen hill at Tsilivi, with a 4,000 m² lake-like swimming pool at its centre and suites in natural materials and sand-coloured walls. It is adult friendly, welcoming guests aged 12 and above."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "ionian-islands",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "ionian-islands"
   },
   {
    "slug": "asilia-olivers-camp",
@@ -39005,6 +41288,168 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "palazzo-avino",
+   "name": "Palazzo Avino",
+   "ledgerId": "STY-2026-000706",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 12th century palazzo in Ravello, 350 m above the sea, with 43 rooms and a Michelin starred restaurant",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/palazzo-avino/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/palazzo-avino/entrance",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/palazzo-avino/belvedere-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/palazzo-avino/palazzo-2024"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": "Palazzo Avino is seasonal: it reopened on 3 April 2026, Rossellinis is closed November to March, and the Clubhouse by the Sea opens from 1 May to October.",
+   "bestFor": [
+    "couples",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Naples Airport (60 km)",
+   "airportDirections": "Palazzo Avino lists Naples Airport at 60 km and Rome Airport at 300 km; Salerno station is 25 km away. Limousine and helicopter transfers are arranged by the concierge.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "43 rooms, including 10 suites, furnished with antiques.",
+     "Suites include the Belvedere and Infinito Suites (sea view and terrace), Orizzonte Suite (sea view and balcony), Coral Deluxe Suite, Deluxe Suite, Immenso Suite, Superior Junior Suite and Junior Suite.",
+     "Rooms run from Deluxe and Acquamarine Deluxe sea view rooms to Queen, Sand King, Superior and King rooms on the mountain side, and internal rooms with no view.",
+     "Room sizes are not published by Palazzo Avino on the pages read."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Dinner at Rossellinis, with one Michelin star, plus a four-seat Chef's Table and a Sommelier's Table in a wine cave.",
+     "A 20 m heated outdoor pool in the gardens and a rooftop solarium with an infinity hydropool.",
+     "The Clubhouse by the Sea at Marmorata, 15 minutes away, with beach platforms and a shuttle.",
+     "Private boat trips to the grottos, Positano, Li Galli and Capri.",
+     "Trekking, tennis, snorkelling and diving, and Italian and Neapolitan cooking lessons.",
+     "Concerts at Villa Rufolo, March to October."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Palazzo Avino is housed in Palazzo Sasso, a noble residence from the 12th century, set 350 m above sea level with mountains on one side and the Gulf on the other. The Avino family reopened it in 1997, and three Avino sisters now run it."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "amalfi_coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "panorama-glass-lodge",
+   "name": "Panorama Glass Lodge",
+   "ledgerId": "STY-2026-000735",
+   "country": "Iceland",
+   "countrySlug": "iceland",
+   "regionSlug": "polar-arctic",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Family run glass lodges on two sites in Iceland, near Hella facing the Hekla volcano and in the west facing the ocean and Snæfellsjökull.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iceland/panorama-glass-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iceland/panorama-glass-lodge/alva-lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iceland/panorama-glass-lodge/alva-snow",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iceland/panorama-glass-lodge/alva-river"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "South Iceland: Alva, Freya, Odin and Thor, each for 2, one king bed, 20 m2.",
+     "West Iceland: Njord and Heimdall, each for 2, one king bed, 20 m2.",
+     "West Iceland: Frigg, Premium or Family, for 5, 36 m2.",
+     "West Iceland: Skadi, Superior or Triple, for 3, 25 m2.",
+     "Every lodge: kitchen with two induction plates, rain shower, sauna, private hot tub, BBQ, hammock and terrace. Full exclusivity can be booked on either site."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The private hot tub and sauna under open sky",
+     "Full site buyouts in the south or west",
+     "Helicopter landing possible on request"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The south site looks across to the active volcano Hekla, the highlands and the Selsundslækur river; the west site has ocean views towards Snæfellsjökull. Each lodge comes with its own sauna and private hot tub."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-05",
+     "PATH-07"
+    ],
+    "setting": "volcano_view",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -40019,6 +42464,159 @@
    ],
    "arrivalHubIds": [],
    "placeSlug": null
+  },
+  {
+   "slug": "pension-briol",
+   "name": "Pension Briol",
+   "ledgerId": "STY-2026-000759",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "guesthouse",
+   "tagline": "A car-free 1928 summer house on the Dreikirchen mountain, an icon of South Tyrolean architecture",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/pension-briol/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/pension-briol/briol-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/pension-briol/briol-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/pension-briol/briol-3"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "walkers",
+    "design"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bolzano (BZO)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "The main house, BRIOL, with shared bathrooms on each floor.",
+     "Two further houses: Einäugl, with a tree house, and Settari.",
+     "Half board; summer 2026 runs 1 May to 17 October, summer 2027 runs 13 May to 10 October."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Walks from the door on the Dreikirchen mountain",
+     "Meals made from what the house grows and buys locally",
+     "Culture evenings and events through the summer"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The main house has barely changed since 1928, when the artist Hubert Lanzinger reworked it; it has been called an architectural icon ever since. It has passed through five generations of keepers to Victoria and Valentin von Klebelsberg today. Briol is car-free: guests park below and walk up or take the mountain taxi. Guests share the bathrooms on each floor, as they always have, and that is part of the point."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "perivolas",
+   "name": "Perivolas",
+   "ledgerId": "STY-2026-000720",
+   "country": "Greece",
+   "countrySlug": "greece",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-three suites and villas in 300-year-old cave houses on the caldera cliff at Oia, restored by the Psychas family from 1969.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/perivolas/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/perivolas/perivolas-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/perivolas/deluxe-suite-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/greece/perivolas/superior-suite"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "23 suites and villas in all, each with a furnished terrace looking over the caldera.",
+     "Perivolas Villa: up to 4 guests, two bedrooms, two bathrooms, hydrotherapy pool.",
+     "Perivolas Floating Villa: 2 guests, steam room, heated pool with hydrotherapy jets.",
+     "Perivolas Suite and Perivolas Luxury Suite: 2 guests, spa-style bathroom, hydrotherapy pool.",
+     "New Perivolas Suite and Deluxe Suite with Pool: steam shower and a heated private pool.",
+     "Deluxe Suite with Jacuzzi, Superior Suite, Suite, Junior Suite and Lifestyle Studio: 2 guests, caldera terrace.",
+     "Room sizes: not published by Perivolas on the pages read."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The heated infinity pool on the cliff edge.",
+     "Treatments at the Perivolas Spa, and a gym and yoga with a view of the Aegean.",
+     "Boat excursions around the caldera.",
+     "Walks and visits into Santorini's villages, architecture and island life.",
+     "Perivolas Hideaway: a separate private villa in a former 19th-century pumice mine on Therasia, reached only by sea, with kayaks and snorkelling gear."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "In 1969 Manos and Nadia Psychas bought a stretch of cliff at Perivolas, on the edge of Oia, with cave dwellings and stables once lived in by local fishermen and farmers. Native craftsmen restored the 300-year-old caves in local stone, and the rooms keep their vaulted ceilings, skylights and built-in alcove beds, with no televisions."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-08"
+    ],
+    "setting": "cyclades",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": "cyclades"
   },
   {
    "slug": "phinda-homestead-by-and-beyond",
@@ -41169,6 +43767,92 @@
    "arrivalHubIds": [
     "6ae69759963a83ad3edf296f"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "reschio",
+   "name": "Hotel Castello di Reschio",
+   "ledgerId": "STY-2026-000700",
+   "country": "Italy",
+   "countrySlug": "italy",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A hotel inside a castle built in 1050, on a 3,700 acre private estate in the Umbrian hills",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/reschio/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/reschio/castle-hotel-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/reschio/castle-hotel-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/italy/reschio/castle-pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Rooms, from 30 m² (323 ft²), set within the castle walls",
+     "Grand Rooms, from 50 m²",
+     "Castello Suites, from 60 m²",
+     "Castello Twin Suites, from 68 m²",
+     "San Michele Garden Suites, from 60 m²",
+     "San Michele Grand Suites, from 85 m²",
+     "The Tower Suite, from 180 m²"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "Horse riding on the estate's woodland tracks.",
+     "Rowing on the lake and hiking through old forests.",
+     "Bathhouse rituals in the former castle wine cellars, with massage and dry brushing.",
+     "Tennis, gyms, e-bikes and walking trails.",
+     "Cooking lessons and daily artisan workshops.",
+     "Two restaurants, Al Castello and Alle Scuderie, and three bars, with produce from the estate gardens."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The hotel sits inside the Castello di Reschio, built in 1050, at the centre of a 3,700 acre private estate of woods, meadows and more than 50 farmhouses that the Bolza family has restored over three decades. The restoration kept the castle's original layout, so no two rooms are alike."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05",
+     "PATH-01"
+    ],
+    "setting": "umbrian_hills",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -42593,6 +45277,85 @@
     "status": "approved",
     "classifiedBy": "James Papagno (approved 2 Nov 2026)",
     "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "santa-barbara-eco-beach-resort",
+   "name": "Santa Barbara Eco-Beach Resort",
+   "ledgerId": "STY-2026-000750",
+   "country": "Portugal + Azores",
+   "countrySlug": "portugal",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Thirty studios and villas above Santa Bárbara's black sand beach on São Miguel, the first eco-beach resort in the Azores.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/santa-barbara-eco-beach-resort/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/santa-barbara-eco-beach-resort/green-roof-villas",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/santa-barbara-eco-beach-resort/north-coast",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/santa-barbara-eco-beach-resort/glasshouse-dining"
+   ],
+   "bestMonths": "Not published by Santa Barbara on the pages read.",
+   "bestMonthsNote": "Not published by Santa Barbara on the pages read.",
+   "bestFor": [
+    "couples",
+    "families",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Every unit has a kitchenette, living room and veranda",
+     "Villas have a private heated pool or jacuzzi",
+     "Sizes: not published by Santa Barbara on the pages read"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Santa Bárbara black sand beach below the resort",
+     "Infinity pool with Atlantic views and an indoor pool",
+     "Gym and wellness treatments",
+     "An experience manager who plans activities on the island"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The resort sits directly above Santa Bárbara beach, a strip of black volcanic sand on São Miguel's north coast. Opened in 2015 as the first eco-beach resort in the Azores, it is built from local cryptomeria wood, cork and bamboo."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "azores_coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
    },
    "volumes": [
     "stays"
@@ -48506,6 +51269,91 @@
    "placeSlug": null
   },
   {
+   "slug": "six-senses-kaplankaya",
+   "name": "Six Senses Kaplankaya",
+   "ledgerId": "STY-2026-000747",
+   "country": "Turkey",
+   "countrySlug": "turkey",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A hillside resort north of Bodrum with 141 rooms and suites, pool residences, private beaches and a 10,000 m2 spa.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/six-senses-kaplankaya/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/six-senses-kaplankaya/pool-residence-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/six-senses-kaplankaya/aegean-coast-aerial",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/six-senses-kaplankaya/spa-watsu-pool"
+   ],
+   "bestMonths": "April to November; peak season June to August",
+   "bestMonthsNote": "Six Senses Kaplankaya says it is open between April and November, with peak season in June, July and August. Average summer highs are 34 C. October and November bring the olive harvest and olive oil tastings.",
+   "bestFor": [
+    "wellness",
+    "families",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Milas-Bodrum International Airport (BJV)",
+   "airportDirections": "About 50 minutes by car, about 10 minutes by helicopter or about 60 minutes by boat from Milas-Bodrum. Helicopter and boat transfers are arranged through the resort's concierge; if weather stops the helicopter, a car is provided.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "141 guest rooms and suites: 75 in the main building and 66 Ridge Terrace Rooms",
+     "Superior and Deluxe King or Twin Sea View: 54 m2, private balcony",
+     "Ridge Terrace Garden View: 74 m2; Ridge Terrace with Pool Garden View and Ridge Terrace Family with Pool Sea View: 69 m2",
+     "Master Suite with Pool Sea View: 105 m2",
+     "Kaplankaya Suite with Pool Sea View: 240 m2",
+     "Three-Bedroom Pool Residence: 250 m2; Four-Bedroom Pool Residence: 380 m2; five-bedroom residences also offered, with kitchens, gardens and pools"
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Six Senses Spa: 10,000 m2, indoor heated pool, hydrothermal areas, hammams, personalised wellness programmes",
+     "Spinning, yoga and pilates classes",
+     "Private beaches and water sports",
+     "Hiking, nature experiences and children's activities",
+     "Visits to archaeological sites, including two of the Seven Wonders of the Ancient World",
+     "Olive harvest visits and olive oil tastings in October and November"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A 10,000 m2 spa with an indoor heated pool, hydrothermal areas and hammams sits within a resort built into the hillside like a Mediterranean village. Two of the Seven Wonders of the Ancient World are within reach."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-02",
+     "PATH-07"
+    ],
+    "setting": "aegean_coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "six-senses-kyoto",
    "name": "Six Senses \n Kyoto",
    "ledgerId": "STY-2026-000269",
@@ -50689,6 +53537,84 @@
    "placeSlug": null
   },
   {
+   "slug": "sublime-comporta",
+   "name": "Sublime Comporta",
+   "ledgerId": "STY-2026-000686",
+   "country": "Portugal + Azores",
+   "countrySlug": "portugal",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Rooms, suites, cabanas and villas scattered across a 68 hectare estate of umbrella pines, cork trees and wild dunes at Comporta",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/sublime-comporta/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/sublime-comporta/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/sublime-comporta/villa"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Terracotta Spa Rooms of 25 sqm, adults only, with access to the Sublime Spa, and Terracotta Villa Rooms.",
+     "Spa Suites, Cabana Suites and Cabana Suites Superior.",
+     "Two and three bedroom Cabana Villas."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The Sublime Spa",
+     "Dining and drinks across the estate",
+     "Family programmes and experiences in the pines and on the Comporta coast"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A 68 hectare estate of umbrella pines, cork trees and wild sand dunes, with rooms, suites and villas spread out for privacy, from adults-only spa rooms to cabana villas where large families gather."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01",
+     "PATH-05"
+    ],
+    "setting": "comporta",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "sushi-chuma",
    "name": "Sussi & Chuma Lodge, an A&K Sanctuary",
    "ledgerId": "STY-2026-000285",
@@ -52472,6 +55398,87 @@
    "placeSlug": null
   },
   {
+   "slug": "the-arctic-hideaway",
+   "name": "The Arctic Hideaway",
+   "ledgerId": "STY-2026-000732",
+   "country": "Norway",
+   "countrySlug": "norway",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Tiny timber houses and shared spaces on Sørvær in the Fleinvær archipelago, about an hour by express boat from Bodø; no cars, no shops.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/the-arctic-hideaway/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/the-arctic-hideaway/tiny-houses-snow",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/the-arctic-hideaway/cabins-on-rocks",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/the-arctic-hideaway/cabin-window"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "solo",
+    "couples",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bodø",
+   "airportDirections": "The public express boat runs from Bodø hurtigbåtkai in the city centre to Sørvær hurtigbåtkai on Fleinvær, about an hour (45 minutes to 2.5 hours); tickets are bought on board by card. The island host meets guests at the dock. If a flight lands too late for the boat, stay overnight in Bodø.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Private sleeping cabins, small and simple, each with a bed and a sea view; some include a desk.",
+     "Shared bathrooms: two toilets and one shower, plus the sauna and the sea.",
+     "Shared Kitchen House, Studio House, Tower House (Njalla) and Bath House.",
+     "Meals and pantry provisions included: breakfast by the island host, flexible lunches, and most dinners cooked together.",
+     "Whole Hideaway buyouts for groups."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Walking, reading, swimming and the sauna on an island with no cars",
+     "Studio time for creative work",
+     "Rowing and time on the water with the island host's guidance"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The Arctic Hideaway began as an artist residency and still hosts artists, writers and researchers alongside private guests. Each guest has a small private sleeping cabin with a sea view, and everyone shares the Kitchen House, Studio House, the raised Tower House Njalla, the Bath House and the sauna."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-02",
+     "PATH-05"
+    ],
+    "setting": "arctic_archipelago",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "the-art-villa",
    "name": "The Art Villa",
    "ledgerId": "STY-2026-391539",
@@ -53897,6 +56904,86 @@
    "placeSlug": null
   },
   {
+   "slug": "the-newt-in-somerset",
+   "name": "The Newt in Somerset",
+   "ledgerId": "STY-2026-000736",
+   "country": "England",
+   "countrySlug": "england",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A working Somerset estate with rooms in Georgian Hadspen House, its stable yard and the Farmyard, 30 acres of formal gardens and a spa.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-newt-in-somerset/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-newt-in-somerset/hadspen-loft-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-newt-in-somerset/hayloft",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-newt-in-somerset/the-granary"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "families",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Hadspen House: 12 en suite rooms, from garden view rooms to lofts at the top of the house.",
+     "Stable Yard: 11 rooms in the former stables, including rooms with log burners, family suites and the Clock House.",
+     "The Farmyard: 5 Farmyard rooms and 4 Farmhouse rooms, a two bedroom Room with a View, a family suite and Shatwell House with four bedrooms; seven rooms have private steam pods.",
+     "Room sizes are not published on the pages read."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The gardens, the Roman Villa and The Beezantium",
+     "The Botanical Rooms, Farmyard Kitchen and the Garden Café",
+     "Tours and tastings, and the Newtlings children's activities"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Hadspen House was built in the seventeenth century, remodelled in the Georgian style, and sustained the Hobhouse family for over two centuries. The estate around it is a working farm with orchards, a cyder press, a bakery and butchery, a reconstructed Roman villa and 30 acres of formal gardens."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-01",
+     "PATH-05"
+    ],
+    "setting": "somerset_estate",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "the-place-firenze",
    "name": "The Place Firenze",
    "ledgerId": "STY-2026-000626",
@@ -54497,6 +57584,86 @@
     "status": "approved",
     "classifiedBy": "James Papagno (French Polynesia build)",
     "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "the-tawny",
+   "name": "The Tawny",
+   "ledgerId": "STY-2026-000738",
+   "country": "England",
+   "countrySlug": "england",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Treehouses, boathouses, lookouts and shepherds' huts across the 70 acre Consall Estate in Staffordshire's Churnet Valley, each with a private outdoor spa bath.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-tawny/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-tawny/stay",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-tawny/consall-gardens"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Wingspan Collection, Consall Estate: Shepherds' Huts, Valley and Hillside Treehouses, Boathouses, Lookouts and Retreats, each with a private outdoor William Holland spa bath.",
+     "Fledglings, Basford Estate (ten minutes' drive): three serviced holiday homes for groups, some with private pools, cinema rooms and saunas.",
+     "Owlets, Basford Estate: five restored cottages sleeping two to eight, each with a private garden.",
+     "Room sizes are not published on the pages read; two rooms are accessible, including the Family Lookout."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The outdoor pool, heated all year, the lakeside Laund Pool Sauna and Rousseau's Cave steam room.",
+     "Templespa treatments in the treatment cottage.",
+     "Dinner at The Plumicorn, with three AA Rosettes.",
+     "The Peak District, the Churnet Valley Railway and the local canals nearby."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The Tawny spreads its rooms across the 70 acre Consall Estate beside the 740 acre Consall Nature Park, and guests are taken to their rooms by Land Rover. The Consall Estate runs off grid on generators and a battery store."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-05",
+     "PATH-07"
+    ],
+    "setting": "churnet_valley",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
    },
    "volumes": [
     "stays"
@@ -58487,6 +61654,255 @@
    "placeSlug": null
   },
   {
+   "slug": "villa-dubrovnik",
+   "name": "Villa Dubrovnik",
+   "ledgerId": "STY-2026-000725",
+   "country": "Croatia",
+   "countrySlug": "croatia",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 1960s building by Mladen Frka on the cliff at Sveti Jakov, facing Lokrum and the Old Town, with 55 rooms and suites by Studio Arthur Casas.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-dubrovnik/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-dubrovnik/sea-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-dubrovnik/hotel",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-dubrovnik/terrace"
+   ],
+   "bestMonths": "Opens for the 2027 season on 26 March 2027",
+   "bestMonthsNote": "Villa Dubrovnik opens its doors on 26 March 2027. Closing date not published by Villa Dubrovnik on the pages read.",
+   "bestFor": [
+    "couples",
+    "food",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": "Private airport transfers are arranged through the concierge; distances are not published by Villa Dubrovnik on the pages read.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "55 units in all, interiors by Studio Arthur Casas with Gio Ponti furniture.",
+     "Superior Sea View: 14 rooms, 35 m².",
+     "Deluxe Sea View: 15 rooms, 40 m².",
+     "Deluxe Grand Sea View: 17 rooms, 40 m², floor-to-ceiling windows.",
+     "Comfort (no sea view): 1 room, 56 m², terrace with jacuzzi.",
+     "Signature suites, among them Romantiko 87 m², Beleca 89 m², Amor 115 m², Mirakul 118 m² and Tezoro 216 m² with a 122 m² terrace.",
+     "Villa Kolin residence: 180 m², three bedrooms, up to 6 guests, private entrance through a small pine wood and a private pool."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Swimming from the hotel's private rock shoreline.",
+     "Sunset at the Galanto rooftop bar.",
+     "Dinner at the hotel's fine-dining restaurant, and lunch at Giardino under old pines.",
+     "Indoor pool, sauna, steam room, yoga and pilates.",
+     "Through the concierge: private sailing to the Elaphiti Islands, Pelješac wine tours, a dawn hike on Srđ and a food tour of Konavle."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Architect Mladen Frka designed Villa Dubrovnik in 1961 as a residence for political elites in the Sveti Jakov area; it became a hotel annex in 1963. It sits on a cliff above the Adriatic looking straight at Lokrum and the Old Town, with a private shoreline reached from a rock ledge, and its Galanto bar is described by the hotel as the only rooftop bar in Dubrovnik."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "dalmatian_coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays",
+    "europe"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "white-exclusive-suites-villas",
+   "name": "White Exclusive Suites & Villas",
+   "ledgerId": "STY-2026-000751",
+   "country": "Portugal + Azores",
+   "countrySlug": "portugal",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "An adults only hotel of nine suites and two villas on a cliff above the Atlantic in Lagoa, on São Miguel's south coast.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/white-exclusive-suites-villas/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/white-exclusive-suites-villas/cliff-exterior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/white-exclusive-suites-villas/ocean-facade",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/portugal/white-exclusive-suites-villas/plated-dish"
+   ],
+   "bestMonths": "Not published by White on the pages read.",
+   "bestMonthsNote": "Not published by White on the pages read.",
+   "bestFor": [
+    "couples",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "9 suites of 27 to 38 m2, in Junior, Unique and Ocean types, with kitchenettes; sea views from all but La Maison",
+     "2 private villas, the Villa and Casa da Rocha, from 42 m2 to 400 m2",
+     "Susanne Kaufmann bath products"
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Off-road tours, walking trails, horseback riding and bike or e-bike tours, half or full day",
+     "Routes to Sete Cidades, Lagoa do Fogo, Furnas, Nordeste, Povoação and the north coast",
+     "Wellness treatments",
+     "Kitchen using fresh local ingredients"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "White is built on a cliff above the Atlantic on São Miguel's south coast, with only nine suites and two private villas, for adults only."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "azores_cliff",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "whitepod",
+   "name": "Whitepod",
+   "ledgerId": "STY-2026-000717",
+   "country": "Switzerland",
+   "countrySlug": "switzerland",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "camp",
+   "tagline": "Geodesic pods and chalets in the Valais Alps above Monthey, reached on foot from the reception",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/whitepod/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/whitepod/pod-in-the-alps",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/whitepod/pod-in-snow",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/switzerland/whitepod/les-cerniers-brasserie"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "adventure",
+    "couples",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Cosy Pod, for a couple or a family with one child",
+     "Family Pod, with a mezzanine for 2 children",
+     "Deluxe Pod, with breakfast delivered",
+     "Zen Pod Suite, with a Japanese inspired design",
+     "Timeless Pod, with a private bath",
+     "Forest Pod Suite, birch inspired, by architect Yasmine Nicoucar",
+     "Swiss Pod Suite, a mix of pod and chalet",
+     "Chalets on the same site",
+     "Pod count and sizes: not published by Whitepod on the pages read"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Hike up the Dent de la Valerette (2,058 m)",
+     "Snowshoe outings with a certified mountain guide",
+     "Family and kids hike on alpine animals",
+     "Les Cerniers alpine brasserie with fondues and Swiss produce"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Whitepod's pods stand on the mountainside at Les Cerniers, about a 20 minute walk from reception and parking and reachable only on foot. The pod range includes a Forest Pod Suite by architect Yasmine Nicoucar and a Timeless Pod with its own private bath."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-06",
+     "PATH-05"
+    ],
+    "setting": "valais_alps",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "wilderness-bisate-lodge",
    "name": "Wilderness Bisate Lodge",
    "ledgerId": "STY-2026-000331",
@@ -61467,6 +64883,84 @@
     "6ae6974def1c4ba4eb1a23ac",
     "6ae6974e48e87112caca2fc0"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "woodnest-odda",
+   "name": "Woodnest Odda",
+   "ledgerId": "STY-2026-000733",
+   "country": "Norway",
+   "countrySlug": "norway",
+   "regionSlug": "europe",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Four treehouses in the pine woods above Odda, reached by a steep 20 to 60 minute hike up stone steps and stairs.",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/woodnest-odda/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/woodnest-odda/original-treehouse",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/woodnest-odda/treehouse-detail",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/norway/woodnest-odda/forest"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bergen Airport",
+   "airportDirections": "About a 3 hour drive to Odda. Woodnest recommends renting a car and taking the route via Jondal and Tørvikbygd, which includes a drive-on ferry that does not need booking. Free parking at the start of the hike.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Two Woodnest Originals: suited to two, maximum four, with the shortest climb; children allowed.",
+     "Two Woodnest Mountaintops: higher above the fjord, maximum two adults, with a bathtub.",
+     "Every treehouse has a bathroom with shower and toilet, a kitchenette with two induction plates and a small fridge, heated floors and fibre wifi.",
+     "No meals served; an optional Lovenest welcome snack platter can be ordered."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The hike up through stone steps, stairs and pine forest to the treehouse.",
+     "Cooking in the treehouse in the Norwegian cabin tradition.",
+     "Winter stays with snow spikes provided for the hike."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The treehouses hang in the pines on the mountainside above the fjord, and the only way in is on foot: a climb of 160 to 225 metres over 320 to 640 metres of trail. Woodnest notes that the fjord view includes a zinc factory with lights and steam."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": "fjord_forest",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

@@ -435,6 +435,122 @@
    "atlasName": "Australia"
   },
   {
+   "slug": "austria",
+   "name": "Austria",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000111",
+   "subtitle": "Alpine summers, snow in winter and a country made for trains",
+   "leading": "Alpine valleys, lakes you can swim in, old abbeys and twelve UNESCO World Heritage properties, from the Historic Centre of Vienna to the Hallstatt-Dachstein Salzkammergut. The house starts in Styria, in the pilgrim town of Mariazell, where people have walked the Via Sacra to the basilica for 800 years.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/austria/montestyria/hero",
+    "alt": "Austria, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "Alpine summers, snow in winter and a country made for trains",
+     "title": "Mountains, Lakes and Old Roads",
+     "blocks": [
+      {
+       "p": "Austria works in two seasons. Summer is for hiking, mountain biking and swimming in its bathing lakes; winter is for skiing, cross-country tracks, snowshoeing and tobogganing. Six international airports serve the country: Vienna, Salzburg, Innsbruck, Graz, Linz and Klagenfurt. Trains carry you most of the way, and from Vienna airport the REX7 reaches Wien Hauptbahnhof in about 20 minutes."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/austria/montestyria/hero",
+      "alt": "Austria: Mountains, Lakes and Old Roads"
+     }
+    },
+    {
+     "eyebrow": "Where the house sends you",
+     "title": "Styria, Mariazell and the Heritage Cities",
+     "blocks": [
+      {
+       "h": "Mariazell and the Mariazellerland",
+       "p": "Mariazell sits in northern Styria between the Hochschwab and the Ötscher. For 800 years pilgrims have walked the Via Sacra here, past churches, monasteries and chapels, to the basilica; the Mariazell trails run through Lower Austria, Styria and Upper Austria. The house's stay here is Montestyria, a cluster of chalets above the town."
+      },
+      {
+       "h": "Styria beyond Mariazell",
+       "p": "The Old Town of Graz and Schloss Eggenberg form one UNESCO World Heritage property; Eggenberg has 24 state rooms. The Dachstein, at 2,995 metres, is Styria's highest mountain. Gesäuse is Austria's youngest national park, and the library at Admont Abbey holds 70,000 restored books."
+      },
+      {
+       "h": "The heritage list",
+       "p": "Austria has 12 properties on the UNESCO World Heritage List, among them the Historic Centre of Vienna, the Palace and Gardens of Schönbrunn, the Historic Centre of the City of Salzburg, the Hallstatt-Dachstein / Salzkammergut Cultural Landscape, the Wachau Cultural Landscape and the Semmering Railway."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/austria/montestyria/hero",
+      "alt": "Austria: Styria, Mariazell and the Heritage Cities"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "Summer for hiking, biking and lake swimming; winter for skiing, cross-country tracks and snowshoeing. At Montestyria the sky pool is heated from May to October."
+    ],
+    [
+     "Getting there",
+     "Six international airports: Vienna, Salzburg, Innsbruck, Graz, Linz and Klagenfurt. From Vienna airport the REX7 reaches Wien Hauptbahnhof in about 20 minutes; Mariazell is about two hours by road from Vienna or Graz."
+    ],
+    [
+     "Who it suits",
+     "Couples and families who want mountain air, lakes and quiet, in summer or in snow, with Vienna or Graz a short drive away."
+    ],
+    [
+     "Signature experiences",
+     "Walking the Via Sacra to Mariazell basilica, swimming at the Erlaufsee, Graz's Old Town and Schloss Eggenberg, the Dachstein Glacier World and the Wachau."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Austria?",
+     "a": "It depends on what you want. Summer is the season for hiking, mountain biking and swimming in Austria's bathing lakes. Winter brings skiing, cross-country skiing, snowshoe hiking and tobogganing, and Advent brings the Christmas markets. Montestyria in Mariazell is open for both, with its sky pool heated from May to October."
+    },
+    {
+     "q": "How do you get to Austria?",
+     "a": "Austria has six international airports: Vienna-Schwechat, the main hub, plus Salzburg, Innsbruck, Graz, Linz and Klagenfurt. From Vienna airport the REX7 regional express reaches Wien Hauptbahnhof in about 20 minutes. Montestyria says Mariazell is about two hours by road from Vienna, Graz and Linz, and can also be reached on the Mariazell train."
+    },
+    {
+     "q": "What is Mariazell known for?",
+     "a": "Mariazell, in northern Styria, is Austria's great pilgrimage town. For 800 years people have walked the Via Sacra past churches, monasteries and chapels to its basilica, and a network of Mariazell trails runs through Lower Austria, Styria and Upper Austria."
+    },
+    {
+     "q": "How many UNESCO World Heritage sites does Austria have?",
+     "a": "Twelve, according to UNESCO. They include the Historic Centre of Vienna, the Palace and Gardens of Schönbrunn, the Historic Centre of the City of Salzburg, the City of Graz with Schloss Eggenberg, the Hallstatt-Dachstein / Salzkammergut Cultural Landscape, the Wachau, the Semmering Railway and the Fertö / Neusiedlersee Cultural Landscape."
+    },
+    {
+     "q": "What else is there to see in Styria?",
+     "a": "Graz's Old Town and Schloss Eggenberg, the Dachstein at 2,995 metres with its Glacier World reached by gondola from Ramsau, Gesäuse National Park, the 70,000-book library of Admont Abbey, Riegersburg Castle and the Lipizzaner stud at Piber."
+    }
+   ],
+   "contentStatus": "approved",
+   "months": [
+    {
+     "area": "Across Austria",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good",
+      "good"
+     ]
+    }
+   ],
+   "airports": [],
+   "transfers": [],
+   "flyInto": "Ask James",
+   "bestShort": "May–Oct",
+   "atlasName": "Austria"
+  },
+  {
    "slug": "bahamas",
    "name": "Bahamas",
    "region": "caribbean-mexico",
@@ -1463,6 +1579,130 @@
    "atlasName": "Chile"
   },
   {
+   "slug": "croatia",
+   "name": "Croatia",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000029",
+   "subtitle": "Walled towns, island channels and a long, dry summer",
+   "leading": "Clear Adriatic waters, limestone towns, and sunlit islands create a coastal world full of charm. The landscape blends history with natural beauty, from terracotta rooftops to hidden bays and olive groves. Stays range from seaside escapes to countryside retreats. Sail between islands, swim in calm coves, or wander historic streets that open into the sea breeze. Croatia invites days shaped by saltwater, sunlight, and simple joy.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec807a21d809555ca6e71_CroatiaHero1.jpg",
+    "alt": "Croatia, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "Walled towns, island channels and a long, dry summer",
+     "title": "A Coast of 1,244 Islands",
+     "blocks": [
+      {
+       "p": "Croatia's Adriatic coast runs 1,880 km on the mainland, and its islands add 4,398 km more. The Croatian National Tourist Board counts 1,244 islands, islets, cliffs and reefs, the second largest archipelago in the Mediterranean. The coast is a warm-season destination: direct flights from New York to Dubrovnik run from May to November, and many seaside hotels open in spring and close in autumn, so the house plans the south for those months."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/villa-dubrovnik/hero",
+      "alt": "Croatia: A Coast of 1,244 Islands"
+     }
+    },
+    {
+     "eyebrow": "Where the house sends you",
+     "title": "Dubrovnik, Split, the Islands and the Parks",
+     "blocks": [
+      {
+       "h": "Dubrovnik",
+       "p": "The Old City of Dubrovnik became a Mediterranean sea power from the thirteenth century onwards. It was badly damaged by an earthquake in 1667 yet kept its Gothic, Renaissance and Baroque churches, monasteries and palaces, and UNESCO inscribed it as a World Heritage site in 1979. Lokrum island, just offshore, is part of the listed property. Mljet National Park, founded in 1960, lies about 24 sea miles away, with two saltwater lakes formed from flooded karst valleys."
+      },
+      {
+       "h": "Split, Trogir and Šibenik",
+       "p": "In Split, the ruins of Diocletian's Palace, built between the late third and early fourth centuries AD, run through the city; it has been on the UNESCO list since 1979. Trogir, an island town whose grid of streets dates back to the Hellenistic period, followed in 1997, and the Cathedral of St James in Šibenik, built between 1431 and 1535, in 2000."
+      },
+      {
+       "h": "The islands",
+       "p": "On Hvar, Stari Grad Plain has stayed practically intact since Ionian Greeks from Paros settled it in the fourth century BC, and is still farmed for grapes and olives; UNESCO listed it in 2008. Kornati National Park, founded in 1980, holds 89 islands, islets and reefs, and more than three quarters of it is sea. The Vis archipelago is one of the sailing routes the tourist board points to."
+      },
+      {
+       "h": "Lakes, waterfalls and the table",
+       "p": "Plitvice Lakes, a national park since 1949 and on the UNESCO list since 1979, is a chain of 16 lakes held back by travertine barriers. Krka National Park, founded in 1985, has the waterfalls of Skradinski buk and Roški slap. For the table: Ston's oysters and mussels, the red wines of Dingač and Postup on Pelješac, and Buzet in Istria, the town of truffles."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/croatia/hotel-excelsior-dubrovnik/hero",
+      "alt": "Croatia: Dubrovnik, Split, the Islands and the Parks"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "May to October for the coast. Direct New York to Dubrovnik flights run May to November; seaside hotels are seasonal (Villa Dubrovnik opens for 2027 on 26 March)."
+    ],
+    [
+     "Getting there",
+     "Six international airports, Dubrovnik among them, with direct flights from New York to Dubrovnik from May to November, plus 15 permanent and 11 seasonal international sea ports."
+    ],
+    [
+     "Who it suits",
+     "Couples, families and sailors who want walled towns, island days by boat and a long summer on the Adriatic."
+    ],
+    [
+     "Signature experiences",
+     "Dubrovnik's Old Town walls, Diocletian's Palace in Split, sailing the Kornati and Vis islands, the Krka waterfalls, Mljet's saltwater lakes, and oysters in Ston with Pelješac wine."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Croatia?",
+     "a": "For the coast, May to October. Direct flights from New York to Dubrovnik run from May to November, and many seaside hotels are seasonal: Villa Dubrovnik, for example, opens for 2027 on 26 March. We plan around each stay's own season."
+    },
+    {
+     "q": "How do you get to Croatia?",
+     "a": "Croatia has six international airports, Dubrovnik among them, and the Croatian National Tourist Board lists direct flights from New York to Dubrovnik from May to November. The country also has 15 permanent and 11 seasonal ports open to international sea traffic."
+    },
+    {
+     "q": "How many islands does Croatia have?",
+     "a": "The Croatian National Tourist Board counts 1,244 islands, islets, cliffs and reefs: 602 islands and islets and 642 cliffs and reefs. It is the second largest archipelago in the Mediterranean, and the islands add 4,398 km to the coastline."
+    },
+    {
+     "q": "What are Croatia's UNESCO World Heritage sites?",
+     "a": "Croatia has 10 World Heritage properties. On the coast they include the Old City of Dubrovnik and Diocletian's Palace in Split (both 1979), the Historic City of Trogir (1997), the Cathedral of St James in Šibenik (2000) and Stari Grad Plain on Hvar (2008). Inland, Plitvice Lakes National Park was listed in 1979."
+    },
+    {
+     "q": "Which national parks are worth adding to a coastal trip?",
+     "a": "Croatia has eight national parks. From the coast, the easiest are Krka, with the Skradinski buk waterfalls; Kornati, 89 islands, islets and reefs best seen by boat; and Mljet, about 24 sea miles from Dubrovnik, with its two saltwater lakes. Plitvice Lakes lies inland, near the road between Zagreb and Dalmatia."
+    },
+    {
+     "q": "What should you eat and drink in Croatia?",
+     "a": "Oysters and mussels from Ston, the red wines of Dingač and Postup on the Pelješac peninsula, and truffles in Istria, where Buzet is known as the town of truffles. From Dubrovnik, Villa Dubrovnik's concierge arranges Pelješac wine tours."
+    }
+   ],
+   "contentStatus": "approved",
+   "months": [
+    {
+     "area": "Across Croatia",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good"
+     ]
+    }
+   ],
+   "airports": [],
+   "transfers": [],
+   "flyInto": "Ask James",
+   "bestShort": "May–Oct",
+   "atlasName": "Croatia"
+  },
+  {
    "slug": "ecuador-galapagos",
    "name": "Ecuador & Galápagos",
    "region": "south-america",
@@ -1540,6 +1780,102 @@
    "flyInto": "GPS",
    "bestShort": "Ask James",
    "atlasName": "Ecuador"
+  },
+  {
+   "slug": "england",
+   "name": "England",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000110",
+   "subtitle": "National parks, World Heritage and the English countryside",
+   "leading": "England runs from the fells and lakes of the Lake District to the fossil beaches of the Jurassic Coast, with Roman Bath, Georgian country houses and old estates in between. The house's English stays sit in the Somerset countryside and in the Churnet Valley on the edge of the Peak District.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-newt-in-somerset/hero",
+    "alt": "England, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "National parks, World Heritage and the English countryside",
+     "title": "Fells, Coasts and Country Estates",
+     "blocks": [
+      {
+       "p": "VisitBritain describes the Lake District as a national park with England's tallest peak and its deepest lake; UNESCO inscribed it as The English Lake District in 2017. In the south west, the Dorset and East Devon Coast, the Jurassic Coast, has been a World Heritage site since 2001, its beaches and rocks strewn with fossils. Stonehenge, Avebury and Associated Sites were inscribed in 1986 and the City of Bath, with its Roman origins and Georgian streets, in 1987."
+      },
+      {
+       "p": "Between them lie the Peak District, Dartmoor and Exmoor, the North York Moors, the Yorkshire Dales, Northumberland, the South Downs, the New Forest and the Broads, a country of moor, chalk downland, heather and fen."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-tawny/hero",
+      "alt": "England: Fells, Coasts and Country Estates"
+     }
+    },
+    {
+     "eyebrow": "Where the house sends you",
+     "title": "Somerset and the Peak District Edge",
+     "blocks": [
+      {
+       "h": "Somerset",
+       "p": "VisitBritain's Somerset is rolling hills and ancient woodland. The Newt in Somerset is a working estate built around Hadspen House, a seventeenth century house later remodelled in the Georgian style, with 30 acres of formal gardens, a spa and its own farm, cyder and restaurants."
+      },
+      {
+       "h": "Staffordshire and the Peak District",
+       "p": "The Tawny sits on the 70 acre Consall Estate in Staffordshire's Churnet Valley, on the edge of the Peak District, with treehouses, boathouses and shepherds' huts, each with a private outdoor spa bath. To the north east, Derbyshire holds the Derwent Valley Mills, a World Heritage site since 2001, Haddon Hall at Bakewell and the four show caves of Castleton."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/england/the-newt-in-somerset/hero",
+      "alt": "England: Somerset and the Peak District Edge"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "Not published as best months by VisitBritain or VisitEngland on the pages read. The house plans England around each stay's own season."
+    ],
+    [
+     "Getting there",
+     "Airports are not published by VisitBritain on the pages read. London is the capital, and Oxford is an hour from London by train. The Tawny is at Consall Lane, ST9 0AG, Staffordshire; The Newt is in Somerset."
+    ],
+    [
+     "Who it suits",
+     "Couples and families who want gardens, estates, good food and countryside walking within reach of London, and travellers adding England before or after Scotland."
+    ],
+    [
+     "Signature experiences",
+     "The fells of the Lake District, fossil hunting on the Jurassic Coast, Roman and Georgian Bath, Stonehenge, the gardens and spa at The Newt, and a treehouse with an outdoor spa bath at The Tawny."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "Which UNESCO World Heritage sites are in England?",
+     "a": "England's World Heritage sites include Stonehenge, Avebury and Associated Sites (1986), Durham Castle and Cathedral (1986), the City of Bath (1987), Blenheim Palace (1987), the Tower of London (1988), Canterbury Cathedral (1988), Maritime Greenwich (1997), the Derwent Valley Mills (2001), the Dorset and East Devon Coast (2001), the Royal Botanic Gardens, Kew (2003), the Cornwall and West Devon Mining Landscape (2006) and The English Lake District (2017)."
+    },
+    {
+     "q": "What national parks and protected landscapes does England have?",
+     "a": "VisitEngland and VisitBritain name the Lake District, the Peak District, Dartmoor, Exmoor, the North York Moors, the Yorkshire Dales, Northumberland, the South Downs, the New Forest and the Broads among England's national landscapes, along with the Cotswolds and the Jurassic Coast."
+    },
+    {
+     "q": "Where are the house's stays in England?",
+     "a": "The Newt in Somerset, a working estate with 30 acres of formal gardens around Hadspen House, and The Tawny, on the 70 acre Consall Estate in Staffordshire's Churnet Valley on the edge of the Peak District. Wildhive Callow Hall in Derbyshire is in the Ledger and will open on the site once its brand pages are confirmed."
+    },
+    {
+     "q": "What time zone and currency does England use?",
+     "a": "England uses pounds sterling (GBP). Clocks are on GMT in winter and GMT+1 in summer. London is the capital."
+    },
+    {
+     "q": "Can you combine England with Scotland?",
+     "a": "Yes. Scotland's international airports are Aberdeen, Edinburgh, Glasgow, Glasgow Prestwick and Inverness, and VisitScotland notes that Newcastle is just over an hour's drive from the Scottish border. James plans both countries as one journey."
+    }
+   ],
+   "contentStatus": "approved",
+   "months": [],
+   "airports": [],
+   "transfers": [],
+   "flyInto": "Ask James",
+   "bestShort": "Ask James",
+   "atlasName": "United Kingdom"
   },
   {
    "slug": "fiji",
@@ -1699,53 +2035,72 @@
    "region": "europe",
    "regionName": "Europe",
    "ledgerId": "DST-2026-000021",
-   "subtitle": "1 vetted stays",
-   "leading": "From lavender fields to sunlit vineyards and alpine lakes, the landscape carries an elegance both effortless and grounded. Coastal villages, rural countryside, and mountain horizons each offer their own sense of beauty. Stays here highlight refinement through simplicity and charm. Explore historic towns, savor regional cuisine, or wander through landscapes that inspired generations of artists. France invites appreciation of detail, pace, and place.",
+   "subtitle": "3 vetted stays",
+   "leading": "France at a slower pace: vineyard stays outside Bordeaux, forest lodges in the Loire Valley and alpine residences in Courchevel. The house pairs a few nights in Paris with one region, and plans the rest around the season.",
    "hero": {
-    "src": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4a1e409aa_96dbca082_6a512155291f1df2bab90bee_Six-Senses-Residences-Courchevel.webp",
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/france/les-sources-de-caudalie/hero",
     "alt": "France, Europe"
    },
    "story": [],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
-   "months": [
+   "facts": [
+    [
+     "Best months",
+     "By region: vineyards and the Loire in the warm months and at harvest; the Alps in the ski season. We plan around each stay's own season."
+    ],
+    [
+     "Getting there",
+     "Fly into Paris Charles de Gaulle (CDG); connect by train to the Loire Valley or Bordeaux, or fly to Bordeaux (BOD). For Courchevel, Geneva (GVA), Lyon (LYS) or Chambéry (CMF)."
+    ],
+    [
+     "Who it suits",
+     "Couples and families who want food, wine and countryside after a few nights in Paris, and skiers heading for the Alps."
+    ],
+    [
+     "Signature experiences",
+     "Paris along the Seine, the châteaux of the Loire, the vineyards of Bordeaux and Saint-Emilion, and skiing from Courchevel."
+    ]
+   ],
+   "faqs": [
     {
-     "area": "Across France",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "best",
-      "best",
-      "best",
-      "good",
-      "good",
-      "good",
-      "best",
-      "best",
-      "good",
-      "good",
-      "good",
-      "best"
-     ]
+     "q": "Where should I stay in France?",
+     "a": "In the Ledger: Les Sources de Caudalie among the vineyards outside Bordeaux, Loire Valley Lodges in the forest of the Loire Valley, and Six Senses Residences Courchevel in the French Alps."
+    },
+    {
+     "q": "How many UNESCO World Heritage sites does France have?",
+     "a": "Fifty-six, according to UNESCO. They include Mont-Saint-Michel and its Bay (1979), the Palace and Park of Versailles (1979), Paris, Banks of the Seine (1991), the Loire Valley between Sully-sur-Loire and Chalonnes (2000), Bordeaux, Port of the Moon (2007), the Jurisdiction of Saint-Emilion (1999) and the Champagne Hillsides, Houses and Cellars (2015)."
+    },
+    {
+     "q": "Can you combine Paris with the countryside?",
+     "a": "Yes, and we usually do: two or three nights in Paris, then a region. The Loire Valley and Bordeaux are both reached by train from Paris, and the vineyards of Saint-Emilion are close to Bordeaux."
+    },
+    {
+     "q": "What is the Loire Valley known for?",
+     "a": "Its châteaux, towns and vineyards along the river. UNESCO inscribed the stretch between Sully-sur-Loire and Chalonnes in 2000 as a cultural landscape."
+    },
+    {
+     "q": "When is the best time to visit France?",
+     "a": "It depends on the region and what you want: the vineyards and the Loire in the warm months and at harvest, the Alps in the ski season. We plan around each stay's own season."
     }
    ],
+   "contentStatus": "approved",
+   "months": [],
    "airports": [
     [
-     "Courchevel Altiport (CVF)",
+     "Bordeaux Merignac International Airport (BOD)",
      "Serves 1 stay in the Ledger here"
     ],
     [
-     "Chambéry Savoie Airport (CMF)",
+     "Tours Val de Loire (TUF)",
      "Serves 1 stay in the Ledger here"
     ],
     [
-     "Geneva Airport (GVA)",
+     "Paris Charles de Gaulle (CDG)",
      "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "CVF · CMF",
-   "bestShort": "Dec–Mar",
+   "flyInto": "BOD · TUF",
+   "bestShort": "Ask James",
    "atlasName": "France"
   },
   {
@@ -2039,19 +2394,13 @@
      "title": "A Landscape of Volcanoes, Glaciers, and Raw Elements",
      "blocks": [
       {
-       "p": "Iceland is a place where nature feels powerful, elemental, and constantly evolving. Volcanoes, glaciers, black sand beaches, and cascading waterfalls create a landscape shaped by fire and ice. It is a land defined by contrast, movement, and raw natural force."
+       "p": "Iceland is a country still being made. Volcanoes, glaciers, black sand beaches and waterfalls sit within a few hours' drive of each other, and the land changes with every eruption and every thaw."
       },
       {
-       "p": "Travel here is about immersion in the elements. Walking across lava fields, standing beside roaring waterfalls, and witnessing geothermal landscapes reveal a rhythm that is wild, dramatic, and deeply grounding."
+       "p": "Travel here is about the elements: walking across lava fields, standing beside waterfalls, soaking in geothermal water under an open sky, and watching the light, which lasts almost all night in summer and gives way to the northern lights in winter."
       },
       {
-       "p": "For those seeking nature in its most untamed form, Iceland offers an experience that feels both intense and unforgettable."
-      },
-      {
-       "p": "Iceland for Nature and Elemental Explorers Iceland protects its unique landscapes through strong environmental awareness and sustainable practices. Its ecosystems are fragile yet powerful, shaped by ongoing geological activity."
-      },
-      {
-       "p": "Journeys are designed with local expertise and access to both iconic natural sites and remote regions, creating experiences that feel immersive, raw, and deeply connected to the land."
+       "p": "Iceland for nature and elemental explorers Thingvellir, Surtsey and Vatnajökull National Park are on the UNESCO World Heritage List, and most of the country is reached by self-drive. We plan around the season, the roads that are open, and the stays that put you closest to the landscape."
       }
      ],
      "image": {
@@ -2064,19 +2413,16 @@
      "title": "Where Nature, Power, and Stillness Meet",
      "blocks": [
       {
-       "h": "Traveler Personalities",
-       "p": "Adventure seekers drawn to extreme environments, nature lovers exploring dramatic landscapes, photographers chasing light and contrast, and conscious travelers seeking raw and untouched destinations."
+       "h": "Who it suits",
+       "p": "Couples and active travellers drawn to volcanoes, glaciers and hot water; photographers following the light; and winter travellers hoping for the northern lights."
       },
       {
-       "h": "Experiences You Can’t Find Anywhere Else",
-       "p": "Walk behind powerful waterfalls, explore glaciers and ice caves, witness volcanic landscapes, and experience the northern lights in vast open skies."
+       "h": "What you can do here",
+       "p": "Walk behind waterfalls, explore glaciers and ice caves with a guide, drive the highland roads in summer, and sleep in a glass lodge facing a volcano."
       },
       {
-       "p": "These journeys connect you deeply with Iceland’s elemental forces, offering moments of awe, reflection, and pure natural immersion."
-      },
-      {
-       "h": "Not Just a Trip. A Transformation.",
-       "p": "Plan your Iceland journey with our travel designers and create an experience shaped by nature, contrast, and discovery."
+       "h": "Plan your Iceland journey",
+       "p": "Tell us when you can travel and what you want to see, and we will plan the route, the stays and the drives between them."
       }
      ],
      "image": {
@@ -2085,9 +2431,47 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
+   "facts": [
+    [
+     "Best months",
+     "June to August is the main season. Northern lights are strongest around the March and September equinoxes. Puffins from early May to mid August; highland F-roads open mid or late June to mid September."
+    ],
+    [
+     "Getting there",
+     "Fly into Keflavík International Airport, 48 km from Reykjavík (40 to 50 minutes by Flybus), or seasonally into Akureyri in the north. Most stays are reached by self-drive."
+    ],
+    [
+     "Who it suits",
+     "Couples and active travellers who will self-drive between volcanoes, glaciers and hot water, in summer light or under winter skies."
+    ],
+    [
+     "Signature experiences",
+     "Thingvellir, a UNESCO site since 2004; Vatnajökull National Park; the northern lights at the equinoxes; puffins in summer; and a hot tub under open sky at a glass lodge."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When is the best time to visit Iceland?",
+     "a": "June to August is the most popular season. Spring and autumn are short and change from year to year, and September and October are among the busiest months. The highland F-roads are usually open from mid or late June to mid September, and puffins are present from the beginning of May to the middle of August."
+    },
+    {
+     "q": "When can you see the northern lights in Iceland?",
+     "a": "The equinoxes in March and September are ideal, as the lights tend to be more prominent then. They become harder to spot in April, and by the end of August the chances of seeing them are already high."
+    },
+    {
+     "q": "How do you get to Iceland?",
+     "a": "Keflavík International Airport is 48 km (30 miles) from Reykjavík; the Flybus takes 40 to 50 minutes and is timed to flights, and taxis and car rental are at arrivals. Akureyri International Airport in the north has seasonal international flights, including from London and Manchester."
+    },
+    {
+     "q": "What are Iceland's UNESCO World Heritage sites?",
+     "a": "Thingvellir (inscribed 2004), Surtsey (2008) and Vatnajökull National Park (2019). Vatnajökull covers over 1,400,000 hectares, nearly 14% of Iceland's territory."
+    },
+    {
+     "q": "Where are the house's stays in Iceland?",
+     "a": "The Retreat at Blue Lagoon; ION Adventure Hotel at Nesjavellir beside Thingvallavatn, reached from Reykjavík on roads 36 and 360; and Panorama Glass Lodge, with glass lodges near Hella facing the Hekla volcano and in West Iceland facing Snæfellsjökull."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
      "area": "Across Iceland",
@@ -2097,11 +2481,11 @@
       "good",
       "good",
       "good",
+      "good",
       "best",
       "best",
       "best",
-      "best",
-      "best",
+      "good",
       "good",
       "good",
       "good"
@@ -2116,7 +2500,7 @@
    ],
    "transfers": [],
    "flyInto": "KEF",
-   "bestShort": "May–Sep",
+   "bestShort": "Jun–Aug",
    "atlasName": "Iceland"
   },
   {
@@ -2266,7 +2650,7 @@
    "regionName": "Europe",
    "ledgerId": "DST-2026-000068",
    "subtitle": "Italy · Other Europe",
-   "leading": "Rome for a few nights, then out: the Dolomites, the lakes and the countryside, where Italy slows down. The house is building Italy one place at a time, starting in the mountains.",
+   "leading": "Italy is best taken a region at a time: the castles and farm estates of Tuscany and Umbria, the cliffs of the Amalfi Coast, the islands of the south and the high meadows of the Dolomites. The house plans two or three regions per journey, with enough nights in each to slow down.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/685ec78a35eef779045d2ec9_ItalyHeroFlorince.jpg",
     "alt": "Italy, Europe"
@@ -2311,9 +2695,47 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "needs_review",
+   "facts": [
+    [
+     "Best months",
+     "By region and season: the Dolomites December to March for skiing and June to October for walking (COMO Alpina Dolomites); island and mountain stays open seasonally (Pension Briol May to October). We plan around each stay's own season."
+    ],
+    [
+     "Getting there",
+     "Fly into Rome Fiumicino (FCO), Milan, Florence (FLR), Naples (NAP) or Venice, depending on the region; Bolzano (BZO) for the Dolomites. Most country stays are reached by car."
+    ],
+    [
+     "Who it suits",
+     "Couples and families who want food, wine, history and landscape, two or three regions at a time, and travellers tracing Italian family roots."
+    ],
+    [
+     "Signature experiences",
+     "A castle estate in the Maremma, the Val d'Orcia, the cliffs of the Amalfi Coast, a boat around Salina, and walking the high meadows of the Dolomites."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "Where should I stay in Italy?",
+     "a": "It depends on the region. In the Ledger: Castello di Vicarello, Reschio and Monteverdi for castles and hill villages in Tuscany and Umbria; Palazzo Avino and Hotel Santa Caterina on the Amalfi Coast; Capofaro on Salina in the Aeolian Islands; and COMO Alpina Dolomites, Forestis and Pension Briol in the mountains of South Tyrol."
+    },
+    {
+     "q": "How many places should I see in one Italy trip?",
+     "a": "Two or three, with at least three nights in each. A city at one end, then the countryside, the coast or the mountains. Italy rewards staying put more than it rewards moving on."
+    },
+    {
+     "q": "When is the best time to visit the Dolomites?",
+     "a": "December to March for skiing and June to October for walking, as COMO Alpina Dolomites publishes for the Alpe di Siusi. Many mountain hotels close in between; Pension Briol, for example, opens only from May to October."
+    },
+    {
+     "q": "How many UNESCO World Heritage sites does Italy have?",
+     "a": "Sixty-two, according to UNESCO, more than any other country. They include the Historic Centre of Naples (1995), the Costiera Amalfitana (1997), the Sassi of Matera (1993), Val d'Orcia (2004), the Aeolian Islands (2000) and the Dolomites (2009)."
+    },
+    {
+     "q": "Can James Wild & Co plan an Italian heritage trip?",
+     "a": "Yes. James's own family story begins in Naples. Start with what you know of your family's town and records; we build the route around the research and choose stays in the regions it leads to. Read his journal piece, Tracing My Italian Roots Through Five Remarkable Stays."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
      "area": "Across Italy",
@@ -2323,7 +2745,7 @@
       "best",
       "best",
       "good",
-      "good",
+      "best",
       "best",
       "best",
       "best",
@@ -2337,15 +2759,15 @@
    "airports": [
     [
      "Florence (FLR)",
-     "Serves 3 stays in the Ledger here"
+     "Serves 4 stays in the Ledger here"
     ],
     [
      "Bolzano Airport (BZO)",
-     "Serves 1 stay in the Ledger here"
+     "Serves 2 stays in the Ledger here"
     ],
     [
-     "Naples Capodichino (NAP)",
-     "Serves 1 stay in the Ledger here"
+     "Rome Fiumicino (FCO)",
+     "Serves 2 stays in the Ledger here"
     ]
    ],
    "transfers": [],
@@ -3153,6 +3575,114 @@
    "atlasName": "New Zealand"
   },
   {
+   "slug": "norway",
+   "name": "Norway",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000050",
+   "subtitle": "Where the Earth Opens into Silence",
+   "leading": "Fjords carved by ice, steep mountains, and villages nestled along deep blue waterways form a landscape of striking simplicity. The air feels crisp, the light soft, and the scenery endlessly shifting. Stays here offer warmth and comfort surrounded by dramatic nature. Explore fjord trails, sail narrow waterways, or enjoy quiet moments beneath midnight sun or northern skies. Norway invites calm adventure rooted in pure landscape.",
+   "hero": {
+    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6904caf06c15835e44b68886_shutterstock_2129783273.jpg",
+    "alt": "Norway, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "Where the Earth Opens into Silence",
+     "title": "A Land of Fjords, Mountains, and Northern Light",
+     "blocks": [
+      {
+       "p": "Norway is a country of scale. Fjords cut deep between mountain walls, snow lies on the peaks into summer, and the coast breaks into thousands of islands as it runs north past the Arctic Circle."
+      },
+      {
+       "p": "Travel here moves with the light. In summer the sun barely sets in the north; from September to late March the northern lights return. The fjords, the islands and the Arctic coast each ask for a different pace."
+      },
+      {
+       "p": "Norway for nature and northern explorers The Geirangerfjord and the Nærøyfjord have been a UNESCO World Heritage site since 2005. We plan around the season and the ferries, and choose stays that put you inside the landscape: architect designed cabins, island hideaways and treehouses."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f0e070095255a674fe1395_Norway%20-%20Section%201%20Image.jpg",
+      "alt": "Norway: A Land of Fjords, Mountains, and Northern Light"
+     }
+    },
+    {
+     "eyebrow": "Find Your Stillness in Norway",
+     "title": "Where Fjords, Light, and Silence Align",
+     "blocks": [
+      {
+       "h": "Who it suits",
+       "p": "Couples and active travellers drawn to fjords and mountains, photographers following the light, and winter travellers chasing the northern lights."
+      },
+      {
+       "h": "What you can do here",
+       "p": "Sail the fjords, hike above the valleys, watch sea eagles on the Arctic islands, and spend a summer night under the midnight sun."
+      },
+      {
+       "h": "Plan your Norway journey",
+       "p": "Tell us when you can travel and what you want to see, and we will plan the route, the stays and the boats between them."
+      }
+     ],
+     "image": {
+      "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f0e07a3a641358b1772c95_Norway%20-%20Section%202%20Image.jpg",
+      "alt": "Norway: Where Fjords, Light, and Silence Align"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "Midnight sun above the Arctic Circle from late May to mid July (Bodø 4 June to 8 July, Lofoten 28 May to 14 July). Northern lights from September to late March in Northern Norway."
+    ],
+    [
+     "Getting there",
+     "Fly into Oslo, Bergen, Tromsø or another international airport; London to Oslo or Bergen is about 2 hours. For the northern islands, connect to Bodø and take the express boat; for the fjords, fly to Ålesund or Bergen and drive."
+    ],
+    [
+     "Who it suits",
+     "Couples and active travellers drawn to fjords, Arctic islands and long summer light, and winter travellers chasing the northern lights."
+    ],
+    [
+     "Signature experiences",
+     "The Geirangerfjord and Nærøyfjord, a UNESCO site since 2005; the midnight sun and northern lights above the Arctic Circle; sea eagles in Steigen; and nights in architect designed cabins and treehouses."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "When can you see the midnight sun in Norway?",
+     "a": "North of the Arctic Circle the sun stays above the horizon through the height of summer. At the Arctic Circle itself it lasts from 12 June to 1 July; in Bodø from 4 June to 8 July; in Lofoten from 28 May to 14 July; in Tromsø from 20 May to 22 July; and at the North Cape from 14 May to 29 July. In the south it never gets fully dark at midsummer."
+    },
+    {
+     "q": "When is the best time to see the northern lights in Norway?",
+     "a": "From September to late March, north of the Arctic Circle in Northern Norway. The lights are visible to the naked eye only when it is fully dark, and because coastal weather changes quickly, a clear sky is often a short drive away."
+    },
+    {
+     "q": "How do you get to Norway?",
+     "a": "Oslo Airport is the main hub, with scheduled flights to more than 100 international destinations; Bergen, Stavanger, Tromsø, Trondheim, Kristiansand and Sandefjord also have international flights. London to Oslo or Bergen is about 2 hours and New York to Oslo about 7.5 hours. Trains run from Gothenburg and Malmö, and ferries from Denmark, Sweden and Germany."
+    },
+    {
+     "q": "What are the West Norwegian Fjords?",
+     "a": "The Geirangerfjord and the Nærøyfjord, about 120 km apart northeast of Bergen, were inscribed together as a UNESCO World Heritage site in 2005. Their crystalline walls rise up to 1,400 m from the water and reach 500 m below sea level, lined with waterfalls."
+    },
+    {
+     "q": "Where are the house's stays in Norway?",
+     "a": "Juvet Landscape Hotel near Valldal, on the scenic route between the Geirangerfjord and Trollstigen; Manshausen and The Arctic Hideaway on islands reached by express boat from Bodø, above the Arctic Circle; and Woodnest's treehouses above Odda, about 3 hours' drive from Bergen Airport."
+    }
+   ],
+   "contentStatus": "approved",
+   "months": [],
+   "airports": [
+    [
+     "Airport Vigra (AES)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "AES",
+   "bestShort": "Ask James",
+   "atlasName": "Norway"
+  },
+  {
    "slug": "panama",
    "name": "Panama",
    "region": "central-america",
@@ -3535,36 +4065,55 @@
    "region": "europe",
    "regionName": "Europe",
    "ledgerId": "DST-2026-000066",
-   "subtitle": "2 vetted stays",
-   "leading": "Sunlit coasts, rolling vineyards, and volcanic islands create a landscape shaped by ocean breeze and old world charm. The Azores add dramatic cliffs, crater lakes, and lush green hills rising from the Atlantic. Stays here blend history with contemporary comfort. Explore coastal paths, soak in geothermal pools, or wander through villages filled with tradition. Portugal and the Azores invite slow exploration and appreciation for natural beauty.",
+   "subtitle": "7 vetted stays",
+   "leading": "Portugal from the Douro's terraced vineyards to the cork oaks of the Alentejo and the Atlantic coast, with the volcanic Azores beyond. The house plans the mainland and the islands as one journey or two, around the wine harvest and the Atlantic seasons.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68250969b15a80758dd2ed7c_GettyImages-2156783104.jpg",
     "alt": "Portugal & the Azores, Europe"
    },
    "story": [],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
-   "months": [
+   "facts": [
+    [
+     "Best months",
+     "By region: the Douro around the harvest; the coast and the Azores in the warmer months. We plan around each stay's own season."
+    ],
+    [
+     "Getting there",
+     "Fly into Lisbon (LIS) for the Alentejo and the coast, Porto (OPO) for the Douro, and Ponta Delgada (PDL) for São Miguel in the Azores."
+    ],
+    [
+     "Who it suits",
+     "Couples and families who want wine, coast and islands, and travellers combining the mainland with the Azores."
+    ],
+    [
+     "Signature experiences",
+     "Terraced vineyards in the Alto Douro, Sintra, cork forests and rice fields in the Alentejo, the Atlantic surf, and crater lakes and hot springs in the Azores."
+    ]
+   ],
+   "faqs": [
     {
-     "area": "Across Portugal & the Azores",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "good",
-      "good",
-      "good",
-      "best",
-      "best",
-      "best",
-      "good",
-      "good",
-      "best",
-      "best",
-      "good",
-      "good"
-     ]
+     "q": "Where should I stay in Portugal?",
+     "a": "In the Ledger: Octant Douro and Six Senses Douro Valley in the wine country; Sublime Comporta, L'and Vineyards and Dá Licença in the Alentejo; Areias do Seixo on the Atlantic coast; Casa de São Lourenço in the Serra da Estrela; and Santa Barbara Eco-Beach Resort and White Exclusive Suites & Villas on São Miguel in the Azores."
+    },
+    {
+     "q": "How many UNESCO World Heritage sites does Portugal have?",
+     "a": "Seventeen, according to UNESCO. They include the Monastery of the Hieronymites and Tower of Belém in Lisbon (1983), Angra do Heroísmo in the Azores (1983), the Cultural Landscape of Sintra (1995), the Alto Douro Wine Region (2001) and the Landscape of the Pico Island Vineyard Culture (2004)."
+    },
+    {
+     "q": "How do you get to the Azores?",
+     "a": "Fly to Ponta Delgada (PDL) on São Miguel, directly or via Lisbon. Both of the house's Azores stays are on São Miguel."
+    },
+    {
+     "q": "Can you combine the Douro, the Alentejo and the Azores?",
+     "a": "Yes. Porto is the gateway to the Douro, Lisbon to the Alentejo and the coast, and the Azores are a short flight from Lisbon. Allow at least three nights in each."
+    },
+    {
+     "q": "When is the best time to visit Portugal?",
+     "a": "It depends on the region. The Douro is at its most beautiful around the grape harvest; the coast and the Azores suit the warmer months. We plan around each stay's own season."
     }
    ],
+   "contentStatus": "approved",
+   "months": [],
    "airports": [
     [
      "Lisbon (LIS)",
@@ -3581,7 +4130,7 @@
    ],
    "transfers": [],
    "flyInto": "LIS · OPO",
-   "bestShort": "Apr–Jun",
+   "bestShort": "Ask James",
    "atlasName": "Portugal"
   },
   {
@@ -3785,7 +4334,7 @@
    "regionName": "Europe",
    "ledgerId": "DST-2026-000047",
    "subtitle": "Where Culture Lives in Every Moment",
-   "leading": "From rugged coastlines to olive groves and historic cities, the landscape reveals layers of Mediterranean light and culture. Moorish courtyards, sunlit plazas, and seaside cliffs create scenes steeped in beauty. Stays mirror this richness, blending tradition with contemporary ease. Wander ancient streets, explore coastal paths, or savour long meals shaped by regional heritage. Spain invites immersive days filled with texture, flavour, and warmth.",
+   "leading": "Spain through its islands and its capital: a fortress hotel on Mallorca, the quiet north of Ibiza and a few nights in Madrid. The house plans Spain around the Balearic seasons and the cities you want to add.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6833249a2de9b3057e9196cc_GettyImages-462048441.webp",
     "alt": "Spain, Europe"
@@ -3842,29 +4391,48 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
-   "months": [
+   "facts": [
+    [
+     "Best months",
+     "The warm months for the Balearic Islands; island hotels are seasonal, so we plan around each stay's own dates."
+    ],
+    [
+     "Getting there",
+     "Fly into Palma (PMI) for Mallorca, Ibiza (IBZ) for Ibiza, or Madrid (MAD) for the capital."
+    ],
+    [
+     "Who it suits",
+     "Couples and families who want island days, good food and a city at one end."
+    ],
+    [
+     "Signature experiences",
+     "The Serra de Tramuntana on Mallorca, the coves and cliffs of northern Ibiza, the Alhambra in Granada and Gaudí in Barcelona."
+    ]
+   ],
+   "faqs": [
     {
-     "area": "Across Spain",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "good",
-      "good",
-      "good",
-      "good",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "best",
-      "good",
-      "good"
-     ]
+     "q": "Where should I stay in Spain?",
+     "a": "In the Ledger: Cap Rocat on Mallorca; Hacienda Na Xamena, Can Lluc, Six Senses Ibiza and Nomade Temple Ibiza on Ibiza; and Nomade Temple Madrid in the capital."
+    },
+    {
+     "q": "How many UNESCO World Heritage sites does Spain have?",
+     "a": "Fifty, according to UNESCO. They include the Alhambra, Generalife and Albayzín in Granada (1984, 1994), the Works of Antoni Gaudí (1984, 2005), Ibiza, Biodiversity and Culture (1999), Teide National Park (2007) and the Cultural Landscape of the Serra de Tramuntana on Mallorca (2011)."
+    },
+    {
+     "q": "Is there a quiet side to Ibiza?",
+     "a": "Yes. The north of the island is pine-covered and slower, with coves and cliffs; Hacienda Na Xamena, Six Senses Ibiza and Nomade Temple Ibiza are all on that side. UNESCO lists Ibiza for its biodiversity and culture."
+    },
+    {
+     "q": "How do you get to Mallorca and Ibiza?",
+     "a": "Fly into Palma (PMI) for Mallorca and Ibiza (IBZ) for Ibiza, directly or via Madrid (MAD) or Barcelona. Ferries link the two islands."
+    },
+    {
+     "q": "When is the best time to visit the Balearic Islands?",
+     "a": "The warm months for the sea; many island hotels are seasonal, so we plan around each stay's own dates."
     }
    ],
+   "contentStatus": "approved",
+   "months": [],
    "airports": [
     [
      "Adolfo Suárez Madrid‑Barajas (MAD)",
@@ -3873,7 +4441,7 @@
    ],
    "transfers": [],
    "flyInto": "MAD",
-   "bestShort": "May–Oct",
+   "bestShort": "Ask James",
    "atlasName": "Spain"
   },
   {
@@ -3972,6 +4540,29 @@
    "transfers": [],
    "flyInto": "IBZ",
    "bestShort": "May–Oct",
+   "atlasName": "Spain"
+  },
+  {
+   "slug": "spain-isla-mallorca",
+   "name": "Spain-Isla Mallorca",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000034",
+   "subtitle": "1 vetted stays",
+   "leading": "Golden coves, limestone cliffs, and fragrant pine forests create a Mediterranean landscape defined by soft light and sea breeze. Stone villages dot the hills, while quiet beaches and hidden viewpoints offer moments of calm simplicity. Stays here blend natural textures with island elegance, shaped by the rhythm of coastal living. Explore turquoise bays by boat, wander narrow streets lined with historic charm, or hike along ridgelines overlooking the Balearic Sea. Mallorca invites a slower pace, where sun, salt, and scenery become part of each day.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/spain/cap-rocat/hero",
+    "alt": "Spain-Isla Mallorca, Europe"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "none",
+   "months": [],
+   "airports": [],
+   "transfers": [],
+   "flyInto": "Ask James",
+   "bestShort": "Ask James",
    "atlasName": "Spain"
   },
   {
@@ -4145,37 +4736,60 @@
    "region": "europe",
    "regionName": "Europe",
    "ledgerId": "DST-2026-000046",
-   "subtitle": "1 vetted stays",
-   "leading": "Snow capped peaks, mirror like lakes, and green alpine meadows create a landscape defined by precision and purity. Mountain villages blend traditional architecture with sweeping views, and stays here offer refined comfort rooted in nature. Experience high alpine trails, sail across clear lakes, or wander through charming towns framed by dramatic scenery. Switzerland invites clarity, breath, and a sense of quiet elevation.",
+   "subtitle": "4 vetted stays",
+   "leading": "Switzerland in four stays: a historic villa above Lake Lucerne, domes in the Valais Alps, a design hotel beside the thermal baths of Vals and an alpine retreat at Crans-Montana. The trains connect them, and the house plans the route around the season.",
    "hero": {
     "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68681c428b47f9748c5b9a80_GettyImages-1821944217.jpg",
     "alt": "Switzerland, Europe"
    },
    "story": [],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "none",
-   "months": [
+   "facts": [
+    [
+     "Best months",
+     "Winter for skiing; summer for walking, lakes and passes. We plan around each stay's own season."
+    ],
+    [
+     "Getting there",
+     "Fly into Zurich (ZRH) or Geneva (GVA), then by train. Sion (SIR) serves the Valais."
+    ],
+    [
+     "Who it suits",
+     "Couples and families who want mountains, lakes and good trains, in summer or in snow."
+    ],
+    [
+     "Signature experiences",
+     "Lake Lucerne, the Jungfrau-Aletsch glaciers, the Lavaux vineyard terraces, the Rhaetian Railway and the thermal baths at Vals."
+    ]
+   ],
+   "faqs": [
     {
-     "area": "Across Switzerland",
-     "note": "From the Ledger's best-months notes",
-     "months": [
-      "best",
-      "best",
-      "best",
-      "good",
-      "good",
-      "best",
-      "best",
-      "best",
-      "best",
-      "good",
-      "good",
-      "best"
-     ]
+     "q": "Where should I stay in Switzerland?",
+     "a": "In the Ledger: Villa Honegg above Lake Lucerne; Whitepod, domes in the Valais Alps; 7132 Hotel in Vals, beside the thermal baths; and Six Senses Crans-Montana in the Valais."
+    },
+    {
+     "q": "How many UNESCO World Heritage sites does Switzerland have?",
+     "a": "Thirteen, according to UNESCO. They include the Old City of Berne (1983), the Swiss Alps Jungfrau-Aletsch (2001, 2007), Lavaux, Vineyard Terraces (2007) and the Rhaetian Railway in the Albula / Bernina Landscapes (2008)."
+    },
+    {
+     "q": "How do you get to Switzerland?",
+     "a": "Fly into Zurich (ZRH) or Geneva (GVA). Most of the country is reached by train, and the stays are a train ride, a transfer or a short drive from the nearest station."
+    },
+    {
+     "q": "Can you travel around Switzerland by train?",
+     "a": "Yes, and it is part of the journey. The Rhaetian Railway through the Albula and Bernina landscapes is itself a UNESCO World Heritage site, inscribed in 2008."
+    },
+    {
+     "q": "When is the best time to visit Switzerland?",
+     "a": "Winter for skiing, summer for walking, lakes and mountain passes. Some alpine stays are seasonal, so we plan around each stay's own dates."
     }
    ],
+   "contentStatus": "approved",
+   "months": [],
    "airports": [
+    [
+     "Zurich (ZRH)",
+     "Serves 3 stays in the Ledger here"
+    ],
     [
      "Sion Airport (SIR)",
      "Serves 1 stay in the Ledger here"
@@ -4183,15 +4797,11 @@
     [
      "Geneva Airport (GVA)",
      "Serves 1 stay in the Ledger here"
-    ],
-    [
-     "Zurich Airport (ZRH)",
-     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "SIR · GVA",
-   "bestShort": "Dec–Mar",
+   "flyInto": "ZRH · SIR",
+   "bestShort": "Ask James",
    "atlasName": "Switzerland"
   },
   {
@@ -4631,6 +5241,123 @@
    "flyInto": "HKT · USM",
    "bestShort": "Nov–Jun",
    "atlasName": "Thailand"
+  },
+  {
+   "slug": "turkey",
+   "name": "Turkey",
+   "region": "europe",
+   "regionName": "Europe",
+   "ledgerId": "DST-2026-000112",
+   "subtitle": "Bodrum's bays and Cappadocia's valleys",
+   "leading": "The Aegean bays of the Bodrum peninsula, where wooden gulets are still built, and the fairy chimneys of Cappadocia, where balloons rise at sunrise over churches cut into the rock. Türkiye has 22 properties on the UNESCO World Heritage List; the house plans around two of its most different landscapes.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/argos-in-cappadocia/hero",
+    "alt": "Turkey, Europe"
+   },
+   "story": [
+    {
+     "eyebrow": "Bodrum's bays and Cappadocia's valleys",
+     "title": "Aegean Coast and Anatolian Stone",
+     "blocks": [
+      {
+       "p": "The house works in two parts of Türkiye. On the Aegean, the Bodrum peninsula has a harbour that has taken ships for some 3,000 years, a castle built by the Knights Hospitaller and the site of the Mausoleum of Halicarnassus. Inland, Cappadocia spreads across Nevşehir and its neighbours, a volcanic landscape of valleys, rock churches and underground cities. Fly into Milas-Bodrum for the coast; Cappadocia is a separate leg."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/macakizi/hero",
+      "alt": "Turkey: Aegean Coast and Anatolian Stone"
+     }
+    },
+    {
+     "eyebrow": "Where the house sends you",
+     "title": "Bodrum, Uçhisar and the Rock Sites",
+     "blocks": [
+      {
+       "h": "Bodrum",
+       "p": "The Knights Hospitaller built Bodrum Castle, the Castle of St. Peter, in the 15th century. Since 1964 it has housed the Bodrum Museum of Underwater Archaeology, which won a special commendation as European Museum of the Year in 1995. Nearby is the site of the Mausoleum of Halicarnassus, built for the Carian satrap Mausolus, who died in 353 BCE; it stood 45 metres tall. Three-masted gulets are still built here. The house's stays are on the peninsula's north coast at Göltürkbükü, and further north at Kaplankaya."
+      },
+      {
+       "h": "Cappadocia",
+       "p": "UNESCO lists Göreme National Park and the Rock Sites of Cappadocia as a World Heritage property, a landscape of fairy chimneys, rock-hewn churches, troglodyte villages and the underground cities of Kaymaklı and Derinkuyu, bounded by Erciyes Dağ (3,916 m) and Hasan Dağ (3,253 m). The Göreme Open Air Museum's Dark Church dates from the late 11th and early 12th centuries. Uçhisar Castle is the highest viewpoint, with Pigeon Valley walking below it; Derinkuyu goes down about 85 metres."
+      }
+     ],
+     "image": {
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/turkey/six-senses-kaplankaya/hero",
+      "alt": "Turkey: Bodrum, Uçhisar and the Rock Sites"
+     }
+    }
+   ],
+   "facts": [
+    [
+     "Best months",
+     "Not published by GoTürkiye on the pages read. In the Ledger, Six Senses Kaplankaya opens April to November; Maçakızı and Argos in Cappadocia publish that they are open all year."
+    ],
+    [
+     "Getting there",
+     "For the Aegean, fly into Milas-Bodrum Airport; the Bodrum peninsula stays are 40 to 50 minutes away by road. Cappadocia is a separate leg inland."
+    ],
+    [
+     "Who it suits",
+     "Couples and families who want Aegean bays and Anatolian history in one trip."
+    ],
+    [
+     "Signature experiences",
+     "A sunrise balloon over Cappadocia, the Göreme Open Air Museum, Derinkuyu underground city, Bodrum Castle and its Museum of Underwater Archaeology, and a day on the water from the Bodrum peninsula."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "What is Cappadocia known for?",
+     "a": "Fairy chimneys, rock-cut churches and underground cities. UNESCO describes Göreme National Park and the Rock Sites of Cappadocia as one of the world's largest cave-dwelling complexes. Hot air balloons rise over the valleys at sunrise, and the frescoed churches of the Göreme Open Air Museum, Ihlara Valley and Selime Monastery can all be visited."
+    },
+    {
+     "q": "How deep are Cappadocia's underground cities?",
+     "a": "Derinkuyu, the best known, is about 85 metres deep, and only about ten percent of it can be visited. Kaymaklı is carved eight levels deep, of which four are open. Both were used for centuries as places to hide from attack."
+    },
+    {
+     "q": "What is there to see in Bodrum?",
+     "a": "Bodrum Castle, the Castle of St. Peter, built by the Knights Hospitaller in the 15th century and now home to the Museum of Underwater Archaeology; the site of the Mausoleum of Halicarnassus; the harbour, where gulets are still built; and the marinas at Bodrum and Yalıkavak."
+    },
+    {
+     "q": "How many UNESCO World Heritage sites does Türkiye have?",
+     "a": "Twenty-two, according to UNESCO, among them the Historic Areas of Istanbul, Göreme National Park and the Rock Sites of Cappadocia, Aphrodisias, the Archaeological Site of Troy and Göbekli Tepe."
+    },
+    {
+     "q": "How do you get to the Bodrum peninsula?",
+     "a": "Fly into Milas-Bodrum Airport. Maçakızı says it is about 40 km from the airport, and Six Senses Kaplankaya says the drive takes about 50 minutes, or about 10 minutes by helicopter. Maçakızı adds that İzmir and Dalaman airports are under three hours by road."
+    }
+   ],
+   "contentStatus": "approved",
+   "months": [
+    {
+     "area": "Across Turkey",
+     "note": "From the Ledger's best-months notes",
+     "months": [
+      "good",
+      "good",
+      "good",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "best",
+      "good"
+     ]
+    }
+   ],
+   "airports": [
+    [
+     "Milas-Bodrum Airport (BJV)",
+     "Serves 2 stays in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "BJV",
+   "bestShort": "Apr–Nov",
+   "atlasName": "Turkey"
   },
   {
    "slug": "turks-caicos",

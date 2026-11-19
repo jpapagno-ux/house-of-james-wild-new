@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-18",
+ "checkedOn": "2026-11-19",
  "rows": [
   {
    "stay_id": "6afcd60dd016b84dcfe94ea1",
@@ -13,6 +13,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afd84fd8ee531129348534c",
+   "slug": "7132-hotel",
+   "name": "7132 Hotel",
+   "country": "Switzerland",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a9d46027650cc04166342d9",
@@ -417,6 +427,14 @@
    "released": false
   },
   {
+   "stay_id": "6afd81edb70a53a9467484f7",
+   "slug": "areias-do-seixo",
+   "name": "Areias do Seixo",
+   "country": "Portugal + Azores",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8c4",
    "slug": "arenal-springs-camp-by-nayara",
    "name": "Nayara Springs",
@@ -430,6 +448,16 @@
    "name": "Arenas del Mar",
    "country": "Costa Rica",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd84a8d5520df565f1671b",
+   "slug": "argos-in-cappadocia",
+   "name": "Argos in Cappadocia",
+   "country": "Turkey",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -971,6 +999,19 @@
    "released": true
   },
   {
+   "stay_id": "6afd877da1a15915eca3c1e8",
+   "slug": "cabanas-no-rio",
+   "name": "Cabanas no Rio",
+   "country": "Portugal + Azores",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8de",
    "slug": "caiman-pantanal",
    "name": "Caiman Pantanal",
@@ -1003,6 +1044,26 @@
    "released": true
   },
   {
+   "stay_id": "6afd84fd8ee5311293485349",
+   "slug": "can-lluc",
+   "name": "Can Lluc",
+   "country": "Spain-Ibiza",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd852f48d247aa90495aef",
+   "slug": "canaves-oia-epitome",
+   "name": "Canaves Epitome",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae77589226395e87383fce5",
    "slug": "canvas-and-orchids-retreat",
    "name": "Canvas & Orchids Retreat",
@@ -1016,6 +1077,16 @@
    "name": "Cap Karoso",
    "country": "Indonesia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd84fd8ee5311293485347",
+   "slug": "cap-rocat",
+   "name": "Cap Rocat",
+   "country": "Spain-Isla Mallorca",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -1057,11 +1128,41 @@
    "released": true
   },
   {
+   "stay_id": "6afd84c08e652bdab3ebeb70",
+   "slug": "capitolo-riviera",
+   "name": "Capitolo Riviera",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afedffd4dcdef31f30e25f5",
+   "slug": "capofaro",
+   "name": "Capofaro Locanda & Malvasia",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8e4",
    "slug": "cardamom-tented-camp",
    "name": "Cardamom Tented Camp",
    "country": "Cambodia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd877da1a15915eca3c1e6",
+   "slug": "casa-de-sao-lourenco",
+   "name": "Casa de São Lourenço",
+   "country": "Portugal + Azores",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -1110,6 +1211,19 @@
    "released": false
   },
   {
+   "stay_id": "6afd877da1a15915eca3c1e9",
+   "slug": "casa-na-terra",
+   "name": "Casa na Terra",
+   "country": "Alentejo",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6ae881c8893ed417b706ce0c",
    "slug": "casa-palopo",
    "name": "Casa Palopó",
@@ -1128,6 +1242,19 @@
    "released": true
   },
   {
+   "stay_id": "6afd877da1a15915eca3c1e7",
+   "slug": "casas-na-areia",
+   "name": "Casas na Areia",
+   "country": "Portugal + Azores",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8e5",
    "slug": "castaway-island",
    "name": "Castaway Island Fiji",
@@ -1136,6 +1263,16 @@
     "hero_photo"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afedffd4dcdef31f30e25f4",
+   "slug": "castello-di-vicarello",
+   "name": "Castello di Vicarello",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff8e6",
@@ -1442,6 +1579,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd852f48d247aa90495af1",
+   "slug": "dexamenes-seaside-hotel",
+   "name": "Dexamenes Seaside Hotel",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae8ed8ba6295b5316ea6cdd",
    "slug": "discovery-coron",
    "name": "Discovery Coron",
@@ -1685,6 +1832,16 @@
    "released": false
   },
   {
+   "stay_id": "6afd84c08e652bdab3ebeb6f",
+   "slug": "eremito-hotelito-del-alma",
+   "name": "Eremito",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff901",
    "slug": "estancia-cerro-guido",
    "name": "Estancia Cerro Guido",
@@ -1731,6 +1888,16 @@
    "name": "Eumelia",
    "country": "Greece",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd852f48d247aa90495af0",
+   "slug": "euphoria-retreat",
+   "name": "Euphoria Retreat",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -1901,6 +2068,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd84c08e652bdab3ebeb6c",
+   "slug": "forestis",
+   "name": "FORESTIS Dolomites",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6afcd60dd016b84dcfe94ea0",
    "slug": "four-seasons-chiang-mai",
    "name": "Four Seasons Resort Chiang Mai",
@@ -1956,6 +2133,19 @@
    "missing": [
     "coming_soon",
     "own_photos"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6afd877da1a15915eca3c1ea",
+   "slug": "furnas-lake-forest-living",
+   "name": "Furnas Lake Forest Living",
+   "country": "Portugal + Azores",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
    ],
    "released": false
   },
@@ -2120,6 +2310,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd84fd8ee5311293485348",
+   "slug": "hacienda-na-xamena",
+   "name": "Hacienda Na Xamena",
+   "country": "Spain-Ibiza",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae8ef16d685943e616492c3",
    "slug": "hanakee-lodge-hiva-oa",
    "name": "Hanakee Hiva Oa Pearl Lodge",
@@ -2227,6 +2427,16 @@
    "released": false
   },
   {
+   "stay_id": "6afd852f48d247aa90495af4",
+   "slug": "hotel-excelsior-dubrovnik",
+   "name": "Hotel Excelsior Dubrovnik",
+   "country": "Croatia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6af55eee5b3414666e58eaa0",
    "slug": "hotel-indigo-bali-seminyak-beach",
    "name": "Hotel Indigo Bali Seminyak Beach",
@@ -2270,6 +2480,26 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afd84c08e652bdab3ebeb72",
+   "slug": "hotel-santa-caterina",
+   "name": "Hotel Santa Caterina",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd84fd8ee531129348534d",
+   "slug": "hotel-villa-honegg",
+   "name": "Villa Honegg",
+   "country": "Switzerland",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a89a1c717f55512387b322d",
@@ -2414,6 +2644,16 @@
    "name": "InterContinental Tahiti Resort & Spa",
    "country": "French Polynesia (Tahiti)",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd8623688531433515a3ce",
+   "slug": "ion-adventure-hotel",
+   "name": "ION Adventure Hotel",
+   "country": "Iceland",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2563,6 +2803,16 @@
    "slug": "joali-being",
    "name": "JOALI BEING",
    "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd86066b8cf25ad6dd86f4",
+   "slug": "juvet-landscape-hotel",
+   "name": "Juvet Landscape Hotel",
+   "country": "Norway",
    "missing": [
     "coordinates"
    ],
@@ -3047,6 +3297,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd877da1a15915eca3c1e3",
+   "slug": "land-vineyards",
+   "name": "L'AND Vineyards",
+   "country": "Alentejo",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff93f",
    "slug": "lapa-rios-lodge",
    "name": "Lapa Rios Lodge",
@@ -3146,6 +3406,14 @@
    "released": true
   },
   {
+   "stay_id": "6afd84fd8ee531129348534a",
+   "slug": "les-sources-de-caudalie",
+   "name": "Les Sources de Caudalie",
+   "country": "France",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff947",
    "slug": "lewa-wilderness-lodge",
    "name": "Lewa Wilderness Lodge",
@@ -3224,6 +3492,18 @@
    "released": true
   },
   {
+   "stay_id": "6afedffd4dcdef31f30e25f7",
+   "slug": "locanda-del-gallo",
+   "name": "Locanda del Gallo",
+   "country": "Italy",
+   "missing": [
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff94c",
    "slug": "lodge-lorien",
    "name": "Lodge Lorien",
@@ -3234,6 +3514,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afd84fd8ee531129348534b",
+   "slug": "loire-valley-lodges",
+   "name": "Loire Valley Lodges",
+   "country": "France",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a89a1beb72eb679d7db8a8a",
@@ -3268,6 +3558,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd84a8d5520df565f16719",
+   "slug": "macakizi",
+   "name": "Maçakızı",
+   "country": "Turkey",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff94e",
    "slug": "machaba",
    "name": "Machaba Camp",
@@ -3295,6 +3595,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afd86066b8cf25ad6dd86f3",
+   "slug": "manshausen",
+   "name": "Manshausen",
+   "country": "Norway",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff93e",
@@ -3433,6 +3743,29 @@
    "name": "Monachira Camp",
    "country": "Botswana",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd84c08e652bdab3ebeb6d",
+   "slug": "monaci-delle-terre-nere",
+   "name": "Monaci delle Terre Nere",
+   "country": "Italy",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6afd84a8d5520df565f16718",
+   "slug": "montestyria",
+   "name": "Montestyria",
+   "country": "Austria",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3787,6 +4120,16 @@
    "released": false
   },
   {
+   "stay_id": "6afd81edb70a53a9467484f6",
+   "slug": "octant-douro",
+   "name": "Octant Douro",
+   "country": "Douro Valley",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1c6d87104f52e7d84dc",
    "slug": "ol-jogi-conservancy",
    "name": "Ol Jogi Conservancy - Kenya",
@@ -3808,6 +4151,16 @@
    "name": "Olas Tulum",
    "country": "Mexico",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd852f48d247aa90495af2",
+   "slug": "olea-all-suite-hotel",
+   "name": "Olea All Suite Hotel",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3880,6 +4233,26 @@
    "name": "Pacuare Lodge",
    "country": "Costa Rica",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd84c08e652bdab3ebeb71",
+   "slug": "palazzo-avino",
+   "name": "Palazzo Avino",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd8623688531433515a3cf",
+   "slug": "panorama-glass-lodge",
+   "name": "Panorama Glass Lodge",
+   "country": "Iceland",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -3968,6 +4341,38 @@
    "name": "Pelorus Private Island",
    "country": "Australia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd86526715b3c005a96bb2",
+   "slug": "penicuik-house",
+   "name": "Penicuik House",
+   "country": "Scotland",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6afedffd4dcdef31f30e25f6",
+   "slug": "pension-briol",
+   "name": "Pension Briol",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd852f48d247aa90495aee",
+   "slug": "perivolas",
+   "name": "Perivolas",
+   "country": "Greece",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -4133,6 +4538,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd84c08e652bdab3ebeb6b",
+   "slug": "reschio",
+   "name": "Hotel Castello di Reschio",
+   "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a9d46027650cc04166342da",
    "slug": "rock-house",
    "name": "Rock House",
@@ -4262,6 +4677,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd877da1a15915eca3c1e4",
+   "slug": "santa-barbara-eco-beach-resort",
+   "name": "Santa Barbara Eco-Beach Resort",
+   "country": "Portugal + Azores",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff993",
    "slug": "saruni-eagle-view",
    "name": "Saruni Eagle View",
@@ -4382,6 +4807,17 @@
     "stay_copy"
    ],
    "released": true
+  },
+  {
+   "stay_id": "6afd84c08e652bdab3ebeb6e",
+   "slug": "sextantio-le-grotte-della-civita",
+   "name": "Sextantio Le Grotte della Civita",
+   "country": "Italy",
+   "missing": [
+    "coming_soon",
+    "hero_photo"
+   ],
+   "released": false
   },
   {
    "stay_id": "6ae8ed8ba6295b5316ea6cea",
@@ -4729,6 +5165,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd84a8d5520df565f1671a",
+   "slug": "six-senses-kaplankaya",
+   "name": "Six Senses Kaplankaya",
+   "country": "Turkey",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9bb",
    "slug": "six-senses-krabey-island",
    "name": "Six Senses Krabey Island",
@@ -4831,6 +5277,19 @@
    "released": true
   },
   {
+   "stay_id": "6afd81edb70a53a9467484f8",
+   "slug": "sobreiras-alentejo-country-hotel",
+   "name": "Sobreiras",
+   "country": "Alentejo",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9c5",
    "slug": "somalisa",
    "name": "Somalisa Camp",
@@ -4913,6 +5372,16 @@
    "slug": "sterrekopje",
    "name": "Sterrekopje Healing Farm",
    "country": "South Africa",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd81edb70a53a9467484f5",
+   "slug": "sublime-comporta",
+   "name": "Sublime Comporta",
+   "country": "Portugal + Azores",
    "missing": [
     "coordinates"
    ],
@@ -5047,6 +5516,16 @@
    "name": "Thatch Caye Resort",
    "country": "Belize",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd86066b8cf25ad6dd86f5",
+   "slug": "the-arctic-hideaway",
+   "name": "The Arctic Hideaway",
+   "country": "Norway",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -5191,6 +5670,16 @@
    "released": false
   },
   {
+   "stay_id": "6afd86526715b3c005a96baf",
+   "slug": "the-newt-in-somerset",
+   "name": "The Newt in Somerset",
+   "country": "England",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a9d4861056c71a19e0353f7",
    "slug": "the-ocean-view",
    "name": "The Ocean View",
@@ -5319,6 +5808,16 @@
    "name": "The St. Regis Bora Bora Resort",
    "country": "French Polynesia (Tahiti)",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd86526715b3c005a96bb1",
+   "slug": "the-tawny",
+   "name": "The Tawny",
+   "country": "England",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -5692,10 +6191,40 @@
    "released": true
   },
   {
+   "stay_id": "6afd852f48d247aa90495af3",
+   "slug": "villa-dubrovnik",
+   "name": "Villa Dubrovnik",
+   "country": "Croatia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6aef21ca56d0bf7f5bb759a9",
    "slug": "vomo-island",
    "name": "VOMO Island",
    "country": "Fiji",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd877da1a15915eca3c1e5",
+   "slug": "white-exclusive-suites-villas",
+   "name": "White Exclusive Suites & Villas",
+   "country": "Portugal + Azores",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd84fd8ee531129348534e",
+   "slug": "whitepod",
+   "name": "Whitepod",
+   "country": "Switzerland",
    "missing": [
     "coordinates"
    ],
@@ -5908,6 +6437,18 @@
    "released": true
   },
   {
+   "stay_id": "6afd86526715b3c005a96bb0",
+   "slug": "wildhive-callow-hall",
+   "name": "Wildhive Callow Hall",
+   "country": "England",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a89a1a7e46790ceb97f5bda",
    "slug": "windstar-cruise-sv-star-breeze",
    "name": "Star Breeze",
@@ -5925,6 +6466,16 @@
    "name": "Wolwedans Dune Camp",
    "country": "Namibia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd86066b8cf25ad6dd86f6",
+   "slug": "woodnest-odda",
+   "name": "Woodnest Odda",
+   "country": "Norway",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

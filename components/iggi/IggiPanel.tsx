@@ -38,7 +38,6 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
   const hostRef = useRef<HTMLElement>(null);
   const [src, setSrc] = useState<string | null>(null);
   const [state, setState] = useState<"idle" | "loading" | "ready" | "off">("idle");
-  const [height, setHeight] = useState(620);
   const [folio, setFolio] = useState<Folio | null>(null); // Stage 4: the Folio Iggi handed back
   const [atlas, setAtlas] = useState<{ stays: IggiPlace[]; title: string | null; focus: number } | null>(null); // §D3: the places Iggi named, on the Atlas
 
@@ -86,7 +85,10 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
     const onMessage = (e: MessageEvent) => {
       if (e.origin !== IGGI_CORE_ORIGIN || !e.data || typeof e.data !== "object") return;
       const d = e.data as { type?: string; height?: number; path?: string; external?: boolean; entitySlug?: string; domain?: string; folio?: unknown; fol?: string };
-      if (d.type === "ji:resize" && typeof d.height === "number") setHeight(Math.min(Math.max(d.height, 480), 920));
+      // ji:resize is no longer honoured (19 Nov 2026): the Core's shell is 100dvh of the frame and reported its own height
+      // back, so the frame grew to the cap and the input sat under the page's sticky Enquire bar on phones. The frame now
+      // has a fixed, viewport-aware height and the thread scrolls inside it, like a chat should.
+      if (d.type === "ji:resize") { /* ignored */ }
       if (d.type === "ji:open_app" && typeof d.path === "string") {
         // crux: Iggi walks a pure safari reading over to Wild & Co Safaris — through the house's one door (James, 31 Oct 2026).
         if ((d as { crux?: boolean }).crux) { location.assign(CRUX_HREF); return; }
@@ -144,16 +146,16 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
 
   const planHref = folio ? toLocal(folio.plan) : null;
   return (
-    <section ref={hostRef} id="iggi" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-32" aria-labelledby="iggi-heading" data-iggi-panel>
+    <section ref={hostRef} id="iggi" className="mt-12 md:mt-24 border-t ledger-rule pt-6 md:pt-10 scroll-mt-32" aria-labelledby="iggi-heading" data-iggi-panel>
       <div className="flex items-start gap-4">
-        <span className="text-coast shrink-0"><IggiMark size={44} /></span>
+        <span className="text-coast shrink-0 hidden sm:inline-block"><IggiMark size={44} /></span>
         <div>
           <p className="ledger-eyebrow ledger-crimson">Iggi · Field Guide</p>
-          <h2 id="iggi-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-1">{heading}</h2>
-          <p className="mt-2 text-[16px] ledger-muted max-w-2xl leading-relaxed">{lead ?? "Iggi answers from the Ledger and says where each answer comes from. Prices, availability and bookings go to a person."}</p>
+          <h2 id="iggi-heading" className="ledger-display text-[1.5rem] md:text-4xl mt-1 leading-tight">{heading}</h2>
+          <p className="mt-2 text-[14.5px] md:text-[16px] ledger-muted max-w-2xl leading-relaxed">{lead ?? "Iggi answers from the Ledger and says where each answer comes from. Prices, availability and bookings go to a person."}</p>
         </div>
       </div>
-      <div className="mt-6 bg-paper-card" style={{ minHeight: 480 }}>
+      <div className="mt-4 md:mt-6 bg-paper-card iggi-frame">
         {src ? (
           <iframe
             ref={frameRef}
@@ -161,9 +163,9 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
             title="Ask Iggi, Field Guide of James Wild & Co"
             loading="lazy"
             referrerPolicy="strict-origin-when-cross-origin"
-            allow="clipboard-write"
+            allow="clipboard-write; microphone"
             onLoad={() => setState("ready")}
-            style={{ width: "100%", height, border: 0, display: "block", background: "transparent" }}
+            style={{ width: "100%", height: "100%", border: 0, display: "block", background: "transparent" }}
           />
         ) : (
           <div className="p-6 text-[15px] ledger-muted" aria-live="polite">{state === "loading" ? "Iggi is opening the Ledger…" : "Scroll here and Iggi will open the Ledger for this page."}</div>

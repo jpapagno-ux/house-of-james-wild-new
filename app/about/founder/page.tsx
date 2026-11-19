@@ -11,6 +11,10 @@ import { SITE } from "@/lib/site";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { founder, graph, ids } from "@/lib/schema";
 import Sketchbook from "@/components/about/Sketchbook";
+import AdvisorStories from "@/components/advisor/AdvisorStories";
+import { ADVISORS } from "@/lib/content/advisors";
+
+const JAMES = ADVISORS.find((x) => x.slug === "james-papagno")!;
 
 // /about/founder: Meet James. Hero › in short › thesis › story (with his own
 // Polaroids) › field log + next corner › credentials › closing quote ›
@@ -91,6 +95,8 @@ export default function FounderPage() {
           </section>
 
           <Sketchbook />
+
+          {JAMES.stories && <AdvisorStories firstName="James" stories={JAMES.stories} />}
 
           <section className="mt-16 md:mt-24 grid lg:grid-cols-[1fr_1.1fr] gap-10 lg:gap-16 items-start" aria-labelledby="cred-heading">
             <div>

@@ -1,5 +1,7 @@
 # Pushing a static rate card to the site · the standing order
 
+> 15 Nov 2026 (James): the house adds no Florida sales tax. Any 7% line or figure below is withdrawn; totals are now the same amounts without it.
+
 How a contracted (static) rate card goes from a partner's PDF to "Rates
 available · From …" on a Stay page, in the order that keeps every guard in
 place. Written from the Lion Sands push of 1 Nov 2026; use it for every card.

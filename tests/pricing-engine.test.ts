@@ -28,14 +28,14 @@ const req = (over: Partial<QuoteRequest> = {}): QuoteRequest => ({ roomTypeId: "
 const ok = (r: ReturnType<typeof quote>): Quote => { assert.ok(r.ok, r.ok ? "" : `${r.code}: ${r.message}`); return r as Quote; };
 const err = (r: ReturnType<typeof quote>) => { assert.equal(r.ok, false); return r as { code: string; date?: string }; };
 
-test("a simple stay: three High nights, 7% Florida tax on top, 30% deposit", () => {
+test("a simple stay: three High nights, no Florida tax, 30% deposit", () => {
   const q = ok(quote(card(), ROOM, req()));
   assert.deepEqual(q.nights.map((n) => [n.date, n.season, n.totalMinor]), [["2027-02-10", "High", 67500], ["2027-02-11", "High", 67500], ["2027-02-12", "High", 67500]]);
   assert.equal(q.roomSubtotalMinor, 202500);
-  assert.equal(q.floridaTaxMinor, 14175);
-  assert.equal(q.grandTotalMinor, 216675);
-  assert.equal(q.depositDueMinor, 65003); // 30% rounded half up
-  assert.equal(q.balanceMinor, 151672);
+  assert.equal(q.floridaTaxMinor, 0);
+  assert.equal(q.grandTotalMinor, 202500);
+  assert.equal(q.depositDueMinor, 60750); // 30%
+  assert.equal(q.balanceMinor, 141750);
   assert.equal(q.balanceDueDate, "2026-12-12");
   assert.equal(q.availability, "on_request");
   assert.equal(q.source, "contracted_card");
@@ -122,7 +122,7 @@ test("§16.7 promotions: expiry, eligibility, best exclusive vs stackables, neve
   assert.equal(z.grandTotalMinor, 0);
 });
 
-test("taxes: included ones shown not added; excluded added; Florida 7% on the lot", () => {
+test("taxes: included ones shown not added; excluded added; no Florida tax", () => {
   const taxed = card({ taxes: [
     { id: "vat", name: "VAT 15%", kind: "tax", basis: "percent_of_room", percentBp: 1500, included: true },
     { id: "levy", name: "Tourism levy 1%", kind: "tax", basis: "percent_of_room", percentBp: 100, included: false },
@@ -137,8 +137,9 @@ test("taxes: included ones shown not added; excluded added; Florida 7% on the lo
   assert.equal(line("levy").amountMinor, pct(room, 100));
   assert.equal(line("cons").amountMinor, 2500 * 2 * 3); // the 8-year-old doesn't pay
   assert.equal(q.taxesMinor, pct(room, 100) + 15000);
-  assert.equal(q.floridaTaxMinor, pct(room + q.taxesMinor, 700));
-  assert.equal(q.grandTotalMinor, room + q.taxesMinor + q.floridaTaxMinor);
+  assert.equal(q.floridaTaxMinor, 0);
+  assert.equal(q.charges.some((c) => c.kind === "house_tax"), false);
+  assert.equal(q.grandTotalMinor, room + q.taxesMinor);
 });
 
 test("payment: inside the balance window everything is due now; fixed deposits", () => {
@@ -177,7 +178,7 @@ test("overlapping rules: higher priority wins, then the narrower date range", ()
 
 test("§16.18 zero-decimal currencies and local dates", () => {
   const jpy = ok(quote(card({ currency: "JPY", rules: card().rules.map((r) => ({ ...r, amountMinor: 80000 })) }), ROOM, req()));
-  assert.equal(money(jpy.grandTotalMinor, "JPY").replace(/\s/g, ""), "¥256,800");
+  assert.equal(money(jpy.grandTotalMinor, "JPY").replace(/\s/g, ""), "¥240,000");
   assert.equal(money(216675, "USD"), "US$2,166.75");
   assert.equal(localToday("Africa/Johannesburg", new Date("2026-12-31T22:30:00Z")), "2027-01-01");
   assert.equal(localToday("America/New_York", new Date("2026-12-31T22:30:00Z")), "2026-12-31");

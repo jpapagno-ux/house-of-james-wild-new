@@ -1,3 +1,4 @@
+import AdvisorStories from "@/components/advisor/AdvisorStories";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -8,7 +9,7 @@ import JsonLd from "@/components/ledger/JsonLd";
 import AdvisorCard from "@/components/advisor/AdvisorCard";
 import { DeskFolios, DeskIdCard, DeskSends, DeskSheet, DeskTies } from "@/components/advisor/DeskPage";
 import { Prose, PlanClose } from "@/components/about/Parts";
-import { ADVISORS, advisorProfile } from "@/lib/content/advisors";
+import { ADVISORS, advisorProfile, awayUntil, backOn } from "@/lib/content/advisors";
 import AdvisorDnaBlock from "@/components/advisor/AdvisorDnaBlock";
 import { PATHWAYS, type PathwayId } from "@/lib/pathways";
 import { COUNTRIES } from "@/lib/content/countries";
@@ -61,8 +62,10 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
             <div>
               <p className="ledger-eyebrow ledger-crimson">{a.role} · James Wild &amp; Co</p>
               <h1 className="ledger-display text-[2.3rem] md:text-[3.3rem] leading-[1.08] mt-2">{a.name}</h1>
+              {awayUntil(a.slug) && <p className="mt-3 text-[15px] ledger-muted">Away until {backOn(awayUntil(a.slug)!)}. Write anyway: the house answers until {a.firstName} is back.</p>}
               {a.intro && <p className="mt-4 text-[18px] md:text-[19px] ledger-muted max-w-xl leading-relaxed">{a.intro}</p>}
-              <div className="mt-6 flex flex-wrap gap-4 items-center"><Link href={`/plan?advisor=${a.slug}`} className="ledger-btn ledger-btn--solid">Plan with {a.firstName}</Link><Link href="/about/team" className="ledger-btn-ghost">The whole team</Link></div>
+              <div className="mt-6 flex flex-wrap gap-4 items-center"><Link href={`/plan?advisor=${a.slug}`} className="ledger-btn ledger-btn--solid">Plan with {a.firstName}</Link><Link href="/advisors/match" className="ledger-btn-ghost">Is {a.firstName} my match?</Link><Link href="/about/team" className="ledger-btn-ghost">The whole team</Link></div>
+              {a.contact && <p className="mt-5 flex flex-wrap gap-x-6 gap-y-1 text-[16px]"><a href={`mailto:${a.contact.email}`} className="underline underline-offset-4 hover:ledger-crimson">{a.contact.email}</a><a href={`tel:${a.contact.tel}`} className="underline underline-offset-4 hover:ledger-crimson">{a.contact.phone}</a></p>}
             </div>
           </header>
 
@@ -105,6 +108,8 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
             </aside>
           </section>}
 
+          {a.stories && <AdvisorStories firstName={a.firstName} stories={a.stories} />}
+
           {a.desk && <DeskTies a={a} />}
 
           <section className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="others-heading">
@@ -124,7 +129,7 @@ export default async function AdvisorPage({ params }: { params: Promise<{ slug: 
           <PlanClose title={`Start with ${a.firstName}.`} line={`Send ${a.firstName} the place you can't stop thinking about. You'll hear back from a person, not a form.`} />
         </div>
       </main>
-      <JsonLd data={graph({ "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: a.name, mainEntity: { "@id": absoluteUrl(`${path}#person`) }, isPartOf: { "@id": ids.website } }, { "@type": "Person", "@id": absoluteUrl(`${path}#person`), name: a.name, ...(a.roleApproved ? { jobTitle: a.role } : {}), worksFor: { "@id": ids.house }, description: a.dna?.matchNote ?? a.intro, ...(a.portrait ? { image: a.portrait.url } : {}), url: absoluteUrl(path), identifier: { "@type": "PropertyValue", propertyID: "Advisor ID", value: a.ledgerId }, ...(dnaPlaces.length || dnaPaths.length ? { knowsAbout: [...dnaPlaces, ...dnaPaths] } : {}), ...(a.dna?.languages.length ? { knowsLanguage: a.dna.languages } : {}) })} />
+      <JsonLd data={graph({ "@type": "ProfilePage", "@id": absoluteUrl(`${path}#page`), url: absoluteUrl(path), name: a.name, mainEntity: { "@id": absoluteUrl(`${path}#person`) }, isPartOf: { "@id": ids.website } }, { "@type": "Person", "@id": absoluteUrl(`${path}#person`), name: a.name, ...(a.roleApproved ? { jobTitle: a.role } : {}), worksFor: { "@id": ids.house }, description: a.dna?.matchNote ?? a.intro, ...(a.portrait ? { image: a.portrait.url } : {}), url: absoluteUrl(path), identifier: { "@type": "PropertyValue", propertyID: "Advisor ID", value: a.ledgerId }, ...(dnaPlaces.length || dnaPaths.length ? { knowsAbout: [...dnaPlaces, ...dnaPaths] } : {}), ...(a.dna?.languages.length ? { knowsLanguage: a.dna.languages } : {}), ...(a.contact ? { email: a.contact.email, telephone: a.contact.tel } : {}) })} />
     </>
   );
 }

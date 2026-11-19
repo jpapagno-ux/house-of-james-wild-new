@@ -1,4 +1,5 @@
 import type { Enquiry } from "./enquiry";
+import { mailShell } from "./mail-shell.ts";
 
 // Turns a validated enquiry into the email the house receives. Pure (no
 // imports, no network) so it can be tested with plain Node; the route sends
@@ -29,14 +30,11 @@ export function enquiryEmail(e: Enquiry): { subject: string; text: string; html:
   const filled = rows.filter(([, v]) => v && String(v).trim());
   const subject = `${kind}: ${e.name} · ${about}`.slice(0, 180);
   const text = [`${kind} from jameswildco.com`, "", ...filled.map(([k, v]) => `${k}: ${v}`), "", "Message:", e.message?.trim() || "(none)", ...(notes ? ["", "What Iggi learned:", notes] : [])].join("\n");
-  const html = `<div style="font-family:Georgia,serif;color:#2D2A26;max-width:620px">
-<p style="font:12px/1.4 monospace;letter-spacing:.12em;text-transform:uppercase;color:#8B2525;margin:0 0 6px">${esc(kind)}</p>
-<h1 style="font-size:22px;margin:0 0 16px">${esc(e.name)} · ${esc(about)}</h1>
-<table style="border-collapse:collapse;width:100%;font-size:15px">${filled.map(([k, v]) => `<tr><td style="padding:6px 12px 6px 0;color:#6b665f;vertical-align:top;white-space:nowrap">${esc(k)}</td><td style="padding:6px 0;border-bottom:1px solid #e6e1d9">${esc(String(v))}</td></tr>`).join("")}</table>
-<p style="font-size:15px;margin:18px 0 4px;color:#6b665f">Message</p>
+  const body = `<table role="presentation" style="border-collapse:collapse;width:100%;font-size:15px">${filled.map(([k, v]) => `<tr><td style="padding:6px 12px 6px 0;color:#6B635A;vertical-align:top">${esc(k)}</td><td style="padding:6px 0;border-bottom:1px solid #DCD7D0">${esc(String(v))}</td></tr>`).join("")}</table>
+<p style="font-size:15px;margin:18px 0 4px;color:#6B635A">Message</p>
 <p style="font-size:16px;white-space:pre-wrap;margin:0">${esc(e.message?.trim() || "(none)")}</p>
-${notes ? `<p style="font-size:15px;margin:18px 0 4px;color:#6b665f">What Iggi learned</p>
-<p style="font-size:15px;white-space:pre-wrap;margin:0;padding:10px 12px;background:#F3EEE6;border-left:3px solid #8B2525">${esc(notes)}</p>` : ""}
-<p style="font-size:12px;color:#8a857d;margin-top:24px">Reply to this email to answer ${esc(e.name.split(" ")[0])} directly.</p></div>`;
+${notes ? `<p style="font-size:15px;margin:18px 0 4px;color:#6B635A">What Iggi learned</p>
+<p style="font-size:15px;white-space:pre-wrap;margin:0;padding:10px 12px;background:#F4F2EF;border-left:3px solid #8B2525">${esc(notes)}</p>` : ""}`;
+  const html = mailShell({ eyebrow: kind, title: `${e.name} · ${about}`, body, foot: `Reply to this email to answer ${e.name.split(" ")[0]} directly.` });
   return { subject, text, html };
 }

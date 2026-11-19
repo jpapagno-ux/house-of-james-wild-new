@@ -1,6 +1,19 @@
 {
- "checkedOn": "2026-11-15",
+ "checkedOn": "2026-11-18",
  "rows": [
+  {
+   "stay_id": "6afcd60dd016b84dcfe94ea1",
+   "slug": "137-pillars-house",
+   "name": "137 Pillars House",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
   {
    "stay_id": "6a9d46027650cc04166342d9",
    "slug": "abaco-inn",
@@ -99,6 +112,26 @@
    "released": true
   },
   {
+   "stay_id": "6afcd5f16e7407a49fc21938",
+   "slug": "aman-nai-lert-bangkok",
+   "name": "Aman Nai Lert Bangkok",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afd087bddbdccdba27f169a",
+   "slug": "aman-tokyo",
+   "name": "Aman Tokyo",
+   "country": "Japan",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8b7",
    "slug": "amandari",
    "name": "Amandari",
@@ -133,6 +166,28 @@
     "stay_copy"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afd087bddbdccdba27f169d",
+   "slug": "amankora",
+   "name": "Amankora",
+   "country": "",
+   "missing": [
+    "coming_soon",
+    "country",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6afd085239cd1e0eb98d551f",
+   "slug": "amanoi",
+   "name": "Amanoi",
+   "country": "Vietnam",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6ae8ed8ba6295b5316ea6ce0",
@@ -489,6 +544,16 @@
    "released": true
   },
   {
+   "stay_id": "6afc606cd3de68956dc02c9b",
+   "slug": "auko",
+   "name": "Auko",
+   "country": "Vietnam",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8c9",
    "slug": "awasi-atacama",
    "name": "Awasi Atacama",
@@ -518,6 +583,16 @@
    "name": "Santa Catarina",
    "country": "Brazil",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afd087bddbdccdba27f169b",
+   "slug": "ayana-komodo",
+   "name": "AYANA Komodo",
+   "country": "Indonesia",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -952,6 +1027,28 @@
    "released": true
   },
   {
+   "stay_id": "6afd085239cd1e0eb98d5522",
+   "slug": "cape-weligama",
+   "name": "Cape Weligama",
+   "country": "Sri Lanka",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afcd5f16e7407a49fc21939",
+   "slug": "capella-bangkok",
+   "name": "Capella Bangkok",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8e3",
    "slug": "capella-ubud",
    "name": "Capella Ubud Bali",
@@ -1079,6 +1176,16 @@
    "released": false
   },
   {
+   "stay_id": "6afd085239cd1e0eb98d5523",
+   "slug": "ceylon-tea-trails",
+   "name": "Ceylon Tea Trails",
+   "country": "Sri Lanka",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae7b402d0c28c1c7104aab2",
    "slug": "chable-maroma",
    "name": "Chablé Maroma",
@@ -1118,6 +1225,16 @@
    "name": "Chem Chem Safari Lodge",
    "country": "Tanzania",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afac88857a0e0b5bb326983",
+   "slug": "cheval-blanc-randheli",
+   "name": "Cheval Blanc Randheli",
+   "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -1203,6 +1320,16 @@
    "slug": "como-castello-del-nero",
    "name": "COMO Castello Del Nero",
    "country": "Italy",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6afac2d30bd00a059187aff8",
+   "slug": "como-maalifushi",
+   "name": "COMO Maalifushi",
+   "country": "Maldives",
    "missing": [
     "coordinates"
    ],
@@ -1774,6 +1901,32 @@
    "released": true
   },
   {
+   "stay_id": "6afcd60dd016b84dcfe94ea0",
+   "slug": "four-seasons-chiang-mai",
+   "name": "Four Seasons Resort Chiang Mai",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
+   "stay_id": "6afcd60dd016b84dcfe94e9f",
+   "slug": "four-seasons-koh-samui",
+   "name": "Four Seasons Resort Koh Samui",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
+  },
+  {
    "stay_id": "6ae8ef16d685943e616492bf",
    "slug": "four-seasons-resort-bora-bora",
    "name": "Four Seasons Resort Bora Bora",
@@ -1834,6 +1987,16 @@
    "name": "Gibb's Farm",
    "country": "Tanzania",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afac88857a0e0b5bb326982",
+   "slug": "gili-lankanfushi",
+   "name": "Gili Lankanfushi Maldives",
+   "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -2292,7 +2455,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff927",
    "slug": "ja-manufaru-maldives",
-   "name": "JA Manafaru Maldives Luxury Island Residences",
+   "name": "JA Manafaru Maldives",
    "country": "Maldives",
    "missing": [],
    "released": true
@@ -2396,6 +2559,16 @@
    "released": true
   },
   {
+   "stay_id": "6afac2d30bd00a059187aff7",
+   "slug": "joali-being",
+   "name": "JOALI BEING",
+   "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a9c3ddc48b7e640309dbc18",
    "slug": "ka-ana-resort",
    "name": "Ka'ana Resort",
@@ -2438,6 +2611,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afc606cd3de68956dc02c9d",
+   "slug": "kaia-koh-phangan",
+   "name": "KAIA Koh Phangan",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6ae8ed8ba6295b5316ea6ce2",
@@ -2981,13 +3164,12 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff949",
    "slug": "lindis-lodge",
-   "name": "Lindis Lodge",
+   "name": "The Lindis",
    "country": "New Zealand",
    "missing": [
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff94a",
@@ -3100,6 +3282,19 @@
    "country": "South Africa",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6afcd60dd016b84dcfe94e9d",
+   "slug": "mandarin-oriental-bangkok",
+   "name": "Mandarin Oriental, Bangkok",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff93e",
@@ -3267,6 +3462,16 @@
    "released": true
   },
   {
+   "stay_id": "6afb04e524603413a7b42086",
+   "slug": "mt-isthmus-villa",
+   "name": "Mt Isthmus Villa",
+   "country": "New Zealand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff95b",
    "slug": "muare-tulum-hotel",
    "name": "Muaré Tulum Hotel",
@@ -3341,7 +3546,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff961",
    "slug": "nautilus-maldives",
-   "name": "Nautilus Maldives",
+   "name": "The Nautilus Maldives",
    "country": "Maldives",
    "missing": [],
    "released": true
@@ -3624,6 +3829,16 @@
    "released": true
   },
   {
+   "stay_id": "6afac3154e539f7533296da4",
+   "slug": "one-only-reethi-rah",
+   "name": "One&Only Reethi Rah",
+   "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff97a",
    "slug": "open-sky",
    "name": "Open Sky Zion",
@@ -3678,6 +3893,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afb04e524603413a7b42087",
+   "slug": "paroa-bay",
+   "name": "Paroa Bay",
+   "country": "New Zealand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff97f",
@@ -3754,6 +3979,16 @@
    "released": true
   },
   {
+   "stay_id": "6afcd5f16e7407a49fc2193c",
+   "slug": "phulay-bay-ritz-carlton-reserve",
+   "name": "Phulay Bay",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae8943ab5673f15264a853c",
    "slug": "pikaia-lodge",
    "name": "Pikaia Lodge",
@@ -3773,6 +4008,16 @@
     "own_photos"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afd087bddbdccdba27f169c",
+   "slug": "plataran-borobudur",
+   "name": "Plataran Borobudur",
+   "country": "Indonesia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff985",
@@ -4185,6 +4430,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6afc606cd3de68956dc02c9c",
+   "slug": "siempang-forest-lodge",
+   "name": "Siempang Forest Lodge",
+   "country": "Cambodia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6ae4c00a0876218d92823920",
@@ -4618,6 +4873,16 @@
    "released": true
   },
   {
+   "stay_id": "6afd085239cd1e0eb98d5520",
+   "slug": "song-saa-private-island",
+   "name": "Song Saa Private Island",
+   "country": "Cambodia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9ca",
    "slug": "soori-bali",
    "name": "Soori Bali",
@@ -5029,6 +5294,16 @@
    "released": true
   },
   {
+   "stay_id": "6afcd5f16e7407a49fc2193a",
+   "slug": "the-siam-bangkok",
+   "name": "The Siam",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9df",
    "slug": "the-silo-hotel",
    "name": "The Silo Hotel",
@@ -5165,6 +5440,16 @@
    "name": "Explora Torres del Paine C. Reserve",
    "country": "Chile & Easter Island",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6afcd5f16e7407a49fc2193b",
+   "slug": "trisara",
+   "name": "Trisara",
+   "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -5368,11 +5653,9 @@
    "country": "French Polynesia (Tahiti)",
    "missing": [
     "coming_soon",
-    "hero_photo",
-    "stay_copy",
     "coordinates"
    ],
-   "released": false
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9f6",
@@ -5695,12 +5978,35 @@
    "released": true
   },
   {
+   "stay_id": "6afd085239cd1e0eb98d5521",
+   "slug": "zannier-phum-baitang",
+   "name": "Zannier Phum Baitang",
+   "country": "Cambodia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bffa15",
    "slug": "zannier-sonop",
    "name": "Zannier Sonop",
    "country": "Namibia",
    "missing": [],
    "released": true
+  },
+  {
+   "stay_id": "6afcd60dd016b84dcfe94e9e",
+   "slug": "zeavola",
+   "name": "Zeavola",
+   "country": "Thailand",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "stay_copy",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6ae77589226395e87383fce2",

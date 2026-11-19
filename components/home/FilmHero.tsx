@@ -28,10 +28,11 @@ type Props = {
   sub: string;
   loop: { mp4: string; webm: string; poster: string; label: string };
   quotes: { text: string; by: string }[];
+  slides?: { h1: string; sub: string; cta: { label: string; href: string } }[];
   filmHref?: string;
 };
 
-export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#film" }: Props) {
+export default function FilmHero({ eyebrow, h1, sub, loop, quotes, slides, filmHref = "#film" }: Props) {
   const reduce = useReducedMotionSafe();
   const [q, setQ] = useState(0);
   const [ready, setReady] = useState(false);
@@ -49,6 +50,18 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
     const id = setInterval(() => setQ((n) => (n + 1) % quotes.length), 6500);
     return () => clearInterval(id);
   }, [reduce, quotes.length]);
+
+  // Rotating headlines: one every 7 s (fix, 18 Nov 2026: a resting mouse no longer freezes them; only keyboard focus
+  // holds the current one, and a tap on a bar picks one); reduced motion keeps the first.
+  const deck = slides?.length ? slides : [{ h1, sub, cta: { label: "Enter the Ledger", href: "#volumes" } }];
+  const [s, setS] = useState(0);
+  const [hold, setHold] = useState(false);
+  useEffect(() => {
+    if (reduce || hold || deck.length < 2) return;
+    const id = setInterval(() => setS((n) => (n + 1) % deck.length), 7000);
+    return () => clearInterval(id);
+  }, [reduce, hold, deck.length]);
+  const slide = deck[s];
 
   const quote = quotes[q];
 
@@ -82,11 +95,28 @@ export default function FilmHero({ eyebrow, h1, sub, loop, quotes, filmHref = "#
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-6 md:gap-10 lg:gap-16 items-end">
           <motion.div data-hero-copy initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.1, ease: EASE }}>
             <p className="ledger-eyebrow !text-[11px] !tracking-[0.28em] !text-white/85">{eyebrow}</p>
-            <h1 className="ledger-h1 max-md:!text-[2.1rem] max-md:!leading-[1.02] lg:!text-[6rem] mt-3 md:mt-4 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)]">{h1}</h1>
-            <p className="text-[14.5px] leading-relaxed md:text-xl text-white/85 mt-3 md:mt-5 max-w-xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]">{sub}</p>
-            <div className="mt-8 flex flex-wrap items-center gap-5">
-              <a href="#volumes" className="inline-flex items-center h-11 px-7 bg-paper ledger-eyebrow !text-[11px] !text-ink hover:bg-white transition-colors shadow-[0_4px_18px_rgba(0,0,0,0.35)]">
-                Enter the Ledger
+            <div onFocus={() => setHold(true)} onBlur={() => setHold(false)} aria-live="polite" className="min-h-[13rem] md:min-h-[17rem] lg:min-h-[22rem] flex flex-col justify-end">
+              <AnimatePresence mode="wait">
+                <motion.div key={s} initial={reduce ? false : { opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -14 }} transition={{ duration: 0.7, ease: EASE }}>
+                  {s === 0 ? (
+                    <h1 className="ledger-h1 max-md:!text-[2.1rem] max-md:!leading-[1.02] lg:!text-[5.4rem] mt-3 md:mt-4 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)]">{slide.h1}</h1>
+                  ) : (
+                    <p className="ledger-h1 max-md:!text-[2.1rem] max-md:!leading-[1.02] lg:!text-[5.4rem] mt-3 md:mt-4 drop-shadow-[0_2px_16px_rgba(0,0,0,0.55)]">{slide.h1}</p>
+                  )}
+                  <p className="text-[14.5px] leading-relaxed md:text-xl text-white/85 mt-3 md:mt-5 max-w-xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.5)]">{slide.sub}</p>
+                </motion.div>
+              </AnimatePresence>
+            </div>
+            {s !== 0 && <h1 className="sr-only">{deck[0].h1}</h1>}
+            <div className="mt-6 flex items-center gap-2" aria-label="Headlines">
+              {deck.map((x, i) => (
+                <button key={x.h1} type="button" aria-label={`Headline ${i + 1}: ${x.h1}`} aria-pressed={i === s} onClick={() => setS(i)}
+                  className={`h-[3px] transition-all duration-500 ${i === s ? "w-8 bg-white" : "w-4 bg-white/35 hover:bg-white/60"}`} />
+              ))}
+            </div>
+            <div className="mt-6 flex flex-wrap items-center gap-5">
+              <a href={slide.cta.href} className="inline-flex items-center h-11 px-7 bg-paper ledger-eyebrow !text-[11px] !text-ink hover:bg-white transition-colors shadow-[0_4px_18px_rgba(0,0,0,0.35)]">
+                {slide.cta.label}
               </a>
               <a href={filmHref} className="inline-flex items-center gap-3 ledger-eyebrow !text-[11px] !text-white">
                 <span className="relative w-11 h-11 rounded-full border border-white/80 flex items-center justify-center">

@@ -138,7 +138,7 @@ old path,new path,why,old title
 /book/lengishu-residence,/stays/lengishu-kenya,booking page -> stay page,Book your stay at Lengishu Lewa Residence  | Wild Earth Stays
 /book/lewa-wilderness-lodge,/stays/lewa-wilderness-lodge,booking page -> stay page,Book your stay at Lewa Wilderness Lodge | Wild Earth Stays
 /book/likuliku-lagoon-resort,/stays/likuliku-lagoon-resort,booking page -> stay page,Book your stay at Likuliku Lagoon Resort | Wild Earth Stays
-/book/lindis-lodge,/destinations/oceania/new-zealand,booking page -> not on the new site yet; country page,Book your stay at Lindis Lodge | Wild Earth Stays
+/book/lindis-lodge,/stays/lindis-lodge,booking page -> stay page,Book your stay at Lindis Lodge | Wild Earth Stays
 /book/linyanti-wilderness-camp,/stays/linyanti-wilderness-camp,booking page -> stay page,Book your stay at Wilderness Linyanti Camp | Wild Earth Stays
 /book/lion-sands,/safaris/lion-sands,booking page -> safari reserve,Book your stay at Lion Sands Reserve | Wild Earth Stays
 /book/lolebezi-lodge,/stays/lolebezi-lodge,booking page -> stay page,Book your stay at Lolebezi Lodge | Wild Earth Stays
@@ -425,7 +425,7 @@ old path,new path,why,old title
 /memoir/a-dusty-line-on-the-horizon,/journal,journal (post not migrated yet),A Dusty Line on the Horizon | Wild Earth Stays Memoirs
 /memoir/africa-inspired-wild-and-co-safaris,/journal/africa-inspired-wild-and-co-safaris,journal post,How Africa Led Me to Build Wild &amp; Co Safaris | Wild Earth Stays Memoirs
 /memoir/blog-tracing-my-italian-heritage-through-italys-hidden-stays,/journal,journal (post not migrated yet),"Tracing My Italian Bloodline, One Hidden Stay at a Time | Wild Earth Stays Memoirs"
-/memoir/james-papagno-on-the-cayuga-collection-and-central-americas-sustainable-travel-renaissance,/journal/marsh-pride-topi-boys-masai-mara,journal post,What the Cayuga Collection Gets Right About Sustainable Luxury | Wild Earth Stays Memoirs
+/memoir/james-papagno-on-the-cayuga-collection-and-central-americas-sustainable-travel-renaissance,/journal/auko-siempang-kaia-new-asia-stays,journal post,What the Cayuga Collection Gets Right About Sustainable Luxury | Wild Earth Stays Memoirs
 /memoir/monwana-couples-first-safari,/journal/monwana-couples-first-safari,journal post,Wild Together: My Wife’s First Safari at Monwana | Wild Earth Stays Memoirs
 /memoir/noctourism,/journal,journal (post not migrated yet),Noctourism Is Calling: Where the Stars Still Shine | Wild Earth Stays Memoirs
 /memoir/stories-best-chillcations-2026,/journal,journal (post not migrated yet),The Wild Calm: Best Chillcations for 2026 | Wild Earth Stays Memoirs
@@ -619,7 +619,7 @@ old path,new path,why,old title
 /property/leopard-hills,/stays/leopard-hills,stay page,Leopard Hills | Luxury Stays in South Africa | Wild Earth Stays
 /property/lewa-wilderness-lodge,/stays/lewa-wilderness-lodge,stay page,Lewa Wilderness Lodge | Luxury Stays in Kenya | Wild Earth Stays
 /property/likuliku-lagoon-resort,/stays/likuliku-lagoon-resort,stay page,Likuliku Lagoon Resort | Luxury Stays in Fiji | Wild Earth Stays
-/property/lindis-lodge,/destinations/oceania/new-zealand,not on the new site yet; country page,Lindis Lodge | Luxury Stays in New Zealand | Wild Earth Stays
+/property/lindis-lodge,/stays/lindis-lodge,stay page,Lindis Lodge | Luxury Stays in New Zealand | Wild Earth Stays
 /property/linyanti-wilderness-camp,/stays/linyanti-wilderness-camp,stay page,Wilderness Linyanti Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/lion-sands,/safaris/lion-sands,safari reserve,Lion Sands Reserve | Luxury Stays in South Africa | Wild Earth Stays
 /property/lolebezi-lodge,/stays/lolebezi-lodge,stay page,Lolebezi Lodge | Luxury Stays in Zambia | Wild Earth Stays

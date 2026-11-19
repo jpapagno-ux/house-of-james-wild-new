@@ -48,7 +48,7 @@ export function aliikaiExtra(): ShipExtra {
         },
       })),
     }],
-    top: <FounderProof proof={s.proof} className="mt-10 max-w-3xl" />,
+    top: <><FounderProof proof={s.proof} className="mt-10 max-w-3xl" /><SailedBy /></>,
     lead: (
       // Why her Raja Ampat route works for a first visit
       <section id="first-time" className={SEC}>
@@ -141,4 +141,26 @@ export function aliikaiExtra(): ShipExtra {
       {IGGI_ON && <IggiPanel ctx={{ entityType: "voyage", entitySlug: s.slug, ledgerId: s.ledgerId, sourcePage: s.path, volume: "voyages" }} heading={`Ask Iggi about ${s.name}`} />}
     </>,
   };
+}
+
+
+// James and Anthony sailed her, 3 to 14 Nov 2024 (James). Their hare watercolour sits behind the note as a soft blend:
+// the only place outside their two profiles where the Raja Ampat watercolours appear (James, 18 Nov 2026).
+function SailedBy() {
+  return (
+    <section aria-labelledby="sailed-by" className="relative mt-10 overflow-hidden border ledger-border bg-[#F4F2EF]">
+      <Image src="https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1800/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-phinisi-father-son-drone" alt="" aria-hidden="true" fill sizes="100vw" className="object-cover object-right opacity-90 mix-blend-multiply" />
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/75 to-transparent" aria-hidden="true" />
+      <div className="relative px-6 py-10 md:px-10 md:py-14 max-w-xl">
+        <p className="ledger-eyebrow ledger-crimson">Sailed by the house · November 2024</p>
+        <h2 id="sailed-by" className="ledger-display text-[1.7rem] md:text-[2.2rem] leading-tight mt-2">James and Anthony Sailed Her</h2>
+        <p className="mt-3 text-[16px] leading-relaxed">James and his son Anthony sailed Raja Ampat aboard Aliikai, 3 to 14 November 2024. Anthony now plans Indonesia and its voyages for the house.</p>
+        <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2">
+          <Link href="/advisors/anthony-papagno" className="ledger-btn">Anthony&rsquo;s story</Link>
+          <Link href="/about/founder" className="ledger-btn-ghost">James&rsquo;s story</Link>
+        </div>
+        <p className="mt-6 text-[12px] ledger-muted">Watercolour, James Wild &amp; Co</p>
+      </div>
+    </section>
+  );
 }

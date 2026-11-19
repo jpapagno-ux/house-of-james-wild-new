@@ -11,7 +11,8 @@
 //  - a profile page is built only when a bio is filed; until then the card
 //    says the profile is on its way and offers the planning form;
 //  - James's card opens /about/founder, so there's one page about him.
-// Public fields only: no personal email or phone numbers here.
+// Public fields only. Work contact details (house email, direct line) show only when James approves
+// them for that advisor (Anthony, 18 Nov 2026); never a personal address.
 
 import { SAMPLE_DESKS, samplePortrait } from "./advisor-samples";
 import { deskCounts, type AdvisorMark, type DeskProfile, type Volume } from "./advisor-desk";
@@ -63,7 +64,35 @@ export type Advisor = {
   sample?: boolean; // invented to show the layout; labelled as such everywhere
   desk?: DeskProfile; // the Advisor Desk: ID, marks, entries carried, folios
   dna?: AdvisorDna; // Stage 4b: from the Library, merged at load (real advisors only)
+  contact?: { email: string; phone: string; tel: string }; // work contact, James-approved per advisor
+  leads?: string[]; // country slugs where James has named this advisor the lead: their card opens every page there
+  stories?: AdvisorStory[]; // photo stories of their own journeys: their photos, their facts
 };
+
+/** A photo story from an advisor's own journey. Photos are theirs (or the house's); facts are what they stated. */
+export type AdvisorStory = {
+  id: string; title: string; place: string; when: string; line: string;
+  ledgerIds: string[]; // Ledger records the story touches (a stay, a ship)
+  photos: { url: string; alt: string; credit: string; w: number; h: number }[];
+  journalSlug?: string; // the long version, once it is in the Journal
+  plates?: { url: string; alt: string }[]; // the hare watercolours of this trip (James, 18 Nov 2026: only beside their stories)
+};
+
+// James and Anthony, Raja Ampat aboard Aliikai, 3 to 14 Nov 2024 (James): on both of their pages.
+const RAJA_AMPAT_2024: AdvisorStory = {
+  id: "raja-ampat-2024", title: "Raja Ampat aboard Aliikai", place: "Raja Ampat, Indonesia", when: "November 2024",
+  line: "Anthony and James sailed Raja Ampat aboard the yacht Aliikai, 3 to 14 November 2024.",
+  ledgerIds: ["VSL-2026-000004"],
+  plates: [
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-phinisi-father-son-drone", alt: "Watercolour: two hares, a father and his son, on the bow of a phinisi among the karsts of Raja Ampat, the son flying a drone" },
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-manta-dive-father-son", alt: "Watercolour: a father and son hare diving a Raja Ampat reef as two manta rays glide overhead" },
+  ],
+  photos: [
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_limit,w_1600/jwco/advisors/anthony-papagno/stories/indonesia-2024/raja-ampat-2024-beach", alt: "Anthony and James Papagno on a white sand beach in Raja Ampat at dusk, with Raja Ampat 2024 written in the sand", credit: "Photograph, James Wild & Co", w: 1600, h: 900 },
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_limit,w_1200/jwco/advisors/anthony-papagno/stories/indonesia-2024/james-and-anthony-bar", alt: "James and Anthony Papagno at a bamboo-roofed beach bar in Indonesia, November 2024", credit: "Photograph, James Wild & Co", w: 1200, h: 1600 },
+  ],
+};
+
 
 const CDN = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 
@@ -81,6 +110,7 @@ const CARDS: Advisor[] = [
     specialties: [],
     traveled: [],
     profileHref: "/about/founder",
+    stories: [RAJA_AMPAT_2024],
     // The founder's own Desk: ADV-0001. Every entry is a place James has stated
     // he stayed at or walked, with the year; the marks are his own. While the
     // house is in testing he is the advisor on every page (DEFAULT_ADVISOR).
@@ -89,7 +119,7 @@ const CARDS: Advisor[] = [
       volumes: ["safaris", "stays", "voyages", "gatherings", "overland", "europe"],
       countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah"],
       // Gold Certified Tahiti Specialist (Tahiti Tourisme's Tahiti Specialist Program, James, 2 Nov 2026; profile
-      // URL to follow, so no link yet); surfing Tahiti since 1995.
+      // URL to follow, so no link yet); surfing Tahiti since May 1996 (James, 15 Nov 2026).
       specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road", "Gold Certified Tahiti Specialist"],
       line: "I don't send anyone somewhere I wouldn't go back to. The Ledger is that list.",
       entries: [
@@ -136,9 +166,13 @@ const CARDS: Advisor[] = [
     ledgerId: "ADV-2026-000002",
     name: "Anthony Papagno",
     firstName: "Anthony",
-    role: "Travel Advisor · Nature & Wildlife",
-    roleApproved: true,
-    portrait: { url: `${CDN}/67d1f822a724915185466057_team-anthony.avif`, alt: "Portrait of Anthony Papagno, travel advisor at James Wild & Co" },
+    role: "Travel Advisor · Indonesia & Indonesia Voyages",
+    roleApproved: true, // James, 18 Nov 2026
+    leads: ["indonesia"], // James, 18 Nov 2026: Anthony is the advisor for all of Indonesia and its voyages
+    // Portrait and contact sent by James, 18 Nov 2026.
+    portrait: { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_fill,g_face,ar_4:5,w_800/jwco/advisors/anthony-papagno/portrait", alt: "Portrait of Anthony Papagno, travel advisor at James Wild & Co" },
+    contact: { email: "anthony@jameswildco.com", phone: "561.479.6356", tel: "+15614796356" },
+    stories: [RAJA_AMPAT_2024],
     intro: "James's son. Nature, wildlife and the trail: Indonesia, the Galápagos and Costa Rica so far, and he's following his father's footsteps.",
     bio: [
       "Anthony is James's son, and he grew up watching his father leave for somewhere wild and come back with a story. Then he started going himself. He travels for nature, wildlife and the walk in: the trail, the reef, the forest at first light.",
@@ -314,13 +348,19 @@ const deskOnly: Advisor[] = DESK_CARDS.filter((d) => d.name && !CARDS.some((c) =
   portrait: null, intro: null, bio: [], specialties: d.specialties ?? [], traveled: [], profileHref: `/advisors/${d.slug}`,
 }));
 /** Every advisor card on file, stand-ins included (`sample: true`: the invented advisors in advisor-samples.ts). */
-export const ALL_ADVISORS: Advisor[] = [...CARDS, ...deskOnly].map(withDna).map(withDeskProfile);
+// Profile switch (James, 18 Nov 2026): an advisor who turned their profile off on their desk is off every page.
+const OFFLINE = new Set((deskDna as { advisors: DeskDna[] }).advisors.filter((d) => d.offline).map((d) => d.slug));
+export const ALL_ADVISORS: Advisor[] = [...CARDS, ...deskOnly].filter((a) => !OFFLINE.has(a.slug)).map(withDna).map(withDeskProfile);
 /** Stand-ins never render on the public site (James, 3 Nov 2026: no invented people or facts). They stay in the data
  *  and show only on a deployment that sets NEXT_PUBLIC_SHOW_STAND_INS=true (a preview, to test a layout). */
 export const SHOW_STAND_INS = process.env.NEXT_PUBLIC_SHOW_STAND_INS === "true";
 /** The advisors the site renders: the strip, the chip, "Who plans", /advisors and the profiles, the feed, search,
  *  llms.txt and the JSON-LD all read this list, so a stand-in is hidden everywhere by this one filter. */
 export const ADVISORS: Advisor[] = SHOW_STAND_INS ? ALL_ADVISORS : ALL_ADVISORS.filter((a) => !a.sample);
+/** "Away until" from the desk: the date the advisor is back (ISO), shown on their card; null when they are in. */
+const AWAY = new Map((deskDna as { advisors: DeskDna[] }).advisors.filter((d) => d.awayUntil).map((d) => [d.slug, d.awayUntil as string]));
+export const awayUntil = (slug: string) => { const d = AWAY.get(slug); return d && d > new Date().toISOString().slice(0, 10) ? d : null; };
+export const backOn = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "long", timeZone: "UTC" });
 
 // In the field with us: partners who aren't James Wild & Co booking
 // advisors, shown with their own affiliation (old WES team page, 25 Oct 2026).
@@ -377,6 +417,9 @@ export function whoCarries(pathwayId: string): Advisor[] {
   const real = ADVISORS.filter((a) => !a.sample && a.dna?.pathways.includes(pathwayId) && a.dna.availability !== "closed");
   return real.sort((x, y) => (x.slug === DEFAULT_ADVISOR ? -1 : y.slug === DEFAULT_ADVISOR ? 1 : 0));
 }
+
+/** The advisor James has named lead for a country (their card opens every page there), or null. */
+export const leadFor = (countrySlug?: string | null) => (countrySlug ? ADVISORS.find((a) => !a.sample && a.leads?.includes(countrySlug)) ?? null : null);
 
 export const advisorCounts = (a: Advisor) => (a.desk ? deskCounts(a.desk) : { carried: 0, guests: 0, folios: 0, slept: 0 });
 export const initials = (name: string) => name.split(" ").map((p) => p[0]).join("").slice(0, 2).toUpperCase();

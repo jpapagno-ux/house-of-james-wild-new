@@ -1,5 +1,7 @@
 # Lion Sands · the checkout, worked for every unit
 
+> 15 Nov 2026 (James): the house adds no Florida sales tax. Any 7% line or figure below is withdrawn; totals are now the same amounts without it.
+
 The full Request-to-Reserve process on the published card (`2027-V1`, revision 2),
 run through the same pricing engine the site uses (`tests/lion-sands-checkout.test.ts`
 re-computes this table on every test run). One worked stay: **3 nights, 10–13 June

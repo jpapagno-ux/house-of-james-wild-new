@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Check } from "lucide-react";
-import { APPLY_HEARD, APPLY_SPECIALTIES, APPLY_STATUS, APPLY_VOLUMES, EMPTY, validateApplication, type Application } from "@/lib/advisors/application";
+import { APPLY_HEARD, APPLY_LANGUAGES, APPLY_PARTIES, APPLY_PATHWAYS, APPLY_SPECIALTIES, APPLY_STATUS, APPLY_VOLUMES, EMPTY, validateApplication, type Application } from "@/lib/advisors/application";
 import { SITE } from "@/lib/site";
 
 // The advisor application (Stage 5, 31 Oct 2026). Who you are, where you know
@@ -16,7 +16,7 @@ export default function ApplyForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [state, setState] = useState<"idle" | "sending" | "sent" | "preview" | "failed">("idle");
   const set = <K extends keyof Application>(k: K, v: Application[K]) => setF((x) => ({ ...x, [k]: v }));
-  const toggle = (k: "volumes" | "specialties", v: string) => set(k, f[k].includes(v) ? f[k].filter((x) => x !== v) : [...f[k], v]);
+  const toggle = (k: "volumes" | "specialties" | "pathways" | "partyTypes" | "languages", v: string) => set(k, f[k].includes(v) ? f[k].filter((x) => x !== v) : [...f[k], v]);
   const err = (k: string) => errors[k] && <p id={`${k}-err`} className="mt-1 text-[13.5px] text-crimson">{errors[k]}</p>;
   const aria = (k: string) => (errors[k] ? { "aria-invalid": true, "aria-describedby": `${k}-err` } : {});
 
@@ -74,6 +74,13 @@ export default function ApplyForm() {
         <p className="text-[15.5px] ledger-muted -mt-2 max-w-xl">The Ledger is built on places people have slept in, walked or sailed. Yours count the same way.</p>
         <div><label htmlFor="countries" className={label}>Countries and places you have been, as an advisor or a traveller</label><textarea id="countries" rows={3} className={field} value={f.countries} onChange={(e) => set("countries", e.target.value)} placeholder="Botswana (Okavango, 2023), Ireland's west coast, the Galápagos on a small ship…" {...aria("countries")} />{err("countries")}</div>
         <div>
+          <p className={label} id="paths-label">Which Wild Pathways do you carry? <span className="ledger-muted normal-case tracking-normal">(the kinds of journey you know best)</span></p>
+          <div className="flex flex-wrap gap-2" role="group" aria-labelledby="paths-label">
+            {APPLY_PATHWAYS.map((x) => { const on = f.pathways.includes(x[0]); return <button type="button" key={x[0]} aria-pressed={on} onClick={() => toggle("pathways", x[0])} className={`inline-flex items-center gap-1.5 px-3 py-1.5 border text-[14.5px] transition-colors ${on ? "bg-ink text-paper border-ink" : "ledger-border hover:border-crimson"}`}>{on && <Check className="w-3.5 h-3.5" aria-hidden="true" />}{x[1]}</button>; })}
+          </div>
+          {err("pathways")}
+        </div>
+        <div>
           <p className={label} id="volumes-label">Which volumes would you carry?</p>
           <div className="flex flex-wrap gap-2" role="group" aria-labelledby="volumes-label">
             {APPLY_VOLUMES.map((v, i) => { const on = f.volumes.includes(v); return <button type="button" key={v} id={i === 0 ? "volumes" : undefined} aria-pressed={on} onClick={() => toggle("volumes", v)} className={`inline-flex items-center gap-1.5 px-3 py-1.5 border text-[14.5px] transition-colors ${on ? "bg-ink text-paper border-ink" : "ledger-border hover:border-crimson"}`}>{on && <Check className="w-3.5 h-3.5" aria-hidden="true" />}{v}</button>; })}
@@ -86,6 +93,20 @@ export default function ApplyForm() {
             {APPLY_SPECIALTIES.map((s) => { const on = f.specialties.includes(s); return <button type="button" key={s} aria-pressed={on} onClick={() => toggle("specialties", s)} className={`inline-flex items-center gap-1.5 px-3 py-1.5 border text-[14.5px] transition-colors ${on ? "bg-ink text-paper border-ink" : "ledger-border hover:border-crimson"}`}>{on && <Check className="w-3.5 h-3.5" aria-hidden="true" />}{s}</button>; })}
           </div>
           {err("specialties")}
+        </div>
+        <div>
+          <p className={label} id="party-label">Who do you plan best for?</p>
+          <div className="flex flex-wrap gap-2" role="group" aria-labelledby="party-label">
+            {APPLY_PARTIES.map((x) => { const on = f.partyTypes.includes(x[0]); return <button type="button" key={x[0]} aria-pressed={on} onClick={() => toggle("partyTypes", x[0])} className={`inline-flex items-center gap-1.5 px-3 py-1.5 border text-[14.5px] transition-colors ${on ? "bg-ink text-paper border-ink" : "ledger-border hover:border-crimson"}`}>{on && <Check className="w-3.5 h-3.5" aria-hidden="true" />}{x[1]}</button>; })}
+          </div>
+          {err("partyTypes")}
+        </div>
+        <div>
+          <p className={label} id="lang-label">Which languages do you plan in?</p>
+          <div className="flex flex-wrap gap-2" role="group" aria-labelledby="lang-label">
+            {APPLY_LANGUAGES.map((x) => { const on = f.languages.includes(x); return <button type="button" key={x} aria-pressed={on} onClick={() => toggle("languages", x)} className={`inline-flex items-center gap-1.5 px-3 py-1.5 border text-[14.5px] transition-colors ${on ? "bg-ink text-paper border-ink" : "ledger-border hover:border-crimson"}`}>{on && <Check className="w-3.5 h-3.5" aria-hidden="true" />}{x}</button>; })}
+          </div>
+          {err("languages")}
         </div>
       </fieldset>
 

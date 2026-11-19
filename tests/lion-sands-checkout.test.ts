@@ -11,7 +11,7 @@ import { quote, type RateCard, type Room } from "../lib/booking-live/pricing/eng
 // 3 nights, 10–13 June 2027, 2 adults (6 for the whole residence).
 //
 // Pricing order (COMMERCIAL-RULES.md): room nights − offers + local taxes the
-// rate excludes + 7% Florida sales tax = total → 30% deposit → balance 60 days
+// rate excludes = total (no Florida sales tax: James, 15 Nov 2026) → 30% deposit → balance 60 days
 // before arrival. VAT 15% is in the rate: shown, never added.
 
 type Rec = { id: string; cellValuesByFieldId: Record<string, unknown> };
@@ -59,7 +59,7 @@ test("the Lion Sands card passes the sync's validation with a VAT-included tax",
 
 export const EXAMPLES: { unit: string; nightly: number; roomNights: number; vatIncluded: number; floridaTax: number; total: number; deposit: number; balance: number; balanceDue: string | null }[] = [];
 
-test("every unit prices 3 nights in June 2027: nights + 7% Florida tax = total, 30% deposit, balance 60 days out, VAT shown not added", () => {
+test("every unit prices 3 nights in June 2027: nights = total, no Florida tax, 30% deposit, balance 60 days out, VAT shown not added", () => {
   for (const room of rooms) {
     const adults = room.maxOccupancy >= 6 ? 6 : 2;
     const q = quote(card, room, { roomTypeId: room.id, ratePlanId: planFor(room.id), adults, ...STAY });
@@ -74,7 +74,7 @@ test("every unit prices 3 nights in June 2027: nights + 7% Florida tax = total, 
     assert.equal(vat.included, true, "VAT is in the rate");
     const added = q.charges.filter((x) => !x.included && x.kind !== "house_tax").reduce((s, x) => s + x.amountMinor, 0);
     assert.equal(added, 0, "nothing else is added for Lion Sands");
-    assert.equal(q.floridaTaxMinor, Math.floor((roomNights * 700 + 5000) / 10_000));
+    assert.equal(q.floridaTaxMinor, 0);
     assert.equal(q.grandTotalMinor, roomNights + q.floridaTaxMinor);
     assert.equal(q.depositDueMinor, Math.floor((q.grandTotalMinor * 3000 + 5000) / 10_000));
     assert.equal(q.balanceMinor, q.grandTotalMinor - q.depositDueMinor);

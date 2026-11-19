@@ -1,10 +1,13 @@
-// Advisor Desk · part five · Advisor DNA. Pure helpers, no imports, so plain Node can test them.
+// Advisor Desk · part five · Advisor DNA. Pure helpers (one import-free vocabulary), so plain Node can test them.
+import { DNA_PARTY_LABELS, DNA_VOLUME_LABELS } from "../dna/vocabulary.ts";
 // The database checks the same rules again (private.clean_advisor_dna); these shape the form, the
 // starting values, the review on the house desk and the overlay the website builds from.
 
 export const DNA_PATHWAYS = ["PATH-01", "PATH-02", "PATH-03", "PATH-04", "PATH-05", "PATH-06", "PATH-07", "PATH-08"] as const;
-export const DNA_VOLUMES: [string, string][] = [["stays", "Stays"], ["safaris", "Safaris"], ["gatherings", "Gatherings"], ["voyages", "Voyages"], ["overland", "Overland"], ["europe", "The Other Europe"]];
-export const DNA_PARTIES: [string, string][] = [["couple", "Couples"], ["family", "Families"], ["friends", "Friends"], ["solo", "Solo travellers"], ["group", "Groups"]];
+// Volumes and parties come from the shared DNA vocabulary (lib/dna/vocabulary.ts), so the desk, the
+// application and the traveller match ask the same questions in the same words (James, 18 Nov 2026).
+export const DNA_VOLUMES: [string, string][] = DNA_VOLUME_LABELS;
+export const DNA_PARTIES: [string, string][] = DNA_PARTY_LABELS;
 export const DNA_AVAILABILITY: [string, string, string][] = [
   ["open", "Taking new clients", "The site names you on the pages you know."],
   ["waitlist", "Waitlist", "The site still names you; new clients are told you have a waitlist."],
@@ -102,7 +105,7 @@ export function dnaChanges(before: DnaInput | null, after: DnaInput): { field: s
 }
 
 // ===== The website's overlay: the desk's approved DNA over the Library's copy, advisor by advisor.
-export type DeskDna = { slug: string; ledgerId: string; hidden: boolean } & Partial<LibraryDna & { confirmed: string | null; updated: string | null }>;
+export type DeskDna = { slug: string; ledgerId: string; hidden: boolean; offline?: boolean } & Partial<LibraryDna & { confirmed: string | null; updated: string | null; awayUntil: string | null }>;
 /** Desk wins where it has an advisor; hidden (paused or left) keeps the Library's marks but closes them to new
  *  places; an advisor the desk has not reached keeps the Library's copy unchanged. */
 export function overlayDna<T extends LibraryDna & { slug: string; ledgerId: string }>(library: T[], desk: DeskDna[]): (T & { source: "desk" | "library" })[] {

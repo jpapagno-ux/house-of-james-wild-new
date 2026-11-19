@@ -30,6 +30,13 @@ export const STAY_FILMS: Record<string, WideFilm> = {
     credit: "Film courtesy of Salterra Resort & Spa",
     hero: true,
   },
+  // The Lindis Group's own films from its trade and media page (house partner, James, 16 Nov 2026), full screen.
+  "lindis-lodge": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/new-zealand/the-lindis/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/new-zealand/the-lindis/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/new-zealand/the-lindis/film.jpg`, title: "The Lindis in the Ahuriri Valley", credit: "Film courtesy of The Lindis Group", hero: true },
+  "mt-isthmus-villa": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/new-zealand/mt-isthmus/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/new-zealand/mt-isthmus/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/new-zealand/mt-isthmus/film.jpg`, title: "Mt Isthmus Villa, between the lakes", credit: "Film courtesy of The Lindis Group", hero: true },
+  "paroa-bay": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/new-zealand/paroa-bay/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/new-zealand/paroa-bay/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/new-zealand/paroa-bay/film.jpg`, title: "Paroa Bay above the Bay of Islands", credit: "Film courtesy of The Lindis Group", hero: true },
+  "auko": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/vietnam/auko/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/vietnam/auko/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/vietnam/auko/film.jpg`, title: "Auko among the limestone peaks of Phong Nha", credit: "Film courtesy of Auko", hero: true },
+  "siempang-forest-lodge": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/cambodia/siempang-forest-lodge/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/cambodia/siempang-forest-lodge/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/cambodia/siempang-forest-lodge/film.jpg`, title: "Siempang Forest Lodge in Siem Pang Wildlife Sanctuary", credit: "Film courtesy of Siempang Forest Lodge", hero: true },
+  "song-saa-private-island": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/cambodia/song-saa/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/cambodia/song-saa/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/cambodia/song-saa/film.jpg`, title: "Song Saa Private Island in the Koh Rong archipelago", credit: "Film courtesy of Song Saa Private Island", hero: true },
   "casali-di-casole": {
     kind: "mp4",
     src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/casali-di-casole/film-estate.mp4`,

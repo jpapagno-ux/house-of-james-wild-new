@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-15",
+ "exportedOn": "2026-11-18",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -1000,6 +1000,82 @@
    "placeSlug": null
   },
   {
+   "slug": "ayana-komodo",
+   "name": "AYANA Komodo",
+   "ledgerId": "STY-2026-000683",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A sea-facing resort on Waecicu Beach at the edge of Komodo National Park, with its own 54 metre phinisi, Lako Di'a",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/ayana-komodo/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/ayana-komodo/room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/ayana-komodo/lako-dia",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/ayana-komodo/dining"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wildlife",
+    "diving",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "205 rooms and suites, every one with a sea view."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Komodo National Park's UNESCO sites, one to two hours from the resort jetty",
+     "AYANA Lako Di'a: nine cabins for 18 guests, April to October; sunset cruises on Lako Sae and a glass-bottom boat",
+     "Coral restoration at the Marine Discovery Center; KISIK, HonZEN and the UNIQUE rooftop bar; a spa with volcanic stone massage"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The gateway resort to Komodo National Park, where all 205 rooms face the sea and the resort's own 54 metre phinisi, AYANA Lako Di'a, sails the park from April to October."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": "komodo",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "acro-suites",
    "name": "Acro Suites",
    "ledgerId": "STY-2026-000572",
@@ -1808,6 +1884,163 @@
    "placeSlug": null
   },
   {
+   "slug": "aman-nai-lert-bangkok",
+   "name": "Aman Nai Lert Bangkok",
+   "ledgerId": "STY-2026-000667",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Fifty-two suites by Jean-Michel Gathy within the seven-acre gardens of Nai Lert Park, in the middle of Bangkok",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/aman-nai-lert-bangkok/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/aman-nai-lert-bangkok/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/aman-nai-lert-bangkok/arva",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/aman-nai-lert-bangkok/pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "city",
+    "wellness",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bangkok Suvarnabhumi (BKK) or Don Mueang (DMK)",
+   "airportDirections": "Aman offers fast-track arrival at Suvarnabhumi and limousine transfers from Suvarnabhumi or Don Mueang; round-trip transfers are included for stays of two nights or more, and for one night in Corner Suites and above. Aman does not publish the drive time.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "52 suites designed by Jean-Michel Gathy, from Deluxe Suites of 94 to 98 sqm to Corner Suites of 92 sqm with 270 degree views.",
+     "Terrace Suite: 114 sqm with its own open-air terrace.",
+     "Aman Suite: the entire 18th floor, 566 sqm.",
+     "Every suite has a daybed, a workspace and a bathroom with an oversized tub, rain shower and double vanity; breakfast is included."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Aman Spa & Wellness over two floors, with medical wellness, hydrotherapy and thermal facilities and Banya Spa House",
+     "Arva, Hiori, Sesui, Aman Club and the Aman Lounge; afternoon tea at 1872",
+     "The gardens of Nai Lert Park"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Aman in the middle of Bangkok: 52 suites, among the largest in the city, inside the seven-acre green of Nai Lert Park, with a 1,500 square metre spa and wellness centre."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "bangkok",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "aman-tokyo",
+   "name": "Aman Tokyo",
+   "ledgerId": "STY-2026-000682",
+   "country": "Japan",
+   "countrySlug": "japan",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Eighty-four rooms and suites on the top six floors of the Otemachi Tower, with a 2,500 square metre spa and a 30 metre pool",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/japan/aman-tokyo/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/japan/aman-tokyo/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/japan/aman-tokyo/spa-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/japan/aman-tokyo/arva"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "city",
+    "wellness",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Tokyo Haneda (HND) or Narita (NRT)",
+   "airportDirections": "About 40 minutes by car from Haneda and 60 from Narita; the tower connects to Otemachi station, and Tokyo Station is within walking distance.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "84 rooms and suites on levels 35 to 38.",
+     "Deluxe Rooms and Deluxe Palace Garden View Rooms (71 sqm); Premier Rooms (80 sqm).",
+     "Suites (141 to 146 sqm), Corner Suites (121 to 139 sqm) and 4 Aman Suites (157 sqm)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Aman Spa, 2,500 sqm over two floors, with a 30 metre heated pool",
+     "Arva, Musashi by Aman for Edomae sushi, The Lounge by Aman, Fumoir and The Café by Aman",
+     "Tokyo Station on foot; the bullet train onward to Kyoto"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Aman's first city hotel takes the top six floors of the Otemachi Tower in central Tokyo; every room has a deep furo bathtub, and the Aman Spa spans two floors with a heated 30 metre pool."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "tokyo",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "amandari",
    "name": "Amandari",
    "ledgerId": "STY-2026-000008",
@@ -2055,6 +2288,85 @@
     "status": "draft",
     "classifiedBy": "house draft, for James to approve",
     "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "amanoi",
+   "name": "Amanoi",
+   "ledgerId": "STY-2026-000677",
+   "country": "Vietnam",
+   "countrySlug": "vietnam",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Pavilions, pool villas and residences above Vinh Hy Bay inside the 29,000 hectare Nui Chua National Park",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/amanoi/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/amanoi/ocean-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/amanoi/beach-club",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/amanoi/wellness"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "families",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Cam Ranh International Airport (CXR)",
+   "airportDirections": "About 75 minutes by car from Cam Ranh (Nha Trang) airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "9 freestanding Pavilions.",
+     "23 Villas with private pools and 2 Wellness Pool Villas.",
+     "12 Residences of one to five bedrooms, among them the 925 sqm, three bedroom Ocean Pool Residence with its own spa."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Kayaking and catamaran trips on Vinh Hy Bay",
+     "Snorkelling, fishing villages and Cham culture",
+     "The lakeside Aman Spa and the Beach Club"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Aman's Vietnamese hideaway sits inside Nui Chua National Park, a UNESCO Biosphere Reserve, above Vinh Hy Bay, with a lakeside spa, a beach club on its own shore and a clifftop infinity pool."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-01"
+    ],
+    "setting": "vinh_hy_bay",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
    },
    "volumes": [
     "stays"
@@ -5265,6 +5577,92 @@
    "placeSlug": null
   },
   {
+   "slug": "auko",
+   "name": "Auko",
+   "ledgerId": "STY-2026-000664",
+   "country": "Vietnam",
+   "countrySlug": "vietnam",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Thirty lodges on the Son River inside the Phong Nha-Ke Bang World Heritage Site, with cave meditation, clifftop cold plunges and every meal included",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/canopy-lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/ground-lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/wellness",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/origin-restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/vietnam/auko/sound-healing-cave"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "wellness",
+    "couples",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Dong Hoi Airport (VDH)",
+   "airportDirections": "Fly to Dong Hoi from Hanoi or Ho Chi Minh City, then a one hour private transfer. Hue Airport is the alternative, three hours by private transfer. By train to Dong Hoi station from Hanoi or Da Nang, then one hour by road; Da Nang is about five hours by private car.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "21 Canopy Lodges: one bedroom, on stilts with mountain views; king bed, 30 sqm inside and a 15 sqm terrace.",
+     "6 Ground Lodges: one bedroom at ground level with forest views.",
+     "1 Earth Lodge: two bedrooms at ground level with a shared terrace, for families and small groups of up to four.",
+     "2 River Lodges: two bedrooms on stilts over the Son River, up to four.",
+     "Every lodge has an open-air bathtub, a terrace, air conditioning and wifi."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The Open Way: arrive any day, stay as long as you like, choose your own classes and sessions",
+     "The Still Way: four nights led by a Wellness Guide, with silence, breathwork, somatic movement and sound healing in the caves",
+     "The Wild Way: three nights of guided adventure (coming soon)",
+     "Boat trips into the cave network, village cycling and guided walks in Phong Nha",
+     "Hydro journeys: a heated kaolin clay steam chamber, a forest rain shower and a clifftop cold plunge with breathwork",
+     "Harvest table meals at Origin Restaurant, forest to table, with vegan and vegetarian menus"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Lodges on stilts among limestone peaks in the Phong Nha-Ke Bang UNESCO World Heritage Site, with a sound healing cave, a silent meditation cave and six clifftop cold plunge tubs held at 5 to 10 degrees C."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-01",
+     "PATH-08"
+    ],
+    "setting": "karst_river",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "awasi-atacama",
    "name": "Awasi Atacama",
    "ledgerId": "STY-2026-000026",
@@ -8321,6 +8719,91 @@
    "placeSlug": null
   },
   {
+   "slug": "como-maalifushi",
+   "name": "COMO Maalifushi",
+   "ledgerId": "STY-2026-000658",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Water villas and beach houses in the Thaa Atoll, with COMO Shambhala and a resident Tropicsurf guide for the waves at Farms, 25 minutes by speedboat",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/water-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/maalifushi-water-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/beach-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/como-maalifushi/beach-suite"
+   ],
+   "bestMonths": "April - October",
+   "bestMonthsNote": "Surf season with Tropicsurf: April, May and October bring lighter winds and glassy waves for beginners and intermediates; June to September the biggest swells for advanced surfers (COMO).",
+   "bestFor": [
+    "family",
+    "adventure",
+    "honeymoon"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": "A scenic 30 to 60 minute seaplane transfer from Velana International Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Beach Villas and Beach Suites, one bedroom, on the island's west side.",
+     "Maalifushi Beach Villa.",
+     "Water Villas, one bedroom, with private pools over the lagoon; the Maalifushi Water Villa, a two-bedroom overwater bungalow.",
+     "Two-Bedroom Beach House, and the four-bedroom COMO Residence; family villas take up to twelve guests."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Surf with Tropicsurf, full time at the resort April to October: Farms (Thaa, 25 minutes by speedboat, beginners to experienced), Machine (Laamu, advanced) and Kasabu (Dhaalu) on surf safaris by speedboat",
+     "Dive more than 30 sites, with turtles, reef sharks and manta rays; PADI courses and private charters",
+     "COMO Shambhala wellness",
+     "Play by COMO for children aged 4 to 11: ziplines, treasure hunts, drumming, marine biology outings"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Madi: international and Maldivian dishes",
+     "Tai: overwater Japanese dining",
+     "Thila: poolside and beachside"
+    ]
+   },
+   "onlyHere": [
+    "A resident Tropicsurf guide from April to October and speedboat surf safaris to breaks in three atolls: Farms in Thaa, Machine in Laamu and Kasabu in Dhaalu."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "como-parrot-cay",
    "name": "COMO Parrot Cay",
    "ledgerId": "STY-2026-000575",
@@ -9196,6 +9679,84 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "cape-weligama",
+   "name": "Cape Weligama",
+   "ledgerId": "STY-2026-000680",
+   "country": "Sri Lanka",
+   "countrySlug": "sri-lanka",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Thirty-nine villas and suites on twelve acres of a promontory above the Indian Ocean, with a 60 metre crescent Moon Pool",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/premier-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/pool-pavilion",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/cape-weligama/lookout"
+   ],
+   "bestMonths": "Mid-December to March",
+   "bestMonthsNote": "Driest from mid-December to March, and again in August and September; the monsoon traditionally May to July; brief evening rain in October and November. Diving and snorkelling are best late November to early April (Resplendent Ceylon).",
+   "bestFor": [
+    "honeymoon",
+    "families",
+    "surf"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bandaranaike International Airport (CMB)",
+   "airportDirections": "About two hours by the Southern Highway from Colombo or the airport (190 km); Galle is 30 minutes away. A scheduled seaplane flies from Colombo, and a charter seaplane links Cape Weligama with Ceylon Tea Trails.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "23 villas in eight stone-ringed gardens: Luxury (130 sqm), Premier and Prestige (180 sqm) and Grand Villas (200 sqm), with 15 metre private or shared pools.",
+     "3 Pool Pavilions of 130 sqm with a 15 by 4 metre pool, and 3 Cape Residences of 310 sqm.",
+     "16 suites around the Cove Pool: Junior Suites (130 sqm), Master Suites (150 sqm) and two bedroom Family Suites (280 sqm)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Surf lessons on Weligama's curls, snorkelling and diving in the bay",
+     "Whale watching, kayaking on Koggala Lake and day trips to Uda Walawe",
+     "The Atlas, Tableau chef's table, The Society for Ceylon cream tea, and Sanctuary Spa"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A Relais & Châteaux resort on its own promontory above the Indian Ocean, 30 minutes east of Galle, where the Moon Pool curves 60 metres around the cape."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "south_coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -10321,6 +10882,85 @@
    "placeSlug": null
   },
   {
+   "slug": "ceylon-tea-trails",
+   "name": "Ceylon Tea Trails",
+   "ledgerId": "STY-2026-000681",
+   "country": "Sri Lanka",
+   "countrySlug": "sri-lanka",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Five planters' bungalows and 27 rooms at 1,250 metres in Sri Lanka's tea country, all inclusive",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/estate",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/norwood-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sri-lanka/ceylon-tea-trails/dunkeld-pool"
+   ],
+   "bestMonths": "December to May",
+   "bestMonthsNote": "A year-round stay: driest from December to May, wetter in June and July and October and November (Resplendent Ceylon).",
+   "bestFor": [
+    "couples",
+    "families",
+    "culture"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Bandaranaike International Airport (CMB)",
+   "airportDirections": "About 4.5 hours by road from the airport (160 km) or four from Colombo; seaplane and helicopter transfers are available, and Hatton station has trains to Colombo, Kandy, Nuwara Eliya and Ella.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Norwood: 6 rooms. Tientsin: 6 rooms, the highest at 1,402 metres.",
+     "Castlereagh: 5 rooms on the lake. Summerville: 5 rooms. Dunkeld: 5 rooms with the Owner's Cottage.",
+     "Master Suites, Garden Suites and Luxury Rooms; two nights minimum."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The daily Tea Experience in the fields and factory",
+     "Walks between bungalows through the estates; the hill-country railway from Hatton",
+     "Afternoon cream tea, cocktails and a four course dinner each evening"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Five working tea planters' bungalows around Lake Castlereagh in the hill country bordering the UNESCO Central Highlands, each staffed and run as a house, with meals, drinks and a daily tea experience included."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-03",
+     "PATH-07"
+    ],
+    "setting": "tea_country",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "chable-yucatan",
    "name": "Chablé Yucatán",
    "ledgerId": "STY-2026-000057",
@@ -10957,6 +11597,80 @@
     "6ae69754642635a90d18aa07",
     "6ae697551c4c7b8d57a9bb1d"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "cheval-blanc-randheli",
+   "name": "Cheval Blanc Randheli",
+   "ledgerId": "STY-2026-000661",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Water, lagoon and island villas in the Noonu Atoll, reached only by seaplane, and a private island of its own for eight",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/cheval-blanc-randheli/hero-water-villa",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/cheval-blanc-randheli/water-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/cheval-blanc-randheli/lagoon-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/cheval-blanc-randheli/lagoon-villa-2"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "luxury",
+    "group_exclusive_use"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-17",
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": "In the Noonu Atoll, accessible only by seaplane from Malé.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "One-bedroom villas for two: Water Villa, Lagoon Villa, Horizon Villa, Garden Water Villa, Island Villa.",
+     "Two-bedroom villas for four: Garden Water Villa (infinity pool), Lagoon Garden Villa, Island Villa.",
+     "The Private Island: a one hectare island, about 2,200 m², four bedrooms for up to eight guests, a 25 metre pool, a separate guest villa, private beaches, spa treatment room, fitness centre, screening room and a resident team of Ambassadeurs, reached by its own jetty."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "The Private Island: a one hectare island of its own, with a 25 metre pool and a team that lives on it, for eight guests."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -17784,6 +18498,90 @@
    "placeSlug": null
   },
   {
+   "slug": "gili-lankanfushi",
+   "name": "Gili Lankanfushi Maldives",
+   "ledgerId": "STY-2026-000660",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Overwater villas thirty minutes by speedboat from Malé, Crusoe Residences reached only by boat, and The Private Reserve, a four-bedroom villa with a slide into the sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/gili-lankanfushi/hero-private-reserve",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/gili-lankanfushi/crusoe-residence",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/gili-lankanfushi/crusoe-villas",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/gili-lankanfushi/private-reserve-aerial"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "group_exclusive_use"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-17",
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": "About 20 km from Velana International Airport, a 30 minute speedboat transfer.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Villa Suites and Villa Suites with Pool, overwater, one or two bedrooms, some with rooftop terraces, infinity pools, private gyms and a Maldivian swing.",
+     "Gili Lagoon Villa, Gili Lagoon Retreat and Gili Lagoon Residence; Two-Bedroom Villa with Pool; Residence and Residence with Pool.",
+     "Crusoe Residences (Sunset and Island View), standalone and reached only by boat, with catamaran nets over the sea and overwater hammocks.",
+     "The Private Reserve: four bedrooms over the water, a personal butler, infinity pool, spa pavilion with sauna and steam room, gym, cinema and a water slide into the sea."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling and diving on the house reef",
+     "Sunset cocktails aboard a traditional dhoni",
+     "Meera Spa: Ayurvedic rituals, signature massages, organic facials",
+     "The organic garden and the underground wine cellar"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Kashiveli: international and local flavours",
+     "By the Sea: Japanese fusion",
+     "EarthCheck Gold"
+    ]
+   },
+   "onlyHere": [
+    "The Private Reserve, which Gili Lankanfushi calls the world's largest stand-alone overwater villa, and Crusoe Residences you can only reach by boat, half an hour from the airport."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "giraffe-manor",
    "name": "Giraffe Manor",
    "ledgerId": "STY-2026-000100",
@@ -21867,14 +22665,14 @@
   },
   {
    "slug": "ja-manufaru-maldives",
-   "name": "JA Manafaru Maldives \nLuxury Island Residences",
+   "name": "JA Manafaru Maldives",
    "ledgerId": "STY-2026-000120",
    "country": "Maldives",
    "countrySlug": "maldives",
    "regionSlug": "asia",
    "misfiled": null,
-   "category": "hotel",
-   "tagline": "Secluded Splendor: Authentic Island Luxury at the Edge of the World",
+   "category": "resort",
+   "tagline": "A natural island in the Haa Alifu Atoll, far north, with water villas facing sunrise and sunset, family pool villas and a treehouse restaurant",
    "quote": "Discover yourself in the sea breeze this island isn't just an escape, it's a doorway to transformation.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/f31157fec_b9999ad3b_685db52b855bdf3477c4c856_hero-image-JAmanufaru.jpg",
    "gallery": [
@@ -21892,8 +22690,8 @@
    "bestMonths": "November–April, June–September",
    "bestMonthsNote": "November–April brings clear skies, calm seas, and peak visibility. Ideal for diving and snorkeling. June–September offers fewer tourists, discounted rates, and excellent conditions for surfing and adventurous water sports.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 6.8365,
     "lng": 73.157
@@ -21902,22 +22700,20 @@
    "airportDirections": "Fly into MLE, then seaplane transfer (~60 min) directly to the island. Alternatively fly domestic to DRV (~35 min), followed by speedboat (~30 min). Seaplane from MLE offers panoramas and convenience.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Sunrise Water Villa with Infinity Pool",
-     "Sunset Water Villa with Infinity Pool",
-     "Beach Villa with Private Pool",
-     "2‑ & 3‑Bedroom Beach Residences with Family Pools"
-    ]
+    "paras": [
+     "Sunrise Water Villa with Infinity Pool and Sunset Water Villa with Infinity Pool.",
+     "Beach Villa with Private Pool; Deluxe Beach Villa with Private Family Pool; Deluxe Garden Villa with Family Private Pool; 2 Bedroom Interconnecting Beach Villas.",
+     "Residences: 2 Bedroom Grand Ocean Residence, 2 Bedroom Manafaru Residence, 3 Bedroom Royal Beach Residence."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Guided snorkeling & diving with vibrant reefs",
-     "",
-     "PADI-certified dive center",
-     "Water sports,",
-     "Night cruises, cooking classes & romantic beach picnics"
+     "Reef diving and lagoon adventures",
+     "Kids Club and arcade",
+     "Calm Spa Sanctuary: healing rituals, yoga and wellbeing treatments",
+     "Lagoon pool, tennis and a futsal pitch"
     ]
    },
    "features": {
@@ -21963,6 +22759,92 @@
     "6ae6974d4fb5d85162de5ae2",
     "6ae6974c2a487b11a3a5ce28"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "joali-being",
+   "name": "JOALI BEING",
+   "ledgerId": "STY-2026-000657",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A well-living island on Bodufushi in the Raa Atoll: 68 pool villas and a wellbeing approach built on four pillars, Mind, Skin, Microbiome and Energy",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/ocean-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/beach-residence",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/sound-path",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/mojo",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/joali-being/bkidult"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "luxury",
+    "family"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": "A 40 minute seaplane flight from Malé to Bodufushi Island, shared or private, in daylight hours only. CIP Maamahi lounge service at Malé airport for faster immigration; a private lounge on arrival at Bodufushi.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "68 villas and residences, every one with a private pool",
+     "Beach villas with a private pool and direct beach access",
+     "Ocean villas with a private pool and direct access to the water"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "Wellbeing programmes shaped by in-house consultants, across four pillars: Mind, Skin, Microbiome and Energy",
+     "Sound therapy in the island's indigenous forest, meditation above the water, a daily sunset ritual",
+     "The Areka wellbeing zone and CORE (12 and over)",
+     "Cooking classes at the Culinary Learning Centre, wine tastings, tea ceremonies",
+     "B'Kidult, a multigenerational playground, and marine conservation and ocean discovery"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "MOJO beach restaurant, cocktail bar and SAI tea lounge",
+     "Yutori, Japanese; Rakuzen, private teppanyaki",
+     "Island Time: from 1 July 2026, GMT+6, one hour ahead of Malé"
+    ]
+   },
+   "onlyHere": [
+    "A whole island given to wellbeing, with programmes built on four pillars, Mind, Skin, Microbiome and Energy, and sound therapy in its own forest."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -22834,6 +23716,77 @@
    "volumes": [
     "stays",
     "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "kaia-koh-phangan",
+   "name": "KAIA Koh Phangan",
+   "ledgerId": "STY-2026-000666",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "The first of KAIA's place-led resorts, where the jungle meets the coast on Koh Phangan",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/gallery-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/gallery-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/gallery-3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/kaia-koh-phangan/gallery-4"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "wellness"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "KAIA is a new collection of place-led resorts built around connection to people, to place and to a deeper purpose; Koh Phangan, where jungle meets coastline and ritual meets freedom, is its first."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01",
+     "PATH-05"
+    ],
+    "setting": "koh_phangan",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -25182,7 +26135,7 @@
   },
   {
    "slug": "kudadoo-private-island",
-   "name": "Kudadoo\nMaldives\nPrivate\nIsland",
+   "name": "Kudadoo Maldives Private Island",
    "ledgerId": "STY-2026-000137",
    "country": "Maldives",
    "countrySlug": "maldives",
@@ -25204,8 +26157,8 @@
    "bestMonths": "November - April",
    "bestMonthsNote": "These months fall in the dry season in the Maldives, bringing clearer skies, calm seas, excellent visibility for diving and snorkeling, and minimal heavy rain or storms.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.493,
     "lng": 73.44
@@ -32769,6 +33722,83 @@
    "placeSlug": null
   },
   {
+   "slug": "mt-isthmus-villa",
+   "name": "Mt Isthmus Villa",
+   "ledgerId": "STY-2026-000662",
+   "country": "New Zealand",
+   "countrySlug": "new-zealand",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "A private villa on the narrow ridge between Lake Wānaka and Lake Hāwea, with its own chef and villa host, twenty minutes from Wānaka",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/aurora",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/mt-isthmus/lakes"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "group_exclusive_use",
+    "family",
+    "luxury"
+   ],
+   "status": "partner_verified",
+   "statusDate": "2026-11-16",
+   "coords": null,
+   "airport": "Queenstown International Airport (ZQN)",
+   "airportDirections": "Just 20 minutes from Lake Wānaka. Access by private vehicle or by helicopter; The Lindis Group's reservations team arranges travel and transfers.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "One villa, taken whole, with a personal chef and a villa host."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Hiking and river rafting",
+     "World-class wines",
+     "Gourmet heli trips"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "An isthmus is a narrow strip of land between two bodies of water: here, Lake Wānaka to the west and Lake Hāwea to the east, with the villa between them."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "alpine",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "mutiara-laut",
    "name": "Mutiara Laut\n“Pearl of the Sea”",
    "ledgerId": "STY-2026-481277",
@@ -33855,99 +34885,6 @@
     "gatherings"
    ],
    "arrivalHubIds": [],
-   "placeSlug": null
-  },
-  {
-   "slug": "nautilus-maldives",
-   "name": "Nautilus Maldives",
-   "ledgerId": "STY-2026-000178",
-   "country": "Maldives",
-   "countrySlug": "maldives",
-   "regionSlug": "asia",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "“Live Unscripted. Your Island. Your Way.”",
-   "quote": "Because in a world moving fast, you deserve a place where time stands still, your own barefoot luxury hideaway, where every detail is shaped around you.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8420acb08_2875cd5d0_6925a0bf3ecfc31d5ccb992e_Untitled-design-62.png",
-   "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a4692fc3d_aac15ce3f_69259da4195410c5d4a58dc0_2.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eb639e8ca_05f3b052f_69259da4abe970cc915048f3_Dinner-blog.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e74e7c71_d166d9524_69259caa2f4eac43ffcf8de2_TNM-beach-houses-and-residences.png",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f25e8f52_80215fc94_69259da4308aa8d38e3a54ab_TNM-beach-houses-and-residences-4.png",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/51bcb204a_ae2d7c9d2_69259da411132ce9a6c5bc38_494782994.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fbecffd75_0bb8b135b_69259d8cb9baa19390ddd89d_og-image-beach-house.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dfaaa822f_b4a85974b_69259da49e800ce5684d0a3c_og-image-beach-recidence.jpg"
-   ],
-   "bestMonths": "Aril - Nov",
-   "bestMonthsNote": "These months generally feature the driest weather, calm seas, warm sunshine and excellent visibility for snorkelling and diving. It’s perfect for both exploring the marine environment and relaxing in luxury.",
-   "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": 5.23862,
-    "lng": 73.22098
-   },
-   "airport": "Velana International Airport (MLE)",
-   "airportDirections": "Approximately 30 minutes by seaplane from Velana International Airport.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [],
-    "items": [
-     "Ocean House with Private Pool",
-     "Beach House with Private Pool",
-     "Beach Residence with Private Pool",
-     "Ocean Residence with Private Pool",
-     "The Nautilus Retreat with Private Pool",
-     "The Nautilus Mansion with Private Pool"
-    ]
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Private yacht breakfast",
-     "Sandbank barbecue under stars",
-     "Sunrise yoga on the beach",
-     "Snorkelling in a UNESCO Biosphere",
-     "Over-water spa treatments.Kids’ Young Wonderers immersive club"
-    ]
-   },
-   "features": {
-    "paras": [
-     "Dedicated 24/7 House Master for each villa. “Unscripted dining” – no set timings, dress codes, or menus. Private pool in every accommodation. All-inclusive non-motorised water sports and daily sunrise yoga. Located within the UNESCO biosphere of Baa Atoll. Children’s club and family-friendly large residences"
-    ],
-    "items": []
-   },
-   "onlyHere": [
-    "With just 26 houses and residences, every stay becomes personal, private, and tailored. Bask in barefoot elegance on white sand fringed by coral-rich lagoon, dive into a world of vibrant marine life, and dine whenever the mood strikes. Here, you are at ease. Time stands still."
-   ],
-   "why": [
-    {
-     "title": null,
-     "body": "Bespoke Private-Island Elegance in the Maldives. For travellers seeking more than just a resort stay, The Nautilus offers a deeply personalised experience in absolute seclusion"
-    }
-   ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-02",
-    "secondary": [],
-    "setting": "baa_atoll",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays"
-   ],
-   "arrivalHubIds": [
-    "6ae6974d4fb5d85162de5ae2"
-   ],
    "placeSlug": null
   },
   {
@@ -35577,31 +36514,28 @@
   },
   {
    "slug": "niyama-private-islands-maldives",
-   "name": "Niyama Private Islands \n Maldives",
+   "name": "Niyama Private Islands Maldives",
    "ledgerId": "STY-2026-000190",
    "country": "Maldives",
    "countrySlug": "maldives",
    "regionSlug": "asia",
    "misfiled": null,
-   "category": "hotel",
-   "tagline": "Family Tides & Island Vibes – Bond, Explore, Renew.",
+   "category": "resort",
+   "tagline": "Two islands in the Dhaalu Atoll, one for playing and one for chilling, with a private surf break off one tip and an underwater restaurant off the other",
    "quote": "Here, every sunrise restores, every splash connects, and every moment together transforms.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/3204af383_53352493b_685db4afe8efee1daf602a45_hero-image-niyama.jpg",
    "gallery": [
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b63adfadb_0d6553c79_685db4da45632ce3b6bf6808_niyamastays-01.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4f5698796_064dc3722_685db4dbc7ebf691adb6c4c8_niyamastays-02.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d5ad6582a_9e7c3407d_685db4dac7ebf691adb6c4bf_niyamastays-03.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b2aed9355_4f9122009_685db4dcc7ebf691adb6c560_niyamastays-04.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/207a1caf4_a7b5e9d7f_685db4da48a840085584af24_niyamastays-05.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5e80cb2d0_f3726d21f_685db4dad10d2ef882ae4049_niyamastays-06.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/44fec7492_9966a1d5b_685db4da4bfad39193730be5_niyamastays-07.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/4a4ceec89_c8ca4bb87_685db4da69e4fa735e8e9baa_niyamastays-08.jpg"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/ocean-pool-pavilion",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/ocean-pool-pavilion-living",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/ocean-pool-pavilion-bedroom",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/two-bedroom-beach-pool-pavilion",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/niyama/hero-pavilions-aerial"
    ],
    "bestMonths": "November–April (dry season); June–September (surf season & lower rates)",
    "bestMonthsNote": "Dry season offers calm seas, clear skies, and ideal snorkeling. June–Sept brings Pacific swells, perfect for surf-loving families with quieter islands and cost savings.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 2.626,
     "lng": 72.887
@@ -35610,24 +36544,26 @@
    "airportDirections": "Seaplane from MLE (~40 min) lands directly. Best for families and scenic transfers.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Family Beach Pool Villa (255 sqm);",
-     "Deluxe Family Beach Pool Villa;",
-     "Three‑Bedroom Beach Pool Pavilion;",
-     "One‑ & Two‑Bedroom Beach & Ocean Pavilions;",
-     "Overwater Pool Villas"
-    ]
+    "paras": [
+     "Newly refurbished villas and pavilions across two islands, Play and Chill, crossed by bicycle.",
+     "Beach Villa and Deluxe Beach Villa (135 m²).",
+     "Beach Pool Villa and Deluxe Beach Pool Villa (190 m²), beachfront plunge pool.",
+     "Over Water Pool Villa (175 m²) and Deluxe Over Water Pool Villa (190 m², plunge pool and jacuzzi over the lagoon, up to 3 adults and 1 child).",
+     "Family Beach Pool Villa and Deluxe Family Beach Pool Villa (255 m², up to 4 adults and 1 child).",
+     "Pavilions, with separate living and dining rooms, full-sized pool and jacuzzi: One Bedroom Ocean Pool Pavilion (340 m²), One Bedroom Beach Pool Pavilion (400 m²), Two Bedroom Ocean Pool Pavilion (515 m²), Two Bedroom Beach Pool Pavilion (635 m²), Three Bedroom Beach Pool Pavilion (770 m², up to 9 adults).",
+     "The Crescent (1,045 m²): five pool villas reached by a private boardwalk, for up to 14 adults and 8 children, with a Subsix underwater champagne breakfast and a beach barbecue and film night.",
+     "Thakuru (butler) service in the larger villas and every pavilion."
+    ],
+    "items": []
    },
    "experiences": {
-    "paras": [],
-    "items": [
-     "Big‑kid & little‑kid surf lessons;",
-     "Explorers Kids Club treasure safaris;",
-     "snorkeling trips to house reef;",
-     "PADI‑dives & shop, custom dive safaris;",
-     "secluded beach picnics"
-    ]
+    "paras": [
+     "Surf Vodi, a powerful and sometimes hollow left off Play Island, by walking to the point; Kasabu, a hollow right, 5 to 10 minutes by speedboat; lessons for every level",
+     "Water sports at FLOAT",
+     "Dine at Subsix, the underwater restaurant, with sea turtles",
+     "Cycle between the two islands, a torchlit jungle camp, treetop adventures"
+    ],
+    "items": []
    },
    "features": {
     "paras": [],
@@ -35638,7 +36574,7 @@
     ]
    },
    "onlyHere": [
-    "Niyama instead of separating families splits the island: Play is full of active fun, treetop adventures and surf breaks, while Chill offers quiet spa moments and underwater lounges. Ideal for families, multi-gen groups, couples, or solo travelers craving connection in a mindful way. Kids and parents find joy here together, each day seamlessly blending discovery with comfort, laughter with renewal, all within a conservation-minded sanctuary."
+    "A private surf break at the tip of one island, an underwater restaurant, Subsix, half a kilometre beyond the tip of the other, and The Crescent: five pool villas on their own boardwalk for a family of up to 22."
    ],
    "why": [
     {
@@ -37616,6 +38552,95 @@
    "placeSlug": "cyclades"
   },
   {
+   "slug": "one-only-reethi-rah",
+   "name": "One&Only Reethi Rah",
+   "ledgerId": "STY-2026-000659",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A private island ringed by twelve secret beaches, with beach and water villas, grand residences and yachts, catamarans and dhonis to take you out",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/one-only-reethi-rah/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/one-only-reethi-rah/beach-villa-with-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/one-only-reethi-rah/beach-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/maldives/one-only-reethi-rah/two-villa-residence"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "luxury"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
+   "coords": null,
+   "airport": "Velana International Airport, Malé (MLE)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Beach Villa (108 m², up to 4), on its own slice of sand.",
+     "Beach Villa with Pool (126 m², up to 4).",
+     "Water Villas, with and without pools, and the Grand Water Villa with Pool.",
+     "Grand Beach Villa with Pool (368 m², two bedrooms, up to 6), direct beach access.",
+     "Two Villa Residence with Pool (391 m², two standalone villas, up to 8).",
+     "Grand Residence (436 m² inside, 639 m² outside; three bedrooms, up to 12 guests, 9 adults): a 210 m² infinity pool with heated jacuzzi, kids' pool, open-air beach cinema, fire pit, outdoor kitchen, wine room, personal host and chef. Also the Grand Sunset Residence."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "PADI dive and freediving courses, private dive tours, complimentary snorkelling and watersports",
+     "A private sunset yacht cruise with spinner and bottlenose dolphins",
+     "Charter a private yacht, catamaran or dhoni; marlin fishing on the Sportfisherman 47 or Maldivian hand-line fishing by dhoni",
+     "Sea turtle encounters; cycling; padel; family cooking and art classes",
+     "One&Only Spa"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Tapasake: Japanese with Mediterranean touches",
+     "Botanica: farm-to-table in the garden",
+     "Reethi: overwater, breakfast and French, Italian and Asian dinners",
+     "Rabarbaro: poolside Italian; Rah Bar, drinks and live music",
+     "Forbes Travel Guide Five-Star (2026)"
+    ]
+   },
+   "onlyHere": [
+    "Twelve secret beaches around one private island, and the Grand Residence: three bedrooms, a 210 m² infinity pool and an open-air beach cinema, with its own host and chef."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "open-sky",
    "name": "Open Sky Zion",
    "ledgerId": "STY-2026-000203",
@@ -37980,6 +39005,84 @@
    "arrivalHubIds": [
     "6ae697470cd87e591e92cccf"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "paroa-bay",
+   "name": "Paroa Bay",
+   "ledgerId": "STY-2026-000663",
+   "country": "New Zealand",
+   "countrySlug": "new-zealand",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "A vineyard estate above a north-facing inlet in the Bay of Islands, with Tarāpunga, a three-bedroom villa with an infinity pool, and Sage, a one-hat restaurant",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/pool-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/vineyard",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/paroa-bay/hole-in-the-rock"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "family",
+    "wine"
+   ],
+   "status": "partner_verified",
+   "statusDate": "2026-11-16",
+   "coords": null,
+   "airport": "Bay of Islands Airport, Kerikeri (KKE)",
+   "airportDirections": "Kerikeri is a 30 minute flight from Auckland, then a scenic 40 minute drive. Russell is 15 minutes away; Auckland about 4 hours by road. The estate can also be reached by boat or helicopter; private vehicle or helicopter transfers from Kerikeri, Paihia or Russell at additional cost.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Tarāpunga Villa: the premier three-bedroom villa above a secluded inlet, open-plan, with a deck and infinity pool over the Bay of Islands. A welcome bottle of Louis Roederer Champagne, estate provisions for a self-prepared breakfast, a golf cart for the estate and private transfers to Russell (subject to availability).",
+     "The Vineyard Cottage and off-grid cabins on the estate."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Dine at Sage, the estate's one-hat restaurant, over the bay and the vines",
+     "Taste the estate's wines from its boutique eight-block vineyard",
+     "Native bush walks, hidden beaches and the 144 islands of the Bay of Islands"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Land that seems to emerge from the sea: rolling vineyards and native bush above a north-facing inlet of the Bay of Islands, with the estate's own wine and restaurant."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "coast",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -39048,6 +40151,81 @@
    "placeSlug": null
   },
   {
+   "slug": "phulay-bay-ritz-carlton-reserve",
+   "name": "Phulay Bay",
+   "ledgerId": "STY-2026-000671",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Pavilions and villas with their own pools on the Andaman Sea in Krabi, each with a personal butler",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/phulay-bay/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/phulay-bay/villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/phulay-bay/spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/phulay-bay/hong-island"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Pavilions and villas with private pools and ocean or garden views; all suites."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Lae Lay, Chomtawan, Plai Fah, Jampoon (with a chef's table) and Sri Trang; Pirom Bar",
+     "Spa with vitality pool, saunas and steam baths; Reserve Yogi sessions",
+     "Hiking Dragon Crest Mountain; islands such as Hong Island offshore"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "An all-suite Ritz-Carlton Reserve on the Andaman Sea among Krabi's limestone mountains, with private pools, a personal butler for every guest and Southern Thai family dinners at Sri Trang."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "krabi",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "pikaia-lodge",
    "name": "Pikaia Lodge",
    "ledgerId": "STY-2026-000583",
@@ -39190,6 +40368,84 @@
     "status": "approved",
     "classifiedBy": "James Papagno (approved 2 Nov 2026, drafted by Claude)",
     "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "plataran-borobudur",
+   "name": "Plataran Borobudur",
+   "ledgerId": "STY-2026-000684",
+   "country": "Indonesia",
+   "countrySlug": "indonesia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Pool villas on the hills five minutes from Borobudur, with the temple at lunch and Merapi at sunrise",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/plataran-borobudur/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/plataran-borobudur/resort",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/plataran-borobudur/garden-plunge-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/indonesia/plataran-borobudur/patio"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "culture",
+    "families",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Yogyakarta International Airport",
+   "airportDirections": "About an hour and a half by road from Yogyakarta International Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Founder's Home; Duplex Classic two bedroom family villas with garden pools.",
+     "Borobudur Pool Villa, Residence Pool Villa and Exclusive Modern Pool Villa.",
+     "Garden Plunge Pool Villa looking over the gardens and the Menoreh Hills."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Sunrise over Borobudur; the Glory of Borobudur encounter",
+     "A pottery village by andong, a retro countryside drive",
+     "Patio Colonial Hall and Tiga Dari Borobudur with temple views; Javanese spa rituals and Plataran Junior for children"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Villas on the hills of Tanjungan Village about five minutes from Borobudur, with views of the temple, Mount Merapi and the Menoreh Hills, sunrise over the temple from a wooden deck, and lunch at Tiga Dari facing it."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "central_java",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
    },
    "volumes": [
     "stays"
@@ -42939,8 +44195,8 @@
     "/img/b44/1c6d5a1a9_532527e6a_697a9983cb8481858e413cc4_4672c58d.avif",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ec34ca5e5_12b1ed5f8_697a99a801c604296021de17_a2fa17de.webp"
    ],
-   "bestMonths": "November–April",
-   "bestMonthsNote": "Dry season offers sunny days, river adventures, and best wildlife viewing; green season brings lush landscapes and fewer guests.",
+   "bestMonths": "All year",
+   "bestMonthsNote": "Shinta Mani Wild says there is no bad time to visit: November to February for river swims and butterflies, March to May for low water and hiking, June to October for waterfalls and orchids.",
    "bestFor": [],
    "status": "unclassified",
    "statusDate": null,
@@ -42952,13 +44208,11 @@
    "airportDirections": "3.5-hour drive from Phnom Penh, 2.5-hour drive from Sihanoukville; transfers arranged by the camp.",
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Waterfall Tent",
-     "Wild Tent",
-     "Two-Bedroom Tent",
-     "Exclusive Use"
-    ]
+    "paras": [
+     "15 tents dotted along the river, designed by Bill Bensley and placed over seven years of planning to be completely private.",
+     "Each tent is stilted and air conditioned, with a large porch and an outdoor tub."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
@@ -43132,6 +44386,86 @@
    "arrivalHubIds": [
     "6ae6974e95f3dd1b670575e2"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "siempang-forest-lodge",
+   "name": "Siempang Forest Lodge",
+   "ledgerId": "STY-2026-000665",
+   "country": "Cambodia",
+   "countrySlug": "cambodia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "camp",
+   "tagline": "Fifteen safari tents on a forest ridge in Siem Pang Wildlife Sanctuary, home to the giant ibis, Cambodia's national bird",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/siempang-forest-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/siempang-forest-lodge/main-lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/siempang-forest-lodge/meditation-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/siempang-forest-lodge/white-bellied-woodpecker"
+   ],
+   "bestMonths": "October to March",
+   "bestMonthsNote": "The lodge names October to March for clear skies and wildlife at the waterholes (Eld's deer and ibises), April to June for orchids and storms, and August and September for vultures and greater adjutant storks at the feeding sites.",
+   "bestFor": [
+    "wildlife",
+    "birding",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Siem Reap (via NR 64)",
+   "airportDirections": "About 5.5 to 6 hours by road from Siem Reap via NR 64; about 8 hours from Phnom Penh, including a Mekong ferry crossing; about 3.5 hours from Pakse in Laos. The International Explorer packages include transfers from Siem Reap.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Fifteen safari tents arc through the trees on hardwood decks raised above the forest floor, built around the standing trunks.",
+     "Deluxe Tent: king or twin beds, two adults, forest view.",
+     "Suite Tent: the flagship, reached by boardwalk, king bed, two adults, meadow view."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Birdwatching with expert local guides",
+     "Visits to the vulture feeding grounds",
+     "Forest walks with trackers who read the signs of wildlife",
+     "Sunrise birding, sunset cycling and village conservation stories"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A tented lodge inside a sanctuary co-managed by Rising Phoenix with Cambodia's Ministry of Environment, where five critically endangered bird species, among them the giant ibis, have been stabilised, and ten percent of every booking goes to rangers, vulture feeding and the IBIS Rice farmers."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06",
+     "PATH-08"
+    ],
+    "setting": "dry_forest",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -47078,7 +48412,7 @@
   },
   {
    "slug": "six-senses-kanuhura",
-   "name": "Six Senses \n Kanuhura",
+   "name": "Six Senses Kanuhura",
    "ledgerId": "STY-2026-000267",
    "country": "Maldives",
    "countrySlug": "maldives",
@@ -47097,8 +48431,8 @@
    "bestMonths": "January - April",
    "bestMonthsNote": "The dry season offers calm seas, excellent visibility for snorkeling and diving, abundant sunshine, and ideal conditions for enjoying the beaches, marine adventures, and outdoor experiences that define the Maldives.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.3546,
     "lng": 73.3639
@@ -47272,7 +48606,7 @@
   },
   {
    "slug": "six-senses-laamu",
-   "name": "Six Senses \n Laamu Maldives",
+   "name": "Six Senses Laamu Maldives",
    "ledgerId": "STY-2026-000270",
    "country": "Maldives",
    "countrySlug": "maldives",
@@ -47286,8 +48620,8 @@
    "bestMonths": "November–April",
    "bestMonthsNote": "Dry, sunny days with calm seas for snorkeling, diving, surfing, and outdoor adventure, peak marine life viewing.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 1.7963,
     "lng": 73.4472
@@ -48460,8 +49794,8 @@
    "bestMonths": "All year",
    "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.318,
     "lng": 73.015
@@ -48585,8 +49919,8 @@
    "bestMonths": "All year",
    "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.567,
     "lng": 73.001
@@ -48705,8 +50039,8 @@
    "bestMonths": "All year",
    "bestMonthsNote": "Soneva calls the Maldives an all season destination, and says the monsoon season, May to October, is the best for manta rays and other marine life.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 6.7,
     "lng": 72.9
@@ -48802,6 +50136,88 @@
    "arrivalHubIds": [
     "6ae6974d4fb5d85162de5ae2"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "song-saa-private-island",
+   "name": "Song Saa Private Island",
+   "ledgerId": "STY-2026-000678",
+   "country": "Cambodia",
+   "countrySlug": "cambodia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-four villas across two small islands in the Koh Rong archipelago, the Sweethearts, built to support the Song Saa Foundation",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/song-saa/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/song-saa/overwater-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/song-saa/jungle-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/song-saa/vista"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "conservation",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "24 villas, each with a 26 sqm private pool",
+     "One and Two Bedroom Jungle Villas with canopy beds and outdoor showers",
+     "Ocean View Villa with a sandy beach deck",
+     "One and Two Bedroom Overwater Villas with direct ocean access",
+     "Soluna Villa, with a sala for treatments and a sunrise meditation deck",
+     "The Royal Villa: the two bedroom flagship over the water"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "Kayaking, snorkelling and coral restoration with the resident marine biologists",
+     "Vista, the overwater restaurant, and Driftwood Beach Bar",
+     "Meals on the beach, by the pool or in the jungle, with herbs from the organic garden"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A marine-positive private island resort across two islands the locals call The Sweethearts, with coral restoration led by resident marine biologists; the resort was born to support the Song Saa Foundation, at work in the Koh Rong archipelago since 2007."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07",
+     "PATH-08"
+    ],
+    "setting": "koh_rong",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -51985,6 +53401,92 @@
    "placeSlug": null
   },
   {
+   "slug": "lindis-lodge",
+   "name": "The Lindis",
+   "ledgerId": "STY-2026-000154",
+   "country": "New Zealand",
+   "countrySlug": "new-zealand",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Five suites and three mirrored Pods resting almost unseen on the floor of the Ahuriri Valley, on a 6,500 acre high-country station, with Two MICHELIN Keys",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/pod-stars",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/pod-mirrored",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/lodge-window",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/ahuriri-aerial",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/horse-trek",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/new-zealand/the-lindis/stargazing"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "adventure",
+    "luxury"
+   ],
+   "status": "partner_verified",
+   "statusDate": "2026-11-16",
+   "coords": null,
+   "airport": "Queenstown International Airport (ZQN)",
+   "airportDirections": "Queenstown is about 2 hours 15 minutes by road, Christchurch about 4.5 hours. Helicopter transfers land on the lodge's own helipad from Queenstown, Wanaka or Christchurch, and private vehicle transfers can be arranged (both at additional cost). The last stretch is Birchwood Road, a gravel road best suited to 4WD. Flights to Queenstown: Auckland 1 hour 50, Wellington 1 hour 20, Christchurch 50 minutes.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Two Master Suites in the Main Lodge, the most generously proportioned: double-sided gas fireplace, deep bathtub, private outdoor seating, super king bed.",
+     "Three Lodge Suites in the Main Lodge: floor-to-ceiling windows on the Ahuriri Valley, fireside lounge, ensuite bathtub, private outdoor seating, super king bed.",
+     "Three Pods, a stone's throw from the Main Lodge and out of sight of it: mirrored glass walls on three sides, an outdoor bath, a king bed facing the valley.",
+     "Every stay includes nightly pre-dinner drinks and canapés, a nightly multi-course dinner, and a daily lodge lunch or packed lunch on stayover days."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Fly fishing on the Ahuriri River, a short walk from the lodge, rated among the top ten rivers in the world",
+     "Private guided horse treks from the lodge's own stables across 6,500 acres of Ben Avon Station",
+     "Stargazing with expert guides beneath some of the world's darkest skies",
+     "Guided hikes from the lodge and private 4WD valley tours",
+     "Buggy tours, e-biking, archery, clay target shooting and seasonal rafting"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A lodge resting almost unseen on the floor of the Ahuriri Valley, beside a 49,000 hectare conservation park, with Pods walled in mirrored glass that hand the room over to the valley itself."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-04",
+     "PATH-06"
+    ],
+    "setting": "alpine",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "the-lodge-at-chaa-creek",
    "name": "The Lodge at Chaa Creek",
    "ledgerId": "STY-2026-538748",
@@ -52305,6 +53807,96 @@
    "placeSlug": null
   },
   {
+   "slug": "nautilus-maldives",
+   "name": "The Nautilus Maldives",
+   "ledgerId": "STY-2026-000178",
+   "country": "Maldives",
+   "countrySlug": "maldives",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "Twenty six beach and overwater houses and residences in the Baa Atoll UNESCO Biosphere Reserve, with breakfast anywhere, anytime",
+   "quote": "Because in a world moving fast, you deserve a place where time stands still, your own barefoot luxury hideaway, where every detail is shaped around you.",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8420acb08_2875cd5d0_6925a0bf3ecfc31d5ccb992e_Untitled-design-62.png",
+   "gallery": [
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/a4692fc3d_aac15ce3f_69259da4195410c5d4a58dc0_2.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/eb639e8ca_05f3b052f_69259da4abe970cc915048f3_Dinner-blog.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0e74e7c71_d166d9524_69259caa2f4eac43ffcf8de2_TNM-beach-houses-and-residences.png",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f25e8f52_80215fc94_69259da4308aa8d38e3a54ab_TNM-beach-houses-and-residences-4.png",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/51bcb204a_ae2d7c9d2_69259da411132ce9a6c5bc38_494782994.webp",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/fbecffd75_0bb8b135b_69259d8cb9baa19390ddd89d_og-image-beach-house.jpg",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/dfaaa822f_b4a85974b_69259da49e800ce5684d0a3c_og-image-beach-recidence.jpg"
+   ],
+   "bestMonths": "Aril - Nov",
+   "bestMonthsNote": "These months generally feature the driest weather, calm seas, warm sunshine and excellent visibility for snorkelling and diving. It’s perfect for both exploring the marine environment and relaxing in luxury.",
+   "bestFor": [],
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
+   "coords": {
+    "lat": 5.23862,
+    "lng": 73.22098
+   },
+   "airport": "Velana International Airport (MLE)",
+   "airportDirections": "Approximately 30 minutes by seaplane from Velana International Airport.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "26 private houses and residences, every one with a private pool: 17 houses, nine on the beach and eight over the lagoon, and the residences.",
+     "Beach House and Ocean House, one bedroom, private pool.",
+     "Beach Residence and Ocean Residence, one or two bedrooms, private pool; Two-Bedroom Beach Residence.",
+     "The Nautilus Retreat: two bedrooms over the water, private infinity pool on the sun deck.",
+     "The Nautilus Mansion: three bedrooms on the beach, private pool."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Daily breakfast anywhere, anytime",
+     "Dine at Zeytoun, Ocaso, Thyme and Naiboli",
+     "Solasta Spa: treatments, yoga and wellness rituals"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Dedicated 24/7 House Master for each villa. “Unscripted dining” – no set timings, dress codes, or menus. Private pool in every accommodation. All-inclusive non-motorised water sports and daily sunrise yoga. Located within the UNESCO biosphere of Baa Atoll. Children’s club and family-friendly large residences"
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "With just 26 houses and residences, every stay becomes personal, private, and tailored. Bask in barefoot elegance on white sand fringed by coral-rich lagoon, dive into a world of vibrant marine life, and dine whenever the mood strikes. Here, you are at ease. Time stands still."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Bespoke Private-Island Elegance in the Maldives. For travellers seeking more than just a resort stay, The Nautilus offers a deeply personalised experience in absolute seclusion"
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": "baa_atoll",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [
+    "6ae6974d4fb5d85162de5ae2"
+   ],
+   "placeSlug": null
+  },
+  {
    "slug": "the-place-firenze",
    "name": "The Place Firenze",
    "ledgerId": "STY-2026-000626",
@@ -52616,6 +54208,83 @@
     "status": "approved",
     "classifiedBy": "James Papagno (2 Nov 2026)",
     "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "the-siam-bangkok",
+   "name": "The Siam",
+   "ledgerId": "STY-2026-000669",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Suites and pool villas full of art and antiques in three acres of gardens on the Chao Phraya, in old Dusit",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/atrium",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/the-siam-bangkok/chon"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "city",
+    "culture",
+    "couples"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Suites: Siam Suite, Garden View, Premier Garden View, River View and Premier River View.",
+     "Pool villas: Courtyard Pool Villa and Riverside Pool Villa."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Chon Thai Restaurant, Deco Bar & Bistro, The Story House, The Pier and Bathers Bar",
+     "Opium Spa",
+     "The hotel's river shuttle and excursions into the old city"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A private urban sanctuary of art and antiques in three acres of gardens on the Chao Phraya River, beside Dusit's historic and cultural sights, with its own river shuttle."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "bangkok",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
    },
    "volumes": [
     "stays"
@@ -53838,6 +55507,85 @@
    },
    "volumes": [
     "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "trisara",
+   "name": "Trisara",
+   "ledgerId": "STY-2026-000670",
+   "country": "Thailand",
+   "countrySlug": "thailand",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Private pool villas, suites and residences above a secluded beach on Phuket's north west coast, with PRU",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/trisara/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/trisara/ocean-front-pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/trisara/residence",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/thailand/trisara/pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "honeymoon",
+    "families",
+    "food"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Ocean View Pool Junior Suite: 135 sqm, for two adults",
+     "Ocean View Pool Villa and Oceanfront Pool Villa: 240 sqm each",
+     "Two Bedroom Oceanfront Pool Villa: 300 sqm, for families",
+     "Ten types of private pool residence, of three bedrooms and more"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "PRU, the Michelin-starred restaurant; JAMPA, Cielo & Spice, Thai Library, La Crique on the beach and private dining",
+     "JARA Wellness, rooted in ancient Thai healing",
+     "A secluded beach for in-residence guests"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Every villa and suite has its own pool above a secluded beach kept for in-residence guests, and PRU, Trisara's Michelin-starred restaurant, cooks from the island. Trisara shows Two MICHELIN Keys on its own page."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "phuket",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
     "stays"
    ],
    "arrivalHubIds": [],
@@ -56145,8 +57893,97 @@
    "placeSlug": null
   },
   {
+   "slug": "vanira-lodge",
+   "name": "Vanira Lodge",
+   "ledgerId": "STY-2026-000621",
+   "country": "French Polynesia (Tahiti)",
+   "countrySlug": "tahiti",
+   "regionSlug": "oceania",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Ten Polynesian bungalows in a tropical garden in the hills above Teahupo'o, at the end of the road on Tahiti Iti",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/vai-here",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/vai-here-lagoon",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/vai-iti",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/vai-ora",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/maara",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/kava",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/tahiti/vanira-lodge/restaurant"
+   ],
+   "bestMonths": "May - October",
+   "bestMonthsNote": "Tahiti's dry season, and the months when Teahupo'o's southern swells arrive (Tahiti Tourisme).",
+   "bestFor": [],
+   "status": "partner_verified",
+   "statusDate": "2026-11-02",
+   "coords": null,
+   "airport": "Tahiti Faa'a International Airport (PPT)",
+   "airportDirections": "The lodge is in the hills above Teahupo'o, at the tip of Tahiti Iti, away from the towns. The lodge strongly recommends renting a car to explore the peninsula; free parking on site. Check-in from 3 pm, check-out before noon.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Ten bungalows of traditional Polynesian design, built from coral, wood, stone and earth, in a 1.5 hectare tropical garden between the lagoon and the mountain.",
+     "SPA Bungalows: Vai Iti (17 m², for 2) and Vai Ora (18 m², for 2), each with a private jacuzzi, deck, hammock, outdoor bathroom and air-conditioned bedroom; Vai Here (55 m², for 4), two air-conditioned bedrooms, private jacuzzi and lagoon and mountain views.",
+     "Nature Bungalows, with turtle-shell roofs: Maara (50 m², on stilts at the forest edge), Kava (50 m², for 4) and Ofai (50 m², for 5, with a private garden), each with a kitchenette.",
+     "Terrace Bungalows: Tehau (80 m², a loft by the pools), Haari (33 m², for 2), Aito (50 m², single-storey, for families with young children) and Lichee (70 m², for 6, facing the sea, with a barbecue garden)."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Pools in the garden, bicycles, swings, books and games at the lodge. With local partners: boat trips, diving, surfing, hiking, horse riding and 4x4 crossings of Tahiti Iti.",
+     "Surfing and boat trips at Teahupo'o",
+     "Diving off Tahiti Iti",
+     "Hiking and horse riding on the peninsula",
+     "4x4 crossings",
+     "Restaurant Le Vanira, Breton and Tahitian cooking, open daily, and happy hour facing the lagoon Thursday to Sunday"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Ten bungalows in a 1.5 hectare tropical garden",
+     "Private jacuzzis in the SPA bungalows",
+     "Pools",
+     "Restaurant and bar, open every day",
+     "A small family-run lodge",
+     "Weddings, vow renewals and private celebrations"
+    ]
+   },
+   "onlyHere": [
+    "The closest stay in the Ledger to Teahupo'o: a family lodge in the hills at the end of the road on Tahiti Iti, a short way from the wave."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "lagoon",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "velaa-private-island",
-   "name": "Velaa\nPrivate\nIsland",
+   "name": "Velaa Private Island",
    "ledgerId": "STY-2026-000327",
    "country": "Maldives",
    "countrySlug": "maldives",
@@ -56168,8 +58005,8 @@
    "bestMonths": "November – April",
    "bestMonthsNote": "These months align with the dry season in the Maldives, offering clearer skies, calmer seas, better visibility for snorkeling and diving, and generally ideal weather for outdoor and marine experiences.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_vetted",
+   "statusDate": "2026-11-16",
    "coords": {
     "lat": 5.83348,
     "lng": 73.2065
@@ -60361,6 +62198,84 @@
    "placeSlug": null
   },
   {
+   "slug": "zannier-phum-baitang",
+   "name": "Zannier Phum Baitang",
+   "ledgerId": "STY-2026-000679",
+   "country": "Cambodia",
+   "countrySlug": "cambodia",
+   "regionSlug": "asia",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A Khmer village of 45 villas on eight hectares of working rice fields, twenty minutes from Angkor",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/zannier-phum-baitang/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/zannier-phum-baitang/pool-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/zannier-phum-baitang/terrace-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/cambodia/zannier-phum-baitang/angkor"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "culture",
+    "couples",
+    "families"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "45 villas in Cambodian style on eight hectares",
+     "Twenty Pool Villas of 130 sqm, each with a garden and private pool",
+     "Twenty-five Terrace Villas of 80 sqm with a large terrace"
+    ]
+   },
+   "experiences": {
+    "paras": [
+     "The Angkor temples, a 20 minute drive",
+     "The Spa Temple, a 50 metre pool, hammam and yoga pavilion",
+     "Hang Bay and Bay Phasar restaurants; the Cigar & Cocktail Lounge in a 100 year old Cambodian farmhouse"
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "A village built in 2015 in the traditional Cambodian style among rice fields worked by buffalo, with rice from the village on the table at Bay Phasar and a spa temple drawn from Angkor's architecture."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": "siem_reap",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (17 Nov 2026 request, drafted by Claude)",
+    "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "zannier-sonop",
    "name": "Zannier Sonop",
    "ledgerId": "STY-2026-000358",
@@ -60899,7 +62814,7 @@
     "lng": 103.547
    },
    "airport": "Sihanouk International Airport (KOS) Phnom Penh International Airport (PNH)",
-   "airportDirections": "Sihanouk International Airport (KOS)\nApproximately 18 km from the resort arrival lounge\nAround 20–30 minutes by vehicle plus short resort speedboat transfer\nPhnom Penh International Airport (PNH)\nApproximately 230 km away\nAround 3–4 hours by road transfer plus boat connection\nRecommended Arrival Airport: Sihanouk International Airport (KOS)",
+   "airportDirections": "From Sihanouk International Airport (KOS), a 10 minute drive to the resort's mainland welcome lounge and private jetty, then a 15 minute speedboat to the island. From Phnom Penh, about two hours by motorway.",
    "founderNote": null,
    "rooms": {
     "paras": [],

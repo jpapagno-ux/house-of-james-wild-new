@@ -1,6 +1,6 @@
 {
  "exportedOn": "2026-11-01",
- "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James; EF-012 Vahine Royal Villa and EF-013 The Brando added 2 Nov 2026 (French Polynesia build; Airtable rows created); EF-015 Laucala, EF-017 Six Senses Fiji six bedroom retreat, EF-018 Turtle Island added 5 Nov 2026 (Fiji build; Airtable rows created; EF-016 Kokomo and EF-019 Dolphin Island wait in Airtable as drafts for their stays). James notes drafted in Airtable for his approval, not published. EF-022 Casali di Casole added 13 Nov 2026 (James: \"Yes, I think it qualifies under The Exceptional Few\"); Airtable row to be created when the connection returns.",
+ "source": "Airtable appI1mRPBsoA1ZOla · Exceptional Few (tblJZovRoapHF1Q4M) · scripts/export-editorial-layer.mjs · vessel rows (entity_type vessel, vessel_slug) added 2 Nov 2026, designations approved by James; EF-012 Vahine Royal Villa and EF-013 The Brando added 2 Nov 2026 (French Polynesia build; Airtable rows created); EF-015 Laucala, EF-017 Six Senses Fiji six bedroom retreat, EF-018 Turtle Island added 5 Nov 2026 (Fiji build; Airtable rows created; EF-016 Kokomo and EF-019 Dolphin Island wait in Airtable as drafts for their stays). James notes drafted in Airtable for his approval, not published. EF-022 Casali di Casole added 13 Nov 2026 (James: \"Yes, I think it qualifies under The Exceptional Few\"); Airtable row to be created when the connection returns.; EF-023 Niyama Private Islands Maldives (The Crescent) added and designated 16 Nov 2026 (James: \"Approve niyama\"); Airtable row rec97w6rsyn5p0cDe written first, mirrored here in the exporter's shape.",
  "records": [
   {
    "id": "EF-001",
@@ -1409,6 +1409,63 @@
    "reviewDate": "2026-11-13",
    "reviewStatus": "approved",
    "jamesNote": null
+  },
+  {
+   "id": "EF-023",
+   "entityType": "stay",
+   "stayId": "STY-2026-000190",
+   "staySlug": "niyama-private-islands-maldives",
+   "stayName": "Niyama Private Islands Maldives",
+   "designationStatus": "designated",
+   "collectionNumber": 23,
+   "heroLine": "Two islands, a wave off one and a restaurant under the sea off the other, and The Crescent for the whole family.",
+   "whyItMadeTheCut": [
+    "Place. Two islands in the Dhaalu Atoll, Play and Chill, crossed by bicycle, about 40 minutes by seaplane from Malé.",
+    "Rarity. The Crescent: five pool villas joined by a private boardwalk, 1,045 square metres for up to 14 adults and 8 children, with a Subsix underwater champagne breakfast and a beach barbecue and film night.",
+    "Access. The resort's own surf break, Vodi, a left you reach by walking to the point, and Kasabu, a hollow right a few minutes away by speedboat; half a kilometre off the other island, Subsix, a restaurant under the sea."
+   ],
+   "jamesNote": null,
+   "signals": [
+    {
+     "key": "place",
+     "line": "Two islands in the Dhaalu Atoll, one for playing and one for chilling."
+    },
+    {
+     "key": "rarity",
+     "line": "The Crescent, five pool villas on one boardwalk for a family of up to 22."
+    },
+    {
+     "key": "access",
+     "line": "A private surf break off one island and an underwater restaurant off the other."
+    },
+    {
+     "key": "privacy",
+     "line": "The pavilions' own pools and jacuzzis, and Thakuru butler service."
+    }
+   ],
+   "pathwaysOverride": [
+    "between-tides",
+    "a-place-of-our-own"
+   ],
+   "worthAnotherNight": "A week. Enough for the waves at Vodi and Kasabu in the morning, the lagoon with the children, a night at Subsix and a day on the boat.",
+   "whoItSuits": [
+    "Three generations travelling together",
+    "Surfing families",
+    "Couples who want a wave and an underwater dinner"
+   ],
+   "whoItMayNotSuit": [
+    "Those who want one small, quiet island",
+    "Surfers bringing many boards without notice (seaplane space is limited)"
+   ],
+   "continueRefs": [
+    "stay:six-senses-laamu",
+    "stay:soneva-fushi-maldives",
+    "/destinations/asia/maldives/surf-and-ocean-sports"
+   ],
+   "selectionDate": "2026-11-16",
+   "reviewDate": "2026-11-16",
+   "publicationStatus": "published",
+   "paletteKey": "niyama"
   }
  ]
 }

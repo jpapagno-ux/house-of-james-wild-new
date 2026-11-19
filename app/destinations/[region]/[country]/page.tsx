@@ -236,7 +236,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   if (!c) notFound();
   const region = regionBySlug(c.region);
   const path = `/destinations/${c.region}/${c.slug}`;
-  const chart = CHARTS[c.slug];
+  const chart = CHARTS[c.slug] as ChartData | undefined;
   const all = staysIn(c.slug);
   const pages = all.filter(pageReady).sort((a, b) => rank(a.name) - rank(b.name) || a.name.localeCompare(b.name));
   // Stage 5 (Last Mile): once the Ledger holds approved arrival hubs for this country they replace the
@@ -250,17 +250,18 @@ export default async function CountryPage({ params }: { params: Promise<{ region
   const flyInto = hubs.length ? hubs.filter((h) => h.kind === "airport" && h.code).slice(0, 2).map((h) => h.code).join(" · ") || c.flyInto : c.flyInto;
   const featured = pages.slice(0, 9);
   const journeys = journeysFor(c.slug);
-  const items: MapItem[] = all.filter((s) => posOf(s)).map((s) => {
+  // A country whose outline is missing from the chart set (a new library country, 19 Nov 2026) shows no map rather than failing the build.
+  const items: MapItem[] = !chart ? [] : all.filter((s) => posOf(s)).map((s) => {
     const p = posOf(s)!;
     const q = projectOn(chart, p.lat, p.lng);
     return { id: s.slug, category: isResidence(s.name, s.category) ? "residence" : "stay", name: s.name, kind: s.coords ? s.category ?? "stay" : approxKind(s.slug, s.category ?? "stay"), href: pageReady(s) ? recordHref("stay", s.slug) : `/plan?q=${encodeURIComponent(s.name)}`, x: q.x, y: q.y, area: null, bestMonths: s.bestMonths ?? undefined };
   });
-  for (const r of RESERVES.filter((x) => x.stay.countrySlug === c.slug && x.stay.coords)) {
-    const q = projectOn(chart, r.stay.coords!.lat, r.stay.coords!.lng);
+  for (const r of chart ? RESERVES.filter((x) => x.stay.countrySlug === c.slug && x.stay.coords) : []) {
+    const q = projectOn(chart!, r.stay.coords!.lat, r.stay.coords!.lng);
     items.push({ id: `reserve-${r.slug}`, category: "reserve", name: r.name, kind: `${r.camps.length} camps & residences`, href: `/safaris/${r.slug}`, x: q.x, y: q.y, area: r.area, bestMonths: r.stay.bestMonths ?? undefined });
   }
   // A pin off the chart (offshore or a mis-coded record) is left off the map, not drawn at the edge.
-  for (let i = items.length - 1; i >= 0; i--) { const { x, y } = items[i]; if (x == null || y == null || x < 0 || y < 0 || x > chart.width || y > chart.height) items.splice(i, 1); }
+  for (let i = items.length - 1; i >= 0; i--) { const { x, y } = items[i]; if (x == null || y == null || x < 0 || y < 0 || x > chart!.width || y > chart!.height) items.splice(i, 1); }
   const tally = (k: MapItem["category"]) => items.filter((i) => i.category === k).length;
   // Destination card: no stays filed yet (c.staysComing). Set from the data, so a first stay ends the card state.
   const coming = !!c.staysComing && all.length === 0;
@@ -343,7 +344,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               </div>
               <p className="text-[16px] ledger-muted max-w-md">{coming ? "The places the house plans around. Stays will be pinned here as each one is vetted and filed; until then, James plans the route with you." : "Every pin is a place in the Ledger. Open any entry for its full page; the rest can be planned with James."}</p>
             </div>
-            {coming ? <figure className="ledger-paper p-3 md:p-4 max-w-3xl mx-auto"><LedgerChart chart={chart} title={`Ledger chart of ${c.name}`} /></figure> : CHAINS[c.slug] ? <ChainChartMap country={c.name} views={chainViews(c.slug, c.name, chart, items, CHAINS[c.slug])} /> : <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />}
+            {!chart ? null : coming ? <figure className="ledger-paper p-3 md:p-4 max-w-3xl mx-auto"><LedgerChart chart={chart} title={`Ledger chart of ${c.name}`} /></figure> : CHAINS[c.slug] ? <ChainChartMap country={c.name} views={chainViews(c.slug, c.name, chart, items, CHAINS[c.slug])} /> : <LedgerChartMap legend="below" tones={c.region === "europe" ? { stay: VOLUME_STYLES.europe.pad } : {}} country={c.name} chart={<LedgerChart chart={chart} title={`Ledger chart of ${c.name} with its stays`} />} width={chart.width} height={chart.height} items={items} counts={{ stay: tally("stay"), vessel: tally("vessel"), residence: tally("residence"), reserve: tally("reserve") }} />}
             {c.slug === "philippines" && <p className="mt-4 text-[13.5px] ledger-muted italic max-w-3xl">Positions are approximate until each stay&rsquo;s pin is filed: stays whose brands publish no pin sit at their island or town. The red and white flags mark dive sites, one line each below.</p>}
             {c.slug === "ecuador-galapagos" && <IslandZoom zoom="galapagos" />}
             {c.slug === "chile" && <IslandZoom zoom="rapa-nui" href="/destinations/south-america/chile/rapa-nui" cta="Open the Rapa Nui guide" />}

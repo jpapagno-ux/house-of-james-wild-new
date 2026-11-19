@@ -35,7 +35,7 @@ SKIP = {"costa-rica", "south-africa", "indonesia"}
 ATLAS = {"chile": "Chile", "ecuador-galapagos": "Ecuador", "tahiti": "Fr. Polynesia", "spain-ibiza": "Spain", "portugal": "Portugal",
          "turks-caicos": "Turks and Caicos Is.", "st-barths": "St-Barthélemy", "virgin-islands": "British Virgin Is.",
          # Natural Earth has no England or Scotland, only the United Kingdom (the 19 Nov 2026 sync failed on England's chart).
-         "england": "United Kingdom", "scotland": "United Kingdom"}
+         "england": "United Kingdom", "scotland": "United Kingdom", "spain-isla-mallorca": "Spain"}
 STATES = {"utah": "Utah", "california": "California", "montana": "Montana", "arizona": "Arizona", "hawaii": "Hawaii", "wyoming": "Wyoming",
           "colorado": "Colorado", "florida": "Florida", "alaska": "Alaska", "new-mexico": "New Mexico"}
 NAMES = {"tahiti": "French Polynesia (Tahiti)", "chile": "Chile & Easter Island", "ecuador-galapagos": "Ecuador & Galápagos", "portugal": "Portugal & the Azores", "spain-ibiza": "Ibiza"}

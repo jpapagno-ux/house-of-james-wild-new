@@ -58,11 +58,14 @@ const yachtSlug = (y) => y.replace(/-(\d)$/, (_, n) => `-${"i".repeat(+n)}`);
 const out = [];
 const unplaced = new Set();
 const held = [];
+const FILED_WHOLE = ["33102"];
 for (const v of raw.voyages) {
   const ship = yachtSlug(v.yacht), Y = YACHTS[ship];
   const rows = v.days.map((d) => ({ ...d, iso: iso(d.date) })).filter((d) => d.iso && d.port);
   if (!rows.length) continue;
-  if (v.countries.some((c) => NOT_SOLD.includes(c)) || rows.some((r) => NOT_SOLD.includes(r.country))) { held.push(`${v.number} ${v.title} (${v.start})`); continue; }
+  // The World Cruise is filed whole (James, 19 Nov 2026: "add this"): 180 nights round the world, Palm Beach to London, as
+  // SeaDream publishes it. The two voyages that sail only the Gulf and the Red Sea stay held under the house rule.
+  if (!FILED_WHOLE.includes(String(v.number)) && (v.countries.some((c) => NOT_SOLD.includes(c)) || rows.some((r) => NOT_SOLD.includes(r.country)))) { held.push(`${v.number} ${v.title} (${v.start})`); continue; }
   const dates = [...new Set(rows.map((r) => r.iso))].sort();
   const days = dates.map((date, i) => {
     const calls = rows.filter((r) => r.iso === date).filter((r, k, a) => k === 0 || r.port !== a[k - 1].port);
@@ -98,9 +101,11 @@ for (const v of raw.voyages) {
   const countries = [...new Set(rows.map((r) => r.country).filter(Boolean))];
   const callNames = [...new Set(stops.map((s) => short(s.name)))];
   const id = `${slug(title)}-${dates[0]}`;
+  // SeaDream files The World Cruise under the Caribbean, where it starts; here it is its own region.
+  const world = FILED_WHOLE.includes(String(v.number));
   out.push({
     slug: id, number: String(v.number), ship, shipName: Y.name, title, date: dates[0], dateTo: dates[dates.length - 1], nights: +v.nights || dates.length - 1,
-    region: v.region, regionName: REGIONS[v.region] ?? v.region, from: undash(a.port), to: undash(b.port), direction, countries, bahamas: countries.includes("Bahamas") || countries.includes("The Bahamas"),
+    region: world ? "world" : v.region, regionName: world ? "Round the World" : REGIONS[v.region] ?? v.region, from: undash(a.port), to: undash(b.port), direction, countries, bahamas: countries.includes("Bahamas") || countries.includes("The Bahamas"),
     collection: String(v.collection ?? "").split(",").filter(Boolean), waitlisted: !!v.waitlisted, calls: callNames,
     hero: image(ship === "seadream-iii" ? "site/sdiii-launch" : REGION_PICTURE[v.region] ?? "site/entire-ship"), days, stops, prices, from$: lead, maiden: ship === "seadream-iii" && dates[0] === "2029-07-10",
   });
@@ -122,6 +127,9 @@ const LABELS = {
 for (const f of fs.readdirSync("public/maps/routes")) if (/^seadream-/.test(f)) fs.unlinkSync(`public/maps/routes/${f}`);
 for (const v of out) {
   if (v.stops.length < 2) continue;
+  // No chart or 3D for The World Cruise yet: no coastline is charted round the whole world, and a straight line would
+  // sail her over land. Her page carries the day by day and the fare; the map follows once the world chart is built.
+  if (v.region === "world") continue;
   const stops = v.stops.map((s, i, a) => ({ day: s.day, name: s.name, lat: s.lat, lng: s.lng, ...(i === 0 ? { kind: "port" } : { mode: "sea", path: [[a[i - 1].lng, a[i - 1].lat], [s.lng, s.lat]] }), ...(i === a.length - 1 && i > 0 ? { kind: "port" } : {}) }));
   v.route = `seadream-${v.ship.replace("seadream-", "")}-${v.slug}`;
   fs.writeFileSync(`public/maps/routes/${v.route}.json`, JSON.stringify({ id: v.route, type: "voyage", destination: v.region, title: `${v.title} aboard ${v.shipName}`, subtitle: `${v.nights} nights · ${v.direction} · ${v.shipName}`, days: Object.fromEntries(v.days.map((d) => [d.day, d.title])), stops, map_note: "Course and positions approximate, not a navigational chart", fallback: { labels: LABELS[v.region] ?? [] } }) + "\n");

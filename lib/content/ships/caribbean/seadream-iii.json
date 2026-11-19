@@ -11,7 +11,7 @@
  "launch": "2029-07-10",
  "seo": {
   "title": "SeaDream III: The New Yacht, Her Inaugural Voyage and Every Published Sailing | James Wild & Co",
-  "description": "SeaDream III joins SeaDream Yacht Club in July 2029. Her inaugural voyage leaves Hong Kong for Tokyo on 10 July 2029. 46 published voyages across Asia, Oceania and the Pacific, The Arctic, The Mediterranean, Northern Europe, The Americas and The Caribbean, each day by day, from US$8,750 per person.",
+  "description": "SeaDream III joins SeaDream Yacht Club in July 2029. Her inaugural voyage leaves Hong Kong for Tokyo on 10 July 2029. 47 published voyages across Asia, Oceania and the Pacific, The Arctic, The Mediterranean, Northern Europe, The Americas, The Caribbean and Round the World, each day by day, from US$8,750 per person.",
   "keywords": [
    "SeaDream III",
    "SeaDream III inaugural voyage",
@@ -22,7 +22,7 @@
   ]
  },
  "tagline": "SeaDream's third yacht, sailing from July 2029.",
- "answer": "SeaDream III is the new yacht SeaDream Yacht Club is adding to SeaDream I and SeaDream II after twenty-five years on the water. Her inaugural voyage, The Inaugural Journey: Japan, the Ryukyus & Korea, leaves Hong Kong on 10 July 2029 for Tokyo. SeaDream publishes 46 voyages for her here, across Asia, Oceania and the Pacific, The Arctic, The Mediterranean, Northern Europe, The Americas and The Caribbean, with fares from US$8,750 per person, double occupancy. SeaDream has not yet published her size, her suites or a picture of her; each voyage is filed with its day by day and its lead fare, and the rest follows as SeaDream releases it.",
+ "answer": "SeaDream III is the new yacht SeaDream Yacht Club is adding to SeaDream I and SeaDream II after twenty-five years on the water. Her inaugural voyage, The Inaugural Journey: Japan, the Ryukyus & Korea, leaves Hong Kong on 10 July 2029 for Tokyo. SeaDream publishes 47 voyages for her here, across Asia, Oceania and the Pacific, The Arctic, The Mediterranean, Northern Europe, The Americas, The Caribbean and Round the World, with fares from US$8,750 per person, double occupancy. SeaDream has not yet published her size, her suites or a picture of her; each voyage is filed with its day by day and its lead fare, and the rest follows as SeaDream releases it.",
  "facts": [
   [
    "Status",
@@ -38,11 +38,11 @@
   ],
   [
    "Voyages",
-   "46 published, 2029-07-10 to 2031-01-05"
+   "47 published, 2029-07-10 to 2031-07-05"
   ],
   [
    "Waters",
-   "Asia, Oceania and the Pacific, The Arctic, The Mediterranean, Northern Europe, The Americas and The Caribbean"
+   "Asia, Oceania and the Pacific, The Arctic, The Mediterranean, Northern Europe, The Americas, The Caribbean and Round the World"
   ],
   [
    "Fares",
@@ -678,6 +678,19 @@
    },
    "voyage": "33101",
    "href": "/voyages/ships/seadream-iii/new-year-in-st-barths-and-the-leeward-islands-2030-12-27"
+  },
+  {
+   "date": "2031-01-05",
+   "dateTo": "2031-07-05",
+   "itinerary": "The World Cruise",
+   "direction": "Palm Beach to London",
+   "nights": 180,
+   "status": "open",
+   "prices": {
+    "From": 223440
+   },
+   "voyage": "33102",
+   "href": "/voyages/ships/seadream-iii/the-world-cruise-2031-01-05"
   }
  ],
  "routesNote": "Every published SeaDream III voyage has its own page, with its day by day, chart and fares. Open a year and a month below and pick a sailing.",
@@ -700,7 +713,7 @@
   ],
   [
    "Where will SeaDream III sail?",
-   "SeaDream publishes 46 voyages for her here, across Asia, Oceania and the Pacific, The Arctic, The Mediterranean, Northern Europe, The Americas and The Caribbean, from 2029-07-10 to 2031-01-05."
+   "SeaDream publishes 47 voyages for her here, across Asia, Oceania and the Pacific, The Arctic, The Mediterranean, Northern Europe, The Americas, The Caribbean and Round the World, from 2029-07-10 to 2031-07-05."
   ],
   [
    "How many guests will SeaDream III carry?",

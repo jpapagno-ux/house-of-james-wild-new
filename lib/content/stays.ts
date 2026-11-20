@@ -38,8 +38,10 @@ const NAME_FIX: Record<string, string> = {
   "nayara-gardens": "Nayara Gardens", "nayara-hangaroa": "Nayara Hangaroa", "nayara-tented-camp": "Nayara Tented Camp", "noah-forest-by-tifakara": "Noah’s Forest by Tifakara",
   "pearl-resort-vahine-private-island": "Vahine Private Island", "senda-monteverde-lodge": "Senda Monteverde Lodge",
   "seseka-thornybush": "Seseke Tented Camp", "singita-ebony": "Singita Ebony Lodge", "sirai-house": "Sirai House",
-  "tabacon-thermal-resort-spa": "Tabacón Thermal Resort & Spa", "tengile-mala-mala-kirkmans-kamp": "Kirkman's Kamp",
+  "tabacon-thermal-resort-spa": "Tabacón Thermal Resort & Spa", "tengile-mala-mala-kirkmans-kamp": "Kirkman's Kamp by Tengile MalaMala",
   "tengile-mala-mala-rattrays-lodge": "Rattray's Lodge", "tengile-mala-mala-sable-camp": "Sable Camp", "thornybush-reserve": "Thornybush Reserve",
+  // Tengile MalaMala Collection (James, 20 Nov 2026): never an &Beyond name on these two (docs/verified-facts.md).
+  "tengile-river-lodge-by-mala-mala": "Tengile River Lodge",
 };
 const cleanName = (s: StayData) => NAME_FIX[s.slug] ?? s.name.replace(/\s*\n\s*/g, " ").replace(/\s+/g, " ").trim();
 

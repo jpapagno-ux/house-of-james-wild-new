@@ -213,5 +213,15 @@
     "source": "/stays/jao-reserve",
     "destination": "/safaris/jao-reserve",
     "permanent": true
+  },
+  {
+    "source": "/stays/daunara-safari-camp",
+    "destination": "/stays/dulini-daunara-lodge",
+    "permanent": true
+  },
+  {
+    "source": "/stays/beyond-lake-serengeti-under-canvas",
+    "destination": "/destinations/africa/tanzania",
+    "permanent": false
   }
 ]

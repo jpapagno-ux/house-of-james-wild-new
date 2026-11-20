@@ -861,9 +861,10 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff8b0",
    "slug": "beyond-lake-serengeti-under-canvas",
-   "name": "& Beyond Phinda Homestead Residence",
+   "name": "&Beyond Serengeti Under Canvas",
    "country": "Tanzania",
    "missing": [
+    "hero_photo",
     "coordinates"
    ],
    "released": true
@@ -1571,14 +1572,6 @@
    "released": true
   },
   {
-   "stay_id": "6a89a1ab46f8c4d5c2138e1d",
-   "slug": "daunara-safari-camp",
-   "name": "Daunara Safari Camp",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6afd852f48d247aa90495af1",
    "slug": "dexamenes-seaside-hotel",
    "name": "Dexamenes Seaside Hotel",
@@ -1643,11 +1636,9 @@
   {
    "stay_id": "6a899f0d097f3f23995a0730",
    "slug": "dulini-daunara-lodge",
-   "name": "Dulini Daunara Lodge",
-   "country": "South Africa",
-   "missing": [
-    "coordinates"
-   ],
+   "name": "Dulini Daunara",
+   "country": "Botswana",
+   "missing": [],
    "released": true
   },
   {
@@ -5587,7 +5578,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9d5",
    "slug": "tengile-river-lodge-by-mala-mala",
-   "name": "Tengile River Lodge by Mala Mala",
+   "name": "Tengile River Lodge by Tengile Mala Mala",
    "country": "South Africa",
    "missing": [],
    "released": true

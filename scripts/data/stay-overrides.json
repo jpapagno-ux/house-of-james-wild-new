@@ -10,5 +10,10 @@
   "Example: \"blue-reef\": {\"hero\": \"https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/blue-reef/hero.jpg\", \"note\": \"James, 2026-10-29: media-kit hero\"}",
   "  Founder status, date and note are set only in Stay Studio (house_status, house_status_date, founder_note) — one source; the nightly sync carries them here. They can't be set in this file."
  ],
- "stays": {}
+ "stays": {
+  "daunara-safari-camp": {
+   "hide": true,
+   "note": "James, 2026-11-20: duplicate of Dulini Daunara (STY-2026-563352), the same camp under its operator's current name. Page retired; /stays/daunara-safari-camp redirects to /stays/dulini-daunara-lodge."
+  }
+ }
 }

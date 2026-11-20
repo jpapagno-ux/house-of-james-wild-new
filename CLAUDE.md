@@ -45,6 +45,11 @@
   anywhere on the site (e.g. Wilderness Ruckomechi: suites not tents, swimming pool not infinity pool,
   closed 20 Nov to 31 Mar).
 
+## Tengile MalaMala (James, 20 Nov 2026: "a site wide rule")
+- Kirkman's Kamp and Tengile River Lodge are Tengile MalaMala Collection lodges, with Rattray's Lodge, MalaMala Camp
+  and Sable Camp. Never label, credit or group them as &Beyond, anywhere: stays, maps, journeys, Grand Traverse, Atlas,
+  Iggi, partners. Source is tengilemalamala.com only, never andbeyond.com. `tests/brand-rules.test.ts` fails on drift.
+
 ## Dates (James, 1 Nov 2026)
 - Dated content (offers, departures, sailings, sessions) is hidden automatically once its end date
   passes; the site rebuilds daily. Weekly and monthly syncs (to be built) also re-check terms and

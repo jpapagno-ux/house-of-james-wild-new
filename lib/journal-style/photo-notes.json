@@ -1,7 +1,24 @@
 {
   "_note": "JWC-STYLE-01. What each filed photograph shows, for the photograph viewer's section tabs and for alt text. 'describe' is keyed by the last part of a photograph's address; 'extra' lists photographs already in the house Cloudinary library that the stay record does not yet list. Sections: rooms, pool, exterior, dining, experiences. A photograph with no entry appears under All only.",
   "aguas-claras": {
-    "describe": {},
+    "describe": {
+      "75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero": { "alt": "The white main house above the pool in the gardens at dusk at Aguas Claras, Costa Rica", "section": "exterior" },
+      "5615363d9_960a62e41_6835e605544aed8e2c19bce5_Beach_0060": { "alt": "A guest sitting in the clear shallows over the reef at Aguas Claras, Costa Rica", "section": "pool" },
+      "40f2b52ce_6103400fc_6835e297ff2e3b864f9ddef7_Beach_0030": { "alt": "Palms on the beach and a swimmer at the water's edge at Aguas Claras, Costa Rica", "section": "pool" },
+      "a713a2463_6a72a5f07_6835dc42a179c63790ead1c0_Beach_0025": { "alt": "The coast and the reef from the air at Aguas Claras, Costa Rica", "section": "pool" },
+      "623f3abfa_8f19ce550_67f97e530273fe50b6b7c582_4_hac_carousel-3": { "alt": "A wooden bungalow on stilts among banana leaves at dusk at Aguas Claras, Costa Rica", "section": "exterior" },
+      "hero": { "alt": "A parent catching a child jumping into the pool at Aguas Claras, Costa Rica", "section": "pool" },
+      "g1": { "alt": "The open-sided restaurant with orange seating under thatch at Aguas Claras, Costa Rica", "section": "dining" },
+      "g2": { "alt": "A guest reading at a table in the open-air restaurant at Aguas Claras, Costa Rica", "section": "dining" },
+      "g3": { "alt": "The white main house above the pool and gardens at Aguas Claras, Costa Rica", "section": "exterior" },
+      "g4": { "alt": "The pool from above with loungers along its edge at Aguas Claras, Costa Rica", "section": "pool" },
+      "g5": { "alt": "The thatched pavilion beside the pool with red loungers at Aguas Claras, Costa Rica", "section": "pool" },
+      "g6": { "alt": "The illuminated Aguas Claras sign on a wooden wall at Aguas Claras, Costa Rica", "section": "exterior" },
+      "g7": { "alt": "A guest reading on a bed by the window in a white room at Aguas Claras, Costa Rica", "section": "rooms" },
+      "g8": { "alt": "A cyclist on the coast road through the rainforest near Aguas Claras, Costa Rica", "section": "experiences" },
+      "g9": { "alt": "A bungalow on stilts in the rainforest gardens at Aguas Claras, Costa Rica", "section": "exterior" },
+      "g10": { "alt": "A sloth hanging from a branch in the rainforest canopy near Aguas Claras, Costa Rica", "section": "experiences" }
+    },
     "extra": [
       { "id": "jwco/stays/aguas-claras/hero-yoga-casa-gandhi", "alt": "Casa Gandhi, the open-air yoga shala in the gardens at Aguas Claras, Costa Rica", "section": "experiences" },
       { "id": "jwco/stays/aguas-claras/hero-cahuita-beach", "alt": "The beach at Cahuita National Park, near Aguas Claras, Costa Rica", "section": "experiences" }

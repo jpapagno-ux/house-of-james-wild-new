@@ -2,26 +2,330 @@
   "_note": "JWC-STYLE-01. What each filed photograph shows, for the photograph viewer's section tabs and for alt text. 'describe' is keyed by the last part of a photograph's address; 'extra' lists photographs already in the house Cloudinary library that the stay record does not yet list. Sections: rooms, pool, exterior, dining, experiences. A photograph with no entry appears under All only.",
   "aguas-claras": {
     "describe": {
-      "75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero": { "alt": "The white main house above the pool in the gardens at dusk at Aguas Claras, Costa Rica", "section": "exterior" },
-      "5615363d9_960a62e41_6835e605544aed8e2c19bce5_Beach_0060": { "alt": "A guest sitting in the clear shallows over the reef at Aguas Claras, Costa Rica", "section": "pool" },
-      "40f2b52ce_6103400fc_6835e297ff2e3b864f9ddef7_Beach_0030": { "alt": "Palms on the beach and a swimmer at the water's edge at Aguas Claras, Costa Rica", "section": "pool" },
-      "a713a2463_6a72a5f07_6835dc42a179c63790ead1c0_Beach_0025": { "alt": "The coast and the reef from the air at Aguas Claras, Costa Rica", "section": "pool" },
-      "623f3abfa_8f19ce550_67f97e530273fe50b6b7c582_4_hac_carousel-3": { "alt": "A wooden bungalow on stilts among banana leaves at dusk at Aguas Claras, Costa Rica", "section": "exterior" },
-      "hero": { "alt": "A parent catching a child jumping into the pool at Aguas Claras, Costa Rica", "section": "pool" },
-      "g1": { "alt": "The open-sided restaurant with orange seating under thatch at Aguas Claras, Costa Rica", "section": "dining" },
-      "g2": { "alt": "A guest reading at a table in the open-air restaurant at Aguas Claras, Costa Rica", "section": "dining" },
-      "g3": { "alt": "The white main house above the pool and gardens at Aguas Claras, Costa Rica", "section": "exterior" },
-      "g4": { "alt": "The pool from above with loungers along its edge at Aguas Claras, Costa Rica", "section": "pool" },
-      "g5": { "alt": "The thatched pavilion beside the pool with red loungers at Aguas Claras, Costa Rica", "section": "pool" },
-      "g6": { "alt": "The illuminated Aguas Claras sign on a wooden wall at Aguas Claras, Costa Rica", "section": "exterior" },
-      "g7": { "alt": "A guest reading on a bed by the window in a white room at Aguas Claras, Costa Rica", "section": "rooms" },
-      "g8": { "alt": "A cyclist on the coast road through the rainforest near Aguas Claras, Costa Rica", "section": "experiences" },
-      "g9": { "alt": "A bungalow on stilts in the rainforest gardens at Aguas Claras, Costa Rica", "section": "exterior" },
-      "g10": { "alt": "A sloth hanging from a branch in the rainforest canopy near Aguas Claras, Costa Rica", "section": "experiences" }
+      "75a700e59_2519c4d70_67f59e112bea9b8db9f4408a_1_hac_hero": {
+        "alt": "The white main house above the pool in the gardens at dusk at Aguas Claras, Costa Rica",
+        "section": "exterior"
+      },
+      "5615363d9_960a62e41_6835e605544aed8e2c19bce5_Beach_0060": {
+        "alt": "A guest sitting in the clear shallows over the reef at Aguas Claras, Costa Rica",
+        "section": "pool"
+      },
+      "40f2b52ce_6103400fc_6835e297ff2e3b864f9ddef7_Beach_0030": {
+        "alt": "Palms on the beach and a swimmer at the water's edge at Aguas Claras, Costa Rica",
+        "section": "pool"
+      },
+      "a713a2463_6a72a5f07_6835dc42a179c63790ead1c0_Beach_0025": {
+        "alt": "The coast and the reef from the air at Aguas Claras, Costa Rica",
+        "section": "pool"
+      },
+      "623f3abfa_8f19ce550_67f97e530273fe50b6b7c582_4_hac_carousel-3": {
+        "alt": "A wooden bungalow on stilts among banana leaves at dusk at Aguas Claras, Costa Rica",
+        "section": "exterior"
+      },
+      "hero": {
+        "alt": "A parent catching a child jumping into the pool at Aguas Claras, Costa Rica",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "The open-sided restaurant with orange seating under thatch at Aguas Claras, Costa Rica",
+        "section": "dining"
+      },
+      "g2": {
+        "alt": "A guest reading at a table in the open-air restaurant at Aguas Claras, Costa Rica",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "The white main house above the pool and gardens at Aguas Claras, Costa Rica",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "The pool from above with loungers along its edge at Aguas Claras, Costa Rica",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "The thatched pavilion beside the pool with red loungers at Aguas Claras, Costa Rica",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "The illuminated Aguas Claras sign on a wooden wall at Aguas Claras, Costa Rica",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "A guest reading on a bed by the window in a white room at Aguas Claras, Costa Rica",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A cyclist on the coast road through the rainforest near Aguas Claras, Costa Rica",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A bungalow on stilts in the rainforest gardens at Aguas Claras, Costa Rica",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A sloth hanging from a branch in the rainforest canopy near Aguas Claras, Costa Rica",
+        "section": "experiences"
+      }
     },
     "extra": [
-      { "id": "jwco/stays/aguas-claras/hero-yoga-casa-gandhi", "alt": "Casa Gandhi, the open-air yoga shala in the gardens at Aguas Claras, Costa Rica", "section": "experiences" },
-      { "id": "jwco/stays/aguas-claras/hero-cahuita-beach", "alt": "The beach at Cahuita National Park, near Aguas Claras, Costa Rica", "section": "experiences" }
+      {
+        "id": "jwco/stays/aguas-claras/hero-yoga-casa-gandhi",
+        "alt": "Casa Gandhi, the open-air yoga shala in the gardens at Aguas Claras, Costa Rica",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/aguas-claras/hero-cahuita-beach",
+        "alt": "The beach at Cahuita National Park, near Aguas Claras, Costa Rica",
+        "section": "experiences"
+      }
     ]
+  },
+  "amor-arenal": {
+    "describe": {
+      "82e39722d_fa5a2d772_68d951c7fe6e143996ff061f_07dafdee": {
+        "alt": "Thatched casitas among the rainforest canopy at Amor Arenal, Costa Rica",
+        "section": "exterior"
+      },
+      "2af5567ef_9a2f1d5e5_68d951d31ef5efa57fa7f12d_8bd3e8e2": {
+        "alt": "A casita's deck and plunge pool from above at Amor Arenal, Costa Rica",
+        "section": "pool"
+      },
+      "69e1e9adc14d693f661a8fef_Canyon-casita-King": {
+        "alt": "A casita bedroom with a king bed under a timber roof at Amor Arenal, Costa Rica",
+        "section": "rooms"
+      },
+      "hero": {
+        "alt": "Casita roofs in the forest canopy from above at Amor Arenal, Costa Rica",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A casita bedroom with stone walls and a king bed at Amor Arenal, Costa Rica",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A casita bedroom with two beds and forest windows at Amor Arenal, Costa Rica",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A deck and plunge pool among the leaves from above at Amor Arenal, Costa Rica",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A guest in a casita plunge pool from above at Amor Arenal, Costa Rica",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "A casita deck and plunge pool in the rainforest from above at Amor Arenal, Costa Rica",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "The open-sided restaurant under a timber roof at Amor Arenal, Costa Rica",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "Daybeds on a covered terrace facing the forest at Amor Arenal, Costa Rica",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A king bed against a stone wall in a casita at Amor Arenal, Costa Rica",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A thermal pool and small waterfall in the gardens at Amor Arenal, Costa Rica",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "Wedding stationery laid on a woven tray at Amor Arenal, Costa Rica",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "arenas-del-mar-resort": {
+    "describe": {
+      "f7fef1137_e77c39766_6a33b2260d0c6d3eb5f502dc_9dae54cf": {
+        "alt": "The rainforest headland and beach from the air at Arenas del Mar Resort, Costa Rica",
+        "section": "exterior"
+      },
+      "6116bbd50_f0a5be029_6a33b2f0d1081f84feb24dc1_568dd087": {
+        "alt": "A guest on a suite terrace above the bay at Arenas del Mar Resort, Costa Rica",
+        "section": "rooms"
+      },
+      "2dd28ae0c_735f7405c_6a33b2f0c109ff8d4e396660_77c0a673": {
+        "alt": "A suite terrace with a daybed and plunge pool at Arenas del Mar Resort, Costa Rica",
+        "section": "rooms"
+      },
+      "edc0729db_aed4735d8_6a33b2f084637db7d000128c_2ab15c9c": {
+        "alt": "A suite bedroom with two beds and a forest window at Arenas del Mar Resort, Costa Rica",
+        "section": "rooms"
+      },
+      "hero": {
+        "alt": "A capuchin monkey in the trees at Arenas del Mar Resort, Costa Rica",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "A guest in a robe on a suite terrace above the bay at Arenas del Mar Resort, Costa Rica",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A toucan in the trees at Arenas del Mar Resort, Costa Rica",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "The beach cove below the forest from the air at Arenas del Mar Resort, Costa Rica",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "The beach and rocks at first light at Arenas del Mar Resort, Costa Rica",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "The infinity pool through the trees above the bay at Arenas del Mar Resort, Costa Rica",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "The lower pool with loungers under the trees at Arenas del Mar Resort, Costa Rica",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "The beach with footprints in the sand at Arenas del Mar Resort, Costa Rica",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A guest walking to the beach between palms at Arenas del Mar Resort, Costa Rica",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "A rope swing over the beach at Arenas del Mar Resort, Costa Rica",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A parent and child swimming in the infinity pool at Arenas del Mar Resort, Costa Rica",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "coco-costa-rica": {
+    "describe": {
+      "60b6915dc_8605d34a2_69320063946516435a7ea662_Image": {
+        "alt": "The Coco pods above the rainforest at dusk at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "hero": {
+        "alt": "The pods in the mist among the trees at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The pods on the hillside under a pink sky at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "Two pods and their walkways in the forest at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "A pod and its curved walkway at sunset at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A pod lit from inside at night at Coco Costa Rica, Costa Rica",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A pod glowing among the trees at night at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "The cluster of pods and the pool from the air at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "Guests in the pool below the pods from above at Coco Costa Rica, Costa Rica",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "The open bamboo pavilion with a hammock and cushions at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A pod raised on stilts among the trees at Coco Costa Rica, Costa Rica",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A guest swinging beside a pod above the forest at Coco Costa Rica, Costa Rica",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "kura-boutique-resort": {
+    "describe": {
+      "8a119d498_73f956145_6a33a770c92adf24ef3a82a7_photo-gallery-32-Relaxing-at-the-Pool-3": {
+        "alt": "A guest in the infinity pool above the Pacific coast at Kura Boutique Hotel, Costa Rica",
+        "section": "pool"
+      },
+      "228cdb148_e3a068a26_6a33a7a29f44bac8b7533a35_photo-gallery-33-Relaxing-at-the-Pool-2": {
+        "alt": "The infinity pool and loungers above the ocean at Kura Boutique Hotel, Costa Rica",
+        "section": "pool"
+      },
+      "ed6795bfa_7bb2f70ba_6a33a857957e26af29724494_photo-gallery-46-Junior-Suite-2": {
+        "alt": "A suite terrace with a sofa and hammock at Kura Boutique Hotel, Costa Rica",
+        "section": "rooms"
+      },
+      "5ad01056d_623a3f3cf_6a33a85b3cfb698e0c97da5d_photo-gallery-20-Suite-2": {
+        "alt": "A suite bedroom open to the ocean view at Kura Boutique Hotel, Costa Rica",
+        "section": "rooms"
+      },
+      "3c1a01d3c_b8a5899b5_6a33a860d1081f84feaa6da8_photo-gallery-27-Rooftop-1": {
+        "alt": "The timber staircase in the main building at Kura Boutique Hotel, Costa Rica",
+        "section": "exterior"
+      },
+      "hero": {
+        "alt": "A humpback whale breaching offshore at Kura Boutique Hotel, Costa Rica",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "A host serving drinks at the pool loungers at Kura Boutique Hotel, Costa Rica",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A guest in a robe at the open doors of a suite at Kura Boutique Hotel, Costa Rica",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A waterfall and swimming hole in the forest at Kura Boutique Hotel, Costa Rica",
+        "section": "experiences"
+      },
+      "g4": {
+        "alt": "The hotel on its ridge above the coast from the air at Kura Boutique Hotel, Costa Rica",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "Two cocktails on the bar at Kura Boutique Hotel, Costa Rica",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "A villa living room with open sides at Kura Boutique Hotel, Costa Rica",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A villa kitchen with a breakfast bar at Kura Boutique Hotel, Costa Rica",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A villa lounge beside its pool at Kura Boutique Hotel, Costa Rica",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A suite bedroom with a four-poster bed at Kura Boutique Hotel, Costa Rica",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "A table set for two on a terrace in the forest at Kura Boutique Hotel, Costa Rica",
+        "section": "dining"
+      }
+    },
+    "extra": []
   }
 }

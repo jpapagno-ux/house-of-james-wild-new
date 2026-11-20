@@ -8,6 +8,11 @@ import LiveHostPanel from "@/components/record/LiveHostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import WhyFilm from "@/components/record/WhyFilm";
 import RoomTypes from "@/components/stay/RoomTypes";
+import PathwayStamp from "@/components/pathways/PathwayStamp";
+import FollowThePathway from "@/components/pathways/FollowThePathway";
+import { PathwayChips } from "@/components/pathways/Pathway";
+import { onPathway, pathwayStays } from "@/lib/content/pathways";
+import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
 import Inclusions from "@/components/booking/Inclusions";
 import BookingPanel from "@/components/booking/BookingPanel";
 import RateCardSection from "@/components/booking/RateCardSection";
@@ -75,6 +80,10 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   ) : cardFor(`stay:${s.slug}`) ? (
     <RateCardSection pageKey={`stay:${s.slug}`} name={s.name} photo={s.hero as string} hostHref={hostHref} />
   ) : null;
+  // Wild Pathways: the stay's approved pathway gives the page its second colour (the bar under the hero, the section
+  // rules, the stamp, the chips, the bar's top edge). Only an approved classification shows, and only with the flag on.
+  const pw = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
+  const pwScope = pw ? `pathway-${pw.primary.id.slice(-2)}` : "";
   const r0 = rates?.rooms[0];
   const nights = rates?.window?.nights ?? 0;
   const slip = rates && r0 && rates.window && nights > 0 ? (() => {
@@ -117,15 +126,27 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   const strip = (k: SectionKey, label: string) => { const list = inSection(k); return list.length ? <PhotoStrip tab={k} photos={list.map((p) => ({ url: p.url, alt: p.alt }))} total={list.length} label={label} /> : null; };
 
   return (
-    <div className="journal-style bg-white">
+    <div className={`journal-style bg-white ${pwScope}`}>
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
-      <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}`}</style>
+      <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}`}</style>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip bg-white">
         <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
           film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" photoCount={v.photos.length} />
+        {pw && <div aria-hidden className="h-1 bg-pathway" />}
         <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          {pw && (
+            <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4 border-l-4 border-[color:var(--jw-path)] pl-5">
+              <PathwayStamp id={pw.primary.id} size={150} rotate={-3} />
+              <div>
+                <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
+                <p className="mt-1 font-display text-[24px] leading-tight text-graphite">{pw.primary.name}</p>
+                <p className="mt-1 max-w-xl text-[14.5px] text-stone-text">{pw.primary.line}</p>
+                <div className="mt-3"><PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>
+              </div>
+            </div>
+          )}
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <div className="pt-12 md:pt-16 pb-20 md:pb-28 space-y-20 md:space-y-28">
             <JournalOverview quote={s.quote} lead={s.tagline} answer={v.answer} paragraphs={s.rooms.paras} photo={v.filed[1] ?? v.filed[0] ?? null} caption={s.name} ledgerId={s.ledgerId} reasons={v.whyShort}
@@ -180,6 +201,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
 
             <JournalQuestions no={N.questions} name={s.name} faqs={s.faqs} schema={s.faqs.length > 0 && s.reviewed} />
 
+            {pw && <FollowThePathway primary={pw.primary} secondary={pw.secondary} related={onPathway(pw.primaryPathway).filter((x) => x.slug !== s.slug).slice(0, 4)} pathwayHref={(p) => pathwayHref(p.key)} />}
             {sign && <Postcard line={sign} signature={<Signature className="w-28" />} place={s.country} ledgerId={s.ledgerId} postmark={s.country} />}
 
             <section aria-label="Plan with the house" className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-t border-[color:var(--jw-keyline)] pt-10">

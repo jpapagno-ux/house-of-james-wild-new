@@ -7,7 +7,7 @@ import { JOURNAL_STAYS, journalStay, SECTION_LABEL } from "@/lib/journal-style/s
 // the order the photograph viewer shows them, with the section each is filed under. It exists so photographs can be
 // described (lib/journal-style/photo-notes.json) by looking at them.
 export const dynamicParams = false;
-export function generateStaticParams() { return JOURNAL_STAYS.map((slug) => ({ slug })); }
+export function generateStaticParams() { return ["todo", ...JOURNAL_STAYS].map((slug) => ({ slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   return buildMetadata({ title: `Photograph sheet: ${slug} (preview)`, description: "A contact sheet for describing photographs.", path: `/preview/journal/photos/${slug}`, noindex: true });
@@ -15,6 +15,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  // "todo": every stay with a photograph that has no section yet, on one sheet
+  if (slug === "todo") {
+    const todo = JOURNAL_STAYS.map((x) => journalStay(x)).filter((x): x is NonNullable<typeof x> => !!x && x.photos.some((p) => !p.section));
+    return (
+      <main className="bg-white p-3">
+        {todo.map((t) => (
+          <section key={t.s.slug} className="mb-3">
+            <p className="font-mono text-[11px] text-graphite">{t.s.slug} · {t.photos.length}</p>
+            <ol className="mt-1 grid grid-cols-8 gap-1.5">
+              {t.photos.map((p, i) => (
+                <li key={p.url}><div className="relative aspect-[4/3] bg-[color:var(--jw-hairline)]"><Image src={p.url} alt="" fill sizes="13vw" loading="eager" className="object-cover" /></div><p className="font-mono text-[10px] leading-none text-graphite">{i + 1}</p></li>
+              ))}
+            </ol>
+          </section>
+        ))}
+      </main>
+    );
+  }
   const v = journalStay(slug);
   if (!v) notFound();
   return (

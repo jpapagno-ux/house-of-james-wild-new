@@ -6,7 +6,7 @@ import { MessageCircle } from "lucide-react";
 import AtlasSearch from "./AtlasSearch";
 import { loadIndex } from "./index-client";
 import {
-  CATEGORY_LABEL, COLLECTION_LABEL, EMPTY, INTEREST_LABEL, datesWords, describe, fromQuery, partyWords, search, toQuery,
+  CATEGORY_LABEL, COLLECTION_LABEL, EMPTY, INTEREST_LABEL, datesWords, describe, isPlace, fromQuery, partyWords, search, toQuery,
   type AtlasQuery, type AtlasRecord, type Result,
 } from "@/lib/atlas/match";
 
@@ -54,7 +54,7 @@ export default function AtlasResults({ places }: { places: string[] }) {
       <section className="bg-mist border-b ledger-border" aria-labelledby="atlas-h">
         <div className="max-w-[1400px] mx-auto px-5 md:px-10 py-8 md:py-12">
           <p className="ledger-eyebrow">The Atlas</p>
-          <h1 id="atlas-h" className="ledger-display text-[2rem] md:text-[2.6rem] leading-tight mt-2">{ready ? describe(q) : "The Atlas"}</h1>
+          <h1 id="atlas-h" className="ledger-display text-[2rem] md:text-[2.6rem] leading-tight mt-2">{ready ? describe(q, isPlace(q.where, places)) : "The Atlas"}</h1>
           <div className="mt-5">{ready && <AtlasSearch places={places} initial={q} onSubmit={apply} idPrefix="atlas-results" />}</div>
           {chips.length > 0 && (
             <ul className="mt-4 flex flex-wrap gap-2" aria-label="Your search">

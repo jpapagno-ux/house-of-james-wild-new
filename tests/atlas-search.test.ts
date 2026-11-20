@@ -268,3 +268,17 @@ test("release gate: season never says a place is open, savings order is qualifie
   assert.equal(search([rec({ offers: [offer()] })], q("sort=savings"), ON).savingsEmpty, false);
   assert.equal(/available now|rooms available|cabins available/i.test(availability(rec(), q("")).line), false);
 });
+
+import { describe as heading, isPlace } from "../lib/atlas/match.ts";
+test("heading: a place reads 'in', a name reads 'Results for'", () => {
+  const places = ["Africa", "Botswana", "South Africa", "Galápagos"];
+  assert.equal(isPlace("Botswana", places), true);
+  assert.equal(isPlace("south africa", places), true);
+  assert.equal(isPlace("Galapagos", places), true);
+  assert.equal(isPlace("Dulini", places), false);
+  assert.equal(isPlace("", places), false);
+  assert.equal(heading(q("where=Botswana"), true), "Everything in Botswana");
+  assert.equal(heading(q("where=Dulini"), false), "Results for Dulini");
+  assert.equal(heading(q("where=Dulini&cat=safari-camps-and-lodges"), false), "Safari Camps and Lodges matching Dulini");
+  assert.equal(heading(q(""), false), "Everything anywhere");
+});

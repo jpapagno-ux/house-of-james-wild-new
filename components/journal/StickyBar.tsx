@@ -17,12 +17,15 @@ type Props = {
   action?: ReactNode;
   mode?: "fixed" | "inline";
   label?: string;
+  /** An id for the bar. On a record page pass "record-bar": the phone action bar steps aside for it, as it does for
+   *  the house's other record bars, and the house buttons inside take their compact size. */
+  id?: string;
   className?: string;
 };
 
-export default function StickyBar({ title, note, links, action, mode = "fixed", label = "Reserve", className = "" }: Props) {
+export default function StickyBar({ title, note, links, action, mode = "fixed", label = "Reserve", id, className = "" }: Props) {
   return (
-    <aside aria-label={label} data-journal-sticky className={`on-dark bg-ink-deep text-white ${mode === "fixed" ? "fixed inset-x-0 bottom-0 z-40 pb-[env(safe-area-inset-bottom)]" : ""} ${className}`}>
+    <aside id={id} aria-label={label} data-journal-sticky className={`on-dark bg-ink-deep text-white ${mode === "fixed" ? "fixed inset-x-0 bottom-0 z-40 pb-[env(safe-area-inset-bottom)]" : ""} ${className}`}>
       <div className="max-w-ledger mx-auto px-5 md:px-10 py-3 flex items-center justify-between gap-4">
         <div className="min-w-0">
           <p className="font-display text-[20px] leading-tight truncate">{title}</p>

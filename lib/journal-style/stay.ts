@@ -7,7 +7,9 @@ import { offersFor } from "@/lib/content/offers/offers";
 import { CAYUGA_RATES, CAYUGA_ROOMS_MAY_2027, RATES_CHECKED } from "@/lib/content/rates/cayuga-rates";
 import { momentsFor, rowsFrom } from "@/lib/content/stay-moments";
 import { PHOTO_CREDIT } from "@/lib/content/stay-media";
-import { hostFor } from "@/lib/content/hosts";
+import { hostFor, VIDEOS } from "@/lib/content/hosts";
+import { STAY_FILMS } from "@/lib/content/stay-films";
+import { roomsFor } from "@/lib/content/stay-rooms";
 import { routesThrough } from "@/lib/content/trips";
 import { suitedTo } from "@/lib/ledger/travel-types";
 import { BEST_FOR } from "@/lib/content/stays";
@@ -98,6 +100,10 @@ export function journalStay(slug: string) {
   const answer = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} Vetted for the Ledger by the house.`;
   return {
     s, path, filed, slides, frames, rates, offers, features, experiences, suited, answer, kind,
+    // the stay's own films: a hero film (muted, looping) and a longer stay film for the Film section; either may be absent
+    heroFilm: STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : null, video: VIDEOS[`stay:${s.slug}`] ?? null,
+    // rooms filed with the house's own room record (shown with its own component, unchanged) where no rate card above applies
+    roomData: rates ? null : roomsFor(s.slug),
     host, hostReady: host.state === "available" && !!host.host,
     credit: PHOTO_CREDIT[s.slug] ?? null,
     routes: routesThrough(s.slug).map((t) => ({ href: t.seo.path, title: t.h1 })),

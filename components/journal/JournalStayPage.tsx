@@ -6,6 +6,8 @@ import JsonLd from "@/components/ledger/JsonLd";
 import SaveToFolio from "@/components/booking-live/SaveToFolio";
 import LiveHostPanel from "@/components/record/LiveHostPanel";
 import CallingCard from "@/components/record/CallingCard";
+import WhyFilm from "@/components/record/WhyFilm";
+import RoomTypes from "@/components/stay/RoomTypes";
 import { KIND as HOST_KIND } from "@/components/record/HostPanel";
 import Signature from "@/components/record/Signature";
 import IggiPanel from "@/components/iggi/IggiPanel";
@@ -49,7 +51,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
     ...offers.map((o) => ({ key: o.id, eyebrow: o.program, headline: o.headline, dates: o.travel.text, terms: o.conditions ?? null, ref: `${o.id} · checked ${day(o.checked, true)}`, stamp: "Live" })),
     ...(rates?.promo ? [{ key: "rate-card", eyebrow: "On the rate card", headline: rates.promo, dates: rates.window ? `Read for ${span(rates.window.from, rates.window.to)}.` : null, terms: "Shown on every room ticket as a struck rate, as filed on the rate card.", ref: `Rate card · read ${day(rates.checked, true)}`, stamp: "Rate" }] : []),
   ];
-  const offerTag = offers[0] ? `Offer · ${offers[0].headline} · to ${day(offers[0].travel.to, true)}` : null;
+  const heroOffer = offers[0] ? { headline: offers[0].headline, until: day(offers[0].travel.to, true), untilShort: day(offers[0].travel.to, true).replace(/ \d{4}$/, "") } : null;
   const basis = rates ? `per room, per night · before ${pct(rates.tax)} tax` : "";
   const fromLine = rates?.from ? <>{rates.promo && rates.from.now < rates.from.list && <><s>{money(rates.from.list)}</s>{" "}</>}From {money(rates.from.now)} per room, per night{rates.promo ? ` · ${rates.promo}` : ""}</> : s.ledgerId ?? undefined;
 
@@ -89,7 +91,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   // Sections are numbered in the order they print, so a dropped section never leaves a gap.
   let n = 0;
   const N = { rooms: rates ? no(++n) : "", exp: no(++n), detail: features.length || reasons.length ? no(++n) : "", offers: offerRows.length ? no(++n) : "", reserve: no(++n), map: hasMap ? no(++n) : "", questions: s.faqs.length ? no(++n) : "" };
-  const jump: [string, string][] = [...(reasons.length ? [["Why we vetted it", "why"] as [string, string]] : []), ...(rates ? [["Rooms", "rooms"] as [string, string]] : []), ["Experiences", "experiences"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ["Reserve", "reserve"], ...(v.hostReady ? [["Meet the host", "host"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
+  const jump: [string, string][] = [...(reasons.length ? [["Why we vetted it", "why"] as [string, string]] : []), ...(v.video ? [["Film", "film"] as [string, string]] : []), ...(rates || v.roomData ? [["Rooms", "rooms"] as [string, string]] : []), ["Experiences", "experiences"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ["Reserve", "reserve"], ...(v.hostReady ? [["Meet the host", "host"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
   const sign = CHOSEN["signoff-4"];
 
   return (
@@ -99,13 +101,19 @@ export default function JournalStayPage({ slug }: { slug: string }) {
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip bg-white">
         <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
-          offerTag={offerTag} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" />
+          film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" />
         <JournalJumpRow items={jump} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <div className="pt-12 md:pt-16 pb-20 md:pb-28 space-y-20 md:space-y-28">
-            <JournalOverview quote={s.quote} answer={v.answer} paragraphs={s.rooms.paras} photo={v.filed[1] ?? v.filed[0] ?? null} caption={s.name} ledgerId={s.ledgerId} reasons={v.whyShort}
-              strip={[{ label: "Ledger ID", value: s.ledgerId ?? "Being filed", id: true }, ...(s.bestMonths ? [{ label: "Best months", value: s.bestMonths }] : []), ...(s.country ? [{ label: "Country", value: s.country }] : []), ...(s.airportDirections ? [{ label: "Getting there", value: s.airportDirections }] : [])]} />
+            <JournalOverview quote={s.quote} lead={s.tagline} answer={v.answer} paragraphs={s.rooms.paras} photo={v.filed[1] ?? v.filed[0] ?? null} caption={s.name} ledgerId={s.ledgerId} reasons={v.whyShort}
+              strip={[{ label: "Ledger ID", value: s.ledgerId ?? "Being filed", id: true }, ...(s.bestMonths ? [{ label: "Best months", value: s.bestMonths }] : []), ...(s.country ? [{ label: "Country", value: s.country }] : []), ...(s.airportDirections && s.airportDirections.length <= 90 ? [{ label: "Getting there", value: s.airportDirections }] : s.airport ? [{ label: "Airport", value: s.airport }] : [])]} />
+
+            {/* the stay's longer film, with sound: the house's own player, unchanged, straight after the overview */}
+            {v.video && <div className="[&>section]:!mt-0"><WhyFilm title={`${s.name}, on film`} blocks={[]} suited={[]} name={s.name} video={v.video} poster={v.slides[1]?.url ?? v.frames[0]?.url} planHref={planHref} hideEmptyFilm /></div>}
+
+            {/* a stay whose rooms and rates are filed in the house's room record keeps the house's own rooms block, unchanged */}
+            {v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /></div>}
 
             {rates && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates.promo} reserveHref="#reserve"
               rooms={rates.rooms.map((r) => ({ name: r.name, sleeps: r.sleeps, list: money(r.list), now: r.now < r.list ? money(r.now) : null, photo: r.photo }))}

@@ -21,12 +21,13 @@ type Props = {
   className?: string;
 };
 
+const COLS: Record<number, string> = { 1: "lg:grid-cols-1", 2: "lg:grid-cols-2", 3: "lg:grid-cols-3", 4: "lg:grid-cols-4" };
 const LABEL = "font-mono text-[10px] tracking-[0.22em] uppercase text-stone-text";
 
 export default function LedgerList({ items, layout = "rows", heading, numbered = false, className = "" }: Props) {
   if (layout === "strip") {
     return (
-      <dl className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-white border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] ${className}`}>
+      <dl className={`grid grid-cols-1 sm:grid-cols-2 ${COLS[Math.min(items.length, 4)] ?? "lg:grid-cols-4"} bg-white border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] ${className}`}>
         {items.map((it, i) => (
           <div key={it.label} className={`px-6 py-5 border-[color:var(--jw-hairline)] ${i ? "border-t sm:border-t-0 lg:border-l" : ""} ${i % 2 ? "sm:border-l" : ""} ${i > 1 ? "sm:max-lg:border-t" : ""}`}>
             <dt className={LABEL}>{it.label}</dt>

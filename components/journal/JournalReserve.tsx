@@ -46,7 +46,7 @@ export default function JournalReserve({ no, steps, slip, reserve, save, folio }
                 <p className="font-display text-[34px] leading-none text-graphite">{slip.total}</p>
               </div>
             </>
-          ) : <p className="mt-5 text-[14.5px] leading-relaxed text-stone-text">No rate is on file for this stay yet. Ask the house and it writes back with dates, the rate and what it includes.</p>}
+          ) : <p className="mt-5 text-[14.5px] leading-relaxed text-stone-text">Tell the house your dates and who is travelling. It writes back with the rate, the taxes and what is included.</p>}
           <div className="mt-6 flex flex-col gap-3 [&_.ledger-btn]:w-full [&_.ledger-btn]:justify-center">
             <a href={reserve.href} className="ledger-btn ledger-btn--house">{reserve.label}</a>
             {save}

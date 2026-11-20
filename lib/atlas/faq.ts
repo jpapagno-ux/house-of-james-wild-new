@@ -1,0 +1,14 @@
+// The Atlas, in plain answers (James, 20 Nov 2026). Printed on /atlas and carried as FAQPage structured data, so a
+// traveller, a search engine and an answer engine read the same words. Every answer states only what the Atlas does;
+// none claims a visit, a vetting or a saving. No em or en dashes (house rule).
+export const ATLAS_INTRO = "The Atlas searches the whole James Wild & Co Ledger at once: hotels, resorts, villas and private residences, safari camps and private safaris, ocean, expedition and river voyages, and land journeys. Search by place, category, dates, travellers and interest, then ask the house about anything you find.";
+
+export const ATLAS_FAQ: { q: string; a: string }[] = [
+  { q: "What is the Atlas?", a: "The Atlas is the search of the James Wild & Co Ledger. It looks across every stay, safari camp, ship, voyage and route the house has filed, by place, category, dates, travellers and interest, and returns them in one list." },
+  { q: "What can I search for?", a: "A country, a region or a sea, or the name of a stay, camp or ship. You can narrow by eleven categories, from Hotels and Villas to Safari Camps and Lodges, Expedition Voyages, River Voyages and Land Journeys, and by interests such as wildlife, wellness, islands, culture and family." },
+  { q: "Does a result mean there is a room or cabin available?", a: "No. Every result prints three separate lines: season, offer and availability. Season tells you whether your dates fall in the best months for that place; it does not say the place is open. For stays, availability is confirmed by the house and nothing is held until you ask. Ships show departures as their operators publish them." },
+  { q: "How do offers work in the Atlas?", a: "Each offer is printed in the partner's own filed words, with the date its terms were last checked. The Atlas says an offer applies only when your exact dates and length of stay can be checked against its terms. Otherwise it says the offer may apply, gives the reason, and an advisor confirms it. An offer that runs outside your dates is not shown." },
+  { q: "What does Savings first do?", a: "Savings first brings entries with a current offer to the top, beginning with offers that apply to your dates. It does not rank by the size of a saving, and the Atlas never calculates a saving." },
+  { q: "Why do some results say the house confirms a detail?", a: "The Atlas prints only what is recorded in the Ledger. Where rooms for your party, a policy for children or opening dates are not recorded for a place, the card says the house confirms it. That never removes a place from your results, and it is never a promise that the place is open or has room." },
+  { q: "How do I book what I find?", a: "Open any entry and ask the house. A small number of stays carry live rates on their own page. Every enquiry comes to James Wild & Co, and an advisor confirms dates, rooms and terms before anything is reserved." },
+];

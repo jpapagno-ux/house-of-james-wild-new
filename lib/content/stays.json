@@ -15070,92 +15070,81 @@
   },
   {
    "slug": "dulini-daunara-lodge",
-   "name": "Dulini Daunara Lodge",
+   "name": "Dulini Daunara",
    "ledgerId": "STY-2026-563352",
-   "country": "South Africa",
-   "countrySlug": "south-africa",
+   "country": "Botswana",
+   "countrySlug": "botswana",
    "regionSlug": "africa",
    "misfiled": null,
-   "category": "lodge",
-   "tagline": "A private safari home designed for unforgettable shared adventures.",
-   "quote": "Some journeys are best experienced together.",
+   "category": "camp",
+   "tagline": "Tented suites on a private lagoon in the Okavango Delta",
+   "quote": null,
    "hero": "/img/b44/c5e1d835d_f4ba7791b_6a2ad77b73d7c53e1825a0b3_b18f51d2091c312f0ce980dc0799e0860d349308.avif",
    "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "The dry season offers the most rewarding wildlife viewing conditions. Sparse vegetation, concentrated wildlife around water sources, cooler temperatures, and active predator movements create ideal safari opportunities.",
+   "bestMonths": null,
+   "bestMonthsNote": null,
    "bestFor": [
     "family",
     "group_exclusive_use",
-    "honeymoon",
-    "adventure",
-    "wildlife_photography"
+    "adventure"
    ],
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "Skukuza Airport (SZK) & Kruger Mpumalanga International Airport (MQP)",
-   "airportDirections": "Recommended Arrival Airport: Skukuza Airport (SZK)\nApproximately 40–50 minutes by road transfer.\nKruger Mpumalanga International Airport (MQP) approximately 2.5–3 hours away by vehicle.\nCharter flight options are available for private safari travelers.",
+   "airport": null,
+   "airportDirections": null,
    "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "Exclusive Safari Villa",
-     "Private Family Suites",
-     "Multi-Generational Safari Residence"
-    ]
+    "paras": [
+     "Three luxury tented suites, each for two guests, and one family tented suite for four, with two bedrooms and two bathrooms. Every suite is air conditioned. The camp takes up to 12 guests. Suites can be booked one by one, or the whole camp can be taken for exclusive use."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Private Big Five Safaris",
-     "Family Safari Adventures",
-     "Bush Walks",
-     "Wildlife Photography",
-     "Private Dining Experiences",
-     "Tailor-Made Wilderness Activities"
+     "Game drives",
+     "Mokoro excursions",
+     "Walking safaris",
+     "Helicopter flights",
+     "Fishing from the floating deck or a secluded channel"
     ]
    },
    "features": {
     "paras": [],
     "items": [
-     "Exclusive-use safari villa",
-     "Private safari vehicle",
-     "Dedicated ranger and tracker team",
-     "Family-focused safari experiences",
-     "Luxury indoor-outdoor living",
-     "Private pool",
-     "Personalized itineraries",
-     "Multi-generational travel design",
-     "Private dining experiences",
-     "Complete flexibility throughout the stay"
+     "A private lagoon in the Okavango Delta, a UNESCO World Heritage Site",
+     "Three luxury tented suites and one family tented suite",
+     "Air conditioned suites",
+     "Up to 12 guests",
+     "Exclusive use of the whole camp available",
+     "Floating deck on the lagoon"
     ]
    },
    "onlyHere": [
-    "Daunara reimagines the safari experience as a private wilderness retreat where families and friends can share extraordinary moments together. Every game drive, meal, and experience is tailored exclusively to your group, creating memories that extend far beyond the safari itself."
+    "Dulini Daunara sits along a private lagoon in the Okavango Delta. Stay in one of its tented suites, or take the whole camp for your own party of up to 12."
    ],
    "why": [],
    "facts": {
-    "best_months": "May to October, the dry season, for the most rewarding wildlife viewing.",
-    "how_to_get_there": "Fly into Skukuza Airport (SZK), about 40 to 50 minutes by road; Kruger Mpumalanga International (MQP) is about 2.5 to 3 hours away, and charters are available.",
-    "who_its_for": "Families, multi-generational groups and friends who want a private safari on their own schedule.",
-    "signature_experiences": "Private Big Five safaris, family safari adventures and private dining."
+    "who_its_for": "Couples and families in the tented suites, and parties of up to 12 who want the whole camp to themselves.",
+    "signature_experiences": "Game drives, mokoro excursions, walking safaris, helicopter flights and fishing on the lagoon."
    },
    "faqs": [
     {
-     "q": "What is Dulini Daunara?",
-     "a": "An exclusive-use safari villa in Greater Kruger, Mpumalanga. It has its own safari vehicle, ranger and tracker team, private pool and private dining."
+     "q": "Where is Dulini Daunara?",
+     "a": "In the Okavango Delta, Botswana, a UNESCO World Heritage Site. The camp sits along a private lagoon."
     },
     {
-     "q": "How do you get to Dulini Daunara?",
-     "a": "Fly into Skukuza Airport (SZK), about 40 to 50 minutes by road. Kruger Mpumalanga International is about 2.5 to 3 hours away, and charter flights are available."
+     "q": "How many guests does Dulini Daunara take?",
+     "a": "Up to 12. There are three luxury tented suites for two guests each and one family tented suite for four, with two bedrooms and two bathrooms."
     },
     {
-     "q": "When is the best time to visit Dulini Daunara?",
-     "a": "May to October. The dry season brings sparse vegetation, wildlife near water and active predators."
+     "q": "Can the whole camp be booked privately?",
+     "a": "Yes. Suites can be booked individually, or the whole camp can be reserved for exclusive use."
     },
     {
-     "q": "Is Dulini Daunara good for families?",
-     "a": "Yes. It is designed for families and multi-generational travel, with private family suites and family safari adventures."
+     "q": "What is there to do at Dulini Daunara?",
+     "a": "Game drives, mokoro excursions, walking safaris, helicopter flights, and fishing from the camp's floating deck or a secluded channel."
     }
    ],
    "reviewed": true,
@@ -15165,7 +15154,7 @@
    "pathway": {
     "primary": "PATH-04",
     "secondary": [],
-    "setting": "greater_kruger",
+    "setting": "okavango_delta",
     "intentions": [],
     "suitability": [],
     "status": "approved",
@@ -15176,10 +15165,7 @@
     "stays",
     "safaris"
    ],
-   "arrivalHubIds": [
-    "6ae6975201f48e4a41de6174",
-    "6ae6975142da92bdd9e00a2e"
-   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

@@ -7,6 +7,7 @@ register is the cross-site reminder.
 
 | Property | Verified fact | Source | Confirmed |
 |---|---|---|---|
+| Dulini Daunara (Botswana, Okavango Delta) | In the **Okavango Delta, Botswana**, on a private lagoon. **Not South Africa, not a Greater Kruger villa.** Three luxury tented suites (2 guests each) and one family tented suite (4 guests); up to 12 guests; suites bookable individually **or** the whole camp for exclusive use. Atlas category: Safari Camps and Lodges, never a Private Residence. Ledger ID STY-2026-563352, address `dulini-daunara-lodge` unchanged. | dulini.com/daunara | James, 20 Nov 2026 |
 | James Wild (founder) | **First journey designed 1982**: designing journeys since 1982, the same year as exploring since 1982 (Eleuthera). Not 1983. Sailing since 1989, Tahiti since 1995, safaris since 2011, IATAN since 1990 unchanged. | James | James, 2 Nov 2026 |
 | Wilderness Desert Rhino Camp (Namibia, Palmwag) | **6 suites**, not 8 tents. | wildernessdestinations.com | James, 1 Nov 2026 |
 | Wilderness Kulala Desert Lodge (Namibia, Sossusvlei) | **21 rooms** (not 23); a **swimming pool, not an infinity pool**. | wildernessdestinations.com | James, 1 Nov 2026 |

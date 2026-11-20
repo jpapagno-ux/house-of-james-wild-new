@@ -8,6 +8,8 @@ import JsonLd from "@/components/ledger/JsonLd";
 import FilmHero from "@/components/home/FilmHero";
 import CompassBand from "@/components/home/CompassBand";
 import AskHouse from "@/components/home/AskHouse";
+import AtlasBand from "@/components/atlas/AtlasBand";
+import { ATLAS_ON } from "@/lib/atlas/flag";
 import ActRail from "@/components/home/ActRail";
 import ComingTicker from "@/components/coming/ComingTicker";
 import { mainBoard } from "@/lib/content/board";
@@ -107,7 +109,8 @@ export default function Home() {
         {/* Act I · The house: the film, the question box, the Ledger counted, the stance */}
         <div id="act-1" className="scroll-mt-28">
           <FilmHero {...HOME.hero} />
-          <AskHouse />
+          {/* Atlas Search pilot (lib/atlas/flag.ts): off by default, so this is <AskHouse /> exactly as before. */}
+          {ATLAS_ON ? <AtlasBand /> : <AskHouse />}
           <CountedBand />
           <div className="max-w-[1400px] mx-auto px-5 md:px-10"><ForTravellers /></div>
         </div>

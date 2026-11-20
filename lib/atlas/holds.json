@@ -1,0 +1,8 @@
+{
+ "_note": "Records kept out of the Atlas until their Ledger entry is reconciled: the entry contradicts itself (name, country, operator or address), so printing it could mislead. Keyed by Ledger ID. Their own pages are not changed here; the correction belongs in the library (Stay Studio).",
+ "held": {
+  "STY-2026-000001": "Name says &Beyond Phinda Homestead (South Africa); the address, country and every paragraph describe &Beyond Lake Serengeti Under Canvas (Tanzania); the photograph is of Phinda.",
+  "STY-2026-000293": "Kirkman's Kamp is filed under a MalaMala and Tengile address (tengile-mala-mala-kirkmans-kamp) with a MalaMala airstrip and setting; operator to be confirmed from the brand's own site.",
+  "STY-2026-000294": "Named Tengile River Lodge 'by Mala Mala'; the photograph file and the lodge point to a different operator. Name and operator to be confirmed from the brand's own site."
+ }
+}

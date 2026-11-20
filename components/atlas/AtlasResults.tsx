@@ -141,6 +141,7 @@ function Card({ x }: { x: Result }) {
         <h2 className="ledger-display text-[1.45rem] leading-tight mt-1.5"><Link href={r.href} className="hover:underline">{r.name}</Link></h2>
         {r.tagline && <p className="text-[14px] leading-snug mt-1.5 line-clamp-2">{r.tagline}</p>}
         {r.mark && <p className="text-[12.5px] ledger-muted mt-1.5">{r.mark}</p>}
+        {r.exclusiveUse && <p className="text-[12.5px] ledger-muted mt-1.5">Exclusive use available</p>}
       </div>
       <dl className="px-5 mt-2">
         <Line label="Season">{x.season.line}</Line>

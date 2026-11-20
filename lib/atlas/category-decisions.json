@@ -163,7 +163,7 @@
   "STY-2026-522238": "hotels",
   "STY-2026-538748": "hotels",
   "STY-2026-559654": "resorts",
-  "STY-2026-563352": "private-residences",
+  "STY-2026-563352": "safari-camps-and-lodges",
   "STY-2026-587688": "hotels",
   "STY-2026-666970": "resorts",
   "STY-2026-669559": "hotels",
@@ -209,5 +209,11 @@
   "track-your-life-with-boyd-varty": "private-safaris",
   "tswalu-reserve/tarkuni": "private-residences",
   "yasawa-princess-ii": "ocean-voyages-and-yachts"
+ },
+ "exclusiveUse": {
+  "_note": "Records whose operator offers the whole property for exclusive use as well as individual rooms, confirmed from the operator's own site. Printed on the card as 'Exclusive use available'.",
+  "ids": [
+   "STY-2026-563352"
+  ]
  }
 }

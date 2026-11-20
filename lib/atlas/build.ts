@@ -31,6 +31,7 @@ import { isPast, today } from "@/lib/dates";
 // private note may be added to a row: the index is served to every browser (James, 20 Nov 2026).
 
 const decisions = (DECISIONS as { decisions: Record<string, string> }).decisions;
+const exclusive = new Set((DECISIONS as { exclusiveUse?: { ids: string[] } }).exclusiveUse?.ids ?? []);
 /** Records whose Ledger entry contradicts itself: kept out of the Atlas until reconciled (lib/atlas/holds.json). */
 const held = new Set(Object.keys((HOLDS as { held: Record<string, string> }).held));
 const KIND_WORD: Record<string, string> = { hotel: "Hotel", guesthouse: "Guesthouse", resort: "Resort", lodge: "Lodge", camp: "Camp", villa: "Villa", private_house: "Private house", riverboat: "Riverboat", dahabiya: "Dahabiya", phinisi: "Phinisi", catamaran: "Catamaran", yacht: "Yacht", schooner: "Schooner", "river-yacht": "River yacht", "motor-yacht": "Motor yacht", "expedition-ship": "Expedition ship", trimaran: "Trimaran", bangka: "Bangka" };
@@ -84,7 +85,7 @@ export function atlasIndex(): AtlasRecord[] {
       country: s.country, countries: s.country ? [s.country] : [], region: s.regionSlug, regionLabel: regionLabel(s.regionSlug), tagline: s.tagline, image: s.hero,
       mark: statusLine(s.status as HouseStatus | null, s.statusDate, s.slug), collections: ef ? ["the-exceptional-few"] : [],
       interests: stayInterests({ pathways, tags: s.bestFor ?? [], setting: s.pathway?.setting ?? null, filed: s.category }),
-      standing: ef ? 3 : STANDING[s.status ?? ""] ?? 0, bestMonths: months, seasonOf: own ? "place" : months ? "country" : null, familyFiled: (s.bestFor ?? []).some((b) => /famil/i.test(b)), departures: null, sleeps: null, price: null, booking: s.engine ? "engine" : "request",
+      standing: ef ? 3 : STANDING[s.status ?? ""] ?? 0, bestMonths: months, seasonOf: own ? "place" : months ? "country" : null, familyFiled: (s.bestFor ?? []).some((b) => /famil/i.test(b)), ...(s.ledgerId && exclusive.has(s.ledgerId) ? { exclusiveUse: true } : {}), departures: null, sleeps: null, price: null, booking: s.engine ? "engine" : "request",
       verdict: classifyStay({ filed: s.category, africa: s.regionSlug === "africa", volumes: s.volumes ?? [], primaryPathway: s.pathway?.primary ?? null, inReserve: campSlugs.has(s.slug) || s.reserveChild, isReserve: false }),
       keys: [s.ledgerId, s.slug],
     });

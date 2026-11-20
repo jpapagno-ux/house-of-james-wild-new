@@ -91,6 +91,8 @@ export type AtlasRecord = {
   bestMonths: number[] | null;
   /** Where bestMonths came from: the record's own Ledger entry, or its country. */
   seasonOf?: "place" | "country" | null;
+  /** The operator offers the whole property for exclusive use as well as individual rooms (confirmed, lib/atlas/category-decisions.json). */
+  exclusiveUse?: boolean;
   /** The Ledger files this record as suited to families (its own "best for" list). Not an occupancy figure. */
   familyFiled?: boolean;
   /** Ships and voyages: open departures as [from, to] (ISO; to = from for a dated sailing). null: none are published. */

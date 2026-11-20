@@ -29,6 +29,83 @@ FIX = {
     "arenal-springs-camp-by-nayara": {"name": "Arenal Springs Camp by Nayara"},
     "lales-camp-expeditions": {"name": "Lale’s Camp & Expeditions", "country": "Madagascar", "countrySlug": "madagascar",
                                "misfiled": "Library destination is South Africa; the property is in Masoala, Madagascar"},
+    # Dulini Daunara (James, 20 Nov 2026, Atlas Release Gate): the library record described a Greater Kruger villa and
+    # was linked to South Africa. The camp is in the Okavango Delta, Botswana. Every fact below is from the operator's
+    # own page (dulini.com/daunara); fields that page does not state (best months, airstrip) are cleared, not guessed.
+    # Ledger ID STY-2026-563352 and the address /stays/dulini-daunara-lodge are unchanged. Remove this entry once the
+    # Stay Studio record itself is corrected and relinked to the Botswana destination.
+    "dulini-daunara-lodge": {
+        "name": "Dulini Daunara",
+        "country": "Botswana",
+        "countrySlug": "botswana",
+        "category": "camp",
+        "misfiled": None,
+        "tagline": "Tented suites on a private lagoon in the Okavango Delta",
+        "quote": None,
+        "bestMonths": None,
+        "bestMonthsNote": None,
+        "bestFor": [
+                "family",
+                "group_exclusive_use",
+                "adventure"
+        ],
+        "airport": None,
+        "airportDirections": None,
+        "arrivalHubIds": [],
+        "rooms": {
+                "paras": [
+                        "Three luxury tented suites, each for two guests, and one family tented suite for four, with two bedrooms and two bathrooms. Every suite is air conditioned. The camp takes up to 12 guests. Suites can be booked one by one, or the whole camp can be taken for exclusive use."
+                ],
+                "items": []
+        },
+        "experiences": {
+                "paras": [],
+                "items": [
+                        "Game drives",
+                        "Mokoro excursions",
+                        "Walking safaris",
+                        "Helicopter flights",
+                        "Fishing from the floating deck or a secluded channel"
+                ]
+        },
+        "features": {
+                "paras": [],
+                "items": [
+                        "A private lagoon in the Okavango Delta, a UNESCO World Heritage Site",
+                        "Three luxury tented suites and one family tented suite",
+                        "Air conditioned suites",
+                        "Up to 12 guests",
+                        "Exclusive use of the whole camp available",
+                        "Floating deck on the lagoon"
+                ]
+        },
+        "onlyHere": [
+                "Dulini Daunara sits along a private lagoon in the Okavango Delta. Stay in one of its tented suites, or take the whole camp for your own party of up to 12."
+        ],
+        "why": [],
+        "facts": {
+                "who_its_for": "Couples and families in the tented suites, and parties of up to 12 who want the whole camp to themselves.",
+                "signature_experiences": "Game drives, mokoro excursions, walking safaris, helicopter flights and fishing on the lagoon."
+        },
+        "faqs": [
+                {
+                        "q": "Where is Dulini Daunara?",
+                        "a": "In the Okavango Delta, Botswana, a UNESCO World Heritage Site. The camp sits along a private lagoon."
+                },
+                {
+                        "q": "How many guests does Dulini Daunara take?",
+                        "a": "Up to 12. There are three luxury tented suites for two guests each and one family tented suite for four, with two bedrooms and two bathrooms."
+                },
+                {
+                        "q": "Can the whole camp be booked privately?",
+                        "a": "Yes. Suites can be booked individually, or the whole camp can be reserved for exclusive use."
+                },
+                {
+                        "q": "What is there to do at Dulini Daunara?",
+                        "a": "Game drives, mokoro excursions, walking safaris, helicopter flights, and fishing from the camp's floating deck or a secluded channel."
+                }
+        ]
+},
 }
 
 # Sentence corrections inside a record's "why" copy, re-applied on every export.
@@ -168,6 +245,8 @@ for s in sorted(stays, key=lambda s: s["name"]):
         "placeSlug": (D.get(s.get("destination_place_id")) or {}).get("webflow_slug"),
     })
 for x in out: x.update(FIX.get(x["slug"], {}))
+for x in out:
+    if x["slug"] == "dulini-daunara-lodge" and x.get("pathway"): x["pathway"]["setting"] = "okavango_delta"
 for x in out:
     for a, b in WHY_FIX.get(x["slug"], []):
         for w in x["why"]: w["body"] = w["body"].replace(a, b)

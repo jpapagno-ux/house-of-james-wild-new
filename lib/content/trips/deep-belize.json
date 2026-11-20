@@ -6,7 +6,7 @@
   "Belize",
   "Deep Belize"
  ],
- "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">JW-BZ-D09</span>",
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2026-124961</span>",
  "h1note": "",
  "mark1": "",
  "mark2": "",
@@ -77,8 +77,8 @@
  ],
  "meta": [
   [
-   "Journey code",
-   "JW-BZ-D09"
+   "Ledger ID",
+   "ITN-LAND-2026-124961"
   ],
   [
    "Country",
@@ -111,6 +111,10 @@
   [
    "Designed by",
    "James Wild · designing Belize journeys since 1992"
+  ],
+  [
+   "House code",
+   "JW-BZ-D09"
   ]
  ],
  "quote": "\"Belize rewards travelers who do more than one thing well.\"",
@@ -773,12 +777,12 @@
  "reltitle": "More routes nearby",
  "related": [
   [
-   "JW-GT-A07 · 7 DAYS",
+   "ITN-LAND-2026-337887 · 7 DAYS",
    "Guatemala in 7 Days",
    "Antigua, Lake Atitlán and Tikal; Bolontiku meets guests at the Belize border."
   ],
   [
-   "JW-MX-C09 · 10 DAYS",
+   "ITN-LAND-2026-476605 · 10 DAYS",
    "Yucatán and the Riviera Maya, with Chablé",
    "A hacienda near Mérida, Tulum, then Maroma Beach."
   ],
@@ -803,7 +807,7 @@
   }
  ],
  "map_title": "The Mountain Pine Ridge to the Reef",
- "map_coord": "17°02′N 88°57′W · JW-BZ-D09",
+ "map_coord": "17°02′N 88°57′W · ITN-LAND-2026-124961",
  "seo": {
   "path": "/overland/belize/deep-belize",
   "title": "Deep Belize: 10-Day Rainforest and Reef Itinerary, Blancaneaux to Thatch Caye",

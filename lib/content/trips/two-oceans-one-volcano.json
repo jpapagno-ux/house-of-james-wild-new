@@ -51,8 +51,8 @@
  "sub": "12 Days · 11 Nights · Costa Rica, coast to coast",
  "meta": [
   [
-   "Journey code",
-   "JW-CR-C01"
+   "Ledger ID",
+   "ITN-LAND-2026-300785"
   ],
   [
    "Country",
@@ -81,6 +81,10 @@
   [
    "Vetted by",
    "James Wild · Costa Rica since 1992"
+  ],
+  [
+   "House code",
+   "JW-CR-C01"
   ]
  ],
  "mark1": "I keep<br>going back",
@@ -532,7 +536,7 @@
  },
  "map_eyebrow": "The route, drawn",
  "map_title": "Caribbean to Pacific, in one arc",
- "map_coord": "9°56′N 84°05′W · JW-CR-C01",
+ "map_coord": "9°56′N 84°05′W · ITN-LAND-2026-300785",
  "navon": "Overland",
  "herofacts": [
   [

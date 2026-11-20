@@ -6,7 +6,7 @@
   "Guatemala",
   "Guatemala in 7 Days"
  ],
- "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">JW-GT-A07</span>",
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2026-337887</span>",
  "h1note": "",
  "mark1": "",
  "mark2": "",
@@ -89,8 +89,8 @@
  ],
  "meta": [
   [
-   "Journey code",
-   "JW-GT-A07"
+   "Ledger ID",
+   "ITN-LAND-2026-337887"
   ],
   [
    "Country",
@@ -123,6 +123,10 @@
   [
    "Stays",
    "Villa Bokéh in Antigua, Casa Palopó on Lake Atitlán, Bolontiku on Lake Petén Itzá"
+  ],
+  [
+   "House code",
+   "JW-GT-A07"
   ]
  ],
  "quote": "\"Give Bolontiku time for both the lake and the archaeology; it isn't a quick Tikal stop.\"",
@@ -648,12 +652,12 @@
  "reltitle": "More routes nearby",
  "related": [
   [
-   "JW-BZ-D09 · 10 DAYS",
+   "ITN-LAND-2026-124961 · 10 DAYS",
    "Deep Belize",
    "The rainforest and the reef, next door by road through Melchor de Mencos."
   ],
   [
-   "JW-MX-C09 · 10 DAYS",
+   "ITN-LAND-2026-476605 · 10 DAYS",
    "Yucatán and the Riviera Maya, with Chablé",
    "A hacienda near Mérida, Tulum, then Maroma Beach."
   ],
@@ -678,7 +682,7 @@
   }
  ],
  "map_title": "Antigua to Tikal, Drawn",
- "map_coord": "16°58′N 89°56′W · JW-GT-A07",
+ "map_coord": "16°58′N 89°56′W · ITN-LAND-2026-337887",
  "seo": {
   "path": "/overland/guatemala/guatemala-in-7-days",
   "title": "Guatemala in 7 Days: Antigua, Lake Atitlán and Tikal Itinerary",

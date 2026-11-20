@@ -22,7 +22,7 @@ import IggiAtlas, { type IggiPlace } from "@/components/iggi/IggiAtlas";
 // slug Iggi uses to scope its Ledger search.
 
 export type IggiContext = {
-  entityType: "country" | "region" | "stay" | "itinerary" | "property" | "advisor" | "destination" | "reserve" | "voyage" | "pathway";
+  entityType: "country" | "region" | "stay" | "itinerary" | "property" | "advisor" | "destination" | "reserve" | "voyage" | "pathway" | "overland";
   entitySlug: string;
   countrySlug?: string | null;
   ledgerId?: string | null;

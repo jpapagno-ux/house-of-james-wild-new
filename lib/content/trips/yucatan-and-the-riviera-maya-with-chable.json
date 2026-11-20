@@ -6,7 +6,7 @@
   "Mexico",
   "Yucatán and the Riviera Maya, with Chablé"
  ],
- "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">JW-MX-C09</span>",
+ "ledgerline": "The Route Ledger · <span class=\"mono\" style=\"letter-spacing: .08em\">ITN-LAND-2026-476605</span>",
  "h1note": "",
  "mark1": "",
  "mark2": "",
@@ -89,8 +89,8 @@
  ],
  "meta": [
   [
-   "Journey code",
-   "JW-MX-C09"
+   "Ledger ID",
+   "ITN-LAND-2026-476605"
   ],
   [
    "Country",
@@ -123,6 +123,10 @@
   [
    "Vetted by",
    "James Wild · Chablé Yucatán and Chablé Maroma inspected and approved, 2026"
+  ],
+  [
+   "House code",
+   "JW-MX-C09"
   ]
  ],
  "quote": "\"Mexico invites immersion through culture, nature, and spirited hospitality.\"",
@@ -798,12 +802,12 @@
  "reltitle": "More routes nearby",
  "related": [
   [
-   "JW-BZ-D09 · 10 DAYS",
+   "ITN-LAND-2026-124961 · 10 DAYS",
    "Deep Belize",
    "Four nights in the Mountain Pine Ridge, then five on a private island off Dangriga."
   ],
   [
-   "JW-GT-A07 · 7 DAYS",
+   "ITN-LAND-2026-337887 · 7 DAYS",
    "Guatemala in 7 Days",
    "Antigua, Lake Atitlán and Tikal at first light from Bolontiku."
   ],
@@ -828,7 +832,7 @@
   }
  ],
  "map_title": "Mérida to the Riviera Maya",
- "map_coord": "20°13′N 87°26′W · JW-MX-C09",
+ "map_coord": "20°13′N 87°26′W · ITN-LAND-2026-476605",
  "seo": {
   "path": "/overland/mexico/yucatan-and-the-riviera-maya-with-chable",
   "title": "10-Day Yucatán and Riviera Maya Itinerary with Chablé",

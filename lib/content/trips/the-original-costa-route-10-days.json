@@ -45,8 +45,8 @@
  "sub": "10 Days · 9 Nights · Costa Rica to Panama, by land",
  "meta": [
   [
-   "Journey code",
-   "JW-CRPA-F10"
+   "Ledger ID",
+   "ITN-LAND-2026-100053"
   ],
   [
    "Countries",
@@ -75,6 +75,10 @@
   [
    "Vetted by",
    "James Wild · surf travel since 1992"
+  ],
+  [
+   "House code",
+   "JW-CRPA-F10"
   ]
  ],
  "mark1": "Stamped by<br>James Wild",
@@ -372,12 +376,12 @@
  "reltitle": "From the same guide",
  "related": [
   [
-   "JW-CR-F07 · 7 DAYS",
+   "ITN-LAND-2026-326488 · 7 DAYS",
    "The Original Costa Route · 7 days",
    "Senda Monteverde and Kura, with a day at Dominical."
   ],
   [
-   "JW-CR-F10C · 10 DAYS",
+   "ITN-LAND-2026-376634 · 10 DAYS",
    "The Original Costa Route: Both Coasts",
    "A deviation: the Caribbean at Aguas Claras, the cloud forest, then the Pacific."
   ],
@@ -454,7 +458,7 @@
  },
  "map_eyebrow": "The route, drawn",
  "map_title": "Mountain, sea, border, island",
- "map_coord": "8°49′N 83°20′W · JW-CRPA-F10",
+ "map_coord": "8°49′N 83°20′W · ITN-LAND-2026-100053",
  "navon": "Overland",
  "herofacts": [
   [

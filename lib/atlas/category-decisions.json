@@ -1,0 +1,4 @@
+{
+  "_note": "Editorial category decisions for Atlas Search. Key: a Ledger ID or a record slug. Value: one of the eleven category keys in lib/atlas/match.ts. A record held for review has no Atlas category until its decision is filed here.",
+  "decisions": {}
+}

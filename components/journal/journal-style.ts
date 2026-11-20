@@ -20,3 +20,7 @@ export { default as JournalReserve } from "./JournalReserve";
 export { default as JournalMap } from "./JournalMap";
 export { default as JournalQuestions } from "./JournalQuestions";
 export { default as Postcard } from "./Postcard";
+// The photograph viewer and the "just this stay" path.
+export { default as PhotoViewer } from "./PhotoViewer";
+export { PhotoLink, PhotoStrip } from "./PhotoLink";
+export { DatesBar, PickRoom, RequestForm } from "./TripControls";

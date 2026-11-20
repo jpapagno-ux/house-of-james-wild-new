@@ -25,8 +25,8 @@ import { isBuilt } from "@/lib/routes";
 import { absoluteUrl } from "@/lib/seo";
 import { graph, imageObject, lodging } from "@/lib/schema";
 import { entryNo } from "@/lib/volumes";
-import { day, journalStay, money, pct, span } from "@/lib/journal-style/stay";
-import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, StickyBar } from "./journal-style";
+import { day, journalStay, money, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
+import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, StickyBar, PhotoViewer, PhotoLink, PhotoStrip, DatesBar, PickRoom, RequestForm } from "./journal-style";
 import type { OfferRow } from "./JournalOffers";
 
 // JWC-STYLE-01, Stages 1 to 9: the Modern Journal stay page, for the pilot's sample stays only (lib/journal-style/
@@ -53,7 +53,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   ];
   const heroOffer = offers[0] ? { headline: offers[0].headline, until: day(offers[0].travel.to, true), untilShort: day(offers[0].travel.to, true).replace(/ \d{4}$/, "") } : null;
   const basis = rates ? `per room, per night · before ${pct(rates.tax)} tax` : "";
-  const fromLine = rates?.from ? <>{rates.promo && rates.from.now < rates.from.list && <><s>{money(rates.from.list)}</s>{" "}</>}From {money(rates.from.now)} per room, per night{rates.promo ? ` · ${rates.promo}` : ""}</> : s.ledgerId ?? undefined;
+  const fromLine = rates?.from ? <>{rates.promo && rates.from.now < rates.from.list && <span className="hidden sm:inline"><s>{money(rates.from.list)}</s>{" "}</span>}From {money(rates.from.now)}<span className="hidden sm:inline"> per room, per night{rates.promo ? ` · ${rates.promo}` : ""}</span><span className="sm:hidden"> a night</span></> : s.ledgerId ?? undefined;
 
   // The reservation slip (Stage 8): a worked sample from the filed card, the first room, for the dates the card was read for.
   const r0 = rates?.rooms[0];
@@ -77,7 +77,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
     { title: "Choose dates and guests", line: "Tell the house when, and who is travelling." },
     { title: "Choose your room", line: "Every room that fits your party, with its rate." },
     { title: "Read the quote", line: "Every tax and the deposit, before you commit to anything." },
-    { title: "Request to reserve", line: `The house confirms with ${s.name} and writes back.` },
+    { title: "Request these dates", line: `The house confirms with ${s.name} and writes back with a quote.` },
     ...(v.hostReady ? [{ title: "Or meet the host first", line: `One live call with the host and an advisor${v.host.host?.seats ? `, up to ${v.host.host.seats} of you` : ""}.` }] : []),
   ];
   const features = [
@@ -93,16 +93,19 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   const N = { rooms: rates ? no(++n) : "", exp: no(++n), detail: features.length || reasons.length ? no(++n) : "", offers: offerRows.length ? no(++n) : "", reserve: no(++n), map: hasMap ? no(++n) : "", questions: s.faqs.length ? no(++n) : "" };
   const jump: [string, string][] = [...(reasons.length ? [["Why we vetted it", "why"] as [string, string]] : []), ...(v.video ? [["Film", "film"] as [string, string]] : []), ...(rates || v.roomData ? [["Rooms", "rooms"] as [string, string]] : []), ["Experiences", "experiences"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ["Reserve", "reserve"], ...(v.hostReady ? [["Meet the host", "host"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
   const sign = CHOSEN["signoff-4"];
+  const inSection = (k: SectionKey) => v.photos.filter((p) => p.section === k);
+  const roomNames = rates ? rates.rooms.map((r) => r.name) : v.roomData?.rooms.map((r) => r.name) ?? [];
+  const strip = (k: SectionKey, label: string) => { const list = inSection(k); return list.length ? <PhotoStrip tab={k} photos={list.map((p) => ({ url: p.url, alt: p.alt }))} total={list.length} label={label} /> : null; };
 
   return (
     <div className="journal-style bg-white">
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
-      <style>{`footer.site-footer{padding-bottom:5.5rem}`}</style>
+      <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}`}</style>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip bg-white">
         <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
-          film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" />
-        <JournalJumpRow items={jump} />
+          film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" photoCount={v.photos.length} />
+        <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <div className="pt-12 md:pt-16 pb-20 md:pb-28 space-y-20 md:space-y-28">
@@ -113,20 +116,21 @@ export default function JournalStayPage({ slug }: { slug: string }) {
             {v.video && <div className="[&>section]:!mt-0"><WhyFilm title={`${s.name}, on film`} blocks={[]} suited={[]} name={s.name} video={v.video} poster={v.slides[1]?.url ?? v.frames[0]?.url} planHref={planHref} hideEmptyFilm /></div>}
 
             {/* a stay whose rooms and rates are filed in the house's room record keeps the house's own rooms block, unchanged */}
-            {v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /></div>}
+            {v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /><DatesBar slug={s.slug} reserveHref="#reserve" />{inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}</div>}
 
             {rates && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates.promo} reserveHref="#reserve"
-              rooms={rates.rooms.map((r) => ({ name: r.name, sleeps: r.sleeps, list: money(r.list), now: r.now < r.list ? money(r.now) : null, photo: r.photo }))}
+              bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} photos={inSection("rooms").length > 0 ? <PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink> : undefined}
+              rooms={rates.rooms.map((r) => ({ name: r.name, sleeps: r.sleeps, list: money(r.list), now: r.now < r.list ? money(r.now) : null, photo: r.photo, action: <PickRoom slug={s.slug} room={r.name} reserveHref="#reserve" /> }))}
               footnote={`Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
-            <JournalExperiences no={N.exp} slug={s.slug} items={v.experiences} paragraphs={s.experiences.paras} />
+            <JournalExperiences no={N.exp} slug={s.slug} items={v.experiences} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
 
-            <JournalDetail no={N.detail} features={features} reasons={reasons} />
+            <JournalDetail no={N.detail} features={features} reasons={reasons}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>
 
             <JournalOffers no={N.offers} name={s.name} offers={offerRows} applyHref="#reserve" />
 
-            <JournalReserve no={N.reserve} steps={steps} slip={slip} reserve={{ label: "Request to reserve", href: planHref }} save={<SaveToFolio slug={s.slug} name={s.name} inline />}
+            <JournalReserve no={N.reserve} steps={steps} slip={slip} reserve={{ label: "Plan a trip around it", href: planHref }} form={<RequestForm slug={s.slug} name={s.name} path={path} rooms={roomNames} />} save={<SaveToFolio slug={s.slug} name={s.name} inline />}
               folio={FLAGS.save ? (
                 <div className="mt-12 flex flex-col md:flex-row md:items-center justify-between gap-5 border-t border-[color:var(--jw-keyline)] pt-8">
                   <div><p className="font-mono text-[10px] tracking-[0.24em] uppercase text-stone-text">Not booking today</p><p className="font-display font-medium text-[26px] text-graphite mt-1">Keep {s.name} in your Folio</p></div>
@@ -157,12 +161,14 @@ export default function JournalStayPage({ slug }: { slug: string }) {
         {v.hostReady && <CallingCard who={HOST_KIND[s.category === "lodge" ? "lodge" : "stay"].who} seats={v.host.host?.seats} />}
       </main>
 
+      <PhotoViewer slug={s.slug} name={s.name} photos={v.photos} sections={SECTION_ORDER.map((k) => ({ key: k, label: SECTION_LABEL[k] }))} credit={v.credit} reserveHref="#reserve" />
+
       <StickyBar id="record-bar" title={s.name} note={fromLine} label={`Reserve ${s.name}`}
         links={<><SaveToFolio slug={s.slug} name={s.name} inline /><Link href={planHref} className="ledger-btn-ghost">Speak with an advisor</Link></>}
-        action={<a href="#reserve" className="ledger-btn ledger-btn--house ledger-btn--compact">Check your dates</a>} />
+        action={<a href="#reserve" className="ledger-btn ledger-btn--house ledger-btn--compact">Check<span className="hidden sm:inline">&nbsp;your</span>&nbsp;dates</a>} />
 
       <JsonLd data={graph({
-        ...lodging({ path, name: s.name, description: v.answer, image: (v.slides.length ? v.slides : v.filed).slice(0, 5).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return v.credit ? imageObject(u, i.alt, v.credit) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }),
+        ...lodging({ path, name: s.name, description: v.answer, image: v.photos.slice(0, 24).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return v.credit ? imageObject(u, i.alt, v.credit) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }),
         ...whoPlansSchema({ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }),
         ...(offers.length ? { makesOffer: offers.map((o) => ({ "@type": "Offer", name: `${o.headline}: ${o.name}`, description: o.conditions ?? o.headline, validFrom: o.travel.from, validThrough: o.travel.to, url: absoluteUrl(`${path}#offers`), offeredBy: { "@type": "TravelAgency", name: "James Wild & Co", url: absoluteUrl("/") } })) } : {}),
         ...(v.suited.length ? { audience: v.suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...v.suited].filter(Boolean).join(", ") } : {}),

@@ -13,9 +13,12 @@ type Props = {
   /** The existing save control (renders nothing while its flag is off). */
   save?: ReactNode;
   folio?: ReactNode;
+  /** The request form (dates, travellers, room, name, email). When given it leads the column and carries the button;
+   *  the sample slip sits beneath it as a worked example. */
+  form?: ReactNode;
 };
 
-export default function JournalReserve({ no, steps, slip, reserve, save, folio }: Props) {
+export default function JournalReserve({ no, steps, slip, reserve, save, folio, form }: Props) {
   return (
     <section id="reserve" aria-label="How to reserve" className="bg-white">
       <SectionHead no={no} label="Check your dates" title="How to Reserve" lede="See every line before you ask for anything." />
@@ -28,9 +31,11 @@ export default function JournalReserve({ no, steps, slip, reserve, save, folio }
             </li>
           ))}
         </ol>
-        <div className="border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-crimson)] bg-white px-5 py-6 md:px-7">
+        <div className="space-y-6">
+        {form}
+        {(!form || slip) && <div className={`border border-[color:var(--jw-hairline)] bg-white px-5 py-6 md:px-7 ${form ? "" : "border-t-2 border-t-[color:var(--jw-crimson)]"}`}>
           <div className="flex items-baseline justify-between gap-4">
-            <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-house">Reservation slip</p>
+            <p className={`font-mono text-[10.5px] tracking-[0.24em] uppercase ${form ? "text-stone-text" : "text-house"}`}>{form ? "What a quote looks like" : "Reservation slip"}</p>
             {slip && <p className="font-mono text-[9.5px] tracking-[0.22em] uppercase text-stone-text">Sample quote</p>}
           </div>
           {slip ? (
@@ -47,11 +52,13 @@ export default function JournalReserve({ no, steps, slip, reserve, save, folio }
               </div>
             </>
           ) : <p className="mt-5 text-[14.5px] leading-relaxed text-stone-text">Tell the house your dates and who is travelling. It writes back with the rate, the taxes and what is included.</p>}
-          <div className="mt-6 flex flex-col gap-3 [&_.ledger-btn]:w-full [&_.ledger-btn]:justify-center">
+          {!form && <div className="mt-6 flex flex-col gap-3 [&_.ledger-btn]:w-full [&_.ledger-btn]:justify-center">
             <a href={reserve.href} className="ledger-btn ledger-btn--house">{reserve.label}</a>
             {save}
-          </div>
+          </div>}
           {slip && <p className="mt-4 text-[12.5px] leading-relaxed text-stone-text">{slip.note}</p>}
+        </div>}
+        {form && <p className="flex flex-wrap items-center gap-x-6 gap-y-2">{save}<a href={reserve.href} className="ledger-btn-ghost">{reserve.label}</a></p>}
         </div>
       </div>
       {folio}

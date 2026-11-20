@@ -1,0 +1,10 @@
+{
+  "_note": "JWC-STYLE-01. What each filed photograph shows, for the photograph viewer's section tabs and for alt text. 'describe' is keyed by the last part of a photograph's address; 'extra' lists photographs already in the house Cloudinary library that the stay record does not yet list. Sections: rooms, pool, exterior, dining, experiences. A photograph with no entry appears under All only.",
+  "aguas-claras": {
+    "describe": {},
+    "extra": [
+      { "id": "jwco/stays/aguas-claras/hero-yoga-casa-gandhi", "alt": "Casa Gandhi, the open-air yoga shala in the gardens at Aguas Claras, Costa Rica", "section": "experiences" },
+      { "id": "jwco/stays/aguas-claras/hero-cahuita-beach", "alt": "The beach at Cahuita National Park, near Aguas Claras, Costa Rica", "section": "experiences" }
+    ]
+  }
+}

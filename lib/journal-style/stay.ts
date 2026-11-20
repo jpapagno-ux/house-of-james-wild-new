@@ -15,6 +15,7 @@ import { suitedTo } from "@/lib/ledger/travel-types";
 import { BEST_FOR } from "@/lib/content/stays";
 import PAGES from "./pages.json";
 import ROOM_PHOTOS from "./room-photos.json";
+import PHOTO_NOTES from "./photo-notes.json";
 
 const CLOUD = "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto";
 const roomPhotos = ROOM_PHOTOS as unknown as Record<string, Record<string, { id: string; alt: string }> | string>;
@@ -23,6 +24,11 @@ const roomPhotos = ROOM_PHOTOS as unknown as Record<string, Record<string, { id:
 export const JOURNAL_STAYS: string[] = PAGES.stays;
 
 export type Photo = { url: string; alt: string; described: boolean };
+export type SectionKey = "rooms" | "pool" | "exterior" | "dining" | "experiences";
+export const SECTION_LABEL: Record<SectionKey, string> = { rooms: "Rooms", pool: "Pool and beach", exterior: "Exterior and gardens", dining: "Dining", experiences: "Experiences" };
+export const SECTION_ORDER: SectionKey[] = ["rooms", "pool", "exterior", "dining", "experiences"];
+/** A photograph in the viewer: its section (null = All only) and, for a room photograph, the room it shows. */
+export type ViewerPhoto = { url: string; alt: string; section: SectionKey | null; room?: string };
 export type RoomRate = { name: string; sleeps: number; list: number; now: number; photo: Photo | null };
 export type RateCard = {
   rooms: RoomRate[];
@@ -54,6 +60,23 @@ export function money(n: number): string {
   return `US$${n.toLocaleString("en-US", { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 })}`;
 }
 export const pct = (rate: number) => `${Math.round(rate * 1000) / 10}%`;
+
+
+type Note = { alt: string; section?: SectionKey };
+type Notes = { describe: Record<string, Note>; extra: { id: string; alt: string; section?: SectionKey }[] };
+const notesFor = (slug: string): Notes | null => { const n = (PHOTO_NOTES as unknown as Record<string, Notes | string>)[slug]; return n && typeof n === "object" ? n : null; };
+const lastPart = (u: string) => (u.split("?")[0].split("/").pop() ?? "").replace(/\.[a-z0-9]{3,4}$/i, "");
+/** The section a described photograph belongs to, read from its description: what is happening in it first (a meal,
+ *  an activity), then water, then a room's interior, then the grounds. */
+export function sectionOf(alt: string): SectionKey | null {
+  const a = alt.toLowerCase();
+  if (/\b(restaurant|dining|bar|breakfast|dinner|lunch|chef|kitchen|cocktail)\b/.test(a)) return "dining";
+  if (/\b(yoga|snorkel|snorkeling|kayak|kayaks|sailing|hobie|surf|hike|spa|massage|national park|water slide|tennis|bicycle|bicycles|tour)\b/.test(a)) return "experiences";
+  if (/\b(pool|beach|sundeck|sand|lagoon|reef|shore|cove)\b/.test(a)) return "pool";
+  if (/\b(bedroom|suite|studio|penthouse|bungalow|king bed|balcony|bathroom|living room)\b/.test(a)) return "rooms";
+  if (/\b(garden|gardens|exterior|house|villa|from the air|aerial|palms|lobby|grounds|entrance|terrace|pavilion|rainforest|jungle)\b/.test(a)) return "exterior";
+  return null;
+}
 
 const firstSentence = (t: string) => (t.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? t).trim();
 const KIND: Record<string, string> = { hotel: "hotel", lodge: "lodge", villa: "private villa", camp: "camp", resort: "resort", residence: "residence" };
@@ -95,6 +118,22 @@ export function journalStay(slug: string) {
   // six frames for the hero: the stay's own hero set first, then its filed photographs, no frame twice
   const frames = [...slides, ...filed].filter((x, k, l) => l.findIndex((y) => y.url === x.url) === k).slice(0, 6);
   const rates = rateCard(s.slug, filed);
+  const roomData = rates ? null : roomsFor(s.slug);
+  // Every photograph for the viewer: the hero set and the filed set, each with what it shows where someone has
+  // described it; then room photographs (from the rate card's rooms or the house room record) and any others the
+  // library holds for this stay. No photograph twice.
+  const notes = notesFor(s.slug);
+  const base: ViewerPhoto[] = [...slides, ...filed].filter((x, k, l) => l.findIndex((y) => y.url === x.url) === k).map((x) => {
+    const n = notes?.describe[lastPart(x.url)];
+    if (n) return { url: x.url, alt: n.alt, section: n.section ?? sectionOf(n.alt) };
+    return { url: x.url, alt: x.alt, section: x.described ? sectionOf(x.alt) : null };
+  });
+  const roomShots: ViewerPhoto[] = [
+    ...(rates?.rooms ?? []).filter((r) => r.photo).map((r) => ({ url: (r.photo as Photo).url, alt: (r.photo as Photo).alt, section: "rooms" as const, room: r.name })),
+    ...(roomData?.rooms ?? []).filter((r) => r.image).map((r) => ({ url: `${CLOUD}/${r.image!.id}`, alt: `${r.image!.alt} at ${s.name}`, section: "rooms" as const, room: r.name })),
+  ];
+  const extras: ViewerPhoto[] = (notes?.extra ?? []).map((x) => ({ url: `${CLOUD}/${x.id}`, alt: x.alt, section: x.section ?? sectionOf(x.alt) }));
+  const photos = [...base, ...roomShots, ...extras].filter((x, k, l) => l.findIndex((y) => lastPart(y.url) === lastPart(x.url)) === k);
   const offers = offersFor(s.slug);
   const features = momentsFor(s.slug, rowsFrom(s.features.items, s.features.paras), filed.slice(1));
   const experiences = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), filed.slice(1), 3, features);
@@ -109,7 +148,7 @@ export function journalStay(slug: string) {
     // the stay's own films: a hero film (muted, looping) and a longer stay film for the Film section; either may be absent
     heroFilm: STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : null, video: VIDEOS[`stay:${s.slug}`] ?? null,
     // rooms filed with the house's own room record (shown with its own component, unchanged) where no rate card above applies
-    roomData: rates ? null : roomsFor(s.slug),
+    roomData, photos,
     host, hostReady: host.state === "available" && !!host.host,
     credit: PHOTO_CREDIT[s.slug] ?? null,
     routes: routesThrough(s.slug).map((t) => ({ href: t.seo.path, title: t.h1 })),

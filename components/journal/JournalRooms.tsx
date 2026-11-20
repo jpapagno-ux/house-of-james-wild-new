@@ -4,7 +4,7 @@ import Ticket from "./Ticket";
 
 // JWC-STYLE-01, Stage 4. Rooms as taped tickets, then the rate ledger. Every figure is passed in already formatted
 // from the site's rate data (lib/journal-style/stay.ts); a room with no rate prints no price.
-export type RoomRow = { name: string; sleeps: number; list: string; now: string | null; photo?: { url: string; alt: string } | null };
+export type RoomRow = { name: string; sleeps: number; list: string; now: string | null; photo?: { url: string; alt: string } | null; /** the ticket's action (the room pick); a plain link to the reserve section when absent */ action?: ReactNode };
 type Props = {
   no: string;
   lede?: string | null;
@@ -17,12 +17,17 @@ type Props = {
   footnote: string;
   reserveHref: string;
   aside?: ReactNode;
+  /** The dates bar, above the tickets. */
+  bar?: ReactNode;
+  /** A link into the photograph viewer, under the tickets. */
+  photos?: ReactNode;
 };
 
-export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, reserveHref, aside }: Props) {
+export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, reserveHref, aside, bar, photos }: Props) {
   return (
     <section id="rooms" aria-label="Rooms and rates" className="bg-white">
       <SectionHead no={no} label="Rooms and rates" title="Where You'll Sleep, and What It Costs" lede={lede} />
+      {bar}
       <div className="mt-10 grid gap-x-6 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
         {rooms.map((r) => (
           <Ticket key={r.name} eyebrow={r.photo ? undefined : "Photograph to file"} title={r.name} lines={[`Sleeps ${r.sleeps}`]}
@@ -35,10 +40,11 @@ export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, 
               </p>
               <p className="mt-1.5 text-[12px] text-stone-text">{basis}</p>
             </>}
-            action={<a href={reserveHref} className="house-chip house-chip--primary !px-4 !py-2.5 font-semibold !text-[10.5px] tracking-[0.2em] uppercase">Check dates</a>} />
+            action={r.action ?? <a href={reserveHref} className="house-chip house-chip--primary !px-4 !py-2.5 font-semibold !text-[10.5px] tracking-[0.2em] uppercase">Check dates</a>} />
         ))}
         {aside && <div className="self-center">{aside}</div>}
       </div>
+      {photos && <p className="mt-6">{photos}</p>}
 
       <div className="mt-14">
         <p className="font-mono text-[10px] tracking-[0.24em] uppercase text-stone-text">The rate ledger · {basis.split(" · ")[0]}</p>

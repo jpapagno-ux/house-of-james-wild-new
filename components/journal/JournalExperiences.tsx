@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import SectionHead from "./SectionHead";
 
 // JWC-STYLE-01, Stage 6. Experiences as a sideways scroll of cards, each with a favourite mark. Favourites are kept
@@ -10,7 +10,7 @@ import SectionHead from "./SectionHead";
 // the record's own paragraphs and a plain "coming soon" line.
 export type Experience = { title: string; note?: string; image?: string; alt?: string };
 
-export default function JournalExperiences({ no, slug, items, paragraphs }: { no: string; slug: string; items: Experience[]; paragraphs: string[] }) {
+export default function JournalExperiences({ no, slug, items, paragraphs, children }: { no: string; slug: string; items: Experience[]; paragraphs: string[]; /** photographs of the experiences, into the viewer */ children?: ReactNode }) {
   const key = `jw:favourites:${slug}`;
   const [fav, setFav] = useState<string[]>([]);
   useEffect(() => { try { const v = JSON.parse(window.localStorage.getItem(key) ?? "[]"); if (Array.isArray(v)) setFav(v.filter((x) => typeof x === "string")); } catch { /* no store: start empty */ } }, [key]);
@@ -46,6 +46,7 @@ export default function JournalExperiences({ no, slug, items, paragraphs }: { no
           <p className="border border-dashed border-[color:var(--jw-keyline)] px-5 py-5 font-mono text-[10.5px] leading-relaxed tracking-[0.18em] uppercase text-stone-text">Experience cards coming soon. Until then, tell the house what you want to do and it plans around that.</p>
         </div>
       )}
+      {children}
     </section>
   );
 }

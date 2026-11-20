@@ -1,7 +1,21 @@
 {
   "_note": "JWC-STYLE-01. Room photographs for the pilot's sample stays: a rate-card room name to a photograph already in the house Cloudinary library (jhlnq5h5), with the description filed on that asset. Add a room here only when its own photograph is in the library; a room with no entry prints 'Photograph to file'.",
   "aguas-claras": {
-    "Pavlova Suite": { "id": "jwco/stays/aguas-claras/hero-pavlova-suite", "alt": "Pavlova Suite at Aguas Claras, Costa Rica" },
-    "Two Bedroom Deluxe Bungalow": { "id": "jwco/stays/aguas-claras/hero-deluxe-bungalow", "alt": "Two-Bedroom Deluxe Bungalow with private plunge pool at Aguas Claras, Costa Rica" }
+    "Pavlova Suite": {
+      "id": "jwco/stays/aguas-claras/hero-pavlova-suite",
+      "alt": "Pavlova Suite at Aguas Claras, Costa Rica"
+    },
+    "Two Bedroom Deluxe Bungalow": {
+      "id": "jwco/stays/aguas-claras/hero-deluxe-bungalow",
+      "alt": "Two-Bedroom Deluxe Bungalow with private plunge pool at Aguas Claras, Costa Rica"
+    },
+    "1-Bedroom Bungalow": {
+      "id": "jwco/stays/aguas-claras/room-1-bedroom-bungalow",
+      "alt": "1-Bedroom Bungalow at Aguas Claras, Costa Rica"
+    },
+    "2-Bedroom Bungalow": {
+      "id": "jwco/stays/aguas-claras/room-2-bedroom-luxury-bungalow",
+      "alt": "2-Bedroom Bungalow at Aguas Claras, Costa Rica"
+    }
   }
 }

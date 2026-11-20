@@ -1,4 +1,5 @@
 import { FieldIcon, type FieldIconName } from "@/components/ledger/FieldIcon";
+import type { ReactNode } from "react";
 import AccordionRow from "./AccordionRow";
 import SectionHead from "./SectionHead";
 
@@ -21,7 +22,7 @@ function Column({ eyebrow, title, rows, icons, id }: { eyebrow: string; title: s
   );
 }
 
-export default function JournalDetail({ no, features, reasons }: { no: string; features: DetailRow[]; reasons: DetailRow[] }) {
+export default function JournalDetail({ no, features, reasons, children }: { no: string; features: DetailRow[]; reasons: DetailRow[]; children?: ReactNode }) {
   if (!features.length && !reasons.length) return null;
   return (
     <section id="detail" aria-label="Features and why it is here" className="bg-white">
@@ -30,6 +31,7 @@ export default function JournalDetail({ no, features, reasons }: { no: string; f
         <Column eyebrow="Features of the stay" title="What You Get" rows={features} icons={LEFT} />
         <Column eyebrow="Why it is in the Ledger" title="Why We Vetted It" rows={reasons} icons={RIGHT} />
       </div>
+      {children}
     </section>
   );
 }

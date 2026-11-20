@@ -5,6 +5,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import WideFilmLayer from "@/components/media/WideFilm";
 import type { WideFilm } from "@/lib/content/stay-films";
 import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
+import { openPhotos } from "@/lib/journal-style/bus";
 import Stamp from "./Stamp";
 
 // JWC-STYLE-01, Stage 1. The hero: one lead (the stay's film when one is filed, else a photograph), a strip beneath
@@ -37,12 +38,14 @@ type Props = {
   /** The existing save control, unchanged (renders nothing while its flag is off). */
   save?: ReactNode;
   whyHref: string;
+  /** How many photographs the viewer holds; shows "View all N" on the strip when there are more than the strip. */
+  photoCount?: number;
 };
 
 const FILM = -1;
 const EVERY_MS = 6000;
 
-export default function JournalHero({ eyebrow, name, place, tagline, frames, film, watch, offer, ledgerId, entry, credit, cta, save, whyHref }: Props) {
+export default function JournalHero({ eyebrow, name, place, tagline, frames, film, watch, offer, ledgerId, entry, credit, cta, save, whyHref, photoCount = 0 }: Props) {
   const [at, setAt] = useState(film ? FILM : 0);
   const reduce = useReducedMotionSafe();
   const [paused, setPaused] = useState(false);
@@ -111,8 +114,9 @@ export default function JournalHero({ eyebrow, name, place, tagline, frames, fil
         {tiles > 1 && (
           <div className="md:mt-auto pt-6 md:pt-12 pb-16 md:pb-0">
             <div className="flex items-end justify-between gap-4">
-              <p className="flex items-center gap-3 font-mono text-[9.5px] tracking-[0.2em] md:tracking-[0.24em] uppercase text-white/80">
+              <p className="flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-[9.5px] tracking-[0.2em] md:tracking-[0.24em] uppercase text-white/80">
                 <span>{film ? "Film · " : ""}{frames.length} photographs · choose a frame</span>
+                {photoCount > frames.length && <button type="button" onClick={() => openPhotos()} className="inline-flex items-center border border-white/40 px-2 py-1 uppercase tracking-[0.18em] text-white hover:border-white">View all {photoCount}</button>}
                 {!reduce && frames.length > 1 && at !== FILM && (
                   <button type="button" onClick={() => setPaused((x) => !x)} aria-pressed={paused} className="inline-flex items-center gap-1.5 border border-white/40 px-2 py-1 uppercase tracking-[0.18em] text-white hover:border-white">
                     <svg aria-hidden viewBox="0 0 12 12" className="h-2.5 w-2.5" fill="currentColor">{paused ? <path d="M3 1.5v9l7-4.5z" /> : <path d="M2.5 1.5h2.5v9H2.5zM7 1.5h2.5v9H7z" />}</svg>

@@ -367,9 +367,21 @@ export function search(records: AtlasRecord[], q: AtlasQuery, on: string = today
 }
 
 /** The search in a few words, for the results heading and the page title. */
-export function describe(q: AtlasQuery): string {
-  const what = q.cat.length === 1 ? CATEGORY_LABEL[q.cat[0]] : q.cat.length ? `${q.cat.length} categories` : q.col.length === 1 ? COLLECTION_LABEL[q.col[0]] : "Everything";
-  return `${what} ${q.where.trim() ? `in ${q.where.trim()}` : "anywhere"}`;
+/** Whether a Where entry reads as a place the Ledger knows (a country, region or sea), given the list of known places. */
+export function isPlace(where: string, places: string[]): boolean {
+  const words = norm(where).split(" ").filter((w) => w && !STOP.has(w));
+  return words.length > 0 && places.some((p) => { const hay = ` ${norm(p)}`; return words.every((w) => hay.includes(` ${w}`)); });
+}
+/**
+ * The results heading. A place reads "Safari Camps and Lodges in Botswana"; a name or any other word reads
+ * "Results for Dulini", never "Everything in Dulini". `place` defaults to true for callers without the place list.
+ */
+export function describe(q: AtlasQuery, place = true): string {
+  const one = q.cat.length === 1 ? CATEGORY_LABEL[q.cat[0]] : q.cat.length ? `${q.cat.length} categories` : q.col.length === 1 ? COLLECTION_LABEL[q.col[0]] : null;
+  const where = q.where.trim();
+  if (!where) return `${one ?? "Everything"} anywhere`;
+  if (place) return `${one ?? "Everything"} in ${where}`;
+  return one ? `${one} matching ${where}` : `Results for ${where}`;
 }
 export function datesWords(q: AtlasQuery): string | null {
   if (q.from && q.to) return `${day(q.from)} to ${day(q.to)}`;

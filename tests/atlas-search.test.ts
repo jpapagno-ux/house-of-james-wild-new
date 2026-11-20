@@ -194,3 +194,68 @@ test("flag: off unless set, or the preview of the pilot branch; never on in prod
   assert.equal(readAtlasFlag({ VERCEL_ENV: "preview", VERCEL_GIT_COMMIT_REF: ATLAS_BRANCH, NEXT_PUBLIC_ATLAS: "off" }), false);
   assert.equal(readAtlasFlag({ NEXT_PUBLIC_ATLAS: "on" }), true);
 });
+
+// ---- Step 03 follow-ups (20 Nov 2026) -----------------------------------------------------------------------------
+import { mayApplyReason, needNights, parseMonths } from "../lib/atlas/match.ts";
+import { conditionKind, conditionMinStay } from "../lib/atlas/classify.ts";
+import { ATLAS_FAQ, ATLAS_INTRO } from "../lib/atlas/faq.ts";
+
+test("season: a place's own filed months are read only when they read cleanly", () => {
+  assert.deepEqual(parseMonths("May to October"), [4, 5, 6, 7, 8, 9]);
+  assert.deepEqual(parseMonths("November - April"), [0, 1, 2, 3, 10, 11]);
+  assert.deepEqual(parseMonths("June–October, December–March"), [0, 1, 2, 5, 6, 7, 8, 9, 11]);
+  assert.deepEqual(parseMonths("March - May & September - November"), [2, 3, 4, 8, 9, 10]);
+  assert.deepEqual(parseMonths("June to mid-September, December to February"), [0, 1, 5, 6, 7, 8, 11]);
+  assert.equal(parseMonths("Year-round")?.length, 12);
+  assert.equal(parseMonths("Open all year")?.length, 12);
+  assert.equal(parseMonths("December to March (kitesurf season)"), null);
+  assert.equal(parseMonths("July to October for the Great Migration and river crossings in the Mara Triangle."), null);
+  assert.equal(parseMonths(null), null);
+});
+test("season: a place's own months are worded as this place, a country band as the country", () => {
+  assert.match(season(rec({ seasonOf: "place" }), q("")).line, /^Best months here:/);
+  assert.match(season(rec({ seasonOf: "country" }), q("")).line, /^Best months in Botswana:/);
+  assert.match(season(rec({ seasonOf: "place" }), q("from=2027-01-10&to=2027-01-15")).line, /filed for this place/);
+});
+test("offers: the kind of condition and the stay it asks for are read, the text is never printed", () => {
+  assert.equal(conditionKind("For wedding anniversaries of 1, 5, 10 years"), "occasion");
+  assert.equal(conditionKind("10% off accommodation when at least two MORE Collection properties are booked"), "combination");
+  assert.equal(conditionKind("10% off for guests who have stayed with MORE Collection before"), "returning");
+  assert.equal(conditionKind("No single supplement is charged for mid and green seasons"), "single");
+  assert.equal(conditionKind("Subject to availability."), "other");
+  assert.equal(conditionKind(""), null);
+  assert.equal(conditionMinStay("Minimum stay 2 nights. Booking dates: now to December 15."), 2);
+  assert.equal(conditionMinStay("Four consecutive nights required. Up to 5 rooms."), 4);
+  assert.equal(conditionMinStay("Subject to availability."), null);
+});
+test("offers: a card says why an offer only may apply, and conditions still never make it apply", () => {
+  const o = offer({ hasConditions: true, condition: "occasion" });
+  const stay = q("from=2027-02-01&to=2027-02-06");
+  assert.equal(offerState(o, stay, ON), "unknown");
+  assert.match(offerLine(rec({ offers: [o] }), stay, ON)!.line, /May apply\. It is for a celebration.*Your advisor confirms\.$/);
+  const short = offer({ headline: "Winter rate", minStay: 5 });
+  assert.equal(needNights(short), 5);
+  assert.equal(offerState(short, q("from=2027-02-01&to=2027-02-04"), ON), "unknown");
+  assert.match(mayApplyReason(short, q("from=2027-02-01&to=2027-02-04")), /at least 5 nights and your dates are 3/);
+  assert.equal(offerState(short, q("from=2027-02-01&to=2027-02-07"), ON), "eligible");
+});
+test("categories: records awaiting a category are listed apart, never inside the category", () => {
+  const held = rec({ id: "STY-9", name: "Held Lodge", category: null, proposed: "safari-camps-and-lodges", filedAs: "Hotel" });
+  const out = search([rec({ category: "safari-camps-and-lodges" }), held, rec({ id: "STY-8", category: null, proposed: "hotels" })], q("cat=safari-camps-and-lodges"), ON);
+  assert.deepEqual(out.results.map((x) => x.record.id), ["STY-1"]);
+  assert.deepEqual(out.awaiting.map((x) => x.record.id), ["STY-9"]);
+  assert.equal(out.awaitingCategory, 1);
+  assert.equal(search([held], q(""), ON).awaiting.length, 0);
+});
+test("unknown data: a family mark softens the wording, it never becomes an occupancy figure", () => {
+  const fam = q("adults=2&children=6,9");
+  assert.match(unknowns(rec({ familyFiled: true }), fam)[0], /filed as suited to families/);
+  assert.match(unknowns(rec(), fam)[0], /occupancy not filed/);
+  assert.equal(matches(rec({ familyFiled: true }), fam), true);
+});
+test("copy: the Atlas answers carry no dashes and no vetting or saving claims", () => {
+  const all = [ATLAS_INTRO, ...ATLAS_FAQ.flatMap((f) => [f.q, f.a])].join(" ");
+  assert.equal(/[–—]/.test(all), false);
+  assert.equal(/vetted|inspected|guarantee|cheapest|best price/i.test(all), false);
+  assert.ok(ATLAS_FAQ.length >= 5);
+});

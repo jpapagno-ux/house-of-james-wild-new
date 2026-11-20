@@ -10,3 +10,9 @@ export function readAtlasFlag(env: Env): boolean {
   return env.VERCEL_ENV === "preview" && env.VERCEL_GIT_COMMIT_REF === ATLAS_BRANCH;
 }
 export const ATLAS_ON = readAtlasFlag({ NEXT_PUBLIC_ATLAS: process.env.NEXT_PUBLIC_ATLAS, VERCEL_ENV: process.env.VERCEL_ENV, VERCEL_GIT_COMMIT_REF: process.env.VERCEL_GIT_COMMIT_REF });
+
+/**
+ * Whether /atlas itself may be offered to search engines. Off throughout the pilot. It turns on only when James sets
+ * NEXT_PUBLIC_ATLAS_INDEX=on at launch; a filtered address (/atlas?...) is never indexable, its canonical is /atlas.
+ */
+export const ATLAS_INDEXABLE = process.env.NEXT_PUBLIC_ATLAS_INDEX === "on";

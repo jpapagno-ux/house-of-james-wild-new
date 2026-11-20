@@ -1,4 +1,4 @@
-import type { Category, Interest } from "./match.ts";
+import type { Category, ConditionKind, Interest } from "./match.ts";
 import { CATEGORIES } from "./match.ts";
 
 // Atlas categories (James, 20 Nov 2026, Step 02): eleven product categories read only from confirmed attributes: what
@@ -89,4 +89,30 @@ export function shipInterests(s: { types: string[]; waters: string[]; activities
   if (s.couples) out.add("romance");
   if (s.publishesChildPolicy) out.add("family");
   return [...out];
+}
+
+// ---- offers ----------------------------------------------------------------------------------------------------------
+// An offer's conditions are filed as free text. The Atlas never prints or interprets the text itself: it reads only
+// what KIND of condition it is, so a card can say why an offer "may apply", and the shortest stay it names.
+
+export function conditionKind(text: string | null | undefined): ConditionKind | null {
+  const t = (text ?? "").toLowerCase().trim();
+  if (!t) return null;
+  if (/honeymoon|anniversar|birthday|babymoon|celebrat|newlywed|wedding|marriage|spouse/.test(t)) return "occasion";
+  if (/stayed .{0,40}before|returning guest|repeat guest|past guest/.test(t)) return "returning";
+  if (/no single supplement|single supplement (is )?waived|^single cabins/.test(t)) return "single";
+  // "Not combinable with other offers" is not a combination: only wording that asks for two places or sailings is.
+  if (/\bcombin(e|ing) (\d|[a-z']+ (house|camp|lodge))|any combination of|book(ed)? .{0,60}\btogether\b|two or more|at least (two|2|three|3) [a-z& ]{0,30}propert|nights? (or more )?across |across \d+ to \d+ |across two |with at least \d+ nights? at another|as an extension to/.test(t)) return "combination";
+  if (/^children |youngest child|children under \d|kids (stay|go|sail) free|family (tent|package)/.test(t)) return "family";
+  return "other";
+}
+
+const NUM: Record<string, number> = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+/** "Minimum stay 2 nights", "Four consecutive nights required", "a five night minimum": the nights asked, else null. */
+export function conditionMinStay(text: string | null | undefined): number | null {
+  const t = (text ?? "").toLowerCase();
+  const m = t.match(/minimum (?:stay )?(?:of )?(\d{1,2}|[a-z]+)[- ]nights?/) ?? t.match(/\b(\d{1,2}|[a-z]+)[- ](?:consecutive )?nights? (?:required|minimum)/) ?? t.match(/\b(\d{1,2}|[a-z]+) consecutive nights/);
+  if (!m) return null;
+  const n = /^\d+$/.test(m[1]) ? Number(m[1]) : NUM[m[1]];
+  return n && n > 0 && n < 60 ? n : null;
 }

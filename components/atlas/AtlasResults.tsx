@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MessageCircle } from "lucide-react";
 import AtlasSearch from "./AtlasSearch";
+import { loadIndex } from "./index-client";
 import {
   CATEGORY_LABEL, COLLECTION_LABEL, EMPTY, INTEREST_LABEL, datesWords, describe, fromQuery, partyWords, search, toQuery,
   type AtlasQuery, type AtlasRecord, type Result,
@@ -14,8 +15,6 @@ import {
 // result list can be shared or bookmarked. Every card prints three separate lines: season, offer and availability.
 
 const PAGE = 24;
-let INDEX: Promise<AtlasRecord[]> | null = null;
-const loadIndex = () => (INDEX ??= fetch("/atlas/index.json").then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); }).then((j: { records: AtlasRecord[] }) => j.records).catch((e) => { INDEX = null; throw e; }));
 
 export default function AtlasResults({ places }: { places: string[] }) {
   const [records, setRecords] = useState<AtlasRecord[] | null>(null);
@@ -23,6 +22,7 @@ export default function AtlasResults({ places }: { places: string[] }) {
   const [q, setQ] = useState<AtlasQuery>(EMPTY);
   const [ready, setReady] = useState(false);
   const [shown, setShown] = useState(PAGE);
+  const [shownAwaiting, setShownAwaiting] = useState(12);
 
   useEffect(() => {
     setQ(fromQuery(new URLSearchParams(window.location.search)));
@@ -34,7 +34,7 @@ export default function AtlasResults({ places }: { places: string[] }) {
   }, []);
 
   const apply = useCallback((next: AtlasQuery) => {
-    setQ(next); setShown(PAGE);
+    setQ(next); setShown(PAGE); setShownAwaiting(12);
     const s = toQuery(next);
     window.history.pushState(null, "", s ? `/atlas?${s}` : "/atlas");
   }, []);
@@ -76,7 +76,7 @@ export default function AtlasResults({ places }: { places: string[] }) {
                 {(out.withUnknowns > 0 || out.awaitingCategory > 0) && (
                   <p className="text-[13px] ledger-muted mt-1">
                     {out.withUnknowns > 0 ? `${out.withUnknowns} ${out.withUnknowns === 1 ? "has" : "have"} a detail not filed, shown on the card. ` : ""}
-                    {out.awaitingCategory > 0 ? `${out.awaitingCategory} more ${out.awaitingCategory === 1 ? "matches" : "match"} your search but ${out.awaitingCategory === 1 ? "is" : "are"} awaiting a category from the editors; remove the category to see ${out.awaitingCategory === 1 ? "it" : "them"}.` : ""}
+                    {out.awaitingCategory > 0 ? `${out.awaitingCategory} more ${out.awaitingCategory === 1 ? "is" : "are"} listed beneath, under what the Ledger files ${out.awaitingCategory === 1 ? "it" : "them"} as, while the editors confirm ${out.awaitingCategory === 1 ? "its" : "their"} category.` : ""}
                   </p>
                 )}
               </>
@@ -97,7 +97,21 @@ export default function AtlasResults({ places }: { places: string[] }) {
           <div className="pb-10 text-center"><button type="button" onClick={() => setShown(shown + PAGE)} className="house-chip house-chip--primary min-h-[48px] !px-5">Show {Math.min(PAGE, out.results.length - shown)} more of {out.results.length}</button></div>
         )}
 
-        {out && out.results.length === 0 && (
+        {out && out.awaiting.length > 0 && (
+          <section aria-labelledby="atlas-awaiting-h" className="border-t ledger-border pt-7 pb-4">
+            <p className="ledger-eyebrow">Also in the Ledger</p>
+            <h2 id="atlas-awaiting-h" className="ledger-display text-[1.6rem] leading-snug mt-1.5">{out.awaiting.length} more for this search, category being confirmed</h2>
+            <p className="text-[14px] ledger-muted mt-1.5 max-w-3xl">Each is shown under what the Ledger files it as. The editors have not yet confirmed which Atlas category it belongs to, so it is listed here and not among the results above.</p>
+            <ul className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 py-6" aria-label="Category being confirmed">
+              {out.awaiting.slice(0, shownAwaiting).map((x) => <li key={x.record.id} className="flex"><Card x={x} /></li>)}
+            </ul>
+            {out.awaiting.length > shownAwaiting && (
+              <div className="pb-6 text-center"><button type="button" onClick={() => setShownAwaiting(shownAwaiting + PAGE)} className="house-chip house-chip--primary min-h-[48px] !px-5">Show {Math.min(PAGE, out.awaiting.length - shownAwaiting)} more of {out.awaiting.length}</button></div>
+            )}
+          </section>
+        )}
+
+        {out && out.results.length === 0 && out.awaiting.length === 0 && (
           <div className="bg-mist border ledger-border p-6 md:p-10 my-8 max-w-3xl">
             <p className="ledger-eyebrow">Nothing filed under that yet</p>
             <p className="ledger-display text-[1.6rem] leading-snug mt-2">Loosen one part of the search, or tell an advisor where you are thinking of going.</p>

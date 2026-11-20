@@ -1,6 +1,7 @@
 import "server-only";
 import type { AtlasOffer, AtlasRecord, Collection, Interest } from "./match";
-import { classifyReserveCamp, classifyRoute, classifyShip, classifyStay, decided, shipInterests, stayInterests, type Verdict } from "./classify";
+import { classifyReserveCamp, classifyRoute, classifyShip, classifyStay, conditionKind, conditionMinStay, decided, shipInterests, stayInterests, type Verdict } from "./classify";
+import { parseMonths } from "./match";
 import DECISIONS from "./category-decisions.json";
 import { STAYS, pageReady, type StayData } from "@/lib/content/stays";
 import { RESERVES, campHref, campReady, campStatus } from "@/lib/content/reserves";
@@ -47,7 +48,7 @@ function offersByHref(): Map<string, AtlasOffer[]> {
     if (!href || href.startsWith("/collections/")) continue;
     const row: AtlasOffer = {
       id: o.id, program: o.program, headline: o.headline, from: o.travel.from, to: o.travel.to, bookingWindow: !!o.bookingWindow, checked: o.checked,
-      hasConditions: !!(o.conditions && o.conditions.trim()), departure: (o as Offer).departure ?? null, travelUntil: o.sailingsUntil ?? null,
+      hasConditions: !!(o.conditions && o.conditions.trim()), condition: conditionKind(o.conditions), minStay: conditionMinStay(o.conditions), departure: (o as Offer).departure ?? null, travelUntil: o.sailingsUntil ?? null,
     };
     out.set(href, [...(out.get(href) ?? []), row]);
   }
@@ -74,12 +75,13 @@ export function atlasIndex(): AtlasRecord[] {
     if (!pageReady(s) || reserveSlugs.has(s.slug)) continue;
     const ef = exceptionalFewFor(s.ledgerId);
     const pathways = s.pathway?.status === "approved" ? [s.pathway.primary, ...s.pathway.secondary] : [];
+    const own = parseMonths(s.bestMonths), months = own ?? bestMonths(s.country);
     push({
       id: s.ledgerId ?? `stay:${s.slug}`, kind: "stay", name: s.name, href: recordHref("stay", s.slug), filedAs: KIND_WORD[s.category ?? ""] ?? "Stay",
       country: s.country, countries: s.country ? [s.country] : [], region: s.regionSlug, regionLabel: regionLabel(s.regionSlug), tagline: s.tagline, image: s.hero,
       mark: statusLine(s.status as HouseStatus | null, s.statusDate, s.slug), collections: ef ? ["the-exceptional-few"] : [],
       interests: stayInterests({ pathways, tags: s.bestFor ?? [], setting: s.pathway?.setting ?? null, filed: s.category }),
-      standing: ef ? 3 : STANDING[s.status ?? ""] ?? 0, bestMonths: bestMonths(s.country), departures: null, sleeps: null, price: null, booking: s.engine ? "engine" : "request",
+      standing: ef ? 3 : STANDING[s.status ?? ""] ?? 0, bestMonths: months, seasonOf: own ? "place" : months ? "country" : null, familyFiled: (s.bestFor ?? []).some((b) => /famil/i.test(b)), departures: null, sleeps: null, price: null, booking: s.engine ? "engine" : "request",
       verdict: classifyStay({ filed: s.category, africa: s.regionSlug === "africa", volumes: s.volumes ?? [], primaryPathway: s.pathway?.primary ?? null, inReserve: campSlugs.has(s.slug) || s.reserveChild, isReserve: false }),
       keys: [s.ledgerId, s.slug],
     });

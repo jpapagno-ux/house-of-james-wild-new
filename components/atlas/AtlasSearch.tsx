@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useId, useMemo, useRef, useState, type ReactNode } from "react";
 import { Mic, Minus, Plus, Search, X } from "lucide-react";
 import { lockScroll } from "@/lib/scroll-lock";
+import { loadIndex } from "./index-client";
 import {
   CATEGORY_GROUPS, CATEGORY_LABEL, COLLECTIONS, COLLECTION_LABEL, EMPTY, INTERESTS, INTEREST_LABEL, datesShort, monthName, partyWords, toQuery,
   type AtlasQuery, type Category, type Collection, type Interest,
@@ -33,6 +34,9 @@ export default function AtlasSearch({ places, initial, onSubmit, idPrefix = "atl
   const [open, setOpen] = useState<PanelKey | null>(null);
   const [mode, setMode] = useState<"exact" | "flexible">(initial?.months.length ? "flexible" : "exact");
   const opener = useRef<HTMLButtonElement | null>(null);
+  // Names of stays, camps, ships, voyages and routes join the places once the field is first used (one shared fetch).
+  const [names, setNames] = useState<string[]>([]);
+  const wantNames = () => { if (!names.length) loadIndex().then((rs) => setNames([...new Set(rs.map((r) => r.name))].filter((n) => !places.includes(n)).sort((a, b) => a.localeCompare(b)))).catch(() => {}); };
   useEffect(() => { if (initial) { setQ(initial); if (initial.months.length) setMode("flexible"); } }, [initial]);
 
   // One panel at a time. On phones it is a sheet over the page, so the page behind stops scrolling.
@@ -66,9 +70,10 @@ export default function AtlasSearch({ places, initial, onSubmit, idPrefix = "atl
           <div className="flex-1 min-w-0">
             <label htmlFor={`${idPrefix}-where`} className="hidden md:block ledger-eyebrow">Where</label>
             <label htmlFor={`${idPrefix}-where`} className="sr-only md:hidden">Where</label>
-            <input id={`${idPrefix}-where`} list={`${uid}-places`} value={q.where} onChange={(e) => set({ where: e.target.value })} placeholder="Anywhere" autoComplete="off" enterKeyHint="search"
+            <input id={`${idPrefix}-where`} list={`${uid}-places`} value={q.where} onChange={(e) => set({ where: e.target.value })} placeholder="Anywhere" autoComplete="off" enterKeyHint="search" onFocus={wantNames} aria-describedby={`${uid}-where-hint`}
               className="block w-full min-w-0 h-11 md:h-8 bg-transparent text-[16px] outline-none placeholder:text-ink" />
-            <datalist id={`${uid}-places`}>{places.map((p) => <option key={p} value={p} />)}</datalist>
+            <datalist id={`${uid}-places`}>{places.map((p) => <option key={p} value={p} />)}{names.map((n) => <option key={`n:${n}`} value={n} />)}</datalist>
+            <span id={`${uid}-where-hint`} className="sr-only">A country, region, sea, or the name of a stay, camp or ship.</span>
           </div>
           {/* Reserved for Atlas by Voice. Inactive in Phase 01: no listener, no permission request. */}
           <button type="button" disabled aria-disabled="true" aria-label="Atlas by Voice, coming later" title="Atlas by Voice, coming later" data-atlas-voice="reserved"

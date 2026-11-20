@@ -48,10 +48,24 @@ export type AtlasOffer = {
   checked: string;
   /** Conditions are filed as free text; their presence means eligibility cannot be settled by a search. */
   hasConditions: boolean;
+  /** What kind of condition the free text is, read by rule at build (lib/atlas/classify.ts). Never the text itself. */
+  condition?: ConditionKind | null;
+  /** The shortest stay the conditions name ("Minimum stay 2 nights"), when they name one. */
+  minStay?: number | null;
   /** Final Call: the departure the offer belongs to. */
   departure: string | null;
   /** Booking-window offers: the last sailing or stay date covered, when filed. */
   travelUntil: string | null;
+};
+
+export type ConditionKind = "occasion" | "combination" | "returning" | "single" | "family" | "other";
+const CONDITION_WORDS: Record<ConditionKind, string> = {
+  occasion: "It is for a celebration such as a honeymoon, anniversary or milestone birthday.",
+  combination: "It asks for a combination of properties or a longer route.",
+  returning: "It is for returning guests.",
+  single: "It concerns the single supplement.",
+  family: "It concerns children or family rooms.",
+  other: "Conditions apply.",
 };
 
 export type AtlasRecord = {
@@ -73,8 +87,12 @@ export type AtlasRecord = {
   interests: Interest[];
   /** Standing in house order: 3 The Exceptional Few, 2 a founder mark, 1 a partner mark, 0 none. */
   standing: number;
-  /** Best months (0 = January) from the country's filed month bands; null when no band is filed. */
+  /** Best months (0 = January): the place's own filed months where they read cleanly, else the country's month bands; null when neither is filed. */
   bestMonths: number[] | null;
+  /** Where bestMonths came from: the record's own Ledger entry, or its country. */
+  seasonOf?: "place" | "country" | null;
+  /** The Ledger files this record as suited to families (its own "best for" list). Not an occupancy figure. */
+  familyFiled?: boolean;
   /** Ships and voyages: open departures as [from, to] (ISO; to = from for a dated sailing). null: none are published. */
   departures: [string, string][] | null;
   /** The most guests one unit or the vessel takes, where filed. null: not filed. */
@@ -174,11 +192,35 @@ export type SeasonState = "in" | "outside" | "not-filed" | "sails" | "no-dates";
 export function season(r: AtlasRecord, q: AtlasQuery): { state: SeasonState; line: string } {
   if (r.departures) return { state: "sails", line: r.departures.length ? `Sails ${sailingSpan(r.departures)}.` : "No open departures are published at present." };
   if (!r.bestMonths) return { state: "not-filed", line: "Season not filed for this place." };
-  if (!hasDates(q)) return { state: "no-dates", line: `Best months${r.country ? ` in ${r.country}` : ""}: ${monthRuns(r.bestMonths)}.` };
+  const here = r.seasonOf === "place";
+  const inPlace = here ? " here" : r.country ? ` in ${r.country}` : "";
+  if (!hasDates(q)) return { state: "no-dates", line: `Best months${inPlace}: ${monthRuns(r.bestMonths)}.` };
   const asked = monthsOf(q);
   return asked.some((m) => r.bestMonths!.includes(m))
-    ? { state: "in", line: `In season${r.country ? ` in ${r.country}` : ""} for your dates.` }
-    : { state: "outside", line: `Outside the best months${r.country ? ` for ${r.country}` : ""} (${monthRuns(r.bestMonths)}).` };
+    ? { state: "in", line: `In season${inPlace} for your dates.` }
+    : { state: "outside", line: `Outside the best months${here ? " filed for this place" : r.country ? ` for ${r.country}` : ""} (${monthRuns(r.bestMonths)}).` };
+}
+
+const MONTH_KEYS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+/**
+ * A place's own "best months" as filed ("May to October", "June - September, December to February", "Year-round").
+ * Read only when every word is a month or a joining word; a sentence, a caveat or a bracket returns null, and the
+ * country's month bands are used instead. Nothing is guessed from prose.
+ */
+export function parseMonths(text: string | null | undefined): number[] | null {
+  const t = (text ?? "").trim().toLowerCase().replace(/\.$/, "");
+  if (!t || t.length > 70) return null;
+  if (/^(open )?(all year|year[- ]round)$/.test(t)) return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  const month = (w: string) => { const i = MONTH_KEYS.indexOf(w.slice(0, 3)); return i >= 0 && MONTHS[i].toLowerCase().startsWith(w) && w.length >= 3 ? i : -1; };
+  const out = new Set<number>();
+  for (const part of t.replace(/[\u2012-\u2015]/g, "-").replace(/\b(late|early|mid)[- ]/g, "").split(/,|&|\band\b/)) {
+    const m = part.trim().match(/^([a-z]+)(?:\s*(?:-|to|through)\s*([a-z]+))?$/);
+    if (!m) return null;
+    const a = month(m[1]), b = m[2] ? month(m[2]) : a;
+    if (a < 0 || b < 0) return null;
+    for (let i = a; ; i = (i + 1) % 12) { out.add(i); if (i === b) break; }
+  }
+  return out.size ? [...out].sort((x, y) => x - y) : null;
 }
 const SHORT = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 /** [0,1,2,10,11] reads "Nov to Mar": runs of months, wrapping the year end. */
@@ -212,9 +254,19 @@ export function offerState(o: AtlasOffer, q: AtlasQuery, on: string = today()): 
   if (!(q.from && q.to) || !travel || o.hasConditions) return "unknown";
   const stay: [string, string] = [q.from, q.to];
   if (o.departure ? !(stay[0] <= o.departure && o.departure <= stay[1]) : !within(stay, travel)) return "unknown";
-  const need = minNights(o.headline), n = nights(q);
+  const need = needNights(o), n = nights(q);
   if (need !== null && n !== null && n < need) return "unknown";
   return "eligible";
+}
+/** The stay an offer asks for: the longer of what its headline and its conditions name. null when neither names one. */
+export const needNights = (o: AtlasOffer) => { const a = minNights(o.headline), b = o.minStay ?? null; return a === null ? b : b === null ? a : Math.max(a, b); };
+/** Why an offer only "may apply", in a sentence, from filed facts alone. */
+export function mayApplyReason(o: AtlasOffer, q: AtlasQuery): string {
+  const need = needNights(o), n = nights(q);
+  if (need !== null && n !== null && n < need) return `It asks for at least ${need} nights and your dates are ${n}.`;
+  if (o.hasConditions) return CONDITION_WORDS[o.condition ?? "other"];
+  if (!(q.from && q.to)) return "Add exact dates to check it.";
+  return "Your dates run past its travel window.";
 }
 const RANK: Record<OfferState, number> = { eligible: 0, unknown: 1, recheck: 2, outside: 3 };
 export type OfferLine = { offer: AtlasOffer; state: OfferState; line: string; meta: string };
@@ -225,7 +277,7 @@ export function offerLine(r: AtlasRecord, q: AtlasQuery, on: string = today()): 
   const { o, s } = top;
   const win = o.bookingWindow ? `Book by ${day(o.to)}` : `Travel ${day(o.from)} to ${day(o.to)}`;
   const line = s === "eligible" ? `${o.headline}. Applies to your dates.`
-    : s === "unknown" ? `${o.headline}. May apply. Your advisor confirms.`
+    : s === "unknown" ? `${o.headline}. May apply. ${mayApplyReason(o, q)} Your advisor confirms.`
     : s === "outside" ? `An offer runs here outside your dates. ${win}.`
     : `${o.headline}. Terms being re-checked, shown for reference only.`;
   return { offer: o, state: s, line, meta: s === "outside" ? "" : `${win} · Terms checked ${day(o.checked)}` };
@@ -248,7 +300,7 @@ export function availability(r: AtlasRecord, q: AtlasQuery): { state: Availabili
 export function unknowns(r: AtlasRecord, q: AtlasQuery): string[] {
   const out: string[] = [];
   const party = q.adults + q.children.length;
-  if (r.kind !== "route" && r.kind !== "dossier" && r.kind !== "reserve" && party > 2 && r.sleeps === null) out.push(`Sleeps: occupancy not filed. Ask the house before planning for ${party} travellers.`);
+  if (r.kind !== "route" && r.kind !== "dossier" && r.kind !== "reserve" && party > 2 && r.sleeps === null) out.push(r.familyFiled ? `Sleeps: filed as suited to families. Rooms for ${party} travellers are confirmed by the house.` : `Sleeps: occupancy not filed. Ask the house before planning for ${party} travellers.`);
   if (q.children.length && r.minChildAge === null) out.push("Children: age policy not filed. Ask the house.");
   return out;
 }
@@ -260,6 +312,8 @@ export type Outcome = {
   results: Result[];
   /** Records that met the search but for a category filter, because they await editorial classification. */
   awaitingCategory: number;
+  /** Those same records, in the same order as the results. Shown apart from the results, under what the Ledger files them as, never as members of the category. */
+  awaiting: Result[];
   /** How many results carry at least one fact the search asked about and the Ledger does not hold. */
   withUnknowns: number;
   offers: { eligible: number; mayApply: number };
@@ -284,8 +338,9 @@ const cmp = (...keys: number[]) => keys;
 function order(a: number[], b: number[]) { for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return a[i] - b[i]; return 0; }
 
 export function search(records: AtlasRecord[], q: AtlasQuery, on: string = today()): Outcome {
-  const results: Result[] = records.filter((r) => matches(r, q)).map((r) => ({ record: r, where: whereScore(r, q.where), season: season(r, q), offer: offerLine(r, q, on), availability: availability(r, q), unknowns: unknowns(r, q) }));
-  const awaitingCategory = q.cat.length ? records.filter((r) => !r.category && !!r.proposed && q.cat.includes(r.proposed) && matches(r, q, { ignoreCategory: true })).length : 0;
+  const row = (r: AtlasRecord): Result => ({ record: r, where: whereScore(r, q.where), season: season(r, q), offer: offerLine(r, q, on), availability: availability(r, q), unknowns: unknowns(r, q) });
+  const results: Result[] = records.filter((r) => matches(r, q)).map(row);
+  const awaiting: Result[] = q.cat.length ? records.filter((r) => !r.category && !!r.proposed && q.cat.includes(r.proposed) && matches(r, q, { ignoreCategory: true })).map(row) : [];
   const seasonRank = (s: SeasonState) => (s === "in" || s === "sails" ? 0 : s === "no-dates" || s === "not-filed" ? 1 : 2);
   const offerRank = (o: OfferLine | null) => (!o ? 2 : o.state === "eligible" ? 0 : o.state === "unknown" ? 1 : 2);
   const fresh = (o: OfferLine | null) => (o && offerRank(o) < 2 ? -Date.parse(o.offer.checked) : 0);
@@ -297,9 +352,10 @@ export function search(records: AtlasRecord[], q: AtlasQuery, on: string = today
   // the nearer deadline (a tie-break, never the reason an offer leads).
   const savings = (x: Result) => cmp(-x.where, offerRank(x.offer), fresh(x.offer), deadline(x.offer), ...best(x).slice(1));
   const key = q.sort === "savings" ? savings : best;
-  results.sort((a, b) => order(key(a), key(b)) || a.record.name.localeCompare(b.record.name));
+  const byKey = (a: Result, b: Result) => order(key(a), key(b)) || a.record.name.localeCompare(b.record.name);
+  results.sort(byKey); awaiting.sort(byKey);
   return {
-    results, awaitingCategory,
+    results, awaitingCategory: awaiting.length, awaiting,
     withUnknowns: results.filter((x) => x.unknowns.length).length,
     offers: { eligible: results.filter((x) => x.offer?.state === "eligible").length, mayApply: results.filter((x) => x.offer?.state === "unknown").length },
   };

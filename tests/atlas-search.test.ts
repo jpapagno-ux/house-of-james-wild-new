@@ -132,7 +132,8 @@ test("offers: stale terms lose the label, whatever the dates", () => {
   const dates = q("from=2027-02-10&to=2027-02-15");
   assert.equal(offerState(offer({ checked: "2026-10-06" }), dates, ON), "eligible", `${FRESH_DAYS} days is still fresh`);
   assert.equal(offerState(offer({ checked: "2026-10-05" }), dates, ON), "recheck");
-  assert.match(offerLine(rec({ offers: [offer({ checked: "2026-09-01" })] }), dates, ON)!.line, /Terms being re-checked/);
+  assert.equal(offerLine(rec({ offers: [offer({ checked: "2026-09-01" })] }), dates, ON), null);
+  assert.equal(offerLine(rec({ offers: [offer()] }), q("from=2027-06-01&to=2027-06-08"), ON), null);
 });
 test("offers: the headline is printed as filed and nothing is computed", () => {
   const l = offerLine(rec({ offers: [offer({ headline: "Stay 4 nights, pay 3" })] }), q("from=2027-02-10&to=2027-02-15"), ON)!;
@@ -249,8 +250,8 @@ test("categories: records awaiting a category are listed apart, never inside the
 });
 test("unknown data: a family mark softens the wording, it never becomes an occupancy figure", () => {
   const fam = q("adults=2&children=6,9");
-  assert.match(unknowns(rec({ familyFiled: true }), fam)[0], /filed as suited to families/);
-  assert.match(unknowns(rec(), fam)[0], /occupancy not filed/);
+  assert.match(unknowns(rec({ familyFiled: true }), fam)[0], /confirmed by the house/);
+  assert.equal(/fit|sleeps \d|suited/i.test(unknowns(rec({ familyFiled: true }), fam).join(" ")), false);
   assert.equal(matches(rec({ familyFiled: true }), fam), true);
 });
 test("copy: the Atlas answers carry no dashes and no vetting or saving claims", () => {
@@ -258,4 +259,12 @@ test("copy: the Atlas answers carry no dashes and no vetting or saving claims", 
   assert.equal(/[–—]/.test(all), false);
   assert.equal(/vetted|inspected|guarantee|cheapest|best price/i.test(all), false);
   assert.ok(ATLAS_FAQ.length >= 5);
+});
+
+test("release gate: season never says a place is open, savings order is qualified, held records stay out", () => {
+  const s = season(rec({ seasonOf: "place" }), q("from=2027-07-01&to=2027-07-06"));
+  assert.equal(s.state, "in"); assert.match(s.line, /Opening dates are confirmed by the house/); assert.equal(/open for|is open|available/i.test(s.line), false);
+  assert.equal(search([rec()], q("sort=savings"), ON).savingsEmpty, true);
+  assert.equal(search([rec({ offers: [offer()] })], q("sort=savings"), ON).savingsEmpty, false);
+  assert.equal(/available now|rooms available|cabins available/i.test(availability(rec(), q("")).line), false);
 });

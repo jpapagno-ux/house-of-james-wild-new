@@ -73,12 +73,8 @@ export default function AtlasResults({ places }: { places: string[] }) {
             {out && (
               <>
                 <p className="text-[15px]">{out.results.length} {out.results.length === 1 ? "entry matches" : "entries match"}.{out.offers.eligible > 0 ? ` ${out.offers.eligible} carry an offer that applies to your dates.` : ""}{out.offers.mayApply > 0 ? ` ${out.offers.mayApply} carry an offer that may apply.` : ""}</p>
-                {(out.withUnknowns > 0 || out.awaitingCategory > 0) && (
-                  <p className="text-[13px] ledger-muted mt-1">
-                    {out.withUnknowns > 0 ? `${out.withUnknowns} ${out.withUnknowns === 1 ? "has" : "have"} a detail not filed, shown on the card. ` : ""}
-                    {out.awaitingCategory > 0 ? `${out.awaitingCategory} more ${out.awaitingCategory === 1 ? "is" : "are"} listed beneath, under what the Ledger files ${out.awaitingCategory === 1 ? "it" : "them"} as, while the editors confirm ${out.awaitingCategory === 1 ? "its" : "their"} category.` : ""}
-                  </p>
-                )}
+                {out.withUnknowns > 0 && <p className="text-[13px] ledger-muted mt-1">{out.withUnknowns} {out.withUnknowns === 1 ? "has" : "have"} a detail the house confirms, shown on the card.</p>}
+                {q.sort === "savings" && <p className="text-[13px] ledger-muted mt-1">{out.savingsEmpty ? "No entry in this search carries a current offer, so the order is Best match." : "Savings first lists entries with a current offer first. It does not compare the size of a saving."}</p>}
               </>
             )}
           </div>
@@ -100,9 +96,8 @@ export default function AtlasResults({ places }: { places: string[] }) {
         {out && out.awaiting.length > 0 && (
           <section aria-labelledby="atlas-awaiting-h" className="border-t ledger-border pt-7 pb-4">
             <p className="ledger-eyebrow">Also in the Ledger</p>
-            <h2 id="atlas-awaiting-h" className="ledger-display text-[1.6rem] leading-snug mt-1.5">{out.awaiting.length} more for this search, category being confirmed</h2>
-            <p className="text-[14px] ledger-muted mt-1.5 max-w-3xl">Each is shown under what the Ledger files it as. The editors have not yet confirmed which Atlas category it belongs to, so it is listed here and not among the results above.</p>
-            <ul className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 py-6" aria-label="Category being confirmed">
+            <h2 id="atlas-awaiting-h" className="ledger-display text-[1.6rem] leading-snug mt-1.5">{out.awaiting.length} related {out.awaiting.length === 1 ? "entry" : "entries"} for this search</h2>
+            <ul className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 py-6" aria-label="Related entries">
               {out.awaiting.slice(0, shownAwaiting).map((x) => <li key={x.record.id} className="flex"><Card x={x} /></li>)}
             </ul>
             {out.awaiting.length > shownAwaiting && (
@@ -131,14 +126,15 @@ export default function AtlasResults({ places }: { places: string[] }) {
 
 function Card({ x }: { x: Result }) {
   const r = x.record;
+  const [broken, setBroken] = useState(false);
   const eyebrow = [r.category ? CATEGORY_LABEL[r.category] : r.filedAs, r.country, ...r.collections.map((c) => COLLECTION_LABEL[c])].filter(Boolean).join(" · ");
-  const quiet = x.offer && (x.offer.state === "outside" || x.offer.state === "recheck");
+  const quiet = false;
   const action = r.booking === "engine" ? "View and reserve" : x.availability.state === "departs" ? "See the sailing" : "View and ask";
   return (
     <article className="flex flex-col w-full bg-paper border ledger-border border-t-[5px] border-t-stone">
       <Link href={r.href} className="block bg-mist aspect-[16/10] overflow-hidden" tabIndex={-1} aria-hidden="true">
         {/* eslint-disable-next-line @next/next/no-img-element -- Ledger photographs live on several hosts; a plain lazy image keeps the card independent of the image optimiser */}
-        {r.image ? <img src={r.image} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" onError={(e) => { e.currentTarget.style.visibility = "hidden"; }} /> : <span className="flex w-full h-full items-center justify-center ledger-eyebrow">Photograph to follow</span>}
+        {r.image && !broken ? <img src={r.image} alt="" loading="lazy" decoding="async" className="w-full h-full object-cover" onError={() => setBroken(true)} /> : <span className="flex flex-col w-full h-full items-center justify-center gap-1 text-center px-4"><span className="ledger-display text-[1.15rem]">James Wild &amp; Co</span><span className="ledger-eyebrow">Photograph to follow</span></span>}
       </Link>
       <div className="px-5 pt-4 pb-1">
         <p className="ledger-eyebrow">{eyebrow}</p>
@@ -151,12 +147,12 @@ function Card({ x }: { x: Result }) {
         <div className={`-mx-5 px-5 py-2.5 border-t ledger-border ${x.offer && !quiet ? "bg-mist" : ""}`}>
           <dt className="ledger-eyebrow !text-[10px]">{x.offer && !quiet ? `Offer · ${x.offer.offer.program}` : "Offer"}</dt>
           <dd className="text-[13.5px] leading-snug mt-0.5">
-            {x.offer ? x.offer.line : "No offer on file here at present."}
+            {x.offer ? x.offer.line : "No current offer for this search."}
             {x.offer && <span className="block text-[12px] ledger-muted mt-1">{x.offer.meta ? `${x.offer.meta} · ` : ""}<span className="ledger-id">{x.offer.offer.id}</span></span>}
           </dd>
         </div>
         <Line label="Availability">{x.availability.line}{r.price ? ` ${r.price.basis}: ${r.price.amount}.` : ""}</Line>
-        {x.unknowns.length > 0 && <Line label="Not filed">{x.unknowns.join(" ")}</Line>}
+        {x.unknowns.length > 0 && <Line label="The house confirms">{x.unknowns.join(" ")}</Line>}
       </dl>
       <div className="px-5 pb-4 pt-1 mt-auto">
         <Link href={r.href} className="ledger-btn-ghost inline-flex items-center gap-2 min-h-[44px] text-[16px]">{action}<span className="sr-only">: {r.name}</span></Link>

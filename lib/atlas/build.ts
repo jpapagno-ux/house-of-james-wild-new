@@ -3,6 +3,7 @@ import type { AtlasOffer, AtlasRecord, Collection, Interest } from "./match";
 import { classifyReserveCamp, classifyRoute, classifyShip, classifyStay, conditionKind, conditionMinStay, decided, shipInterests, stayInterests, type Verdict } from "./classify";
 import { parseMonths } from "./match";
 import DECISIONS from "./category-decisions.json";
+import HOLDS from "./holds.json";
 import { STAYS, pageReady, type StayData } from "@/lib/content/stays";
 import { RESERVES, campHref, campReady, campStatus } from "@/lib/content/reserves";
 import { SHIP_REGISTRY } from "@/lib/content/ships/registry";
@@ -30,6 +31,8 @@ import { isPast, today } from "@/lib/dates";
 // private note may be added to a row: the index is served to every browser (James, 20 Nov 2026).
 
 const decisions = (DECISIONS as { decisions: Record<string, string> }).decisions;
+/** Records whose Ledger entry contradicts itself: kept out of the Atlas until reconciled (lib/atlas/holds.json). */
+const held = new Set(Object.keys((HOLDS as { held: Record<string, string> }).held));
 const KIND_WORD: Record<string, string> = { hotel: "Hotel", guesthouse: "Guesthouse", resort: "Resort", lodge: "Lodge", camp: "Camp", villa: "Villa", private_house: "Private house", riverboat: "Riverboat", dahabiya: "Dahabiya", phinisi: "Phinisi", catamaran: "Catamaran", yacht: "Yacht", schooner: "Schooner", "river-yacht": "River yacht", "motor-yacht": "Motor yacht", "expedition-ship": "Expedition ship", trimaran: "Trimaran", bangka: "Bangka" };
 const regionLabel = (slug: string | null) => REGIONS.find((r) => r.slug === slug)?.label ?? null;
 const countryOf = (name: string | null) => (name ? COUNTRIES.find((c) => c.name === name || c.name.startsWith(name)) ?? null : null);
@@ -72,7 +75,7 @@ export function atlasIndex(): AtlasRecord[] {
 
   // Stays with a published page. A reserve filed as a stay is listed once, as its reserve (below).
   for (const s of STAYS as StayData[]) {
-    if (!pageReady(s) || reserveSlugs.has(s.slug)) continue;
+    if (!pageReady(s) || reserveSlugs.has(s.slug) || (s.ledgerId && held.has(s.ledgerId))) continue;
     const ef = exceptionalFewFor(s.ledgerId);
     const pathways = s.pathway?.status === "approved" ? [s.pathway.primary, ...s.pathway.secondary] : [];
     const own = parseMonths(s.bestMonths), months = own ?? bestMonths(s.country);

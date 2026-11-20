@@ -191,13 +191,13 @@ export function whereScore(r: AtlasRecord, where: string): number {
 export type SeasonState = "in" | "outside" | "not-filed" | "sails" | "no-dates";
 export function season(r: AtlasRecord, q: AtlasQuery): { state: SeasonState; line: string } {
   if (r.departures) return { state: "sails", line: r.departures.length ? `Sails ${sailingSpan(r.departures)}.` : "No open departures are published at present." };
-  if (!r.bestMonths) return { state: "not-filed", line: "Season not filed for this place." };
+  if (!r.bestMonths) return { state: "not-filed", line: "Ask the house about the best months here." };
   const here = r.seasonOf === "place";
   const inPlace = here ? " here" : r.country ? ` in ${r.country}` : "";
   if (!hasDates(q)) return { state: "no-dates", line: `Best months${inPlace}: ${monthRuns(r.bestMonths)}.` };
   const asked = monthsOf(q);
   return asked.some((m) => r.bestMonths!.includes(m))
-    ? { state: "in", line: `In season${inPlace} for your dates.` }
+    ? { state: "in", line: `Your dates fall in the best months${here ? " filed for this place" : r.country ? ` for ${r.country}` : ""}. Opening dates are confirmed by the house.` }
     : { state: "outside", line: `Outside the best months${here ? " filed for this place" : r.country ? ` for ${r.country}` : ""} (${monthRuns(r.bestMonths)}).` };
 }
 
@@ -275,12 +275,12 @@ export function offerLine(r: AtlasRecord, q: AtlasQuery, on: string = today()): 
   const ranked = r.offers.map((o) => ({ o, s: offerState(o, q, on) })).sort((a, b) => RANK[a.s] - RANK[b.s] || b.o.checked.localeCompare(a.o.checked));
   const top = ranked[0]; if (!top) return null;
   const { o, s } = top;
+  // Only an offer whose terms are current and whose window meets the search is shown. One that runs outside the dates,
+  // or whose terms are overdue a check, is not printed at all (Release Gate, 20 Nov 2026).
+  if (s === "outside" || s === "recheck") return null;
   const win = o.bookingWindow ? `Book by ${day(o.to)}` : `Travel ${day(o.from)} to ${day(o.to)}`;
-  const line = s === "eligible" ? `${o.headline}. Applies to your dates.`
-    : s === "unknown" ? `${o.headline}. May apply. ${mayApplyReason(o, q)} Your advisor confirms.`
-    : s === "outside" ? `An offer runs here outside your dates. ${win}.`
-    : `${o.headline}. Terms being re-checked, shown for reference only.`;
-  return { offer: o, state: s, line, meta: s === "outside" ? "" : `${win} · Terms checked ${day(o.checked)}` };
+  const line = s === "eligible" ? `${o.headline}. Applies to your dates.` : `${o.headline}. May apply. ${mayApplyReason(o, q)} Your advisor confirms.`;
+  return { offer: o, state: s, line, meta: `${win} · Terms checked ${day(o.checked)}` };
 }
 
 export type AvailabilityState = "engine" | "departs" | "none-in-dates" | "no-departures" | "request";
@@ -300,8 +300,8 @@ export function availability(r: AtlasRecord, q: AtlasQuery): { state: Availabili
 export function unknowns(r: AtlasRecord, q: AtlasQuery): string[] {
   const out: string[] = [];
   const party = q.adults + q.children.length;
-  if (r.kind !== "route" && r.kind !== "dossier" && r.kind !== "reserve" && party > 2 && r.sleeps === null) out.push(r.familyFiled ? `Sleeps: filed as suited to families. Rooms for ${party} travellers are confirmed by the house.` : `Sleeps: occupancy not filed. Ask the house before planning for ${party} travellers.`);
-  if (q.children.length && r.minChildAge === null) out.push("Children: age policy not filed. Ask the house.");
+  if (r.kind !== "route" && r.kind !== "dossier" && r.kind !== "reserve" && party > 2 && r.sleeps === null) out.push(r.familyFiled ? `Rooms for ${party} travellers are confirmed by the house before anything is planned.` : `Rooms for ${party} travellers are confirmed by the house before anything is planned.`);
+  if (q.children.length && r.minChildAge === null) out.push("The policy for children is confirmed by the house.");
   return out;
 }
 
@@ -314,6 +314,8 @@ export type Outcome = {
   awaitingCategory: number;
   /** Those same records, in the same order as the results. Shown apart from the results, under what the Ledger files them as, never as members of the category. */
   awaiting: Result[];
+  /** Savings first with no current offer among the results: the order is Best match, and the page says so. */
+  savingsEmpty: boolean;
   /** How many results carry at least one fact the search asked about and the Ledger does not hold. */
   withUnknowns: number;
   offers: { eligible: number; mayApply: number };
@@ -356,6 +358,7 @@ export function search(records: AtlasRecord[], q: AtlasQuery, on: string = today
   results.sort(byKey); awaiting.sort(byKey);
   return {
     results, awaitingCategory: awaiting.length, awaiting,
+    savingsEmpty: q.sort === "savings" && !results.some((x) => x.offer),
     withUnknowns: results.filter((x) => x.unknowns.length).length,
     offers: { eligible: results.filter((x) => x.offer?.state === "eligible").length, mayApply: results.filter((x) => x.offer?.state === "unknown").length },
   };

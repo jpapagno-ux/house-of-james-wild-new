@@ -1,3 +1,4 @@
+import { undash } from "@/lib/content/ships/types";
 // JWC-STYLE-01: everything the Modern Journal stay page prints, read from the site's existing loaders. Nothing is
 // typed in here: no rate, date, offer, name or sentence about a property. A field the record does not hold comes
 // back empty and the page shows the section's "to file" state (or drops the section).
@@ -110,8 +111,17 @@ function rateCard(slug: string, photos: Photo[]): RateCard | null {
   };
 }
 
+function clean<T>(x: T): T {
+  if (typeof x === "string") return (/[\u2013\u2014]/.test(x) && !/^https?:/.test(x) ? undash(x) : x) as T;
+  if (Array.isArray(x)) return x.map(clean) as T;
+  if (x && typeof x === "object") return Object.fromEntries(Object.entries(x).map(([k, v]) => [k, clean(v)])) as T;
+  return x;
+}
+
 export function journalStay(slug: string) {
-  const s: StayData | undefined = JOURNAL_STAYS.includes(slug) ? stayBySlug(slug) : undefined;
+  // House rule: no em or en dashes in public copy. The filed record is untouched; this is the page's display copy.
+  const filedStay: StayData | undefined = JOURNAL_STAYS.includes(slug) ? stayBySlug(slug) : undefined;
+  const s: StayData | undefined = filedStay ? clean(filedStay) : undefined;
   if (!s || !s.hero) return null;
   const path = `/stays/${s.slug}`;
   const filed: Photo[] = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => {

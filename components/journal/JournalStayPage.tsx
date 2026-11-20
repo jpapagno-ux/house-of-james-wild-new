@@ -32,7 +32,7 @@ import { absoluteUrl } from "@/lib/seo";
 import { graph, imageObject, lodging } from "@/lib/schema";
 import { entryNo } from "@/lib/volumes";
 import { day, journalStay, money, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
-import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, StickyBar, PhotoViewer, PhotoLink, PhotoStrip, DatesBar, PickRoom, RequestForm } from "./journal-style";
+import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, SectionHead, StickyBar, PhotoViewer, PhotoLink, PhotoStrip, DatesBar, PickRoom, RequestForm } from "./journal-style";
 import type { OfferRow } from "./JournalOffers";
 
 // JWC-STYLE-01, Stages 1 to 9: the Modern Journal stay page, for the pilot's sample stays only (lib/journal-style/
@@ -110,7 +110,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   // Sections are numbered in the order they print, so a dropped section never leaves a gap.
   let n = 0;
   const N = { rooms: rates ? no(++n) : "", exp: no(++n), detail: features.length || reasons.length ? no(++n) : "", offers: offerRows.length ? no(++n) : "", reserve: no(++n), map: hasMap ? no(++n) : "", questions: s.faqs.length ? no(++n) : "" };
-  const jump: [string, string][] = [...(reasons.length ? [["Why we vetted it", "why"] as [string, string]] : []), ...(v.video ? [["Film", "film"] as [string, string]] : []), ...(rates || v.roomData ? [["Rooms", "rooms"] as [string, string]] : []), ["Experiences", "experiences"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ["Reserve", "reserve"], ...(v.hostReady ? [["Meet the host", "host"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
+  const jump: [string, string][] = [...(reasons.length ? [["Why we vetted it", "why"] as [string, string]] : []), ...(v.video ? [["Film", "film"] as [string, string]] : []), ...(rates || v.roomData || s.rooms.paras.length || s.rooms.items.length ? [["Rooms", "rooms"] as [string, string]] : []), ["Experiences", "experiences"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ["Reserve", "reserve"], ...(v.hostReady ? [["Meet the host", "host"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
   const sign = CHOSEN["signoff-4"];
   const inSection = (k: SectionKey) => v.photos.filter((p) => p.section === k);
   const roomNames = rates ? rates.rooms.map((r) => r.name) : v.roomData?.rooms.map((r) => r.name) ?? [];
@@ -135,6 +135,17 @@ export default function JournalStayPage({ slug }: { slug: string }) {
             {v.video && <div className="[&>section]:!mt-0"><WhyFilm title={`${s.name}, on film`} blocks={[]} suited={[]} name={s.name} video={v.video} poster={v.slides[1]?.url ?? v.frames[0]?.url} planHref={planHref} hideEmptyFilm /></div>}
 
             {/* a stay whose rooms and rates are filed in the house's room record keeps the house's own rooms block, unchanged */}
+            {/* a record with room text but no room list or rate on file: the text, the dates bar, and the rate on enquiry */}
+            {!rates && !v.roomData && (s.rooms.paras.length > 0 || s.rooms.items.length > 0) && (
+              <section id="rooms" aria-label="Rooms" className="bg-white">
+                <SectionHead label="Rooms" title="Where You'll Sleep" />
+                {s.rooms.paras.length > 0 && <div className="mt-6 max-w-3xl space-y-4 text-[16px] leading-relaxed text-graphite">{s.rooms.paras.map((t) => <p key={t}>{t}</p>)}</div>}
+                {s.rooms.items.length > 0 && <ul className="mt-6 max-w-3xl border-t border-[color:var(--jw-keyline)]">{s.rooms.items.map((t) => <li key={t} className="border-b border-[color:var(--jw-hairline)] py-3 font-display text-[19px] text-graphite">{t}</li>)}</ul>}
+                <p className="mt-5 font-mono text-[10.5px] tracking-[0.22em] uppercase text-stone-text">Rate on enquiry · the house confirms it for your dates</p>
+                <DatesBar slug={s.slug} reserveHref="#reserve" />
+                {inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}
+              </section>
+            )}
             {v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /><DatesBar slug={s.slug} reserveHref="#reserve" />{inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}</div>}
 
             {rates && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates.promo} reserveHref="#reserve"

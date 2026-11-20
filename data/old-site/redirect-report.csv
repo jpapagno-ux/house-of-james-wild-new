@@ -64,7 +64,7 @@ old path,new path,why,old title
 /book/conrad-tulum-riviera-maya,/stays/conrad-tulum-riviera-maya,booking page -> stay page,Book your stay at Conrad Tulum Riviera Maya | Wild Earth Stays
 /book/coot-club,/stays/coot-club,booking page -> stay page,Book your stay at Coot Club | Wild Earth Stays
 /book/cottars-1920-camp,/stays/cottars-1920-camp,booking page -> stay page,Book your stay at Cottars 1920 Camp | Wild Earth Stays
-/book/daunara-safari-camp,/stays/daunara-safari-camp,booking page -> stay page,Book your stay at Daunara Safari Camp | Wild Earth Stays
+/book/daunara-safari-camp,/destinations/africa/botswana,booking page -> not on the new site yet; country page,Book your stay at Daunara Safari Camp | Wild Earth Stays
 /book/duba-plains-camp-by-great-plains,/stays/great-plains-duba-plains,booking page -> stay page,Book your stay at Duba Plains Camp by Great Plains | Wild Earth Stays
 /book/dukes-camp-okavango,/stays/dukes-camp-okavango,booking page -> stay page,Book your stay at Dukes Camp Okavango | Wild Earth Stays
 /book/dulini-anabezi-lodge,/stays/dulini-anabezi-lodge,booking page -> stay page,Book your stay at Dulini Anabezi Lodge | Wild Earth Stays
@@ -513,7 +513,7 @@ old path,new path,why,old title
 /property/coot-club,/stays/coot-club,stay page,Coot Club | Luxury Stays in South Africa | Wild Earth Stays
 /property/corks-vienna-woods,/stays/corks-vienna-woods,stay page,Cork’s Vienna Woods | Luxury Stays in Ireland | Wild Earth Stays
 /property/cottars-1920-camp,/stays/cottars-1920-camp,stay page,Cottars 1920 Camp | Luxury Stays in Kenya | Wild Earth Stays
-/property/daunara-safari-camp,/stays/daunara-safari-camp,stay page,Daunara Safari Camp | Luxury Stays in Botswana | Wild Earth Stays
+/property/daunara-safari-camp,/destinations/africa/botswana,not on the new site yet; country page,Daunara Safari Camp | Luxury Stays in Botswana | Wild Earth Stays
 /property/dukes-camp-okavango,/stays/dukes-camp-okavango,stay page,Dukes Camp Okavango | Luxury Stays in Botswana | Wild Earth Stays
 /property/dulini-anabezi-lodge,/stays/dulini-anabezi-lodge,stay page,Dulini Anabezi Lodge | Luxury Stays in Zambia | Wild Earth Stays
 /property/dulini-daunara-lodge,/stays/dulini-daunara-lodge,stay page,Dulini Daunara Lodge | Luxury Stays in South Africa | Wild Earth Stays
@@ -1112,9 +1112,9 @@ old path,new path,why,old title
 /stay/cottars-1920-camp-deluxe-honeymoon-suites,/stays/cottars-1920-camp,room of cottars-1920-camp -> stay page,Deluxe Honeymoon Tent at Cottars 1920 Camp | Wild Earth Stays
 /stay/cottars-1920-camp-double-canvas-tent,/stays/cottars-1920-camp,room of cottars-1920-camp -> stay page,Double Canvas Tent at Cottars 1920 Camp | Wild Earth Stays
 /stay/cottars-1920-camp-family-suite,/stays/cottars-1920-camp,room of cottars-1920-camp -> stay page,Family Suite at Cottars 1920 Camp | Wild Earth Stays
-/stay/dulini-daunara-lodge-exclusive-use-camp,/stays/daunara-safari-camp,room of daunara-safari-camp -> stay page,Exclusive Use Camp at Daunara Safari Camp | Wild Earth Stays
-/stay/dulini-daunara-lodge-family-tented-suite,/stays/daunara-safari-camp,room of daunara-safari-camp -> stay page,Family Tented Suite at Daunara Safari Camp | Wild Earth Stays
-/stay/dulini-daunara-lodge-luxury-tented-suites,/stays/daunara-safari-camp,room of daunara-safari-camp -> stay page,Luxury Tented Suites at Daunara Safari Camp | Wild Earth Stays
+/stay/dulini-daunara-lodge-exclusive-use-camp,/destinations/africa/botswana,room of daunara-safari-camp -> not on the new site yet; country page,Exclusive Use Camp at Daunara Safari Camp | Wild Earth Stays
+/stay/dulini-daunara-lodge-family-tented-suite,/destinations/africa/botswana,room of daunara-safari-camp -> not on the new site yet; country page,Family Tented Suite at Daunara Safari Camp | Wild Earth Stays
+/stay/dulini-daunara-lodge-luxury-tented-suites,/destinations/africa/botswana,room of daunara-safari-camp -> not on the new site yet; country page,Luxury Tented Suites at Daunara Safari Camp | Wild Earth Stays
 /stay/dulini-leadwood-lodge-luxury-leadwood-suites,/stays/dulini-leadwood-lodge,room of dulini-leadwood-lodge -> stay page,Luxury Leadwood Suites at Dulini Leadwood Lodge | Wild Earth Stays
 /stay/dulini-moya-lodge,/stays/dulini-moya-lodge,room of dulini-moya-lodge -> stay page,Suite at Dulini Moya Lodge | Wild Earth Stays
 /stay/dunia-camp-by-asilia-classic-safari-tent,/stays/asilia-dunia-camp,room of asilia-dunia-camp -> stay page,Classic Safari Tent at Dunia Camp by Asilia | Wild Earth Stays

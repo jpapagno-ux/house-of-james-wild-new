@@ -749,133 +749,6 @@
    "placeSlug": null
   },
   {
-   "slug": "tengile-mala-mala-kirkmans-kamp",
-   "name": "&Beyond Kirkman's Kamp",
-   "ledgerId": "STY-2026-000293",
-   "country": "South Africa",
-   "countrySlug": "south-africa",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "Historic safari charm overlooking one of Africa's greatest wildlife landscapes.",
-   "quote": "Where safari traditions live on and every sunset becomes a memory.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c636dd862_5ce4e7daf_6a511c21d736e3f6fb85883e_Kirkmans-kamp.jpg",
-   "gallery": [],
-   "bestMonths": "May - October",
-   "bestMonthsNote": "The dry winter safari season provides ideal wildlife viewing conditions. Animals congregate around permanent water sources, vegetation thins out and visibility improves dramatically, creating exceptional opportunities for photography and wildlife encounters.",
-   "bestFor": [
-    "family",
-    "honeymoon",
-    "adventure",
-    "solo",
-    "first_safari",
-    "wildlife_photography"
-   ],
-   "status": "founder_returned",
-   "statusDate": "2026-05-01",
-   "coords": {
-    "lat": -24.9348,
-    "lng": 31.5594
-   },
-   "airport": "Skukuza Airport (SZK)",
-   "airportDirections": "Fly to Skukuza Airport (SZK), then transfer by road to Kirkman's Kamp.",
-   "founderNote": "If you want old Africa rather than a polished impression of it, this is the address. Heritage safari, done by people who mean it. Stayed May 2026; a founder favourite. , JW",
-   "rooms": {
-    "paras": [
-     "Twelve guest cottages, each with views of the landscape around the Sand River. One is a family cottage, made of two interconnected cottages."
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [],
-    "items": [
-     "Big Five Safari Drives",
-     "Wildlife Photography",
-     "Bird Watching",
-     "Bush Walks",
-     "Stargazing",
-     "Heritage Safari Experiences"
-    ]
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Historic 1920s homestead setting",
-     "Sand River views",
-     "Twelve guest cottages, including a family cottage",
-     "Infinity swimming pool",
-     "Traditional safari verandah",
-     "Family-friendly atmosphere",
-     "Wildlife viewing opportunities",
-     "Classic safari hospitality"
-    ]
-   },
-   "onlyHere": [
-    "Kirkman's Kamp celebrates the romance of Africa's golden safari era. Set around a historic homestead dating back to the 1920s, the lodge combines timeless character with exceptional wildlife encounters, creating an experience that feels both nostalgic and deeply authentic."
-   ],
-   "why": [],
-   "facts": {
-    "best_months": "May to October, the dry winter season, for ideal wildlife viewing.",
-    "how_to_get_there": "Fly into Skukuza Airport (SZK), then transfer by road to the lodge.",
-    "signature_experiences": "Big Five safari drives, heritage safari experiences and bush walks.",
-    "who_its_for": "Families, couples, solo travellers and first-time safari guests who want a classic safari camp with history."
-   },
-   "faqs": [
-    {
-     "q": "Where is Kirkman's Kamp?",
-     "a": "Kirkman's Kamp is inside the Sabi Sand Nature Reserve, adjacent to Kruger National Park, with views over the Sand River. It is an &Beyond lodge."
-    },
-    {
-     "q": "What makes Kirkman's Kamp different?",
-     "a": "It is set around a historic homestead from the 1920s, with a traditional safari verandah and twelve guest cottages."
-    },
-    {
-     "q": "How do you get to Kirkman's Kamp?",
-     "a": "Fly into Skukuza Airport (SZK), then transfer by road to the lodge."
-    },
-    {
-     "q": "When is the best time to visit Kirkman's Kamp?",
-     "a": "May to October. In the dry winter animals gather at permanent water and visibility improves."
-    },
-    {
-     "q": "Is Kirkman's Kamp good for a first safari?",
-     "a": "Yes. It lists first-time safari travellers among its best fits, and the family cottage, two interconnected cottages, makes it work for families too."
-    }
-   ],
-   "reviewed": true,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-04",
-    "secondary": [
-     "PATH-08"
-    ],
-    "setting": "sabi_sand",
-    "intentions": [
-     "big_five",
-     "heritage",
-     "photography"
-    ],
-    "suitability": [
-     "couples",
-     "photographers",
-     "returning_safari_goers"
-    ],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
-    "classifiedAt": "2026-10-30"
-   },
-   "volumes": [
-    "safaris",
-    "stays"
-   ],
-   "arrivalHubIds": [
-    "6ae6975201f48e4a41de6174"
-   ],
-   "placeSlug": null
-  },
-  {
    "slug": "beyond-kleins-camp",
    "name": "&Beyond Klein’s Camp",
    "ledgerId": "STY-2026-162357",
@@ -1093,119 +966,6 @@
     "safaris"
    ],
    "arrivalHubIds": [],
-   "placeSlug": null
-  },
-  {
-   "slug": "tengile-river-lodge-by-mala-mala",
-   "name": "&Beyond Tengile River Lodge",
-   "ledgerId": "STY-2026-000294",
-   "country": "South Africa",
-   "countrySlug": "south-africa",
-   "regionSlug": "africa",
-   "misfiled": null,
-   "category": "hotel",
-   "tagline": "Where the river slows time and the wild comes to you",
-   "quote": "Begin each day with the sunrise over the river, watch leopards from your deck, and enjoy world-class comfort in the heart of the wild.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/44296e67d_9acaa06f6_691ed4282f77a7b1637ebb82_beyond-tengile-river-lodge.jpg",
-   "gallery": [],
-   "bestMonths": "May to September, December to March",
-   "bestMonthsNote": "May to September is dry season with best Big Five viewing, cool weather, and open bush. December to March is green and beautiful, with great birding and fewer crowds.",
-   "bestFor": [
-    "family",
-    "solo",
-    "wildlife_photography",
-    "luxury"
-   ],
-   "status": "unclassified",
-   "statusDate": null,
-   "coords": {
-    "lat": -24.932,
-    "lng": 31.5561
-   },
-   "airport": "Skukuza Airport, Kruger Mpumalanga International Airport",
-   "airportDirections": "Fly to Skukuza or KMIA, road transfer of 1.5 to 2.5 hours to lodge. Charter flights also available to nearby airstrips.",
-   "founderNote": null,
-   "rooms": {
-    "paras": [
-     "Nine secluded, air-conditioned suites with river views, each with a private lap pool and a sunken outdoor lounge on its deck. For families, two of the suites are joined by a covered walkway to make a family suite."
-    ],
-    "items": []
-   },
-   "experiences": {
-    "paras": [
-     "Twice-daily game drives, Big Five sightings, walking safaris, birding, photographic safaris, wellness spa treatments, private dining, bush breakfasts, and sundowners."
-    ],
-    "items": []
-   },
-   "features": {
-    "paras": [],
-    "items": [
-     "Modern eco-luxury design with panoramic river views",
-     "Private plunge pools, spa and wellness center",
-     "Exclusive Big Five sightings",
-     "Family-friendly accommodations",
-     "Personal butler and private safari vehicles available"
-    ]
-   },
-   "onlyHere": [
-    "&Beyond Tengile River Lodge is for travelers seeking the ultimate in luxury, privacy, and wildlife. It is perfect for couples, families, solo adventurers, and photographers who value modern comfort, exclusive experiences, and the wild beauty of Sabi Sand."
-   ],
-   "why": [
-    {
-     "title": "Riverfront Luxury, Wild Heart",
-     "body": "Tengile River Lodge combines cutting edge design with legendary wildlife and warm hospitality. Best for couples, families, and anyone seeking an unforgettable Big Five experience in supreme comfort."
-    }
-   ],
-   "facts": {
-    "best_months": "May to September for dry-season Big Five viewing; December to March for green bush, birding and fewer crowds.",
-    "how_to_get_there": "Fly to Skukuza or Kruger Mpumalanga International, then a 1.5 to 2.5 hour road transfer; charters to nearby airstrips are available.",
-    "who_its_for": "Couples, families, solo adventurers and photographers who want a modern riverfront lodge.",
-    "signature_experiences": "Twice-daily game drives, walking safaris and photographic safaris."
-   },
-   "faqs": [
-    {
-     "q": "Where is Tengile River Lodge?",
-     "a": "Tengile River Lodge is an &Beyond lodge in the Sabi Sand Game Reserve, which shares an unfenced boundary with Kruger National Park. It faces the Sand River."
-    },
-    {
-     "q": "How do you get to Tengile River Lodge?",
-     "a": "Fly to Skukuza or Kruger Mpumalanga International, then a 1.5 to 2.5 hour road transfer. Charter flights to nearby airstrips are also available."
-    },
-    {
-     "q": "When is the best time to visit Tengile River Lodge?",
-     "a": "May to September for dry-season Big Five viewing and cool weather. December to March is green, with great birding and fewer crowds."
-    },
-    {
-     "q": "How many suites does Tengile River Lodge have?",
-     "a": "Nine secluded suites with river views, each with a private lap pool on its deck. Two of them can be joined to make a family suite."
-    },
-    {
-     "q": "Is Tengile River Lodge good for families?",
-     "a": "Yes. Two of the suites are joined by a covered walkway to make a family suite."
-    }
-   ],
-   "reviewed": true,
-   "reserveChild": false,
-   "parentSlug": null,
-   "engine": null,
-   "pathway": {
-    "primary": "PATH-04",
-    "secondary": [],
-    "setting": "sabi_sand",
-    "intentions": [],
-    "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
-   },
-   "volumes": [
-    "stays",
-    "safaris"
-   ],
-   "arrivalHubIds": [
-    "6ae6975201f48e4a41de6174",
-    "6ae6975142da92bdd9e00a2e"
-   ],
    "placeSlug": null
   },
   {
@@ -55512,6 +55272,135 @@
    "placeSlug": null
   },
   {
+   "slug": "tengile-mala-mala-kirkmans-kamp",
+   "name": "Tengile Mala Mala \n Kirkman's Kamp",
+   "ledgerId": "STY-2026-000293",
+   "country": "South Africa",
+   "countrySlug": "south-africa",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Historic safari charm overlooking one of Africa's greatest wildlife landscapes.",
+   "quote": "Where safari traditions live on and every sunset becomes a memory.",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/c636dd862_5ce4e7daf_6a511c21d736e3f6fb85883e_Kirkmans-kamp.jpg",
+   "gallery": [],
+   "bestMonths": "May - October",
+   "bestMonthsNote": "The dry winter safari season provides ideal wildlife viewing conditions. Animals congregate around permanent water sources, vegetation thins out and visibility improves dramatically, creating exceptional opportunities for photography and wildlife encounters.",
+   "bestFor": [
+    "family",
+    "honeymoon",
+    "adventure",
+    "solo",
+    "first_safari",
+    "wildlife_photography"
+   ],
+   "status": "founder_returned",
+   "statusDate": "2026-05-01",
+   "coords": {
+    "lat": -24.9348,
+    "lng": 31.5594
+   },
+   "airport": "Skukuza Airport (SZK) MalaMala Private Airstrip O.R. Tambo International Airport (JNB)",
+   "airportDirections": "Best Arrival Airport: Skukuza Airport (SZK)\nApproximately 1-hour transfer to Kirkman's Kamp.\nCharter flights operate directly into the MalaMala private airstrip.\nJohannesburg road transfer approximately 5–6 hours.",
+   "founderNote": "If you want old Africa rather than a polished impression of it, this is the address. Heritage safari, done by people who mean it. Stayed May 2026; a founder favourite. , JW",
+   "rooms": {
+    "paras": [
+     "Twelve cottages, one of which is a family unit."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Big Five Safari Drives",
+     "Wildlife Photography",
+     "Bird Watching",
+     "Bush Walks",
+     "Stargazing",
+     "Heritage Safari Experiences"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Historic 1920s homestead setting",
+     "Sand River views",
+     "Twelve cottages, including a family unit",
+     "Infinity swimming pool",
+     "Traditional safari verandah",
+     "Family-friendly atmosphere",
+     "Wildlife viewing opportunities",
+     "Classic safari hospitality"
+    ]
+   },
+   "onlyHere": [
+    "Kirkman's Kamp celebrates the romance of Africa's golden safari era. Set around a historic homestead dating back to the 1920s, the lodge combines timeless character with exceptional wildlife encounters, creating an experience that feels both nostalgic and deeply authentic."
+   ],
+   "why": [],
+   "facts": {
+    "best_months": "May to October, the dry winter season, for ideal wildlife viewing.",
+    "how_to_get_there": "Fly into Skukuza Airport (SZK), about a 1-hour transfer; charters fly to the MalaMala private airstrip, and the road from Johannesburg (JNB) is about 5 to 6 hours.",
+    "signature_experiences": "Big Five safari drives, heritage safari experiences and bush walks.",
+    "who_its_for": "Families, couples, solo travellers and first-time safari guests who want a classic safari camp with history."
+   },
+   "faqs": [
+    {
+     "q": "Where is Kirkman's Kamp?",
+     "a": "Kirkman's Kamp is in Tengile Game Reserve, part of the Sabi Sand Nature Reserve in Greater Kruger, with views over the Sand River. It belongs to the Tengile MalaMala Collection."
+    },
+    {
+     "q": "What makes Kirkman's Kamp different?",
+     "a": "It is set around a historic homestead from the 1920s, with a traditional safari verandah and twelve cottages."
+    },
+    {
+     "q": "How do you get to Kirkman's Kamp?",
+     "a": "Fly into Skukuza Airport (SZK), about a 1-hour transfer. Charters fly to the MalaMala private airstrip, and the road from Johannesburg is about 5 to 6 hours."
+    },
+    {
+     "q": "When is the best time to visit Kirkman's Kamp?",
+     "a": "May to October. In the dry winter animals gather at permanent water and visibility improves."
+    },
+    {
+     "q": "Is Kirkman's Kamp good for a first safari?",
+     "a": "Yes. It lists first-time safari travellers among its best fits, and the family unit makes it work for families too."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": "sabi_sand_malamala",
+    "intentions": [
+     "big_five",
+     "heritage",
+     "photography"
+    ],
+    "suitability": [
+     "couples",
+     "photographers",
+     "returning_safari_goers"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 1, drafted by Iggi)",
+    "classifiedAt": "2026-10-30"
+   },
+   "volumes": [
+    "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae69752aa92aef07ea601e7",
+    "6ae697525877c4a2f38254a8"
+   ],
+   "placeSlug": null
+  },
+  {
    "slug": "tengile-mala-mala-rattrays-lodge",
    "name": "Tengile Mala Mala \n Rattray's Lodge",
    "ledgerId": "STY-2026-683455",
@@ -55748,6 +55637,119 @@
     "6ae6975201f48e4a41de6174",
     "6ae69752aa92aef07ea601e7",
     "6ae697525877c4a2f38254a8"
+   ],
+   "placeSlug": null
+  },
+  {
+   "slug": "tengile-river-lodge-by-mala-mala",
+   "name": "Tengile River Lodge by Tengile Mala Mala",
+   "ledgerId": "STY-2026-000294",
+   "country": "South Africa",
+   "countrySlug": "south-africa",
+   "regionSlug": "africa",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Where the river slows time and the wild comes to you",
+   "quote": "Begin each day with the sunrise over the river, watch leopards from your deck, and enjoy world-class comfort in the heart of the wild.",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/44296e67d_9acaa06f6_691ed4282f77a7b1637ebb82_beyond-tengile-river-lodge.jpg",
+   "gallery": [],
+   "bestMonths": "May to September, December to March",
+   "bestMonthsNote": "May to September is dry season with best Big Five viewing, cool weather, and open bush. December to March is green and beautiful, with great birding and fewer crowds.",
+   "bestFor": [
+    "family",
+    "solo",
+    "wildlife_photography",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -24.932,
+    "lng": 31.5561
+   },
+   "airport": "Skukuza Airport, Kruger Mpumalanga International Airport",
+   "airportDirections": "Fly to Skukuza or KMIA, road transfer of 1.5 to 2.5 hours to lodge. Charter flights also available to nearby airstrips.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Nine large river-facing suites, including one family suite, each with a private deck and plunge pool, lounge and dining areas, a spacious bedroom, and an open-plan bathroom."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Twice-daily game drives, Big Five sightings, walking safaris, birding, photographic safaris, wellness spa treatments, private dining, bush breakfasts, and sundowners."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Modern eco-luxury design with panoramic river views",
+     "Private plunge pools, spa and wellness center",
+     "Exclusive Big Five sightings",
+     "Family-friendly accommodations",
+     "Personal butler and private safari vehicles available"
+    ]
+   },
+   "onlyHere": [
+    "Tengile River Lodge, part of the Tengile MalaMala Collection, is for travelers seeking the ultimate in luxury, privacy, and wildlife. It is perfect for couples, families, solo adventurers, and photographers who value modern comfort, exclusive experiences, and the wild beauty of Sabi Sand."
+   ],
+   "why": [
+    {
+     "title": "Riverfront Luxury, Wild Heart",
+     "body": "Tengile River Lodge combines cutting edge design with legendary wildlife and warm hospitality. Best for couples, families, and anyone seeking an unforgettable Big Five experience in supreme comfort."
+    }
+   ],
+   "facts": {
+    "best_months": "May to September for dry-season Big Five viewing; December to March for green bush, birding and fewer crowds.",
+    "how_to_get_there": "Fly to Skukuza or Kruger Mpumalanga International, then a 1.5 to 2.5 hour road transfer; charters to nearby airstrips are available.",
+    "who_its_for": "Couples, families, solo adventurers and photographers who want a modern riverfront lodge.",
+    "signature_experiences": "Twice-daily game drives, walking safaris and photographic safaris."
+   },
+   "faqs": [
+    {
+     "q": "Where is Tengile River Lodge?",
+     "a": "Tengile River Lodge is in Tengile Game Reserve, part of the Sabi Sand Nature Reserve in Greater Kruger, facing the Sand River. It belongs to the Tengile MalaMala Collection."
+    },
+    {
+     "q": "How do you get to Tengile River Lodge?",
+     "a": "Fly to Skukuza or Kruger Mpumalanga International, then a 1.5 to 2.5 hour road transfer. Charter flights to nearby airstrips are also available."
+    },
+    {
+     "q": "When is the best time to visit Tengile River Lodge?",
+     "a": "May to September for dry-season Big Five viewing and cool weather. December to March is green, with great birding and fewer crowds."
+    },
+    {
+     "q": "How many suites does Tengile River Lodge have?",
+     "a": "Nine large river-facing suites, including one family suite, each with a private deck and plunge pool."
+    },
+    {
+     "q": "Is Tengile River Lodge good for families?",
+     "a": "Yes. It has family-friendly accommodation, including a family suite."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": "sabi_sand",
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
+    "classifiedAt": "2026-10-31"
+   },
+   "volumes": [
+    "stays",
+    "safaris"
+   ],
+   "arrivalHubIds": [
+    "6ae6975201f48e4a41de6174",
+    "6ae6975142da92bdd9e00a2e"
    ],
    "placeSlug": null
   },

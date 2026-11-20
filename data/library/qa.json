@@ -1572,14 +1572,6 @@
    "released": true
   },
   {
-   "stay_id": "6a89a1ab46f8c4d5c2138e1d",
-   "slug": "daunara-safari-camp",
-   "name": "Daunara Safari Camp",
-   "country": "Botswana",
-   "missing": [],
-   "released": true
-  },
-  {
    "stay_id": "6afd852f48d247aa90495af1",
    "slug": "dexamenes-seaside-hotel",
    "name": "Dexamenes Seaside Hotel",
@@ -5562,7 +5554,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9d4",
    "slug": "tengile-mala-mala-kirkmans-kamp",
-   "name": "&Beyond Kirkman's Kamp",
+   "name": "Tengile Mala Mala Kirkman's Kamp",
    "country": "South Africa",
    "missing": [],
    "released": true
@@ -5586,7 +5578,7 @@
   {
    "stay_id": "6a85bfb37f6eb35689bff9d5",
    "slug": "tengile-river-lodge-by-mala-mala",
-   "name": "&Beyond Tengile River Lodge",
+   "name": "Tengile River Lodge by Tengile Mala Mala",
    "country": "South Africa",
    "missing": [],
    "released": true

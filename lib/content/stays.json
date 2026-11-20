@@ -14682,6 +14682,93 @@
    "placeSlug": "cyclades"
   },
   {
+   "slug": "dove-island-lodge",
+   "name": "Dove Island Lodge",
+   "ledgerId": "STY-2026-000771",
+   "country": "Alaska",
+   "countrySlug": "alaska",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "The Lambeth family's private island in Sitka Sound, with its own Beaver floatplane, a Himalayan salt spa and a five course dinner every night",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/dove-island-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/dove-island-lodge/aerial",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/dove-island-lodge/glacier-landing",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/dove-island-lodge/view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/dove-island-lodge/steelhead",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/dove-island-lodge/extra",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/dove-island-lodge/salt-spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/dove-island-lodge/lodge"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "luxury",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Two room suites with ocean front views, private balconies and private hot tubs, some with fireplaces.",
+     "A pair of private two storey cabins in Alaskan yellow cedar, each with a living room, bar and a deck with a hot tub.",
+     "The Great Room's two storey windows over Sitka Sound and a river rock fireplace.",
+     "Every meal by the lodge's chefs, and no more than 28 guests a night."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "King and silver salmon and halibut in Sitka Sound, with in-house fish processing.",
+     "Fly-outs by the lodge's Beaver floatplane for steelhead, rainbow and cutthroat trout and Dolly Varden, catch and release.",
+     "Helicopter landings on glacier icefields over the Inside Passage.",
+     "Eco tours: glaciers, a hot springs trip, ATVs on Kruzof Island and the town of Sitka.",
+     "The spa: massage, a wood-fired sauna, a salt room, yoga and meditation."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Dove Island Lodge is the Lambeth family's private island in Sitka, a few minutes' walk from lodge to dock. Duane Lambeth, a pilot of 39 years, flies the lodge's own de Havilland Beaver, the only floatplane in Sitka kept for one lodge's guests, out to wilderness rivers and over the icefields; Tracie Lambeth runs the eco tours. Evenings bring a five course dinner, a wine list the lodge calls the largest of any lodge in Alaska, and a spa built from 50 tons of Himalayan salt above the Pacific."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": "coast",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "small_groups"
+    ],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "great-plains-duba-plains",
    "name": "Duba Plains Camp by Great Plains",
    "ledgerId": "STY-2026-258200",
@@ -26884,6 +26971,97 @@
     "status": "approved",
     "classifiedBy": "James Papagno (2 Nov 2026)",
     "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "kenai-fjords-wilderness-lodge",
+   "name": "Kenai Fjords Wilderness Lodge",
+   "ledgerId": "STY-2026-000769",
+   "country": "Alaska",
+   "countrySlug": "alaska",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Eight waterfront cabins on Fox Island in Resurrection Bay, reached only by boat from Seward, with a day in Kenai Fjords National Park on the way out",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/kayaking",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/whale",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/harbor-seal",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/stone-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/boat-in",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/cabins",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/shore-walk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/main-lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/kenai-fjords-wilderness-lodge/lagoon-cabin"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "adventure",
+    "wildlife_photography",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Eight waterfront cabins, ocean view or lagoon view, each sleeping up to four adults with a queen bed, a sofa bed and a full bathroom.",
+     "Breakfast, lunch and dinner by the lodge's chefs, with soft drinks, coffee, tea and juice; wine, beer, spirits and cocktails are extra.",
+     "The beachfront main lodge with its lounge, bar and deck, a wood-fired sauna on the beach and a firepit.",
+     "Guests 12 and over."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Whales, sea otters, eagles and seabirds around Fox Island",
+     "Beach walks on the stone beach and a hiking trail on the island",
+     "Fishing from the dock, with the catch cooked by the chefs",
+     "Morning yoga in the main lodge",
+     "The seven hour Northwestern Fjord Tour on the way back to Seward"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Kenai Fjords Wilderness Lodge sits on Fox Island in Resurrection Bay, 12 miles south of Seward and just outside Kenai Fjords National Park, reached only by boat. Eight waterfront cabins face either the bay or the lagoon; the stay begins with a 45 minute cruise from Seward and ends with the seven hour Northwestern Fjord Tour past tidewater glaciers, orcas, puffins and sea lions."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": "fjord",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "small_groups",
+     "photographers"
+    ],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
    },
    "volumes": [
     "stays"
@@ -54737,6 +54915,96 @@
    ],
    "arrivalHubIds": [],
    "placeSlug": "peloponnese"
+  },
+  {
+   "slug": "talon-lodge",
+   "name": "Talon Lodge & Spa",
+   "ledgerId": "STY-2026-000770",
+   "country": "Alaska",
+   "countrySlug": "alaska",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A private island in Sitka Sound for no more than 24 guests, with salmon and halibut boats, floatplane fly-outs, a spa over the water and Mount Edgecumbe across the bay",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/talon-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/talon-lodge/whale-boat",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/talon-lodge/sunset-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/talon-lodge/river-bear",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/talon-lodge/kruzof-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/talon-lodge/waterfall-salmon",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/talon-lodge/spa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/talon-lodge/spruce-house"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "family",
+    "adventure",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Spruce House and Cedar House: three bedrooms each, for groups of four to six.",
+     "Four private rooms with private baths, for two.",
+     "Bluff House: a three bedroom home for six with a private hot tub and its own view of Mount Edgecumbe.",
+     "All meals included, with visiting chef and winemaker weeks; alcohol extra."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Guided saltwater fishing for king and silver salmon and halibut, about 30 minutes from the lodge.",
+     "Freshwater fly-outs by floatplane for steelhead, rainbow and cutthroat trout, Dolly Varden and salmon, catch and release.",
+     "ATV tours on Kruzof Island below Mount Edgecumbe, with bear viewing and beachcombing.",
+     "Kayaking the Inside Passage shore and hikes in the Tongass National Forest.",
+     "Humpback, gray, minke and orca whales in the surrounding water.",
+     "Massage on the spa deck above the water."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Talon Lodge sits on its own island in Sitka Sound, a boat ride from Sitka, facing Mount Edgecumbe on Kruzof Island. It hosts no more than 24 guests at a time and about 600 a year, with every party arriving and leaving on the same day. Days go to the boats for king and silver salmon and halibut, to floatplane fly-outs on rivers few people fish, or to kayaks, Kruzof's beaches and the Tongass rainforest; evenings to the spa over the water, the Beach Bar and the chefs' table."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": "coast",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families",
+     "small_groups"
+    ],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "tanah-gajah",

@@ -1615,6 +1615,16 @@
    "released": true
   },
   {
+   "stay_id": "6b001d1b487150a77877e110",
+   "slug": "dove-island-lodge",
+   "name": "Dove Island Lodge",
+   "country": "Alaska",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8f2",
    "slug": "dukes-camp-okavango",
    "name": "Duke's Camp Okavango",
@@ -2977,6 +2987,16 @@
    "slug": "keemala",
    "name": "Keemala",
    "country": "Thailand",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6b001d1b487150a77877e10e",
+   "slug": "kenai-fjords-wilderness-lodge",
+   "name": "Kenai Fjords Wilderness Lodge",
+   "country": "Alaska",
    "missing": [
     "coordinates"
    ],
@@ -5493,6 +5513,16 @@
    "name": "Tainaron Blue Retreat",
    "country": "Greece",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b001d1b487150a77877e10f",
+   "slug": "talon-lodge",
+   "name": "Talon Lodge & Spa",
+   "country": "Alaska",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

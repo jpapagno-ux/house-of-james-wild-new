@@ -10,7 +10,7 @@
    "subtitle": "Glaciers, whales and bears, by small ship",
    "leading": "Alaska is the largest wild coast the house sells: tidewater glaciers, fjords and island channels where humpback whales feed all summer, and a peninsula of volcanoes and brown bears that runs out into the Aleutian chain. About 60 percent of all the land the National Park Service manages is here. The house sends you by small ship, with UnCruise Adventures, from Juneau, Sitka, Ketchikan and Seward, and plans the bear coast, the national parks and the northern lights around the voyage.",
    "hero": {
-    "src": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/690f3140ef71283cea779f0d_alaskahero1.jpg",
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_improve:outdoor:50/e_sharpen:40/GettyImages-520530202",
     "alt": "Alaska, USA & Canada"
    },
    "story": [
@@ -23,7 +23,7 @@
       }
      ],
      "image": {
-      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/autumn",
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_improve:outdoor:50/e_sharpen:40/alaskahero1",
       "alt": "Alaska: The Wild Coast of North America"
      }
     },
@@ -60,7 +60,7 @@
       }
      ],
      "image": {
-      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/hero",
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_improve:outdoor:50/e_sharpen:40/jwco/voyages/uncruise/breaching-humpback",
       "alt": "Alaska: The Best Wildlife Viewing in Alaska"
      }
     }

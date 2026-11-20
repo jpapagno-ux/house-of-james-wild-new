@@ -620,6 +620,9 @@ export default function TripPage({ trip: T, mapHtml, images = {}, hero, slides =
           {/* Iggi on every voyage page (James, 19 Nov 2026): the Core is told the page is a voyage, its ITN-VSL
               Ledger ID (pinned in the excerpts) and its waters, so he answers from this route's record first. */}
           {voyage && IGGI_ON && <IggiPanel ctx={{ entityType: "voyage", entitySlug: T.id, ledgerId: ledgerRef || null, countrySlug: place?.key ?? null, sourcePage: T.seo.path, volume: "voyages" }} heading={`Ask Iggi about ${T.crumbs.at(-1) ?? "this voyage"}`} />}
+          {/* Iggi on every overland route (James, 20 Nov 2026): the page is an overland route, its ITN-LAND Ledger ID
+              (pinned when the Library holds it) and its country, so the route is one stop on his sketch. */}
+          {!voyage && IGGI_ON && <IggiPanel ctx={{ entityType: "overland", entitySlug: T.id, ledgerId: ledgerRef || null, countrySlug: waters || null, sourcePage: T.seo.path, volume: "overland" }} heading={`Ask Iggi about ${T.crumbs.at(-1) ?? "this route"}`} />}
           {Related}
           {place && leadFor(place.key) && <PlanBand place={place.name} compassHref="/compass" where={{ countrySlug: place.key, volume: "voyages" }} />}
           {Enquire}

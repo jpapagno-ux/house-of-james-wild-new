@@ -45,8 +45,8 @@
  "sub": "10 Days · 9 Nights · Costa Rica, Caribbean to Pacific",
  "meta": [
   [
-   "Journey code",
-   "JW-CR-F10C"
+   "Ledger ID",
+   "ITN-LAND-2026-376634"
   ],
   [
    "Country",
@@ -75,6 +75,10 @@
   [
    "Vetted by",
    "James Wild · surf travel since 1992"
+  ],
+  [
+   "House code",
+   "JW-CR-F10C"
   ]
  ],
  "mark1": "Stamped by<br>James Wild",
@@ -370,12 +374,12 @@
  "reltitle": "From the same guide",
  "related": [
   [
-   "JW-CR-F07 · 7 DAYS",
+   "ITN-LAND-2026-326488 · 7 DAYS",
    "The Original Costa Route · 7 days",
    "Senda Monteverde and Kura, with a day at Dominical."
   ],
   [
-   "JW-CRPA-F10 · 10 DAYS",
+   "ITN-LAND-2026-100053 · 10 DAYS",
    "The Original Costa Route: Over the Border",
    "A deviation: Arenas del Mar, then by land to Panama's Isla Palenque."
   ],
@@ -447,7 +451,7 @@
  },
  "map_eyebrow": "The route, drawn",
  "map_title": "Caribbean to Pacific",
- "map_coord": "9°56′N 84°05′W · JW-CR-F10C",
+ "map_coord": "9°56′N 84°05′W · ITN-LAND-2026-376634",
  "navon": "Overland",
  "herofacts": [
   [

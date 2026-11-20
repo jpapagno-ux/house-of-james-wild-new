@@ -39,8 +39,8 @@
  "sub": "7 Days · 6 Nights · Costa Rica, cloud forest to the south Pacific",
  "meta": [
   [
-   "Journey code",
-   "JW-CR-F07"
+   "Ledger ID",
+   "ITN-LAND-2026-326488"
   ],
   [
    "Country",
@@ -69,6 +69,10 @@
   [
    "Vetted by",
    "James Wild · surf travel since 1992"
+  ],
+  [
+   "House code",
+   "JW-CR-F07"
   ]
  ],
  "mark1": "Stamped by<br>James Wild",
@@ -299,12 +303,12 @@
  "reltitle": "From the same guide",
  "related": [
   [
-   "JW-CRPA-F10 · 10 DAYS",
+   "ITN-LAND-2026-100053 · 10 DAYS",
    "The Original Costa Route: Over the Border",
    "A deviation: Arenas del Mar, then by land to Panama's Isla Palenque."
   ],
   [
-   "JW-CR-F10C · 10 DAYS",
+   "ITN-LAND-2026-376634 · 10 DAYS",
    "The Original Costa Route: Both Coasts",
    "A deviation: the Caribbean at Aguas Claras, the cloud forest, then the Pacific."
   ],
@@ -376,7 +380,7 @@
  },
  "map_eyebrow": "The route, drawn",
  "map_title": "Mountain to the south Pacific",
- "map_coord": "9°16′N 84°10′W · JW-CR-F07",
+ "map_coord": "9°16′N 84°10′W · ITN-LAND-2026-326488",
  "navon": "Overland",
  "herofacts": [
   [

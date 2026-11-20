@@ -14,6 +14,10 @@ import { routesThrough } from "@/lib/content/trips";
 import { suitedTo } from "@/lib/ledger/travel-types";
 import { BEST_FOR } from "@/lib/content/stays";
 import PAGES from "./pages.json";
+import ROOM_PHOTOS from "./room-photos.json";
+
+const CLOUD = "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto";
+const roomPhotos = ROOM_PHOTOS as unknown as Record<string, Record<string, { id: string; alt: string }> | string>;
 
 /** The stays that have the Modern Journal page (the pilot's sample pages). One list, read by next.config.ts too. */
 export const JOURNAL_STAYS: string[] = PAGES.stays;
@@ -63,6 +67,8 @@ function rateCard(slug: string, photos: Photo[]): RateCard | null {
   const rooms = card.rooms.map((r) => {
     // a room photograph only when someone has described a filed photograph as that room (lib/content/photo-alts.json)
     const words = r.name.toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((x) => x.length > 3 && !["room", "suite", "bedroom", "bungalow", "deluxe"].includes(x));
+    const filedPhoto = typeof roomPhotos[slug] === "object" ? (roomPhotos[slug] as Record<string, { id: string; alt: string }>)[r.name] : undefined;
+    if (filedPhoto) return { ...r, photo: { url: `${CLOUD}/${filedPhoto.id}`, alt: filedPhoto.alt, described: true } };
     const photo = words.length ? photos.find((p) => p.described && !used.has(p.url) && words.every((x) => p.alt.toLowerCase().includes(x))) ?? null : null;
     if (photo) used.add(photo.url);
     return { ...r, photo };

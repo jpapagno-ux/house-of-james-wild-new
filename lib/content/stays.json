@@ -40203,6 +40203,95 @@
    "placeSlug": null
   },
   {
+   "slug": "odyssey-lodge",
+   "name": "Odyssey Lodge",
+   "ledgerId": "STY-2026-000766",
+   "country": "Alaska",
+   "countrySlug": "alaska",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Cabins on China Poot Bay, four miles by boat from Homer, with bears, sea otters and Kachemak Bay on the doorstep",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/bay",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/china-poot-bay",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/brown-bears",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/kayaking",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/sauna-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/cabin",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/odyssey-lodge/trail"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "family",
+    "adventure",
+    "wildlife_photography"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Bay View Cabins: a queen bed and sitting area, two chairs that open into twin beds, sleeping up to four, and a deck over China Poot Bay.",
+     "Treetop Cabin Suites: a private bedroom and a living room with a pull-down queen Murphy bed, a walk-in shower, refrigerator and coffee machine, and a private deck in the trees.",
+     "Lodging and dining rates include the cabin and breakfast, lunch and dinner daily at the Meandering Goat; alcoholic drinks are extra."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Bear viewing by plane at Brooks Falls in Katmai or in Lake Clark, flying from Homer past glaciers and volcanoes; or by boat.",
+     "Kayaking China Poot Bay from the lodge, through sea caves at the right tide and out to Gull Island for seabirds, seals and otters.",
+     "Four guided hikes, from beaches and forest to glacier rivers, lakes and mountains.",
+     "Halibut, salmon and rockfish charters with a captain and deckhand.",
+     "A sauna over the bay, a gym and yoga studio, a massage room, pool table and golf simulator at the lodge."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Odyssey Lodge sits on China Poot Bay in Kachemak Bay, four miles by boat from Homer Harbor, with mountains and glaciers across the water. Private cabins for two to four, a sauna above the bay and the Meandering Goat restaurant make the base; the days go to kayaking, hiking to the glaciers, fishing and flying out to watch brown bears at Brooks Falls in Katmai or in Lake Clark."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": "fjord",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families",
+     "photographers"
+    ],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "ol-jogi-conservancy",
    "name": "Ol Jogi Conservancy - Kenya",
    "ledgerId": "STY-2026-752932",
@@ -47070,6 +47159,96 @@
    },
    "volumes": [
     "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "sheldon-chalet",
+   "name": "Sheldon Chalet",
+   "ledgerId": "STY-2026-000767",
+   "country": "Alaska",
+   "countrySlug": "alaska",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "private_house",
+   "tagline": "Five bedrooms at 6,000 feet on the Ruth Glacier below Denali, reached only by helicopter and taken whole by one party",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/autumn",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/hero",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/helicopter",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/flight-in",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/glacier-walk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/ice-cave",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/glacier-pools",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/sauna",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/bedroom"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "group_exclusive_use",
+    "luxury",
+    "adventure",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five guest rooms in Nordic style, each looking out over the amphitheater, Denali and the surrounding peaks.",
+     "All inclusive and taken as a private buyout of the whole chalet, three nights or more, for two to ten guests; rates are quoted on request.",
+     "A sauna, a fire and the commons where every meal is served."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Roped glacier treks, ski touring and snowshoeing across the 35 square mile Don Sheldon Amphitheater, on 3,000 feet of ice.",
+     "Ice caves and crevasses explored with the chalet's guides.",
+     "The aurora from autumn through spring, from every window or around a fire on the helipad.",
+     "Summer's long light and turquoise meltwater pools on the glacier.",
+     "A private chef cooking Alaska seafood and produce, with picnics on the glacier."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Sheldon Chalet stands at 6,000 feet on the Sheldon family's own nunatak, a rocky outcrop above the Ruth Glacier in the Don Sheldon Amphitheater, inside Denali National Park. Don and Roberta Sheldon built the first Mountain House here in 1966; their family's hexagonal chalet now takes one party at a time, two to ten guests, with a concierge, a private chef and mountain guides."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": "alpine",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families",
+     "private_groups"
+    ],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": [
     "stays"
    ],
    "arrivalHubIds": [],
@@ -59872,6 +60051,97 @@
     "6ae697548aca34d73203560f",
     "6ae697592a20c4a043a07150"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "ultima-thule-lodge",
+   "name": "Ultima Thule Lodge",
+   "ledgerId": "STY-2026-000768",
+   "country": "Alaska",
+   "countrySlug": "alaska",
+   "regionSlug": "usa-canada",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "The Claus family's fly-in lodge on the Chitina River, 100 miles from the road, with a bush plane and pilot for every two guests",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/mountain-lake",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/fly-out",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/super-cub",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/bison",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/valley-hike",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/glacier-valley",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/cabin",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/autumn-walk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/cabin-interior"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "adventure",
+    "wildlife_photography",
+    "honeymoon"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Handcrafted cabins, some with two bedrooms, with a king feather bed, an ensuite bathroom, a sitting room over the Chitina River, 24 hour electricity and hot water.",
+     "A private cabin for each group, and no more than 14 guests at the lodge.",
+     "The main lodge holds the dining room, open kitchen and a sitting room with floor to ceiling windows; a cedar sauna sits steps from the cabins."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "Daily fly-out adventures in Piper Super Cubs with a pilot guide, one aircraft for each group of two.",
+     "Landings on the Bagley Icefield, which the lodge calls the largest non-polar glacier in the world, and on glaciers, sandbars and mountain ridges.",
+     "Hikes after Dall sheep, packrafting alpine lakes, river rafting and an abandoned gold mine.",
+     "Bears, moose, Dall sheep and eagles along the river.",
+     "The chef's cooking from the lodge's own gardens and greenhouses, with locally harvested salmon and game."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Ultima Thule sits on the Chitina River inside Wrangell-St. Elias, at 13.2 million acres the largest national park in North America and part of a UNESCO World Heritage site. John Claus homesteaded here in 1960; three generations of the family have flown these mountains since, and every day is planned around the weather with your own Super Cub and pilot guide: landings on glaciers and sandbars, ridges and lakes no road reaches."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": "alpine",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "small_groups",
+     "photographers"
+    ],
+    "status": "draft",
+    "classifiedBy": null,
+    "classifiedAt": null
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

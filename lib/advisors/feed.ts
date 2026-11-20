@@ -1,4 +1,4 @@
-import { ADVISORS, DEFAULT_ADVISOR, advisorCounts, advisorsFor, type Advisor } from "@/lib/content/advisors";
+import { ADVISORS, DEFAULT_ADVISOR, JAMES_HEADS_EVERY_PAGE, advisorCounts, advisorsFor, defaultAdvisor, type Advisor } from "@/lib/content/advisors";
 import { VOLUME_LABEL, type Volume } from "@/lib/content/advisor-desk";
 
 // The advisor feed Iggi (and Safari Crux) read — Contract C3, "who should plan
@@ -48,5 +48,9 @@ export const allAdvisorFeeds = () => ADVISORS.map(advisorFeed).filter((x): x is 
 /** Who should plan a journey to this place: the house's answer, default advisor first. */
 export function whoShouldPlan(where: { countrySlug?: string | null; regionSlug?: string | null; volume?: Volume; ledgerId?: string | null }) {
   const { advisors, slept } = advisorsFor(where);
-  return { slept, advisors: advisors.map(advisorFeed).filter((x): x is AdvisorFeed => !!x) };
+  // James, 20 Nov 2026: while the house is in testing James is the advisor on every page, never another
+  // advisor. The feed answers James first, then the ranking, so Iggi and Crux (which take the first) follow.
+  const ordered = JAMES_HEADS_EVERY_PAGE ? [...advisors].sort((x, y) => (x.slug === DEFAULT_ADVISOR ? -1 : y.slug === DEFAULT_ADVISOR ? 1 : 0)) : advisors;
+  if (JAMES_HEADS_EVERY_PAGE && !ordered.some((a) => a.slug === DEFAULT_ADVISOR)) ordered.unshift(defaultAdvisor());
+  return { slept, advisors: ordered.map(advisorFeed).filter((x): x is AdvisorFeed => !!x) };
 }

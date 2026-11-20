@@ -4150,6 +4150,16 @@
    "released": true
   },
   {
+   "stay_id": "6b00111901b28b897269724f",
+   "slug": "odyssey-lodge",
+   "name": "Odyssey Lodge",
+   "country": "Alaska",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1c6d87104f52e7d84dc",
    "slug": "ol-jogi-conservancy",
    "name": "Ol Jogi Conservancy - Kenya",
@@ -4857,6 +4867,16 @@
    "name": "Shawa Luangwa Camp",
    "country": "Zambia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b00111901b28b8972697250",
+   "slug": "sheldon-chalet",
+   "name": "Sheldon Chalet",
+   "country": "Alaska",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -6078,6 +6098,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6b00111901b28b8972697251",
+   "slug": "ultima-thule-lodge",
+   "name": "Ultima Thule Lodge",
+   "country": "Alaska",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9ea",

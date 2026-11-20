@@ -23,7 +23,7 @@
       }
      ],
      "image": {
-      "src": null,
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/sheldon-chalet/autumn",
       "alt": "Alaska: The Wild Coast of North America"
      }
     },
@@ -60,7 +60,7 @@
       }
      ],
      "image": {
-      "src": null,
+      "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/alaska/ultima-thule-lodge/hero",
       "alt": "Alaska: The Best Wildlife Viewing in Alaska"
      }
     }
@@ -117,8 +117,7 @@
    "bestShort": "Jul–Sep",
    "atlasName": "United States of America",
    "useStays": true,
-   "chartLabel": "Alaska",
-   "staysComing": true
+   "chartLabel": "Alaska"
   },
   {
    "slug": "argentina",

@@ -8,6 +8,12 @@ import LiveHostPanel from "@/components/record/LiveHostPanel";
 import CallingCard from "@/components/record/CallingCard";
 import WhyFilm from "@/components/record/WhyFilm";
 import RoomTypes from "@/components/stay/RoomTypes";
+import Inclusions from "@/components/booking/Inclusions";
+import BookingPanel from "@/components/booking/BookingPanel";
+import RateCardSection from "@/components/booking/RateCardSection";
+import LiveRatesBand from "@/components/record/LiveRatesBand";
+import { PRICED } from "@/lib/content/priced-stays";
+import { cardFor } from "@/lib/content/rate-cards";
 import { KIND as HOST_KIND } from "@/components/record/HostPanel";
 import Signature from "@/components/record/Signature";
 import IggiPanel from "@/components/iggi/IggiPanel";
@@ -56,6 +62,19 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   const fromLine = rates?.from ? <>{rates.promo && rates.from.now < rates.from.list && <span className="hidden sm:inline"><s>{money(rates.from.list)}</s>{" "}</span>}From {money(rates.from.now)}<span className="hidden sm:inline"> per room, per night{rates.promo ? ` · ${rates.promo}` : ""}</span><span className="sm:hidden"> a night</span></> : s.ledgerId ?? undefined;
 
   // The reservation slip (Stage 8): a worked sample from the filed card, the first room, for the dates the card was read for.
+  // Rule 12: a stay that can be booked today keeps that path, through the house's own booking components and links,
+  // exactly as the stay page uses them. Nothing here changes booking or checkout; it only places what exists.
+  const priced = s.engine ? PRICED[s.slug] : undefined;
+  const hostHref = v.hostReady ? "#host" : undefined;
+  const live = FLAGS.quotes ? (
+    <div className="flex flex-wrap items-center gap-4"><Link href={`/booking/property/${s.slug}`} className="ledger-btn ledger-btn--house">Check availability</Link><p className="text-[13.5px] text-stone-text">Live rates and rooms for your dates.</p></div>
+  ) : priced ? (
+    <><Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} /><BookingPanel hostHref={hostHref} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} /></>
+  ) : s.engine ? (
+    <LiveRatesBand property={s.engine} name={s.name} />
+  ) : cardFor(`stay:${s.slug}`) ? (
+    <RateCardSection pageKey={`stay:${s.slug}`} name={s.name} photo={s.hero as string} hostHref={hostHref} />
+  ) : null;
   const r0 = rates?.rooms[0];
   const nights = rates?.window?.nights ?? 0;
   const slip = rates && r0 && rates.window && nights > 0 ? (() => {
@@ -130,7 +149,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
 
             <JournalOffers no={N.offers} name={s.name} offers={offerRows} applyHref="#reserve" />
 
-            <JournalReserve no={N.reserve} steps={steps} slip={slip} reserve={{ label: "Plan a trip around it", href: planHref }} form={<RequestForm slug={s.slug} name={s.name} path={path} rooms={roomNames} />} save={<SaveToFolio slug={s.slug} name={s.name} inline />}
+            <JournalReserve no={N.reserve} steps={steps} slip={slip} live={live} reserve={{ label: "Plan a trip around it", href: planHref }} form={<RequestForm slug={s.slug} name={s.name} path={path} rooms={roomNames} />} save={<SaveToFolio slug={s.slug} name={s.name} inline />}
               folio={FLAGS.save ? (
                 <div className="mt-12 flex flex-col md:flex-row md:items-center justify-between gap-5 border-t border-[color:var(--jw-keyline)] pt-8">
                   <div><p className="font-mono text-[10px] tracking-[0.24em] uppercase text-stone-text">Not booking today</p><p className="font-display font-medium text-[26px] text-graphite mt-1">Keep {s.name} in your Folio</p></div>

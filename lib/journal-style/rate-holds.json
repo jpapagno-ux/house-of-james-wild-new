@@ -1,0 +1,4 @@
+{
+  "_note": "JWC-STYLE-01. Display holds on the journal stay page. A promotion listed here is not shown anywhere on that stay's page (room tickets, rate ledger, sticky bar, sample quote, offers); the standard rate shows with no struck price. The rate record itself is untouched. Remove the entry to show the promotion again.",
+  "aguas-claras": { "promo": "Early Bird 10% off: held until the hotel confirms it (James, 20 Nov 2026)" }
+}

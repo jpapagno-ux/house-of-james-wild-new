@@ -15,6 +15,7 @@ import { suitedTo } from "@/lib/ledger/travel-types";
 import { BEST_FOR } from "@/lib/content/stays";
 import PAGES from "./pages.json";
 import ROOM_PHOTOS from "./room-photos.json";
+import RATE_HOLDS from "./rate-holds.json";
 import PHOTO_NOTES from "./photo-notes.json";
 
 const CLOUD = "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto";
@@ -82,8 +83,11 @@ const firstSentence = (t: string) => (t.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? t).tr
 const KIND: Record<string, string> = { hotel: "hotel", lodge: "lodge", villa: "private villa", camp: "camp", resort: "resort", residence: "residence" };
 
 function rateCard(slug: string, photos: Photo[]): RateCard | null {
-  const card = CAYUGA_ROOMS_MAY_2027[slug];
-  if (!card?.rooms.length) return null;
+  const filed = CAYUGA_ROOMS_MAY_2027[slug];
+  if (!filed?.rooms.length) return null;
+  // a promotion on hold (rate-holds.json) is not displayed: every room shows its standard rate. The record is untouched.
+  const held = Boolean((RATE_HOLDS as unknown as Record<string, { promo?: string } | string>)[slug] && typeof (RATE_HOLDS as unknown as Record<string, unknown>)[slug] === "object");
+  const card = held ? { ...filed, promo: undefined, rooms: filed.rooms.map((r) => ({ ...r, now: r.list })) } : filed;
   // the sample window the room rates were read for: the mid May 2027 search in the same file
   const w = CAYUGA_RATES.find((x) => x.id === "2027-05-11" && x.rates[slug]);
   const used = new Set<string>();

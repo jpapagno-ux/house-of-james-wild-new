@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import WideFilmLayer from "@/components/media/WideFilm";
 import type { WideFilm } from "@/lib/content/stay-films";
+import { useReducedMotionSafe } from "@/lib/useReducedMotionSafe";
 import Stamp from "./Stamp";
 
 // JWC-STYLE-01, Stage 1. The hero: one lead (the stay's film when one is filed, else a photograph), a strip beneath
@@ -11,6 +12,9 @@ import Stamp from "./Stamp";
 // the save link, and one line beneath the button: "Vetted by the house · {Ledger ID} · Why".
 // The film is the house's own WideFilmLayer, unchanged: muted, looping, the still shown first, and the still kept
 // where a film should not play (reduced motion, Save-Data). Choosing any photograph stops the film.
+// The photographs turn on their own, one every few seconds, and the strip follows; a Pause button stops them, as
+// does choosing a frame, pointing at the strip or tabbing into it. Reduced motion keeps them still. On a stay with a
+// film the film stays the lead; choose a photograph and press Play to turn through the photographs instead.
 // On a phone the words sit at the foot of the hero on a deeper, even scrim, so they read over any frame.
 export type HeroFrame = { url: string; alt: string };
 type Props = {
@@ -36,9 +40,28 @@ type Props = {
 };
 
 const FILM = -1;
+const EVERY_MS = 6000;
 
 export default function JournalHero({ eyebrow, name, place, tagline, frames, film, watch, offer, ledgerId, entry, credit, cta, save, whyHref }: Props) {
   const [at, setAt] = useState(film ? FILM : 0);
+  const reduce = useReducedMotionSafe();
+  const [paused, setPaused] = useState(false);
+  const [held, setHeld] = useState(false); // pointing at the strip, or keyboard focus inside it
+  const strip = useRef<HTMLUListElement>(null);
+  const turning = !reduce && !paused && !held && at !== FILM && frames.length > 1;
+  useEffect(() => {
+    if (!turning) return;
+    const t = window.setInterval(() => { if (!document.hidden) setAt((i) => (i === FILM ? i : (i + 1) % frames.length)); }, EVERY_MS);
+    return () => window.clearInterval(t);
+  }, [turning, frames.length]);
+  // the strip follows the lead, sideways only (never moves the page)
+  useEffect(() => {
+    const ul = strip.current, li = ul?.querySelector<HTMLElement>('[data-on="true"]');
+    if (!ul || !li) return;
+    const left = li.offsetLeft - (ul.clientWidth - li.clientWidth) / 2;
+    ul.scrollTo({ left: Math.max(0, left), behavior: reduce ? "auto" : "smooth" });
+  }, [at, reduce]);
+  const choose = (i: number) => { setAt(i); setPaused(true); };
   const poster = film?.kind === "mp4" ? film.poster : frames[0]?.url;
   const tiles = (film ? 1 : 0) + frames.length;
   return (
@@ -88,14 +111,22 @@ export default function JournalHero({ eyebrow, name, place, tagline, frames, fil
         {tiles > 1 && (
           <div className="md:mt-auto pt-6 md:pt-12 pb-16 md:pb-0">
             <div className="flex items-end justify-between gap-4">
-              <p className="font-mono text-[9.5px] tracking-[0.2em] md:tracking-[0.24em] uppercase text-white/80">{film ? "Film · " : ""}{frames.length} photographs · choose a frame</p>
+              <p className="flex items-center gap-3 font-mono text-[9.5px] tracking-[0.2em] md:tracking-[0.24em] uppercase text-white/80">
+                <span>{film ? "Film · " : ""}{frames.length} photographs · choose a frame</span>
+                {!reduce && frames.length > 1 && at !== FILM && (
+                  <button type="button" onClick={() => setPaused((x) => !x)} aria-pressed={paused} className="inline-flex items-center gap-1.5 border border-white/40 px-2 py-1 uppercase tracking-[0.18em] text-white hover:border-white">
+                    <svg aria-hidden viewBox="0 0 12 12" className="h-2.5 w-2.5" fill="currentColor">{paused ? <path d="M3 1.5v9l7-4.5z" /> : <path d="M2.5 1.5h2.5v9H2.5zM7 1.5h2.5v9H7z" />}</svg>
+                    {paused ? "Play" : "Pause"}
+                  </button>
+                )}
+              </p>
               {(credit || film) && <p className="hidden sm:block font-mono text-[9.5px] tracking-[0.2em] uppercase text-white/70">{at === FILM && film ? film.credit : credit ? `Photographs courtesy of ${credit}` : ""}</p>}
             </div>
-            <ul className="mt-2.5 md:mt-3 flex gap-2.5 md:gap-3 overflow-x-auto pb-1 [scrollbar-width:none]">
+            <ul ref={strip} onMouseEnter={() => setHeld(true)} onMouseLeave={() => setHeld(false)} onFocus={() => setHeld(true)} onBlur={() => setHeld(false)} className="relative mt-2.5 md:mt-3 flex gap-2.5 md:gap-3 overflow-x-auto pb-1 [scrollbar-width:none]">
               {film && (
-                <li className="shrink-0">
+                <li className="shrink-0" data-on={at === FILM}>
                   <span aria-hidden className="mb-1 block font-mono text-[9.5px] tracking-[0.2em] uppercase text-white/75">Film</span>
-                  <button type="button" onClick={() => setAt(FILM)} aria-pressed={at === FILM} aria-label={`Play the film: ${film.title}`}
+                  <button type="button" onClick={() => choose(FILM)} aria-pressed={at === FILM} aria-label={`Play the film: ${film.title}`}
                     className={`relative block h-[52px] w-[82px] md:h-[72px] md:w-[122px] overflow-hidden border-2 bg-ink-deep transition-colors ${at === FILM ? "border-white" : "border-white/30 hover:border-white/70"}`}>
                     {/* eslint-disable-next-line @next/next/no-img-element -- the poster frame again, small */}
                     {poster && <img src={poster} alt="" className="absolute inset-0 h-full w-full object-cover" loading="lazy" />}
@@ -104,9 +135,9 @@ export default function JournalHero({ eyebrow, name, place, tagline, frames, fil
                 </li>
               )}
               {frames.map((f, i) => (
-                <li key={f.url} className="shrink-0">
+                <li key={f.url} className="shrink-0" data-on={i === at}>
                   <span aria-hidden className="mb-1 block font-mono text-[9.5px] tracking-[0.2em] text-white/75">{String(i + 1).padStart(2, "0")}</span>
-                  <button type="button" onClick={() => setAt(i)} aria-pressed={i === at} aria-label={`Show photograph ${i + 1} of ${frames.length}: ${f.alt}`}
+                  <button type="button" onClick={() => choose(i)} aria-pressed={i === at} aria-label={`Show photograph ${i + 1} of ${frames.length}: ${f.alt}`}
                     className={`relative block h-[52px] w-[82px] md:h-[72px] md:w-[122px] overflow-hidden border-2 transition-colors ${i === at ? "border-white" : "border-white/30 hover:border-white/70"}`}>
                     <Image src={f.url} alt="" fill sizes="122px" className="object-cover" />
                   </button>

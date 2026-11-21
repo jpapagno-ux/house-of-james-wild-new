@@ -7,6 +7,8 @@ import { slugName } from "@/lib/platform/enquiry-inbox";
 import { PageHead, Section, StatusPill } from "@/components/platform/ui";
 import { EnquiryFacts } from "@/components/advisor/EnquiryViews";
 import { ReassignForm, StatusForm } from "@/components/advisor/EnquiryForms";
+import FolioThread from "@/components/folio/FolioThread";
+import { threadForFolioNumber } from "@/lib/folio/thread-for-desk";
 
 export const metadata = { title: "Enquiry" };
 
@@ -14,9 +16,11 @@ export const metadata = { title: "Enquiry" };
 export default async function HouseEnquiry({ params }: { params: Promise<{ id: string }> }) {
   if (!ADVISOR_DESK) notFound();
   const { id } = await params;
-  await requireHouse(`/desk/enquiries/${id}`);
+  const desk = await requireHouse(`/desk/enquiries/${id}`);
   const [e, advisors] = await Promise.all([loadEnquiry(id), assignableAdvisors()]);
   if (!e) notFound();
+  // Iggi Stage 2 (21 Nov 2026): the chat the traveler saved to the Folio this enquiry names.
+  const saved = await threadForFolioNumber(desk.sb, e.folio);
   const current = advisors.find((a) => e.advisorIds.includes(a.recordId))?.slug ?? "";
   return (
     <>
@@ -24,6 +28,7 @@ export default async function HouseEnquiry({ params }: { params: Promise<{ id: s
       <PageHead eyebrow={`House desk · ${e.enquiryId || "Enquiry"}`} title={e.traveller || "Unnamed traveller"} lead={[e.where, e.when].filter(Boolean).join(" · ") || undefined}
         actions={<><StatusPill label={e.status} tone={e.status === "New" ? "attention" : e.status === "Booked" ? "good" : "neutral"} />{e.unanswered && <StatusPill label={`Waiting ${e.daysWaiting} days`} tone="attention" />}</>} />
       <Section title="The enquiry" id="enquiry"><EnquiryFacts e={e} /></Section>
+      {saved && <Section title={`Saved chat · ${e.folio}`} id="chat" aside={saved.title}><FolioThread thread={saved.thread} reader="desk" advisorName={current ? slugName(current) : null} /></Section>}
       <Section title="Where it stands" id="status"><StatusForm url={`/api/v1/desk/enquiries/${e.recordId}`} status={e.status} closedReason={e.closedReason} note={e.advisorNote} /></Section>
       <Section title="Addressed to" id="advisor" aside={current ? slugName(current) : "No advisor"}><ReassignForm url={`/api/v1/desk/enquiries/${e.recordId}`} current={current} advisors={advisors.map((a) => ({ slug: a.slug, name: slugName(a.slug) }))} /></Section>
     </>

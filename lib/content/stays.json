@@ -25012,8 +25012,8 @@
     "couples",
     "luxury"
    ],
-   "status": "founder_visited",
-   "statusDate": "2022-05-01",
+   "status": "unclassified",
+   "statusDate": null,
    "coords": null,
    "airport": "Hewanorra International Airport (UVF)",
    "airportDirections": "Hewanorra International Airport (UVF) is 18 miles away, about 60 minutes by road; George Charles Airport (SLU) is 30 miles, about 75 minutes. A shared helicopter takes about 6 minutes from UVF and 8 from SLU, in daylight only. The resort arranges every transfer and an airport representative meets you outside arrivals.",
@@ -25571,9 +25571,35 @@
      "body": "Dominica, Planned for You Jungle Bay is the way to do the island's walks, reefs and hot springs without organising any of it: the guides, the meals and the transfers come with the stay. It suits active travellers and anyone who wants yoga and a spa at the end of a hard day's hike."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "best_months": "December to the end of May is the drier season; rain is heavier from August to October.",
+    "how_to_get_there": "Fly to Douglas-Charles Airport (DOM), direct from Miami or through San Juan, then about 1 hour 20 minutes by road. Transfers are included with Adventure + Wellness stays of three nights or more.",
+    "signature_experiences": "A guided hike to a hidden waterfall, snorkelling at Champagne Beach and Scotts Head, a yoga class above the sea and a treatment at the Bamboo Spa.",
+    "who_its_for": "Active couples, friends and families who want Dominica's hiking and diving with meals, guides and wellness included."
+   },
+   "faqs": [
+    {
+     "q": "Where is Jungle Bay Dominica?",
+     "a": "At Soufrière on Dominica's south west coast, about 20 minutes from the capital, Roseau, and 8 minutes from Scotts Head."
+    },
+    {
+     "q": "How do you get to Jungle Bay?",
+     "a": "Fly to Douglas-Charles Airport (DOM), direct from Miami with American Airlines or through San Juan, then about 1 hour 20 minutes by road. Transfers are included with Adventure + Wellness bookings of three nights or more."
+    },
+    {
+     "q": "What does the Adventure + Wellness package include?",
+     "a": "All meals and fresh juices, the activities on the resort's schedule including daily hikes and guided excursions, yoga classes, daily spa treatments and, for stays of three nights or more, airport transfers."
+    },
+    {
+     "q": "Does Jungle Bay have a beach?",
+     "a": "No beach on site. The bungalows are on a ridge above the sea, none is fully ocean view, and tours visit Scotts Head and Champagne Beach. There are infinity pools at the resort."
+    },
+    {
+     "q": "When is the best time to visit Jungle Bay?",
+     "a": "December to the end of May is the drier season, with heavier rain from August to October. Temperatures average about 27 to 30 degrees Celsius."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -25586,8 +25612,8 @@
     "setting": null,
     "intentions": [],
     "suitability": [],
-    "status": "draft",
-    "classifiedBy": "house draft, for James to approve",
+    "status": "approved",
+    "classifiedBy": "James Papagno, 21 Nov 2026",
     "classifiedAt": "2026-11-21"
    },
    "volumes": [
@@ -47012,9 +47038,34 @@
      "body": "A Villa in the Forest, Above the Sea Secret Bay is for travellers who want a house of their own, a pool, a cook when they ask for one, and Dominica at the foot of the cliff. It takes children and has estates for families."
     }
    ],
-   "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "facts": {
+    "how_to_get_there": "Fly to Douglas-Charles Airport (DOM), daily from Miami, then about an hour by road. Round-trip transfers are included.",
+    "signature_experiences": "Kayaking to a beach no road reaches, an in-villa cooking class, the Indian River by boat, night snorkelling and a treatment at the Gommier Spa.",
+    "who_its_for": "Couples, honeymooners and families who want a private villa with a plunge pool and a host, and the rainforest outside."
+   },
+   "faqs": [
+    {
+     "q": "How many villas does Secret Bay have?",
+     "a": "27 private villas, each with a plunge pool, in seven types from the one-bedroom Mapou and Ylang Ylang villas to Multi-Villa Estates of up to 6,109 square feet."
+    },
+    {
+     "q": "How do you get to Secret Bay?",
+     "a": "Fly to Douglas-Charles Airport (DOM), with daily flights from Miami and weekly flights from Newark, then about an hour by road. Round-trip airport transfers are included in the rate."
+    },
+    {
+     "q": "How much does Secret Bay cost?",
+     "a": "Standard rates start at US$987 a night, by the resort's own rates page, plus a 20 per cent charge made up of 10 per cent government tax and 10 per cent gratuity. Rates include round-trip airport transfers, a welcome dinner, full breakfast and an Indian River tour. The minimum stay is three nights, five over the festive season."
+    },
+    {
+     "q": "Can children stay at Secret Bay?",
+     "a": "Yes. Children under 16 are welcome in all villas with a signed liability waiver; children aged 3 and under stay and eat free."
+    },
+    {
+     "q": "What is included at Secret Bay?",
+     "a": "Round-trip airport transfers, a welcome dinner, full breakfast, one in-villa breakfast, an Indian River tour and use of kayaks, paddleboards and snorkel gear, with a dedicated villa host."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -47027,8 +47078,8 @@
     "setting": null,
     "intentions": [],
     "suitability": [],
-    "status": "draft",
-    "classifiedBy": "house draft, for James to approve",
+    "status": "approved",
+    "classifiedBy": "James Papagno, 21 Nov 2026",
     "classifiedAt": "2026-11-21"
    },
    "volumes": [

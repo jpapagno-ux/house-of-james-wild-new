@@ -1896,9 +1896,39 @@
      }
     }
    ],
-   "facts": [],
-   "faqs": [],
-   "contentStatus": "needs_review",
+   "facts": [
+    [
+     "Getting there",
+     "Fly into Douglas-Charles Airport (DOM) on the northeast coast, where most visitors arrive, about an hour from Roseau. Canefield Airport (DCF) is 15 minutes from Roseau and takes smaller aircraft."
+    ],
+    [
+     "Who it suits",
+     "Hikers, divers and nature travellers; couples who want rainforest and a private villa more than a long white beach."
+    ],
+    [
+     "Signature experiences",
+     "The guided trek to the Boiling Lake through the Valley of Desolation, Morne Trois Pitons National Park, waterfalls and hot springs, and the reefs of the south west coast."
+    ]
+   ],
+   "faqs": [
+    {
+     "q": "Which airport do you fly into for Dominica?",
+     "a": "Douglas-Charles Airport (DOM), on the northeast side of the island about an hour from Roseau, is where most visitors arrive. Canefield Airport (DCF), 15 minutes from Roseau, has a shorter 3,100 foot runway."
+    },
+    {
+     "q": "What is the Boiling Lake?",
+     "a": "A flooded volcanic fumarole in Morne Trois Pitons National Park and the second largest boiling lake in the world, reaching 82 to 92 degrees Celsius at its edges. The trek takes three to four hours each way through the Valley of Desolation and needs a licensed guide."
+    },
+    {
+     "q": "Is Dominica a UNESCO World Heritage destination?",
+     "a": "Yes. Morne Trois Pitons National Park is a UNESCO World Heritage Site: nearly 7,000 hectares of tropical forest and volcanic features around the 1,342 metre Morne Trois Pitons."
+    },
+    {
+     "q": "Is Dominica good for beaches?",
+     "a": "It is better for rainforest, rivers and reefs. Most of the island's beaches are stone or natural black sand, and the reasons to come are the walking, the hot springs and the diving."
+    }
+   ],
+   "contentStatus": "approved",
    "months": [
     {
      "area": "Across Dominica",

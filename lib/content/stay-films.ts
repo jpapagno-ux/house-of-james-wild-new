@@ -10,6 +10,8 @@ export type WideFilm =
 
 export const STAY_FILMS: Record<string, WideFilm> = {
   // Casali di Casole's own estate film (47 s, 1080p) from casalidicasole.com, full screen for James's presentation (12 Nov 2026).
+  // Cap Juluca's own film (15 s, 1080p) from belmond.com, a house partner (James, 21 Nov 2026: "post video"), full screen.
+  "belmond-cap-juluca": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/anguilla/belmond-cap-juluca/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/anguilla/belmond-cap-juluca/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/anguilla/belmond-cap-juluca/film.jpg`, title: "Cap Juluca, A Belmond Hotel, on Maundays Bay, Anguilla", credit: "Film courtesy of Belmond", hero: true },
   // Wymara's own resort film (97 s, 1080p) from wymara.com (13 Nov 2026).
   wymara: {
     kind: "mp4",

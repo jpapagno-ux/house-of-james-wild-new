@@ -87,11 +87,12 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   const pwScope = pw ? `pathway-${pw.primary.id.slice(-2)}` : "";
   // Rooms (James, 20 Nov 2026): every room carries a photograph and what it includes, from the house room library.
   // A priced stay keeps its rate-card rooms and takes the library's photograph and features for the same room; a
-  // stay with no rate on file shows the library's rooms with "Rate on enquiry". No rate is read from the library.
+  // stay with no rate on file shows the library's rooms with "Rate on enquiry". No rate-card figure is read from the library; a room may carry a price the hotel
+  // publishes on its own site, filed there at James's request (21 Nov 2026) and printed with its own basis line.
   const libRow = (l: (typeof v.lib.rooms)[number]) => ({ facts: l.facts, lede: l.lede, features: l.features, flag: l.plungePool ? "Plunge pool" : undefined, photo: l.photos[0] ? { url: l.photos[0], alt: `${l.name} at ${s.name}${s.country ? `, ${s.country}` : ""}` } : null });
   const roomRows = rates
     ? rates.rooms.map((r) => { const l = v.lib.find(r.name); const x = l ? libRow(l) : null; return { name: r.name, sleeps: r.sleeps, list: money(r.list), now: r.now < r.list ? money(r.now) : null, ...(x ?? {}), photo: r.photo ?? x?.photo ?? null, action: <PickRoom slug={s.slug} room={r.name} reserveHref="#reserve" /> }; })
-    : v.lib.rooms.map((l) => ({ name: l.name, sleeps: l.sleeps, list: null, now: null, ...libRow(l), action: <PickRoom slug={s.slug} room={l.name} reserveHref="#reserve" /> }));
+    : v.lib.rooms.map((l) => ({ name: l.name, sleeps: l.sleeps, list: l.from ? money(l.from.amount) : null, now: null, basis: l.from?.basis, ...libRow(l), action: <PickRoom slug={s.slug} room={l.name} reserveHref="#reserve" /> }));
   const r0 = rates?.rooms[0];
   const nights = rates?.window?.nights ?? 0;
   const slip = rates && r0 && rates.window && nights > 0 ? (() => {
@@ -198,6 +199,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
             {roomRows.length > 0 && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates?.promo ?? null} reserveHref="#reserve"
               bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} photos={inSection("rooms").length > 0 ? <PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink> : undefined}
               rooms={roomRows}
+              note={!rates ? v.lib.ratesNote : null}
               footnote={!rates ? "" : `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates?.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 

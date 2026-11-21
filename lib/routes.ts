@@ -168,9 +168,12 @@ export const BUILT: string[] = [
   "/destinations/europe",
   "/destinations/central-america/costa-rica",
   "/destinations/africa/south-africa",
+  "/destinations/caribbean-mexico/st-barts", // house destination cards (James, 21 Nov 2026)
+  "/destinations/caribbean-mexico/anguilla",
   "/destinations/asia/indonesia",
   "/destinations/asia/indonesia/raja-ampat",
   "/destinations/asia/indonesia/komodo",
+  "/destinations/asia/indonesia/bali",
   "/destinations/south-america/chile/rapa-nui",
   "/destinations/south-america/chile/atacama",
   "/destinations/south-america/ecuador-galapagos/galapagos", // a place inside Ecuador & Galápagos (James approved, 2 Nov 2026)

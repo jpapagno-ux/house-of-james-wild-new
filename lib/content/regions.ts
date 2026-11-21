@@ -3,6 +3,7 @@
 import data from "./regions.json";
 import LIBRARY from "./countries-library.json";
 import STAY_ROWS from "./stays.json";
+import { HOUSE_CARDS } from "./countries-house";
 import { isVessel, VESSEL_SLUGS } from "./vessels";
 
 export type RegionCountry = { name: string; slug: string | null; image: string | null; line: string; stays: number; bestMonths: string | null; reviewed: boolean; /** destination card: on the site before its stays */ coming?: boolean };
@@ -28,7 +29,8 @@ const fix = (u: string | null) => (u && /media\.base44\.com\/images\/public\/[^/
 // marked coming so the card reads "Stays coming soon" rather than "0 stays".
 type LibCountry = { slug: string; name: string; region: string; subtitle?: string; leading?: string; hero?: { src?: string | null } | null; bestShort?: string; contentStatus?: string; staysComing?: boolean };
 type StayRow = { volumes?: string[] | null; reviewed?: boolean; slug: string; name: string; ledgerId: string | null; tagline: string | null; hero: string | null; country: string | null; countrySlug: string | null; regionSlug: string | null; status: string | null; statusDate: string | null; reserveChild?: boolean; misfiled?: unknown };
-const LIB = (LIBRARY.countries as LibCountry[]);
+// House destination cards (countries-house.ts) are listed on their region page like a library card.
+const LIB: LibCountry[] = [...(LIBRARY.countries as LibCountry[]), ...HOUSE_CARDS];
 const ALL_ROWS = (STAY_ROWS.stays as (StayRow & { category?: string | null })[]).filter((x) => !x.misfiled);
 // Vessels are Voyages, not stays (lib/content/vessels.ts): out of every count and featured card.
 // regions.json counts come straight from the library, so its vessels are taken off here too.

@@ -1937,7 +1937,7 @@
   ]
  },
  "sleeping-giant-rainforest-lodge": {
-  "_source": "sleepinggiantbelize.com (the lodge's own site: home page and /policies/), read 21 Nov 2026 at James's request. Room photographs could not be copied: the site refused the copy (403).",
+  "_source": "sleepinggiantbelize.com (the lodge's own site: home page and /policies/), read 21 Nov 2026 at James's request. Room photographs could not be copied: the site refused the copy (403). 'From' figures shown at James's word that they are US dollars per room, per night (21 Nov 2026).",
   "rooms": [
    {
     "name": "Riverside Room",
@@ -1953,9 +1953,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 219,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -1972,9 +1972,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 249,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -1991,9 +1991,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 299,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2010,9 +2010,9 @@
     ],
     "photos": [],
     "plungePool": true,
-    "publishedFrom": {
+    "from": {
      "amount": 349,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2029,9 +2029,9 @@
     ],
     "photos": [],
     "plungePool": true,
-    "publishedFrom": {
+    "from": {
      "amount": 429,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2048,9 +2048,9 @@
     ],
     "photos": [],
     "plungePool": true,
-    "publishedFrom": {
+    "from": {
      "amount": 479,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2067,9 +2067,9 @@
     ],
     "photos": [],
     "plungePool": true,
-    "publishedFrom": {
+    "from": {
      "amount": 579,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2086,9 +2086,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 549,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2105,15 +2105,16 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 599,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    }
-  ]
+  ],
+  "ratesNote": "'From' rates as published by The Rainforest Lodge at Sleeping Giant, in US dollars per room, per night (basis confirmed by James, 21 Nov 2026). The lodge adds a 9% hotel tax and a 10% resort fee. Read 21 Nov 2026; the house confirms the rate for your dates."
  },
  "jaguar-reef-lodge": {
-  "_source": "jaguarreefbelize.com (the lodge's own site: home page and /policies/), read 21 Nov 2026 at James's request. No room photographs copied yet.",
+  "_source": "jaguarreefbelize.com (the lodge's own site: home page and /policies/), read 21 Nov 2026 at James's request. No room photographs copied yet. 'From' figures shown at James's word that they are US dollars per room, per night (21 Nov 2026).",
   "rooms": [
    {
     "name": "Deluxe Suite with Pool (Lower Level)",
@@ -2128,9 +2129,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 359,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2146,9 +2147,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 359,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2164,9 +2165,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 399,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2181,9 +2182,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 469,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2199,9 +2200,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 509,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2216,9 +2217,9 @@
     ],
     "photos": [],
     "plungePool": true,
-    "publishedFrom": {
+    "from": {
      "amount": 609,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2233,9 +2234,9 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 309,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    },
    {
@@ -2250,12 +2251,13 @@
     ],
     "photos": [],
     "plungePool": false,
-    "publishedFrom": {
+    "from": {
      "amount": 319,
-     "note": "'From' figure on the lodge's own home page; currency and per-night basis not stated there. Add 9% hotel tax and 10% resort fee (the lodge's policies page). Not displayed until James confirms the basis."
+     "basis": "per room, per night · before 9% hotel tax and 10% resort fee"
     }
    }
-  ]
+  ],
+  "ratesNote": "'From' rates as published by The Lodge at Jaguar Reef, in US dollars per room, per night (basis confirmed by James, 21 Nov 2026). The lodge adds a 9% hotel tax and a 10% resort fee. Read 21 Nov 2026; the house confirms the rate for your dates."
  },
  "st-george-s-caye-resort": {
   "_source": "st-georgesresort.com (the resort's own site: home page and /accommodations), read 21 Nov 2026 at James's request. No rates are published there; no room photographs on those pages.",

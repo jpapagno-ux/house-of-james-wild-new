@@ -8,6 +8,7 @@ import { AddNoteForm, AddSavedStay, InviteForm, RemoveButton } from "@/component
 import { PathwayChips } from "@/components/pathways/Pathway";
 import { pathwayChipsFor } from "@/lib/content/pathways";
 import { PATHWAYS_ON, pathwayHref } from "@/lib/content/pathways/flag";
+import FolioThread, { type ThreadData } from "@/components/folio/FolioThread";
 
 export const metadata = { title: "Journey" };
 
@@ -23,11 +24,15 @@ export default async function FolioPage({ params }: { params: Promise<{ id: stri
   const { data: folio } = await sb.from("folios").select("id, title, destination_summary, start_date, end_date, status, owner_user_id, ledger_id, advisor_adv, advisor_slug").eq("id", id).maybeSingle();
   if (!folio) notFound();
   const owner = folio.owner_user_id === user.id;
-  const [{ data: items }, { data: members }, { data: favs }] = await Promise.all([
+  const [{ data: items }, { data: members }, { data: favs }, { data: threadRow }] = await Promise.all([
     sb.from("folio_items").select("id, notes, external_item_type, arrival_date, departure_date, property:properties(slug, name, country)").eq("folio_id", id).order("sort_order").returns<Item[]>(),
     sb.from("folio_members").select("user_id, role, access_status").eq("folio_id", id).eq("access_status", "active").returns<Member[]>(),
     sb.from("favorites").select("property:properties(slug, name)").returns<{ property: { slug: string; name: string } | null }[]>(),
+    // Iggi Stage 2 (21 Nov 2026): the sketch and chat the traveler saved with the Folio.
+    sb.from("folio_threads").select("id, sketch, saved_at, turns:folio_thread_turns(id, role, body, citations, said_at, sort_order)").eq("folio_id", id).maybeSingle(),
   ]);
+  const thread: ThreadData | null = threadRow ? { id: threadRow.id, sketch: threadRow.sketch as ThreadData["sketch"], saved_at: threadRow.saved_at, turns: ((threadRow.turns ?? []) as (ThreadData["turns"][number] & { sort_order: number })[]).sort((a, b) => a.sort_order - b.sort_order) } : null;
+  const advisorName = (() => { const a = ADVISORS.find((x) => x.slug === folio.advisor_slug || x.desk?.adv === folio.advisor_adv); return a ? a.firstName ?? a.name : null; })();
   const role = owner ? "owner" : members?.find((m) => m.user_id === user.id)?.role ?? "viewer";
   const canEdit = role === "owner" || role === "editor";
   const dates = [niceDate(folio.start_date), niceDate(folio.end_date)].filter(Boolean).join(" → ");
@@ -67,6 +72,10 @@ export default async function FolioPage({ params }: { params: Promise<{ id: stri
           </ol>
         )}
       </section>
+
+      {thread && (thread.turns.length > 0 || (thread.sketch?.stops ?? []).length > 0) && (
+        <FolioThread thread={thread} folioId={id} canDelete={owner} advisorName={advisorName} reader="traveler" />
+      )}
 
       {canEdit && (
         <section className="grid gap-6 border ledger-rule p-5">

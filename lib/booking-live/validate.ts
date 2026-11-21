@@ -178,3 +178,41 @@ export function parseSearch(body: unknown, needRoom = false): Result<SearchInput
   if (needRoom && (!room || !plan)) return fail("invalid_input", "Choose a room and rate");
   return { ok: true, value: { slug, arrival: body.arrival as string, departure: body.departure as string, adults, childAges: kids as number[], promoCode: promo, room, plan } };
 }
+
+// ── Folio thread (Iggi Stage 2, 21 Nov 2026) ─────────────────────────────────
+export type ThreadTurn = { role: "traveler" | "iggi"; body: string; citations: string[] };
+export type ThreadInput = { core_conversation_id: string | null; sketch: Record<string, unknown>; turns: ThreadTurn[] };
+const LEDGER_ID = /^[A-Z]{3,4}(-[A-Z]{2,5})?-\d{4}-\d{6}$/;
+
+/** PUT /api/v1/me/folios/:id/thread — { conversationId?, sketch?, turns: [{ role, body, citations? }] } */
+export function parseThread(body: unknown): Result<ThreadInput> {
+  if (!isObj(body)) return fail("invalid_input", "Body must be a JSON object");
+  const bad = only(body, ["conversationId", "sketch", "turns"]); if (bad) return bad;
+  const conv = typeof body.conversationId === "string" ? body.conversationId.trim().slice(0, 64) || null : null;
+  if (conv !== null && !/^[A-Za-z0-9_-]+$/.test(conv)) return fail("invalid_input", "conversationId must be an id");
+  const sketchIn = isObj(body.sketch) ? body.sketch : {};
+  // Keep only what the Folio page renders; the Core keeps the full record.
+  const str = (v: unknown, n: number) => (typeof v === "string" ? v.trim().slice(0, n) : "");
+  const stops = Array.isArray(sketchIn.stops) ? (sketchIn.stops as unknown[]).filter(isObj).slice(0, 20).map((s) => ({
+    ledger_id: LEDGER_ID.test(String(s.ledger_id ?? "")) ? String(s.ledger_id) : null,
+    slug: str(s.slug, 120) || null, name: str(s.name, 160), country: str(s.country, 80) || null,
+    role: ["gateway", "stay", "voyage", "overland", "home"].includes(String(s.role)) ? String(s.role) : "stay",
+    nights: Number.isFinite(Number(s.nights)) ? Math.max(0, Math.min(60, Math.round(Number(s.nights)))) : 0,
+    pairing: s.pairing === "before" || s.pairing === "after" ? s.pairing : "",
+    note: str(s.note, 400) || null, indicative: str(s.indicative, 240) || null,
+  })).filter((s) => s.name) : [];
+  const transfers = Array.isArray(sketchIn.transfers) ? (sketchIn.transfers as unknown[]).filter(isObj).slice(0, 20).map((t) => ({ from: str(t.from, 160), to: str(t.to, 160), note: str(t.note, 300) || null })).filter((t) => t.from && t.to) : [];
+  const sketch = { title: str(sketchIn.title, 160) || null, stops, transfers, dates_hint: str(sketchIn.dates_hint, 120) || null, party: str(sketchIn.party, 120) || null, last_change: str(sketchIn.last_change, 300) || null };
+  if (!Array.isArray(body.turns)) return fail("invalid_input", "turns must be a list");
+  const turns: ThreadTurn[] = [];
+  for (const t of (body.turns as unknown[]).slice(0, 80)) {
+    if (!isObj(t)) continue;
+    const role = t.role === "traveler" || t.role === "iggi" ? t.role : null;
+    const text = typeof t.body === "string" ? t.body.trim().slice(0, 4000) : "";
+    if (!role || !text) continue;
+    const citations = Array.isArray(t.citations) ? (t.citations as unknown[]).filter((c): c is string => typeof c === "string" && LEDGER_ID.test(c)).slice(0, 12) : [];
+    turns.push({ role, body: text, citations });
+  }
+  if (!turns.length && !stops.length) return fail("invalid_input", "Nothing to save: no turns and no sketch");
+  return { ok: true, value: { core_conversation_id: conv, sketch, turns } };
+}

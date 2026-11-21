@@ -857,16 +857,16 @@
      "Serves 6 stays in the Ledger here"
     ],
     [
-     "Placencia Municipal Airport (PLJ)",
+     "Dangriga Airstrip (DGA)",
      "Serves 2 stays in the Ledger here"
     ],
     [
-     "Dangriga Airstrip (DGA)",
-     "Serves 2 stays in the Ledger here"
+     "Placencia Airstrip (PLJ)",
+     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "BZE · PLJ",
+   "flyInto": "BZE · DGA",
    "bestShort": "Nov–May",
    "atlasName": "Belize"
   },

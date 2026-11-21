@@ -317,7 +317,6 @@ export const STAY_SLUGS: string[] = [
   "beyond-vira-vira-lodge",
   "bintana-sa-paraiso",
   "blancaneaux-lodge",
-  "blue-reef",
   "blue-safari-seychelles",
   "boluntiku-hotel",
   "borana",

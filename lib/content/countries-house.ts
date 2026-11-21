@@ -6,6 +6,9 @@ import type { CountryData } from "./countries";
 // James". Facts only from official bodies, kept as data in HOUSE_CARD_SOURCES and never printed as links (James,
 // 13 Nov 2026): St Barts from the Comité Territorial du Tourisme de Saint-Barthélemy; Anguilla from the Anguilla
 // Tourist Board and the Government of Anguilla. contentStatus stays "none" until James has read each page.
+// Founder marks (James, 21 Nov 2026): he sailed these islands in 2024 aboard Windstar's Wind Surf and SeaDream II,
+// and was back on St Maarten, St Barts and Anguilla in August 2025. Cap Juluca on Anguilla is a house partner; its
+// stay record is not filed yet, so the page names it and says nothing more about the property (Sources rule).
 // No photograph is on file yet (hero.src null, never a stand-in): the licensed Getty heroes arrived at preview
 // size only, and wait in HERO_QUEUE below until the full-size files are in the library.
 
@@ -44,7 +47,7 @@ export const HOUSE_CARDS: CountryData[] = [
         { h: "Gustavia", p: "The harbour town and the port, where the ferries land. The Governors' House, built around 1780, served the Swedish governors from 1785 to 1877; Dinzey House, from about 1820, survived the great fire of 1852." },
         { h: "Saint-Jean", p: "A bay of calm turquoise water beside the airport, lined with a beach, beach clubs and shops. Its central position and the airport next door make it a popular place to stay." },
         { h: "The beaches", p: "The tourism committee names seventeen. Flamands is the largest and Saline the second; Gouverneur, Colombier, Lorient, Grand Cul-de-Sac, Shell Beach and Toiny are among the rest." },
-        { h: "The founder's corner", p: "James's own favourite is Toiny, on the Côte Sauvage, the wild windward side of the island." },
+        { h: "The founder's corner", p: "James came to St Barts under sail in 2024, aboard Windstar's Wind Surf and SeaDream II, and was back in August 2025. His own favourite is Toiny, on the Côte Sauvage, the wild windward side of the island." },
         { h: "By sea", p: "St Barts is a port of call on small-ship sailings in the Ledger, with SeaDream and Four Seasons I among them." },
       ] },
     ],
@@ -55,7 +58,7 @@ export const HOUSE_CARDS: CountryData[] = [
       ["Entry", "A valid passport for everyone. US and Canadian citizens need no visa for stays of 90 days or fewer; other nationalities should check French requirements before travel. Sint Maarten asks every traveller, including those in transit, to complete its entry form."],
       ["Who it suits", "Couples, families taking a villa, and sailors. Travellers who want French food and a beach within ten minutes in any direction."],
       ["Size", "24 square kilometres, with a 1,200 hectare marine nature reserve around it."],
-      ["In the Ledger", "A destination card: stays coming soon. The founder knows the island and plans it with you."],
+      ["In the Ledger", "A destination card: stays coming soon. James sailed here in 2024 and returned in August 2025."],
     ],
     faqs: [
       { q: "When is the best time to visit St Barts?", a: "December to May, the dry and mild season, when the air is about 27°C. June to November is hotter and more humid, at 30 to 32°C. The island's tourism committee describes December to August as the most favourable period overall." },
@@ -64,6 +67,7 @@ export const HOUSE_CARDS: CountryData[] = [
       { q: "Is St Barts part of France?", a: "Yes. Saint-Barthélemy has been a French Overseas Collectivity since 15 July 2007. It was Swedish from 1784 to 1878, which is where Gustavia gets its name and its free-port history." },
       { q: "How many beaches does St Barts have?", a: "The tourism committee names seventeen, including Flamands (the largest), Saline, Gouverneur, Colombier, Saint-Jean, Lorient, Grand Cul-de-Sac, Shell Beach and Toiny." },
       { q: "Do I need a visa for St Barts?", a: "US and Canadian citizens need no visa for stays of 90 days or fewer, with a passport valid for more than six months and a return or onward ticket. UK citizens need no visa for stays of up to 90 days. Other nationalities should check French visa rules before departure." },
+      { q: "Has James been to St Barts?", a: "Yes. James sailed to St Barts in 2024 aboard Windstar's Wind Surf and SeaDream II, and returned in August 2025. His favourite part of the island is Toiny, on the Côte Sauvage." },
       { q: "Can you visit St Barts by ship?", a: "Yes. Gustavia is a port of call for small ships, and the house files sailings that call there. Tell us your dates and we will match a sailing or plan the island on its own." },
     ],
     contentStatus: "none",
@@ -87,6 +91,7 @@ export const HOUSE_CARDS: CountryData[] = [
         { h: "The West End", p: "Meads Bay, Rendezvous Bay, Maundays Bay, Barnes Bay, Long Bay and Cove Bay: long arcs of soft sand on calm water, and the beaches the island is known for." },
         { h: "Sandy Ground and Sandy Island", p: "Sandy Ground is the island's harbour beach. From it a shuttle runs ten minutes out to Sandy Island, a strip of sand with palms, a lunch table and a reef to snorkel." },
         { h: "Prickly Pear and Scilly Cay", p: "Prickly Pear is twenty minutes by boat from Sandy Ground, for snorkelling, swimming and a long lunch. Scilly Cay is three minutes from the wharf at Island Harbour, known for lobster and rum punch. Anguilla has seven cays in all." },
+        { h: "The founder's Anguilla", p: "James knows these waters from the deck: he sailed them in 2024 aboard Windstar's Wind Surf and SeaDream II, and came back to Anguilla in August 2025 on a trip that took in St Maarten and St Barts. Cap Juluca is the house's partner stay on the island, and its page is coming." },
         { h: "By sea", p: "Anguilla is a port of call for Four Seasons I in the Ledger, and it pairs easily with St Barts and St Martin on a week under sail or by short boat hops." },
       ] },
     ],
@@ -97,7 +102,7 @@ export const HOUSE_CARDS: CountryData[] = [
       ["Who it suits", "Beach lovers, families and couples who want calm water and good food without a scene. Sailors, from Easter to August."],
       ["Size", "35 square miles: 16 miles long and 3 miles wide at its widest point."],
       ["Money and language", "English. The Eastern Caribbean dollar, with US dollars widely accepted."],
-      ["In the Ledger", "A destination card: stays coming soon. Plan it with James."],
+      ["In the Ledger", "A destination card: Cap Juluca, a house partner, is coming. James was on the island in August 2025."],
     ],
     faqs: [
       { q: "When is the best time to visit Anguilla?", a: "December to April is the main season. The island is warm all year, with a mean monthly temperature of about 80°F and low rainfall of roughly 35 inches a year; the Tourist Board puts the rainy season from September." },
@@ -106,6 +111,7 @@ export const HOUSE_CARDS: CountryData[] = [
       { q: "How big is Anguilla?", a: "35 square miles: 16 miles long and 3 miles wide at its widest point. It is flat, made of coral and limestone, and easy to cross end to end." },
       { q: "Is Anguilla British?", a: "Yes. Anguilla is a self-governing British Overseas Territory. English is the language and the capital is The Valley." },
       { q: "What currency does Anguilla use?", a: "The Eastern Caribbean dollar. US dollars are widely accepted." },
+      { q: "Has James been to Anguilla?", a: "Yes. James was on Anguilla in August 2025, on a trip that also took in St Maarten and St Barts, and he sailed these islands in 2024 aboard Windstar's Wind Surf and SeaDream II. Cap Juluca is the house's partner stay there." },
       { q: "Can you visit Sandy Island from Anguilla?", a: "Yes. A shuttle runs from Sandy Ground to Sandy Island in about ten minutes. Prickly Pear is about twenty minutes by boat from the same beach." },
     ],
     contentStatus: "none",

@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 export const GET = withTraveler("accounts", async ({ sb, user, requestId }) => {
   const { data, error: e } = await sb
     .from("folios")
-    .select("id, title, destination_summary, start_date, end_date, status, owner_user_id, updated_at, folio_items(count)")
+    .select("id, title, destination_summary, start_date, end_date, status, owner_user_id, ledger_id, updated_at, folio_items(count)")
     .order("updated_at", { ascending: false });
   if (e) return dbError(e, requestId);
   return ok((data ?? []).map((f) => ({ ...f, shared: f.owner_user_id !== user.id })), requestId);

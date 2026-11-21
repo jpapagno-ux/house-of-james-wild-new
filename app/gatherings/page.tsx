@@ -1,4 +1,6 @@
 import SiteHeader from "@/components/ledger/SiteHeader";
+import IggiPanel from "@/components/iggi/IggiPanel";
+import { IGGI_ON } from "@/lib/iggi/flag";
 import VolumeEntrance from "@/components/entrance/VolumeEntrance";
 import { ENTRANCES } from "@/lib/content/entrances";
 import JsonLd from "@/components/ledger/JsonLd";
@@ -47,6 +49,8 @@ export default function GatheringsHub() {
             </ul>
           </HubSection>
         )}
+        {/* Iggi on Gatherings (James, 20 Nov 2026, the last volume): the group is the party, the house is the base. */}
+        {IGGI_ON && <IggiPanel ctx={{ entityType: "region", entitySlug: "gatherings", sourcePage: PATH, volume: "gatherings" }} heading="Ask Iggi about a Gathering" lead="Tell him how many are coming and who, and he will find a house that sleeps you all, with the adventures around it planned in." />}
         <AdvisorScroll volume="gatherings" title="Who books the whole house" />
       </HubShell>
       <JsonLd data={graph({ "@type": "CollectionPage", "@id": absoluteUrl(`${PATH}#page`), url: absoluteUrl(PATH), name: "Gatherings" })} />

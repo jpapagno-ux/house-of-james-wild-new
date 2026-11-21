@@ -7,6 +7,7 @@ import Link from "next/link";
 import { DEFAULT_ADVISOR } from "@/lib/content/advisors";
 import { CRUX_HREF } from "@/lib/compass/pathway-adapter";
 import { folioFromCore, getFolio, isFolioId, saveFolio, type Folio } from "@/lib/folio/shelf";
+import { chatFromCore, RESUME_HREF, saveFolioToAccount, stashPending } from "@/lib/folio/account-save";
 import { FLAGS } from "@/lib/booking-live/flags";
 import IggiAtlas, { type IggiPlace } from "@/components/iggi/IggiAtlas";
 
@@ -39,6 +40,8 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
   const [src, setSrc] = useState<string | null>(null);
   const [state, setState] = useState<"idle" | "loading" | "ready" | "off">("idle");
   const [folio, setFolio] = useState<Folio | null>(null); // Stage 4: the Folio Iggi handed back
+  // Stage 2 (21 Nov 2026): where the Folio and chat went in the account: saved (with the account Folio id), sign-in needed, or shelf only.
+  const [kept, setKept] = useState<{ state: "saved"; id: string } | { state: "sign_in" } | { state: "shelf" } | null>(null);
   const [atlas, setAtlas] = useState<{ stays: IggiPlace[]; title: string | null; focus: number } | null>(null); // §D3: the places Iggi named, on the Atlas
 
   // Lazy: mint the token and set the iframe src only when the panel is near the viewport.
@@ -103,7 +106,18 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
         if (f) {
           saveFolio(f);
           setFolio(f);
-          if (FLAGS.accounts) void saveToAccount(f);
+          // Stage 2: the sketch and chat go with it into the account; without sign-in the hand-off waits in this browser.
+          const m = d as { chat?: unknown; sketch?: unknown; conversationId?: unknown };
+          const chat = chatFromCore(m.chat);
+          const sketch = m.sketch && typeof m.sketch === "object" ? m.sketch : null;
+          const conversationId = typeof m.conversationId === "string" ? m.conversationId.slice(0, 64) : null;
+          if (FLAGS.accounts) {
+            void saveFolioToAccount({ folio: f, chat, sketch, conversationId }).then((res) => {
+              if (res.ok) { setKept({ state: "saved", id: res.id }); return; }
+              if (res.reason === "sign_in") { stashPending({ folio: f, chat, sketch, conversationId, at: new Date().toISOString() }); setKept({ state: "sign_in" }); return; }
+              setKept({ state: "shelf" });
+            });
+          } else setKept({ state: "shelf" });
           const dl = (window as unknown as { dataLayer?: unknown[] }).dataLayer;
           if (Array.isArray(dl)) dl.push({ event: "iggi_folio", fol: f.fol, advisor: f.advisor?.adv ?? null, page: ctx.sourcePage });
         }
@@ -194,10 +208,16 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
           <div className="min-w-0">
             <p className="ledger-eyebrow ledger-crimson">Folio {folio.fol}{folio.advisor?.adv ? ` · open with ${folio.advisor.isDefault ? "James" : folio.advisor.firstName ?? folio.advisor.name}` : ""}</p>
             <p className="ledger-display text-[1.25rem] mt-1 leading-snug">{folio.title}</p>
-            <p className="text-[13.5px] ledger-muted mt-0.5">{folio.stays.length ? `${folio.stays.length} Ledger record${folio.stays.length === 1 ? "" : "s"} · ` : ""}on your shelf under My Folio{FLAGS.accounts ? " and in your account" : " on this device"}.</p>
+            <p className="text-[13.5px] ledger-muted mt-0.5">
+              {folio.stays.length ? `${folio.stays.length} Ledger record${folio.stays.length === 1 ? "" : "s"} · ` : ""}
+              {kept?.state === "saved" ? "saved to your account with the sketch and this chat; your advisor sees what you save."
+                : kept?.state === "sign_in" ? "on your shelf on this device. Sign in and the sketch and chat are kept in your account, where your advisor can read them."
+                : "on your shelf under My Folio on this device."}
+            </p>
           </div>
           <div className="flex gap-3 ml-auto">
-            <Link href={`/folio?fol=${encodeURIComponent(folio.fol)}`} className="ledger-btn">Open My Folio</Link>
+            {kept?.state === "sign_in" && <Link href={RESUME_HREF} className="ledger-btn ledger-btn--solid">Sign in to keep it</Link>}
+            <Link href={kept?.state === "saved" ? `/account/folios/${kept.id}` : `/folio?fol=${encodeURIComponent(folio.fol)}`} className="ledger-btn">Open My Folio</Link>
             {planHref && <Link href={planHref} className="ledger-btn ledger-btn--solid">Plan with {folio.advisor?.adv ? (folio.advisor.isDefault ? "James" : folio.advisor.firstName ?? folio.advisor.name) : "James"}</Link>}
           </div>
         </aside>
@@ -210,19 +230,4 @@ export default function IggiPanel({ ctx, heading = "Ask Iggi about this page", l
 /** A Plan link from the Core points at this site; keep only its path so it stays same-origin. */
 function toLocal(href: string): string {
   try { const u = new URL(href, "https://house-of-james-wild-new.vercel.app"); return u.pathname + u.search; } catch { return "/plan"; }
-}
-
-/** With traveller accounts on: the same Folio in the account (title, the stays as items, the itinerary as a note). Best effort, signed-in only. */
-async function saveToAccount(f: Folio): Promise<void> {
-  try {
-    const r = await fetch("/api/v1/me/folios", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ title: f.title.slice(0, 120), destinationSummary: (f.summary ?? "").slice(0, 400) || undefined, ledgerId: f.fol, advisorAdv: f.advisor?.adv ?? undefined, advisorSlug: f.advisor?.slug ?? undefined, source: "iggi" }) });
-    if (!r.ok) return; // not signed in, or accounts off: the device shelf still has it
-    const { data } = (await r.json()) as { data?: { id?: string } };
-    if (!data?.id) return;
-    for (const s of f.stays) {
-      if (!s.slug) continue;
-      await fetch(`/api/v1/me/folios/${data.id}/items`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ property: s.slug, notes: s.reason ?? undefined }) }).catch(() => undefined);
-    }
-    if (f.days.length) await fetch(`/api/v1/me/folios/${data.id}/items`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ type: "note", notes: f.days.map((d) => `Day ${d.day_number}: ${d.title}`).join("\n").slice(0, 2000) }) }).catch(() => undefined);
-  } catch { /* the device shelf is the fallback */ }
 }

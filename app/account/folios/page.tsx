@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { niceDate, requireTraveler } from "@/lib/booking-live/account";
 import { NewFolioForm } from "@/components/booking-live/Actions";
+import ResumeIggiSave from "@/components/folio/ResumeIggiSave";
+import { Suspense } from "react";
 
 export const metadata = { title: "Journeys" };
 
@@ -16,6 +18,7 @@ export default async function FoliosPage() {
         <h1 className="ledger-display text-[2rem] md:text-[2.4rem]">Journeys</h1>
         <p className="mt-2 text-[16px] ledger-muted max-w-2xl">Each journey gathers stays, notes and ideas for one trip. Share it with the people going with you.</p>
       </div>
+      <Suspense fallback={null}><ResumeIggiSave /></Suspense>
       {folios.length > 0 && (
         <ul className="grid gap-4 md:grid-cols-2">
           {folios.map((f) => {

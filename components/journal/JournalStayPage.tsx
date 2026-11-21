@@ -1,4 +1,5 @@
 import Link from "next/link";
+import experiencePhotos from "@/lib/journal-style/experience-photos.json";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import Breadcrumbs from "@/components/ledger/Breadcrumbs";
@@ -139,10 +140,15 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   const usedShots = new Set<string>();
   const shotFor = (title: string) => {
     const words = title.toLowerCase().replace(/[^a-z ]/g, " ").split(/\s+/).filter((w) => w.length > 3 && !STOP.has(w)).map(stem).filter((w) => w.length > 3);
-    const hit = v.photos.find((p) => p.section === "experiences" && !usedShots.has(p.url) && words.some((w) => p.alt.toLowerCase().split(" at ")[0].includes(w)));
+    // first the photograph chosen by eye for this card (lib/journal-style/experience-photos.json); then a described experience photograph that names the activity
+    const picked = (experiencePhotos as unknown as Record<string, Record<string, string>>)[s.slug]?.[title];
+    const hit = (picked ? v.photos.find((p) => !usedShots.has(p.url) && (p.url.split("?")[0].split("/").pop() ?? "").replace(/\.[a-z0-9]{3,4}$/i, "") === picked) : undefined)
+      ?? v.photos.find((p) => p.section === "experiences" && !usedShots.has(p.url) && words.some((w) => p.alt.toLowerCase().split(" at ")[0].includes(w)));
     if (hit) usedShots.add(hit.url);
     return hit ?? null;
   };
+  // cards that carry a photograph lead the row, so the row opens on pictures; the rest keep their filed order
+  const experienceCards = v.experiences.map((x) => { if (x.image) return x; const m = shotFor(x.title); return m ? { ...x, image: m.url, alt: m.alt } : x; }).map((x, i) => ({ x, i })).sort((p, q) => Number(!!q.x.image) - Number(!!p.x.image) || p.i - q.i).map(({ x }) => x);
   return (
     <div className={`journal-style bg-white ${pwScope}`}>
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
@@ -193,7 +199,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
               footnote={!rates ? "" : `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates?.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
-            <JournalExperiences no={N.exp} slug={s.slug} items={v.experiences.map((x) => { if (x.image) return x; const m = shotFor(x.title); return m ? { ...x, image: m.url, alt: m.alt } : x; })} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
+            <JournalExperiences no={N.exp} slug={s.slug} items={experienceCards} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
 
             <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>
 

@@ -161,7 +161,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
         <div className="relative">
           <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
           film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" photoCount={v.photos.length} />
-          {pw && wow && <div aria-hidden className="jw-hero-stamp pointer-events-none absolute right-4 md:right-[12.5rem] top-[calc(var(--jw-header-h)+3.5rem)] md:top-[calc(var(--jw-header-h)+3.25rem)] z-20"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div>}
+          {pw && wow && <div aria-hidden className="pointer-events-none absolute inset-0 z-20"><div className="relative mx-auto h-full max-w-ledger"><div className="jw-hero-stamp absolute right-4 md:right-10 top-[calc(var(--jw-header-h)+3.5rem)] md:top-auto md:bottom-48"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div></div></div>}
         </div>
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />

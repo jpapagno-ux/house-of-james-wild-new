@@ -24992,6 +24992,109 @@
    "placeSlug": null
   },
   {
+   "slug": "jade-mountain",
+   "name": "Jade Mountain",
+   "ledgerId": "STY-2026-000773",
+   "country": "St Lucia",
+   "countrySlug": "st-lucia",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-nine sanctuaries with a missing fourth wall, open to the Pitons and the Caribbean Sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-lucia/jade-mountain/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-lucia/jade-mountain/infinity-pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "luxury"
+   ],
+   "status": "founder_visited",
+   "statusDate": "2022-05-01",
+   "coords": null,
+   "airport": "Hewanorra International Airport (UVF)",
+   "airportDirections": "Hewanorra International Airport (UVF) is 18 miles away, about 60 minutes by road; George Charles Airport (SLU) is 30 miles, about 75 minutes. A shared helicopter takes about 6 minutes from UVF and 8 from SLU, in daylight only. The resort arranges every transfer and an airport representative meets you outside arrivals.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Sky Whirlpool Suites, about 1,650 square feet, with a whirlpool tub for two and no pool. Star Sanctuaries, 1,400 to 1,800 square feet, with an infinity pool of about 450 square feet. Moon Sanctuaries, 1,600 to 1,950 square feet, pool about 650 square feet. Sun Sanctuaries, 1,800 to 2,000 square feet, pool about 900 square feet, on the corners with a 270 degree view. Galaxy Sanctuaries, about 2,000 square feet, pool about 900 square feet: three, with the widest views."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "29 sanctuaries, 24 with a private infinity pool. The fourth wall is absent in every sanctuary, open to the Pitons and the sea. No televisions, radios or telephones. Jade Mountain Club, with Jade Cuisine by chef Allen Susser, and the Celestial Terrace. Kai en Ciel Spa and daily yoga at sunrise and sunset. Guests aged 16 and over."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Jade Mountain stands above the 600 acre beachfront estate of Anse Chastanet, the work of its architect-owner Nick Troubetzkoy. Each sanctuary leaves one wall out, so the bedroom, the living space and, in 24 of them, a private infinity pool run together and look straight at the Pitons. The pools are lined in glass tiles made for each one, in its own colour, and lit by fibre optics at night.",
+    "It was the first hotel in the Caribbean to earn LEED Gold. Below are two beaches, a PADI 5 Star dive operation, more than 12 miles of hiking and biking trails, an organic farm and a chocolate lab. A major domo looks after each sanctuary."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Room With Three Walls Nothing stands between the bed, the pool and the Pitons. It is a stay for two people who want the view to themselves, with a beach and a reef a few minutes below."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to Hewanorra (UVF), then about 60 minutes by road or about 6 minutes by helicopter. George Charles (SLU) is about 75 minutes by road.",
+    "signature_experiences": "A night swim in your own lit infinity pool, dinner at the Jade Mountain Club, the chocolate lab, diving from Anse Chastanet and a guided walk of the estate.",
+    "who_its_for": "Couples and honeymooners, aged 16 and over, who want privacy, a view of the Pitons and no screens."
+   },
+   "faqs": [
+    {
+     "q": "How many sanctuaries does Jade Mountain have?",
+     "a": "29. Twenty-four have a private infinity pool, in the Star, Moon, Sun and Galaxy categories, and five are Sky Whirlpool Suites with a whirlpool tub for two."
+    },
+    {
+     "q": "What is the missing fourth wall at Jade Mountain?",
+     "a": "Every sanctuary is built without its fourth wall, so the living space is open to the Pitons and the Caribbean Sea while staying private. There are no televisions, radios or telephones."
+    },
+    {
+     "q": "How do you get to Jade Mountain?",
+     "a": "Hewanorra International Airport (UVF) is 18 miles away, about 60 minutes by road. A helicopter takes about 6 minutes in daylight. George Charles Airport (SLU) is about 75 minutes by road."
+    },
+    {
+     "q": "Can children stay at Jade Mountain?",
+     "a": "No. Jade Mountain does not accept guests under 16."
+    },
+    {
+     "q": "How much does Jade Mountain cost?",
+     "a": "The resort's published 2027 daily rates start at US$1,655 a night for a Sky Whirlpool Suite, room only, for two, from 1 June to 31 October, and at US$2,285 for a Star Sanctuary with an infinity pool in the same season. From 3 January to 15 April the same two are US$2,205 and US$3,100. Rates are subject to 20% VAT, a service charge and a tourism levy."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-02",
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "jaguar-reef-lodge",
    "name": "The Lodge at Jaguar Reef",
    "ledgerId": "STY-2026-936143",
@@ -25409,6 +25512,86 @@
    "volumes": [
     "stays",
     "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "jungle-bay-dominica",
+   "name": "Jungle Bay Dominica",
+   "ledgerId": "STY-2026-000776",
+   "country": "Dominica",
+   "countrySlug": "dominica",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Sixty eco bungalows on a rainforest ridge above the Caribbean Sea, built around hiking, yoga and the spa",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/dominica/jungle-bay/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/dominica/jungle-bay/suite-interior"
+   ],
+   "bestMonths": "December to May",
+   "bestMonthsNote": "The resort gives December to the end of May as the drier season, with heavier rain from August to October. Temperatures average about 27 to 30 degrees Celsius all year.",
+   "bestFor": [
+    "couples",
+    "family",
+    "wellness",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Douglas-Charles Airport (DOM)",
+   "airportDirections": "Douglas-Charles Airport (DOM), in the northeast, is about 1 hour 20 minutes by road. American Airlines flies direct from Miami, or connect through San Juan. Transfers are included with Adventure + Wellness bookings of three nights or more. Roseau, the capital, is about 20 minutes away.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Bungalow Room, one king or two twins, garden or partial ocean view, for two. Bungalow Suite, a king and a twin, garden or partial ocean view, for three. Garden View Family Suite, the largest bungalow, a king and two twins, for up to four. Interconnecting and adjacent bungalows are available."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "60 eco bungalows on the hillside at Soufrière, each with a private patio. Air conditioning and fans, bamboo furnishings and a jungle spa bathroom. The Adventure + Wellness package: all meals and fresh juices, daily hikes and excursions, yoga and spa treatments. Bamboo Spa, infinity pools and daily yoga classes. Scotts Head 8 minutes away, Champagne Beach 15. Complimentary Wi-Fi."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Jungle Bay sits on a ridge of coastal rainforest at Soufrière, on Dominica's south west coast, with the Caribbean Sea below. Its days are organised around the island: guided hikes to hidden waterfalls, excursions on land and at sea, yoga morning or evening and a treatment at the Bamboo Spa, with the fruit for the juices picked on the property.",
+    "Roseau is 20 minutes away, the reef at Scotts Head eight, and a dive shop five. Forbes and Travel + Leisure have both listed it among their green resorts."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Dominica, Planned for You Jungle Bay is the way to do the island's walks, reefs and hot springs without organising any of it: the guides, the meals and the transfers come with the stay. It suits active travellers and anyone who wants yoga and a spa at the end of a hard day's hike."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-05",
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -46771,6 +46954,90 @@
    "placeSlug": null
   },
   {
+   "slug": "secret-bay-dominica",
+   "name": "Secret Bay",
+   "ledgerId": "STY-2026-000777",
+   "country": "Dominica",
+   "countrySlug": "dominica",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-seven private villas, each with a plunge pool, on a rainforest clifftop above the Caribbean Sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/dominica/secret-bay/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/dominica/secret-bay/gwiyavye-lap-pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Douglas-Charles Airport (DOM)",
+   "airportDirections": "Douglas-Charles Airport (DOM) and Canefield Airport are each about an hour's drive. American Airlines flies daily from Miami and United weekly from Newark; there are connections through Antigua, Barbados, St Maarten and San Juan, and a ferry from Guadeloupe, Martinique and St Lucia. Round-trip airport transfers are included.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Mapou Villas, one bedroom",
+     "Ylang Ylang Villas, one bedroom, 2,030 square feet, treehouse style",
+     "Ti-Fèy Villas, one or two bedrooms with a den, up to 2,799 square feet",
+     "Zabuco Villas, one or two bedrooms, up to 4,083 square feet",
+     "Honeymoon Villas, one bedroom, up to 3,303 square feet",
+     "Sizes include indoor and outdoor space"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "27 private villas, each with a plunge pool, a kitchen and a dedicated villa host. A clifftop promontory where the rainforest meets the sea, with secluded beaches below. Zing Zing restaurant, Bwa Denn, and Botanica, the organic garden and chef's table. Gommier Spa, the Bwa Mang Wellness Pavilion and the Gwiyavyé Lap Pool. A Relais & Châteaux member, Green Globe certified, with two Michelin Keys. Round-trip airport transfers, breakfast and a welcome dinner included."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Secret Bay began as a wedding gift: the Venezuelan architect Fruto Vivas drew a house on this clifftop for his daughter Sandra and her husband, Gregor Nassief, who owns it. The villas are built by hand from sustainably sourced hardwood, without heavy machinery, on land of which less than 7 per cent is marked for building.",
+    "Each villa stands alone in the forest with its own plunge pool, open-air shower and kitchen, and a host who looks after it. Kayaks, paddleboards and snorkel gear come with the villa; one of the beaches can only be reached by kayak. The Indian River, Cabrits National Park and Portsmouth's Saturday market are close by."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Villa in the Forest, Above the Sea Secret Bay is for travellers who want a house of their own, a pool, a cook when they ask for one, and Dominica at the foot of the cliff. It takes children and has estates for families."
+    }
+   ],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-07",
+    "secondary": [
+     "PATH-01",
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "segera-retreat",
    "name": "Segera Retreat",
    "ledgerId": "STY-2026-000235",
@@ -54239,6 +54506,110 @@
     "status": "approved",
     "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
     "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "sugar-beach-viceroy",
+   "name": "Sugar Beach, A Viceroy Resort",
+   "ledgerId": "STY-2026-000774",
+   "country": "St Lucia",
+   "countrySlug": "st-lucia",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Cottages, villas and beachfront bungalows on the white sand between the Pitons",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-lucia/sugar-beach-viceroy/hero",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "luxury"
+   ],
+   "status": "founder_visited",
+   "statusDate": "2022-05-01",
+   "coords": null,
+   "airport": "Hewanorra International Airport (UVF)",
+   "airportDirections": "The resort runs its own airport desk and offers an expedited arrival service and private Trident Suite airside services; it does not publish drive times.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Luxury Cottages, with rainforest or sea views",
+     "Luxury Sugar Mills, beneath Gros Piton, with plunge pools",
+     "Luxury Villas, facing the rainforest, the Pitons or the sea",
+     "Luxury Beachfront Bungalows, on the sand, each with a plunge pool",
+     "The Residences, with private pools on large sun terraces",
+     "The Beachfront Collection: three four-bedroom homes",
+     "Spice of Life Estate: nine bedrooms with a 24 hour butler team"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "More than 100 acres of rainforest between the Pitons. Cottages, Sugar Mills, villas and beachfront bungalows, with butler service. The Residences, three four-bedroom Beachfront Collection homes and the nine-bedroom Spice of Life Estate. The Rainforest Spa and the Sugar Beach Racquet Club. V Team Kids Club for ages 4 to 11, with a club for teens. A 2026 Michelin Key."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Sugar Beach lies in the Val des Pitons at Soufrière, on more than 100 acres of rainforest that run down to the white sand of Anse des Pitons, with a peak on either side. Its rooms are plantation-style cottages, Sugar Mills below Gros Piton, villas and bungalows on the sand, and select ones have a private plunge pool.",
+    "There is diving and snorkelling from the beach, a chocolate making class, a beach barbecue on Fridays and a spa in the rainforest. Dining runs from Bonté and Saltwood to the Jalousie Grill and the Cane Bar."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "The Beach Between the Peaks Sugar Beach has the white sand of Anse des Pitons, with a Piton on either side, and it takes children. Choose it for a family or a group who want the view from the water's edge, with a villa or a whole estate to themselves."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to Hewanorra (UVF); the resort has its own airport desk and arranges the transfer to Soufrière.",
+    "signature_experiences": "Snorkelling off Anse des Pitons, the chocolate making experience, a sunset cruise below the peaks, the Friday beach barbecue and the Rainforest Spa.",
+    "who_its_for": "Families, couples and groups who want a beach between the Pitons, with a kids club and homes of four to nine bedrooms."
+   },
+   "faqs": [
+    {
+     "q": "Where is Sugar Beach, A Viceroy Resort?",
+     "a": "In the Val des Pitons at Soufrière, on Saint Lucia's southwest coast, on the white sand of Anse des Pitons between the two Pitons."
+    },
+    {
+     "q": "Is Sugar Beach good for families?",
+     "a": "Yes. The V Team Kids Club has a Sugar Club for ages 4 to 11 and a Spice Club for tweens and teens, children under 4 are welcome with an adult, and babysitting can be arranged."
+    },
+    {
+     "q": "Is Sugar Beach all-inclusive?",
+     "a": "Not fully. The resort offers a package that includes daily meals and select drinks."
+    },
+    {
+     "q": "What time are check-in and check-out at Sugar Beach?",
+     "a": "Check-in is 3pm and check-out is 12pm."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01",
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-21"
    },
    "volumes": [
     "stays"

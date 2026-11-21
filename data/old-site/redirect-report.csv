@@ -400,7 +400,7 @@ old path,new path,why,old title
 /country/spain-ibiza,/destinations/europe/spain,country page,
 /country/spain-isla-mallorca,/destinations/europe/spain,country page,
 /country/st-barths,/destinations/caribbean-mexico,region page (st-barths country page not built yet),
-/country/st-lucia,/destinations/caribbean-mexico,region page (st-lucia country page not built yet),
+/country/st-lucia,/destinations/caribbean-mexico/st-lucia,country page,
 /country/switzerland,/destinations/europe/switzerland,country page,
 /country/tahiti,/destinations/oceania/tahiti,country page,
 /country/tanzania,/destinations/africa/tanzania,country page,

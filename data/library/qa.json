@@ -2765,6 +2765,16 @@
    "released": true
   },
   {
+   "stay_id": "6b02038c25d4afc157b63fbf",
+   "slug": "jade-mountain",
+   "name": "Jade Mountain",
+   "country": "St Lucia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a9c3ddc48b7e640309dbc21",
    "slug": "jaguar-reef-lodge",
    "name": "The Lodge at Jaguar Reef",
@@ -2824,6 +2834,16 @@
    "slug": "joali-being",
    "name": "JOALI BEING",
    "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6b02054b72708caa6a5a7fdb",
+   "slug": "jungle-bay-dominica",
+   "name": "Jungle Bay Dominica",
+   "country": "Dominica",
    "missing": [
     "coordinates"
    ],
@@ -3308,6 +3328,18 @@
     "coordinates"
    ],
    "released": true
+  },
+  {
+   "stay_id": "6b02038c25d4afc157b63fc1",
+   "slug": "ladera-resort",
+   "name": "Ladera Resort",
+   "country": "St Lucia",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9f8",
@@ -4824,6 +4856,16 @@
    "released": false
   },
   {
+   "stay_id": "6b02054b72708caa6a5a7fdc",
+   "slug": "secret-bay-dominica",
+   "name": "Secret Bay",
+   "country": "Dominica",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff99a",
    "slug": "segera-retreat",
    "name": "Segera Retreat",
@@ -5461,6 +5503,16 @@
    "slug": "sublime-comporta",
    "name": "Sublime Comporta",
    "country": "Portugal + Azores",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6b02038c25d4afc157b63fc0",
+   "slug": "sugar-beach-viceroy",
+   "name": "Sugar Beach, A Viceroy Resort",
+   "country": "St Lucia",
    "missing": [
     "coordinates"
    ],

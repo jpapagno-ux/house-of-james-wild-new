@@ -28,6 +28,7 @@ const WF = "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b";
 const M = (s: string) => s.split("").map((c) => (c === "B" ? "best" : c === "g" ? "good" : "wet")) as Month[];
 
 import LIBRARY from "./countries-library.json";
+import { HOUSE_CARDS } from "./countries-house";
 
 const HAND: CountryData[] = [
   {
@@ -136,6 +137,8 @@ const withHouseHero = (c: CountryData): CountryData => {
   const [first, ...rest] = set;
   return { ...c, hero: { src: HERO_CLD(first.id), alt: first.alt }, heroSlides: [{ src: HERO_CLD(first.id), alt: first.alt, caption: first.caption }, ...rest.map((x) => ({ src: HERO_CLD(x.id), alt: x.alt, caption: x.caption }))] };
 };
-export const COUNTRIES: CountryData[] = [...HAND.map((h) => ({ ...h, ledgerId: h.ledgerId ?? FROM_LIBRARY.find((c) => c.slug === h.slug)?.ledgerId ?? null })), ...FROM_LIBRARY.filter((c) => !HAND.some((h) => h.slug === c.slug))].map(withHouseHero);
+// House destination cards (countries-house.ts) are hand-built too; a library record with the same slug would be dropped in their favour.
+const HAND_ALL: CountryData[] = [...HAND, ...HOUSE_CARDS];
+export const COUNTRIES: CountryData[] = [...HAND_ALL.map((h) => ({ ...h, ledgerId: h.ledgerId ?? FROM_LIBRARY.find((c) => c.slug === h.slug)?.ledgerId ?? null })), ...FROM_LIBRARY.filter((c) => !HAND_ALL.some((h) => h.slug === c.slug))].map(withHouseHero);
 
 export const countryBySlug = (region: string, slug: string) => COUNTRIES.find((c) => c.region === region && c.slug === slug);

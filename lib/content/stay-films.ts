@@ -14,6 +14,8 @@ export const STAY_FILMS: Record<string, WideFilm> = {
   "hidden-valley-lodge": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/hidden-valley-lodge/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/hidden-valley-lodge/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/hidden-valley-lodge/film.jpg`, title: "Hidden Valley Wilderness Lodge in the Mountain Pine Ridge", credit: "Film courtesy of Hidden Valley Wilderness Lodge", hero: true },
   "st-george-s-caye-resort": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/st-george-s-caye-resort/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/st-george-s-caye-resort/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/st-george-s-caye-resort/film.jpg`, title: "St. George's Caye Resort, off Belize City", credit: "Film courtesy of St. George's Caye Resort", hero: true },
   // Casali di Casole's own estate film (47 s, 1080p) from casalidicasole.com, full screen for James's presentation (12 Nov 2026).
+  // Sugar Beach's own film (29 s, 1080p) from viceroyhotelsandresorts.com/sugar-beach (James, 21 Nov 2026: "use video"), full screen.
+  "sugar-beach-viceroy": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/st-lucia/sugar-beach-viceroy/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/st-lucia/sugar-beach-viceroy/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/st-lucia/sugar-beach-viceroy/film.jpg`, title: "Sugar Beach, A Viceroy Resort, between the Pitons, Saint Lucia", credit: "Film courtesy of Sugar Beach, A Viceroy Resort", hero: true },
   // Wymara's own resort film (97 s, 1080p) from wymara.com (13 Nov 2026).
   wymara: {
     kind: "mp4",

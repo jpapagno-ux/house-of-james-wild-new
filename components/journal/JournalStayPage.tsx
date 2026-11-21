@@ -126,7 +126,16 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   const strip = (k: SectionKey, label: string) => { const list = inSection(k); return list.length ? <PhotoStrip tab={k} photos={list.map((p) => ({ url: p.url, alt: p.alt }))} total={list.length} label={label} /> : null; };
 
   // experience cards with no photograph of their own take one from the stay's described photographs, in turn
-  const expShots = [...inSection("experiences"), ...inSection("pool"), ...inSection("exterior")];
+  // a card takes a photograph only when its description names the same thing as the card's title (James, 20 Nov 2026)
+  const STOP = new Set(["tour", "tours", "with", "from", "that", "this", "your", "private", "guided", "national", "park", "class", "classes", "experience", "experiences", "visit", "trip", "trips", "local", "night", "half", "full", "into", "over", "through", "forest", "nearby", "explore", "follow", "trail", "trails", "walk", "walks", "hike", "wild", "pine", "mountain", "ridge", "reef", "barrier", "belize", "island", "maya", "beach", "boat", "ride", "away", "book", "take", "straight", "minute", "reserve", "falls", "swimming", "pools"]);
+  const stem = (w: string) => w.replace(/(ing|es|s)$/, "");
+  const usedShots = new Set<string>();
+  const shotFor = (title: string) => {
+    const words = title.toLowerCase().replace(/[^a-z ]/g, " ").split(/\s+/).filter((w) => w.length > 3 && !STOP.has(w)).map(stem).filter((w) => w.length > 3);
+    const hit = v.photos.find((p) => p.section === "experiences" && !usedShots.has(p.url) && words.some((w) => p.alt.toLowerCase().split(" at ")[0].includes(w)));
+    if (hit) usedShots.add(hit.url);
+    return hit ?? null;
+  };
   return (
     <div className={`journal-style bg-white ${pwScope}`}>
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
@@ -177,7 +186,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
               footnote={`Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
-            <JournalExperiences no={N.exp} slug={s.slug} items={v.experiences.map((x, i) => (x.image || !expShots.length ? x : { ...x, image: expShots[i % expShots.length].url, alt: expShots[i % expShots.length].alt }))} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
+            <JournalExperiences no={N.exp} slug={s.slug} items={v.experiences.map((x) => { if (x.image) return x; const m = shotFor(x.title); return m ? { ...x, image: m.url, alt: m.alt } : x; })} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
 
             <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>
 

@@ -18,6 +18,7 @@ import PAGES from "./pages.json";
 import ROOM_PHOTOS from "./room-photos.json";
 import RATE_HOLDS from "./rate-holds.json";
 import ROOM_LIBRARY from "./room-library.json";
+import ROOM_SOURCES from "./room-photo-sources.json";
 
 export type LibraryRoom = { name: string; sleeps: number | null; facts: string[]; lede: string | null; features: string[]; photos: string[]; plungePool: boolean };
 const LIB = ROOM_LIBRARY as unknown as Record<string, { rooms: LibraryRoom[]; aliases?: Record<string, string> } | string>;
@@ -162,7 +163,9 @@ export function journalStay(slug: string) {
   const lib = libraryRooms(s.slug);
   const libShots: ViewerPhoto[] = lib.rooms.flatMap((r) => r.photos.map((u, k) => ({ url: u, alt: `${r.name}${k ? `, photograph ${k + 1}` : ""} at ${s.name}${s.country ? `, ${s.country}` : ""}`, section: "rooms" as const, room: r.name })));
   const extras: ViewerPhoto[] = (notes?.extra ?? []).map((x) => ({ url: `${CLOUD}/${x.id}`, alt: x.alt, section: x.section ?? sectionOf(x.alt) }));
-  const photos = [...base, ...roomShots, ...libShots, ...extras].filter((x, k, l) => l.findIndex((y) => lastPart(y.url) === lastPart(x.url)) === k);
+  // a room photograph copied into Cloudinary is the same picture as its old-site original: compare by where it came from
+  const origin = (u: string) => lastPart((ROOM_SOURCES as unknown as Record<string, string>)[u.split("/f_auto,q_auto/")[1] ?? ""] ?? u);
+  const photos = [...base, ...roomShots, ...libShots, ...extras].filter((x, k, l) => l.findIndex((y) => origin(y.url) === origin(x.url)) === k);
   const offers = offersFor(s.slug);
   const features = momentsFor(s.slug, rowsFrom(s.features.items, s.features.paras), filed.slice(1));
   const experiences = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), filed.slice(1), 3, features);

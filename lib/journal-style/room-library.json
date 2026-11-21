@@ -1515,5 +1515,228 @@
         "plungePool": true
       }
     ]
+  },
+  "isla-palenque-resort": {
+    "_source": "James Wild & Co. Intelligence Library (Room records), read 21 Nov 2026. 'Beachfront Villa Estate' on the rate file is matched to the library's Beachfront Villa; the two give different guest counts (14 and 6), to confirm.",
+    "aliases": {
+      "Beachfront Villa Estate": "Beachfront Villa"
+    },
+    "rooms": [
+      {
+        "name": "Beachfront Casita",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed and 1 Twin Bed"
+        ],
+        "lede": "Casitas along the shoreline, set between the beach and the rainforest.",
+        "features": [
+          "Direct beach access",
+          "Ocean views",
+          "Outdoor living spaces",
+          "King bedroom",
+          "Open-air design"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/isla-palenque-resort/rooms/beachfront-casita-1",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/isla-palenque-resort/rooms/beachfront-casita-2",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/isla-palenque-resort/rooms/beachfront-casita-3",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/isla-palenque-resort/rooms/beachfront-casita-4"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Beachfront Villa",
+        "sleeps": null,
+        "facts": [
+          "2 King Beds and 4 Queen Beds"
+        ],
+        "lede": "For families and groups who want more space and privacy on the beach.",
+        "features": [
+          "Multiple bedrooms",
+          "Private beachfront location",
+          "Indoor and outdoor living",
+          "Family-friendly layouts",
+          "Oceanfront views"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/isla-palenque-resort/rooms/beachfront-villa-1",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/isla-palenque-resort/rooms/beachfront-villa-2",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/isla-palenque-resort/rooms/beachfront-villa-3",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/isla-palenque-resort/rooms/beachfront-villa-4"
+        ],
+        "plungePool": false
+      }
+    ]
+  },
+  "isla-secas-panama": {
+    "_source": "islassecas.com (casita pages and fact sheets), read 21 Nov 2026. No rates taken. Photographs still to file.",
+    "rooms": [
+      {
+        "name": "Tented Casitas",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "1 Bedroom",
+          "3 on the island"
+        ],
+        "lede": "Three tented casitas built for indoor and outdoor living.",
+        "features": [
+          "Walls that roll up",
+          "Outdoor soaking tub"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Casita Mirador",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "1 King Bed",
+          "1 Bathroom",
+          "186 sq m",
+          "Ocean view"
+        ],
+        "lede": "A one-bedroom hideaway between the trees, looking out to sea.",
+        "features": [
+          "Private plunge pool",
+          "Outdoor seating",
+          "Wi-Fi",
+          "French press for coffee"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Casita Tres Palmas",
+        "sleeps": 4,
+        "facts": [
+          "Sleeps up to 4",
+          "2 Bedrooms"
+        ],
+        "lede": "A two-bedroom casita.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Casita Sombras",
+        "sleeps": 4,
+        "facts": [
+          "Sleeps up to 4",
+          "2 King Beds, or 1 King and 2 Twins",
+          "2 Bathrooms",
+          "250 sq m with outdoor living",
+          "Ocean view"
+        ],
+        "lede": "Two separate casitas sharing one plunge pool, with a terrace over the sea and steps down to a small beach.",
+        "features": [
+          "Private plunge pool",
+          "Terrace with sea views",
+          "Steps to a secluded beach",
+          "Bathroom to each bedroom",
+          "Wi-Fi"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Casita Grande",
+        "sleeps": 8,
+        "facts": [
+          "Sleeps up to 8",
+          "4 King Beds, or 2 Kings and 4 Twins",
+          "4 Bathrooms",
+          "510 sq m with outdoor living",
+          "Ocean view"
+        ],
+        "lede": "Four separate casitas joined by a broad terrace in tropical gardens, for a larger family or group.",
+        "features": [
+          "Pool facing the sea",
+          "Broad shared terrace",
+          "Four separate casitas",
+          "Tropical gardens"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Casa Cavada",
+        "sleeps": null,
+        "facts": [
+          "4 Bedrooms",
+          "6 Bathrooms",
+          "8,300 sq ft"
+        ],
+        "lede": "A private residence high on the cliffs, with its own chef and house manager.",
+        "features": [
+          "Semi-Olympic infinity pool",
+          "Sitting room, kitchen and dining room",
+          "Gym and bar",
+          "Dedicated chef and house manager"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "nayara-bocas-del-toro": {
+    "_source": "nayarabocasdeltoro.com/stay, read 21 Nov 2026. The treehouses are still to read. Photographs still to file.",
+    "rooms": [
+      {
+        "name": "Overwater Pool Villa",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "102 sq m (1,100 sq ft)"
+        ],
+        "lede": "An overwater villa with a glass inlay in the floor for watching the sea life below.",
+        "features": [
+          "Private plunge pool",
+          "Glass floor inlay",
+          "Fire pit",
+          "Ocean-front terrace with swim stairs",
+          "King bed with a Balinese canopy"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Overwater Pool Villa Deluxe",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "102 sq m (1,100 sq ft)"
+        ],
+        "lede": "An overwater villa with carved Balinese timberwork and its own saltwater pool.",
+        "features": [
+          "Private saltwater pool",
+          "Sea-front terrace with swim stairs",
+          "Four-poster king bed",
+          "In-room dining by tablet, 24 hours",
+          "Wi-Fi"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Presidential Overwater Villa",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "191 sq m (2,056 sq ft)"
+        ],
+        "lede": "The largest overwater villa, with an indoor and outdoor saltwater infinity pool reached from the bed.",
+        "features": [
+          "Indoor and outdoor saltwater infinity pool",
+          "Sea-front terrace with a fire pit",
+          "Wine refrigerator and private wet bar",
+          "Dining area",
+          "Ceilings above 20 feet"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
   }
 }

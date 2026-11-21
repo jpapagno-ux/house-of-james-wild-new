@@ -117,7 +117,8 @@ const CARDS: Advisor[] = [
     desk: {
       adv: "ADV-1982-000001", sample: false, since: 1982, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
       volumes: ["safaris", "stays", "voyages", "gatherings", "overland", "europe"],
-      countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah"],
+      // Costa Rica, the Bahamas and Panama added at James's word (21 Nov 2026: "Yes it is with Bahamas and Panama and many other places").
+      countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah", "costa-rica", "bahamas", "panama"],
       // Gold Certified Tahiti Specialist (Tahiti Tourisme's Tahiti Specialist Program, James, 2 Nov 2026; profile
       // URL to follow, so no link yet); surfing Tahiti since May 1996 (James, 15 Nov 2026).
       specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road", "Gold Certified Tahiti Specialist"],

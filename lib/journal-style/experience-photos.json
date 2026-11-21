@@ -1,0 +1,77 @@
+{
+  "_note": "JWC-STYLE-01. The photograph each experience card carries, chosen by eye (James, 20 Nov 2026). Keyed by stay, then by the card's title; the value is the last part of the photograph's address, as in photo-notes.json. Rule: a card takes a photograph only when it shows that activity or the exact place it happens; no photograph is used twice on a page; a card with no fit stays text until a photograph is filed from the brand's own site.",
+  "wymara": {
+    "Complimentary Hobie Cat sailing": "w01",
+    "Clear-bottom kayaks": "w04"
+  },
+  "amor-arenal": {
+    "Rainforest Spa Rituals": "g9",
+    "Cultural Food Journeys": "g6"
+  },
+  "arenas-del-mar-resort": {
+    "Private Manuel Antonio National Park Tours": "hero",
+    "Wildlife Watching": "g2",
+    "Surf Lessons": "g4"
+  },
+  "kura-boutique-resort": {
+    "Whale Watching": "hero",
+    "Nauyaca Waterfalls Hike": "g3"
+  },
+  "lapa-rios-lodge": {
+    "Early Birds Tour": "g8",
+    "Corcovado National Park by Boat or Land": "g9"
+  },
+  "nayara-gardens": {
+    "Arenal Volcano Exploration": "g1",
+    "Hot Springs Experiences": "g10"
+  },
+  "arenal-springs-camp-by-nayara": {
+    "Hanging bridges and volcano hikes with private guides": "g9",
+    "Perezoso Trail sloth walks": "g10"
+  },
+  "nayara-tented-camp": {
+    "Arenal Volcano hikes": "g3",
+    "Natural hot springs": "g2",
+    "Sloth and bird spotting from your deck": "g5"
+  },
+  "pacuare-lodge": {
+    "Whitewater Rafting": "g2",
+    "Canopy Tour": "g1",
+    "Tropical Canyoning": "g3",
+    "Bird-Watching": "g9"
+  },
+  "senda-monteverde-lodge": {
+    "Cloud Forest Hiking": "g8",
+    "Wildlife Watching": "g1",
+    "Birding Tours": "g3"
+  },
+  "tabacon-thermal-resort-spa": {
+    "Natural Thermal River Immersion": "g7",
+    "Open-Air Rainforest Spa Rituals": "g10"
+  },
+  "blancaneaux-lodge": {
+    "Visit the nearby waterfalls of Mountain Pine Ridge": "g10",
+    "Ride horseback through forest trails": "g6"
+  },
+  "coco-plum-island-resort": {
+    "Snorkel and dive the barrier reef, a 10-minute boat ride away": "g5",
+    "Paddle or sail around the island": "g2"
+  },
+  "hidden-valley-lodge": {
+    "Hike the reserve's trails to waterfalls and swimming pools": "g7",
+    "Watch birds through pine savanna and broadleaf forest": "g6"
+  },
+  "jaguar-reef-lodge": {
+    "Paddle, sail or cycle straight from the beach": "g8"
+  },
+  "matachica-resort-and-spa": {
+    "Take a boat excursion from Ambergris Caye": "g1"
+  },
+  "thatch-caye-resort": {
+    "Dive and snorkel the Belize Barrier Reef, 15 minutes away by boat": "g5",
+    "Snorkel from shore in the swimming cove": "g9"
+  },
+  "turtle-inn": {
+    "Explore the Placencia Peninsula by kayak": "hero"
+  }
+}

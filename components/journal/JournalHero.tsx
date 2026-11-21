@@ -69,6 +69,8 @@ export default function JournalHero({ eyebrow, name, place, tagline, frames, fil
   const tiles = (film ? 1 : 0) + frames.length;
   return (
     <section id="journal-hero" aria-label={name} className="jw-onphoto relative isolate overflow-hidden bg-ink-deep text-white">
+      {/* phones: the photograph holds the top of the hero with only the name on it; everything else sits beneath it */}
+      <div className="absolute inset-x-0 top-0 h-[62svh] md:h-full overflow-hidden">
       {frames.map((f, i) => (
         <Image key={f.url} src={f.url} alt={i === at ? f.alt : ""} aria-hidden={i === at ? undefined : true} fill priority={i === 0 && !film} loading={i === 0 && !film ? undefined : "lazy"} sizes="100vw"
           className={`object-cover transition-opacity duration-700 motion-reduce:transition-none ${i === at ? "opacity-100" : "opacity-0"}`} />
@@ -81,15 +83,18 @@ export default function JournalHero({ eyebrow, name, place, tagline, frames, fil
         </>
       )}
       <span aria-hidden className="absolute inset-0 hidden md:block bg-[linear-gradient(180deg,rgba(26,24,22,0.55)_0%,rgba(26,24,22,0.12)_32%,rgba(38,20,22,0.25)_58%,rgba(38,20,22,0.9)_100%)]" />
-      <span aria-hidden className="absolute inset-0 md:hidden bg-[linear-gradient(180deg,rgba(26,24,22,0.62)_0%,rgba(26,24,22,0.1)_20%,rgba(26,24,22,0.38)_36%,rgba(26,24,22,0.8)_54%,rgba(26,24,22,0.94)_100%)]" />
-      <div className="relative z-10 max-w-ledger mx-auto px-5 md:px-10 pt-[calc(var(--jw-header-h)+1.5rem)] md:pt-[calc(var(--jw-header-h)+2.5rem)] pb-6 md:pb-10 min-h-[92svh] md:min-h-[86svh] flex flex-col">
-        <div className="mt-auto md:mt-0 flex items-start justify-between gap-8">
+      <span aria-hidden className="absolute inset-0 md:hidden bg-[linear-gradient(180deg,rgba(26,24,22,0.55)_0%,rgba(26,24,22,0.05)_22%,rgba(26,24,22,0.05)_58%,rgba(26,24,22,0.78)_100%)]" />
+      </div>
+      <div className="relative z-10 max-w-ledger mx-auto px-5 md:px-10 pt-[calc(var(--jw-header-h)+1.5rem)] md:pt-[calc(var(--jw-header-h)+2.5rem)] pb-6 md:pb-10 md:min-h-[86svh] flex flex-col">
+        <div className="flex items-start justify-between gap-8">
           <div className="min-w-0">
+            <div className="flex flex-col justify-end min-h-[calc(62svh-var(--jw-header-h)-2.75rem)] md:block md:min-h-0">
             <p className="font-mono text-[10px] md:text-[10.5px] tracking-[0.24em] md:tracking-[0.28em] uppercase text-white/85">{eyebrow}</p>
             <h1 className="font-display font-medium text-[2.75rem] md:text-[5.6rem] leading-[0.98] mt-2 md:mt-3 [text-shadow:0_1px_18px_rgba(26,24,22,0.45)]">{name}</h1>
             {place && <p className="font-display italic text-[1.2rem] md:text-[1.75rem] text-white/90 mt-2 md:mt-3">{place}</p>}
+            </div>
             <span aria-hidden className="hidden md:block h-px w-12 bg-white/60 mt-5" />
-            {tagline && <p className="font-body font-semibold text-[10.5px] md:text-[11.5px] tracking-[0.16em] md:tracking-[0.24em] uppercase text-white/90 mt-3 md:mt-5 max-w-xl">{tagline}</p>}
+            {tagline && <p className="font-body font-semibold text-[10.5px] md:text-[11.5px] tracking-[0.16em] md:tracking-[0.24em] uppercase text-white/90 mt-7 md:mt-5 max-w-xl">{tagline}</p>}
             {offer && (
               <p className="mt-4 md:mt-5 inline-flex max-w-full items-center gap-2.5 bg-[color:var(--jw-crimson)] px-3 md:px-3.5 py-2 font-mono text-[10px] md:text-[10.5px] tracking-[0.12em] md:tracking-[0.2em] uppercase text-white">
                 <span aria-hidden className="h-1.5 w-1.5 shrink-0 rounded-full bg-white" />

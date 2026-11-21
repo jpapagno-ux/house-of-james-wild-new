@@ -1,0 +1,12 @@
+{
+  "_note": "JWC-STYLE-01. Display holds on the journal stay page. A promotion listed here is not shown anywhere on that stay's page (room tickets, rate ledger, sticky bar, sample quote, offers); the standard rate shows with no struck price. The rate record itself is untouched. Remove the entry to show the promotion again.",
+  "aguas-claras": {
+    "promo": "Early Bird 10% off: held until the hotel confirms it (James, 20 Nov 2026)"
+  },
+  "kura-boutique-resort": {
+    "promo": "Early Bird 10% off: filed as Draft (OFR-2027-0004) until Cayuga's written 2027 terms confirm it"
+  },
+  "senda-monteverde-lodge": {
+    "promo": "Stay 2 nights, the 3rd on us: filed as Draft (OFR-2027-0002) until Cayuga's written 2027 terms confirm it"
+  }
+}

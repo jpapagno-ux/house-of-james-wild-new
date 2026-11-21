@@ -16,13 +16,18 @@ type Props = {
   /** The request form (dates, travellers, room, name, email). When given it leads the column and carries the button;
    *  the sample slip sits beneath it as a worked example. */
   form?: ReactNode;
+  /** Rule 12: the page's existing live booking path (the house's own booking components or links, unchanged). When
+   *  given it leads the section, and the request form sits beneath it as the second path. */
+  live?: ReactNode;
 };
 
-export default function JournalReserve({ no, steps, slip, reserve, save, folio, form }: Props) {
+export default function JournalReserve({ no, steps, slip, reserve, save, folio, form, live }: Props) {
   return (
     <section id="reserve" aria-label="How to reserve" className="bg-white">
       <SectionHead no={no} label="Check your dates" title="How to Reserve" lede="See every line before you ask for anything." />
-      <div className="mt-9 grid lg:grid-cols-[0.8fr_1fr] gap-10 lg:gap-14 items-start">
+      {live && <div className="mt-9">{live}</div>}
+      {live && form && <p className="mt-12 font-mono text-[10.5px] tracking-[0.24em] uppercase text-stone-text border-t border-[color:var(--jw-keyline)] pt-6">Or ask the house to arrange it</p>}
+      <div className={`${live ? "mt-6" : "mt-9"} grid lg:grid-cols-[0.8fr_1fr] gap-10 lg:gap-14 items-start`}>
         <ol className="border-t border-[color:var(--jw-keyline)]">
           {steps.map((x, i) => (
             <li key={x.title} className="grid grid-cols-[2.25rem_minmax(0,1fr)] gap-x-2 border-b border-[color:var(--jw-hairline)] py-4">

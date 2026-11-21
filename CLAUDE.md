@@ -15,6 +15,14 @@
   any `.ledger-btn` to `/plan`: 56px, Ink border, crimson arrow cell), the editorial line for quiet links (`.ledger-btn`,
   `.ledger-btn-ghost`: Cormorant italic, crimson arrow and rule), the seal once on the homepage (`.jw-seal-cta`).
   Chips, filters, tabs and search stay squared graphite (`.house-chip`), never pills. Never style a button per page.
+- Wild Pathways colour on stay pages (James, 21 Nov 2026: "lock in design for stays"). A stay with an approved pathway
+  grounds its hero in the deep pathway colour (the pathway colour mixed toward ink) and the photograph fades into it;
+  the pathway stamp sits on the hero photograph in white ink, transparent, with one press-in and a slight drift (none
+  under reduced motion); one slim tinted pathway row under the jump links; a faint pathway tint on the page ground
+  (cards stay white); the bottom bar in the deep pathway colour. This is the one exception to the white ground and to
+  Ink to Garnet as the hero fade, and it lives only inside `.journal-style` stay pages. Pathway colour comes only from
+  the pathway scope (`.pathway-0N`, `--jw-path`): never write a pathway hex in a component. House Crimson stays the
+  single accent. A stay with no approved pathway keeps the ink hero. No other tinted bands or sections.
 - Pathway chips are graphite outlines with a 6px pathway dot. River waters and The Exceptional Few are protected.
 - No em or en dashes in public copy; no parchment textures. Tans sparingly (James, 2 Nov 2026: "I like tans but not
   everywhere"): an occasional tan panel, tag or accent is fine; never the ground of every section or page.

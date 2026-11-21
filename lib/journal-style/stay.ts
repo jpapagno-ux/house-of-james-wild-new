@@ -1,3 +1,4 @@
+import { undash } from "@/lib/content/ships/types";
 // JWC-STYLE-01: everything the Modern Journal stay page prints, read from the site's existing loaders. Nothing is
 // typed in here: no rate, date, offer, name or sentence about a property. A field the record does not hold comes
 // back empty and the page shows the section's "to file" state (or drops the section).
@@ -15,6 +16,21 @@ import { suitedTo } from "@/lib/ledger/travel-types";
 import { BEST_FOR } from "@/lib/content/stays";
 import PAGES from "./pages.json";
 import ROOM_PHOTOS from "./room-photos.json";
+import RATE_HOLDS from "./rate-holds.json";
+import ROOM_LIBRARY from "./room-library.json";
+import ROOM_SOURCES from "./room-photo-sources.json";
+
+export type LibraryRoom = { name: string; sleeps: number | null; facts: string[]; lede: string | null; features: string[]; photos: string[]; plungePool: boolean };
+const LIB = ROOM_LIBRARY as unknown as Record<string, { rooms: LibraryRoom[]; aliases?: Record<string, string> } | string>;
+const normRoom = (n: string) => n.toLowerCase().replace(/\btwo\b/g, "2").replace(/\bone\b/g, "1").replace(/\b(suites|suite|rooms|room|the)\b/g, "").replace(/[^a-z0-9]/g, "");
+/** The library's rooms for a stay, and the library room that a rate-card room name refers to. */
+export function libraryRooms(slug: string) {
+  const e = LIB[slug];
+  const rooms = e && typeof e === "object" ? e.rooms.filter((r) => r.photos.length > 0 || r.features.length > 0 || r.lede) : [];
+  const aliases = e && typeof e === "object" ? e.aliases ?? {} : {};
+  const find = (name: string) => rooms.find((r) => r.name === aliases[name]) ?? rooms.find((r) => normRoom(r.name) === normRoom(name)) ?? null;
+  return { rooms, find };
+}
 import PHOTO_NOTES from "./photo-notes.json";
 
 const CLOUD = "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto";
@@ -82,8 +98,11 @@ const firstSentence = (t: string) => (t.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? t).tr
 const KIND: Record<string, string> = { hotel: "hotel", lodge: "lodge", villa: "private villa", camp: "camp", resort: "resort", residence: "residence" };
 
 function rateCard(slug: string, photos: Photo[]): RateCard | null {
-  const card = CAYUGA_ROOMS_MAY_2027[slug];
-  if (!card?.rooms.length) return null;
+  const filed = CAYUGA_ROOMS_MAY_2027[slug];
+  if (!filed?.rooms.length) return null;
+  // a promotion on hold (rate-holds.json) is not displayed: every room shows its standard rate. The record is untouched.
+  const held = Boolean((RATE_HOLDS as unknown as Record<string, { promo?: string } | string>)[slug] && typeof (RATE_HOLDS as unknown as Record<string, unknown>)[slug] === "object");
+  const card = held ? { ...filed, promo: undefined, rooms: filed.rooms.map((r) => ({ ...r, now: r.list })) } : filed;
   // the sample window the room rates were read for: the mid May 2027 search in the same file
   const w = CAYUGA_RATES.find((x) => x.id === "2027-05-11" && x.rates[slug]);
   const used = new Set<string>();
@@ -106,8 +125,17 @@ function rateCard(slug: string, photos: Photo[]): RateCard | null {
   };
 }
 
+function clean<T>(x: T): T {
+  if (typeof x === "string") return (/[\u2013\u2014]/.test(x) && !/^https?:/.test(x) ? undash(x) : x) as T;
+  if (Array.isArray(x)) return x.map(clean) as T;
+  if (x && typeof x === "object") return Object.fromEntries(Object.entries(x).map(([k, v]) => [k, clean(v)])) as T;
+  return x;
+}
+
 export function journalStay(slug: string) {
-  const s: StayData | undefined = JOURNAL_STAYS.includes(slug) ? stayBySlug(slug) : undefined;
+  // House rule: no em or en dashes in public copy. The filed record is untouched; this is the page's display copy.
+  const filedStay: StayData | undefined = JOURNAL_STAYS.includes(slug) ? stayBySlug(slug) : undefined;
+  const s: StayData | undefined = filedStay ? clean(filedStay) : undefined;
   if (!s || !s.hero) return null;
   const path = `/stays/${s.slug}`;
   const filed: Photo[] = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => {
@@ -132,8 +160,12 @@ export function journalStay(slug: string) {
     ...(rates?.rooms ?? []).filter((r) => r.photo).map((r) => ({ url: (r.photo as Photo).url, alt: (r.photo as Photo).alt, section: "rooms" as const, room: r.name })),
     ...(roomData?.rooms ?? []).filter((r) => r.image).map((r) => ({ url: `${CLOUD}/${r.image!.id}`, alt: `${r.image!.alt} at ${s.name}`, section: "rooms" as const, room: r.name })),
   ];
+  const lib = libraryRooms(s.slug);
+  const libShots: ViewerPhoto[] = lib.rooms.flatMap((r) => r.photos.map((u, k) => ({ url: u, alt: `${r.name}${k ? `, photograph ${k + 1}` : ""} at ${s.name}${s.country ? `, ${s.country}` : ""}`, section: "rooms" as const, room: r.name })));
   const extras: ViewerPhoto[] = (notes?.extra ?? []).map((x) => ({ url: `${CLOUD}/${x.id}`, alt: x.alt, section: x.section ?? sectionOf(x.alt) }));
-  const photos = [...base, ...roomShots, ...extras].filter((x, k, l) => l.findIndex((y) => lastPart(y.url) === lastPart(x.url)) === k);
+  // a room photograph copied into Cloudinary is the same picture as its old-site original: compare by where it came from
+  const origin = (u: string) => lastPart((ROOM_SOURCES as unknown as Record<string, string>)[u.split("/f_auto,q_auto/")[1] ?? ""] ?? u);
+  const photos = [...base, ...roomShots, ...libShots, ...extras].filter((x, k, l) => l.findIndex((y) => origin(y.url) === origin(x.url)) === k);
   const offers = offersFor(s.slug);
   const features = momentsFor(s.slug, rowsFrom(s.features.items, s.features.paras), filed.slice(1));
   const experiences = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), filed.slice(1), 3, features);
@@ -144,7 +176,7 @@ export function journalStay(slug: string) {
   // the same answer-first paragraph the stay page has always opened with, for search and answer engines
   const answer = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} Vetted for the Ledger by the house.`;
   return {
-    s, path, filed, slides, frames, rates, offers, features, experiences, suited, answer, kind,
+    s, path, filed, slides, frames, rates, lib, offers, features, experiences, suited, answer, kind,
     // the stay's own films: a hero film (muted, looping) and a longer stay film for the Film section; either may be absent
     heroFilm: STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : null, video: VIDEOS[`stay:${s.slug}`] ?? null,
     // rooms filed with the house's own room record (shown with its own component, unchanged) where no rate card above applies

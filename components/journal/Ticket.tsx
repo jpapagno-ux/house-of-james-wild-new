@@ -18,11 +18,13 @@ type Props = {
   rate?: ReactNode;
   /** The stub, right: the existing booking action. */
   action?: ReactNode;
+  /** Under the lines: what the room includes, folded. */
+  extra?: ReactNode;
   tape?: boolean;
   className?: string;
 };
 
-export default function Ticket({ eyebrow, title, lines = [], photo, flag, rate, action, tape = true, className = "" }: Props) {
+export default function Ticket({ eyebrow, title, lines = [], photo, flag, rate, action, extra, tape = true, className = "" }: Props) {
   return (
     <article className={`relative flex flex-col bg-white border border-[color:var(--jw-hairline)] ${className}`}>
       {tape && <span aria-hidden className="absolute left-1/2 -top-2.5 z-10 h-5 w-20 -translate-x-1/2 rotate-1 border border-[color:var(--jw-hairline)] bg-[rgb(207_200_191_/_0.6)]" />}
@@ -36,6 +38,7 @@ export default function Ticket({ eyebrow, title, lines = [], photo, flag, rate, 
         {eyebrow && <p className="font-mono text-[10px] tracking-[0.22em] uppercase text-stone-text">{eyebrow}</p>}
         <h3 className="font-display font-medium text-[24px] leading-tight text-graphite mt-1.5">{title}</h3>
         {lines.map((l) => <p key={l} className="text-[13.5px] leading-relaxed text-stone-text mt-1 first-of-type:mt-2">{l}</p>)}
+        {extra}
       </div>
       {(rate || action) && (
         <div className="relative flex flex-wrap items-end justify-between gap-4 border-t border-dashed border-[color:var(--jw-keyline)] px-5 py-4">

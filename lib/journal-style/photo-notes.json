@@ -1598,5 +1598,169 @@
       }
     },
     "extra": []
+  },
+  "isla-palenque-resort": {
+    "describe": {
+      "becf98b6b_e1faa873b_6a2fc055791c16ac71707941_BEACHFRONTCASITAS-SLIDER1-1-scaled": {
+        "alt": "A casita lit at dusk among the palms at Isla Palenque Resort, Panama",
+        "section": "exterior"
+      },
+      "2afda1856_00d14cccb_6a2fc1a2044dd4646dd67c04_Pool": {
+        "alt": "Loungers beside the pool among the trees, from above at Isla Palenque Resort, Panama",
+        "section": "pool"
+      },
+      "4ff6e0764_f37d1cb8f_6a2fc1a21769e3b3269e929b_Rooms-with-a-View": {
+        "alt": "A bedroom opening to the garden at Isla Palenque Resort, Panama",
+        "section": "rooms"
+      },
+      "59b86a530_78a5770de_6a2fc1a23ad899f6ecc381ad_Steps-from-the-Beach-1": {
+        "alt": "A casita interior of timber and glass at dusk at Isla Palenque Resort, Panama",
+        "section": "rooms"
+      },
+      "560e40c5f_4885921cf_6a2fc1a2752df329aafb85e4_ISLANDWELLNESS-SLIDER1-1": {
+        "alt": "A guest in an outdoor bathtub among tropical leaves at Isla Palenque Resort, Panama",
+        "section": "rooms"
+      },
+      "hero": {
+        "alt": "Two guests on a dark-sand beach below the forest at Isla Palenque Resort, Panama",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "The resort team in blue shirts at Isla Palenque Resort, Panama",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "Loungers under a thatched shelter beside the pool at Isla Palenque Resort, Panama",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "A guest in a plunge pool facing the sea at Isla Palenque Resort, Panama",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "The resort among palms and forest at dusk at Isla Palenque Resort, Panama",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "A swing under a leaning tree on the beach at Isla Palenque Resort, Panama",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A plunge pool above the bay, with palms at Isla Palenque Resort, Panama",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A casita lit at dusk among the palms at Isla Palenque Resort, Panama",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A plated dish from the kitchen at Isla Palenque Resort, Panama",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "A white-sand beach with islets offshore at Isla Palenque Resort, Panama",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A guest in a hammock among the palms at Isla Palenque Resort, Panama",
+        "section": "exterior"
+      }
+    }
+  },
+  "isla-secas-panama": {
+    "describe": {
+      "hero": {
+        "alt": "A casita and its pool on the forested shore, from above at Islas Secas Private Island, Panama",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The thatched pavilion and loungers by the pool at Islas Secas Private Island, Panama",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "Guests raising glasses at a table above the sea at Islas Secas Private Island, Panama",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "The island and its bays from the air at Islas Secas Private Island, Panama",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "Pool loungers and the sea through a stone arch at Islas Secas Private Island, Panama",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "Guests under the thatched roof at sunset at Islas Secas Private Island, Panama",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "A villa on a rocky point above turquoise water, from above at Islas Secas Private Island, Panama",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "A dining table on an open timber deck at Islas Secas Private Island, Panama",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "A long table on a terrace above the bay at Islas Secas Private Island, Panama",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "Two guests with drinks at a timber bar at Islas Secas Private Island, Panama",
+        "section": "dining"
+      },
+      "g10": {
+        "alt": "Thatched casitas in the forest, from above at Islas Secas Private Island, Panama",
+        "section": "exterior"
+      }
+    }
+  },
+  "nayara-bocas-del-toro": {
+    "describe": {
+      "hero": {
+        "alt": "The pool and loungers from above at Nayara Bocas del Toro, Panama",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A thatched treehouse among the trees at Nayara Bocas del Toro, Panama",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A massage on a deck over the water at Nayara Bocas del Toro, Panama",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "A guest on the deck of an overwater villa at Nayara Bocas del Toro, Panama",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "The overwater villas along the mangrove shore, from the air at Nayara Bocas del Toro, Panama",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "An overwater villa with its plunge pool at dusk at Nayara Bocas del Toro, Panama",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A villa bedroom with a canopy bed and timber floor at Nayara Bocas del Toro, Panama",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A treehouse above the forest canopy at Nayara Bocas del Toro, Panama",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "The islands and overwater villas at dawn, from the air at Nayara Bocas del Toro, Panama",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A treehouse and the main buildings among the trees, from above at Nayara Bocas del Toro, Panama",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "The overwater villas and a pool on the reef flat, from above at Nayara Bocas del Toro, Panama",
+        "section": "exterior"
+      }
+    }
   }
 }

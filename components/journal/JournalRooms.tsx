@@ -31,7 +31,7 @@ export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, 
       {bar}
       <div className="mt-10 grid gap-x-6 gap-y-9 sm:grid-cols-2 lg:grid-cols-3">
         {rooms.map((r) => (
-          <Ticket key={r.name} eyebrow={r.photo ? undefined : "Photograph to file"} title={r.name} flag={r.flag} lines={r.facts?.length ? [r.facts.join(" · ")] : r.sleeps ? [`Sleeps ${r.sleeps}`] : []}
+          <Ticket key={r.name} title={r.name} flag={r.flag} lines={r.facts?.length ? [r.facts.join(" · ")] : r.sleeps ? [`Sleeps ${r.sleeps}`] : []}
             extra={(r.lede || r.features?.length) ? <>
               {r.lede && <p className="mt-3 text-[13.5px] leading-relaxed text-graphite">{r.lede}</p>}
               {r.features && r.features.length > 0 && (

@@ -880,5 +880,249 @@
         "plungePool": false
       }
     ]
+  },
+  "ka-ana-resort": {
+    "_source": "kaanabelize.com/accommodations, read 20 Nov 2026. Photographs still to file.",
+    "rooms": [
+      {
+        "name": "Balam Rooms",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "1 Queen Bed",
+          "300 sq ft"
+        ],
+        "lede": "Hacienda-style rooms, each with its own entrance and an outdoor sitting area over the pool or gardens.",
+        "features": [
+          "Garden or pool view",
+          "Air conditioning",
+          "Minibar",
+          "Wi-Fi",
+          "In-room safe",
+          "Robes",
+          "Room service",
+          "Housekeeping twice daily"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Casita Suites",
+        "sleeps": 4,
+        "facts": [
+          "Sleeps 4",
+          "2 Queen Beds",
+          "400 sq ft"
+        ],
+        "lede": "A suite with a private garden, an outdoor shower and a soaking tub.",
+        "features": [
+          "Private garden with outdoor shower",
+          "Outdoor bathtub",
+          "Sitting area",
+          "Air conditioning",
+          "Minibar",
+          "Wi-Fi",
+          "In-room safe",
+          "Robes",
+          "Room service",
+          "Housekeeping and turndown"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Master Suite",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "1 California King Bed",
+          "700 sq ft"
+        ],
+        "lede": "A garden suite with front and back decks and its own plunge pool.",
+        "features": [
+          "Private plunge pool",
+          "Outdoor shower",
+          "Front porch and private garden",
+          "Sitting area",
+          "Air conditioning",
+          "Minibar",
+          "Wi-Fi",
+          "Daily continental breakfast for two",
+          "Housekeeping twice daily"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "One Bedroom Private Pool Villa",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "1 California King Bed",
+          "1,250 sq ft"
+        ],
+        "lede": "A villa off a secluded garden path, with open indoor and outdoor living.",
+        "features": [
+          "Private plunge pool",
+          "Outdoor shower, gardens and terrace",
+          "Separate bedroom",
+          "Personal butler",
+          "Designated housekeeper",
+          "Private dining",
+          "Air conditioning",
+          "Minibar",
+          "Wi-Fi"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two Bedroom Private Pool Villa",
+        "sleeps": 4,
+        "facts": [
+          "Sleeps 4",
+          "1 King Bed, plus 2 Twin Beds or 1 King",
+          "2,500 sq ft"
+        ],
+        "lede": "Two bedrooms around indoor and outdoor living, a pool and a private garden.",
+        "features": [
+          "Private plunge pool",
+          "Private gardens and outdoor dining",
+          "Outdoor shower",
+          "Private living area",
+          "Daily full breakfast",
+          "Personal butler",
+          "Designated housekeeper",
+          "Air conditioning",
+          "Wi-Fi"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "One Bedroom Signature Villa",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "1,000 sq ft and more"
+        ],
+        "lede": "A secluded villa for two with a private garden and plunge pool.",
+        "features": [
+          "Private plunge pool and sun deck",
+          "Open-air pergola lounge",
+          "Open-air bathroom and rain shower",
+          "In-villa breakfast and spa services available",
+          "Butler on request, at a fee"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two Bedroom Signature Villa",
+        "sleeps": null,
+        "facts": [
+          "2 King Bedrooms",
+          "173 sq m inside, 210 sq m outside"
+        ],
+        "lede": "Two king bedrooms around a shared living space, a terrace and a private pool.",
+        "features": [
+          "Private pool with sun deck",
+          "Ensuite bathroom to each bedroom, with garden access",
+          "Open living and dining with kitchenette",
+          "Indoor gardens",
+          "Butler on request, at a fee"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Three Bedroom Signature Villa",
+        "sleeps": null,
+        "facts": [
+          "3 King Bedrooms",
+          "About 500 sq m inside and out"
+        ],
+        "lede": "A private estate where each bedroom has its own bathroom and garden.",
+        "features": [
+          "Private pool and sun terraces",
+          "Outdoor dining pergola and entertainment deck",
+          "Private bath and garden to each bedroom",
+          "Belizean furnishings",
+          "Butler on request, at a fee"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Villa Signature Suite, Shared Pool and Garden",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "About 65 to 75 sq m"
+        ],
+        "lede": "One suite within the Three Bedroom Signature Villa, sharing its pool, deck and lounge.",
+        "features": [
+          "Ensuite bathroom with rain shower",
+          "Private garden terrace or sitting area",
+          "Shared pool, deck and outdoor lounge",
+          "Belizean furnishings"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "coco-plum-island-resort": {
+    "_source": "cocoplumcay.com (accommodations and overwater villa pages), read 20 Nov 2026. The site prints few room details; sizes not stated. Photographs still to file.",
+    "rooms": [
+      {
+        "name": "Standard Cabana",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed"
+        ],
+        "lede": "A stand-alone cabana on the island's eastern shore, with a private balcony over the Caribbean.",
+        "features": [
+          "Private balcony facing the sea",
+          "King bed",
+          "Air conditioning"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Premium Suite-Style Cabana",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed, plus a Sofa Bed"
+        ],
+        "lede": "A larger suite-style cabana with a private balcony over the Caribbean.",
+        "features": [
+          "Private balcony facing the sea",
+          "King bed and sofa bed",
+          "Air conditioning"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Overwater Villa",
+        "sleeps": 6,
+        "facts": [
+          "Sleeps 2 to 6",
+          "3 Bedrooms",
+          "3 Bathrooms"
+        ],
+        "lede": "The island's one overwater villa, on two floors with its own entrance.",
+        "features": [
+          "Private veranda and sunbathing deck",
+          "Full kitchen",
+          "Dining and living room",
+          "Private entrance"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
   }
 }

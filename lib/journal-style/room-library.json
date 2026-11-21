@@ -1124,5 +1124,396 @@
         "plungePool": false
       }
     ]
+  },
+  "blancaneaux-lodge": {
+    "_source": "thecoppolahideaways.com (Blancaneaux Lodge dwelling pages), read 21 Nov 2026. Photographs still to file.",
+    "rooms": [
+      {
+        "name": "Garden View Cabañas",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "1 Queen Bed",
+          "Garden view"
+        ],
+        "lede": "Thatched cabañas in the gardens, furnished with native art and antiques.",
+        "features": [
+          "Large screened porch with hammock",
+          "Queen bed",
+          "Native arts and antiques"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Riverfront Cabañas",
+        "sleeps": 3,
+        "facts": [
+          "Sleeps 2, up to 3",
+          "1 Queen Bed",
+          "River view"
+        ],
+        "lede": "Cabañas with a wide deck over the Privassion River.",
+        "features": [
+          "Expansive deck over the river",
+          "Queen bed",
+          "Hand-painted tile bathroom",
+          "Native art and local textiles"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Family Cabaña",
+        "sleeps": 4,
+        "facts": [
+          "Sleeps 4",
+          "1 Queen Bed, plus up to 2 Twin Beds",
+          "Garden view"
+        ],
+        "lede": "A larger garden cabaña with a seating area and room for two twin beds.",
+        "features": [
+          "Large screened porch over the gardens",
+          "Hammock",
+          "Tiled bathroom with bathtub and shower",
+          "Seating area"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Luxury Cabaña",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "1 King Bed",
+          "Garden view"
+        ],
+        "lede": "A secluded cabaña at the far eastern end of the property, with its own plunge pool.",
+        "features": [
+          "Private plunge pool",
+          "King bed",
+          "Outdoor shower",
+          "Guatemalan décor"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Luxury Deluxe Cabaña",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "1 King Bed",
+          "Mountain view"
+        ],
+        "lede": "The most sought-after cabaña, at the eastern end of the property with a treetop view.",
+        "features": [
+          "Private plunge pool",
+          "Treetop view",
+          "King bed",
+          "Outdoor shower",
+          "Guatemalan décor"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two-Bedroom Villas",
+        "sleeps": 6,
+        "facts": [
+          "Sleeps 4, up to 6",
+          "2 King Beds",
+          "1,600 sq ft",
+          "River view"
+        ],
+        "lede": "Villas beside the Privassion River, with two bedrooms either side of an open-air living room.",
+        "features": [
+          "Open-air living room",
+          "Small kitchenette",
+          "Two bedrooms, each with a full bath",
+          "River setting"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "turtle-inn": {
+    "_source": "thecoppolahideaways.com (Turtle Inn dwelling pages), read 21 Nov 2026. Garden View Cottages and other cottage types are still to read. Photographs still to file.",
+    "rooms": [
+      {
+        "name": "Poolside Seaview Cottages",
+        "sleeps": 3,
+        "facts": [
+          "Sleeps 2, up to 3",
+          "1 King Bed",
+          "Pool and sea view"
+        ],
+        "lede": "Cottages by the pool, each with a private screened porch and a walled garden.",
+        "features": [
+          "Private screened porch",
+          "Japanese bath",
+          "Private walled garden with outdoor shower",
+          "Balinese hand-carved doors and décor",
+          "Ceiling fans"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Garden View Villas",
+        "sleeps": 6,
+        "facts": [
+          "Sleeps 4, up to 6",
+          "2 King Beds",
+          "Garden view"
+        ],
+        "lede": "Two-bedroom villas in the gardens, a few paces from the sea.",
+        "features": [
+          "Two air-conditioned bedrooms, each with its own bath",
+          "Living room and separate seating areas",
+          "Extended screened porch",
+          "Private walled garden with outdoor shower",
+          "Balinese hand-carved doors and décor"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Seafront Villas",
+        "sleeps": null,
+        "facts": [
+          "2 Bedrooms",
+          "2 Bathrooms",
+          "Sea view"
+        ],
+        "lede": "Two-bedroom villas a few steps from the Caribbean.",
+        "features": [
+          "Living room and separate sitting rooms",
+          "Extended screened porch",
+          "Private walled garden with outdoor shower",
+          "Thatched roof and ceiling fans"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Stella's Starfish Cottage",
+        "sleeps": 4,
+        "facts": [
+          "Sleeps 4",
+          "1 King Bed, 1 Queen Bed",
+          "900 sq ft",
+          "Sea view"
+        ],
+        "lede": "A two-bedroom cottage for a family or two couples.",
+        "features": [
+          "Two air-conditioned bedrooms upstairs",
+          "Shared bathroom between the bedrooms"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Francis' Family Pavilion",
+        "sleeps": 6,
+        "facts": [
+          "Sleeps 4, up to 6",
+          "2 King Beds, 1 Queen Bed",
+          "Sea view"
+        ],
+        "lede": "A pavilion at the southern edge of Turtle Inn, walled by a garden on three sides.",
+        "features": [
+          "Two air-conditioned bedrooms with their own bathrooms",
+          "Third loft bedroom reached by ladder",
+          "Garden walls for privacy",
+          "Balinese design throughout"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Roman's Lagoon Bungalow",
+        "sleeps": 9,
+        "facts": [
+          "2 adults and 3 children, up to 6 adults and 3 children",
+          "3 Queen Beds, plus a children's bunk bed",
+          "Lagoon view"
+        ],
+        "lede": "A private waterside residence on the lagoon side, for a family or close friends.",
+        "features": [
+          "Full kitchen",
+          "Large living room",
+          "Lagoon setting among palms"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Sofia's Beach House",
+        "sleeps": 10,
+        "facts": [
+          "Sleeps 8, up to 10",
+          "3 King Beds, 1 Queen Bed",
+          "Sea view"
+        ],
+        "lede": "An open-plan main house and two guest bungalows, steps from the sea, designed by architect Laurent Deroo.",
+        "features": [
+          "Main house with a king bedroom and an adjoining queen bedroom",
+          "Two guest bungalows, each with a king bed, bathroom and deck",
+          "Air conditioning in the bedrooms",
+          "Shares Turtle Inn's beach and amenities"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "matachica-resort-and-spa": {
+    "_source": "thelightercollection.com/matachica/accommodations, read 21 Nov 2026. Sleeps not stated on the page. Photographs still to file.",
+    "rooms": [
+      {
+        "name": "Seabreeze Beach Bungalow",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "350 sq ft"
+        ],
+        "lede": "The smallest of the beach rooms, with a king bed.",
+        "features": [
+          "Continental breakfast",
+          "Walk-in shower",
+          "Air conditioning"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Seabreeze Beach Casitas",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "500 sq ft"
+        ],
+        "lede": "Garden-view casitas with a private patio.",
+        "features": [
+          "Private patio",
+          "Continental breakfast",
+          "Walk-in shower and double sink",
+          "Air conditioning"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Seafront Beach Casitas",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "500 sq ft"
+        ],
+        "lede": "Casitas set on the beach, each with a porch facing the sea.",
+        "features": [
+          "Porch on the beach",
+          "Sea views",
+          "Continental breakfast",
+          "Walk-in shower",
+          "Air conditioning"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Seafront Luxury Suites",
+        "sleeps": null,
+        "facts": [
+          "1 King Bed",
+          "750 sq ft"
+        ],
+        "lede": "Suites with a living room and their own outdoor plunge pool.",
+        "features": [
+          "Outdoor private plunge pool",
+          "Living room",
+          "Double sinks and soaking tub",
+          "Continental breakfast",
+          "Air conditioning"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Seabreeze Luxury Villa",
+        "sleeps": null,
+        "facts": [
+          "2 Bedrooms: 1 King, 2 Doubles",
+          "1,200 sq ft"
+        ],
+        "lede": "A two-bedroom villa with an open living area and covered patios.",
+        "features": [
+          "Each bedroom with its own bathroom",
+          "Living room",
+          "Coffee and tea nook",
+          "Covered patios",
+          "Continental breakfast",
+          "Air conditioning"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Seafront Luxury Villas",
+        "sleeps": null,
+        "facts": [
+          "2 King Beds",
+          "2 Bathrooms",
+          "2,500 sq ft"
+        ],
+        "lede": "Two-bedroom villas with a rooftop terrace and private pool access.",
+        "features": [
+          "Private pool access",
+          "Rooftop terrace with a fire table",
+          "Kitchen and living room",
+          "Continental breakfast",
+          "Air conditioning"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "the-lodge-at-chaa-creek": {
+    "_source": "chaacreek.com (accommodation pages), read 21 Nov 2026. Only the two types with printed detail are filed; Tree Top Villas, Spa Villa, Orchard Villa, Macal River View Suite, Garden Jacuzzi Suite, Deluxe Cottage and the Wright House are still to read. Photographs still to file.",
+    "rooms": [
+      {
+        "name": "Cottage Collection",
+        "sleeps": null,
+        "facts": [],
+        "lede": "Individually designed thatched cottages a short stroll from the dining room, pool and spa. They have no air conditioning, by design.",
+        "features": [
+          "Private veranda with a hammock",
+          "Handcrafted hardwood furnishings",
+          "Screened windows for the rainforest breeze",
+          "No air conditioning"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Ix Chel Villas",
+        "sleeps": null,
+        "facts": [],
+        "lede": "The lodge's newest villas, air-conditioned, with 180 degree jungle views.",
+        "features": [
+          "Private pool",
+          "Personal butler",
+          "Open-air shower",
+          "Air conditioning",
+          "Indoor and outdoor living"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
   }
 }

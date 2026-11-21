@@ -5,6 +5,9 @@
 // 000636). Photographs are Belmond's, used under the partnership and credited to Belmond.
 // Khwai River Lodge is not in Belmond's 2026 Africa line-up, so it is not listed.
 // Villa San Michele (Florence) is to be added later (Follow-Up Board).
+// Cap Juluca, A Belmond Hotel, Anguilla, added 21 Nov 2026 (James: "we have Cap Juluca as a partner lodge ...
+// update a full Belmond partner section"). Facts from belmond.com; stay record STY-2026-000772, filed the same day.
+// Its card is not linked (built: false) until the library sync has brought the stay page onto the site.
 
 import type { CollectionHotel, CollectionImage } from "@/lib/content/collections/cayuga";
 
@@ -13,28 +16,29 @@ const img = (id: string, alt: string, w: number, h: number): CollectionImage => 
 const MN = "wildco/south-africa/cape-town/belmond-mount-nelson/belmond-mount-nelson";
 const EI = "wildco/botswana/okavango-delta/belmond-eagle-island-lodge/belmond-eagle-island-lodge";
 const SE = "wildco/botswana/chobe/belmond-savute-elephant-lodge/belmond-savute-elephant-lodge";
+const CJ = "jwco/stays/anguilla/belmond-cap-juluca";
 
 export const BELMOND = {
   slug: "belmond",
-  name: "Belmond in Africa",
+  name: "Belmond",
   orgName: "Belmond",
   path: "/collections/belmond",
   approved: true, // James, 4 Nov 2026: Belmond partner section, photos cleared under the partnership
   founded: "",
   founders: [] as string[],
-  countries: ["South Africa", "Botswana"],
-  facts: [["Belmond worldwide", "43 properties"], ["In Africa", "3, all on our list"], ["The story begins", "1976, Venice"], ["Part of", "LVMH, since 2019"]] as [string, string][],
+  countries: ["South Africa", "Botswana", "Anguilla"],
+  facts: [["Belmond worldwide", "43 properties"], ["In Africa", "3, all on our list"], ["In the Caribbean", "Cap Juluca, Anguilla"], ["The story begins", "1976, Venice"], ["Part of", "LVMH, since 2019"]] as [string, string][],
   seo: {
-    title: "Belmond in Africa: Mount Nelson, Eagle Island and Savute Elephant Lodge",
-    description: "Belmond's three houses in southern Africa, planned by James Wild & Co as a Belmond partner: Mount Nelson in Cape Town, Eagle Island Lodge in the Okavango Delta and Savute Elephant Lodge in Chobe. Which suits whom, and how to join them.",
+    title: "Belmond with James Wild & Co: Mount Nelson, Eagle Island, Savute and Cap Juluca",
+    description: "Belmond houses planned by James Wild & Co as a Belmond partner: Mount Nelson in Cape Town, Eagle Island Lodge in the Okavango Delta, Savute Elephant Lodge in Chobe, and Cap Juluca on Maundays Bay, Anguilla. Which suits whom, and how to join them.",
   },
   eyebrow: "The Collections · Belmond",
-  tagline: "Cape Town's pink hotel, then two tented lodges in northern Botswana, joined by light aircraft",
-  answer: "Belmond is a collection of 43 hotels, trains, river cruises and safaris in 24 countries, part of LVMH since 2019, whose story begins with Hotel Cipriani in Venice in 1976. In Africa it has three houses, and we plan all of them: Mount Nelson in Cape Town, Eagle Island Lodge in the Okavango Delta and Savute Elephant Lodge in Chobe National Park. Belmond calls its way of travelling slow luxury; in Africa that means a city start, then the Delta and Savute by light aircraft.",
+  tagline: "Cape Town's pink hotel, two tented lodges in northern Botswana, and a white beach on Anguilla",
+  answer: "Belmond is a collection of 43 hotels, trains, river cruises and safaris in 24 countries, part of LVMH since 2019, whose story begins with Hotel Cipriani in Venice in 1976. In Africa it has three houses, and we plan all of them: Mount Nelson in Cape Town, Eagle Island Lodge in the Okavango Delta and Savute Elephant Lodge in Chobe National Park. Belmond calls its way of travelling slow luxury; in Africa that means a city start, then the Delta and Savute by light aircraft. In the Caribbean we plan Cap Juluca, its hotel on Maundays Bay, Anguilla.",
   hero: img(`${EI}-delta-from-the-air`, "The Okavango Delta seen from a helicopter on a safari flight from Eagle Island Lodge, A Belmond Safari, Botswana", 6796, 4531),
   partner: {
     eyebrow: "A James Wild & Co partner",
-    line: "We plan Belmond's African houses with the Belmond Africa team, and its photographs appear here with Belmond's permission:",
+    line: "We plan Belmond's African houses with the Belmond Africa team, and Cap Juluca on Anguilla, and its photographs appear here with Belmond's permission:",
     credit: "Belmond",
     creditUrl: "https://www.belmond.com/en/destinations/africa",
     story: [
@@ -44,21 +48,22 @@ export const BELMOND = {
       { ...img(`${EI}-fish-eagle-bar-sunset`, "Sunset at the Fish Eagle Bar, Eagle Island Lodge, A Belmond Safari, Okavango Delta", 7253, 4841), hotel: "Eagle Island Lodge" },
       { ...img(`${SE}-view-over-the-plains`, "The view from Savute Elephant Lodge, A Belmond Safari, over the Savute plains in Chobe National Park", 4915, 6156), hotel: "Savute Elephant Lodge" },
       { ...img(`${EI}-veranda-sunset`, "A shaded veranda of a tented room at Eagle Island Lodge, A Belmond Safari, looking across grasslands at sunset", 7209, 4811), hotel: "Eagle Island Lodge" },
+      { ...img(`${CJ}/maundays-bay-beach`, "A guest walking out of the sea onto the white sand of Maundays Bay at Cap Juluca, A Belmond Hotel, Anguilla", 2580, 1299), hotel: "Cap Juluca" },
       { ...img(`${EI}-leopard`, "A leopard seen on a game drive from Eagle Island Lodge, A Belmond Safari, Okavango Delta", 3873, 5809), hotel: "Eagle Island Lodge" },
     ],
   },
   copy: {
-    hotelsHeading: "Three Houses, One Journey",
-    hotelsLine: "A city hotel with nine acres of garden, then the water of the Delta and the dry channel at Savute.",
+    hotelsHeading: "Four Houses, Two Journeys",
+    hotelsLine: "A city hotel with nine acres of garden, then the water of the Delta and the dry channel at Savute. And, an ocean away, one bay on Anguilla.",
     says: "At a glance",
     quoteOfficial: false,
     fitHeading: "Which Belmond House Fits Which Traveller",
-    pairHeading: "Cape Town, the Delta, Savute",
+    pairHeading: "Cape Town, the Delta, Savute, and Anguilla",
     askHeading: "Questions Worth Asking Before a Botswana Safari",
     askLine: "The two lodges are a short flight apart, but the Delta and Savute change with the water. These help set the season and the pace.",
-    faqTitle: "Questions About Belmond in Africa",
+    faqTitle: "Questions About Belmond",
     source: "Hotel details from belmond.com; the roster is confirmed before booking.",
-    planPlace: "Cape Town and Botswana",
+    planPlace: "Cape Town, Botswana and Anguilla",
     galleryCredit: "Photography courtesy of Belmond, used with permission.",
   },
   hotels: [
@@ -92,10 +97,21 @@ export const BELMOND = {
       official: { who: "For game drives and elephants.", facts: "Its own airstrip, 40 minutes by air from Kasane and 45 from Eagle Island." },
       built: true,
     },
+    {
+      slug: "belmond-cap-juluca", name: "Cap Juluca, A Belmond Hotel", country: "Anguilla", setting: "Beach hotel on Maundays Bay", where: "Maundays Bay, Anguilla",
+      bestFor: ["Couples", "Families", "Villa groups"],
+      choose: "Choose it for a beach and nothing to decide: every room and suite opens onto Maundays Bay, with four restaurants along the sand.",
+      line: "68 rooms and 45 suites in white Greco-Moorish inspired buildings on Maundays Bay, with seven Signature Suites and Villas for up to 14, the Cap Juluca Spa by Guerlain and an infinity pool.",
+      image: img(`${CJ}/hero`, "Two guests carrying a paddleboard along the white sand of Maundays Bay past the beachfront villas of Cap Juluca, A Belmond Hotel, Anguilla", 2580, 1299),
+      gallery: [],
+      official: { who: "For Anguilla from the beach.", facts: "20 minutes by boat or a 7 minute flight from St Maarten; the hotel's team meets you at the airport." },
+      built: false, // the stay page arrives with the next library sync (STY-2026-000772)
+    },
   ] as CollectionHotel[],
   pairings: [
     { title: "Belmond's Grand Tour", hotels: ["Mount Nelson, A Belmond Hotel", "Eagle Island Lodge, A Belmond Safari", "Savute Elephant Lodge, A Belmond Safari"], line: "Cape Town first, then the Delta and Savute, joined by light aircraft. Belmond packages the three as its Grand Tour of Southern Africa." },
     { title: "Water, then land", hotels: ["Eagle Island Lodge, A Belmond Safari", "Savute Elephant Lodge, A Belmond Safari"], line: "Mokoro and boats in the Delta, then game drives at Savute, 45 minutes apart by air." },
+    { title: "Anguilla, on its own", hotels: ["Cap Juluca, A Belmond Hotel"], line: "A week on Maundays Bay, 20 minutes by boat from St Maarten, with a sail to the offshore cays in the middle of it." },
     { title: "Cape Town, either side", hotels: ["Mount Nelson, A Belmond Hotel"], line: "Two or three nights at the Nellie before or after any Botswana safari, to arrive slowly or come down gently." },
   ],
   rule: "Three nights in each lodge, and two or three in Cape Town, is usually better than adding a fourth stop.",
@@ -112,6 +128,8 @@ export const BELMOND = {
     { q: "How do you travel between the Belmond lodges in Botswana?", a: "By light aircraft. Eagle Island Lodge and Savute Elephant Lodge each have their own airstrip, about 45 minutes apart by air, with flights from Maun and Kasane." },
     { q: "What is Belmond's Grand Tour of Southern Africa?", a: "Belmond's own package joining Mount Nelson in Cape Town with its two Botswana lodges, with light aircraft flights between the lodges. We plan it, and adjust the nights to suit you." },
     { q: "Is Eagle Island Lodge or Savute Elephant Lodge better for a first safari?", a: "Both work, and they are best together: Eagle Island for the Delta by water, Savute for game drives and elephants. If you have time for only one, tell us what you most want to see." },
+    { q: "Which Belmond hotel is on Anguilla?", a: "Cap Juluca, A Belmond Hotel, on Maundays Bay near the southern tip of the island. It has 68 rooms and 45 suites with direct beach access, four restaurants and the Cap Juluca Spa by Guerlain. It joined Belmond in 2018, the year it was fully renovated." },
+    { q: "How do you get to Cap Juluca?", a: "Fly to St Maarten (SXM), where the hotel's team meets you, then cross in about 20 minutes by boat or 7 minutes by air. Anguilla's own airport (AXA) is a short drive from the hotel." },
     { q: "Why is Mount Nelson known as the Nellie?", a: "The Nellie is the hotel's affectionate name, as Belmond tells it. It opened as a hotel in 1899 and has been painted pink since 1918." },
   ],
   disclosure: "James Wild & Co is a Belmond partner and may help plan and book these properties. Recommendations remain based on traveller fit.",

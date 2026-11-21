@@ -778,6 +778,16 @@
    "released": true
   },
   {
+   "stay_id": "6b01f54b01813f7bd5d8dca9",
+   "slug": "belmond-cap-juluca",
+   "name": "Cap Juluca, A Belmond Hotel",
+   "country": "Anguilla",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6aeb4d6b33f5f403bbf56e94",
    "slug": "belmond-eagle-island-lodge",
    "name": "Eagle Island Lodge, A Belmond Safari",
@@ -4048,9 +4058,7 @@
    "slug": "noah-forest-by-tifakara",
    "name": "Noah's Forest by Tifakara",
    "country": "Costa Rica",
-   "missing": [
-    "hero_photo"
-   ],
+   "missing": [],
    "released": true
   },
   {

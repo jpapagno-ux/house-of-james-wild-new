@@ -120,6 +120,34 @@
    "chartLabel": "Alaska"
   },
   {
+   "slug": "anguilla",
+   "name": "Anguilla",
+   "region": "caribbean-mexico",
+   "regionName": "Caribbean & Mexico",
+   "ledgerId": "DST-2026-000113",
+   "subtitle": "1 vetted stays",
+   "leading": "Anguilla is the most northerly of the Leeward Islands: 35 square miles of coral and limestone, 16 miles long and 3 wide, ringed by 33 beaches and a handful of uninhabited cays. It is a self-governing British Overseas Territory, quiet by design, and most people reach it by a 25 minute boat from St Maarten.",
+   "hero": {
+    "src": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/hero",
+    "alt": "Anguilla, Caribbean & Mexico"
+   },
+   "story": [],
+   "facts": [],
+   "faqs": [],
+   "contentStatus": "needs_review",
+   "months": [],
+   "airports": [
+    [
+     "Clayton J. Lloyd International Airport (AXA)",
+     "Serves 1 stay in the Ledger here"
+    ]
+   ],
+   "transfers": [],
+   "flyInto": "AXA",
+   "bestShort": "Ask James",
+   "atlasName": "Anguilla"
+  },
+  {
    "slug": "argentina",
    "name": "Argentina",
    "region": "south-america",
@@ -3571,12 +3599,12 @@
    "months": [],
    "airports": [
     [
-     "El Paso (ELP)",
-     "Serves 1 stay in the Ledger here"
+     "El Paso International Airport (ELP)",
+     "Serves 3 stays in the Ledger here"
     ],
     [
-     "Albuquerque (ABQ)",
-     "Serves 1 stay in the Ledger here"
+     "Albuquerque International Sunport (ABQ)",
+     "Serves 3 stays in the Ledger here"
     ]
    ],
    "transfers": [],

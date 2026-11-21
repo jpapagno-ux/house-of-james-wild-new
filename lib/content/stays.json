@@ -900,7 +900,7 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Seronera, Ndutu, Grumeti or Kogatende",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -930,6 +930,7 @@
    ],
    "why": [],
    "facts": {
+    "how_to_get_there": "There are scheduled charter flights into the Serengeti airstrip nearest to the current position of the camps (Seronera, Ndutu, Grumeti or Kogatende). This is followed by a short drive to camp.",
     "signature_experiences": "Game drives within range of the Great Migration, from a camp that moves with it.",
     "who_its_for": "Travellers who want to follow the Great Migration from a small mobile camp inside the Serengeti."
    },
@@ -4349,8 +4350,8 @@
    "facts": {
     "best_months": "June to October and January to February are the dry months, with the clearest Kilimanjaro views. The climate is warm year round.",
     "how_to_get_there": "Fly Safarilink from Nairobi Wilson to Kimana Airfield inside the sanctuary, charter from the Maasai Mara, or drive about 3.5 hours from Nairobi.",
-    "who_its_for": "Families (children of all ages, childminding 6 pm to 10 pm), photographers and travellers pairing the Mara with Kilimanjaro.",
-    "signature_experiences": "Night drives and walks in Kimana Sanctuary, day trips into Amboseli National Park, the Mnara tower at sunset, and a visit to Big Life Foundation HQ."
+    "signature_experiences": "Night drives and walks in Kimana Sanctuary, day trips into Amboseli National Park, the Mnara tower at sunset, and a visit to Big Life Foundation HQ.",
+    "who_its_for": "Families (children of all ages, childminding 6 pm to 10 pm), photographers and travellers pairing the Mara with Kilimanjaro."
    },
    "faqs": [],
    "reviewed": true,
@@ -4972,9 +4973,9 @@
    ],
    "facts": {
     "best_months": "Late spring through early autumn generally offers the most favorable conditions for coastal walks and west coast touring, while Ireland remains a year-round destination for travelers comfortable with variable weather.",
-    "who_its_for": "Travelers seeking an intimate, atmospheric coastal base for a carefully paced Irish journey, including couples, solo travelers, and guests who value privacy over resort-style facilities.",
+    "how_to_get_there": "Ariel House is accessed by road in Ireland. The exact airport, transfer time, and driving route are not specified in the available property information and should be confirmed before booking.",
     "signature_experiences": "Coastal walks, scenic west coast drives, local village and heritage visits, and returning to the character of a private Irish house after a day outdoors.",
-    "how_to_get_there": "Ariel House is accessed by road in Ireland. The exact airport, transfer time, and driving route are not specified in the available property information and should be confirmed before booking."
+    "who_its_for": "Travelers seeking an intimate, atmospheric coastal base for a carefully paced Irish journey, including couples, solo travelers, and guests who value privacy over resort-style facilities."
    },
    "faqs": [
     {
@@ -5266,7 +5267,7 @@
     "lat": 33.17694,
     "lng": -107.03139
    },
-   "airport": null,
+   "airport": "El Paso International Airport (ELP) and Albuquerque International Sunport (ABQ)",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -7714,8 +7715,8 @@
    "facts": {
     "best_months": "June to November, when Southern Right whales migrate into Walker Bay.",
     "how_to_get_there": "Fly into Cape Town International (CPT), about 120 km away, then drive around 1 hour 45 minutes.",
-    "who_its_for": "Honeymooners, couples and whale watchers who want a small clifftop hotel by the sea.",
-    "signature_experiences": "Whale watching, coastal cliff walks and ocean kayaking."
+    "signature_experiences": "Whale watching, coastal cliff walks and ocean kayaking.",
+    "who_its_for": "Honeymooners, couples and whale watchers who want a small clifftop hotel by the sea."
    },
    "faqs": [
     {
@@ -8420,8 +8421,8 @@
    "facts": {
     "best_months": "March–November for the published 2026 season",
     "how_to_get_there": "On Horn Head outside Dunfanaghy, about 50 minutes by road from Donegal Airport according to the property.",
-    "who_its_for": "One or two adults, especially couples, honeymooners and solo travelers. Not suitable for children or group room blocks.",
-    "signature_experiences": "Private terrace views, breakfast delivered to the room, prepared picnics, wood-fired sauna, seaweed bath, cycling and Horn Head walks."
+    "signature_experiences": "Private terrace views, breakfast delivered to the room, prepared picnics, wood-fired sauna, seaweed bath, cycling and Horn Head walks.",
+    "who_its_for": "One or two adults, especially couples, honeymooners and solo travelers. Not suitable for children or group room blocks."
    },
    "faqs": [
     {
@@ -9687,6 +9688,131 @@
     "status": "approved",
     "classifiedBy": "Claude (Stage 4 pilot intake), for James",
     "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "belmond-cap-juluca",
+   "name": "Cap Juluca, A Belmond Hotel",
+   "ledgerId": "STY-2026-000772",
+   "country": "Anguilla",
+   "countrySlug": "anguilla",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Greco-Moorish villas on the white sand of Maundays Bay, on Anguilla's southern coast",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/maundays-bay-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/flamboyant-tree-villa-roofs",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/private-roof-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/five-bedroom-pool-villa-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/pimms-seafront-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/the-cap-shack-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/uchu-jungle-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/cips-by-cipriani-sea-view-dinner",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/spa-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/beachfront-room-terrace-view"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "luxury"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2025-08-01",
+   "coords": null,
+   "airport": "Clayton J. Lloyd International Airport (AXA)",
+   "airportDirections": "Belmond gives 20 minutes by boat or a 7 minute flight from St Maarten (SXM), 50 minutes by air from San Juan (SJU) and 20 minutes by air from St Kitts (SKB). Arriving through St Maarten, the hotel's team meets you at Princess Juliana International Airport and escorts you to the dock; the crossing to Blowing Point takes about 25 to 40 minutes, depending on immigration. Anguilla's own airport, Clayton J. Lloyd International (AXA), is a short drive from the hotel.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rooms, 63 to 102 square metres, for up to 3 guests. Suites, 110 to 232 square metres, for up to 5 guests. Signature Suites and Villas, 306 to 481 square metres, for up to 14 guests; the villas have private pools."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "68 rooms and 45 suites on Maundays Bay, with direct beach access. Seven Signature Suites and Villas, the villas with private pools, for up to 14 guests. Four restaurants: Pimms, Cip's by Cipriani, Uchu and The Cap Shack. Cap Juluca Spa by Guerlain, an infinity pool and a fitness centre open 24 hours. Explorer's Club and Nursery for ages 4 to 12. 20 minutes by boat or a 7 minute flight from St Maarten."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Linda and Charles Hickox opened Pimms on Maundays Bay in 1984 and then the rest of the resort, which they named Cap Juluca. Its white Greco-Moorish inspired buildings stand among palms along the sand, and it was fully renovated in 2018, the year it joined Belmond. It holds two Michelin Keys.",
+    "From the beach you can sail to the offshore cays, go salt-picking, dive, ride or play tennis, and there is a Champagne sabering ritual every day. Pimms serves Caribbean seafood on a seafront colonnade terrace, Cip's by Cipriani is Italian, Uchu serves Peruvian small plates and The Cap Shack is on the sand."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "One Bay, One Hotel Cap Juluca has Maundays Bay on Anguilla's southern coast, with every room and suite opening straight onto the beach. It suits travellers who want a long white beach, four restaurants within a walk and nothing else to decide, twenty minutes by boat from St Maarten."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to St Maarten (SXM), then 20 minutes by boat or a 7 minute flight; the hotel's team meets you at the airport. Or fly into Anguilla's Clayton J. Lloyd International Airport (AXA), a short drive away.",
+    "signature_experiences": "A sail to the offshore cays, salt-picking, the daily Champagne sabering ritual, dinner at Pimms on the seafront terrace and the Cap Juluca Spa by Guerlain.",
+    "who_its_for": "Couples, and families and groups taking a villa for up to 14, who want a beach hotel with direct access to the sand from every room."
+   },
+   "faqs": [
+    {
+     "q": "Where is Cap Juluca?",
+     "a": "On Maundays Bay, near the southernmost tip of Anguilla in the British West Indies."
+    },
+    {
+     "q": "How do you get to Cap Juluca?",
+     "a": "Most guests fly to St Maarten (SXM), where the hotel's team meets them, and cross to Anguilla in about 20 minutes by boat or 7 minutes by air. Anguilla's own airport, Clayton J. Lloyd International (AXA), is a short drive from the hotel."
+    },
+    {
+     "q": "How many rooms does Cap Juluca have?",
+     "a": "113: 68 rooms and 45 suites, with seven Signature Suites and Villas among the largest. Rooms are 63 to 102 square metres, suites 110 to 232 and the Signature Suites and Villas 306 to 481, for up to 14 guests."
+    },
+    {
+     "q": "What restaurants are at Cap Juluca?",
+     "a": "Four: Pimms, the flagship, for Caribbean seafood; Cip's by Cipriani for Italian; Uchu for Peruvian small plates; and The Cap Shack on the beach."
+    },
+    {
+     "q": "Is Cap Juluca good for children?",
+     "a": "Yes. The Explorer's Club and Nursery takes children aged 4 to 12, and the Signature Villas sleep up to 14."
+    },
+    {
+     "q": "What time are check-in and check-out at Cap Juluca?",
+     "a": "Check-in is from 4pm and check-out is at 12pm."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-07"
+    ],
+    "setting": "island",
+    "intentions": [
+     "beach",
+     "restoration",
+     "villa_gathering"
+    ],
+    "suitability": [
+     "couples",
+     "families",
+     "groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 21 Nov 2026 (\"pathways applicable\"; chosen by the house: Between Tides, The Art of Stillness, A Place of Our Own)",
+    "classifiedAt": "2026-11-21"
    },
    "volumes": [
     "stays"
@@ -15113,8 +15239,8 @@
    "facts": {
     "best_months": "May to October, the dry winter months, for sightings and photography.",
     "how_to_get_there": "About 1.5 to 2 hours by road from Skukuza Airport (SZK) or 2.5 to 3 hours from Kruger Mpumalanga International (MQP); charters to nearby airstrips are available.",
-    "who_its_for": "Couples, solo travellers and family groups who want a four-suite lodge with real privacy.",
-    "signature_experiences": "Game drives on personalised schedules, wildlife tracking and private dining."
+    "signature_experiences": "Game drives on personalised schedules, wildlife tracking and private dining.",
+    "who_its_for": "Couples, solo travellers and family groups who want a four-suite lodge with real privacy."
    },
    "faqs": [
     {
@@ -15220,8 +15346,8 @@
    "facts": {
     "best_months": "May to October, the dry winter season, for peak wildlife viewing.",
     "how_to_get_there": "About 1.5 to 2 hours by road from Skukuza Airport (SZK) or 2.5 to 3 hours from Kruger Mpumalanga International (MQP); charter flights to nearby airstrips are available.",
-    "who_its_for": "Couples, families, first-time safari guests and solo travellers who want a small, warm lodge.",
-    "signature_experiences": "Personalised game drives with expert trackers, bush walks and bush dining."
+    "signature_experiences": "Personalised game drives with expert trackers, bush walks and bush dining.",
+    "who_its_for": "Couples, families, first-time safari guests and solo travellers who want a small, warm lodge."
    },
    "faqs": [
     {
@@ -15335,8 +15461,8 @@
    "facts": {
     "best_months": "May to October, the dry season, for wildlife and predator sightings.",
     "how_to_get_there": "About 1.5 to 2 hours by road from Skukuza Airport (SZK) or 2.5 to 3 hours from Kruger Mpumalanga International (MQP); charters to nearby airstrips are available.",
-    "who_its_for": "Couples, wildlife photographers, solo travellers and repeat safari guests who want an intimate lodge.",
-    "signature_experiences": "Twice-daily game drives with expert trackers, wildlife tracking and romantic bush dining."
+    "signature_experiences": "Twice-daily game drives with expert trackers, wildlife tracking and romantic bush dining.",
+    "who_its_for": "Couples, wildlife photographers, solo travellers and repeat safari guests who want an intimate lodge."
    },
    "faqs": [
     {
@@ -15598,8 +15724,8 @@
    "facts": {
     "best_months": "April to June and September to October",
     "how_to_get_there": "About two hours by road from Lisbon airport, near Estremoz in the Alentejo.",
-    "who_its_for": "Couples and honeymooners who want stillness over spectacle, design and art collectors, and slow travellers pairing the Alentejo with Évora and the coast.",
-    "signature_experiences": "Olive oil from the estate's groves, dark-sky stargazing, Évora for a morning, and the Estremoz Saturday market."
+    "signature_experiences": "Olive oil from the estate's groves, dark-sky stargazing, Évora for a morning, and the Estremoz Saturday market.",
+    "who_its_for": "Couples and honeymooners who want stillness over spectacle, design and art collectors, and slow travellers pairing the Alentejo with Évora and the coast."
    },
    "faqs": [],
    "reviewed": true,
@@ -16863,7 +16989,7 @@
     "lat": 0.133117,
     "lng": 38.137183
    },
-   "airport": null,
+   "airport": "Mughwango Airstrip and Kinna Airstrip",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -17893,7 +18019,7 @@
     "couples",
     "adventure"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -19829,8 +19955,8 @@
     }
    ],
    "facts": {
-    "who_its_for": "Conservation-minded travellers, adventure lovers and wildlife photographers who want a safari with purpose.",
-    "signature_experiences": "Walking safaris, Mount Gorongosa expeditions and river and wetland exploration."
+    "signature_experiences": "Walking safaris, Mount Gorongosa expeditions and river and wetland exploration.",
+    "who_its_for": "Conservation-minded travellers, adventure lovers and wildlife photographers who want a safari with purpose."
    },
    "faqs": [
     {
@@ -20960,8 +21086,8 @@
    ],
    "facts": {
     "how_to_get_there": "About 35 minutes from Jomo Kenyatta International (NBO) and about 20 minutes from Wilson Airport for safari flights.",
-    "who_its_for": "Safari travellers who want a calm first or last night in Nairobi, close to Wilson Airport.",
-    "signature_experiences": "Nairobi National Park, the Giraffe Centre, the Karen Blixen Museum and the Sheldrick Wildlife Trust."
+    "signature_experiences": "Nairobi National Park, the Giraffe Centre, the Karen Blixen Museum and the Sheldrick Wildlife Trust.",
+    "who_its_for": "Safari travellers who want a calm first or last night in Nairobi, close to Wilson Airport."
    },
    "faqs": [
     {
@@ -21048,7 +21174,7 @@
     "wellness",
     "food"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.9472729,
@@ -21194,8 +21320,8 @@
    "facts": {
     "best_months": "June to November, for whale watching on Walker Bay, wine touring and hiking.",
     "how_to_get_there": "Fly into Cape Town International (CPT), about 120 km away, then drive around 1 hour 45 minutes on coastal roads.",
-    "who_its_for": "Multi-generational families, couples and friends who want a private home on the Whale Coast.",
-    "signature_experiences": "Whale watching, private chef dining and wine country tours."
+    "signature_experiences": "Whale watching, private chef dining and wine country tours.",
+    "who_its_for": "Multi-generational families, couples and friends who want a private home on the Whale Coast."
    },
    "faqs": [
     {
@@ -22706,13 +22832,13 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.0637638,
     "lng": 35.2176399
    },
-   "airport": null,
+   "airport": "Ngerende airstrip, Mara North, or Naretoi",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -22742,7 +22868,9 @@
      "body": "Best for families, couples and returning safari-goers who want a private conservancy away from the crowds."
     }
    ],
-   "facts": {},
+   "facts": {
+    "how_to_get_there": "Schedule flights to Mara North or Ngerende, charter flights to Naretoi, or by road (approximately 4 hours from Nairobi via Narok)."
+   },
    "faqs": [],
    "reviewed": true,
    "reserveChild": false,
@@ -26101,7 +26229,7 @@
     "honeymoon",
     "luxury"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 36.461973,
@@ -28183,8 +28311,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Adventurous travelers and wildlife enthusiasts seeking exclusivity and high-quality game viewing.",
-    "signature_experiences": "Off-road game drives with expert trackers and seasonal mokoro excursions."
+    "signature_experiences": "Off-road game drives with expert trackers and seasonal mokoro excursions.",
+    "who_its_for": "Adventurous travelers and wildlife enthusiasts seeking exclusivity and high-quality game viewing."
    },
    "faqs": [
     {
@@ -28282,8 +28410,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Safari enthusiasts, wildlife photographers, and those seeking an authentic, high-density big cat experience.",
-    "signature_experiences": "Year-round land and water activities, including mokoro excursions and big cat tracking."
+    "signature_experiences": "Year-round land and water activities, including mokoro excursions and big cat tracking.",
+    "who_its_for": "Safari enthusiasts, wildlife photographers, and those seeking an authentic, high-density big cat experience."
    },
    "faqs": [
     {
@@ -28390,8 +28518,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun or Kasane to the local airstrip.",
-    "who_its_for": "Serious wildlife enthusiasts and photographers seeking predator action.",
-    "signature_experiences": "Boat cruises on the Kwando River and predator-focused game drives."
+    "signature_experiences": "Boat cruises on the Kwando River and predator-focused game drives.",
+    "who_its_for": "Serious wildlife enthusiasts and photographers seeking predator action."
    },
    "faqs": [
     {
@@ -28497,8 +28625,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun or Kasane to the local airstrip.",
-    "who_its_for": "Wildlife enthusiasts and those seeking a remote, peaceful safari.",
-    "signature_experiences": "Game drives through the Linyanti marshes and tracking large elephant herds."
+    "signature_experiences": "Game drives through the Linyanti marshes and tracking large elephant herds.",
+    "who_its_for": "Wildlife enthusiasts and those seeking a remote, peaceful safari."
    },
    "faqs": [
     {
@@ -28604,8 +28732,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Families, couples, and wildlife enthusiasts seeking big game and warm hospitality.",
-    "signature_experiences": "Day and night game drives along the Gomoti River and seasonal mokoro excursions."
+    "signature_experiences": "Day and night game drives along the Gomoti River and seasonal mokoro excursions.",
+    "who_its_for": "Families, couples, and wildlife enthusiasts seeking big game and warm hospitality."
    },
    "faqs": [
     {
@@ -28703,8 +28831,8 @@
    "facts": {
     "best_months": "June to September",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Nature lovers, photographers, and those seeking a quiet, water-focused safari experience.",
-    "signature_experiences": "Mokoro excursions through the Delta channels and guided walking safaris."
+    "signature_experiences": "Mokoro excursions through the Delta channels and guided walking safaris.",
+    "who_its_for": "Nature lovers, photographers, and those seeking a quiet, water-focused safari experience."
    },
    "faqs": [
     {
@@ -28801,8 +28929,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun to the local airstrip.",
-    "who_its_for": "Adventurous travelers and those seeking a unique desert experience.",
-    "signature_experiences": "Game drives through the salt pans and visiting ancient baobab trees."
+    "signature_experiences": "Game drives through the salt pans and visiting ancient baobab trees.",
+    "who_its_for": "Adventurous travelers and those seeking a unique desert experience."
    },
    "faqs": [
     {
@@ -28902,8 +29030,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun to the local airstrip.",
-    "who_its_for": "Travelers seeking a charming and authentic Delta experience.",
-    "signature_experiences": "Mokoro excursions and game drives in the private concession."
+    "signature_experiences": "Mokoro excursions and game drives in the private concession.",
+    "who_its_for": "Travelers seeking a charming and authentic Delta experience."
    },
    "faqs": [
     {
@@ -29001,8 +29129,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Couples, solo travelers, and those interested in sustainable, community-supported safari experiences.",
-    "signature_experiences": "Sunrise game drives on the Gomoti plains and guided walking safaris."
+    "signature_experiences": "Sunrise game drives on the Gomoti plains and guided walking safaris.",
+    "who_its_for": "Couples, solo travelers, and those interested in sustainable, community-supported safari experiences."
    },
    "faqs": [
     {
@@ -29100,8 +29228,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun to the local airstrip.",
-    "who_its_for": "Families and travelers seeking a luxury Delta experience.",
-    "signature_experiences": "Game drives in the Kwara Concession and boat cruises on the Delta."
+    "signature_experiences": "Game drives in the Kwara Concession and boat cruises on the Delta.",
+    "who_its_for": "Families and travelers seeking a luxury Delta experience."
    },
    "faqs": [
     {
@@ -29199,8 +29327,8 @@
    "facts": {
     "best_months": "January to August, December",
     "how_to_get_there": "Light aircraft transfer from Maun to the local airstrip.",
-    "who_its_for": "Adventurous travelers and those seeking a unique desert experience.",
-    "signature_experiences": "Star gazing and nature walks with Bushman trackers."
+    "signature_experiences": "Star gazing and nature walks with Bushman trackers.",
+    "who_its_for": "Adventurous travelers and those seeking a unique desert experience."
    },
    "faqs": [
     {
@@ -29324,8 +29452,8 @@
    "facts": {
     "best_months": "April to October for mild, dry weather and the best wildlife; November to March for green landscapes and summer birds.",
     "how_to_get_there": "Fly to Port Elizabeth International Airport (PLZ), then a 2-hour road transfer; private transfers and charter flights are available.",
-    "who_its_for": "Families, honeymooners, groups and solo travellers who want a private, malaria-free Big Five safari with conservation impact.",
-    "signature_experiences": "Big Five game drives, rhino and cheetah tracking, and the Kids on Safari program."
+    "signature_experiences": "Big Five game drives, rhino and cheetah tracking, and the Kids on Safari program.",
+    "who_its_for": "Families, honeymooners, groups and solo travellers who want a private, malaria-free Big Five safari with conservation impact."
    },
    "faqs": [
     {
@@ -29407,7 +29535,7 @@
     "conservation",
     "wildlife_photography"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Windhoek (WDH)",
@@ -29695,7 +29823,7 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Florence, Rome, and Pisa",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -29945,8 +30073,8 @@
    "facts": {
     "best_months": "October to April, for harvest season, outdoor dining and wine tasting.",
     "how_to_get_there": "Fly into Cape Town International (CPT), about 75 km away, around 1 hour 15 minutes by car.",
-    "who_its_for": "Couples, food and wine lovers, luxury travellers and wellness seekers who want a quiet vineyard estate.",
-    "signature_experiences": "Wine tastings, vineyard picnics and horse riding."
+    "signature_experiences": "Wine tastings, vineyard picnics and horse riding.",
+    "who_its_for": "Couples, food and wine lovers, luxury travellers and wellness seekers who want a quiet vineyard estate."
    },
    "faqs": [
     {
@@ -31455,8 +31583,8 @@
    "facts": {
     "best_months": "June to November for whale watching; December to May for quiet beaches, birding and fynbos blooms.",
     "how_to_get_there": "Fly to Cape Town (CPT) or George (GRJ), then drive 3 to 4 hours to De Hoop Nature Reserve; transfers can be arranged on request.",
-    "who_its_for": "Couples, families, solo travellers and nature lovers who want wild beaches and whale watching.",
-    "signature_experiences": "Whale watching from your room in season, guided coastal walks and fynbos botany tours."
+    "signature_experiences": "Whale watching from your room in season, guided coastal walks and fynbos botany tours.",
+    "who_its_for": "Couples, families, solo travellers and nature lovers who want wild beaches and whale watching."
    },
    "faqs": [
     {
@@ -32114,10 +32242,10 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Kasane Airport",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -32150,7 +32278,9 @@
      "body": "Best for families, multigenerational groups and friends travelling together."
     }
    ],
-   "facts": {},
+   "facts": {
+    "how_to_get_there": "Guests arrive by light aircraft transfer from Kasane Airport to the Linyanti Airstrip, followed by a game drive transfer to the camp."
+   },
    "faqs": [],
    "reviewed": true,
    "reserveChild": false,
@@ -32196,10 +32326,10 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Linyanti Airstrip",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -32233,7 +32363,9 @@
      "body": "Best for couples, small groups and returning safari-goers."
     }
    ],
-   "facts": {},
+   "facts": {
+    "how_to_get_there": "Guests arrive via a 1 hour fixed-wing flight from Maun International Airport or a 35-minute fixed-wing flight from Kasane International Airport, both landing at Linyanti Airstrip, followed by a 2 hour 30 minute game drive transfer to the camp."
+   },
    "faqs": [],
    "reviewed": true,
    "reserveChild": false,
@@ -33837,8 +33969,8 @@
    "facts": {
     "best_months": "May to September for game viewing and rhino interventions; October to April for green bush, baby animals and birding.",
     "how_to_get_there": "Fly to Thabazimbi Airstrip, then 40 to 90 minutes by road depending on the lodge; or drive from Johannesburg in about 3.5 hours.",
-    "who_its_for": "Families with young children, couples at the adults-only Mountain Lodge, and groups who want a private villa.",
-    "signature_experiences": "Water safaris on the Matlabas River, a treehouse sleep-out and hands-on rhino conservation."
+    "signature_experiences": "Water safaris on the Matlabas River, a treehouse sleep-out and hands-on rhino conservation.",
+    "who_its_for": "Families with young children, couples at the adults-only Mountain Lodge, and groups who want a private villa."
    },
    "faqs": [
     {
@@ -36223,7 +36355,7 @@
     "couples",
     "family"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Mwiba Airstrip",
@@ -38610,7 +38742,7 @@
     "honeymoon",
     "family"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.702556,
@@ -38722,7 +38854,7 @@
    "bestFor": [
     "family"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.461944,
@@ -39034,8 +39166,16 @@
    "category": "lodge",
    "tagline": "Reconnect with yourself in the rainforest, where river sounds, wildlife and Arenal Volcano create the backdrop.",
    "quote": "Reconnect with Yourself!",
-   "hero": null,
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g8"
+   ],
    "bestMonths": "December - April ",
    "bestMonthsNote": "December through April brings some of the best conditions for discovering La Fortuna, with sunnier days inviting you into the rainforest, toward Arenal Volcano, across hanging bridges and onto the river. It’s an ideal season for balancing adventure with slower moments, soaking in hot springs, wandering through the gardens, or simply listening to the forest come alive around Noah’s Forest.",
    "bestFor": [
@@ -39973,10 +40113,10 @@
     "conservation",
     "couples"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Mana Main Airstrip",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -40008,6 +40148,7 @@
    ],
    "facts": {
     "best_months": "May to September for cool, clear dry-season days; October for dramatic predator action.",
+    "how_to_get_there": "All flights land at Mana Main Airstrip with a 40-minute game drive transfer to Nyamatusi Camp.",
     "signature_experiences": "Walking safaris, canoeing on the Zambezi and sunsets over the river from camp.",
     "who_its_for": "Travellers who want an uncrowded Mana Pools safari with walking at its heart."
    },
@@ -41029,7 +41170,7 @@
     "couples",
     "luxury"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Athens (ATH)",
@@ -44444,8 +44585,8 @@
    "facts": {
     "best_months": "May to September, the dry season, when animals gather at water and sightings are easier.",
     "how_to_get_there": "Fly into Hoedspruit Eastgate Airport (HDS), about 30 km away, then a 45-minute drive or short transfer flight; Kruger Mpumalanga International (MQP) is an alternative.",
-    "who_its_for": "Honeymooners, ultra-luxury travellers, families wanting a private villa, first-time safari guests and wildlife photographers.",
-    "signature_experiences": "Big Five game drives with a highly qualified guiding team, guided bush walks and bush spa rituals."
+    "signature_experiences": "Big Five game drives with a highly qualified guiding team, guided bush walks and bush spa rituals.",
+    "who_its_for": "Honeymooners, ultra-luxury travellers, families wanting a private villa, first-time safari guests and wildlife photographers."
    },
    "faqs": [
     {
@@ -45354,7 +45495,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -47616,7 +47757,7 @@
     "lat": 33.12999,
     "lng": -107.25555
    },
-   "airport": null,
+   "airport": "El Paso International Airport (ELP) and Albuquerque International Sunport (ABQ)",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -48638,7 +48779,7 @@
     "conservation",
     "family"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -50616,7 +50757,7 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Borana Airstrip",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -51478,8 +51619,8 @@
    "facts": {
     "best_months": "The warmer months are best for swimming, boating, and enjoying Ibiza’s coast. Shoulder-season travel can suit guests seeking quieter wellness, dining, and cultural experiences.",
     "how_to_get_there": "Fly to Ibiza Airport, then continue by road to Six Senses Ibiza at Xarraca Bay on the island’s northern coast. Confirm private transfer details directly with the property.",
-    "who_its_for": "A strong fit for couples, families, solo travelers, wellness-focused guests, creative travelers, and groups seeking high-end accommodation with private residences or mansions.",
-    "signature_experiences": "RoseBar longevity programs, Six Senses Spa treatments, yoga and meditation, northern-coast boat excursions, organic farm experiences, sustainability visits, farm-to-table dining, and recording studio experiences."
+    "signature_experiences": "RoseBar longevity programs, Six Senses Spa treatments, yoga and meditation, northern-coast boat excursions, organic farm experiences, sustainability visits, farm-to-table dining, and recording studio experiences.",
+    "who_its_for": "A strong fit for couples, families, solo travelers, wellness-focused guests, creative travelers, and groups seeking high-end accommodation with private residences or mansions."
    },
    "faqs": [
     {
@@ -52566,7 +52707,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -52896,7 +53037,7 @@
     "couples",
     "conservation"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Victoria Falls Airport (VFA)",
@@ -54136,7 +54277,7 @@
     "family",
     "conservation"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -17.740559,
@@ -58013,8 +58154,8 @@
    "facts": {
     "best_months": "October to March, Cape Town's summer season.",
     "how_to_get_there": "Fly into Cape Town International (CPT), about 20 to 25 km away, 20 to 30 minutes by car depending on traffic.",
-    "who_its_for": "Art and design lovers, honeymoon couples and city explorers who want a hotel with strong architecture.",
-    "signature_experiences": "Zeitz MOCAA, the rooftop pool and harbour and Table Mountain views."
+    "signature_experiences": "Zeitz MOCAA, the rooftop pool and harbour and Table Mountain views.",
+    "who_its_for": "Art and design lovers, honeymoon couples and city explorers who want a hotel with strong architecture."
    },
    "faqs": [
     {
@@ -61945,7 +62086,7 @@
     "lat": 36.89142,
     "lng": -104.99111
    },
-   "airport": null,
+   "airport": "Denver International Airport",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -65932,9 +66073,9 @@
     "setting": null,
     "intentions": [],
     "suitability": [],
-    "status": "approved",
-    "classifiedBy": "James Papagno (21 Nov 2026, house draft approved)",
-    "classifiedAt": "2026-11-21"
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-13"
    },
    "volumes": [
     "stays",

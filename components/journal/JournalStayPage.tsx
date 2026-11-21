@@ -152,36 +152,29 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   const experienceCards = v.experiences.map((x) => { if (x.image) return x; const m = shotFor(x.title); return m ? { ...x, image: m.url, alt: m.alt } : x; }).map((x, i) => ({ x, i })).sort((p, q) => Number(!!q.x.image) - Number(!!p.x.image) || p.i - q.i).map(({ x }) => x);
   // the fuller pathway entrance, a sample on the stays listed in pathway-entrance.json
   const wow = !!pw && (pathwayEntrance as { stays: string[] }).stays.includes(s.slug);
-  const wowPhoto = inSection("exterior")[0]?.url ?? v.frames[1]?.url ?? v.frames[0]?.url ?? null;
-  const wowCss = wow ? `.journal-style main span.text-house{color:var(--jw-path-text)!important}.journal-style #rooms article,.journal-style #experiences ul.snap-x>li{border-top:3px solid var(--jw-path)}.journal-style main section#experiences.bg-white{background:linear-gradient(180deg,color-mix(in srgb,var(--jw-path) 13%,#fff),color-mix(in srgb,var(--jw-path) 6%,#fff))!important;margin-inline:-1.25rem;padding:3rem 1.25rem 2.5rem;border-top:1px solid color-mix(in srgb,var(--jw-path) 40%,#fff);border-bottom:1px solid color-mix(in srgb,var(--jw-path) 40%,#fff)}@media(min-width:768px){.journal-style main section#experiences.bg-white{margin-inline:-2.5rem;padding:4rem 2.5rem 3.5rem}}.journal-style #experiences ul.snap-x>li p.text-house{color:var(--jw-path-text)!important}` : "";
+  const wowCss = wow ? `.journal-style #journal-hero{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important}.journal-style #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.5) 0%,rgba(26,24,22,.05) 28%,color-mix(in srgb,var(--jw-path) 30%,transparent) 60%,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 100%)!important}.journal-style #record-bar{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important;border-top-color:color-mix(in srgb,var(--jw-path) 70%,#fff)!important}.jw-hero-stamp{opacity:.9;animation:jw-stamp-in .9s cubic-bezier(.2,.9,.3,1.15) .5s both,jw-stamp-drift 7s ease-in-out 1.6s infinite alternate}@keyframes jw-stamp-in{0%{opacity:0;transform:scale(1.5) rotate(12deg)}55%{opacity:1;transform:scale(.96) rotate(-1deg)}100%{opacity:.9;transform:scale(1) rotate(0)}}@keyframes jw-stamp-drift{from{transform:translateY(0) rotate(0)}to{transform:translateY(3px) rotate(.8deg)}}@media(prefers-reduced-motion:reduce){.jw-hero-stamp{animation:none}}` : "";
   return (
     <div className={`journal-style bg-white ${pwScope}`}>
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
       <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style{background-color:color-mix(in srgb,var(--jw-path) 4%,#fff)!important}.journal-style main,.journal-style main section.bg-white,.journal-style main header.bg-white{background-color:transparent!important}.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}${wowCss}`}</style>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip bg-white">
-        <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
+        <div className="relative">
+          <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
           film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" photoCount={v.photos.length} />
+          {pw && wow && <div aria-hidden className="jw-hero-stamp pointer-events-none absolute right-4 md:right-10 top-[calc(var(--jw-header-h)+3.5rem)] md:top-[calc(var(--jw-header-h)+2.5rem)] z-20"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div>}
+        </div>
         {pw && !wow && <div aria-hidden className="h-1 bg-pathway" />}
-        {pw && wow && (
-          <section aria-label={`Wild Pathways: ${pw.primary.name}`} className="relative isolate overflow-visible">
-            {wowPhoto && <div aria-hidden className="absolute inset-0 -z-20 bg-cover bg-center" style={{ backgroundImage: `url(${wowPhoto})` }} />}
-            <div aria-hidden className="absolute inset-0 -z-10" style={{ background: "linear-gradient(160deg, color-mix(in srgb, var(--jw-path) 94%, #000) 0%, color-mix(in srgb, var(--jw-path) 80%, transparent) 55%, color-mix(in srgb, var(--jw-path) 58%, transparent) 100%)" }} />
-            <div className="max-w-ledger mx-auto px-5 md:px-10 pt-28 pb-10 md:pt-14 md:pb-14 md:flex md:items-end md:justify-between md:gap-10">
-              <div className="absolute right-4 md:right-10 -top-12 md:-top-16 rotate-[5deg] bg-white p-2 shadow-[0_10px_30px_rgb(0_0_0_/_0.35)]"><PathwayStamp id={pw.primary.id} size={132} rotate={0} /></div>
-              <div className="max-w-2xl text-white">
-                <p className="font-mono text-[10.5px] tracking-[0.26em] uppercase text-white/80">Wild Pathways · {pw.primary.setting}</p>
-                <p className="mt-3 font-display italic text-[46px] md:text-[64px] leading-[0.95]">{pw.primary.name}</p>
-                <p className="mt-4 text-[15.5px] leading-relaxed text-white/90">{pw.primary.line}</p>
-                <p className="mt-5 font-hand text-[24px] text-white">{s.name} sits on this pathway.</p>
-              </div>
-              <Link href={pathwayHref(pw.primary.key)} className="mt-7 md:mt-0 inline-flex items-center gap-3 border border-white/70 px-5 py-3 font-mono text-[10.5px] tracking-[0.22em] uppercase text-white hover:bg-white/10">Follow the pathway <span aria-hidden>→</span></Link>
-            </div>
-            <div aria-hidden className="h-10" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 30%, #fff), color-mix(in srgb, var(--jw-path) 4%, #fff))" }} />
-          </section>
-        )}
+        {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
+          {pw && wow && (
+            <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-5 flex flex-wrap items-center gap-x-6 gap-y-3" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 16%, #fff), transparent)" }}>
+              <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
+              <p className="font-display italic text-[22px] leading-tight text-graphite">{pw.primary.name}. <span className="not-italic font-sans text-[14px] text-stone-text">{pw.primary.line}</span></p>
+              <PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} />
+            </div>
+          )}
           {pw && !wow && (
             <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-7 flex flex-wrap items-center gap-x-8 gap-y-4" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 20%, #fff) 0%, color-mix(in srgb, var(--jw-path) 9%, #fff) 55%, transparent 100%)" }}>
               <PathwayStamp id={pw.primary.id} size={150} rotate={-3} />

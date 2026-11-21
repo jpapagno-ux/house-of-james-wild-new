@@ -327,5 +327,1276 @@
       }
     },
     "extra": []
+  },
+  "the-art-villa": {
+    "describe": {
+      "9a44dceae_95aa4624e_6931ff6a5dd754fcdc13243b_3_4-1": {
+        "alt": "The villa and its pool below the rainforest at The Art Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "9ca055046_03dbd50c9_6a183d40ab51cfb24810ba24_Formafatal_ArtVillas_Atelier_BoysPlayNice_44": {
+        "alt": "A deck chair beside the pool and the villa's rust steel wall at The Art Villa, Costa Rica",
+        "section": "pool"
+      },
+      "fd9935e20_764516192_6a183d400624d039fd146c1b_Formafatal_ArtVillas_Atelier_BoysPlayNice_60": {
+        "alt": "The raised concrete pool against the forest at The Art Villa, Costa Rica",
+        "section": "pool"
+      },
+      "a6b543346_ced3918a6_6a183d407e01cbae8bf0d74c_3_4-15": {
+        "alt": "The roof line against the forested hills at The Art Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "ab1cc35e4_16df1b27a_6a183d027db7a603d725eb9a_4_3-3": {
+        "alt": "The villa's open front and steps at The Art Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "hero": {
+        "alt": "The pool and the villa in the forest from the air at The Art Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "Sunset over the Pacific from the terrace at The Art Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The low concrete roof at dusk at The Art Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The covered entrance court at The Art Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "The open living room under the concrete roof at The Art Villa, Costa Rica",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "The pool and terrace at dusk at The Art Villa, Costa Rica",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "The pool edge against the green hills at The Art Villa, Costa Rica",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "The open living room with blue sofas at The Art Villa, Costa Rica",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A bedroom with a king bed and patterned floor tiles at The Art Villa, Costa Rica",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A bedroom in dark blue at night at The Art Villa, Costa Rica",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "A bedroom with a hanging plant and a forest window at The Art Villa, Costa Rica",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "the-atelier-villa": {
+    "describe": {
+      "56cf3ba95_dd7be0bfc_6931ff6a5dd754fcdc13243b_3_4-1": {
+        "alt": "The villa and its pool below the rainforest at The Atelier Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "hero": {
+        "alt": "The villa's green roof in the forest at The Atelier Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The villa on its hillside among the trees at The Atelier Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The roof line and the terrace daybeds at The Atelier Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The pool beside the open living room at The Atelier Villa, Costa Rica",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "The pool and the timber deck at The Atelier Villa, Costa Rica",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "The dining table under the open roof at The Atelier Villa, Costa Rica",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "The villa's open front and steps at The Atelier Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "The villa's rust steel front on the hillside at The Atelier Villa, Costa Rica",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A bedroom with twin beds and painted panels at The Atelier Villa, Costa Rica",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "The pool and dining terrace at dusk at The Atelier Villa, Costa Rica",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "The dining table and kitchen at night at The Atelier Villa, Costa Rica",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "blancaneaux-lodge": {
+    "describe": {
+      "hero": {
+        "alt": "Privassion Creek and the lodge in the pine forest from the air at Blancaneaux Lodge, Belize",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The pool from above at Blancaneaux Lodge, Belize",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A thatched cabana with its plunge pool at Blancaneaux Lodge, Belize",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "An outdoor stone shower at Blancaneaux Lodge, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A cabana living room under a thatched roof at Blancaneaux Lodge, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A guest under an umbrella beside the creek at Blancaneaux Lodge, Belize",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "Horses grazing among the pines at Blancaneaux Lodge, Belize",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "Baskets of produce from the organic garden at Blancaneaux Lodge, Belize",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "The bar with framed photographs at Blancaneaux Lodge, Belize",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "Stone steps through the gardens at Blancaneaux Lodge, Belize",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A waterfall and pool in the Mountain Pine Ridge at Blancaneaux Lodge, Belize",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "blue-reef": {
+    "describe": {
+      "hero": {
+        "alt": "The beach and palms from the air at Blue Reef Beach Resort, Belize",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "The peninsula and pier from the air at Blue Reef Beach Resort, Belize",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A villa living room with a painted mural at Blue Reef Beach Resort, Belize",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A dining table by the windows facing the sea at Blue Reef Beach Resort, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A villa living room with a blue door at Blue Reef Beach Resort, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "The pier and its thatched palapa from the air at Blue Reef Beach Resort, Belize",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "The dining room with rattan chairs at Blue Reef Beach Resort, Belize",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "The pool and loungers from above at Blue Reef Beach Resort, Belize",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A slice of pie on a plate at Blue Reef Beach Resort, Belize",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "Plates of fish and salad on a green table at Blue Reef Beach Resort, Belize",
+        "section": "dining"
+      },
+      "g10": {
+        "alt": "A bedroom with a king bed and blue shutters at Blue Reef Beach Resort, Belize",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "coco-plum-island-resort": {
+    "describe": {
+      "hero": {
+        "alt": "A guest on the veranda of an overwater cabana at Coco Plum Island Resort, Belize",
+        "section": "rooms"
+      },
+      "g1": {
+        "alt": "A hammock on a cabana veranda above the sea at Coco Plum Island Resort, Belize",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "The island and its reef from the air at Coco Plum Island Resort, Belize",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "A cabana bedroom with a king bed at Coco Plum Island Resort, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "The overwater cabanas from the air at Coco Plum Island Resort, Belize",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "Two snorkellers holding starfish in the shallows at Coco Plum Island Resort, Belize",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "Two hosts walking the pier with drinks at Coco Plum Island Resort, Belize",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "Two loungers under an umbrella by the sea at Coco Plum Island Resort, Belize",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "Yoga mats on an overwater deck at Coco Plum Island Resort, Belize",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A thatched palapa on the beach at Coco Plum Island Resort, Belize",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "The beach and palms from the water at Coco Plum Island Resort, Belize",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "hidden-valley-lodge": {
+    "describe": {
+      "hero": {
+        "alt": "The pine forest at sunrise from the air at Hidden Valley Lodge, Belize",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The lodge in the forest from the air at Hidden Valley Lodge, Belize",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The estate's roads and roofs from above at Hidden Valley Lodge, Belize",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "A guest in a plunge pool beside a suite at Hidden Valley Lodge, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A suite sun room with a bathtub at Hidden Valley Lodge, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A plunge pool above the forest at Hidden Valley Lodge, Belize",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "Two guests looking over the forest from a deck at Hidden Valley Lodge, Belize",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "A swimmer below a waterfall at Hidden Valley Lodge, Belize",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "A waterfall through the mist from the air at Hidden Valley Lodge, Belize",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "The fire pit and bar at night at Hidden Valley Lodge, Belize",
+        "section": "dining"
+      },
+      "g10": {
+        "alt": "A cottage among palms at Hidden Valley Lodge, Belize",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "jaguar-reef-lodge": {
+    "describe": {
+      "hero": {
+        "alt": "A guest with a drink at the pool bar at The Lodge at Jaguar Reef, Belize",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A bedroom with two beds at The Lodge at Jaguar Reef, Belize",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A bedroom opening onto a plunge pool at The Lodge at Jaguar Reef, Belize",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A suite with a four-poster bed and sofa at The Lodge at Jaguar Reef, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A suite sitting room with rattan lamps at The Lodge at Jaguar Reef, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A guest at the overwater bar at The Lodge at Jaguar Reef, Belize",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "Two guests at the overwater bar at The Lodge at Jaguar Reef, Belize",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "The overwater bar and its stairs to the sea at The Lodge at Jaguar Reef, Belize",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "Kayaks on the beach from above at The Lodge at Jaguar Reef, Belize",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A paddleboarder over the reef from above at The Lodge at Jaguar Reef, Belize",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A cocktail and sunglasses by the pool at The Lodge at Jaguar Reef, Belize",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "ka-ana-resort": {
+    "describe": {
+      "hero": {
+        "alt": "A villa's private pool and daybed at Ka'ana Resort, Belize",
+        "section": "rooms"
+      },
+      "g1": {
+        "alt": "A couple walking beside the pool at Ka'ana Resort, Belize",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A villa terrace with loungers and a plunge pool at Ka'ana Resort, Belize",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A villa seen through a timber gate at Ka'ana Resort, Belize",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A bedroom with a striped throw at Ka'ana Resort, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A bedroom with a carved timber headboard at Ka'ana Resort, Belize",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A plunge pool in a walled garden at Ka'ana Resort, Belize",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "Tables in the garden restaurant at Ka'ana Resort, Belize",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "The garden restaurant under the trees at Ka'ana Resort, Belize",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "A guest reading on a pool lounger at Ka'ana Resort, Belize",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A candlelit dinner in the garden at Ka'ana Resort, Belize",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "matachica-resort-and-spa": {
+    "describe": {
+      "hero": {
+        "alt": "An orange casita with a thatched roof at Matachica Resort & Spa, Belize",
+        "section": "rooms"
+      },
+      "g1": {
+        "alt": "The beach and pier from the air at Matachica Resort & Spa, Belize",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A thatched casita with a hammock on its porch at Matachica Resort & Spa, Belize",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "The white villa beside the pool at Matachica Resort & Spa, Belize",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A guest on a villa balcony above the pool at Matachica Resort & Spa, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A guest reading beside the round pool at Matachica Resort & Spa, Belize",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "The rooftop terrace and pergola above the sea at Matachica Resort & Spa, Belize",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "Woven cushions on a daybed at Matachica Resort & Spa, Belize",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A villa living room with a painted mural at Matachica Resort & Spa, Belize",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "The restaurant under a thatched roof at Matachica Resort & Spa, Belize",
+        "section": "dining"
+      },
+      "g10": {
+        "alt": "A red casita with a thatched roof at Matachica Resort & Spa, Belize",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "sleeping-giant-rainforest-lodge": {
+    "describe": {
+      "hero": {
+        "alt": "Two guests walking below a treehouse at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "A bedroom with a king bed and stone wall at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A suite with a vaulted timber ceiling at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A suite with a sofa and garden doors at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A suite bedroom with a sitting area at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A bedroom with a carved timber bed at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A suite with a swing seat by the windows at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A screened veranda with rattan chairs at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "The lodge buildings in the forest from the air at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A guest looking over the valley and mountains at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "The pool in the forest from above at The Rainforest Lodge at Sleeping Giant, Belize",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "st-george-s-caye-resort": {
+    "describe": {
+      "hero": {
+        "alt": "The pier and its pavilion at sunset at St. George's Caye Resort, Belize",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The overwater cabanas from the air at St. George's Caye Resort, Belize",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A thatched cabana lit at dusk at St. George's Caye Resort, Belize",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A thatched cabana in the gardens at St. George's Caye Resort, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "The main lodge building at St. George's Caye Resort, Belize",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "The caye and its lagoon from above the palms at St. George's Caye Resort, Belize",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A thatched cabana among palms at St. George's Caye Resort, Belize",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A plate of grilled fish at St. George's Caye Resort, Belize",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "A wedding couple on the beach at St. George's Caye Resort, Belize",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A beach fire and a sailboat at dusk at St. George's Caye Resort, Belize",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A thatched palapa on the beach at St. George's Caye Resort, Belize",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "thatch-caye-resort": {
+    "describe": {
+      "hero": {
+        "alt": "The overwater bungalows from the sea at Thatch Caye Resort, Belize",
+        "section": "rooms"
+      },
+      "g1": {
+        "alt": "The island and an overwater bungalow from the air at Thatch Caye Resort, Belize",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A palapa at the end of the sea wall from above at Thatch Caye Resort, Belize",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The island and its bungalows across the water at Thatch Caye Resort, Belize",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "The beach and dock from above at Thatch Caye Resort, Belize",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "The island and its reef from the air at Thatch Caye Resort, Belize",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A guest at a veranda rail above the sea at Thatch Caye Resort, Belize",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A guest on a bungalow veranda at Thatch Caye Resort, Belize",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "Overwater hammocks beside a palapa at Thatch Caye Resort, Belize",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "The swimming area and dock from above at Thatch Caye Resort, Belize",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "The island team on the dock at Thatch Caye Resort, Belize",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "the-lodge-at-chaa-creek": {
+    "describe": {
+      "hero": {
+        "alt": "Performers in Maya dress beside a fire at The Lodge at Chaa Creek, Belize",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "A cottage bedroom with a four-poster bed at The Lodge at Chaa Creek, Belize",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "Chocolate, cacao and fruit on a woven cloth at The Lodge at Chaa Creek, Belize",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "A table of carved fruit at The Lodge at Chaa Creek, Belize",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "An open vehicle on a forest track above the valley at The Lodge at Chaa Creek, Belize",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "A swimmer in a cave pool at The Lodge at Chaa Creek, Belize",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "A Maya temple above the forest from the air at The Lodge at Chaa Creek, Belize",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "The infinity pool and loungers at The Lodge at Chaa Creek, Belize",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "The lounge under a timber roof at The Lodge at Chaa Creek, Belize",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "Maya ruins at Tikal at The Lodge at Chaa Creek, Belize",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A Maya temple in the forest from the air at The Lodge at Chaa Creek, Belize",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "turtle-inn": {
+    "describe": {
+      "hero": {
+        "alt": "The peninsula and beach from the air at Turtle Inn, Belize",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A garden path between palms at Turtle Inn, Belize",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The pool and thatched pavilion at Turtle Inn, Belize",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "Thatched cottages on the beach at Turtle Inn, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A thatched cottage lit at dusk at Turtle Inn, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A cottage under a large banyan tree at Turtle Inn, Belize",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A thatched cottage in the gardens at Turtle Inn, Belize",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "The pool and loungers under thatch at Turtle Inn, Belize",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "The pool and umbrellas among palms at Turtle Inn, Belize",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "A carved daybed under flowering vines at Turtle Inn, Belize",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A thatched cottage and palms on the beach at Turtle Inn, Belize",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "umaya-resort-and-marina": {
+    "describe": {
+      "hero": {
+        "alt": "The pool and thatched bar by the beach at Umaya Resort & Adventures, Belize",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A villa dining room and living room at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A villa living room with white doors at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A villa living room with a sofa and sea doors at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A veranda with white arches facing the lagoon at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A villa dining table and living room at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "The lagoon from an arched veranda at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "Palms and the sea from an arched veranda at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A villa living room opening to the veranda at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A villa kitchen at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "A chair on an arched veranda above the beach at Umaya Resort & Adventures, Belize",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "xanadu-island-resort": {
+    "describe": {
+      "hero": {
+        "alt": "The beach and thatched buildings at Xanadu Island Resort, Belize",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "The pool among palms at Xanadu Island Resort, Belize",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A host behind the bar at Xanadu Island Resort, Belize",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "The sea from a thatched veranda at Xanadu Island Resort, Belize",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A wedding couple at sunset at Xanadu Island Resort, Belize",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "A suite dining table and kitchen at Xanadu Island Resort, Belize",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "Loungers along the pool at Xanadu Island Resort, Belize",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "Palapas on the beach and the pier at Xanadu Island Resort, Belize",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "The beach and the pier's palapa at Xanadu Island Resort, Belize",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "Guests in the pool under the palms at Xanadu Island Resort, Belize",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "The pool and loungers in the gardens at Xanadu Island Resort, Belize",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "lapa-rios-lodge": {
+    "describe": {
+      "b9592cd63_9c4b191c5_697c95f55345b812fe4cbb48_Lapa-Rios": {
+        "alt": "A bungalow and its deck in the rainforest at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "697c9842e81833c925aa3afc_PremierVilla-1.jpg": {
+        "alt": "A bungalow deck with loungers above the ocean at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "697c98471ddf476165f2f8e5_PremierVillas2.jpg": {
+        "alt": "A bungalow bedroom with a canopied bed at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "697c984797d0b032699fde29_PremierVillas13.jpg": {
+        "alt": "A bungalow bathroom with twin basins at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "697c9847832cdfbb26e2055c_PremierVillas15.jpg": {
+        "alt": "A daybed and round table on a bungalow deck at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "hero": {
+        "alt": "The lodge roofs in the rainforest above the Golfo Dulce at Lapa Rios Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A bungalow and its deck among the trees at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "Loungers on a bungalow deck above the ocean at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A garden path through the rainforest at Lapa Rios Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A villa terrace with a plunge pool at dusk at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A villa bedroom with a king bed at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "The rainforest canopy at Lapa Rios Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "Guests riding horses along a track at Lapa Rios Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "Guests with a guide outside the lodge at Lapa Rios Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "The coast and river mouth from the air at Lapa Rios Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A villa lounge open to the ocean at Lapa Rios Lodge, Costa Rica",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "nayara-gardens": {
+    "describe": {
+      "356ed0eb6_7e9d9df78_68536661a63c889514f5ad56_Aerial-NayaraResortSpaandGardens-CostaRica-CRHotel": {
+        "alt": "The resort roofs in the rainforest at Nayara Gardens, Costa Rica",
+        "section": "exterior"
+      },
+      "7d4b82d22_ad15dfd73_6a350f644340b50bc731a477_d5ac07fe": {
+        "alt": "A window seat facing the garden at Nayara Gardens, Costa Rica",
+        "section": "rooms"
+      },
+      "659803932_528d1da49_6a350f62e16a19b5fb968e6c_7c7f0472": {
+        "alt": "A casita terrace with a plunge pool at Nayara Gardens, Costa Rica",
+        "section": "rooms"
+      },
+      "b09745625_884285c6e_6a350f67c039057ad72e7542_eda80ea5": {
+        "alt": "A casita bedroom with a canopied bed at Nayara Gardens, Costa Rica",
+        "section": "rooms"
+      },
+      "hero": {
+        "alt": "A walkway through the rainforest at dusk at Nayara Gardens, Costa Rica",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The pool with Arenal Volcano behind at Nayara Gardens, Costa Rica",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A casita bedroom with a canopied bed and red cushions at Nayara Gardens, Costa Rica",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A hammock and plunge pool on a casita deck at Nayara Gardens, Costa Rica",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A plunge pool under a casita's timber roof at Nayara Gardens, Costa Rica",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A casita lit at dusk with its plunge pool at Nayara Gardens, Costa Rica",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A guest on a casita deck facing the volcano at Nayara Gardens, Costa Rica",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "Umbrellas and a hot tub below Arenal Volcano at Nayara Gardens, Costa Rica",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A boardwalk over the lily ponds at Nayara Gardens, Costa Rica",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "The pool and umbrellas from above at Nayara Gardens, Costa Rica",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "Hot spring pools in the forest from above at Nayara Gardens, Costa Rica",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "arenal-springs-camp-by-nayara": {
+    "describe": {
+      "0f51b6743_0a26a5a99_6875d5616d30fc4f9eef2e66_6853672ce9dad04c6a2a841c_Nayara_2520Springs_Cielito_252.": {
+        "alt": "The pool seen through heliconia leaves at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "pool"
+      },
+      "hero": {
+        "alt": "A guest in a plunge pool in the rainforest at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "Arenal Volcano above the forest at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A tent and its plunge pool among the trees at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A tent bedroom with a canopied bed and chandelier at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A bed with a carved headboard at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A tent bathroom seen through blue doors at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A tent bedroom with a chandelier at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "The camp below Arenal Volcano from the air at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "The tents in the rainforest from above at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A hanging bridge through the forest at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A guest on a walkway through the rainforest at Arenal Springs Camp by Nayara, Costa Rica",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "nayara-tented-camp": {
+    "describe": {
+      "e8df2c2e3_bf665885c_6a1f3d748a1e0715bb30166b_6a14bb2dbd7f9a491f3beefd_our-resorts-gardens-h-1jpg": {
+        "alt": "Two tents and a plunge pool in the rainforest from above at Nayara Tented Camp, Costa Rica",
+        "section": "exterior"
+      },
+      "69a678699_62f139cf5_6a3534904706410b85c4422d_a4c499c2": {
+        "alt": "A tent's plunge pool facing Arenal Volcano at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "1d903eebb_c72ad729e_6a3534971cf47d89bba51887_d746c634": {
+        "alt": "A tent living room under a timber roof at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "9c783a0b9_715a2d2ef_6a3534925fc639a7970696ee_8a9e7a67": {
+        "alt": "A tent sitting room with forest windows at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "5dc13ca4e_c339c415e_6a35349ec71d7a486689e451_b09342b0": {
+        "alt": "A tent bedroom with a canopied bed at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "hero": {
+        "alt": "A guest on the edge of the infinity pool at Nayara Tented Camp, Costa Rica",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A tent lit at sunset in the forest at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "The spring-fed pools and loungers at Nayara Tented Camp, Costa Rica",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "Arenal Volcano above the camp at Nayara Tented Camp, Costa Rica",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A tent among the trees at dusk at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A tent deck and plunge pool facing the volcano at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A tent bedroom with a canopied bed and garden doors at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A tent bathroom with a freestanding tub at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A tent bathroom with framed prints at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A tent bedroom with a canopied bed and green headboard at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "An outdoor shower with green tiles at Nayara Tented Camp, Costa Rica",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "pacuare-lodge": {
+    "describe": {
+      "d02af815f_0f00d8d4b_697cca3f921f492eb4bcd58d_canopy-suite-aerial-view": {
+        "alt": "The lodge buildings in the rainforest from above at Pacuare Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "2fb432d1f_33c53028f_697cca3ab935e1a24a7882ab_canopy-suite": {
+        "alt": "The forest canopy and a suite roof from above at Pacuare Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "324fcaac2_98e6f966c_697cc97f1a0de2abc8be6e65_jaguar-villa": {
+        "alt": "A suite deck and plunge pool at Pacuare Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "d30cacabf_002369afa_697cc89a28f3c62eb3616205_linda-vista-suite": {
+        "alt": "A plunge pool above the river valley at Pacuare Lodge, Costa Rica",
+        "section": "pool"
+      },
+      "5df5ae751_0a5753300_697cc7eef803dba34e707653_River-Suite-laybed": {
+        "alt": "Two loungers on a suite deck facing the forest at Pacuare Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "pacuare-lodge-canopy-aerial": {
+        "alt": "The lodge roofs in the canopy from above at Pacuare Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A guest on a zip line through the canopy at Pacuare Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "Rafts in the Pacuare River canyon at Pacuare Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "A guest rappelling in the forest at Pacuare Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g4": {
+        "alt": "The thatched roof of the main lodge from inside at Pacuare Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "The main lodge building among the trees at Pacuare Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "Thatched buildings in a forest clearing at Pacuare Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "The spa platforms in the gardens at Pacuare Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "A guest at the edge of the pool at Pacuare Lodge, Costa Rica",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "A treetop platform in the canopy from above at Pacuare Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A hanging bridge to a suite at Pacuare Lodge, Costa Rica",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "senda-monteverde-lodge": {
+    "describe": {
+      "c6d307bd2_a9c870409_6a3c14df1aa3fb323db7506e_DJI_0312copy-scaled": {
+        "alt": "The hot pools and a suite in the cloud forest from above at Senda Monteverde Lodge, Costa Rica",
+        "section": "pool"
+      },
+      "0b85569aa_22d0a67f6_6a3c15555bc1a5f0646befa0_10-Experience-Learn-Connect-_-Relax": {
+        "alt": "Two guests on the terrace of the main lodge at Senda Monteverde Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "4283d16a6_c5c90f7ae_6a3c1555df0c3f2d004199b8_23-Room-to-Relax": {
+        "alt": "A guest on a suite balcony above the forest at Senda Monteverde Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "cf87ec4de_29a7ce55b_6a3c1555b41ee5d11f6e7af5_28-A-Place-to-Unwind": {
+        "alt": "A guest with a coffee on a suite balcony at Senda Monteverde Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "cb713da7a_f961c2e03_6a3c155578b6a51b409e082e_7-Watch-the-Clouds-Blow-By": {
+        "alt": "The cloud forest from a suite balcony at Senda Monteverde Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "hero": {
+        "alt": "The suites and hot pools in the forest from above at Senda Monteverde Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A green vine snake on a branch at Senda Monteverde Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "Two guests with a host at the bar at Senda Monteverde Lodge, Costa Rica",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "A guide with a spotting scope in the forest at Senda Monteverde Lodge, Costa Rica",
+        "section": "experiences"
+      },
+      "g4": {
+        "alt": "A guest drinking at sunset on a balcony at Senda Monteverde Lodge, Costa Rica",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "The fire pit and terrace at dusk at Senda Monteverde Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "The restaurant terrace above the forest at Senda Monteverde Lodge, Costa Rica",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "The restaurant dining room at Senda Monteverde Lodge, Costa Rica",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "The hills of Monteverde at sunset at Senda Monteverde Lodge, Costa Rica",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A table set on a balcony at Senda Monteverde Lodge, Costa Rica",
+        "section": "dining"
+      },
+      "g10": {
+        "alt": "The forest canopy from a balcony at Senda Monteverde Lodge, Costa Rica",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "tabacon-thermal-resort-spa": {
+    "describe": {
+      "b7955e5bc_8dd852bd3_6a738de121f7657770e2252a_3-hotel-aerial": {
+        "alt": "The resort in the rainforest from above at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "exterior"
+      },
+      "e44e10d48_904ff7331_6a738e8ec6417882681f9c49_honeymoon-suite-with-plunge-pool": {
+        "alt": "A suite terrace with a plunge pool at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "rooms"
+      },
+      "8a30403bd_ef36a0a81_6a738bfe2d83b9e061ca7f1a_Volcano_20View_20Suite_202": {
+        "alt": "A guest beside a freestanding tub on a balcony at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "rooms"
+      },
+      "f1808c57b_c9709605f_6a738d3a2d83b9e061cb4eb4_Orchid_20Room_20Two_20Queen_20Beds_202": {
+        "alt": "A suite bathroom and bedroom at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "rooms"
+      },
+      "3b6669f0e_19ec8f81b_6a738cd093abf3527ffab2e6_Orchid_20Room_20King_20Bed_203": {
+        "alt": "A table by a forest window at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "rooms"
+      },
+      "hero": {
+        "alt": "A thermal pool in the gardens from above at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "Arenal Volcano above the forest at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A bedroom with a king bed at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "Arenal Volcano and the lake at sunrise at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A bedroom with a four-poster bed at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A bedroom with a four-poster bed and desk at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A freestanding tub on a covered balcony at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "The thermal river and cascades in the gardens at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A guest sitting on a thermal cascade at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "A waterfall in the thermal gardens at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A spa bungalow with a round hot tub at Tabacón Thermal Resort & Spa, Costa Rica",
+        "section": "experiences"
+      }
+    },
+    "extra": []
   }
 }

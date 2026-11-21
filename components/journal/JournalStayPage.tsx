@@ -125,6 +125,8 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   const roomNames = rates ? rates.rooms.map((r) => r.name) : v.roomData?.rooms.map((r) => r.name) ?? [];
   const strip = (k: SectionKey, label: string) => { const list = inSection(k); return list.length ? <PhotoStrip tab={k} photos={list.map((p) => ({ url: p.url, alt: p.alt }))} total={list.length} label={label} /> : null; };
 
+  // experience cards with no photograph of their own take one from the stay's described photographs, in turn
+  const expShots = [...inSection("experiences"), ...inSection("pool"), ...inSection("exterior")];
   return (
     <div className={`journal-style bg-white ${pwScope}`}>
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
@@ -175,9 +177,9 @@ export default function JournalStayPage({ slug }: { slug: string }) {
               footnote={`Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
-            <JournalExperiences no={N.exp} slug={s.slug} items={v.experiences} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
+            <JournalExperiences no={N.exp} slug={s.slug} items={v.experiences.map((x, i) => (x.image || !expShots.length ? x : { ...x, image: expShots[i % expShots.length].url, alt: expShots[i % expShots.length].alt }))} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
 
-            <JournalDetail no={N.detail} features={features} reasons={reasons}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>
+            <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>
 
             <JournalOffers no={N.offers} name={s.name} offers={offerRows} applyHref="#reserve" />
 

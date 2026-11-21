@@ -14,6 +14,10 @@
   "daunara-safari-camp": {
    "hide": true,
    "note": "James, 2026-11-20: duplicate of Dulini Daunara (STY-2026-563352), the same camp under its operator's current name. Page retired; /stays/daunara-safari-camp redirects to /stays/dulini-daunara-lodge."
+  },
+  "blue-reef": {
+   "hide": true,
+   "note": "James, 2026-11-21: Blue Reef Beach Resort comes off the site; Blue Reef Island (bluereefisland.com) is to be added as a new stay in its place. /stays/blue-reef redirects to the Belize page until the new stay has its own page."
   }
  }
 }

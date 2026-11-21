@@ -10,6 +10,8 @@ export type WideFilm =
 
 export const STAY_FILMS: Record<string, WideFilm> = {
   // Casali di Casole's own estate film (47 s, 1080p) from casalidicasole.com, full screen for James's presentation (12 Nov 2026).
+  // Sugar Beach's own film (29 s, 1080p) from viceroyhotelsandresorts.com/sugar-beach (James, 21 Nov 2026: "use video"), full screen.
+  "sugar-beach-viceroy": { kind: "mp4", src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/st-lucia/sugar-beach-viceroy/film.mp4`, srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/st-lucia/sugar-beach-viceroy/film.mp4`, poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/st-lucia/sugar-beach-viceroy/film.jpg`, title: "Sugar Beach, A Viceroy Resort, between the Pitons, Saint Lucia", credit: "Film courtesy of Sugar Beach, A Viceroy Resort", hero: true },
   // Wymara's own resort film (97 s, 1080p) from wymara.com (13 Nov 2026).
   wymara: {
     kind: "mp4",

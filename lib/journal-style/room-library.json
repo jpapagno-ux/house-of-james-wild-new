@@ -1,0 +1,884 @@
+{
+ "_note": "JWC-STYLE-01. Room names, facts, features and photographs for the journal stay page, read from the house Intelligence Library (Base44, Room records) on 20 Nov 2026. Photographs are the old house site's own files (the brand's photographs). No rate is taken from here. 'aliases' maps a rate-card room name to the library's name for the same room.",
+ "aguas-claras": {
+  "rooms": [
+   {
+    "name": "Pavlova Suites",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King Bed",
+     "30 sq m (323 sq ft)"
+    ],
+    "lede": "Modern yet full of charm, each individually curated suite is a vibrant mix of local artistry, reclaimed treasures, and handmade touches. Designed with an open, airy feel, these 40 sq m (430 sq ft) spaces offer a stylish bohemian retreat, perfect for those spending their days exploring Puerto Viejo or unwinding by the beach.",
+    "features": [
+     "Free Daily Breakfast",
+     "Pillowtop bed",
+     "Egyptian cotton linens",
+     "Hypo-allergenic bedding",
+     "Soundproofed rooms",
+     "Turndown service",
+     "Private Bathroom",
+     "Veranda",
+     "Daily Housekeeping",
+     "Laptop-Sized Safe",
+     "Free High-Speed WIFI",
+     "Complimentary Local + International Calls"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697a91dc97eb2c210886a60b_98e00a9e.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6801d3a327d1495f8afcfea2_Bitzu_0034.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d3d69398019d554c8666_pavlova_sweets.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d3d6b4d21e78ccdc1bb1_queenston043.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d442c20c9324b9ff9fee_belafonte_1.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d442a3b3b54c75729869_chiquita_alta_007.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "2-Bedroom Luxury Bungalow",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "1 King-Bed & 2 Single-Beds"
+    ],
+    "lede": "Perfect for couples traveling together or families craving space, these 76 sq.m (820 sq.ft) bungalows blend Caribbean charm with eclectic design. Enjoy a seamless indoor-outdoor living experience, where privacy, relaxation, and inspiration come naturally in this vibrant Puerto Viejo retreat.",
+    "features": [
+     "Free Daily Breakfast",
+     "Pillowtop bed",
+     "Egyptian cotton linens",
+     "Hypo-allergenic bedding",
+     "Soundproofed rooms",
+     "Turndown service",
+     "Separate bedroom",
+     "Full Bathroom",
+     "Veranda",
+     "Private plunge pool",
+     "Daily Housekeeping",
+     "Laptop-Sized Safe",
+     "Free High-Speed WIFI",
+     "Complimentary Local + International Calls"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697a924e070ca9d6530fd4f9_4201db72.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835b8944893b574e8b9dd88_Coral_0049.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d98191942a7fb1e67bae_casacoral.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835b76eb7bd07f019cffae1_Coral_0035.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d981ff1994c95aee134f_casacoral-bedroom.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835b7904f19ca72cd441334_Coral_0001.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "2-Bedroom Deluxe Bungalow",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "1 King + 2 Singles (convertible to King), 2 en-suite bathrooms",
+     "74 sq m (798 sq ft)"
+    ],
+    "lede": "Here, luxury meets a touch of whimsy. The 2-Bedroom Deluxe Bungalows draw inspiration from traditional Caribbean houses, creating a uniquely enchanting experience.",
+    "features": [
+     "Free Daily Breakfast",
+     "Pillowtop bed",
+     "Egyptian cotton linens",
+     "Hypo-allergenic bedding",
+     "Soundproofed rooms",
+     "Turndown service",
+     "Separate bedroom",
+     "Full Bathroom",
+     "Veranda",
+     "Private plunge pool",
+     "Daily Housekeeping",
+     "Laptop-Sized Safe",
+     "Free High-Speed WIFI",
+     "Complimentary Local + International Calls"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697a929bc70c0d6eb25a948b_adcaa839.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d8479c10f4d10a603e45_ewa_0076.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d84878e56ba124ff4b6b_bitzu_0025.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6801d3a327d1495f8afcfea2_Bitzu_0034.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6801d3a2265694d1505f190f_Bitzu_0041.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6801d3a3929cce4f8eea3702_Bitzu_0017.avif"
+    ],
+    "plungePool": true
+   },
+   {
+    "name": "1-Bedroom Bungalow",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King or 2 Singles",
+     "50 sq m (540 sq ft)"
+    ],
+    "lede": "Designed for privacy and space, these 50 sq.m (540 sq.ft) bungalows offer a Caribbean-chic escape nestled in lush gardens. Enjoy indoor-outdoor living, private verandas, and open-air wellness therapies in your own serene hideaway.",
+    "features": [
+     "Exclusive Nest for Two",
+     "Free Daily Breakfast",
+     "Pillowtop bed",
+     "Egyptian cotton linens",
+     "Hypo-allergenic bedding",
+     "Soundproofed rooms",
+     "Turndown service",
+     "Private Bathroom",
+     "Veranda",
+     "Daily Housekeeping",
+     "Laptop-Sized Safe",
+     "Free High-Speed WIFI",
+     "Complimentary Local + International Call"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697a9168c3b2612b7e56f582_c11dbd2e.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d3573b780ba4848cb4b5_biriba-casa1-1.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d357640a0be489a00577_biriba-living-1.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d357eb1ebf46c6695e28_aguas_claras_kuakua_13-1.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d1d228884b64ec46eb1a_biriba-bedroom1.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6835d357f4a9a2c0bcc8881b_biriba-bathroom1-1.jpg"
+    ],
+    "plungePool": false
+   }
+  ],
+  "aliases": {
+   "Pavlova Suite": "Pavlova Suites",
+   "2-Bedroom Bungalow": "2-Bedroom Luxury Bungalow",
+   "Two Bedroom Deluxe Bungalow": "2-Bedroom Deluxe Bungalow"
+  }
+ },
+ "lapa-rios-lodge": {
+  "rooms": [
+   {
+    "name": "Premier Villa",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "King + Day Beds"
+    ],
+    "lede": "Private villa with plunge pool, king bed, two day beds, indoor and outdoor showers, and panoramic Osa views, best for couples or small families.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697c9842e81833c925aa3afc_PremierVilla-1.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697c98471ddf476165f2f8e5_PremierVillas2.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697c984797d0b032699fde29_PremierVillas13.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697c9847832cdfbb26e2055c_PremierVillas15.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697c984c9fdd3443dfccd2dd_PremierVillas16.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697c984dc7706e0df107f287_PremierVillas20.jpg.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Deluxe Bungalow",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King"
+    ],
+    "lede": "Open-air bungalow with ocean views, natural materials, and private terrace surrounded by rainforest.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f3039d8713349d8ba6e122_DeluxeBungalow27.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f303cb596eacc6f94e79af_DeluxeBungalow14.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f303cbbafb22c85879963d_DeluxeBungalow23.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f303cb17ce581602f54664_DeluxeBungalow28.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f303cb10299da9f179ec41_DeluxeBungalow33.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69f303cb2f2578b06c570644_DeluxeBungalow37.jpg"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "nayara-gardens": {
+  "rooms": [
+   {
+    "name": "Arenal Pool Casita",
+    "sleeps": 3,
+    "facts": [
+     "Sleeps 3",
+     "1 King Bed or 2 Twin Beds + Day Bed"
+    ],
+    "lede": "Luxurious 97 m² freestanding casita featuring a private plunge pool, expansive garden terrace, indoor and outdoor rain showers, and serene rainforest surroundings, ideal for romantic escapes or small families.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188b154df0c015c7ae324c_room_39070_A1K_1_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188b4b05d836bd91df39d0_room_39070_A1K_7_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188b4bb3a01405dd96c731_room_39070_A1K_6_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188b4afadf44ca8e21cb19_room_39070_A1K_5_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188b4a1352edfab7a44f25_room_39070_A1K_4_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188b4aef5ccc9a6aa9377d_room_39070_A1K_3_790x490.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Rainforest Pool Villa",
+    "sleeps": 3,
+    "facts": [
+     "Sleeps 3",
+     "King Bed"
+    ],
+    "lede": "Elegant 105.4 m² octagonal villa featuring a private plunge pool, wraparound terrace with a hammock, outdoor rain showers, and beautiful views of the rainforest or Arenal Volcano.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188bd22f870b570e0c7571_room_39070_A1V_1_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188bee23e276ea6955bfd5_room_39070_A1V_5_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188beed6267a29800a0ba9_room_39070_A1V_4_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188beec2f0acdf2f6c45f4_room_39070_A1V_3_790x490.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a188bee83360e95b2aa924c_room_39070_A1V_2_790x490.jpg"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "nayara-tented-camp": {
+  "rooms": [
+   {
+    "name": "Private Residences",
+    "sleeps": 12,
+    "facts": [
+     "Sleeps 12",
+     "2 King Beds + 4 Queen Beds (2-bedroom residence setup; multiple tents/rooms)"
+    ],
+    "lede": "Expansive rainforest private residence composed of two family tent suites with additional sleeping areas, featuring a fully equipped villa, indoor and outdoor living spaces, fire pit, and an oversized hot spring infinity pool. Ideal for large families or groups, with panoramic views of the Arenal Volcano.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18b4aa80d46fc269ce3a53_1.-Residence.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91d6b78d3ee6850bd36_Family-Tent-Bedroom-2-1024x618.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91dca24e8ec3ade6821_Family-Tent-Bedroom-1-1024x618.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18b4b658d8cf58ac3a72ef_5.-tub2-copy.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18b4b6cbf740622ca96e81_4.View-of-the-infinite-pool-and-the-Arenal-Volcano-from-the-Residences-NTC-Casa-Paloma-30.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18b4b698546d4f3afae488_3..-Casa-Paloma-by-Brice-Ferre-Studio-copy-2.jpeg.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Nayara Tent",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "1 King Bed"
+    ],
+    "lede": "Spacious rainforest tent set on stilts, featuring a master suite, private mineral hot spring pool, and panoramic jungle views. A tranquil eco-luxury retreat designed for couples or small families immersed in nature.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18b80dda2c4575cb5f0a30_1.-Nayara-Tent-Drone-Shot-copy.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91dca24e8ec3ade6821_Family-Tent-Bedroom-1-1024x618.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91d6b78d3ee6850bd36_Family-Tent-Bedroom-2-1024x618.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18b8243f071bd243797477_5.-TUB-copy.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18b824e90e7b397369b448_4.-View-of-the-rainforest-from-the-tent-.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18b824d24b431c2849aba7_2.-Nayara-Tented-Inside-copy.jpeg.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Grand Tent",
+    "sleeps": 6,
+    "facts": [
+     "Sleeps 6",
+     "2 Tents: 1 King Bed + Daybeds (primary tent) + 2 Queen Beds (second tent)"
+    ],
+    "lede": "Spacious luxury tented retreat designed for families or groups, featuring two connected tents with multiple sleeping areas, indoor and outdoor living spaces, and a private pool. Set in the Costa Rican rainforest with stunning Arenal Volcano views, it offers the perfect blend of nature, comfort, and privacy.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a9ff70056bbef3510958_1.-the-Residence-from-far.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91dca24e8ec3ade6821_Family-Tent-Bedroom-1-1024x618.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91d6b78d3ee6850bd36_Family-Tent-Bedroom-2-1024x618.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18aa06d24b431c2844d87a_5.bathroom.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18aa072be2ae715186ea76_4..-outdoor-shower.jpeg-copy-2.jpeg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18aa0788301fbc4266c283_3..-bed-view-copy.jpeg.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Family Tent",
+    "sleeps": 6,
+    "facts": [
+     "Sleeps 6"
+    ],
+    "lede": "Spacious family tent featuring two connected tents with a shared outdoor living area and private pool, designed for families or small groups to relax and create shared rainforest memories.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91341368805d116c923_Resort-9.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91dca24e8ec3ade6821_Family-Tent-Bedroom-1-1024x618.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91d6b78d3ee6850bd36_Family-Tent-Bedroom-2-1024x618.jpg.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a18a91d4e31974a75ee8940_4.-Outdoor-shower.jpeg-.jpeg.webp"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "arenal-springs-camp-by-nayara": {
+  "rooms": [
+   {
+    "name": "Villa",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "Multiple bedrooms"
+    ],
+    "lede": "Private villa with generous living space, perfect for families or groups.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Vista Room",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King"
+    ],
+    "lede": "Spacious room with panoramic volcano and jungle views, ideal for couples.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
+ },
+ "arenas-del-mar-resort": {
+  "rooms": [
+   {
+    "name": "Ocean Breeze Superior Room",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King Bed"
+    ],
+    "lede": "Comfortable accommodations offering easy access to rainforest and beach experiences.",
+    "features": [
+     "Ocean views",
+     "Luxury amenities",
+     "Private terrace",
+     "Daily breakfast"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33c69b70580fe6309b377d_3e70098e.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c12c7ac89391c68f643ce_ADM_Ocean-Breeze-Superior-Room9.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c12c7de1465d5b5fa8d27_ADM_Ocean-View-Superior-Room3-2.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c12c7e881731a78445c9c_ADM_Ocean-View-Superior-Room6.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c12c640e3636f91ba3a98_ADM_Ocean-Breeze-Superior-Room1.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Ocean View Premium Suite",
+    "sleeps": 3,
+    "facts": [
+     "Sleeps 3"
+    ],
+    "lede": "Ideal for couples seeking exceptional ocean vistas and privacy.",
+    "features": [
+     "Panoramic Pacific views",
+     "Spacious terrace",
+     "Premium furnishings",
+     "Luxury bath amenities"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33b28e8405ba731f08c108_9c337907.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c66532725196b2ca1839a_67dc9838.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c66535c10a5b6a33a618c_6797cf36.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c6653c2f2fd21054f5c98_40d0a291.avif"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Rainforest Suite",
+    "sleeps": null,
+    "facts": [],
+    "lede": "Wake to the sounds of tropical birds and rainforest life.",
+    "features": [
+     "Immersive jungle setting",
+     "Wildlife viewing opportunities",
+     "Private terrace",
+     "Premium comfort"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c1283a8afc3bad4a5dffe_ADM_Rainforest-Room14.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c128a703bb7449da0c283_ADM_Rainforest-Room8.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c128a703bb7449da0c291_ADM_Rainforest-Room10.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c1289362b94081def05d8_ADM_Rainforest-Room.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Ocean View Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King Bed"
+    ],
+    "lede": "A harmonious blend of tropical architecture and natural beauty.",
+    "features": [
+     "Ocean-facing design",
+     "Indoor-outdoor living",
+     "Luxury bedding",
+     "Rainforest surroundings"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33c74660fabc6f281a2d35_a41ee10c.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c66b82725196b2ca1a0fd_568dd087.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c66b84dd1654d3becd67c_a5c301f9.avif",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c66b8a126157d73a3bb21_d86f73eb.avif"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Playitas Suite",
+    "sleeps": 3,
+    "facts": [
+     "Sleeps 3",
+     "1 King Bed, 2 Double Beds and 1 Twin Sofa Bed"
+    ],
+    "lede": "Perfect for travelers wanting elevated comfort and spectacular scenery.",
+    "features": [
+     "Enhanced space",
+     "Ocean views",
+     "Premium location",
+     "Luxury amenities"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c68d2ef9265c7626e2abb_9d41fda9.avif"
+    ],
+    "plungePool": false
+   }
+  ],
+  "aliases": {
+   "Ocean Breeze Superior": "Ocean Breeze Superior Room"
+  }
+ },
+ "kura-boutique-resort": {
+  "rooms": [
+   {
+    "name": "Master Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King Bed"
+    ],
+    "lede": "Ideal for travelers wanting the highest level of comfort and exclusivity.",
+    "features": [
+     "Premium location",
+     "Enhanced living space",
+     "Ocean-facing design",
+     "Luxury furnishings"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33ac016946260a107d3baf_W-006-SLIDER1-1.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33ac13aabf8125365c9b16_W-007-SLIDER1-1-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33ac343d4f1624f94e8181_W-006-SLIDER1-9-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33ac379f44bac8b7566b42_W-006-SLIDER1-8-scaled.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Glamping Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King Bed"
+    ],
+    "lede": "A distinctive blend of adventure and luxury designed to deepen connection with Costa Rica's natural environment.",
+    "features": [
+     "Nature immersion",
+     "Luxury comforts",
+     "Outdoor-inspired experience",
+     "Unique accommodations"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c0d0ce35cdd4de6a310b1_D52A7327-HDR.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c0d0ca824c359f4953cec_W-006-SLIDER2-4-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c0d0c703bb7449d9e412f_W-006-SLIDER3-2.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c0d0c2ae7661d46efcbe6_W-006-SLIDER2-3-scaled.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Infinity Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King Bed"
+    ],
+    "lede": "Kura's signature suite category delivering uninterrupted views from sunrise through sunset.",
+    "features": [
+     "Panoramic ocean views",
+     "Expanded indoor-outdoor living",
+     "Luxury bath amenities",
+     "Private terrace"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c0d3ad7ff0d1fa4388b14_ENVIOS_HANNS0727-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c0d4159a3a602b811d7fe_ENVIOS_HANNS0728-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c0d419635006a412017c4_ENVIOS_HANNS0723-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c0d41de1465d5b5f8a78f_ENVIOS_HANNS0722-scaled.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Junior Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King Bed"
+    ],
+    "lede": "An intimate retreat designed for couples seeking privacy and spectacular Pacific vistas.",
+    "features": [
+     "Ocean views",
+     "Private terrace",
+     "Luxury king bed",
+     "Premium amenities"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33ac927341feaf403de9f3_W-006-SLIDER3-1-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33aca2aabf8125365d13ad_W-006-SLIDER3-3-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33acae6855e5e0e345f9fb_W-006-SLIDER3-5-scaled.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a33acb0c1d932302e059a76_W-006-SLIDER3-4-scaled.jpg"
+    ],
+    "plungePool": false
+   }
+  ],
+  "aliases": {
+   "Junior": "Junior Suite",
+   "Master (plunge pool)": "Master Suite"
+  }
+ },
+ "senda-monteverde-lodge": {
+  "rooms": [
+   {
+    "name": "Premium Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King Bed and 1 Twin Sofa Bed"
+    ],
+    "lede": "Designed for travelers seeking elevated comfort while remaining immersed in Monteverde's cloud forest environment.",
+    "features": [
+     "Forest views",
+     "Luxury king bed",
+     "Private outdoor space",
+     "Premium amenities"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c163605cb501dbdc1b66e_W005-SLIDER3-1-1024x683.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c163c05cb501dbdc1bbf6_005-SLIDER3-5.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c163cbe47d9daa9389f4d_W005-SLIDER3-3-scaled.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c163c97b1f2b6e1b11739_W005-SLIDER3-2-scaled.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c163cc4b741516d285eeb_005-SLIDER3-4.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Senda Casita",
+    "sleeps": 6,
+    "facts": [
+     "Sleeps 6",
+     "1 King Bed and 4 Twin Beds"
+    ],
+    "lede": "A secluded retreat designed for deeper connection with Monteverde's remarkable ecosystem.",
+    "features": [
+     "Enhanced privacy",
+     "Separate living spaces",
+     "Nature immersion",
+     "Premium comforts"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c15f50b3aab7223e0ff7c_W005-SLIDER4-1-1024x683.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c15fd3a704de6c9c275e9_005-SLIDER4-5.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c15fca3e244a9078cae99_005-SLIDER4-4.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c15fdb912520ad89cced5_W005-SLIDER4-3-scaled.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c15fd1a546dee7ff406d5_W005-SLIDER4-2-scaled.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Superior Room",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "1 King Bed"
+    ],
+    "lede": "Ideal for travelers seeking a comfortable and authentic Monteverde experience.",
+    "features": [
+     "Modern furnishings",
+     "Cloud forest access",
+     "Nature-focused design",
+     "Premium bedding"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c169cb42add542ae4795c_005-SLIDER1-1-1024x683.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c16a4ccc9583d9d70f417_W005-SLIDER1-1-scaled.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c16a35da9eed29275499b_005-SLIDER1-5.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c16a380be8a5c0008f8ae_005-SLIDER1-4.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c16a35da9eed2927549a9_W005-SLIDER1-3-scaled.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Junior Suite",
+    "sleeps": 3,
+    "facts": [
+     "Sleeps 3",
+     "1 King Bed and 1 Double Sofa Bed"
+    ],
+    "lede": "A refined retreat combining comfort, privacy, and connection to the surrounding landscape.",
+    "features": [
+     "Spacious layout",
+     "Nature views",
+     "Luxury bath amenities",
+     "Private terrace"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c166a0078f6835d42d3eb_005-SLIDER2-1-1024x683.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c167305cb501dbdc1de36_005-SLIDER2-3.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c16710cff43ad7387c99b_005-SLIDER2-5.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c167117a62f8e1a90e018_005-SLIDER2-4.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a3c16713690f9b9493477e9_005-SLIDER2-2.webp"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "tabacon-thermal-resort-spa": {
+  "rooms": [
+   {
+    "name": "Two-Bedroom Arenal Suite",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "King + 2 Queens"
+    ],
+    "lede": "A spacious suite designed for families or friends, with a king-bedroom master suite, a second bedroom containing two queen beds, scenic rainforest views, a private terrace, an in-room Jacuzzi, glass-enclosed shower, second lavatory and generous living and dining space.",
+    "features": [
+     "King bed in the master bedroom",
+     "Two queen beds in the second bedroom",
+     "Private terrace",
+     "Rainforest views",
+     "In-room Jacuzzi",
+     "Separate glass-enclosed shower",
+     "Second lavatory",
+     "Living and dining area",
+     "Walk-in closet",
+     "55-inch Smart TV",
+     "Complimentary coffee and tea",
+     "Wi-Fi",
+     "Exclusions:"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a73892ec6417882681c0437_Two-Bedroom%20Arenal%20Suite.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a7389345a6e1f3fa991655b_Two-Bedroom%20Arenal%20Suite%203.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738934183c791a13cb2f51_Two-Bedroom%20Arenal%20Suite%202.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a73893477daf2e8c95d76a8_Two-Bedroom%20Arenal%20Suite%201.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738a6e44f6a4573fd37777_Two-Bedroom%20Arenal%20Suite%204.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Volcano View Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King"
+    ],
+    "lede": "An intimate rainforest retreat with a king bed, balcony and dual rain shower. Best for couples who value quiet design and a strong sense of place.",
+    "features": [
+     "King bed",
+     "Balcony",
+     "Dual rain shower",
+     "Rainforest setting"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738bf1183c791a13ccd49c_Volcano%20View%20Suite.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738bfe44f6a4573fd4c0d7_Volcano%20View%20Suite%204.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738bfe2cb1be955b531ac7_Volcano%20View%20Suite%203.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738bfe2d83b9e061ca7f1a_Volcano%20View%20Suite%202.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738c03ef551327d43facfe_Volcano%20View%20Suite%205.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Private Pool Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King"
+    ],
+    "lede": "An adults-only rainforest-facing suite with a private thermal plunge pool and terrace. This is Tabacón’s strongest accommodation choice for honeymooners and couples wanting privacy alongside access to the wider thermal river.",
+    "features": [
+     "Adults-only positioning",
+     "Private thermal plunge pool",
+     "Rainforest-facing terrace",
+     "Exclusions:"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738ac4d06534b5fb08ce38_Private%20Pool%20Suite.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738ad593c11870e6760f74_Private%20Pool%20Suite%202.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738ad55dfc8aef6651513b_Private%20Pool%20Suite%201.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738ad84bb8e9d8eb03d242_Private%20Pool%20Suite%203.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Rainforest Room",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King"
+    ],
+    "lede": "A calm, adults-oriented room where indoor elegance opens toward a private terrace and tropical garden views.",
+    "features": [
+     "Private terrace",
+     "Tropical garden or rainforest outlook",
+     "Indoor-outdoor design emphasis"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738c6ac29fe83548c4e585_Rainforest%20Room.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738c7552d5db81ae0159dd_Rainforest%20Room%204.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738c753c045ca060325777_Rainforest%20Room%203.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738c75f9db987171fe51ef_Rainforest%20Room%202.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738c791dfee978097dfab4_Rainforest%20Room%205.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Tabacón Suite",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "King + Sofa Bed"
+    ],
+    "lede": "The resort’s largest suite, created for guests wanting generous space, a Jacuzzi, hot-spring shower and sweeping rainforest views.",
+    "features": [
+     "Largest suite category",
+     "Jacuzzi",
+     "Hot-spring shower",
+     "Rainforest views"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738b397cbc7cfb187397c6_Tabac%C3%B3n%20Suite.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738b444d9f79cc04de50e1_Tabac%C3%B3n%20Suite%203.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738b4c362acae2901c87ee_Tabac%C3%B3n%20Suite%202.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738b4f93abf3527ff9f2fd_Tabac%C3%B3n%20Suite%204.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Orchid Room King Bed",
+    "sleeps": 3,
+    "facts": [
+     "Sleeps 3",
+     "King"
+    ],
+    "lede": "A spacious king room with forest views, a native-stone shower and Costa Rican design touches.",
+    "features": [
+     "King bed",
+     "Forest views",
+     "Native-stone shower",
+     "Costa Rican design details"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738cc5e975099bfb645f31_Orchid%20Room%20King%20Bed.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738cd0e8382cb64671c886_Orchid%20Room%20King%20Bed%204.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738cd093abf3527ffab2e6_Orchid%20Room%20King%20Bed%203.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738cd0e8382cb64671c87d_Orchid%20Room%20King%20Bed%202.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738cd5d114e51b4e4fc1c0_Orchid%20Room%20King%20Bed%205.jpg"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Orchid Room Two Queen Beds",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "2 Queens"
+    ],
+    "lede": "A flexible room for families or friends, offering two queen beds, garden views and a naturally illuminated shower with a local-stone floor.",
+    "features": [
+     "Two queen beds",
+     "Garden views",
+     "Naturally lit shower",
+     "Local-stone flooring"
+    ],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738d2f9feed47d2f294dbb_Orchid%20Room%20Two%20Queen%20Beds.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738d3a232e2ff25fe6fa44_Orchid%20Room%20Two%20Queen%20Beds%203.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738d3a2d83b9e061cb4eb4_Orchid%20Room%20Two%20Queen%20Beds%202.jpg",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6a738d404b74011306b54322_Orchid%20Room%20Two%20Queen%20Beds%204.jpg"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "pacuare-lodge": {
+  "rooms": [
+   {
+    "name": "Linda Vista Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King"
+    ],
+    "lede": "Spacious, airy villa above the forest, private plunge pool, panoramic windows, and large terrace, total immersion in jungle luxury.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cc89a28f3c62eb3616205_linda-vista-suite.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cc8a01e4f35ca95ea5519_linda-vista-suite-balchony.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cc8a0a67c2832c68df9fe_linda-vista-suite-bathroom.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cc8a07ffeac5e98140b05_linda-vista-suite-pool.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Jaguar Villa",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 4",
+     "Two Bedrooms (King + Twin)"
+    ],
+    "lede": "Two-bedroom, two-bath villa with infinity pool, garden, and direct river views, ultimate privacy for families or groups.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cc97f1a0de2abc8be6e65_jaguar-villa.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cc9846144cd51536a26b8_jaguar-villa-bath.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cc9849beb96b1a5667f5c_jaguar-villa-bathroom.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cc984b229296b5938b20d_jaguar-villa-pool.webp"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Canopy Suite",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King"
+    ],
+    "lede": "Romantic suite suspended above the jungle, king bed, outdoor tub, and panoramic views of the forest canopy.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cca3ab935e1a24a7882ab_canopy-suite.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cca3f921f492eb4bcd58d_canopy-suite-aerial-view.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cca3fc32a31c54d3057a3_canopy-suite-bedroom.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cca42cd981743e7601dc1_canopy-suite-canopy.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cca3fd074242f5edc11c8_canopy-suite-pool-view.webp",
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/697cca3fabdc50afb5571c81_canopy-suite-pool.webp"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "amor-arenal": {
+  "rooms": [
+   {
+    "name": "Canyon Casita King",
+    "sleeps": 2,
+    "facts": [
+     "Sleeps 2",
+     "King"
+    ],
+    "lede": "Private casita with plunge pool and canyon views, ideal for couples seeking privacy.",
+    "features": [],
+    "photos": [
+     "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/69e1e9adc14d693f661a8fef_Canyon-casita-King.jpg"
+    ],
+    "plungePool": false
+   }
+  ]
+ }
+}

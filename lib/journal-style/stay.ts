@@ -17,6 +17,19 @@ import { BEST_FOR } from "@/lib/content/stays";
 import PAGES from "./pages.json";
 import ROOM_PHOTOS from "./room-photos.json";
 import RATE_HOLDS from "./rate-holds.json";
+import ROOM_LIBRARY from "./room-library.json";
+
+export type LibraryRoom = { name: string; sleeps: number | null; facts: string[]; lede: string | null; features: string[]; photos: string[]; plungePool: boolean };
+const LIB = ROOM_LIBRARY as unknown as Record<string, { rooms: LibraryRoom[]; aliases?: Record<string, string> } | string>;
+const normRoom = (n: string) => n.toLowerCase().replace(/\btwo\b/g, "2").replace(/\bone\b/g, "1").replace(/\b(suites|suite|rooms|room|the)\b/g, "").replace(/[^a-z0-9]/g, "");
+/** The library's rooms for a stay, and the library room that a rate-card room name refers to. */
+export function libraryRooms(slug: string) {
+  const e = LIB[slug];
+  const rooms = e && typeof e === "object" ? e.rooms.filter((r) => r.photos.length > 0 || r.features.length > 0 || r.lede) : [];
+  const aliases = e && typeof e === "object" ? e.aliases ?? {} : {};
+  const find = (name: string) => rooms.find((r) => r.name === aliases[name]) ?? rooms.find((r) => normRoom(r.name) === normRoom(name)) ?? null;
+  return { rooms, find };
+}
 import PHOTO_NOTES from "./photo-notes.json";
 
 const CLOUD = "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto";
@@ -146,8 +159,10 @@ export function journalStay(slug: string) {
     ...(rates?.rooms ?? []).filter((r) => r.photo).map((r) => ({ url: (r.photo as Photo).url, alt: (r.photo as Photo).alt, section: "rooms" as const, room: r.name })),
     ...(roomData?.rooms ?? []).filter((r) => r.image).map((r) => ({ url: `${CLOUD}/${r.image!.id}`, alt: `${r.image!.alt} at ${s.name}`, section: "rooms" as const, room: r.name })),
   ];
+  const lib = libraryRooms(s.slug);
+  const libShots: ViewerPhoto[] = lib.rooms.flatMap((r) => r.photos.map((u, k) => ({ url: u, alt: `${r.name}${k ? `, photograph ${k + 1}` : ""} at ${s.name}${s.country ? `, ${s.country}` : ""}`, section: "rooms" as const, room: r.name })));
   const extras: ViewerPhoto[] = (notes?.extra ?? []).map((x) => ({ url: `${CLOUD}/${x.id}`, alt: x.alt, section: x.section ?? sectionOf(x.alt) }));
-  const photos = [...base, ...roomShots, ...extras].filter((x, k, l) => l.findIndex((y) => lastPart(y.url) === lastPart(x.url)) === k);
+  const photos = [...base, ...roomShots, ...libShots, ...extras].filter((x, k, l) => l.findIndex((y) => lastPart(y.url) === lastPart(x.url)) === k);
   const offers = offersFor(s.slug);
   const features = momentsFor(s.slug, rowsFrom(s.features.items, s.features.paras), filed.slice(1));
   const experiences = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), filed.slice(1), 3, features);
@@ -158,7 +173,7 @@ export function journalStay(slug: string) {
   // the same answer-first paragraph the stay page has always opened with, for search and answer engines
   const answer = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} Vetted for the Ledger by the house.`;
   return {
-    s, path, filed, slides, frames, rates, offers, features, experiences, suited, answer, kind,
+    s, path, filed, slides, frames, rates, lib, offers, features, experiences, suited, answer, kind,
     // the stay's own films: a hero film (muted, looping) and a longer stay film for the Film section; either may be absent
     heroFilm: STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : null, video: VIDEOS[`stay:${s.slug}`] ?? null,
     // rooms filed with the house's own room record (shown with its own component, unchanged) where no rate card above applies

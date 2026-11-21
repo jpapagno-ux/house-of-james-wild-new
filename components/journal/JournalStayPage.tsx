@@ -84,6 +84,13 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   // rules, the stamp, the chips, the bar's top edge). Only an approved classification shows, and only with the flag on.
   const pw = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
   const pwScope = pw ? `pathway-${pw.primary.id.slice(-2)}` : "";
+  // Rooms (James, 20 Nov 2026): every room carries a photograph and what it includes, from the house room library.
+  // A priced stay keeps its rate-card rooms and takes the library's photograph and features for the same room; a
+  // stay with no rate on file shows the library's rooms with "Rate on enquiry". No rate is read from the library.
+  const libRow = (l: (typeof v.lib.rooms)[number]) => ({ facts: l.facts, lede: l.lede, features: l.features, flag: l.plungePool ? "Plunge pool" : undefined, photo: l.photos[0] ? { url: l.photos[0], alt: `${l.name} at ${s.name}${s.country ? `, ${s.country}` : ""}` } : null });
+  const roomRows = rates
+    ? rates.rooms.map((r) => { const l = v.lib.find(r.name); const x = l ? libRow(l) : null; return { name: r.name, sleeps: r.sleeps, list: money(r.list), now: r.now < r.list ? money(r.now) : null, ...(x ?? {}), photo: r.photo ?? x?.photo ?? null, action: <PickRoom slug={s.slug} room={r.name} reserveHref="#reserve" /> }; })
+    : v.lib.rooms.map((l) => ({ name: l.name, sleeps: l.sleeps, list: null, now: null, ...libRow(l), action: <PickRoom slug={s.slug} room={l.name} reserveHref="#reserve" /> }));
   const r0 = rates?.rooms[0];
   const nights = rates?.window?.nights ?? 0;
   const slip = rates && r0 && rates.window && nights > 0 ? (() => {
@@ -118,11 +125,11 @@ export default function JournalStayPage({ slug }: { slug: string }) {
 
   // Sections are numbered in the order they print, so a dropped section never leaves a gap.
   let n = 0;
-  const N = { rooms: rates ? no(++n) : "", exp: no(++n), detail: features.length || reasons.length ? no(++n) : "", offers: offerRows.length ? no(++n) : "", reserve: no(++n), map: hasMap ? no(++n) : "", questions: s.faqs.length ? no(++n) : "" };
-  const jump: [string, string][] = [...(reasons.length ? [["Why we vetted it", "why"] as [string, string]] : []), ...(v.video ? [["Film", "film"] as [string, string]] : []), ...(rates || v.roomData || s.rooms.paras.length || s.rooms.items.length ? [["Rooms", "rooms"] as [string, string]] : []), ["Experiences", "experiences"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ["Reserve", "reserve"], ...(v.hostReady ? [["Meet the host", "host"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
+  const N = { rooms: rates || v.lib.rooms.length ? no(++n) : "", exp: no(++n), detail: features.length || reasons.length ? no(++n) : "", offers: offerRows.length ? no(++n) : "", reserve: no(++n), map: hasMap ? no(++n) : "", questions: s.faqs.length ? no(++n) : "" };
+  const jump: [string, string][] = [...(reasons.length ? [["Why we vetted it", "why"] as [string, string]] : []), ...(v.video ? [["Film", "film"] as [string, string]] : []), ...(rates || v.lib.rooms.length || v.roomData || s.rooms.paras.length || s.rooms.items.length ? [["Rooms", "rooms"] as [string, string]] : []), ["Experiences", "experiences"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ["Reserve", "reserve"], ...(v.hostReady ? [["Meet the host", "host"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
   const sign = CHOSEN["signoff-4"];
   const inSection = (k: SectionKey) => v.photos.filter((p) => p.section === k);
-  const roomNames = rates ? rates.rooms.map((r) => r.name) : v.roomData?.rooms.map((r) => r.name) ?? [];
+  const roomNames = roomRows.length ? roomRows.map((r) => r.name) : v.roomData?.rooms.map((r) => r.name) ?? [];
   const strip = (k: SectionKey, label: string) => { const list = inSection(k); return list.length ? <PhotoStrip tab={k} photos={list.map((p) => ({ url: p.url, alt: p.alt }))} total={list.length} label={label} /> : null; };
 
   // experience cards with no photograph of their own take one from the stay's described photographs, in turn
@@ -139,7 +146,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   return (
     <div className={`journal-style bg-white ${pwScope}`}>
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
-      <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}`}</style>
+      <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style{background-color:color-mix(in srgb,var(--jw-path) 4%,#fff)!important}.journal-style main,.journal-style main section.bg-white,.journal-style main header.bg-white{background-color:transparent!important}.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}`}</style>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip bg-white">
         <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
@@ -148,7 +155,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
         <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {pw && (
-            <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-4 border-l-4 border-[color:var(--jw-path)] pl-5">
+            <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-7 flex flex-wrap items-center gap-x-8 gap-y-4" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 20%, #fff) 0%, color-mix(in srgb, var(--jw-path) 9%, #fff) 55%, transparent 100%)" }}>
               <PathwayStamp id={pw.primary.id} size={150} rotate={-3} />
               <div>
                 <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
@@ -168,7 +175,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
 
             {/* a stay whose rooms and rates are filed in the house's room record keeps the house's own rooms block, unchanged */}
             {/* a record with room text but no room list or rate on file: the text, the dates bar, and the rate on enquiry */}
-            {!rates && !v.roomData && (s.rooms.paras.length > 0 || s.rooms.items.length > 0) && (
+            {!roomRows.length && !v.roomData && (s.rooms.paras.length > 0 || s.rooms.items.length > 0) && (
               <section id="rooms" aria-label="Rooms" className="bg-white">
                 <SectionHead label="Rooms" title="Where You'll Sleep" />
                 {s.rooms.paras.length > 0 && <div className="mt-6 max-w-3xl space-y-4 text-[16px] leading-relaxed text-graphite">{s.rooms.paras.map((t) => <p key={t}>{t}</p>)}</div>}
@@ -178,13 +185,13 @@ export default function JournalStayPage({ slug }: { slug: string }) {
                 {inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}
               </section>
             )}
-            {v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /><DatesBar slug={s.slug} reserveHref="#reserve" />{inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}</div>}
+            {!roomRows.length && v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /><DatesBar slug={s.slug} reserveHref="#reserve" />{inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}</div>}
 
-            {rates && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates.promo} reserveHref="#reserve"
+            {roomRows.length > 0 && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates?.promo ?? null} reserveHref="#reserve"
               bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} photos={inSection("rooms").length > 0 ? <PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink> : undefined}
-              rooms={rates.rooms.map((r) => ({ name: r.name, sleeps: r.sleeps, list: money(r.list), now: r.now < r.list ? money(r.now) : null, photo: r.photo, action: <PickRoom slug={s.slug} room={r.name} reserveHref="#reserve" /> }))}
-              footnote={`Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
-              aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
+              rooms={roomRows}
+              footnote={!rates ? "" : `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
+              aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates?.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
             <JournalExperiences no={N.exp} slug={s.slug} items={v.experiences.map((x) => { if (x.image) return x; const m = shotFor(x.title); return m ? { ...x, image: m.url, alt: m.alt } : x; })} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
 

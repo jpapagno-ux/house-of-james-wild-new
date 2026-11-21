@@ -1,5 +1,4 @@
 import Link from "next/link";
-import pathwayEntrance from "@/lib/journal-style/pathway-entrance.json";
 import experiencePhotos from "@/lib/journal-style/experience-photos.json";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -150,8 +149,8 @@ export default function JournalStayPage({ slug }: { slug: string }) {
   };
   // cards that carry a photograph lead the row, so the row opens on pictures; the rest keep their filed order
   const experienceCards = v.experiences.map((x) => { if (x.image) return x; const m = shotFor(x.title); return m ? { ...x, image: m.url, alt: m.alt } : x; }).map((x, i) => ({ x, i })).sort((p, q) => Number(!!q.x.image) - Number(!!p.x.image) || p.i - q.i).map(({ x }) => x);
-  // the fuller pathway entrance, a sample on the stays listed in pathway-entrance.json
-  const wow = !!pw && (pathwayEntrance as { stays: string[] }).stays.includes(s.slug);
+  // James, 21 Nov 2026: the pathway entrance is the house design for every stay with an approved pathway, each in its own colour
+  const wow = !!pw;
   const wowCss = wow ? `.journal-style #journal-hero{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important}.journal-style #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.5) 0%,rgba(26,24,22,.05) 28%,color-mix(in srgb,var(--jw-path) 30%,transparent) 60%,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 100%)!important}.journal-style #record-bar{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important;border-top-color:color-mix(in srgb,var(--jw-path) 70%,#fff)!important}.jw-hero-stamp{opacity:.9;animation:jw-stamp-in .9s cubic-bezier(.2,.9,.3,1.15) .5s both,jw-stamp-drift 7s ease-in-out 1.6s infinite alternate}@keyframes jw-stamp-in{0%{opacity:0;transform:scale(1.5) rotate(12deg)}55%{opacity:1;transform:scale(.96) rotate(-1deg)}100%{opacity:.9;transform:scale(1) rotate(0)}}@keyframes jw-stamp-drift{from{transform:translateY(0) rotate(0)}to{transform:translateY(3px) rotate(.8deg)}}@media(prefers-reduced-motion:reduce){.jw-hero-stamp{animation:none}}` : "";
   return (
     <div className={`journal-style bg-white ${pwScope}`}>
@@ -164,7 +163,6 @@ export default function JournalStayPage({ slug }: { slug: string }) {
           film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" photoCount={v.photos.length} />
           {pw && wow && <div aria-hidden className="jw-hero-stamp pointer-events-none absolute right-4 md:right-10 top-[calc(var(--jw-header-h)+3.5rem)] md:top-[calc(var(--jw-header-h)+2.5rem)] z-20"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div>}
         </div>
-        {pw && !wow && <div aria-hidden className="h-1 bg-pathway" />}
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
@@ -173,17 +171,6 @@ export default function JournalStayPage({ slug }: { slug: string }) {
               <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
               <p className="font-display italic text-[22px] leading-tight text-graphite">{pw.primary.name}. <span className="not-italic font-sans text-[14px] text-stone-text">{pw.primary.line}</span></p>
               <PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} />
-            </div>
-          )}
-          {pw && !wow && (
-            <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-7 flex flex-wrap items-center gap-x-8 gap-y-4" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 20%, #fff) 0%, color-mix(in srgb, var(--jw-path) 9%, #fff) 55%, transparent 100%)" }}>
-              <PathwayStamp id={pw.primary.id} size={150} rotate={-3} />
-              <div>
-                <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
-                <p className="mt-1 font-display text-[24px] leading-tight text-graphite">{pw.primary.name}</p>
-                <p className="mt-1 max-w-xl text-[14.5px] text-stone-text">{pw.primary.line}</p>
-                <div className="mt-3"><PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} /></div>
-              </div>
             </div>
           )}
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>

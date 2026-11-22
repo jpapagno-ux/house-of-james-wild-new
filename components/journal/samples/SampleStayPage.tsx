@@ -32,7 +32,7 @@ const SCRIM = "linear-gradient(180deg,rgba(26,24,22,.5) 0,rgba(26,24,22,0) 22%,r
 
 type Shot = { url: string; alt: string };
 
-function Chapter({ no, label, title, text, photo }: { no: string; label: string; title: string; text: string; photo: Shot }) {
+function Chapter({ no, label, title, text, photo }: { no: string; label: string; title: string; text: string[]; photo: Shot }) {
   return (
     <section aria-label={title} className="relative isolate h-[88svh] min-h-[520px] overflow-hidden bg-ink-deep text-white">
       <Image src={photo.url} alt={photo.alt} fill sizes="100vw" className="object-cover" />
@@ -40,7 +40,7 @@ function Chapter({ no, label, title, text, photo }: { no: string; label: string;
       <div className={`${WRAP} relative flex h-full flex-col justify-end pb-12 md:pb-20`}>
         <p className={`${T.label} text-white/80`}>{no} · {label}</p>
         <h2 className={`${T.h2} mt-3 max-w-3xl`}>{title}</h2>
-        <p className={`${T.body} mt-4 max-w-xl text-white/90`}>{text}</p>
+        <div className={`${T.body} mt-4 max-w-xl space-y-1 text-white/90`}>{text.map((x) => <p key={x}>{x}</p>)}</div>
       </div>
     </section>
   );
@@ -92,13 +92,12 @@ export default function SampleStayPage({ slug, variant }: { slug: string; varian
   const film = variant === "c" && v.heroFilm?.kind === "mp4" ? v.heroFilm : null;
 
   const rooms = v.lib.rooms;
-  const line = (items: string[], n: number) => items.slice(0, n).join(" ");
   const chapters = [
-    s.onlyHere[0] ? { label: "Only here", title: s.tagline ?? s.name, text: s.onlyHere[0], photo: take("exterior", null) } : null,
-    s.experiences.items.length ? { label: "Experiences", title: "What You Can Do From Here", text: line(s.experiences.items, 2), photo: take("experiences", "pool", null) } : null,
-    s.features.items.length ? { label: "The stay", title: "What You Get", text: line(s.features.items, 2), photo: take("dining", "pool", null) } : null,
-    s.onlyHere[1] ? { label: "Why it is here", title: "Why the House Filed It", text: s.onlyHere[1], photo: take("exterior", "pool", null) } : null,
-  ].filter((c): c is { label: string; title: string; text: string; photo: Shot } => !!c && !!c.photo);
+    s.onlyHere[0] ? { label: s.country ?? "The place", title: "Only Here", text: [s.onlyHere[0]], photo: take("exterior", null) } : null,
+    s.experiences.items.length ? { label: "Experiences", title: "What You Can Do From Here", text: s.experiences.items.slice(0, 3), photo: take("experiences", "pool", null) } : null,
+    s.features.items.length ? { label: "The stay", title: "What You Get", text: s.features.items.slice(0, 3), photo: take("dining", "pool", null) } : null,
+    s.onlyHere[1] ? { label: "Before you go", title: "Good to Know", text: [s.onlyHere[1]], photo: take("exterior", "pool", null) } : null,
+  ].filter((c): c is { label: string; title: string; text: string[]; photo: Shot } => !!c && !!c.photo);
 
   const Rooms = rooms.length > 0 && (
     <section id="rooms" aria-label="Rooms" className={`bg-mist ${GAP}`}>
@@ -162,7 +161,7 @@ export default function SampleStayPage({ slug, variant }: { slug: string; varian
         {variant === "b" && <>
           <div className={`${WRAP} space-y-[72px] md:space-y-[120px] pb-[72px] md:pb-[120px]`}>
             <Spread shots={[take("exterior", null), take("pool", null), take("experiences", null)].filter((p): p is Shot => !!p)} />
-            {s.onlyHere.length > 0 && <Split label="Only here" title={s.tagline ?? s.name} text={s.onlyHere} photo={take("exterior", null)} />}
+            {s.onlyHere.length > 0 && <Split label={s.country ?? "The place"} title="Only Here" text={s.onlyHere} photo={take("exterior", null)} />}
           </div>
           {Rooms}
           <div className={`${WRAP} ${GAP} space-y-[72px] md:space-y-[120px]`}>

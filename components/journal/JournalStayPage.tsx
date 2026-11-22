@@ -169,7 +169,7 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
         </div>}
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
-        {sample && <SampleBody v={v} variant={sample} />}
+        {sample && <SampleBody v={v} variant={sample} rooms={roomRows} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.` : null} />}
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {pw && wow && (
             <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-5 flex flex-wrap items-center gap-x-6 gap-y-3" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 16%, #fff), transparent)" }}>

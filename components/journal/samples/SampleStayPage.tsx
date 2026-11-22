@@ -14,11 +14,12 @@ type View = NonNullable<ReturnType<typeof journalStay>>;
 // the route does not exist on the production deployment, nothing links here, and the live stay page is untouched.
 // Every word and photograph is read from the filed record through journalStay(); nothing is written here.
 // One system for all three: five type sizes, one section gap, white ground, Stone Mist as the only band, crimson once.
-export type Variant = "a" | "b" | "c";
+export type Variant = "a" | "b" | "c" | "d";
 export const SAMPLES: { variant: Variant; slug: string; name: string }[] = [
   { variant: "a", slug: "la-ferme-de-georges", name: "A · Chapters" },
   { variant: "b", slug: "aguas-arriba-lodge", name: "B · Spreads" },
   { variant: "c", slug: "fazenda-moreias", name: "C · Film first" },
+  { variant: "d", slug: "aguas-claras", name: "D · Chosen mix, with prices" },
 ];
 
 const T = {
@@ -79,7 +80,7 @@ export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
   const { s } = v;
   const pw = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
   const hero = v.frames[0];
-  const film = variant === "c" && v.heroFilm?.kind === "mp4" ? v.heroFilm : null;
+  const film = (variant === "c" || variant === "d") && v.heroFilm?.kind === "mp4" ? v.heroFilm : null;
   return (
     <section id="journal-hero" aria-label={s.name} className="jw-onphoto relative isolate h-[100svh] min-h-[600px] overflow-hidden bg-ink-deep text-white">
       {film
@@ -101,7 +102,9 @@ export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
 }
 
 // The body: the answer paragraph, then the stay told in photographs, in the sample's own order.
-export function SampleBody({ v, variant }: { v: View; variant: Variant }) {
+// rooms: the same rows the stay page prints (rate-card rooms with their filed rates, or the house room library), with the page's own room pick
+export type SampleRoom = { name: string; sleeps: number | null; list: string | null; now: string | null; basis?: string; facts?: string[]; lede?: string | null; features?: string[]; flag?: string; photo?: { url: string; alt: string } | null; action?: React.ReactNode };
+export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: { v: View; variant: Variant; rooms: SampleRoom[]; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null }) {
   const { s } = v;
   const used = new Set<string>([v.frames[0].url]);
   const pool: ViewerPhoto[] = v.photos;
@@ -110,7 +113,6 @@ export function SampleBody({ v, variant }: { v: View; variant: Variant }) {
     if (hit) used.add(hit.url);
     return hit ? { url: hit.url, alt: hit.alt } : null;
   };
-  const rooms = v.lib.rooms;
   const chapters = [
     s.onlyHere[0] ? { label: s.country ?? "The place", title: "Only Here", text: [s.onlyHere[0]], photo: take("exterior", null) } : null,
     s.experiences.items.length ? { label: "Experiences", title: "What You Can Do From Here", text: s.experiences.items.slice(0, 3), photo: take("experiences", "pool", null) } : null,
@@ -124,21 +126,29 @@ export function SampleBody({ v, variant }: { v: View; variant: Variant }) {
         <p className={`${T.label} text-stone-text`}>Rooms</p>
         <h2 className={`${T.h2} mt-3 text-graphite`}>Where You&rsquo;ll Sleep</h2>
       </div>
+      {promo && <p className={`${WRAP} ${T.label} mt-4 text-house`}>{promo}</p>}
+      {bar && <div className={`${WRAP} mt-6`}>{bar}</div>}
       <ul className="mt-10 flex snap-x snap-mandatory gap-4 md:gap-6 overflow-x-auto px-5 md:px-10 pb-4 [scrollbar-width:none]">
         {rooms.map((r) => (
-          <li key={r.name} className="w-[78vw] max-w-[420px] shrink-0 snap-start bg-white">
-            {r.photos[0] && <figure className="relative aspect-[4/5] overflow-hidden bg-mist"><Image src={r.photos[0]} alt={`${r.name} at ${s.name}${s.country ? `, ${s.country}` : ""}`} fill sizes="(min-width:768px) 420px, 78vw" className="object-cover" /></figure>}
-            <div className="p-5 md:p-6">
+          <li key={r.name} className="flex w-[78vw] max-w-[420px] shrink-0 snap-start flex-col bg-white">
+            {r.photo && <figure className="relative aspect-[4/5] overflow-hidden bg-mist"><Image src={r.photo.url} alt={r.photo.alt} fill sizes="(min-width:768px) 420px, 78vw" className="object-cover" /></figure>}
+            <div className="flex flex-1 flex-col p-5 md:p-6">
               <h3 className="font-display font-medium text-[24px] leading-tight text-graphite">{r.name}</h3>
-              {r.facts.length > 0 && <p className={`${T.label} mt-3 text-stone-text`}>{r.facts.join(" · ")}</p>}
+              <p className={`${T.label} mt-3 text-stone-text`}>{r.facts?.length ? r.facts.join(" · ") : r.sleeps ? `Sleeps ${r.sleeps}` : ""}{r.flag ? ` · ${r.flag}` : ""}</p>
               {r.lede && <p className={`${T.body} mt-3 text-graphite`}>{r.lede}</p>}
-              <p className={`${T.label} mt-5 text-graphite`}>{r.from ? `From ${money(r.from.amount)} · ${r.from.basis}` : "Rate on enquiry"}</p>
-              <p className="mt-4"><a href="#reserve" className="ledger-btn-ghost">Check dates</a></p>
+              {r.features && r.features.length > 0 && <ul className={`${T.body} mt-3 space-y-1 text-stone-text`}>{r.features.slice(0, 4).map((f) => <li key={f}>· {f}</li>)}</ul>}
+              <div className="mt-auto pt-6">
+                {r.list
+                  ? <p className="font-display text-[28px] leading-none text-graphite">{r.now && <s className="mr-2 text-[18px] text-stone-text">{r.list}</s>}{r.now ?? r.list}</p>
+                  : <p className={`${T.label} text-graphite`}>Rate on enquiry</p>}
+                {r.list && <p className={`${T.label} mt-2 text-stone-text`}>{r.basis ?? basis}</p>}
+                <div className="mt-4">{r.action ?? <a href="#reserve" className="ledger-btn-ghost">Check dates</a>}</div>
+              </div>
             </div>
           </li>
         ))}
       </ul>
-      {v.lib.ratesNote && <p className={`${WRAP} ${T.body} mt-6 max-w-[62ch] text-stone-text`}>{v.lib.ratesNote}</p>}
+      {(footnote || v.lib.ratesNote) && <p className={`${WRAP} ${T.body} mt-6 max-w-[62ch] text-stone-text`}>{footnote || v.lib.ratesNote}</p>}
     </section>
   );
   return (
@@ -147,7 +157,7 @@ export function SampleBody({ v, variant }: { v: View; variant: Variant }) {
         <p className={`${T.label} text-stone-text`}>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</p>
         <p className={`${T.lead} mt-5 max-w-4xl text-graphite`}>{v.answer}</p>
       </section>
-      {variant === "a" && <>
+      {(variant === "a" || variant === "d") && <>
         {chapters.slice(0, 1).map((c, i) => <Chapter key={c.label} no={`0${i + 1}`} {...c} />)}
         {Rooms}
         {chapters.slice(1).map((c, i) => <Chapter key={c.label} no={`0${i + 2}`} {...c} />)}

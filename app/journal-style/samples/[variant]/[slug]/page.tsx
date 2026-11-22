@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
-import SampleStayPage, { SAMPLES, type Variant } from "@/components/journal/samples/SampleStayPage";
+import JournalStayPage from "@/components/journal/JournalStayPage";
+import { SAMPLES, type Variant } from "@/components/journal/samples/SampleStayPage";
 import { stayBySlug } from "@/lib/content/stays";
 import { JOURNAL_SWITCH_ALLOWED } from "@/lib/journal-style/flag";
 import { buildMetadata } from "@/lib/seo";
@@ -19,5 +20,5 @@ export async function generateMetadata({ params }: { params: Promise<{ variant: 
 export default async function SampleRoute({ params }: { params: Promise<{ variant: string; slug: string }> }) {
   const { slug, variant } = await params;
   if (!JOURNAL_SWITCH_ALLOWED || !SAMPLES.some((x) => x.variant === variant && x.slug === slug)) notFound();
-  return <SampleStayPage slug={slug} variant={variant as Variant} />;
+  return <JournalStayPage slug={slug} sample={variant as Variant} />;
 }

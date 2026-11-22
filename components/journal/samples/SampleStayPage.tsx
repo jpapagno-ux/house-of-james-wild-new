@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import SiteHeader from "@/components/ledger/SiteHeader";
+import { FieldIcon, type FieldIconName } from "@/components/ledger/FieldIcon";
+import AccordionRow from "@/components/journal/AccordionRow";
 import PathwayStamp from "@/components/pathways/PathwayStamp";
 import { pathwayStays } from "@/lib/content/pathways";
 import { PATHWAYS_ON } from "@/lib/content/pathways/flag";
 import { journalStay, money, type SectionKey, type ViewerPhoto } from "@/lib/journal-style/stay";
+
+type View = NonNullable<ReturnType<typeof journalStay>>;
 
 // JWC-STYLE-01 layout samples (James, 22 Nov 2026: "let's do a few samples before we build further"). Three ways to
 // lay out the same stay record, for James to compare on a preview: A chapters, B spreads, C film first. Preview only:
@@ -72,25 +74,42 @@ function Split({ label, title, text, photo, flip = false }: { label: string; tit
   );
 }
 
-export default function SampleStayPage({ slug, variant }: { slug: string; variant: Variant }) {
-  const v = journalStay(slug);
-  if (!v) notFound();
+// The hero: one photograph (or the stay's film) for the whole screen, the name low and left, one button.
+export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
   const { s } = v;
-  const full = `/stays/${s.slug}?journal=1`;
   const pw = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
+  const hero = v.frames[0];
+  const film = variant === "c" && v.heroFilm?.kind === "mp4" ? v.heroFilm : null;
+  return (
+    <section id="journal-hero" aria-label={s.name} className="jw-onphoto relative isolate h-[100svh] min-h-[600px] overflow-hidden bg-ink-deep text-white">
+      {film
+        ? <video className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline poster={film.poster} aria-label={film.title}><source src={film.srcMobile} media="(max-width: 767px)" /><source src={film.src} /></video>
+        : <Image src={hero.url} alt={hero.alt} fill priority sizes="100vw" className="object-cover" />}
+      <span aria-hidden className="absolute inset-0" style={{ background: SCRIM }} />
+      <div className={`${WRAP} relative flex h-full flex-col justify-end pb-28 md:pb-20`}>
+        <p className={`${T.label} text-white/85`}>Volume I · Stays{s.country ? ` · ${s.country}` : ""}</p>
+        <h1 className={`${T.display} mt-4 max-w-5xl`}>{s.name}</h1>
+        {s.tagline && <p className={`${T.lead} mt-4 max-w-2xl text-white/90`}>{s.tagline}</p>}
+        <div className="mt-8 flex flex-wrap items-center gap-5">
+          <a href="#reserve" className="ledger-btn ledger-btn--house">Check your dates</a>
+          {film && <p className={`${T.label} text-white/70`}>{film.credit}</p>}
+        </div>
+      </div>
+      {pw && <div aria-hidden className="pointer-events-none absolute right-5 md:right-10 bottom-14 md:bottom-20 hidden sm:block"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div>}
+    </section>
+  );
+}
 
-  // photographs: each is used once, so no frame repeats down the page
-  const used = new Set<string>();
+// The body: the answer paragraph, then the stay told in photographs, in the sample's own order.
+export function SampleBody({ v, variant }: { v: View; variant: Variant }) {
+  const { s } = v;
+  const used = new Set<string>([v.frames[0].url]);
   const pool: ViewerPhoto[] = v.photos;
   const take = (...keys: (SectionKey | null)[]): Shot | null => {
     const hit = keys.map((k) => pool.find((p) => !used.has(p.url) && (k === null ? p.section !== "rooms" : p.section === k))).find(Boolean) ?? pool.find((p) => !used.has(p.url)) ?? null;
     if (hit) used.add(hit.url);
     return hit ? { url: hit.url, alt: hit.alt } : null;
   };
-  const hero = v.frames[0];
-  used.add(hero.url);
-  const film = variant === "c" && v.heroFilm?.kind === "mp4" ? v.heroFilm : null;
-
   const rooms = v.lib.rooms;
   const chapters = [
     s.onlyHere[0] ? { label: s.country ?? "The place", title: "Only Here", text: [s.onlyHere[0]], photo: take("exterior", null) } : null,
@@ -100,7 +119,7 @@ export default function SampleStayPage({ slug, variant }: { slug: string; varian
   ].filter((c): c is { label: string; title: string; text: string[]; photo: Shot } => !!c && !!c.photo);
 
   const Rooms = rooms.length > 0 && (
-    <section id="rooms" aria-label="Rooms" className={`bg-mist ${GAP}`}>
+    <section id="rooms" aria-label="Rooms" className={`!bg-mist ${GAP}`}>
       <div className={WRAP}>
         <p className={`${T.label} text-stone-text`}>Rooms</p>
         <h2 className={`${T.h2} mt-3 text-graphite`}>Where You&rsquo;ll Sleep</h2>
@@ -114,6 +133,7 @@ export default function SampleStayPage({ slug, variant }: { slug: string; varian
               {r.facts.length > 0 && <p className={`${T.label} mt-3 text-stone-text`}>{r.facts.join(" · ")}</p>}
               {r.lede && <p className={`${T.body} mt-3 text-graphite`}>{r.lede}</p>}
               <p className={`${T.label} mt-5 text-graphite`}>{r.from ? `From ${money(r.from.amount)} · ${r.from.basis}` : "Rate on enquiry"}</p>
+              <p className="mt-4"><a href="#reserve" className="ledger-btn-ghost">Check dates</a></p>
             </div>
           </li>
         ))}
@@ -121,78 +141,83 @@ export default function SampleStayPage({ slug, variant }: { slug: string; varian
       {v.lib.ratesNote && <p className={`${WRAP} ${T.body} mt-6 max-w-[62ch] text-stone-text`}>{v.lib.ratesNote}</p>}
     </section>
   );
+  return (
+    <>
+      <section aria-label="Overview" className={`${WRAP} ${GAP}`}>
+        <p className={`${T.label} text-stone-text`}>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</p>
+        <p className={`${T.lead} mt-5 max-w-4xl text-graphite`}>{v.answer}</p>
+      </section>
+      {variant === "a" && <>
+        {chapters.slice(0, 1).map((c, i) => <Chapter key={c.label} no={`0${i + 1}`} {...c} />)}
+        {Rooms}
+        {chapters.slice(1).map((c, i) => <Chapter key={c.label} no={`0${i + 2}`} {...c} />)}
+      </>}
+      {variant === "b" && <>
+        <div className={`${WRAP} space-y-[72px] md:space-y-[120px] pb-[72px] md:pb-[120px]`}>
+          <Spread shots={[take("exterior", null), take("pool", null), take("experiences", null)].filter((p): p is Shot => !!p)} />
+          {s.onlyHere.length > 0 && <Split label={s.country ?? "The place"} title="Only Here" text={s.onlyHere} photo={take("exterior", null)} />}
+        </div>
+        {Rooms}
+        <div className={`${WRAP} ${GAP}`}>
+          <Spread flip shots={[take("experiences", null), take("dining", null), take(null)].filter((p): p is Shot => !!p)} />
+        </div>
+      </>}
+      {variant === "c" && <>
+        {Rooms}
+        {chapters.slice(0, 2).map((c, i) => <Chapter key={c.label} no={`0${i + 1}`} {...c} />)}
+        <div className={`${WRAP} ${GAP}`}>
+          <Spread shots={[take("pool", null), take("exterior", null), take("dining", null)].filter((p): p is Shot => !!p)} />
+        </div>
+      </>}
+    </>
+  );
+}
 
-  const Intro = (
-    <section aria-label="Overview" className={`${WRAP} ${GAP}`}>
-      <p className={`${T.label} text-stone-text`}>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</p>
-      <p className={`${T.lead} mt-5 max-w-4xl text-graphite`}>{v.answer}</p>
+// Experiences and features, folded: the house's own accordion rows with the house icons. Every row stays in the page.
+const ICONS: FieldIconName[] = ["sun", "frond", "tree-ring", "coral"];
+export function SampleDetail({ v }: { v: View }) {
+  const { s } = v;
+  const list = (items: string[]) => <ul className="space-y-2">{items.map((t) => <li key={t}>{t}</li>)}</ul>;
+  const left = [
+    ...(s.experiences.items.length ? [{ title: "Experiences", body: list(s.experiences.items) }] : []),
+    ...(s.facts.signature_experiences ? [{ title: "Signature experiences", body: <p>{s.facts.signature_experiences}</p> }] : []),
+    ...(s.facts.who_its_for ? [{ title: "Who it is for", body: <p>{s.facts.who_its_for}</p> }] : []),
+  ];
+  const right = [
+    ...(s.features.items.length ? [{ title: "Features", body: list(s.features.items) }] : []),
+    ...(s.onlyHere.length ? [{ title: "Only here", body: <div className="space-y-3">{s.onlyHere.map((t) => <p key={t}>{t}</p>)}</div> }] : []),
+    ...s.why.filter((w) => w.title).map((w) => ({ title: w.title as string, body: <p>{w.body}</p> })),
+  ];
+  if (!left.length && !right.length) return null;
+  const col = (label: string, title: string, rows: { title: string; body: React.ReactNode }[]) => rows.length > 0 && (
+    <div>
+      <p className={`${T.label} text-stone-text`}>{label}</p>
+      <h3 className="font-display font-medium text-[26px] text-graphite mt-1.5">{title}</h3>
+      <div className="mt-4 border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] px-5 [&>div:first-child]:border-t-0">
+        {rows.map((r, i) => <AccordionRow key={r.title} as="h4" title={r.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{r.body}</AccordionRow>)}
+      </div>
+    </div>
+  );
+  return (
+    <section id="experiences" aria-label="Experiences and features" className="bg-white">
+      <p className={`${T.label} text-stone-text`}>The detail, folded away</p>
+      <h2 className={`${T.h2} mt-3 text-graphite`}>Experiences and Features</h2>
+      <div className="mt-9 grid lg:grid-cols-2 gap-10 items-start">
+        {col("Experiences", "What You Can Do From Here", left)}
+        {col("Features of the stay", "What You Get", right)}
+      </div>
     </section>
   );
+}
 
+export function SampleSwitch({ slug, variant }: { slug: string; variant: Variant }) {
   return (
-    <div className="journal-style bg-white">
-      <SiteHeader overlay />
-      <main id="main" className="overflow-x-clip bg-white">
-        <section aria-label={s.name} className="jw-onphoto relative isolate h-[100svh] min-h-[600px] overflow-hidden bg-ink-deep text-white">
-          {film
-            ? <video className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline poster={film.poster} aria-label={film.title}><source src={film.srcMobile} media="(max-width: 767px)" /><source src={film.src} /></video>
-            : <Image src={hero.url} alt={hero.alt} fill priority sizes="100vw" className="object-cover" />}
-          <span aria-hidden className="absolute inset-0" style={{ background: SCRIM }} />
-          <div className={`${WRAP} relative flex h-full flex-col justify-end pb-28 md:pb-20`}>
-            <p className={`${T.label} text-white/85`}>Volume I · Stays{s.country ? ` · ${s.country}` : ""}</p>
-            <h1 className={`${T.display} mt-4 max-w-5xl`}>{s.name}</h1>
-            {s.tagline && <p className={`${T.lead} mt-4 max-w-2xl text-white/90`}>{s.tagline}</p>}
-            <div className="mt-8 flex flex-wrap items-center gap-5">
-              <Link href={`${full}#reserve`} className="ledger-btn ledger-btn--house">Check your dates</Link>
-              {film && <p className={`${T.label} text-white/70`}>{film.credit}</p>}
-            </div>
-          </div>
-          {pw && <div aria-hidden className="pointer-events-none absolute right-5 md:right-10 bottom-14 md:bottom-20 hidden sm:block"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div>}
-        </section>
-
-        {Intro}
-
-        {variant === "a" && <>
-          {chapters.slice(0, 1).map((c, i) => <Chapter key={c.label} no={`0${i + 1}`} {...c} />)}
-          {Rooms}
-          {chapters.slice(1).map((c, i) => <Chapter key={c.label} no={`0${i + 2}`} {...c} />)}
-        </>}
-
-        {variant === "b" && <>
-          <div className={`${WRAP} space-y-[72px] md:space-y-[120px] pb-[72px] md:pb-[120px]`}>
-            <Spread shots={[take("exterior", null), take("pool", null), take("experiences", null)].filter((p): p is Shot => !!p)} />
-            {s.onlyHere.length > 0 && <Split label={s.country ?? "The place"} title="Only Here" text={s.onlyHere} photo={take("exterior", null)} />}
-          </div>
-          {Rooms}
-          <div className={`${WRAP} ${GAP} space-y-[72px] md:space-y-[120px]`}>
-            {s.experiences.items.length > 0 && <Split flip label="Experiences" title="What You Can Do From Here" text={s.experiences.items.slice(0, 5)} photo={take("experiences", null)} />}
-            <Spread flip shots={[take("dining", null), take("experiences", null), take(null)].filter((p): p is Shot => !!p)} />
-            {s.features.items.length > 0 && <Split label="The stay" title="What You Get" text={s.features.items.slice(0, 5)} photo={take("dining", "pool", null)} />}
-          </div>
-        </>}
-
-        {variant === "c" && <>
-          {Rooms}
-          {chapters.slice(0, 2).map((c, i) => <Chapter key={c.label} no={`0${i + 1}`} {...c} />)}
-          <div className={`${WRAP} ${GAP} space-y-[72px] md:space-y-[120px]`}>
-            <Spread shots={[take("pool", null), take("exterior", null), take("dining", null)].filter((p): p is Shot => !!p)} />
-            {s.features.items.length > 0 && <Split flip label="The stay" title="What You Get" text={s.features.items.slice(0, 5)} photo={take("dining", "pool", null)} />}
-          </div>
-        </>}
-
-        <section aria-label="Plan with the house" className={`${WRAP} ${GAP} flex flex-col md:flex-row md:items-center justify-between gap-6 border-t border-[color:var(--jw-keyline)]`}>
-          <div><p className={`${T.label} text-stone-text`}>Every enquiry goes to the house</p><p className={`${T.h2} mt-2 italic text-graphite`}>Let us plan your {s.country ? `${s.country} ` : ""}stay</p></div>
-          <Link href={v.planHref} className="ledger-btn ledger-btn--house self-start md:self-center">Plan with James</Link>
-        </section>
-
-        <nav aria-label="Layout samples" className="bg-ink-deep text-white">
-          <div className={`${WRAP} flex flex-wrap items-center gap-x-8 gap-y-3 py-6`}>
-            <p className={`${T.label} text-white/60`}>Layout samples · preview only</p>
-            {SAMPLES.map((x) => <Link key={x.variant} href={`/journal-style/samples/${x.variant}/${x.slug}`} className={`${T.label} ${x.variant === variant ? "text-white underline underline-offset-4" : "text-white/75"}`}>{x.name}</Link>)}
-            <Link href={full} className={`${T.label} text-white/75`}>Today&rsquo;s page</Link>
-          </div>
-        </nav>
-      </main>
-    </div>
+    <nav aria-label="Layout samples" className="bg-ink-deep text-white">
+      <div className={`${WRAP} flex flex-wrap items-center gap-x-8 gap-y-3 py-6`}>
+        <p className={`${T.label} text-white/60`}>Layout samples · preview only</p>
+        {SAMPLES.map((x) => <Link key={x.variant} href={`/journal-style/samples/${x.variant}/${x.slug}`} className={`${T.label} ${x.variant === variant ? "text-white underline underline-offset-4" : "text-white/75"}`}>{x.name}</Link>)}
+        <Link href={`/stays/${slug}?journal=1`} className={`${T.label} text-white/75`}>Today&rsquo;s page</Link>
+      </div>
+    </nav>
   );
 }

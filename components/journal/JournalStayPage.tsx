@@ -40,6 +40,7 @@ import { entryNo } from "@/lib/volumes";
 import { day, journalStay, money, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
 import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, SectionHead, StickyBar, PhotoViewer, PhotoLink, PhotoStrip, DatesBar, PickRoom, RequestForm } from "./journal-style";
 import type { OfferRow } from "./JournalOffers";
+import { SampleBody, SampleDetail, SampleHero, SampleSwitch, type Variant } from "./samples/SampleStayPage";
 
 // JWC-STYLE-01, Stages 1 to 9: the Modern Journal stay page, for the pilot's sample stays only (lib/journal-style/
 // pages.json). It is reached through the flag or the ?journal=1 preview switch (next.config.ts rewrites); the live
@@ -48,7 +49,8 @@ import type { OfferRow } from "./JournalOffers";
 const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "south-africa": CHART_SOUTH_AFRICA };
 const no = (n: number) => String(n).padStart(2, "0");
 
-export default function JournalStayPage({ slug }: { slug: string }) {
+// sample: one of the three preview-only layout samples (James, 22 Nov 2026); absent on every real page, which is unchanged
+export default function JournalStayPage({ slug, sample }: { slug: string; sample?: Variant }) {
   const v = journalStay(slug);
   if (!v) notFound();
   const { s, path, rates, offers, planHref } = v;
@@ -159,13 +161,15 @@ export default function JournalStayPage({ slug }: { slug: string }) {
       <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style{background-color:color-mix(in srgb,var(--jw-path) 4%,#fff)!important}.journal-style main,.journal-style main section.bg-white,.journal-style main header.bg-white{background-color:transparent!important}.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}${wowCss}`}</style>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip bg-white">
-        <div className="relative">
+        {sample && <SampleHero v={v} variant={sample} />}
+        {!sample && <div className="relative">
           <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
           film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" photoCount={v.photos.length} />
           {pw && wow && <div aria-hidden className="pointer-events-none absolute inset-0 z-20"><div className="relative mx-auto h-full max-w-ledger"><div className="jw-hero-stamp absolute right-4 md:right-10 top-[calc(var(--jw-header-h)+3.5rem)] md:top-auto md:bottom-48"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div></div></div>}
-        </div>
+        </div>}
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
+        {sample && <SampleBody v={v} variant={sample} />}
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {pw && wow && (
             <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-5 flex flex-wrap items-center gap-x-6 gap-y-3" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 16%, #fff), transparent)" }}>
@@ -176,15 +180,15 @@ export default function JournalStayPage({ slug }: { slug: string }) {
           )}
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
           <div className="pt-12 md:pt-16 pb-20 md:pb-28 space-y-20 md:space-y-28">
-            <JournalOverview quote={s.quote} lead={s.tagline} answer={v.answer} paragraphs={s.rooms.paras} photo={v.filed[1] ?? v.filed[0] ?? null} caption={s.name} ledgerId={s.ledgerId} reasons={v.whyShort}
-              strip={[{ label: "Ledger ID", value: s.ledgerId ?? "Being filed", id: true }, ...(s.bestMonths ? [{ label: "Best months", value: s.bestMonths }] : []), ...(s.country ? [{ label: "Country", value: s.country }] : []), ...(s.airportDirections && s.airportDirections.length <= 90 ? [{ label: "Getting there", value: s.airportDirections }] : s.airport ? [{ label: "Airport", value: s.airport }] : [])]} />
+            {!sample && <JournalOverview quote={s.quote} lead={s.tagline} answer={v.answer} paragraphs={s.rooms.paras} photo={v.filed[1] ?? v.filed[0] ?? null} caption={s.name} ledgerId={s.ledgerId} reasons={v.whyShort}
+              strip={[{ label: "Ledger ID", value: s.ledgerId ?? "Being filed", id: true }, ...(s.bestMonths ? [{ label: "Best months", value: s.bestMonths }] : []), ...(s.country ? [{ label: "Country", value: s.country }] : []), ...(s.airportDirections && s.airportDirections.length <= 90 ? [{ label: "Getting there", value: s.airportDirections }] : s.airport ? [{ label: "Airport", value: s.airport }] : [])]} />}
 
             {/* the stay's longer film, with sound: the house's own player, unchanged, straight after the overview */}
             {v.video && <div className="[&>section]:!mt-0"><WhyFilm title={`${s.name}, on film`} blocks={[]} suited={[]} name={s.name} video={v.video} poster={v.slides[1]?.url ?? v.frames[0]?.url} planHref={planHref} hideEmptyFilm /></div>}
 
             {/* a stay whose rooms and rates are filed in the house's room record keeps the house's own rooms block, unchanged */}
             {/* a record with room text but no room list or rate on file: the text, the dates bar, and the rate on enquiry */}
-            {!roomRows.length && !v.roomData && (s.rooms.paras.length > 0 || s.rooms.items.length > 0) && (
+            {!sample && !roomRows.length && !v.roomData && (s.rooms.paras.length > 0 || s.rooms.items.length > 0) && (
               <section id="rooms" aria-label="Rooms" className="bg-white">
                 <SectionHead label="Rooms" title="Where You'll Sleep" />
                 {s.rooms.paras.length > 0 && <div className="mt-6 max-w-3xl space-y-4 text-[16px] leading-relaxed text-graphite">{s.rooms.paras.map((t) => <p key={t}>{t}</p>)}</div>}
@@ -194,18 +198,19 @@ export default function JournalStayPage({ slug }: { slug: string }) {
                 {inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}
               </section>
             )}
-            {!roomRows.length && v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /><DatesBar slug={s.slug} reserveHref="#reserve" />{inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}</div>}
+            {!sample && !roomRows.length && v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /><DatesBar slug={s.slug} reserveHref="#reserve" />{inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}</div>}
 
-            {roomRows.length > 0 && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates?.promo ?? null} reserveHref="#reserve"
+            {!sample && roomRows.length > 0 && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates?.promo ?? null} reserveHref="#reserve"
               bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} photos={inSection("rooms").length > 0 ? <PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink> : undefined}
               rooms={roomRows}
               note={!rates ? v.lib.ratesNote : null}
               footnote={!rates ? "" : `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates?.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
-            <JournalExperiences no={N.exp} slug={s.slug} items={experienceCards} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
+            {sample && <SampleDetail v={v} />}
+            {!sample && <JournalExperiences no={N.exp} slug={s.slug} items={experienceCards} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>}
 
-            <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>
+            {!sample && <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>}
 
             <JournalOffers no={N.offers} name={s.name} offers={offerRows} applyHref="#reserve" />
 
@@ -241,6 +246,7 @@ export default function JournalStayPage({ slug }: { slug: string }) {
         {v.hostReady && <CallingCard who={HOST_KIND[s.category === "lodge" ? "lodge" : "stay"].who} seats={v.host.host?.seats} />}
       </main>
 
+      {sample && <SampleSwitch slug={s.slug} variant={sample} />}
       <PhotoViewer slug={s.slug} name={s.name} photos={v.photos} sections={SECTION_ORDER.map((k) => ({ key: k, label: SECTION_LABEL[k] }))} credit={v.credit} reserveHref="#reserve" />
 
       <StickyBar id="record-bar" title={s.name} note={fromLine} label={`Reserve ${s.name}`}

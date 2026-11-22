@@ -412,6 +412,7 @@ export const STAY_SLUGS: string[] = [
   "explora-rapa-nui",
   "explora-sacred-valley",
   "explora-torres-del-paine",
+  "fazenda-moreias",
   "feline-fields-lodge",
   "feline-fields-vintage-camp",
   "flower-island-resort",

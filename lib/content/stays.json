@@ -18677,6 +18677,88 @@
    "placeSlug": "atacama"
   },
   {
+   "slug": "fazenda-moreias",
+   "name": "Fazenda Moréias",
+   "ledgerId": "STY-2026-000789",
+   "country": "Brazil",
+   "countrySlug": "brazil",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "villa",
+   "tagline": "Eight architect-designed bungalows and houses on a working farm with nine kilometres of its own beach on the coast of Ceará",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/sea-and-dunes-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/bungalow-deck-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/fazenda-moreias/rooms/bangalo-1-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/horse-riding-dune",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/oros-restaurant-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/dune-lagoons",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/kite-jump",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/thatched-bungalow-palms",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/jangada-regatta",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/yoga-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/fazenda-moreias/rooms/bangalo-18-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -2.8537104,
+    "lng": -40.7615344
+   },
+   "airport": "Jericoacoara (JJD), 1 hour 15 minutes by road",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Bangalô 1, by Carlos Motta: one open room of wood and thatch, for up to four.",
+     "Bangalôs 2 and 3, by Carlos Motta: sister bungalows of two suites each around a living room and open kitchen.",
+     "Casa de Vila: 140 square metres, two suites, a full kitchen and a private pool.",
+     "Bangalô 4, by Carlos Motta: two suites, a 162 square metre pool deck and a table for twelve.",
+     "Bangalô 18, by Gui Mattos: four air-conditioned suites under one roof."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Downwind runs from Jericoacoara, Preá, Guriú and Tatajuba",
+     "Horse riding, quad bikes, land yachts and jeep rides on the dunes",
+     "Kayaking and paddling on the Coreaú River",
+     "Fishing with a local fisherman and gathering oysters in the mangrove",
+     "Yoga on the deck and more than 50 km of trails"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A pool at every bungalow and house",
+     "Solar power throughout",
+     "Wind every day from July to January"
+    ]
+   },
+   "onlyHere": [
+    "Fazenda Moréias is a working farm on the coast of Ceará, at Camocim, between Preá and Barra Grande. It covers more than 23 million square metres, with 9 km of beach inside a 20 km reserve, about 500 hectares of preserved mangrove, and dunes and lagoons left as they were. The farm runs on solar power.",
+    "It is not a hotel. Guests stay in the farm's own bungalows and houses, eight in all, each designed by an architect and each with a pool. Breakfast is at Orós, the farm's restaurant, and the days are arranged with the house team."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "feline-fields-lodge",
    "name": "Feline Fields Lodge",
    "ledgerId": "STY-2026-000094",
@@ -19383,7 +19465,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -23468,7 +23561,16 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -33998,7 +34100,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -34688,7 +34801,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -38051,7 +38175,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -45802,7 +45937,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],

@@ -2032,10 +2032,14 @@
     [
      "Seymour Airport (GPS)",
      "Serves 2 stays in the Ledger here"
+    ],
+    [
+     "Quito (UIO)",
+     "Serves 1 stay in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "GPS",
+   "flyInto": "GPS · UIO",
    "bestShort": "Ask James",
    "atlasName": "Ecuador"
   },

@@ -19308,6 +19308,89 @@
    "placeSlug": null
   },
   {
+   "slug": "futangue-hotel-spa",
+   "name": "Futangue Hotel & Spa",
+   "ledgerId": "STY-2026-000783",
+   "country": "Chile & Easter Island",
+   "countrySlug": "chile",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 26 room hotel inside its own 13,500 hectare rainforest reserve on the south shore of Lake Ranco",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/hotel-aerial-sunset",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/meadow-mountains",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/rafting-rio-bueno",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/futangue-hotel-spa/rooms/superior-room-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/spa-outdoor-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/hikers-cerro-mayo",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/aerial-valley",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/entrance",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/flowering-meadow",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/corridor"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -40.3383316,
+    "lng": -72.2121748
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Superior Room: 26 square metres in the main building, with garden or mountain views.",
+     "Suite: 35 square metres in the main building, with its own lounge and a double vanity.",
+     "Standard Room: 26 square metres in Casa Exploradores, 120 metres from the main building, with a terrace over open country.",
+     "Every room has one king bed or two twins, breakfast, a coffee machine, minibar and Wi-Fi, and takes two adults and one child."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Self-guided trails through the reserve, included with every stay",
+     "Fly fishing in the park's lagoons and on the Calcurrupe river",
+     "E-bike rides to Piedras Quemadas and Sendero del Cielo",
+     "Rafting on the Río Bueno and kayaking the Calcurrupe",
+     "Helicopter flights over the Caulle range and boat trips on Lake Ranco"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Triwe Spa: a heated indoor pool that opens to the outdoors, a wood-fired sauna with mountain views, a gym and a yoga room.",
+     "A 25 metre outdoor pool.",
+     "The Caulle Table (El Mesón del Caulle), the hotel's restaurant.",
+     "Programmes from bed and breakfast to all-inclusive with guided excursions and transfers.",
+     "Check-in from 8:00 and check-out until 16:00 at no charge when rooms allow. No pets."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Futangue Hotel & Spa sits inside Parque Futangue, a private 13,500 hectare reserve of Valdivian rainforest on the southern shore of Lake Ranco, in Chile's Los Ríos region. The hotel has 26 rooms and takes no more than 52 guests. Its interiors are native timber, volcanic rock, leather and fire, and it holds a 2026 MICHELIN Key.",
+    "The reserve is the reason to come: marked trails to Laguna Pichi, the Riñinahue falls, Piedras Quemadas and Sendero del Cielo start from the hotel, and park entry is part of every stay."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "galapagos-safari-camp",
    "name": "Galapagos Safari Camp",
    "ledgerId": "STY-2026-000582",
@@ -34378,6 +34461,85 @@
    },
    "volumes": [
     "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "mashpi-lodge",
+   "name": "Mashpi Lodge",
+   "ledgerId": "STY-2026-000784",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A 24 room glass-walled lodge in Ecuador's cloud forest, about three hours from Quito, inside a private reserve",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/mashpi-lodge/waterfall",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/mashpi-lodge/rooms/wayra-room-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/mashpi-lodge/sky-bike",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/mashpi-lodge/rooms/yaku-suite-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/mashpi-lodge/rooms/wayra-room-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/mashpi-lodge/room-bed-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/mashpi-lodge/rooms/wawa-room-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/mashpi-lodge/tayra"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 0.159813,
+    "lng": -78.856313
+   },
+   "airport": "Quito (UIO)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Yaku Suites: three suites for two, each with a freestanding tub.",
+     "Wayra Rooms: the main rooms, across the lodge's three levels, for two adults and up to two children under 12. Some interconnect.",
+     "Wawa Room: a smaller room for one traveller.",
+     "Every room is sound-proofed, with humidity and temperature control and automatic blinds."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The Dragonfly canopy gondola",
+     "The Sky Bike, pedalled across the forest canopy",
+     "The observation tower",
+     "Guided walks to the reserve's waterfalls",
+     "Birdwatching and the hummingbird garden",
+     "The Life Centre and butterfly farm"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Resident biologists and naturalist guides",
+     "Floor-to-ceiling windows in every room",
+     "No malaria or yellow fever vaccines are needed at this altitude"
+    ]
+   },
+   "onlyHere": [
+    "Mashpi Lodge stands at 900 metres in the cloud forest of north-west Ecuador, inside Quito's Metropolitan District and about three hours' drive from the city. It sits in a private reserve that is part of the 3,200 hectare Mashpi-Tayra Reserve. There are 24 rooms for 47 guests, each with floor-to-ceiling glass facing the forest.",
+    "The lodge keeps resident biologists, who have described 26 species new to science here. Guests see the canopy from the Dragonfly gondola, the pedal-powered Sky Bike and an observation tower, and the forest floor on guided walks to the waterfalls. The lodge holds 2 MICHELIN Keys (2025)."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
     "stays"
    ],
    "arrivalHubIds": [],

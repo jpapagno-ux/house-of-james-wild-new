@@ -2171,6 +2171,14 @@
    "released": false
   },
   {
+   "stay_id": "6b02f50a0a90b40d2a6e58dd",
+   "slug": "futangue-hotel-spa",
+   "name": "Futangue Hotel & Spa",
+   "country": "Chile & Easter Island",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6b0242f45f0faf0abe50448b",
    "slug": "gaia-riverlodge",
    "name": "Gaïa Riverlodge",
@@ -3731,6 +3739,14 @@
    "missing": [
     "coordinates"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6b02f50a0a90b40d2a6e58de",
+   "slug": "mashpi-lodge",
+   "name": "Mashpi Lodge",
+   "country": "Ecuador & Galapagos",
+   "missing": [],
    "released": true
   },
   {

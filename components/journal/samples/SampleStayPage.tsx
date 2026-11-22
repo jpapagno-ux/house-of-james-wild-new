@@ -55,7 +55,7 @@ function Chapter({ no, label, title, text, photo }: { no: string; label: string;
       <div className={`${WRAP} relative flex h-full flex-col justify-end pb-12 md:pb-20`}>
         <p className={`${T.label} text-white/80`}>{no} · {label}</p>
         <h2 className={`${T.h2} mt-3 max-w-3xl`}>{title}</h2>
-        <div className={`${T.body} mt-4 max-w-xl space-y-1 text-white/90`}>{text.map((x) => <p key={x}>{x}</p>)}</div>
+        <div className={`${T.lead} mt-4 max-w-xl space-y-1 text-white/90`}>{text.map((x) => <p key={x}>{x}</p>)}</div>
       </div>
     </section>
   );
@@ -164,9 +164,9 @@ export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: {
     <>
       <section id="why" aria-label="Why it is here" className={`${WRAP} ${GAP} scroll-mt-32`}>
         <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why We Added It to the Portfolio" />
-        <p className={`${T.body} mt-5 max-w-[62ch] text-graphite`}>{v.answer}</p>
+        <p className={`${T.lead} mt-5 max-w-3xl text-graphite`}>{v.answer}</p>
         {s.why.filter((w) => w.title).length > 0 && (
-          <div className="mt-8 max-w-3xl border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] px-5 [&>div:first-child]:border-t-0">
+          <div className="mt-10 max-w-3xl border-b border-[color:var(--jw-hairline)] [&>div]:!bg-transparent [&_h3_span]:italic">
             {s.why.filter((w) => w.title).map((w, i) => <AccordionRow key={w.title} as="h3" title={w.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{w.body}</AccordionRow>)}
           </div>
         )}

@@ -138,7 +138,7 @@ export default function SampleStayPage({ slug, variant }: { slug: string; varian
             ? <video className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline poster={film.poster} aria-label={film.title}><source src={film.srcMobile} media="(max-width: 767px)" /><source src={film.src} /></video>
             : <Image src={hero.url} alt={hero.alt} fill priority sizes="100vw" className="object-cover" />}
           <span aria-hidden className="absolute inset-0" style={{ background: SCRIM }} />
-          <div className={`${WRAP} relative flex h-full flex-col justify-end pb-14 md:pb-20`}>
+          <div className={`${WRAP} relative flex h-full flex-col justify-end pb-28 md:pb-20`}>
             <p className={`${T.label} text-white/85`}>Volume I · Stays{s.country ? ` · ${s.country}` : ""}</p>
             <h1 className={`${T.display} mt-4 max-w-5xl`}>{s.name}</h1>
             {s.tagline && <p className={`${T.lead} mt-4 max-w-2xl text-white/90`}>{s.tagline}</p>}

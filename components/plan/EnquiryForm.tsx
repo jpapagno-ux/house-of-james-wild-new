@@ -80,9 +80,9 @@ export default function EnquiryForm() {
   if (state === "sent" || state === "preview") {
     return (
       <div className="ledger-paper p-8 md:p-10" role="status">
-        <p className="ledger-eyebrow ledger-crimson">{state === "sent" ? "Received" : "Preview mode"}{enqId ? ` · ${enqId}` : ""}</p>
+        <p className="ledger-eyebrow ledger-crimson">{state === "sent" ? "Received" : "Not sent yet"}{enqId ? ` · ${enqId}` : ""}</p>
         <p className="ledger-display text-[1.9rem] leading-tight mt-2">Thank you, {f.name.split(" ")[0]}.</p>
-        <p className="mt-3 text-[17px] leading-relaxed max-w-xl">{state === "sent" ? `${advisor ? advisor.firstName : "James or an advisor"} will reply ${f.contact === "email" ? "by email" : "to arrange your call"}.` : "This is a preview of the site. Enquiries connect to the house inbox at launch, so nothing was sent. To reach James today, call 1.800.419.7000."}</p>
+        <p className="mt-3 text-[17px] leading-relaxed max-w-xl">{state === "sent" ? `${advisor ? advisor.firstName : "James or an advisor"} will reply ${f.contact === "email" ? "by email" : "to arrange your call"}.` : "Your enquiry was not delivered: the house inbox is not connected to this form yet. To reach James today, call 1.800.419.7000 or write to hello@jameswildco.com."}</p>
       </div>
     );
   }

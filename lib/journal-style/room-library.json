@@ -2514,5 +2514,393 @@
     }
    }
   ]
+ },
+ "gaia-riverlodge": {
+  "_source": "thelightercollection.com/gaia (home and accommodations), read 21 Nov 2026 at James's request. No rates published.",
+  "rooms": [
+   {
+    "name": "Waterfall View Suite",
+    "sleeps": null,
+    "facts": [
+     "King Bed and Queen pull-out couch",
+     "Waterfall view"
+    ],
+    "lede": "A two-storey suite with wide views and room to settle in.",
+    "features": [
+     "Walk-in shower",
+     "Continental breakfast",
+     "Private veranda",
+     "Belizean hardwoods and palmetto walls",
+     "Matouk and Frette linens"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/belize/gaia-riverlodge/waterfall-view-suite"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Riverside Villa",
+    "sleeps": null,
+    "facts": [
+     "King Bed",
+     "Riverside"
+    ],
+    "lede": "Private and secluded, on the river's edge.",
+    "features": [
+     "Hot tub",
+     "Walk-in shower",
+     "Continental breakfast",
+     "Private veranda",
+     "Belizean hardwoods and palmetto walls",
+     "Matouk and Frette linens"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/belize/gaia-riverlodge/riverside-villa"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Waterfall View Cabana",
+    "sleeps": 2,
+    "facts": [
+     "King Bed"
+    ],
+    "lede": "Above the Five Sisters Waterfalls.",
+    "features": [
+     "Continental breakfast",
+     "Private veranda",
+     "Belizean hardwoods and palmetto walls",
+     "Matouk and Frette linens"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Mountain View Cabanas",
+    "sleeps": 2,
+    "facts": [
+     "Mountain view"
+    ],
+    "lede": "Raised jungle cabanas looking to the mountains.",
+    "features": [
+     "Private veranda",
+     "Belizean hardwoods and palmetto walls",
+     "Matouk and Frette linens"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/belize/gaia-riverlodge/mountain-view-cabanas"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Hillside Double Room",
+    "sleeps": 4,
+    "facts": [
+     "Sleeps 2 to 4"
+    ],
+    "lede": "A room in the jungle on the hillside.",
+    "features": [
+     "Private veranda",
+     "Belizean hardwoods and palmetto walls",
+     "Matouk and Frette linens"
+    ],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
+ },
+ "hamanasi": {
+  "_source": "hamanasi.com (rooms and rates pages), read 21 Nov 2026 at James's request. 2026 rates are filed in the Stay Studio review notes and not shown (the page does not say 'per night' in words).",
+  "rooms": [
+   {
+    "name": "Deluxe Treehouse Rooms",
+    "sleeps": null,
+    "facts": [
+     "Rainforest canopy"
+    ],
+    "lede": "Secluded, in the rainforest canopy.",
+    "features": [
+     "Air conditioning",
+     "Ceiling fans",
+     "No television or telephone",
+     "Continental breakfast"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Treehouse Rooms",
+    "sleeps": null,
+    "facts": [
+     "Rainforest"
+    ],
+    "lede": "A private treehouse in the forest.",
+    "features": [
+     "Air conditioning",
+     "Ceiling fans",
+     "No television or telephone",
+     "Continental breakfast"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Beachfront Suites",
+    "sleeps": null,
+    "facts": [
+     "Beachfront"
+    ],
+    "lede": "Beside the Caribbean.",
+    "features": [
+     "Air conditioning",
+     "Ceiling fans",
+     "No television or telephone",
+     "Continental breakfast"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Beachfront Plus Rooms",
+    "sleeps": null,
+    "facts": [
+     "Beachfront"
+    ],
+    "lede": "More room to share.",
+    "features": [
+     "Air conditioning",
+     "Ceiling fans",
+     "No television or telephone",
+     "Continental breakfast"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Beachfront Rooms",
+    "sleeps": null,
+    "facts": [
+     "Beachfront"
+    ],
+    "lede": "Steps from the beach.",
+    "features": [
+     "Air conditioning",
+     "Ceiling fans",
+     "No television or telephone",
+     "Continental breakfast"
+    ],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
+ },
+ "blue-reef-island": {
+  "_source": "bluereefisland.com (the island and accommodation pages), read 21 Nov 2026 at James's request. No nightly rates published.",
+  "rooms": [
+   {
+    "name": "The Cabanas",
+    "sleeps": null,
+    "facts": [
+     "King or family layout",
+     "Pull-out sofa bed",
+     "About 20 by 20 feet"
+    ],
+    "lede": "Glass-fronted cabanas facing the Caribbean, five on the island.",
+    "features": [
+     "Private veranda with hammock",
+     "Private dock",
+     "Indoor bathroom with double vanities",
+     "Outdoor private shower room",
+     "Air conditioning and fans",
+     "Mini fridge stocked daily",
+     "WiFi"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Premier Cabana",
+    "sleeps": null,
+    "facts": [
+     "Seafront"
+    ],
+    "lede": "The seafront cabana, with its own plunge pool on the veranda.",
+    "features": [
+     "Private plunge pool",
+     "Private veranda with hammock",
+     "Private dock",
+     "Indoor bathroom with double vanities",
+     "Outdoor private shower room",
+     "Air conditioning and fans",
+     "Mini fridge stocked daily",
+     "WiFi"
+    ],
+    "photos": [],
+    "plungePool": true
+   }
+  ]
+ },
+ "victoria-house": {
+  "_source": "victoria-house.com (home page), read 21 Nov 2026 at James's request. 'From' rates are filed in the Stay Studio review notes and not shown (currency and tax not stated). Room features still to read from the room pages.",
+  "rooms": [
+   {
+    "name": "Staterooms",
+    "sleeps": 2,
+    "facts": [
+     "1 Queen Bed"
+    ],
+    "lede": "The resort's staterooms, for two.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Studio Room",
+    "sleeps": 2,
+    "facts": [
+     "1 Queen Bed and 1 Double Bed"
+    ],
+    "lede": "A studio with a queen and a double bed.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Palmetto Rooms",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed"
+    ],
+    "lede": "King rooms, for two.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Casitas",
+    "sleeps": 2,
+    "facts": [
+     "1 Queen Bed"
+    ],
+    "lede": "Casitas with a queen bed, for two.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Hibiscus Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed"
+    ],
+    "lede": "A king suite, for two.",
+    "features": [],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/belize/victoria-house/hibiscus-suite"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Coral Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed"
+    ],
+    "lede": "A king suite, for two.",
+    "features": [],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/belize/victoria-house/coral-suite"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Tower Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed"
+    ],
+    "lede": "A king suite in the tower, for two.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Rainforest Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed"
+    ],
+    "lede": "A king suite, for two.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Infinity Suite (1 Bedroom)",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed"
+    ],
+    "lede": "A one-bedroom suite with a king bed.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Infinity Suite (2 Bedroom)",
+    "sleeps": 4,
+    "facts": [
+     "1 King Bed and 1 Queen Bed"
+    ],
+    "lede": "A two-bedroom suite, for four.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Luxury Villas",
+    "sleeps": 4,
+    "facts": [
+     "2 King Beds"
+    ],
+    "lede": "Two king bedrooms, for four.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Casa Playa Blanca",
+    "sleeps": 4,
+    "facts": [
+     "2 King Beds"
+    ],
+    "lede": "A villa with two king bedrooms, for four.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Casa Del Sol",
+    "sleeps": 6,
+    "facts": [
+     "3 King Beds"
+    ],
+    "lede": "A villa with three king bedrooms, for six.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Casa Azul",
+    "sleeps": 10,
+    "facts": [
+     "5 Bedrooms"
+    ],
+    "lede": "The largest villa: five bedrooms, for ten.",
+    "features": [],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
  }
 }

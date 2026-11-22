@@ -1225,6 +1225,87 @@
    "placeSlug": "crete"
   },
   {
+   "slug": "aguas-arriba-lodge",
+   "name": "Aguas Arriba Lodge",
+   "ledgerId": "STY-2026-000793",
+   "country": "Argentina",
+   "countrySlug": "argentina",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Five suites on the east shore of Lago del Desierto, reached by boat or on foot, with Fitz Roy across the water",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/fitz-roy-reflected-in-lago-del-desierto",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lodge-exterior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/living-room-lake-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/aguas-arriba-lodge/rooms/fitz-roy-suites-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lodge-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/fitz-roy-at-dusk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lago-del-desierto-shore",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lodge-staircase",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/dining-table",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/granite-spires",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lake-from-the-trail"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -49.0480983,
+    "lng": -72.8654446
+   },
+   "airport": "El Calafate (FTE)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Fitz Roy Suites: two corner suites of 20 to 27 square metres, one on each floor, with three large windows to the lake, Mount Fitz Roy and the Vespignani Glacier.",
+     "Glacier Suites: three suites of 17 to 20 square metres on the upper floor, at the front of the lodge, with the same view.",
+     "Each suite has one queen bed or two twins, a bathroom with a bath and shower, radiators and a safe."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Hikes on the lodge's private trails, out each day",
+     "High mountain hikes with specialist guides, by arrangement",
+     "Fly fishing on the lake",
+     "Yoga and meditation",
+     "Bird watching and photography"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Boat transfers across the lake, in and out",
+     "A main room with a fireplace and a library",
+     "Minimum stay three nights. Guests aged over 12",
+     "Smoke free. Satellite Wi-Fi"
+    ]
+   },
+   "onlyHere": [
+    "Aguas Arriba Lodge is a wooden mountain house on the east shore of Lago del Desierto, 37 kilometres from El Chaltén and 15 kilometres from Los Glaciares National Park. It stands on private land with 900 metres of lake shore, and no road reaches it: guests cross the lake by boat or walk in through the lenga forest in about three hours.",
+    "There are five suites and never more than 12 guests. The owners, Ivor Matovic and Pato García, built it small on purpose, so a stay feels like a house shared with friends. All meals and the daily hikes are part of the stay."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "aguas-claras",
    "name": "Aguas Claras",
    "ledgerId": "STY-2026-000006",
@@ -6470,6 +6551,93 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "bahia-bustamante-lodge",
+   "name": "Bahía Bustamante Lodge",
+   "ledgerId": "STY-2026-000794",
+   "country": "Argentina",
+   "countrySlug": "argentina",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A former seaweed village turned nature lodge on the Atlantic coast of Patagonia, between the sea and the steppe",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/settlement-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/penguin-island",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/sea-lions-swimming",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/living-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/village-by-the-sea",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/la-prove-restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/island-aerial",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/guanacos-on-the-steppe",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/ocean-vineyard",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/art-installation-at-the-cape",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/terrace-fire-pit"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -45.126833,
+    "lng": -66.536333
+   },
+   "airport": "Comodoro Rivadavia (CRD)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Marine Lofts: for two, with a bedroom, living room, double sided wood stove, small kitchen and terraces to the sea and the steppe.",
+     "Vineyard Suite: for two, with king or twin beds and a veranda over the vineyard and the ocean.",
+     "Sea Front Cabins: for up to four, facing the sea.",
+     "Steppe Cabins: for up to three adults, or two adults and two children under 12, on an accommodation only basis.",
+     "Lofts, Vineyard Suite and Sea Front Cabins include full board and activities, for guests aged eight and over."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The boat out along the cove to sea lion and seabird colonies, at high tide.",
+     "Penguin Island: a walk at low tide to a Magellanic penguin colony.",
+     "The Petrified Forest, by 4x4 and on foot.",
+     "The Cape: Aristizabal Lighthouse, tide pools and an art installation by Christian Boltanski.",
+     "Rock Canyon: a walk down a dry riverbed to the ocean.",
+     "The Peninsula: beaches, red rock and rock pools, by bike, on foot or by 4x4.",
+     "A day on the ranch with the sheep.",
+     "The historic tour of the old village."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "La Prove, the guests only restaurant, with a fixed menu",
+     "Living room, terrace and fire pit facing the sea",
+     "A museum and interpretation centre in the village",
+     "Solar power for almost the whole day. Wi-Fi. No mobile signal",
+     "The whole village can be taken for a private gathering"
+    ]
+   },
+   "onlyHere": [
+    "Bahía Bustamante began in the 1950s as a seaweed gathering village founded by Lorenzo Soriano. His grandson Matías turned it into a nature lodge, and the family still runs it, alongside sheep farming, a vineyard by the ocean and a kitchen garden that supply the table.",
+    "The coast here lies inside the Blue Patagonia UNESCO Biosphere Reserve. The lodge counts 13 of the 16 seabird species that nest in Argentina, and its boat goes out past sea lions and Magellanic penguins. It takes no more than 30 to 35 guests a day."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -12519,7 +12687,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -19097,7 +19276,16 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -30859,7 +31047,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],

@@ -47,6 +47,14 @@
    "released": true
   },
   {
+   "stay_id": "6b0328dd4b936b3cb0cf0eea",
+   "slug": "aguas-arriba-lodge",
+   "name": "Aguas Arriba Lodge",
+   "country": "Argentina",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8b5",
    "slug": "aguas-claras",
    "name": "Aguas Claras",
@@ -628,6 +636,14 @@
    "slug": "babylonstoren",
    "name": "Babylonstoren",
    "country": "South Africa",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b0328dd4b936b3cb0cf0eeb",
+   "slug": "bahia-bustamante-lodge",
+   "name": "Bahía Bustamante Lodge",
+   "country": "Argentina",
    "missing": [],
    "released": true
   },

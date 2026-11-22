@@ -238,6 +238,7 @@ export const BUILT: string[] = [
 export const STAY_SLUGS: string[] = [
   "7132-hotel",
   "acro-suites",
+  "aguas-arriba-lodge",
   "aguas-claras",
   "aliikai-voyage",
   "alila-ventana-big-sur",
@@ -287,6 +288,7 @@ export const STAY_SLUGS: string[] = [
   "awasi-santa-catarina",
   "ayana-komodo",
   "babylonstoren",
+  "bahia-bustamante-lodge",
   "baines-lodge",
   "bambu-indah",
   "bamurru-plains",

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FieldIcon, type FieldIconName } from "@/components/ledger/FieldIcon";
 import AccordionRow from "@/components/journal/AccordionRow";
+import IggiMark from "@/components/iggi/IggiMark";
 import PathwayStamp from "@/components/pathways/PathwayStamp";
 import { pathwayStays } from "@/lib/content/pathways";
 import { PATHWAYS_ON } from "@/lib/content/pathways/flag";
@@ -231,6 +232,29 @@ export function SampleExpect({ v, cards, children }: { v: View; cards: { title: 
         </div>
       )}
       {children}
+    </section>
+  );
+}
+
+// Iggi, introduced: who he is and what to ask, in one card with his mark; the house's own chat sits inside, unchanged.
+export function SampleIggi({ name, children }: { name: string; children: React.ReactNode }) {
+  return (
+    <section id="ask-iggi" aria-label={`Ask Iggi about ${name}`} className="border border-[color:var(--jw-hairline)] bg-mist">
+      <div className="flex items-start gap-4 p-5 md:p-8">
+        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white text-graphite"><IggiMark size={38} decorative /></span>
+        <div>
+          <p className={`${T.label} text-stone-text`}>Iggi · the house field guide</p>
+          <h2 className={`${T.h2} mt-2 text-graphite`}>Ask Iggi About {name}</h2>
+          <p className={`${T.lead} mt-3 max-w-2xl text-graphite`}>Iggi is the house&rsquo;s AI guide. He answers from the Ledger, says where each answer comes from, and hands prices and bookings to a person.</p>
+          <p className={`${T.label} mt-5 text-stone-text`}>Try asking</p>
+          <ul className={`${T.body} mt-2 space-y-1 text-graphite`}>
+            <li>Which room suits us?</li>
+            <li>What is the best month to go?</li>
+            <li>How do we get there?</li>
+          </ul>
+        </div>
+      </div>
+      <div className="px-3 pb-3 md:px-8 md:pb-8">{children}</div>
     </section>
   );
 }

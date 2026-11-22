@@ -1386,7 +1386,9 @@
      "Walk-in shower",
      "Air conditioning"
     ],
-    "photos": [],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/rooms/seabreeze-beach-bungalow-1"
+    ],
     "plungePool": false
    },
    {
@@ -1403,7 +1405,9 @@
      "Walk-in shower and double sink",
      "Air conditioning"
     ],
-    "photos": [],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/rooms/seabreeze-beach-casitas-1"
+    ],
     "plungePool": false
    },
    {
@@ -1421,7 +1425,9 @@
      "Walk-in shower",
      "Air conditioning"
     ],
-    "photos": [],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/rooms/seafront-beach-casitas-1"
+    ],
     "plungePool": false
    },
    {
@@ -1439,7 +1445,9 @@
      "Continental breakfast",
      "Air conditioning"
     ],
-    "photos": [],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/rooms/seafront-luxury-suites-1"
+    ],
     "plungePool": true
    },
    {
@@ -1458,7 +1466,9 @@
      "Continental breakfast",
      "Air conditioning"
     ],
-    "photos": [],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/rooms/seabreeze-luxury-villa-1"
+    ],
     "plungePool": false
    },
    {
@@ -1477,7 +1487,9 @@
      "Continental breakfast",
      "Air conditioning"
     ],
-    "photos": [],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/matachica-resort-and-spa/rooms/seafront-luxury-villas-1"
+    ],
     "plungePool": false
    }
   ]
@@ -2419,6 +2431,87 @@
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/thatch-caye-resort/rooms/oceanfront-cabana-2"
     ],
     "plungePool": false
+   }
+  ]
+ },
+ "xanadu-island-resort": {
+  "_source": "xanaduislandresort.com (the resort's own site: home page and /room-only-rates/), read 21 Nov 2026 at James's request. 'From' is the lowest published room-only rate for the suite type (Low 2026 and Low 2027, 1 May to 17 December). Suite features and photographs still to read from the five suite pages.",
+  "ratesNote": "Room-only rates as published by Xanadu Island Resort, in US dollars. 'From' is the low-season rate (1 May to 17 December); high-season and holiday rates are higher. The resort adds a 9% government tax and a 10% service charge. Read 21 Nov 2026; the house confirms the rate for your dates.",
+  "rooms": [
+   {
+    "name": "Studio Suites",
+    "sleeps": null,
+    "facts": [
+     "Garden view"
+    ],
+    "lede": "The studio suites, in the garden.",
+    "features": [],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 180,
+     "basis": "per suite, per night · before 9% government tax and 10% service charge"
+    }
+   },
+   {
+    "name": "Loft Suites",
+    "sleeps": null,
+    "facts": [
+     "Ocean front, ocean view or garden view"
+    ],
+    "lede": "Loft suites, from the garden to the ocean front.",
+    "features": [],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 220,
+     "basis": "per suite, per night · before 9% government tax and 10% service charge"
+    }
+   },
+   {
+    "name": "One Bedroom Suites",
+    "sleeps": null,
+    "facts": [
+     "Pool and garden view"
+    ],
+    "lede": "One-bedroom suites by the pool and garden.",
+    "features": [],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 200,
+     "basis": "per suite, per night · before 9% government tax and 10% service charge"
+    }
+   },
+   {
+    "name": "Two Bedroom Suites",
+    "sleeps": null,
+    "facts": [
+     "Ocean front, pool or garden view"
+    ],
+    "lede": "Two-bedroom suites, from the garden to the ocean front.",
+    "features": [],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 325,
+     "basis": "per suite, per night · before 9% government tax and 10% service charge"
+    }
+   },
+   {
+    "name": "Three Bedroom Suites",
+    "sleeps": null,
+    "facts": [
+     "Deluxe ocean front or garden view"
+    ],
+    "lede": "The largest suites at Xanadu, with three bedrooms.",
+    "features": [],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 390,
+     "basis": "per suite, per night · before 9% government tax and 10% service charge"
+    }
    }
   ]
  }

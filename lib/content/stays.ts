@@ -42,6 +42,9 @@ const NAME_FIX: Record<string, string> = {
   "tengile-mala-mala-rattrays-lodge": "Rattray's Lodge", "tengile-mala-mala-sable-camp": "Sable Camp", "thornybush-reserve": "Thornybush Reserve",
   // Tengile MalaMala Collection (James, 20 Nov 2026): never an &Beyond name on these two (docs/verified-facts.md).
   "tengile-river-lodge-by-mala-mala": "Tengile River Lodge",
+  // Brand restored where the library name carries only the place (James, 21 Nov 2026: "Ok fix this").
+  "awasi-patagonia": "Awasi Patagonia", "awasi-mendoza": "Awasi Mendoza", "awasi-santa-catarina": "Awasi Santa Catarina", "iguazu": "Awasi Iguazú",
+  "explora-torres-del-paine": "Explora Torres del Paine", "explora-el-chalten": "Explora El Chaltén",
 };
 const cleanName = (s: StayData) => NAME_FIX[s.slug] ?? s.name.replace(/\s*\n\s*/g, " ").replace(/\s+/g, " ").trim();
 

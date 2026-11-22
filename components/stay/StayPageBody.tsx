@@ -58,6 +58,8 @@ import { stayTone } from "@/lib/content/stay-tone";
 import { CHART_COSTA_RICA } from "@/lib/charts/costa-rica";
 import { CHART_SOUTH_AFRICA } from "@/lib/charts/south-africa";
 import type { ChartData } from "@/components/destination/LedgerChart";
+import Dispatches from "@/components/record/Dispatches";
+import { dispatchesFor, openForDispatches } from "@/lib/content/dispatches";
 import LIB_CHARTS from "@/lib/charts/countries.json";
 import { BEST_FOR, STAYS, STAY_PAGES, VESSEL_PAGES, VESSEL_RECORDS, staysIn, stayBySlug, vesselBySlug, pageReady, altFor } from "@/lib/content/stays";
 import { VESSEL_WATERS, vessel as vesselOf, vesselHref, watersOf } from "@/lib/content/vessels";
@@ -456,6 +458,8 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
             </section>
           )}
           <FromTheJournal posts={postsForStay(s.slug)} />
+          {/* Dispatches from the road: approved traveler lines, or an open card where the House invites the first. */}
+          <Dispatches stay={s.name} items={dispatchesFor(s.slug)} open={openForDispatches(s.slug)} />
           <SessionsFor sessions={sessionsFor(`/stays/${s.slug}`)} name={s.name} />
           {!tight && <AdvisorStrip place={s.name} ledgerId={s.ledgerId} className="mt-16 md:mt-24" />}
           {ef && <WhoItSuits name={s.name} bestFor={ef.whoItSuits} lessIdealFor={ef.whoItMayNotSuit} />}

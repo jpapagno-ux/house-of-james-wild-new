@@ -3811,5 +3811,272 @@
     "plungePool": false
    }
   ]
+ },
+ "chez-georges": {
+  "_source": "georges.life/en/rio (suites pages), read 22 Nov 2026 at James's request. The villa prints no prices.",
+  "ratesNote": "The villa prints no prices: rates come by date. Breakfast is served in the house. Tell the house your dates and it will hold the suite that fits.",
+  "rooms": [
+   {
+    "name": "George Benson Master Suite",
+    "sleeps": 2,
+    "facts": [
+     "King Bed",
+     "49 sq m",
+     "Balcony"
+    ],
+    "lede": "The largest suite, with a balcony that looks to Sugarloaf and the ocean.",
+    "features": [
+     "Sugarloaf and ocean view",
+     "Balcony",
+     "Breakfast in the house"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/george-benson-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/george-benson-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Jorge Ben Master Suite",
+    "sleeps": 2,
+    "facts": [
+     "King Bed",
+     "32 sq m",
+     "Private balcony"
+    ],
+    "lede": "In the annex below the pool, with its own balcony over the forest.",
+    "features": [
+     "Forest view",
+     "Private balcony",
+     "Breakfast in the house"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/jorge-ben-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/jorge-ben-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Giorgio Moroder Premium Suite",
+    "sleeps": 2,
+    "facts": [
+     "King Bed",
+     "30 sq m"
+    ],
+    "lede": "A wide window wall onto the forest, with Sugarloaf beyond.",
+    "features": [
+     "Forest and Sugarloaf view",
+     "Breakfast in the house"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/giorgio-moroder-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/giorgio-moroder-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Georges Brassens Design Suite",
+    "sleeps": 2,
+    "facts": [
+     "King Bed",
+     "34 sq m",
+     "Shared balcony"
+    ],
+    "lede": "A design suite that shares a balcony facing Sugarloaf.",
+    "features": [
+     "Sugarloaf view",
+     "Shared balcony",
+     "Breakfast in the house"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/georges-brassens-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "George Gershwin Design Suite",
+    "sleeps": 2,
+    "facts": [
+     "King Bed",
+     "25 sq m",
+     "Shared balcony"
+    ],
+    "lede": "The smaller design suite, on the same Sugarloaf balcony.",
+    "features": [
+     "Sugarloaf view",
+     "Shared balcony",
+     "Breakfast in the house"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/george-gershwin-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Seu Jorge Comfort Suite",
+    "sleeps": 2,
+    "facts": [
+     "King Bed",
+     "28 sq m"
+    ],
+    "lede": "A quiet suite facing the streets of Santa Teresa.",
+    "features": [
+     "Santa Teresa view",
+     "Breakfast in the house"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/seu-jorge-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "George Harrison Comfort Suite",
+    "sleeps": 2,
+    "facts": [
+     "King Bed",
+     "32 sq m"
+    ],
+    "lede": "A comfort suite on the Santa Teresa side of the house.",
+    "features": [
+     "Santa Teresa view",
+     "Breakfast in the house"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/chez-georges/rooms/george-harrison-1"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "la-ferme-de-georges": {
+  "_source": "georges.life/en/atins (lodges pages), read 22 Nov 2026 at James's request. The pousada prints no prices.",
+  "ratesNote": "The pousada prints no prices: rates come by date. Tell the house your dates and group and it will match you to a lodge.",
+  "rooms": [
+   {
+    "name": "Dune Lodge",
+    "sleeps": 4,
+    "facts": [
+     "King Bed and 2 Single Beds",
+     "30 to 32 sq m"
+    ],
+    "lede": "A thatched lodge with a king bed and a lounge that holds two single beds.",
+    "features": [
+     "Private garden",
+     "Air conditioning",
+     "Hot shower"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/dune-lodge-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/dune-lodge-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "River Lodge",
+    "sleeps": 4,
+    "facts": [
+     "King or Queen Bed and 2 Single Beds",
+     "40 sq m"
+    ],
+    "lede": "A larger lodge with a covered lounge of its own.",
+    "features": [
+     "Covered private lounge",
+     "Private garden",
+     "Air conditioning"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/river-lodge-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/river-lodge-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Park Suite",
+    "sleeps": 5,
+    "facts": [
+     "45 sq m",
+     "Up to 5 guests",
+     "Open plan"
+    ],
+    "lede": "One open room under a tiled roof, with space for a family.",
+    "features": [
+     "Private garden",
+     "Air conditioning",
+     "Hot shower"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/park-suite-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/park-suite-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Park Lodge",
+    "sleeps": 5,
+    "facts": [
+     "2 Bedrooms",
+     "65 sq m",
+     "Up to 5 guests"
+    ],
+    "lede": "A two bedroom lodge in the gardens. There are five.",
+    "features": [
+     "Two bedrooms",
+     "Private garden",
+     "Air conditioning"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/park-lodge-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/park-lodge-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Tree Lodge",
+    "sleeps": null,
+    "facts": [
+     "3 Bedrooms",
+     "150 sq m",
+     "Tower"
+    ],
+    "lede": "Set on a dune above the cashew trees, with three bedrooms and a tower that looks all the way round.",
+    "features": [
+     "Tower with a view all round",
+     "Three bedrooms",
+     "Private garden",
+     "Air conditioning"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/tree-lodge-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/la-ferme-de-georges/rooms/tree-lodge-2"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "felissimo-exclusive-hotel": {
+  "_source": "felissimoexclusivehotel.com.br (Casa Verde page), read 22 Nov 2026 at James's request. The hotel prints no prices. Other suites wait on the hotel's media kit: its own page mixes suite names and photographs.",
+  "ratesNote": "The hotel prints no prices. It has 15 suites in all, each one different: tell the house your dates and it will find the one that fits.",
+  "rooms": [
+   {
+    "name": "Casa Verde",
+    "sleeps": 2,
+    "facts": [
+     "King Bed",
+     "120 sq m",
+     "Hot tub"
+    ],
+    "lede": "A house of its own in the garden, with a hot tub on the veranda.",
+    "features": [
+     "Hot tub",
+     "Veranda",
+     "Bathroom with two showers and a bath"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/felissimo-exclusive-hotel/rooms/casa-verde-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/felissimo-exclusive-hotel/rooms/casa-verde-2"
+    ],
+    "plungePool": false
+   }
+  ]
  }
 }

@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-21",
+ "exportedOn": "2026-11-22",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -7894,6 +7894,94 @@
    "arrivalHubIds": [
     "6ae697409300c15bed28823f"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "blue-reef-island",
+   "name": "Blue Reef Island",
+   "ledgerId": "STY-2026-000780",
+   "country": "Belize",
+   "countrySlug": "belize",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A three-acre private island a short boat ride from Dangriga, with five glass-fronted cabanas over the Caribbean",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-air",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/cabana",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-4"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Five individual cabanas with glass fronts, about 20 by 20 feet each.",
+     "King or family layouts, each with a pull-out sofa bed.",
+     "Private veranda with seating and a hammock, and a private dock.",
+     "Indoor bathroom with double vanities and an outdoor private shower room.",
+     "Premier Cabana: seafront, with a private plunge pool on the veranda.",
+     "Air conditioning and fans, WiFi, a mini fridge stocked daily, robes, daily housekeeping and turndown."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Fly fishing, deep sea fishing and spearfishing from the island",
+     "Scuba diving and snorkelling",
+     "Kayaks and paddleboards",
+     "Mainland tours",
+     "Massage on the island"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Blue Reef Island is a three-acre private island 20 to 30 minutes by boat from Dangriga, part of The Belize Collection. Five air-conditioned cabanas face the sea, each with a veranda, a dock and an indoor and an outdoor shower; three have walkways straight into the water and the premier cabana has its own plunge pool. A pool and hot tub for island guests face west for the sunset. The days are for the water: fly fishing, deep sea fishing, diving, snorkelling, kayaks and paddleboards."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": "coast",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (21 Nov 2026)",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -19373,6 +19461,98 @@
    "placeSlug": null
   },
   {
+   "slug": "gaia-riverlodge",
+   "name": "Gaïa Riverlodge",
+   "ledgerId": "STY-2026-000778",
+   "country": "Belize",
+   "countrySlug": "belize",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Thatched cabanas and suites above the Five Sisters Waterfalls in the Mountain Pine Ridge, run on its own hydroelectric power",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/arrival",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/stay",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/waterfall-view-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/riverside-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/mountain-view-cabanas",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/dining",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/experiences",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/wellness",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/about"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "adventure",
+    "wellness",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Waterfall View Suite: two storeys, a king bed and a queen pull-out couch, walk-in shower, waterfall view.",
+     "Riverside Villa: private, on the river's edge, with a king bed, walk-in shower and hot tub.",
+     "Waterfall View Cabana: a king bed above the Five Sisters Waterfalls, for two.",
+     "Mountain View Cabanas: raised jungle cabanas with mountain views, for two.",
+     "Hillside Double Room: in the jungle, for two to four.",
+     "Continental breakfast is included with the suites, villa and Waterfall View Cabana."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Swim in the pools below the Five Sisters Waterfalls",
+     "Hike the rainforest and pine trails of the Mountain Pine Ridge",
+     "Visit Maya ruins from the lodge",
+     "Stargaze by the campfire",
+     "Spa treatments in the rainforest spa"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Gaïa Riverlodge stands above the Five Sisters Waterfalls in the Mountain Pine Ridge Forest Reserve. The lodge is off the grid and makes its own power from the river. Sixteen thatch-roofed cabanas and suites are built in Belizean hardwoods with palmetto walls and private verandas, and the open-air Five Sisters Restaurant cooks from the lodge's organic garden. It is the sister lodge of Matachica on Ambergris Caye, so reef and rainforest pair in one trip."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [],
+    "setting": "cayo",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (21 Nov 2026)",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "gibbs-farm",
    "name": "Gibb's Farm",
    "ledgerId": "STY-2026-000099",
@@ -20791,6 +20971,90 @@
     "status": "approved",
     "classifiedBy": "James Papagno (18 Nov 2026 request, drafted by Claude)",
     "classifiedAt": "2026-11-18"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "hamanasi",
+   "name": "Hamanasi Adventure & Dive Resort",
+   "ledgerId": "STY-2026-000779",
+   "country": "Belize",
+   "countrySlug": "belize",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A beachfront resort at Hopkins with treehouse rooms in the forest behind it, its own dive operation and day trips to reef and rainforest",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/hamanasi/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/hamanasi/arrival"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "adventure",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Philip Goldson International Airport (BZE); Dangriga airstrip",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Deluxe Treehouse Rooms: secluded, in the rainforest canopy",
+     "Treehouse Rooms: a private treehouse in the forest",
+     "Beachfront Suites: beside the Caribbean",
+     "Beachfront Plus Rooms: more room to share",
+     "Beachfront Rooms: steps from the beach"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Night hike in the Cockscomb Basin jaguar preserve",
+     "Maya history tour",
+     "Canoe a jungle river",
+     "Hike to the Mayflower waterfalls, with birding on the way",
+     "Cave and jungle adventure day"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Hamanasi sits on the beach at Hopkins on Belize's southern coast, with rainforest behind it. Guests sleep either on the beachfront or in treehouse rooms in the forest canopy, and spend the days between the barrier reef and the interior: diving and snorkelling with the resort's own marine operation, the Cockscomb Basin jaguar preserve, Maya sites, caves and rivers. The resort is Green Globe certified and a founding member of Regenerative Travel. Rooms have no television or telephone."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "coast",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (21 Nov 2026)",
+    "classifiedAt": "2026-11-21"
    },
    "volumes": [
     "stays"
@@ -62605,6 +62869,90 @@
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "victoria-house",
+   "name": "Victoria House Resort & Spa",
+   "ledgerId": "STY-2026-000781",
+   "country": "Belize",
+   "countrySlug": "belize",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A 42-room beach resort on Ambergris Caye, from staterooms and casitas to private villas, at the edge of the Belize Barrier Reef",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/victoria-house/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/victoria-house/coral-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/victoria-house/hibiscus-suite"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "family",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "San Pedro (SPR), via Belize International (BZE)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Staterooms and Studio Rooms: a queen bed, or a queen and a double.",
+     "Palmetto Rooms: a king bed. Casitas: a queen bed.",
+     "Hibiscus, Coral and Tower Suites: a king bed.",
+     "Rainforest Suite: a king bed. Infinity Suites: one bedroom with a king, or two bedrooms for four.",
+     "Luxury Villas and Casa Playa Blanca: two king bedrooms, for four.",
+     "Casa Del Sol: three king bedrooms, for six. Casa Azul: five bedrooms, for ten."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Fishing from the resort",
+     "Mainland days to Maya ruins and caves, and zip lining",
+     "Aerial tours",
+     "Treatments at La Luna Spa"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Victoria House is a 42-room resort on the beach at San Pedro, Ambergris Caye, at the edge of the Belize Barrier Reef. It runs from staterooms, casitas and suites to private villas with their own pools, the largest with five bedrooms. Palmilla Restaurant and Admiral Nelson's Bar are on the property, and La Luna Spa covers 3,500 square feet. The reef, the Great Blue Hole and mainland Maya sites are day trips from the dock."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": "ambergris_caye",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (21 Nov 2026)",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

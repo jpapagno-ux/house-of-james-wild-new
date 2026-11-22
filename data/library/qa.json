@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-21",
+ "checkedOn": "2026-11-22",
  "rows": [
   {
    "stay_id": "6afcd60dd016b84dcfe94ea1",
@@ -947,6 +947,16 @@
    "stay_id": "6a9c3ddc48b7e640309dbc23",
    "slug": "blue-reef",
    "name": "Blue Reef Beach Resort",
+   "country": "Belize",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6b0242f45f0faf0abe50448d",
+   "slug": "blue-reef-island",
+   "name": "Blue Reef Island",
    "country": "Belize",
    "missing": [
     "coordinates"
@@ -2161,6 +2171,16 @@
    "released": false
   },
   {
+   "stay_id": "6b0242f45f0faf0abe50448b",
+   "slug": "gaia-riverlodge",
+   "name": "Gaïa Riverlodge",
+   "country": "Belize",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1bfe6fc35d44131037f",
    "slug": "galapagos-monique",
    "name": "Galapagos Monique",
@@ -2335,6 +2355,16 @@
    "slug": "hacienda-na-xamena",
    "name": "Hacienda Na Xamena",
    "country": "Spain-Ibiza",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6b0242f45f0faf0abe50448c",
+   "slug": "hamanasi",
+   "name": "Hamanasi Adventure & Dive Resort",
+   "country": "Belize",
    "missing": [
     "coordinates"
    ],
@@ -6329,6 +6359,16 @@
    "name": "Viceroy Bali Ubud's Sanctuary",
    "country": "Indonesia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b0242f45f0faf0abe50448e",
+   "slug": "victoria-house",
+   "name": "Victoria House Resort & Spa",
+   "country": "Belize",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

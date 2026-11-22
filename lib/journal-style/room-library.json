@@ -3095,5 +3095,221 @@
     "plungePool": false
    }
   ]
+ },
+ "futangue-hotel-spa": {
+  "_source": "parquefutangue.com (hotel, programs and events pages), read 22 Nov 2026 at James's request. Programme prices are filed in the Stay Studio notes, not printed.",
+  "ratesNote": "The hotel prices by programme, from bed and breakfast to all-inclusive with guided excursions and transfers. Every programme includes the spa and entry to the reserve. Ask the house for your dates.",
+  "rooms": [
+   {
+    "name": "Superior Room",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Twin Beds",
+     "26 sq m",
+     "14 at the hotel"
+    ],
+    "lede": "In the main building, panelled in native timber, with garden or mountain views.",
+    "features": [
+     "Garden or mountain view",
+     "Coffee machine and minibar",
+     "Breakfast included",
+     "Takes 2 adults and 1 child"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/futangue-hotel-spa/rooms/superior-room-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/futangue-hotel-spa/rooms/superior-room-2",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/futangue-hotel-spa/rooms/superior-room-3"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Twin Beds",
+     "35 sq m",
+     "2 at the hotel"
+    ],
+    "lede": "The largest rooms, in the main building, with a small lounge facing the gardens and mountains.",
+    "features": [
+     "Lounge area",
+     "Bathroom with double vanity",
+     "Coffee machine and minibar",
+     "Breakfast included",
+     "Takes 2 adults and 1 child"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/futangue-hotel-spa/rooms/suite-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/futangue-hotel-spa/rooms/suite-2",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/futangue-hotel-spa/rooms/suite-3"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Standard Room",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Twin Beds",
+     "26 sq m",
+     "10 in Casa Exploradores"
+    ],
+    "lede": "In Casa Exploradores, 120 metres from the main building, with a terrace over open country.",
+    "features": [
+     "Terrace with open-country view",
+     "Native timber floors",
+     "Breakfast included",
+     "Takes 2 adults and 1 child"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/futangue-hotel-spa/rooms/standard-room-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/futangue-hotel-spa/rooms/standard-room-2"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "mashpi-lodge": {
+  "_source": "mashpilodge.com/rooms-and-suites, read 22 Nov 2026 at James's request; sizes and beds from the lodge's own 2021 brochure. Rates are filed in the Stay Studio notes, not printed: the page does not state the basis.",
+  "rooms": [
+   {
+    "name": "Yaku Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed",
+     "46 sq m",
+     "3 at the lodge"
+    ],
+    "lede": "The lodge's three suites, each with a freestanding tub beside the glass.",
+    "features": [
+     "Freestanding bathtub",
+     "Floor-to-ceiling forest windows",
+     "Sound-proofing, humidity and temperature control",
+     "Automatic blinds"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/yaku-suite-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Wayra Room",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Full Beds",
+     "34 to 39 sq m",
+     "20 at the lodge"
+    ],
+    "lede": "The main rooms, spread across the lodge's three levels, with the forest behind a full wall of glass.",
+    "features": [
+     "Floor-to-ceiling forest windows",
+     "Some rooms interconnect",
+     "Takes 2 adults and 2 children under 12",
+     "Sound-proofing, humidity and temperature control"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wayra-room-2",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wayra-room-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wayra-room-3"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Wawa Room",
+    "sleeps": 1,
+    "facts": [
+     "1 Full Bed",
+     "21 sq m",
+     "1 at the lodge"
+    ],
+    "lede": "A smaller room for one traveller. Wawa is the Kichwa word for baby.",
+    "features": [
+     "Floor-to-ceiling forest window",
+     "For one adult"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wawa-room-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wawa-room-2"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "explora-rapa-nui": {
+  "_source": "explora.com (Rapa Nui lodge and rooms pages), read 22 Nov 2026 at James's request. Rates not read into the site. Room photographs still to add from the lodge's own site.",
+  "rooms": [
+   {
+    "name": "Varúa Room",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Twin Beds",
+     "32 sq m",
+     "26 at the lodge"
+    ],
+    "lede": "The lodge's main rooms, lined in natural wood, looking over the gardens to the Pacific.",
+    "features": [
+     "Garden and ocean view",
+     "Jetted bathtub",
+     "Air conditioning and heating",
+     "Crib on request"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Raa Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Twin Beds",
+     "44 sq m",
+     "4 at the lodge"
+    ],
+    "lede": "The four suites, with more room and the same view over the gardens to the ocean.",
+    "features": [
+     "Garden and ocean view",
+     "Jetted bathtub",
+     "Extra bed for a child",
+     "Air conditioning and heating"
+    ],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
+ },
+ "nayara-hangaroa": {
+  "_source": "nayarahangaroa.com/stay, read 22 Nov 2026 at James's request (first read; sizes for the Ma'unga room and the photographs still to add). Rates not read into the site.",
+  "rooms": [
+   {
+    "name": "Kainga",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Twin Beds",
+     "49 sq m",
+     "Sofa bed"
+    ],
+    "lede": "An open room of cypress logs, clay and volcanic stone, with floor-to-ceiling windows towards the sea.",
+    "features": [
+     "Floor-to-ceiling windows",
+     "Shower and a clay bathtub made by an artisan from Pichilemu",
+     "Sofa bed",
+     "Connecting rooms available"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Ma'unga",
+    "sleeps": null,
+    "facts": [
+     "Two levels"
+    ],
+    "lede": "Built on two levels for families, with an open floor and full-height windows over the ocean.",
+    "features": [
+     "Two levels",
+     "Floor-to-ceiling ocean windows"
+    ],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
  }
 }

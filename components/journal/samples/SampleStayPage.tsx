@@ -35,6 +35,16 @@ const SCRIM = "linear-gradient(180deg,rgba(26,24,22,.5) 0,rgba(26,24,22,0) 22%,r
 
 type Shot = { url: string; alt: string };
 
+function Head({ icon, label, title }: { icon: FieldIconName; label: React.ReactNode; title: string }) {
+  return (
+    <>
+      <FieldIcon name={icon} height={28} className="text-graphite" />
+      <p className={`${T.label} mt-4 text-stone-text`}>{label}</p>
+      <h2 className={`${T.h2} mt-3 text-graphite`}>{title}</h2>
+    </>
+  );
+}
+
 function Chapter({ no, label, title, text, photo }: { no: string; label: string; title: string; text: string[]; photo: Shot }) {
   return (
     <section aria-label={title} className="relative isolate h-[88svh] min-h-[520px] overflow-hidden bg-ink-deep text-white">
@@ -115,16 +125,13 @@ export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: {
   };
   const chapters = [
     s.onlyHere[0] ? { label: s.country ?? "The place", title: "Only Here", text: [s.onlyHere[0]], photo: take("exterior", null) } : null,
-    s.experiences.items.length ? { label: "Experiences", title: "What You Can Do From Here", text: s.experiences.items.slice(0, 3), photo: take("experiences", "pool", null) } : null,
-    s.features.items.length ? { label: "The stay", title: "What You Get", text: s.features.items.slice(0, 3), photo: take("dining", "pool", null) } : null,
     s.onlyHere[1] ? { label: "Before you go", title: "Good to Know", text: [s.onlyHere[1]], photo: take("exterior", "pool", null) } : null,
   ].filter((c): c is { label: string; title: string; text: string[]; photo: Shot } => !!c && !!c.photo);
 
   const Rooms = rooms.length > 0 && (
     <section id="rooms" aria-label="Rooms" className={`!bg-mist ${GAP}`}>
       <div className={WRAP}>
-        <p className={`${T.label} text-stone-text`}>Rooms</p>
-        <h2 className={`${T.h2} mt-3 text-graphite`}>Where You&rsquo;ll Sleep</h2>
+        <Head icon="tree-ring" label="Rooms" title="Where You’ll Sleep" />
       </div>
       {promo && <p className={`${WRAP} ${T.label} mt-4 text-house`}>{promo}</p>}
       {bar && <div className={`${WRAP} mt-6`}>{bar}</div>}
@@ -154,8 +161,8 @@ export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: {
   return (
     <>
       <section aria-label="Overview" className={`${WRAP} ${GAP}`}>
-        <p className={`${T.label} text-stone-text`}>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</p>
-        <p className={`${T.lead} mt-5 max-w-4xl text-graphite`}>{v.answer}</p>
+        <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why It Is Here" />
+        <p className={`${T.body} mt-5 max-w-[62ch] text-graphite`}>{v.answer}</p>
       </section>
       {(variant === "a" || variant === "d") && <>
         {chapters.slice(0, 1).map((c, i) => <Chapter key={c.label} no={`0${i + 1}`} {...c} />)}
@@ -188,33 +195,19 @@ const ICONS: FieldIconName[] = ["sun", "frond", "tree-ring", "coral"];
 export function SampleDetail({ v }: { v: View }) {
   const { s } = v;
   const list = (items: string[]) => <ul className="space-y-2">{items.map((t) => <li key={t}>{t}</li>)}</ul>;
-  const left = [
-    ...(s.experiences.items.length ? [{ title: "Experiences", body: list(s.experiences.items) }] : []),
-    ...(s.facts.signature_experiences ? [{ title: "Signature experiences", body: <p>{s.facts.signature_experiences}</p> }] : []),
+  const told = s.experiences.paras.length > 0 || s.experiences.items.length > 0 || v.experiences.length > 0;
+  const rows = [
+    ...(s.features.items.length ? [{ title: "Features", body: list(s.features.items) }] : []),
+    ...s.why.filter((w) => w.title).map((w) => ({ title: w.title as string, body: <p>{w.body}</p> })),
+    ...(!told && s.facts.signature_experiences ? [{ title: "Signature experiences", body: <p>{s.facts.signature_experiences}</p> }] : []),
     ...(s.facts.who_its_for ? [{ title: "Who it is for", body: <p>{s.facts.who_its_for}</p> }] : []),
   ];
-  const right = [
-    ...(s.features.items.length ? [{ title: "Features", body: list(s.features.items) }] : []),
-    ...(s.onlyHere.length ? [{ title: "Only here", body: <div className="space-y-3">{s.onlyHere.map((t) => <p key={t}>{t}</p>)}</div> }] : []),
-    ...s.why.filter((w) => w.title).map((w) => ({ title: w.title as string, body: <p>{w.body}</p> })),
-  ];
-  if (!left.length && !right.length) return null;
-  const col = (label: string, title: string, rows: { title: string; body: React.ReactNode }[]) => rows.length > 0 && (
-    <div>
-      <p className={`${T.label} text-stone-text`}>{label}</p>
-      <h3 className="font-display font-medium text-[26px] text-graphite mt-1.5">{title}</h3>
-      <div className="mt-4 border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] px-5 [&>div:first-child]:border-t-0">
-        {rows.map((r, i) => <AccordionRow key={r.title} as="h4" title={r.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{r.body}</AccordionRow>)}
-      </div>
-    </div>
-  );
+  if (!rows.length) return null;
   return (
-    <section id="detail" aria-label="Experiences and features" className="bg-white">
-      <p className={`${T.label} text-stone-text`}>The detail, folded away</p>
-      <h2 className={`${T.h2} mt-3 text-graphite`}>The Detail</h2>
-      <div className="mt-9 grid lg:grid-cols-2 gap-10 items-start">
-        {col("Experiences", "What You Can Do From Here", left)}
-        {col("Features of the stay", "What You Get", right)}
+    <section id="detail" aria-label="What you get" className="bg-white">
+      <Head icon="frond" label="The stay" title="What You Get" />
+      <div className="mt-8 max-w-3xl border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] px-5 [&>div:first-child]:border-t-0">
+        {rows.map((r, i) => <AccordionRow key={r.title} as="h3" title={r.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{r.body}</AccordionRow>)}
       </div>
     </section>
   );

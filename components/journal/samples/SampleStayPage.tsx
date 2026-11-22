@@ -21,6 +21,8 @@ export const SAMPLES: { variant: Variant; slug: string; name: string }[] = [
   { variant: "c", slug: "fazenda-moreias", name: "C · Film first" },
   { variant: "d", slug: "aguas-claras", name: "D · Chosen mix, with prices" },
 ];
+/** The chosen layout (D) for the whole new batch, on the preview, before it goes live. */
+export const BATCH = ["aguas-claras", "the-singular-patagonia", "futangue-hotel-spa", "nayara-hangaroa", "mashpi-lodge", "sacha-lodge", "napo-wildlife-center", "luna-volcan", "iguana-crossing", "fazenda-moreias", "chez-georges", "la-ferme-de-georges", "felissimo-exclusive-hotel", "aguas-arriba-lodge", "bahia-bustamante-lodge"];
 
 const T = {
   display: "font-display font-medium leading-[0.98] text-[40px] md:text-[72px]",
@@ -160,9 +162,14 @@ export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: {
   );
   return (
     <>
-      <section aria-label="Overview" className={`${WRAP} ${GAP}`}>
-        <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why It Is Here" />
+      <section id="why" aria-label="Why it is here" className={`${WRAP} ${GAP} scroll-mt-32`}>
+        <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why We Added It to the Portfolio" />
         <p className={`${T.body} mt-5 max-w-[62ch] text-graphite`}>{v.answer}</p>
+        {s.why.filter((w) => w.title).length > 0 && (
+          <div className="mt-8 max-w-3xl border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] px-5 [&>div:first-child]:border-t-0">
+            {s.why.filter((w) => w.title).map((w, i) => <AccordionRow key={w.title} as="h3" title={w.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{w.body}</AccordionRow>)}
+          </div>
+        )}
       </section>
       {(variant === "a" || variant === "d") && <>
         {chapters.slice(0, 1).map((c, i) => <Chapter key={c.label} no={`0${i + 1}`} {...c} />)}
@@ -190,25 +197,40 @@ export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: {
   );
 }
 
-// Experiences and features, folded: the house's own accordion rows with the house icons. Every row stays in the page.
+// What you can expect: what there is to do and what the stay gives you, in one place, told once.
 const ICONS: FieldIconName[] = ["sun", "frond", "tree-ring", "coral"];
-export function SampleDetail({ v }: { v: View }) {
+export function SampleExpect({ v, cards, children }: { v: View; cards: { title: string; image?: string; alt?: string }[]; children?: React.ReactNode }) {
   const { s } = v;
-  const list = (items: string[]) => <ul className="space-y-2">{items.map((t) => <li key={t}>{t}</li>)}</ul>;
-  const told = s.experiences.paras.length > 0 || s.experiences.items.length > 0 || v.experiences.length > 0;
+  const list = (items: string[]) => <ul className="space-y-2">{items.map((x) => <li key={x}>{x}</li>)}</ul>;
+  const shown = cards.filter((c) => c.image);
+  const told = s.experiences.paras.length > 0 || s.experiences.items.length > 0;
   const rows = [
-    ...(s.features.items.length ? [{ title: "Features", body: list(s.features.items) }] : []),
-    ...s.why.filter((w) => w.title).map((w) => ({ title: w.title as string, body: <p>{w.body}</p> })),
+    ...(s.experiences.items.length ? [{ title: "Things to do", body: list(s.experiences.items) }] : []),
+    ...(s.features.items.length ? [{ title: "What the stay gives you", body: list(s.features.items) }] : []),
     ...(!told && s.facts.signature_experiences ? [{ title: "Signature experiences", body: <p>{s.facts.signature_experiences}</p> }] : []),
     ...(s.facts.who_its_for ? [{ title: "Who it is for", body: <p>{s.facts.who_its_for}</p> }] : []),
   ];
-  if (!rows.length) return null;
+  if (!rows.length && !s.experiences.paras.length && !shown.length) return null;
   return (
-    <section id="detail" aria-label="What you get" className="bg-white">
-      <Head icon="frond" label="The stay" title="What You Get" />
-      <div className="mt-8 max-w-3xl border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] px-5 [&>div:first-child]:border-t-0">
-        {rows.map((r, i) => <AccordionRow key={r.title} as="h3" title={r.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{r.body}</AccordionRow>)}
-      </div>
+    <section id="expect" aria-label="What you can expect" className="bg-white scroll-mt-32">
+      <Head icon="mountain-sun" label="Experiences and the stay" title="What You Can Expect" />
+      {s.experiences.paras.length > 0 && <div className={`${T.body} mt-5 max-w-[62ch] space-y-4 text-graphite`}>{s.experiences.paras.map((x) => <p key={x}>{x}</p>)}</div>}
+      {shown.length > 0 && (
+        <ul className="mt-8 -mx-5 md:-mx-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 md:px-10 pb-2 [scrollbar-width:none]">
+          {shown.map((c) => (
+            <li key={c.title} className="w-[70vw] max-w-[340px] shrink-0 snap-start">
+              <figure className="relative aspect-[4/5] overflow-hidden bg-mist"><Image src={c.image as string} alt={c.alt ?? c.title} fill sizes="(min-width:768px) 340px, 70vw" className="object-cover" /></figure>
+              <p className="mt-3 font-display text-[20px] leading-snug text-graphite">{c.title}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+      {rows.length > 0 && (
+        <div className="mt-8 max-w-3xl border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] px-5 [&>div:first-child]:border-t-0">
+          {rows.map((r, i) => <AccordionRow key={r.title} as="h3" title={r.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{r.body}</AccordionRow>)}
+        </div>
+      )}
+      {children}
     </section>
   );
 }

@@ -40,7 +40,7 @@ import { entryNo } from "@/lib/volumes";
 import { day, journalStay, money, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
 import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, SectionHead, StickyBar, PhotoViewer, PhotoLink, PhotoStrip, DatesBar, PickRoom, RequestForm } from "./journal-style";
 import type { OfferRow } from "./JournalOffers";
-import { SampleBody, SampleDetail, SampleHero, SampleSwitch, type Variant } from "./samples/SampleStayPage";
+import { SampleBody, SampleExpect, SampleHero, SampleSwitch, type Variant } from "./samples/SampleStayPage";
 
 // JWC-STYLE-01, Stages 1 to 9: the Modern Journal stay page, for the pilot's sample stays only (lib/journal-style/
 // pages.json). It is reached through the flag or the ?journal=1 preview switch (next.config.ts rewrites); the live
@@ -155,6 +155,25 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
   // James, 21 Nov 2026: the pathway entrance is the house design for every stay with an approved pathway, each in its own colour
   const wow = !!pw;
   const wowCss = wow ? `.journal-style #journal-hero{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important}.journal-style #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.45) 0,rgba(26,24,22,.03) 12svh,rgba(26,24,22,.03) 36svh,color-mix(in srgb,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 38%,transparent) 46svh,color-mix(in srgb,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 86%,transparent) 56svh,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 62svh,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 100%)!important}.journal-style #journal-hero h1{text-shadow:0 1px 16px rgba(0,0,0,.45)}.journal-style #journal-hero p{text-shadow:0 1px 10px rgba(0,0,0,.55)}@media(min-width:768px){.journal-style #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.5) 0%,rgba(26,24,22,.1) 24%,rgba(26,24,22,.1) 46%,color-mix(in srgb,var(--jw-path) 22%,transparent) 72%,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 100%)!important}}.journal-style #record-bar{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important;border-top-color:color-mix(in srgb,var(--jw-path) 70%,#fff)!important}.jw-hero-stamp{opacity:.95;filter:drop-shadow(0 1px 5px rgba(0,0,0,.5));animation:jw-stamp-in .9s cubic-bezier(.2,.9,.3,1.15) .5s both,jw-stamp-drift 7s ease-in-out 1.6s infinite alternate}@keyframes jw-stamp-in{0%{opacity:0;transform:scale(1.5) rotate(12deg)}55%{opacity:1;transform:scale(.96) rotate(-1deg)}100%{opacity:.9;transform:scale(1) rotate(0)}}@keyframes jw-stamp-drift{from{transform:translateY(0) rotate(0)}to{transform:translateY(3px) rotate(.8deg)}}@media(prefers-reduced-motion:reduce){.jw-hero-stamp{animation:none}}` : "";
+  const offersEl = <JournalOffers no={N.offers} name={s.name} offers={offerRows} applyHref="#reserve" />;
+  const reserveEl = (sl: typeof slip) => (
+    <JournalReserve no={N.reserve} steps={steps} slip={sl} live={live} reserve={{ label: "Plan a trip around it", href: planHref }} form={<RequestForm slug={s.slug} name={s.name} path={path} rooms={roomNames} />} save={<SaveToFolio slug={s.slug} name={s.name} inline />}
+              folio={FLAGS.save ? (
+                <div className="mt-12 flex flex-col md:flex-row md:items-center justify-between gap-5 border-t border-[color:var(--jw-keyline)] pt-8">
+                  <div><p className="font-mono text-[10px] tracking-[0.24em] uppercase text-stone-text">Not booking today</p><p className="font-display font-medium text-[26px] text-graphite mt-1">Keep {s.name} in your Folio</p></div>
+                  <SaveToFolio slug={s.slug} name={s.name} />
+                </div>
+              ) : undefined} />
+  );
+  const hostEl = v.hostReady && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={v.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} className="" />;
+  const mapEl = hasMap && <JournalMap no={N.map} name={s.name} chart={chart as ChartData} pin={s.coords as { lat: number; lng: number }}
+              others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })}
+              rows={[...(s.airport ? [{ label: "Airport", value: s.airport }] : []), ...(s.airportDirections ? [{ label: "Transfer", value: s.airportDirections }] : []), ...(s.bestMonths ? [{ label: "Best months", value: s.bestMonths }] : [])]}
+              note={s.bestMonthsNote} routes={v.routes.filter((r) => isBuilt(r.href))} />;
+  const iggiEl = IGGI_ON && <IggiPanel ctx={{ entityType: "stay", entitySlug: s.slug, countrySlug: s.countrySlug ?? null, ledgerId: s.ledgerId ?? null, sourcePage: path, volume: s.volumes?.[0] ?? "stays" }} heading={`Ask Iggi about ${s.name}`} />;
+  const questionsEl = <JournalQuestions no={N.questions} name={s.name} faqs={s.faqs} schema={s.faqs.length > 0 && s.reviewed} />;
+  // the sample order, as a traveller asks: what to expect, any saving, where it is (Iggi first, then the map), how to book, questions
+  const jumpS: [string, string][] = [["Why it is here", "why"], ...(roomRows.length ? [["Rooms", "rooms"] as [string, string]] : []), ["What to expect", "expect"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ["Reserve", "reserve"], ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
   const pwRow = pw && wow ? (
     <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-5 flex flex-wrap items-center gap-x-6 gap-y-3" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 16%, #fff), transparent)" }}>
               <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
@@ -165,7 +184,7 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
   const crumbs = <div className="pt-6"><Breadcrumbs trail={trail} /></div>;
   return (
     <div className={`journal-style bg-white ${pwScope} ${sample ? "jw-sample" : ""}`}>
-      {sample && <style>{`.journal-style.jw-sample #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.5) 0,rgba(26,24,22,0) 20%,rgba(26,24,22,0) 52%,color-mix(in srgb,color-mix(in srgb,var(--jw-path,#1A1816) 62%,#0b0e0c) 55%,transparent) 76%,color-mix(in srgb,color-mix(in srgb,var(--jw-path,#1A1816) 62%,#0b0e0c) 90%,transparent) 100%)!important}.jw-sample .jw-stack>#experiences header h2::before{content:'';display:block;height:28px;width:50px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/mountain-sun.svg) left center/contain no-repeat;mask:url(/icons/field/mountain-sun.svg) left center/contain no-repeat}.jw-sample .jw-stack>#location header h2::before{content:'';display:block;height:28px;width:26px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/signal-flag.svg) left center/contain no-repeat;mask:url(/icons/field/signal-flag.svg) left center/contain no-repeat}.jw-sample .jw-stack>#offers header h2::before{content:'';display:block;height:28px;width:26px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/bell.svg) left center/contain no-repeat;mask:url(/icons/field/bell.svg) left center/contain no-repeat}.jw-sample .jw-stack>#reserve header h2::before{content:'';display:block;height:28px;width:24px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/anchor.svg) left center/contain no-repeat;mask:url(/icons/field/anchor.svg) left center/contain no-repeat}.jw-sample .jw-stack>#questions header h2::before{content:'';display:block;height:28px;width:28px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/lifebuoy.svg) left center/contain no-repeat;mask:url(/icons/field/lifebuoy.svg) left center/contain no-repeat}.jw-sample .jw-stack header>div:first-child{display:none}.jw-sample .jw-stack header h2{margin-top:0!important}.jw-sample .jw-stack{display:flex;flex-direction:column;gap:72px}.jw-sample .jw-stack>*{margin-top:0!important;order:9}.jw-sample .jw-stack>#experiences{order:1}.jw-sample .jw-stack>#location{order:2}.jw-sample .jw-stack>#offers{order:3}.jw-sample .jw-stack>#reserve{order:4}.jw-sample .jw-stack>#host,.jw-sample .jw-stack>:has(#host){order:5}.jw-sample .jw-stack>#detail{order:6}.jw-sample .jw-stack>#questions{order:7}.jw-sample .jw-stack>#iggi{order:8;border-top:0!important;padding-top:0!important}.jw-sample .jw-stack header .text-house{display:none}.jw-sample .jw-stack h2{font-size:30px!important;line-height:1.05!important}@media(min-width:768px){.jw-sample .jw-stack{gap:120px}.jw-sample .jw-stack h2{font-size:44px!important}}`}</style>}
+      {sample && <style>{`.journal-style.jw-sample #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.5) 0,rgba(26,24,22,0) 20%,rgba(26,24,22,0) 52%,color-mix(in srgb,color-mix(in srgb,var(--jw-path,#1A1816) 62%,#0b0e0c) 55%,transparent) 76%,color-mix(in srgb,color-mix(in srgb,var(--jw-path,#1A1816) 62%,#0b0e0c) 90%,transparent) 100%)!important}.jw-sample .jw-stack>#experiences header h2::before{content:'';display:block;height:28px;width:50px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/mountain-sun.svg) left center/contain no-repeat;mask:url(/icons/field/mountain-sun.svg) left center/contain no-repeat}.jw-sample .jw-stack>#location header h2::before{content:'';display:block;height:28px;width:26px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/signal-flag.svg) left center/contain no-repeat;mask:url(/icons/field/signal-flag.svg) left center/contain no-repeat}.jw-sample .jw-stack>#offers header h2::before{content:'';display:block;height:28px;width:26px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/bell.svg) left center/contain no-repeat;mask:url(/icons/field/bell.svg) left center/contain no-repeat}.jw-sample .jw-stack>#reserve header h2::before{content:'';display:block;height:28px;width:24px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/anchor.svg) left center/contain no-repeat;mask:url(/icons/field/anchor.svg) left center/contain no-repeat}.jw-sample .jw-stack>#questions header h2::before{content:'';display:block;height:28px;width:28px;margin-bottom:14px;background:#2E2B28;-webkit-mask:url(/icons/field/lifebuoy.svg) left center/contain no-repeat;mask:url(/icons/field/lifebuoy.svg) left center/contain no-repeat}.jw-sample .jw-stack header>div:first-child{display:none}.jw-sample .jw-stack header h2{margin-top:0!important}.jw-sample .jw-stack{display:flex;flex-direction:column;gap:72px}.jw-sample .jw-stack>*{margin-top:0!important}.jw-sample .jw-stack>#iggi{border-top:0!important;padding-top:0!important}.jw-sample .jw-stack header .text-house{display:none}.jw-sample .jw-stack h2{font-size:30px!important;line-height:1.05!important}@media(min-width:768px){.jw-sample .jw-stack{gap:120px}.jw-sample .jw-stack h2{font-size:44px!important}}`}</style>}
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
       <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style{background-color:color-mix(in srgb,var(--jw-path) 4%,#fff)!important}.journal-style main,.journal-style main section.bg-white,.journal-style main header.bg-white{background-color:transparent!important}.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}${wowCss}`}</style>
       <SiteHeader overlay />
@@ -177,7 +196,7 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
           {pw && wow && <div aria-hidden className="pointer-events-none absolute inset-0 z-20"><div className="relative mx-auto h-full max-w-ledger"><div className="jw-hero-stamp absolute right-4 md:right-10 top-[calc(var(--jw-header-h)+3.5rem)] md:top-auto md:bottom-48"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div></div></div>}
         </div>}
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
-        <JournalJumpRow advisor={!sample} items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
+        <JournalJumpRow advisor={!sample} items={sample ? jumpS : jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
         {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{crumbs}</div><SampleBody v={v} variant={sample} rooms={roomRows} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.` : null} /></>}
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {!sample && pwRow}
@@ -210,32 +229,12 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
               footnote={!rates ? "" : `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates?.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
-            <JournalExperiences no={N.exp} slug={s.slug} items={experienceCards} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
-            {sample && <SampleDetail v={v} />}
+            {!sample && <JournalExperiences no={N.exp} slug={s.slug} items={experienceCards} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>}
 
             {!sample && <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>}
 
-            <JournalOffers no={N.offers} name={s.name} offers={offerRows} applyHref="#reserve" />
-
-            <JournalReserve no={N.reserve} steps={steps} slip={slip} live={live} reserve={{ label: "Plan a trip around it", href: planHref }} form={<RequestForm slug={s.slug} name={s.name} path={path} rooms={roomNames} />} save={<SaveToFolio slug={s.slug} name={s.name} inline />}
-              folio={FLAGS.save ? (
-                <div className="mt-12 flex flex-col md:flex-row md:items-center justify-between gap-5 border-t border-[color:var(--jw-keyline)] pt-8">
-                  <div><p className="font-mono text-[10px] tracking-[0.24em] uppercase text-stone-text">Not booking today</p><p className="font-display font-medium text-[26px] text-graphite mt-1">Keep {s.name} in your Folio</p></div>
-                  <SaveToFolio slug={s.slug} name={s.name} />
-                </div>
-              ) : undefined} />
-
-            {v.hostReady && <LiveHostPanel pageKey={`stay:${s.slug}`} initial={v.host} stayName={s.name} kind={s.category === "lodge" ? "lodge" : "stay"} className="" />}
-
-            {hasMap && <JournalMap no={N.map} name={s.name} chart={chart as ChartData} pin={s.coords as { lat: number; lng: number }}
-              others={(s.countrySlug ? staysIn(s.countrySlug) : []).filter((x) => x.coords && x.slug !== s.slug).map((x) => x.coords as { lat: number; lng: number })}
-              rows={[...(s.airport ? [{ label: "Airport", value: s.airport }] : []), ...(s.airportDirections ? [{ label: "Transfer", value: s.airportDirections }] : []), ...(s.bestMonths ? [{ label: "Best months", value: s.bestMonths }] : [])]}
-              note={s.bestMonthsNote} routes={v.routes.filter((r) => isBuilt(r.href))} />}
-
-            {/* Iggi: the house's own panel, placed here as a field note; nothing about it is changed (and it stays off until its flag is on) */}
-            {IGGI_ON && <IggiPanel ctx={{ entityType: "stay", entitySlug: s.slug, countrySlug: s.countrySlug ?? null, ledgerId: s.ledgerId ?? null, sourcePage: path, volume: s.volumes?.[0] ?? "stays" }} heading={`Ask Iggi about ${s.name}`} />}
-
-            <JournalQuestions no={N.questions} name={s.name} faqs={s.faqs} schema={s.faqs.length > 0 && s.reviewed} />
+            {!sample && <>{offersEl}{reserveEl(slip)}{hostEl}{mapEl}{iggiEl}{questionsEl}</>}
+            {sample && <><SampleExpect v={v} cards={experienceCards}>{strip("experiences", "experience photographs")}</SampleExpect>{offersEl}{iggiEl}{mapEl}{reserveEl(null)}{hostEl}{questionsEl}</>}
 
             {pw && <FollowThePathway primary={pw.primary} secondary={pw.secondary} related={onPathway(pw.primaryPathway).filter((x) => x.slug !== s.slug).slice(0, 4)} pathwayHref={(p) => pathwayHref(p.key)} />}
             {sign && <Postcard line={sign} signature={<Signature className="w-28" />} place={s.country} ledgerId={s.ledgerId} postmark={s.country} />}

@@ -226,7 +226,7 @@
   },
   {
     "source": "/stays/blue-reef",
-    "destination": "/destinations/central-america/belize",
+    "destination": "/stays/blue-reef-island",
     "permanent": false
   }
 ]

@@ -3169,7 +3169,7 @@
   ]
  },
  "mashpi-lodge": {
-  "_source": "mashpilodge.com/rooms-and-suites, read 22 Nov 2026 at James's request; sizes and beds from the lodge's own 2021 brochure. Rates are filed in the Stay Studio notes, not printed: the page does not state the basis.",
+  "_source": "mashpilodge.com/rooms-and-suites, read 22 Nov 2026 at James's request; sizes and beds from the lodge's own 2021 brochure. Prices are the lodge's printed 2027 rates; James confirmed they are per night (22 Nov 2026).",
   "rooms": [
    {
     "name": "Yaku Suite",
@@ -3189,7 +3189,11 @@
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/yaku-suite-1"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 1750,
+     "basis": "per room, per night · two guests · 2027 · before taxes"
+    }
    },
    {
     "name": "Wayra Room",
@@ -3211,7 +3215,11 @@
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wayra-room-1",
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wayra-room-3"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 1470,
+     "basis": "per room, per night · two guests · 2027 · before taxes"
+    }
    },
    {
     "name": "Wawa Room",
@@ -3230,9 +3238,14 @@
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wawa-room-1",
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/mashpi-lodge/rooms/wawa-room-2"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 750,
+     "basis": "per night · one guest · 2027 · before taxes"
+    }
    }
-  ]
+  ],
+  "ratesNote": "Prices are the lodge's own 2027 rates in US dollars, before taxes. 2028 rates are about 2 per cent higher. Ask the house for your dates."
  },
  "explora-rapa-nui": {
   "_source": "explora.com (Rapa Nui lodge and rooms pages), read 22 Nov 2026 at James's request. Rates not read into the site. Room photographs still to add from the lodge's own site.",
@@ -3308,6 +3321,339 @@
      "Floor-to-ceiling ocean windows"
     ],
     "photos": [],
+    "plungePool": false
+   }
+  ]
+ },
+ "sacha-lodge": {
+  "_source": "sachalodge.com (rooms-suites, the-lodge and programs pages), read 22 Nov 2026 at James's request. Room counts and sizes are not on the site.",
+  "ratesNote": "The lodge sells its stays as programmes with all meals, guides and excursions. Its printed 2026 to 2027 prices start at US$1,890 per person in a double for four days and three nights, plus US$275 per person for the Quito to Coca flights. Ask the house for your dates.",
+  "rooms": [
+   {
+    "name": "Standard Matrimonial",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed",
+     "Terrace or balcony"
+    ],
+    "lede": "A timber room for two, raised on a walkway, with glass doors onto the forest.",
+    "features": [
+     "Private terrace or balcony with hammock",
+     "Air conditioning",
+     "Sound insulation",
+     "Private bathroom with hot shower"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/standard-matrimonial-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/standard-matrimonial-2",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/standard-matrimonial-3"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Standard Twin",
+    "sleeps": 2,
+    "facts": [
+     "2 Full Beds",
+     "Balcony"
+    ],
+    "lede": "Two full beds and a forest view, with room for an extra bed.",
+    "features": [
+     "Balcony with hammocks",
+     "Air conditioning",
+     "Space for an extra bed",
+     "Private bathroom with hot shower"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/standard-twin-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/standard-twin-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed",
+     "Open-air living room"
+    ],
+    "lede": "Set apart from the other rooms, with a king bedroom and an open-air living room in the trees.",
+    "features": [
+     "Open-air living room",
+     "Bathroom with two basins",
+     "Air conditioning",
+     "More secluded than the standard rooms"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/suite-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/suite-2",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/suite-3"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Family Cabin",
+    "sleeps": null,
+    "facts": [
+     "2 Bedrooms",
+     "Suite and Standard Twin joined"
+    ],
+    "lede": "A Suite and a Standard Twin under one roof, for families or a small group.",
+    "features": [
+     "Two bedrooms",
+     "Shared living space",
+     "Air conditioning"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/family-cabin-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/sacha-lodge/rooms/family-cabin-2"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "napo-wildlife-center": {
+  "_source": "napowildlifecenter.com (accommodation page), read 22 Nov 2026 at James's request. The site prints no prices.",
+  "ratesNote": "The lodge sells its stays as tours of four to eight days with river transport from Coca, all meals, guides, park entry and the clay licks. It prints no prices. Ask the house for your dates.",
+  "rooms": [
+   {
+    "name": "Standard Cabin",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed",
+     "52 sq m",
+     "Up to 4 guests"
+    ],
+    "lede": "A cabin in the rainforest beside Añangu Lagoon, with a balcony facing the trees.",
+    "features": [
+     "Private balcony",
+     "Forest view",
+     "Private bathroom",
+     "Mosquito net"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/napo-wildlife-center/rooms/standard-cabin-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed",
+     "63 sq m",
+     "Up to 4 guests"
+    ],
+    "lede": "The larger cabin, with more room to rest after a day on the water.",
+    "features": [
+     "Private balcony",
+     "Forest view",
+     "Private bathroom",
+     "Mosquito net"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/napo-wildlife-center/rooms/suite-1"
+    ],
+    "plungePool": false
+   }
+  ]
+ },
+ "luna-volcan": {
+  "_source": "en.lunavolcan.com (home page), read 22 Nov 2026 at James's request. The hotel's two price pages disagree, so no prices are printed. Room photographs still to add.",
+  "rooms": [
+   {
+    "name": "Romantic Rooms",
+    "sleeps": 2,
+    "facts": [
+     "30 to 84 sq m",
+     "14 rooms",
+     "2 or 3 guests"
+    ],
+    "lede": "Fourteen rooms, no two alike, many with a fireplace or a private terrace.",
+    "features": [
+     "Fireplace or private terrace in many rooms",
+     "Views of the Llanganates, the gardens or Baños",
+     "Floor heating in some rooms"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Romantic Suites",
+    "sleeps": 2,
+    "facts": [
+     "50 to 115 sq m",
+     "11 suites",
+     "Jacuzzi"
+    ],
+    "lede": "The suites, each with its own jacuzzi.",
+    "features": [
+     "Jacuzzi",
+     "Queen or king bed",
+     "Fireplace in some suites"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Family Suites",
+    "sleeps": 5,
+    "facts": [
+     "1 King, 2 Twin and a Sofa Bed",
+     "90 sq m",
+     "2 suites"
+    ],
+    "lede": "Atahualpa and Huayna Cápac: two bedrooms, two bathrooms and a sitting room for up to five.",
+    "features": [
+     "Two bedrooms and two bathrooms",
+     "Jacuzzi and balcony",
+     "Sitting room, dining area and kitchen",
+     "Floor heating"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Friends Rooms",
+    "sleeps": 2,
+    "facts": [
+     "65 to 74 sq m",
+     "3 rooms",
+     "2 or 3 guests"
+    ],
+    "lede": "Three rooms laid out for friends travelling together. One is wheelchair accessible.",
+    "features": [
+     "One wheelchair-accessible room"
+    ],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
+ },
+ "iguana-crossing": {
+  "_source": "iguanacrossing.com.ec/rooms, read 22 Nov 2026 at James's request. 'From' prices are filed in the Stay Studio notes, not printed: the page does not state their basis.",
+  "rooms": [
+   {
+    "name": "Master Suite",
+    "sleeps": 2,
+    "facts": [
+     "Oceanfront terrace"
+    ],
+    "lede": "The hotel's largest room, with a wide terrace facing the sea.",
+    "features": [
+     "Oceanfront terrace",
+     "Ocean view"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/master-suite-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Junior Suite",
+    "sleeps": 2,
+    "facts": [
+     "Ocean view"
+    ],
+    "lede": "A suite looking over the beach.",
+    "features": [
+     "Ocean view"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/junior-suite-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Ocean View Room with Balcony",
+    "sleeps": 2,
+    "facts": [
+     "2 Double Beds",
+     "Balcony"
+    ],
+    "lede": "Two double beds and a balcony over the sea, for couples or a family with young children.",
+    "features": [
+     "Balcony",
+     "Ocean view"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/ocean-view-balcony-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "King Ocean View Room",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed"
+    ],
+    "lede": "A king room facing the ocean.",
+    "features": [
+     "Ocean view"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/king-ocean-view-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Ocean View Room",
+    "sleeps": 2,
+    "facts": [
+     "Ocean view"
+    ],
+    "lede": "A room facing the ocean.",
+    "features": [
+     "Ocean view"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/ocean-view-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "King Room Volcano View",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed"
+    ],
+    "lede": "A king room looking inland over the forest to the volcano.",
+    "features": [
+     "Volcano view"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/king-volcano-view-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Twin Room Volcano View",
+    "sleeps": 2,
+    "facts": [
+     "Twin Beds"
+    ],
+    "lede": "A twin room looking inland to the volcano.",
+    "features": [
+     "Volcano view"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/twin-volcano-view-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Triple Room",
+    "sleeps": 2,
+    "facts": [
+     "Volcano view"
+    ],
+    "lede": "A room for three, looking inland over the forest.",
+    "features": [
+     "Volcano view"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/triple-room-1"
+    ],
     "plungePool": false
    }
   ]

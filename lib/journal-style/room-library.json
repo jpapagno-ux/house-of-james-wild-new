@@ -2902,5 +2902,112 @@
     "plungePool": false
    }
   ]
+ },
+ "ecocamp-patagonia": {
+  "_source": "ecocamp.travel (domes pages and the camp's own guide to its domes), read 22 Nov 2026 at James's request. No rates read.",
+  "rooms": [
+   {
+    "name": "Standard Dome",
+    "sleeps": 2,
+    "facts": [
+     "10 sq m"
+    ],
+    "lede": "The world's first geodesic hotel room, small and simple, with shared bathrooms.",
+    "features": [
+     "Shared bathrooms"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Superior Dome",
+    "sleeps": 2,
+    "facts": [
+     "23 sq m",
+     "4 at the camp"
+    ],
+    "lede": "More room after a long day's walk, with heating and a private bathroom.",
+    "features": [
+     "Heating",
+     "Private bathroom"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Suite Dome",
+    "sleeps": 2,
+    "facts": [
+     "28 sq m",
+     "Double or Twin Beds",
+     "13 at the camp"
+    ],
+    "lede": "The largest domes for two, with a wood stove by the bed.",
+    "features": [
+     "Wood stove",
+     "Private bathroom with composting toilet",
+     "Gas heating in the bathroom"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Suite Dome Loft",
+    "sleeps": 4,
+    "facts": [
+     "37 sq m",
+     "Double or Twin Beds, and a Double in the loft"
+    ],
+    "lede": "A Suite Dome with a loft above, for families or four friends.",
+    "features": [
+     "Wood stove",
+     "Private terrace",
+     "Private bathroom with composting toilet",
+     "Safe",
+     "No Wi-Fi"
+    ],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
+ },
+ "iguazu": {
+  "_source": "awasi.com/iguazu (accommodations and villas pages), read 22 Nov 2026 at James's request. Rates not read into the site.",
+  "rooms": [
+   {
+    "name": "Standard Villas",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Twin Beds",
+     "100 sq m",
+     "13 at the lodge"
+    ],
+    "lede": "Stand-alone villas on stilts in the Atlantic rainforest, set apart for privacy.",
+    "features": [
+     "Private plunge pool",
+     "Terrace with sun loungers",
+     "Living room",
+     "Bathtub and separate shower"
+    ],
+    "photos": [],
+    "plungePool": true
+   },
+   {
+    "name": "Master Villa",
+    "sleeps": null,
+    "facts": [
+     "2 Bedrooms",
+     "120 sq m"
+    ],
+    "lede": "The two-bedroom villa, with its own plunge pool and deck.",
+    "features": [
+     "Private plunge pool",
+     "Terrace with sun loungers",
+     "Living room"
+    ],
+    "photos": [],
+    "plungePool": true
+   }
+  ]
  }
 }

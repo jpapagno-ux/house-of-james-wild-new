@@ -2622,6 +2622,14 @@
    "released": false
   },
   {
+   "stay_id": "6b0305736bc386f080df7815",
+   "slug": "iguana-crossing",
+   "name": "Iguana Crossing Boutique Hotel",
+   "country": "Ecuador & Galapagos",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a899f0e94aa52a9fb36e1a3",
    "slug": "iguazu",
    "name": "Iguazu",
@@ -3659,6 +3667,14 @@
    "released": true
   },
   {
+   "stay_id": "6b0305736bc386f080df7814",
+   "slug": "luna-volcan",
+   "name": "Luna Volcán Adventure Spa",
+   "country": "Ecuador & Galapagos",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6afd84a8d5520df565f16719",
    "slug": "macakizi",
    "name": "Maçakızı",
@@ -3980,6 +3996,14 @@
    "slug": "nanuku-resort",
    "name": "Nanuku Resort",
    "country": "Fiji",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b0305736bc386f080df7813",
+   "slug": "napo-wildlife-center",
+   "name": "Napo Wildlife Center",
+   "country": "Ecuador & Galapagos",
    "missing": [],
    "released": true
   },
@@ -4734,6 +4758,16 @@
    "name": "Sable Alley Khwai",
    "country": "Botswana",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b0305736bc386f080df7812",
+   "slug": "sacha-lodge",
+   "name": "Sacha Lodge",
+   "country": "Ecuador & Galapagos",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

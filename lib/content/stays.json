@@ -23401,6 +23401,81 @@
    "placeSlug": null
   },
   {
+   "slug": "iguana-crossing",
+   "name": "Iguana Crossing Boutique Hotel",
+   "ledgerId": "STY-2026-000788",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 14 room beachfront hotel at Puerto Villamil on Isabela Island in the Galápagos",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/facade-sea",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/pool-loungers",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/sunset",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/hotel-08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iguana-crossing/rooms/master-suite-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -0.9560516,
+    "lng": -90.9713229
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Master Suite, with a wide oceanfront terrace",
+     "Junior Suite, ocean view",
+     "King Ocean View and King Volcano View Rooms",
+     "Twin Room Volcano View and Triple Room"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling at Las Tintoreras",
+     "Sierra Negra and Volcán Chico",
+     "Campo Duro, Sucre's Cave and Mirador El Mango",
+     "The beach at Puerto Villamil, a short walk from town"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Pool with loungers above the beach",
+     "Open lounge facing the sea",
+     "Weddings and honeymoons arranged by the hotel"
+    ]
+   },
+   "onlyHere": [
+    "Iguana Crossing faces the long beach at Puerto Villamil on Isabela Island in the Galápagos. The hotel has 14 rooms, looking either to the ocean or inland to the volcano, and a pool above the sand.",
+    "The hotel runs its own days out on Isabela: snorkelling at Las Tintoreras, the walk on Sierra Negra and Volcán Chico, and the highland farms and caves."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "ila-safari-lodge",
    "name": "Ila Safari Lodge",
    "ledgerId": "STY-2026-000541",
@@ -33856,6 +33931,81 @@
    "placeSlug": null
   },
   {
+   "slug": "luna-volcan",
+   "name": "Luna Volcán Adventure Spa",
+   "ledgerId": "STY-2026-000787",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Thirty rooms and four volcanic hot pools on the flank of Tungurahua, 400 metres above Baños",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/gardens-view",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/pools-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/pools-4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/cafe-del-cielo-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/rooftop-bar-pools",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/terrace-view"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -1.405161,
+    "lng": -78.4177792
+   },
+   "airport": "Quito (UIO), about 3 hours by road",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Romantic Rooms: 30 to 84 square metres, many with a fireplace or a private terrace.",
+     "Romantic Suites: 50 to 115 square metres, with a jacuzzi.",
+     "Family Suites, Atahualpa and Huayna Cápac: 90 square metres, two bedrooms, for up to five.",
+     "Friends Rooms: 65 to 74 square metres; one is wheelchair accessible."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Four pools and a hot tub of volcanic water, with the valley below",
+     "Adventure activities and birdwatching from the hotel",
+     "The hotel's own organic gardens"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Café del Cielo, with terraces over Baños",
+     "Luna Restaurante, Ecuadorian cooking with vegetables from the gardens",
+     "Luna Bar Rooftop, beside the pools",
+     "Year-round temperatures of about 17 to 25 degrees"
+    ]
+   },
+   "onlyHere": [
+    "Luna Volcán, formerly Luna Runtún, sits in 35 hectares of Andean forest on the eastern flank of the Tungurahua volcano, about 400 metres above the town of Baños. It is 170 km and three hours from Quito, and an hour from the edge of the Amazon. The Sangay and Llanganates national parks surround it.",
+    "The hotel has 30 rooms and suites for 75 guests, no two alike, with views of the volcano, the Llanganates or the town below. Its four pools and hot tub are filled with hot volcanic water."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "machaba",
    "name": "Machaba Camp",
    "ledgerId": "STY-2026-000159",
@@ -37826,6 +37976,84 @@
    "volumes": [
     "stays",
     "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "napo-wildlife-center",
+   "name": "Napo Wildlife Center",
+   "ledgerId": "STY-2026-000786",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A lodge inside Yasuní National Park, owned and run by the Kichwa Añangu community, on its own blackwater lagoon",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-explorer",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/napo-wildlife-center/rooms/suite-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-extended",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-photography",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/napo-wildlife-center/rooms/standard-cabin-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-birding",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-family",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-premium"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -0.5244821,
+    "lng": -76.4402203
+   },
+   "airport": "Coca (OCC)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Standard Cabin: 52 square metres, one king bed, private bathroom, mosquito net and a balcony facing the forest.",
+     "Suite: 63 square metres, one king bed, private bathroom, mosquito net and a balcony.",
+     "Both take up to four guests."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Paddled canoe trips on Añangu creek and the lagoon",
+     "The parrot and parakeet clay licks",
+     "The observation towers",
+     "Guided forest walks by day and at night",
+     "A visit with the Kichwa Añangu community",
+     "Birding and photography tours of four to six days"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Community guide and bilingual naturalist guide.",
+     "All meals, river transport from Coca, park entry and the clay licks are part of each tour.",
+     "Satellite Wi-Fi, purified water, boots and ponchos, lounge and bar."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Napo Wildlife Center stands on Añangucocha Lagoon inside Yasuní National Park in the Ecuadorian Amazon. It is owned and managed directly by the Kichwa Añangu community, whose territory this is.",
+    "Every group goes out with a community guide and a bilingual naturalist: by paddled canoe along the creek, up the observation towers, and to the parrot clay licks. The lodge also runs a private Harpy Eagle expedition for no more than six guests."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -45501,6 +45729,84 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "sacha-lodge",
+   "name": "Sacha Lodge",
+   "ledgerId": "STY-2026-000785",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A rainforest lodge on Pilchicocha Lake in its own 2,000 hectare reserve beside Yasuní, reached by canoe down the Napo",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/lakeside-lounge-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/lake-walkway",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sacha-lodge/rooms/standard-matrimonial-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/canoe-creek",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/lake-pool-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/oropendola-restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sacha-lodge/rooms/suite-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sacha-lodge/rooms/standard-twin-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Coca (OCC), by a 25 minute flight from Quito",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Standard Matrimonial: a king bed, sound insulation and a private terrace or balcony with a hammock.",
+     "Standard Twin: two full beds, with room for an extra bed.",
+     "Suite: a king bedroom with an open-air living room, set apart from the other rooms.",
+     "Family Cabin: a Suite and a Standard Twin joined, with two bedrooms and a shared living space.",
+     "All rooms have air conditioning, a private bathroom and hot showers."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The canopy walk above the forest",
+     "The canopy exploration crane",
+     "Canoe trips on the lake and the blackwater creeks",
+     "Forest walks by day and at night",
+     "Birdwatching, with a private birding guide on request",
+     "The butterfly house and the cacao experience"
+    ]
+   },
+   "features": {
+    "paras": [
+     "The Lake Pool, set within Pilchicocha Lake.",
+     "La Balsa, the lakeside restaurant, the open-air Oropendola restaurant, and the bar.",
+     "A native guide and a bilingual guide for every group; groups of six at most.",
+     "Rubber boots and rain ponchos provided. Wi-Fi."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Sacha Lodge sits on Pilchicocha Lake in Ecuador's Amazon, inside a private reserve of 5,000 acres (2,000 hectares) next to Yasuní National Park. The reserve has been protected for more than 30 years. Guests arrive by a 25 minute flight from Quito to Coca and about two hours by motorised canoe along the Napo River.",
+    "Days are spent with a native guide and a bilingual naturalist in groups of no more than six: on the canopy walk, in the canopy crane, by canoe on the blackwater creeks, and at the lake pool, which is set in the lake itself."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

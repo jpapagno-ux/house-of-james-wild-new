@@ -71,7 +71,7 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
     : (g.stays ?? []).map((slug) => stayBySlug(slug)).filter((s): s is NonNullable<typeof s> => !!s && !!s.hero);
   const slides = guideSlides(g);
   const trail = [{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: region?.name ?? g.region, path: `/destinations/${g.region}` }, ...(parent ? [{ name: parent.name, path: parent.path }] : []), { name: g.name, path: g.path }];
-  const nav: [string, string][] = [["In short", "overview"], ["When to go", "when"], ["Highlights", "highlights"], ...(g.firstTime ? [["First visit", "first-time"] as [string, string]] : []), ["Who it suits", "suits"], ...(stays.length ? [["Where to stay", "stays"] as [string, string]] : []), ["How to see it", "how"], ...(voyages.length ? [["Voyages", "journeys"] as [string, string]] : []), ...(compare ? [["Raja Ampat vs Komodo", "compare"] as [string, string]] : []), ["FAQ", "faq-heading"]];
+  const nav: [string, string][] = [["In short", "overview"], ["When to go", "when"], ["Highlights", "highlights"], ...(g.firstTime ? [[g.firstTime.nav ?? "First visit", "first-time"] as [string, string]] : []), ["Who it suits", "suits"], ...(stays.length ? [["Where to stay", "stays"] as [string, string]] : []), ["How to see it", "how"], ...(voyages.length ? [["Voyages", "journeys"] as [string, string]] : []), ...(compare ? [["Raja Ampat vs Komodo", "compare"] as [string, string]] : []), ["FAQ", "faq-heading"]];
 
   const schema = graph(
     {
@@ -137,7 +137,7 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
     <>
           {g.firstTime && (
             <section id="first-time" className={SEC}>
-              <SectionHead eyebrow="First visit" title={g.firstTime.title} icon="wave" intro={g.firstTime.intro} />
+              <SectionHead eyebrow={g.firstTime.eyebrow ?? "First visit"} title={g.firstTime.title} icon="wave" intro={g.firstTime.intro} />
               <ol className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {g.firstTime.points.map(([h, b], i) => (
                   <li key={h} className="border ledger-border p-5 h-full">

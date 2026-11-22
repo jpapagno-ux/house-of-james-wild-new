@@ -62,7 +62,8 @@ export type Guide = {
   months: { area: string; note: string; months: Month[] }[];
   airports: [string, string][]; transfers: [string, string][];
   highlights: { title: string; line: string; body: string; image?: TripImg; voyage?: string }[];
-  firstTime?: { title: string; intro: string; points: [string, string][] };
+  // eyebrow/nav let the same numbered block carry a place's history (Rapa Nui, James, 22 Nov 2026).
+  firstTime?: { title: string; intro: string; points: [string, string][]; eyebrow?: string; nav?: string };
   suits: { who: string; line: string; href?: string; label?: string }[];
   howTo: { title: string; intro: string; options: { name: string; body: string; href?: string; label?: string }[] };
   places?: { name: string; href: string; line: string; image: TripImg; best: string }[];
@@ -441,12 +442,12 @@ export const GUIDES: Record<string, Guide> = {
   // Cloudinary library yet; until it lands the hero is the property's own frame, credited.
   "rapa-nui": {
     slug: "rapa-nui", region: "south-america", country: "chile", parent: "chile", name: "Rapa Nui", path: "/destinations/south-america/chile/rapa-nui",
-    theme: "stays", flyover: "rapa-nui", stays: ["nayara-hangaroa"],
+    theme: "stays", flyover: "rapa-nui", stays: ["nayara-hangaroa", "explora-rapa-nui"],
     proofEyebrow: "On the founder's list · not yet visited",
     seo: {
       title: "Rapa Nui (Easter Island) Guide: When to Go, Getting There & Where to Stay",
       description: "Rapa Nui, Easter Island, Chile: 3,700 km out in the Pacific, best from October to March, five and a half hours from Santiago. Living Rapanui culture, the moai quarries, volcanic walks, the ocean and the stars, with the stay the house has selected.",
-      keywords: ["Rapa Nui travel guide", "Easter Island guide", "best time to visit Easter Island", "Easter Island from Santiago", "Easter Island luxury hotel", "Rapa Nui National Park", "Easter Island, Chile"],
+      keywords: ["Rapa Nui travel guide", "Easter Island guide", "best time to visit Easter Island", "Easter Island from Santiago", "Easter Island luxury hotel", "Rapa Nui National Park", "Easter Island, Chile", "Easter Island history", "how were the moai moved", "rongorongo", "Easter Island mysteries"],
     },
     eyebrow: "Destinations · South America · Chile",
     h1: "Rapa Nui",
@@ -471,6 +472,22 @@ export const GUIDES: Record<string, Guide> = {
       { title: "Night sky", line: "Stargazing", body: "With no city within thousands of kilometres, the southern sky is the darkest most people will ever see. Ask your stay to turn the lights down." },
       { title: "Isolation", line: "The point of it", body: "One of the most remote inhabited islands on Earth. Days here run on the island's clock, not the mainland's." },
     ],
+    firstTime: {
+      eyebrow: "History and mystery", nav: "History",
+      title: "What Is Known, and What Is Still Argued",
+      intro: "Rapa Nui has been explained many times, often wrongly. This is where the evidence stands today, and where the questions are still open.",
+      points: [
+        ["Nobody agrees when it began", "Polynesian voyagers found the island by canoe across open ocean. UNESCO's listing puts the settlement around AD 300; other estimates run as late as 1200. The first families probably came from the Marquesas or Mangareva side of Polynesia."],
+        ["Three names", "Its people call it Rapa Nui, and an older name, Te Pito te Henua, is read as the Navel of the World. The Dutch admiral Jacob Roggeveen arrived on Easter Sunday 1722, stayed a single day, and left it the name the maps still use."],
+        ["About 900 moai, one quarry", "The statues stand from 2 to 20 metres tall and nearly all were cut from the tuff of Rano Raraku with stone tools. The largest ever raised on a platform stood about 10 metres and weighed about 74 tonnes. Hundreds never left the quarry."],
+        ["The statues walked", "That is what Rapanui tradition has always said. In 2012 a team of 18 people with three ropes rocked a 4.4 tonne replica forward upright, and later study of statues left along the old roads supports it. Statues moved up to 18 km this way, with no wheels and no draft animals."],
+        ["A script nobody can read", "Rongorongo survives on just 27 wooden objects in museums around the world. Outsiders first recorded it in 1864, and it has never been deciphered. One tablet's wood predates European arrival, so it may be one of the few times writing was invented from nothing."],
+        ["The birdman", "In time the ancestor cult of the moai gave way to the cult of the birdman, centred on the 54 stone houses of Orongo on the rim of Rano Kau. Its ceremonies ran until the middle of the 1800s."],
+        ["The collapse that did not happen", "For decades the island was told as a warning: a people who cut down their trees and destroyed themselves. A 2024 study of ancient Rapanui genomes found no population crash before Europeans arrived. The real collapse came afterwards, when slave raids and disease cut the population to little more than 100."],
+        ["They reached the Americas first", "The same genomes carry about 10 per cent Native American ancestry, from a meeting dated between 1250 and 1430. Polynesian sailors and the peoples of South America met well before Columbus crossed the Atlantic."],
+        ["Still theirs", "The national park covers about 40 per cent of the island and has been a World Heritage Site since 1995. The guides who walk you through it are Rapanui, and the stories are told by the people they belong to."],
+      ],
+    },
     suits: [
       { who: "Couples who want distance", line: "A remote island with one small town, good food and the Pacific on three sides.", href: "/stays/nayara-hangaroa", label: "Nayara Hangaroa" },
       { who: "Culture-first travellers", line: "The archaeology is the surface; the Rapanui guides, language and festival are the depth." },
@@ -498,12 +515,20 @@ export const GUIDES: Record<string, Guide> = {
       { q: "How many days do you need on Easter Island?", a: "Four or five nights. That covers the quarry at Rano Raraku, Ahu Tongariki at dawn, Orongo and Rano Kau, a walk up Terevaka, an afternoon at Anakena and an evening of stargazing, without rushing." },
       { q: "Do you need a guide on Rapa Nui?", a: "Yes, for the main sites of the national park, which are visited with a local guide. That is also the best thing about the island: the guides are Rapanui, and the culture is theirs." },
       { q: "Is Easter Island only about the moai?", a: "No. The moai are the reason most people come, but the island is also a living Polynesian culture, three volcanoes to walk, a warm Pacific coast, and one of the darkest night skies on Earth." },
+      { q: "How were the Easter Island statues moved?", a: "Most likely upright. Rapanui tradition says the moai walked, and in 2012 a team of 18 people with three ropes rocked a 4.4 tonne replica forward in a walking motion. Later study of the statues left along the island's old roads supports the idea. Some were moved up to 18 km from the quarry at Rano Raraku." },
+      { q: "Did the people of Easter Island destroy their own island?", a: "The evidence now says no. A 2024 study of ancient Rapanui genomes found no sign of a population collapse before Europeans arrived in 1722. The steep decline came later, from slave raids and introduced disease, which reduced the population to little more than 100." },
+      { q: "Has the Easter Island script been deciphered?", a: "No. Rongorongo survives on 27 wooden objects held in museums around the world and has never been read. One tablet has been dated to before European contact, which suggests the Rapanui may have invented writing independently." },
+      { q: "Why is it called Easter Island?", a: "The Dutch admiral Jacob Roggeveen reached the island on Easter Sunday, 5 April 1722, and named it for the day. Its own people call the island Rapa Nui." },
       { q: "Can you combine Easter Island with Atacama or Patagonia?", a: "Yes. Every route runs through Santiago, so Rapa Nui pairs naturally with the Atacama desert in the north or Patagonia in the south. Allow two weeks for two of the three." },
     ],
     geo: { lat: -27.12, lng: -109.37 },
     sources: [
       { title: "UNESCO World Heritage Centre: Rapa Nui National Park", url: "https://whc.unesco.org/en/list/715" },
       { title: "Chile Travel (Sernatur): Rapa Nui", url: "https://chile.travel/en/?p=78031" },
+      { title: "Britannica: Easter Island", url: "https://www.britannica.com/place/Easter-Island" },
+      { title: "Nature (2024): Ancient Rapanui genomes reveal resilience and pre-European contact with the Americas", url: "https://www.nature.com/articles/s41586-024-07881-4" },
+      { title: "Nature (2012): Easter Island statues 'walked' out of quarry", url: "https://www.nature.com/articles/nature.2012.11613" },
+      { title: "Nature Italy (2024): Reading between the lines on an ancient island script", url: "https://www.nature.com/articles/d43978-024-00037-y" },
       { title: "Nayara Hangaroa in the Ledger", url: "/stays/nayara-hangaroa" },
     ],
   },

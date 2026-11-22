@@ -3009,5 +3009,91 @@
     "plungePool": true
    }
   ]
+ },
+ "the-singular-patagonia": {
+  "_source": "thesingular.com/patagonia/rooms, read 22 Nov 2026 at James's request. The site prints no prices; none are filed.",
+  "ratesNote": "The hotel prices by date and by programme: Bed & Breakfast, Half Board, or the Complete Experience with all meals, guided excursions and shared transfers from Puerto Natales. Ask the house for your dates.",
+  "rooms": [
+   {
+    "name": "The Singular King",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed or 2 Twin Beds",
+     "45 sq m",
+     "Fjord view"
+    ],
+    "lede": "A room across the full width of its window, facing Última Esperanza Fjord.",
+    "features": [
+     "Floor-to-ceiling fjord-facing windows",
+     "Work desk",
+     "Reading chair by the window",
+     "Takes 2 adults and 1 child"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/singular-king-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/singular-king-3",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/singular-king-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "The Singular Twin",
+    "sleeps": 2,
+    "facts": [
+     "2 Double Beds",
+     "45 sq m",
+     "Fjord view"
+    ],
+    "lede": "Two double beds and the same fjord-wide window, for guests travelling together.",
+    "features": [
+     "Panoramic fjord views",
+     "Takes 2 adults and 1 child"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/singular-twin-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/singular-twin-2"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "The Singular Twin, Accessible",
+    "sleeps": 2,
+    "facts": [
+     "2 Double Beds",
+     "45 sq m",
+     "Fjord view"
+    ],
+    "lede": "The twin room laid out for ease of movement, with the same space and the same view.",
+    "features": [
+     "Accessible layout",
+     "Takes 2 adults and 1 child"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/accessible-twin-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "The Singular Suite",
+    "sleeps": 2,
+    "facts": [
+     "1 King Bed",
+     "70 sq m",
+     "Fjord view"
+    ],
+    "lede": "The largest rooms in the hotel, with a separate living area facing the water.",
+    "features": [
+     "Separate living area",
+     "Floor-to-ceiling fjord-facing windows",
+     "Takes 2 adults and 1 child"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/singular-suite-1",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/singular-suite-2",
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/the-singular-patagonia/rooms/singular-suite-3"
+    ],
+    "plungePool": false
+   }
+  ]
  }
 }

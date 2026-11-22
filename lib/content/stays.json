@@ -1298,7 +1298,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -6633,7 +6644,16 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],

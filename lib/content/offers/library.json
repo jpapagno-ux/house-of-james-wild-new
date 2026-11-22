@@ -2779,5 +2779,65 @@
   "checked": "2026-11-02",
   "conditions": "Minimum 3 nights. Children under 12; up to two children per villa. Booking window 15 January 2026 to 31 March 2028. The Brando's terms apply.",
   "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000172",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "futangue-hotel-spa",
+  "name": "Stay 4, Pay 3 (Futangue)",
+  "country": "",
+  "program": "Worth Another Night",
+  "headline": "Stay 4 nights, pay 3",
+  "travel": {
+   "from": "2026-11-22",
+   "to": "2027-03-31",
+   "text": "Stays to 31 March 2027, when the house reviews this offer"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-22",
+  "conditions": "Four nights; the free night is applied to the lowest rate. Subject to availability. Cannot be combined with other offers. The hotel prints no end date: the house has set a review date of 31 March 2027 (James, 22 Nov 2026). Futangue's terms apply; the house confirms eligibility when you book.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000173",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "futangue-hotel-spa",
+  "name": "15% Off Programmes (Futangue)",
+  "country": "",
+  "program": "Time Rewarded",
+  "headline": "15% off the wellness, e-bike and fly-fishing programmes",
+  "travel": {
+   "from": "2026-11-22",
+   "to": "2027-03-31",
+   "text": "Stays to 31 March 2027, when the house reviews this offer"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-22",
+  "conditions": "Applies to the wellness and fly-fishing programmes (three nights minimum) and the e-bike programme, in a superior room. Airport transfers are extra. The hotel prints no end date: the house has set a review date of 31 March 2027 (James, 22 Nov 2026). Futangue's terms apply; the house confirms eligibility when you book.",
+  "volume": "stays"
+ },
+ {
+  "id": "OFR-2026-000174",
+  "year": 2026,
+  "status": "Live",
+  "scope": "stay",
+  "ref": "napo-wildlife-center",
+  "name": "Early Monkey (Napo Wildlife Center)",
+  "country": "",
+  "program": "Book Early",
+  "headline": "Book now at the 2026 rate for 2027 travel",
+  "travel": {
+   "from": "2026-11-22",
+   "to": "2027-03-31",
+   "text": "Travel in 2027; book by 31 March 2027, when the house reviews this offer"
+  },
+  "source": "Base44 library",
+  "checked": "2026-11-22",
+  "conditions": "The lodge's early booking promotion: confirm now, before its rate adjustment, for travel in 2027. The lodge prints no booking deadline: the house has set a review date of 31 March 2027 (James, 22 Nov 2026). Napo Wildlife Center's terms apply; the house confirms eligibility when you book.",
+  "volume": "stays"
  }
 ]

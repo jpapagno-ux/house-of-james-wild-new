@@ -12447,6 +12447,86 @@
    "placeSlug": null
   },
   {
+   "slug": "chez-georges",
+   "name": "Chez Georges",
+   "ledgerId": "STY-2026-000790",
+   "country": "Brazil",
+   "countrySlug": "brazil",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "villa",
+   "tagline": "A seven suite modernist villa on a Santa Teresa hilltop, with a pool over the forest and Sugarloaf in view",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/villa-pool-dusk",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/entertainment-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chez-georges/rooms/george-benson-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/pool-sugarloaf-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/dining-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/patio-pergola",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chez-georges/rooms/giorgio-moroder-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chez-georges/rooms/jorge-ben-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chez-georges/rooms/george-harrison-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -22.9224586,
+    "lng": -43.1859512
+   },
+   "airport": "Rio de Janeiro (GIG and SDU)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "George Benson, Master Suite: 49 square metres, with a balcony to Sugarloaf and the ocean.",
+     "Jorge Ben, Master Suite: 32 square metres, in the annex below the pool, with a private balcony over the forest.",
+     "Giorgio Moroder, Premium Suite: 30 square metres, with forest and Sugarloaf views.",
+     "Georges Brassens and George Gershwin, Design Suites: 34 and 25 square metres, sharing a balcony to Sugarloaf.",
+     "Seu Jorge and George Harrison, Comfort Suites: 28 and 32 square metres, facing Santa Teresa.",
+     "Every suite has a king bed."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The pool, with a counter-current jet, over the forest canopy",
+     "Santa Teresa's streets, studios and bars on the doorstep",
+     "Yoga by the pool"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Furniture by Ricardo Fasanello in the dining room and suites",
+     "Breakfast in the house",
+     "A street-level garage for two cars with a glass lift to the house",
+     "Events hosted by arrangement"
+    ]
+   },
+   "onlyHere": [
+    "Chez Georges is a 1,000 square metre modernist villa on a hilltop in Santa Teresa, between Rio's centre and the beaches of Copacabana and Ipanema, on the edge of protected forest. It was designed by Wladimir Alves de Souza, a leading figure of Brazilian Modernism.",
+    "The house has seven suites, each named after a musician called George or Jorge, for up to 14 guests. Several are wired to the villa's own recording studio, which sits below the pool. Breakfast is served in the house."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "chiawa-safaris",
    "name": "Chiawa Camp",
    "ledgerId": "STY-2026-404563",
@@ -18751,7 +18831,18 @@
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
-   "pathway": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
    "volumes": [
     "stays"
    ],
@@ -18937,6 +19028,80 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "felissimo-exclusive-hotel",
+   "name": "Felissimo Exclusive Hotel",
+   "ledgerId": "STY-2026-000792",
+   "country": "Brazil",
+   "countrySlug": "brazil",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Fifteen suites and two houses in a hillside garden at Balneário Camboriú on the coast of Santa Catarina",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/felissimo-exclusive-hotel/casa-verde-veranda",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/felissimo-exclusive-hotel/rooms/casa-verde-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/felissimo-exclusive-hotel/house-exterior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/felissimo-exclusive-hotel/rooms/suite-olive-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/felissimo-exclusive-hotel/rooms/suite-olive-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/felissimo-exclusive-hotel/rooms/casa-verde-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/felissimo-exclusive-hotel/casa-verde-veranda-2"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -26.9569307,
+    "lng": -48.6371301
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Casa Verde: a 120 square metre suite with a king bed, a hot tub and a bathroom with two showers and a bath.",
+     "Casa Felissimo: a full house by architect Vicky Schauffert with two suites, a kitchen and a roof terrace with a fireplace.",
+     "Grand, Design, Sublime and Diamond Suites: from about 27 to 58 square metres, with king or queen beds.",
+     "The Owner's Suite: a king bed, a closet and a hydromassage bath with a wide view."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The hotel's garden, which runs around the whole property.",
+     "Bistrô Felissimo."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Heated floors and hydromassage baths in many suites",
+     "Nespresso machine, minibar and high-speed Wi-Fi",
+     "Free parking"
+    ]
+   },
+   "onlyHere": [
+    "Felissimo Exclusive Hotel has 15 suites, including two houses, Casa Verde and Casa Felissimo, set in a garden on a hillside at Balneário Camboriú in Santa Catarina. Each suite is different: several were designed by named Brazilian architects, with heated floors, hydromassage baths and the hotel's own vegan amenities.",
+    "The Bistrô Felissimo serves breakfast and meals to guests."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -30618,6 +30783,87 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "la-ferme-de-georges",
+   "name": "La Ferme de Georges",
+   "ledgerId": "STY-2026-000791",
+   "country": "Brazil",
+   "countrySlug": "brazil",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A small pousada of thatched lodges and organic gardens at Atins, beside the dunes of the Lençóis Maranhenses",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/property-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/dunes-lagoon",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/pool-aerial",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/la-ferme-de-georges/rooms/tree-lodge-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/open-air-lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/la-ferme-de-georges/rooms/park-lodge-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/kite-surfing-atins",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/garden-path",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/la-ferme-de-georges/rooms/river-lodge-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -2.5722892,
+    "lng": -42.752487
+   },
+   "airport": "São Luís (SLZ)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Dune Lodge: 30 to 32 square metres, a king bed and a lounge with two single beds.",
+     "River Lodge: 40 square metres, a king or queen bed and two singles, with a covered private lounge.",
+     "Park Suite: 45 square metres, open plan, for up to five.",
+     "Park Lodge: 65 square metres, two bedrooms, for up to five. There are five.",
+     "Tree Lodge: 150 square metres on a dune above the cashew trees, three bedrooms and a tower with a view all round.",
+     "Every lodge has air conditioning, a hot shower, a safe, a minibar and its own garden."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The dunes and lagoons of the Lençóis Maranhenses",
+     "Kitesurfing off Atins beach",
+     "The pool and pool bar under the cashew trees",
+     "Excursions arranged by the pousada"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Restaurant supplied by the organic vegetable gardens",
+     "The Forum, an open-air lounge under a thatched roof",
+     "Air conditioning in every lodge",
+     "There are no cash machines in Atins: bring cash"
+    ]
+   },
+   "onlyHere": [
+    "La Ferme de Georges is a small pousada at Atins in Maranhão, beside the Lençóis Maranhenses National Park and its roughly 1,500 square kilometres of dunes and lagoons. Its lodges are white-walled and built from local wood, brick and palm thatch, spread across a two acre hillside with wide gardens between them.",
+    "The restaurant cooks from the property's own organic gardens, and the pool sits in the shade of cashew trees. The owners suggest three or four nights: Atins takes a road and a river to reach."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {

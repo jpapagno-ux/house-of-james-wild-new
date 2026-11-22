@@ -1396,6 +1396,14 @@
    "released": true
   },
   {
+   "stay_id": "6b031a35bb690547f6cbc0b4",
+   "slug": "chez-georges",
+   "name": "Chez Georges",
+   "country": "Brazil",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a89a1a2dc05de61f23e191f",
    "slug": "chiawa-safaris",
    "name": "Chiawa Camp",
@@ -2047,6 +2055,14 @@
    "missing": [
     "coordinates"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6b031a35bb690547f6cbc0b6",
+   "slug": "felissimo-exclusive-hotel",
+   "name": "Felissimo Exclusive Hotel",
+   "country": "Brazil",
+   "missing": [],
    "released": true
   },
   {
@@ -3344,6 +3360,14 @@
    "slug": "la-cle",
    "name": "La Cle South Africa",
    "country": "South Africa",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b031a35bb690547f6cbc0b5",
+   "slug": "la-ferme-de-georges",
+   "name": "La Ferme de Georges",
+   "country": "Brazil",
    "missing": [],
    "released": true
   },

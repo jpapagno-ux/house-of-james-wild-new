@@ -764,6 +764,7 @@ export const STAY_SLUGS: string[] = [
   "the-retreat-rwanda",
   "the-sarojin",
   "the-siam-bangkok",
+  "the-singular-patagonia",
   "the-st-regis-bora-bora-resort",
   "the-tawny",
   "tierra-patagonia",

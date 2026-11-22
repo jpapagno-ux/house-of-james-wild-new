@@ -1708,19 +1708,19 @@
    "airports": [
     [
      "Presidente Carlos Ibáñez del Campo International Airport (PUQ)",
+     "Serves 6 stays in the Ledger here"
+    ],
+    [
+     "Puerto Natales Airport (PNT)",
      "Serves 5 stays in the Ledger here"
     ],
     [
      "El Loa Airport (CJC)",
      "Serves 4 stays in the Ledger here"
-    ],
-    [
-     "Puerto Natales Airport (PNT)",
-     "Serves 4 stays in the Ledger here"
     ]
    ],
    "transfers": [],
-   "flyInto": "PUQ · CJC",
+   "flyInto": "PUQ · PNT",
    "bestShort": "Oct–Apr",
    "atlasName": "Chile"
   },

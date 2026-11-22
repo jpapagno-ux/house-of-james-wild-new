@@ -58767,6 +58767,87 @@
    "placeSlug": null
   },
   {
+   "slug": "the-singular-patagonia",
+   "name": "The Singular Patagonia",
+   "ledgerId": "STY-2026-000782",
+   "country": "Chile & Easter Island",
+   "countrySlug": "chile",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 1915 cold storage plant on Última Esperanza Fjord, restored as a 57 room hotel with its engine room intact and Torres del Paine a day trip away",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/lounge-fireplace",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-king-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/trail-lakeside",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/restaurant-kitchen",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-suite-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-twin-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-suite-3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-king-3"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Puerto Natales Airport (PNT); Punta Arenas Airport (PUQ)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "The Singular King: 45 square metres, one king bed or two twins, fjord-facing windows.",
+     "The Singular Twin: 45 square metres, two double beds.",
+     "The Singular Twin, accessible: 45 square metres, two double beds, laid out for ease of movement.",
+     "The Singular Suite: 70 square metres, one king bed and a separate living area.",
+     "Every room takes two adults and one child. All 57 face the fjord."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Boat trips to the Serrano and Balmaceda glaciers",
+     "Hikes in Sierra Baguales",
+     "Horseback rides across the steppe",
+     "E-biking, kayaking and wildlife watching",
+     "Bilingual guides in English and Spanish"
+    ]
+   },
+   "features": {
+    "paras": [
+     "The Singular Restaurant: contemporary Patagonian cooking under Executive Chef Hernán Basso.",
+     "El Asador: open-fire cooking on an eight metre grill in the plant's former blacksmith's forge, opening 1 December 2026.",
+     "The Singular Bar and a breakfast room over the Señoret Channel.",
+     "Wellness spa for hotel guests: an indoor-outdoor pool over the fjord, dry sauna, hammam, four treatment rooms, a couples' room and a private hydrotherapy bath.",
+     "The engine room, with the cold storage plant's original machinery.",
+     "Wi-Fi in rooms and common areas. No pets."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "The Singular Patagonia stands at Puerto Bories, five kilometres from Puerto Natales, inside the former Frigorífico Puerto Bories. The first warehouses, sawmill and pier went up here in 1896, the plant began operating in 1915, and a community of workers and families lived around it for nearly seven decades. The site was declared a National Historic Monument in 1996. A restoration led by Pedro Kovacic ran from 1999 to 2011, with interiors by Enrique Concha & Co, and the hotel opened in December 2011. The brick halls, workshops, pier, smokestacks and the original engine room machinery are still part of the building.",
+    "All 57 rooms and suites face Última Esperanza Fjord, the water Juan Ladrillero sailed and named in 1557."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": null,
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [
+    "6ae697449583543efcf27c0b"
+   ],
+   "placeSlug": "patagonia"
+  },
+  {
    "slug": "the-st-regis-bora-bora-resort",
    "name": "The St. Regis Bora Bora Resort",
    "ledgerId": "STY-2026-000617",

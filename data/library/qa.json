@@ -5974,6 +5974,16 @@
    "released": true
   },
   {
+   "stay_id": "6b02d5f2fc63ebceb6c2048c",
+   "slug": "the-singular-patagonia",
+   "name": "The Singular Patagonia",
+   "country": "Chile & Easter Island",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6ae8ef16d685943e616492bd",
    "slug": "the-st-regis-bora-bora-resort",
    "name": "The St. Regis Bora Bora Resort",

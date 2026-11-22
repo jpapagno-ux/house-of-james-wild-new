@@ -155,8 +155,17 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
   // James, 21 Nov 2026: the pathway entrance is the house design for every stay with an approved pathway, each in its own colour
   const wow = !!pw;
   const wowCss = wow ? `.journal-style #journal-hero{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important}.journal-style #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.45) 0,rgba(26,24,22,.03) 12svh,rgba(26,24,22,.03) 36svh,color-mix(in srgb,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 38%,transparent) 46svh,color-mix(in srgb,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 86%,transparent) 56svh,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 62svh,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 100%)!important}.journal-style #journal-hero h1{text-shadow:0 1px 16px rgba(0,0,0,.45)}.journal-style #journal-hero p{text-shadow:0 1px 10px rgba(0,0,0,.55)}@media(min-width:768px){.journal-style #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.5) 0%,rgba(26,24,22,.1) 24%,rgba(26,24,22,.1) 46%,color-mix(in srgb,var(--jw-path) 22%,transparent) 72%,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 100%)!important}}.journal-style #record-bar{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important;border-top-color:color-mix(in srgb,var(--jw-path) 70%,#fff)!important}.jw-hero-stamp{opacity:.95;filter:drop-shadow(0 1px 5px rgba(0,0,0,.5));animation:jw-stamp-in .9s cubic-bezier(.2,.9,.3,1.15) .5s both,jw-stamp-drift 7s ease-in-out 1.6s infinite alternate}@keyframes jw-stamp-in{0%{opacity:0;transform:scale(1.5) rotate(12deg)}55%{opacity:1;transform:scale(.96) rotate(-1deg)}100%{opacity:.9;transform:scale(1) rotate(0)}}@keyframes jw-stamp-drift{from{transform:translateY(0) rotate(0)}to{transform:translateY(3px) rotate(.8deg)}}@media(prefers-reduced-motion:reduce){.jw-hero-stamp{animation:none}}` : "";
+  const pwRow = pw && wow ? (
+    <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-5 flex flex-wrap items-center gap-x-6 gap-y-3" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 16%, #fff), transparent)" }}>
+              <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
+              <p className="font-display italic text-[22px] leading-tight text-graphite">{pw.primary.name}. <span className="not-italic font-sans text-[14px] text-stone-text">{pw.primary.line}</span></p>
+              <PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} />
+            </div>
+  ) : null;
+  const crumbs = <div className="pt-6"><Breadcrumbs trail={trail} /></div>;
   return (
-    <div className={`journal-style bg-white ${pwScope}`}>
+    <div className={`journal-style bg-white ${pwScope} ${sample ? "jw-sample" : ""}`}>
+      {sample && <style>{`.jw-sample .jw-stack{display:flex;flex-direction:column;gap:72px}.jw-sample .jw-stack>*{margin-top:0!important;order:9}.jw-sample .jw-stack>#experiences{order:1}.jw-sample .jw-stack>#location{order:2}.jw-sample .jw-stack>#offers{order:3}.jw-sample .jw-stack>#reserve{order:4}.jw-sample .jw-stack>#host,.jw-sample .jw-stack>:has(#host){order:5}.jw-sample .jw-stack>#detail{order:6}.jw-sample .jw-stack>#questions{order:7}.jw-sample .jw-stack>#iggi{order:8;border-top:0!important;padding-top:0!important}.jw-sample .jw-stack header .text-house{display:none}.jw-sample .jw-stack h2{font-size:30px!important;line-height:1.05!important}@media(min-width:768px){.jw-sample .jw-stack{gap:120px}.jw-sample .jw-stack h2{font-size:44px!important}}`}</style>}
       {/* the fixed bar sits over the foot of the window: give the footer room beneath it */}
       <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style{background-color:color-mix(in srgb,var(--jw-path) 4%,#fff)!important}.journal-style main,.journal-style main section.bg-white,.journal-style main header.bg-white{background-color:transparent!important}.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}${wowCss}`}</style>
       <SiteHeader overlay />
@@ -169,17 +178,11 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
         </div>}
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow items={jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
-        {sample && <SampleBody v={v} variant={sample} rooms={roomRows} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.` : null} />}
+        {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{pwRow}{crumbs}</div><SampleBody v={v} variant={sample} rooms={roomRows} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.` : null} /></>}
         <div className="max-w-ledger mx-auto px-5 md:px-10">
-          {pw && wow && (
-            <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-5 flex flex-wrap items-center gap-x-6 gap-y-3" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 16%, #fff), transparent)" }}>
-              <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
-              <p className="font-display italic text-[22px] leading-tight text-graphite">{pw.primary.name}. <span className="not-italic font-sans text-[14px] text-stone-text">{pw.primary.line}</span></p>
-              <PathwayChips primary={pw.primary} secondary={pw.secondary} hrefFor={(p) => pathwayHref(p.key)} />
-            </div>
-          )}
-          <div className="pt-6"><Breadcrumbs trail={trail} /></div>
-          <div className="pt-12 md:pt-16 pb-20 md:pb-28 space-y-20 md:space-y-28">
+          {!sample && pwRow}
+          {!sample && crumbs}
+          <div className={`pt-12 md:pt-16 pb-20 md:pb-28 space-y-20 md:space-y-28 ${sample ? "jw-stack" : ""}`}>
             {!sample && <JournalOverview quote={s.quote} lead={s.tagline} answer={v.answer} paragraphs={s.rooms.paras} photo={v.filed[1] ?? v.filed[0] ?? null} caption={s.name} ledgerId={s.ledgerId} reasons={v.whyShort}
               strip={[{ label: "Ledger ID", value: s.ledgerId ?? "Being filed", id: true }, ...(s.bestMonths ? [{ label: "Best months", value: s.bestMonths }] : []), ...(s.country ? [{ label: "Country", value: s.country }] : []), ...(s.airportDirections && s.airportDirections.length <= 90 ? [{ label: "Getting there", value: s.airportDirections }] : s.airport ? [{ label: "Airport", value: s.airport }] : [])]} />}
 
@@ -207,8 +210,8 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
               footnote={!rates ? "" : `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates?.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
+            <JournalExperiences no={N.exp} slug={s.slug} items={experienceCards} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>
             {sample && <SampleDetail v={v} />}
-            {!sample && <JournalExperiences no={N.exp} slug={s.slug} items={experienceCards} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>}
 
             {!sample && <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>}
 

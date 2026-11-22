@@ -5,7 +5,7 @@ import AccordionRow from "@/components/journal/AccordionRow";
 import PathwayStamp from "@/components/pathways/PathwayStamp";
 import { pathwayStays } from "@/lib/content/pathways";
 import { PATHWAYS_ON } from "@/lib/content/pathways/flag";
-import { journalStay, money, type SectionKey, type ViewerPhoto } from "@/lib/journal-style/stay";
+import { journalStay, type SectionKey, type ViewerPhoto } from "@/lib/journal-style/stay";
 
 type View = NonNullable<ReturnType<typeof journalStay>>;
 
@@ -135,8 +135,8 @@ export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: {
             <div className="flex flex-1 flex-col p-5 md:p-6">
               <h3 className="font-display font-medium text-[24px] leading-tight text-graphite">{r.name}</h3>
               <p className={`${T.label} mt-3 text-stone-text`}>{r.facts?.length ? r.facts.join(" · ") : r.sleeps ? `Sleeps ${r.sleeps}` : ""}{r.flag ? ` · ${r.flag}` : ""}</p>
-              {r.lede && <p className={`${T.body} mt-3 text-graphite`}>{r.lede}</p>}
-              {r.features && r.features.length > 0 && <ul className={`${T.body} mt-3 space-y-1 text-stone-text`}>{r.features.slice(0, 4).map((f) => <li key={f}>· {f}</li>)}</ul>}
+              {r.lede && <p className={`${T.body} mt-3 line-clamp-3 text-graphite`}>{r.lede}</p>}
+              {r.features && r.features.length > 0 && <ul className={`${T.body} mt-3 space-y-1 text-stone-text`}>{r.features.slice(0, 3).map((f) => <li key={f}>· {f}</li>)}</ul>}
               <div className="mt-auto pt-6">
                 {r.list
                   ? <p className="font-display text-[28px] leading-none text-graphite">{r.now && <s className="mr-2 text-[18px] text-stone-text">{r.list}</s>}{r.now ?? r.list}</p>
@@ -209,9 +209,9 @@ export function SampleDetail({ v }: { v: View }) {
     </div>
   );
   return (
-    <section id="experiences" aria-label="Experiences and features" className="bg-white">
+    <section id="detail" aria-label="Experiences and features" className="bg-white">
       <p className={`${T.label} text-stone-text`}>The detail, folded away</p>
-      <h2 className={`${T.h2} mt-3 text-graphite`}>Experiences and Features</h2>
+      <h2 className={`${T.h2} mt-3 text-graphite`}>The Detail</h2>
       <div className="mt-9 grid lg:grid-cols-2 gap-10 items-start">
         {col("Experiences", "What You Can Do From Here", left)}
         {col("Features of the stay", "What You Get", right)}

@@ -3459,7 +3459,7 @@
   ]
  },
  "luna-volcan": {
-  "_source": "en.lunavolcan.com (home page), read 22 Nov 2026 at James's request. The hotel's two price pages disagree, so no prices are printed. Room photographs still to add.",
+  "_source": "en.lunavolcan.com (home page), read 22 Nov 2026 at James's request. Prices are the home page's printed prices; James confirmed they are per night (22 Nov 2026). An older page on the same site prints lower figures. Room photographs still to add.",
   "rooms": [
    {
     "name": "Romantic Rooms",
@@ -3476,7 +3476,11 @@
      "Floor heating in some rooms"
     ],
     "photos": [],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 284,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "Romantic Suites",
@@ -3493,7 +3497,11 @@
      "Fireplace in some suites"
     ],
     "photos": [],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 346,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "Family Suites",
@@ -3511,7 +3519,11 @@
      "Floor heating"
     ],
     "photos": [],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 568,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "Friends Rooms",
@@ -3526,12 +3538,17 @@
      "One wheelchair-accessible room"
     ],
     "photos": [],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 284,
+     "basis": "per room, per night"
+    }
    }
-  ]
+  ],
+  "ratesNote": "Prices are the hotel's own in US dollars, for the room, and vary by room within each group. The house confirms taxes and what is included with your quote."
  },
  "iguana-crossing": {
-  "_source": "iguanacrossing.com.ec/rooms, read 22 Nov 2026 at James's request. 'From' prices are filed in the Stay Studio notes, not printed: the page does not state their basis.",
+  "_source": "iguanacrossing.com.ec/rooms, read 22 Nov 2026 at James's request. Prices are the hotel's printed 'From' prices; James confirmed they are per night (22 Nov 2026).",
   "rooms": [
    {
     "name": "Master Suite",
@@ -3547,7 +3564,11 @@
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/master-suite-1"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 479,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "Junior Suite",
@@ -3562,7 +3583,11 @@
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/junior-suite-1"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 376,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "Ocean View Room with Balcony",
@@ -3579,7 +3604,11 @@
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/ocean-view-balcony-1"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 319,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "King Ocean View Room",
@@ -3594,7 +3623,11 @@
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/king-ocean-view-1"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 319,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "Ocean View Room",
@@ -3609,7 +3642,11 @@
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/ocean-view-1"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 319,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "King Room Volcano View",
@@ -3624,7 +3661,11 @@
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/king-volcano-view-1"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 249,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "Twin Room Volcano View",
@@ -3639,7 +3680,11 @@
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/twin-volcano-view-1"
     ],
-    "plungePool": false
+    "plungePool": false,
+    "from": {
+     "amount": 249,
+     "basis": "per room, per night"
+    }
    },
    {
     "name": "Triple Room",
@@ -3653,6 +3698,115 @@
     ],
     "photos": [
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/iguana-crossing/rooms/triple-room-1"
+    ],
+    "plungePool": false,
+    "from": {
+     "amount": 339,
+     "basis": "per room, per night"
+    }
+   }
+  ],
+  "ratesNote": "Prices are the hotel's own 'from' prices in US dollars. The hotel's page does not say whether taxes or breakfast are included; the house confirms both with your quote."
+ },
+ "fazenda-moreias": {
+  "_source": "moreias.com.br/en/short-stay, read 22 Nov 2026 at James's request. The farm prints no prices.",
+  "ratesNote": "The farm prints no prices. Breakfast at Orós is included. Tell the house your dates and group size and it will match you to a bungalow or house.",
+  "rooms": [
+   {
+    "name": "Bangalô 1",
+    "sleeps": 4,
+    "facts": [
+     "1 King Bed and 2 Single Beds",
+     "Up to 4 guests",
+     "Designed by Carlos Motta"
+    ],
+    "lede": "One open room of wood and thatch, with a veranda and its own pool.",
+    "features": [
+     "Private pool",
+     "Veranda",
+     "Breakfast at Orós included"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fazenda-moreias/rooms/bangalo-1-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Bangalôs 2 and 3",
+    "sleeps": 4,
+    "facts": [
+     "2 Suites each",
+     "Up to 4 guests each",
+     "Designed by Carlos Motta"
+    ],
+    "lede": "Sister bungalows, each with a double suite and a twin suite joined by a living room and open kitchen.",
+    "features": [
+     "Pool",
+     "Open kitchen and living room",
+     "Breakfast at Orós included"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fazenda-moreias/rooms/bangalos-2-and-3-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Casa de Vila",
+    "sleeps": 4,
+    "facts": [
+     "2 Suites",
+     "140 sq m",
+     "Up to 4 guests"
+    ],
+    "lede": "A village house with two suites, a full kitchen and a private pool.",
+    "features": [
+     "Private pool",
+     "Full kitchen",
+     "Double or single beds to suit the group",
+     "Breakfast at Orós included"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fazenda-moreias/rooms/casa-de-vila-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Bangalô 4",
+    "sleeps": 4,
+    "facts": [
+     "2 Suites",
+     "162 sq m pool deck",
+     "Designed by Carlos Motta"
+    ],
+    "lede": "Two suites in their own grounds, with a table for twelve and an outdoor kitchen.",
+    "features": [
+     "Pool with a 162 sq m deck",
+     "Outdoor kitchen and barbecue",
+     "Table for 12",
+     "Fire circle and football field"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fazenda-moreias/rooms/bangalo-4-1"
+    ],
+    "plungePool": false
+   },
+   {
+    "name": "Bangalô 18",
+    "sleeps": 8,
+    "facts": [
+     "4 Suites",
+     "790 sq m",
+     "Designed by Gui Mattos"
+    ],
+    "lede": "The largest house on the farm: four air-conditioned suites and open-plan living under one roof.",
+    "features": [
+     "Four air-conditioned suites",
+     "Pool with lounge area",
+     "Open-plan living",
+     "Breakfast at Orós included"
+    ],
+    "photos": [
+     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/fazenda-moreias/rooms/bangalo-18-1"
     ],
     "plungePool": false
    }

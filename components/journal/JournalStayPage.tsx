@@ -200,6 +200,8 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
       <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style{background-color:color-mix(in srgb,var(--jw-path) 4%,#fff)!important}.journal-style main,.journal-style main section.bg-white,.journal-style main header.bg-white{background-color:transparent!important}.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}${wowCss}`}</style>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip bg-white">
+        {/* Phones: the reserve block is the form and nothing else; the steps stay in the page source for larger screens (James, 23 Nov 2026). */}
+        {sample && <style>{`@media (max-width:767px){.journal-style.jw-sample #reserve ol{display:none}.journal-style.jw-sample #reserve form{scroll-margin-top:88px}.journal-style.jw-sample #reserve{scroll-margin-top:72px}}`}</style>}
         {sample && <SampleHero v={v} variant={sample} />}
         {!sample && <div className="relative">
           <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}

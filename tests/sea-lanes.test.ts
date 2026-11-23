@@ -36,11 +36,29 @@ function landOf(dest: string): Poly[] {
   return out;
 }
 
+// The same even-odd test, read through a latitude index on long rings (a continent's coast has hundreds of thousands
+// of edges): only the edges whose latitudes span the point can cross its ray, so only those are tried. Same answer.
+const BAND = 0.02;
+const bands = new WeakMap<Ring, { y0: number; rows: number[][] }>();
+function bandsOf(r: Ring) {
+  let b = bands.get(r);
+  if (b) return b;
+  let y0 = Infinity, y1 = -Infinity;
+  for (const q of r) { if (q[1] < y0) y0 = q[1]; if (q[1] > y1) y1 = q[1]; }
+  const rows: number[][] = Array.from({ length: Math.floor((y1 - y0) / BAND) + 1 }, () => []);
+  for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
+    const lo = Math.floor((Math.min(r[i][1], r[j][1]) - y0) / BAND), hi = Math.floor((Math.max(r[i][1], r[j][1]) - y0) / BAND);
+    for (let k = lo; k <= hi; k++) rows[k].push(i);
+  }
+  bands.set(r, (b = { y0, rows }));
+  return b;
+}
+const cuts = (p: LngLat, r: Ring, i: number, j: number) => (r[i][1] > p[1]) !== (r[j][1] > p[1]) && p[0] < ((r[j][0] - r[i][0]) * (p[1] - r[i][1])) / (r[j][1] - r[i][1]) + r[i][0];
 const inRing = (p: LngLat, r: Ring) => {
   let c = false;
-  for (let i = 0, j = r.length - 1; i < r.length; j = i++) {
-    if ((r[i][1] > p[1]) !== (r[j][1] > p[1]) && p[0] < ((r[j][0] - r[i][0]) * (p[1] - r[i][1])) / (r[j][1] - r[i][1]) + r[i][0]) c = !c;
-  }
+  if (r.length < 64) { for (let i = 0, j = r.length - 1; i < r.length; j = i++) if (cuts(p, r, i, j)) c = !c; return c; }
+  const b = bandsOf(r), row = b.rows[Math.floor((p[1] - b.y0) / BAND)];
+  if (row) for (const i of row) if (cuts(p, r, i, i ? i - 1 : r.length - 1)) c = !c;
   return c;
 };
 const onLand = (p: LngLat, land: Poly[]) => land.some((q) => p[0] >= q.box[0] && p[0] <= q.box[2] && p[1] >= q.box[1] && p[1] <= q.box[3] && inRing(p, q.rings[0]) && !q.rings.slice(1).some((h) => inRing(p, h)));
@@ -59,13 +77,22 @@ function toCoast(p: LngLat, land: Poly[]) {
 const reach = (p: LngLat, land: Poly[]) => (onLand(p, land) ? toCoast(p, land) + 1.5 : 3); // an inland pin: 1.5 km past the shore (James, 8 Nov 2026), as scripts/sealanes.py INLAND_KM
 
 /** The first point of a leg's polyline that crosses charted land outside the two landings, or null. */
+// Open water is skipped, never guessed (James, 23 Nov 2026: "fix sea lanes"): a point can only be on land inside a land
+// polygon's box, so a stretch of a leg is walked in 100 m steps only where its own box meets one. The check is exactly as
+// strict where there is land; the long ocean legs of the dated sailings no longer cost millions of empty steps.
 function crossing(line: LngLat[], land: Poly[]): LngLat | null {
-  const a = line[0], b = line[line.length - 1], ra = reach(a, land), rb = reach(b, land);
+  const a = line[0], b = line[line.length - 1];
+  let ra: number | null = null, rb: number | null = null;
   for (let i = 1; i < line.length; i++) {
-    const n = Math.max(2, Math.ceil(km(line[i - 1], line[i]) / 0.1));
+    const p0 = line[i - 1], p1 = line[i];
+    const x0 = Math.min(p0[0], p1[0]), x1 = Math.max(p0[0], p1[0]), y0 = Math.min(p0[1], p1[1]), y1 = Math.max(p0[1], p1[1]);
+    const near = land.filter((q) => q.box[0] <= x1 && q.box[2] >= x0 && q.box[1] <= y1 && q.box[3] >= y0);
+    if (!near.length) continue;
+    ra ??= reach(a, land); rb ??= reach(b, land);
+    const n = Math.max(2, Math.ceil(km(p0, p1) / 0.1));
     for (let s = 0; s <= n; s++) {
-      const p: LngLat = [line[i - 1][0] + ((line[i][0] - line[i - 1][0]) * s) / n, line[i - 1][1] + ((line[i][1] - line[i - 1][1]) * s) / n];
-      if (km(p, a) > ra && km(p, b) > rb && onLand(p, land)) return p;
+      const p: LngLat = [p0[0] + ((p1[0] - p0[0]) * s) / n, p0[1] + ((p1[1] - p0[1]) * s) / n];
+      if (onLand(p, near) && km(p, a) > ra && km(p, b) > rb) return p;
     }
   }
   return null;

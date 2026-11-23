@@ -1,7 +1,7 @@
 import type { Category, ConditionKind, Interest } from "./match.ts";
 import { CATEGORIES } from "./match.ts";
 
-// Atlas categories (James, 20 Nov 2026, Step 02): eleven product categories read only from confirmed attributes: what
+// Atlas categories (James, 20 Nov 2026, Step 02; Wilderness Lodges added 23 Nov 2026): twelve product categories read only from confirmed attributes: what
 // the library files the record as, its volume assignments, its reserve, the ship registry's type and the vessel's kind.
 // A rule either confirms a category or holds the record for editorial review; nothing is guessed in between.
 //
@@ -27,7 +27,9 @@ export function classifyStay(s: StayFacts): Verdict {
   if (cat === "villa") return ok("villas", "Filed as a villa");
   if (cat === "resort") return ok("resorts", "Filed as a resort");
   if (cat === "hotel" || cat === "guesthouse") return ok("hotels", `Filed as ${cat}`);
-  if (lodge) return hold("hotels", `Filed as ${cat} outside the safari rule: confirm Hotel, Resort or lodge wording`);
+  // Wilderness Lodges (James, 23 Nov 2026): a lodge outside Africa where the place itself is the reason to go. Proposed
+  // for every lodge or camp filed outside the safari rule, and confirmed stay by stay: a town lodge is a Hotel.
+  if (lodge) return hold("wilderness-lodges", `Filed as ${cat} outside the safari rule: confirm Wilderness Lodge, or Hotel or Resort`);
   return hold("hotels", "No usable category on the record");
 }
 

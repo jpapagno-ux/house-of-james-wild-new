@@ -14,7 +14,7 @@ const RULES: [string, RegExp][] = [
   ["Photographers", /photo ?lab|photograph|photo studio|creative lab|hide\b/i],
   ["Conservation-minded", /conservation|rewild|regenerat|eco[- ]|sustainab|anti-poaching/i],
   ["Walkers & the active", /walking|bush ?walk|\bhik|\bsurf|\bdiv(e|ing)|kayak|zipline|canopy|rafting/i],
-  ["Beach & ocean", /\bbeach|ocean|\breef|snorkel|lagoon|coast/i],
+  ["Beach & ocean", /\bbeach|ocean|\breef|snorkel|coast/i],
 ];
 const TAG: Record<string, string> = { family: "Families & generations", honeymoon: "Couples & honeymooners", couples: "Couples & honeymooners", wellness: "Wellness seekers", solo: "Solo travellers", adventure: "Walkers & the active", conservation: "Conservation-minded", food: "Food & wine lovers", wildlife_photography: "Photographers" };
 

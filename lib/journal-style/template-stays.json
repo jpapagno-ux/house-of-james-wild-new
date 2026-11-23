@@ -1,0 +1,20 @@
+{
+ "_note": "JWC-STYLE-01 locked stay template (James, 22 Nov 2026: 'fix this as the template and lock in the template'). Stays listed here render the locked layout; add a slug to opt a stay in.",
+ "stays": [
+  "aguas-claras",
+  "the-singular-patagonia",
+  "futangue-hotel-spa",
+  "nayara-hangaroa",
+  "mashpi-lodge",
+  "sacha-lodge",
+  "napo-wildlife-center",
+  "luna-volcan",
+  "iguana-crossing",
+  "fazenda-moreias",
+  "chez-georges",
+  "la-ferme-de-georges",
+  "felissimo-exclusive-hotel",
+  "aguas-arriba-lodge",
+  "bahia-bustamante-lodge"
+ ]
+}

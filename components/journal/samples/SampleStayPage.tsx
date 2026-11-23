@@ -6,6 +6,7 @@ import IggiMark from "@/components/iggi/IggiMark";
 import PathwayStamp from "@/components/pathways/PathwayStamp";
 import { pathwayStays } from "@/lib/content/pathways";
 import { PATHWAYS_ON } from "@/lib/content/pathways/flag";
+import TEMPLATE from "@/lib/journal-style/template-stays.json";
 import { journalStay, type SectionKey, type ViewerPhoto } from "@/lib/journal-style/stay";
 
 type View = NonNullable<ReturnType<typeof journalStay>>;
@@ -22,8 +23,8 @@ export const SAMPLES: { variant: Variant; slug: string; name: string }[] = [
   { variant: "c", slug: "fazenda-moreias", name: "C · Film first" },
   { variant: "d", slug: "aguas-claras", name: "D · Chosen mix, with prices" },
 ];
-/** The chosen layout (D) for the whole new batch, on the preview, before it goes live. */
-export const BATCH = ["aguas-claras", "the-singular-patagonia", "futangue-hotel-spa", "nayara-hangaroa", "mashpi-lodge", "sacha-lodge", "napo-wildlife-center", "luna-volcan", "iguana-crossing", "fazenda-moreias", "chez-georges", "la-ferme-de-georges", "felissimo-exclusive-hotel", "aguas-arriba-lodge", "bahia-bustamante-lodge"];
+/** The locked template's stays: one list, lib/journal-style/template-stays.json. */
+export const BATCH: string[] = TEMPLATE.stays;
 
 const T = {
   display: "font-display font-medium leading-[0.98] text-[40px] md:text-[72px]",
@@ -109,7 +110,7 @@ export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
           {film && <p className={`${T.label} text-white/70`}>{film.credit}</p>}
         </div>
       </div>
-      {pw && <div aria-hidden className="pointer-events-none absolute right-5 md:right-10 bottom-14 md:bottom-20 hidden sm:block"><PathwayStamp id={pw.primary.id} size={128} rotate={6} ink="#ffffff" /></div>}
+      {pw && <div aria-hidden className="pointer-events-none absolute right-4 top-24 md:top-auto md:right-10 md:bottom-20 [filter:drop-shadow(0_1px_10px_rgba(0,0,0,.6))]"><span className="block md:hidden"><PathwayStamp id={pw.primary.id} size={104} rotate={6} ink="#ffffff" /></span><span className="hidden md:block"><PathwayStamp id={pw.primary.id} size={156} rotate={6} ink="#ffffff" /></span></div>}
     </section>
   );
 }

@@ -50,7 +50,7 @@ const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "sou
 const no = (n: number) => String(n).padStart(2, "0");
 
 // sample: one of the three preview-only layout samples (James, 22 Nov 2026); absent on every real page, which is unchanged
-export default function JournalStayPage({ slug, sample }: { slug: string; sample?: Variant }) {
+export default function JournalStayPage({ slug, sample, preview = false }: { slug: string; sample?: Variant; /** the layout switch strip, on the preview samples only */ preview?: boolean }) {
   const v = journalStay(slug);
   if (!v) notFound();
   const { s, path, rates, offers, planHref } = v;
@@ -157,7 +157,7 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
   const wowCss = wow ? `.journal-style #journal-hero{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important}.journal-style #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.45) 0,rgba(26,24,22,.03) 12svh,rgba(26,24,22,.03) 36svh,color-mix(in srgb,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 38%,transparent) 46svh,color-mix(in srgb,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 86%,transparent) 56svh,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 62svh,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 100%)!important}.journal-style #journal-hero h1{text-shadow:0 1px 16px rgba(0,0,0,.45)}.journal-style #journal-hero p{text-shadow:0 1px 10px rgba(0,0,0,.55)}@media(min-width:768px){.journal-style #journal-hero span[aria-hidden].absolute.inset-0:not(.flex){background:linear-gradient(180deg,rgba(26,24,22,.5) 0%,rgba(26,24,22,.1) 24%,rgba(26,24,22,.1) 46%,color-mix(in srgb,var(--jw-path) 22%,transparent) 72%,color-mix(in srgb,var(--jw-path) 62%,#0b0e0c) 100%)!important}}.journal-style #record-bar{background:color-mix(in srgb,var(--jw-path) 62%,#0b0e0c)!important;border-top-color:color-mix(in srgb,var(--jw-path) 70%,#fff)!important}.jw-hero-stamp{opacity:.95;filter:drop-shadow(0 1px 5px rgba(0,0,0,.5));animation:jw-stamp-in .9s cubic-bezier(.2,.9,.3,1.15) .5s both,jw-stamp-drift 7s ease-in-out 1.6s infinite alternate}@keyframes jw-stamp-in{0%{opacity:0;transform:scale(1.5) rotate(12deg)}55%{opacity:1;transform:scale(.96) rotate(-1deg)}100%{opacity:.9;transform:scale(1) rotate(0)}}@keyframes jw-stamp-drift{from{transform:translateY(0) rotate(0)}to{transform:translateY(3px) rotate(.8deg)}}@media(prefers-reduced-motion:reduce){.jw-hero-stamp{animation:none}}` : "";
   const offersEl = <JournalOffers no={N.offers} name={s.name} offers={offerRows} applyHref="#reserve" />;
   const reserveEl = (sl: typeof slip, lean = false) => (
-    <JournalReserve no={N.reserve} steps={lean ? steps.slice(0, 4) : steps} slip={sl} live={live} reserve={{ label: "Plan a trip around it", href: planHref }} form={<RequestForm slug={s.slug} name={s.name} path={path} rooms={roomNames} />} save={<SaveToFolio slug={s.slug} name={s.name} inline />}
+    <JournalReserve no={N.reserve} steps={steps} slip={sl} live={live} reserve={{ label: "Plan a trip around it", href: planHref }} form={<RequestForm slug={s.slug} name={s.name} path={path} rooms={roomNames} />} save={<SaveToFolio slug={s.slug} name={s.name} inline />}
               folio={FLAGS.save && !lean ? (
                 <div className="mt-12 flex flex-col md:flex-row md:items-center justify-between gap-5 border-t border-[color:var(--jw-keyline)] pt-8">
                   <div><p className="font-mono text-[10px] tracking-[0.24em] uppercase text-stone-text">Not booking today</p><p className="font-display font-medium text-[26px] text-graphite mt-1">Keep {s.name} in your Folio</p></div>
@@ -234,7 +234,7 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
             {!sample && <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>}
 
             {!sample && <>{offersEl}{reserveEl(slip)}{hostEl}{mapEl}{iggiEl}{questionsEl}</>}
-            {sample && <><SampleExpect v={v} cards={experienceCards}>{strip("experiences", "experience photographs")}</SampleExpect>{offersEl}{iggiEl && <SampleIggi name={s.name}>{iggiEl}</SampleIggi>}{mapEl}{reserveEl(null, true)}{questionsEl}</>}
+            {sample && <><SampleExpect v={v} cards={experienceCards}>{strip("experiences", "experience photographs")}</SampleExpect>{offersEl}{iggiEl && <SampleIggi name={s.name}>{iggiEl}</SampleIggi>}{mapEl}{reserveEl(null, true)}{v.hostReady && v.host.host?.calendlyUrl && <p className="!-mt-10"><a href={v.host.host.calendlyUrl} className="ledger-btn-ghost">Meet the host first: book the group call</a></p>}{questionsEl}</>}
 
             {pw && <FollowThePathway primary={pw.primary} secondary={pw.secondary} related={onPathway(pw.primaryPathway).filter((x) => x.slug !== s.slug).slice(0, 4)} pathwayHref={(p) => pathwayHref(p.key)} />}
             {sign && <Postcard line={sign} signature={<Signature className="w-28" />} place={s.country} ledgerId={s.ledgerId} postmark={s.country} />}
@@ -248,7 +248,7 @@ export default function JournalStayPage({ slug, sample }: { slug: string; sample
         {v.hostReady && <CallingCard who={HOST_KIND[s.category === "lodge" ? "lodge" : "stay"].who} seats={v.host.host?.seats} />}
       </main>
 
-      {sample && <SampleSwitch slug={s.slug} variant={sample} />}
+      {sample && preview && <SampleSwitch slug={s.slug} variant={sample} />}
       <PhotoViewer slug={s.slug} name={s.name} photos={v.photos} sections={SECTION_ORDER.map((k) => ({ key: k, label: SECTION_LABEL[k] }))} credit={v.credit} reserveHref="#reserve" />
 
       <StickyBar id="record-bar" title={s.name} note={fromLine} label={`Reserve ${s.name}`}

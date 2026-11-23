@@ -20,5 +20,5 @@ export async function generateMetadata({ params }: { params: Promise<{ variant: 
 export default async function SampleRoute({ params }: { params: Promise<{ variant: string; slug: string }> }) {
   const { slug, variant } = await params;
   if (!JOURNAL_SWITCH_ALLOWED || !(SAMPLES.some((x) => x.variant === variant && x.slug === slug) || (variant === "d" && BATCH.includes(slug)))) notFound();
-  return <JournalStayPage slug={slug} sample={variant as Variant} />;
+  return <JournalStayPage slug={slug} sample={variant as Variant} preview />;
 }

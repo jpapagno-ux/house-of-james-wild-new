@@ -70,3 +70,12 @@
 - No Middle East stays, pages or maps (e.g. UAE, Oman, Jordan, Saudi Arabia, Qatar, Israel). Turkey may be added later.
 - Egypt and Morocco are Africa, not the Middle East, and can be sold.
 - No Malawi (James, 31 Oct 2026). Ethiopia is a future country (Lale's Camp held).
+
+## Stay template, locked (James, 22 Nov 2026: "fix this as the template and lock in the template")
+- Stays listed in `lib/journal-style/template-stays.json` render the locked layout, in this order: full-screen hero (film
+  where filed) with the pathway colour rising behind the title and the pathway stamp in white, legible on phone and
+  desktop; Why We Added It to the Portfolio (italic serif intro, reasons folded, no boxed lines); a photo chapter; rooms
+  as swipe cards with filed prices; a photo chapter; What You Can Expect (experiences and features, once); offers; Iggi in
+  his card, above the map; map; How to Reserve (no sample quote; one line for the host call); questions; the pathway.
+- Say each thing once. One house icon and one heading style per section. No advisor line or pathway chips under the hero.
+- New stays join by adding their slug to that file. Change the template only when James asks.

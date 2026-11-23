@@ -3,6 +3,7 @@ import JournalStayPage from "@/components/journal/JournalStayPage";
 import { stayBySlug } from "@/lib/content/stays";
 import { JOURNAL_STYLE_ON } from "@/lib/journal-style/flag";
 import { JOURNAL_STAYS } from "@/lib/journal-style/stay";
+import TEMPLATE from "@/lib/journal-style/template-stays.json";
 import { buildMetadata, fitTitle } from "@/lib/seo";
 
 // JWC-STYLE-01: the Modern Journal stay page, served AT /stays/<slug> by a rewrite (next.config.ts) when the flag is
@@ -27,5 +28,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function JournalStayRoute({ params }: { params: Promise<{ slug: string }> }) {
   const slug = (await params).slug;
   if (!JOURNAL_STAYS.includes(slug)) notFound();
-  return <JournalStayPage slug={slug} />;
+  // the locked template (James, 22 Nov 2026) for the stays listed in template-stays.json; every other stay is unchanged
+  return <JournalStayPage slug={slug} sample={(TEMPLATE.stays as string[]).includes(slug) ? "d" : undefined} />;
 }

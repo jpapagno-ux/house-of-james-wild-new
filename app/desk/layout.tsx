@@ -15,7 +15,7 @@ export default function HouseDeskLayout({ children }: { children: React.ReactNod
   return (
     <>
       <SiteHeader />
-      <main id="main" className="pt-8 md:pt-12 pb-20"><div className="max-w-ledger mx-auto px-5 md:px-10">{children}</div></main>
+      <main id="main" data-desk className="pt-8 md:pt-12 pb-20"><div className="max-w-ledger mx-auto px-5 md:px-10">{children}</div></main>
     </>
   );
 }

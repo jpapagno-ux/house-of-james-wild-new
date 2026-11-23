@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RATE_CARD_STAYS from "@/lib/booking-live/rate-card-stays.json";
 import experiencePhotos from "@/lib/journal-style/experience-photos.json";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -74,7 +75,8 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
   // exactly as the stay page uses them. Nothing here changes booking or checkout; it only places what exists.
   const priced = s.engine ? PRICED[s.slug] : undefined;
   const hostHref = v.hostReady ? "#host" : undefined;
-  const live = FLAGS.quotes ? (
+  // Check availability only where a rate card is filed (James, 23 Nov 2026): no dead ends on stays the house quotes by hand.
+  const live = FLAGS.quotes && (RATE_CARD_STAYS.stays as string[]).includes(s.slug) ? (
     <div className="flex flex-wrap items-center gap-4"><Link href={`/booking/property/${s.slug}`} className="ledger-btn ledger-btn--house">Check availability</Link><p className="text-[13.5px] text-stone-text">Live rates and rooms for your dates.</p></div>
   ) : priced ? (
     <><Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} /><BookingPanel hostHref={hostHref} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} /></>

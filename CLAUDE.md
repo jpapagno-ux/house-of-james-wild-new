@@ -79,3 +79,10 @@
   his card, above the map; map; How to Reserve (no sample quote; one line for the host call); questions; the pathway.
 - Say each thing once. One house icon and one heading style per section. No advisor line or pathway chips under the hero.
 - New stays join by adding their slug to that file. Change the template only when James asks.
+- No vertical lines (James, 23 Nov 2026: "I do not want any vertical lines on the site anywhere"): no accent bar beside
+  text and no column dividers on public pages; separate with space and horizontal hairlines. `app/globals.css` removes
+  them site-wide (desks, tables and form steppers excepted); do not add new ones. Scroll effects only where they help.
+- Phones: How to Reserve is the request form only; the sticky bar carries the price and Check dates.
+- Search opens to the box alone: recent items or three starting points, nothing else before typing.
+- Check availability shows only on stays listed in `lib/booking-live/rate-card-stays.json` (a Published rate card in
+  Booking Live). Add the slug as the last step of `docs/booking-live/RATE-CARD-PUSH.md`.

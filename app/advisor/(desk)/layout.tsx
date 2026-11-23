@@ -19,7 +19,7 @@ export default async function AdvisorDeskLayout({ children }: { children: React.
   return (
     <>
       <SiteHeader />
-      <div className={portal.portal}>
+      <div data-desk className={portal.portal}>
         <div className="border-b ledger-border border-t-2 border-t-[#8B2525] bg-white">
           <div className="max-w-ledger mx-auto px-5 md:px-10 py-3 flex flex-wrap items-center gap-x-5 gap-y-2">
             <p className="ledger-eyebrow text-[#8B2525]">Advisor Desk</p>

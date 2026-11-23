@@ -80,7 +80,17 @@
   as swipe cards with filed prices; a photo chapter; What You Can Expect (experiences and features, once); offers; Iggi in
   his card, above the map; map; How to Reserve (no sample quote; one line for the host call); questions; the pathway.
 - Say each thing once. One house icon and one heading style per section. No advisor line or pathway chips under the hero.
-- New stays join by adding their slug to that file. Change the template only when James asks.
+- Round two (James, 23 Nov 2026): the intro is a written traveller introduction of two or three sentences from the
+  stay's own filed facts, kept in `lib/journal-style/intros.json` (no Ledger ID or "filed in the Ledger" wording on the
+  page; the answer paragraph stays in the structured data). Beside it sits the at-a-glance grid with icons (Best for,
+  three at most; best months; rooms; from price; nearest airport; pathway), filed facts only; "Who it is for" is not
+  repeated lower down. Photo chapters pin while the words rise; sections arrive softly (none under reduced motion).
+  What You Can Expect runs across the page in the intro's italic serif. One short rates line under the rooms.
+- Talk to the house: Iggi lives in a panel (right side on desktop, bottom sheet on phones), opened from a slim row
+  after offers and from the bottom bar: Iggi first with answers scrolling inside the chat, then Call, Live call (the
+  host where one is filed, else James) and The team pinned below. Iggi's own logic is untouched.
+- New stays join by adding their slug to that file and an introduction to `intros.json` (`tests/journal-style.test.ts`
+  fails without one). Change the template only when James asks.
 - No vertical lines (James, 23 Nov 2026: "I do not want any vertical lines on the site anywhere"): no accent bar beside
   text and no column dividers on public pages; separate with space and horizontal hairlines. `app/globals.css` removes
   them site-wide (desks, tables and form steppers excepted); do not add new ones. Scroll effects only where they help.

@@ -70,6 +70,7 @@ export default async function SpeciesPage({ params }: { params: Promise<{ slug: 
             </ul>
             <div className="mt-8 flex flex-wrap gap-5">
               <Link href="/plan" className="ledger-btn ledger-btn--house">Plan with James</Link>
+              <Link href="/wildlife" className="ledger-btn-ghost">All wildlife</Link>
               {p.parent ? <Link href={p.parent[p.parent.length - 1].path} className="ledger-btn-ghost">All of {p.parent[p.parent.length - 1].name}</Link> : <Link href="/voyages/amazon" className="ledger-btn-ghost">All Amazon ships</Link>}
             </div>
           </section>

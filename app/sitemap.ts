@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Hubs and house pages approved by James, 28 Oct 2026.
   ["/about", "/the-exceptional-few", "/how-the-house-works", "/about/founder", "/about/team", "/advisors", "/advisors/match", "/stays", "/safaris", "/voyages", "/gatherings", "/overland", "/destinations", "/journal", "/plan", "/plan/iggi", "/compass", "/the-ledger", "/partners", "/for-advisors", "/travel-notes"].forEach((p) => add(p, 0.8, "weekly"));
   // Species pages (Field Notes; James, 23 Nov 2026).
+  add("/wildlife", 0.7, "weekly");
   Object.keys(SPECIES_PAGES).forEach((slug) => add(`/wildlife/${slug}`, 0.6, "monthly"));
   RESERVES.forEach((r) => { add(`/safaris/${r.slug}`, 0.7, "monthly"); r.camps.filter(campReady).forEach((c) => add(`/safaris/${r.slug}/${c.slug}`, 0.6, "monthly")); });
   REGION_DATA.filter((r) => r.ready || r.slug === "polar-antarctica").forEach((r) => add(`/destinations/${r.slug}`, 0.7, "monthly"));

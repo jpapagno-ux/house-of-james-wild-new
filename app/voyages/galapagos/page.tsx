@@ -5,6 +5,9 @@ import IslandStays from "@/components/ships/IslandStays";
 import { galapagosFleet, watersHub } from "@/lib/content/ships/hubs";
 import { partnerBySlug, partnerPath } from "@/lib/content/partners";
 import { PATHWAY_LIST } from "@/lib/pathways";
+import { HubSection } from "@/components/hub/Hub";
+import FieldNoteSet from "@/components/field-notes/FieldNoteSet";
+import { FIELD_NOTES, GALAPAGOS_HUB_NOTES } from "@/lib/field-notes/notes";
 import { buildMetadata } from "@/lib/seo";
 
 // /voyages/galapagos: a Voyages waters hub (voyages plan, Part 2; James, 1 Nov 2026). Everything on it reads
@@ -24,5 +27,14 @@ export default function Page() {
       items={F.items.map((i) => ({ ...i, node: <ShipCard c={H.cards.find((c) => c.slug === i.slug)!} /> }))}
     />
   );
-  return <VoyageHub {...H} ships={ships} after={<IslandStays />} />;
+  return (
+    <VoyageHub {...H} ships={ships} after={
+      <>
+        <IslandStays />
+        <HubSection eyebrow="From the islands" title="What Lives in the Galápagos?" id="field-notes-h">
+          <FieldNoteSet notes={GALAPAGOS_HUB_NOTES.map((id) => FIELD_NOTES[id])} />
+        </HubSection>
+      </>
+    } />
+  );
 }

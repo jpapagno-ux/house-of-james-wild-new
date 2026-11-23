@@ -228,6 +228,119 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       "Animal Diversity Web, 'Cheirogaleidae': nocturnal and arboreal; fat stored in the tail to carry them through dry seasons.",
     ],
   },
+  "galapagos-giant-tortoise": {
+    id: "galapagos-giant-tortoise", region: "Galápagos", no: "01",
+    title: "The giant tortoise", latin: "Chelonoidis · the animal the islands are named for",
+    body: "The islands take their name from it: galápago is an old Spanish word for tortoise. It can live beyond a hundred years. Shells come in two shapes, domed on the large, humid islands and saddle-backed where the animal has to stretch up to reach its food.",
+    rows: [
+      { label: "Look for", text: "The shell: domed in the misty highlands, saddle-backed on the dry islands." },
+      { label: "Pace", text: "Slow. They rest for nearly sixteen hours a day." },
+      { label: "Ask your guide", text: "Which species lives on this island. There are thirteen." },
+      { label: "When", text: "Year round." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/galapagos-giant-tortoise", version: 1795460423, alt: "Watercolour of a Galápagos giant tortoise walking through highland grass and ferns", width: 1000, height: 747, scene: true },
+    where: { label: "See the Galápagos ships", href: "/voyages/galapagos#ships-h" },
+    sources: [
+      "Galapagos Conservation Trust, 'Galapagos giant tortoise': name of the islands; lifespan 100 years and more; domed and saddle-backed shells and the islands each suits; Endangered.",
+      "National Geographic, 'Galápagos tortoise': 13 living species; saddleback shells let the neck reach tall cacti; rests nearly 16 hours a day; hunting by sailors.",
+      "San Diego Zoo Wildlife Alliance Library, 'Galápagos Giant Tortoises fact sheet': shell types and size.",
+    ],
+  },
+  "marine-iguana": {
+    id: "marine-iguana", region: "Galápagos", no: "02",
+    title: "The marine iguana", latin: "Amblyrhynchus cristatus · the only lizard that feeds at sea",
+    body: "No other lizard on earth feeds in the sea. It dives to graze algae off the rocks, hauls out on black lava to warm up in the sun, and sneezes out the salt it has swallowed through glands in its nose.",
+    rows: [
+      { label: "Look for", text: "A white crust of salt on a dark head, and whole piles of them basking together." },
+      { label: "Listen for", text: "The snort of a salty sneeze." },
+      { label: "Ask your guide", text: "When the big males swim out to feed." },
+      { label: "When", text: "Year round." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/marine-iguana", version: 1795460446, alt: "Watercolour of a marine iguana basking on black lava beside the surf", width: 1000, height: 747, scene: true },
+    where: { label: "See the Galápagos ships", href: "/voyages/galapagos#ships-h" },
+    sources: [
+      "Encyclopaedia Britannica, 'marine iguana': the one living lizard that feeds on algae in the sea; basks on lava rocks.",
+      "Animal Diversity Web, University of Michigan Museum of Zoology, 'Amblyrhynchus cristatus': feeds almost only on marine algae; salt excreted from a nasal gland; basking to regulate temperature.",
+      "Oceana Marine Life Encyclopedia, 'Marine Iguana': restricted to the Galápagos; salt glands; dives of more than 20 metres.",
+      "National Geographic, 'Marine Iguana': Vulnerable on the IUCN Red List.",
+    ],
+  },
+  "blue-footed-booby": {
+    id: "blue-footed-booby", region: "Galápagos", no: "03",
+    title: "The blue-footed booby", latin: "Sula nebouxii · half the world's pairs nest here",
+    body: "The bluer the feet, the better the match. The colour comes from pigments in the fish it eats, and a male shows his feet to a female with a slow, high-stepping strut. About half of all breeding pairs nest in the Galápagos.",
+    rows: [
+      { label: "Look for", text: "The dance on land, and at sea a bird folding its wings and dropping from as high as 80 feet." },
+      { label: "Listen for", text: "The male whistles. The female honks." },
+      { label: "Ask your guide", text: "Which islands have pairs courting now. They breed when conditions suit." },
+      { label: "When", text: "Year round." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/blue-footed-booby", version: 1795460470, alt: "Watercolour of a blue-footed booby lifting one bright blue foot in its courtship dance", width: 1000, height: 747, scene: true },
+    where: { label: "See the Galápagos ships", href: "/voyages/galapagos#ships-h" },
+    sources: [
+      "National Geographic, 'Blue-footed booby': foot display in courtship; plunge dives from as high as 80 feet; about half of all breeding pairs in the Galápagos.",
+      "PBS Nature, 'Blue-footed booby': foot colour from carotenoids in the fish diet; brighter feet and mating success.",
+      "Cornell Lab of Ornithology, All About Birds, 'Blue-footed Booby': courtship display; ground nest; diving.",
+      "Cornell University, Galápagos curriculum, 'The Blue-footed Booby Mating Dance': opportunistic breeding; female honks and male whistles.",
+    ],
+  },
+  "galapagos-penguin": {
+    id: "galapagos-penguin", region: "Galápagos", no: "04",
+    title: "The Galápagos penguin", latin: "Spheniscus mendiculus · the only penguin north of the equator",
+    body: "This is the only penguin found north of the equator. About 95 percent live on Isabela and Fernandina in the west, where cold, rich currents reach the islands. It is one of the smallest penguins, and fewer than 2,000 remain.",
+    rows: [
+      { label: "Look for", text: "A thin white line curving from the eye round to the chin." },
+      { label: "Where", text: "The western islands, Isabela and Fernandina, with small colonies elsewhere." },
+      { label: "Ask your guide", text: "Whether your route reaches the west." },
+      { label: "When", text: "Year round. They breed whenever cold water brings food." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/galapagos-penguin", version: 1795460493, alt: "Watercolour of two Galápagos penguins on black lava beside turquoise water", width: 1000, height: 747, scene: true },
+    where: { label: "See the Galápagos ships", href: "/voyages/galapagos#ships-h" },
+    sources: [
+      "BirdLife International, species factsheet 'Galapagos Penguin Spheniscus mendiculus': most northerly penguin; about 95% on Isabela and Fernandina; breeds through the year with upwelling; Endangered.",
+      "WWF, 'Galápagos penguins': only penguin north of the equator; population fewer than 2,000.",
+      "Galapagos Conservation Trust, 'The Galapagos Penguin': Humboldt and Cromwell currents; distribution.",
+      "Encyclopaedia Britannica, 'Galapagos penguin': C-shaped band of white from eye to chin; among the smallest penguins; small colonies on Bartolomé, Santiago and Floreana.",
+    ],
+  },
+  "waved-albatross": {
+    id: "waved-albatross", region: "Galápagos", no: "05",
+    title: "The waved albatross", latin: "Phoebastria irrorata · Española Island",
+    body: "Almost every waved albatross on earth nests on one island, Española. Pairs stay together for life and greet each other with a long dance of bowing, bill circling and bill clacking. The wings span seven to eight feet.",
+    rows: [
+      { label: "Look for", text: "Two birds fencing with their bills on the clifftop." },
+      { label: "Listen for", text: "Honking, hooting and the clatter of bills." },
+      { label: "Ask your guide", text: "Whether your route calls at Española in season." },
+      { label: "When", text: "Roughly April to December, on Española." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/waved-albatross", version: 1795460516, alt: "Watercolour of two waved albatrosses touching bills in their courtship dance on a clifftop", width: 1000, height: 747, scene: true },
+    where: { label: "See the Galápagos ships", href: "/voyages/galapagos#ships-h" },
+    sources: [
+      "American Bird Conservancy, 'Waved Albatross': 7 to 8 foot wingspan; breeds on Española with a small colony on Isla de la Plata; noisy displays with sky-pointing, bowing and bill clacking; Critically Endangered.",
+      "BirdLife International, species factsheet 'Waved Albatross Phoebastria irrorata': breeds primarily on the south coast of Española.",
+      "Galápagos Conservancy, on the waved albatross nesting season: returns each year to Española; courtship dance and bill rattling; single egg.",
+      "EDGE of Existence, Zoological Society of London, 'Waved albatross': pairs mate for life.",
+      "Animal Diversity Web, 'Phoebastria irrorata': young leave the island by mid-December.",
+    ],
+  },
+  "galapagos-sea-lion": {
+    id: "galapagos-sea-lion", region: "Galápagos", no: "06",
+    title: "The Galápagos sea lion", latin: "Zalophus wollebaeki · the mammal you will see most",
+    body: "This is the most common mammal in the islands and the smallest of the sea lions. It breeds only here and on one island off the mainland. The young are curious enough to swim up to a snorkeller, and it is listed as Endangered.",
+    rows: [
+      { label: "Look for", text: "Pups. There are dependent pups in the colonies in every month." },
+      { label: "In the water", text: "The young ones come to you. Let them, and keep your hands to yourself." },
+      { label: "Ask your guide", text: "How close you may go on the beach, and why." },
+      { label: "When", text: "Year round." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/galapagos-sea-lion", version: 1795460540, alt: "Watercolour of a Galápagos sea lion mother and pup nose to nose on a sand beach", width: 1000, height: 747, scene: true },
+    where: { label: "See the Galápagos ships", href: "/voyages/galapagos#ships-h" },
+    sources: [
+      "WWF, 'Sea lion': the most common mammal in the Galápagos.",
+      "BBC Wildlife (Discover Wildlife), Galápagos sea lion guide written with the Galapagos Conservation Trust: smallest sea lion species; inquisitive and playful underwater; breeds in the Galápagos and on Isla de la Plata; Endangered; population fell 60 to 65 percent from 1978 to 2001.",
+      "Animal Diversity Web, University of Michigan Museum of Zoology, 'Zalophus wollebaeki': endemic to the Galápagos.",
+    ],
+  },
 };
 
 // Which notes sit on which country page (one or two per page).
@@ -240,6 +353,9 @@ export const COUNTRY_FIELD_NOTES: Record<string, string[]> = {
 
 // The Amazon voyages hub: the first note in full, the rest folded.
 export const AMAZON_HUB_NOTES = ["pink-river-dolphin", "giant-river-otter", "arapaima", "giant-water-lily", "macaws-clay-lick", "pygmy-marmoset"];
+
+// The Galápagos voyages hub: the first note in full, the rest folded.
+export const GALAPAGOS_HUB_NOTES = ["galapagos-giant-tortoise", "marine-iguana", "blue-footed-booby", "galapagos-penguin", "waved-albatross", "galapagos-sea-lion"];
 
 // Species pages (/wildlife/[slug]): the note, then plain questions and answers for search and answer engines.
 // Every answer restates facts already sourced on the note; photography lines are craft advice, not facts.
@@ -521,6 +637,144 @@ export const SPECIES_PAGES: Record<string, SpeciesPage> = {
       { name: "Expedition Blue Lagoon", href: "/stays/expedition-blue-lagoon", line: "Cap Masoala, by boat and kayak" },
       { name: "Miavana by Time + Tide", href: "/stays/miavana-by-time-tide", line: "Private island, northeast coast" },
       { name: "Time + Tide Tsara Komba", href: "/stays/time-tide-tsara-komba", line: "Nosy Komba, near Nosy Be" },
+    ],
+  },
+  "galapagos-giant-tortoise": {
+    noteId: "galapagos-giant-tortoise",
+    title: "Where to See Giant Tortoises in the Galápagos",
+    answer: "Giant tortoises live only in the Galápagos, and the islands are named for them. The dome-shelled kind lives in the misty highlands of the larger islands; the saddle-backed kind lives on drier islands. You see them on foot with a guide, at walking pace. James Wild & Co files small ships and lodges across the islands.",
+    qa: [
+      { q: "How long do giant tortoises live?", a: "More than a hundred years. They are among the longest-lived of all land animals." },
+      { q: "How big do they get?", a: "On average about 1.5 metres long and 250 kilograms, and up to 1.8 metres and 400 kilograms." },
+      { q: "Why do the shells differ from island to island?", a: "Domed shells belong to tortoises on large, humid islands with plenty to graze. Saddle-backed shells rise at the front, so the tortoise can stretch its neck up to reach tall cactus on dry islands." },
+      { q: "Are giant tortoises endangered?", a: "Yes. Sailors killed between 100,000 and 200,000 for food from the 17th to the 19th century, and the tortoises remain under protection today." },
+    ],
+    photo: [
+      "Get low. A tortoise photographed from its own eye level looks its size.",
+      "They move slowly but they do move. Set up ahead of one and let it walk into the frame.",
+      "Mist in the highlands is flat light. Use it for the texture of the shell and skin.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "The Galápagos", path: "/voyages/galapagos" }],
+    reachTitle: "Small Ships and Lodges in the Galápagos",
+    reach: [
+      { name: "Galapagos Safari Camp", href: "/stays/galapagos-safari-camp", line: "Santa Cruz highlands, lodge" },
+      { name: "Pikaia Lodge", href: "/stays/pikaia-lodge", line: "Santa Cruz, lodge" },
+      { name: "Galápagos yachts and catamarans", href: "/voyages/galapagos#ships-h", line: "Small ships filed in the Ledger" },
+    ],
+  },
+  "marine-iguana": {
+    noteId: "marine-iguana",
+    title: "Where to See Marine Iguanas in the Galápagos",
+    answer: "Marine iguanas live only in the Galápagos and are the only lizards on earth that feed in the sea. You find them on rocky shores and black lava, basking in groups between dives for algae. James Wild & Co files small ships and lodges across the islands.",
+    qa: [
+      { q: "Do marine iguanas really swim?", a: "Yes. They dive to graze algae off the rocks, and they can go down more than 20 metres." },
+      { q: "Why do marine iguanas sneeze?", a: "To get rid of salt. Glands in the nose filter the salt they swallow with their food, and they sneeze it out. It dries as a white crust on the head." },
+      { q: "Why do they lie in the sun?", a: "They cannot make their own heat. After a cold dive they warm up again by basking on the rocks." },
+      { q: "Are marine iguanas endangered?", a: "They are listed as Vulnerable." },
+    ],
+    photo: [
+      "Dark animal on dark rock: find one against the sea or the sky.",
+      "Wait for the sneeze. Keep the camera up on a basking group and you will get one.",
+      "Go wide for the heap, then close for one face with its crust of salt.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "The Galápagos", path: "/voyages/galapagos" }],
+    reachTitle: "Small Ships and Lodges in the Galápagos",
+    reach: [
+      { name: "Galapagos Safari Camp", href: "/stays/galapagos-safari-camp", line: "Santa Cruz highlands, lodge" },
+      { name: "Pikaia Lodge", href: "/stays/pikaia-lodge", line: "Santa Cruz, lodge" },
+      { name: "Galápagos yachts and catamarans", href: "/voyages/galapagos#ships-h", line: "Small ships filed in the Ledger" },
+    ],
+  },
+  "blue-footed-booby": {
+    noteId: "blue-footed-booby",
+    title: "Where to See Blue-Footed Boobies Dance in the Galápagos",
+    answer: "About half the world's blue-footed boobies nest in the Galápagos. They court on bare ground, where the male lifts his blue feet one at a time for the female, and they hunt by plunging into the sea from as high as 80 feet. James Wild & Co files small ships and lodges across the islands.",
+    qa: [
+      { q: "Why are their feet blue?", a: "The colour comes from pigments called carotenoids in the fish they eat. Brighter feet signal a well-fed, healthy bird, and both sexes prefer partners with brighter feet." },
+      { q: "When do blue-footed boobies dance?", a: "They breed when conditions suit, not in one fixed season, so courtship can be seen at different times of year. Ask your guide which islands have pairs courting." },
+      { q: "How do they fish?", a: "They fold their wings back and plunge from as high as 80 feet, sometimes in groups." },
+      { q: "Where do they nest?", a: "On the ground, in a shallow scrape ringed with guano." },
+    ],
+    photo: [
+      "Shoot the dance from the bird's level, with the feet in the frame.",
+      "For the dive, follow one bird circling over the water and fire as the wings fold.",
+      "They nest on the ground beside the path. Stay on the trail and use a longer lens.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "The Galápagos", path: "/voyages/galapagos" }],
+    reachTitle: "Small Ships and Lodges in the Galápagos",
+    reach: [
+      { name: "Galapagos Safari Camp", href: "/stays/galapagos-safari-camp", line: "Santa Cruz highlands, lodge" },
+      { name: "Pikaia Lodge", href: "/stays/pikaia-lodge", line: "Santa Cruz, lodge" },
+      { name: "Galápagos yachts and catamarans", href: "/voyages/galapagos#ships-h", line: "Small ships filed in the Ledger" },
+    ],
+  },
+  "galapagos-penguin": {
+    noteId: "galapagos-penguin",
+    title: "Where to See Penguins in the Galápagos",
+    answer: "The Galápagos penguin is the only penguin found north of the equator. About 95 percent of them live on Isabela and Fernandina in the west of the islands, so a route that reaches the west gives you the best chance. James Wild & Co files small ships and lodges across the islands.",
+    qa: [
+      { q: "How can a penguin live on the equator?", a: "Cold, nutrient-rich water reaches the islands on the Humboldt and Cromwell currents. The penguins also pant and keep to the shade in the heat of the day." },
+      { q: "How many Galápagos penguins are there?", a: "Fewer than 2,000. The species is listed as Endangered." },
+      { q: "Which islands have penguins?", a: "Isabela and Fernandina hold about 95 percent. There are small colonies on Bartolomé, Santiago and Floreana." },
+      { q: "When do they breed?", a: "At any time of year, when upwelling cold water brings food." },
+    ],
+    photo: [
+      "On the rocks they stand still. Take your time and wait for two to face each other.",
+      "In the water they are fast. Use a fast shutter and follow one bird.",
+      "Black lava and white bellies fool a camera. Check the first frame and adjust.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "The Galápagos", path: "/voyages/galapagos" }],
+    reachTitle: "Small Ships and Lodges in the Galápagos",
+    reach: [
+      { name: "Galapagos Safari Camp", href: "/stays/galapagos-safari-camp", line: "Santa Cruz highlands, lodge" },
+      { name: "Pikaia Lodge", href: "/stays/pikaia-lodge", line: "Santa Cruz, lodge" },
+      { name: "Galápagos yachts and catamarans", href: "/voyages/galapagos#ships-h", line: "Small ships filed in the Ledger" },
+    ],
+  },
+  "waved-albatross": {
+    noteId: "waved-albatross",
+    title: "When and Where to See the Waved Albatross",
+    answer: "Almost the entire world population of waved albatrosses nests on Española, in the south of the Galápagos, with a few pairs on Isla de la Plata off the mainland. The birds are on Española from roughly April to December. To see the courtship dance you need a route that calls at Española in those months. James Wild & Co files small ships across the islands.",
+    qa: [
+      { q: "When are waved albatrosses on Española?", a: "Eggs are laid between April and June, and the young leave the island by about mid-December." },
+      { q: "What is the courtship dance?", a: "A long, set routine of bowing, bill circling, sky-pointing and bill clacking, with honking and hooting. Pairs stay together for life." },
+      { q: "How big is a waved albatross?", a: "The wings span seven to eight feet." },
+      { q: "Is the waved albatross endangered?", a: "Yes. It is listed as Critically Endangered, with a world population estimated at 50,000 to 70,000." },
+    ],
+    photo: [
+      "The dance repeats. Watch one round, then shoot the next.",
+      "Keep both birds in the frame and wait for the bills to cross.",
+      "For flight, stand where they launch from the cliff edge and let them come past.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "The Galápagos", path: "/voyages/galapagos" }],
+    reachTitle: "Small Ships and Lodges in the Galápagos",
+    reach: [
+      { name: "Galapagos Safari Camp", href: "/stays/galapagos-safari-camp", line: "Santa Cruz highlands, lodge" },
+      { name: "Pikaia Lodge", href: "/stays/pikaia-lodge", line: "Santa Cruz, lodge" },
+      { name: "Galápagos yachts and catamarans", href: "/voyages/galapagos#ships-h", line: "Small ships filed in the Ledger" },
+    ],
+  },
+  "galapagos-sea-lion": {
+    noteId: "galapagos-sea-lion",
+    title: "Where to Swim with Sea Lions in the Galápagos",
+    answer: "The Galápagos sea lion is the most common mammal in the islands, and you will meet it on beaches and in the water on most routes. It is the smallest sea lion species, the young are curious about swimmers, and it is listed as Endangered. James Wild & Co files small ships and lodges across the islands.",
+    qa: [
+      { q: "Can you swim with sea lions in the Galápagos?", a: "Often, yes. Young sea lions are inquisitive and will approach a snorkeller. Your guide sets the rules in the water and on the beach." },
+      { q: "Are Galápagos sea lions found anywhere else?", a: "They breed in the Galápagos and on Isla de la Plata, just off mainland Ecuador." },
+      { q: "Are they endangered?", a: "Yes. The population fell by 60 to 65 percent between 1978 and 2001." },
+      { q: "When are there pups?", a: "In every month. The breeding season is long, so there are dependent pups in the colonies all year." },
+    ],
+    photo: [
+      "Underwater, stay still and let them circle you. They come closer to a swimmer who is not chasing.",
+      "On the beach, lie down at their level, at the distance your guide gives.",
+      "Wet fur is dark and dry fur is gold. Dry animals in low sun photograph best.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "The Galápagos", path: "/voyages/galapagos" }],
+    reachTitle: "Small Ships and Lodges in the Galápagos",
+    reach: [
+      { name: "Galapagos Safari Camp", href: "/stays/galapagos-safari-camp", line: "Santa Cruz highlands, lodge" },
+      { name: "Pikaia Lodge", href: "/stays/pikaia-lodge", line: "Santa Cruz, lodge" },
+      { name: "Galápagos yachts and catamarans", href: "/voyages/galapagos#ships-h", line: "Small ships filed in the Ledger" },
     ],
   },
 };

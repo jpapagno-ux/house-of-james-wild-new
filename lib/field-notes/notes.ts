@@ -1,7 +1,7 @@
 // Field Notes (James, 22 Nov 2026): one short species note with a house watercolour, on destination and
 // river pages. Every note files its `sources` here (research paper, museum or conservation body), never printed
 // as a link. A note with no sources must not be placed on a page: tests/field-notes.test.ts fails on it.
-// Watercolours are house illustrations made with Cloudinary AI; a scene keeps its painted setting.
+// Watercolours are house illustrations made with Cloudinary AI, filed under jwco/illustrations/field-notes; a scene keeps its painted setting.
 export type FieldNote = {
   id: string; region: string; no: string; title: string; latin: string; body: string;
   rows: { label: string; text: string }[];
@@ -21,7 +21,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       { label: "Ask your guide", text: "Which flooded channels they use in high water." },
       { label: "When", text: "High-water months, when the forest floods." },
     ],
-    image: { publicId: "samples/field-notes/pink-river-dolphin-scene-watercolour", version: 1795357148, alt: "Watercolour of a pink river dolphin surfacing in dark water beside flooded forest", width: 1000, height: 747, scene: true },
+    image: { publicId: "jwco/illustrations/field-notes/pink-river-dolphin", version: 1795449968, alt: "Watercolour of a pink river dolphin surfacing in dark water beside flooded forest", width: 1000, height: 747, scene: true },
     where: { label: "See them from the river", href: "/voyages/amazon#ships-h" },
     sources: [
       "Martin, A. R. and da Silva, V. M. F., 'Sexual dimorphism and body scarring in the boto (Amazon River dolphin) Inia geoffrensis', Marine Mammal Science (University of St Andrews research portal): males pinker than females and more heavily scarred by tooth rakes.",
@@ -39,7 +39,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       { label: "Ask your guide", text: "Which oxbow lake has a resident family." },
       { label: "When", text: "Year round. Keep your distance and let them come to you." },
     ],
-    image: { publicId: "samples/field-notes/giant-river-otter-scene-watercolour", version: 1795437553, alt: "Watercolour of a giant river otter raised from dark lake water, showing its pale throat patch", width: 1000, height: 747, scene: true },
+    image: { publicId: "jwco/illustrations/field-notes/giant-river-otter", version: 1795449975, alt: "Watercolour of a giant river otter raised from dark lake water, showing its pale throat patch", width: 1000, height: 747, scene: true },
     where: { label: "See the Amazon ships", href: "/voyages/amazon#ships-h" },
     sources: [
       "Noonan, P., Prout, S. and Hayssen, V., 'Pteronura brasiliensis (Carnivora: Mustelidae)', Mammalian Species 49(953), 2017: largest freshwater otter, slow rivers and creeks, fish diet, length to 1,800 mm.",
@@ -57,7 +57,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       { label: "Ask your guide", text: "Which lagoons hold pirarucu." },
       { label: "When", text: "Any calm hour on a quiet lagoon." },
     ],
-    image: { publicId: "samples/field-notes/arapaima-scene-watercolour", version: 1795437530, alt: "Watercolour of an arapaima rolling at the surface of dark water beside flooded forest", width: 1000, height: 747, scene: true },
+    image: { publicId: "jwco/illustrations/field-notes/arapaima", version: 1795449973, alt: "Watercolour of an arapaima rolling at the surface of dark water beside flooded forest", width: 1000, height: 747, scene: true },
     where: { label: "See the Amazon ships", href: "/voyages/amazon#ships-h" },
     sources: [
       "National Geographic, 'Arapaima': obligate air breather, underwater 10 to 20 minutes, cough-like gulp, commonly about six feet and 200 pounds.",
@@ -74,7 +74,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       { label: "Ask your guide", text: "Whether a skiff can reach a lily lagoon at dusk." },
       { label: "When", text: "Dusk and after dark for flowers; any hour for the leaves." },
     ],
-    image: { publicId: "samples/field-notes/giant-water-lily-scene-watercolour", version: 1795437573, alt: "Watercolour of giant Amazon water lily pads with one white and one pink flower on still water", width: 1000, height: 747, scene: true },
+    image: { publicId: "jwco/illustrations/field-notes/giant-water-lily", version: 1795449976, alt: "Watercolour of giant Amazon water lily pads with one white and one pink flower on still water", width: 1000, height: 747, scene: true },
     where: { label: "See the Amazon ships", href: "/voyages/amazon#ships-h" },
     sources: [
       "Singapore National Parks Board, Flora and Fauna Web, 'Victoria amazonica': leaves to 2.5 m, upturned rims with a notch, spines beneath, white then pink night flowers pollinated by beetles.",
@@ -91,7 +91,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       { label: "Ask your guide", text: "Which lick is active, and when to be in the hide." },
       { label: "When", text: "Daily. Your guide will know the hour." },
     ],
-    image: { publicId: "samples/field-notes/macaws-clay-lick-scene-watercolour", version: 1795437476, alt: "Watercolour of scarlet and blue-and-yellow macaws on a red clay riverbank cliff", width: 1000, height: 747, scene: true },
+    image: { publicId: "jwco/illustrations/field-notes/macaws-clay-lick", version: 1795449971, alt: "Watercolour of scarlet and blue-and-yellow macaws on a red clay riverbank cliff", width: 1000, height: 747, scene: true },
     where: { label: "See the Amazon ships", href: "/voyages/amazon#ships-h" },
     sources: [
       "Brightsmith, D., 'Macaw and Clay Lick Studies at Tambopata Research Center, Peru', AFA Watchbird: up to 1,000 parrots and macaws daily at a river cliff, eating sodium-rich clay.",
@@ -109,7 +109,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       { label: "Ask your guide", text: "Whether a gum tree is known near the river edge." },
       { label: "When", text: "Year round." },
     ],
-    image: { publicId: "samples/field-notes/pygmy-marmoset-scene-watercolour", version: 1795437507, alt: "Watercolour of a pygmy marmoset clinging to a tree trunk beside small gum holes", width: 1000, height: 747, scene: true },
+    image: { publicId: "jwco/illustrations/field-notes/pygmy-marmoset", version: 1795449972, alt: "Watercolour of a pygmy marmoset clinging to a tree trunk beside small gum holes", width: 1000, height: 747, scene: true },
     where: { label: "See the Amazon ships", href: "/voyages/amazon#ships-h" },
     sources: [
       "Primate Info Net, Wisconsin National Primate Research Center, 'Pygmy marmoset' factsheet: smallest monkey, 119 g and 136 mm on average; Brazil, Ecuador, Bolivia, Colombia and Peru.",
@@ -127,7 +127,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       { label: "Ask your guide", text: "Which trees are in fruit this week." },
       { label: "When", text: "Year round, by day." },
     ],
-    image: { publicId: "samples/field-notes/red-ruffed-lemur-scene-watercolour", version: 1795436183, alt: "Watercolour of a red ruffed lemur on a mossy branch above the Masoala rainforest", width: 1000, height: 747, scene: true },
+    image: { publicId: "jwco/illustrations/field-notes/red-ruffed-lemur", version: 1795449969, alt: "Watercolour of a red ruffed lemur on a mossy branch above the Masoala rainforest", width: 1000, height: 747, scene: true },
     where: { label: "Stay at Masoala Forest Lodge", href: "/stays/masoala-forest-lodge" },
     sources: [
       "Primate Info Net, Wisconsin National Primate Research Center, 'Ruffed lemur' factsheet: chestnut-red coat with a white nape; primary range the Masoala peninsula east of the Bay of Antongil.",
@@ -135,11 +135,100 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       "Duke Lemur Center, 'Red Ruffed Lemur': loud calls heard up to half a mile away; primary rainforest canopy.",
     ],
   },
+  "black-lemur": {
+    id: "black-lemur", region: "Madagascar", no: "02",
+    title: "The black lemur", latin: "Eulemur macaco · Nosy Komba, Nosy Be and the far northwest",
+    body: "Only the males are black. Females are chestnut brown with white tufts at the ears, and a male is born his mother's colour and turns black within weeks. They live in the far northwest, including the islands of Nosy Be and Nosy Komba.",
+    rows: [
+      { label: "Look for", text: "A black male and a brown female sitting side by side." },
+      { label: "Listen for", text: "Movement overhead at any hour: they are active by day and by night." },
+      { label: "Ask your guide", text: "Why they rub millipedes into their fur." },
+      { label: "When", text: "Year round." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/black-lemur", version: 1795450026, alt: "Watercolour of a black male and a brown, white-tufted female black lemur on a branch", width: 1000, height: 747, scene: true },
+    where: { label: "Stay at Tsara Komba", href: "/stays/time-tide-tsara-komba" },
+    sources: [
+      "Duke Lemur Center, 'Common Black Lemur': males solid black, females brown with white ear tufts; males born the female's colour and turn black within 5 to 6 weeks; millipede rubbing.",
+      "Animal Diversity Web, University of Michigan Museum of Zoology, 'Eulemur macaco': sexual dichromatism; active by day and night; Nosy Be and Nosy Komba.",
+      "Handbook of the Mammals of the World (Plazi treatment), 'Eulemur macaco': distribution on Nosy Be, Nosy Komba and the coast north-east of Ambanja.",
+    ],
+  },
+  "aye-aye": {
+    id: "aye-aye", region: "Madagascar", no: "03",
+    title: "The aye-aye", latin: "Daubentonia madagascariensis · the largest nocturnal primate",
+    body: "The aye-aye hunts by sound. It taps along a branch with one long, thin middle finger, listens for grubs moving under the bark, gnaws a hole and hooks them out with the same finger. It works only at night.",
+    rows: [
+      { label: "Look for", text: "Large bare ears and a bushy tail longer than its body." },
+      { label: "Listen for", text: "Quick tapping on dead wood after dark." },
+      { label: "Ask your guide", text: "Whether a night walk is possible during your stay." },
+      { label: "When", text: "After dark." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/aye-aye", version: 1795449848, alt: "Watercolour of an aye-aye at night tapping a mossy branch with its long middle finger", width: 1000, height: 747, scene: true },
+    where: { label: "Plan Madagascar with James", href: "/plan?destination=madagascar" },
+    sources: [
+      "Duke Lemur Center, 'Aye-aye (Daubentonia madagascariensis)': world's largest nocturnal primate; large ears; skeletal middle finger; tail longer than the body.",
+      "National Geographic, 'Aye-aye': taps trees with the long middle finger, listens for larvae under the bark and fishes them out; nocturnal.",
+      "Erickson, C. J. et al., 'Percussive foraging: stimuli for prey location by aye-ayes', Duke University: taps wood to find cavities, then gnaws to extract prey.",
+    ],
+  },
+  "helmet-vanga": {
+    id: "helmet-vanga", region: "Madagascar", no: "04",
+    title: "The helmet vanga", latin: "Euryceros prevostii · northeast rainforest",
+    body: "A black and chestnut bird with a massive arched bill of pale blue, found only in the rainforests of northeast Madagascar. Masoala National Park is one of the few places it is recorded, and birders cross the world for one sighting.",
+    rows: [
+      { label: "Look for", text: "The blue bill in the dim understorey, often among a mixed flock of vangas." },
+      { label: "Listen for", text: "A short call from inside a passing flock." },
+      { label: "Ask your guide", text: "Whether a nest is known this season." },
+      { label: "When", text: "Any day in the forest. Patience helps." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/helmet-vanga", version: 1795449879, alt: "Watercolour of a helmet vanga with its large pale blue bill on a mossy rainforest branch", width: 1000, height: 747, scene: true },
+    where: { label: "Stay at Masoala Forest Lodge", href: "/stays/masoala-forest-lodge" },
+    sources: [
+      "BirdLife International, species factsheet 'Helmet Vanga Euryceros prevostii': restricted to north-eastern Madagascar; black with massive pale blue bill and chestnut mantle; recorded in Masoala National Park.",
+      "Safford, R., 'Photospot: Helmet Vanga', Bulletin of the African Bird Club: primary rainforest, often in mixed-species flocks with other large vangas; Masoala and Marojejy.",
+      "La Marca, G. and Thorstrom, R., 'Breeding biology, diet and vocalization of the Helmet Vanga on the Masoala Peninsula, Madagascar', Ostrich 71, 2000.",
+    ],
+  },
+  "humpback-whale": {
+    id: "humpback-whale", region: "Madagascar", no: "05",
+    title: "Humpbacks of Antongil Bay", latin: "Megaptera novaeangliae · the southern winter",
+    body: "Each southern winter, humpback whales come up from Antarctic feeding grounds to breed and calve in Madagascar's coastal waters. Antongil Bay, beside Masoala, is one of the main places they are studied. The first arrive off the south in May and the last leave in December.",
+    rows: [
+      { label: "Look for", text: "A blow on the horizon, then a tail lifting before a dive." },
+      { label: "Listen for", text: "Song through the hull on a still day." },
+      { label: "Ask your guide", text: "How close the boats may go, and why." },
+      { label: "When", text: "The southern winter. Ask the house for the bay's best weeks." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/humpback-whale-antongil-bay", version: 1795449908, alt: "Watercolour of a humpback whale breaching in a calm bay below forested hills", width: 1000, height: 747, scene: true },
+    where: { label: "Stay at Masoala Forest Lodge", href: "/stays/masoala-forest-lodge" },
+    sources: [
+      "Wildlife Conservation Society Madagascar, 'Humpback whale': migration from Antarctic feeding grounds, arriving off southern Madagascar in May, last whales leaving in December; breeding and calving habitat including Antongil Bay; studied by WCS since 1996.",
+      "Royal Society Open Science (2018), humpback song study with recordings at Antongil Bay, Madagascar.",
+    ],
+  },
+  "mouse-lemur": {
+    id: "mouse-lemur", region: "Madagascar", no: "06",
+    title: "The mouse lemur", latin: "Genus Microcebus · the smallest primates",
+    body: "Mouse lemurs are the smallest primates on earth. The smallest of them, Madame Berthe's, averages about 30 grams. They sleep aloft by day, forage at night for insects, fruit and flowers, and store fat in their tails for the lean months.",
+    rows: [
+      { label: "Look for", text: "Two points of eyeshine in a headlamp beam." },
+      { label: "Ask your guide", text: "Which species lives in this forest." },
+      { label: "Range", text: "Different species across the island. Madame Berthe's lives in the dry forests of the west." },
+      { label: "When", text: "After dark." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/mouse-lemur", version: 1795449955, alt: "Watercolour of a mouse lemur with large shining eyes on a twig at night", width: 1000, height: 747, scene: true },
+    where: { label: "Plan Madagascar with James", href: "/plan?destination=madagascar" },
+    sources: [
+      "Animal Diversity Web, University of Michigan Museum of Zoology, 'Microcebus berthae': smallest known living primate, average 30.6 g; dry deciduous forest of western Madagascar; tapetum lucidum for night foraging.",
+      "National Geographic, 'Mouse Lemurs': sleep aloft by day, forage at night for insects, fruit and flowers; fat stored in the tail.",
+      "Animal Diversity Web, 'Cheirogaleidae': nocturnal and arboreal; fat stored in the tail to carry them through dry seasons.",
+    ],
+  },
 };
 
 // Which notes sit on which country page (one or two per page).
 export const COUNTRY_FIELD_NOTES: Record<string, string[]> = {
-  madagascar: ["red-ruffed-lemur"],
+  madagascar: ["red-ruffed-lemur", "black-lemur", "aye-aye", "helmet-vanga", "humpback-whale", "mouse-lemur"],
   peru: ["macaws-clay-lick", "giant-river-otter"],
   "ecuador-galapagos": ["pygmy-marmoset"],
   brazil: ["arapaima", "giant-water-lily"],
@@ -150,7 +239,7 @@ export const AMAZON_HUB_NOTES = ["pink-river-dolphin", "giant-river-otter", "ara
 
 // Species pages (/wildlife/[slug]): the note, then plain questions and answers for search and answer engines.
 // Every answer restates facts already sourced on the note; photography lines are craft advice, not facts.
-export type SpeciesPage = { noteId: string; title: string; answer: string; qa: { q: string; a: string }[]; photo: string[]; reach: { name: string; href: string; line: string }[] };
+export type SpeciesPage = { noteId: string; title: string; answer: string; qa: { q: string; a: string }[]; photo: string[]; reachTitle?: string; reach: { name: string; href: string; line: string }[] };
 export const SPECIES_PAGES: Record<string, SpeciesPage> = {
   "pink-river-dolphin": {
     noteId: "pink-river-dolphin",
@@ -173,6 +262,126 @@ export const SPECIES_PAGES: Record<string, SpeciesPage> = {
       { name: "Delfin III", href: "/voyages/ships/delfin-iii", line: "Peru, 3 to 4 nights" },
       { name: "Anakonda", href: "/voyages/ships/anakonda-amazon-cruise", line: "Ecuador, 3 to 7 nights" },
       { name: "MV Premium", href: "/voyages/ships/amazon-clipper-premium", line: "Brazil, 2 to 5 nights" },
+    ],
+  },
+  "giant-river-otter": {
+    noteId: "giant-river-otter",
+    title: "Where to See Giant River Otters in the Amazon",
+    answer: "Giant river otters live on slow rivers, creeks and oxbow lakes across the Amazon basin. They are the longest of the weasel family, up to 1.8 metres, and hunt fish in noisy family groups. The surest way to see them is from a quiet skiff or canoe on a lake where a family is resident. James Wild & Co files small ships and lodges on Amazon waters in Peru, Ecuador and Brazil.",
+    qa: [
+      { q: "How big is a giant river otter?", a: "Up to 1.8 metres from nose to tail, which makes it the longest member of the weasel family and the largest freshwater otter." },
+      { q: "How do researchers tell giant otters apart?", a: "By the pale patch on the throat. Each otter's patch is different, so a photograph of it identifies the animal." },
+      { q: "Do giant river otters live in groups?", a: "Yes. Families of three to eight hunt together and call to each other constantly. Each family's chorus is distinct." },
+      { q: "Are giant river otters endangered?", a: "The IUCN Red List classes the giant otter as Endangered. Threats include habitat loss and illegal hunting." },
+    ],
+    photo: [
+      "Wait for the periscope: an otter lifts its head and chest clear of the water to look at the boat, and that is when the throat patch shows.",
+      "Stay low and still in the skiff. A family that is not pressed will often come closer on its own.",
+      "They are fast and dark against dark water. Use a fast shutter and expose for the face, not the lake.",
+    ],
+    reachTitle: "Lodges and Small Ships on Otter Waters",
+    reach: [
+      { name: "Inkaterra Reserva Amazonica", href: "/stays/inkaterra-reserva-amazonica", line: "Peru, lodge" },
+      { name: "Inkaterra Hacienda Concepcion", href: "/stays/inkaterra-hacienda-concepcion", line: "Peru, lodge" },
+      { name: "Napo Wildlife Center", href: "/stays/napo-wildlife-center", line: "Ecuador, lodge" },
+      { name: "Anakonda", href: "/voyages/ships/anakonda-amazon-cruise", line: "Ecuador, 3 to 7 nights" },
+      { name: "Delfin III", href: "/voyages/ships/delfin-iii", line: "Peru, 3 to 4 nights" },
+    ],
+  },
+  "arapaima": {
+    noteId: "arapaima",
+    title: "Where to See Arapaima, the Giant Fish of the Amazon",
+    answer: "The arapaima, called pirarucu in Brazil and paiche in Peru, is one of the largest freshwater fish on earth. It breathes air and has to surface every ten to twenty minutes, so on a calm lagoon you hear it before you see it. James Wild & Co files small ships on Amazon rivers in Peru, Ecuador and Brazil.",
+    qa: [
+      { q: "How big does an arapaima get?", a: "Commonly about six feet long and 200 pounds. The largest recorded reach around ten feet and 440 pounds, though fish that size have not been reported for many years." },
+      { q: "Why does the arapaima come up for air?", a: "It is an air breather. Its gills are small, and it takes in air through a modified swim bladder that works as a lung, so it must surface every ten to twenty minutes." },
+      { q: "What does pirarucu mean?", a: "It is the fish's name in Brazil, from the Tupi language, and translates roughly as red fish. The tail is red." },
+      { q: "Where does the arapaima live?", a: "In the rivers, lakes and flooded forest of the Amazon basin. When the rivers overflow, the fish spread out into the flooded forest." },
+    ],
+    photo: [
+      "Listen first. The gulp sounds like a cough, and the ring on the water tells you where to point.",
+      "Pick one stretch of lagoon and wait with the camera up. The roll at the surface lasts a second or two.",
+      "Low, flat light shows the red in the tail. Midday glare off the water hides it.",
+    ],
+    reachTitle: "Small Ships on These Rivers",
+    reach: [
+      { name: "Aria Amazon", href: "/voyages/ships/aria-amazon", line: "Peru, 3 to 7 nights" },
+      { name: "Aqua Nera", href: "/voyages/ships/aqua-nera", line: "Peru, 3 to 7 nights" },
+      { name: "Delfin III", href: "/voyages/ships/delfin-iii", line: "Peru, 3 to 4 nights" },
+      { name: "Anakonda", href: "/voyages/ships/anakonda-amazon-cruise", line: "Ecuador, 3 to 7 nights" },
+      { name: "MV Premium", href: "/voyages/ships/amazon-clipper-premium", line: "Brazil, 2 to 5 nights" },
+    ],
+  },
+  "giant-water-lily": {
+    noteId: "giant-water-lily",
+    title: "Where to See the Giant Amazon Water Lily",
+    answer: "The giant water lily, Victoria amazonica, grows in the backwaters and oxbow lakes of the Amazon. Its floating leaves reach two and a half metres across. The flower opens white on its first night and pink on its second, so the best time to visit a lily lagoon is dusk. James Wild & Co files small ships on Amazon rivers in Peru, Ecuador and Brazil.",
+    qa: [
+      { q: "How big are the leaves of the giant water lily?", a: "Up to about two and a half metres across, with upturned rims and a notch that lets rainwater run off. The underside is ribbed and covered in spines." },
+      { q: "Why does the flower change colour?", a: "It opens white and scented on the first night to draw in beetles, closes around them, then opens pink on the second night and lets them go, dusted with pollen." },
+      { q: "What does the flower smell of?", a: "Pineapple, on its first night." },
+      { q: "When is the best time of day to see the flowers?", a: "From dusk into the night. The flower opens after dark; the leaves can be seen at any hour." },
+    ],
+    photo: [
+      "Go at dusk and stay into the dark. A first-night flower is white; a second-night flower is pink.",
+      "Shoot from as high as the skiff allows, so the round leaves read as circles and not as ovals.",
+      "Still water gives you the reflection. Ask the boatman to cut the engine early and drift in.",
+    ],
+    reachTitle: "Small Ships on These Rivers",
+    reach: [
+      { name: "Aria Amazon", href: "/voyages/ships/aria-amazon", line: "Peru, 3 to 7 nights" },
+      { name: "Aqua Nera", href: "/voyages/ships/aqua-nera", line: "Peru, 3 to 7 nights" },
+      { name: "Delfin III", href: "/voyages/ships/delfin-iii", line: "Peru, 3 to 4 nights" },
+      { name: "Anakonda", href: "/voyages/ships/anakonda-amazon-cruise", line: "Ecuador, 3 to 7 nights" },
+      { name: "MV Premium", href: "/voyages/ships/amazon-clipper-premium", line: "Brazil, 2 to 5 nights" },
+    ],
+  },
+  "macaws-clay-lick": {
+    noteId: "macaws-clay-lick",
+    title: "Where to See Macaws at a Clay Lick in the Amazon",
+    answer: "Along rivers of the western Amazon, hundreds of macaws and parrots gather each day on bare clay cliffs to eat the soil. The best-studied licks are on the Tambopata River in southeast Peru. You watch from a hide across the water, and your guide will know the hour. James Wild & Co files lodges and small ships in the western Amazon of Peru and Ecuador.",
+    qa: [
+      { q: "Why do macaws eat clay?", a: "The leading explanation is salt. Clay at the licks is far richer in sodium than the fruit and seeds the birds live on, and the western Amazon is short of it." },
+      { q: "How many birds come to a clay lick?", a: "At the large lick beside the Tambopata Research Center in Peru, up to 1,000 parrots and macaws have been counted in a day." },
+      { q: "Where are the clay licks?", a: "Along exposed river banks in the western Amazon basin. Parrots elsewhere in the world do not gather to eat clay in this way." },
+      { q: "Which lodge should I choose for a clay lick?", a: "Ask the house. Licks go quiet and come back, and we will check with the lodge which one is active before you book." },
+    ],
+    photo: [
+      "Be in the hide before the birds arrive and stay seated. They are wary on the approach and one movement empties the cliff.",
+      "A long lens for birds on the clay, and a second, wider frame ready for the moment the whole flock lifts.",
+      "The lift is silent for a second, then loud. Keep shooting through it.",
+    ],
+    reachTitle: "Lodges and Small Ships in the Western Amazon",
+    reach: [
+      { name: "Inkaterra Reserva Amazonica", href: "/stays/inkaterra-reserva-amazonica", line: "Peru, lodge" },
+      { name: "Inkaterra Hacienda Concepcion", href: "/stays/inkaterra-hacienda-concepcion", line: "Peru, lodge" },
+      { name: "Napo Wildlife Center", href: "/stays/napo-wildlife-center", line: "Ecuador, lodge" },
+      { name: "Anakonda", href: "/voyages/ships/anakonda-amazon-cruise", line: "Ecuador, 3 to 7 nights" },
+      { name: "Delfin III", href: "/voyages/ships/delfin-iii", line: "Peru, 3 to 4 nights" },
+    ],
+  },
+  "pygmy-marmoset": {
+    noteId: "pygmy-marmoset",
+    title: "Where to See the Pygmy Marmoset, the World's Smallest Monkey",
+    answer: "The pygmy marmoset is the smallest monkey in the world, at about 119 grams. It lives in river-edge forest in the western Amazon, in Brazil, Colombia, Ecuador, Peru and Bolivia, and feeds mostly on tree gum. The way to find one is to find its tree: a trunk riddled with small holes. James Wild & Co files lodges and small ships in the western Amazon of Peru and Ecuador.",
+    qa: [
+      { q: "How small is a pygmy marmoset?", a: "About 119 grams and 136 millimetres from head to rump on average, with a longer tail. It fits in a hand." },
+      { q: "What do pygmy marmosets eat?", a: "Mostly tree gum and sap. They gouge small holes in bark with their lower teeth and return to feed on what wells up. They also eat insects." },
+      { q: "Where do pygmy marmosets live?", a: "In the rainforests of the western Amazon basin, usually in forest along river edges." },
+      { q: "How do you find one?", a: "Look for the tree first. Each family keeps one or more trunks riddled with gum holes, and the monkeys come back to them." },
+    ],
+    photo: [
+      "Find the gum tree and wait. The animals return to the same holes, so the tree is your frame.",
+      "They cling upright to the trunk. Turn the camera on its side.",
+      "They are tiny and the forest is dim. Use the longest lens you can hold steady and raise the sensitivity.",
+    ],
+    reachTitle: "Lodges and Small Ships in the Western Amazon",
+    reach: [
+      { name: "Inkaterra Reserva Amazonica", href: "/stays/inkaterra-reserva-amazonica", line: "Peru, lodge" },
+      { name: "Inkaterra Hacienda Concepcion", href: "/stays/inkaterra-hacienda-concepcion", line: "Peru, lodge" },
+      { name: "Napo Wildlife Center", href: "/stays/napo-wildlife-center", line: "Ecuador, lodge" },
+      { name: "Anakonda", href: "/voyages/ships/anakonda-amazon-cruise", line: "Ecuador, 3 to 7 nights" },
+      { name: "Delfin III", href: "/voyages/ships/delfin-iii", line: "Peru, 3 to 4 nights" },
     ],
   },
 };

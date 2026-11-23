@@ -36,7 +36,7 @@ export default async function SpeciesPage({ params }: { params: Promise<{ slug: 
             <h1 className="ledger-display text-[2.1rem] md:text-[3.1rem] leading-[1.08] mt-2">{p.title}</h1>
           </header>
           <div className="mt-8"><AnswerBlock>{p.answer}</AnswerBlock></div>
-          <div className="mt-10"><FieldNoteCard note={note} /></div>
+          <div className="mt-10"><FieldNoteCard note={note} onOwnPage /></div>
 
           <section className="mt-14 border-t ledger-rule pt-8 max-w-3xl" aria-labelledby="qa-h">
             <p className="ledger-eyebrow ledger-crimson">Plain answers</p>
@@ -59,7 +59,7 @@ export default async function SpeciesPage({ params }: { params: Promise<{ slug: 
 
           <section className="mt-14 border-t ledger-rule pt-8" aria-labelledby="reach-h">
             <p className="ledger-eyebrow ledger-crimson">From the Ledger</p>
-            <h2 id="reach-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">Small Ships on These Rivers</h2>
+            <h2 id="reach-h" className="ledger-display text-[1.75rem] md:text-4xl mt-2">{p.reachTitle ?? "Small Ships on These Rivers"}</h2>
             <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {p.reach.map((r) => (
                 <li key={r.href} className="border border-[color:var(--jw-hairline)] bg-white p-5">

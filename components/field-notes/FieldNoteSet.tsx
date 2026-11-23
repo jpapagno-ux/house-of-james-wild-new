@@ -1,5 +1,6 @@
 import FieldNoteCard from "@/components/field-notes/FieldNoteCard";
-import type { FieldNote } from "@/lib/field-notes/notes";
+import Link from "next/link";
+import { SPECIES_PAGES, type FieldNote } from "@/lib/field-notes/notes";
 
 // A set of Field Notes: the first in full, the rest folded so the page stays short on a phone.
 // Folded notes stay in the page source (native <details>), so search and answer engines still read them.
@@ -27,6 +28,10 @@ function Folded({ note }: { note: FieldNote }) {
             </div>
           ))}
         </dl>
+        <div className="mt-4 flex flex-col gap-2 items-start">
+          <a href={note.where.href} className="ledger-btn-ghost inline-flex">{note.where.label}</a>
+          {SPECIES_PAGES[note.id] && <Link href={`/wildlife/${note.id}`} className="ledger-btn-ghost inline-flex">Where and how to see it</Link>}
+        </div>
       </div>
     </details>
   );

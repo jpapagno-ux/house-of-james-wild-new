@@ -10,6 +10,7 @@ import { momentsFor, rowsFrom } from "@/lib/content/stay-moments";
 import { PHOTO_CREDIT } from "@/lib/content/stay-media";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { STAY_FILMS } from "@/lib/content/stay-films";
+import INTROS from "./intros.json";
 import { roomsFor } from "@/lib/content/stay-rooms";
 import { routesThrough } from "@/lib/content/trips";
 import { suitedTo } from "@/lib/ledger/travel-types";
@@ -20,8 +21,8 @@ import RATE_HOLDS from "./rate-holds.json";
 import ROOM_LIBRARY from "./room-library.json";
 import ROOM_SOURCES from "./room-photo-sources.json";
 
-export type LibraryRoom = { name: string; sleeps: number | null; facts: string[]; lede: string | null; features: string[]; photos: string[]; plungePool: boolean };
-const LIB = ROOM_LIBRARY as unknown as Record<string, { rooms: LibraryRoom[]; aliases?: Record<string, string> } | string>;
+export type LibraryRoom = { name: string; sleeps: number | null; facts: string[]; lede: string | null; features: string[]; photos: string[]; plungePool: boolean; /** a price the hotel publishes on its own site, shown only at James's request (21 Nov 2026); never a rate-card figure */ from?: { amount: number; basis: string } };
+const LIB = ROOM_LIBRARY as unknown as Record<string, { rooms: LibraryRoom[]; aliases?: Record<string, string>; ratesNote?: string } | string>;
 const normRoom = (n: string) => n.toLowerCase().replace(/\btwo\b/g, "2").replace(/\bone\b/g, "1").replace(/\b(suites|suite|rooms|room|the)\b/g, "").replace(/[^a-z0-9]/g, "");
 /** The library's rooms for a stay, and the library room that a rate-card room name refers to. */
 export function libraryRooms(slug: string) {
@@ -29,7 +30,7 @@ export function libraryRooms(slug: string) {
   const rooms = e && typeof e === "object" ? e.rooms.filter((r) => r.photos.length > 0 || r.features.length > 0 || r.lede) : [];
   const aliases = e && typeof e === "object" ? e.aliases ?? {} : {};
   const find = (name: string) => rooms.find((r) => r.name === aliases[name]) ?? rooms.find((r) => normRoom(r.name) === normRoom(name)) ?? null;
-  return { rooms, find };
+  return { rooms, find, ratesNote: e && typeof e === "object" ? e.ratesNote ?? null : null };
 }
 import PHOTO_NOTES from "./photo-notes.json";
 
@@ -175,8 +176,12 @@ export function journalStay(slug: string) {
   const kind = (s.category && KIND[s.category]) || "stay";
   // the same answer-first paragraph the stay page has always opened with, for search and answer engines
   const answer = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} Vetted for the Ledger by the house.`;
+  // what the traveller reads first on the locked template: a written introduction where one is filed, else the stay's own
+  // filed line. The answer paragraph above stays in the structured data for search and answer engines.
+  const plain = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}`;
+  const intro = (INTROS.intros as Record<string, string>)[s.slug] ?? (s.quote ? s.quote.replace(/\s+,/g, ",").trim() : plain);
   return {
-    s, path, filed, slides, frames, rates, lib, offers, features, experiences, suited, answer, kind,
+    s, path, filed, slides, frames, rates, lib, offers, features, experiences, suited, answer, intro, kind,
     // the stay's own films: a hero film (muted, looping) and a longer stay film for the Film section; either may be absent
     heroFilm: STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : null, video: VIDEOS[`stay:${s.slug}`] ?? null,
     // rooms filed with the house's own room record (shown with its own component, unchanged) where no rate card above applies

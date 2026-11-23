@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-21",
+ "exportedOn": "2026-11-23",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -900,7 +900,7 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Seronera, Ndutu, Grumeti or Kogatende",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -930,6 +930,7 @@
    ],
    "why": [],
    "facts": {
+    "how_to_get_there": "There are scheduled charter flights into the Serengeti airstrip nearest to the current position of the camps (Seronera, Ndutu, Grumeti or Kogatende). This is followed by a short drive to camp.",
     "signature_experiences": "Game drives within range of the Great Migration, from a camp that moves with it.",
     "who_its_for": "Travellers who want to follow the Great Migration from a small mobile camp inside the Serengeti."
    },
@@ -1222,6 +1223,128 @@
    ],
    "arrivalHubIds": [],
    "placeSlug": "crete"
+  },
+  {
+   "slug": "aguas-arriba-lodge",
+   "name": "Aguas Arriba Lodge",
+   "ledgerId": "STY-2026-000793",
+   "country": "Argentina",
+   "countrySlug": "argentina",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Five suites on the east shore of Lago del Desierto, reached by boat or on foot, with Fitz Roy across the water",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/fitz-roy-reflected-in-lago-del-desierto",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lodge-exterior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/living-room-lake-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/aguas-arriba-lodge/rooms/fitz-roy-suites-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lodge-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/fitz-roy-at-dusk",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lago-del-desierto-shore",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lodge-staircase",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/dining-table",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/granite-spires",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/aguas-arriba-lodge/lake-from-the-trail"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -49.0480983,
+    "lng": -72.8654446
+   },
+   "airport": "El Calafate (FTE)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Fitz Roy Suites: two corner suites of 20 to 27 square metres, one on each floor, with three large windows to the lake, Mount Fitz Roy and the Vespignani Glacier.",
+     "Glacier Suites: three suites of 17 to 20 square metres on the upper floor, at the front of the lodge, with the same view.",
+     "Each suite has one queen bed or two twins, a bathroom with a bath and shower, radiators and a safe."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Hikes on the lodge's private trails, out each day",
+     "High mountain hikes with specialist guides, by arrangement",
+     "Fly fishing on the lake",
+     "Yoga and meditation",
+     "Bird watching and photography"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Boat transfers across the lake, in and out",
+     "A main room with a fireplace and a library",
+     "Minimum stay three nights. Guests aged over 12",
+     "Smoke free. Satellite Wi-Fi"
+    ]
+   },
+   "onlyHere": [
+    "Aguas Arriba Lodge is a wooden mountain house on the east shore of Lago del Desierto, 37 kilometres from El Chaltén and 15 kilometres from Los Glaciares National Park. It stands on private land with 900 metres of lake shore, and no road reaches it: guests cross the lake by boat or walk in through the lenga forest in about three hours.",
+    "There are five suites and never more than 12 guests. The owners, Ivor Matovic and Pato García, built it small on purpose, so a stay feels like a house shared with friends. All meals and the daily hikes are part of the stay."
+   ],
+   "why": [],
+   "facts": {
+    "best_months": "Open November to March.",
+    "how_to_get_there": "From El Chaltén, 37 kilometres to the south end of Lago del Desierto, then the lodge's boat across the lake, or a walk of about three hours through the forest.",
+    "signature_experiences": "Arriving across the lake by boat, a day on the private trails with a picnic, and Fitz Roy from the bedroom window.",
+    "who_its_for": "Hikers and couples who want the Fitz Roy country without the crowds of El Chaltén. Not for children of 12 and under."
+   },
+   "faqs": [
+    {
+     "q": "What is Aguas Arriba Lodge known for?",
+     "a": "Aguas Arriba Lodge is a wooden mountain house on the east shore of Lago del Desierto, 37 kilometres from El Chaltén and 15 kilometres from Los Glaciares National Park. It stands on private land with 900 metres of lake shore, and no road reaches it."
+    },
+    {
+     "q": "What rooms does Aguas Arriba Lodge have?",
+     "a": "Aguas Arriba Lodge has two suite types: Fitz Roy Suites and Glacier Suites."
+    },
+    {
+     "q": "What is there to do at Aguas Arriba Lodge?",
+     "a": "Hikes on the lodge's private trails, out each day; high mountain hikes with specialist guides, by arrangement; fly fishing on the lake; yoga and meditation; bird watching and photography."
+    },
+    {
+     "q": "How do you get to Aguas Arriba Lodge?",
+     "a": "The nearest airport is El Calafate (FTE). No road reaches the lodge: guests cross the lake by boat or walk in through the lenga forest in about three hours. Boat transfers in and out are included."
+    },
+    {
+     "q": "Is there a minimum stay or age at Aguas Arriba Lodge?",
+     "a": "The minimum stay is three nights, and guests must be aged over 12. The lodge is smoke free and has satellite Wi-Fi."
+    },
+    {
+     "q": "How much does Aguas Arriba Lodge cost?",
+     "a": "The lodge prints no prices: it quotes per person, per night, in US dollars, with all meals, boat transfers and daily hikes included."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
   },
   {
    "slug": "aguas-claras",
@@ -2887,8 +3010,25 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Amazon Field Station by Inkaterra known for?",
+     "a": "It is one of the rare places where guests live inside active rainforest research, surrounded by ongoing conservation work and Amazon ecosystems."
+    },
+    {
+     "q": "What is there to do at Amazon Field Station by Inkaterra?",
+     "a": "Rainforest expeditions; wildlife observation trails; river canoe trips; canopy ecology; night walks in the jungle; conservation workshops."
+    },
+    {
+     "q": "How do you get to Amazon Field Station by Inkaterra?",
+     "a": "The nearest airport is Padre Aldamiz International Airport (PEM) in Puerto Maldonado, Peru, about a 1 hour flight from Cusco (CUZ). From there it is around 50 minutes by river boat along the Madre de Dios River to the field station."
+    },
+    {
+     "q": "When is the best time to visit Amazon Field Station by Inkaterra?",
+     "a": "May to October. These months are the dry season in the southern Amazon, with better river access, clearer trails and higher wildlife visibility, while the rainforest stays lush."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -4349,8 +4489,8 @@
    "facts": {
     "best_months": "June to October and January to February are the dry months, with the clearest Kilimanjaro views. The climate is warm year round.",
     "how_to_get_there": "Fly Safarilink from Nairobi Wilson to Kimana Airfield inside the sanctuary, charter from the Maasai Mara, or drive about 3.5 hours from Nairobi.",
-    "who_its_for": "Families (children of all ages, childminding 6 pm to 10 pm), photographers and travellers pairing the Mara with Kilimanjaro.",
-    "signature_experiences": "Night drives and walks in Kimana Sanctuary, day trips into Amboseli National Park, the Mnara tower at sunset, and a visit to Big Life Foundation HQ."
+    "signature_experiences": "Night drives and walks in Kimana Sanctuary, day trips into Amboseli National Park, the Mnara tower at sunset, and a visit to Big Life Foundation HQ.",
+    "who_its_for": "Families (children of all ages, childminding 6 pm to 10 pm), photographers and travellers pairing the Mara with Kilimanjaro."
    },
    "faqs": [],
    "reviewed": true,
@@ -4972,9 +5112,9 @@
    ],
    "facts": {
     "best_months": "Late spring through early autumn generally offers the most favorable conditions for coastal walks and west coast touring, while Ireland remains a year-round destination for travelers comfortable with variable weather.",
-    "who_its_for": "Travelers seeking an intimate, atmospheric coastal base for a carefully paced Irish journey, including couples, solo travelers, and guests who value privacy over resort-style facilities.",
+    "how_to_get_there": "Ariel House is accessed by road in Ireland. The exact airport, transfer time, and driving route are not specified in the available property information and should be confirmed before booking.",
     "signature_experiences": "Coastal walks, scenic west coast drives, local village and heritage visits, and returning to the character of a private Irish house after a day outdoors.",
-    "how_to_get_there": "Ariel House is accessed by road in Ireland. The exact airport, transfer time, and driving route are not specified in the available property information and should be confirmed before booking."
+    "who_its_for": "Travelers seeking an intimate, atmospheric coastal base for a carefully paced Irish journey, including couples, solo travelers, and guests who value privacy over resort-style facilities."
    },
    "faqs": [
     {
@@ -5266,7 +5406,7 @@
     "lat": 33.17694,
     "lng": -107.03139
    },
-   "airport": null,
+   "airport": "El Paso International Airport (ELP) and Albuquerque International Sunport (ABQ)",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -5885,14 +6025,15 @@
    "category": "hotel",
    "tagline": "Private desert journeys designed entirely around your pace, your curiosity, and your connection to the wild.",
    "quote": "Some places change your perspective forever , Atacama changes your sense of time.",
-   "hero": "/img/b44/5c1ab6245_62d8629ef_68dc258125778d077771ff49_3544b726.avif",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/heroes/chile/atacama-desert-chile-volcanic-crater-salt-flat-sunrise-aerial",
    "gallery": [
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/60b982337_7f9e323b3_6a220664a03cd874b2d0608d_5-Round-Room.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/916391cc2_075374951_6a22083b5fdfd5c8310cf62c_81debd7e0047e7bf4ae1a23d7db43d63c1b81226-1.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d219d3254_7ddf33567_6a22083bb3d080253fb14550_5226d5c176daa595f4db55d4de23caf126e503b3-1.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/d3435bac3_f2e83bef2_6a22083ba60ae58b35fca216_atacama-093.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0a1e56c94_5b77e5fa4_6a22083bc6a7461bbef9803d_Frame-3960.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b671c440a_f7d03139a_6a1629e4fef5c3047066ee2d_atacama-081-1.webp"
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b671c440a_f7d03139a_6a1629e4fef5c3047066ee2d_atacama-081-1.webp",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/heroes/chile/atacama-desert-chile-sand-dunes-golden-hour-aerial"
    ],
    "bestMonths": "March - May and September - November",
    "bestMonthsNote": "These months offer ideal desert conditions with clear skies, comfortable daytime temperatures, cooler evenings, and excellent visibility for astronomy experiences. Spring and autumn also provide ideal conditions for hiking, horseback riding, and high-altitude excursions.",
@@ -5941,8 +6082,33 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Awasi Atacama known for?",
+     "a": "Awasi Atacama offers something increasingly rare in luxury travel: complete freedom. Here, every day unfolds around your curiosity. Whether hiking among salt ridges, sharing sunrise beneath volcanoes, or watching the Milky Way emerge over the desert sky, this is a stay built for travelers who want to feel fully present inside one of Earth's most surreal landscapes."
+    },
+    {
+     "q": "What rooms does Awasi Atacama have?",
+     "a": "The rooms on file are the Superior Round Suite and the Round Room."
+    },
+    {
+     "q": "What is there to do at Awasi Atacama?",
+     "a": "Astronomical observation; Rainbow Valley; horseback riding; the Tatio Geysers; Chaxa Lagoon; sunrise at Licancabur."
+    },
+    {
+     "q": "What does Awasi Atacama offer on the property?",
+     "a": "A private guide and 4x4 vehicle for every stay; adobe architecture inspired by ancient desert traditions; Relais & Châteaux dining; tailor-made private excursions; walking distance to San Pedro de Atacama."
+    },
+    {
+     "q": "How do you get to Awasi Atacama?",
+     "a": "The nearest airport is El Loa Airport (CJC) in Calama, Chile. It is approximately 100 km from Awasi Atacama, with a driving time of around 1 hour 30 minutes. Private transfers from Calama Airport are included according to check-in and check-out schedules."
+    },
+    {
+     "q": "When is the best time to visit Awasi Atacama?",
+     "a": "The best months are March to May and September to November. These months offer ideal desert conditions with clear skies, comfortable daytime temperatures, cooler evenings, and excellent visibility for astronomy experiences."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -6033,8 +6199,33 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Awasi Iguazú known for?",
+     "a": "Awasi Iguazú is a jungle lodge hidden in the Atlantic rainforest near Iguazú Falls. Every stay is privately tailored around exploration, wildlife, cultural discovery and rest, in one of South America's most biodiverse ecosystems."
+    },
+    {
+     "q": "What rooms does Awasi Iguazú have?",
+     "a": "Awasi Iguazú has two room types: Standard Villas and the Master Villa."
+    },
+    {
+     "q": "What is there to do at Awasi Iguazú?",
+     "a": "Private exploration of Iguazú Falls; wildlife outings in the Atlantic rainforest; birdwatching; cultural and yerba mate experiences; kayaking and river exploration."
+    },
+    {
+     "q": "What does Awasi Iguazú offer on the property?",
+     "a": "Stand-alone villas; private plunge pools; tailor-made private excursions; a personal guide and vehicle."
+    },
+    {
+     "q": "How do you get to Awasi Iguazú?",
+     "a": "Cataratas del Iguazú International Airport (IGR) is approximately 20 km, a 30 minute drive. Foz do Iguaçu International Airport (IGU) is approximately 35 km, a 45 minute drive. Private transfers can be arranged through the property."
+    },
+    {
+     "q": "When is the best time to visit Awasi Iguazú?",
+     "a": "March to November. The Iguazú region is warm all year, though the cooler months bring more comfortable temperatures and lower humidity for jungle walks, wildlife and the falls."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -6226,8 +6417,33 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Awasi Patagonia known for?",
+     "a": "Awasi Patagonia delivers one of the most intimate luxury wilderness experiences in South America. Every stay is privately tailored around the traveler, from glacier expeditions and puma safaris to quiet evenings beside a wood-burning fire beneath towering granite peaks."
+    },
+    {
+     "q": "What rooms does Awasi Patagonia have?",
+     "a": "The rooms on file are the Cenit Villa, Master Villa and Standard Villa. There are only 14 stand-alone villas."
+    },
+    {
+     "q": "What is there to do at Awasi Patagonia?",
+     "a": "The Base Torres trek; puma spotting safaris; the Grey Glacier expedition; horseback riding with gauchos; the Sierra Baguales fossil adventure; the French Valley trek."
+    },
+    {
+     "q": "What does Awasi Patagonia offer on the property?",
+     "a": "A private guide and 4x4 vehicle for every villa; tailor-made private itineraries; direct Torres del Paine views; Relais & Châteaux dining."
+    },
+    {
+     "q": "How do you get to Awasi Patagonia?",
+     "a": "Puerto Natales Airport (PNT) is approximately 120 km, a 2 hour drive. Punta Arenas Airport (PUQ) is approximately 350 km, a 4 hour drive."
+    },
+    {
+     "q": "When is the best time to visit Awasi Patagonia?",
+     "a": "The season runs October to April. Spring brings active wildlife and blooming landscapes, summer offers long daylight hours for trekking and photography, and autumn turns the forests golden with fewer travelers."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -6469,6 +6685,132 @@
    "arrivalHubIds": [
     "6ae697512f7e87b5a5f5986c"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "bahia-bustamante-lodge",
+   "name": "Bahía Bustamante Lodge",
+   "ledgerId": "STY-2026-000794",
+   "country": "Argentina",
+   "countrySlug": "argentina",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A former seaweed village turned nature lodge on the Atlantic coast of Patagonia, between the sea and the steppe",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/settlement-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/penguin-island",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/sea-lions-swimming",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/living-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/village-by-the-sea",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/la-prove-restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/island-aerial",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/guanacos-on-the-steppe",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/ocean-vineyard",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/art-installation-at-the-cape",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/argentina/bahia-bustamante-lodge/terrace-fire-pit"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -45.126833,
+    "lng": -66.536333
+   },
+   "airport": "Comodoro Rivadavia (CRD)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Marine Lofts: for two, with a bedroom, living room, double sided wood stove, small kitchen and terraces to the sea and the steppe.",
+     "Vineyard Suite: for two, with king or twin beds and a veranda over the vineyard and the ocean.",
+     "Sea Front Cabins: for up to four, facing the sea.",
+     "Steppe Cabins: for up to three adults, or two adults and two children under 12, on an accommodation only basis.",
+     "Lofts, Vineyard Suite and Sea Front Cabins include full board and activities, for guests aged eight and over."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The boat out along the cove to sea lion and seabird colonies, at high tide.",
+     "Penguin Island: a walk at low tide to a Magellanic penguin colony.",
+     "The Petrified Forest, by 4x4 and on foot.",
+     "The Cape: Aristizabal Lighthouse, tide pools and an art installation by Christian Boltanski.",
+     "Rock Canyon: a walk down a dry riverbed to the ocean.",
+     "The Peninsula: beaches, red rock and rock pools, by bike, on foot or by 4x4.",
+     "A day on the ranch with the sheep.",
+     "The historic tour of the old village."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "La Prove, the guests only restaurant, with a fixed menu",
+     "Living room, terrace and fire pit facing the sea",
+     "A museum and interpretation centre in the village",
+     "Solar power for almost the whole day. Wi-Fi. No mobile signal",
+     "The whole village can be taken for a private gathering"
+    ]
+   },
+   "onlyHere": [
+    "Bahía Bustamante began in the 1950s as a seaweed gathering village founded by Lorenzo Soriano. His grandson Matías turned it into a nature lodge, and the family still runs it, alongside sheep farming, a vineyard by the ocean and a kitchen garden that supply the table.",
+    "The coast here lies inside the Blue Patagonia UNESCO Biosphere Reserve. The lodge counts 13 of the 16 seabird species that nest in Argentina, and its boat goes out past sea lions and Magellanic penguins. It takes no more than 30 to 35 guests a day."
+   ],
+   "why": [],
+   "facts": {
+    "best_months": "Open from 1 October to Easter. Penguins are at the colony from October to March.",
+    "how_to_get_there": "Airports at Comodoro Rivadavia (180 km), Trelew (280 km) and Puerto Madryn (320 km). From Route 3 at km 1674, turn east on Route 28 and drive 35 kilometres of gravel to the lodge.",
+    "signature_experiences": "The boat among sea lions and penguins, the walk to Penguin Island at low tide, and a glass by the fire pit above the vineyard.",
+    "who_its_for": "Wildlife and birding travellers, families with children of eight and over, and anyone who wants Patagonia's Atlantic side to themselves. Three nights is the recommended minimum."
+   },
+   "faqs": [
+    {
+     "q": "What is Bahía Bustamante Lodge known for?",
+     "a": "Bahía Bustamante began in the 1950s as a seaweed gathering village founded by Lorenzo Soriano. His grandson Matías turned it into a nature lodge, and the family still runs it, alongside sheep farming, a vineyard by the ocean and a kitchen garden that supply the table."
+    },
+    {
+     "q": "What rooms does Bahía Bustamante Lodge have?",
+     "a": "Bahía Bustamante Lodge has four room types: Marine Lofts, the Vineyard Suite, Sea Front Cabins and Steppe Cabins."
+    },
+    {
+     "q": "What is there to do at Bahía Bustamante Lodge?",
+     "a": "The boat out along the cove to sea lion and seabird colonies, at high tide; Penguin Island, a walk at low tide to a Magellanic penguin colony; the Petrified Forest, by 4x4 and on foot; a day on the ranch with the sheep; the historic tour of the old village."
+    },
+    {
+     "q": "What does Bahía Bustamante Lodge offer on the property?",
+     "a": "La Prove, the guests only restaurant, with a fixed menu; a living room, terrace and fire pit facing the sea; a museum and interpretation centre in the village. There is solar power for almost the whole day and Wi-Fi, but no mobile signal."
+    },
+    {
+     "q": "How do you get to Bahía Bustamante Lodge?",
+     "a": "The nearest airport is Comodoro Rivadavia (CRD)."
+    },
+    {
+     "q": "How much does Bahía Bustamante Lodge cost?",
+     "a": "The lodge prints no prices: rates come by date. Marine Lofts, the Vineyard Suite and Sea Front Cabins include full board and activities, for guests aged eight and over. Steppe Cabins are accommodation only. Three nights is the recommended minimum."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -7714,8 +8056,8 @@
    "facts": {
     "best_months": "June to November, when Southern Right whales migrate into Walker Bay.",
     "how_to_get_there": "Fly into Cape Town International (CPT), about 120 km away, then drive around 1 hour 45 minutes.",
-    "who_its_for": "Honeymooners, couples and whale watchers who want a small clifftop hotel by the sea.",
-    "signature_experiences": "Whale watching, coastal cliff walks and ocean kayaking."
+    "signature_experiences": "Whale watching, coastal cliff walks and ocean kayaking.",
+    "who_its_for": "Honeymooners, couples and whale watchers who want a small clifftop hotel by the sea."
    },
    "faqs": [
     {
@@ -7896,30 +8238,26 @@
    "placeSlug": null
   },
   {
-   "slug": "blue-reef",
-   "name": "Blue Reef Beach Resort",
-   "ledgerId": "STY-2026-137933",
+   "slug": "blue-reef-island",
+   "name": "Blue Reef Island",
+   "ledgerId": "STY-2026-000780",
    "country": "Belize",
    "countrySlug": "belize",
    "regionSlug": "central-america",
    "misfiled": null,
    "category": "resort",
-   "tagline": "A 19-suite beachfront hotel on the Placencia Peninsula, once Robert's Grove.",
-   "quote": "At Blue Reef, the character of a stay begins with its setting in Belize.",
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/hero",
+   "tagline": "A three-acre private island a short boat ride from Dangriga, with five glass-fronted cabanas over the Caribbean",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/hero",
    "gallery": [
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g1",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g2",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g3",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g4",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g5",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g6",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g7",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g8",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g9",
-    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-reef/g10"
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-air",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/cabana",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/blue-reef-island/island-4"
    ],
-   "bestMonths": "Not specified. Confirm the resort’s location and seasonal guidance before planning.",
+   "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [
     "couples",
@@ -7929,86 +8267,57 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": "Placencia Municipal Airport (PLJ)",
-   "airportDirections": "Tropic Air from BZE to PLJ; complimentary shuttle, 6 minutes. By road about 2h15 from BZE.",
-   "founderNote": "Coastal stay in The Belize Collection; alternative to Umaya for the Placencia leg of the Deep Belize journey.",
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
    "rooms": {
-    "paras": [],
-    "items": [
-     "19 guest suites set along the beach on the Placencia Peninsula",
-     "Family suites with a king bed and twin bunks sleep 2 to 4",
-     "Six acres of beachfront and landscaped gardens"
-    ]
+    "paras": [
+     "Five individual cabanas with glass fronts, about 20 by 20 feet each.",
+     "King or family layouts, each with a pull-out sofa bed.",
+     "Private veranda with seating and a hammock, and a private dock.",
+     "Indoor bathroom with double vanities and an outdoor private shower room.",
+     "Premier Cabana: seafront, with a private plunge pool on the veranda.",
+     "Air conditioning and fans, WiFi, a mini fridge stocked daily, robes, daily housekeeping and turndown."
+    ],
+    "items": []
    },
    "experiences": {
     "paras": [],
     "items": [
-     "Dive and snorkel inside and outside the Mesoamerican Barrier Reef",
-     "Head out on fishing charters, spearfishing or island hopping",
-     "Explore Lubaantun, Nim Li Punit and the ATM cave"
+     "Fly fishing, deep sea fishing and spearfishing from the island",
+     "Scuba diving and snorkelling",
+     "Kayaks and paddleboards",
+     "Mainland tours",
+     "Massage on the island"
     ]
    },
    "features": {
     "paras": [],
-    "items": [
-     "Beachfront swimming pool with a swim-up bar",
-     "Bamboo Beach Bistro, a beachfront restaurant and bar",
-     "A pier over the sea and a marina with fuel on the lagoon side",
-     "Bicycles and paddleboards for exploring Maya Beach and Seine Bight"
-    ]
+    "items": []
    },
-   "onlyHere": [],
-   "why": [
-    {
-     "title": null,
-     "body": "Blue Reef Beach Resort is the remodelled second life of Robert's Grove, a long-standing Placencia Peninsula address, now a 19-suite boutique hotel and a member of The Belize Collection. It sits at Mile 20.5 on the Placencia Road, nine minutes from Placencia Village, with a beachfront pool and bistro on one side and a working marina on the lagoon side. Choose it for an easygoing beach base with the reef, the cayes and southern Belize's rainforest and Maya sites all within reach."
-    }
+   "onlyHere": [
+    "Blue Reef Island is a three-acre private island 20 to 30 minutes by boat from Dangriga, part of The Belize Collection. Five air-conditioned cabanas face the sea, each with a veranda, a dock and an indoor and an outdoor shower; three have walkways straight into the water and the premier cabana has its own plunge pool. A pool and hot tub for island guests face west for the sunset. The days are for the water: fly fishing, deep sea fishing, diving, snorkelling, kayaks and paddleboards."
    ],
-   "facts": {
-    "best_months": "Not stated on the resort's website.",
-    "how_to_get_there": "Fly Tropic Air from Belize City (BZE) to Placencia (PLJ); a complimentary shuttle meets guests for the 6-minute drive. By road, about 2 hours 15 minutes from BZE.",
-    "signature_experiences": "Barrier reef diving and snorkeling, fishing and spearfishing charters, island hopping, and inland tours to the Monkey River, Cockscomb Basin and Maya sites.",
-    "who_its_for": "Couples, families and divers or anglers who want a small beachfront base on the Placencia Peninsula with a marina on site."
-   },
-   "faqs": [
-    {
-     "q": "How do you get to Blue Reef Beach Resort?",
-     "a": "Tropic Air flies daily from Belize City (BZE) to Placencia (PLJ), and a complimentary shuttle meets guests at PLJ for the 6-minute drive to the resort. By road it is about 2 hours 15 minutes from Philip Goldson International Airport, by rental car or private or shared driver."
-    },
-    {
-     "q": "What is Blue Reef Beach Resort known for?",
-     "a": "Formerly Robert's Grove, it is a remodelled 19-suite boutique hotel on the Placencia Peninsula with a beachfront pool and swim-up bar, Bamboo Beach Bistro and a marina on the lagoon side. It is a member of The Belize Collection."
-    },
-    {
-     "q": "How many rooms does Blue Reef Beach Resort have?",
-     "a": "There are 19 guest suites: Pool View Suites, Sea View Suites, Seaview Suites, Seaview Family Suites and Premium Seaview Suites."
-    },
-    {
-     "q": "Is Blue Reef Beach Resort good for families?",
-     "a": "Yes. Family suites with one king bed and twin bunk beds sleep a family of two to four, and the Premium Seaview Suite sleeps four."
-    },
-    {
-     "q": "What can you do at Blue Reef Beach Resort?",
-     "a": "Diving and snorkeling on the barrier reef, fishing charters, spearfishing, island hopping and a sunset lagoon cruise, plus inland tours to the Monkey River, Cockscomb Basin, Lubaantun, Nim Li Punit and the ATM cave. Bicycles and paddleboards are on site."
-    },
-    {
-     "q": "Where is Blue Reef Beach Resort?",
-     "a": "At Mile 20.5 on the Placencia Road, about nine minutes north of Placencia Village and six minutes from Placencia Municipal Airport (PLJ)."
-    }
-   ],
-   "reviewed": true,
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
    "pathway": {
     "primary": "PATH-02",
     "secondary": [],
-    "setting": "placencia",
+    "setting": "coast",
     "intentions": [],
-    "suitability": [],
+    "suitability": [
+     "couples",
+     "families",
+     "small_groups"
+    ],
     "status": "approved",
-    "classifiedBy": "James Papagno (batch 3, drafted by Iggi)",
-    "classifiedAt": "2026-10-31"
+    "classifiedBy": "James Papagno (21 Nov 2026)",
+    "classifiedAt": "2026-11-21"
    },
    "volumes": [
     "stays"
@@ -8420,8 +8729,8 @@
    "facts": {
     "best_months": "March–November for the published 2026 season",
     "how_to_get_there": "On Horn Head outside Dunfanaghy, about 50 minutes by road from Donegal Airport according to the property.",
-    "who_its_for": "One or two adults, especially couples, honeymooners and solo travelers. Not suitable for children or group room blocks.",
-    "signature_experiences": "Private terrace views, breakfast delivered to the room, prepared picnics, wood-fired sauna, seaweed bath, cycling and Horn Head walks."
+    "signature_experiences": "Private terrace views, breakfast delivered to the room, prepared picnics, wood-fired sauna, seaweed bath, cycling and Horn Head walks.",
+    "who_its_for": "One or two adults, especially couples, honeymooners and solo travelers. Not suitable for children or group room blocks."
    },
    "faqs": [
     {
@@ -9687,6 +9996,131 @@
     "status": "approved",
     "classifiedBy": "Claude (Stage 4 pilot intake), for James",
     "classifiedAt": "2026-11-01"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "belmond-cap-juluca",
+   "name": "Cap Juluca, A Belmond Hotel",
+   "ledgerId": "STY-2026-000772",
+   "country": "Anguilla",
+   "countrySlug": "anguilla",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Greco-Moorish villas on the white sand of Maundays Bay, on Anguilla's southern coast",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/maundays-bay-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/flamboyant-tree-villa-roofs",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/private-roof-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/five-bedroom-pool-villa-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/pimms-seafront-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/the-cap-shack-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/uchu-jungle-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/cips-by-cipriani-sea-view-dinner",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/spa-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/beachfront-room-terrace-view"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "luxury"
+   ],
+   "status": "founder_vetted",
+   "statusDate": "2025-08-01",
+   "coords": null,
+   "airport": "Clayton J. Lloyd International Airport (AXA)",
+   "airportDirections": "Belmond gives 20 minutes by boat or a 7 minute flight from St Maarten (SXM), 50 minutes by air from San Juan (SJU) and 20 minutes by air from St Kitts (SKB). Arriving through St Maarten, the hotel's team meets you at Princess Juliana International Airport and escorts you to the dock; the crossing to Blowing Point takes about 25 to 40 minutes, depending on immigration. Anguilla's own airport, Clayton J. Lloyd International (AXA), is a short drive from the hotel.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Rooms, 63 to 102 square metres, for up to 3 guests. Suites, 110 to 232 square metres, for up to 5 guests. Signature Suites and Villas, 306 to 481 square metres, for up to 14 guests; the villas have private pools."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "68 rooms and 45 suites on Maundays Bay, with direct beach access. Seven Signature Suites and Villas, the villas with private pools, for up to 14 guests. Four restaurants: Pimms, Cip's by Cipriani, Uchu and The Cap Shack. Cap Juluca Spa by Guerlain, an infinity pool and a fitness centre open 24 hours. Explorer's Club and Nursery for ages 4 to 12. 20 minutes by boat or a 7 minute flight from St Maarten."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Linda and Charles Hickox opened Pimms on Maundays Bay in 1984 and then the rest of the resort, which they named Cap Juluca. Its white Greco-Moorish inspired buildings stand among palms along the sand, and it was fully renovated in 2018, the year it joined Belmond. It holds two Michelin Keys.",
+    "From the beach you can sail to the offshore cays, go salt-picking, dive, ride or play tennis, and there is a Champagne sabering ritual every day. Pimms serves Caribbean seafood on a seafront colonnade terrace, Cip's by Cipriani is Italian, Uchu serves Peruvian small plates and The Cap Shack is on the sand."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "One Bay, One Hotel Cap Juluca has Maundays Bay on Anguilla's southern coast, with every room and suite opening straight onto the beach. It suits travellers who want a long white beach, four restaurants within a walk and nothing else to decide, twenty minutes by boat from St Maarten."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to St Maarten (SXM), then 20 minutes by boat or a 7 minute flight; the hotel's team meets you at the airport. Or fly into Anguilla's Clayton J. Lloyd International Airport (AXA), a short drive away.",
+    "signature_experiences": "A sail to the offshore cays, salt-picking, the daily Champagne sabering ritual, dinner at Pimms on the seafront terrace and the Cap Juluca Spa by Guerlain.",
+    "who_its_for": "Couples, and families and groups taking a villa for up to 14, who want a beach hotel with direct access to the sand from every room."
+   },
+   "faqs": [
+    {
+     "q": "Where is Cap Juluca?",
+     "a": "On Maundays Bay, near the southernmost tip of Anguilla in the British West Indies."
+    },
+    {
+     "q": "How do you get to Cap Juluca?",
+     "a": "Most guests fly to St Maarten (SXM), where the hotel's team meets them, and cross to Anguilla in about 20 minutes by boat or 7 minutes by air. Anguilla's own airport, Clayton J. Lloyd International (AXA), is a short drive from the hotel."
+    },
+    {
+     "q": "How many rooms does Cap Juluca have?",
+     "a": "113: 68 rooms and 45 suites, with seven Signature Suites and Villas among the largest. Rooms are 63 to 102 square metres, suites 110 to 232 and the Signature Suites and Villas 306 to 481, for up to 14 guests."
+    },
+    {
+     "q": "What restaurants are at Cap Juluca?",
+     "a": "Four: Pimms, the flagship, for Caribbean seafood; Cip's by Cipriani for Italian; Uchu for Peruvian small plates; and The Cap Shack on the beach."
+    },
+    {
+     "q": "Is Cap Juluca good for children?",
+     "a": "Yes. The Explorer's Club and Nursery takes children aged 4 to 12, and the Signature Villas sleep up to 14."
+    },
+    {
+     "q": "What time are check-in and check-out at Cap Juluca?",
+     "a": "Check-in is from 4pm and check-out is at 12pm."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-05",
+     "PATH-07"
+    ],
+    "setting": "island",
+    "intentions": [
+     "beach",
+     "restoration",
+     "villa_gathering"
+    ],
+    "suitability": [
+     "couples",
+     "families",
+     "groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 21 Nov 2026 (\"pathways applicable\"; chosen by the house: Between Tides, The Art of Stillness, A Place of Our Own)",
+    "classifiedAt": "2026-11-21"
    },
    "volumes": [
     "stays"
@@ -12346,6 +12780,125 @@
     "status": "approved",
     "classifiedBy": "James Papagno (17 Nov 2026 audit, drafted by Claude)",
     "classifiedAt": "2026-11-17"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "chez-georges",
+   "name": "Chez Georges",
+   "ledgerId": "STY-2026-000790",
+   "country": "Brazil",
+   "countrySlug": "brazil",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "villa",
+   "tagline": "A seven suite modernist villa on a Santa Teresa hilltop, with a pool over the forest and Sugarloaf in view",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/villa-pool-dusk",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/entertainment-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chez-georges/rooms/george-benson-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/pool-sugarloaf-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/dining-room",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/chez-georges/patio-pergola",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chez-georges/rooms/giorgio-moroder-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chez-georges/rooms/jorge-ben-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chez-georges/rooms/george-harrison-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -22.9224586,
+    "lng": -43.1859512
+   },
+   "airport": "Rio de Janeiro (GIG and SDU)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "George Benson, Master Suite: 49 square metres, with a balcony to Sugarloaf and the ocean.",
+     "Jorge Ben, Master Suite: 32 square metres, in the annex below the pool, with a private balcony over the forest.",
+     "Giorgio Moroder, Premium Suite: 30 square metres, with forest and Sugarloaf views.",
+     "Georges Brassens and George Gershwin, Design Suites: 34 and 25 square metres, sharing a balcony to Sugarloaf.",
+     "Seu Jorge and George Harrison, Comfort Suites: 28 and 32 square metres, facing Santa Teresa.",
+     "Every suite has a king bed."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The pool, with a counter-current jet, over the forest canopy",
+     "Santa Teresa's streets, studios and bars on the doorstep",
+     "Yoga by the pool"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Furniture by Ricardo Fasanello in the dining room and suites",
+     "Breakfast in the house",
+     "A street-level garage for two cars with a glass lift to the house",
+     "Events hosted by arrangement"
+    ]
+   },
+   "onlyHere": [
+    "Chez Georges is a 1,000 square metre modernist villa on a hilltop in Santa Teresa, between Rio's centre and the beaches of Copacabana and Ipanema, on the edge of protected forest. It was designed by Wladimir Alves de Souza, a leading figure of Brazilian Modernism.",
+    "The house has seven suites, each named after a musician called George or Jorge, for up to 14 guests. Several are wired to the villa's own recording studio, which sits below the pool. Breakfast is served in the house."
+   ],
+   "why": [],
+   "facts": {
+    "signature_experiences": "Breakfast on a balcony facing Sugarloaf, an afternoon by the pool above the forest, and a session in the studio.",
+    "who_its_for": "Design lovers, musicians, and groups of friends or a family taking several suites or the whole house."
+   },
+   "faqs": [
+    {
+     "q": "What is Chez Georges known for?",
+     "a": "Chez Georges is a 1,000 square metre modernist villa on a hilltop in Santa Teresa, between Rio's centre and the beaches of Copacabana and Ipanema, on the edge of protected forest. It was designed by Wladimir Alves de Souza, a leading figure of Brazilian Modernism."
+    },
+    {
+     "q": "What rooms does Chez Georges have?",
+     "a": "Chez Georges has seven suites: George Benson Master Suite, Jorge Ben Master Suite, Giorgio Moroder Premium Suite, Georges Brassens Design Suite, George Gershwin Design Suite, Seu Jorge Comfort Suite and George Harrison Comfort Suite."
+    },
+    {
+     "q": "What is there to do at Chez Georges?",
+     "a": "The pool, with a counter-current jet, over the forest canopy; Santa Teresa's streets, studios and bars on the doorstep; yoga by the pool."
+    },
+    {
+     "q": "What does Chez Georges offer on the property?",
+     "a": "Furniture by Ricardo Fasanello in the dining room and suites; breakfast in the house; a street-level garage for two cars with a glass lift to the house; events hosted by arrangement."
+    },
+    {
+     "q": "How do you get to Chez Georges?",
+     "a": "The nearest airports are Rio de Janeiro's two, GIG and SDU."
+    },
+    {
+     "q": "How much does Chez Georges cost?",
+     "a": "The villa prints no prices: rates come by date. Breakfast is served in the house. Tell the house your dates and it will hold the suite that fits."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
    },
    "volumes": [
     "stays"
@@ -15113,8 +15666,8 @@
    "facts": {
     "best_months": "May to October, the dry winter months, for sightings and photography.",
     "how_to_get_there": "About 1.5 to 2 hours by road from Skukuza Airport (SZK) or 2.5 to 3 hours from Kruger Mpumalanga International (MQP); charters to nearby airstrips are available.",
-    "who_its_for": "Couples, solo travellers and family groups who want a four-suite lodge with real privacy.",
-    "signature_experiences": "Game drives on personalised schedules, wildlife tracking and private dining."
+    "signature_experiences": "Game drives on personalised schedules, wildlife tracking and private dining.",
+    "who_its_for": "Couples, solo travellers and family groups who want a four-suite lodge with real privacy."
    },
    "faqs": [
     {
@@ -15220,8 +15773,8 @@
    "facts": {
     "best_months": "May to October, the dry winter season, for peak wildlife viewing.",
     "how_to_get_there": "About 1.5 to 2 hours by road from Skukuza Airport (SZK) or 2.5 to 3 hours from Kruger Mpumalanga International (MQP); charter flights to nearby airstrips are available.",
-    "who_its_for": "Couples, families, first-time safari guests and solo travellers who want a small, warm lodge.",
-    "signature_experiences": "Personalised game drives with expert trackers, bush walks and bush dining."
+    "signature_experiences": "Personalised game drives with expert trackers, bush walks and bush dining.",
+    "who_its_for": "Couples, families, first-time safari guests and solo travellers who want a small, warm lodge."
    },
    "faqs": [
     {
@@ -15335,8 +15888,8 @@
    "facts": {
     "best_months": "May to October, the dry season, for wildlife and predator sightings.",
     "how_to_get_there": "About 1.5 to 2 hours by road from Skukuza Airport (SZK) or 2.5 to 3 hours from Kruger Mpumalanga International (MQP); charters to nearby airstrips are available.",
-    "who_its_for": "Couples, wildlife photographers, solo travellers and repeat safari guests who want an intimate lodge.",
-    "signature_experiences": "Twice-daily game drives with expert trackers, wildlife tracking and romantic bush dining."
+    "signature_experiences": "Twice-daily game drives with expert trackers, wildlife tracking and romantic bush dining.",
+    "who_its_for": "Couples, wildlife photographers, solo travellers and repeat safari guests who want an intimate lodge."
    },
    "faqs": [
     {
@@ -15598,8 +16151,8 @@
    "facts": {
     "best_months": "April to June and September to October",
     "how_to_get_there": "About two hours by road from Lisbon airport, near Estremoz in the Alentejo.",
-    "who_its_for": "Couples and honeymooners who want stillness over spectacle, design and art collectors, and slow travellers pairing the Alentejo with Évora and the coast.",
-    "signature_experiences": "Olive oil from the estate's groves, dark-sky stargazing, Évora for a morning, and the Estremoz Saturday market."
+    "signature_experiences": "Olive oil from the estate's groves, dark-sky stargazing, Évora for a morning, and the Estremoz Saturday market.",
+    "who_its_for": "Couples and honeymooners who want stillness over spectacle, design and art collectors, and slow travellers pairing the Alentejo with Évora and the coast."
    },
    "faqs": [],
    "reviewed": true,
@@ -15791,8 +16344,33 @@
     }
    ],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is EcoCamp Patagonia known for?",
+     "a": "EcoCamp is for trekkers, couples, solo adventurers, families and groups wanting immersive, low-impact Patagonia adventure, where every stay supports conservation and community."
+    },
+    {
+     "q": "What rooms does EcoCamp Patagonia have?",
+     "a": "EcoCamp Patagonia has four dome types: Standard Dome, Superior Dome, Suite Dome and Suite Dome Loft."
+    },
+    {
+     "q": "What is there to do at EcoCamp Patagonia?",
+     "a": "Torres del Paine trekking; wildlife watching; yoga classes; stargazing; photography; guided excursions."
+    },
+    {
+     "q": "What does EcoCamp Patagonia offer on the property?",
+     "a": "Geodesic domes with panoramic views, wood-burning stoves, en-suite bathrooms in Superior and Suite domes, a yoga dome, organic cuisine, solar energy, communal lounges and expert local guides."
+    },
+    {
+     "q": "How do you get to EcoCamp Patagonia?",
+     "a": "It is a 1.5 hour drive from Puerto Natales Airport (PNT) or a 5 hour drive from Punta Arenas Airport (PUQ). Transfers can be arranged by EcoCamp."
+    },
+    {
+     "q": "When is the best time to visit EcoCamp Patagonia?",
+     "a": "October to April. Spring to autumn brings the best weather for trekking, wildlife and clear skies, with long daylight hours."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -16161,8 +16739,29 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is El MaPi byInkaterra known for?",
+     "a": "El MaPi byInkaterra sits in Machu Picchu Pueblo, between the Andes and the Amazon Basin, among mist-covered mountains, rushing rivers and ancient history."
+    },
+    {
+     "q": "What is there to do at El MaPi byInkaterra?",
+     "a": "Sunrise journeys to Machu Picchu; cloud forest walks; cultural immersion; Sacred Valley discovery; local cooking."
+    },
+    {
+     "q": "What does El MaPi byInkaterra offer on the property?",
+     "a": "Panoramic windows; spa and wellness treatments; a central Machu Picchu Pueblo location; walking access to transport and excursions."
+    },
+    {
+     "q": "How do you get to El MaPi byInkaterra?",
+     "a": "The best arrival airport is Cusco International Airport (CUZ). From Cusco, travelers continue by rail to Machu Picchu Pueblo, followed by a short walk to the hotel. Total travel time is approximately 4 to 5 hours depending on train schedules."
+    },
+    {
+     "q": "When is the best time to visit El MaPi byInkaterra?",
+     "a": "April to October. These months offer the clearest mountain views, lower rainfall and the best conditions for Machu Picchu and the surrounding cloud forest."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -16863,7 +17462,7 @@
     "lat": 0.133117,
     "lng": 38.137183
    },
-   "airport": null,
+   "airport": "Mughwango Airstrip and Kinna Airstrip",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -17893,7 +18492,7 @@
     "couples",
     "adventure"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -18205,8 +18804,29 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Explora Rapa Nui known for?",
+     "a": "Only here can travelers immerse themselves within one of the world's most isolated destinations, exploring volcanic landscapes, ancient Moai statues, Polynesian culture and the Pacific Ocean through exploration designed around depth, connection and discovery."
+    },
+    {
+     "q": "What rooms does Explora Rapa Nui have?",
+     "a": "Explora Rapa Nui has two room types: the Varúa Room and the Raa Suite."
+    },
+    {
+     "q": "What is there to do at Explora Rapa Nui?",
+     "a": "Moai archaeological exploration; volcanic hikes; time on the Pacific Ocean; Polynesian cultural discovery; coastal expeditions."
+    },
+    {
+     "q": "How do you get to Explora Rapa Nui?",
+     "a": "The nearest airport is Mataveri International Airport (IPC) in Hanga Roa, Easter Island. The lodge is approximately 15 to 20 minutes by vehicle from the airport. Explora includes transfers as part of the all-inclusive experience."
+    },
+    {
+     "q": "When is the best time to visit Explora Rapa Nui?",
+     "a": "October to April. Easter Island is best visited during the warmer spring and summer months, when temperatures are comfortable, ocean conditions are favorable and outdoor archaeological and hiking explorations are at their best."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -18297,8 +18917,25 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Explora Sacred Valley known for?",
+     "a": "Only here can travelers explore Machu Picchu and the Sacred Valley through a deeply immersive approach that puts connection before crowds: ancient civilizations, living traditions and mountain landscapes, taken slowly."
+    },
+    {
+     "q": "What is there to do at Explora Sacred Valley?",
+     "a": "Machu Picchu explorations; Sacred Valley cultural journeys; Andean hikes; archaeological sites; traditional Peruvian immersion."
+    },
+    {
+     "q": "How do you get to Explora Sacred Valley?",
+     "a": "The nearest arrival airport is Alejandro Velasco Astete International Airport (CUZ) in Cusco. The lodge is approximately 1.5 to 2 hours by vehicle through the Sacred Valley. Explora includes transfers as part of the all-inclusive experience."
+    },
+    {
+     "q": "When is the best time to visit Explora Sacred Valley?",
+     "a": "April to October. The dry season in Peru offers the best conditions for Machu Picchu, Sacred Valley adventures and mountain hiking, with clearer skies and comfortable daytime temperatures."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -18384,8 +19021,29 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Explora Torres del Paine known for?",
+     "a": "Only here can travelers wake up directly inside Torres del Paine National Park, surrounded by glaciers, granite towers, turquoise lakes and Patagonian wilderness."
+    },
+    {
+     "q": "What is there to do at Explora Torres del Paine?",
+     "a": "Torres del Paine trekking; Grey Glacier expeditions; horseback riding; wildlife outings; overland journeys. The lodge runs more than 40 guided explorations."
+    },
+    {
+     "q": "What does Explora Torres del Paine offer on the property?",
+     "a": "A location inside Torres del Paine National Park; views of the Paine Massif and Lake Pehoé; spa and wellness facilities; private horse stables and riding programs."
+    },
+    {
+     "q": "How do you get to Explora Torres del Paine?",
+     "a": "The nearest arrival airports are Puerto Natales Airport (PNT) and Punta Arenas Airport (PUQ). From Puerto Natales, the lodge is approximately a 2.5 hour drive. From Punta Arenas, the transfer is approximately 5 hours. Explora includes transfers within the all-inclusive experience."
+    },
+    {
+     "q": "When is the best time to visit Explora Torres del Paine?",
+     "a": "October to March. Patagonia's spring and summer bring accessible hiking trails, longer daylight, more wildlife activity and generally better weather for being outdoors."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -18584,6 +19242,129 @@
    "placeSlug": "atacama"
   },
   {
+   "slug": "fazenda-moreias",
+   "name": "Fazenda Moréias",
+   "ledgerId": "STY-2026-000789",
+   "country": "Brazil",
+   "countrySlug": "brazil",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "villa",
+   "tagline": "Eight architect-designed bungalows and houses on a working farm with nine kilometres of its own beach on the coast of Ceará",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/sea-and-dunes-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/bungalow-deck-beach",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/fazenda-moreias/rooms/bangalo-1-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/horse-riding-dune",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/oros-restaurant-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/dune-lagoons",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/kite-jump",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/thatched-bungalow-palms",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/jangada-regatta",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/fazenda-moreias/yoga-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/fazenda-moreias/rooms/bangalo-18-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -2.8537104,
+    "lng": -40.7615344
+   },
+   "airport": "Jericoacoara (JJD), 1 hour 15 minutes by road",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Bangalô 1, by Carlos Motta: one open room of wood and thatch, for up to four.",
+     "Bangalôs 2 and 3, by Carlos Motta: sister bungalows of two suites each around a living room and open kitchen.",
+     "Casa de Vila: 140 square metres, two suites, a full kitchen and a private pool.",
+     "Bangalô 4, by Carlos Motta: two suites, a 162 square metre pool deck and a table for twelve.",
+     "Bangalô 18, by Gui Mattos: four air-conditioned suites under one roof."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Downwind runs from Jericoacoara, Preá, Guriú and Tatajuba",
+     "Horse riding, quad bikes, land yachts and jeep rides on the dunes",
+     "Kayaking and paddling on the Coreaú River",
+     "Fishing with a local fisherman and gathering oysters in the mangrove",
+     "Yoga on the deck and more than 50 km of trails"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "A pool at every bungalow and house",
+     "Solar power throughout",
+     "Wind every day from July to January"
+    ]
+   },
+   "onlyHere": [
+    "Fazenda Moréias is a working farm on the coast of Ceará, at Camocim, between Preá and Barra Grande. It covers more than 23 million square metres, with 9 km of beach inside a 20 km reserve, about 500 hectares of preserved mangrove, and dunes and lagoons left as they were. The farm runs on solar power.",
+    "It is not a hotel. Guests stay in the farm's own bungalows and houses, eight in all, each designed by an architect and each with a pool. Breakfast is at Orós, the farm's restaurant, and the days are arranged with the house team."
+   ],
+   "why": [],
+   "facts": {
+    "best_months": "July to January for wind and kitesurfing; the farm counts 300 days of sun and wind a year.",
+    "how_to_get_there": "Jericoacoara airport (JJD) is 1 hour 15 minutes by road. Fortaleza is 5 hours. Camocim is 15 to 20 minutes away.",
+    "signature_experiences": "A downwind kite run along the farm's own beach, a ride on the dunes at low sun, and a long table under the cashew tree at Orós.",
+    "who_its_for": "Kitesurfers, families and groups of friends who want a private house on an empty beach."
+   },
+   "faqs": [
+    {
+     "q": "What is Fazenda Moréias known for?",
+     "a": "Fazenda Moréias is a working farm on the coast of Ceará, at Camocim, between Preá and Barra Grande. It has 9 km of beach inside a 20 km reserve, about 500 hectares of preserved mangrove, and dunes and lagoons left as they were. The farm runs on solar power."
+    },
+    {
+     "q": "What rooms does Fazenda Moréias have?",
+     "a": "Fazenda Moréias has five kinds of room on file: Bangalô 1, Bangalôs 2 and 3, Casa de Vila, Bangalô 4 and Bangalô 18. Every bungalow and house has a pool."
+    },
+    {
+     "q": "What is there to do at Fazenda Moréias?",
+     "a": "Downwind runs from Jericoacoara, Preá, Guriú and Tatajuba; horse riding, quad bikes, land yachts and jeep rides on the dunes; kayaking and paddling on the Coreaú River; fishing with a local fisherman and gathering oysters in the mangrove; yoga on the deck and more than 50 km of trails."
+    },
+    {
+     "q": "When is the wind at Fazenda Moréias?",
+     "a": "There is wind every day from July to January."
+    },
+    {
+     "q": "How do you get to Fazenda Moréias?",
+     "a": "The nearest airport is Jericoacoara (JJD), 1 hour 15 minutes by road."
+    },
+    {
+     "q": "How much does Fazenda Moréias cost?",
+     "a": "The farm prints no prices. Breakfast at Orós is included. Tell the house your dates and group size and it will match you to a bungalow or house."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "feline-fields-lodge",
    "name": "Feline Fields Lodge",
    "ledgerId": "STY-2026-000094",
@@ -18762,6 +19543,105 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "felissimo-exclusive-hotel",
+   "name": "Felissimo Exclusive Hotel",
+   "ledgerId": "STY-2026-000792",
+   "country": "Brazil",
+   "countrySlug": "brazil",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Fifteen suites and two houses in a hillside garden at Balneário Camboriú on the coast of Santa Catarina",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/felissimo-exclusive-hotel/casa-verde-veranda",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/felissimo-exclusive-hotel/rooms/casa-verde-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/felissimo-exclusive-hotel/house-exterior",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/felissimo-exclusive-hotel/rooms/suite-olive-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/felissimo-exclusive-hotel/rooms/suite-olive-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/felissimo-exclusive-hotel/rooms/casa-verde-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/felissimo-exclusive-hotel/casa-verde-veranda-2"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -26.9569307,
+    "lng": -48.6371301
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Casa Verde: a 120 square metre suite with a king bed, a hot tub and a bathroom with two showers and a bath.",
+     "Casa Felissimo: a full house by architect Vicky Schauffert with two suites, a kitchen and a roof terrace with a fireplace.",
+     "Grand, Design, Sublime and Diamond Suites: from about 27 to 58 square metres, with king or queen beds.",
+     "The Owner's Suite: a king bed, a closet and a hydromassage bath with a wide view."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [
+     "The hotel's garden, which runs around the whole property.",
+     "Bistrô Felissimo."
+    ],
+    "items": []
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Heated floors and hydromassage baths in many suites",
+     "Nespresso machine, minibar and high-speed Wi-Fi",
+     "Free parking"
+    ]
+   },
+   "onlyHere": [
+    "Felissimo Exclusive Hotel has 15 suites, including two houses, Casa Verde and Casa Felissimo, set in a garden on a hillside at Balneário Camboriú in Santa Catarina. Each suite is different: several were designed by named Brazilian architects, with heated floors, hydromassage baths and the hotel's own vegan amenities.",
+    "The Bistrô Felissimo serves breakfast and meals to guests."
+   ],
+   "why": [],
+   "facts": {
+    "signature_experiences": "A soak in the hot tub on the Casa Verde veranda and a long breakfast at the Bistrô.",
+    "who_its_for": "Couples on the Santa Catarina coast who want a small, design-led hotel."
+   },
+   "faqs": [
+    {
+     "q": "What is Felissimo Exclusive Hotel known for?",
+     "a": "Felissimo Exclusive Hotel has 15 suites, including two houses, Casa Verde and Casa Felissimo, set in a garden on a hillside at Balneário Camboriú in Santa Catarina. Each suite is different: several were designed by named Brazilian architects, with heated floors, hydromassage baths and the hotel's own vegan amenities."
+    },
+    {
+     "q": "What does Felissimo Exclusive Hotel offer on the property?",
+     "a": "A garden that runs around the whole property; Bistrô Felissimo; heated floors and hydromassage baths in many suites; Nespresso machine, minibar and high-speed Wi-Fi; free parking."
+    },
+    {
+     "q": "How much does Felissimo Exclusive Hotel cost?",
+     "a": "The hotel prints no prices. It has 15 suites in all, each one different: tell the house your dates and it will find the one that fits."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -19215,6 +20095,125 @@
    "placeSlug": null
   },
   {
+   "slug": "futangue-hotel-spa",
+   "name": "Futangue Hotel & Spa",
+   "ledgerId": "STY-2026-000783",
+   "country": "Chile & Easter Island",
+   "countrySlug": "chile",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 26 room hotel inside its own 13,500 hectare rainforest reserve on the south shore of Lake Ranco",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/hotel-aerial-sunset",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/meadow-mountains",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/rafting-rio-bueno",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/futangue-hotel-spa/rooms/superior-room-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/spa-outdoor-pool",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/hikers-cerro-mayo",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/aerial-valley",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/entrance",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/flowering-meadow",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/futangue-hotel-spa/corridor"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -40.3383316,
+    "lng": -72.2121748
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Superior Room: 26 square metres in the main building, with garden or mountain views.",
+     "Suite: 35 square metres in the main building, with its own lounge and a double vanity.",
+     "Standard Room: 26 square metres in Casa Exploradores, 120 metres from the main building, with a terrace over open country.",
+     "Every room has one king bed or two twins, breakfast, a coffee machine, minibar and Wi-Fi, and takes two adults and one child."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Self-guided trails through the reserve, included with every stay",
+     "Fly fishing in the park's lagoons and on the Calcurrupe river",
+     "E-bike rides to Piedras Quemadas and Sendero del Cielo",
+     "Rafting on the Río Bueno and kayaking the Calcurrupe",
+     "Helicopter flights over the Caulle range and boat trips on Lake Ranco"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Triwe Spa: a heated indoor pool that opens to the outdoors, a wood-fired sauna with mountain views, a gym and a yoga room.",
+     "A 25 metre outdoor pool.",
+     "The Caulle Table (El Mesón del Caulle), the hotel's restaurant.",
+     "Programmes from bed and breakfast to all-inclusive with guided excursions and transfers.",
+     "Check-in from 8:00 and check-out until 16:00 at no charge when rooms allow. No pets."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Futangue Hotel & Spa sits inside Parque Futangue, a private 13,500 hectare reserve of Valdivian rainforest on the southern shore of Lake Ranco, in Chile's Los Ríos region. The hotel has 26 rooms and takes no more than 52 guests. Its interiors are native timber, volcanic rock, leather and fire, and it holds a 2026 MICHELIN Key.",
+    "The reserve is the reason to come: marked trails to Laguna Pichi, the Riñinahue falls, Piedras Quemadas and Sendero del Cielo start from the hotel, and park entry is part of every stay."
+   ],
+   "why": [],
+   "facts": {
+    "how_to_get_there": "The hotel arranges transfers, at extra cost, from airports and hotels in Osorno, Valdivia, Puerto Montt, Puerto Varas, Temuco and Pucón.",
+    "signature_experiences": "A day's fly fishing on the park's own lagoons, the walk to the Riñinahue falls, and the wood-fired sauna afterwards.",
+    "who_its_for": "Walkers, anglers and couples who want a private reserve to themselves. From May 2026 the hotel takes guests aged 10 and over."
+   },
+   "faqs": [
+    {
+     "q": "What is Futangue Hotel & Spa known for?",
+     "a": "Futangue Hotel & Spa sits inside Parque Futangue, a private 13,500 hectare reserve of Valdivian rainforest on the southern shore of Lake Ranco, in Chile's Los Ríos region. The hotel has 26 rooms and takes no more than 52 guests, and it holds a 2026 MICHELIN Key."
+    },
+    {
+     "q": "What rooms does Futangue Hotel & Spa have?",
+     "a": "Futangue Hotel & Spa has three room types: Superior Room, Suite and Standard Room."
+    },
+    {
+     "q": "What is there to do at Futangue Hotel & Spa?",
+     "a": "Self-guided trails through the reserve, included with every stay; fly fishing in the park's lagoons and on the Calcurrupe river; e-bike rides to Piedras Quemadas and Sendero del Cielo; rafting on the Río Bueno and kayaking the Calcurrupe; helicopter flights over the Caulle range and boat trips on Lake Ranco."
+    },
+    {
+     "q": "What does Futangue Hotel & Spa offer on the property?",
+     "a": "Triwe Spa, with a heated indoor pool that opens to the outdoors, a wood-fired sauna with mountain views, a gym and a yoga room; a 25 metre outdoor pool; and The Caulle Table (El Mesón del Caulle), the hotel's restaurant."
+    },
+    {
+     "q": "How much does Futangue Hotel & Spa cost?",
+     "a": "The hotel prices by programme, from bed and breakfast to all-inclusive with guided excursions and transfers. Every programme includes the spa and entry to the reserve. Ask the house for your dates."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "galapagos-safari-camp",
    "name": "Galapagos Safari Camp",
    "ledgerId": "STY-2026-000582",
@@ -19360,6 +20359,98 @@
     "status": "approved",
     "classifiedBy": "James Papagno (approved 2 Nov 2026, drafted by Claude)",
     "classifiedAt": "2026-11-02"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "gaia-riverlodge",
+   "name": "Gaïa Riverlodge",
+   "ledgerId": "STY-2026-000778",
+   "country": "Belize",
+   "countrySlug": "belize",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "Thatched cabanas and suites above the Five Sisters Waterfalls in the Mountain Pine Ridge, run on its own hydroelectric power",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/lodge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/arrival",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/stay",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/waterfall-view-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/riverside-villa",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/mountain-view-cabanas",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/dining",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/experiences",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/wellness",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/gaia-riverlodge/about"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "adventure",
+    "wellness",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Waterfall View Suite: two storeys, a king bed and a queen pull-out couch, walk-in shower, waterfall view.",
+     "Riverside Villa: private, on the river's edge, with a king bed, walk-in shower and hot tub.",
+     "Waterfall View Cabana: a king bed above the Five Sisters Waterfalls, for two.",
+     "Mountain View Cabanas: raised jungle cabanas with mountain views, for two.",
+     "Hillside Double Room: in the jungle, for two to four.",
+     "Continental breakfast is included with the suites, villa and Waterfall View Cabana."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Swim in the pools below the Five Sisters Waterfalls",
+     "Hike the rainforest and pine trails of the Mountain Pine Ridge",
+     "Visit Maya ruins from the lodge",
+     "Stargaze by the campfire",
+     "Spa treatments in the rainforest spa"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Gaïa Riverlodge stands above the Five Sisters Waterfalls in the Mountain Pine Ridge Forest Reserve. The lodge is off the grid and makes its own power from the river. Sixteen thatch-roofed cabanas and suites are built in Belizean hardwoods with palmetto walls and private verandas, and the open-air Five Sisters Restaurant cooks from the lodge's organic garden. It is the sister lodge of Matachica on Ambergris Caye, so reef and rainforest pair in one trip."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [],
+    "setting": "cayo",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (21 Nov 2026)",
+    "classifiedAt": "2026-11-21"
    },
    "volumes": [
     "stays"
@@ -19829,8 +20920,8 @@
     }
    ],
    "facts": {
-    "who_its_for": "Conservation-minded travellers, adventure lovers and wildlife photographers who want a safari with purpose.",
-    "signature_experiences": "Walking safaris, Mount Gorongosa expeditions and river and wetland exploration."
+    "signature_experiences": "Walking safaris, Mount Gorongosa expeditions and river and wetland exploration.",
+    "who_its_for": "Conservation-minded travellers, adventure lovers and wildlife photographers who want a safari with purpose."
    },
    "faqs": [
     {
@@ -20794,6 +21885,88 @@
    "placeSlug": null
   },
   {
+   "slug": "hamanasi",
+   "name": "Hamanasi Adventure & Dive Resort",
+   "ledgerId": "STY-2026-000779",
+   "country": "Belize",
+   "countrySlug": "belize",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A beachfront resort at Hopkins with treehouse rooms in the forest behind it, its own dive operation and day trips to reef and rainforest",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/hamanasi/hero",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "adventure",
+    "conservation"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Philip Goldson International Airport (BZE); Dangriga airstrip",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Deluxe Treehouse Rooms: secluded, in the rainforest canopy",
+     "Treehouse Rooms: a private treehouse in the forest",
+     "Beachfront Suites: beside the Caribbean",
+     "Beachfront Plus Rooms: more room to share",
+     "Beachfront Rooms: steps from the beach"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Night hike in the Cockscomb Basin jaguar preserve",
+     "Maya history tour",
+     "Canoe a jungle river",
+     "Hike to the Mayflower waterfalls, with birding on the way",
+     "Cave and jungle adventure day"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Hamanasi sits on the beach at Hopkins on Belize's southern coast, with rainforest behind it. Guests sleep either on the beachfront or in treehouse rooms in the forest canopy, and spend the days between the barrier reef and the interior: diving and snorkelling with the resort's own marine operation, the Cockscomb Basin jaguar preserve, Maya sites, caves and rivers. The resort is Green Globe certified and a founding member of Regenerative Travel. Rooms have no television or telephone."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01"
+    ],
+    "setting": "coast",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (21 Nov 2026)",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "hayfield-manor",
    "name": "Hayfield Manor",
    "ledgerId": "STY-2026-272684",
@@ -20960,8 +22133,8 @@
    ],
    "facts": {
     "how_to_get_there": "About 35 minutes from Jomo Kenyatta International (NBO) and about 20 minutes from Wilson Airport for safari flights.",
-    "who_its_for": "Safari travellers who want a calm first or last night in Nairobi, close to Wilson Airport.",
-    "signature_experiences": "Nairobi National Park, the Giraffe Centre, the Karen Blixen Museum and the Sheldrick Wildlife Trust."
+    "signature_experiences": "Nairobi National Park, the Giraffe Centre, the Karen Blixen Museum and the Sheldrick Wildlife Trust.",
+    "who_its_for": "Safari travellers who want a calm first or last night in Nairobi, close to Wilson Airport."
    },
    "faqs": [
     {
@@ -21048,7 +22221,7 @@
     "wellness",
     "food"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.9472729,
@@ -21194,8 +22367,8 @@
    "facts": {
     "best_months": "June to November, for whale watching on Walker Bay, wine touring and hiking.",
     "how_to_get_there": "Fly into Cape Town International (CPT), about 120 km away, then drive around 1 hour 45 minutes on coastal roads.",
-    "who_its_for": "Multi-generational families, couples and friends who want a private home on the Whale Coast.",
-    "signature_experiences": "Whale watching, private chef dining and wine country tours."
+    "signature_experiences": "Whale watching, private chef dining and wine country tours.",
+    "who_its_for": "Multi-generational families, couples and friends who want a private home on the Whale Coast."
    },
    "faqs": [
     {
@@ -22706,13 +23879,13 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.0637638,
     "lng": 35.2176399
    },
-   "airport": null,
+   "airport": "Ngerende airstrip, Mara North, or Naretoi",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -22742,7 +23915,9 @@
      "body": "Best for families, couples and returning safari-goers who want a private conservancy away from the crowds."
     }
    ],
-   "facts": {},
+   "facts": {
+    "how_to_get_there": "Schedule flights to Mara North or Ngerende, charter flights to Naretoi, or by road (approximately 4 hours from Nairobi via Narok)."
+   },
    "faqs": [],
    "reviewed": true,
    "reserveChild": false,
@@ -23049,6 +24224,114 @@
    "placeSlug": null
   },
   {
+   "slug": "iguana-crossing",
+   "name": "Iguana Crossing Boutique Hotel",
+   "ledgerId": "STY-2026-000788",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 14 room beachfront hotel at Puerto Villamil on Isabela Island in the Galápagos",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/facade-sea",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/pool-loungers",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/sunset",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/iguana-crossing/hotel-08",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/iguana-crossing/rooms/master-suite-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -0.9560516,
+    "lng": -90.9713229
+   },
+   "airport": null,
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Master Suite, with a wide oceanfront terrace",
+     "Junior Suite, ocean view",
+     "King Ocean View and King Volcano View Rooms",
+     "Twin Room Volcano View and Triple Room"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Snorkelling at Las Tintoreras",
+     "Sierra Negra and Volcán Chico",
+     "Campo Duro, Sucre's Cave and Mirador El Mango",
+     "The beach at Puerto Villamil, a short walk from town"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Pool with loungers above the beach",
+     "Open lounge facing the sea",
+     "Weddings and honeymoons arranged by the hotel"
+    ]
+   },
+   "onlyHere": [
+    "Iguana Crossing faces the long beach at Puerto Villamil on Isabela Island in the Galápagos. The hotel has 14 rooms, looking either to the ocean or inland to the volcano, and a pool above the sand.",
+    "The hotel runs its own days out on Isabela: snorkelling at Las Tintoreras, the walk on Sierra Negra and Volcán Chico, and the highland farms and caves."
+   ],
+   "why": [],
+   "facts": {
+    "signature_experiences": "Snorkelling at Las Tintoreras, the walk on Sierra Negra, and sunset from the pool.",
+    "who_its_for": "Couples and families who want a land-based Galápagos stay on Isabela, alone or added to a yacht."
+   },
+   "faqs": [
+    {
+     "q": "What is Iguana Crossing Boutique Hotel known for?",
+     "a": "Iguana Crossing faces the long beach at Puerto Villamil on Isabela Island in the Galápagos. The hotel has 14 rooms, looking either to the ocean or inland to the volcano, and a pool above the sand."
+    },
+    {
+     "q": "What rooms does Iguana Crossing Boutique Hotel have?",
+     "a": "Iguana Crossing has eight room types: Master Suite, Junior Suite, Ocean View Room with Balcony, King Ocean View Room, Ocean View Room, King Room Volcano View, Twin Room Volcano View and Triple Room."
+    },
+    {
+     "q": "What is there to do at Iguana Crossing Boutique Hotel?",
+     "a": "Snorkelling at Las Tintoreras; Sierra Negra and Volcán Chico; Campo Duro, Sucre's Cave and Mirador El Mango; the beach at Puerto Villamil, a short walk from town."
+    },
+    {
+     "q": "What does Iguana Crossing Boutique Hotel offer on the property?",
+     "a": "A pool with loungers above the beach and an open lounge facing the sea. The hotel arranges weddings and honeymoons."
+    },
+    {
+     "q": "How much does Iguana Crossing Boutique Hotel cost?",
+     "a": "Prices are the hotel's own 'from' prices in US dollars. The hotel's page does not say whether taxes or breakfast are included; the house confirms both with your quote."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "ila-safari-lodge",
    "name": "Ila Safari Lodge",
    "ledgerId": "STY-2026-000541",
@@ -23237,8 +24520,29 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Inkaterra Cabo Blanco known for?",
+     "a": "A stay on Peru's wild northern edge, where luxury is measured in space, silence and uninterrupted horizon views."
+    },
+    {
+     "q": "What is there to do at Inkaterra Cabo Blanco?",
+     "a": "Surf sessions along the coastline; fishing heritage excursions; ocean-view yoga; beach picnics; sunset terrace dining; coastal exploration."
+    },
+    {
+     "q": "What does Inkaterra Cabo Blanco offer on the property?",
+     "a": "Private plunge pools; ocean-facing terraces; outdoor showers; firepit lounges; organic amenities."
+    },
+    {
+     "q": "How do you get to Inkaterra Cabo Blanco?",
+     "a": "The nearest airports are Talara (TYL), about 45 to 60 minutes by road, and Piura (PIU), about 2.5 to 3.5 hours' drive. Talara is the best arrival."
+    },
+    {
+     "q": "When is the best time to visit Inkaterra Cabo Blanco?",
+     "a": "May to November. These months bring calmer coastal conditions, softer winds and clearer skies."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -23334,8 +24638,21 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is there to do at Inkaterra Hacienda Concepcion?",
+     "a": "The canopy walkway; wildlife observation; Amazon river excursions; night walks in the jungle; conservation activities."
+    },
+    {
+     "q": "How do you get to Inkaterra Hacienda Concepcion?",
+     "a": "The nearest and best arrival airport is Padre Aldamiz International Airport (PEM) in Puerto Maldonado. From the airport, guests continue by land transfer and riverboat to the lodge. Total transfer time is approximately 45 minutes to 1 hour."
+    },
+    {
+     "q": "When is the best time to visit Inkaterra Hacienda Concepcion?",
+     "a": "May to October. These months typically offer drier rainforest conditions, better wildlife visibility and easier river excursions and jungle trekking in the Tambopata region."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -23424,8 +24741,29 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Inkaterra Hacienda Urubamba known for?",
+     "a": "Set between Cusco and Machu Picchu, Inkaterra Hacienda Urubamba lets travelers experience the Sacred Valley beyond sightseeing, through the landscapes, traditions and agricultural heritage that still define Andean life."
+    },
+    {
+     "q": "What is there to do at Inkaterra Hacienda Urubamba?",
+     "a": "Sacred Valley exploration; time on the organic farm; cultural encounters; mountain hikes; Peruvian cooking."
+    },
+    {
+     "q": "What does Inkaterra Hacienda Urubamba offer on the property?",
+     "a": "Andes mountain views; an organic plantation and gardens; standalone casitas; traditional hacienda architecture."
+    },
+    {
+     "q": "How do you get to Inkaterra Hacienda Urubamba?",
+     "a": "The nearest and best arrival airport is Cusco International Airport (CUZ). Inkaterra Hacienda Urubamba is approximately 1.5 to 2 hours by private transfer through the Sacred Valley."
+    },
+    {
+     "q": "When is the best time to visit Inkaterra Hacienda Urubamba?",
+     "a": "April to October. These months bring clear mountain skies, dry hiking conditions and good temperatures for exploring the Sacred Valley and Machu Picchu."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -23518,8 +24856,29 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Inkaterra La Casona known for?",
+     "a": "Hidden within the cobblestone streets of Cusco, Inkaterra La Casona was once a colonial manor house. It is now a small, quiet base for travelers preparing to explore Peru's Sacred Valley and Machu Picchu."
+    },
+    {
+     "q": "What is there to do at Inkaterra La Casona?",
+     "a": "Sacred Valley exploration; journeys to Machu Picchu; Andean cultural encounters; historical walks in Cusco; Peruvian cooking."
+    },
+    {
+     "q": "What does Inkaterra La Casona offer on the property?",
+     "a": "A restored 17th-century colonial manor; suites with fireplaces and soaking tubs; a private courtyard; a historic Cusco location."
+    },
+    {
+     "q": "How do you get to Inkaterra La Casona?",
+     "a": "The nearest airport is Alejandro Velasco Astete International Airport (CUZ). Inkaterra La Casona is approximately 15 to 20 minutes by vehicle from Cusco Airport, depending on traffic."
+    },
+    {
+     "q": "When is the best time to visit Inkaterra La Casona?",
+     "a": "May to September. These months offer the driest weather, clear mountain views, comfortable trekking conditions and good access to Machu Picchu and the Sacred Valley."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -23614,8 +24973,29 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Inkaterra Machu Picchu Pueblo Hotel known for?",
+     "a": "Set within a living cloud forest beside Machu Picchu Pueblo, the hotel brings biodiversity, conservation and hospitality together. Guests wake among orchids and hummingbirds, then travel on to Machu Picchu."
+    },
+    {
+     "q": "What is there to do at Inkaterra Machu Picchu Pueblo Hotel?",
+     "a": "Guided journeys to Machu Picchu; cloud forest walks; orchid garden tours; birdwatching; Sacred Valley cultural experiences."
+    },
+    {
+     "q": "What does Inkaterra Machu Picchu Pueblo Hotel offer on the property?",
+     "a": "A private cloud forest reserve; an orchid conservation sanctuary; casitas set in nature; an Andean-inspired spa."
+    },
+    {
+     "q": "How do you get to Inkaterra Machu Picchu Pueblo Hotel?",
+     "a": "Fly into Cusco (CUZ), then transfer by train through the Sacred Valley to Machu Picchu Pueblo. The hotel is within walking distance of the train station."
+    },
+    {
+     "q": "When is the best time to visit Inkaterra Machu Picchu Pueblo Hotel?",
+     "a": "May to September. Dry season months offer the clearest skies, the best hiking conditions and the best visibility for both Machu Picchu and the cloud forest."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -24864,6 +26244,109 @@
    "placeSlug": null
   },
   {
+   "slug": "jade-mountain",
+   "name": "Jade Mountain",
+   "ledgerId": "STY-2026-000773",
+   "country": "St Lucia",
+   "countrySlug": "st-lucia",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-nine sanctuaries with a missing fourth wall, open to the Pitons and the Caribbean Sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-lucia/jade-mountain/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-lucia/jade-mountain/infinity-pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Hewanorra International Airport (UVF)",
+   "airportDirections": "Hewanorra International Airport (UVF) is 18 miles away, about 60 minutes by road; George Charles Airport (SLU) is 30 miles, about 75 minutes. A shared helicopter takes about 6 minutes from UVF and 8 from SLU, in daylight only. The resort arranges every transfer and an airport representative meets you outside arrivals.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Sky Whirlpool Suites, about 1,650 square feet, with a whirlpool tub for two and no pool. Star Sanctuaries, 1,400 to 1,800 square feet, with an infinity pool of about 450 square feet. Moon Sanctuaries, 1,600 to 1,950 square feet, pool about 650 square feet. Sun Sanctuaries, 1,800 to 2,000 square feet, pool about 900 square feet, on the corners with a 270 degree view. Galaxy Sanctuaries, about 2,000 square feet, pool about 900 square feet: three, with the widest views."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "29 sanctuaries, 24 with a private infinity pool. The fourth wall is absent in every sanctuary, open to the Pitons and the sea. No televisions, radios or telephones. Jade Mountain Club, with Jade Cuisine by chef Allen Susser, and the Celestial Terrace. Kai en Ciel Spa and daily yoga at sunrise and sunset. Guests aged 16 and over."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Jade Mountain stands above the 600 acre beachfront estate of Anse Chastanet, the work of its architect-owner Nick Troubetzkoy. Each sanctuary leaves one wall out, so the bedroom, the living space and, in 24 of them, a private infinity pool run together and look straight at the Pitons. The pools are lined in glass tiles made for each one, in its own colour, and lit by fibre optics at night.",
+    "It was the first hotel in the Caribbean to earn LEED Gold. Below are two beaches, a PADI 5 Star dive operation, more than 12 miles of hiking and biking trails, an organic farm and a chocolate lab. A major domo looks after each sanctuary."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Room With Three Walls Nothing stands between the bed, the pool and the Pitons. It is a stay for two people who want the view to themselves, with a beach and a reef a few minutes below."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to Hewanorra (UVF), then about 60 minutes by road or about 6 minutes by helicopter. George Charles (SLU) is about 75 minutes by road.",
+    "signature_experiences": "A night swim in your own lit infinity pool, dinner at the Jade Mountain Club, the chocolate lab, diving from Anse Chastanet and a guided walk of the estate.",
+    "who_its_for": "Couples and honeymooners, aged 16 and over, who want privacy, a view of the Pitons and no screens."
+   },
+   "faqs": [
+    {
+     "q": "How many sanctuaries does Jade Mountain have?",
+     "a": "29. Twenty-four have a private infinity pool, in the Star, Moon, Sun and Galaxy categories, and five are Sky Whirlpool Suites with a whirlpool tub for two."
+    },
+    {
+     "q": "What is the missing fourth wall at Jade Mountain?",
+     "a": "Every sanctuary is built without its fourth wall, so the living space is open to the Pitons and the Caribbean Sea while staying private. There are no televisions, radios or telephones."
+    },
+    {
+     "q": "How do you get to Jade Mountain?",
+     "a": "Hewanorra International Airport (UVF) is 18 miles away, about 60 minutes by road. A helicopter takes about 6 minutes in daylight. George Charles Airport (SLU) is about 75 minutes by road."
+    },
+    {
+     "q": "Can children stay at Jade Mountain?",
+     "a": "No. Jade Mountain does not accept guests under 16."
+    },
+    {
+     "q": "How much does Jade Mountain cost?",
+     "a": "The resort's published 2027 daily rates start at US$1,655 a night for a Sky Whirlpool Suite, room only, for two, from 1 June to 31 October, and at US$2,285 for a Star Sanctuary with an infinity pool in the same season. From 3 January to 15 April the same two are US$2,205 and US$3,100. Rates are subject to 20% VAT, a service charge and a tourism levy."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-03",
+    "secondary": [
+     "PATH-02",
+     "PATH-05"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "jaguar-reef-lodge",
    "name": "The Lodge at Jaguar Reef",
    "ledgerId": "STY-2026-936143",
@@ -25281,6 +26764,112 @@
    "volumes": [
     "stays",
     "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "jungle-bay-dominica",
+   "name": "Jungle Bay Dominica",
+   "ledgerId": "STY-2026-000776",
+   "country": "Dominica",
+   "countrySlug": "dominica",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Sixty eco bungalows on a rainforest ridge above the Caribbean Sea, built around hiking, yoga and the spa",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/dominica/jungle-bay/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/dominica/jungle-bay/suite-interior"
+   ],
+   "bestMonths": "December to May",
+   "bestMonthsNote": "The resort gives December to the end of May as the drier season, with heavier rain from August to October. Temperatures average about 27 to 30 degrees Celsius all year.",
+   "bestFor": [
+    "couples",
+    "family",
+    "wellness",
+    "adventure"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Douglas-Charles Airport (DOM)",
+   "airportDirections": "Douglas-Charles Airport (DOM), in the northeast, is about 1 hour 20 minutes by road. American Airlines flies direct from Miami, or connect through San Juan. Transfers are included with Adventure + Wellness bookings of three nights or more. Roseau, the capital, is about 20 minutes away.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Bungalow Room, one king or two twins, garden or partial ocean view, for two. Bungalow Suite, a king and a twin, garden or partial ocean view, for three. Garden View Family Suite, the largest bungalow, a king and two twins, for up to four. Interconnecting and adjacent bungalows are available."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "60 eco bungalows on the hillside at Soufrière, each with a private patio. Air conditioning and fans, bamboo furnishings and a jungle spa bathroom. The Adventure + Wellness package: all meals and fresh juices, daily hikes and excursions, yoga and spa treatments. Bamboo Spa, infinity pools and daily yoga classes. Scotts Head 8 minutes away, Champagne Beach 15. Complimentary Wi-Fi."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Jungle Bay sits on a ridge of coastal rainforest at Soufrière, on Dominica's south west coast, with the Caribbean Sea below. Its days are organised around the island: guided hikes to hidden waterfalls, excursions on land and at sea, yoga morning or evening and a treatment at the Bamboo Spa, with the fruit for the juices picked on the property.",
+    "Roseau is 20 minutes away, the reef at Scotts Head eight, and a dive shop five. Forbes and Travel + Leisure have both listed it among their green resorts."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "Dominica, Planned for You Jungle Bay is the way to do the island's walks, reefs and hot springs without organising any of it: the guides, the meals and the transfers come with the stay. It suits active travellers and anyone who wants yoga and a spa at the end of a hard day's hike."
+    }
+   ],
+   "facts": {
+    "best_months": "December to the end of May is the drier season; rain is heavier from August to October.",
+    "how_to_get_there": "Fly to Douglas-Charles Airport (DOM), direct from Miami or through San Juan, then about 1 hour 20 minutes by road. Transfers are included with Adventure + Wellness stays of three nights or more.",
+    "signature_experiences": "A guided hike to a hidden waterfall, snorkelling at Champagne Beach and Scotts Head, a yoga class above the sea and a treatment at the Bamboo Spa.",
+    "who_its_for": "Active couples, friends and families who want Dominica's hiking and diving with meals, guides and wellness included."
+   },
+   "faqs": [
+    {
+     "q": "Where is Jungle Bay Dominica?",
+     "a": "At Soufrière on Dominica's south west coast, about 20 minutes from the capital, Roseau, and 8 minutes from Scotts Head."
+    },
+    {
+     "q": "How do you get to Jungle Bay?",
+     "a": "Fly to Douglas-Charles Airport (DOM), direct from Miami with American Airlines or through San Juan, then about 1 hour 20 minutes by road. Transfers are included with Adventure + Wellness bookings of three nights or more."
+    },
+    {
+     "q": "What does the Adventure + Wellness package include?",
+     "a": "All meals and fresh juices, the activities on the resort's schedule including daily hikes and guided excursions, yoga classes, daily spa treatments and, for stays of three nights or more, airport transfers."
+    },
+    {
+     "q": "Does Jungle Bay have a beach?",
+     "a": "No beach on site. The bungalows are on a ridge above the sea, none is fully ocean view, and tours visit Scotts Head and Champagne Beach. There are infinity pools at the resort."
+    },
+    {
+     "q": "When is the best time to visit Jungle Bay?",
+     "a": "December to the end of May is the drier season, with heavier rain from August to October. Temperatures average about 27 to 30 degrees Celsius."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-05",
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 21 Nov 2026",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -26101,7 +27690,7 @@
     "honeymoon",
     "luxury"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": 36.461973,
@@ -28183,8 +29772,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Adventurous travelers and wildlife enthusiasts seeking exclusivity and high-quality game viewing.",
-    "signature_experiences": "Off-road game drives with expert trackers and seasonal mokoro excursions."
+    "signature_experiences": "Off-road game drives with expert trackers and seasonal mokoro excursions.",
+    "who_its_for": "Adventurous travelers and wildlife enthusiasts seeking exclusivity and high-quality game viewing."
    },
    "faqs": [
     {
@@ -28282,8 +29871,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Safari enthusiasts, wildlife photographers, and those seeking an authentic, high-density big cat experience.",
-    "signature_experiences": "Year-round land and water activities, including mokoro excursions and big cat tracking."
+    "signature_experiences": "Year-round land and water activities, including mokoro excursions and big cat tracking.",
+    "who_its_for": "Safari enthusiasts, wildlife photographers, and those seeking an authentic, high-density big cat experience."
    },
    "faqs": [
     {
@@ -28390,8 +29979,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun or Kasane to the local airstrip.",
-    "who_its_for": "Serious wildlife enthusiasts and photographers seeking predator action.",
-    "signature_experiences": "Boat cruises on the Kwando River and predator-focused game drives."
+    "signature_experiences": "Boat cruises on the Kwando River and predator-focused game drives.",
+    "who_its_for": "Serious wildlife enthusiasts and photographers seeking predator action."
    },
    "faqs": [
     {
@@ -28497,8 +30086,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun or Kasane to the local airstrip.",
-    "who_its_for": "Wildlife enthusiasts and those seeking a remote, peaceful safari.",
-    "signature_experiences": "Game drives through the Linyanti marshes and tracking large elephant herds."
+    "signature_experiences": "Game drives through the Linyanti marshes and tracking large elephant herds.",
+    "who_its_for": "Wildlife enthusiasts and those seeking a remote, peaceful safari."
    },
    "faqs": [
     {
@@ -28604,8 +30193,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Families, couples, and wildlife enthusiasts seeking big game and warm hospitality.",
-    "signature_experiences": "Day and night game drives along the Gomoti River and seasonal mokoro excursions."
+    "signature_experiences": "Day and night game drives along the Gomoti River and seasonal mokoro excursions.",
+    "who_its_for": "Families, couples, and wildlife enthusiasts seeking big game and warm hospitality."
    },
    "faqs": [
     {
@@ -28703,8 +30292,8 @@
    "facts": {
     "best_months": "June to September",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Nature lovers, photographers, and those seeking a quiet, water-focused safari experience.",
-    "signature_experiences": "Mokoro excursions through the Delta channels and guided walking safaris."
+    "signature_experiences": "Mokoro excursions through the Delta channels and guided walking safaris.",
+    "who_its_for": "Nature lovers, photographers, and those seeking a quiet, water-focused safari experience."
    },
    "faqs": [
     {
@@ -28801,8 +30390,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun to the local airstrip.",
-    "who_its_for": "Adventurous travelers and those seeking a unique desert experience.",
-    "signature_experiences": "Game drives through the salt pans and visiting ancient baobab trees."
+    "signature_experiences": "Game drives through the salt pans and visiting ancient baobab trees.",
+    "who_its_for": "Adventurous travelers and those seeking a unique desert experience."
    },
    "faqs": [
     {
@@ -28902,8 +30491,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun to the local airstrip.",
-    "who_its_for": "Travelers seeking a charming and authentic Delta experience.",
-    "signature_experiences": "Mokoro excursions and game drives in the private concession."
+    "signature_experiences": "Mokoro excursions and game drives in the private concession.",
+    "who_its_for": "Travelers seeking a charming and authentic Delta experience."
    },
    "faqs": [
     {
@@ -29001,8 +30590,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun Airport to the local airstrip.",
-    "who_its_for": "Couples, solo travelers, and those interested in sustainable, community-supported safari experiences.",
-    "signature_experiences": "Sunrise game drives on the Gomoti plains and guided walking safaris."
+    "signature_experiences": "Sunrise game drives on the Gomoti plains and guided walking safaris.",
+    "who_its_for": "Couples, solo travelers, and those interested in sustainable, community-supported safari experiences."
    },
    "faqs": [
     {
@@ -29100,8 +30689,8 @@
    "facts": {
     "best_months": "May to October",
     "how_to_get_there": "Light aircraft transfer from Maun to the local airstrip.",
-    "who_its_for": "Families and travelers seeking a luxury Delta experience.",
-    "signature_experiences": "Game drives in the Kwara Concession and boat cruises on the Delta."
+    "signature_experiences": "Game drives in the Kwara Concession and boat cruises on the Delta.",
+    "who_its_for": "Families and travelers seeking a luxury Delta experience."
    },
    "faqs": [
     {
@@ -29199,8 +30788,8 @@
    "facts": {
     "best_months": "January to August, December",
     "how_to_get_there": "Light aircraft transfer from Maun to the local airstrip.",
-    "who_its_for": "Adventurous travelers and those seeking a unique desert experience.",
-    "signature_experiences": "Star gazing and nature walks with Bushman trackers."
+    "signature_experiences": "Star gazing and nature walks with Bushman trackers.",
+    "who_its_for": "Adventurous travelers and those seeking a unique desert experience."
    },
    "faqs": [
     {
@@ -29324,8 +30913,8 @@
    "facts": {
     "best_months": "April to October for mild, dry weather and the best wildlife; November to March for green landscapes and summer birds.",
     "how_to_get_there": "Fly to Port Elizabeth International Airport (PLZ), then a 2-hour road transfer; private transfers and charter flights are available.",
-    "who_its_for": "Families, honeymooners, groups and solo travellers who want a private, malaria-free Big Five safari with conservation impact.",
-    "signature_experiences": "Big Five game drives, rhino and cheetah tracking, and the Kids on Safari program."
+    "signature_experiences": "Big Five game drives, rhino and cheetah tracking, and the Kids on Safari program.",
+    "who_its_for": "Families, honeymooners, groups and solo travellers who want a private, malaria-free Big Five safari with conservation impact."
    },
    "faqs": [
     {
@@ -29407,7 +30996,7 @@
     "conservation",
     "wildlife_photography"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Windhoek (WDH)",
@@ -29695,7 +31284,7 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Florence, Rome, and Pisa",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -29883,6 +31472,127 @@
    "placeSlug": null
   },
   {
+   "slug": "la-ferme-de-georges",
+   "name": "La Ferme de Georges",
+   "ledgerId": "STY-2026-000791",
+   "country": "Brazil",
+   "countrySlug": "brazil",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A small pousada of thatched lodges and organic gardens at Atins, beside the dunes of the Lençóis Maranhenses",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/property-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/dunes-lagoon",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/pool-aerial",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/la-ferme-de-georges/rooms/tree-lodge-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/open-air-lounge",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/la-ferme-de-georges/rooms/park-lodge-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/kite-surfing-atins",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/brazil/la-ferme-de-georges/garden-path",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/la-ferme-de-georges/rooms/river-lodge-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -2.5722892,
+    "lng": -42.752487
+   },
+   "airport": "São Luís (SLZ)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Dune Lodge: 30 to 32 square metres, a king bed and a lounge with two single beds.",
+     "River Lodge: 40 square metres, a king or queen bed and two singles, with a covered private lounge.",
+     "Park Suite: 45 square metres, open plan, for up to five.",
+     "Park Lodge: 65 square metres, two bedrooms, for up to five. There are five.",
+     "Tree Lodge: 150 square metres on a dune above the cashew trees, three bedrooms and a tower with a view all round.",
+     "Every lodge has air conditioning, a hot shower, a safe, a minibar and its own garden."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The dunes and lagoons of the Lençóis Maranhenses",
+     "Kitesurfing off Atins beach",
+     "The pool and pool bar under the cashew trees",
+     "Excursions arranged by the pousada"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Restaurant supplied by the organic vegetable gardens",
+     "The Forum, an open-air lounge under a thatched roof",
+     "Air conditioning in every lodge",
+     "There are no cash machines in Atins: bring cash"
+    ]
+   },
+   "onlyHere": [
+    "La Ferme de Georges is a small pousada at Atins in Maranhão, beside the Lençóis Maranhenses National Park and its roughly 1,500 square kilometres of dunes and lagoons. Its lodges are white-walled and built from local wood, brick and palm thatch, spread across a two acre hillside with wide gardens between them.",
+    "The restaurant cooks from the property's own organic gardens, and the pool sits in the shade of cashew trees. The owners suggest three or four nights: Atins takes a road and a river to reach."
+   ],
+   "why": [],
+   "facts": {
+    "how_to_get_there": "From São Luís airport (SLZ), about 3 to 3.5 hours by road to Barreirinhas, then about 1 hour 15 minutes by boat down the river to Atins.",
+    "signature_experiences": "A walk into the dunes to swim in a lagoon, the boat down the river from Barreirinhas, and dinner from the garden.",
+    "who_its_for": "Couples and families who want the Lençóis Maranhenses from a quiet base, and kitesurfers."
+   },
+   "faqs": [
+    {
+     "q": "What is La Ferme de Georges known for?",
+     "a": "La Ferme de Georges is a small pousada at Atins in Maranhão, beside the Lençóis Maranhenses National Park and its roughly 1,500 square kilometres of dunes and lagoons. Its lodges are white-walled and built from local wood, brick and palm thatch, spread across a two acre hillside with wide gardens between them."
+    },
+    {
+     "q": "What rooms does La Ferme de Georges have?",
+     "a": "La Ferme de Georges has five lodge types: Dune Lodge, River Lodge, Park Suite, Park Lodge and Tree Lodge."
+    },
+    {
+     "q": "What is there to do at La Ferme de Georges?",
+     "a": "The dunes and lagoons of the Lençóis Maranhenses; kitesurfing off Atins beach; the pool and pool bar under the cashew trees; excursions arranged by the pousada."
+    },
+    {
+     "q": "What does La Ferme de Georges offer on the property?",
+     "a": "A restaurant supplied by the organic vegetable gardens; The Forum, an open-air lounge under a thatched roof; air conditioning in every lodge. There are no cash machines in Atins, so bring cash."
+    },
+    {
+     "q": "How do you get to La Ferme de Georges?",
+     "a": "The nearest airport is São Luís (SLZ)."
+    },
+    {
+     "q": "How much does La Ferme de Georges cost?",
+     "a": "The pousada prints no prices: rates come by date. Tell the house your dates and group and it will match you to a lodge."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-06",
+    "secondary": [
+     "PATH-02"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "la-residence",
    "name": "La Residence",
    "ledgerId": "STY-2026-000141",
@@ -29945,8 +31655,8 @@
    "facts": {
     "best_months": "October to April, for harvest season, outdoor dining and wine tasting.",
     "how_to_get_there": "Fly into Cape Town International (CPT), about 75 km away, around 1 hour 15 minutes by car.",
-    "who_its_for": "Couples, food and wine lovers, luxury travellers and wellness seekers who want a quiet vineyard estate.",
-    "signature_experiences": "Wine tastings, vineyard picnics and horse riding."
+    "signature_experiences": "Wine tastings, vineyard picnics and horse riding.",
+    "who_its_for": "Couples, food and wine lovers, luxury travellers and wellness seekers who want a quiet vineyard estate."
    },
    "faqs": [
     {
@@ -31455,8 +33165,8 @@
    "facts": {
     "best_months": "June to November for whale watching; December to May for quiet beaches, birding and fynbos blooms.",
     "how_to_get_there": "Fly to Cape Town (CPT) or George (GRJ), then drive 3 to 4 hours to De Hoop Nature Reserve; transfers can be arranged on request.",
-    "who_its_for": "Couples, families, solo travellers and nature lovers who want wild beaches and whale watching.",
-    "signature_experiences": "Whale watching from your room in season, guided coastal walks and fynbos botany tours."
+    "signature_experiences": "Whale watching from your room in season, guided coastal walks and fynbos botany tours.",
+    "who_its_for": "Couples, families, solo travellers and nature lovers who want wild beaches and whale watching."
    },
    "faqs": [
     {
@@ -32114,10 +33824,10 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Kasane Airport",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -32150,7 +33860,9 @@
      "body": "Best for families, multigenerational groups and friends travelling together."
     }
    ],
-   "facts": {},
+   "facts": {
+    "how_to_get_there": "Guests arrive by light aircraft transfer from Kasane Airport to the Linyanti Airstrip, followed by a game drive transfer to the camp."
+   },
    "faqs": [],
    "reviewed": true,
    "reserveChild": false,
@@ -32196,10 +33908,10 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Linyanti Airstrip",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -32233,7 +33945,9 @@
      "body": "Best for couples, small groups and returning safari-goers."
     }
    ],
-   "facts": {},
+   "facts": {
+    "how_to_get_there": "Guests arrive via a 1 hour fixed-wing flight from Maun International Airport or a 35-minute fixed-wing flight from Kasane International Airport, both landing at Linyanti Airstrip, followed by a 2 hour 30 minute game drive transfer to the camp."
+   },
    "faqs": [],
    "reviewed": true,
    "reserveChild": false,
@@ -33291,6 +35005,122 @@
    "placeSlug": null
   },
   {
+   "slug": "luna-volcan",
+   "name": "Luna Volcán Adventure Spa",
+   "ledgerId": "STY-2026-000787",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Thirty rooms and four volcanic hot pools on the flank of Tungurahua, 400 metres above Baños",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/gardens-view",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/pools-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/pools-4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/cafe-del-cielo-terrace",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/rooftop-bar-pools",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/luna-volcan/terrace-view"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -1.405161,
+    "lng": -78.4177792
+   },
+   "airport": "Quito (UIO), about 3 hours by road",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Romantic Rooms: 30 to 84 square metres, many with a fireplace or a private terrace.",
+     "Romantic Suites: 50 to 115 square metres, with a jacuzzi.",
+     "Family Suites, Atahualpa and Huayna Cápac: 90 square metres, two bedrooms, for up to five.",
+     "Friends Rooms: 65 to 74 square metres; one is wheelchair accessible."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Four pools and a hot tub of volcanic water, with the valley below",
+     "Adventure activities and birdwatching from the hotel",
+     "The hotel's own organic gardens"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Café del Cielo, with terraces over Baños",
+     "Luna Restaurante, Ecuadorian cooking with vegetables from the gardens",
+     "Luna Bar Rooftop, beside the pools",
+     "Year-round temperatures of about 17 to 25 degrees"
+    ]
+   },
+   "onlyHere": [
+    "Luna Volcán, formerly Luna Runtún, sits in 35 hectares of Andean forest on the eastern flank of the Tungurahua volcano, about 400 metres above the town of Baños. It is 170 km and three hours from Quito, and an hour from the edge of the Amazon. The Sangay and Llanganates national parks surround it.",
+    "The hotel has 30 rooms and suites for 75 guests, no two alike, with views of the volcano, the Llanganates or the town below. Its four pools and hot tub are filled with hot volcanic water."
+   ],
+   "why": [],
+   "facts": {
+    "best_months": "About 17 to 25 degrees all year, with some rainy days.",
+    "how_to_get_there": "By road: 170 km and about three hours from Quito; 300 km and about six hours from Guayaquil.",
+    "signature_experiences": "An evening in the volcanic pools above the lights of Baños, and a treatment at the Luna Healing Spa.",
+    "who_its_for": "Couples first, then families and friends breaking a journey between Quito and the Amazon."
+   },
+   "faqs": [
+    {
+     "q": "What is Luna Volcán Adventure Spa known for?",
+     "a": "Luna Volcán, formerly Luna Runtún, sits in 35 hectares of Andean forest on the eastern flank of the Tungurahua volcano, about 400 metres above the town of Baños. The Sangay and Llanganates national parks surround it."
+    },
+    {
+     "q": "What rooms does Luna Volcán Adventure Spa have?",
+     "a": "Luna Volcán has four room groups: Romantic Rooms, Romantic Suites, Family Suites and Friends Rooms."
+    },
+    {
+     "q": "What is there to do at Luna Volcán Adventure Spa?",
+     "a": "Four pools and a hot tub of volcanic water, with the valley below; adventure activities and birdwatching from the hotel; the hotel's own organic gardens."
+    },
+    {
+     "q": "What does Luna Volcán Adventure Spa offer on the property?",
+     "a": "Café del Cielo, with terraces over Baños; Luna Restaurante, Ecuadorian cooking with vegetables from the gardens; Luna Bar Rooftop, beside the pools. Temperatures are about 17 to 25 degrees all year."
+    },
+    {
+     "q": "How do you get to Luna Volcán Adventure Spa?",
+     "a": "The nearest airport is Quito (UIO). The hotel is 170 km and about three hours from Quito by road."
+    },
+    {
+     "q": "How much does Luna Volcán Adventure Spa cost?",
+     "a": "Prices are the hotel's own in US dollars, for the room, and vary by room within each group. The house confirms taxes and what is included with your quote."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-05",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "machaba",
    "name": "Machaba Camp",
    "ledgerId": "STY-2026-000159",
@@ -33837,8 +35667,8 @@
    "facts": {
     "best_months": "May to September for game viewing and rhino interventions; October to April for green bush, baby animals and birding.",
     "how_to_get_there": "Fly to Thabazimbi Airstrip, then 40 to 90 minutes by road depending on the lodge; or drive from Johannesburg in about 3.5 hours.",
-    "who_its_for": "Families with young children, couples at the adults-only Mountain Lodge, and groups who want a private villa.",
-    "signature_experiences": "Water safaris on the Matlabas River, a treehouse sleep-out and hands-on rhino conservation."
+    "signature_experiences": "Water safaris on the Matlabas River, a treehouse sleep-out and hands-on rhino conservation.",
+    "who_its_for": "Families with young children, couples at the adults-only Mountain Lodge, and groups who want a private villa."
    },
    "faqs": [
     {
@@ -33896,6 +35726,126 @@
    },
    "volumes": [
     "safaris",
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "mashpi-lodge",
+   "name": "Mashpi Lodge",
+   "ledgerId": "STY-2026-000784",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A 24 room glass-walled lodge in Ecuador's cloud forest, about three hours from Quito, inside a private reserve",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/mashpi-lodge/waterfall",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/mashpi-lodge/rooms/wayra-room-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/mashpi-lodge/sky-bike",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/mashpi-lodge/rooms/yaku-suite-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/mashpi-lodge/rooms/wayra-room-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/mashpi-lodge/room-bed-view",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/mashpi-lodge/rooms/wawa-room-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/mashpi-lodge/tayra"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": 0.159813,
+    "lng": -78.856313
+   },
+   "airport": "Quito (UIO)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Yaku Suites: three suites for two, each with a freestanding tub.",
+     "Wayra Rooms: the main rooms, across the lodge's three levels, for two adults and up to two children under 12. Some interconnect.",
+     "Wawa Room: a smaller room for one traveller.",
+     "Every room is sound-proofed, with humidity and temperature control and automatic blinds."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The Dragonfly canopy gondola",
+     "The Sky Bike, pedalled across the forest canopy",
+     "The observation tower",
+     "Guided walks to the reserve's waterfalls",
+     "Birdwatching and the hummingbird garden",
+     "The Life Centre and butterfly farm"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "Resident biologists and naturalist guides",
+     "Floor-to-ceiling windows in every room",
+     "No malaria or yellow fever vaccines are needed at this altitude"
+    ]
+   },
+   "onlyHere": [
+    "Mashpi Lodge stands at 900 metres in the cloud forest of north-west Ecuador, inside Quito's Metropolitan District and about three hours' drive from the city. It sits in a private reserve that is part of the 3,200 hectare Mashpi-Tayra Reserve. There are 24 rooms for 47 guests, each with floor-to-ceiling glass facing the forest.",
+    "The lodge keeps resident biologists, who have described 26 species new to science here. Guests see the canopy from the Dragonfly gondola, the pedal-powered Sky Bike and an observation tower, and the forest floor on guided walks to the waterfalls. The lodge holds 2 MICHELIN Keys (2025)."
+   ],
+   "why": [],
+   "facts": {
+    "best_months": "The lodge describes the weather as pleasant all year.",
+    "how_to_get_there": "By road from Quito, about three hours. The lodge's Quito packages include shared ground transfers.",
+    "signature_experiences": "Crossing the canopy on the Sky Bike, a ride on the Dragonfly gondola, and a night walk with one of the lodge's biologists.",
+    "who_its_for": "Wildlife travellers, birders and families who want the forest with real comfort, and anyone pairing Quito with the Galápagos."
+   },
+   "faqs": [
+    {
+     "q": "What is Mashpi Lodge known for?",
+     "a": "Mashpi Lodge stands at 900 metres in the cloud forest of north-west Ecuador, inside Quito's Metropolitan District and about three hours' drive from the city. It sits in a private reserve that is part of the 3,200 hectare Mashpi-Tayra Reserve. There are 24 rooms for 47 guests, each with floor-to-ceiling glass facing the forest."
+    },
+    {
+     "q": "What rooms does Mashpi Lodge have?",
+     "a": "Mashpi Lodge has three room types: Yaku Suite, Wayra Room and Wawa Room."
+    },
+    {
+     "q": "What is there to do at Mashpi Lodge?",
+     "a": "The Dragonfly canopy gondola; the Sky Bike, pedalled across the forest canopy; the observation tower; guided walks to the reserve's waterfalls; birdwatching and the hummingbird garden; the Life Centre and butterfly farm."
+    },
+    {
+     "q": "What does Mashpi Lodge offer on the property?",
+     "a": "Resident biologists and naturalist guides, and floor-to-ceiling windows in every room. No malaria or yellow fever vaccines are needed at this altitude."
+    },
+    {
+     "q": "How do you get to Mashpi Lodge?",
+     "a": "The nearest airport is Quito (UIO). The lodge is about three hours' drive from the city."
+    },
+    {
+     "q": "How much does Mashpi Lodge cost?",
+     "a": "Prices are the lodge's own 2027 rates in US dollars, before taxes. 2028 rates are about 2 per cent higher. Ask the house for your dates."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
     "stays"
    ],
    "arrivalHubIds": [],
@@ -36223,7 +38173,7 @@
     "couples",
     "family"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Mwiba Airstrip",
@@ -37182,6 +39132,124 @@
    "volumes": [
     "stays",
     "gatherings"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
+   "slug": "napo-wildlife-center",
+   "name": "Napo Wildlife Center",
+   "ledgerId": "STY-2026-000786",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A lodge inside Yasuní National Park, owned and run by the Kichwa Añangu community, on its own blackwater lagoon",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-explorer",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/napo-wildlife-center/rooms/suite-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-extended",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-photography",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/napo-wildlife-center/rooms/standard-cabin-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-birding",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-family",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/napo-wildlife-center/tour-premium"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -0.5244821,
+    "lng": -76.4402203
+   },
+   "airport": "Coca (OCC)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Standard Cabin: 52 square metres, one king bed, private bathroom, mosquito net and a balcony facing the forest.",
+     "Suite: 63 square metres, one king bed, private bathroom, mosquito net and a balcony.",
+     "Both take up to four guests."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Paddled canoe trips on Añangu creek and the lagoon",
+     "The parrot and parakeet clay licks",
+     "The observation towers",
+     "Guided forest walks by day and at night",
+     "A visit with the Kichwa Añangu community",
+     "Birding and photography tours of four to six days"
+    ]
+   },
+   "features": {
+    "paras": [
+     "Community guide and bilingual naturalist guide.",
+     "All meals, river transport from Coca, park entry and the clay licks are part of each tour.",
+     "Satellite Wi-Fi, purified water, boots and ponchos, lounge and bar."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Napo Wildlife Center stands on Añangucocha Lagoon inside Yasuní National Park in the Ecuadorian Amazon. It is owned and managed directly by the Kichwa Añangu community, whose territory this is.",
+    "Every group goes out with a community guide and a bilingual naturalist: by paddled canoe along the creek, up the observation towers, and to the parrot clay licks. The lodge also runs a private Harpy Eagle expedition for no more than six guests."
+   ],
+   "why": [],
+   "facts": {
+    "how_to_get_there": "By river from Coca: the lodge's tours include the boat from Coca to the lodge and back.",
+    "signature_experiences": "The paddle up Añangu creek to the lagoon, the parrot clay licks, and the view from the observation tower.",
+    "who_its_for": "Wildlife travellers and birders who want to stay inside Yasuní at a lodge its own community runs."
+   },
+   "faqs": [
+    {
+     "q": "What is Napo Wildlife Center known for?",
+     "a": "Napo Wildlife Center stands on Añangucocha Lagoon inside Yasuní National Park in the Ecuadorian Amazon. It is owned and managed directly by the Kichwa Añangu community, whose territory this is."
+    },
+    {
+     "q": "What rooms does Napo Wildlife Center have?",
+     "a": "Napo Wildlife Center has two room types: Standard Cabin and Suite."
+    },
+    {
+     "q": "What is there to do at Napo Wildlife Center?",
+     "a": "Paddled canoe trips on Añangu creek and the lagoon; the parrot and parakeet clay licks; the observation towers; guided forest walks by day and at night; a visit with the Kichwa Añangu community; birding and photography tours of four to six days."
+    },
+    {
+     "q": "What does Napo Wildlife Center offer on the property?",
+     "a": "A community guide and a bilingual naturalist guide. All meals, river transport from Coca, park entry and the clay licks are part of each tour. There is satellite Wi-Fi, purified water, boots and ponchos, and a lounge and bar."
+    },
+    {
+     "q": "How do you get to Napo Wildlife Center?",
+     "a": "The nearest airport is Coca (OCC). River transport from Coca is part of each tour."
+    },
+    {
+     "q": "How much does Napo Wildlife Center cost?",
+     "a": "The lodge sells its stays as tours of four to eight days with river transport from Coca, all meals, guides, park entry and the clay licks. It prints no prices. Ask the house for your dates."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-04",
+    "secondary": [
+     "PATH-08"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
    ],
    "arrivalHubIds": [],
    "placeSlug": null
@@ -38610,7 +40678,7 @@
     "honeymoon",
     "family"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -1.702556,
@@ -38722,7 +40790,7 @@
    "bestFor": [
     "family"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -2.461944,
@@ -39034,8 +41102,16 @@
    "category": "lodge",
    "tagline": "Reconnect with yourself in the rainforest, where river sounds, wildlife and Arenal Volcano create the backdrop.",
    "quote": "Reconnect with Yourself!",
-   "hero": null,
-   "gallery": [],
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g6",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g7",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/noah-forest-by-tifakara/g8"
+   ],
    "bestMonths": "December - April ",
    "bestMonthsNote": "December through April brings some of the best conditions for discovering La Fortuna, with sunnier days inviting you into the rainforest, toward Arenal Volcano, across hanging bridges and onto the river. It’s an ideal season for balancing adventure with slower moments, soaking in hot springs, wandering through the gardens, or simply listening to the forest come alive around Noah’s Forest.",
    "bestFor": [
@@ -39973,10 +42049,10 @@
     "conservation",
     "couples"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Mana Main Airstrip",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -40008,6 +42084,7 @@
    ],
    "facts": {
     "best_months": "May to September for cool, clear dry-season days; October for dramatic predator action.",
+    "how_to_get_there": "All flights land at Mana Main Airstrip with a 40-minute game drive transfer to Nyamatusi Camp.",
     "signature_experiences": "Walking safaris, canoeing on the Zambezi and sunsets over the river from camp.",
     "who_its_for": "Travellers who want an uncrowded Mana Pools safari with walking at its heart."
    },
@@ -41029,7 +43106,7 @@
     "couples",
     "luxury"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Athens (ATH)",
@@ -44444,8 +46521,8 @@
    "facts": {
     "best_months": "May to September, the dry season, when animals gather at water and sightings are easier.",
     "how_to_get_there": "Fly into Hoedspruit Eastgate Airport (HDS), about 30 km away, then a 45-minute drive or short transfer flight; Kruger Mpumalanga International (MQP) is an alternative.",
-    "who_its_for": "Honeymooners, ultra-luxury travellers, families wanting a private villa, first-time safari guests and wildlife photographers.",
-    "signature_experiences": "Big Five game drives with a highly qualified guiding team, guided bush walks and bush spa rituals."
+    "signature_experiences": "Big Five game drives with a highly qualified guiding team, guided bush walks and bush spa rituals.",
+    "who_its_for": "Honeymooners, ultra-luxury travellers, families wanting a private villa, first-time safari guests and wildlife photographers."
    },
    "faqs": [
     {
@@ -44848,6 +46925,124 @@
    "arrivalHubIds": [
     "6ae697427ca51cd40af01fc0"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "sacha-lodge",
+   "name": "Sacha Lodge",
+   "ledgerId": "STY-2026-000785",
+   "country": "Ecuador & Galapagos",
+   "countrySlug": "ecuador-galapagos",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "lodge",
+   "tagline": "A rainforest lodge on Pilchicocha Lake in its own 2,000 hectare reserve beside Yasuní, reached by canoe down the Napo",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/lakeside-lounge-aerial",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/lake-walkway",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sacha-lodge/rooms/standard-matrimonial-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/canoe-creek",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/lake-pool-deck",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/ecuador/sacha-lodge/oropendola-restaurant",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sacha-lodge/rooms/suite-2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/sacha-lodge/rooms/standard-twin-1"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Coca (OCC), by a 25 minute flight from Quito",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Standard Matrimonial: a king bed, sound insulation and a private terrace or balcony with a hammock.",
+     "Standard Twin: two full beds, with room for an extra bed.",
+     "Suite: a king bedroom with an open-air living room, set apart from the other rooms.",
+     "Family Cabin: a Suite and a Standard Twin joined, with two bedrooms and a shared living space.",
+     "All rooms have air conditioning, a private bathroom and hot showers."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "The canopy walk above the forest",
+     "The canopy exploration crane",
+     "Canoe trips on the lake and the blackwater creeks",
+     "Forest walks by day and at night",
+     "Birdwatching, with a private birding guide on request",
+     "The butterfly house and the cacao experience"
+    ]
+   },
+   "features": {
+    "paras": [
+     "The Lake Pool, set within Pilchicocha Lake.",
+     "La Balsa, the lakeside restaurant, the open-air Oropendola restaurant, and the bar.",
+     "A native guide and a bilingual guide for every group; groups of six at most.",
+     "Rubber boots and rain ponchos provided. Wi-Fi."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Sacha Lodge sits on Pilchicocha Lake in Ecuador's Amazon, inside a private reserve of 5,000 acres (2,000 hectares) next to Yasuní National Park. The reserve has been protected for more than 30 years. Guests arrive by a 25 minute flight from Quito to Coca and about two hours by motorised canoe along the Napo River.",
+    "Days are spent with a native guide and a bilingual naturalist in groups of no more than six: on the canopy walk, in the canopy crane, by canoe on the blackwater creeks, and at the lake pool, which is set in the lake itself."
+   ],
+   "why": [],
+   "facts": {
+    "how_to_get_there": "Fly 25 minutes from Quito to Coca, then about two hours by motorised canoe along the Napo River. The lodge books the flights and meets you at both airports.",
+    "signature_experiences": "Sunrise from the canopy walk, a silent paddle on a blackwater creek, and a swim in the lake pool.",
+    "who_its_for": "Wildlife travellers, birders and families who want the Amazon with air conditioning and a proper guide."
+   },
+   "faqs": [
+    {
+     "q": "What is Sacha Lodge known for?",
+     "a": "Sacha Lodge sits on Pilchicocha Lake in Ecuador's Amazon, inside a private reserve of 5,000 acres (2,000 hectares) next to Yasuní National Park. The reserve has been protected for more than 30 years."
+    },
+    {
+     "q": "What rooms does Sacha Lodge have?",
+     "a": "Sacha Lodge has four room types: Standard Matrimonial, Standard Twin, Suite and Family Cabin."
+    },
+    {
+     "q": "What is there to do at Sacha Lodge?",
+     "a": "The canopy walk above the forest; the canopy exploration crane; canoe trips on the lake and the blackwater creeks; forest walks by day and at night; birdwatching, with a private birding guide on request; the butterfly house and the cacao experience."
+    },
+    {
+     "q": "What does Sacha Lodge offer on the property?",
+     "a": "The Lake Pool, set within Pilchicocha Lake; La Balsa, the lakeside restaurant, the open-air Oropendola restaurant and the bar; a native guide and a bilingual guide for every group, with groups of six at most; rubber boots and rain ponchos; Wi-Fi."
+    },
+    {
+     "q": "How do you get to Sacha Lodge?",
+     "a": "Guests take a 25 minute flight from Quito to Coca (OCC), then travel about two hours by motorised canoe along the Napo River."
+    },
+    {
+     "q": "How much does Sacha Lodge cost?",
+     "a": "The lodge sells its stays as programmes with all meals, guides and excursions. Its printed 2026 to 2027 prices start at US$1,890 per person in a double for four days and three nights, plus US$275 per person for the Quito to Coca flights. Ask the house for your dates."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-01",
+    "secondary": [
+     "PATH-04"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026, suggested by Claude)",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -45354,7 +47549,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -46630,6 +48825,115 @@
    "placeSlug": null
   },
   {
+   "slug": "secret-bay-dominica",
+   "name": "Secret Bay",
+   "ledgerId": "STY-2026-000777",
+   "country": "Dominica",
+   "countrySlug": "dominica",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Twenty-seven private villas, each with a plunge pool, on a rainforest clifftop above the Caribbean Sea",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/dominica/secret-bay/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/dominica/secret-bay/gwiyavye-lap-pool"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "Douglas-Charles Airport (DOM)",
+   "airportDirections": "Douglas-Charles Airport (DOM) and Canefield Airport are each about an hour's drive. American Airlines flies daily from Miami and United weekly from Newark; there are connections through Antigua, Barbados, St Maarten and San Juan, and a ferry from Guadeloupe, Martinique and St Lucia. Round-trip airport transfers are included.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Mapou Villas, one bedroom",
+     "Ylang Ylang Villas, one bedroom, 2,030 square feet, treehouse style",
+     "Ti-Fèy Villas, one or two bedrooms with a den, up to 2,799 square feet",
+     "Zabuco Villas, one or two bedrooms, up to 4,083 square feet",
+     "Honeymoon Villas, one bedroom, up to 3,303 square feet",
+     "Sizes include indoor and outdoor space"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "27 private villas, each with a plunge pool, a kitchen and a dedicated villa host. A clifftop promontory where the rainforest meets the sea, with secluded beaches below. Zing Zing restaurant, Bwa Denn, and Botanica, the organic garden and chef's table. Gommier Spa, the Bwa Mang Wellness Pavilion and the Gwiyavyé Lap Pool. A Relais & Châteaux member, Green Globe certified, with two Michelin Keys. Round-trip airport transfers, breakfast and a welcome dinner included."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Secret Bay began as a wedding gift: the Venezuelan architect Fruto Vivas drew a house on this clifftop for his daughter Sandra and her husband, Gregor Nassief, who owns it. The villas are built by hand from sustainably sourced hardwood, without heavy machinery, on land of which less than 7 per cent is marked for building.",
+    "Each villa stands alone in the forest with its own plunge pool, open-air shower and kitchen, and a host who looks after it. Kayaks, paddleboards and snorkel gear come with the villa; one of the beaches can only be reached by kayak. The Indian River, Cabrits National Park and Portsmouth's Saturday market are close by."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Villa in the Forest, Above the Sea Secret Bay is for travellers who want a house of their own, a pool, a cook when they ask for one, and Dominica at the foot of the cliff. It takes children and has estates for families."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to Douglas-Charles Airport (DOM), daily from Miami, then about an hour by road. Round-trip transfers are included.",
+    "signature_experiences": "Kayaking to a beach no road reaches, an in-villa cooking class, the Indian River by boat, night snorkelling and a treatment at the Gommier Spa.",
+    "who_its_for": "Couples, honeymooners and families who want a private villa with a plunge pool and a host, and the rainforest outside."
+   },
+   "faqs": [
+    {
+     "q": "How many villas does Secret Bay have?",
+     "a": "27 private villas, each with a plunge pool, in seven types from the one-bedroom Mapou and Ylang Ylang villas to Multi-Villa Estates of up to 6,109 square feet."
+    },
+    {
+     "q": "How do you get to Secret Bay?",
+     "a": "Fly to Douglas-Charles Airport (DOM), with daily flights from Miami and weekly flights from Newark, then about an hour by road. Round-trip airport transfers are included in the rate."
+    },
+    {
+     "q": "How much does Secret Bay cost?",
+     "a": "Standard rates start at US$987 a night, by the resort's own rates page, plus a 20 per cent charge made up of 10 per cent government tax and 10 per cent gratuity. Rates include round-trip airport transfers, a welcome dinner, full breakfast and an Indian River tour. The minimum stay is three nights, five over the festive season."
+    },
+    {
+     "q": "Can children stay at Secret Bay?",
+     "a": "Yes. Children under 16 are welcome in all villas with a signed liability waiver; children aged 3 and under stay and eat free."
+    },
+    {
+     "q": "What is included at Secret Bay?",
+     "a": "Round-trip airport transfers, a welcome dinner, full breakfast, one in-villa breakfast, an Indian River tour and use of kayaks, paddleboards and snorkel gear, with a dedicated villa host."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-07",
+    "secondary": [
+     "PATH-01",
+     "PATH-06"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "approved",
+    "classifiedBy": "James Papagno, 21 Nov 2026",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "segera-retreat",
    "name": "Segera Retreat",
    "ledgerId": "STY-2026-000235",
@@ -47616,7 +49920,7 @@
     "lat": 33.12999,
     "lng": -107.25555
    },
-   "airport": null,
+   "airport": "El Paso International Airport (ELP) and Albuquerque International Sunport (ABQ)",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -48638,7 +50942,7 @@
     "conservation",
     "family"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -50616,7 +52920,7 @@
    "status": "unclassified",
    "statusDate": null,
    "coords": null,
-   "airport": null,
+   "airport": "Borana Airstrip",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -51478,8 +53782,8 @@
    "facts": {
     "best_months": "The warmer months are best for swimming, boating, and enjoying Ibiza’s coast. Shoulder-season travel can suit guests seeking quieter wellness, dining, and cultural experiences.",
     "how_to_get_there": "Fly to Ibiza Airport, then continue by road to Six Senses Ibiza at Xarraca Bay on the island’s northern coast. Confirm private transfer details directly with the property.",
-    "who_its_for": "A strong fit for couples, families, solo travelers, wellness-focused guests, creative travelers, and groups seeking high-end accommodation with private residences or mansions.",
-    "signature_experiences": "RoseBar longevity programs, Six Senses Spa treatments, yoga and meditation, northern-coast boat excursions, organic farm experiences, sustainability visits, farm-to-table dining, and recording studio experiences."
+    "signature_experiences": "RoseBar longevity programs, Six Senses Spa treatments, yoga and meditation, northern-coast boat excursions, organic farm experiences, sustainability visits, farm-to-table dining, and recording studio experiences.",
+    "who_its_for": "A strong fit for couples, families, solo travelers, wellness-focused guests, creative travelers, and groups seeking high-end accommodation with private residences or mansions."
    },
    "faqs": [
     {
@@ -52566,7 +54870,7 @@
    "bestMonths": null,
    "bestMonthsNote": null,
    "bestFor": [],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": null,
@@ -52896,7 +55200,7 @@
     "couples",
     "conservation"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": null,
    "airport": "Victoria Falls Airport (VFA)",
@@ -54106,6 +56410,110 @@
    "placeSlug": null
   },
   {
+   "slug": "sugar-beach-viceroy",
+   "name": "Sugar Beach, A Viceroy Resort",
+   "ledgerId": "STY-2026-000774",
+   "country": "St Lucia",
+   "countrySlug": "st-lucia",
+   "regionSlug": "caribbean-mexico",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "Cottages, villas and beachfront bungalows on the white sand between the Pitons",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/st-lucia/sugar-beach-viceroy/hero",
+   "gallery": [],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "family",
+    "luxury"
+   ],
+   "status": "founder_visited",
+   "statusDate": "2022-05-01",
+   "coords": null,
+   "airport": "Hewanorra International Airport (UVF)",
+   "airportDirections": "The resort runs its own airport desk and offers an expedited arrival service and private Trident Suite airside services; it does not publish drive times.",
+   "founderNote": null,
+   "rooms": {
+    "paras": [],
+    "items": [
+     "Luxury Cottages, with rainforest or sea views",
+     "Luxury Sugar Mills, beneath Gros Piton, with plunge pools",
+     "Luxury Villas, facing the rainforest, the Pitons or the sea",
+     "Luxury Beachfront Bungalows, on the sand, each with a plunge pool",
+     "The Residences, with private pools on large sun terraces",
+     "The Beachfront Collection: three four-bedroom homes",
+     "Spice of Life Estate: nine bedrooms with a 24 hour butler team"
+    ]
+   },
+   "experiences": {
+    "paras": [],
+    "items": []
+   },
+   "features": {
+    "paras": [
+     "More than 100 acres of rainforest between the Pitons. Cottages, Sugar Mills, villas and beachfront bungalows, with butler service. The Residences, three four-bedroom Beachfront Collection homes and the nine-bedroom Spice of Life Estate. The Rainforest Spa and the Sugar Beach Racquet Club. V Team Kids Club for ages 4 to 11, with a club for teens. A 2026 Michelin Key."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "Sugar Beach lies in the Val des Pitons at Soufrière, on more than 100 acres of rainforest that run down to the white sand of Anse des Pitons, with a peak on either side. Its rooms are plantation-style cottages, Sugar Mills below Gros Piton, villas and bungalows on the sand, and select ones have a private plunge pool.",
+    "There is diving and snorkelling from the beach, a chocolate making class, a beach barbecue on Fridays and a spa in the rainforest. Dining runs from Bonté and Saltwood to the Jalousie Grill and the Cane Bar."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "The Beach Between the Peaks Sugar Beach has the white sand of Anse des Pitons, with a Piton on either side, and it takes children. Choose it for a family or a group who want the view from the water's edge, with a villa or a whole estate to themselves."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to Hewanorra (UVF); the resort has its own airport desk and arranges the transfer to Soufrière.",
+    "signature_experiences": "Snorkelling off Anse des Pitons, the chocolate making experience, a sunset cruise below the peaks, the Friday beach barbecue and the Rainforest Spa.",
+    "who_its_for": "Families, couples and groups who want a beach between the Pitons, with a kids club and homes of four to nine bedrooms."
+   },
+   "faqs": [
+    {
+     "q": "Where is Sugar Beach, A Viceroy Resort?",
+     "a": "In the Val des Pitons at Soufrière, on Saint Lucia's southwest coast, on the white sand of Anse des Pitons between the two Pitons."
+    },
+    {
+     "q": "Is Sugar Beach good for families?",
+     "a": "Yes. The V Team Kids Club has a Sugar Club for ages 4 to 11 and a Spice Club for tweens and teens, children under 4 are welcome with an adult, and babysitting can be arranged."
+    },
+    {
+     "q": "Is Sugar Beach all-inclusive?",
+     "a": "Not fully. The resort offers a package that includes daily meals and select drinks."
+    },
+    {
+     "q": "What time are check-in and check-out at Sugar Beach?",
+     "a": "Check-in is 3pm and check-out is 12pm."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [
+     "PATH-01",
+     "PATH-07"
+    ],
+    "setting": null,
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "house draft, for James to approve",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
+   "placeSlug": null
+  },
+  {
    "slug": "sushi-chuma",
    "name": "Sussi & Chuma Lodge, an A&K Sanctuary",
    "ledgerId": "STY-2026-000285",
@@ -54136,7 +56544,7 @@
     "family",
     "conservation"
    ],
-   "status": null,
+   "status": "unclassified",
    "statusDate": null,
    "coords": {
     "lat": -17.740559,
@@ -58013,8 +60421,8 @@
    "facts": {
     "best_months": "October to March, Cape Town's summer season.",
     "how_to_get_there": "Fly into Cape Town International (CPT), about 20 to 25 km away, 20 to 30 minutes by car depending on traffic.",
-    "who_its_for": "Art and design lovers, honeymoon couples and city explorers who want a hotel with strong architecture.",
-    "signature_experiences": "Zeitz MOCAA, the rooftop pool and harbour and Table Mountain views."
+    "signature_experiences": "Zeitz MOCAA, the rooftop pool and harbour and Table Mountain views.",
+    "who_its_for": "Art and design lovers, honeymoon couples and city explorers who want a hotel with strong architecture."
    },
    "faqs": [
     {
@@ -58061,6 +60469,139 @@
     "6ae697512f7e87b5a5f5986c"
    ],
    "placeSlug": null
+  },
+  {
+   "slug": "the-singular-patagonia",
+   "name": "The Singular Patagonia",
+   "ledgerId": "STY-2026-000782",
+   "country": "Chile & Easter Island",
+   "countrySlug": "chile",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 1915 cold storage plant on Última Esperanza Fjord, restored as a 57 room hotel with its engine room intact and Torres del Paine a day trip away",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/lounge-fireplace",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-king-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/trail-lakeside",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/restaurant-kitchen",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-suite-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-twin-1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-suite-3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-king-3"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": {
+    "lat": -51.69278,
+    "lng": -72.533575
+   },
+   "airport": "Puerto Natales Airport (PNT); Punta Arenas Airport (PUQ)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "The Singular King: 45 square metres, one king bed or two twins, fjord-facing windows.",
+     "The Singular Twin: 45 square metres, two double beds.",
+     "The Singular Twin, accessible: 45 square metres, two double beds, laid out for ease of movement.",
+     "The Singular Suite: 70 square metres, one king bed and a separate living area.",
+     "Every room takes two adults and one child. All 57 face the fjord."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Boat trips to the Serrano and Balmaceda glaciers",
+     "Hikes in Sierra Baguales",
+     "Horseback rides across the steppe",
+     "E-biking, kayaking and wildlife watching",
+     "Bilingual guides in English and Spanish"
+    ]
+   },
+   "features": {
+    "paras": [
+     "The Singular Restaurant: contemporary Patagonian cooking under Executive Chef Hernán Basso.",
+     "El Asador: open-fire cooking on an eight metre grill in the plant's former blacksmith's forge, opening 1 December 2026.",
+     "The Singular Bar and a breakfast room over the Señoret Channel.",
+     "Wellness spa for hotel guests: an indoor-outdoor pool over the fjord, dry sauna, hammam, four treatment rooms, a couples' room and a private hydrotherapy bath.",
+     "The engine room, with the cold storage plant's original machinery.",
+     "Wi-Fi in rooms and common areas. No pets."
+    ],
+    "items": []
+   },
+   "onlyHere": [
+    "The Singular Patagonia stands at Puerto Bories, five kilometres from Puerto Natales, inside the former Frigorífico Puerto Bories. The first warehouses, sawmill and pier went up here in 1896, the plant began operating in 1915, and a community of workers and families lived around it for nearly seven decades. The site was declared a National Historic Monument in 1996. A restoration led by Pedro Kovacic ran from 1999 to 2011, with interiors by Enrique Concha & Co, and the hotel opened in December 2011. The brick halls, workshops, pier, smokestacks and the original engine room machinery are still part of the building.",
+    "All 57 rooms and suites face Última Esperanza Fjord, the water Juan Ladrillero sailed and named in 1557."
+   ],
+   "why": [],
+   "facts": {
+    "best_months": "The hotel generally operates September through April.",
+    "how_to_get_there": "Fly to Puerto Natales (PNT) or Punta Arenas (PUQ). Transfers are arranged in advance, shared or private. Shared transfers to and from Puerto Natales are part of the Complete Experience programme.",
+    "signature_experiences": "A boat to the Serrano and Balmaceda glaciers, a day in Torres del Paine, and an evening in the engine room among the original machinery.",
+    "who_its_for": "Travellers who want Torres del Paine by day and a hotel with real history at night. The hotel suggests three to five nights; there is no minimum stay. Families are welcome."
+   },
+   "faqs": [
+    {
+     "q": "What is The Singular Patagonia known for?",
+     "a": "The Singular Patagonia stands at Puerto Bories, five kilometres from Puerto Natales, inside the former Frigorífico Puerto Bories. The plant began operating in 1915 and the site was declared a National Historic Monument in 1996. The hotel opened in December 2011, and the brick halls, pier and original engine room machinery are still part of the building."
+    },
+    {
+     "q": "What rooms does The Singular Patagonia have?",
+     "a": "The Singular Patagonia has four room types: The Singular King, The Singular Twin, an accessible Singular Twin and The Singular Suite."
+    },
+    {
+     "q": "What is there to do at The Singular Patagonia?",
+     "a": "Boat trips to the Serrano and Balmaceda glaciers; hikes in Sierra Baguales; horseback rides across the steppe; e-biking, kayaking and wildlife watching, with bilingual guides in English and Spanish."
+    },
+    {
+     "q": "What does The Singular Patagonia offer on the property?",
+     "a": "The Singular Restaurant, with contemporary Patagonian cooking under Executive Chef Hernán Basso; The Singular Bar and a breakfast room over the Señoret Channel; and a wellness spa for hotel guests with an indoor-outdoor pool over the fjord, dry sauna, hammam and four treatment rooms."
+    },
+    {
+     "q": "How do you get to The Singular Patagonia?",
+     "a": "The nearest airports are Puerto Natales (PNT) and Punta Arenas (PUQ)."
+    },
+    {
+     "q": "How much does The Singular Patagonia cost?",
+     "a": "The hotel prices by date and by programme: Bed & Breakfast, Half Board, or the Complete Experience with all meals, guided excursions and shared transfers from Puerto Natales. Ask the house for your dates."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": "ultima_esperanza_fjord",
+    "intentions": [
+     "heritage",
+     "walking",
+     "glaciers",
+     "wellness"
+    ],
+    "suitability": [
+     "couples",
+     "families"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (22 Nov 2026: 'Suggest best pathway and go do it')",
+    "classifiedAt": "2026-11-22"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [
+    "6ae697449583543efcf27c0b"
+   ],
+   "placeSlug": "patagonia"
   },
   {
    "slug": "the-st-regis-bora-bora-resort",
@@ -58392,7 +60933,28 @@
    ],
    "why": [],
    "facts": {},
-   "faqs": [],
+   "faqs": [
+    {
+     "q": "What is Tierra Atacama known for?",
+     "a": "Tierra Atacama is a lodge in Chile's Atacama Desert that pairs contemporary comfort with traditional desert architecture. Guests explore lunar landscapes, geysers, lagoons and ancient cultural sites, and return each evening to Chilean cooking and quiet wellness spaces."
+    },
+    {
+     "q": "What is there to do at Tierra Atacama?",
+     "a": "Geyser expeditions; salt flat outings; astronomy; horseback riding; volcano exploration; the spa."
+    },
+    {
+     "q": "What does Tierra Atacama offer on the property?",
+     "a": "An all-inclusive lodge; expert-guided desert excursions; Uma Spa; outdoor swimming pools; adobe-inspired architecture; Chilean cuisine."
+    },
+    {
+     "q": "How do you get to Tierra Atacama?",
+     "a": "The recommended arrival airport is El Loa Airport (CJC) in Calama, approximately 100 km and around 1 hour 20 minutes by private transfer. Antofagasta (ANF) is the alternative."
+    },
+    {
+     "q": "When is the best time to visit Tierra Atacama?",
+     "a": "March to May and September to November. Spring and autumn bring comfortable daytime temperatures, cool evenings and excellent visibility for photography and astronomy, without the peak summer heat."
+    }
+   ],
    "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
@@ -58487,8 +61049,33 @@
     }
    ],
    "facts": {},
-   "faqs": [],
-   "reviewed": false,
+   "faqs": [
+    {
+     "q": "What is Tierra Patagonia known for?",
+     "a": "Tierra Patagonia is for travelers who want to experience one of the world's most dramatic landscapes in comfort: adventurers, photographers, couples and anyone seeking a connection to nature."
+    },
+    {
+     "q": "What rooms does Tierra Patagonia have?",
+     "a": "The rooms on file are the Superior Room, Suite and Family Suite."
+    },
+    {
+     "q": "What is there to do at Tierra Patagonia?",
+     "a": "Hiking; horseback riding; wildlife tracking; glacier excursions; the spa; scenic drives."
+    },
+    {
+     "q": "What does Tierra Patagonia offer on the property?",
+     "a": "Views of Torres del Paine, sustainable architecture, guided excursions, a spa overlooking Patagonia and locally inspired cuisine."
+    },
+    {
+     "q": "How do you get to Tierra Patagonia?",
+     "a": "The nearest airport is Punta Arenas (PUQ), approximately a 4.5 hour transfer through Patagonian landscapes. Private transfers are available."
+    },
+    {
+     "q": "When is the best time to visit Tierra Patagonia?",
+     "a": "October to April. Warmer temperatures and longer daylight hours make these months best for hiking, wildlife viewing and exploring Patagonia."
+    }
+   ],
+   "reviewed": true,
    "reserveChild": false,
    "parentSlug": null,
    "engine": null,
@@ -61945,7 +64532,7 @@
     "lat": 36.89142,
     "lng": -104.99111
    },
-   "airport": null,
+   "airport": "Denver International Airport",
    "airportDirections": null,
    "founderNote": null,
    "rooms": {
@@ -62163,6 +64750,90 @@
    "arrivalHubIds": [
     "6ae6974822d90def7dcf0341"
    ],
+   "placeSlug": null
+  },
+  {
+   "slug": "victoria-house",
+   "name": "Victoria House Resort & Spa",
+   "ledgerId": "STY-2026-000781",
+   "country": "Belize",
+   "countrySlug": "belize",
+   "regionSlug": "central-america",
+   "misfiled": null,
+   "category": "resort",
+   "tagline": "A 42-room beach resort on Ambergris Caye, from staterooms and casitas to private villas, at the edge of the Belize Barrier Reef",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/victoria-house/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/victoria-house/coral-suite",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/belize/victoria-house/hibiscus-suite"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "honeymoon",
+    "family",
+    "luxury"
+   ],
+   "status": "unclassified",
+   "statusDate": null,
+   "coords": null,
+   "airport": "San Pedro (SPR), via Belize International (BZE)",
+   "airportDirections": null,
+   "founderNote": null,
+   "rooms": {
+    "paras": [
+     "Staterooms and Studio Rooms: a queen bed, or a queen and a double.",
+     "Palmetto Rooms: a king bed. Casitas: a queen bed.",
+     "Hibiscus, Coral and Tower Suites: a king bed.",
+     "Rainforest Suite: a king bed. Infinity Suites: one bedroom with a king, or two bedrooms for four.",
+     "Luxury Villas and Casa Playa Blanca: two king bedrooms, for four.",
+     "Casa Del Sol: three king bedrooms, for six. Casa Azul: five bedrooms, for ten."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Fishing from the resort",
+     "Mainland days to Maya ruins and caves, and zip lining",
+     "Aerial tours",
+     "Treatments at La Luna Spa"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": []
+   },
+   "onlyHere": [
+    "Victoria House is a 42-room resort on the beach at San Pedro, Ambergris Caye, at the edge of the Belize Barrier Reef. It runs from staterooms, casitas and suites to private villas with their own pools, the largest with five bedrooms. Palmilla Restaurant and Admiral Nelson's Bar are on the property, and La Luna Spa covers 3,500 square feet. The reef, the Great Blue Hole and mainland Maya sites are day trips from the dock."
+   ],
+   "why": [],
+   "facts": {},
+   "faqs": [],
+   "reviewed": false,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-02",
+    "secondary": [],
+    "setting": "ambergris_caye",
+    "intentions": [],
+    "suitability": [
+     "couples",
+     "families",
+     "small_groups"
+    ],
+    "status": "approved",
+    "classifiedBy": "James Papagno (21 Nov 2026)",
+    "classifiedAt": "2026-11-21"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [],
    "placeSlug": null
   },
   {
@@ -65933,8 +68604,8 @@
     "intentions": [],
     "suitability": [],
     "status": "approved",
-    "classifiedBy": "James Papagno (21 Nov 2026, house draft approved)",
-    "classifiedAt": "2026-11-21"
+    "classifiedBy": "James Papagno (23 Nov 2026)",
+    "classifiedAt": "2026-11-23"
    },
    "volumes": [
     "stays",

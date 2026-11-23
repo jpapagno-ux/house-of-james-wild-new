@@ -262,6 +262,7 @@ export const LIVE_ROUTES: { path: string; priority: number; changeFrequency: "da
   { path: "/destinations/asia/indonesia", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/indonesia/raja-ampat", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/asia/indonesia/komodo", priority: 0.8, changeFrequency: "monthly" },
+  { path: "/destinations/asia/indonesia/bali", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/south-america/chile/rapa-nui", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/south-america/chile/atacama", priority: 0.8, changeFrequency: "monthly" },
   { path: "/destinations/south-america/chile/patagonia", priority: 0.8, changeFrequency: "monthly" },

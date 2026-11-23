@@ -175,7 +175,7 @@ old path,new path,why,old title
 /book/nimali-mara,/stays/nimali-mara,booking page -> stay page,Book your stay at Nimali Mara | Wild Earth Stays
 /book/nimali-serengeti,/stays/nimali-serengeti,booking page -> stay page,Book your stay at Nimali Serengeti | Wild Earth Stays
 /book/niyama-island,/stays/niyama-private-islands-maldives,booking page -> stay page,Book your stay at Niyama Island - Maldives  | Wild Earth Stays
-/book/noah-forest-by-tifakara,/destinations/central-america/costa-rica,booking page -> not on the new site yet; country page,Book your stay at Noah Forest by Tifakara | Wild Earth Stays
+/book/noah-forest-by-tifakara,/stays/noah-forest-by-tifakara,booking page -> stay page,Book your stay at Noah Forest by Tifakara | Wild Earth Stays
 /book/nomade-holbox,/stays/nomade-holbox,booking page -> stay page,Book your stay at Nomade Holbox | Wild Earth Stays
 /book/nomade-temple-ibiza,/stays/nomade-temple-ibiza,booking page -> stay page,Book your stay at Nomade Temple Ibiza | Wild Earth Stays
 /book/nomade-temple-madrid,/stays/nomade-temple-madrid,booking page -> stay page,Book your stay at Nomade Temple Madrid | Wild Earth Stays
@@ -400,7 +400,7 @@ old path,new path,why,old title
 /country/spain-ibiza,/destinations/europe/spain,country page,
 /country/spain-isla-mallorca,/destinations/europe/spain,country page,
 /country/st-barths,/destinations/caribbean-mexico,region page (st-barths country page not built yet),
-/country/st-lucia,/destinations/caribbean-mexico,region page (st-lucia country page not built yet),
+/country/st-lucia,/destinations/caribbean-mexico/st-lucia,country page,
 /country/switzerland,/destinations/europe/switzerland,country page,
 /country/tahiti,/destinations/oceania/tahiti,country page,
 /country/tanzania,/destinations/africa/tanzania,country page,
@@ -657,7 +657,7 @@ old path,new path,why,old title
 /property/nimali-serengeti,/stays/nimali-serengeti,stay page,Nimali Serengeti | Luxury Stays in Tanzania | Wild Earth Stays
 /property/niyama-private-islands-maldives,/stays/niyama-private-islands-maldives,stay page,Niyama Island - Maldives  | Luxury Stays in Maldives | Wild Earth Stays
 /property/no-1-pery-square-limerick,/stays/no-1-pery-square-limerick,stay page,"No.1 Pery Square, Limerick | Luxury Stays in Ireland | Wild Earth Stays"
-/property/noah-forest-by-tifakara,/destinations/central-america/costa-rica,not on the new site yet; country page,Noah Forest by Tifakara | Luxury Stays in Costa Rica | Wild Earth Stays
+/property/noah-forest-by-tifakara,/stays/noah-forest-by-tifakara,stay page,Noah Forest by Tifakara | Luxury Stays in Costa Rica | Wild Earth Stays
 /property/nomade-holbox,/stays/nomade-holbox,stay page,Nomade Holbox | Luxury Stays in Mexico | Wild Earth Stays
 /property/nomade-temple-ibiza,/stays/nomade-temple-ibiza,stay page,Nomade Temple Ibiza | Luxury Stays in Spain-Ibiza | Wild Earth Stays
 /property/nomade-temple-madrid,/stays/nomade-temple-madrid,stay page,Nomade Temple Madrid | Luxury Stays in Spain | Wild Earth Stays
@@ -1420,12 +1420,12 @@ old path,new path,why,old title
 /stay/no-1-pery-square-limerick-club-room,/stays/no-1-pery-square-limerick,room of no-1-pery-square-limerick -> stay page,"Club Room at No.1 Pery Square, Limerick | Wild Earth Stays"
 /stay/no-1-pery-square-limerick-period-room,/stays/no-1-pery-square-limerick,room of no-1-pery-square-limerick -> stay page,"Period Room at No.1 Pery Square, Limerick | Wild Earth Stays"
 /stay/no-1-pery-square-limerick-the-townhouse,/stays/no-1-pery-square-limerick,room of no-1-pery-square-limerick -> stay page,"The Townhouse at No.1 Pery Square, Limerick | Wild Earth Stays"
-/stay/noah-forest-by-tifakara-deluxe-quad-bungalow-with-spa,/destinations/central-america/costa-rica,room of noah-forest-by-tifakara -> not on the new site yet; country page,Deluxe Quad Bungalow with Spa at Noah Forest by Tifakara | Wild Earth Stays
-/stay/noah-forest-by-tifakara-garden-deluxe-bungalow-with-spa,/destinations/central-america/costa-rica,room of noah-forest-by-tifakara -> not on the new site yet; country page,Garden Deluxe Bungalow with Spa at Noah Forest by Tifakara | Wild Earth Stays
-/stay/noah-forest-by-tifakara-garden-hideaway-villa,/destinations/central-america/costa-rica,room of noah-forest-by-tifakara -> not on the new site yet; country page,Garden Hideaway Villa at Noah Forest by Tifakara | Wild Earth Stays
-/stay/noah-forest-by-tifakara-rainbow-bass-villa,/destinations/central-america/costa-rica,room of noah-forest-by-tifakara -> not on the new site yet; country page,Rainbow Bass Villa at Noah Forest by Tifakara | Wild Earth Stays
-/stay/noah-forest-by-tifakara-riverside-deluxe-bungalow-with-spa,/destinations/central-america/costa-rica,room of noah-forest-by-tifakara -> not on the new site yet; country page,Riverside Deluxe Bungalow with Spa at Noah Forest by Tifakara | Wild Earth Stays
-/stay/noah-forest-by-tifakara-riverside-hideaway-villa,/destinations/central-america/costa-rica,room of noah-forest-by-tifakara -> not on the new site yet; country page,Riverside Hideaway Villa at Noah Forest by Tifakara | Wild Earth Stays
+/stay/noah-forest-by-tifakara-deluxe-quad-bungalow-with-spa,/stays/noah-forest-by-tifakara,room of noah-forest-by-tifakara -> stay page,Deluxe Quad Bungalow with Spa at Noah Forest by Tifakara | Wild Earth Stays
+/stay/noah-forest-by-tifakara-garden-deluxe-bungalow-with-spa,/stays/noah-forest-by-tifakara,room of noah-forest-by-tifakara -> stay page,Garden Deluxe Bungalow with Spa at Noah Forest by Tifakara | Wild Earth Stays
+/stay/noah-forest-by-tifakara-garden-hideaway-villa,/stays/noah-forest-by-tifakara,room of noah-forest-by-tifakara -> stay page,Garden Hideaway Villa at Noah Forest by Tifakara | Wild Earth Stays
+/stay/noah-forest-by-tifakara-rainbow-bass-villa,/stays/noah-forest-by-tifakara,room of noah-forest-by-tifakara -> stay page,Rainbow Bass Villa at Noah Forest by Tifakara | Wild Earth Stays
+/stay/noah-forest-by-tifakara-riverside-deluxe-bungalow-with-spa,/stays/noah-forest-by-tifakara,room of noah-forest-by-tifakara -> stay page,Riverside Deluxe Bungalow with Spa at Noah Forest by Tifakara | Wild Earth Stays
+/stay/noah-forest-by-tifakara-riverside-hideaway-villa,/stays/noah-forest-by-tifakara,room of noah-forest-by-tifakara -> stay page,Riverside Hideaway Villa at Noah Forest by Tifakara | Wild Earth Stays
 /stay/nomade-holbox-beachfront-treehouse,/stays/nomade-holbox,room of nomade-holbox -> stay page,Beachfront Treehouse at Nomade Holbox | Wild Earth Stays
 /stay/nomade-holbox-jungle-treehouse,/stays/nomade-holbox,room of nomade-holbox -> stay page,Jungle Treehouse at Nomade Holbox | Wild Earth Stays
 /stay/nomade-holbox-moon-temple-room,/stays/nomade-holbox,room of nomade-holbox -> stay page,Moon Temple Room at Nomade Holbox | Wild Earth Stays

@@ -90,9 +90,12 @@ export function RequestForm({ slug, name, path, rooms }: { slug: string; name: s
   if (state === "sent" || state === "preview") {
     return (
       <div role="status" className="border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-crimson)] bg-white px-5 py-6 md:px-7">
-        <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-house">Request received</p>
+        <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-house">{state === "sent" ? "Request received" : "Not sent yet"}</p>
         <p className="font-display text-[26px] leading-tight text-graphite mt-2">{name}, {say(t.arrive)} to {say(t.depart)}</p>
-        <p className="mt-3 text-[14.5px] leading-relaxed text-stone-text">{state === "sent" ? "The house confirms with the property and writes back with the rate, the taxes and what is included. Nothing is charged and no room is held yet." : "This preview does not send email yet. To reach the house now, call 1.800.419.7000."}</p>
+        <p className="mt-3 text-[14.5px] leading-relaxed text-stone-text">{state === "sent" ? "The house confirms with the property and writes back with the rate, the taxes and what is included. Nothing is charged and no room is held yet." : "Your request was not delivered: the house inbox is not connected to this form yet. Please send it by email with the button below, or call 1.800.419.7000."}</p>
+        {state === "preview" && (
+          <a className="mt-5 ledger-btn ledger-btn--house justify-center" href={`mailto:hello@jameswildco.com?subject=${encodeURIComponent(`Request these dates: ${name}`)}&body=${encodeURIComponent(`${name}${t.room ? `, ${t.room}` : ""}\n${say(t.arrive)} to ${say(t.depart)} (${n} ${n === 1 ? "night" : "nights"})\n${t.adults} ${t.adults === 1 ? "adult" : "adults"}${t.children ? `, ${t.children} ${t.children === 1 ? "child" : "children"}` : ""}\n\nFrom: ${who.name.trim()} (${who.email.trim()})`)}`}>Email this request to the house</a>
+        )}
       </div>
     );
   }

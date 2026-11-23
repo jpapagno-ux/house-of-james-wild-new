@@ -30,6 +30,8 @@
   everywhere"): an occasional tan panel, tag or accent is fine; never the ground of every section or page.
 - Media: one Cloudinary library for every site; rights in structured metadata, one copy per
   image, folders = public_id path (see `docs/brand-colours.md`, "Media").
+- No hare in the house watercolours (James, 23 Nov 2026): sign-in trails, Europe plates, the founder's sketchbook,
+  guide and voyage plates and the email header show the place only. Do not paint the hare or Iggi into new plates.
 - Full rule: `docs/brand-colours.md`.
 
 ## Sources (James, 31 Oct 2026)
@@ -70,3 +72,19 @@
 - No Middle East stays, pages or maps (e.g. UAE, Oman, Jordan, Saudi Arabia, Qatar, Israel). Turkey may be added later.
 - Egypt and Morocco are Africa, not the Middle East, and can be sold.
 - No Malawi (James, 31 Oct 2026). Ethiopia is a future country (Lale's Camp held).
+
+## Stay template, locked (James, 22 Nov 2026: "fix this as the template and lock in the template")
+- Stays listed in `lib/journal-style/template-stays.json` render the locked layout, in this order: full-screen hero (film
+  where filed) with the pathway colour rising behind the title and the pathway stamp in white, legible on phone and
+  desktop; Why We Added It to the Portfolio (italic serif intro, reasons folded, no boxed lines); a photo chapter; rooms
+  as swipe cards with filed prices; a photo chapter; What You Can Expect (experiences and features, once); offers; Iggi in
+  his card, above the map; map; How to Reserve (no sample quote; one line for the host call); questions; the pathway.
+- Say each thing once. One house icon and one heading style per section. No advisor line or pathway chips under the hero.
+- New stays join by adding their slug to that file. Change the template only when James asks.
+- No vertical lines (James, 23 Nov 2026: "I do not want any vertical lines on the site anywhere"): no accent bar beside
+  text and no column dividers on public pages; separate with space and horizontal hairlines. `app/globals.css` removes
+  them site-wide (desks, tables and form steppers excepted); do not add new ones. Scroll effects only where they help.
+- Phones: How to Reserve is the request form only; the sticky bar carries the price and Check dates.
+- Search opens to the box alone: recent items or three starting points, nothing else before typing.
+- Check availability shows only on stays listed in `lib/booking-live/rate-card-stays.json` (a Published rate card in
+  Booking Live). Add the slug as the last step of `docs/booking-live/RATE-CARD-PUSH.md`.

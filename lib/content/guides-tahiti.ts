@@ -36,7 +36,7 @@ export const TAHITI_GUIDES: Record<string, Guide> = {
     h1: "Taha'a",
     tagline: "One lagoon with Raiatea, a coral garden between two motu, and no airport at all",
     slides: [
-      { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/destinations/tahiti/plates/tahaa-coral-garden-snorkel-hares", alt: "Watercolour: two hares, husband and wife, snorkelling hand in hand over the Coral Garden of Taha'a, Bora Bora on the horizon", credit: "Watercolour, James Wild & Co" },
+      { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_2560/q_auto:good/f_jpg/jwco/destinations/tahiti/plates/tahaa-coral-garden-plain", alt: "Watercolour: reef fish over the Coral Garden of Taha'a, a motu and its palms above the waterline", credit: "Watercolour, James Wild & Co" },
       { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-01", alt: "Vahine Private Island on its motu in the Taha'a lagoon", credit: "Photograph courtesy of Vahine Private Island, Pearl Resorts of Tahiti" },
       { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-02", alt: "Vahine Private Island on its motu in the Taha'a lagoon", credit: "Photograph courtesy of Vahine Private Island, Pearl Resorts of Tahiti" },
       { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/gatherings/vahine-private-island-tahaa/vh-03", alt: "Vahine Private Island on its motu in the Taha'a lagoon", credit: "Photograph courtesy of Vahine Private Island, Pearl Resorts of Tahiti" },

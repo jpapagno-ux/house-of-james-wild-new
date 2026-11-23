@@ -1,4 +1,5 @@
 "use client";
+import RATE_CARD_STAYS from "@/lib/booking-live/rate-card-stays.json";
 import Link from "next/link";
 import { CalendarSearch, MessageCircle } from "lucide-react";
 import { FLAGS } from "@/lib/booking-live/flags";
@@ -12,7 +13,7 @@ export default function StayActions({ slug, name }: { slug: string; name: string
   return (
     <div className="pt-4 flex flex-wrap items-center gap-3">
       <SaveToFolio slug={slug} name={name} inline />
-      {FLAGS.quotes && (
+      {FLAGS.quotes && (RATE_CARD_STAYS.stays as string[]).includes(slug) && (
         <>
           <Link href={`/booking/property/${slug}`} className="ledger-btn"><CalendarSearch className="w-4 h-4" strokeWidth={1.5} /> Check Availability</Link>
           <Link href={`/plan?trip=${encodeURIComponent(name)}`} className="ledger-btn"><MessageCircle className="w-4 h-4" strokeWidth={1.5} /> Connect With an Advisor</Link>

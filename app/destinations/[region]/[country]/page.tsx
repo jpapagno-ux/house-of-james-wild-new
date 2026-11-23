@@ -13,6 +13,8 @@ import { COUNTRY_NOTES } from "@/lib/content/place-notes";
 import { countryCounts, isResidence } from "@/lib/content/ledger-counts";
 import { RESERVES } from "@/lib/content/reserves";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import FieldNoteSet from "@/components/field-notes/FieldNoteSet";
+import { FIELD_NOTES, COUNTRY_FIELD_NOTES } from "@/lib/field-notes/notes";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
 import AdvisorChip from "@/components/advisor/AdvisorChip";
@@ -429,6 +431,14 @@ export default async function CountryPage({ params }: { params: Promise<{ region
               <blockquote className="ledger-display italic text-2xl md:text-4xl leading-snug">{c.quote.text}</blockquote>
               <p className="ledger-hand text-3xl ledger-crimson mt-5">— James</p>
             </Reveal>
+          )}
+
+          {(COUNTRY_FIELD_NOTES[c.slug] ?? []).length > 0 && (
+            <section id="field-notes" className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="field-notes-heading">
+              <p className="ledger-eyebrow ledger-crimson">From the field</p>
+              <h2 id="field-notes-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-8">What Lives in {c.name}?</h2>
+              <FieldNoteSet notes={COUNTRY_FIELD_NOTES[c.slug].map((id) => FIELD_NOTES[id])} />
+            </section>
           )}
 
           <section id="story" className="mt-20 md:mt-28 border-t ledger-rule pt-10 space-y-16" aria-label={`${c.name}, the story`}>

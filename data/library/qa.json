@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-21",
+ "checkedOn": "2026-11-23",
  "rows": [
   {
    "stay_id": "6afcd60dd016b84dcfe94ea1",
@@ -44,6 +44,14 @@
    "missing": [
     "coordinates"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6b0328dd4b936b3cb0cf0eea",
+   "slug": "aguas-arriba-lodge",
+   "name": "Aguas Arriba Lodge",
+   "country": "Argentina",
+   "missing": [],
    "released": true
   },
   {
@@ -632,6 +640,14 @@
    "released": true
   },
   {
+   "stay_id": "6b0328dd4b936b3cb0cf0eeb",
+   "slug": "bahia-bustamante-lodge",
+   "name": "Bahía Bustamante Lodge",
+   "country": "Argentina",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff8cd",
    "slug": "baines-lodge",
    "name": "Baine's Lodge",
@@ -775,6 +791,16 @@
    "name": "Tierra Atacama",
    "country": "Chile & Easter Island",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b01f54b01813f7bd5d8dca9",
+   "slug": "belmond-cap-juluca",
+   "name": "Cap Juluca, A Belmond Hotel",
+   "country": "Anguilla",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {
@@ -937,6 +963,16 @@
    "stay_id": "6a9c3ddc48b7e640309dbc23",
    "slug": "blue-reef",
    "name": "Blue Reef Beach Resort",
+   "country": "Belize",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6b0242f45f0faf0abe50448d",
+   "slug": "blue-reef-island",
+   "name": "Blue Reef Island",
    "country": "Belize",
    "missing": [
     "coordinates"
@@ -1373,6 +1409,14 @@
    "missing": [
     "coordinates"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6b031a35bb690547f6cbc0b4",
+   "slug": "chez-georges",
+   "name": "Chez Georges",
+   "country": "Brazil",
+   "missing": [],
    "released": true
   },
   {
@@ -2004,6 +2048,14 @@
    "released": true
   },
   {
+   "stay_id": "6b0311d834535feda16f66ad",
+   "slug": "fazenda-moreias",
+   "name": "Fazenda Moréias",
+   "country": "Brazil",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff90d",
    "slug": "feline-fields-lodge",
    "name": "Feline Fields Lodge",
@@ -2019,6 +2071,14 @@
    "missing": [
     "coordinates"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6b031a35bb690547f6cbc0b6",
+   "slug": "felissimo-exclusive-hotel",
+   "name": "Felissimo Exclusive Hotel",
+   "country": "Brazil",
+   "missing": [],
    "released": true
   },
   {
@@ -2149,6 +2209,24 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6b02f50a0a90b40d2a6e58dd",
+   "slug": "futangue-hotel-spa",
+   "name": "Futangue Hotel & Spa",
+   "country": "Chile & Easter Island",
+   "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b0242f45f0faf0abe50448b",
+   "slug": "gaia-riverlodge",
+   "name": "Gaïa Riverlodge",
+   "country": "Belize",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a89a1bfe6fc35d44131037f",
@@ -2325,6 +2403,16 @@
    "slug": "hacienda-na-xamena",
    "name": "Hacienda Na Xamena",
    "country": "Spain-Ibiza",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6b0242f45f0faf0abe50448c",
+   "slug": "hamanasi",
+   "name": "Hamanasi Adventure & Dive Resort",
+   "country": "Belize",
    "missing": [
     "coordinates"
    ],
@@ -2574,6 +2662,14 @@
    "released": false
   },
   {
+   "stay_id": "6b0305736bc386f080df7815",
+   "slug": "iguana-crossing",
+   "name": "Iguana Crossing Boutique Hotel",
+   "country": "Ecuador & Galapagos",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a899f0e94aa52a9fb36e1a3",
    "slug": "iguazu",
    "name": "Iguazu",
@@ -2755,6 +2851,16 @@
    "released": true
   },
   {
+   "stay_id": "6b02038c25d4afc157b63fbf",
+   "slug": "jade-mountain",
+   "name": "Jade Mountain",
+   "country": "St Lucia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a9c3ddc48b7e640309dbc21",
    "slug": "jaguar-reef-lodge",
    "name": "The Lodge at Jaguar Reef",
@@ -2814,6 +2920,16 @@
    "slug": "joali-being",
    "name": "JOALI BEING",
    "country": "Maldives",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
+   "stay_id": "6b02054b72708caa6a5a7fdb",
+   "slug": "jungle-bay-dominica",
+   "name": "Jungle Bay Dominica",
+   "country": "Dominica",
    "missing": [
     "coordinates"
    ],
@@ -3264,6 +3380,14 @@
    "released": true
   },
   {
+   "stay_id": "6b031a35bb690547f6cbc0b5",
+   "slug": "la-ferme-de-georges",
+   "name": "La Ferme de Georges",
+   "country": "Brazil",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff93c",
    "slug": "la-residence",
    "name": "La Residence",
@@ -3298,6 +3422,18 @@
     "coordinates"
    ],
    "released": true
+  },
+  {
+   "stay_id": "6b02038c25d4afc157b63fc1",
+   "slug": "ladera-resort",
+   "name": "Ladera Resort",
+   "country": "St Lucia",
+   "missing": [
+    "coming_soon",
+    "hero_photo",
+    "coordinates"
+   ],
+   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff9f8",
@@ -3579,6 +3715,14 @@
    "released": true
   },
   {
+   "stay_id": "6b0305736bc386f080df7814",
+   "slug": "luna-volcan",
+   "name": "Luna Volcán Adventure Spa",
+   "country": "Ecuador & Galapagos",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6afd84a8d5520df565f16719",
    "slug": "macakizi",
    "name": "Maçakızı",
@@ -3659,6 +3803,14 @@
    "missing": [
     "coordinates"
    ],
+   "released": true
+  },
+  {
+   "stay_id": "6b02f50a0a90b40d2a6e58de",
+   "slug": "mashpi-lodge",
+   "name": "Mashpi Lodge",
+   "country": "Ecuador & Galapagos",
+   "missing": [],
    "released": true
   },
   {
@@ -3896,6 +4048,14 @@
    "released": true
   },
   {
+   "stay_id": "6b0305736bc386f080df7813",
+   "slug": "napo-wildlife-center",
+   "name": "Napo Wildlife Center",
+   "country": "Ecuador & Galapagos",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff960",
    "slug": "napo-wildlife-lodge",
    "name": "Napo Wildlife Lodge",
@@ -4048,9 +4208,7 @@
    "slug": "noah-forest-by-tifakara",
    "name": "Noah's Forest by Tifakara",
    "country": "Costa Rica",
-   "missing": [
-    "hero_photo"
-   ],
+   "missing": [],
    "released": true
   },
   {
@@ -4651,6 +4809,16 @@
    "released": true
   },
   {
+   "stay_id": "6b0305736bc386f080df7812",
+   "slug": "sacha-lodge",
+   "name": "Sacha Lodge",
+   "country": "Ecuador & Galapagos",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6af79dbdea2cf40375d35109",
    "slug": "sal-salis",
    "name": "Sal Salis Ningaloo Reef",
@@ -4814,6 +4982,16 @@
     "coordinates"
    ],
    "released": false
+  },
+  {
+   "stay_id": "6b02054b72708caa6a5a7fdc",
+   "slug": "secret-bay-dominica",
+   "name": "Secret Bay",
+   "country": "Dominica",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff99a",
@@ -5459,6 +5637,16 @@
    "released": true
   },
   {
+   "stay_id": "6b02038c25d4afc157b63fc0",
+   "slug": "sugar-beach-viceroy",
+   "name": "Sugar Beach, A Viceroy Resort",
+   "country": "St Lucia",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6a85bfb37f6eb35689bff9cc",
    "slug": "sushi-chuma",
    "name": "Sussi & Chuma Lodge, an A&K Sanctuary",
@@ -5884,6 +6072,14 @@
    "released": true
   },
   {
+   "stay_id": "6b02d5f2fc63ebceb6c2048c",
+   "slug": "the-singular-patagonia",
+   "name": "The Singular Patagonia",
+   "country": "Chile & Easter Island",
+   "missing": [],
+   "released": true
+  },
+  {
    "stay_id": "6ae8ef16d685943e616492bd",
    "slug": "the-st-regis-bora-bora-resort",
    "name": "The St. Regis Bora Bora Resort",
@@ -6269,6 +6465,16 @@
    "name": "Viceroy Bali Ubud's Sanctuary",
    "country": "Indonesia",
    "missing": [],
+   "released": true
+  },
+  {
+   "stay_id": "6b0242f45f0faf0abe50448e",
+   "slug": "victoria-house",
+   "name": "Victoria House Resort & Spa",
+   "country": "Belize",
+   "missing": [
+    "coordinates"
+   ],
    "released": true
   },
   {

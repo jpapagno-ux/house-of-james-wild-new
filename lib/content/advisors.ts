@@ -75,7 +75,7 @@ export type AdvisorStory = {
   ledgerIds: string[]; // Ledger records the story touches (a stay, a ship)
   photos: { url: string; alt: string; credit: string; w: number; h: number }[];
   journalSlug?: string; // the long version, once it is in the Journal
-  plates?: { url: string; alt: string }[]; // the hare watercolours of this trip (James, 18 Nov 2026: only beside their stories)
+  plates?: { url: string; alt: string }[]; // the watercolours of this trip (James, 18 Nov 2026: only beside their stories)
 };
 
 // James and Anthony, Raja Ampat aboard Aliikai, 3 to 14 Nov 2024 (James): on both of their pages.
@@ -84,8 +84,8 @@ const RAJA_AMPAT_2024: AdvisorStory = {
   line: "Anthony and James sailed Raja Ampat aboard the yacht Aliikai, 3 to 14 November 2024.",
   ledgerIds: ["VSL-2026-000004"],
   plates: [
-    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-phinisi-father-son-drone", alt: "Watercolour: two hares, a father and his son, on the bow of a phinisi among the karsts of Raja Ampat, the son flying a drone" },
-    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-manta-dive-father-son", alt: "Watercolour: a father and son hare diving a Raja Ampat reef as two manta rays glide overhead" },
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-phinisi-plain", alt: "Watercolour: a phinisi under sail among the karsts of Raja Ampat" },
+    { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1200/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-manta-reef-plain", alt: "Watercolour: two manta rays gliding over a Raja Ampat reef" },
   ],
   photos: [
     { url: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto,c_limit,w_1600/jwco/advisors/anthony-papagno/stories/indonesia-2024/raja-ampat-2024-beach", alt: "Anthony and James Papagno on a white sand beach in Raja Ampat at dusk, with Raja Ampat 2024 written in the sand", credit: "Photograph, James Wild & Co", w: 1600, h: 900 },
@@ -117,7 +117,8 @@ const CARDS: Advisor[] = [
     desk: {
       adv: "ADV-1982-000001", sample: false, since: 1982, joined: 2026, agency: "James Wild & Co", base: "Miami, Florida", languages: ["English"],
       volumes: ["safaris", "stays", "voyages", "gatherings", "overland", "europe"],
-      countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah"],
+      // Costa Rica, the Bahamas and Panama added at James's word (21 Nov 2026: "Yes it is with Bahamas and Panama and many other places").
+      countries: ["south-africa", "botswana", "tanzania", "kenya", "zambia", "indonesia", "tahiti", "mexico", "utah", "costa-rica", "bahamas", "panama"],
       // Gold Certified Tahiti Specialist (Tahiti Tourisme's Tahiti Specialist Program, James, 2 Nov 2026; profile
       // URL to follow, so no link yet); surfing Tahiti since May 1996 (James, 15 Nov 2026).
       specialties: ["First safaris", "Private reserves", "Small ships & sailing yachts", "Islands & reefs", "Family gatherings", "Routes by road", "Gold Certified Tahiti Specialist"],

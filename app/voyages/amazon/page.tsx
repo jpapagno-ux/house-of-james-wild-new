@@ -1,4 +1,7 @@
 import VoyageHub from "@/components/ships/VoyageHub";
+import { HubSection } from "@/components/hub/Hub";
+import FieldNoteSet from "@/components/field-notes/FieldNoteSet";
+import { FIELD_NOTES, AMAZON_HUB_NOTES } from "@/lib/field-notes/notes";
 import { watersHub } from "@/lib/content/ships/hubs";
 import { buildMetadata } from "@/lib/seo";
 
@@ -7,6 +10,13 @@ import { buildMetadata } from "@/lib/seo";
 const H = watersHub("amazon");
 export const metadata = buildMetadata({ title: "Small-Ship Amazon River Cruises", description: `Small-ship Amazon river cruises in Peru, Ecuador and Brazil: andBeyond Amazon Explorer, Aria Amazon, Delfin III, Anakonda and MV Premium, with routes and fares.`, path: H.path, image: H.cards[0]?.image ?? undefined });
 
+
 export default function Page() {
-  return <VoyageHub {...H} />;
+  return (
+    <VoyageHub {...H} after={
+      <HubSection eyebrow="From the river" title="What Lives in These Waters?" id="field-notes-h">
+        <FieldNoteSet notes={AMAZON_HUB_NOTES.map((id) => FIELD_NOTES[id])} />
+      </HubSection>
+    } />
+  );
 }

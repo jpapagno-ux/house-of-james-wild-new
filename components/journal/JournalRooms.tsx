@@ -4,7 +4,7 @@ import Ticket from "./Ticket";
 
 // JWC-STYLE-01, Stage 4. Rooms as taped tickets, then the rate ledger. Every figure is passed in already formatted
 // from the site's rate data (lib/journal-style/stay.ts); a room with no rate prints no price.
-export type RoomRow = { name: string; sleeps: number | null; /** null: no rate on file, the ticket prints "Rate on enquiry" */ list: string | null; now: string | null; facts?: string[]; lede?: string | null; features?: string[]; flag?: string; photo?: { url: string; alt: string } | null; /** the ticket's action (the room pick); a plain link to the reserve section when absent */ action?: ReactNode };
+export type RoomRow = { name: string; sleeps: number | null; /** null: no rate on file, the ticket prints "Rate on enquiry" */ list: string | null; now: string | null; /** this room's own basis line (a hotel-published price); the page basis otherwise */ basis?: string; facts?: string[]; lede?: string | null; features?: string[]; flag?: string; photo?: { url: string; alt: string } | null; /** the ticket's action (the room pick); a plain link to the reserve section when absent */ action?: ReactNode };
 type Props = {
   no: string;
   lede?: string | null;
@@ -15,6 +15,8 @@ type Props = {
   promo?: string | null;
   /** The provenance line under the ledger: dates read for and the day read. */
   footnote: string;
+  /** Provenance of hotel-published prices, printed under the tickets when there is no rate ledger. */
+  note?: string | null;
   reserveHref: string;
   aside?: ReactNode;
   /** The dates bar, above the tickets. */
@@ -23,8 +25,9 @@ type Props = {
   photos?: ReactNode;
 };
 
-export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, reserveHref, aside, bar, photos }: Props) {
+export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, note, reserveHref, aside, bar, photos }: Props) {
   const priced = rooms.filter((r) => r.list !== null);
+  const ledger = basis ? priced : [];
   return (
     <section id="rooms" aria-label={priced.length ? "Rooms and rates" : "Rooms"} className="bg-white">
       <SectionHead no={no} label={priced.length ? "Rooms and rates" : "Rooms"} title={priced.length ? "Where You'll Sleep, and What It Costs" : "Where You'll Sleep"} lede={lede} />
@@ -48,7 +51,7 @@ export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, 
                 {r.now && <s className="font-mono text-[12px] text-stone-text">{r.list}</s>}
                 <span className="font-display text-[26px] leading-none text-house">{r.now ?? r.list}</span>
               </p>
-              <p className="mt-1.5 text-[12px] text-stone-text">{basis}</p>
+              <p className="mt-1.5 text-[12px] text-stone-text">{r.basis ?? basis}</p>
             </>}
             action={r.action ?? <a href={reserveHref} className="house-chip house-chip--primary !px-4 !py-2.5 font-semibold !text-[10.5px] tracking-[0.2em] uppercase">Check dates</a>} />
         ))}
@@ -56,7 +59,9 @@ export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, 
       </div>
       {photos && <p className="mt-6">{photos}</p>}
 
-      {priced.length > 0 && <div className="mt-14">
+      {note && priced.length > 0 && <p className="mt-6 max-w-3xl text-[12.5px] leading-relaxed text-stone-text">{note}</p>}
+
+      {ledger.length > 0 && <div className="mt-14">
         <p className="font-mono text-[10px] tracking-[0.24em] uppercase text-stone-text">The rate ledger · {basis.split(" · ")[0]}</p>
         <div className="mt-3 overflow-x-auto border border-[color:var(--jw-hairline)] border-l-2 border-l-[color:var(--jw-crimson)]">
           <table className="w-full min-w-[560px] border-collapse text-left">
@@ -70,7 +75,7 @@ export default function JournalRooms({ no, lede, rooms, basis, promo, footnote, 
               </tr>
             </thead>
             <tbody>
-              {priced.map((r, i) => (
+              {ledger.map((r, i) => (
                 <tr key={r.name} className="border-t border-[color:var(--jw-hairline)]">
                   <td className="px-4 py-3.5 font-mono text-[11px] text-house">{String(i + 1).padStart(2, "0")}</td>
                   <th scope="row" className="px-4 py-3.5 font-display font-medium text-[19px] text-graphite">{r.name}</th>

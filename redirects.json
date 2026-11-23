@@ -223,5 +223,10 @@
     "source": "/stays/beyond-lake-serengeti-under-canvas",
     "destination": "/destinations/africa/tanzania",
     "permanent": false
+  },
+  {
+    "source": "/stays/blue-reef",
+    "destination": "/stays/blue-reef-island",
+    "permanent": false
   }
 ]

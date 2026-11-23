@@ -144,12 +144,12 @@ export function aliikaiExtra(): ShipExtra {
 }
 
 
-// James and Anthony sailed her, 3 to 14 Nov 2024 (James). Their hare watercolour sits behind the note as a soft blend:
+// James and Anthony sailed her, 3 to 14 Nov 2024 (James). The watercolour of that voyage sits behind the note as a soft blend:
 // the only place outside their two profiles where the Raja Ampat watercolours appear (James, 18 Nov 2026).
 function SailedBy() {
   return (
     <section aria-labelledby="sailed-by" className="relative mt-10 overflow-hidden border ledger-border bg-[#F4F2EF]">
-      <Image src="https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1800/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-phinisi-father-son-drone" alt="" aria-hidden="true" fill sizes="100vw" className="object-cover object-right opacity-90 mix-blend-multiply" />
+      <Image src="https://res.cloudinary.com/jhlnq5h5/image/upload/c_limit,w_1800/q_auto:good/f_auto/jwco/destinations/indonesia/plates/raja-ampat-phinisi-plain" alt="" aria-hidden="true" fill sizes="100vw" className="object-cover object-right opacity-90 mix-blend-multiply" />
       <div className="absolute inset-0 bg-gradient-to-r from-white via-white/75 to-transparent" aria-hidden="true" />
       <div className="relative px-6 py-10 md:px-10 md:py-14 max-w-xl">
         <p className="ledger-eyebrow ledger-crimson">Sailed by the house · November 2024</p>

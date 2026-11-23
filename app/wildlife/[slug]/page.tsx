@@ -30,7 +30,7 @@ export default async function SpeciesPage({ params }: { params: Promise<{ slug: 
       <SiteHeader />
       <main id="main" className="pt-6 md:pt-10 pb-20">
         <div className="max-w-ledger mx-auto px-5 md:px-10">
-          <div className="mb-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, { name: "Voyages", path: "/voyages" }, { name: "The Amazon", path: "/voyages/amazon" }, { name: note.title, path }]} /></div>
+          <div className="mb-6"><Breadcrumbs trail={[{ name: "Home", path: "/" }, ...(p.parent ?? [{ name: "Voyages", path: "/voyages" }, { name: "The Amazon", path: "/voyages/amazon" }]), { name: note.title, path }]} /></div>
           <header className="max-w-3xl">
             <p className="ledger-eyebrow text-house">Field Note · {note.region}</p>
             <h1 className="ledger-display text-[2.1rem] md:text-[3.1rem] leading-[1.08] mt-2">{p.title}</h1>
@@ -70,7 +70,7 @@ export default async function SpeciesPage({ params }: { params: Promise<{ slug: 
             </ul>
             <div className="mt-8 flex flex-wrap gap-5">
               <Link href="/plan" className="ledger-btn ledger-btn--house">Plan with James</Link>
-              <Link href="/voyages/amazon" className="ledger-btn-ghost">All Amazon ships</Link>
+              {p.parent ? <Link href={p.parent[p.parent.length - 1].path} className="ledger-btn-ghost">All of {p.parent[p.parent.length - 1].name}</Link> : <Link href="/voyages/amazon" className="ledger-btn-ghost">All Amazon ships</Link>}
             </div>
           </section>
         </div>

@@ -123,6 +123,16 @@ export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
 export type SampleRoom = { name: string; sleeps: number | null; list: string | null; now: string | null; basis?: string; facts?: string[]; lede?: string | null; features?: string[]; flag?: string; photo?: { url: string; alt: string } | null; action?: React.ReactNode };
 export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar, footnote }: { v: View; variant: Variant; rooms: SampleRoom[]; roomsFallback?: React.ReactNode; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null }) {
   const { s } = v;
+  const priced = rooms.map((r) => r.now).filter(Boolean) as string[];
+  const pwName = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug)?.primary.name ?? null : null;
+  const glance: { icon: FieldIconName; label: string; value: string; wide?: boolean }[] = [
+    ...(v.suited.length ? [{ icon: "frond" as FieldIconName, label: "Best for", value: v.suited.join(", "), wide: true }] : []),
+    ...(s.bestMonths ? [{ icon: "sun" as FieldIconName, label: "Best months", value: s.bestMonths }] : []),
+    ...(rooms.length ? [{ icon: "porthole" as FieldIconName, label: "Rooms", value: `${rooms.length} room type${rooms.length === 1 ? "" : "s"}` }] : []),
+    ...(priced.length ? [{ icon: "anchor" as FieldIconName, label: "From", value: `${priced[0]} ${basis.split("·")[0].trim()}` }] : []),
+    ...(s.airport ? [{ icon: "signal-flag" as FieldIconName, label: "Nearest airport", value: s.airport, wide: true }] : []),
+    ...(pwName ? [{ icon: "wave" as FieldIconName, label: "Wild Pathway", value: pwName }] : []),
+  ];
   const used = new Set<string>([v.frames[0].url]);
   const pool: ViewerPhoto[] = v.photos;
   const take = (...keys: (SectionKey | null)[]): Shot | null => {
@@ -170,7 +180,20 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
     <>
       <section id="why" aria-label="Why it is here" className={`${WRAP} ${GAP} scroll-mt-32`}>
         <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why We Added It to the Portfolio" />
-        <p className={`${T.lead} mt-5 max-w-3xl text-graphite`}>{v.answer}</p>
+        {/* At a glance (James, 23 Nov 2026): the quick facts beside the words, from the record only; nothing shows that is not filed. */}
+        <div className="mt-5 grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16">
+          <p className={`${T.lead} max-w-3xl text-graphite`}>{v.answer}</p>
+          {glance.length > 0 && (
+            <dl aria-label={`${s.name} at a glance`} className="grid grid-cols-2 gap-x-6 border-t-2 border-[color:var(--jw-stone)] lg:grid-cols-1">
+              {glance.map((g) => (
+                <div key={g.label} className={`flex items-start gap-3 border-b border-[color:var(--jw-hairline)] py-3.5 ${g.wide ? "col-span-2 lg:col-span-1" : ""}`}>
+                  <span aria-hidden className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center text-graphite"><FieldIcon name={g.icon} height={18} /></span>
+                  <div className="min-w-0"><dt className={`${T.label} text-stone-text`}>{g.label}</dt><dd className="mt-1 font-display text-[19px] leading-snug text-graphite first-letter:uppercase">{g.value}</dd></div>
+                </div>
+              ))}
+            </dl>
+          )}
+        </div>
         {s.why.filter((w) => !w.title).length > 0 && <div className={`${T.body} mt-6 max-w-[62ch] space-y-4 text-graphite`}>{s.why.filter((w) => !w.title).map((w) => <p key={w.body}>{w.body}</p>)}</div>}
         {s.why.filter((w) => w.title).length > 0 && (
           <div className="mt-10 max-w-3xl border-b border-[color:var(--jw-hairline)] [&>div]:!bg-transparent [&_h3_span]:italic">

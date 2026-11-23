@@ -31,13 +31,14 @@ export function TalkRow({ name, hasIggi }: { name: string; hasIggi: boolean }) {
   );
 }
 
-export default function TalkSheet({ name, planHref, callHref, callSeats, children }: {
+export default function TalkSheet({ name, planHref, callHref, callWith, children }: {
   name: string;
   /** The house's plan page for this stay. */
   planHref: string;
-  /** The live group call with the host and an advisor, where a host is ready. */
-  callHref?: string | null;
-  callSeats?: number | null;
+  /** The live call: with the host where one is ready, otherwise with James (James, 23 Nov 2026). */
+  callHref: string;
+  /** Who the call is with, in a few words. */
+  callWith: string;
   /** Iggi's panel, unchanged. */
   children?: React.ReactNode;
 }) {
@@ -69,24 +70,22 @@ export default function TalkSheet({ name, planHref, callHref, callSeats, childre
           <div className="flex items-center gap-3">
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-mist text-graphite"><IggiMark size={30} decorative /></span>
             <div>
-              <p className="font-mono text-[10.5px] uppercase tracking-[0.24em] text-stone-text">Talk to the house</p>
+              <p className="font-mono text-[10.5px] uppercase tracking-[0.24em] text-stone-text">Ask Iggi · talk to the house</p>
               <p className="font-display text-[24px] leading-tight text-graphite">{name}</p>
             </div>
           </div>
           <button ref={closeRef} type="button" onClick={() => setOpen(false)} aria-label="Close" className="-mr-2 p-2 text-graphite hover:text-house"><X className="h-5 w-5" strokeWidth={1.5} aria-hidden /></button>
         </div>
-        <div className="flex gap-2 border-y border-[color:var(--jw-hairline)] px-3">
+        {/* Iggi first, and his chat fills the panel: answers scroll inside the chat, never the panel (James, 23 Nov 2026). */}
+        <style>{`.jw-talk #iggi{display:flex;flex-direction:column;height:100%;margin:0!important;padding:0!important;border:0!important}.jw-talk #iggi>div:first-child{display:none}.jw-talk #iggi .iggi-frame{flex:1 1 auto;height:auto!important;min-height:0!important;margin-top:0!important}.jw-talk #iggi>p{font-size:11px;line-height:1.4;margin-top:6px}`}</style>
+        {children
+          ? <div className="jw-talk min-h-0 flex-1 border-t border-[color:var(--jw-hairline)] px-3 pb-2 pt-2">{children}</div>
+          : <p className="flex-1 border-t border-[color:var(--jw-hairline)] px-5 py-6 text-[15px] text-stone-text">Call, book a live call, or write to the team about {name}.</p>}
+        <div className="flex gap-2 border-t border-[color:var(--jw-hairline)] px-3 pb-[env(safe-area-inset-bottom)]">
           <a href={`tel:${SITE.phone.tel}`} className={tile} aria-label={`Call ${SITE.phone.display}`}><Phone className="h-5 w-5" strokeWidth={1.5} aria-hidden /><span className={tileLabel}>Call</span><span className="text-[12px] text-stone-text">{SITE.phone.display}</span></a>
-          {callHref && <a href={callHref} className={tile}><CalendarClock className="h-5 w-5" strokeWidth={1.5} aria-hidden /><span className={tileLabel}>Live call</span><span className="text-[12px] text-stone-text">With the host{callSeats ? `, up to ${callSeats}` : ""}</span></a>}
+          <a href={callHref} className={tile}><CalendarClock className="h-5 w-5" strokeWidth={1.5} aria-hidden /><span className={tileLabel}>Live call</span><span className="text-[12px] text-stone-text">{callWith}</span></a>
           <Link href={planHref} onClick={() => setOpen(false)} className={tile}><MessageCircle className="h-5 w-5" strokeWidth={1.5} aria-hidden /><span className={tileLabel}>The team</span><span className="text-[12px] text-stone-text">Write to an advisor</span></Link>
         </div>
-        {children ? (
-          <div className="flex min-h-0 flex-1 flex-col overflow-y-auto px-5 pb-5 pt-4">
-            <p className="font-mono text-[10.5px] uppercase tracking-[0.24em] text-stone-text">Ask Iggi</p>
-            <p className="mt-1 text-[14px] text-stone-text">The house&rsquo;s AI guide. He answers from the Ledger and hands prices and bookings to a person.</p>
-            <div className="mt-3">{children}</div>
-          </div>
-        ) : <p className="px-5 py-6 text-[15px] text-stone-text">Call, book a live call, or write to the team about {name}.</p>}
       </div>
     </div>
   );

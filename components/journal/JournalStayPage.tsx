@@ -52,6 +52,10 @@ const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "sou
 const no = (n: number) => String(n).padStart(2, "0");
 
 // sample: one of the three preview-only layout samples (James, 22 Nov 2026); absent on every real page, which is unchanged
+// A live call with James where no host is ready: he takes the call, then hands the lead to an advisor (James, 23 Nov 2026).
+// The house link in use across the site; replace when James sets his own.
+const JAMES_CALL = "https://calendly.com/jameswildco/meet-your-host";
+
 export default function JournalStayPage({ slug, sample, preview = false }: { slug: string; sample?: Variant; /** the layout switch strip, on the preview samples only */ preview?: boolean }) {
   const v = journalStay(slug);
   if (!v) notFound();
@@ -260,7 +264,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
       <PhotoViewer slug={s.slug} name={s.name} photos={v.photos} sections={SECTION_ORDER.map((k) => ({ key: k, label: SECTION_LABEL[k] }))} credit={v.credit} reserveHref="#reserve" />
 
       {/* One pop-up for every conversation about the stay: Iggi, the phone, a live call, the team (James, 23 Nov 2026). */}
-      {sample && <TalkSheet name={s.name} planHref={planHref} callHref={v.hostReady ? v.host.host?.calendlyUrl ?? null : null} callSeats={v.host.host?.seats ?? null}>{iggiEl || null}</TalkSheet>}
+      {sample && <TalkSheet name={s.name} planHref={planHref} callHref={v.hostReady && v.host.host?.calendlyUrl ? v.host.host.calendlyUrl : JAMES_CALL} callWith={v.hostReady && v.host.host?.calendlyUrl ? "With the host" : "With James"}>{iggiEl || null}</TalkSheet>}
 
       <StickyBar id="record-bar" title={s.name} note={fromLine} label={`Reserve ${s.name}`}
         links={<><SaveToFolio slug={s.slug} name={s.name} inline />{sample ? <TalkButton /> : <Link href={planHref} className="ledger-btn-ghost">Speak with an advisor</Link>}</>}

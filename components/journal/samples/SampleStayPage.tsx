@@ -182,7 +182,7 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
         <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why We Added It to the Portfolio" />
         {/* At a glance (James, 23 Nov 2026): the quick facts beside the words, from the record only; nothing shows that is not filed. */}
         <div className="mt-5 grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16">
-          <p className={`${T.lead} max-w-3xl text-graphite`}>{v.answer}</p>
+          <p className={`${T.lead} max-w-3xl text-graphite`}>{v.intro}</p>
           {glance.length > 0 && (
             <dl aria-label={`${s.name} at a glance`} className="grid grid-cols-2 gap-x-6 border-t-2 border-[color:var(--jw-stone)] lg:grid-cols-1">
               {glance.map((g) => (

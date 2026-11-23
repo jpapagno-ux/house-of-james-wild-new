@@ -329,8 +329,6 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
         <ComingBanner slug={s.slug} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
-          {/* One live try (James, 23 Nov 2026): the founder's field note, animated, and the tinted page corners. */}
-          {FIELD_NOTE_TRY.has(s.slug) && s.founderNote && <><FieldNoteTry note={s.founderNote} ledgerId={s.ledgerId} place={[place?.name, s.country].filter(Boolean).join(", ") || null} /><EdgyCorners /></>}
           {boat && (
             <aside aria-label="A voyage" className="mt-6 border ledger-border p-5 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div><p className="ledger-eyebrow" style={{ color: volumeInk("voyages") }}>Voyage · {boat.name}</p><p className="mt-1 text-[15.5px]">{s.name} is a {boat.kind}, filed in the Voyages volume, not among the stays. Her ship page, cabins, routes, dates and fares, is being built; until then this is her Ledger record.</p></div>
@@ -373,12 +371,17 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
           <Overview quote={tight ? undefined : s.quote ?? undefined} answer={answer} facts={tight && !card ? facts.filter(([k]) => !inOpening.has(k)) : facts} paragraphs={overviewParas} card={card} lead={s.tagline} name={s.name} ledgerId={s.ledgerId} volume={safariVol ? "safaris" : "stays"} />
           {s.regionSlug === "europe" && EUROPE_PLATES[s.slug] && <EuropePlate plate={EUROPE_PLATES[s.slug]} name={s.name} place={s.country} coords={s.coords} />}
           {sketchForStay(s.slug) && <SketchPlate s={sketchForStay(s.slug)!} />}
-          {!(tight && verdict) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof eyebrow={VETTED_UNVISITED.has(s.slug) ? "Founder vetted · not yet visited" : FOUNDER_EYEBROW[safariVol ? "safaris" : s.volumes?.includes("gatherings") && /\b(house|residence|villa|estate|farm|ranch|island)\b/i.test(s.name) ? "gatherings" : "stays"]} proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}className="mt-10 max-w-3xl"  signed={card} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : null} mark={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={150} /> : undefined} />}
+          {/* One live try (James, 23 Nov 2026): the founder's field note, animated, straight after the overview, where the
+              founder speaks before the house's verdict; the tinted page corners with it. */}
+          {FIELD_NOTE_TRY.has(s.slug) && s.founderNote && !(tight && verdict) && <><FieldNoteTry note={s.founderNote} ledgerId={s.ledgerId} place={[place?.name, s.country].filter(Boolean).join(", ") || null} /><EdgyCorners /></>}
+          {!(tight && verdict) && !(FIELD_NOTE_TRY.has(s.slug) && s.founderNote) && founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug) && <FounderProof eyebrow={VETTED_UNVISITED.has(s.slug) ? "Founder vetted · not yet visited" : FOUNDER_EYEBROW[safariVol ? "safaris" : s.volumes?.includes("gatherings") && /\b(house|residence|villa|estate|farm|ranch|island)\b/i.test(s.name) ? "gatherings" : "stays"]} proof={founderProof(s.name, s.status as HouseStatus, s.statusDate, s.slug)!} seal={sealFor(stamp)} note={s.founderNote}className="mt-10 max-w-3xl"  signed={card} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : null} mark={stamp ? <FounderStamp kind={stamp} year={s.statusDate ? Number(s.statusDate.slice(0, 4)) : undefined} date={s.statusDate} place={s.country ?? undefined} ledgerId={s.ledgerId ?? undefined} size={150} /> : undefined} />}
           {/* The house entrance order (James, 10 Nov 2026: "the verdict seems to be way at the bottom ... tighten this up to
               get the user more information about why, where, and how to get there"): why (the verdict, then the facts
               at a glance) straight after the overview; where and how (the map, the way in, the routes it is on) together
               after the rooms. */}
-          {tight && verdict && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
+          {/* On the try stay the Verdict is the founder's field note: one card, not two (James, 23 Nov 2026). */}
+          {tight && verdict && FIELD_NOTE_TRY.has(s.slug) && <><FieldNoteTry id="verdict" eyebrow="The verdict · the personal ledger of James Wild" note={verdict.text.join(" ")} signOff={[verdict.where, verdict.when, stamp ? String(stamp) : null].filter(Boolean).join(" · ")} ledgerId={s.ledgerId} place={null} /><EdgyCorners /></>}
+          {tight && verdict && !FIELD_NOTE_TRY.has(s.slug) && <VerdictCard k={`stay:${s.slug}`} name={s.name} v={verdict} stamp={entryNo(s.ledgerId) ? <InkStamp volume="stays" no={entryNo(s.ledgerId)!} size={170} /> : undefined} />}
           <OfferPanel offers={offersFor(s.slug)} volume={boat ? "voyages" : "stays"} title={`Offers at ${s.name}`} />
           <Band t={tones} tone="mist"><div>
           {apart.length > 0 && <ImageAccordion id="features" eyebrow={L.apart} title={L.apartTitle} intro={(s.features.items.length ? s.features.paras[0] : undefined) ?? (boat ? undefined : "The short list of reasons it made the Ledger, and a few you only notice on the second day.")} icon="frond" items={apart} />}

@@ -16,8 +16,10 @@ function split(note: string): { line: string; sign: string } {
   return m ? { line: m[1].trim(), sign: m[2].replace(/;\s*/g, " · ").replace(/\.$/, "") } : { line: clean, sign: "" };
 }
 
-export default function FieldNoteTry({ note, ledgerId, place }: { note: string; ledgerId: string | null; place: string | null }) {
-  const { line, sign } = split(note);
+export default function FieldNoteTry({ note, ledgerId, place, signOff, id, eyebrow }: { note: string; ledgerId: string | null; place: string | null; signOff?: string; id?: string; eyebrow?: string }) {
+  const parsed = split(note);
+  const line = parsed.line;
+  const sign = signOff ?? parsed.sign;
   const ref = useRef<HTMLElement>(null);
   const [seen, setSeen] = useState(false);
   const [n, setN] = useState(0);
@@ -41,12 +43,12 @@ export default function FieldNoteTry({ note, ledgerId, place }: { note: string; 
 
   const done = n >= line.length;
   return (
-    <aside ref={ref} className="jw-fieldnote relative mt-10 md:mt-14 max-w-3xl" aria-label="Founder's field note" data-seen={seen ? "1" : "0"} data-done={done ? "1" : "0"}>
+    <aside ref={ref} id={id} className="jw-fieldnote relative mt-10 md:mt-14 max-w-3xl scroll-mt-40" aria-label="Founder's field note" data-seen={seen ? "1" : "0"} data-done={done ? "1" : "0"}>
       <div className="jw-fieldnote__card relative bg-paper px-6 md:px-10 pt-9 md:pt-11 pb-12 md:pb-14">
         <span className="jw-corner jw-corner--tl" aria-hidden="true" /><span className="jw-corner jw-corner--tr" aria-hidden="true" />
         <span className="jw-corner jw-corner--bl" aria-hidden="true" /><span className="jw-corner jw-corner--br" aria-hidden="true" />
 
-        <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-[#6B635A]">The personal ledger of James Wild{place ? ` · ${place}` : ""}</p>
+        <p className="font-mono text-[10.5px] tracking-[0.22em] uppercase text-[#6B635A]">{eyebrow ?? "The personal ledger of James Wild"}{place ? ` · ${place}` : ""}</p>
 
         <p className="mt-5 font-mono text-[15px] md:text-[17px] leading-[1.75] text-[#1A1816] min-h-[6.5em]">
           <span className="sr-only">{line}</span>

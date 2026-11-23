@@ -30,6 +30,8 @@
   everywhere"): an occasional tan panel, tag or accent is fine; never the ground of every section or page.
 - Media: one Cloudinary library for every site; rights in structured metadata, one copy per
   image, folders = public_id path (see `docs/brand-colours.md`, "Media").
+- No hare in the house watercolours (James, 23 Nov 2026): sign-in trails, Europe plates, the founder's sketchbook,
+  guide and voyage plates and the email header show the place only. Do not paint the hare or Iggi into new plates.
 - Full rule: `docs/brand-colours.md`.
 
 ## Sources (James, 31 Oct 2026)

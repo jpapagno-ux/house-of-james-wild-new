@@ -28,9 +28,9 @@ const DOORS: Door[] = [
 // an old-town lane for partners. The scene names are never printed (James: they only describe the images).
 const WC = "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,w_400,h_400,q_auto:good,f_auto/jwco/brand/trails";
 const TRAIL = [
-  { art: `${WC}/beach-trail`, line: "Your Folio: the places worth returning to, gathered into journeys and shared with the people you travel with." },
-  { art: `${WC}/mountain-trail`, line: "The Desk: your travellers, the journeys you carry and your Bearing, with the Ledger open beside you." },
-  { art: `${WC}/city-stroll`, line: "The Partner Desk: your properties as the house sells them, written by you and approved by James." },
+  { art: `${WC}/beach-trail-plain`, line: "Your Folio: the places worth returning to, gathered into journeys and shared with the people you travel with." },
+  { art: `${WC}/mountain-trail-plain`, line: "The Desk: your travellers, the journeys you carry and your Bearing, with the Ledger open beside you." },
+  { art: `${WC}/city-stroll-plain`, line: "The Partner Desk: your properties as the house sells them, written by you and approved by James." },
 ];
 
 export default function SignInDoors({ light = false, className = "" }: { light?: boolean; className?: string }) {

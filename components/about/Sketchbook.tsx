@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SKETCHBOOK, type Sketch } from "@/lib/content/founder-sketchbook";
 
-// The Founder's Sketchbook: James's places as watercolours, the house hare in each, in year order. A swipe row on
+// The Founder's Sketchbook: James's places as watercolours, in year order. A swipe row on
 // phones, a loose pinned wall on desktop. SketchPlate is the single painting on a place's own page.
 
 export function SketchPlate({ s }: { s: Sketch }) {
@@ -26,7 +26,7 @@ export default function Sketchbook() {
     <section id="sketchbook" className="mt-16 md:mt-24 border-t ledger-rule pt-8 md:pt-10 scroll-mt-28" aria-labelledby="sketch-heading">
       <p className="ledger-eyebrow text-house">The founder&rsquo;s sketchbook · {SKETCHBOOK.length} places</p>
       <h2 id="sketch-heading" className="ledger-display text-[1.9rem] md:text-[2.6rem] leading-tight mt-2">Places James Has Been</h2>
-      <p className="mt-3 text-[17px] leading-relaxed ledger-muted max-w-2xl">Forty-four years of the road as watercolours, with the house hare standing in for James: a board under his arm in 1983, a red parka in 2020. Find him in each.</p>
+      <p className="mt-3 text-[17px] leading-relaxed ledger-muted max-w-2xl">Forty-four years of the road as watercolours, one for each place, with the year in pencil.</p>
       <ol className="mt-10 flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory -mx-5 px-5 md:mx-0 md:px-0 pb-4">
         {SKETCHBOOK.map((s, i) => (
           <li key={s.id} className="snap-start shrink-0 w-[82vw] sm:w-[48vw] md:w-auto">

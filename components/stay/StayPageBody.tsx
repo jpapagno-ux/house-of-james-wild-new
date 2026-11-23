@@ -496,8 +496,8 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
         </div>
         {hostEarly && <CallingCard who={HOST_KIND[s.category === "lodge" ? "lodge" : "stay"].who} seats={host.host?.seats} />}
       </main>
-      <ContactBar name={s.name} planHref={planHref} />
-      <ContactPill name={s.name} planHref={planHref} />
+      <ContactBar name={s.name} planHref={planHref} ledgerId={s.ledgerId} />
+      <ContactPill name={s.name} planHref={planHref} ledgerId={s.ledgerId} />
       {video && <JsonLd data={{ "@context": "https://schema.org", "@type": "VideoObject", name: FILM_CREDITS[video.id]?.title ?? video.title, description: FILM_CREDITS[video.id] ? `${FILM_CREDITS[video.id].seriesLine}, filmed at ${s.name}. ${FILM_CREDITS[video.id].credit}.` : `${s.name}: the stay film, from the James Wild & Co Ledger.`, thumbnailUrl: [`https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`], embedUrl: `https://www.youtube-nocookie.com/embed/${video.id}`, contentUrl: `https://www.youtube.com/watch?v=${video.id}`, uploadDate: "2026-10-25", ...filmCreditSchema(video.id) }} />}
       {verdict && <JsonLd data={graph(verdictSchema(verdict, s.name, absoluteUrl(path), ids.founder))} />}
       {ef && <JsonLd data={graph({ "@type": "DefinedTerm", "@id": absoluteUrl(`${path}#exceptional-few`), name: `The Exceptional Few™ ${collectionNo(ef.collectionNumber)}`, description: "A James Wild & Co editorial designation for places that are difficult to replicate because of place, privacy, design, access, humanity or rarity. Not a rating.", inDefinedTermSet: { "@type": "DefinedTermSet", name: "The Exceptional Few by James Wild & Co", url: absoluteUrl("/stays") }, termCode: ef.id, about: { "@id": absoluteUrl(`${path}#stay`) }, publisher: { "@id": ids.house } })} />}

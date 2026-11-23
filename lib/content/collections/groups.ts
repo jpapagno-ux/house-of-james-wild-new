@@ -72,8 +72,8 @@ export const GROUPS: SisterGroup[] = [
   {
     key: "belmond",
     name: "Belmond",
-    line: "Belmond in southern Africa: Mount Nelson in Cape Town, and two safari lodges in northern Botswana, Eagle Island in the Okavango Delta and Savute Elephant Lodge in Chobe.",
-    slugs: ["belmond-mount-nelson", "belmond-eagle-island-lodge", "belmond-savute-elephant-lodge"],
+    line: "Belmond with the house: Mount Nelson in Cape Town, two safari lodges in northern Botswana, Eagle Island in the Okavango Delta and Savute Elephant Lodge in Chobe, and Cap Juluca on Maundays Bay, Anguilla.",
+    slugs: ["belmond-mount-nelson", "belmond-eagle-island-lodge", "belmond-savute-elephant-lodge", "belmond-cap-juluca"],
   },
   {
     key: "como",

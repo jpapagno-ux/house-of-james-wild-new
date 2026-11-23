@@ -29,4 +29,22 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       "National Geographic, 'Amazon river dolphins (boto)': unfused neck vertebrae letting the boto bend between flooded trees.",
     ],
   },
+  // PREVIEW (Madagascar): sources still to be filed; the test keeps this off main until they are.
+  "red-ruffed-lemur": {
+    id: "red-ruffed-lemur", region: "Madagascar", no: "01",
+    title: "The red ruffed lemur", latin: "Varecia rubra · Masoala peninsula",
+    body: "This rust-red lemur lives in one place on earth: the rainforest of the Masoala peninsula. It feeds high in the canopy on fruit and nectar, and a group will break into a roar that carries across the valley when something alarms it.",
+    rows: [
+      { label: "Look for", text: "A red coat, black face and a white patch at the back of the neck." },
+      { label: "Listen for", text: "A sudden chorus of barks and roars from the treetops." },
+      { label: "Ask your guide", text: "Which trees are in fruit this week." },
+      { label: "When", text: "Year round; mornings are loudest." },
+    ],
+    image: { publicId: "samples/field-notes/red-ruffed-lemur-scene-watercolour", version: 1795436183, alt: "Watercolour of a red ruffed lemur on a mossy branch above the Masoala rainforest", width: 1000, height: 747, scene: true },
+    where: { label: "Stay at Masoala Forest Lodge", href: "/stays/masoala-forest-lodge" },
+    sources: [],
+  },
 };
+
+// Which notes sit on which country page (one or two per page).
+export const COUNTRY_FIELD_NOTES: Record<string, string[]> = { madagascar: ["red-ruffed-lemur"] };

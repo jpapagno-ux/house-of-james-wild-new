@@ -239,7 +239,7 @@ export const AMAZON_HUB_NOTES = ["pink-river-dolphin", "giant-river-otter", "ara
 
 // Species pages (/wildlife/[slug]): the note, then plain questions and answers for search and answer engines.
 // Every answer restates facts already sourced on the note; photography lines are craft advice, not facts.
-export type SpeciesPage = { noteId: string; title: string; answer: string; qa: { q: string; a: string }[]; photo: string[]; reachTitle?: string; reach: { name: string; href: string; line: string }[] };
+export type SpeciesPage = { noteId: string; title: string; answer: string; qa: { q: string; a: string }[]; photo: string[]; parent?: { name: string; path: string }[]; reachTitle?: string; reach: { name: string; href: string; line: string }[] };
 export const SPECIES_PAGES: Record<string, SpeciesPage> = {
   "pink-river-dolphin": {
     noteId: "pink-river-dolphin",
@@ -382,6 +382,141 @@ export const SPECIES_PAGES: Record<string, SpeciesPage> = {
       { name: "Napo Wildlife Center", href: "/stays/napo-wildlife-center", line: "Ecuador, lodge" },
       { name: "Anakonda", href: "/voyages/ships/anakonda-amazon-cruise", line: "Ecuador, 3 to 7 nights" },
       { name: "Delfin III", href: "/voyages/ships/delfin-iii", line: "Peru, 3 to 4 nights" },
+    ],
+  },
+  "red-ruffed-lemur": {
+    noteId: "red-ruffed-lemur",
+    title: "Where to See the Red Ruffed Lemur in Madagascar",
+    answer: "The red ruffed lemur lives in one corner of the earth: the rainforest of the Masoala peninsula in northeast Madagascar, east of Antongil Bay. It keeps to the upper canopy, eats mostly fruit, and is active by day, so you find it by ear first. James Wild & Co files Masoala Forest Lodge on the peninsula.",
+    qa: [
+      { q: "Where does the red ruffed lemur live?", a: "Its main range is the Masoala peninsula, east of the Bay of Antongil, in the canopy of primary rainforest. It is found nowhere else in the wild." },
+      { q: "What does it eat?", a: "Mostly fruit, with nectar and pollen. Feeding on nectar, it carries pollen from flower to flower and helps pollinate some of the forest's hardwood trees." },
+      { q: "How loud is a red ruffed lemur?", a: "Very. A group's calls can be heard up to half a mile away, and they use alarm calls to warn each other of predators." },
+      { q: "Is the red ruffed lemur endangered?", a: "Yes. It is listed as Critically Endangered, with logging, hunting and cyclones on the peninsula among the threats." },
+    ],
+    photo: [
+      "Follow the noise. When a group calls, your guide can walk you under them before they move on.",
+      "They sit high. Bring your longest lens and expect to shoot up into bright sky; expose for the fur, not the gaps in the leaves.",
+      "A fruiting tree is worth an hour. They come back to it.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Africa", path: "/destinations/africa" }, { name: "Madagascar", path: "/destinations/africa/madagascar" }],
+    reachTitle: "Where the House Sends You",
+    reach: [
+      { name: "Masoala Forest Lodge", href: "/stays/masoala-forest-lodge", line: "Masoala peninsula, Antongil Bay" },
+    ],
+  },
+  "black-lemur": {
+    noteId: "black-lemur",
+    title: "Where to See Black Lemurs in Madagascar",
+    answer: "Black lemurs live in the far northwest of Madagascar, including the islands of Nosy Be and Nosy Komba. Only the males are black; the females are brown with white ear tufts. They are active by day and by night, so they are among the easier lemurs to see. James Wild & Co files Tsara Komba on Nosy Komba.",
+    qa: [
+      { q: "Why are only the males black?", a: "The species is sexually dichromatic: males are solid black and females are brown with white tufts around the ears. A male is born his mother's colour and turns black within five to six weeks." },
+      { q: "Where do black lemurs live?", a: "In northwest Madagascar, on the islands of Nosy Be and Nosy Komba and in the coastal forests of the mainland opposite." },
+      { q: "When are black lemurs active?", a: "Around the clock. They are active in bursts through both day and night." },
+      { q: "Why do black lemurs rub millipedes on their fur?", a: "They gently bite a millipede so it releases its toxins, then rub it through their fur. The toxins work as an insect repellent." },
+    ],
+    photo: [
+      "Photograph a pair together. The black male beside the brown female is the picture that explains the species.",
+      "Black fur in forest shade loses its detail. Expose for the male and let the background go bright.",
+      "They are often low and unhurried. A short zoom is enough; leave the long lens behind.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Africa", path: "/destinations/africa" }, { name: "Madagascar", path: "/destinations/africa/madagascar" }],
+    reachTitle: "Where the House Sends You",
+    reach: [
+      { name: "Time + Tide Tsara Komba", href: "/stays/time-tide-tsara-komba", line: "Nosy Komba, near Nosy Be" },
+    ],
+  },
+  "aye-aye": {
+    noteId: "aye-aye",
+    title: "Where to See an Aye-Aye in Madagascar",
+    answer: "The aye-aye lives only in Madagascar and only comes out at night. It is the world's largest nocturnal primate, and it finds its food by tapping on wood with one long, thin finger and listening. Seeing one takes a night walk with a guide who knows where they feed. Ask the house which of its Madagascar stays can arrange one.",
+    qa: [
+      { q: "What is the aye-aye's long finger for?", a: "It taps along a branch with its thin middle finger, listens for insect larvae moving under the bark, gnaws a hole and hooks the larvae out with the same finger." },
+      { q: "Is the aye-aye a lemur?", a: "Yes. It is a lemur, the largest primate that is active only at night, with large ears, a bushy tail longer than its body and front teeth that never stop growing." },
+      { q: "Where does the aye-aye sleep?", a: "By day it curls up in a ball-shaped nest of leaves and branches in the fork of a large tree." },
+      { q: "Is the aye-aye endangered?", a: "Yes. It is listed as Endangered. Hunting and loss of forest are the main threats." },
+    ],
+    photo: [
+      "This is a night subject. Ask your guide what light is allowed, and use it; do not use flash on the animal without asking.",
+      "Raise the sensitivity and accept the grain. A sharp, grainy aye-aye is better than a smooth blur.",
+      "Listen for the tapping before you look. It tells you which branch to frame.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Africa", path: "/destinations/africa" }, { name: "Madagascar", path: "/destinations/africa/madagascar" }],
+    reachTitle: "Stays the House Files in Madagascar",
+    reach: [
+      { name: "Masoala Forest Lodge", href: "/stays/masoala-forest-lodge", line: "Masoala peninsula, Antongil Bay" },
+      { name: "Expedition Blue Lagoon", href: "/stays/expedition-blue-lagoon", line: "Cap Masoala, by boat and kayak" },
+      { name: "Miavana by Time + Tide", href: "/stays/miavana-by-time-tide", line: "Private island, northeast coast" },
+      { name: "Time + Tide Tsara Komba", href: "/stays/time-tide-tsara-komba", line: "Nosy Komba, near Nosy Be" },
+    ],
+  },
+  "helmet-vanga": {
+    noteId: "helmet-vanga",
+    title: "Where to See the Helmet Vanga in Madagascar",
+    answer: "The helmet vanga is found only in the rainforests of northeast Madagascar. It is black and chestnut with a massive pale blue bill, and it is recorded in a handful of protected forests, Masoala National Park among them. James Wild & Co files Masoala Forest Lodge on the Masoala peninsula.",
+    qa: [
+      { q: "Where does the helmet vanga live?", a: "Only in the lowland and lower mountain rainforests of northeast Madagascar. It is recorded in Masoala, Marojejy and Mantadia national parks." },
+      { q: "What does a helmet vanga look like?", a: "Black, with a chestnut back and tail and a huge arched bill of pale blue. It is hard to mistake for anything else." },
+      { q: "How do you find one?", a: "It is a bird of primary rainforest and often travels in mixed flocks with other large vangas. A guide who knows the flocks, or a known nest, is the way in." },
+      { q: "Why do birders travel so far for it?", a: "It is rare, local, and lives in forest that was once an expedition to reach. For a long time most birdwatchers visiting Madagascar never saw one." },
+    ],
+    photo: [
+      "The forest floor is dark. Open the lens wide, raise the sensitivity and brace against a tree.",
+      "The bill is the picture. Wait for the bird to turn side on.",
+      "When a mixed flock passes, stay put and let it move through you. Chasing it loses the bird.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Africa", path: "/destinations/africa" }, { name: "Madagascar", path: "/destinations/africa/madagascar" }],
+    reachTitle: "Where the House Sends You",
+    reach: [
+      { name: "Masoala Forest Lodge", href: "/stays/masoala-forest-lodge", line: "Masoala peninsula, Antongil Bay" },
+      { name: "Expedition Blue Lagoon", href: "/stays/expedition-blue-lagoon", line: "Cap Masoala, by boat and kayak" },
+    ],
+  },
+  "humpback-whale": {
+    noteId: "humpback-whale",
+    title: "When and Where to See Humpback Whales in Madagascar",
+    answer: "Humpback whales come to Madagascar each southern winter to breed and calve. The first arrive off the south in May and the last leave in December. Antongil Bay in the northeast and the waters around Nosy Be in the northwest are among the places they gather. James Wild & Co files stays on both coasts.",
+    qa: [
+      { q: "When is whale season in Madagascar?", a: "The first humpbacks arrive off southern Madagascar in May and the last leave in December. Ask the house for the best weeks in the bay you choose." },
+      { q: "Why do humpbacks come to Madagascar?", a: "To breed and to calve. They migrate up from feeding grounds in the Antarctic to the island's coastal waters." },
+      { q: "How many whales come?", a: "Wildlife Conservation Society scientists estimate that about 7,000 to 8,000 humpbacks migrate to Madagascar each year." },
+      { q: "Are the whales protected?", a: "Yes. Humpbacks are strictly protected under Malagasy fisheries law, and conservation scientists have studied them in Antongil Bay since 1996." },
+    ],
+    photo: [
+      "Watch the water after a breach. Humpbacks often breach more than once, and the second is the one you are ready for.",
+      "Use a fast shutter and keep both eyes open. A whale gives no warning.",
+      "Keep the horizon level and leave room in the frame. A breach is taller than you expect.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Africa", path: "/destinations/africa" }, { name: "Madagascar", path: "/destinations/africa/madagascar" }],
+    reachTitle: "Stays on the Whale Coasts",
+    reach: [
+      { name: "Masoala Forest Lodge", href: "/stays/masoala-forest-lodge", line: "Masoala peninsula, Antongil Bay" },
+      { name: "Expedition Blue Lagoon", href: "/stays/expedition-blue-lagoon", line: "Cap Masoala, by boat and kayak" },
+      { name: "Time + Tide Tsara Komba", href: "/stays/time-tide-tsara-komba", line: "Nosy Komba, near Nosy Be" },
+    ],
+  },
+  "mouse-lemur": {
+    noteId: "mouse-lemur",
+    title: "Where to See Mouse Lemurs, the World's Smallest Primates",
+    answer: "Mouse lemurs live only in Madagascar and are the smallest primates on earth. The smallest species, Madame Berthe's mouse lemur, weighs about 30 grams. They are active at night, so you look for them on a night walk, by the shine of their eyes in a headlamp. Different species live in different forests across the island.",
+    qa: [
+      { q: "How small is a mouse lemur?", a: "Mouse lemurs weigh from about 30 to 65 grams. Madame Berthe's mouse lemur, at an average of 30.6 grams and around nine to eleven centimetres in body length, is the smallest living primate." },
+      { q: "Where does the smallest one live?", a: "Madame Berthe's mouse lemur lives in the dry deciduous forests of western Madagascar, in the Menabe region." },
+      { q: "What do mouse lemurs eat?", a: "Insects, fruit, flowers and other plants, gathered at night." },
+      { q: "Why do they have fat tails?", a: "They store fat in the tail in the wet season and live off it through the dry season." },
+    ],
+    photo: [
+      "Find the eyeshine first with a headlamp held at eye level, then bring the camera up.",
+      "Ask your guide before using any light on the animal, and keep it brief.",
+      "They freeze for a moment when found. That moment is the photograph.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Africa", path: "/destinations/africa" }, { name: "Madagascar", path: "/destinations/africa/madagascar" }],
+    reachTitle: "Stays the House Files in Madagascar",
+    reach: [
+      { name: "Masoala Forest Lodge", href: "/stays/masoala-forest-lodge", line: "Masoala peninsula, Antongil Bay" },
+      { name: "Expedition Blue Lagoon", href: "/stays/expedition-blue-lagoon", line: "Cap Masoala, by boat and kayak" },
+      { name: "Miavana by Time + Tide", href: "/stays/miavana-by-time-tide", line: "Private island, northeast coast" },
+      { name: "Time + Tide Tsara Komba", href: "/stays/time-tide-tsara-komba", line: "Nosy Komba, near Nosy Be" },
     ],
   },
 };

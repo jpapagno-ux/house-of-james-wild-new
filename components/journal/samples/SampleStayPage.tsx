@@ -136,7 +136,15 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
   const used = new Set<string>([v.frames[0].url]);
   const pool: ViewerPhoto[] = v.photos;
   const take = (...keys: (SectionKey | null)[]): Shot | null => {
-    const hit = keys.map((k) => pool.find((p) => !used.has(p.url) && (k === null ? p.section !== "rooms" : p.section === k))).find(Boolean) ?? pool.find((p) => !used.has(p.url)) ?? null;
+    // Chapter photographs (James, 23 Nov 2026): never stairs, corridors, bathrooms or kitchens, and never the inside of
+    // a room unless it looks out to a view. The place first; a room with a view only when nothing else is filed.
+    const dull = (p: ViewerPhoto) => /\b(stair|staircase|steps|corridor|hallway|bathroom|bathtub|shower|toilet|sink|vanity|kitchen|wardrobe|closet|lobby|reception)/i.test(p.alt);
+    const outlook = (p: ViewerPhoto) => /\b(view|ocean|sea|bay|beach|lagoon|lake|river|forest|jungle|mountain|volcano|valley|desert|terrace|veranda|deck|open to|looking out)/i.test(p.alt);
+    const free = (p: ViewerPhoto) => !used.has(p.url) && !dull(p);
+    const hit = keys.map((k) => pool.find((p) => free(p) && (k === null ? p.section !== "rooms" : p.section === k))).find(Boolean)
+      ?? pool.find((p) => free(p) && p.section === "rooms" && outlook(p))
+      ?? pool.find((p) => free(p) && p.section !== "rooms")
+      ?? pool.find((p) => free(p)) ?? pool.find((p) => !used.has(p.url)) ?? null;
     if (hit) used.add(hit.url);
     return hit ? { url: hit.url, alt: hit.alt } : null;
   };

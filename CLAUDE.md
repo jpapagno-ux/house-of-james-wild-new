@@ -95,6 +95,11 @@
 - Talk to the house: Iggi lives in a panel (right side on desktop, bottom sheet on phones), opened from a slim row
   after offers and from the bottom bar: Iggi first with answers scrolling inside the chat, then Call, Live call (the
   host where one is filed, else James) and The team pinned below. Iggi's own logic is untouched.
+- Photographs (James, 23 Nov 2026: "never inside room pictures unless they are looking out to a view, or stairs; best
+  images please"): the hero and the photo chapters show the place at its best: landscape, the property in its setting,
+  water, wildlife. Never stairs, corridors, bathrooms or kitchens, and never a room interior unless it looks out to a
+  view. The chapter picker enforces this from the photo descriptions in `photo-notes.json`; describe new photographs
+  there, and choose heroes by the same rule.
 - New stays join by adding their slug to that file and an introduction to `intros.json` (`tests/journal-style.test.ts`
   fails without one). Change the template only when James asks.
 - No vertical lines (James, 23 Nov 2026: "I do not want any vertical lines on the site anywhere"): no accent bar beside

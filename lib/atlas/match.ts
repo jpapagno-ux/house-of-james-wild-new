@@ -70,7 +70,7 @@ const CONDITION_WORDS: Record<ConditionKind, string> = {
 
 export type AtlasRecord = {
   id: string;
-  kind: "stay" | "camp" | "reserve" | "ship" | "voyage" | "route" | "dossier";
+  kind: "stay" | "camp" | "reserve" | "ship" | "sailing" | "voyage" | "route" | "dossier" | "coming";
   name: string; href: string;
   /** The Atlas category. null: the record is awaiting editorial classification and matches no category filter. */
   category: Category | null;
@@ -192,6 +192,7 @@ export function whereScore(r: AtlasRecord, where: string): number {
 
 export type SeasonState = "in" | "outside" | "not-filed" | "sails" | "no-dates";
 export function season(r: AtlasRecord, q: AtlasQuery): { state: SeasonState; line: string } {
+  if (r.kind === "coming") return { state: "not-filed", line: "Not open yet. The date is the operator's own announcement and can move." };
   if (r.departures) return { state: "sails", line: r.departures.length ? `Sails ${sailingSpan(r.departures)}.` : "No open departures are published at present." };
   if (!r.bestMonths) return { state: "not-filed", line: "Ask the house about the best months here." };
   const here = r.seasonOf === "place";
@@ -287,6 +288,7 @@ export function offerLine(r: AtlasRecord, q: AtlasQuery, on: string = today()): 
 
 export type AvailabilityState = "engine" | "departs" | "none-in-dates" | "no-departures" | "request";
 export function availability(r: AtlasRecord, q: AtlasQuery): { state: AvailabilityState; line: string } {
+  if (r.kind === "coming") return { state: "request", line: "Not bookable yet. The house takes your interest now and confirms dates once the operator publishes them." };
   if (r.departures) {
     if (!r.departures.length) return { state: "no-departures", line: "Departures on request. Nothing is held yet." };
     const ps = periods(q);
@@ -302,7 +304,7 @@ export function availability(r: AtlasRecord, q: AtlasQuery): { state: Availabili
 export function unknowns(r: AtlasRecord, q: AtlasQuery): string[] {
   const out: string[] = [];
   const party = q.adults + q.children.length;
-  if (r.kind !== "route" && r.kind !== "dossier" && r.kind !== "reserve" && party > 2 && r.sleeps === null) out.push(r.familyFiled ? `Rooms for ${party} travellers are confirmed by the house before anything is planned.` : `Rooms for ${party} travellers are confirmed by the house before anything is planned.`);
+  if (r.kind !== "route" && r.kind !== "dossier" && r.kind !== "reserve" && r.kind !== "coming" && party > 2 && r.sleeps === null) out.push(r.familyFiled ? `Rooms for ${party} travellers are confirmed by the house before anything is planned.` : `Rooms for ${party} travellers are confirmed by the house before anything is planned.`);
   if (q.children.length && r.minChildAge === null) out.push("The policy for children is confirmed by the house.");
   return out;
 }
@@ -335,6 +337,10 @@ export function matches(r: AtlasRecord, q: AtlasQuery, opts: { ignoreCategory?: 
   // Ships: a published calendar with no departure in the dates is a filed fact. An unpublished calendar is not.
   const ps = periods(q);
   if (ps.length && r.departures && r.departures.length && !r.departures.some((d) => ps.some((p) => overlaps(d, p)))) return false;
+  // A dated sailing answers a search that gives dates, or one that names it. Otherwise her ship stands for her sailings.
+  if (r.kind === "sailing" && !ps.length && whereScore(r, q.where) < 3) return false;
+  // A place that is not open yet is found by name or place only: never by dates, guests, interests or a collection.
+  if (r.kind === "coming" && (!q.where.trim() || ps.length > 0 || q.interests.length > 0 || q.col.length > 0 || q.cat.length > 0)) return false;
   return true;
 }
 

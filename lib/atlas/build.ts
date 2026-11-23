@@ -4,6 +4,7 @@ import { classifyReserveCamp, classifyRoute, classifyShip, classifyStay, conditi
 import { parseMonths } from "./match";
 import DECISIONS from "./category-decisions.json";
 import HOLDS from "./holds.json";
+import FEEDERS from "./feeders.json";
 import { STAYS, pageReady, type StayData } from "@/lib/content/stays";
 import { RESERVES, campHref, campReady, campStatus } from "@/lib/content/reserves";
 import { SHIP_REGISTRY } from "@/lib/content/ships/registry";
@@ -14,6 +15,8 @@ import { tripHeroImage } from "@/lib/content/trip-pages";
 import { TRIP_PATHWAY_MAP } from "@/lib/content/pathways/trips";
 import { JOURNEYS, journeyPath } from "@/lib/content/ships/journeys";
 import { POLAR_VOYAGES, voyagePath } from "@/lib/content/polar";
+import { SEADREAM_VOYAGES, seadreamPath } from "@/lib/content/ships/seadream";
+import { COMING, statusLine as comingLine } from "@/lib/content/whats-coming";
 import { TY_DOSSIERS, ty, tyPath } from "@/lib/content/terra-y";
 import { COUNTRIES } from "@/lib/content/countries";
 import { REGIONS } from "@/lib/site";
@@ -62,9 +65,20 @@ function offersByHref(): Map<string, AtlasOffer[]> {
 const openDepartures = (deps: readonly { date: string; dateTo?: string | null; status?: string | null }[]): [string, string][] =>
   deps.filter((d) => !/full|sold/i.test(d.status ?? "") && !isPast(d.dateTo || d.date)).map((d) => [d.date < today() ? today() : d.date, d.dateTo || d.date] as [string, string]).slice(0, 80);
 
-export function atlasIndex(): AtlasRecord[] {
+/** A record the rules could not file: it waits for an editor's ruling in lib/atlas/category-decisions.json. */
+export type Ruling = { id: string; key: string; name: string; href: string; feeder: string; filedAs: string; proposed: string; reason: string };
+export type AtlasBuild = { rows: AtlasRecord[]; rulings: Ruling[]; feeders: { id: string; label: string; rows: number }[] };
+
+// The feeders (James, 23 Nov 2026): each volume's records enter the Atlas through one named feeder below, registered
+// in lib/atlas/feeders.json. A feeder that runs without being registered, or is registered and never runs, stops the
+// build, and tests/atlas-coverage.test.ts stops a new section or record route that is in neither list.
+export function atlasBuild(): AtlasBuild {
   const offers = offersByHref();
   const rows: AtlasRecord[] = [];
+  const rulings: Ruling[] = [];
+  const ran = new Map<string, number>();
+  let feeder = "";
+  const feed = (id: string) => { feeder = id; ran.set(id, ran.get(id) ?? 0); };
   const reserveSlugs = new Set(RESERVES.map((r) => r.slug));
   const campSlugs = new Set(RESERVES.flatMap((r) => r.camps.map((c) => c.slug)));
   const africa = new Set(COUNTRIES.filter((c) => c.region === "africa").map((c) => c.name));
@@ -72,9 +86,12 @@ export function atlasIndex(): AtlasRecord[] {
     const { verdict, keys, ...rest } = r;
     const v = decided(verdict, keys, decisions);
     rows.push({ ...rest, category: v.category, proposed: v.category ? null : v.proposed, offers: offers.get(rest.href) ?? [] });
+    ran.set(feeder, (ran.get(feeder) ?? 0) + 1);
+    if (!v.category && feeder !== "sailings") rulings.push({ id: rest.id, key: keys.find((k): k is string => !!k) ?? rest.id, name: rest.name, href: rest.href, feeder, filedAs: rest.filedAs, proposed: v.proposed, reason: v.reason });
   };
 
   // Stays with a published page. A reserve filed as a stay is listed once, as its reserve (below).
+  feed("stays");
   for (const s of STAYS as StayData[]) {
     if (!pageReady(s) || reserveSlugs.has(s.slug) || (s.ledgerId && held.has(s.ledgerId))) continue;
     const ef = exceptionalFewFor(s.ledgerId);
@@ -92,6 +109,7 @@ export function atlasIndex(): AtlasRecord[] {
   }
 
   // Reserves, and the camps, lodges and houses inside them that have a page of their own under the reserve.
+  feed("reserves");
   for (const r of RESERVES) {
     const common = { country: r.stay.country, countries: r.stay.country ? [r.stay.country] : [], region: r.stay.regionSlug ?? "africa", regionLabel: regionLabel(r.stay.regionSlug ?? "africa"), bestMonths: bestMonths(r.stay.country), departures: null, price: null, booking: "request" as const };
     push({ ...common, id: r.rsv || `reserve:${r.slug}`, kind: "reserve", name: r.name, href: `/safaris/${r.slug}`, filedAs: "Reserve", tagline: r.stay.tagline, image: r.stay.hero, mark: null, collections: [], interests: ["wildlife"], standing: 0, sleeps: null,
@@ -107,6 +125,7 @@ export function atlasIndex(): AtlasRecord[] {
   }
 
   // Ships: the voyage finder's own rows (facts, fares and open months), with her dated departures where published.
+  feed("ships");
   for (const x of searchItems()) {
     const reg = SHIP_REGISTRY.find((r) => r.slug === x.slug)!;
     const e = SHIPS.find((s) => s.slug === x.slug);
@@ -122,12 +141,32 @@ export function atlasIndex(): AtlasRecord[] {
     });
   }
 
+  // Dated sailings with a page of their own (the operator's published calendar). Each takes her ship's category and
+  // facts; lib/atlas/match.ts shows a sailing when the search gives dates or names it, so her ship stands for them otherwise.
+  feed("sailings");
+  for (const v of SEADREAM_VOYAGES) {
+    const reg = SHIP_REGISTRY.find((r) => r.slug === v.ship);
+    if (!reg || v.waitlisted || isPast(v.date)) continue; // waitlisted or already under way: not offered
+    const cols: Collection[] = [...(exceptionalFewForVessel(v.ship) ? (["the-exceptional-few"] as const) : []), ...(timelessVoyageFor(v.ship) ? (["timeless-voyages"] as const) : [])];
+    const c0 = v.countries[0] ?? reg.country[0] ?? null;
+    push({
+      id: `sailing:${v.ship}/${v.slug}`, kind: "sailing", name: `${v.title}, ${v.shipName}`, href: seadreamPath(v), filedAs: "Dated sailing", country: c0, countries: [...new Set([...v.countries, v.regionName])], region: countryOf(c0)?.region ?? null, regionLabel: v.regionName,
+      tagline: `${v.nights} nights, ${v.direction}`, image: v.hero?.url ?? null, mark: null, collections: cols,
+      interests: shipInterests({ types: reg.types, waters: reg.waters, activities: reg.traits?.activities ?? [], couples: false, publishesChildPolicy: reg.traits?.minChildAge !== undefined }),
+      standing: 0, bestMonths: null, departures: [[v.date, v.dateTo]], sleeps: null, minChildAge: reg.traits?.minChildAge ?? null,
+      price: v.from$ ? { amount: `US$${v.from$.toLocaleString("en-US")}`, basis: "per person, operator's published fare" } : null, booking: "request",
+      verdict: classifyShip(reg.types, reg.kind), keys: [`${v.ship}/${v.slug}`, v.ship],
+    });
+  }
+
   // Polar voyages and the private charter journeys.
+  feed("polar");
   for (const v of POLAR_VOYAGES) push({
     id: `voyage:${v.slug}`, kind: "voyage", name: v.name, href: voyagePath(v.slug), filedAs: "Polar voyage", country: "Antarctica", countries: [...v.regions, "Antarctica", "Polar"], region: "polar-antarctica", regionLabel: "Polar",
     tagline: v.tagline, image: v.hero?.url ?? null, mark: null, collections: [], interests: ["water", "wildlife", "adventure"], standing: 0, bestMonths: null, departures: openDepartures(v.sailings), sleeps: null, minChildAge: null, price: null, booking: "request",
     verdict: { category: "expedition-voyages", proposed: "expedition-voyages", review: false, reason: "Polar voyage" }, keys: [v.slug],
   });
+  feed("journeys");
   for (const j of JOURNEYS) push({
     id: `voyage:${j.slug}`, kind: "voyage", name: j.name, href: journeyPath(j.slug), filedAs: "Yacht charter journey", country: "Indonesia", countries: ["Indonesia"], region: countryOf("Indonesia")?.region ?? null, regionLabel: countryOf("Indonesia")?.regionName ?? null,
     tagline: j.line, image: j.hero?.url ?? null, mark: null, collections: [], interests: ["water", "islands", "adventure"], standing: 0, bestMonths: bestMonths("Indonesia"), departures: null, sleeps: null, price: null, booking: "request",
@@ -135,6 +174,7 @@ export function atlasIndex(): AtlasRecord[] {
   });
 
   // Route files: land journeys, safari journeys and voyage routes. A polar route already listed as a voyage is not repeated.
+  feed("routes");
   const listed = new Set(rows.map((r) => r.href));
   for (const [slug, t] of Object.entries(TRIPS)) {
     if (listed.has(t.seo.path)) continue;
@@ -151,11 +191,30 @@ export function atlasIndex(): AtlasRecord[] {
   }
 
   // Terra Y expedition dossiers.
+  feed("dossiers");
   for (const d of TY_DOSSIERS) push({
     id: `dossier:${d.slug}`, kind: "dossier", name: d.title, href: tyPath(d.slug), filedAs: "Expedition dossier", country: null, countries: [d.base], region: null, regionLabel: null,
     tagline: d.line, image: ty(d.hero.id, 900), mark: null, collections: [], interests: ["adventure"], standing: 0, bestMonths: null, departures: null, sleeps: null, price: null, booking: "request",
     verdict: { category: "overland-expeditions", proposed: "overland-expeditions", review: false, reason: "Terra Y expedition dossier" }, keys: [d.slug],
   });
 
-  return rows;
+  // What's Coming: announced, opening and rebuilding places with no stay page yet (one with a page is already a stay
+  // above). Never under a category and never offered as open: the card says what the operator has announced.
+  feed("coming");
+  const have = new Set(rows.map((r) => r.id));
+  for (const c of COMING) {
+    if (c.href || c.status === "reopened" || (c.ledgerId && (have.has(c.ledgerId) || held.has(c.ledgerId)))) continue;
+    rows.push({
+      id: c.ledgerId ?? `coming:${c.slug}`, kind: "coming", name: c.name, href: `/whats-coming#${c.slug}`, category: null, proposed: null, filedAs: comingLine(c), country: c.country, countries: c.country ? [c.country] : [],
+      region: c.regionSlug, regionLabel: regionLabel(c.regionSlug), tagline: c.tagline, image: c.hero, mark: null, collections: [], interests: [], standing: 0, bestMonths: null, departures: null, sleeps: null, price: null, booking: "request", offers: [],
+    });
+    ran.set(feeder, (ran.get(feeder) ?? 0) + 1);
+  }
+
+  const registered = (FEEDERS as { feeders: { id: string; label: string }[] }).feeders;
+  const unknown = [...ran.keys()].filter((id) => !registered.some((f) => f.id === id)), idle = registered.filter((f) => !ran.has(f.id)).map((f) => f.id);
+  if (unknown.length || idle.length) throw new Error(`Atlas feeders out of step with lib/atlas/feeders.json. Not registered: ${unknown.join(", ") || "none"}. Registered but never run: ${idle.join(", ") || "none"}.`);
+  return { rows, rulings, feeders: registered.map((f) => ({ id: f.id, label: f.label, rows: ran.get(f.id) ?? 0 })) };
 }
+
+export const atlasIndex = (): AtlasRecord[] => atlasBuild().rows;

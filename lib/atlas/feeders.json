@@ -1,0 +1,60 @@
+{
+  "_": "The Atlas coverage register (James, 23 Nov 2026: 'so Atlas can now grow with the site build'). Every public section and every record page route of the site is either FED into the Atlas by a named feeder in lib/atlas/build.ts, or listed OUTSIDE with the reason. tests/atlas-coverage.test.ts fails the build when a new section or record route appears in app/ and is in neither list, so a new volume cannot ship without the Atlas knowing about it.",
+  "feeders": [
+    { "id": "stays", "label": "Stays", "routes": ["/stays/[slug]"], "sections": ["stays", "gatherings", "europe", "the-exceptional-few"], "note": "Every stay with a published page. Gatherings residences, Other Europe houses and The Exceptional Few are stays on the Ledger, so they arrive here." },
+    { "id": "reserves", "label": "Safari reserves and their camps", "routes": ["/safaris/[reserve]", "/safaris/[reserve]/[camp]"], "sections": ["safaris"] },
+    { "id": "ships", "label": "Ships and yachts", "routes": ["/voyages/ships/[ship]"], "sections": ["voyages"] },
+    { "id": "sailings", "label": "Dated sailings", "routes": ["/voyages/ships/[ship]/[voyage]"], "sections": [], "note": "One row per published sailing with its own page. Shown when the search gives dates or names the sailing; otherwise her ship stands for them." },
+    { "id": "polar", "label": "Polar voyages", "routes": ["/voyages/polar/[voyage]"], "sections": [] },
+    { "id": "journeys", "label": "Yacht charter journeys", "routes": ["/voyages/indonesia/[journey]"], "sections": [] },
+    { "id": "routes", "label": "Voyage and overland routes", "routes": ["/voyages/[waters]/[voyage]", "/overland/[country]/[route]"], "sections": ["overland"] },
+    { "id": "dossiers", "label": "Terra Y expedition dossiers", "routes": ["/overland/terra-y/[dossier]"], "sections": [] },
+    { "id": "coming", "label": "What's Coming", "routes": [], "sections": ["whats-coming"], "note": "Announced, opening and rebuilding places that have no stay page yet. Shown as not open; never under a category." }
+  ],
+  "outside": {
+    "routes": {
+      "/collections/[slug]": "A collection is a filter in the Atlas (The Exceptional Few, Timeless Voyages), not a result.",
+      "/destinations/[region]": "A place is what the traveller types in Where, not a result.",
+      "/destinations/[region]/[country]": "A place is what the traveller types in Where, not a result.",
+      "/destinations/[region]/[country]/[place]": "A place is what the traveller types in Where, not a result.",
+      "/voyages/[waters]": "A waters hub is a place, not a result.",
+      "/overland/[country]": "A country hub is a place, not a result.",
+      "/pathways/[key]": "A Wild Pathway feeds the Interests filter, not a result.",
+      "/partners/[partner]": "Reading, not bookable. Second pass (James to rule).",
+      "/journal/[slug]": "Reading, not bookable. Second pass (James to rule).",
+      "/wildlife/[slug]": "Reading, not bookable. Second pass (James to rule).",
+      "/advisors/[slug]": "People, not places. The Atlas returns where to go.",
+      "/legal/[doc]": "House terms.",
+      "/booking/property/[slug]": "Booking Live step, reached from a stay.",
+      "/booking/quote/[id]": "A traveller's own quote, private.",
+      "/journal-style/samples/[variant]/[slug]": "Design samples, not public records.",
+      "/journal-style/stays/[slug]": "Design samples, not public records."
+    },
+    "sections": {
+      "about": "House pages.",
+      "advisors": "People, not places.",
+      "atlas": "The Atlas itself.",
+      "booking": "Booking Live steps.",
+      "collections": "Collections are Atlas filters.",
+      "compass": "A planning instrument.",
+      "destinations": "Places are the Atlas Where box.",
+      "field-guides": "Reading, not bookable. Second pass (James to rule).",
+      "folio": "A traveller's own Folio.",
+      "for-advisors": "Trade page.",
+      "how-the-house-works": "House page.",
+      "journal": "Reading, not bookable. Second pass (James to rule).",
+      "journal-style": "Design samples.",
+      "legal": "House terms.",
+      "offers": "Offers ride on the place they apply to; they are not results of their own.",
+      "partners": "Reading, not bookable. Second pass (James to rule).",
+      "pathways": "Pathways feed the Interests filter.",
+      "plan": "The enquiry form.",
+      "search": "The site search.",
+      "the-ledger": "House page.",
+      "travel-notes": "Newsletter sign-up.",
+      "wildlife": "Reading, not bookable. Second pass (James to rule).",
+      "workshops": "Sessions, not places. Second pass (James to rule)."
+    },
+    "private": ["account", "advisor", "api", "auth", "desk", "img", "og", "partner", "preview", "llms.txt"]
+  }
+}

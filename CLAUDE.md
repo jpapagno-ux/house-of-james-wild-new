@@ -62,6 +62,12 @@
   and Sable Camp. Never label, credit or group them as &Beyond, anywhere: stays, maps, journeys, Grand Traverse, Atlas,
   Iggi, partners. Source is tengilemalamala.com only, never andbeyond.com. `tests/brand-rules.test.ts` fails on drift.
 
+## The Atlas grows with the site (James, 23 Nov 2026)
+- Every public section and record page route is either fed into the Atlas by a named feeder (`lib/atlas/build.ts`) or
+  listed outside it with a reason, in `lib/atlas/feeders.json`. `tests/atlas-coverage.test.ts` fails when a new section
+  or record route is in neither list: add the feeder, or write the reason, in the same change that adds the volume.
+- New records the rules cannot file are listed at `/desk/atlas` for James's ruling (`lib/atlas/category-decisions.json`).
+
 ## Dates (James, 1 Nov 2026)
 - Dated content (offers, departures, sailings, sessions) is hidden automatically once its end date
   passes; the site rebuilds daily. Weekly and monthly syncs (to be built) also re-check terms and

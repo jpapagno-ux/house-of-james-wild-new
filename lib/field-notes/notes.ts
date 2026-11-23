@@ -42,6 +42,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
     image: { publicId: "jwco/illustrations/field-notes/giant-river-otter", version: 1795449975, alt: "Watercolour of a giant river otter raised from dark lake water, showing its pale throat patch", width: 1000, height: 747, scene: true },
     where: { label: "See the Amazon ships", href: "/voyages/amazon#ships-h" },
     sources: [
+      "World Land Trust, 'Giant Otter': IUCN Red List status Endangered.",
       "Noonan, P., Prout, S. and Hayssen, V., 'Pteronura brasiliensis (Carnivora: Mustelidae)', Mammalian Species 49(953), 2017: largest freshwater otter, slow rivers and creeks, fish diet, length to 1,800 mm.",
       "Smithsonian Insider, 'With voices joined in chorus, giant otter families create a distinct sound signature', 2017: family choruses; individuals identified by white throat patches.",
       "World Land Trust species account, 'Giant Otter': throat patches unique to each individual; family groups.",
@@ -130,6 +131,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
     image: { publicId: "jwco/illustrations/field-notes/red-ruffed-lemur", version: 1795449969, alt: "Watercolour of a red ruffed lemur on a mossy branch above the Masoala rainforest", width: 1000, height: 747, scene: true },
     where: { label: "Stay at Masoala Forest Lodge", href: "/stays/masoala-forest-lodge" },
     sources: [
+      "Marwell Wildlife, 'Red-ruffed lemur': Critically Endangered; threats from hunting, logging and cyclones on the Masoala peninsula; protected in Masoala National Park.",
       "Primate Info Net, Wisconsin National Primate Research Center, 'Ruffed lemur' factsheet: chestnut-red coat with a white nape; primary range the Masoala peninsula east of the Bay of Antongil.",
       "Animal Diversity Web, University of Michigan Museum of Zoology, 'Varecia rubra': upper canopy of rainforest; diet mostly fruit, nectar and pollen; black face, hands, feet and tail; alarm calls; active by day.",
       "Duke Lemur Center, 'Red Ruffed Lemur': loud calls heard up to half a mile away; primary rainforest canopy.",
@@ -166,6 +168,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
     image: { publicId: "jwco/illustrations/field-notes/aye-aye", version: 1795449848, alt: "Watercolour of an aye-aye at night tapping a mossy branch with its long middle finger", width: 1000, height: 747, scene: true },
     where: { label: "Plan Madagascar with James", href: "/plan?destination=madagascar" },
     sources: [
+      "WWF, 'Meet the aye-aye, the world's weirdest primate': Endangered; threats are hunting and loss of habitat.",
       "Duke Lemur Center, 'Aye-aye (Daubentonia madagascariensis)': world's largest nocturnal primate; large ears; skeletal middle finger; tail longer than the body.",
       "National Geographic, 'Aye-aye': taps trees with the long middle finger, listens for larvae under the bark and fishes them out; nocturnal.",
       "Erickson, C. J. et al., 'Percussive foraging: stimuli for prey location by aye-ayes', Duke University: taps wood to find cavities, then gnaws to extract prey.",
@@ -202,6 +205,7 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
     image: { publicId: "jwco/illustrations/field-notes/humpback-whale-antongil-bay", version: 1795449908, alt: "Watercolour of a humpback whale breaching in a calm bay below forested hills", width: 1000, height: 747, scene: true },
     where: { label: "Stay at Masoala Forest Lodge", href: "/stays/masoala-forest-lodge" },
     sources: [
+      "Wildlife Conservation Society Madagascar, news release on satellite tagging: about 7,000 to 8,000 humpbacks estimated to migrate to Madagascar each year; strictly protected under Malagasy fisheries law.",
       "Wildlife Conservation Society Madagascar, 'Humpback whale': migration from Antarctic feeding grounds, arriving off southern Madagascar in May, last whales leaving in December; breeding and calving habitat including Antongil Bay; studied by WCS since 1996.",
       "Royal Society Open Science (2018), humpback song study with recordings at Antongil Bay, Madagascar.",
     ],
@@ -500,7 +504,7 @@ export const SPECIES_PAGES: Record<string, SpeciesPage> = {
     title: "Where to See Mouse Lemurs, the World's Smallest Primates",
     answer: "Mouse lemurs live only in Madagascar and are the smallest primates on earth. The smallest species, Madame Berthe's mouse lemur, weighs about 30 grams. They are active at night, so you look for them on a night walk, by the shine of their eyes in a headlamp. Different species live in different forests across the island.",
     qa: [
-      { q: "How small is a mouse lemur?", a: "Mouse lemurs weigh from about 30 to 65 grams. Madame Berthe's mouse lemur, at an average of 30.6 grams and around nine to eleven centimetres in body length, is the smallest living primate." },
+      { q: "How small is a mouse lemur?", a: "Mouse lemurs weigh from about one ounce to four. Madame Berthe's mouse lemur, at an average of 30.6 grams and around nine to eleven centimetres in body length, is the smallest living primate." },
       { q: "Where does the smallest one live?", a: "Madame Berthe's mouse lemur lives in the dry deciduous forests of western Madagascar, in the Menabe region." },
       { q: "What do mouse lemurs eat?", a: "Insects, fruit, flowers and other plants, gathered at night." },
       { q: "Why do they have fat tails?", a: "They store fat in the tail in the wet season and live off it through the dry season." },

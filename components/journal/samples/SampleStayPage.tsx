@@ -123,7 +123,7 @@ export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
 export type SampleRoom = { name: string; sleeps: number | null; list: string | null; now: string | null; basis?: string; facts?: string[]; lede?: string | null; features?: string[]; flag?: string; photo?: { url: string; alt: string } | null; action?: React.ReactNode };
 export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar, footnote }: { v: View; variant: Variant; rooms: SampleRoom[]; roomsFallback?: React.ReactNode; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null }) {
   const { s } = v;
-  const priced = rooms.map((r) => r.now).filter(Boolean) as string[];
+  const priced = rooms.map((r) => r.now ?? r.list).filter(Boolean) as string[];
   const pwName = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug)?.primary.name ?? null : null;
   const glance: { icon: FieldIconName; label: string; value: string; wide?: boolean }[] = [
     ...(v.suited.length ? [{ icon: "frond" as FieldIconName, label: "Best for", value: v.suited.join(", "), wide: true }] : []),

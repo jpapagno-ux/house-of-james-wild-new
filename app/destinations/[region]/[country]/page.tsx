@@ -13,7 +13,7 @@ import { COUNTRY_NOTES } from "@/lib/content/place-notes";
 import { countryCounts, isResidence } from "@/lib/content/ledger-counts";
 import { RESERVES } from "@/lib/content/reserves";
 import FaqBlock from "@/components/ledger/FaqBlock";
-import FieldNoteCard from "@/components/field-notes/FieldNoteCard";
+import FieldNoteSet from "@/components/field-notes/FieldNoteSet";
 import { FIELD_NOTES, COUNTRY_FIELD_NOTES } from "@/lib/field-notes/notes";
 import IggiPanel from "@/components/iggi/IggiPanel";
 import WhoPlans, { whoPlansSchema } from "@/components/advisor/WhoPlans";
@@ -437,7 +437,7 @@ export default async function CountryPage({ params }: { params: Promise<{ region
             <section id="field-notes" className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="field-notes-heading">
               <p className="ledger-eyebrow ledger-crimson">From the field</p>
               <h2 id="field-notes-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-8">What Lives in {c.name}?</h2>
-              <div className="grid gap-8">{COUNTRY_FIELD_NOTES[c.slug].map((id) => <FieldNoteCard key={id} note={FIELD_NOTES[id]} />)}</div>
+              <FieldNoteSet notes={COUNTRY_FIELD_NOTES[c.slug].map((id) => FIELD_NOTES[id])} />
             </section>
           )}
 

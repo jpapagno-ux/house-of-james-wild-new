@@ -1,7 +1,7 @@
 import VoyageHub from "@/components/ships/VoyageHub";
 import { HubSection } from "@/components/hub/Hub";
-import FieldNoteCard from "@/components/field-notes/FieldNoteCard";
-import { FIELD_NOTES } from "@/lib/field-notes/notes";
+import FieldNoteSet from "@/components/field-notes/FieldNoteSet";
+import { FIELD_NOTES, AMAZON_HUB_NOTES } from "@/lib/field-notes/notes";
 import { watersHub } from "@/lib/content/ships/hubs";
 import { buildMetadata } from "@/lib/seo";
 
@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <VoyageHub {...H} after={
       <HubSection eyebrow="From the river" title="What Lives in These Waters?" id="field-notes-h">
-        <FieldNoteCard note={FIELD_NOTES["pink-river-dolphin"]} />
+        <FieldNoteSet notes={AMAZON_HUB_NOTES.map((id) => FIELD_NOTES[id])} />
       </HubSection>
     } />
   );

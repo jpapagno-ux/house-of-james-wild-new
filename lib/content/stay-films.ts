@@ -33,7 +33,7 @@ export const STAY_FILMS: Record<string, WideFilm> = {
     poster: `${CLD}/so_2,q_auto,f_jpg,w_1920/jwco/stays/wymara/film.jpg`,
     title: "Wymara Resort + Villas, Turks and Caicos",
     credit: "Film courtesy of Wymara Resort + Villas",
-    hero: true,
+    // not on the hero: the film reads grainy full screen, so the photograph leads (James, 23 Nov 2026)
   },
   // Salterra's own resort film (20 s, 4K) from salterra.com (13 Nov 2026).
   salterra: {

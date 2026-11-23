@@ -147,6 +147,7 @@ def text(s):
     s = re.sub(r"<[^>]+>", "", s)
     s = html.unescape(s).replace("‍", "").replace("\xa0", " ").replace("—", ", ")
     s = s.replace("Wild Earth Stays", "James Wild & Co")
+    s = re.sub(r"[ \t]+,", ",", s)  # no stray space before a comma where a dash was replaced (James, 23 Nov 2026)
     return re.sub(r"[ \t]+", " ", s).strip()
 
 def block(raw):

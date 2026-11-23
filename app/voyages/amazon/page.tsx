@@ -15,10 +15,7 @@ export default function Page() {
   return (
     <VoyageHub {...H} after={
       <HubSection eyebrow="From the river" title="What Lives in These Waters?" id="field-notes-h">
-        <div className="grid gap-8">
-          <FieldNoteCard note={FIELD_NOTES["pink-river-dolphin-scene"]} />
-          <FieldNoteCard note={FIELD_NOTES["pink-river-dolphin"]} />
-        </div>
+        <FieldNoteCard note={FIELD_NOTES["pink-river-dolphin"]} />
       </HubSection>
     } />
   );

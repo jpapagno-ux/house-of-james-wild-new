@@ -1,6 +1,7 @@
 // Field Notes (James, 22 Nov 2026): one short species note with a house watercolour, on destination and
-// river pages. SAMPLE: the facts below are not yet sourced. `sources` must be filled (research paper or
-// conservation body, never printed as a link) before a note is merged to main.
+// river pages. Every note files its `sources` here (research paper, museum or conservation body), never printed
+// as a link. A note with no sources must not be placed on a page: tests/field-notes.test.ts fails on it.
+// Watercolours are house illustrations made with Cloudinary AI; a scene keeps its painted setting.
 export type FieldNote = {
   id: string; region: string; no: string; title: string; latin: string; body: string;
   rows: { label: string; text: string }[];
@@ -20,22 +21,12 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       { label: "Ask your guide", text: "Which flooded channels they use in high water." },
       { label: "When", text: "High-water months, when the forest floods." },
     ],
-    image: { publicId: "samples/field-notes/pink-river-dolphin-watercolour", version: 1795351764, alt: "Watercolour of a pink river dolphin, side view, with a long thin beak", width: 1000, height: 402 },
-    where: { label: "See them from the river", href: "#ships-h" },
-    sources: [],
-  },
-  "pink-river-dolphin-scene": {
-    id: "pink-river-dolphin-scene", region: "Amazon", no: "01 · in the river",
-    title: "The pink river dolphin", latin: "Inia geoffrensis, the boto · Amazon and Orinoco",
-    body: "When the rains lift the river into the forest, the boto follows it in, swimming between the trunks. Its neck bones are not fused, so it can turn its head to steer through flooded trees. Males grow pinker with age and with the scars of fighting.",
-    rows: [
-      { label: "Look for", text: "A long, thin beak and a low ridge where you expect a fin." },
-      { label: "Listen for", text: "The soft puff of breath before you see anything." },
-      { label: "Ask your guide", text: "Which flooded channels they use in high water." },
-      { label: "When", text: "High-water months, when the forest floods." },
-    ],
     image: { publicId: "samples/field-notes/pink-river-dolphin-scene-watercolour", version: 1795357148, alt: "Watercolour of a pink river dolphin surfacing in dark water beside flooded forest", width: 1000, height: 747, scene: true },
     where: { label: "See them from the river", href: "#ships-h" },
-    sources: [],
+    sources: [
+      "Martin, A. R. and da Silva, V. M. F., 'Sexual dimorphism and body scarring in the boto (Amazon River dolphin) Inia geoffrensis', Marine Mammal Science (University of St Andrews research portal): males pinker than females and more heavily scarred by tooth rakes.",
+      "Animal Diversity Web, University of Michigan Museum of Zoology, 'Inia geoffrensis': range, body colour changing with age, movement into floodplains and flooded forest in the wet season.",
+      "National Geographic, 'Amazon river dolphins (boto)': unfused neck vertebrae letting the boto bend between flooded trees.",
+    ],
   },
 };

@@ -25,6 +25,7 @@ import Inclusions from "@/components/booking/Inclusions";
 import BookingPanel from "@/components/booking/BookingPanel";
 import StayActions from "@/components/booking-live/StayActions";
 import TalkToUs, { ContactBar, ContactPill } from "@/components/record/TalkToUs";
+import FieldNoteTry, { EdgyCorners, FIELD_NOTE_TRY } from "@/components/stay/FieldNoteTry";
 import WhyFilm from "@/components/record/WhyFilm";
 import MarginNote from "@/components/notes/MarginNote";
 import HeroMark from "@/components/notes/HeroMark";
@@ -327,6 +328,8 @@ export default async function StayPageBody({ slug, house = false }: { slug: stri
         <ComingBanner slug={s.slug} />
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           <div className="pt-6"><Breadcrumbs trail={trail} /></div>
+          {/* One live try (James, 23 Nov 2026): the founder's field note, animated, and the tinted page corners. */}
+          {FIELD_NOTE_TRY.has(s.slug) && s.founderNote && <><FieldNoteTry note={s.founderNote} ledgerId={s.ledgerId} place={[place?.name, s.country].filter(Boolean).join(", ") || null} /><EdgyCorners /></>}
           {boat && (
             <aside aria-label="A voyage" className="mt-6 border ledger-border p-5 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div><p className="ledger-eyebrow" style={{ color: volumeInk("voyages") }}>Voyage · {boat.name}</p><p className="mt-1 text-[15.5px]">{s.name} is a {boat.kind}, filed in the Voyages volume, not among the stays. Her ship page, cabins, routes, dates and fares, is being built; until then this is her Ledger record.</p></div>

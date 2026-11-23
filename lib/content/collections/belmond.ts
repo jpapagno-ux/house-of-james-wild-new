@@ -7,7 +7,7 @@
 // Villa San Michele (Florence) is to be added later (Follow-Up Board).
 // Cap Juluca, A Belmond Hotel, Anguilla, added 21 Nov 2026 (James: "we have Cap Juluca as a partner lodge ...
 // update a full Belmond partner section"). Facts from belmond.com; stay record STY-2026-000772, filed the same day.
-// Its card is not linked (built: false) until the library sync has brought the stay page onto the site.
+// Its stay page is live and its card is linked (James, 23 Nov 2026).
 
 import type { CollectionHotel, CollectionImage } from "@/lib/content/collections/cayuga";
 
@@ -105,7 +105,7 @@ export const BELMOND = {
       image: img(`${CJ}/hero`, "Two guests carrying a paddleboard along the white sand of Maundays Bay past the beachfront villas of Cap Juluca, A Belmond Hotel, Anguilla", 2580, 1299),
       gallery: [],
       official: { who: "For Anguilla from the beach.", facts: "20 minutes by boat or a 7 minute flight from St Maarten; the hotel's team meets you at the airport." },
-      built: false, // the stay page arrives with the next library sync (STY-2026-000772)
+      built: true, // stay page live (STY-2026-000772), 23 Nov 2026
     },
   ] as CollectionHotel[],
   pairings: [

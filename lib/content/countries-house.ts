@@ -8,7 +8,8 @@ import type { CountryData } from "./countries";
 // Tourist Board and the Government of Anguilla. contentStatus stays "none" until James has read each page.
 // Founder marks (James, 21 Nov 2026): he sailed these islands in 2024 aboard Windstar's Wind Surf and SeaDream II,
 // and was back on St Maarten, St Barths and Anguilla in August 2025. Cap Juluca on Anguilla is a house partner; its
-// stay record is not filed yet, so the page names it and says nothing more about the property (Sources rule).
+// stay page went live on 23 Nov 2026 (STY-2026-000772), so Anguilla is a full page now: its hero is Cap Juluca's own
+// credited photograph and staysComing is off. St Barths is still a destination card.
 // The library already holds St Barths as DST-2026-000063 (slug st-barths, coming soon), so the card uses that slug and
 // name and picks up its Ledger ID; Anguilla is DST-2026-000113, created 21 Nov 2026 with Cap Juluca.
 // No photograph is on file yet (hero.src null, never a stand-in): the licensed Getty heroes arrived at preview
@@ -82,7 +83,7 @@ export const HOUSE_CARDS: CountryData[] = [
     slug: "anguilla", name: "Anguilla", ...REGION,
     subtitle: "Thirty-three beaches on a flat coral island, nine miles from St Martin",
     leading: "Anguilla is the most northerly of the Leeward Islands: 35 square miles of coral and limestone, 16 miles long and 3 wide, ringed by 33 beaches and a handful of uninhabited cays. It is a self-governing British Overseas Territory, quiet by design, and most people reach it by a 25 minute boat from St Maarten.",
-    hero: { src: null, alt: "Anguilla, Caribbean" },
+    hero: { src: "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/anguilla/belmond-cap-juluca/hero", alt: "Two guests carrying a paddleboard along the white sand of Maundays Bay past the beachfront villas of Cap Juluca, Anguilla" },
     story: [
       { eyebrow: "Anguilla · the place", title: "Flat, Bright and Unhurried", image: { src: null, alt: "Anguilla: a white sand beach" }, blocks: [
         { p: "Anguilla has no mountains and no rainforest. It is a low island of coral and limestone. It lies about 150 miles east of Puerto Rico and nine miles north of St Martin, with The Valley as its small capital." },
@@ -93,11 +94,10 @@ export const HOUSE_CARDS: CountryData[] = [
         { h: "The West End", p: "Meads Bay, Rendezvous Bay, Maundays Bay, Barnes Bay, Long Bay and Cove Bay: long arcs of soft sand on calm water, and the beaches the island is known for." },
         { h: "Sandy Ground and Sandy Island", p: "Sandy Ground is the island's harbour beach. From it a shuttle runs ten minutes out to Sandy Island, a strip of sand with palms, a lunch table and a reef to snorkel." },
         { h: "Prickly Pear and Scilly Cay", p: "Prickly Pear is twenty minutes by boat from Sandy Ground, for snorkelling, swimming and a long lunch. Scilly Cay is three minutes from the wharf at Island Harbour, known for lobster and rum punch. Anguilla has seven cays in all." },
-        { h: "The founder's Anguilla", p: "James knows these waters from the deck: he sailed them in 2024 aboard Windstar's Wind Surf and SeaDream II, and came back to Anguilla in August 2025 on a trip that took in St Maarten and St Barths. Cap Juluca is the house's partner stay on the island, and its page is coming." },
+        { h: "The founder's Anguilla", p: "James knows these waters from the deck: he sailed them in 2024 aboard Windstar's Wind Surf and SeaDream II, and came back to Anguilla in August 2025 on a trip that took in St Maarten and St Barths. Cap Juluca, on Maundays Bay, is the house's partner stay on the island." },
         { h: "By sea", p: "Anguilla is a port of call for Four Seasons I in the Ledger, and it pairs easily with St Barths and St Martin on a week under sail or by short boat hops." },
       ] },
     ],
-    staysComing: true,
     facts: [
       ["Best months", "December to April is the island's main season. Rainfall is low all year, about 35 inches, and the Tourist Board puts the rainy season from September."],
       ["Getting there", "Fly into St Maarten (SXM), then about 25 minutes by boat from the Anguilla St Maarten Ferry Terminal across from the airport, or 30 minutes by public ferry. All ferries arrive at Blowing Point. Anguilla's own airport is Clayton J. Lloyd International (AXA)."],
@@ -113,7 +113,7 @@ export const HOUSE_CARDS: CountryData[] = [
       { q: "How big is Anguilla?", a: "35 square miles: 16 miles long and 3 miles wide at its widest point. It is flat, made of coral and limestone, and easy to cross end to end." },
       { q: "Is Anguilla British?", a: "Yes. Anguilla is a self-governing British Overseas Territory. English is the language and the capital is The Valley." },
       { q: "What currency does Anguilla use?", a: "The Eastern Caribbean dollar. US dollars are widely accepted." },
-      { q: "Has James been to Anguilla?", a: "Yes. James was on Anguilla in August 2025, on a trip that also took in St Maarten and St Barths, and he sailed these islands in 2024 aboard Windstar's Wind Surf and SeaDream II. Cap Juluca is the house's partner stay there." },
+      { q: "Has James been to Anguilla?", a: "Yes. James was on Anguilla in August 2025, on a trip that also took in St Maarten and St Barths, and he sailed these islands in 2024 aboard Windstar's Wind Surf and SeaDream II. Cap Juluca, A Belmond Hotel, on Maundays Bay is the house's partner stay there." },
       { q: "Can you visit Sandy Island from Anguilla?", a: "Yes. A shuttle runs from Sandy Ground to Sandy Island in about ten minutes. Prickly Pear is about twenty minutes by boat from the same beach." },
     ],
     contentStatus: "none",

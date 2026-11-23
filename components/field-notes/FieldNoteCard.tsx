@@ -1,10 +1,12 @@
-import type { FieldNote } from "@/lib/field-notes/notes";
+import Link from "next/link";
+import { SPECIES_PAGES, type FieldNote } from "@/lib/field-notes/notes";
 
 // A Field Note: white card, crimson top rule, a house watercolour cut out by Cloudinary, three plain lines.
 // One or two per page; no outbound links; the "where" link stays inside the house.
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
 
-export default function FieldNoteCard({ note }: { note: FieldNote }) {
+export default function FieldNoteCard({ note, onOwnPage = false }: { note: FieldNote; onOwnPage?: boolean }) {
+  const more = !onOwnPage && SPECIES_PAGES[note.id] ? `/wildlife/${note.id}` : null;
   // A cut-out animal has its paper removed; a scene keeps its painted setting, which fades into the white card.
   const fx = note.image.scene ? "" : "e_background_removal/e_trim:10/";
   const src = (w: number) => `${CLD}/${fx}w_${w},f_auto,q_auto/v${note.image.version}/${note.image.publicId}`;
@@ -27,7 +29,10 @@ export default function FieldNoteCard({ note }: { note: FieldNote }) {
             </div>
           ))}
         </dl>
-        <a href={note.where.href} className="ledger-btn-ghost mt-5 inline-flex">{note.where.label}</a>
+        <div className="mt-5 flex flex-wrap gap-x-8 gap-y-3">
+          <a href={note.where.href} className="ledger-btn-ghost inline-flex">{note.where.label}</a>
+          {more && <Link href={more} className="ledger-btn-ghost inline-flex">Where and how to see it</Link>}
+        </div>
       </div>
     </article>
   );

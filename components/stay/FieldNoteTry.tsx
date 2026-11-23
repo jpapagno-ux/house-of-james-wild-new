@@ -10,8 +10,6 @@ import { useEffect, useRef, useState } from "react";
 // for the page corners. The note comes only from the Ledger (founderNote); nothing renders without one.
 // Reduced motion: everything shows finished, nothing moves.
 
-export const FIELD_NOTE_TRY = new Set(["ellerman-house"]);
-
 function split(note: string): { line: string; sign: string } {
   const clean = note.replace(/\s*,\s*JW\s*$/i, "").trim();
   const m = clean.match(/^(.*?)\s*(Stayed [^.]+\.?.*)$/);

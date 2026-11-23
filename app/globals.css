@@ -889,3 +889,9 @@ li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in s
     radial-gradient(60vmax 40vmax at 0% 100%, rgba(90, 31, 35, 0.55), rgba(58, 28, 31, 0.25) 35%, transparent 62%),
     radial-gradient(60vmax 40vmax at 100% 100%, rgba(26, 24, 22, 0.55), rgba(46, 43, 40, 0.22) 35%, transparent 62%); }
 @media (prefers-reduced-motion: reduce) { .jw-fieldnote__card, .jw-corner, .jw-fieldnote__sign { transition: none; } .jw-tag { animation: none; } .jw-stamp { opacity: 0.82; transform: rotate(-9deg); animation: none !important; } }
+@media (max-width: 640px) {
+  .jw-tag { right: 10px; top: -26px; }
+  .jw-tag__card { padding: 13px 8px 7px; }
+  .jw-tag__card .text-\[12px\] { font-size: 10.5px; }
+  .jw-fieldnote__card > p:first-of-type { padding-right: 118px; }
+}

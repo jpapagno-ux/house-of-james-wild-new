@@ -126,7 +126,7 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
   const priced = rooms.map((r) => r.now ?? r.list).filter(Boolean) as string[];
   const pwName = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug)?.primary.name ?? null : null;
   const glance: { icon: FieldIconName; label: string; value: string; wide?: boolean }[] = [
-    ...(v.suited.length ? [{ icon: "frond" as FieldIconName, label: "Best for", value: v.suited.join(", "), wide: true }] : []),
+    ...(v.suited.length ? [{ icon: "frond" as FieldIconName, label: "Best for", value: v.suited.slice(0, 3).join(", "), wide: true }] : []),
     ...(s.bestMonths ? [{ icon: "sun" as FieldIconName, label: "Best months", value: s.bestMonths }] : []),
     ...(rooms.length ? [{ icon: "porthole" as FieldIconName, label: "Rooms", value: `${rooms.length} room type${rooms.length === 1 ? "" : "s"}` }] : []),
     ...(priced.length ? [{ icon: "anchor" as FieldIconName, label: "From", value: `${priced[0]} ${basis.split("·")[0].trim()}` }] : []),
@@ -238,7 +238,7 @@ export function SampleExpect({ v, cards, children }: { v: View; cards: { title: 
     ...(s.experiences.items.length ? [{ title: "Things to do", body: list(s.experiences.items) }] : []),
     ...(s.features.items.length || s.features.paras.length ? [{ title: "What the stay gives you", body: <>{s.features.paras.length > 0 && <div className="space-y-3">{s.features.paras.map((x) => <p key={x}>{x}</p>)}</div>}{s.features.items.length > 0 && <div className={s.features.paras.length ? "mt-3" : ""}>{list(s.features.items)}</div>}</> }] : []),
     ...(!told && s.facts.signature_experiences ? [{ title: "Signature experiences", body: <p>{s.facts.signature_experiences}</p> }] : []),
-    ...(s.facts.who_its_for ? [{ title: "Who it is for", body: <p>{s.facts.who_its_for}</p> }] : []),
+    // "Who it is for" is not repeated here: Best for sits in the at-a-glance facts at the top (James, 23 Nov 2026).
   ];
   if (!rows.length && !s.experiences.paras.length && !shown.length) return null;
   return (

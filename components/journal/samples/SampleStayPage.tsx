@@ -118,7 +118,7 @@ export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
 // The body: the answer paragraph, then the stay told in photographs, in the sample's own order.
 // rooms: the same rows the stay page prints (rate-card rooms with their filed rates, or the house room library), with the page's own room pick
 export type SampleRoom = { name: string; sleeps: number | null; list: string | null; now: string | null; basis?: string; facts?: string[]; lede?: string | null; features?: string[]; flag?: string; photo?: { url: string; alt: string } | null; action?: React.ReactNode };
-export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: { v: View; variant: Variant; rooms: SampleRoom[]; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null }) {
+export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar, footnote }: { v: View; variant: Variant; rooms: SampleRoom[]; roomsFallback?: React.ReactNode; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null }) {
   const { s } = v;
   const used = new Set<string>([v.frames[0].url]);
   const pool: ViewerPhoto[] = v.photos;
@@ -129,10 +129,11 @@ export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: {
   };
   const chapters = [
     s.onlyHere[0] ? { label: s.country ?? "The place", title: "Only Here", text: [s.onlyHere[0]], photo: take("exterior", null) } : null,
-    s.onlyHere[1] ? { label: "Before you go", title: "Good to Know", text: [s.onlyHere[1]], photo: take("exterior", "pool", null) } : null,
+    s.onlyHere[1] ? { label: "Before you go", title: "Good to Know", text: s.onlyHere.slice(1), photo: take("exterior", "pool", null) } : null,
   ].filter((c): c is { label: string; title: string; text: string[]; photo: Shot } => !!c && !!c.photo);
 
-  const Rooms = rooms.length > 0 && (
+  // no room cards filed: the house room record or the filed rooms text, in the same place
+  const Rooms = rooms.length === 0 ? (roomsFallback ? <div className={`${WRAP} ${GAP} scroll-mt-32`}>{roomsFallback}</div> : null) : (
     <section id="rooms" aria-label="Rooms" className={`!bg-mist ${GAP}`}>
       <div className={WRAP}>
         <Head icon="tree-ring" label="Rooms" title="Where You’ll Sleep" />
@@ -167,6 +168,7 @@ export function SampleBody({ v, variant, rooms, basis, promo, bar, footnote }: {
       <section id="why" aria-label="Why it is here" className={`${WRAP} ${GAP} scroll-mt-32`}>
         <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why We Added It to the Portfolio" />
         <p className={`${T.lead} mt-5 max-w-3xl text-graphite`}>{v.answer}</p>
+        {s.why.filter((w) => !w.title).length > 0 && <div className={`${T.body} mt-6 max-w-[62ch] space-y-4 text-graphite`}>{s.why.filter((w) => !w.title).map((w) => <p key={w.body}>{w.body}</p>)}</div>}
         {s.why.filter((w) => w.title).length > 0 && (
           <div className="mt-10 max-w-3xl border-b border-[color:var(--jw-hairline)] [&>div]:!bg-transparent [&_h3_span]:italic">
             {s.why.filter((w) => w.title).map((w, i) => <AccordionRow key={w.title} as="h3" title={w.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{w.body}</AccordionRow>)}
@@ -208,7 +210,7 @@ export function SampleExpect({ v, cards, children }: { v: View; cards: { title: 
   const told = s.experiences.paras.length > 0 || s.experiences.items.length > 0;
   const rows = [
     ...(s.experiences.items.length ? [{ title: "Things to do", body: list(s.experiences.items) }] : []),
-    ...(s.features.items.length ? [{ title: "What the stay gives you", body: list(s.features.items) }] : []),
+    ...(s.features.items.length || s.features.paras.length ? [{ title: "What the stay gives you", body: <>{s.features.paras.length > 0 && <div className="space-y-3">{s.features.paras.map((x) => <p key={x}>{x}</p>)}</div>}{s.features.items.length > 0 && <div className={s.features.paras.length ? "mt-3" : ""}>{list(s.features.items)}</div>}</> }] : []),
     ...(!told && s.facts.signature_experiences ? [{ title: "Signature experiences", body: <p>{s.facts.signature_experiences}</p> }] : []),
     ...(s.facts.who_its_for ? [{ title: "Who it is for", body: <p>{s.facts.who_its_for}</p> }] : []),
   ];

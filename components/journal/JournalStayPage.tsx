@@ -173,7 +173,18 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
   const iggiEl = IGGI_ON && <IggiPanel ctx={{ entityType: "stay", entitySlug: s.slug, countrySlug: s.countrySlug ?? null, ledgerId: s.ledgerId ?? null, sourcePage: path, volume: s.volumes?.[0] ?? "stays" }} heading={`Ask Iggi about ${s.name}`} />;
   const questionsEl = <JournalQuestions no={N.questions} name={s.name} faqs={s.faqs} schema={s.faqs.length > 0 && s.reviewed} />;
   // the sample order, as a traveller asks: what to expect, any saving, where it is (Iggi first, then the map), how to book, questions
-  const jumpS: [string, string][] = [["Why it is here", "why"], ...(roomRows.length ? [["Rooms", "rooms"] as [string, string]] : []), ["What to expect", "expect"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ["Reserve", "reserve"], ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
+  // Rooms where no room cards are filed: the house room record, or the filed rooms text. Shared by both layouts.
+  const roomsFallbackEl = roomRows.length ? null : v.roomData ? <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /><DatesBar slug={s.slug} reserveHref="#reserve" />{inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}</div> : (s.rooms.paras.length > 0 || s.rooms.items.length > 0) ? (
+              <section id="rooms" aria-label="Rooms" className="bg-white">
+                <SectionHead label="Rooms" title="Where You'll Sleep" />
+                {s.rooms.paras.length > 0 && <div className="mt-6 max-w-3xl space-y-4 text-[16px] leading-relaxed text-graphite">{s.rooms.paras.map((t) => <p key={t}>{t}</p>)}</div>}
+                {s.rooms.items.length > 0 && <ul className="mt-6 max-w-3xl border-t border-[color:var(--jw-keyline)]">{s.rooms.items.map((t) => <li key={t} className="border-b border-[color:var(--jw-hairline)] py-3 font-display text-[19px] text-graphite">{t}</li>)}</ul>}
+                <p className="mt-5 font-mono text-[10.5px] tracking-[0.22em] uppercase text-stone-text">Rate on enquiry · the house confirms it for your dates</p>
+                <DatesBar slug={s.slug} reserveHref="#reserve" />
+                {inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}
+              </section>
+  ) : null;
+  const jumpS: [string, string][] = [["Why it is here", "why"], ...(roomRows.length || roomsFallbackEl ? [["Rooms", "rooms"] as [string, string]] : []), ["What to expect", "expect"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ["Reserve", "reserve"], ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
   const pwRow = pw && wow ? (
     <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-5 flex flex-wrap items-center gap-x-6 gap-y-3" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 16%, #fff), transparent)" }}>
               <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
@@ -197,7 +208,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
         </div>}
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow advisor={!sample} items={sample ? jumpS : jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
-        {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{crumbs}</div><SampleBody v={v} variant={sample} rooms={roomRows} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.` : null} /></>}
+        {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{crumbs}</div><SampleBody v={v} variant={sample} rooms={roomRows} roomsFallback={roomsFallbackEl} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.` : null} /></>}
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {!sample && pwRow}
           {!sample && crumbs}
@@ -210,17 +221,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
 
             {/* a stay whose rooms and rates are filed in the house's room record keeps the house's own rooms block, unchanged */}
             {/* a record with room text but no room list or rate on file: the text, the dates bar, and the rate on enquiry */}
-            {!sample && !roomRows.length && !v.roomData && (s.rooms.paras.length > 0 || s.rooms.items.length > 0) && (
-              <section id="rooms" aria-label="Rooms" className="bg-white">
-                <SectionHead label="Rooms" title="Where You'll Sleep" />
-                {s.rooms.paras.length > 0 && <div className="mt-6 max-w-3xl space-y-4 text-[16px] leading-relaxed text-graphite">{s.rooms.paras.map((t) => <p key={t}>{t}</p>)}</div>}
-                {s.rooms.items.length > 0 && <ul className="mt-6 max-w-3xl border-t border-[color:var(--jw-keyline)]">{s.rooms.items.map((t) => <li key={t} className="border-b border-[color:var(--jw-hairline)] py-3 font-display text-[19px] text-graphite">{t}</li>)}</ul>}
-                <p className="mt-5 font-mono text-[10.5px] tracking-[0.22em] uppercase text-stone-text">Rate on enquiry · the house confirms it for your dates</p>
-                <DatesBar slug={s.slug} reserveHref="#reserve" />
-                {inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}
-              </section>
-            )}
-            {!sample && !roomRows.length && v.roomData && <div className="[&>section]:!mt-0 [&>section]:!border-t-0 [&>section]:!pt-0"><RoomTypes name={s.name} data={v.roomData} quote={null} /><DatesBar slug={s.slug} reserveHref="#reserve" />{inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}</div>}
+            {!sample && roomsFallbackEl}
 
             {!sample && roomRows.length > 0 && <JournalRooms no={N.rooms} lede={v.roomsLede} basis={basis} promo={rates?.promo ?? null} reserveHref="#reserve"
               bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} photos={inSection("rooms").length > 0 ? <PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink> : undefined}

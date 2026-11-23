@@ -68,7 +68,7 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
   },
   "PATH-04": {
     id: "PATH-04", key: "where-the-wild-lives", name: "Where the Wild Lives", setting: "Wildlife and wilderness",
-    line: "Game drives, guides and the conservancies that keep the wild wild.",
+    line: "Wild animals on their own ground, and the guides and reserves that keep it wild.",
     accent: "#6B5D4C", text: "#2E2B28", tint: "#FFFFFF", onAccent: "white", volumes: ["safaris", "stays"],
   },
   "PATH-05": {

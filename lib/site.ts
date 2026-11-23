@@ -208,6 +208,7 @@ export const FOOTER_COLUMNS: { title: string; links: NavLink[] }[] = [
       { label: "On the Horizon: offers", href: "/offers" },
       { label: "The Compass", href: "/compass" },
       { label: "Free field guides", href: "/field-guides" },
+      { label: "Wildlife: where and how to see it", href: "/wildlife" },
       { label: "Find an advisor", href: "/about/team#advisors" },
       { label: "Iggi, the itinerary guide", href: "/plan/iggi" },
       { label: "House Sessions (workshops)", href: "/workshops" },

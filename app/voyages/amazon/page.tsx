@@ -14,7 +14,7 @@ export const metadata = buildMetadata({ title: "Small-Ship Amazon River Cruises"
 export default function Page() {
   return (
     <VoyageHub {...H} after={
-      <HubSection eyebrow="From the river" title="What Lives in These Waters?" id="field-notes-h">
+      <HubSection eyebrow="From the river" title="What Lives in These Waters?" id="field-notes-h" more={{ label: "All wildlife", href: "/wildlife" }}>
         <FieldNoteSet notes={AMAZON_HUB_NOTES.map((id) => FIELD_NOTES[id])} />
       </HubSection>
     } />

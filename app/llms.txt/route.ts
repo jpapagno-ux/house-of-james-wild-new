@@ -15,6 +15,7 @@ import { recordHref } from "@/lib/ledger/urls";
 import { EF_CARDS, EF_PATH } from "@/lib/content/exceptional-few-cards";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import { RESERVES } from "@/lib/content/reserves";
+import { SPECIES_PAGES } from "@/lib/field-notes/notes";
 import { ADVISORS, DEFAULT_ADVISOR, JAMES_HEADS_EVERY_PAGE, advisorsFor } from "@/lib/content/advisors";
 import { PATHWAY_NAMES } from "@/lib/compass/pathway-adapter";
 import { romanForHref } from "@/lib/volumes";
@@ -120,6 +121,10 @@ export function GET() {
       `Iggi is the house's AI Field Guide, embedded on stay, country, reserve, pathway and advisor pages at ${absoluteUrl("/plan/iggi")}. Iggi answers only from the Ledger and cites the Ledger ID of every record it draws on, names the advisor who should plan the journey (the founder by default), and when a journey takes shape opens it as a Folio with a FOL number. Prices, availability and bookings go to that named advisor. Safari Crux is the separate guide of Wild & Co Safaris, the house's Africa site; Iggi hands pure-safari readings across to it.`,
       "",
     ] : []),
+    "## Wildlife (Field Notes: where the species lives, when to go, how to see and photograph it)",
+    `- Index: ${absoluteUrl("/wildlife")}`,
+    ...Object.values(SPECIES_PAGES).map((p) => `- [${p.title}](${absoluteUrl(`/wildlife/${p.noteId}`)}): ${p.answer}`),
+    "",
     "## Journal (first-hand stories by James)",
     ...Object.values(POSTS).filter((p) => p.approved).map((p) => `- [${p.seoTitle}](${absoluteUrl(`/journal/${p.slug}`)}): ${p.description}`),
     "",

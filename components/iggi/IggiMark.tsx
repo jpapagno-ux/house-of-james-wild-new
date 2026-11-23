@@ -25,3 +25,17 @@ export default function IggiMark({ size = 40, className = "", title = "Iggi, Fie
     </svg>
   );
 }
+
+// The small icon (James, 23 Nov 2026: "create the small icon green Iggi first"): a solid chameleon that holds at
+// 16 to 48px where Candidate A's strokes thin out. One green (#4F7F4A), the eye in Paper and Ink; `onDark` for the
+// Ink pill. Candidate A stays the mark at panel size and above. Source file: public/iggi/iggi-mark.svg.
+export function IggiIcon({ size = 24, className = "", onDark = false, decorative = true, title = "Iggi" }: { size?: number; className?: string; onDark?: boolean; decorative?: boolean; title?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" className={className} role={decorative ? undefined : "img"} aria-hidden={decorative ? true : undefined} aria-label={decorative ? undefined : title}>
+      <path fill={onDark ? "#7FAE74" : "#4F7F4A"} d="M27.6 14.9c-.5-2.9-2.4-5-5-5.6l-1.2-3.2-1.1 2.9c-3.1-.2-6 1.3-8 3.9-1.7 2.2-2.6 4.9-2.5 7.3.1 2.3 1.6 3.9 3.6 3.9 1.6 0 2.8-1.1 2.8-2.6 0-1.2-.9-2.1-2-2.1-.8 0-1.4.6-1.4 1.3 0 .5.4.9.9.9.3 0 .5-.2.5-.5h.8c0 .8-.6 1.3-1.3 1.3-1 0-1.7-.8-1.7-1.8 0-1.3 1-2.2 2.2-2.2 1.6 0 2.8 1.3 2.8 3 0 .6-.1 1.1-.4 1.6h3.3c.6 0 1-.4 1-1v-2.3c3-.3 5.3-2.1 5.9-4.8h.8c.2 0 .3-.1.3-.3-.1-.4-.2-.5-.3-.7z" />
+      <path fill={onDark ? "#7FAE74" : "#4F7F4A"} d="M18.5 20.6l-1.6 3.3h1.9l.9-1.9zM22.3 20.4l1.2 3.5h1.8l-1.5-3.8z" />
+      <circle cx="22.9" cy="13.4" r="2.1" fill="#F4F2EF" />
+      <circle cx="23.3" cy="13.4" r="1" fill="#1A1816" />
+    </svg>
+  );
+}

@@ -50,11 +50,14 @@ function Head({ icon, label, title }: { icon: FieldIconName; label: React.ReactN
 }
 
 function Chapter({ no, label, title, text, photo }: { no: string; label: string; title: string; text: string[]; photo: Shot }) {
+  // Pinned (James, 23 Nov 2026): the photograph holds full screen while its words pass up over it.
   return (
-    <section aria-label={title} className="relative isolate h-[88svh] min-h-[520px] overflow-hidden bg-ink-deep text-white">
-      <Image src={photo.url} alt={photo.alt} fill sizes="100vw" className="object-cover" />
-      <span aria-hidden className="absolute inset-0" style={{ background: SCRIM }} />
-      <div className={`${WRAP} relative flex h-full flex-col justify-end pb-12 md:pb-20`}>
+    <section aria-label={title} className="relative isolate h-[150svh] min-h-[820px] bg-ink-deep text-white">
+      <div className="sticky top-0 h-[100svh] min-h-[520px] overflow-hidden">
+        <Image src={photo.url} alt={photo.alt} fill sizes="100vw" className="object-cover" />
+        <span aria-hidden className="absolute inset-0" style={{ background: SCRIM }} />
+      </div>
+      <div className={`${WRAP} jw-chapter-text absolute inset-x-0 bottom-0 pb-24 md:pb-28`}>
         <p className={`${T.label} text-white/80`}>{no} · {label}</p>
         <h2 className={`${T.h2} mt-3 max-w-3xl`}>{title}</h2>
         <div className={`${T.lead} mt-4 max-w-xl space-y-1 text-white/90`}>{text.map((x) => <p key={x}>{x}</p>)}</div>

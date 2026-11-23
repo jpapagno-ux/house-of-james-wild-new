@@ -89,7 +89,7 @@ function inScope(d: Doc, s: SearchScope): boolean {
   return !!s.region && d.r === s.region;
 }
 
-const PER_GROUP = 6;
+const PER_GROUP = 5;
 
 export default function SearchPanel({ open, onClose, initialQuery = "", initialType = null, scope = null }: { open: boolean; onClose: () => void; initialQuery?: string; initialType?: string | null;
   /** Opened from a destination: results start inside that place, with one tap to search everywhere. */
@@ -194,7 +194,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
           </div>
         )}
 
-        <div className="px-5 py-3 border-b ledger-border flex md:flex-wrap items-center gap-2 overflow-x-auto md:overflow-visible">
+        <div className={`px-5 py-3 border-b ledger-border md:flex-wrap items-center gap-2 overflow-x-auto md:overflow-visible ${searched ? "flex" : "hidden"}`}>
           <span className="ledger-eyebrow mr-1 shrink-0">Travelling for</span>
           {TYPES.map((t) => (
             <button
@@ -212,37 +212,24 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
         <div className="overflow-y-auto px-5 py-4 flex-1" aria-live="polite">
           {!docs && <p className="ledger-eyebrow">Opening the Ledger…</p>}
 
+          {/* Focused search (James, 23 Nov 2026): nothing on screen before typing but what was last opened, or three starting points. */}
           {docs && !searched && (
-            <div className="grid sm:grid-cols-2 gap-6">
+            recent.length > 0 ? (
               <div>
-                <p className="ledger-eyebrow ledger-crimson">How to search</p>
-                <p className="mt-2 text-[15px] leading-relaxed">Type the name of a lodge, a camp, a ship or a cruise line, a country or a region, or an advisor. A few letters are enough, and a misspelling still finds it.</p>
-                <p className="mt-2 text-[13px] ledger-muted">Press <kbd className="border ledger-border px-1">/</kbd> or <kbd className="border ledger-border px-1">⌘K</kbd> on any page to search again.</p>
-                <p className="ledger-eyebrow ledger-crimson mt-5">Try</p>
-                <ul className="mt-2 flex flex-wrap gap-1.5">
-                  {["Londolozi", "Botswana", "Windstar", "Galápagos", "Tuscany", "Private island", "Antarctica"].map((s) => (
-                    <li key={s}><button type="button" onClick={() => setQ(s)} className="house-chip">{s}</button></li>
+                <p className="ledger-eyebrow ledger-crimson">Recently viewed</p>
+                <ul className="mt-2">
+                  {recent.slice(0, 5).map((r) => (
+                    <li key={r.u}><Link href={r.u} onClick={() => choose(r, r.u)} className="flex items-baseline justify-between gap-3 py-2.5 border-b ledger-border hover:ledger-crimson"><span className="ledger-display text-[17px]">{r.n}</span><span className="ledger-eyebrow shrink-0">{r.k}</span></Link></li>
                   ))}
                 </ul>
               </div>
-              <div>
-                {recent.length > 0 ? (
-                  <>
-                    <p className="ledger-eyebrow ledger-crimson">Recently viewed</p>
-                    <ul className="mt-2">
-                      {recent.map((r) => (
-                        <li key={r.u}><Link href={r.u} onClick={() => choose(r, r.u)} className="flex items-baseline justify-between gap-3 py-2 border-b ledger-border hover:ledger-crimson"><span className="ledger-display text-[16px]">{r.n}</span><span className="ledger-eyebrow shrink-0">{r.k}</span></Link></li>
-                      ))}
-                    </ul>
-                  </>
-                ) : (
-                  <>
-                    <p className="ledger-eyebrow ledger-crimson">In the Ledger</p>
-                    <p className="mt-2 text-[15px] ledger-muted">{docs.filter((d) => d.t === "stay").length} stays, camps and ships, {docs.filter((d) => d.t === "destination").length} destinations, {docs.filter((d) => d.t === "route").length} voyages and routes and {ADVISOR_ITEMS.length} advisors, every one filed under a permanent ID.</p>
-                  </>
-                )}
-              </div>
-            </div>
+            ) : (
+              <ul className="flex flex-wrap gap-1.5">
+                {["Botswana", "Galápagos", "Private island"].map((s) => (
+                  <li key={s}><button type="button" onClick={() => setQ(s)} className="house-chip">{s}</button></li>
+                ))}
+              </ul>
+            )
           )}
 
           {docs && searched && (
@@ -264,7 +251,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
                           <Link href={href} onClick={() => choose(d, href)} className="group flex items-baseline justify-between gap-4 py-2.5 border-b ledger-border hover:bg-paper-card/60 -mx-2 px-2">
                             <span className="min-w-0">
                               <span className="ledger-display text-[17px] group-hover:ledger-crimson">{d.n}</span>
-                              {d.g && <span className="block text-[13px] ledger-muted leading-snug mt-0.5 line-clamp-2">{d.g}</span>}
+                              {d.g && <span className="hidden md:block text-[13px] ledger-muted leading-snug mt-0.5 line-clamp-1">{d.g}</span>}
                             </span>
                             <span className="ledger-eyebrow min-w-0 max-w-[45%] text-right" style={d.t === "advisor" ? { color: GREEN_INK } : undefined}>{d.k}{d.p ? ` · ${d.p}` : ""}</span>
                           </Link>

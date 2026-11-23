@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RATE_CARD_STAYS from "@/lib/booking-live/rate-card-stays.json";
 import experiencePhotos from "@/lib/journal-style/experience-photos.json";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/ledger/SiteHeader";
@@ -74,7 +75,8 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
   // exactly as the stay page uses them. Nothing here changes booking or checkout; it only places what exists.
   const priced = s.engine ? PRICED[s.slug] : undefined;
   const hostHref = v.hostReady ? "#host" : undefined;
-  const live = FLAGS.quotes ? (
+  // Check availability only where a rate card is filed (James, 23 Nov 2026): no dead ends on stays the house quotes by hand.
+  const live = FLAGS.quotes && (RATE_CARD_STAYS.stays as string[]).includes(s.slug) ? (
     <div className="flex flex-wrap items-center gap-4"><Link href={`/booking/property/${s.slug}`} className="ledger-btn ledger-btn--house">Check availability</Link><p className="text-[13.5px] text-stone-text">Live rates and rooms for your dates.</p></div>
   ) : priced ? (
     <><Inclusions name={s.name} included={priced.included} excluded={priced.excluded} policies={priced.policies} /><BookingPanel hostHref={hostHref} property={s.engine as string} name={s.name} rooms={priced.rooms} included={priced.included} excluded={priced.excluded} policies={priced.policies} /></>
@@ -200,6 +202,8 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
       <style>{`footer.site-footer{padding-bottom:5.5rem}aside[aria-label="Meet them before you book"]{bottom:calc(88px + env(safe-area-inset-bottom))!important}${pw ? `.journal-style{background-color:color-mix(in srgb,var(--jw-path) 4%,#fff)!important}.journal-style main,.journal-style main section.bg-white,.journal-style main header.bg-white{background-color:transparent!important}.journal-style main header>div>span.h-px{background:var(--jw-path)}.journal-style #record-bar{border-top:3px solid var(--jw-path)}` : ""}${wowCss}`}</style>
       <SiteHeader overlay />
       <main id="main" className="overflow-x-clip bg-white">
+        {/* Phones: the reserve block is the form and nothing else; the steps stay in the page source for larger screens (James, 23 Nov 2026). */}
+        {sample && <style>{`@media (max-width:767px){.journal-style.jw-sample #reserve ol{display:none}.journal-style.jw-sample #reserve form{scroll-margin-top:88px}.journal-style.jw-sample #reserve{scroll-margin-top:72px}}`}</style>}
         {sample && <SampleHero v={v} variant={sample} />}
         {!sample && <div className="relative">
           <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}

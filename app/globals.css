@@ -855,3 +855,12 @@ li:nth-child(3) > .jw-start { background: linear-gradient(100deg, color-mix(in s
    scrolls inside the frame (the Core's shell is 100dvh of it). */
 .iggi-frame { height: clamp(420px, calc(100svh - 240px), 620px); }
 @media (min-width: 768px) { .iggi-frame { height: 640px; } }
+
+/* No vertical accent rules beside text (James, 23 Nov 2026: "I do not want any vertical lines on the site anywhere").
+   Removes the left bar on text blocks on public pages; the block lines up with the column instead. Add .keep-rule to opt out. */
+main :where(section, div, blockquote, aside, p, figure):where([class*="border-l-2"], [class*="border-l-4"], [class*="border-l-[2px]"], [class*="border-l-[3px]"], [class*="border-l-[4px]"]):not(.keep-rule):not([data-desk] *) { border-left-width: 0 !important; padding-left: 0 !important; }
+
+/* No vertical column dividers either (James, 23 Nov 2026: "remove where you see for best design and ux").
+   Columns are separated by space, not a rule. Boxes keep their full border; form steppers, tables and the desks are left alone. */
+main :where(div, section, aside, li, ul, nav, dl, dd, dt, figure, p, header, footer):where([class~="border-l"], [class~="border-r"], [class~="border-x"], [class~="sm:border-l"], [class~="md:border-l"], [class~="lg:border-l"], [class~="xl:border-l"], [class~="sm:border-r"], [class~="md:border-r"], [class~="lg:border-r"], [class~="xl:border-r"], [class~="md:border-x"], [class~="lg:border-x"]):not(.keep-rule):not([role="group"]):not(form *):not(table *):not([data-desk] *) { border-left-width: 0 !important; border-right-width: 0 !important; }
+main :where([class*="divide-x"]):not(.keep-rule):not(form *):not(table *):not([data-desk] *) > * { border-left-width: 0 !important; border-right-width: 0 !important; }

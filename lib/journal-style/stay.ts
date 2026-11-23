@@ -10,6 +10,7 @@ import { momentsFor, rowsFrom } from "@/lib/content/stay-moments";
 import { PHOTO_CREDIT } from "@/lib/content/stay-media";
 import { hostFor, VIDEOS } from "@/lib/content/hosts";
 import { STAY_FILMS } from "@/lib/content/stay-films";
+import INTROS from "./intros.json";
 import { roomsFor } from "@/lib/content/stay-rooms";
 import { routesThrough } from "@/lib/content/trips";
 import { suitedTo } from "@/lib/ledger/travel-types";
@@ -175,8 +176,12 @@ export function journalStay(slug: string) {
   const kind = (s.category && KIND[s.category]) || "stay";
   // the same answer-first paragraph the stay page has always opened with, for search and answer engines
   const answer = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}, filed in the James Wild & Co Ledger${s.ledgerId ? ` under ${s.ledgerId}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}${s.bestMonths ? ` Best months: ${s.bestMonths}.` : ""}${suited.length ? ` Best suited to ${suited.join(", ").toLowerCase()}.` : bestFor.length ? ` Best for ${bestFor.join(", ").toLowerCase()}.` : ""}${s.airport ? ` Nearest airport: ${s.airport}.` : ""} Vetted for the Ledger by the house.`;
+  // what the traveller reads first on the locked template: a written introduction where one is filed, else the stay's own
+  // filed line. The answer paragraph above stays in the structured data for search and answer engines.
+  const plain = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}`;
+  const intro = (INTROS.intros as Record<string, string>)[s.slug] ?? (s.quote ? s.quote.replace(/\s+,/g, ",").trim() : plain);
   return {
-    s, path, filed, slides, frames, rates, lib, offers, features, experiences, suited, answer, kind,
+    s, path, filed, slides, frames, rates, lib, offers, features, experiences, suited, answer, intro, kind,
     // the stay's own films: a hero film (muted, looping) and a longer stay film for the Film section; either may be absent
     heroFilm: STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : null, video: VIDEOS[`stay:${s.slug}`] ?? null,
     // rooms filed with the house's own room record (shown with its own component, unchanged) where no rate card above applies

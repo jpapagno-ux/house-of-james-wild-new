@@ -41,7 +41,8 @@ import { entryNo } from "@/lib/volumes";
 import { day, journalStay, money, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
 import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, SectionHead, StickyBar, PhotoViewer, PhotoLink, PhotoStrip, DatesBar, PickRoom, RequestForm } from "./journal-style";
 import type { OfferRow } from "./JournalOffers";
-import { SampleBody, SampleExpect, SampleIggi, SampleHero, SampleSwitch, type Variant } from "./samples/SampleStayPage";
+import { SampleBody, SampleExpect, SampleHero, SampleSwitch, type Variant } from "./samples/SampleStayPage";
+import TalkSheet, { TalkButton, TalkRow } from "./TalkSheet";
 
 // JWC-STYLE-01, Stages 1 to 9: the Modern Journal stay page, for the pilot's sample stays only (lib/journal-style/
 // pages.json). It is reached through the flag or the ?journal=1 preview switch (next.config.ts rewrites); the live
@@ -51,6 +52,10 @@ const CHARTS: Record<string, ChartData> = { "costa-rica": CHART_COSTA_RICA, "sou
 const no = (n: number) => String(n).padStart(2, "0");
 
 // sample: one of the three preview-only layout samples (James, 22 Nov 2026); absent on every real page, which is unchanged
+// A live call with James where no host is ready: he takes the call, then hands the lead to an advisor (James, 23 Nov 2026).
+// The house link in use across the site; replace when James sets his own.
+const JAMES_CALL = "https://calendly.com/jameswildco/meet-your-host";
+
 export default function JournalStayPage({ slug, sample, preview = false }: { slug: string; sample?: Variant; /** the layout switch strip, on the preview samples only */ preview?: boolean }) {
   const v = journalStay(slug);
   if (!v) notFound();
@@ -204,6 +209,8 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
       <main id="main" className="overflow-x-clip bg-white">
         {/* Phones: the reserve block is the form and nothing else; the steps stay in the page source for larger screens (James, 23 Nov 2026). */}
         {sample && <style>{`@media (max-width:767px){.journal-style.jw-sample #reserve ol{display:none}.journal-style.jw-sample #reserve form{scroll-margin-top:88px}.journal-style.jw-sample #reserve{scroll-margin-top:72px}}`}</style>}
+        {/* Motion (James, 23 Nov 2026): a slow hero drift, sections that arrive, pinned photo chapters. CSS only, off under reduced motion. */}
+        {sample && <style>{`.jw-sample #expect ul.grid.grid-cols-3{max-width:none!important;gap:16px}.jw-sample #expect ul.grid.grid-cols-3 button{border:0!important;padding:0!important}@keyframes jw-hero-drift{to{transform:translate3d(0,9%,0) scale(1.06)}}@keyframes jw-arrive{from{opacity:0;transform:translate3d(0,26px,0)}to{opacity:1;transform:none}}@supports (animation-timeline:view()){@media (prefers-reduced-motion:no-preference){.jw-sample #journal-hero>img,.jw-sample #journal-hero>video{transform-origin:50% 0;animation:jw-hero-drift linear both;animation-timeline:scroll(root block);animation-range:0 100svh}.jw-sample :is(#why,#rooms,#expect,#offers,#talk,#location,#reserve,#questions){animation:jw-arrive linear both;animation-timeline:view();animation-range:entry 0% entry 28%}.jw-sample .jw-chapter-text{animation:jw-arrive linear both;animation-timeline:view();animation-range:entry 10% entry 70%}}}`}</style>}
         {sample && <SampleHero v={v} variant={sample} />}
         {!sample && <div className="relative">
           <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
@@ -212,7 +219,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
         </div>}
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow advisor={!sample} items={sample ? jumpS : jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
-        {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{crumbs}</div><SampleBody v={v} variant={sample} rooms={roomRows} roomsFallback={roomsFallbackEl} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.` : null} /></>}
+        {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{crumbs}</div><SampleBody v={v} variant={sample} rooms={roomRows} roomsFallback={roomsFallbackEl} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `From rates for two adults, before ${pct(rates.tax)} tax · checked ${day(rates.checked, true)} · priced again for your dates` : null} /></>}
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {!sample && pwRow}
           {!sample && crumbs}
@@ -231,7 +238,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
               bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} photos={inSection("rooms").length > 0 ? <PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink> : undefined}
               rooms={roomRows}
               note={!rates ? v.lib.ratesNote : null}
-              footnote={!rates ? "" : `Public rates for two adults${rates.window ? `, ${span(rates.window.from, rates.window.to)}` : ""}, before ${pct(rates.tax)} tax. Read ${day(rates.checked, true)} and re-checked when you ask.`}
+              footnote={!rates ? "" : `From rates for two adults, before ${pct(rates.tax)} tax · checked ${day(rates.checked, true)} · priced again for your dates`}
               aside={offers[0] ? <p className="font-hand text-[24px] leading-snug text-graphite">{offers[0].headline}.{rates?.promo ? " The two cannot be combined." : ""}</p> : undefined} />}
 
             {!sample && <JournalExperiences no={N.exp} slug={s.slug} items={experienceCards} paragraphs={s.experiences.paras}>{strip("experiences", "experience photographs")}</JournalExperiences>}
@@ -239,7 +246,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
             {!sample && <JournalDetail no={N.detail} features={features} reasons={reasons} featurePhoto={inSection("dining")[0] ?? inSection("pool")[1] ?? inSection("pool")[0] ?? null} reasonPhoto={inSection("exterior")[0] ?? inSection("rooms")[1] ?? null}>{strip("pool", "pool and beach photographs") ?? strip("exterior", "photographs of the grounds")}</JournalDetail>}
 
             {!sample && <>{offersEl}{reserveEl(slip)}{hostEl}{mapEl}{iggiEl}{questionsEl}</>}
-            {sample && <><SampleExpect v={v} cards={experienceCards}>{strip("experiences", "experience photographs")}</SampleExpect>{offersEl}{iggiEl && <SampleIggi name={s.name}>{iggiEl}</SampleIggi>}{mapEl}{reserveEl(null, true)}{v.hostReady && v.host.host?.calendlyUrl && <p className="!-mt-10"><a href={v.host.host.calendlyUrl} className="ledger-btn-ghost">Meet the host first: book the group call</a></p>}{questionsEl}</>}
+            {sample && <><SampleExpect v={v} cards={experienceCards}>{strip("experiences", "experience photographs")}</SampleExpect>{offersEl}<TalkRow name={s.name} hasIggi={!!iggiEl} />{mapEl}{reserveEl(null, true)}{v.hostReady && v.host.host?.calendlyUrl && <p className="!-mt-10"><a href={v.host.host.calendlyUrl} className="ledger-btn-ghost">Meet the host first: book the group call</a></p>}{questionsEl}</>}
 
             {pw && <FollowThePathway primary={pw.primary} secondary={pw.secondary} related={onPathway(pw.primaryPathway).filter((x) => x.slug !== s.slug).slice(0, 4)} pathwayHref={(p) => pathwayHref(p.key)} />}
             {sign && <Postcard line={sign} signature={<Signature className="w-28" />} place={s.country} ledgerId={s.ledgerId} postmark={s.country} />}
@@ -256,8 +263,11 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
       {sample && preview && <SampleSwitch slug={s.slug} variant={sample} />}
       <PhotoViewer slug={s.slug} name={s.name} photos={v.photos} sections={SECTION_ORDER.map((k) => ({ key: k, label: SECTION_LABEL[k] }))} credit={v.credit} reserveHref="#reserve" />
 
+      {/* One pop-up for every conversation about the stay: Iggi, the phone, a live call, the team (James, 23 Nov 2026). */}
+      {sample && <TalkSheet name={s.name} planHref={planHref} callHref={v.hostReady && v.host.host?.calendlyUrl ? v.host.host.calendlyUrl : JAMES_CALL} callWith={v.hostReady && v.host.host?.calendlyUrl ? "With the host" : "With James"}>{iggiEl || null}</TalkSheet>}
+
       <StickyBar id="record-bar" title={s.name} note={fromLine} label={`Reserve ${s.name}`}
-        links={<><SaveToFolio slug={s.slug} name={s.name} inline /><Link href={planHref} className="ledger-btn-ghost">Speak with an advisor</Link></>}
+        links={<><SaveToFolio slug={s.slug} name={s.name} inline />{sample ? <TalkButton /> : <Link href={planHref} className="ledger-btn-ghost">Speak with an advisor</Link>}</>}
         action={<a href="#reserve" className="ledger-btn ledger-btn--house ledger-btn--compact">Check<span className="hidden sm:inline">&nbsp;your</span>&nbsp;dates</a>} />
 
       <JsonLd data={graph({

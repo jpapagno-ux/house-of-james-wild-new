@@ -235,14 +235,14 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
     rows: [
       { label: "Look for", text: "The shell: domed in the misty highlands, saddle-backed on the dry islands." },
       { label: "Pace", text: "Slow. They rest for nearly sixteen hours a day." },
-      { label: "Ask your guide", text: "Which species lives on this island. There are thirteen." },
+      { label: "Ask your guide", text: "Which species lives on this island. There are a dozen or so." },
       { label: "When", text: "Year round." },
     ],
     image: { publicId: "jwco/illustrations/field-notes/galapagos-giant-tortoise", version: 1795460423, alt: "Watercolour of a Galápagos giant tortoise walking through highland grass and ferns", width: 1000, height: 747, scene: true },
     where: { label: "See the Galápagos ships", href: "/voyages/galapagos#ships-h" },
     sources: [
       "Galapagos Conservation Trust, 'Galapagos giant tortoise': name of the islands; lifespan 100 years and more; domed and saddle-backed shells and the islands each suits; Endangered.",
-      "National Geographic, 'Galápagos tortoise': 13 living species; saddleback shells let the neck reach tall cacti; rests nearly 16 hours a day; hunting by sailors.",
+      "National Geographic, 'Galápagos tortoise': 13 living species (the Galapagos Conservation Trust counts 12, so the note says a dozen or so); saddleback shells let the neck reach tall cacti; rests nearly 16 hours a day; hunting by sailors.",
       "San Diego Zoo Wildlife Alliance Library, 'Galápagos Giant Tortoises fact sheet': shell types and size.",
     ],
   },

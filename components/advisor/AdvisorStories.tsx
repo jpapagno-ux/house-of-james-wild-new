@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { AdvisorStory } from "@/lib/content/advisors";
 
 // Photo stories from an advisor's own journeys: their photos, the facts they stated, and (James, 18 Nov 2026) the
-// hare watercolours of that trip, which appear only here, beside the story, and on the ship page of a voyage they sailed.
+// watercolours of that trip, which appear only here, beside the story, and on the ship page of a voyage they sailed.
 export default function AdvisorStories({ firstName, stories }: { firstName: string; stories: AdvisorStory[] }) {
   if (!stories.length) return null;
   return (

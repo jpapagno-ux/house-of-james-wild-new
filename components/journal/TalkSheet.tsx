@@ -58,12 +58,14 @@ export default function TalkSheet({ name, planHref, callHref, callSeats, childre
     return () => { document.body.style.overflow = was; window.removeEventListener("keydown", key); };
   }, [open]);
 
-  const row = "flex items-center gap-3 border-b border-[color:var(--jw-hairline)] py-4 text-left text-graphite hover:text-house";
+  const tile = "flex flex-1 flex-col items-center gap-1.5 px-2 py-3 text-center text-graphite hover:text-house";
+  const tileLabel = "font-mono text-[10px] uppercase tracking-[0.16em]";
   return (
     <div hidden={!open} className="fixed inset-0 z-[70]" role="dialog" aria-modal="true" aria-label={`Talk to the house about ${name}`}>
-      <button type="button" aria-label="Close" tabIndex={-1} onClick={() => setOpen(false)} className="absolute inset-0 h-full w-full cursor-default bg-ink-deep/55" />
-      <div className="absolute inset-x-0 bottom-0 flex max-h-[92svh] flex-col bg-white shadow-2xl md:inset-x-auto md:bottom-auto md:left-1/2 md:top-1/2 md:w-[min(92vw,760px)] md:-translate-x-1/2 md:-translate-y-1/2">
-        <div className="flex items-start justify-between gap-4 border-b border-[color:var(--jw-hairline)] px-5 py-4 md:px-8">
+      <button type="button" aria-label="Close" tabIndex={-1} onClick={() => setOpen(false)} className="absolute inset-0 h-full w-full cursor-default bg-ink-deep/55 md:bg-ink-deep/20" />
+      {/* Phones: a sheet from the bottom. Desktop: a panel down the right side, so the page stays in view beside it. */}
+      <div className="absolute inset-x-0 bottom-0 flex h-[88svh] flex-col bg-white shadow-2xl md:inset-x-auto md:inset-y-0 md:right-0 md:h-auto md:w-[440px]">
+        <div className="flex items-start justify-between gap-4 px-5 pt-4 pb-3">
           <div className="flex items-center gap-3">
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-mist text-graphite"><IggiMark size={30} decorative /></span>
             <div>
@@ -73,29 +75,18 @@ export default function TalkSheet({ name, planHref, callHref, callSeats, childre
           </div>
           <button ref={closeRef} type="button" onClick={() => setOpen(false)} aria-label="Close" className="-mr-2 p-2 text-graphite hover:text-house"><X className="h-5 w-5" strokeWidth={1.5} aria-hidden /></button>
         </div>
-        <div className="overflow-y-auto px-5 pb-6 md:px-8">
-          <a href={`tel:${SITE.phone.tel}`} className={row}>
-            <Phone className="h-5 w-5 shrink-0" strokeWidth={1.5} aria-hidden />
-            <span><span className="block font-display text-[20px] leading-tight">Call {SITE.phone.display}</span><span className="block text-[13.5px] text-stone-text">Speak with the house about {name}.</span></span>
-          </a>
-          {callHref && (
-            <a href={callHref} className={row}>
-              <CalendarClock className="h-5 w-5 shrink-0" strokeWidth={1.5} aria-hidden />
-              <span><span className="block font-display text-[20px] leading-tight">Book a live call with the host</span><span className="block text-[13.5px] text-stone-text">One call with the host and an advisor{callSeats ? `, up to ${callSeats} of you` : ""}.</span></span>
-            </a>
-          )}
-          <Link href={planHref} onClick={() => setOpen(false)} className={row}>
-            <MessageCircle className="h-5 w-5 shrink-0" strokeWidth={1.5} aria-hidden />
-            <span><span className="block font-display text-[20px] leading-tight">Speak with the team</span><span className="block text-[13.5px] text-stone-text">Tell James or an advisor what you have in mind and they write back.</span></span>
-          </Link>
-          {children && (
-            <div className="pt-5">
-              <p className="font-mono text-[10.5px] uppercase tracking-[0.24em] text-stone-text">Or ask Iggi now</p>
-              <p className="mt-1 text-[14px] text-stone-text">Iggi is the house&rsquo;s AI guide. He answers from the Ledger and hands prices and bookings to a person.</p>
-              <div className="mt-3">{children}</div>
-            </div>
-          )}
+        <div className="flex gap-2 border-y border-[color:var(--jw-hairline)] px-3">
+          <a href={`tel:${SITE.phone.tel}`} className={tile} aria-label={`Call ${SITE.phone.display}`}><Phone className="h-5 w-5" strokeWidth={1.5} aria-hidden /><span className={tileLabel}>Call</span><span className="text-[12px] text-stone-text">{SITE.phone.display}</span></a>
+          {callHref && <a href={callHref} className={tile}><CalendarClock className="h-5 w-5" strokeWidth={1.5} aria-hidden /><span className={tileLabel}>Live call</span><span className="text-[12px] text-stone-text">With the host{callSeats ? `, up to ${callSeats}` : ""}</span></a>}
+          <Link href={planHref} onClick={() => setOpen(false)} className={tile}><MessageCircle className="h-5 w-5" strokeWidth={1.5} aria-hidden /><span className={tileLabel}>The team</span><span className="text-[12px] text-stone-text">Write to an advisor</span></Link>
         </div>
+        {children ? (
+          <div className="flex min-h-0 flex-1 flex-col overflow-y-auto px-5 pb-5 pt-4">
+            <p className="font-mono text-[10.5px] uppercase tracking-[0.24em] text-stone-text">Ask Iggi</p>
+            <p className="mt-1 text-[14px] text-stone-text">The house&rsquo;s AI guide. He answers from the Ledger and hands prices and bookings to a person.</p>
+            <div className="mt-3">{children}</div>
+          </div>
+        ) : <p className="px-5 py-6 text-[15px] text-stone-text">Call, book a live call, or write to the team about {name}.</p>}
       </div>
     </div>
   );

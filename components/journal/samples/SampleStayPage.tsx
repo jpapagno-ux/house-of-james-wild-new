@@ -163,7 +163,7 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
           </li>
         ))}
       </ul>
-      {(footnote || v.lib.ratesNote) && <p className={`${WRAP} ${T.body} mt-6 max-w-[62ch] text-stone-text`}>{footnote || v.lib.ratesNote}</p>}
+      {footnote ? <p className={`${WRAP} ${T.label} mt-6 text-stone-text`}>{footnote}</p> : v.lib.ratesNote ? <p className={`${WRAP} ${T.body} mt-6 max-w-[62ch] text-stone-text`}>{v.lib.ratesNote}</p> : null}
     </section>
   );
   return (
@@ -221,7 +221,15 @@ export function SampleExpect({ v, cards, children }: { v: View; cards: { title: 
   return (
     <section id="expect" aria-label="What you can expect" className="bg-white scroll-mt-32">
       <Head icon="mountain-sun" label="Experiences and the stay" title="What You Can Expect" />
-      {s.experiences.paras.length > 0 && <div className={`${T.body} mt-5 max-w-[62ch] space-y-4 text-graphite`}>{s.experiences.paras.map((x) => <p key={x}>{x}</p>)}</div>}
+      {/* Across the page (James, 23 Nov 2026): the words in the house italic on the left, the folds on the right, no box. */}
+      <div className="mt-6 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        {s.experiences.paras.length > 0 && <div className={`${T.lead} max-w-[58ch] space-y-5 text-graphite`}>{s.experiences.paras.map((x) => <p key={x}>{x}</p>)}</div>}
+        {rows.length > 0 && (
+          <div className={`border-b border-[color:var(--jw-hairline)] [&>div:first-child]:border-t-2 [&>div:first-child]:border-t-[color:var(--jw-stone)] ${s.experiences.paras.length ? "" : "lg:col-span-2 max-w-3xl"}`}>
+            {rows.map((r, i) => <AccordionRow key={r.title} as="h3" title={r.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{r.body}</AccordionRow>)}
+          </div>
+        )}
+      </div>
       {shown.length > 0 && (
         <ul className="mt-8 -mx-5 md:-mx-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 md:px-10 pb-2 [scrollbar-width:none]">
           {shown.map((c) => (
@@ -231,11 +239,6 @@ export function SampleExpect({ v, cards, children }: { v: View; cards: { title: 
             </li>
           ))}
         </ul>
-      )}
-      {rows.length > 0 && (
-        <div className="mt-8 max-w-3xl border border-[color:var(--jw-hairline)] border-t-2 border-t-[color:var(--jw-stone)] px-5 [&>div:first-child]:border-t-0">
-          {rows.map((r, i) => <AccordionRow key={r.title} as="h3" title={r.title} defaultOpen={i === 0} icon={<FieldIcon name={ICONS[i % ICONS.length]} height={18} />}>{r.body}</AccordionRow>)}
-        </div>
       )}
       {children}
     </section>

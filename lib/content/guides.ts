@@ -8,6 +8,7 @@ import { AUSTRALIA_GUIDES } from "./guides-australia.ts";
 import { THAILAND_GUIDES } from "./guides-thailand.ts";
 import { CAMBODIA_GUIDES } from "./guides-cambodia.ts";
 import { NEW_ZEALAND_GUIDES } from "./guides-new-zealand.ts";
+import { BALI_GUIDES, BALI_PLACE_CARD } from "./guides-bali.ts";
 
 // Destination guides: search-led pages for places people look up by name
 // ("Raja Ampat travel guide", "best time to visit Komodo"). Facts are sourced
@@ -163,12 +164,13 @@ export const GUIDES: Record<string, Guide> = {
       options: [
         { name: "A shared voyage on a small phinisi", body: "Book a cabin on a fixed departure: seven cabins, fourteen guests, all meals, guided diving and snorkelling. The simplest way to see Raja Ampat or Komodo well.", href: "/voyages/ships/aliikai#dates", label: "Aliikai's 2027 dates" },
         { name: "A private charter", body: "Take the whole yacht for your family or group, and draw the route yourself. From three nights in Komodo, seven in Raja Ampat.", href: "/voyages/ships/aliikai#charter", label: "Charter Aliikai" },
-        { name: "Bali before or after", body: "Most voyages connect through Bali. A few nights in Ubud or on the coast either side makes the long flights worth it.", href: "#stays", label: "The Bali stays" },
+        { name: "Bali before or after", body: "Most voyages connect through Bali. A few nights in Ubud or on the coast either side makes the long flights worth it.", href: "/destinations/asia/indonesia/bali", label: "Bali" },
       ],
     },
     places: [
       { name: "Raja Ampat", href: "/destinations/asia/indonesia/raja-ampat", line: "The reefs at the end of the map", image: { url: `${CLD}wildco/voyages/home-hero/02-raja-ampat-lagoons`, alt: "Raja Ampat's karst lagoons" }, best: "Oct to Apr" },
       { name: "Komodo National Park", href: "/destinations/asia/indonesia/komodo", line: "Dragons, mantas and a pink beach", image: { url: `${KOM}padar-island-aerial`, alt: "Padar Island, Komodo National Park" }, best: "May to Sep" },
+      BALI_PLACE_CARD,
     ],
     voyageWaters: ["Raja Ampat", "Komodo"],
     faqs: [
@@ -1399,6 +1401,7 @@ export const GUIDES: Record<string, Guide> = {
     ],
   },
   // French Polynesia (Tahiti) place guides (2 Nov 2026): lib/content/guides-tahiti.ts
+  ...BALI_GUIDES,
   ...TAHITI_GUIDES,
   ...TAHITI_ISLAND_GUIDES,
   ...FIJI_GUIDES,

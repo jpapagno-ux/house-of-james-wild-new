@@ -105,7 +105,8 @@ export default function HouseMenu({ open, onClose, onSearch }: { open: boolean; 
               <p className="ledger-eyebrow ledger-crimson mt-4">The house</p>
               <ul className="mt-2 grid grid-cols-2 gap-x-4">
                 {EXTRA.filter((l) => l.href !== "/destinations").map((l) => <li key={l.href}><Link href={l.href} onClick={onClose} className="min-h-[44px] flex items-center text-[15px]">{l.label}</Link></li>)}
-                <li><Link href={FLAGS.accounts ? "/account" : "/folio"} onClick={onClose} className="min-h-[44px] flex items-center text-[15px]">My Folio</Link></li>
+                <li><Link href="/wildlife" onClick={onClose} className="text-[16px] hover:ledger-crimson">Wildlife</Link></li>
+            <li><Link href={FLAGS.accounts ? "/account" : "/folio"} onClick={onClose} className="min-h-[44px] flex items-center text-[15px]">My Folio</Link></li>
                 <li><button type="button" onClick={() => { onClose(); openSignIn(); }} className="min-h-[44px] flex items-center gap-2 text-[15px] font-medium"><KeyRound className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />Sign in</button></li>
                 <li><a href={`tel:${SITE.phone.tel}`} className="min-h-[44px] flex items-center gap-2 text-[15px]"><Phone className="w-3.5 h-3.5" strokeWidth={1.5} aria-hidden="true" />{SITE.phone.display}</a></li>
               </ul>

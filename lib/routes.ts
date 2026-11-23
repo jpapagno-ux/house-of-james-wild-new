@@ -30,6 +30,7 @@ export const BUILT: string[] = [
   "/partners/*", // partner pages (lib/content/partners)
   "/travel-notes",
   "/field-guides",
+  "/wildlife", "/wildlife/*",
   "/stays",
   "/europe",
   // Wild Pathways: on site-wide since the Voyages launch; NEXT_PUBLIC_PATHWAYS=off removes them.

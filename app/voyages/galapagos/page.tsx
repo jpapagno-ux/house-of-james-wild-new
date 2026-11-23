@@ -31,7 +31,7 @@ export default function Page() {
     <VoyageHub {...H} ships={ships} after={
       <>
         <IslandStays />
-        <HubSection eyebrow="From the islands" title="What Lives in the Galápagos?" id="field-notes-h">
+        <HubSection eyebrow="From the islands" title="What Lives in the Galápagos?" id="field-notes-h" more={{ label: "All wildlife", href: "/wildlife" }}>
           <FieldNoteSet notes={GALAPAGOS_HUB_NOTES.map((id) => FIELD_NOTES[id])} />
         </HubSection>
       </>

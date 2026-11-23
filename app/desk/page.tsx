@@ -11,6 +11,7 @@ export default function DeskIndex() {
     ...(PARTNER_DESK ? [
       { href: "/desk/partners", title: "Partners", line: "Requests to join, invitations, and every partner with who has signed in." },
       { href: "/desk/review", title: "Partner review", line: "Submissions and proposed changes from partners." },
+      { href: "/desk/atlas", title: "Atlas: needs a ruling", line: "What feeds the Atlas after each build, and the new records waiting for a category." },
       { href: "/desk/commission", title: "Price and commission check", line: "Price a stay and see the commission, the advisor's share and the house's." },
     ] : []),
     ...(PARTNER_DESK && ADVISOR_DESK ? [{ href: "/desk/enquiries", title: "Enquiries", line: "Every enquiry from the Plan form and Iggi, who it is addressed to and where it stands." }, { href: "/desk/advisors", title: "Advisors", line: "Advisor files: documents to review, plans, agreements and activation." }, { href: "/desk/advisor-requests", title: "Advisor quote requests", line: "Price, hold and confirm the stays advisors ask for, for their clients." }, { href: "/desk/commissions", title: "Commission ledger", line: "Every booking's commission, owed to the house and to advisors, and the reports by partner, property, advisor and month." }, { href: "/desk/trade-accounts", title: "Trade accounts", line: "Supplier accounts booked off the site, as advisors read them, and who each is open to." }] : []),

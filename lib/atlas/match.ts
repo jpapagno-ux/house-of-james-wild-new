@@ -14,18 +14,18 @@ import { today } from "../dates.ts";
 // - Nothing is computed about a saving: the headline is the partner's own filed words.
 
 export const CATEGORIES = [
-  "hotels", "resorts", "villas", "private-residences", "safari-camps-and-lodges", "private-safaris",
+  "hotels", "resorts", "villas", "private-residences", "wilderness-lodges", "safari-camps-and-lodges", "private-safaris",
   "ocean-voyages-and-yachts", "expedition-voyages", "river-voyages", "land-journeys", "overland-expeditions",
 ] as const;
 export type Category = (typeof CATEGORIES)[number];
 export const CATEGORY_LABEL: Record<Category, string> = {
-  hotels: "Hotels", resorts: "Resorts", villas: "Villas", "private-residences": "Private Residences",
+  hotels: "Hotels", resorts: "Resorts", villas: "Villas", "private-residences": "Private Residences", "wilderness-lodges": "Wilderness Lodges",
   "safari-camps-and-lodges": "Safari Camps and Lodges", "private-safaris": "Private Safaris",
   "ocean-voyages-and-yachts": "Ocean Voyages and Yachts", "expedition-voyages": "Expedition Voyages", "river-voyages": "River Voyages",
   "land-journeys": "Land Journeys", "overland-expeditions": "Overland Expeditions",
 };
 export const CATEGORY_GROUPS: { label: string; items: Category[] }[] = [
-  { label: "Stays", items: ["hotels", "resorts", "villas", "private-residences"] },
+  { label: "Stays", items: ["hotels", "resorts", "villas", "private-residences", "wilderness-lodges"] },
   { label: "Safaris", items: ["safari-camps-and-lodges", "private-safaris"] },
   { label: "Voyages", items: ["ocean-voyages-and-yachts", "expedition-voyages", "river-voyages"] },
   { label: "Journeys", items: ["land-journeys", "overland-expeditions"] },

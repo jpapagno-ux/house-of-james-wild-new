@@ -14,8 +14,10 @@ const offer = (over: Partial<AtlasOffer> = {}): AtlasOffer => ({ id: "OFR-2026-0
 const q = (s: string): AtlasQuery => fromQuery(new URLSearchParams(s));
 
 // ---- categories ----------------------------------------------------------------------------------------------------
-test("categories: eleven, River Voyages among them", () => {
-  assert.equal(CATEGORIES.length, 11);
+test("categories: twelve, River Voyages and Wilderness Lodges among them", () => {
+  assert.equal(CATEGORIES.length, 12);
+  assert.ok(CATEGORIES.includes("wilderness-lodges"));
+  assert.equal(classifyStay({ filed: "lodge", africa: false, volumes: [], primaryPathway: "PATH-01", inReserve: false, isReserve: false }).proposed, "wilderness-lodges");
   assert.ok(CATEGORIES.includes("river-voyages"));
 });
 test("categories: an African hotel is never a safari camp automatically", () => {

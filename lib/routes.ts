@@ -311,6 +311,7 @@ export const STAY_SLUGS: string[] = [
   "beckon-tierra-atacama",
   "belmond-cap-juluca",
   "belmond-eagle-island-lodge",
+  "belmond-monasterio",
   "belmond-mount-nelson",
   "belmond-savute-elephant-lodge",
   "benguerra-island-by-and-beyond",

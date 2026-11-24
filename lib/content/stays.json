@@ -18755,7 +18755,9 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0476a5725_241af0a13_6a21ba4fa8db4afa43cc3d49_Easter-Island-Lodge-Explora-13.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/72c034bfe_5094d577e_6a21ba4ee3403dc043eacfce_Easter-Island-Lodge-Explora-15.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5c7009d22_7df768b7e_6a21ba4e51de8a19c6caeac6_Easter-Island-Lodge-Explora-27.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2d7ec287b_8beff1a4f_6a21ba4e78417991442d742e_Easter-Island-Lodge-Explora-31.jpg"
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2d7ec287b_8beff1a4f_6a21ba4e78417991442d742e_Easter-Island-Lodge-Explora-31.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/explora-rapa-nui/x02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/explora-rapa-nui/x08"
    ],
    "bestMonths": "October-April",
    "bestMonthsNote": "Easter Island is best visited during the warmer spring and summer months when temperatures are comfortable, ocean conditions are favorable, landscapes are greener, and outdoor archaeological and hiking explorations are ideal.",
@@ -18772,9 +18774,9 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Varua Rooms.Raa Suites",
-     "Ocean View Accommodations",
-     "Polynesian Expedition Lodging"
+     "26 Varúa Rooms, 32 m², garden and ocean views",
+     "4 Raa Suites, 44 m², garden and ocean views",
+     "30 rooms in all, each with a jetted bathtub"
     ]
    },
    "experiences": {
@@ -24922,15 +24924,15 @@
    "bestMonths": "May - September",
    "bestMonthsNote": "Dry season months offer the clearest skies, best hiking conditions, and optimal visibility for both Machu Picchu and cloud forest exploration.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2011-05-01",
    "coords": {
     "lat": -13.1547,
     "lng": -72.5253
    },
    "airport": "Alejandro Velasco Astete International Airport (CUZ)",
    "airportDirections": "Fly into Cusco, transfer by scenic train through the Sacred Valley to Machu Picchu Pueblo. The hotel is within walking distance of the train station.",
-   "founderNote": null,
+   "founderNote": "James stayed at Inkaterra Machu Picchu Pueblo Hotel in May 2011.",
    "rooms": {
     "paras": [],
     "items": [
@@ -37428,6 +37430,127 @@
    ],
    "arrivalHubIds": [
     "6ae697423b5411a430e82331"
+   ],
+   "placeSlug": null
+  },
+  {
+   "slug": "belmond-monasterio",
+   "name": "Monasterio, A Belmond Hotel, Cusco",
+   "ledgerId": "STY-2026-000795",
+   "country": "Peru",
+   "countrySlug": "peru",
+   "regionSlug": "south-america",
+   "misfiled": null,
+   "category": "hotel",
+   "tagline": "A 1595 monastery on Inca foundations in Cusco, around a courtyard with a 300 year old cedar",
+   "quote": null,
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/peru/belmond-monasterio/hero",
+   "gallery": [
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/peru/belmond-monasterio/g1",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/peru/belmond-monasterio/g2",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/peru/belmond-monasterio/g3",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/peru/belmond-monasterio/g5",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/peru/belmond-monasterio/g4",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/peru/belmond-monasterio/g6"
+   ],
+   "bestMonths": null,
+   "bestMonthsNote": null,
+   "bestFor": [
+    "couples",
+    "luxury"
+   ],
+   "status": "founder_visited",
+   "statusDate": "2011-05-01",
+   "coords": null,
+   "airport": "Alejandro Velasco Astete International Airport (CUZ)",
+   "airportDirections": "Belmond gives a 20 minute drive from Alejandro Velasco Astete Airport (CUZ) in Cusco, itself a 90 minute flight from Lima. Poroy train station is a 40 minute drive, and Machu Picchu is three and a half hours by train.",
+   "founderNote": "James stayed at Monasterio in May 2011 and vetted it for the house.",
+   "rooms": {
+    "paras": [
+     "Rooms, 19 to 41 square metres, for up to 3 guests. Junior Suites, 31 to 47 square metres, for up to 3 guests. One Bedroom Suite with Added Oxygen, 49 to 71 square metres, for up to 3 guests."
+    ],
+    "items": []
+   },
+   "experiences": {
+    "paras": [],
+    "items": [
+     "Inti Raymi and the other Cusco festivals",
+     "Dinner at El Tupay",
+     "Peruvian cooking at Oqre",
+     "Live music in the hotel",
+     "The Cusco School paintings and the chapel",
+     "The train to Machu Picchu, three and a half hours away"
+    ]
+   },
+   "features": {
+    "paras": [],
+    "items": [
+     "97 rooms and 20 suites in a former monastery",
+     "A courtyard with a 300 year old Andean cedar",
+     "The baroque San Antonio de Abad Chapel",
+     "Two restaurants, Oqre and El Tupay, and the Oqre Bar",
+     "A collection of Cusco School art",
+     "A spa treatment suite",
+     "20 minutes by road from Cusco airport"
+    ]
+   },
+   "onlyHere": [
+    "The hotel stands on the foundations of the palace of the Inca emperor Amaru Qhata. The San Antonio Abad Monastery was built here in 1595, and the building opened as a hotel in 1965. Its courtyard holds a 300 year old Andean cedar, which Belmond describes as the last of its kind in Cusco, and its baroque chapel is still used for ceremonies."
+   ],
+   "why": [
+    {
+     "title": null,
+     "body": "A Monastery in the Old Inca Capital Monasterio suits travellers who want to sleep inside Cusco's history on the way to or from Machu Picchu: cloisters, a gilded chapel, Cusco School paintings and a courtyard under an old cedar, twenty minutes from the airport."
+    }
+   ],
+   "facts": {
+    "how_to_get_there": "Fly to Cusco (CUZ), 90 minutes from Lima; the hotel is a 20 minute drive from the airport. Poroy train station is 40 minutes by road.",
+    "signature_experiences": "The baroque San Antonio de Abad Chapel, the courtyard under a 300 year old cedar, the Cusco School paintings, dinner at El Tupay and the Inti Raymi festival.",
+    "who_its_for": "Travellers who want a heritage hotel in the centre of Cusco before or after Machu Picchu."
+   },
+   "faqs": [
+    {
+     "q": "Where is Monasterio, A Belmond Hotel?",
+     "a": "At Calle Plazoleta Nazarenas 223 in Cusco, Peru, a 20 minute drive from Cusco's Alejandro Velasco Astete Airport."
+    },
+    {
+     "q": "What is the history of Monasterio?",
+     "a": "It stands on the foundations of the palace of the Inca emperor Amaru Qhata. The San Antonio Abad Monastery was built here in 1595 and the building opened as a hotel in 1965."
+    },
+    {
+     "q": "How many rooms does Monasterio have?",
+     "a": "97 rooms and 20 suites. Rooms are 19 to 41 square metres, Junior Suites 31 to 47 and the One Bedroom Suite with Added Oxygen 49 to 71, each for up to 3 guests."
+    },
+    {
+     "q": "What restaurants are at Monasterio?",
+     "a": "Two: Oqre for Peruvian cooking and El Tupay for international fine dining, with the Oqre Bar for cocktails and small plates."
+    },
+    {
+     "q": "How do you get from Monasterio to Machu Picchu?",
+     "a": "By train. Belmond gives three and a half hours from Machu Picchu, and Poroy train station is a 40 minute drive from the hotel."
+    }
+   ],
+   "reviewed": true,
+   "reserveChild": false,
+   "parentSlug": null,
+   "engine": null,
+   "pathway": {
+    "primary": "PATH-08",
+    "secondary": [
+     "PATH-03"
+    ],
+    "setting": "cusco",
+    "intentions": [],
+    "suitability": [],
+    "status": "draft",
+    "classifiedBy": "Draft by Claude, 24 Nov 2026 (Rooted in Place; Above It All), as filed for the other Cusco heritage hotel. Awaiting James.",
+    "classifiedAt": "2026-11-24"
+   },
+   "volumes": [
+    "stays"
+   ],
+   "arrivalHubIds": [
+    "6ae6974f05b8048e4c722960"
    ],
    "placeSlug": null
   },

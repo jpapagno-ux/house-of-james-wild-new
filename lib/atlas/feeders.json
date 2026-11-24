@@ -22,7 +22,7 @@
       "/pathways/[key]": "A Wild Pathway feeds the Interests filter, not a result.",
       "/partners/[partner]": "Reading, not bookable. Second pass (James to rule).",
       "/journal/[slug]": "Reading, not bookable. Second pass (James to rule).",
-      "/wildlife/[slug]": "Reading, not bookable. Second pass (James to rule).",
+      "/wildlife/[slug]": "Reading, not bookable. Returned by the house search under Wildlife (James, 24 Nov 2026); not an Atlas result.",
       "/advisors/[slug]": "People, not places. The Atlas returns where to go.",
       "/legal/[doc]": "House terms.",
       "/booking/property/[slug]": "Booking Live step, reached from a stay.",
@@ -52,7 +52,7 @@
       "search": "The site search.",
       "the-ledger": "House page.",
       "travel-notes": "Newsletter sign-up.",
-      "wildlife": "Reading, not bookable. Second pass (James to rule).",
+      "wildlife": "Reading, not bookable. Returned by the house search under Wildlife (James, 24 Nov 2026); not an Atlas result.",
       "workshops": "Sessions, not places. Second pass (James to rule)."
     },
     "private": ["account", "advisor", "api", "auth", "desk", "img", "og", "partner", "preview", "llms.txt"]

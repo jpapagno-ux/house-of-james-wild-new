@@ -18755,7 +18755,9 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0476a5725_241af0a13_6a21ba4fa8db4afa43cc3d49_Easter-Island-Lodge-Explora-13.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/72c034bfe_5094d577e_6a21ba4ee3403dc043eacfce_Easter-Island-Lodge-Explora-15.jpg",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/5c7009d22_7df768b7e_6a21ba4e51de8a19c6caeac6_Easter-Island-Lodge-Explora-27.jpg",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2d7ec287b_8beff1a4f_6a21ba4e78417991442d742e_Easter-Island-Lodge-Explora-31.jpg"
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2d7ec287b_8beff1a4f_6a21ba4e78417991442d742e_Easter-Island-Lodge-Explora-31.jpg",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/explora-rapa-nui/x02",
+    "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/explora-rapa-nui/x08"
    ],
    "bestMonths": "October-April",
    "bestMonthsNote": "Easter Island is best visited during the warmer spring and summer months when temperatures are comfortable, ocean conditions are favorable, landscapes are greener, and outdoor archaeological and hiking explorations are ideal.",
@@ -18772,9 +18774,9 @@
    "rooms": {
     "paras": [],
     "items": [
-     "Varua Rooms.Raa Suites",
-     "Ocean View Accommodations",
-     "Polynesian Expedition Lodging"
+     "26 Varúa Rooms, 32 m², garden and ocean views",
+     "4 Raa Suites, 44 m², garden and ocean views",
+     "30 rooms in all, each with a jetted bathtub"
     ]
    },
    "experiences": {

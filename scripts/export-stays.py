@@ -116,7 +116,7 @@ WHY_FIX = {
                             "Watch Wild Together, James and Miriam’s own series, on Miriam’s first safari at Monwana (film by Felix Studios and Monwana), and read the full memoir.")],
 }
 
-PATHWAY_IDS = {f"PATH-0{i}" for i in range(1, 9)}
+PATHWAY_IDS = {f"PATH-0{i}" for i in range(1, 10)}  # nine pathways: The Far Edge (PATH-09) joined 15 Nov 2026
 VOLUME_KEYS = {"stays", "safaris", "gatherings", "voyages", "europe", "overland"}
 def pathway_of(s):
     """Stay -> {primary, secondary, setting, intentions, suitability, status, classifiedBy, classifiedAt} or None."""

@@ -58,10 +58,11 @@ test("expect cards: every stay is on the template, every photograph named is des
     if (typeof e !== "object") continue;
     assert.ok(list.includes(slug), `${slug}: on the template`);
     const n = notes[slug];
-    const known = new Set(typeof n === "object" ? [...Object.keys(n.describe), ...n.extra.map((x) => x.id.split("/").pop())] : []);
+    const rp = (read("room-photos.json") as Record<string, Record<string, { id: string }> | string>)[slug];
+    const known = new Set([...(typeof n === "object" ? [...Object.keys(n.describe), ...n.extra.map((x) => x.id.split("/").pop())] : []), ...(typeof rp === "object" ? Object.values(rp).map((x) => x.id.split("/").pop()) : [])]);
     for (const r of [...e.experiences, ...e.features]) {
       assert.doesNotMatch(`${r.title} ${r.line ?? ""}`, /[\u2013\u2014]/, `${slug}: ${r.title}`);
-      if (r.photo) assert.ok(known.has(r.photo), `${slug}: ${r.title} names photograph ${r.photo}, which is not described for the stay`);
+      if (r.photo) assert.ok(known.has(r.photo), `${slug}: ${r.title} names photograph ${r.photo}, which is not described or filed as a room photograph for the stay`);
     }
     assert.doesNotMatch(e.also ?? "", /[\u2013\u2014]/);
   }

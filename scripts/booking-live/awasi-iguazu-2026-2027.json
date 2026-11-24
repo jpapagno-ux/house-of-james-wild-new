@@ -1,0 +1,22 @@
+{
+  "_source": "Awasi Iguazú Fully Hosted Rates 2026-2027 (awasi.com/info, PDF dated 2026-09). Public rack rates, USD, per room, totals for the stated nights, read 24 Nov 2026 at James's request. Same basis as Awasi Atacama: rack; the house earns 20% commission (private, never shown). Not yet in Booking Live.",
+  "slug": "iguazu", "currency": "USD", "minNights": 2,
+  "commissionPercent": 20,
+  "deposit": { "percent": 50, "balanceDueDays": 30 },
+  "openQuestions": ["The sheet's VAT note for Argentina (10.5% for foreign non-residents paying in foreign currency, reduced for the all-inclusive stay; 21% for residents) is not modelled: confirm with Awasi whether the rack rates include it before publishing.", "Festive-date minimum stay is not printed as a number.", "Single rates on the sheet are not priced (as Atacama)."],
+  "seasons": [
+    { "season": "High", "ranges": [["2026-10-01", "2027-04-30"]] },
+    { "season": "Shoulder", "ranges": [["2027-05-01", "2027-09-30"]] }
+  ],
+  "sheet": {
+    "villa": {
+      "High":     { "SGL": [5100, 7421, 9690, 11985, 14076], "DBL": [6780, 9865, 12882, 15933, 18713], "TRP": [8160, 11873, 15504, 19176, 22522] },
+      "Shoulder": { "SGL": [4340, 6315, 8246, 10199, 11978], "DBL": [5770, 8395, 10963, 13560, 15925], "TRP": [6940, 10098, 13186, 16309, 19154] }
+    },
+    "master-villa": {
+      "High":     { "SGL": [11600, 16878, 22040, 27260, 32016], "DBL": [11600, 16878, 22040, 27260, 32016], "TRP": [11600, 16878, 22040, 27260, 32016], "QDL": [13540, 19701, 25726, 31819, 37370] },
+      "Shoulder": { "SGL": [9790, 14244, 18601, 23007, 27020], "DBL": [9790, 14244, 18601, 23007, 27020], "TRP": [9790, 14244, 18601, 23007, 27020], "QDL": [12240, 17809, 23256, 28764, 33782] }
+    }
+  },
+  "longStay": [{ "code": "AWASI-3N", "minNights": 3, "percent": 3 }, { "code": "AWASI-4N", "minNights": 4, "percent": 5 }, { "code": "AWASI-5N", "minNights": 5, "percent": 6 }, { "code": "AWASI-6N", "minNights": 6, "percent": 8 }]
+}

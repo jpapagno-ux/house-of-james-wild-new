@@ -1,0 +1,35 @@
+{
+  "_source": "Awasi Mendoza Fully Hosted Rates 2026-2027 (awasi.com/info, PDF dated 2026-09). Public rack rates, USD, per room, totals for the stated nights, read 24 Nov 2026 at James's request. Same basis as Awasi Atacama: rack; the house earns 20% commission (private, never shown). Not yet in Booking Live.",
+  "slug": "awasi-mendoza", "currency": "USD", "minNights": 2,
+  "commissionPercent": 20,
+  "deposit": { "percent": 50, "balanceDueDays": 30 },
+  "openQuestions": ["The sheet's VAT note for Argentina is not modelled: confirm with Awasi whether the rack rates include it before publishing.", "Festive-date minimum stay is not printed as a number.", "Single rates on the sheet are not priced (as Atacama).", "Awasi's site describes Lujo and Front Row on one page (Luxury and Front Row Rooms); the sheet prices them apart."],
+  "seasons": [
+    { "season": "High", "ranges": [["2026-10-01", "2027-04-30"]] },
+    { "season": "Shoulder", "ranges": [["2027-05-01", "2027-05-31"], ["2027-09-01", "2027-09-30"]] },
+    { "season": "Off-Peak", "ranges": [["2027-06-01", "2027-08-31"]] }
+  ],
+  "sheet": {
+    "lujo": {
+      "High":     { "SGL": [4400, 6402, 8360, 10340, 12144], "DBL": [5800, 8439, 11020, 13630, 16008], "TRP": [7040, 10243, 13376, 16544, 19430] },
+      "Shoulder": { "SGL": [3890, 5660, 7391, 9142, 10736],  "DBL": [5420, 7886, 10298, 12737, 14959], "TRP": [6230, 9065, 11837, 14641, 17195] },
+      "Off-Peak": { "SGL": [3720, 5413, 7068, 8742, 10267],  "DBL": [4940, 7188, 9386, 11609, 13634],  "TRP": [5960, 8672, 11324, 14006, 16450] }
+    },
+    "front-row": {
+      "High":     { "SGL": [5100, 7421, 9690, 11985, 14076], "DBL": [6770, 9850, 12863, 15910, 18685], "TRP": [8160, 11873, 15504, 19176, 22522] },
+      "Shoulder": { "SGL": [4740, 6897, 9006, 11139, 13082], "DBL": [6300, 9167, 11970, 14805, 17388], "TRP": [7580, 11029, 14402, 17813, 20921] },
+      "Off-Peak": { "SGL": [4400, 6402, 8360, 10340, 12144], "DBL": [5650, 8221, 10735, 13278, 15594], "TRP": [7040, 10243, 13376, 16544, 19430] }
+    },
+    "vineyard-villa": {
+      "High":     { "SGL": [6300, 9167, 11970, 14805, 17388], "DBL": [8300, 12077, 15770, 19505, 22908], "TRP": [10080, 14666, 19152, 23688, 27821] },
+      "Shoulder": { "SGL": [5940, 8643, 11286, 13959, 16394], "DBL": [7700, 11204, 14630, 18095, 21252], "TRP": [9500, 13823, 18050, 22325, 26220] },
+      "Off-Peak": { "SGL": [5400, 7857, 10260, 12690, 14904], "DBL": [6770, 9850, 12863, 15910, 18685], "TRP": [8640, 12571, 16416, 20304, 23846] }
+    },
+    "two-bedroom-villa": {
+      "High":     { "SGL": [15500, 22553, 29450, 36425, 42780], "DBL": [15500, 22553, 29450, 36425, 42780], "TRP": [15500, 22553, 29450, 36425, 42780], "QDL": [15500, 22553, 29450, 36425, 42780] },
+      "Shoulder": { "SGL": [14300, 20807, 27170, 33605, 39468], "DBL": [14300, 20807, 27170, 33605, 39468], "TRP": [14300, 20807, 27170, 33605, 39468], "QDL": [14300, 20807, 27170, 33605, 39468] },
+      "Off-Peak": { "SGL": [12400, 18042, 23560, 29140, 34224], "DBL": [12400, 18042, 23560, 29140, 34224], "TRP": [12400, 18042, 23560, 29140, 34224], "QDL": [12400, 18042, 23560, 29140, 34224] }
+    }
+  },
+  "longStay": [{ "code": "AWASI-3N", "minNights": 3, "percent": 3 }, { "code": "AWASI-4N", "minNights": 4, "percent": 5 }, { "code": "AWASI-5N", "minNights": 5, "percent": 6 }, { "code": "AWASI-6N", "minNights": 6, "percent": 8 }]
+}

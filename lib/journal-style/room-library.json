@@ -2972,7 +2972,7 @@
   ]
  },
  "iguazu": {
-  "_source": "awasi.com/iguazu (accommodations and villas pages), read 22 Nov 2026 at James's request. Rates not read into the site.",
+  "_source": "awasi.com/iguazu (accommodations and villas pages), read 22 Nov 2026 at James's request. From prices from the Awasi Iguazú Fully Hosted Rates 2026-2027 sheet on awasi.com/info, read 24 Nov 2026.",
   "rooms": [
    {
     "name": "Standard Villas",
@@ -2990,7 +2990,11 @@
      "Bathtub and separate shower"
     ],
     "photos": [],
-    "plungePool": true
+    "plungePool": true,
+    "from": {
+     "amount": 2885,
+     "basis": "per night for two, fully hosted, lowest season"
+    }
    },
    {
     "name": "Master Villa",
@@ -3006,9 +3010,14 @@
      "Living room"
     ],
     "photos": [],
-    "plungePool": true
+    "plungePool": true,
+    "from": {
+     "amount": 4895,
+     "basis": "per night for up to three, fully hosted, lowest season"
+    }
    }
-  ]
+  ],
+  "ratesNote": "Fully hosted rates as published by Awasi for 2026-2027, in US dollars per villa for two guests (the Master Villa is priced for up to three), at the lowest season of the year: every meal, the open bar, a private guide and 4x4 each day and airport transfers are included. Longer stays earn Awasi's long-stay saving. Read 24 Nov 2026; the house confirms the figure for your dates."
  },
  "the-singular-patagonia": {
   "_source": "thesingular.com/patagonia/rooms, read 22 Nov 2026 at James's request. The site prints no prices; none are filed.",
@@ -4202,6 +4211,476 @@
      "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/bahia-bustamante-lodge/rooms/steppe-cabins-1"
     ],
     "plungePool": false
+   }
+  ]
+ },
+ "belmond-monasterio": {
+  "_source": "belmond.com (Monasterio accommodation page, booking page room list and the hotel's factsheet), read 24 Nov 2026 at James's request. No rate is filed: Belmond publishes no rate sheet, so the house prices your dates on request.",
+  "rooms": [
+   {
+    "name": "Superior Room",
+    "sleeps": 3,
+    "facts": [
+     "15 to 17 sq m",
+     "1 King or 2 Twin Beds",
+     "Courtyard or inside view"
+    ],
+    "lede": "A quiet room in the former monastery, dressed in Spanish colonial style.",
+    "features": [
+     "Buffet breakfast",
+     "Central heating",
+     "Minibar",
+     "24-hour room service",
+     "Nightly turndown"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Superior Room with Oxygen",
+    "sleeps": 3,
+    "facts": [
+     "15 to 17 sq m",
+     "1 King or 2 Twin Beds",
+     "Inside view"
+    ],
+    "lede": "A Superior Room with oxygen added to the air, to ease the altitude of Cusco.",
+    "features": [
+     "Oxygen enriched",
+     "Buffet breakfast",
+     "Central heating",
+     "Minibar",
+     "24-hour room service"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Superior City View with Oxygen",
+    "sleeps": 3,
+    "facts": [
+     "23 to 25 sq m",
+     "1 King or 2 Twin Beds",
+     "San Blas view"
+    ],
+    "lede": "A room with oxygen added and a view over the rooftops of the San Blas quarter.",
+    "features": [
+     "Oxygen enriched",
+     "Views over San Blas",
+     "Buffet breakfast",
+     "Central heating",
+     "Minibar"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Deluxe Room",
+    "sleeps": 3,
+    "facts": [
+     "27 to 33 sq m",
+     "1 King or 2 Twin Beds",
+     "Courtyard, city or inside view"
+    ],
+    "lede": "A larger room in the main building, with colonial furnishings and space to unwind after the city.",
+    "features": [
+     "Buffet breakfast",
+     "Central heating",
+     "Minibar",
+     "24-hour room service",
+     "Nightly turndown"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Deluxe Room with Oxygen",
+    "sleeps": 3,
+    "facts": [
+     "27 to 30 sq m",
+     "1 King or 2 Twin Beds",
+     "Courtyard or city view"
+    ],
+    "lede": "A Deluxe Room with oxygen added to the air for rest at altitude.",
+    "features": [
+     "Oxygen enriched",
+     "Buffet breakfast",
+     "Central heating",
+     "Minibar",
+     "24-hour room service"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Junior Suite with Oxygen",
+    "sleeps": 3,
+    "facts": [
+     "31 to 38 sq m",
+     "1 King Bed",
+     "City or courtyard view"
+    ],
+    "lede": "A suite with a generous living area, heated and enriched with oxygen.",
+    "features": [
+     "Oxygen enriched",
+     "Living area",
+     "Heating and air conditioning",
+     "Buffet breakfast",
+     "Minibar"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Deluxe Junior Suite with Enhanced Oxygen",
+    "sleeps": 3,
+    "facts": [
+     "40 to 46 sq m",
+     "1 King Bed",
+     "City, street or courtyard view"
+    ],
+    "lede": "A two-storey suite with its own living room and a marble bathroom.",
+    "features": [
+     "Oxygen enriched",
+     "Two storeys",
+     "Separate living room",
+     "Marble bathroom",
+     "Buffet breakfast"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "One Bedroom Suite with Added Oxygen",
+    "sleeps": 3,
+    "facts": [
+     "49 to 71 sq m",
+     "1 King Bed",
+     "Courtyard view"
+    ],
+    "lede": "A suite set around a private courtyard, with its own terrace and a separate living room.",
+    "features": [
+     "Oxygen enriched",
+     "Private terrace",
+     "Separate living room",
+     "Marble bathroom with separate tub and shower",
+     "Two televisions"
+    ],
+    "photos": [],
+    "plungePool": false
+   }
+  ]
+ },
+ "awasi-atacama": {
+  "_source": "awasi.com/atacama (accommodation pages) and the Awasi Atacama Fully Hosted Rates 2026-2027 sheet on awasi.com/info, read 24 Nov 2026 at James's request.",
+  "ratesNote": "Fully hosted rates as published by Awasi for 2026-2027, in US dollars per villa for two guests, at the lowest season of the year: every meal, the open bar, a private guide and 4x4 each day and airport transfers are included. Longer stays earn Awasi's long-stay saving. Read 24 Nov 2026; the house confirms the figure for your dates.",
+  "rooms": [
+   {
+    "name": "Round Room",
+    "sleeps": 2,
+    "facts": [
+     "50 sq m"
+    ],
+    "lede": "A round room of stone, adobe and wood under a thatched roof, made for rest after the desert.",
+    "features": [
+     "Private patio with outdoor shower",
+     "Large shared terrace",
+     "Reading lounge",
+     "Large en-suite bathroom with shower"
+    ],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 2200,
+     "basis": "per night for two, fully hosted, lowest season"
+    }
+   },
+   {
+    "name": "Superior Round Suite",
+    "sleeps": 3,
+    "facts": [
+     "65 sq m including patio"
+    ],
+    "lede": "A larger round suite of stone, adobe and wood under a thatched roof.",
+    "features": [
+     "Private patio with outdoor shower",
+     "Bathroom with bathtub and shower",
+     "Walk-in wardrobe, desk and chaise longue"
+    ],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 2800,
+     "basis": "per night for two, fully hosted, lowest season"
+    }
+   }
+  ]
+ },
+ "awasi-patagonia": {
+  "_source": "awasi.com/patagonia (accommodation pages) and the Awasi Patagonia Fully Hosted Rates 2026-2027 sheet on awasi.com/info, read 24 Nov 2026 at James's request.",
+  "ratesNote": "Fully hosted rates as published by Awasi for 2026-2027, in US dollars per villa for two guests (the Master Villa and Cenit Villa are priced for the villa), at the lowest season of the year: every meal, the open bar, a private guide and 4x4 each day and airport transfers are included. Stays are three nights or more; longer stays earn Awasi's long-stay saving. Read 24 Nov 2026; the house confirms the figure for your dates.",
+  "rooms": [
+   {
+    "name": "Villa",
+    "sleeps": 3,
+    "facts": [
+     "90 sq m",
+     "1 King or 2 Twin Beds"
+    ],
+    "lede": "A stand-alone villa in the private reserve beside Torres del Paine, with a wood-burning fireplace.",
+    "features": [
+     "Outdoor hot tub facing the forest, Lake Sarmiento and the park",
+     "Wood-burning fireplace",
+     "Bathtub and separate shower",
+     "Central heating"
+    ],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 2565,
+     "basis": "per night for two, fully hosted, lowest season"
+    }
+   },
+   {
+    "name": "Master Villa",
+    "sleeps": 4,
+    "facts": [
+     "110 sq m",
+     "2 Bedrooms, each 1 King or 2 Twin Beds"
+    ],
+    "lede": "A two-bedroom villa with a separate seating area, for families and friends.",
+    "features": [
+     "Outdoor hot tub facing the forest, Lake Sarmiento and the park",
+     "Wood-burning fireplace",
+     "Two en-suite bathrooms",
+     "Central heating"
+    ],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 4335,
+     "basis": "per night for the villa, up to four guests, fully hosted, lowest season"
+    }
+   },
+   {
+    "name": "Cenit Villa",
+    "sleeps": 4,
+    "facts": [
+     "Nearly 180 sq m",
+     "2 Master Suites",
+     "From 15 December 2026"
+    ],
+    "lede": "An oval, fully private residence with two master suites under one roof.",
+    "features": [
+     "A private chef for the villa",
+     "A dedicated host",
+     "A dedicated senior Awasi guide",
+     "An INEOS Grenadier for each master suite",
+     "In-villa massages"
+    ],
+    "photos": [],
+    "plungePool": false,
+    "from": {
+     "amount": 4985,
+     "basis": "per night for the villa, up to four guests, fully hosted, lowest season"
+    }
+   }
+  ]
+ },
+ "awasi-mendoza": {
+  "_source": "awasi.com/mendoza (accommodation pages) and the Awasi Mendoza Fully Hosted Rates 2026-2027 sheet on awasi.com/info, read 24 Nov 2026 at James's request. Awasi's site describes Lujo and Front Row on one page; the sheet prices them apart.",
+  "ratesNote": "Fully hosted rates as published by Awasi for 2026-2027, in US dollars per villa for two guests (the Two Bedroom Villa is priced for the villa), at the lowest season of the year: every meal, the open bar, a private guide and 4x4 each day and airport transfers are included. Longer stays earn Awasi's long-stay saving. Read 24 Nov 2026; the house confirms the figure for your dates.",
+  "rooms": [
+   {
+    "name": "Lujo",
+    "sleeps": 3,
+    "facts": [
+     "90 sq m",
+     "1 King or 2 Twin Beds"
+    ],
+    "lede": "A villa among the vines with its own plunge pool and sun deck, and a roof terrace looking to the Andes.",
+    "features": [
+     "Private plunge pool and sun deck",
+     "Roof terrace with 360 degree views",
+     "Fireplace",
+     "Master bath with dual vanities"
+    ],
+    "photos": [],
+    "plungePool": true,
+    "from": {
+     "amount": 2470,
+     "basis": "per night for two, fully hosted, lowest season"
+    }
+   },
+   {
+    "name": "Front Row",
+    "sleeps": 3,
+    "facts": [
+     "90 sq m",
+     "1 King or 2 Twin Beds"
+    ],
+    "lede": "A front row villa facing the vineyards and the Andes, with its own plunge pool and roof terrace.",
+    "features": [
+     "Private plunge pool and sun deck",
+     "Roof terrace with 360 degree views",
+     "Fireplace",
+     "Master bath with dual vanities"
+    ],
+    "photos": [],
+    "plungePool": true,
+    "from": {
+     "amount": 2825,
+     "basis": "per night for two, fully hosted, lowest season"
+    }
+   },
+   {
+    "name": "Vineyard Villa",
+    "sleeps": 3,
+    "facts": [
+     "204 sq m",
+     "2 at the lodge"
+    ],
+    "lede": "A master suite joined to a spacious, fully private living room, with a terrace looking to the Andes.",
+    "features": [
+     "Outdoor hot tub and plunge pool",
+     "Upstairs terrace with open fireplace",
+     "Two WCs and two showers",
+     "Outdoor living area and shower garden"
+    ],
+    "photos": [],
+    "plungePool": true,
+    "from": {
+     "amount": 3385,
+     "basis": "per night for two, fully hosted, lowest season"
+    }
+   },
+   {
+    "name": "Two Bedroom Villa",
+    "sleeps": 4,
+    "facts": [
+     "360 sq m",
+     "2 Bedrooms"
+    ],
+    "lede": "The largest villa, with views of the vineyards and the Andes from every angle, for families and friends.",
+    "features": [
+     "Outdoor jacuzzi and plunge pool",
+     "Upstairs terrace with open fireplace",
+     "Roomy dining area",
+     "Outdoor living area and shower garden"
+    ],
+    "photos": [],
+    "plungePool": true,
+    "from": {
+     "amount": 6200,
+     "basis": "per night for the villa, up to four guests, fully hosted, lowest season"
+    }
+   }
+  ]
+ },
+ "awasi-santa-catarina": {
+  "_source": "awasi.com/santa-catarina (accommodation pages), read 24 Nov 2026 at James's request. Rates are not filed yet: Awasi's sheet could not be read reliably, so the house prices your dates on request.",
+  "rooms": [
+   {
+    "name": "Villa Anhatomirim",
+    "sleeps": null,
+    "facts": [
+     "96 sq m",
+     "1 King Bed"
+    ],
+    "lede": "A two-storey villa joining a generous living room and bedroom, with two decks over the Emerald Coast.",
+    "features": [
+     "Double decks with views of the Emerald Coast",
+     "Wine cellar",
+     "Nespresso machine",
+     "Egyptian cotton linens"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Villa Sissial",
+    "sleeps": null,
+    "facts": [
+     "96 sq m",
+     "1 King Bed"
+    ],
+    "lede": "A villa with a separate bedroom and living room, and a private deck with a heated pool.",
+    "features": [
+     "Heated private pool",
+     "Solarium",
+     "Dry sauna",
+     "Wine cellar"
+    ],
+    "photos": [],
+    "plungePool": true
+   },
+   {
+    "name": "Villa Arvoredo",
+    "sleeps": null,
+    "facts": [
+     "96 sq m",
+     "1 King Bed"
+    ],
+    "lede": "One open bedroom and living space, made for a good book or a film, with a heated pool outside.",
+    "features": [
+     "Heated private pool",
+     "Dry sauna",
+     "Wine cellar",
+     "Egyptian cotton linens"
+    ],
+    "photos": [],
+    "plungePool": true
+   },
+   {
+    "name": "Villa Tinguá",
+    "sleeps": null,
+    "facts": [
+     "130 sq m",
+     "1 King Bed"
+    ],
+    "lede": "A modern villa whose garden wraps an infinity pool, the place to watch the sunset.",
+    "features": [
+     "Infinity pool",
+     "Dry sauna",
+     "Double bathroom",
+     "Wine cellar"
+    ],
+    "photos": [],
+    "plungePool": true
+   },
+   {
+    "name": "Villa Costa Esmeralda",
+    "sleeps": null,
+    "facts": [
+     "230 sq m",
+     "1 King Bed"
+    ],
+    "lede": "Bedroom and living room as one space, opening through tall glass doors to the sea.",
+    "features": [
+     "Whirlpool and dry sauna with ocean views",
+     "Spa bathroom",
+     "Fireplace",
+     "600 thread Egyptian cotton sheets"
+    ],
+    "photos": [],
+    "plungePool": false
+   },
+   {
+    "name": "Villa Ponta dos Ganchos",
+    "sleeps": null,
+    "facts": [
+     "310 sq m",
+     "1 King Bed"
+    ],
+    "lede": "The largest villa, its bedroom and living area opening straight to the outdoors.",
+    "features": [
+     "Heated infinity pool",
+     "Sauna over the ocean",
+     "Spa bathroom with massage tatamis",
+     "Private fitness room"
+    ],
+    "photos": [],
+    "plungePool": true
    }
   ]
  }

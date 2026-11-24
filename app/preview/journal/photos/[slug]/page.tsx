@@ -6,7 +6,8 @@ import { JOURNAL_STAYS, journalStay, SECTION_LABEL } from "@/lib/journal-style/s
 // Preview only, never linked and never indexed: JWC-STYLE-01. A contact sheet of one stay's photographs, numbered in
 // the order the photograph viewer shows them, with the section each is filed under. It exists so photographs can be
 // described (lib/journal-style/photo-notes.json) by looking at them.
-export const dynamicParams = false;
+// Any stay can be sheeted on request (James, 24 Nov 2026), so photographs are checked before a stay joins the template.
+export const dynamicParams = true;
 export function generateStaticParams() { return ["todo", ...JOURNAL_STAYS].map((slug) => ({ slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

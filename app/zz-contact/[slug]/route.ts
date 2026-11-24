@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // TEMPORARY, never merged: a bare contact sheet of a stay's undescribed photographs, for writing photo-notes.
 import stays from "@/lib/content/stays.json";
 import notes from "@/lib/journal-style/photo-notes.json";

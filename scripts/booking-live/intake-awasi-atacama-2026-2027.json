@@ -1,0 +1,124 @@
+{
+ "ledgerId": "STY-2026-000026",
+ "slug": "awasi-atacama",
+ "propertyName": "Awasi Atacama",
+ "timeZone": "America/Santiago",
+ "stayType": "Lodge",
+ "units": [
+  {
+   "code": "round-room",
+   "name": "Round Room",
+   "maxAdults": 2,
+   "maxChildren": 0,
+   "maxOccupancy": 2
+  },
+  {
+   "code": "superior-round-suite",
+   "name": "Superior Round Suite",
+   "maxAdults": 3,
+   "maxChildren": 0,
+   "maxOccupancy": 3
+  }
+ ],
+ "plan": {
+  "code": "fh",
+  "name": "Fully hosted",
+  "boardBasis": "Fully inclusive",
+  "refundability": "Refundable",
+  "inclusions": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Calama airport."
+ },
+ "card": {
+  "label": "2026-2027-V1",
+  "currency": "USD",
+  "effectiveFrom": "2026-10-01",
+  "effectiveTo": "2027-09-30",
+  "contractReference": "Awasi Atacama Fully Hosted Rates 2026-2027 (awasi.com/info, 2026-09). Public rack rates; totals for 2 to 6 nights entered as a nightly rate with long-stay offers of 3%, 5% and 8%.",
+  "depositPercent": 0.5,
+  "balanceDueDays": 30,
+  "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival. November to February: free cancellation until 45 days before arrival, 50% from 44 to 31 days, 100% within 30 days. March to October: free until 31 days before arrival, 50% from 30 to 16 days, 100% within 15 days. Festive dates (20 December to 3 January): free until 121 days before, 50% from 120 to 61 days, 100% within 60 days.",
+  "cancellationTiers": "44:50, 30:100",
+  "notes": "Tax exempt for non-resident guests paying in foreign currency, per the sheet. Single-occupancy rates on the sheet are not yet priced. House commission 20% (private)."
+ },
+ "seasons": {
+  "round-room": [
+   {
+    "season": "High 2026-11 to 2027-02",
+    "stayStart": "2026-11-01",
+    "stayEnd": "2027-02-28",
+    "nightly": 2920.0,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2
+   },
+   {
+    "season": "Shoulder 2026-10 to 2026-10",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2026-10-31",
+    "nightly": 2485.0,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2
+   },
+   {
+    "season": "Shoulder 2027-03 to 2027-04",
+    "stayStart": "2027-03-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 2485.0,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2
+   },
+   {
+    "season": "Off-Peak 2027-05 to 2027-09",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 2200.0,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2
+   }
+  ],
+  "superior-round-suite": [
+   {
+    "season": "High 2026-11 to 2027-02",
+    "stayStart": "2026-11-01",
+    "stayEnd": "2027-02-28",
+    "nightly": 4065.0,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "extraAdult": 815.0
+   },
+   {
+    "season": "Shoulder 2026-10 to 2026-10",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2026-10-31",
+    "nightly": 3325.0,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "extraAdult": 625.0
+   },
+   {
+    "season": "Shoulder 2027-03 to 2027-04",
+    "stayStart": "2027-03-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 3325.0,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "extraAdult": 625.0
+   },
+   {
+    "season": "Off-Peak 2027-05 to 2027-09",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 2800.0,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "extraAdult": 560.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,469 @@
+{
+ "properties": [
+  {
+   "id": "recwzXtRRji8TM8uM",
+   "cellValuesByFieldId": {
+    "fldD0Dxwcn29tD2bH": "STY-2026-000026",
+    "fldNjVZNl6b4jSsPb": "Awasi Atacama",
+    "fldwGhL5wBPbo5DGk": "awasi-atacama",
+    "fldqoRn5u9SQm33pD": {
+     "name": "America/Santiago",
+     "color": ""
+    },
+    "fldH6NwiLn0jOH7Vq": {
+     "name": "Request",
+     "color": ""
+    },
+    "fldn4H89LVrYUaY3C": {
+     "name": "Supplier-direct",
+     "color": ""
+    },
+    "fldPw6HVzOn0Wu81W": {
+     "name": "Lodge",
+     "color": ""
+    },
+    "fldJDrqrfzXtpyJDq": {
+     "name": "Rate Card",
+     "color": ""
+    }
+   }
+  }
+ ],
+ "roomTypes": [
+  {
+   "id": "rec9eGbq3RqaRDUuW",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "round-room",
+    "fldcD8aIXGKDnMnx1": "Round Room",
+    "fldtzkzdgBR8VYSGX": 2,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 2,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "recwzXtRRji8TM8uM"
+     }
+    ]
+   }
+  },
+  {
+   "id": "recR870tEgGlsvHT4",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "superior-round-suite",
+    "fldcD8aIXGKDnMnx1": "Superior Round Suite",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     {
+      "id": "recwzXtRRji8TM8uM"
+     }
+    ]
+   }
+  }
+ ],
+ "ratePlans": [
+  {
+   "id": "rece6aBEPbBWgC4I7",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    },
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Calama airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "rec9eGbq3RqaRDUuW"
+     }
+    ]
+   }
+  },
+  {
+   "id": "recrQ5WdFn3FRkQKV",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": {
+     "name": "Fully inclusive",
+     "color": ""
+    },
+    "fldPgvCAb0DBGU1YQ": {
+     "name": "Refundable",
+     "color": ""
+    },
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Calama airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     {
+      "id": "recR870tEgGlsvHT4"
+     }
+    ]
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "reci3sO609aXNuYX6",
+   "cellValuesByFieldId": {
+    "fldJum6vCEkeKNESP": "2026-2027-V1",
+    "fldQ3O60392ByqpET": {
+     "name": "Published",
+     "color": ""
+    },
+    "fldNGNSZ6FgT6FANb": {
+     "name": "USD",
+     "color": ""
+    },
+    "fldOLmHRvvPylXjvm": "2026-10-01",
+    "fldSnFiC03lYCrFJv": "2027-09-30",
+    "fldC6tJYcgh5buiXc": "Awasi Atacama Fully Hosted Rates 2026-2027 (awasi.com/info, 2026-09). Public rack rates; nightly rate with long-stay offers of 3%, 5%, 8%. Approved to publish by James, 24 Nov 2026.",
+    "fldnth7DRrQxKX7gp": 0.5,
+    "flduDBHCrnixoEnwX": 30,
+    "fldLicyNay0J7QUhE": "A 50% deposit confirms the booking; the balance is due 30 days before arrival. November to February: free cancellation until 45 days before arrival, 50% from 44 to 31 days, 100% within 30 days. March to October: free until 31 days before arrival, 50% from 30 to 16 days, 100% within 15 days. Festive dates (20 December to 3 January): free until 121 days before, 50% from 120 to 61 days, 100% within 60 days.",
+    "fldoisPzvpMjxR7a5": "44:50, 30:100",
+    "fldZuYDcij1wBcHgG": 1,
+    "fld1XEDdmw71rH865": 1,
+    "fld2WUPdKEbun6uKO": "2026-11-24T13:20:00.000Z",
+    "fld2GLjAnpzzDcK1K": [
+     {
+      "id": "recwzXtRRji8TM8uM"
+     }
+    ]
+   }
+  }
+ ],
+ "rates": [
+  {
+   "id": "recxSozrhW6qnkVL0",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-11 to 2027-02",
+    "fldXs26HOWuPXJ2Fz": "2026-11-01",
+    "fldEhCN4nLoa4bxZr": "2027-02-28",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2920,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldYVog1NI9RYuRNw": 0,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "rec9eGbq3RqaRDUuW"
+     }
+    ],
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "rece6aBEPbBWgC4I7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "recWYZ4whJIr8REPJ",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2026-10",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2026-10-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2485,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldYVog1NI9RYuRNw": 0,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "rec9eGbq3RqaRDUuW"
+     }
+    ],
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "rece6aBEPbBWgC4I7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "reccknM8lgxflkXfD",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2027-03 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2027-03-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2485,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldYVog1NI9RYuRNw": 0,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "rec9eGbq3RqaRDUuW"
+     }
+    ],
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "rece6aBEPbBWgC4I7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rec6PsAaXuC7UVlw6",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-05 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2200,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldYVog1NI9RYuRNw": 0,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "rec9eGbq3RqaRDUuW"
+     }
+    ],
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "rece6aBEPbBWgC4I7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rec8reiWPco11ybFY",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-11 to 2027-02",
+    "fldXs26HOWuPXJ2Fz": "2026-11-01",
+    "fldEhCN4nLoa4bxZr": "2027-02-28",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 4065,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldYVog1NI9RYuRNw": 0,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recR870tEgGlsvHT4"
+     }
+    ],
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recrQ5WdFn3FRkQKV"
+     }
+    ],
+    "fldWkR0xbRaQBYJiY": 815
+   }
+  },
+  {
+   "id": "recXkoStguT3Zr39b",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2026-10",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2026-10-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3325,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldYVog1NI9RYuRNw": 0,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recR870tEgGlsvHT4"
+     }
+    ],
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recrQ5WdFn3FRkQKV"
+     }
+    ],
+    "fldWkR0xbRaQBYJiY": 625
+   }
+  },
+  {
+   "id": "recwKbsnwUfIYnYD8",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2027-03 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2027-03-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3325,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldYVog1NI9RYuRNw": 0,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recR870tEgGlsvHT4"
+     }
+    ],
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recrQ5WdFn3FRkQKV"
+     }
+    ],
+    "fldWkR0xbRaQBYJiY": 625
+   }
+  },
+  {
+   "id": "recwXwRLEIZgMNbaV",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-05 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2800,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldYVog1NI9RYuRNw": 0,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     {
+      "id": "recR870tEgGlsvHT4"
+     }
+    ],
+    "fld93xGvzmubO4l3X": [
+     {
+      "id": "recrQ5WdFn3FRkQKV"
+     }
+    ],
+    "fldWkR0xbRaQBYJiY": 560
+   }
+  }
+ ],
+ "promotions": [
+  {
+   "id": "recbCmaNCV041XhPR",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-ATA-4N",
+    "fldXx96yIYU35MBQJ": "Stay four nights: 3% off",
+    "fldBRSCO5XhQK7YLe": {
+     "name": "Percent off",
+     "color": ""
+    },
+    "fldnu6uuKRsfL51xd": 3,
+    "fldMxdne1EzsZSj0B": 4,
+    "fldRErSYMKM5dMv0a": {
+     "name": "Exclusive",
+     "color": ""
+    },
+    "fldlziRgTVnisk3eI": {
+     "name": "Approved",
+     "color": ""
+    },
+    "fld9J8rHRoU40Xvrh": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ]
+   }
+  },
+  {
+   "id": "recO4jSpn6DlFoRGm",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-ATA-5N",
+    "fldXx96yIYU35MBQJ": "Stay five nights: 5% off",
+    "fldBRSCO5XhQK7YLe": {
+     "name": "Percent off",
+     "color": ""
+    },
+    "fldnu6uuKRsfL51xd": 5,
+    "fldMxdne1EzsZSj0B": 5,
+    "fldRErSYMKM5dMv0a": {
+     "name": "Exclusive",
+     "color": ""
+    },
+    "fldlziRgTVnisk3eI": {
+     "name": "Approved",
+     "color": ""
+    },
+    "fld9J8rHRoU40Xvrh": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rec1plS79LAw18nE3",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-ATA-6N",
+    "fldXx96yIYU35MBQJ": "Stay six nights or more: 8% off",
+    "fldBRSCO5XhQK7YLe": {
+     "name": "Percent off",
+     "color": ""
+    },
+    "fldnu6uuKRsfL51xd": 8,
+    "fldMxdne1EzsZSj0B": 6,
+    "fldRErSYMKM5dMv0a": {
+     "name": "Exclusive",
+     "color": ""
+    },
+    "fldlziRgTVnisk3eI": {
+     "name": "Approved",
+     "color": ""
+    },
+    "fld9J8rHRoU40Xvrh": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ]
+   }
+  }
+ ],
+ "terms": [
+  {
+   "id": "recCA5XpQm2gWVHTK",
+   "cellValuesByFieldId": {
+    "fldzaJoEOCoJZuZf0": "Awasi Atacama 2026-2027 commission",
+    "fld1OuYNTzcz3ZoXV": false,
+    "fldywmVrGmdk0yJ0B": 0.2,
+    "fldr7ST5fjgmPnQGP": "Rack rates; house earns 20% commission (James, 24 Nov 2026).",
+    "fldhuIkJarrA0MhlK": [
+     {
+      "id": "reci3sO609aXNuYX6"
+     }
+    ]
+   }
+  }
+ ]
+}

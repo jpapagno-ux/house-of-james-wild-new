@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CalendarClock, Mail, PenLine, Phone } from "lucide-react";
-import { IggiIcon } from "@/components/iggi/IggiMark";
+import IggiMark from "@/components/iggi/IggiMark";
 import { IGGI_ON } from "@/lib/iggi/flag";
 import { SITE } from "@/lib/site";
 
@@ -38,9 +38,18 @@ export default function TalkToUs({ name, planHref }: { name: string; planHref: s
   );
 }
 
+// Iggi's colour on the dark bar (James, 23 Nov 2026: "a white icon, no black square, a white line around the box, and
+// Iggi the matching colour of the pathway"): the stay's primary pathway accent, lifted toward white so it reads on the
+// bar; white when the stay has no pathway.
+function onBar(hex?: string | null): string {
+  if (!hex || !/^#[0-9a-f]{6}$/i.test(hex)) return "#FFFFFF";
+  const mix = (i: number) => Math.round(parseInt(hex.slice(i, i + 2), 16) * 0.45 + 255 * 0.55).toString(16).padStart(2, "0");
+  return `#${mix(1)}${mix(3)}${mix(5)}`;
+}
+
 // The bottom bar on record pages (phones), replacing the global quick bar:
 // call, ask by email, and enquire, all about this place.
-export function ContactBar({ name, planHref, from, ledgerId }: { name: string; planHref: string; from?: string; ledgerId?: string | null }) {
+export function ContactBar({ name, planHref, from, ledgerId, iggiTint }: { name: string; planHref: string; from?: string; ledgerId?: string | null; iggiTint?: string | null }) {
   const subject = encodeURIComponent(`${name}: a question for the house`);
   return (
     <div id="record-bar" className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-paper/95 backdrop-blur border-t ledger-border pb-[env(safe-area-inset-bottom)]">
@@ -53,7 +62,7 @@ export function ContactBar({ name, planHref, from, ledgerId }: { name: string; p
         {/* Ask Iggi (James, 19 Nov 2026: "the screen seems to be hard to find"): one tap from anywhere on the page to the
             chat; the email door stays in Talk to us above. */}
         {IGGI_ON ? (
-          <a href="#iggi-chat" aria-label={`Ask Iggi, the house's Field Guide${ledgerId ? `, about ${ledgerId}` : ""}`} className="w-11 h-11 shrink-0 bg-ink-deep flex items-center justify-center" data-event="iggi_jump"><IggiIcon size={26} onDark /></a>
+          <a href="#iggi-chat" aria-label={`Ask Iggi, the house's Field Guide${ledgerId ? `, about ${ledgerId}` : ""}`} className="w-11 h-11 shrink-0 border ledger-border flex items-center justify-center" style={{ color: onBar(iggiTint) }} data-event="iggi_jump"><IggiMark size={28} decorative /></a>
         ) : SITE.email && <a href={`mailto:${SITE.email}?subject=${subject}`} aria-label="Email the house" className="w-11 h-11 shrink-0 border ledger-border flex items-center justify-center" data-event="email_click"><Mail className="w-4 h-4" strokeWidth={1.5} /></a>}
         <Link href={planHref} className="ledger-btn ledger-btn--solid !h-11 shrink-0" data-event="enquire_click">Enquire</Link>
       </div>
@@ -64,15 +73,15 @@ export function ContactBar({ name, planHref, from, ledgerId }: { name: string; p
 // Desktop: a quiet card, bottom right.
 // The Iggi door (James, 23 Nov 2026, the launcher pill from the calling-card canvas): Ink, the small green chameleon,
 // and the page's Ledger ID so he looks like he knows where he is. One try, on stays first.
-export function ContactPill({ name, planHref, ledgerId }: { name: string; planHref: string; ledgerId?: string | null }) {
+export function ContactPill({ name, planHref, ledgerId, iggiTint }: { name: string; planHref: string; ledgerId?: string | null; iggiTint?: string | null }) {
   return (
     <div data-quiet-actions className="hidden lg:flex fixed bottom-6 right-6 z-30 items-center gap-3 bg-paper/95 backdrop-blur border ledger-border shadow-[0_8px_30px_rgba(0,0,0,0.12)] pl-4 pr-2 py-2">
       <span className="text-[13px]"><span className="ledger-eyebrow block !text-[9.5px]">Ask about {name.length > 26 ? "this place" : name}</span><a href={`tel:${SITE.phone.tel}`} className="hover:ledger-crimson" data-event="call_click">{SITE.phone.display}</a></span>
       {IGGI_ON && (
-        <a href="#iggi-chat" className="inline-flex items-center gap-2.5 h-11 pl-2.5 pr-3.5 bg-ink-deep text-[#F4F2EF] text-[13px] tracking-[0.02em] hover:bg-ink" data-event="iggi_jump" aria-label={`Ask Iggi${ledgerId ? ` about ${ledgerId}` : ""}`}>
-          <IggiIcon size={24} onDark />
+        <a href="#iggi-chat" className="inline-flex items-center gap-2.5 h-11 pl-2.5 pr-3.5 border ledger-border text-[13px] tracking-[0.02em]" data-event="iggi_jump" aria-label={`Ask Iggi${ledgerId ? ` about ${ledgerId}` : ""}`}>
+          <span style={{ color: onBar(iggiTint) }}><IggiMark size={26} decorative /></span>
           <span>Ask Iggi</span>
-          {ledgerId && <span className="font-mono text-[10.5px] tracking-[0.08em] text-[#CFC8BF]">{ledgerId}</span>}
+          {ledgerId && <span className="font-mono text-[10.5px] tracking-[0.08em] opacity-75">{ledgerId}</span>}
         </a>
       )}
       <Link href={planHref} className="ledger-btn !py-2 !px-3.5" data-event="enquire_click">Enquire</Link>

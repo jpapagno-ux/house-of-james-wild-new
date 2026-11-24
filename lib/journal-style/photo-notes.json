@@ -3376,5 +3376,38 @@
       }
     },
     "extra": []
+  },
+  "belmond-monasterio": {
+    "describe": {
+      "hero": {
+        "alt": "The stone arcades of the cloister at Monasterio with the rooftops of Cusco behind",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A guest at a suite window with coffee, looking out over the tiled rooftops of Cusco",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "The gilded baroque altar of the San Antonio de Abad Chapel at Monasterio",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "The Inti Raymi festival in Cusco, a figure in ceremonial dress carried under a blue sky",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "A lit Christmas tree and a crowd on the square outside Monasterio at night",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A cloister corridor with stone columns and a red runner",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A server carrying a tray up the stairs toward the chapel",
+        "section": "dining"
+      }
+    },
+    "extra": []
   }
 }

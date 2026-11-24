@@ -24924,15 +24924,15 @@
    "bestMonths": "May - September",
    "bestMonthsNote": "Dry season months offer the clearest skies, best hiking conditions, and optimal visibility for both Machu Picchu and cloud forest exploration.",
    "bestFor": [],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2011-05-01",
    "coords": {
     "lat": -13.1547,
     "lng": -72.5253
    },
    "airport": "Alejandro Velasco Astete International Airport (CUZ)",
    "airportDirections": "Fly into Cusco, transfer by scenic train through the Sacred Valley to Machu Picchu Pueblo. The hotel is within walking distance of the train station.",
-   "founderNote": null,
+   "founderNote": "James stayed at Inkaterra Machu Picchu Pueblo Hotel in May 2011.",
    "rooms": {
     "paras": [],
     "items": [
@@ -37459,12 +37459,12 @@
     "couples",
     "luxury"
    ],
-   "status": "unclassified",
-   "statusDate": null,
+   "status": "founder_visited",
+   "statusDate": "2011-05-01",
    "coords": null,
    "airport": "Alejandro Velasco Astete International Airport (CUZ)",
    "airportDirections": "Belmond gives a 20 minute drive from Alejandro Velasco Astete Airport (CUZ) in Cusco, itself a 90 minute flight from Lima. Poroy train station is a 40 minute drive, and Machu Picchu is three and a half hours by train.",
-   "founderNote": null,
+   "founderNote": "James stayed at Monasterio in May 2011 and vetted it for the house.",
    "rooms": {
     "paras": [
      "Rooms, 19 to 41 square metres, for up to 3 guests. Junior Suites, 31 to 47 square metres, for up to 3 guests. One Bedroom Suite with Added Oxygen, 49 to 71 square metres, for up to 3 guests."

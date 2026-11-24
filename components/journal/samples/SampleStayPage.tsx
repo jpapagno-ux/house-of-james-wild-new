@@ -261,7 +261,7 @@ export function SampleExpect({ v, cards, children }: { v: View; cards: { title: 
     const row = (label: string, list: NonNullable<View["expect"]>["experiences"]) => list.length === 0 ? null : (
       <div className="mt-10 border-t-2 border-[color:var(--jw-stone)] pt-5">
         <p className={`${T.label} text-stone-text`}>{label} · {list.length}</p>
-        <ul aria-label={label} className="mt-5 -mx-5 md:-mx-10 flex snap-x snap-mandatory gap-4 md:gap-6 overflow-x-auto px-5 md:px-10 scroll-px-5 md:scroll-px-10 pb-3 [scrollbar-width:none]">
+        <ul aria-label={label} className="mt-5 flex snap-x snap-mandatory gap-4 md:gap-6 overflow-x-auto pb-3 [scrollbar-width:none]">
           {list.map((c) => (
             <li key={c.title} className="w-[70vw] max-w-[340px] shrink-0 snap-start">
               {c.photo

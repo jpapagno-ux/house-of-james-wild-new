@@ -32,7 +32,14 @@
   },
   "awasi-patagonia": {
    "name": "Awasi Patagonia",
-   "note": "James, 2026-11-23: the record was named only Patagonia; it is Awasi Patagonia."
+   "note": "James, 2026-11-23: the record was named only Patagonia; it is Awasi Patagonia. 2026-11-24: the five Cenit Villas architect's renderings removed until photographs exist.",
+   "gallery": [
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/2fd76cae0_614e0613c_6a220315a03cd874b2cf4c60_AWASI-PATAGONIA-DEZ-2025-222.webp",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9664ce63b_76dcdcbce_6a220313b05737d00a36566c_p_mv-4.webp",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9ee199b7_807612a77_6a220313a03cd874b2cf4bd7_p_mv-1.webp",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f7422ae6_4a7f3b887_6a22031316caf7eb9400f669_p_mv-5.webp",
+    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/801898d66_e2bec1208_6a220312c6a7461bbef803f4_p_v-6-scaled-1-1024x670.webp"
+   ]
   },
   "explora-torres-del-paine": {
    "name": "Explora Torres del Paine",
@@ -49,6 +56,14 @@
   "explora-el-chalten": {
    "name": "Explora El Chaltén",
    "note": "James, 2026-11-23: name the record in full, with its brand."
+  },
+  "the-singular-patagonia": {
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/trail-lakeside",
+   "note": "James, 2026-11-24: hero by the photo rule, the Paine lakeshore in place of the lounge interior."
+  },
+  "inkaterra-hacienda-concepcion": {
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b2e2717ab_f06933b60_6a3590b11f77734f69b4f29a_9e4bec51.webp",
+   "note": "James, 2026-11-24: hero by the photo rule, the thatched cabana in the rainforest in place of the cushions close-up."
   }
  }
 }

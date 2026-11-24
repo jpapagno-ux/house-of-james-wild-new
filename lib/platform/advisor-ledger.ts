@@ -23,7 +23,7 @@ export function parseQuery(sp: Record<string, string | string[] | undefined>): L
   const slug = (k: string) => { const s = str(sp[k], 60); return /^[a-z0-9-]*$/.test(s) ? s : ""; };
   const path = str(sp.pathway, 7);
   const page = Math.max(1, Math.min(200, parseInt(str(sp.page, 4) || "1", 10) || 1));
-  return { q: str(sp.q), volume: slug("volume"), region: slug("region"), country: slug("country"), pathway: /^PATH-0[1-8]$/.test(path) ? path : "", offers: str(sp.offers) === "1", priced: str(sp.priced) === "1", mine: str(sp.mine) === "1", page };
+  return { q: str(sp.q), volume: slug("volume"), region: slug("region"), country: slug("country"), pathway: /^PATH-0[1-9]$/.test(path) ? path : "", offers: str(sp.offers) === "1", priced: str(sp.priced) === "1", mine: str(sp.mine) === "1", page };
 }
 
 const fold = (s: string) => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();

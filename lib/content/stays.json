@@ -6361,11 +6361,6 @@
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9664ce63b_76dcdcbce_6a220313b05737d00a36566c_p_mv-4.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/e9ee199b7_807612a77_6a220313a03cd874b2cf4bd7_p_mv-1.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/9f7422ae6_4a7f3b887_6a22031316caf7eb9400f669_p_mv-5.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/84cda6c2f_7f087144a_6a2203125f7d99eff0127126_Cenit-Villas-Center-768x512.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/33d2fd672_59a2fd023_6a220312b05737d00a365356_Cenit-Villas-Bedroom-1-768x574.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/32e53a9f3_2580b32b7_6a2203125f7d99eff012710e_Cenit-Villas-Bathroom-768x674.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/79086b240_53b4f9169_6a2203128b17cd355a2617a2_Cenit-Villas-Living-1-1024x790.webp",
-    "https://media.base44.com/images/public/6a7932161e9318dca1f24474/82a351044_2daeaeaf4_6a220312f0f19d3777f7fd60_Cenit-Villas-Hero.webp",
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/801898d66_e2bec1208_6a220312c6a7461bbef803f4_p_v-6-scaled-1-1024x670.webp"
    ],
    "bestMonths": "October — April",
@@ -24583,7 +24578,7 @@
    "category": "lodge",
    "tagline": "An immersive eco-luxury lodge deep within the Peruvian Amazon rainforest.",
    "quote": "Wake to the sounds of the rainforest and rediscover your connection to the natural world.",
-   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/ba082c1ac_640df76e0_6a14d52d404927320e68ceb1_HC01_HEADER_ROOM_nuevo.jpg",
+   "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b2e2717ab_f06933b60_6a3590b11f77734f69b4f29a_9e4bec51.webp",
    "gallery": [
     "/img/b44/bdefcb41f_8b46ee170_6a3590b1cd06ca2314238330_06b3e897.avif",
     "/img/b44/603f3ccd6_1db1ae1ed_6a3590b1491d6977ea56f2ec_6a072400.avif",
@@ -60492,7 +60487,7 @@
    "category": "hotel",
    "tagline": "A 1915 cold storage plant on Última Esperanza Fjord, restored as a 57 room hotel with its engine room intact and Torres del Paine a day trip away",
    "quote": null,
-   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/lounge-fireplace",
+   "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/trail-lakeside",
    "gallery": [
     "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/the-singular-patagonia/rooms/singular-king-1",
     "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/chile/the-singular-patagonia/trail-lakeside",

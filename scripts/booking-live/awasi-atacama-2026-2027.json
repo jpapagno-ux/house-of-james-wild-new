@@ -1,0 +1,24 @@
+{
+  "_source": "Awasi Atacama Fully Hosted Rates 2026-2027 (awasi.com/info, PDF dated 2026-09). Public rack rates, USD, per room, totals for the stated nights. James, 24 Nov 2026: rack; the house earns 20% commission (private, never shown).",
+  "ledgerId": "STY-2026-000026", "slug": "awasi-atacama", "currency": "USD", "minNights": 2,
+  "commissionPercent": 20,
+  "deposit": { "percent": 50, "balanceDueDays": 30 },
+  "seasons": [
+    { "season": "High", "ranges": [["2026-11-01", "2027-02-28"]] },
+    { "season": "Shoulder", "ranges": [["2026-10-01", "2026-10-31"], ["2027-03-01", "2027-04-30"]] },
+    { "season": "Off-Peak", "ranges": [["2027-05-01", "2027-09-30"]] }
+  ],
+  "sheet": {
+    "round-room": {
+      "High":     { "DBL": [5840, 8760, 11330, 13870, 16118], "SGL": [4390, 6585, 8517, 10426, 12116] },
+      "Shoulder": { "DBL": [4970, 7455, 9642, 11804, 13717],  "SGL": [3740, 5610, 7256, 8883, 10322] },
+      "Off-Peak": { "DBL": [4400, 6600, 8536, 10450, 12144],  "SGL": [3300, 4950, 6402, 7838, 9108] }
+    },
+    "superior-round-room": {
+      "High":     { "DBL": [8130, 12195, 15772, 19309, 22439], "SGL": [6100, 9150, 11834, 14488, 16836], "TRP": [9760, 14640, 18934, 23180, 26938] },
+      "Shoulder": { "DBL": [6650, 9975, 12901, 15794, 18354],  "SGL": [4940, 7410, 9584, 11733, 13634],  "TRP": [7900, 11850, 15326, 18763, 21804] },
+      "Off-Peak": { "DBL": [5600, 8400, 10864, 13300, 15456],  "SGL": [4200, 6300, 8148, 9975, 11592],   "TRP": [6720, 10080, 13037, 15960, 18547] }
+    }
+  },
+  "longStay": [{ "code": "AWASI-4N", "minNights": 4, "percent": 3 }, { "code": "AWASI-5N", "minNights": 5, "percent": 5 }, { "code": "AWASI-6N", "minNights": 6, "percent": 8 }]
+}

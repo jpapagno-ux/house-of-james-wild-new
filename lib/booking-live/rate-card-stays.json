@@ -1,4 +1,8 @@
 {
- "_note": "Stays with a Published, approved rate card in Booking Live (Supabase, production). Check availability shows only on these (James, 23 Nov 2026). Add a slug here as the last step of docs/booking-live/RATE-CARD-PUSH.md; remove it if a card is withdrawn.",
- "stays": ["leeu-estates", "lion-sands"]
+  "_note": "Stays with a Published, approved rate card in Booking Live (Supabase, production). Check availability shows only on these (James, 23 Nov 2026). Add a slug here as the last step of docs/booking-live/RATE-CARD-PUSH.md; remove it if a card is withdrawn.",
+  "stays": [
+    "leeu-estates",
+    "lion-sands",
+    "awasi-atacama"
+  ]
 }

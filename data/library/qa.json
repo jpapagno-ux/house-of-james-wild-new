@@ -1,5 +1,5 @@
 {
- "checkedOn": "2026-11-23",
+ "checkedOn": "2026-11-24",
  "rows": [
   {
    "stay_id": "6afcd60dd016b84dcfe94ea1",
@@ -600,7 +600,7 @@
   {
    "stay_id": "6a899f0efb8eeb6e72b54aee",
    "slug": "awasi-mendoza",
-   "name": "Mendoza",
+   "name": "Awasi Mendoza",
    "country": "Argentina",
    "missing": [],
    "released": true

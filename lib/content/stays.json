@@ -1,5 +1,5 @@
 {
- "exportedOn": "2026-11-23",
+ "exportedOn": "2026-11-24",
  "stays": [
   {
    "slug": "beyond-amazon-explorer",
@@ -15191,9 +15191,9 @@
      "couples",
      "small_groups"
     ],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno (23 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-23"
    },
    "volumes": [
     "stays"
@@ -28517,9 +28517,9 @@
      "small_groups",
      "photographers"
     ],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno (23 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-23"
    },
    "volumes": [
     "stays"
@@ -42405,9 +42405,9 @@
      "families",
      "photographers"
     ],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno (23 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-23"
    },
    "volumes": [
     "stays"
@@ -57273,9 +57273,9 @@
      "families",
      "small_groups"
     ],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno (23 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-23"
    },
    "volumes": [
     "stays"
@@ -62858,9 +62858,9 @@
      "small_groups",
      "photographers"
     ],
-    "status": "draft",
-    "classifiedBy": null,
-    "classifiedAt": null
+    "status": "approved",
+    "classifiedBy": "James Papagno (23 Nov 2026, drafted by Claude)",
+    "classifiedAt": "2026-11-23"
    },
    "volumes": [
     "stays"

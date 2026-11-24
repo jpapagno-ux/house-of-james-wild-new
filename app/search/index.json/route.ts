@@ -14,6 +14,7 @@ import PLACES from "@/lib/content/places-library.json";
 import { TY_DOSSIERS, TY_PATH, tyPath } from "@/lib/content/terra-y";
 import { GUIDES } from "@/lib/content/guides";
 import { PARTNER_LIST, partnerPath } from "@/lib/content/partners";
+import { COUNTRY_FIELD_NOTES, FIELD_NOTES, SPECIES_PAGES } from "@/lib/field-notes/notes";
 
 // The house search index (/search/index.json), rebuilt from the Ledger on every publish (James, 4 Nov 2026: "if you
 // type in Ivory Lodge, it should pull up"). It used to be a file written once on 24 Oct, so lodges and residences
@@ -37,6 +38,7 @@ const PAGES: [string, string, string][] = [
   ["The Atlas", "/atlas", "Every stay, camp and ship on one map"],
   ["The Compass", "/compass", "The founder's compass: where to go, by what you want from it"],
   ["The Journal", "/journal", "Field notes and stories from the road"],
+  ["Wildlife: where and how to see it", "/wildlife", "Field Notes on the animals and plants of Africa, Madagascar, the Amazon and the Galápagos: where they live, when to go, how to photograph them"],
   ["Advisors", "/advisors", "The advisors who plan with James, and the places they know"],
   ["The Ledger", "/the-ledger", "How every stay, camp and ship is vetted and numbered"],
   ["What's coming", "/whats-coming", "Lodges and ships opening soon"],
@@ -105,6 +107,17 @@ export function GET() {
     if (!g.parent) continue;
     const c = COUNTRIES.find((x) => x.slug === g.parent);
     add({ t: "destination", n: g.name, u: g.path, k: "Place", p: c?.name ?? null, r: g.region, f: [], g: `${g.tagline}. ${g.seo.keywords.join(", ")}`, c: c ? [c.name] : [] });
+  }
+  // Wildlife species pages (James, 24 Nov 2026: "let search return them"): "gorilla", "wild dog" or "blue-footed booby"
+  // lands on the Field Note's own page. Filed under the countries whose pages carry the note, so a search scoped to
+  // Rwanda or Kenya shows them too. Reading, not a bookable record: they stay out of the Atlas (lib/atlas/feeders.json).
+  const WILD_REGION: Record<string, string[]> = { Amazon: ["peru", "brazil", "ecuador-galapagos"], "Galápagos": ["ecuador-galapagos"] };
+  for (const sp of Object.values(SPECIES_PAGES)) {
+    const note = FIELD_NOTES[sp.noteId];
+    const slugs = [...new Set([...Object.entries(COUNTRY_FIELD_NOTES).filter(([, ids]) => ids.includes(note.id)).map(([s]) => s), ...(WILD_REGION[note.region] ?? [])])];
+    const cs = slugs.map((s) => COUNTRIES.find((c) => c.slug === s)).filter((c): c is (typeof COUNTRIES)[number] => !!c);
+    const name = note.title.replace(/^The /, "");
+    add({ t: "page", n: name[0].toUpperCase() + name.slice(1), u: `/wildlife/${note.id}`, k: "Wildlife", p: cs[0]?.name ?? note.region, r: cs[0]?.region ?? null, f: ["wildlife_photography"], g: `${sp.title}. ${note.latin}. ${note.region} wildlife, when and where to see it, how to photograph it`, c: cs.map((c) => c.name) });
   }
   for (const v of VOLUMES) add({ t: "page", n: v.label, u: v.href, k: "Section", p: null, r: null, f: [], g: v.intro ?? null });
   // Terra Y dossiers (James, 15 Nov 2026): each by name, with the places and words people search for.

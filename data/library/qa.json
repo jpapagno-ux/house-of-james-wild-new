@@ -812,6 +812,16 @@
    "released": true
   },
   {
+   "stay_id": "6b058e2b0b6071ef9f9c53b3",
+   "slug": "belmond-monasterio",
+   "name": "Monasterio, A Belmond Hotel, Cusco",
+   "country": "Peru",
+   "missing": [
+    "coordinates"
+   ],
+   "released": true
+  },
+  {
    "stay_id": "6aeb4d6b33f5f403bbf56e93",
    "slug": "belmond-mount-nelson",
    "name": "Mount Nelson, A Belmond Hotel",
@@ -2010,18 +2020,6 @@
    "country": "Argentina",
    "missing": [],
    "released": true
-  },
-  {
-   "stay_id": "6a85bfb37f6eb35689bff909",
-   "slug": "explora-lodge",
-   "name": "Explora Lodge",
-   "country": "Chile & Easter Island",
-   "missing": [
-    "hero_photo",
-    "stay_copy",
-    "coordinates"
-   ],
-   "released": false
   },
   {
    "stay_id": "6a85bfb37f6eb35689bff90a",

@@ -1539,7 +1539,7 @@
    "coords": null,
    "airport": null,
    "airportDirections": null,
-   "founderNote": "Sailed Raja Ampat aboard Aliikai with my son Anthony, 3–14 November 2024. A founder favourite. , JW",
+   "founderNote": "Sailed Raja Ampat aboard Aliikai with my son Anthony, 3–14 November 2024. A founder favourite., JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -1673,7 +1673,7 @@
      "Spa Alila with immersive forest treatments",
      "EV charging stations & green infrastructure",
      "Private decks, fireplaces, outdoor showers",
-     "Intimate size , fewer than 60 rooms"
+     "Intimate size, fewer than 60 rooms"
     ]
    },
    "onlyHere": [
@@ -1828,7 +1828,7 @@
    "misfiled": null,
    "category": "lodge",
    "tagline": "Alphonse Island Lodge by Blue Safari: barefoot luxury on a remote coral island in the Seychelles Outer Islands.",
-   "quote": "You don’t visit Blue Safari , you enter a living ocean wilderness that remembers you only as a guest of nature.",
+   "quote": "You don’t visit Blue Safari, you enter a living ocean wilderness that remembers you only as a guest of nature.",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/seychelles/blue-safari-seychelles/hero",
    "gallery": [
     "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/blue-safari-seychelles/g1",
@@ -2958,7 +2958,7 @@
    "misfiled": null,
    "category": "lodge",
    "tagline": "Where rainforest science and soul-level discovery meet.",
-   "quote": "You don’t visit the Amazon here , you learn from it.",
+   "quote": "You don’t visit the Amazon here, you learn from it.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/aa45e4aba_58d2927d9_6a14d8ae055d5e1b0d131e61_IGFS01_HEADER_nuevo.jpg",
    "gallery": [
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/8a8060dc4_a6f39840e_6a35bc850bf5c79b64f9be93_bd92afc1.webp",
@@ -2976,7 +2976,7 @@
     "lat": -12.7839,
     "lng": -69.2501
    },
-   "airport": "Padre Aldamiz International Airport (PEM) , Puerto Maldonado, Peru",
+   "airport": "Padre Aldamiz International Airport (PEM), Puerto Maldonado, Peru",
    "airportDirections": "Approx. 1 hour flight from Cusco (CUZ) to Puerto Maldonado (PEM), followed by ~50 minutes river boat transfer along the Madre de Dios River to the field station.",
    "founderNote": null,
    "rooms": {
@@ -6024,7 +6024,7 @@
    "misfiled": null,
    "category": "hotel",
    "tagline": "Private desert journeys designed entirely around your pace, your curiosity, and your connection to the wild.",
-   "quote": "Some places change your perspective forever , Atacama changes your sense of time.",
+   "quote": "Some places change your perspective forever, Atacama changes your sense of time.",
    "hero": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/heroes/chile/atacama-desert-chile-volcanic-crater-salt-flat-sunrise-aerial",
    "gallery": [
     "https://media.base44.com/images/public/6a7932161e9318dca1f24474/60b982337_7f9e323b3_6a220664a03cd874b2d0608d_5-Round-Room.webp",
@@ -6044,7 +6044,7 @@
     "lat": -22.911102,
     "lng": -68.199715
    },
-   "airport": "El Loa Airport (CJC) , Calama, Chile",
+   "airport": "El Loa Airport (CJC), Calama, Chile",
    "airportDirections": "El Loa Airport (CJC) is approximately 100 km from Awasi Atacama, with a driving time of around 1 hour 30 minutes. Private transfers from Calama Airport are included according to check-in and check-out schedules.",
    "founderNote": null,
    "rooms": {
@@ -6078,7 +6078,7 @@
     ]
    },
    "onlyHere": [
-    "Awasi Atacama offers something increasingly rare in luxury travel , complete freedom. Here, every day unfolds around your curiosity. Whether hiking among salt ridges, sharing sunrise beneath volcanoes, or watching the Milky Way emerge over the desert sky, this is a stay built for travelers who want to feel fully present inside one of Earth’s most surreal landscapes."
+    "Awasi Atacama offers something increasingly rare in luxury travel, complete freedom. Here, every day unfolds around your curiosity. Whether hiking among salt ridges, sharing sunrise beneath volcanoes, or watching the Milky Way emerge over the desert sky, this is a stay built for travelers who want to feel fully present inside one of Earth’s most surreal landscapes."
    ],
    "why": [],
    "facts": {},
@@ -6252,7 +6252,7 @@
   },
   {
    "slug": "awasi-mendoza",
-   "name": "Mendoza",
+   "name": "Awasi Mendoza",
    "ledgerId": "STY-2026-669559",
    "country": "Argentina",
    "countrySlug": "argentina",
@@ -6413,7 +6413,7 @@
     ]
    },
    "onlyHere": [
-    "Awasi Patagonia delivers one of the most intimate luxury wilderness experiences in South America. Every stay is privately tailored around the traveler, creating a rare opportunity to explore Patagonia slowly, deeply, and entirely on your own terms , from glacier expeditions and puma safaris to quiet evenings beside a wood-burning fire beneath towering granite peaks."
+    "Awasi Patagonia delivers one of the most intimate luxury wilderness experiences in South America. Every stay is privately tailored around the traveler, creating a rare opportunity to explore Patagonia slowly, deeply, and entirely on your own terms, from glacier expeditions and puma safaris to quiet evenings beside a wood-burning fire beneath towering granite peaks."
    ],
    "why": [],
    "facts": {},
@@ -6472,7 +6472,7 @@
   },
   {
    "slug": "awasi-santa-catarina",
-   "name": "Santa Catarina",
+   "name": "Awasi Santa Catarina",
    "ledgerId": "STY-2026-000028",
    "country": "Brazil",
    "countrySlug": "brazil",
@@ -9710,7 +9710,7 @@
    "misfiled": null,
    "category": "hotel",
    "tagline": "Where the bush still speaks first, and luxury listens quietly.",
-   "quote": "In Hwange, you don’t observe wildlife , you enter its rhythm.",
+   "quote": "In Hwange, you don’t observe wildlife, you enter its rhythm.",
    "hero": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/0aee714bf_36a6b6428_6a05027fc59ae19ecfdebb6f_Camp-Hwange-Muddy-Teak-Banner-scaled.jpg",
    "gallery": [],
    "bestMonths": null,
@@ -15660,7 +15660,7 @@
     "items": []
    },
    "onlyHere": [
-    "Only here, beneath towering leadwood trees and along the quiet Sand River, do you experience safari in its most intimate form. With just four suites, Dulini Leadwood Lodge feels less like a lodge and more like a private retreat , where the wilderness unfolds quietly, personally, and without interruption."
+    "Only here, beneath towering leadwood trees and along the quiet Sand River, do you experience safari in its most intimate form. With just four suites, Dulini Leadwood Lodge feels less like a lodge and more like a private retreat, where the wilderness unfolds quietly, personally, and without interruption."
    ],
    "why": [],
    "facts": {
@@ -15767,7 +15767,7 @@
     "items": []
    },
    "onlyHere": [
-    "Only here do you feel the true soul of safari , where hospitality is as memorable as the wildlife. Set beneath towering trees and alive with birdsong, Dulini Moya Lodge blends intimacy, warmth, and exceptional game viewing into one unforgettable experience."
+    "Only here do you feel the true soul of safari, where hospitality is as memorable as the wildlife. Set beneath towering trees and alive with birdsong, Dulini Moya Lodge blends intimacy, warmth, and exceptional game viewing into one unforgettable experience."
    ],
    "why": [],
    "facts": {
@@ -15882,7 +15882,7 @@
     "items": []
    },
    "onlyHere": [
-    "Only here, along the shaded banks of the Sand River, do leopards roam with quiet confidence and elephants wander past your suite as if you were part of the landscape. Dulini River Lodge offers a rare stillness , where luxury fades into nature, and every encounter feels deeply personal."
+    "Only here, along the shaded banks of the Sand River, do leopards roam with quiet confidence and elephants wander past your suite as if you were part of the landscape. Dulini River Lodge offers a rare stillness, where luxury fades into nature, and every encounter feels deeply personal."
    ],
    "why": [],
    "facts": {
@@ -16735,7 +16735,7 @@
     ]
    },
    "onlyHere": [
-    "There’s a rare kind of energy that exists between the Andes and the Amazon Basin. El MaPi byInkaterra places travelers directly within that transition zone , where mist-covered mountains, rushing rivers, and ancient history create one of South America’s most emotionally powerful destinations."
+    "There’s a rare kind of energy that exists between the Andes and the Amazon Basin. El MaPi byInkaterra places travelers directly within that transition zone, where mist-covered mountains, rushing rivers, and ancient history create one of South America’s most emotionally powerful destinations."
    ],
    "why": [],
    "facts": {},
@@ -17336,7 +17336,7 @@
    },
    "airport": "Cape Town International Airport (CPT)",
    "airportDirections": "~26 km (~30 minutes) from Cape Town International Airport to Ellerman House via car with complimentary airport transfers offered.",
-   "founderNote": "A view that makes the rest of Cape Town look like the warm-up act, and white-glove service from a staff that notices before you ask. Make it your base. Stayed May 2026; a founder favourite. , JW",
+   "founderNote": "A view that makes the rest of Cape Town look like the warm-up act, and white-glove service from a staff that notices before you ask. Make it your base. Stayed May 2026; a founder favourite., JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -18621,7 +18621,7 @@
     ]
    },
    "onlyHere": [
-    "Only here can travelers experience Patagonia through Explora’s deeply intentional approach , exploring immense glaciers, hidden valleys, and endless pampas by day, before returning to warmth, stillness, and extraordinary simplicity at night. The feeling is less about luxury in the traditional sense, and more about belonging within one of the world’s last truly wild landscapes."
+    "Only here can travelers experience Patagonia through Explora’s deeply intentional approach, exploring immense glaciers, hidden valleys, and endless pampas by day, before returning to warmth, stillness, and extraordinary simplicity at night. The feeling is less about luxury in the traditional sense, and more about belonging within one of the world’s last truly wild landscapes."
    ],
    "why": [],
    "facts": {},
@@ -18652,7 +18652,7 @@
   },
   {
    "slug": "explora-el-chalten",
-   "name": "El Chaltén",
+   "name": "Explora El Chaltén",
    "ledgerId": "STY-2026-000089",
    "country": "Argentina",
    "countrySlug": "argentina",
@@ -18800,7 +18800,7 @@
     ]
    },
    "onlyHere": [
-    "Only here can travelers immerse themselves within one of the world’s most isolated and mysterious destinations , exploring volcanic landscapes, ancient Moai statues, Polynesian culture, and the immense Pacific Ocean through intentional exploration designed around depth, connection, and discovery."
+    "Only here can travelers immerse themselves within one of the world’s most isolated and mysterious destinations, exploring volcanic landscapes, ancient Moai statues, Polynesian culture, and the immense Pacific Ocean through intentional exploration designed around depth, connection, and discovery."
    ],
    "why": [],
    "facts": {},
@@ -18959,7 +18959,7 @@
   },
   {
    "slug": "explora-torres-del-paine",
-   "name": "Torres del Paine",
+   "name": "Explora Torres del Paine",
    "ledgerId": "STY-2026-000093",
    "country": "Chile & Easter Island",
    "countrySlug": "chile",
@@ -19017,7 +19017,7 @@
     ]
    },
    "onlyHere": [
-    "Only here can travelers wake up directly inside Torres del Paine National Park surrounded by glaciers, granite towers, turquoise lakes, and endless Patagonia wilderness. Explora transforms the region into something deeply immersive , where every hike, horseback ride, and scenic journey feels purposeful, personal, and unforgettable."
+    "Only here can travelers wake up directly inside Torres del Paine National Park surrounded by glaciers, granite towers, turquoise lakes, and endless Patagonia wilderness. Explora transforms the region into something deeply immersive, where every hike, horseback ride, and scenic journey feels purposeful, personal, and unforgettable."
    ],
    "why": [],
    "facts": {},
@@ -19810,7 +19810,7 @@
     "lat": 49.6768,
     "lng": -54.1693
    },
-   "airport": "ander International Airport (YQX) , Primary Arrival Airport.",
+   "airport": "ander International Airport (YQX), Primary Arrival Airport.",
    "airportDirections": "Gander International Airport (YQX)\nApproximate travel:\n1 hour drive to ferry terminal\nFerry crossing to Fogo Island\nAdditional drive to the Inn\nTotal journey: approximately 2.5–3 hours.",
    "founderNote": null,
    "rooms": {
@@ -22455,7 +22455,7 @@
    "coords": null,
    "airport": "Philip S. W. Goldson International Airport (BZE)",
    "airportDirections": "The lodge is approximately a 51 minute drive from the San Ignacio Town Airstrip.",
-   "founderNote": "Protected wilderness, waterfalls and quiet , 7,200 acres of Mountain Pine Ridge with forest trails, waterfalls and swimming areas.",
+   "founderNote": "Protected wilderness, waterfalls and quiet, 7,200 acres of Mountain Pine Ridge with forest trails, waterfalls and swimming areas.",
    "rooms": {
     "paras": [
      "A private jungle lodge on a 7,200-acre reserve in the Mountain Pine Ridge",
@@ -22815,7 +22815,7 @@
     "lat": 20.199,
     "lng": -87.48
    },
-   "airport": "Tulum International Airport , TQO Cancún International Airport , CUN",
+   "airport": "Tulum International Airport, TQO Cancún International Airport, CUN",
    "airportDirections": "Fly into Tulum International Airport for the most direct regional arrival, or Cancún International Airport for a wider choice of international services. Arrange a private transfer in advance and confirm current journey times directly with Holistika before travel.",
    "founderNote": null,
    "rooms": {
@@ -24484,7 +24484,7 @@
     "lat": -4.2779,
     "lng": -81.2273
    },
-   "airport": "Capitán FAP Víctor Montes Arias Airport (TYL) , Talara Capitán FAP Guillermo Concha Iberico International Airport (PIU) , Piura",
+   "airport": "Capitán FAP Víctor Montes Arias Airport (TYL), Talara Capitán FAP Guillermo Concha Iberico International Airport (PIU), Piura",
    "airportDirections": "From Talara Airport: ~45–60 minutes by road\nFrom Piura Airport: ~2.5–3.5 hours drive\nBest arrival: Talara (TYL)",
    "founderNote": null,
    "rooms": {
@@ -24737,7 +24737,7 @@
     ]
    },
    "onlyHere": [
-    "Set between Cusco and Machu Picchu, Inkaterra Hacienda Urubamba offers travelers a rare opportunity to experience the Sacred Valley beyond sightseeing , through the landscapes, traditions, and agricultural heritage that continue to define Andean life today."
+    "Set between Cusco and Machu Picchu, Inkaterra Hacienda Urubamba offers travelers a rare opportunity to experience the Sacred Valley beyond sightseeing, through the landscapes, traditions, and agricultural heritage that continue to define Andean life today."
    ],
    "why": [],
    "facts": {},
@@ -24852,7 +24852,7 @@
     ]
    },
    "onlyHere": [
-    "Hidden within the cobblestone streets of Cusco, Inkaterra La Casona offers travelers something increasingly rare , a luxury experience deeply rooted in history, culture, and intimacy. Once a colonial manor house, the property now serves as a refined sanctuary for travelers preparing to explore Peru’s Sacred Valley and Machu Picchu."
+    "Hidden within the cobblestone streets of Cusco, Inkaterra La Casona offers travelers something increasingly rare, a luxury experience deeply rooted in history, culture, and intimacy. Once a colonial manor house, the property now serves as a refined sanctuary for travelers preparing to explore Peru’s Sacred Valley and Machu Picchu."
    ],
    "why": [],
    "facts": {},
@@ -31649,7 +31649,7 @@
     "items": []
    },
    "onlyHere": [
-    "At La Residence, you don’t simply visit the Winelands , you live within them. Surrounded by rolling vineyards and framed by dramatic mountains, this is a place where design, cuisine, and landscape merge into a deeply sensory escape."
+    "At La Residence, you don’t simply visit the Winelands, you live within them. Surrounded by rolling vineyards and framed by dramatic mountains, this is a place where design, cuisine, and landscape merge into a deeply sensory escape."
    ],
    "why": [],
    "facts": {
@@ -33007,7 +33007,7 @@
    },
    "airport": "Cape Town International Airport (CPT)",
    "airportDirections": "Cape Town International Airport (CPT) is approximately 68 km away and requires around 55 minutes by car, making it the preferred arrival airport.",
-   "founderNote": "Walked every Leeu property in Franschhoek, May 2026. , JW",
+   "founderNote": "Walked every Leeu property in Franschhoek, May 2026., JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -33616,7 +33616,7 @@
    },
    "airport": "Lewa Downs Airstrip LAU, Nanyuki Airport NYK",
    "airportDirections": "Arrive at Nairobi Wilson Airport, take a scheduled charter or private flight to Lewa Downs Airstrip (15 minutes drive from lodge) or Nanyuki Airport (2 hours by road).",
-   "founderNote": "Inspected and approved on Lewa. , JW",
+   "founderNote": "Inspected and approved on Lewa., JW",
    "rooms": {
     "paras": [
      "Nine unique thatched cottages with expansive valley or garden views. Family cottages with multiple bedrooms. Hillside cottages with private verandas and fireplaces. Garden cottages with lush lawns and easy access to the main lodge."
@@ -34011,7 +34011,7 @@
    },
    "airport": "Skukuza Airport",
    "airportDirections": "A road transfer from the airport delivers guests to Lion Sands Game Reserve in a short game drive.",
-   "founderNote": "Stayed at Ivory Lodge, May 2026, with Mrs Wild. Book it for the river; stay for the service and the kitchen. A founder favourite. , JW",
+   "founderNote": "Stayed at Ivory Lodge, May 2026, with Mrs Wild. Book it for the river; stay for the service and the kitchen. A founder favourite., JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -37641,7 +37641,7 @@
    },
    "airport": "Hoedspruit Eastgate Airport (HDS), Skukuza Airport (SZK), Kruger Mpumalanga International Airport (MQP)",
    "airportDirections": "Fly to Hoedspruit (HDS), 40-minute road transfer to Monwana; transfers from Skukuza or KMIA available on request.",
-   "founderNote": "Tucked away in the Thornybush, Monwana gets the safari trinity right: the wildlife, the guides, the service. Then there's the bar, the long kind you come home to after the evening drive. Stayed May 2026 with Mrs Wild , she loved it as much as I did. One for anyone's shortlist of Africa's best. , JW",
+   "founderNote": "Tucked away in the Thornybush, Monwana gets the safari trinity right: the wildlife, the guides, the service. Then there's the bar, the long kind you come home to after the evening drive. Stayed May 2026 with Mrs Wild, she loved it as much as I did. One for anyone's shortlist of Africa's best., JW",
    "rooms": {
     "paras": [
      "Eight luxury suites including family and private pool suites, all with en suite bathrooms, indoor/outdoor showers, private decks, and bush or waterhole views. Main lodge with dining, bar, lounge, firepit, infinity pool, and gym."
@@ -37675,7 +37675,7 @@
     },
     {
      "title": null,
-     "body": "Watch Wild Together, James and Miriam’s own series, on Miriam’s first safari at Monwana (film by Felix Studios and Monwana), and read the full memoir."
+     "body": "Watch Wild Together, our film of one couple’s first safari at Monwana, and read the full memoir."
     }
    ],
    "facts": {
@@ -37777,7 +37777,7 @@
    },
    "airport": "Nearest airports: O.R. Tambo International Airport (JNB) and Lanseria Airport (HLA).",
    "airportDirections": "From Johannesburg (JNB), it’s a 4‑hour scenic drive or a short Federal Air flight to Madikwe. Self‑drive also possible. Ideal in an SUV.",
-   "founderNote": "Met the Morukuru team, May 2026. , JW",
+   "founderNote": "Met the Morukuru team, May 2026., JW",
    "rooms": {
     "paras": [],
     "items": [
@@ -39436,7 +39436,7 @@
     "lat": -22.888,
     "lng": -68.212
    },
-   "airport": "El Loa Airport (CJC) , Calama, Chile",
+   "airport": "El Loa Airport (CJC), Calama, Chile",
    "airportDirections": "Approx. 1.5–2 hours drive from El Loa Airport (Calama) via desert highway transfer to San Pedro de Atacama region; private shuttle transfers commonly arranged by the lodge.",
    "founderNote": null,
    "rooms": {
@@ -39901,7 +39901,7 @@
     ]
    },
    "onlyHere": [
-    "Nayara Hangaroa offers one of the world’s rarest luxury experiences , staying on the remote island of Rapa Nui surrounded by sacred history, volcanic cliffs, and the endless Pacific Ocean. Here, luxury feels deeply connected to culture, ancestry, and the rhythms of island life."
+    "Nayara Hangaroa offers one of the world’s rarest luxury experiences, staying on the remote island of Rapa Nui surrounded by sacred history, volcanic cliffs, and the endless Pacific Ocean. Here, luxury feels deeply connected to culture, ancestry, and the rhythms of island life."
    ],
    "why": [
     {
@@ -41125,7 +41125,7 @@
     "lat": 10.480337,
     "lng": -84.636103
    },
-   "airport": "La Fortuna Airport / Arenal Airport , FON",
+   "airport": "La Fortuna Airport / Arenal Airport, FON",
    "airportDirections": "La Fortuna Airport: about 14 minutes.",
    "founderNote": null,
    "rooms": {
@@ -41729,7 +41729,7 @@
     "lng": -3.6993
    },
    "airport": "Adolfo Suárez Madrid‑Barajas (MAD)",
-   "airportDirections": "Drive or taxi: ~25 minutes (approx 8–10 km) depending on traffic.\nPublic transport: take the metro (Line 8) + transfer(s) or use airport express bus to central stops, then walk or transfer to Gran Vía station , hotel is ~5 minutes walk from Gran Vía metro.\nBest option: use MAD → airport metro (Line 8) → transfer to central lines, or airport express bus → central hub → walking.",
+   "airportDirections": "Drive or taxi: ~25 minutes (approx 8–10 km) depending on traffic.\nPublic transport: take the metro (Line 8) + transfer(s) or use airport express bus to central stops, then walk or transfer to Gran Vía station, hotel is ~5 minutes walk from Gran Vía metro.\nBest option: use MAD → airport metro (Line 8) → transfer to central lines, or airport express bus → central hub → walking.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -41766,12 +41766,12 @@
     ]
    },
    "onlyHere": [
-    "Step into a refuge of calm just above Madrid’s pulse. Here, guests can spend dawn lingering over coffee, afternoons discovering hidden alley museums, and evenings restored in the spa or rooftop lounge. This is no mere hotel , it’s a creative node in the city’s fabric. For solo wanderers, couples seeking intimacy, or small groups wanting the energy of Madrid as their living room , this is your base to go deeper, slower, and more richly."
+    "Step into a refuge of calm just above Madrid’s pulse. Here, guests can spend dawn lingering over coffee, afternoons discovering hidden alley museums, and evenings restored in the spa or rooftop lounge. This is no mere hotel, it’s a creative node in the city’s fabric. For solo wanderers, couples seeking intimacy, or small groups wanting the energy of Madrid as their living room, this is your base to go deeper, slower, and more richly."
    ],
    "why": [
     {
      "title": null,
-     "body": "Nomade Temple Madrid is made for travelers who no longer wish to merely visit cities, but to feel them. It’s best for culture‑hungry solo travelers, couples craving quiet luxury steps from the buzz, creative friends plotting their next art walk, and small groups who value both design and awe. Here, you’re not just in Madrid , you’re woven into its stories."
+     "body": "Nomade Temple Madrid is made for travelers who no longer wish to merely visit cities, but to feel them. It’s best for culture‑hungry solo travelers, couples craving quiet luxury steps from the buzz, creative friends plotting their next art walk, and small groups who value both design and awe. Here, you’re not just in Madrid, you’re woven into its stories."
     }
    ],
    "facts": {},
@@ -46515,7 +46515,7 @@
     "items": []
    },
    "onlyHere": [
-    "At Royal Malewane, you don’t just observe the wild , you are immersed in it. With one of Africa’s most experienced guiding teams, deeply personalized service, and uninterrupted views of elephant-filled waterholes, every moment feels like a once-in-a-lifetime encounter with nature."
+    "At Royal Malewane, you don’t just observe the wild, you are immersed in it. With one of Africa’s most experienced guiding teams, deeply personalized service, and uninterrupted views of elephant-filled waterholes, every moment feels like a once-in-a-lifetime encounter with nature."
    ],
    "why": [],
    "facts": {
@@ -56880,7 +56880,7 @@
     "lat": 10.4916133,
     "lng": -84.7220382
    },
-   "airport": "Juan Santamaría International Airport , SJO Daniel Oduber Quirós International Airport , LIR",
+   "airport": "Juan Santamaría International Airport, SJO Daniel Oduber Quirós International Airport, LIR",
    "airportDirections": "Daily flight San José to La Fortuna, then 30-min drive; or 2.5 to 3 hrs by road from SJO or LIR.",
    "founderNote": null,
    "rooms": {
@@ -57710,7 +57710,7 @@
    },
    "airport": "Skukuza Airport (SZK) MalaMala Private Airstrip O.R. Tambo International Airport (JNB)",
    "airportDirections": "Best Arrival Airport: Skukuza Airport (SZK)\nApproximately 1-hour transfer to Kirkman's Kamp.\nCharter flights operate directly into the MalaMala private airstrip.\nJohannesburg road transfer approximately 5–6 hours.",
-   "founderNote": "If you want old Africa rather than a polished impression of it, this is the address. Heritage safari, done by people who mean it. Stayed May 2026; a founder favourite. , JW",
+   "founderNote": "If you want old Africa rather than a polished impression of it, this is the address. Heritage safari, done by people who mean it. Stayed May 2026; a founder favourite., JW",
    "rooms": {
     "paras": [
      "Twelve cottages, one of which is a family unit."
@@ -60382,7 +60382,7 @@
    "hero": null,
    "gallery": [],
    "bestMonths": "October, November, December, January, February, March",
-   "bestMonthsNote": "These months deliver Cape Town’s summer season , clear skies, warm coastal breezes, and golden sunsets that illuminate Table Mountain and the Atlantic horizon, making The Silo’s rooftop and window views at their absolute peak.",
+   "bestMonthsNote": "These months deliver Cape Town’s summer season, clear skies, warm coastal breezes, and golden sunsets that illuminate Table Mountain and the Atlantic horizon, making The Silo’s rooftop and window views at their absolute peak.",
    "bestFor": [
     "honeymoon",
     "luxury"
@@ -60415,7 +60415,7 @@
     "items": []
    },
    "onlyHere": [
-    "There are hotels in Cape Town, and then there is The Silo , a building that doesn’t just overlook the city but becomes part of its artistic identity. Every corridor, window, and suite feels curated, expressive, and deeply connected to African creativity and coastal light."
+    "There are hotels in Cape Town, and then there is The Silo, a building that doesn’t just overlook the city but becomes part of its artistic identity. Every corridor, window, and suite feels curated, expressive, and deeply connected to African creativity and coastal light."
    ],
    "why": [],
    "facts": {
@@ -62281,7 +62281,7 @@
    "coords": null,
    "airport": "Placencia Airstrip (PLJ) or Philip S. W. Goldson International Airport (BZE)",
    "airportDirections": "Guests can fly into Philip S. W. Goldson International Airport (BZE) and take a 35-minute connecting flight to Placencia Airstrip (PLJ), which is five minutes from the property, or take a 3 to 3.5-hour private transfer or rental car from Belize City.",
-   "founderNote": "Coppola hideaway at Placencia , open-air cottages, Caribbean breezes and days shaped by the water.",
+   "founderNote": "Coppola hideaway at Placencia, open-air cottages, Caribbean breezes and days shaped by the water.",
    "rooms": {
     "paras": [],
     "items": [
@@ -63307,7 +63307,7 @@
     "lng": -112.1399
    },
    "airport": "Flagstaff Pulliam Airport (FLG) Phoenix Sky Harbor International Airport (PHX) Harry Reid International Airport (LAS)",
-   "airportDirections": "Nearest Airport: Flagstaff Pulliam Airport (FLG)\nDistance: Approximately 80 miles (129 km)\nDriving Time: Approximately 1 hour 30 minutes\nAlternative Airports:\nPhoenix Sky Harbor International Airport (PHX): Approximately 230 miles (370 km) , 3.5 to 4 hours\nHarry Reid International Airport (LAS): Approximately 270 miles (435 km) , 4 to 4.5 hours\nA rental vehicle is recommended for exploring the Grand Canyon region and nearby attractions.",
+   "airportDirections": "Nearest Airport: Flagstaff Pulliam Airport (FLG)\nDistance: Approximately 80 miles (129 km)\nDriving Time: Approximately 1 hour 30 minutes\nAlternative Airports:\nPhoenix Sky Harbor International Airport (PHX): Approximately 230 miles (370 km), 3.5 to 4 hours\nHarry Reid International Airport (LAS): Approximately 270 miles (435 km), 4 to 4.5 hours\nA rental vehicle is recommended for exploring the Grand Canyon region and nearby attractions.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -63591,7 +63591,7 @@
     "lng": -110.7014
    },
    "airport": "Bozeman Yellowstone International Airport (BZN) Yellowstone Airport (WYS) (seasonal)",
-   "airportDirections": "Nearest Major Airport: Bozeman Yellowstone International Airport (BZN)\nDistance: Approximately 55 miles (89 km)\nDriving Time: Approximately 1 hour 15 minutes\nAlternative Airport\nYellowstone Airport (WYS): Approximately 70 miles (113 km) , 1 hour 30 minutes (seasonal service)\nA rental vehicle is recommended for exploring Yellowstone National Park, Paradise Valley, and surrounding Montana attractions.",
+   "airportDirections": "Nearest Major Airport: Bozeman Yellowstone International Airport (BZN)\nDistance: Approximately 55 miles (89 km)\nDriving Time: Approximately 1 hour 15 minutes\nAlternative Airport\nYellowstone Airport (WYS): Approximately 70 miles (113 km), 1 hour 30 minutes (seasonal service)\nA rental vehicle is recommended for exploring Yellowstone National Park, Paradise Valley, and surrounding Montana attractions.",
    "founderNote": null,
    "rooms": {
     "paras": [],
@@ -63777,7 +63777,7 @@
     "lng": -120.1237
    },
    "airport": "Fresno Yosemite International Airport (FAT) Merced Regional Airport (MCE) San Francisco International Airport (SFO)",
-   "airportDirections": "Nearest Major Airport: Fresno Yosemite International Airport (FAT)\nDistance: Approximately 95 miles (153 km)\nDriving Time: Approximately 2 hours\nAlternative Airports\nMerced Regional Airport (MCE): Approximately 85 miles (137 km) , 1 hour 45 minutes\nSan Francisco International Airport (SFO): Approximately 170 miles (274 km) , 3.5 to 4 hours\nA rental vehicle is highly recommended for exploring Yosemite National Park and the surrounding Sierra Nevada region.",
+   "airportDirections": "Nearest Major Airport: Fresno Yosemite International Airport (FAT)\nDistance: Approximately 95 miles (153 km)\nDriving Time: Approximately 2 hours\nAlternative Airports\nMerced Regional Airport (MCE): Approximately 85 miles (137 km), 1 hour 45 minutes\nSan Francisco International Airport (SFO): Approximately 170 miles (274 km), 3.5 to 4 hours\nA rental vehicle is highly recommended for exploring Yosemite National Park and the surrounding Sierra Nevada region.",
    "founderNote": null,
    "rooms": {
     "paras": [],

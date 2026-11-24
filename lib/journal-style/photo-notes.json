@@ -1457,6 +1457,10 @@
       "g10": {
         "alt": "A hanging bridge to a suite at Pacuare Lodge, Costa Rica",
         "section": "exterior"
+      },
+      "hero": {
+        "alt": "The lodge in the rainforest beside the Pacuare River from the air at Pacuare Lodge, Costa Rica",
+        "section": "exterior"
       }
     },
     "extra": []
@@ -1763,10 +1767,1548 @@
       }
     }
   },
- "bamurru-plains": {"describe": {"b01": {"alt": "A guest in the plunge pool on the deck, looking over the floodplain and its buffalo at Bamurru Plains", "section": "exterior"}, "b02": {"alt": "The deck and plunge pool above the Mary River floodplain at Bamurru Plains", "section": "exterior"}, "b03": {"alt": "The lounge with mesh walls open to the floodplain at Bamurru Plains", "section": "exterior"}, "b04": {"alt": "A bungalow bedroom with mesh walls and a view across the floodplain at Bamurru Plains", "section": "rooms"}, "b05": {"alt": "A bungalow raised on poles at sunset on the floodplain at Bamurru Plains", "section": "exterior"}, "b06": {"alt": "Two bungalows among the trees and termite mounds at Bamurru Plains", "section": "exterior"}, "b07": {"alt": "An airboat crossing the green floodplain at Bamurru Plains", "section": "experiences"}, "b08": {"alt": "A crocodile in the shallows of the floodplain at Bamurru Plains", "section": "experiences"}, "b09": {"alt": "Magpie geese in flight over the floodplain at Bamurru Plains", "section": "experiences"}, "b10": {"alt": "The viewing tower among the trees at sunset at Bamurru Plains", "section": "exterior"}, "b11": {"alt": "The camp at the edge of the floodplain from the air at Bamurru Plains", "section": "exterior"}}, "extra": []},
- "galapagos-safari-camp": {"describe": {"g9": {"alt": "A giant tortoise in front of a safari tent at Galapagos Safari Camp", "section": "exterior"}, "g1": {"alt": "A safari tent bedroom with windows onto the forest at Galapagos Safari Camp", "section": "rooms"}, "g2": {"alt": "The tents in the Scalesia forest from the air at Galapagos Safari Camp", "section": "exterior"}, "g3": {"alt": "The main lodge and its deck lit at night at Galapagos Safari Camp", "section": "exterior"}, "g4": {"alt": "The main lodge sitting room at Galapagos Safari Camp", "section": "rooms"}, "g5": {"alt": "The dining room set for dinner, open to the veranda, at Galapagos Safari Camp", "section": "dining"}, "g6": {"alt": "A guest on the veranda looking over the highlands to the sea at dusk at Galapagos Safari Camp", "section": "exterior"}, "g7": {"alt": "A table set for dinner at sunset above the highlands at Galapagos Safari Camp", "section": "dining"}, "g8": {"alt": "A safari tent glowing in the forest under the stars at Galapagos Safari Camp", "section": "exterior"}, "g10": {"alt": "A massage in a tent with doors open to the forest view at Galapagos Safari Camp", "section": "experiences"}}, "extra": []},
- "noah-forest-by-tifakara": {"describe": {"hero": {"alt": "A villa lit at dusk in the rainforest gardens at Noah's Forest by Tifakara", "section": "exterior"}, "g1": {"alt": "A tree frog on a stem at night at Noah's Forest by Tifakara", "section": "experiences"}, "g2": {"alt": "The lit boardwalk through the rainforest at night at Noah's Forest by Tifakara", "section": "exterior"}, "g4": {"alt": "A private hot tub on a villa terrace among the heliconias at Noah's Forest by Tifakara", "section": "pool"}, "g5": {"alt": "A villa terrace in the rainforest garden, its doors open, at Noah's Forest by Tifakara", "section": "exterior"}, "g6": {"alt": "A plate of small toasts from the kitchen at Noah's Forest by Tifakara", "section": "dining"}, "g7": {"alt": "A villa in its gardens under a pink sunset sky at Noah's Forest by Tifakara", "section": "exterior"}, "g8": {"alt": "A villa pool lit at night against the rainforest at Noah's Forest by Tifakara", "section": "pool"}}, "extra": []},
- "pikaia-lodge": {"describe": {"hero": {"alt": "The lodge standing out over the green highlands of Santa Cruz at Pikaia Lodge", "section": "exterior"}, "g1": {"alt": "The lodge on the rim of the crater from the air at Pikaia Lodge", "section": "exterior"}, "g2": {"alt": "A bedroom with a wall of glass onto the highlands at sunrise at Pikaia Lodge", "section": "rooms"}, "g3": {"alt": "A guest on a balcony of the lodge above the highlands at Pikaia Lodge", "section": "exterior"}, "g4": {"alt": "The lodge's yacht at anchor in open water, from the air, at Pikaia Lodge", "section": "experiences"}, "g5": {"alt": "A plated dish from the restaurant at Pikaia Lodge", "section": "dining"}, "g6": {"alt": "Loungers by the pool with the highlands and the ocean beyond at Pikaia Lodge", "section": "pool"}, "g7": {"alt": "The lodge terrace lit at dusk under a dark sky at Pikaia Lodge", "section": "exterior"}, "g8": {"alt": "A guide beside a giant tortoise in the lodge's own reserve at Pikaia Lodge", "section": "experiences"}, "g9": {"alt": "A giant tortoise in the grass below the lodge at Pikaia Lodge", "section": "experiences"}, "g10": {"alt": "The lodge and its pool from the air at sunset at Pikaia Lodge", "section": "exterior"}}, "extra": []},
- "sal-salis": {"describe": {"s01": {"alt": "The beach and the lagoon of Ningaloo Reef under a pink dusk sky at Sal Salis", "section": "pool"}, "s02": {"alt": "The dunes, the beach and Cape Range from the air at dusk at Sal Salis", "section": "exterior"}, "s03": {"alt": "A whale shark swimming below a boat on Ningaloo Reef, near Sal Salis", "section": "experiences"}, "s04": {"alt": "A humpback whale breaching off Ningaloo Reef, near Sal Salis", "section": "experiences"}, "s05": {"alt": "Ningaloo Reef from the air, near Sal Salis", "section": "experiences"}, "s06": {"alt": "Kayakers on the turquoise lagoon below the tents in the dunes at Sal Salis", "section": "exterior"}, "s07": {"alt": "Guests walking into a gorge in Cape Range National Park, near Sal Salis", "section": "experiences"}, "s08": {"alt": "A tent under the Milky Way at Sal Salis", "section": "exterior"}, "s09": {"alt": "Two guests with drinks on the beach at sunset at Sal Salis", "section": "dining"}, "s10": {"alt": "The main lodge and its entrance in the dunes at Sal Salis", "section": "exterior"}, "s11": {"alt": "A tent bedroom with a four poster bed and a view out to the dunes at Sal Salis", "section": "rooms"}, "s14": {"alt": "A tent in the dunes at sunrise at Sal Salis", "section": "exterior"}}, "extra": []},
- "boluntiku-hotel": {"describe": {"hero": {"alt": "The pool and thatched pavilion among the trees on Lake Petén Itzá, from the air, at Bolontiku", "section": "exterior"}, "g1": {"alt": "The hotel's boat crossing Lake Petén Itzá at sunset, at Bolontiku", "section": "experiences"}, "g2": {"alt": "A guest on a terrace under the trees above Lake Petén Itzá at Bolontiku", "section": "exterior"}, "g3": {"alt": "Lake Petén Itzá and its swimming platform seen through the trees at Bolontiku", "section": "exterior"}, "g4": {"alt": "The pool, the pavilion and the lake shore from directly above at Bolontiku", "section": "exterior"}, "g5": {"alt": "The Temazcal sweat lodge at Bolontiku", "section": "experiences"}, "g6": {"alt": "A table set for lunch on a terrace above the lake at Bolontiku", "section": "dining"}, "g7": {"alt": "The pool lit at night under the moon at Bolontiku", "section": "pool"}, "g8": {"alt": "A suite balcony with a view through the palms to the lake at Bolontiku", "section": "exterior"}, "g9": {"alt": "A suite sitting area with windows onto the garden at Bolontiku", "section": "rooms"}, "g10": {"alt": "The floating platform on a still Lake Petén Itzá at Bolontiku", "section": "exterior"}}, "extra": []}
+  "bamurru-plains": {
+    "describe": {
+      "b01": {
+        "alt": "A guest in the plunge pool on the deck, looking over the floodplain and its buffalo at Bamurru Plains",
+        "section": "exterior"
+      },
+      "b02": {
+        "alt": "The deck and plunge pool above the Mary River floodplain at Bamurru Plains",
+        "section": "exterior"
+      },
+      "b03": {
+        "alt": "The lounge with mesh walls open to the floodplain at Bamurru Plains",
+        "section": "exterior"
+      },
+      "b04": {
+        "alt": "A bungalow bedroom with mesh walls and a view across the floodplain at Bamurru Plains",
+        "section": "rooms"
+      },
+      "b05": {
+        "alt": "A bungalow raised on poles at sunset on the floodplain at Bamurru Plains",
+        "section": "exterior"
+      },
+      "b06": {
+        "alt": "Two bungalows among the trees and termite mounds at Bamurru Plains",
+        "section": "exterior"
+      },
+      "b07": {
+        "alt": "An airboat crossing the green floodplain at Bamurru Plains",
+        "section": "experiences"
+      },
+      "b08": {
+        "alt": "A crocodile in the shallows of the floodplain at Bamurru Plains",
+        "section": "experiences"
+      },
+      "b09": {
+        "alt": "Magpie geese in flight over the floodplain at Bamurru Plains",
+        "section": "experiences"
+      },
+      "b10": {
+        "alt": "The viewing tower among the trees at sunset at Bamurru Plains",
+        "section": "exterior"
+      },
+      "b11": {
+        "alt": "The camp at the edge of the floodplain from the air at Bamurru Plains",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "galapagos-safari-camp": {
+    "describe": {
+      "g9": {
+        "alt": "A giant tortoise in front of a safari tent at Galapagos Safari Camp",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A safari tent bedroom with windows onto the forest at Galapagos Safari Camp",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "The tents in the Scalesia forest from the air at Galapagos Safari Camp",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The main lodge and its deck lit at night at Galapagos Safari Camp",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "The main lodge sitting room at Galapagos Safari Camp",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "The dining room set for dinner, open to the veranda, at Galapagos Safari Camp",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "A guest on the veranda looking over the highlands to the sea at dusk at Galapagos Safari Camp",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "A table set for dinner at sunset above the highlands at Galapagos Safari Camp",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "A safari tent glowing in the forest under the stars at Galapagos Safari Camp",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A massage in a tent with doors open to the forest view at Galapagos Safari Camp",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "noah-forest-by-tifakara": {
+    "describe": {
+      "hero": {
+        "alt": "A villa lit at dusk in the rainforest gardens at Noah's Forest by Tifakara",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A tree frog on a stem at night at Noah's Forest by Tifakara",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "The lit boardwalk through the rainforest at night at Noah's Forest by Tifakara",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A private hot tub on a villa terrace among the heliconias at Noah's Forest by Tifakara",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "A villa terrace in the rainforest garden, its doors open, at Noah's Forest by Tifakara",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A plate of small toasts from the kitchen at Noah's Forest by Tifakara",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "A villa in its gardens under a pink sunset sky at Noah's Forest by Tifakara",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A villa pool lit at night against the rainforest at Noah's Forest by Tifakara",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "pikaia-lodge": {
+    "describe": {
+      "hero": {
+        "alt": "The lodge standing out over the green highlands of Santa Cruz at Pikaia Lodge",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The lodge on the rim of the crater from the air at Pikaia Lodge",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A bedroom with a wall of glass onto the highlands at sunrise at Pikaia Lodge",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A guest on a balcony of the lodge above the highlands at Pikaia Lodge",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "The lodge's yacht at anchor in open water, from the air, at Pikaia Lodge",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "A plated dish from the restaurant at Pikaia Lodge",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "Loungers by the pool with the highlands and the ocean beyond at Pikaia Lodge",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "The lodge terrace lit at dusk under a dark sky at Pikaia Lodge",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A guide beside a giant tortoise in the lodge's own reserve at Pikaia Lodge",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A giant tortoise in the grass below the lodge at Pikaia Lodge",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "The lodge and its pool from the air at sunset at Pikaia Lodge",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "sal-salis": {
+    "describe": {
+      "s01": {
+        "alt": "The beach and the lagoon of Ningaloo Reef under a pink dusk sky at Sal Salis",
+        "section": "pool"
+      },
+      "s02": {
+        "alt": "The dunes, the beach and Cape Range from the air at dusk at Sal Salis",
+        "section": "exterior"
+      },
+      "s03": {
+        "alt": "A whale shark swimming below a boat on Ningaloo Reef, near Sal Salis",
+        "section": "experiences"
+      },
+      "s04": {
+        "alt": "A humpback whale breaching off Ningaloo Reef, near Sal Salis",
+        "section": "experiences"
+      },
+      "s05": {
+        "alt": "Ningaloo Reef from the air, near Sal Salis",
+        "section": "experiences"
+      },
+      "s06": {
+        "alt": "Kayakers on the turquoise lagoon below the tents in the dunes at Sal Salis",
+        "section": "exterior"
+      },
+      "s07": {
+        "alt": "Guests walking into a gorge in Cape Range National Park, near Sal Salis",
+        "section": "experiences"
+      },
+      "s08": {
+        "alt": "A tent under the Milky Way at Sal Salis",
+        "section": "exterior"
+      },
+      "s09": {
+        "alt": "Two guests with drinks on the beach at sunset at Sal Salis",
+        "section": "dining"
+      },
+      "s10": {
+        "alt": "The main lodge and its entrance in the dunes at Sal Salis",
+        "section": "exterior"
+      },
+      "s11": {
+        "alt": "A tent bedroom with a four poster bed and a view out to the dunes at Sal Salis",
+        "section": "rooms"
+      },
+      "s14": {
+        "alt": "A tent in the dunes at sunrise at Sal Salis",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "boluntiku-hotel": {
+    "describe": {
+      "hero": {
+        "alt": "The pool and thatched pavilion among the trees on Lake Petén Itzá, from the air, at Bolontiku",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The hotel's boat crossing Lake Petén Itzá at sunset, at Bolontiku",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "A guest on a terrace under the trees above Lake Petén Itzá at Bolontiku",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "Lake Petén Itzá and its swimming platform seen through the trees at Bolontiku",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "The pool, the pavilion and the lake shore from directly above at Bolontiku",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "The Temazcal sweat lodge at Bolontiku",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "A table set for lunch on a terrace above the lake at Bolontiku",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "The pool lit at night under the moon at Bolontiku",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A suite balcony with a view through the palms to the lake at Bolontiku",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A suite sitting area with windows onto the garden at Bolontiku",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "The floating platform on a still Lake Petén Itzá at Bolontiku",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "the-singular-patagonia": {
+    "describe": {
+      "lounge-fireplace": {
+        "alt": "The lounge interior with brick walls and an open fireplace at The Singular Patagonia, Chile & Easter Island"
+      },
+      "singular-king-1": {
+        "alt": "A room with a window onto the fjord at The Singular Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "trail-lakeside": {
+        "alt": "A walker on the lakeshore road below the Paine massif at The Singular Patagonia, Chile & Easter Island",
+        "section": "experiences"
+      },
+      "restaurant-kitchen": {
+        "alt": "The restaurant interior among the old plant's machinery at The Singular Patagonia, Chile & Easter Island",
+        "section": "dining"
+      },
+      "singular-suite-1": {
+        "alt": "A suite living area with windows onto the fjord at The Singular Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "singular-twin-1": {
+        "alt": "A twin room with a window onto the fjord at The Singular Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "singular-suite-3": {
+        "alt": "A suite desk and sitting area with windows onto the fjord at The Singular Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "singular-king-3": {
+        "alt": "A room interior with a king bed at The Singular Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "futangue-hotel-spa": {
+    "describe": {
+      "hotel-aerial-sunset": {
+        "alt": "The hotel roofs among meadows and forest from the air at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "lounge": {
+        "alt": "The lounge interior with timber beams and garden windows at Futangue Hotel & Spa, Chile & Easter Island"
+      },
+      "meadow-mountains": {
+        "alt": "The hotel across a meadow below forested mountains at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "rafting-rio-bueno": {
+        "alt": "Rafting on a turquoise river below a forest cliff at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "experiences"
+      },
+      "superior-room-1": {
+        "alt": "A timber-lined room with a window onto the mountains at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "spa-outdoor-pool": {
+        "alt": "The outdoor pool beside the hotel under old trees at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "pool"
+      },
+      "hikers-cerro-mayo": {
+        "alt": "A hiker on a ridge above the lake and its islands at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "experiences"
+      },
+      "aerial-valley": {
+        "alt": "The hotel buildings in their park from the air at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "entrance": {
+        "alt": "A stone path to a pavilion below the mountains at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "flowering-meadow": {
+        "alt": "The hotel behind a field of yellow wildflowers at Futangue Hotel & Spa, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "corridor": {
+        "alt": "A timber hall interior with a glazed gallery at Futangue Hotel & Spa, Chile & Easter Island"
+      }
+    },
+    "extra": []
+  },
+  "nayara-hangaroa": {
+    "describe": {
+      "b45455477_c6878cdb1_6a1f3e67eff13e000ba75bde_6a14c16e382d578557dd6344_our-resorts-hangaroa-h-1jpg.we": {
+        "alt": "A line of moai on their platform under a blue sky at Nayara Hangaroa, Chile & Easter Island",
+        "section": "experiences"
+      },
+      "7e71b303e_4d4c36b68_6a354703b538a9af6ac8522a_3ba2a91b.webp": {
+        "alt": "A room with doors open to a terrace at Nayara Hangaroa, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "d28a1cda5_ef5483b4f_6a354730f2d49852cb53241f_bbff4757.avif": {
+        "alt": "Bathroom amenities beside a stone basin at Nayara Hangaroa, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "0ddd8665d_661b2d65e_6a354753f0a8fa3ae77b7c53_b144f1a4.webp": {
+        "alt": "The spa interior with a sauna cabin at Nayara Hangaroa, Chile & Easter Island"
+      }
+    },
+    "extra": []
+  },
+  "mashpi-lodge": {
+    "describe": {
+      "waterfall": {
+        "alt": "A guest at the foot of a waterfall in the forest at Mashpi Lodge, Ecuador & Galapagos",
+        "section": "experiences"
+      },
+      "wayra-room-2": {
+        "alt": "A guest at the glass wall of a room looking out to the forest at Mashpi Lodge, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "sky-bike": {
+        "alt": "Two guests riding the sky bike through the canopy at Mashpi Lodge, Ecuador & Galapagos",
+        "section": "experiences"
+      },
+      "yaku-suite-1": {
+        "alt": "A bathroom with a freestanding bathtub and forest windows at Mashpi Lodge, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "wayra-room-1": {
+        "alt": "A room with glass walls onto the forest at Mashpi Lodge, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "room-bed-view": {
+        "alt": "A guest resting by a room window onto the forest at Mashpi Lodge, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "wawa-room-1": {
+        "alt": "A room with a king bed and a forest window at Mashpi Lodge, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "tayra": {
+        "alt": "A tayra on mossy roots in the cloud forest at Mashpi Lodge, Ecuador & Galapagos",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "sacha-lodge": {
+    "describe": {
+      "lakeside-lounge-aerial": {
+        "alt": "The thatched lakeside deck and swimming enclosure from the air at Sacha Lodge, Ecuador & Galapagos",
+        "section": "pool"
+      },
+      "lake-walkway": {
+        "alt": "A boardwalk to the lodge along the lake at Sacha Lodge, Ecuador & Galapagos",
+        "section": "exterior"
+      },
+      "standard-matrimonial-1": {
+        "alt": "A room with a screened balcony onto the forest at Sacha Lodge, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "canoe-creek": {
+        "alt": "Guests paddling a canoe along a forest creek at Sacha Lodge, Ecuador & Galapagos",
+        "section": "experiences"
+      },
+      "lake-pool-deck": {
+        "alt": "Sun loungers on the lake deck at Sacha Lodge, Ecuador & Galapagos",
+        "section": "pool"
+      },
+      "oropendola-restaurant": {
+        "alt": "The thatched dining room interior set for dinner at Sacha Lodge, Ecuador & Galapagos",
+        "section": "dining"
+      },
+      "suite-2": {
+        "alt": "A suite veranda with armchairs facing the forest at Sacha Lodge, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "standard-twin-1": {
+        "alt": "A twin room with a veranda onto the forest at Sacha Lodge, Ecuador & Galapagos",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "napo-wildlife-center": {
+    "describe": {
+      "tour-explorer": {
+        "alt": "Guests in a canoe on a blackwater creek at Napo Wildlife Center, Ecuador & Galapagos",
+        "section": "experiences"
+      },
+      "suite-1": {
+        "alt": "A room interior with a canopied bed at Napo Wildlife Center, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "tour-extended": {
+        "alt": "Guests on the canopy tower platform in a giant tree at Napo Wildlife Center, Ecuador & Galapagos",
+        "section": "experiences"
+      },
+      "tour-photography": {
+        "alt": "A photographer with a long lens in the forest at Napo Wildlife Center, Ecuador & Galapagos",
+        "section": "experiences"
+      },
+      "standard-cabin-1": {
+        "alt": "A suite interior with a canopied bed under thatch at Napo Wildlife Center, Ecuador & Galapagos",
+        "section": "rooms"
+      },
+      "tour-birding": {
+        "alt": "A guide aiming a spotting scope into the canopy at Napo Wildlife Center, Ecuador & Galapagos",
+        "section": "experiences"
+      },
+      "tour-family": {
+        "alt": "A family looking up into the trees on a forest trail at Napo Wildlife Center, Ecuador & Galapagos",
+        "section": "experiences"
+      },
+      "tour-premium": {
+        "alt": "Two guests on a forest trail at dusk at Napo Wildlife Center, Ecuador & Galapagos",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "luna-volcan": {
+    "describe": {
+      "gardens-view": {
+        "alt": "The hotel above its terraced gardens on the mountainside at Luna Volcán Adventure Spa, Ecuador & Galapagos",
+        "section": "exterior"
+      },
+      "pools-1": {
+        "alt": "Guests on loungers by the hot pool above the valley at Luna Volcán Adventure Spa, Ecuador & Galapagos",
+        "section": "pool"
+      },
+      "pools-4": {
+        "alt": "Two guests toasting in the infinity pool above the valley at Luna Volcán Adventure Spa, Ecuador & Galapagos",
+        "section": "pool"
+      },
+      "cafe-del-cielo-terrace": {
+        "alt": "The café terrace above the town and the valley at Luna Volcán Adventure Spa, Ecuador & Galapagos",
+        "section": "dining"
+      },
+      "rooftop-bar-pools": {
+        "alt": "Cocktails and ceviche on a terrace table above the valley at Luna Volcán Adventure Spa, Ecuador & Galapagos",
+        "section": "dining"
+      },
+      "terrace-view": {
+        "alt": "A guest sunbathing on the lawn above the town at Luna Volcán Adventure Spa, Ecuador & Galapagos",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "iguana-crossing": {
+    "describe": {
+      "facade-sea": {
+        "alt": "The hotel behind the beach, seen from the sea at Iguana Crossing Boutique Hotel, Ecuador & Galapagos",
+        "section": "exterior"
+      },
+      "pool-loungers": {
+        "alt": "The pool deck and cabanas at Iguana Crossing Boutique Hotel, Ecuador & Galapagos",
+        "section": "pool"
+      },
+      "sunset": {
+        "alt": "Sunset over the long beach and the bay at Iguana Crossing Boutique Hotel, Ecuador & Galapagos",
+        "section": "exterior"
+      },
+      "lounge": {
+        "alt": "A lounge interior with sofas and windows onto the dunes at Iguana Crossing Boutique Hotel, Ecuador & Galapagos"
+      },
+      "hotel-08": {
+        "alt": "The hotel between the lava shore and the scrub from the air at Iguana Crossing Boutique Hotel, Ecuador & Galapagos",
+        "section": "exterior"
+      },
+      "master-suite-1": {
+        "alt": "A room with doors open to the ocean at Iguana Crossing Boutique Hotel, Ecuador & Galapagos",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "fazenda-moreias": {
+    "describe": {
+      "sea-and-dunes-aerial": {
+        "alt": "The dunes, the river mouth and the coast from the air at Fazenda Moréias, Brazil",
+        "section": "exterior"
+      },
+      "bungalow-deck-beach": {
+        "alt": "A bungalow veranda looking out to the beach at Fazenda Moréias, Brazil",
+        "section": "rooms"
+      },
+      "bangalo-1-1": {
+        "alt": "A bungalow bedroom interior with a canopied bed at Fazenda Moréias, Brazil",
+        "section": "rooms"
+      },
+      "horse-riding-dune": {
+        "alt": "Riders on horseback crossing the dunes at sunset at Fazenda Moréias, Brazil",
+        "section": "experiences"
+      },
+      "oros-restaurant-deck": {
+        "alt": "The beach deck and thatched shelters by the sea at Fazenda Moréias, Brazil",
+        "section": "pool"
+      },
+      "dune-lagoons": {
+        "alt": "Dunes and green lagoons from the air at Fazenda Moréias, Brazil",
+        "section": "exterior"
+      },
+      "kite-jump": {
+        "alt": "A kitesurfer in the air above the sea at Fazenda Moréias, Brazil",
+        "section": "experiences"
+      },
+      "thatched-bungalow-palms": {
+        "alt": "A thatched house among the palms at Fazenda Moréias, Brazil",
+        "section": "exterior"
+      },
+      "jangada-regatta": {
+        "alt": "A traditional sailing canoe on the beach at Fazenda Moréias, Brazil",
+        "section": "experiences"
+      },
+      "yoga-deck": {
+        "alt": "A guest stretching on the yoga deck facing the beach at Fazenda Moréias, Brazil",
+        "section": "experiences"
+      },
+      "bangalo-18-1": {
+        "alt": "The timber and thatch beach house on the sand at Fazenda Moréias, Brazil",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "chez-georges": {
+    "describe": {
+      "villa-pool-dusk": {
+        "alt": "The villa and its pool under the garden trees at dusk at Chez Georges, Brazil",
+        "section": "exterior"
+      },
+      "entertainment-room": {
+        "alt": "The living room interior with a timber staircase at Chez Georges, Brazil"
+      },
+      "george-benson-1": {
+        "alt": "A suite open to a balcony and the trees at Chez Georges, Brazil",
+        "section": "rooms"
+      },
+      "pool-sugarloaf-view": {
+        "alt": "The villa roof and plunge pool below the forest and granite peaks at Chez Georges, Brazil",
+        "section": "exterior"
+      },
+      "dining-room": {
+        "alt": "The dining room interior with a long table at Chez Georges, Brazil",
+        "section": "dining"
+      },
+      "patio-pergola": {
+        "alt": "The villa entrance and garden at dusk at Chez Georges, Brazil",
+        "section": "exterior"
+      },
+      "giorgio-moroder-1": {
+        "alt": "A suite with a terrace looking out to the trees at Chez Georges, Brazil",
+        "section": "rooms"
+      },
+      "jorge-ben-2": {
+        "alt": "A suite sitting area open to a deck and the forest at Chez Georges, Brazil",
+        "section": "rooms"
+      },
+      "george-harrison-1": {
+        "alt": "A bedroom interior with a timber headboard at Chez Georges, Brazil",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "la-ferme-de-georges": {
+    "describe": {
+      "property-aerial": {
+        "alt": "The lodges among coconut palms from the air at La Ferme de Georges, Brazil",
+        "section": "exterior"
+      },
+      "dunes-lagoon": {
+        "alt": "Wind-ridged dunes above a lagoon in the Lençóis Maranhenses at La Ferme de Georges, Brazil",
+        "section": "exterior"
+      },
+      "pool-aerial": {
+        "alt": "The pool among palms from the air at La Ferme de Georges, Brazil",
+        "section": "pool"
+      },
+      "tree-lodge-1": {
+        "alt": "Timber lodges with steps into the garden at La Ferme de Georges, Brazil",
+        "section": "exterior"
+      },
+      "open-air-lounge": {
+        "alt": "The thatched open lounge in the garden at La Ferme de Georges, Brazil",
+        "section": "exterior"
+      },
+      "park-lodge-1": {
+        "alt": "A lodge bedroom interior with a canopied bed at La Ferme de Georges, Brazil",
+        "section": "rooms"
+      },
+      "kite-surfing-atins": {
+        "alt": "A kitesurfer riding through the surf at La Ferme de Georges, Brazil",
+        "section": "experiences"
+      },
+      "garden-path": {
+        "alt": "The garden and thatched lounge in morning light at La Ferme de Georges, Brazil",
+        "section": "exterior"
+      },
+      "river-lodge-1": {
+        "alt": "A lodge interior with daybeds and a canopy at La Ferme de Georges, Brazil",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "felissimo-exclusive-hotel": {
+    "describe": {
+      "casa-verde-veranda": {
+        "alt": "A glass and timber house lit at dusk at Felissimo Exclusive Hotel, Brazil",
+        "section": "exterior"
+      },
+      "casa-verde-1": {
+        "alt": "A suite bedroom interior with a platform bed at Felissimo Exclusive Hotel, Brazil",
+        "section": "rooms"
+      },
+      "house-exterior": {
+        "alt": "The hotel facade above a clipped hedge at Felissimo Exclusive Hotel, Brazil",
+        "section": "exterior"
+      },
+      "suite-olive-1": {
+        "alt": "A bedroom interior with white shutters at Felissimo Exclusive Hotel, Brazil",
+        "section": "rooms"
+      },
+      "suite-olive-2": {
+        "alt": "An outdoor bathtub on a balcony among the trees at Felissimo Exclusive Hotel, Brazil",
+        "section": "rooms"
+      },
+      "casa-verde-2": {
+        "alt": "A marble bathroom with a freestanding bathtub at Felissimo Exclusive Hotel, Brazil",
+        "section": "rooms"
+      },
+      "casa-verde-veranda-2": {
+        "alt": "A timber soaking tub and bathtub alcove at Felissimo Exclusive Hotel, Brazil",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "aguas-arriba-lodge": {
+    "describe": {
+      "fitz-roy-reflected-in-lago-del-desierto": {
+        "alt": "Fitz Roy reflected in Lago del Desierto at Aguas Arriba Lodge, Argentina",
+        "section": "exterior"
+      },
+      "lodge-exterior": {
+        "alt": "The timber lodge and its deck among the trees at Aguas Arriba Lodge, Argentina",
+        "section": "exterior"
+      },
+      "living-room-lake-view": {
+        "alt": "The lounge with windows onto the lake and glacier at Aguas Arriba Lodge, Argentina",
+        "section": "exterior"
+      },
+      "fitz-roy-suites-1": {
+        "alt": "A suite with windows onto the lake and mountains at Aguas Arriba Lodge, Argentina",
+        "section": "rooms"
+      },
+      "lodge-deck": {
+        "alt": "Sun loungers on the lodge deck above the lake at Aguas Arriba Lodge, Argentina",
+        "section": "exterior"
+      },
+      "fitz-roy-at-dusk": {
+        "alt": "Fitz Roy at sunset above the lake at Aguas Arriba Lodge, Argentina",
+        "section": "exterior"
+      },
+      "lago-del-desierto-shore": {
+        "alt": "The turquoise lake below the mountains at Aguas Arriba Lodge, Argentina",
+        "section": "exterior"
+      },
+      "lodge-staircase": {
+        "alt": "The timber staircase and kitchen interior at Aguas Arriba Lodge, Argentina"
+      },
+      "dining-table": {
+        "alt": "A dining table set by a window onto the lake at Aguas Arriba Lodge, Argentina",
+        "section": "dining"
+      },
+      "granite-spires": {
+        "alt": "Granite spires against a deep blue sky at Aguas Arriba Lodge, Argentina",
+        "section": "exterior"
+      },
+      "lake-from-the-trail": {
+        "alt": "The lake and mountains through lenga forest at Aguas Arriba Lodge, Argentina",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "bahia-bustamante-lodge": {
+    "describe": {
+      "settlement-aerial": {
+        "alt": "The village, its vineyard and the bay from the air at Bahía Bustamante Lodge, Argentina",
+        "section": "exterior"
+      },
+      "penguin-island": {
+        "alt": "Two Magellanic penguins on the shore at Bahía Bustamante Lodge, Argentina",
+        "section": "experiences"
+      },
+      "sea-lions-swimming": {
+        "alt": "Sea lions swimming in green water from the air at Bahía Bustamante Lodge, Argentina",
+        "section": "experiences"
+      },
+      "living-room": {
+        "alt": "A lounge with a window onto the vineyard and the bay at Bahía Bustamante Lodge, Argentina",
+        "section": "exterior"
+      },
+      "village-by-the-sea": {
+        "alt": "The white sea houses on the steppe at Bahía Bustamante Lodge, Argentina",
+        "section": "exterior"
+      },
+      "la-prove-restaurant": {
+        "alt": "The dining room with windows onto the bay at Bahía Bustamante Lodge, Argentina",
+        "section": "dining"
+      },
+      "island-aerial": {
+        "alt": "A boat beside a rocky islet from the air at Bahía Bustamante Lodge, Argentina",
+        "section": "experiences"
+      },
+      "guanacos-on-the-steppe": {
+        "alt": "Guanacos below a rock pinnacle on the steppe at Bahía Bustamante Lodge, Argentina",
+        "section": "experiences"
+      },
+      "ocean-vineyard": {
+        "alt": "Sunrise over the vineyard and the bay at Bahía Bustamante Lodge, Argentina",
+        "section": "exterior"
+      },
+      "art-installation-at-the-cape": {
+        "alt": "Rust-red wind vanes above the sea at Bahía Bustamante Lodge, Argentina",
+        "section": "exterior"
+      },
+      "terrace-fire-pit": {
+        "alt": "A glass of red wine raised by a fire pit near the shore at Bahía Bustamante Lodge, Argentina",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "wymara": {
+    "describe": {
+      "w01": {
+        "alt": "The beach deck and palms on Grace Bay at Wymara Resort + Villas, Turks and Caicos",
+        "section": "exterior"
+      },
+      "w04": {
+        "alt": "Rows of sun loungers on Grace Bay Beach from the air at Wymara Resort + Villas, Turks and Caicos",
+        "section": "pool"
+      },
+      "w02": {
+        "alt": "The resort pool lined with palms and cabanas at Wymara Resort + Villas, Turks and Caicos",
+        "section": "pool"
+      },
+      "w30": {
+        "alt": "The infinity pool above the sea at Wymara Resort + Villas, Turks and Caicos",
+        "section": "pool"
+      },
+      "w25": {
+        "alt": "An overwater sundeck with white shade sails at Wymara Resort + Villas, Turks and Caicos",
+        "section": "pool"
+      },
+      "w12": {
+        "alt": "Grace Bay Beach and the turquoise sea from above at Wymara Resort + Villas, Turks and Caicos",
+        "section": "exterior"
+      },
+      "w05": {
+        "alt": "The pool at dusk from a curtained pavilion at Wymara Resort + Villas, Turks and Caicos",
+        "section": "pool"
+      },
+      "w26": {
+        "alt": "A guest sliding into the sea from a villa deck at Wymara Resort + Villas, Turks and Caicos",
+        "section": "experiences"
+      },
+      "w22": {
+        "alt": "A villa and its pool on the limestone shore at Wymara Resort + Villas, Turks and Caicos",
+        "section": "exterior"
+      },
+      "w13": {
+        "alt": "A suite living room with windows onto the sea at Wymara Resort + Villas, Turks and Caicos",
+        "section": "rooms"
+      },
+      "w11": {
+        "alt": "A villa roof terrace with loungers at Wymara Resort + Villas, Turks and Caicos",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "gaia-riverlodge": {
+    "describe": {
+      "hero": {
+        "alt": "The thatched main lodge on its hillside from the air at Gaïa Riverlodge, Belize",
+        "section": "exterior"
+      },
+      "lodge": {
+        "alt": "A thatched cabana above the forested valley at Gaïa Riverlodge, Belize",
+        "section": "exterior"
+      },
+      "arrival": {
+        "alt": "Cabanas on a forested ridge at Gaïa Riverlodge, Belize",
+        "section": "exterior"
+      },
+      "stay": {
+        "alt": "A thatched cabana among the plants above the valley at Gaïa Riverlodge, Belize",
+        "section": "exterior"
+      },
+      "waterfall-view-suite": {
+        "alt": "A cabana interior under a thatched roof at Gaïa Riverlodge, Belize",
+        "section": "rooms"
+      },
+      "riverside-villa": {
+        "alt": "A cabana bedroom interior with a canopied bed at Gaïa Riverlodge, Belize",
+        "section": "rooms"
+      },
+      "mountain-view-cabanas": {
+        "alt": "A cabana deck above the forest at Gaïa Riverlodge, Belize",
+        "section": "rooms"
+      },
+      "dining": {
+        "alt": "Guests dining on the terrace above the forested gorge at Gaïa Riverlodge, Belize",
+        "section": "dining"
+      },
+      "experiences": {
+        "alt": "Visitors climbing to a Maya temple at Gaïa Riverlodge, Belize",
+        "section": "experiences"
+      },
+      "wellness": {
+        "alt": "A massage on a deck above the forest at Gaïa Riverlodge, Belize",
+        "section": "experiences"
+      },
+      "about": {
+        "alt": "The river beach and its umbrellas from the air at Gaïa Riverlodge, Belize",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "blue-reef-island": {
+    "describe": {
+      "hero": {
+        "alt": "The island, its cabanas and dock from directly above at Blue Reef Island, Belize",
+        "section": "exterior"
+      },
+      "island-air": {
+        "alt": "The island in turquoise shallows from the air at Blue Reef Island, Belize",
+        "section": "exterior"
+      },
+      "cabana": {
+        "alt": "A red-roofed cabana among the palms at Blue Reef Island, Belize",
+        "section": "exterior"
+      },
+      "island-1": {
+        "alt": "A cabana and its veranda in morning light at Blue Reef Island, Belize",
+        "section": "exterior"
+      },
+      "island-2": {
+        "alt": "A cabana sitting area interior at Blue Reef Island, Belize",
+        "section": "rooms"
+      },
+      "island-3": {
+        "alt": "A cabana veranda with a hammock facing the sea at Blue Reef Island, Belize",
+        "section": "rooms"
+      },
+      "island-4": {
+        "alt": "A cabana bedroom interior with a timber ceiling at Blue Reef Island, Belize",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "awasi-atacama": {
+    "describe": {
+      "atacama-desert-chile-volcanic-crater-salt-flat-sunrise-aerial": {
+        "alt": "A volcanic crater and salt flat at sunrise from the air at Awasi Atacama, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "60b982337_7f9e323b3_6a220664a03cd874b2d0608d_5-Round-Room.webp": {
+        "alt": "A bathroom with a stone vanity at Awasi Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "916391cc2_075374951_6a22083b5fdfd5c8310cf62c_81debd7e0047e7bf4ae1a23d7db43d63c1b81226-1.webp": {
+        "alt": "Reed gates opening onto a courtyard at Awasi Atacama, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "d219d3254_7ddf33567_6a22083bb3d080253fb14550_5226d5c176daa595f4db55d4de23caf126e503b3-1.webp": {
+        "alt": "The courtyard lounge with sofas and an adobe oven at Awasi Atacama, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "d3435bac3_f2e83bef2_6a22083ba60ae58b35fca216_atacama-093.webp": {
+        "alt": "A round suite interior under a thatched roof at Awasi Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "0a1e56c94_5b77e5fa4_6a22083bc6a7461bbef9803d_Frame-3960.webp": {
+        "alt": "Three details of a suite: doorway, outdoor shower and thatched ceiling at Awasi Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "b671c440a_f7d03139a_6a1629e4fef5c3047066ee2d_atacama-081-1.webp": {
+        "alt": "A round adobe suite with its patio and umbrella at Awasi Atacama, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "atacama-desert-chile-sand-dunes-golden-hour-aerial": {
+        "alt": "Sand dunes in low light at Awasi Atacama, Chile & Easter Island",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "awasi-patagonia": {
+    "describe": {
+      "f30d857f8_51b367563_6a149ab565babcd5dc581ed1_AWASI-PATAGONIA-DEZ-2025-255-2048x1365.jpg": {
+        "alt": "The dining room with windows onto the plain at Awasi Patagonia, Chile & Easter Island",
+        "section": "dining"
+      },
+      "2fd76cae0_614e0613c_6a220315a03cd874b2cf4c60_AWASI-PATAGONIA-DEZ-2025-222.webp": {
+        "alt": "A villa window seat looking out to the mountains at Awasi Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "9664ce63b_76dcdcbce_6a220313b05737d00a36566c_p_mv-4.webp": {
+        "alt": "A villa bedroom with a window onto the Paine massif at Awasi Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "e9ee199b7_807612a77_6a220313a03cd874b2cf4bd7_p_mv-1.webp": {
+        "alt": "A wooden hot tub facing the Torres del Paine at Awasi Patagonia, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "9f7422ae6_4a7f3b887_6a22031316caf7eb9400f669_p_mv-5.webp": {
+        "alt": "A villa sitting room open to its deck at Awasi Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "84cda6c2f_7f087144a_6a2203125f7d99eff0127126_Cenit-Villas-Center-768x512.webp": {
+        "alt": "A boardwalk and fire pit on the steppe at sunset, an architect's rendering at Awasi Patagonia, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "33d2fd672_59a2fd023_6a220312b05737d00a365356_Cenit-Villas-Bedroom-1-768x574.webp": {
+        "alt": "A suite bedroom with a mountain view, an architect's rendering at Awasi Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "32e53a9f3_2580b32b7_6a2203125f7d99eff012710e_Cenit-Villas-Bathroom-768x674.webp": {
+        "alt": "A bathroom with a stone basin, an architect's rendering at Awasi Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "79086b240_53b4f9169_6a2203128b17cd355a2617a2_Cenit-Villas-Living-1-1024x790.webp": {
+        "alt": "A suite dining corner interior, an architect's rendering at Awasi Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "82a351044_2daeaeaf4_6a220312f0f19d3777f7fd60_Cenit-Villas-Hero.webp": {
+        "alt": "A curved glass villa at night, an architect's rendering at Awasi Patagonia, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "801898d66_e2bec1208_6a220312c6a7461bbef803f4_p_v-6-scaled-1-1024x670.webp": {
+        "alt": "A villa sitting room interior with a wood stove at Awasi Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "iguazu": {
+    "describe": {
+      "4ea8be787_2200c6ac4_6a14b16d9efcbfa94f0e5307_iguazu-pagination-1.avif": {
+        "alt": "A table set for two on a deck in the rainforest at Awasi Iguazú, Argentina",
+        "section": "dining"
+      },
+      "8210e14be_d02b6990d_6a2a9679f3776cca1b6e96c0_37fXf0yQ-scaled.webp": {
+        "alt": "A villa deck and plunge pool in the rainforest at Awasi Iguazú, Argentina",
+        "section": "pool"
+      },
+      "961f7f731_56f4caca4_6a1885b2afaefea6791a87f4_master-villa-001-1024x683.webp": {
+        "alt": "A dark timber villa among the forest plants at Awasi Iguazú, Argentina",
+        "section": "exterior"
+      },
+      "20beff39a_97889066a_6a18859eef5ccc9a6aa6f6e4_master-villa-006-1024x683.webp": {
+        "alt": "A villa deck with sun loungers and a plunge pool at Awasi Iguazú, Argentina",
+        "section": "pool"
+      },
+      "391283648_f83acc67a_6a18861b52c7f01140512d1f_standard-villa-003-1024x683.webp": {
+        "alt": "A villa terrace beside the rainforest at Awasi Iguazú, Argentina",
+        "section": "exterior"
+      },
+      "752821fdb_ab7e9e375_6a1885f86f525185bef3b9fe_standard-villa-004-1024x683.webp": {
+        "alt": "A villa deck and plunge pool among the trees at Awasi Iguazú, Argentina",
+        "section": "pool"
+      },
+      "22f198eb6_dcaf2aa60_6a18861b7de7a9395dbcac4e_standard-villa-009-1024x683.webp": {
+        "alt": "A villa living room with windows onto the forest at Awasi Iguazú, Argentina",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "ecocamp-patagonia": {
+    "describe": {
+      "bab84a6ff_7d1702e29_697b0d4402e697f21c302ea3_Standard_20Dome_20and_20Rainbow.webp": {
+        "alt": "Green domes below the Paine massif under a rainbow at EcoCamp Patagonia, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "cbc2fe782_80a682dcf_697b10303c66ece4aa4ea29c_Standard_20Dome_20EcoCamp_20Patagonia_201920x1281_960.w": {
+        "alt": "A dome with a window onto the Torres del Paine at EcoCamp Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "445fd382b_98ff00130_697b19df823245e26253e89b_Suite_20Dome_20-_20Webp_20_3_.webp": {
+        "alt": "A suite dome interior with a wood stove at EcoCamp Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "d63c9c457_de5d5386f_697b19dfb358f447fd11bdf5_Suite_20Dome_20-_20Webp_20_4_.webp": {
+        "alt": "A dome interior with twin beds at EcoCamp Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "44505e818_e2d889e24_697b19bd6be7b6fd12ffa20e_Suite_20Dome_20EcoCamp_20Patagonia.webp": {
+        "alt": "A suite dome interior with a wood stove and armchair at EcoCamp Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "36b09a077_2122c8bcd_697b148f566215ac9525b7f1_Superior_20Dome_20Interior_960.webp": {
+        "alt": "A dome interior with a double bed at EcoCamp Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "16a5fb52b_8cd3d99a5_697b14c8695da5b3259beb16_Superior-Dome-Twin.webp": {
+        "alt": "A dome interior with two beds at EcoCamp Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "explora-rapa-nui": {
+    "describe": {
+      "26247d5b6_2a3683c29_6a149699863c30159166699f_ArchitectureHotel-RapaNui_2-1.jpg": {
+        "alt": "The lodge at dusk above the grass at Explora Rapa Nui, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "4728f1ea6_0434919b7_6a21ba4f8415b4cc5c105d17_Easter-Island-Lodge-Explora-5.jpg": {
+        "alt": "The dining room interior with woven lamps at Explora Rapa Nui, Chile & Easter Island",
+        "section": "dining"
+      },
+      "ce70e586a_2d4afd7c2_6a21ba4f6da73a14a5719da6_Easter-Island-Lodge-Explora-7.jpg": {
+        "alt": "Breakfast at a window onto the green hills at Explora Rapa Nui, Chile & Easter Island",
+        "section": "dining"
+      },
+      "d1143f1a3_b237875a8_6a21ba4f6e33c383b0968338_Easter-Island-Lodge-Explora-9.jpg": {
+        "alt": "The bar interior at Explora Rapa Nui, Chile & Easter Island",
+        "section": "dining"
+      },
+      "0476a5725_241af0a13_6a21ba4fa8db4afa43cc3d49_Easter-Island-Lodge-Explora-13.jpg": {
+        "alt": "A bathroom with twin basins at Explora Rapa Nui, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "72c034bfe_5094d577e_6a21ba4ee3403dc043eacfce_Easter-Island-Lodge-Explora-15.jpg": {
+        "alt": "The dark timber lodge among eucalyptus trees at Explora Rapa Nui, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "5c7009d22_7df768b7e_6a21ba4e51de8a19c6caeac6_Easter-Island-Lodge-Explora-27.jpg": {
+        "alt": "The lounge with windows onto the hills and the sea at Explora Rapa Nui, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "2d7ec287b_8beff1a4f_6a21ba4e78417991442d742e_Easter-Island-Lodge-Explora-31.jpg": {
+        "alt": "The pool and loungers at sunset above the coast at Explora Rapa Nui, Chile & Easter Island",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "explora-sacred-valley": {
+    "describe": {
+      "73deb5b90_7a3bc3432_6a1485c541bf402f7182e300_SacredValleyLodge3-100.jpg": {
+        "alt": "The lodge among corn fields below cloud-covered mountains at Explora Sacred Valley, Peru",
+        "section": "exterior"
+      },
+      "807d452cf_b4661a0e7_6a21b5c5294c444ec743ea5e_SacredValleyLodge27-copy-copia-100.jpg": {
+        "alt": "The terrace above the fields and the valley mountains at Explora Sacred Valley, Peru",
+        "section": "exterior"
+      },
+      "2a0b232a8_54f22bdb2_6a21b5c5294c444ec743ea64_SacredValleyLodge27-copy-copia-2-100.jpg": {
+        "alt": "The timber lobby interior at Explora Sacred Valley, Peru"
+      },
+      "8cb497625_cd59cf770_6a21b5c3d165b3e3b6003907_SacredValleyLodge27-copy-19-100.jpg": {
+        "alt": "The lodge facade of stone, adobe and timber at Explora Sacred Valley, Peru",
+        "section": "exterior"
+      },
+      "b3909dff3_577d20f3b_6a21b5c3b36c0089435d0177_SacredValleyLodge27-copy-11-100.jpg": {
+        "alt": "The lodge roofs and the mountains from a balcony at Explora Sacred Valley, Peru",
+        "section": "exterior"
+      },
+      "993baa7c6_c4ede22e4_6a21b5c331e91cc6d29d96e5_SacredValleyLodge27-copy-9-100.jpg": {
+        "alt": "A room with a window onto the fields and mountains at Explora Sacred Valley, Peru",
+        "section": "rooms"
+      },
+      "18677fb56_0069df55e_6a21b5c3220727e626c69296_SacredValleyLodge27-copy-5-copia-3-100.jpg": {
+        "alt": "Loungers in the colonial arcade of the bath house at Explora Sacred Valley, Peru",
+        "section": "pool"
+      },
+      "c3cbbcdaf_b58898eda_6a21b5c3868a7bba50e8de16_SacredValleyLodge27-copy-3-copia-100.jpg": {
+        "alt": "The bar and dining hall interior at Explora Sacred Valley, Peru",
+        "section": "dining"
+      },
+      "071d392d7_6ef9b26e7_6a21b5c352c6946e474726ff_SacredValleyLodge27-copy-3-copia-3-100.jpg": {
+        "alt": "A massage room interior in the bath house at Explora Sacred Valley, Peru"
+      },
+      "817667b92_0341bd001_6a21b5c2140b538d659d155c_SacredValleyLodge27-copy-3-copia-2-100.jpg": {
+        "alt": "The lounge interior with a fireplace at Explora Sacred Valley, Peru"
+      },
+      "3b6e3549f_3f54168d9_6a21b5c3e5609e76d119a1f1_SacredValleyLodge27-copy-2-copia-3-100.jpg": {
+        "alt": "The pool and loungers beside adobe walls at Explora Sacred Valley, Peru",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "explora-torres-del-paine": {
+    "describe": {
+      "ca57714da_d4e36d869_6a10e9328d9fceee045ab426_OverviewLodge_explorationsglacier-2-copia-3.jpg": {
+        "alt": "The lodge below the Cuernos del Paine at sunrise at Explora Torres del Paine, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "2165515ff_35c701a66_6a21a7fd87dda0d1ed504661_WEB-GalleryPATLodge_Exploraciones2-copy-5.webp": {
+        "alt": "A lounge interior with armchairs at Explora Torres del Paine, Chile & Easter Island"
+      },
+      "ec7816220_15f2ef1c3_6a21a7f94e7a430b94057cd7_WEB-GalleryPATLodge_Exploraciones2-copy-4.webp": {
+        "alt": "A lounge with windows onto a waterfall at Explora Torres del Paine, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "a4612ed9b_fa0c8a969_6a21a7f942acfbb019b90f96_WEB-GalleryPATLodge_Exploraciones1-05.webp": {
+        "alt": "A room with windows onto the lake and hills at Explora Torres del Paine, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "19798a3d9_71f4d41da_6a21a7f8b0010c21909f2261_WEB-GalleryPATLodge_Exploraciones1-01.webp": {
+        "alt": "The white lodge through golden grass at Explora Torres del Paine, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "074e25f97_65722af55_6a21a7f6e65a7d03bcf63494_WEB-GalleryPATLodge_Exploraciones1-copy.webp": {
+        "alt": "The lounge interior with tables and armchairs at Explora Torres del Paine, Chile & Easter Island"
+      },
+      "063ad71d1_51a2976e4_6a21a7f6e0a4f613eca1d73b_WEB-GalleryPATLodge_Exploraciones1-copy-3.webp": {
+        "alt": "The lounge with windows onto Lake Pehoé and the mountains at Explora Torres del Paine, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "a168b3bf3_cab0217d8_6a21a7f6840409783576fa49_WEB-GalleryPATLodge_Exploraciones1-copy-2.webp": {
+        "alt": "A lounge window onto the lake, its islet and the Paine massif at Explora Torres del Paine, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "bab690293_3eedd3819_6a21a7f587dda0d1ed50444f_lodge-aspects-gallerybigMODAL-48.jpg": {
+        "alt": "The lounge interior with a round table at Explora Torres del Paine, Chile & Easter Island"
+      }
+    },
+    "extra": []
+  },
+  "inkaterra-cabo-blanco": {
+    "describe": {
+      "c1b4fda33_c83f66f32_6a14da13d31b8e414897bffc_Header_1920x301_op1.jpg": {
+        "alt": "The open Pacific under a grey sky at Inkaterra Cabo Blanco, Peru",
+        "section": "exterior"
+      },
+      "f8aa8c27e_e530f1a8c_6a35c0ec04c48aa5b01fcaa9_0be79fb5.jpg": {
+        "alt": "A dressing room and wardrobe interior at Inkaterra Cabo Blanco, Peru",
+        "section": "rooms"
+      },
+      "9f4ac8de9_90e611be3_6a35c0ec162d9d628278e684_e81d6eec.avif": {
+        "alt": "A suite terrace and plunge pool above the surf at Inkaterra Cabo Blanco, Peru",
+        "section": "rooms"
+      },
+      "2e20aad11_0f0859b41_6a35c0ec9d169080ef7e28d5_bd0d3163.avif": {
+        "alt": "A bedroom interior with woven wall pieces at Inkaterra Cabo Blanco, Peru",
+        "section": "rooms"
+      },
+      "ccdf619ab_3dc880856_6a35c0ec710836831994f186_fccd0eb0.webp": {
+        "alt": "A suite bedroom interior with a beamed ceiling at Inkaterra Cabo Blanco, Peru",
+        "section": "rooms"
+      },
+      "d15b51833_dc278f917_6a35c0eb3df09853ce460187_d56d37c1.jpg": {
+        "alt": "A terrace with a fire pit above the ocean at dusk at Inkaterra Cabo Blanco, Peru",
+        "section": "exterior"
+      },
+      "f4bf2c986_8c1e5e56d_6a35c0e8ca0e46e56cec4d15_d37519cf.avif": {
+        "alt": "A suite bedroom open to a terrace and the ocean at Inkaterra Cabo Blanco, Peru",
+        "section": "rooms"
+      },
+      "452f0711f_1c2052cc2_6a35c0eb99c333882d3f270c_2b50e7a9.webp": {
+        "alt": "An outdoor shower court at Inkaterra Cabo Blanco, Peru",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "inkaterra-hacienda-concepcion": {
+    "describe": {
+      "ba082c1ac_640df76e0_6a14d52d404927320e68ceb1_HC01_HEADER_ROOM_nuevo.jpg": {
+        "alt": "Cushions on a cabana daybed, close up at Inkaterra Hacienda Concepcion, Peru",
+        "section": "rooms"
+      },
+      "bdefcb41f_8b46ee170_6a3590b1cd06ca2314238330_06b3e897.avif": {
+        "alt": "A room interior with lattice shutters at Inkaterra Hacienda Concepcion, Peru",
+        "section": "rooms"
+      },
+      "603f3ccd6_1db1ae1ed_6a3590b1491d6977ea56f2ec_6a072400.avif": {
+        "alt": "A cabana interior with twin beds under mosquito nets at Inkaterra Hacienda Concepcion, Peru",
+        "section": "rooms"
+      },
+      "3a74b0ace_a5d62938b_6a3590b11cc38736b18962bd_c1360a10.avif": {
+        "alt": "A cabana interior with a daybed and netted bed at Inkaterra Hacienda Concepcion, Peru",
+        "section": "rooms"
+      },
+      "b2e2717ab_f06933b60_6a3590b11f77734f69b4f29a_9e4bec51.webp": {
+        "alt": "A thatched cabana among rainforest palms at Inkaterra Hacienda Concepcion, Peru",
+        "section": "exterior"
+      },
+      "3a9fb8d1b_6ed575a33_6a3590b1c7ceaf29c12650bf_77e2aff2.avif": {
+        "alt": "A cabana bedroom interior under thatch at Inkaterra Hacienda Concepcion, Peru",
+        "section": "rooms"
+      },
+      "e9fd7eba4_a76ee2360_6a3590b11f77734f69b4f28b_6629b3f1.webp": {
+        "alt": "A cabana with screened windows onto the forest at Inkaterra Hacienda Concepcion, Peru",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "inkaterra-hacienda-urubamba": {
+    "describe": {
+      "b6c30471c_010d27cc9_6a14d1176027b26943e60078_header-hu.jpg": {
+        "alt": "The hacienda's tiled roofs lit at dusk at Inkaterra Hacienda Urubamba, Peru",
+        "section": "exterior"
+      },
+      "778e4cc55_d37cb1e15_6a358597ecd39a6f8548fd3e_bb48993c.webp": {
+        "alt": "A room interior with a carved door at Inkaterra Hacienda Urubamba, Peru",
+        "section": "rooms"
+      },
+      "80b642cb6_bb50bd262_6a35859745693f443cef9161_bac3c6a4.avif": {
+        "alt": "A room with doors open to the valley at Inkaterra Hacienda Urubamba, Peru",
+        "section": "rooms"
+      },
+      "fb00f0210_1e5da8fe7_6a3585975ad0303f4aceb7e2_c500da3c.avif": {
+        "alt": "A casita bedroom with windows onto the valley mountains at Inkaterra Hacienda Urubamba, Peru",
+        "section": "rooms"
+      },
+      "4a1371009_f640b8a59_6a358597849168d5470f1e95_e2db3926.webp": {
+        "alt": "A casita bedroom open to a terrace and the mountains at Inkaterra Hacienda Urubamba, Peru",
+        "section": "rooms"
+      },
+      "e484a552e_a93cb37c9_6a358597187ee727425c0f9d_22f73334.avif": {
+        "alt": "A casita with a fireplace, open to a terrace and the valley at Inkaterra Hacienda Urubamba, Peru",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "inkaterra-la-casona": {
+    "describe": {
+      "7e9f5de15_8f4187892_6a14cb965de117399a0a5531_header-lc-1.jpg": {
+        "alt": "The manor courtyard with stone seats and a bench at dusk at Inkaterra La Casona, Peru",
+        "section": "exterior"
+      },
+      "2249a3e2a_1e3b3b6dc_6a35602eff6a641da25842ec_2d57a5cc.webp": {
+        "alt": "A suite interior with carved columns at Inkaterra La Casona, Peru",
+        "section": "rooms"
+      },
+      "f4b4724fc_4c70fc9c9_6a35602d3217e683f5380513_a263ad91.webp": {
+        "alt": "A suite bedroom interior with twin beds at Inkaterra La Casona, Peru",
+        "section": "rooms"
+      },
+      "f9b02f9c6_bf3ad2ad6_6a35602e03252d9197269a02_7636d2e2.jpg": {
+        "alt": "A suite interior with antique furniture at Inkaterra La Casona, Peru",
+        "section": "rooms"
+      },
+      "bacb48ed8_56857caf1_6a35602d6922c4d6993206f1_a63157d0.avif": {
+        "alt": "A suite interior with carved doors at Inkaterra La Casona, Peru",
+        "section": "rooms"
+      },
+      "bf85f9103_92012510f_6a35602fe92bb161c27b3ea5_ae93db04.avif": {
+        "alt": "A suite open to the courtyard balcony at Inkaterra La Casona, Peru",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "inkaterra-machu-picchu-pueblo-hotel": {
+    "describe": {
+      "2704a1381_5e27d7d9d_6a14cd48b87a439721ceeff2_header-mp.jpg": {
+        "alt": "A tiled roof against the cloud forest and a peak at dusk at Inkaterra Machu Picchu Pueblo Hotel, Peru",
+        "section": "exterior"
+      },
+      "7c659f2fc_cfc0e8c35_6a3576df162d9d62826134e0_c65c9625.avif": {
+        "alt": "A room interior with twin beds and timber beams at Inkaterra Machu Picchu Pueblo Hotel, Peru",
+        "section": "rooms"
+      },
+      "79fd4d618_fc172be9e_6a3576e03df09853ce2be784_8276477b.webp": {
+        "alt": "A room interior with twin beds at Inkaterra Machu Picchu Pueblo Hotel, Peru",
+        "section": "rooms"
+      },
+      "7965e81d6_ff2e5449e_6a3576df3df09853ce2be768_5374c0a6.webp": {
+        "alt": "A room interior with a fireplace at Inkaterra Machu Picchu Pueblo Hotel, Peru",
+        "section": "rooms"
+      },
+      "8c15bb261_cfbd28248_6a3576df49cdbd39b35536b4_1e0e45a0.webp": {
+        "alt": "A casita terrace in the cloud forest garden at Inkaterra Machu Picchu Pueblo Hotel, Peru",
+        "section": "exterior"
+      },
+      "40981f0f6_bdf26269d_6a3576df1f77734f69a9b373_27f24260.webp": {
+        "alt": "A casita terrace and garden at night at Inkaterra Machu Picchu Pueblo Hotel, Peru",
+        "section": "exterior"
+      },
+      "71d940c04_55e3086ea_6a3576dfefe357a449deec61_f9e4c80d.webp": {
+        "alt": "A room interior with a lit fireplace at Inkaterra Machu Picchu Pueblo Hotel, Peru",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "amazon-field-station-byinkaterra": {
+    "describe": {
+      "aa45e4aba_58d2927d9_6a14d8ae055d5e1b0d131e61_IGFS01_HEADER_nuevo.jpg": {
+        "alt": "The station's thatched pavilions and lawns from directly above at Amazon Field Station by Inkaterra, Peru",
+        "section": "exterior"
+      },
+      "8a8060dc4_a6f39840e_6a35bc850bf5c79b64f9be93_bd92afc1.webp": {
+        "alt": "A shared cabin interior with timber partitions at Amazon Field Station by Inkaterra, Peru",
+        "section": "rooms"
+      },
+      "28290af4d_f4b53c2c5_6a35bc85c365d252ecc0cfd8_6264fcd1.avif": {
+        "alt": "A cabin interior with twin beds under mosquito nets at Amazon Field Station by Inkaterra, Peru",
+        "section": "rooms"
+      },
+      "63a4c0cef_dfaa2d8ad_6a35bc85f1ababa5ac96a05d_9c1da7c7.webp": {
+        "alt": "A cabin interior with netted beds at Amazon Field Station by Inkaterra, Peru",
+        "section": "rooms"
+      },
+      "6689cbf49_86a2388b1_6a35bc853f652344aa66fe67_6690b556.webp": {
+        "alt": "A cabin interior with a single bed at Amazon Field Station by Inkaterra, Peru",
+        "section": "rooms"
+      },
+      "cd1f93156_fbc4f6f01_6a35bc85bbe438f1cb82405e_7026c28d.webp": {
+        "alt": "A cabin interior with timber shelving and beds at Amazon Field Station by Inkaterra, Peru",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "el-mapi-byinkaterra": {
+    "describe": {
+      "c372701fd_2c447ec55_6a14ceccac8b2cc6c5d75ed1_HEADER_EM_ROOM2_nuevo.jpg": {
+        "alt": "A folded robe on a bed by a window at El MaPi byInkaterra, Peru",
+        "section": "rooms"
+      },
+      "073098f11_0a0e8b349_6a357e203f652344aa51f1d4_e7cf34fa.avif": {
+        "alt": "A room interior with twin beds at El MaPi byInkaterra, Peru",
+        "section": "rooms"
+      },
+      "35f3567a8_c3175b911_6a357e2056ef1a53f0fce396_da9c9d70.avif": {
+        "alt": "A room interior with three beds at El MaPi byInkaterra, Peru",
+        "section": "rooms"
+      },
+      "49c3f5078_9dd9dc62e_6a357e20fd4f8718f8c8910c_f9ae6e7a.avif": {
+        "alt": "A suite sitting room interior at El MaPi byInkaterra, Peru",
+        "section": "rooms"
+      },
+      "1e417e4ef_f3a011c1e_6a357e201e1c5a2daf68c16e_2e63e454.avif": {
+        "alt": "A suite sitting room interior with a balcony door at El MaPi byInkaterra, Peru",
+        "section": "rooms"
+      },
+      "0e4da1453_f5321e39f_6a357e2099c333882d2976af_4b935e2e.webp": {
+        "alt": "A room interior with twin beds and a balcony door at El MaPi byInkaterra, Peru",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "beckon-tierra-atacama": {
+    "describe": {
+      "suite-terrace-volcano": {
+        "alt": "A suite terrace looking out to the desert and Licancabur volcano at Tierra Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "suite-terrace-firepit-night": {
+        "alt": "A suite terrace with a fire bowl at night at Tierra Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "oriente-deck-firepit-dusk": {
+        "alt": "A terrace with armchairs and a fire table at night at Tierra Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "suite-plunge-pool-night": {
+        "alt": "A suite and its plunge pool lit at night at Tierra Atacama, Chile & Easter Island",
+        "section": "pool"
+      },
+      "poniente-desk-volcano": {
+        "alt": "A room desk at a window onto the volcano at Tierra Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "oriente-terrace-mountains": {
+        "alt": "A room terrace with a view of the mountains at Tierra Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "apartment-hot-tub-night": {
+        "alt": "A terrace with loungers and a hot tub at night at Tierra Atacama, Chile & Easter Island",
+        "section": "pool"
+      },
+      "suite-fireplace": {
+        "alt": "A terrace with a hanging fireplace at dusk at Tierra Atacama, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "poniente-bedroom-desert": {
+        "alt": "A room with a window seat onto the desert at Tierra Atacama, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "oriente-bedroom": {
+        "alt": "A suite bedroom interior with a four-poster bed at Tierra Atacama, Chile & Easter Island",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "tierra-patagonia": {
+    "describe": {
+      "lodge-aerial": {
+        "alt": "The lodge on the steppe below the Paine massif at sunrise at Tierra Patagonia, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "room-window-hills": {
+        "alt": "A room with a window onto the steppe and mountains at Tierra Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "room-with-a-view": {
+        "alt": "A window seat looking out to the lake and steppe at Tierra Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "lodge-lounge": {
+        "alt": "The lounge with windows onto the lake and the Paine massif at Tierra Patagonia, Chile & Easter Island",
+        "section": "exterior"
+      },
+      "superior-armchair-hills": {
+        "alt": "A room armchair beside a window onto the mountains at Tierra Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "suite-chaise": {
+        "alt": "A suite sitting area interior with a sofa at Tierra Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "suite-bedroom-stair": {
+        "alt": "A suite bedroom interior below a timber staircase at Tierra Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      },
+      "suite-bathtub": {
+        "alt": "A bathroom with a freestanding bathtub at Tierra Patagonia, Chile & Easter Island",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "victoria-house": {
+    "describe": {
+      "hero": {
+        "alt": "The infinity pool and loungers under palms by the beach at Victoria House Resort & Spa, Belize",
+        "section": "pool"
+      },
+      "coral-suite": {
+        "alt": "Sun loungers on a deck above the pool and palms at Victoria House Resort & Spa, Belize",
+        "section": "pool"
+      },
+      "hibiscus-suite": {
+        "alt": "A suite living room interior at Victoria House Resort & Spa, Belize",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "hamanasi": {
+    "describe": {
+      "hero": {
+        "alt": "The pool among coconut palms at Hamanasi Adventure & Dive Resort, Belize",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  }
 }

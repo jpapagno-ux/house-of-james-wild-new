@@ -35,6 +35,17 @@ export const STAY_FILMS: Record<string, WideFilm> = {
     credit: "Film courtesy of Wymara Resort + Villas",
     // not on the hero: the film reads grainy full screen, so the photograph leads (James, 23 Nov 2026)
   },
+  // Awasi Iguazú's own hero film (108 s, 4K) from awasi.com (James, 24 Nov 2026: "grab all you can"). Carries a small
+  // Awasi signature in the corner.
+  iguazu: {
+    kind: "mp4",
+    src: `${CLD}/q_auto:good,vc_auto,w_1920/jwco/stays/iguazu/film.mp4`,
+    srcMobile: `${CLD}/q_auto,vc_auto,w_960/jwco/stays/iguazu/film.mp4`,
+    poster: `${CLD}/so_4,q_auto,f_jpg,w_1920/jwco/stays/iguazu/film.jpg`,
+    title: "Awasi Iguazú, Argentina",
+    credit: "Film courtesy of Awasi",
+    hero: true,
+  },
   // Salterra's own resort film (20 s, 4K) from salterra.com (13 Nov 2026).
   salterra: {
     kind: "mp4",

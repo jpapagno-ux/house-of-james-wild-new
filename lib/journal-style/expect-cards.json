@@ -1,0 +1,21 @@
+{
+ "note": "What You Can Expect as picture cards (James, 24 Nov 2026). One entry per stay: experiences and features, each a name, one line and a photograph. Names and lines come only from the stay's own filed experiences and features text. photo is the last part of a filed photograph's address (as in photo-notes.json) or null; null prints the 'Image coming soon' panel so the missing photograph is seen. also is one closing line for things with no picture. A stay with no entry keeps the earlier layout.",
+ "aguas-claras": {
+  "experiences": [
+   { "title": "Snorkeling at Punta Uva and Cahuita", "line": "Mornings at Punta Uva or along the coral reef in Cahuita National Park, 25 minutes away.", "photo": "hero-cahuita-beach" },
+   { "title": "Surf Lessons at Playa Cocles", "line": "A morning lesson on the next beach along.", "photo": null },
+   { "title": "Bike, Hike and Kayak Tours", "line": "How the afternoons can be spent.", "photo": "g8" },
+   { "title": "Talamanca Bribrí Reserve and Cacao Tour", "line": "The cultural day out.", "photo": null },
+   { "title": "Live Music, Bonfires and Theme Nights", "line": "Evenings of live local music at Papaya.", "photo": null },
+   { "title": "Yoga Sessions", "line": "Optional, for the slower days.", "photo": "hero-yoga-casa-gandhi" },
+   { "title": "Spa and Wellness Therapies", "line": "Arranged in the privacy of your bungalow, on your own veranda.", "photo": null }
+  ],
+  "features": [
+   { "title": "Papaya Restaurant", "line": "With optional full or half board plans.", "photo": "g1" },
+   { "title": "DaLime Beach Club", "line": "On Playa Chiquita.", "photo": null },
+   { "title": "The Pool", "line": "In the gardens below the main house.", "photo": "g4" },
+   { "title": "Private Plunge Pools", "line": "In the two-bedroom Deluxe Bungalows.", "photo": null }
+  ],
+  "also": "Also at the stay: complimentary bicycles and free Wi-Fi. The property's small size enables tailored itineraries, with sustainable sourcing and community partnerships woven into operations."
+ }
+}

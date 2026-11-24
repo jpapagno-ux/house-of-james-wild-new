@@ -133,6 +133,8 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
     ...(s.airport ? [{ icon: "signal-flag" as FieldIconName, label: "Nearest airport", value: s.airport, wide: true }] : []),
     ...(pwName ? [{ icon: "wave" as FieldIconName, label: "Wild Pathway", value: pwName }] : []),
   ];
+  const introParts = v.intro.match(/[^.!?]+[.!?]+(?:\s+|$)/g) ?? [v.intro];
+  const introFirst = introParts[0].trim(), introRest = introParts.slice(1).join("").trim();
   const used = new Set<string>([v.frames[0].url]);
   const pool: ViewerPhoto[] = v.photos;
   const take = (...keys: (SectionKey | null)[]): Shot | null => {
@@ -186,11 +188,15 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
   );
   return (
     <>
-      <section id="why" aria-label="Why it is here" className={`${WRAP} ${GAP} scroll-mt-32`}>
+      <section id="why" aria-label="Why it is here" className={`${WRAP} pt-8 md:pt-10 pb-[72px] md:pb-[120px] scroll-mt-32`}>
         <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why We Added It to the Portfolio" />
         {/* At a glance (James, 23 Nov 2026): the quick facts beside the words, from the record only; nothing shows that is not filed. */}
         <div className="mt-5 grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16">
-          <p className={`${T.lead} max-w-3xl text-graphite`}>{v.intro}</p>
+          {/* The introduction, set as an opening (James, 24 Nov 2026): the first sentence large with a drop capital, the rest in the house italic. */}
+          <div className="max-w-3xl">
+            <p className="font-display font-medium text-[27px] leading-[1.14] md:text-[38px] md:leading-[1.1] text-graphite first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-[72px] first-letter:leading-[0.78] md:first-letter:text-[104px]">{introFirst}</p>
+            {introRest && <p className={`${T.lead} mt-5 clear-left text-graphite`}>{introRest}</p>}
+          </div>
           {glance.length > 0 && (
             <dl aria-label={`${s.name} at a glance`} className="grid grid-cols-2 gap-x-6 border-t-2 border-[color:var(--jw-stone)] lg:grid-cols-1">
               {glance.map((g) => (
@@ -248,6 +254,36 @@ export function SampleExpect({ v, cards, children }: { v: View; cards: { title: 
     ...(!told && s.facts.signature_experiences ? [{ title: "Signature experiences", body: <p>{s.facts.signature_experiences}</p> }] : []),
     // "Who it is for" is not repeated here: Best for sits in the at-a-glance facts at the top (James, 23 Nov 2026).
   ];
+  if (v.expect) {
+    // Picture cards (James, 24 Nov 2026): each experience and each feature is a photograph, its name and one line, in a
+    // sideways scroll like the rooms. No box, no fold. A card with no photograph filed says so.
+    const lead = (s.experiences.paras[0]?.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? "").trim();
+    const row = (label: string, list: NonNullable<View["expect"]>["experiences"]) => list.length === 0 ? null : (
+      <div className="mt-10 border-t-2 border-[color:var(--jw-stone)] pt-5">
+        <p className={`${T.label} text-stone-text`}>{label} · {list.length}</p>
+        <ul aria-label={label} className="mt-5 -mx-5 md:-mx-10 flex snap-x snap-mandatory gap-4 md:gap-6 overflow-x-auto px-5 md:px-10 pb-3 [scrollbar-width:none]">
+          {list.map((c) => (
+            <li key={c.title} className="w-[70vw] max-w-[340px] shrink-0 snap-start">
+              {c.photo
+                ? <figure className="relative aspect-[4/5] overflow-hidden bg-mist"><Image src={c.photo.url} alt={c.photo.alt} fill sizes="(min-width:768px) 340px, 70vw" className="object-cover" /></figure>
+                : <div data-image-missing={c.title} className="flex aspect-[4/5] flex-col items-center justify-center gap-4 bg-mist text-stone-text"><FieldIcon name="mountain-sun" height={26} /><p className={T.label}>Image coming soon</p></div>}
+              <h3 className="mt-4 font-display font-medium text-[22px] leading-tight text-graphite">{c.title}</h3>
+              {c.line && <p className={`${T.body} mt-2 text-stone-text`}>{c.line}</p>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+    return (
+      <section id="expect" aria-label="What you can expect" className="bg-white scroll-mt-32">
+        <Head icon="mountain-sun" label="Experiences and the stay" title="What You Can Expect" />
+        {lead && <p className={`${T.lead} mt-6 max-w-3xl text-graphite`}>{lead}</p>}
+        {row("Things to do", v.expect.experiences)}
+        {row("At the stay", v.expect.features)}
+        {v.expect.also && <p className={`${T.body} mt-8 max-w-[62ch] text-graphite`}>{v.expect.also}</p>}
+      </section>
+    );
+  }
   if (!rows.length && !s.experiences.paras.length && !shown.length) return null;
   return (
     <section id="expect" aria-label="What you can expect" className="bg-white scroll-mt-32">

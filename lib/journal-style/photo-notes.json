@@ -2896,6 +2896,14 @@
       "2d7ec287b_8beff1a4f_6a21ba4e78417991442d742e_Easter-Island-Lodge-Explora-31.jpg": {
         "alt": "The pool and loungers at sunset above the coast at Explora Rapa Nui, Chile & Easter Island",
         "section": "pool"
+      },
+      "x02": {
+        "alt": "The pool and its wooden deck at sunset, looking over the grassland to the hills",
+        "section": "exterior"
+      },
+      "x08": {
+        "alt": "Walkers on the boardwalk at dusk with the Pacific on the horizon",
+        "section": "exterior"
       }
     },
     "extra": []
@@ -3307,6 +3315,64 @@
       "hero": {
         "alt": "The pool among coconut palms at Hamanasi Adventure & Dive Resort, Belize",
         "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "awasi-mendoza": {
+    "describe": {
+      "86393f7ac_e877de73a_6a14ad0961f74c25a617d99b_mendoza-full": {
+        "alt": "The Andes at dusk above the vineyards of the Uco Valley at Awasi Mendoza",
+        "section": "exterior"
+      },
+      "36f683d85_bba45da06_6a187ec4f1a3b21cf5f64429_gv-1-1-2": {
+        "alt": "A stone villa with its plunge pool in the gardens at Awasi Mendoza",
+        "section": "exterior"
+      },
+      "4c38b32f6_1c966227c_6a2a7750c6e9e02116582dc4_m_vv-1-1": {
+        "alt": "A villa's plunge pool and roof terrace from directly above at Awasi Mendoza",
+        "section": "pool"
+      },
+      "dc4a0398a_0ff6a418c_6a2a773fc64c6bd23434e39b_CAVAS-032021-ALTA-2-1367x2048": {
+        "alt": "A villa sitting corner with a bottle of wine and two glasses at Awasi Mendoza",
+        "section": "rooms"
+      },
+      "23779bfd5_1810f867a_6a2a774c514df6df3fb54963_m_vv-9-1-1-768x512": {
+        "alt": "A villa living room with doors open to the plunge pool and the vineyard view at dusk at Awasi Mendoza",
+        "section": "rooms"
+      },
+      "118114d79_81f0fda16_6a2a77586ea2391205f1955f_banheira_sem-logo_compressed-768x513": {
+        "alt": "An outdoor wooden bathtub under an olive tree in a stone courtyard at Awasi Mendoza",
+        "section": "exterior"
+      },
+      "6fb043134_b83888e82_6a2a77636ea2391205f19ce2_Two-bedroom-Villa_Mendoza9577-768x512": {
+        "alt": "A villa roof terrace with a view over the autumn vineyards at Awasi Mendoza",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "awasi-santa-catarina": {
+    "describe": {
+      "85d8971f0_9b9fcdfcd_6a14abf1ee563031f0c4563a_AWASI-SANTA-CATARINA-73-scaled-1": {
+        "alt": "A timber and glass pavilion in the Atlantic rainforest at Awasi Santa Catarina",
+        "section": "exterior"
+      },
+      "484a4f2ba_11e9101c7_6a1631a0b86186e09f67024c_sc_vpdg-3-768x576": {
+        "alt": "A villa with its pool on the forested hillside, from the air, at Awasi Santa Catarina",
+        "section": "exterior"
+      },
+      "d4d2c6b56_c8d0abbd1_6a16313fa7ed9da2f7fe81dd_sc_vce-6-768x553": {
+        "alt": "A villa bedroom and sitting area at Awasi Santa Catarina",
+        "section": "rooms"
+      },
+      "daa8c5f1e_0c30eef07_6a291ba1bde8cd96e721e88d_ARVOREDO_BANGALO-2-768x512": {
+        "alt": "A bungalow plunge pool on a deck with a view over the bay at Awasi Santa Catarina",
+        "section": "pool"
+      },
+      "28011d3c0_62c725a9a_6a291ba3d317975a492e031c_VILLA_ANHATOMIRIM-1-1-1-768x512": {
+        "alt": "A villa bedroom with doors open to a balcony and the sea view at Awasi Santa Catarina",
+        "section": "rooms"
       }
     },
     "extra": []

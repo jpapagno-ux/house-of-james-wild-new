@@ -5,6 +5,7 @@ import { ATLAS_INDEXABLE, ATLAS_ON } from "@/lib/atlas/flag";
 import { ATLAS_FAQ, ATLAS_INTRO } from "@/lib/atlas/faq";
 import JsonLd from "@/components/ledger/JsonLd";
 import { atlasPlaces } from "@/lib/atlas/places";
+import { speciesByPlace } from "@/lib/field-notes/by-place";
 import { absoluteUrl, buildMetadata } from "@/lib/seo";
 
 // /atlas: the Atlas results (Phase 01 staging pilot, James, 20 Nov 2026). One address for every search across stays,
@@ -24,7 +25,7 @@ export default function AtlasPage() {
       <JsonLd data={{ "@context": "https://schema.org", "@type": "WebSite", name: "James Wild & Co", url: absoluteUrl("/"), potentialAction: { "@type": "SearchAction", target: { "@type": "EntryPoint", urlTemplate: `${absoluteUrl("/atlas")}?where={search_term_string}` }, "query-input": "required name=search_term_string" } }} />
       <SiteHeader />
       <main id="main" className="min-h-[70vh]">
-        <AtlasResults places={atlasPlaces()} />
+        <AtlasResults places={atlasPlaces()} wildlife={speciesByPlace()} />
         <section className="max-w-[1400px] mx-auto px-5 md:px-10 pb-14" aria-labelledby="atlas-how">
           <div className="border-t ledger-border pt-8 grid gap-6 md:grid-cols-3 max-w-5xl">
             <h2 id="atlas-how" className="sr-only">How to read a result</h2>

@@ -55,6 +55,10 @@ const ADVISOR_ITEMS: Item[] = DESK_ADVISORS.map((a) => ({
   g: [...a.desk!.specialties, ...a.desk!.volumes.map((v) => VOLUME_LABEL[v]), ...a.desk!.entries.map((e) => `${e.name} ${e.place}`)].join(" · "),
 }));
 
+// Reading that search returns beside the places you can book (James, 24 Nov 2026): species pages, Journal stories,
+// field guides. They are "page" entries with a place, so a search scoped to a country keeps them.
+const READING = new Set(["Wildlife", "Journal", "Field guide"]);
+
 const GROUPS: { key: string; label: string; match: (d: Doc) => boolean }[] = [
   { key: "ef", label: "The Exceptional Few", match: (d) => d.k === "Collection" },
   { key: "dest", label: "Destinations", match: (d) => d.t === "destination" },
@@ -66,7 +70,8 @@ const GROUPS: { key: string; label: string; match: (d: Doc) => boolean }[] = [
   // Wildlife species pages (James, 24 Nov 2026): reading, shown after the places you can book.
   { key: "wildlife", label: "Wildlife: where and how to see it", match: (d) => d.k === "Wildlife" },
   { key: "advisors", label: "Advisors who know it", match: (d) => d.t === "advisor" },
-  { key: "pages", label: "Sections of the house", match: (d) => d.t === "page" && d.k !== "Wildlife" },
+  { key: "reading", label: "Journal and field guides", match: (d) => d.k === "Journal" || d.k === "Field guide" },
+  { key: "pages", label: "Sections of the house", match: (d) => d.t === "page" && !READING.has(d.k) },
 ];
 
 // The index loads once per visit, however often the panel opens.
@@ -83,7 +88,7 @@ const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCa
 
 /** An entry belongs to a place when it is filed under one of its countries, or in its region. */
 function inScope(d: Doc, s: SearchScope): boolean {
-  if (d.t === "advisor" || (d.t === "page" && d.k !== "Wildlife")) return false;
+  if (d.t === "advisor" || (d.t === "page" && !READING.has(d.k))) return false;
   const names = (s.countries?.length ? s.countries : [s.name]).map(norm);
   const filed = [d.p, ...(d.c ?? [])].filter(Boolean).map((x) => norm(x as string));
   if (filed.some((f) => names.some((n) => f === n || n.startsWith(f + " ") || f.startsWith(n + " ")))) return true;
@@ -147,7 +152,7 @@ export default function SearchPanel({ open, onClose, initialQuery = "", initialT
       if (!hits.length) hits = engine.search(words, { combineWith: "OR" });
       list = hits.map((r) => docs[r.id as number]);
     }
-    else if (type || where) list = docs.filter((d) => d.t !== "advisor" && (d.t !== "page" || d.k === "Wildlife"));
+    else if (type || where) list = docs.filter((d) => d.t !== "advisor" && (d.t !== "page" || READING.has(d.k)));
     else return [];
     if (where) list = list.filter((d) => inScope(d, where));
     if (type) list = list.filter((d) => d.f.includes(type));

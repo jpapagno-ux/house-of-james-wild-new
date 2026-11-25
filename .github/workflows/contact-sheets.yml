@@ -12,6 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build sheets
         run: |
+          set +e
           sudo apt-get install -y -q imagemagick >/dev/null
           mkdir -p dl .contact/sheets
           while IFS=$'\t' read -r slug key url; do
@@ -33,6 +34,8 @@ jobs:
             done < .contact/list.tsv
             [ ${#args[@]} -gt 0 ] && montage "${args[@]}" -tile 4x -geometry 360x240+4+4 -pointsize 22 -background white "jpg:.contact/sheets/$slug.jpg"
           done
+          ls .contact/sheets | wc -l; find dl -name "*.jpg" | wc -l
+          exit 0
       - name: Commit
         run: |
           git config user.name "contact-sheets"; git config user.email "actions@github.com"

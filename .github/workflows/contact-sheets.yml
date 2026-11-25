@@ -1,0 +1,39 @@
+name: Contact sheets (temporary)
+on:
+  push:
+    branches: [tmp/contact-sheets]
+    paths: [".contact/list.tsv"]
+permissions:
+  contents: write
+jobs:
+  sheets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build sheets
+        run: |
+          sudo apt-get install -y -q imagemagick >/dev/null
+          mkdir -p dl .contact/sheets
+          while IFS=$'\t' read -r slug key url; do
+            [ -z "$slug" ] && continue
+            mkdir -p "dl/$slug"
+            case "$url" in
+              /*) src="public$url" ;;
+              https://res.cloudinary.com/*) u=$(echo "$url" | sed -E 's#/image/upload/(([a-z]_[^/]*,?)+/)*#/image/upload/w_480,c_limit,f_jpg/#'); curl -sfL "$u" -o "dl/$slug/$key.jpg" || true; src="" ;;
+              *) curl -sfL "$url" -o "dl/$slug/$key.raw" && convert "dl/$slug/$key.raw[0]" -resize 480x480 "dl/$slug/$key.jpg" 2>/dev/null; rm -f "dl/$slug/$key.raw"; src="" ;;
+            esac
+            if [ -n "$src" ] && [ -f "$src" ]; then convert "$src[0]" -resize 480x480 "dl/$slug/$key.jpg" 2>/dev/null || true; fi
+          done < .contact/list.tsv
+          for d in dl/*/; do
+            slug=$(basename "$d"); i=0; args=()
+            while IFS=$'\t' read -r s key url; do
+              [ "$s" = "$slug" ] || continue
+              [ -f "dl/$slug/$key.jpg" ] && args+=(-label "$i" "dl/$slug/$key.jpg")
+              echo -e "$i\t$key" >> ".contact/sheets/$slug.idx"; i=$((i+1))
+            done < .contact/list.tsv
+            [ ${#args[@]} -gt 0 ] && montage "${args[@]}" -tile 4x -geometry 360x240+4+4 -pointsize 22 -background white "jpg:.contact/sheets/$slug.jpg"
+          done
+      - name: Commit
+        run: |
+          git config user.name "contact-sheets"; git config user.email "actions@github.com"
+          git add .contact/sheets && git commit -m "Contact sheets" && git push

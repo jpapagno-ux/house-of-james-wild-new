@@ -32,7 +32,7 @@ export type CardRow = {
   airtable_record_id: string; property_at: string; version_label: string; supplier_contract_reference: string | null; source_revision: number;
   currency: string; effective_from: string; effective_to: string; status: "draft" | "approved" | "published" | "retired";
   payment_terms: { depositPercentBp?: number; depositFixedMinor?: number; balanceDueDaysBeforeArrival: number };
-  cancellation: { summary: string; tiers: { daysBeforeArrival: number; penaltyBp: number }[] };
+  cancellation: { summary: string; tiers: { daysBeforeArrival: number; penaltyBp: number }[]; seasons?: { label?: string; from: string; to: string; tiers: { daysBeforeArrival: number; penaltyBp: number }[] }[] };
   timezone: string; approved_by: string | null; approved_at: string | null; approved_revision: number | null; sample: boolean;
   content_hash: string; // fingerprint of the card + every child row: approval is tied to it
 };
@@ -113,6 +113,23 @@ export function parseTiers(s: string): { daysBeforeArrival: number; penaltyBp: n
   return out;
 }
 
+/** Cancellation Tiers, with seasons: schedules separated by ";" or a new line. A schedule that starts with arrival dates
+ *  ("Festive 2026-12-20..2027-01-03 = 120:50, 60:100") applies to arrivals in those dates; the one with no dates is the
+ *  card's default. A plain "60:30, 30:100" still reads as before. null = not well-formed. */
+export function parseCancellation(s: string): { tiers: { daysBeforeArrival: number; penaltyBp: number }[]; seasons: { label?: string; from: string; to: string; tiers: { daysBeforeArrival: number; penaltyBp: number }[] }[] } | null {
+  const out: NonNullable<ReturnType<typeof parseCancellation>> = { tiers: [], seasons: [] };
+  let defaults = 0;
+  for (const seg of s.split(/[;\n]/).map((x) => x.trim()).filter(Boolean)) {
+    const eq = seg.indexOf("=");
+    if (eq < 0) { const t = parseTiers(seg); if (t === null || ++defaults > 1) return null; out.tiers = t; continue; }
+    const m = seg.slice(0, eq).trim().match(/^(.*?)\s*(\d{4}-\d{2}-\d{2})\s*\.\.\s*(\d{4}-\d{2}-\d{2})$/);
+    const t = parseTiers(seg.slice(eq + 1));
+    if (!m || t === null || t.length === 0 || m[2] > m[3] || Number.isNaN(Date.parse(m[2])) || Number.isNaN(Date.parse(m[3]))) return null;
+    out.seasons.push({ ...(m[1] ? { label: m[1] } : {}), from: m[2], to: m[3], tiers: t });
+  }
+  return out;
+}
+
 export function buildPlan(base: Base, opts: { allowSample: boolean; knownLedgerIds: Set<string> }): Plan {
   const plan: Plan = { properties: [], roomTypes: [], ratePlans: [], cards: [], rules: [], taxes: [], promotions: [], restrictions: [], terms: [], refused: [], warnings: [] };
 
@@ -167,8 +184,9 @@ export function buildPlan(base: Base, opts: { allowSample: boolean; knownLedgerI
     if (sample && !opts.allowSample) reasons.push("Sample Data cards are allowed on Preview only");
     if (status === "published" && !sample && !approver && !approvedAt) reasons.push("published without an approver (fill Approved By or Approved At)");
     if (status === "published" && !sample && approvedRevision !== revision) reasons.push(`approved for revision ${approvedRevision ?? "none"} but the card is revision ${revision} — re-approve (set Approved Revision)`);
-    const tiers = parseTiers(str(f, "Cancellation Tiers"));
-    if (tiers === null) reasons.push('cancellation tiers must look like "60:30, 30:100"');
+    const cancel = parseCancellation(str(f, "Cancellation Tiers"));
+    const tiers = cancel?.tiers ?? null;
+    if (cancel === null) reasons.push('cancellation tiers must look like "60:30, 30:100", with any season written "Name 2026-12-20..2027-01-03 = 120:50, 60:100" and schedules separated by ";"');
     const depPct = num(f, "Deposit %"), depFixed = num(f, "Deposit Fixed"), balDays = num(f, "Balance Due (days before arrival)");
     if (depPct != null && (depPct < 0 || depPct > 1)) reasons.push("deposit % must be between 0 and 100");
     if (depFixed != null && depFixed < 0) reasons.push("deposit fixed can't be negative");
@@ -179,7 +197,7 @@ export function buildPlan(base: Base, opts: { allowSample: boolean; knownLedgerI
       airtable_record_id: c.id, property_at: prop ?? "", version_label: label, supplier_contract_reference: opt(f, "Contract Reference"),
       source_revision: Math.max(1, Math.floor(num(f, "Revision") ?? 1)), currency, effective_from: from ?? "", effective_to: to ?? "", status,
       payment_terms: { ...(depFixed != null ? { depositFixedMinor: toMinor(depFixed, digits) } : { depositPercentBp: toBp(depPct ?? 1) }), balanceDueDaysBeforeArrival: Math.max(0, Math.floor(balDays ?? 0)) },
-      cancellation: { summary: str(f, "Cancellation Summary"), tiers: tiers ?? [] },
+      cancellation: { summary: str(f, "Cancellation Summary"), tiers: tiers ?? [], ...(cancel?.seasons.length ? { seasons: cancel.seasons } : {}) },
       timezone: prop ? propTz.get(prop) ?? "UTC" : "UTC", approved_by: approver, approved_at: approvedAt,
       approved_revision: approvedRevision == null ? null : Math.floor(approvedRevision), sample, content_hash: "",
     };

@@ -60,7 +60,11 @@ The records, in this order, so links resolve:
 4. **Rate Cards** — one row per contract version (`2027-V1`): Status **Draft**,
    Currency, Effective From/To, Contract Reference, Deposit %, Balance Due
    days, Cancellation Summary (what the traveler reads) and Cancellation Tiers
-   (`60:30, 30:100`), Revision 1, linked to the property.
+   (`60:30, 30:100`), Revision 1, linked to the property. Where the schedule
+   depends on the season, write each season with its arrival dates and
+   separate them with `;`, leaving the default last with no dates:
+   `Festive 2026-12-20..2027-01-03 = 120:50, 60:100; 30:50, 15:100`. The first
+   season holding the arrival date applies.
 5. **Seasonal Rates** — one row per room × plan × season: Stay Start/End
    (inclusive nights, inside the card's dates), Base Occupancy, **Nightly
    Gross per room** (for Base Occupancy adults; per-person cards are converted

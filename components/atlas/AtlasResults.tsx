@@ -5,6 +5,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { MessageCircle } from "lucide-react";
 import AtlasSearch from "./AtlasSearch";
 import { loadIndex } from "./index-client";
+import { wildlifeFor } from "@/lib/field-notes/match-place";
 import {
   CATEGORY_LABEL, COLLECTION_LABEL, EMPTY, INTEREST_LABEL, datesWords, describe, isPlace, fromQuery, norm, partyWords, search, toQuery,
   type AtlasQuery, type AtlasRecord, type Result,
@@ -16,14 +17,6 @@ import {
 
 const PAGE = 24;
 
-/** Species pages for the place searched: "Rwanda", "Galapagos", "Kenya in August". Reading beside the results. */
-function wildlifeFor(where: string, by: Record<string, { name: string; href: string }[]>): { name: string; href: string }[] {
-  const w = ` ${norm(where)} `;
-  if (w.trim().length < 4) return [];
-  const hit = Object.keys(by).filter((p) => { const n = norm(p); return w.includes(` ${n} `) || n.split(" ").includes(w.trim()); });
-  return [...new Map(hit.flatMap((p) => by[p]).map((s) => [s.href, s])).values()];
-}
-
 export default function AtlasResults({ places, wildlife = {} }: { places: string[]; wildlife?: Record<string, { name: string; href: string }[]> }) {
   const [records, setRecords] = useState<AtlasRecord[] | null>(null);
   const [failed, setFailed] = useState(false);
@@ -31,7 +24,7 @@ export default function AtlasResults({ places, wildlife = {} }: { places: string
   const [ready, setReady] = useState(false);
   const [shown, setShown] = useState(PAGE);
   const [shownAwaiting, setShownAwaiting] = useState(12);
-  const species = useMemo(() => wildlifeFor(q.where, wildlife), [q.where, wildlife]);
+  const species = useMemo(() => wildlifeFor(q.where, wildlife, norm), [q.where, wildlife]);
 
   useEffect(() => {
     setQ(fromQuery(new URLSearchParams(window.location.search)));

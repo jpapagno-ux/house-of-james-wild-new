@@ -21,3 +21,16 @@ test("every placed Field Note exists, and species pages stay in house and dash f
     assert.ok(!/[\u2013\u2014]/.test(copy), `${p.noteId}: dash in public copy`);
   }
 });
+
+// The Atlas "Wildlife here" line (James, 24 Nov 2026): a place typed in the Atlas finds its species pages.
+import { wildlifeFor } from "../lib/field-notes/match-place.ts";
+test("the Atlas finds species pages for a place, and none for a name", () => {
+  const norm = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const by = { Rwanda: [{ name: "Mountain gorilla", href: "/wildlife/mountain-gorilla" }], "Ecuador & Galápagos": [{ name: "Giant tortoise", href: "/wildlife/galapagos-giant-tortoise" }], "Galápagos": [{ name: "Giant tortoise", href: "/wildlife/galapagos-giant-tortoise" }], "South Africa": [{ name: "Leopard", href: "/wildlife/leopard" }] };
+  assert.deepEqual(wildlifeFor("Rwanda", by, norm).map((s) => s.name), ["Mountain gorilla"]);
+  assert.deepEqual(wildlifeFor("rwanda in august", by, norm).map((s) => s.name), ["Mountain gorilla"]);
+  assert.equal(wildlifeFor("Galapagos", by, norm).length, 1);
+  assert.equal(wildlifeFor("South Africa", by, norm).length, 1);
+  assert.equal(wildlifeFor("Dulini", by, norm).length, 0);
+  assert.equal(wildlifeFor("", by, norm).length, 0);
+});

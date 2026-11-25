@@ -6253,5 +6253,2465 @@
       }
     },
     "extra": []
+  },
+  "alila-ventana-big-sur": {
+    "describe": {
+      "d4eee5937_f01b22e6e_68e013c78909a9fc6d7217cf_Alila_Ventana_Big_Sur_Exterior2": {
+        "alt": "Alila Ventana Big Sur at sunrise, its pools and lawns on the ridge above the Pacific fog",
+        "section": "pool"
+      },
+      "c93a0abc4_61225fecc_68e013dce7d9d52f8896bdc1_Alila_Ventana_Big_Sur_Exterior": {
+        "alt": "The restaurant terrace at Alila Ventana among the trees of the Santa Lucia Mountains",
+        "section": "dining"
+      },
+      "2ddb4928b_5f91a0540_68e013c78909a9fc6d7217cf_Alila_Ventana_Big_Sur_Exterior2": {
+        "alt": "Alila Ventana Big Sur from the air at sunrise, the coast hills behind",
+        "section": "pool"
+      },
+      "f9ae6891b_d1afd0434_68e0157e0bcc7763065956b3_Alila_Ventana_Big_Sur_Exterior3": {
+        "alt": "The pool deck and lawns at Alila Ventana Big Sur among the redwoods and pines",
+        "section": "pool"
+      },
+      "1a4e5f035_55d03feb5_68e01581b96ed794c55c538e_Alila_Ventana_Big_Sur_Dining": {
+        "alt": "A long table set under the trees above the Pacific at Alila Ventana",
+        "section": "dining"
+      },
+      "ef40f3a77_4e70b316a_68e015831d1f143b6f7f1196_Alila_Ventana_Big_Sur_Dining2": {
+        "alt": "A fire pit on the terrace at dusk, the Pacific beyond, Alila Ventana",
+        "section": "dining"
+      },
+      "a77cd1d70_1a62670fa_68e0158546b85217187b5440_Alila_Ventana_Big_Sur_Exeterior4": {
+        "alt": "Weathered timber guest buildings among the trees at Alila Ventana",
+        "section": "exterior"
+      },
+      "208bbad36_32454a8a6_68e01588a500158bf94b98c0_Alila_Ventana_Big_Sur_Lobby": {
+        "alt": "The lodge lounge with its stone fireplace at Alila Ventana",
+        "section": "dining"
+      },
+      "346d0556f_63e646c95_68e0158bc2341d60ff9a9b8d_Alila_Ventana_Big_Sur_Views": {
+        "alt": "Two chairs on a deck facing a sunset over the Pacific at Big Sur",
+        "section": "exterior"
+      },
+      "8480f6b80_22087edc3_68e0158d3b6054c524c5420c_Alila_Ventana_Big_Sur_Dining3": {
+        "alt": "An Airstream bar in the redwood grove at Alila Ventana",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "alya-catamaran-galapagos": {
+    "describe": {
+      "fd82a7cbf_31ca6f8af_693a04943145a646fc8f39fb_Alya_20card": {
+        "alt": "Alya at anchor on calm water in the Galápagos",
+        "section": "exterior"
+      },
+      "3862352af_d82f098fe_693a049c7fb3569ad54919cb_exterior-alya-catamaran": {
+        "alt": "The catamaran Alya on turquoise water in the Galápagos",
+        "section": "exterior"
+      },
+      "2d4d1bdba_6bfc2eed9_693a04b6e8b1ec202057f329_social-area-2-alya-catamaran": {
+        "alt": "The lounge aboard Alya with windows onto the sea",
+        "section": "rooms"
+      },
+      "73a7dba94_0b6ef54ec_693a04b6bee405785ce4c909_1421": {
+        "alt": "The hot tub on Alya's upper deck facing the islands",
+        "section": "exterior"
+      },
+      "8872d6869_8fafcd985_693a04943145a646fc8f39fb_Alya_20card": {
+        "alt": "Alya at anchor on still water",
+        "section": "exterior"
+      },
+      "cb1fec725_399bf22f6_693a04b6439fe5dfa32bb2af_alya-exterior-07": {
+        "alt": "The twin hulls of Alya from the bow",
+        "section": "exterior"
+      },
+      "c3f9c00f5_cb1ce2a10_693a04b75715006ae6dbe572_alya-sundeck-luxury-cruise-galapagos": {
+        "alt": "The sun deck and hot tub aboard Alya, a Galápagos island beyond",
+        "section": "exterior"
+      },
+      "83cc5426e_7dde2e223_693a04b62354ced7e11cb3ea_alya-lounge": {
+        "alt": "The saloon aboard Alya in white and turquoise",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "be-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "An open-air lounge deck in the jungle at BE Tulum",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A guest in a rooftop plunge pool at BE Tulum from above",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A suite living room opening to the sea at BE Tulum",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A villa with glass walls above the jungle and the Caribbean at BE Tulum",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "An open lounge facing the jungle at BE Tulum",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "Palms and loungers along the white beach at BE Tulum",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "The restaurant lit at night among the palms at BE Tulum",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "The bar under woven lamps at BE Tulum",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "A suite open to the jungle at BE Tulum",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "Thatched umbrellas and loungers on the white sand at BE Tulum",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "The beach club deck under the trees at BE Tulum",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "beckon-capella-lodge": {
+    "describe": {
+      "capella-lodge-original": {
+        "alt": "A guest in an infinity pool facing Mount Lidgbird and Mount Gower at Capella Lodge, Lord Howe Island",
+        "section": "pool"
+      },
+      "infinity-pool-view": {
+        "alt": "A plunge pool above the lagoon and the twin peaks of Lord Howe Island",
+        "section": "pool"
+      },
+      "catalina-plunge-pool": {
+        "alt": "A daybed and plunge pool among the palms below Mount Gower at Capella Lodge",
+        "section": "exterior"
+      },
+      "lidgbird-balcony-bay": {
+        "alt": "A suite deck at Capella Lodge looking over the palms to the lagoon and the peaks",
+        "section": "rooms"
+      },
+      "lidgbird-deck-pool": {
+        "alt": "A suite terrace and plunge pool at Capella Lodge",
+        "section": "pool"
+      },
+      "catalina-bedroom-view": {
+        "alt": "A suite bedroom at Capella Lodge with views to the palms and peaks",
+        "section": "rooms"
+      },
+      "makambo-plunge-pool-peak": {
+        "alt": "A plunge pool on a deck above the forest, the cloud-capped peaks of Lord Howe beyond",
+        "section": "pool"
+      },
+      "catalina-lounge": {
+        "alt": "A suite living room at Capella Lodge",
+        "section": "rooms"
+      },
+      "lagoon-loft-bedroom": {
+        "alt": "A suite bedroom at Capella Lodge opening to the palms",
+        "section": "rooms"
+      },
+      "makambo-loft-stair": {
+        "alt": "A loft suite at Capella Lodge with its spiral stair",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "nomade-holbox": {
+    "describe": {
+      "hero": {
+        "alt": "The woven treehouse rooms and canvas shades of Nômade Temple Holbox on the white sand",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A massage on the sand at Nômade Temple Holbox",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "Oil poured from a gourd during a ritual at Nômade Temple Holbox",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "Smoke curling against a dark sky at Nômade Temple Holbox",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "Music and dancing at a gathering at Nômade Temple Holbox",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "A dish served on a board at La Popular, Holbox",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "The restaurant under woven arches lit at dusk, Nômade Temple Holbox",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "A shaded lounge on the sand facing the shallow sea at Nômade Temple Holbox",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A guest floating in the shallow green water off Holbox",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A guest on a terrace looking out to the sea at Nômade Temple Holbox",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A couple in the shallows at sunset off Holbox",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "nomade-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "Yoga in shafts of light through the jungle at Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "A sound session in the thatched yoga temple at Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "A guest in a water ritual at Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "A fire circle on the beach under the stars at Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g4": {
+        "alt": "A guest in a yoga class at Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "A whole fish served at the table at Nômade Temple Tulum",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "Two guests resting in the surf at Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "A fire ceremony on the beach at dusk, Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "A yoga class under the thatched roof open to the jungle at Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A guest in a resting pose at yoga at Nômade Temple Tulum",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A plunge pool at a jungle room at Nômade Temple Tulum",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "olas-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "The view through the palms to the turquoise Caribbean from a terrace at Olas Tulum",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A room with a canopy bed and round windows at Olas Tulum",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A guest on a boat on the lagoon at Sian Ka'an at sunset",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "Plates of fresh food laid out on a stone table at Olas Tulum",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "Meditation on the yoga deck among the palms at Olas Tulum",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "The mangroves of Sian Ka'an under a pink evening sky",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A room with a canopy bed at Olas Tulum",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A suite with two canopy beds and a sitting area at Olas Tulum",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A room at Olas Tulum with windows onto the palms",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A canopy bed in an arched alcove at Olas Tulum",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "A white bedroom at Olas Tulum",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "orpheus-island-lodge": {
+    "describe": {
+      "o04": {
+        "alt": "The clear water and forested headlands of Orpheus Island from the air, a boat in the bay",
+        "section": "pool"
+      },
+      "o05": {
+        "alt": "Two kayakers in the clear bay below the forest of Orpheus Island",
+        "section": "experiences"
+      },
+      "o10": {
+        "alt": "A snorkeller over the coral and fish of the reef off Orpheus Island",
+        "section": "experiences"
+      },
+      "o03": {
+        "alt": "A beachfront room at Orpheus Island Lodge opening to the garden",
+        "section": "rooms"
+      },
+      "o08": {
+        "alt": "Two kayakers on the turquoise water off Orpheus Island",
+        "section": "experiences"
+      },
+      "o12": {
+        "alt": "A swimmer above a manta ray in the blue water off Orpheus Island",
+        "section": "experiences"
+      },
+      "o01": {
+        "alt": "A facial at the Gwandalan Day Spa at Orpheus Island Lodge",
+        "section": "experiences"
+      },
+      "o02": {
+        "alt": "A plate and a glass of wine at Orpheus Island Lodge",
+        "section": "dining"
+      },
+      "o07": {
+        "alt": "A small catamaran sailing the turquoise water off Orpheus Island",
+        "section": "experiences"
+      },
+      "o09": {
+        "alt": "A swimming hole in the pink granite above the forest and bay of Orpheus Island",
+        "section": "exterior"
+      },
+      "o13": {
+        "alt": "A picnic under an umbrella on a beach of Orpheus Island",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "pearl-resort-vahine-private-island": {
+    "describe": {
+      "vh-01": {
+        "alt": "Vahine Island on the reef of the Taha'a lagoon, the mountains of Taha'a beyond, from the air",
+        "section": "exterior"
+      },
+      "vh-02": {
+        "alt": "A beach bungalow under the palms on the lagoon shore at Vahine Island",
+        "section": "pool"
+      },
+      "vh-03": {
+        "alt": "An overwater bungalow bedroom at Vahine Island",
+        "section": "rooms"
+      },
+      "vh-04": {
+        "alt": "Loungers on a bungalow deck above the lagoon at Vahine Island",
+        "section": "pool"
+      },
+      "vh-05": {
+        "alt": "Three overwater bungalows on the clear lagoon at Vahine Island from the air",
+        "section": "pool"
+      },
+      "vh-06": {
+        "alt": "A bungalow bedroom at Vahine Island",
+        "section": "rooms"
+      },
+      "vh-09": {
+        "alt": "The terrace and reflecting pool under the palms at Vahine Island",
+        "section": "pool"
+      },
+      "vh-10": {
+        "alt": "An overwater bungalow bedroom at Vahine Island",
+        "section": "rooms"
+      },
+      "vh-11": {
+        "alt": "A bungalow bedroom at Vahine Island",
+        "section": "rooms"
+      },
+      "vh-12": {
+        "alt": "Sunset over the lagoon from an overwater bungalow ladder at Vahine Island",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "pelorus-private-island": {
+    "describe": {
+      "p09": {
+        "alt": "Pelorus Private Island and its white sand spit from the air, a boat leaving the beach",
+        "section": "pool"
+      },
+      "p01": {
+        "alt": "The residence on its beach below the forest of Pelorus Island",
+        "section": "exterior"
+      },
+      "p06": {
+        "alt": "The infinity pool and loungers facing the sea at Pelorus Private Island",
+        "section": "pool"
+      },
+      "p05": {
+        "alt": "The open living and dining room at Pelorus Private Island",
+        "section": "rooms"
+      },
+      "p02": {
+        "alt": "Jet skis over the reef off the beach at Pelorus Private Island",
+        "section": "pool"
+      },
+      "p10": {
+        "alt": "A suite opening to a deck and the palms at Pelorus Private Island",
+        "section": "rooms"
+      },
+      "p08": {
+        "alt": "The chef in the open kitchen at Pelorus Private Island",
+        "section": "dining"
+      },
+      "p03": {
+        "alt": "A helicopter on the lawn above the beach and the turquoise shallows at Pelorus",
+        "section": "pool"
+      },
+      "p07": {
+        "alt": "A couple on a deck among palms above the sea at Pelorus Private Island",
+        "section": "exterior"
+      },
+      "p04": {
+        "alt": "A deck among the palms facing the sea at Pelorus Private Island",
+        "section": "exterior"
+      },
+      "p12": {
+        "alt": "A guest at the window of the living room facing the sea at Pelorus Private Island",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "qualia": {
+    "describe": {
+      "q01": {
+        "alt": "The pavilions of qualia among the trees on the northern tip of Hamilton Island from the sea",
+        "section": "exterior"
+      },
+      "q02": {
+        "alt": "A pavilion plunge pool above the Whitsunday Islands at qualia",
+        "section": "pool"
+      },
+      "q03": {
+        "alt": "A pavilion bedroom and bathroom at qualia",
+        "section": "rooms"
+      },
+      "q04": {
+        "alt": "A guest on a pavilion deck above the Whitsundays at qualia",
+        "section": "exterior"
+      },
+      "q05": {
+        "alt": "Bamboo against the sunset over the Whitsundays at qualia",
+        "section": "exterior"
+      },
+      "q06": {
+        "alt": "A pavilion bedroom opening to a deck and the islands at qualia",
+        "section": "rooms"
+      },
+      "q07": {
+        "alt": "A pavilion deck at sunset over the Whitsunday Islands at qualia",
+        "section": "rooms"
+      },
+      "q08": {
+        "alt": "A pavilion and pool among the palms and pandanus above the Whitsundays at qualia",
+        "section": "pool"
+      },
+      "q09": {
+        "alt": "The lap pool and pavilion among the trees at qualia",
+        "section": "pool"
+      },
+      "q10": {
+        "alt": "The beach club pool facing the islands at qualia",
+        "section": "pool"
+      },
+      "q11": {
+        "alt": "A couple at a table above the sea at qualia",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "radhoo-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "The pool and loungers among the palms at Radhoo Tulum at golden hour, the jungle beyond",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "Radhoo Tulum's thatched roofs and pool in the jungle at sunrise from the air",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A guest in a rooftop net hammock above the jungle at Radhoo Tulum",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The pool at Radhoo Tulum from directly above",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A room at Radhoo Tulum with chukum walls",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A room at Radhoo Tulum opening to the garden",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A canopy bed in a room at Radhoo Tulum",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A net hammock on a rooftop deck above the jungle at Radhoo Tulum",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A thatched deck and net hammock above the jungle at Radhoo Tulum",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "Breakfast beside the pool at Radhoo Tulum",
+        "section": "dining"
+      },
+      "g10": {
+        "alt": "A rainbow over the palms at Radhoo Tulum",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "siwa-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "A wellness pod at the spa at SIWA Tulum",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "Meditation in the rooftop shala at SIWA Tulum",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "Guests in the sauna at SIWA Tulum",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "A villa terrace among the jungle at SIWA Tulum",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A treatment room at the spa at SIWA Tulum",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "A treatment at the spa at SIWA Tulum",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "The pool and its pavilion in the jungle at SIWA Tulum from directly above",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "SIWA Tulum's villas and their pools among the jungle from directly above",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A yoga class at SIWA Tulum",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A yoga class at SIWA Tulum",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A guest in a yoga pose at SIWA Tulum",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "six-senses-fiji": {
+    "describe": {
+      "hero": {
+        "alt": "Six Senses Fiji from the air, its villas under the palms behind the white beach on Malolo",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A residence living and dining room at Six Senses Fiji",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A residence living room at Six Senses Fiji",
+        "section": "rooms"
+      },
+      "g1": {
+        "alt": "A residence and its pool beside the lagoon channel at Six Senses Fiji from the air",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "A swimmer underwater in a villa pool at Six Senses Fiji",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A villa bedroom under a thatched roof at Six Senses Fiji",
+        "section": "rooms"
+      },
+      "g11": {
+        "alt": "Villas, palms and a reef islet off the beach at Six Senses Fiji from the air",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "The restaurant at Six Senses Fiji",
+        "section": "dining"
+      },
+      "g8": {
+        "alt": "A small reef island in the turquoise water off Malolo from directly above",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "the-beach-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "The Beach Tulum above its white sand and surf from directly above",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A canopy bed at The Beach Tulum",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A rooftop hot tub and daybed facing the Caribbean at The Beach Tulum",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "Loungers under the palms on the beach at The Beach Tulum",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A saxophonist under string lights by the beach at night, The Beach Tulum",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "A daybed under a palm on the white sand at The Beach Tulum",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "Yoga in the thatched shala at The Beach Tulum",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "A room terrace among the jungle at The Beach Tulum",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "Glassware on a tray in a room at The Beach Tulum",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A couple by their plunge pool at The Beach Tulum",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A plunge pool in a walled patio at The Beach Tulum",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "the-retreat-at-blue-lagoon": {
+    "describe": {
+      "e6d98181c_f491d8460_68dea6de1fe6ebf33f0ef2f6_the-retreat-at-blue-lagoon-overview": {
+        "alt": "The Retreat at Blue Lagoon set into the snow-covered lava field, steam rising beyond",
+        "section": "pool"
+      },
+      "b9e2f87f9_60e09086d_68dea6de1fe6ebf33f0ef2f6_the-retreat-at-blue-lagoon-overview": {
+        "alt": "The Retreat's suites along the milky blue lagoon in the lava field in winter",
+        "section": "pool"
+      },
+      "4a9484c06_26eeff6e1_68dead5873aaa821543fcc85_the-retreat-at-blue-lagoon-exterior": {
+        "alt": "The lagoon waters steaming beside the Retreat's dark facade",
+        "section": "pool"
+      },
+      "b520d1737_3b81b6757_68dead77b1275f386ab5a8ba_the-retreat-at-blue-lagoon-Interior": {
+        "alt": "The lounge at The Retreat at Blue Lagoon",
+        "section": "dining"
+      },
+      "88456ed06_efa3f57e9_68dead77a3d92d224ca25970_the-retreat-at-blue-lagoon-yoga-room": {
+        "alt": "Yoga beside a window onto the lava and the lagoon at The Retreat",
+        "section": "experiences"
+      },
+      "8a0350dad_4a4621805_68dead77745b613e1c1b5835_lagoon-view-junior-suite-view": {
+        "alt": "A suite at The Retreat with a glass wall onto the blue lagoon and the lava",
+        "section": "rooms"
+      },
+      "c2c1715b7_b2e86bc04_68dead77c5ae49b2271dc727_the-retreat-at-blue-lagoon-Interior2": {
+        "alt": "The lounge looking out over the lagoon at The Retreat",
+        "section": "dining"
+      },
+      "f824a9dab_9332490b6_68dead771cf4bceebd716cd4_the-retreat-at-blue-lagoon-Exterior3": {
+        "alt": "The blue lagoon winding through the snow-covered lava toward The Retreat, steam on the horizon",
+        "section": "pool"
+      },
+      "9cf0d1fa2_f0f6cb8fe_68dea71092cfba19fb0e2276_the-retreat-lagoon-brand-video-image": {
+        "alt": "A bather in the private lagoon below the lava cliffs at The Retreat",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "turtle-island": {
+    "describe": {
+      "hero": {
+        "alt": "Turtle Island and its heart-shaped reef in the Yasawa group from the air",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "Two chairs under an umbrella on a point above the Blue Lagoon at Turtle Island",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A candlelit dinner on a pontoon on the lagoon at dusk, Turtle Island",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "A canopy bed in a villa at Turtle Island",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A villa living room under a thatched roof at Turtle Island",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A guest in a villa spa bath with windows onto the lagoon at Turtle Island",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "Horses running along a white sand beach at Turtle Island from the air",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "Breakfast on an outdoor bed among the palms at Turtle Island",
+        "section": "rooms"
+      },
+      "g12": {
+        "alt": "A thatched shelter above the lagoon at the top of stone steps, Turtle Island",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A seaplane at the beach on the Blue Lagoon at Turtle Island",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A kava ceremony at Turtle Island",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "vanira-lodge": {
+    "describe": {
+      "hero": {
+        "alt": "Vanira Lodge's bungalows scattered through the tropical garden on the hillside above Teahupo'o from the air",
+        "section": "exterior"
+      },
+      "vai-here": {
+        "alt": "A bungalow with a planted roof in the garden at Vanira Lodge",
+        "section": "exterior"
+      },
+      "vai-here-lagoon": {
+        "alt": "The pool under a timber pergola looking over the lagoon of Tahiti Iti at Vanira Lodge",
+        "section": "pool"
+      },
+      "vai-iti": {
+        "alt": "A path through the flowering garden at Vanira Lodge",
+        "section": "exterior"
+      },
+      "vai-ora": {
+        "alt": "A timber bungalow with a planted roof among the ferns at Vanira Lodge",
+        "section": "exterior"
+      },
+      "maara": {
+        "alt": "A thatched round bungalow among the palms and forest at Vanira Lodge",
+        "section": "exterior"
+      },
+      "kava": {
+        "alt": "The open-air restaurant under its bamboo roof at Vanira Lodge",
+        "section": "dining"
+      },
+      "restaurant": {
+        "alt": "A plate from the kitchen at Vanira Lodge",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "vomo-island": {
+    "describe": {
+      "hero": {
+        "alt": "VOMO's beach villas under the palms above the clear reef water, Fiji",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A residence pool and loungers among the palms at VOMO",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A residence living room opening to the garden at VOMO",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A villa bedroom at VOMO",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A thatched villa verandah above the beach at VOMO",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A residence terrace and pool at VOMO",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "A beachfront residence and its pool beside the white sand at VOMO from directly above",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A residence and its pool and fire pit lit at dusk at VOMO",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A pool among palms at VOMO from above",
+        "section": "pool"
+      },
+      "g11": {
+        "alt": "A floor plan of a two bedroom family villa at VOMO",
+        "section": "rooms"
+      },
+      "g12": {
+        "alt": "A villa bedroom at VOMO",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "xela-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "A guest in a plunge pool facing the palms and the Caribbean at XELA Tulum",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A suite with a clay-plastered wall at XELA Tulum",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A suite opening to a balcony and the palms at XELA Tulum",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A suite with a woven hammock on the wall at XELA Tulum",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A suite sitting room at XELA Tulum",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A suite opening to a terrace and the sea at XELA Tulum",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A suite bed facing a balcony among the palms at XELA Tulum",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A suite opening to a terrace at XELA Tulum",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A suite with views over the palms to the sea at XELA Tulum",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A suite at XELA Tulum",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "A suite opening to a balcony among the palms at XELA Tulum",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "yasawa-island-resort": {
+    "describe": {
+      "hero": {
+        "alt": "Yasawa Island's long white beach and green hills at dawn from the air, Fiji",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A white sand spit between two turquoise bays on Yasawa Island from directly above",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "A thatched bure among the palms above the beach at Yasawa Island Resort",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "Yasawa Island, its beach, reef and grassy hills from the air",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A thatched bure under the palms behind the white beach at Yasawa Island Resort",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "A bure bedroom at Yasawa Island Resort",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A bure living room at Yasawa Island Resort",
+        "section": "rooms"
+      },
+      "g15": {
+        "alt": "A guest reading on a canopy bed at Yasawa Island Resort",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "The sun rising over the beach and hills of Yasawa Island",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "The restaurant terrace at sunset by the beach at Yasawa Island Resort",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "A lobster and seafood platter at Yasawa Island Resort",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "beckon-huka-lodge": {
+    "describe": {
+      "van-heeren-cottage-river-twilight": {
+        "alt": "Huka Lodge above the rushing turquoise water of the Waikato River near Taupō",
+        "section": "exterior"
+      },
+      "alan-pye-cottage-river": {
+        "alt": "The lodge across the clear Waikato River, its lawns under willows and pines",
+        "section": "exterior"
+      },
+      "alan-pye-cottage-pool-deck": {
+        "alt": "An infinity pool and deck facing the lawns and the river at Huka Lodge",
+        "section": "pool"
+      },
+      "van-heeren-cottage-breakfast-deck": {
+        "alt": "A breakfast table on a garden terrace above the river at Huka Lodge",
+        "section": "exterior"
+      },
+      "van-heeren-cottage-pool-morning": {
+        "alt": "A private pool among tree ferns above the Waikato rapids at Huka Lodge",
+        "section": "pool"
+      },
+      "fireplace-suite-bedroom": {
+        "alt": "A suite at Huka Lodge with a canopy bed and doors to the garden",
+        "section": "rooms"
+      },
+      "fireplace-suite-living": {
+        "alt": "A suite sitting room at Huka Lodge with a fire and a view to the garden",
+        "section": "rooms"
+      },
+      "lodge-suite-daybed": {
+        "alt": "A daybed by the garden doors at Huka Lodge",
+        "section": "rooms"
+      },
+      "lodge-suite-bath-ferns": {
+        "alt": "A bath beneath shuttered windows onto the ferns at Huka Lodge",
+        "section": "rooms"
+      },
+      "alan-pye-cottage-lounge": {
+        "alt": "The great room at Huka Lodge, its fireplace and long table",
+        "section": "dining"
+      },
+      "alan-pye-cottage-fireplace-deck": {
+        "alt": "Garden steps through the hedges and trees at Huka Lodge",
+        "section": "exterior"
+      },
+      "van-heeren-cottage-living": {
+        "alt": "The vaulted lodge room at Huka Lodge with a fire and long table",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "beckon-longitude-131": {
+    "describe": {
+      "dune-top-aerial": {
+        "alt": "The tented pavilions of Longitude 131 in the red dunes, Uluru on the horizon, from the air",
+        "section": "exterior"
+      },
+      "dune-pavilion-deck": {
+        "alt": "A pavilion deck with a daybed and plunge pool facing Uluru at Longitude 131",
+        "section": "exterior"
+      },
+      "dune-pavilion-exterior": {
+        "alt": "A tented pavilion at dusk on the red sand at Longitude 131",
+        "section": "exterior"
+      },
+      "premium-view-feature": {
+        "alt": "A pavilion at Longitude 131 opening to its deck and the desert",
+        "section": "rooms"
+      },
+      "luxury-tent-view": {
+        "alt": "A deck lounge facing Uluru at sunset at Longitude 131",
+        "section": "exterior"
+      },
+      "luxury-tent-interior": {
+        "alt": "A pavilion bedroom at Longitude 131 facing Uluru through the glass",
+        "section": "rooms"
+      },
+      "premium-view-bedroom": {
+        "alt": "A tented pavilion bedroom at Longitude 131",
+        "section": "rooms"
+      },
+      "dune-pavilion-bedroom": {
+        "alt": "A pavilion bedroom at Longitude 131 opening to the desert",
+        "section": "rooms"
+      },
+      "dune-pavilion-bathroom": {
+        "alt": "A bathroom with windows onto the desert at Longitude 131",
+        "section": "rooms"
+      },
+      "luxury-tent": {
+        "alt": "A tented bedroom at Longitude 131",
+        "section": "rooms"
+      },
+      "premium-view-terrace": {
+        "alt": "A pavilion at Longitude 131 opening to its deck, Uluru beyond",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "beckon-silky-oaks-lodge": {
+    "describe": {
+      "billabong-deck-firepit": {
+        "alt": "A fire on a treehouse deck in the rainforest at Silky Oaks Lodge",
+        "section": "exterior"
+      },
+      "daintree-pavilion-deck": {
+        "alt": "The pool and lodge lit at dusk in the rainforest at Silky Oaks Lodge",
+        "section": "pool"
+      },
+      "treehouse-premium-tub": {
+        "alt": "A stone bath on a deck in the canopy at Silky Oaks Lodge",
+        "section": "exterior"
+      },
+      "daintree-pavilion-lounge": {
+        "alt": "A treehouse living room open to the rainforest at Silky Oaks Lodge",
+        "section": "rooms"
+      },
+      "treehouse-retreat-tub": {
+        "alt": "An outdoor stone bath among the ferns of the Daintree at Silky Oaks Lodge",
+        "section": "exterior"
+      },
+      "riverhouse-hammock": {
+        "alt": "A hammock on a balcony in the rainforest at Silky Oaks Lodge",
+        "section": "exterior"
+      },
+      "billabong-hammock-deck": {
+        "alt": "A treehouse deck with a hammock in the forest at Silky Oaks Lodge",
+        "section": "exterior"
+      },
+      "treehouse-premium-deck": {
+        "alt": "A screened treehouse deck in the rainforest at Silky Oaks Lodge",
+        "section": "exterior"
+      },
+      "rainforest-retreat-bedroom": {
+        "alt": "A treehouse bedroom opening to a balcony in the forest at Silky Oaks Lodge",
+        "section": "rooms"
+      },
+      "riverhouse-tub": {
+        "alt": "A bathroom opening to an outdoor tub in the forest at Silky Oaks Lodge",
+        "section": "rooms"
+      },
+      "daintree-pavilion-bedroom": {
+        "alt": "A treehouse suite at Silky Oaks Lodge among the trees",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "beckon-southern-ocean-lodge": {
+    "describe": {
+      "baillie-pavilion-clifftop": {
+        "alt": "Southern Ocean Lodge on the clifftop above the Southern Ocean at sunrise, Kangaroo Island",
+        "section": "exterior"
+      },
+      "osprey-terrace-pool": {
+        "alt": "A plunge pool and loungers on a suite terrace above the Southern Ocean",
+        "section": "pool"
+      },
+      "baillie-east-lounge": {
+        "alt": "A suite lounge with windows onto the ocean and the coast at Southern Ocean Lodge",
+        "section": "rooms"
+      },
+      "remarkable-sunken-lounge": {
+        "alt": "A sunken lounge and fireplace at Southern Ocean Lodge",
+        "section": "rooms"
+      },
+      "baillie-east-deck-pool": {
+        "alt": "A plunge pool on a deck above the coastal heath and the sea at Southern Ocean Lodge",
+        "section": "pool"
+      },
+      "flinders-lounge-terrace": {
+        "alt": "A suite lounge opening to the coast at Southern Ocean Lodge",
+        "section": "rooms"
+      },
+      "baillie-pavilion-lounge": {
+        "alt": "The great room at Southern Ocean Lodge with its fire and ocean views",
+        "section": "rooms"
+      },
+      "baillie-pavilion-bedroom": {
+        "alt": "A suite bedroom facing the coast at Southern Ocean Lodge",
+        "section": "rooms"
+      },
+      "flinders-bedroom": {
+        "alt": "A suite bedroom with windows onto the sea at Southern Ocean Lodge",
+        "section": "rooms"
+      },
+      "remarkable-bathroom": {
+        "alt": "A bathroom with a tub facing the sea at Southern Ocean Lodge",
+        "section": "rooms"
+      },
+      "osprey-bedroom": {
+        "alt": "A suite bedroom at Southern Ocean Lodge",
+        "section": "rooms"
+      },
+      "flinders-tub": {
+        "alt": "A bath being filled at Southern Ocean Lodge",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "beckon-the-louise": {
+    "describe": {
+      "stonewell-bedroom-vineyard": {
+        "alt": "A bedroom window onto the vineyards at The Louise",
+        "section": "rooms"
+      },
+      "bethany-desk-vineyard": {
+        "alt": "A suite with doors to a terrace and the vines at The Louise",
+        "section": "rooms"
+      },
+      "marananga-fireplace": {
+        "alt": "A suite bedroom with a fire at The Louise",
+        "section": "rooms"
+      },
+      "bethany-terrace-sunset": {
+        "alt": "Two chairs and a glass of Barossa wine on a terrace at sunset over the vineyards at The Louise",
+        "section": "exterior"
+      },
+      "marananga-terrace-sunset": {
+        "alt": "A terrace above the vines of the Barossa Valley in the evening sun at The Louise",
+        "section": "exterior"
+      },
+      "stonewell-courtyard": {
+        "alt": "A sandstone courtyard terrace at The Louise",
+        "section": "exterior"
+      },
+      "bethany-bedroom": {
+        "alt": "A suite bedroom at The Louise",
+        "section": "rooms"
+      },
+      "marananga-ensuite": {
+        "alt": "A bathroom with a spa bath at The Louise",
+        "section": "rooms"
+      },
+      "stonewell-lounge": {
+        "alt": "A suite sitting room at The Louise",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "belmond-cap-juluca": {
+    "describe": {
+      "hero": {
+        "alt": "Two guests carrying a surfboard along the white sand of Maundays Bay at Cap Juluca",
+        "section": "pool"
+      },
+      "maundays-bay-beach": {
+        "alt": "A guest walking the beach below the white domed villas of Cap Juluca",
+        "section": "pool"
+      },
+      "flamboyant-tree-villa-roofs": {
+        "alt": "Palm fronds against a clear Anguilla sky",
+        "section": "exterior"
+      },
+      "private-roof-terrace": {
+        "alt": "A white villa terrace above the turquoise water of Maundays Bay at Cap Juluca",
+        "section": "pool"
+      },
+      "five-bedroom-pool-villa-pool": {
+        "alt": "The pool and white umbrellas in a villa courtyard at Cap Juluca",
+        "section": "pool"
+      },
+      "pimms-seafront-terrace": {
+        "alt": "Pimms, the seafront terrace restaurant under white arches at Cap Juluca",
+        "section": "dining"
+      },
+      "the-cap-shack-beach": {
+        "alt": "Lunch at the beach bar on the sand at Cap Juluca",
+        "section": "dining"
+      },
+      "uchu-jungle-terrace": {
+        "alt": "The terrace lounge under the columns at Cap Juluca",
+        "section": "dining"
+      },
+      "cips-by-cipriani-sea-view-dinner": {
+        "alt": "Lunch and cocktails by the water at Cap Juluca",
+        "section": "dining"
+      },
+      "spa-pool": {
+        "alt": "A guest in the pool at Cap Juluca",
+        "section": "pool"
+      },
+      "beachfront-room-terrace-view": {
+        "alt": "A twin room opening to a terrace with sea views at Cap Juluca",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "casa-maya-kaan": {
+    "describe": {
+      "hero": {
+        "alt": "A long table laid on cushions under the palms by the sea at Casa Maya Ka'an",
+        "section": "dining"
+      },
+      "g1": {
+        "alt": "A canopy bed at Casa Maya Ka'an",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A guest on a canopy bed in a suite at Casa Maya Ka'an",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "Shaded daybeds on the white sand under the palms at Casa Maya Ka'an",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A canvas bell tent set with cushions at Casa Maya Ka'an",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "The open living and dining room of the house at Casa Maya Ka'an",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "The living room opening to the deck and garden at Casa Maya Ka'an",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "A couple on the stone steps of the house at Casa Maya Ka'an",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "The private chef and guests in the kitchen at Casa Maya Ka'an",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "Orchids on the table at Casa Maya Ka'an",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "Tea poured in a quiet ceremony at Casa Maya Ka'an",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "casa-palopo": {
+    "describe": {
+      "hero": {
+        "alt": "The blue and yellow house of Casa Palopó above Lake Atitlán, its name across the image",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The green slopes falling to Lake Atitlán below Casa Palopó",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A blue sofa in a suite at Casa Palopó",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "The dining room of the villa at Casa Palopó",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A blue bedroom at Casa Palopó opening to the garden",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A suite at Casa Palopó opening to a terrace over Lake Atitlán",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A suite bedroom at Casa Palopó with windows onto the trees",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A terrace lounge with cacti looking over Lake Atitlán to the volcanoes",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A red bedroom at Casa Palopó with Maya textiles",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A yellow bedroom at Casa Palopó hung with a painting",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "Two chairs on the terrace facing Lake Atitlán and its volcanoes at Casa Palopó",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "casali-di-casole": {
+    "describe": {
+      "c01": {
+        "alt": "Stone farmhouses among the woods and hills of the Casali di Casole estate from the air, Tuscany",
+        "section": "exterior"
+      },
+      "c06": {
+        "alt": "The hill town of Casole d'Elsa above golden fields and the estate road at sunset from the air",
+        "section": "exterior"
+      },
+      "c04": {
+        "alt": "A farmhouse pool and loggia on the lawn at Casali di Casole",
+        "section": "pool"
+      },
+      "c03": {
+        "alt": "A restored stone farmhouse among cypresses and gardens at Casali di Casole, the Tuscan hills beyond",
+        "section": "exterior"
+      },
+      "c07": {
+        "alt": "A farmhouse and its pool lit at dusk at Casali di Casole",
+        "section": "pool"
+      },
+      "c18": {
+        "alt": "An infinity pool above the Tuscan valleys at Casali di Casole",
+        "section": "pool"
+      },
+      "c22": {
+        "alt": "Lunch on a farmhouse terrace at Casali di Casole",
+        "section": "dining"
+      },
+      "c21": {
+        "alt": "A cooking class in a farmhouse kitchen at Casali di Casole",
+        "section": "experiences"
+      },
+      "c19": {
+        "alt": "A truffle hunt with dogs in the oak woods of the estate",
+        "section": "experiences"
+      },
+      "c08": {
+        "alt": "A farmhouse infinity pool facing the wooded hills at Casali di Casole",
+        "section": "pool"
+      },
+      "c16": {
+        "alt": "A farmhouse living room under beams and stone at Casali di Casole",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "chable-maroma": {
+    "describe": {
+      "hero": {
+        "alt": "White sand and palms along Maroma Beach at Chablé Maroma",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "Chablé Maroma from the air, its villas in the jungle behind the Caribbean beach",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A sandy path through the jungle at Chablé Maroma",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The long pool running to the beach and the Caribbean at Chablé Maroma",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A treetop villa terrace and plunge pool at Chablé Maroma",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "A villa terrace and plunge pool facing the jungle at Chablé Maroma",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A villa daybed and plunge pool under a thatched roof at Chablé Maroma",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A villa terrace and pool at Chablé Maroma",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A hot tub among the palms at Chablé Maroma",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "A Maya conch blown at the water ceremony at Chablé Maroma",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "The restaurant with its tiled floor at Chablé Maroma",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "chable-yucatan": {
+    "describe": {
+      "hero": {
+        "alt": "A casita and its private pool beside an old stone wall at Chablé Yucatán",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A casita bedroom open to the forest at Chablé Yucatán",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A casita bedroom and sitting room at Chablé Yucatán",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "The restaurant under the trees at Chablé Yucatán",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "Tables under umbrellas among the palms at Chablé Yucatán",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "A table on the deck beside the hacienda ruins at dusk, Chablé Yucatán",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "The glass-walled restaurant among the trees at Chablé Yucatán at night",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "The pool beside the old hacienda walls at Chablé Yucatán",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A villa living and dining room at Chablé Yucatán",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A villa terrace and pool at Chablé Yucatán",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "The curving pool among the palms at Chablé Yucatán from directly above",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "da-licenca": {
+    "describe": {
+      "hero": {
+        "alt": "The white house of Dá Licença at dusk among the olive trees of the Alentejo",
+        "section": "exterior"
+      },
+      "grounds": {
+        "alt": "A suite with a stone bath at Dá Licença",
+        "section": "rooms"
+      },
+      "main-house": {
+        "alt": "A suite bedroom at Dá Licença",
+        "section": "rooms"
+      },
+      "suite-the-rock": {
+        "alt": "A bedroom in candlelight at Dá Licença",
+        "section": "rooms"
+      },
+      "suite-the-loft": {
+        "alt": "A studio opening to a terrace over the olive hills at Dá Licença",
+        "section": "rooms"
+      },
+      "suite-my-pool": {
+        "alt": "A pool below a white house and its parasol at Dá Licença",
+        "section": "pool"
+      },
+      "suite-sky-pool": {
+        "alt": "A bedroom in white at Dá Licença",
+        "section": "rooms"
+      },
+      "suite-sunset": {
+        "alt": "A suite sitting area at Dá Licença",
+        "section": "rooms"
+      },
+      "suite-moon-cube": {
+        "alt": "A bedroom opening to a terrace and the olive groves at Dá Licença",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "dolphin-island": {
+    "describe": {
+      "hero": {
+        "alt": "Dolphin Island and its jetty in the clear water off Viti Levu, Fiji",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "Dolphin Island across the turquoise shallows of the lagoon",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "Loungers in the shade of leaning palms on the beach at Dolphin Island",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "The lodge living room under its carved beams at Dolphin Island",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "The infinity pool and deck lit with lanterns at dusk, Dolphin Island",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A sitting room with shell-lined shelves at Dolphin Island",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "A thatched guest bure under the palms at Dolphin Island at dusk",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A guest bure bedroom opening to the lawn and the sea at Dolphin Island",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A bathroom with a freestanding bath at Dolphin Island",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "The open-air Hilltop Bure at Dolphin Island, lit by lanterns",
+        "section": "rooms"
+      },
+      "g12": {
+        "alt": "A thatched shelter at the end of the jetty at Dolphin Island, the hills of Viti Levu beyond",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "ecoventura-evolve-yacht": {
+    "describe": {
+      "4fc61043f_8d7886f98_68e3f571b44a1e96aed29153_origin-theory-evolve-ship": {
+        "alt": "The Ecoventura yacht at anchor in the Galápagos",
+        "section": "exterior"
+      },
+      "85e5be510_6360a9be8_68e3f571b44a1e96aed29153_origin-theory-evolve-ship": {
+        "alt": "The yacht below Kicker Rock at sunset, San Cristóbal, Galápagos",
+        "section": "exterior"
+      },
+      "aadcba0c7_903c3a5d6_68e3f7cd5f023c08a4769744_ecoventura-fleet-deluxe-stateroom": {
+        "alt": "A cabin with a picture window onto the sea",
+        "section": "rooms"
+      },
+      "8f2bf16a5_fbd93b556_68e3f843b32e34906c108ecc_ecoventura-fleet-outdoorbar": {
+        "alt": "The bar and daybeds on the upper deck, a Galápagos island beyond",
+        "section": "exterior"
+      },
+      "0823bca79_26019dc43_68e3f84369c5907b98d9dd9c_ecoventura-fleet-patio": {
+        "alt": "Tables on the open deck facing the volcanic shore of a Galápagos island",
+        "section": "dining"
+      },
+      "d178e79f9_1d4f1db65_68e3f8438b318f4bec35d75b_ecoventura-fleet-dining": {
+        "alt": "The dining room with windows onto the sea",
+        "section": "dining"
+      },
+      "015445858_ca90fe805_68e3f84369c5907b98d9dd8f_ecoventura-fleet-amenities": {
+        "alt": "The lounge aboard with windows onto the islands",
+        "section": "rooms"
+      },
+      "ae4a052cd_be6c9f932_68e3f843bf6f11775d207369_ecoventura-fleet-hospitality": {
+        "alt": "The lounge aboard the yacht",
+        "section": "rooms"
+      },
+      "58adb3eb9_770514f95_68e3f843dadb24c060d3c55b_ecoventura-s-origin-theory-smalescale": {
+        "alt": "Guests heading ashore by panga from the yacht in the Galápagos",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "ecoventura-origin-yacht": {
+    "describe": {
+      "5bbb2e13a_2cf03be71_68e3fcb2e27622d8f8dc3929_origin-theory-origin-ship": {
+        "alt": "The Ecoventura yacht at anchor in the Galápagos",
+        "section": "exterior"
+      },
+      "8e47afc0e_cd2b0e271_68e3f571b44a1e96aed29153_origin-theory-evolve-ship": {
+        "alt": "The yacht below Kicker Rock at sunset, San Cristóbal, Galápagos",
+        "section": "exterior"
+      },
+      "a58d59f10_8e0171a63_68e3f7cd5f023c08a4769744_ecoventura-fleet-deluxe-stateroom": {
+        "alt": "A cabin with a picture window onto the sea",
+        "section": "rooms"
+      },
+      "2bae040b7_3cfb8d87e_68e3f843b32e34906c108ecc_ecoventura-fleet-outdoorbar": {
+        "alt": "The bar and daybeds on the upper deck, a Galápagos island beyond",
+        "section": "exterior"
+      },
+      "e3abc4790_9e25c272d_68e3f84369c5907b98d9dd9c_ecoventura-fleet-patio": {
+        "alt": "Tables on the open deck facing the volcanic shore of a Galápagos island",
+        "section": "dining"
+      },
+      "6b79faed5_1555c55aa_68e3f8438b318f4bec35d75b_ecoventura-fleet-dining": {
+        "alt": "The dining room with windows onto the sea",
+        "section": "dining"
+      },
+      "87f89743a_252258e56_68e3f84369c5907b98d9dd8f_ecoventura-fleet-amenities": {
+        "alt": "The lounge aboard with windows onto the islands",
+        "section": "rooms"
+      },
+      "5741d73d3_935a0e364_68e3f843bf6f11775d207369_ecoventura-fleet-hospitality": {
+        "alt": "The lounge aboard the yacht",
+        "section": "rooms"
+      },
+      "bcf655ef0_fcf0b55f5_68e3f843dadb24c060d3c55b_ecoventura-s-origin-theory-smalescale": {
+        "alt": "Guests heading ashore by panga from the yacht in the Galápagos",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "ecoventura-theory-yacht": {
+    "describe": {
+      "a54bf8e72_4cca021a0_68e3f92a48dc333199f5c0ba_ecoventura-s-origin-theory-ship": {
+        "alt": "The Ecoventura yacht at anchor in the Galápagos",
+        "section": "exterior"
+      },
+      "80a4329ae_75022ab7b_68e3f571b44a1e96aed29153_origin-theory-evolve-ship": {
+        "alt": "The yacht below Kicker Rock at sunset, San Cristóbal, Galápagos",
+        "section": "exterior"
+      },
+      "c86c23b69_9bab1d15b_68e3f7cd5f023c08a4769744_ecoventura-fleet-deluxe-stateroom": {
+        "alt": "A cabin with a picture window onto the sea",
+        "section": "rooms"
+      },
+      "ae8e47878_1c9f5b72e_68e3f843b32e34906c108ecc_ecoventura-fleet-outdoorbar": {
+        "alt": "The bar and daybeds on the upper deck, a Galápagos island beyond",
+        "section": "exterior"
+      },
+      "9519c2a5e_0037a4f22_68e3f84369c5907b98d9dd9c_ecoventura-fleet-patio": {
+        "alt": "Tables on the open deck facing the volcanic shore of a Galápagos island",
+        "section": "dining"
+      },
+      "cbf7011ef_c96377aa8_68e3f8438b318f4bec35d75b_ecoventura-fleet-dining": {
+        "alt": "The dining room with windows onto the sea",
+        "section": "dining"
+      },
+      "10191040f_8e69d6234_68e3f84369c5907b98d9dd8f_ecoventura-fleet-amenities": {
+        "alt": "The lounge aboard with windows onto the islands",
+        "section": "rooms"
+      },
+      "cb86cca91_fba89fbc2_68e3f843bf6f11775d207369_ecoventura-fleet-hospitality": {
+        "alt": "The lounge aboard the yacht",
+        "section": "rooms"
+      },
+      "dec788d03_6e8a766f2_68e3f843dadb24c060d3c55b_ecoventura-s-origin-theory-smalescale": {
+        "alt": "Guests heading ashore by panga from the yacht in the Galápagos",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "explora-el-chalten": {
+    "describe": {
+      "e42769cc7_b397559a4_6a10e7cfa6216cf86848d794_arq": {
+        "alt": "The dark timber volumes of Explora El Chaltén against the sky",
+        "section": "exterior"
+      },
+      "e71fa8893_00b9a594a_6a21a1926143dc499094b38c_SacredValleyHotel101": {
+        "alt": "The lodge's timber facade at Explora El Chaltén",
+        "section": "exterior"
+      },
+      "afaa0cac3_8a36f10a4_6a21a192f0c50f6af06fa61f_SacredValleyHotel92": {
+        "alt": "Explora El Chaltén on the steppe below the snow peaks of Patagonia",
+        "section": "exterior"
+      },
+      "b3387e894_baa8ed301_6a21a18ecc04eb190db47ffa_SacredValleyHotel91": {
+        "alt": "A room at Explora El Chaltén with windows onto the forest",
+        "section": "rooms"
+      },
+      "794fd6942_08ce82e83_6a21a18eb3ffe320b1ad2288_SacredValleyHotel90": {
+        "alt": "Explora El Chaltén above a braided river in the forest below the Fitz Roy massif, from the air",
+        "section": "exterior"
+      },
+      "81f92125e_cf3b2906b_6a21a18edba6dba4e216f37a_SacredValleyHotel89": {
+        "alt": "The lounge and dining room at Explora El Chaltén, its windows onto the mountains",
+        "section": "dining"
+      },
+      "667613b9f_87197f680_6a21a18ef0c50f6af06fa4c7_SacredValleyHotel87": {
+        "alt": "A room at Explora El Chaltén with windows onto the forest and peaks",
+        "section": "rooms"
+      },
+      "87683368f_a89feb99b_6a21a18d1bd373d0cac55e27_SacredValleyHotel88": {
+        "alt": "A suite at Explora El Chaltén looking out to the mountains",
+        "section": "rooms"
+      },
+      "bb61e7ed8_595e82ddf_6a21a18dcc04eb190db47eff_SacredValleyHotel23": {
+        "alt": "A walkway to the lodge below a granite peak at dusk, Explora El Chaltén",
+        "section": "exterior"
+      },
+      "93cfbbe51_f2293e713_6a21a18d6e4e047bd33a7823_SacredValleyHotel6": {
+        "alt": "The bar at Explora El Chaltén",
+        "section": "dining"
+      },
+      "503a7a45f_4a018ca93_6a21a18cfa5accb4a521cae5_SacredValleyHotel4": {
+        "alt": "The library lounge at Explora El Chaltén",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "holistika": {
+    "describe": {
+      "hero": {
+        "alt": "A room at Holistika with a hammock and tiled floor",
+        "section": "rooms"
+      },
+      "g1": {
+        "alt": "A room at Holistika with a hammock",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "Two guests in a yoga pose in a round window onto the jungle at Holistika",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "A twin room at Holistika with a hammock",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "The yoga hall at Holistika with its painted floor",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "The Dome at Holistika, its painted floor and mosaic pillars",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "Partner yoga in the Dome at Holistika",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "A guest painting in the art studio at Holistika",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "The pool at Holistika in the jungle from directly above",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "Guests in a hammock over the pool at Holistika from above",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A guest at Holistika",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "hotel-bardo": {
+    "describe": {
+      "hero": {
+        "alt": "A villa and its plunge pool lit at dusk in the jungle at Hotel Bardo, Tulum",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A fire pit among loungers in the jungle at Hotel Bardo",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "Tacos at Milum, the restaurant at Hotel Bardo",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "Loungers among the jungle gardens at Hotel Bardo",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A villa bedroom beside its pool at Hotel Bardo",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "The pool lit by lanterns at night in the jungle at Hotel Bardo",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A massage at The Spa 13 at Hotel Bardo",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "The pool and loungers among the trees at Hotel Bardo",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "The temazcal sweat lodge in the garden at Hotel Bardo",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "The jungle pool and loungers at Hotel Bardo",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A singing bowl at a sound healing session at Hotel Bardo",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "hotel-panamera": {
+    "describe": {
+      "hero": {
+        "alt": "Striped umbrellas and loungers on the beach at Hotel Panamera, Tulum",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A guest on a striped lounger at Hotel Panamera",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A room at Hotel Panamera",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "The checkered courtyard pool among palms at Hotel Panamera",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "The restaurant terrace at Hotel Panamera",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "A room at Hotel Panamera with a window seat",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "Striped loungers under fringed umbrellas on the sand at Hotel Panamera",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A balcony at Hotel Panamera",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A room at Hotel Panamera",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A room at Hotel Panamera",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "A daybed beside the courtyard pool at Hotel Panamera",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "jean-michel-cousteau-resort": {
+    "describe": {
+      "hero": {
+        "alt": "The Jean-Michel Cousteau Resort on its peninsula in Savusavu Bay from the air, Vanua Levu, Fiji",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The resort's jetty and bures above the reef in Savusavu Bay from the air",
+        "section": "exterior"
+      },
+      "g17": {
+        "alt": "Thatched bures under the palms at the Jean-Michel Cousteau Resort",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "A daybed under a thatched shelter on the lawn by the bay at dusk",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A bure bedroom with a canopy bed at the Jean-Michel Cousteau Resort",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A villa and its infinity pool lit at dusk at the Jean-Michel Cousteau Resort",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A bure bathroom at the Jean-Michel Cousteau Resort",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A plunge pool on a villa deck facing the bay at sunset",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A couple dining on the jetty over the bay at the Jean-Michel Cousteau Resort",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "A diver over the coral reef of Savusavu Bay",
+        "section": "experiences"
+      },
+      "g4": {
+        "alt": "Soft corals and reef fish in the waters off Vanua Levu",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "kokomo-private-island": {
+    "describe": {
+      "hero": {
+        "alt": "Kokomo Private Island from the air, its white beach and reef in the Great Astrolabe Lagoon, Kadavu",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A hilltop residence and its pool above the sea at Kokomo",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "A residence living room with windows onto the sea at Kokomo",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "The beachfront villas of Kokomo along the white sand from above",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A residence bedroom at Kokomo",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A beach villa pool above the white sand and turquoise water at Kokomo",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A villa pool beside the beach at Kokomo",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A villa bedroom at Kokomo",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A freediver beside a manta ray on the Great Astrolabe Reef",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A snorkeller over the coral in clear water off Kokomo",
+        "section": "experiences"
+      },
+      "g18": {
+        "alt": "The Great Astrolabe Reef and the islands of Kadavu from the air",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "la-valise-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "A bed on a timber deck facing the palms and the Caribbean at La Valise Tulum",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The thatched living room of the master suite at La Valise Tulum",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A suite bedroom opening to a balcony over the palms at La Valise Tulum",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A suite bedroom with doors onto the palms at La Valise Tulum",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A deck bed among the palms above the beach at La Valise Tulum",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "A suite bathroom under a thatched roof at La Valise Tulum",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A suite with a canopy bed under a thatched roof at La Valise Tulum",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "A canopy bed in a suite at La Valise Tulum",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A thatched suite at La Valise Tulum with windows onto the palms",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "A loft suite under a thatched roof at La Valise Tulum",
+        "section": "rooms"
+      },
+      "g10": {
+        "alt": "A suite opening to its terrace and the palms at La Valise Tulum",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "laucala": {
+    "describe": {
+      "hero": {
+        "alt": "The lagoon pool winding among the palms to the sea at Laucala, Fiji",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "The lagoon pool and beach under the palms at Laucala from the air",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "Laucala Island and its reef among the green islands of Fiji from the air",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "Pools, lawns and a glass bridge among the palms at Laucala",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "A villa pool among thatched bures and red flowers at Laucala",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A thatched villa in the palm forest at Laucala from the air",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A glass-sided infinity pool in the gardens at Laucala",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A villa pool and thatched bure among the palms at Laucala",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A shallow lagoon pool and daybed in the gardens at Laucala",
+        "section": "pool"
+      },
+      "g12": {
+        "alt": "Villas on a forested headland above the reef at Laucala from the air",
+        "section": "exterior"
+      },
+      "g13": {
+        "alt": "The golf course between the forest and the lagoon at Laucala from the air",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "le-tahaa": {
+    "describe": {
+      "820c47752_01171d195_68dd6194c1307bfa2b873d83_aerial-view-le-taha-a": {
+        "alt": "Le Taha'a's overwater bungalows on the lagoon, Bora Bora on the horizon, from the air",
+        "section": "pool"
+      },
+      "8500002e3_bf2114718_68dd6389968486880f6d4d0d_aerial-view-coral-garden": {
+        "alt": "Motu Tautau and its white sand in the turquoise Taha'a lagoon from the air",
+        "section": "pool"
+      },
+      "2d0de68a1_ef6427de0_68dd63192dfa2f40298fd5a5_manuia-bar-pool-bar": {
+        "alt": "The swim-up bar and pool under the palms at Le Taha'a",
+        "section": "pool"
+      },
+      "1a31464f1_724acd4bb_68dd6395a1a52bbeb8bffb94_beach-villa-with-pool": {
+        "alt": "A beach villa and its plunge pool under a thatched roof at Le Taha'a",
+        "section": "pool"
+      },
+      "43ea69ed5_ea2e431d9_68dd63955ea4e91998b648ef_tavai-spa": {
+        "alt": "Thatched bungalows reflected in the still lagoon at Le Taha'a",
+        "section": "pool"
+      },
+      "385249db5_6b44a1902_68dd63958227f4aa9525eccb_tiki-bar": {
+        "alt": "The bar under its thatched roof at Le Taha'a",
+        "section": "dining"
+      },
+      "eda075f02_1f6ec3eb5_68dd639566e5d9cb36be9141_titiraina-restaurant": {
+        "alt": "The restaurant pavilion at Le Taha'a",
+        "section": "dining"
+      },
+      "0fa0e7970_0e3fa06e0_68dd63956ea645920caa20d0_reception-le-taha-a-by": {
+        "alt": "A pandanus pavilion lit at night among the trees at Le Taha'a",
+        "section": "exterior"
+      },
+      "e83198ef1_9ca134d4f_68dd62aa59bf2be06164cd88_royal-beach-villa-with": {
+        "alt": "A beach villa and pool among the palms at Le Taha'a from above",
+        "section": "pool"
+      },
+      "1514521d7_344baab70_68dd6395443be8fbc9e688a2_overwater-suite_20_1_": {
+        "alt": "Overwater bungalows on the still lagoon at dusk, Le Taha'a",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "likuliku-lagoon-resort": {
+    "describe": {
+      "hero": {
+        "alt": "Malolo Island and its fringing reef in the Mamanuca group from the air",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "Likuliku Lagoon Resort and its overwater bures on the lagoon off Malolo from the air",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "An overwater bure at Likuliku with a glass floor panel onto the lagoon",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "The overwater bures of Likuliku standing over the clear lagoon",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A bure bedroom at Likuliku",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A beachfront bure and its plunge pool facing the lagoon at Likuliku",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "The infinity pool meeting the lagoon and the islands at Likuliku",
+        "section": "pool"
+      },
+      "g10": {
+        "alt": "A bure bathroom with a round tub at Likuliku",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "The thatched restaurant at Likuliku lit at dusk",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "The jetty to the overwater bures at dusk, Likuliku Lagoon Resort",
+        "section": "pool"
+      },
+      "g11": {
+        "alt": "A dinner table under the trees above the lagoon at dusk, Likuliku",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "lizard-island": {
+    "describe": {
+      "l01": {
+        "alt": "Lizard Island's white beaches and reef in the Coral Sea from the air",
+        "section": "pool"
+      },
+      "l02": {
+        "alt": "A villa on the granite point above the reef at Lizard Island",
+        "section": "pool"
+      },
+      "l03": {
+        "alt": "A villa plunge pool facing the Coral Sea at Lizard Island",
+        "section": "pool"
+      },
+      "l04": {
+        "alt": "A white sand spit curving into the turquoise water of Lizard Island",
+        "section": "pool"
+      },
+      "l05": {
+        "alt": "A game fishing boat at sunset off Lizard Island",
+        "section": "experiences"
+      },
+      "l06": {
+        "alt": "Yoga on the deck facing the sea at Lizard Island",
+        "section": "experiences"
+      },
+      "l07": {
+        "alt": "A green turtle swimming over white sand in the shallows at Lizard Island",
+        "section": "experiences"
+      },
+      "l08": {
+        "alt": "The resort's main building among the trees at Lizard Island",
+        "section": "exterior"
+      },
+      "l09": {
+        "alt": "The bar at Lizard Island Resort",
+        "section": "dining"
+      },
+      "l10": {
+        "alt": "Two walkers above the reef and islands on the climb to Cook's Look",
+        "section": "experiences"
+      },
+      "l11": {
+        "alt": "Kayaks on the beach at Lizard Island",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "matangi-island": {
+    "describe": {
+      "hero": {
+        "alt": "Matangi Island, its horseshoe bay and reef in Fiji's northern group from the air",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A violet dawn over the still sea at Matangi Island",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "A treehouse bure lit among great trees at Matangi Island",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "Palms leaning over the white beach and clear water at Matangi Island",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "A treehouse deck in the rainforest canopy at Matangi Island",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "A beachfront bure lit at dusk above the lagoon at Matangi Island",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A canopy bed in a bure at Matangi Island",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A swing daybed on a bure verandah at Matangi Island",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The pool and main bure lit at dusk below the forested hills at Matangi Island",
+        "section": "pool"
+      },
+      "g9": {
+        "alt": "A candlelit table on the jetty at sunset, Matangi Island",
+        "section": "dining"
+      },
+      "g10": {
+        "alt": "A beach deck and umbrella at sunset at Matangi Island",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "mezzanine-tulum": {
+    "describe": {
+      "hero": {
+        "alt": "Mezzanine Tulum above the long white beach in Jaguar Park from the air",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A guest in a hammock on a deck above the beach at Mezzanine Tulum",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "Breakfast in bed in a room at Mezzanine Tulum",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "Guests in the rock pool above the sea at Mezzanine Tulum",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "The cliffside terrace above the beach at sunset, Mezzanine Tulum",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "Thai dishes on the table at Mezzanine Tulum",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "A plunge pool on a terrace above the turquoise Caribbean at Mezzanine Tulum",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A guest at a telescope under the moon at Mezzanine Tulum",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "Lunch on the terrace above the sea at Mezzanine Tulum",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "Thatched rooms among the gardens at Mezzanine Tulum",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "Mezzanine Tulum on the rocks above the beach",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "nanuku-resort": {
+    "describe": {
+      "hero": {
+        "alt": "Nanuku above the turquoise water of Beqa Lagoon, Beqa island beyond, from the air",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "The villas of Nanuku among the palms behind the beach from the air",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "Beachfront villas and their pools above the white sand at Nanuku from directly above",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "A residence and its long pool on the lawn at Nanuku",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A residence and pool under thatched roofs at Nanuku",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A villa bedroom at Nanuku",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A residence pool and loungers on the lawn facing the sea at Nanuku",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A four-poster bedroom at Nanuku",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A guest on a hilltop deck above Beqa Lagoon at Nanuku",
+        "section": "exterior"
+      },
+      "g17": {
+        "alt": "Nanuku's private island lit at dusk over the still lagoon",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A dining bure on the lawn by the sea at Nanuku",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "nizuc-resort-spa": {
+    "describe": {
+      "hero": {
+        "alt": "Black umbrellas on the white beach and turquoise water at NIZUC, Cancún",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "A reflecting pool running through the open lobby to the Caribbean at NIZUC",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A suite terrace with a plunge pool above the sea at NIZUC",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A fire bowl and reflecting pool at sunset, palms against the sky, at NIZUC",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A villa and its private pool at NIZUC",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "A walled villa pool at NIZUC",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A villa pool and terrace under umbrellas at NIZUC",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A suite terrace and plunge pool above the sea at NIZUC",
+        "section": "pool"
+      },
+      "g8": {
+        "alt": "A suite bedroom opening to a balcony over the sea at NIZUC",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "Kayaking through the mangrove channels at NIZUC",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "The hydrotherapy pool at NIZUC Spa by ESPA",
+        "section": "experiences"
+      }
+    },
+    "extra": []
   }
 }

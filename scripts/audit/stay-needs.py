@@ -44,7 +44,10 @@ for o in offers:
         live_offers[o.get("ref")].append(o.get("headline") or o.get("name"))
 
 HELD = {"inkaterra-reserva-amazonica": "Held for photographs", "explora-torres-del-paine": "Held for photographs",
-        "sorrisniva": "Held for photographs"}
+        "sorrisniva": "Held for photographs",
+        "anantara-ubud-bali": "Held for photographs (renderings only)", "bintana-sa-paraiso": "Held for photographs (badges and social shots)",
+        "sangat-island-dive-resort": "Held for photographs (watermarked)", "nomade-temple-madrid": "Held for photographs (renderings only)",
+        "villa-bokeh": "Held for photographs (logo on hero)", "kaaba-luum-mexico": "Held for photographs (none of the place at its best)"}
 REGION = {"africa": "Africa", "asia": "Asia", "europe": "Europe", "oceania": "Oceania", "south-america": "South America",
           "central-america": "Central America", "caribbean": "Caribbean and Mexico", "mexico": "Caribbean and Mexico",
           "north-america": "USA and Canada", "usa-canada": "USA and Canada", "caribbean-mexico": "Caribbean and Mexico",

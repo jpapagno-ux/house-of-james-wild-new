@@ -209,3 +209,12 @@ test("R2/R10: malformed offers are never applied by the engine (defence in depth
   assert.equal(err(quote(card({ restrictions: [{ id: "m", start: "2027-02-01", end: "2027-02-28", type: "min_stay" }] }), ROOM, req())).code, "invalid_card");
   assert.equal(localToday("Africa/Joburg", new Date("2026-12-31T22:30:00Z")), "2026-12-31"); // falls back to UTC, never throws
 });
+
+test("single occupancy: one adult alone pays the single rate where filed; everyone else pays as before", () => {
+  const base = card();
+  const c = card({ rules: base.rules.map((r) => ({ ...r, singleMinor: Math.round(r.amountMinor * 0.75) })) });
+  assert.equal(ok(quote(c, ROOM, req({ adults: 1 }))).roomSubtotalMinor, 3 * 50625);
+  assert.equal(ok(quote(c, ROOM, req({ adults: 2 }))).roomSubtotalMinor, 202500);
+  assert.equal(ok(quote(base, ROOM, req({ adults: 1 }))).roomSubtotalMinor, 202500); // no single rate filed
+  assert.equal(ok(quote(c, ROOM, req({ adults: 1, childAges: [8] }))).nights[0].baseMinor, 67500); // an adult with a child is not single occupancy
+});

@@ -38,7 +38,7 @@ export type CardRow = {
 };
 export type RuleRow = {
   airtable_record_id: string; card_at: string; room_type_at: string; rate_plan_at: string; season: string; stay_start: string; stay_end: string;
-  booking_start: string | null; booking_end: string | null; base_occupancy: number; amount_minor: number; extra_adult_minor: number | null;
+  booking_start: string | null; booking_end: string | null; base_occupancy: number; amount_minor: number; extra_adult_minor: number | null; single_minor?: number | null;
   child_bands: { minAge: number; maxAge: number; amountMinor: number }[]; min_nights: number | null; max_nights: number | null;
   days_of_week: number[] | null; priority: number; active: boolean;
 };
@@ -206,11 +206,13 @@ export function buildPlan(base: Base, opts: { allowSample: boolean; knownLedgerI
         if (v != null) { if (v < 0) reasons.push(`rate "${name}": ${k} can't be negative`); else bands.push({ minAge: lo, maxAge: hi, amountMinor: toMinor(v, digits) }); }
       }
       const extra = num(g, "Extra Adult");
+      const single = num(g, "Single Occupancy");
+      if (single != null && single < 0) { reasons.push(`rate "${name}": single occupancy can't be negative`); continue; }
       const days = Array.isArray(g["Nights of Week"]) ? (g["Nights of Week"] as string[]).map((d) => DOW[d]).filter((d) => d !== undefined) : [];
       rules.push({
         airtable_record_id: r.id, card_at: c.id, room_type_at: room, rate_plan_at: rp, season: name, stay_start: ss, stay_end: se,
         booking_start: bs, booking_end: be, base_occupancy: base0, amount_minor: toMinor(amount, digits),
-        extra_adult_minor: extra == null ? null : toMinor(extra, digits), child_bands: bands, min_nights: minN, max_nights: maxN,
+        extra_adult_minor: extra == null ? null : toMinor(extra, digits), ...(single != null ? { single_minor: toMinor(single, digits) } : {}), child_bands: bands, min_nights: minN, max_nights: maxN,
         days_of_week: days.length ? days : null, priority: prio, active: bool(g, "Active"),
       });
     }

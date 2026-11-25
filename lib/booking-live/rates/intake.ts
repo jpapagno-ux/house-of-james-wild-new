@@ -15,7 +15,7 @@
 // adds the per-person basis.
 
 export type IntakeUnit = { code: string; name: string; maxAdults: number | null; maxChildren: number | null; maxOccupancy: number | null; bedConfiguration?: string | null; description?: string | null };
-export type IntakeSeason = { season: string; stayStart: string; stayEnd: string; nightly: number; basis: "per_room" | "per_person_sharing"; baseOccupancy?: number; extraAdult?: number | null; child0to3?: number | null; child4to11?: number | null; child12to17?: number | null; minNights?: number | null; priority?: number };
+export type IntakeSeason = { season: string; stayStart: string; stayEnd: string; nightly: number; basis: "per_room" | "per_person_sharing"; baseOccupancy?: number; single?: number; extraAdult?: number | null; child0to3?: number | null; child4to11?: number | null; child12to17?: number | null; minNights?: number | null; priority?: number };
 export type IntakeTax = { name: string; kind: "Tax" | "Fee"; basis: "% of room" | "Per person per night" | "Per room per night" | "Per stay"; percent?: number; amount?: number; includedInRate: boolean; jurisdiction?: string; minAge?: number };
 export type IntakeInput = {
   ledgerId: string; slug: string; propertyName: string; timeZone: string;
@@ -90,7 +90,7 @@ export function buildIntake(input: IntakeInput): IntakePlan {
       if (s.basis === "per_person_sharing") converted.push(`${u.name} · ${s.season}`);
       writes.push({ table: "Seasonal Rates", key: `season:${u.code}:${i}`, links: { "Rate Card": [cardKey], "Room Type": [`room:${u.code}`], "Rate Plan": [`plan:${u.code}:${input.plan.code}`] }, fields: {
         Season: name, "Stay Start": s.stayStart, "Stay End": s.stayEnd, "Base Occupancy": base, "Nightly Gross": perRoom,
-        "Extra Adult": s.extraAdult ?? undefined, "Child 0-3": s.child0to3 ?? undefined, "Child 4-11": s.child4to11 ?? undefined, "Child 12-17": s.child12to17 ?? undefined,
+        "Extra Adult": s.extraAdult ?? undefined, "Single Occupancy": s.single ?? undefined, "Child 0-3": s.child0to3 ?? undefined, "Child 4-11": s.child4to11 ?? undefined, "Child 12-17": s.child12to17 ?? undefined,
         "Min Nights": s.minNights ?? undefined, Priority: s.priority ?? 0, Active: true,
       } });
     });

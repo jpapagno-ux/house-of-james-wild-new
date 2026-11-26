@@ -5708,6 +5708,24 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/monwana/dinner-sunset",
         "alt": "A table set for dinner at Monwana as the sun sets over the bush"
       }
+    ],
+    "stay:shipwreck-lodge-namibia": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shipwreck-lodge/main-lodge-dusk",
+        "alt": "Shipwreck Lodge's main building lit at dusk on the dunes of the Skeleton Coast"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shipwreck-lodge/chalets",
+        "alt": "A Shipwreck Lodge cabin shaped like a stranded ship in the dunes at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shipwreck-lodge/beach-walk",
+        "alt": "Guests walking the dunes of the Skeleton Coast with a guide"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shipwreck-lodge/cabin-sunset",
+        "alt": "A Shipwreck Lodge cabin at sunset on the Skeleton Coast"
+      }
     ]
   }
 }

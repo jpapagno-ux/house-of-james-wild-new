@@ -4412,5 +4412,45 @@
         }
       }
     ]
+  },
+  "shipwreck-lodge-namibia": {
+    "rooms": [
+      {
+        "name": "Cabin",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "8 double or twin cabins",
+          "En suite with a deck"
+        ],
+        "lede": "A cabin built to echo the shipwrecks on the beach, with a wood burning stove and a deck over the dunes toward the Atlantic.",
+        "features": [
+          "Private deck",
+          "Wood burning stove",
+          "En suite"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/shipwreck-lodge/cabin-interior"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Cabin",
+        "sleeps": 4,
+        "facts": [
+          "2 family cabins",
+          "En suite with a deck"
+        ],
+        "lede": null,
+        "features": [
+          "Private deck",
+          "Wood burning stove"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/shipwreck-lodge/chalets"
+        ],
+        "plungePool": false
+      }
+    ]
   }
 }

@@ -15540,5 +15540,45 @@
         "section": "rooms"
       }
     ]
+  },
+  "shipwreck-lodge-namibia": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/shipwreck-lodge/main-lodge-dusk",
+        "alt": "Shipwreck Lodge's main building lit at dusk on the dunes of the Skeleton Coast",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/shipwreck-lodge/chalets",
+        "alt": "A Shipwreck Lodge cabin shaped like a stranded ship in the dunes at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/shipwreck-lodge/beach-walk",
+        "alt": "Guests walking the dunes of the Skeleton Coast with a guide",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/shipwreck-lodge/cabin-sunset",
+        "alt": "A Shipwreck Lodge cabin at sunset on the Skeleton Coast",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/shipwreck-lodge/wreck-beach",
+        "alt": "The ribs of a shipwreck on the Skeleton Coast beach",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/shipwreck-lodge/dune-boarding",
+        "alt": "A guest sandboarding down a dune on the Skeleton Coast",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/shipwreck-lodge/cabin-interior",
+        "alt": "A Shipwreck Lodge cabin interior looking out to the dunes and the sea",
+        "section": "rooms"
+      }
+    ]
   }
 }

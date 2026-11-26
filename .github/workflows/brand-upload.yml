@@ -1,0 +1,23 @@
+name: Brand media upload (temporary)
+on:
+  push:
+    branches: [tmp/contact-sheets-africa2]
+    paths: [".contact/upload.tsv"]
+permissions:
+  contents: write
+concurrency:
+  group: brand-upload
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload
+        env:
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+        run: python3 .contact/upload.py
+      - name: Commit log
+        run: |
+          git config user.name "brand-upload"; git config user.email "actions@github.com"
+          git add .contact/upload-log.tsv && git commit -m "Brand media uploaded" && git pull --rebase -q && git push

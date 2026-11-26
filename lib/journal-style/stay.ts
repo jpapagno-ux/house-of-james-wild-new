@@ -33,6 +33,10 @@ export function libraryRooms(slug: string) {
   return { rooms, find, ratesNote: e && typeof e === "object" ? e.ratesNote ?? null : null };
 }
 import PHOTO_NOTES from "./photo-notes.json";
+import EXPECT from "./expect-cards.json";
+
+type ExpectRow = { title: string; line?: string; photo?: string | null };
+type ExpectEntry = { experiences: ExpectRow[]; features: ExpectRow[]; also?: string };
 
 const CLOUD = "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto";
 const roomPhotos = ROOM_PHOTOS as unknown as Record<string, Record<string, { id: string; alt: string }> | string>;
@@ -167,6 +171,11 @@ export function journalStay(slug: string) {
   // a room photograph copied into Cloudinary is the same picture as its old-site original: compare by where it came from
   const origin = (u: string) => lastPart((ROOM_SOURCES as unknown as Record<string, string>)[u.split("/f_auto,q_auto/")[1] ?? ""] ?? u);
   const photos = [...base, ...roomShots, ...libShots, ...extras].filter((x, k, l) => l.findIndex((y) => origin(y.url) === origin(x.url)) === k);
+  // What You Can Expect as picture cards, where filed (expect-cards.json): each card's photograph is looked up among the
+  // stay's own photographs; a card with none prints the "Image coming soon" panel.
+  const ex = (EXPECT as unknown as Record<string, ExpectEntry | string>)[s.slug];
+  const card = (r: ExpectRow) => { const p = r.photo ? photos.find((x) => lastPart(x.url) === r.photo) : undefined; return { title: r.title, line: r.line ?? null, photo: p ? { url: p.url, alt: p.alt } : null }; };
+  const expect = ex && typeof ex === "object" ? { experiences: ex.experiences.map(card), features: ex.features.map(card), also: ex.also ?? null } : null;
   const offers = offersFor(s.slug);
   const features = momentsFor(s.slug, rowsFrom(s.features.items, s.features.paras), filed.slice(1));
   const experiences = momentsFor(s.slug, rowsFrom(s.experiences.items, s.experiences.paras), filed.slice(1), 3, features);
@@ -181,7 +190,7 @@ export function journalStay(slug: string) {
   const plain = `${s.name} is a ${kind}${s.country ? ` in ${s.country}` : ""}.${s.tagline ? ` ${s.tagline.replace(/\.$/, "")}.` : ""}`;
   const intro = (INTROS.intros as Record<string, string>)[s.slug] ?? (s.quote ? s.quote.replace(/\s+,/g, ",").trim() : plain);
   return {
-    s, path, filed, slides, frames, rates, lib, offers, features, experiences, suited, answer, intro, kind,
+    s, path, filed, slides, frames, rates, lib, offers, features, experiences, expect, suited, answer, intro, kind,
     // the stay's own films: a hero film (muted, looping) and a longer stay film for the Film section; either may be absent
     heroFilm: STAY_FILMS[s.slug]?.hero ? STAY_FILMS[s.slug] : null, video: VIDEOS[`stay:${s.slug}`] ?? null,
     // rooms filed with the house's own room record (shown with its own component, unchanged) where no rate card above applies

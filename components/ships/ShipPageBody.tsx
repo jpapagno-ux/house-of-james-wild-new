@@ -23,6 +23,8 @@ import HouseOpening from "@/components/opening/HouseOpening";
 import { shipOpening } from "@/lib/content/opening/build";
 import VoyageSignals from "@/components/ships/VoyageSignals";
 import EitherSide from "@/components/ships/EitherSide";
+import { WATERS_HUBS } from "@/lib/content/ships/registry";
+import ShipFieldNote from "@/components/field-notes/ShipFieldNote";
 import { PassportStamp } from "@/components/ledger/VolumeKit";
 import { offersFor, offerEnd } from "@/lib/content/offers/offers";
 import SignatureEdition from "@/components/ships/SignatureEdition";
@@ -116,5 +118,5 @@ export default async function ShipPageBody({ slug, opening: given, surface: give
   // an Exceptional Few ship, whose own entrance always wins.
   const sigPalette = tv?.signatureEdition && !ef ? (shipOpening(e)?.palette ?? null) : null;
   const signature = tv && sigPalette ? <SignatureEdition ship={rec} tv={tv} night={sigPalette.night} ink={sigPalette.sand ?? sigPalette.hi} /> : null;
-  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}<SaveToFolio name={rec.name} item={{ path: shipPath(e.slug) }} />{saving && !ef && <SavingNote saving={saving} operator={rec.operator} />}{signature}{glance}</>, after: <>{either}{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}{IGGI_ON && e.slug !== "aliikai" && <IggiPanel ctx={{ entityType: "voyage", entitySlug: e.slug, ledgerId: (e.data as ShipRecord).ledgerId ?? null, sourcePage: shipPath(e.slug), volume: "voyages" }} heading={`Ask Iggi about ${e.data.name}`} />}</> }} ef={ef} />;
+  return <RecordShip entry={e} sisters={sistersOf(e)} extra={{ ...base, opening, surface, tones, itineraryAfter: terrain, itineraryTerrain, top: <>{base.top}<SaveToFolio name={rec.name} item={{ path: shipPath(e.slug) }} />{saving && !ef && <SavingNote saving={saving} operator={rec.operator} />}{signature}{glance}</>, after: <>{either}<ShipFieldNote waters={e.waters} slug={e.slug} hub={WATERS_HUBS[e.waters as keyof typeof WATERS_HUBS]} />{base.after}{journeys}{sail}{ocean && <FounderOcean line={ocean} place={e.data.name} />}{IGGI_ON && e.slug !== "aliikai" && <IggiPanel ctx={{ entityType: "voyage", entitySlug: e.slug, ledgerId: (e.data as ShipRecord).ledgerId ?? null, sourcePage: shipPath(e.slug), volume: "voyages" }} heading={`Ask Iggi about ${e.data.name}`} />}</> }} ef={ef} />;
 }

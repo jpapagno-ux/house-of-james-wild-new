@@ -31,7 +31,7 @@ export default function FieldGuidesPage() {
             <p className="mt-4 text-[18px] md:text-[19px] ledger-muted leading-relaxed" data-aeo="answer">James Wild &amp; Co publishes {FIELD_GUIDES.length} free field guides: {FIELD_GUIDES.map((g) => g.place).join(", ")}. Each comes as a full guide and, for most places, a four-page quick guide, to download, print or keep on your phone. Add your email address and the guide opens.</p>
           </header>
           <ul className="mt-10 grid gap-6 lg:grid-cols-2">
-            {FIELD_GUIDES.map((g) => <li key={g.key}><GuideOffer guide={g} source="field-guides" variant="compact" className="h-full" /></li>)}
+            {FIELD_GUIDES.map((g) => <li key={g.key} id={g.key} className="scroll-mt-28"><GuideOffer guide={g} source="field-guides" variant="compact" className="h-full" /></li>)}
           </ul>
           <p className="mt-10 text-[15px] ledger-muted">Want it planned rather than read? <Link href="/plan" className="underline underline-offset-4">Plan it with James</Link>.</p>
         </div>

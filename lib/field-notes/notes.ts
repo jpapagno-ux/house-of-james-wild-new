@@ -550,6 +550,22 @@ export const AMAZON_HUB_NOTES = ["pink-river-dolphin", "giant-river-otter", "ara
 // The Galápagos voyages hub: the first note in full, the rest folded.
 export const GALAPAGOS_HUB_NOTES = ["galapagos-giant-tortoise", "marine-iguana", "blue-footed-booby", "galapagos-penguin", "waved-albatross", "galapagos-sea-lion"];
 
+// Ship pages (James, 26 Nov 2026): one Field Note on each ship page, by the waters she sails. Only species met on any
+// route in those waters are listed here: no penguin or albatross in the Galápagos (they need the west, or Española in
+// season) and no clay lick or marmoset on the Amazon (western rivers only). No operator has confirmed sightings by ship.
+export const SHIP_FIELD_NOTES: Record<string, string[]> = {
+  amazon: ["pink-river-dolphin", "giant-water-lily", "arapaima"],
+  galapagos: ["galapagos-giant-tortoise", "marine-iguana", "blue-footed-booby", "galapagos-sea-lion"],
+};
+/** The note for one ship: the same ship always shows the same note, and sister ships differ. */
+export function shipFieldNote(waters: string, slug: string): FieldNote | null {
+  const ids = SHIP_FIELD_NOTES[waters];
+  if (!ids?.length) return null;
+  let h = 0;
+  for (const c of slug) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  return FIELD_NOTES[ids[h % ids.length]] ?? null;
+}
+
 // Species pages (/wildlife/[slug]): the note, then plain questions and answers for search and answer engines.
 // Every answer restates facts already sourced on the note; photography lines are craft advice, not facts.
 export type SpeciesPage = { noteId: string; title: string; answer: string; qa: { q: string; a: string }[]; photo: string[]; parent?: { name: string; path: string }[]; reachTitle?: string; reach: { name: string; href: string; line: string }[] };

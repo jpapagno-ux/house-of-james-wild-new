@@ -1,6 +1,7 @@
 import { outdoorFirst } from "./opening/interior-photos";
 // Five hero photographs per record (scripts/hero-sets.py → hero-sets.json).
 import sets from "./hero-sets.json";
+import handPicks from "./hero-picks.json";
 import photos from "./stay-photos.json";
 import { toCloud } from "./stay-cloud";
 
@@ -58,6 +59,9 @@ export function heroSlides(key: string, name: string, where?: string | null) {
 }
 function slidesFor(key: string, name: string, where?: string | null) {
   if (PICKS[key]) return PICKS[key];
+  // hand-picked from the stay's own photographs, the place at its best first (lib/content/hero-picks.json)
+  const hand = (handPicks as { picks: Record<string, { url: string; alt: string }[]> }).picks[key];
+  if (hand?.length) return hand.map((x) => ({ alt: x.alt, url: toCloud(fix(x.url)) }));
   const picked = (photos.stays as Record<string, { hero: { url: string; alt: string }[] }>)[key.replace(/^stay:/, "")];
   if (key.startsWith("stay:") && picked?.hero.length) return picked.hero.map((x) => ({ ...x, url: toCloud(x.url) }));
   const list = ((sets as Record<string, string[]>)[key] ?? []).map(fix).map((u) => toCloud(u));

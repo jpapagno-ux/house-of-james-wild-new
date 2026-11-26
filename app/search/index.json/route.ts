@@ -14,7 +14,10 @@ import PLACES from "@/lib/content/places-library.json";
 import { TY_DOSSIERS, TY_PATH, tyPath } from "@/lib/content/terra-y";
 import { GUIDES } from "@/lib/content/guides";
 import { PARTNER_LIST, partnerPath } from "@/lib/content/partners";
-import { COUNTRY_FIELD_NOTES, FIELD_NOTES, SPECIES_PAGES } from "@/lib/field-notes/notes";
+import { FIELD_NOTES, SPECIES_PAGES } from "@/lib/field-notes/notes";
+import { speciesCountries, speciesName } from "@/lib/field-notes/by-place";
+import { POSTS } from "@/lib/content/journal/posts";
+import { FIELD_GUIDES } from "@/lib/content/field-guides";
 
 // The house search index (/search/index.json), rebuilt from the Ledger on every publish (James, 4 Nov 2026: "if you
 // type in Ivory Lodge, it should pull up"). It used to be a file written once on 24 Oct, so lodges and residences
@@ -38,6 +41,7 @@ const PAGES: [string, string, string][] = [
   ["The Atlas", "/atlas", "Every stay, camp and ship on one map"],
   ["The Compass", "/compass", "The founder's compass: where to go, by what you want from it"],
   ["The Journal", "/journal", "Field notes and stories from the road"],
+  ["Free field guides", "/field-guides", "Field guides by James to download: when to go, how to move, where to stay"],
   ["Wildlife: where and how to see it", "/wildlife", "Field Notes on the animals and plants of Africa, Madagascar, the Amazon and the Galápagos: where they live, when to go, how to photograph them"],
   ["Advisors", "/advisors", "The advisors who plan with James, and the places they know"],
   ["The Ledger", "/the-ledger", "How every stay, camp and ship is vetted and numbered"],
@@ -111,13 +115,22 @@ export function GET() {
   // Wildlife species pages (James, 24 Nov 2026: "let search return them"): "gorilla", "wild dog" or "blue-footed booby"
   // lands on the Field Note's own page. Filed under the countries whose pages carry the note, so a search scoped to
   // Rwanda or Kenya shows them too. Reading, not a bookable record: they stay out of the Atlas (lib/atlas/feeders.json).
-  const WILD_REGION: Record<string, string[]> = { Amazon: ["peru", "brazil", "ecuador-galapagos"], "Galápagos": ["ecuador-galapagos"] };
   for (const sp of Object.values(SPECIES_PAGES)) {
     const note = FIELD_NOTES[sp.noteId];
-    const slugs = [...new Set([...Object.entries(COUNTRY_FIELD_NOTES).filter(([, ids]) => ids.includes(note.id)).map(([s]) => s), ...(WILD_REGION[note.region] ?? [])])];
-    const cs = slugs.map((s) => COUNTRIES.find((c) => c.slug === s)).filter((c): c is (typeof COUNTRIES)[number] => !!c);
-    const name = note.title.replace(/^The /, "");
-    add({ t: "page", n: name[0].toUpperCase() + name.slice(1), u: `/wildlife/${note.id}`, k: "Wildlife", p: cs[0]?.name ?? note.region, r: cs[0]?.region ?? null, f: ["wildlife_photography"], g: `${sp.title}. ${note.latin}. ${note.region} wildlife, when and where to see it, how to photograph it`, c: cs.map((c) => c.name) });
+    const cs = speciesCountries(note.id);
+    add({ t: "page", n: speciesName(note.id), u: `/wildlife/${note.id}`, k: "Wildlife", p: cs[0]?.name ?? note.region, r: cs[0]?.region ?? null, f: ["wildlife_photography"], g: `${sp.title}. ${note.latin}. ${note.region} wildlife, when and where to see it, how to photograph it`, c: cs.map((c) => c.name) });
+  }
+  // Journal stories and free field guides (James, 24 Nov 2026: "go" on reading in search). Filed under the countries
+  // named in their place line, so a search scoped to a country shows them. Reading, not bookable: outside the Atlas.
+  const namedIn = (text: string) => COUNTRIES.filter((c) => text.toLowerCase().includes(c.name.toLowerCase()));
+  for (const p of Object.values(POSTS)) {
+    if (!p.approved) continue;
+    const cs = namedIn(`${p.place} ${p.title}`);
+    add({ t: "page", n: p.title, u: `/journal/${p.slug}`, k: "Journal", p: p.place || null, r: cs[0]?.region ?? null, f: [], g: `${p.dek} ${p.description} ${p.shelf}, story by James`, c: cs.map((c) => c.name) });
+  }
+  for (const g of FIELD_GUIDES) {
+    const cs = namedIn(`${g.place} ${g.title}`);
+    add({ t: "page", n: `${g.title}: free field guide`, u: `/field-guides#${g.key}`, k: "Field guide", p: g.place, r: cs[0]?.region ?? null, f: [], g: `${g.blurb} Free guide to download, PDF`, c: cs.map((c) => c.name) });
   }
   for (const v of VOLUMES) add({ t: "page", n: v.label, u: v.href, k: "Section", p: null, r: null, f: [], g: v.intro ?? null });
   // Terra Y dossiers (James, 15 Nov 2026): each by name, with the places and words people search for.

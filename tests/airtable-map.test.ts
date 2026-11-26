@@ -164,3 +164,14 @@ test("each partner carries a stay type and a rate source (owner request, 27 Oct)
   b.properties[0].fields["Stay Type"] = "Spaceship";
   assert.equal(buildPlan(b, { allowSample: true, knownLedgerIds: KNOWN }).properties[0].stay_type, null);
 });
+
+test("cancellation tiers with seasons parse; a plain list still reads as before", async () => {
+  const { parseCancellation } = await import("../lib/booking-live/rates/airtable-map.ts");
+  assert.deepEqual(parseCancellation("60:30, 30:100"), { tiers: [{ daysBeforeArrival: 60, penaltyBp: 3000 }, { daysBeforeArrival: 30, penaltyBp: 10000 }], seasons: [] });
+  const c = parseCancellation("Festive 2026-12-20..2027-01-03 = 120:50, 60:100; 2026-11-01..2027-02-28 = 44:50, 30:100; 30:50, 15:100");
+  assert.deepEqual(c?.tiers, [{ daysBeforeArrival: 30, penaltyBp: 5000 }, { daysBeforeArrival: 15, penaltyBp: 10000 }]);
+  assert.deepEqual(c?.seasons.map((s) => [s.label, s.from, s.to, s.tiers.length]), [["Festive", "2026-12-20", "2027-01-03", 2], [undefined, "2026-11-01", "2027-02-28", 2]]);
+  assert.equal(parseCancellation("2027-01-03..2026-12-20 = 120:50"), null);
+  assert.equal(parseCancellation("Festive = 120:50"), null);
+  assert.equal(parseCancellation("60:30; 30:100"), null);
+});

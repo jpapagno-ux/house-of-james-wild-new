@@ -5,8 +5,9 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import { MessageCircle } from "lucide-react";
 import AtlasSearch from "./AtlasSearch";
 import { loadIndex } from "./index-client";
+import { wildlifeFor } from "@/lib/field-notes/match-place";
 import {
-  CATEGORY_LABEL, COLLECTION_LABEL, EMPTY, INTEREST_LABEL, datesWords, describe, isPlace, fromQuery, partyWords, search, toQuery,
+  CATEGORY_LABEL, COLLECTION_LABEL, EMPTY, INTEREST_LABEL, datesWords, describe, isPlace, fromQuery, norm, partyWords, search, toQuery,
   type AtlasQuery, type AtlasRecord, type Result,
 } from "@/lib/atlas/match";
 
@@ -16,13 +17,14 @@ import {
 
 const PAGE = 24;
 
-export default function AtlasResults({ places }: { places: string[] }) {
+export default function AtlasResults({ places, wildlife = {} }: { places: string[]; wildlife?: Record<string, { name: string; href: string }[]> }) {
   const [records, setRecords] = useState<AtlasRecord[] | null>(null);
   const [failed, setFailed] = useState(false);
   const [q, setQ] = useState<AtlasQuery>(EMPTY);
   const [ready, setReady] = useState(false);
   const [shown, setShown] = useState(PAGE);
   const [shownAwaiting, setShownAwaiting] = useState(12);
+  const species = useMemo(() => wildlifeFor(q.where, wildlife, norm), [q.where, wildlife]);
 
   useEffect(() => {
     setQ(fromQuery(new URLSearchParams(window.location.search)));
@@ -83,6 +85,14 @@ export default function AtlasResults({ places }: { places: string[] }) {
             <button type="button" aria-pressed={q.sort === "savings"} onClick={() => apply({ ...q, sort: "savings" })} className={`min-h-[44px] px-4 border border-l-0 border-ink text-[13px] ${q.sort === "savings" ? "bg-ink text-paper" : "bg-paper"}`}>Savings first</button>
           </div>
         </div>
+
+        {out && species.length > 0 && (
+          <p className="pt-5 text-[14.5px] leading-relaxed">
+            <span className="ledger-eyebrow mr-3">Wildlife here</span>
+            {species.slice(0, 6).map((s, i) => <span key={s.href}>{i > 0 && ", "}<Link href={s.href} className="underline underline-offset-4 decoration-[color:var(--jw-hairline)] hover:ledger-crimson">{s.name}</Link></span>)}
+            {species.length > 6 && <>, <Link href="/wildlife" className="underline underline-offset-4 decoration-[color:var(--jw-hairline)] hover:ledger-crimson">and {species.length - 6} more</Link></>}
+          </p>
+        )}
 
         {out && out.results.length > 0 && (
           <ul className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3 py-8" aria-label="Results">

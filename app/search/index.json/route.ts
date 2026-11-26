@@ -42,7 +42,7 @@ const PAGES: [string, string, string][] = [
   ["The Compass", "/compass", "The founder's compass: where to go, by what you want from it"],
   ["The Journal", "/journal", "Field notes and stories from the road"],
   ["Free field guides", "/field-guides", "Field guides by James to download: when to go, how to move, where to stay"],
-  ["Wildlife: where and how to see it", "/wildlife", "Field Notes on the animals and plants of Africa, Madagascar, the Amazon and the Galápagos: where they live, when to go, how to photograph them"],
+  ["Wildlife: where and how to see it", "/wildlife", "Field Notes on the animals and plants of Africa, Madagascar, the Amazon, the Galápagos, Alaska, Antarctica and Indonesia: where they live, when to go, how to photograph them"],
   ["Advisors", "/advisors", "The advisors who plan with James, and the places they know"],
   ["The Ledger", "/the-ledger", "How every stay, camp and ship is vetted and numbered"],
   ["What's coming", "/whats-coming", "Lodges and ships opening soon"],

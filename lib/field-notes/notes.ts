@@ -526,6 +526,274 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       "PBS Nature, 'Hippopotamus': Vulnerable on the IUCN Red List; can stay submerged for about five minutes.",
     ],
   },
+  // Alaska, Antarctica and Indonesia (James, 26 Nov 2026: "Wildlife sets for Alaska, the polar regions and Indonesia. Yes build").
+  // Sources are government wildlife agencies, museums, conservation bodies and papers; no cruise line or tour operator.
+  "humpback-bubble-net": {
+    id: "humpback-bubble-net", region: "Alaska", no: "01",
+    title: "The humpback whale, bubble-net feeding", latin: "Megaptera novaeangliae · whales that fish together",
+    body: "Bubble-net feeding is teamwork, and it was first documented in Alaska. The whales blow a curtain of bubbles around a school of fish such as herring to pack it tight, then rise through it with their mouths open. Each whale comes up in the same place beside the others, time after time.",
+    rows: [
+      { label: "Look for", text: "A circle of bubbles on the surface, then several heads rising inside it at once." },
+      { label: "Know", text: "Before the last whaling ban in 1985, most humpback populations had been cut by more than 95 percent." },
+      { label: "Ask your guide", text: "Whether a group has been feeding together nearby this week." },
+      { label: "When", text: "Through the sailing season. It is a regular sight in Southeast Alaska, though the whales do not do it on every feed." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/humpback-bubble-net", version: 1795697091, alt: "Watercolour of humpback whales lunging up together through the sea with mouths open, gulls overhead", width: 1000, height: 747, scene: true },
+    where: { label: "See the Alaska boats", href: "/voyages/alaska#ships-h" },
+    sources: [
+      "Alaska Department of Fish and Game, 'Alaska's Inside Passage Wildlife Viewing Guide: Whale Behaviors' (text adapted from the National Marine Fisheries Service): bubble-net feeding is cooperative and was first documented in Alaska; herring; each whale rises in the same position relative to the others; heads rise almost straight up in vertical lunges.",
+      "NOAA Fisheries, 'Humpback Whale': group coordinated bubble-net feeding uses curtains of air bubbles to condense prey; before the 1985 moratorium most populations were reduced by more than 95 percent.",
+      "University of Hawaiʻi News, 13 Oct 2019 (with the Alaska Whale Foundation, NOAA permit 19703): bubble-net feeding is a regular occurrence in Southeast Alaska.",
+      "NPR, 6 Sep 2024, reporting Alaska Whale Foundation research: humpbacks in Alaska do not use bubble nets every time they feed.",
+    ],
+  },
+  "alaska-brown-bear": {
+    id: "alaska-brown-bear", region: "Alaska", no: "02",
+    title: "The coastal brown bear", latin: "Ursus arctos · the same animal as the grizzly",
+    body: "A brown bear and a grizzly are one species. The name changes with the address: bears on the coast are called brown bears, bears of the interior are called grizzlies. Salmon, clams and sedge, and a milder climate, let the coast bears grow larger and live closer together. Alaska has about 30,000 of them.",
+    rows: [
+      { label: "Look for", text: "A bear working the shore: grazing sedge, digging clams or fishing a stream." },
+      { label: "Know", text: "Food makes the difference. Coast bears usually outweigh interior grizzlies." },
+      { label: "Ask your guide", text: "Which streams have salmon running, and how far off you will stay." },
+      { label: "When", text: "Summer and early autumn. The bears den for the winter." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/alaska-brown-bear", version: 1795697116, alt: "Watercolour of a brown bear standing in a shallow stream with a salmon in its jaws, spruce shore behind", width: 1000, height: 747, scene: true },
+    where: { label: "See the Alaska boats", href: "/voyages/alaska#ships-h" },
+    sources: [
+      "US National Park Service, Kenai Fjords, 'Brown Bear': brown bear and grizzly are the same animal, Ursus arctos; interior bears are called grizzlies and coastal bears brown bears; the difference is mainly food.",
+      "Alaska Department of Fish and Game, Wildlife Notebook Series, 'Brown Bear' (revised 2008): spawning salmon, coastal vegetation and a milder climate let coastal bears grow larger and live in higher densities.",
+      "US National Park Service, Katmai, 'Coastal Brown Bears': coastal bears rely on fish, clams and sedges.",
+      "US Bureau of Land Management Alaska, bear infographic (2021), citing ADF&G: about 30,000 brown bears in Alaska; brown bears typically outweigh grizzlies.",
+      "Alaska Department of Fish and Game, 'Alaska's Wild Wonders' issue 5: bears fatten and prepare dens; cubs are born in the den.",
+    ],
+  },
+  "sea-otter": {
+    id: "sea-otter", region: "Alaska", no: "03",
+    title: "The sea otter", latin: "Enhydra lutris · a tool user in the kelp",
+    body: "About nine in ten of the world's sea otters live on the Alaska coast. It is the largest of the weasel family and has no blubber. A coat of the thickest fur of any animal keeps it warm instead. It cracks stubborn shells with a rock, and by eating sea urchins it shapes the whole shore it lives on.",
+    rows: [
+      { label: "Look for", text: "An otter on its back with a meal on its chest. Old animals go silver about the head." },
+      { label: "Know", text: "Grooming is survival. The fur only works when it holds air against the skin." },
+      { label: "Ask your guide", text: "Where the otters rest in numbers along your route." },
+      { label: "When", text: "Through the sailing season. Pups in Alaska are usually born in spring." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/sea-otter", version: 1795697137, alt: "Watercolour of a sea otter floating on its back in kelp with a clam on its chest", width: 1000, height: 747, scene: true },
+    where: { label: "See the Alaska boats", href: "/voyages/alaska#ships-h" },
+    sources: [
+      "US Department of the Interior, '12 Facts About Otters for Sea Otter Awareness Week': about 90 percent of the world's sea otters live in coastal Alaska; thickest fur of any animal; grooming traps air and heat next to the skin; northern sea otter pups are usually born in spring.",
+      "US National Park Service, Kenai Fjords, 'Sea Otter': largest member of the weasel family; dense fur in place of blubber; uses rocks as tools; head fur turns silvery with age; keystone species through its consumption of sea urchins.",
+    ],
+  },
+  "bald-eagle": {
+    id: "bald-eagle", region: "Alaska", no: "04",
+    title: "The bald eagle", latin: "Haliaeetus leucocephalus · the white-headed sea eagle",
+    body: "The bald eagle lives only in North America, and Alaska has more of them than anywhere else in the United States, about 70,000 birds. They nest most thickly on the islands of Southeast Alaska, in old trees along the saltwater shore. Bald once meant white, not hairless.",
+    rows: [
+      { label: "Look for", text: "A white head in a tall shoreline tree. Brown, mottled birds are the young." },
+      { label: "Know", text: "The white head and tail take about five years to come in." },
+      { label: "Ask your guide", text: "Whether there is a nest in use along the shore you are sailing." },
+      { label: "When", text: "Through the sailing season. Nest building starts in April." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/bald-eagle", version: 1795697164, alt: "Watercolour of a bald eagle perched on a mossy spruce bough above a misty shoreline", width: 1000, height: 747, scene: true },
+    where: { label: "See the Alaska boats", href: "/voyages/alaska#ships-h" },
+    sources: [
+      "Alaska Department of Fish and Game, 'Bald Eagle' species profile: found only in North America; more abundant in Alaska than anywhere else in the United States; Alaska population estimated at 70,000; highest nesting densities on the islands of Southeast Alaska in old-growth timber along saltwater shorelines; nest building begins in April; bald meant white.",
+      "Alaska Department of Fish and Game, Wildlife Notebook Series, 'Eagles': the white adult plumage is not attained until 5 or more years of age.",
+      "US Fish and Wildlife Service, Alaska Migratory Birds, 'Eagles and Raptors': juveniles are mottled brown and white and take about five years to gain adult plumage.",
+    ],
+  },
+  "orca": {
+    id: "orca", region: "Alaska", no: "05",
+    title: "The orca", latin: "Orcinus orca · the largest dolphin",
+    body: "The orca, or killer whale, is the largest of the dolphins and the ocean's top predator. Alaska has three kinds that share the water and keep apart: residents, which eat fish, transients, which hunt seals, porpoises and sea lions, and offshores. A pod is a mother and her offspring of both sexes.",
+    rows: [
+      { label: "Look for", text: "Black fins travelling together. Most Alaska pods number fewer than 40." },
+      { label: "Know", text: "Transients hunt quietly, because their prey can hear them coming." },
+      { label: "Ask your guide", text: "Whether the pod is resident or transient, and how they can tell." },
+      { label: "When", text: "Through the sailing season." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/orca", version: 1795697186, alt: "Watercolour of a pod of orcas surfacing in a calm fjord below forested mountains", width: 1000, height: 747, scene: true },
+    where: { label: "See the Alaska boats", href: "/voyages/alaska#ships-h" },
+    sources: [
+      "NOAA Fisheries, 'Killer Whale': the ocean's top predator and the largest member of the dolphin family.",
+      "Alaska Department of Fish and Game, Wildlife Notebook Series, 'Orca': three ecotypes in the North Pacific, resident, transient and offshore; most pods in Alaska number fewer than 40; pods are matrilineal, a female and her offspring of both sexes.",
+      "US National Park Service, Kenai Fjords, 'Orca (Killer Whale)': residents and transients share the same waters but have not been observed associating; residents eat salmon and other fish; transients feed on harbor seals, porpoises and sea lions and are stealthier because of their prey.",
+    ],
+  },
+  "gentoo-penguin": {
+    id: "gentoo-penguin", region: "Antarctica", no: "01",
+    title: "The gentoo penguin", latin: "Pygoscelis papua · the fastest bird under water",
+    body: "The gentoo is the penguin with the red-orange bill and a white patch over each eye. It is the fastest bird under water, reaching about 36 kilometres an hour, and it breeds on the Antarctic Peninsula and many sub-Antarctic islands. It eats what is going, which helps it do well where fussier penguins struggle.",
+    rows: [
+      { label: "Look for", text: "The orange bill and the white band across the crown. No other penguin has both." },
+      { label: "Know", text: "At sea its hunters are the leopard seal and the orca." },
+      { label: "Ask your guide", text: "How close you may stand to the colony, and which paths the birds use." },
+      { label: "When", text: "Through the Antarctic sailing season." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/gentoo-penguin", version: 1795697209, alt: "Watercolour of two gentoo penguins at a nest of pebbles on a rocky Antarctic shore", width: 1000, height: 747, scene: true },
+    where: { label: "See the polar voyages", href: "/voyages/polar#finder-h" },
+    sources: [
+      "Australian Antarctic Program, 'Gentoo penguin': bright red-orange bill and conspicuous white eye patches; breeds on many sub-Antarctic islands and the Antarctic Peninsula; global population considered stable.",
+      "Encyclopaedia Britannica, 'Gentoo penguin': the world's fastest underwater birds.",
+      "Antarctic and Southern Ocean Coalition, 'Gentoo Penguins': up to 36 kilometres an hour; flexible diet; preyed on at sea by orca and leopard seals.",
+      "New Zealand Birds Online, 'Gentoo penguin': no other penguin has a bright orange bill and white feathers over the eye.",
+    ],
+  },
+  "leopard-seal": {
+    id: "leopard-seal", region: "Antarctica", no: "02",
+    title: "The leopard seal", latin: "Hydrurga leptonyx · the hunter of the pack ice",
+    body: "The leopard seal lives alone in the pack ice and, with the orca, sits at the top of the Antarctic sea. It will ambush a penguin, and it also strains krill from the water through teeth shaped for the job. Females are the larger sex and can reach 3.8 metres. Only the orca hunts it.",
+    rows: [
+      { label: "Look for", text: "A long seal alone on a floe, spotted underneath." },
+      { label: "Know", text: "It eats almost anything: penguins, fish, squid and krill." },
+      { label: "Ask your guide", text: "Whether one has been patrolling off a penguin colony." },
+      { label: "When", text: "Through the Antarctic sailing season." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/leopard-seal", version: 1795697231, alt: "Watercolour of a leopard seal lying on a small ice floe with its head raised", width: 1000, height: 747, scene: true },
+    where: { label: "See the polar voyages", href: "/voyages/polar#finder-h" },
+    sources: [
+      "Australian Antarctic Program, 'Leopard seal': solitary animals of the pack ice; eat almost anything, including penguins, fish, squid and crustaceans; unusual teeth for straining krill; the only natural predator is the killer whale.",
+      "Australian Museum, 'Leopard Seal': with the killer whale, the top predator of the Antarctic seas; a lone hunter that ambushes penguins.",
+      "Animal Diversity Web, University of Michigan Museum of Zoology, 'Hydrurga leptonyx': females are larger, up to 3.8 metres and 500 kilograms.",
+      "Coolantarctica.com fact file, 'Leopard Seals': named for the spotting on its underside.",
+    ],
+  },
+  "weddell-seal": {
+    id: "weddell-seal", region: "Antarctica", no: "03",
+    title: "The Weddell seal", latin: "Leptonychotes weddellii · the seal under the ice",
+    body: "No mammal breeds farther south than the Weddell seal. It lives under the ice that is fastened to the land and breathes through cracks and holes. In winter it keeps those holes open by rasping the ice with its teeth, which wears them down over a lifetime. It can stay under for 45 minutes and reach 720 metres.",
+    rows: [
+      { label: "Look for", text: "A plump, mottled seal asleep on the ice near the shore." },
+      { label: "Know", text: "It calls under water, loudly enough to be heard by a person standing on the ice above." },
+      { label: "Ask your guide", text: "Whether there is a breathing hole or tide crack nearby." },
+      { label: "When", text: "Through the Antarctic sailing season." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/weddell-seal", version: 1795697250, alt: "Watercolour of a Weddell seal resting on sea ice beside its breathing hole", width: 1000, height: 747, scene: true },
+    where: { label: "See the polar voyages", href: "/voyages/polar#finder-h" },
+    sources: [
+      "Australian Antarctic Program, 'Weddell seal': lives under the fast ice and breathes through cracks and holes; in winter uses canine and incisor teeth to rasp open the ice, wearing the teeth down; dives up to 45 minutes and 720 metres.",
+      "Antarctic and Southern Ocean Coalition, 'Weddell Seals': the most southerly breeding mammal on Earth.",
+      "NOAA Alaska Fisheries Science Center, National Marine Mammal Laboratory, 'Weddell seal' (archived): underwater calls are loud enough for a person on top of the ice to hear.",
+      "Global Biodiversity Information Facility, 'Leptonychotes weddellii': fast ice, ice fastened to land.",
+    ],
+  },
+  "wandering-albatross": {
+    id: "wandering-albatross", region: "Antarctica", no: "04",
+    title: "The wandering albatross", latin: "Diomedea exulans · the widest wings of any bird",
+    body: "The wandering albatross has the largest wingspan of any living bird, up to 3.5 metres. It ranges right around the Southern Ocean and comes to land to breed on a few islands, South Georgia among them. It is listed as Vulnerable.",
+    rows: [
+      { label: "Look for", text: "A very large white bird with dark wingtips, low over the swell on the open sea crossings." },
+      { label: "Know", text: "It is known to follow a fishing boat for days." },
+      { label: "Ask your guide", text: "How to tell it from the smaller albatrosses behind the ship." },
+      { label: "When", text: "On the open sea, on any sailing." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/wandering-albatross", version: 1795697272, alt: "Watercolour of a wandering albatross gliding low over a grey ocean swell", width: 1000, height: 747, scene: true },
+    where: { label: "See the polar voyages", href: "/voyages/polar#finder-h" },
+    sources: [
+      "BirdLife International, 'Albatross': the wandering albatross, listed as Vulnerable, has the largest known wingspan of any bird, 3.5 metres.",
+      "BirdLife Australia, 'Wandering Albatross': circumpolar across the Southern Ocean; commonly follows fishing boats for several days; adults appear entirely white from a distance.",
+      "New South Wales Government, threatened species profile, 'Wandering Albatross': breeds on South Georgia, Prince Edward and Marion, Crozet, Kerguelen and Macquarie islands.",
+    ],
+  },
+  "komodo-dragon": {
+    id: "komodo-dragon", region: "Indonesia", no: "01",
+    title: "The Komodo dragon", latin: "Varanus komodoensis · the largest lizard alive",
+    body: "The Komodo dragon is the largest living lizard. A wild adult weighs about 70 kilograms, and the largest ever verified was just over three metres long. It lives on a handful of Indonesian islands, Komodo, Rinca and Flores among them, and nowhere else. Its bite carries venom that stops blood from clotting.",
+    rows: [
+      { label: "Look for", text: "The forked tongue flicking. It tastes the air with it, as a snake does." },
+      { label: "Know", text: "It was listed as Endangered in 2021, with rising seas expected to take much of its habitat." },
+      { label: "Ask your guide", text: "Where the ranger wants you to stand, and stay there." },
+      { label: "When", text: "Year round. The Komodo sailing season on file runs from May to September." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/komodo-dragon", version: 1795697297, alt: "Watercolour of a Komodo dragon walking across dry grass on a hilly island", width: 1000, height: 747, scene: true },
+    where: { label: "See the Indonesia yachts", href: "/voyages/indonesia#ships-h" },
+    sources: [
+      "Smithsonian's National Zoo and Conservation Biology Institute, 'Komodo dragon': largest living lizard; wild dragons typically weigh about 70 kilograms; largest verified specimen 3.13 metres and 166 kilograms; limited to a few Indonesian islands of the Lesser Sunda group.",
+      "Smithsonian's National Zoo, 'How Dangerous Are Komodo Dragons?': a venom gland in the lower jaw; the venom prevents blood from clotting.",
+      "Encyclopaedia Britannica, 'Komodo dragon': listed as Endangered by the IUCN in 2021 because 30 to 70 percent of its habitat could be lost to sea level rise by 2040.",
+      "Live Science, 'Komodo Dragon Facts', citing the Smithsonian National Zoological Park: uses its forked tongue to sample the air, like snakes.",
+      "House charter records: Komodo sailing months May to September.",
+    ],
+  },
+  "reef-manta-ray": {
+    id: "reef-manta-ray", region: "Indonesia", no: "02",
+    title: "The reef manta ray", latin: "Mobula alfredi · a regular at the cleaning station",
+    body: "Reef mantas keep appointments. They come to cleaning stations on the reef, where small fish pick off parasites and dead skin, and they are in Komodo National Park all year. Raja Ampat is one of the few places where both manta species live. Indonesia has protected both across all its waters since 2014.",
+    rows: [
+      { label: "Look for", text: "A ray hovering over one coral head while small fish work on it." },
+      { label: "Know", text: "Researchers tell one ray from another by photographs of its underside." },
+      { label: "Ask your guide", text: "Where to settle so the rays keep coming in. Never swim over the station." },
+      { label: "When", text: "All year in Komodo. Ask the house which months suit Raja Ampat." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/reef-manta-ray", version: 1795697320, alt: "Watercolour of a reef manta ray hovering above a coral head with small fish around it", width: 1000, height: 747, scene: true },
+    where: { label: "See the Indonesia yachts", href: "/voyages/indonesia#ships-h" },
+    sources: [
+      "Germanov et al. 2022, 'Residency, movement patterns, behavior and demographics of reef manta rays in Komodo National Park', PeerJ 10:e13302: globally threatened; manta fishing banned in Komodo in 2013; both species protected across Indonesia's exclusive economic zone in 2014; cleaning stations.",
+      "Murdoch University, 'Ray of hope for Indonesian manta populations' (on the same study): present year round in Komodo National Park; visit cleaning stations to have parasites and dead skin picked off by small fish.",
+      "Manta Trust, Raja Ampat Manta Project: Raja Ampat is one of the only places in the world where both manta species are resident.",
+      "Germanov and Marshall 2014, PLoS ONE 9(10):e110071: individuals identified from photographs of their ventral surfaces.",
+    ],
+  },
+  "whale-shark": {
+    id: "whale-shark", region: "Indonesia", no: "03",
+    title: "The whale shark", latin: "Rhincodon typus · the largest fish in the sea",
+    body: "The whale shark is the largest fish on Earth. In Indonesia it gathers beneath bagans, the floating platforms where fishers lift nets of small baitfish at night. Cenderawasih Bay and Saleh Bay are two of the only places known where whale sharks stay all year. The fishers count them as good luck.",
+    rows: [
+      { label: "Look for", text: "A broad spotted back under the platform, mouth open at the surface." },
+      { label: "Know", text: "Every shark has its own pattern of spots. It is listed as Endangered." },
+      { label: "Ask your guide", text: "How the swim is run, and how much room to give the shark." },
+      { label: "When", text: "All year in Cenderawasih Bay and Saleh Bay." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/whale-shark", version: 1795697360, alt: "Watercolour of a whale shark swimming just under the surface with its mouth open among small fish", width: 1000, height: 747, scene: true },
+    where: { label: "See the Indonesia yachts", href: "/voyages/indonesia#ships-h" },
+    sources: [
+      "Smithsonian Ocean, 'A Smiling Gentle Giant': the largest fish on Earth; in Cenderawasih Bay National Park the sharks interact with bagans, which provide anchovy.",
+      "Conservation International, 'New science cracks open the mystery of the world's largest fish': Saleh Bay and Cenderawasih Bay are two of the only known habitats where whale sharks live year round.",
+      "Conservation International, 'Deep dive: new findings from our whale shark watchers': bagan fishers use lift nets over a large platform to catch baitfish and see the whale shark as a good omen.",
+      "Frontiers in Marine Science (2025), doi 10.3389/fmars.2025.1607027: Endangered on the IUCN Red List; a bagan is a traditional lift-net platform used at night.",
+      "Asian Geographic (Sep to Oct 2017), 'Whale Shark', Bird's Head Seascape: every whale shark has a unique pattern of spots.",
+    ],
+  },
+  "wilsons-bird-of-paradise": {
+    id: "wilsons-bird-of-paradise", region: "Indonesia", no: "04",
+    title: "Wilson's bird-of-paradise", latin: "Cicinnurus respublica · two islands in the world",
+    body: "Wilson's bird-of-paradise lives on two islands and nowhere else: Waigeo and Batanta, in Raja Ampat. The male clears a patch of forest floor to make a court and displays there. He carries all the colour, a crimson back and a bare blue crown. The female is plain brown. It is listed as Near Threatened.",
+    rows: [
+      { label: "Look for", text: "A small, bright bird on a thin stem above a swept patch of ground." },
+      { label: "Know", text: "It keeps to hill forest, so seeing it means a walk ashore." },
+      { label: "Ask your guide", text: "Whether a hide can be arranged on Waigeo or Batanta during your sailing." },
+      { label: "When", text: "Ask the house. Raja Ampat sailings on file run from November to April." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/wilsons-bird-of-paradise", version: 1795697436, alt: "Watercolour of a male Wilson's bird-of-paradise on a sapling above a cleared patch of forest floor", width: 1000, height: 747, scene: true },
+    where: { label: "See the Raja Ampat charter", href: "/voyages/indonesia/raja-ampat-and-misool-charter" },
+    sources: [
+      "BirdLife International Data Zone, 'Wilson's Bird-of-paradise Cicinnurus respublica': endemic to Waigeo and Batanta; hill forest; Near Threatened.",
+      "Noske et al. 2012, Kukila 16(1): 39 to 44: display courts on Batanta; males clean the court floor.",
+      "Australian Geographic, 'Wilson's bird of paradise' (2014): crimson back; males alone carry the colours; females light brown with a darker blue crown.",
+      "Australian Museum, 'Wilson's Bird of Paradise': Waigeo and Batanta Islands, Raja Ampat group.",
+      "House charter records: Raja Ampat sailing months.",
+    ],
+  },
+  "walking-shark": {
+    id: "walking-shark", region: "Indonesia", no: "05",
+    title: "The Raja Ampat walking shark", latin: "Hemiscyllium freycineti · the shark that walks",
+    body: "This small spotted shark walks. It uses its fins as legs to cross the shallow reef, most often after dark, though it can swim perfectly well. Raja Ampat people call it kalabia. Walking sharks are the youngest sharks on Earth, about nine million years old as a group, and Indonesia gave six species full protection in 2023.",
+    rows: [
+      { label: "Look for", text: "A slim, spotted shark stepping across the reef flat on a night snorkel or dive." },
+      { label: "Know", text: "It does not travel far, so each species keeps to its own small patch of sea." },
+      { label: "Ask your guide", text: "Whether a night swim on a shallow reef can be added." },
+      { label: "When", text: "After dark, on any Raja Ampat sailing." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/walking-shark", version: 1795697458, alt: "Watercolour of a small spotted epaulette shark walking across a shallow coral reef on its fins", width: 1000, height: 747, scene: true },
+    where: { label: "See the Raja Ampat charter", href: "/voyages/indonesia/raja-ampat-and-misool-charter" },
+    sources: [
+      "New England Aquarium, Marine Conservation Action Fund, 'From Gaps to Discoveries: The Raja Ampat Epaulette Shark Research' (2024): Hemiscyllium freycineti, known locally as kalabia, walks with its fins.",
+      "BBC Wildlife (Discover Wildlife), Edy Setyawan, Elasmobranch Institute Indonesia: seen walking the reef on night dives in Raja Ampat.",
+      "Conservation International, 'Discovery afoot: new study cracks mystery of how walking sharks split': walking sharks evolved about 9 million years ago, the youngest sharks.",
+      "Conservation International press release, 23 Feb 2023: Ministerial Decree 30 of 2023 gives full protection to six walking shark species in Indonesia; limited dispersal.",
+      "The Star / Jakarta Post, 28 Jun 2026: able to swim; spotted pattern; walks across shallow reefs on pectoral and pelvic fins.",
+    ],
+  },
 };
 
 // Which notes sit on which country page (one or two per page).
@@ -550,12 +818,22 @@ export const AMAZON_HUB_NOTES = ["pink-river-dolphin", "giant-river-otter", "ara
 // The Galápagos voyages hub: the first note in full, the rest folded.
 export const GALAPAGOS_HUB_NOTES = ["galapagos-giant-tortoise", "marine-iguana", "blue-footed-booby", "galapagos-penguin", "waved-albatross", "galapagos-sea-lion"];
 
+// The Alaska, polar and Indonesia voyages hubs (James, 26 Nov 2026): the first note in full, the rest folded.
+export const ALASKA_HUB_NOTES = ["humpback-bubble-net", "alaska-brown-bear", "sea-otter", "bald-eagle", "orca"];
+export const POLAR_HUB_NOTES = ["gentoo-penguin", "leopard-seal", "weddell-seal", "wandering-albatross"];
+export const INDONESIA_HUB_NOTES = ["komodo-dragon", "reef-manta-ray", "whale-shark", "wilsons-bird-of-paradise", "walking-shark"];
+
 // Ship pages (James, 26 Nov 2026): one Field Note on each ship page, by the waters she sails. Only species met on any
 // route in those waters are listed here: no penguin or albatross in the Galápagos (they need the west, or Española in
 // season) and no clay lick or marmoset on the Amazon (western rivers only). No operator has confirmed sightings by ship.
 export const SHIP_FIELD_NOTES: Record<string, string[]> = {
   amazon: ["pink-river-dolphin", "giant-water-lily", "arapaima"],
   galapagos: ["galapagos-giant-tortoise", "marine-iguana", "blue-footed-booby", "galapagos-sea-lion"],
+  // Alaska: animals of the whole coast, not the bubble net (Southeast only). Antarctica: the Peninsula's regulars, not
+  // the albatross (open sea and South Georgia). Indonesia: the manta, found in both Komodo and Raja Ampat.
+  alaska: ["sea-otter", "bald-eagle", "orca"],
+  antarctica: ["gentoo-penguin", "leopard-seal", "weddell-seal"],
+  indonesia: ["reef-manta-ray"],
 };
 /** The note for one ship: the same ship always shows the same note, and sister ships differ. */
 export function shipFieldNote(waters: string, slug: string): FieldNote | null {
@@ -1213,8 +1491,325 @@ export const SPECIES_PAGES: Record<string, SpeciesPage> = {
       { name: "Tanzania", href: "/destinations/africa/tanzania", line: "Stays filed in the Ledger" },
     ],
   },
+  "humpback-bubble-net": {
+    noteId: "humpback-bubble-net",
+    title: "Where to See Humpback Whales Bubble-Net Feeding in Alaska",
+    answer: "Bubble-net feeding is a cooperative hunt in which humpback whales ring a school of fish with bubbles and rise through it together. It was first documented in Alaska and is a regular sight in Southeast Alaska. James Wild & Co files seven small boats that sail those waters.",
+    qa: [
+      { q: "What is bubble-net feeding?", a: "A group of humpbacks blows a curtain of bubbles around a school of fish such as herring to pack it together, then the whales rise through the middle with their mouths open." },
+      { q: "Where does it happen?", a: "It was first documented in Alaska, and it is a regular occurrence in Southeast Alaska." },
+      { q: "Will I see it on every sailing?", a: "No. The whales do not use bubble nets on every feed, so it depends on the week and the water." },
+      { q: "Have humpbacks recovered from whaling?", a: "They are recovering. Before the last whaling ban in 1985, most populations had been reduced by more than 95 percent." },
+    ],
+    photo: [
+      "Watch for the circle of bubbles first, then aim at its centre.",
+      "Shoot a burst. The lunge is over in a second or two.",
+      "Keep the horizon level. A tilted sea spoils more whale pictures than blur does.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Alaska", path: "/voyages/alaska" }],
+    reachTitle: "Small Ships in Alaska",
+    reach: [
+      { name: "Alaska by small ship", href: "/voyages/alaska#ships-h", line: "Seven boats for 22 to 88 guests" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "alaska-brown-bear": {
+    noteId: "alaska-brown-bear",
+    title: "Where to See Coastal Brown Bears in Alaska",
+    answer: "Coastal brown bears and grizzlies are the same species, Ursus arctos. The coast bears are larger and live closer together because they have salmon, clams and sedge. Alaska has about 30,000 brown bears, and James Wild & Co files small boats that work the shores where they feed.",
+    qa: [
+      { q: "Is a brown bear the same as a grizzly?", a: "Yes. They are one species. Bears on the coast are called brown bears and bears of the interior are called grizzlies." },
+      { q: "Why are coastal bears bigger?", a: "Food. Spawning salmon, shore plants and a milder climate let them grow larger and live at higher densities." },
+      { q: "How many brown bears live in Alaska?", a: "About 30,000." },
+      { q: "When is the best time to see them?", a: "Summer and early autumn, when they are feeding on the coast. They den for the winter." },
+    ],
+    photo: [
+      "From a skiff you are low and level with the bear, which is the best angle there is.",
+      "Leave room around the animal for the shore and the forest. The setting is the picture.",
+      "Overcast light suits dark fur. Do not wish for sun.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Alaska", path: "/voyages/alaska" }],
+    reachTitle: "Small Ships in Alaska",
+    reach: [
+      { name: "Alaska by small ship", href: "/voyages/alaska#ships-h", line: "Seven boats for 22 to 88 guests" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "sea-otter": {
+    noteId: "sea-otter",
+    title: "Where to See Sea Otters in Alaska",
+    answer: "About 90 percent of the world's sea otters live in coastal Alaska. The sea otter is the largest member of the weasel family, keeps warm with the thickest fur of any animal and uses rocks to open shells. James Wild & Co files small boats that sail their waters.",
+    qa: [
+      { q: "Where do most sea otters live?", a: "In Alaska. About nine in ten of the world's sea otters live on its coast." },
+      { q: "How do sea otters stay warm?", a: "With fur. They have no blubber, and their coat is the thickest of any animal. Grooming keeps air and heat trapped against the skin." },
+      { q: "Do sea otters use tools?", a: "Yes. They use rocks to open shells that are hard to crack." },
+      { q: "Why do sea otters matter to the coast?", a: "They are a keystone species. By eating sea urchins they shape the shore community they live in." },
+    ],
+    photo: [
+      "Stay quiet and let the boat drift. An otter that is not alarmed keeps eating.",
+      "A face turned to the lens makes the picture. Wait for it.",
+      "Kelp around the animal gives the frame its place.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Alaska", path: "/voyages/alaska" }],
+    reachTitle: "Small Ships in Alaska",
+    reach: [
+      { name: "Alaska by small ship", href: "/voyages/alaska#ships-h", line: "Seven boats for 22 to 88 guests" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "bald-eagle": {
+    noteId: "bald-eagle",
+    title: "Where to See Bald Eagles in Alaska",
+    answer: "Alaska has more bald eagles than anywhere else in the United States, about 70,000 birds, and they nest most densely on the islands of Southeast Alaska. James Wild & Co files small boats that sail that shoreline.",
+    qa: [
+      { q: "How many bald eagles live in Alaska?", a: "About 70,000, more than anywhere else in the United States." },
+      { q: "Where do they nest?", a: "Most densely on the islands of Southeast Alaska, in old-growth trees along saltwater shorelines." },
+      { q: "Why is it called bald?", a: "Bald once meant white. The name is for the white head of the adult." },
+      { q: "When do bald eagles get the white head?", a: "At about five years. Younger birds are mottled brown and white." },
+    ],
+    photo: [
+      "A bird in a tree is a portrait. A bird leaving the tree is a picture, so be ready before it goes.",
+      "Expose for the white head, or it burns out.",
+      "Dark forest behind the bird makes the head stand out.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Alaska", path: "/voyages/alaska" }],
+    reachTitle: "Small Ships in Alaska",
+    reach: [
+      { name: "Alaska by small ship", href: "/voyages/alaska#ships-h", line: "Seven boats for 22 to 88 guests" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "orca": {
+    noteId: "orca",
+    title: "Where to See Orcas in Alaska",
+    answer: "The orca is the largest dolphin and the ocean's top predator. Alaska has three kinds, resident, transient and offshore, which share the same waters but keep apart and eat different prey. James Wild & Co files small boats that sail those waters.",
+    qa: [
+      { q: "Is an orca a whale or a dolphin?", a: "A dolphin. It is the largest member of the dolphin family." },
+      { q: "What is the difference between resident and transient orcas?", a: "Residents eat fish, salmon above all. Transients hunt marine mammals such as harbor seals, porpoises and sea lions. The two have not been seen mixing." },
+      { q: "How big is an orca pod in Alaska?", a: "Most number fewer than 40. A pod is a mother and her offspring of both sexes." },
+      { q: "When can you see orcas in Alaska?", a: "Through the sailing season. Sightings depend on the route and the week." },
+    ],
+    photo: [
+      "Watch the direction of travel and aim ahead of the last fin.",
+      "Include the shore. Fins against mountains say Alaska.",
+      "Keep shooting after the fins go down. A second animal often follows.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Alaska", path: "/voyages/alaska" }],
+    reachTitle: "Small Ships in Alaska",
+    reach: [
+      { name: "Alaska by small ship", href: "/voyages/alaska#ships-h", line: "Seven boats for 22 to 88 guests" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "gentoo-penguin": {
+    noteId: "gentoo-penguin",
+    title: "Where to See Gentoo Penguins in Antarctica",
+    answer: "The gentoo penguin breeds on the Antarctic Peninsula and many sub-Antarctic islands. It is the fastest bird under water, at about 36 kilometres an hour, and is known by its red-orange bill and the white patch over each eye. James Wild & Co files polar voyages to the Peninsula, South Georgia and the Falklands.",
+    qa: [
+      { q: "How do you recognise a gentoo penguin?", a: "By the bright red-orange bill and the white patch over each eye. No other penguin has both." },
+      { q: "How fast can a gentoo swim?", a: "About 36 kilometres an hour. It is the fastest bird under water." },
+      { q: "Where do gentoo penguins live?", a: "On the Antarctic Peninsula and many sub-Antarctic islands." },
+      { q: "What hunts gentoo penguins?", a: "At sea, leopard seals and orcas." },
+    ],
+    photo: [
+      "Sit down and wait. Penguins walk past a still person.",
+      "Get low. Eye level changes everything.",
+      "Snow and ice fool the meter, so add exposure.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Polar Voyages", path: "/voyages/polar" }],
+    reachTitle: "Polar Voyages with the House",
+    reach: [
+      { name: "Polar Voyages", href: "/voyages/polar#finder-h", line: "Antarctica, South Georgia and the Falklands" },
+      { name: "The ship James sailed", href: "/voyages/polar#sailed-h", line: "The Antarctic Peninsula, 2020" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "leopard-seal": {
+    noteId: "leopard-seal",
+    title: "Where to See Leopard Seals in Antarctica",
+    answer: "The leopard seal is a solitary hunter of the Antarctic pack ice and, with the orca, the top predator of those seas. It eats penguins, fish, squid and krill. James Wild & Co files polar voyages to the Antarctic Peninsula.",
+    qa: [
+      { q: "What do leopard seals eat?", a: "Almost anything: penguins, fish, squid and krill. Their teeth are shaped to strain krill from the water." },
+      { q: "How big is a leopard seal?", a: "Females are the larger sex and can reach 3.8 metres and 500 kilograms." },
+      { q: "Does anything hunt the leopard seal?", a: "Only the orca." },
+      { q: "Where do leopard seals live?", a: "Alone, in the pack ice around Antarctica." },
+    ],
+    photo: [
+      "From a small boat, shoot along the floe, not down on it.",
+      "Wait for the head to lift. The face is the picture.",
+      "Blue ice under grey sky gives the best colour.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Polar Voyages", path: "/voyages/polar" }],
+    reachTitle: "Polar Voyages with the House",
+    reach: [
+      { name: "Polar Voyages", href: "/voyages/polar#finder-h", line: "Antarctica, South Georgia and the Falklands" },
+      { name: "The ship James sailed", href: "/voyages/polar#sailed-h", line: "The Antarctic Peninsula, 2020" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "weddell-seal": {
+    noteId: "weddell-seal",
+    title: "Where to See Weddell Seals in Antarctica",
+    answer: "The Weddell seal breeds farther south than any other mammal. It lives under the ice fastened to the land, keeps its breathing holes open with its teeth and can dive for 45 minutes to 720 metres. James Wild & Co files polar voyages to the Antarctic Peninsula.",
+    qa: [
+      { q: "How does a Weddell seal breathe under the ice?", a: "Through cracks and holes. In winter it rasps the ice with its teeth to keep the holes open." },
+      { q: "How deep can a Weddell seal dive?", a: "As deep as 720 metres, staying under for up to 45 minutes." },
+      { q: "Which mammal lives farthest south?", a: "The Weddell seal is the most southerly breeding mammal on Earth." },
+      { q: "Can you hear a Weddell seal?", a: "Yes. Its underwater calls are loud enough for a person standing on the ice to hear." },
+    ],
+    photo: [
+      "A sleeping seal is a study in texture. Go close with a long lens, not with your feet.",
+      "Wait for a yawn or a scratch.",
+      "Keep some ice in the frame to show where it lives.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Polar Voyages", path: "/voyages/polar" }],
+    reachTitle: "Polar Voyages with the House",
+    reach: [
+      { name: "Polar Voyages", href: "/voyages/polar#finder-h", line: "Antarctica, South Georgia and the Falklands" },
+      { name: "The ship James sailed", href: "/voyages/polar#sailed-h", line: "The Antarctic Peninsula, 2020" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "wandering-albatross": {
+    noteId: "wandering-albatross",
+    title: "Where to See the Wandering Albatross",
+    answer: "The wandering albatross has the largest wingspan of any living bird, up to 3.5 metres, and ranges around the whole Southern Ocean. It breeds on a few islands, South Georgia among them, and is listed as Vulnerable. James Wild & Co files polar voyages that cross those seas.",
+    qa: [
+      { q: "How wide are a wandering albatross's wings?", a: "Up to 3.5 metres, the largest wingspan of any living bird." },
+      { q: "Where does it breed?", a: "On South Georgia, Prince Edward and Marion, Crozet, Kerguelen and Macquarie islands." },
+      { q: "Where will I see one?", a: "On the open sea. It ranges right around the Southern Ocean and is known to follow boats for days." },
+      { q: "Is it threatened?", a: "Yes. It is listed as Vulnerable." },
+    ],
+    photo: [
+      "Stand at the stern and track the bird as it comes down the wake.",
+      "Use a fast shutter. The ship moves as much as the bird.",
+      "A wave below the wing gives the picture its scale.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Polar Voyages", path: "/voyages/polar" }],
+    reachTitle: "Polar Voyages with the House",
+    reach: [
+      { name: "Polar Voyages", href: "/voyages/polar#finder-h", line: "Antarctica, South Georgia and the Falklands" },
+      { name: "The ship James sailed", href: "/voyages/polar#sailed-h", line: "The Antarctic Peninsula, 2020" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "komodo-dragon": {
+    noteId: "komodo-dragon",
+    title: "Where to See Komodo Dragons in Indonesia",
+    answer: "The Komodo dragon is the largest living lizard and lives only on a few Indonesian islands, among them Komodo, Rinca and Flores. It has been listed as Endangered since 2021. James Wild & Co files yachts and private charters that sail Komodo.",
+    qa: [
+      { q: "How big is a Komodo dragon?", a: "A wild adult weighs about 70 kilograms. The largest verified was 3.13 metres long and 166 kilograms." },
+      { q: "Where do Komodo dragons live?", a: "On a few Indonesian islands of the Lesser Sundas, among them Komodo, Rinca and Flores." },
+      { q: "Are Komodo dragons venomous?", a: "Yes. A gland in the lower jaw makes venom that stops blood from clotting." },
+      { q: "Are they endangered?", a: "Yes, since 2021. Rising seas are expected to take a large share of their habitat." },
+    ],
+    photo: [
+      "Get low only where the ranger says you may. A long lens does the rest.",
+      "The tongue is the picture. Wait for the flick.",
+      "Early light on dry grass gives the islands their colour.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Indonesia", path: "/voyages/indonesia" }],
+    reachTitle: "Yachts and Charters in Indonesia",
+    reach: [
+      { name: "Komodo and Flores charter", href: "/voyages/indonesia/komodo-and-flores-charter", line: "A private week among the dragon islands" },
+      { name: "Indonesia yachts", href: "/voyages/indonesia#ships-h", line: "Phinisis and yachts filed in the Ledger" },
+      { name: "Komodo", href: "/destinations/asia/indonesia/komodo", line: "The islands and the park" },
+    ],
+  },
+  "reef-manta-ray": {
+    noteId: "reef-manta-ray",
+    title: "Where to See Manta Rays in Indonesia",
+    answer: "Reef manta rays are in Komodo National Park all year, and Raja Ampat is one of the few places where both manta species live. Indonesia has protected both species across all its waters since 2014. James Wild & Co files yachts and private charters in both places.",
+    qa: [
+      { q: "Where can you see manta rays in Indonesia?", a: "Komodo National Park has reef mantas all year. Raja Ampat has both the reef manta and the oceanic manta." },
+      { q: "What is a manta cleaning station?", a: "A spot on the reef where mantas come to have parasites and dead skin picked off by small fish." },
+      { q: "Are manta rays protected in Indonesia?", a: "Yes. Both species have been protected across Indonesia's waters since 2014." },
+      { q: "How do researchers tell mantas apart?", a: "From photographs of the underside, which differs from one ray to the next." },
+    ],
+    photo: [
+      "Stay low and still at the edge of the station. The rays come to you.",
+      "Shoot upward so the white belly shows against the surface.",
+      "No flash. It adds nothing at this distance.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Indonesia", path: "/voyages/indonesia" }],
+    reachTitle: "Yachts and Charters in Indonesia",
+    reach: [
+      { name: "Indonesia yachts", href: "/voyages/indonesia#ships-h", line: "Phinisis and yachts filed in the Ledger" },
+      { name: "Komodo and Flores charter", href: "/voyages/indonesia/komodo-and-flores-charter", line: "A private week among the dragon islands" },
+      { name: "Raja Ampat and Misool charter", href: "/voyages/indonesia/raja-ampat-and-misool-charter", line: "A private week in Raja Ampat" },
+    ],
+  },
+  "whale-shark": {
+    noteId: "whale-shark",
+    title: "Where to Swim with Whale Sharks in Indonesia",
+    answer: "The whale shark is the largest fish on Earth. In Indonesia it gathers under bagans, the fishers' floating platforms, and Cenderawasih Bay and Saleh Bay are two of the only places known where whale sharks stay all year. James Wild & Co files yachts and charters that include whale shark sailings.",
+    qa: [
+      { q: "Where can you swim with whale sharks in Indonesia?", a: "Cenderawasih Bay in Papua and Saleh Bay in Sumbawa, where the sharks gather under fishing platforms called bagans." },
+      { q: "When is the best time?", a: "The sharks are in both bays all year." },
+      { q: "Why do whale sharks come to the platforms?", a: "For the small baitfish the fishers net there at night. The fishers count the sharks as good luck." },
+      { q: "Is the whale shark endangered?", a: "Yes. It is listed as Endangered." },
+    ],
+    photo: [
+      "Swim beside the shark, never in front of it.",
+      "A wide lens and a little distance show the whole animal.",
+      "Morning light through the surface draws lines on its back.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Indonesia", path: "/voyages/indonesia" }],
+    reachTitle: "Yachts and Charters in Indonesia",
+    reach: [
+      { name: "Indonesia yachts", href: "/voyages/indonesia#ships-h", line: "Phinisis and yachts filed in the Ledger" },
+      { name: "Komodo and Flores charter", href: "/voyages/indonesia/komodo-and-flores-charter", line: "A private week among the dragon islands" },
+      { name: "Raja Ampat and Misool charter", href: "/voyages/indonesia/raja-ampat-and-misool-charter", line: "A private week in Raja Ampat" },
+    ],
+  },
+  "wilsons-bird-of-paradise": {
+    noteId: "wilsons-bird-of-paradise",
+    title: "Where to See Wilson's Bird-of-Paradise in Raja Ampat",
+    answer: "Wilson's bird-of-paradise lives only on Waigeo and Batanta in Raja Ampat. The male clears a court on the forest floor and displays there. It is listed as Near Threatened. James Wild & Co files yachts and a private charter in Raja Ampat.",
+    qa: [
+      { q: "Where does Wilson's bird-of-paradise live?", a: "Only on the islands of Waigeo and Batanta in Raja Ampat, in hill forest." },
+      { q: "What does the male do at his court?", a: "He clears a patch of forest floor and displays there to visiting females." },
+      { q: "What does it look like?", a: "The male has a crimson back and a bare blue crown. The female is light brown with a darker blue crown." },
+      { q: "Is it threatened?", a: "It is listed as Near Threatened." },
+    ],
+    photo: [
+      "You will be in a hide in dim forest. Bring your fastest lens.",
+      "Stay silent and still. The bird decides how long you get.",
+      "Take the wide view of the court as well as the close one.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Indonesia", path: "/voyages/indonesia" }],
+    reachTitle: "Yachts and Charters in Indonesia",
+    reach: [
+      { name: "Raja Ampat and Misool charter", href: "/voyages/indonesia/raja-ampat-and-misool-charter", line: "A private week in Raja Ampat" },
+      { name: "Indonesia yachts", href: "/voyages/indonesia#ships-h", line: "Phinisis and yachts filed in the Ledger" },
+      { name: "Raja Ampat", href: "/destinations/asia/indonesia/raja-ampat", line: "The islands and the reefs" },
+    ],
+  },
+  "walking-shark": {
+    noteId: "walking-shark",
+    title: "Where to See the Walking Shark in Raja Ampat",
+    answer: "The Raja Ampat epaulette shark, known locally as kalabia, uses its fins to walk across shallow reef, most often at night. Indonesia gave six walking shark species full protection in 2023. James Wild & Co files yachts and a private charter in Raja Ampat.",
+    qa: [
+      { q: "Can a shark really walk?", a: "Yes. Walking sharks use their pectoral and pelvic fins as legs to cross the reef. They can also swim." },
+      { q: "When can you see one?", a: "After dark, on shallow reef." },
+      { q: "How old are walking sharks?", a: "As a group they evolved about nine million years ago, which makes them the youngest sharks on Earth." },
+      { q: "Are walking sharks protected?", a: "Yes. Indonesia gave six species full protection in 2023." },
+    ],
+    photo: [
+      "Use a dim light held to one side, and keep it brief.",
+      "Stay off the reef. Float, do not stand.",
+      "Shoot from the side to show the fins at work.",
+    ],
+    parent: [{ name: "Voyages", path: "/voyages" }, { name: "Indonesia", path: "/voyages/indonesia" }],
+    reachTitle: "Yachts and Charters in Indonesia",
+    reach: [
+      { name: "Raja Ampat and Misool charter", href: "/voyages/indonesia/raja-ampat-and-misool-charter", line: "A private week in Raja Ampat" },
+      { name: "Indonesia yachts", href: "/voyages/indonesia#ships-h", line: "Phinisis and yachts filed in the Ledger" },
+      { name: "Raja Ampat", href: "/destinations/asia/indonesia/raja-ampat", line: "The islands and the reefs" },
+    ],
+  },
 };
 
 
 // /wildlife: every species page, grouped by region, in this order.
-export const WILDLIFE_REGIONS = ["Africa", "Madagascar", "Amazon", "Galápagos"];
+export const WILDLIFE_REGIONS = ["Africa", "Madagascar", "Amazon", "Galápagos", "Alaska", "Antarctica", "Indonesia"];

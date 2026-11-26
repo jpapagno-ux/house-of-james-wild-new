@@ -20,7 +20,7 @@
       "/voyages/[waters]": "A waters hub is a place, not a result.",
       "/overland/[country]": "A country hub is a place, not a result.",
       "/pathways/[key]": "A Wild Pathway feeds the Interests filter, not a result.",
-      "/partners/[partner]": "Reading, not bookable. Second pass (James to rule).",
+      "/partners/[partner]": "Reading, not bookable. Returned by the house search under Partners of the house (James, 26 Nov 2026); not an Atlas result.",
       "/journal/[slug]": "Reading, not bookable. Returned by the house search under Journal and field guides (James, 24 Nov 2026); not an Atlas result.",
       "/wildlife/[slug]": "Reading, not bookable. Returned by the house search under Wildlife (James, 24 Nov 2026); not an Atlas result.",
       "/advisors/[slug]": "People, not places. The Atlas returns where to go.",
@@ -46,14 +46,14 @@
       "journal-style": "Design samples.",
       "legal": "House terms.",
       "offers": "Offers ride on the place they apply to; they are not results of their own.",
-      "partners": "Reading, not bookable. Second pass (James to rule).",
+      "partners": "Reading, not bookable. Returned by the house search under Partners of the house (James, 26 Nov 2026); not an Atlas result.",
       "pathways": "Pathways feed the Interests filter.",
       "plan": "The enquiry form.",
       "search": "The site search.",
       "the-ledger": "House page.",
       "travel-notes": "Newsletter sign-up.",
       "wildlife": "Reading, not bookable. Returned by the house search under Wildlife (James, 24 Nov 2026); not an Atlas result.",
-      "workshops": "Sessions, not places. Second pass (James to rule)."
+      "workshops": "Sessions, not places. Returned by the house search under House Sessions while a date is ahead or a recording is filed (James, 26 Nov 2026); not an Atlas result."
     },
     "private": ["account", "advisor", "api", "auth", "desk", "img", "og", "partner", "preview", "llms.txt"]
   }

@@ -13,6 +13,8 @@ import { JOURNEYS, journeyPath } from "@/lib/content/ships/journeys";
 import PLACES from "@/lib/content/places-library.json";
 import { TY_DOSSIERS, TY_PATH, tyPath } from "@/lib/content/terra-y";
 import { GUIDES } from "@/lib/content/guides";
+import { WORKSHOPS_PATH, recordings, upcoming } from "@/lib/content/workshops";
+import { SITE_TZ } from "@/lib/dates";
 import { PARTNER_LIST, partnerPath } from "@/lib/content/partners";
 import { FIELD_NOTES, SPECIES_PAGES } from "@/lib/field-notes/notes";
 import { speciesCountries, speciesName } from "@/lib/field-notes/by-place";
@@ -47,6 +49,8 @@ const PAGES: [string, string, string][] = [
   ["The Ledger", "/the-ledger", "How every stay, camp and ship is vetted and numbered"],
   ["What's coming", "/whats-coming", "Lodges and ships opening soon"],
   ["Offers", "/offers", "On the Horizon: current offers from the house's partners"],
+  ["Partners of the house", "/partners", "The lodges, camps, ships and operators the house works with, each with its own page"],
+  ["House Sessions: live workshops", "/workshops", "Free live travel workshops and destination talks with James, our hosts and partners, and the recordings"],
   ["Plan with James", "/plan", "Tell James where you are thinking of going"],
 ];
 
@@ -127,6 +131,16 @@ export function GET() {
     if (!p.approved) continue;
     const cs = namedIn(`${p.place} ${p.title}`);
     add({ t: "page", n: p.title, u: `/journal/${p.slug}`, k: "Journal", p: p.place || null, r: cs[0]?.region ?? null, f: [], g: `${p.dek} ${p.description} ${p.shelf}, story by James`, c: cs.map((c) => c.name) });
+  }
+  // House Sessions (James, 26 Nov 2026: "Partners and workshops in search. Yes build this"). One rule for dates
+  // (lib/dates.ts, through upcoming and recordings): a session shows until its day has passed, then only if it has a
+  // recording. Advisor Briefings stay inside the Advisor Desk and are never listed here.
+  const dayOf = (iso?: string) => (iso ? new Date(iso).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric", timeZone: SITE_TZ }) : null);
+  for (const [list, kind] of [[upcoming(), "Live session"], [recordings(), "Recording"]] as const) {
+    for (const s of list) {
+      const cs = namedIn(`${s.title} ${s.about.map((x) => x.name).join(" ")}`);
+      add({ t: "page", n: s.title, u: `${WORKSHOPS_PATH}#${s.slug}`, k: "Session", p: kind === "Live session" ? dayOf(s.start) ?? kind : kind, r: cs[0]?.region ?? null, f: [], g: `${s.description} ${s.hosts.join(", ")}. ${s.about.map((x) => x.name).join(", ")}. House Sessions, ${kind.toLowerCase()}, workshop, webinar`, c: cs.map((c) => c.name) });
+    }
   }
   for (const g of FIELD_GUIDES) {
     const cs = namedIn(`${g.place} ${g.title}`);

@@ -8795,5 +8795,286 @@
       }
     },
     "extra": []
+  },
+  "lion-sands-river-lodge": {
+    "describe": {
+      "6848271b4fafe5adcc668e9c_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20suite%20Room%20exterior%20(1)": {
+        "alt": "A River Lodge suite on its deck among the trees, Lion Sands",
+        "section": "exterior"
+      },
+      "6834569a9251463dbd3d1ea8_Lion%20Sands_River_Lodge_Facilities_Guest%20Dining%20Area": {
+        "alt": "The River Lodge main area and its pond lit at dusk, Lion Sands",
+        "section": "exterior"
+      },
+      "6834577180fc86c5306ef9b1_LionSandsRiver_March25_Dining1": {
+        "alt": "The River Lodge dining room under lanterns, Lion Sands",
+        "section": "dining"
+      },
+      "683457a6d17663fd14f91c3f_Lion%20Sands%20River%20Lodge%20Main%20Pool%20sunset": {
+        "alt": "The River Lodge pool under old trees at sunset, Lion Sands",
+        "section": "pool"
+      },
+      "683457b20d5d23498fbf3538_Lion%20Sands%20River%20Lodge%20Main%20area%20lounge%20mornings": {
+        "alt": "The River Lodge lounge with windows onto the bush",
+        "section": "dining"
+      },
+      "683457bd54781cb3a7d8c6f4_Lion%20Sands%20River%20Lodge%20Main%20area%20lounge-1": {
+        "alt": "The River Lodge bar and lounge, Lion Sands",
+        "section": "dining"
+      },
+      "683457c60cc8d9df68b669b7_Lion%20Sands%20River%20Lodge%20Food-2": {
+        "alt": "A plate from the River Lodge kitchen with fresh mango",
+        "section": "dining"
+      },
+      "683457d03b1765fb446b403a_Lion%20Sands%20River%20Lodge%20Fire%20deck-1": {
+        "alt": "The sunken fire deck at River Lodge lit by lanterns at night",
+        "section": "exterior"
+      },
+      "683457d69a5b8729adda8967_Lion%20Sands%20River%20Lodge%20Creative%20Lab": {
+        "alt": "The Creative Lab at River Lodge, a photographic studio with the guides",
+        "section": "experiences"
+      },
+      "683457dd6f2d874afef26a3a_Lion%20Sands%20River%20Lodge%20Boma": {
+        "alt": "Tables set around the fire in the River Lodge boma at dusk",
+        "section": "dining"
+      },
+      "683457eb69d733fb26e67309_Rocky%20Ridge%20Female-1": {
+        "alt": "A leopard in the trees near River Lodge, Lion Sands",
+        "section": "experiences"
+      },
+      "6834592be8494a181bab4d8f_Lion%20Sands%20_River%20Lodge_3_%20Luxury%20Suite_Twin%20Bedroom%20Setup": {
+        "alt": "A River Lodge Luxury Room with twin beds",
+        "section": "rooms"
+      },
+      "6834593b9771cd4eddaad5d9_Lion%20sands%20River%20Lodge%20River%20Suite%20Lounge": {
+        "alt": "A River Suite lounge opening to its deck over the Sabie River",
+        "section": "rooms"
+      },
+      "683459416b7c0a7860953843_Lion%20Sands%20River%20Lodge%20Luxury%20room": {
+        "alt": "A River Lodge Luxury Room bedroom",
+        "section": "rooms"
+      },
+      "683459510ead5a5fe929c872_Lion%20Sands%20River%20Lodge%20River%20suite%20bedroom": {
+        "alt": "A River Suite bedroom at River Lodge",
+        "section": "rooms"
+      },
+      "68345a1df137f47c4d3a37ed_Lion%20Sands%20_River%20Lodge_3_Superior%20Luxury%20Suite_En-Suite%20Bathroom": {
+        "alt": "A Superior Luxury Suite bathroom at River Lodge",
+        "section": "rooms"
+      },
+      "68345a234092738789138f7f_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Room%20Bedroom%20(1)": {
+        "alt": "A Superior Luxury Room bedroom opening onto the river",
+        "section": "rooms"
+      },
+      "68345a29fa89d167db5f2f42_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20suite%20Room%20exterior": {
+        "alt": "A Superior Luxury Room and its deck among the trees, River Lodge",
+        "section": "exterior"
+      },
+      "68345a30506f0d5b6f484f07_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Suite%20": {
+        "alt": "A Superior Luxury Suite bedroom at River Lodge",
+        "section": "rooms"
+      },
+      "68345a392ab3a50d23946d0b_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Room%20Outside%20deck": {
+        "alt": "The deck of a Superior Luxury Room above the Sabie River",
+        "section": "exterior"
+      },
+      "68345c63bea8f3207185d09a_Lion%20Sands%20_River%20Lodge_3_River%20Suite_Bedroom%20Interior%20(1)": {
+        "alt": "A River Suite bedroom opening onto its deck and the bush",
+        "section": "rooms"
+      },
+      "68345c763271258ec8a382b6_Lion%20Sands%20River%20Lodge%20River%20Suite-1": {
+        "alt": "A River Suite bedroom looking out over the riverbank",
+        "section": "rooms"
+      },
+      "6834b7804f8ddd95c2e6bf12_family-river-suite-overview-1": {
+        "alt": "The Family River Suite bedroom at River Lodge",
+        "section": "rooms"
+      },
+      "6834b7c1cc57f497a02d5670_LionSandsRiver_March25_Suite%20from%20River04": {
+        "alt": "The outdoor shower and plunge pool of a River Suite",
+        "section": "rooms"
+      },
+      "6834b7d60d720074134258c9_LionSandsRiver_March25_Suite_from_River05_preview_maxWidth_1600_maxHeight_1600": {
+        "alt": "A River Suite and its plunge pool on the lawn, River Lodge",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "lion-sands-narina-lodge": {
+    "describe": {
+      "6945b1f321fa55acdfeea0d0_Lion%20Sands%20Narina%20Lodge%20FRONT%20ENTRANCE%20-%20Medium": {
+        "alt": "The wooden walkway to Narina Lodge under thatch and trees, Lion Sands",
+        "section": "exterior"
+      },
+      "6945b1fade308a5ce663d9a7_Lion%20Sands%20Narina%20Lodge%20-%20Deck%20-%20Medium": {
+        "alt": "Narina Lodge and its decks raised above the grass by the Sabie River",
+        "section": "exterior"
+      },
+      "6945b1fadfb9ce7cd4f68ce2_Lion%20Sands%20Narina%20Lodge%20ELEPHANT%20CROSSING%20-%20Medium": {
+        "alt": "A guest on the Narina Lodge deck watching elephants cross the Sabie River",
+        "section": "experiences"
+      },
+      "6945b1fab4526091f728b6bf_Lion%20Sands%20Narina%20Lodge%20FIRE%20deck%20EVENING%20-%20Medium": {
+        "alt": "The fire deck at Narina Lodge in the evening above the river",
+        "section": "exterior"
+      },
+      "6945b1fac8f2e524c4678dc9_Lion%20Sands%20Narina%20Lodge%20LOUNGERS%203%20-%20Medium": {
+        "alt": "The shaded deck lounge at Narina Lodge among the trees",
+        "section": "exterior"
+      },
+      "6945b1fa559b89e28edeab86_Lion%20Sands_Narina%20Lodge_2_Guest%20Area%20Views%20-%20Medium": {
+        "alt": "Elephants grazing on the bank of the Sabie River below Narina Lodge",
+        "section": "experiences"
+      },
+      "6945b1fa5ccd4f4cac0f5c0d_Lion%20Sands_Narina%20Lodge_2_Guest%20Lounge%20Area%20-%20Medium": {
+        "alt": "The Narina Lodge lounge and fireplace open to the river at dusk",
+        "section": "dining"
+      },
+      "6945b1fa0edebabe4f725d2d_Lion%20Sands_Narina%20Lodge_2_Lodge%20Views-1%20-%20Medium": {
+        "alt": "Elephants feeding beside the thatched roofs of Narina Lodge",
+        "section": "experiences"
+      },
+      "6945b18d20769f82c8034959_Lion%20Sands_Narina%20Lodge_3_Suite_Views%20-%20Medium": {
+        "alt": "A Narina Suite deck and plunge pool facing the river at sunset",
+        "section": "pool"
+      },
+      "6945b18d77bc201f21e991a0_Lion%20Sands%20Narina%20%20Lodge%20Suite%20BEDROOM%20OPTION%20-%20Medium": {
+        "alt": "A Narina Suite bedroom opening to its deck and loungers",
+        "section": "rooms"
+      },
+      "6945b18db4526091f728a1b3_Lion%20Sands%20Narina%20Lodge%20ROOM%20EXTERIOR%20-%20Medium": {
+        "alt": "A thatched Narina Suite and its walkway among the trees",
+        "section": "exterior"
+      },
+      "6945b18d4d6aa4e2735197be_Lion%20Sands%20Narina%20Lodge%20Suite%20WIDE%20-%20Medium": {
+        "alt": "A Narina Suite with its lounge and bed under a net",
+        "section": "rooms"
+      },
+      "6945b18e3a0f4d65b7837067_Lion%20Sands_Narina%20Lodge_3_Suite_Bathroom-2%20-%20Medium": {
+        "alt": "A Narina Suite bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lion-sands-tinga-lodge": {
+    "describe": {
+      "6945ae4f88fd26ad74ba7b03_Lion%20Sands%20Tinga%20Lodge%20arrival%20safari%20vehicles%20-%20Medium": {
+        "alt": "Guides and their vehicles at the Tinga Lodge entrance, Lion Sands",
+        "section": "exterior"
+      },
+      "6945ae4f575dca03a5a33e90_Lion%20sands%20Tinga%20Lodge%20Bar%20-%20Medium": {
+        "alt": "The bar at Tinga Lodge",
+        "section": "dining"
+      },
+      "6945ae4fb65601920f91d3b0_Lion%20Sands%20Tinga%20Lodge%20Bush%20stop%20-%20Medium": {
+        "alt": "A bush stop at sunset on a Tinga Lodge game drive",
+        "section": "experiences"
+      },
+      "6945ae4f9e392e85df51b427_Lion%20Sands%20Tinga%20Lodge%20fire%20deck%20morning%20-%20Medium": {
+        "alt": "The fire deck at Tinga Lodge above the bush in the morning",
+        "section": "exterior"
+      },
+      "6945ae4ff583e3b6695619a9_Lion%20Sands%20Tinga%20Lodge%20Main%20lodge%20veranda%20-%20Medium": {
+        "alt": "The main lodge veranda at Tinga Lodge looking into the trees",
+        "section": "dining"
+      },
+      "6945ae4f224ce8193c468598_Lion%20Sands%20Tinga%20Lodge%20pool%20service%20-%20Medium": {
+        "alt": "The Tinga Lodge pool and deck above the Sabie River",
+        "section": "pool"
+      },
+      "6945ae4f4b44a6c548548e33_Lion%20Sands%20Tinga%20Main%20Lodge1-1%20-%20Medium": {
+        "alt": "The main lodge lounge at Tinga Lodge",
+        "section": "dining"
+      },
+      "6945ae73969db5ff6a100996_Lion%20Sands%20Tinga%20Lodge%20Suite1%20-%20Medium": {
+        "alt": "A Tinga Suite with glass doors open to its deck and the river",
+        "section": "rooms"
+      },
+      "6945ae88fb3592288cf8a50b_Lion%20Sands%20Tinga%20Lodge%20Suite%20bedroom%20-%20Medium": {
+        "alt": "A Tinga Suite bedroom under a mosquito net",
+        "section": "rooms"
+      },
+      "6945ae88fe990240c25b95b2_Lion%20Sands%20Tinga%20Lodge%20Suite%20outside%20deck%20loungers%20-%20Medium": {
+        "alt": "A Tinga Suite deck with loungers and plunge pool among the trees",
+        "section": "pool"
+      },
+      "6945ae88c8f2e524c466e310_Lion%20Sands%20Tinga%20Lodge%20Suite%20Private%20pool%20-%20Medium": {
+        "alt": "A Tinga Suite plunge pool facing the sunset over the Sabie River",
+        "section": "pool"
+      },
+      "6945ae8854f3043c3efcdeeb_TINGA%20SUITE-%20PRIVATE%20DECK%20AND%20PLUNGE%20POOL-1%20-%20Medium": {
+        "alt": "A Tinga Suite deck and plunge pool lit by lanterns at dusk, above the river",
+        "section": "pool"
+      },
+      "6945ae8ac3485a0ff6f8c58c_Lion%20Sands%20Tinga%20Lodge%20suite%20triple%20setup6%20-%20Medium": {
+        "alt": "A Tinga Suite set up for three, opening to its deck and pool",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lion-sands-fish-eagle-residence": {
+    "describe": {
+      "6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium": {
+        "alt": "Fish Eagle Residence and its decks among the trees at sunset, Lion Sands",
+        "section": "exterior"
+      },
+      "6945ad2fa08569e115b84b08_Fish%20Eagle%20Residence%20-%20Drone%20view%203%20-%20July%202025%20-%20Medium": {
+        "alt": "Fish Eagle Residence from above: decks, pool and pavilions in the bush",
+        "section": "exterior"
+      },
+      "6945ad2ff6dad159249fbaac_Fish%20Eagle%20Residence%20-%20Lounge%202%20-%20July%202025%20-%20Medium": {
+        "alt": "The Fish Eagle Residence lounge opening to the bush",
+        "section": "dining"
+      },
+      "6945ad2f11a85677e0bec96f_Fish%20Eagle%20Residence%20-%20Outside%20Lounge%20-%20July%202025%20-%20Medium": {
+        "alt": "The outdoor lounge at Fish Eagle Residence",
+        "section": "exterior"
+      },
+      "6945ad2fd23e3fc83ec1086e_Fish%20Eagle%20Residence%20-%20Pool%20View%20-%20Medium": {
+        "alt": "The Fish Eagle Residence pool and deck at dusk among the trees",
+        "section": "pool"
+      },
+      "6945ad2f7e281e3bd96f859a_Fish%20Eagle%20Residence%20-%20Suite%201%20-%20Bedroom%20-%20Medium": {
+        "alt": "A bedroom at Fish Eagle Residence",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lion-sands-hinkwenu-residence": {
+    "describe": {
+      "6945b0a99607eac5b0eaaf15_Lion%20Sands%20Hinkwenu%20Residence10%20-%20Medium": {
+        "alt": "The pool and veranda at Hinkwenu Residence under a red evening sky, Lion Sands",
+        "section": "pool"
+      },
+      "6945b0a9db6d138c557a0998_Lion%20Sands%20Hinkwenu%20Residence2%20-%20Medium": {
+        "alt": "The Hinkwenu Residence living room and dining table",
+        "section": "dining"
+      },
+      "6945b0a9b2fec276ad9c8930_Lion%20Sands%20Hinkwenu%20Residence3%20-%20Medium": {
+        "alt": "The Hinkwenu Residence living room",
+        "section": "dining"
+      },
+      "6945b0a992250d7e9501e840_Lion%20sands%20Tinga%20Lodge%20Hinkwenu%20residence%20bathroom%20-%20Medium": {
+        "alt": "A Hinkwenu Residence bathroom",
+        "section": "rooms"
+      },
+      "6945b0a95cae7eaba9925905_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20bedroom%20-%20Medium": {
+        "alt": "A Hinkwenu Residence bedroom under a mosquito net",
+        "section": "rooms"
+      },
+      "6945b0a93b0326fa7d954c72_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20Lounge%20-%20Medium": {
+        "alt": "The Hinkwenu Residence lounge",
+        "section": "dining"
+      },
+      "6945b0a911a85677e0bfbb5e_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20outside%20veranda%20-%20Medium": {
+        "alt": "The covered veranda at Hinkwenu Residence beside the garden",
+        "section": "exterior"
+      }
+    },
+    "extra": []
   }
 }

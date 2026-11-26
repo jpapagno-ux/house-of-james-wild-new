@@ -33,7 +33,12 @@
   },
   "camps": {
     "lion-sands": [
-      "ivory-lodge"
+      "ivory-lodge",
+      "river-lodge",
+      "narina-lodge",
+      "tinga-lodge",
+      "fish-eagle-residence",
+      "hinkwenu-residence"
     ]
   }
 }

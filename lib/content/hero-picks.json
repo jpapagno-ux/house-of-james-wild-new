@@ -2520,6 +2520,100 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/lion-sands/hero-lions-crossing-sabie",
         "alt": "Two lions wading across the Sabie River at Lion Sands"
       }
+    ],
+    "stay:lion-sands-river-lodge": [
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457a6d17663fd14f91c3f_Lion%20Sands%20River%20Lodge%20Main%20Pool%20sunset.jpg",
+        "alt": "The River Lodge pool under old trees at sunset, Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457d03b1765fb446b403a_Lion%20Sands%20River%20Lodge%20Fire%20deck-1.jpg",
+        "alt": "The sunken fire deck at River Lodge lit by lanterns at night"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457dd6f2d874afef26a3a_Lion%20Sands%20River%20Lodge%20Boma.jpg",
+        "alt": "Tables set around the fire in the River Lodge boma at dusk"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834569a9251463dbd3d1ea8_Lion%20Sands_River_Lodge_Facilities_Guest%20Dining%20Area.jpg",
+        "alt": "The River Lodge main area and its pond lit at dusk, Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6834b7d60d720074134258c9_LionSandsRiver_March25_Suite_from_River05_preview_maxWidth_1600_maxHeight_1600.jpg",
+        "alt": "A River Suite and its plunge pool on the lawn, River Lodge"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457eb69d733fb26e67309_Rocky%20Ridge%20Female-1.JPG",
+        "alt": "A leopard in the trees near River Lodge, Lion Sands"
+      }
+    ],
+    "stay:lion-sands-narina-lodge": [
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fade308a5ce663d9a7_Lion%20Sands%20Narina%20Lodge%20-%20Deck%20-%20Medium.webp",
+        "alt": "Narina Lodge and its decks raised above the grass by the Sabie River"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fa559b89e28edeab86_Lion%20Sands_Narina%20Lodge_2_Guest%20Area%20Views%20-%20Medium.webp",
+        "alt": "Elephants grazing on the bank of the Sabie River below Narina Lodge"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fadfb9ce7cd4f68ce2_Lion%20Sands%20Narina%20Lodge%20ELEPHANT%20CROSSING%20-%20Medium.webp",
+        "alt": "A guest on the Narina Lodge deck watching elephants cross the Sabie River"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fab4526091f728b6bf_Lion%20Sands%20Narina%20Lodge%20FIRE%20deck%20EVENING%20-%20Medium.webp",
+        "alt": "The fire deck at Narina Lodge in the evening above the river"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b18d20769f82c8034959_Lion%20Sands_Narina%20Lodge_3_Suite_Views%20-%20Medium.webp",
+        "alt": "A Narina Suite deck and plunge pool facing the river at sunset"
+      }
+    ],
+    "stay:lion-sands-tinga-lodge": [
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae88c8f2e524c466e310_Lion%20Sands%20Tinga%20Lodge%20Suite%20Private%20pool%20-%20Medium.webp",
+        "alt": "A Tinga Suite plunge pool facing the sunset over the Sabie River"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae8854f3043c3efcdeeb_TINGA%20SUITE-%20PRIVATE%20DECK%20AND%20PLUNGE%20POOL-1%20-%20Medium.webp",
+        "alt": "A Tinga Suite deck and plunge pool lit by lanterns at dusk, above the river"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4f224ce8193c468598_Lion%20Sands%20Tinga%20Lodge%20pool%20service%20-%20Medium.webp",
+        "alt": "The Tinga Lodge pool and deck above the Sabie River"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4f9e392e85df51b427_Lion%20Sands%20Tinga%20Lodge%20fire%20deck%20morning%20-%20Medium.webp",
+        "alt": "The fire deck at Tinga Lodge above the bush in the morning"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae4fb65601920f91d3b0_Lion%20Sands%20Tinga%20Lodge%20Bush%20stop%20-%20Medium.webp",
+        "alt": "A bush stop at sunset on a Tinga Lodge game drive"
+      }
+    ],
+    "stay:lion-sands-fish-eagle-residence": [
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium.webp",
+        "alt": "Fish Eagle Residence and its decks among the trees at sunset, Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2fa08569e115b84b08_Fish%20Eagle%20Residence%20-%20Drone%20view%203%20-%20July%202025%20-%20Medium.webp",
+        "alt": "Fish Eagle Residence from above: decks, pool and pavilions in the bush"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2fd23e3fc83ec1086e_Fish%20Eagle%20Residence%20-%20Pool%20View%20-%20Medium.webp",
+        "alt": "The Fish Eagle Residence pool and deck at dusk among the trees"
+      }
+    ],
+    "stay:lion-sands-hinkwenu-residence": [
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a99607eac5b0eaaf15_Lion%20Sands%20Hinkwenu%20Residence10%20-%20Medium.png",
+        "alt": "The pool and veranda at Hinkwenu Residence under a red evening sky, Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a911a85677e0bfbb5e_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20outside%20veranda%20-%20Medium.png",
+        "alt": "The covered veranda at Hinkwenu Residence beside the garden"
+      }
     ]
   }
 }

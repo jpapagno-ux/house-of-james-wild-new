@@ -9787,5 +9787,303 @@
       }
     },
     "extra": []
+  },
+  "jacis-private-lodge": {
+    "describe": {
+      "jacis-nare-villa-01": {
+        "alt": "Jaci's lit at dusk among the riverine trees, Madikwe",
+        "section": "exterior"
+      },
+      "jacis-madikwe-wildlife-01": {
+        "alt": "Wild dogs running in the late light, Madikwe",
+        "section": "experiences"
+      },
+      "jacis-nare-villa-02": {
+        "alt": "A fire on the deck above the Marico River at Jaci's",
+        "section": "exterior"
+      },
+      "jacis-madikwe-hide": {
+        "alt": "Elephants at the waterhole from the photographer's hide at Jaci's",
+        "section": "experiences"
+      },
+      "jacis-madikwe-boma-dinner": {
+        "alt": "The boma set for dinner under the trees at Jaci's",
+        "section": "dining"
+      },
+      "jacis-madikwe-game-drive-01": {
+        "alt": "A game drive watching cheetahs on the plains, Madikwe",
+        "section": "experiences"
+      },
+      "jacis-madikwe-house-07": {
+        "alt": "A plunge pool and loungers on the riverbank at Jaci's",
+        "section": "pool"
+      },
+      "jacis-madikwe-house-08": {
+        "alt": "A Jaci's safari suite bedroom",
+        "section": "rooms"
+      },
+      "jacis-madikwe-bush-walk": {
+        "alt": "A Jaci's ranger tracking on the plains below the hills",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "morukuru-farm-house": {
+    "describe": {
+      "293f3bdae_2f3e395df_68ae14d4259cf380a761ef79_lunch-outside-on-the": {
+        "alt": "The Morukuru Farm House deck set for lunch under the trees, Madikwe",
+        "section": "dining"
+      },
+      "37a95b824_7aab156fd_683f312a1f186f070513a4d9_Morukuru_20Farm_20House_20-_20Boma": {
+        "alt": "The Morukuru Farm House boma lit by lanterns under an old tree",
+        "section": "dining"
+      },
+      "23ef20b64_fe337e62b_683f3102113cdd51068caa51_Morukuru_20Farm_20House_20-_20exterior_20view": {
+        "alt": "Morukuru Farm House and its lawn lit at dusk",
+        "section": "exterior"
+      },
+      "f78cee54e_fb1415e43_683f310fd9479473be31672b_Morukuru_20Farm_20House_20-_20bedroom": {
+        "alt": "A Morukuru Farm House bedroom",
+        "section": "rooms"
+      },
+      "271a2cb0f_1af13c825_683f3111a2d6323598c2464b_Morukuru_20Farm_20House_20-_20bedroom-patio": {
+        "alt": "A Morukuru Farm House bedroom opening onto its veranda and the bush",
+        "section": "rooms"
+      },
+      "a026f7756_2903fee1a_683f31166bf32ab408778838_Morukuru_20Farm_20House_20-_20bathroom-en-suite": {
+        "alt": "A Morukuru Farm House bathroom",
+        "section": "rooms"
+      },
+      "6286ca2a7_fcf53a865_683f3119d139b93acfcfae36_Morukuru_20Farm_20House_20-_20bar_20and_20living": {
+        "alt": "The Morukuru Farm House living room",
+        "section": "dining"
+      },
+      "61d36a5c8_3596108a4_683f310a04e367763f01bffd_Morukuru_20Farm_20House_20-_20viewing-deck": {
+        "alt": "The Morukuru deck set for dinner above the bush at sunset",
+        "section": "dining"
+      },
+      "30fe8e5f3_35a6e5573_68ae14c451f65d6cb04cc056_bedroom-and-private-verandah": {
+        "alt": "A Morukuru Farm House veranda in the trees in the evening sun",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "jao-camp": {
+    "describe": {
+      "hero": {
+        "alt": "Jao Camp from above, its suites under thatch in the Delta forest",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The Jao Camp spa and pool pavilion on the floodplain",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "Guests in the woven pavilion at Jao Camp at sunset",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The library and gallery at Jao Camp",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "A Jao Camp deck in the treetops above the floodplain",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "An elephant in the long grass of the Delta, Jao Reserve",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "A lioness and her cubs on the Jao floodplain",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "jacana-camp": {
+    "describe": {
+      "hero": {
+        "alt": "Jacana Camp on its island across the water, Jao Reserve",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "The Jacana Camp tented suites under the trees",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The Jacana Camp deck lit at dusk",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The Jacana Camp pool deck among the trees",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "The Jacana Camp lounge at night",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "A lechwe on the floodplain before Jacana Camp",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "A saddle billed stork on the water, Jao Reserve",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "kwetsani-camp": {
+    "describe": {
+      "hero": {
+        "alt": "A Kwetsani tented suite raised among the palms, Jao Reserve",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "Guides and a game drive vehicle at the Kwetsani Camp steps",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A game drive among wildebeest near Kwetsani",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "A lion in the golden grass, Jao Reserve",
+        "section": "experiences"
+      },
+      "g4": {
+        "alt": "Zebras crossing the shallows of the Delta",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "Giraffes on the floodplain near Kwetsani",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "tubu-tree-camp": {
+    "describe": {
+      "hero": {
+        "alt": "Wildebeest crossing the floodplain below Tubu Tree Camp, Jao Reserve",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "The Tubu Tree Camp main area under palms and trees",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "Zebras and giraffes on the plains near Tubu Tree",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "Wild dogs in the shallows, Jao Reserve",
+        "section": "experiences"
+      },
+      "g4": {
+        "alt": "A leopard in the palm scrub near Tubu Tree",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "Giraffes in the grass near Tubu Tree Camp",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "little-tubu-camp": {
+    "describe": {
+      "hero": {
+        "alt": "A Little Tubu tented suite among the palms from above, Jao Reserve",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A Little Tubu tented suite lit at dusk under the moon",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The Little Tubu pool deck beside the water",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "Giraffes in the shallows before Little Tubu",
+        "section": "experiences"
+      },
+      "g4": {
+        "alt": "The bar at Little Tubu Camp",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "An elephant beside a game drive vehicle near Little Tubu",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "A leopard on a termite mound, Jao Reserve",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "pelo-camp": {
+    "describe": {
+      "hero": {
+        "alt": "The Pelo Camp pool deck facing the Delta at sunset",
+        "section": "pool"
+      },
+      "g1": {
+        "alt": "Pelo island in the Okavango Delta from above",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A Pelo Camp tent and its deck among the trees",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The Pelo Camp lounge tent",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "A table set on the Pelo deck above the floodplain",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "A guest photographing an elephant in the channel at Pelo",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "An elephant drinking in the Delta waters near Pelo",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "jao-reserve": {
+    "describe": {
+      "hero": {
+        "alt": "Jacana Camp on its island across the water",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "Pelo island from above, Jao Reserve",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "Wild dogs in the shallows, Jao Reserve",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "madikwe": {
+    "describe": {
+      "ba95066f2_54a108329_69bd2e3dc69e8abe6870a01f_home-page-top": {
+        "alt": "A leopard resting in a tree, Madikwe",
+        "section": "experiences"
+      }
+    },
+    "extra": []
   }
 }

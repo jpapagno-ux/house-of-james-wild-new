@@ -13,7 +13,7 @@ export default function JournalOffers({ no, name, offers, applyHref }: { no: str
       <SectionHead no={no} label="Savings · live offers" title={`Offers on ${name}`} lede="Every live offer in one place, with its dates and terms." />
       <ul className="mt-9 space-y-3">
         {offers.map((o) => (
-          <li key={o.key} className="grid grid-cols-[auto_minmax(0,1fr)] md:grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-6 gap-y-4 border border-[color:var(--jw-hairline)] border-l-[3px] border-l-[color:var(--jw-crimson)] bg-white px-5 py-5">
+          <li key={o.key} className="grid grid-cols-[auto_minmax(0,1fr)] md:grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-x-6 gap-y-4 border border-[color:var(--jw-hairline)] bg-white px-5 py-5">
             <Stamp size={84} top="Offer" main={o.stamp} rotate={-5} label={o.headline} />
             <div className="min-w-0">
               <p className="font-mono text-[9.5px] tracking-[0.24em] uppercase text-house">{o.eyebrow}</p>

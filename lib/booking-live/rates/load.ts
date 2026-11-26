@@ -43,7 +43,7 @@ export async function loadPricing(sb: SupabaseClient, slug: string, arrival?: st
     rules: (rules ?? []).map((r): SeasonalRule => ({
       id: r.id, season: r.season, roomTypeId: r.room_type_id, ratePlanId: r.rate_plan_id, stayStart: r.stay_start, stayEnd: r.stay_end,
       bookingStart: r.booking_start, bookingEnd: r.booking_end, baseOccupancy: r.base_occupancy, amountMinor: Number(r.amount_minor),
-      extraAdultMinor: r.extra_adult_minor == null ? null : Number(r.extra_adult_minor), childBands: r.child_bands ?? [],
+      extraAdultMinor: r.extra_adult_minor == null ? null : Number(r.extra_adult_minor), singleMinor: r.single_minor == null ? null : Number(r.single_minor), childBands: r.child_bands ?? [],
       minNights: r.min_nights, maxNights: r.max_nights, daysOfWeek: r.days_of_week, priority: r.priority,
     })),
     restrictions: (restrictions ?? []).map((x) => ({ id: x.id, roomTypeId: x.room_type_id, ratePlanId: x.rate_plan_id, start: x.start_date, end: x.end_date, type: x.restriction_type, minimumStay: x.minimum_stay })),

@@ -32,6 +32,7 @@ export type SeasonalRule = {
   baseOccupancy: number; // adults included in amountMinor
   amountMinor: Minor; // per room, per night, for baseOccupancy adults
   extraAdultMinor?: Minor | null;
+  singleMinor?: Minor | null; // per room, per night, when one adult travels alone (no children); null = the base rate applies
   childBands?: ChildBand[];
   minNights?: number | null;
   maxNights?: number | null;
@@ -83,6 +84,8 @@ export type PaymentTerms = {
 
 export type CancellationTier = { daysBeforeArrival: number; penaltyBp: Bp }; // cancel within N days → pay penaltyBp of total
 
+export type CancellationSeason = { label?: string; from: string; to: string; tiers: CancellationTier[] };
+
 export type RateCard = {
   versionId: string; // e.g. "leeu-estates:2027-V1:rev3"
   propertySlug: string;
@@ -93,7 +96,9 @@ export type RateCard = {
   promotions: Promotion[];
   taxes: TaxRule[];
   paymentTerms: PaymentTerms;
-  cancellation: { summary: string; tiers: CancellationTier[] };
+  // seasons (optional): a schedule that depends on the arrival date. The first season holding the arrival applies;
+  // an arrival in none of them uses tiers. Dates are arrival dates, inclusive.
+  cancellation: { summary: string; tiers: CancellationTier[]; seasons?: CancellationSeason[] };
 };
 
 export type Room = { id: string; name: string; maxAdults: number; maxChildren: number; maxOccupancy: number };
@@ -136,7 +141,8 @@ export type Quote = {
   depositDueMinor: Minor;
   balanceMinor: Minor;
   balanceDueDate: string | null; // null when everything is due now
-  cancellation: { summary: string; deadlines: { from: string; penaltyBp: Bp; penaltyMinor: Minor }[] };
+  /** deadlines in date order: each charge runs from `from` to `to` (null = up to arrival). freeUntil is the last day to cancel at no charge (null when that day has passed or no tiers are filed). */
+  cancellation: { summary: string; season: string | null; freeUntil: string | null; deadlines: { from: string; to: string | null; penaltyBp: Bp; penaltyMinor: Minor }[] };
   availability: "on_request"; // contracted cards never confirm inventory
   source: "contracted_card";
   rateCardVersion: string;
@@ -271,7 +277,9 @@ export function quote(card: RateCard, room: Room, req: QuoteRequest): Quote | Qu
       childrenMinor += c;
     }
     const extraAdultsMinor = extra * (rule.extraAdultMinor ?? 0);
-    nights.push({ date: d, ruleId: rule.id, season: rule.season, baseMinor: rule.amountMinor, extraAdultsMinor, childrenMinor, totalMinor: rule.amountMinor + extraAdultsMinor + childrenMinor });
+    // Single occupancy: one adult alone pays the card's single rate where one is filed.
+    const baseMinor = adults === 1 && kids.length === 0 && rule.singleMinor != null ? rule.singleMinor : rule.amountMinor;
+    nights.push({ date: d, ruleId: rule.id, season: rule.season, baseMinor, extraAdultsMinor, childrenMinor, totalMinor: baseMinor + extraAdultsMinor + childrenMinor });
     used.push(rule);
   }
 
@@ -331,16 +339,21 @@ export function quote(card: RateCard, room: Room, req: QuoteRequest): Quote | Qu
     : Math.min(grandTotalMinor, t.depositFixedMinor ?? pct(grandTotalMinor, t.depositPercentBp ?? 10_000));
   const balanceMinor = grandTotalMinor - deposit;
 
-  // Cancellation: penalties from each tier's date onward (latest tier first in time).
-  const deadlines = [...card.cancellation.tiers]
+  // Cancellation: the schedule for this arrival's season where the card files seasons, else the card's own tiers.
+  // Penalties run from each tier's date onward, in date order, each up to the day before the next.
+  const season = card.cancellation.seasons?.find((s) => req.arrival >= s.from && req.arrival <= s.to) ?? null;
+  const dated = [...(season?.tiers ?? card.cancellation.tiers)]
     .sort((a, b) => b.daysBeforeArrival - a.daysBeforeArrival)
     .map((tier) => ({ from: addDays(req.arrival, -tier.daysBeforeArrival), penaltyBp: tier.penaltyBp, penaltyMinor: pct(grandTotalMinor, tier.penaltyBp) }));
+  const deadlines = dated.map((d, i) => ({ from: d.from, to: dated[i + 1] ? addDays(dated[i + 1].from, -1) : null, penaltyBp: d.penaltyBp, penaltyMinor: d.penaltyMinor }));
+  const lastFree = deadlines[0] ? addDays(deadlines[0].from, -1) : null;
+  const freeUntil = lastFree && lastFree >= req.bookingDate ? lastFree : null;
 
   const revision = fnv1a(canonical({ card, room, req: { ...req, promoCode: req.promoCode ?? null } }));
   return {
     ok: true, currency: card.currency, nights, roomSubtotalMinor, discounts, discountsMinor, charges, taxesMinor, floridaTaxMinor,
     grandTotalMinor, depositDueMinor: deposit, balanceMinor, balanceDueDate: balanceMinor > 0 ? balanceDue : null,
-    cancellation: { summary: card.cancellation.summary, deadlines }, availability: "on_request", source: "contracted_card",
+    cancellation: { summary: card.cancellation.summary, season: season?.label ?? null, freeUntil, deadlines }, availability: "on_request", source: "contracted_card",
     rateCardVersion: card.versionId, revision: `${card.versionId}#${revision}`,
   };
 }

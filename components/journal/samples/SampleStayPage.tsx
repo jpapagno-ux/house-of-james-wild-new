@@ -93,7 +93,7 @@ function Split({ label, title, text, photo, flip = false }: { label: string; tit
 }
 
 // The hero: one photograph (or the stay's film) for the whole screen, the name low and left, one button.
-export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
+export function SampleHero({ v, variant, eyebrow }: { v: View; variant: Variant; /** a reserve page names its volume and area (Stage 10) */ eyebrow?: string }) {
   const { s } = v;
   const pw = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug) ?? null : null;
   const hero = v.frames[0];
@@ -105,7 +105,7 @@ export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
         : <Image src={hero.url} alt={hero.alt} fill priority sizes="100vw" className="object-cover" />}
       <span aria-hidden className="absolute inset-0" style={{ background: SCRIM }} />
       <div className={`${WRAP} relative flex h-full flex-col justify-end pb-28 md:pb-20`}>
-        <p className={`${T.label} text-white/85`}>Volume I · Stays{s.country ? ` · ${s.country}` : ""}</p>
+        <p className={`${T.label} text-white/85`}>{eyebrow ?? `Volume I · Stays${s.country ? ` · ${s.country}` : ""}`}</p>
         <h1 className={`${T.display} mt-4 max-w-5xl`}>{s.name}</h1>
         {s.tagline && <p className={`${T.lead} mt-4 max-w-2xl text-white/90`}>{s.tagline}</p>}
         <div className="mt-8 flex flex-wrap items-center gap-5">
@@ -121,18 +121,22 @@ export function SampleHero({ v, variant }: { v: View; variant: Variant }) {
 // The body: the answer paragraph, then the stay told in photographs, in the sample's own order.
 // rooms: the same rows the stay page prints (rate-card rooms with their filed rates, or the house room library), with the page's own room pick
 export type SampleRoom = { name: string; sleeps: number | null; list: string | null; now: string | null; basis?: string; facts?: string[]; lede?: string | null; features?: string[]; flag?: string; photo?: { url: string; alt: string } | null; action?: React.ReactNode };
-export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar, footnote }: { v: View; variant: Variant; rooms: SampleRoom[]; roomsFallback?: React.ReactNode; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null }) {
+// stays: a reserve (Stage 10) prints its lodges and private residences in the rooms' place, as the same cards
+export type StaysHead = { label: string; title: string; glanceLabel: string; glanceValue: string; from?: string | null };
+export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar, footnote, stays, after }: { v: View; variant: Variant; rooms: SampleRoom[]; roomsFallback?: React.ReactNode; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null; stays?: StaysHead; /** under the cards: a lodge page lists the other lodges on its reserve */ after?: React.ReactNode }) {
   const { s } = v;
   const priced = rooms.map((r) => r.now ?? r.list).filter(Boolean) as string[];
   const pwName = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug)?.primary.name ?? null : null;
   const glance: { icon: FieldIconName; label: string; value: string; wide?: boolean }[] = [
     ...(v.suited.length ? [{ icon: "frond" as FieldIconName, label: "Best for", value: v.suited.slice(0, 3).join(", "), wide: true }] : []),
     ...(s.bestMonths ? [{ icon: "sun" as FieldIconName, label: "Best months", value: s.bestMonths }] : []),
-    ...(rooms.length ? [{ icon: "porthole" as FieldIconName, label: "Rooms", value: `${rooms.length} room type${rooms.length === 1 ? "" : "s"}` }] : []),
-    ...(priced.length ? [{ icon: "anchor" as FieldIconName, label: "From", value: `${priced[0]} ${basis.split("·")[0].trim()}` }] : []),
+    ...(stays ? [{ icon: "porthole" as FieldIconName, label: stays.glanceLabel, value: stays.glanceValue, wide: true }] : rooms.length ? [{ icon: "porthole" as FieldIconName, label: "Rooms", value: `${rooms.length} room type${rooms.length === 1 ? "" : "s"}` }] : []),
+    ...(stays ? (stays.from ? [{ icon: "anchor" as FieldIconName, label: "From", value: stays.from }] : []) : priced.length ? [{ icon: "anchor" as FieldIconName, label: "From", value: `${priced[0]} ${basis.split("·")[0].trim()}` }] : []),
     ...(s.airport ? [{ icon: "signal-flag" as FieldIconName, label: "Nearest airport", value: s.airport, wide: true }] : []),
     ...(pwName ? [{ icon: "wave" as FieldIconName, label: "Wild Pathway", value: pwName }] : []),
   ];
+  const introParts = v.intro.match(/[^.!?]+[.!?]+(?:\s+|$)/g) ?? [v.intro];
+  const introFirst = introParts[0].trim(), introRest = introParts.slice(1).join("").trim();
   const used = new Set<string>([v.frames[0].url]);
   const pool: ViewerPhoto[] = v.photos;
   const take = (...keys: (SectionKey | null)[]): Shot | null => {
@@ -157,7 +161,7 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
   const Rooms = rooms.length === 0 ? (roomsFallback ? <div className={`${WRAP} ${GAP} scroll-mt-32`}>{roomsFallback}</div> : null) : (
     <section id="rooms" aria-label="Rooms" className={`!bg-mist ${GAP}`}>
       <div className={WRAP}>
-        <Head icon="tree-ring" label="Rooms" title="Where You’ll Sleep" />
+        <Head icon="tree-ring" label={stays?.label ?? "Rooms"} title={stays?.title ?? "Where You’ll Sleep"} />
       </div>
       {promo && <p className={`${WRAP} ${T.label} mt-4 text-house`}>{promo}</p>}
       {bar && <div className={`${WRAP} mt-6`}>{bar}</div>}
@@ -182,15 +186,20 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
         ))}
       </ul>
       {footnote ? <p className={`${WRAP} ${T.label} mt-6 text-stone-text`}>{footnote}</p> : v.lib.ratesNote ? <p className={`${WRAP} ${T.body} mt-6 max-w-[62ch] text-stone-text`}>{v.lib.ratesNote}</p> : null}
+      {after ? <div className={WRAP}>{after}</div> : null}
     </section>
   );
   return (
     <>
-      <section id="why" aria-label="Why it is here" className={`${WRAP} ${GAP} scroll-mt-32`}>
+      <section id="why" aria-label="Why it is here" className={`${WRAP} pt-8 md:pt-10 pb-[72px] md:pb-[120px] scroll-mt-32`}>
         <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why We Added It to the Portfolio" />
         {/* At a glance (James, 23 Nov 2026): the quick facts beside the words, from the record only; nothing shows that is not filed. */}
         <div className="mt-5 grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16">
-          <p className={`${T.lead} max-w-3xl text-graphite`}>{v.intro}</p>
+          {/* The introduction, set as an opening (James, 24 Nov 2026): the first sentence large with a drop capital, the rest in the house italic. */}
+          <div className="max-w-3xl">
+            <p className="font-display font-medium text-[27px] leading-[1.14] md:text-[38px] md:leading-[1.1] text-graphite first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-[72px] first-letter:leading-[0.78] md:first-letter:text-[104px]">{introFirst}</p>
+            {introRest && <p className={`${T.lead} mt-5 clear-left text-graphite`}>{introRest}</p>}
+          </div>
           {glance.length > 0 && (
             <dl aria-label={`${s.name} at a glance`} className="grid grid-cols-2 gap-x-6 border-t-2 border-[color:var(--jw-stone)] lg:grid-cols-1">
               {glance.map((g) => (
@@ -248,6 +257,36 @@ export function SampleExpect({ v, cards, children }: { v: View; cards: { title: 
     ...(!told && s.facts.signature_experiences ? [{ title: "Signature experiences", body: <p>{s.facts.signature_experiences}</p> }] : []),
     // "Who it is for" is not repeated here: Best for sits in the at-a-glance facts at the top (James, 23 Nov 2026).
   ];
+  if (v.expect) {
+    // Picture cards (James, 24 Nov 2026): each experience and each feature is a photograph, its name and one line, in a
+    // sideways scroll like the rooms. No box, no fold. A card with no photograph filed says so.
+    const lead = (s.experiences.paras[0]?.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? "").trim();
+    const row = (label: string, list: NonNullable<View["expect"]>["experiences"]) => list.length === 0 ? null : (
+      <div className="mt-10 border-t-2 border-[color:var(--jw-stone)] pt-5">
+        <p className={`${T.label} text-stone-text`}>{label} · {list.length}</p>
+        <ul aria-label={label} className="mt-5 flex snap-x snap-mandatory gap-4 md:gap-6 overflow-x-auto pb-3 [scrollbar-width:none]">
+          {list.map((c) => (
+            <li key={c.title} className="w-[70vw] max-w-[340px] shrink-0 snap-start">
+              {c.photo
+                ? <figure className="relative aspect-[4/5] overflow-hidden bg-mist"><Image src={c.photo.url} alt={c.photo.alt} fill sizes="(min-width:768px) 340px, 70vw" className="object-cover" /></figure>
+                : <div data-image-missing={c.title} className="flex aspect-[4/5] flex-col items-center justify-center gap-4 bg-mist text-stone-text"><FieldIcon name="mountain-sun" height={26} /><p className={T.label}>Image coming soon</p></div>}
+              <h3 className="mt-4 font-display font-medium text-[22px] leading-tight text-graphite">{c.title}</h3>
+              {c.line && <p className={`${T.body} mt-2 text-stone-text`}>{c.line}</p>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+    return (
+      <section id="expect" aria-label="What you can expect" className="bg-white scroll-mt-32">
+        <Head icon="mountain-sun" label="Experiences and the stay" title="What You Can Expect" />
+        {lead && <p className={`${T.lead} mt-6 max-w-3xl text-graphite`}>{lead}</p>}
+        {row("Things to do", v.expect.experiences)}
+        {row("At the stay", v.expect.features)}
+        {v.expect.also && <p className={`${T.body} mt-8 max-w-[62ch] text-graphite`}>{v.expect.also}</p>}
+      </section>
+    );
+  }
   if (!rows.length && !s.experiences.paras.length && !shown.length) return null;
   return (
     <section id="expect" aria-label="What you can expect" className="bg-white scroll-mt-32">

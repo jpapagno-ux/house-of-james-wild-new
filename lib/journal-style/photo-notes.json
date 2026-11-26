@@ -13665,5 +13665,1505 @@
       }
     },
     "extra": []
+  },
+  "beyond-sussuvlei-desert-lodge": {
+    "describe": {
+      "dcfb4f00c_83b32277b_691f1487c4bf1e354aa4763a_beyond-sussuvlei-desert-lodge": {
+        "alt": "Sossusvlei Desert Lodge below its rocky ridge in the Namib, the pool before it",
+        "section": "exterior"
+      },
+      "c383de0de_c4450d094_69cb7fd998d158d79654cce6_Sossusvlei-Desert-Lodge-Room-the-star-dune-suite-outsid.": {
+        "alt": "A Sossusvlei Desert Lodge suite terrace and fire pit at dusk",
+        "section": "exterior"
+      },
+      "94b71274e_5f6bd528a_69cb7f7f9a653c6daf87c992_Sossusvlei-Desert-Lodge-Room-Suite-dining-at-the-swimmi.": {
+        "alt": "A Sossusvlei Desert Lodge suite plunge pool facing the desert",
+        "section": "pool"
+      },
+      "cc5eb0c88_2a65e7c97_69cb7fa2bac70776a4f82ec9_Sossusvlei-Desert-Lodge-Room-Suite-lounge": {
+        "alt": "A Sossusvlei Desert Lodge suite lounge with glass walls onto the desert",
+        "section": "rooms"
+      },
+      "c95d32620_0a14123d8_69cb7e7f7572bbdd742a11d1_Sossusvlei-Desert-Lodge-general-guest-area-indoor-dinin.": {
+        "alt": "The Sossusvlei Desert Lodge dining room looking out over the Namib",
+        "section": "dining"
+      },
+      "dd8665c1f_b6658cc5f_69cb7a3af06aded75bf90eb7_South-Africa-Phinda-Homestead-Guest-area-pool-loungers-.": {
+        "alt": "The Sossusvlei Desert Lodge pool lit at dusk",
+        "section": "pool"
+      },
+      "907cedffd_88a7a417a_69cb7f4a916ced76b32e3d6a_Sossusvlei-Desert-Lodge-Room-Suite_20bedroom": {
+        "alt": "A Sossusvlei Desert Lodge suite bedroom",
+        "section": "rooms"
+      },
+      "91da312d6_84fca8261_69cb80d8688ccdaa33e1bf7f_Sossusvlei-Desert-Lodge-general-guest-area-bar-and-tele.": {
+        "alt": "The Sossusvlei Desert Lodge bar and its telescope facing the desert",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "benguerra-island-by-and-beyond": {
+    "describe": {
+      "ffee16147_f5df0bd87_691ee869b223aeba002e33a9_benguerra-island-by-and-beyond": {
+        "alt": "Benguerra Island villas among the trees above the white beach from the air",
+        "section": "exterior"
+      },
+      "64b7a37f3_d1fb614c3_69bd626176037b7cd1b8e31f_Benguerra-Island-Casa-Familia-exterior-view": {
+        "alt": "A Benguerra villa under the palms",
+        "section": "exterior"
+      },
+      "ed8282456_6e999aa79_69bd62c0eff9b5fc43d971cf_Benguerra-Island-Experiences-Romance": {
+        "alt": "A guest at sundowners by lantern light in the shallows at Benguerra",
+        "section": "exterior"
+      },
+      "1b3bc340c_c92c1925d_69bd62efb9d6236ad13a9a7c_Benguerra-Island-room-cabana-lounge": {
+        "alt": "A Benguerra beach sala on the white sand under the palms",
+        "section": "exterior"
+      },
+      "4e99a5407_a66e8d613_69c0db255b5065b4ae5bdb18_Southern-Africa-Mozambique-andBeyond-Benguerra-Island-C.": {
+        "alt": "A Benguerra villa plunge pool and deck looking out to the sea",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "blue-safari-seychelles": {
+    "describe": {
+      "hero": {
+        "alt": "Alphonse Island Lodge bungalows among the trees above the lagoon",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "Alphonse Island and its reef in the Indian Ocean from the air",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "An Alphonse beach bungalow bedroom",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A guest on the terrace of an Alphonse bungalow by its pool",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "The Alphonse Island pool among the palms",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "The Alphonse Island farm from the air",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A bonefish caught and released on the Alphonse flats",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "A diver among coral and fish, Alphonse",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "Guests at a picnic on a sandbar in the Alphonse lagoon",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "Yoga on a sandbar, Alphonse",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "Guests watching dolphins from a boat, Alphonse",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "astove-coral-house": {
+    "describe": {
+      "hero": {
+        "alt": "Astove Coral House and its courtyard among the palms from the air",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "An Astove Coral House bedroom",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "The Astove Coral House dining room",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "The Astove Coral House sitting room",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "An Astove Coral House bedroom",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "The plane at the Astove airstrip",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "Astove Atoll in the Indian Ocean from the air",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "Astove's white beach and palms from the air, the house among the trees",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A boat in a mangrove channel on Astove",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "Guests gathered on the Astove beach at sunset",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A diver above coral on the Astove Wall",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "cosmoledo-eco-camp": {
+    "describe": {
+      "hero": {
+        "alt": "The Cosmoledo main tent on the beach at sunset",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A Cosmoledo Eco Pod deck facing the sea",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A Cosmoledo Eco Pod above the white beach and the lagoon",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "Cosmoledo Eco Pods among the scrub above the sand flats",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "The Cosmoledo main tent lounge",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "The Cosmoledo shore at sunset from the air",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "The Cosmoledo dining tent",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "A Cosmoledo Eco Pod at sunset",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "Wizard Island and the Cosmoledo lagoon from the air",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "Anglers wading the Cosmoledo flats from the air",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A boat on the Cosmoledo flats",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "dulini-anabezi-lodge": {
+    "describe": {
+      "d0d3f0285_032490b56_6a4fc43a4aba81c3bd4d794a_anabezi-camp": {
+        "alt": "Anabezi on the Zambezi floodplain from the air",
+        "section": "exterior"
+      },
+      "54808ddc7_53fca339e_693dd2dcf2775c0ae3befbc5_a6bc44_714f31c5f3ca4cd7afef248df0dfadfe_mv2": {
+        "alt": "A table on the Anabezi deck above the Zambezi at sunset",
+        "section": "dining"
+      },
+      "63369abb7_6334e5446_693dd2f1b661bfc99729b335_a6bc44_f4f017921dc04f63a81d325e2cf85895_mv2": {
+        "alt": "The Anabezi lounge open to the river at dusk",
+        "section": "dining"
+      },
+      "6b2962a0a_ad7bd00dc_693dd2f1c2d2d06d8efc927f_a6bc44_1cd84a2c420348bcbb5d2c8527091f2f_mv2": {
+        "alt": "A table set on the Anabezi deck above the bush",
+        "section": "dining"
+      },
+      "8bdca44dd_d0aefdc01_693dd2d22105e6cbeff79925_67d1c5_bc703493f08140509082c370e0269173_mv2": {
+        "alt": "A plunge pool before a thatched Anabezi suite",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "expedition-blue-lagoon": {
+    "describe": {
+      "hero": {
+        "alt": "Islets off Cap Masoala in the Indian Ocean from the air",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "Two kayaks over the coral of the Masoala lagoon",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "A guest snorkelling over the reef, Cap Masoala",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "The reef and lagoon off Cap Masoala from the air",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A palm topped islet and a boat in the Masoala lagoon",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "Islets and reef off the Masoala Peninsula from the air",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A forested islet off Cap Masoala",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "A Masoala Forest Lodge tented room",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "A table set in Crusoe's Cabin",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "A forest trail down to the sea, Masoala",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "Crusoe's Cabin among the forest trees above the shore",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "hoanib-elephant-camp": {
+    "describe": {
+      "hero": {
+        "alt": "Desert elephants and a calf feeding under a tree in the Hoanib River",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "The dunes and hills of Kaokoland from the air",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The Hoanib Elephant Camp pool below the desert hills",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "The Hoanib Elephant Camp lounge",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "The Hoanib Elephant Camp lounge by the fire",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "A herd of desert elephants crossing the Hoanib riverbed below the hills",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "A table on the Hoanib Elephant Camp deck at dusk",
+        "section": "dining"
+      },
+      "g7": {
+        "alt": "Chairs set out on the desert plain at dusk, Hoanib",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "A fire circle set on the desert at dusk, Hoanib",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "Hoanib Elephant Camp lit under the stars below the hills",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A Hoanib Elephant Camp tent open to its deck and pool",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "hoanib-valley-camp": {
+    "describe": {
+      "hero": {
+        "alt": "A Hoanib Valley tent bedroom",
+        "section": "rooms"
+      },
+      "g1": {
+        "alt": "The Hoanib Valley fire circle and tents below the mountains at dusk",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "The Hoanib Valley lounge",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "The Hoanib Valley lounge with windows onto the valley",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "Dinner tables set on the desert at dusk, Hoanib Valley",
+        "section": "dining"
+      },
+      "g5": {
+        "alt": "Guests by the fire on the desert below the mountains, Hoanib Valley",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "The Hoanib Valley pool and deck facing the valley",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A Hoanib Valley tent lit under the Milky Way",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A Hoanib Valley tent opening onto its veranda and the valley",
+        "section": "rooms"
+      },
+      "g9": {
+        "alt": "Hoanib Valley Camp hidden in its valley from above",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "A giraffe under the acacias in the Hoanib valley",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "kwessi-dunes-camp": {
+    "describe": {
+      "hero": {
+        "alt": "The Kwessi Dunes lounge at sunrise over the desert",
+        "section": "dining"
+      },
+      "g1": {
+        "alt": "Kwessi Dunes and its pool on the red sand of the NamibRand from the air",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "The Kwessi Dunes main lodge lit at dusk on the desert",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "A Kwessi Dunes chalet veranda at night",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A Kwessi Dunes chalet bedroom",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A fire circle on the NamibRand under the Milky Way",
+        "section": "experiences"
+      },
+      "g6": {
+        "alt": "The Kwessi Dunes pool and deck lit at night",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "An oryx running across the NamibRand",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "Dead camel thorn trees before the dunes of Deadvlei",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A balloon over the red dunes of the Namib",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "Fairy circles on the NamibRand plain",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "masoala-forest-lodge": {
+    "describe": {
+      "g1": {
+        "alt": "Village women dancing on the beach near Masoala Forest Lodge",
+        "section": "experiences"
+      },
+      "g2": {
+        "alt": "Masoala Forest Lodge treehouses above the beach and rocks",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "The Masoala beach and a treehouse in the forest edge",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "A Masoala treehouse lit at night in the forest",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "The Masoala Forest Lodge main pavilion among the palms",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "A Masoala treehouse on the rocks above the water",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "miavana-by-time-tide": {
+    "describe": {
+      "hero": {
+        "alt": "Miavana's white beach and turquoise reef from the air",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A Miavana villa bedroom with glass walls onto the sea",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A Miavana villa lounge facing the sea",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "A Miavana villa dining room open to the sea",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "A guest in a Miavana pool facing the ocean",
+        "section": "pool"
+      },
+      "g5": {
+        "alt": "The Miavana main pavilion and pool lit at dusk",
+        "section": "pool"
+      },
+      "g6": {
+        "alt": "A crowned lemur in the trees, Miavana",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "A green turtle over coral, Miavana",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "Kiteboarders on the Miavana beach",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A table under an umbrella on the Miavana beach",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "nyamatusi-camp": {
+    "describe": {
+      "hero": {
+        "alt": "The Zambezi floodplain of Mana Pools at dawn from the air",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "An elephant beside the Nyamatusi plunge pool with guests watching",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "The Nyamatusi lounge under thatch",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "The Nyamatusi bar",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "A Nyamatusi tented suite lounge open to its deck and the river",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A Nyamatusi tented suite bedroom open to the Zambezi",
+        "section": "rooms"
+      },
+      "g6": {
+        "alt": "A Nyamatusi outdoor shower",
+        "section": "rooms"
+      },
+      "g7": {
+        "alt": "Canoeing past waterbuck on the Zambezi",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "An elephant standing to feed under an albida tree, Mana Pools",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "A leopard in a tree, Mana Pools",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "Sundowners on a Zambezi sandbank at sunset",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "royal-zambezi-lodge": {
+    "describe": {
+      "d28e2a5ba_0ca321681_6979b8dbd6d3d46f86920a47_Royal-Zambezi-Hero-Image": {
+        "alt": "Royal Zambezi Lodge reflected in the Zambezi at dusk",
+        "section": "exterior"
+      },
+      "6481b7b53_872df199b_6979bd161d91c2a9ef00f593_Delux-bedroom": {
+        "alt": "A Royal Zambezi suite bedroom opening onto the river",
+        "section": "rooms"
+      },
+      "a51e7c94e_79711a20f_6979bd16675b9517ac373bf1_Delux-outdoor-pool": {
+        "alt": "A Royal Zambezi suite plunge pool lit at dusk",
+        "section": "pool"
+      },
+      "a0e13ef0a_4e262971c_6979bd16e761e4be303c328e_family-room-twin-beds": {
+        "alt": "A Royal Zambezi suite looking out to the river",
+        "section": "rooms"
+      },
+      "572e6b010_06dc96bd7_6979bd16b8a3db85d87900f0_family-suite-living-room": {
+        "alt": "A Royal Zambezi suite lounge",
+        "section": "rooms"
+      },
+      "ea17b4dd6_1ff49ea56_6979bd1622d4dd1c601ee8ea_Presidential-bathroom": {
+        "alt": "A Royal Zambezi suite bath facing the river",
+        "section": "rooms"
+      },
+      "b986b3d05_6094c97f8_6979bd16e0a28fa162e54b26_presidential-bedroom": {
+        "alt": "A Royal Zambezi suite bedroom",
+        "section": "rooms"
+      },
+      "1aced6cb7_6b0bebd19_6979bd16e21d9c27614fe643_Presidential-Plunge-Pool": {
+        "alt": "A guest in a Royal Zambezi plunge pool above the Zambezi floodplain",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "singita-katanza-house": {
+    "describe": {
+      "5040c53b4_4602c31ae_6985ab60c910147d4163e6f2_singita-kataza": {
+        "alt": "The Kataza House lounge open to the volcanoes",
+        "section": "dining"
+      },
+      "c4432254a_889fe0e5b_698ad525ea39a1698e4c7b1f_Singita-Kataza-House-Bathroom": {
+        "alt": "A Kataza House bathroom",
+        "section": "rooms"
+      },
+      "191c6e22c_c8abb9581_698ad525fa0bfb62115ed39e_Singita-Kataza-House-Bathroom1": {
+        "alt": "A Kataza House bathroom",
+        "section": "rooms"
+      },
+      "c8bb75d0c_ec7c79acd_698ad5208d35a7811d3fc37e_Singita-Kataza-House-Bedroom": {
+        "alt": "A Kataza House suite opening onto the green fields",
+        "section": "rooms"
+      },
+      "184c72844_1e4f0b1c7_698ad525425e68525a5d2db4_Singita-Kataza-House-Exterior-2": {
+        "alt": "Kataza House below the Virunga volcanoes",
+        "section": "exterior"
+      },
+      "256636ca4_32883ec91_698ad5250185727f23f91c2b_Singita-Kataza-House-Suite": {
+        "alt": "A Kataza House suite looking out to the fields",
+        "section": "rooms"
+      },
+      "bcc48add1_7387615ef_698ad5253f7875734d4d014f_SVNP_PRIVATE_Kataza_House_Bedroom_Ross_Couper-1-1": {
+        "alt": "A Kataza House bedroom",
+        "section": "rooms"
+      },
+      "b997563bb_f493b5078_698ad525981317b89985c388_SVNP_PRIVATE_Kataza_House_Room_Lounge_Ross_Couper-1-1.w": {
+        "alt": "The Kataza House lounge open to the volcanoes, a second view",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "singita-malilangwe-house": {
+    "describe": {
+      "935bc57eb_64d8f0328_6985b01e89e0917ecbd586c8_PV_Malilangwe_House_Gallery1": {
+        "alt": "Singita Malilangwe House and its rim flow pool above Malilangwe Dam from the air",
+        "section": "pool"
+      },
+      "174d3687e_338e430d8_698b18f6098e2338b8bcd04c_Singita-Malilangwe-House-Bathroom-1": {
+        "alt": "A Malilangwe House bathroom",
+        "section": "rooms"
+      },
+      "7f6fe1e28_511832e5b_698b18f6e2ac75aa46f2e099_Singita-Malilangwe-House-Bathroom": {
+        "alt": "A Malilangwe House bathroom with windows onto the bush",
+        "section": "rooms"
+      },
+      "88950bc05_d4b67d24c_698b18f680735483c661c0d0_Singita-Malilangwe-House-Master-bathroom-1": {
+        "alt": "A Malilangwe House bathroom",
+        "section": "rooms"
+      },
+      "f5c77fc2d_6ddd85de9_698b18f7343f86333bb9b6f3_Singita-Malilangwe-House-Master-bedroom-lounge": {
+        "alt": "A Malilangwe House sitting room",
+        "section": "dining"
+      },
+      "fe7027c98_31d63ea39_698b18f17ac93fb8d55a2764_Singita-Malilangwe-House-Suite": {
+        "alt": "A Malilangwe House bedroom",
+        "section": "rooms"
+      },
+      "b64dbb7b0_2c43bf0f3_69ce0fec18d63f756d12fa8c_SingitaMalilangweHouse_LoungeofMainSuite": {
+        "alt": "A Malilangwe House suite",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "singita-pamushana": {
+    "describe": {
+      "62a0748b4_7730039cb_6985b61e979ea528bec37667_SP_LODGE_Pamushana_Lodge_And_Malilangwe_Dam_Ross_Couper.": {
+        "alt": "Malilangwe Dam and Singita Pamushana on its hillside from the air",
+        "section": "exterior"
+      },
+      "6941b090b_b18071e0e_698b2128dcd2176663b148c6_PAMU_20BEDROOM_202_20WITH_20BAG": {
+        "alt": "A Pamushana suite bedroom",
+        "section": "rooms"
+      },
+      "9c819b6fb_b93747449_698b21288c3bc3ea8c11978b_PAMU_20BEDROOM_203": {
+        "alt": "A Pamushana suite bathroom",
+        "section": "rooms"
+      },
+      "bdede2d81_16638631a_698b2128821c5869a5ee3f77_PAMU_20SHOWER_20AREA": {
+        "alt": "A Pamushana suite bathroom",
+        "section": "rooms"
+      },
+      "aada0ee31_d506eefea_698b2122c630da5735187b31_Singita_20Pamushana_20Bedroom": {
+        "alt": "A Pamushana suite bedroom with a fireplace",
+        "section": "rooms"
+      },
+      "90951cdd6_ba2b5d163_698b2128be3f23f52d3c6c40_PAMU_20POOL_20OVERLOOKING_20LAKE": {
+        "alt": "A Pamushana plunge pool among the rocks above Malilangwe Dam",
+        "section": "pool"
+      },
+      "c38b0ecce_f7396edaa_69ce234e3f11cf9ca63d9569_IMG_9787-2": {
+        "alt": "A Pamushana suite bedroom by the fire",
+        "section": "rooms"
+      },
+      "82de36fcd_32facae28_69ce23614e7ef7982c0b1985_IMG_3292": {
+        "alt": "A Pamushana suite bathroom",
+        "section": "rooms"
+      },
+      "1d3e45e0d_1fa2b1412_69ce23806513ae7e56c9b871_IMG_1047": {
+        "alt": "A Pamushana suite lounge looking into the trees",
+        "section": "rooms"
+      },
+      "fdde472ef_73722243f_69ce24621e01ec2708c6f723_SingitaPamushanaLodge_LoungeandFireplace": {
+        "alt": "The Pamushana lounge under thatch",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "six-senses-zil-pasyon": {
+    "describe": {
+      "hero": {
+        "alt": "Zil Pasyon villas among the granite boulders above clear water on Félicité",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A Zil Pasyon villa bedroom open to its pool deck",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "A Zil Pasyon villa pool facing the sea and the islands",
+        "section": "pool"
+      },
+      "g3": {
+        "alt": "A Zil Pasyon villa pool above the sea and neighbouring islands",
+        "section": "pool"
+      },
+      "g4": {
+        "alt": "A Zil Pasyon villa bedroom and lounge",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A Zil Pasyon villa deck beside a granite boulder",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "A Zil Pasyon pool under the palms above a turquoise bay",
+        "section": "pool"
+      },
+      "g7": {
+        "alt": "A Zil Pasyon villa on the granite of Félicité from the air",
+        "section": "exterior"
+      },
+      "g8": {
+        "alt": "A Zil Pasyon villa on the hillside of Félicité above the sea",
+        "section": "exterior"
+      },
+      "g9": {
+        "alt": "A turtle swimming near the surface, Félicité",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "Granite boulders in clear water off Félicité from the air",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "somalisa-acacia": {
+    "describe": {
+      "hero": {
+        "alt": "Somalisa Acacia's deck and pool beside the pan in Hwange",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "An elephant drinking at the Somalisa pool as children watch with a guide",
+        "section": "pool"
+      },
+      "g2": {
+        "alt": "A guide showing children a map at Somalisa",
+        "section": "experiences"
+      },
+      "g3": {
+        "alt": "Somalisa Acacia beside its pan in Hwange from the air",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "Wildebeest on the Hwange plains",
+        "section": "experiences"
+      },
+      "g5": {
+        "alt": "An ostrich and her chicks, Hwange",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "sushi-chuma": {
+    "describe": {
+      "hero": {
+        "alt": "Sussi & Chuma among the trees on the Zambezi from the air",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "A guest on a Sussi & Chuma deck above the Zambezi",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A Sussi & Chuma treehouse bedroom",
+        "section": "rooms"
+      },
+      "g3": {
+        "alt": "A Sussi & Chuma treehouse bathroom",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "The Sussi & Chuma deck on the Zambezi",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "The Sussi & Chuma dining room",
+        "section": "dining"
+      },
+      "g6": {
+        "alt": "Victoria Falls and its spray from the air",
+        "section": "experiences"
+      },
+      "g7": {
+        "alt": "Guests beside a boat on the Zambezi at sunset",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "A walk on the riverbank of the Zambezi",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "White rhino in Mosi-oa-Tunya National Park",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A massage on a deck above the Zambezi",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "the-hide-safari-camp": {
+    "describe": {
+      "2ebf914a7_ae5141e7d_697a046bf7ac415cea2f7633_The-Hide-Hero-Image": {
+        "alt": "The Hide and its underground waterhole hide at sunset, Hwange",
+        "section": "exterior"
+      },
+      "8aa8a9e2e_048c8bea4_697a051f27268b2503a4fe04_The-Hide-Fact-Banner": {
+        "alt": "The Hide's lounge and dining tent facing the waterhole",
+        "section": "dining"
+      },
+      "cac7731c7_964dd99e9_697a05460a06cc865b4aafad_The-Hide-Request-Itinerary": {
+        "alt": "A deck at The Hide among the dead trees above the pan",
+        "section": "exterior"
+      },
+      "46b8f470d_40b1cb77d_697a084662378e74f8617e7b_Toms-Little-Hide-outdoor": {
+        "alt": "The Hide's pool beyond its lounge",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "time-tide-chinzombo-2": {
+    "describe": {
+      "358e8b8be_5a3ac5d39_682e74fc670c1ad9a8a748f5_Chinzombo_20Luxury_20Safari_20Tent_208": {
+        "alt": "A Chinzombo tent bedroom open to its deck and the Luangwa",
+        "section": "rooms"
+      },
+      "66f9209b3_09ab29639_69ae933df4999646981c3068_Family_Tent_Chinzombo__C2_A9_Oliver_Fly_Photography_10-.": {
+        "alt": "A Chinzombo tent and its pool under a great tree",
+        "section": "pool"
+      },
+      "684ab6d25_009cbb9ef_69ae933d1e28cc4d01a048ab_Family_Tent_Chinzombo__C2_A9_Oliver_Fly_Photography_12-.": {
+        "alt": "A Chinzombo tent bedroom",
+        "section": "rooms"
+      },
+      "44864faa6_94522fb84_69ae933db235ac1ad3a7c25f_Family_Tent_Chinzombo__C2_A9_Oliver_Fly_Photography_15-.": {
+        "alt": "A Chinzombo tent and its pool under the trees",
+        "section": "rooms"
+      },
+      "408414b9d_b3eee2312_69ae934065a1ea2261d931f5_Family_Tent_Chinzombo__C2_A9_Oliver_Fly_Photography_17-.": {
+        "alt": "A Chinzombo tent and its pool under the msikizi trees",
+        "section": "pool"
+      },
+      "2bd107e1d_6958aa18c_69ae92e542545a671909c0a9_Main_Lodge_Chinzombo__C2_A9_Oliver_Fly_Photography_26-2.": {
+        "alt": "The Chinzombo lounge built round a tree",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "time-tide-mchenja": {
+    "describe": {
+      "5f99eb80e_ce1ef1334_682e75e4c0f25ca795b04d08_Time_20_2B_20Tide_20Mchenja_20Safari_20Rooms_203": {
+        "alt": "A Mchenja room with its bath",
+        "section": "rooms"
+      },
+      "1ac7df9b4_105a60c98_69ae89908737f5394fd94466_Andy_Macdonald_Photography00900-HDR": {
+        "alt": "A Mchenja outdoor bathroom under the ebony trees",
+        "section": "rooms"
+      },
+      "5f5a1783e_9ac645f22_69ae89901e28cc4d019e12b4_Camp_Time__Tide_Mchenga__C2_A9_Oliver_Fly_Photography_4.": {
+        "alt": "A Mchenja room under an ebony tree",
+        "section": "exterior"
+      },
+      "2c39b9860_b096829de_69ae8990096405a4a3d52ab6_Camp_Time__Tide_Mchenga__C2_A9_Oliver_Fly_Photography_2.": {
+        "alt": "A Mchenja room sitting area",
+        "section": "rooms"
+      },
+      "c1b5279a4_f9ab51d22_69ae8990ce1ec2b5d50ccc38_Camp_Time__Tide_Mchenga__C2_A9_Oliver_Fly_Photography_3.": {
+        "alt": "A Mchenja room bedroom",
+        "section": "rooms"
+      },
+      "5cd0d158a_a5568d6fa_69ae8990e7d1b6ff105bd19d_Camp_Time__Tide_Mchenga__C2_A9_Oliver_Fly_Photography_3.": {
+        "alt": "A Mchenja room bed",
+        "section": "rooms"
+      },
+      "f51770354_fed5fde8a_69ae89906c53fe9a63c45d43_Camp_Time__Tide_Mchenga__C2_A9_Oliver_Fly_Photography_4.": {
+        "alt": "A Mchenja bath",
+        "section": "rooms"
+      },
+      "40e3194c9_411c5d3ed_69ae899004b4607a82becb95_Camp_Time__Tide_Mchenga__C2_A9_Oliver_Fly_Photography_4.": {
+        "alt": "A Mchenja room on the bank of the Luangwa River from above",
+        "section": "exterior"
+      },
+      "ac5d3870c_03c035560_69ae89901a0efed3546e7ccb_DSC00890-Edit": {
+        "alt": "A Mchenja twin bedroom",
+        "section": "rooms"
+      },
+      "223bae9b8_67793c76f_69ae84fde7d1b6ff105af5ba_DSC05064-HDR-Edit": {
+        "alt": "The Mchenja main area in the ebony grove",
+        "section": "exterior"
+      },
+      "1b8df0923_73d1e7427_69ae8990f26fbb953ca4aaa5_Time_and_Tide__C2_A9_Oliver_Fly_Photography_93": {
+        "alt": "A Mchenja room bedroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "time-tide-tsara-komba": {
+    "describe": {
+      "hero": {
+        "alt": "A snorkeller with turtles off Nosy Komba from above",
+        "section": "experiences"
+      },
+      "g1": {
+        "alt": "A Tsara Komba room open to the sea",
+        "section": "rooms"
+      },
+      "g2": {
+        "alt": "Tables on the Tsara Komba deck above the sea at dusk",
+        "section": "dining"
+      },
+      "g3": {
+        "alt": "A Tsara Komba bathroom",
+        "section": "rooms"
+      },
+      "g4": {
+        "alt": "A Tsara Komba bedroom looking out to the sea",
+        "section": "rooms"
+      },
+      "g5": {
+        "alt": "A Tsara Komba terrace above the beach",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "Guests on loungers on a Tsara Komba deck facing the sea",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "A Tsara Komba room deck facing the sea at sunset",
+        "section": "rooms"
+      },
+      "g8": {
+        "alt": "The Tsara Komba dining deck above the sea",
+        "section": "dining"
+      },
+      "g9": {
+        "alt": "The Tsara Komba bay and its boats from the hillside",
+        "section": "exterior"
+      },
+      "g10": {
+        "alt": "Children on the Tsara Komba beach below the palms",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "tongabezi": {
+    "describe": {
+      "hero": {
+        "alt": "A Tongabezi house interior",
+        "section": "rooms"
+      },
+      "g1": {
+        "alt": "Tongabezi's houses on the bank of the Zambezi and its jetty",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "Dinner for two on a raft on the Zambezi at dusk",
+        "section": "dining"
+      },
+      "g4": {
+        "alt": "A canoe on the Zambezi at sunset",
+        "section": "experiences"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-bisate-lodge": {
+    "describe": {
+      "hero": {
+        "alt": "Bisate's villas among the forest on the hillside at dusk",
+        "section": "exterior"
+      },
+      "g1": {
+        "alt": "Bisate's villas in the forest at sunrise",
+        "section": "exterior"
+      },
+      "g2": {
+        "alt": "A Bisate villa among the flowers and forest",
+        "section": "exterior"
+      },
+      "g3": {
+        "alt": "A Bisate villa facing the Virunga volcanoes at sunset",
+        "section": "exterior"
+      },
+      "g4": {
+        "alt": "Bisate's villas among the forest at dusk, a second view",
+        "section": "exterior"
+      },
+      "g5": {
+        "alt": "Bisate on its forested hillside from afar",
+        "section": "exterior"
+      },
+      "g6": {
+        "alt": "A path through bamboo to a Bisate villa",
+        "section": "exterior"
+      },
+      "g7": {
+        "alt": "A guide in the bamboo forest of the Virungas",
+        "section": "experiences"
+      },
+      "g8": {
+        "alt": "Morning mist over the Virunga hills",
+        "section": "experiences"
+      },
+      "g9": {
+        "alt": "Guests planting trees at Bisate",
+        "section": "experiences"
+      },
+      "g10": {
+        "alt": "A Bisate villa interior",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-bisate-reserve": {
+    "describe": {
+      "7e0255ea5_699c45336_693bbd9d8962cf0586d4d2f9_wilderness-bisate-reserve": {
+        "alt": "Bisate Reserve's villas on the hillside below the Virunga volcanoes",
+        "section": "exterior"
+      },
+      "dde1cebd6_9fcb63391_695f579134095cc028479198_BisateRes-09-24_FelixS_689": {
+        "alt": "A Bisate Reserve villa study",
+        "section": "rooms"
+      },
+      "155cc53ea_aed3a9f26_695f5791a31856a2224e1164_BisateRes-09-24_FelixS_698": {
+        "alt": "A Bisate Reserve villa bedroom",
+        "section": "rooms"
+      },
+      "6b2804ece_d91d7a894_695f57916cbcd29a07c3ffdc_BisateRes-09-24_FelixS_713": {
+        "alt": "A guest in a Bisate Reserve villa lounge",
+        "section": "rooms"
+      },
+      "e71ee3e5d_7ad8619e2_695f57d1ee2478a844c7ab93_Wilderness-BisateReserve_PR_11": {
+        "alt": "A guest by the open door of a Bisate Reserve villa onto the hills",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-busanga": {
+    "describe": {
+      "2ad20eb42_d50a80c14_6926c603f16b013210ce7d26_wilderness-busanga-bush-camp-accommodation-tent-exterio.": {
+        "alt": "A Busanga tent among the trees at sunrise on the Busanga Plains",
+        "section": "exterior"
+      },
+      "37c4671e2_438bad1f2_695f61120cd5c4f685b88685_BusangaBC-Nov23-TC_165": {
+        "alt": "A Busanga tent bedroom open to the plains",
+        "section": "rooms"
+      },
+      "7161d4d2c_9e3a20936_695f61121461ce472aafb906_BusangaBC-Nov23-TC_169": {
+        "alt": "A Busanga tent bathroom",
+        "section": "rooms"
+      },
+      "2c9be7315_346d7d3e6_695f6112a9876e02a615f990_BusangaBC-Nov23-TC_173": {
+        "alt": "A massage on a deck under the trees at Busanga",
+        "section": "experiences"
+      },
+      "706204e4f_54b51a922_695f6119dfa1a62cac52ee05_BusangaBC-Nov23-TC_164": {
+        "alt": "A Busanga tent looking out over the floodplain",
+        "section": "rooms"
+      },
+      "419f06223_876a6fefb_69c13675da6d038ac75e6646_BusangaBC-Nov23-TC_163": {
+        "alt": "A Busanga tent under a great tree in the late light",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-desert-rhino-camp": {
+    "describe": {
+      "130ba7b32_9d6c7f4e4_686ef5b90c1031c4540ea6d7_DesertRhinoCamp_GameDrive_0724_TC_021_T": {
+        "alt": "Guides beside their vehicle on the Palmwag plains below the table mountains",
+        "section": "experiences"
+      },
+      "c4c0b894d_2adad26d7_6960a3fe1a71d4acbb5e92d5_DesertRhinoCamp_MainAreas_0724_TC_064_T": {
+        "alt": "The Desert Rhino Camp main tent",
+        "section": "dining"
+      },
+      "a42a1d17f_1fe340d8d_6960a3fe1cb0e630e5ae8026_DesertRhinoCamp_Rooms_Family_0724_TC_006_T": {
+        "alt": "A Desert Rhino Camp suite bedroom",
+        "section": "rooms"
+      },
+      "57c88eea0_583513a80_6960a3fed8fa46919d55eef8_DesertRhinoCamp_Rooms_Standard_0724_TC_025_T": {
+        "alt": "A Desert Rhino Camp stargazing deck facing the mountains at sunset",
+        "section": "exterior"
+      },
+      "207aaca0e_4c15e5fea_6960a3fe3db71410b2c4b3fd_DesertRhinoCamp_Rooms_Standard_0724_TC_028_T": {
+        "alt": "A Desert Rhino Camp suite on the desert",
+        "section": "exterior"
+      },
+      "cdc0efbf4_31fac37af_6960a3fe4fd144c4d4ba407b_DesertRhinoCamp_Rooms_Standard_0724_TC_039_T": {
+        "alt": "A Desert Rhino Camp outdoor shower",
+        "section": "rooms"
+      },
+      "dac85dbcb_614c5461b_6960a3feb9d729e7411985f2_DesertRhinoCamp_Rooms_Standard_0724_TC_048_T": {
+        "alt": "A Desert Rhino Camp bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-damaraland": {
+    "describe": {
+      "f4b799ff7_8586cf4a8_692860cb1abb36176b1cb3c4_wilderness-damaraland": {
+        "alt": "A Doro Nawas room opening onto the desert",
+        "section": "rooms"
+      },
+      "2860c721e_cb0239783_69286342a48b26edf48b6177_wilderness-doro-nawas-desert-rooma-1": {
+        "alt": "Doro Nawas on its rise above the Damaraland plain from the air",
+        "section": "exterior"
+      },
+      "d25d5c0ac_50166f217_69286342083a52f9ca418c08_wilderness-doro-nawas-desert-rooma-2": {
+        "alt": "A Doro Nawas outdoor shower",
+        "section": "rooms"
+      },
+      "4c557d192_488d79660_6928634286df42edca2c0947_wilderness-doro-nawas-desert-rooma-3": {
+        "alt": "A Doro Nawas room",
+        "section": "rooms"
+      },
+      "eceab1bae_15773f168_6928633df94a45c6226eea7c_wilderness-doro-nawas-desert-rooma": {
+        "alt": "A Doro Nawas veranda bed set out under the desert sky at dusk",
+        "section": "rooms"
+      },
+      "58025cf45_17d01436f_69ca452aa61cc76c08bf17dc_Fireplace_DoroNawas": {
+        "alt": "Doro Nawas lit at dusk among the desert rocks",
+        "section": "exterior"
+      },
+      "7114eb305_7d093e0a2_69ca453dbc134e79f6a6c118_Restaurant_DoroNawas": {
+        "alt": "The Doro Nawas dining room with windows onto the plain",
+        "section": "dining"
+      },
+      "0ad9828fe_0e208bd8c_69ca456a86038b6f35624331_Doro_20Nawas_20Pool": {
+        "alt": "The Doro Nawas pool deck facing the desert mountains",
+        "section": "pool"
+      },
+      "d1f8bacfb_1d81f772d_69ca45cd77eb39b55493d148_Doro_20Nawas_20dinner": {
+        "alt": "The Doro Nawas bar",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-hoanib-skeleton-camp": {
+    "describe": {
+      "559292f73_b048f376e_686ef46ebee06cbdbfc15cab_Final_20Hoanib-40_20_1_": {
+        "alt": "Hoanib Skeleton Coast Camp in the Hoanib Valley below the desert hills",
+        "section": "exterior"
+      },
+      "a1e5da0b7_aab610166_69610e3f64d293d88a10255e_Final_20Hoanib-55": {
+        "alt": "The Hoanib Skeleton Coast lounge",
+        "section": "dining"
+      },
+      "64f37e6d5_b7f080190_69610e3fd6e22d622b659c5f_Final_20Hoanib-58": {
+        "alt": "The Hoanib Skeleton Coast lounge open to the valley",
+        "section": "dining"
+      },
+      "7f4aaed8a_55355038c_69610e3f8d970fe1368a8cf4_Final_20Hoanib-60": {
+        "alt": "A Hoanib Skeleton Coast suite looking out over the valley at sunset",
+        "section": "rooms"
+      },
+      "d21aff789_4d82589d2_69610e3f3a6bf86c9642d738_GuestTent_Hoanib_072": {
+        "alt": "A Hoanib Skeleton Coast suite bathroom",
+        "section": "rooms"
+      },
+      "004074fc4_e77621feb_69610e3f4181b4eaba2decbb_GuestTent_Hoanib_078": {
+        "alt": "A Hoanib Skeleton Coast suite",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-kulala-desert-camp": {
+    "describe": {
+      "c1f00b05d_65bf03dc7_686ef31e4b03e3f83bf69ad4_KulalaDL_Deadvlei_0724_TC_018": {
+        "alt": "A guest below a red dune beside a dead tree, Sossusvlei",
+        "section": "experiences"
+      },
+      "ca25d6001_77312299b_695f6cbe033f9ab83cc3feb2_KulalaDL_StandardTent_0724_TC_048": {
+        "alt": "A Kulala Desert Lodge bathroom",
+        "section": "rooms"
+      },
+      "230fc6ca1_378224041_695f6cbe246ceacfac19fbc7_KulalaDL_MainAreas_0724_TC_058": {
+        "alt": "The Kulala Desert Lodge lounge",
+        "section": "dining"
+      },
+      "ccf9c91ed_769448606_695f6cbef14f9bd1949b4ea4_KulalaDL_MainAreas_0724_TC_082": {
+        "alt": "The Kulala Desert Lodge deck at dusk above the desert",
+        "section": "exterior"
+      },
+      "be531de41_9521ac31f_695f6cbe7da8989bdd142d51_KulalaDL_StandardTent_0724_TC_024": {
+        "alt": "A Kulala room opening onto the desert",
+        "section": "rooms"
+      },
+      "c1367edc5_1ff22527e_695f6cbe3c86d23ca5d6a791_KulalaDL_StandardTent_0724_TC_032": {
+        "alt": "A Kulala room and its deck at dusk",
+        "section": "rooms"
+      },
+      "e5726d99a_8c4b33078_69d4eab1ef7fff8239febe40_KulalaDL_MainAreas_0724_TC_023": {
+        "alt": "The Kulala Desert Lodge deck under its canopy",
+        "section": "exterior"
+      },
+      "35c6e62ec_62d956a55_69d4ea9099e4cf832572d9cc_KulalaDL_MainAreas_0724_TC_083": {
+        "alt": "The Kulala Desert Lodge dining room",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-little-kulala": {
+    "describe": {
+      "3a90833b1_b8eaaf27e_686ef640c3630589c56afb2b_Units_LittleKulala_TeaganCunniffe_039": {
+        "alt": "A Little Kulala rooftop star bed and plunge pool lit at dusk",
+        "section": "exterior"
+      },
+      "a8fbebb3b_fa744102a_695f7077c51556d8adf62d8f_Lodge_LittleKulala_TeaganCunniffe_021": {
+        "alt": "The Little Kulala lounge",
+        "section": "dining"
+      },
+      "aa6bcd672_27564dc01_695f707764953323f1a4b239_Lodge_LittleKulala_TeaganCunniffe_001": {
+        "alt": "The Little Kulala lounge by the fire",
+        "section": "dining"
+      },
+      "6623ad003_cbe1832b1_695f7077846bcff1b034eefe_PoolArea_LittleKulala_TeaganCunniffe_001": {
+        "alt": "The Little Kulala pool and main lodge at sunset",
+        "section": "pool"
+      },
+      "63e194370_0ab8e30e8_695f707718654cd70d79fbef_Units_LittleKulala_TeaganCunniffe_039": {
+        "alt": "A Little Kulala rooftop star bed lit at dusk, a second view",
+        "section": "exterior"
+      },
+      "491975644_20a4f4787_695f70779af92d171352a9c8_Units_LittleKulala_TeaganCunniffe_029": {
+        "alt": "Guests on a Little Kulala deck facing the Namib",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-magashi-peninsula": {
+    "describe": {
+      "d71908c90_c10d8e823_6932c4b9144c097f7b4a9f93_wilderness-magashi-peninsula": {
+        "alt": "The Magashi peninsula in Lake Rwanyakazinga from the air",
+        "section": "exterior"
+      },
+      "1cefa6696_e83aa1873_695b86df517bcce3c04eaa50_Villa_MagashiPeninsula_Rwanda10-25-FELIX-110": {
+        "alt": "A Magashi suite bedroom",
+        "section": "rooms"
+      },
+      "bb8f82263_723b9c880_695b86df6bf212898cc00766_Villa_MagashiPeninsula_Rwanda10-25-FELIX-142": {
+        "alt": "A Magashi suite bathroom",
+        "section": "rooms"
+      },
+      "1cc224fc8_d9a382ef5_695b86df81d4d9b71077edc4_Villa_MagashiPeninsula_Rwanda10-25-FELIX-137": {
+        "alt": "A Magashi suite bath with doors open to the lake",
+        "section": "rooms"
+      },
+      "2953095c7_3da0527dc_695b66f2ab89a28052201b25_Star_20Deck_MagashiPeninsula_Rwanda10-25-FELIX-11": {
+        "alt": "A Magashi rooftop Star Bed under the open sky",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-ruckomechi": {
+    "describe": {
+      "2dab377a0_538610a10_686ef265f0176dacf42c40e0_1_StandardRoom_R61_2316_Toned_20_1_": {
+        "alt": "A Ruckomechi suite under the albida trees on the Zambezi floodplain at sunrise",
+        "section": "exterior"
+      },
+      "462468b17_8076efee1_695f68b34a42c65e7c29310f_1_StandardRoom_1B9A9047_Toned": {
+        "alt": "A Ruckomechi suite bathroom",
+        "section": "rooms"
+      },
+      "d31c082ac_c60257e22_695f68b3d86e731fd40780a0_1_StandardRoom_1B9A9074_Toned": {
+        "alt": "A Ruckomechi suite bathroom",
+        "section": "rooms"
+      },
+      "6a2643755_f340a6fd5_695f68b31df8e8c1f0dd446a_1_StandardRoom_R61_2404_Toned": {
+        "alt": "A Ruckomechi suite bed looking out to the Zambezi",
+        "section": "rooms"
+      },
+      "5da59081e_6b8109ad4_695f68b3e2ba1b4d037bfb1d_1_StandardRoom_R61_2454_Toned": {
+        "alt": "A Ruckomechi suite desk facing the floodplain",
+        "section": "rooms"
+      },
+      "181d33f49_0978e9a39_695f68b3e729bb7c47e7be35_1_FamilyRoom_R61_0713_Toned": {
+        "alt": "A Ruckomechi suite bedroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-sabyinyo": {
+    "describe": {
+      "6c7e8bba3_88fbd3b39_68a503e7f95cc131b411b5c5_Suite_2007": {
+        "alt": "A Sabyinyo stone cottage in its garden at the foot of the Virungas",
+        "section": "exterior"
+      },
+      "4c275ea3b_90a0d2cd6_68a504956b8b5a1d2cd911b9_Suite_2001": {
+        "alt": "A Sabyinyo cottage bedroom",
+        "section": "rooms"
+      },
+      "1f1ce7d81_e4acfd2c7_68a504a55fac5e9b574f7cd0_Suite_2002": {
+        "alt": "A Sabyinyo cottage bathroom",
+        "section": "rooms"
+      },
+      "dd24483f1_e5e6d1746_68a504a876d73bdff4ef7fc8_Suite_2005": {
+        "alt": "A Sabyinyo cottage veranda",
+        "section": "exterior"
+      },
+      "0a8068ae7_3c6fb9991_68a503e7f95cc131b411b5c5_Suite_2007": {
+        "alt": "A Sabyinyo stone cottage in its garden, a second view",
+        "section": "exterior"
+      },
+      "52c2f0158_b47219cd7_68a504f1084a72cb307ced24_Cottage_2004": {
+        "alt": "A guest on a Sabyinyo veranda looking out to the forest",
+        "section": "exterior"
+      },
+      "a19d739e7_b13eb6d3c_69bcfa0646257d482db18c80_Sabyinyo_20Lodge_Rwanda_12-25_FLINK_0146": {
+        "alt": "The Sabyinyo lounge open to the hills",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-serra-cafema": {
+    "describe": {
+      "f6312368c_39d277180_686ef738bff63f4a6d674286_Lodge_Deck_SerraCafema_TCunniffe_362": {
+        "alt": "The Serra Cafema deck above the Kunene River at sunrise",
+        "section": "exterior"
+      },
+      "4b7b36199_63e9af63c_6960a058a860cb7f78ffd774_Final_20Serra_20Cafema-4": {
+        "alt": "The Serra Cafema lounge open to the river",
+        "section": "dining"
+      },
+      "4ae3ccc76_912ba42c0_6960a058375c256e7236212a_Final_20Serra_20Cafema": {
+        "alt": "A Serra Cafema suite bedroom",
+        "section": "rooms"
+      },
+      "1bcbf9426_f18f936e5_6960a0586cab7739e344f013_Lodge_Deck_SerraCafema_TCunniffe_360": {
+        "alt": "The Serra Cafema deck above the Kunene River, a second view",
+        "section": "exterior"
+      },
+      "53dec0bb7_5f47798e6_6960a05856af664634a10530_StandardRoom_SerraCafema_TCunniffe_002": {
+        "alt": "A Serra Cafema suite open to its deck above the river",
+        "section": "rooms"
+      },
+      "99b6a0348_48fb864af_69c38c7116493e9cfd75a547_Serra_20Cafema_20river_20Experience": {
+        "alt": "Serra Cafema lit at dusk on the bank of the Kunene River",
+        "section": "exterior"
+      },
+      "ee703aef2_6f493f006_69d4f0ebb3493573b5f72446_Final_20Serra_20Cafema-3": {
+        "alt": "The Serra Cafema lounge deck above the Kunene in the morning light",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-shumba": {
+    "describe": {
+      "ffc902040_e91fd6fbe_6926def194c4a846cb11e4c0_shumba_camp_pool": {
+        "alt": "Shumba's main deck and pool lit at dusk above the Busanga Plains",
+        "section": "pool"
+      },
+      "31e6b393b_f596999a5_695f63ae7b16f251d1038eb8_1_StandardTent_1B9A8149_1_Toned": {
+        "alt": "A Shumba deck looking over the Busanga Plains",
+        "section": "exterior"
+      },
+      "95dcb91e8_53ecc3659_695f63ae714b2994fbf2a955_1_StandardTent_R61_0751_Toned": {
+        "alt": "A Shumba suite open to the plains",
+        "section": "rooms"
+      },
+      "0d8e1e6c2_e3d204763_695f63aec85f1976790e49c7_1_StandardTent_R61_0800_Toned": {
+        "alt": "A Shumba suite bathroom",
+        "section": "rooms"
+      },
+      "d28498f28_c6ce4bbf1_695f63ae02674655750b01aa_1_StandardTent_R61_1753_Toned": {
+        "alt": "A Shumba outdoor shower",
+        "section": "rooms"
+      },
+      "934bcca95_9450f58c2_695f63ae6d969bfd9c8ea11d_8_Spa_R61_0876_Toned": {
+        "alt": "A massage on a Shumba deck facing the plains",
+        "section": "experiences"
+      },
+      "489e1ad62_98e28e7ba_695f63b68efa701610a89dd3_1_StandardTent_1B9A8100_Toned": {
+        "alt": "A Shumba suite among the palms above the plains at sunrise",
+        "section": "exterior"
+      },
+      "e4a4dfda2_aaf8d302b_695f63280cd5c4f685b8d94c_1_StandardTent_1B9A8134-HDR_Toned": {
+        "alt": "A Shumba suite bedroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "wilderness-toka-leya": {
+    "describe": {
+      "5ba15a0bb_c35f6719b_6926bd3a7e040c0a1da3e0d3_Toka-Leya-Exterior-of-luxury-tent-Night-time-": {
+        "alt": "A Toka Leya tent lit at dusk among the trees",
+        "section": "exterior"
+      },
+      "19e585ef8_512ed5782_695f5cf8d9c2b8ff658dfa7b_1_FamilyRoom_1B9A6596_Toned": {
+        "alt": "A Toka Leya outdoor bath",
+        "section": "rooms"
+      },
+      "25a499e2a_f0dec66c3_695f5cf8877d9502fbdce0ea_1_FamilyRoom_1B9A6826_Toned": {
+        "alt": "A Toka Leya suite bedroom",
+        "section": "rooms"
+      },
+      "bf6b52c3a_bc661a81e_695f5cf85136d69b6c9e9f09_1_FamilyRoom_1B9A6855_Toned": {
+        "alt": "A Toka Leya suite bathroom",
+        "section": "rooms"
+      },
+      "a33bee4e0_12ee94266_695f5cf87d2b57880ac9fdbc_1_FamilyRoom_1B9A6879_Toned": {
+        "alt": "A Toka Leya suite bedroom",
+        "section": "rooms"
+      },
+      "3e335a1b4_c3f52ac4d_695f5cf81d5be99f8f9673c4_1_FamilyRoom_1B9A6880_Toned": {
+        "alt": "A Toka Leya suite bathroom",
+        "section": "rooms"
+      },
+      "5e9a38caa_2304b010f_69d4d97590d793b56ebeede6_1_FamilyRoom_1B9A6918_Toned": {
+        "alt": "A Toka Leya suite bedroom",
+        "section": "rooms"
+      },
+      "d43468e1b_f46c225b4_69d4dd1e4c16c0afaf823526_2_MainAreas_1B9A7757_Toned": {
+        "alt": "The Toka Leya lounge open to the Zambezi",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "wolwedans-dune-camp": {
+    "describe": {
+      "373de7e0e_b69af2596_69b17985aad0996bafbff36b_Wolwedans-Dune-Camp-2-1": {
+        "alt": "Wolwedans Dune Camp on the red NamibRand at sunrise from the air",
+        "section": "exterior"
+      },
+      "c66148694_2e117fe5f_69b2791ab6c27a6e437418e7_Wolwedans-Dune-Camp-19-1": {
+        "alt": "A Dune Camp tent bedroom open to the desert",
+        "section": "rooms"
+      },
+      "d54333b39_084897f81_69b179f1f0d17f1de19cc605_Wolwedans-Dune-Camp-21": {
+        "alt": "Guests on a Dune Camp deck looking over the NamibRand",
+        "section": "exterior"
+      },
+      "f82043166_42b8165c2_69b279710321934d944d8982_Wolwedans-Dune-Camp-15": {
+        "alt": "A Dune Camp deck facing the desert and mountains",
+        "section": "exterior"
+      },
+      "c0370e830_d88436d93_69b27971a112d947f97fc8c6_Wolwedans-Dune-Camp-18": {
+        "alt": "A Dune Camp tent bedroom",
+        "section": "rooms"
+      },
+      "c405e8a26_f35f4d03b_69b279710cf8a4dd951f1cf7_Wolwedans-Dune-Camp-16": {
+        "alt": "A Dune Camp tent bedroom open to the desert at dusk",
+        "section": "rooms"
+      },
+      "2bce4d695_75d297f2b_69b279710bdb4b6b4f614be9_Wolwedans-Dune-Camp-17": {
+        "alt": "A Dune Camp tent bed facing the dunes",
+        "section": "rooms"
+      }
+    },
+    "extra": []
   }
 }

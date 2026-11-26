@@ -1,0 +1,16 @@
+name: Brand media stage (temporary)
+on:
+  push:
+    branches: [tmp/contact-sheets-africa2]
+    paths: [".contact/stage.tsv"]
+permissions:
+  contents: write
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .contact/stage.py
+      - run: |
+          git config user.name "brand-stage"; git config user.email "actions@github.com"
+          git add .contact/stage && git commit -m "Brand media staged" && git pull --rebase -q && git push

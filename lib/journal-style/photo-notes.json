@@ -15305,5 +15305,175 @@
       }
     },
     "extra": []
+  },
+  "tengile-mala-mala-kirkmans-kamp": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/tengile-malamala/kirkmans-kamp-dusk-above",
+        "alt": "Kirkman's Kamp lit at dusk on its ridge above the Sand River",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/kirkmans-kamp-veranda-sunset",
+        "alt": "The long veranda of Kirkman's Kamp at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/kirkmans-kamp-sand-river-air",
+        "alt": "Kirkman's Kamp above the bend of the Sand River from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/kirkmans-kamp-cottage-veranda",
+        "alt": "A Kirkman's Kamp cottage veranda looking over the bush and the river",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/kirkmans-kamp-garden",
+        "alt": "The Kirkman's Kamp lawn and cottages under the old trees",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/kirkmans-kamp-cottage",
+        "alt": "A Kirkman's Kamp cottage bedroom opening to its veranda and the bush",
+        "section": "rooms"
+      }
+    ]
+  },
+  "tengile-river-lodge-by-mala-mala": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/tengile-malamala/tengile-suites-above",
+        "alt": "Tengile River Lodge suites and pools among the trees on the Sand River from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/tengile-suite-pool",
+        "alt": "A Tengile River Lodge suite rim flow pool above the riverine bush",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/tengile-sand-river-air",
+        "alt": "The Sand River and Tengile River Lodge from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/tengile-suite-lounge-sunset",
+        "alt": "A Tengile River Lodge suite lounge open to the river at sunset",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/tengile-suite",
+        "alt": "A Tengile River Lodge suite bedroom with glass walls onto the bush",
+        "section": "rooms"
+      }
+    ]
+  },
+  "tengile-mala-mala-rattrays-lodge": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/tengile-malamala/rattrays-pool-river",
+        "alt": "The Rattray's Lodge pool deck above the Sand River floodplain",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/rattrays-pool-elephants",
+        "alt": "A guest at the Rattray's pool watching elephants in the Sand River",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/rattrays-air",
+        "alt": "Rattray's Lodge villas among the riverine forest from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/rattrays-villa-view",
+        "alt": "Guests at the open wall of a Rattray's villa looking over the river",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/rattrays-entrance",
+        "alt": "The path to Rattray's Lodge under giant riverine trees",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/rattrays-villa-lounge",
+        "alt": "A Rattray's villa lounge with glass walls onto the river",
+        "section": "rooms"
+      }
+    ]
+  },
+  "tengile-mala-mala-camp": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/tengile-malamala/malamala-elephant-river",
+        "alt": "An elephant grazing on the bank of the Sand River at MalaMala Camp",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/malamala-pool-river-air",
+        "alt": "MalaMala Camp's pool above the Sand River floodplain from the air",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/malamala-elephants-camp",
+        "alt": "Guests at MalaMala Camp watching elephants on the lawn",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/malamala-suite-walkway",
+        "alt": "A thatched MalaMala suite and its walkway under the trees",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/malamala-deck-dusk",
+        "alt": "The MalaMala Camp deck above the river at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/malamala-suite",
+        "alt": "A thatched MalaMala Camp suite",
+        "section": "rooms"
+      }
+    ]
+  },
+  "tengile-mala-mala-sable-camp": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/tengile-malamala/sable-pool",
+        "alt": "The Sable Camp pool and lawn above the Sand River floodplain",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/sable-rondavel",
+        "alt": "A thatched Sable Camp rondavel suite under the trees",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/sable-sand-river-air",
+        "alt": "The Sand River winding through MalaMala from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/sable-leopard",
+        "alt": "A leopard in the bush near Sable Camp",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/sable-view",
+        "alt": "The view from Sable Camp over the floodplain and the bush",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/tengile-malamala/sable-suite",
+        "alt": "A Sable Camp suite bedroom",
+        "section": "rooms"
+      }
+    ]
   }
 }

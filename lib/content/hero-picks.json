@@ -5686,6 +5686,28 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/tengile-malamala/sable-view",
         "alt": "The view from Sable Camp over the floodplain and the bush"
       }
+    ],
+    "stay:monwana-thornybush": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/monwana/lodge-reflection-dusk",
+        "alt": "Monwana's main lodge reflected in its pond at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/monwana/villa-pool-sunset",
+        "alt": "Sunset over the bush reflected in the Monwana Villa pool"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/monwana/thornybush-air",
+        "alt": "Monwana among the trees of the Thornybush at sunrise from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/monwana/suite-pool",
+        "alt": "A Monwana suite under thatch with its plunge pool and loungers"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/monwana/dinner-sunset",
+        "alt": "A table set for dinner at Monwana as the sun sets over the bush"
+      }
     ]
   }
 }

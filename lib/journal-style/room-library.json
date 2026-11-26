@@ -4330,5 +4330,87 @@
         "plungePool": false
       }
     ]
+  },
+  "monwana-thornybush": {
+    "ratesNote": "Rates are MORE's published 2026 rates (valid to 19 December 2026), all inclusive of meals, house drinks and two game drives a day; park fees and the Impact Levy are extra.",
+    "rooms": [
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "Ages 10 and over",
+          "98 sq m (1,055 sq ft)"
+        ],
+        "lede": "A suite for two with floor to ceiling windows, underfloor heating, an outdoor shower and a terrace with a temperature controlled plunge pool over the waterhole.",
+        "features": [
+          "Private plunge pool",
+          "Outdoor shower",
+          "Private lounge",
+          "Two game drives a day"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/monwana/suite-pool",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/monwana/suite-view"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 2189,
+          "basis": "per person, per night sharing"
+        }
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": 4,
+        "facts": [
+          "Sleeps 4 (2 adults, 2 children)",
+          "Two bedrooms",
+          "Ages 10 and over"
+        ],
+        "lede": "Two bedrooms and a plunge pool of your own, with a private safari vehicle so game drives keep the family's pace.",
+        "features": [
+          "Private safari vehicle",
+          "Private plunge pool",
+          "Outdoor shower"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/monwana/family-suite"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 7184,
+          "basis": "per suite, per night"
+        }
+      },
+      {
+        "name": "Monwana Villa",
+        "sleeps": 6,
+        "facts": [
+          "Sleeps 6 (4 adults, 2 children)",
+          "Two en suite bedrooms",
+          "All ages",
+          "520 sq m (5,597 sq ft)"
+        ],
+        "lede": "The whole villa for one family: two bedrooms with their own plunge pools, three pools in all, a fire deck over an active waterhole and your own concierge, chef, butler, guide, tracker and vehicle.",
+        "features": [
+          "Exclusive use",
+          "Three pools and a fire deck",
+          "Private chef and butler",
+          "Private safari vehicle",
+          "Kids activities",
+          "Solar powered"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/monwana/villa-pool-family",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/monwana/villa-lounge-waterhole",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/monwana/villa-bedroom"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 13776,
+          "basis": "per night, the whole villa"
+        }
+      }
+    ]
   }
 }

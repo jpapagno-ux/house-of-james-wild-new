@@ -15475,5 +15475,70 @@
         "section": "rooms"
       }
     ]
+  },
+  "monwana-thornybush": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/monwana/lodge-reflection-dusk",
+        "alt": "Monwana's main lodge reflected in its pond at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/monwana/villa-pool-sunset",
+        "alt": "Sunset over the bush reflected in the Monwana Villa pool",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/monwana/thornybush-air",
+        "alt": "Monwana among the trees of the Thornybush at sunrise from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/monwana/villa-dusk",
+        "alt": "Monwana Villa under its thatch, lit at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/monwana/suite-pool",
+        "alt": "A Monwana suite under thatch with its plunge pool and loungers",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/monwana/dinner-sunset",
+        "alt": "A table set for dinner at Monwana as the sun sets over the bush",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/monwana/villa-pool-night",
+        "alt": "The Monwana Villa pool and deck lit at night",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/monwana/villa-lounge-waterhole",
+        "alt": "The Monwana Villa lounge open to the waterhole",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/monwana/villa-pool-family",
+        "alt": "A family in the Monwana Villa rim flow pool above the bush",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/monwana/suite-view",
+        "alt": "A Monwana suite opening to its terrace and pool",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/monwana/villa-bedroom",
+        "alt": "A Monwana Villa bedroom under its canopy",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/monwana/family-suite",
+        "alt": "A Monwana suite bath with a view to the bush",
+        "section": "rooms"
+      }
+    ]
   }
 }

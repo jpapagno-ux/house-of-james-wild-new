@@ -2,8 +2,12 @@
 # them to the house Cloudinary library with signed requests. Input .contact/upload.tsv:
 # public_id \t source url \t alt \t credit \t source site \t resource_type(image|video)
 import os, sys, time, hashlib, subprocess, urllib.parse, urllib.request, json
-u = urllib.parse.urlparse(os.environ['CLOUDINARY_URL'])
-key, secret, cloud = u.username, u.password, u.hostname
+import re
+raw = os.environ.get('CLOUDINARY_URL', '').strip()
+print('CLOUDINARY_URL set:', bool(raw), 'len', len(raw), 'scheme', raw.split(':')[0] if raw else None, flush=True)
+m = re.match(r'cloudinary://([^:]+):([^@]+)@(.+)$', raw)
+if not m: sys.exit('CLOUDINARY_URL missing or not in cloudinary://key:secret@cloud form')
+key, secret, cloud = m.group(1), m.group(2), m.group(3).split('?')[0]
 os.makedirs('.contact/dl', exist_ok=True)
 log = []
 for n, line in enumerate(open('.contact/upload.tsv').read().splitlines()):

@@ -1,7 +1,7 @@
 name: Contact sheets (temporary)
 on:
   push:
-    branches: [tmp/contact-sheets-africa]
+    branches: [tmp/contact-sheets-africa2]
     paths: [".contact/list2.tsv"]
 permissions:
   contents: write

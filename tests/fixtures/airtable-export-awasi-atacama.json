@@ -129,8 +129,8 @@
     "flduDBHCrnixoEnwX": 30,
     "fldLicyNay0J7QUhE": "A 50% deposit confirms the booking; the balance is due 30 days before arrival. November to February: free cancellation until 45 days before arrival, 50% from 44 to 31 days, 100% within 30 days. March to October: free until 31 days before arrival, 50% from 30 to 16 days, 100% within 15 days. Festive dates (20 December to 3 January): free until 121 days before, 50% from 120 to 61 days, 100% within 60 days.",
     "fldoisPzvpMjxR7a5": "44:50, 30:100",
-    "fldZuYDcij1wBcHgG": 1,
-    "fld1XEDdmw71rH865": 1,
+    "fldZuYDcij1wBcHgG": 2,
+    "fld1XEDdmw71rH865": 2,
     "fld2WUPdKEbun6uKO": "2026-11-24T13:20:00.000Z",
     "fld2GLjAnpzzDcK1K": [
      {
@@ -166,7 +166,8 @@
      {
       "id": "rece6aBEPbBWgC4I7"
      }
-    ]
+    ],
+    "fldDufeI0oKqOgbuN": 2195
    }
   },
   {
@@ -194,7 +195,8 @@
      {
       "id": "rece6aBEPbBWgC4I7"
      }
-    ]
+    ],
+    "fldDufeI0oKqOgbuN": 1870
    }
   },
   {
@@ -222,7 +224,8 @@
      {
       "id": "rece6aBEPbBWgC4I7"
      }
-    ]
+    ],
+    "fldDufeI0oKqOgbuN": 1870
    }
   },
   {
@@ -250,7 +253,8 @@
      {
       "id": "rece6aBEPbBWgC4I7"
      }
-    ]
+    ],
+    "fldDufeI0oKqOgbuN": 1650
    }
   },
   {
@@ -279,7 +283,8 @@
       "id": "recrQ5WdFn3FRkQKV"
      }
     ],
-    "fldWkR0xbRaQBYJiY": 815
+    "fldWkR0xbRaQBYJiY": 815,
+    "fldDufeI0oKqOgbuN": 3050
    }
   },
   {
@@ -308,7 +313,8 @@
       "id": "recrQ5WdFn3FRkQKV"
      }
     ],
-    "fldWkR0xbRaQBYJiY": 625
+    "fldWkR0xbRaQBYJiY": 625,
+    "fldDufeI0oKqOgbuN": 2470
    }
   },
   {
@@ -337,7 +343,8 @@
       "id": "recrQ5WdFn3FRkQKV"
      }
     ],
-    "fldWkR0xbRaQBYJiY": 625
+    "fldWkR0xbRaQBYJiY": 625,
+    "fldDufeI0oKqOgbuN": 2470
    }
   },
   {
@@ -366,7 +373,8 @@
       "id": "recrQ5WdFn3FRkQKV"
      }
     ],
-    "fldWkR0xbRaQBYJiY": 560
+    "fldWkR0xbRaQBYJiY": 560,
+    "fldDufeI0oKqOgbuN": 2100
    }
   }
  ],

@@ -36,7 +36,7 @@
   "depositPercent": 0.5,
   "balanceDueDays": 30,
   "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival. November to February: free cancellation until 45 days before arrival, 50% from 44 to 31 days, 100% within 30 days. March to October: free until 31 days before arrival, 50% from 30 to 16 days, 100% within 15 days. Festive dates (20 December to 3 January): free until 121 days before, 50% from 120 to 61 days, 100% within 60 days.",
-  "cancellationTiers": "44:50, 30:100",
+  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; November to February 2026-11-01..2027-02-28 = 44:50, 30:100; 30:50, 15:100",
   "notes": "Tax exempt for non-resident guests paying in foreign currency, per the sheet. Single-occupancy rates on the sheet are not yet priced. House commission 20% (private)."
  },
  "seasons": {

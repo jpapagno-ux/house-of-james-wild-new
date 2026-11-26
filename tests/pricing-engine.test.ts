@@ -209,3 +209,23 @@ test("R2/R10: malformed offers are never applied by the engine (defence in depth
   assert.equal(err(quote(card({ restrictions: [{ id: "m", start: "2027-02-01", end: "2027-02-28", type: "min_stay" }] }), ROOM, req())).code, "invalid_card");
   assert.equal(localToday("Africa/Joburg", new Date("2026-12-31T22:30:00Z")), "2026-12-31"); // falls back to UTC, never throws
 });
+
+test("cancellation by season: the arrival's season sets the schedule, shown as dated lines", () => {
+  const seasonal = card({ cancellation: { summary: "By season.", tiers: [{ daysBeforeArrival: 30, penaltyBp: 5000 }, { daysBeforeArrival: 15, penaltyBp: 10_000 }], seasons: [
+    { label: "Festive", from: "2026-12-20", to: "2027-01-03", tiers: [{ daysBeforeArrival: 120, penaltyBp: 5000 }, { daysBeforeArrival: 60, penaltyBp: 10_000 }] },
+    { label: "High", from: "2026-11-01", to: "2027-02-28", tiers: [{ daysBeforeArrival: 44, penaltyBp: 5000 }, { daysBeforeArrival: 30, penaltyBp: 10_000 }] },
+  ] } });
+  const at = (arrival: string, departure: string, bookingDate = "2026-06-01") => ok(quote(seasonal, ROOM, req({ arrival, departure, bookingDate }))).cancellation;
+  const festive = at("2026-12-28", "2027-01-02");
+  assert.equal(festive.season, "Festive");
+  assert.equal(festive.freeUntil, "2026-08-29"); // 121 days before
+  assert.deepEqual(festive.deadlines.map((d) => [d.from, d.to, d.penaltyBp]), [["2026-08-30", "2026-10-28", 5000], ["2026-10-29", null, 10000]]);
+  const high = at("2027-01-11", "2027-01-14");
+  assert.equal(high.season, "High");
+  assert.deepEqual(high.deadlines.map((d) => [d.from, d.to]), [["2026-11-28", "2026-12-11"], ["2026-12-12", null]]);
+  const rest = at("2027-03-11", "2027-03-14");
+  assert.equal(rest.season, null);
+  assert.equal(rest.freeUntil, "2027-02-08"); // 31 days before
+  assert.deepEqual(rest.deadlines.map((d) => [d.from, d.to, d.penaltyBp]), [["2027-02-09", "2027-02-23", 5000], ["2027-02-24", null, 10000]]); // day 15 is 100%
+  assert.equal(at("2027-03-11", "2027-03-14", "2027-02-20").freeUntil, null); // the free day has passed
+});

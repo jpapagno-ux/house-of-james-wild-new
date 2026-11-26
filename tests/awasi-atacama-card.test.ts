@@ -51,3 +51,13 @@ test("one night is refused, and the deposit is half", () => {
   const q = quote(card, ROOMS["round-room"], { roomTypeId: "round-room", ratePlanId: "fh", arrival: "2027-02-01", departure: "2027-02-04", adults: 2, childAges: [], bookingDate: "2026-11-24" }) as Quote;
   assert.equal(q.grandTotalMinor, 876000); assert.equal(q.depositDueMinor, 438000);
 });
+
+test("Awasi Atacama: the filed cancellation schedule reads as three seasons", async () => {
+  const { readFileSync } = await import("node:fs");
+  const { parseCancellation } = await import("../lib/booking-live/rates/airtable-map.ts");
+  const intake = JSON.parse(readFileSync(new URL("../scripts/booking-live/intake-awasi-atacama-2026-2027.json", import.meta.url), "utf8"));
+  const c = parseCancellation(JSON.stringify(intake).match(/"cancellationTiers":"([^"]+)"/)![1]);
+  assert.ok(c);
+  assert.deepEqual(c.seasons.map((s) => [s.from, s.to, s.tiers.map((t) => `${t.daysBeforeArrival}:${t.penaltyBp / 100}`).join(",")]), [["2026-12-20", "2027-01-03", "120:50,60:100"], ["2026-11-01", "2027-02-28", "44:50,30:100"]]);
+  assert.deepEqual(c.tiers.map((t) => `${t.daysBeforeArrival}:${t.penaltyBp / 100}`), ["30:50", "15:100"]);
+});

@@ -15,7 +15,7 @@ type Charge = { id: string; name: string; kind: string; included: boolean; amoun
 type Q = {
   currency: string; nights: Night[]; roomSubtotalMinor: number; discounts: { code: string; label: string; amountMinor: number }[]; discountsMinor: number;
   charges: Charge[]; floridaTaxMinor: number; grandTotalMinor: number; depositDueMinor: number; balanceMinor: number; balanceDueDate: string | null;
-  cancellation: { summary: string; deadlines: { from: string; penaltyBp: number; penaltyMinor: number }[] }; revision: string;
+  cancellation: { summary: string; season?: string | null; freeUntil?: string | null; deadlines: { from: string; to?: string | null; penaltyBp: number; penaltyMinor: number }[] }; revision: string;
 };
 type Option = {
   room: { code: string; name: string; description: string | null; maxOccupancy: number };
@@ -134,7 +134,10 @@ export default function QuoteBuilder({ slug, name, signedIn }: { slug: string; n
                 <details className="border-b ledger-rule">
                   <summary className="py-3 cursor-pointer ledger-eyebrow">Cancellation</summary>
                   <p className="text-[14.5px]">{q.cancellation.summary}</p>
-                  <ul className="py-2 text-[14px]">{q.cancellation.deadlines.map((d) => <li key={d.from}>From {nice(d.from)}: {d.penaltyBp / 100}% ({fmt(d.penaltyMinor, cur)})</li>)}</ul>
+                  <ul className="py-2 text-[14px] grid gap-1">
+                    {q.cancellation.freeUntil && <li>Until {nice(q.cancellation.freeUntil)}: no charge</li>}
+                    {q.cancellation.deadlines.map((d) => <li key={d.from}>{d.to ? `${nice(d.from)} to ${nice(d.to)}` : `From ${nice(d.from)}`}: {d.penaltyBp / 100}% ({fmt(d.penaltyMinor, cur)})</li>)}
+                  </ul>
                 </details>
                 <div className="mt-4 flex flex-wrap gap-3">
                   <button type="button" onClick={() => reserve(o)} disabled={reserving === key} className="ledger-btn ledger-btn--solid disabled:opacity-50">{reserving === key ? "Sending…" : signedIn ? "Request to Reserve" : "Sign in to Request to Reserve"}</button>

@@ -115,12 +115,13 @@ export default function JournalStayPage({ slug, sample, preview = false, reserve
     const href = campHref(reserve, c);
     const mark = campStatus(reserve, c);
     const froms = c.rooms.map((m) => m.from).filter((x): x is number => !!x);
-    const from = c.kind !== "residence" && froms.length ? Math.min(...froms) : null;
+    // a residence's filed figure is for the whole house a night (James, 26 Nov 2026: Fish Eagle's US$16,648 is the villa price)
+    const from = froms.length ? Math.min(...froms) : null;
     const suites = c.rooms.reduce((a, m) => a + (m.quantity ?? 0), 0);
     const shot = cardShots[c.slug] ?? (c.hero ? { url: c.hero, alt: `${c.name} at ${s.name}` } : null);
     const lede = (c.description || c.intro).replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/)[0] ?? null;
     return {
-      name: c.name, sleeps: null, list: from ? usd(from) : null, now: null, basis: "per person, per night",
+      name: c.name, sleeps: null, list: from ? usd(from) : null, now: null, basis: c.kind === "residence" ? "per night, the whole residence" : "per person, per night",
       facts: [KIND_LABEL[c.kind], ...(c.kind === "residence" ? ["Exclusive use"] : suites ? [`${suites} suites`] : c.units[0] ? [c.units[0]] : [])],
       lede, features: c.features.slice(0, 3), flag: mark ? `James stayed ${mark.date.slice(0, 4)}` : undefined, photo: shot,
       action: href ? <Link href={href} className="ledger-btn-ghost">Enter {c.name}</Link> : <a href="#reserve" className="ledger-btn-ghost">Ask about {c.name}</a>,
@@ -245,7 +246,7 @@ export default function JournalStayPage({ slug, sample, preview = false, reserve
         <JournalJumpRow advisor={!sample} items={sample ? jumpS : jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
         {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{crumbs}</div><SampleBody v={v} variant={sample} rooms={reserve ? campRows : roomRows} roomsFallback={reserve ? undefined : roomsFallbackEl} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />}
           stays={reserve ? { label: "Lodges & residences", title: "Where You’ll Stay", glanceLabel: "On the reserve", glanceValue: [`${reserve.camps.filter((c) => c.kind !== "residence").length} lodges`, `${reserve.camps.filter((c) => c.kind === "residence").length} private residences`].join(", "), from: resFrom ? `${usd(resFrom)} per person, per night` : null } : undefined}
-          footnote={reserve ? "From rates per person, per night, sharing, as filed for each lodge · residences are quoted for exclusive use · priced again for your dates" : rates ? `From rates for two adults, before ${pct(rates.tax)} tax · checked ${day(rates.checked, true)} · priced again for your dates` : null} /></>}
+          footnote={reserve ? "From rates per person, per night, sharing, as filed for each lodge · residences are priced per night for the whole house · priced again for your dates" : rates ? `From rates for two adults, before ${pct(rates.tax)} tax · checked ${day(rates.checked, true)} · priced again for your dates` : null} /></>}
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {!sample && pwRow}
           {!sample && crumbs}

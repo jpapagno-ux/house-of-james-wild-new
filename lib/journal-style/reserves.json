@@ -1,0 +1,198 @@
+{
+  "_note": "Stage 10 (James, 26 Nov 2026: 'proceed to stage 10 with all design requests intact. African reserves are different in that they offer unique lodges and residences combined in the reserve; let's see a sample of a reserve like Lion Sands to begin'). Reserves listed here render the locked stay template at /safaris/<slug>, with the lodges and private residences together in one section of cards in place of rooms. cards: the photograph each lodge's card leads with, chosen by eye (the place, never a room interior without a view). camps: the lodges and residences whose own pages are on the locked template at /safaris/<reserve>/<camp>.",
+  "reserves": [
+    "lion-sands",
+    "londolozi-reserve",
+    "lalibela-reserve",
+    "tswalu-reserve",
+    "madikwe",
+    "jao-reserve"
+  ],
+  "cards": {
+    "lion-sands": {
+      "ivory-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac5413a80aed9c786fbd_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Evening%20pool%20-%20Medium.webp",
+        "alt": "An Ivory Lodge suite deck and plunge pool above the bush, Lion Sands"
+      },
+      "river-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457a6d17663fd14f91c3f_Lion%20Sands%20River%20Lodge%20Main%20Pool%20sunset.jpg",
+        "alt": "The River Lodge pool under the trees at sunset, Lion Sands"
+      },
+      "narina-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fade308a5ce663d9a7_Lion%20Sands%20Narina%20Lodge%20-%20Deck%20-%20Medium.webp",
+        "alt": "Narina Lodge raised among the trees above the Sabie River, Lion Sands"
+      },
+      "tinga-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae88c8f2e524c466e310_Lion%20Sands%20Tinga%20Lodge%20Suite%20Private%20pool%20-%20Medium.webp",
+        "alt": "A suite pool deck at Tinga Lodge facing the sunset over the Sabie River"
+      },
+      "fish-eagle-residence": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/lion-sands/fish-eagle-pool-sunset",
+        "alt": "The Fish Eagle lap pool at sunset under the riverine trees"
+      },
+      "hinkwenu-residence": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/lion-sands/hinkwenu-garden-pool",
+        "alt": "The Hinkwenu pool in its garden under the old trees, Lion Sands"
+      }
+    },
+    "londolozi-reserve": {
+      "founders-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f465a9e39c1540516b179_Londolozi-Founders-Camp-Main-Area-Long-Shot-2-Elsa-Young-Low-Res-copy.jpg",
+        "alt": "Founders Camp under thatch in the trees above the Sand River, Londolozi"
+      },
+      "varty-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook%20(1).jpg",
+        "alt": "The Varty Camp river overlook under thatch above the Sand River"
+      },
+      "tree-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f52aef3f1353dd48897ee_Londolozi-Tree-Camp-Dining%20(1).jpg",
+        "alt": "The Tree Camp dining deck lit by lanterns in the trees at dusk"
+      },
+      "pioneer-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c0bf59753a2383308_Londolozi-Pioneer-Camp-pool.jpg",
+        "alt": "The Pioneer Camp pool lit by lanterns at dusk"
+      },
+      "private-granite-suites": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView%20(1).jpg",
+        "alt": "A Granite Suite lounge open to its pool and the river, Londolozi"
+      }
+    },
+    "lalibela-reserve": {
+      "marks-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior.webp",
+        "alt": "The Mark's Camp deck and walkway lit at dusk, Lalibela"
+      },
+      "kichaka-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22fb344bd3e87f3e87400_LalibelaReserve_Kichaka_WaterFacingSuite_Exterior2.webp",
+        "alt": "A Kichaka suite deck and plunge pool looking over the waterhole and hills"
+      },
+      "lentaba-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22e1eb1d5cfb99ce310ec_lentaba_luxury_room_deck2.webp",
+        "alt": "A Lentaba chalet deck above the game rich valley"
+      },
+      "inzolo-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial.webp",
+        "alt": "Inzolo Lodge in its quiet valley below the cliffs, Lalibela"
+      },
+      "tree-tops-safari-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feff276417cc8ac6ee4cc_Lalibela_TreeTops_Patio.webp",
+        "alt": "The Tree Tops main deck under the trees above the valley"
+      },
+      "mills-manor-residence": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial.webp",
+        "alt": "Mills Manor and its gardens from above, Lalibela"
+      }
+    },
+    "tswalu-reserve": {
+      "motse": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-pool",
+        "alt": "The pool deck at The Motse above the Kalahari"
+      },
+      "loapi": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-firepit-at-dusk",
+        "alt": "Loapi lit at dusk below the red Kalahari dunes, Tswalu"
+      },
+      "tarkuni": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni",
+        "alt": "Tarkuni and its boma from above in the Kalahari, Tswalu"
+      }
+    }
+  },
+  "camps": {
+    "lion-sands": [
+      "ivory-lodge",
+      "river-lodge",
+      "narina-lodge",
+      "tinga-lodge",
+      "fish-eagle-residence",
+      "hinkwenu-residence"
+    ],
+    "londolozi-reserve": [
+      "founders-camp",
+      "varty-camp",
+      "tree-camp",
+      "pioneer-camp",
+      "private-granite-suites"
+    ],
+    "lalibela-reserve": [
+      "marks-camp",
+      "kichaka-lodge",
+      "lentaba-lodge",
+      "inzolo-lodge",
+      "tree-tops-safari-lodge",
+      "mills-manor-residence"
+    ],
+    "tswalu-reserve": [
+      "motse",
+      "loapi",
+      "tarkuni"
+    ]
+  },
+  "_copy": "copy: the page's own words for a lodge where the filed text cannot be printed as it stands (written as James in the first person, or a quote James did not give). Keyed <reserve>/<lodge>; intro and/or description replace the filed ones on the lodge page and its card. Fix the library record too.",
+  "copy": {
+    "tswalu-reserve/loapi": {
+      "intro": "Six tented homes, each alone on the Kalahari with its own chef and butler.",
+      "description": "Loapi is six tented homes spread far apart on the land at Tswalu, so you see no one unless you choose to. Each has canvas walls open to the Kalahari, a deep deck, a plunge pool, a fire pit and its own kitchen, with a chef and butler for your stay alone.\n\nThe camp runs on solar power with no light pollution, so the nights are dark and full of stars. Days are led by your own guide and vehicle: desert wildlife at first light, San rock art, and pangolin tracking with a conservationist."
+    },
+    "tswalu-reserve/tarkuni": {
+      "intro": "A homestead taken whole, with five suites and your own team.",
+      "description": "Tarkuni is a homestead at Tswalu taken by one family or group, with five en suite bedrooms for up to ten guests and no shared spaces. A chef, butler and guide look after you alone, with a plunge pool, a fire pit boma, a spa treatment room and wide indoor and outdoor living.\n\nEach day is planned your way, with a private guide and vehicle: tracking pangolin, aardvark and cheetah, riding over the dunes, San rock art, stargazing from the deck or a night out at Malori."
+    },
+    "lion-sands/river-lodge": {
+      "description": "Lion Sands River Lodge sits along the Sabie River in the Sabi Sand Game Reserve, with eighteen rooms and suites for a personal safari surrounded by wilderness.\n\nWatch the Big Five from your private deck, set out on guided bush walks and end the day at a boma dinner under the stars, with the river below the lodge."
+    },
+    "lion-sands/hinkwenu-residence": {
+      "intro": "A two bedroom home at Tinga Lodge, taken whole, with its own pool and team.",
+      "description": "Hinkwenu Residence is an exclusive use home at Tinga Lodge on the Sabie River at Lion Sands, with two en suite bedrooms for up to six guests: four adults and two children. It has its own pool and deck, a covered veranda for meals and a living room under high thatch.\n\nA villa concierge, chef, butler, housekeeper and an FGASA accredited field guide and tracker look after the house alone, with a private vehicle for two game drives a day. Children of all ages are welcome, with Mack & Madi activities and childminding included.",
+      "units": [
+        "Two en suite bedrooms, sleeps six (four adults, two children)"
+      ],
+      "rooms": [
+        {
+          "name": "The Residence, exclusive use",
+          "capacity": 6,
+          "quantity": 1,
+          "beds": "2 en suite bedrooms",
+          "from": 13026,
+          "currency": "USD",
+          "basis": "per_night_whole_residence",
+          "photos": [
+            "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/lion-sands/hinkwenu-garden-pool"
+          ]
+        }
+      ]
+    },
+    "lion-sands/fish-eagle-residence": {
+      "units": [
+        "Three en suite bedrooms, sleeps eight (six adults, two children)"
+      ],
+      "rooms": [
+        {
+          "name": "The Residence, exclusive use",
+          "capacity": 8,
+          "quantity": 1,
+          "beds": "3 en suite bedrooms",
+          "from": 16648,
+          "currency": "USD",
+          "basis": "per_night_whole_residence",
+          "photos": [
+            "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/lion-sands/fish-eagle-pool-house"
+          ]
+        }
+      ]
+    }
+  },
+  "_villas": "villas: private villas inside a stay (not a reserve) that also belong in Gatherings (James, 26 Nov 2026: 'add the villas to our gathering volume also since these are family resort residences'). Each card links to the stay page's rooms.",
+  "villas": [
+    {
+      "stay": "monwana-thornybush",
+      "name": "Monwana Villa",
+      "place": "Monwana, Thornybush",
+      "line": "A whole home for six with three pools, a chef and a fire deck over the waterhole.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/monwana/villa-pool-sunset",
+        "alt": "Sunset over the bush reflected in the Monwana Villa pool"
+      }
+    }
+  ]
+}

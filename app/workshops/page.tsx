@@ -104,7 +104,7 @@ export default function WorkshopsPage() {
             <section aria-labelledby="rec-h" className="mt-16 border-t ledger-rule pt-8">
               <p className="ledger-eyebrow">Recordings</p>
               <h2 id="rec-h" className="ledger-display text-[1.7rem] md:text-[2.2rem] mt-2">Watch at Your Own Pace</h2>
-              <div className="mt-8 grid md:grid-cols-3 gap-5">{past.map((s) => <SessionCard key={s.slug} s={s} />)}</div>
+              <div className="mt-8 grid md:grid-cols-3 gap-5">{past.map((s) => <div key={s.slug} id={s.slug}><SessionCard s={s} /></div>)}</div>
             </section>
           )}
 

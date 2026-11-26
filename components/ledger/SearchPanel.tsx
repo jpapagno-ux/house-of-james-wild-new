@@ -57,11 +57,11 @@ const ADVISOR_ITEMS: Item[] = DESK_ADVISORS.map((a) => ({
 
 // Reading that search returns beside the places you can book (James, 24 Nov 2026): species pages, Journal stories,
 // field guides. They are "page" entries with a place, so a search scoped to a country keeps them.
-const READING = new Set(["Wildlife", "Journal", "Field guide"]);
+const READING = new Set(["Wildlife", "Journal", "Field guide", "Session"]);
 
 const GROUPS: { key: string; label: string; match: (d: Doc) => boolean }[] = [
   { key: "ef", label: "The Exceptional Few", match: (d) => d.k === "Collection" },
-  { key: "dest", label: "Destinations", match: (d) => d.t === "destination" },
+  { key: "dest", label: "Destinations", match: (d) => d.t === "destination" && d.k !== "Partner" },
   { key: "camps", label: "Safari camps & lodges", match: (d) => d.t === "stay" && d.r === "africa" },
   { key: "ships", label: "Ships & voyages", match: (d) => (d.t === "stay" && d.k === "Ship") || d.k === "Voyage" },
   { key: "stays", label: "Stays", match: (d) => d.t === "stay" && d.r !== "africa" && d.k !== "Ship" && d.k !== "Collection" },
@@ -70,7 +70,10 @@ const GROUPS: { key: string; label: string; match: (d: Doc) => boolean }[] = [
   // Wildlife species pages (James, 24 Nov 2026): reading, shown after the places you can book.
   { key: "wildlife", label: "Wildlife: where and how to see it", match: (d) => d.k === "Wildlife" },
   { key: "advisors", label: "Advisors who know it", match: (d) => d.t === "advisor" },
+  // Partners and House Sessions (James, 26 Nov 2026): partners in a group of their own, after the places; sessions with the reading.
+  { key: "partners", label: "Partners of the house", match: (d) => d.k === "Partner" },
   { key: "reading", label: "Journal and field guides", match: (d) => d.k === "Journal" || d.k === "Field guide" },
+  { key: "sessions", label: "House Sessions", match: (d) => d.k === "Session" },
   { key: "pages", label: "Sections of the house", match: (d) => d.t === "page" && !READING.has(d.k) },
 ];
 

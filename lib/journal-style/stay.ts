@@ -16,6 +16,7 @@ import { routesThrough } from "@/lib/content/trips";
 import { suitedTo } from "@/lib/ledger/travel-types";
 import { BEST_FOR } from "@/lib/content/stays";
 import PAGES from "./pages.json";
+import RESERVE_PAGES from "./reserves.json";
 import ROOM_PHOTOS from "./room-photos.json";
 import RATE_HOLDS from "./rate-holds.json";
 import ROOM_LIBRARY from "./room-library.json";
@@ -43,6 +44,10 @@ const roomPhotos = ROOM_PHOTOS as unknown as Record<string, Record<string, { id:
 
 /** The stays that have the Modern Journal page (the pilot's sample pages). One list, read by next.config.ts too. */
 export const JOURNAL_STAYS: string[] = PAGES.stays;
+/** Stage 10: reserves whose own Stay record renders the locked template at /safaris/<slug> (lib/journal-style/reserves.json). */
+export const JOURNAL_RESERVES: string[] = RESERVE_PAGES.reserves;
+/** Stage 10: lodges and residences on those reserves with their own page on the locked template. */
+export const JOURNAL_CAMPS: Record<string, string[]> = (RESERVE_PAGES as { camps?: Record<string, string[]> }).camps ?? {};
 
 export type Photo = { url: string; alt: string; described: boolean };
 export type SectionKey = "rooms" | "pool" | "exterior" | "dining" | "experiences";
@@ -137,10 +142,14 @@ function clean<T>(x: T): T {
   return x;
 }
 
-export function journalStay(slug: string) {
+// record: a lodge on a reserve has no Stay record of its own; its page passes one made from the reserve's record and the
+// lodge's own filed words, photographs and suites (campRecord below), keyed "<reserve>-<lodge>".
+export function journalStay(slug: string, record?: StayData) {
   // House rule: no em or en dashes in public copy. The filed record is untouched; this is the page's display copy.
-  const filedStay: StayData | undefined = JOURNAL_STAYS.includes(slug) ? stayBySlug(slug) : undefined;
-  const s: StayData | undefined = filedStay ? clean(filedStay) : undefined;
+  const filedStay: StayData | undefined = record ?? (JOURNAL_STAYS.includes(slug) || JOURNAL_RESERVES.includes(slug) ? stayBySlug(slug) : undefined);
+  // a name filed across two lines in the library ("Lion Sands\nReserve") reads as one line on the page
+  // and a form label left in the filed airport ("25. Airport name Port Elizabeth ...") is dropped from the display copy
+  const s: StayData | undefined = filedStay ? clean({ ...filedStay, name: filedStay.name.replace(/\s+/g, " ").trim(), airport: filedStay.airport ? filedStay.airport.replace(/^\s*\d+\.\s*Airport name\s*/i, "").trim() : filedStay.airport }) : undefined;
   if (!s || !s.hero) return null;
   const path = `/stays/${s.slug}`;
   const filed: Photo[] = [s.hero, ...s.gallery].filter(Boolean).map((u, i) => {
@@ -204,3 +213,47 @@ export function journalStay(slug: string) {
   };
 }
 export type JournalStay = NonNullable<ReturnType<typeof journalStay>>;
+
+/** Stage 10 camp pages (lib/journal-style/reserves.json "camps"): a lodge on a reserve, as a Stay record made from the
+ * reserve's own record (place, pathway, airport, months, questions, experiences) and the lodge's filed words, photographs
+ * and features. The lodge's suites are its rooms; nothing is invented. */
+/** A lodge's filed features as the page prints them: the library's section labels ("Features:", "Inclusions:") dropped,
+ * and its exclusions and tax lines left to How to Reserve, not listed as things the lodge offers. */
+export function campFeatures(items: string[]): string[] {
+  const out: string[] = [];
+  let skip = false;
+  for (const raw of items) {
+    const m = raw.match(/^(Features|Inclusions|Exclusions|Taxes)\s*:\s*(.*)$/i);
+    if (m) skip = /^(exclusions|taxes)$/i.test(m[1]);
+    const x = undash((m ? m[2] : raw).replace(/\s+/g, " ").trim());
+    if (!skip && x) out.push(x);
+  }
+  return out;
+}
+/** A lodge whose filed figure is not yet confirmed for the page (lib/journal-style/reserves.json "rateHeld"): no price shown. */
+export const rateHeld = (reserve: string, camp: string) => ((RESERVE_PAGES as { rateHeld?: Record<string, string> }).rateHeld ?? {})[`${reserve}/${camp}`] !== undefined;
+/** The page's own words for a lodge whose filed text cannot be printed as it stands (reserves.json "copy"). */
+type CampCopy = { intro?: string; description?: string; units?: string[]; rooms?: unknown[] };
+export function campCopy<T extends { slug: string; intro: string; description: string }>(reserve: string, camp: T): T {
+  const o = ((RESERVE_PAGES as { copy?: Record<string, CampCopy> }).copy ?? {})[`${reserve}/${camp.slug}`];
+  if (!o) return camp;
+  return { ...camp, intro: o.intro ?? camp.intro, description: o.description ?? camp.description, ...(o.units ? { units: o.units } : {}), ...(o.rooms ? { rooms: o.rooms } : {}) };
+}
+
+export function campRecord(reserveSlug: string, camp: { slug: string; name: string; intro: string; description: string; features: string[]; experiences: string[]; hero: string | null; gallery: string[]; units: string[] }): StayData | undefined {
+  const r = stayBySlug(reserveSlug);
+  if (!r) return undefined;
+  camp = campCopy(reserveSlug, camp);
+  const reserveName = r.name.replace(/\s+/g, " ").trim();
+  const paras = camp.description.split(/\n\s*\n/).map((x) => x.replace(/\s+/g, " ").trim()).filter(Boolean);
+  return {
+    ...r, slug: `${reserveSlug}-${camp.slug}`, name: camp.name, ledgerId: r.ledgerId,
+    tagline: camp.intro || r.tagline, quote: paras[0] ?? r.quote,
+    hero: camp.hero ?? r.hero, gallery: [...camp.gallery],
+    rooms: { ...r.rooms, items: [...camp.units], paras: paras.slice(0, 1) },
+    features: { items: campFeatures(camp.features), paras: [] },
+    experiences: camp.experiences.length ? { items: [...camp.experiences], paras: [] } : r.experiences,
+    why: paras.length ? [{ title: `Part of ${reserveName}`, body: paras.join(" ") }, ...r.why.slice(0, 2)] : r.why,
+    onlyHere: r.onlyHere,
+  };
+}

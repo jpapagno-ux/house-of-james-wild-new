@@ -3,7 +3,7 @@
 # public_id \t source url \t alt \t credit \t source site \t resource_type(image|video)
 import os, sys, time, hashlib, subprocess, urllib.parse, urllib.request, json
 import re
-raw = os.environ.get('CLOUDINARY_URL', '').strip()
+raw = os.environ.get('CLOUDINARY_URL', '').strip().split('=', 1)[-1].strip().strip('"')
 print('CLOUDINARY_URL set:', bool(raw), 'len', len(raw), 'scheme', raw.split(':')[0] if raw else None, flush=True)
 m = re.match(r'cloudinary://([^:]+):([^@]+)@(.+)$', raw)
 if not m: sys.exit('CLOUDINARY_URL missing or not in cloudinary://key:secret@cloud form')

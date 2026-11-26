@@ -1,7 +1,10 @@
 {
   "_note": "Stage 10 (James, 26 Nov 2026: 'proceed to stage 10 with all design requests intact. African reserves are different in that they offer unique lodges and residences combined in the reserve; let's see a sample of a reserve like Lion Sands to begin'). Reserves listed here render the locked stay template at /safaris/<slug>, with the lodges and private residences together in one section of cards in place of rooms. cards: the photograph each lodge's card leads with, chosen by eye (the place, never a room interior without a view). camps: the lodges and residences whose own pages are on the locked template at /safaris/<reserve>/<camp>.",
   "reserves": [
-    "lion-sands"
+    "lion-sands",
+    "londolozi-reserve",
+    "lalibela-reserve",
+    "tswalu-reserve"
   ],
   "cards": {
     "lion-sands": {
@@ -29,6 +32,68 @@
         "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a99607eac5b0eaaf15_Lion%20Sands%20Hinkwenu%20Residence10%20-%20Medium.png",
         "alt": "The pool and veranda at Hinkwenu Residence under a red evening sky, Lion Sands"
       }
+    },
+    "londolozi-reserve": {
+      "founders-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f465a9e39c1540516b179_Londolozi-Founders-Camp-Main-Area-Long-Shot-2-Elsa-Young-Low-Res-copy.jpg",
+        "alt": "Founders Camp under thatch in the trees above the Sand River, Londolozi"
+      },
+      "varty-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook%20(1).jpg",
+        "alt": "The Varty Camp river overlook under thatch above the Sand River"
+      },
+      "tree-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f52aef3f1353dd48897ee_Londolozi-Tree-Camp-Dining%20(1).jpg",
+        "alt": "The Tree Camp dining deck lit by lanterns in the trees at dusk"
+      },
+      "pioneer-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f4f2c0bf59753a2383308_Londolozi-Pioneer-Camp-pool.jpg",
+        "alt": "The Pioneer Camp pool lit by lanterns at dusk"
+      },
+      "private-granite-suites": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView%20(1).jpg",
+        "alt": "A Granite Suite lounge open to its pool and the river, Londolozi"
+      }
+    },
+    "lalibela-reserve": {
+      "marks-camp": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior.webp",
+        "alt": "The Mark's Camp deck and walkway lit at dusk, Lalibela"
+      },
+      "kichaka-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22fb344bd3e87f3e87400_LalibelaReserve_Kichaka_WaterFacingSuite_Exterior2.webp",
+        "alt": "A Kichaka suite deck and plunge pool looking over the waterhole and hills"
+      },
+      "lentaba-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/68c22e1eb1d5cfb99ce310ec_lentaba_luxury_room_deck2.webp",
+        "alt": "A Lentaba chalet deck above the game rich valley"
+      },
+      "inzolo-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial.webp",
+        "alt": "Inzolo Lodge in its quiet valley below the cliffs, Lalibela"
+      },
+      "tree-tops-safari-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688feff276417cc8ac6ee4cc_Lalibela_TreeTops_Patio.webp",
+        "alt": "The Tree Tops main deck under the trees above the valley"
+      },
+      "mills-manor-residence": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial.webp",
+        "alt": "Mills Manor and its gardens from above, Lalibela"
+      }
+    },
+    "tswalu-reserve": {
+      "motse": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/motse/motse-pool",
+        "alt": "The pool deck at The Motse above the Kalahari"
+      },
+      "loapi": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/loapi/loapi-firepit-at-dusk",
+        "alt": "Loapi lit at dusk below the red Kalahari dunes, Tswalu"
+      },
+      "tarkuni": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-firepit",
+        "alt": "The fire pit and lounge at Tarkuni at dusk, Tswalu"
+      }
     }
   },
   "camps": {
@@ -39,6 +104,31 @@
       "tinga-lodge",
       "fish-eagle-residence",
       "hinkwenu-residence"
+    ],
+    "londolozi-reserve": [
+      "founders-camp",
+      "varty-camp",
+      "tree-camp",
+      "pioneer-camp",
+      "private-granite-suites"
+    ],
+    "lalibela-reserve": [
+      "marks-camp",
+      "kichaka-lodge",
+      "lentaba-lodge",
+      "inzolo-lodge",
+      "tree-tops-safari-lodge",
+      "mills-manor-residence"
+    ],
+    "tswalu-reserve": [
+      "motse"
     ]
+  },
+  "rateHeld": {
+    "lalibela-reserve/mills-manor-residence": "Filed as US$4,700 per person per night for exclusive use of a five bedroom house; whether that is per person or for the whole house is to confirm with Lalibela before it is shown (26 Nov 2026)."
+  },
+  "_held": {
+    "tswalu-reserve/loapi": "Held: its filed description is written in James's first person ('unlike anywhere else I've stayed'); James to confirm he stayed before the page goes up.",
+    "tswalu-reserve/tarkuni": "Held: its filed description says 'The moment I walked through the doors of Tarkuni'; James to confirm before the page goes up."
   }
 }

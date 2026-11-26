@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { undash } from "@/lib/content/ships/types";
 import RATE_CARD_STAYS from "@/lib/booking-live/rate-card-stays.json";
 import experiencePhotos from "@/lib/journal-style/experience-photos.json";
 import { notFound } from "next/navigation";
@@ -38,7 +39,7 @@ import { isBuilt } from "@/lib/routes";
 import { absoluteUrl } from "@/lib/seo";
 import { graph, imageObject, lodging } from "@/lib/schema";
 import { entryNo } from "@/lib/volumes";
-import { day, journalStay, money, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
+import { campFeatures, day, journalStay, money, rateHeld, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
 import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, SectionHead, StickyBar, PhotoViewer, PhotoLink, PhotoStrip, DatesBar, PickRoom, RequestForm } from "./journal-style";
 import type { OfferRow } from "./JournalOffers";
 import { SampleBody, SampleExpect, SampleHero, SampleSwitch, type Variant } from "./samples/SampleStayPage";
@@ -117,28 +118,31 @@ export default function JournalStayPage({ slug, sample, preview = false, reserve
   const campRows = reserve ? [...reserve.camps].sort((a, b) => Number(a.kind === "residence") - Number(b.kind === "residence")).map((c) => {
     const href = campHref(reserve, c);
     const mark = campStatus(reserve, c);
-    const froms = c.rooms.map((m) => m.from).filter((x): x is number => !!x);
+    const froms = rateHeld(reserve.slug, c.slug) ? [] : c.rooms.map((m) => m.from).filter((x): x is number => !!x);
     // a residence's filed figure is for the whole house a night (James, 26 Nov 2026: Fish Eagle's US$16,648 is the villa price)
     const from = froms.length ? Math.min(...froms) : null;
     const suites = c.rooms.reduce((a, m) => a + (m.quantity ?? 0), 0);
     const shot = cardShots[c.slug] ?? (c.hero ? { url: c.hero, alt: `${c.name} at ${s.name}` } : null);
-    const lede = (c.description || c.intro).replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/)[0] ?? null;
+    const lede = undash((c.description || c.intro).replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/)[0] ?? "") || null;
     return {
       name: c.name, sleeps: null, list: from ? usd(from) : null, now: null, basis: c.kind === "residence" ? "per night, the whole residence" : "per person, per night",
       facts: [KIND_LABEL[c.kind], ...(c.kind === "residence" ? ["Exclusive use"] : suites ? [`${suites} suites`] : c.units[0] ? [c.units[0]] : [])],
-      lede, features: c.features.slice(0, 3), flag: mark ? `James stayed ${mark.date.slice(0, 4)}` : undefined, photo: shot,
+      lede, features: campFeatures(c.features).slice(0, 3), flag: mark ? `James stayed ${mark.date.slice(0, 4)}` : undefined, photo: shot,
       action: href ? <Link href={href} className="ledger-btn-ghost">Enter {c.name}</Link> : <a href="#reserve" className="ledger-btn-ghost">Ask about {c.name}</a>,
     };
   }) : [];
   const lodge = camp?.camp;
-  const suiteRows = camp && lodge ? lodge.rooms.map((m) => ({
-    name: m.name, sleeps: m.capacity ?? null, list: m.from ? usd(m.from) : null, now: null,
+  // a residence with no suite filed (Hinkwenu) still gets its one card, so the other lodges on the reserve sit beneath it
+  const lodgeRooms = lodge ? (lodge.rooms.length ? lodge.rooms : [{ name: lodge.kind === "residence" ? "The Residence, exclusive use" : lodge.name, capacity: null, quantity: null, beds: lodge.units[0] ?? null, from: null, currency: "USD", basis: null, photos: lodge.hero ? [lodge.hero] : [] }]) : [];
+  const held = camp ? rateHeld(camp.reserve.slug, camp.camp.slug) : false;
+  const suiteRows = camp && lodge ? lodgeRooms.map((m) => ({
+    name: m.name, sleeps: m.capacity ?? null, list: m.from && !held ? usd(m.from) : null, now: null,
     basis: lodge.kind === "residence" ? "per night, the whole residence" : "per person, per night",
     facts: [...(m.quantity ? [`${m.quantity} on the ${lodge.kind === "residence" ? "residence" : "lodge"}`] : []), ...(m.beds ? [m.beds] : [])],
     lede: null, features: [] as string[], photo: m.photos[0] ? { url: m.photos[0], alt: `${m.name} at ${s.name}, ${reserveName}` } : null,
     action: <a href="#reserve" className="ledger-btn-ghost">Plan this suite</a>,
   })) : [];
-  const lodgeFrom = lodge ? (() => { const f = lodge.rooms.map((m) => m.from).filter((x): x is number => !!x); return f.length ? Math.min(...f) : null; })() : null;
+  const lodgeFrom = lodge && !held ? (() => { const f = lodge.rooms.map((m) => m.from).filter((x): x is number => !!x); return f.length ? Math.min(...f) : null; })() : null;
   const others = camp ? camp.reserve.camps.filter((c) => c.slug !== camp.camp.slug).map((c) => ({ c, href: campHref(camp.reserve, c) })) : [];
   const r0 = rates?.rooms[0];
   const nights = rates?.window?.nights ?? 0;

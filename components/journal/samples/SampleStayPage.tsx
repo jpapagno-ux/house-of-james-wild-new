@@ -123,7 +123,7 @@ export function SampleHero({ v, variant, eyebrow }: { v: View; variant: Variant;
 export type SampleRoom = { name: string; sleeps: number | null; list: string | null; now: string | null; basis?: string; facts?: string[]; lede?: string | null; features?: string[]; flag?: string; photo?: { url: string; alt: string } | null; action?: React.ReactNode };
 // stays: a reserve (Stage 10) prints its lodges and private residences in the rooms' place, as the same cards
 export type StaysHead = { label: string; title: string; glanceLabel: string; glanceValue: string; from?: string | null };
-export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar, footnote, stays }: { v: View; variant: Variant; rooms: SampleRoom[]; roomsFallback?: React.ReactNode; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null; stays?: StaysHead }) {
+export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar, footnote, stays, after }: { v: View; variant: Variant; rooms: SampleRoom[]; roomsFallback?: React.ReactNode; basis: string; promo: string | null; bar?: React.ReactNode; footnote?: string | null; stays?: StaysHead; /** under the cards: a lodge page lists the other lodges on its reserve */ after?: React.ReactNode }) {
   const { s } = v;
   const priced = rooms.map((r) => r.now ?? r.list).filter(Boolean) as string[];
   const pwName = PATHWAYS_ON ? pathwayStays().find((r) => r.slug === s.slug)?.primary.name ?? null : null;
@@ -184,6 +184,7 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
         ))}
       </ul>
       {footnote ? <p className={`${WRAP} ${T.label} mt-6 text-stone-text`}>{footnote}</p> : v.lib.ratesNote ? <p className={`${WRAP} ${T.body} mt-6 max-w-[62ch] text-stone-text`}>{v.lib.ratesNote}</p> : null}
+      {after ? <div className={WRAP}>{after}</div> : null}
     </section>
   );
   return (

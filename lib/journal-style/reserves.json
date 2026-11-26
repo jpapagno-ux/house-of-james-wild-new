@@ -1,5 +1,5 @@
 {
-  "_note": "Stage 10 (James, 26 Nov 2026: 'proceed to stage 10 with all design requests intact. African reserves are different in that they offer unique lodges and residences combined in the reserve; let's see a sample of a reserve like Lion Sands to begin'). Reserves listed here render the locked stay template at /safaris/<slug>, with the lodges and private residences together in one section of cards in place of rooms. cards: the photograph each lodge's card leads with, chosen by eye (the place, never a room interior without a view).",
+  "_note": "Stage 10 (James, 26 Nov 2026: 'proceed to stage 10 with all design requests intact. African reserves are different in that they offer unique lodges and residences combined in the reserve; let's see a sample of a reserve like Lion Sands to begin'). Reserves listed here render the locked stay template at /safaris/<slug>, with the lodges and private residences together in one section of cards in place of rooms. cards: the photograph each lodge's card leads with, chosen by eye (the place, never a room interior without a view). camps: the lodges and residences whose own pages are on the locked template at /safaris/<reserve>/<camp>.",
   "reserves": [
     "lion-sands"
   ],
@@ -30,5 +30,10 @@
         "alt": "The pool and veranda at Hinkwenu Residence under a red evening sky, Lion Sands"
       }
     }
+  },
+  "camps": {
+    "lion-sands": [
+      "ivory-lodge"
+    ]
   }
 }

@@ -28,6 +28,7 @@ const journalSwitch = process.env.VERCEL_ENV !== "production";
 const journalRewrites = [
   ...(journalPages.stays as string[]).map((slug) => ({ source: `/stays/${slug}`, destination: `/journal-style/stays/${slug}` })),
   ...(journalReserves.reserves as string[]).map((slug) => ({ source: `/safaris/${slug}`, destination: `/journal-style/safaris/${slug}` })),
+  ...Object.entries((journalReserves as { camps?: Record<string, string[]> }).camps ?? {}).flatMap(([r, cs]) => cs.map((c) => ({ source: `/safaris/${r}/${c}`, destination: `/journal-style/safaris/${r}/${c}` }))),
 ].flatMap((rule) => {
   if (journalOn) return [journalSwitch ? { ...rule, missing: [{ type: "query" as const, key: "journal", value: "0" }] } : rule];
   return journalSwitch ? [{ ...rule, has: [{ type: "query" as const, key: "journal", value: "1" }] }] : [];

@@ -232,10 +232,18 @@ export function campFeatures(items: string[]): string[] {
 }
 /** A lodge whose filed figure is not yet confirmed for the page (lib/journal-style/reserves.json "rateHeld"): no price shown. */
 export const rateHeld = (reserve: string, camp: string) => ((RESERVE_PAGES as { rateHeld?: Record<string, string> }).rateHeld ?? {})[`${reserve}/${camp}`] !== undefined;
+/** The page's own words for a lodge whose filed text cannot be printed as it stands (reserves.json "copy"). */
+type CampCopy = { intro?: string; description?: string; units?: string[]; rooms?: unknown[] };
+export function campCopy<T extends { slug: string; intro: string; description: string }>(reserve: string, camp: T): T {
+  const o = ((RESERVE_PAGES as { copy?: Record<string, CampCopy> }).copy ?? {})[`${reserve}/${camp.slug}`];
+  if (!o) return camp;
+  return { ...camp, intro: o.intro ?? camp.intro, description: o.description ?? camp.description, ...(o.units ? { units: o.units } : {}), ...(o.rooms ? { rooms: o.rooms } : {}) };
+}
 
 export function campRecord(reserveSlug: string, camp: { slug: string; name: string; intro: string; description: string; features: string[]; experiences: string[]; hero: string | null; gallery: string[]; units: string[] }): StayData | undefined {
   const r = stayBySlug(reserveSlug);
   if (!r) return undefined;
+  camp = campCopy(reserveSlug, camp);
   const reserveName = r.name.replace(/\s+/g, " ").trim();
   const paras = camp.description.split(/\n\s*\n/).map((x) => x.replace(/\s+/g, " ").trim()).filter(Boolean);
   return {

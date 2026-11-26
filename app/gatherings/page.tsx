@@ -14,6 +14,9 @@ import { absoluteUrl, buildMetadata } from "@/lib/seo";
 import { graph } from "@/lib/schema";
 import { volumeEyebrow } from "@/lib/volumes";
 import { STAY_PAGES } from "@/lib/content/stays";
+import { RESERVES, campHref } from "@/lib/content/reserves";
+import RESERVE_PAGES from "@/lib/journal-style/reserves.json";
+import { campCopy } from "@/lib/journal-style/stay";
 
 // /gatherings: Volume III hub shell. Family residences for the generations
 // who travel together.
@@ -24,6 +27,12 @@ export const metadata = buildMetadata({ title: "Family Residences for Multigener
 // Residences filed in Gatherings in the Library (house_volumes includes "gatherings"), with a hero to show.
 // Whole islands and big houses: Laucala, Turtle Island, Royal Davui, Namale, Six Senses Fiji's residences (Fiji, 5 Nov 2026).
 const RESIDENCES = STAY_PAGES.filter((s) => s.volumes?.includes("gatherings") && s.hero && s.slug !== "leeu-house");
+// Private residences on the safari reserves (James, 26 Nov 2026: "you should have these in the gatherings section volume
+// as well as the reserve section"). One page each, kept on its reserve; Gatherings is a second door to it.
+const CARDS = RESERVE_PAGES.cards as Record<string, Record<string, { url: string; alt: string }>>;
+const RESERVE_HOUSES = RESERVES.flatMap((r) => r.camps.filter((c) => c.kind === "residence" && c.hero).map((c) => ({ r, c, href: campHref(r, c) })))
+  .filter((x): x is typeof x & { href: string } => !!x.href)
+  .map(({ r, c, href }) => ({ key: `${r.slug}/${c.slug}`, name: c.name, reserve: r.name, line: (campCopy(r.slug, c).intro || c.units[0] || "").replace(/\s+/g, " ").trim(), image: CARDS[r.slug]?.[c.slug] ?? { url: c.hero as string, alt: `${c.name}, ${r.name}` }, href, id: c.ledgerId ?? r.rsv }));
 
 export default function GatheringsHub() {
   const leeu = HOME.shelf.entries.find((s) => s.slug === "leeu-house")!;
@@ -46,6 +55,13 @@ export default function GatheringsHub() {
           <HubSection eyebrow="Filed in Gatherings" title="Islands and Houses for the Whole Family" id="residences-h">
             <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {RESIDENCES.map((s) => <li key={s.slug}><RecordCard name={s.name} id={s.ledgerId ?? "Being filed"} line={s.tagline ?? (s.country ?? "")} image={{ url: s.hero!, alt: `${s.name}, ${s.country ?? ""}` }} href={recordHref("stay", s.slug)} eyebrow={s.country ?? undefined} volume="gatherings" /></li>)}
+            </ul>
+          </HubSection>
+        )}
+        {RESERVE_HOUSES.length > 0 && (
+          <HubSection eyebrow="On the safari reserves" title="Private Safari Houses for the Family" id="reserve-houses-h">
+            <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {RESERVE_HOUSES.map((h) => <li key={h.key}><RecordCard name={h.name} id={h.id} line={h.line} image={h.image} href={h.href} eyebrow={h.reserve} volume="gatherings" /></li>)}
             </ul>
           </HubSection>
         )}

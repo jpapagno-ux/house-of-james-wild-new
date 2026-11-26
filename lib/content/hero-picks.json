@@ -2464,6 +2464,62 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/nizuc-resort-spa/g4",
         "alt": "A villa and its private pool at NIZUC"
       }
+    ],
+    "stay:lion-sands": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/lion-sands/hero-lions-crossing-sabie",
+        "alt": "Two lions wading across the Sabie River at Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fa559b89e28edeab86_Lion%20Sands_Narina%20Lodge_2_Guest%20Area%20Views%20-%20Medium.webp",
+        "alt": "Elephants grazing along the Sabie River below Narina Lodge at Lion Sands"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/lion-sands/ivory-lodge-deck-sunset",
+        "alt": "The deck at Ivory Lodge at sunset above the Sabie River, Lion Sands"
+      },
+      {
+        "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/966a95728_f2bc00c0f_67b37380e362896dfa08c232_andrew-liu-EunFGVJLPmQ-unsplash.avif",
+        "alt": "A white rhino and her calf in the grass at Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae88c8f2e524c466e310_Lion%20Sands%20Tinga%20Lodge%20Suite%20Private%20pool%20-%20Medium.webp",
+        "alt": "Sunset over the Sabie River from a suite pool deck at Tinga Lodge, Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium.webp",
+        "alt": "Fish Eagle Residence among the trees above the river at sunset, Lion Sands"
+      },
+      {
+        "url": "https://media.base44.com/images/public/6a7932161e9318dca1f24474/b378c4d12_02cdc59a7_684827dfba5a025b97ec003f_Lion_20Sands_River_Lodge_Facilities_Guest_20Dining_20Ar.",
+        "alt": "The River Lodge pool and dining pavilion lit at dusk at Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fadfb9ce7cd4f68ce2_Lion%20Sands%20Narina%20Lodge%20ELEPHANT%20CROSSING%20-%20Medium.webp",
+        "alt": "A guest on the deck at Narina Lodge watching a herd of elephants cross the Sabie River"
+      }
+    ],
+    "stay:lion-sands-ivory-lodge": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/lion-sands/ivory-lodge-deck-sunset",
+        "alt": "The deck at Ivory Lodge at sunset above the Sabie River, Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac5413a80aed9c786fbd_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Evening%20pool%20-%20Medium.webp",
+        "alt": "An Ivory Lodge suite and its plunge pool on a deck above the bush, Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54ed5d0deacdc769b3_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Pool%202%20-%20Medium.webp",
+        "alt": "An Ivory Lodge suite deck and plunge pool lit at dusk among the trees, Lion Sands"
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac54fdf8703497327a1b_Lion%20Sands%20Ivory%20Lodge%20-%20%20Couple%20Suite%20Pool%20-%20Medium.webp",
+        "alt": "Two guests in a suite plunge pool above the bush at Ivory Lodge"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/lion-sands/hero-lions-crossing-sabie",
+        "alt": "Two lions wading across the Sabie River at Lion Sands"
+      }
     ]
   }
 }

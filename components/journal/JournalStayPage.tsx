@@ -43,6 +43,9 @@ import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, Journal
 import type { OfferRow } from "./JournalOffers";
 import { SampleBody, SampleExpect, SampleHero, SampleSwitch, type Variant } from "./samples/SampleStayPage";
 import TalkSheet, { TalkButton, TalkRow } from "./TalkSheet";
+import RESERVE_PAGES from "@/lib/journal-style/reserves.json";
+import { KIND_LABEL, campHref, campStatus, reserveFrom, usd, type Reserve, type ReserveCamp } from "@/lib/content/reserves";
+import type { StayData } from "@/lib/content/stays";
 
 // JWC-STYLE-01, Stages 1 to 9: the Modern Journal stay page, for the pilot's sample stays only (lib/journal-style/
 // pages.json). It is reached through the flag or the ?journal=1 preview switch (next.config.ts rewrites); the live
@@ -56,13 +59,18 @@ const no = (n: number) => String(n).padStart(2, "0");
 // The house link in use across the site; replace when James sets his own.
 const JAMES_CALL = "https://calendly.com/jameswildco/meet-your-host";
 
-export default function JournalStayPage({ slug, sample, preview = false }: { slug: string; sample?: Variant; /** the layout switch strip, on the preview samples only */ preview?: boolean }) {
-  const v = journalStay(slug);
+// reserve (Stage 10, James, 26 Nov 2026): an African reserve's own record on the locked template, its lodges and private
+// residences together as one row of cards in the rooms' place, each card entering that lodge's page.
+// camp (Stage 10): one lodge or residence on a reserve, its suites as the rooms, the other lodges beneath them.
+export default function JournalStayPage({ slug, sample, preview = false, reserve, camp }: { slug: string; sample?: Variant; /** the layout switch strip, on the preview samples only */ preview?: boolean; reserve?: Reserve; camp?: { reserve: Reserve; camp: ReserveCamp; record: StayData } }) {
+  const v = journalStay(slug, camp?.record);
   if (!v) notFound();
-  const { s, path, rates, offers, planHref } = v;
+  const { s, rates, offers, planHref } = v;
+  const path = reserve ? `/safaris/${reserve.slug}` : camp ? (campHref(camp.reserve, camp.camp) ?? `/safaris/${camp.reserve.slug}`) : v.path;
+  const reserveName = camp ? camp.reserve.name : null;
   const region = s.regionSlug ? regionBySlug(s.regionSlug) : undefined;
   const countryPath = region && s.countrySlug ? `/destinations/${region.slug}/${s.countrySlug}` : null;
-  const trail = [{ name: "Home", path: "/" }, { name: "Stays", path: "/stays" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : []), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), { name: s.name, path }];
+  const trail = camp ? [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, { name: reserveName as string, path: `/safaris/${camp.reserve.slug}` }, { name: s.name, path }] : reserve ? [{ name: "Home", path: "/" }, { name: "Safaris", path: "/safaris" }, { name: s.name, path }] : [{ name: "Home", path: "/" }, { name: "Stays", path: "/stays" }, ...(region && isBuilt(`/destinations/${region.slug}`) ? [{ name: region.name, path: `/destinations/${region.slug}` }] : []), ...(countryPath && isBuilt(countryPath) ? [{ name: s.country as string, path: countryPath }] : []), { name: s.name, path }];
   const chart = s.countrySlug ? CHARTS[s.countrySlug] ?? (LIB_CHARTS as unknown as Record<string, ChartData>)[s.countrySlug] : undefined;
   const hasMap = !!(s.coords && chart);
 
@@ -102,6 +110,36 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
   const roomRows = rates
     ? rates.rooms.map((r) => { const l = v.lib.find(r.name); const x = l ? libRow(l) : null; return { name: r.name, sleeps: r.sleeps, list: money(r.list), now: r.now < r.list ? money(r.now) : null, ...(x ?? {}), photo: r.photo ?? x?.photo ?? null, action: <PickRoom slug={s.slug} room={r.name} reserveHref="#reserve" /> }; })
     : v.lib.rooms.map((l) => ({ name: l.name, sleeps: l.sleeps, list: l.from ? money(l.from.amount) : null, now: null, basis: l.from?.basis, ...libRow(l), action: <PickRoom slug={s.slug} room={l.name} reserveHref="#reserve" /> }));
+  // Stage 10: the reserve's lodges first, then its private residences; a residence is quoted for exclusive use, so its
+  // card carries no per person figure. Each card leads with the photograph chosen by eye in reserves.json, else the lodge's own.
+  const cardShots = ((RESERVE_PAGES.cards as Record<string, Record<string, { url: string; alt: string }>>)[reserve?.slug ?? ""]) ?? {};
+  const resFrom = reserve ? reserveFrom(reserve) : null;
+  const campRows = reserve ? [...reserve.camps].sort((a, b) => Number(a.kind === "residence") - Number(b.kind === "residence")).map((c) => {
+    const href = campHref(reserve, c);
+    const mark = campStatus(reserve, c);
+    const froms = c.rooms.map((m) => m.from).filter((x): x is number => !!x);
+    // a residence's filed figure is for the whole house a night (James, 26 Nov 2026: Fish Eagle's US$16,648 is the villa price)
+    const from = froms.length ? Math.min(...froms) : null;
+    const suites = c.rooms.reduce((a, m) => a + (m.quantity ?? 0), 0);
+    const shot = cardShots[c.slug] ?? (c.hero ? { url: c.hero, alt: `${c.name} at ${s.name}` } : null);
+    const lede = (c.description || c.intro).replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/)[0] ?? null;
+    return {
+      name: c.name, sleeps: null, list: from ? usd(from) : null, now: null, basis: c.kind === "residence" ? "per night, the whole residence" : "per person, per night",
+      facts: [KIND_LABEL[c.kind], ...(c.kind === "residence" ? ["Exclusive use"] : suites ? [`${suites} suites`] : c.units[0] ? [c.units[0]] : [])],
+      lede, features: c.features.slice(0, 3), flag: mark ? `James stayed ${mark.date.slice(0, 4)}` : undefined, photo: shot,
+      action: href ? <Link href={href} className="ledger-btn-ghost">Enter {c.name}</Link> : <a href="#reserve" className="ledger-btn-ghost">Ask about {c.name}</a>,
+    };
+  }) : [];
+  const lodge = camp?.camp;
+  const suiteRows = camp && lodge ? lodge.rooms.map((m) => ({
+    name: m.name, sleeps: m.capacity ?? null, list: m.from ? usd(m.from) : null, now: null,
+    basis: lodge.kind === "residence" ? "per night, the whole residence" : "per person, per night",
+    facts: [...(m.quantity ? [`${m.quantity} on the ${lodge.kind === "residence" ? "residence" : "lodge"}`] : []), ...(m.beds ? [m.beds] : [])],
+    lede: null, features: [] as string[], photo: m.photos[0] ? { url: m.photos[0], alt: `${m.name} at ${s.name}, ${reserveName}` } : null,
+    action: <a href="#reserve" className="ledger-btn-ghost">Plan this suite</a>,
+  })) : [];
+  const lodgeFrom = lodge ? (() => { const f = lodge.rooms.map((m) => m.from).filter((x): x is number => !!x); return f.length ? Math.min(...f) : null; })() : null;
+  const others = camp ? camp.reserve.camps.filter((c) => c.slug !== camp.camp.slug).map((c) => ({ c, href: campHref(camp.reserve, c) })) : [];
   const r0 = rates?.rooms[0];
   const nights = rates?.window?.nights ?? 0;
   const slip = rates && r0 && rates.window && nights > 0 ? (() => {
@@ -140,7 +178,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
   const jump: [string, string][] = [...(reasons.length ? [["Why we vetted it", "why"] as [string, string]] : []), ...(v.video ? [["Film", "film"] as [string, string]] : []), ...(rates || v.lib.rooms.length || v.roomData || s.rooms.paras.length || s.rooms.items.length ? [["Rooms", "rooms"] as [string, string]] : []), ["Experiences", "experiences"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ["Reserve", "reserve"], ...(v.hostReady ? [["Meet the host", "host"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
   const sign = CHOSEN["signoff-4"];
   const inSection = (k: SectionKey) => v.photos.filter((p) => p.section === k);
-  const roomNames = roomRows.length ? roomRows.map((r) => r.name) : v.roomData?.rooms.map((r) => r.name) ?? [];
+  const roomNames = camp ? suiteRows.map((r) => r.name) : reserve ? campRows.map((r) => r.name) : roomRows.length ? roomRows.map((r) => r.name) : v.roomData?.rooms.map((r) => r.name) ?? [];
   const strip = (k: SectionKey, label: string) => { const list = inSection(k); return list.length ? <PhotoStrip tab={k} photos={list.map((p) => ({ url: p.url, alt: p.alt }))} total={list.length} label={label} /> : null; };
 
   // experience cards with no photograph of their own take one from the stay's described photographs, in turn
@@ -191,7 +229,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
                 {inSection("rooms").length > 0 && <p className="mt-6"><PhotoLink tab="rooms">See all {inSection("rooms").length} room photographs</PhotoLink></p>}
               </section>
   ) : null;
-  const jumpS: [string, string][] = [["Why it is here", "why"], ...(roomRows.length || roomsFallbackEl ? [["Rooms", "rooms"] as [string, string]] : []), ["What to expect", "expect"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ["Reserve", "reserve"], ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
+  const jumpS: [string, string][] = [["Why it is here", "why"], ...(camp ? [["Suites", "rooms"] as [string, string]] : reserve ? [["Lodges", "rooms"] as [string, string]] : roomRows.length || roomsFallbackEl ? [["Rooms", "rooms"] as [string, string]] : []), ["What to expect", "expect"], ...(offerRows.length ? [["Offers", "offers"] as [string, string]] : []), ...(hasMap ? [["Map", "location"] as [string, string]] : []), ["Reserve", "reserve"], ...(s.faqs.length ? [["Questions", "questions"] as [string, string]] : [])];
   const pwRow = pw && wow ? (
     <div className="-mx-5 md:-mx-10 px-5 md:px-10 py-5 flex flex-wrap items-center gap-x-6 gap-y-3" style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--jw-path) 16%, #fff), transparent)" }}>
               <p className="font-mono text-[10.5px] tracking-[0.24em] uppercase text-pathway-text">Wild Pathways · {pw.primary.setting}</p>
@@ -211,7 +249,7 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
         {sample && <style>{`@media (max-width:767px){.journal-style.jw-sample #reserve ol{display:none}.journal-style.jw-sample #reserve form{scroll-margin-top:88px}.journal-style.jw-sample #reserve{scroll-margin-top:72px}}`}</style>}
         {/* Motion (James, 23 Nov 2026): a slow hero drift, sections that arrive, pinned photo chapters. CSS only, off under reduced motion. */}
         {sample && <style>{`.jw-sample #expect ul.grid.grid-cols-3{max-width:none!important;gap:16px}.jw-sample #expect ul.grid.grid-cols-3 button{border:0!important;padding:0!important}@keyframes jw-hero-drift{to{transform:translate3d(0,9%,0) scale(1.06)}}@keyframes jw-arrive{from{opacity:0;transform:translate3d(0,26px,0)}to{opacity:1;transform:none}}@supports (animation-timeline:view()){@media (prefers-reduced-motion:no-preference){.jw-sample #journal-hero>img,.jw-sample #journal-hero>video{transform-origin:50% 0;animation:jw-hero-drift linear both;animation-timeline:scroll(root block);animation-range:0 100svh}.jw-sample :is(#why,#rooms,#expect,#offers,#talk,#location,#reserve,#questions){animation:jw-arrive linear both;animation-timeline:view();animation-range:entry 0% entry 28%}.jw-sample .jw-chapter-text{animation:jw-arrive linear both;animation-timeline:view();animation-range:entry 10% entry 70%}}}`}</style>}
-        {sample && <SampleHero v={v} variant={sample} />}
+        {sample && <SampleHero v={v} variant={sample} eyebrow={reserve ? `Wild & Co Safaris · Reserve · ${reserve.area}` : camp ? `Wild & Co Safaris · ${reserveName} · ${KIND_LABEL[camp.camp.kind]}` : undefined} />}
         {!sample && <div className="relative">
           <JournalHero eyebrow={`Volume I · Stays${s.country ? ` · ${s.country}` : ""}`} name={s.name} place={s.country} tagline={s.tagline} frames={v.frames.map((f) => ({ url: f.url, alt: f.alt }))}
           film={v.heroFilm} watch={v.video ? { label: "Watch the film", href: "#film" } : null} offer={heroOffer} ledgerId={s.ledgerId} entry={entryNo(s.ledgerId) ?? null} credit={v.credit} cta={{ label: "Check your dates", href: "#reserve" }} save={<SaveToFolio slug={s.slug} name={s.name} inline />} whyHref="#why" photoCount={v.photos.length} />
@@ -219,7 +257,10 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
         </div>}
         {pw && wow && <div aria-hidden className="h-1.5" style={{ background: "linear-gradient(90deg, var(--jw-path), color-mix(in srgb, var(--jw-path) 45%, #fff))" }} />}
         <JournalJumpRow advisor={!sample} items={sample ? jumpS : jump} extra={v.photos.length > 1 ? <PhotoLink>Photos ({v.photos.length})</PhotoLink> : undefined} />
-        {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{crumbs}</div><SampleBody v={v} variant={sample} rooms={roomRows} roomsFallback={roomsFallbackEl} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={s.slug} reserveHref="#reserve" />} footnote={rates ? `From rates for two adults, before ${pct(rates.tax)} tax · checked ${day(rates.checked, true)} · priced again for your dates` : null} /></>}
+        {sample && <><div className="max-w-ledger mx-auto px-5 md:px-10">{crumbs}</div><SampleBody v={v} variant={sample} rooms={camp ? suiteRows : reserve ? campRows : roomRows} roomsFallback={reserve || camp ? undefined : roomsFallbackEl} basis={basis} promo={rates?.promo ?? null} bar={<DatesBar slug={camp ? camp.reserve.slug : s.slug} reserveHref="#reserve" />}
+          after={camp && others.length ? <div className="mt-10 pt-6 border-t border-stone-keyline"><p className="font-mono text-[11px] tracking-[0.24em] uppercase text-stone-text">Also at {reserveName}</p><ul className="mt-3 flex flex-wrap gap-x-8 gap-y-2">{others.map(({ c, href }) => <li key={c.slug}>{href ? <Link href={href} className="ledger-btn-ghost">{c.name}</Link> : <span className="font-serif italic">{c.name}</span>}</li>)}<li><Link href={`/safaris/${camp.reserve.slug}`} className="ledger-btn-ghost">All of {reserveName}</Link></li></ul></div> : undefined}
+          stays={camp ? { label: "Suites", title: "Where You’ll Sleep", glanceLabel: camp.camp.kind === "residence" ? "The residence" : "Suites", glanceValue: camp.camp.units.filter((u) => !/residence/i.test(u) || camp.camp.kind === "residence").join(", ") || `${suiteRows.length} suite type${suiteRows.length === 1 ? "" : "s"}`, from: lodgeFrom ? `${usd(lodgeFrom)} ${camp.camp.kind === "residence" ? "per night, the whole residence" : "per person, per night"}` : null } : reserve ? { label: "Lodges & residences", title: "Where You’ll Stay", glanceLabel: "On the reserve", glanceValue: [`${reserve.camps.filter((c) => c.kind !== "residence").length} lodges`, `${reserve.camps.filter((c) => c.kind === "residence").length} private residences`].join(", "), from: resFrom ? `${usd(resFrom)} per person, per night` : null } : undefined}
+          footnote={camp ? `From rates as filed for ${s.name} · priced again for your dates · part of ${reserveName}` : reserve ? "From rates per person, per night, sharing, as filed for each lodge · residences are priced per night for the whole house · priced again for your dates" : rates ? `From rates for two adults, before ${pct(rates.tax)} tax · checked ${day(rates.checked, true)} · priced again for your dates` : null} /></>}
         <div className="max-w-ledger mx-auto px-5 md:px-10">
           {!sample && pwRow}
           {!sample && crumbs}
@@ -266,12 +307,14 @@ export default function JournalStayPage({ slug, sample, preview = false }: { slu
       {/* One pop-up for every conversation about the stay: Iggi, the phone, a live call, the team (James, 23 Nov 2026). */}
       {sample && <TalkSheet name={s.name} planHref={planHref} callHref={v.hostReady && v.host.host?.calendlyUrl ? v.host.host.calendlyUrl : JAMES_CALL} callWith={v.hostReady && v.host.host?.calendlyUrl ? "With the host" : "With James"}>{iggiEl || null}</TalkSheet>}
 
-      <StickyBar id="record-bar" title={s.name} note={fromLine} label={`Reserve ${s.name}`}
+      <StickyBar id="record-bar" title={s.name} note={camp && lodgeFrom ? <>From {usd(lodgeFrom)}<span className="hidden sm:inline"> {camp.camp.kind === "residence" ? "per night" : "per person, per night"}</span></> : reserve && resFrom ? <>From {usd(resFrom)}<span className="hidden sm:inline"> per person, per night</span></> : fromLine} label={`Reserve ${s.name}`}
         links={<><SaveToFolio slug={s.slug} name={s.name} inline />{sample ? <TalkButton /> : <Link href={planHref} className="ledger-btn-ghost">Speak with an advisor</Link>}</>}
         action={<a href="#reserve" className="ledger-btn ledger-btn--house ledger-btn--compact">Check<span className="hidden sm:inline">&nbsp;your</span>&nbsp;dates</a>} />
 
       <JsonLd data={graph({
         ...lodging({ path, name: s.name, description: v.answer, image: v.photos.slice(0, 24).map((i) => { const u = i.url.startsWith("/") ? absoluteUrl(i.url) : i.url; return v.credit ? imageObject(u, i.alt, v.credit) : u; }), subtype: s.category === "resort" ? "Resort" : s.category === "hotel" ? "Hotel" : "LodgingBusiness", country: s.country ?? undefined, geo: s.coords ?? undefined, ledgerId: s.ledgerId ?? undefined }),
+        ...(camp ? { containedInPlace: { "@type": "TouristAttraction", name: reserveName, url: absoluteUrl(`/safaris/${camp.reserve.slug}`) } } : {}),
+        ...(reserve ? { containsPlace: reserve.camps.map((c) => { const h = campHref(reserve, c); return { "@type": "LodgingBusiness", name: c.name, ...(h ? { url: absoluteUrl(h) } : {}) }; }) } : {}),
         ...whoPlansSchema({ ledgerId: s.ledgerId, countrySlug: s.countrySlug ?? null, regionSlug: s.regionSlug ?? null }),
         ...(offers.length ? { makesOffer: offers.map((o) => ({ "@type": "Offer", name: `${o.headline}: ${o.name}`, description: o.conditions ?? o.headline, validFrom: o.travel.from, validThrough: o.travel.to, url: absoluteUrl(`${path}#offers`), offeredBy: { "@type": "TravelAgency", name: "James Wild & Co", url: absoluteUrl("/") } })) } : {}),
         ...(v.suited.length ? { audience: v.suited.map((t) => ({ "@type": "PeopleAudience", audienceType: t })), keywords: [s.name, s.country, ...v.suited].filter(Boolean).join(", ") } : {}),

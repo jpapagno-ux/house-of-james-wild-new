@@ -2,7 +2,7 @@ name: Contact sheets (temporary)
 on:
   push:
     branches: [tmp/contact-sheets-africa2]
-    paths: [".contact/list2.tsv"]
+    paths: [".contact/list2.tsv", ".contact/pages.tsv"]
 permissions:
   contents: write
 jobs:
@@ -13,8 +13,8 @@ jobs:
       - name: Build sheets
         run: |
           pip install -q pillow pillow-avif-plugin
-          python3 .contact/build.py || true
+          if [ -s .contact/pages.tsv ]; then python3 .contact/crawl.py || true; else python3 .contact/build.py || true; fi
       - name: Commit
         run: |
           git config user.name "contact-sheets"; git config user.email "actions@github.com"
-          git add .contact/sheets && git commit -m "Contact sheets" && git push
+          git add .contact && git commit -m "Contact sheets" && git push

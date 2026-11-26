@@ -32,6 +32,7 @@ export type SeasonalRule = {
   baseOccupancy: number; // adults included in amountMinor
   amountMinor: Minor; // per room, per night, for baseOccupancy adults
   extraAdultMinor?: Minor | null;
+  singleMinor?: Minor | null; // per room, per night, when one adult travels alone (no children); null = the base rate applies
   childBands?: ChildBand[];
   minNights?: number | null;
   maxNights?: number | null;
@@ -276,7 +277,9 @@ export function quote(card: RateCard, room: Room, req: QuoteRequest): Quote | Qu
       childrenMinor += c;
     }
     const extraAdultsMinor = extra * (rule.extraAdultMinor ?? 0);
-    nights.push({ date: d, ruleId: rule.id, season: rule.season, baseMinor: rule.amountMinor, extraAdultsMinor, childrenMinor, totalMinor: rule.amountMinor + extraAdultsMinor + childrenMinor });
+    // Single occupancy: one adult alone pays the card's single rate where one is filed.
+    const baseMinor = adults === 1 && kids.length === 0 && rule.singleMinor != null ? rule.singleMinor : rule.amountMinor;
+    nights.push({ date: d, ruleId: rule.id, season: rule.season, baseMinor, extraAdultsMinor, childrenMinor, totalMinor: baseMinor + extraAdultsMinor + childrenMinor });
     used.push(rule);
   }
 

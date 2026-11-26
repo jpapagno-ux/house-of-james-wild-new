@@ -93,7 +93,7 @@ const intIn = (v: number | null, lo: number, hi: number) => v == null || (Number
 const STATUS: Record<string, CardRow["status"]> = { Draft: "draft", Submitted: "draft", Approved: "approved", Published: "published", Retired: "retired" };
 const BOARD: Record<string, string> = { "Room only": "room_only", "Bed & breakfast": "bed_breakfast", "Half board": "half_board", "Full board": "full_board", "Fully inclusive": "fully_inclusive" };
 const REFUND: Record<string, string> = { Refundable: "refundable", "Partially refundable": "partially_refundable", "Non-refundable": "non_refundable" };
-const BASIS: Record<string, string> = { "% of room": "percent_of_room", "Per person per night": "per_person_per_night", "Per room per night": "per_room_per_night", "Per stay": "per_stay" };
+const BASIS: Record<string, string> = { "% of room": "percent_of_room", "Per person per night": "per_person_per_night", "Per room per night": "per_room_per_night", "Per stay": "per_stay", "Per person per stay": "per_person_per_stay" };
 const PROMO: Record<string, string> = { "Percent off": "percent", "Fixed per night": "fixed_per_night", "Stay N pay N-1": "nth_night_free" };
 const RESTRICT: Record<string, string> = { Closed: "closed", "Min stay": "min_stay", "Closed to arrival": "close_to_arrival", "Closed to departure": "close_to_departure" };
 const DOW: Record<string, number> = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };

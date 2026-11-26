@@ -1,0 +1,198 @@
+{
+ "ledgerId": "STY-2026-000027",
+ "slug": "awasi-patagonia",
+ "propertyName": "Awasi Patagonia",
+ "timeZone": "America/Punta_Arenas",
+ "stayType": "Lodge",
+ "units": [
+  {
+   "code": "villa",
+   "name": "Villa",
+   "maxAdults": 3,
+   "maxChildren": 0,
+   "maxOccupancy": 3
+  },
+  {
+   "code": "master-villa",
+   "name": "Master Villa",
+   "maxAdults": 4,
+   "maxChildren": 0,
+   "maxOccupancy": 4
+  },
+  {
+   "code": "villa-cenit",
+   "name": "Villa Cenit",
+   "maxAdults": 5,
+   "maxChildren": 0,
+   "maxOccupancy": 5
+  }
+ ],
+ "plan": {
+  "code": "fh",
+  "name": "Fully hosted",
+  "boardBasis": "Fully inclusive",
+  "refundability": "Refundable",
+  "inclusions": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Puerto Natales airport."
+ },
+ "card": {
+  "label": "2026-2027-V1",
+  "currency": "USD",
+  "effectiveFrom": "2026-10-01",
+  "effectiveTo": "2027-09-30",
+  "contractReference": "Awasi Patagonia Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/10/Awasi-Patagonia_Fully-Hosted-Rates_2026-2027-1.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+  "depositPercent": 0.5,
+  "balanceDueDays": 30,
+  "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
+  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; 120:25, 89:50, 60:100",
+  "notes": "Tax exempt for non-resident guests paying in foreign currency, per the sheet. Villa Cenit is on sale from 15 December 2026, so its rates start then. House commission 20% (private)."
+ },
+ "seasons": {
+  "villa": [
+   {
+    "season": "High 2026-11 to 2027-02",
+    "stayStart": "2026-11-01",
+    "stayEnd": "2027-02-28",
+    "nightly": 5320,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 3,
+    "single": 4000,
+    "extraAdult": 1080
+   },
+   {
+    "season": "Shoulder October 2026-10 to 2026-10",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2026-10-31",
+    "nightly": 3950,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 3,
+    "single": 2970,
+    "extraAdult": 800
+   },
+   {
+    "season": "Shoulder 2027-03 to 2027-04",
+    "stayStart": "2027-03-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 3950,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 3,
+    "single": 2970,
+    "extraAdult": 800
+   },
+   {
+    "season": "Off-Peak 2027-05 to 2027-09",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 2565,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 3,
+    "single": 1930,
+    "extraAdult": 525
+   }
+  ],
+  "master-villa": [
+   {
+    "season": "High 2026-11 to 2027-02",
+    "stayStart": "2026-11-01",
+    "stayEnd": "2027-02-28",
+    "nightly": 8650,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3
+   },
+   {
+    "season": "Shoulder October 2026-10 to 2026-10",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2026-10-31",
+    "nightly": 6670,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3
+   },
+   {
+    "season": "Shoulder 2027-03 to 2027-04",
+    "stayStart": "2027-03-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 6670,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3
+   },
+   {
+    "season": "Off-Peak 2027-05 to 2027-09",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 4335,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3
+   }
+  ],
+  "villa-cenit": [
+   {
+    "season": "High 2026-12 to 2027-02",
+    "stayStart": "2026-12-15",
+    "stayEnd": "2027-02-28",
+    "nightly": 9950,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3,
+    "extraAdult": 2490
+   },
+   {
+    "season": "Shoulder 2027-03 to 2027-04",
+    "stayStart": "2027-03-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 7670,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3,
+    "extraAdult": 1920
+   },
+   {
+    "season": "Off-Peak 2027-05 to 2027-09",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 4985,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3,
+    "extraAdult": 1250
+   }
+  ]
+ },
+ "taxes": [
+  {
+   "name": "Conservation contribution",
+   "kind": "Fee",
+   "basis": "Per person per stay",
+   "amount": 150,
+   "includedInRate": false,
+   "jurisdiction": "Awasi Patagonia Private Reserve"
+  }
+ ],
+ "promotions": [
+  {
+   "code": "AWASI-PAT-4N",
+   "label": "Stay four nights: 3% off",
+   "percent": 3,
+   "minNights": 4
+  },
+  {
+   "code": "AWASI-PAT-5N",
+   "label": "Stay five nights: 5% off",
+   "percent": 5,
+   "minNights": 5
+  },
+  {
+   "code": "AWASI-PAT-6N",
+   "label": "Stay six nights or more: 8% off",
+   "percent": 8,
+   "minNights": 6
+  }
+ ],
+ "commissionPercent": 0.2
+}

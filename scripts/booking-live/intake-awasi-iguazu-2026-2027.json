@@ -1,0 +1,127 @@
+{
+ "ledgerId": "STY-2026-014316",
+ "slug": "iguazu",
+ "propertyName": "Awasi Iguazú",
+ "timeZone": "America/Argentina/Buenos_Aires",
+ "stayType": "Lodge",
+ "units": [
+  {
+   "code": "villa",
+   "name": "Villa",
+   "maxAdults": 3,
+   "maxChildren": 0,
+   "maxOccupancy": 3
+  },
+  {
+   "code": "master-villa",
+   "name": "Master Villa",
+   "maxAdults": 4,
+   "maxChildren": 0,
+   "maxOccupancy": 4
+  }
+ ],
+ "plan": {
+  "code": "fh",
+  "name": "Fully hosted",
+  "boardBasis": "Fully inclusive",
+  "refundability": "Refundable",
+  "inclusions": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Puerto Iguazú or Foz do Iguaçu airport."
+ },
+ "card": {
+  "label": "2026-2027-V1",
+  "currency": "USD",
+  "effectiveFrom": "2026-10-01",
+  "effectiveTo": "2027-09-30",
+  "contractReference": "Awasi Iguazú Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Iguazu_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+  "depositPercent": 0.5,
+  "balanceDueDays": 30,
+  "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
+  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; High 2026-12-18..2027-02-28 = 44:50, 30:100; 30:50, 15:100",
+  "notes": "VAT of 10.5% for foreign non-residents is added on top of the sheet's rates (James, 26 Nov 2026); Argentine residents pay 21%. The festive minimum stay is not printed on the sheet. House commission 20% (private)."
+ },
+ "seasons": {
+  "villa": [
+   {
+    "season": "High 2026-10 to 2027-04",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 3390,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2550,
+    "extraAdult": 690
+   },
+   {
+    "season": "Shoulder 2027-05 to 2027-09",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 2885,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2170,
+    "extraAdult": 585
+   }
+  ],
+  "master-villa": [
+   {
+    "season": "High 2026-10 to 2027-04",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 5800,
+    "basis": "per_room",
+    "baseOccupancy": 3,
+    "minNights": 2,
+    "extraAdult": 970
+   },
+   {
+    "season": "Shoulder 2027-05 to 2027-09",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 4895,
+    "basis": "per_room",
+    "baseOccupancy": 3,
+    "minNights": 2,
+    "extraAdult": 1225
+   }
+  ]
+ },
+ "taxes": [
+  {
+   "name": "VAT (foreign non-residents)",
+   "kind": "Tax",
+   "basis": "% of room",
+   "percent": 0.105,
+   "includedInRate": false,
+   "jurisdiction": "Argentina"
+  }
+ ],
+ "promotions": [
+  {
+   "code": "AWASI-IGU-3N",
+   "label": "Stay three nights: 3% off",
+   "percent": 3,
+   "minNights": 3
+  },
+  {
+   "code": "AWASI-IGU-4N",
+   "label": "Stay four nights: 5% off",
+   "percent": 5,
+   "minNights": 4
+  },
+  {
+   "code": "AWASI-IGU-5N",
+   "label": "Stay five nights: 6% off",
+   "percent": 6,
+   "minNights": 5
+  },
+  {
+   "code": "AWASI-IGU-6N",
+   "label": "Stay six nights or more: 8% off",
+   "percent": 8,
+   "minNights": 6
+  }
+ ],
+ "commissionPercent": 0.2
+}

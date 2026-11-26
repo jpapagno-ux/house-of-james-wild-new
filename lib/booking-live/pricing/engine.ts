@@ -69,7 +69,7 @@ export type TaxRule = {
   id: string;
   name: string; // "VAT", "Tourism levy", "Conservation fee"…
   kind: "tax" | "fee";
-  basis: "percent_of_room" | "per_person_per_night" | "per_room_per_night" | "per_stay";
+  basis: "percent_of_room" | "per_person_per_night" | "per_room_per_night" | "per_stay" | "per_person_per_stay";
   percentBp?: Bp | null;
   amountMinor?: Minor | null;
   included: boolean; // already inside the nightly rate?
@@ -324,6 +324,7 @@ export function quote(card: RateCard, room: Room, req: QuoteRequest): Quote | Qu
       amountMinor = t.included ? netRoomMinor - Math.floor((netRoomMinor * 10_000 + Math.floor((10_000 + (t.percentBp ?? 0)) / 2)) / (10_000 + (t.percentBp ?? 0))) : pct(netRoomMinor, t.percentBp ?? 0);
     } else if (t.basis === "per_person_per_night") amountMinor = (t.amountMinor ?? 0) * guestsPaying(t) * n;
     else if (t.basis === "per_room_per_night") amountMinor = (t.amountMinor ?? 0) * n;
+    else if (t.basis === "per_person_per_stay") amountMinor = (t.amountMinor ?? 0) * guestsPaying(t);
     else amountMinor = t.amountMinor ?? 0;
     return { id: t.id, name: t.name, kind: t.kind, included: t.included, amountMinor };
   });

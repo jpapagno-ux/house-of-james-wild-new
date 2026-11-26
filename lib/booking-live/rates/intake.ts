@@ -16,7 +16,7 @@
 
 export type IntakeUnit = { code: string; name: string; maxAdults: number | null; maxChildren: number | null; maxOccupancy: number | null; bedConfiguration?: string | null; description?: string | null };
 export type IntakeSeason = { season: string; stayStart: string; stayEnd: string; nightly: number; basis: "per_room" | "per_person_sharing"; baseOccupancy?: number; single?: number; extraAdult?: number | null; child0to3?: number | null; child4to11?: number | null; child12to17?: number | null; minNights?: number | null; priority?: number };
-export type IntakeTax = { name: string; kind: "Tax" | "Fee"; basis: "% of room" | "Per person per night" | "Per room per night" | "Per stay"; percent?: number; amount?: number; includedInRate: boolean; jurisdiction?: string; minAge?: number };
+export type IntakeTax = { name: string; kind: "Tax" | "Fee"; basis: "% of room" | "Per person per night" | "Per room per night" | "Per stay" | "Per person per stay"; percent?: number; amount?: number; includedInRate: boolean; jurisdiction?: string; minAge?: number };
 export type IntakeInput = {
   ledgerId: string; slug: string; propertyName: string; timeZone: string;
   stayType: "Lodge" | "Resort" | "Family Residence"; merchantModel?: "Supplier-direct" | "House collection" | "Connected account";

@@ -8795,5 +8795,997 @@
       }
     },
     "extra": []
+  },
+  "lion-sands-river-lodge": {
+    "describe": {
+      "6848271b4fafe5adcc668e9c_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20suite%20Room%20exterior%20(1)": {
+        "alt": "A River Lodge suite on its deck among the trees, Lion Sands",
+        "section": "exterior"
+      },
+      "6834569a9251463dbd3d1ea8_Lion%20Sands_River_Lodge_Facilities_Guest%20Dining%20Area": {
+        "alt": "The River Lodge main area and its pond lit at dusk, Lion Sands",
+        "section": "exterior"
+      },
+      "6834577180fc86c5306ef9b1_LionSandsRiver_March25_Dining1": {
+        "alt": "The River Lodge dining room under lanterns, Lion Sands",
+        "section": "dining"
+      },
+      "683457a6d17663fd14f91c3f_Lion%20Sands%20River%20Lodge%20Main%20Pool%20sunset": {
+        "alt": "The River Lodge pool under old trees at sunset, Lion Sands",
+        "section": "pool"
+      },
+      "683457b20d5d23498fbf3538_Lion%20Sands%20River%20Lodge%20Main%20area%20lounge%20mornings": {
+        "alt": "The River Lodge lounge with windows onto the bush",
+        "section": "dining"
+      },
+      "683457bd54781cb3a7d8c6f4_Lion%20Sands%20River%20Lodge%20Main%20area%20lounge-1": {
+        "alt": "The River Lodge bar and lounge, Lion Sands",
+        "section": "dining"
+      },
+      "683457c60cc8d9df68b669b7_Lion%20Sands%20River%20Lodge%20Food-2": {
+        "alt": "A plate from the River Lodge kitchen with fresh mango",
+        "section": "dining"
+      },
+      "683457d03b1765fb446b403a_Lion%20Sands%20River%20Lodge%20Fire%20deck-1": {
+        "alt": "The sunken fire deck at River Lodge lit by lanterns at night",
+        "section": "exterior"
+      },
+      "683457d69a5b8729adda8967_Lion%20Sands%20River%20Lodge%20Creative%20Lab": {
+        "alt": "The Creative Lab at River Lodge, a photographic studio with the guides",
+        "section": "experiences"
+      },
+      "683457dd6f2d874afef26a3a_Lion%20Sands%20River%20Lodge%20Boma": {
+        "alt": "Tables set around the fire in the River Lodge boma at dusk",
+        "section": "dining"
+      },
+      "683457eb69d733fb26e67309_Rocky%20Ridge%20Female-1": {
+        "alt": "A leopard in the trees near River Lodge, Lion Sands",
+        "section": "experiences"
+      },
+      "6834592be8494a181bab4d8f_Lion%20Sands%20_River%20Lodge_3_%20Luxury%20Suite_Twin%20Bedroom%20Setup": {
+        "alt": "A River Lodge Luxury Room with twin beds",
+        "section": "rooms"
+      },
+      "6834593b9771cd4eddaad5d9_Lion%20sands%20River%20Lodge%20River%20Suite%20Lounge": {
+        "alt": "A River Suite lounge opening to its deck over the Sabie River",
+        "section": "rooms"
+      },
+      "683459416b7c0a7860953843_Lion%20Sands%20River%20Lodge%20Luxury%20room": {
+        "alt": "A River Lodge Luxury Room bedroom",
+        "section": "rooms"
+      },
+      "683459510ead5a5fe929c872_Lion%20Sands%20River%20Lodge%20River%20suite%20bedroom": {
+        "alt": "A River Suite bedroom at River Lodge",
+        "section": "rooms"
+      },
+      "68345a1df137f47c4d3a37ed_Lion%20Sands%20_River%20Lodge_3_Superior%20Luxury%20Suite_En-Suite%20Bathroom": {
+        "alt": "A Superior Luxury Suite bathroom at River Lodge",
+        "section": "rooms"
+      },
+      "68345a234092738789138f7f_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Room%20Bedroom%20(1)": {
+        "alt": "A Superior Luxury Room bedroom opening onto the river",
+        "section": "rooms"
+      },
+      "68345a29fa89d167db5f2f42_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20suite%20Room%20exterior": {
+        "alt": "A Superior Luxury Room and its deck among the trees, River Lodge",
+        "section": "exterior"
+      },
+      "68345a30506f0d5b6f484f07_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Suite%20": {
+        "alt": "A Superior Luxury Suite bedroom at River Lodge",
+        "section": "rooms"
+      },
+      "68345a392ab3a50d23946d0b_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20Room%20Outside%20deck": {
+        "alt": "The deck of a Superior Luxury Room above the Sabie River",
+        "section": "exterior"
+      },
+      "68345c63bea8f3207185d09a_Lion%20Sands%20_River%20Lodge_3_River%20Suite_Bedroom%20Interior%20(1)": {
+        "alt": "A River Suite bedroom opening onto its deck and the bush",
+        "section": "rooms"
+      },
+      "68345c763271258ec8a382b6_Lion%20Sands%20River%20Lodge%20River%20Suite-1": {
+        "alt": "A River Suite bedroom looking out over the riverbank",
+        "section": "rooms"
+      },
+      "6834b7804f8ddd95c2e6bf12_family-river-suite-overview-1": {
+        "alt": "The Family River Suite bedroom at River Lodge",
+        "section": "rooms"
+      },
+      "6834b7c1cc57f497a02d5670_LionSandsRiver_March25_Suite%20from%20River04": {
+        "alt": "The outdoor shower and plunge pool of a River Suite",
+        "section": "rooms"
+      },
+      "6834b7d60d720074134258c9_LionSandsRiver_March25_Suite_from_River05_preview_maxWidth_1600_maxHeight_1600": {
+        "alt": "A River Suite and its plunge pool on the lawn, River Lodge",
+        "section": "pool"
+      }
+    },
+    "extra": []
+  },
+  "lion-sands-narina-lodge": {
+    "describe": {
+      "6945b1f321fa55acdfeea0d0_Lion%20Sands%20Narina%20Lodge%20FRONT%20ENTRANCE%20-%20Medium": {
+        "alt": "The wooden walkway to Narina Lodge under thatch and trees, Lion Sands",
+        "section": "exterior"
+      },
+      "6945b1fade308a5ce663d9a7_Lion%20Sands%20Narina%20Lodge%20-%20Deck%20-%20Medium": {
+        "alt": "Narina Lodge and its decks raised above the grass by the Sabie River",
+        "section": "exterior"
+      },
+      "6945b1fadfb9ce7cd4f68ce2_Lion%20Sands%20Narina%20Lodge%20ELEPHANT%20CROSSING%20-%20Medium": {
+        "alt": "A guest on the Narina Lodge deck watching elephants cross the Sabie River",
+        "section": "experiences"
+      },
+      "6945b1fab4526091f728b6bf_Lion%20Sands%20Narina%20Lodge%20FIRE%20deck%20EVENING%20-%20Medium": {
+        "alt": "The fire deck at Narina Lodge in the evening above the river",
+        "section": "exterior"
+      },
+      "6945b1fac8f2e524c4678dc9_Lion%20Sands%20Narina%20Lodge%20LOUNGERS%203%20-%20Medium": {
+        "alt": "The shaded deck lounge at Narina Lodge among the trees",
+        "section": "exterior"
+      },
+      "6945b1fa559b89e28edeab86_Lion%20Sands_Narina%20Lodge_2_Guest%20Area%20Views%20-%20Medium": {
+        "alt": "Elephants grazing on the bank of the Sabie River below Narina Lodge",
+        "section": "experiences"
+      },
+      "6945b1fa5ccd4f4cac0f5c0d_Lion%20Sands_Narina%20Lodge_2_Guest%20Lounge%20Area%20-%20Medium": {
+        "alt": "The Narina Lodge lounge and fireplace open to the river at dusk",
+        "section": "dining"
+      },
+      "6945b1fa0edebabe4f725d2d_Lion%20Sands_Narina%20Lodge_2_Lodge%20Views-1%20-%20Medium": {
+        "alt": "Elephants feeding beside the thatched roofs of Narina Lodge",
+        "section": "experiences"
+      },
+      "6945b18d20769f82c8034959_Lion%20Sands_Narina%20Lodge_3_Suite_Views%20-%20Medium": {
+        "alt": "A Narina Suite deck and plunge pool facing the river at sunset",
+        "section": "pool"
+      },
+      "6945b18d77bc201f21e991a0_Lion%20Sands%20Narina%20%20Lodge%20Suite%20BEDROOM%20OPTION%20-%20Medium": {
+        "alt": "A Narina Suite bedroom opening to its deck and loungers",
+        "section": "rooms"
+      },
+      "6945b18db4526091f728a1b3_Lion%20Sands%20Narina%20Lodge%20ROOM%20EXTERIOR%20-%20Medium": {
+        "alt": "A thatched Narina Suite and its walkway among the trees",
+        "section": "exterior"
+      },
+      "6945b18d4d6aa4e2735197be_Lion%20Sands%20Narina%20Lodge%20Suite%20WIDE%20-%20Medium": {
+        "alt": "A Narina Suite with its lounge and bed under a net",
+        "section": "rooms"
+      },
+      "6945b18e3a0f4d65b7837067_Lion%20Sands_Narina%20Lodge_3_Suite_Bathroom-2%20-%20Medium": {
+        "alt": "A Narina Suite bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lion-sands-tinga-lodge": {
+    "describe": {
+      "6945ae4f88fd26ad74ba7b03_Lion%20Sands%20Tinga%20Lodge%20arrival%20safari%20vehicles%20-%20Medium": {
+        "alt": "Guides and their vehicles at the Tinga Lodge entrance, Lion Sands",
+        "section": "exterior"
+      },
+      "6945ae4f575dca03a5a33e90_Lion%20sands%20Tinga%20Lodge%20Bar%20-%20Medium": {
+        "alt": "The bar at Tinga Lodge",
+        "section": "dining"
+      },
+      "6945ae4fb65601920f91d3b0_Lion%20Sands%20Tinga%20Lodge%20Bush%20stop%20-%20Medium": {
+        "alt": "A bush stop at sunset on a Tinga Lodge game drive",
+        "section": "experiences"
+      },
+      "6945ae4f9e392e85df51b427_Lion%20Sands%20Tinga%20Lodge%20fire%20deck%20morning%20-%20Medium": {
+        "alt": "The fire deck at Tinga Lodge above the bush in the morning",
+        "section": "exterior"
+      },
+      "6945ae4ff583e3b6695619a9_Lion%20Sands%20Tinga%20Lodge%20Main%20lodge%20veranda%20-%20Medium": {
+        "alt": "The main lodge veranda at Tinga Lodge looking into the trees",
+        "section": "dining"
+      },
+      "6945ae4f224ce8193c468598_Lion%20Sands%20Tinga%20Lodge%20pool%20service%20-%20Medium": {
+        "alt": "The Tinga Lodge pool and deck above the Sabie River",
+        "section": "pool"
+      },
+      "6945ae4f4b44a6c548548e33_Lion%20Sands%20Tinga%20Main%20Lodge1-1%20-%20Medium": {
+        "alt": "The main lodge lounge at Tinga Lodge",
+        "section": "dining"
+      },
+      "6945ae73969db5ff6a100996_Lion%20Sands%20Tinga%20Lodge%20Suite1%20-%20Medium": {
+        "alt": "A Tinga Suite with glass doors open to its deck and the river",
+        "section": "rooms"
+      },
+      "6945ae88fb3592288cf8a50b_Lion%20Sands%20Tinga%20Lodge%20Suite%20bedroom%20-%20Medium": {
+        "alt": "A Tinga Suite bedroom under a mosquito net",
+        "section": "rooms"
+      },
+      "6945ae88fe990240c25b95b2_Lion%20Sands%20Tinga%20Lodge%20Suite%20outside%20deck%20loungers%20-%20Medium": {
+        "alt": "A Tinga Suite deck with loungers and plunge pool among the trees",
+        "section": "pool"
+      },
+      "6945ae88c8f2e524c466e310_Lion%20Sands%20Tinga%20Lodge%20Suite%20Private%20pool%20-%20Medium": {
+        "alt": "A Tinga Suite plunge pool facing the sunset over the Sabie River",
+        "section": "pool"
+      },
+      "6945ae8854f3043c3efcdeeb_TINGA%20SUITE-%20PRIVATE%20DECK%20AND%20PLUNGE%20POOL-1%20-%20Medium": {
+        "alt": "A Tinga Suite deck and plunge pool lit by lanterns at dusk, above the river",
+        "section": "pool"
+      },
+      "6945ae8ac3485a0ff6f8c58c_Lion%20Sands%20Tinga%20Lodge%20suite%20triple%20setup6%20-%20Medium": {
+        "alt": "A Tinga Suite set up for three, opening to its deck and pool",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lion-sands-fish-eagle-residence": {
+    "describe": {
+      "6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium": {
+        "alt": "Fish Eagle Residence and its decks among the trees at sunset, Lion Sands",
+        "section": "exterior"
+      },
+      "6945ad2fa08569e115b84b08_Fish%20Eagle%20Residence%20-%20Drone%20view%203%20-%20July%202025%20-%20Medium": {
+        "alt": "Fish Eagle Residence from above: decks, pool and pavilions in the bush",
+        "section": "exterior"
+      },
+      "6945ad2ff6dad159249fbaac_Fish%20Eagle%20Residence%20-%20Lounge%202%20-%20July%202025%20-%20Medium": {
+        "alt": "The Fish Eagle Residence lounge opening to the bush",
+        "section": "dining"
+      },
+      "6945ad2f11a85677e0bec96f_Fish%20Eagle%20Residence%20-%20Outside%20Lounge%20-%20July%202025%20-%20Medium": {
+        "alt": "The outdoor lounge at Fish Eagle Residence",
+        "section": "exterior"
+      },
+      "6945ad2fd23e3fc83ec1086e_Fish%20Eagle%20Residence%20-%20Pool%20View%20-%20Medium": {
+        "alt": "The Fish Eagle Residence pool and deck at dusk among the trees",
+        "section": "pool"
+      },
+      "6945ad2f7e281e3bd96f859a_Fish%20Eagle%20Residence%20-%20Suite%201%20-%20Bedroom%20-%20Medium": {
+        "alt": "A bedroom at Fish Eagle Residence",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lion-sands-hinkwenu-residence": {
+    "describe": {
+      "6945b0a99607eac5b0eaaf15_Lion%20Sands%20Hinkwenu%20Residence10%20-%20Medium": {
+        "alt": "The pool and veranda at Hinkwenu Residence under a red evening sky, Lion Sands",
+        "section": "pool"
+      },
+      "6945b0a9db6d138c557a0998_Lion%20Sands%20Hinkwenu%20Residence2%20-%20Medium": {
+        "alt": "The Hinkwenu Residence living room and dining table",
+        "section": "dining"
+      },
+      "6945b0a9b2fec276ad9c8930_Lion%20Sands%20Hinkwenu%20Residence3%20-%20Medium": {
+        "alt": "The Hinkwenu Residence living room",
+        "section": "dining"
+      },
+      "6945b0a992250d7e9501e840_Lion%20sands%20Tinga%20Lodge%20Hinkwenu%20residence%20bathroom%20-%20Medium": {
+        "alt": "A Hinkwenu Residence bathroom",
+        "section": "rooms"
+      },
+      "6945b0a95cae7eaba9925905_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20bedroom%20-%20Medium": {
+        "alt": "A Hinkwenu Residence bedroom under a mosquito net",
+        "section": "rooms"
+      },
+      "6945b0a93b0326fa7d954c72_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20Lounge%20-%20Medium": {
+        "alt": "The Hinkwenu Residence lounge",
+        "section": "dining"
+      },
+      "6945b0a911a85677e0bfbb5e_Lion%20Sands%20Tinga%20Lodge%20Hinkwenu%20residence%20outside%20veranda%20-%20Medium": {
+        "alt": "The covered veranda at Hinkwenu Residence beside the garden",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "londolozi-reserve": {
+    "describe": {
+      "681cbfa0b_d1752420d_682dcf2de25f02c9a0908c21_Londolozi__2018_Londolozi-Game-Reserve_-Private-Granite.": {
+        "alt": "The Granite Suites bar deck in the late sun above the Sand River, Londolozi",
+        "section": "dining"
+      },
+      "4cedca427_465cee065_683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior_20_1_": {
+        "alt": "Varty Camp in the canopy of the riverine forest, Londolozi",
+        "section": "exterior"
+      },
+      "19f194a5f_877070f71_683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView_20_1_.": {
+        "alt": "A Granite Suite lounge open to its pool and the river, Londolozi",
+        "section": "pool"
+      },
+      "39ba130c1_e1f290e07_683f66f6d152ed7b9b2a36ba_Londolozi-Private-Granite-Suite-PoolDeck_20_1_": {
+        "alt": "A Granite Suite deck on the granite rocks, Londolozi",
+        "section": "exterior"
+      },
+      "3b33103f1_66aced96b_683f66f6a53520d30355c90d_Londolozi-Private-Granite-Suite-Mainroom_20_1_": {
+        "alt": "The Granite Suites main room under thatch and stone",
+        "section": "dining"
+      },
+      "df5a72e77_3e04e1114_683f598ca9efb65bff1744c3_Londolozi-Varty-Camp-Superior-Chalet-Room_20_1_": {
+        "alt": "A Varty Camp Superior Chalet bedroom with a window onto the bush",
+        "section": "rooms"
+      },
+      "2cfca10df_198af2b8e_683f598ca9efb65bff1744cd_Londolozi-Varty-Camp-Standard-Chalet-Pool_20_1_": {
+        "alt": "A Varty Camp chalet deck and plunge pool",
+        "section": "pool"
+      },
+      "f19fc5650_b33e4a4b1_683f5800e8d275cab4129570_Londolozi-Varty-Camp-Mainarea_20_1_": {
+        "alt": "The Varty Camp main deck under the old trees above the river",
+        "section": "dining"
+      },
+      "82af470e8_1a4b9f7a5_683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook_20_1_": {
+        "alt": "The Varty Camp river overlook under thatch above the Sand River",
+        "section": "exterior"
+      },
+      "ad7ad3bb1_30b0d02f0_683f52d3ee555fbcf5739797_Londolozi-Tree-Camp-View_20_1_": {
+        "alt": "Tree Camp raised in the trees above the riverine bush, Londolozi",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "londolozi-reserve-founders-camp": {
+    "describe": {
+      "683f465a9e39c1540516b179_Londolozi-Founders-Camp-Main-Area-Long-Shot-2-Elsa-Young-Low-Res-copy": {
+        "alt": "Founders Camp under thatch in the trees above the Sand River, Londolozi",
+        "section": "exterior"
+      },
+      "683f465ae77fd06ec4f40465_Londolozi-Founders-Camp-Main-Area-5-Elsa-Young-Low-Res-copy": {
+        "alt": "The Founders Camp lounge open to the bush",
+        "section": "dining"
+      },
+      "683f4670dec22995f1ef4130_Londolozi-Founders-Camp-Main-Area-10-Elsa-Young-Low-Res-copy": {
+        "alt": "The bar at Founders Camp",
+        "section": "dining"
+      },
+      "683f45ad06863802f245c34a_Londolozi-Founders-Camp-Family-Suite-1-Elsa-Young-Low-Res-copy": {
+        "alt": "A Founders Camp Family Suite and its deck in the trees",
+        "section": "exterior"
+      },
+      "683f45ab7d4ba6b703f3ec0f_Londolozi-Founders-Camp-Family-Suite-7-Elsa-Young-Low-Res-copy": {
+        "alt": "A Founders Camp Family Suite twin bedroom",
+        "section": "rooms"
+      },
+      "683f45aa513e5ea52e445948_Londolozi-Founders-Camp-Family-Suite-9-Elsa-Young-Low-Res-copy": {
+        "alt": "A Founders Camp Family Suite bedroom",
+        "section": "rooms"
+      },
+      "683f45ab98d1ce1a79239713_Londolozi-Founders-Camp-Family-Suite-20-Elsa-Young-Low-Res-copy": {
+        "alt": "A Founders Camp chalet deck and plunge pool under the trees",
+        "section": "pool"
+      },
+      "683f450b8db3706e081d48c2_Londolozi-Founders-Camp-Superior-Chalet-2-Elsa-Young-Low-Res-copy": {
+        "alt": "A Founders Camp Superior Chalet bedroom",
+        "section": "rooms"
+      },
+      "683f467050b6557054d438d4_Londolozi-Founders-Camp-Superior-Chalet-5-Elsa-Young-Low-Res-copy": {
+        "alt": "A Founders Camp Superior Chalet bathroom",
+        "section": "rooms"
+      },
+      "683f450b88f07e479833aebc_Londolozi-Founders-Camp-Superior-Chalet-9-Elsa-Young-Low-Res-copy": {
+        "alt": "A Founders Camp Superior Chalet bedroom opening to its deck and pool",
+        "section": "rooms"
+      },
+      "683f495d8729cf962d5537cf_Londolozi-Founders-Cap-Family-Suite-Study-Room": {
+        "alt": "The study in a Founders Camp Family Suite",
+        "section": "rooms"
+      },
+      "683f4670a9f7be4723c6904a_Londolozi-Founders-Camp-Superior-Chalet-Exterior-1-Elsa-Young-Low-Res-copy": {
+        "alt": "The path to a Founders Camp Superior Chalet through the trees",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "londolozi-reserve-varty-camp": {
+    "describe": {
+      "683f57ebc8ac68f06acb51dc_Londolozi-Varty-Camp-Exterior%20(1)": {
+        "alt": "Varty Camp in the canopy of the riverine forest, Londolozi",
+        "section": "exterior"
+      },
+      "683f57eb380f2d209b717883_Londolozi-Varty-Camp-River-Overlook%20(1)": {
+        "alt": "The Varty Camp river overlook under thatch above the Sand River",
+        "section": "exterior"
+      },
+      "683f58162a53e7038f335349_Londolozi-Varty-Camp-Mainarea3%20(1)": {
+        "alt": "The Varty Camp main lounge and fireplace",
+        "section": "dining"
+      },
+      "683f595ddec22995f1fba1b9_Londolozi-Varty-Camp-Mainarea2%20(1)": {
+        "alt": "The Varty Camp main area",
+        "section": "dining"
+      },
+      "683f598ca9efb65bff1744c3_Londolozi-Varty-Camp-Superior-Chalet-Room%20(1)": {
+        "alt": "A Varty Camp Superior Chalet bedroom with a window onto the bush",
+        "section": "rooms"
+      },
+      "683f598ca9f7be4723d2b7e7_Londolozi-Varty-Camp-Superior-Chalet-Room2%20(1)": {
+        "alt": "A Varty Camp Superior Chalet bedroom opening to its deck",
+        "section": "rooms"
+      },
+      "683f598ca9efb65bff1744cd_Londolozi-Varty-Camp-Standard-Chalet-Pool%20(1)": {
+        "alt": "A Varty Camp chalet deck and plunge pool",
+        "section": "pool"
+      },
+      "683f598ca9b475056a15cb6d_Londolozi-Varty-Camp-Superior-Chalet-Deck%20(1)": {
+        "alt": "A Varty Camp Superior Chalet deck above the riverine bush in the late sun",
+        "section": "exterior"
+      },
+      "6840f39d2a50f01d82e07c7d_Londolozi-Varty-Camp-Standard-Chalet-Pool": {
+        "alt": "A Varty Camp chalet deck and plunge pool",
+        "section": "pool"
+      },
+      "683f59c2bca2b94185c43a03_Londolozi-Varty-Camp-Standard-Chalet-Room%20(1)": {
+        "alt": "A Varty Camp Chalet bedroom",
+        "section": "rooms"
+      },
+      "683f59c25977bd8d0d197de6_Londolozi-Varty-Camp-Standard-Chalet-Bathroom%20(1)": {
+        "alt": "A Varty Camp Chalet bathroom",
+        "section": "rooms"
+      },
+      "6840f3cbff2858237f576654_Londolozi-Varty-Camp-Superior-Chalet-Room2": {
+        "alt": "A Varty Camp Superior Chalet bedroom opening to its deck and the trees",
+        "section": "rooms"
+      },
+      "683f59a1277668bb1513ca32_Londolozi-Varty-Camp-Superior-Chalet-Bathroom%20(1)": {
+        "alt": "A Varty Camp Superior Chalet bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "londolozi-reserve-tree-camp": {
+    "describe": {
+      "683f42ee134ebd745b276031_londo_treecamp9%20(1)": {
+        "alt": "The Tree Camp deck around the fire under the trees at night, Londolozi",
+        "section": "dining"
+      },
+      "683f52d3ee555fbcf5739797_Londolozi-Tree-Camp-View%20(1)": {
+        "alt": "Tree Camp raised in the trees above the riverine bush, Londolozi",
+        "section": "exterior"
+      },
+      "683f42ee01d74a4247c2776c_londo_treecamp13%20(1)": {
+        "alt": "The Tree Camp lounge and dining deck among the trees",
+        "section": "dining"
+      },
+      "683f52aef3f1353dd48897ee_Londolozi-Tree-Camp-Dining%20(1)": {
+        "alt": "The Tree Camp dining deck lit by lanterns in the trees at dusk",
+        "section": "dining"
+      },
+      "683f52e352e6b29ac59f078a_Londolozi-Tree-Camp-room": {
+        "alt": "A Tree Camp Suite lounge with a window onto the trees",
+        "section": "rooms"
+      },
+      "683f52eaa9f7be4723ce32c3_londo_treecamp_suite3%20(1)": {
+        "alt": "A Tree Camp Suite bedroom",
+        "section": "rooms"
+      },
+      "683f5309ed9923cc8f215f91_Londolozi-Tree-Camp-room%20(1)": {
+        "alt": "A Tree Camp Suite lounge with a window onto the trees",
+        "section": "rooms"
+      },
+      "683f5309533f44311ff4a044_londo_treecamp_suite21%20(1)": {
+        "alt": "A Tree Camp Suite lounge looking out over the bush",
+        "section": "rooms"
+      },
+      "683f5309f89bd93dc039ba54_Londolozi-Tree-Camp-Shower%20(1)": {
+        "alt": "A Tree Camp Suite deck and outdoor shower",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "londolozi-reserve-pioneer-camp": {
+    "describe": {
+      "683f4f2c9d49e0448d675f50_Londolozi-Pioneer-Camp-extension": {
+        "alt": "The Pioneer Camp deck in the trees above the bush, Londolozi",
+        "section": "exterior"
+      },
+      "683f4f2c2ee52d8254370f6e_Londolozi-Pioneer-Camp-extension2": {
+        "alt": "The thatched Pioneer Camp suites in the long grass",
+        "section": "exterior"
+      },
+      "683f4f2c25cb90b783f4bc70_Londolozi-Pioneer-Camp-Entrance": {
+        "alt": "The Pioneer Camp entrance through aloes",
+        "section": "exterior"
+      },
+      "683f4f2cebcae2dd628bf53c_Londolozi-Pioneer-Camp-maindeck": {
+        "alt": "The Pioneer Camp lounge and bar",
+        "section": "dining"
+      },
+      "683f4f2c98d1ce1a79299124_Londolozi-Pioneer-Camp-maindeck2": {
+        "alt": "The Pioneer Camp kitchen and dining table",
+        "section": "dining"
+      },
+      "683f4f2cc4c90c3044495005_Londolozi-Pioneer-Camp-maindeck3": {
+        "alt": "The Pioneer Camp lounge open to the deck",
+        "section": "dining"
+      },
+      "683f4f2cbca2b94185be17e9_Londolozi-Pioneer-Camp-room3": {
+        "alt": "A Pioneer Suite lounge with a wide window onto the bush",
+        "section": "rooms"
+      },
+      "683f4f2c0bf59753a2383308_Londolozi-Pioneer-Camp-pool": {
+        "alt": "The Pioneer Camp pool lit by lanterns at dusk",
+        "section": "pool"
+      },
+      "683f4f2c134ebd745b2ee67b_Londolozi-Pioneer-Camp-room": {
+        "alt": "A Pioneer Suite study",
+        "section": "rooms"
+      },
+      "683f4f2d4a692fe5bc57212f_Londolozi-Pioneer-Camp-room2": {
+        "alt": "A Pioneer Suite bedroom",
+        "section": "rooms"
+      },
+      "683f505dbca2b94185bed238_Londolozi-pioneer-camp-privatepool": {
+        "alt": "A Pioneer Suite deck and plunge pool above the bush",
+        "section": "pool"
+      },
+      "683f505d8d6c3ac7ba9893a1_Londolozi-pioneer-camp-room-bathroom": {
+        "alt": "A Pioneer Suite bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "londolozi-reserve-private-granite-suites": {
+    "describe": {
+      "6840f2f57842218cbc43ebad_Londolozi-Private-Granite-Suite-PoolDeck": {
+        "alt": "A Granite Suite deck on the granite rocks, Londolozi",
+        "section": "exterior"
+      },
+      "683f66f6cd0542c4fa1b8841_Londolozi-Private-Granite-Suite-PoolExteriorView%20(1)": {
+        "alt": "A Granite Suite lounge open to its pool and the river, Londolozi",
+        "section": "pool"
+      },
+      "683f66f6da1144f18b9e502c_Londolozi-Private-Granite-Suite-Bar%20(1)": {
+        "alt": "The Granite Suites bar deck in the late sun above the Sand River",
+        "section": "dining"
+      },
+      "683f684b468620cdf876f47a_Londolozi-Private-Granite-Suite-MainArea3%20(1)": {
+        "alt": "A Granite Suite lounge",
+        "section": "rooms"
+      },
+      "683f67e4ca0bfbb6204abd29_Londolozi-Private-Granite-Suite-Mainroom2%20(1)": {
+        "alt": "The Granite Suites terrace built round the trees",
+        "section": "exterior"
+      },
+      "683f66f6a53520d30355c90d_Londolozi-Private-Granite-Suite-Mainroom%20(1)": {
+        "alt": "The Granite Suites main room under thatch and stone",
+        "section": "dining"
+      },
+      "683f684b55e9715b08cb1ea0_Londolozi-Private-Granite-Suite-Room%20(1)": {
+        "alt": "A Granite Suite bedroom",
+        "section": "rooms"
+      },
+      "683f684bcd0897e07db94c7c_Londolozi-Private-Granite-Suite-Bathroom%20(1)": {
+        "alt": "A Granite Suite bathroom",
+        "section": "rooms"
+      },
+      "6840f2592d09da9f31ff0b69_Londolozi-Private-Granite-Suite-Mainroom%20(1)": {
+        "alt": "The Granite Suites main room under thatch and stone",
+        "section": "dining"
+      }
+    },
+    "extra": []
+  },
+  "lalibela-reserve": {
+    "describe": {
+      "3251b8987_a7c3251be_688fe8f7f86eae61565d1bb3_Lalibela_Inzolo_Aerial2": {
+        "alt": "A Lalibela suite and its pool from above in the bush",
+        "section": "pool"
+      },
+      "d63280581_7f8658f84_688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior": {
+        "alt": "The Mark's Camp deck and walkway lit at dusk, Lalibela",
+        "section": "exterior"
+      },
+      "06fd6fa6b_7a5db0146_688fefe9f67c40b7a3b598ff_Lalibela_TreeTops_Aerial": {
+        "alt": "Tree Tops Safari Lodge and its pool from above in the forest, Lalibela",
+        "section": "exterior"
+      },
+      "b3b49ee94_2dba371db_688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial": {
+        "alt": "Mills Manor and its gardens from above, Lalibela",
+        "section": "exterior"
+      },
+      "3f86c1fdf_8b52cacc6_688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial": {
+        "alt": "A Lalibela lodge in its green valley above a waterhole",
+        "section": "exterior"
+      },
+      "2f969f8de_5b053f155_688feb3373066eb8c9a9e3e9_Lalibela_MarksCamp_Exterior2": {
+        "alt": "The fire pit at Mark's Camp above the hills",
+        "section": "exterior"
+      },
+      "a43d2be8d_cb1e2aeaa_688feff2ffd5a1b246206432_Lalibela_TreeTops_Pool": {
+        "alt": "The Tree Tops pool deck in the sun, Lalibela",
+        "section": "pool"
+      },
+      "8719d62cf_e4e189bdc_688fe9f9629a2784c13325be_Lalibela_Kichaka_Livingroom2": {
+        "alt": "The lounge and fireplace at Kichaka Lodge",
+        "section": "dining"
+      },
+      "93b1f04c8_a1f9e6ba0_688fe90e5b562db6bb680638_Lalibela_Inzolo_Livingroom": {
+        "alt": "The Inzolo Lodge lounge",
+        "section": "dining"
+      },
+      "f1feed142_f9806b9c4_688fe8ffb26f26166bb2792c_Lalibela_Inzolo_Patio": {
+        "alt": "A suite deck at Inzolo Lodge above the valley",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "lalibela-reserve-marks-camp": {
+    "describe": {
+      "688feb2101fe67ebf4d5cd76_Lalibela_MarksCamp_Exterior": {
+        "alt": "The Mark's Camp deck and walkway lit at dusk, Lalibela",
+        "section": "exterior"
+      },
+      "688feb2ae20d6bf229be0bc9_Lalibela_MarksCamp_Aerial": {
+        "alt": "Mark's Camp in its valley above a waterhole, Lalibela",
+        "section": "exterior"
+      },
+      "688feb2fcf1bd5a5f8675931_Lalibela_MarksCamp_LivingRoom": {
+        "alt": "The Mark's Camp dining room set for dinner",
+        "section": "dining"
+      },
+      "688feb31ed5de26a2b6642e6_Lalibela_MarksCamp_Pool": {
+        "alt": "The Mark's Camp pool deck facing the waterhole",
+        "section": "pool"
+      },
+      "688feb3373066eb8c9a9e3e9_Lalibela_MarksCamp_Exterior2": {
+        "alt": "The fire pit at Mark's Camp above the hills",
+        "section": "exterior"
+      },
+      "688feb35e8da3b98ba1a7cbe_Lalibela_MarksCamps_bedroom": {
+        "alt": "A Mark's Camp chalet bedroom",
+        "section": "rooms"
+      },
+      "68c23898d21bab806cde338c_LalibelaReserve_MarksCamp_StandardChalet_Bedroom2": {
+        "alt": "A Mark's Camp chalet bedroom opening to its deck",
+        "section": "rooms"
+      },
+      "68c238a1fdb7362aa8ee82ec_LalibelaReserve_MarksCamp_StandardChalet_Bedroom": {
+        "alt": "A Mark's Camp Family Chalet bedroom",
+        "section": "rooms"
+      },
+      "68c238a5aad088c05b607ea0_LalibelaReserve_MarksCamp_StandardChalet_Patio": {
+        "alt": "A Mark's Camp chalet deck in the bush above the valley",
+        "section": "exterior"
+      },
+      "68c238a909086bfb97a7752d_LalibelaReserve_MarksCamp_StandardChalet_Bathroom": {
+        "alt": "A Mark's Camp chalet bathroom",
+        "section": "rooms"
+      },
+      "68c238b7656583fd7738f10b_LalibelaReserve_MarksCamp_FamilyChalet_Bedroom": {
+        "alt": "A Mark's Camp chalet bedroom",
+        "section": "rooms"
+      },
+      "68c238bf1ffbfdc0af7922d7_LalibelaReserve_MarksCamp_FamilyChalet_Bedroom2": {
+        "alt": "A Mark's Camp Family Chalet twin bedroom",
+        "section": "rooms"
+      },
+      "68c238c32cb1301d48f51584_LalibelaReserve_MarksCamp_FamilyChalet_Patio": {
+        "alt": "A Mark's Camp chalet veranda above the bush",
+        "section": "exterior"
+      },
+      "68c238cba23cda3fb1ed5afc_LalibelaReserve_MarksCamp_FamilyChalet_Bathroom": {
+        "alt": "A Mark's Camp chalet bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lalibela-reserve-kichaka-lodge": {
+    "describe": {
+      "688fe9f33dce1d45ad8151ab_Lalibela_Kichaka_Livingroom": {
+        "alt": "The Kichaka Lodge lounge",
+        "section": "dining"
+      },
+      "688fe9f9629a2784c13325be_Lalibela_Kichaka_Livingroom2": {
+        "alt": "The lounge and fireplace at Kichaka Lodge",
+        "section": "dining"
+      },
+      "688fe9fb06f1da9ab67c50d1_Lalibela_Kichaka_Livingroom3": {
+        "alt": "The Kichaka Lodge dining room and wine wall",
+        "section": "dining"
+      },
+      "688fe9feeba9abb3d747fa49_Lalibela_Kichaka_Bedroom": {
+        "alt": "A Kichaka Lodge suite bedroom",
+        "section": "rooms"
+      },
+      "688fea005c4238978404ed10_Lalibela_Kichaka_Pool": {
+        "alt": "A Kichaka suite deck and plunge pool among the trees",
+        "section": "pool"
+      },
+      "688fea0293d0d395be11cf08_Lalibela_Kichaka_Bathroom": {
+        "alt": "A Kichaka suite bathroom",
+        "section": "rooms"
+      },
+      "68c22fac5458cf0ec3153eaa_LalibelaReserve_Kichaka_WaterFacingSuite_Exterior": {
+        "alt": "A Kichaka suite deck and plunge pool facing the waterhole",
+        "section": "pool"
+      },
+      "68c22fb0516b464d431b3b0d_LalibelaReserve_Kichaka_WaterFacingSuite_Interior": {
+        "alt": "A Kichaka suite lounge open to its deck and pool",
+        "section": "rooms"
+      },
+      "68c22fb344bd3e87f3e87400_LalibelaReserve_Kichaka_WaterFacingSuite_Exterior2": {
+        "alt": "A Kichaka suite deck and plunge pool looking over the waterhole and hills",
+        "section": "pool"
+      },
+      "68c22fbaf410b23dc7912118_LalibelaReserve_Kichaka_WaterFacingSuite_Bathroom": {
+        "alt": "A Kichaka suite bathroom",
+        "section": "rooms"
+      },
+      "68c22fec05c4abe7abfb3196_LalibelaReserve_Kichaka_BushFacingSuite_Interior": {
+        "alt": "A Kichaka suite bedroom opening to its deck",
+        "section": "rooms"
+      },
+      "68c22ff5dcac5e3e3e04f5db_LalibelaReserve_Kichaka_BushFacingSuite_Exterior": {
+        "alt": "A Kichaka suite deck and plunge pool in the trees",
+        "section": "pool"
+      },
+      "68c22ff8e7664349e4a8aeb1_LalibelaReserve_Kichaka_BushFacingSuite_Bedroom": {
+        "alt": "A Kichaka suite bedroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lalibela-reserve-lentaba-lodge": {
+    "describe": {
+      "688fedad13351d8f49ae29ed_Lalibela_Lentaba_Aerial": {
+        "alt": "Lentaba Lodge in the green hills of Lalibela from the air",
+        "section": "exterior"
+      },
+      "688fee5d579ab2c38f5fe219_Lalibela_Lentaba_Diningroom%20(1)": {
+        "alt": "The Lentaba Lodge dining room set for dinner",
+        "section": "dining"
+      },
+      "688fedc0c4cd195a472b7849_Lalibela_Lentaba_Bedroom": {
+        "alt": "A Lentaba chalet bedroom",
+        "section": "rooms"
+      },
+      "688fedc306978f9a77e14857_Lalibela_Lentaba_Pool": {
+        "alt": "The Lentaba Lodge pool on the hillside",
+        "section": "pool"
+      },
+      "688fedc514a2a015107ac67b_Lalibela_Lentaba_Bathroom": {
+        "alt": "A Lentaba chalet bathroom with a window onto the valley",
+        "section": "rooms"
+      },
+      "68c22c7222171894d3fc72bc_classic_room_at_lentaba_lodge_2": {
+        "alt": "A Lentaba chalet bedroom looking out to the valley",
+        "section": "rooms"
+      },
+      "68c22c7b79015061a65cfaa5_classic_room_at_lentaba_lodge1": {
+        "alt": "A Lentaba chalet bedroom opening onto its deck and the hills",
+        "section": "rooms"
+      },
+      "68c22c85c120bf9b2723c55d_lentaba_classic_room_31": {
+        "alt": "A Lentaba chalet deck above the valley",
+        "section": "rooms"
+      },
+      "68c22c85e51aad3c7ba16733_lentaba_classic_bathroom_1": {
+        "alt": "A Lentaba chalet bathroom",
+        "section": "rooms"
+      },
+      "68c22e16d1949f0985631b7a_lentaba_luxury_room_2": {
+        "alt": "A Lentaba chalet bedroom opening onto its deck and the valley",
+        "section": "rooms"
+      },
+      "68c22e1eb1d5cfb99ce310ec_lentaba_luxury_room_deck2": {
+        "alt": "A Lentaba chalet deck above the game rich valley",
+        "section": "exterior"
+      },
+      "68c22e2f70a8ebff5751e734_bathroom_in_luxury_suite_at_lentaba_lodge_-__lalibela_game_reserve": {
+        "alt": "A Lentaba chalet bathroom with a view of the hills",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lalibela-reserve-inzolo-lodge": {
+    "describe": {
+      "688fe8f7f86eae61565d1bb3_Lalibela_Inzolo_Aerial2": {
+        "alt": "An Inzolo suite and its pool from above in the bush",
+        "section": "pool"
+      },
+      "688fe8fbc3a40ec8b92e424f_Lalibela_Inzolo_Aerial": {
+        "alt": "Inzolo Lodge in its quiet valley below the cliffs, Lalibela",
+        "section": "exterior"
+      },
+      "688fe8ffb26f26166bb2792c_Lalibela_Inzolo_Patio": {
+        "alt": "A suite deck at Inzolo Lodge above the valley",
+        "section": "exterior"
+      },
+      "688fe90910ca253520d320a9_Lalibela_Inzolo_Bedroom": {
+        "alt": "An Inzolo suite bedroom",
+        "section": "rooms"
+      },
+      "688fe90e5b562db6bb680638_Lalibela_Inzolo_Livingroom": {
+        "alt": "The Inzolo Lodge lounge",
+        "section": "dining"
+      },
+      "68c235e6f60a8e254a48e72e_LalibelaReserve_InzoloLodge_LuxuryChalet_Patio": {
+        "alt": "An Inzolo suite opening to its deck at night",
+        "section": "rooms"
+      },
+      "68c235f62b7952f8b5cf77b7_LalibelaReserve_InzoloLodge_LuxuryChalet_Bedroom2": {
+        "alt": "An Inzolo suite bedroom opening to its deck and the valley",
+        "section": "rooms"
+      },
+      "68c235f9110b28f925a236e4_LalibelaReserve_InzoloLodge_LuxuryChalet_Bedroom": {
+        "alt": "An Inzolo suite bedroom",
+        "section": "rooms"
+      },
+      "68c235fb790f305f02f4d8d0_LalibelaReserve_InzoloLodge_LuxuryChalet_View": {
+        "alt": "An Inzolo suite deck looking out over the valley",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "lalibela-reserve-tree-tops-safari-lodge": {
+    "describe": {
+      "688fefe9f67c40b7a3b598ff_Lalibela_TreeTops_Aerial": {
+        "alt": "Tree Tops Safari Lodge and its pool from above in the forest, Lalibela",
+        "section": "exterior"
+      },
+      "688feff28f1be3bee992452c_Lalibela_TreeTops_Bedroom": {
+        "alt": "A Tree Tops tented suite",
+        "section": "rooms"
+      },
+      "688feff2ffd5a1b246206432_Lalibela_TreeTops_Pool": {
+        "alt": "The Tree Tops pool deck in the sun",
+        "section": "pool"
+      },
+      "688feff276417cc8ac6ee4cc_Lalibela_TreeTops_Patio": {
+        "alt": "The Tree Tops main deck under the trees above the valley",
+        "section": "exterior"
+      },
+      "688feff2cad39483c4f9321c_Lalibela_TreeTops_Bar": {
+        "alt": "The Tree Tops bar",
+        "section": "dining"
+      },
+      "68c23190027a15f8d13e96ef_LalibelaReserve_TreetopsSafariLodge_View": {
+        "alt": "A Tree Tops suite deck looking out over the forest valley",
+        "section": "exterior"
+      },
+      "68c2319b398347ad60181611_LalibelaReserve_TreetopsSafariLodge_Exterior": {
+        "alt": "A Tree Tops tented suite raised in the forest",
+        "section": "exterior"
+      },
+      "68c2319edd6f986c2f07572b_LalibelaReserve_TreetopsSafariLodge_Bedroom": {
+        "alt": "A Tree Tops tented suite bedroom",
+        "section": "rooms"
+      },
+      "68c231a376ac4a32172b4eac_LalibelaReserve_TreetopsSafariLodge_Bedroom2": {
+        "alt": "A Tree Tops tented suite lounge",
+        "section": "rooms"
+      },
+      "68c231a6476ced96f8997cb0_LalibelaReserve_TreetopsSafariLodge_Bathroom": {
+        "alt": "A Tree Tops suite bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "lalibela-reserve-mills-manor-residence": {
+    "describe": {
+      "688fec15b9efd80f80a9e240_Lalibela_MillsManor_Aerial": {
+        "alt": "Mills Manor and its gardens from above, Lalibela",
+        "section": "exterior"
+      },
+      "688fec1df24d1d18757823b6_Lalibela_MillsManor_Bedroom": {
+        "alt": "A Mills Manor bedroom opening onto the garden",
+        "section": "rooms"
+      },
+      "688fec1f128cc445e989f97c_Lalibela_MillsManor_Bedroom2": {
+        "alt": "A Mills Manor bedroom",
+        "section": "rooms"
+      },
+      "688fec214dc52340eecc2759_Lalibela_MillsManor_Bedroom3": {
+        "alt": "A Mills Manor bedroom",
+        "section": "rooms"
+      },
+      "688fec258b894497a0dfee29_Lalibela_MillsManor_Pool": {
+        "alt": "The Mills Manor pool and terrace",
+        "section": "pool"
+      },
+      "688fec2877516719c3de25b0_Lalibela_MillsManor_Bathroom": {
+        "alt": "A Mills Manor bathroom",
+        "section": "rooms"
+      },
+      "68c2341dffdad795ac86b8bf_LalibelaReserve_MillsManor_Bedroom": {
+        "alt": "A Mills Manor bedroom",
+        "section": "rooms"
+      },
+      "68c23426804a059c3db9db44_LalibelaReserve_MillsManor_View": {
+        "alt": "A Mills Manor sitting room open to the terrace and the bush",
+        "section": "rooms"
+      },
+      "68c2342e6696296e4944240e_LalibelaReserve_MillsManor_Entrance": {
+        "alt": "The garden walk and pergola at Mills Manor",
+        "section": "exterior"
+      },
+      "68c2343007e28150fa59f1bc_LalibelaReserve_MillsManor_Bathroom": {
+        "alt": "A Mills Manor bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "tswalu-reserve": {
+    "describe": {
+      "da29b879e_b8e57bff0_67e2fb586fb457d27739577c_tswalu": {
+        "alt": "Loapi lit at dusk below the red Kalahari dunes, Tswalu",
+        "section": "exterior"
+      },
+      "278cb0feb_33a5ad5db_68883d25f7d080537b1869bd_Loapi_20Lounge_20at_20Dusk_20-_20Andrew_20Morgan": {
+        "alt": "A Loapi lounge with glass walls onto the Kalahari",
+        "section": "rooms"
+      },
+      "325270122_32895f822_68883d234e7e5c66e342fb34_Loapi_20bedroom_202_20-_20Andrew_20Morgan": {
+        "alt": "A Loapi bedroom opening to the Kalahari",
+        "section": "rooms"
+      },
+      "f106ad525_152fa0e24_68883d30382be55d549a9548_Tswalu_20Kalahari_20-_20Loapi_20deck": {
+        "alt": "A Loapi deck and day bed facing the Korannaberg in the late sun",
+        "section": "exterior"
+      },
+      "9036ae6ff_7b2c1dc64_68883843e7bd92c984b44f02_Tswalu_Motse_Patio": {
+        "alt": "The shaded lounge at The Motse",
+        "section": "dining"
+      },
+      "4285c4934_adc3640b2_688838434a395ce3ebabd100_Tswalu_Motse_Daybed": {
+        "alt": "An outdoor lounge at The Motse on the red sand",
+        "section": "exterior"
+      },
+      "338971afe_741225972_688838432ac356e47a556d3f_Tswalu_Motse_Pool": {
+        "alt": "The pool deck at The Motse above the Kalahari",
+        "section": "pool"
+      },
+      "bb0da11de_e0c313dbc_68883832cdbfec3e1e45a219_Tswalu_Motse_Suite": {
+        "alt": "A Motse suite bedroom",
+        "section": "rooms"
+      },
+      "0b90d4c5c_a10995e49_6888384377fcbd5f339e451d_Tswalu_Motse_Walkway": {
+        "alt": "A walkway lit by lanterns at The Motse at dusk",
+        "section": "exterior"
+      },
+      "d0b042dd0_1893e5640_688836dac4bbad742f33ce64_Tswalu_20Kalahari_20-_20Tarkuni": {
+        "alt": "Tarkuni and its boma from above in the Kalahari",
+        "section": "exterior"
+      }
+    },
+    "extra": []
+  },
+  "tswalu-reserve-motse": {
+    "describe": {
+      "motse-suite": {
+        "alt": "A Motse suite bedroom",
+        "section": "rooms"
+      },
+      "motse-patio": {
+        "alt": "The shaded lounge at The Motse",
+        "section": "dining"
+      },
+      "motse-daybed": {
+        "alt": "An outdoor lounge at The Motse on the red sand",
+        "section": "exterior"
+      },
+      "motse-pool": {
+        "alt": "The pool deck at The Motse above the Kalahari",
+        "section": "pool"
+      },
+      "motse-walkway": {
+        "alt": "A walkway lit by lanterns at The Motse at dusk",
+        "section": "exterior"
+      },
+      "motse-bathroom": {
+        "alt": "A Motse suite bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
   }
 }

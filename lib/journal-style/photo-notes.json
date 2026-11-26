@@ -8713,5 +8713,58 @@
       }
     },
     "extra": []
+  },
+  "lion-sands": {
+    "describe": {
+      "ce289d7f4_7a7e962d3_67b4da19a458b2047e2bd54c_lion-sands": {
+        "alt": "The boma deck lit with lanterns and a fire at dusk at Lion Sands",
+        "section": "dining"
+      },
+      "ae53a68fb_bb7b63fcc_6833b696b37e3f9a4432c9bb_Akita_20Female_20Kruger": {
+        "alt": "A leopard resting on a branch in the Sabi Sand",
+        "section": "experiences"
+      },
+      "a19e01159_46336d9b2_684827d2599f8a52c4468548_Lion_20Sands_20_River_20Lodge_3__20Luxury_20Suite_Twin_.": {
+        "alt": "A suite bedroom under a thatched roof at Lion Sands River Lodge",
+        "section": "rooms"
+      },
+      "681249520_e60be0071_6833b6168ae6ec31a572a5e2_Lion_20Sands_Safari_4_Game_20Drive-3": {
+        "alt": "A male lion walking ahead of a game drive vehicle in golden dust at Lion Sands",
+        "section": "experiences"
+      },
+      "597868105_86ad58e9e_6833b86790c60fba011752cf_Tinyeletei_20Treehouse_20_1_": {
+        "alt": "Two guests on a suite deck looking over the bush to the Sabie River at Lion Sands",
+        "section": "exterior"
+      },
+      "9880cb4f3_e5bfb4e83_6833b651d24c86c11207d288_Lion_20Sands_Safari_4_Bush_20Walk-3": {
+        "alt": "A guided bush walk crossing the Sabie River at Lion Sands",
+        "section": "experiences"
+      },
+      "966a95728_f2bc00c0f_67b37380e362896dfa08c232_andrew-liu-EunFGVJLPmQ-unsplash": {
+        "alt": "A white rhino and her calf in the grass at Lion Sands",
+        "section": "experiences"
+      },
+      "b378c4d12_02cdc59a7_684827dfba5a025b97ec003f_Lion_20Sands_River_Lodge_Facilities_Guest_20Dining_20Ar.": {
+        "alt": "The River Lodge pool and dining pavilion lit at dusk at Lion Sands",
+        "section": "pool"
+      },
+      "678f3c9d3_2e6110884_6833b5e28ae6ec31a5728604_IVORY_20LODGE_20GAME_20DRIVE_20BUSH_20STOP_20_1_": {
+        "alt": "A bush breakfast among the granite boulders beside a game drive vehicle at Lion Sands",
+        "section": "dining"
+      },
+      "654b10460_5f059b176_683457d03b1765fb446b403a_Lion_20Sands_20River_20Lodge_20Fire_20deck-1": {
+        "alt": "The sunken boma with its fire under the trees at night at Lion Sands",
+        "section": "dining"
+      },
+      "724c1f96b_41a8d97bf_6833b683207bd25151e1216d_Akita_20females_20cub_205": {
+        "alt": "A leopard cub on the rocks in the Sabi Sand",
+        "section": "experiences"
+      },
+      "6848271b4fafe5adcc668e9c_Lion%20Sands%20River%20Lodge%20Superior%20Luxury%20suite%20Room%20exterior%20(1)": {
+        "alt": "Guests on the deck of the Tinyeleti treehouse among the trees at Lion Sands",
+        "section": "exterior"
+      }
+    },
+    "extra": []
   }
 }

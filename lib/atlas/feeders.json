@@ -28,7 +28,8 @@
       "/booking/property/[slug]": "Booking Live step, reached from a stay.",
       "/booking/quote/[id]": "A traveller's own quote, private.",
       "/journal-style/samples/[variant]/[slug]": "Design samples, not public records.",
-      "/journal-style/stays/[slug]": "Design samples, not public records."
+      "/journal-style/stays/[slug]": "Design samples, not public records.",
+      "/journal-style/safaris/[reserve]": "The locked design of a reserve page served at /safaris/<slug> by a rewrite; the reserve itself is fed by its own route."
     },
     "sections": {
       "about": "House pages.",

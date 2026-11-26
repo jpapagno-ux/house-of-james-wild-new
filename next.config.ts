@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 import redirects from "./redirects.json";
 import journalPages from "./lib/journal-style/pages.json";
+import journalReserves from "./lib/journal-style/reserves.json";
 
 // Redirects: every old wildearthstays.com path maps 1:1 (permanent 301). The
 // list grows in step 8 from the live site's sitemap (every stay and region).
@@ -23,8 +24,11 @@ const isProd = process.env.VERCEL_ENV === "production" && process.env.NEXT_PUBLI
 //  • flag on: /stays/<slug> shows the new page (on a preview, ?journal=0 shows the old one for a before and after).
 const journalOn = process.env.NEXT_PUBLIC_JOURNAL_STYLE === "on";
 const journalSwitch = process.env.VERCEL_ENV !== "production";
-const journalRewrites = (journalPages.stays as string[]).flatMap((slug) => {
-  const rule = { source: `/stays/${slug}`, destination: `/journal-style/stays/${slug}` };
+// Stage 10: reserves on the locked template (lib/journal-style/reserves.json) follow the same switch at /safaris/<slug>.
+const journalRewrites = [
+  ...(journalPages.stays as string[]).map((slug) => ({ source: `/stays/${slug}`, destination: `/journal-style/stays/${slug}` })),
+  ...(journalReserves.reserves as string[]).map((slug) => ({ source: `/safaris/${slug}`, destination: `/journal-style/safaris/${slug}` })),
+].flatMap((rule) => {
   if (journalOn) return [journalSwitch ? { ...rule, missing: [{ type: "query" as const, key: "journal", value: "0" }] } : rule];
   return journalSwitch ? [{ ...rule, has: [{ type: "query" as const, key: "journal", value: "1" }] }] : [];
 });

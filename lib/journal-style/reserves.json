@@ -1,0 +1,34 @@
+{
+  "_note": "Stage 10 (James, 26 Nov 2026: 'proceed to stage 10 with all design requests intact. African reserves are different in that they offer unique lodges and residences combined in the reserve; let's see a sample of a reserve like Lion Sands to begin'). Reserves listed here render the locked stay template at /safaris/<slug>, with the lodges and private residences together in one section of cards in place of rooms. cards: the photograph each lodge's card leads with, chosen by eye (the place, never a room interior without a view).",
+  "reserves": [
+    "lion-sands"
+  ],
+  "cards": {
+    "lion-sands": {
+      "ivory-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ac5413a80aed9c786fbd_Lion%20Sands%20Ivory%20Lodge%20-%20Suite%20Evening%20pool%20-%20Medium.webp",
+        "alt": "An Ivory Lodge suite deck and plunge pool above the bush, Lion Sands"
+      },
+      "river-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/683457a6d17663fd14f91c3f_Lion%20Sands%20River%20Lodge%20Main%20Pool%20sunset.jpg",
+        "alt": "The River Lodge pool under the trees at sunset, Lion Sands"
+      },
+      "narina-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b1fade308a5ce663d9a7_Lion%20Sands%20Narina%20Lodge%20-%20Deck%20-%20Medium.webp",
+        "alt": "Narina Lodge raised among the trees above the Sabie River, Lion Sands"
+      },
+      "tinga-lodge": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ae88c8f2e524c466e310_Lion%20Sands%20Tinga%20Lodge%20Suite%20Private%20pool%20-%20Medium.webp",
+        "alt": "A suite pool deck at Tinga Lodge facing the sunset over the Sabie River"
+      },
+      "fish-eagle-residence": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium.webp",
+        "alt": "Fish Eagle Residence and its decks among the trees at sunset, Lion Sands"
+      },
+      "hinkwenu-residence": {
+        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a99607eac5b0eaaf15_Lion%20Sands%20Hinkwenu%20Residence10%20-%20Medium.png",
+        "alt": "The pool and veranda at Hinkwenu Residence under a red evening sky, Lion Sands"
+      }
+    }
+  }
+}

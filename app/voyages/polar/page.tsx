@@ -7,6 +7,8 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import SiteHeader from "@/components/ledger/SiteHeader";
 import JsonLd from "@/components/ledger/JsonLd";
 import FaqBlock from "@/components/ledger/FaqBlock";
+import FieldNoteSet from "@/components/field-notes/FieldNoteSet";
+import { FIELD_NOTES, POLAR_HUB_NOTES } from "@/lib/field-notes/notes";
 import { HubShell, HubSection } from "@/components/hub/Hub";
 import RouteAtlas, { type AtlasRoute } from "@/components/journey/RouteAtlas";
 import ShipCard from "@/components/ships/ShipCard";
@@ -120,6 +122,10 @@ export default function PolarPage() {
               </div>
             </div>
           </article>
+        </HubSection>
+
+        <HubSection eyebrow="From the ice" title="What Lives in Antarctica?" id="field-notes-h" more={{ label: "All wildlife", href: "/wildlife" }}>
+          <FieldNoteSet notes={POLAR_HUB_NOTES.map((id) => FIELD_NOTES[id])} />
         </HubSection>
 
         <WhiteDesertCallout />

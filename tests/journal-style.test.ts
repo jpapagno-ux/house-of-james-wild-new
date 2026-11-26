@@ -46,3 +46,24 @@ test("every template stay has a written introduction, with no dashes or Ledger w
     assert.ok(!/Ledger|STY-/.test(t), `Ledger wording in the introduction for ${slug}`);
   }
 });
+
+test("expect cards: every stay is on the template, every photograph named is described for that stay, no dashes", async () => {
+  const { readFileSync } = await import("node:fs");
+  const read = (f: string) => JSON.parse(readFileSync(new URL(`../lib/journal-style/${f}`, import.meta.url), "utf8"));
+  const list = read("template-stays.json").stays as string[];
+  const notes = read("photo-notes.json") as Record<string, { describe: Record<string, unknown>; extra: { id: string }[] } | string>;
+  type Row = { title: string; line?: string; photo?: string | null };
+  const cards = read("expect-cards.json") as Record<string, { experiences: Row[]; features: Row[]; also?: string } | string>;
+  for (const [slug, e] of Object.entries(cards)) {
+    if (typeof e !== "object") continue;
+    assert.ok(list.includes(slug), `${slug}: on the template`);
+    const n = notes[slug];
+    const rp = (read("room-photos.json") as Record<string, Record<string, { id: string }> | string>)[slug];
+    const known = new Set([...(typeof n === "object" ? [...Object.keys(n.describe), ...n.extra.map((x) => x.id.split("/").pop())] : []), ...(typeof rp === "object" ? Object.values(rp).map((x) => x.id.split("/").pop()) : [])]);
+    for (const r of [...e.experiences, ...e.features]) {
+      assert.doesNotMatch(`${r.title} ${r.line ?? ""}`, /[\u2013\u2014]/, `${slug}: ${r.title}`);
+      if (r.photo) assert.ok(known.has(r.photo), `${slug}: ${r.title} names photograph ${r.photo}, which is not described or filed as a room photograph for the stay`);
+    }
+    assert.doesNotMatch(e.also ?? "", /[\u2013\u2014]/);
+  }
+});

@@ -228,6 +228,8 @@ test("cancellation by season: the arrival's season sets the schedule, shown as d
   assert.equal(rest.freeUntil, "2027-02-08"); // 31 days before
   assert.deepEqual(rest.deadlines.map((d) => [d.from, d.to, d.penaltyBp]), [["2027-02-09", "2027-02-23", 5000], ["2027-02-24", null, 10000]]); // day 15 is 100%
   assert.equal(at("2027-03-11", "2027-03-14", "2027-02-20").freeUntil, null); // the free day has passed
+});
+
 test("single occupancy: one adult alone pays the single rate where filed; everyone else pays as before", () => {
   const base = card();
   const c = card({ rules: base.rules.map((r) => ({ ...r, singleMinor: Math.round(r.amountMinor * 0.75) })) });

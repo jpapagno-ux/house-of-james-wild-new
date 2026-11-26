@@ -27,12 +27,12 @@
         "alt": "A suite pool deck at Tinga Lodge facing the sunset over the Sabie River"
       },
       "fish-eagle-residence": {
-        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945ad2507a17702d4767a7e_Fish%20Eagle%20Residence%20-%20Drone%20view%201%20-%20July%202025%20-%20Medium.webp",
-        "alt": "Fish Eagle Residence and its decks among the trees at sunset, Lion Sands"
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/lion-sands/fish-eagle-pool-sunset",
+        "alt": "The Fish Eagle lap pool at sunset under the riverine trees"
       },
       "hinkwenu-residence": {
-        "url": "https://cdn.prod.website-files.com/679d1c7de0254ea4d176361b/6945b0a99607eac5b0eaaf15_Lion%20Sands%20Hinkwenu%20Residence10%20-%20Medium.png",
-        "alt": "The pool and veranda at Hinkwenu Residence under a red evening sky, Lion Sands"
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/lion-sands/hinkwenu-garden-pool",
+        "alt": "The Hinkwenu pool in its garden under the old trees, Lion Sands"
       }
     },
     "londolozi-reserve": {
@@ -93,8 +93,8 @@
         "alt": "Loapi lit at dusk below the red Kalahari dunes, Tswalu"
       },
       "tarkuni": {
-        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni-firepit",
-        "alt": "The fire pit and lounge at Tarkuni at dusk, Tswalu"
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/e_upscale/c_limit,w_2560/q_auto:good/f_jpg/wildco/south-africa/tswalu/tarkuni/tarkuni",
+        "alt": "Tarkuni and its boma from above in the Kalahari, Tswalu"
       }
     }
   },
@@ -123,14 +123,63 @@
       "mills-manor-residence"
     ],
     "tswalu-reserve": [
-      "motse"
+      "motse",
+      "loapi",
+      "tarkuni"
     ]
   },
-  "rateHeld": {
-    "lalibela-reserve/mills-manor-residence": "Filed as US$4,700 per person per night for exclusive use of a five bedroom house; whether that is per person or for the whole house is to confirm with Lalibela before it is shown (26 Nov 2026)."
-  },
-  "_held": {
-    "tswalu-reserve/loapi": "Held: its filed description is written in James's first person ('unlike anywhere else I've stayed'); James to confirm he stayed before the page goes up.",
-    "tswalu-reserve/tarkuni": "Held: its filed description says 'The moment I walked through the doors of Tarkuni'; James to confirm before the page goes up."
+  "_copy": "copy: the page's own words for a lodge where the filed text cannot be printed as it stands (written as James in the first person, or a quote James did not give). Keyed <reserve>/<lodge>; intro and/or description replace the filed ones on the lodge page and its card. Fix the library record too.",
+  "copy": {
+    "tswalu-reserve/loapi": {
+      "intro": "Six tented homes, each alone on the Kalahari with its own chef and butler.",
+      "description": "Loapi is six tented homes spread far apart on the land at Tswalu, so you see no one unless you choose to. Each has canvas walls open to the Kalahari, a deep deck, a plunge pool, a fire pit and its own kitchen, with a chef and butler for your stay alone.\n\nThe camp runs on solar power with no light pollution, so the nights are dark and full of stars. Days are led by your own guide and vehicle: desert wildlife at first light, San rock art, and pangolin tracking with a conservationist."
+    },
+    "tswalu-reserve/tarkuni": {
+      "intro": "A homestead taken whole, with five suites and your own team.",
+      "description": "Tarkuni is a homestead at Tswalu taken by one family or group, with five en suite bedrooms for up to ten guests and no shared spaces. A chef, butler and guide look after you alone, with a plunge pool, a fire pit boma, a spa treatment room and wide indoor and outdoor living.\n\nEach day is planned your way, with a private guide and vehicle: tracking pangolin, aardvark and cheetah, riding over the dunes, San rock art, stargazing from the deck or a night out at Malori."
+    },
+    "lion-sands/river-lodge": {
+      "description": "Lion Sands River Lodge sits along the Sabie River in the Sabi Sand Game Reserve, with eighteen rooms and suites for a personal safari surrounded by wilderness.\n\nWatch the Big Five from your private deck, set out on guided bush walks and end the day at a boma dinner under the stars, with the river below the lodge."
+    },
+    "lion-sands/hinkwenu-residence": {
+      "intro": "A two bedroom home at Tinga Lodge, taken whole, with its own pool and team.",
+      "description": "Hinkwenu Residence is an exclusive use home at Tinga Lodge on the Sabie River at Lion Sands, with two en suite bedrooms for up to six guests: four adults and two children. It has its own pool and deck, a covered veranda for meals and a living room under high thatch.\n\nA villa concierge, chef, butler, housekeeper and an FGASA accredited field guide and tracker look after the house alone, with a private vehicle for two game drives a day. Children of all ages are welcome, with Mack & Madi activities and childminding included.",
+      "units": [
+        "Two en suite bedrooms, sleeps six (four adults, two children)"
+      ],
+      "rooms": [
+        {
+          "name": "The Residence, exclusive use",
+          "capacity": 6,
+          "quantity": 1,
+          "beds": "2 en suite bedrooms",
+          "from": null,
+          "currency": "USD",
+          "basis": null,
+          "photos": [
+            "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/lion-sands/hinkwenu-garden-pool"
+          ]
+        }
+      ]
+    },
+    "lion-sands/fish-eagle-residence": {
+      "units": [
+        "Three en suite bedrooms, sleeps eight (six adults, two children)"
+      ],
+      "rooms": [
+        {
+          "name": "The Residence, exclusive use",
+          "capacity": 8,
+          "quantity": 1,
+          "beds": "3 en suite bedrooms",
+          "from": 16648,
+          "currency": "USD",
+          "basis": "per_night_whole_residence",
+          "photos": [
+            "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/lion-sands/fish-eagle-pool-house"
+          ]
+        }
+      ]
+    }
   }
 }

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import JournalStayPage from "@/components/journal/JournalStayPage";
 import { reserveBySlug } from "@/lib/content/reserves";
 import { JOURNAL_STYLE_ON } from "@/lib/journal-style/flag";
-import { JOURNAL_CAMPS, campRecord } from "@/lib/journal-style/stay";
+import { JOURNAL_CAMPS, campCopy, campRecord } from "@/lib/journal-style/stay";
 import { buildMetadata, fitTitle } from "@/lib/seo";
 
 // Stage 10 (James, 26 Nov 2026): a lodge or residence on a reserve on the locked stay template, served AT
@@ -15,7 +15,8 @@ export function generateStaticParams() {
 
 function find(reserveSlug: string, campSlug: string) {
   const reserve = reserveBySlug(reserveSlug);
-  const camp = reserve?.camps.find((c) => c.slug === campSlug);
+  const filed = reserve?.camps.find((c) => c.slug === campSlug);
+  const camp = filed && reserve ? campCopy(reserve.slug, filed) : undefined;
   if (!reserve || !camp || !(JOURNAL_CAMPS[reserveSlug] ?? []).includes(campSlug)) return null;
   const record = campRecord(reserveSlug, camp);
   return record?.hero ? { reserve, camp, record } : null;

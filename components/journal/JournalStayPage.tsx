@@ -39,7 +39,7 @@ import { isBuilt } from "@/lib/routes";
 import { absoluteUrl } from "@/lib/seo";
 import { graph, imageObject, lodging } from "@/lib/schema";
 import { entryNo } from "@/lib/volumes";
-import { campFeatures, day, journalStay, money, rateHeld, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
+import { campCopy, campFeatures, day, journalStay, money, rateHeld, pct, span, SECTION_LABEL, SECTION_ORDER, type SectionKey } from "@/lib/journal-style/stay";
 import { JournalDetail, JournalExperiences, JournalHero, JournalJumpRow, JournalMap, JournalOffers, JournalOverview, JournalQuestions, JournalReserve, JournalRooms, Postcard, SectionHead, StickyBar, PhotoViewer, PhotoLink, PhotoStrip, DatesBar, PickRoom, RequestForm } from "./journal-style";
 import type { OfferRow } from "./JournalOffers";
 import { SampleBody, SampleExpect, SampleHero, SampleSwitch, type Variant } from "./samples/SampleStayPage";
@@ -123,11 +123,12 @@ export default function JournalStayPage({ slug, sample, preview = false, reserve
     const from = froms.length ? Math.min(...froms) : null;
     const suites = c.rooms.reduce((a, m) => a + (m.quantity ?? 0), 0);
     const shot = cardShots[c.slug] ?? (c.hero ? { url: c.hero, alt: `${c.name} at ${s.name}` } : null);
-    const lede = undash((c.description || c.intro).replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/)[0] ?? "") || null;
+    const cc = campCopy(reserve.slug, c);
+    const lede = undash((cc.description || cc.intro).replace(/\s+/g, " ").trim().split(/(?<=[.!?])\s/)[0] ?? "") || null;
     return {
       name: c.name, sleeps: null, list: from ? usd(from) : null, now: null, basis: c.kind === "residence" ? "per night, the whole residence" : "per person, per night",
       facts: [KIND_LABEL[c.kind], ...(c.kind === "residence" ? ["Exclusive use"] : suites ? [`${suites} suites`] : c.units[0] ? [c.units[0]] : [])],
-      lede, features: campFeatures(c.features).slice(0, 3), flag: mark ? `James stayed ${mark.date.slice(0, 4)}` : undefined, photo: shot,
+      lede, features: campFeatures(c.features).slice(0, 3), flag: mark ? `James stayed${mark.date ? ` ${mark.date.slice(0, 4)}` : ""}` : undefined, photo: shot,
       action: href ? <Link href={href} className="ledger-btn-ghost">Enter {c.name}</Link> : <a href="#reserve" className="ledger-btn-ghost">Ask about {c.name}</a>,
     };
   }) : [];

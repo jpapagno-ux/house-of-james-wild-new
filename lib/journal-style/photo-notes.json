@@ -9042,7 +9042,48 @@
         "section": "rooms"
       }
     },
-    "extra": []
+    "extra": [
+      {
+        "id": "jwco/stays/lion-sands/fish-eagle-pool-sunset",
+        "alt": "The Fish Eagle lap pool at sunset under the riverine trees",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/lion-sands/fish-eagle-exterior-bush",
+        "alt": "Fish Eagle Residence and its decks in the bush above the Sabie River",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/lion-sands/fish-eagle-sabie-sunset",
+        "alt": "The Sabie River at sunset from the air, Lion Sands",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/lion-sands/fish-eagle-pool-house",
+        "alt": "The Fish Eagle Residence living pavilion and its lap pool",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/lion-sands/fish-eagle-pool-above",
+        "alt": "A guest in the Fish Eagle lap pool among the trees from above",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/lion-sands/fish-eagle-private-arrival",
+        "alt": "The private arrival shelter at Fish Eagle Residence with its game drive vehicle",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/lion-sands/fish-eagle-bedroom-view",
+        "alt": "A Fish Eagle bedroom open to its deck and the trees",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/lion-sands/fish-eagle-lounge",
+        "alt": "The Fish Eagle Residence lounge",
+        "section": "dining"
+      }
+    ]
   },
   "lion-sands-hinkwenu-residence": {
     "describe": {
@@ -9075,7 +9116,48 @@
         "section": "exterior"
       }
     },
-    "extra": []
+    "extra": [
+      {
+        "id": "jwco/stays/lion-sands/hinkwenu-garden-pool",
+        "alt": "The Hinkwenu pool in its garden under the old trees, Lion Sands",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/lion-sands/hinkwenu-pool-sala",
+        "alt": "The Hinkwenu pool and shaded sala in the garden, Lion Sands",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/lion-sands/hinkwenu-leopard",
+        "alt": "A leopard resting on a fallen tree near Hinkwenu, Lion Sands",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/lion-sands/hinkwenu-veranda-dining",
+        "alt": "The covered veranda dining table at Hinkwenu, the pool and garden beyond",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/lion-sands/hinkwenu-pool-dusk",
+        "alt": "The Hinkwenu Residence pool and veranda lit at dusk, Lion Sands",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/lion-sands/hinkwenu-game-drive-leopard",
+        "alt": "A leopard walking the road ahead of a game drive vehicle, Lion Sands",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/lion-sands/hinkwenu-living-room",
+        "alt": "The Hinkwenu living room under its high thatch",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/lion-sands/hinkwenu-entrance-night",
+        "alt": "The Hinkwenu entrance lit by lanterns at night",
+        "section": "exterior"
+      }
+    ]
   },
   "londolozi-reserve": {
     "describe": {
@@ -15161,6 +15243,64 @@
       },
       "2bce4d695_75d297f2b_69b279710bdb4b6b4f614be9_Wolwedans-Dune-Camp-17": {
         "alt": "A Dune Camp tent bed facing the dunes",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "tswalu-reserve-loapi": {
+    "describe": {
+      "loapi-firepit-at-dusk": {
+        "alt": "Loapi lit at dusk below the red Kalahari dunes, Tswalu",
+        "section": "exterior"
+      },
+      "loapi-lounge-at-dusk": {
+        "alt": "A Loapi lounge with glass walls onto the Kalahari at dusk",
+        "section": "rooms"
+      },
+      "loapi-deck": {
+        "alt": "A Loapi deck and day bed facing the Korannaberg in the late sun",
+        "section": "exterior"
+      },
+      "loapi-indoor-dining": {
+        "alt": "The kitchen and dining room of a Loapi tented home",
+        "section": "dining"
+      },
+      "loapi-bedroom": {
+        "alt": "A Loapi bedroom opening to the Kalahari",
+        "section": "rooms"
+      },
+      "loapi-bathroom": {
+        "alt": "A Loapi bathroom",
+        "section": "rooms"
+      }
+    },
+    "extra": []
+  },
+  "tswalu-reserve-tarkuni": {
+    "describe": {
+      "tarkuni": {
+        "alt": "Tarkuni and its boma from above in the Kalahari, Tswalu",
+        "section": "exterior"
+      },
+      "tarkuni-boma-sunset": {
+        "alt": "Dinner set by the fire in the Tarkuni boma at dusk",
+        "section": "dining"
+      },
+      "tarkuni-deck": {
+        "alt": "Guests on the Tarkuni deck in the late sun",
+        "section": "exterior"
+      },
+      "tarkuni-firepit": {
+        "alt": "The Tarkuni fire pit and lounge at dusk",
+        "section": "exterior"
+      },
+      "tarkuni-pool": {
+        "alt": "The Tarkuni pool below the hills at sunset",
+        "section": "pool"
+      },
+      "tarkuni-suite": {
+        "alt": "A Tarkuni bedroom",
         "section": "rooms"
       }
     },

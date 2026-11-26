@@ -5726,6 +5726,430 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shipwreck-lodge/cabin-sunset",
         "alt": "A Shipwreck Lodge cabin at sunset on the Skeleton Coast"
       }
+    ],
+    "stay:kwando-4-rivers": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/4-rivers/camp-river-air",
+        "alt": "4 Rivers above the Tsum Tsum River at first light, northern Okavango Delta"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/4-rivers/camp-sunset-air",
+        "alt": "The 4 Rivers tented suites along the Tsum Tsum River at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/4-rivers/mokoro-sunrise",
+        "alt": "A mokoro poled across the still water at sunrise, 4 Rivers"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/4-rivers/elephants-dusk",
+        "alt": "Two elephants sparring against a pink sky, Kwara Private Concession"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/4-rivers/wild-dog",
+        "alt": "A wild dog resting in the long grass near 4 Rivers"
+      }
+    ],
+    "stay:kwando-kwara": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/kwara/camp-fire-dusk",
+        "alt": "Kwara Camp's main tent and fire at dusk under the trees"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/kwara/boat-sunset",
+        "alt": "A boat in silhouette on the Kwara lagoon at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/kwara/leopard-cub",
+        "alt": "A leopard carrying her cub through the grass at Kwara"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/kwara/mokoro",
+        "alt": "A mokoro on the Kwara lagoon under a clear sky"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/kwara/wild-dogs-water",
+        "alt": "Wild dogs splashing through the shallows past a game drive at Kwara"
+      }
+    ],
+    "stay:kwando-lagoon": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lagoon/camp-river",
+        "alt": "Lagoon Camp in the trees on the bank of the Kwando River"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lagoon/river-sunset",
+        "alt": "The Kwando River floodplain at sunset beside Lagoon Camp"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lagoon/elephant-camp",
+        "alt": "An elephant walking past Lagoon Camp"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lagoon/lions-camp",
+        "alt": "Lionesses and cubs crossing the plain before Lagoon Camp"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lagoon/lechwe",
+        "alt": "A lechwe leaping through the floodplain, Kwando concession"
+      }
+    ],
+    "stay:kwando-lebala": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lebala/camp-dusk",
+        "alt": "Lebala Camp lit at dusk above the marsh"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lebala/elephants-camp",
+        "alt": "Elephants walking past the Lebala tents"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lebala/cheetah",
+        "alt": "A cheetah on a termite mound before Lebala Camp"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lebala/leopard",
+        "alt": "A leopard running through the grass, Kwando concession"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/lebala/night-sky",
+        "alt": "A guide's spotlight under the Milky Way at Lebala"
+      }
+    ],
+    "stay:kwando-mma-dinare": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/mma-dinare/delta-air",
+        "alt": "Mma Dinare in the floodplains of the Gomoti River from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/mma-dinare/deck-sunrise",
+        "alt": "A guest on the Mma Dinare walkway at sunrise over the floodplain"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/mma-dinare/lions-water",
+        "alt": "A pride of lions by the water near Mma Dinare"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/mma-dinare/walk-elephants",
+        "alt": "Guests on foot watching elephants cross the water, Dinare"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/mma-dinare/buffalo",
+        "alt": "Buffalo grazing below the palms at dusk, Dinare Private Reserve"
+      }
+    ],
+    "stay:kwando-moremi-crossing": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/moremi-crossing/camp-air",
+        "alt": "Moremi Crossing on Ntswi Island beside the Boro River from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/moremi-crossing/camp-water",
+        "alt": "The Moremi Crossing main area across the water at sunrise"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/moremi-crossing/elephant-water",
+        "alt": "An elephant in the floodwater under a pink sky, Boro River"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/moremi-crossing/mokoro-camp",
+        "alt": "A mokoro poled past Moremi Crossing"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/moremi-crossing/leopard",
+        "alt": "A leopard in the golden grass near Chief's Island"
+      }
+    ],
+    "stay:kwando-nxai-pan": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/nxai-pan/elephants-waterhole",
+        "alt": "Elephants at the Nxai Pan waterhole at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/nxai-pan/lodge-stars",
+        "alt": "Nxai Pan Camp beneath the Milky Way"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/nxai-pan/baines-baobabs",
+        "alt": "Guests beneath Baines' Baobabs on the edge of the salt pan"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/nxai-pan/lodge-fire",
+        "alt": "Nxai Pan Camp and its fire under a deep blue sky at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/nxai-pan/zebras-drive",
+        "alt": "Zebras crossing the road ahead of a game drive, Nxai Pan"
+      }
+    ],
+    "stay:kwando-pom-pom": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/pom-pom/lagoon-sunset",
+        "alt": "Pom Pom Lagoon mirroring the clouds at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/pom-pom/camp-air",
+        "alt": "Pom Pom Camp on the edge of the lagoon from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/pom-pom/mokoro-sunset",
+        "alt": "A poler and his mokoro in the reeds at sunset, Pom Pom"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/pom-pom/leopard",
+        "alt": "A leopard on a termite mound, Pom Pom Private Concession"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/pom-pom/wild-dogs",
+        "alt": "Wild dogs beside a Pom Pom game drive"
+      }
+    ],
+    "stay:kwando-rra-dinare": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/rra-dinare/camp-buffalo",
+        "alt": "Rra Dinare beyond the grassland with a buffalo passing"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/rra-dinare/camp-air",
+        "alt": "Rra Dinare and its pool deck from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/rra-dinare/lions-buffalo",
+        "alt": "Two lions taking down a buffalo near Rra Dinare"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/rra-dinare/buffalo-herd",
+        "alt": "A buffalo herd in the golden light, Dinare Private Reserve"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/rra-dinare/mokoro",
+        "alt": "A mokoro among the lilies of the Gomoti River"
+      }
+    ],
+    "stay:kwando-splash": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/splash/lion-camp",
+        "alt": "A lion resting in the grass before the Splash tents"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/splash/enclave-fire",
+        "alt": "The Splash Enclave fire lit at dusk beneath the trees"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/splash/cheetah",
+        "alt": "A cheetah watching from the grass, Kwara Private Concession"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/splash/mokoro",
+        "alt": "Two mokoros on still water in the reeds near Splash"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/splash/wild-dogs",
+        "alt": "Wild dogs crossing ahead of a Splash game drive"
+      }
+    ],
+    "stay:kwando-tau-pan": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/tau-pan/lodge-dune",
+        "alt": "Tau Pan Camp on its dune above the Kalahari at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/tau-pan/lodge-stars",
+        "alt": "Tau Pan Camp lit beneath the Milky Way"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/tau-pan/lion-camp",
+        "alt": "A black maned Kalahari lion below Tau Pan Camp"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/kwando/tau-pan/bushman-walk",
+        "alt": "A San guide beside a grass shelter on a Bushman walk"
+      }
+    ],
+    "stay:xigera-safari-lodge": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/xigera/lodge-floodplain-air",
+        "alt": "Xigera Safari Lodge on its islands above a channel of the Okavango Delta"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/xigera/lodge-dusk",
+        "alt": "Xigera raised on stilts and lit at dusk above the floodplain"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/xigera/treehouse-stars",
+        "alt": "The Baobab Treehouse lit beneath the Milky Way"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/xigera/mokoro-lilies",
+        "alt": "A mokoro gliding through the water lilies of the Delta at Xigera"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/xigera/wild-dog-drive",
+        "alt": "A wild dog running past a Xigera game drive among the palms"
+      }
+    ],
+    "stay:leeu-estates": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-estates/pool-lawn",
+        "alt": "A Leeu Estates pool and lawn facing the mountains"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-estates/pool-mountains",
+        "alt": "A Leeu Estates pool beneath the Franschhoek mountains"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-estates/terrace-garden",
+        "alt": "A Leeu Estates terrace and lawn in the late afternoon sun"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-estates/cottage-garden",
+        "alt": "A Cape Dutch gabled cottage in the Leeu Estates gardens"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-estates/garden-dinner",
+        "alt": "A table set in the Leeu Estates garden at sunset"
+      }
+    ],
+    "stay:leeu-house": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-house/pool-garden",
+        "alt": "The Leeu House pool and garden"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-house/pool-terrace",
+        "alt": "The Leeu House pool terrace below the mountains"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-house/pool",
+        "alt": "The Leeu House pool with the village rooftops beyond"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/leeu/leeu-house/conservatory",
+        "alt": "The Conservatory at Leeu House"
+      }
+    ],
+    "stay:great-plains-duba-plains": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/duba-plains/camp-floodplain",
+        "alt": "Duba Plains Camp in its island of trees above the floodplain"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/duba-plains/main-deck-dusk",
+        "alt": "The Duba Plains Camp deck set for dinner under the ebony trees at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/duba-plains/deck-firepit",
+        "alt": "The Duba Plains deck and fire at sunset over the floodplain"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/duba-plains/camp-grass",
+        "alt": "Duba Plains Camp seen across the long grass of the Duba Concession"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/duba-plains/outdoor-shower",
+        "alt": "A Duba Plains suite outdoor shower over the floodplain at sunrise"
+      }
+    ],
+    "stay:mara-plains-camp-by-great-plains": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-plains/camp-dusk",
+        "alt": "Mara Plains Camp on its lawn in the riverine forest at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-plains/camp-night",
+        "alt": "Mara Plains Camp lit under a moonlit sky"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-plains/bridge",
+        "alt": "The suspension bridge across the Ntiakitiak River into Mara Plains Camp"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-plains/suite-lounge",
+        "alt": "A Mara Plains suite lounge and veranda"
+      }
+    ],
+    "stay:mara-toto-tree-camp-by-great-plains": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-toto/camp-river",
+        "alt": "Mara Toto Tree Camp hidden in the trees above the Ntiakitiak River"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-toto/walkway",
+        "alt": "Guests on the raised walkway through the forest canopy at Mara Toto"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-toto/drive-sunset",
+        "alt": "A game drive watching the sun go down over the Maasai Mara"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-toto/suite-dusk",
+        "alt": "A Mara Toto tree suite lit at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/mara-toto/deck-firepit",
+        "alt": "The Mara Toto deck and fire pit in the trees"
+      }
+    ],
+    "stay:great-plains-selinda-main-camp": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/selinda/air",
+        "alt": "Selinda Camp and its walkway above the Selinda Spillway from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/selinda/main-sunset",
+        "alt": "Selinda Camp on its stilts at sunset over the spillway"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/selinda/main-dusk",
+        "alt": "The Selinda Camp main area under thatch at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/selinda/suite-pool",
+        "alt": "A Selinda suite and its private pool facing the plains"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/selinda/lounge-view",
+        "alt": "The Selinda lounge looking out to the floodplain at sunset"
+      }
+    ],
+    "stay:great-plains-zarafa-camp": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/zarafa/lagoon-air",
+        "alt": "The Zibadianja Lagoon below Zarafa Camp from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/zarafa/firepit-dusk",
+        "alt": "The Zarafa Camp deck and fire at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/zarafa/deck-dusk",
+        "alt": "The Zarafa deck under the ebony trees at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/zarafa/dining",
+        "alt": "The Zarafa dining table facing the lagoon at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/zarafa/suite-pool",
+        "alt": "A Zarafa suite lounge opening to its deck and plunge pool"
+      }
+    ],
+    "stay:great-plains-zarafa-dhow-suite": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/dhow-suite/pool-dusk",
+        "alt": "The Dhow Suite and its pool lit at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/dhow-suite/lagoon-air",
+        "alt": "The Zibadianja Lagoon from above beside the Dhow Suite"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/dhow-suite/pontoon",
+        "alt": "Sundowners on the pontoon at sunset over the Zibadianja Lagoon"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/great-plains/dhow-suite/firepit",
+        "alt": "Sunset drinks by the fire at the Dhow Suite"
+      }
     ]
   }
 }

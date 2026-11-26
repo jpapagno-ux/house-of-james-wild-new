@@ -193,6 +193,76 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/monwana/villa-pool-sunset",
         "alt": "Sunset over the bush reflected in the Monwana Villa pool"
       }
+    },
+    {
+      "stay": "xigera-safari-lodge",
+      "name": "Xigera Family Suite",
+      "place": "Xigera, Okavango Delta",
+      "line": "Two bedrooms on stilts above the floodplain, with the Baobab Treehouse a kilometre away.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/xigera/suite-deck-channel",
+        "alt": "A Xigera suite deck above the channel"
+      }
+    },
+    {
+      "stay": "xigera-safari-lodge",
+      "name": "Xigera, the whole lodge",
+      "place": "Xigera, Okavango Delta",
+      "line": "Twelve suites on two islands, taken whole for a family or a celebration.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/xigera/lodge-floodplain-air",
+        "alt": "Xigera Safari Lodge on its islands above a channel of the Okavango Delta"
+      }
+    },
+    {
+      "stay": "great-plains-duba-plains",
+      "name": "The Duba Plains Suite",
+      "place": "Duba Plains, Okavango Delta",
+      "line": "Two bedrooms, two plunge pools and your own guide, vehicle, butler and chef.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/great-plains/duba-plains-suite/floodplain",
+        "alt": "The Duba Plains Suite in its trees on the floodplain"
+      }
+    },
+    {
+      "stay": "great-plains-selinda-main-camp",
+      "name": "The Selinda Suite",
+      "place": "Selinda Reserve, Botswana",
+      "line": "Two bedrooms and a private pool over the Selinda Spillway, taken whole.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/great-plains/selinda-suite/deck-pool",
+        "alt": "The Selinda Suite deck and pool at dusk"
+      }
+    },
+    {
+      "stay": "great-plains-zarafa-dhow-suite",
+      "name": "The Dhow Suite at Zarafa",
+      "place": "Selinda Reserve, Botswana",
+      "line": "Two bedrooms behind a Lamu door, with a plunge pool and fire pit over the lagoon.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/great-plains/dhow-suite/pool-dusk",
+        "alt": "The Dhow Suite and its pool lit at dusk"
+      }
+    },
+    {
+      "stay": "mara-plains-camp-by-great-plains",
+      "name": "The Jahazi Suite",
+      "place": "Mara Plains, Kenya",
+      "line": "Two bedrooms through Zanzibari doors, a private pool and your own guide and vehicle.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/great-plains/jahazi-suite/veranda",
+        "alt": "The Jahazi Suite veranda lit with lanterns among the trees"
+      }
+    },
+    {
+      "stay": "kwando-splash",
+      "name": "Splash Enclave",
+      "place": "Splash, Kwara Private Concession",
+      "line": "A private corner of Splash for six to ten, with its own lounge, dining, fire pit and plunge pool.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/kwando/splash/enclave-pool",
+        "alt": "The Splash Enclave pool deck"
+      }
     }
   ]
 }

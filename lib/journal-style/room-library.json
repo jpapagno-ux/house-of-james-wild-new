@@ -4452,5 +4452,993 @@
         "plungePool": false
       }
     ]
+  },
+  "kwando-4-rivers": {
+    "rooms": [
+      {
+        "name": "Tented Suite",
+        "sleeps": 2,
+        "facts": [
+          "8 tented suites",
+          "Super king double or twin"
+        ],
+        "lede": "A classic tented suite on its own raised deck over the Tsum Tsum River, with a lounge and showers inside and out.",
+        "features": [
+          "Private viewing deck",
+          "Lounge",
+          "Indoor and outdoor showers"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/4-rivers/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/4-rivers/suite-lounge",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/4-rivers/suite-deck"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-kwara": {
+    "rooms": [
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "9 suites in two camps",
+          "Kwara South 4, Kwara North 5",
+          "Adults only, 18 and over"
+        ],
+        "lede": "A suite on a forested island around the lagoon, with a ball and claw bath and air conditioning over the bed by day.",
+        "features": [
+          "Private viewing deck",
+          "Ball and claw bathtub",
+          "Indoor and outdoor showers",
+          "Air conditioning over the bed"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/kwara/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/kwara/suite-lounge",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/kwara/suite-deck-view"
+        ],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-lagoon": {
+    "rooms": [
+      {
+        "name": "Tented Suite",
+        "sleeps": 2,
+        "facts": [
+          "8 tented suites"
+        ],
+        "lede": "A tented suite on the shaded bank of the Kwando River, with a lounge and a ball and claw bath.",
+        "features": [
+          "Private viewing deck",
+          "Lounge with ceiling fan",
+          "Ball and claw bathtub",
+          "Indoor and outdoor showers"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/lagoon/suite-lounge-river",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/lagoon/suite-lounge"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-lebala": {
+    "rooms": [
+      {
+        "name": "Tented Suite",
+        "sleeps": 2,
+        "facts": [
+          "8 tented suites"
+        ],
+        "lede": "A tented suite on a raised wooden platform with mesh walls to the marsh and a ball and claw bath.",
+        "features": [
+          "Private viewing deck",
+          "Ball and claw bathtub",
+          "Indoor and outdoor showers",
+          "Writing desk"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/lebala/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/lebala/suite"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-mma-dinare": {
+    "rooms": [
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "9 suites"
+        ],
+        "lede": "A tented suite linked by wooden walkways through the riverine forest, with a deck over the floodplain.",
+        "features": [
+          "Private viewing deck",
+          "Outdoor shower",
+          "Lounge with writing desk"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/mma-dinare/suite-deck",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/mma-dinare/suite-bedroom"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-moremi-crossing": {
+    "rooms": [
+      {
+        "name": "Tented Suite",
+        "sleeps": 2,
+        "facts": [
+          "14 tented suites"
+        ],
+        "lede": "A tented suite with an elevated deck over the Boro River floodplain and an outdoor shower.",
+        "features": [
+          "Private viewing deck",
+          "Double vanity",
+          "Outdoor shower"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/moremi-crossing/suite-view",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/moremi-crossing/suite-bedroom"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Honeymoon Tent",
+        "sleeps": 2,
+        "facts": [
+          "1 honeymoon tent"
+        ],
+        "lede": "The tented suite with a romantic outdoor bathtub.",
+        "features": [
+          "Outdoor bathtub",
+          "Private viewing deck"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-nxai-pan": {
+    "rooms": [
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "8 suites"
+        ],
+        "lede": "A suite facing the open grassland, with showers inside and out.",
+        "features": [
+          "Private viewing deck",
+          "Indoor and outdoor showers",
+          "Charging station"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/nxai-pan/suite-view",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/nxai-pan/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/nxai-pan/suite-deck"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-pom-pom": {
+    "rooms": [
+      {
+        "name": "Tented Suite",
+        "sleeps": 2,
+        "facts": [
+          "8 tented suites",
+          "One with an outdoor honeymoon bath"
+        ],
+        "lede": "A canvas tent with an elevated deck over the lagoon and an outdoor shower.",
+        "features": [
+          "Private viewing deck",
+          "Outdoor shower",
+          "Lounge"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/pom-pom/suite-bedroom"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-rra-dinare": {
+    "rooms": [
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "8 suites"
+        ],
+        "lede": "A suite lining the waterway among the palms and hardwoods, with a deck and an outdoor shower.",
+        "features": [
+          "Private viewing deck",
+          "Lounge",
+          "Outdoor shower"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/rra-dinare/suite",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/rra-dinare/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/rra-dinare/suite-dusk"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "Outdoor shower"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/rra-dinare/family-suite"
+        ],
+        "plungePool": false
+      }
+    ]
+  },
+  "kwando-splash": {
+    "rooms": [
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "10 suites"
+        ],
+        "lede": "A contemporary suite on an elevated deck with showers inside and out.",
+        "features": [
+          "Private viewing deck",
+          "Lounge",
+          "Indoor and outdoor showers"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/splash/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/splash/suite-deck"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Room",
+        "sleeps": null,
+        "facts": [
+          "2 family rooms"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "Indoor and outdoor showers"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/splash/family-room",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/splash/family-room-dusk"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Splash Enclave",
+        "sleeps": 10,
+        "facts": [
+          "For groups of 6 to 10",
+          "Reserved for one group"
+        ],
+        "lede": "A private corner of Splash with its own lounge, bar, dining, fire pit and plunge pool.",
+        "features": [
+          "Own lounge and bar",
+          "Own dining",
+          "Fire pit",
+          "Plunge pool"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/splash/enclave-pool",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/splash/enclave-fire",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/splash/enclave-air"
+        ],
+        "plungePool": true
+      }
+    ]
+  },
+  "kwando-tau-pan": {
+    "rooms": [
+      {
+        "name": "Desert Suite",
+        "sleeps": 2,
+        "facts": [
+          "8 suites"
+        ],
+        "lede": "A desert room under thatch with insulated walls, a deck over the Kalahari and showers inside and out.",
+        "features": [
+          "Private viewing deck",
+          "Indoor and outdoor showers"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/tau-pan/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kwando/tau-pan/suite-deck"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suite",
+        "sleeps": null,
+        "facts": [
+          "1 family suite"
+        ],
+        "lede": null,
+        "features": [
+          "Private viewing deck",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "xigera-safari-lodge": {
+    "rooms": [
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "11 named suites",
+          "184 square metres inside and out"
+        ],
+        "lede": "Each suite is named for a tree or plant of the Delta and dressed in its own colours, raised on stilts over the floodplain.",
+        "features": [
+          "Separate lounge",
+          "Dressing room",
+          "Air conditioning",
+          "Panoramic windows to the Delta"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/xigera/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/xigera/suite-lounge",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/xigera/suite-bath"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Xigera Family Suite",
+        "sleeps": null,
+        "facts": [
+          "Two bedrooms"
+        ],
+        "lede": "Two spacious bedrooms with shared spaces for time together.",
+        "features": [
+          "Two bedrooms",
+          "Shared lounge"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "The Baobab Treehouse",
+        "sleeps": 2,
+        "facts": [
+          "One kilometre from the lodge",
+          "A guide stationed close by"
+        ],
+        "lede": "A steel baobab nearly ten metres tall: the bathroom on the first level, the bedroom on the second and an open deck on top, with a king size bed for a night under the stars.",
+        "features": [
+          "Three levels",
+          "Open air deck",
+          "Canvas walls that open entirely"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/xigera/treehouse-bed",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/xigera/treehouse-stars",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/xigera/treehouse-day"
+        ],
+        "plungePool": false
+      }
+    ]
+  },
+  "leeu-estates": {
+    "rooms": [
+      {
+        "name": "Classic Room",
+        "sleeps": 2,
+        "facts": [
+          "42 square metres",
+          "King bed or twins"
+        ],
+        "lede": "In The Manor House, Max House or Protea House, looking over the gardens, dam, orchards or vineyards to the mountains.",
+        "features": [
+          "Writing desk",
+          "Sitting area",
+          "Underfloor heating in the bathroom"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/classic-room"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Deluxe Room",
+        "sleeps": 2,
+        "facts": [
+          "55 square metres"
+        ],
+        "lede": "In The Manor House and Cellar Cottage, with views of the gardens, vineyards, mountains and village.",
+        "features": [
+          "Underfloor heating",
+          "Double vanities"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/deluxe-room"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Studio Room",
+        "sleeps": 2,
+        "facts": [
+          "63 square metres",
+          "Own terrace and fireplace"
+        ],
+        "lede": "Above Leeu Spa in The Manor House, or free standing in Pomegranate Cottage, close to the spa, gym and pool.",
+        "features": [
+          "Private terrace",
+          "Fireplace"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/studio-room",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/studio-fireplace"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Executive Suite",
+        "sleeps": 2,
+        "facts": [
+          "94 square metres"
+        ],
+        "lede": "A suite with its own lounge and fireplace in The Manor House or Max House.",
+        "features": [
+          "Separate lounge",
+          "Fireplace"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/executive-suite",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/executive-suite-lounge"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Executive Suite with Terrace",
+        "sleeps": 2,
+        "facts": [
+          "115 square metres"
+        ],
+        "lede": "A suite with its own lounge in Protea House or Cellar Cottage.",
+        "features": [
+          "Separate lounge",
+          "Terrace"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/executive-terrace"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Manor House Suite",
+        "sleeps": 2,
+        "facts": [
+          "In The Manor House"
+        ],
+        "lede": null,
+        "features": [
+          "Terrace with hot tub"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/manor-house-suite",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/manor-house-terrace"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Terroir Cottage",
+        "sleeps": null,
+        "facts": [
+          "103 square metres",
+          "Two bedrooms"
+        ],
+        "lede": "A two bedroom cottage with a private enclosed terrace, for families with young children.",
+        "features": [
+          "Private enclosed terrace",
+          "Two bedrooms"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/terroir-cottage",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/terroir-lounge"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "The Oaks",
+        "sleeps": null,
+        "facts": [
+          "A cottage"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/the-oaks",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/the-oaks-lounge"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Fynbosch Cottage",
+        "sleeps": null,
+        "facts": [
+          "A cottage"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/fynbosch-cottage",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-estates/fynbosch-lounge"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Vineyard Cottage",
+        "sleeps": null,
+        "facts": [
+          "168 square metres",
+          "Two rooms"
+        ],
+        "lede": "Two rooms and a shared lounge with a fireplace, with a terrace and private plunge pool over the vines.",
+        "features": [
+          "Private plunge pool",
+          "Fireplace",
+          "Terrace"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Cellar Cottage",
+        "sleeps": null,
+        "facts": [
+          "186 square metres"
+        ],
+        "lede": "The original cellar: an Executive Suite with Terrace and a Deluxe Room around a living room with a fireplace, two terraces and a private garden.",
+        "features": [
+          "Two terraces",
+          "Private garden",
+          "Fireplace"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Max House",
+        "sleeps": null,
+        "facts": [
+          "213 square metres"
+        ],
+        "lede": "A gabled Cape Dutch house in the vineyards: an Executive Suite, two Classic Rooms, a living room, a dining room and a kitchen for a private chef.",
+        "features": [
+          "Courtyard garden",
+          "Kitchen for a private chef",
+          "Fireplace"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Protea House",
+        "sleeps": null,
+        "facts": [
+          "A house on the estate"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "leeu-house": {
+    "rooms": [
+      {
+        "name": "Classic Room",
+        "sleeps": 2,
+        "facts": [],
+        "lede": null,
+        "features": [
+          "Marble bathroom",
+          "Underfloor heating"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-house/classic-room"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Classic Room with Terrace",
+        "sleeps": 2,
+        "facts": [
+          "Private terrace"
+        ],
+        "lede": null,
+        "features": [
+          "Private terrace",
+          "Marble bathroom"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-house/classic-terrace"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Deluxe Room",
+        "sleeps": 2,
+        "facts": [],
+        "lede": null,
+        "features": [
+          "Marble bathroom",
+          "Free standing bath or generous shower"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/leeu/leeu-house/deluxe-room"
+        ],
+        "plungePool": false
+      }
+    ]
+  },
+  "great-plains-duba-plains": {
+    "rooms": [
+      {
+        "name": "Safari Suite",
+        "sleeps": 2,
+        "facts": [
+          "5 suites"
+        ],
+        "lede": "A 1920s style tented suite on recycled railway sleepers, with its own pool, shaded sala and views across the floodplain.",
+        "features": [
+          "Private pool",
+          "Bath, indoor and outdoor showers",
+          "Professional camera and lenses to use"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/duba-plains/suite",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/duba-plains/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/duba-plains/suite-bath"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 2530,
+          "basis": "per person sharing, per night"
+        }
+      },
+      {
+        "name": "The Duba Plains Suite",
+        "sleeps": 4,
+        "facts": [
+          "Two bedrooms",
+          "Exclusive use"
+        ],
+        "lede": "A two bedroom tented suite with two plunge pools, its own butler, chef, guide and vehicle.",
+        "features": [
+          "Two plunge pools",
+          "Private guide and vehicle",
+          "Butler and chef"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/duba-plains-suite/bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/duba-plains-suite/lounge",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/duba-plains-suite/bedroom-doors"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 12145,
+          "basis": "per night, the whole suite, exclusive use"
+        }
+      }
+    ],
+    "ratesNote": "'From' rates as published by Great Plains Conservation on its own site, in US dollars. Suites are per person sharing, per night; private suites are per night for exclusive use. Read 26 Nov 2026; the house confirms the rate for your dates."
+  },
+  "mara-plains-camp-by-great-plains": {
+    "rooms": [
+      {
+        "name": "Canvas Suite",
+        "sleeps": 2,
+        "facts": [
+          "7 suites"
+        ],
+        "lede": "A canvas suite on a raised deck above the savannah, with a deep copper bath and a wood burning stove on the veranda.",
+        "features": [
+          "Deep copper bath",
+          "Wood burning stove on the veranda",
+          "Professional camera and lenses to use"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/mara-plains/suite-view",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/mara-plains/suite",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/mara-plains/suite-lounge"
+        ],
+        "plungePool": false,
+        "from": {
+          "amount": 1745,
+          "basis": "per person sharing, per night"
+        }
+      },
+      {
+        "name": "The Jahazi Suite",
+        "sleeps": 4,
+        "facts": [
+          "Two bedrooms",
+          "Exclusive use"
+        ],
+        "lede": "Two bedrooms either side of a private lounge and dining room, entered through carved Zanzibari doors, with a pool off the deck.",
+        "features": [
+          "Private pool",
+          "Brass baths",
+          "Private butler, guide and vehicle"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/jahazi-suite/bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/jahazi-suite/lounge-view",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/jahazi-suite/bedroom-two"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 8375,
+          "basis": "per night, the whole suite, exclusive use"
+        }
+      }
+    ],
+    "ratesNote": "'From' rates as published by Great Plains Conservation on its own site, in US dollars. Suites are per person sharing, per night; private suites are per night for exclusive use. Read 26 Nov 2026; the house confirms the rate for your dates."
+  },
+  "mara-toto-tree-camp-by-great-plains": {
+    "rooms": [
+      {
+        "name": "Tree Suite",
+        "sleeps": 2,
+        "facts": [
+          "4 suites",
+          "8 guests at most"
+        ],
+        "lede": "A canvas suite built into the tree canopy above the Ntiakitiak River, with a deep copper bath and its own lounge.",
+        "features": [
+          "Deep copper bath",
+          "Exercise bicycle and yoga mat",
+          "Professional camera and lenses to use"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/mara-toto/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/mara-toto/suite",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/mara-toto/suite-dusk"
+        ],
+        "plungePool": false,
+        "from": {
+          "amount": 1745,
+          "basis": "per person sharing, per night"
+        }
+      }
+    ],
+    "ratesNote": "'From' rates as published by Great Plains Conservation on its own site, in US dollars. Suites are per person sharing, per night; private suites are per night for exclusive use. Read 26 Nov 2026; the house confirms the rate for your dates."
+  },
+  "great-plains-selinda-main-camp": {
+    "rooms": [
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "3 suites"
+        ],
+        "lede": "A suite with its own open air veranda and pool over the spillway, a brass bath and art by Beverly Joubert.",
+        "features": [
+          "Private pool",
+          "Brass bath",
+          "Air conditioning over the bed"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/selinda/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/selinda/suite-pool",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/selinda/suite-bath"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 2250,
+          "basis": "per person sharing, per night"
+        }
+      },
+      {
+        "name": "The Selinda Suite",
+        "sleeps": 4,
+        "facts": [
+          "Two bedrooms",
+          "Exclusive use"
+        ],
+        "lede": "A private two bedroom suite in the style of a thatched Sangwali village, with its own pool over the spillway.",
+        "features": [
+          "Private pool",
+          "Spa treatments in the suite"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/selinda-suite/bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/selinda-suite/lounge",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/selinda-suite/deck-pool"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 10800,
+          "basis": "per night, the whole suite, exclusive use"
+        }
+      }
+    ],
+    "ratesNote": "'From' rates as published by Great Plains Conservation on its own site, in US dollars. Suites are per person sharing, per night; private suites are per night for exclusive use. Read 26 Nov 2026; the house confirms the rate for your dates."
+  },
+  "great-plains-zarafa-camp": {
+    "rooms": [
+      {
+        "name": "Tented Suite",
+        "sleeps": 2,
+        "facts": [
+          "4 suites"
+        ],
+        "lede": "A tented suite over the Zibadianja Lagoon with a copper bath, a plunge pool and a wide deck.",
+        "features": [
+          "Plunge pool",
+          "Copper bath",
+          "Expansive deck"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/zarafa/suite",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/zarafa/suite-pool"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 2250,
+          "basis": "per person sharing, per night"
+        }
+      }
+    ],
+    "ratesNote": "'From' rates as published by Great Plains Conservation on its own site, in US dollars. Suites are per person sharing, per night; private suites are per night for exclusive use. Read 26 Nov 2026; the house confirms the rate for your dates."
+  },
+  "great-plains-zarafa-dhow-suite": {
+    "rooms": [
+      {
+        "name": "The Dhow Suite",
+        "sleeps": 4,
+        "facts": [
+          "Two bedrooms",
+          "210 square metres",
+          "Exclusive use"
+        ],
+        "lede": "Two bedrooms either side of the lounge and dining room, each with a copper claw foot bath and indoor and outdoor showers.",
+        "features": [
+          "Central plunge pool",
+          "Fire pit",
+          "Butler, chef, guide and vehicle"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/dhow-suite/bedroom-canopy",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/dhow-suite/bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/dhow-suite/bedroom-two",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/great-plains/dhow-suite/lounge"
+        ],
+        "plungePool": true,
+        "from": {
+          "amount": 10800,
+          "basis": "per night, the whole suite, exclusive use"
+        }
+      }
+    ],
+    "ratesNote": "'From' rates as published by Great Plains Conservation on its own site, in US dollars. Suites are per person sharing, per night; private suites are per night for exclusive use. Read 26 Nov 2026; the house confirms the rate for your dates."
   }
 }

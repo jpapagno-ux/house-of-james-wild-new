@@ -1,0 +1,39 @@
+{
+ "_note": "Working transcription of Awasi's own Fully Hosted rate sheets (awasi.com/info), read 26 Nov 2026. Not yet a rate card. USD, per room, totals for the stated nights. Public rack; the house earns 20% commission (private). 'byEye' says whether the figures were read from the PDF page itself; anything false must be read by eye before it is filed.",
+ "sheets": {
+  "awasi-patagonia": { "2026-2027": "https://awasi.com/wp-content/uploads/2026/10/Awasi-Patagonia_Fully-Hosted-Rates_2026-2027-1.pdf", "2027-2028": "https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Patagonia_Fully-Hosted-Rates_2027-2028-2.pdf" },
+  "iguazu": { "2026-2027": "https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Iguazu_Fully-Hosted-Rates_2026-2027.pdf", "2027-2028": "https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Iguazu_Fully-Hosted-Rates_2027-2028.pdf" },
+  "awasi-mendoza": { "2026-2027": "https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Mendoza_Fully-Hosted-Rates_2026-2027.pdf", "2027-2028": "https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Mendoza_Fully-Hosted-Rates_2027-2028-2.pdf" },
+  "awasi-santa-catarina": { "2026-2027": "https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Santa-Catarina_Fully-Hosted-Rates_2026-2027.pdf", "2027-2028": "https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Santa-Catarina_Fully-Hosted-Rates_2027-2028-2.pdf" },
+  "awasi-atacama": { "2027-2028": "https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Atacama_Fully-Hosted-Rates_2027-2028.pdf" }
+ },
+ "iguazu": {
+  "byEye": true, "minNights": 2, "minNightsNote": "Except for festive dates (20 Dec to 3 Jan); the festive minimum is not printed.",
+  "nights": [2, 3, 4, 5, 6], "longStayPercentWorkedOut": { "3": 3, "4": 5, "5": 6, "6": 8 },
+  "seasons": { "High": [["2026-10-01", "2027-04-30"]], "Shoulder": [["2027-05-01", "2027-09-30"]] },
+  "sheet": {
+   "Villa": { "High": { "SGL": [5100, 7421, 9690, 11985, 14076], "DBL": [6780, 9865, 12882, 15933, 18713], "TRP": [8160, 11873, 15504, 19176, 22522] },
+              "Shoulder": { "SGL": [4340, 6315, 8246, 10199, 11978], "DBL": [5770, 8395, 10963, 13560, 15925], "TRP": [6940, 10098, 13186, 16309, 19154] } },
+   "Master Villa": { "High": { "SGL_DBL_TRP": [11600, 16878, 22040, 27260, 32016], "QDL": [13540, 19701, 25726, 31819, 37370] },
+                     "Shoulder": { "SGL_DBL_TRP": [9790, 14244, 18601, 23007, 27020], "QDL": [12240, 17809, 23256, 28764, 33782] } }
+  },
+  "deposit": { "percent": 50, "balanceDueDays": 30 },
+  "cancellation": "Festive 20 Dec to 3 Jan: 120:50, 60:100. High (sheet says 18 Dec to Feb): 44:50, 30:100. Shoulder and Off-Peak (Mar to 17 Dec): 30:50, 15:100.",
+  "open": ["VAT: the sheet prints 10.5% for foreign non-residents and 21% for residents, and does not say whether the rates include it. Not to be published until James or Awasi confirms."]
+ },
+ "awasi-patagonia": {
+  "byEye": { "High": true, "Shoulder": true, "Off-Peak": false }, "minNights": 3, "nights": [3, 4, 5, 6],
+  "seasons": { "High": [["2026-11-01", "2027-02-28"]], "Shoulder": [["2026-10-01", "2026-10-31"], ["2027-03-01", "2027-04-30"]], "Off-Peak": [["2027-05-01", "2027-09-30"]] },
+  "sheet": {
+   "Villa": { "High": { "SGL": [12000, 15520, 19000, 22080], "DBL": [15960, 20642, 25270, 29366], "TRP": [19200, 24832, 30400, 35328] },
+              "Shoulder": { "SGL": [8910, 11524, 14108, 16394], "DBL": [11850, 15326, 18763, 21804], "TRP": [14250, 18430, 22563, 26220] } },
+   "Master Villa": { "High": { "SGL_to_QDL": [25950, 33562, 41088, 47748] }, "Shoulder": { "SGL_to_QDL": [20010, 25880, 31683, 36816] } },
+   "Villa Cenit": { "note": "On sale from 15 December 2026.", "High": { "SGL_to_QDL": [29850, 38606, 47263, 54924], "QPL": [37320, 48267, 59090, 68669] },
+                    "Shoulder": { "SGL_to_QDL": [23010, 29760, 36433, 42338], "QPL": [28770, 37209, 45553, 52937] } }
+  },
+  "offPeakFromTextOnly": { "Villa 3 nights": { "SGL": 5790, "DBL": 7695, "TRP": 9270 }, "Master Villa 3 nights": 13005, "Villa Cenit 3 nights": 14955, "Villa Cenit QPL 3 nights": 18705 },
+  "open": ["Off-Peak rows, the conservation contribution (the text gives US$150 per person per stay) and the deposit lines still to be read by eye on pages 1 to 3.", "The standard cancellation schedule differs from Atacama's (text gives 120 to 90 days 25%, 89 to 61 days 50%, 60 days or less 100%); read by eye before filing."]
+ },
+ "awasi-mendoza": { "byEye": false, "open": ["The text of the sheet comes out scrambled; all figures to be read by eye. Rooms: Lujo, Front Row, Vineyard Villa, Two Bedroom Villa. Seasons: High Oct 2026 to Apr 2027, Shoulder May and Sep 2027, Off-Peak Jun to Aug 2027. Same VAT question as Iguazú."] },
+ "awasi-santa-catarina": { "byEye": false, "open": ["The text of the sheet comes out scrambled; all figures to be read by eye. Six villa types. A 3% service fee on daily room rates is not included in the rates."] }
+}

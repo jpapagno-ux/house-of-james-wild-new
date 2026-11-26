@@ -30,9 +30,11 @@ const RESIDENCES = STAY_PAGES.filter((s) => s.volumes?.includes("gatherings") &&
 // Private residences on the safari reserves (James, 26 Nov 2026: "you should have these in the gatherings section volume
 // as well as the reserve section"). One page each, kept on its reserve; Gatherings is a second door to it.
 const CARDS = RESERVE_PAGES.cards as Record<string, Record<string, { url: string; alt: string }>>;
-const RESERVE_HOUSES = RESERVES.flatMap((r) => r.camps.filter((c) => c.kind === "residence" && c.hero).map((c) => ({ r, c, href: campHref(r, c) })))
+const STAY_VILLAS = ((RESERVE_PAGES as { villas?: { stay: string; name: string; place: string; line: string; image: { url: string; alt: string } }[] }).villas ?? []).map((v) => ({ key: `${v.stay}/${v.name}`, name: v.name, reserve: v.place, line: v.line, image: v.image, href: `/stays/${v.stay}#rooms`, id: STAY_PAGES.find((s) => s.slug === v.stay)?.ledgerId ?? "Being filed" }));
+const RESERVE_HOUSES_ONLY = RESERVES.flatMap((r) => r.camps.filter((c) => c.kind === "residence" && c.hero).map((c) => ({ r, c, href: campHref(r, c) })))
   .filter((x): x is typeof x & { href: string } => !!x.href)
   .map(({ r, c, href }) => ({ key: `${r.slug}/${c.slug}`, name: c.name, reserve: r.name, line: (campCopy(r.slug, c).intro || c.units[0] || "").replace(/\s+/g, " ").trim(), image: CARDS[r.slug]?.[c.slug] ?? { url: c.hero as string, alt: `${c.name}, ${r.name}` }, href, id: c.ledgerId ?? r.rsv }));
+const RESERVE_HOUSES = [...RESERVE_HOUSES_ONLY, ...STAY_VILLAS];
 
 export default function GatheringsHub() {
   const leeu = HOME.shelf.entries.find((s) => s.slug === "leeu-house")!;

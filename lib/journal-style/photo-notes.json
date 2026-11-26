@@ -15580,5 +15580,1355 @@
         "section": "rooms"
       }
     ]
+  },
+  "kwando-4-rivers": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/4-rivers/camp-river-air",
+        "alt": "4 Rivers above the Tsum Tsum River at first light, northern Okavango Delta",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/camp-sunset-air",
+        "alt": "The 4 Rivers tented suites along the Tsum Tsum River at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/elephants-dusk",
+        "alt": "Two elephants sparring against a pink sky, Kwara Private Concession",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/main-area-fire",
+        "alt": "The 4 Rivers main area under thatch with the fire lit at dusk",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/mokoro-sunrise",
+        "alt": "A mokoro poled across the still water at sunrise, 4 Rivers",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/pool",
+        "alt": "The 4 Rivers pool deck above the river",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/river-sunset",
+        "alt": "The Tsum Tsum River winding past 4 Rivers at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/suite-bedroom",
+        "alt": "A 4 Rivers tented suite bedroom with its glass walls to the bush",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/suite-deck",
+        "alt": "A 4 Rivers suite deck over the river in the late sun",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/suite-lounge",
+        "alt": "A 4 Rivers suite lounge opening onto its deck",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/walk-woodland",
+        "alt": "A walking safari under the old trees of Maboa Island",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/4-rivers/wild-dog",
+        "alt": "A wild dog resting in the long grass near 4 Rivers",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-kwara": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/kwara/boat-sunset",
+        "alt": "A boat in silhouette on the Kwara lagoon at sunset",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/camp-fire-dusk",
+        "alt": "Kwara Camp's main tent and fire at dusk under the trees",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/dining-lagoon",
+        "alt": "The Kwara dining deck over the lagoon at sunset",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/elephant-lagoon",
+        "alt": "A guest watching an elephant cross the lagoon from camp, Kwara",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/heronry",
+        "alt": "Marabou chicks at the Godikwe heronry, Kwara",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/leopard-cub",
+        "alt": "A leopard carrying her cub through the grass at Kwara",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/mokoro",
+        "alt": "A mokoro on the Kwara lagoon under a clear sky",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/pool",
+        "alt": "A Kwara pool lounge looking out to the lagoon",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/suite-bedroom",
+        "alt": "A Kwara suite bedroom opening to its deck and the trees",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/suite-deck-view",
+        "alt": "A guest with binoculars on a Kwara suite deck at sunrise",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/suite-lounge",
+        "alt": "A Kwara suite lounge",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/wild-dogs",
+        "alt": "A pack of wild dogs beside a game drive, Kwara Private Concession",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/kwara/wild-dogs-water",
+        "alt": "Wild dogs splashing through the shallows past a game drive at Kwara",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-lagoon": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/lagoon/bee-eaters",
+        "alt": "Carmine bee eaters on the riverbank, Kwando concession",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/camp-across-river",
+        "alt": "Lagoon Camp across the Kwando River under a summer sky",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/camp-river",
+        "alt": "Lagoon Camp in the trees on the bank of the Kwando River",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/deck-river",
+        "alt": "A Lagoon Camp deck looking over the Kwando River",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/elephant-camp",
+        "alt": "An elephant walking past Lagoon Camp",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/firepit",
+        "alt": "The Lagoon Camp firepit before the main area",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/lechwe",
+        "alt": "A lechwe leaping through the floodplain, Kwando concession",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/lions-camp",
+        "alt": "Lionesses and cubs crossing the plain before Lagoon Camp",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/river-sunset",
+        "alt": "The Kwando River floodplain at sunset beside Lagoon Camp",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/suite-lounge",
+        "alt": "A Lagoon tented suite lounge looking out to the river",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/suite-lounge-river",
+        "alt": "A Lagoon tented suite with its wide window over the river",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/swing-deck",
+        "alt": "The swing on the Lagoon Camp viewing deck at dawn",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lagoon/wild-dog",
+        "alt": "A wild dog in the golden grass of the Kwando concession",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-lebala": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/lebala/camp-dusk",
+        "alt": "Lebala Camp lit at dusk above the marsh",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/camp-grass",
+        "alt": "Lebala Camp under a great tree in the green season",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/cheetah",
+        "alt": "A cheetah on a termite mound before Lebala Camp",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/elephant-deck",
+        "alt": "An elephant grazing beside a Lebala suite deck",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/elephants-camp",
+        "alt": "Elephants walking past the Lebala tents",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/firepit",
+        "alt": "The Lebala firepit at night",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/leopard",
+        "alt": "A leopard running through the grass, Kwando concession",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/night-sky",
+        "alt": "A guide's spotlight under the Milky Way at Lebala",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/suite",
+        "alt": "A Lebala tented suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/suite-bedroom",
+        "alt": "A Lebala tented suite opening onto its deck",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/lebala/wild-dog",
+        "alt": "A wild dog walking past a Lebala game drive",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-mma-dinare": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/mma-dinare/buffalo",
+        "alt": "Buffalo grazing below the palms at dusk, Dinare Private Reserve",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/camp-air",
+        "alt": "Mma Dinare among the channels of the Delta at sunset from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/deck-sunrise",
+        "alt": "A guest on the Mma Dinare walkway at sunrise over the floodplain",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/delta-air",
+        "alt": "Mma Dinare in the floodplains of the Gomoti River from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/elephants-floodplain",
+        "alt": "Elephants on the floodplain seen from the Mma Dinare deck",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/firepit",
+        "alt": "Guests at the Mma Dinare firepit at sunset",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/lions-drive",
+        "alt": "Lionesses in the long grass beside a game drive, Dinare Private Reserve",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/lions-water",
+        "alt": "A pride of lions by the water near Mma Dinare",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/main-area",
+        "alt": "The Mma Dinare main area and decks in the trees",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/mokoro",
+        "alt": "A mokoro among the lilies near Mma Dinare",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/suite-bedroom",
+        "alt": "A Mma Dinare suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/suite-deck",
+        "alt": "A Mma Dinare suite and its deck",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/mma-dinare/walk-elephants",
+        "alt": "Guests on foot watching elephants cross the water, Dinare",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-moremi-crossing": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/boat-sunset",
+        "alt": "The palms of Chief's Island at sunset from the boat",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/camp-air",
+        "alt": "Moremi Crossing on Ntswi Island beside the Boro River from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/camp-channel",
+        "alt": "Moremi Crossing from the channel, with a mokoro on the bank",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/camp-water",
+        "alt": "The Moremi Crossing main area across the water at sunrise",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/elephant-channel",
+        "alt": "An elephant beside the channel below camp, Moremi Crossing",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/elephant-water",
+        "alt": "An elephant in the floodwater under a pink sky, Boro River",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/leopard",
+        "alt": "A leopard in the golden grass near Chief's Island",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/lounge",
+        "alt": "The Moremi Crossing main lounge open to the floodplain",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/mokoro-air",
+        "alt": "A mokoro and a boat on the Delta from above, Moremi Crossing",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/mokoro-camp",
+        "alt": "A mokoro poled past Moremi Crossing",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/sleep-out",
+        "alt": "A fire at the adventure camping site under the stars",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/suite-bedroom",
+        "alt": "A Moremi Crossing tented suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/suite-sunset",
+        "alt": "A Moremi Crossing tented suite at sunrise over the floodplain",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/suite-view",
+        "alt": "A Moremi Crossing tented suite looking out at sunrise",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/walk",
+        "alt": "A guide walking the floodplain toward Chief's Island",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/moremi-crossing/zebras",
+        "alt": "Zebras running across the plains near Moremi Crossing",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-nxai-pan": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/nxai-pan/baines-baobabs",
+        "alt": "Guests beneath Baines' Baobabs on the edge of the salt pan",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/baobab",
+        "alt": "A guest under a great baobab in the green season, Nxai Pan",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/elephant-suite",
+        "alt": "An elephant walking past a Nxai Pan suite",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/elephants-waterhole",
+        "alt": "Elephants at the Nxai Pan waterhole at sunset",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/firepit-pan",
+        "alt": "The Nxai Pan firepit lit at sunset beside the pan",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/lodge-fire",
+        "alt": "Nxai Pan Camp and its fire under a deep blue sky at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/lodge-stars",
+        "alt": "Nxai Pan Camp beneath the Milky Way",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/photographer",
+        "alt": "A guest photographing elephants at the waterhole, Nxai Pan",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/pool",
+        "alt": "The Nxai Pan pool deck",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/suite-bedroom",
+        "alt": "A Nxai Pan suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/suite-deck",
+        "alt": "A Nxai Pan suite deck facing the open grassland",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/suite-view",
+        "alt": "A Nxai Pan suite opening onto the grassland with a guest on the deck",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/nxai-pan/zebras-drive",
+        "alt": "Zebras crossing the road ahead of a game drive, Nxai Pan",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-pom-pom": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/pom-pom/camp-air",
+        "alt": "Pom Pom Camp on the edge of the lagoon from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/camp-lagoon",
+        "alt": "Pom Pom Camp in the trees across the lagoon",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/cranes",
+        "alt": "A pair of wattled cranes on the floodplain near Pom Pom",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/deck-lagoon",
+        "alt": "A table on the Pom Pom deck above the lagoon",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/firepit",
+        "alt": "Guests around the Pom Pom fire at dusk",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/lagoon-sunset",
+        "alt": "Pom Pom Lagoon mirroring the clouds at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/leopard",
+        "alt": "A leopard on a termite mound, Pom Pom Private Concession",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/lilies",
+        "alt": "A mokoro among the water lilies of Pom Pom Lagoon",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/mokoro-sunset",
+        "alt": "A poler and his mokoro in the reeds at sunset, Pom Pom",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/mokoros-dusk",
+        "alt": "Mokoros on the shore of Pom Pom Lagoon at dusk",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/suite-bedroom",
+        "alt": "A Pom Pom tented suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/pom-pom/wild-dogs",
+        "alt": "Wild dogs beside a Pom Pom game drive",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-rra-dinare": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/rra-dinare/buffalo-camp",
+        "alt": "A buffalo bull in the grass below the Rra Dinare tents",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/buffalo-herd",
+        "alt": "A buffalo herd in the golden light, Dinare Private Reserve",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/camp-air",
+        "alt": "Rra Dinare and its pool deck from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/camp-buffalo",
+        "alt": "Rra Dinare beyond the grassland with a buffalo passing",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/elephant",
+        "alt": "An elephant crossing in front of a game drive near Rra Dinare",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/family-suite",
+        "alt": "The Rra Dinare Family Suite and its deck at dusk",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/firepit-deck",
+        "alt": "The circular firepit deck at Rra Dinare at dusk",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/lion",
+        "alt": "A black maned lion in the last light, Dinare Private Reserve",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/lions-buffalo",
+        "alt": "Two lions taking down a buffalo near Rra Dinare",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/mokoro",
+        "alt": "A mokoro among the lilies of the Gomoti River",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/pool",
+        "alt": "The Rra Dinare pool deck",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/suite",
+        "alt": "A Rra Dinare suite seen from its lounge",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/suite-bedroom",
+        "alt": "A Rra Dinare suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/rra-dinare/suite-dusk",
+        "alt": "A Rra Dinare suite on its raised deck at sunset",
+        "section": "exterior"
+      }
+    ]
+  },
+  "kwando-splash": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/splash/boat-sunset",
+        "alt": "A boat on the channel at sunset, Kwara",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/cheetah",
+        "alt": "A cheetah watching from the grass, Kwara Private Concession",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/enclave-air",
+        "alt": "Splash Enclave in the Kwara Private Concession from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/enclave-fire",
+        "alt": "The Splash Enclave fire lit at dusk beneath the trees",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/enclave-pool",
+        "alt": "The Splash Enclave pool deck",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/family-room",
+        "alt": "A Splash family room bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/family-room-dusk",
+        "alt": "A Splash family room lit at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/fishing",
+        "alt": "A guide holding up a bream caught from the water, Splash",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/lion-camp",
+        "alt": "A lion resting in the grass before the Splash tents",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/lodge",
+        "alt": "The Splash main area under the trees",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/mokoro",
+        "alt": "Two mokoros on still water in the reeds near Splash",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/pool",
+        "alt": "The Splash pool deck facing the plains",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/suite-bedroom",
+        "alt": "A Splash suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/suite-deck",
+        "alt": "A Splash suite deck over the floodplain",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/wild-dogs",
+        "alt": "Wild dogs crossing ahead of a Splash game drive",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/splash/zebras",
+        "alt": "A zebra and her foal near Splash",
+        "section": "experiences"
+      }
+    ]
+  },
+  "kwando-tau-pan": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kwando/tau-pan/bushman-walk",
+        "alt": "A San guide beside a grass shelter on a Bushman walk",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/drive",
+        "alt": "A game drive on the sand roads of the Central Kalahari",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/fire-making",
+        "alt": "A San guide making fire from grass",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/firepit-deck",
+        "alt": "The Tau Pan deck and firepit at sunset",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/lion-camp",
+        "alt": "A black maned Kalahari lion below Tau Pan Camp",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/lions-drive",
+        "alt": "Lions walking past a Tau Pan game drive",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/lodge-dune",
+        "alt": "Tau Pan Camp on its dune above the Kalahari at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/lodge-stars",
+        "alt": "Tau Pan Camp lit beneath the Milky Way",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/oryx",
+        "alt": "An oryx in the golden grass of the Central Kalahari",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/pool",
+        "alt": "The Tau Pan pool deck",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/sleepout",
+        "alt": "The sleepout deck bed made up for the night at Tau Pan",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/suite-bedroom",
+        "alt": "A Tau Pan desert suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kwando/tau-pan/suite-deck",
+        "alt": "A Tau Pan suite deck looking over the Kalahari",
+        "section": "exterior"
+      }
+    ]
+  },
+  "xigera-safari-lodge": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/xigera/boma",
+        "alt": "The Xigera boma set for dinner around the fire",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/xigera/elephants",
+        "alt": "Two elephant bulls sparring in the grass at Xigera",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/xigera/fire-pit",
+        "alt": "The Xigera fire pit lit at night",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/xigera/floodplain-sunset",
+        "alt": "The Xigera floodplain under a pink sky at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/xigera/floodplain-tree",
+        "alt": "A lone tree above the flooded grassland at Xigera",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/xigera/helicopter",
+        "alt": "A helicopter flying low over the channels of the Okavango Delta",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/xigera/leopard",
+        "alt": "A leopard resting along a branch at Xigera",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/xigera/lion",
+        "alt": "A male lion walking through the golden grass with a game drive behind",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/xigera/lodge-dusk",
+        "alt": "Xigera raised on stilts and lit at dusk above the floodplain",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/xigera/lodge-floodplain-air",
+        "alt": "Xigera Safari Lodge on its islands above a channel of the Okavango Delta",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/xigera/mokoro-lilies",
+        "alt": "A mokoro gliding through the water lilies of the Delta at Xigera",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/xigera/suite-bath",
+        "alt": "The bath of the Fan Palm Suite looking out to the trees",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/xigera/suite-bedroom",
+        "alt": "A Xigera suite bedroom in timber, bronze and hand carved wood",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/xigera/suite-deck-channel",
+        "alt": "A Xigera suite deck above the channel",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/xigera/suite-lounge",
+        "alt": "The lounge of the Papyrus Suite at Xigera",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/xigera/treehouse-air",
+        "alt": "The Baobab Treehouse from above beside a channel of the Delta",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/xigera/treehouse-bed",
+        "alt": "The Baobab Treehouse bed with its canvas walls open to the trees",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/xigera/treehouse-day",
+        "alt": "The Baobab Treehouse, a steel baobab nearly ten metres tall, above the floodplain",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/xigera/treehouse-stars",
+        "alt": "The Baobab Treehouse lit beneath the Milky Way",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/xigera/wild-dog-drive",
+        "alt": "A wild dog running past a Xigera game drive among the palms",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/xigera/zebras",
+        "alt": "Zebras and wildebeest on the Xigera floodplain below the palms",
+        "section": "experiences"
+      }
+    ]
+  },
+  "leeu-estates": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/leeu/leeu-estates/classic-room",
+        "alt": "A Classic Room at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/cottage-garden",
+        "alt": "A Cape Dutch gabled cottage in the Leeu Estates gardens",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/deluxe-room",
+        "alt": "A Deluxe Room at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/executive-suite",
+        "alt": "An Executive Suite bedroom at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/executive-suite-lounge",
+        "alt": "The lounge of an Executive Suite at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/executive-terrace",
+        "alt": "An Executive Suite with Terrace at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/fynbosch-cottage",
+        "alt": "A Fynbosch Cottage bedroom at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/fynbosch-lounge",
+        "alt": "The Fynbosch Cottage lounge at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/garden-dinner",
+        "alt": "A table set in the Leeu Estates garden at sunset",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/hot-tub-trees",
+        "alt": "A private hot tub among the trees and mountains at Leeu Estates",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/manor-house-suite",
+        "alt": "The Manor House Suite bedroom at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/manor-house-terrace",
+        "alt": "The Manor House Suite terrace with its hot tub and mountain view",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/pool-lawn",
+        "alt": "A Leeu Estates pool and lawn facing the mountains",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/pool-mountains",
+        "alt": "A Leeu Estates pool beneath the Franschhoek mountains",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/studio-fireplace",
+        "alt": "The fireplace and lounge of a Studio Room at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/studio-room",
+        "alt": "A Studio Room at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/terrace-garden",
+        "alt": "A Leeu Estates terrace and lawn in the late afternoon sun",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/terroir-cottage",
+        "alt": "A Terroir Cottage bedroom at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/terroir-lounge",
+        "alt": "The Terroir Cottage lounge at Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/the-oaks",
+        "alt": "A bedroom at The Oaks, Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/the-oaks-lounge",
+        "alt": "The lounge at The Oaks, Leeu Estates",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/veranda",
+        "alt": "A shaded Leeu Estates veranda opening onto the lawn",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-estates/vineyard-garden",
+        "alt": "Leeu Estates among its oaks and gardens below the Franschhoek mountains",
+        "section": "exterior"
+      }
+    ]
+  },
+  "leeu-house": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/leeu/leeu-house/classic-room",
+        "alt": "A Classic Room at Leeu House",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-house/classic-terrace",
+        "alt": "A Classic Room with Terrace at Leeu House, opening to its terrace",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-house/conservatory",
+        "alt": "The Conservatory at Leeu House",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-house/deluxe-room",
+        "alt": "A Deluxe Room at Leeu House",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-house/pool",
+        "alt": "The Leeu House pool with the village rooftops beyond",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-house/pool-garden",
+        "alt": "The Leeu House pool and garden",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/leeu/leeu-house/pool-terrace",
+        "alt": "The Leeu House pool terrace below the mountains",
+        "section": "pool"
+      }
+    ]
+  },
+  "great-plains-duba-plains": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/great-plains/duba-plains/camp-floodplain",
+        "alt": "Duba Plains Camp in its island of trees above the floodplain",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/camp-grass",
+        "alt": "Duba Plains Camp seen across the long grass of the Duba Concession",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/deck-firepit",
+        "alt": "The Duba Plains deck and fire at sunset over the floodplain",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/dining",
+        "alt": "The Duba Plains dining room",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/lounge",
+        "alt": "The Duba Plains lounge open to the deck",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/main-deck-dusk",
+        "alt": "The Duba Plains Camp deck set for dinner under the ebony trees at dusk",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/outdoor-shower",
+        "alt": "A Duba Plains suite outdoor shower over the floodplain at sunrise",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/suite",
+        "alt": "A Duba Plains suite at sunset with its lounge and bed",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/suite-bath",
+        "alt": "A Duba Plains suite bath set before the floodplain at dusk",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/duba-plains/suite-bedroom",
+        "alt": "A Duba Plains suite bedroom looking out to the floodplain",
+        "section": "rooms"
+      }
+    ]
+  },
+  "mara-plains-camp-by-great-plains": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/great-plains/mara-plains/bridge",
+        "alt": "The suspension bridge across the Ntiakitiak River into Mara Plains Camp",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-plains/camp-dusk",
+        "alt": "Mara Plains Camp on its lawn in the riverine forest at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-plains/camp-night",
+        "alt": "Mara Plains Camp lit under a moonlit sky",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-plains/dining",
+        "alt": "The Mara Plains dining table beside the wine collection",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-plains/lounge",
+        "alt": "The Mara Plains lounge under canvas",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-plains/suite",
+        "alt": "A Mara Plains suite with its canopied bed",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-plains/suite-bedroom",
+        "alt": "A Mara Plains suite bedroom through its carved doors",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-plains/suite-lounge",
+        "alt": "A Mara Plains suite lounge and veranda",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-plains/suite-view",
+        "alt": "A Mara Plains suite bed facing its veranda and the trees",
+        "section": "rooms"
+      }
+    ]
+  },
+  "mara-toto-tree-camp-by-great-plains": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/great-plains/mara-toto/camp-river",
+        "alt": "Mara Toto Tree Camp hidden in the trees above the Ntiakitiak River",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-toto/deck-firepit",
+        "alt": "The Mara Toto deck and fire pit in the trees",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-toto/dining",
+        "alt": "The Mara Toto dining room open to the deck",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-toto/drive-sunset",
+        "alt": "A game drive watching the sun go down over the Maasai Mara",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-toto/lounge",
+        "alt": "The Mara Toto lounge",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-toto/suite",
+        "alt": "A Mara Toto tree suite opening to its veranda",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-toto/suite-bedroom",
+        "alt": "A Mara Toto tree suite bedroom with windows to the canopy",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-toto/suite-dusk",
+        "alt": "A Mara Toto tree suite lit at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/mara-toto/walkway",
+        "alt": "Guests on the raised walkway through the forest canopy at Mara Toto",
+        "section": "exterior"
+      }
+    ]
+  },
+  "great-plains-selinda-main-camp": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/great-plains/selinda/air",
+        "alt": "Selinda Camp and its walkway above the Selinda Spillway from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/selinda/lounge",
+        "alt": "The Selinda Camp lounge under its high thatch",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/selinda/lounge-view",
+        "alt": "The Selinda lounge looking out to the floodplain at sunset",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/selinda/main-dusk",
+        "alt": "The Selinda Camp main area under thatch at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/selinda/main-sunset",
+        "alt": "Selinda Camp on its stilts at sunset over the spillway",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/selinda/suite",
+        "alt": "A Selinda suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/selinda/suite-bath",
+        "alt": "A Selinda suite bath with a view of the spillway",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/selinda/suite-bedroom",
+        "alt": "A Selinda suite bedroom looking out at sunset",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/selinda/suite-pool",
+        "alt": "A Selinda suite and its private pool facing the plains",
+        "section": "pool"
+      }
+    ]
+  },
+  "great-plains-zarafa-camp": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/great-plains/zarafa/deck-dusk",
+        "alt": "The Zarafa deck under the ebony trees at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/zarafa/dining",
+        "alt": "The Zarafa dining table facing the lagoon at dusk",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/zarafa/firepit-dusk",
+        "alt": "The Zarafa Camp deck and fire at dusk",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/zarafa/lagoon-air",
+        "alt": "The Zibadianja Lagoon below Zarafa Camp from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/zarafa/lounge",
+        "alt": "The Zarafa lounge at sunset",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/zarafa/suite",
+        "alt": "A Zarafa tented suite with its canopied bed",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/zarafa/suite-pool",
+        "alt": "A Zarafa suite lounge opening to its deck and plunge pool",
+        "section": "rooms"
+      }
+    ]
+  },
+  "great-plains-zarafa-dhow-suite": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/bedroom",
+        "alt": "A Dhow Suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/bedroom-canopy",
+        "alt": "A Dhow Suite bedroom with its canopied bed",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/bedroom-two",
+        "alt": "The second Dhow Suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/dining",
+        "alt": "The Dhow Suite dining room",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/firepit",
+        "alt": "Sunset drinks by the fire at the Dhow Suite",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/lagoon-air",
+        "alt": "The Zibadianja Lagoon from above beside the Dhow Suite",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/lounge",
+        "alt": "The Dhow Suite lounge",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/pontoon",
+        "alt": "Sundowners on the pontoon at sunset over the Zibadianja Lagoon",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/great-plains/dhow-suite/pool-dusk",
+        "alt": "The Dhow Suite and its pool lit at dusk",
+        "section": "pool"
+      }
+    ]
   }
 }

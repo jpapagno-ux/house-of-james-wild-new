@@ -6274,6 +6274,530 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/singita-elela/tree-stars",
         "alt": "A lone tree under the stars of the Delta"
       }
+    ],
+    "stay:ayana-komodo": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/indonesia/ayana-komodo/hero",
+        "alt": "AYANA Komodo above the bay and its long jetty"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/indonesia/ayana-komodo/lako-dia",
+        "alt": "AYANA Lako Di'a, the resort's phinisi, under sail"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/indonesia/ayana-komodo/dining",
+        "alt": "Dinner set by the jetty at sunset"
+      }
+    ],
+    "stay:amanoi": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/vietnam/amanoi/hero",
+        "alt": "A catamaran on Vinh Hy Bay below Amanoi"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/vietnam/amanoi/ocean-pool-villa",
+        "alt": "A villa deck above the bay"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/vietnam/amanoi/beach-club",
+        "alt": "The dining pavilion open to the bay"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/vietnam/amanoi/wellness",
+        "alt": "The yoga pavilion over the lake"
+      }
+    ],
+    "stay:anantara-hua-hin": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/anantara-hua-hin/b3-0",
+        "alt": "Anantara Hua Hin among the palms on the Gulf of Thailand at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/anantara-hua-hin/b3-5",
+        "alt": "Thai pavilions above the lagoon pool"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/anantara-hua-hin/b3-4",
+        "alt": "The lagoon pool among the gardens"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/anantara-hua-hin/b3-6",
+        "alt": "Breakfast on a terrace facing the sea"
+      }
+    ],
+    "stay:armendaris-ted-turner-reserve": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/fra-cristobal-range-armendaris",
+        "alt": "The Fra Cristobal range and ocotillo on Armendaris"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/desert-sunset-armendaris",
+        "alt": "Sunset over the desert"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/oryx-armendaris",
+        "alt": "Oryx on the reserve"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/utv-tour-armendaris",
+        "alt": "A UTV on a desert track"
+      }
+    ],
+    "stay:como-maalifushi": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/como-maalifushi/maalifushi-water-villa",
+        "alt": "A water villa and its pool over the lagoon"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/como-maalifushi/water-villa",
+        "alt": "Sunset from a water villa deck"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/como-maalifushi/hero",
+        "alt": "COMO Maalifushi's water villas from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/como-maalifushi/beach-villa",
+        "alt": "A beach villa open to the sand"
+      }
+    ],
+    "stay:canvas-and-orchids-retreat": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/wildco/cambodia/canvas-and-orchids-retreat/floating-tent-tatai-river",
+        "alt": "Floating tents on the Tatai River in the morning mist"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/wildco/cambodia/canvas-and-orchids-retreat/tatai-river-mangroves",
+        "alt": "A boat trip up the Tatai River"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/wildco/cambodia/canvas-and-orchids-retreat/restaurant",
+        "alt": "The camp restaurant at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/wildco/cambodia/canvas-and-orchids-retreat/island-family-tent",
+        "alt": "A family tent among the palms"
+      }
+    ],
+    "stay:cape-weligama": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/sri-lanka/cape-weligama/hero",
+        "alt": "The headland of Cape Weligama above the Indian Ocean"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/sri-lanka/cape-weligama/lookout",
+        "alt": "Sunset over the surf below the cape"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/sri-lanka/cape-weligama/pool-pavilion",
+        "alt": "A villa pool running out toward the sea"
+      }
+    ],
+    "stay:capella-ubud": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/capella-ubud/b3-0",
+        "alt": "Tents and their pools in the Keliki rainforest from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/capella-ubud/b3-1",
+        "alt": "A tent's private pool in the jungle"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/capella-ubud/b3-2",
+        "alt": "Breakfast by a tent pool above the valley"
+      }
+    ],
+    "stay:cardamom-tented-camp": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/cardamom-tented-camp/b3-0",
+        "alt": "A safari tent above the river meadow, with its boardwalk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/cardamom-tented-camp/b3-4",
+        "alt": "The boardwalk to the tents beneath the forest"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/cardamom-tented-camp/b3-1",
+        "alt": "The camp lit at night beneath the forest"
+      }
+    ],
+    "stay:ceylon-tea-trails": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/sri-lanka/ceylon-tea-trails/hero",
+        "alt": "Tea fields at sunrise in the hill country"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/sri-lanka/ceylon-tea-trails/dunkeld-pool",
+        "alt": "A hot tub looking over the lake and the hills"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/sri-lanka/ceylon-tea-trails/estate",
+        "alt": "A bungalow pool above Castlereagh Lake"
+      }
+    ],
+    "stay:cheval-blanc-randheli": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/cheval-blanc-randheli/lagoon-villa",
+        "alt": "The island and its water villas at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/cheval-blanc-randheli/water-villa",
+        "alt": "Water villas from the island's edge"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/cheval-blanc-randheli/hero-water-villa",
+        "alt": "Cheval Blanc Randheli from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/cheval-blanc-randheli/lagoon-villa-2",
+        "alt": "A water villa and its pool from above"
+      }
+    ],
+    "stay:conrad-bora-bora-nui": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/conrad-bora-bora-nui/hero",
+        "alt": "Conrad Bora Bora Nui's overwater villas from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/conrad-bora-bora-nui/g1",
+        "alt": "An overwater villa at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/conrad-bora-bora-nui/g3",
+        "alt": "The resort's white sand beach"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/conrad-bora-bora-nui/g4",
+        "alt": "A villa hot tub looking over the lagoon"
+      }
+    ],
+    "stay:gili-lankanfushi": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/gili-lankanfushi/hero-private-reserve",
+        "alt": "Gili Lankanfushi's overwater villas from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/gili-lankanfushi/private-reserve-aerial",
+        "alt": "Overwater villas and their decks on the lagoon"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/gili-lankanfushi/crusoe-residence",
+        "alt": "An overwater villa on the lagoon"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/gili-lankanfushi/crusoe-villas",
+        "alt": "Villas over the turquoise lagoon"
+      }
+    ],
+    "stay:intercontinental-tahiti-resort-spa": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/intercontinental-tahiti-resort-spa/g1",
+        "alt": "The resort and its lagoonarium from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/intercontinental-tahiti-resort-spa/g3",
+        "alt": "Overwater bungalows looking toward Moorea"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/intercontinental-tahiti-resort-spa/hero",
+        "alt": "The pools and gardens at the lagoon edge"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/intercontinental-tahiti-resort-spa/g2",
+        "alt": "Overwater bungalows from above"
+      }
+    ],
+    "stay:joali-being": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/joali-being/hero",
+        "alt": "The overwater pavilion at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/joali-being/bkidult",
+        "alt": "Pavilions in the island's forest from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/joali-being/ocean-pool-villa",
+        "alt": "An ocean villa deck and pool"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/joali-being/beach-residence",
+        "alt": "A pool on the beach under the palms"
+      }
+    ],
+    "stay:ladder-ted-turner-reserve": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/country-house-exterior-ladder",
+        "alt": "The Country House"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/ladder-vista",
+        "alt": "A lone tree on Ladder Ranch at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/bison-ladder",
+        "alt": "Bison below the mountains"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/slot-canyon-ladder",
+        "alt": "Looking up from a slot canyon"
+      }
+    ],
+    "stay:mt-isthmus-villa": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/new-zealand/mt-isthmus/hero",
+        "alt": "Mt Isthmus Villa in the tussock below the peaks"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/new-zealand/mt-isthmus/aurora",
+        "alt": "The villa under the aurora australis"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/new-zealand/mt-isthmus/lakes",
+        "alt": "Snow on the mountains above the lake"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/new-zealand/mt-isthmus/villa",
+        "alt": "The villa in the tussock above the lake"
+      }
+    ],
+    "stay:nayara-alto-atacama": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/nayara-alto-atacama/b3-0",
+        "alt": "Nayara Alto Atacama beneath the red cliffs"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/nayara-alto-atacama/b3-1",
+        "alt": "A terrace looking to the cliffs"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/nayara-alto-atacama/b3-2",
+        "alt": "A room's terrace among the desert gardens"
+      }
+    ],
+    "stay:niyama-private-islands-maldives": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/niyama-private-islands-maldives/b3-0",
+        "alt": "Niyama's overwater villas from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/niyama/ocean-pool-pavilion",
+        "alt": "Over Water Pool Villas on the lagoon"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/niyama/two-bedroom-beach-pool-pavilion",
+        "alt": "A beach pool villa among the palms"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/niyama/hero-pavilions-aerial",
+        "alt": "The over water villas beyond the beach"
+      }
+    ],
+    "stay:one-only-reethi-rah": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/one-only-reethi-rah/hero",
+        "alt": "A beach villa and its pool from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/one-only-reethi-rah/two-villa-residence",
+        "alt": "A pool among the palms facing the sea"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/maldives/one-only-reethi-rah/beach-villa",
+        "alt": "A beach villa open to the sand"
+      }
+    ],
+    "stay:paroa-bay": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/new-zealand/paroa-bay/hero",
+        "alt": "The villa's infinity pool over the Bay of Islands"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/new-zealand/paroa-bay/pool-view",
+        "alt": "The pool deck looking out over the bay"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/new-zealand/paroa-bay/villa",
+        "alt": "Tarāpunga Villa above its inlet"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/new-zealand/paroa-bay/hole-in-the-rock",
+        "alt": "Islands off the coast in the Bay of Islands"
+      }
+    ],
+    "stay:paws-up-resort": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/paws-up-resort/b3-6",
+        "alt": "The ranch's meadows and forest from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/paws-up-resort/b3-0",
+        "alt": "A cabin among the pines"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/paws-up-resort/b3-2",
+        "alt": "A home in the snowy forest"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/paws-up-resort/b3-4",
+        "alt": "A deck in the pines"
+      }
+    ],
+    "stay:pearl-resort-le-bora-bora": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/pearl-resort-le-bora-bora/b3-0",
+        "alt": "Motu Tevairoa and its overwater bungalows facing Mount Otemanu"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/pearl-resort-le-bora-bora/b3-3",
+        "alt": "An overwater suite on the lagoon"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/pearl-resort-le-bora-bora/b3-5",
+        "alt": "An overwater pool facing Mount Otemanu"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/pearl-resort-le-bora-bora/b3-2",
+        "alt": "Villas among the palms beside the beach"
+      }
+    ],
+    "stay:phulay-bay-ritz-carlton-reserve": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/thailand/phulay-bay/hero",
+        "alt": "The infinity pool facing the islands offshore"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/thailand/phulay-bay/hong-island",
+        "alt": "An island offshore from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/thailand/phulay-bay/spa",
+        "alt": "A spa pavilion open to the garden"
+      }
+    ],
+    "stay:pu-u-hoko-ranch": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/pu-u-hoko-ranch/b3-1",
+        "alt": "The ranch from the air above the sea"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/pu-u-hoko-ranch/b3-0",
+        "alt": "The ranch lodge and its pool from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/pu-u-hoko-ranch/b3-2",
+        "alt": "The lodge veranda"
+      }
+    ],
+    "stay:six-senses-con-dao": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-con-dao/b3-0",
+        "alt": "A villa above the beach at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-con-dao/b3-3",
+        "alt": "A villa pool deck under the palms"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-con-dao/b3-4",
+        "alt": "A villa bedroom open to the beach"
+      }
+    ],
+    "stay:six-senses-kanuhura": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-kanuhura/b3-0",
+        "alt": "Kanuhura from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-kanuhura/b3-2",
+        "alt": "A beach pavilion"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-kanuhura/b3-1",
+        "alt": "A villa living room facing the sea"
+      }
+    ],
+    "stay:six-senses-ninh-van-bay": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-ninh-van-bay/b3-0",
+        "alt": "Villas among the boulders on Ninh Van Bay"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-ninh-van-bay/b3-1",
+        "alt": "A hilltop pool villa above the bay"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-ninh-van-bay/b3-4",
+        "alt": "A pool villa in the forest from above"
+      }
+    ],
+    "stay:trisara": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/thailand/trisara/ocean-front-pool-villa",
+        "alt": "Trisara's secluded beach from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/thailand/trisara/hero",
+        "alt": "A villa pool above the sea"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/thailand/trisara/residence",
+        "alt": "A pool pavilion facing the sea"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/thailand/trisara/pool",
+        "alt": "The main pool among the palms"
+      }
+    ],
+    "stay:ulum-moab": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/ulum-moab/b3-6",
+        "alt": "A suite at sunset over the desert"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/gatherings/ulum-moab/ulum-moab-tent-02",
+        "alt": "A suite on its deck among the sandstone"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/gatherings/ulum-moab/ulum-moab-11",
+        "alt": "The pool and lounge at dusk"
+      }
+    ],
+    "stay:zannier-phum-baitang": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/cambodia/zannier-phum-baitang/hero",
+        "alt": "Palms reflected in the rice fields at sunrise"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/cambodia/zannier-phum-baitang/pool-villa",
+        "alt": "A Pool Villa and its pool"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/cambodia/zannier-phum-baitang/terrace-villa",
+        "alt": "Terrace Villas among the gardens"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/cambodia/zannier-phum-baitang/angkor",
+        "alt": "A horse grazing before Angkor Wat at sunrise"
+      }
+    ],
+    "stay:six-senses-krabey-island": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-krabey-island/b3-0",
+        "alt": "A pool villa in the island forest"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-krabey-island/b3-1",
+        "alt": "A sun deck over the sea"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-krabey-island/b3-2",
+        "alt": "A deck on the island's rocks"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-krabey-island/b3-3",
+        "alt": "A villa pool deck above the sea"
+      }
     ]
   }
 }

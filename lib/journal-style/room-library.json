@@ -5847,5 +5847,1291 @@
         "plungePool": true
       }
     ]
+  },
+  "ayana-komodo": {
+    "rooms": [
+      {
+        "name": "Rooms and suites",
+        "sleeps": null,
+        "facts": [
+          "205 rooms and suites"
+        ],
+        "lede": "Every room and suite has a view of the sea.",
+        "features": [
+          "Sea view"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "amanoi": {
+    "rooms": [
+      {
+        "name": "Pavilions",
+        "sleeps": null,
+        "facts": [
+          "9 freestanding Pavilions"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "23 Villas",
+          "2 Wellness Pool Villas"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Residences",
+        "sleeps": null,
+        "facts": [
+          "12 Residences of one to five bedrooms"
+        ],
+        "lede": "Among them the Ocean Pool Residence, three bedrooms over 925 square metres with its own spa.",
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "anantara-hua-hin": {
+    "rooms": [
+      {
+        "name": "Garden View and Deluxe Rooms",
+        "sleeps": null,
+        "facts": [
+          "Garden View, Deluxe Garden View and Deluxe Sea View"
+        ],
+        "lede": "Rooms over the gardens or the sea, with a terrace or a balcony.",
+        "features": [
+          "Terrace or balcony"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Pool Access Room",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Suites",
+        "sleeps": null,
+        "facts": [
+          "Lagoon View Junior Suite",
+          "Anantara Garden View Suite",
+          "Club Anantara Seaview Suite"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Two-Bedroom Family Suites",
+        "sleeps": null,
+        "facts": [
+          "Family Suite and Family Pool Suite"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Three Bedroom Seaview Penthouse",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "armendaris-ted-turner-reserve": {
+    "rooms": [
+      {
+        "name": "The Hacienda",
+        "sleeps": 8,
+        "facts": [
+          "4 bedrooms and 4.5 baths",
+          "About 6,000 sq ft",
+          "Booked as one house"
+        ],
+        "lede": "The house on the reserve, taken whole, with a private chef and a private guide.",
+        "features": [
+          "Private chef",
+          "Private guide"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "como-maalifushi": {
+    "rooms": [
+      {
+        "name": "Beach Villas and Suites",
+        "sleeps": null,
+        "facts": [
+          "One bedroom",
+          "On the island's west side"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Water Villas",
+        "sleeps": null,
+        "facts": [
+          "One bedroom"
+        ],
+        "lede": "Villas over the lagoon, each with its own pool; the Maalifushi Water Villa has two bedrooms.",
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two-Bedroom Beach House",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "COMO Residence",
+        "sleeps": null,
+        "facts": [
+          "Four bedrooms",
+          "Family villas take up to twelve"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "canvas-and-orchids-retreat": {
+    "rooms": [
+      {
+        "name": "Floating Tents",
+        "sleeps": null,
+        "facts": [
+          "13 tents on the river"
+        ],
+        "lede": "Tents moored on the Tatai River, reached by boat.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Family Tents",
+        "sleeps": null,
+        "facts": [
+          "5 tents on land"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "cape-weligama": {
+    "rooms": [
+      {
+        "name": "Villas",
+        "sleeps": null,
+        "facts": [
+          "23 villas",
+          "Luxury 130 sqm, Premier and Prestige 180 sqm, Grand 200 sqm"
+        ],
+        "lede": "Villas in stone walled gardens, each with a 15 metre private or shared pool.",
+        "features": [
+          "15 metre pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Pool Pavilions",
+        "sleeps": null,
+        "facts": [
+          "3 pavilions",
+          "130 sqm"
+        ],
+        "lede": null,
+        "features": [
+          "15 by 4 metre pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Cape Residences",
+        "sleeps": null,
+        "facts": [
+          "3 residences",
+          "310 sqm"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Suites",
+        "sleeps": null,
+        "facts": [
+          "16 suites around the Cove Pool",
+          "Junior 130 sqm, Master 150 sqm, Family 280 sqm"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "capella-ubud": {
+    "rooms": [
+      {
+        "name": "One Bedroom Tents",
+        "sleeps": 2,
+        "facts": [
+          "Terrace, Forest, Valley and Keliki Tents",
+          "23 tents in all"
+        ],
+        "lede": "Bill Bensley tents with indoor and outdoor rainshowers, a hammered copper bath and antique furnishings; the Keliki Tents have heated pools.",
+        "features": [
+          "Private pool",
+          "Copper bath",
+          "Indoor and outdoor rainshowers"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two Bedroom Lodge",
+        "sleeps": null,
+        "facts": [
+          "Two bedrooms"
+        ],
+        "lede": "For families and small groups, with a heated pool.",
+        "features": [
+          "Heated private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "cardamom-tented-camp": {
+    "rooms": [
+      {
+        "name": "Safari Tents",
+        "sleeps": null,
+        "facts": [
+          "Riverfront, Twin and Triple tents"
+        ],
+        "lede": "Tents with their own bathrooms and private decks over the river.",
+        "features": [
+          "Private deck",
+          "River views",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Exclusive Use",
+        "sleeps": null,
+        "facts": [
+          "The whole camp"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "ceylon-tea-trails": {
+    "rooms": [
+      {
+        "name": "Bungalow rooms",
+        "sleeps": null,
+        "facts": [
+          "Norwood 6, Tientsin 6, Castlereagh 5, Summerville 5, Dunkeld 5",
+          "Two nights minimum"
+        ],
+        "lede": "Master Suites, Garden Suites and Luxury Rooms in five planters' bungalows.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Dunkeld Owner's Cottage",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "cheval-blanc-randheli": {
+    "rooms": [
+      {
+        "name": "One Bedroom Villas",
+        "sleeps": 2,
+        "facts": [
+          "Water, Lagoon, Horizon, Garden Water and Island Villas"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Two Bedroom Villas",
+        "sleeps": 4,
+        "facts": [
+          "Garden Water, Lagoon Garden and Island Villas"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "The Private Island",
+        "sleeps": 8,
+        "facts": [
+          "Four bedrooms",
+          "About 2,200 m² on one hectare"
+        ],
+        "lede": "An island of its own with a 25 metre pool, a guest villa, private beaches and a resident team of Ambassadeurs.",
+        "features": [
+          "25 metre pool",
+          "Private beaches",
+          "Own jetty"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "conrad-bora-bora-nui": {
+    "rooms": [
+      {
+        "name": "Overwater Villas",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Hillside Lagoon View Suites",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Villas on the land",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Presidential Overwater Villa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "gili-lankanfushi": {
+    "rooms": [
+      {
+        "name": "Villa Suites",
+        "sleeps": null,
+        "facts": [
+          "One or two bedrooms",
+          "With or without a pool"
+        ],
+        "lede": "Overwater villas, some with rooftop terraces and a Maldivian swing.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Lagoon Villas and Residences",
+        "sleeps": null,
+        "facts": [
+          "Gili Lagoon Villa, Retreat and Residence",
+          "Residences with or without a pool"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Crusoe Residences",
+        "sleeps": null,
+        "facts": [
+          "Sunset and Island View",
+          "Reached only by boat"
+        ],
+        "lede": "Standalone over the lagoon, with catamaran nets and overwater hammocks.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "The Private Reserve",
+        "sleeps": null,
+        "facts": [
+          "Four bedrooms over the water"
+        ],
+        "lede": null,
+        "features": [
+          "Personal butler"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "intercontinental-tahiti-resort-spa": {
+    "rooms": [
+      {
+        "name": "Classic Room",
+        "sleeps": 3,
+        "facts": [
+          "26 sq m"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Premium and Premium Deluxe Rooms",
+        "sleeps": null,
+        "facts": [
+          "37 sq m"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Junior Suite",
+        "sleeps": 3,
+        "facts": [
+          "44 sq m"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "One Bedroom Suite Ocean View",
+        "sleeps": 3,
+        "facts": [
+          "120 sq m"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Overwater Bungalows",
+        "sleeps": null,
+        "facts": [
+          "37 sq m",
+          "Ocean View or Moorea View"
+        ],
+        "lede": "Bungalows over the lagoon looking toward Moorea.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "joali-being": {
+    "rooms": [
+      {
+        "name": "Beach Villas",
+        "sleeps": null,
+        "facts": [],
+        "lede": "Villas with a private pool and direct access to the beach.",
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Ocean Villas",
+        "sleeps": null,
+        "facts": [],
+        "lede": "Villas over the water with a private pool and steps into the sea.",
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "ladder-ted-turner-reserve": {
+    "rooms": [
+      {
+        "name": "The Country House",
+        "sleeps": 8,
+        "facts": [
+          "4 bedrooms and 4 baths",
+          "Booked as one house"
+        ],
+        "lede": "The ranch house, taken whole, with a private chef and server, a guide, all meals and transport on the ranch.",
+        "features": [
+          "Private chef",
+          "Private guide",
+          "All meals"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "mt-isthmus-villa": {
+    "rooms": [
+      {
+        "name": "Mt Isthmus Villa",
+        "sleeps": null,
+        "facts": [
+          "One villa, taken whole"
+        ],
+        "lede": null,
+        "features": [
+          "Personal chef",
+          "Villa host"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "nayara-alto-atacama": {
+    "rooms": [
+      {
+        "name": "Quitor Rooms",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Catur Suites",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Tilo Villas",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "niyama-private-islands-maldives": {
+    "rooms": [
+      {
+        "name": "Beach Villas",
+        "sleeps": null,
+        "facts": [
+          "Beach Villa and Deluxe Beach Villa",
+          "135 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Beach Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "190 m²"
+        ],
+        "lede": null,
+        "features": [
+          "Beachfront plunge pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Over Water Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "175 to 190 m²",
+          "Deluxe: up to 3 adults and 1 child"
+        ],
+        "lede": null,
+        "features": [
+          "Plunge pool",
+          "Jacuzzi over the lagoon in the Deluxe"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Family Beach Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "255 m²",
+          "Up to 4 adults and 1 child"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Pavilions",
+        "sleeps": null,
+        "facts": [
+          "With separate living spaces"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "one-only-reethi-rah": {
+    "rooms": [
+      {
+        "name": "Beach Villas",
+        "sleeps": 4,
+        "facts": [
+          "108 to 126 m²",
+          "With or without a pool"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Water Villas",
+        "sleeps": null,
+        "facts": [
+          "With and without pools",
+          "Grand Water Villa with Pool"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Grand Beach Villa with Pool",
+        "sleeps": 6,
+        "facts": [
+          "368 m²",
+          "Two bedrooms"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two Villa Residence with Pool",
+        "sleeps": 8,
+        "facts": [
+          "391 m²",
+          "Two standalone villas"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Grand Residence",
+        "sleeps": 12,
+        "facts": [
+          "Three bedrooms",
+          "436 m² inside, 639 m² outside"
+        ],
+        "lede": "With a 210 m² infinity pool, a heated jacuzzi and a kids' pool.",
+        "features": [
+          "Infinity pool",
+          "Heated jacuzzi"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "paroa-bay": {
+    "rooms": [
+      {
+        "name": "Tarāpunga Villa",
+        "sleeps": 6,
+        "facts": [
+          "Three bedrooms"
+        ],
+        "lede": "The premier villa above a secluded inlet, open plan, with a deck and infinity pool over the Bay of Islands.",
+        "features": [
+          "Infinity pool",
+          "Golf cart for the estate",
+          "Transfers to Russell"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "The Vineyard Cottage",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Off-grid cabins",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "paws-up-resort": {
+    "rooms": [
+      {
+        "name": "Luxury Homes",
+        "sleeps": null,
+        "facts": [
+          "Meadow Homes, Big Timber, Wilderness Estates and Historic Homes"
+        ],
+        "lede": null,
+        "features": [
+          "Vehicle with each home",
+          "Chef and butler"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Safari Tents",
+        "sleeps": null,
+        "facts": [
+          "Several camps, among them Creekside and Cliffside"
+        ],
+        "lede": null,
+        "features": [
+          "Chef and butler"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Green O",
+        "sleeps": null,
+        "facts": [
+          "Adults only"
+        ],
+        "lede": "Modern forest houses in an adults only enclave.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "pearl-resort-le-bora-bora": {
+    "rooms": [
+      {
+        "name": "Garden Villa with Pool",
+        "sleeps": null,
+        "facts": [
+          "1,313 sq ft"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Beach Villa with Pool",
+        "sleeps": null,
+        "facts": [
+          "1,550 sq ft"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Overwater Bungalows",
+        "sleeps": null,
+        "facts": [
+          "850 sq ft",
+          "Overwater, Lagoon and Otemanu"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Pool Overwater Villa",
+        "sleeps": null,
+        "facts": [
+          "1,001 sq ft"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "End of Pontoon Overwater Suite with Pool",
+        "sleeps": null,
+        "facts": [
+          "1,830 sq ft"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Royal Beach Villa with Pool",
+        "sleeps": null,
+        "facts": [
+          "Two bedrooms",
+          "4,693 sq ft"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "phulay-bay-ritz-carlton-reserve": {
+    "rooms": [
+      {
+        "name": "Pavilions and Villas",
+        "sleeps": null,
+        "facts": [
+          "All suites",
+          "Ocean or garden views"
+        ],
+        "lede": "Every pavilion and villa has its own pool.",
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "pu-u-hoko-ranch": {
+    "rooms": [
+      {
+        "name": "Lodge Rooms",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Cottage",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Guest House",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Farmhouse",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Exclusive Use",
+        "sleeps": null,
+        "facts": [
+          "The whole ranch"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "six-senses-con-dao": {
+    "rooms": [
+      {
+        "name": "Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "Ocean View Duplex, Beachfront and Family Pool Villas"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Ocean Front Deluxe Villa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Residences",
+        "sleeps": null,
+        "facts": [
+          "Two and three bedrooms"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "six-senses-kanuhura": {
+    "rooms": [
+      {
+        "name": "Beach Villas",
+        "sleeps": null,
+        "facts": [
+          "Beach, Sunrise Beach and Sunset Beach Villas"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Overwater Villa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Family Villa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Retreat Residence",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "six-senses-ninh-van-bay": {
+    "rooms": [
+      {
+        "name": "Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "Hilltop, Beachfront, Rock and Water Pool Villas"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Family Beach Villa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "The Rock Retreat",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "trisara": {
+    "rooms": [
+      {
+        "name": "Ocean View Pool Junior Suite",
+        "sleeps": 2,
+        "facts": [
+          "135 sqm"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Ocean View and Oceanfront Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "240 sqm"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two Bedroom Oceanfront Pool Villa",
+        "sleeps": null,
+        "facts": [
+          "300 sqm"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Pool Residences",
+        "sleeps": null,
+        "facts": [
+          "Ten types",
+          "Three bedrooms and more"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "ulum-moab": {
+    "rooms": [
+      {
+        "name": "Suites",
+        "sleeps": null,
+        "facts": [
+          "Luxury, Stargazer, Premium and Accessible Suites"
+        ],
+        "lede": "Canvas suites with their own bathrooms and king size beds, looking out to the red rock.",
+        "features": [
+          "King size bed",
+          "En suite"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "zannier-phum-baitang": {
+    "rooms": [
+      {
+        "name": "Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "20 villas",
+          "130 sqm"
+        ],
+        "lede": null,
+        "features": [
+          "Garden",
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Terrace Villas",
+        "sleeps": null,
+        "facts": [
+          "25 villas",
+          "80 sqm"
+        ],
+        "lede": null,
+        "features": [
+          "Large terrace"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "six-senses-krabey-island": {
+    "rooms": [
+      {
+        "name": "Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "Ocean, Oceanfront and Hideaway Pool Villas"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two Bedroom Pool Villa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Oceanfront Suite Villa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Private Residences",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
   }
 }

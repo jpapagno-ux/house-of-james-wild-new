@@ -15,7 +15,6 @@ export const APPROX: Record<string, { lat: number; lng: number; where: string }>
   "kalinaw-resort": { lat: 9.79, lng: 126.155, where: "General Luna, Siargao" },
   "amun-ini-beach-resort-and-spa": { lat: 9.745, lng: 124.575, where: "Anda, Bohol" },
   "amorita-resort": { lat: 9.548, lng: 123.776, where: "Alona Beach, Panglao" },
-  "bintana-sa-paraiso": { lat: 9.25, lng: 124.72, where: "Mambajao, Camiguin" },
   "the-bayleaf-intramuros": { lat: 14.59, lng: 120.975, where: "Intramuros, Manila" },
 };
 
@@ -37,7 +36,6 @@ export const ISLAND_GROUPS: { key: string; name: string; line: string; slugs: st
   { key: "cuyo", name: "Cuyo and the Sulu Sea", line: "Private islands reached by their own flights or by helicopter.", slugs: ["amanpulo", "banwa-private-island"] },
   { key: "siargao", name: "Siargao", line: "Cloud 9 and the surf coast. The Department of Tourism gives March to September for the dry season and September to November for surf.", slugs: ["nay-palad-hideaway", "kalinaw-resort"] },
   { key: "visayas", name: "Bohol and Negros", line: "Panglao's beaches, Anda's quiet east coast and Dauin across from Apo Island.", slugs: ["amorita-resort", "amun-ini-beach-resort-and-spa", "atmosphere-resorts-and-spa"] },
-  { key: "camiguin", name: "Camiguin", line: "A small volcanic island in the Bohol Sea, with hot springs and White Island offshore.", slugs: ["bintana-sa-paraiso"] },
 ];
 
 /** First and last nights. Puerto Princesa is a known gap: no house hotel is filed there yet (James, 2 Nov 2026). */

@@ -68,6 +68,10 @@
   "nomade-temple-madrid": {
    "name": "Nômade Temple Madrid",
    "note": "James, 2026-11-27: the library name carries \"Coming 2025\"; the hotel is open on Gran Vía (nomadetemple.com)."
+  },
+  "bintana-sa-paraiso": {
+   "hide": true,
+   "note": "James, 2026-11-27: \"Drop it\". Bintana sa Paraiso comes off the site; /stays/bintana-sa-paraiso redirects to /destinations/asia/philippines."
   }
  }
 }

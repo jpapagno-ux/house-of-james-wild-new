@@ -228,5 +228,10 @@
     "source": "/stays/blue-reef",
     "destination": "/stays/blue-reef-island",
     "permanent": false
+  },
+  {
+    "source": "/stays/bintana-sa-paraiso",
+    "destination": "/destinations/asia/philippines",
+    "permanent": false
   }
 ]

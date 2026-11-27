@@ -7133,5 +7133,384 @@
         "plungePool": false
       }
     ]
+  },
+  "baymanhi-exuma": {
+    "rooms": [
+      {
+        "name": "Beach Bungalows",
+        "sleeps": null,
+        "facts": [
+          "With or without an extended veranda"
+        ],
+        "lede": "Bungalows on the beach.",
+        "features": [
+          "Beachfront"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Lagoon Bungalows",
+        "sleeps": null,
+        "facts": [
+          "With or without an extended veranda",
+          "Lagoon Bungalow East"
+        ],
+        "lede": "Bungalows facing the lagoon.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "panorama-glass-lodge": {
+    "rooms": [
+      {
+        "name": "South Iceland lodges",
+        "sleeps": 2,
+        "facts": [
+          "Alva, Freya, Odin and Thor",
+          "One king bed",
+          "20 m²"
+        ],
+        "lede": null,
+        "features": [
+          "Private hot tub",
+          "Sauna",
+          "Kitchen",
+          "Terrace"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "West Iceland lodges",
+        "sleeps": 2,
+        "facts": [
+          "Njord and Heimdall",
+          "One king bed",
+          "20 m²"
+        ],
+        "lede": null,
+        "features": [
+          "Private hot tub",
+          "Sauna",
+          "Kitchen"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Skadi",
+        "sleeps": 3,
+        "facts": [
+          "Superior or Triple",
+          "25 m²"
+        ],
+        "lede": null,
+        "features": [
+          "Private hot tub",
+          "Sauna"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Frigg",
+        "sleeps": 5,
+        "facts": [
+          "Premium or Family",
+          "36 m²"
+        ],
+        "lede": null,
+        "features": [
+          "Private hot tub",
+          "Sauna"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Exclusive use",
+        "sleeps": null,
+        "facts": [
+          "A whole site, south or west"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "plataran-borobudur": {
+    "rooms": [
+      {
+        "name": "Founder's Home",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Duplex Classic",
+        "sleeps": null,
+        "facts": [
+          "Two bedrooms"
+        ],
+        "lede": "Family villas with garden pools.",
+        "features": [
+          "Garden pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Pool Villas",
+        "sleeps": null,
+        "facts": [
+          "Borobudur, Residence and Exclusive Modern Pool Villas"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Garden Plunge Pool Villa",
+        "sleeps": null,
+        "facts": [],
+        "lede": "Looking over the gardens and the Menoreh Hills.",
+        "features": [
+          "Plunge pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "under-canvas-grand-canyon": {
+    "rooms": [
+      {
+        "name": "Safari and Deluxe Tents",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Stargazer Tents",
+        "sleeps": null,
+        "facts": [],
+        "lede": "Tents with a viewing window overhead for the night sky.",
+        "features": [
+          "Overhead window"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Suite Tents",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Kids Tents",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Accessible Tents",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "uxua-casa-hotel-spa": {
+    "rooms": [
+      {
+        "name": "Fisherman Casa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Treehouse Casa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Gulab Mahal Casa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Seu Pedrinho Casa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Eugenia Casa",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "ion-adventure-hotel": {
+    "rooms": [
+      {
+        "name": "Single Sub-Parterre",
+        "sleeps": 1,
+        "facts": [
+          "Queen bed",
+          "15 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Classic and Standard Rooms",
+        "sleeps": 2,
+        "facts": [
+          "Double or twin",
+          "20 m²",
+          "Mountain view"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Deluxe Double",
+        "sleeps": 2,
+        "facts": [
+          "King bed",
+          "20 m²",
+          "Mountain view"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Patio Room",
+        "sleeps": 2,
+        "facts": [
+          "King bed",
+          "25 to 28 m²"
+        ],
+        "lede": null,
+        "features": [
+          "Patio",
+          "Mountain view"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Junior Suite",
+        "sleeps": 2,
+        "facts": [
+          "King bed",
+          "24 to 30 m²",
+          "Mountain view"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Lava Suite",
+        "sleeps": 2,
+        "facts": [
+          "King bed",
+          "54 m²",
+          "Lava field view"
+        ],
+        "lede": null,
+        "features": [
+          "Private sauna"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Aurora Suite",
+        "sleeps": 2,
+        "facts": [
+          "King bed",
+          "65 m²",
+          "Lake or mountain view"
+        ],
+        "lede": null,
+        "features": [
+          "Private sauna"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "shinta-mani-wild": {
+    "rooms": [
+      {
+        "name": "Tents",
+        "sleeps": 2,
+        "facts": [
+          "15 tents along the river"
+        ],
+        "lede": "Stilted, air conditioned tents by Bill Bensley, each with a large porch and an outdoor tub, placed to be completely private.",
+        "features": [
+          "Outdoor tub",
+          "Private deck",
+          "Personal butler",
+          "All meals included"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
   }
 }

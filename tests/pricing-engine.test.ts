@@ -238,3 +238,10 @@ test("single occupancy: one adult alone pays the single rate where filed; everyo
   assert.equal(ok(quote(base, ROOM, req({ adults: 1 }))).roomSubtotalMinor, 202500); // no single rate filed
   assert.equal(ok(quote(c, ROOM, req({ adults: 1, childAges: [8] }))).nights[0].baseMinor, 67500); // an adult with a child is not single occupancy
 });
+
+test("a fee per person per stay is charged once for each guest, whatever the nights", () => {
+  const c = card({ taxes: [{ id: "cons", name: "Conservation contribution", kind: "fee", basis: "per_person_per_stay", amountMinor: 15000, included: false }] });
+  const fee = (q: ReturnType<typeof ok>) => q.charges.find((x) => x.id === "cons")!.amountMinor;
+  assert.equal(fee(ok(quote(c, ROOM, req({ adults: 2 })))), 30000);
+  assert.equal(fee(ok(quote(c, ROOM, req({ adults: 1 })))), 15000);
+});

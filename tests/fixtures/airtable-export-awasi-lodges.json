@@ -1,0 +1,2206 @@
+{
+ "properties": [
+  {
+   "id": "recKbcJquUbzhmwqi",
+   "cellValuesByFieldId": {
+    "fldD0Dxwcn29tD2bH": "STY-2026-000027",
+    "fldNjVZNl6b4jSsPb": "Awasi Patagonia",
+    "fldwGhL5wBPbo5DGk": "awasi-patagonia",
+    "fldqoRn5u9SQm33pD": "America/Punta_Arenas",
+    "fldH6NwiLn0jOH7Vq": "Request",
+    "fldn4H89LVrYUaY3C": "Supplier-direct",
+    "fldPw6HVzOn0Wu81W": "Lodge",
+    "fldJDrqrfzXtpyJDq": "Rate Card",
+    "fldokqGsitlIT7C2L": "Tax exempt for non-resident guests paying in foreign currency, per the sheet. Villa Cenit is on sale from 15 December 2026, so its rates start then. House commission 20% (private)."
+   }
+  },
+  {
+   "id": "recGrM3US0Qt5DesN",
+   "cellValuesByFieldId": {
+    "fldD0Dxwcn29tD2bH": "STY-2026-014316",
+    "fldNjVZNl6b4jSsPb": "Awasi Iguazú",
+    "fldwGhL5wBPbo5DGk": "iguazu",
+    "fldqoRn5u9SQm33pD": "America/Argentina/Buenos_Aires",
+    "fldH6NwiLn0jOH7Vq": "Request",
+    "fldn4H89LVrYUaY3C": "Supplier-direct",
+    "fldPw6HVzOn0Wu81W": "Lodge",
+    "fldJDrqrfzXtpyJDq": "Rate Card",
+    "fldokqGsitlIT7C2L": "VAT of 10.5% for foreign non-residents is added on top of the sheet's rates (James, 26 Nov 2026); Argentine residents pay 21%. The festive minimum stay is not printed on the sheet. House commission 20% (private)."
+   }
+  },
+  {
+   "id": "rec2Rh3DXh5T06PDL",
+   "cellValuesByFieldId": {
+    "fldD0Dxwcn29tD2bH": "STY-2026-669559",
+    "fldNjVZNl6b4jSsPb": "Awasi Mendoza",
+    "fldwGhL5wBPbo5DGk": "awasi-mendoza",
+    "fldqoRn5u9SQm33pD": "America/Argentina/Mendoza",
+    "fldH6NwiLn0jOH7Vq": "Request",
+    "fldn4H89LVrYUaY3C": "Supplier-direct",
+    "fldPw6HVzOn0Wu81W": "Lodge",
+    "fldJDrqrfzXtpyJDq": "Rate Card",
+    "fldokqGsitlIT7C2L": "VAT of 10.5% for foreign non-residents is added on top of the sheet's rates (James, 26 Nov 2026); Argentine residents pay 21%. The festive minimum stay is not printed on the sheet. House commission 20% (private)."
+   }
+  },
+  {
+   "id": "recg5JEJjiTMzSzYj",
+   "cellValuesByFieldId": {
+    "fldD0Dxwcn29tD2bH": "STY-2026-000028",
+    "fldNjVZNl6b4jSsPb": "Awasi Santa Catarina",
+    "fldwGhL5wBPbo5DGk": "awasi-santa-catarina",
+    "fldqoRn5u9SQm33pD": "America/Sao_Paulo",
+    "fldH6NwiLn0jOH7Vq": "Request",
+    "fldn4H89LVrYUaY3C": "Supplier-direct",
+    "fldPw6HVzOn0Wu81W": "Lodge",
+    "fldJDrqrfzXtpyJDq": "Rate Card",
+    "fldokqGsitlIT7C2L": "A 3% service fee on daily room rates is added on top, per the sheet. Arvoredo, Tinguá, Costa Esmeralda and Ponta dos Ganchos also sleep four: the sheet's fourth-guest amount differs from the third's, which the card cannot yet price, so four guests are on request. The festive minimum stay is not printed on the sheet. House commission 20% (private)."
+   }
+  }
+ ],
+ "roomTypes": [
+  {
+   "id": "recaGFEiNvvVJvanz",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "villa",
+    "fldcD8aIXGKDnMnx1": "Villa",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recKbcJquUbzhmwqi"
+    ]
+   }
+  },
+  {
+   "id": "recMqLmGA0vg0H2op",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "master-villa",
+    "fldcD8aIXGKDnMnx1": "Master Villa",
+    "fldtzkzdgBR8VYSGX": 4,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 4,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recKbcJquUbzhmwqi"
+    ]
+   }
+  },
+  {
+   "id": "recH4Qzq0dzdi0Z7E",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "villa-cenit",
+    "fldcD8aIXGKDnMnx1": "Villa Cenit",
+    "fldtzkzdgBR8VYSGX": 5,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 5,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recKbcJquUbzhmwqi"
+    ]
+   }
+  },
+  {
+   "id": "recEDEUJyZRlQTn2X",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "villa",
+    "fldcD8aIXGKDnMnx1": "Villa",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recGrM3US0Qt5DesN"
+    ]
+   }
+  },
+  {
+   "id": "recUN3kDmdgrhKBol",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "master-villa",
+    "fldcD8aIXGKDnMnx1": "Master Villa",
+    "fldtzkzdgBR8VYSGX": 4,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 4,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recGrM3US0Qt5DesN"
+    ]
+   }
+  },
+  {
+   "id": "recatJEGXRRSBOTKM",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "lujo",
+    "fldcD8aIXGKDnMnx1": "Lujo",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "rec2Rh3DXh5T06PDL"
+    ]
+   }
+  },
+  {
+   "id": "rec9ADzZUTXINKFwe",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "front-row",
+    "fldcD8aIXGKDnMnx1": "Front Row",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "rec2Rh3DXh5T06PDL"
+    ]
+   }
+  },
+  {
+   "id": "recoRTvB1QS6vswMN",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "vineyard-villa",
+    "fldcD8aIXGKDnMnx1": "Vineyard Villa",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "rec2Rh3DXh5T06PDL"
+    ]
+   }
+  },
+  {
+   "id": "recQpUfi4lpxnzOBo",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "two-bedroom-villa",
+    "fldcD8aIXGKDnMnx1": "Two Bedroom Villa",
+    "fldtzkzdgBR8VYSGX": 4,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 4,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "rec2Rh3DXh5T06PDL"
+    ]
+   }
+  },
+  {
+   "id": "recGOyTTnEs1TZMQD",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "anhatomirim",
+    "fldcD8aIXGKDnMnx1": "Anhatomirim",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recg5JEJjiTMzSzYj"
+    ]
+   }
+  },
+  {
+   "id": "recPcyLPjWZUFo3XV",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "sissial",
+    "fldcD8aIXGKDnMnx1": "Sissial",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recg5JEJjiTMzSzYj"
+    ]
+   }
+  },
+  {
+   "id": "recakm4DYe9HEJUSP",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "arvoredo",
+    "fldcD8aIXGKDnMnx1": "Arvoredo",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recg5JEJjiTMzSzYj"
+    ]
+   }
+  },
+  {
+   "id": "reccnuCjkVLKBEOCd",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "tingua",
+    "fldcD8aIXGKDnMnx1": "Tinguá",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recg5JEJjiTMzSzYj"
+    ]
+   }
+  },
+  {
+   "id": "recl6Ut5kL5rvLnI5",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "costa-esmeralda",
+    "fldcD8aIXGKDnMnx1": "Costa Esmeralda",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recg5JEJjiTMzSzYj"
+    ]
+   }
+  },
+  {
+   "id": "recDCzeNVVrHaDQ0w",
+   "cellValuesByFieldId": {
+    "flda8Eu0PJ9X6p3CS": "ponta-dos-ganchos",
+    "fldcD8aIXGKDnMnx1": "Ponta dos Ganchos",
+    "fldtzkzdgBR8VYSGX": 3,
+    "fldKBsBPbdUT6RQ2X": 0,
+    "fldPpN9QzQxopG5eA": 3,
+    "fldRfCye0UJ2d16HR": true,
+    "fldJBiCovoZYpeeWP": [
+     "recg5JEJjiTMzSzYj"
+    ]
+   }
+  }
+ ],
+ "ratePlans": [
+  {
+   "id": "rectwECnK9mY2JHKG",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Puerto Natales airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recaGFEiNvvVJvanz"
+    ]
+   }
+  },
+  {
+   "id": "recFeetzS2p8pp0DU",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Puerto Natales airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recMqLmGA0vg0H2op"
+    ]
+   }
+  },
+  {
+   "id": "recfghrQHS2w71Bbx",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Puerto Natales airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recH4Qzq0dzdi0Z7E"
+    ]
+   }
+  },
+  {
+   "id": "recvkb3J0KxnE4z7C",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Puerto Iguazú or Foz do Iguaçu airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recEDEUJyZRlQTn2X"
+    ]
+   }
+  },
+  {
+   "id": "rece8U6CZVig3kmkM",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, and private transfers to and from Puerto Iguazú or Foz do Iguaçu airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recUN3kDmdgrhKBol"
+    ]
+   }
+  },
+  {
+   "id": "recOCI6yfXGYhRY2T",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, wine tours included, and private transfers to and from Mendoza airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recatJEGXRRSBOTKM"
+    ]
+   }
+  },
+  {
+   "id": "recg58Pkq18k5mEU1",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, wine tours included, and private transfers to and from Mendoza airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "rec9ADzZUTXINKFwe"
+    ]
+   }
+  },
+  {
+   "id": "reczBquJpIt2Dz38t",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, wine tours included, and private transfers to and from Mendoza airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recoRTvB1QS6vswMN"
+    ]
+   }
+  },
+  {
+   "id": "recCdy2VC2MYORhf3",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, wine tours included, and private transfers to and from Mendoza airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recQpUfi4lpxnzOBo"
+    ]
+   }
+  },
+  {
+   "id": "rec6033pBM5rRGmGE",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, boat adventures and spa treatments, and private transfers to and from Florianópolis airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recGOyTTnEs1TZMQD"
+    ]
+   }
+  },
+  {
+   "id": "recZ1QqBHxo73up24",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, boat adventures and spa treatments, and private transfers to and from Florianópolis airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recPcyLPjWZUFo3XV"
+    ]
+   }
+  },
+  {
+   "id": "reciv9RXPrOEkIGMZ",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, boat adventures and spa treatments, and private transfers to and from Florianópolis airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recakm4DYe9HEJUSP"
+    ]
+   }
+  },
+  {
+   "id": "recE5hhQzFu2gxXzO",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, boat adventures and spa treatments, and private transfers to and from Florianópolis airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "reccnuCjkVLKBEOCd"
+    ]
+   }
+  },
+  {
+   "id": "rec1iJ6adRYbJwFuM",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, boat adventures and spa treatments, and private transfers to and from Florianópolis airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recl6Ut5kL5rvLnI5"
+    ]
+   }
+  },
+  {
+   "id": "recqJwWvGywkYnosS",
+   "cellValuesByFieldId": {
+    "fldGTMoFrQFxutqE6": "fh",
+    "fld0gPNljaifiqc1n": "Fully hosted",
+    "fldp3D7qJOenqxhQo": "Fully inclusive",
+    "fldPgvCAb0DBGU1YQ": "Refundable",
+    "fldAANASFiqSJxPe1": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, boat adventures and spa treatments, and private transfers to and from Florianópolis airport.",
+    "fldPVTDZlA75QMvbe": true,
+    "fldJSQcpHA8NTciVk": [
+     "recDCzeNVVrHaDQ0w"
+    ]
+   }
+  }
+ ],
+ "cards": [
+  {
+   "id": "rec26M9ta8NsAB2Th",
+   "cellValuesByFieldId": {
+    "fldJum6vCEkeKNESP": "2026-2027-V1",
+    "fldQ3O60392ByqpET": "Published",
+    "fldNGNSZ6FgT6FANb": "USD",
+    "fldOLmHRvvPylXjvm": "2026-10-01",
+    "fldSnFiC03lYCrFJv": "2027-09-30",
+    "fldC6tJYcgh5buiXc": "Awasi Patagonia Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/10/Awasi-Patagonia_Fully-Hosted-Rates_2026-2027-1.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+    "fldnth7DRrQxKX7gp": 0.5,
+    "flduDBHCrnixoEnwX": 30,
+    "fldLicyNay0J7QUhE": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
+    "fldoisPzvpMjxR7a5": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; 120:25, 89:50, 60:100",
+    "fldZuYDcij1wBcHgG": 1,
+    "fld1XEDdmw71rH865": 1,
+    "fld2WUPdKEbun6uKO": "2026-11-26T18:15:00.000Z",
+    "fld2GLjAnpzzDcK1K": [
+     "recKbcJquUbzhmwqi"
+    ]
+   }
+  },
+  {
+   "id": "recwC0h0Z0gtTyySH",
+   "cellValuesByFieldId": {
+    "fldJum6vCEkeKNESP": "2026-2027-V1",
+    "fldQ3O60392ByqpET": "Published",
+    "fldNGNSZ6FgT6FANb": "USD",
+    "fldOLmHRvvPylXjvm": "2026-10-01",
+    "fldSnFiC03lYCrFJv": "2027-09-30",
+    "fldC6tJYcgh5buiXc": "Awasi Iguazú Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Iguazu_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+    "fldnth7DRrQxKX7gp": 0.5,
+    "flduDBHCrnixoEnwX": 30,
+    "fldLicyNay0J7QUhE": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
+    "fldoisPzvpMjxR7a5": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; High 2026-12-18..2027-02-28 = 44:50, 30:100; 30:50, 15:100",
+    "fldZuYDcij1wBcHgG": 1,
+    "fld1XEDdmw71rH865": 1,
+    "fld2WUPdKEbun6uKO": "2026-11-26T18:15:00.000Z",
+    "fld2GLjAnpzzDcK1K": [
+     "recGrM3US0Qt5DesN"
+    ]
+   }
+  },
+  {
+   "id": "recgD5KB1IAirXSo9",
+   "cellValuesByFieldId": {
+    "fldJum6vCEkeKNESP": "2026-2027-V1",
+    "fldQ3O60392ByqpET": "Published",
+    "fldNGNSZ6FgT6FANb": "USD",
+    "fldOLmHRvvPylXjvm": "2026-10-01",
+    "fldSnFiC03lYCrFJv": "2027-09-30",
+    "fldC6tJYcgh5buiXc": "Awasi Mendoza Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Mendoza_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+    "fldnth7DRrQxKX7gp": 0.5,
+    "flduDBHCrnixoEnwX": 30,
+    "fldLicyNay0J7QUhE": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
+    "fldoisPzvpMjxR7a5": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; High 2026-10-01..2027-04-30 = 44:50, 30:100; 30:50, 15:100",
+    "fldZuYDcij1wBcHgG": 1,
+    "fld1XEDdmw71rH865": 1,
+    "fld2WUPdKEbun6uKO": "2026-11-26T18:15:00.000Z",
+    "fld2GLjAnpzzDcK1K": [
+     "rec2Rh3DXh5T06PDL"
+    ]
+   }
+  },
+  {
+   "id": "recmaHsmjgeHGSinP",
+   "cellValuesByFieldId": {
+    "fldJum6vCEkeKNESP": "2026-2027-V1",
+    "fldQ3O60392ByqpET": "Published",
+    "fldNGNSZ6FgT6FANb": "USD",
+    "fldOLmHRvvPylXjvm": "2026-10-01",
+    "fldSnFiC03lYCrFJv": "2027-09-30",
+    "fldC6tJYcgh5buiXc": "Awasi Santa Catarina Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Santa-Catarina_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+    "fldnth7DRrQxKX7gp": 0.5,
+    "flduDBHCrnixoEnwX": 30,
+    "fldLicyNay0J7QUhE": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
+    "fldoisPzvpMjxR7a5": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; High 2026-11-01..2027-03-31 = 44:50, 30:100; 30:50, 15:100",
+    "fldZuYDcij1wBcHgG": 1,
+    "fld1XEDdmw71rH865": 1,
+    "fld2WUPdKEbun6uKO": "2026-11-26T18:15:00.000Z",
+    "fld2GLjAnpzzDcK1K": [
+     "recg5JEJjiTMzSzYj"
+    ]
+   }
+  }
+ ],
+ "rates": [
+  {
+   "id": "recSx9aG5PeczlmGA",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-11 to 2027-02",
+    "fldXs26HOWuPXJ2Fz": "2026-11-01",
+    "fldEhCN4nLoa4bxZr": "2027-02-28",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 5320,
+    "fldWkR0xbRaQBYJiY": 1080,
+    "fldDufeI0oKqOgbuN": 4000,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recaGFEiNvvVJvanz"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rectwECnK9mY2JHKG"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "rec4SNtpiu9fIHwFe",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder October 2026-10 to 2026-10",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2026-10-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3950,
+    "fldWkR0xbRaQBYJiY": 800,
+    "fldDufeI0oKqOgbuN": 2970,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recaGFEiNvvVJvanz"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rectwECnK9mY2JHKG"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "rec3PNRzgDcDVsQof",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2027-03 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2027-03-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3950,
+    "fldWkR0xbRaQBYJiY": 800,
+    "fldDufeI0oKqOgbuN": 2970,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recaGFEiNvvVJvanz"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rectwECnK9mY2JHKG"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recCoLZ3RbLvI68Si",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-05 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2565,
+    "fldWkR0xbRaQBYJiY": 525,
+    "fldDufeI0oKqOgbuN": 1930,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recaGFEiNvvVJvanz"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rectwECnK9mY2JHKG"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recl795L0LIbFNbeE",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-11 to 2027-02",
+    "fldXs26HOWuPXJ2Fz": "2026-11-01",
+    "fldEhCN4nLoa4bxZr": "2027-02-28",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 8650,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recMqLmGA0vg0H2op"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recFeetzS2p8pp0DU"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recnpkopmZupIq7V2",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder October 2026-10 to 2026-10",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2026-10-31",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 6670,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recMqLmGA0vg0H2op"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recFeetzS2p8pp0DU"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recUPWkQ1Q0BOV3QM",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2027-03 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2027-03-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 6670,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recMqLmGA0vg0H2op"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recFeetzS2p8pp0DU"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "rec3nidxUMptuPA9q",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-05 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 4335,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recMqLmGA0vg0H2op"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recFeetzS2p8pp0DU"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recSU7ibw76wcbVF5",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-12 to 2027-02",
+    "fldXs26HOWuPXJ2Fz": "2026-12-15",
+    "fldEhCN4nLoa4bxZr": "2027-02-28",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 9950,
+    "fldWkR0xbRaQBYJiY": 2490,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recH4Qzq0dzdi0Z7E"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recfghrQHS2w71Bbx"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recLMEsujfBIR7oGp",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2027-03 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2027-03-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 7670,
+    "fldWkR0xbRaQBYJiY": 1920,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recH4Qzq0dzdi0Z7E"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recfghrQHS2w71Bbx"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recQmOc1tWeyqyEKB",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-05 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 4985,
+    "fldWkR0xbRaQBYJiY": 1250,
+    "fldpsSFpFEG5xUQvX": 3,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "rec26M9ta8NsAB2Th"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recH4Qzq0dzdi0Z7E"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recfghrQHS2w71Bbx"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recZjWcQgC4oBFwB7",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3390,
+    "fldWkR0xbRaQBYJiY": 690,
+    "fldDufeI0oKqOgbuN": 2550,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recwC0h0Z0gtTyySH"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recEDEUJyZRlQTn2X"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recvkb3J0KxnE4z7C"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recUfcCVEuJegKOck",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2027-05 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2885,
+    "fldWkR0xbRaQBYJiY": 585,
+    "fldDufeI0oKqOgbuN": 2170,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recwC0h0Z0gtTyySH"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recEDEUJyZRlQTn2X"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recvkb3J0KxnE4z7C"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recFDRkDaPxu4lPe8",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 3,
+    "fldyhI3g4yLgjh6Pe": 5800,
+    "fldWkR0xbRaQBYJiY": 970,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recwC0h0Z0gtTyySH"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recUN3kDmdgrhKBol"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rece8U6CZVig3kmkM"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recbGee3WTGyXsGrq",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder 2027-05 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 3,
+    "fldyhI3g4yLgjh6Pe": 4895,
+    "fldWkR0xbRaQBYJiY": 1225,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recwC0h0Z0gtTyySH"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recUN3kDmdgrhKBol"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rece8U6CZVig3kmkM"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recERo9Ch0wBpmQ3N",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2900,
+    "fldWkR0xbRaQBYJiY": 620,
+    "fldDufeI0oKqOgbuN": 2200,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recatJEGXRRSBOTKM"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recOCI6yfXGYhRY2T"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recTej8SUVEWqVTMA",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2710,
+    "fldWkR0xbRaQBYJiY": 405,
+    "fldDufeI0oKqOgbuN": 1945,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recatJEGXRRSBOTKM"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recOCI6yfXGYhRY2T"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recxYHkmsYiQELgqN",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2470,
+    "fldWkR0xbRaQBYJiY": 510,
+    "fldDufeI0oKqOgbuN": 1860,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recatJEGXRRSBOTKM"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recOCI6yfXGYhRY2T"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recuhPdZUCVtfy1Jp",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2710,
+    "fldWkR0xbRaQBYJiY": 405,
+    "fldDufeI0oKqOgbuN": 1945,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recatJEGXRRSBOTKM"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recOCI6yfXGYhRY2T"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recpwEFMYmxDkbq69",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3385,
+    "fldWkR0xbRaQBYJiY": 695,
+    "fldDufeI0oKqOgbuN": 2550,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "rec9ADzZUTXINKFwe"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recg58Pkq18k5mEU1"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recRw1Ufqhntq1XUX",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3150,
+    "fldWkR0xbRaQBYJiY": 640,
+    "fldDufeI0oKqOgbuN": 2370,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "rec9ADzZUTXINKFwe"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recg58Pkq18k5mEU1"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recHSIQjJ0vUVRk1w",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2825,
+    "fldWkR0xbRaQBYJiY": 695,
+    "fldDufeI0oKqOgbuN": 2200,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "rec9ADzZUTXINKFwe"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recg58Pkq18k5mEU1"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recnsYIH9IakVlYmU",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3150,
+    "fldWkR0xbRaQBYJiY": 640,
+    "fldDufeI0oKqOgbuN": 2370,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "rec9ADzZUTXINKFwe"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recg58Pkq18k5mEU1"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "receGbWtalAMeYBRW",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 4150,
+    "fldWkR0xbRaQBYJiY": 890,
+    "fldDufeI0oKqOgbuN": 3150,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recoRTvB1QS6vswMN"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "reczBquJpIt2Dz38t"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recfXo7VSU5ECqX5S",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3850,
+    "fldWkR0xbRaQBYJiY": 900,
+    "fldDufeI0oKqOgbuN": 2970,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recoRTvB1QS6vswMN"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "reczBquJpIt2Dz38t"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "rectYU46ciIMVoPJz",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3385,
+    "fldWkR0xbRaQBYJiY": 935,
+    "fldDufeI0oKqOgbuN": 2700,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recoRTvB1QS6vswMN"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "reczBquJpIt2Dz38t"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recxQEcq1zaqEFrcj",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3850,
+    "fldWkR0xbRaQBYJiY": 900,
+    "fldDufeI0oKqOgbuN": 2970,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recoRTvB1QS6vswMN"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "reczBquJpIt2Dz38t"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "rec3dqwL2NacdeyVH",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 7750,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recQpUfi4lpxnzOBo"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recCdy2VC2MYORhf3"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recfHy7i5myUM5w6b",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 7150,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recQpUfi4lpxnzOBo"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recCdy2VC2MYORhf3"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recgM1lCi3WdpEzIb",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 6200,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recQpUfi4lpxnzOBo"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recCdy2VC2MYORhf3"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recWwbbRQEYCVUQdI",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 4,
+    "fldyhI3g4yLgjh6Pe": 7150,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recgD5KB1IAirXSo9"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recQpUfi4lpxnzOBo"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recCdy2VC2MYORhf3"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recIpV3XcsTtGJz2r",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2538,
+    "fldWkR0xbRaQBYJiY": 539,
+    "fldDufeI0oKqOgbuN": 1938,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recGOyTTnEs1TZMQD"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rec6033pBM5rRGmGE"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recD3zIbyOqUbfqFV",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2216,
+    "fldWkR0xbRaQBYJiY": 491,
+    "fldDufeI0oKqOgbuN": 1693,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recGOyTTnEs1TZMQD"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rec6033pBM5rRGmGE"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recUzPE3hZuhIQEQu",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 1792,
+    "fldWkR0xbRaQBYJiY": 815,
+    "fldDufeI0oKqOgbuN": 1485,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recGOyTTnEs1TZMQD"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rec6033pBM5rRGmGE"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recLB7wXQz2novlJl",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2216,
+    "fldWkR0xbRaQBYJiY": 491,
+    "fldDufeI0oKqOgbuN": 1693,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recGOyTTnEs1TZMQD"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rec6033pBM5rRGmGE"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recaE4udkJsq1Nh3g",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3015,
+    "fldWkR0xbRaQBYJiY": 862,
+    "fldDufeI0oKqOgbuN": 2423,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recPcyLPjWZUFo3XV"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recZ1QqBHxo73up24"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recPGvL9RhQZV4zdr",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2616,
+    "fldWkR0xbRaQBYJiY": 868,
+    "fldDufeI0oKqOgbuN": 2177,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recPcyLPjWZUFo3XV"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recZ1QqBHxo73up24"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recVuB2QMnNL2jzSL",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2107,
+    "fldWkR0xbRaQBYJiY": 739,
+    "fldDufeI0oKqOgbuN": 1778,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recPcyLPjWZUFo3XV"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recZ1QqBHxo73up24"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recJ8KzhM9a1xohfn",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2616,
+    "fldWkR0xbRaQBYJiY": 868,
+    "fldDufeI0oKqOgbuN": 2177,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recPcyLPjWZUFo3XV"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recZ1QqBHxo73up24"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "rec8Q9UeNHmMltCGR",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3015,
+    "fldWkR0xbRaQBYJiY": 862,
+    "fldDufeI0oKqOgbuN": 2423,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recakm4DYe9HEJUSP"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "reciv9RXPrOEkIGMZ"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recKjLkfQZfahse7E",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2616,
+    "fldWkR0xbRaQBYJiY": 868,
+    "fldDufeI0oKqOgbuN": 2177,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recakm4DYe9HEJUSP"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "reciv9RXPrOEkIGMZ"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recqcORE4pVd22cfd",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2107,
+    "fldWkR0xbRaQBYJiY": 739,
+    "fldDufeI0oKqOgbuN": 1778,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recakm4DYe9HEJUSP"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "reciv9RXPrOEkIGMZ"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recgqKe2u6ccF2IMk",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2616,
+    "fldWkR0xbRaQBYJiY": 868,
+    "fldDufeI0oKqOgbuN": 2177,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recakm4DYe9HEJUSP"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "reciv9RXPrOEkIGMZ"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recPjCDRzy8hkXVHs",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3615,
+    "fldWkR0xbRaQBYJiY": 1062,
+    "fldDufeI0oKqOgbuN": 2923,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "reccnuCjkVLKBEOCd"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recE5hhQzFu2gxXzO"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recLvihFXBSXEL1qq",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3216,
+    "fldWkR0xbRaQBYJiY": 1045,
+    "fldDufeI0oKqOgbuN": 2662,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "reccnuCjkVLKBEOCd"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recE5hhQzFu2gxXzO"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recXrLicdCFuguKza",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2661,
+    "fldWkR0xbRaQBYJiY": 715,
+    "fldDufeI0oKqOgbuN": 2108,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "reccnuCjkVLKBEOCd"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recE5hhQzFu2gxXzO"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "rec53fvs6hXe7K8Jh",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3216,
+    "fldWkR0xbRaQBYJiY": 1045,
+    "fldDufeI0oKqOgbuN": 2662,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "reccnuCjkVLKBEOCd"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recE5hhQzFu2gxXzO"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recgKVQqU8mZvc4oo",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 4338,
+    "fldWkR0xbRaQBYJiY": 1570,
+    "fldDufeI0oKqOgbuN": 3692,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recl6Ut5kL5rvLnI5"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rec1iJ6adRYbJwFuM"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recJKtN1670NqC2Vc",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3746,
+    "fldWkR0xbRaQBYJiY": 1299,
+    "fldDufeI0oKqOgbuN": 3154,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recl6Ut5kL5rvLnI5"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rec1iJ6adRYbJwFuM"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "reckM8tTx7CLN9xFh",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 2961,
+    "fldWkR0xbRaQBYJiY": 1039,
+    "fldDufeI0oKqOgbuN": 2501,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recl6Ut5kL5rvLnI5"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rec1iJ6adRYbJwFuM"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recyAXYt3WEfiyM0s",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3746,
+    "fldWkR0xbRaQBYJiY": 1299,
+    "fldDufeI0oKqOgbuN": 3154,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recl6Ut5kL5rvLnI5"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "rec1iJ6adRYbJwFuM"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recwhMOarW2kwXesn",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "High 2026-10 to 2027-04",
+    "fldXs26HOWuPXJ2Fz": "2026-10-01",
+    "fldEhCN4nLoa4bxZr": "2027-04-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 5492,
+    "fldWkR0xbRaQBYJiY": 1893,
+    "fldDufeI0oKqOgbuN": 4769,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recDCzeNVVrHaDQ0w"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recqJwWvGywkYnosS"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recr3As7ObA8ILNnv",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder May 2027-05 to 2027-05",
+    "fldXs26HOWuPXJ2Fz": "2027-05-01",
+    "fldEhCN4nLoa4bxZr": "2027-05-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 4555,
+    "fldWkR0xbRaQBYJiY": 1598,
+    "fldDufeI0oKqOgbuN": 4000,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recDCzeNVVrHaDQ0w"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recqJwWvGywkYnosS"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recxhVw5kpoSiNqaf",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Off-Peak 2027-06 to 2027-08",
+    "fldXs26HOWuPXJ2Fz": "2027-06-01",
+    "fldEhCN4nLoa4bxZr": "2027-08-31",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 3723,
+    "fldWkR0xbRaQBYJiY": 1492,
+    "fldDufeI0oKqOgbuN": 3262,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recDCzeNVVrHaDQ0w"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recqJwWvGywkYnosS"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  },
+  {
+   "id": "recewg3Y5L1GBAphy",
+   "cellValuesByFieldId": {
+    "fldGGcvxjBVyJyunK": "Shoulder September 2027-09 to 2027-09",
+    "fldXs26HOWuPXJ2Fz": "2027-09-01",
+    "fldEhCN4nLoa4bxZr": "2027-09-30",
+    "fldsX0xyR1BGwGJyT": 2,
+    "fldyhI3g4yLgjh6Pe": 4555,
+    "fldWkR0xbRaQBYJiY": 1598,
+    "fldDufeI0oKqOgbuN": 4000,
+    "fldpsSFpFEG5xUQvX": 2,
+    "fldw9C20nxPu3fRcA": true,
+    "fldffowfs9OCTotOV": [
+     "recmaHsmjgeHGSinP"
+    ],
+    "fldZrQVT0Fn1GzzJm": [
+     "recDCzeNVVrHaDQ0w"
+    ],
+    "fld93xGvzmubO4l3X": [
+     "recqJwWvGywkYnosS"
+    ],
+    "fldYVog1NI9RYuRNw": 0
+   }
+  }
+ ],
+ "taxes": [
+  {
+   "id": "recWTQyZT6DyP20Q8",
+   "cellValuesByFieldId": {
+    "fldGIsHS0oY88lrBV": "Conservation contribution",
+    "fldS1oi2glLOU1yHx": "Fee",
+    "fldIL4l0wwxogLqSv": "Per person per stay",
+    "fldz5grk0iQw9NXBx": 150,
+    "fldbTseNAexvOAGWG": false,
+    "fld4eJIhabXmbdnIL": "Awasi Patagonia Private Reserve",
+    "fld49yAamhgq107Oi": [
+     "rec26M9ta8NsAB2Th"
+    ]
+   }
+  },
+  {
+   "id": "recGJnM4YN15xj4BO",
+   "cellValuesByFieldId": {
+    "fldGIsHS0oY88lrBV": "VAT (foreign non-residents)",
+    "fldS1oi2glLOU1yHx": "Tax",
+    "fldIL4l0wwxogLqSv": "% of room",
+    "fld9u1tRVDfKR1aUr": 0.105,
+    "fldbTseNAexvOAGWG": false,
+    "fld4eJIhabXmbdnIL": "Argentina",
+    "fld49yAamhgq107Oi": [
+     "recwC0h0Z0gtTyySH"
+    ]
+   }
+  },
+  {
+   "id": "recqOOku8CCFALonw",
+   "cellValuesByFieldId": {
+    "fldGIsHS0oY88lrBV": "VAT (foreign non-residents)",
+    "fldS1oi2glLOU1yHx": "Tax",
+    "fldIL4l0wwxogLqSv": "% of room",
+    "fld9u1tRVDfKR1aUr": 0.105,
+    "fldbTseNAexvOAGWG": false,
+    "fld4eJIhabXmbdnIL": "Argentina",
+    "fld49yAamhgq107Oi": [
+     "recgD5KB1IAirXSo9"
+    ]
+   }
+  },
+  {
+   "id": "reczz2AqORHwQBSEp",
+   "cellValuesByFieldId": {
+    "fldGIsHS0oY88lrBV": "Service fee",
+    "fldS1oi2glLOU1yHx": "Fee",
+    "fldIL4l0wwxogLqSv": "% of room",
+    "fld9u1tRVDfKR1aUr": 0.03,
+    "fldbTseNAexvOAGWG": false,
+    "fld4eJIhabXmbdnIL": "Brazil",
+    "fld49yAamhgq107Oi": [
+     "recmaHsmjgeHGSinP"
+    ]
+   }
+  }
+ ],
+ "promotions": [
+  {
+   "id": "rec8s0BYUa8irp9uj",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-PAT-4N",
+    "fldXx96yIYU35MBQJ": "Stay four nights: 3% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 3,
+    "fldMxdne1EzsZSj0B": 4,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "rec26M9ta8NsAB2Th"
+    ]
+   }
+  },
+  {
+   "id": "recnq7JGu2vRD7PeZ",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-PAT-5N",
+    "fldXx96yIYU35MBQJ": "Stay five nights: 5% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 5,
+    "fldMxdne1EzsZSj0B": 5,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "rec26M9ta8NsAB2Th"
+    ]
+   }
+  },
+  {
+   "id": "recpwUHLQE6PGXxw4",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-PAT-6N",
+    "fldXx96yIYU35MBQJ": "Stay six nights or more: 8% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 8,
+    "fldMxdne1EzsZSj0B": 6,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "rec26M9ta8NsAB2Th"
+    ]
+   }
+  },
+  {
+   "id": "recKLcYfTWwZjTHJp",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-IGU-3N",
+    "fldXx96yIYU35MBQJ": "Stay three nights: 3% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 3,
+    "fldMxdne1EzsZSj0B": 3,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recwC0h0Z0gtTyySH"
+    ]
+   }
+  },
+  {
+   "id": "recQ6BhXl2D2fWcGD",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-IGU-4N",
+    "fldXx96yIYU35MBQJ": "Stay four nights: 5% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 5,
+    "fldMxdne1EzsZSj0B": 4,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recwC0h0Z0gtTyySH"
+    ]
+   }
+  },
+  {
+   "id": "recI8f6kzRreBeiKr",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-IGU-5N",
+    "fldXx96yIYU35MBQJ": "Stay five nights: 6% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 6,
+    "fldMxdne1EzsZSj0B": 5,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recwC0h0Z0gtTyySH"
+    ]
+   }
+  },
+  {
+   "id": "recEwmw9Kg4vXSbNX",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-IGU-6N",
+    "fldXx96yIYU35MBQJ": "Stay six nights or more: 8% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 8,
+    "fldMxdne1EzsZSj0B": 6,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recwC0h0Z0gtTyySH"
+    ]
+   }
+  },
+  {
+   "id": "recZxwhXP7peiHZED",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-MDZ-3N",
+    "fldXx96yIYU35MBQJ": "Stay three nights: 3% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 3,
+    "fldMxdne1EzsZSj0B": 3,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recgD5KB1IAirXSo9"
+    ]
+   }
+  },
+  {
+   "id": "recAyW5mo9YwX764T",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-MDZ-4N",
+    "fldXx96yIYU35MBQJ": "Stay four nights: 5% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 5,
+    "fldMxdne1EzsZSj0B": 4,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recgD5KB1IAirXSo9"
+    ]
+   }
+  },
+  {
+   "id": "rec6IEiW73xZ9T1zp",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-MDZ-5N",
+    "fldXx96yIYU35MBQJ": "Stay five nights: 6% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 6,
+    "fldMxdne1EzsZSj0B": 5,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recgD5KB1IAirXSo9"
+    ]
+   }
+  },
+  {
+   "id": "recPx2JhWTSd0XkcN",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-MDZ-6N",
+    "fldXx96yIYU35MBQJ": "Stay six nights or more: 8% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 8,
+    "fldMxdne1EzsZSj0B": 6,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recgD5KB1IAirXSo9"
+    ]
+   }
+  },
+  {
+   "id": "recb3CKgi1cEIVjD5",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-SAN-3N",
+    "fldXx96yIYU35MBQJ": "Stay three nights: 3% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 3,
+    "fldMxdne1EzsZSj0B": 3,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recmaHsmjgeHGSinP"
+    ]
+   }
+  },
+  {
+   "id": "recfA0M9PtUzPgAjd",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-SAN-4N",
+    "fldXx96yIYU35MBQJ": "Stay four nights: 5% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 5,
+    "fldMxdne1EzsZSj0B": 4,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recmaHsmjgeHGSinP"
+    ]
+   }
+  },
+  {
+   "id": "recmyA8TOOpLmqP0c",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-SAN-5N",
+    "fldXx96yIYU35MBQJ": "Stay five nights: 6% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 6,
+    "fldMxdne1EzsZSj0B": 5,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recmaHsmjgeHGSinP"
+    ]
+   }
+  },
+  {
+   "id": "reca66c3GXoIP6SJd",
+   "cellValuesByFieldId": {
+    "fld2oahsvNc1A4MdK": "AWASI-SAN-6N",
+    "fldXx96yIYU35MBQJ": "Stay six nights or more: 8% off",
+    "fldBRSCO5XhQK7YLe": "Percent off",
+    "fldnu6uuKRsfL51xd": 8,
+    "fldMxdne1EzsZSj0B": 6,
+    "fldRErSYMKM5dMv0a": "Exclusive",
+    "fldlziRgTVnisk3eI": "Approved",
+    "fld9J8rHRoU40Xvrh": [
+     "recmaHsmjgeHGSinP"
+    ]
+   }
+  }
+ ],
+ "terms": [
+  {
+   "id": "recAtRYBD9w1NOO2m",
+   "cellValuesByFieldId": {
+    "fldzaJoEOCoJZuZf0": "Awasi Patagonia 2026-2027 commission",
+    "fld1OuYNTzcz3ZoXV": false,
+    "fldywmVrGmdk0yJ0B": 0.2,
+    "fldr7ST5fjgmPnQGP": "Rack rates; house earns 20% commission (James, 24 Nov 2026).",
+    "fldhuIkJarrA0MhlK": [
+     "rec26M9ta8NsAB2Th"
+    ]
+   }
+  },
+  {
+   "id": "recIU63QEZINYh3VJ",
+   "cellValuesByFieldId": {
+    "fldzaJoEOCoJZuZf0": "Awasi Iguazú 2026-2027 commission",
+    "fld1OuYNTzcz3ZoXV": false,
+    "fldywmVrGmdk0yJ0B": 0.2,
+    "fldr7ST5fjgmPnQGP": "Rack rates; house earns 20% commission (James, 24 Nov 2026).",
+    "fldhuIkJarrA0MhlK": [
+     "recwC0h0Z0gtTyySH"
+    ]
+   }
+  },
+  {
+   "id": "rec9Pbk3KgHffv3G8",
+   "cellValuesByFieldId": {
+    "fldzaJoEOCoJZuZf0": "Awasi Mendoza 2026-2027 commission",
+    "fld1OuYNTzcz3ZoXV": false,
+    "fldywmVrGmdk0yJ0B": 0.2,
+    "fldr7ST5fjgmPnQGP": "Rack rates; house earns 20% commission (James, 24 Nov 2026).",
+    "fldhuIkJarrA0MhlK": [
+     "recgD5KB1IAirXSo9"
+    ]
+   }
+  },
+  {
+   "id": "recyBA58MHjwE7e4N",
+   "cellValuesByFieldId": {
+    "fldzaJoEOCoJZuZf0": "Awasi Santa Catarina 2026-2027 commission",
+    "fld1OuYNTzcz3ZoXV": false,
+    "fldywmVrGmdk0yJ0B": 0.2,
+    "fldr7ST5fjgmPnQGP": "Rack rates; house earns 20% commission (James, 24 Nov 2026).",
+    "fldhuIkJarrA0MhlK": [
+     "recmaHsmjgeHGSinP"
+    ]
+   }
+  }
+ ]
+}

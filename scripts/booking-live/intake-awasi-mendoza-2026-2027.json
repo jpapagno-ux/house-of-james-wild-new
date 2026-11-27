@@ -1,0 +1,271 @@
+{
+ "ledgerId": "STY-2026-669559",
+ "slug": "awasi-mendoza",
+ "propertyName": "Awasi Mendoza",
+ "timeZone": "America/Argentina/Mendoza",
+ "stayType": "Lodge",
+ "units": [
+  {
+   "code": "lujo",
+   "name": "Lujo",
+   "maxAdults": 3,
+   "maxChildren": 0,
+   "maxOccupancy": 3
+  },
+  {
+   "code": "front-row",
+   "name": "Front Row",
+   "maxAdults": 3,
+   "maxChildren": 0,
+   "maxOccupancy": 3
+  },
+  {
+   "code": "vineyard-villa",
+   "name": "Vineyard Villa",
+   "maxAdults": 3,
+   "maxChildren": 0,
+   "maxOccupancy": 3
+  },
+  {
+   "code": "two-bedroom-villa",
+   "name": "Two Bedroom Villa",
+   "maxAdults": 4,
+   "maxChildren": 0,
+   "maxOccupancy": 4
+  }
+ ],
+ "plan": {
+  "code": "fh",
+  "name": "Fully hosted",
+  "boardBasis": "Fully inclusive",
+  "refundability": "Refundable",
+  "inclusions": "Lodging, all meals, open bar and national wines, a private guide and 4x4 for your excursions each day, wine tours included, and private transfers to and from Mendoza airport."
+ },
+ "card": {
+  "label": "2026-2027-V1",
+  "currency": "USD",
+  "effectiveFrom": "2026-10-01",
+  "effectiveTo": "2027-09-30",
+  "contractReference": "Awasi Mendoza Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Mendoza_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+  "depositPercent": 0.5,
+  "balanceDueDays": 30,
+  "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
+  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; High 2026-10-01..2027-04-30 = 44:50, 30:100; 30:50, 15:100",
+  "notes": "VAT of 10.5% for foreign non-residents is added on top of the sheet's rates (James, 26 Nov 2026); Argentine residents pay 21%. The festive minimum stay is not printed on the sheet. House commission 20% (private)."
+ },
+ "seasons": {
+  "lujo": [
+   {
+    "season": "High 2026-10 to 2027-04",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 2900,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2200,
+    "extraAdult": 620
+   },
+   {
+    "season": "Shoulder May 2027-05 to 2027-05",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-05-31",
+    "nightly": 2710,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 1945,
+    "extraAdult": 405
+   },
+   {
+    "season": "Off-Peak 2027-06 to 2027-08",
+    "stayStart": "2027-06-01",
+    "stayEnd": "2027-08-31",
+    "nightly": 2470,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 1860,
+    "extraAdult": 510
+   },
+   {
+    "season": "Shoulder September 2027-09 to 2027-09",
+    "stayStart": "2027-09-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 2710,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 1945,
+    "extraAdult": 405
+   }
+  ],
+  "front-row": [
+   {
+    "season": "High 2026-10 to 2027-04",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 3385,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2550,
+    "extraAdult": 695
+   },
+   {
+    "season": "Shoulder May 2027-05 to 2027-05",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-05-31",
+    "nightly": 3150,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2370,
+    "extraAdult": 640
+   },
+   {
+    "season": "Off-Peak 2027-06 to 2027-08",
+    "stayStart": "2027-06-01",
+    "stayEnd": "2027-08-31",
+    "nightly": 2825,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2200,
+    "extraAdult": 695
+   },
+   {
+    "season": "Shoulder September 2027-09 to 2027-09",
+    "stayStart": "2027-09-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 3150,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2370,
+    "extraAdult": 640
+   }
+  ],
+  "vineyard-villa": [
+   {
+    "season": "High 2026-10 to 2027-04",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 4150,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 3150,
+    "extraAdult": 890
+   },
+   {
+    "season": "Shoulder May 2027-05 to 2027-05",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-05-31",
+    "nightly": 3850,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2970,
+    "extraAdult": 900
+   },
+   {
+    "season": "Off-Peak 2027-06 to 2027-08",
+    "stayStart": "2027-06-01",
+    "stayEnd": "2027-08-31",
+    "nightly": 3385,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2700,
+    "extraAdult": 935
+   },
+   {
+    "season": "Shoulder September 2027-09 to 2027-09",
+    "stayStart": "2027-09-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 3850,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2970,
+    "extraAdult": 900
+   }
+  ],
+  "two-bedroom-villa": [
+   {
+    "season": "High 2026-10 to 2027-04",
+    "stayStart": "2026-10-01",
+    "stayEnd": "2027-04-30",
+    "nightly": 7750,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 2
+   },
+   {
+    "season": "Shoulder May 2027-05 to 2027-05",
+    "stayStart": "2027-05-01",
+    "stayEnd": "2027-05-31",
+    "nightly": 7150,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 2
+   },
+   {
+    "season": "Off-Peak 2027-06 to 2027-08",
+    "stayStart": "2027-06-01",
+    "stayEnd": "2027-08-31",
+    "nightly": 6200,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 2
+   },
+   {
+    "season": "Shoulder September 2027-09 to 2027-09",
+    "stayStart": "2027-09-01",
+    "stayEnd": "2027-09-30",
+    "nightly": 7150,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 2
+   }
+  ]
+ },
+ "taxes": [
+  {
+   "name": "VAT (foreign non-residents)",
+   "kind": "Tax",
+   "basis": "% of room",
+   "percent": 0.105,
+   "includedInRate": false,
+   "jurisdiction": "Argentina"
+  }
+ ],
+ "promotions": [
+  {
+   "code": "AWASI-MDZ-3N",
+   "label": "Stay three nights: 3% off",
+   "percent": 3,
+   "minNights": 3
+  },
+  {
+   "code": "AWASI-MDZ-4N",
+   "label": "Stay four nights: 5% off",
+   "percent": 5,
+   "minNights": 4
+  },
+  {
+   "code": "AWASI-MDZ-5N",
+   "label": "Stay five nights: 6% off",
+   "percent": 6,
+   "minNights": 5
+  },
+  {
+   "code": "AWASI-MDZ-6N",
+   "label": "Stay six nights or more: 8% off",
+   "percent": 8,
+   "minNights": 6
+  }
+ ],
+ "commissionPercent": 0.2
+}

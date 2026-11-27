@@ -13833,7 +13833,63 @@
         "section": "pool"
       }
     },
-    "extra": []
+    "extra": [
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/exp-snorkelling",
+        "alt": "Snorkellers over the reef in clear turquoise water off Benguerra Island, Mozambique",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/exp-scuba",
+        "alt": "A scuba diver beside a coral head on the reef off Benguerra Island, Mozambique",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/exp-swimming-with-horses",
+        "alt": "A rider swimming a horse in the shallows off Benguerra Island, with dhows at anchor behind",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/exp-dhow-cruise",
+        "alt": "A traditional dhow under sail in the bay off Benguerra Island, Mozambique",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/exp-castaway-picnic",
+        "alt": "A castaway picnic table set on a sandbank beside a dhow, Bazaruto Archipelago, Mozambique",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/exp-kayak",
+        "alt": "Two guests in a sea kayak on calm turquoise water off Benguerra Island, Mozambique",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/exp-massage",
+        "alt": "A massage on a deck above the beach at Benguerra Island, Mozambique",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/exp-island-drive",
+        "alt": "A guide on a dune above an inland lake on Benguerra Island, Mozambique",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/feat-beach-walk",
+        "alt": "A couple walking a white sand spit into the turquoise sea at Benguerra Island, Mozambique",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/feat-beach-dining",
+        "alt": "Lantern lit dinner tables under the palms on the beach at dusk, Benguerra Island, Mozambique",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/benguerra-island-by-and-beyond/feat-wildchild",
+        "alt": "Two children with nets in the shallows at Benguerra Island, Mozambique",
+        "section": "experiences"
+      }
+    ]
   },
   "blue-safari-seychelles": {
     "describe": {

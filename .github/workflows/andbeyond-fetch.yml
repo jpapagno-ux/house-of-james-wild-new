@@ -1,0 +1,31 @@
+# andBeyond lodge pages. Reads the public lodge pages on andbeyond.com listed in scripts/data/andbeyond/pages.json
+# (rooms, experiences, gallery: words and photograph addresses) and commits scripts/data/andbeyond/raw.json to the
+# branch it ran on. Brand's own site only (James, 31 Oct 2026). Runs by hand or when the list or the script changes.
+name: andBeyond fetch
+
+on:
+  workflow_dispatch:
+  push:
+    paths: [scripts/partners/andbeyond-fetch.mjs, scripts/data/andbeyond/pages.json, .github/workflows/andbeyond-fetch.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch
+        run: node scripts/partners/andbeyond-fetch.mjs
+      - name: Commit
+        run: |
+          git config user.name "jwco-bot"
+          git config user.email "jwco-bot@users.noreply.github.com"
+          git add scripts/data/andbeyond/
+          git diff --cached --quiet || git commit -m "andBeyond lodge pages, $(date -u +%F)"
+          git push

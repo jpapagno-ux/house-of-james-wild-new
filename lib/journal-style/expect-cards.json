@@ -2,20 +2,144 @@
  "note": "What You Can Expect as picture cards (James, 24 Nov 2026). One entry per stay: experiences and features, each a name, one line and a photograph. Names and lines come only from the stay's own filed experiences and features text. photo is the last part of a filed photograph's address (as in photo-notes.json) or null; null prints the 'Image coming soon' panel so the missing photograph is seen. also is one closing line for things with no picture. A stay with no entry keeps the earlier layout.",
  "aguas-claras": {
   "experiences": [
-   { "title": "Snorkeling at Punta Uva and Cahuita", "line": "Mornings at Punta Uva or along the coral reef in Cahuita National Park, 25 minutes away.", "photo": "hero-cahuita-beach" },
-   { "title": "Surf Lessons at Playa Cocles", "line": "A morning lesson on the next beach along.", "photo": null },
-   { "title": "Bike, Hike and Kayak Tours", "line": "How the afternoons can be spent.", "photo": "g8" },
-   { "title": "Talamanca Bribrí Reserve and Cacao Tour", "line": "The cultural day out.", "photo": null },
-   { "title": "Live Music, Bonfires and Theme Nights", "line": "Evenings of live local music at Papaya.", "photo": null },
-   { "title": "Yoga Sessions", "line": "Optional, for the slower days.", "photo": "hero-yoga-casa-gandhi" },
-   { "title": "Spa and Wellness Therapies", "line": "Arranged in the privacy of your bungalow, on your own veranda.", "photo": null }
+   {
+    "title": "Snorkeling at Punta Uva and Cahuita",
+    "line": "Mornings at Punta Uva or along the coral reef in Cahuita National Park, 25 minutes away.",
+    "photo": "hero-cahuita-beach"
+   },
+   {
+    "title": "Surf Lessons at Playa Cocles",
+    "line": "A morning lesson on the next beach along.",
+    "photo": null
+   },
+   {
+    "title": "Bike, Hike and Kayak Tours",
+    "line": "How the afternoons can be spent.",
+    "photo": "g8"
+   },
+   {
+    "title": "Talamanca Bribrí Reserve and Cacao Tour",
+    "line": "The cultural day out.",
+    "photo": null
+   },
+   {
+    "title": "Live Music, Bonfires and Theme Nights",
+    "line": "Evenings of live local music at Papaya.",
+    "photo": null
+   },
+   {
+    "title": "Yoga Sessions",
+    "line": "Optional, for the slower days.",
+    "photo": "hero-yoga-casa-gandhi"
+   },
+   {
+    "title": "Spa and Wellness Therapies",
+    "line": "Arranged in the privacy of your bungalow, on your own veranda.",
+    "photo": null
+   }
   ],
   "features": [
-   { "title": "Papaya Restaurant", "line": "With optional full or half board plans.", "photo": "g1" },
-   { "title": "DaLime Beach Club", "line": "On Playa Chiquita.", "photo": null },
-   { "title": "The Pool", "line": "In the gardens below the main house.", "photo": "g4" },
-   { "title": "Private Plunge Pools", "line": "In the two-bedroom Deluxe Bungalows.", "photo": "hero-deluxe-bungalow" }
+   {
+    "title": "Papaya Restaurant",
+    "line": "With optional full or half board plans.",
+    "photo": "g1"
+   },
+   {
+    "title": "DaLime Beach Club",
+    "line": "On Playa Chiquita.",
+    "photo": null
+   },
+   {
+    "title": "The Pool",
+    "line": "In the gardens below the main house.",
+    "photo": "g4"
+   },
+   {
+    "title": "Private Plunge Pools",
+    "line": "In the two-bedroom Deluxe Bungalows.",
+    "photo": "hero-deluxe-bungalow"
+   }
   ],
   "also": "Also at the stay: complimentary bicycles and free Wi-Fi. The property's small size enables tailored itineraries, with sustainable sourcing and community partnerships woven into operations."
+ },
+ "benguerra-island-by-and-beyond": {
+  "experiences": [
+   {
+    "title": "Snorkelling and Diving the Reefs",
+    "line": "Reefs just offshore, inside the marine reserve.",
+    "photo": "exp-snorkelling"
+   },
+   {
+    "title": "Scuba Certification",
+    "line": "A PADI dive centre at the lodge, at extra cost.",
+    "photo": "exp-scuba"
+   },
+   {
+    "title": "Horseback Riding on the Beach",
+    "line": "Beach and inland rides, and a swim with the horses.",
+    "photo": "exp-swimming-with-horses"
+   },
+   {
+    "title": "Dhow Cruises",
+    "line": "Across the bay under a traditional sail.",
+    "photo": "exp-dhow-cruise"
+   },
+   {
+    "title": "Island Picnics",
+    "line": "A castaway picnic on a quiet stretch of shore.",
+    "photo": "exp-castaway-picnic"
+   },
+   {
+    "title": "Kayaking and Paddleboarding",
+    "line": "Calm water, at your own pace.",
+    "photo": "exp-kayak"
+   },
+   {
+    "title": "Wellness Spa",
+    "line": "Treatments in a forest setting, at extra cost.",
+    "photo": "exp-massage"
+   },
+   {
+    "title": "Deep Sea Fishing",
+    "line": "Offshore for game fish, at extra cost.",
+    "photo": null
+   },
+   {
+    "title": "Local Community Visits",
+    "line": "Time with island residents.",
+    "photo": null
+   }
+  ],
+  "features": [
+   {
+    "title": "White Sand Beaches and Turquoise Lagoons",
+    "line": "The Bazaruto Archipelago, off Vilanculos.",
+    "photo": "feat-beach-walk"
+   },
+   {
+    "title": "Private Plunge Pools",
+    "line": "One at every cabana, casinha and the Casa Familia.",
+    "photo": "4e99a5407_a66e8d613_69c0db255b5065b4ae5bdb18_Southern-Africa-Mozambique-andBeyond-Benguerra-Island-C."
+   },
+   {
+    "title": "Seafood Feasts and Island Dining",
+    "line": "Dinner on the beach by lantern light.",
+    "photo": "feat-beach-dining"
+   },
+   {
+    "title": "Family Friendly, with Children's Activities",
+    "line": "The three bedroom Casa Familia sleeps four adults and two children.",
+    "photo": "feat-wildchild"
+   },
+   {
+    "title": "Personal Butler Service",
+    "photo": null
+   },
+   {
+    "title": "Marine Conservation Projects",
+    "line": "Inside a protected marine reserve.",
+    "photo": null
+   }
+  ]
  }
 }

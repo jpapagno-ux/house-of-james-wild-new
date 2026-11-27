@@ -14,6 +14,8 @@ import JsonLd from "@/components/ledger/JsonLd";
 import Journeys from "@/components/destination/Journeys";
 import WhenToGo from "@/components/destination/WhenToGo";
 import PlanBand from "@/components/destination/PlanBand";
+import FieldNoteSet from "@/components/field-notes/FieldNoteSet";
+import { FIELD_NOTES, GUIDE_FIELD_NOTES } from "@/lib/field-notes/notes";
 import FounderProof from "@/components/record/FounderProof";
 import { Overview, RecordHero, RecordNav, SectionHead } from "@/components/record/Sections";
 import { GUIDES, RAJA_VS_KOMODO, type Guide } from "@/lib/content/guides";
@@ -238,6 +240,14 @@ export default function GuidePage({ g, map, geoInSchema = false, v2 }: { g: Guid
           {/* Iggi on every guide (James, 19 Nov 2026): a place is scoped to its parent country; a guide country to itself. */}
           {IGGI_ON && <IggiPanel ctx={{ entityType: "destination", entitySlug: g.slug, countrySlug: g.parent ?? g.country, regionSlug: g.region, ledgerId: g.ledgerId ?? null, sourcePage: g.path, volume: g.region === "europe" ? "europe" : "stays" }} heading={`Ask Iggi about ${g.name}`} />}
           <FaqBlock faqs={g.faqs} title={`Questions About ${g.name}`} />
+          {/* Field Notes on place guides (James, 27 Nov 2026): the same notes as the voyages hub, where the place is searched by name. */}
+          {(GUIDE_FIELD_NOTES[g.slug] ?? []).length > 0 && (
+            <section id="field-notes" className="mt-16 md:mt-24 border-t ledger-rule pt-8" aria-labelledby="field-notes-heading">
+              <p className="ledger-eyebrow ledger-crimson">From the field</p>
+              <h2 id="field-notes-heading" className="ledger-display text-[1.75rem] md:text-4xl mt-2 mb-8">What Lives in {g.name}?</h2>
+              <FieldNoteSet notes={GUIDE_FIELD_NOTES[g.slug].map((id) => FIELD_NOTES[id])} />
+            </section>
+          )}
     </>
   );
   const sourcesSec = (

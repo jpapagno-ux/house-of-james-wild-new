@@ -7512,5 +7512,1181 @@
         "plungePool": false
       }
     ]
+  },
+  "alma-vista": {
+    "rooms": [
+      {
+        "name": "The Villa",
+        "sleeps": null,
+        "facts": [
+          "Two bedrooms",
+          "Taken whole"
+        ],
+        "lede": "The whole house, with your own pool on the terrace, a wellness room with an infrared sauna and massage pool, and the Edi Šimčič cellar downstairs.",
+        "features": [
+          "Private pool",
+          "Infrared sauna"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "breac-house": {
+    "rooms": [
+      {
+        "name": "Rooms",
+        "sleeps": 2,
+        "facts": [
+          "For one or two adults",
+          "Adults only",
+          "Stays of two, four or six nights"
+        ],
+        "lede": "Super king oak beds, Irish wool bedding, Donegal tweed, terrazzo wet rooms and private outdoor space facing the Atlantic.",
+        "features": [
+          "Private terrace",
+          "Atlantic views",
+          "No televisions"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "canaves-oia-epitome": {
+    "rooms": [
+      {
+        "name": "Deluxe and Honeymoon Suites with Plunge Pool",
+        "sleeps": 3,
+        "facts": [
+          "42 to 50 m²",
+          "Sea view"
+        ],
+        "lede": null,
+        "features": [
+          "Plunge pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Pool Suites",
+        "sleeps": 2,
+        "facts": [
+          "Pool Suite 45 m²",
+          "Hideaway Pool Suite 52 m², on the cliffs"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two Bedroom Pool Suite",
+        "sleeps": 4,
+        "facts": [
+          "90 m²"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Villas",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "cap-rocat": {
+    "rooms": [
+      {
+        "name": "Doble Fortaleza",
+        "sleeps": null,
+        "facts": [
+          "Inside the fortress"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Sentinels",
+        "sleeps": null,
+        "facts": [
+          "In the old watchtowers on the cliffs",
+          "Two bathrooms"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Suite Cap Rocat",
+        "sleeps": null,
+        "facts": [
+          "In the fortress embrasures"
+        ],
+        "lede": "A sitting area and a gazebo, with king size beds, some with a canopy.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Suite El Cabo",
+        "sleeps": null,
+        "facts": [
+          "Roof terrace over the bay"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Suite del Mar",
+        "sleeps": null,
+        "facts": [
+          "Overflow pool",
+          "Terrace with hammocks"
+        ],
+        "lede": null,
+        "features": [
+          "Overflow pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "euphoria-retreat": {
+    "rooms": [
+      {
+        "name": "Classic and Deluxe Rooms",
+        "sleeps": null,
+        "facts": [
+          "Classic 25 to 32 m²",
+          "Superior Deluxe 35 to 49 m²",
+          "Executive Deluxe 42 to 49 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Junior Suites",
+        "sleeps": null,
+        "facts": [
+          "Euphoria Junior Suite 53 m²",
+          "Executive Junior Suite 55 to 63 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Mystras Suite",
+        "sleeps": null,
+        "facts": [
+          "55 to 67 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Byzantium Grand Suite",
+        "sleeps": null,
+        "facts": [
+          "100 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "forestis": {
+    "rooms": [
+      {
+        "name": "Room",
+        "sleeps": 2,
+        "facts": [
+          "35 m²",
+          "One bedroom"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Suite",
+        "sleeps": 2,
+        "facts": [
+          "50 m²",
+          "One bedroom"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Tower Suite",
+        "sleeps": 2,
+        "facts": [
+          "55 m²",
+          "One bedroom"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Penthouse",
+        "sleeps": 2,
+        "facts": [
+          "200 m²",
+          "One bedroom",
+          "Rooftop with pool"
+        ],
+        "lede": null,
+        "features": [
+          "Rooftop pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "hacienda-na-xamena": {
+    "rooms": [
+      {
+        "name": "Double Rooms",
+        "sleeps": null,
+        "facts": [
+          "Double Deluxe Garden 30 m², with jacuzzi",
+          "Double Deluxe 30 m²",
+          "Double Superior 40 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Junior Suites",
+        "sleeps": null,
+        "facts": [
+          "Hammam 45 m²",
+          "Grand 50 m²",
+          "Eden 40 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Suites",
+        "sleeps": null,
+        "facts": [
+          "Suite Eden 45 m²",
+          "Family Suite 60 m²",
+          "Na Xamena Suite 80 m²",
+          "Presidential Suite 90 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "can-lluc": {
+    "rooms": [
+      {
+        "name": "Rural Rooms",
+        "sleeps": null,
+        "facts": [
+          "Deluxe with Terrace",
+          "Superior with Living Room or Family Option",
+          "Superior with Jacuzzi"
+        ],
+        "lede": "Stone walls and wooden ceilings beneath the family house; breakfast is included.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "One-Bedroom Villas",
+        "sleeps": null,
+        "facts": [
+          "60 m² and over",
+          "200 x 200 cm king size bed"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Family Suites and Garden Suite Premium",
+        "sleeps": null,
+        "facts": [
+          "More than 60 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Villas with Private Pool",
+        "sleeps": 4,
+        "facts": [
+          "Deluxe suite villa",
+          "Villa Can Prats and Can Jaume Curt",
+          "Over 180 m²"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "hotel-santa-caterina": {
+    "rooms": [
+      {
+        "name": "Sea View Rooms",
+        "sleeps": null,
+        "facts": [
+          "Partial Sea View to Front Upper Floor Sea View, and Deluxe"
+        ],
+        "lede": "Hand painted majolica floors, marble bathrooms and balconies.",
+        "features": [
+          "Balcony",
+          "Sea view"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Suites",
+        "sleeps": null,
+        "facts": [
+          "Living area and large bathtub"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Special Suites",
+        "sleeps": null,
+        "facts": [
+          "Follia Amalfitana, in a grove of oranges and lemons",
+          "Chalet Giulietta e Romeo"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Casa Marchesa",
+        "sleeps": null,
+        "facts": [
+          "A historic residence among the lemon groves"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "jao-reserve": {
+    "rooms": [
+      {
+        "name": "Jao Camp",
+        "sleeps": null,
+        "facts": [
+          "Five suites and two villas"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Jacana Camp",
+        "sleeps": null,
+        "facts": [
+          "Five tented suites"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Kwetsani Camp",
+        "sleeps": null,
+        "facts": [
+          "Five treehouse style suites"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Tubu Tree and Little Tubu",
+        "sleeps": null,
+        "facts": [
+          "Tubu Tree Camp, eight tented suites",
+          "Little Tubu Camp, three tented suites"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Pelo Camp",
+        "sleeps": null,
+        "facts": [
+          "Five eco tents"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "juvet-landscape-hotel": {
+    "rooms": [
+      {
+        "name": "Landscape Rooms",
+        "sleeps": 2,
+        "facts": [
+          "Seven rooms",
+          "180 x 200 cm double bed"
+        ],
+        "lede": "Small cubes on stilts with one or two glass walls onto the landscape.",
+        "features": [
+          "Glass walls",
+          "Breakfast and dinner included"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "The Bird Houses",
+        "sleeps": 2,
+        "facts": [
+          "No bigger than 8 m²",
+          "160 x 200 cm double bed"
+        ],
+        "lede": "Large windows onto the mountainside.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "The Writer's Lodge",
+        "sleeps": 4,
+        "facts": [
+          "Two bedrooms",
+          "Kitchen"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "land-vineyards": {
+    "rooms": [
+      {
+        "name": "Sky View Suites",
+        "sleeps": null,
+        "facts": [
+          "75 m² or 120 m²"
+        ],
+        "lede": "A bedroom ceiling that opens to the sky.",
+        "features": [
+          "Opening ceiling"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Land View Suites",
+        "sleeps": null,
+        "facts": [
+          "From 90 m²",
+          "Living room and private patio"
+        ],
+        "lede": null,
+        "features": [
+          "Outdoor fireplace"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Lake Villas",
+        "sleeps": null,
+        "facts": [
+          "9 pool villas"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "lalibela-reserve": {
+    "rooms": [
+      {
+        "name": "Tree Tops Safari Lodge",
+        "sleeps": null,
+        "facts": [
+          "Five canopy suites above a valley"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Mark's Camp",
+        "sleeps": null,
+        "facts": [
+          "Eight Pan-African chalets",
+          "Family friendly"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Kichaka Lodge",
+        "sleeps": null,
+        "facts": [
+          "Ten safari colonial suites"
+        ],
+        "lede": null,
+        "features": [
+          "Private plunge pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Inzolo Lodge",
+        "sleeps": null,
+        "facts": [
+          "Four rock ledge suites"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Mills Manor",
+        "sleeps": 10,
+        "facts": [
+          "A private use Edwardian villa",
+          "For groups up to ten"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "les-sources-de-caudalie": {
+    "rooms": [
+      {
+        "name": "Rooms and Junior Suites",
+        "sleeps": null,
+        "facts": [
+          "Comfort Rooms, Prestige Rooms and Junior Suites"
+        ],
+        "lede": "Antique furniture, across six houses in the vines.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Prestige and Signature Suites",
+        "sleeps": 4,
+        "facts": [
+          "For 3 adults or 2 adults and 2 children"
+        ],
+        "lede": null,
+        "features": [
+          "Balcony or terrace"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "lion-sands": {
+    "rooms": [
+      {
+        "name": "River Lodge",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Narina Lodge",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Tinga Lodge",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Hinkwenu Residence",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Fish Eagle Residence",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "loire-valley-lodges": {
+    "rooms": [
+      {
+        "name": "Arty+ Lodge Suites",
+        "sleeps": null,
+        "facts": [
+          "Restyled by artists such as Aurele and JonOne"
+        ],
+        "lede": null,
+        "features": [
+          "Large terrace",
+          "Private spa"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Spa+ Lodge Suites",
+        "sleeps": null,
+        "facts": [
+          "Private sauna on the terrace"
+        ],
+        "lede": null,
+        "features": [
+          "Large terrace",
+          "Private spa",
+          "Private sauna"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "londolozi-reserve": {
+    "rooms": [
+      {
+        "name": "The Camps",
+        "sleeps": null,
+        "facts": [
+          "Four camps"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Private Granite Suites",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Private Family Villas",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "montestyria": {
+    "rooms": [
+      {
+        "name": "Premium Chalets",
+        "sleeps": 4,
+        "facts": [
+          "100 m² on three levels",
+          "Two bedrooms and two bathrooms",
+          "Full kitchen"
+        ],
+        "lede": "A living and dining room with a wood burning stove, and two covered terraces facing south and west; breakfast is included.",
+        "features": [
+          "Private sauna",
+          "Wood burning stove"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Panorama Suites",
+        "sleeps": 2,
+        "facts": [
+          "35 m²",
+          "South facing"
+        ],
+        "lede": "A view of the basilica, with breakfast served in the suite.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "olea-all-suite-hotel": {
+    "rooms": [
+      {
+        "name": "Junior Suites",
+        "sleeps": null,
+        "facts": [
+          "Inland or pool view"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Swim Up Suites",
+        "sleeps": null,
+        "facts": [
+          "Superior Suite Swim Up",
+          "Superior Water Suite Swim Up"
+        ],
+        "lede": null,
+        "features": [
+          "Swim up"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Private Pool Suites",
+        "sleeps": null,
+        "facts": [
+          "Executive, sea or sunset view",
+          "Honeymoon",
+          "Presidential"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "reschio": {
+    "rooms": [
+      {
+        "name": "Rooms",
+        "sleeps": null,
+        "facts": [
+          "From 30 m²",
+          "Grand Rooms from 50 m²"
+        ],
+        "lede": "Within the castle walls.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Castello Suites",
+        "sleeps": null,
+        "facts": [
+          "From 60 m²",
+          "Twin Suites from 68 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "San Michele Suites",
+        "sleeps": null,
+        "facts": [
+          "Garden Suites from 60 m²",
+          "Grand Suites from 85 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "The Tower Suite",
+        "sleeps": null,
+        "facts": [
+          "From 180 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "santa-barbara-eco-beach-resort": {
+    "rooms": [
+      {
+        "name": "Studios and Suites",
+        "sleeps": null,
+        "facts": [
+          "Kitchenette, living room and veranda"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Villas",
+        "sleeps": null,
+        "facts": [
+          "Kitchenette, living room and veranda"
+        ],
+        "lede": null,
+        "features": [
+          "Private heated pool or jacuzzi"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "sindabezi-island-camp": {
+    "rooms": [
+      {
+        "name": "Chalets",
+        "sleeps": null,
+        "facts": [
+          "Five chalets, including a Honeymoon Chalet"
+        ],
+        "lede": "Open fronted and thatched, looking over the Zambezi floodplain and Victoria Falls National Park.",
+        "features": [
+          "River views",
+          "Off the grid"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "the-tawny": {
+    "rooms": [
+      {
+        "name": "Wingspan Collection",
+        "sleeps": null,
+        "facts": [
+          "Shepherds' Huts, Treehouses, Boathouses, Lookouts and Retreats",
+          "Consall Estate"
+        ],
+        "lede": null,
+        "features": [
+          "Private outdoor spa bath"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Fledglings",
+        "sleeps": null,
+        "facts": [
+          "Three serviced homes for groups",
+          "Basford Estate"
+        ],
+        "lede": "Some with private pools, cinema rooms and saunas.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Owlets",
+        "sleeps": 8,
+        "facts": [
+          "Five cottages sleeping two to eight",
+          "Basford Estate"
+        ],
+        "lede": null,
+        "features": [
+          "Private garden"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "tswalu-reserve": {
+    "rooms": [
+      {
+        "name": "The Motse",
+        "sleeps": null,
+        "facts": [
+          "Nine stone and thatch suites",
+          "Family options"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Loapi",
+        "sleeps": null,
+        "facts": [
+          "Six tented safari homes",
+          "A private micro camp"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Tarkuni",
+        "sleeps": null,
+        "facts": [
+          "Five bedroom homestead",
+          "Exclusive use"
+        ],
+        "lede": "Taken whole, with a private chef and vehicle.",
+        "features": [
+          "Private chef",
+          "Private vehicle"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "villa-dubrovnik": {
+    "rooms": [
+      {
+        "name": "Sea View Rooms",
+        "sleeps": null,
+        "facts": [
+          "Superior Sea View 35 m²",
+          "Deluxe Sea View 40 m²",
+          "Deluxe Grand Sea View 40 m²"
+        ],
+        "lede": "Interiors by Studio Arthur Casas with Gio Ponti furniture.",
+        "features": [
+          "Sea view"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Signature Suites",
+        "sleeps": null,
+        "facts": [
+          "Romantiko 87 m² to Tezoro 216 m²",
+          "Tezoro with a 122 m² terrace"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Villa Kolin",
+        "sleeps": 6,
+        "facts": [
+          "180 m²",
+          "Three bedrooms",
+          "Private entrance through a pine wood"
+        ],
+        "lede": null,
+        "features": [
+          "Private pool"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "white-exclusive-suites-villas": {
+    "rooms": [
+      {
+        "name": "Suites",
+        "sleeps": null,
+        "facts": [
+          "Nine suites, 27 to 38 m²",
+          "Junior, Unique and Ocean"
+        ],
+        "lede": "Kitchenettes, and sea views from all but La Maison.",
+        "features": [
+          "Sea view",
+          "Kitchenette"
+        ],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Private Villas",
+        "sleeps": null,
+        "facts": [
+          "The Villa and Casa da Rocha",
+          "42 m² to 400 m²"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "whitepod": {
+    "rooms": [
+      {
+        "name": "Cosy and Family Pods",
+        "sleeps": null,
+        "facts": [
+          "Cosy Pod for a couple or a family with one child",
+          "Family Pod with a mezzanine for two children"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Deluxe and Zen Pods",
+        "sleeps": null,
+        "facts": [
+          "Deluxe Pod with breakfast delivered",
+          "Zen Pod Suite, Japanese inspired"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Timeless and Forest Pods",
+        "sleeps": null,
+        "facts": [
+          "Timeless Pod with a private bath",
+          "Forest Pod Suite by Yasmine Nicoucar"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Swiss Pod Suite and Chalets",
+        "sleeps": null,
+        "facts": [
+          "A mix of pod and chalet",
+          "Chalets on the same site"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "inkaterra-reserva-amazonica": {
+    "rooms": [
+      {
+        "name": "Cabañas",
+        "sleeps": null,
+        "facts": [
+          "35 wooden cabanas",
+          "Inspired by Ese’Eja culture"
+        ],
+        "lede": "Wooden cabanas facing the Madre de Dios River, in a private reserve of 17,000 hectares.",
+        "features": [
+          "Rainforest setting"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
   }
 }

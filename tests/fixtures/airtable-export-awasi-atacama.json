@@ -122,16 +122,16 @@
           "name": "USD",
           "color": ""
         },
-        "fldOLmHRvvPylXjvm": "2026-10-01",
-        "fldSnFiC03lYCrFJv": "2027-12-31",
-        "fldC6tJYcgh5buiXc": "Awasi Atacama Fully Hosted Rates 2026-2027 (awasi.com/info, 2026-09). Public rack rates; nightly rate with long-stay offers of 3%, 5%, 8%. Approved to publish by James, 24 Nov 2026. October to December 2027 added from the 2027-2028 sheet (https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Atacama_Fully-Hosted-Rates_2027-2028.pdf), read by eye 27 Nov 2026; 2027 dates only, as James asked.",
+        "fldOLmHRvvPylXjvm": "2027-01-01",
+        "fldSnFiC03lYCrFJv": "2028-09-30",
+        "fldC6tJYcgh5buiXc": "Awasi Atacama Fully Hosted Rates 2026-2027 (awasi.com/info, 2026-09). Public rack rates; nightly rate with long-stay offers of 3%, 5%, 8%. Approved to publish by James, 24 Nov 2026. October to December 2027 added from the 2027-2028 sheet (https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Atacama_Fully-Hosted-Rates_2027-2028.pdf), read by eye 27 Nov 2026; 2027 dates only, as James asked. January to September 2028 added from the same sheet and October to December 2026 removed, 27 Nov 2026 (James: use 2028 rates wherever the house holds them).",
         "fldnth7DRrQxKX7gp": 0.5,
         "flduDBHCrnixoEnwX": 30,
         "fldLicyNay0J7QUhE": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
         "fldoisPzvpMjxR7a5": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; Festive 2027-12-20..2028-01-03 = 120:50, 60:100; November to February 2026-11-01..2027-02-28 = 44:50, 30:100; November to February 2027-11-01..2028-02-29 = 44:50, 30:100; 30:50, 15:100",
-        "fldZuYDcij1wBcHgG": 3,
-        "fld1XEDdmw71rH865": 3,
-        "fld2WUPdKEbun6uKO": "2026-11-27T13:25:00.000Z",
+        "fldZuYDcij1wBcHgG": 4,
+        "fld1XEDdmw71rH865": 4,
+        "fld2WUPdKEbun6uKO": "2026-11-27T14:05:00.000Z",
         "fld2GLjAnpzzDcK1K": [
           {
             "id": "recwzXtRRji8TM8uM"
@@ -144,8 +144,8 @@
     {
       "id": "recxSozrhW6qnkVL0",
       "cellValuesByFieldId": {
-        "fldGGcvxjBVyJyunK": "High 2026-11 to 2027-02",
-        "fldXs26HOWuPXJ2Fz": "2026-11-01",
+        "fldGGcvxjBVyJyunK": "High 2027-01 to 2027-02",
+        "fldXs26HOWuPXJ2Fz": "2027-01-01",
         "fldEhCN4nLoa4bxZr": "2027-02-28",
         "fldsX0xyR1BGwGJyT": 2,
         "fldyhI3g4yLgjh6Pe": 2920,
@@ -168,35 +168,6 @@
           }
         ],
         "fldDufeI0oKqOgbuN": 2195
-      }
-    },
-    {
-      "id": "recWYZ4whJIr8REPJ",
-      "cellValuesByFieldId": {
-        "fldGGcvxjBVyJyunK": "Shoulder 2026-10",
-        "fldXs26HOWuPXJ2Fz": "2026-10-01",
-        "fldEhCN4nLoa4bxZr": "2026-10-31",
-        "fldsX0xyR1BGwGJyT": 2,
-        "fldyhI3g4yLgjh6Pe": 2485,
-        "fldpsSFpFEG5xUQvX": 2,
-        "fldYVog1NI9RYuRNw": 0,
-        "fldw9C20nxPu3fRcA": true,
-        "fldffowfs9OCTotOV": [
-          {
-            "id": "reci3sO609aXNuYX6"
-          }
-        ],
-        "fldZrQVT0Fn1GzzJm": [
-          {
-            "id": "rec9eGbq3RqaRDUuW"
-          }
-        ],
-        "fld93xGvzmubO4l3X": [
-          {
-            "id": "rece6aBEPbBWgC4I7"
-          }
-        ],
-        "fldDufeI0oKqOgbuN": 1870
       }
     },
     {
@@ -260,8 +231,8 @@
     {
       "id": "rec8reiWPco11ybFY",
       "cellValuesByFieldId": {
-        "fldGGcvxjBVyJyunK": "High 2026-11 to 2027-02",
-        "fldXs26HOWuPXJ2Fz": "2026-11-01",
+        "fldGGcvxjBVyJyunK": "High 2027-01 to 2027-02",
+        "fldXs26HOWuPXJ2Fz": "2027-01-01",
         "fldEhCN4nLoa4bxZr": "2027-02-28",
         "fldsX0xyR1BGwGJyT": 2,
         "fldyhI3g4yLgjh6Pe": 4065,
@@ -285,36 +256,6 @@
         ],
         "fldWkR0xbRaQBYJiY": 815,
         "fldDufeI0oKqOgbuN": 3050
-      }
-    },
-    {
-      "id": "recXkoStguT3Zr39b",
-      "cellValuesByFieldId": {
-        "fldGGcvxjBVyJyunK": "Shoulder 2026-10",
-        "fldXs26HOWuPXJ2Fz": "2026-10-01",
-        "fldEhCN4nLoa4bxZr": "2026-10-31",
-        "fldsX0xyR1BGwGJyT": 2,
-        "fldyhI3g4yLgjh6Pe": 3325,
-        "fldpsSFpFEG5xUQvX": 2,
-        "fldYVog1NI9RYuRNw": 0,
-        "fldw9C20nxPu3fRcA": true,
-        "fldffowfs9OCTotOV": [
-          {
-            "id": "reci3sO609aXNuYX6"
-          }
-        ],
-        "fldZrQVT0Fn1GzzJm": [
-          {
-            "id": "recR870tEgGlsvHT4"
-          }
-        ],
-        "fld93xGvzmubO4l3X": [
-          {
-            "id": "recrQ5WdFn3FRkQKV"
-          }
-        ],
-        "fldWkR0xbRaQBYJiY": 625,
-        "fldDufeI0oKqOgbuN": 2470
       }
     },
     {
@@ -380,9 +321,9 @@
     {
       "id": "reca8r0ftIG495J3S",
       "cellValuesByFieldId": {
-        "fldGGcvxjBVyJyunK": "High 2027-11 to 2027-12",
+        "fldGGcvxjBVyJyunK": "High 2027-11 to 2028-02",
         "fldXs26HOWuPXJ2Fz": "2027-11-01",
-        "fldEhCN4nLoa4bxZr": "2027-12-31",
+        "fldEhCN4nLoa4bxZr": "2028-02-29",
         "fldsX0xyR1BGwGJyT": 2,
         "fldyhI3g4yLgjh6Pe": 3200,
         "fldpsSFpFEG5xUQvX": 2,
@@ -438,9 +379,9 @@
     {
       "id": "recbr0zgZbeRQBcKL",
       "cellValuesByFieldId": {
-        "fldGGcvxjBVyJyunK": "High 2027-11 to 2027-12",
+        "fldGGcvxjBVyJyunK": "High 2027-11 to 2028-02",
         "fldXs26HOWuPXJ2Fz": "2027-11-01",
-        "fldEhCN4nLoa4bxZr": "2027-12-31",
+        "fldEhCN4nLoa4bxZr": "2028-02-29",
         "fldsX0xyR1BGwGJyT": 2,
         "fldyhI3g4yLgjh6Pe": 4460,
         "fldpsSFpFEG5xUQvX": 2,
@@ -493,6 +434,124 @@
         ],
         "fldWkR0xbRaQBYJiY": 730,
         "fldDufeI0oKqOgbuN": 2720
+      }
+    },
+    {
+      "id": "recQ57S0kMvs3IYKH",
+      "cellValuesByFieldId": {
+        "fldGGcvxjBVyJyunK": "Shoulder 2028-03 to 2028-04",
+        "fldXs26HOWuPXJ2Fz": "2028-03-01",
+        "fldEhCN4nLoa4bxZr": "2028-04-30",
+        "fldsX0xyR1BGwGJyT": 2,
+        "fldyhI3g4yLgjh6Pe": 2735,
+        "fldpsSFpFEG5xUQvX": 2,
+        "fldYVog1NI9RYuRNw": 0,
+        "fldw9C20nxPu3fRcA": true,
+        "fldffowfs9OCTotOV": [
+          {
+            "id": "reci3sO609aXNuYX6"
+          }
+        ],
+        "fldZrQVT0Fn1GzzJm": [
+          {
+            "id": "rec9eGbq3RqaRDUuW"
+          }
+        ],
+        "fld93xGvzmubO4l3X": [
+          {
+            "id": "rece6aBEPbBWgC4I7"
+          }
+        ],
+        "fldDufeI0oKqOgbuN": 2055
+      }
+    },
+    {
+      "id": "recQJihQP9FhNZlQL",
+      "cellValuesByFieldId": {
+        "fldGGcvxjBVyJyunK": "Off-Peak 2028-05 to 2028-09",
+        "fldXs26HOWuPXJ2Fz": "2028-05-01",
+        "fldEhCN4nLoa4bxZr": "2028-09-30",
+        "fldsX0xyR1BGwGJyT": 2,
+        "fldyhI3g4yLgjh6Pe": 2420,
+        "fldpsSFpFEG5xUQvX": 2,
+        "fldYVog1NI9RYuRNw": 0,
+        "fldw9C20nxPu3fRcA": true,
+        "fldffowfs9OCTotOV": [
+          {
+            "id": "reci3sO609aXNuYX6"
+          }
+        ],
+        "fldZrQVT0Fn1GzzJm": [
+          {
+            "id": "rec9eGbq3RqaRDUuW"
+          }
+        ],
+        "fld93xGvzmubO4l3X": [
+          {
+            "id": "rece6aBEPbBWgC4I7"
+          }
+        ],
+        "fldDufeI0oKqOgbuN": 1815
+      }
+    },
+    {
+      "id": "reckpF4FNl9nCwvVt",
+      "cellValuesByFieldId": {
+        "fldGGcvxjBVyJyunK": "Shoulder 2028-03 to 2028-04",
+        "fldXs26HOWuPXJ2Fz": "2028-03-01",
+        "fldEhCN4nLoa4bxZr": "2028-04-30",
+        "fldsX0xyR1BGwGJyT": 2,
+        "fldyhI3g4yLgjh6Pe": 3620,
+        "fldpsSFpFEG5xUQvX": 2,
+        "fldYVog1NI9RYuRNw": 0,
+        "fldw9C20nxPu3fRcA": true,
+        "fldffowfs9OCTotOV": [
+          {
+            "id": "reci3sO609aXNuYX6"
+          }
+        ],
+        "fldZrQVT0Fn1GzzJm": [
+          {
+            "id": "recR870tEgGlsvHT4"
+          }
+        ],
+        "fld93xGvzmubO4l3X": [
+          {
+            "id": "recrQ5WdFn3FRkQKV"
+          }
+        ],
+        "fldWkR0xbRaQBYJiY": 730,
+        "fldDufeI0oKqOgbuN": 2720
+      }
+    },
+    {
+      "id": "recdHKSBhMhMzZrDs",
+      "cellValuesByFieldId": {
+        "fldGGcvxjBVyJyunK": "Off-Peak 2028-05 to 2028-09",
+        "fldXs26HOWuPXJ2Fz": "2028-05-01",
+        "fldEhCN4nLoa4bxZr": "2028-09-30",
+        "fldsX0xyR1BGwGJyT": 2,
+        "fldyhI3g4yLgjh6Pe": 3070,
+        "fldpsSFpFEG5xUQvX": 2,
+        "fldYVog1NI9RYuRNw": 0,
+        "fldw9C20nxPu3fRcA": true,
+        "fldffowfs9OCTotOV": [
+          {
+            "id": "reci3sO609aXNuYX6"
+          }
+        ],
+        "fldZrQVT0Fn1GzzJm": [
+          {
+            "id": "recR870tEgGlsvHT4"
+          }
+        ],
+        "fld93xGvzmubO4l3X": [
+          {
+            "id": "recrQ5WdFn3FRkQKV"
+          }
+        ],
+        "fldWkR0xbRaQBYJiY": 630,
+        "fldDufeI0oKqOgbuN": 2310
       }
     }
   ],

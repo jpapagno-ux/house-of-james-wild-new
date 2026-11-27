@@ -16930,5 +16930,510 @@
         "section": "pool"
       }
     ]
+  },
+  "anantara-ubud-bali": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/anantara-ubud-bali/resort-pool-valley",
+        "alt": "Anantara Ubud and its pools above the rainforest valley",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/resort-air",
+        "alt": "Anantara Ubud from the air among the forest of Payangan",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/resort-facade",
+        "alt": "The resort rising from the rainforest beside the pool",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/forest-mist",
+        "alt": "Morning mist over the rainforest below the resort",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/mount-agung",
+        "alt": "Mount Agung at dusk from Anantara Ubud",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/deck-volcano",
+        "alt": "The lobby deck looking out to the volcanoes",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/deck-evening",
+        "alt": "The lobby deck in the evening light over the forest",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/pool-jungle",
+        "alt": "The Anantara Ubud pool terraces stepping down into the Payangan rainforest",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/pool-dusk",
+        "alt": "The pool at dusk under the forest canopy",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/heated-pool",
+        "alt": "The heated pool among the palms",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/pool-air",
+        "alt": "The family pool deck from above",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/villa-pool",
+        "alt": "A villa infinity pool above the rainforest",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/two-bedroom-villa-pool",
+        "alt": "The infinity pool of a Two Bedroom Forest View Pool Villa among the treetops",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/waterfall",
+        "alt": "A sacred waterfall on a signature Anantara journey",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/mount-abang",
+        "alt": "Rainforest on the Mount Abang exploration",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/dinner-pool",
+        "alt": "Dinner by candlelight beside the pool at dusk",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/sulang-bar",
+        "alt": "The Sulang bar terrace over the pool",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/amerta",
+        "alt": "Amerta restaurant open to the forest",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/forest-view-suite",
+        "alt": "A Forest View Suite bedroom with the rainforest beyond",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/forest-view-suite-balcony",
+        "alt": "The balcony of a Forest View Suite over the treetops",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/forest-view-suite-lounge",
+        "alt": "The living area of a Forest View Suite",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/payangan-suite",
+        "alt": "A Payangan Suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/wana-suite",
+        "alt": "A Wana Suite with twin beds and forest views",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/one-bedroom-villa",
+        "alt": "A One Bedroom Forest View Pool Villa bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/one-bedroom-villa-lounge",
+        "alt": "The living room of a One Bedroom Forest View Pool Villa opening to its pool",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/two-bedroom-villa",
+        "alt": "The living room of a Two Bedroom Forest View Pool Villa",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-ubud-bali/two-bedroom-villa-twin",
+        "alt": "The twin bedroom of a Two Bedroom Forest View Pool Villa",
+        "section": "rooms"
+      }
+    ]
+  },
+  "kaaba-luum-mexico": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/villa-deck-air",
+        "alt": "A Kaaba Luum villa and its deck in the jungle canopy from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/palapa-air",
+        "alt": "A thatched palapa rising from the Tulum jungle",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/jungle-path",
+        "alt": "A path through the jungle at Kaaba Luum",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/woven-tunnel",
+        "alt": "A woven tunnel walkway into the jungle",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/nest",
+        "alt": "A woven nest lounge in the trees",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/jungle-lounge",
+        "alt": "A lounge tucked into the green of the jungle",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/palapa-dining",
+        "alt": "The palapa set for a long table in shafts of morning light",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/casita",
+        "alt": "The Casita and its plunge pool",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/villa-tierra",
+        "alt": "Villa Tierra, stone and timber closest to the jungle floor",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/villa-agua",
+        "alt": "Villa Agua, soft light and calm textures",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/villa-aire",
+        "alt": "Villa Aire, with the canopy at eye level",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/villa-fuego",
+        "alt": "Villa Fuego, the warm villa where groups gather",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/villa-lounge",
+        "alt": "A villa lounge with its glass walls open to the jungle",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/villa-lounge-pool",
+        "alt": "A villa lounge looking out to the trees",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/kaaba-luum-mexico/villa-bedroom-view",
+        "alt": "A villa room opening to the jungle",
+        "section": "rooms"
+      }
+    ]
+  },
+  "villa-bokeh": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/villa-bokeh/estate-pond",
+        "alt": "Villa Bokéh reflected in its garden pond beneath the cypresses",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/estate-dusk",
+        "alt": "Villa Bokéh lit at dusk across the still water",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/volcano-gardens",
+        "alt": "Volcán de Agua rising over the gardens of Villa Bokéh",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/gardens",
+        "alt": "The house above its gardens of lilies and cypress",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/pond-garden",
+        "alt": "A garden pond among the palms and flowers",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/courtyard",
+        "alt": "The courtyard fountain before the house",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/picnic",
+        "alt": "A picnic under a canopy on the lawn",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/anil-deluxe",
+        "alt": "Añil, a Deluxe room",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/deluxe-room",
+        "alt": "A Deluxe room with its outdoor patio",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/junior-suite",
+        "alt": "A Junior Suite bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/terrace-firepit",
+        "alt": "A suite terrace with its firepit",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/balcony",
+        "alt": "A suite balcony over the gardens",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/suite-garden",
+        "alt": "A suite opening to the garden",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/villa-bokeh/suite-bath",
+        "alt": "A suite bathroom with a free standing tub",
+        "section": "rooms"
+      }
+    ]
+  },
+  "nomade-temple-madrid": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/nomade-temple-madrid/terrace-plunge-pool",
+        "alt": "A rooftop terrace with its plunge pool above Gran Vía",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/nomade-temple-madrid/terrace-daybed",
+        "alt": "A rooftop terrace daybed among the rooftops of Madrid",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/nomade-temple-madrid/balcony-gran-via",
+        "alt": "A balcony looking out to the historic façades of Gran Vía",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/nomade-temple-madrid/room-balcony",
+        "alt": "A room with its doors open to the balcony",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/nomade-temple-madrid/room-gold",
+        "alt": "A room in warm gold tones",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/nomade-temple-madrid/room-lounge",
+        "alt": "A room with its sitting area under tall windows",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/nomade-temple-madrid/suite-lounge",
+        "alt": "A suite lounge in deep blue and red",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/nomade-temple-madrid/room-bed",
+        "alt": "A bed dressed in Nômade textiles",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/nomade-temple-madrid/suite",
+        "alt": "A suite seen from its lounge",
+        "section": "rooms"
+      }
+    ]
+  },
+  "singita-kwitonda": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/singita-kwitonda/volcanoes",
+        "alt": "The Virunga volcanoes above the green fields beside Singita Kwitonda",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/lodge-sunset",
+        "alt": "The lodge terrace at sunset beneath the volcanoes",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/volcano-fields",
+        "alt": "A volcano rising over the farmland on the park edge",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/hills",
+        "alt": "The terraced hills of Volcanoes National Park",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/forest-mist",
+        "alt": "Mist over the forest of Volcanoes National Park",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/suite-exterior",
+        "alt": "A Kwitonda suite in volcanic stone among the gardens",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/lounge-view",
+        "alt": "The main lounge looking out to the volcano and the pool",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/gorilla",
+        "alt": "A mountain gorilla feeding in the forest",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/gorilla-young",
+        "alt": "A young gorilla in the green of the forest",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/gorilla-vines",
+        "alt": "A gorilla climbing among the bamboo",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/golden-monkey",
+        "alt": "A golden monkey in the grass",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/golden-monkeys-guests",
+        "alt": "Guests watching golden monkeys at the forest edge",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/yoga",
+        "alt": "Yoga facing the volcanoes",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/tree-planting",
+        "alt": "Planting trees at the Akarabo Nursery",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/fossey-campus",
+        "alt": "The Ellen DeGeneres Campus of the Dian Fossey Gorilla Fund",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/cycling",
+        "alt": "Bicycles ready outside a suite",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/suite-view",
+        "alt": "A guest reading in a suite looking out to the volcano",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/suite-lounge-view",
+        "alt": "A suite lounge with its window to the fields and volcanoes",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/suite-bedroom",
+        "alt": "A suite bedroom with its window seat and forest view",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/suite-bath",
+        "alt": "A suite bath before the window and the forest",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/singita-kwitonda/suite-fireplace",
+        "alt": "A suite lounge with its stone fireplace",
+        "section": "rooms"
+      }
+    ]
+  },
+  "singita-elela": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/singita-elela/elephants-air",
+        "alt": "Elephants crossing the floodplain from above, Okavango Delta",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-elela/channel",
+        "alt": "A channel of the Okavango Delta under an evening sky",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-elela/drive-palms",
+        "alt": "A game drive above a channel lined with palms",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-elela/palms-stars",
+        "alt": "Palms beneath the Milky Way in the Okavango Delta",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-elela/tree-stars",
+        "alt": "A lone tree under the stars of the Delta",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/singita-elela/leopard",
+        "alt": "A male leopard in the Okavango Delta",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-elela/guide",
+        "alt": "A guide reading the bush at first light",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-elela/baobab",
+        "alt": "Looking up into a baobab in the Delta",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/singita-elela/frog",
+        "alt": "A painted reed frog on a stem",
+        "section": "experiences"
+      }
+    ]
   }
 }

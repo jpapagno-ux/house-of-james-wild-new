@@ -326,7 +326,6 @@ export const STAY_SLUGS: string[] = [
   "beyond-mnemba-by-and-beyond",
   "beyond-sussuvlei-desert-lodge",
   "beyond-vira-vira-lodge",
-  "bintana-sa-paraiso",
   "blancaneaux-lodge",
   "blue-reef-island",
   "blue-safari-seychelles",

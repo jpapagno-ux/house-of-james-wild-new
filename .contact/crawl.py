@@ -16,6 +16,7 @@ for slug,url in rows:
     txt=html.unescape(re.sub(r'\s+',' ',re.sub(r'<[^>]+>','\n',body)))
     open(f'.contact/text/{slug}.txt','w').write(txt[:60000])
     links=sorted(set(urllib.parse.urljoin(base,h) for h in re.findall(r'href=["\']([^"\'#]+)',raw)))
+    links=[l for l in links if not re.search(r'(?i)access_token|api[_-]?key|mapbox|token=',l)]
     open(f'.contact/links/{slug}.txt','w').write('\n'.join(links))
     cands=[]
     for m in re.findall(r'(?:src|data-src|data-lazy-src|data-bg|poster|content|href)=["\']([^"\']+)',raw): cands.append(m)

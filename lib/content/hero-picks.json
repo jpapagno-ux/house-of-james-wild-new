@@ -6798,6 +6798,148 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/six-senses-krabey-island/b3-3",
         "alt": "A villa pool deck above the sea"
       }
+    ],
+    "stay:baymanhi-exuma": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/baymanhi-exuma/brand-33",
+        "alt": "Baymahni and its pool on the peninsula from the air, Stocking Island"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/baymanhi-exuma/brand-40",
+        "alt": "White sand and clear water along the beach"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/baymanhi-exuma/brand-39",
+        "alt": "A bungalow among the palms"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/baymanhi-exuma/brand-38",
+        "alt": "A sea turtle in the clear water off Exuma"
+      }
+    ],
+    "stay:panorama-glass-lodge": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/panorama-glass-lodge/brand-17",
+        "alt": "A glass lodge beneath the northern lights"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/panorama-glass-lodge/brand-13",
+        "alt": "A lodge and its hot tub on the grass at sunset"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/panorama-glass-lodge/brand-38",
+        "alt": "A glass lodge under the Milky Way"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/panorama-glass-lodge/brand-15",
+        "alt": "A glass bedroom looking out over the river valley"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/panorama-glass-lodge/brand-22",
+        "alt": "The lodges scattered across the green valley from the air"
+      }
+    ],
+    "stay:plataran-borobudur": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/plataran-borobudur/brand-5",
+        "alt": "Dinner set on the terrace facing the volcanoes at sunrise"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/plataran-borobudur/brand-32",
+        "alt": "Mist over the forest and Borobudur at dawn"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/plataran-borobudur/brand-0",
+        "alt": "Borobudur on the skyline at first light"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/plataran-borobudur/brand-3",
+        "alt": "A villa and its private pool"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/plataran-borobudur/brand-8",
+        "alt": "Riding through the rice fields below the hills"
+      }
+    ],
+    "stay:under-canvas-grand-canyon": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/under-canvas-grand-canyon/brand-9",
+        "alt": "Sunrise over the Grand Canyon from the rim"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/under-canvas-grand-canyon/brand-0",
+        "alt": "The tents among the juniper and sage beneath a stormy sky"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/under-canvas-grand-canyon/brand-4",
+        "alt": "A tent lit beneath the Milky Way"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/under-canvas-grand-canyon/brand-5",
+        "alt": "Tents beneath a rainbow at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/under-canvas-grand-canyon/brand-27",
+        "alt": "The Colorado River deep in the Grand Canyon"
+      }
+    ],
+    "stay:uxua-casa-hotel-spa": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/uxua-casa-hotel-spa/brand-13",
+        "alt": "A fisherman's house behind bougainvillea in Trancoso"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/uxua-casa-hotel-spa/brand-4",
+        "alt": "A blue casa and its garden table"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/uxua-casa-hotel-spa/brand-2",
+        "alt": "The treehouse veranda in the canopy"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/uxua-casa-hotel-spa/brand-11",
+        "alt": "A garden veranda among the plants"
+      }
+    ],
+    "stay:ion-adventure-hotel": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/ion-adventure-hotel/brand-25",
+        "alt": "ION Adventure Hotel on its stilts above the lava field, Icelandic horses grazing"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/ion-adventure-hotel/brand-24",
+        "alt": "The hotel in deep snow from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/ion-adventure-hotel/brand-0",
+        "alt": "The geothermal pool beneath the hotel, snow on the hills beyond"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/ion-adventure-hotel/brand-2",
+        "alt": "Snowmobiles below a snowy peak"
+      }
+    ],
+    "stay:shinta-mani-wild": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shinta-mani-wild/brand-14",
+        "alt": "The river and waterfalls running through the camp from the air"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shinta-mani-wild/brand-17",
+        "alt": "A thatched deck beside the waterfall"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shinta-mani-wild/brand-16",
+        "alt": "The pool in the forest canopy from above"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shinta-mani-wild/brand-13",
+        "alt": "A daybed on a deck over the falls"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/shinta-mani-wild/brand-10",
+        "alt": "A massage on a deck above the river"
+      }
     ]
   }
 }

@@ -54,6 +54,10 @@ for (const [slug, url] of Object.entries(pages.stays)) {
     const html = await get(url + sub);
     if (!html) { console.log("missing", url + sub); continue; }
     raw.stays[slug].pages[sub || "home"] = read(html);
+    if (process.env.DEBUG_HTML && sub === "accommodation/") {
+      const i = html.indexOf(">Cabana<");
+      raw.debug = { around: html.slice(Math.max(0, i - 6000), i + 500), figures: [...html.matchAll(/<figure[\s\S]{0,700}/g)].slice(0, 6).map((x) => x[0]), hosts: [...new Set([...html.matchAll(/https?:\/\/[a-z0-9.-]+\/[^"'\s)]+\.(?:jpe?g|png|webp|avif)/gi)].map((x) => x[0]))].slice(0, 60) };
+    }
     console.log(slug, sub || "home", raw.stays[slug].pages[sub || "home"].length);
   }
 }

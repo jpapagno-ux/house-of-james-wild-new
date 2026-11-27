@@ -8688,5 +8688,61 @@
         "plungePool": false
       }
     ]
+  },
+  "benguerra-island-by-and-beyond": {
+    "rooms": [
+      {
+        "name": "Cabana",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "50 sq m (540 sq ft)",
+          "Private plunge pool",
+          "2 cabanas"
+        ],
+        "lede": "Steps from the sea, with a shaded outdoor living area and a private plunge pool that looks over the beach and the tide.",
+        "features": [],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/cabana-1",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/cabana-2",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/cabana-3"
+        ]
+      },
+      {
+        "name": "Casinha",
+        "sleeps": 2,
+        "facts": [
+          "Sleeps 2",
+          "60 sq m (645 sq ft)",
+          "Private plunge pool",
+          "10 casinhas"
+        ],
+        "lede": "A little larger than the cabanas, with a tropical feel and touches of the Portuguese heritage of the coast.",
+        "features": [],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/casinha-1",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/casinha-2",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/casinha-3"
+        ]
+      },
+      {
+        "name": "Casa Familia",
+        "sleeps": 6,
+        "facts": [
+          "Sleeps 6 (4 adults and 2 children)",
+          "Three bedrooms",
+          "170 sq m (1,830 sq ft)",
+          "1 Casa Familia"
+        ],
+        "lede": "A three bedroom beach home for a family or friends travelling together, with its own stretch of white sand.",
+        "features": [],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/casa-familia-2",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/casa-familia-3",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/casa-familia-4",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/f_auto,q_auto/jwco/stays/benguerra-island-by-and-beyond/rooms/casa-familia-1"
+        ]
+      }
+    ]
   }
 }

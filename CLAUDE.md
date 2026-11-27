@@ -101,7 +101,8 @@
   view. The chapter picker enforces this from the photo descriptions in `photo-notes.json`; describe new photographs
   there, and choose heroes by the same rule.
 - Round three (James, 24 Nov 2026): no gap under the hero; the introduction opens with its first sentence large and a
-  drop capital, the rest in the house italic. What You Can Expect is picture cards where a stay is filed in
+  drop capital, the rest in the house italic. The whole introduction is Cormorant italic, first sentence included; the drop
+  capital stays upright (James, 27 Nov 2026: "use the better font on intro"). What You Can Expect is picture cards where a stay is filed in
   `lib/journal-style/expect-cards.json`: "Things to do" then "At the stay", each card a photograph, a name and one line
   from the stay's own filed text, in a sideways scroll like the rooms. A card with no photograph prints "Image coming
   soon" so the gap is seen; never borrow a photograph that does not show the thing. Stays not filed there keep the folds.

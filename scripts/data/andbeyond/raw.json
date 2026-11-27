@@ -6,6 +6,14 @@
    "pages": {
     "home": [
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Header-dhow-bar-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "Header dhow bar at andBeyond benguerra island on a mozambique luxury beach resort",
+      "w": 1920,
+      "h": 1080,
+      "at": 0
+     },
+     {
       "t": "h1",
       "text": "&Beyond Benguerra Island Lodge"
      },
@@ -34,8 +42,40 @@
       "text": "Off the coast of southern Mozambique, within the Bazaruto Archipelago National Park, lies &Beyond Benguerra Island Lodge. Sheltered by indigenous forest, framed by sweeping beaches and opening onto a protected channel, it’s a place where marine adventure, quiet retreat and warm Mozambican hospitality come together with effortless ease. —"
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal-342.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 7
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Dhow-cruise-with-guests-on-board-1.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 7
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Casa-Familia-exterior-dinner-setup-staff.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 7
+     },
+     {
       "t": "h3",
       "text": "The kind of island that changes your pace and perspective."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Website-video-play-2026.png",
+      "alt": "sea swing in andBeyond Benguerra Island Mozambique",
+      "w": 1920,
+      "h": 1080,
+      "at": 8
      },
      {
       "t": "h3",
@@ -50,6 +90,30 @@
       "text": "Island luxury"
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-beach-breakfast-on-the-beach-1.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 11
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-in-room-massage-1.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 11
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-dhow-guests-3-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 11
+     },
+     {
       "t": "h3",
       "text": "Living between ocean and forest."
      },
@@ -60,6 +124,30 @@
      {
       "t": "p",
       "text": "Stay with us"
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/private-plunge-pool-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "private plunge pool at andBeyond benguerra island on a mozambique luxury beach resort",
+      "w": 1920,
+      "h": 1080,
+      "at": 14
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casinha-external-at-sunset-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 14
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Shaded-gazebo-providing-ideal-dinner-venue-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "Cabana at andBeyond Benguerra Island in Mozambique",
+      "w": 1920,
+      "h": 1080,
+      "at": 14
      },
      {
       "t": "h3",
@@ -74,8 +162,56 @@
       "text": "Uncover every adventure"
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal.jpg",
+      "alt": "",
+      "w": 800,
+      "h": 800,
+      "at": 17
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-sand-boarding.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 2322,
+      "at": 17
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-castaway-picnic-butler-1.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 17
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Horse-riding-women-on-a-horse-in-water-1.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 2322,
+      "at": 17
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Scuba-diving-with-fish-1.jpg",
+      "alt": "",
+      "w": 800,
+      "h": 800,
+      "at": 17
+     },
+     {
       "t": "h3",
       "text": "Some places change the way you see the world."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Beach-Walks-couple-on-the-beach-.jpg",
+      "alt": "Benguerra Island Experiences Beach Walks couple on the beach",
+      "w": 1920,
+      "h": 1080,
+      "at": 18
      },
      {
       "t": "h3",
@@ -98,6 +234,46 @@
       "text": "Discover more."
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-room-cabana-lounge-area-on-the-beach.png",
+      "alt": "Luxury beachside cabana at andBeyond Benguerra Island",
+      "w": 1080,
+      "h": 1080,
+      "at": 23
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casinha-from-outside.png",
+      "alt": "andBeyond Benguerra Island Luxury Room Casinha Exterior",
+      "w": 1080,
+      "h": 1080,
+      "at": 23
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Snorkeling-couple.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 23
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Cabana-external-portrait.png",
+      "alt": "Luxury Cabana island room, andBeyond Benguerra Island",
+      "w": 1080,
+      "h": 1080,
+      "at": 23
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-brochure-thumbnail-without-logo.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 23
+     },
+     {
       "t": "p",
       "text": "PROULDLY ONE OF PLANET EARTH’S MOST SUSTAINABLE HOTELS"
      },
@@ -107,6 +283,14 @@
      }
     ],
     "about/": [
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Cabana-pool-and-beach-with-guest.jpg",
+      "alt": "Luxury Solo Trip at andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 0
+     },
      {
       "t": "h1",
       "text": "Island luxury"
@@ -126,6 +310,30 @@
      {
       "t": "p",
       "text": "Take a tour"
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal-355.jpg",
+      "alt": "Coffee Table at Benguerra Island in Mozambique",
+      "w": 762,
+      "h": 1080,
+      "at": 5
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-housekeeping.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 5
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal-353.jpg",
+      "alt": "Green Couch in andBeyond Benguerra Island Guest lounge",
+      "w": 762,
+      "h": 1080,
+      "at": 5
      },
      {
       "t": "h3",
@@ -148,6 +356,62 @@
       "text": "From the dhow bar to the PADI dive centre, Benguerra Island’s thoughtfully designed spaces invite both connection and pause. Sip a signature cocktail as traditional dhows drift across the horizon, revisit the day’s adventures in the library, browse the Beach Shop or explore the world below the surface with expert guides. For a slower moment shaped by local tradition, settle in for a game of Mbao."
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-Dhow-bar-at-midday.jpg",
+      "alt": "Luxury Dhow beach bar on andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-library-with-guest-reading.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Dive-centre.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Beach-Shop-at-andBeyond-benguerra-island-on-a-mozambique-luxury-resort.jpg",
+      "alt": "Beach Shop at andBeyond benguerra island on a mozambique luxury resort",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-castaway-picnic-dhow-butler-2_Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-food-and-drinks-02.jpg",
+      "alt": "Food and drinks at the Luxury andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-Beach-dining-romatic-with-staff.jpg",
+      "alt": "Private beach dining setup at sunset on andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
       "t": "h3",
       "text": "Flavours of the Mozambican coast."
      },
@@ -168,6 +432,14 @@
       "text": "Explore wellness at Benguerra"
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Massage-sala-staff.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 15
+     },
+     {
       "t": "h3",
       "text": "Made for family time."
      },
@@ -176,8 +448,72 @@
       "text": "Children of all ages are welcome at Benguerra Island, where spacious accommodation, a relaxed private and lodge swimming pool and family-friendly experiences on land and at sea make it easy for families to spend meaningful time together."
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-WILDchild-little-girl-with-small-wooden-boat.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 17
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-WILDchild-child-jumping-into-pool.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 17
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-WILDchild-child-and-caretaker-walking-in-the-waves.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 17
+     },
+     {
       "t": "h3",
       "text": "Discover more."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-Dhow-bar-at-nightfall.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 18
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casinha-from-outside.png",
+      "alt": "andBeyond Benguerra Island Luxury Room Casinha Exterior",
+      "w": 1080,
+      "h": 1080,
+      "at": 18
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Snorkeling-couple.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 18
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Cabana-external-portrait.png",
+      "alt": "Luxury Cabana island room, andBeyond Benguerra Island",
+      "w": 1080,
+      "h": 1080,
+      "at": 18
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-brochure-thumbnail-without-logo.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 18
      },
      {
       "t": "h3",
@@ -185,6 +521,14 @@
      }
     ],
     "accommodation/": [
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/casinha-exterior-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "casinha exterior at andBeyond benguerra island on a mozambique luxury beach resort",
+      "w": 1920,
+      "h": 1080,
+      "at": 0
+     },
      {
       "t": "h1",
       "text": "Stay with us"
@@ -202,12 +546,28 @@
       "text": "Thirteen spacious rooms are tucked between indigenous forest and soft white sand, each designed around the ease of island life. Open living spaces, shaded verandas and private plunge pools create a stay that feels deeply comfortable and closely connected to the natural world."
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal-282-1.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 4
+     },
+     {
       "t": "h3",
       "text": "Open to the ocean."
      },
      {
       "t": "p",
       "text": "Every room looks towards the Indian Ocean, where shifting light and open views shape the day. Wake to the sound of the waves, step into the morning air, and settle into island life at your own pace."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal-284-edit.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 6
      },
      {
       "t": "h3",
@@ -218,12 +578,60 @@
       "text": "Shaded salas, hanging daybeds and private pools create space to pause between beach, sea and reef. Each room is designed for comfort that feels unhurried, generous and deeply connected to its surroundings."
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal-214.jpg",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 8
+     },
+     {
       "t": "h3",
       "text": "Ease, in every detail."
      },
      {
       "t": "p",
       "text": "Your room’s personal bar is tailored to your preferences and refreshed throughout your stay, while coffee and tea are always within reach. It’s a quiet layer of comfort that makes each day feel effortless."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Cabana-pool-3-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Cabana-bedroom-1-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal-121.jpg",
+      "alt": "andBeyond Benguerra Island",
+      "w": 762,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/cabana-ensuite-bathroom-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "cabana ensuite bathroom at andBeyond benguerra island on a mozambique luxury beach resort",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Shaded-gazebo-providing-ideal-dinner-venue-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "Cabana at andBeyond Benguerra Island in Mozambique",
+      "w": 1920,
+      "h": 1080,
+      "at": 10
      },
      {
       "t": "h3",
@@ -274,6 +682,54 @@
       "text": "FACILITIES ⋅ ROOM LAYOUT ⋅ ROOM TOUR ⋅ RATES"
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Casinha-outdoor-shower-2-Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Casinha-bedroom-Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Casinha-bathroom-2-Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Casinha-swimming-pool-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "Casinha swimming pool at andBeyond benguerra island on a mozambique luxury beach resort",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Casinha-ensuite-bathroom-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "Casinha ensuite bathroom at andBeyond benguerra island on a mozambique luxury beach resort",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Casinha-triple-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
       "t": "h3",
       "text": "Casinha"
      },
@@ -320,6 +776,78 @@
      {
       "t": "p",
       "text": "FACILITIES ⋅ ROOM LAYOUT ⋅ ROOM TOUR ⋅ RATES"
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Casa-Familia-at-andBeyond-Benguerra-Island.jpg",
+      "alt": "Casa Familia at andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Casa-Familia-exterior-view-breakfast-setup-staff-1.jpg",
+      "alt": "Benguerra Island Casa Familia exterior view breakfast setup staff",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Casa-Familia-exterior-pool-deck-Website-1.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Casa-Familia-bedroom-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casa-Familia-Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casa-Familia-bathroom-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Casa-Familia-personal-bar-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Casa-Familia-bedroom-twin-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-WILDchild-two-children-with-nets.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 34
      },
      {
       "t": "h3",
@@ -424,9 +952,57 @@
      {
       "t": "h3",
       "text": "Discover more."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-Dhow-bar-at-nightfall.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 60
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-room-cabana-lounge-area-on-the-beach.png",
+      "alt": "Luxury beachside cabana at andBeyond Benguerra Island",
+      "w": 1080,
+      "h": 1080,
+      "at": 60
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Snorkeling-couple.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 60
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Cabana-external-portrait.png",
+      "alt": "Luxury Cabana island room, andBeyond Benguerra Island",
+      "w": 1080,
+      "h": 1080,
+      "at": 60
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-brochure-thumbnail-without-logo.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 60
      }
     ],
     "experiences/": [
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Snorkeling-couple-Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 0
+     },
      {
       "t": "h1",
       "text": "Uncover every adventure"
@@ -446,6 +1022,38 @@
      {
       "t": "p",
       "text": "A day at Benguerra Island"
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-island-drive-2-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 5
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-bird-watching-flamingoes.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 5
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-island-drive-4-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 5
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Africa-Mozambique-Benguerra-Island-Dylan-Royal-230.jpg",
+      "alt": "Africa Mozambique Benguerra Island Dylan Royal",
+      "w": 1920,
+      "h": 1080,
+      "at": 5
      },
      {
       "t": "h3",
@@ -470,6 +1078,14 @@
      {
       "t": "p",
       "text": "Community visit: Spend time with local residents and gain a deeper understanding of the traditions, livelihoods and warmth that shape island life on Benguerra."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-swimming-with-horses-10-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 11
      },
      {
       "t": "h3",
@@ -516,6 +1132,54 @@
       "text": "*At an additional cost"
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-kayak-3.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-dhow-cruise-3.jpg",
+      "alt": "Southern Africa Mozambique andBeyond Benguerra Island experience dhow cruise",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Snorkeling-group-of-guests.jpg",
+      "alt": "Benguerra Island Experiences Snorkeling group of guests",
+      "w": 1920,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-scuba-diving-19.png",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-scuba-diving-30.png",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 22
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-scuba-diving-29.png",
+      "alt": "",
+      "w": 762,
+      "h": 1080,
+      "at": 22
+     },
+     {
       "t": "h3",
       "text": "Diving beneath the surface."
      },
@@ -530,6 +1194,14 @@
      {
       "t": "p",
       "text": "Find out more"
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/benguerra_276.jpg",
+      "alt": "benguerra",
+      "w": 1920,
+      "h": 1080,
+      "at": 26
      },
      {
       "t": "h3",
@@ -556,6 +1228,30 @@
       "text": "*At an additional cost"
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-helicopter-10.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 32
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-castaway-picnic-dhow-butler-setup-2.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 32
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Massage-with-beach-view-and-staff.jpg",
+      "alt": "Benguerra Island Experiences Massage with beach view and staff",
+      "w": 1920,
+      "h": 1080,
+      "at": 32
+     },
+     {
       "t": "h3",
       "text": "Go deeper into Benguerra and the Bazaruto Archipelago."
      },
@@ -574,6 +1270,46 @@
      {
       "t": "h3",
       "text": "Discover more."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-Dhow-bar-at-nightfall.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 37
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-room-cabana-lounge-area-on-the-beach.png",
+      "alt": "Luxury beachside cabana at andBeyond Benguerra Island",
+      "w": 1080,
+      "h": 1080,
+      "at": 37
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casinha-from-outside.png",
+      "alt": "andBeyond Benguerra Island Luxury Room Casinha Exterior",
+      "w": 1080,
+      "h": 1080,
+      "at": 37
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Cabana-external-portrait.png",
+      "alt": "Luxury Cabana island room, andBeyond Benguerra Island",
+      "w": 1080,
+      "h": 1080,
+      "at": 37
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-brochure-thumbnail-without-logo.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 37
      }
     ],
     "gallery/": [
@@ -590,8 +1326,240 @@
       "src": "https://assets.andbeyond.com/image/upload/v1758182983/Collateral/Lodge-Brochure-Benguerra-Island.pdf"
      },
      {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-swimming-with-horses-10-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Cabana-pool-3-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Beach-walk-andBeyond-Benguerra-Island-Mozambique.jpg-2.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casinha-external.jpg",
+      "alt": "Luxury Casinha room exterior andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Island-drive.jpg",
+      "alt": "Benguerra Island Experiences Island drive",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-Dhow-bar-at-midday.jpg",
+      "alt": "Luxury Dhow beach bar on andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Cabana-pool-and-beach-with-guest.jpg",
+      "alt": "Luxury Solo Trip at andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casinha-external-at-sunset-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Casa-Familia-bedroom-Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casa-Familia-bathroom-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-outside-shower-in-the-room-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Casa-Familia-exterior-view-breakfast-setup-Website-1.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Casa-Familia-exterior-pool-deck-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-in-room-massage-2-Website.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/guest-area-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
+      "alt": "guest area at andBeyond benguerra island on a mozambique luxury beach resort",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-island-shop-interior.jpg",
+      "alt": "Signature guest shop at andBeyond Benguerra Island in Mozambique",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-Beach-dining-romatic-with-staff.jpg",
+      "alt": "Private beach dining setup at sunset on andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-scuba-diving-17.jpg",
+      "alt": "Southern Africa Mozambique andBeyond Benguerra Island experience scuba diving",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Scuba-diving-school-with-guests.jpg",
+      "alt": "Scuba diving lesson at andBeyond Benguerra Island",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-kayak-4.jpg",
+      "alt": "Southern Africa Mozambique andBeyond Benguerra Island experience kayak",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Snorkeling-group-of-guests.jpg",
+      "alt": "Benguerra Island Experiences Snorkeling group of guests",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-dhow-cruise-3.jpg",
+      "alt": "Southern Africa Mozambique andBeyond Benguerra Island experience dhow cruise",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-experience-castaway-picnic-dhow-butler-setup-24.jpg",
+      "alt": "Southern Africa Mozambique andBeyond Benguerra Island experience castaway picnic dhow butler setup",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-helicopter-4-Website-1920x1080-fill-gravityauto-Q_AutoBest.jpg",
+      "alt": "",
+      "w": 1920,
+      "h": 1080,
+      "at": 3
+     },
+     {
       "t": "h3",
       "text": "Discover more."
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-guest-area-Dhow-bar-at-nightfall.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 4
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-room-cabana-lounge-area-on-the-beach.png",
+      "alt": "Luxury beachside cabana at andBeyond Benguerra Island",
+      "w": 1080,
+      "h": 1080,
+      "at": 4
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-island-Room-Casinha-from-outside.png",
+      "alt": "andBeyond Benguerra Island Luxury Room Casinha Exterior",
+      "w": 1080,
+      "h": 1080,
+      "at": 4
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-Island-Experiences-Snorkeling-couple.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 4
+     },
+     {
+      "t": "img",
+      "src": "https://www.andbeyond.com/wp-content/uploads/sites/5/Benguerra-brochure-thumbnail-without-logo.png",
+      "alt": "",
+      "w": 1080,
+      "h": 1080,
+      "at": 4
      }
     ]
    }
@@ -599,19 +1567,5 @@
  },
  "lodgeLinks": [
   "https://www.andbeyond.com/our-lodges/feed/"
- ],
- "debug": {
-  "around": "--  -->\n  <template\n      v-slot:copy><div  class=\"content\">    <p>Your room’s personal bar is tailored to your preferences and refreshed throughout your stay, while coffee and tea are always within reach. It’s a quiet layer of comfort that makes each day feel effortless.</p>\n</div>\n</template>\n  \n  \n</block>      </series>\n\n</block>\t\t                          \t\t\n<block variant=\"series\" id=\"block-682b43928f3c4\"\n   :settings='{\"active\":false,\"alignment\":\"middle-left\",\"depth\":null,\"behaviour\":null,\"layout\":\"aside--rtl\",\"role\":null,\"size\":\"full\",\"text_alignment\":\"left\",\"theme\":\"lightest\",\"tag\":\"section\",\"titletag\":3}'>\n\n  <template\n      v-slot:media>\n      <div id=\"media-6b0a02e396254\" data-wrapper=\"media\"   >\n              <gallery layout=\"gallery-grid\" :interactive=\"true\" :columns=\"0\"\n  :visible=\"5\" :items='[{\"caption\":\"\",\"id\":\"4251773\",\"alt\":\"\",\"width\":1920,\"height\":1080,\"src\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Cabana-pool-3-Website.jpg\",\"srcset\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Cabana-pool-3-Website.jpg 1920w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Cabana-pool-3-Website-300x169.jpg 300w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Cabana-pool-3-Website-1024x576.jpg 1024w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Cabana-pool-3-Website-768x432.jpg 768w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Southern-Africa-Mozambique-andBeyond-Benguerra-Island-Cabana-pool-3-Website-1536x864.jpg 1536w\",\"sizes\":\"(max-width: 1920px) 100vw, 1920px\",\"focalpoint\":\"\"},{\"caption\":\"\",\"id\":\"4239047\",\"alt\":\"\",\"width\":1920,\"height\":1080,\"src\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Benguerra-Island-Cabana-bedroom-1-Website.jpg\",\"srcset\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Benguerra-Island-Cabana-bedroom-1-Website.jpg 1920w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Benguerra-Island-Cabana-bedroom-1-Website-300x169.jpg 300w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Benguerra-Island-Cabana-bedroom-1-Website-1024x576.jpg 1024w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Benguerra-Island-Cabana-bedroom-1-Website-768x432.jpg 768w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Benguerra-Island-Cabana-bedroom-1-Website-1536x864.jpg 1536w\",\"sizes\":\"(max-width: 1920px) 100vw, 1920px\",\"focalpoint\":\"\"},{\"caption\":\"\",\"id\":\"4383004\",\"alt\":\"andBeyond Benguerra Island\",\"width\":762,\"height\":1080,\"src\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Africa-Mozambique-Benguerra-Island-Dylan-Royal-121.jpg\",\"srcset\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Africa-Mozambique-Benguerra-Island-Dylan-Royal-121.jpg 762w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Africa-Mozambique-Benguerra-Island-Dylan-Royal-121-212x300.jpg 212w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Africa-Mozambique-Benguerra-Island-Dylan-Royal-121-722x1024.jpg 722w\",\"sizes\":\"(max-width: 762px) 100vw, 762px\",\"focalpoint\":\"\"},{\"caption\":\"\",\"id\":\"73624\",\"alt\":\"cabana ensuite bathroom at andBeyond benguerra island on a mozambique luxury beach resort\",\"width\":1920,\"height\":1080,\"src\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/cabana-ensuite-bathroom-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg\",\"srcset\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/cabana-ensuite-bathroom-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg 1920w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/cabana-ensuite-bathroom-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-300x169.jpg 300w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/cabana-ensuite-bathroom-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-1024x576.jpg 1024w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/cabana-ensuite-bathroom-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-768x432.jpg 768w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/cabana-ensuite-bathroom-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-1536x864.jpg 1536w\",\"sizes\":\"(max-width: 1920px) 100vw, 1920px\",\"focalpoint\":\"\"},{\"caption\":\"\",\"id\":\"39648\",\"alt\":\"Cabana at andBeyond Benguerra Island in Mozambique\",\"width\":1920,\"height\":1080,\"src\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Shaded-gazebo-providing-ideal-dinner-venue-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg\",\"srcset\":\"https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Shaded-gazebo-providing-ideal-dinner-venue-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg 1920w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Shaded-gazebo-providing-ideal-dinner-venue-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-300x169.jpg 300w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Shaded-gazebo-providing-ideal-dinner-venue-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-1024x576.jpg 1024w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Shaded-gazebo-providing-ideal-dinner-venue-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-768x432.jpg 768w, https:\\/\\/www.andbeyond.com\\/wp-content\\/uploads\\/sites\\/5\\/Shaded-gazebo-providing-ideal-dinner-venue-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-1536x864.jpg 1536w\",\"sizes\":\"(max-width: 1920px) 100vw, 1920px\",\"focalpoint\":\"\"}]'>\n</gallery>          </div>\n\n  </template>\n  \n  \n  <template\n      v-slot:title>  <h3 class=\"title\">Cabana</h3></template>\n  <template\n      v-slot:strapline>  <h4 class=\"strapline\">Just steps from the sea.</h4></template>\n    <!--  -->\n  <template\n      v-slot:copy><div  class=\"content\">    <p>Spacious interiors flow into shaded outdoor living areas, where private plunge pools overlook the beach and the tide.</p>\n</div>\n</template>\n  \n  \n\n  <series anchor=\"\" layout=\"series-half\" :scroller=\"false\" animation=\"\" :show-active=\"true\" :show-controls=\"true\" :show-counters=\"false\" :match-height=\"fal",
-  "figures": [],
-  "hosts": [
-   "https://www.andbeyond.com/wp-content/themes/andbeyond2024/public/img/favicon-96x96.png",
-   "https://www.andbeyond.com/wp-content/themes/andbeyond2024/public/img/apple-touch-icon.png",
-   "https://www.andbeyond.com/wp-content/uploads/sites/5/casinha-exterior-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort.jpg",
-   "https://www.andbeyond.com/wp-content/uploads/sites/5/casinha-exterior-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-300x169.jpg",
-   "https://www.andbeyond.com/wp-content/uploads/sites/5/casinha-exterior-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-1024x576.jpg",
-   "https://www.andbeyond.com/wp-content/uploads/sites/5/casinha-exterior-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-768x432.jpg",
-   "https://www.andbeyond.com/wp-content/uploads/sites/5/casinha-exterior-at-andBeyond-benguerra-island-on-a-mozambique-luxury-beach-resort-1536x864.jpg",
-   "https://www.andbeyond.com/wp-content/themes/andbeyond2024dist/img/logo.png"
-  ]
- }
+ ]
 }

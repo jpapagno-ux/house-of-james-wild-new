@@ -38,12 +38,12 @@
   "label": "2026-2027-V1",
   "currency": "USD",
   "effectiveFrom": "2026-10-01",
-  "effectiveTo": "2027-09-30",
-  "contractReference": "Awasi Patagonia Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/10/Awasi-Patagonia_Fully-Hosted-Rates_2026-2027-1.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+  "effectiveTo": "2027-12-31",
+  "contractReference": "Awasi Patagonia Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/10/Awasi-Patagonia_Fully-Hosted-Rates_2026-2027-1.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026. October to December 2027 added from the 2027-2028 sheet (https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Patagonia_Fully-Hosted-Rates_2027-2028-2.pdf), read by eye 27 Nov 2026; 2027 dates only, as James asked.",
   "depositPercent": 0.5,
   "balanceDueDays": 30,
   "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
-  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; 120:25, 89:50, 60:100",
+  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; Festive 2027-12-20..2028-01-03 = 120:50, 60:100; 120:25, 89:50, 60:100",
   "notes": "Tax exempt for non-resident guests paying in foreign currency, per the sheet. Villa Cenit is on sale from 15 December 2026, so its rates start then. House commission 20% (private)."
  },
  "seasons": {
@@ -91,6 +91,28 @@
     "minNights": 3,
     "single": 1930,
     "extraAdult": 525
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 5850,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 3,
+    "single": 4400,
+    "extraAdult": 1190
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 4360,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 3,
+    "single": 3280,
+    "extraAdult": 885
    }
   ],
   "master-villa": [
@@ -129,6 +151,24 @@
     "basis": "per_room",
     "baseOccupancy": 4,
     "minNights": 3
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 9400,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 7235,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3
    }
   ],
   "villa-cenit": [
@@ -161,6 +201,24 @@
     "baseOccupancy": 4,
     "minNights": 3,
     "extraAdult": 1250
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 10950,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 8450,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 3
    }
   ]
  },

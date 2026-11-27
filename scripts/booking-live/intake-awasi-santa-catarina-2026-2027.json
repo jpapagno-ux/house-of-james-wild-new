@@ -59,12 +59,12 @@
   "label": "2026-2027-V1",
   "currency": "USD",
   "effectiveFrom": "2026-10-01",
-  "effectiveTo": "2027-09-30",
-  "contractReference": "Awasi Santa Catarina Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Santa-Catarina_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+  "effectiveTo": "2027-12-31",
+  "contractReference": "Awasi Santa Catarina Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Santa-Catarina_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026. October to December 2027 added from the 2027-2028 sheet (https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Santa-Catarina_Fully-Hosted-Rates_2027-2028-2.pdf), read by eye 27 Nov 2026; 2027 dates only, as James asked.",
   "depositPercent": 0.5,
   "balanceDueDays": 30,
   "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
-  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; High 2026-11-01..2027-03-31 = 44:50, 30:100; 30:50, 15:100",
+  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; Festive 2027-12-20..2028-01-03 = 120:50, 60:100; High 2026-11-01..2027-03-31 = 44:50, 30:100; High 2027-11-01..2028-03-31 = 44:50, 30:100; 30:50, 15:100",
   "notes": "A 3% service fee on daily room rates is added on top, per the sheet. Arvoredo, Tinguá, Costa Esmeralda and Ponta dos Ganchos also sleep four: the sheet's fourth-guest amount differs from the third's, which the card cannot yet price, so four guests are on request. The festive minimum stay is not printed on the sheet. House commission 20% (private)."
  },
  "seasons": {
@@ -112,6 +112,28 @@
     "minNights": 2,
     "single": 1693,
     "extraAdult": 491
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 2800,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2135,
+    "extraAdult": 620
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 2475,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 1860,
+    "extraAdult": 500
    }
   ],
   "sissial": [
@@ -158,6 +180,28 @@
     "minNights": 2,
     "single": 2177,
     "extraAdult": 868
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 3325,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2650,
+    "extraAdult": 915
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 3000,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2375,
+    "extraAdult": 800
    }
   ],
   "arvoredo": [
@@ -204,6 +248,28 @@
     "minNights": 2,
     "single": 2177,
     "extraAdult": 868
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 3325,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2650,
+    "extraAdult": 915
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 3000,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2375,
+    "extraAdult": 800
    }
   ],
   "tingua": [
@@ -250,6 +316,28 @@
     "minNights": 2,
     "single": 2662,
     "extraAdult": 1045
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 4000,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 3250,
+    "extraAdult": 1200
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 3655,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2975,
+    "extraAdult": 1105
    }
   ],
   "costa-esmeralda": [
@@ -296,6 +384,28 @@
     "minNights": 2,
     "single": 3154,
     "extraAdult": 1299
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 4770,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 4050,
+    "extraAdult": 1710
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 4230,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 3560,
+    "extraAdult": 1470
    }
   ],
   "ponta-dos-ganchos": [
@@ -342,6 +452,28 @@
     "minNights": 2,
     "single": 4000,
     "extraAdult": 1598
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 6050,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 5200,
+    "extraAdult": 2270
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 5100,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 4510,
+    "extraAdult": 2115
    }
   ]
  },

@@ -58,6 +58,6 @@ test("Awasi Atacama: the filed cancellation schedule reads as three seasons", as
   const intake = JSON.parse(readFileSync(new URL("../scripts/booking-live/intake-awasi-atacama-2026-2027.json", import.meta.url), "utf8"));
   const c = parseCancellation(JSON.stringify(intake).match(/"cancellationTiers":"([^"]+)"/)![1]);
   assert.ok(c);
-  assert.deepEqual(c.seasons.map((s) => [s.from, s.to, s.tiers.map((t) => `${t.daysBeforeArrival}:${t.penaltyBp / 100}`).join(",")]), [["2026-12-20", "2027-01-03", "120:50,60:100"], ["2026-11-01", "2027-02-28", "44:50,30:100"]]);
+  assert.deepEqual(c.seasons.map((s) => [s.from, s.to, s.tiers.map((t) => `${t.daysBeforeArrival}:${t.penaltyBp / 100}`).join(",")]), [["2026-12-20", "2027-01-03", "120:50,60:100"], ["2027-12-20", "2028-01-03", "120:50,60:100"], ["2026-11-01", "2027-02-28", "44:50,30:100"], ["2027-11-01", "2028-02-29", "44:50,30:100"]]);
   assert.deepEqual(c.tiers.map((t) => `${t.daysBeforeArrival}:${t.penaltyBp / 100}`), ["30:50", "15:100"]);
 });

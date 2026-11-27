@@ -31,12 +31,12 @@
   "label": "2026-2027-V1",
   "currency": "USD",
   "effectiveFrom": "2026-10-01",
-  "effectiveTo": "2027-09-30",
-  "contractReference": "Awasi Atacama Fully Hosted Rates 2026-2027 (awasi.com/info, 2026-09). Public rack rates; totals for 2 to 6 nights entered as a nightly rate with long-stay offers of 3%, 5% and 8%.",
+  "effectiveTo": "2027-12-31",
+  "contractReference": "Awasi Atacama Fully Hosted Rates 2026-2027 (awasi.com/info, 2026-09). Public rack rates; nightly rate with long-stay offers of 3%, 5%, 8%. Approved to publish by James, 24 Nov 2026. October to December 2027 added from the 2027-2028 sheet (https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Atacama_Fully-Hosted-Rates_2027-2028.pdf), read by eye 27 Nov 2026; 2027 dates only, as James asked.",
   "depositPercent": 0.5,
   "balanceDueDays": 30,
   "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
-  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; November to February 2026-11-01..2027-02-28 = 44:50, 30:100; 30:50, 15:100",
+  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; Festive 2027-12-20..2028-01-03 = 120:50, 60:100; November to February 2026-11-01..2027-02-28 = 44:50, 30:100; November to February 2027-11-01..2028-02-29 = 44:50, 30:100; 30:50, 15:100",
   "notes": "Tax exempt for non-resident guests paying in foreign currency, per the sheet. Single-occupancy rates on the sheet are not yet priced. House commission 20% (private)."
  },
  "seasons": {
@@ -76,6 +76,26 @@
     "basis": "per_room",
     "baseOccupancy": 2,
     "minNights": 2
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 3200,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2400
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 2735,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2055
    }
   ],
   "superior-round-suite": [
@@ -118,6 +138,28 @@
     "baseOccupancy": 2,
     "minNights": 2,
     "extraAdult": 560.0
+   },
+   {
+    "season": "High 2027-11 to 2027-12",
+    "stayStart": "2027-11-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 4460,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 3350,
+    "extraAdult": 900
+   },
+   {
+    "season": "Shoulder October 2027-10 to 2027-10",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-10-31",
+    "nightly": 3620,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2720,
+    "extraAdult": 730
    }
   ]
  }

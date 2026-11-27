@@ -45,12 +45,12 @@
   "label": "2026-2027-V1",
   "currency": "USD",
   "effectiveFrom": "2026-10-01",
-  "effectiveTo": "2027-09-30",
-  "contractReference": "Awasi Mendoza Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Mendoza_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026.",
+  "effectiveTo": "2027-12-31",
+  "contractReference": "Awasi Mendoza Fully Hosted Rates 2026-2027 (https://awasi.com/wp-content/uploads/2026/09/202609_Awasi-Mendoza_Fully-Hosted-Rates_2026-2027.pdf), read by eye 26 Nov 2026. Public rack rates; the sheet's totals entered as a nightly rate with its long-stay savings. Approved to publish by James, 26 Nov 2026. October to December 2027 added from the 2027-2028 sheet (https://awasi.com/wp-content/uploads/2026/10/202610_Awasi-Mendoza_Fully-Hosted-Rates_2027-2028-2.pdf), read by eye 27 Nov 2026; 2027 dates only, as James asked.",
   "depositPercent": 0.5,
   "balanceDueDays": 30,
   "cancellationSummary": "A 50% deposit confirms the booking; the balance is due 30 days before arrival.",
-  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; High 2026-10-01..2027-04-30 = 44:50, 30:100; 30:50, 15:100",
+  "cancellationTiers": "Festive 2026-12-20..2027-01-03 = 120:50, 60:100; Festive 2027-12-20..2028-01-03 = 120:50, 60:100; High 2026-10-01..2027-04-30 = 44:50, 30:100; High 2027-11-01..2028-03-31 = 44:50, 30:100; 30:50, 15:100",
   "notes": "VAT of 10.5% for foreign non-residents is added on top of the sheet's rates (James, 26 Nov 2026); Argentine residents pay 21%. The festive minimum stay is not printed on the sheet. House commission 20% (private)."
  },
  "seasons": {
@@ -98,6 +98,17 @@
     "minNights": 2,
     "single": 1945,
     "extraAdult": 405
+   },
+   {
+    "season": "High 2027-10 to 2027-12",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 3260,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2450,
+    "extraAdult": 610
    }
   ],
   "front-row": [
@@ -144,6 +155,17 @@
     "minNights": 2,
     "single": 2370,
     "extraAdult": 640
+   },
+   {
+    "season": "High 2027-10 to 2027-12",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 3790,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 2850,
+    "extraAdult": 710
    }
   ],
   "vineyard-villa": [
@@ -190,6 +212,17 @@
     "minNights": 2,
     "single": 2970,
     "extraAdult": 900
+   },
+   {
+    "season": "High 2027-10 to 2027-12",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 4600,
+    "basis": "per_room",
+    "baseOccupancy": 2,
+    "minNights": 2,
+    "single": 3465,
+    "extraAdult": 900
    }
   ],
   "two-bedroom-villa": [
@@ -225,6 +258,15 @@
     "stayStart": "2027-09-01",
     "stayEnd": "2027-09-30",
     "nightly": 7150,
+    "basis": "per_room",
+    "baseOccupancy": 4,
+    "minNights": 2
+   },
+   {
+    "season": "High 2027-10 to 2027-12",
+    "stayStart": "2027-10-01",
+    "stayEnd": "2027-12-31",
+    "nightly": 8500,
     "basis": "per_room",
     "baseOccupancy": 4,
     "minNights": 2

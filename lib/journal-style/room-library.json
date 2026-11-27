@@ -5440,5 +5440,412 @@
       }
     ],
     "ratesNote": "'From' rates as published by Great Plains Conservation on its own site, in US dollars. Suites are per person sharing, per night; private suites are per night for exclusive use. Read 26 Nov 2026; the house confirms the rate for your dates."
+  },
+  "anantara-ubud-bali": {
+    "rooms": [
+      {
+        "name": "Forest View Suite",
+        "sleeps": 2,
+        "facts": [
+          "53 square metres",
+          "King or twin beds"
+        ],
+        "lede": "A suite looking into the Payangan rainforest, with a balcony over the treetops and a soaking tub.",
+        "features": [
+          "Balcony",
+          "Soaking tub",
+          "Indoor and outdoor living"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/forest-view-suite-balcony",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/forest-view-suite",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/forest-view-suite-lounge"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Payangan Suite",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [
+          "Bathtub with a view"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/payangan-suite"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Wana Suite",
+        "sleeps": null,
+        "facts": [
+          "Twin beds"
+        ],
+        "lede": null,
+        "features": [
+          "Forest views"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/wana-suite"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "One Bedroom Forest View Pool Villa",
+        "sleeps": 3,
+        "facts": [
+          "105 square metres",
+          "Sleeps 3"
+        ],
+        "lede": "A villa with its own infinity pool over the forest, a living and dining room and a standalone tub, looked after by a villa host.",
+        "features": [
+          "Private infinity pool",
+          "Living and dining area",
+          "Standalone tub",
+          "Villa host"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/villa-pool",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/one-bedroom-villa-lounge",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/one-bedroom-villa"
+        ],
+        "plungePool": true
+      },
+      {
+        "name": "Two Bedroom Forest View Pool Villa",
+        "sleeps": 5,
+        "facts": [
+          "160 square metres",
+          "Up to 5 adults"
+        ],
+        "lede": "Two bedrooms behind floor to ceiling windows, with an infinity pool raised among the treetops.",
+        "features": [
+          "Private infinity pool",
+          "Living and dining area",
+          "Standalone tub",
+          "Villa host"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/two-bedroom-villa-pool",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/two-bedroom-villa",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/anantara-ubud-bali/two-bedroom-villa-twin"
+        ],
+        "plungePool": true
+      }
+    ],
+    "ratesNote": "Anantara publishes its rates in Indonesian rupiah on its own site: the One Bedroom Forest View Pool Villa from IDR 16,200,000 and the Two Bedroom Forest View Pool Villa from IDR 22,680,000 a night. Read 27 Nov 2026; the house confirms the rate for your dates."
+  },
+  "kaaba-luum-mexico": {
+    "rooms": [
+      {
+        "name": "Villa Tierra",
+        "sleeps": 8,
+        "facts": [
+          "Two queen suites upstairs",
+          "Sleeps 4 to 8"
+        ],
+        "lede": "Earth: stone, timber and the deepest shade on the property, the villa closest to the jungle floor.",
+        "features": [
+          "Full kitchen",
+          "Own plunge pool",
+          "Each upstairs suite with its own bath and entrance"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kaaba-luum-mexico/villa-tierra"
+        ],
+        "plungePool": true
+      },
+      {
+        "name": "Villa Agua",
+        "sleeps": 8,
+        "facts": [
+          "Two queen suites upstairs",
+          "Sleeps 4 to 8"
+        ],
+        "lede": "Water: quiet light and soft textures.",
+        "features": [
+          "Full kitchen",
+          "Own plunge pool",
+          "Each upstairs suite with its own bath and entrance"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kaaba-luum-mexico/villa-agua"
+        ],
+        "plungePool": true
+      },
+      {
+        "name": "Villa Aire",
+        "sleeps": 8,
+        "facts": [
+          "Two queen suites upstairs",
+          "Sleeps 4 to 8"
+        ],
+        "lede": "Air: the most light and breeze on the property, with the canopy moving at eye level.",
+        "features": [
+          "Full kitchen",
+          "Own plunge pool",
+          "Each upstairs suite with its own bath and entrance"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kaaba-luum-mexico/villa-aire"
+        ],
+        "plungePool": true
+      },
+      {
+        "name": "Villa Fuego",
+        "sleeps": 8,
+        "facts": [
+          "Two queen suites upstairs",
+          "Sleeps 4 to 8"
+        ],
+        "lede": "Fire: the villa where the warmth collects after dark and the group gathers.",
+        "features": [
+          "Full kitchen",
+          "Own plunge pool",
+          "Each upstairs suite with its own bath and entrance"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kaaba-luum-mexico/villa-fuego"
+        ],
+        "plungePool": true
+      },
+      {
+        "name": "The Casita",
+        "sleeps": 4,
+        "facts": [
+          "Two private bedrooms",
+          "One king, one with two singles",
+          "Each with its own full bath"
+        ],
+        "lede": "Two bedrooms around a shared kitchen, living and dining room, with its own deck and plunge pool.",
+        "features": [
+          "Own deck",
+          "Own plunge pool",
+          "Shared kitchen"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/kaaba-luum-mexico/casita"
+        ],
+        "plungePool": true
+      }
+    ]
+  },
+  "villa-bokeh": {
+    "rooms": [
+      {
+        "name": "Deluxe Rooms",
+        "sleeps": 2,
+        "facts": [
+          "Añil, 52.67 m²",
+          "Lavanda, 27.03 m²"
+        ],
+        "lede": "Two Deluxe rooms, each with its own outdoor patio.",
+        "features": [
+          "Outdoor patio"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/villa-bokeh/anil-deluxe",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/villa-bokeh/deluxe-room"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Junior Suites",
+        "sleeps": null,
+        "facts": [
+          "Nine suites, 44 to 59 m²",
+          "Ocre, Esmeralda and Celeste sleep 4"
+        ],
+        "lede": "Azul, Lino, Ocre, Esmeralda, Ónix, Siena, Olivo, Rosada and Celeste, each with a terrace, balcony, patio or garden view. Lino has a firepit and an outdoor bathtub on its terrace.",
+        "features": [
+          "Terrace, balcony or patio"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/villa-bokeh/terrace-firepit",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/villa-bokeh/junior-suite"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "The Suites",
+        "sleeps": null,
+        "facts": [
+          "Indigo, 83.33 m², for 3",
+          "Negra, 58.76 m², for 4",
+          "Menta Premium Suite, 96.61 m², for 4",
+          "Marfil Master Suite, 67.18 m², for 2"
+        ],
+        "lede": "Indigo looks over the garden with a king bed and a daybed, Negra and Menta have balcony views, and Marfil, the Master Suite, has its own terrace.",
+        "features": [
+          "Garden, balcony or terrace views"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/villa-bokeh/suite-garden",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/villa-bokeh/balcony",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/villa-bokeh/suite-bath"
+        ],
+        "plungePool": false
+      }
+    ]
+  },
+  "nomade-temple-madrid": {
+    "rooms": [
+      {
+        "name": "Standard Rooms",
+        "sleeps": 2,
+        "facts": [
+          "Standard, City View, Accessible, Choice and High Floor",
+          "King or twin beds in the Choice room"
+        ],
+        "lede": "Rooms over the streets of Madrid; the High Floor rooms have more light and a quieter view.",
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      },
+      {
+        "name": "Deluxe Rooms",
+        "sleeps": 2,
+        "facts": [
+          "Deluxe Choice and Deluxe City View"
+        ],
+        "lede": "Larger rooms, each with a private balcony.",
+        "features": [
+          "Private balcony"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/nomade-temple-madrid/room-balcony"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Premier City View Room",
+        "sleeps": 2,
+        "facts": [],
+        "lede": "A more spacious room with a private balcony and views of the historic architecture of Gran Vía.",
+        "features": [
+          "Private balcony",
+          "City views"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/nomade-temple-madrid/balcony-gran-via"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Suites",
+        "sleeps": null,
+        "facts": [],
+        "lede": null,
+        "features": [],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/nomade-temple-madrid/suite-lounge",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/nomade-temple-madrid/suite"
+        ],
+        "plungePool": false
+      },
+      {
+        "name": "Penthouse Suites",
+        "sleeps": null,
+        "facts": [
+          "Two penthouse suites"
+        ],
+        "lede": null,
+        "features": [],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
+  },
+  "singita-kwitonda": {
+    "rooms": [
+      {
+        "name": "One-Bedroom Suite",
+        "sleeps": 2,
+        "facts": [
+          "9 suites"
+        ],
+        "lede": "A suite of volcanic stone with a fireplace, a lounge, a veranda and a heated plunge pool, the volcanoes always in view.",
+        "features": [
+          "Heated plunge pool",
+          "Fireplace",
+          "Indoor and outdoor showers",
+          "Space for wellness treatments"
+        ],
+        "photos": [
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/singita-kwitonda/suite-view",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/singita-kwitonda/suite-lounge-view",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/singita-kwitonda/suite-bedroom",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/singita-kwitonda/suite-fireplace",
+          "https://res.cloudinary.com/jhlnq5h5/image/upload/jwco/stays/singita-kwitonda/suite-bath"
+        ],
+        "plungePool": true
+      },
+      {
+        "name": "Two-Bedroom Suite",
+        "sleeps": 4,
+        "facts": [
+          "2 suites"
+        ],
+        "lede": "Two bedrooms, the main suite with its own fireplace, lounge, veranda and heated plunge pool.",
+        "features": [
+          "Heated plunge pool",
+          "Fireplace",
+          "Dressing room"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
+  },
+  "singita-elela": {
+    "rooms": [
+      {
+        "name": "One-Bedroom Camp",
+        "sleeps": 2,
+        "facts": [
+          "5 camps"
+        ],
+        "lede": "A circular camp raised on stilts and open on all sides, with its own pool, fire pit, decks, kitchenette, dining area and lounge.",
+        "features": [
+          "Private pool",
+          "Fire pit",
+          "Kitchenette"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Two-Bedroom Camp",
+        "sleeps": null,
+        "facts": [
+          "2 camps"
+        ],
+        "lede": "The same raised, open camp with two bedrooms around its own pool and lounge.",
+        "features": [
+          "Private pool",
+          "Fire pit",
+          "Kitchenette"
+        ],
+        "photos": [],
+        "plungePool": true
+      },
+      {
+        "name": "Four-Bedroom Camp",
+        "sleeps": null,
+        "facts": [
+          "1 camp",
+          "Taken whole"
+        ],
+        "lede": "Four bedrooms around their own pool, fire pit and lounge, for a family or a group of friends.",
+        "features": [
+          "Private pool",
+          "Fire pit",
+          "Kitchenette"
+        ],
+        "photos": [],
+        "plungePool": true
+      }
+    ]
   }
 }

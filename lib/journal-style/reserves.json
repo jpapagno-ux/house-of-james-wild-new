@@ -263,6 +263,16 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/kwando/splash/enclave-pool",
         "alt": "The Splash Enclave pool deck"
       }
+    },
+    {
+      "stay": "kaaba-luum-mexico",
+      "name": "Kaaba Luum, the whole estate",
+      "place": "Tulum jungle, Mexico",
+      "line": "Four villas named for the elements and a casita for up to 36, each with its own plunge pool.",
+      "image": {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_4:3,g_auto,w_1600/jwco/stays/kaaba-luum-mexico/palapa-air",
+        "alt": "A thatched palapa rising from the Tulum jungle"
+      }
     }
   ]
 }

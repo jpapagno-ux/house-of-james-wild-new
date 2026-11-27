@@ -17435,5 +17435,930 @@
         "section": "experiences"
       }
     ]
+  },
+  "ayana-komodo": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/indonesia/ayana-komodo/hero",
+        "alt": "AYANA Komodo above the bay and its long jetty",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/indonesia/ayana-komodo/room",
+        "alt": "A sea view room looking out over the bay",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/indonesia/ayana-komodo/lako-dia",
+        "alt": "AYANA Lako Di'a, the resort's phinisi, under sail",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/indonesia/ayana-komodo/dining",
+        "alt": "Dinner set by the jetty at sunset",
+        "section": "dining"
+      }
+    ]
+  },
+  "amanoi": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/vietnam/amanoi/hero",
+        "alt": "A catamaran on Vinh Hy Bay below Amanoi",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/vietnam/amanoi/ocean-pool-villa",
+        "alt": "A villa deck above the bay",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/vietnam/amanoi/beach-club",
+        "alt": "The dining pavilion open to the bay",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/vietnam/amanoi/wellness",
+        "alt": "The yoga pavilion over the lake",
+        "section": "experiences"
+      }
+    ]
+  },
+  "anantara-hua-hin": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/anantara-hua-hin/b3-0",
+        "alt": "Anantara Hua Hin among the palms on the Gulf of Thailand at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/anantara-hua-hin/b3-2",
+        "alt": "A garden terrace among the palms",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-hua-hin/b3-3",
+        "alt": "A room opening onto its garden terrace",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/anantara-hua-hin/b3-4",
+        "alt": "The lagoon pool among the gardens",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/anantara-hua-hin/b3-5",
+        "alt": "Thai pavilions above the lagoon pool",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/anantara-hua-hin/b3-6",
+        "alt": "Breakfast on a terrace facing the sea",
+        "section": "dining"
+      }
+    ]
+  },
+  "armendaris-ted-turner-reserve": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/fra-cristobal-range-armendaris",
+        "alt": "The Fra Cristobal range and ocotillo on Armendaris",
+        "section": "exterior"
+      },
+      {
+        "id": "q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/desert-sunset-armendaris",
+        "alt": "Sunset over the desert",
+        "section": "exterior"
+      },
+      {
+        "id": "q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/oryx-armendaris",
+        "alt": "Oryx on the reserve",
+        "section": "experiences"
+      },
+      {
+        "id": "q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/utv-tour-armendaris",
+        "alt": "A UTV on a desert track",
+        "section": "experiences"
+      },
+      {
+        "id": "q_auto:good/f_jpg/gatherings/armendaris-ted-turner-reserve/desert-bighorn-armendaris",
+        "alt": "Desert bighorn on a ridge",
+        "section": "experiences"
+      }
+    ]
+  },
+  "como-maalifushi": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/maldives/como-maalifushi/hero",
+        "alt": "COMO Maalifushi's water villas from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/como-maalifushi/water-villa",
+        "alt": "Sunset from a water villa deck",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/como-maalifushi/maalifushi-water-villa",
+        "alt": "A water villa and its pool over the lagoon",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/como-maalifushi/beach-villa",
+        "alt": "A beach villa open to the sand",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/maldives/como-maalifushi/beach-suite",
+        "alt": "A beach suite",
+        "section": "rooms"
+      }
+    ]
+  },
+  "canvas-and-orchids-retreat": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "wildco/cambodia/canvas-and-orchids-retreat/floating-tent-tatai-river",
+        "alt": "Floating tents on the Tatai River in the morning mist",
+        "section": "exterior"
+      },
+      {
+        "id": "wildco/cambodia/canvas-and-orchids-retreat/tatai-river-mangroves",
+        "alt": "A boat trip up the Tatai River",
+        "section": "experiences"
+      },
+      {
+        "id": "wildco/cambodia/canvas-and-orchids-retreat/restaurant",
+        "alt": "The camp restaurant at dusk",
+        "section": "dining"
+      },
+      {
+        "id": "wildco/cambodia/canvas-and-orchids-retreat/island-family-tent",
+        "alt": "A family tent among the palms",
+        "section": "exterior"
+      },
+      {
+        "id": "wildco/cambodia/canvas-and-orchids-retreat/island-double-tent",
+        "alt": "A tent on the sand in the morning light",
+        "section": "exterior"
+      }
+    ]
+  },
+  "cape-weligama": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/sri-lanka/cape-weligama/hero",
+        "alt": "The headland of Cape Weligama above the Indian Ocean",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/sri-lanka/cape-weligama/premier-villa",
+        "alt": "A villa bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/sri-lanka/cape-weligama/pool-pavilion",
+        "alt": "A villa pool running out toward the sea",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/sri-lanka/cape-weligama/lookout",
+        "alt": "Sunset over the surf below the cape",
+        "section": "exterior"
+      }
+    ]
+  },
+  "capella-ubud": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/capella-ubud/b3-0",
+        "alt": "Tents and their pools in the Keliki rainforest from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/capella-ubud/b3-1",
+        "alt": "A tent's private pool in the jungle",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/capella-ubud/b3-2",
+        "alt": "Breakfast by a tent pool above the valley",
+        "section": "dining"
+      }
+    ]
+  },
+  "cardamom-tented-camp": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/cardamom-tented-camp/b3-0",
+        "alt": "A safari tent above the river meadow, with its boardwalk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/cardamom-tented-camp/b3-1",
+        "alt": "The camp lit at night beneath the forest",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/cardamom-tented-camp/b3-3",
+        "alt": "Inside a safari tent",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/cardamom-tented-camp/b3-4",
+        "alt": "The boardwalk to the tents beneath the forest",
+        "section": "exterior"
+      }
+    ]
+  },
+  "ceylon-tea-trails": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/sri-lanka/ceylon-tea-trails/hero",
+        "alt": "Tea fields at sunrise in the hill country",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/sri-lanka/ceylon-tea-trails/estate",
+        "alt": "A bungalow pool above Castlereagh Lake",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/sri-lanka/ceylon-tea-trails/norwood-suite",
+        "alt": "Inside a planter's bungalow",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/sri-lanka/ceylon-tea-trails/dunkeld-pool",
+        "alt": "A hot tub looking over the lake and the hills",
+        "section": "pool"
+      }
+    ]
+  },
+  "cheval-blanc-randheli": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/maldives/cheval-blanc-randheli/hero-water-villa",
+        "alt": "Cheval Blanc Randheli from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/cheval-blanc-randheli/water-villa",
+        "alt": "Water villas from the island's edge",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/cheval-blanc-randheli/lagoon-villa",
+        "alt": "The island and its water villas at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/cheval-blanc-randheli/lagoon-villa-2",
+        "alt": "A water villa and its pool from above",
+        "section": "exterior"
+      }
+    ]
+  },
+  "conrad-bora-bora-nui": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/conrad-bora-bora-nui/hero",
+        "alt": "Conrad Bora Bora Nui's overwater villas from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/conrad-bora-bora-nui/g1",
+        "alt": "An overwater villa at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/conrad-bora-bora-nui/g2",
+        "alt": "The bar open to the lagoon",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/conrad-bora-bora-nui/g3",
+        "alt": "The resort's white sand beach",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/conrad-bora-bora-nui/g4",
+        "alt": "A villa hot tub looking over the lagoon",
+        "section": "pool"
+      }
+    ]
+  },
+  "gili-lankanfushi": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/maldives/gili-lankanfushi/hero-private-reserve",
+        "alt": "Gili Lankanfushi's overwater villas from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/gili-lankanfushi/crusoe-residence",
+        "alt": "An overwater villa on the lagoon",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/gili-lankanfushi/crusoe-villas",
+        "alt": "Villas over the turquoise lagoon",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/gili-lankanfushi/private-reserve-aerial",
+        "alt": "Overwater villas and their decks on the lagoon",
+        "section": "exterior"
+      }
+    ]
+  },
+  "intercontinental-tahiti-resort-spa": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/intercontinental-tahiti-resort-spa/hero",
+        "alt": "The pools and gardens at the lagoon edge",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/intercontinental-tahiti-resort-spa/g1",
+        "alt": "The resort and its lagoonarium from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/intercontinental-tahiti-resort-spa/g2",
+        "alt": "Overwater bungalows from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/intercontinental-tahiti-resort-spa/g3",
+        "alt": "Overwater bungalows looking toward Moorea",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/intercontinental-tahiti-resort-spa/g4",
+        "alt": "The resort's lagoon and motu from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/intercontinental-tahiti-resort-spa/g5",
+        "alt": "A room opening to the lagoon",
+        "section": "rooms"
+      }
+    ]
+  },
+  "joali-being": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/maldives/joali-being/hero",
+        "alt": "The overwater pavilion at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/joali-being/ocean-pool-villa",
+        "alt": "An ocean villa deck and pool",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/maldives/joali-being/beach-residence",
+        "alt": "A pool on the beach under the palms",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/maldives/joali-being/sound-path",
+        "alt": "Sound therapy in the island's forest",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/maldives/joali-being/mojo",
+        "alt": "Lunch with friends at MOJO",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/maldives/joali-being/bkidult",
+        "alt": "Pavilions in the island's forest from above",
+        "section": "exterior"
+      }
+    ]
+  },
+  "ladder-ted-turner-reserve": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/ladder-vista",
+        "alt": "A lone tree on Ladder Ranch at sunset",
+        "section": "exterior"
+      },
+      {
+        "id": "q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/country-house-exterior-ladder",
+        "alt": "The Country House",
+        "section": "exterior"
+      },
+      {
+        "id": "q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/bison-ladder",
+        "alt": "Bison below the mountains",
+        "section": "experiences"
+      },
+      {
+        "id": "q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/slot-canyon-ladder",
+        "alt": "Looking up from a slot canyon",
+        "section": "experiences"
+      },
+      {
+        "id": "q_auto:good/f_jpg/gatherings/ladder-ted-turner-reserve/mexican-wolf-ladder",
+        "alt": "A Mexican wolf on the ranch",
+        "section": "experiences"
+      }
+    ]
+  },
+  "mt-isthmus-villa": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/new-zealand/mt-isthmus/hero",
+        "alt": "Mt Isthmus Villa in the tussock below the peaks",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/new-zealand/mt-isthmus/aurora",
+        "alt": "The villa under the aurora australis",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/new-zealand/mt-isthmus/villa",
+        "alt": "The villa in the tussock above the lake",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/new-zealand/mt-isthmus/bedroom",
+        "alt": "A bedroom looking out to the hills",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/new-zealand/mt-isthmus/lakes",
+        "alt": "Snow on the mountains above the lake",
+        "section": "exterior"
+      }
+    ]
+  },
+  "nayara-alto-atacama": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/nayara-alto-atacama/b3-0",
+        "alt": "Nayara Alto Atacama beneath the red cliffs",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/nayara-alto-atacama/b3-1",
+        "alt": "A terrace looking to the cliffs",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/nayara-alto-atacama/b3-2",
+        "alt": "A room's terrace among the desert gardens",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/nayara-alto-atacama/b3-3",
+        "alt": "A room opening onto its terrace",
+        "section": "rooms"
+      }
+    ]
+  },
+  "niyama-private-islands-maldives": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/niyama-private-islands-maldives/b3-0",
+        "alt": "Niyama's overwater villas from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/niyama/ocean-pool-pavilion",
+        "alt": "Over Water Pool Villas on the lagoon",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/maldives/niyama/ocean-pool-pavilion-living",
+        "alt": "A villa lounge opening to its pool",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/maldives/niyama/ocean-pool-pavilion-bedroom",
+        "alt": "A villa bedroom facing the lagoon",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/maldives/niyama/two-bedroom-beach-pool-pavilion",
+        "alt": "A beach pool villa among the palms",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/maldives/niyama/hero-pavilions-aerial",
+        "alt": "The over water villas beyond the beach",
+        "section": "exterior"
+      }
+    ]
+  },
+  "one-only-reethi-rah": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/maldives/one-only-reethi-rah/hero",
+        "alt": "A beach villa and its pool from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/maldives/one-only-reethi-rah/beach-villa-with-pool",
+        "alt": "A villa bedroom open to its pool",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/maldives/one-only-reethi-rah/beach-villa",
+        "alt": "A beach villa open to the sand",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/maldives/one-only-reethi-rah/two-villa-residence",
+        "alt": "A pool among the palms facing the sea",
+        "section": "pool"
+      }
+    ]
+  },
+  "paroa-bay": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/new-zealand/paroa-bay/hero",
+        "alt": "The villa's infinity pool over the Bay of Islands",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/new-zealand/paroa-bay/villa",
+        "alt": "Tarāpunga Villa above its inlet",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/new-zealand/paroa-bay/pool-view",
+        "alt": "The pool deck looking out over the bay",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/new-zealand/paroa-bay/vineyard",
+        "alt": "The estate vineyard from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/new-zealand/paroa-bay/hole-in-the-rock",
+        "alt": "Islands off the coast in the Bay of Islands",
+        "section": "experiences"
+      }
+    ]
+  },
+  "paws-up-resort": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/paws-up-resort/b3-0",
+        "alt": "A cabin among the pines",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/paws-up-resort/b3-2",
+        "alt": "A home in the snowy forest",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/paws-up-resort/b3-3",
+        "alt": "Inside a safari tent",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/paws-up-resort/b3-4",
+        "alt": "A deck in the pines",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/paws-up-resort/b3-5",
+        "alt": "The lounge of a ranch home",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/paws-up-resort/b3-6",
+        "alt": "The ranch's meadows and forest from the air",
+        "section": "exterior"
+      }
+    ]
+  },
+  "pearl-resort-le-bora-bora": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/pearl-resort-le-bora-bora/b3-0",
+        "alt": "Motu Tevairoa and its overwater bungalows facing Mount Otemanu",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/pearl-resort-le-bora-bora/b3-1",
+        "alt": "An overwater bungalow at dusk below the peaks",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/pearl-resort-le-bora-bora/b3-2",
+        "alt": "Villas among the palms beside the beach",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/pearl-resort-le-bora-bora/b3-3",
+        "alt": "An overwater suite on the lagoon",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/pearl-resort-le-bora-bora/b3-4",
+        "alt": "A villa bedroom open to its pool",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/pearl-resort-le-bora-bora/b3-5",
+        "alt": "An overwater pool facing Mount Otemanu",
+        "section": "pool"
+      }
+    ]
+  },
+  "phulay-bay-ritz-carlton-reserve": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/thailand/phulay-bay/hero",
+        "alt": "The infinity pool facing the islands offshore",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/thailand/phulay-bay/villa",
+        "alt": "A villa bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/thailand/phulay-bay/spa",
+        "alt": "A spa pavilion open to the garden",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/thailand/phulay-bay/hong-island",
+        "alt": "An island offshore from the air",
+        "section": "experiences"
+      }
+    ]
+  },
+  "pu-u-hoko-ranch": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/pu-u-hoko-ranch/b3-0",
+        "alt": "The ranch lodge and its pool from above",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/pu-u-hoko-ranch/b3-1",
+        "alt": "The ranch from the air above the sea",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/pu-u-hoko-ranch/b3-2",
+        "alt": "The lodge veranda",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/pu-u-hoko-ranch/b3-3",
+        "alt": "A cottage bedroom",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/pu-u-hoko-ranch/b3-4",
+        "alt": "A dining nook with windows to the garden",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/pu-u-hoko-ranch/b3-5",
+        "alt": "A daybed by the window",
+        "section": "rooms"
+      }
+    ]
+  },
+  "six-senses-con-dao": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/six-senses-con-dao/b3-0",
+        "alt": "A villa above the beach at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/six-senses-con-dao/b3-1",
+        "alt": "The dining room open to the sea",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/six-senses-con-dao/b3-2",
+        "alt": "A villa lounge",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/six-senses-con-dao/b3-3",
+        "alt": "A villa pool deck under the palms",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/six-senses-con-dao/b3-4",
+        "alt": "A villa bedroom open to the beach",
+        "section": "rooms"
+      }
+    ]
+  },
+  "six-senses-kanuhura": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/six-senses-kanuhura/b3-0",
+        "alt": "Kanuhura from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/six-senses-kanuhura/b3-1",
+        "alt": "A villa living room facing the sea",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/six-senses-kanuhura/b3-2",
+        "alt": "A beach pavilion",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/six-senses-kanuhura/b3-4",
+        "alt": "A residence living room facing the beach",
+        "section": "rooms"
+      }
+    ]
+  },
+  "six-senses-ninh-van-bay": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/six-senses-ninh-van-bay/b3-0",
+        "alt": "Villas among the boulders on Ninh Van Bay",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/six-senses-ninh-van-bay/b3-1",
+        "alt": "A hilltop pool villa above the bay",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/six-senses-ninh-van-bay/b3-2",
+        "alt": "A villa bedroom open to the sea",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/six-senses-ninh-van-bay/b3-3",
+        "alt": "A villa lounge facing the water",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/six-senses-ninh-van-bay/b3-4",
+        "alt": "A pool villa in the forest from above",
+        "section": "exterior"
+      }
+    ]
+  },
+  "trisara": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/thailand/trisara/hero",
+        "alt": "A villa pool above the sea",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/thailand/trisara/ocean-front-pool-villa",
+        "alt": "Trisara's secluded beach from the air",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/thailand/trisara/residence",
+        "alt": "A pool pavilion facing the sea",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/thailand/trisara/pool",
+        "alt": "The main pool among the palms",
+        "section": "pool"
+      }
+    ]
+  },
+  "ulum-moab": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "gatherings/ulum-moab/ulum-moab-tent-01",
+        "alt": "A suite with its window to the desert",
+        "section": "rooms"
+      },
+      {
+        "id": "gatherings/ulum-moab/ulum-moab-tent-02",
+        "alt": "A suite on its deck among the sandstone",
+        "section": "exterior"
+      },
+      {
+        "id": "gatherings/ulum-moab/ulum-moab-11",
+        "alt": "The pool and lounge at dusk",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/ulum-moab/b3-4",
+        "alt": "A suite bedside",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/ulum-moab/b3-5",
+        "alt": "Inside a suite",
+        "section": "rooms"
+      },
+      {
+        "id": "jwco/stays/ulum-moab/b3-6",
+        "alt": "A suite at sunset over the desert",
+        "section": "exterior"
+      }
+    ]
+  },
+  "zannier-phum-baitang": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/cambodia/zannier-phum-baitang/hero",
+        "alt": "Palms reflected in the rice fields at sunrise",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/cambodia/zannier-phum-baitang/pool-villa",
+        "alt": "A Pool Villa and its pool",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/cambodia/zannier-phum-baitang/terrace-villa",
+        "alt": "Terrace Villas among the gardens",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/cambodia/zannier-phum-baitang/angkor",
+        "alt": "A horse grazing before Angkor Wat at sunrise",
+        "section": "experiences"
+      }
+    ]
+  },
+  "six-senses-krabey-island": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/six-senses-krabey-island/b3-0",
+        "alt": "A pool villa in the island forest",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/six-senses-krabey-island/b3-1",
+        "alt": "A sun deck over the sea",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/six-senses-krabey-island/b3-2",
+        "alt": "A deck on the island's rocks",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/six-senses-krabey-island/b3-3",
+        "alt": "A villa pool deck above the sea",
+        "section": "pool"
+      },
+      {
+        "id": "jwco/stays/six-senses-krabey-island/b3-4",
+        "alt": "A villa open to its pool and the sea",
+        "section": "rooms"
+      }
+    ]
   }
 }

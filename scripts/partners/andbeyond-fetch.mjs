@@ -27,14 +27,29 @@ const attr = (tag, name) => (tag.match(new RegExp(`\\s${name}=["']([^"']*)["']`,
 const base = (u) => u.replace(/\/upload\/(?:[^/]+\/)*?(v\d+\/)/, "/upload/$1").split("?")[0];
 
 const read = (html) => {
-  const main = (html.match(/<main[\s\S]*?<\/main>/i) || [html])[0].replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<noscript[\s\S]*?<\/noscript>/gi, "");
+  const main = (html.match(/<main[\s\S]*<\/main>/i) || [html])[0].replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>|<noscript[\s\S]*?<\/noscript>/gi, "");
   const out = [];
-  const re = /<(h[1-5])\b[^>]*>([\s\S]*?)<\/\1>|<p\b[^>]*>([\s\S]*?)<\/p>|<img\b[^>]*>|<source\b[^>]*>|<a\b[^>]*href=["']([^"']+\.(?:mp4|pdf)[^"']*)["']/gi;
+  const re = /<(h[1-5])\b[^>]*>([\s\S]*?)<\/\1>|<p\b[^>]*>([\s\S]*?)<\/p>|<img\b[^>]*>|<source\b[^>]*>|<a\b[^>]*href=["']([^"']+\.(?:mp4|pdf)[^"']*)["']|\s:[a-z-]+='([\[{][^']*)'/gi;
   let m;
   while ((m = re.exec(main))) {
     if (m[1]) { const t = clean(m[2]); if (t) out.push({ t: m[1].toLowerCase(), text: t }); continue; }
     if (m[3] !== undefined) { const t = clean(m[3]); if (t && t.length > 1) out.push({ t: "p", text: t }); continue; }
     if (m[4]) { out.push({ t: "file", src: m[4] }); continue; }
+    if (m[5]) {
+      // The site's own gallery components carry their photographs as a list in the tag.
+      let data = null;
+      try { data = JSON.parse(m[5].replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, "'").replace(/&amp;/g, "&")); } catch { continue; }
+      const walk = (o) => {
+        if (!o || typeof o !== "object") return;
+        if (typeof o.src === "string" && /\/wp-content\/uploads\/.+\.(?:jpe?g|png|webp)$/i.test(o.src)) {
+          if (!out.some((x) => x.t === "img" && x.src === o.src && x.at === out.filter((y) => y.t !== "img").length)) out.push({ t: "img", src: o.src, alt: clean(String(o.alt || "")), w: o.width, h: o.height, at: out.filter((y) => y.t !== "img").length });
+          return;
+        }
+        for (const v of Array.isArray(o) ? o : Object.values(o)) walk(v);
+      };
+      walk(data);
+      continue;
+    }
     const tag = m[0];
     const cands = [attr(tag, "data-src"), attr(tag, "data-lazy-src"), attr(tag, "src"), ...(attr(tag, "data-srcset") || attr(tag, "srcset")).split(",").map((x) => x.trim().split(" ")[0])]
       .filter((u) => /^https?:\/\/assets\.andbeyond\.com\//.test(u));

@@ -21,8 +21,6 @@ jobs:
         with:
           node-version: 22
       - name: Fetch
-        env:
-          DEBUG_HTML: "1"
         run: node scripts/partners/andbeyond-fetch.mjs
       - name: Commit
         run: |

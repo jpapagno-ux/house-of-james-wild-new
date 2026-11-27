@@ -7250,6 +7250,24 @@
         "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/switzerland/whitepod/pod-in-snow",
         "alt": "Domes among the snowy firs"
       }
+    ],
+    "stay:inkaterra-reserva-amazonica": [
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/inkaterra-reserva-amazonica/brand-2",
+        "alt": "The main lodge lit at dusk"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/inkaterra-reserva-amazonica/brand-27",
+        "alt": "A canoe on a rainforest lake beneath the palms"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/inkaterra-reserva-amazonica/brand-26",
+        "alt": "The Canopy Walkway, 30 metres above the forest floor"
+      },
+      {
+        "url": "https://res.cloudinary.com/jhlnq5h5/image/upload/c_fill,ar_3:2,g_auto,w_3000/jwco/stays/inkaterra-reserva-amazonica/brand-1",
+        "alt": "The main lodge beneath its thatched roofs in the rainforest"
+      }
     ]
   }
 }

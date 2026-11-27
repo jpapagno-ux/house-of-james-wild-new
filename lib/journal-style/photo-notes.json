@@ -19290,5 +19290,55 @@
         "section": "dining"
       }
     ]
+  },
+  "inkaterra-reserva-amazonica": {
+    "describe": {},
+    "extra": [
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-1",
+        "alt": "The main lodge beneath its thatched roofs in the rainforest",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-2",
+        "alt": "The main lodge lit at dusk",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-4",
+        "alt": "A thatched pavilion at the end of its stone path",
+        "section": "exterior"
+      },
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-5",
+        "alt": "The dining room beneath the great thatched roof",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-8",
+        "alt": "Dinner set in the main lodge",
+        "section": "dining"
+      },
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-26",
+        "alt": "The Canopy Walkway, 30 metres above the forest floor",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-27",
+        "alt": "A canoe on a rainforest lake beneath the palms",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-28",
+        "alt": "Watching birds from a platform in the forest",
+        "section": "experiences"
+      },
+      {
+        "id": "jwco/stays/inkaterra-reserva-amazonica/brand-29",
+        "alt": "A boardwalk through the rainforest",
+        "section": "experiences"
+      }
+    ]
   }
 }

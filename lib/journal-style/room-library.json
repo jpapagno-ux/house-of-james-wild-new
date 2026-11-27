@@ -8670,5 +8670,23 @@
         "plungePool": false
       }
     ]
+  },
+  "inkaterra-reserva-amazonica": {
+    "rooms": [
+      {
+        "name": "Cabañas",
+        "sleeps": null,
+        "facts": [
+          "35 wooden cabanas",
+          "Inspired by Ese’Eja culture"
+        ],
+        "lede": "Wooden cabanas facing the Madre de Dios River, in a private reserve of 17,000 hectares.",
+        "features": [
+          "Rainforest setting"
+        ],
+        "photos": [],
+        "plungePool": false
+      }
+    ]
   }
 }

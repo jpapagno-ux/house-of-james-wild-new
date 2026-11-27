@@ -833,6 +833,268 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       "MOSJ, Environmental Monitoring of Svalbard and Jan Mayen, 'Walrus': numbers in Svalbard are increasing; Red Listed as Vulnerable.",
     ],
   },
+  // French Polynesia, Fiji, Costa Rica, Belize and Patagonia (James, 27 Nov 2026: "Yes please"). Sources are papers,
+  // universities, museums, government and conservation bodies; no tour operator, cruise line or booking site.
+  "grey-reef-shark": {
+    id: "grey-reef-shark", region: "French Polynesia", no: "01",
+    title: "The grey reef shark", latin: "Carcharhinus amblyrhynchos · the wall of sharks",
+    body: "The south pass of Fakarava holds the densest gathering of grey reef sharks ever recorded, about 600 on average. By day they rest in the current, all facing the same way. The reef in the pass cannot feed that many. They get by on the groupers that crowd in to spawn each June and July.",
+    rows: [
+      { label: "Look for", text: "A wall of sharks holding still in the current, heads into the flow." },
+      { label: "Know", text: "French Polynesia has protected its sharks since 2006. Its waters are the largest shark sanctuary in the world." },
+      { label: "Ask your guide", text: "Which tide to dive the pass on, and where to settle." },
+      { label: "When", text: "All year. The groupers gather to spawn in June and July." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/grey-reef-shark", version: 1795800552, alt: "Watercolour of many grey reef sharks facing the same way in a blue coral channel", width: 1000, height: 747, scene: true },
+    where: { label: "See French Polynesia", href: "/destinations/oceania/tahiti" },
+    sources: [
+      "Mourier et al. 2016, 'Extreme Inverted Trophic Pyramid of Reef Sharks Supported by Spawning Groupers', Current Biology: the southern pass of Fakarava, a biosphere reserve, hosts an average of 600 reef sharks; the sharks need about 90 tons of fish a year and the pass produces about 17.",
+      "CNRS News, on the CRIOBE study (Johann Mourier): by day the sharks rest in a wall, all facing the same direction with their heads into the current.",
+      "Cell Press release, 28 Jul 2016: grouper spawning aggregations take place every year in June and July; sharks protected since 2006 in what is now the biggest shark sanctuary in the world.",
+      "National Geographic, 'World's highest concentration of gray reef sharks': the highest density of grey reef sharks ever recorded.",
+    ],
+  },
+  "blacktip-reef-shark": {
+    id: "blacktip-reef-shark", region: "French Polynesia", no: "02",
+    title: "The blacktip reef shark", latin: "Carcharhinus melanopterus · the shark of the shallows",
+    body: "This is the small shark you meet in knee-deep water. It keeps to shallow coastal reef and lagoon, and the lagoon around Moorea has a resident population that scientists have followed for years. The young are born in the lagoon and grow up there.",
+    rows: [
+      { label: "Look for", text: "A black-tipped fin cutting the surface over pale sand." },
+      { label: "Know", text: "Researchers on Moorea monitored the young of this population for nine years running." },
+      { label: "Ask your guide", text: "Where in the lagoon the young sharks gather, and how to stand so they pass." },
+      { label: "When", text: "All year." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/blacktip-reef-shark", version: 1795800577, alt: "Watercolour of two blacktip reef sharks swimming over pale sand in a shallow turquoise lagoon", width: 1000, height: 747, scene: true },
+    where: { label: "See French Polynesia", href: "/destinations/oceania/tahiti" },
+    sources: [
+      "Séguigne, Mourier, Clua, Buray and Planes 2023, PLoS ONE 18(3): e0282837 (CRIOBE): French Polynesia declared a shark sanctuary on 28 April 2006.",
+      "Marine and Freshwater Research (CSIRO), MF24080, CRIOBE: neonate blacktip reef sharks studied at 10 sites around Moorea; the lagoon around Moorea has resident populations.",
+      "CRIOBE study of juvenile blacktip reef sharks around Moorea: monitored over nine consecutive years, within the largest shark sanctuary to date.",
+      "Important Shark and Ray Areas, 'Maharepa' (Moorea): reproductive area for the blacktip reef shark.",
+      "Preprint on blacktip reef shark behaviour, Mo'orea: the species prefers shallow coastal habitats.",
+    ],
+  },
+  "bottlenose-dolphin": {
+    id: "bottlenose-dolphin", region: "French Polynesia", no: "03",
+    title: "The dolphins of Tiputa Pass", latin: "Tursiops truncatus · Rangiroa's regulars",
+    body: "At Rangiroa a group of bottlenose dolphins comes to the Tiputa pass almost every day, by local account. The tide runs out of the lagoon for about six hours and raises waves in the pass, then turns and flattens them for the next six.",
+    rows: [
+      { label: "Look for", text: "Dolphins in the standing waves at the mouth of the pass." },
+      { label: "Know", text: "The pass is small, roughly a fifth of a square kilometre, and 15 to 60 metres deep." },
+      { label: "Ask your guide", text: "Which hour of the tide the waves stand up." },
+      { label: "When", text: "All year. The hour depends on the tide." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/bottlenose-dolphin", version: 1795800892, alt: "Watercolour of three bottlenose dolphins leaping from a wave", width: 1000, height: 747, scene: true },
+    where: { label: "See French Polynesia", href: "/destinations/oceania/tahiti" },
+    sources: [
+      "Brasseur, Gruselle, Gannier, Bordet and Rohde 2002, 'New results on a bottlenose dolphin community at Rangiroa Island (French Polynesia)', European Cetacean Society: locals describe the dolphins as visiting the Tiputa pass almost every day; currents make waves appear and disappear for periods of nearly six hours; the pass covers roughly 0.2 square kilometres and is 15 to 60 metres deep.",
+    ],
+  },
+  "bull-shark": {
+    id: "bull-shark", region: "Fiji", no: "01",
+    title: "The bull shark of Shark Reef", latin: "Carcharhinus leucas · Fiji's protected giants",
+    body: "Shark Reef is a small no-take reserve in the Beqa Passage, off the south coast of Viti Levu. Up to eight kinds of shark turn up on a dive there, and the bull shark outnumbers the rest. The reserve was set up to protect the reef and to keep a living for the villages that gave up fishing it.",
+    rows: [
+      { label: "Look for", text: "Heavy grey sharks with blunt, rounded snouts." },
+      { label: "Know", text: "Bull sharks are there all year, but each one comes and goes. Tagged sharks leave for a spell late in the year." },
+      { label: "Ask your guide", text: "Where to kneel, and what the feeder's signals mean." },
+      { label: "When", text: "All year." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/bull-shark", version: 1795800629, alt: "Watercolour of a bull shark swimming over a coral reef slope", width: 1000, height: 747, scene: true },
+    where: { label: "See Fiji", href: "/destinations/oceania/fiji" },
+    sources: [
+      "Brunnschweiler and Baensch 2011, PLoS ONE 6(1): e16597: the Shark Reef Marine Reserve is a no-take zone on the southern coast of Viti Levu, designed to protect a small reef patch while preserving the livelihood of local communities; up to eight species of sharks, the bull shark numerically dominant.",
+      "Brunnschweiler and Barnett 2013, PLoS ONE 8(3): bull sharks can be encountered year round; individuals show varying site fidelity and leave at the end of the calendar year before returning.",
+      "Convention on Migratory Species, Sharks MOU factsheet, 'Shark Reef Marine Reserve, Fiji': Shark Reef lies in the Beqa Passage; removal of any marine species is prohibited.",
+      "Cardeñosa, Glaus and Brunnschweiler 2017, Marine and Freshwater Research 68: juvenile bull sharks have a rounded snout.",
+    ],
+  },
+  "orange-dove": {
+    id: "orange-dove", region: "Fiji", no: "02",
+    title: "The orange dove", latin: "Ptilinopus victor · the flame of the Fijian forest",
+    body: "The orange dove lives in Fiji and nowhere else, in the forests of Vanua Levu, Taveuni and a few small islands beside them. The male is bright orange all over, with a golden olive head. The female is dark green. It is about 20 centimetres long.",
+    rows: [
+      { label: "Look for", text: "A small orange bird sitting still in a fruiting tree. The green female is harder to pick out." },
+      { label: "Know", text: "It eats small fruits and berries, with caterpillars and insects." },
+      { label: "Ask your guide", text: "Which trees are in fruit this week." },
+      { label: "When", text: "All year. It does not leave the islands." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/orange-dove", version: 1795800652, alt: "Watercolour of a bright orange male orange dove on a rainforest branch", width: 1000, height: 747, scene: true },
+    where: { label: "See Fiji", href: "/destinations/oceania/fiji" },
+    sources: [
+      "BirdLife International Data Zone, 'Orange Dove Chrysoena victor': native resident of Fiji; Least Concern; Taveuni Highlands and Natewa/Tunuloa Peninsula.",
+      "The Guardian, GrrlScientist, 'Mystery bird: orange dove': found in the forests of Vanua Levu, Taveuni, Rabi, Kioa, Qamea and Laucala and nowhere else in the world.",
+      "Wikipedia, 'Orange dove', citing Gould 1872 and Handbook of the Birds of the World: male with golden olive head and bright orange body feathers; female dark green; about 20 cm; feeds on small fruits, berries, caterpillars and insects.",
+    ],
+  },
+  "resplendent-quetzal": {
+    id: "resplendent-quetzal", region: "Costa Rica", no: "01",
+    title: "The resplendent quetzal", latin: "Pharomachrus mocinno · the bird of the cloud forest",
+    body: "The quetzal lives in the mountain cloud forests of Central America. In the breeding season the male grows two tail plumes up to a metre long. It depends on small wild avocados, called aguacatillos. The Maya and the Aztecs held the bird sacred, and the plumes were worn by rulers.",
+    rows: [
+      { label: "Look for", text: "A wild avocado tree in fruit. Stand back and watch it." },
+      { label: "Know", text: "It is listed as Near Threatened. The loss of cloud forest is the main danger." },
+      { label: "Ask your guide", text: "Which trees are fruiting, and where a pair is nesting." },
+      { label: "When", text: "The breeding season, when the male carries his long plumes. Ask the house which months suit your lodge." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/resplendent-quetzal", version: 1795800675, alt: "Watercolour of a male resplendent quetzal with long green tail plumes on a mossy branch", width: 1000, height: 747, scene: true },
+    where: { label: "See Costa Rica", href: "/destinations/central-america/costa-rica" },
+    sources: [
+      "National Geographic, 'Resplendent Quetzal': mountainous tropical forests of Central America; during mating season males grow twin tail feathers up to a metre long; Near Threatened; pairs nest in holes in rotted trees.",
+      "Cornell Lab of Ornithology, All About Birds, 'Costa Ricans Join Hands to Cultivate a Quetzal Community' (2023): quetzals rely on small wild avocados, aguacatillos.",
+      "American Bird Conservancy, 'Resplendent Quetzal': rulers wore its feathers; destruction of cloud forest is the biggest threat; lives high in the canopy.",
+    ],
+  },
+  "three-toed-sloth": {
+    id: "three-toed-sloth", region: "Costa Rica", no: "02",
+    title: "The three-toed sloth", latin: "Bradypus variegatus · the slowest metabolism of any mammal",
+    body: "The brown-throated sloth is one of two sloth species in Costa Rica. It eats leaves from a few kinds of tree and burns less energy than any other mammal on record. About once a week it climbs all the way down to the ground to relieve itself, then climbs back. Algae grow in its fur and turn it green.",
+    rows: [
+      { label: "Look for", text: "A grey-green ball high in a tree, most often a cecropia." },
+      { label: "Know", text: "Moths live in the fur and lay their eggs in the sloth's dung. That weekly trip to the ground keeps them going." },
+      { label: "Ask your guide", text: "To set up the scope. Guides find sloths that visitors walk straight past." },
+      { label: "When", text: "All year." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/three-toed-sloth", version: 1795800701, alt: "Watercolour of a three-toed sloth hanging from a branch among large leaves", width: 1000, height: 747, scene: true },
+    where: { label: "See Costa Rica", href: "/destinations/central-america/costa-rica" },
+    sources: [
+      "University of Wisconsin-Madison, CALS News, 'Five things everyone should know about sloths' (Jonathan Pauli): the three-toed sloth eats leaves from just a few species of trees and has the lowest energetic needs of any mammal recorded; it climbs down to defecate about once a week.",
+      "Scientific American, 'Why Sloths Leave the Trees to Defecate' (Pauli et al., sloths studied near San José, Costa Rica): the dung is a breeding ground for moths that live in the fur and feed the algae.",
+      "The Nature Conservancy, Cool Green Science, 'The Incredible Adventure of the Pooping Sloth': the brown-throated sloth is one of two sloth species in Costa Rica.",
+      "Encyclopaedia Britannica, 'A Moving Habitat': about once a week the three-toed sloth descends; algae live in its hair; Cecropia.",
+    ],
+  },
+  "scarlet-macaw": {
+    id: "scarlet-macaw", region: "Costa Rica", no: "03",
+    title: "The scarlet macaw", latin: "Ara macao · red, yellow and blue over the Pacific coast",
+    body: "Costa Rica has two lasting populations of scarlet macaws. The larger, 800 to 1,200 birds, lives on the Osa Peninsula. The other, a little over 400, lives on the central Pacific coast around Carara. On the Osa the birds feed in the beach almond trees along the shore.",
+    rows: [
+      { label: "Look for", text: "Pairs flying close together over the tree line, and red birds in the beach almonds." },
+      { label: "Know", text: "Counts on the Osa found the population was increasing." },
+      { label: "Ask your guide", text: "Which almond trees the birds are working this week." },
+      { label: "When", text: "All year." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/scarlet-macaw", version: 1795800719, alt: "Watercolour of a pair of scarlet macaws feeding in a beach almond tree above the shore", width: 1000, height: 747, scene: true },
+    where: { label: "See Costa Rica", href: "/destinations/central-america/costa-rica" },
+    sources: [
+      "Guittar, Dear and Vaughan 2009, Revista de Biología Tropical 57(1-2): 387 to 393: two viable scarlet macaw populations remain in Costa Rica, one in the Central Pacific Conservation Area (432 individuals) and one in the Osa Conservation Area (800 to 1,200).",
+      "Dear, Vaughan and Morales Polanco 2010, UNED Research Journal 2(1): 7 to 21: Osa macaws are increasing; they feed on at least 59 plant species, among them beach almond.",
+      "Hamm et al. 2020, Bird Conservation International: the Osa Conservation Area holds the largest population of scarlet macaws in Costa Rica.",
+      "Cornell Lab of Ornithology, Living Bird, 'Nature Benefits on Costa Rica's Osa Peninsula': the Osa is the best place in Costa Rica to see scarlet macaws.",
+    ],
+  },
+  "jaguar": {
+    id: "jaguar", region: "Belize", no: "01",
+    title: "The jaguar", latin: "Panthera onca · the cat Belize made room for",
+    body: "In 1986 Belize set aside the Cockscomb Basin as the world's first jaguar preserve. It followed a study of the cats there by the zoologist Alan Rabinowitz. The Belize Audubon Society looks after the sanctuary with the government.",
+    rows: [
+      { label: "Look for", text: "Tracks in the mud of a trail or road. Most visitors meet the jaguar that way." },
+      { label: "Know", text: "Armadillo and peccary are among the jaguar's prey in the Cockscomb." },
+      { label: "Ask your guide", text: "To show you fresh sign, and what it tells them." },
+      { label: "When", text: "All year. Seeing the cat itself is rare." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/jaguar", version: 1795800737, alt: "Watercolour of a jaguar walking along a muddy rainforest trail", width: 1000, height: 747, scene: true },
+    where: { label: "See Belize", href: "/destinations/central-america/belize" },
+    sources: [
+      "Weckel, Giuliano and Silver 2006, 'Cockscomb revisited: jaguar diet in the Cockscomb Basin Wildlife Sanctuary, Belize', Biotropica (Wildlife Conservation Society library): the sanctuary was established in 1986 following Rabinowitz and Nottingham's study; armadillo and peccary in the diet.",
+      "American Museum of Natural History, 'The Biodiversity Crisis: Jaguars' (Alan Rabinowitz): Belize became the first country to protect an area of forest specifically for jaguars, in 1986.",
+      "Panthera, press release on the Dr. Alan Rabinowitz Research Centre: the Belize Audubon Society is the government's co-manager of the sanctuary; the world's first jaguar preserve.",
+      "National Geographic, 'Protecting jaguars: wildlife corridor, Belize': Rabinowitz recording jaguar tracks on a road in the sanctuary.",
+    ],
+  },
+  "antillean-manatee": {
+    id: "antillean-manatee", region: "Belize", no: "02",
+    title: "The Antillean manatee", latin: "Trichechus manatus manatus · the grazer of the seagrass",
+    body: "Belize is thought to hold the largest population of Antillean manatees, about a thousand animals. They live among the mangroves and seagrass between the barrier reef and the shore. Swallow Caye, near Belize City, became a wildlife sanctuary for them in 2002. The animal is listed as Endangered.",
+    rows: [
+      { label: "Look for", text: "A round snout breaking the surface, then a slow swirl." },
+      { label: "Know", text: "Boats are the main danger. In one study at least 44 percent of manatees carried scars from boat strikes." },
+      { label: "Ask your guide", text: "To cut the engine and drift. Manatees come closer to a quiet boat." },
+      { label: "When", text: "All year. Manatees were as likely to be found at Swallow Caye in the dry season as in the wet." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/antillean-manatee", version: 1795800758, alt: "Watercolour of a manatee and her calf grazing on seagrass beside mangrove roots", width: 1000, height: 747, scene: true },
+    where: { label: "See Belize", href: "/destinations/central-america/belize" },
+    sources: [
+      "Galves et al. 2023, Endangered Species Research 51: 103: population estimated at around 1,000; Belize possibly maintains the largest population of the Antillean manatee; nationally endangered and protected.",
+      "Self-Sullivan 2008, 'Conservation of Antillean manatees in the Drowned Cayes area of Belize', Texas A&M University: mangrove and seagrass between the barrier reef and Belize City is important habitat; Swallow Caye Wildlife Sanctuary established 2002; equal encounter probability in dry and wet seasons; at least 44 percent scarred by boats.",
+      "National Geographic, 'Antillean manatee': IUCN Red List status Endangered.",
+    ],
+  },
+  "keel-billed-toucan": {
+    id: "keel-billed-toucan", region: "Belize", no: "03",
+    title: "The keel-billed toucan", latin: "Ramphastos sulfuratus · the bill bird",
+    body: "The keel-billed toucan is the national bird of Belize, where people call it the bill bird. The bill is green with orange sides and a red tip, and makes up about a third of the bird's length. It lives in forest throughout the country and nests in holes in tree trunks.",
+    rows: [
+      { label: "Look for", text: "Pairs or small groups in a fruiting tree." },
+      { label: "Know", text: "It eats mostly fruit, and also insects, lizards and the eggs of smaller birds." },
+      { label: "Ask your guide", text: "Which trees are fruiting near the lodge." },
+      { label: "When", text: "All year." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/keel-billed-toucan", version: 1795800779, alt: "Watercolour of a keel-billed toucan with a large green, orange and red bill on a fruiting branch", width: 1000, height: 747, scene: true },
+    where: { label: "See Belize", href: "/destinations/central-america/belize" },
+    sources: [
+      "Government of Belize Press Office, 'National Bird: Keel-billed Toucan' (National Heritage Library, The Belize Zoo): national bird; known locally as the bill bird; social, seen in pairs or small groups; found throughout Belize's forests; nests in holes in tree trunks; also eats insects, lizards and eggs.",
+      "World Land Trust, 'Keel-billed Toucan': bill predominantly green with a red tip and orange sides.",
+      "Cincinnati Zoo, 'Keel-billed Toucan': the bill makes up about one third of the bird's length.",
+    ],
+  },
+  "patagonia-puma": {
+    id: "patagonia-puma", region: "Patagonia", no: "01",
+    title: "The puma of Torres del Paine", latin: "Puma concolor · the cat of the steppe",
+    body: "Torres del Paine became a national park in 1959, and hunting pumas and guanacos there was banned. Both came back. The puma lives mainly on guanaco, and researchers estimate about five grown pumas to every hundred square kilometres around the park. Many of the cats are now used to people and vehicles.",
+    rows: [
+      { label: "Look for", text: "Guanacos all staring one way. They have usually seen the cat first." },
+      { label: "Know", text: "Puma watching as a guided activity began here in about 2014." },
+      { label: "Ask your guide", text: "How far the tracker keeps, and what the cat's ears are telling them." },
+      { label: "When", text: "All year. Ask the house which months suit your lodge." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/patagonia-puma", version: 1795800800, alt: "Watercolour of a puma standing on a rocky ridge in golden steppe grass", width: 1000, height: 747, scene: true },
+    where: { label: "See Patagonia", href: "/destinations/south-america/chile/patagonia" },
+    sources: [
+      "Franklin et al. 1999, 'Ecology of the Patagonia puma in southern Chile', Biological Conservation: Torres del Paine National Park created 1959; guanaco an important native prey; pumas protected by law in Chile.",
+      "USDA Forest Service Treesearch 67094, with Panthera: an estimated 5.1 independent pumas per 100 square kilometres in the Torres del Paine UNESCO Biosphere Reserve.",
+      "Universidad Autónoma de Madrid, CIBC, with CREAF, Universidad de Chile and Panthera (2025): puma and guanaco hunting was banned when the park was declared in 1959; puma sighting tourism began from 2014.",
+      "Sierra magazine, 15 Aug 2022: many pumas around Torres del Paine have become habituated to people and vehicles.",
+    ],
+  },
+  "guanaco": {
+    id: "guanaco", region: "Patagonia", no: "02",
+    title: "The guanaco", latin: "Lama guanicoe · the wild ancestor of the llama",
+    body: "The guanaco is the wild ancestor of the llama and the largest wild hoofed animal in South America. More than a million live from Peru to Tierra del Fuego, most of them in Argentina and Chile. A typical family at Torres del Paine is one male, seven females and their young. The young are called chulengos.",
+    rows: [
+      { label: "Look for", text: "A male standing apart on a rise, keeping watch over his group." },
+      { label: "Know", text: "Colour hardly varies: light brown to cinnamon above, white below." },
+      { label: "Ask your guide", text: "What the alarm call sounds like, and what it usually means." },
+      { label: "When", text: "All year." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/guanaco", version: 1795800820, alt: "Watercolour of a family group of guanacos on a Patagonian hillside", width: 1000, height: 747, scene: true },
+    where: { label: "See Patagonia", href: "/destinations/south-america/chile/patagonia" },
+    sources: [
+      "Encyclopaedia Britannica, 'Guanaco': the wild ancestor of the llama; from Peru and Bolivia south to Tierra del Fuego; more than one million adults, most in Argentina and Chile.",
+      "Encyclopedia of Life, 'Lama guanicoe': the largest and most widely distributed wild artiodactyl in South America.",
+      "Handbook of the Mammals of the World (Plazi/Zenodo and GBIF treatment): young are called chulengos; typical family group at Torres del Paine of one territorial male, seven females and four juveniles.",
+      "IUCN Red List 2016 (Baldi et al.) via Wikipedia: Least Concern; colour light brown to dark cinnamon, white underneath.",
+    ],
+  },
+  "andean-condor": {
+    id: "andean-condor", region: "Patagonia", no: "03",
+    title: "The Andean condor", latin: "Vultur gryphus · the great glider of the Andes",
+    body: "The Andean condor has the longest wings of any bird of prey, about 3.2 metres across. It hardly flaps. Birds tracked in Patagonia spent one percent of their flying time beating their wings, and one flew for five hours and 160 kilometres without a single beat. It raises one chick every two or three years and is listed as Vulnerable.",
+    rows: [
+      { label: "Look for", text: "A broad black shape with fingered wingtips, circling high over a cliff." },
+      { label: "Know", text: "It feeds on carrion. In Patagonia condors gather at what the puma leaves." },
+      { label: "Ask your guide", text: "Where the roosting cliffs are, and when the birds lift off." },
+      { label: "When", text: "All year." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/andean-condor", version: 1795800841, alt: "Watercolour of an Andean condor soaring past a cliff on broad wings", width: 1000, height: 747, scene: true },
+    where: { label: "See Patagonia", href: "/destinations/south-america/chile/patagonia" },
+    sources: [
+      "BBC Wildlife (Discover Wildlife), 'Andean condor': wingspan about 3.2 metres, the raptor with the longest wingspan; birds tracked in Patagonia flapped for one percent of flight time; one flew five hours and 160 kilometres without flapping; one chick every two to three years.",
+      "BirdLife International Data Zone, 'Andean Condor Vultur gryphus': Vulnerable; steppes and southern beech forests in Patagonia.",
+      "Elbroch and Wittmer 2013, PLoS ONE (PMC3536754): condors scavenge from puma kills in Chilean Patagonia, several at each carcass.",
+      "Animal Diversity Web, University of Michigan, 'Vultur gryphus': primary diet carrion.",
+    ],
+  },
 };
 
 // Which notes sit on which country page (one or two per page).
@@ -849,6 +1111,12 @@ export const COUNTRY_FIELD_NOTES: Record<string, string[]> = {
   tanzania: ["cheetah", "lion", "wildebeest-migration", "giraffe", "hippopotamus"],
   namibia: ["cheetah", "black-rhino", "giraffe"],
   rwanda: ["mountain-gorilla"],
+  tahiti: ["grey-reef-shark", "blacktip-reef-shark", "bottlenose-dolphin"],
+  fiji: ["bull-shark", "orange-dove"],
+  "costa-rica": ["resplendent-quetzal", "three-toed-sloth", "scarlet-macaw"],
+  belize: ["jaguar", "antillean-manatee", "keel-billed-toucan"],
+  chile: ["patagonia-puma", "guanaco", "andean-condor"],
+  argentina: ["guanaco", "andean-condor"],
 };
 
 // The Amazon voyages hub: the first note in full, the rest folded.
@@ -856,6 +1124,22 @@ export const AMAZON_HUB_NOTES = ["pink-river-dolphin", "giant-river-otter", "ara
 
 // The Galápagos voyages hub: the first note in full, the rest folded.
 export const GALAPAGOS_HUB_NOTES = ["galapagos-giant-tortoise", "marine-iguana", "blue-footed-booby", "galapagos-penguin", "waved-albatross", "galapagos-sea-lion"];
+
+// Place guides (GuidePage: Indonesia, Komodo, Raja Ampat; James, 27 Nov 2026). Each place lists only what lives there.
+export const GUIDE_FIELD_NOTES: Record<string, string[]> = {
+  indonesia: ["komodo-dragon", "reef-manta-ray", "whale-shark", "wilsons-bird-of-paradise", "walking-shark"],
+  komodo: ["komodo-dragon", "reef-manta-ray"],
+  "raja-ampat": ["reef-manta-ray", "wilsons-bird-of-paradise", "walking-shark"],
+  tahiti: ["grey-reef-shark", "blacktip-reef-shark", "bottlenose-dolphin"],
+  fakarava: ["grey-reef-shark"],
+  rangiroa: ["bottlenose-dolphin"],
+  moorea: ["blacktip-reef-shark"],
+  tuamotu: ["grey-reef-shark", "bottlenose-dolphin"],
+  fiji: ["bull-shark", "orange-dove"],
+  "beqa-lagoon-and-pacific-harbour": ["bull-shark"],
+  "vanua-levu-and-taveuni": ["orange-dove"],
+  patagonia: ["patagonia-puma", "guanaco", "andean-condor"],
+};
 
 // The Alaska, polar and Indonesia voyages hubs (James, 26 Nov 2026): the first note in full, the rest folded.
 export const ALASKA_HUB_NOTES = ["humpback-bubble-net", "alaska-brown-bear", "sea-otter", "bald-eagle", "orca"];
@@ -873,6 +1157,8 @@ export const SHIP_FIELD_NOTES: Record<string, string[]> = {
   alaska: ["sea-otter", "bald-eagle", "orca"],
   antarctica: ["gentoo-penguin", "leopard-seal", "weddell-seal"],
   indonesia: ["reef-manta-ray"],
+  // French Polynesia: the lagoon shark met on every island. Fiji and Patagonia ships get none: no species is sure on every route.
+  tahiti: ["blacktip-reef-shark"],
 };
 /** The note for one ship: the same ship always shows the same note, and sister ships differ. */
 export function shipFieldNote(waters: string, slug: string): FieldNote | null {
@@ -1891,8 +2177,327 @@ export const SPECIES_PAGES: Record<string, SpeciesPage> = {
       { name: "Plan with James", href: "/plan", line: "Ask which Svalbard sailing fits your dates" },
     ],
   },
+  "grey-reef-shark": {
+    noteId: "grey-reef-shark",
+    title: "Where to Dive with Grey Reef Sharks in Fakarava",
+    answer: "The south pass of Fakarava atoll in French Polynesia holds an average of about 600 grey reef sharks, the densest gathering ever recorded. They rest in the current by day and feed on groupers that come to spawn in June and July. James Wild & Co plans stays and sailings in the Tuamotu.",
+    qa: [
+      { q: "How many sharks are in Fakarava's south pass?", a: "About 600 on average, the highest density of grey reef sharks ever recorded." },
+      { q: "Why are there so many?", a: "Groupers gather in the pass to spawn every June and July, and that glut of fish supports far more sharks than the reef alone could feed." },
+      { q: "What is the wall of sharks?", a: "By day the sharks rest together in the current, all facing the same way with their heads into the flow." },
+      { q: "Are sharks protected in French Polynesia?", a: "Yes. They have been protected since 2006, in what is now the largest shark sanctuary in the world." },
+    ],
+    photo: [
+      "Go wide. The picture is the number of sharks, not one shark.",
+      "Hold still on the bottom and let the wall drift across the frame.",
+      "Shoot slightly upward so the sharks stand against blue water.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "French Polynesia", path: "/destinations/oceania/tahiti" }],
+    reachTitle: "French Polynesia with the House",
+    reach: [
+      { name: "Fakarava", href: "/destinations/oceania/tahiti/fakarava", line: "The atoll and its two passes" },
+      { name: "The Tuamotu", href: "/destinations/oceania/tahiti/tuamotu", line: "Atolls, passes and lagoons" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "blacktip-reef-shark": {
+    noteId: "blacktip-reef-shark",
+    title: "Where to See Blacktip Reef Sharks in French Polynesia",
+    answer: "The blacktip reef shark keeps to shallow reef and lagoon, and Moorea's lagoon has a resident population whose young are born and raised there. Sharks have been protected across French Polynesia since 2006. James Wild & Co plans stays and sailings in the islands.",
+    qa: [
+      { q: "Where do blacktip reef sharks live?", a: "In shallow coastal water: reef flats and lagoons." },
+      { q: "Are they resident in Moorea?", a: "Yes. The lagoon around Moorea has a resident population, and the young are born there." },
+      { q: "Are sharks protected in French Polynesia?", a: "Yes, since 2006." },
+      { q: "When can I see them?", a: "All year, in the lagoon." },
+    ],
+    photo: [
+      "Stand still in the shallows. They circle back.",
+      "Shoot from above for the fin and the shadow on the sand.",
+      "Bright midday sun lights the lagoon best.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "French Polynesia", path: "/destinations/oceania/tahiti" }],
+    reachTitle: "French Polynesia with the House",
+    reach: [
+      { name: "Moorea", href: "/destinations/oceania/tahiti/moorea", line: "The lagoon and the bays" },
+      { name: "French Polynesia", href: "/destinations/oceania/tahiti", line: "Islands, stays and sailings" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "bottlenose-dolphin": {
+    noteId: "bottlenose-dolphin",
+    title: "Where to See Dolphins at Rangiroa's Tiputa Pass",
+    answer: "A community of bottlenose dolphins visits the Tiputa pass at Rangiroa almost every day, according to local accounts recorded by researchers. The tide raises waves in the pass for about six hours at a time. James Wild & Co plans stays and sailings in the Tuamotu.",
+    qa: [
+      { q: "Where are the Rangiroa dolphins?", a: "In and around the Tiputa pass, one of the atoll's two passes." },
+      { q: "How often are they there?", a: "Almost every day, by local account." },
+      { q: "When is the best time of day?", a: "It follows the tide. The current makes waves in the pass for about six hours, then they fall away." },
+      { q: "How deep is the pass?", a: "From 15 to 60 metres." },
+    ],
+    photo: [
+      "From shore, use a long lens and watch the same wave.",
+      "A fast shutter freezes the leap and the spray.",
+      "Late light on the pass gives the water its colour.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "French Polynesia", path: "/destinations/oceania/tahiti" }],
+    reachTitle: "French Polynesia with the House",
+    reach: [
+      { name: "Rangiroa", href: "/destinations/oceania/tahiti/rangiroa", line: "The atoll and Tiputa pass" },
+      { name: "The Tuamotu", href: "/destinations/oceania/tahiti/tuamotu", line: "Atolls, passes and lagoons" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "bull-shark": {
+    noteId: "bull-shark",
+    title: "Where to Dive with Bull Sharks in Fiji",
+    answer: "Shark Reef Marine Reserve, in the Beqa Passage off the south coast of Viti Levu, is a no-take zone where up to eight shark species are seen and bull sharks are the most numerous. They are there all year. James Wild & Co plans stays in Fiji near Beqa Lagoon.",
+    qa: [
+      { q: "Where is the bull shark dive in Fiji?", a: "At Shark Reef Marine Reserve in the Beqa Passage, off the south coast of Viti Levu." },
+      { q: "How many kinds of shark are there?", a: "Up to eight species, with bull sharks the most numerous." },
+      { q: "When can you see bull sharks?", a: "All year, though individual sharks come and go." },
+      { q: "Is the reef protected?", a: "Yes. It is a no-take zone. Nothing may be removed." },
+    ],
+    photo: [
+      "Stay low and keep your hands in.",
+      "Go wide. The sharks pass close.",
+      "Leave the flash off unless your guide says otherwise.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Fiji", path: "/destinations/oceania/fiji" }],
+    reachTitle: "Fiji with the House",
+    reach: [
+      { name: "Beqa Lagoon and Pacific Harbour", href: "/destinations/oceania/fiji/beqa-lagoon-and-pacific-harbour", line: "The south coast of Viti Levu" },
+      { name: "Fiji", href: "/destinations/oceania/fiji", line: "Islands and stays" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "orange-dove": {
+    noteId: "orange-dove",
+    title: "Where to See the Orange Dove in Fiji",
+    answer: "The orange dove is found only in Fiji, in the forests of Vanua Levu, Taveuni and a few neighbouring islands. The male is bright orange with a golden olive head and the female is dark green. James Wild & Co plans stays on Taveuni and Vanua Levu.",
+    qa: [
+      { q: "Where does the orange dove live?", a: "Only in Fiji: Vanua Levu, Taveuni, Rabi, Kioa, Qamea and Laucala." },
+      { q: "What does it look like?", a: "The male is bright orange with a golden olive head. The female is dark green." },
+      { q: "How big is it?", a: "About 20 centimetres long." },
+      { q: "Is it threatened?", a: "No. It is listed as Least Concern." },
+    ],
+    photo: [
+      "Find the fruiting tree and wait under it.",
+      "Dark leaves behind the male make the orange glow.",
+      "Forest light is dim. Open the lens and steady yourself.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Fiji", path: "/destinations/oceania/fiji" }],
+    reachTitle: "Fiji with the House",
+    reach: [
+      { name: "Vanua Levu and Taveuni", href: "/destinations/oceania/fiji/vanua-levu-and-taveuni", line: "Fiji's northern islands" },
+      { name: "Fiji", href: "/destinations/oceania/fiji", line: "Islands and stays" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "resplendent-quetzal": {
+    noteId: "resplendent-quetzal",
+    title: "Where to See the Resplendent Quetzal in Costa Rica",
+    answer: "The resplendent quetzal lives in the cloud forests of Central America, including Costa Rica's highlands. In the breeding season the male grows tail plumes up to a metre long, and the birds feed on small wild avocados. James Wild & Co plans stays and overland routes in Costa Rica.",
+    qa: [
+      { q: "Where do quetzals live?", a: "In mountain cloud forest, from southern Mexico through Central America." },
+      { q: "How long is the tail?", a: "In the breeding season the male's two plumes reach up to a metre." },
+      { q: "What do quetzals eat?", a: "Fruit above all, especially small wild avocados, with insects and small animals." },
+      { q: "Is the quetzal endangered?", a: "It is listed as Near Threatened." },
+    ],
+    photo: [
+      "Be at the tree at first light.",
+      "Wait for the bird to turn so the plumes hang clear.",
+      "Mist is common. Raise the sensitivity and keep shooting.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Costa Rica", path: "/destinations/central-america/costa-rica" }],
+    reachTitle: "Costa Rica with the House",
+    reach: [
+      { name: "Costa Rica", href: "/destinations/central-america/costa-rica", line: "Stays and the country by road" },
+      { name: "Costa Rica overland", href: "/overland/costa-rica/two-oceans-one-volcano", line: "Two oceans and one volcano" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "three-toed-sloth": {
+    noteId: "three-toed-sloth",
+    title: "Where to See Sloths in Costa Rica",
+    answer: "Costa Rica has two sloth species. The brown-throated three-toed sloth eats leaves, has the lowest energy needs of any mammal recorded and comes down to the ground about once a week. James Wild & Co plans stays and overland routes in Costa Rica.",
+    qa: [
+      { q: "How many kinds of sloth live in Costa Rica?", a: "Two: the brown-throated three-toed sloth and a two-toed sloth." },
+      { q: "Why are sloths so slow?", a: "Leaves give little energy. The three-toed sloth has the lowest energy needs of any mammal recorded." },
+      { q: "Why do sloths come down from the trees?", a: "To relieve themselves, about once a week, at the foot of the tree." },
+      { q: "Why is a sloth's fur green?", a: "Algae grow in it." },
+    ],
+    photo: [
+      "Use a long lens. They are high.",
+      "Wait for the face to turn toward you.",
+      "A bright sky behind the animal fools the meter. Add exposure.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Costa Rica", path: "/destinations/central-america/costa-rica" }],
+    reachTitle: "Costa Rica with the House",
+    reach: [
+      { name: "Costa Rica", href: "/destinations/central-america/costa-rica", line: "Stays and the country by road" },
+      { name: "Costa Rica overland", href: "/overland/costa-rica/two-oceans-one-volcano", line: "Two oceans and one volcano" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "scarlet-macaw": {
+    noteId: "scarlet-macaw",
+    title: "Where to See Scarlet Macaws in Costa Rica",
+    answer: "Costa Rica's largest scarlet macaw population, 800 to 1,200 birds, lives on the Osa Peninsula. A second, of a little over 400, lives on the central Pacific coast around Carara. James Wild & Co plans stays and overland routes in Costa Rica.",
+    qa: [
+      { q: "Where is the best place to see scarlet macaws in Costa Rica?", a: "The Osa Peninsula, which holds the country's largest population." },
+      { q: "How many scarlet macaws are there?", a: "About 800 to 1,200 on the Osa, and a little over 400 on the central Pacific coast." },
+      { q: "What do they eat?", a: "At least 59 kinds of fruit and seed on the Osa, including beach almond." },
+      { q: "Are the numbers recovering?", a: "On the Osa, counts found the population increasing." },
+    ],
+    photo: [
+      "Photograph a pair in flight against green forest, not white sky.",
+      "In the almond trees, wait for a bird to hang upside down to feed.",
+      "Early and late light warms the red.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Costa Rica", path: "/destinations/central-america/costa-rica" }],
+    reachTitle: "Costa Rica with the House",
+    reach: [
+      { name: "Costa Rica", href: "/destinations/central-america/costa-rica", line: "Stays and the country by road" },
+      { name: "Costa Rica overland", href: "/overland/costa-rica/the-original-costa-route-coast-to-coast", line: "Coast to coast" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "jaguar": {
+    noteId: "jaguar",
+    title: "Where to Look for Jaguars in Belize",
+    answer: "The Cockscomb Basin Wildlife Sanctuary in southern Belize became the world's first jaguar preserve in 1986. Jaguars live there, though visitors more often find tracks than the cat. James Wild & Co plans stays in Belize.",
+    qa: [
+      { q: "Where is the jaguar preserve in Belize?", a: "The Cockscomb Basin Wildlife Sanctuary, in the south of the country." },
+      { q: "When was it created?", a: "In 1986, as the first protected area in the world set aside for jaguars." },
+      { q: "Will I see a jaguar?", a: "Probably not the cat itself. Tracks and other sign are what most visitors find." },
+      { q: "Who looks after the sanctuary?", a: "The Belize Audubon Society, with the government." },
+    ],
+    photo: [
+      "Photograph the track with something beside it for scale.",
+      "On a night drive, be ready before the light finds anything.",
+      "Do not bait or call. Let the guide lead.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Belize", path: "/destinations/central-america/belize" }],
+    reachTitle: "Belize with the House",
+    reach: [
+      { name: "Belize", href: "/destinations/central-america/belize", line: "Reef, river and forest" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "antillean-manatee": {
+    noteId: "antillean-manatee",
+    title: "Where to See Manatees in Belize",
+    answer: "Belize is thought to hold the largest population of Antillean manatees, about a thousand. They live in mangrove and seagrass inside the barrier reef, and Swallow Caye near Belize City has been a sanctuary for them since 2002. James Wild & Co plans stays in Belize.",
+    qa: [
+      { q: "How many manatees live in Belize?", a: "About a thousand, possibly the largest population of the Antillean manatee anywhere." },
+      { q: "Where can you see them?", a: "In mangrove and seagrass between the barrier reef and the coast. Swallow Caye Wildlife Sanctuary is the best known place." },
+      { q: "When is the best time?", a: "Any time of year. A study found them as likely in the dry season as in the wet." },
+      { q: "Are they endangered?", a: "Yes. The Antillean manatee is listed as Endangered." },
+    ],
+    photo: [
+      "A polarising filter cuts the glare off the water.",
+      "Watch for the swirl and aim just ahead of it.",
+      "Calm, clear mornings are best.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Belize", path: "/destinations/central-america/belize" }],
+    reachTitle: "Belize with the House",
+    reach: [
+      { name: "Belize", href: "/destinations/central-america/belize", line: "Reef, river and forest" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "keel-billed-toucan": {
+    noteId: "keel-billed-toucan",
+    title: "Where to See Toucans in Belize",
+    answer: "The keel-billed toucan is the national bird of Belize and lives in forest throughout the country. Its green, orange and red bill makes up about a third of its length. James Wild & Co plans stays in Belize.",
+    qa: [
+      { q: "What is the national bird of Belize?", a: "The keel-billed toucan, known locally as the bill bird." },
+      { q: "Where do toucans live in Belize?", a: "In forest throughout the country. They nest in holes in tree trunks." },
+      { q: "What do toucans eat?", a: "Mostly fruit, with insects, lizards and the eggs of smaller birds." },
+      { q: "How big is the bill?", a: "About a third of the bird's whole length." },
+    ],
+    photo: [
+      "Find a fruiting tree and stay with it.",
+      "Side on, the bill shows all its colours.",
+      "They call from bare treetops early in the day.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Belize", path: "/destinations/central-america/belize" }],
+    reachTitle: "Belize with the House",
+    reach: [
+      { name: "Belize", href: "/destinations/central-america/belize", line: "Reef, river and forest" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "patagonia-puma": {
+    noteId: "patagonia-puma",
+    title: "Where to See Pumas in Patagonia",
+    answer: "Torres del Paine in Chilean Patagonia is the place to see wild pumas. Hunting ended there in 1959, the cats live mainly on guanaco, and researchers estimate about five grown pumas per hundred square kilometres. James Wild & Co plans stays in and around the park.",
+    qa: [
+      { q: "Where can you see pumas in Patagonia?", a: "In and around Torres del Paine National Park in southern Chile." },
+      { q: "What do the pumas eat?", a: "Mainly guanaco." },
+      { q: "How many pumas are there?", a: "Researchers estimate about five independent pumas per hundred square kilometres in the Torres del Paine reserve." },
+      { q: "Is puma tracking new?", a: "Fairly. Guided puma watching began in about 2014." },
+    ],
+    photo: [
+      "Bring your longest lens and a windproof layer for your hands.",
+      "Dawn and dusk give the cat and the towers the same warm light.",
+      "Stay with the tracker. Never step toward the animal.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Chile", path: "/destinations/south-america/chile" }, { name: "Patagonia", path: "/destinations/south-america/chile/patagonia" }],
+    reachTitle: "Patagonia with the House",
+    reach: [
+      { name: "Patagonia", href: "/destinations/south-america/chile/patagonia", line: "Torres del Paine and the far south" },
+      { name: "Chile", href: "/destinations/south-america/chile", line: "From the desert to the ice" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "guanaco": {
+    noteId: "guanaco",
+    title: "Where to See Guanacos in Patagonia",
+    answer: "The guanaco is the wild ancestor of the llama, and more than a million live in South America, most in Argentina and Chile. At Torres del Paine they graze in family groups of one male with females and young. James Wild & Co plans stays in Patagonia.",
+    qa: [
+      { q: "What is a guanaco?", a: "A wild member of the camel family and the ancestor of the llama." },
+      { q: "How many guanacos are there?", a: "More than a million adults, most of them in Argentina and Chile." },
+      { q: "What is a baby guanaco called?", a: "A chulengo." },
+      { q: "How do guanacos live?", a: "In family groups, typically one male with several females and their young, and in separate groups of males." },
+    ],
+    photo: [
+      "Put the group against the mountains. They pose without being asked.",
+      "Low sun rims the coat with light.",
+      "Stay in the vehicle and they carry on grazing.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Chile", path: "/destinations/south-america/chile" }, { name: "Patagonia", path: "/destinations/south-america/chile/patagonia" }],
+    reachTitle: "Patagonia with the House",
+    reach: [
+      { name: "Patagonia", href: "/destinations/south-america/chile/patagonia", line: "Torres del Paine and the far south" },
+      { name: "Chile", href: "/destinations/south-america/chile", line: "From the desert to the ice" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
+  "andean-condor": {
+    noteId: "andean-condor",
+    title: "Where to See Andean Condors in Patagonia",
+    answer: "The Andean condor has a wingspan of about 3.2 metres, the longest of any bird of prey, and soars almost without flapping. It lives over the steppe and beech forest of Patagonia and is listed as Vulnerable. James Wild & Co plans stays in Patagonia.",
+    qa: [
+      { q: "How big is an Andean condor?", a: "Its wings span about 3.2 metres, the longest of any bird of prey." },
+      { q: "How does it fly so far?", a: "By soaring. Tracked birds flapped for only one percent of their time in the air." },
+      { q: "What does it eat?", a: "Carrion. In Patagonia it often feeds at puma kills." },
+      { q: "Is it endangered?", a: "It is listed as Vulnerable, and it breeds slowly: one chick every two or three years." },
+    ],
+    photo: [
+      "Wait near the cliff edge for a bird at eye level.",
+      "A fast shutter, even though the bird looks slow.",
+      "Mountains behind the bird give the wings their scale.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Chile", path: "/destinations/south-america/chile" }, { name: "Patagonia", path: "/destinations/south-america/chile/patagonia" }],
+    reachTitle: "Patagonia with the House",
+    reach: [
+      { name: "Patagonia", href: "/destinations/south-america/chile/patagonia", line: "Torres del Paine and the far south" },
+      { name: "Chile", href: "/destinations/south-america/chile", line: "From the desert to the ice" },
+      { name: "Plan with James", href: "/plan", line: "Tell the house which animals matter most" },
+    ],
+  },
 };
 
 
 // /wildlife: every species page, grouped by region, in this order.
-export const WILDLIFE_REGIONS = ["Africa", "Madagascar", "Amazon", "Galápagos", "Alaska", "Antarctica", "Arctic", "Indonesia"];
+export const WILDLIFE_REGIONS = ["Africa", "Madagascar", "Amazon", "Galápagos", "Alaska", "Antarctica", "Arctic", "Indonesia", "French Polynesia", "Fiji", "Costa Rica", "Belize", "Patagonia"];

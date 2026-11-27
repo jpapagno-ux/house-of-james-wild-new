@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { FIELD_NOTES, COUNTRY_FIELD_NOTES, AMAZON_HUB_NOTES, GALAPAGOS_HUB_NOTES, ALASKA_HUB_NOTES, POLAR_HUB_NOTES, INDONESIA_HUB_NOTES, SHIP_FIELD_NOTES, SPECIES_PAGES, shipFieldNote } from "../lib/field-notes/notes.ts";
+import { FIELD_NOTES, COUNTRY_FIELD_NOTES, AMAZON_HUB_NOTES, GALAPAGOS_HUB_NOTES, ALASKA_HUB_NOTES, POLAR_HUB_NOTES, INDONESIA_HUB_NOTES, GUIDE_FIELD_NOTES, SHIP_FIELD_NOTES, SPECIES_PAGES, shipFieldNote } from "../lib/field-notes/notes.ts";
 
 // Field Notes (James, 22 Nov 2026): every note files its sources, links stay inside the house, no dashes.
 test("every Field Note has sources, an in-house link and no em or en dashes", () => {
@@ -13,7 +13,7 @@ test("every Field Note has sources, an in-house link and no em or en dashes", ()
 });
 
 test("every placed Field Note exists, and species pages stay in house and dash free", () => {
-  for (const id of [...AMAZON_HUB_NOTES, ...GALAPAGOS_HUB_NOTES, ...ALASKA_HUB_NOTES, ...POLAR_HUB_NOTES, ...INDONESIA_HUB_NOTES, ...Object.values(COUNTRY_FIELD_NOTES).flat()]) assert.ok(FIELD_NOTES[id], `${id}: placed but not filed`);
+  for (const id of [...AMAZON_HUB_NOTES, ...GALAPAGOS_HUB_NOTES, ...ALASKA_HUB_NOTES, ...POLAR_HUB_NOTES, ...INDONESIA_HUB_NOTES, ...Object.values(GUIDE_FIELD_NOTES).flat(), ...Object.values(COUNTRY_FIELD_NOTES).flat()]) assert.ok(FIELD_NOTES[id], `${id}: placed but not filed`);
   for (const p of Object.values(SPECIES_PAGES)) {
     assert.ok(FIELD_NOTES[p.noteId], `${p.noteId}: species page without a note`);
     for (const r of p.reach) assert.ok(r.href.startsWith("/"), `${p.noteId}: link leaves the house`);

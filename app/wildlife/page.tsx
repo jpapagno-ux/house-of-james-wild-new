@@ -11,7 +11,7 @@ import { graph } from "@/lib/schema";
 // own watercolour and opens its species page. No outbound links.
 const CLD = "https://res.cloudinary.com/jhlnq5h5/image/upload";
 const TITLE = "Wildlife: Where and How to See It";
-const ANSWER = `James Wild & Co keeps a Field Note on ${Object.keys(SPECIES_PAGES).length} animals and plants across Africa, Madagascar, the Amazon, the Galápagos, Alaska, Antarctica, the Arctic and Indonesia. Each page says where the species lives, when to go, what to look and listen for, how to photograph it, and which stays or ships in the Ledger reach it.`;
+const ANSWER = `James Wild & Co keeps a Field Note on ${Object.keys(SPECIES_PAGES).length} animals and plants across Africa, Madagascar, the Amazon, the Galápagos, Alaska, Antarctica, the Arctic, Indonesia, French Polynesia, Fiji, Costa Rica, Belize and Patagonia. Each page says where the species lives, when to go, what to look and listen for, how to photograph it, and which stays or ships in the Ledger reach it.`;
 
 export const metadata = buildMetadata({ title: TITLE, description: ANSWER, path: "/wildlife" });
 

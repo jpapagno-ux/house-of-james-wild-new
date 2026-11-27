@@ -794,6 +794,45 @@ export const FIELD_NOTES: Record<string, FieldNote> = {
       "The Star / Jakarta Post, 28 Jun 2026: able to swim; spotted pattern; walks across shallow reefs on pectoral and pelvic fins.",
     ],
   },
+  // The Arctic (James, 27 Nov 2026: "Go"). Svalbard, from the Norwegian Polar Institute's own work and papers.
+  "polar-bear": {
+    id: "polar-bear", region: "Arctic", no: "01",
+    title: "The polar bear", latin: "Ursus maritimus · the bear of the sea ice",
+    body: "Svalbard's polar bears belong to the Barents Sea population, about 3,000 animals shared with the Russian Arctic. Some 300 stay around the islands all year. The rest follow the edge of the ice as it moves. They hunt seals from the ice, and where the ice has gone they have taken to raiding bird colonies for eggs and chicks.",
+    rows: [
+      { label: "Look for", text: "A cream shape against white ice or dark shore. They swim well and are often seen from the water." },
+      { label: "Know", text: "Norway stopped all polar bear hunting in 1973. The sea ice here is now shrinking faster than anywhere else the bears live." },
+      { label: "Ask your guide", text: "How the watch for bears is kept on every landing, and why you stay with the group." },
+      { label: "When", text: "The summer sailing season. Ask the house which weeks suit your route." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/polar-bear", version: 1795787728, alt: "Watercolour of a polar bear walking along the edge of broken sea ice beside dark water", width: 1000, height: 747, scene: true },
+    where: { label: "See the Arctic", href: "/destinations/polar-arctic" },
+    sources: [
+      "Jon Aars, Norwegian Polar Institute, 'Population changes in polar bears: protected, but quickly losing habitat' (Fram Centre): Svalbard's bears belong to the Barents Sea population; Norway stopped all hunting from 1973; the 2004 Norwegian and Russian survey estimated 2,650; sea ice loss here has been more severe than in any other polar bear habitat; bears are not afraid of water.",
+      "WWF Arctic Programme, The Circle, interview with Jon Aars: some 3,000 bears in the Barents Sea population; about 300 remain in Svalbard year round; most depend on the ice edge to hunt; ringed seals in spring; bird colonies for eggs and chicks where sea ice is lacking.",
+      "Norwegian Polar Institute, npolar.no: some bears stay close to the Svalbard coast while others follow the ice across the Barents Sea.",
+    ],
+  },
+  "walrus": {
+    id: "walrus", region: "Arctic", no: "02",
+    title: "The walrus", latin: "Odobenus rosmarus · back from the brink in Svalbard",
+    body: "Three and a half centuries of hunting left about a hundred walruses in Svalbard when Norway protected them in 1952. A count in 2012 put the number at 3,886, and it is still rising. Both sexes carry tusks, which can reach a metre. They feed on clams, which they find on the sea floor with their whiskers.",
+    rows: [
+      { label: "Look for", text: "Cinnamon brown bodies packed tight together on a beach or an ice floe." },
+      { label: "Know", text: "They are very social. They rest in close groups and usually travel in groups too." },
+      { label: "Ask your guide", text: "How near the group will go, and from which side, so the herd stays settled." },
+      { label: "When", text: "Summer and autumn, when they haul out on land." },
+    ],
+    image: { publicId: "jwco/illustrations/field-notes/walrus", version: 1795787751, alt: "Watercolour of a tight group of walruses with long tusks resting on a gravel beach", width: 1000, height: 747, scene: true },
+    where: { label: "See the Arctic", href: "/destinations/polar-arctic" },
+    sources: [
+      "Kovacs, Aars and Lydersen 2014, 'Walruses recovering after 60+ years of protection in Svalbard, Norway', Polar Research 33: 26034 (Norwegian Polar Institute): brought to the brink of extinction during 350 years of unregulated harvesting; protected in 1952; 2012 aerial survey.",
+      "Lydersen, Aars and Kovacs 2008, Arctic 61(2): 119 to 128: protected in 1952, when the summering stock was about 100 animals.",
+      "Polar Journal, 7 Apr 2022, reporting the Norwegian Polar Institute surveys: 3,886 walruses estimated in 2012.",
+      "Norwegian Polar Institute, 'Walrus' species page: both sexes have tusks, up to a metre long; cinnamon brown; extremely social, hauling out in tight groups and travelling in groups; main prey is clams found with the whiskers; land haul-outs used in summer and autumn.",
+      "MOSJ, Environmental Monitoring of Svalbard and Jan Mayen, 'Walrus': numbers in Svalbard are increasing; Red Listed as Vulnerable.",
+    ],
+  },
 };
 
 // Which notes sit on which country page (one or two per page).
@@ -1808,8 +1847,52 @@ export const SPECIES_PAGES: Record<string, SpeciesPage> = {
       { name: "Raja Ampat", href: "/destinations/asia/indonesia/raja-ampat", line: "The islands and the reefs" },
     ],
   },
+  "polar-bear": {
+    noteId: "polar-bear",
+    title: "Where to See Polar Bears in Svalbard",
+    answer: "Svalbard's polar bears belong to the Barents Sea population of about 3,000 animals. Some 300 stay around the islands all year and the rest follow the sea ice. They have been protected from hunting in Norway since 1973. James Wild & Co plans Arctic journeys to Svalbard.",
+    qa: [
+      { q: "How many polar bears live around Svalbard?", a: "The Barents Sea population, shared between Svalbard and the Russian Arctic, is about 3,000. Some 300 stay around Svalbard all year." },
+      { q: "Are polar bears hunted in Svalbard?", a: "No. Norway stopped all polar bear hunting in 1973." },
+      { q: "What do Svalbard's polar bears eat?", a: "Seals, hunted from the sea ice, above all in spring. Where the ice is lacking they also raid bird colonies for eggs and chicks." },
+      { q: "Is the sea ice a problem for them?", a: "Yes. Sea ice around Svalbard has been lost faster than in any other place polar bears live." },
+    ],
+    photo: [
+      "You will be shooting from a ship or a small boat, at distance. Bring your longest lens.",
+      "Leave the bear small in the frame sometimes. Ice and space tell the story.",
+      "White on white fools the meter, so add exposure.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Polar: Arctic", path: "/destinations/polar-arctic" }],
+    reachTitle: "The Arctic with the House",
+    reach: [
+      { name: "Polar: Arctic", href: "/destinations/polar-arctic", line: "Where the house goes in the far north" },
+      { name: "Plan with James", href: "/plan", line: "Ask which Svalbard sailing fits your dates" },
+    ],
+  },
+  "walrus": {
+    noteId: "walrus",
+    title: "Where to See Walruses in Svalbard",
+    answer: "Walruses in Svalbard were hunted down to about a hundred animals before Norway protected them in 1952. A survey in 2012 estimated 3,886, and the number is still growing. In summer and autumn they rest on beaches in tight groups. James Wild & Co plans Arctic journeys to Svalbard.",
+    qa: [
+      { q: "How many walruses are there in Svalbard?", a: "A survey in 2012 estimated 3,886, up from about a hundred when they were protected in 1952." },
+      { q: "Do female walruses have tusks?", a: "Yes. Both sexes have tusks, which can grow to a metre long." },
+      { q: "What do walruses eat?", a: "Mainly clams, which they find on the sea floor with their sensitive whiskers." },
+      { q: "When can you see walruses on land?", a: "In summer and autumn, when they haul out on beaches. At other times they rest on ice." },
+    ],
+    photo: [
+      "Stay low and slow. A calm herd gives you time.",
+      "Pick one face and its tusks out of the pile.",
+      "Flat grey light suits them. It shows the colour of the skin.",
+    ],
+    parent: [{ name: "Destinations", path: "/destinations" }, { name: "Polar: Arctic", path: "/destinations/polar-arctic" }],
+    reachTitle: "The Arctic with the House",
+    reach: [
+      { name: "Polar: Arctic", href: "/destinations/polar-arctic", line: "Where the house goes in the far north" },
+      { name: "Plan with James", href: "/plan", line: "Ask which Svalbard sailing fits your dates" },
+    ],
+  },
 };
 
 
 // /wildlife: every species page, grouped by region, in this order.
-export const WILDLIFE_REGIONS = ["Africa", "Madagascar", "Amazon", "Galápagos", "Alaska", "Antarctica", "Indonesia"];
+export const WILDLIFE_REGIONS = ["Africa", "Madagascar", "Amazon", "Galápagos", "Alaska", "Antarctica", "Arctic", "Indonesia"];

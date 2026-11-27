@@ -44,7 +44,7 @@ const PAGES: [string, string, string][] = [
   ["The Compass", "/compass", "The founder's compass: where to go, by what you want from it"],
   ["The Journal", "/journal", "Field notes and stories from the road"],
   ["Free field guides", "/field-guides", "Field guides by James to download: when to go, how to move, where to stay"],
-  ["Wildlife: where and how to see it", "/wildlife", "Field Notes on the animals and plants of Africa, Madagascar, the Amazon, the Galápagos, Alaska, Antarctica and Indonesia: where they live, when to go, how to photograph them"],
+  ["Wildlife: where and how to see it", "/wildlife", "Field Notes on the animals and plants of Africa, Madagascar, the Amazon, the Galápagos, Alaska, Antarctica, the Arctic and Indonesia: where they live, when to go, how to photograph them"],
   ["Advisors", "/advisors", "The advisors who plan with James, and the places they know"],
   ["The Ledger", "/the-ledger", "How every stay, camp and ship is vetted and numbered"],
   ["What's coming", "/whats-coming", "Lodges and ships opening soon"],
@@ -101,7 +101,9 @@ export function GET() {
   // White Desert is a feature page of its own, not a library stay.
   add({ t: "stay", n: WD.name, u: WD.path, k: "Fly-in camp", p: "Antarctica", r: "polar-antarctica", f: ["adventure", "luxury"], g: WD.tagline, c: ["Antarctica"] });
   // Every region and country page, not only the 36 in the October list.
-  for (const r of REGIONS) add({ t: "destination", n: r.label, u: r.href, k: "Region", p: null, r: r.slug, f: [], g: r.countries.map((c) => c.label).join(", ") || null });
+  // A region with no page of its own yet (Polar: Antarctica) is covered by its voyages hub, already in the index;
+  // listing it would send the traveller to the Plan form (James, 27 Nov 2026).
+  for (const r of REGIONS) if (r.slug !== "polar-antarctica") add({ t: "destination", n: r.label, u: r.href, k: "Region", p: null, r: r.slug, f: [], g: r.countries.map((c) => c.label).join(", ") || null });
   for (const c of COUNTRIES) add({ t: "destination", n: c.name, u: `/destinations/${c.region}/${c.slug}`, k: "Destination", p: c.regionName, r: c.region, f: [], g: c.subtitle || null, c: [c.name] });
   // Places within a country (the Alentejo, Raja Ampat and so on) that have their own page.
   for (const pl of (PLACES as { places: { slug: string; name: string; parentSlug: string; regionSlug: string; subtitle?: string }[] }).places) {

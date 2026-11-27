@@ -195,9 +195,10 @@ export function SampleBody({ v, variant, rooms, roomsFallback, basis, promo, bar
         <Head icon="sun" label={<>{s.ledgerId ? <span className="text-house">{s.ledgerId}</span> : "Being filed"} · Vetted by the house</>} title="Why We Added It to the Portfolio" />
         {/* At a glance (James, 23 Nov 2026): the quick facts beside the words, from the record only; nothing shows that is not filed. */}
         <div className="mt-5 grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:gap-16">
-          {/* The introduction, set as an opening (James, 24 Nov 2026): the first sentence large with a drop capital, the rest in the house italic. */}
+          {/* The introduction, set as an opening (James, 24 Nov 2026): the first sentence large with a drop capital, the rest in the house italic.
+              All of it in the house italic (James, 27 Nov 2026: "use the better font on intro as it's boring now"); the drop capital stays upright. */}
           <div className="max-w-3xl">
-            <p className="font-display font-medium text-[27px] leading-[1.14] md:text-[38px] md:leading-[1.1] text-graphite first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-[72px] first-letter:leading-[0.78] md:first-letter:text-[104px]">{introFirst}</p>
+            <p className="font-display italic font-medium text-[27px] leading-[1.18] md:text-[38px] md:leading-[1.14] text-graphite first-letter:not-italic first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:text-[72px] first-letter:leading-[0.78] md:first-letter:text-[104px]">{introFirst}</p>
             {introRest && <p className={`${T.lead} mt-5 clear-left text-graphite`}>{introRest}</p>}
           </div>
           {glance.length > 0 && (
